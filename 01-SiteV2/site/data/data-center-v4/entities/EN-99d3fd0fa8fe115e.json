@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-22T00:25:26.916Z",
-    "latestDataDate": "2026-08-22",
-    "currentDate": "2026-08-22",
-    "eventCount": 2307,
-    "quarantinedEventCount": 22
+    "generatedAt": "2026-08-23T03:43:09.331Z",
+    "latestDataDate": "2026-08-23",
+    "currentDate": "2026-08-23",
+    "eventCount": 2322,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-99d3fd0fa8fe115e",
@@ -24,9 +24,9 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d93dd19a481307ec",
       "EV-30585effe9134084",
       "EV-4c168759119d2668",
-      "EV-d93dd19a481307ec",
       "EV-eb3545d5948aa255"
     ],
     "viewpointIds": [],
@@ -36,7 +36,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-22",
+    "lastSeen": "2026-08-23",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -54,6 +54,45 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d93dd19a481307ec",
+        "dataDate": "2026-08-23",
+        "date": "2026-08-19",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-99d3fd0fa8fe115e",
+          "EN-7d3194f79e645c42",
+          "EN-bbdefa2950f49882",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3c8fb6fa445060",
+          "EN-b563f0c46d6f78f8"
+        ]
+      },
       {
         "id": "EV-30585effe9134084",
         "dataDate": "2026-08-22",
@@ -110,45 +149,6 @@
           "EN-99d3fd0fa8fe115e",
           "EN-2ea859d02e5eb089",
           "EN-942d023fd3168d40"
-        ]
-      },
-      {
-        "id": "EV-d93dd19a481307ec",
-        "dataDate": "2026-08-22",
-        "date": "2026-08-19",
-        "eventType": "hardware_product",
-        "eventTypeLabel": "硬件产品",
-        "eventGroup": "AI 硬件",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-99d3fd0fa8fe115e",
-          "EN-7d3194f79e645c42",
-          "EN-bbdefa2950f49882",
-          "EN-c70eca6b0f88f44d",
-          "EN-7d3c8fb6fa445060",
-          "EN-b563f0c46d6f78f8"
         ]
       },
       {
@@ -289,8 +289,8 @@
         "EV-78651dfea74b4323",
         "EV-435ad78c9ec50025",
         "EV-b33e250220b91f9c",
-        "EV-4c168759119d2668",
         "EV-d93dd19a481307ec",
+        "EV-4c168759119d2668",
         "EV-eb3545d5948aa255",
         "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
@@ -609,7 +609,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -672,9 +672,10 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
-        "EV-4c168759119d2668",
         "EV-d93dd19a481307ec",
+        "EV-4c168759119d2668",
         "EV-eb3545d5948aa255",
         "EV-a6c4f879a58ababa",
         "EV-c7d0b810ac3b3d4e",
@@ -772,6 +773,7 @@
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
+        "EN-0e61c365bbad9649",
         "EN-99d3fd0fa8fe115e",
         "EN-83eb1cb31148698f",
         "EN-ea3bd73e2b506e00",
@@ -840,7 +842,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-23"
     }
   ],
   "fde": [],
@@ -848,7 +850,7 @@
     {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-22",
+      "dataDate": "2026-08-23",
       "date": "2026-08-19",
       "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
       "hardwareType": "ai_accelerator",
@@ -882,13 +884,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-e72c2ff7ba4bc51f",
+      "snapshotId": "HWS-3bcb3c46be7f99fe",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-22",
-      "date": "2026-08-22",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -903,12 +905,21 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-5c674d1ae883a4ea"
+          "fact_ref": "HWF-4d5ebacfbd450975"
         }
       },
       "factCount": 2,
-      "snapshotCount": 3,
+      "snapshotCount": 4,
       "changes": [
+        {
+          "date": "2026-08-23",
+          "previousDate": "2026-08-22",
+          "snapshotId": "HWS-3bcb3c46be7f99fe",
+          "previousSnapshotId": "HWS-e72c2ff7ba4bc51f",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-22",
           "previousDate": "2026-08-21",
@@ -932,8 +943,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-22",
-          "hardware_fact_id": "HWF-81139681c39697ca",
+          "data_date": "2026-08-23",
+          "hardware_fact_id": "HWF-76fe3cd1db6d328c",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -953,15 +964,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-c81ae41c15502690",
+          "claim_ref": "CL-3dd282e250f53601",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-22",
-          "hardware_fact_id": "HWF-5c674d1ae883a4ea",
+          "data_date": "2026-08-23",
+          "hardware_fact_id": "HWF-4d5ebacfbd450975",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -981,11 +992,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-21eb51218dce8285",
+          "claim_ref": "CL-a34ee638a1e5e2b8",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-22/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
         }
       ],
       "capexFacts": [],

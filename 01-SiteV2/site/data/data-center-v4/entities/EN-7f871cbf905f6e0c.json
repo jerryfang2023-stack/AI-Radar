@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-22T00:25:26.916Z",
-    "latestDataDate": "2026-08-22",
-    "currentDate": "2026-08-22",
-    "eventCount": 2307,
-    "quarantinedEventCount": 22
+    "generatedAt": "2026-08-23T03:43:09.331Z",
+    "latestDataDate": "2026-08-23",
+    "currentDate": "2026-08-23",
+    "eventCount": 2322,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-7f871cbf905f6e0c",
@@ -30,6 +30,7 @@
       "EV-55e7c286e95be405",
       "EV-cf6e7a2edad82c6f",
       "EV-0e84a2f49d765ce3",
+      "EV-110d0ab135a08889",
       "EV-b33e250220b91f9c",
       "EV-5ebbe581dba0caf4",
       "EV-96198b8644eb94d9",
@@ -52,7 +53,7 @@
       "EN-779965438dd9e7a7"
     ],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-08-23",
     "relationIds": [
       "REL2-eaf27cde7b70ddb9"
     ],
@@ -70,6 +71,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-110d0ab135a08889",
         "EV-b33e250220b91f9c",
         "EV-5ebbe581dba0caf4",
         "EV-96198b8644eb94d9",
@@ -85,6 +87,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-110d0ab135a08889",
+        "dataDate": "2026-08-23",
+        "date": "2026-08-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "神秘 Ox Alpha AI 模型限免上架：DeepSWE 跑分碾压 Claude Fable 5，线索指向智谱",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7f871cbf905f6e0c",
+          "EN-1d79127e9d90e89b",
+          "EN-06fbab796cb69137"
+        ]
+      },
       {
         "id": "EV-9d665270d4feb97e",
         "dataDate": "2026-08-21",
@@ -1038,7 +1057,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "TX-target_user-developer",
@@ -1385,7 +1404,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "TX-use_case-software_development",
@@ -1494,6 +1513,7 @@
         "EV-e295f808713644c7",
         "EV-d53cd33e8f541a65",
         "EV-cfce55156a2ed7d2",
+        "EV-45f4197c8d92bc4c",
         "EV-ab89552719b28177",
         "EV-79d4cce8950d7639"
       ],
@@ -1576,7 +1596,8 @@
         "EN-2b6e51bec93e86c1",
         "EN-630dc133336bc266",
         "EN-6fcba5d96a4fadfd",
-        "EN-f19600b9e18f7f27"
+        "EN-f19600b9e18f7f27",
+        "EN-f3f2184b56f946c6"
       ],
       "fdeIds": [
         "FDE-0ef4045e28c345f8",
@@ -1589,7 +1610,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "TX-product_form-model",
@@ -1683,8 +1704,8 @@
         "EV-78651dfea74b4323",
         "EV-435ad78c9ec50025",
         "EV-b33e250220b91f9c",
-        "EV-4c168759119d2668",
         "EV-d93dd19a481307ec",
+        "EV-4c168759119d2668",
         "EV-eb3545d5948aa255",
         "EV-3a4acc92731cb5ac",
         "EV-0d5a32aca724d30e",
@@ -2003,7 +2024,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "TX-ai_market_subcategory-development_deployment",

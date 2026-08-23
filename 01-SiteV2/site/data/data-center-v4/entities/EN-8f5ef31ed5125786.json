@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-22T00:25:26.916Z",
-    "latestDataDate": "2026-08-22",
-    "currentDate": "2026-08-22",
-    "eventCount": 2307,
-    "quarantinedEventCount": 22
+    "generatedAt": "2026-08-23T03:43:09.331Z",
+    "latestDataDate": "2026-08-23",
+    "currentDate": "2026-08-23",
+    "eventCount": 2322,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-8f5ef31ed5125786",
@@ -22,19 +22,22 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-9fe6938336dea2a2",
       "EV-f2750a3d66e06fe7"
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-product_form-compute_cloud_service"
+      "TX-product_form-compute_cloud_service",
+      "TX-deployment_model-cloud"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-19",
+    "lastSeen": "2026-08-23",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
+        "EV-9fe6938336dea2a2",
         "EV-f2750a3d66e06fe7"
       ],
       "partnerships": [],
@@ -44,6 +47,44 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-9fe6938336dea2a2",
+        "dataDate": "2026-08-23",
+        "date": "2026-08-20",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Sharon AI 成功为全球科技客户交付AI云部署",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-8f5ef31ed5125786"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-8f5ef31ed5125786"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8f5ef31ed5125786"
+        ]
+      },
       {
         "id": "EV-f2750a3d66e06fe7",
         "dataDate": "2026-07-19",
@@ -98,6 +139,7 @@
         "EV-29eea3f4a8fcd6f5",
         "EV-1abf0d076d30ec6d",
         "EV-6011ab83ebd290bd",
+        "EV-9fe6938336dea2a2",
         "EV-70fd5918095d6ab8",
         "EV-0121f0a9e9a975ec",
         "EV-7dcbf6eab4339b22",
@@ -123,17 +165,18 @@
         "EN-c04bd5ebd10ab696",
         "EN-07c370b082ffd370",
         "EN-ce31f92c521b7b08",
+        "EN-8f5ef31ed5125786",
         "EN-3c7a24d85b4a5835",
         "EN-29b9f0cae32e7a8a",
         "EN-c70eca6b0f88f44d",
         "EN-7640da40298286a6",
-        "EN-8f5ef31ed5125786",
         "EN-ebf9032e4009b3d9",
         "EN-042e9398f2cc8902",
         "EN-9d07f526fab9cfe9",
         "EN-a89a94ff38d4dc95"
       ],
       "fdeIds": [
+        "FDE-3c16927208b7ac37",
         "FDE-5ea7f3d69a03d417"
       ],
       "hardwareIds": [
@@ -141,9 +184,138 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-23"
+    },
+    {
+      "id": "TX-deployment_model-cloud",
+      "name": "云端",
+      "nodeType": "deployment_model",
+      "typeLabel": "部署形态",
+      "valueId": "cloud",
+      "eventIds": [
+        "EV-e70a48e36e99d57a",
+        "EV-4118202ed0f91895",
+        "EV-9fe6938336dea2a2",
+        "EV-be76a1e5ed2b6cf5",
+        "EV-4fba2b2f1ac10a79",
+        "EV-b4b5d141dac164c2",
+        "EV-29c0d969abde2020",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-fec9e1b9ae2955ee",
+        "EV-c0d8138d8cab5135",
+        "EV-7fb25ff3d853c314",
+        "EV-20cdbe59ba2a1359",
+        "EV-309ea4fc27a66485"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-0b79cf2de0ee6b8e",
+        "EN-8f5ef31ed5125786",
+        "EN-ea3bd73e2b506e00",
+        "EN-c7d7af20b6ab853d",
+        "EN-74be4cbf48e647b2",
+        "EN-2613d360c34cdc8c",
+        "EN-842fcb5e60989a03",
+        "EN-6f4e2e93ad6de7f1"
+      ],
+      "fdeIds": [
+        "FDE-3c16927208b7ac37"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-08-23"
     }
   ],
-  "fde": [],
-  "hardware": []
+  "fde": [
+    {
+      "id": "FDE-3c16927208b7ac37",
+      "eventId": "EV-9fe6938336dea2a2",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-20",
+      "title": "Sharon AI 成功为全球科技客户交付AI云部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI Cloud deployment for a global technology company",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "today announced the successful delivery and customer acceptance of an initial AI Cloud deployment for a global technology company with a major Asia-Pacific presence."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/sharon-ai-successfully-delivers-ai-cloud-deployment-for-global-technology-customer-302856338.html",
+      "entityIds": [
+        "EN-8f5ef31ed5125786"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-1124fa022c54cbce",
+      "implementationKey": "1124fa022c54cbce",
+      "eventId": "EV-9fe6938336dea2a2",
+      "eventIds": [
+        "EV-9fe6938336dea2a2"
+      ],
+      "dataDate": "2026-08-23",
+      "date": "2026-08-20",
+      "title": "未披露 × 未披露：AI Cloud deployment for a global technology company",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI Cloud deployment for a global technology company",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-351c091fc078fd6d",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-20",
+          "dataDate": "2026-08-23",
+          "eventId": "EV-9fe6938336dea2a2",
+          "eventTitle": "Sharon AI 成功为全球科技客户交付AI云部署",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/sharon-ai-successfully-delivers-ai-cloud-deployment-for-global-technology-customer-302856338.html",
+      "entityIds": [
+        "EN-8f5ef31ed5125786"
+      ]
+    }
+  ]
 }

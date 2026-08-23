@@ -1,0 +1,74 @@
+[
+  {
+    "hardware_fact_id": "HWF-81d2d2ab6461cf03",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-08-22T09:00:00.000Z",
+    "subject_entity_id": "EN-10182ab855ff7727",
+    "subject_name": "MCP",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_type": "server",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "With the 2026-07-28 release , a remote MCP server is now no different from any other HTTP workload, making it easy to host and operate one on any infrastructure that developers and organizations already use for their APIs and services. This approach has proven to scale, and we want to stretch it to cover other deployment modes as well, including local servers speaking Streamable HTTP over stdio . Unifying on one transport lets us simplify MCP server and client development even further.",
+    "event_refs": [
+      "EV-99b2eee925860832"
+    ],
+    "claim_ref": "CL-51d5481f42c91eb0",
+    "source_refs": [
+      "SA-d636fe971d83ea9b"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-76fe3cd1db6d328c",
+    "fact_type": "product",
+    "observed_at": "2026-08-19T15:50:41.000Z",
+    "subject_entity_id": "EN-99d3fd0fa8fe115e",
+    "subject_name": "KT",
+    "product_entity_ids": [
+      "EN-7d3c8fb6fa445060",
+      "EN-b563f0c46d6f78f8"
+    ],
+    "product_names": [
+      "AI Appliance Ships",
+      "First Sovereign AI Appliance"
+    ],
+    "component_type": "ai_accelerator",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "Korea Telecom launched the KT NPU LLM Station on Wednesday &mdash; the first commercially available enterprise AI appliance to pair a Korean-made inference chip with a Korean-developed large language model in a single on-premises server &mdash; targeting a regulated-industry market that has been structurally locked out of generative AI by the country's strict network-separation rules .",
+    "event_refs": [
+      "EV-d93dd19a481307ec"
+    ],
+    "claim_ref": "CL-3dd282e250f53601",
+    "source_refs": [
+      "SA-30a50d9be011e4c2"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-4d5ebacfbd450975",
+    "fact_type": "product",
+    "observed_at": "2026-08-19T15:50:41.000Z",
+    "subject_entity_id": "EN-99d3fd0fa8fe115e",
+    "subject_name": "KT",
+    "product_entity_ids": [
+      "EN-7d3c8fb6fa445060",
+      "EN-b563f0c46d6f78f8"
+    ],
+    "product_names": [
+      "AI Appliance Ships",
+      "First Sovereign AI Appliance"
+    ],
+    "component_type": "server",
+    "metric_value": "32",
+    "unit": "billion",
+    "source_quote": "The important caveat for enterprise buyers is scale. At 32 billion parameters, Mi:dm K 2.5 Pro sits well below the frontier-model tier &mdash; the leading models from OpenAI, Google, and Anthropic operate at hundreds of billions to trillions of effective parameters. Korean sovereign AI competitors SK Telecom and LG AI Research released models in the 700-billion-parameter range in late July 2026 &mdash; covered in detail in our prior sovereign AI coverage . Mi:dm K 2.5 Pro is not designed to compete on raw capability with frontier models; it is designed to deliver enterprise-grade Korean-language reasoning within the memory and power budget of an on-premises server that complies with mangjuri. That is a genuine tradeoff, and buyers in regulated sectors should weigh it: a 32B-parameter model running locally is materially less capable than a 400B-parameter model accessed via API &mdash; but for an organization whose data cannot legally leave its facility, the API option does not exist.",
+    "event_refs": [
+      "EV-d93dd19a481307ec"
+    ],
+    "claim_ref": "CL-a34ee638a1e5e2b8",
+    "source_refs": [
+      "SA-30a50d9be011e4c2"
+    ]
+  }
+]

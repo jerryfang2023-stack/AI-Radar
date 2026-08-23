@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-22T00:25:26.916Z",
-    "latestDataDate": "2026-08-22",
-    "currentDate": "2026-08-22",
-    "eventCount": 2307,
-    "quarantinedEventCount": 22
+    "generatedAt": "2026-08-23T03:43:09.331Z",
+    "latestDataDate": "2026-08-23",
+    "currentDate": "2026-08-23",
+    "eventCount": 2322,
+    "quarantinedEventCount": 23
   },
   "node": {
     "id": "TX-technology-model_context_protocol",
@@ -20,6 +20,7 @@
     "eventIds": [
       "EV-ed8260ee9a7a80af",
       "EV-a2c13c14efec9218",
+      "EV-99b2eee925860832",
       "EV-3873f7ea8ac5a93f",
       "EV-49fcb200a72f0024",
       "EV-33292a33d0f4d599",
@@ -39,6 +40,7 @@
     ],
     "entityIds": [
       "EN-c70eca6b0f88f44d",
+      "EN-10182ab855ff7727",
       "EN-59bba357145ca539",
       "EN-e6483498af8bd2cd",
       "EN-08b6a35be337edce",
@@ -55,7 +57,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2025-11-17",
-    "lastSeen": "2026-08-21"
+    "lastSeen": "2026-08-23"
   },
   "events": [
     {
@@ -254,6 +256,99 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/965/639.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-99b2eee925860832",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-22",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "MCP 发布新路线图：聚焦智能体消息原语、HTTP 原生传输与企业级安全",
+      "originalTitle": "",
+      "subject": "MCP",
+      "action": "发布",
+      "object": "新路线图：聚焦智能体消息原语、HTTP 原生传输与企业级安全",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-10182ab855ff7727"
+      ],
+      "entityNames": [
+        "MCP"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
       "id": "EV-3873f7ea8ac5a93f",
@@ -2421,9 +2516,10 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-07f531fe7a46ea43",
+        "EV-d4af2db7a4759431",
         "EV-30211b84aacd0598",
         "EV-a09f6e93ad868a57",
+        "EV-07f531fe7a46ea43",
         "EV-8232ad0075a77b7a",
         "EV-3873f7ea8ac5a93f",
         "EV-d93dd19a481307ec",
@@ -2715,7 +2811,6 @@
       ],
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
-        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
@@ -2731,6 +2826,7 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
+        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -2740,7 +2836,28 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-23"
+    },
+    {
+      "id": "EN-10182ab855ff7727",
+      "name": "MCP",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-99b2eee925860832"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-model_context_protocol"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-22",
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "EN-59bba357145ca539",
@@ -2864,6 +2981,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-9d824ab9d0b0c6b5",
         "EV-325c0a0b80938627",
         "EV-ea2598236eae915f",
         "EV-6018392d4cc4b472",
@@ -2973,7 +3091,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "EN-e473f24d4325d51a",
@@ -3179,5 +3297,90 @@
     }
   ],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-3089e9a92fa603ef",
+      "snapshotKey": "3089e9a92fa603ef",
+      "snapshotId": "HWS-89d38bda7fbf11a2",
+      "eventId": "EV-99b2eee925860832",
+      "eventIds": [
+        "EV-99b2eee925860832"
+      ],
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "title": "MCP",
+      "subject": "MCP",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-81d2d2ab6461cf03"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-23",
+          "hardware_fact_id": "HWF-81d2d2ab6461cf03",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-22T09:00:00.000Z",
+          "subject_entity_id": "EN-10182ab855ff7727",
+          "subject_name": "MCP",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "With the 2026-07-28 release , a remote MCP server is now no different from any other HTTP workload, making it easy to host and operate one on any infrastructure that developers and organizations already use for their APIs and services. This approach has proven to scale, and we want to stretch it to cover other deployment modes as well, including local servers speaking Streamable HTTP over stdio . Unifying on one transport lets us simplify MCP server and client development even further.",
+          "event_refs": [
+            "EV-99b2eee925860832"
+          ],
+          "claim_ref": "CL-51d5481f42c91eb0",
+          "source_refs": [
+            "SA-d636fe971d83ea9b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap",
+      "entityIds": [
+        "EN-10182ab855ff7727"
+      ]
+    }
+  ]
 }

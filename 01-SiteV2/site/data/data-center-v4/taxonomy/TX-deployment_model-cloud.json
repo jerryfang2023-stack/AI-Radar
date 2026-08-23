@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-22T00:25:26.916Z",
-    "latestDataDate": "2026-08-22",
-    "currentDate": "2026-08-22",
-    "eventCount": 2307,
-    "quarantinedEventCount": 22
+    "generatedAt": "2026-08-23T03:43:09.331Z",
+    "latestDataDate": "2026-08-23",
+    "currentDate": "2026-08-23",
+    "eventCount": 2322,
+    "quarantinedEventCount": 23
   },
   "node": {
     "id": "TX-deployment_model-cloud",
@@ -20,6 +20,7 @@
     "eventIds": [
       "EV-e70a48e36e99d57a",
       "EV-4118202ed0f91895",
+      "EV-9fe6938336dea2a2",
       "EV-be76a1e5ed2b6cf5",
       "EV-4fba2b2f1ac10a79",
       "EV-b4b5d141dac164c2",
@@ -34,6 +35,7 @@
     "entityIds": [
       "EN-8d4321d936320802",
       "EN-0b79cf2de0ee6b8e",
+      "EN-8f5ef31ed5125786",
       "EN-ea3bd73e2b506e00",
       "EN-c7d7af20b6ab853d",
       "EN-74be4cbf48e647b2",
@@ -41,10 +43,12 @@
       "EN-842fcb5e60989a03",
       "EN-6f4e2e93ad6de7f1"
     ],
-    "fdeIds": [],
+    "fdeIds": [
+      "FDE-3c16927208b7ac37"
+    ],
     "hardwareIds": [],
     "firstSeen": "2026-06-03",
-    "lastSeen": "2026-08-21"
+    "lastSeen": "2026-08-23"
   },
   "events": [
     {
@@ -1416,6 +1420,120 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/967/312.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-9fe6938336dea2a2",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-23",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Sharon AI 成功为全球科技客户交付AI云部署",
+      "originalTitle": "Sharon AI Successfully Delivers AI Cloud Deployment for Global Technology Customer",
+      "subject": "Sharon AI",
+      "action": "deployment",
+      "object": "AI Cloud deployment for a global technology company",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-8f5ef31ed5125786"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-8f5ef31ed5125786"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-8f5ef31ed5125786"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-8f5ef31ed5125786"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-8f5ef31ed5125786"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-8f5ef31ed5125786"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8f5ef31ed5125786"
+      ],
+      "entityNames": [
+        "Sharon AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/sharon-ai-successfully-delivers-ai-cloud-deployment-for-global-technology-customer-302856338.html",
+      "publisher": "prnewswire.com"
     },
     {
       "id": "EV-be76a1e5ed2b6cf5",
@@ -3074,7 +3192,9 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3161,6 +3281,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
         "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
@@ -3323,24 +3444,31 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "EN-0b79cf2de0ee6b8e",
@@ -3369,6 +3497,29 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-23",
       "lastSeen": "2026-08-21"
+    },
+    {
+      "id": "EN-8f5ef31ed5125786",
+      "name": "Sharon AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9fe6938336dea2a2",
+        "EV-f2750a3d66e06fe7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
+        "TX-deployment_model-cloud"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -3636,8 +3787,98 @@
       "lastSeen": "2026-07-01"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-3c16927208b7ac37",
+      "eventId": "EV-9fe6938336dea2a2",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-20",
+      "title": "Sharon AI 成功为全球科技客户交付AI云部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI Cloud deployment for a global technology company",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "today announced the successful delivery and customer acceptance of an initial AI Cloud deployment for a global technology company with a major Asia-Pacific presence."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/sharon-ai-successfully-delivers-ai-cloud-deployment-for-global-technology-customer-302856338.html",
+      "entityIds": [
+        "EN-8f5ef31ed5125786"
+      ]
+    }
+  ],
   "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-1124fa022c54cbce",
+      "implementationKey": "1124fa022c54cbce",
+      "eventId": "EV-9fe6938336dea2a2",
+      "eventIds": [
+        "EV-9fe6938336dea2a2"
+      ],
+      "dataDate": "2026-08-23",
+      "date": "2026-08-20",
+      "title": "未披露 × 未披露：AI Cloud deployment for a global technology company",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI Cloud deployment for a global technology company",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-351c091fc078fd6d",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-20",
+          "dataDate": "2026-08-23",
+          "eventId": "EV-9fe6938336dea2a2",
+          "eventTitle": "Sharon AI 成功为全球科技客户交付AI云部署",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/sharon-ai-successfully-delivers-ai-cloud-deployment-for-global-technology-customer-302856338.html",
+      "entityIds": [
+        "EN-8f5ef31ed5125786"
+      ]
+    }
+  ],
   "hardwareCatalog": [
     {
       "id": "HWC-fc6be3540530f815",
