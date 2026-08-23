@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-23T03:43:09.331Z",
+    "latestDataDate": "2026-08-23",
+    "currentDate": "2026-08-23",
+    "eventCount": 2322,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-10182ab855ff7727",
+    "name": "MCP",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-99b2eee925860832"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-model_context_protocol"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-22",
+    "lastSeen": "2026-08-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-99b2eee925860832"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-99b2eee925860832",
+        "dataDate": "2026-08-23",
+        "date": "2026-08-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "MCP 发布新路线图：聚焦智能体消息原语、HTTP 原生传输与企业级安全",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "model_context_protocol",
+            "name": "MCP",
+            "entityIds": [
+              "EN-10182ab855ff7727"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-10182ab855ff7727"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-model_context_protocol",
+      "name": "MCP",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "model_context_protocol",
+      "eventIds": [
+        "EV-ed8260ee9a7a80af",
+        "EV-a2c13c14efec9218",
+        "EV-99b2eee925860832",
+        "EV-3873f7ea8ac5a93f",
+        "EV-49fcb200a72f0024",
+        "EV-33292a33d0f4d599",
+        "EV-b3a050d576cea2f2",
+        "EV-48a7437742aff5c5",
+        "EV-a0d3853dd41c8ef6",
+        "EV-7449d239223d4928",
+        "EV-266aff97294156f6",
+        "EV-1035aa9cbde79b2f",
+        "EV-fd3d52afb49f026b",
+        "EV-8115dd18f2812a29",
+        "EV-8cb5b0ed18c7cdd8",
+        "EV-2cc379df19a83062",
+        "EV-8b36007d0b5f377f",
+        "EV-ff374e781601bfc7",
+        "EV-9c41acd6ef6df77f"
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-10182ab855ff7727",
+        "EN-59bba357145ca539",
+        "EN-e6483498af8bd2cd",
+        "EN-08b6a35be337edce",
+        "EN-9fbf261b62c1d7c0",
+        "EN-e473f24d4325d51a",
+        "EN-916a98f0fa2a39af",
+        "EN-caf559f7830b566f",
+        "EN-7d1507284a5757ca",
+        "EN-3aa7606e6aa345a3",
+        "EN-fdb2cc367267ac57",
+        "EN-f90aec90acf3dc85",
+        "EN-5504f88c63fe766d"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2025-11-17",
+      "lastSeen": "2026-08-23"
+    }
+  ],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-3089e9a92fa603ef",
+      "snapshotKey": "3089e9a92fa603ef",
+      "snapshotId": "HWS-89d38bda7fbf11a2",
+      "eventId": "EV-99b2eee925860832",
+      "eventIds": [
+        "EV-99b2eee925860832"
+      ],
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "title": "MCP",
+      "subject": "MCP",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-81d2d2ab6461cf03"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-23",
+          "hardware_fact_id": "HWF-81d2d2ab6461cf03",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-22T09:00:00.000Z",
+          "subject_entity_id": "EN-10182ab855ff7727",
+          "subject_name": "MCP",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "With the 2026-07-28 release , a remote MCP server is now no different from any other HTTP workload, making it easy to host and operate one on any infrastructure that developers and organizations already use for their APIs and services. This approach has proven to scale, and we want to stretch it to cover other deployment modes as well, including local servers speaking Streamable HTTP over stdio . Unifying on one transport lets us simplify MCP server and client development even further.",
+          "event_refs": [
+            "EV-99b2eee925860832"
+          ],
+          "claim_ref": "CL-51d5481f42c91eb0",
+          "source_refs": [
+            "SA-d636fe971d83ea9b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap",
+      "entityIds": [
+        "EN-10182ab855ff7727"
+      ]
+    }
+  ]
+}

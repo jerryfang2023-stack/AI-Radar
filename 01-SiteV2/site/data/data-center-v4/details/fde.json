@@ -5,13 +5,51 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-22T00:25:26.916Z",
-    "latestDataDate": "2026-08-22",
-    "currentDate": "2026-08-22",
-    "eventCount": 2307,
-    "quarantinedEventCount": 22
+    "generatedAt": "2026-08-23T03:43:09.331Z",
+    "latestDataDate": "2026-08-23",
+    "currentDate": "2026-08-23",
+    "eventCount": 2322,
+    "quarantinedEventCount": 23
   },
   "fde": [
+    {
+      "id": "FDE-3c16927208b7ac37",
+      "eventId": "EV-9fe6938336dea2a2",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-20",
+      "title": "Sharon AI 成功为全球科技客户交付AI云部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI Cloud deployment for a global technology company",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "today announced the successful delivery and customer acceptance of an initial AI Cloud deployment for a global technology company with a major Asia-Pacific presence."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/sharon-ai-successfully-delivers-ai-cloud-deployment-for-global-technology-customer-302856338.html",
+      "entityIds": [
+        "EN-8f5ef31ed5125786"
+      ]
+    },
     {
       "id": "FDE-d20f430306d29bbd",
       "eventId": "EV-87c5f6dcc769999c",
@@ -6017,6 +6055,55 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-1124fa022c54cbce",
+      "implementationKey": "1124fa022c54cbce",
+      "eventId": "EV-9fe6938336dea2a2",
+      "eventIds": [
+        "EV-9fe6938336dea2a2"
+      ],
+      "dataDate": "2026-08-23",
+      "date": "2026-08-20",
+      "title": "未披露 × 未披露：AI Cloud deployment for a global technology company",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI Cloud deployment for a global technology company",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-351c091fc078fd6d",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-20",
+          "dataDate": "2026-08-23",
+          "eventId": "EV-9fe6938336dea2a2",
+          "eventTitle": "Sharon AI 成功为全球科技客户交付AI云部署",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/sharon-ai-successfully-delivers-ai-cloud-deployment-for-global-technology-customer-302856338.html",
+      "entityIds": [
+        "EN-8f5ef31ed5125786"
+      ]
+    },
+    {
       "id": "FDED-28afc8fade41edb4",
       "implementationKey": "28afc8fade41edb4",
       "eventId": "EV-87c5f6dcc769999c",
@@ -7837,20 +7924,20 @@
   "events": [
     {
       "id": "EV-259566f35ea4f66d",
-      "dataDate": "2026-08-22",
+      "dataDate": "2026-08-23",
       "date": "2026-08-21",
-      "updatedDate": "2026-08-22",
+      "updatedDate": "2026-08-23",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
-      "originalTitle": "",
-      "subject": "Starcloud 为轨道数据中心追加",
-      "action": "融资",
-      "object": "2.5 亿美元，估值达 23 亿美元",
+      "title": "Starcloud 为轨道数据中心筹集 2.5 亿美元，发射选项枯竭",
+      "originalTitle": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+      "subject": "Starcloud",
+      "action": "raises",
+      "object": "$250 million for orbital data centers as launch options dry up",
       "metrics": [
         "$250 million",
         "$170 million",
@@ -8322,7 +8409,7 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
-      "publisher": "TechCrunch：AI（RSS）"
+      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-8ad153b984ba8729",
@@ -127285,6 +127372,120 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-9fe6938336dea2a2",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-23",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Sharon AI 成功为全球科技客户交付AI云部署",
+      "originalTitle": "Sharon AI Successfully Delivers AI Cloud Deployment for Global Technology Customer",
+      "subject": "Sharon AI",
+      "action": "deployment",
+      "object": "AI Cloud deployment for a global technology company",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-8f5ef31ed5125786"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-8f5ef31ed5125786"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-8f5ef31ed5125786"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-8f5ef31ed5125786"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-8f5ef31ed5125786"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-8f5ef31ed5125786"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8f5ef31ed5125786"
+      ],
+      "entityNames": [
+        "Sharon AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/sharon-ai-successfully-delivers-ai-cloud-deployment-for-global-technology-customer-302856338.html",
+      "publisher": "prnewswire.com"
+    },
+    {
       "id": "EV-be76a1e5ed2b6cf5",
       "dataDate": "2026-08-21",
       "date": "2026-08-20",
@@ -127779,9 +127980,53 @@
     },
     {
       "id": "EV-b6789508a1887fd4",
-      "dataDate": "2026-08-22",
+      "dataDate": "2026-08-23",
       "date": "2026-08-17",
-      "updatedDate": "2026-08-22",
+      "updatedDate": "2026-08-23",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Darwin AI宣布与德克萨斯州达成全国首份AI治理批量采购协议",
+      "originalTitle": "Darwin AI | Darwin AI Announces the Nation’s First Bulk Purchase Agreement for AI Governance Through the State of Texas",
+      "subject": "Darwin AI",
+      "action": "procurement_contract",
+      "object": "Texas Department of Information Resources",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b45fc2bf83bced68"
+      ],
+      "entityNames": [
+        "Darwin AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://darwingov.com/post/darwin-ai-announces-the-nations-first-bulk-purchase-agreement-for-ai-governance-through-the-state-of-texas",
+      "publisher": "darwingov.com"
+    },
+    {
+      "id": "EV-e3a282c070969a55",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-17",
+      "updatedDate": "2026-08-23",
       "eventType": "procurement_contract",
       "eventTypeLabel": "采购合同",
       "eventGroup": "商业合作",
@@ -127792,7 +128037,7 @@
       "originalTitle": "Darwin AI Announces the Nation’s First Bulk Purchase Agreement for AI Governance Through the State of Texas",
       "subject": "Darwin AI",
       "action": "procurement_contract",
-      "object": "Texas Department of Information Resources",
+      "object": "Bulk Purchase Agreement BP2026-0015",
       "metrics": [],
       "locations": [],
       "missingFields": [],
@@ -127866,50 +128111,6 @@
       "products": [],
       "sourceUrl": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra",
       "publisher": "Simon Willison's Blog"
-    },
-    {
-      "id": "EV-e3a282c070969a55",
-      "dataDate": "2026-08-21",
-      "date": "2026-08-17",
-      "updatedDate": "2026-08-21",
-      "eventType": "procurement_contract",
-      "eventTypeLabel": "采购合同",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Darwin AI宣布与德克萨斯州达成全国首份AI治理批量采购协议",
-      "originalTitle": "Darwin AI | Darwin AI Announces the Nation’s First Bulk Purchase Agreement for AI Governance Through the State of Texas",
-      "subject": "Darwin AI",
-      "action": "procurement_contract",
-      "object": "Bulk Purchase Agreement BP2026-0015",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-b45fc2bf83bced68"
-      ],
-      "entityNames": [
-        "Darwin AI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://darwingov.com/post/darwin-ai-announces-the-nations-first-bulk-purchase-agreement-for-ai-governance-through-the-state-of-texas",
-      "publisher": "darwingov.com"
     },
     {
       "id": "EV-3ebefd784ba0afd0",
@@ -147758,10 +147959,142 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-1e6f73c188a9e946",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-23",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "能源优先的AI工厂公司",
+      "originalTitle": "Crusoe | The energy-first AI factory company",
+      "subject": "Crusoe",
+      "action": "partnership",
+      "object": "Aalo Atomics",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d41ebd9f02722fc8"
+      ],
+      "entityNames": [
+        "Crusoe"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://crusoe.ai",
+      "publisher": "crusoe.ai"
+    },
+    {
+      "id": "EV-d2247eeac1478994",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-23",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AMD推进AI 2026",
+      "originalTitle": "AMD Advancing AI 2026 | San Francisco, July 22-23",
+      "subject": "AMD",
+      "action": "partnership",
+      "object": "Anthropic",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-c70eca6b0f88f44d",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "AMD",
+        "Anthropic",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://amd.com/en/corporate/events/advancing-ai.html",
+      "publisher": "amd.com"
+    },
+    {
       "id": "EV-ac5915c4c4e18f5d",
-      "dataDate": "2026-08-22",
+      "dataDate": "2026-08-23",
       "date": "2026-08-21",
-      "updatedDate": "2026-08-22",
+      "updatedDate": "2026-08-23",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -147803,9 +148136,9 @@
     },
     {
       "id": "EV-afbcb331c874f648",
-      "dataDate": "2026-08-22",
+      "dataDate": "2026-08-23",
       "date": "2026-08-21",
-      "updatedDate": "2026-08-22",
+      "updatedDate": "2026-08-23",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -148090,9 +148423,9 @@
     },
     {
       "id": "EV-a69c83bcdb90c823",
-      "dataDate": "2026-08-22",
+      "dataDate": "2026-08-23",
       "date": "2026-08-17",
-      "updatedDate": "2026-08-22",
+      "updatedDate": "2026-08-23",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -148487,56 +148820,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/989/696.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-d2247eeac1478994",
-      "dataDate": "2026-08-14",
-      "date": "2026-08-14",
-      "updatedDate": "2026-08-14",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AMD推进AI 2026",
-      "originalTitle": "AMD Advancing AI 2026 | San Francisco, July 22-23",
-      "subject": "AMD",
-      "action": "partnership",
-      "object": "Anthropic",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-240389f4b730bad4",
-        "EN-c70eca6b0f88f44d",
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "entityNames": [
-        "AMD",
-        "Anthropic",
-        "Microsoft"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://amd.com/en/corporate/events/advancing-ai.html",
-      "publisher": "amd.com"
     },
     {
       "id": "EV-129ffa6be41bb485",
@@ -150120,88 +150403,6 @@
       "products": [],
       "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/superblocks-and-aws-announce-strategic-collaboration-to-bring-secure-enterprise-ai-app-development-to-amazon-bedrock",
       "publisher": "press.aboutamazon.com"
-    },
-    {
-      "id": "EV-1e6f73c188a9e946",
-      "dataDate": "2026-08-03",
-      "date": "2026-08-03",
-      "updatedDate": "2026-08-03",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "能源优先的AI工厂公司",
-      "originalTitle": "Crusoe | The energy-first AI factory company",
-      "subject": "Crusoe",
-      "action": "partnership",
-      "object": "Aalo Atomics",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [
-              "EN-d41ebd9f02722fc8"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-d41ebd9f02722fc8"
-      ],
-      "entityNames": [
-        "Crusoe"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://crusoe.ai",
-      "publisher": "crusoe.ai"
     },
     {
       "id": "EV-b40ba79822469bc0",
@@ -160994,6 +161195,959 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-03992c9b7f8fef10",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "推出获奖AI",
+      "originalTitle": "Introducing, Awarded AI",
+      "subject": "Procurement Sciences",
+      "action": "product_release",
+      "object": "Awarded AI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7035f6607ad2d162",
+        "EN-e0894803750a3e78"
+      ],
+      "entityNames": [
+        "Procurement Sciences",
+        "Awarded AI"
+      ],
+      "productName": "Awarded AI",
+      "products": [
+        {
+          "name": "Awarded AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://procurementsciences.com/platform",
+      "publisher": "procurementsciences.com"
+    },
+    {
+      "id": "EV-3c327b49d78d4388",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-23",
+      "eventType": "service_change",
+      "eventTypeLabel": "服务变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "llm 0.33",
+      "originalTitle": "",
+      "subject": "llm",
+      "action": "service_change",
+      "object": "OpenAI Python library 3.x and httpx2",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-487b91042c7cf27a",
+        "EN-7d3194f79e645c42",
+        "EN-110904e9df061111"
+      ],
+      "entityNames": [
+        "llm",
+        "OpenAI",
+        "Python"
+      ],
+      "productName": "Python",
+      "products": [
+        {
+          "name": "Python",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/llm",
+      "publisher": "Simon Willison's Blog"
+    },
+    {
+      "id": "EV-9d824ab9d0b0c6b5",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-23",
+      "eventType": "pricing_change",
+      "eventTypeLabel": "定价变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "内存成本飙升，英伟达 AI 芯片服务器明年初起涨价最高超 15%",
+      "originalTitle": "",
+      "subject": "内存成本飙升，英伟达 AI 芯片服务器明年初起",
+      "action": "涨价",
+      "object": "最高超 15%",
+      "metrics": [
+        "15%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-0e61c365bbad9649"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-0e61c365bbad9649"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-0e61c365bbad9649"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0e61c365bbad9649",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "内存成本飙升",
+        "NVIDIA",
+        "Microsoft",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/993/136.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-b41d30491e5c9ddd",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "哈佛商学院推出 699 美元创业训练营，AI 数字分身提供路演反馈",
+      "originalTitle": "",
+      "subject": "哈佛商学院",
+      "action": "推出",
+      "object": "699 美元创业训练营，AI 数字分身提供路演反馈",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e5e6ed840a0fb378"
+      ],
+      "entityNames": [
+        "哈佛商学院"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/993/131.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d4af2db7a4759431",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Inherent 推出小参数 AI 智能体 Faraday，科研复现能力超越 GPT-5.5 与 Claude Opus 4.8",
+      "originalTitle": "",
+      "subject": "Inherent",
+      "action": "推出",
+      "object": "小参数 AI 智能体 Faraday，科研复现能力超越 GPT-5.5 与 Claude Opus 4.8",
+      "metrics": [
+        "5,000 万",
+        "3.37 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-96c842ee0d60fa41"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-96c842ee0d60fa41"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-96c842ee0d60fa41"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-96c842ee0d60fa41"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-96c842ee0d60fa41",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Inherent",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/993/133.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-110d0ab135a08889",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-22",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "神秘 Ox Alpha AI 模型限免上架：DeepSWE 跑分碾压 Claude Fable 5，线索指向智谱",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "神秘 Ox Alpha AI 模型限免上架：DeepSWE 跑分碾压 Claude Fable 5，线索指向智谱",
+      "metrics": [
+        "80%",
+        "65%",
+        "52%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7f871cbf905f6e0c",
+        "EN-1d79127e9d90e89b",
+        "EN-06fbab796cb69137"
+      ],
+      "entityNames": [
+        "OpenRouter",
+        "智谱AI",
+        "Ox Alpha AI"
+      ],
+      "productName": "Ox Alpha AI",
+      "products": [
+        {
+          "name": "Ox Alpha AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenRouter"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/993/003.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-504c66c7ff0750f3",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-22",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "雷鸟 iO AI 眼镜体验：全天智记是亮点，堪比随身助理",
+      "originalTitle": "",
+      "subject": "雷鸟创新",
+      "action": "product_release",
+      "object": "雷鸟 iO AI 眼镜体验：全天智记是亮点，堪比随身助理",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-d98e71e85917acf7"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-86b7b29d698963ef"
+      ],
+      "entityNames": [
+        "雷鸟创新"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/993/065.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-99b2eee925860832",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-22",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "MCP 发布新路线图：聚焦智能体消息原语、HTTP 原生传输与企业级安全",
+      "originalTitle": "",
+      "subject": "MCP",
+      "action": "发布",
+      "object": "新路线图：聚焦智能体消息原语、HTTP 原生传输与企业级安全",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-10182ab855ff7727"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-10182ab855ff7727"
+      ],
+      "entityNames": [
+        "MCP"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-e44377720f2ab959",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-22",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "从模型到生产力：星海图与产业朋友圈共探具身智能的下一站",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "从模型到生产力：星海图与产业朋友圈共探具身智能的下一站",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-a6e5382c05dd0d16"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-a6e5382c05dd0d16"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-a6e5382c05dd0d16"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a6e5382c05dd0d16"
+      ],
+      "entityNames": [
+        "星海图"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/476930.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-edef3cd6592b9049",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-22",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "蒙德·迪夫林--用克隆人智能体管理办公室的开源多智能体工具",
+      "originalTitle": "",
+      "subject": "Munder Difflin",
+      "action": "开源多智能体工具",
+      "object": "蒙德·迪夫林--用克隆人智能体管理办公室的开源多智能体工具",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://munderdiffl.in",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-efd7341d5e210aff",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-22",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "RayNeo新AI眼镜舍弃摄像头，专注文本叠加显示",
+      "originalTitle": "RayNeo's new AI glasses skip the camera, focus on text overlays",
+      "subject": "RayNeo",
+      "action": "product_release",
+      "object": "new headset without a camera or speakers",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-62bf966d3319b00c"
+      ],
+      "entityNames": [
+        "RayNeo"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/rayneos-new-ai-glasses-skip-the-camera-focus-on-text-overlays",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-30211b84aacd0598",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-23",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 的 Opus 4.6 是一台色情内容生成机器",
+      "originalTitle": "Anthropic’s Opus 4.6 is a smut-machine",
+      "subject": "Anthropic",
+      "action": "model_release",
+      "object": "Claude Opus 4.6",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-c8322420896a6293",
+        "EN-b7ae9b9dd6b5a278"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Opus 4.6",
+        "Opus 4.6"
+      ],
+      "productName": "Claude Opus 4.6",
+      "products": [
+        {
+          "name": "Claude Opus 4.6",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Opus 4.6",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-a09f6e93ad868a57",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-23",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Deepseek发布实验性Flash视觉模型，在智能体基准测试中媲美Opus 4.8",
+      "originalTitle": "Deepseek releases experimental Flash vision model that rivals Opus 4.8 on agent benchmarks",
+      "subject": "Deepseek",
+      "action": "releases experimental Flash vision model",
+      "object": "that rivals Opus 4.8 on agent benchmarks",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "the-decoder-rss"
+        ],
+        "claim_refs": [
+          "CL-0c9a76522897b10d",
+          "CL-7d12267a8a42a233",
+          "CL-6a476d8a037e2e71",
+          "CL-baa229b555766d70"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-6f7ac1823da81d2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-6f7ac1823da81d2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-6f7ac1823da81d2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-6f7ac1823da81d2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-0f2f96366b64c65e"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "OpenAI",
+        "Anthropic",
+        "Opus 4.8"
+      ],
+      "productName": "Opus 4.8",
+      "products": [
+        {
+          "name": "Opus 4.8",
+          "type": "模型",
+          "ownerNames": [
+            "DeepSeek"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/deepseek-releases-experimental-flash-vision-model-that-rivals-opus-4-8-on-agent-benchmarks",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-d891a728ab2ec9d6",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-21",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "超过100万人点击了LinkedIn的AI智能体按钮",
+      "originalTitle": "Over 1 million people have clicked LinkedIn’s AI slop button",
+      "subject": "LinkedIn",
+      "action": "product_release",
+      "object": "Seems like AI slop button",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-84308bea454057aa",
+        "EN-fc154ba846caab47"
+      ],
+      "entityNames": [
+        "LinkedIn",
+        "Over 1"
+      ],
+      "productName": "Over 1",
+      "products": [
+        {
+          "name": "Over 1",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-07f531fe7a46ea43",
       "dataDate": "2026-08-22",
       "date": "2026-08-21",
@@ -161165,69 +162319,6 @@
       "publisher": "量子位"
     },
     {
-      "id": "EV-30211b84aacd0598",
-      "dataDate": "2026-08-22",
-      "date": "2026-08-21",
-      "updatedDate": "2026-08-22",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Anthropic 的 Opus 4.6 是一台色情内容生成机器",
-      "originalTitle": "Anthropic’s Opus 4.6 is a smut-machine",
-      "subject": "Anthropic",
-      "action": "model_release",
-      "object": "Claude Opus 4.6",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-c8322420896a6293",
-        "EN-b7ae9b9dd6b5a278"
-      ],
-      "entityNames": [
-        "Anthropic",
-        "Claude Opus 4.6",
-        "Opus 4.6"
-      ],
-      "productName": "Claude Opus 4.6",
-      "products": [
-        {
-          "name": "Claude Opus 4.6",
-          "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        },
-        {
-          "name": "Opus 4.6",
-          "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        }
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine",
-      "publisher": "TechCrunch AI"
-    },
-    {
       "id": "EV-6993e6a7df339e59",
       "dataDate": "2026-08-22",
       "date": "2026-08-21",
@@ -161396,179 +162487,6 @@
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/08/476591.html",
       "publisher": "量子位"
-    },
-    {
-      "id": "EV-a09f6e93ad868a57",
-      "dataDate": "2026-08-22",
-      "date": "2026-08-21",
-      "updatedDate": "2026-08-22",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Deepseek发布实验性Flash视觉模型，在智能体基准测试中媲美Opus 4.8",
-      "originalTitle": "Deepseek releases experimental Flash vision model that rivals Opus 4.8 on agent benchmarks",
-      "subject": "Deepseek",
-      "action": "releases experimental Flash vision model",
-      "object": "that rivals Opus 4.8 on agent benchmarks",
-      "metrics": [],
-      "locations": [],
-      "marketScope": {
-        "market_region": "CN",
-        "china_market_match": true,
-        "china_market_basis": [
-          "actor_origin"
-        ],
-        "source_registry_ids": [
-          "the-decoder-rss"
-        ],
-        "claim_refs": [
-          "CL-f008e0973db2b271",
-          "CL-944f86e6854e8a5c",
-          "CL-da001af3053850de",
-          "CL-ea6a4696a027a528"
-        ]
-      },
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态",
-          "entityIds": [
-            "EN-6f7ac1823da81d2e"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态",
-          "entityIds": [
-            "EN-6f7ac1823da81d2e"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态",
-          "entityIds": [
-            "EN-6f7ac1823da81d2e"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态",
-          "entityIds": [
-            "EN-6f7ac1823da81d2e"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-6f7ac1823da81d2e",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-0f2f96366b64c65e"
-      ],
-      "entityNames": [
-        "DeepSeek",
-        "OpenAI",
-        "Anthropic",
-        "Opus 4.8"
-      ],
-      "productName": "Opus 4.8",
-      "products": [
-        {
-          "name": "Opus 4.8",
-          "type": "模型",
-          "ownerNames": [
-            "DeepSeek"
-          ]
-        }
-      ],
-      "sourceUrl": "https://the-decoder.com/deepseek-releases-experimental-flash-vision-model-that-rivals-opus-4-8-on-agent-benchmarks",
-      "publisher": "The Decoder AI News"
-    },
-    {
-      "id": "EV-d891a728ab2ec9d6",
-      "dataDate": "2026-08-22",
-      "date": "2026-08-21",
-      "updatedDate": "2026-08-22",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "超过100万人点击了LinkedIn的AI智能体按钮",
-      "originalTitle": "Over 1 million people have clicked LinkedIn’s AI slop button",
-      "subject": "LinkedIn",
-      "action": "product_release",
-      "object": "Seems like AI slop button",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-84308bea454057aa",
-        "EN-fc154ba846caab47"
-      ],
-      "entityNames": [
-        "LinkedIn",
-        "Over 1"
-      ],
-      "productName": "Over 1",
-      "products": [
-        {
-          "name": "Over 1",
-          "type": "产品/服务",
-          "ownerNames": []
-        }
-      ],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
-      "publisher": "The Verge AI"
     },
     {
       "id": "EV-de025966562aa596",
@@ -162135,6 +163053,88 @@
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238",
       "publisher": "Claude Code：GitHub Releases（RSS）"
+    },
+    {
+      "id": "EV-0fac203f4da2d4fb",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-20",
+      "updatedDate": "2026-08-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Slack 推出协作式 vibe-coding 频道",
+      "originalTitle": "Slack is launching collaborative vibe-coding channels",
+      "subject": "Slack",
+      "action": "product_release",
+      "object": "Slack Code",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-877c3aec832cd410"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-877c3aec832cd410"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-877c3aec832cd410"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-aff27dad1577fdc0",
+        "EN-877c3aec832cd410"
+      ],
+      "entityNames": [
+        "Slack Code",
+        "Slack"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
+      "publisher": "The Verge AI"
     },
     {
       "id": "EV-afd50641f48c5e98",
@@ -163678,6 +164678,138 @@
       "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
+      "id": "EV-d93dd19a481307ec",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-23",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
+      "originalTitle": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
+      "subject": "Korea's First Sovereign AI Appliance",
+      "action": "Ships: Domestic Chip, Domestic LLM, One Server",
+      "object": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
+      "metrics": [
+        "32 billion"
+      ],
+      "locations": [
+        "Korea"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3c8fb6fa445060",
+        "EN-b563f0c46d6f78f8"
+      ],
+      "entityNames": [
+        "KT",
+        "OpenAI",
+        "Google",
+        "Anthropic",
+        "AI Appliance Ships",
+        "First Sovereign AI Appliance"
+      ],
+      "productName": "AI Appliance Ships",
+      "products": [
+        {
+          "name": "AI Appliance Ships",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "KT"
+          ]
+        },
+        {
+          "name": "First Sovereign AI Appliance",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "KT"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
+      "publisher": "techtimes.com"
+    },
+    {
       "id": "EV-30585effe9134084",
       "dataDate": "2026-08-22",
       "date": "2026-08-19",
@@ -163880,138 +165012,6 @@
       ],
       "sourceUrl": "https://digitaltoday.co.kr/en/view/94279/kt-launches-npu-llm-station-featuring-korean-ai-chip",
       "publisher": "digitaltoday.co.kr"
-    },
-    {
-      "id": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-22",
-      "date": "2026-08-19",
-      "updatedDate": "2026-08-22",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "eventGroup": "AI 硬件",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
-      "originalTitle": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
-      "subject": "Korea's First Sovereign AI Appliance",
-      "action": "Ships: Domestic Chip, Domestic LLM, One Server",
-      "object": "Korea's First Sovereign AI Appliance Ships: Domestic Chip, Domestic LLM, One Server",
-      "metrics": [
-        "32 billion"
-      ],
-      "locations": [
-        "Korea"
-      ],
-      "missingFields": [
-        "object"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-99d3fd0fa8fe115e",
-        "EN-7d3194f79e645c42",
-        "EN-bbdefa2950f49882",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3c8fb6fa445060",
-        "EN-b563f0c46d6f78f8"
-      ],
-      "entityNames": [
-        "KT",
-        "OpenAI",
-        "Google",
-        "Anthropic",
-        "AI Appliance Ships",
-        "First Sovereign AI Appliance"
-      ],
-      "productName": "AI Appliance Ships",
-      "products": [
-        {
-          "name": "AI Appliance Ships",
-          "type": "AI 硬件",
-          "ownerNames": [
-            "KT"
-          ]
-        },
-        {
-          "name": "First Sovereign AI Appliance",
-          "type": "AI 硬件",
-          "ownerNames": [
-            "KT"
-          ]
-        }
-      ],
-      "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
-      "publisher": "techtimes.com"
     },
     {
       "id": "EV-eb3545d5948aa255",
@@ -165747,9 +166747,9 @@
     },
     {
       "id": "EV-50707b1126daba0f",
-      "dataDate": "2026-08-22",
+      "dataDate": "2026-08-23",
       "date": "2026-08-17",
-      "updatedDate": "2026-08-22",
+      "updatedDate": "2026-08-23",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -267031,9 +268031,9 @@
     },
     {
       "id": "EV-2c17183b71d8b7d1",
-      "dataDate": "2026-08-22",
-      "date": "2026-08-22",
-      "updatedDate": "2026-08-22",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-23",
       "eventType": "research_result",
       "eventTypeLabel": "研究结果",
       "eventGroup": "研究结果",
@@ -267153,6 +268153,176 @@
       "products": [],
       "sourceUrl": "https://northflank.com/blog/enterprise-ai-coding-agent-deployment",
       "publisher": "northflank.com"
+    },
+    {
+      "id": "EV-33b97d1284a43d30",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-23",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Linus Torvalds 谈 AI 调试：虽多次想放弃，但忠实执行调试代码",
+      "originalTitle": "",
+      "subject": "Linus Torvalds",
+      "action": "research_result",
+      "object": "AI debugging session",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3c0439097761abc0",
+        "EN-32e83e92d45d71f6"
+      ],
+      "entityNames": [
+        "Linus Torvalds",
+        "AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/linus-torvalds",
+      "publisher": "Simon Willison 博客"
+    },
+    {
+      "id": "EV-45f4197c8d92bc4c",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-22",
+      "updatedDate": "2026-08-23",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "解码AI开源课程：三种智能体循环运行方式及其背后的供应商经济学",
+      "originalTitle": "",
+      "subject": "LangChain",
+      "action": "research_result",
+      "object": "Terminal-Bench experiment",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-f3f2184b56f946c6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-f3f2184b56f946c6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-f3f2184b56f946c6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-f3f2184b56f946c6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-f3f2184b56f946c6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-f3f2184b56f946c6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8436a03cebf988e4",
+        "EN-f3f2184b56f946c6",
+        "EN-306a3532d7841d04"
+      ],
+      "entityNames": [
+        "解码AI",
+        "LangChain",
+        "Terminal-Bench"
+      ],
+      "productName": "Terminal-Bench",
+      "products": [
+        {
+          "name": "Terminal-Bench",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/22/decoding-ais-open-source-course-maps-three-ways-to-run-an-agent-loop-and-the-provider-economics-behind-each",
+      "publisher": "MarkTechPost（RSS）"
     },
     {
       "id": "EV-2e5333d00710ce65",
@@ -268232,6 +269402,50 @@
       "publisher": "cac.gov.cn"
     },
     {
+      "id": "EV-f0c42dbaad94762a",
+      "dataDate": "2026-08-23",
+      "date": "2026-08-19",
+      "updatedDate": "2026-08-23",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "partial",
+      "title": "VentureBeat 任命 Rob Strechay 为首位首席分析师，扩大企业 AI 研究布局",
+      "originalTitle": "VentureBeat names Rob Strechay as its first Lead Analyst, expanding its enterprise AI research push",
+      "subject": "Rob Strechay",
+      "action": "organization_people",
+      "object": "VentureBeat",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6d02a4246029ad20"
+      ],
+      "entityNames": [
+        "Rob Strechay"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push",
+      "publisher": "VentureBeat AI"
+    },
+    {
       "id": "EV-c6db0183b314b5fe",
       "dataDate": "2026-08-22",
       "date": "2026-08-19",
@@ -268312,50 +269526,6 @@
       "products": [],
       "sourceUrl": "https://digitimes.com/news/a20260818PD222/hanmi-packaging-equipment-plant-capacity.html",
       "publisher": "digitimes.com"
-    },
-    {
-      "id": "EV-f0c42dbaad94762a",
-      "dataDate": "2026-08-21",
-      "date": "2026-08-19",
-      "updatedDate": "2026-08-21",
-      "eventType": "organization_people",
-      "eventTypeLabel": "组织与人员",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "partial",
-      "title": "VentureBeat 任命 Rob Strechay 为首位首席分析师，扩大企业 AI 研究布局",
-      "originalTitle": "VentureBeat names Rob Strechay as its first Lead Analyst, expanding its enterprise AI research push",
-      "subject": "Rob Strechay",
-      "action": "organization_people",
-      "object": "VentureBeat",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-6d02a4246029ad20"
-      ],
-      "entityNames": [
-        "Rob Strechay"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push",
-      "publisher": "VentureBeat AI"
     },
     {
       "id": "EV-0263827d2d81f641",

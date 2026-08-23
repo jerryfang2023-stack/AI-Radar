@@ -1,0 +1,77 @@
+[
+  {
+    "hardware_snapshot_id": "HWS-89d38bda7fbf11a2",
+    "snapshot_key": "3089e9a92fa603ef",
+    "as_of": "2026-08-23",
+    "subject_entity_id": "EN-10182ab855ff7727",
+    "subject_name": "MCP",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_types": [
+      "server"
+    ],
+    "latest_values": {
+      "shipment_deployment": {
+        "metric_value": "",
+        "unit": "",
+        "fact_ref": "HWF-81d2d2ab6461cf03"
+      }
+    },
+    "fact_refs": [
+      "HWF-81d2d2ab6461cf03"
+    ],
+    "claim_refs": [
+      "CL-51d5481f42c91eb0"
+    ],
+    "source_refs": [
+      "SA-d636fe971d83ea9b"
+    ],
+    "event_refs": [
+      "EV-99b2eee925860832"
+    ],
+    "previous_snapshot_ref": "",
+    "change_status": "initial"
+  },
+  {
+    "hardware_snapshot_id": "HWS-3bcb3c46be7f99fe",
+    "snapshot_key": "acba324ff85c02ba",
+    "as_of": "2026-08-23",
+    "subject_entity_id": "EN-99d3fd0fa8fe115e",
+    "subject_name": "KT",
+    "product_entity_ids": [
+      "EN-7d3c8fb6fa445060",
+      "EN-b563f0c46d6f78f8"
+    ],
+    "product_names": [
+      "AI Appliance Ships",
+      "First Sovereign AI Appliance"
+    ],
+    "component_types": [
+      "ai_accelerator",
+      "server"
+    ],
+    "latest_values": {
+      "product": {
+        "metric_value": "32",
+        "unit": "billion",
+        "fact_ref": "HWF-4d5ebacfbd450975"
+      }
+    },
+    "fact_refs": [
+      "HWF-76fe3cd1db6d328c",
+      "HWF-4d5ebacfbd450975"
+    ],
+    "claim_refs": [
+      "CL-3dd282e250f53601",
+      "CL-a34ee638a1e5e2b8"
+    ],
+    "source_refs": [
+      "SA-30a50d9be011e4c2"
+    ],
+    "event_refs": [
+      "EV-d93dd19a481307ec"
+    ],
+    "previous_snapshot_ref": "",
+    "change_status": "initial"
+  }
+]
