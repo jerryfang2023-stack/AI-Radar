@@ -49,6 +49,23 @@ test("founder biographies and investor backgrounds cannot classify the funded co
   assert.equal(taxonomyEvidenceSegmentRelevant(company), true);
 });
 
+test("translated double-dash titles preserve an evidence-backed organization mention", () => {
+  const mentions = organizationMentions(
+    "蒙德·迪夫林--用克隆人智能体管理办公室的开源多智能体工具",
+    { subject: "", action: "product_release", object: "open source multi-agent tool" },
+    "product_release",
+    "The app is open source and runs on your laptop forever.",
+    [{ subject: "Munder Difflin", source_quote: "The app is open source and runs on your laptop forever." }],
+  );
+  assert.deepEqual(mentions, [{
+    canonicalName: "蒙德·迪夫林",
+    mentionText: "蒙德·迪夫林",
+    start: 0,
+    source: "title_original",
+    verified: false,
+  }]);
+});
+
 test("facet matching does not treat trailing retrieval metadata as event evidence", () => {
   const facets = facetAssertionsForClaim({
     claim_id: "CL-facet-metadata",
