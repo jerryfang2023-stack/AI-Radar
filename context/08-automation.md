@@ -174,6 +174,14 @@ event sources. Release validation includes the current-date projection coverage
 gate and the frontstage regression gate, so a successful collector/build command
 alone is not publication evidence.
 
+Current-rule hygiene distinguishes governance vocabulary from faithful source
+text. Retired route/schema terms remain forbidden in active rules, structured
+keys, and exact structured enum values. Source titles, RawDocument text, Claims,
+and the translation registry may preserve the same natural-language phrase when
+it is part of the captured evidence; those source-derived values are still
+checked for text corruption but must not be rewritten or block Pages merely
+because they contain a retired Chinese column label.
+
 Scheduled Codex repair uses `--ask-for-approval never` as a global CLI option
 before the `exec` subcommand. Keep that ordering covered by the Windows runtime
 tests; placing the flag after `exec` makes the handoff fail before repair starts.

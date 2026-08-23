@@ -124,6 +124,9 @@ const activeRoots = [
   ".github/workflows",
   "agent-workflow/tools",
   "01-SiteV2/site/scripts",
+];
+
+const sourceTextRoots = [
   "01-SiteV2/content/11-databases/source-title-translations.json",
 ];
 
@@ -158,6 +161,42 @@ function scanFile(file, terms, kind) {
       if (line.includes(term)) hits.push({ kind, file: rel(file), line: index + 1, term });
     });
   }
+  return hits;
+}
+
+function scanStructuredDataFile(file, terms, kind) {
+  const text = fs.readFileSync(file, "utf8");
+  const hits = [];
+  const lines = text.split(/\r?\n/u);
+  const termSet = new Set(terms);
+  const sourceDerivedFiles = new Set(["source-artifacts.json", "raw-documents.json", "claims.json"]);
+  const scanValues = !sourceDerivedFiles.has(path.basename(file));
+  const lineFor = (term) => Math.max(1, lines.findIndex((line) => line.includes(JSON.stringify(term))) + 1);
+  let payload;
+  try {
+    payload = JSON.parse(text);
+  } catch {
+    return scanFile(file, terms, kind);
+  }
+  const visit = (value) => {
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+    if (value && typeof value === "object") {
+      Object.entries(value).forEach(([key, child]) => {
+        if (termSet.has(key)) hits.push({ kind, file: rel(file), line: lineFor(key), term: key });
+        visit(child);
+      });
+      return;
+    }
+    if (!scanValues || typeof value !== "string") return;
+    const exactTerm = terms.find((term) => value === term);
+    const retiredPath = terms.find((term) => term.startsWith("site-content.") && value.includes(term));
+    const term = exactTerm || retiredPath;
+    if (term) hits.push({ kind, file: rel(file), line: lineFor(term), term });
+  };
+  visit(payload);
   return hits;
 }
 
@@ -219,12 +258,15 @@ function isProtectiveRetiredLine(line) {
 
 function main() {
   const activeFiles = [...new Set(activeRoots.flatMap(filesUnder))];
+  const sourceTextFiles = [...new Set(sourceTextRoots.flatMap(filesUnder))];
   const dataFiles = filesUnder(`01-SiteV2/content/11-databases/data-center-v4/${date}`);
   const retiredHits = activeFiles
     .filter((file) => !retiredAllowlist.has(rel(file)))
     .flatMap((file) => scanFile(file, retiredTerms, "retired_term"));
-  const retiredDataHits = dataFiles.flatMap((file) => scanFile(file, retiredDataTerms, "retired_data_term"));
-  const mojibakeHits = [...activeFiles, ...dataFiles].flatMap((file) => scanFile(file, mojibakeMarkers, "text_contamination"));
+  const retiredDataHits = dataFiles
+    .flatMap((file) => scanStructuredDataFile(file, retiredDataTerms, "retired_data_term"));
+  const mojibakeHits = [...activeFiles, ...sourceTextFiles, ...dataFiles]
+    .flatMap((file) => scanFile(file, mojibakeMarkers, "text_contamination"));
   const v4PublicRuleHits = v4PublicRuleFiles.flatMap(filesUnder)
     .flatMap((file) => scanFilePatterns(file, v4PublicForbiddenPatterns, "v4_public_rule_conflict"));
   const governanceRuleScanFiles = [...new Set(currentGovernanceRuleFiles.flatMap(filesUnder))];
@@ -243,6 +285,7 @@ function main() {
   ];
   const scannedFiles = new Set([
     ...activeFiles,
+    ...sourceTextFiles,
     ...dataFiles,
     ...v4PublicRuleFiles.flatMap(filesUnder),
     ...governanceRuleScanFiles,
