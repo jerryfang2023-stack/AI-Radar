@@ -68,6 +68,7 @@ integrity gates.
 
 - Every Claim quotes an exact span of the normalized body loaded from its private `evidence://<content_hash>` object.
 - Every formal event has resolvable Claim and SourceArtifact references.
+- Every accepted event also has at least one source-backed Entity reference. When an approved translated title uses a double dash or dash to separate a localized organization name from the event description, the exact leading title span may create a candidate organization mention only when the accepted Claim also supplies a valid organization subject; this repair must not promote a title fragment to a verified catalog entity.
 - Every CanonicalEvent must pass the AI-industry scope gate: the source title or accepted Claims must show AI as the event's direct technology, product, capability, organization, policy, transaction, deployment, hardware, or research subject.
 - Publisher names, feeds, discovery channels, search queries, navigation labels, and incidental mentions of AI do not establish event eligibility.
 - Generic vertical-industry publicity that only labels a local operating system as “智慧” or “大模型”, without a source-bounded AI-industry actor, product identity, market action, or reusable technical release, remains in QA and does not enter CanonicalEvents.

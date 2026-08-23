@@ -1,6 +1,6 @@
 {
   "schema_version": "ENTITY-CATALOG-REVIEW-V1",
-  "generated_at": "2026-08-03T07:15:00.000Z",
+  "generated_at": "2026-08-23T10:10:00.000Z",
   "reviewer": "codex-china-funding-review",
   "inputs": [
     "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json",
@@ -8,11 +8,11 @@
     "agent-workflow/reports/entity-catalog-deepseek-audit-current.json"
   ],
   "summary": {
-    "current_catalog_reviewed": 533,
+    "current_catalog_reviewed": 534,
     "supplemental_claim_entities": 23,
     "historical_decisions_retained": 347,
-    "reviewed": 896,
-    "confirmed": 368,
+    "reviewed": 897,
+    "confirmed": 369,
     "corrected": 185,
     "merged": 108,
     "quarantined": 235
@@ -30267,6 +30267,37 @@
       "review_status": "accepted",
       "reviewer": "codex-china-funding-review",
       "reviewed_at": "2026-08-03T07:15:00.000Z",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-a6e5382c05dd0d16",
+      "current": {
+        "name": "星海图",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "星海图",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-05a2d43b4715736b",
+          "CL-a1d0e48144b5a40b",
+          "CL-19ca0eda1ff80255"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "projection_coverage_repair",
+      "advisory_decision": "confirmed",
+      "confidence": 1,
+      "rationale": "历史融资 Claim 明确将星海图作为完成融资的公司主体，当前批次标题与 EntityMention 继续精确指向同一稳定实体，因此确认其为公司实体并纳入实体索引。",
+      "review_status": "accepted",
+      "reviewer": "codex-projection-coverage-repair",
+      "reviewed_at": "2026-08-23T10:10:00.000Z",
       "error_patterns": []
     }
   ]

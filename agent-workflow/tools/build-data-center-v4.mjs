@@ -835,6 +835,19 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
     }
   }
   if (!hits.length) hits.push(...claimSubjectOrganizationMentions(eventClaims, title, claimEvidence));
+  if (!hits.length && (eventClaims || []).some((claim) => cleanOrganizationCandidate(claim.subject))) {
+    const localizedTitleLead = title.match(/^(.{2,24}?)(?=\s*(?:--|—|–)\s*)/u)?.[1] || "";
+    const candidate = cleanOrganizationCandidate(localizedTitleLead);
+    if (candidate && containsChinese(candidate)) {
+      hits.push({
+        canonicalName: candidate,
+        mentionText: localizedTitleLead,
+        start: 0,
+        source: "title_original",
+        verified: false,
+      });
+    }
+  }
   hits.sort((a, b) => a.start - b.start || b.mentionText.length - a.mentionText.length);
 
   const selected = [];
