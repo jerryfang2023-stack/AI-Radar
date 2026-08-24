@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -115,11 +115,17 @@
       "EV-1c6adfef6f405319",
       "EV-66df35d14361a6cb",
       "EV-3c4d6d70ac763885",
-      "EV-3c327b49d78d4388",
+      "EV-2afe102017e1b21c",
+      "EV-44a833fe8dd16006",
+      "EV-7a116596551ff8c7",
+      "EV-98823b85fd27102b",
+      "EV-c4d784c7069ca66b",
       "EV-d4af2db7a4759431",
+      "EV-3c327b49d78d4388",
       "EV-a09f6e93ad868a57",
       "EV-6993e6a7df339e59",
       "EV-597a6d51533fe5d6",
+      "EV-0d5a32aca724d30e",
       "EV-3873f7ea8ac5a93f",
       "EV-3e7db5b8d976bf0e",
       "EV-e3da5e799e746408",
@@ -309,8 +315,8 @@
       "EV-00834dd71037c7cc",
       "EV-2e5333d00710ce65",
       "EV-ce32954014cb030d",
-      "EV-3b30eda1326a6fb1",
       "EV-00ffb2c501a37ec8",
+      "EV-3b30eda1326a6fb1",
       "EV-da06805e06990d63",
       "EV-0c00a6c681f22b98",
       "EV-2c08a493d3c8b9c7",
@@ -408,6 +414,7 @@
       "TX-product_form-model_api_service",
       "TX-technology-multimodal",
       "TX-technology-long_context",
+      "TX-technology-open_weights",
       "TX-technology-inference_optimization",
       "TX-technology-guardrails_safety",
       "TX-technology-reasoning"
@@ -439,8 +446,9 @@
       "EN-b9db1ff13ae8496e"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-08-23",
+    "lastSeen": "2026-08-24",
     "relationIds": [
+      "REL2-b2fd7c5284307b20",
       "REL2-10ceb94d03e5bd63",
       "REL2-ac23d27e955fb3fc",
       "REL2-e5e49d88d99ddd93",
@@ -618,8 +626,15 @@
         "EV-66df35d14361a6cb"
       ],
       "productsServices": [
-        "EV-3c327b49d78d4388",
+        "EV-2afe102017e1b21c",
+        "EV-44a833fe8dd16006",
+        "EV-7a116596551ff8c7",
+        "EV-98823b85fd27102b",
+        "EV-c4d784c7069ca66b",
         "EV-d4af2db7a4759431",
+        "EV-0d5a32aca724d30e",
+        "EV-00ffb2c501a37ec8",
+        "EV-3c327b49d78d4388",
         "EV-a09f6e93ad868a57",
         "EV-6993e6a7df339e59",
         "EV-597a6d51533fe5d6",
@@ -628,7 +643,6 @@
         "EV-e3da5e799e746408",
         "EV-f9ebb480a6b58b21",
         "EV-937b855e723d6ef0",
-        "EV-00ffb2c501a37ec8",
         "EV-46cd64a76d3767f5",
         "EV-40d88f6279d48304",
         "EV-0c00a6c681f22b98",
@@ -870,8 +884,35 @@
     },
     "timeline": [
       {
-        "id": "EV-3c327b49d78d4388",
-        "dataDate": "2026-08-23",
+        "id": "EV-2afe102017e1b21c",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI CEO 奥尔特曼：担心人工智能会被少数强势主体掌控",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-44a833fe8dd16006",
+        "dataDate": "2026-08-24",
         "date": "2026-08-23",
         "eventType": "service_change",
         "eventTypeLabel": "服务变更",
@@ -887,8 +928,56 @@
         ]
       },
       {
+        "id": "EV-7a116596551ff8c7",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 推出青少年版 ChatGPT，儿童安全专家质疑安全机制透明度",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
+      {
+        "id": "EV-98823b85fd27102b",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-c4d784c7069ca66b",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-23",
+        "eventType": "service_change",
+        "eventTypeLabel": "服务变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI Codex 明天重置额度，并修复近期用量消耗过快问题",
+        "displayTags": [],
+        "entityIds": [
+          "EN-595d991bf42db674",
+          "EN-7d3194f79e645c42",
+          "EN-1ecf93c539fcffca"
+        ]
+      },
+      {
         "id": "EV-d4af2db7a4759431",
-        "dataDate": "2026-08-23",
+        "dataDate": "2026-08-24",
         "date": "2026-08-23",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -916,38 +1005,38 @@
         ]
       },
       {
-        "id": "EV-a09f6e93ad868a57",
-        "dataDate": "2026-08-23",
-        "date": "2026-08-21",
+        "id": "EV-0d5a32aca724d30e",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-20",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
         "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Deepseek发布实验性Flash视觉模型，在智能体基准测试中媲美Opus 4.8",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Harvey 推出基于 Kimi K3 的后训练模型 Harvey Tenet",
         "displayTags": [
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
-            "id": "multimodal",
-            "name": "多模态",
-            "entityIds": [
-              "EN-6f7ac1823da81d2e"
-            ],
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
         ],
         "entityIds": [
-          "EN-6f7ac1823da81d2e",
+          "EN-c9fd53f3265ef997",
+          "EN-8d4321d936320802",
+          "EN-30cae3294219af79",
+          "EN-607964040e4b62e0",
           "EN-7d3194f79e645c42",
-          "EN-c70eca6b0f88f44d",
-          "EN-0f2f96366b64c65e"
+          "EN-b5251b35f15bedc4"
         ]
       },
       {
         "id": "EV-d93dd19a481307ec",
-        "dataDate": "2026-08-23",
+        "dataDate": "2026-08-24",
         "date": "2026-08-19",
         "eventType": "hardware_product",
         "eventTypeLabel": "硬件产品",
@@ -982,6 +1071,68 @@
           "EN-c70eca6b0f88f44d",
           "EN-7d3c8fb6fa445060",
           "EN-b563f0c46d6f78f8"
+        ]
+      },
+      {
+        "id": "EV-00ffb2c501a37ec8",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-20",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI踩了刹车。接下来呢？",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-3c327b49d78d4388",
+        "dataDate": "2026-08-23",
+        "date": "2026-08-23",
+        "eventType": "service_change",
+        "eventTypeLabel": "服务变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "llm 0.33",
+        "displayTags": [],
+        "entityIds": [
+          "EN-487b91042c7cf27a",
+          "EN-7d3194f79e645c42",
+          "EN-110904e9df061111"
+        ]
+      },
+      {
+        "id": "EV-a09f6e93ad868a57",
+        "dataDate": "2026-08-23",
+        "date": "2026-08-21",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Deepseek发布实验性Flash视觉模型，在智能体基准测试中媲美Opus 4.8",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-6f7ac1823da81d2e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-0f2f96366b64c65e"
         ]
       },
       {
@@ -1220,21 +1371,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-bb15c5437cc0ac44",
-          "EN-7d3194f79e645c42"
-        ]
-      },
-      {
-        "id": "EV-00ffb2c501a37ec8",
-        "dataDate": "2026-08-21",
-        "date": "2026-08-20",
-        "eventType": "security_incident",
-        "eventTypeLabel": "安全事件",
-        "eventGroup": "组织、政策与法律",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "OpenAI踩了刹车。接下来呢？",
-        "displayTags": [],
-        "entityIds": [
           "EN-7d3194f79e645c42"
         ]
       },
@@ -12214,6 +12350,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-7a116596551ff8c7",
         "EV-597a6d51533fe5d6",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
@@ -12240,7 +12377,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-916a98f0fa2a39af",
@@ -12393,6 +12530,7 @@
         "EV-58c1cc3749294649",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
+        "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
         "EV-e3beca344d2321a9",
@@ -12578,7 +12716,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-7839fb10a8f14c70",
@@ -12831,7 +12969,6 @@
         "EV-3a4acc92731cb5ac",
         "EV-0adf1fcc9dbeddef",
         "EV-e3fb3a8b12b3ba9c",
-        "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-3dd89fab562d16a1",
         "EV-ea2598236eae915f",
@@ -13140,7 +13277,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -13360,7 +13497,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -13590,6 +13727,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c4d784c7069ca66b",
         "EV-bc41a3060f11ca2d",
         "EV-e295f808713644c7"
       ],
@@ -13599,7 +13737,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-06-03",
-      "lastSeen": "2026-07-21"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-9de030d092759897",
@@ -13651,6 +13789,27 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-b2fd7c5284307b20",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-7a116596551ff8c7",
+      "claim_refs": [
+        "CL-d34de99f104b67cb",
+        "CL-140c68d6e2e5427c",
+        "CL-ca4e4bd49c04468a",
+        "CL-06eaa38458e4dbfe"
+      ],
+      "source_refs": [
+        "SA-20bc80da6ce68186"
+      ],
+      "data_date": "2026-08-24",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-10ceb94d03e5bd63",
       "relationship_version": "RELATION-V2.1",
@@ -16199,6 +16358,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-b613937b7bc1ea64",
         "EV-1fe1613825cae718",
         "EV-78651dfea74b4323",
         "EV-435ad78c9ec50025",
@@ -16207,7 +16367,6 @@
         "EV-4c168759119d2668",
         "EV-eb3545d5948aa255",
         "EV-3a4acc92731cb5ac",
-        "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
         "EV-f7b81752b1fadd87",
         "EV-c17a52220be52dc1",
@@ -16416,10 +16575,10 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-a3e023474c2fbe8e",
         "EN-9c3de5f42376b1af",
         "EN-f7d9f5a90479d632",
         "EN-99d3fd0fa8fe115e",
-        "EN-32e83e92d45d71f6",
         "EN-3a7bd3e2360a3d29",
         "EN-ea3bd73e2b506e00",
         "EN-bbdefa2950f49882",
@@ -16427,6 +16586,7 @@
         "EN-e32ac33fa53a3db6",
         "EN-83eb1cb31148698f",
         "EN-52593fb3cf820033",
+        "EN-32e83e92d45d71f6",
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
@@ -16523,7 +16683,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -16988,7 +17148,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "TX-technology-code_generation",
@@ -18007,18 +18167,19 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-21d4133cd8711813",
+        "EV-85ea6e0ef8bda162",
         "EV-d4af2db7a4759431",
         "EV-6993e6a7df339e59",
+        "EV-1ced8c8a0480d5c2",
         "EV-0fac203f4da2d4fb",
         "EV-afd50641f48c5e98",
-        "EV-1ced8c8a0480d5c2",
         "EV-3873f7ea8ac5a93f",
         "EV-cd7ba52564d4091e",
         "EV-8cc00de56738c21d",
         "EV-68897f26c8d956df",
         "EV-2430dae13b9f6c82",
         "EV-257c7ec21edf638a",
-        "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-4551be310b520fcc",
         "EV-ea2598236eae915f",
@@ -18456,15 +18617,15 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-9d3508a8484ee252",
+        "EN-3ebe8498fb071652",
         "EN-96c842ee0d60fa41",
         "EN-877c3aec832cd410",
-        "EN-3ebe8498fb071652",
         "EN-59bba357145ca539",
         "EN-e3ce9cc5efa9354c",
         "EN-03c4260539e08e9c",
         "EN-796e923025d6fbb2",
         "EN-35c53e7e400caf01",
-        "EN-32e83e92d45d71f6",
         "EN-3b9e1cdd9e593b5c",
         "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
@@ -19363,6 +19524,84 @@
       "lastSeen": "2026-08-13"
     },
     {
+      "id": "TX-technology-open_weights",
+      "name": "开放权重",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "open_weights",
+      "eventIds": [
+        "EV-1abf0d076d30ec6d",
+        "EV-0121f0a9e9a975ec",
+        "EV-d2a623e8eef1f61d",
+        "EV-f55d16df5b5fecb2",
+        "EV-2afe102017e1b21c",
+        "EV-78651dfea74b4323",
+        "EV-0d5a32aca724d30e",
+        "EV-615fbb4de33fad2d",
+        "EV-defb496c46fcc604",
+        "EV-c17a52220be52dc1",
+        "EV-58e18eab1b072c9a",
+        "EV-c698da7da473b059",
+        "EV-29c0d969abde2020",
+        "EV-7228e4310ee1341a",
+        "EV-890ffd351486b884",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-d230942b0787581a",
+        "EV-db304937ceac95d2",
+        "EV-cfba8b877da20eaf",
+        "EV-63858d9b5ef92175",
+        "EV-acf3df526813ed37",
+        "EV-afcefb5d86a2db45",
+        "EV-ca18725115b61bd3",
+        "EV-0f0b2013927ce156",
+        "EV-702276a31f123374",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-b888d3eb5f192649",
+        "EV-b84035029a63e52e",
+        "EV-3028dfadf94c8f4c",
+        "EV-a06011da69abcc3d",
+        "EV-e2da1aafabb3e09c",
+        "EV-2258329f33d413cf",
+        "EV-735fac8d2be356bb",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-29b9f0cae32e7a8a",
+        "EN-bd6769fe78d0971a",
+        "EN-7d3194f79e645c42",
+        "EN-1ea953e1dbed6788",
+        "EN-ea3bd73e2b506e00",
+        "EN-8d4321d936320802",
+        "EN-e59f5a52b6713a29",
+        "EN-a899a3dde1d51caf",
+        "EN-74be4cbf48e647b2",
+        "EN-47dd52018c2b6985",
+        "EN-920510199770f4d6",
+        "EN-422332977c41eb77",
+        "EN-88ab1e5d793701f9",
+        "EN-c70eca6b0f88f44d",
+        "EN-6b61eab266a42eb0",
+        "EN-cc70f504af53013a",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-047364b9be67f665",
+        "EN-d41ebd9f02722fc8",
+        "EN-b3e3bce83d29e787",
+        "EN-f7a386a451b79627",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [
+        "FDE-0193a6afd26db7ae",
+        "FDE-a8fea104d63ff671"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-08-24"
+    },
+    {
       "id": "TX-technology-inference_optimization",
       "name": "推理优化",
       "nodeType": "technology",
@@ -19432,6 +19671,7 @@
       "valueId": "reasoning",
       "eventIds": [
         "EV-b95539d17772a4ce",
+        "EV-85ea6e0ef8bda162",
         "EV-afd50641f48c5e98",
         "EV-58e18eab1b072c9a",
         "EV-72dc9ab86e08fbab",
@@ -19463,7 +19703,7 @@
         "HW-94ca08e08e6e52fe"
       ],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-24"
     }
   ],
   "fde": [
@@ -20359,7 +20599,7 @@
     {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-23",
+      "dataDate": "2026-08-24",
       "date": "2026-08-19",
       "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
       "hardwareType": "ai_accelerator",
@@ -21111,13 +21351,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-3bcb3c46be7f99fe",
+      "snapshotId": "HWS-9f5ea0886bccdad8",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-23",
-      "date": "2026-08-23",
+      "dataDate": "2026-08-24",
+      "date": "2026-08-24",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -21132,12 +21372,21 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-4d5ebacfbd450975"
+          "fact_ref": "HWF-1239c2f1f4a8b4c8"
         }
       },
       "factCount": 2,
-      "snapshotCount": 4,
+      "snapshotCount": 5,
       "changes": [
+        {
+          "date": "2026-08-24",
+          "previousDate": "2026-08-23",
+          "snapshotId": "HWS-9f5ea0886bccdad8",
+          "previousSnapshotId": "HWS-3bcb3c46be7f99fe",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-23",
           "previousDate": "2026-08-22",
@@ -21170,8 +21419,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-23",
-          "hardware_fact_id": "HWF-76fe3cd1db6d328c",
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-1e079b9acf19bd10",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -21191,15 +21440,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-3dd282e250f53601",
+          "claim_ref": "CL-a59678c0181a54df",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-23",
-          "hardware_fact_id": "HWF-4d5ebacfbd450975",
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-1239c2f1f4a8b4c8",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -21219,11 +21468,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-a34ee638a1e5e2b8",
+          "claim_ref": "CL-c249aa9956f19548",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -21929,6 +22178,118 @@
         "EN-11507a0e2f5e69d5",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
+      "id": "HWC-1e2465488c5a5d77",
+      "snapshotKey": "1e2465488c5a5d77",
+      "snapshotId": "HWS-97daa94104979156",
+      "eventId": "EV-0d5a32aca724d30e",
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "Kimi K3",
+      "subject": "Kimi K3",
+      "productNames": [
+        "Kimi K3"
+      ],
+      "hardwareType": "compute_cluster",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-35eaca87a98d223b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-35eaca87a98d223b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-28T08:38:20.000Z",
+          "subject_entity_id": "EN-aabd1a8a869c34a4",
+          "subject_name": "Kimi K3",
+          "product_entity_ids": [
+            "EN-607964040e4b62e0"
+          ],
+          "product_names": [
+            "Kimi K3"
+          ],
+          "component_type": "compute_cluster",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "此次 Kimi K3 一经开源发布，昇腾即实现 0day 极速适配 ：在训练侧，基于 MindSpeed MM 在 Atlas 800 A3、Atlas 900 A3 SuperPoD 上完成减层训练基础功能适配，在算子、并行加速、显存优化等方面进行专项优化；在推理侧，通过 vLLM Ascend 与 SGLang 开源推理引擎实现快速部署，同时， 昇腾 950 超节点支持 FP8、MXFP8、MXFP4 等全系列数值精度格式 ，原生支持 Kimi K3 的 mxFP4 量化权重。",
+          "event_refs": [
+            "EV-0d5a32aca724d30e"
+          ],
+          "claim_ref": "CL-2c626d78e65c2afc",
+          "source_refs": [
+            "SA-d37a791cf113478a",
+            "SA-4fedd07f0df44eb4",
+            "SA-8cff4a3f890c6d93",
+            "SA-89ca130f6dc317fe",
+            "SA-8cbf1980971c0828"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/23/harvey-tenet-post-trained-kimi-k3-legal-agent-model",
+      "entityIds": [
+        "EN-c9fd53f3265ef997",
+        "EN-8d4321d936320802",
+        "EN-30cae3294219af79",
+        "EN-607964040e4b62e0",
+        "EN-7d3194f79e645c42",
+        "EN-b5251b35f15bedc4"
       ]
     },
     {

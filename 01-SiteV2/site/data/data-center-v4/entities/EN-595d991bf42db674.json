@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-595d991bf42db674",
+    "name": "OpenAI Codex",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c4d784c7069ca66b"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-23",
+    "lastSeen": "2026-08-24",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-c4d784c7069ca66b"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c4d784c7069ca66b",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-23",
+        "eventType": "service_change",
+        "eventTypeLabel": "服务变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI Codex 明天重置额度，并修复近期用量消耗过快问题",
+        "displayTags": [],
+        "entityIds": [
+          "EN-595d991bf42db674",
+          "EN-7d3194f79e645c42",
+          "EN-1ecf93c539fcffca"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

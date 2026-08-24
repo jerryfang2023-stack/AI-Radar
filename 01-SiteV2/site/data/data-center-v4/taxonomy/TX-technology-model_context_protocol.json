@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -20,6 +20,7 @@
     "eventIds": [
       "EV-ed8260ee9a7a80af",
       "EV-a2c13c14efec9218",
+      "EV-21d4133cd8711813",
       "EV-99b2eee925860832",
       "EV-3873f7ea8ac5a93f",
       "EV-49fcb200a72f0024",
@@ -40,6 +41,7 @@
     ],
     "entityIds": [
       "EN-c70eca6b0f88f44d",
+      "EN-9d3508a8484ee252",
       "EN-10182ab855ff7727",
       "EN-59bba357145ca539",
       "EN-e6483498af8bd2cd",
@@ -57,7 +59,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2025-11-17",
-    "lastSeen": "2026-08-23"
+    "lastSeen": "2026-08-24"
   },
   "events": [
     {
@@ -256,6 +258,130 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/965/639.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-21d4133cd8711813",
+      "dataDate": "2026-08-24",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-24",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Vercel 推出免费工具 Is Agentic，用 Ora 的 118 项检查为网站智能体就绪度打分",
+      "originalTitle": "",
+      "subject": "Vercel",
+      "action": "推出",
+      "object": "免费工具 Is Agentic，用 Ora 的 118 项检查为网站智能体就绪度打分",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9d3508a8484ee252"
+      ],
+      "entityNames": [
+        "Vercel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://marktechpost.com/2026/08/23/vercel-introduces-is-agentic-a-free-agent-readiness-scoring-tool-that-audits-public-websites-using-oras-100-checks",
+      "publisher": "MarkTechPost（RSS）"
     },
     {
       "id": "EV-99b2eee925860832",
@@ -2527,7 +2653,6 @@
         "EV-3a4acc92731cb5ac",
         "EV-0adf1fcc9dbeddef",
         "EV-e3fb3a8b12b3ba9c",
-        "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-3dd89fab562d16a1",
         "EV-ea2598236eae915f",
@@ -2836,7 +2961,31 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
+    },
+    {
+      "id": "EN-9d3508a8484ee252",
+      "name": "Vercel",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-21d4133cd8711813",
+        "EV-d16dce141d477839",
+        "EV-84180c1fb12ac404"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-model_context_protocol"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-29",
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-10182ab855ff7727",
@@ -3091,7 +3240,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-e473f24d4325d51a",
@@ -3299,6 +3448,100 @@
   "fde": [],
   "hardware": [],
   "hardwareCatalog": [
+    {
+      "id": "HWC-cf822ba89009dbef",
+      "snapshotKey": "cf822ba89009dbef",
+      "snapshotId": "HWS-f866174e11dffe70",
+      "eventId": "EV-21d4133cd8711813",
+      "eventIds": [
+        "EV-21d4133cd8711813"
+      ],
+      "dataDate": "2026-08-24",
+      "date": "2026-08-24",
+      "title": "Vercel",
+      "subject": "Vercel",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ae5d31b3b29302f4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-ae5d31b3b29302f4",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-23T07:37:14.000Z",
+          "subject_entity_id": "EN-9d3508a8484ee252",
+          "subject_name": "Vercel",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The MCP server at https://is-agentic.com/mcp exposes is_agentic_get_report , is_agentic_get_methodology , and is_agentic_get_developer_docs over Streamable HTTP. Hosts supporting MCP Apps render an interactive score card. An official agent skill installs via npx skills add vercel-labs/is-agentic .",
+          "event_refs": [
+            "EV-21d4133cd8711813"
+          ],
+          "claim_ref": "CL-b773f171a9c81e69",
+          "source_refs": [
+            "SA-b59bc555f288184f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-9d3508a8484ee252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/23/vercel-introduces-is-agentic-a-free-agent-readiness-scoring-tool-that-audits-public-websites-using-oras-100-checks",
+      "entityIds": [
+        "EN-9d3508a8484ee252"
+      ]
+    },
     {
       "id": "HWC-3089e9a92fa603ef",
       "snapshotKey": "3089e9a92fa603ef",

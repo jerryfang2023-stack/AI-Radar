@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -68,6 +68,7 @@
       "EV-f949fd95df58d42d",
       "EV-97747aee0cafd9f3",
       "EV-c0a65877001ed413",
+      "EV-897c0d5106398802",
       "EV-9d824ab9d0b0c6b5",
       "EV-baf1a4c3db620d90",
       "EV-4af183c70855ecf2",
@@ -275,7 +276,7 @@
       "EN-bdfecbcd7dbf76d2"
     ],
     "firstSeen": "2025-10-09",
-    "lastSeen": "2026-08-23",
+    "lastSeen": "2026-08-24",
     "relationIds": [
       "REL2-a675a7f7bd02161e",
       "REL2-f6e62982e0b3d7d6",
@@ -367,6 +368,7 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-897c0d5106398802",
         "EV-9d824ab9d0b0c6b5",
         "EV-baf1a4c3db620d90",
         "EV-4af183c70855ecf2",
@@ -529,8 +531,24 @@
     },
     "timeline": [
       {
+        "id": "EV-897c0d5106398802",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-24",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Delivery Hero 案例研究",
+        "displayTags": [],
+        "entityIds": [
+          "EN-53b2d48279fe22dc",
+          "EN-bbdefa2950f49882"
+        ]
+      },
+      {
         "id": "EV-9d824ab9d0b0c6b5",
-        "dataDate": "2026-08-23",
+        "dataDate": "2026-08-24",
         "date": "2026-08-23",
         "eventType": "pricing_change",
         "eventTypeLabel": "定价变更",
@@ -560,7 +578,7 @@
       },
       {
         "id": "EV-d93dd19a481307ec",
-        "dataDate": "2026-08-23",
+        "dataDate": "2026-08-24",
         "date": "2026-08-19",
         "eventType": "hardware_product",
         "eventTypeLabel": "硬件产品",
@@ -10220,7 +10238,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "TX-product_form-model",
@@ -10310,6 +10328,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-b613937b7bc1ea64",
         "EV-1fe1613825cae718",
         "EV-78651dfea74b4323",
         "EV-435ad78c9ec50025",
@@ -10318,7 +10337,6 @@
         "EV-4c168759119d2668",
         "EV-eb3545d5948aa255",
         "EV-3a4acc92731cb5ac",
-        "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
         "EV-f7b81752b1fadd87",
         "EV-c17a52220be52dc1",
@@ -10527,10 +10545,10 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-a3e023474c2fbe8e",
         "EN-9c3de5f42376b1af",
         "EN-f7d9f5a90479d632",
         "EN-99d3fd0fa8fe115e",
-        "EN-32e83e92d45d71f6",
         "EN-3a7bd3e2360a3d29",
         "EN-ea3bd73e2b506e00",
         "EN-bbdefa2950f49882",
@@ -10538,6 +10556,7 @@
         "EN-e32ac33fa53a3db6",
         "EN-83eb1cb31148698f",
         "EN-52593fb3cf820033",
+        "EN-32e83e92d45d71f6",
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
@@ -10634,7 +10653,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -11336,18 +11355,19 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-21d4133cd8711813",
+        "EV-85ea6e0ef8bda162",
         "EV-d4af2db7a4759431",
         "EV-6993e6a7df339e59",
+        "EV-1ced8c8a0480d5c2",
         "EV-0fac203f4da2d4fb",
         "EV-afd50641f48c5e98",
-        "EV-1ced8c8a0480d5c2",
         "EV-3873f7ea8ac5a93f",
         "EV-cd7ba52564d4091e",
         "EV-8cc00de56738c21d",
         "EV-68897f26c8d956df",
         "EV-2430dae13b9f6c82",
         "EV-257c7ec21edf638a",
-        "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-4551be310b520fcc",
         "EV-ea2598236eae915f",
@@ -11785,15 +11805,15 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-9d3508a8484ee252",
+        "EN-3ebe8498fb071652",
         "EN-96c842ee0d60fa41",
         "EN-877c3aec832cd410",
-        "EN-3ebe8498fb071652",
         "EN-59bba357145ca539",
         "EN-e3ce9cc5efa9354c",
         "EN-03c4260539e08e9c",
         "EN-796e923025d6fbb2",
         "EN-35c53e7e400caf01",
-        "EN-32e83e92d45d71f6",
         "EN-3b9e1cdd9e593b5c",
         "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
@@ -13451,7 +13471,7 @@
     {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-23",
+      "dataDate": "2026-08-24",
       "date": "2026-08-19",
       "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
       "hardwareType": "ai_accelerator",
@@ -13708,13 +13728,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-3bcb3c46be7f99fe",
+      "snapshotId": "HWS-9f5ea0886bccdad8",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-23",
-      "date": "2026-08-23",
+      "dataDate": "2026-08-24",
+      "date": "2026-08-24",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -13729,12 +13749,21 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-4d5ebacfbd450975"
+          "fact_ref": "HWF-1239c2f1f4a8b4c8"
         }
       },
       "factCount": 2,
-      "snapshotCount": 4,
+      "snapshotCount": 5,
       "changes": [
+        {
+          "date": "2026-08-24",
+          "previousDate": "2026-08-23",
+          "snapshotId": "HWS-9f5ea0886bccdad8",
+          "previousSnapshotId": "HWS-3bcb3c46be7f99fe",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-23",
           "previousDate": "2026-08-22",
@@ -13767,8 +13796,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-23",
-          "hardware_fact_id": "HWF-76fe3cd1db6d328c",
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-1e079b9acf19bd10",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -13788,15 +13817,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-3dd282e250f53601",
+          "claim_ref": "CL-a59678c0181a54df",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-23",
-          "hardware_fact_id": "HWF-4d5ebacfbd450975",
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-1239c2f1f4a8b4c8",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -13816,11 +13845,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-a34ee638a1e5e2b8",
+          "claim_ref": "CL-c249aa9956f19548",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
         }
       ],
       "capexFacts": [],

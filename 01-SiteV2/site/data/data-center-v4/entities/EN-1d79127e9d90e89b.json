@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -26,6 +26,7 @@
     ],
     "eventIds": [
       "EV-40f14150d6f622f5",
+      "EV-b613937b7bc1ea64",
       "EV-110d0ab135a08889",
       "EV-72d4a00d52a3201c",
       "EV-446ebce0edb6dce0",
@@ -43,7 +44,7 @@
       "EN-993599624a199fe0"
     ],
     "firstSeen": "2026-06-13",
-    "lastSeen": "2026-08-23",
+    "lastSeen": "2026-08-24",
     "relationIds": [
       "REL2-09dd97666e545a2c",
       "REL2-ff240950e3bb7f5e"
@@ -55,6 +56,7 @@
         "EV-40f14150d6f622f5"
       ],
       "productsServices": [
+        "EV-b613937b7bc1ea64",
         "EV-110d0ab135a08889",
         "EV-72d4a00d52a3201c",
         "EV-446ebce0edb6dce0",
@@ -67,6 +69,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b613937b7bc1ea64",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-23",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "匿名牛来大模型被扒出智谱血缘，也有人怀疑Cursor拿开源GLM训的",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-a3e023474c2fbe8e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a3e023474c2fbe8e",
+          "EN-1d79127e9d90e89b",
+          "EN-cdebcc3564332f8e"
+        ]
+      },
       {
         "id": "EV-110d0ab135a08889",
         "dataDate": "2026-08-23",
