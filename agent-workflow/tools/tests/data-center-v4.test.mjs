@@ -66,6 +66,21 @@ test("translated double-dash titles preserve an evidence-backed organization men
   }]);
 });
 
+test("lawsuit claims resolve Twitch from exact title and Claim evidence", () => {
+  const quote = "一名 Twitch 主播已针对该平台及其母公司亚马逊提起拟议的集体诉讼，声称创作者内容被用于生成式 AI 训练。";
+  const mentions = organizationMentions(
+    "Twitch 因使用主播内容训练亚马逊 AI 面临集体诉讼",
+    { subject: "Twitch 因使用主播内容训练亚马逊 AI 面临集体", action: "诉讼", object: "" },
+    "lawsuit_settlement",
+    quote,
+    [{ subject: "Twitch 因使用主播内容训练亚马逊 AI 面临集体", source_quote: quote }],
+  );
+  assert.deepEqual(
+    mentions.map((item) => [item.canonicalName, item.verified]),
+    [["Twitch", true]],
+  );
+});
+
 test("facet matching does not treat trailing retrieval metadata as event evidence", () => {
   const facets = facetAssertionsForClaim({
     claim_id: "CL-facet-metadata",

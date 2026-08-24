@@ -9,6 +9,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 }));
 const date = args.get("date") || shanghaiDate();
 const fixtureMode = args.get("fixtures") === "true";
+const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
 
 function shanghaiDate(value = new Date()) {
   return new Intl.DateTimeFormat("en-CA", {
@@ -220,10 +221,9 @@ function loadBundle() {
 }
 
 function writeReport(result) {
-  const reports = path.join(root, "agent-workflow", "reports");
-  fs.mkdirSync(reports, { recursive: true });
-  const jsonPath = path.join(reports, `${date}-data-center-projection-coverage.json`);
-  const mdPath = path.join(reports, `${date}-data-center-projection-coverage.md`);
+  fs.mkdirSync(reportsDir, { recursive: true });
+  const jsonPath = path.join(reportsDir, `${date}-data-center-projection-coverage.json`);
+  const mdPath = path.join(reportsDir, `${date}-data-center-projection-coverage.md`);
   const payload = { ...result, date, generated_at: new Date().toISOString() };
   const metricLines = Object.entries(result.metrics || {}).map(([key, value]) => `- ${key}: ${(value * 100).toFixed(1)}%`);
   const md = [

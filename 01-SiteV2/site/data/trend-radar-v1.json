@@ -7,7 +7,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T00:29:10.948Z",
+    "generatedAt": "2026-08-24T03:05:38.137Z",
     "latestDataDate": "2026-08-24",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -38,7 +38,7 @@
     },
     "sourceCounts": {
       "events": 2252,
-      "entities": 634,
+      "entities": 635,
       "relationships": 373
     }
   },
@@ -66980,6 +66980,7 @@
       "category": "product",
       "title": "Twitch 主播现可选择退出亚马逊 AI 训练",
       "entityIds": [
+        "EN-e32ac33fa53a3db6",
         "EN-cbc62794911ff31b"
       ],
       "entityNames": [
@@ -118324,32 +118325,6 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-00834dd71037c7cc"
     },
-    "EV-3c2813c30a74d04a": {
-      "id": "EV-3c2813c30a74d04a",
-      "dataDate": "2026-08-24",
-      "occurrenceDate": "2026-08-24",
-      "eventType": "lawsuit_settlement",
-      "eventTypeLabel": "诉讼与和解",
-      "publicationStatus": "verified",
-      "category": "other",
-      "title": "Twitch 因使用主播内容训练亚马逊 AI 面临集体诉讼",
-      "entityIds": [],
-      "entityNames": [],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-d62941bb0a17f8ef",
-        "CL-60e080f666c13400",
-        "CL-ee71781fc84abe12"
-      ],
-      "sourceIds": [
-        "SA-6f41d4783e6c9880"
-      ],
-      "sourceUrl": "https://ithome.com/0/993/326.htm",
-      "publisher": "IT之家（RSS）",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-3c2813c30a74d04a"
-    },
     "EV-8f2861275281c634": {
       "id": "EV-8f2861275281c634",
       "dataDate": "2026-08-24",
@@ -118376,6 +118351,36 @@
       "publisher": "online.lifelonglearning.jhu.edu",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-8f2861275281c634"
+    },
+    "EV-b6b0409c6e963517": {
+      "id": "EV-b6b0409c6e963517",
+      "dataDate": "2026-08-24",
+      "occurrenceDate": "2026-08-24",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "Twitch 因使用主播内容训练亚马逊 AI 面临集体诉讼",
+      "entityIds": [
+        "EN-e32ac33fa53a3db6"
+      ],
+      "entityNames": [
+        "Twitch"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-d62941bb0a17f8ef",
+        "CL-60e080f666c13400",
+        "CL-ee71781fc84abe12"
+      ],
+      "sourceIds": [
+        "SA-6f41d4783e6c9880"
+      ],
+      "sourceUrl": "https://ithome.com/0/993/326.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-b6b0409c6e963517"
     },
     "EV-965350122032dc28": {
       "id": "EV-965350122032dc28",
@@ -120396,6 +120401,7 @@
       "category": "other",
       "title": "Twitch 主播现可选择退出亚马逊 AI 训练",
       "entityIds": [
+        "EN-e32ac33fa53a3db6",
         "EN-cbc62794911ff31b"
       ],
       "entityNames": [
@@ -133862,6 +133868,14 @@
       "typeLabel": "产品、模型与服务",
       "detailUrl": "data-center.html?view=index&detail=entity&id=EN-843e746333671ab1"
     },
+    "EN-e32ac33fa53a3db6": {
+      "id": "EN-e32ac33fa53a3db6",
+      "name": "Twitch",
+      "entityType": "organization",
+      "sourceEntityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "detailUrl": "data-center.html?view=index&detail=entity&id=EN-e32ac33fa53a3db6"
+    },
     "EN-cf9488537f777c1a": {
       "id": "EN-cf9488537f777c1a",
       "name": "TYLsemi",
@@ -138856,6 +138870,22 @@
               },
               "dataDate": "2026-08-13",
               "eventId": "EV-58e18eab1b072c9a"
+            },
+            {
+              "entityId": "EN-e32ac33fa53a3db6",
+              "classification": {
+                "dimensionId": "product_form",
+                "dimensionName": "产品形态",
+                "id": "model",
+                "name": "模型",
+                "entityIds": [
+                  "EN-e32ac33fa53a3db6"
+                ],
+                "provenance": "claim_assertion",
+                "assertionId": ""
+              },
+              "dataDate": "2026-08-14",
+              "eventId": "EV-1205a939d3748b7e"
             },
             {
               "entityId": "EN-6f7ac1823da81d2e",
@@ -159104,6 +159134,12 @@
               "entityId": "EN-e9fc4f156e36f6aa",
               "eventIds": [
                 "EV-b25b396e368ee4d9"
+              ]
+            },
+            {
+              "entityId": "EN-e32ac33fa53a3db6",
+              "eventIds": [
+                "EV-1205a939d3748b7e"
               ]
             },
             {

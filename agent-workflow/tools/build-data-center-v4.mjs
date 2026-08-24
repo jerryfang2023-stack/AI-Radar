@@ -448,6 +448,7 @@ const ORGANIZATION_ALIASES = [
   ["The Home Depot", ["The Home Depot", "Home Depot"]],
   ["Thira", ["Thira"]],
   ["TYLsemi", ["TYLsemi"]],
+  ["Twitch", ["Twitch"]],
   ["Valarian", ["Valarian"]],
   ["Volcano Engine", ["Volcano Engine", "火山引擎"]],
   ["Whatnot", ["Whatnot"]],

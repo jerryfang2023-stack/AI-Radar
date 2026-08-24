@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "generatedAt": "2026-08-24T03:05:49.933Z",
     "latestDataDate": "2026-08-24",
     "currentDate": "2026-08-24",
     "eventCount": 2338,
@@ -17,12 +17,13 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
       "EV-1205a939d3748b7e",
+      "EV-b6b0409c6e963517",
       "EV-75b1a6a12ce2f03f"
     ],
     "viewpointIds": [],
@@ -31,7 +32,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-12",
-    "lastSeen": "2026-08-14",
+    "lastSeen": "2026-08-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -43,10 +44,26 @@
       "hardware": [],
       "organizationPeople": [],
       "other": [
+        "EV-b6b0409c6e963517",
         "EV-75b1a6a12ce2f03f"
       ]
     },
     "timeline": [
+      {
+        "id": "EV-b6b0409c6e963517",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-24",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Twitch 因使用主播内容训练亚马逊 AI 面临集体诉讼",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e32ac33fa53a3db6"
+        ]
+      },
       {
         "id": "EV-1205a939d3748b7e",
         "dataDate": "2026-08-14",

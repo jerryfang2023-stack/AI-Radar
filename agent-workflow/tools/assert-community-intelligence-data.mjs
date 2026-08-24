@@ -4,13 +4,18 @@ import { sourceTextHash } from "./deepseek-translation-client.mjs";
 
 const root = process.cwd();
 const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
-const reportsDir = path.join(root, "agent-workflow", "reports");
 
 function argValue(name, fallback = "") {
   const prefix = `--${name}=`;
   const item = process.argv.slice(2).find((arg) => arg.startsWith(prefix));
   return item ? item.slice(prefix.length) : fallback;
 }
+
+const args = new Map(process.argv.slice(2).map((arg) => {
+  const [key, ...rest] = arg.replace(/^--/u, "").split("=");
+  return [key, rest.join("=") || "true"];
+}));
+const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
 
 function beijingDate(value = new Date()) {
   const date = value instanceof Date ? value : new Date(value);
