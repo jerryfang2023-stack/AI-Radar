@@ -94,6 +94,12 @@ command must honor that argument instead of defaulting to
 `agent-workflow/reports`; the runtime regression test fails if this boundary is
 removed.
 
+Skill discovery refreshes invoked by the morning controller or Final Closure
+write `local-skill-store-data.js` into the resolved runtime directory. The
+checked-in dashboard remains a release artifact; controller-only usage counters
+and timestamps must not dirty the primary worktree or block the final local
+fast-forward.
+
 The installer also resolves a runnable native `codex.exe` for scheduled repair.
 An explicit `-CodexExecutable` wins; otherwise it reuses the managed installation
 under `%LOCALAPPDATA%\WaveSight\codex-cli` or a runnable PATH command, and

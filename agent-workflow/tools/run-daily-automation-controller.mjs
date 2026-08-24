@@ -90,6 +90,7 @@ function morning() {
   ]);
   const discoveryRefresh = run("Refresh Skill discovery summary", process.execPath, [
     "agent-workflow/tools/build-skill-store-dashboard.mjs",
+    `--output=${path.join(reportsDir, "local-skill-store-data.js")}`,
   ]);
   const preflight = run("Skill Ops preflight", process.execPath, ["agent-workflow/tools/check-skill-ops.mjs"]);
   const business = run("Data Center V4 production dispatch", process.execPath, [
@@ -245,6 +246,7 @@ function finalClosure() {
   ], 900_000);
   const discoveryRefresh = run("Refresh Skill discovery summary before final supervision", process.execPath, [
     "agent-workflow/tools/build-skill-store-dashboard.mjs",
+    `--output=${path.join(reportsDir, "local-skill-store-data.js")}`,
   ]);
   const supervision = run("Final daily supervision", process.execPath, [
     "agent-workflow/tools/write-daily-supervision-report.mjs",

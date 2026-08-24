@@ -7,11 +7,18 @@ import { defaultPaths, readSkillStoreVersion, ruleDigest } from "./lib/guanlan-s
 import { auditSkillDiscovery } from "./lib/skill-discovery-audit.mjs";
 
 const root = process.cwd();
+const outputArg = process.argv
+  .slice(2)
+  .find((item) => item.startsWith("--output="))
+  ?.slice("--output=".length)
+  .trim();
 const skillOpsPaths = defaultPaths(root);
 const storeDir = process.env.GUANLAN_SKILL_STORE || path.join(os.homedir(), ".skill-store");
 const projectSkillDir = path.join(root, "agent-workflow", "skills");
 const registryPath = path.join(projectSkillDir, "skill-registry.md");
-const outFile = path.join(root, "01-SiteV2", "site", "data", "local-skill-store-data.js");
+const outFile = outputArg
+  ? path.resolve(root, outputArg)
+  : path.join(root, "01-SiteV2", "site", "data", "local-skill-store-data.js");
 const actionLogsDir = path.join(root, "agent-workflow", "logs", "action-runs");
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const usageOverridesPath = path.join(projectSkillDir, "skill-usage-overrides.json");
