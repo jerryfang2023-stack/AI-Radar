@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-7a116596551ff8c7",
       "EV-597a6d51533fe5d6",
       "EV-05fea7a5d8b8db46",
       "EV-06e31f68974104ec",
@@ -48,8 +49,9 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-22",
+    "lastSeen": "2026-08-24",
     "relationIds": [
+      "REL2-b2fd7c5284307b20",
       "REL2-10ceb94d03e5bd63",
       "REL2-0dc4d04c4e728c64",
       "REL2-b77c9fa9bd90e418",
@@ -67,6 +69,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-7a116596551ff8c7",
         "EV-597a6d51533fe5d6",
         "EV-05fea7a5d8b8db46",
         "EV-06e31f68974104ec",
@@ -93,6 +96,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-7a116596551ff8c7",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 推出青少年版 ChatGPT，儿童安全专家质疑安全机制透明度",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
       {
         "id": "EV-4b26f0afd303eb44",
         "dataDate": "2026-08-22",
@@ -561,11 +580,17 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-3c327b49d78d4388",
+        "EV-2afe102017e1b21c",
+        "EV-44a833fe8dd16006",
+        "EV-7a116596551ff8c7",
+        "EV-98823b85fd27102b",
+        "EV-c4d784c7069ca66b",
         "EV-d4af2db7a4759431",
+        "EV-3c327b49d78d4388",
         "EV-a09f6e93ad868a57",
         "EV-6993e6a7df339e59",
         "EV-597a6d51533fe5d6",
+        "EV-0d5a32aca724d30e",
         "EV-3873f7ea8ac5a93f",
         "EV-3e7db5b8d976bf0e",
         "EV-e3da5e799e746408",
@@ -755,8 +780,8 @@
         "EV-00834dd71037c7cc",
         "EV-2e5333d00710ce65",
         "EV-ce32954014cb030d",
-        "EV-3b30eda1326a6fb1",
         "EV-00ffb2c501a37ec8",
+        "EV-3b30eda1326a6fb1",
         "EV-da06805e06990d63",
         "EV-0c00a6c681f22b98",
         "EV-2c08a493d3c8b9c7",
@@ -854,6 +879,7 @@
         "TX-product_form-model_api_service",
         "TX-technology-multimodal",
         "TX-technology-long_context",
+        "TX-technology-open_weights",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-technology-reasoning"
@@ -885,10 +911,31 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-b2fd7c5284307b20",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-7a116596551ff8c7",
+      "claim_refs": [
+        "CL-d34de99f104b67cb",
+        "CL-140c68d6e2e5427c",
+        "CL-ca4e4bd49c04468a",
+        "CL-06eaa38458e4dbfe"
+      ],
+      "source_refs": [
+        "SA-20bc80da6ce68186"
+      ],
+      "data_date": "2026-08-24",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-10ceb94d03e5bd63",
       "relationship_version": "RELATION-V2.1",

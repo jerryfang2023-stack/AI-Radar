@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -69,6 +69,7 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-b4a9bdd7e93ce89f",
       "EV-1fe1613825cae718",
       "EV-435ad78c9ec50025",
       "EV-24d84f9f4613ea51",
@@ -158,6 +159,7 @@
       "EN-3e14bbbb0445c2de",
       "EN-7c5d04104b1d34e7",
       "EN-72138e570e5103e2",
+      "EN-648ac0860a36272a",
       "EN-9c3de5f42376b1af",
       "EN-aec12c1b42f6e0b6",
       "EN-478676438ee161a3",
@@ -192,6 +194,7 @@
     "hardwareIds": [
       "HW-ceb55d9bc637c1d3",
       "HW-8ec8f237534254df",
+      "HW-7d718c8abe1716ac",
       "HW-506bfd2ae2c40c2b",
       "HW-eb5bba1ad6c016b0",
       "HW-b13c3131fc20fe83",
@@ -201,7 +204,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-22"
+    "lastSeen": "2026-08-24"
   },
   "events": [
     {
@@ -14417,6 +14420,86 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-b4a9bdd7e93ce89f",
+      "dataDate": "2026-08-24",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-24",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "海尔发布全自主家用 AI 烹饪机器人\"AI 厨天才\"CR3：模仿大厨颠勺手法，蒸汽自清洁",
+      "originalTitle": "",
+      "subject": "海尔",
+      "action": "发布全自主家用 AI 烹饪机器人",
+      "object": "\"AI 厨天才\"CR3：模仿大厨颠勺手法，蒸汽自清洁",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-648ac0860a36272a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-648ac0860a36272a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-648ac0860a36272a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-648ac0860a36272a"
+      ],
+      "entityNames": [
+        "海尔"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/993/187.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-1fe1613825cae718",
       "dataDate": "2026-08-22",
       "date": "2026-08-21",
@@ -20919,6 +21002,7 @@
         "EV-58c1cc3749294649",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
+        "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
         "EV-e3beca344d2321a9",
@@ -21104,7 +21188,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -21888,6 +21972,27 @@
       "lastSeen": "2026-07-05"
     },
     {
+      "id": "EN-648ac0860a36272a",
+      "name": "海尔",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b4a9bdd7e93ce89f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-24"
+    },
+    {
       "id": "EN-9c3de5f42376b1af",
       "name": "Generalist AI",
       "entityType": "organization_candidate",
@@ -22208,7 +22313,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -22696,6 +22801,33 @@
   ],
   "hardware": [
     {
+      "id": "HW-7d718c8abe1716ac",
+      "eventId": "EV-b4a9bdd7e93ce89f",
+      "dataDate": "2026-08-24",
+      "date": "2026-08-23",
+      "title": "海尔发布全自主家用 AI 烹饪机器人\"AI 厨天才\"CR3：模仿大厨颠勺手法，蒸汽自清洁",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "海尔",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "北京举行的世界机器人大会现场",
+      "region": "北京",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/993/187.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-23",
+      "entityIds": [
+        "EN-648ac0860a36272a"
+      ]
+    },
+    {
       "id": "HW-506bfd2ae2c40c2b",
       "eventId": "EV-24d84f9f4613ea51",
       "dataDate": "2026-08-18",
@@ -23074,6 +23206,110 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-bbe95de9f6e1d820",
+      "snapshotKey": "bbe95de9f6e1d820",
+      "snapshotId": "HWS-041850e258e5e014",
+      "eventId": "EV-b4a9bdd7e93ce89f",
+      "eventIds": [
+        "EV-b4a9bdd7e93ce89f"
+      ],
+      "dataDate": "2026-08-24",
+      "date": "2026-08-24",
+      "title": "海尔",
+      "subject": "海尔",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a767f01754724673"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-f7cde111270eabc0",
+          "fact_type": "product",
+          "observed_at": "2026-08-23T06:54:15.000Z",
+          "subject_entity_id": "EN-648ac0860a36272a",
+          "subject_name": "海尔",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "海尔发布全自主家用 AI 烹饪机器人“AI 厨天才”CR3：模仿大厨颠勺手法，蒸汽自清洁 - IT之家",
+          "event_refs": [
+            "EV-b4a9bdd7e93ce89f"
+          ],
+          "claim_ref": "CL-d3be371ecd8bd7c8",
+          "source_refs": [
+            "SA-89b319aba060856f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-81135a1abf62c08a",
+          "fact_type": "product",
+          "observed_at": "2026-08-23T06:54:15.000Z",
+          "subject_entity_id": "EN-648ac0860a36272a",
+          "subject_name": "海尔",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "海尔发布全自主家用 AI 烹饪机器人“AI 厨天才”CR3：模仿大厨颠勺手法，蒸汽自清洁",
+          "event_refs": [
+            "EV-b4a9bdd7e93ce89f"
+          ],
+          "claim_ref": "CL-692b943a82c53de1",
+          "source_refs": [
+            "SA-89b319aba060856f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-a767f01754724673",
+          "fact_type": "product",
+          "observed_at": "2026-08-23T06:54:15.000Z",
+          "subject_entity_id": "EN-648ac0860a36272a",
+          "subject_name": "海尔",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 23 日消息，8 月 20 日，在北京举行的世界机器人大会现场，海尔正式发布了全自主家用 AI 烹饪机器人“AI 厨天才”CR3，号称“从投料、翻炒、调味，到最后的涮锅，全程不用动手。",
+          "event_refs": [
+            "EV-b4a9bdd7e93ce89f"
+          ],
+          "claim_ref": "CL-8da39e1376e23aac",
+          "source_refs": [
+            "SA-89b319aba060856f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/993/187.htm",
+      "entityIds": [
+        "EN-648ac0860a36272a"
+      ]
+    },
     {
       "id": "HWC-37bd47587dcf5bcd",
       "snapshotKey": "37bd47587dcf5bcd",

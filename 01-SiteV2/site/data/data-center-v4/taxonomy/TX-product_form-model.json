@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -99,6 +99,7 @@
       "EV-2fd730d0ad452334",
       "EV-9f6d481a09b063ee",
       "EV-fd21441fb6e143c3",
+      "EV-b613937b7bc1ea64",
       "EV-1fe1613825cae718",
       "EV-78651dfea74b4323",
       "EV-435ad78c9ec50025",
@@ -107,7 +108,6 @@
       "EV-4c168759119d2668",
       "EV-eb3545d5948aa255",
       "EV-3a4acc92731cb5ac",
-      "EV-0d5a32aca724d30e",
       "EV-63948deaec161736",
       "EV-f7b81752b1fadd87",
       "EV-c17a52220be52dc1",
@@ -316,10 +316,10 @@
       "EN-c890cfa67d1da908",
       "EN-3e52637ec683b555",
       "EN-7df09a7717ef2feb",
+      "EN-a3e023474c2fbe8e",
       "EN-9c3de5f42376b1af",
       "EN-f7d9f5a90479d632",
       "EN-99d3fd0fa8fe115e",
-      "EN-32e83e92d45d71f6",
       "EN-3a7bd3e2360a3d29",
       "EN-ea3bd73e2b506e00",
       "EN-bbdefa2950f49882",
@@ -327,6 +327,7 @@
       "EN-e32ac33fa53a3db6",
       "EN-83eb1cb31148698f",
       "EN-52593fb3cf820033",
+      "EN-32e83e92d45d71f6",
       "EN-6849cf65695e6e77",
       "EN-74be4cbf48e647b2",
       "EN-04468f769adbb15b",
@@ -423,7 +424,7 @@
       "HW-25ce41fab12d9ef2"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-08-23"
+    "lastSeen": "2026-08-24"
   },
   "events": [
     {
@@ -21730,6 +21731,98 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-b613937b7bc1ea64",
+      "dataDate": "2026-08-24",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-24",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "匿名牛来大模型被扒出智谱血缘，也有人怀疑Cursor拿开源GLM训的",
+      "originalTitle": "",
+      "subject": "匿名牛来",
+      "action": "大模型被扒出智谱血缘，也有人怀疑Cursor拿开源",
+      "object": "GLM训的",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-a3e023474c2fbe8e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-a3e023474c2fbe8e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-a3e023474c2fbe8e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a3e023474c2fbe8e",
+        "EN-1d79127e9d90e89b",
+        "EN-cdebcc3564332f8e"
+      ],
+      "entityNames": [
+        "匿名牛来",
+        "智谱AI",
+        "GLM"
+      ],
+      "productName": "GLM",
+      "products": [
+        {
+          "name": "GLM",
+          "type": "模型",
+          "ownerNames": [
+            "智谱AI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/478191.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-1fe1613825cae718",
       "dataDate": "2026-08-22",
       "date": "2026-08-21",
@@ -22272,9 +22365,9 @@
     },
     {
       "id": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-23",
+      "dataDate": "2026-08-24",
       "date": "2026-08-19",
-      "updatedDate": "2026-08-23",
+      "updatedDate": "2026-08-24",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "eventGroup": "AI 硬件",
@@ -22812,133 +22905,6 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/991/384.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-0d5a32aca724d30e",
-      "dataDate": "2026-08-18",
-      "date": "2026-08-17",
-      "updatedDate": "2026-08-18",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI 大模型周榜：Anthropic 多款新模型密集入榜，国产 kimi-k3-max 稳定头部",
-      "originalTitle": "",
-      "subject": "AI",
-      "action": "product_release",
-      "object": "AI 大模型周榜：Anthropic 多款新模型密集入榜，国产 kimi-k3-max 稳定头部",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-32e83e92d45d71f6"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-32e83e92d45d71f6"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-32e83e92d45d71f6"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-32e83e92d45d71f6"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-32e83e92d45d71f6"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-32e83e92d45d71f6"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-32e83e92d45d71f6"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-32e83e92d45d71f6",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "AI",
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/990/681.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -43181,6 +43147,7 @@
         "EV-58c1cc3749294649",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
+        "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-ea2598236eae915f",
         "EV-e3beca344d2321a9",
@@ -43366,7 +43333,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-7dd2a89f628d7525",
@@ -43518,7 +43485,6 @@
         "EV-3a4acc92731cb5ac",
         "EV-0adf1fcc9dbeddef",
         "EV-e3fb3a8b12b3ba9c",
-        "EV-0d5a32aca724d30e",
         "EV-615fbb4de33fad2d",
         "EV-3dd89fab562d16a1",
         "EV-ea2598236eae915f",
@@ -43827,7 +43793,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -43891,7 +43857,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-6861f63c27eb0ada",
@@ -44040,6 +44006,7 @@
         "EV-55e7c286e95be405",
         "EV-cf6e7a2edad82c6f",
         "EV-0e84a2f49d765ce3",
+        "EV-85ea6e0ef8bda162",
         "EV-110d0ab135a08889",
         "EV-b33e250220b91f9c",
         "EV-5ebbe581dba0caf4",
@@ -44063,7 +44030,7 @@
         "EN-779965438dd9e7a7"
       ],
       "firstSeen": "2026-06-08",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-e647c818ac38b6ca",
@@ -44856,6 +44823,7 @@
         "EV-f55d16df5b5fecb2",
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
+        "EV-0d5a32aca724d30e",
         "EV-5b17b7dd8762c3c6",
         "EV-650e4b23d45d5758",
         "EV-6374a712070b1f8c",
@@ -44896,7 +44864,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-634561e92b7593c3",
@@ -45513,6 +45481,27 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "EN-a3e023474c2fbe8e",
+      "name": "匿名牛来",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b613937b7bc1ea64"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-24"
+    },
+    {
       "id": "EN-9c3de5f42376b1af",
       "name": "Generalist AI",
       "entityType": "organization_candidate",
@@ -45568,6 +45557,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-b2659555782581d6",
         "EV-d93dd19a481307ec",
         "EV-30585effe9134084",
         "EV-4c168759119d2668",
@@ -45576,41 +45566,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-product_form-chip_accelerator"
+        "TX-product_form-chip_accelerator",
+        "TX-technology-retrieval_augmented_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-19",
-      "lastSeen": "2026-08-23"
-    },
-    {
-      "id": "EN-32e83e92d45d71f6",
-      "name": "AI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6808f7d1be84c23c",
-        "EV-30d7f1c5dc8ea464",
-        "EV-0d5a32aca724d30e",
-        "EV-497344d95d593cf6",
-        "EV-8f0c63ed7bb153dc",
-        "EV-33b97d1284a43d30",
-        "EV-06cf7bb28b462980",
-        "EV-889f518dcce85a8f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-agentic_execution",
-        "TX-industry-financial_services"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2023-03-21",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -45937,6 +45898,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-897c0d5106398802",
         "EV-9d824ab9d0b0c6b5",
         "EV-baf1a4c3db620d90",
         "EV-4af183c70855ecf2",
@@ -46144,7 +46106,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-b93006774cbdd4b2",
@@ -46236,6 +46198,34 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-12"
+    },
+    {
+      "id": "EN-32e83e92d45d71f6",
+      "name": "AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6808f7d1be84c23c",
+        "EV-30d7f1c5dc8ea464",
+        "EV-497344d95d593cf6",
+        "EV-8f0c63ed7bb153dc",
+        "EV-33b97d1284a43d30",
+        "EV-06cf7bb28b462980",
+        "EV-889f518dcce85a8f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2023-03-21",
+      "lastSeen": "2026-08-23"
     },
     {
       "id": "EN-6849cf65695e6e77",
@@ -46418,11 +46408,17 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-3c327b49d78d4388",
+        "EV-2afe102017e1b21c",
+        "EV-44a833fe8dd16006",
+        "EV-7a116596551ff8c7",
+        "EV-98823b85fd27102b",
+        "EV-c4d784c7069ca66b",
         "EV-d4af2db7a4759431",
+        "EV-3c327b49d78d4388",
         "EV-a09f6e93ad868a57",
         "EV-6993e6a7df339e59",
         "EV-597a6d51533fe5d6",
+        "EV-0d5a32aca724d30e",
         "EV-3873f7ea8ac5a93f",
         "EV-3e7db5b8d976bf0e",
         "EV-e3da5e799e746408",
@@ -46612,8 +46608,8 @@
         "EV-00834dd71037c7cc",
         "EV-2e5333d00710ce65",
         "EV-ce32954014cb030d",
-        "EV-3b30eda1326a6fb1",
         "EV-00ffb2c501a37ec8",
+        "EV-3b30eda1326a6fb1",
         "EV-da06805e06990d63",
         "EV-0c00a6c681f22b98",
         "EV-2c08a493d3c8b9c7",
@@ -46711,6 +46707,7 @@
         "TX-product_form-model_api_service",
         "TX-technology-multimodal",
         "TX-technology-long_context",
+        "TX-technology-open_weights",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-technology-reasoning"
@@ -46742,7 +46739,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -48584,6 +48581,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-0d5a32aca724d30e",
         "EV-5208aa6dcd06cecb"
       ],
       "viewpointIds": [],
@@ -48592,7 +48590,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
-      "lastSeen": "2026-06-15"
+      "lastSeen": "2026-08-24"
     }
   ],
   "fde": [
@@ -49105,7 +49103,7 @@
     {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-23",
+      "dataDate": "2026-08-24",
       "date": "2026-08-19",
       "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
       "hardwareType": "ai_accelerator",
@@ -49838,13 +49836,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-3bcb3c46be7f99fe",
+      "snapshotId": "HWS-9f5ea0886bccdad8",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-23",
-      "date": "2026-08-23",
+      "dataDate": "2026-08-24",
+      "date": "2026-08-24",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -49859,12 +49857,21 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-4d5ebacfbd450975"
+          "fact_ref": "HWF-1239c2f1f4a8b4c8"
         }
       },
       "factCount": 2,
-      "snapshotCount": 4,
+      "snapshotCount": 5,
       "changes": [
+        {
+          "date": "2026-08-24",
+          "previousDate": "2026-08-23",
+          "snapshotId": "HWS-9f5ea0886bccdad8",
+          "previousSnapshotId": "HWS-3bcb3c46be7f99fe",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-23",
           "previousDate": "2026-08-22",
@@ -49897,8 +49904,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-23",
-          "hardware_fact_id": "HWF-76fe3cd1db6d328c",
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-1e079b9acf19bd10",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -49918,15 +49925,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-3dd282e250f53601",
+          "claim_ref": "CL-a59678c0181a54df",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-23",
-          "hardware_fact_id": "HWF-4d5ebacfbd450975",
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-1239c2f1f4a8b4c8",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -49946,11 +49953,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-a34ee638a1e5e2b8",
+          "claim_ref": "CL-c249aa9956f19548",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -51358,100 +51365,6 @@
       "entityIds": [
         "EN-6f7ac1823da81d2e",
         "EN-b5251b35f15bedc4"
-      ]
-    },
-    {
-      "id": "HWC-1e2465488c5a5d77",
-      "snapshotKey": "1e2465488c5a5d77",
-      "snapshotId": "HWS-97daa94104979156",
-      "eventId": "EV-0d5a32aca724d30e",
-      "eventIds": [
-        "EV-0d5a32aca724d30e"
-      ],
-      "dataDate": "2026-07-29",
-      "date": "2026-07-29",
-      "title": "Kimi K3",
-      "subject": "Kimi K3",
-      "productNames": [
-        "Kimi K3"
-      ],
-      "hardwareType": "compute_cluster",
-      "factTypes": [
-        "shipment_deployment"
-      ],
-      "latestValues": {
-        "shipment_deployment": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-35eaca87a98d223b"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [
-        {
-          "data_date": "2026-07-29",
-          "hardware_fact_id": "HWF-35eaca87a98d223b",
-          "fact_type": "shipment_deployment",
-          "observed_at": "2026-07-28T08:38:20.000Z",
-          "subject_entity_id": "EN-aabd1a8a869c34a4",
-          "subject_name": "Kimi K3",
-          "product_entity_ids": [
-            "EN-607964040e4b62e0"
-          ],
-          "product_names": [
-            "Kimi K3"
-          ],
-          "component_type": "compute_cluster",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "此次 Kimi K3 一经开源发布，昇腾即实现 0day 极速适配 ：在训练侧，基于 MindSpeed MM 在 Atlas 800 A3、Atlas 900 A3 SuperPoD 上完成减层训练基础功能适配，在算子、并行加速、显存优化等方面进行专项优化；在推理侧，通过 vLLM Ascend 与 SGLang 开源推理引擎实现快速部署，同时， 昇腾 950 超节点支持 FP8、MXFP8、MXFP4 等全系列数值精度格式 ，原生支持 Kimi K3 的 mxFP4 量化权重。",
-          "event_refs": [
-            "EV-0d5a32aca724d30e"
-          ],
-          "claim_ref": "CL-2c626d78e65c2afc",
-          "source_refs": [
-            "SA-d37a791cf113478a",
-            "SA-4fedd07f0df44eb4",
-            "SA-8cff4a3f890c6d93",
-            "SA-89ca130f6dc317fe",
-            "SA-8cbf1980971c0828"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
-        }
-      ],
-      "specificationFacts": [],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-32e83e92d45d71f6"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-32e83e92d45d71f6"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/990/681.htm",
-      "entityIds": [
-        "EN-32e83e92d45d71f6",
-        "EN-c70eca6b0f88f44d"
       ]
     },
     {

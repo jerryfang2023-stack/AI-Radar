@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,20 +22,22 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-b6789508a1887fd4",
-      "EV-e3a282c070969a55"
+      "EV-810d0f3892cdf3ab",
+      "EV-e3a282c070969a55",
+      "EV-b6789508a1887fd4"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-17",
-    "lastSeen": "2026-08-23",
+    "lastSeen": "2026-08-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
-        "EV-b6789508a1887fd4",
-        "EV-e3a282c070969a55"
+        "EV-810d0f3892cdf3ab",
+        "EV-e3a282c070969a55",
+        "EV-b6789508a1887fd4"
       ],
       "partnerships": [],
       "productsServices": [],
@@ -45,8 +47,23 @@
     },
     "timeline": [
       {
-        "id": "EV-b6789508a1887fd4",
-        "dataDate": "2026-08-23",
+        "id": "EV-810d0f3892cdf3ab",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-17",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Darwin AI 宣布与德克萨斯州达成全国首个人工智能治理批量采购协议",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b45fc2bf83bced68"
+        ]
+      },
+      {
+        "id": "EV-e3a282c070969a55",
+        "dataDate": "2026-08-24",
         "date": "2026-08-17",
         "eventType": "procurement_contract",
         "eventTypeLabel": "采购合同",
@@ -60,7 +77,7 @@
         ]
       },
       {
-        "id": "EV-e3a282c070969a55",
+        "id": "EV-b6789508a1887fd4",
         "dataDate": "2026-08-23",
         "date": "2026-08-17",
         "eventType": "procurement_contract",
@@ -68,7 +85,7 @@
         "eventGroup": "商业合作",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "Darwin AI 宣布与德克萨斯州达成全国首个人工智能治理批量采购协议",
+        "title": "Darwin AI宣布与德克萨斯州达成全国首份AI治理批量采购协议",
         "displayTags": [],
         "entityIds": [
           "EN-b45fc2bf83bced68"

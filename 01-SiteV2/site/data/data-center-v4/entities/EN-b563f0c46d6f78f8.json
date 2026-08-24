@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,13 +22,14 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b2659555782581d6",
       "EV-d93dd19a481307ec"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-23",
+    "lastSeen": "2026-08-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -36,6 +37,7 @@
       "partnerships": [],
       "productsServices": [],
       "hardware": [
+        "EV-b2659555782581d6",
         "EV-d93dd19a481307ec"
       ],
       "organizationPeople": [],
@@ -43,8 +45,38 @@
     },
     "timeline": [
       {
+        "id": "EV-b2659555782581d6",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-20",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "韩国首款主权AI设备出货：国产芯片、国产LLM、一台服务器",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "retrieval_augmented_generation",
+            "name": "RAG",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-99d3fd0fa8fe115e",
+          "EN-59b94cb9c12296ca",
+          "EN-7d3c8fb6fa445060",
+          "EN-b563f0c46d6f78f8"
+        ]
+      },
+      {
         "id": "EV-d93dd19a481307ec",
-        "dataDate": "2026-08-23",
+        "dataDate": "2026-08-24",
         "date": "2026-08-19",
         "eventType": "hardware_product",
         "eventTypeLabel": "硬件产品",
@@ -90,9 +122,51 @@
   "fde": [],
   "hardware": [
     {
+      "id": "HW-4ea988537f248437",
+      "eventId": "EV-b2659555782581d6",
+      "dataDate": "2026-08-24",
+      "date": "2026-08-20",
+      "title": "韩国首款主权AI设备出货：国产芯片、国产LLM、一台服务器",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "KT",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 128,
+      "capacityUnit": "GB",
+      "site": "未披露",
+      "region": "Korea",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "retrieval_augmented_generation",
+          "name": "RAG",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://kr.ibtimes.com/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server-101505",
+      "sourceName": "kr.ibtimes.com",
+      "sourceDate": "2026-08-20",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-59b94cb9c12296ca",
+        "EN-7d3c8fb6fa445060",
+        "EN-b563f0c46d6f78f8"
+      ]
+    },
+    {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-23",
+      "dataDate": "2026-08-24",
       "date": "2026-08-19",
       "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
       "hardwareType": "ai_accelerator",
@@ -126,13 +200,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-3bcb3c46be7f99fe",
+      "snapshotId": "HWS-9f5ea0886bccdad8",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-23",
-      "date": "2026-08-23",
+      "dataDate": "2026-08-24",
+      "date": "2026-08-24",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -147,12 +221,21 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-4d5ebacfbd450975"
+          "fact_ref": "HWF-1239c2f1f4a8b4c8"
         }
       },
       "factCount": 2,
-      "snapshotCount": 4,
+      "snapshotCount": 5,
       "changes": [
+        {
+          "date": "2026-08-24",
+          "previousDate": "2026-08-23",
+          "snapshotId": "HWS-9f5ea0886bccdad8",
+          "previousSnapshotId": "HWS-3bcb3c46be7f99fe",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-23",
           "previousDate": "2026-08-22",
@@ -185,8 +268,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-23",
-          "hardware_fact_id": "HWF-76fe3cd1db6d328c",
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-1e079b9acf19bd10",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -206,15 +289,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-3dd282e250f53601",
+          "claim_ref": "CL-a59678c0181a54df",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-23",
-          "hardware_fact_id": "HWF-4d5ebacfbd450975",
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-1239c2f1f4a8b4c8",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -234,11 +317,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-a34ee638a1e5e2b8",
+          "claim_ref": "CL-c249aa9956f19548",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-23/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -249,6 +332,160 @@
         "EN-7d3194f79e645c42",
         "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d",
+        "EN-7d3c8fb6fa445060",
+        "EN-b563f0c46d6f78f8"
+      ]
+    },
+    {
+      "id": "HWC-9291dbca05d88b95",
+      "snapshotKey": "9291dbca05d88b95",
+      "snapshotId": "HWS-3acfed7a509d9803",
+      "eventId": "EV-b2659555782581d6",
+      "eventIds": [
+        "EV-b2659555782581d6"
+      ],
+      "dataDate": "2026-08-24",
+      "date": "2026-08-24",
+      "title": "IBTimes KR / AI Appliance Ships / First Sovereign AI Appliance",
+      "subject": "KT",
+      "productNames": [
+        "IBTimes KR",
+        "AI Appliance Ships",
+        "First Sovereign AI Appliance"
+      ],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-10cfae121fc434e2"
+        },
+        "shipment_deployment": {
+          "metric_value": "128",
+          "unit": "GB",
+          "fact_ref": "HWF-2dea33c8aa1c0eda"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-9d43b72ac79dd320",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-19T16:16:43.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-59b94cb9c12296ca",
+            "EN-7d3c8fb6fa445060",
+            "EN-b563f0c46d6f78f8"
+          ],
+          "product_names": [
+            "IBTimes KR",
+            "AI Appliance Ships",
+            "First Sovereign AI Appliance"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KT emphasizes that the NPU LLM Station ships as an integrated appliance &mdash; server, model, and API platform combined &mdash; so that organizations can begin running retrieval-augmented generation document query workflows on the day of installation, without a separate infrastructure build-out phase.",
+          "event_refs": [
+            "EV-b2659555782581d6"
+          ],
+          "claim_ref": "CL-feceaceb4f9eec7b",
+          "source_refs": [
+            "SA-6b34219a63b7f832"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-2dea33c8aa1c0eda",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-19T16:16:43.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-59b94cb9c12296ca",
+            "EN-7d3c8fb6fa445060",
+            "EN-b563f0c46d6f78f8"
+          ],
+          "product_names": [
+            "IBTimes KR",
+            "AI Appliance Ships",
+            "First Sovereign AI Appliance"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "128",
+          "unit": "GB",
+          "source_quote": "The standard ATOM-MAX server configuration (dual card, 128GB of aggregate NPU memory) supports models up to 70 billion parameters. Models above that threshold &mdash; including the 700B-range sovereign AI models that SK Telecom and LG AI Research have published &mdash; would require either multi-server scaling through Rebellions' cluster products (RebelRack or RebelPOD) or model compression techniques that reduce parameter footprint at some cost to capability. The NPU LLM Station as shipped pairs with Mi:dm K 2.5 Pro at 32B parameters, where a single-server deployment is sufficient.",
+          "event_refs": [
+            "EV-b2659555782581d6"
+          ],
+          "claim_ref": "CL-a1e2a2fcff0f2aae",
+          "source_refs": [
+            "SA-6b34219a63b7f832"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-24",
+          "hardware_fact_id": "HWF-10cfae121fc434e2",
+          "fact_type": "product",
+          "observed_at": "2026-08-19T16:16:43.000Z",
+          "subject_entity_id": "EN-99d3fd0fa8fe115e",
+          "subject_name": "KT",
+          "product_entity_ids": [
+            "EN-59b94cb9c12296ca",
+            "EN-7d3c8fb6fa445060",
+            "EN-b563f0c46d6f78f8"
+          ],
+          "product_names": [
+            "IBTimes KR",
+            "AI Appliance Ships",
+            "First Sovereign AI Appliance"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Korea Telecom launched the KT NPU LLM Station on Wednesday &mdash; the first commercially available enterprise AI appliance to pair a Korean-made inference chip with a Korean-developed large language model in a single on-premises server &mdash; targeting a regulated-industry market that has been structurally locked out of generative AI by the country's strict network-separation rules .",
+          "event_refs": [
+            "EV-b2659555782581d6"
+          ],
+          "claim_ref": "CL-925159b7fd4871b8",
+          "source_refs": [
+            "SA-6b34219a63b7f832"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "retrieval_augmented_generation",
+          "name": "RAG",
+          "entityIds": [
+            "EN-99d3fd0fa8fe115e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://kr.ibtimes.com/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server-101505",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-59b94cb9c12296ca",
         "EN-7d3c8fb6fa445060",
         "EN-b563f0c46d6f78f8"
       ]

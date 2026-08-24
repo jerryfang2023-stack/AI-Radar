@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -30,6 +30,7 @@
       "EV-55e7c286e95be405",
       "EV-cf6e7a2edad82c6f",
       "EV-0e84a2f49d765ce3",
+      "EV-85ea6e0ef8bda162",
       "EV-110d0ab135a08889",
       "EV-b33e250220b91f9c",
       "EV-5ebbe581dba0caf4",
@@ -53,7 +54,7 @@
       "EN-779965438dd9e7a7"
     ],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-08-23",
+    "lastSeen": "2026-08-24",
     "relationIds": [
       "REL2-eaf27cde7b70ddb9"
     ],
@@ -71,6 +72,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-85ea6e0ef8bda162",
         "EV-110d0ab135a08889",
         "EV-b33e250220b91f9c",
         "EV-5ebbe581dba0caf4",
@@ -87,6 +89,45 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-85ea6e0ef8bda162",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-23",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "神秘\"隐身模型\"Ox Alpha 背后是谁？",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-3ebe8498fb071652"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "reasoning",
+            "name": "推理能力",
+            "entityIds": [
+              "EN-3ebe8498fb071652"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3ebe8498fb071652",
+          "EN-7f871cbf905f6e0c"
+        ]
+      },
       {
         "id": "EV-110d0ab135a08889",
         "dataDate": "2026-08-23",
@@ -1700,6 +1741,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-b613937b7bc1ea64",
         "EV-1fe1613825cae718",
         "EV-78651dfea74b4323",
         "EV-435ad78c9ec50025",
@@ -1708,7 +1750,6 @@
         "EV-4c168759119d2668",
         "EV-eb3545d5948aa255",
         "EV-3a4acc92731cb5ac",
-        "EV-0d5a32aca724d30e",
         "EV-63948deaec161736",
         "EV-f7b81752b1fadd87",
         "EV-c17a52220be52dc1",
@@ -1917,10 +1958,10 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-a3e023474c2fbe8e",
         "EN-9c3de5f42376b1af",
         "EN-f7d9f5a90479d632",
         "EN-99d3fd0fa8fe115e",
-        "EN-32e83e92d45d71f6",
         "EN-3a7bd3e2360a3d29",
         "EN-ea3bd73e2b506e00",
         "EN-bbdefa2950f49882",
@@ -1928,6 +1969,7 @@
         "EN-e32ac33fa53a3db6",
         "EN-83eb1cb31148698f",
         "EN-52593fb3cf820033",
+        "EN-32e83e92d45d71f6",
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
@@ -2024,7 +2066,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-24"
     },
     {
       "id": "TX-ai_market_subcategory-development_deployment",

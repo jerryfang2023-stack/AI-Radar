@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-23T03:43:09.331Z",
-    "latestDataDate": "2026-08-23",
-    "currentDate": "2026-08-23",
-    "eventCount": 2322,
+    "generatedAt": "2026-08-24T00:25:58.386Z",
+    "latestDataDate": "2026-08-24",
+    "currentDate": "2026-08-24",
+    "eventCount": 2338,
     "quarantinedEventCount": 23
   },
   "relationships": [
@@ -22,37 +22,37 @@
       "object_type": "entity",
       "event_id": "EV-d2247eeac1478994",
       "claim_refs": [
-        "CL-6dcedb2926eb9219",
-        "CL-d367d1a4fea0731e",
-        "CL-cd08fbc32d14ffb1"
+        "CL-5fec787570ee528b",
+        "CL-dd9bacb7339c18ea",
+        "CL-b647f62691694bad"
       ],
       "source_refs": [
         "SA-0c51a7494cf30977"
       ],
-      "data_date": "2026-08-23",
+      "data_date": "2026-08-24",
       "status": "verified",
       "subjectName": "AMD",
       "objectName": "Anthropic",
       "predicateLabel": "合作",
       "title": "AMD 合作 Anthropic",
       "eventTitle": "AMD推进AI 2026",
-      "eventDate": "2026-08-23",
+      "eventDate": "2026-08-24",
       "sourceCount": 1,
       "claims": [
         {
-          "id": "CL-6dcedb2926eb9219",
+          "id": "CL-5fec787570ee528b",
           "subject": "AMD",
           "object": "Anthropic",
           "quote": "AMD and Anthropic Announce Strategic Partnership"
         },
         {
-          "id": "CL-d367d1a4fea0731e",
+          "id": "CL-dd9bacb7339c18ea",
           "subject": "AMD",
           "object": "Microsoft",
-          "quote": "Microsoft to Deploy Next-Gen AMD Instinct and AMD EPYC Processors"
+          "quote": "AMD and Microsoft are expanding their AI infrastructure partnership, spanning Helios deployments, new Azure instances powered by EPYC Venice, and advanced AMD networking technologies."
         },
         {
-          "id": "CL-cd08fbc32d14ffb1",
+          "id": "CL-b647f62691694bad",
           "subject": "AMD",
           "object": "Cerebras",
           "quote": "AMD and Cerebras partner to deliver high-performance for ultra-low latency workloads"
@@ -70,9 +70,79 @@
         "id": "EV-d2247eeac1478994",
         "title": "AMD推进AI 2026",
         "originalTitle": "AMD Advancing AI 2026 | San Francisco, July 22-23",
-        "date": "2026-08-23",
-        "dataDate": "2026-08-23",
+        "date": "2026-08-24",
+        "dataDate": "2026-08-24",
         "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-b2fd7c5284307b20",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-7a116596551ff8c7",
+      "claim_refs": [
+        "CL-d34de99f104b67cb",
+        "CL-140c68d6e2e5427c",
+        "CL-ca4e4bd49c04468a",
+        "CL-06eaa38458e4dbfe"
+      ],
+      "source_refs": [
+        "SA-20bc80da6ce68186"
+      ],
+      "data_date": "2026-08-24",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "ChatGPT",
+      "predicateLabel": "发布",
+      "title": "OpenAI 发布 ChatGPT",
+      "eventTitle": "OpenAI 推出青少年版 ChatGPT，儿童安全专家质疑安全机制透明度",
+      "eventDate": "2026-08-23",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-d34de99f104b67cb",
+          "subject": "OpenAI",
+          "object": "青少年版 ChatGPT，儿童安全专家质疑安全机制透明度",
+          "quote": "IT之家 8 月 23 日消息，OpenAI 本周推出了 ChatGPT 青少年版，专门面向年轻用户，并通过年龄识别机制限制部分功能。"
+        },
+        {
+          "id": "CL-140c68d6e2e5427c",
+          "subject": "OpenAI",
+          "object": "青少年版 ChatGPT，儿童安全专家质疑安全机制透明度",
+          "quote": "回想 OpenAI 此前计划推出部分色情内容功能时，当时有报道说的，最终没有推出的一个原因，就是年龄估算技术无法准确识别足够多的青少年。"
+        },
+        {
+          "id": "CL-ca4e4bd49c04468a",
+          "subject": "OpenAI",
+          "object": "青少年版 ChatGPT，儿童安全专家质疑安全机制透明度",
+          "quote": "对此，外媒 Engadget 采访了多名儿童安全专家，他们对 ChatGPT 青少年版的评价并不一致。"
+        },
+        {
+          "id": "CL-06eaa38458e4dbfe",
+          "subject": "OpenAI",
+          "object": "青少年版 ChatGPT，儿童安全专家质疑安全机制透明度",
+          "quote": "但所有人都认为，在向家长和年轻人推荐之前，这套系统还需要 接受大量独立测试 ，OpenAI 必须更加透明地说明安全机制究竟如何运作。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-20bc80da6ce68186",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/993/301.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 8 月 23 日消息，OpenAI 本周推出了 ChatGPT 青少年版，专门面向年轻用户，并通过年龄识别机制限制部分功能。",
+      "event": {
+        "id": "EV-7a116596551ff8c7",
+        "title": "OpenAI 推出青少年版 ChatGPT，儿童安全专家质疑安全机制透明度",
+        "originalTitle": "",
+        "date": "2026-08-23",
+        "dataDate": "2026-08-24",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
