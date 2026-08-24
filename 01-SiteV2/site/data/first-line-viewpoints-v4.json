@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-08-23T09:48:20.953Z",
+    "generatedAt": "2026-08-24T01:19:00.933Z",
     "earliestDate": "2026-06-01",
-    "latestDate": "2026-08-23",
+    "latestDate": "2026-08-24",
     "sourcePolicy": "Current and committed historical morning RSS/X records share the Chinese translation and public-page gate. Afternoon follow-builders Skill intake is independently preserved, deduplicated by original URL, and cannot bypass the Chinese, AI-relevance, tag, or source gates.",
     "history": {
       "dataFile": "01-SiteV2/site/data/first-line-viewpoints-history.json",
@@ -16,10 +16,10 @@
         "id": "morning-rss",
         "dataFile": "01-SiteV2/site/data/follow-builders-daily.json",
         "historyFile": "01-SiteV2/site/data/first-line-viewpoints-history.json",
-        "generatedAt": "2026-08-23T09:30:42.612Z",
+        "generatedAt": "2026-08-24T01:17:13.636Z",
         "collected": 657,
-        "published": 646,
-        "currentPublished": 23,
+        "published": 645,
+        "currentPublished": 22,
         "historicalPublished": 623,
         "builders": 34
       },
@@ -37,11 +37,11 @@
   },
   "stats": {
     "builders": 34,
-    "remarks": 646,
+    "remarks": 645,
     "podcasts": 1,
     "morningIntake": 657,
-    "morningPublished": 646,
-    "currentMorningPublished": 23,
+    "morningPublished": 645,
+    "currentMorningPublished": 22,
     "historicalPublished": 623,
     "afternoonIntake": 20,
     "dualCovered": 14,
@@ -109,15 +109,15 @@
       "count": 26
     },
     {
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "count": 25
-    },
-    {
       "name": "Dan Shipper",
       "handle": "danshipper",
       "role": "ceo every",
+      "count": 24
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 24
     },
     {
@@ -255,6 +255,92 @@
   ],
   "remarks": [
     {
+      "id": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "content": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive A few interesting numbers in this FT story gathered from \"people with knowledge of the matter\": Anthropic's",
+      "contentTranslation": "Anthropic最优秀的AI模型在吸引用户方面遇到困难，而更便宜的工具却蓬勃发展。这篇FT报道中，从“知情人士”处收集到几个有趣的数字：Anthropic的",
+      "contentTranslationStatus": "translated",
+      "translation": "Anthropic最优秀的AI模型在吸引用户方面遇到困难，而更便宜的工具正蓬勃发展。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-08-23T20:24:52+00:00",
+      "date": "2026-08-24",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Quoting Drew Breunig",
+      "content": "Prior to Fable, it felt silly to waste too much time improving your coding harness or context strategies. A new model would arrive at the same price (or cheaper!) and paper over most of your problems",
+      "contentTranslation": "在Fable出现之前，花太多时间改进你的编码工具链或上下文策略似乎有些愚蠢。因为总会有新模型以相同价格（甚至更便宜！）问世，并解决你大部分的问题。",
+      "contentTranslationStatus": "translated",
+      "translation": "引用德鲁·布罗伊尼格",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-08-23T19:55:30+00:00",
+      "date": "2026-08-24",
+      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
       "id": "2091407991736332689",
       "source": "x",
       "name": "Thibault Sottiaux",
@@ -302,7 +388,7 @@
       "handle": "levie",
       "role": "ceo box - your business lives in content. unleash it with AI",
       "text": "AI diffusion is far more rate limited by having good evals than most realize. The kind of evals that you see for every model release are incredibly helpful, but only tell you the shape of general AI progress and the relative capability level of models.\n\nThe far bigger space over time are evals on all the major workflows that enterprises do, down to the specifics of an individual company. \n\nThis will be a huge space over time because you can’t automate what you can’t assess the progress on. Enterprises will not be able to go just on vibes.",
-      "translation": "AI扩散受限于优质评估的程度远超大多数人的认知。每次模型发布时所见的那种评估极为有用，但只能揭示通用AI进展的轮廓以及模型的相对能力水平。而随着时间的推移，更大的空间在于针对企业所有主要工作流程的评估，细化到单个公司的具体细节。这将是一个巨大的领域，因为无法评估进展的事物就无法自动化。企业不能仅凭感觉行事。",
+      "translation": "AI扩散受限于优质评估的程度远超大多数人的认知。针对每次模型发布所见的那些评估极为有用，但只能揭示通用AI进展的轮廓以及模型的相对能力水平。而随着时间的推移，更大的空间在于对企业所有主要工作流程的评估，细化到单个公司的具体细节。这将是一个巨大的领域，因为无法评估进展的事物就无法自动化。企业不能仅凭感觉行事。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -384,7 +470,7 @@
       "handle": "rauchg",
       "role": "vercel CEO",
       "text": "AI can do many wonderful things and grant many wishes, but we have only one earth, one California, one Patagonia, one Mendoza. USA and Argentina are two of the freest countries that also happen to have the most glorious land and geography. I'm very long 🇺🇸🇦🇷. We're so early.",
-      "translation": "AI能实现许多奇妙的事情，满足许多愿望，但我们只有一个地球、一个加利福尼亚、一个巴塔哥尼亚、一个门多萨。美国和阿根廷是两个最自由的国家，同时也恰好拥有最壮丽的土地和地理风貌。我非常看好🇺🇸🇦🇷。我们才刚刚开始。",
+      "translation": "AI能实现许多奇妙的事情，满足许多愿望，但我们只有一个地球、一个加利福尼亚、一个巴塔哥尼亚、一个门多萨。美国和阿根廷是两个最自由的国家，同时也拥有最壮丽的土地和地理风貌。我非常看好🇺🇸🇦🇷。我们才刚刚开始。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -425,7 +511,7 @@
       "handle": "petergyang",
       "role": "Practical AI tutorials and interviews for busy people",
       "text": "If you care about your privacy:\n\n1. Go to https://t.co/yICN6WAe9R in Chrome\n2. Run this prompt in Codex or Claude Code and tell it there's an open tab in your browser\n3. Then pick the ones you want to remove and tell AI to do it\n\nJust disconnected half the apps that should no longer have my Google info.",
-      "translation": "如果你在意自己的隐私：1. 在Chrome中访问 https://t.co/yICN6WAe9R 2. 在Codex或Claude Code中运行此提示，并告诉它你的浏览器中有一个打开的标签页 3. 然后选择你想要移除的应用程序，并让AI执行操作 刚刚断开了那些不应该再拥有我Google信息的应用中的一半。",
+      "translation": "如果你在意自己的隐私：1. 在Chrome中访问 https://t.co/yICN6WAe9R 2. 在Codex或Claude Code中运行此提示，并告诉它你的浏览器中有一个打开的标签页 3. 然后选择你想移除的应用程序，并让AI执行操作 我刚断开了那些不应再拥有我Google信息的应用中的一半。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -466,7 +552,7 @@
       "handle": "realmadhuguru",
       "role": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
       "text": "How to build great evals - part 6\n\nHill climbing on evals is just a fancy way of saying: pick a dimension that matters and optimize for it.\n\nThis could be improving the quality of existing features based on your latest production data on high value user journeys, expanding to adjacent use cases, lowering cost or latency.\n\nThe actual work boils down to better harnesses and model selection through methods like prompt eng, context eng, memory, post training, deterministic old school code etc.\n\nYour failure mode taxonomy (from part 3) is a good compass for where your product struggles and needs some love.\n\nE.g. maybe tool calling failures are your most common problem. You dig in and notice you stuff 20 tools in context, when each task really only needs 3-5. hill climbing here involves context eng to give it the right tools at the right stage and iterate until you get it to good.\n\nOr take the cost reduction goal..\nI’ve written about how I advise launching your product with the best model first. Get the quality as high as you can. Once you know users love the experience, hill climb to get similar quality with a smaller, cheaper, faster model. Same methods - harness, models.\n\nThe important thing is to have evals that tell you whether you are actually moving in the right direction.\n\nMore tomorrow. \n\nSend this to your teammates!\n\nDrop your questions in the comments and I will answer in future posts.",
-      "translation": "如何构建出色的评估——第6部分\n\n在评估上进行“爬山”只是一种花哨的说法：选择一个重要的维度，并针对它进行优化。这可以是根据你最新的生产数据，在高价值用户旅程上改进现有功能的质量，扩展到相邻的用例，降低成本和延迟。实际工作归结为更好的测试框架和模型选择，方法包括提示工程、上下文工程、记忆、后训练、确定性的传统代码等。你的失败模式分类法（来自第3部分）是一个很好的指南针，能告诉你产品在哪里遇到困难、需要改进。例如，也许工具调用失败是你最常见的问题。你深入研究后发现，你把20个工具塞进了上下文里，而每个任务实际上只需要3到5个。这里的爬山就涉及上下文工程，在正确的阶段给它正确的工具，并不断迭代，直到把它做好。或者以降低成本为目标……我写过我建议先用最好的模型来发布产品。把质量尽可能做高。一旦你知道用户喜欢这种体验，就通过爬山来用更小、更便宜、更快的模型达到类似的质量。方法是一样的——测试框架、模型。重要的是要有评估来告诉你，你是否真的在朝正确的方向前进。明天继续。把这个发给你的队友们！在评论区留下你的问题，我会在未来的帖子中回答。",
+      "translation": "如何构建出色的评估——第6部分\n\n在评估上进行“爬山”只是一种花哨的说法：选择一个重要的维度，并针对它进行优化。这可以是根据你最新的生产数据，在高价值用户旅程上改进现有功能的质量，扩展到相邻的用例，降低成本和/或延迟。实际工作归结为更好的测试框架和模型选择，方法包括提示工程、上下文工程、记忆、后训练、确定性的传统代码等。\n\n你的失败模式分类法（来自第3部分）是一个很好的指南针，能告诉你产品在哪里遇到困难、需要改进。例如，也许工具调用失败是你最常见的问题。你深入研究后发现，你把20个工具塞进了上下文里，而每个任务实际上只需要3到5个。这里的爬山就涉及上下文工程，在正确的阶段给它正确的工具，并不断迭代，直到把它做好。\n\n或者以降低成本这个目标为例。我写过我建议先用最好的模型来发布产品。把质量尽可能做到最高。一旦你知道用户喜欢这种体验，再通过爬山，用更小、更便宜、更快的模型获得类似的质量。方法是一样的——测试框架、模型。\n\n重要的是要有评估来告诉你，你是否真的在朝着正确的方向前进。明天继续。把这个发给你队友！在评论区留下你的问题，我会在未来的帖子中回答。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
@@ -592,7 +678,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "More than just code review",
       "content": "The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have been applied in the correct way. Sometimes this involves reviewing every line of code they have written, but",
-      "contentTranslation": "要高效利用编码代理，关键在于能够自信地指导它们进行修改，并随后自信地验证这些修改是否以正确的方式被应用。有时，这需要逐一审查它们编写的每一行代码，但",
+      "contentTranslation": "要高效利用编码代理，关键在于能够自信地指导它们进行修改，并随后自信地验证这些修改是否以正确的方式被应用。有时这需要逐行审查它们编写的代码，但",
       "contentTranslationStatus": "translated",
       "translation": "不仅仅是代码审查",
       "translationStatus": "translated",
@@ -635,7 +721,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Stop Making TUIs",
       "content": "Stop Making TUIs Thomas Ptacek advocates for building real native user interfaces for even the smallest of personal tools, because coding agents have reduced the cost of getting a usable-enough GUI up and",
-      "contentTranslation": "停止制作TUI。托马斯·普塔切克主张，即便是最微小的个人工具，也应构建真正的原生用户界面，因为编码代理已降低了制作一个足够可用的图形界面的成本。",
+      "contentTranslation": "停止制作TUIs。托马斯·普塔切克主张，即便是最小的个人工具，也应构建真正的原生用户界面，因为编码代理已降低了打造一个足够可用的图形界面的成本。",
       "contentTranslationStatus": "translated",
       "translation": "停止制作TUIs",
       "translationStatus": "translated",
@@ -680,7 +766,7 @@
       "content": "",
       "contentTranslation": "",
       "contentTranslationStatus": "unavailable",
-      "translation": "ChatGPT 苹果信息 💬，Anthropic 的会议记录器 💼，Mistral 智能搜索 🔍",
+      "translation": "ChatGPT 苹果信息 💬，Anthropic 的会议记录器 💼，Mistral 代理搜索 🔍",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -721,7 +807,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView",
       "content": "Research: A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView Today saw the long awaited release of Bun 1.4 , the first stable v",
-      "contentTranslation": "研究：在Bun 1.4的新Bun.WebView上构建一个shot-scraper风格的JSON API。今天，备受期待的Bun 1.4终于发布了，这是首个稳定版本。",
+      "contentTranslation": "研究：在Bun 1.4的新Bun.WebView上构建一个shot-scraper风格的JSON API。今天，Bun 1.4终于发布了，这是首个稳定版本。",
       "contentTranslationStatus": "translated",
       "translation": "基于Bun 1.4新特性Bun.WebView的shot-scraper风格JSON API",
       "translationStatus": "translated",
@@ -809,7 +895,7 @@
       "content": "My hypothesis is that there is a new opportunity for Extensible Software on the web . LLMs radically lower the cost of authoring extensions, and modern sandbox primitives lower the deployment",
       "contentTranslation": "我的假设是，网络上存在可扩展软件的新机遇。LLMs大幅降低了编写扩展的成本，而现代沙箱原语则降低了部署的门槛。",
       "contentTranslationStatus": "translated",
-      "translation": "引用杰里米·莫雷尔",
+      "translation": "引用杰里米·莫雷尔的话",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -850,7 +936,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Conceptual integrity and counting lines of code",
       "content": "Last week I recorded an episode of the Talking Postgres podcast with Claire Giordano on the subject of \"How AI is changing software development\". We had a really great conversation. Here",
-      "contentTranslation": "上周，我与Claire Giordano一起录制了一期Talking Postgres播客，主题是“AI如何改变软件开发”。我们进行了一次非常愉快的对话。以下是内容：",
+      "contentTranslation": "上周，我与Claire Giordano一起录制了一期《Talking Postgres》播客，主题是“AI如何改变软件开发”。我们的对话非常愉快。以下是内容：",
       "contentTranslationStatus": "translated",
       "translation": "概念完整性以及代码行数的统计",
       "translationStatus": "translated",
@@ -979,9 +1065,9 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
       "content": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index That's the same score as GPT-5.6 Luna (max), and just one point behind GLM-5.2 (max) and DeepSeek V4 Pro 0813 (max) - that GLM is <a href=\"https",
-      "contentTranslation": "Qwen 3.8 27B 在人工智能分析智能指数上得分为 52，与 GPT-5.6 Luna（最高配置）得分相同，仅比 GLM-5.2（最高配置）和 DeepSeek V4 Pro 0813（最高配置）低一分——该 GLM 是 <a href=\"https",
+      "contentTranslation": "Qwen 3.8 27B 在人工智能分析智能指数上得分为 52 分，与 GPT-5.6 Luna（最高配置）得分相同，仅比 GLM-5.2（最高配置）和 DeepSeek V4 Pro 0813（最高配置）低一分——该 GLM 是 <a href=\"https",
       "contentTranslationStatus": "translated",
-      "translation": "Qwen 3.8 27B 在人工智能分析智能指数中得分52分。",
+      "translation": "Qwen 3.8 27B在人工智能分析智能指数上获得52分。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -1058,49 +1144,6 @@
       "publicationStatus": "published"
     },
     {
-      "id": "https://tldr.tech/ai/2026-08-17",
-      "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "GLM-5.3 🤖, Stripe OpenRouter deal 💰, AI agent consensus 🤝",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "GLM-5.3 🤖，Stripe与OpenRouter达成交易 💰，AI智能体达成共识 🤝",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "Agent",
-      "columnTags": [
-        {
-          "id": "opinion-agent-workflow",
-          "name": "Agent 工作流观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "Agentic AI",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "Mon, 17 Aug 2026 00:00:00 GMT",
-      "date": "2026-08-17",
-      "url": "https://tldr.tech/ai/2026-08-17",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
       "id": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
       "source": "blog",
       "name": "Simon Willison's Blog",
@@ -1108,9 +1151,9 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
       "content": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility Excellent piece of reporting from 404 Media. For a while now there have been s",
-      "contentTranslation": "我们追踪了一批珍稀书籍的货运，最终发现它抵达了亚马逊的AI训练设施。这是来自404 Media的一篇出色报道。一段时间以来，一直有",
+      "contentTranslation": "我们追踪了一批珍稀书籍的货运，最终发现它抵达了亚马逊的AI训练设施。这是来自404 Media的精彩报道。一段时间以来，一直有——",
       "contentTranslationStatus": "translated",
-      "translation": "我们追踪了一批珍稀书籍的货运。最终，它抵达了亚马逊的人工智能训练设施。",
+      "translation": "我们追踪了一批珍稀书籍的货运。它最终抵达了亚马逊的人工智能训练设施。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -1132,92 +1175,6 @@
       "createdAt": "2026-08-17T15:21:29+00:00",
       "date": "2026-08-17",
       "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
-      "content": "Friday's big release was Qwen 3.8 27B , an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop,",
-      "contentTranslation": "周五的重磅发布是Qwen 3.8 27B，这是阿里巴巴Qwen研究实验室推出的一款采用Apache 2许可、拥有270亿参数的视觉能力大语言模型。我一直期待这款模型：27B的规模非常适合在配置合理的笔记本电脑上运行，",
-      "contentTranslationStatus": "translated",
-      "translation": "Qwen 3.8 27B 非常出色，但它默认会过度思考问题。",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-08-16T22:00:39+00:00",
-      "date": "2026-08-17",
-      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Quoting Dario Amodei",
-      "content": "I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks. I think it is fundamentally a crisi",
-      "contentTranslation": "我确实同意公众对AI持负面看法（而且这是一个大问题），但我认为这主要并非由我或其他AI领袖对AI风险的警告所导致。我认为这从根本上是一场危机。",
-      "contentTranslationStatus": "translated",
-      "translation": "引用达里奥·阿莫迪的话",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-08-16T15:05:36+00:00",
-      "date": "2026-08-16",
-      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
       "likes": 0,
       "retweets": 0,
       "replies": 0,
@@ -31767,13 +31724,99 @@
       "titleTranslationModel": "deepseek-v4-flash",
       "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Microsofts-Vision-for-an-Internet-Made-for-Agents-With-CTO-Kevin-Scott-Best-of-the-Pod-e3naje0",
       "publishedAt": "Wed, 12 Aug 2026 16:55:27 GMT",
-      "excerpt": "2025年，凯文·斯科特押注智能体网络将成为人工智能领域的下一件大事。这位微软首席技术官认为，要让智能体真正有用，它们需要能够代表我们采取行动——这意味着要让它们访问构成互联网的同样庞杂的工具、数据和系统。如今，这一押注开始见效，因为智能体网络的基础设施正在建设中。在本周的AI & I节目中，丹·希珀重温了他与凯文的对话。他们讨论了微软在智能体网络中的角色、为什么开放性不必以牺牲安全性为代价，以及为什么程序员应该对新工具保持好奇，而不是出于原则而抵制它们。如果你觉得这期节目有趣，请点赞、订阅、评论并分享！想听更多丹·希珀的内容：订阅Every：https://…",
+      "excerpt": "2025年，凯文·斯科特押注智能体网络将成为人工智能领域的下一件大事。这位微软首席技术官认为，要让智能体真正有用，它们需要能够代表我们采取行动——这意味着要让它们访问构成互联网的同样庞杂的工具、数据和系统。如今，这一押注开始见效，因为智能体网络的基础设施正在建设中。在本周的AI & I节目中，丹·希珀重温了他与凯文的对话。他们讨论了微软在智能体网络中的角色、为什么开放性不必以牺牲安全性为代价，以及为什么程序员应该对新工具保持好奇，而不是出于原则而抵制它们。如果你觉得本期节目有趣，请点赞、订阅、评论并分享！想听到更多丹·希珀的内容：订阅Every：https://…",
       "originalExcerpt": "In 2025, Kevin Scott bet that the agentic web would be the next big thing in AI.The Microsoft CTO argued that for agents to be genuinely useful, they'd need to be able to take action on our behalf—which would mean giving them access to the same sprawl of tools, data, and systems that make up the internet. Today, that bet is starting to pay off, as the foundational infrastructure for the agentic web is now being built.On this week's AI & I, Dan Shipper revisits his conversation with Kevin. They discuss Microsoft's role in the agentic web, why openness doesn't have to come at the expense of security, and why programmers should stay curious about new tools rather than resist them on principle.If you found this episode interesting, please like, subscribe, comment, and share!To hear more from Dan Shipper:Subscribe to Every: https://…",
       "excerptTranslationMethod": "deepseek_translation",
       "excerptTranslationModel": "deepseek-v4-pro"
     }
   ],
   "morningIntake": [
+    {
+      "id": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "content": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive A few interesting numbers in this FT story gathered from \"people with knowledge of the matter\": Anthropic's",
+      "contentTranslation": "Anthropic最优秀的AI模型在吸引用户方面遇到困难，而更便宜的工具却蓬勃发展。这篇FT报道中，从“知情人士”处收集到几个有趣的数字：Anthropic的",
+      "contentTranslationStatus": "translated",
+      "translation": "Anthropic最优秀的AI模型在吸引用户方面遇到困难，而更便宜的工具正蓬勃发展。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-08-23T20:24:52+00:00",
+      "date": "2026-08-24",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Quoting Drew Breunig",
+      "content": "Prior to Fable, it felt silly to waste too much time improving your coding harness or context strategies. A new model would arrive at the same price (or cheaper!) and paper over most of your problems",
+      "contentTranslation": "在Fable出现之前，花太多时间改进你的编码工具链或上下文策略似乎有些愚蠢。因为总会有新模型以相同价格（甚至更便宜！）问世，并解决你大部分的问题。",
+      "contentTranslationStatus": "translated",
+      "translation": "引用德鲁·布罗伊尼格",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-08-23T19:55:30+00:00",
+      "date": "2026-08-24",
+      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
     {
       "id": "2091407991736332689",
       "source": "x",
@@ -31822,7 +31865,7 @@
       "handle": "nikunj",
       "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
       "text": "Few things:\n1) These are Twitter DMs. I try to be helpful to as many cold DMs as I can. This one shouldn’t have passed the bar. \n\n2) Doxxing someone is not my style. I hope they learned their lesson. \n\n3) I can’t stress enough how important it is to find the right people to take advice from. It boils my blood to see many talented young people who actually have substance play these stupid games.",
-      "translation": "几点说明：1）这些是推特私信。我尽量对尽可能多的陌生私信提供帮助。这一条本不该通过筛选。2）曝光他人隐私不是我的风格。希望他们吸取了教训。3）我无论如何强调都不为过：找到合适的人来听取建议至关重要。看到许多有真才实学的年轻才俊玩这些愚蠢的把戏，我真是气不打一处来。",
+      "translation": "几点说明：1）这些是推特私信。我尽量对尽可能多的陌生私信提供帮助。这一条本不该通过审核。2）人肉搜索不是我的风格。希望他们吸取了教训。3）我无论如何强调都不为过：找到合适的人来听取建议至关重要。看到许多有真才实学的年轻人才玩这些愚蠢的把戏，我真是气不打一处来。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -31863,7 +31906,7 @@
       "handle": "nikunj",
       "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
       "text": "Kids, I don't know what advice you are getting, but ragebaiting investors and then sending them SAFE docs to just wire you money is NOT how investing works.. https://t.co/MSXm6S85Vd",
-      "translation": "孩子们，我不知道你们得到了什么建议，但激怒投资者然后给他们发SAFE文件让他们直接电汇钱，这可不是投资运作的方式.. https://t.co/MSXm6S85Vd",
+      "translation": "孩子们，我不知道你们收到了什么建议，但激怒投资者然后发给他们SAFE文件让他们直接电汇资金，这根本不是投资运作的方式.. https://t.co/MSXm6S85Vd",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -31945,7 +31988,7 @@
       "handle": "levie",
       "role": "ceo box - your business lives in content. unleash it with AI",
       "text": "AI diffusion is far more rate limited by having good evals than most realize. The kind of evals that you see for every model release are incredibly helpful, but only tell you the shape of general AI progress and the relative capability level of models.\n\nThe far bigger space over time are evals on all the major workflows that enterprises do, down to the specifics of an individual company. \n\nThis will be a huge space over time because you can’t automate what you can’t assess the progress on. Enterprises will not be able to go just on vibes.",
-      "translation": "AI扩散受限于优质评估的程度远超大多数人的认知。每次模型发布时所见的那种评估极为有用，但只能揭示通用AI进展的轮廓以及模型的相对能力水平。而随着时间的推移，更大的空间在于针对企业所有主要工作流程的评估，细化到单个公司的具体细节。这将是一个巨大的领域，因为无法评估进展的事物就无法自动化。企业不能仅凭感觉行事。",
+      "translation": "AI扩散受限于优质评估的程度远超大多数人的认知。针对每次模型发布所见的那些评估极为有用，但只能揭示通用AI进展的轮廓以及模型的相对能力水平。而随着时间的推移，更大的空间在于对企业所有主要工作流程的评估，细化到单个公司的具体细节。这将是一个巨大的领域，因为无法评估进展的事物就无法自动化。企业不能仅凭感觉行事。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -32027,7 +32070,7 @@
       "handle": "rauchg",
       "role": "vercel CEO",
       "text": "AI can do many wonderful things and grant many wishes, but we have only one earth, one California, one Patagonia, one Mendoza. USA and Argentina are two of the freest countries that also happen to have the most glorious land and geography. I'm very long 🇺🇸🇦🇷. We're so early.",
-      "translation": "AI能实现许多奇妙的事情，满足许多愿望，但我们只有一个地球、一个加利福尼亚、一个巴塔哥尼亚、一个门多萨。美国和阿根廷是两个最自由的国家，同时也恰好拥有最壮丽的土地和地理风貌。我非常看好🇺🇸🇦🇷。我们才刚刚开始。",
+      "translation": "AI能实现许多奇妙的事情，满足许多愿望，但我们只有一个地球、一个加利福尼亚、一个巴塔哥尼亚、一个门多萨。美国和阿根廷是两个最自由的国家，同时也拥有最壮丽的土地和地理风貌。我非常看好🇺🇸🇦🇷。我们才刚刚开始。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -32068,7 +32111,7 @@
       "handle": "petergyang",
       "role": "Practical AI tutorials and interviews for busy people",
       "text": "If you care about your privacy:\n\n1. Go to https://t.co/yICN6WAe9R in Chrome\n2. Run this prompt in Codex or Claude Code and tell it there's an open tab in your browser\n3. Then pick the ones you want to remove and tell AI to do it\n\nJust disconnected half the apps that should no longer have my Google info.",
-      "translation": "如果你在意自己的隐私：1. 在Chrome中访问 https://t.co/yICN6WAe9R 2. 在Codex或Claude Code中运行此提示，并告诉它你的浏览器中有一个打开的标签页 3. 然后选择你想要移除的应用程序，并让AI执行操作 刚刚断开了那些不应该再拥有我Google信息的应用中的一半。",
+      "translation": "如果你在意自己的隐私：1. 在Chrome中访问 https://t.co/yICN6WAe9R 2. 在Codex或Claude Code中运行此提示，并告诉它你的浏览器中有一个打开的标签页 3. 然后选择你想移除的应用程序，并让AI执行操作 我刚断开了那些不应再拥有我Google信息的应用中的一半。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -32150,7 +32193,7 @@
       "handle": "realmadhuguru",
       "role": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
       "text": "How to build great evals - part 6\n\nHill climbing on evals is just a fancy way of saying: pick a dimension that matters and optimize for it.\n\nThis could be improving the quality of existing features based on your latest production data on high value user journeys, expanding to adjacent use cases, lowering cost or latency.\n\nThe actual work boils down to better harnesses and model selection through methods like prompt eng, context eng, memory, post training, deterministic old school code etc.\n\nYour failure mode taxonomy (from part 3) is a good compass for where your product struggles and needs some love.\n\nE.g. maybe tool calling failures are your most common problem. You dig in and notice you stuff 20 tools in context, when each task really only needs 3-5. hill climbing here involves context eng to give it the right tools at the right stage and iterate until you get it to good.\n\nOr take the cost reduction goal..\nI’ve written about how I advise launching your product with the best model first. Get the quality as high as you can. Once you know users love the experience, hill climb to get similar quality with a smaller, cheaper, faster model. Same methods - harness, models.\n\nThe important thing is to have evals that tell you whether you are actually moving in the right direction.\n\nMore tomorrow. \n\nSend this to your teammates!\n\nDrop your questions in the comments and I will answer in future posts.",
-      "translation": "如何构建出色的评估——第6部分\n\n在评估上进行“爬山”只是一种花哨的说法：选择一个重要的维度，并针对它进行优化。这可以是根据你最新的生产数据，在高价值用户旅程上改进现有功能的质量，扩展到相邻的用例，降低成本和延迟。实际工作归结为更好的测试框架和模型选择，方法包括提示工程、上下文工程、记忆、后训练、确定性的传统代码等。你的失败模式分类法（来自第3部分）是一个很好的指南针，能告诉你产品在哪里遇到困难、需要改进。例如，也许工具调用失败是你最常见的问题。你深入研究后发现，你把20个工具塞进了上下文里，而每个任务实际上只需要3到5个。这里的爬山就涉及上下文工程，在正确的阶段给它正确的工具，并不断迭代，直到把它做好。或者以降低成本为目标……我写过我建议先用最好的模型来发布产品。把质量尽可能做高。一旦你知道用户喜欢这种体验，就通过爬山来用更小、更便宜、更快的模型达到类似的质量。方法是一样的——测试框架、模型。重要的是要有评估来告诉你，你是否真的在朝正确的方向前进。明天继续。把这个发给你的队友们！在评论区留下你的问题，我会在未来的帖子中回答。",
+      "translation": "如何构建出色的评估——第6部分\n\n在评估上进行“爬山”只是一种花哨的说法：选择一个重要的维度，并针对它进行优化。这可以是根据你最新的生产数据，在高价值用户旅程上改进现有功能的质量，扩展到相邻的用例，降低成本和/或延迟。实际工作归结为更好的测试框架和模型选择，方法包括提示工程、上下文工程、记忆、后训练、确定性的传统代码等。\n\n你的失败模式分类法（来自第3部分）是一个很好的指南针，能告诉你产品在哪里遇到困难、需要改进。例如，也许工具调用失败是你最常见的问题。你深入研究后发现，你把20个工具塞进了上下文里，而每个任务实际上只需要3到5个。这里的爬山就涉及上下文工程，在正确的阶段给它正确的工具，并不断迭代，直到把它做好。\n\n或者以降低成本这个目标为例。我写过我建议先用最好的模型来发布产品。把质量尽可能做到最高。一旦你知道用户喜欢这种体验，再通过爬山，用更小、更便宜、更快的模型获得类似的质量。方法是一样的——测试框架、模型。\n\n重要的是要有评估来告诉你，你是否真的在朝着正确的方向前进。明天继续。把这个发给你队友！在评论区留下你的问题，我会在未来的帖子中回答。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
@@ -32358,7 +32401,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "More than just code review",
       "content": "The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have been applied in the correct way. Sometimes this involves reviewing every line of code they have written, but",
-      "contentTranslation": "要高效利用编码代理，关键在于能够自信地指导它们进行修改，并随后自信地验证这些修改是否以正确的方式被应用。有时，这需要逐一审查它们编写的每一行代码，但",
+      "contentTranslation": "要高效利用编码代理，关键在于能够自信地指导它们进行修改，并随后自信地验证这些修改是否以正确的方式被应用。有时这需要逐行审查它们编写的代码，但",
       "contentTranslationStatus": "translated",
       "translation": "不仅仅是代码审查",
       "translationStatus": "translated",
@@ -32442,7 +32485,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Stop Making TUIs",
       "content": "Stop Making TUIs Thomas Ptacek advocates for building real native user interfaces for even the smallest of personal tools, because coding agents have reduced the cost of getting a usable-enough GUI up and",
-      "contentTranslation": "停止制作TUI。托马斯·普塔切克主张，即便是最微小的个人工具，也应构建真正的原生用户界面，因为编码代理已降低了制作一个足够可用的图形界面的成本。",
+      "contentTranslation": "停止制作TUIs。托马斯·普塔切克主张，即便是最小的个人工具，也应构建真正的原生用户界面，因为编码代理已降低了打造一个足够可用的图形界面的成本。",
       "contentTranslationStatus": "translated",
       "translation": "停止制作TUIs",
       "translationStatus": "translated",
@@ -32478,6 +32521,49 @@
       "publicationStatus": "published"
     },
     {
+      "id": "https://www.bensbites.com/p/how-i-built-this",
+      "source": "blog",
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "text": "How I built this",
+      "content": "Ben&#8217;s session #3",
+      "contentTranslation": "Ben&#8217;s 第 #3 次会议",
+      "contentTranslationStatus": "translated",
+      "translation": "我是如何构建这个的",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Fri, 21 Aug 2026 14:08:34 GMT",
+      "date": "2026-08-21",
+      "url": "https://www.bensbites.com/p/how-i-built-this",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
       "id": "https://tldr.tech/ai/2026-08-21",
       "source": "blog",
       "name": "TLDR AI Newsletter",
@@ -32487,7 +32573,7 @@
       "content": "",
       "contentTranslation": "",
       "contentTranslationStatus": "unavailable",
-      "translation": "ChatGPT 苹果信息 💬，Anthropic 的会议记录器 💼，Mistral 智能搜索 🔍",
+      "translation": "ChatGPT 苹果信息 💬，Anthropic 的会议记录器 💼，Mistral 代理搜索 🔍",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -32528,7 +32614,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Quoting Matt Webb",
       "content": "After I released version 1.0, I figured I would have to do the rotations myself. So I sat down with ChatGPT and I didn’t get it to write the code, but I got it to educate me. With a patient, interactive tutor, I was able to fi",
-      "contentTranslation": "发布1.0版本后，我以为得自己动手处理旋转问题。于是我和ChatGPT坐下来交流，虽然没让它直接写代码，但它教会了我不少。在一位耐心、互动的导师帮助下，我得以完成……",
+      "contentTranslation": "发布1.0版本后，我以为得自己动手处理旋转问题。于是我和ChatGPT坐下来聊了聊，虽然没让它直接写代码，但它确实教会了我不少。有了这样一位耐心、互动的导师，我终于能够……",
       "contentTranslationStatus": "translated",
       "translation": "引用Matt Webb的话：",
       "translationStatus": "translated",
@@ -32657,7 +32743,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView",
       "content": "Research: A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView Today saw the long awaited release of Bun 1.4 , the first stable v",
-      "contentTranslation": "研究：在Bun 1.4的新Bun.WebView上构建一个shot-scraper风格的JSON API。今天，备受期待的Bun 1.4终于发布了，这是首个稳定版本。",
+      "contentTranslation": "研究：在Bun 1.4的新Bun.WebView上构建一个shot-scraper风格的JSON API。今天，Bun 1.4终于发布了，这是首个稳定版本。",
       "contentTranslationStatus": "translated",
       "translation": "基于Bun 1.4新特性Bun.WebView的shot-scraper风格JSON API",
       "translationStatus": "translated",
@@ -32745,7 +32831,7 @@
       "content": "My hypothesis is that there is a new opportunity for Extensible Software on the web . LLMs radically lower the cost of authoring extensions, and modern sandbox primitives lower the deployment",
       "contentTranslation": "我的假设是，网络上存在可扩展软件的新机遇。LLMs大幅降低了编写扩展的成本，而现代沙箱原语则降低了部署的门槛。",
       "contentTranslationStatus": "translated",
-      "translation": "引用杰里米·莫雷尔",
+      "translation": "引用杰里米·莫雷尔的话",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -32786,7 +32872,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Conceptual integrity and counting lines of code",
       "content": "Last week I recorded an episode of the Talking Postgres podcast with Claire Giordano on the subject of \"How AI is changing software development\". We had a really great conversation. Here",
-      "contentTranslation": "上周，我与Claire Giordano一起录制了一期Talking Postgres播客，主题是“AI如何改变软件开发”。我们进行了一次非常愉快的对话。以下是内容：",
+      "contentTranslation": "上周，我与Claire Giordano一起录制了一期《Talking Postgres》播客，主题是“AI如何改变软件开发”。我们的对话非常愉快。以下是内容：",
       "contentTranslationStatus": "translated",
       "translation": "概念完整性以及代码行数的统计",
       "translationStatus": "translated",
@@ -32958,9 +33044,9 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
       "content": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index That's the same score as GPT-5.6 Luna (max), and just one point behind GLM-5.2 (max) and DeepSeek V4 Pro 0813 (max) - that GLM is <a href=\"https",
-      "contentTranslation": "Qwen 3.8 27B 在人工智能分析智能指数上得分为 52，与 GPT-5.6 Luna（最高配置）得分相同，仅比 GLM-5.2（最高配置）和 DeepSeek V4 Pro 0813（最高配置）低一分——该 GLM 是 <a href=\"https",
+      "contentTranslation": "Qwen 3.8 27B 在人工智能分析智能指数上得分为 52 分，与 GPT-5.6 Luna（最高配置）得分相同，仅比 GLM-5.2（最高配置）和 DeepSeek V4 Pro 0813（最高配置）低一分——该 GLM 是 <a href=\"https",
       "contentTranslationStatus": "translated",
-      "translation": "Qwen 3.8 27B 在人工智能分析智能指数中得分52分。",
+      "translation": "Qwen 3.8 27B在人工智能分析智能指数上获得52分。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -33037,49 +33123,6 @@
       "publicationStatus": "published"
     },
     {
-      "id": "https://tldr.tech/ai/2026-08-17",
-      "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "GLM-5.3 🤖, Stripe OpenRouter deal 💰, AI agent consensus 🤝",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "GLM-5.3 🤖，Stripe与OpenRouter达成交易 💰，AI智能体达成共识 🤝",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "Agent",
-      "columnTags": [
-        {
-          "id": "opinion-agent-workflow",
-          "name": "Agent 工作流观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "Agentic AI",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "Mon, 17 Aug 2026 00:00:00 GMT",
-      "date": "2026-08-17",
-      "url": "https://tldr.tech/ai/2026-08-17",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
       "id": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
       "source": "blog",
       "name": "Simon Willison's Blog",
@@ -33087,9 +33130,9 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
       "content": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility Excellent piece of reporting from 404 Media. For a while now there have been s",
-      "contentTranslation": "我们追踪了一批珍稀书籍的货运，最终发现它抵达了亚马逊的AI训练设施。这是来自404 Media的一篇出色报道。一段时间以来，一直有",
+      "contentTranslation": "我们追踪了一批珍稀书籍的货运，最终发现它抵达了亚马逊的AI训练设施。这是来自404 Media的精彩报道。一段时间以来，一直有——",
       "contentTranslationStatus": "translated",
-      "translation": "我们追踪了一批珍稀书籍的货运。最终，它抵达了亚马逊的人工智能训练设施。",
+      "translation": "我们追踪了一批珍稀书籍的货运。它最终抵达了亚马逊的人工智能训练设施。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -33111,92 +33154,6 @@
       "createdAt": "2026-08-17T15:21:29+00:00",
       "date": "2026-08-17",
       "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
-      "content": "Friday's big release was Qwen 3.8 27B , an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop,",
-      "contentTranslation": "周五的重磅发布是Qwen 3.8 27B，这是阿里巴巴Qwen研究实验室推出的一款采用Apache 2许可、拥有270亿参数的视觉能力大语言模型。我一直期待这款模型：27B的规模非常适合在配置合理的笔记本电脑上运行，",
-      "contentTranslationStatus": "translated",
-      "translation": "Qwen 3.8 27B 非常出色，但它默认会过度思考问题。",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-08-16T22:00:39+00:00",
-      "date": "2026-08-17",
-      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Quoting Dario Amodei",
-      "content": "I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks. I think it is fundamentally a crisi",
-      "contentTranslation": "我确实同意公众对AI持负面看法（而且这是一个大问题），但我认为这主要并非由我或其他AI领袖对AI风险的警告所导致。我认为这从根本上是一场危机。",
-      "contentTranslationStatus": "translated",
-      "translation": "引用达里奥·阿莫迪的话",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-08-16T15:05:36+00:00",
-      "date": "2026-08-16",
-      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
       "likes": 0,
       "retweets": 0,
       "replies": 0,
