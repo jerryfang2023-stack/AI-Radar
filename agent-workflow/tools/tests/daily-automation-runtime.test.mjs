@@ -20,6 +20,12 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(controller, /assert-follow-builders-data\.mjs[^]*--reports-dir=/u);
   assert.match(controller, /assert-community-intelligence-data\.mjs[^]*--reports-dir=/u);
   assert.match(controller, /assert-data-center-projection-coverage\.mjs[^]*--reports-dir=/u);
+  assert.equal(
+    (controller.match(/build-skill-store-dashboard\.mjs[^]*?--output=/gu) || []).length,
+    2,
+    "morning and final-closure Skill dashboard refreshes must write to runtime",
+  );
+  assert.match(read("build-skill-store-dashboard.mjs"), /startsWith\("--output="\)/u);
   assert.match(read("run-business-signals-health-dispatch.mjs"), /args\.get\("reports-dir"\)/u);
   assert.match(read("assert-community-intelligence-data.mjs"), /args\.get\("reports-dir"\)/u);
   assert.match(read("assert-data-center-projection-coverage.mjs"), /args\.get\("reports-dir"\)/u);
@@ -94,6 +100,7 @@ test("morning controller repairs derived repo Skill runtime before auditing it",
   assert.ok(syncIndex >= 0, "morning controller must sync the derived repo Skill runtime");
   assert.ok(discoveryIndex > syncIndex, "Skill discovery summary must refresh after runtime synchronization");
   assert.ok(checkIndex > discoveryIndex, "Skill Ops audit must run after discovery refresh");
+  assert.match(controller.slice(discoveryIndex, checkIndex), /--output=/u);
   assert.match(controller, /actions: \[runtimeSync, discoveryRefresh, preflight, business\]/u);
 });
 
@@ -102,6 +109,10 @@ test("final closure refreshes Skill discovery immediately before supervision", (
   assert.match(
     controller,
     /const discoveryRefresh = run\("Refresh Skill discovery summary before final supervision"[^]*const supervision = run\("Final daily supervision"/u,
+  );
+  assert.match(
+    controller,
+    /Refresh Skill discovery summary before final supervision[^]*build-skill-store-dashboard\.mjs[^]*--output=/u,
   );
   assert.match(controller, /fundingPortal\.ok && discoveryRefresh\.ok && supervisionReported/u);
   assert.match(controller, /fundingPortal, discoveryRefresh, supervisionAction/u);
