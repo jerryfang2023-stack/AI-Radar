@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-08-23
+last_updated: 2026-08-24
 use_when:
   - large task startup
   - dispatch planning
@@ -30,7 +30,7 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
 - Current data-lake contract: `DATA-LAKE-V4.1-24-table`; JSONL and DuckDB must expose exactly the same 24-table V4 allowlist, including reviewed event classifications.
 - Current private evidence store: `PRIVATE-EVIDENCE-STORE-V2.0`; it is the sole complete-original store, deduplicates bodies by `content_hash`, and is physically outside the public repository and Vault. Public V4 data, the Vault, and the website never retain complete bodies.
-- Current Funding Insights inventory: 300 accepted application cards aggregate to 275 public financing-event cards through 2026-08-23. The 2026-08-23 intake found one financing event already covered by the published history, so it produced no duplicate public card. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It also builds 1,314 evidence-backed investor subjects with 1,515 current-round activities; unresolved product/person names remain in the evidence-backed entity review queue. The PC portal, live Mini Program endpoint, and bundled Mini Program fallback publish the same 275-card inventory after the release bridge completes.
+- Current Funding Insights inventory: 300 accepted application cards aggregate to 275 public financing-event cards through 2026-08-24. The 2026-08-24 intake contained no new unique financing event eligible for publication, so it produced a valid empty daily bundle without duplicating history. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It also builds 1,314 evidence-backed investor subjects with 1,515 current-round activities; unresolved product/person names remain in the evidence-backed entity review queue. The PC portal, live Mini Program endpoint, and bundled Mini Program fallback publish the same 275-card inventory after the release bridge completes.
 - Current private evidence inventory: 17,291 snapshots, 14,182 unique bodies, and zero missing bodies.
 - Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task.
 

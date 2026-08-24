@@ -95,6 +95,7 @@ function morning() {
   const business = run("Data Center V4 production dispatch", process.execPath, [
     "agent-workflow/tools/run-business-signals-health-dispatch.mjs",
     `--date=${date}`,
+    `--reports-dir=${reportsDir}`,
     ...(dryRun ? ["--dry-run=true"] : []),
   ]);
   const skillOpsHealthy = runtimeSync.ok && discoveryRefresh.ok && preflight.ok;
@@ -110,6 +111,7 @@ function firstLineRecovery() {
   const gate = run("First-Line Viewpoints gate", process.execPath, [
     "agent-workflow/tools/assert-follow-builders-data.mjs",
     `--date=${date}`,
+    `--reports-dir=${reportsDir}`,
   ]);
   if (gate.ok) return { ok: true, status: "healthy", actions: [gate] };
 
@@ -139,6 +141,7 @@ function communityRecovery() {
   const gate = run("Community Intelligence gate", process.execPath, [
     "agent-workflow/tools/assert-community-intelligence-data.mjs",
     `--date=${date}`,
+    `--reports-dir=${reportsDir}`,
   ]);
   return {
     ok: gate.ok,
@@ -152,6 +155,7 @@ function recovery() {
   const business = run("Data Center V4 recovery router", process.execPath, [
     "agent-workflow/tools/run-business-signals-health-dispatch.mjs",
     `--date=${date}`,
+    `--reports-dir=${reportsDir}`,
     ...(dryRun ? ["--dry-run=true"] : []),
   ]);
   const firstLine = firstLineRecovery();
@@ -174,6 +178,7 @@ function closure() {
   const coverage = run("Data Center projection coverage", process.execPath, [
     "agent-workflow/tools/assert-data-center-projection-coverage.mjs",
     `--date=${date}`,
+    `--reports-dir=${reportsDir}`,
   ]);
   const selfCheck = run("Daily self-check and safe repair", process.execPath, [
     "agent-workflow/tools/run-daily-self-check.mjs",

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: site-v4-automation
-last_updated: 2026-08-22
+last_updated: 2026-08-24
 priority: current
 ---
 
@@ -85,6 +85,14 @@ dirty `agent-workflow/reports`. Closure runs the self-check once and hands that
 same report to Codex. When repair is necessary, Codex receives a clean isolated
 worktree based on `origin/main`, so unrelated local edits are preserved and never
 treated as repair input.
+
+The daily controller must propagate its resolved runtime report directory to
+every child health or gate command. Business Signals health dispatch,
+First-Line Viewpoints recovery, Community Intelligence recovery, and Data Center
+projection coverage therefore all receive `--reports-dir=<runtime>`. A child
+command must honor that argument instead of defaulting to
+`agent-workflow/reports`; the runtime regression test fails if this boundary is
+removed.
 
 The installer also resolves a runnable native `codex.exe` for scheduled repair.
 An explicit `-CodexExecutable` wins; otherwise it reuses the managed installation

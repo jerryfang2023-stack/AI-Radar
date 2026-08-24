@@ -5,7 +5,6 @@ import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 
 const root = process.cwd();
-const reportsDir = path.join(root, "agent-workflow", "reports");
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -13,6 +12,7 @@ const args = new Map(
     return [key, rest.join("=") || "true"];
   })
 );
+const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
 
 const date = args.get("date") || shanghaiDate();
 const dryRun = args.get("dry-run") === "true";

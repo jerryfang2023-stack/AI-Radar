@@ -15,6 +15,14 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(read("install-follow-builders-skill-task.ps1"), /-RuntimePath/u);
   assert.match(read("run-community-intelligence.ps1"), /LOCALAPPDATA[^\n]+WaveSight\\runtime/u);
   assert.match(read("run-follow-builders-skill.ps1"), /--output-dir=\$RuntimePath/u);
+  const controller = read("run-daily-automation-controller.mjs");
+  assert.match(controller, /run-business-signals-health-dispatch\.mjs[^]*--reports-dir=/u);
+  assert.match(controller, /assert-follow-builders-data\.mjs[^]*--reports-dir=/u);
+  assert.match(controller, /assert-community-intelligence-data\.mjs[^]*--reports-dir=/u);
+  assert.match(controller, /assert-data-center-projection-coverage\.mjs[^]*--reports-dir=/u);
+  assert.match(read("run-business-signals-health-dispatch.mjs"), /args\.get\("reports-dir"\)/u);
+  assert.match(read("assert-community-intelligence-data.mjs"), /args\.get\("reports-dir"\)/u);
+  assert.match(read("assert-data-center-projection-coverage.mjs"), /args\.get\("reports-dir"\)/u);
 });
 
 test("follow-builders generation and publication run from an isolated worktree", () => {
