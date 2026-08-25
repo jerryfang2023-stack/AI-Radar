@@ -2006,6 +2006,7 @@ test("daily workflow stages only V4-native outputs after the pre-commit gate suc
 test("daily workflow resumes downstream failures without repeating accepted collection", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
   const dispatcher = fs.readFileSync(path.join(root, "agent-workflow/tools/run-business-signals-health-dispatch.mjs"), "utf8");
+  const titleRepair = fs.readFileSync(path.join(root, "agent-workflow/tools/backfill-source-title-translations.mjs"), "utf8");
   const agentRules = fs.readFileSync(path.join(root, "AGENTS.md"), "utf8");
 
   assert.match(workflow, /resume_run_id:/u);
@@ -2019,6 +2020,10 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(dispatcher, /const requiredSteps = \[\s*"Collect source raw artifacts",\s*"Run Daily Monitor with QC",\s*\]/u);
   assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?if: always\(\)/u);
   assert.match(workflow, /Persist originals privately and enforce the public boundary[\s\S]*?\(steps\.monitor\.outcome == 'success' \|\| steps\.resume-artifact\.outputs\.used == 'true'\)/u);
+  assert.match(workflow, /Repair required source-title translations[\s\S]*backfill-source-title-translations\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*--write=true[\s\S]*normalize-source-intake-titles\.mjs --date="\$\{RUN_DATE\}"[\s\S]*assert:source-titles/u);
+  assert.match(workflow, /Run Data Center V4 integrity gate[\s\S]*steps\.source-title-repair\.outcome == 'success'/u);
+  assert.match(titleRepair, /const selectedDate = arg\("date"\)/u);
+  assert.match(titleRepair, /filter\(\(date\) => !selectedDate \|\| date === selectedDate\)/u);
   assert.match(workflow, /assert:private-evidence-backup -- --date="\$\{RUN_DATE\}"/u);
   const evidenceBoundary = workflow.indexOf("Persist originals privately and enforce the public boundary");
   const evidencePush = workflow.indexOf('git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main', evidenceBoundary);

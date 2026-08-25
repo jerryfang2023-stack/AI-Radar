@@ -21,6 +21,7 @@ const translationFile = path.join(root, "01-SiteV2", "content", "11-databases", 
 const reportRoot = path.join(root, "agent-workflow", "reports");
 const write = process.argv.includes("--write=true");
 const concurrency = Math.max(1, Math.min(6, Number(arg("concurrency", "3")) || 3));
+const selectedDate = arg("date");
 const selectedRawIds = new Set(arg("raw-ids").split(",").map((value) => value.trim()).filter(Boolean));
 
 function arg(name, fallback = "") {
@@ -41,6 +42,7 @@ function dates() {
   return fs.readdirSync(bundleRoot, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name))
     .map((entry) => entry.name)
+    .filter((date) => !selectedDate || date === selectedDate)
     .sort();
 }
 
@@ -193,6 +195,7 @@ async function main() {
   const report = {
     generated_at: new Date().toISOString(),
     mode: write ? "write" : "dry-run",
+    selected_date: selectedDate,
     dates: availableDates.length,
     event_target_raws: eventTargetRawIds.size,
     selected_raw_ids: [...selectedRawIds],

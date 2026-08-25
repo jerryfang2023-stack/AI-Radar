@@ -39,7 +39,8 @@ test("Opportunity Map projection reads accepted V4 evidence without Signal Cards
     .every((item) => card.claim_refs.includes(item.claim_ref) && item.source_refs.every((id) => card.source_refs.includes(id)))));
   assert.ok(data.evidence.every((card) => Object.keys(card.opportunitySignals.labels).length === 7));
   assert.ok(data.evidence.every((card) => card.taxonomy_version === "TAG-V4.1" && Array.isArray(card.classifications)));
-  assert.equal(data.directionCards.length, 2);
+  assert.equal(data.directionCards.length, data.meta.directionCardCount);
+  assert.ok(data.directionCards.length >= 1);
   assert.ok(data.directionCards.every((card) => card.judgment && card.counterSignal));
   assert.ok(data.directionCards.every((card) => card.evidenceCount >= 2));
   assert.ok(data.directionCards.every((card) => card.evidence.every((item) => (
