@@ -222,7 +222,7 @@ function fundingAmountMentions(value = "") {
   return [...text.matchAll(pattern)].map((match) => {
     const before = text.slice(Math.max(0, match.index - 56), match.index);
     const after = text.slice(match.index + match[0].length, match.index + match[0].length + 56);
-    const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?|valued\s+at|估值(?:达|为|约)?)\s*$/iu.test(before)
+    const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?|valued\s+at|估值(?:达到|达|为|约|超过|高达|逾|超)?)\s*$/iu.test(before)
       || /^\s*(?:pre[-\s]?money|post[-\s]?money)?\s*valuation\b/iu.test(after)
       || /^\s*估值/iu.test(after);
     const round = !valuation && (
@@ -1182,7 +1182,7 @@ export function isEligibleFundingInsightEvent(event = {}, claims = []) {
     && (!event.event_status || ["announced", "completed"].includes(event.event_status))
     && event.publication_status === "verified"
     && Boolean(event.display_title_zh)
-    && !fundingEventAmountSemantics(event, claims).excluded;
+    && Boolean(normalizeFundingAmount(canonicalFundingEventAmount(event, claims)).currency);
 }
 
 export function evidenceProblems(evidenceRefs = [], sourceById = new Map(), prefix = "evidence") {
