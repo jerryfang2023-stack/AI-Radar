@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { resolveAutomationNetworkEnv } from "./lib/automation-network-env.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -15,6 +16,7 @@ const date = args.get("date") || shanghaiDate();
 const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
 const watchdogRunner = path.join(root, "agent-workflow", "tools", "run-hermes-control-plane-watchdog.mjs");
 const heartbeatRunner = path.join(root, "agent-workflow", "tools", "publish-hermes-control-plane-heartbeat.mjs");
+const automationNetwork = await resolveAutomationNetworkEnv();
 
 function shanghaiDate(value = new Date()) {
   const parsed = value instanceof Date ? value : new Date(value);
@@ -40,6 +42,7 @@ function run(script, scriptArgs) {
     cwd: root,
     encoding: "utf8",
     windowsHide: true,
+    env: automationNetwork.env,
   });
 }
 
@@ -85,6 +88,7 @@ function main() {
     ok,
     status,
     date,
+    network_mode: automationNetwork.mode,
     watchdog: {
       exit_status: watchdog.status,
       report_valid: watchdogReportValid,

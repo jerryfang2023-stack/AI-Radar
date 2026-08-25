@@ -152,7 +152,10 @@ function runSafeRepairs(report) {
   if (hasLaneProblem(report, "community_intelligence", /gate report|missing community gate|community data date|archive|items|links/iu)
     || hasLaneWarning(report, "community_intelligence", /missing community gate/iu)) {
     if (exists("01-SiteV2/site/data/community-intelligence.json")) {
-      attempts.push(runNpm("rerun community data gate", "assert:community-intelligence", [`--date=${date}`], 120000));
+      attempts.push(runNpm("rerun community data gate", "assert:community-intelligence", [
+        `--date=${date}`,
+        `--reports-dir=${reportsDir}`,
+      ], 120000));
     }
   }
 
@@ -161,6 +164,7 @@ function runSafeRepairs(report) {
       attempts.push(runCommand("rerun first-line data gate", process.execPath, [
         "agent-workflow/tools/assert-follow-builders-data.mjs",
         `--date=${date}`,
+        `--reports-dir=${reportsDir}`,
       ], 120000));
     }
   }
@@ -171,7 +175,10 @@ function runSafeRepairs(report) {
     /Data Center V4|integrity gate|materialization|collection telemetry/iu,
   )) {
     if (exists(`01-SiteV2/content/11-databases/data-center-v4/${date}/manifest.json`)) {
-      attempts.push(runNpm("rerun Data Center V4 integrity gate", "assert:data-center", [`--date=${date}`], 120000));
+      attempts.push(runNpm("rerun Data Center V4 integrity gate", "assert:data-center", [
+        `--date=${date}`,
+        `--reports-dir=${reportsDir}`,
+      ], 120000));
       attempts.push(runNpm("rebuild collection telemetry", "build:collection-telemetry", [`--date=${date}`], 120000));
     }
   }

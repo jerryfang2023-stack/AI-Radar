@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
+import { resolveAutomationNetworkEnv } from "../lib/automation-network-env.mjs";
 
 const root = process.cwd();
 const read = (name) => fs.readFileSync(path.join(root, "agent-workflow", "tools", name), "utf8");
@@ -29,6 +30,46 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(read("run-business-signals-health-dispatch.mjs"), /args\.get\("reports-dir"\)/u);
   assert.match(read("assert-community-intelligence-data.mjs"), /args\.get\("reports-dir"\)/u);
   assert.match(read("assert-data-center-projection-coverage.mjs"), /args\.get\("reports-dir"\)/u);
+  assert.match(read("assert-data-center-v4.mjs"), /--reports-dir=/u);
+  const selfCheck = read("run-daily-self-check.mjs");
+  assert.match(selfCheck, /assert:community-intelligence[^]*--reports-dir=/u);
+  assert.match(selfCheck, /assert-follow-builders-data\.mjs[^]*--reports-dir=/u);
+  assert.match(selfCheck, /assert:data-center[^]*--reports-dir=/u);
+});
+
+test("scheduled automation bypasses loopback services and falls back from an unavailable local proxy", () => {
+  const controller = read("run-daily-automation-controller.mjs");
+  const hermes = read("run-hermes-control-plane-cycle.mjs");
+  const community = read("run-community-intelligence.ps1");
+  const followBuilders = read("run-follow-builders-skill.ps1");
+  const network = read("Set-WaveSightAutomationNetwork.ps1");
+  assert.match(controller, /resolveAutomationNetworkEnv/u);
+  assert.match(controller, /env: automationNetwork\.env/u);
+  assert.match(hermes, /resolveAutomationNetworkEnv/u);
+  assert.match(hermes, /env: automationNetwork\.env/u);
+  assert.match(community, /Set-WaveSightAutomationNetwork\.ps1/u);
+  assert.match(followBuilders, /Set-WaveSightAutomationNetwork\.ps1/u);
+  assert.match(network, /localhost[^]*127\.0\.0\.1[^]*::1/u);
+  assert.match(network, /using direct fallback for this run/u);
+});
+
+test("network preflight removes only unavailable loopback proxies", async () => {
+  const fallback = await resolveAutomationNetworkEnv({
+    HTTP_PROXY: "http://127.0.0.1:8889",
+    HTTPS_PROXY: "https://proxy.example.com:443",
+    NO_PROXY: "internal.example.com",
+  }, { canConnect: async () => false });
+  assert.equal(fallback.mode, "direct_fallback");
+  assert.equal(fallback.env.HTTP_PROXY, undefined);
+  assert.equal(fallback.env.HTTPS_PROXY, "https://proxy.example.com:443");
+  assert.match(fallback.env.NO_PROXY, /internal\.example\.com/u);
+  assert.match(fallback.env.NO_PROXY, /127\.0\.0\.1/u);
+
+  const configured = await resolveAutomationNetworkEnv({
+    ALL_PROXY: "socks5://localhost:8889",
+  }, { canConnect: async () => true });
+  assert.equal(configured.mode, "configured");
+  assert.equal(configured.env.ALL_PROXY, "socks5://localhost:8889");
 });
 
 test("follow-builders generation and publication run from an isolated worktree", () => {
