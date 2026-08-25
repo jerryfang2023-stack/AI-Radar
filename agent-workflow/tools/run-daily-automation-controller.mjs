@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
+import { resolveAutomationNetworkEnv } from "./lib/automation-network-env.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -18,6 +19,7 @@ const date = args.get("date") || shanghaiDate();
 const dryRun = args.get("dry-run") === "true";
 const invokeCodex = args.get("invoke-codex") !== "false";
 const codexCommand = args.get("codex-command") || "codex";
+const automationNetwork = await resolveAutomationNetworkEnv();
 
 function shanghaiDate(value = new Date()) {
   const parsed = value instanceof Date ? value : new Date(value);
@@ -41,6 +43,7 @@ function run(label, command, commandArgs, timeoutMs = 180_000) {
     encoding: "utf8",
     timeout: timeoutMs,
     windowsHide: true,
+    env: automationNetwork.env,
   });
   return {
     label,
@@ -358,6 +361,7 @@ function main() {
     date,
     generated_at: new Date().toISOString(),
     dry_run: dryRun,
+    network_mode: automationNetwork.mode,
   };
   const report = writeReport(payload);
   console.log(JSON.stringify({
