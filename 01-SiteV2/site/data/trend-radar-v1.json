@@ -7,7 +7,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T03:24:55.854Z",
+    "generatedAt": "2026-08-25T04:10:39.853Z",
     "latestDataDate": "2026-08-25",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -57,104 +57,7 @@
         "General Intuition"
       ],
       "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "models",
-          "name": "模型",
-          "entityIds": [
-            "EN-dc8a5a5bf80909de"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-72b4280cd95a1364",
-          "fundingInsightId": "FI-faa30215c8e3ef73"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-dc8a5a5bf80909de"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-2366881767f5d2bd",
-          "fundingInsightId": "FI-faa30215c8e3ef73"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "development_deployment",
-          "name": "开发与部署",
-          "entityIds": [
-            "EN-dc8a5a5bf80909de"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-d559542b9563ef38",
-          "fundingInsightId": "FI-faa30215c8e3ef73"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "automotive_transportation",
-          "name": "汽车与交通",
-          "entityIds": [
-            "EN-dc8a5a5bf80909de"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-dc70840451b89958",
-          "fundingInsightId": "FI-faa30215c8e3ef73"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-dc8a5a5bf80909de"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-fb2c4aed6b3b2e5c",
-          "fundingInsightId": "FI-faa30215c8e3ef73"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-dc8a5a5bf80909de"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-49743434cc1864af",
-          "fundingInsightId": "FI-faa30215c8e3ef73"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-dc8a5a5bf80909de"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-bff13027dd4dd376",
-          "fundingInsightId": "FI-faa30215c8e3ef73"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-dc8a5a5bf80909de"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-141cf0e4b41f2ad7",
-          "fundingInsightId": "FI-faa30215c8e3ef73"
-        }
-      ],
+      "classifications": [],
       "claimIds": [
         "CL-8ca2ee2a323b799e",
         "CL-5385d0d79ca8171e"
@@ -160544,7 +160447,6 @@
                 "id": "infrastructure_compute",
                 "name": "基础设施与算力",
                 "eventIds": [
-                  "EV-4a3fa2b57b7ce64a",
                   "EV-259566f35ea4f66d",
                   "EV-19dd4c3a5dd5a94b",
                   "EV-1bc31f98fa3e34cc",
@@ -160586,7 +160488,7 @@
                   "EV-e9d06e8a06aa7318",
                   "EV-00514c4ffc2e3cd3"
                 ],
-                "count": 41
+                "count": 40
               },
               {
                 "id": "physical_ai",
@@ -160675,7 +160577,6 @@
                 "id": "development_deployment",
                 "name": "开发与部署",
                 "eventIds": [
-                  "EV-4a3fa2b57b7ce64a",
                   "EV-f5dd6dec49ad83aa",
                   "EV-cca4bd983a16b8d9",
                   "EV-55e7c286e95be405",
@@ -160685,7 +160586,7 @@
                   "EV-88a984b765bb54f1",
                   "EV-00514c4ffc2e3cd3"
                 ],
-                "count": 9
+                "count": 8
               },
               {
                 "id": "data",
@@ -160811,20 +160712,6 @@
                 "count": 11
               },
               {
-                "id": "models",
-                "name": "模型",
-                "eventIds": [
-                  "EV-4a3fa2b57b7ce64a",
-                  "EV-f5dd6dec49ad83aa",
-                  "EV-55e7c286e95be405",
-                  "EV-535c2f4fb851332d",
-                  "EV-56da7cceeebc8bcf",
-                  "EV-88a984b765bb54f1",
-                  "EV-00514c4ffc2e3cd3"
-                ],
-                "count": 7
-              },
-              {
                 "id": "data_preparation_curation",
                 "name": "数据准备与整理",
                 "eventIds": [
@@ -160851,6 +160738,19 @@
                   "EV-e0a31302688c81ec"
                 ],
                 "count": 7
+              },
+              {
+                "id": "models",
+                "name": "模型",
+                "eventIds": [
+                  "EV-f5dd6dec49ad83aa",
+                  "EV-55e7c286e95be405",
+                  "EV-535c2f4fb851332d",
+                  "EV-56da7cceeebc8bcf",
+                  "EV-88a984b765bb54f1",
+                  "EV-00514c4ffc2e3cd3"
+                ],
+                "count": 6
               },
               {
                 "id": "model_agent_security",
@@ -160911,7 +160811,6 @@
                 "eventIds": [
                   "EV-192e130ac1abefdf",
                   "EV-4927409c0f4b3ef3",
-                  "EV-4a3fa2b57b7ce64a",
                   "EV-caffb8981cecae2f",
                   "EV-d93dd19a481307ec",
                   "EV-b613937b7bc1ea64",
@@ -160969,7 +160868,7 @@
                   "EV-8f2787ceb5224cc9",
                   "EV-ebd76d18d3f0ee7b"
                 ],
-                "count": 59
+                "count": 58
               },
               {
                 "id": "chip_accelerator",
@@ -161532,7 +161431,6 @@
                 "id": "physical_automation",
                 "name": "物理自动化",
                 "eventIds": [
-                  "EV-4a3fa2b57b7ce64a",
                   "EV-b4a9bdd7e93ce89f",
                   "EV-1fe1613825cae718",
                   "EV-435ad78c9ec50025",
@@ -161568,7 +161466,7 @@
                   "EV-ee38c30c00b2a754",
                   "EV-eb12fb9dd08e5aad"
                 ],
-                "count": 35
+                "count": 34
               },
               {
                 "id": "software_development",
@@ -161786,7 +161684,6 @@
                 "name": "制造业",
                 "eventIds": [
                   "EV-1e6f73c188a9e946",
-                  "EV-4a3fa2b57b7ce64a",
                   "EV-1bc31f98fa3e34cc",
                   "EV-ac069339ca20e4c6",
                   "EV-b231e1a452a7c74a",
@@ -161830,7 +161727,7 @@
                   "EV-e59938ae531af428",
                   "EV-8f1b01897707b941"
                 ],
-                "count": 44
+                "count": 43
               },
               {
                 "id": "retail_ecommerce",
@@ -161909,28 +161806,6 @@
                 "count": 15
               },
               {
-                "id": "automotive_transportation",
-                "name": "汽车与交通",
-                "eventIds": [
-                  "EV-4a3fa2b57b7ce64a",
-                  "EV-1bc31f98fa3e34cc",
-                  "EV-b116eafe60d71fbe",
-                  "EV-e70a48e36e99d57a",
-                  "EV-1765fd690cff1cac",
-                  "EV-7d9f5f58066c65f9",
-                  "EV-2dea56b0e97c1685",
-                  "EV-4d2183d4275ea9cf",
-                  "EV-1188b1585b835fe1",
-                  "EV-3a591b0f027f66cf",
-                  "EV-44ec7c229995ca3c",
-                  "EV-499a62114b0fd616",
-                  "EV-794f921515af8e8b",
-                  "EV-e0a31302688c81ec",
-                  "EV-e59938ae531af428"
-                ],
-                "count": 15
-              },
-              {
                 "id": "telecommunications",
                 "name": "电信",
                 "eventIds": [
@@ -161948,6 +161823,27 @@
                   "EV-794f921515af8e8b",
                   "EV-7a44a47bf36780d2",
                   "EV-e0a31302688c81ec"
+                ],
+                "count": 14
+              },
+              {
+                "id": "automotive_transportation",
+                "name": "汽车与交通",
+                "eventIds": [
+                  "EV-1bc31f98fa3e34cc",
+                  "EV-b116eafe60d71fbe",
+                  "EV-e70a48e36e99d57a",
+                  "EV-1765fd690cff1cac",
+                  "EV-7d9f5f58066c65f9",
+                  "EV-2dea56b0e97c1685",
+                  "EV-4d2183d4275ea9cf",
+                  "EV-1188b1585b835fe1",
+                  "EV-3a591b0f027f66cf",
+                  "EV-44ec7c229995ca3c",
+                  "EV-499a62114b0fd616",
+                  "EV-794f921515af8e8b",
+                  "EV-e0a31302688c81ec",
+                  "EV-e59938ae531af428"
                 ],
                 "count": 14
               },
@@ -162177,7 +162073,6 @@
                 "id": "developer",
                 "name": "开发者",
                 "eventIds": [
-                  "EV-4a3fa2b57b7ce64a",
                   "EV-259566f35ea4f66d",
                   "EV-19dd4c3a5dd5a94b",
                   "EV-1bc31f98fa3e34cc",
@@ -162222,7 +162117,7 @@
                   "EV-e9d06e8a06aa7318",
                   "EV-00514c4ffc2e3cd3"
                 ],
-                "count": 44
+                "count": 43
               },
               {
                 "id": "consumer",

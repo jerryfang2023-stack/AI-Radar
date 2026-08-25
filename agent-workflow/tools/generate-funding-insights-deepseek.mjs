@@ -397,7 +397,7 @@ async function researchSources(bundle, event, company) {
     companyKey.length >= 4
     && host.replace(/[^\p{L}\p{N}]+/gu, "").includes(companyKey)
   )) || "";
-  const amountHint = canonicalFundingEventAmount(event);
+  const amountHint = canonicalFundingEventAmount(event, bundle.claims);
   const identityHint = clean(captured[0]?.title_original || event.object || event.display_title_zh);
   const describedSubject = clean(identityHint.match(/^(.{2,50}?)(?:\s+开发商|\s+(?:maker|creator|developer)\b)/iu)?.[1]);
   const identitySubject = describedSubject.replace(/([a-z0-9])([A-Z])/gu, "$1 $2");
@@ -665,6 +665,7 @@ function fundingHistory(companyId) {
   for (const entry of fs.readdirSync(dataRoot, { withFileTypes: true })) {
     if (!entry.isDirectory() || !/^\d{4}-\d{2}-\d{2}$/u.test(entry.name)) continue;
     const events = readJson(path.join(dataRoot, entry.name, "canonical-events.json"), []);
+    const claims = readJson(path.join(dataRoot, entry.name, "claims.json"), []);
     for (const event of events) {
       if (event.event_type !== "funding" || !(event.entities || []).includes(companyId) || seen.has(event.event_id)) continue;
       seen.add(event.event_id);
@@ -672,7 +673,7 @@ function fundingHistory(companyId) {
         event_id: event.event_id,
         date: String(event.event_time || event.disclosed_at || "").slice(0, 10),
         title: event.display_title_zh,
-        amount: canonicalFundingEventAmount(event),
+        amount: canonicalFundingEventAmount(event, claims),
         source_refs: event.source_refs || [],
       });
     }
@@ -881,7 +882,7 @@ async function main() {
     .filter((card) => (card.research_sources || []).some((source) => source.source_class === "canonical_event_source"))
     .filter((card) => {
       const event = eventById.get(card.triggered_by_event_id);
-      const canonicalAmount = canonicalFundingEventAmount(event);
+      const canonicalAmount = canonicalFundingEventAmount(event, bundle.claims);
       const eventAmount = normalizeFundingAmount(canonicalAmount);
       return !canonicalAmount
         || !eventAmount.currency
@@ -908,7 +909,7 @@ async function main() {
   }
   // Keep eligibility in lockstep with the inspector: a verified announced
   // disclosure is publishable even before the event is marked completed.
-  let eligibleEvents = bundle.events.filter(isEligibleFundingInsightEvent);
+  let eligibleEvents = bundle.events.filter((event) => isEligibleFundingInsightEvent(event, bundle.claims));
   const eligibleEventIds = new Set(eligibleEvents.map((event) => event.event_id));
   const missingEventIds = [...eventIds].filter((id) => !eligibleEventIds.has(id));
   if (missingEventIds.length) throw new Error(`funding_event_not_found:${missingEventIds.join(",")}`);

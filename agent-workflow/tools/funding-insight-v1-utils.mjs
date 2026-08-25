@@ -216,8 +216,56 @@ export function normalizeFundingAmount(value = "") {
   };
 }
 
-export function canonicalFundingEventAmount(event = {}) {
+function fundingAmountMentions(value = "") {
+  const text = clean(value).normalize("NFKC");
+  const pattern = /(?:[$€£¥￥]\s*\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?|\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?\s*(?:美元|美金|人民币|元人民币|欧元|英镑|日元|USD|CNY|RMB|EUR|GBP|JPY))/giu;
+  return [...text.matchAll(pattern)].map((match) => {
+    const before = text.slice(Math.max(0, match.index - 56), match.index);
+    const after = text.slice(match.index + match[0].length, match.index + match[0].length + 56);
+    const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?|valued\s+at|估值(?:达到|达|为|约|超过|高达|逾|超)?)\s*$/iu.test(before)
+      || /^\s*(?:pre[-\s]?money|post[-\s]?money)?\s*valuation\b/iu.test(after)
+      || /^\s*估值/iu.test(after);
+    const round = !valuation && (
+      /(?:融资|筹集|募资|raises?|raised|raising|secured|funding\s+round|round\s+of)[^。！？.!?]{0,48}$/iu.test(before)
+      || /^\s*(?:融资|funding\s+round|round)\b/iu.test(after)
+    );
+    return { raw: clean(match[0]), valuation, round };
+  });
+}
+
+function fundingEventAmountSemantics(event = {}, claims = []) {
+  const claimIds = new Set(event.claim_refs || []);
+  const claimTexts = claims
+    .filter((claim) => claimIds.has(claim.claim_id))
+    .filter((claim) => claim.claim_type === "funding" && claim.verification_status === "accepted")
+    .flatMap((claim) => [claim.object, claim.source_quote])
+    .map(clean)
+    .filter(Boolean);
+  const texts = [event.display_title_zh, event.object, ...claimTexts].map(clean).filter(Boolean);
+  const preliminary = texts.some((text) => (
+    /\bin talks\b|\btalking to\b|\b(?:seeking to|plans? to|aims? to|looking to|would)\s+(?:raise|secure)\b|拟融资|计划融资|寻求融资|融资洽谈|正在洽谈|正在谈判/iu.test(text)
+  ));
+  const mentions = texts.flatMap(fundingAmountMentions);
+  const roundMention = mentions.find((mention) => mention.round);
   const metrics = (event.metrics || []).map(clean).filter(Boolean);
+  const roundAmount = roundMention
+    ? metrics.find((metric) => fundingAmountsEquivalent(metric, roundMention.raw)) || roundMention.raw
+    : "";
+  return {
+    excluded: preliminary || (!roundAmount && mentions.some((mention) => mention.valuation)),
+    roundAmount,
+  };
+}
+
+export function canonicalFundingEventAmount(event = {}, claims = []) {
+  const metrics = (event.metrics || []).map(clean).filter(Boolean);
+  const semantics = fundingEventAmountSemantics(event, claims);
+  // A valuation is not round proceeds. Canonical feeds can put a valuation in
+  // metrics[0] or reverse the order of round amount and valuation. Select the
+  // amount whose own local context describes proceeds; preliminary disclosures
+  // and valuation-only disclosures never manufacture a round amount.
+  if (semantics.excluded) return "";
+  if (semantics.roundAmount) return semantics.roundAmount;
   if (!metrics.length) return "";
   const primary = metrics[0];
   const truncated = primary.normalize("NFKC").match(/^([$€£¥￥])\s*(\d{1,3})$/u);
@@ -1129,11 +1177,12 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   return candidates[0].entity;
 }
 
-export function isEligibleFundingInsightEvent(event = {}) {
+export function isEligibleFundingInsightEvent(event = {}, claims = []) {
   return event.event_type === "funding"
     && (!event.event_status || ["announced", "completed"].includes(event.event_status))
     && event.publication_status === "verified"
-    && Boolean(event.display_title_zh);
+    && Boolean(event.display_title_zh)
+    && Boolean(normalizeFundingAmount(canonicalFundingEventAmount(event, claims)).currency);
 }
 
 export function evidenceProblems(evidenceRefs = [], sourceById = new Map(), prefix = "evidence") {
@@ -1330,7 +1379,7 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
       break;
     }
   }
-  const eventAmount = canonicalFundingEventAmount(event);
+  const eventAmount = canonicalFundingEventAmount(event, bundle.claims || []);
   const suppliedAmount = clean(payload.financing.amount);
   const eventNormalized = normalizeFundingAmount(eventAmount);
   const suppliedNormalized = normalizeFundingAmount(suppliedAmount);
@@ -1620,7 +1669,7 @@ export function fundingInsightProblems(card = {}) {
   return [...new Set(problems)];
 }
 
-export function verifiedFundingEventCardCoverageProblems(events = [], cards = [], queue = []) {
+export function verifiedFundingEventCardCoverageProblems(events = [], cards = [], queue = [], claims = []) {
   const coveredEventIds = new Set(
     cards
       .filter((card) => (
@@ -1635,9 +1684,7 @@ export function verifiedFundingEventCardCoverageProblems(events = [], cards = []
   }
   return [...new Set(
     events
-      .filter((event) => event.event_type === "funding")
-      .filter((event) => event.publication_status === "verified")
-      .filter((event) => event.display_title_zh)
+      .filter((event) => isEligibleFundingInsightEvent(event, claims))
       .map((event) => event.event_id)
       .filter(Boolean),
   )]
