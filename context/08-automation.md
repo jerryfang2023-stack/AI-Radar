@@ -1,7 +1,7 @@
 ---
 status: current
 scope: site-v4-automation
-last_updated: 2026-08-24
+last_updated: 2026-08-25
 priority: current
 ---
 
@@ -86,6 +86,14 @@ same report to Codex. When repair is necessary, Codex receives a clean isolated
 worktree based on `origin/main`, so unrelated local edits are preserved and never
 treated as repair input.
 
+Every Windows automation entry also normalizes its process network environment
+before invoking GitHub, Codex, collection, or publication commands. Loopback
+hosts remain in `NO_PROXY`; when a configured loopback proxy is not listening,
+that run removes only the unavailable proxy variables and continues in bounded
+direct-fallback mode. The user or machine proxy configuration is never rewritten.
+This prevents a stopped local proxy from turning every independent daily lane
+into the same false infrastructure failure.
+
 The daily controller must propagate its resolved runtime report directory to
 every child health or gate command. Business Signals health dispatch,
 First-Line Viewpoints recovery, Community Intelligence recovery, and Data Center
@@ -116,6 +124,12 @@ are removed. The primary `main` worktree is fast-forwarded only after publicatio
 and only when it was already clean. The task must never generate its owned
 viewpoint, frontstage, or report files in the primary worktree before the accepted
 PR reaches `main`.
+
+The Community Intelligence publisher follows the same repository/runtime
+boundary. Collection and quality reports are written under the resolved runtime
+report directory; only the lane-owned daily content, manifest, and frontstage
+outputs may be staged into its publication PR. A retry must not dirty the primary
+worktree with gate or publish diagnostics.
 
 Final Closure also rebuilds and gates the local V4 JSONL/DuckDB serving layer.
 This refresh is part of the existing task and must not be installed as a
@@ -167,6 +181,15 @@ procurement values cannot become funding merely because the article body
 mentions hardware financing. Newly discovered company/product entities remain
 outside the public Entity Index until an accepted catalog-review decision
 exists.
+
+If a same-date Business Signals run has already accepted source collection but a
+downstream gate fails, recovery restores the immutable workflow artifact and
+skips both collection steps. Required source-title repair is date-bounded and
+runs before the V4 integrity gate; approved cached translations and equivalent
+numeric expressions such as `double` / `翻倍` must pass the same protected-fact
+validator. Opportunity Map gates compare the emitted direction-card count with
+the artifact metadata and require at least one current rolling-window card rather
+than assuming a fixed historical count.
 
 Funding publication must persist taxonomy decisions with
 `classify:funding-taxonomy-v4.1 -- --write=true`. Both the Business Signals
