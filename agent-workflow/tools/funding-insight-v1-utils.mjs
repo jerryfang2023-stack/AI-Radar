@@ -216,10 +216,25 @@ export function normalizeFundingAmount(value = "") {
   };
 }
 
+function fundingEventDescribesValuationOnly(event = {}) {
+  const object = clean(event.object);
+  const title = clean(event.display_title_zh);
+  const objectIsValuationOnly = /(?:pre[-\s]?money|post[-\s]?money)\s+valuation|估值/iu.test(object)
+    && !/(?:融资|筹集|募资|raises?|raised|raising|secured|funding\s+round|round\s+of)/iu.test(object);
+  const titleDisclosesRoundAmount = /(?:融资|筹集|募资|raises?|raised|raising|secured|funding\s+round|round\s+of)/iu.test(title);
+  return objectIsValuationOnly && !titleDisclosesRoundAmount;
+}
+
 export function canonicalFundingEventAmount(event = {}) {
   const metrics = (event.metrics || []).map(clean).filter(Boolean);
   if (!metrics.length) return "";
   const primary = metrics[0];
+  // A valuation is not round proceeds. Canonical feeds can put a valuation in
+  // metrics[0] (for example, "$6 billion pre-money valuation") even when the
+  // underlying article only says the company is in talks. Do not manufacture a
+  // financing amount from that shape. A title that separately discloses a
+  // financing amount keeps mixed "raised X at valuation Y" events eligible.
+  if (fundingEventDescribesValuationOnly(event)) return "";
   const truncated = primary.normalize("NFKC").match(/^([$€£¥￥])\s*(\d{1,3})$/u);
   if (!truncated) return primary;
   const expanded = metrics.slice(1).find((candidate) => {
@@ -1133,7 +1148,8 @@ export function isEligibleFundingInsightEvent(event = {}) {
   return event.event_type === "funding"
     && (!event.event_status || ["announced", "completed"].includes(event.event_status))
     && event.publication_status === "verified"
-    && Boolean(event.display_title_zh);
+    && Boolean(event.display_title_zh)
+    && !fundingEventDescribesValuationOnly(event);
 }
 
 export function evidenceProblems(evidenceRefs = [], sourceById = new Map(), prefix = "evidence") {
@@ -1635,9 +1651,7 @@ export function verifiedFundingEventCardCoverageProblems(events = [], cards = []
   }
   return [...new Set(
     events
-      .filter((event) => event.event_type === "funding")
-      .filter((event) => event.publication_status === "verified")
-      .filter((event) => event.display_title_zh)
+      .filter(isEligibleFundingInsightEvent)
       .map((event) => event.event_id)
       .filter(Boolean),
   )]

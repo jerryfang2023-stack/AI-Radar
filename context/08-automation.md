@@ -40,6 +40,12 @@ candidate Markdown are no longer written. Immutable original snapshots remain.
 - Report generation remains independent from Opportunity Map generation.
 - FDE/Hardware sync depends on V4 integrity/materialization, never V3 gates.
 
+Funding Insights additionally requires a disclosed round amount. A valuation-only
+object, including a pre-money or post-money valuation, is not financing proceeds
+and remains in the Data Center unless the event title separately discloses the
+round amount. When a source card is withdrawn, write-mode taxonomy maintenance
+must also prune its stale derived decision before rebuilding projections.
+
 ## Recovery
 
 Health dispatch reads the V4 manifest and `COLLECTION-TELEMETRY-V1.0`. An

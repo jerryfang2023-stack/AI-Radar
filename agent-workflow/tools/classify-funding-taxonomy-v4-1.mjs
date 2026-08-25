@@ -387,12 +387,15 @@ function applyDecisions(ledger) {
 const inputs = loadEventInputs();
 let ledger = readJson(decisionPath, null);
 const ledgerEventIds = new Set((ledger?.decisions || []).map((decision) => decision.event_id));
+const inputEventIds = new Set(inputs.map((input) => input.event_id));
 const incrementalInputs = inputs.filter((input) => !ledgerEventIds.has(input.event_id));
+const staleLedgerDecisions = (ledger?.decisions || []).filter((decision) => !inputEventIds.has(decision.event_id));
 if (
   !ledger
   || !Array.isArray(ledger.decisions)
   || args.get("refresh") === "true"
   || (write && incrementalInputs.length)
+  || (write && staleLedgerDecisions.length)
 ) {
   const inputHash = sourceTextHash(JSON.stringify(inputs));
   const overrideLedger = readJson(overridePath, { decisions: [] });

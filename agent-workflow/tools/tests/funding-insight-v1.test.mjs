@@ -126,6 +126,34 @@ test("canonical funding amount repairs a truncated K metric from the complete ev
   assert.equal(canonicalFundingEventAmount({ metrics: ["$800K", "$800,000"] }), "$800K");
 });
 
+test("valuation-only fundraising talks cannot become a financing amount", () => {
+  const event = {
+    event_type: "funding",
+    event_status: "announced",
+    publication_status: "verified",
+    display_title_zh: "Valor、Point72投资General Intuition，估值达60亿美元",
+    object: "$6 billion pre-money valuation",
+    metrics: ["$6 billion", "$320 million", "$2.3 billion"],
+  };
+
+  assert.equal(canonicalFundingEventAmount(event), "");
+  assert.equal(isEligibleFundingInsightEvent(event), false);
+});
+
+test("a disclosed financing amount remains eligible when valuation is also reported", () => {
+  const event = {
+    event_type: "funding",
+    event_status: "announced",
+    publication_status: "verified",
+    display_title_zh: "Higgsfield 融资 4 亿美元，估值达 54 亿美元",
+    object: "4 亿美元，估值达 54 亿美元",
+    metrics: ["4 亿美元", "54 亿美元"],
+  };
+
+  assert.equal(canonicalFundingEventAmount(event), "4 亿美元");
+  assert.equal(isEligibleFundingInsightEvent(event), true);
+});
+
 test("funding research prompt enumerates every governed taxonomy list ID", () => {
   const prompt = promptFor(
     { event_id: "EV-1", display_title_zh: "示例融资", event_time: "2026-08-01", action: "融资", object: "A 轮", metrics: ["$10M"] },
