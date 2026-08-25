@@ -206,6 +206,7 @@ function normalizeComparableScales(value) {
   const englishNumbers = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
   const chineseNumbers = { 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 };
   return String(value || "")
+    .replace(/翻(?:一)?倍|翻一番/gu, " 2 ")
     .replace(/\b(?:doubles?|doubled)\b/giu, " 2 ")
     .replace(/\b(?:triples?|tripled)\b/giu, " 3 ")
     .replace(/\b(?:quadruples?|quadrupled)\b/giu, " 4 ")

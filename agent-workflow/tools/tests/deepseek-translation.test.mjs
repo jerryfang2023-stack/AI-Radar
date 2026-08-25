@@ -94,6 +94,8 @@ test("preserves multiplier words and scaled non-money counts", () => {
   assert.equal(sourceTitleFactsPreserved("improves reliability 20x", "将可靠性提升 20 倍"), true);
   assert.equal(sourceTitleFactsPreserved("serves 1.6 million residents", "服务 160 万居民"), true);
   assert.equal(sourceTitleFactsPreserved("matches models five times its size", "媲美其规模五倍的模型"), true);
+  assert.equal(sourceTitleFactsPreserved("double the performance", "性能翻倍"), true);
+  assert.equal(sourceTitleFactsPreserved("double the performance", "性能翻一番"), true);
 });
 
 test("isolates translations when both model passes omit protected facts", async () => {
