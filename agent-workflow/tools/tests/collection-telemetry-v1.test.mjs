@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { buildCollectionTelemetry, OPS_VERSION } from "../lib/collection-telemetry-v1.mjs";
+import { buildOpsSourceQuality } from "../lib/ops-source-quality.mjs";
 import { finalizeOpsPublicationData } from "../finalize-ops-publication-for-pages.mjs";
 
 function writeJson(root, relative, data) {
@@ -115,12 +116,71 @@ test("operations console renders the four V4 production stages instead of the V3
   assert.doesNotMatch(client, /row\("Raw"[\s\S]*row\("Pool"[\s\S]*row\("Cards"/u);
   assert.doesNotMatch(client, />RAW<|>POOL<|>CARDS</u);
   assert.match(client, />SOURCES<[\s\S]*>CLAIMS<[\s\S]*>EVENTS</u);
+  assert.match(client, /const pct =/u);
+  assert.match(client, /quality\.sourceQuality\?\.rows/u);
   const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "01-SiteV2/site/data/ops-console.json"), "utf8"));
+  assert.deepEqual(
+    data.quality?.sourceQuality?.rows?.map((item) => item.id),
+    ["aihot", "rss-feed", "keyword-search", "gdelt"],
+  );
   const publishedIssues = [...(data.inbox?.open || []), ...(data.inbox?.resolved || [])];
   assert.equal(
     publishedIssues.some((item) => item.laneId === "business_signals" && item.state === "resolved" && item.date < "2026-07-29"),
     false,
   );
+});
+
+test("operations console source quality keeps per-channel V4 values and diagnostic grades", () => {
+  const quality = buildOpsSourceQuality({
+    rawDocuments: [
+      {
+        raw_id: "RAW-1",
+        source_artifact_id: "SA-1",
+        intake_diagnostics: {
+          acquisition_channel: "aihot",
+          eligible_for_v4_extraction: true,
+          has_full_text: true,
+          extraction_quality: "high",
+          readability_score: 90,
+        },
+      },
+      {
+        raw_id: "RAW-2",
+        source_artifact_id: "SA-2",
+        intake_diagnostics: {
+          acquisition_channel: "gdelt",
+          eligible_for_v4_extraction: false,
+          has_full_text: false,
+          extraction_quality: "low",
+          readability_score: 20,
+        },
+      },
+    ],
+    claims: [
+      { raw_id: "RAW-1", verification_status: "accepted" },
+      { raw_id: "RAW-2", verification_status: "rejected" },
+    ],
+    canonicalEvents: [{ source_refs: ["SA-1"] }],
+  });
+
+  assert.deepEqual(quality.rows.map((row) => row.id), ["aihot", "gdelt"]);
+  assert.deepEqual(quality.rows[0], {
+    id: "aihot",
+    label: "AI HOT",
+    total: 1,
+    eligibleRate: 100,
+    fullTextRate: 100,
+    highQualityRate: 100,
+    readabilityScore: 90,
+    factHitRate: 100,
+    acceptedClaims: 1,
+    canonicalEvents: 1,
+    score: 99,
+    grade: "优",
+  });
+  assert.equal(quality.rows[1].score, 3);
+  assert.equal(quality.rows[1].grade, "待改善");
+  assert.match(quality.metricNote, /不参与来源准入、排序或事实门禁/u);
 });
 
 test("Pages artifact finalization marks publication passed with deployment evidence", () => {

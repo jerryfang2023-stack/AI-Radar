@@ -20,6 +20,7 @@
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+  const pct = (value) => Number.isFinite(Number(value)) ? `${Math.round(Number(value))}%` : "-";
   const list = (value) => Array.isArray(value) ? value : [];
 
   function setPanel(id) {
@@ -231,13 +232,28 @@
       const facts = quality.telemetry?.factBuild || {};
       const discovered = Number(collection.discovered || 0);
       const captured = Number(collection.capture_succeeded || 0);
-      sourceQuality.innerHTML = [
-        row("发现", discovered, 100),
-        row("抓取成功", captured, discovered ? captured / discovered * 100 : 0),
-        row("抓取失败", collection.capture_failed || 0, Math.min(100, Number(collection.capture_failed || 0) * 20)),
-        row("Accepted Claims", facts.accepted_claims || 0, facts.accepted_claims ? 100 : 0),
-        row("QA Queue", facts.qa_queue || 0, Math.min(100, Number(facts.qa_queue || 0))),
-      ].join("");
+      const sourceRows = list(quality.sourceQuality?.rows);
+      const summary = `<div class="source-summary">
+        <span>发现<b>${html(discovered)}</b></span>
+        <span>抓取成功<b>${html(captured)}</b></span>
+        <span>抓取失败<b>${html(collection.capture_failed || 0)}</b></span>
+        <span>Accepted Claims<b>${html(facts.accepted_claims || 0)}</b></span>
+        <span>QA Queue<b>${html(facts.qa_queue || 0)}</b></span>
+      </div>`;
+      const detail = sourceRows.length ? sourceRows.map((item) => `
+        <div class="source-row">
+          <div class="source-name"><strong>${html(item.label || item.id)}</strong><em>${html(item.acceptedClaims || 0)} Claims · ${html(item.canonicalEvents || 0)} Events</em></div>
+          <div class="mini-kpi"><span>样本量</span><b>${html(item.total || 0)}</b></div>
+          <div class="mini-kpi"><span>可用率</span><b>${html(pct(item.eligibleRate))}</b></div>
+          <div class="mini-kpi"><span>全文率</span><b>${html(pct(item.fullTextRate))}</b></div>
+          <div class="mini-kpi"><span>高质提取</span><b>${html(pct(item.highQualityRate))}</b></div>
+          <div class="mini-kpi"><span>事实命中</span><b>${html(pct(item.factHitRate))}</b></div>
+          <div class="score-pill" title="诊断质量分，不参与来源准入或事实门禁">${html(item.grade)} · ${html(item.score)}</div>
+        </div>`).join("") : `<div class="empty">未读取到逐来源 V4 质量数据。</div>`;
+      const note = quality.sourceQuality?.metricNote
+        ? `<p class="source-quality-note">${html(quality.sourceQuality.metricNote)}</p>`
+        : "";
+      sourceQuality.innerHTML = `${summary}${detail}${note}`;
     }
     const matrix = $("[data-asset-matrix]");
     if (matrix) {

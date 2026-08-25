@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { isProductionIncidentFilename } from "./incident-filename-utils.mjs";
+import { buildOpsSourceQuality } from "./lib/ops-source-quality.mjs";
 
 const root = process.cwd();
 const VERSION = "OPS-V2.0.0-v4-telemetry";
@@ -303,6 +304,17 @@ const openIssues = allIssues.filter((item) => item.state !== "resolved");
 const resolvedIssues = allIssues.filter((item) => item.state === "resolved");
 const latestDay = pipeline.latest || (pipeline.days || [])[0] || {};
 const dailyDate = telemetry.meta?.data_date || supervision.date || latestDay.date || latestDay.label || "";
+const dailyBundle = dailyDate
+  ? `01-SiteV2/content/11-databases/data-center-v4/${dailyDate}`
+  : "";
+const sourceIntake = dailyDate
+  ? readJson(`01-SiteV2/content/11-databases/data-center-v4/intake-v1/${dailyDate}.json`, {})
+  : {};
+const sourceQuality = buildOpsSourceQuality({
+  rawDocuments: sourceIntake.raw_documents || [],
+  claims: dailyBundle ? readJson(`${dailyBundle}/claims.json`, []) : [],
+  canonicalEvents: dailyBundle ? readJson(`${dailyBundle}/canonical-events.json`, []) : [],
+});
 
 const data = {
   meta: {
@@ -369,7 +381,7 @@ const data = {
     latest: latestDay,
     totals: pipeline.totals || {},
     days: (pipeline.days || []).slice(0, 7),
-    engineQuality: pipeline.engineQuality || {},
+    sourceQuality,
   },
   governance: {
     versions: parseVersionLedger(),

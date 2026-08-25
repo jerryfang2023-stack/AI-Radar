@@ -232,13 +232,17 @@
     .day-numbers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 10px 0; }
     .day-numbers span { padding: 8px; border-radius: 8px; background: rgba(247, 244, 239, .72); color: var(--muted); font-size: 11px; line-height: 16px; font-weight: 700; letter-spacing: .06em; }
     .day-numbers b { display: block; margin-top: 4px; color: var(--ink); font-family: var(--mono); font-size: 18px; letter-spacing: 0; }
+    .source-summary { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+    .source-summary span { padding: 8px 10px; border-radius: 8px; background: rgba(247, 244, 239, .72); color: var(--muted); font-size: 11px; line-height: 16px; font-weight: 700; }
+    .source-summary b { display: block; margin-top: 3px; color: var(--ink); font-family: var(--mono); font-size: 17px; }
     .source-row { display: grid; grid-template-columns: 160px repeat(5, minmax(0, 1fr)) 62px; gap: 8px; align-items: center; padding: 9px 0; border-top: 1px solid var(--line); }
     .source-row:first-child { border-top: 0; }
     .source-name strong { display: block; font-size: 15px; }
     .source-name em { color: var(--muted); font-style: normal; font-size: 12px; }
     .mini-kpi span { display: block; color: var(--faint); font-size: 12px; line-height: 18px; }
     .mini-kpi b { font-family: var(--mono); font-size: 15px; }
-    .score-pill { justify-self: end; min-width: 54px; text-align: center; padding: 7px 9px; border-radius: 999px; background: rgba(200, 167, 102, .16); color: var(--ink); font-family: var(--mono); font-weight: 700; }
+    .score-pill { justify-self: end; min-width: 70px; text-align: center; padding: 7px 9px; border-radius: 999px; background: rgba(200, 167, 102, .16); color: var(--ink); font-family: var(--mono); font-size: 12px; font-weight: 700; }
+    .source-quality-note { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); color: var(--faint); font-size: 11px; line-height: 18px; }
     .asset-matrix { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 12px; }
     .asset-main { border-color: rgba(200, 167, 102, .46); background: linear-gradient(135deg, rgba(200, 167, 102, .2), rgba(255, 253, 248, .78)); }
     .asset-main strong, .asset-card strong { display: block; margin: 8px 0 6px; font-family: var(--mono); font-size: 24px; line-height: 1; }
@@ -257,7 +261,9 @@
       .status-strip { grid-template-columns: 1fr; }
       .page-head, .module-head { display: grid; }
       .page-head p, .module-head p { text-align: left; }
+      .source-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .source-row, .issue-card { grid-template-columns: 1fr; }
+      .score-pill { justify-self: start; }
       .issue-side { justify-items: start; text-align: left; }
       .row {
         min-width: 0;
@@ -365,7 +371,7 @@
             <p>看采集、事实构建、应用投影和发布状态，决定要补源、改门禁还是修脚本。</p>
           </header>
           <section>
-            <div class="module-head"><div><span class="kicker">SOURCE QUALITY</span><h2>来源质量雷达</h2></div><p>对比发现量、抓取成功率、V4 事实构建和 QA 队列。</p></div>
+            <div class="module-head"><div><span class="kicker">SOURCE QUALITY</span><h2>来源质量雷达</h2></div><p>按 AI HOT、RSS、关键词检索与 GDELT 对比样本、抽取质量和 V4 事实产出。</p></div>
             <article class="card"><div data-source-quality></div></article>
           </section>
           <section>
@@ -412,6 +418,6 @@
 
   <script src="data/pipeline-dashboard.js"></script>
   <script src="data/ops-console.js"></script>
-  <script src="assets/operations-console.js?v=20260630-ops-v122"></script>
+  <script src="assets/operations-console.js?v=20260825-source-quality-v1"></script>
 </body>
 </html>

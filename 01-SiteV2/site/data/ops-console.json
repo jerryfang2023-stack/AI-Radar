@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-25T03:21:48.709Z",
+    "generatedAt": "2026-08-25T06:09:43.550Z",
     "date": "2026-08-25",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1237,7 +1237,69 @@
         "qaQueue": 231
       }
     ],
-    "engineQuality": {}
+    "sourceQuality": {
+      "updatedAt": "2026-08-25T06:09:43.550Z",
+      "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
+      "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
+      "rows": [
+        {
+          "id": "aihot",
+          "label": "AI HOT",
+          "total": 46,
+          "eligibleRate": 98,
+          "fullTextRate": 67,
+          "highQualityRate": 37,
+          "readabilityScore": 48,
+          "factHitRate": 24,
+          "acceptedClaims": 27,
+          "canonicalEvents": 12,
+          "score": 61,
+          "grade": "中"
+        },
+        {
+          "id": "rss-feed",
+          "label": "RSS",
+          "total": 86,
+          "eligibleRate": 98,
+          "fullTextRate": 97,
+          "highQualityRate": 85,
+          "readabilityScore": 84,
+          "factHitRate": 21,
+          "acceptedClaims": 47,
+          "canonicalEvents": 19,
+          "score": 82,
+          "grade": "良"
+        },
+        {
+          "id": "keyword-search",
+          "label": "关键词检索",
+          "total": 98,
+          "eligibleRate": 88,
+          "fullTextRate": 83,
+          "highQualityRate": 81,
+          "readabilityScore": 77,
+          "factHitRate": 7,
+          "acceptedClaims": 16,
+          "canonicalEvents": 7,
+          "score": 72,
+          "grade": "中"
+        },
+        {
+          "id": "gdelt",
+          "label": "GDELT",
+          "total": 29,
+          "eligibleRate": 69,
+          "fullTextRate": 69,
+          "highQualityRate": 55,
+          "readabilityScore": 57,
+          "factHitRate": 0,
+          "acceptedClaims": 0,
+          "canonicalEvents": 0,
+          "score": 54,
+          "grade": "待改善"
+        }
+      ]
+    }
   },
   "governance": {
     "versions": [
