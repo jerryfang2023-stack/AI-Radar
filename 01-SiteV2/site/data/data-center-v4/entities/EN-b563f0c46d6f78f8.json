@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -29,7 +29,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-24",
+    "lastSeen": "2026-08-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -37,46 +37,16 @@
       "partnerships": [],
       "productsServices": [],
       "hardware": [
-        "EV-b2659555782581d6",
-        "EV-d93dd19a481307ec"
+        "EV-d93dd19a481307ec",
+        "EV-b2659555782581d6"
       ],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
       {
-        "id": "EV-b2659555782581d6",
-        "dataDate": "2026-08-24",
-        "date": "2026-08-20",
-        "eventType": "hardware_product",
-        "eventTypeLabel": "硬件产品",
-        "eventGroup": "AI 硬件",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "韩国首款主权AI设备出货：国产芯片、国产LLM、一台服务器",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "retrieval_augmented_generation",
-            "name": "RAG",
-            "entityIds": [
-              "EN-99d3fd0fa8fe115e"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-99d3fd0fa8fe115e",
-          "EN-59b94cb9c12296ca",
-          "EN-7d3c8fb6fa445060",
-          "EN-b563f0c46d6f78f8"
-        ]
-      },
-      {
         "id": "EV-d93dd19a481307ec",
-        "dataDate": "2026-08-24",
+        "dataDate": "2026-08-25",
         "date": "2026-08-19",
         "eventType": "hardware_product",
         "eventTypeLabel": "硬件产品",
@@ -112,6 +82,36 @@
           "EN-7d3c8fb6fa445060",
           "EN-b563f0c46d6f78f8"
         ]
+      },
+      {
+        "id": "EV-b2659555782581d6",
+        "dataDate": "2026-08-24",
+        "date": "2026-08-20",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "韩国首款主权AI设备出货：国产芯片、国产LLM、一台服务器",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "retrieval_augmented_generation",
+            "name": "RAG",
+            "entityIds": [
+              "EN-99d3fd0fa8fe115e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-99d3fd0fa8fe115e",
+          "EN-59b94cb9c12296ca",
+          "EN-7d3c8fb6fa445060",
+          "EN-b563f0c46d6f78f8"
+        ]
       }
     ],
     "viewpoints": []
@@ -121,6 +121,38 @@
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [
+    {
+      "id": "HW-da04d48165a60f76",
+      "eventId": "EV-d93dd19a481307ec",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-19",
+      "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "OpenAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "Korea",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
+      "sourceName": "techtimes.com",
+      "sourceDate": "2026-08-19",
+      "entityIds": [
+        "EN-99d3fd0fa8fe115e",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3c8fb6fa445060",
+        "EN-b563f0c46d6f78f8"
+      ]
+    },
     {
       "id": "HW-4ea988537f248437",
       "eventId": "EV-b2659555782581d6",
@@ -162,51 +194,19 @@
         "EN-7d3c8fb6fa445060",
         "EN-b563f0c46d6f78f8"
       ]
-    },
-    {
-      "id": "HW-da04d48165a60f76",
-      "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-24",
-      "date": "2026-08-19",
-      "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
-      "hardwareType": "ai_accelerator",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "data_center",
-      "supplier": "OpenAI",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "Korea",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://techtimes.com/articles/324976/20260819/koreas-first-sovereign-ai-appliance-ships-domestic-chip-domestic-llm-one-server.htm",
-      "sourceName": "techtimes.com",
-      "sourceDate": "2026-08-19",
-      "entityIds": [
-        "EN-99d3fd0fa8fe115e",
-        "EN-7d3194f79e645c42",
-        "EN-bbdefa2950f49882",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3c8fb6fa445060",
-        "EN-b563f0c46d6f78f8"
-      ]
     }
   ],
   "hardwareCatalog": [
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-9f5ea0886bccdad8",
+      "snapshotId": "HWS-65430b44ee1bb529",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-24",
-      "date": "2026-08-24",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -221,12 +221,21 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-1239c2f1f4a8b4c8"
+          "fact_ref": "HWF-21ab13e4eeb4edcf"
         }
       },
       "factCount": 2,
-      "snapshotCount": 5,
+      "snapshotCount": 6,
       "changes": [
+        {
+          "date": "2026-08-25",
+          "previousDate": "2026-08-24",
+          "snapshotId": "HWS-65430b44ee1bb529",
+          "previousSnapshotId": "HWS-9f5ea0886bccdad8",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-24",
           "previousDate": "2026-08-23",
@@ -268,8 +277,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-24",
-          "hardware_fact_id": "HWF-1e079b9acf19bd10",
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-bfe2a3941cbd58c3",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -289,15 +298,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-a59678c0181a54df",
+          "claim_ref": "CL-b84439f171cd9e1c",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-24",
-          "hardware_fact_id": "HWF-1239c2f1f4a8b4c8",
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-21ab13e4eeb4edcf",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -317,11 +326,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-c249aa9956f19548",
+          "claim_ref": "CL-8ec555b2156d4f53",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
         }
       ],
       "capexFacts": [],

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "institution": {
@@ -20,19 +20,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-02-04",
-    "latest_disclosed_at": "2026-06-02",
+    "latest_disclosed_at": "2026-08-24",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-dc8a5a5bf80909de",
+        "canonical_entity_id": "",
+        "name": "General Intuition"
+      },
       {
         "entity_id": "EN-0995103010d39563",
         "canonical_entity_id": "",
@@ -40,6 +45,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-494cbf5caaf694aa",
+        "funding_insight_id": "FI-aafcd4003122330e",
+        "event_ids": [
+          "EV-4a3fa2b57b7ce64a"
+        ],
+        "company_entity_id": "EN-dc8a5a5bf80909de",
+        "company_canonical_entity_id": "",
+        "company_name": "General Intuition",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "新一轮融资（Series B谈判中）",
+        "amount_original": "$6 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "60 亿美元"
+        },
+        "announced_at": "2026-08-24",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6fa02c4f9ef76b6b",
+            "source_url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
+            "source_title": "Valor、Point72投资General Intuition，估值达60亿美元，AI初创公司进军机器人领域",
+            "source_content_hash": "76669f3d9b8805f3",
+            "quote": "is in talks to raise funding at a $6 billion pre-money valuation from new investors including Valor Equity Partners, Point72 Ventures, and Seven Seven Six",
+            "quote_hash": "6e58a23fa87de3ba64327fabd029aaa67e3b3a5b08578e074e307d6b9a6ed524"
+          }
+        ]
+      },
       {
         "activity_id": "IA-38159f8e0d27e8e6",
         "funding_insight_id": "FI-032ffe6e999827b8",
@@ -126,6 +169,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-6fa02c4f9ef76b6b",
+        "source_url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
+        "source_title": "Valor、Point72投资General Intuition，估值达60亿美元，AI初创公司进军机器人领域",
+        "source_content_hash": "76669f3d9b8805f3",
+        "quote": "is in talks to raise funding at a $6 billion pre-money valuation from new investors including Valor Equity Partners, Point72 Ventures, and Seven Seven Six",
+        "quote_hash": "6e58a23fa87de3ba64327fabd029aaa67e3b3a5b08578e074e307d6b9a6ed524"
+      },
       {
         "source_id": "FISRC-f6b16eaba393b2b3",
         "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",

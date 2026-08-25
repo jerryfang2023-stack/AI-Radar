@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-af3f46061841591d",
+    "name": "HUMAIN 达成战略",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-decbf1a34be68603"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-25",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-decbf1a34be68603"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-decbf1a34be68603",
+        "dataDate": "2026-08-25",
+        "date": "2026-08-24",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Mistral 与 HUMAIN 达成战略合作，推进沙特及中东主权 AI",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-af3f46061841591d",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-38792d4e9d2baccc",
+      "eventId": "EV-decbf1a34be68603",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "title": "Mistral 与 HUMAIN 达成战略合作，推进沙特及中东主权 AI",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HUMAIN",
+      "vendor": "Mistral",
+      "industry": "regulated industries",
+      "useCase": "推进沙特及中东主权 AI",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Mistral and HUMAIN today announced a strategic collaboration spanning AI infrastructure, advanced model development, and the deployment of AI solutions in Saudi Arabia and across the region. Together, the companies will pursue the development and localization of advanced AI models, with initial areas of focus including cybersecurity and voice. The companies also plan to develop frontier models that perform strongly in Arabic language to help support the broader region. This represents a collaboration in the hundreds of millions of Euros. As part of the collaboration, Mistral will explore using HUMAIN’s data center infrastructure to support growing local compute needs. HUMAIN and Mistral also plan to develop a joint go-to-market strategy in Saudi Arabia focused on bringing advanced AI solutions to regulated industries."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://mistral.ai/news/mistral-x-humain",
+      "entityIds": [
+        "EN-920510199770f4d6",
+        "EN-af3f46061841591d",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-d0652b9b6640a439",
+      "implementationKey": "d0652b9b6640a439",
+      "eventId": "EV-decbf1a34be68603",
+      "eventIds": [
+        "EV-decbf1a34be68603"
+      ],
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "title": "HUMAIN × Mistral：推进沙特及中东主权 AI",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HUMAIN",
+      "vendor": "Mistral",
+      "industry": "regulated industries",
+      "useCase": "推进沙特及中东主权 AI",
+      "workflow": "未披露",
+      "systems": [
+        "HUMAIN's data center infrastructure"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.75,
+      "completenessPercent": 75,
+      "missingFields": [
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0591e5c8bcb95bb2",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-24",
+          "dataDate": "2026-08-25",
+          "eventId": "EV-decbf1a34be68603",
+          "eventTitle": "Mistral 与 HUMAIN 达成战略合作，推进沙特及中东主权 AI",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://mistral.ai/news/mistral-x-humain",
+      "entityIds": [
+        "EN-920510199770f4d6",
+        "EN-af3f46061841591d",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-92c9b268b7ac18e5",
+      "snapshotKey": "92c9b268b7ac18e5",
+      "snapshotId": "HWS-428f17fc9e5b52f8",
+      "eventId": "EV-decbf1a34be68603",
+      "eventIds": [
+        "EV-decbf1a34be68603"
+      ],
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
+      "title": "Mistral",
+      "subject": "Mistral",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ecf62a0ee9f7f18f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-ecf62a0ee9f7f18f",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-24T00:00:00.000Z",
+          "subject_entity_id": "EN-920510199770f4d6",
+          "subject_name": "Mistral",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Mistral and HUMAIN today announced a strategic collaboration spanning AI infrastructure, advanced model development, and the deployment of AI solutions in Saudi Arabia and across the region. Together, the companies will pursue the development and localization of advanced AI models, with initial areas of focus including cybersecurity and voice. The companies also plan to develop frontier models that perform strongly in Arabic language to help support the broader region. This represents a collaboration in the hundreds of millions of Euros. As part of the collaboration, Mistral will explore using HUMAIN’s data center infrastructure to support growing local compute needs. HUMAIN and Mistral also plan to develop a joint go-to-market strategy in Saudi Arabia focused on bringing advanced AI solutions to regulated industries.",
+          "event_refs": [
+            "EV-decbf1a34be68603"
+          ],
+          "claim_ref": "CL-a0f76d6bf5c200af",
+          "source_refs": [
+            "SA-5532cf5c355c4562"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://mistral.ai/news/mistral-x-humain",
+      "entityIds": [
+        "EN-920510199770f4d6",
+        "EN-af3f46061841591d",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    }
+  ]
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -119,9 +119,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -208,6 +206,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-3a28c66df32b57d2",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
         "EV-0d5a32aca724d30e",
@@ -298,6 +297,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-a3ccf873058bb406",
+        "EV-36a49fa0e0b96d95",
         "EV-ce32954014cb030d",
         "EV-3b30eda1326a6fb1",
         "EV-84baa23ade7a80e3",
@@ -316,14 +317,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-use_case-physical_automation",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
         "TX-product_form-ai_compute_system",
-        "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -331,18 +338,14 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
-        "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-physical_automation",
         "TX-use_case-customer_support",
         "TX-technology-agentic_execution",
         "TX-industry-agriculture",
-        "TX-industry-automotive_transportation",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
         "TX-industry-energy_utilities",
@@ -353,8 +356,6 @@
         "TX-industry-retail_ecommerce",
         "TX-deployment_model-cloud",
         "TX-technology-embodied_ai",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models",
         "TX-product_form-model_api_service",
         "TX-ai_market_application-chips",
         "TX-product_form-robotic_system",
@@ -372,31 +373,24 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     }
   ],
   "relationships": [
@@ -429,6 +423,7 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
+        "EV-4a3fa2b57b7ce64a",
         "EV-c6c297156ff274ac",
         "EV-1765fd690cff1cac",
         "EV-b116eafe60d71fbe",
@@ -526,6 +521,7 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-dc8a5a5bf80909de",
         "EN-1913c6ab46df3a68",
         "EN-2505fe8a9e908e04",
         "EN-373da2ec629326c0",
@@ -615,7 +611,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "TX-technology-guardrails_safety",
@@ -628,6 +624,7 @@
         "EV-d1e2a7c6d314612c",
         "EV-b240fb11e65b018e",
         "EV-fe63a869fe4cee45",
+        "EV-92634b09de96ca83",
         "EV-39d56d5cef4cea80",
         "EV-db304937ceac95d2",
         "EV-5ec22cf9a1fb59d4",
@@ -641,8 +638,8 @@
       "entityIds": [
         "EN-ddadc7e89f7cd629",
         "EN-c70eca6b0f88f44d",
-        "EN-920510199770f4d6",
         "EN-7d3194f79e645c42",
+        "EN-920510199770f4d6",
         "EN-efa98ef1e586ac73",
         "EN-ae31f30d39374a8b",
         "EN-c857d09db23e6822",
@@ -654,7 +651,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-08-06"
+      "lastSeen": "2026-08-25"
     }
   ],
   "fde": [],

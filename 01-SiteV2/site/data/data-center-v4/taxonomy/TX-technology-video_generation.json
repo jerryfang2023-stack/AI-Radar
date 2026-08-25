@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -18,9 +18,12 @@
     "typeLabel": "技术",
     "valueId": "video_generation",
     "eventIds": [
+      "EV-d80c43b35418e74d",
+      "EV-caffb8981cecae2f",
       "EV-522c339dded54be5",
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
+      "EV-2a30e4a6a8033bcc",
       "EV-c698da7da473b059",
       "EV-2791b442fd32b894",
       "EV-10c4f4db6c3f2d72",
@@ -38,11 +41,13 @@
       "EV-9766c0f1ac902595"
     ],
     "entityIds": [
+      "EN-478676438ee161a3",
+      "EN-047364b9be67f665",
       "EN-e1517be14d06cdb7",
       "EN-d747d6f5125b6bee",
       "EN-b81c8201acfc7639",
+      "EN-031f4a060a67e7af",
       "EN-e59f5a52b6713a29",
-      "EN-047364b9be67f665",
       "EN-422332977c41eb77",
       "EN-c9e6168149dd7cf6",
       "EN-ec1c8f558ff61e34",
@@ -56,9 +61,255 @@
       "HW-68457c8c0a7240ac"
     ],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-08-18"
+    "lastSeen": "2026-08-25"
   },
   "events": [
+    {
+      "id": "EV-d80c43b35418e74d",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
+      "updatedDate": "2026-08-25",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "派早报：阿里云视频生成模型 Wan3.0 上线，小米发布三款玄戒芯片等",
+      "originalTitle": "",
+      "subject": "派早报：阿里云视频生成模型 Wan3.0",
+      "action": "上线",
+      "object": "，小米发布三款玄戒芯片等",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-sspai-rss"
+        ],
+        "claim_refs": [
+          "CL-2eb40f38eeedbecd",
+          "CL-f5209f5e763064bf",
+          "CL-50c4a049d290e8da"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-e9fc4f156e36f6aa",
+        "EN-c608c4787821de1b"
+      ],
+      "entityNames": [
+        "派早报",
+        "Alibaba Cloud",
+        "Xiaomi"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://sspai.com/post/113813",
+      "publisher": "少数派"
+    },
+    {
+      "id": "EV-caffb8981cecae2f",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "updatedDate": "2026-08-25",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿里视频大模型Wan3.0正式上线，行业评价“稳定、真实、有质感”",
+      "originalTitle": "",
+      "subject": "阿里视频大模型Wan3.0正式",
+      "action": "上线",
+      "object": "，行业评价“稳定、真实、有质感”",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-047364b9be67f665"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/478427.html",
+      "publisher": "量子位"
+    },
     {
       "id": "EV-522c339dded54be5",
       "dataDate": "2026-08-04",
@@ -487,6 +738,114 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/967/217.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-2a30e4a6a8033bcc",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
+      "updatedDate": "2026-08-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "WRC 2026｜生数科技发布最新研究成果，提出通用世界模型五级发展路线",
+      "originalTitle": "",
+      "subject": "WRC 2026｜生数科技",
+      "action": "发布最新研究成果，提出通用世界模型",
+      "object": "五级发展路线",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-qbitai-rss"
+        ],
+        "claim_refs": [
+          "CL-3182a24470eac839",
+          "CL-2175e5f3ef4d49c5",
+          "CL-7776fb7efa161f11",
+          "CL-42ca46dbcb6cdf6b"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-031f4a060a67e7af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-031f4a060a67e7af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-031f4a060a67e7af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9b21c9bf3305c0d6",
+        "EN-047364b9be67f665",
+        "EN-031f4a060a67e7af"
+      ],
+      "entityNames": [
+        "ShengShu Technology",
+        "Alibaba",
+        "WRC 2026"
+      ],
+      "productName": "WRC 2026",
+      "products": [
+        {
+          "name": "WRC 2026",
+          "type": "模型",
+          "ownerNames": [
+            "ShengShu Technology"
+          ]
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/478690.html",
+      "publisher": "量子位"
     },
     {
       "id": "EV-c698da7da473b059",
@@ -2318,6 +2677,154 @@
   ],
   "entities": [
     {
+      "id": "EN-478676438ee161a3",
+      "name": "派早报",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d80c43b35418e74d",
+        "EV-cff5848b8c5453af",
+        "EV-5ede0f85a672441c",
+        "EV-5c30f52112d92491",
+        "EV-2fa6949af5b36fb0",
+        "EV-6ce6bebf0d6408d9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-product_form-ai_device",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-25"
+    },
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "阿里巴巴",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-00514c4ffc2e3cd3",
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-56da7cceeebc8bcf",
+        "EV-cec68369662236fd",
+        "EV-caffb8981cecae2f",
+        "EV-2d9fde7bc0cd7a22",
+        "EV-c2b613b5a2fb1135",
+        "EV-ef2cd6bd912a6ed8",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-b99c318c66e1a295",
+        "EV-3d9aa640411471ea",
+        "EV-2a833330267cb2df",
+        "EV-2a30e4a6a8033bcc",
+        "EV-c47112d137157d2d",
+        "EV-7a600ac040c304a2",
+        "EV-c87e32451657c301",
+        "EV-5fe819e7070b76e6",
+        "EV-defb496c46fcc604",
+        "EV-f7b81752b1fadd87",
+        "EV-5c30f52112d92491",
+        "EV-497344d95d593cf6",
+        "EV-0679a9b49b53ddbd",
+        "EV-355ddfd4c6180ab0",
+        "EV-4a6a0e6b6f50946c",
+        "EV-2791b442fd32b894",
+        "EV-d230942b0787581a",
+        "EV-2fa6949af5b36fb0",
+        "EV-4b286a3354cbf34a",
+        "EV-650e4b23d45d5758",
+        "EV-d2f8019b6783722f",
+        "EV-bfa090c78227abf8",
+        "EV-2e1352039c487bb0",
+        "EV-b4aa08aef57bdb0f",
+        "EV-1a241bcb4fad886c",
+        "EV-6654f62015eff8e3",
+        "EV-8b67e7ac8e61cc1e",
+        "EV-989631c550d89726",
+        "EV-94ad4a217508e6e0",
+        "EV-b43f22d8bc7fec3f",
+        "EV-b888d3eb5f192649",
+        "EV-f388f7ae2debeae8",
+        "EV-d08935b06ed9e7bb",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-a4f413441613beac",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-8692dfde7c3ef5b5",
+        "EV-710b145230faa692"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-use_case-data_analysis",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-ai_device",
+        "TX-technology-agentic_execution",
+        "TX-technology-computer_use",
+        "TX-technology-multimodal",
+        "TX-technology-open_weights",
+        "TX-technology-video_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-52e3d014f9a275ea",
+        "EN-0b0c3b228202ab0a",
+        "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
+        "EN-d65d81c60c0c47c4"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-25",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
+    },
+    {
       "id": "EN-e1517be14d06cdb7",
       "name": "MiniMax",
       "entityType": "organization_candidate",
@@ -2416,8 +2923,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-software_development",
         "TX-product_form-model",
+        "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_device",
@@ -2432,6 +2939,27 @@
       ],
       "firstSeen": "2026-04-16",
       "lastSeen": "2026-08-17"
+    },
+    {
+      "id": "EN-031f4a060a67e7af",
+      "name": "WRC 2026",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2a30e4a6a8033bcc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-e59f5a52b6713a29",
@@ -2457,123 +2985,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-08-12",
       "lastSeen": "2026-08-12"
-    },
-    {
-      "id": "EN-047364b9be67f665",
-      "name": "阿里巴巴",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Alibaba",
-        "Alibaba Group",
-        "阿里"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-00514c4ffc2e3cd3",
-        "EV-43b7f45e9bd7ec9b",
-        "EV-3d93d1da8cb64462",
-        "EV-56da7cceeebc8bcf",
-        "EV-cec68369662236fd",
-        "EV-2d9fde7bc0cd7a22",
-        "EV-c2b613b5a2fb1135",
-        "EV-ef2cd6bd912a6ed8",
-        "EV-4740121f428e4bda",
-        "EV-a354af52772334fd",
-        "EV-c0f87b8c5208cd75",
-        "EV-53f08daddd011dbb",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-b99c318c66e1a295",
-        "EV-3d9aa640411471ea",
-        "EV-2a833330267cb2df",
-        "EV-7a600ac040c304a2",
-        "EV-c87e32451657c301",
-        "EV-5fe819e7070b76e6",
-        "EV-defb496c46fcc604",
-        "EV-f7b81752b1fadd87",
-        "EV-5c30f52112d92491",
-        "EV-497344d95d593cf6",
-        "EV-0679a9b49b53ddbd",
-        "EV-355ddfd4c6180ab0",
-        "EV-4a6a0e6b6f50946c",
-        "EV-2791b442fd32b894",
-        "EV-d230942b0787581a",
-        "EV-2fa6949af5b36fb0",
-        "EV-4b286a3354cbf34a",
-        "EV-650e4b23d45d5758",
-        "EV-d2f8019b6783722f",
-        "EV-bfa090c78227abf8",
-        "EV-2e1352039c487bb0",
-        "EV-b4aa08aef57bdb0f",
-        "EV-1a241bcb4fad886c",
-        "EV-6654f62015eff8e3",
-        "EV-8b67e7ac8e61cc1e",
-        "EV-989631c550d89726",
-        "EV-94ad4a217508e6e0",
-        "EV-b43f22d8bc7fec3f",
-        "EV-b888d3eb5f192649",
-        "EV-f388f7ae2debeae8",
-        "EV-d08935b06ed9e7bb",
-        "EV-215f938a46d0b126",
-        "EV-ac1b82f6e6261012",
-        "EV-6fbbbfcdcec81df4",
-        "EV-82e68f59d8584e4e",
-        "EV-fd8ecce5de2f667d",
-        "EV-f6ac2938949f74ec",
-        "EV-363fe72da52bdb86",
-        "EV-83c841a4c42cfdea",
-        "EV-3167e6eed75597e9",
-        "EV-ad2e4fe6a149d95d",
-        "EV-76aa77f5a2e7c661",
-        "EV-77662aa9bef9efbe",
-        "EV-c7f274c3aadece12",
-        "EV-333851b077b606c8",
-        "EV-6712f8ac1f00fe85",
-        "EV-c54172bf4e0c1068",
-        "EV-473f852b374d8b1c",
-        "EV-197aac95e60671f7",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-bbc34d7bc9c02b6f",
-        "EV-a4f413441613beac",
-        "EV-c11ee0da38376254",
-        "EV-657837763764c869",
-        "EV-a4f052325d0ef230",
-        "EV-8692dfde7c3ef5b5",
-        "EV-710b145230faa692"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-data_analysis",
-        "TX-target_user-business_user",
-        "TX-product_form-model",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-ai_device",
-        "TX-technology-agentic_execution",
-        "TX-technology-computer_use",
-        "TX-technology-multimodal",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-52e3d014f9a275ea",
-        "EN-0b0c3b228202ab0a",
-        "EN-22a4c686e665e299",
-        "EN-2daac3672aeafcbd",
-        "EN-3c2a3673eabc9a46",
-        "EN-d65d81c60c0c47c4"
-      ],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-19",
-      "organizationFamilyId": "EN-047364b9be67f665",
-      "organizationRole": "group",
-      "organizationFamilyEntityIds": [
-        "EN-e16fc821f34228d1"
-      ],
-      "parentEntityName": ""
     },
     {
       "id": "EN-422332977c41eb77",
@@ -2698,14 +3109,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
+        "TX-use_case-physical_automation",
         "TX-use_case-research_discovery",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-media_entertainment",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
@@ -2866,6 +3277,102 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-c08fcad350fc35d8",
+      "snapshotKey": "c08fcad350fc35d8",
+      "snapshotId": "HWS-832d23aee4ab91de",
+      "eventId": "EV-d80c43b35418e74d",
+      "eventIds": [
+        "EV-d80c43b35418e74d"
+      ],
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
+      "title": "派早报",
+      "subject": "派早报",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-e6223bf22181cfba"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-e6223bf22181cfba",
+          "fact_type": "product",
+          "observed_at": "2026-08-25T00:28:32.000Z",
+          "subject_entity_id": "EN-478676438ee161a3",
+          "subject_name": "派早报",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "派早报：阿里云视频生成模型 Wan3.0 上线，小米发布三款玄戒芯片等",
+          "event_refs": [
+            "EV-d80c43b35418e74d"
+          ],
+          "claim_ref": "CL-2eb40f38eeedbecd",
+          "source_refs": [
+            "SA-0c64e3b1e27cb2bc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://sspai.com/post/113813",
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-e9fc4f156e36f6aa",
+        "EN-c608c4787821de1b"
+      ]
+    },
     {
       "id": "HWC-be00792298019bfb",
       "snapshotKey": "be00792298019bfb",

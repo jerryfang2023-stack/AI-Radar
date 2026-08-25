@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -7309,6 +7309,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-4927409c0f4b3ef3",
         "EV-d4af2db7a4759431",
         "EV-30211b84aacd0598",
         "EV-a09f6e93ad868a57",
@@ -7493,6 +7494,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-da06805e06990d63",
         "EV-11a0afc2ecb6e42e",
@@ -7566,9 +7568,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-government_public_sector",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
         "TX-target_user-developer",
+        "TX-industry-aerospace_defense",
+        "TX-industry-government_public_sector",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -7576,7 +7582,6 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
@@ -7589,8 +7594,6 @@
         "TX-industry-legal_services",
         "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-target_user-educator",
@@ -7602,10 +7605,11 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-9f15bb7e29e191eb",
         "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
-        "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
@@ -7618,7 +7622,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -7628,7 +7631,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     }
   ],
   "relationships": [
@@ -7758,6 +7761,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-18faec4bf4efe7db",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
         "EV-d93dd19a481307ec",
@@ -7859,6 +7863,7 @@
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
+        "EN-77b30b8a88051252",
         "EN-0e61c365bbad9649",
         "EN-99d3fd0fa8fe115e",
         "EN-83eb1cb31148698f",
@@ -7911,6 +7916,7 @@
         "HW-ceb55d9bc637c1d3",
         "HW-1dbfe359ae73ed38",
         "HW-b32e61f6ea5c1646",
+        "HW-7183f28980038937",
         "HW-da04d48165a60f76",
         "HW-25eea5677838fb54",
         "HW-b0c753b9501f996e",
@@ -7928,7 +7934,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -8098,6 +8104,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-6ff94e2e732463de",
         "EV-129ffa6be41bb485",
         "EV-040744ef8b205e0d",
         "EV-8619e2d881669888",
@@ -8133,6 +8140,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-cf5e9cd619ec1495",
         "EV-21d4133cd8711813",
         "EV-85ea6e0ef8bda162",
         "EV-d4af2db7a4759431",
@@ -8568,6 +8576,7 @@
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
         "EN-f8048254c29fa79e",
+        "EN-44d980dac0286a43",
         "EN-2db317222c996b63",
         "EN-6c0f28e4fa82c2a5",
         "EN-82a31e57d3a2fa17",
@@ -8583,6 +8592,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-4a6a6aae5047db03",
         "EN-9d3508a8484ee252",
         "EN-3ebe8498fb071652",
         "EN-96c842ee0d60fa41",

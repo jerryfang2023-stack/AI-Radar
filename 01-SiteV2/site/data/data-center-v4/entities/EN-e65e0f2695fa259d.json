@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -34,6 +34,7 @@
     "firstSeen": "2026-06-25",
     "lastSeen": "2026-08-13",
     "relationIds": [
+      "REL2-5a2b9cfd6f0b1ca6",
       "REL2-8f5f9424d107b468"
     ],
     "groupedEventIds": {
@@ -213,6 +214,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-4927409c0f4b3ef3",
         "EV-d4af2db7a4759431",
         "EV-30211b84aacd0598",
         "EV-a09f6e93ad868a57",
@@ -397,6 +399,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-da06805e06990d63",
         "EV-11a0afc2ecb6e42e",
@@ -470,9 +473,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-government_public_sector",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
         "TX-target_user-developer",
+        "TX-industry-aerospace_defense",
+        "TX-industry-government_public_sector",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -480,7 +487,6 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
@@ -493,8 +499,6 @@
         "TX-industry-legal_services",
         "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-target_user-educator",
@@ -506,10 +510,11 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-9f15bb7e29e191eb",
         "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
-        "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
@@ -522,7 +527,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -532,10 +536,28 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-5a2b9cfd6f0b1ca6",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e65e0f2695fa259d",
+      "object_type": "entity",
+      "event_id": "EV-875b31b96ff689df",
+      "claim_refs": [
+        "CL-f441b70d1bca16ef"
+      ],
+      "source_refs": [
+        "SA-2bc62681d0b05bdb"
+      ],
+      "data_date": "2026-08-13",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-8f5f9424d107b468",
       "relationship_version": "RELATION-V2.1",

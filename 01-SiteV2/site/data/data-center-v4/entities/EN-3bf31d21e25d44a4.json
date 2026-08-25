@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-3bf31d21e25d44a4",
+    "name": "SiC",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f69d9093e255d79c"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-25",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-f69d9093e255d79c"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f69d9093e255d79c",
+        "dataDate": "2026-08-25",
+        "date": "2026-08-24",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Coherent 出样 300mm 高导热 SiC 衬底，散热性能提升多达 25%",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e972546000b214f3",
+          "EN-3bf31d21e25d44a4"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-d5e7850ec005efd4",
+      "eventId": "EV-f69d9093e255d79c",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "title": "Coherent 出样 300mm 高导热 SiC 衬底，散热性能提升多达 25%",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Coherent",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/993/682.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-24",
+      "entityIds": [
+        "EN-e972546000b214f3",
+        "EN-3bf31d21e25d44a4"
+      ]
+    }
+  ]
+}

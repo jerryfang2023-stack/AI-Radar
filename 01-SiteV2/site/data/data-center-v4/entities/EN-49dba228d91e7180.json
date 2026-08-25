@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-18faec4bf4efe7db",
       "EV-2c6707327367640f",
       "EV-d26a532231315278"
     ],
@@ -29,7 +30,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-18",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-08-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -37,6 +38,7 @@
       "partnerships": [],
       "productsServices": [],
       "hardware": [
+        "EV-18faec4bf4efe7db",
         "EV-d26a532231315278",
         "EV-2c6707327367640f"
       ],
@@ -44,6 +46,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-18faec4bf4efe7db",
+        "dataDate": "2026-08-25",
+        "date": "2026-08-24",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Cerebras 发布 CS-4，同款芯片性能提升 2 倍",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-77b30b8a88051252"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-77b30b8a88051252",
+          "EN-49dba228d91e7180"
+        ]
+      },
       {
         "id": "EV-d26a532231315278",
         "dataDate": "2026-08-21",
@@ -99,6 +129,34 @@
   "fde": [],
   "hardware": [
     {
+      "id": "HW-7183f28980038937",
+      "eventId": "EV-18faec4bf4efe7db",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "title": "Cerebras 发布 CS-4，同款芯片性能提升 2 倍",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "CS-4 AI accelerator",
+      "supplier": "Cerebras",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/cerebras-unveils-cs-4-with-double-the-performance-on-the-same-chip",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-08-24",
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180"
+      ]
+    },
+    {
       "id": "HW-bc7449cedae06b7a",
       "eventId": "EV-2c6707327367640f",
       "dataDate": "2026-08-20",
@@ -144,20 +202,21 @@
     {
       "id": "HWC-910902f8a2628234",
       "snapshotKey": "910902f8a2628234",
-      "snapshotId": "HWS-e30e468f9e53cd4d",
-      "eventId": "EV-2c6707327367640f",
+      "snapshotId": "HWS-5a57a0524ae6307a",
+      "eventId": "EV-18faec4bf4efe7db",
       "eventIds": [
+        "EV-18faec4bf4efe7db",
         "EV-2c6707327367640f"
       ],
-      "dataDate": "2026-08-20",
-      "date": "2026-08-20",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
       "title": "CS-4 / WSE-3 Turbo",
       "subject": "Cerebras",
       "productNames": [
         "CS-4",
         "WSE-3 Turbo"
       ],
-      "hardwareType": "semiconductor",
+      "hardwareType": "semiconductor / ai_accelerator",
       "factTypes": [
         "product"
       ],
@@ -165,12 +224,21 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-e79f2aa29d6d6b65"
+          "fact_ref": "HWF-b2d3af2493aaef06"
         }
       },
-      "factCount": 3,
-      "snapshotCount": 2,
+      "factCount": 4,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-08-25",
+          "previousDate": "2026-08-20",
+          "snapshotId": "HWS-5a57a0524ae6307a",
+          "previousSnapshotId": "HWS-e30e468f9e53cd4d",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-20",
           "previousDate": "2026-08-19",
@@ -185,88 +253,108 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-20",
-          "hardware_fact_id": "HWF-492a864ee9e97581",
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-5df91bc69e181dd9",
           "fact_type": "product",
-          "observed_at": "2026-08-19T01:12:57.000Z",
+          "observed_at": "2026-08-24T10:16:06.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
           "subject_name": "Cerebras",
           "product_entity_ids": [
-            "EN-49dba228d91e7180",
-            "EN-6eb8882ab15df1c2"
+            "EN-49dba228d91e7180"
           ],
           "product_names": [
-            "CS-4",
-            "WSE-3 Turbo"
+            "CS-4"
           ],
           "component_type": "semiconductor",
           "metric_value": "",
           "unit": "",
-          "source_quote": "10 倍词元容量：Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统 - IT之家",
+          "source_quote": "Cerebras unveils CS-4 with double the performance on the same chip",
           "event_refs": [
-            "EV-2c6707327367640f"
+            "EV-18faec4bf4efe7db"
           ],
-          "claim_ref": "CL-91c05a402f4d945b",
+          "claim_ref": "CL-1a9868119d8e05dd",
           "source_refs": [
-            "SA-08dab066650882b1"
+            "SA-fc20ec6d49b9d914"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-20",
-          "hardware_fact_id": "HWF-ca1864fa26ee3274",
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-a28270cf1c8b53a0",
           "fact_type": "product",
-          "observed_at": "2026-08-19T01:12:57.000Z",
+          "observed_at": "2026-08-24T10:16:06.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
           "subject_name": "Cerebras",
           "product_entity_ids": [
-            "EN-49dba228d91e7180",
-            "EN-6eb8882ab15df1c2"
+            "EN-49dba228d91e7180"
           ],
           "product_names": [
-            "CS-4",
-            "WSE-3 Turbo"
+            "CS-4"
           ],
           "component_type": "semiconductor",
           "metric_value": "",
           "unit": "",
-          "source_quote": "10 倍词元容量：Cerebras 推出 WSE-3 Turbo 芯片与 CS-4 系统",
+          "source_quote": "Cerebras unveils CS-4 with double the performance on the same chip",
           "event_refs": [
-            "EV-2c6707327367640f"
+            "EV-18faec4bf4efe7db"
           ],
-          "claim_ref": "CL-f72b9a365ab6f351",
+          "claim_ref": "CL-36c05ca628e877f7",
           "source_refs": [
-            "SA-08dab066650882b1"
+            "SA-fc20ec6d49b9d914"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-20",
-          "hardware_fact_id": "HWF-e79f2aa29d6d6b65",
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-95eea6080043fb3f",
           "fact_type": "product",
-          "observed_at": "2026-08-19T01:12:57.000Z",
+          "observed_at": "2026-08-24T10:16:06.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
           "subject_name": "Cerebras",
           "product_entity_ids": [
-            "EN-49dba228d91e7180",
-            "EN-6eb8882ab15df1c2"
+            "EN-49dba228d91e7180"
           ],
           "product_names": [
-            "CS-4",
-            "WSE-3 Turbo"
+            "CS-4"
           ],
-          "component_type": "semiconductor",
+          "component_type": "ai_accelerator",
           "metric_value": "",
           "unit": "",
-          "source_quote": "IT之家 8 月 19 日消息，晶圆级 AI 推理加速器制造商 Cerebras 当地时间 18 日宣布推出其新一代芯片 WSE-3 Turbo 和基于该芯片的 CS-4 系统。",
+          "source_quote": "Cerebras has introduced its CS-4 AI accelerator, which CEO Andrew Feldman calls the fastest system in the industry.",
           "event_refs": [
-            "EV-2c6707327367640f"
+            "EV-18faec4bf4efe7db"
           ],
-          "claim_ref": "CL-38284bff29452d67",
+          "claim_ref": "CL-0b9ee5df94c8a690",
           "source_refs": [
-            "SA-08dab066650882b1"
+            "SA-fc20ec6d49b9d914"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-b2d3af2493aaef06",
+          "fact_type": "product",
+          "observed_at": "2026-08-24T10:16:06.000Z",
+          "subject_entity_id": "EN-77b30b8a88051252",
+          "subject_name": "Cerebras",
+          "product_entity_ids": [
+            "EN-49dba228d91e7180"
+          ],
+          "product_names": [
+            "CS-4"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Cerebras has introduced its CS-4 AI accelerator, which CEO Andrew Feldman calls the fastest system in the industry.",
+          "event_refs": [
+            "EV-18faec4bf4efe7db"
+          ],
+          "claim_ref": "CL-b5eecba8b461949f",
+          "source_refs": [
+            "SA-fc20ec6d49b9d914"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -283,7 +371,7 @@
           "assertionId": ""
         }
       ],
-      "sourceUrl": "https://ithome.com/0/991/418.htm",
+      "sourceUrl": "https://the-decoder.com/cerebras-unveils-cs-4-with-double-the-performance-on-the-same-chip",
       "entityIds": [
         "EN-77b30b8a88051252",
         "EN-49dba228d91e7180",
