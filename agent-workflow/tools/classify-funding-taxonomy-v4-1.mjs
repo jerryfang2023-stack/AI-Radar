@@ -425,8 +425,7 @@ if (
       decisions: [...accumulated.values()].sort((a, b) => a.event_id.localeCompare(b.event_id)),
     });
   });
-  const inputIds = new Set(inputs.map((input) => input.event_id));
-  const existingOrder = existing.map((decision) => decision.event_id).filter((eventId) => inputIds.has(eventId));
+  const existingOrder = existing.map((decision) => decision.event_id).filter((eventId) => inputEventIds.has(eventId));
   const existingIds = new Set(existingOrder);
   const orderedEventIds = [
     ...existingOrder,

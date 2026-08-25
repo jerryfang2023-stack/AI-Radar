@@ -40,7 +40,7 @@ export function inspectFundingInsightWork(projectRoot = root, requestedDate = ""
     }
   }
   const eligibleEvents = [...new Map(bundle.events
-    .filter(isEligibleFundingInsightEvent)
+    .filter((event) => isEligibleFundingInsightEvent(event, bundle.claims))
     .map((event) => [event.event_id, event])).values()];
   const pendingEventIds = eligibleEvents
     .filter((event) => !acceptedEventIds.has(event.event_id))

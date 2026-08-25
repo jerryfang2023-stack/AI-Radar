@@ -283,7 +283,7 @@ function main() {
       .flatMap((file) => readJson(path.join(path.dirname(input), file), { cards: [] }).cards || []);
   const currentEvents = loadDailyBundle(root, date).events;
   const currentQueue = results.find((result) => result.data?.meta?.date === date)?.data?.queue || [];
-  problems.push(...verifiedFundingEventCardCoverageProblems(currentEvents, persistedCards, currentQueue)
+  problems.push(...verifiedFundingEventCardCoverageProblems(currentEvents, persistedCards, currentQueue, loadDailyBundle(root, date).claims)
     .map((problem) => `${date}:${problem}`));
   if (all) {
     problems.push(...validateEntityReviewQueue(normalizedCards));

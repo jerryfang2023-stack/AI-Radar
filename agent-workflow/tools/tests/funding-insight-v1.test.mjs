@@ -136,6 +136,63 @@ test("valuation-only fundraising talks cannot become a financing amount", () => 
     metrics: ["$6 billion", "$320 million", "$2.3 billion"],
   };
 
+  const claims = [{
+    claim_id: "CL-GENERAL-INTUITION",
+    claim_type: "funding",
+    verification_status: "accepted",
+    object: "$6 billion pre-money valuation",
+    source_quote: "is in talks to raise funding at a $6 billion pre-money valuation",
+  }];
+  event.claim_refs = [claims[0].claim_id];
+
+  assert.equal(canonicalFundingEventAmount(event, claims), "");
+  assert.equal(isEligibleFundingInsightEvent(event, claims), false);
+  assert.deepEqual(
+    verifiedFundingEventCardCoverageProblems([event], [], [], claims),
+    [],
+    "a valuation-only event must not create a missing-card alert",
+  );
+});
+
+test("a financing verb cannot turn its valuation into round proceeds", () => {
+  const event = {
+    event_type: "funding",
+    event_status: "announced",
+    publication_status: "verified",
+    display_title_zh: "Acme 融资估值达60亿美元",
+    object: "$6 billion pre-money valuation",
+    metrics: ["$6 billion"],
+  };
+
+  assert.equal(canonicalFundingEventAmount(event), "");
+  assert.equal(isEligibleFundingInsightEvent(event), false);
+});
+
+test("valuation-of and valued-at wording cannot become round proceeds", () => {
+  for (const object of ["valuation of $6 billion", "valued at $6 billion"]) {
+    const event = {
+      event_type: "funding",
+      event_status: "announced",
+      publication_status: "verified",
+      display_title_zh: `Acme funding ${object}`,
+      object,
+      metrics: ["$6 billion"],
+    };
+    assert.equal(canonicalFundingEventAmount(event), "");
+    assert.equal(isEligibleFundingInsightEvent(event), false);
+  }
+});
+
+test("fundraising talks remain ineligible even when described as a funding round", () => {
+  const event = {
+    event_type: "funding",
+    event_status: "announced",
+    publication_status: "verified",
+    display_title_zh: "Acme is in talks for a $6 billion funding round",
+    object: "$6 billion funding round",
+    metrics: ["$6 billion"],
+  };
+
   assert.equal(canonicalFundingEventAmount(event), "");
   assert.equal(isEligibleFundingInsightEvent(event), false);
 });
@@ -151,6 +208,20 @@ test("a disclosed financing amount remains eligible when valuation is also repor
   };
 
   assert.equal(canonicalFundingEventAmount(event), "4 亿美元");
+  assert.equal(isEligibleFundingInsightEvent(event), true);
+});
+
+test("round amount selection does not depend on metric order", () => {
+  const event = {
+    event_type: "funding",
+    event_status: "completed",
+    publication_status: "verified",
+    display_title_zh: "Acme raised $100M at a $1B valuation",
+    object: "$100M at a $1B valuation",
+    metrics: ["$1B", "$100M"],
+  };
+
+  assert.equal(canonicalFundingEventAmount(event), "$100M");
   assert.equal(isEligibleFundingInsightEvent(event), true);
 });
 
@@ -188,6 +259,55 @@ test("funding generation skips event IDs already published in another date bundl
     "EV-HISTORICAL-DUPLICATE",
     "EV-COMPANY-ROUND-DUPLICATE",
   ]);
+});
+
+test("write-mode taxonomy maintenance removes decisions for withdrawn cards", () => {
+  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), "funding-taxonomy-prune-"));
+  const fundingRoot = path.join(tempRoot, "01-SiteV2/content/12-applications/funding-insights");
+  const productRoot = path.join(tempRoot, "agent-workflow/product");
+  fs.mkdirSync(fundingRoot, { recursive: true });
+  fs.mkdirSync(productRoot, { recursive: true });
+  fs.copyFileSync(
+    path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"),
+    path.join(productRoot, "tag-taxonomy-v4.json"),
+  );
+  fs.writeFileSync(
+    path.join(fundingRoot, "2026-08-25.json"),
+    `${JSON.stringify({ cards: [] }, null, 2)}\n`,
+  );
+  fs.writeFileSync(
+    path.join(fundingRoot, "taxonomy-decisions-v4-1.json"),
+    `${JSON.stringify({
+      meta: { schema_version: "FUNDING-TAXONOMY-DECISION-V1.0" },
+      decisions: [{ event_id: "EV-WITHDRAWN" }],
+    }, null, 2)}\n`,
+  );
+
+  childProcess.execFileSync(process.execPath, [
+    path.join(root, "agent-workflow/tools/classify-funding-taxonomy-v4-1.mjs"),
+    "--write=true",
+  ], { cwd: tempRoot, stdio: "pipe" });
+
+  const ledger = JSON.parse(fs.readFileSync(
+    path.join(fundingRoot, "taxonomy-decisions-v4-1.json"),
+    "utf8",
+  ));
+  assert.deepEqual(ledger.decisions, []);
+  fs.rmSync(tempRoot, { recursive: true, force: true });
+});
+
+test("the withdrawn valuation-only card is absent from every funding projection", () => {
+  for (const relativePath of [
+    "01-SiteV2/content/12-applications/funding-insights/taxonomy-decisions-v4-1.json",
+    "01-SiteV2/site/data/funding-insights-v1.json",
+    "01-SiteV2/content/11-databases/investment-institutions-v1.json",
+  ]) {
+    assert.doesNotMatch(
+      fs.readFileSync(path.join(root, relativePath), "utf8"),
+      /EV-4a3fa2b57b7ce64a/u,
+      `${relativePath} must not retain the withdrawn valuation-only funding card`,
+    );
+  }
 });
 
 test("announced verified funding events remain eligible for card generation", () => {
@@ -1033,6 +1153,11 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
     taxonomyClassifier,
     /write && incrementalInputs\.length[\s\S]*const incremental = args\.get\("refresh"\) !== "true"[\s\S]*const existingOrder = existing\.map[\s\S]*const orderedEventIds = \[[\s\S]*const decisions = orderedEventIds\.map\(\(eventId\) => accumulated\.get\(eventId\)\)/u,
     "the taxonomy classifier must rebuild the ledger without reclassifying history or reordering accepted decisions",
+  );
+  assert.match(
+    taxonomyClassifier,
+    /staleLedgerDecisions[\s\S]*write && staleLedgerDecisions\.length[\s\S]*existingOrder = existing\.map[\s\S]*inputEventIds\.has/u,
+    "write mode must prune taxonomy decisions whose source cards were withdrawn",
   );
   assert.match(
     taxonomyClassifier,
