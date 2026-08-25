@@ -270,7 +270,11 @@ try {
       Write-LogLine "Guanlan Vault projection will refresh after accepted data reaches local main."
 
       if ($PublishAfterSuccess) {
-        Invoke-NodeStep -Name "publish" -Arguments @("agent-workflow/tools/publish-community-intelligence-local.mjs", "--date=$today")
+        Invoke-NodeStep -Name "publish" -Arguments @(
+          "agent-workflow/tools/publish-community-intelligence-local.mjs",
+          "--date=$today",
+          "--reports-dir=$RuntimePath"
+        )
       }
 
       Write-LogLine "Community intelligence run completed."

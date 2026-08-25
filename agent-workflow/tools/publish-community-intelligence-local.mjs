@@ -17,7 +17,7 @@ const date = args.get("date") || shanghaiDate();
 const merge = args.get("merge") !== "false";
 const pollSeconds = Number.parseInt(args.get("poll-seconds") || "15", 10);
 const branch = `automation/community-intelligence-${date}`;
-const reportsDir = path.join(root, "agent-workflow", "reports");
+const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
 const reportFile = path.join(reportsDir, `${date}-community-intelligence-local-publish.md`);
 
 function shanghaiDate(value = new Date()) {
@@ -263,7 +263,11 @@ function main() {
     `- publish_branch: ${branch}`,
   ];
 
-  run("node", ["agent-workflow/tools/assert-community-intelligence-data.mjs", `--date=${date}`]);
+  run("node", [
+    "agent-workflow/tools/assert-community-intelligence-data.mjs",
+    `--date=${date}`,
+    `--reports-dir=${reportsDir}`,
+  ]);
 
   const stagedBefore = run("git", ["diff", "--cached", "--name-only"]);
   if (stagedBefore) {
@@ -277,9 +281,6 @@ function main() {
 
   writeReport(summary);
 
-  stageIfExists(`agent-workflow/reports/${date}-community-intelligence-local-publish.md`);
-  stageIfExists(`agent-workflow/reports/${date}-community-intelligence-gate.md`);
-  stageIfExists("agent-workflow/reports/community-intelligence-gate-latest.md");
   stageIfExists("01-SiteV2/site/data/community-intelligence.json");
   stageIfExists("01-SiteV2/site/data/community-intelligence-daily/index.json");
   stageIfExists(`01-SiteV2/site/data/community-intelligence-daily/${date}.json`);

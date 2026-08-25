@@ -15,6 +15,11 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(read("install-community-intelligence-task.ps1"), /-RuntimePath/u);
   assert.match(read("install-follow-builders-skill-task.ps1"), /-RuntimePath/u);
   assert.match(read("run-community-intelligence.ps1"), /LOCALAPPDATA[^\n]+WaveSight\\runtime/u);
+  assert.match(read("run-community-intelligence.ps1"), /publish-community-intelligence-local\.mjs[^]*--reports-dir=\$RuntimePath/u);
+  const communityPublisher = read("publish-community-intelligence-local.mjs");
+  assert.match(communityPublisher, /args\.get\("reports-dir"\)/u);
+  assert.match(communityPublisher, /assert-community-intelligence-data\.mjs[^]*--reports-dir=/u);
+  assert.doesNotMatch(communityPublisher, /stageIfExists\(`agent-workflow\/reports/u);
   assert.match(read("run-follow-builders-skill.ps1"), /--output-dir=\$RuntimePath/u);
   const controller = read("run-daily-automation-controller.mjs");
   assert.match(controller, /run-business-signals-health-dispatch\.mjs[^]*--reports-dir=/u);
