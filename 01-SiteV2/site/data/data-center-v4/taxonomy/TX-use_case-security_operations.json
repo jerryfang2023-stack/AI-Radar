@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -50,6 +50,7 @@
       "EV-d4c9326c53dd927a",
       "EV-7012e774379b9c11",
       "EV-c81cb21337a9bb98",
+      "EV-decbf1a34be68603",
       "EV-40f14150d6f622f5",
       "EV-129ffa6be41bb485",
       "EV-6272444f30281858",
@@ -57,6 +58,7 @@
       "EV-53f4f2a34b3ce1b4",
       "EV-b240fb11e65b018e",
       "EV-bd508dbe4205774f",
+      "EV-92634b09de96ca83",
       "EV-72d4a00d52a3201c",
       "EV-58e18eab1b072c9a",
       "EV-f8adec104da927e8",
@@ -164,12 +166,13 @@
       "FDE-b44bbcf1ee8caad0",
       "FDE-bf49eb6f42ebe6a8",
       "FDE-f34ca7b021eae900",
+      "FDE-38792d4e9d2baccc",
       "FDE-ed781e27a7b9458e",
       "FDE-4edaa833d41055bd"
     ],
     "hardwareIds": [],
     "firstSeen": "2026-04-16",
-    "lastSeen": "2026-08-22"
+    "lastSeen": "2026-08-25"
   },
   "events": [
     {
@@ -11628,6 +11631,86 @@
       "publisher": "Bloomberg：Technology（RSS）"
     },
     {
+      "id": "EV-decbf1a34be68603",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "updatedDate": "2026-08-25",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Mistral 与 HUMAIN 达成战略合作，推进沙特及中东主权 AI",
+      "originalTitle": "",
+      "subject": "Mistral 与 HUMAIN 达成战略",
+      "action": "合作",
+      "object": "，推进沙特及中东主权 AI",
+      "metrics": [],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-920510199770f4d6",
+        "EN-af3f46061841591d",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Mistral",
+        "HUMAIN 达成战略",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://mistral.ai/news/mistral-x-humain",
+      "publisher": "Mistral AI：News（网页）"
+    },
+    {
       "id": "EV-40f14150d6f622f5",
       "dataDate": "2026-08-16",
       "date": "2026-08-15",
@@ -12693,6 +12776,122 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=1330-1001176217en-1878JJNUD9H6E0K0LPGOSGE4ST",
       "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-92634b09de96ca83",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
+      "updatedDate": "2026-08-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "美国阿拉巴马州向 OpenAI 发出传票，调查其模型入侵 Hugging Face 事件",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "美国阿拉巴马州向 OpenAI 发出传票，调查其模型入侵 Hugging Face 事件",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/993/777.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-72d4a00d52a3201c",
@@ -18604,8 +18803,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-government_public_sector",
         "TX-target_user-developer",
+        "TX-industry-government_public_sector",
         "TX-ai_market_application-model_agent_security",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-industry-professional_services",
@@ -18691,20 +18890,20 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-industry-professional_services",
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
-        "TX-industry-manufacturing",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
-        "TX-industry-automotive_transportation",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
         "TX-industry-energy_utilities",
@@ -18868,6 +19067,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-target_user-public_sector_user",
@@ -18877,7 +19077,6 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -19008,21 +19207,21 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-industry-professional_services",
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
-        "TX-industry-manufacturing",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-industry-agriculture",
-        "TX-industry-automotive_transportation",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
         "TX-industry-energy_utilities",
@@ -19080,21 +19279,22 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
         "TX-industry-professional_services",
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
         "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-industry-agriculture",
-        "TX-industry-automotive_transportation",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
         "TX-industry-energy_utilities",
@@ -19103,8 +19303,7 @@
         "TX-industry-legal_services",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
-        "TX-ai_market_application-ai_development_orchestration",
-        "TX-ai_market_subcategory-development_deployment"
+        "TX-ai_market_application-ai_development_orchestration"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
@@ -19302,9 +19501,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-end_user_application",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-product_form-security_software",
         "TX-deployment_model-on_premise"
       ],
@@ -19328,8 +19527,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-government_public_sector",
         "TX-target_user-developer",
+        "TX-industry-government_public_sector",
         "TX-ai_market_application-model_agent_security",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-target_user-business_user",
@@ -19469,6 +19668,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-92634b09de96ca83",
         "EV-2afe102017e1b21c",
         "EV-44a833fe8dd16006",
         "EV-7a116596551ff8c7",
@@ -19667,6 +19867,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-93cbf506bc54b34e",
+        "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-ce32954014cb030d",
         "EV-00ffb2c501a37ec8",
@@ -19742,6 +19944,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -19751,7 +19954,6 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
@@ -19800,7 +20002,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-449777124b1466a8",
@@ -19817,8 +20019,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
-        "TX-industry-manufacturing"
+        "TX-industry-manufacturing",
+        "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-22",
@@ -19910,6 +20112,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-4927409c0f4b3ef3",
         "EV-d4af2db7a4759431",
         "EV-30211b84aacd0598",
         "EV-a09f6e93ad868a57",
@@ -20094,6 +20297,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-da06805e06990d63",
         "EV-11a0afc2ecb6e42e",
@@ -20167,9 +20371,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-government_public_sector",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
         "TX-target_user-developer",
+        "TX-industry-aerospace_defense",
+        "TX-industry-government_public_sector",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -20177,7 +20385,6 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
@@ -20190,8 +20397,6 @@
         "TX-industry-legal_services",
         "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-target_user-educator",
@@ -20203,10 +20408,11 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-9f15bb7e29e191eb",
         "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
-        "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
@@ -20219,7 +20425,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -20229,7 +20434,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-22152786a70738a1",
@@ -20246,8 +20451,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
-        "TX-product_form-model"
+        "TX-product_form-model",
+        "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-15",
@@ -20287,10 +20492,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-telecommunications",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
@@ -20313,9 +20518,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -20402,6 +20605,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-3a28c66df32b57d2",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
         "EV-0d5a32aca724d30e",
@@ -20492,6 +20696,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-a3ccf873058bb406",
+        "EV-36a49fa0e0b96d95",
         "EV-ce32954014cb030d",
         "EV-3b30eda1326a6fb1",
         "EV-84baa23ade7a80e3",
@@ -20510,14 +20716,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-use_case-physical_automation",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
         "TX-product_form-ai_compute_system",
-        "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -20525,18 +20737,14 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
-        "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-physical_automation",
         "TX-use_case-customer_support",
         "TX-technology-agentic_execution",
         "TX-industry-agriculture",
-        "TX-industry-automotive_transportation",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
         "TX-industry-energy_utilities",
@@ -20547,8 +20755,6 @@
         "TX-industry-retail_ecommerce",
         "TX-deployment_model-cloud",
         "TX-technology-embodied_ai",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models",
         "TX-product_form-model_api_service",
         "TX-ai_market_application-chips",
         "TX-product_form-robotic_system",
@@ -20566,31 +20772,24 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-ea87a2bd84296f73",
@@ -20663,9 +20862,7 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -20698,6 +20895,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-decbf1a34be68603",
         "EV-d2247eeac1478994",
         "EV-6272444f30281858",
         "EV-f55d16df5b5fecb2",
@@ -20796,10 +20994,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-use_case-data_analysis",
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
-        "TX-industry-manufacturing",
         "TX-target_user-consumer",
         "TX-technology-agentic_execution",
         "TX-technology-mixture_of_experts",
@@ -20810,20 +21008,15 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
-        "EN-688f8db7018da7d4",
-        "EN-827b607311e6593e",
-        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
+        "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-0d4bbb73ac4c7513",
@@ -20865,8 +21058,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
-        "TX-product_form-model"
+        "TX-product_form-model",
+        "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [
         "EN-02be787a1aacea06",
@@ -20880,9 +21073,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -21092,19 +21283,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-manufacturing",
+        "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-product_form-ai_compute_system",
-        "TX-target_user-developer",
         "TX-use_case-research_discovery",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
@@ -21120,19 +21311,16 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -21140,7 +21328,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-ac123e56b0168ec2",
@@ -21230,14 +21418,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
+        "TX-use_case-physical_automation",
         "TX-use_case-research_discovery",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-media_entertainment",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
@@ -21295,8 +21483,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
-        "TX-product_form-model"
+        "TX-product_form-model",
+        "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-29",
@@ -21455,6 +21643,41 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-38792d4e9d2baccc",
+      "eventId": "EV-decbf1a34be68603",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "title": "Mistral 与 HUMAIN 达成战略合作，推进沙特及中东主权 AI",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HUMAIN",
+      "vendor": "Mistral",
+      "industry": "regulated industries",
+      "useCase": "推进沙特及中东主权 AI",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Mistral and HUMAIN today announced a strategic collaboration spanning AI infrastructure, advanced model development, and the deployment of AI solutions in Saudi Arabia and across the region. Together, the companies will pursue the development and localization of advanced AI models, with initial areas of focus including cybersecurity and voice. The companies also plan to develop frontier models that perform strongly in Arabic language to help support the broader region. This represents a collaboration in the hundreds of millions of Euros. As part of the collaboration, Mistral will explore using HUMAIN’s data center infrastructure to support growing local compute needs. HUMAIN and Mistral also plan to develop a joint go-to-market strategy in Saudi Arabia focused on bringing advanced AI solutions to regulated industries."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://mistral.ai/news/mistral-x-humain",
+      "entityIds": [
+        "EN-920510199770f4d6",
+        "EN-af3f46061841591d",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
     {
       "id": "FDE-ed781e27a7b9458e",
       "eventId": "EV-129ffa6be41bb485",
@@ -21705,6 +21928,55 @@
   "hardware": [],
   "fdeDossiers": [
     {
+      "id": "FDED-d0652b9b6640a439",
+      "implementationKey": "d0652b9b6640a439",
+      "eventId": "EV-decbf1a34be68603",
+      "eventIds": [
+        "EV-decbf1a34be68603"
+      ],
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "title": "HUMAIN × Mistral：推进沙特及中东主权 AI",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HUMAIN",
+      "vendor": "Mistral",
+      "industry": "regulated industries",
+      "useCase": "推进沙特及中东主权 AI",
+      "workflow": "未披露",
+      "systems": [
+        "HUMAIN's data center infrastructure"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.75,
+      "completenessPercent": 75,
+      "missingFields": [
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0591e5c8bcb95bb2",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-24",
+          "dataDate": "2026-08-25",
+          "eventId": "EV-decbf1a34be68603",
+          "eventTitle": "Mistral 与 HUMAIN 达成战略合作，推进沙特及中东主权 AI",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://mistral.ai/news/mistral-x-humain",
+      "entityIds": [
+        "EN-920510199770f4d6",
+        "EN-af3f46061841591d",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
+    {
       "id": "FDED-5bc72342f3066892",
       "implementationKey": "5bc72342f3066892",
       "eventId": "EV-129ffa6be41bb485",
@@ -21807,6 +22079,70 @@
       "entityIds": [
         "EN-916a98f0fa2a39af",
         "EN-7d3194f79e645c42"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-92c9b268b7ac18e5",
+      "snapshotKey": "92c9b268b7ac18e5",
+      "snapshotId": "HWS-428f17fc9e5b52f8",
+      "eventId": "EV-decbf1a34be68603",
+      "eventIds": [
+        "EV-decbf1a34be68603"
+      ],
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
+      "title": "Mistral",
+      "subject": "Mistral",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ecf62a0ee9f7f18f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-ecf62a0ee9f7f18f",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-24T00:00:00.000Z",
+          "subject_entity_id": "EN-920510199770f4d6",
+          "subject_name": "Mistral",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Mistral and HUMAIN today announced a strategic collaboration spanning AI infrastructure, advanced model development, and the deployment of AI solutions in Saudi Arabia and across the region. Together, the companies will pursue the development and localization of advanced AI models, with initial areas of focus including cybersecurity and voice. The companies also plan to develop frontier models that perform strongly in Arabic language to help support the broader region. This represents a collaboration in the hundreds of millions of Euros. As part of the collaboration, Mistral will explore using HUMAIN’s data center infrastructure to support growing local compute needs. HUMAIN and Mistral also plan to develop a joint go-to-market strategy in Saudi Arabia focused on bringing advanced AI solutions to regulated industries.",
+          "event_refs": [
+            "EV-decbf1a34be68603"
+          ],
+          "claim_ref": "CL-a0f76d6bf5c200af",
+          "source_refs": [
+            "SA-5532cf5c355c4562"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://mistral.ai/news/mistral-x-humain",
+      "entityIds": [
+        "EN-920510199770f4d6",
+        "EN-af3f46061841591d",
+        "EN-9fbf261b62c1d7c0"
       ]
     }
   ]

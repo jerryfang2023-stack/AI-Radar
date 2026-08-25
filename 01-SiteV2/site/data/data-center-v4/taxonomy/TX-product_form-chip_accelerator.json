@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -72,6 +72,7 @@
       "EV-93fad8e0e30e442c",
       "EV-3d8608d3e78e031b",
       "EV-8fcb52bb6ec980af",
+      "EV-18faec4bf4efe7db",
       "EV-9d824ab9d0b0c6b5",
       "EV-78651dfea74b4323",
       "EV-d93dd19a481307ec",
@@ -173,6 +174,7 @@
       "EN-51a3a4589db68480",
       "EN-222f930b87524636",
       "EN-f4bec299df3f4f27",
+      "EN-77b30b8a88051252",
       "EN-0e61c365bbad9649",
       "EN-99d3fd0fa8fe115e",
       "EN-83eb1cb31148698f",
@@ -225,6 +227,7 @@
       "HW-ceb55d9bc637c1d3",
       "HW-1dbfe359ae73ed38",
       "HW-b32e61f6ea5c1646",
+      "HW-7183f28980038937",
       "HW-da04d48165a60f76",
       "HW-25eea5677838fb54",
       "HW-b0c753b9501f996e",
@@ -242,7 +245,7 @@
       "HW-4c176e4c40871adc"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-08-24"
+    "lastSeen": "2026-08-25"
   },
   "events": [
     {
@@ -14577,6 +14580,96 @@
       "publisher": "furiosa.ai"
     },
     {
+      "id": "EV-18faec4bf4efe7db",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "updatedDate": "2026-08-25",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cerebras 发布 CS-4，同款芯片性能提升 2 倍",
+      "originalTitle": "Cerebras unveils CS-4 with double the performance on the same chip",
+      "subject": "Cerebras",
+      "action": "unveils CS-4 with double the performance on the same chip",
+      "object": "Cerebras unveils CS-4 with double the performance on the same chip",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-77b30b8a88051252"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180"
+      ],
+      "entityNames": [
+        "Cerebras",
+        "CS-4"
+      ],
+      "productName": "CS-4",
+      "products": [
+        {
+          "name": "CS-4",
+          "type": "AI 硬件",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/cerebras-unveils-cs-4-with-double-the-performance-on-the-same-chip",
+      "publisher": "The Decoder AI News"
+    },
+    {
       "id": "EV-9d824ab9d0b0c6b5",
       "dataDate": "2026-08-24",
       "date": "2026-08-23",
@@ -14891,9 +14984,9 @@
     },
     {
       "id": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-24",
+      "dataDate": "2026-08-25",
       "date": "2026-08-19",
-      "updatedDate": "2026-08-24",
+      "updatedDate": "2026-08-25",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "eventGroup": "AI 硬件",
@@ -22391,13 +22484,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-ai_compute_system",
-        "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -22410,9 +22503,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -22499,6 +22590,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-3a28c66df32b57d2",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
         "EV-0d5a32aca724d30e",
@@ -22589,6 +22681,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-a3ccf873058bb406",
+        "EV-36a49fa0e0b96d95",
         "EV-ce32954014cb030d",
         "EV-3b30eda1326a6fb1",
         "EV-84baa23ade7a80e3",
@@ -22607,14 +22701,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-use_case-physical_automation",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
         "TX-product_form-ai_compute_system",
-        "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -22622,18 +22722,14 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
-        "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-physical_automation",
         "TX-use_case-customer_support",
         "TX-technology-agentic_execution",
         "TX-industry-agriculture",
-        "TX-industry-automotive_transportation",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
         "TX-industry-energy_utilities",
@@ -22644,8 +22740,6 @@
         "TX-industry-retail_ecommerce",
         "TX-deployment_model-cloud",
         "TX-technology-embodied_ai",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models",
         "TX-product_form-model_api_service",
         "TX-ai_market_application-chips",
         "TX-product_form-robotic_system",
@@ -22663,31 +22757,24 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -22732,12 +22819,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
-        "TX-use_case-software_development",
         "TX-industry-manufacturing",
         "TX-product_form-model",
-        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
+        "TX-product_form-ai_compute_system",
+        "TX-use_case-software_development",
+        "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-product_form-robotic_system",
@@ -22769,8 +22856,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -22794,15 +22881,15 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
+        "TX-use_case-physical_automation",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-use_case-physical_automation",
-        "TX-industry-automotive_transportation",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -22824,10 +22911,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
@@ -22850,8 +22937,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -22876,13 +22963,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
         "TX-use_case-research_discovery",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-industry-financial_services",
         "TX-ai_market_application-chips"
@@ -22913,13 +23000,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-industry-automotive_transportation",
         "TX-industry-energy_utilities",
         "TX-ai_market_application-chips",
         "TX-use_case-design_engineering"
@@ -22969,8 +23056,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -22994,15 +23081,15 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
-        "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-industry-automotive_transportation",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -23067,8 +23154,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -23092,13 +23179,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
-        "TX-target_user-business_user",
-        "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
-        "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
+        "TX-use_case-physical_automation",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-target_user-business_user",
+        "TX-product_form-chip_accelerator",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_application-chips"
       ],
@@ -23122,8 +23209,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -23146,10 +23233,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service"
       ],
@@ -23173,8 +23260,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-chips"
@@ -23199,11 +23286,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-industry-manufacturing",
         "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -23227,8 +23314,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -23252,12 +23339,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
-        "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-industry-automotive_transportation",
         "TX-ai_market_application-chips",
         "TX-use_case-design_engineering"
       ],
@@ -23280,10 +23367,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
         "TX-product_form-ai_infrastructure_software",
         "TX-use_case-productivity_enterprise_workflows",
@@ -23310,14 +23397,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-industry-automotive_transportation",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -23340,11 +23427,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-target_user-business_user",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-model_deployment",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
@@ -23369,14 +23456,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-automotive_transportation",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
         "TX-use_case-research_discovery",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
-        "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_application-chips"
       ],
@@ -23400,9 +23487,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
         "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
@@ -23426,14 +23513,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-manufacturing",
+        "TX-target_user-developer",
+        "TX-use_case-physical_automation",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-use_case-physical_automation",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -23500,12 +23587,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
-        "TX-target_user-developer",
-        "TX-target_user-researcher",
-        "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-product_form-ai_compute_system",
+        "TX-target_user-researcher",
+        "TX-target_user-business_user",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
@@ -23810,6 +23897,30 @@
       "lastSeen": "2026-08-08"
     },
     {
+      "id": "EN-77b30b8a88051252",
+      "name": "Cerebras",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-18faec4bf4efe7db",
+        "EV-2c6707327367640f",
+        "EV-d26a532231315278"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-25"
+    },
+    {
       "id": "EN-0e61c365bbad9649",
       "name": "内存成本飙升",
       "entityType": "organization_candidate",
@@ -23857,7 +23968,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-19",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-83eb1cb31148698f",
@@ -23874,9 +23985,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-government_public_sector",
         "TX-product_form-ai_compute_system",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-technology-fine_tuning"
       ],
@@ -23989,11 +24100,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-use_case-data_analysis",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-ai_market_category-enterprise_applications",
@@ -24044,8 +24155,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-government_public_sector",
         "TX-product_form-model",
+        "TX-industry-government_public_sector",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
@@ -24610,6 +24721,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-4927409c0f4b3ef3",
         "EV-d4af2db7a4759431",
         "EV-30211b84aacd0598",
         "EV-a09f6e93ad868a57",
@@ -24794,6 +24906,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-da06805e06990d63",
         "EV-11a0afc2ecb6e42e",
@@ -24867,9 +24980,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-government_public_sector",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
         "TX-target_user-developer",
+        "TX-industry-aerospace_defense",
+        "TX-industry-government_public_sector",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -24877,7 +24994,6 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
@@ -24890,8 +25006,6 @@
         "TX-industry-legal_services",
         "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-target_user-educator",
@@ -24903,10 +25017,11 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-9f15bb7e29e191eb",
         "EN-240389f4b730bad4",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
-        "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
@@ -24919,7 +25034,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -24929,7 +25043,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-042e9398f2cc8902",
@@ -25064,6 +25178,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-92634b09de96ca83",
         "EV-2afe102017e1b21c",
         "EV-44a833fe8dd16006",
         "EV-7a116596551ff8c7",
@@ -25262,6 +25377,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-93cbf506bc54b34e",
+        "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-ce32954014cb030d",
         "EV-00ffb2c501a37ec8",
@@ -25337,6 +25454,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -25346,7 +25464,6 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
@@ -25395,7 +25512,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -25569,14 +25686,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
+        "TX-use_case-physical_automation",
         "TX-use_case-research_discovery",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-media_entertainment",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
@@ -25612,8 +25729,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-software_development",
         "TX-product_form-model",
+        "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation"
       ],
@@ -25638,8 +25755,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-product_form-model",
+        "TX-target_user-business_user",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator"
       ],
@@ -25705,16 +25822,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-industry-manufacturing",
-        "TX-product_form-model",
-        "TX-product_form-chip_accelerator",
-        "TX-industry-automotive_transportation",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models"
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [
         "EN-7d1507284a5757ca"
@@ -26024,9 +26141,37 @@
   ],
   "hardware": [
     {
+      "id": "HW-7183f28980038937",
+      "eventId": "EV-18faec4bf4efe7db",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-24",
+      "title": "Cerebras 发布 CS-4，同款芯片性能提升 2 倍",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "CS-4 AI accelerator",
+      "supplier": "Cerebras",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/cerebras-unveils-cs-4-with-double-the-performance-on-the-same-chip",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-08-24",
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180"
+      ]
+    },
+    {
       "id": "HW-da04d48165a60f76",
       "eventId": "EV-d93dd19a481307ec",
-      "dataDate": "2026-08-24",
+      "dataDate": "2026-08-25",
       "date": "2026-08-19",
       "title": "韩国首款主权 AI 一体机出货：国产芯片、国产 LLM 集成于单台服务器",
       "hardwareType": "ai_accelerator",
@@ -27115,13 +27260,13 @@
     {
       "id": "HWC-acba324ff85c02ba",
       "snapshotKey": "acba324ff85c02ba",
-      "snapshotId": "HWS-9f5ea0886bccdad8",
+      "snapshotId": "HWS-65430b44ee1bb529",
       "eventId": "EV-d93dd19a481307ec",
       "eventIds": [
         "EV-d93dd19a481307ec"
       ],
-      "dataDate": "2026-08-24",
-      "date": "2026-08-24",
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
       "title": "AI Appliance Ships / First Sovereign AI Appliance",
       "subject": "KT",
       "productNames": [
@@ -27136,12 +27281,21 @@
         "product": {
           "metric_value": "32",
           "unit": "billion",
-          "fact_ref": "HWF-1239c2f1f4a8b4c8"
+          "fact_ref": "HWF-21ab13e4eeb4edcf"
         }
       },
       "factCount": 2,
-      "snapshotCount": 5,
+      "snapshotCount": 6,
       "changes": [
+        {
+          "date": "2026-08-25",
+          "previousDate": "2026-08-24",
+          "snapshotId": "HWS-65430b44ee1bb529",
+          "previousSnapshotId": "HWS-9f5ea0886bccdad8",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-24",
           "previousDate": "2026-08-23",
@@ -27183,8 +27337,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-24",
-          "hardware_fact_id": "HWF-1e079b9acf19bd10",
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-bfe2a3941cbd58c3",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -27204,15 +27358,15 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-a59678c0181a54df",
+          "claim_ref": "CL-b84439f171cd9e1c",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-24",
-          "hardware_fact_id": "HWF-1239c2f1f4a8b4c8",
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-21ab13e4eeb4edcf",
           "fact_type": "product",
           "observed_at": "2026-08-19T15:50:41.000Z",
           "subject_entity_id": "EN-99d3fd0fa8fe115e",
@@ -27232,11 +27386,11 @@
           "event_refs": [
             "EV-d93dd19a481307ec"
           ],
-          "claim_ref": "CL-c249aa9956f19548",
+          "claim_ref": "CL-8ec555b2156d4f53",
           "source_refs": [
             "SA-30a50d9be011e4c2"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-24/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -27249,6 +27403,185 @@
         "EN-c70eca6b0f88f44d",
         "EN-7d3c8fb6fa445060",
         "EN-b563f0c46d6f78f8"
+      ]
+    },
+    {
+      "id": "HWC-910902f8a2628234",
+      "snapshotKey": "910902f8a2628234",
+      "snapshotId": "HWS-5a57a0524ae6307a",
+      "eventId": "EV-18faec4bf4efe7db",
+      "eventIds": [
+        "EV-18faec4bf4efe7db",
+        "EV-2c6707327367640f"
+      ],
+      "dataDate": "2026-08-25",
+      "date": "2026-08-25",
+      "title": "CS-4 / WSE-3 Turbo",
+      "subject": "Cerebras",
+      "productNames": [
+        "CS-4",
+        "WSE-3 Turbo"
+      ],
+      "hardwareType": "semiconductor / ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b2d3af2493aaef06"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 3,
+      "changes": [
+        {
+          "date": "2026-08-25",
+          "previousDate": "2026-08-20",
+          "snapshotId": "HWS-5a57a0524ae6307a",
+          "previousSnapshotId": "HWS-e30e468f9e53cd4d",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-20",
+          "previousDate": "2026-08-19",
+          "snapshotId": "HWS-e30e468f9e53cd4d",
+          "previousSnapshotId": "HWS-52c321fc05062711",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-5df91bc69e181dd9",
+          "fact_type": "product",
+          "observed_at": "2026-08-24T10:16:06.000Z",
+          "subject_entity_id": "EN-77b30b8a88051252",
+          "subject_name": "Cerebras",
+          "product_entity_ids": [
+            "EN-49dba228d91e7180"
+          ],
+          "product_names": [
+            "CS-4"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Cerebras unveils CS-4 with double the performance on the same chip",
+          "event_refs": [
+            "EV-18faec4bf4efe7db"
+          ],
+          "claim_ref": "CL-1a9868119d8e05dd",
+          "source_refs": [
+            "SA-fc20ec6d49b9d914"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-a28270cf1c8b53a0",
+          "fact_type": "product",
+          "observed_at": "2026-08-24T10:16:06.000Z",
+          "subject_entity_id": "EN-77b30b8a88051252",
+          "subject_name": "Cerebras",
+          "product_entity_ids": [
+            "EN-49dba228d91e7180"
+          ],
+          "product_names": [
+            "CS-4"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Cerebras unveils CS-4 with double the performance on the same chip",
+          "event_refs": [
+            "EV-18faec4bf4efe7db"
+          ],
+          "claim_ref": "CL-36c05ca628e877f7",
+          "source_refs": [
+            "SA-fc20ec6d49b9d914"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-95eea6080043fb3f",
+          "fact_type": "product",
+          "observed_at": "2026-08-24T10:16:06.000Z",
+          "subject_entity_id": "EN-77b30b8a88051252",
+          "subject_name": "Cerebras",
+          "product_entity_ids": [
+            "EN-49dba228d91e7180"
+          ],
+          "product_names": [
+            "CS-4"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Cerebras has introduced its CS-4 AI accelerator, which CEO Andrew Feldman calls the fastest system in the industry.",
+          "event_refs": [
+            "EV-18faec4bf4efe7db"
+          ],
+          "claim_ref": "CL-0b9ee5df94c8a690",
+          "source_refs": [
+            "SA-fc20ec6d49b9d914"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-25",
+          "hardware_fact_id": "HWF-b2d3af2493aaef06",
+          "fact_type": "product",
+          "observed_at": "2026-08-24T10:16:06.000Z",
+          "subject_entity_id": "EN-77b30b8a88051252",
+          "subject_name": "Cerebras",
+          "product_entity_ids": [
+            "EN-49dba228d91e7180"
+          ],
+          "product_names": [
+            "CS-4"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Cerebras has introduced its CS-4 AI accelerator, which CEO Andrew Feldman calls the fastest system in the industry.",
+          "event_refs": [
+            "EV-18faec4bf4efe7db"
+          ],
+          "claim_ref": "CL-b5eecba8b461949f",
+          "source_refs": [
+            "SA-fc20ec6d49b9d914"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/cerebras-unveils-cs-4-with-double-the-performance-on-the-same-chip",
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180",
+        "EN-6eb8882ab15df1c2"
       ]
     },
     {

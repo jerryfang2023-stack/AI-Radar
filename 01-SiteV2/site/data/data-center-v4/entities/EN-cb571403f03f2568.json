@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,19 +22,22 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-6335e26b632ba0a3"
+      "EV-6335e26b632ba0a3",
+      "EV-6872f7635267e39c"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-09",
-    "lastSeen": "2026-07-09",
+    "lastSeen": "2026-08-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-6335e26b632ba0a3"
       ],
-      "deployments": [],
+      "deployments": [
+        "EV-6872f7635267e39c"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
@@ -42,6 +45,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6872f7635267e39c",
+        "dataDate": "2026-08-25",
+        "date": "2026-08-24",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "汤森路透押注4000万美元自研AI，而非租用OpenAI或Anthropic",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cb571403f03f2568",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-6335e26b632ba0a3",
         "dataDate": "2026-07-09",

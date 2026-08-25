@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "institution": {
@@ -21,16 +21,54 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-08-24",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-ff94cbd072306cdd",
+        "funding_insight_id": "FI-aafcd4003122330e",
+        "event_ids": [
+          "EV-4a3fa2b57b7ce64a"
+        ],
+        "company_entity_id": "EN-dc8a5a5bf80909de",
+        "company_canonical_entity_id": "",
+        "company_name": "General Intuition",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "新一轮融资（Series B谈判中）",
+        "amount_original": "$6 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "60 亿美元"
+        },
+        "announced_at": "2026-08-24",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4636abec463123a9",
+            "source_url": "https://gamesbeat.com/general-intuition-raises-320m-at-2-3b-valuation-for-ai-frontier-models-based-on-gameplay-exclusive-interview/",
+            "source_title": "General Intuition raises $320M at $2.3B valuation for AI frontier models based on gameplay | exclusive interview - GamesBeat",
+            "source_content_hash": "299bbd384703abca",
+            "quote": "Others investors include General Catalyst, Hedosophia, Jeff Bezos, Eric Schmidt and Nico Rosberg.",
+            "quote_hash": "6b3050dd8661320fbb8ffced70a7cb014cc88c29a30bcf6d163e33337e1e4286"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1a599bb330de6e4b",
         "funding_insight_id": "FI-664cc90f57688153",
@@ -71,6 +109,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4636abec463123a9",
+        "source_url": "https://gamesbeat.com/general-intuition-raises-320m-at-2-3b-valuation-for-ai-frontier-models-based-on-gameplay-exclusive-interview/",
+        "source_title": "General Intuition raises $320M at $2.3B valuation for AI frontier models based on gameplay | exclusive interview - GamesBeat",
+        "source_content_hash": "299bbd384703abca",
+        "quote": "Others investors include General Catalyst, Hedosophia, Jeff Bezos, Eric Schmidt and Nico Rosberg.",
+        "quote_hash": "6b3050dd8661320fbb8ffced70a7cb014cc88c29a30bcf6d163e33337e1e4286"
+      },
       {
         "source_id": "FISRC-ce83b857608dabeb",
         "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",

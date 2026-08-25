@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-24T03:05:49.933Z",
-    "latestDataDate": "2026-08-24",
-    "currentDate": "2026-08-24",
-    "eventCount": 2338,
+    "generatedAt": "2026-08-25T03:21:37.009Z",
+    "latestDataDate": "2026-08-25",
+    "currentDate": "2026-08-25",
+    "eventCount": 2367,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d56489fc2570b95e",
       "EV-7a116596551ff8c7",
       "EV-597a6d51533fe5d6",
       "EV-05fea7a5d8b8db46",
@@ -49,7 +50,7 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-24",
+    "lastSeen": "2026-08-25",
     "relationIds": [
       "REL2-b2fd7c5284307b20",
       "REL2-10ceb94d03e5bd63",
@@ -69,6 +70,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-d56489fc2570b95e",
         "EV-7a116596551ff8c7",
         "EV-597a6d51533fe5d6",
         "EV-05fea7a5d8b8db46",
@@ -96,6 +98,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-d56489fc2570b95e",
+        "dataDate": "2026-08-25",
+        "date": "2026-08-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "皮尤研究证实自ChatGPT发布以来，网络上AI生成文本急剧增加",
+        "displayTags": [],
+        "entityIds": [
+          "EN-21b65f709070675f",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
       {
         "id": "EV-7a116596551ff8c7",
         "dataDate": "2026-08-24",
@@ -580,6 +598,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-92634b09de96ca83",
         "EV-2afe102017e1b21c",
         "EV-44a833fe8dd16006",
         "EV-7a116596551ff8c7",
@@ -778,6 +797,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-93cbf506bc54b34e",
+        "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-ce32954014cb030d",
         "EV-00ffb2c501a37ec8",
@@ -853,6 +874,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -862,7 +884,6 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
@@ -911,7 +932,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-25"
     }
   ],
   "relationships": [
