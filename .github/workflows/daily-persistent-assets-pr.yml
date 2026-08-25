@@ -419,9 +419,22 @@ jobs:
           node agent-workflow/tools/build-data-center-v4.mjs --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-data-center-v4-model-rebuild.log"
 
+      - name: Repair required source-title translations
+        id: source-title-repair
+        if: steps.data-center-v4.outcome == 'success' && steps.data-center-v4-model-rebuild.outcome != 'failure'
+        shell: bash
+        run: |
+          set -euo pipefail
+          node agent-workflow/tools/backfill-source-title-translations.mjs \
+            --date="${RUN_DATE}" \
+            --write=true \
+            --concurrency=3
+          node agent-workflow/tools/normalize-source-intake-titles.mjs --date="${RUN_DATE}"
+          npm run assert:source-titles
+
       - name: Run Data Center V4 integrity gate
         id: data-center-v4-gate
-        if: always() && steps.data-center-v4.outcome == 'success' && steps.data-center-v4-model-rebuild.outcome != 'failure'
+        if: always() && steps.data-center-v4.outcome == 'success' && steps.data-center-v4-model-rebuild.outcome != 'failure' && steps.source-title-repair.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
