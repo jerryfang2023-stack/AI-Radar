@@ -12,6 +12,7 @@ const args = new Map(
 
 const date = args.get("date") || shanghaiDate();
 const force = args.get("force") === "true";
+const graceMs = Math.max(0, Number(args.get("grace-ms") || "15000") || 0);
 const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
 const incidentDir = path.resolve(root, args.get("incident-dir") || path.join("agent-workflow", "inbox", "production-incidents"));
 const phases = ["morning", "recovery", "closure"];
@@ -86,6 +87,19 @@ function inspectPhase(phase) {
   };
 }
 
+function inspectControllersWithGrace(inWindow) {
+  let controllers = phases.map(inspectPhase);
+  if (!inWindow || graceMs === 0 || controllers.every((item) => item.observable)) return controllers;
+  const deadline = Date.now() + graceMs;
+  const sleeper = new Int32Array(new SharedArrayBuffer(4));
+  while (Date.now() < deadline) {
+    Atomics.wait(sleeper, 0, 0, Math.min(500, deadline - Date.now()));
+    controllers = phases.map(inspectPhase);
+    if (controllers.every((item) => item.observable)) break;
+  }
+  return controllers;
+}
+
 function writeReport(payload) {
   fs.mkdirSync(reportsDir, { recursive: true });
   const jsonFile = path.join(reportsDir, `${date}-hermes-control-plane-watchdog.json`);
@@ -152,7 +166,7 @@ function writeIncident(payload, reportFile) {
 function main() {
   if (!date) throw new Error("Unable to resolve Asia/Shanghai production date.");
   const inWindow = force || hasWindowPassed(date, "10:20");
-  const controllers = phases.map(inspectPhase);
+  const controllers = inspectControllersWithGrace(inWindow);
   const missingOrInvalid = inWindow ? controllers.filter((item) => !item.observable) : [];
   const status = !inWindow ? "waiting" : missingOrInvalid.length ? "manual_required" : "passed";
   const payload = {

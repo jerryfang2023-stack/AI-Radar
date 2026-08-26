@@ -90,6 +90,7 @@ function Register-ControllerTask {
   )
   $time = [DateTime]::ParseExact($At, "HH:mm", [Globalization.CultureInfo]::InvariantCulture)
   $argument = '"' + $Runner + '" --phase=' + $Phase
+  $argument += ' --scheduled=true'
   if ($Phase -eq "closure") {
     $argument += ' --invoke-codex=true --codex-command="' + $CodexExecutable + '"'
   }

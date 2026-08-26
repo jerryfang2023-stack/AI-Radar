@@ -248,7 +248,7 @@ try {
       Invoke-NpmStep -Name "collect" -Arguments @("run", "collect:community-intelligence")
       $today = Get-BeijingDate
       Invoke-NpmStep -Name "translate" -Arguments @("run", "translate:community-intelligence", "--", "--date=$today")
-      Invoke-NpmStep -Name "assert" -Arguments @("run", "assert:community-intelligence", "--", "--date=$today")
+      Invoke-NpmStep -Name "assert" -Arguments @("run", "assert:community-intelligence", "--", "--date=$today", "--reports-dir=$RuntimePath")
 
       $dataPath = Join-Path $repo "01-SiteV2\site\data\community-intelligence.json"
       if (-not (Test-Path -LiteralPath $dataPath)) {
