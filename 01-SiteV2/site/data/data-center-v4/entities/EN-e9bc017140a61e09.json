@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-e9bc017140a61e09",
+    "name": "Ultrafast Frontier Inference",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-d26a532231315278"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-25",
+    "lastSeen": "2026-08-26",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-d26a532231315278"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-d26a532231315278",
+        "dataDate": "2026-08-26",
+        "date": "2026-08-25",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "超快前沿推理：Cerebras 在 Hot Chips 2026 的深度解析",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-77b30b8a88051252"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-77b30b8a88051252",
+          "EN-49dba228d91e7180",
+          "EN-e9bc017140a61e09"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-53c93a5ce3166528",
+      "eventId": "EV-d26a532231315278",
+      "dataDate": "2026-08-26",
+      "date": "2026-08-25",
+      "title": "超快前沿推理：Cerebras 在 Hot Chips 2026 的深度解析",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Cerebras",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://cerebras.ai/blog/ultrafast-frontier-inference-cerebras-deep-dive-at-hot-chips-2026",
+      "sourceName": "Cerebras：Blog（网页）",
+      "sourceDate": "2026-08-25",
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180",
+        "EN-e9bc017140a61e09"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-910902f8a2628234",
+      "snapshotKey": "910902f8a2628234",
+      "snapshotId": "HWS-640044aee553fb3d",
+      "eventId": "EV-d26a532231315278",
+      "eventIds": [
+        "EV-d26a532231315278",
+        "EV-18faec4bf4efe7db",
+        "EV-2c6707327367640f"
+      ],
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "title": "CS-4 / Ultrafast Frontier Inference / WSE-3 Turbo",
+      "subject": "Cerebras",
+      "productNames": [
+        "CS-4",
+        "Ultrafast Frontier Inference",
+        "WSE-3 Turbo"
+      ],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-823842e7f55dcf8c"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 4,
+      "changes": [
+        {
+          "date": "2026-08-26",
+          "previousDate": "2026-08-25",
+          "snapshotId": "HWS-640044aee553fb3d",
+          "previousSnapshotId": "HWS-5a57a0524ae6307a",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-25",
+          "previousDate": "2026-08-20",
+          "snapshotId": "HWS-5a57a0524ae6307a",
+          "previousSnapshotId": "HWS-e30e468f9e53cd4d",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-20",
+          "previousDate": "2026-08-19",
+          "snapshotId": "HWS-e30e468f9e53cd4d",
+          "previousSnapshotId": "HWS-52c321fc05062711",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-26",
+          "hardware_fact_id": "HWF-823842e7f55dcf8c",
+          "fact_type": "product",
+          "observed_at": "2026-08-25T00:00:00.000Z",
+          "subject_entity_id": "EN-77b30b8a88051252",
+          "subject_name": "Cerebras",
+          "product_entity_ids": [
+            "EN-49dba228d91e7180",
+            "EN-e9bc017140a61e09"
+          ],
+          "product_names": [
+            "CS-4",
+            "Ultrafast Frontier Inference"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Last week at Supernova 2026, Cerebras introduced CS-4 : the fastest AI accelerator in the industry and the first system built on the new Cerebras Nexus rack-scale platform.",
+          "event_refs": [
+            "EV-d26a532231315278"
+          ],
+          "claim_ref": "CL-bf4c21357faf7eb9",
+          "source_refs": [
+            "SA-3b6e9c1656811a71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-77b30b8a88051252"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://cerebras.ai/blog/ultrafast-frontier-inference-cerebras-deep-dive-at-hot-chips-2026",
+      "entityIds": [
+        "EN-77b30b8a88051252",
+        "EN-49dba228d91e7180",
+        "EN-e9bc017140a61e09",
+        "EN-6eb8882ab15df1c2"
+      ]
+    }
+  ]
+}

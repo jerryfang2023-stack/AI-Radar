@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23
   },
   "institution": {
@@ -20,14 +20,14 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "first_disclosed_at": "2025-10-28",
-    "latest_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-08-25",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1,
+      "lead": 2,
       "participant": 3
     },
     "round_codes": [
@@ -55,9 +55,52 @@
         "entity_id": "EN-a9aff9e0737a5d4a",
         "canonical_entity_id": "",
         "name": "Mem0"
+      },
+      {
+        "entity_id": "EN-3b3ed571bbb19504",
+        "canonical_entity_id": "",
+        "name": "Ringg"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6b49592612a33129",
+        "funding_insight_id": "FI-164f373b7879a941",
+        "event_ids": [
+          "EV-3ee6b5e876146bb3"
+        ],
+        "company_entity_id": "EN-3b3ed571bbb19504",
+        "company_canonical_entity_id": "",
+        "company_name": "Ringg",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-08-25",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-355d8aee33bd32ed",
+            "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
+            "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
+            "source_content_hash": "bd8d4c58629e67c5",
+            "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
+            "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a343bb65e2c0906b",
         "funding_insight_id": "FI-5d8eab3e612ca748",
@@ -258,6 +301,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-355d8aee33bd32ed",
+        "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
+        "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
+        "source_content_hash": "bd8d4c58629e67c5",
+        "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
+        "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
+      },
       {
         "source_id": "FISRC-c3267e56ad969be2",
         "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",

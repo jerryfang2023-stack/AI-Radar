@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-08-25T04:08:50.328Z",
+    "generated_at": "2026-08-26T03:47:23.075Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1314,
-    "evidence_backed_count": 1314,
-    "current_round_activity_count": 1515,
+    "institution_count": 1323,
+    "evidence_backed_count": 1323,
+    "current_round_activity_count": 1522,
     "individual_investor_count": 182,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -7296,12 +7296,12 @@
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
       "current_round_count": 10,
-      "historical_or_ambiguous_count": 3,
+      "historical_or_ambiguous_count": 4,
       "portfolio_company_count": 7,
       "first_disclosed_at": "2025-03-03",
-      "latest_disclosed_at": "2026-08-10",
+      "latest_disclosed_at": "2026-08-25",
       "role_counts": {
-        "historical_or_ambiguous": 3,
+        "historical_or_ambiguous": 4,
         "lead": 6,
         "participant": 4
       },
@@ -7352,6 +7352,44 @@
         }
       ],
       "activities": [
+        {
+          "activity_id": "IA-1ef9805b15b8d528",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2022 年 1.01 亿美元融资领投方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-2a3c20bc832bd7ef",
+              "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+              "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+              "source_content_hash": "871d436c27d08479",
+              "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+              "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+            }
+          ]
+        },
         {
           "activity_id": "IA-462b44e0de4ba2ea",
           "funding_insight_id": "FI-f55b62cf10cb7c98",
@@ -7860,6 +7898,14 @@
         }
       ],
       "evidence": [
+        {
+          "source_id": "FISRC-2a3c20bc832bd7ef",
+          "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+          "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+          "source_content_hash": "871d436c27d08479",
+          "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+          "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+        },
         {
           "source_id": "FISRC-077b1124fc8e9581",
           "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
@@ -8644,13 +8690,13 @@
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
       "current_round_count": 8,
-      "historical_or_ambiguous_count": 2,
+      "historical_or_ambiguous_count": 3,
       "portfolio_company_count": 6,
       "first_disclosed_at": "2023-04-27",
-      "latest_disclosed_at": "2026-08-10",
+      "latest_disclosed_at": "2026-08-25",
       "role_counts": {
         "co_lead": 1,
-        "historical_or_ambiguous": 2,
+        "historical_or_ambiguous": 3,
         "lead": 3,
         "participant": 4
       },
@@ -8696,6 +8742,44 @@
         }
       ],
       "activities": [
+        {
+          "activity_id": "IA-f4cf362c0b3d249f",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2022 年 1.01 亿美元融资领投方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-2a3c20bc832bd7ef",
+              "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+              "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+              "source_content_hash": "871d436c27d08479",
+              "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+              "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+            }
+          ]
+        },
         {
           "activity_id": "IA-5f1ce199a0098494",
           "funding_insight_id": "FI-f55b62cf10cb7c98",
@@ -9088,6 +9172,14 @@
         }
       ],
       "evidence": [
+        {
+          "source_id": "FISRC-2a3c20bc832bd7ef",
+          "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+          "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+          "source_content_hash": "871d436c27d08479",
+          "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+          "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+        },
         {
           "source_id": "FISRC-077b1124fc8e9581",
           "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
@@ -10580,6 +10672,344 @@
           "source_content_hash": "7b9abba5d20c0d6e",
           "quote": "a series D funding round led by Salesforce",
           "quote_hash": "dc679f5e5dedcbaac48269cd2e5d3992c2bbd56ef48c91e73fa4fb29cf203c21"
+        }
+      ]
+    },
+    {
+      "id": "INV-e6c1001c21765f",
+      "name": "AMD Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 6,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 6,
+      "first_disclosed_at": "2026-04-30",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "co_lead": 2,
+        "participant": 4
+      },
+      "round_codes": [
+        "multi_round",
+        "series_a",
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-ce31f92c521b7b08",
+          "canonical_entity_id": "EN-ce31f92c521b7b08",
+          "name": "Featherless.ai"
+        },
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_entity_id": "",
+          "name": "Hark"
+        },
+        {
+          "entity_id": "FICO-7e1d6c73932aa9b0",
+          "canonical_entity_id": "",
+          "name": "Odyssey ML"
+        },
+        {
+          "entity_id": "EN-8ab71d56a963f706",
+          "canonical_entity_id": "",
+          "name": "River AI"
+        },
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        },
+        {
+          "entity_id": "EN-3c1ae4e6276005e7",
+          "canonical_entity_id": "EN-3c1ae4e6276005e7",
+          "name": "TensorWave Inc."
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-3457dedc6b71576e",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+              "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote": "Two investment firms, AMD Ventures and Pacific Alliance Ventures, also took part.",
+              "quote_hash": "4fb0689898de7c251bf6ce182549c3ddebb3bf4a41fe74e9b6afa2695d45a2f4"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-29b984ac8a9199bd",
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "company_entity_id": "EN-8ab71d56a963f706",
+          "company_canonical_entity_id": "",
+          "company_name": "River AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-0deb7f666bec5423",
+              "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+              "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
+              "source_content_hash": "a44322af824e0f8f",
+              "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+              "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-5563a3c2a03b63a9",
+          "funding_insight_id": "FI-479f9d5c1123dba2",
+          "event_ids": [
+            "EV-a00763037a94d512"
+          ],
+          "company_entity_id": "FICO-7e1d6c73932aa9b0",
+          "company_canonical_entity_id": "",
+          "company_name": "Odyssey ML",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "3.1亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 310000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.1 亿美元"
+          },
+          "announced_at": "2026-06-17",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+              "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+              "source_content_hash": "75587989c4b9271c",
+              "quote": "with Amazon, AMD Ventures, GV, and others participating",
+              "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-f2361e00c180ee5b",
+          "funding_insight_id": "FI-1f714b499dc9751a",
+          "event_ids": [
+            "EV-6e516b6e68def9cf"
+          ],
+          "company_entity_id": "EN-3c1ae4e6276005e7",
+          "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
+          "company_name": "TensorWave Inc.",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "3.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-06-10",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
+              "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+              "source_content_hash": "1d75cf39c1185f55",
+              "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc.",
+              "quote_hash": "dd2543353f4695b34b5beac02a8a7e8144f8be797ce5e82b9d56fe409f2b4d4d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-55dae6d0d03318cc",
+          "funding_insight_id": "FI-35b63d84f1f7c2b0",
+          "event_ids": [
+            "EV-450f624a6a6446ce",
+            "EV-44c9a50b99c76a70"
+          ],
+          "company_entity_id": "EN-245f1e177c5169cb",
+          "company_canonical_entity_id": "",
+          "company_name": "Hark",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$700M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 700000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7 亿美元"
+          },
+          "announced_at": "2026-05-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-9b94f245fa27a161",
+              "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+              "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+              "source_content_hash": "e91739ca23d21469",
+              "quote": "AMD Ventures",
+              "quote_hash": "b7be16e935d6d168703bfc071a9bf91c18fea3a4a8b5e2d0e4ea96c18454db03"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-caf1dd47a1f09f13",
+          "funding_insight_id": "FI-93a42bdcb7635303",
+          "event_ids": [
+            "EV-6011ab83ebd290bd",
+            "EV-1abf0d076d30ec6d"
+          ],
+          "company_entity_id": "EN-ce31f92c521b7b08",
+          "company_canonical_entity_id": "EN-ce31f92c521b7b08",
+          "company_name": "Featherless.ai",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$20 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 20000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2000 万美元"
+          },
+          "announced_at": "2026-04-30",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-f5176e2201593c8e",
+              "source_url": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
+              "source_title": "AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施",
+              "source_content_hash": "415a2b10b75139c0",
+              "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
+              "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e825eacb926a575f",
+          "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+          "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+          "source_content_hash": "3f1c5718c2b6b5fd",
+          "quote": "Two investment firms, AMD Ventures and Pacific Alliance Ventures, also took part.",
+          "quote_hash": "4fb0689898de7c251bf6ce182549c3ddebb3bf4a41fe74e9b6afa2695d45a2f4"
+        },
+        {
+          "source_id": "FISRC-0deb7f666bec5423",
+          "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
+          "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
+          "source_content_hash": "a44322af824e0f8f",
+          "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
+          "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+        },
+        {
+          "source_id": "FISRC-e94365d0212a78f3",
+          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+          "source_content_hash": "75587989c4b9271c",
+          "quote": "with Amazon, AMD Ventures, GV, and others participating",
+          "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+        },
+        {
+          "source_id": "FISRC-e98aedbd2eaa6410",
+          "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
+          "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+          "source_content_hash": "1d75cf39c1185f55",
+          "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc.",
+          "quote_hash": "dd2543353f4695b34b5beac02a8a7e8144f8be797ce5e82b9d56fe409f2b4d4d"
+        },
+        {
+          "source_id": "FISRC-9b94f245fa27a161",
+          "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+          "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+          "source_content_hash": "e91739ca23d21469",
+          "quote": "AMD Ventures",
+          "quote_hash": "b7be16e935d6d168703bfc071a9bf91c18fea3a4a8b5e2d0e4ea96c18454db03"
+        },
+        {
+          "source_id": "FISRC-f5176e2201593c8e",
+          "source_url": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
+          "source_title": "AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施",
+          "source_content_hash": "415a2b10b75139c0",
+          "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
+          "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
         }
       ]
     },
@@ -12077,6 +12507,354 @@
       ]
     },
     {
+      "id": "INV-25dbfe1bcda658",
+      "name": "Peak XV Partners",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 5,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 5,
+      "first_disclosed_at": "2025-10-28",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "lead": 2,
+        "participant": 3
+      },
+      "round_codes": [
+        "multi_round",
+        "seed",
+        "series_a"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-fe301d1f025971a1",
+          "canonical_entity_id": "",
+          "name": "Discovered Materials"
+        },
+        {
+          "entity_id": "EN-eaa1c24270a0d057",
+          "canonical_entity_id": "",
+          "name": "Harper"
+        },
+        {
+          "entity_id": "EN-f346eaca864441f9",
+          "canonical_entity_id": "",
+          "name": "JustAI"
+        },
+        {
+          "entity_id": "EN-a9aff9e0737a5d4a",
+          "canonical_entity_id": "",
+          "name": "Mem0"
+        },
+        {
+          "entity_id": "EN-3b3ed571bbb19504",
+          "canonical_entity_id": "",
+          "name": "Ringg"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-6b49592612a33129",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
+              "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
+              "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-a343bb65e2c0906b",
+          "funding_insight_id": "FI-5d8eab3e612ca748",
+          "event_ids": [
+            "EV-c6cccaca326dfd45"
+          ],
+          "company_entity_id": "EN-fe301d1f025971a1",
+          "company_canonical_entity_id": "",
+          "company_name": "Discovered Materials",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$9 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 9000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "900 万美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-c3267e56ad969be2",
+              "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+              "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+              "source_content_hash": "c3f8c7225d49e92f",
+              "quote": "with investment from Peak XV Partners",
+              "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
+            },
+            {
+              "source_id": "FISRC-6ad648d48b556138",
+              "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
+              "source_title": "Discovered Materials Raises $9M in Seed Funding",
+              "source_content_hash": "bd47d3e50a1db886",
+              "quote": "with participation from Y Combinator and Peak XV Partners",
+              "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-9eb0011e52a75bb0",
+          "funding_insight_id": "FI-617705549a679908",
+          "event_ids": [
+            "EV-e7dcecaed5a0ee5b"
+          ],
+          "company_entity_id": "EN-f346eaca864441f9",
+          "company_canonical_entity_id": "",
+          "company_name": "JustAI",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$17 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 17000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1700 万美元"
+          },
+          "announced_at": "2026-06-23",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投，种子轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-058518ce11dc5f00",
+              "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
+              "source_title": "JustAI Raises $17M Series A to Build an Agentic Marketing Platform",
+              "source_content_hash": "80f6dde2ca5cd41c",
+              "quote": "The round was led by Base10 Partners, with participation from Y Combinator and Peak XV Partners.",
+              "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-3a61f597f86a2adf",
+          "funding_insight_id": "FI-9854c05d7208a585",
+          "event_ids": [
+            "EV-e3382d1c1d7db751"
+          ],
+          "company_entity_id": "EN-ee1e31ffef7dbe64",
+          "company_canonical_entity_id": "EN-ee1e31ffef7dbe64",
+          "company_name": "Sarvam",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "Series B",
+          "amount_original": "$234 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 234000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.34 亿美元"
+          },
+          "announced_at": "2026-06-15",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
+              "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+              "source_content_hash": "a56910704adc32b1",
+              "quote": "existing backers Khosla Ventures and Peak XV Partners",
+              "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-375cf965edb3f0f9",
+          "funding_insight_id": "FI-6d45b570f8bf6df7",
+          "event_ids": [
+            "EV-e4b3a19529576778"
+          ],
+          "company_entity_id": "EN-eaa1c24270a0d057",
+          "company_canonical_entity_id": "",
+          "company_name": "Harper",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "种子轮和A轮合并",
+          "amount_original": "$46.8 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 46800000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4680 万美元"
+          },
+          "announced_at": "2026-02-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-7f1c22fc0cc9f63f",
+              "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
+              "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
+              "source_content_hash": "88e3ca9ed4470da9",
+              "quote": "Investors in the company include YC, Lobster Capital, and Peak XV Partners",
+              "quote_hash": "f99567302db388c0f0e1bc1872b532b90bf6d6cce0efab2b158a6546e55060ce"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-7141ce424ad32428",
+          "funding_insight_id": "FI-128eef4a492e718e",
+          "event_ids": [
+            "EV-30466ebe86779a64"
+          ],
+          "company_entity_id": "EN-a9aff9e0737a5d4a",
+          "company_canonical_entity_id": "",
+          "company_name": "Mem0",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "Seed + Series A",
+          "amount_original": "$24M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 24000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2400 万美元"
+          },
+          "announced_at": "2025-10-28",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
+              "source_title": "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层",
+              "source_content_hash": "052a20f5aa557858",
+              "quote": "with participation from Peak XV Partners",
+              "quote_hash": "ac99930c703340d8ec2d59399d67e23f7ea69c04f832101069a9abbfed8fad52"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-355d8aee33bd32ed",
+          "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
+          "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
+          "source_content_hash": "bd8d4c58629e67c5",
+          "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
+          "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
+        },
+        {
+          "source_id": "FISRC-c3267e56ad969be2",
+          "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
+          "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
+          "source_content_hash": "c3f8c7225d49e92f",
+          "quote": "with investment from Peak XV Partners",
+          "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
+        },
+        {
+          "source_id": "FISRC-6ad648d48b556138",
+          "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
+          "source_title": "Discovered Materials Raises $9M in Seed Funding",
+          "source_content_hash": "bd47d3e50a1db886",
+          "quote": "with participation from Y Combinator and Peak XV Partners",
+          "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+        },
+        {
+          "source_id": "FISRC-058518ce11dc5f00",
+          "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
+          "source_title": "JustAI Raises $17M Series A to Build an Agentic Marketing Platform",
+          "source_content_hash": "80f6dde2ca5cd41c",
+          "quote": "The round was led by Base10 Partners, with participation from Y Combinator and Peak XV Partners.",
+          "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
+        },
+        {
+          "source_id": "FISRC-eb156fd01909fe18",
+          "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
+          "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+          "source_content_hash": "a56910704adc32b1",
+          "quote": "existing backers Khosla Ventures and Peak XV Partners",
+          "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
+        },
+        {
+          "source_id": "FISRC-7f1c22fc0cc9f63f",
+          "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
+          "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
+          "source_content_hash": "88e3ca9ed4470da9",
+          "quote": "Investors in the company include YC, Lobster Capital, and Peak XV Partners",
+          "quote_hash": "f99567302db388c0f0e1bc1872b532b90bf6d6cce0efab2b158a6546e55060ce"
+        },
+        {
+          "source_id": "FISRC-f3e9aa548f7703f9",
+          "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
+          "source_title": "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层",
+          "source_content_hash": "052a20f5aa557858",
+          "quote": "with participation from Peak XV Partners",
+          "quote_hash": "ac99930c703340d8ec2d59399d67e23f7ea69c04f832101069a9abbfed8fad52"
+        }
+      ]
+    },
+    {
       "id": "INV-cbf3e624e55b8f",
       "name": "Jane Street",
       "aliases": [],
@@ -13012,293 +13790,6 @@
           "source_content_hash": "b3e02e458342a3fb",
           "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated",
           "quote_hash": "f624829735654441c5d0cc7ae15763dc8e1883f5d03fe7ea748456cf995a02d0"
-        }
-      ]
-    },
-    {
-      "id": "INV-e6c1001c21765f",
-      "name": "AMD Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 5,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 5,
-      "first_disclosed_at": "2026-04-30",
-      "latest_disclosed_at": "2026-08-11",
-      "role_counts": {
-        "co_lead": 2,
-        "participant": 3
-      },
-      "round_codes": [
-        "multi_round",
-        "series_a",
-        "series_b"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-ce31f92c521b7b08",
-          "canonical_entity_id": "EN-ce31f92c521b7b08",
-          "name": "Featherless.ai"
-        },
-        {
-          "entity_id": "EN-245f1e177c5169cb",
-          "canonical_entity_id": "",
-          "name": "Hark"
-        },
-        {
-          "entity_id": "FICO-7e1d6c73932aa9b0",
-          "canonical_entity_id": "",
-          "name": "Odyssey ML"
-        },
-        {
-          "entity_id": "EN-8ab71d56a963f706",
-          "canonical_entity_id": "",
-          "name": "River AI"
-        },
-        {
-          "entity_id": "EN-3c1ae4e6276005e7",
-          "canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "name": "TensorWave Inc."
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-29b984ac8a9199bd",
-          "funding_insight_id": "FI-d1444f877a3e580e",
-          "event_ids": [
-            "EV-55e7c286e95be405"
-          ],
-          "company_entity_id": "EN-8ab71d56a963f706",
-          "company_canonical_entity_id": "",
-          "company_name": "River AI",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "$1.1 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1100000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "11 亿美元"
-          },
-          "announced_at": "2026-08-11",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-0deb7f666bec5423",
-              "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
-              "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
-              "source_content_hash": "a44322af824e0f8f",
-              "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
-              "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-5563a3c2a03b63a9",
-          "funding_insight_id": "FI-479f9d5c1123dba2",
-          "event_ids": [
-            "EV-a00763037a94d512"
-          ],
-          "company_entity_id": "FICO-7e1d6c73932aa9b0",
-          "company_canonical_entity_id": "",
-          "company_name": "Odyssey ML",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "3.1亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 310000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.1 亿美元"
-          },
-          "announced_at": "2026-06-17",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-e94365d0212a78f3",
-              "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
-              "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
-              "source_content_hash": "75587989c4b9271c",
-              "quote": "with Amazon, AMD Ventures, GV, and others participating",
-              "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-f2361e00c180ee5b",
-          "funding_insight_id": "FI-1f714b499dc9751a",
-          "event_ids": [
-            "EV-6e516b6e68def9cf"
-          ],
-          "company_entity_id": "EN-3c1ae4e6276005e7",
-          "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "company_name": "TensorWave Inc.",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "3.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-06-10",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
-              "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
-              "source_content_hash": "1d75cf39c1185f55",
-              "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc.",
-              "quote_hash": "dd2543353f4695b34b5beac02a8a7e8144f8be797ce5e82b9d56fe409f2b4d4d"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-55dae6d0d03318cc",
-          "funding_insight_id": "FI-35b63d84f1f7c2b0",
-          "event_ids": [
-            "EV-450f624a6a6446ce",
-            "EV-44c9a50b99c76a70"
-          ],
-          "company_entity_id": "EN-245f1e177c5169cb",
-          "company_canonical_entity_id": "",
-          "company_name": "Hark",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$700M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 700000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "7 亿美元"
-          },
-          "announced_at": "2026-05-21",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-9b94f245fa27a161",
-              "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
-              "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
-              "source_content_hash": "e91739ca23d21469",
-              "quote": "AMD Ventures",
-              "quote_hash": "b7be16e935d6d168703bfc071a9bf91c18fea3a4a8b5e2d0e4ea96c18454db03"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-caf1dd47a1f09f13",
-          "funding_insight_id": "FI-93a42bdcb7635303",
-          "event_ids": [
-            "EV-6011ab83ebd290bd",
-            "EV-1abf0d076d30ec6d"
-          ],
-          "company_entity_id": "EN-ce31f92c521b7b08",
-          "company_canonical_entity_id": "EN-ce31f92c521b7b08",
-          "company_name": "Featherless.ai",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$20 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 20000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2000 万美元"
-          },
-          "announced_at": "2026-04-30",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-f5176e2201593c8e",
-              "source_url": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
-              "source_title": "AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施",
-              "source_content_hash": "415a2b10b75139c0",
-              "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
-              "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-0deb7f666bec5423",
-          "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
-          "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
-          "source_content_hash": "a44322af824e0f8f",
-          "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
-          "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
-        },
-        {
-          "source_id": "FISRC-e94365d0212a78f3",
-          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
-          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
-          "source_content_hash": "75587989c4b9271c",
-          "quote": "with Amazon, AMD Ventures, GV, and others participating",
-          "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
-        },
-        {
-          "source_id": "FISRC-e98aedbd2eaa6410",
-          "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
-          "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
-          "source_content_hash": "1d75cf39c1185f55",
-          "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc.",
-          "quote_hash": "dd2543353f4695b34b5beac02a8a7e8144f8be797ce5e82b9d56fe409f2b4d4d"
-        },
-        {
-          "source_id": "FISRC-9b94f245fa27a161",
-          "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
-          "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
-          "source_content_hash": "e91739ca23d21469",
-          "quote": "AMD Ventures",
-          "quote_hash": "b7be16e935d6d168703bfc071a9bf91c18fea3a4a8b5e2d0e4ea96c18454db03"
-        },
-        {
-          "source_id": "FISRC-f5176e2201593c8e",
-          "source_url": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
-          "source_title": "AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施",
-          "source_content_hash": "415a2b10b75139c0",
-          "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
-          "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
         }
       ]
     },
@@ -16046,303 +16537,6 @@
           "source_content_hash": "9266f35a39d4c471",
           "quote": "prominent angels like Gokul Rajaram (Coinbase, Pinterest)",
           "quote_hash": "6ce29a096aecac33364b0dcc022f0663252de266f7e828ef5aad66133c80b9dc"
-        }
-      ]
-    },
-    {
-      "id": "INV-25dbfe1bcda658",
-      "name": "Peak XV Partners",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 4,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 4,
-      "first_disclosed_at": "2025-10-28",
-      "latest_disclosed_at": "2026-08-10",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "lead": 1,
-        "participant": 3
-      },
-      "round_codes": [
-        "multi_round",
-        "seed",
-        "series_a"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-fe301d1f025971a1",
-          "canonical_entity_id": "",
-          "name": "Discovered Materials"
-        },
-        {
-          "entity_id": "EN-eaa1c24270a0d057",
-          "canonical_entity_id": "",
-          "name": "Harper"
-        },
-        {
-          "entity_id": "EN-f346eaca864441f9",
-          "canonical_entity_id": "",
-          "name": "JustAI"
-        },
-        {
-          "entity_id": "EN-a9aff9e0737a5d4a",
-          "canonical_entity_id": "",
-          "name": "Mem0"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-a343bb65e2c0906b",
-          "funding_insight_id": "FI-5d8eab3e612ca748",
-          "event_ids": [
-            "EV-c6cccaca326dfd45"
-          ],
-          "company_entity_id": "EN-fe301d1f025971a1",
-          "company_canonical_entity_id": "",
-          "company_name": "Discovered Materials",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$9 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 9000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "900 万美元"
-          },
-          "announced_at": "2026-08-10",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-c3267e56ad969be2",
-              "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
-              "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
-              "source_content_hash": "c3f8c7225d49e92f",
-              "quote": "with investment from Peak XV Partners",
-              "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
-            },
-            {
-              "source_id": "FISRC-6ad648d48b556138",
-              "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
-              "source_title": "Discovered Materials Raises $9M in Seed Funding",
-              "source_content_hash": "bd47d3e50a1db886",
-              "quote": "with participation from Y Combinator and Peak XV Partners",
-              "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-9eb0011e52a75bb0",
-          "funding_insight_id": "FI-617705549a679908",
-          "event_ids": [
-            "EV-e7dcecaed5a0ee5b"
-          ],
-          "company_entity_id": "EN-f346eaca864441f9",
-          "company_canonical_entity_id": "",
-          "company_name": "JustAI",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$17 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 17000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1700 万美元"
-          },
-          "announced_at": "2026-06-23",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投，种子轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-058518ce11dc5f00",
-              "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
-              "source_title": "JustAI Raises $17M Series A to Build an Agentic Marketing Platform",
-              "source_content_hash": "80f6dde2ca5cd41c",
-              "quote": "The round was led by Base10 Partners, with participation from Y Combinator and Peak XV Partners.",
-              "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-3a61f597f86a2adf",
-          "funding_insight_id": "FI-9854c05d7208a585",
-          "event_ids": [
-            "EV-e3382d1c1d7db751"
-          ],
-          "company_entity_id": "EN-ee1e31ffef7dbe64",
-          "company_canonical_entity_id": "EN-ee1e31ffef7dbe64",
-          "company_name": "Sarvam",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "Series B",
-          "amount_original": "$234 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 234000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2.34 亿美元"
-          },
-          "announced_at": "2026-06-15",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
-              "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
-              "source_content_hash": "a56910704adc32b1",
-              "quote": "existing backers Khosla Ventures and Peak XV Partners",
-              "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-375cf965edb3f0f9",
-          "funding_insight_id": "FI-6d45b570f8bf6df7",
-          "event_ids": [
-            "EV-e4b3a19529576778"
-          ],
-          "company_entity_id": "EN-eaa1c24270a0d057",
-          "company_canonical_entity_id": "",
-          "company_name": "Harper",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "种子轮和A轮合并",
-          "amount_original": "$46.8 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 46800000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "4680 万美元"
-          },
-          "announced_at": "2026-02-25",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-7f1c22fc0cc9f63f",
-              "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
-              "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
-              "source_content_hash": "88e3ca9ed4470da9",
-              "quote": "Investors in the company include YC, Lobster Capital, and Peak XV Partners",
-              "quote_hash": "f99567302db388c0f0e1bc1872b532b90bf6d6cce0efab2b158a6546e55060ce"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-7141ce424ad32428",
-          "funding_insight_id": "FI-128eef4a492e718e",
-          "event_ids": [
-            "EV-30466ebe86779a64"
-          ],
-          "company_entity_id": "EN-a9aff9e0737a5d4a",
-          "company_canonical_entity_id": "",
-          "company_name": "Mem0",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "Seed + Series A",
-          "amount_original": "$24M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 24000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2400 万美元"
-          },
-          "announced_at": "2025-10-28",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-f3e9aa548f7703f9",
-              "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
-              "source_title": "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层",
-              "source_content_hash": "052a20f5aa557858",
-              "quote": "with participation from Peak XV Partners",
-              "quote_hash": "ac99930c703340d8ec2d59399d67e23f7ea69c04f832101069a9abbfed8fad52"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-c3267e56ad969be2",
-          "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
-          "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
-          "source_content_hash": "c3f8c7225d49e92f",
-          "quote": "with investment from Peak XV Partners",
-          "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
-        },
-        {
-          "source_id": "FISRC-6ad648d48b556138",
-          "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
-          "source_title": "Discovered Materials Raises $9M in Seed Funding",
-          "source_content_hash": "bd47d3e50a1db886",
-          "quote": "with participation from Y Combinator and Peak XV Partners",
-          "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
-        },
-        {
-          "source_id": "FISRC-058518ce11dc5f00",
-          "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
-          "source_title": "JustAI Raises $17M Series A to Build an Agentic Marketing Platform",
-          "source_content_hash": "80f6dde2ca5cd41c",
-          "quote": "The round was led by Base10 Partners, with participation from Y Combinator and Peak XV Partners.",
-          "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
-        },
-        {
-          "source_id": "FISRC-eb156fd01909fe18",
-          "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
-          "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
-          "source_content_hash": "a56910704adc32b1",
-          "quote": "existing backers Khosla Ventures and Peak XV Partners",
-          "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
-        },
-        {
-          "source_id": "FISRC-7f1c22fc0cc9f63f",
-          "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
-          "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
-          "source_content_hash": "88e3ca9ed4470da9",
-          "quote": "Investors in the company include YC, Lobster Capital, and Peak XV Partners",
-          "quote_hash": "f99567302db388c0f0e1bc1872b532b90bf6d6cce0efab2b158a6546e55060ce"
-        },
-        {
-          "source_id": "FISRC-f3e9aa548f7703f9",
-          "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
-          "source_title": "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层",
-          "source_content_hash": "052a20f5aa557858",
-          "quote": "with participation from Peak XV Partners",
-          "quote_hash": "ac99930c703340d8ec2d59399d67e23f7ea69c04f832101069a9abbfed8fad52"
         }
       ]
     },
@@ -43207,6 +43401,646 @@
       ]
     },
     {
+      "id": "INV-233fe3b442b6ce",
+      "name": "Electronic Arts (EA)",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-7e36b2fd75fd7536",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+              "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+              "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e825eacb926a575f",
+          "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+          "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+          "source_content_hash": "3f1c5718c2b6b5fd",
+          "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+          "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+        }
+      ]
+    },
+    {
+      "id": "INV-fc71812ae25f8e",
+      "name": "Kunal Shah",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-07-16",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "other_current_round": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-2a920347dfcf07a7",
+          "canonical_entity_id": "EN-2a920347dfcf07a7",
+          "name": "Aina"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-69bb59322ceda4b2",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Series A参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-5d8eb24ecea69660",
+              "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+              "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+              "source_content_hash": "64d3a17d3ff626b7",
+              "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+              "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-0d6c135f317a30c7",
+          "funding_insight_id": "FI-20e67383e8533b80",
+          "event_ids": [
+            "EV-02882e6f5e1902c6"
+          ],
+          "company_entity_id": "EN-2a920347dfcf07a7",
+          "company_canonical_entity_id": "EN-2a920347dfcf07a7",
+          "company_name": "Aina",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "550万美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 5500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "550 万美元"
+          },
+          "announced_at": "2026-07-16",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮天使投资人",
+          "role_code": "other_current_round",
+          "evidence": [
+            {
+              "source_id": "FISRC-9e755507b523ddb2",
+              "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
+              "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
+              "source_content_hash": "495ca48cb14fa6d7",
+              "quote": "Angel investors included WhatsApp head Kunal Shah",
+              "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-5d8eb24ecea69660",
+          "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+          "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+          "source_content_hash": "64d3a17d3ff626b7",
+          "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+          "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+        },
+        {
+          "source_id": "FISRC-9e755507b523ddb2",
+          "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
+          "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
+          "source_content_hash": "495ca48cb14fa6d7",
+          "quote": "Angel investors included WhatsApp head Kunal Shah",
+          "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
+        }
+      ]
+    },
+    {
+      "id": "INV-843eb7584e1343",
+      "name": "Pacific Alliance Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-4081b2966f26d715",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+              "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote": "Two investment firms, AMD Ventures and Pacific Alliance Ventures, also took part.",
+              "quote_hash": "4fb0689898de7c251bf6ce182549c3ddebb3bf4a41fe74e9b6afa2695d45a2f4"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e825eacb926a575f",
+          "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+          "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+          "source_content_hash": "3f1c5718c2b6b5fd",
+          "quote": "Two investment firms, AMD Ventures and Pacific Alliance Ventures, also took part.",
+          "quote_hash": "4fb0689898de7c251bf6ce182549c3ddebb3bf4a41fe74e9b6afa2695d45a2f4"
+        }
+      ]
+    },
+    {
+      "id": "INV-b0b37642c2b2eb",
+      "name": "Sony Music Group",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-f4e76cb781a757eb",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+              "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+              "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e825eacb926a575f",
+          "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+          "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+          "source_content_hash": "3f1c5718c2b6b5fd",
+          "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+          "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+        }
+      ]
+    },
+    {
+      "id": "INV-1acf19e38b7db0",
+      "name": "Sound Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-01-13",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "lead": 1
+      },
+      "round_codes": [
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8e8cc11d1475231b",
+          "canonical_entity_id": "",
+          "name": "Witness AI"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-6aa695a40559ab71",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-8dc1d59b723b2466",
+              "source_url": "https://whbl.com/2024/05/16/stability-ai-in-talks-to-raise-money-from-investor-group/",
+              "source_title": "Stability AI in talks to raise money from investor group | 1330 & 101.5 WHBL",
+              "source_content_hash": "2fd5960097107bb8",
+              "quote": "Stability AI counts among its investors venture capital firm Lightspeed Venture Partners, actor Ashton Kutcher’s Sound Ventures, investment management firm Coatue and chipmaker Intel, according to data firms Crunchbase and Pitchbook.",
+              "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-5596d8e4332b63d1",
+          "funding_insight_id": "FI-0386397f33fcf55a",
+          "event_ids": [
+            "EV-fdfd4bf00571bb35"
+          ],
+          "company_entity_id": "EN-8e8cc11d1475231b",
+          "company_canonical_entity_id": "",
+          "company_name": "Witness AI",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "$58 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 58000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5800 万美元"
+          },
+          "announced_at": "2026-01-13",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-d51cd72272f38425",
+              "source_url": "https://witness.ai/blog/witnessai-raises-58m-to-help-enterprises-move-faster-with-ai-safely/",
+              "source_title": "WitnessAI Raises $58M - WitnessAI",
+              "source_content_hash": "78340edbea8604fd",
+              "quote": "The round was led by Sound Ventures",
+              "quote_hash": "2ea82ee3fbfb7e2d07754c259c9eaaff262042adcc5a4e49f9c497c09688f339"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-8dc1d59b723b2466",
+          "source_url": "https://whbl.com/2024/05/16/stability-ai-in-talks-to-raise-money-from-investor-group/",
+          "source_title": "Stability AI in talks to raise money from investor group | 1330 & 101.5 WHBL",
+          "source_content_hash": "2fd5960097107bb8",
+          "quote": "Stability AI counts among its investors venture capital firm Lightspeed Venture Partners, actor Ashton Kutcher’s Sound Ventures, investment management firm Coatue and chipmaker Intel, according to data firms Crunchbase and Pitchbook.",
+          "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
+        },
+        {
+          "source_id": "FISRC-d51cd72272f38425",
+          "source_url": "https://witness.ai/blog/witnessai-raises-58m-to-help-enterprises-move-faster-with-ai-safely/",
+          "source_title": "WitnessAI Raises $58M - WitnessAI",
+          "source_content_hash": "78340edbea8604fd",
+          "quote": "The round was led by Sound Ventures",
+          "quote_hash": "2ea82ee3fbfb7e2d07754c259c9eaaff262042adcc5a4e49f9c497c09688f339"
+        }
+      ]
+    },
+    {
+      "id": "INV-a0e40d1e7641e9",
+      "name": "Universal Music Group",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-09c79b0715e285c8",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+              "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+              "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e825eacb926a575f",
+          "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+          "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+          "source_content_hash": "3f1c5718c2b6b5fd",
+          "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+          "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+        }
+      ]
+    },
+    {
+      "id": "INV-46d0c3d336d7d6",
+      "name": "Warner Music Group",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-2dff2bb163ac2445",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+              "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+              "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e825eacb926a575f",
+          "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+          "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+          "source_content_hash": "3f1c5718c2b6b5fd",
+          "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+          "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+        }
+      ]
+    },
+    {
       "id": "INV-cf555a1ead09c2",
       "name": "776",
       "aliases": [],
@@ -59502,84 +60336,6 @@
           "source_content_hash": "c127cd6c0e3152a6",
           "quote": "with participation from Krungsri Finnovate (CVC arm of Krungsri / Bank of Ayudhya, part of MUFG)",
           "quote_hash": "727e8861c3bf2fd6b5e5c95de43f0a0be73c4b5e6dde28a6b33ce045fa78147d"
-        }
-      ]
-    },
-    {
-      "id": "INV-fc71812ae25f8e",
-      "name": "Kunal Shah",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "individual",
-      "investor_kind_label": "个人投资者",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-07-16",
-      "latest_disclosed_at": "2026-07-16",
-      "role_counts": {
-        "other_current_round": 1
-      },
-      "round_codes": [
-        "seed"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-2a920347dfcf07a7",
-          "canonical_entity_id": "EN-2a920347dfcf07a7",
-          "name": "Aina"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-0d6c135f317a30c7",
-          "funding_insight_id": "FI-20e67383e8533b80",
-          "event_ids": [
-            "EV-02882e6f5e1902c6"
-          ],
-          "company_entity_id": "EN-2a920347dfcf07a7",
-          "company_canonical_entity_id": "EN-2a920347dfcf07a7",
-          "company_name": "Aina",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "550万美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 5500000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "550 万美元"
-          },
-          "announced_at": "2026-07-16",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮天使投资人",
-          "role_code": "other_current_round",
-          "evidence": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
-              "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
-              "source_content_hash": "495ca48cb14fa6d7",
-              "quote": "Angel investors included WhatsApp head Kunal Shah",
-              "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-9e755507b523ddb2",
-          "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
-          "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
-          "source_content_hash": "495ca48cb14fa6d7",
-          "quote": "Angel investors included WhatsApp head Kunal Shah",
-          "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
         }
       ]
     },
@@ -111150,84 +111906,6 @@
       ]
     },
     {
-      "id": "INV-1acf19e38b7db0",
-      "name": "Sound Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-01-13",
-      "latest_disclosed_at": "2026-01-13",
-      "role_counts": {
-        "lead": 1
-      },
-      "round_codes": [
-        "strategic"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-8e8cc11d1475231b",
-          "canonical_entity_id": "",
-          "name": "Witness AI"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-5596d8e4332b63d1",
-          "funding_insight_id": "FI-0386397f33fcf55a",
-          "event_ids": [
-            "EV-fdfd4bf00571bb35"
-          ],
-          "company_entity_id": "EN-8e8cc11d1475231b",
-          "company_canonical_entity_id": "",
-          "company_name": "Witness AI",
-          "round": "战略融资",
-          "round_code": "strategic",
-          "round_original": "战略融资",
-          "amount_original": "$58 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 58000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5800 万美元"
-          },
-          "announced_at": "2026-01-13",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-d51cd72272f38425",
-              "source_url": "https://witness.ai/blog/witnessai-raises-58m-to-help-enterprises-move-faster-with-ai-safely/",
-              "source_title": "WitnessAI Raises $58M - WitnessAI",
-              "source_content_hash": "78340edbea8604fd",
-              "quote": "The round was led by Sound Ventures",
-              "quote_hash": "2ea82ee3fbfb7e2d07754c259c9eaaff262042adcc5a4e49f9c497c09688f339"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-d51cd72272f38425",
-          "source_url": "https://witness.ai/blog/witnessai-raises-58m-to-help-enterprises-move-faster-with-ai-safely/",
-          "source_title": "WitnessAI Raises $58M - WitnessAI",
-          "source_content_hash": "78340edbea8604fd",
-          "quote": "The round was led by Sound Ventures",
-          "quote_hash": "2ea82ee3fbfb7e2d07754c259c9eaaff262042adcc5a4e49f9c497c09688f339"
-        }
-      ]
-    },
-    {
       "id": "INV-7cdbb9f500dbcc",
       "name": "北京信息产业发展基金",
       "aliases": [],
@@ -118922,6 +119600,402 @@
       ]
     },
     {
+      "id": "INV-8ea47e7caa29fd",
+      "name": "Capital2B",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-5627c7b4fc2aaf48",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Series A参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-5d8eb24ecea69660",
+              "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+              "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+              "source_content_hash": "64d3a17d3ff626b7",
+              "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+              "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-5d8eb24ecea69660",
+          "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+          "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+          "source_content_hash": "64d3a17d3ff626b7",
+          "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+          "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+        }
+      ]
+    },
+    {
+      "id": "INV-c2792c91f678b6",
+      "name": "Groww Founder Fund",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-cf3d8a9ba1687238",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Series A参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-5d8eb24ecea69660",
+              "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+              "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+              "source_content_hash": "64d3a17d3ff626b7",
+              "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+              "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-5d8eb24ecea69660",
+          "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+          "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+          "source_content_hash": "64d3a17d3ff626b7",
+          "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+          "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+        }
+      ]
+    },
+    {
+      "id": "INV-ad30322742626e",
+      "name": "Intel",
+      "aliases": [],
+      "canonical_entity_id": "EN-96eebba49dbbf422",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-06-16",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 2
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-832cd87cd008d6c7",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-8dc1d59b723b2466",
+              "source_url": "https://whbl.com/2024/05/16/stability-ai-in-talks-to-raise-money-from-investor-group/",
+              "source_title": "Stability AI in talks to raise money from investor group | 1330 & 101.5 WHBL",
+              "source_content_hash": "2fd5960097107bb8",
+              "quote": "Stability AI counts among its investors venture capital firm Lightspeed Venture Partners, actor Ashton Kutcher’s Sound Ventures, investment management firm Coatue and chipmaker Intel, according to data firms Crunchbase and Pitchbook.",
+              "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-d2d690f20767b26f",
+          "funding_insight_id": "FI-ffd2c01a3352f704",
+          "event_ids": [
+            "EV-a81c5dc2e9abff3a"
+          ],
+          "company_entity_id": "EN-5e0971a2294ea3f7",
+          "company_canonical_entity_id": "",
+          "company_name": "Articul8 AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$500 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5 亿美元"
+          },
+          "announced_at": "2026-06-16",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "战略投资方（持续支持）",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-72fce85a7a820991",
+              "source_url": "https://economictimes.indiatimes.com/ai/ai-insights/aditya-birla-ventures-backs-ai-startup-articul8-in-70m-funding-round/articleshow/126409445.cms",
+              "source_title": "Aditya Birla Ventures Backs AI Startup Articul8 in $70M Funding Round - The Economic Times",
+              "source_content_hash": "86428349e0ef5896",
+              "quote": "The company also continues to receive backing from strategic investors such as DigitalBridge and Intel.",
+              "quote_hash": "7f43f7701ef43c1ea94f269a421a4d811197efea2339c7d40d0b9bc70761e027"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-8dc1d59b723b2466",
+          "source_url": "https://whbl.com/2024/05/16/stability-ai-in-talks-to-raise-money-from-investor-group/",
+          "source_title": "Stability AI in talks to raise money from investor group | 1330 & 101.5 WHBL",
+          "source_content_hash": "2fd5960097107bb8",
+          "quote": "Stability AI counts among its investors venture capital firm Lightspeed Venture Partners, actor Ashton Kutcher’s Sound Ventures, investment management firm Coatue and chipmaker Intel, according to data firms Crunchbase and Pitchbook.",
+          "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
+        },
+        {
+          "source_id": "FISRC-72fce85a7a820991",
+          "source_url": "https://economictimes.indiatimes.com/ai/ai-insights/aditya-birla-ventures-backs-ai-startup-articul8-in-70m-funding-round/articleshow/126409445.cms",
+          "source_title": "Aditya Birla Ventures Backs AI Startup Articul8 in $70M Funding Round - The Economic Times",
+          "source_content_hash": "86428349e0ef5896",
+          "quote": "The company also continues to receive backing from strategic investors such as DigitalBridge and Intel.",
+          "quote_hash": "7f43f7701ef43c1ea94f269a421a4d811197efea2339c7d40d0b9bc70761e027"
+        }
+      ]
+    },
+    {
+      "id": "INV-ebbc229ff198b1",
+      "name": "O'Shaughnessy Ventures LLC",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-a0ee17e3ac994986",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2022 年 1.01 亿美元融资领投方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-2a3c20bc832bd7ef",
+              "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+              "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+              "source_content_hash": "871d436c27d08479",
+              "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+              "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2a3c20bc832bd7ef",
+          "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+          "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+          "source_content_hash": "871d436c27d08479",
+          "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+          "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+        }
+      ]
+    },
+    {
+      "id": "INV-840396b6ad1149",
+      "name": "Whitecap Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-d62e46571476c416",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Series A参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-5d8eb24ecea69660",
+              "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+              "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+              "source_content_hash": "64d3a17d3ff626b7",
+              "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+              "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-5d8eb24ecea69660",
+          "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+          "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+          "source_content_hash": "64d3a17d3ff626b7",
+          "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+          "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+        }
+      ]
+    },
+    {
       "id": "INV-ccb176f47658b3",
       "name": "Adjacent",
       "aliases": [],
@@ -125883,76 +126957,6 @@
       "activities": [
         {
           "activity_id": "IA-5f345cc4bb9efa26",
-          "funding_insight_id": "FI-ffd2c01a3352f704",
-          "event_ids": [
-            "EV-a81c5dc2e9abff3a"
-          ],
-          "company_entity_id": "EN-5e0971a2294ea3f7",
-          "company_canonical_entity_id": "",
-          "company_name": "Articul8 AI",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$500 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5 亿美元"
-          },
-          "announced_at": "2026-06-16",
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "战略投资方（持续支持）",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-72fce85a7a820991",
-              "source_url": "https://economictimes.indiatimes.com/ai/ai-insights/aditya-birla-ventures-backs-ai-startup-articul8-in-70m-funding-round/articleshow/126409445.cms",
-              "source_title": "Aditya Birla Ventures Backs AI Startup Articul8 in $70M Funding Round - The Economic Times",
-              "source_content_hash": "86428349e0ef5896",
-              "quote": "The company also continues to receive backing from strategic investors such as DigitalBridge and Intel.",
-              "quote_hash": "7f43f7701ef43c1ea94f269a421a4d811197efea2339c7d40d0b9bc70761e027"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-72fce85a7a820991",
-          "source_url": "https://economictimes.indiatimes.com/ai/ai-insights/aditya-birla-ventures-backs-ai-startup-articul8-in-70m-funding-round/articleshow/126409445.cms",
-          "source_title": "Aditya Birla Ventures Backs AI Startup Articul8 in $70M Funding Round - The Economic Times",
-          "source_content_hash": "86428349e0ef5896",
-          "quote": "The company also continues to receive backing from strategic investors such as DigitalBridge and Intel.",
-          "quote_hash": "7f43f7701ef43c1ea94f269a421a4d811197efea2339c7d40d0b9bc70761e027"
-        }
-      ]
-    },
-    {
-      "id": "INV-ad30322742626e",
-      "name": "Intel",
-      "aliases": [],
-      "canonical_entity_id": "EN-96eebba49dbbf422",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "first_disclosed_at": "2026-06-16",
-      "latest_disclosed_at": "2026-06-16",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-d2d690f20767b26f",
           "funding_insight_id": "FI-ffd2c01a3352f704",
           "event_ids": [
             "EV-a81c5dc2e9abff3a"

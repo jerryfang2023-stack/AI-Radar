@@ -5,33 +5,33 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23,
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.1",
-      "generatedAt": "2026-08-25T04:10:49.951Z",
+      "generatedAt": "2026-08-26T03:48:10.523Z",
       "coverage": {
         "startDate": "2017-09-07",
         "endDate": "2027-09-30",
-        "distinctDataDays": 94,
+        "distinctDataDays": 95,
         "dataBatchesByMonth": {
           "2026-05": 8,
           "2026-06": 30,
           "2026-07": 31,
-          "2026-08": 25
+          "2026-08": 26
         }
       },
       "counts": {
-        "entities": 2062,
-        "organizations": 1348,
-        "products": 653,
+        "entities": 2079,
+        "organizations": 1360,
+        "products": 658,
         "people": 61,
         "taxonomyNodes": 113,
-        "relationships": 358
+        "relationships": 375
       },
       "review": {
         "reviewed": 962,
@@ -75,11 +75,11 @@
         "阿里"
       ],
       "tags": [
-        "数据分析",
         "企业用户",
         "模型",
-        "生产力与企业工作流",
-        "AI 设备"
+        "语音与音频",
+        "多模态",
+        "数据分析"
       ],
       "eventIds": [
         "EV-00514c4ffc2e3cd3",
@@ -210,8 +210,8 @@
         "Cloud Intelligence Group"
       ],
       "tags": [
-        "数据分析",
         "模型",
+        "数据分析",
         "智能体",
         "计算机操作"
       ],
@@ -271,11 +271,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业用户",
         "基础设施与算力",
-        "硬件与算力",
-        "电信",
         "开发者",
-        "科研与发现"
+        "硬件与算力",
+        "电信"
       ],
       "eventIds": [
         "EV-7a44a47bf36780d2",
@@ -401,11 +401,11 @@
         "Huawei"
       ],
       "tags": [
-        "软件开发",
         "模型",
+        "多模态",
+        "软件开发",
         "代码生成",
-        "医疗与生命科学",
-        "AI 设备"
+        "医疗与生命科学"
       ],
       "eventIds": [
         "EV-87432dbb99cd6033",
@@ -760,8 +760,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "软件开发",
         "模型",
+        "软件开发",
         "芯片与加速器",
         "代码生成"
       ],
@@ -819,8 +819,12 @@
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-07-16",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "relationIds": [
+        "REL2-7a95bce5aecaba79"
+      ],
       "type": "公司/机构",
       "productIds": []
     },
@@ -870,11 +874,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业级应用",
+        "企业软件平台",
         "企业用户",
         "生产力与企业工作流",
-        "企业级应用",
-        "生产力与企业工作流",
-        "企业软件平台"
+        "生产力与企业工作流"
       ],
       "eventIds": [
         "EV-dc35d54f273196f0"
@@ -918,11 +922,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "基础设施与算力",
+        "开发与部署",
         "开发者",
-        "制造业",
-        "医疗与生命科学",
-        "物理自动化"
+        "制造业"
       ],
       "eventIds": [
         "EV-56da7cceeebc8bcf"
@@ -944,9 +948,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "多模态",
         "物理自动化",
-        "智能体",
-        "多模态"
+        "智能体"
       ],
       "eventIds": [
         "EV-ee489212ff9135a4",
@@ -975,11 +979,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "计算基础设施",
+        "媒体与娱乐",
+        "企业用户",
         "基础设施与算力",
-        "硬件与算力",
-        "政府与公共部门",
-        "电信"
+        "开发者",
+        "计算基础设施"
       ],
       "eventIds": [
         "EV-44ec7c229995ca3c"
@@ -1335,8 +1339,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "研究人员",
         "企业用户",
+        "研究人员",
         "制造业",
         "物理自动化",
         "教育"
@@ -1528,6 +1532,7 @@
       ],
       "eventIds": [
         "EV-40f14150d6f622f5",
+        "EV-911e7e2722aa5ebc",
         "EV-b613937b7bc1ea64",
         "EV-110d0ab135a08889",
         "EV-72d4a00d52a3201c",
@@ -1537,7 +1542,7 @@
         "EV-1e0871947289ab6e"
       ],
       "firstSeen": "2026-06-13",
-      "lastSeen": "2026-08-24",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
         "EN-bc77259c5d2eb341",
         "EN-993599624a199fe0"
@@ -1547,6 +1552,7 @@
         "REL2-ff240950e3bb7f5e"
       ],
       "marketScopes": [
+        "event_market",
         "actor_origin"
       ],
       "chinaMarketMatch": true,
@@ -1562,8 +1568,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "开发者",
         "企业用户",
+        "开发者",
         "制造业",
         "物理自动化",
         "零售与电商"
@@ -1652,10 +1658,10 @@
         "Startup Adapter"
       ],
       "tags": [
+        "企业用户",
         "基础设施与算力",
         "开发者",
         "数据分析",
-        "企业用户",
         "开发者工具"
       ],
       "eventIds": [
@@ -1674,11 +1680,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业软件平台",
         "企业用户",
         "生产力与企业工作流",
         "行业应用",
-        "智能体",
-        "建筑与房地产"
+        "智能体"
       ],
       "eventIds": [
         "EV-c64e6836b9cd2b17"
@@ -1696,8 +1702,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "生产力与企业工作流",
         "个人用户",
+        "生产力与企业工作流",
         "行业应用",
         "AI 设备",
         "零售与电商"
@@ -1755,11 +1761,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "基础设施与算力",
-        "开发者",
-        "研究人员",
-        "科研与发现",
-        "制造业"
+        "开发与部署",
+        "模型",
+        "开发者"
       ],
       "eventIds": [
         "EV-dcbe916c6138e5cb",
@@ -1824,10 +1830,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "AI 计算系统",
         "软件开发",
         "制造业",
-        "模型",
         "芯片与加速器"
       ],
       "eventIds": [
@@ -1862,7 +1868,7 @@
         "EV-d709599eddf5db04"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-24",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
         "EN-45c52af0feb0f285",
@@ -1897,11 +1903,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "基础设施与算力",
-        "航空航天与国防",
-        "政府与公共部门",
-        "开发者",
-        "研究人员"
+        "企业软件平台",
+        "企业用户",
+        "客户支持",
+        "模型",
+        "基础设施与算力"
       ],
       "eventIds": [
         "EV-fe49d2ee580cfea2",
@@ -1979,6 +1985,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-6e96760ed7e2ebaa",
+        "EV-daa8adf2de4e4bf4",
         "EV-4927409c0f4b3ef3",
         "EV-d4af2db7a4759431",
         "EV-30211b84aacd0598",
@@ -2237,11 +2245,10 @@
         "EV-8654cc0faeb02d14"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-25",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
-        "EN-9f15bb7e29e191eb",
         "EN-240389f4b730bad4",
-        "EN-e65e0f2695fa259d",
+        "EN-9f15bb7e29e191eb",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -2256,6 +2263,7 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
+        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -2265,9 +2273,8 @@
         "EN-da20c5952dba19d8"
       ],
       "relationIds": [
-        "REL2-778989c8b3d8bcda",
         "REL2-02bdd133e9353ff7",
-        "REL2-5a2b9cfd6f0b1ca6",
+        "REL2-778989c8b3d8bcda",
         "REL2-6c33e8063218608e",
         "REL2-407abfa4e497ae3f",
         "REL2-7b714ad4b1e6a6da",
@@ -2329,7 +2336,6 @@
       "type": "公司/机构",
       "productIds": [
         "EN-9f15bb7e29e191eb",
-        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-163fa867e7ef6ee6",
@@ -2538,11 +2544,11 @@
         "Arcade.dev"
       ],
       "tags": [
+        "企业用户",
         "基础设施与算力",
         "开发者",
         "模型与智能体安全",
-        "可观测与评估",
-        "专业服务"
+        "可观测与评估"
       ],
       "eventIds": [
         "EV-39717cdbada984d7"
@@ -2562,11 +2568,11 @@
         "Archestra.AI"
       ],
       "tags": [
+        "企业用户",
         "基础设施与算力",
         "开发者",
         "模型与智能体安全",
-        "可观测与评估",
-        "企业用户"
+        "可观测与评估"
       ],
       "eventIds": [
         "EV-6ae3594aadfcd3d8",
@@ -2677,9 +2683,9 @@
       ],
       "tags": [
         "模型",
+        "多模态",
         "芯片与加速器",
-        "法律服务",
-        "多模态"
+        "法律服务"
       ],
       "eventIds": [
         "EV-876baa523eb93c4f",
@@ -2735,8 +2741,8 @@
       "aliases": [],
       "tags": [
         "模型",
-        "物理自动化",
-        "多模态"
+        "多模态",
+        "物理自动化"
       ],
       "eventIds": [
         "EV-58457ebde013a438",
@@ -2815,9 +2821,9 @@
         "字节跳动"
       ],
       "tags": [
+        "图像生成",
         "智能体",
-        "视频生成",
-        "图像生成"
+        "视频生成"
       ],
       "eventIds": [
         "EV-97fdf068afbbe555",
@@ -2885,9 +2891,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "媒体与娱乐",
         "软件开发",
         "代码生成",
-        "媒体与娱乐",
         "智能体"
       ],
       "eventIds": [
@@ -2988,8 +2994,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "安全运营",
-        "模型"
+        "模型",
+        "安全运营"
       ],
       "eventIds": [
         "EV-ea6abb5378846a71"
@@ -3047,7 +3053,7 @@
         "EV-b84035029a63e52e"
       ],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-08-25",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
         "EN-10556ee2cee94c72"
       ],
@@ -3089,11 +3095,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "基础设施与算力",
-        "开发者",
-        "数据分析",
         "企业用户",
-        "AI 基础设施软件"
+        "基础设施与算力",
+        "开发与部署",
+        "开发者",
+        "多模态"
       ],
       "eventIds": [
         "EV-0d4e656aa51f9a46",
@@ -3158,9 +3164,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业软件平台",
         "企业用户",
-        "智能体",
-        "企业软件平台"
+        "智能体"
       ],
       "eventIds": [
         "EV-701417bcd9b57095"
@@ -3178,11 +3184,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "基础设施与算力",
-        "开发者",
-        "研究人员",
-        "科研与发现",
-        "软件开发"
+        "开发与部署",
+        "模型",
+        "开发者"
       ],
       "eventIds": [
         "EV-87432dbb99cd6033",
@@ -3194,6 +3200,8 @@
         "EV-0121f0a9e9a975ec",
         "EV-eda9fcba2f9fe358",
         "EV-3664fd6826c319bb",
+        "EV-d69d239fd5bcc319",
+        "EV-911e7e2722aa5ebc",
         "EV-a09f6e93ad868a57",
         "EV-5ede0f85a672441c",
         "EV-7b4c53084828d7e8",
@@ -3231,7 +3239,7 @@
         "EV-b6970cb396a7b1ed"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-23",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "marketScopes": [
@@ -3307,11 +3315,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "基础设施与算力",
-        "开发者",
-        "研究人员",
-        "科研与发现",
-        "模型"
+        "开发与部署",
+        "模型",
+        "开发者"
       ],
       "eventIds": [
         "EV-44cd5e03d30c85b3",
@@ -3330,11 +3338,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业级应用",
+        "企业软件平台",
         "企业用户",
         "软件开发",
-        "生产力与企业工作流",
-        "代码生成",
-        "企业级应用"
+        "生产力与企业工作流"
       ],
       "eventIds": [
         "EV-1a6688afdfd108ef"
@@ -3353,10 +3361,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
+        "开发与部署",
         "开发者",
         "软件开发",
-        "开发者工具",
-        "AI 开发与编排"
+        "开发者工具"
       ],
       "eventIds": [
         "EV-618e5729145025e4"
@@ -3380,8 +3388,8 @@
         "欧盟"
       ],
       "tags": [
-        "制造业",
-        "模型"
+        "模型",
+        "制造业"
       ],
       "eventIds": [
         "EV-0ad3854d95038ea3",
@@ -3428,11 +3436,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "基础设施与算力",
-        "开发者",
         "企业用户",
-        "软件开发",
-        "模型"
+        "基础设施与算力",
+        "开发与部署",
+        "模型",
+        "开发者"
       ],
       "eventIds": [
         "EV-1abf0d076d30ec6d",
@@ -3548,13 +3556,15 @@
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "sourceType": "organization_candidate",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "tags": [
-        "计算基础设施",
+        "企业软件平台",
+        "企业用户",
         "基础设施与算力",
-        "硬件与算力",
-        "航空航天与国防",
-        "AI 计算系统"
+        "模型",
+        "开发者"
       ],
       "eventIds": [
         "EV-fe49d2ee580cfea2",
@@ -3601,6 +3611,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6e96760ed7e2ebaa",
+        "EV-e3d25b9c0ee541d1",
         "EV-897c0d5106398802",
         "EV-9d824ab9d0b0c6b5",
         "EV-baf1a4c3db620d90",
@@ -3760,18 +3772,21 @@
         "EV-ecfc552af7344d65"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-25",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -3779,39 +3794,52 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "relationIds": [
+        "REL2-a675a7f7bd02161e",
         "REL2-f6e62982e0b3d7d6",
         "REL2-a5a15f09d4da8135",
         "REL2-066894debed9bb20",
+        "REL2-9ad2c97e765910d9",
+        "REL2-ddbd67ee39ac2096",
         "REL2-de5487ce28a724fb",
         "REL2-fcedf12f07ebc6c2",
         "REL2-5d24ca1eeaa32514",
         "REL2-70d05a81606b3589",
         "REL2-d68bd82241b5ba02",
+        "REL2-f92ee2f782a8185b",
         "REL2-6e0bd52053c02359",
         "REL2-c2d351d111dce63d",
         "REL2-1967b453be7e7724",
+        "REL2-638b55900181fbf2",
         "REL2-65389a75e3085862",
         "REL2-a973fd9783c033d1",
         "REL2-c1743ef4560536bd",
         "REL2-eba841d5627207a4",
+        "REL2-7a95bce5aecaba79",
         "REL2-80e7d430efc92a5c",
         "REL2-3831db0cf6e33a54",
+        "REL2-44ebd8a7378accce",
         "REL2-d205049958061bb1",
         "REL2-d38107a2fe8bacd9",
+        "REL2-4aa175c42153e014",
         "REL2-572d299c04663eb3",
         "REL2-653e76cf1e48b6fd",
         "REL2-0637ce4d20d93f49"
       ],
       "type": "公司/机构",
       "productIds": [
+        "EN-307557d99a7eb726",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-18f0900d6c487f59",
+        "EN-31055a8d9856fce4",
         "EN-18f0900d6c487f59",
         "EN-18f0900d6c487f59",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
+        "EN-01f1074bb52ff605",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-01f1074bb52ff605",
@@ -3821,6 +3849,8 @@
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
         "EN-d56aa2f9908f566a",
+        "EN-d56aa2f9908f566a",
+        "EN-4baef0e41cbd7ae2",
         "EN-4baef0e41cbd7ae2",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2"
@@ -3875,11 +3905,11 @@
         "DeepMind"
       ],
       "tags": [
-        "科研与发现",
-        "安全运营",
-        "软件开发",
+        "媒体与娱乐",
         "模型",
-        "芯片与加速器"
+        "图像生成",
+        "语音与音频",
+        "多模态"
       ],
       "eventIds": [
         "EV-55e7c286e95be405",
@@ -3955,11 +3985,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业软件平台",
         "企业用户",
         "行业应用",
         "智能体",
-        "金融服务",
-        "企业软件平台"
+        "金融服务"
       ],
       "eventIds": [
         "EV-bffc68e7bb4d598b"
@@ -4003,10 +4033,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "终端 AI 应用",
         "媒体与娱乐",
         "个人用户",
         "内容创作",
+        "终端 AI 应用",
         "行业应用"
       ],
       "eventIds": [
@@ -4046,10 +4076,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
+        "开发与部署",
         "开发者",
         "研究人员",
-        "科研与发现",
-        "软件开发"
+        "科研与发现"
       ],
       "eventIds": [
         "EV-386c205c8bbf537d",
@@ -4094,11 +4124,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "电信",
-        "安全运营",
-        "软件开发",
+        "企业软件平台",
         "模型",
-        "智能体"
+        "语音与音频",
+        "电信",
+        "安全运营"
       ],
       "eventIds": [
         "EV-32d7c52f89d74e88",
@@ -4149,10 +4179,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
+        "开发与部署",
         "开发者",
         "软件开发",
-        "开发者工具",
-        "AI 开发与编排"
+        "开发者工具"
       ],
       "eventIds": [
         "EV-d7a7244d620a2142"
@@ -4188,11 +4218,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业用户",
-        "制造业",
-        "生产力与企业工作流",
         "企业级应用",
-        "生产力与企业工作流"
+        "企业软件平台",
+        "企业用户",
+        "销售",
+        "制造业"
       ],
       "eventIds": [
         "EV-b29878fdf79f2ac5"
@@ -4469,10 +4499,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业软件平台",
         "模型",
         "生产力与企业工作流",
         "智能体",
-        "企业软件平台",
         "RAG"
       ],
       "eventIds": [
@@ -4541,8 +4571,8 @@
       "aliases": [],
       "tags": [
         "模型",
-        "智能体",
         "多模态",
+        "智能体",
         "长上下文"
       ],
       "eventIds": [
@@ -4605,11 +4635,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "数据分析",
-        "终端 AI 应用",
+        "媒体与娱乐",
+        "企业级应用",
+        "企业软件平台",
         "企业用户",
-        "软件开发",
-        "模型"
+        "销售"
       ],
       "eventIds": [
         "EV-c1295b8f58024ff6",
@@ -4636,6 +4666,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-fd62c17a36b4e7e0",
         "EV-6fdbcd14c6a633b6",
         "EV-7b0ff6657c0e0483",
         "EV-9d53b12f5f077d3b",
@@ -4705,7 +4736,7 @@
         "EV-8fcecabca2e92b40"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
         "EN-af54bb0c9a39eb30",
         "EN-62503b0d3dcfd096",
@@ -4747,11 +4778,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "数据分析",
         "企业用户",
-        "安全运营",
-        "制造业",
-        "个人用户"
+        "个人用户",
+        "图像生成",
+        "语音与音频",
+        "数据分析"
       ],
       "eventIds": [
         "EV-9ed6a759555d7e77",
@@ -4781,8 +4812,8 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
-        "EV-decbf1a34be68603",
         "EV-d2247eeac1478994",
+        "EV-decbf1a34be68603",
         "EV-6272444f30281858",
         "EV-f55d16df5b5fecb2",
         "EV-16cfe946bbf69aa3",
@@ -4879,7 +4910,7 @@
         "EV-7580a050ca19a8ae"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-25",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
         "EN-8652f6cd9088f1fa",
         "EN-d2f4e09cb01afa3c",
@@ -4912,8 +4943,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "芯片与加速器",
         "多模态",
+        "芯片与加速器",
         "视频生成"
       ],
       "eventIds": [
@@ -4981,11 +5012,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业软件平台",
+        "企业用户",
+        "模型",
         "基础设施与算力",
-        "航空航天与国防",
-        "政府与公共部门",
-        "开发者",
-        "企业用户"
+        "开发与部署"
       ],
       "eventIds": [
         "EV-55e7c286e95be405",
@@ -5039,8 +5070,12 @@
       ],
       "firstSeen": "2026-07-14",
       "lastSeen": "2026-07-15",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-2106a1b212c3c15f"
+      ],
       "type": "公司/机构",
       "productIds": []
     },
@@ -5050,10 +5085,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "基础设施与算力",
-        "开发者",
         "企业用户",
-        "软件开发",
+        "模型",
+        "基础设施与算力",
+        "开发与部署",
         "模型"
       ],
       "eventIds": [
@@ -5114,11 +5149,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "基础设施与算力",
-        "开发者",
-        "研究人员",
-        "制造业",
-        "模型"
+        "开发与部署",
+        "模型",
+        "开发者"
       ],
       "eventIds": [
         "EV-c7ba7b093a1a3b94",
@@ -5145,11 +5180,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "开发者",
-        "终端 AI 应用",
+        "企业级应用",
+        "企业软件平台",
         "企业用户",
-        "软件开发",
-        "生产力与企业工作流"
+        "个人用户",
+        "开发者"
       ],
       "eventIds": [
         "EV-7a85e21802efd8b2",
@@ -5167,13 +5202,15 @@
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "sourceType": "organization_candidate",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "tags": [
-        "计算基础设施",
-        "基础设施与算力",
-        "硬件与算力",
-        "航空航天与国防",
-        "政府与公共部门"
+        "媒体与娱乐",
+        "企业用户",
+        "客户支持",
+        "模型",
+        "基础设施与算力"
       ],
       "eventIds": [
         "EV-b231e1a452a7c74a",
@@ -5257,6 +5294,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-2b529f1793d4230f",
+        "EV-470c66c0e334794e",
+        "EV-52c6ed0bb40311d1",
         "EV-3a28c66df32b57d2",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
@@ -5348,6 +5388,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-569e956899258a54",
         "EV-a3ccf873058bb406",
         "EV-36a49fa0e0b96d95",
         "EV-ce32954014cb030d",
@@ -5367,42 +5408,54 @@
         "EV-0b49d637d7c07ce0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-25",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "relationIds": [
         "REL2-1a63e4b77f739862",
         "REL2-5adcd6a62a7c957e",
         "REL2-a413b62820bbd0b4",
+        "REL2-a96854ad8a7b0bbc",
         "REL2-2e2947ee2164a001",
+        "REL2-7a766493d6d54dde",
         "REL2-ad458f34aa92dd3d",
         "REL2-cafdb908d0ccedc9",
+        "REL2-cd31c7f1b13d1c27",
         "REL2-d2669b3b21d3263a",
         "REL2-6cbc4c2f090d044c",
         "REL2-e450a1c99a5b2883",
+        "REL2-2106a1b212c3c15f",
         "REL2-5c7eb93c8f39f28d",
         "REL2-434765e50ff89fea",
         "REL2-6bbe82d002f050c9",
         "REL2-1408b94e058f06a8",
         "REL2-bcb7c3de6286e47d",
+        "REL2-09079be08468cadc",
         "REL2-484ba978461cb818",
         "REL2-ae83b89a043b00cb",
         "REL2-b1345cf8cfaa1fc3",
@@ -5415,17 +5468,25 @@
         "REL2-594da80406279eb3",
         "REL2-c03f8010834c7954",
         "REL2-e9ef6e697ef06f93",
-        "REL2-f07aa4dea6ae17e2"
+        "REL2-4ba72572dcf15f72",
+        "REL2-6e1c341aeaa60f54",
+        "REL2-cd95b9638b93b057",
+        "REL2-f07aa4dea6ae17e2",
+        "REL2-f1a8de714fc4b399"
       ],
       "type": "公司/机构",
       "productIds": [
         "EN-9bc22dcabf7f45b3",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-e07654c7cc29acbd",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-a1b0d8a938903dc7",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-1dc405a4cda895d0",
@@ -5433,7 +5494,11 @@
         "EN-8395dc051feafc4c",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-1dc405a4cda895d0"
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b",
+        "EN-1dc405a4cda895d0",
+        "EN-a3266ab9e10d6105"
       ]
     },
     {
@@ -5442,11 +5507,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "航空航天与国防",
-        "研究人员",
-        "数据分析",
-        "科研与发现",
-        "专业服务"
+        "媒体与娱乐",
+        "企业级应用",
+        "企业软件平台",
+        "企业用户",
+        "客户支持"
       ],
       "eventIds": [
         "EV-fe49d2ee580cfea2",
@@ -5542,14 +5607,20 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-4268b4be01fc8711",
+        "EV-470c66c0e334794e",
+        "EV-a9e8de27cc79efb2",
+        "EV-d69d239fd5bcc319",
+        "EV-52c6ed0bb40311d1",
+        "EV-911e7e2722aa5ebc",
         "EV-92634b09de96ca83",
         "EV-2afe102017e1b21c",
+        "EV-3c327b49d78d4388",
         "EV-44a833fe8dd16006",
         "EV-7a116596551ff8c7",
         "EV-98823b85fd27102b",
         "EV-c4d784c7069ca66b",
         "EV-d4af2db7a4759431",
-        "EV-3c327b49d78d4388",
         "EV-a09f6e93ad868a57",
         "EV-6993e6a7df339e59",
         "EV-597a6d51533fe5d6",
@@ -5741,6 +5812,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-16a0fe419e75402b",
+        "EV-569e956899258a54",
+        "EV-bce258f8f915ff5f",
         "EV-93cbf506bc54b34e",
         "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
@@ -5757,7 +5831,6 @@
         "EV-2902a32e86a4b2d1",
         "EV-90707e0cbca091c9",
         "EV-9356dd1be92ef5c6",
-        "EV-bce258f8f915ff5f",
         "EV-649481503cdb7736",
         "EV-6645d194b59939ca",
         "EV-94adebee59a6dede",
@@ -5817,8 +5890,9 @@
         "EV-e8e47f4bb528e107"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-25",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
+        "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
@@ -5829,7 +5903,6 @@
         "EN-74692028630429c7",
         "EN-c70eca6b0f88f44d",
         "EN-52fc33ae4d101a5d",
-        "EN-6a50fbf0b970c03a",
         "EN-9fbf261b62c1d7c0",
         "EN-4d748ebd71af03a7",
         "EN-65ef4539bbcbe9fc",
@@ -5845,6 +5918,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "relationIds": [
+        "REL2-4d08c2aaa7f9328a",
         "REL2-b2fd7c5284307b20",
         "REL2-10ceb94d03e5bd63",
         "REL2-ac23d27e955fb3fc",
@@ -5907,6 +5981,7 @@
       "chinaMarketMatch": true,
       "type": "公司/机构",
       "productIds": [
+        "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
         "EN-d1ad14d4ad57d207",
         "EN-d1ad14d4ad57d207",
@@ -5998,10 +6073,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
-        "开发者",
-        "软件开发",
+        "开发与部署",
         "模型",
-        "开发与部署"
+        "开发者",
+        "软件开发"
       ],
       "eventIds": [
         "EV-9d665270d4feb97e",
@@ -6080,10 +6155,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
+        "开发与部署",
         "开发者",
         "软件开发",
-        "物理自动化",
-        "智能体"
+        "物理自动化"
       ],
       "eventIds": [
         "EV-7f3298069258b3ea",
@@ -6105,11 +6180,11 @@
         "P-1 AI"
       ],
       "tags": [
-        "终端 AI 应用",
+        "企业级应用",
         "企业用户",
+        "终端 AI 应用",
         "制造业",
-        "生产力与企业工作流",
-        "企业级应用"
+        "生产力与企业工作流"
       ],
       "eventIds": [
         "EV-39b075c62ba4e927"
@@ -6127,10 +6202,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "数据分析",
-        "企业用户",
-        "生产力与企业工作流",
         "企业级应用",
+        "企业软件平台",
+        "企业用户",
+        "数据分析",
         "生产力与企业工作流"
       ],
       "eventIds": [
@@ -6149,9 +6224,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业用户",
         "数据分析",
         "终端 AI 应用",
-        "企业用户",
         "生产力与企业工作流",
         "行业应用"
       ],
@@ -6171,10 +6246,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业软件平台",
         "政府与公共部门",
         "生产力与企业工作流",
-        "智能体",
-        "企业软件平台"
+        "智能体"
       ],
       "eventIds": [
         "EV-3a7128e2d7ff149e"
@@ -6199,10 +6274,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
+        "开发与部署",
         "开发者",
         "研究人员",
-        "科研与发现",
-        "AI 基础设施软件"
+        "科研与发现"
       ],
       "eventIds": [
         "EV-463cb26b5e03c7f7",
@@ -6313,10 +6388,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业级应用",
         "开发者",
         "终端 AI 应用",
         "软件开发",
-        "企业级应用",
         "软件开发与编程工具"
       ],
       "eventIds": [
@@ -6370,8 +6445,8 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
-        "开发者",
         "模型",
+        "开发者",
         "内容创作",
         "智能体"
       ],
@@ -6470,10 +6545,10 @@
         "MCP AI"
       ],
       "tags": [
+        "媒体与娱乐",
+        "企业软件平台",
+        "企业用户",
         "基础设施与算力",
-        "航空航天与国防",
-        "政府与公共部门",
-        "电信",
         "开发者"
       ],
       "eventIds": [
@@ -6534,8 +6609,8 @@
       "aliases": [],
       "tags": [
         "企业用户",
-        "代码生成",
         "客户支持",
+        "代码生成",
         "智能体"
       ],
       "eventIds": [
@@ -6693,11 +6768,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业用户",
+        "模型",
         "基础设施与算力",
-        "政府与公共部门",
-        "开发者",
-        "数据分析",
-        "企业用户"
+        "开发与部署",
+        "模型"
       ],
       "eventIds": [
         "EV-e3382d1c1d7db751",
@@ -6929,11 +7004,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "航空航天与国防",
-        "电信",
-        "公共部门用户",
         "企业用户",
-        "软件开发"
+        "模型",
+        "个人用户",
+        "航空航天与国防",
+        "电信"
       ],
       "eventIds": [
         "EV-fe49d2ee580cfea2",
@@ -7151,8 +7226,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
         "模型",
+        "制造业",
         "芯片与加速器",
         "医疗与生命科学",
         "智能体"
@@ -7247,10 +7322,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "计算基础设施",
         "基础设施与算力",
-        "硬件与算力",
         "开发者",
+        "计算基础设施",
+        "硬件与算力",
         "算力云服务"
       ],
       "eventIds": [
@@ -7326,11 +7401,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "航空航天与国防",
-        "政府与公共部门",
-        "电信",
-        "专业服务",
-        "企业用户"
+        "媒体与娱乐",
+        "企业级应用",
+        "企业软件平台",
+        "企业用户",
+        "航空航天与国防"
       ],
       "eventIds": [
         "EV-e31a6bf3c0a979f8"
@@ -7414,10 +7489,10 @@
       ],
       "tags": [
         "基础设施与算力",
+        "开发者",
         "硬件与算力",
         "航空航天与国防",
-        "电信",
-        "开发者"
+        "电信"
       ],
       "eventIds": [
         "EV-b2d94511e4b4dfc8",
@@ -7527,11 +7602,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业用户",
         "基础设施与算力",
+        "开发与部署",
         "航空航天与国防",
-        "政府与公共部门",
-        "公共部门用户",
-        "企业用户"
+        "政府与公共部门"
       ],
       "eventIds": [
         "EV-82e77abb1a77f81c"
@@ -7565,11 +7640,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业软件平台",
         "电信",
         "专业服务",
         "制造业",
-        "医疗与生命科学",
-        "零售与电商"
+        "医疗与生命科学"
       ],
       "eventIds": [
         "EV-6ce6b9c9780b97d9"
@@ -7724,9 +7799,9 @@
         "SpaceXAI"
       ],
       "tags": [
+        "模型",
         "终端 AI 应用",
         "软件开发",
-        "模型",
         "代码生成"
       ],
       "eventIds": [
@@ -7821,7 +7896,7 @@
         "EV-dd902b603e2e3dbc"
       ],
       "firstSeen": "2026-05-09",
-      "lastSeen": "2026-08-25",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
         "EN-101a515191c6be9e",
         "EN-ddf9916b459b6d77"
@@ -9349,7 +9424,8 @@
         "EN-8d4321d936320802"
       ],
       "relationIds": [
-        "REL2-5adcd6a62a7c957e"
+        "REL2-5adcd6a62a7c957e",
+        "REL2-6e1c341aeaa60f54"
       ],
       "legacyIds": [
         "PD-5c451d38622691"
@@ -10075,15 +10151,17 @@
       "aliases": [],
       "tags": [],
       "eventIds": [
+        "EV-4268b4be01fc8711",
         "EV-efee7c1ac4dc336f",
         "EV-d07f7a8d4d20a034"
       ],
       "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-12",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
         "EN-7d3194f79e645c42"
       ],
       "relationIds": [
+        "REL2-4d08c2aaa7f9328a",
         "REL2-445144854bb103e9",
         "REL2-7f76d1e22005078d"
       ],
@@ -10163,6 +10241,7 @@
         "工具调用"
       ],
       "eventIds": [
+        "EV-c74cb30742362fa2",
         "EV-c3ac03a8a0cc3a0e",
         "EV-4e815cac738fa514",
         "EV-c93d59338b5dae93",
@@ -10218,7 +10297,7 @@
         "EV-9576bebb698a4c66"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d"
       ],
@@ -10255,7 +10334,6 @@
         "EN-c70eca6b0f88f44d"
       ],
       "relationIds": [
-        "REL2-5a2b9cfd6f0b1ca6",
         "REL2-8f5f9424d107b468"
       ],
       "legacyIds": [
@@ -10885,13 +10963,21 @@
       ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-01",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-cd95b9638b93b057"
+      ],
       "legacyIds": [
         "PD-d786a3df7b7eb3"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "模型"
     },
     {
@@ -11170,6 +11256,7 @@
       ],
       "relationIds": [
         "REL2-1bac7c6922a7a98b",
+        "REL2-44ebd8a7378accce",
         "REL2-d205049958061bb1",
         "REL2-d38107a2fe8bacd9"
       ],
@@ -11861,13 +11948,21 @@
       ],
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-22",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "relationIds": [
+        "REL2-ddbd67ee39ac2096"
+      ],
       "legacyIds": [
         "PD-66c08d6b6bbf5b"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "companyNames": [
+        "Google"
+      ],
       "type": "产品/服务"
     },
     {
@@ -11887,6 +11982,7 @@
         "EN-bbdefa2950f49882"
       ],
       "relationIds": [
+        "REL2-4aa175c42153e014",
         "REL2-572d299c04663eb3",
         "REL2-653e76cf1e48b6fd"
       ],
@@ -11924,6 +12020,7 @@
       "relationIds": [
         "REL2-a5a15f09d4da8135",
         "REL2-284835caff7e4288",
+        "REL2-9ad2c97e765910d9",
         "REL2-de5487ce28a724fb",
         "REL2-fcedf12f07ebc6c2"
       ],
@@ -12040,13 +12137,21 @@
       ],
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-08-03",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "relationIds": [
+        "REL2-a675a7f7bd02161e"
+      ],
       "legacyIds": [
         "PD-ec7b7e08cb71aa"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "companyNames": [
+        "Google"
+      ],
       "type": "产品/服务"
     },
     {
@@ -14354,6 +14459,7 @@
         "EN-bbdefa2950f49882"
       ],
       "relationIds": [
+        "REL2-f92ee2f782a8185b",
         "REL2-65389a75e3085862",
         "REL2-c1743ef4560536bd"
       ],
@@ -14390,6 +14496,7 @@
       ],
       "relationIds": [
         "REL2-1967b453be7e7724",
+        "REL2-638b55900181fbf2",
         "REL2-a973fd9783c033d1"
       ],
       "legacyIds": [
@@ -14490,13 +14597,21 @@
       ],
       "firstSeen": "2026-07-18",
       "lastSeen": "2026-07-18",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-cd31c7f1b13d1c27"
+      ],
       "legacyIds": [
         "PD-833fc115c730ec"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "模型"
     },
     {
@@ -14515,7 +14630,8 @@
         "EN-8d4321d936320802"
       ],
       "relationIds": [
-        "REL2-c03f8010834c7954"
+        "REL2-c03f8010834c7954",
+        "REL2-f1a8de714fc4b399"
       ],
       "legacyIds": [
         "PD-46986ddee34da1"
@@ -14597,13 +14713,21 @@
       ],
       "firstSeen": "2026-07-03",
       "lastSeen": "2026-07-04",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-09079be08468cadc"
+      ],
       "legacyIds": [
         "PD-9aea46c14cd700"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "模型"
     },
     {
@@ -15079,8 +15203,8 @@
       "tags": [
         "模型",
         "内容创作",
-        "多模态",
-        "语音与音频"
+        "语音与音频",
+        "多模态"
       ],
       "eventIds": [
         "EV-99e5df844a1bd670"
@@ -15566,9 +15690,9 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
+        "多模态",
         "物理自动化",
-        "智能体",
-        "多模态"
+        "智能体"
       ],
       "eventIds": [
         "EV-6bac0bf442887889",
@@ -16321,13 +16445,21 @@
       ],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-23",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-a96854ad8a7b0bbc"
+      ],
       "legacyIds": [
         "PD-3024f545287089"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "产品/服务"
     },
     {
@@ -16771,13 +16903,21 @@
       ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-01",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-4ba72572dcf15f72"
+      ],
       "legacyIds": [
         "PD-886fed01789257"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "产品/服务"
     },
     {
@@ -16793,13 +16933,21 @@
       ],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-22",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-7a766493d6d54dde"
+      ],
       "legacyIds": [
         "PD-88eed347b281e5"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-8d4321d936320802"
+      ],
+      "companyNames": [
+        "NVIDIA"
+      ],
       "type": "产品/服务"
     },
     {
@@ -22338,12 +22486,12 @@
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
       "current_round_count": 10,
-      "historical_or_ambiguous_count": 3,
+      "historical_or_ambiguous_count": 4,
       "portfolio_company_count": 7,
       "first_disclosed_at": "2025-03-03",
-      "latest_disclosed_at": "2026-08-10",
+      "latest_disclosed_at": "2026-08-25",
       "role_counts": {
-        "historical_or_ambiguous": 3,
+        "historical_or_ambiguous": 4,
         "lead": 6,
         "participant": 4
       },
@@ -22356,7 +22504,7 @@
         "series_f",
         "series_g"
       ],
-      "activity_count": 13,
+      "activity_count": 14,
       "portfolio_companies": [
         {
           "entity_id": "EN-c70eca6b0f88f44d",
@@ -22395,6 +22543,34 @@
         }
       ],
       "latest_activities": [
+        {
+          "activity_id": "IA-1ef9805b15b8d528",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2022 年 1.01 亿美元融资领投方",
+          "role_code": "historical_or_ambiguous"
+        },
         {
           "activity_id": "IA-462b44e0de4ba2ea",
           "funding_insight_id": "FI-f55b62cf10cb7c98",
@@ -22449,34 +22625,6 @@
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮领投",
-          "role_code": "lead"
-        },
-        {
-          "activity_id": "IA-7750a8677b8a8516",
-          "funding_insight_id": "FI-3b1ea359415f476d",
-          "event_ids": [
-            "EV-4eaf3aabecae6016"
-          ],
-          "company_entity_id": "EN-0caee180da9d0f3f",
-          "company_canonical_entity_id": "",
-          "company_name": "Fireworks AI Inc.",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "$1.505 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1505000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "15.05 亿美元"
-          },
-          "announced_at": "2026-07-16",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投，既有投资方（Series C领投）",
           "role_code": "lead"
         }
       ]
@@ -22650,13 +22798,13 @@
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
       "current_round_count": 8,
-      "historical_or_ambiguous_count": 2,
+      "historical_or_ambiguous_count": 3,
       "portfolio_company_count": 6,
       "first_disclosed_at": "2023-04-27",
-      "latest_disclosed_at": "2026-08-10",
+      "latest_disclosed_at": "2026-08-25",
       "role_counts": {
         "co_lead": 1,
-        "historical_or_ambiguous": 2,
+        "historical_or_ambiguous": 3,
         "lead": 3,
         "participant": 4
       },
@@ -22669,7 +22817,7 @@
         "series_g",
         "strategic"
       ],
-      "activity_count": 10,
+      "activity_count": 11,
       "portfolio_companies": [
         {
           "entity_id": "EN-c70eca6b0f88f44d",
@@ -22703,6 +22851,34 @@
         }
       ],
       "latest_activities": [
+        {
+          "activity_id": "IA-f4cf362c0b3d249f",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2022 年 1.01 亿美元融资领投方",
+          "role_code": "historical_or_ambiguous"
+        },
         {
           "activity_id": "IA-5f1ce199a0098494",
           "funding_insight_id": "FI-f55b62cf10cb7c98",
@@ -22758,34 +22934,6 @@
           "scope": "current_round",
           "role": "本轮领投",
           "role_code": "lead"
-        },
-        {
-          "activity_id": "IA-8f4a41e2fcdc2240",
-          "funding_insight_id": "FI-9fd39f44b35d940c",
-          "event_ids": [
-            "EV-d9cc588fb41a7e67"
-          ],
-          "company_entity_id": "EN-712dffae168fe622",
-          "company_canonical_entity_id": "",
-          "company_name": "Nomos Ai Inc.",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "1.2亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 120000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.2 亿美元"
-          },
-          "announced_at": "2026-07-07",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
         }
       ]
     },
@@ -23236,6 +23384,149 @@
             "display_zh": "8 亿美元"
           },
           "announced_at": "2026-07-01",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-e6c1001c21765f",
+      "name": "AMD Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 6,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 6,
+      "first_disclosed_at": "2026-04-30",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "co_lead": 2,
+        "participant": 4
+      },
+      "round_codes": [
+        "multi_round",
+        "series_a",
+        "series_b"
+      ],
+      "activity_count": 6,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-ce31f92c521b7b08",
+          "canonical_entity_id": "EN-ce31f92c521b7b08",
+          "name": "Featherless.ai"
+        },
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_entity_id": "",
+          "name": "Hark"
+        },
+        {
+          "entity_id": "FICO-7e1d6c73932aa9b0",
+          "canonical_entity_id": "",
+          "name": "Odyssey ML"
+        },
+        {
+          "entity_id": "EN-8ab71d56a963f706",
+          "canonical_entity_id": "",
+          "name": "River AI"
+        },
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        },
+        {
+          "entity_id": "EN-3c1ae4e6276005e7",
+          "canonical_entity_id": "EN-3c1ae4e6276005e7",
+          "name": "TensorWave Inc."
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-3457dedc6b71576e",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-29b984ac8a9199bd",
+          "funding_insight_id": "FI-d1444f877a3e580e",
+          "event_ids": [
+            "EV-55e7c286e95be405"
+          ],
+          "company_entity_id": "EN-8ab71d56a963f706",
+          "company_canonical_entity_id": "",
+          "company_name": "River AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$1.1 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "11 亿美元"
+          },
+          "announced_at": "2026-08-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-5563a3c2a03b63a9",
+          "funding_insight_id": "FI-479f9d5c1123dba2",
+          "event_ids": [
+            "EV-a00763037a94d512"
+          ],
+          "company_entity_id": "FICO-7e1d6c73932aa9b0",
+          "company_canonical_entity_id": "",
+          "company_name": "Odyssey ML",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "3.1亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 310000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.1 亿美元"
+          },
+          "announced_at": "2026-06-17",
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
@@ -23821,6 +24112,145 @@
       ]
     },
     {
+      "id": "INV-25dbfe1bcda658",
+      "name": "Peak XV Partners",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 5,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 5,
+      "first_disclosed_at": "2025-10-28",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "lead": 2,
+        "participant": 3
+      },
+      "round_codes": [
+        "multi_round",
+        "seed",
+        "series_a"
+      ],
+      "activity_count": 6,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-fe301d1f025971a1",
+          "canonical_entity_id": "",
+          "name": "Discovered Materials"
+        },
+        {
+          "entity_id": "EN-eaa1c24270a0d057",
+          "canonical_entity_id": "",
+          "name": "Harper"
+        },
+        {
+          "entity_id": "EN-f346eaca864441f9",
+          "canonical_entity_id": "",
+          "name": "JustAI"
+        },
+        {
+          "entity_id": "EN-a9aff9e0737a5d4a",
+          "canonical_entity_id": "",
+          "name": "Mem0"
+        },
+        {
+          "entity_id": "EN-3b3ed571bbb19504",
+          "canonical_entity_id": "",
+          "name": "Ringg"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-6b49592612a33129",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        },
+        {
+          "activity_id": "IA-a343bb65e2c0906b",
+          "funding_insight_id": "FI-5d8eab3e612ca748",
+          "event_ids": [
+            "EV-c6cccaca326dfd45"
+          ],
+          "company_entity_id": "EN-fe301d1f025971a1",
+          "company_canonical_entity_id": "",
+          "company_name": "Discovered Materials",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$9 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 9000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "900 万美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-9eb0011e52a75bb0",
+          "funding_insight_id": "FI-617705549a679908",
+          "event_ids": [
+            "EV-e7dcecaed5a0ee5b"
+          ],
+          "company_entity_id": "EN-f346eaca864441f9",
+          "company_canonical_entity_id": "",
+          "company_name": "JustAI",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$17 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 17000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1700 万美元"
+          },
+          "announced_at": "2026-06-23",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投，种子轮领投",
+          "role_code": "lead"
+        }
+      ]
+    },
+    {
       "id": "INV-cbf3e624e55b8f",
       "name": "Jane Street",
       "aliases": [],
@@ -24237,144 +24667,6 @@
           }
         }
       }
-    },
-    {
-      "id": "INV-e6c1001c21765f",
-      "name": "AMD Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 5,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 5,
-      "first_disclosed_at": "2026-04-30",
-      "latest_disclosed_at": "2026-08-11",
-      "role_counts": {
-        "co_lead": 2,
-        "participant": 3
-      },
-      "round_codes": [
-        "multi_round",
-        "series_a",
-        "series_b"
-      ],
-      "activity_count": 5,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-ce31f92c521b7b08",
-          "canonical_entity_id": "EN-ce31f92c521b7b08",
-          "name": "Featherless.ai"
-        },
-        {
-          "entity_id": "EN-245f1e177c5169cb",
-          "canonical_entity_id": "",
-          "name": "Hark"
-        },
-        {
-          "entity_id": "FICO-7e1d6c73932aa9b0",
-          "canonical_entity_id": "",
-          "name": "Odyssey ML"
-        },
-        {
-          "entity_id": "EN-8ab71d56a963f706",
-          "canonical_entity_id": "",
-          "name": "River AI"
-        },
-        {
-          "entity_id": "EN-3c1ae4e6276005e7",
-          "canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "name": "TensorWave Inc."
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-29b984ac8a9199bd",
-          "funding_insight_id": "FI-d1444f877a3e580e",
-          "event_ids": [
-            "EV-55e7c286e95be405"
-          ],
-          "company_entity_id": "EN-8ab71d56a963f706",
-          "company_canonical_entity_id": "",
-          "company_name": "River AI",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "$1.1 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1100000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "11 亿美元"
-          },
-          "announced_at": "2026-08-11",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-5563a3c2a03b63a9",
-          "funding_insight_id": "FI-479f9d5c1123dba2",
-          "event_ids": [
-            "EV-a00763037a94d512"
-          ],
-          "company_entity_id": "FICO-7e1d6c73932aa9b0",
-          "company_canonical_entity_id": "",
-          "company_name": "Odyssey ML",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "3.1亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 310000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.1 亿美元"
-          },
-          "announced_at": "2026-06-17",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-f2361e00c180ee5b",
-          "funding_insight_id": "FI-1f714b499dc9751a",
-          "event_ids": [
-            "EV-6e516b6e68def9cf"
-          ],
-          "company_entity_id": "EN-3c1ae4e6276005e7",
-          "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "company_name": "TensorWave Inc.",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "3.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-06-10",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
-        }
-      ]
     },
     {
       "id": "INV-fab7efd306c6f9",
@@ -25582,140 +25874,6 @@
           "disclosure_status": "disclosed",
           "scope": "historical_or_ambiguous",
           "role": "天使投资人",
-          "role_code": "historical_or_ambiguous"
-        }
-      ]
-    },
-    {
-      "id": "INV-25dbfe1bcda658",
-      "name": "Peak XV Partners",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 4,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 4,
-      "first_disclosed_at": "2025-10-28",
-      "latest_disclosed_at": "2026-08-10",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "lead": 1,
-        "participant": 3
-      },
-      "round_codes": [
-        "multi_round",
-        "seed",
-        "series_a"
-      ],
-      "activity_count": 5,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-fe301d1f025971a1",
-          "canonical_entity_id": "",
-          "name": "Discovered Materials"
-        },
-        {
-          "entity_id": "EN-eaa1c24270a0d057",
-          "canonical_entity_id": "",
-          "name": "Harper"
-        },
-        {
-          "entity_id": "EN-f346eaca864441f9",
-          "canonical_entity_id": "",
-          "name": "JustAI"
-        },
-        {
-          "entity_id": "EN-a9aff9e0737a5d4a",
-          "canonical_entity_id": "",
-          "name": "Mem0"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-a343bb65e2c0906b",
-          "funding_insight_id": "FI-5d8eab3e612ca748",
-          "event_ids": [
-            "EV-c6cccaca326dfd45"
-          ],
-          "company_entity_id": "EN-fe301d1f025971a1",
-          "company_canonical_entity_id": "",
-          "company_name": "Discovered Materials",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$9 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 9000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "900 万美元"
-          },
-          "announced_at": "2026-08-10",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-9eb0011e52a75bb0",
-          "funding_insight_id": "FI-617705549a679908",
-          "event_ids": [
-            "EV-e7dcecaed5a0ee5b"
-          ],
-          "company_entity_id": "EN-f346eaca864441f9",
-          "company_canonical_entity_id": "",
-          "company_name": "JustAI",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$17 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 17000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1700 万美元"
-          },
-          "announced_at": "2026-06-23",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投，种子轮领投",
-          "role_code": "lead"
-        },
-        {
-          "activity_id": "IA-3a61f597f86a2adf",
-          "funding_insight_id": "FI-9854c05d7208a585",
-          "event_ids": [
-            "EV-e3382d1c1d7db751"
-          ],
-          "company_entity_id": "EN-ee1e31ffef7dbe64",
-          "company_canonical_entity_id": "EN-ee1e31ffef7dbe64",
-          "company_name": "Sarvam",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "Series B",
-          "amount_original": "$234 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 234000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2.34 亿美元"
-          },
-          "announced_at": "2026-06-15",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
           "role_code": "historical_or_ambiguous"
         }
       ]
@@ -43093,6 +43251,477 @@
       ]
     },
     {
+      "id": "INV-233fe3b442b6ce",
+      "name": "Electronic Arts (EA)",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-7e36b2fd75fd7536",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-fc71812ae25f8e",
+      "name": "Kunal Shah",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "individual",
+      "investor_kind_label": "个人投资者",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-07-16",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "other_current_round": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-2a920347dfcf07a7",
+          "canonical_entity_id": "EN-2a920347dfcf07a7",
+          "name": "Aina"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-69bb59322ceda4b2",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Series A参投",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-0d6c135f317a30c7",
+          "funding_insight_id": "FI-20e67383e8533b80",
+          "event_ids": [
+            "EV-02882e6f5e1902c6"
+          ],
+          "company_entity_id": "EN-2a920347dfcf07a7",
+          "company_canonical_entity_id": "EN-2a920347dfcf07a7",
+          "company_name": "Aina",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "550万美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 5500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "550 万美元"
+          },
+          "announced_at": "2026-07-16",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮天使投资人",
+          "role_code": "other_current_round"
+        }
+      ]
+    },
+    {
+      "id": "INV-843eb7584e1343",
+      "name": "Pacific Alliance Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-4081b2966f26d715",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-b0b37642c2b2eb",
+      "name": "Sony Music Group",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-f4e76cb781a757eb",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-1acf19e38b7db0",
+      "name": "Sound Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-01-13",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "lead": 1
+      },
+      "round_codes": [
+        "strategic"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8e8cc11d1475231b",
+          "canonical_entity_id": "",
+          "name": "Witness AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-6aa695a40559ab71",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-5596d8e4332b63d1",
+          "funding_insight_id": "FI-0386397f33fcf55a",
+          "event_ids": [
+            "EV-fdfd4bf00571bb35"
+          ],
+          "company_entity_id": "EN-8e8cc11d1475231b",
+          "company_canonical_entity_id": "",
+          "company_name": "Witness AI",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "$58 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 58000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5800 万美元"
+          },
+          "announced_at": "2026-01-13",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        }
+      ]
+    },
+    {
+      "id": "INV-a0e40d1e7641e9",
+      "name": "Universal Music Group",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-09c79b0715e285c8",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-46d0c3d336d7d6",
+      "name": "Warner Music Group",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-336ab1deb42d6284",
+          "canonical_entity_id": "",
+          "name": "Stability AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-2dff2bb163ac2445",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-cf555a1ead09c2",
       "name": "776",
       "aliases": [],
@@ -54994,65 +55623,6 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-fc71812ae25f8e",
-      "name": "Kunal Shah",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "individual",
-      "investor_kind_label": "个人投资者",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-07-16",
-      "latest_disclosed_at": "2026-07-16",
-      "role_counts": {
-        "other_current_round": 1
-      },
-      "round_codes": [
-        "seed"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-2a920347dfcf07a7",
-          "canonical_entity_id": "EN-2a920347dfcf07a7",
-          "name": "Aina"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-0d6c135f317a30c7",
-          "funding_insight_id": "FI-20e67383e8533b80",
-          "event_ids": [
-            "EV-02882e6f5e1902c6"
-          ],
-          "company_entity_id": "EN-2a920347dfcf07a7",
-          "company_canonical_entity_id": "EN-2a920347dfcf07a7",
-          "company_name": "Aina",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "550万美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 5500000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "550 万美元"
-          },
-          "announced_at": "2026-07-16",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮天使投资人",
-          "role_code": "other_current_round"
         }
       ]
     },
@@ -92983,65 +93553,6 @@
       ]
     },
     {
-      "id": "INV-1acf19e38b7db0",
-      "name": "Sound Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-01-13",
-      "latest_disclosed_at": "2026-01-13",
-      "role_counts": {
-        "lead": 1
-      },
-      "round_codes": [
-        "strategic"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-8e8cc11d1475231b",
-          "canonical_entity_id": "",
-          "name": "Witness AI"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-5596d8e4332b63d1",
-          "funding_insight_id": "FI-0386397f33fcf55a",
-          "event_ids": [
-            "EV-fdfd4bf00571bb35"
-          ],
-          "company_entity_id": "EN-8e8cc11d1475231b",
-          "company_canonical_entity_id": "",
-          "company_name": "Witness AI",
-          "round": "战略融资",
-          "round_code": "strategic",
-          "round_original": "战略融资",
-          "amount_original": "$58 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 58000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5800 万美元"
-          },
-          "announced_at": "2026-01-13",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        }
-      ]
-    },
-    {
       "id": "INV-7cdbb9f500dbcc",
       "name": "北京信息产业发展基金",
       "aliases": [],
@@ -98765,6 +99276,289 @@
       ]
     },
     {
+      "id": "INV-8ea47e7caa29fd",
+      "name": "Capital2B",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-5627c7b4fc2aaf48",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Series A参投",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-c2792c91f678b6",
+      "name": "Groww Founder Fund",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-cf3d8a9ba1687238",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Series A参投",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-ad30322742626e",
+      "name": "Intel",
+      "aliases": [],
+      "canonical_entity_id": "EN-96eebba49dbbf422",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-06-16",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 2
+      },
+      "round_codes": [],
+      "activity_count": 2,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-832cd87cd008d6c7",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-d2d690f20767b26f",
+          "funding_insight_id": "FI-ffd2c01a3352f704",
+          "event_ids": [
+            "EV-a81c5dc2e9abff3a"
+          ],
+          "company_entity_id": "EN-5e0971a2294ea3f7",
+          "company_canonical_entity_id": "",
+          "company_name": "Articul8 AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$500 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5 亿美元"
+          },
+          "announced_at": "2026-06-16",
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "战略投资方（持续支持）",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-ebbc229ff198b1",
+      "name": "O'Shaughnessy Ventures LLC",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-a0ee17e3ac994986",
+          "funding_insight_id": "FI-845dc20a9c30188f",
+          "event_ids": [
+            "EV-657176fd0dff6209"
+          ],
+          "company_entity_id": "EN-336ab1deb42d6284",
+          "company_canonical_entity_id": "",
+          "company_name": "Stability AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$76 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 76000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7600 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2022 年 1.01 亿美元融资领投方",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-840396b6ad1149",
+      "name": "Whitecap Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-25",
+      "latest_disclosed_at": "2026-08-25",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-d62e46571476c416",
+          "funding_insight_id": "FI-164f373b7879a941",
+          "event_ids": [
+            "EV-3ee6b5e876146bb3"
+          ],
+          "company_entity_id": "EN-3b3ed571bbb19504",
+          "company_canonical_entity_id": "",
+          "company_name": "Ringg",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$10 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 10000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1000 万美元"
+          },
+          "announced_at": "2026-08-25",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Series A参投",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
       "id": "INV-ccb176f47658b3",
       "name": "Adjacent",
       "aliases": [],
@@ -103835,57 +104629,6 @@
       "latest_activities": [
         {
           "activity_id": "IA-5f345cc4bb9efa26",
-          "funding_insight_id": "FI-ffd2c01a3352f704",
-          "event_ids": [
-            "EV-a81c5dc2e9abff3a"
-          ],
-          "company_entity_id": "EN-5e0971a2294ea3f7",
-          "company_canonical_entity_id": "",
-          "company_name": "Articul8 AI",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$500 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5 亿美元"
-          },
-          "announced_at": "2026-06-16",
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "战略投资方（持续支持）",
-          "role_code": "historical_or_ambiguous"
-        }
-      ]
-    },
-    {
-      "id": "INV-ad30322742626e",
-      "name": "Intel",
-      "aliases": [],
-      "canonical_entity_id": "EN-96eebba49dbbf422",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "first_disclosed_at": "2026-06-16",
-      "latest_disclosed_at": "2026-06-16",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "activity_count": 1,
-      "portfolio_companies": [],
-      "latest_activities": [
-        {
-          "activity_id": "IA-d2d690f20767b26f",
           "funding_insight_id": "FI-ffd2c01a3352f704",
           "event_ids": [
             "EV-a81c5dc2e9abff3a"
@@ -111552,6 +112295,7 @@
       "typeLabel": "技术",
       "valueId": "multimodal",
       "eventIds": [
+        "EV-7077778f0eb84f6c",
         "EV-d3054a8a2b62a503",
         "EV-535c2f4fb851332d",
         "EV-5bbc509a032b8309",
@@ -111611,6 +112355,7 @@
         "EV-6b7917bd7edd4bde"
       ],
       "entityIds": [
+        "EN-be9d587defa1f0c0",
         "EN-b5318593e1260f2f",
         "EN-e1517be14d06cdb7",
         "EN-193d220b421d776e",
@@ -111651,7 +112396,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-ai_market_subcategory-legal",
@@ -111751,7 +112496,8 @@
         "EV-e0ecb5f81a273447",
         "EV-a3ba586cbc57b5fd",
         "EV-8b0f056571d68269",
-        "EV-aa7cf8ee6c875f08"
+        "EV-aa7cf8ee6c875f08",
+        "EV-6e96760ed7e2ebaa"
       ],
       "entityIds": [
         "EN-26997989b8425dac",
@@ -111764,12 +112510,13 @@
         "EN-afff1ef2d34b618e",
         "EN-7035f6607ad2d162",
         "EN-e5cc9e38970eacb5",
-        "EN-4e358c403850a88a"
+        "EN-4e358c403850a88a",
+        "EN-bbdefa2950f49882"
       ],
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-target_user-consumer",
@@ -111778,6 +112525,7 @@
       "typeLabel": "目标用户",
       "valueId": "consumer",
       "eventIds": [
+        "EV-657176fd0dff6209",
         "EV-1dba157815d84342",
         "EV-c6c297156ff274ac",
         "EV-d43103952399bc68",
@@ -111818,6 +112566,7 @@
         "EV-32a5af8d5ef80073"
       ],
       "entityIds": [
+        "EN-336ab1deb42d6284",
         "EN-50b2676afbe30c83",
         "EN-1913c6ab46df3a68",
         "EN-8c5929d253b07fed",
@@ -111858,7 +112607,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-technology-tool_use",
@@ -112226,6 +112975,7 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-657176fd0dff6209",
         "EV-259566f35ea4f66d",
         "EV-8ad153b984ba8729",
         "EV-19dd4c3a5dd5a94b",
@@ -112377,6 +113127,7 @@
         "EV-535c2f4fb851332d"
       ],
       "entityIds": [
+        "EN-336ab1deb42d6284",
         "EN-607a596a603dd679",
         "EN-647aebd730e6d6b2",
         "EN-9cb45a27a2808c01",
@@ -112513,7 +113264,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-technology-computer_use",
@@ -113070,6 +113821,7 @@
       "typeLabel": "AI 市场子类",
       "valueId": "development_deployment",
       "eventIds": [
+        "EV-657176fd0dff6209",
         "EV-cca4bd983a16b8d9",
         "EV-f5dd6dec49ad83aa",
         "EV-55e7c286e95be405",
@@ -113136,6 +113888,7 @@
         "EV-535c2f4fb851332d"
       ],
       "entityIds": [
+        "EN-336ab1deb42d6284",
         "EN-8eae6c54657e94be",
         "EN-c70eca6b0f88f44d",
         "EN-8ab71d56a963f706",
@@ -113196,7 +113949,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-14"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-target_user-developer",
@@ -113205,6 +113958,7 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-657176fd0dff6209",
         "EV-259566f35ea4f66d",
         "EV-8ad153b984ba8729",
         "EV-19dd4c3a5dd5a94b",
@@ -113383,6 +114137,7 @@
         "EV-a9fe726c4ea2a17b"
       ],
       "entityIds": [
+        "EN-336ab1deb42d6284",
         "EN-607a596a603dd679",
         "EN-647aebd730e6d6b2",
         "EN-9cb45a27a2808c01",
@@ -113543,7 +114298,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-product_form-developer_tool",
@@ -113836,12 +114591,36 @@
       "lastSeen": "2026-08-22"
     },
     {
+      "id": "TX-ai_market_subcategory-customer_support",
+      "name": "客户支持",
+      "nodeType": "ai_market_subcategory",
+      "typeLabel": "AI 市场子类",
+      "valueId": "customer_support",
+      "eventIds": [
+        "EV-3ee6b5e876146bb3",
+        "EV-a64fab2ce6bc6c4c",
+        "EV-88f4ee8cd57bdf42",
+        "EV-dd3217aad32e6891"
+      ],
+      "entityIds": [
+        "EN-3b3ed571bbb19504",
+        "EN-a56c2fbccb257dba",
+        "EN-29e1a488361f12d3",
+        "EN-2f88f41306209dd7"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-04-27",
+      "lastSeen": "2026-08-26"
+    },
+    {
       "id": "TX-use_case-customer_support",
       "name": "客户支持",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
       "valueId": "customer_support",
       "eventIds": [
+        "EV-3ee6b5e876146bb3",
         "EV-d43103952399bc68",
         "EV-88a984b765bb54f1",
         "EV-57cf8e14d6994c1b",
@@ -113884,6 +114663,7 @@
         "EV-94d9c8d5ac1e10de"
       ],
       "entityIds": [
+        "EN-3b3ed571bbb19504",
         "EN-8c5929d253b07fed",
         "EN-847c00c904ccdb98",
         "EN-556c337c4f0b031e",
@@ -113932,28 +114712,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-18"
-    },
-    {
-      "id": "TX-ai_market_subcategory-customer_support",
-      "name": "客户支持",
-      "nodeType": "ai_market_subcategory",
-      "typeLabel": "AI 市场子类",
-      "valueId": "customer_support",
-      "eventIds": [
-        "EV-a64fab2ce6bc6c4c",
-        "EV-88f4ee8cd57bdf42",
-        "EV-dd3217aad32e6891"
-      ],
-      "entityIds": [
-        "EN-a56c2fbccb257dba",
-        "EN-29e1a488361f12d3",
-        "EN-2f88f41306209dd7"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-04-27",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -114108,6 +114867,8 @@
       "typeLabel": "行业",
       "valueId": "media_entertainment",
       "eventIds": [
+        "EV-f477568b1385e25a",
+        "EV-657176fd0dff6209",
         "EV-1dba157815d84342",
         "EV-e70a48e36e99d57a",
         "EV-bdcb22b1a53358f5",
@@ -114148,6 +114909,7 @@
         "EV-ba98573b0dadde75"
       ],
       "entityIds": [
+        "EN-336ab1deb42d6284",
         "EN-50b2676afbe30c83",
         "EN-8d4321d936320802",
         "EN-67e8c106650aa683",
@@ -114190,7 +114952,79 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-26"
+    },
+    {
+      "id": "TX-ai_market_application-models",
+      "name": "模型",
+      "nodeType": "ai_market_application",
+      "typeLabel": "AI 市场细分",
+      "valueId": "models",
+      "eventIds": [
+        "EV-657176fd0dff6209",
+        "EV-f5dd6dec49ad83aa",
+        "EV-55e7c286e95be405",
+        "EV-88a984b765bb54f1",
+        "EV-00514c4ffc2e3cd3",
+        "EV-c7ba7b093a1a3b94",
+        "EV-44cd5e03d30c85b3",
+        "EV-6f092cfc7a064d64",
+        "EV-e41fc65eb014893f",
+        "EV-6e79974732a5db6b",
+        "EV-12a42b0aabee236f",
+        "EV-78a11d309c3d4e97",
+        "EV-20d762872664fddb",
+        "EV-4f7462a365561bb5",
+        "EV-79a0bbe8b8623b28",
+        "EV-d4d7b019ff0015df",
+        "EV-7283de3f3a76d22b",
+        "EV-d7f7e372d16c2241",
+        "EV-56da7cceeebc8bcf",
+        "EV-a00763037a94d512",
+        "EV-f8c3a83d883c9b22",
+        "EV-e3382d1c1d7db751",
+        "EV-44c9a50b99c76a70",
+        "EV-85506f9f86779a6d",
+        "EV-8861a42a8679562a",
+        "EV-0e4bddfd5c129618",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-31df816db86db282",
+        "EV-c5d7d88d1aef8edb",
+        "EV-cded77b1de2db61a",
+        "EV-535c2f4fb851332d"
+      ],
+      "entityIds": [
+        "EN-336ab1deb42d6284",
+        "EN-c70eca6b0f88f44d",
+        "EN-8ab71d56a963f706",
+        "EN-847c00c904ccdb98",
+        "EN-2e334bb8de4eac34",
+        "EN-0f3360879e746531",
+        "EN-e647c818ac38b6ca",
+        "EN-8d4321d936320802",
+        "EN-7209ec6f68ac0bcd",
+        "EN-b06631033a981321",
+        "EN-450dcf23e621ff10",
+        "EN-858b4458c482f7d2",
+        "EN-88ab1e5d793701f9",
+        "EN-6f7ac1823da81d2e",
+        "EN-dc8a5a5bf80909de",
+        "EN-ccfc5e062828b145",
+        "EN-5aacd10b5dbfa7b7",
+        "EN-cbc62794911ff31b",
+        "EN-ee1e31ffef7dbe64",
+        "EN-245f1e177c5169cb",
+        "EN-c04bd5ebd10ab696",
+        "EN-b5251b35f15bedc4",
+        "EN-7011e12e346d3d22",
+        "EN-a83a3af1a4866fd5",
+        "EN-9b21c9bf3305c0d6"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-02-08",
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-product_form-model",
@@ -114199,6 +115033,8 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-657176fd0dff6209",
+        "EV-7077778f0eb84f6c",
         "EV-b231e1a452a7c74a",
         "EV-b73d931bd6adb78d",
         "EV-bdcb22b1a53358f5",
@@ -114281,6 +115117,9 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-c5290b4100fd8070",
+        "EV-fd62c17a36b4e7e0",
+        "EV-6b4bd51844bfe967",
         "EV-192e130ac1abefdf",
         "EV-4927409c0f4b3ef3",
         "EV-b613937b7bc1ea64",
@@ -114447,6 +115286,8 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-336ab1deb42d6284",
+        "EN-be9d587defa1f0c0",
         "EN-8d4321d936320802",
         "EN-7dd2a89f628d7525",
         "EN-67e8c106650aa683",
@@ -114501,6 +115342,9 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-a658fbc24f5e3832",
+        "EN-4cc3012261da02d1",
+        "EN-b609846e60064148",
         "EN-a3e023474c2fbe8e",
         "EN-9c3de5f42376b1af",
         "EN-f7d9f5a90479d632",
@@ -114608,77 +115452,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-25"
-    },
-    {
-      "id": "TX-ai_market_application-models",
-      "name": "模型",
-      "nodeType": "ai_market_application",
-      "typeLabel": "AI 市场细分",
-      "valueId": "models",
-      "eventIds": [
-        "EV-f5dd6dec49ad83aa",
-        "EV-55e7c286e95be405",
-        "EV-88a984b765bb54f1",
-        "EV-00514c4ffc2e3cd3",
-        "EV-c7ba7b093a1a3b94",
-        "EV-44cd5e03d30c85b3",
-        "EV-6f092cfc7a064d64",
-        "EV-e41fc65eb014893f",
-        "EV-6e79974732a5db6b",
-        "EV-12a42b0aabee236f",
-        "EV-78a11d309c3d4e97",
-        "EV-20d762872664fddb",
-        "EV-4f7462a365561bb5",
-        "EV-79a0bbe8b8623b28",
-        "EV-d4d7b019ff0015df",
-        "EV-7283de3f3a76d22b",
-        "EV-d7f7e372d16c2241",
-        "EV-56da7cceeebc8bcf",
-        "EV-a00763037a94d512",
-        "EV-f8c3a83d883c9b22",
-        "EV-e3382d1c1d7db751",
-        "EV-44c9a50b99c76a70",
-        "EV-85506f9f86779a6d",
-        "EV-8861a42a8679562a",
-        "EV-0e4bddfd5c129618",
-        "EV-5d581d112fdbd464",
-        "EV-201b25d4f3cf696a",
-        "EV-31df816db86db282",
-        "EV-c5d7d88d1aef8edb",
-        "EV-cded77b1de2db61a",
-        "EV-535c2f4fb851332d"
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-8ab71d56a963f706",
-        "EN-847c00c904ccdb98",
-        "EN-2e334bb8de4eac34",
-        "EN-0f3360879e746531",
-        "EN-e647c818ac38b6ca",
-        "EN-8d4321d936320802",
-        "EN-7209ec6f68ac0bcd",
-        "EN-b06631033a981321",
-        "EN-450dcf23e621ff10",
-        "EN-858b4458c482f7d2",
-        "EN-88ab1e5d793701f9",
-        "EN-6f7ac1823da81d2e",
-        "EN-dc8a5a5bf80909de",
-        "EN-ccfc5e062828b145",
-        "EN-5aacd10b5dbfa7b7",
-        "EN-cbc62794911ff31b",
-        "EN-ee1e31ffef7dbe64",
-        "EN-245f1e177c5169cb",
-        "EN-c04bd5ebd10ab696",
-        "EN-b5251b35f15bedc4",
-        "EN-7011e12e346d3d22",
-        "EN-a83a3af1a4866fd5",
-        "EN-9b21c9bf3305c0d6"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-14"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-product_form-model_api_service",
@@ -114909,6 +115683,7 @@
       "typeLabel": "应用场景",
       "valueId": "content_creation",
       "eventIds": [
+        "EV-657176fd0dff6209",
         "EV-1dba157815d84342",
         "EV-bdcb22b1a53358f5",
         "EV-933b02f5736a0366",
@@ -114935,6 +115710,7 @@
         "EV-631dce4dc135d01b"
       ],
       "entityIds": [
+        "EN-336ab1deb42d6284",
         "EN-50b2676afbe30c83",
         "EN-67e8c106650aa683",
         "EN-13a7f8fe8140462d",
@@ -114964,7 +115740,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-industry-energy_utilities",
@@ -115070,6 +115846,7 @@
       "typeLabel": "AI 市场类别",
       "valueId": "enterprise_applications",
       "eventIds": [
+        "EV-3ee6b5e876146bb3",
         "EV-1dba157815d84342",
         "EV-d43103952399bc68",
         "EV-df8954acf9a13848",
@@ -115152,6 +115929,7 @@
         "EV-b31602193dbf4e08"
       ],
       "entityIds": [
+        "EN-3b3ed571bbb19504",
         "EN-50b2676afbe30c83",
         "EN-8c5929d253b07fed",
         "EN-f970fd34532919fe",
@@ -115230,7 +116008,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -115239,6 +116017,7 @@
       "typeLabel": "产品形态",
       "valueId": "enterprise_software_platform",
       "eventIds": [
+        "EV-3ee6b5e876146bb3",
         "EV-bdcb22b1a53358f5",
         "EV-df8954acf9a13848",
         "EV-c6cccaca326dfd45",
@@ -115373,6 +116152,7 @@
         "EV-7580a050ca19a8ae"
       ],
       "entityIds": [
+        "EN-3b3ed571bbb19504",
         "EN-67e8c106650aa683",
         "EN-f970fd34532919fe",
         "EN-fe301d1f025971a1",
@@ -115499,7 +116279,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-target_user-business_user",
@@ -115508,6 +116288,8 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-3ee6b5e876146bb3",
+        "EV-657176fd0dff6209",
         "EV-8ad153b984ba8729",
         "EV-8cb4468fe881602b",
         "EV-181cd28d97c4e61d",
@@ -115740,6 +116522,8 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "EN-3b3ed571bbb19504",
+        "EN-336ab1deb42d6284",
         "EN-647aebd730e6d6b2",
         "EN-2f72d2f93de73383",
         "EN-0b79cf2de0ee6b8e",
@@ -115954,7 +116738,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-industry-automotive_transportation",
@@ -116853,7 +117637,7 @@
         "HW-68457c8c0a7240ac"
       ],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-ai_market_subcategory-data",
@@ -117111,6 +117895,7 @@
       "typeLabel": "技术",
       "valueId": "image_generation",
       "eventIds": [
+        "EV-657176fd0dff6209",
         "EV-fd329b4350f404ef",
         "EV-ea2598236eae915f",
         "EV-5111b297a0234e46",
@@ -117124,6 +117909,7 @@
         "EV-9766c0f1ac902595"
       ],
       "entityIds": [
+        "EN-336ab1deb42d6284",
         "EN-b97e07c31e87f7d0",
         "EN-4721e06a8b6d85ff",
         "EN-bbdefa2950f49882",
@@ -117137,7 +117923,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-technology-reasoning",
@@ -117279,6 +118065,8 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-2b529f1793d4230f",
+        "EV-470c66c0e334794e",
         "EV-b4a9bdd7e93ce89f",
         "EV-1fe1613825cae718",
         "EV-435ad78c9ec50025",
@@ -117404,6 +118192,8 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3",
         "HW-8ec8f237534254df",
+        "HW-03c3292149bb6bf9",
+        "HW-89cdf1875115a352",
         "HW-7d718c8abe1716ac",
         "HW-506bfd2ae2c40c2b",
         "HW-eb5bba1ad6c016b0",
@@ -117414,7 +118204,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-industry-logistics_supply_chain",
@@ -117522,6 +118312,57 @@
       "lastSeen": "2026-08-13"
     },
     {
+      "id": "TX-use_case-sales",
+      "name": "销售",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "sales",
+      "eventIds": [
+        "EV-3ee6b5e876146bb3",
+        "EV-57cf8e14d6994c1b",
+        "EV-cbce4f1f5187efcf",
+        "EV-a64fab2ce6bc6c4c",
+        "EV-b29878fdf79f2ac5",
+        "EV-1da2e46e39a57d33",
+        "EV-8b7cbb66a33a945d",
+        "EV-f6a72cddbda748b3",
+        "EV-d642ec7a9ca5eb0f",
+        "EV-18304fc17b31148e",
+        "EV-81bd541510a530f0",
+        "EV-439ba8d5f2f575c4",
+        "EV-6484904c176aa016",
+        "EV-9fc8916c19c19f99",
+        "EV-b0ed8d5a37784214",
+        "EV-e4b3a19529576778",
+        "EV-474d5a8ffca11ed9",
+        "EV-a84ec4216d3ded6d",
+        "EV-dd3217aad32e6891"
+      ],
+      "entityIds": [
+        "EN-3b3ed571bbb19504",
+        "EN-556c337c4f0b031e",
+        "EN-ea3bd73e2b506e00",
+        "EN-a56c2fbccb257dba",
+        "EN-b0bc23fa8e20c543",
+        "EN-cfd90af8403941bf",
+        "EN-366289432b214eda",
+        "EN-a5d2ae286d0d9e45",
+        "EN-478cc1059b738832",
+        "EN-b0a914ead94a88da",
+        "EN-72badbbdbf521cec",
+        "EN-f96246b78ef26d59",
+        "EN-7ea76c82c786a5e1",
+        "EN-eaa1c24270a0d057",
+        "EN-7d4e02d31a7eb0f8",
+        "EN-ee04228c5c6d8b08",
+        "EN-2f88f41306209dd7"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-04-27",
+      "lastSeen": "2026-08-26"
+    },
+    {
       "id": "TX-ai_market_subcategory-sales",
       "name": "销售",
       "nodeType": "ai_market_subcategory",
@@ -117556,55 +118397,6 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-10"
-    },
-    {
-      "id": "TX-use_case-sales",
-      "name": "销售",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "sales",
-      "eventIds": [
-        "EV-57cf8e14d6994c1b",
-        "EV-cbce4f1f5187efcf",
-        "EV-a64fab2ce6bc6c4c",
-        "EV-b29878fdf79f2ac5",
-        "EV-1da2e46e39a57d33",
-        "EV-8b7cbb66a33a945d",
-        "EV-f6a72cddbda748b3",
-        "EV-d642ec7a9ca5eb0f",
-        "EV-18304fc17b31148e",
-        "EV-81bd541510a530f0",
-        "EV-439ba8d5f2f575c4",
-        "EV-6484904c176aa016",
-        "EV-9fc8916c19c19f99",
-        "EV-b0ed8d5a37784214",
-        "EV-e4b3a19529576778",
-        "EV-474d5a8ffca11ed9",
-        "EV-a84ec4216d3ded6d",
-        "EV-dd3217aad32e6891"
-      ],
-      "entityIds": [
-        "EN-556c337c4f0b031e",
-        "EN-ea3bd73e2b506e00",
-        "EN-a56c2fbccb257dba",
-        "EN-b0bc23fa8e20c543",
-        "EN-cfd90af8403941bf",
-        "EN-366289432b214eda",
-        "EN-a5d2ae286d0d9e45",
-        "EN-478cc1059b738832",
-        "EN-b0a914ead94a88da",
-        "EN-72badbbdbf521cec",
-        "EN-f96246b78ef26d59",
-        "EN-7ea76c82c786a5e1",
-        "EN-eaa1c24270a0d057",
-        "EN-7d4e02d31a7eb0f8",
-        "EN-ee04228c5c6d8b08",
-        "EN-2f88f41306209dd7"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-04-27",
       "lastSeen": "2026-08-10"
     },
     {
@@ -117727,6 +118519,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-d26a532231315278",
         "EV-18faec4bf4efe7db",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
@@ -117882,6 +118675,7 @@
         "HW-ceb55d9bc637c1d3",
         "HW-1dbfe359ae73ed38",
         "HW-b32e61f6ea5c1646",
+        "HW-53c93a5ce3166528",
         "HW-7183f28980038937",
         "HW-da04d48165a60f76",
         "HW-25eea5677838fb54",
@@ -117900,7 +118694,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-ai_market_category-industry_applications",
@@ -118433,6 +119227,7 @@
       "typeLabel": "技术",
       "valueId": "speech_audio",
       "eventIds": [
+        "EV-657176fd0dff6209",
         "EV-4a6a0e6b6f50946c",
         "EV-ec283dd6bd3ac991",
         "EV-6b0106ef4a79df05",
@@ -118449,6 +119244,7 @@
         "EV-631dce4dc135d01b"
       ],
       "entityIds": [
+        "EN-336ab1deb42d6284",
         "EN-047364b9be67f665",
         "EN-9fbf261b62c1d7c0",
         "EN-7ad34701224a4d2d",
@@ -118466,7 +119262,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-deployment_model-cloud",
@@ -118954,7 +119750,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -119125,6 +119921,7 @@
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
         "EV-6ff94e2e732463de",
+        "EV-6d8bd9041d36c769",
         "EV-129ffa6be41bb485",
         "EV-040744ef8b205e0d",
         "EV-8619e2d881669888",
@@ -119160,6 +119957,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-6e96760ed7e2ebaa",
+        "EV-e3d25b9c0ee541d1",
+        "EV-fd62c17a36b4e7e0",
         "EV-cf5e9cd619ec1495",
         "EV-21d4133cd8711813",
         "EV-85ea6e0ef8bda162",
@@ -119597,6 +120397,7 @@
         "EN-8d291c7017252b07",
         "EN-f8048254c29fa79e",
         "EN-44d980dac0286a43",
+        "EN-669e058dc0be1a95",
         "EN-2db317222c996b63",
         "EN-6c0f28e4fa82c2a5",
         "EN-82a31e57d3a2fa17",
@@ -119612,6 +120413,9 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-bbdefa2950f49882",
+        "EN-53a7676bcec5dff6",
+        "EN-4cc3012261da02d1",
         "EN-4a6a6aae5047db03",
         "EN-9d3508a8484ee252",
         "EN-3ebe8498fb071652",
@@ -119623,7 +120427,6 @@
         "EN-796e923025d6fbb2",
         "EN-35c53e7e400caf01",
         "EN-3b9e1cdd9e593b5c",
-        "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
         "EN-6f7ac1823da81d2e",
         "EN-e78bdebae031095b",

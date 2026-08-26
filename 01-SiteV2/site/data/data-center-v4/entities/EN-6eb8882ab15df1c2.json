@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -125,21 +125,23 @@
     {
       "id": "HWC-910902f8a2628234",
       "snapshotKey": "910902f8a2628234",
-      "snapshotId": "HWS-5a57a0524ae6307a",
-      "eventId": "EV-18faec4bf4efe7db",
+      "snapshotId": "HWS-640044aee553fb3d",
+      "eventId": "EV-d26a532231315278",
       "eventIds": [
+        "EV-d26a532231315278",
         "EV-18faec4bf4efe7db",
         "EV-2c6707327367640f"
       ],
-      "dataDate": "2026-08-25",
-      "date": "2026-08-25",
-      "title": "CS-4 / WSE-3 Turbo",
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "title": "CS-4 / Ultrafast Frontier Inference / WSE-3 Turbo",
       "subject": "Cerebras",
       "productNames": [
         "CS-4",
+        "Ultrafast Frontier Inference",
         "WSE-3 Turbo"
       ],
-      "hardwareType": "semiconductor / ai_accelerator",
+      "hardwareType": "ai_accelerator",
       "factTypes": [
         "product"
       ],
@@ -147,12 +149,21 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-b2d3af2493aaef06"
+          "fact_ref": "HWF-823842e7f55dcf8c"
         }
       },
-      "factCount": 4,
-      "snapshotCount": 3,
+      "factCount": 1,
+      "snapshotCount": 4,
       "changes": [
+        {
+          "date": "2026-08-26",
+          "previousDate": "2026-08-25",
+          "snapshotId": "HWS-640044aee553fb3d",
+          "previousSnapshotId": "HWS-5a57a0524ae6307a",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-25",
           "previousDate": "2026-08-20",
@@ -176,108 +187,32 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-25",
-          "hardware_fact_id": "HWF-5df91bc69e181dd9",
+          "data_date": "2026-08-26",
+          "hardware_fact_id": "HWF-823842e7f55dcf8c",
           "fact_type": "product",
-          "observed_at": "2026-08-24T10:16:06.000Z",
+          "observed_at": "2026-08-25T00:00:00.000Z",
           "subject_entity_id": "EN-77b30b8a88051252",
           "subject_name": "Cerebras",
           "product_entity_ids": [
-            "EN-49dba228d91e7180"
+            "EN-49dba228d91e7180",
+            "EN-e9bc017140a61e09"
           ],
           "product_names": [
-            "CS-4"
-          ],
-          "component_type": "semiconductor",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Cerebras unveils CS-4 with double the performance on the same chip",
-          "event_refs": [
-            "EV-18faec4bf4efe7db"
-          ],
-          "claim_ref": "CL-1a9868119d8e05dd",
-          "source_refs": [
-            "SA-fc20ec6d49b9d914"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-25",
-          "hardware_fact_id": "HWF-a28270cf1c8b53a0",
-          "fact_type": "product",
-          "observed_at": "2026-08-24T10:16:06.000Z",
-          "subject_entity_id": "EN-77b30b8a88051252",
-          "subject_name": "Cerebras",
-          "product_entity_ids": [
-            "EN-49dba228d91e7180"
-          ],
-          "product_names": [
-            "CS-4"
-          ],
-          "component_type": "semiconductor",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Cerebras unveils CS-4 with double the performance on the same chip",
-          "event_refs": [
-            "EV-18faec4bf4efe7db"
-          ],
-          "claim_ref": "CL-36c05ca628e877f7",
-          "source_refs": [
-            "SA-fc20ec6d49b9d914"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-25",
-          "hardware_fact_id": "HWF-95eea6080043fb3f",
-          "fact_type": "product",
-          "observed_at": "2026-08-24T10:16:06.000Z",
-          "subject_entity_id": "EN-77b30b8a88051252",
-          "subject_name": "Cerebras",
-          "product_entity_ids": [
-            "EN-49dba228d91e7180"
-          ],
-          "product_names": [
-            "CS-4"
+            "CS-4",
+            "Ultrafast Frontier Inference"
           ],
           "component_type": "ai_accelerator",
           "metric_value": "",
           "unit": "",
-          "source_quote": "Cerebras has introduced its CS-4 AI accelerator, which CEO Andrew Feldman calls the fastest system in the industry.",
+          "source_quote": "Last week at Supernova 2026, Cerebras introduced CS-4 : the fastest AI accelerator in the industry and the first system built on the new Cerebras Nexus rack-scale platform.",
           "event_refs": [
-            "EV-18faec4bf4efe7db"
+            "EV-d26a532231315278"
           ],
-          "claim_ref": "CL-0b9ee5df94c8a690",
+          "claim_ref": "CL-bf4c21357faf7eb9",
           "source_refs": [
-            "SA-fc20ec6d49b9d914"
+            "SA-3b6e9c1656811a71"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-25",
-          "hardware_fact_id": "HWF-b2d3af2493aaef06",
-          "fact_type": "product",
-          "observed_at": "2026-08-24T10:16:06.000Z",
-          "subject_entity_id": "EN-77b30b8a88051252",
-          "subject_name": "Cerebras",
-          "product_entity_ids": [
-            "EN-49dba228d91e7180"
-          ],
-          "product_names": [
-            "CS-4"
-          ],
-          "component_type": "ai_accelerator",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Cerebras has introduced its CS-4 AI accelerator, which CEO Andrew Feldman calls the fastest system in the industry.",
-          "event_refs": [
-            "EV-18faec4bf4efe7db"
-          ],
-          "claim_ref": "CL-b5eecba8b461949f",
-          "source_refs": [
-            "SA-fc20ec6d49b9d914"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-25/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -294,10 +229,11 @@
           "assertionId": ""
         }
       ],
-      "sourceUrl": "https://the-decoder.com/cerebras-unveils-cs-4-with-double-the-performance-on-the-same-chip",
+      "sourceUrl": "https://cerebras.ai/blog/ultrafast-frontier-inference-cerebras-deep-dive-at-hot-chips-2026",
       "entityIds": [
         "EN-77b30b8a88051252",
         "EN-49dba228d91e7180",
+        "EN-e9bc017140a61e09",
         "EN-6eb8882ab15df1c2"
       ]
     }

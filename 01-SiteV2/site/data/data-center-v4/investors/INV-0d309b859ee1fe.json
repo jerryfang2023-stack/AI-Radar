@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23
   },
   "institution": {
@@ -23,13 +23,13 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 8,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 6,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-08-25",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 3,
       "participant": 4
     },
@@ -75,6 +75,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f4cf362c0b3d249f",
+        "funding_insight_id": "FI-845dc20a9c30188f",
+        "event_ids": [
+          "EV-657176fd0dff6209"
+        ],
+        "company_entity_id": "EN-336ab1deb42d6284",
+        "company_canonical_entity_id": "",
+        "company_name": "Stability AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$76 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 76000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7600 万美元"
+        },
+        "announced_at": "2026-08-25",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2022 年 1.01 亿美元融资领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2a3c20bc832bd7ef",
+            "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+            "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+            "source_content_hash": "871d436c27d08479",
+            "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+            "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5f1ce199a0098494",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
@@ -467,6 +505,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2a3c20bc832bd7ef",
+        "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+        "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+        "source_content_hash": "871d436c27d08479",
+        "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+        "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+      },
       {
         "source_id": "FISRC-077b1124fc8e9581",
         "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",

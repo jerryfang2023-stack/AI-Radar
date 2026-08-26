@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
+    "quarantinedEventCount": 23
+  },
+  "institution": {
+    "id": "INV-8ea47e7caa29fd",
+    "name": "Capital2B",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-25",
+    "latest_disclosed_at": "2026-08-25",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-5627c7b4fc2aaf48",
+        "funding_insight_id": "FI-164f373b7879a941",
+        "event_ids": [
+          "EV-3ee6b5e876146bb3"
+        ],
+        "company_entity_id": "EN-3b3ed571bbb19504",
+        "company_canonical_entity_id": "",
+        "company_name": "Ringg",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-08-25",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5d8eb24ecea69660",
+            "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+            "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+            "source_content_hash": "64d3a17d3ff626b7",
+            "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+            "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-5d8eb24ecea69660",
+        "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+        "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+        "source_content_hash": "64d3a17d3ff626b7",
+        "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+        "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+      }
+    ]
+  }
+}

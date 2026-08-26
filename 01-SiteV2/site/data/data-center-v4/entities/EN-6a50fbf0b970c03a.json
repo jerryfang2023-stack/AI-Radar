@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-4268b4be01fc8711",
       "EV-efee7c1ac4dc336f",
       "EV-d07f7a8d4d20a034"
     ],
@@ -31,8 +32,9 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-07-10",
-    "lastSeen": "2026-07-12",
+    "lastSeen": "2026-08-26",
     "relationIds": [
+      "REL2-4d08c2aaa7f9328a",
       "REL2-445144854bb103e9",
       "REL2-7f76d1e22005078d"
     ],
@@ -41,6 +43,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-4268b4be01fc8711",
         "EV-efee7c1ac4dc336f",
         "EV-d07f7a8d4d20a034"
       ],
@@ -49,6 +52,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-4268b4be01fc8711",
+        "dataDate": "2026-08-26",
+        "date": "2026-08-26",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 发布适用于 ChatGPT Work 和 Codex 的 Admin 插件，管理员可通过对话管理用户和权限",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-6a50fbf0b970c03a"
+        ]
+      },
       {
         "id": "EV-efee7c1ac4dc336f",
         "dataDate": "2026-07-12",
@@ -213,14 +232,20 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-4268b4be01fc8711",
+        "EV-470c66c0e334794e",
+        "EV-a9e8de27cc79efb2",
+        "EV-d69d239fd5bcc319",
+        "EV-52c6ed0bb40311d1",
+        "EV-911e7e2722aa5ebc",
         "EV-92634b09de96ca83",
         "EV-2afe102017e1b21c",
+        "EV-3c327b49d78d4388",
         "EV-44a833fe8dd16006",
         "EV-7a116596551ff8c7",
         "EV-98823b85fd27102b",
         "EV-c4d784c7069ca66b",
         "EV-d4af2db7a4759431",
-        "EV-3c327b49d78d4388",
         "EV-a09f6e93ad868a57",
         "EV-6993e6a7df339e59",
         "EV-597a6d51533fe5d6",
@@ -412,6 +437,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-16a0fe419e75402b",
+        "EV-569e956899258a54",
+        "EV-bce258f8f915ff5f",
         "EV-93cbf506bc54b34e",
         "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
@@ -428,7 +456,6 @@
         "EV-2902a32e86a4b2d1",
         "EV-90707e0cbca091c9",
         "EV-9356dd1be92ef5c6",
-        "EV-bce258f8f915ff5f",
         "EV-649481503cdb7736",
         "EV-6645d194b59939ca",
         "EV-94adebee59a6dede",
@@ -489,31 +516,31 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-media_entertainment",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-customer_support",
+        "TX-product_form-model",
+        "TX-target_user-consumer",
+        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-industry-media_entertainment",
-        "TX-target_user-consumer",
         "TX-industry-healthcare_life_sciences",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-customer_support",
         "TX-technology-agentic_execution",
         "TX-product_form-developer_tool",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-enterprise_software_platform",
         "TX-product_form-model_api_service",
-        "TX-technology-multimodal",
         "TX-technology-long_context",
         "TX-technology-open_weights",
         "TX-technology-inference_optimization",
@@ -521,6 +548,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
@@ -531,7 +559,6 @@
         "EN-74692028630429c7",
         "EN-c70eca6b0f88f44d",
         "EN-52fc33ae4d101a5d",
-        "EN-6a50fbf0b970c03a",
         "EN-9fbf261b62c1d7c0",
         "EN-4d748ebd71af03a7",
         "EN-65ef4539bbcbe9fc",
@@ -547,10 +574,31 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-26"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-4d08c2aaa7f9328a",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-6a50fbf0b970c03a",
+      "object_type": "entity",
+      "event_id": "EV-4268b4be01fc8711",
+      "claim_refs": [
+        "CL-59982518eb610453",
+        "CL-36bed543e5f38947",
+        "CL-20eb35462a5e9061",
+        "CL-1ea7c4777d9de803"
+      ],
+      "source_refs": [
+        "SA-271943817e71cf9b"
+      ],
+      "data_date": "2026-08-26",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-445144854bb103e9",
       "relationship_version": "RELATION-V2.1",
