@@ -7,7 +7,12 @@ report_path: ../../../../AppData/Local/WaveSight/runtime/2026-08-26-hermes-contr
 data_generated: yes
 needed_action: none
 created_at: 2026-08-26T17:19:51+08:00
-updated_at: 2026-08-26T17:40:10+08:00
+updated_at: 2026-08-26T18:30:03+08:00
+resolved_at: 2026-08-26T18:30:03+08:00
+resolver: codex
+fix_commit: 2c15f7c894b7f67f898b6ace27299976485e95d8
+validation: control-plane-tests-and-live-supervision-passed
+prevention_added: gate
 source: hermes-control-plane-watchdog
 
 # Control Plane Liveness Incident - 2026-08-26
@@ -31,3 +36,9 @@ Task Scheduler only applied `IgnoreNew` within each task. It did not serialize t
 4. Community Intelligence writes its gate report to the isolated runtime directory instead of modifying the primary worktree.
 
 The control-plane tests, Funding Insight full gate, and current-day data projections passed after the repair.
+
+## Resolution - 2026-08-26T18:30:03+08:00
+
+- fix_commit: 2c15f7c894b7f67f898b6ace27299976485e95d8
+- validation: control-plane-tests-and-live-supervision-passed
+- prevention_added: gate
