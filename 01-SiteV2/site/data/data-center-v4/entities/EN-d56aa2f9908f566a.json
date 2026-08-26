@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -37,6 +37,7 @@
     "lastSeen": "2026-08-21",
     "relationIds": [
       "REL2-1bac7c6922a7a98b",
+      "REL2-44ebd8a7378accce",
       "REL2-d205049958061bb1",
       "REL2-d38107a2fe8bacd9"
     ],
@@ -309,23 +310,23 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-media_entertainment",
+        "TX-product_form-model",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio",
+        "TX-technology-multimodal",
         "TX-use_case-research_discovery",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
-        "TX-industry-media_entertainment",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
-        "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-video_generation",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
+        "TX-technology-video_generation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
@@ -342,7 +343,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -392,6 +395,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6e96760ed7e2ebaa",
+        "EV-e3d25b9c0ee541d1",
         "EV-897c0d5106398802",
         "EV-9d824ab9d0b0c6b5",
         "EV-baf1a4c3db620d90",
@@ -552,44 +557,48 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-technology-image_generation",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-product_form-ai_compute_system",
-        "TX-target_user-developer",
         "TX-use_case-research_discovery",
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-enterprise_software_platform",
         "TX-technology-embodied_ai",
+        "TX-use_case-legal_compliance",
         "TX-technology-computer_use",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-image_generation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -597,7 +606,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-26"
     }
   ],
   "relationships": [
@@ -617,6 +626,27 @@
       ],
       "source_refs": [
         "SA-87ccc3513174eaba"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-44ebd8a7378accce",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-22b8d155ce027905",
+      "claim_refs": [
+        "CL-0ffd4a87d0bf9a23",
+        "CL-9a3abffb4df3b677",
+        "CL-53bc4ba62a2c55fb",
+        "CL-c0d954c60d8247d3"
+      ],
+      "source_refs": [
+        "SA-30fb0e04917bc0f3"
       ],
       "data_date": "2026-06-11",
       "status": "verified"

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-6e96760ed7e2ebaa",
       "EV-3ebf23c149dde19d"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-30",
-    "lastSeen": "2026-07-30",
+    "lastSeen": "2026-08-26",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-6e96760ed7e2ebaa",
         "EV-3ebf23c149dde19d"
       ],
       "hardware": [],
@@ -42,6 +44,46 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6e96760ed7e2ebaa",
+        "dataDate": "2026-08-26",
+        "date": "2026-08-26",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌推出Gemini用于法律工作，自动化合同与研究",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "legal_compliance",
+            "name": "法律与合规",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-c70eca6b0f88f44d",
+          "EN-63182c7ff1033426"
+        ]
+      },
       {
         "id": "EV-3ebf23c149dde19d",
         "dataDate": "2026-07-30",

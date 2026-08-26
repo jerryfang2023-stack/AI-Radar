@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23
   },
   "institution": {
@@ -21,11 +21,12 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "first_disclosed_at": "2026-01-13",
-    "latest_disclosed_at": "2026-01-13",
+    "latest_disclosed_at": "2026-08-25",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1
     },
     "round_codes": [
@@ -39,6 +40,44 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6aa695a40559ab71",
+        "funding_insight_id": "FI-845dc20a9c30188f",
+        "event_ids": [
+          "EV-657176fd0dff6209"
+        ],
+        "company_entity_id": "EN-336ab1deb42d6284",
+        "company_canonical_entity_id": "",
+        "company_name": "Stability AI",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$76 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 76000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7600 万美元"
+        },
+        "announced_at": "2026-08-25",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8dc1d59b723b2466",
+            "source_url": "https://whbl.com/2024/05/16/stability-ai-in-talks-to-raise-money-from-investor-group/",
+            "source_title": "Stability AI in talks to raise money from investor group | 1330 & 101.5 WHBL",
+            "source_content_hash": "2fd5960097107bb8",
+            "quote": "Stability AI counts among its investors venture capital firm Lightspeed Venture Partners, actor Ashton Kutcher’s Sound Ventures, investment management firm Coatue and chipmaker Intel, according to data firms Crunchbase and Pitchbook.",
+            "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5596d8e4332b63d1",
         "funding_insight_id": "FI-0386397f33fcf55a",
@@ -79,6 +118,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-8dc1d59b723b2466",
+        "source_url": "https://whbl.com/2024/05/16/stability-ai-in-talks-to-raise-money-from-investor-group/",
+        "source_title": "Stability AI in talks to raise money from investor group | 1330 & 101.5 WHBL",
+        "source_content_hash": "2fd5960097107bb8",
+        "quote": "Stability AI counts among its investors venture capital firm Lightspeed Venture Partners, actor Ashton Kutcher’s Sound Ventures, investment management firm Coatue and chipmaker Intel, according to data firms Crunchbase and Pitchbook.",
+        "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
+      },
       {
         "source_id": "FISRC-d51cd72272f38425",
         "source_url": "https://witness.ai/blog/witnessai-raises-58m-to-help-enterprises-move-faster-with-ai-safely/",

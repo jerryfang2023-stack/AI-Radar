@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-1ced8c8a0480d5c2",
       "EV-0fac203f4da2d4fb"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-23",
+    "lastSeen": "2026-08-26",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-1ced8c8a0480d5c2",
         "EV-0fac203f4da2d4fb"
       ],
       "hardware": [],
@@ -42,6 +44,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-1ced8c8a0480d5c2",
+        "dataDate": "2026-08-26",
+        "date": "2026-08-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Slack 推出协作式 vibe-coding 频道",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-877c3aec832cd410"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-877c3aec832cd410",
+          "EN-aff27dad1577fdc0"
+        ]
+      },
       {
         "id": "EV-0fac203f4da2d4fb",
         "dataDate": "2026-08-23",

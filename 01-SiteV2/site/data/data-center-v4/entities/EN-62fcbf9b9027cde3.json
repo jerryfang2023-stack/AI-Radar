@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-62fcbf9b9027cde3",
+    "name": "Jetson Orin Nano 2",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-2b529f1793d4230f"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-08-26",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-2b529f1793d4230f"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-2b529f1793d4230f",
+        "dataDate": "2026-08-26",
+        "date": "2026-08-26",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "NVIDIA 发布 Jetson Orin Nano 2 机器人计算机，双倍算力或四成节能",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-62fcbf9b9027cde3"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-03c3292149bb6bf9",
+      "eventId": "EV-2b529f1793d4230f",
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "title": "NVIDIA 发布 Jetson Orin Nano 2 机器人计算机，双倍算力或四成节能",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/994/303.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-26",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-62fcbf9b9027cde3"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-5ef488ccd04ecc0a",
+      "snapshotKey": "5ef488ccd04ecc0a",
+      "snapshotId": "HWS-d94f6134ff165ba9",
+      "eventId": "EV-2b529f1793d4230f",
+      "eventIds": [
+        "EV-2b529f1793d4230f"
+      ],
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "title": "Jetson Orin Nano 2",
+      "subject": "NVIDIA",
+      "productNames": [
+        "Jetson Orin Nano 2"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-de14a896a3524dda"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-26",
+          "hardware_fact_id": "HWF-f71e61242a8eeb20",
+          "fact_type": "product",
+          "observed_at": "2026-08-25T23:18:40.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-62fcbf9b9027cde3"
+          ],
+          "product_names": [
+            "Jetson Orin Nano 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "NVIDIA 发布机器人计算机 Jetson Orin Nano 2，带来双倍算力或四成节能 - IT之家",
+          "event_refs": [
+            "EV-2b529f1793d4230f"
+          ],
+          "claim_ref": "CL-302d0473c079ec05",
+          "source_refs": [
+            "SA-78fa4ae4097e85bf"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-26",
+          "hardware_fact_id": "HWF-250d262cb233d98a",
+          "fact_type": "product",
+          "observed_at": "2026-08-25T23:18:40.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-62fcbf9b9027cde3"
+          ],
+          "product_names": [
+            "Jetson Orin Nano 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "NVIDIA 发布机器人计算机 Jetson Orin Nano 2，带来双倍算力或四成节能",
+          "event_refs": [
+            "EV-2b529f1793d4230f"
+          ],
+          "claim_ref": "CL-3169967c3ab63a04",
+          "source_refs": [
+            "SA-78fa4ae4097e85bf"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-26",
+          "hardware_fact_id": "HWF-de14a896a3524dda",
+          "fact_type": "product",
+          "observed_at": "2026-08-25T23:18:40.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-62fcbf9b9027cde3"
+          ],
+          "product_names": [
+            "Jetson Orin Nano 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 26 日消息，NVIDIA（英伟达）当地时间 25 日宣布推出面向入门级边缘人工智能的 Jetson Orin Nano 2 机器人计算机。",
+          "event_refs": [
+            "EV-2b529f1793d4230f"
+          ],
+          "claim_ref": "CL-6fced5c7596966e1",
+          "source_refs": [
+            "SA-78fa4ae4097e85bf"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/994/303.htm",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-62fcbf9b9027cde3"
+      ]
+    }
+  ]
+}

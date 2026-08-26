@@ -1,0 +1,1685 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-08-26",
+    "generated_at": "2026-08-26T03:47:23.075Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 2,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 0
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-ffb91b38f24d1475",
+      "triggered_by_event_id": "EV-3ee6b5e876146bb3",
+      "as_of_date": "2026-08-26",
+      "company": {
+        "entity_id": "EN-3b3ed571bbb19504",
+        "name": "Ringg",
+        "full_name": "Ringg",
+        "website": "https://ringg.ai/",
+        "summary": "Ringg是一家印度语音AI初创公司，为企业构建语音AI代理，处理客户支持、销售、催收、预约预订等复杂工作流，并已扩展到聊天和WhatsApp等渠道。",
+        "headquarters": "印度班加罗尔",
+        "founders": [
+          {
+            "name": "Siddharth Tripathi",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-355d8aee33bd32ed",
+                "quote": "the startup's co-founder Siddharth Tripathi told TechCrunch",
+                "source_content_hash": "bd8d4c58629e67c5",
+                "quote_hash": "4baade202426700a95dddd79c725d97747d501410e1a5b9e30d520b2746791cd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Siddharth Shankar Tripathi",
+            "role": "创始人、CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d8eb24ecea69660",
+                "quote": "Siddharth Shankar Tripathi Founder, CEO",
+                "source_content_hash": "64d3a17d3ff626b7",
+                "quote_hash": "e8055cf4249666863126f8b3da9f1c136a4ede9f27b41fe38519df81e0a14302"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Utkarsh Shukla",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-770a465f2f2a31f3",
+                "quote": "Ringg AI, founded by Siddharth Shankar Tripathi, Utkarsh Shukla and Kali Charan Vemuru",
+                "source_content_hash": "e881d21eb34ad3ec",
+                "quote_hash": "a918c0c6e9399dcea6a7f7e340bcab16211c11d8454ec2b2a9276a92d182d1aa"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kali Charan Vemuru",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-770a465f2f2a31f3",
+                "quote": "Ringg AI, founded by Siddharth Shankar Tripathi, Utkarsh Shukla and Kali Charan Vemuru",
+                "source_content_hash": "e881d21eb34ad3ec",
+                "quote_hash": "a918c0c6e9399dcea6a7f7e340bcab16211c11d8454ec2b2a9276a92d182d1aa"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "40",
+          "observed_at": "2026-08-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "Ringg currently has 40 employees, with more than 15 hired in the last three months.",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "4678346f0342ecf7d0ed063720bbf3a18345e75f5eb00b79c7eab5f392671357"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-355d8aee33bd32ed",
+            "quote": "Voice AI startup Ringg, which already processes 20 million call attempts a month",
+            "source_content_hash": "bd8d4c58629e67c5",
+            "quote_hash": "7fd757a9dc823b9e3a9dc2cb682f0d0c339cab9f63debb45b613977de0133e48"
+          },
+          {
+            "source_id": "FISRC-5d8eb24ecea69660",
+            "quote": "Ringg AI is a brand under Stoic AI Private Limited",
+            "source_content_hash": "64d3a17d3ff626b7",
+            "quote_hash": "aeeabf78b7518cdacfd0923be5eab315cd62f4288c402b6cd0f8eafd425b9af7"
+          }
+        ],
+        "application_entity_id": "EN-3b3ed571bbb19504",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$10 million",
+        "total_raised": "$15.5 million",
+        "announced_at": "2026-08-25",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Peak XV Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-355d8aee33bd32ed",
+                "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
+                "source_content_hash": "bd8d4c58629e67c5",
+                "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Groww Founder Fund",
+            "role": "Series A参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d8eb24ecea69660",
+                "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+                "source_content_hash": "64d3a17d3ff626b7",
+                "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kunal Shah",
+            "role": "Series A参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d8eb24ecea69660",
+                "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+                "source_content_hash": "64d3a17d3ff626b7",
+                "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Whitecap Ventures",
+            "role": "Series A参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d8eb24ecea69660",
+                "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+                "source_content_hash": "64d3a17d3ff626b7",
+                "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Capital2B",
+            "role": "Series A参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d8eb24ecea69660",
+                "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+                "source_content_hash": "64d3a17d3ff626b7",
+                "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-355d8aee33bd32ed",
+            "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
+            "source_content_hash": "bd8d4c58629e67c5",
+            "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "total_raised_original": "$15.5 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 15500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1550 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3ee6b5e876146bb3",
+            "round_original": "A轮",
+            "amount": "$10 million",
+            "announced_at": "2026-08-25",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-355d8aee33bd32ed",
+                "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
+                "source_content_hash": "bd8d4c58629e67c5",
+                "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Ringg AI平台",
+          "description": "一个语音AI编排平台，让企业能够部署生产级语音AI代理，跨支持、销售、催收、物流、验证等工作流运行，并扩展到聊天、WhatsApp和Web渠道。",
+          "target_customers": "企业客户，包括金融科技、医疗健康、电商和物流行业",
+          "features": [
+            "语音AI代理编排",
+            "多语言支持（20+语言）",
+            "低延迟响应（低于400毫秒）",
+            "与Google Sheets、Typeform、Shopify、Calendly、Notion、HubSpot等工具集成",
+            "HIPAA合规"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "the product works as an orchestration layer, routing tasks to different models depending on the use case",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "83e9e376a5153fc88e028b878b85131d921458d553a0dfa6bc0ada47a2b67314"
+            },
+            {
+              "source_id": "FISRC-692cad7389ef25e6",
+              "quote": "AI agents that deliver outcomes you want across Voice, Chat, WhatsApp and Web.",
+              "source_content_hash": "f8d4dfb533273edd",
+              "quote_hash": "144f85a4d729504417165448302326c46a03acb91f7f77870bf6f48c4dbe464b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Cred",
+          "industry": "金融科技",
+          "use_case": "外呼电话、线索资格审核、贷款催收",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "Indian fintech Cred became its first customer",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "9e10af52c66faf3bfa07b9d385e2557ec94106d26f94611d623604e70aad8d65"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Flipkart",
+          "industry": "电商",
+          "use_case": "客户支持与销售",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "Ringg has since signed Indian startups like Flipkart, Practo, Groww, and PolicyBazaar",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "4065ffdd177ccd038e4bbf0a332f693c15da646bba4ffd8170665a04bf63d1e8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Groww",
+          "industry": "金融科技",
+          "use_case": "客户支持与销售",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "Ringg has since signed Indian startups like Flipkart, Practo, Groww, and PolicyBazaar",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "4065ffdd177ccd038e4bbf0a332f693c15da646bba4ffd8170665a04bf63d1e8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "PolicyBazaar",
+          "industry": "金融科技",
+          "use_case": "客户支持与销售",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "Ringg has since signed Indian startups like Flipkart, Practo, Groww, and PolicyBazaar",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "4065ffdd177ccd038e4bbf0a332f693c15da646bba4ffd8170665a04bf63d1e8"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Bolna",
+          "product": "语音AI编排",
+          "scenario": "企业语音代理编排",
+          "target_customer": "企业",
+          "funding_summary": "",
+          "core_difference": "Bolna与Ringg处于同一编排层，但Ringg已处理每月2000万次呼叫尝试，并拥有Cred、Flipkart等客户。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "Orchestration-focused startups like Bolna and Blue Machines are chasing the same layer Ringg occupies",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "264f81c5e855b67d3af22b4c1a307d550e667afbc4cd3fddddfad7deed3b36f0"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "每月呼叫尝试次数",
+          "value": "2000万",
+          "observed_at": "2026-08-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "Voice AI startup Ringg, which already processes 20 million call attempts a month",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "7fd757a9dc823b9e3a9dc2cb682f0d0c339cab9f63debb45b613977de0133e48"
+            }
+          ]
+        },
+        {
+          "label": "每月客户对话数",
+          "value": "150万+",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d8eb24ecea69660",
+              "quote": "1.5M+ customer conversations per month",
+              "source_content_hash": "64d3a17d3ff626b7",
+              "quote_hash": "814564b79d721a9c451a477a61c13ba85d0af13f9a7635e8a7633a7369e023ad"
+            }
+          ]
+        },
+        {
+          "label": "支持语言数",
+          "value": "18+",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d8eb24ecea69660",
+              "quote": "18+ languages supported",
+              "source_content_hash": "64d3a17d3ff626b7",
+              "quote_hash": "857a427baa47bb61d1e31a44f37081e59bed658067e4c440e6493d2d9e6bd0ce"
+            }
+          ]
+        },
+        {
+          "label": "员工数",
+          "value": "40",
+          "observed_at": "2026-08-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "Ringg currently has 40 employees, with more than 15 hired in the last three months.",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "4678346f0342ecf7d0ed063720bbf3a18345e75f5eb00b79c7eab5f392671357"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Siddharth Tripathi",
+          "quote": "We are trying to position ourselves as a platform for agents that bring outcomes or get things done rather than voice agents for enterprises.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "We are trying to position ourselves as a platform for agents that bring outcomes or get things done rather than voice agents for enterprises",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "6aeddd7bbdeed3549b64554810fed786872d45576ed0e04f873026bd930d53ce"
+            }
+          ]
+        },
+        {
+          "speaker": "Rishen Kapoor",
+          "quote": "Because of the technical capabilities, they can actually do these hard-won enterprise workflows end to end. They can complete these higher-value tasks like merchant onboarding, like L1 and L2 support, with quality and with consistency.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-355d8aee33bd32ed",
+              "quote": "Because of the technical capabilities, they can actually do these hard-won enterprise workflows end to end. They can complete these higher-value tasks like merchant onboarding, like L1 and L2 support, with quality and with consistency",
+              "source_content_hash": "bd8d4c58629e67c5",
+              "quote_hash": "fcba58f3a13200f69bbac925096b41d25501f03c376638920e94f2f01f580f95"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Ringg能否从高量低复杂度的外呼场景转向高价值、高粘性的复杂企业工作流，并凭借自建模型的技术深度在编排层建立防御性。已验证信号包括每月2000万次呼叫尝试、1200家诊所的Practo部署、以及Cred、Flipkart、Groww、PolicyBazaar等蓝筹客户。证据边界在于来源未披露本轮估值，且Peak XV的投资理由仅来自其Principal的公开表述，未提供财务或留存数据。",
+        "validated_signals": [
+          "每月处理2000万次呼叫尝试",
+          "已签约Cred、Flipkart、Practo、Groww、PolicyBazaar等客户",
+          "语音代理在Practo覆盖1200家诊所",
+          "从文本转语音初创公司转型为语音AI代理编排层"
+        ],
+        "risks": [
+          "语音AI市场竞争激烈，模型制造商和编排层玩家众多，Ringg的编排层定位可能面临价格战和同质化压力。",
+          "Ringg仍依赖第三方模型进行路由，自建完整语音栈的成本过高，技术护城河的可持续性尚待验证。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "customer_support",
+        "market_application_id": "",
+        "use_case_ids": [
+          "customer_support",
+          "sales"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "企业语音AI",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Ringg能否从高量低复杂度的外呼场景转向高价值、高粘性的复杂企业工作流，并凭借自建模型的技术深度在编排层建立防御性。已验证信号包括每月2000万次呼叫尝试、1200家诊所的Practo部署、以及Cred、Flipkart、Groww、PolicyBazaar等蓝筹客户。证据边界在于来源未披露本轮估值，且Peak XV的投资理由仅来自其Principal的公开表述，未提供财务或留存数据。",
+          "evidence_signals": [
+            "每月处理2000万次呼叫尝试",
+            "已签约Cred、Flipkart、Practo、Groww、PolicyBazaar等客户",
+            "语音代理在Practo覆盖1200家诊所",
+            "从文本转语音初创公司转型为语音AI代理编排层"
+          ],
+          "risks": [
+            "语音AI市场竞争激烈，模型制造商和编排层玩家众多，Ringg的编排层定位可能面临价格战和同质化压力。",
+            "Ringg仍依赖第三方模型进行路由，自建完整语音栈的成本过高，技术护城河的可持续性尚待验证。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Ringg AI平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Siddharth Tripathi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Siddharth Shankar Tripathi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Utkarsh Shukla",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Kali Charan Vemuru",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Peak XV Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Groww Founder Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Kunal Shah",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Whitecap Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Capital2B",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Cred",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Flipkart",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Groww",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "PolicyBazaar",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Bolna",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3ee6b5e876146bb3",
+          "date": "2026-08-25",
+          "title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
+          "amount": "$10 million",
+          "source_refs": [
+            "SA-4665150a0e7a0c36"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-355d8aee33bd32ed",
+          "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
+          "title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
+          "publisher": "TechCrunch AI",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-26T03:43:31.579Z",
+          "content_hash": "bd8d4c58629e67c5",
+          "source_artifact_id": "SA-4665150a0e7a0c36",
+          "raw_id": "RAW-6b358bd712b8c115"
+        },
+        {
+          "source_id": "FISRC-5d8eb24ecea69660",
+          "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+          "title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+          "publisher": "ringg.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-26T03:46:22.107Z",
+          "content_hash": "64d3a17d3ff626b7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-692cad7389ef25e6",
+          "source_url": "https://ringg.ai/",
+          "title": "AI Voice & Chat Agent Platform for Businesses | Ringg AI",
+          "publisher": "ringg.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-26T03:46:22.086Z",
+          "content_hash": "f8d4dfb533273edd",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-770a465f2f2a31f3",
+          "source_url": "https://m.economictimes.com/tech/funding/peak-xv-in-talks-to-back-ringg-ai-sources-say-as-voice-ai-gains-attention/amp_articleshow/131488657.cms",
+          "title": "Peak XV in talks to back Ringg AI as voice AI gains attention: Sources - The Economic Times",
+          "publisher": "m.economictimes.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-26T03:46:24.543Z",
+          "content_hash": "e881d21eb34ad3ec",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-26T03:47:23.014Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-3ee6b5e876146bb3",
+          "confidence": 0.7,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-26T03:47:23.014Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Ringg AI平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Kali Charan Vemuru",
+            "Siddharth Shankar Tripathi",
+            "Siddharth Tripathi",
+            "Utkarsh Shukla"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3ee6b5e876146bb3"
+      ],
+      "aggregation": {
+        "key": "EN-3b3ed571bbb19504|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-66ecc56695f1e970",
+      "triggered_by_event_id": "EV-657176fd0dff6209",
+      "as_of_date": "2026-08-26",
+      "company": {
+        "entity_id": "EN-336ab1deb42d6284",
+        "name": "Stability AI",
+        "full_name": "Stability AI",
+        "website": "https://stability.ai",
+        "summary": "Stability AI 是 AI 图像生成模型 Stable Diffusion 背后的初创公司，成立于 2019 年，提供面向 AI 音乐、视频和图像生成的多种 AI 模型，并正在构建“创意制作”产品套件及扩展专业服务。",
+        "headquarters": "伦敦（总部位于伦敦，开发者分布全球）",
+        "founders": [
+          {
+            "name": "Emad Mostaque",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "Stability was also sued in 2023 by the company’s co-founder, Cyrus Hodes, who claimed that he was tricked by the other co-founder, Emad Mostaque, into selling his share in the company.",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "bb448c5518871e5e745c912e5c3a8a2b9c0848cb008b977bb8c0d379935df17c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cyrus Hodes",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "Stability was also sued in 2023 by the company’s co-founder, Cyrus Hodes, who claimed that he was tricked by the other co-founder, Emad Mostaque, into selling his share in the company.",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "bb448c5518871e5e745c912e5c3a8a2b9c0848cb008b977bb8c0d379935df17c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e825eacb926a575f",
+            "quote": "Stability AI, the startup behind AI image generation model Stable Diffusion, has raised $76 million in Series B funding.",
+            "source_content_hash": "3f1c5718c2b6b5fd",
+            "quote_hash": "236532ce04115c0f34cc227a9acfe6c8489f87fa8a898d408227e79d26314164"
+          },
+          {
+            "source_id": "FISRC-2a3c20bc832bd7ef",
+            "quote": "Headquartered in London with developers distributed across the globe, Stability AI was founded by Emad Mostaque as the first open-source, artificial intelligence (AI) company developing breakthrough technologies for the benefit of humanity and the world.",
+            "source_content_hash": "871d436c27d08479",
+            "quote_hash": "877276ead977a126070faee62dba3fd4370f37b385cea4c55fea7caf07d320ea"
+          }
+        ],
+        "application_entity_id": "EN-336ab1deb42d6284",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "$76 million",
+        "total_raised": "2.32 亿美元",
+        "announced_at": "2026-08-25",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Universal Music Group",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sony Music Group",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Warner Music Group",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Electronic Arts (EA)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AMD Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "Two investment firms, AMD Ventures and Pacific Alliance Ventures, also took part.",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "4fb0689898de7c251bf6ce182549c3ddebb3bf4a41fe74e9b6afa2695d45a2f4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pacific Alliance Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "Two investment firms, AMD Ventures and Pacific Alliance Ventures, also took part.",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "4fb0689898de7c251bf6ce182549c3ddebb3bf4a41fe74e9b6afa2695d45a2f4"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Coatue",
+            "role": "2022 年 1.01 亿美元融资领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2a3c20bc832bd7ef",
+                "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+                "source_content_hash": "871d436c27d08479",
+                "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "role": "2022 年 1.01 亿美元融资领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2a3c20bc832bd7ef",
+                "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+                "source_content_hash": "871d436c27d08479",
+                "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "O'Shaughnessy Ventures LLC",
+            "role": "2022 年 1.01 亿美元融资领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2a3c20bc832bd7ef",
+                "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+                "source_content_hash": "871d436c27d08479",
+                "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Intel",
+            "role": "历史投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8dc1d59b723b2466",
+                "quote": "Stability AI counts among its investors venture capital firm Lightspeed Venture Partners, actor Ashton Kutcher’s Sound Ventures, investment management firm Coatue and chipmaker Intel, according to data firms Crunchbase and Pitchbook.",
+                "source_content_hash": "2fd5960097107bb8",
+                "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
+              }
+            ],
+            "entity_id": "EN-96eebba49dbbf422"
+          },
+          {
+            "name": "Sound Ventures",
+            "role": "历史投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8dc1d59b723b2466",
+                "quote": "Stability AI counts among its investors venture capital firm Lightspeed Venture Partners, actor Ashton Kutcher’s Sound Ventures, investment management firm Coatue and chipmaker Intel, according to data firms Crunchbase and Pitchbook.",
+                "source_content_hash": "2fd5960097107bb8",
+                "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e825eacb926a575f",
+            "quote": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
+            "source_content_hash": "3f1c5718c2b6b5fd",
+            "quote_hash": "f952128fb6d6de97608c9b0031cfe1cebb42957a1b8e1209bfccc54a55f80a00"
+          },
+          {
+            "source_id": "FISRC-e825eacb926a575f",
+            "quote": "Stability AI, the startup behind AI image generation model Stable Diffusion, has raised $76 million in Series B funding. The new haul brings the company’s fundraising total to $232 million.",
+            "source_content_hash": "3f1c5718c2b6b5fd",
+            "quote_hash": "5c5498495e829dbe57c9937e17f896fa0b90d6ba3efcf41849ffb4b0daf689cf"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$76 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 76000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7600 万美元"
+        },
+        "total_raised_original": "2.32 亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 232000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.32 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-657176fd0dff6209",
+            "round_original": "B轮",
+            "amount": "$76 million",
+            "announced_at": "2026-08-25",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "f952128fb6d6de97608c9b0031cfe1cebb42957a1b8e1209bfccc54a55f80a00"
+              },
+              {
+                "source_id": "FISRC-e825eacb926a575f",
+                "quote": "Stability AI, the startup behind AI image generation model Stable Diffusion, has raised $76 million in Series B funding. The new haul brings the company’s fundraising total to $232 million.",
+                "source_content_hash": "3f1c5718c2b6b5fd",
+                "quote_hash": "5c5498495e829dbe57c9937e17f896fa0b90d6ba3efcf41849ffb4b0daf689cf"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Stable Diffusion",
+          "description": "AI 图像生成模型，可生成照片级逼真图片、遵循多种艺术风格或设计奇幻图像。",
+          "target_customers": "创作者、开发者、企业",
+          "features": [
+            "文本到图像生成",
+            "照片级逼真图片生成",
+            "多种艺术风格支持"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "quote": "Stability AI, the startup behind AI image generation model Stable Diffusion",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote_hash": "2855d27de9d00ba7f84e6b26c07622da4ea3739107a4b676fcf0cf656d25d3ba"
+            },
+            {
+              "source_id": "FISRC-b461552e5ebe11bd",
+              "quote": "SD3.5 Large can create photorealistic pictures, follow a wide range of artistic styles, or design fantastical imagery.",
+              "source_content_hash": "488fd5e5387aee19",
+              "quote_hash": "d081796831ec5433c2fa6a9366a7e4f4bb3abaa57dc8857271e8df333888e833"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Stable Audio",
+          "description": "AI 音频生成模型，用于 AI 音乐生成。",
+          "target_customers": "音乐制作人、创作者",
+          "features": [
+            "AI 音乐生成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "quote": "Currently, Stability offers a variety of AI models that are designed for the purposes of AI music, video, and image generation.",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote_hash": "a4df59053c680c468fa1ba94bf7abcec9cf2cafb283ff1a640c1ad60130e8067"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Stable Video",
+          "description": "AI 视频生成模型，用于 AI 视频生成。",
+          "target_customers": "视频创作者、企业",
+          "features": [
+            "AI 视频生成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "quote": "Currently, Stability offers a variety of AI models that are designed for the purposes of AI music, video, and image generation.",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote_hash": "a4df59053c680c468fa1ba94bf7abcec9cf2cafb283ff1a640c1ad60130e8067"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "HubSpot",
+          "industry": "软件/营销科技",
+          "use_case": "在内容创作工作流中通过 Breeze 功能生成品牌图像",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b461552e5ebe11bd",
+              "quote": "HubSpot recognized that Stability AI’s Stable Diffusion 3 Large (SD3 Large) model could deliver professional-quality images at scale.",
+              "source_content_hash": "488fd5e5387aee19",
+              "quote_hash": "28ecf52852a36c483207874ac38c4311c2fc7a953cc5ec37546872ebc81353ed"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Stride Learning",
+          "industry": "教育",
+          "use_case": "通过 Legend Library 应用生成故事和图像，提升学生阅读理解能力",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5f175dfd7f81d11c",
+              "quote": "Stride developed the Legend Library app to help students improve reading comprehension by generating stories and images based on student prompts.",
+              "source_content_hash": "e3f0fc431e25d516",
+              "quote_hash": "4d7f91b913e24d430b5d3fa267fe5e9bb8a641f6d06f35f643a58ac784c2be11"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "7600 万美元",
+          "observed_at": "2026-08-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "quote": "has raised $76 million in Series B funding",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote_hash": "9c13bdb85d9ce0174ee0a29cba25091c8989a053a3a6dc53b36b1bd43b0f0d73"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "2.32 亿美元",
+          "observed_at": "2026-08-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "quote": "The new haul brings the company’s fundraising total to $232 million.",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote_hash": "91f9da7579fc5a98c680e663d3e5b308e283070ee7824e90dea577bb3890e7e1"
+            }
+          ]
+        },
+        {
+          "label": "HubSpot 客户图像生成量增长",
+          "value": "150%（4 个月内生成 300,000 张图像）",
+          "observed_at": "2026-09-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b461552e5ebe11bd",
+              "quote": "Within 4 months, HubSpot customers generated 300,000 images, a 150 percent increase above the initial monthly cap of 120,000 images.",
+              "source_content_hash": "488fd5e5387aee19",
+              "quote_hash": "705c6296b085e5a030bfae294db282e178d29d5ed06d0bde62c31aecd3d4d483"
+            }
+          ]
+        },
+        {
+          "label": "Mercado Libre 广告点击率提升",
+          "value": "25%",
+          "observed_at": "2026-05-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5822f76e98919a6c",
+              "quote": "GenAds has delivered a 25% higher click-through rates (CTR) versus traditional ads",
+              "source_content_hash": "939418b80e5889cf",
+              "quote_hash": "8ca071005b3f01a3ef8dba248e8a3eec9a9545ef4ef8f78127fdb398f5525c85"
+            }
+          ]
+        },
+        {
+          "label": "Mercado Libre 广告展示量增长",
+          "value": "45%",
+          "observed_at": "2026-05-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5822f76e98919a6c",
+              "quote": "a 45% increase in display ad impressions",
+              "source_content_hash": "939418b80e5889cf",
+              "quote_hash": "c9597aa52e21a0d39a1cbf7e634f603372ebb6cd056ac5ac57f436399ac9957f"
+            }
+          ]
+        },
+        {
+          "label": "Mercado Libre 生成广告数量",
+          "value": "超过 90,000 条产品广告",
+          "observed_at": "2026-05-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5822f76e98919a6c",
+              "quote": "has created over 90,000 product advertisements",
+              "source_content_hash": "939418b80e5889cf",
+              "quote_hash": "80ac43a92935594b4f4adbae6a119686423d5efce585f82855822c9b734e7abe"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Prem Akkaraju",
+          "quote": "an affirmation of our vision where generative AI empowers every producer, musician, and storyteller.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e825eacb926a575f",
+              "quote": "Stability AI CEO Prem Akkaraju, who joined the company in 2024, called the funding “an affirmation of our vision where generative AI empowers every producer, musician, and storyteller.”",
+              "source_content_hash": "3f1c5718c2b6b5fd",
+              "quote_hash": "64c9eedcf2143a63303ebd3749bec84006a702eb217a92d0907f6b73c06e5393"
+            }
+          ]
+        },
+        {
+          "speaker": "Sean Carroll",
+          "quote": "We were looking for a way to scale to meet our customers’ desire to generate images in high amounts.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b461552e5ebe11bd",
+              "quote": "“We were looking for a way to scale to meet our customers’ desire to generate images in high amounts,” says Sean Carroll, senior product manager at HubSpot.",
+              "source_content_hash": "488fd5e5387aee19",
+              "quote_hash": "93dd8a1564ea45b594e0bcad7c8d64f589d9befd8e127d8c4662bbe45a520b23"
+            }
+          ]
+        },
+        {
+          "speaker": "Ryan Ellis",
+          "quote": "Stability AI’s image generation models in Amazon Bedrock handle the nuanced requirements that make the difference between amateur and enterprise-grade results.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b461552e5ebe11bd",
+              "quote": "“Stability AI’s image generation models in Amazon Bedrock handle the nuanced requirements that make the difference between amateur and enterprise-grade results,” says Ryan Ellis, senior vice president and head of product at Stability AI.",
+              "source_content_hash": "488fd5e5387aee19",
+              "quote_hash": "754281001e2d3c1c50cde83271e1a6dc96f7a8af16afb1190f50d015d20c3096"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 Stability AI 能否将生成式 AI 模型嵌入娱乐产业的创意生产工作流，并通过与环球音乐、索尼音乐、华纳音乐和 EA 等内容版权方的深度绑定，从模型供应商转向“创意制作”产品套件和专业服务提供商。本轮 7600 万美元 B 轮融资使累计融资额达到 2.32 亿美元，但来源未披露估值。已验证信号包括：与环球音乐、EA、华纳音乐已签署合作开发协议；在英国对 Getty Images 的版权诉讼中基本胜诉；企业客户 HubSpot 和 Mercado Libre 的生成图像使用量显著增长。证据边界：来源未提供收入、估值或本轮领投方信息，无法判断融资条款或商业化的财务规模。",
+        "validated_signals": [
+          "与环球音乐、EA、华纳音乐签署合作开发协议，将生成式 AI 嵌入娱乐公司创意工作流",
+          "在英国对 Getty Images 的版权诉讼中基本胜诉",
+          "企业客户 HubSpot 在 4 个月内生成 300,000 张图像，增长 150%",
+          "Mercado Libre 使用 Stable Diffusion 生成超过 90,000 条广告，点击率提升 25%"
+        ],
+        "risks": [
+          "Getty Images 在美国的类似版权诉讼仍在审理中，可能带来法律和财务风险",
+          "来源未披露本轮领投方和估值，融资条款和公司治理结构不透明",
+          "收入规模未在来源中披露，商业化可持续性缺乏财务数据支撑"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "content_creation"
+        ],
+        "industry_ids": [
+          "media_entertainment"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user",
+          "consumer"
+        ],
+        "sector": "生成式 AI 模型与创意生产工具",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Stability AI 能否将生成式 AI 模型嵌入娱乐产业的创意生产工作流，并通过与环球音乐、索尼音乐、华纳音乐和 EA 等内容版权方的深度绑定，从模型供应商转向“创意制作”产品套件和专业服务提供商。本轮 7600 万美元 B 轮融资使累计融资额达到 2.32 亿美元，但来源未披露估值。已验证信号包括：与环球音乐、EA、华纳音乐已签署合作开发协议；在英国对 Getty Images 的版权诉讼中基本胜诉；企业客户 HubSpot 和 Mercado Libre 的生成图像使用量显著增长。证据边界：来源未提供收入、估值或本轮领投方信息，无法判断融资条款或商业化的财务规模。",
+          "evidence_signals": [
+            "与环球音乐、EA、华纳音乐签署合作开发协议，将生成式 AI 嵌入娱乐公司创意工作流",
+            "在英国对 Getty Images 的版权诉讼中基本胜诉",
+            "企业客户 HubSpot 在 4 个月内生成 300,000 张图像，增长 150%",
+            "Mercado Libre 使用 Stable Diffusion 生成超过 90,000 条广告，点击率提升 25%"
+          ],
+          "risks": [
+            "Getty Images 在美国的类似版权诉讼仍在审理中，可能带来法律和财务风险",
+            "来源未披露本轮领投方和估值，融资条款和公司治理结构不透明",
+            "收入规模未在来源中披露，商业化可持续性缺乏财务数据支撑"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Stable Diffusion",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Stable Audio",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Stable Video",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Emad Mostaque",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Cyrus Hodes",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Universal Music Group",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sony Music Group",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Warner Music Group",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Electronic Arts (EA)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AMD Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Pacific Alliance Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Coatue",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "O'Shaughnessy Ventures LLC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Intel",
+          "canonical_entity_id": "EN-96eebba49dbbf422",
+          "canonical_name": "Intel"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Sound Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "HubSpot",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Stride Learning",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-f477568b1385e25a",
+          "date": "2026-08-26",
+          "title": "Stability AI 完成 7600 万美元 B 轮融资：EA 与三大音乐娱乐企业均参投",
+          "amount": "7600 万",
+          "source_refs": [
+            "SA-d38566fa8725befa"
+          ]
+        },
+        {
+          "event_id": "EV-657176fd0dff6209",
+          "date": "2026-08-25",
+          "title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+          "amount": "$76 million",
+          "source_refs": [
+            "SA-c4a2543c1087dae4",
+            "SA-180a3898436eec5a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e825eacb926a575f",
+          "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+          "title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-26T03:43:09.635Z",
+          "content_hash": "3f1c5718c2b6b5fd",
+          "source_artifact_id": "SA-c4a2543c1087dae4",
+          "raw_id": "RAW-62f90f9a54f3d83c"
+        },
+        {
+          "source_id": "FISRC-8dc1d59b723b2466",
+          "source_url": "https://whbl.com/2024/05/16/stability-ai-in-talks-to-raise-money-from-investor-group/",
+          "title": "Stability AI in talks to raise money from investor group | 1330 & 101.5 WHBL",
+          "publisher": "whbl.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-26T03:46:22.095Z",
+          "content_hash": "2fd5960097107bb8",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b461552e5ebe11bd",
+          "source_url": "https://stability.ai/customer-stories/hubspot-scales-image-generation-150-with-stability-ai-in-amazon-bedrock",
+          "title": "HubSpot Scales Image Generation 150% with Stability AI in Amazon Bedrock &mdash; Stability AI",
+          "publisher": "stability.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-26T03:46:21.728Z",
+          "content_hash": "488fd5e5387aee19",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5822f76e98919a6c",
+          "source_url": "https://stability.ai/customer-stories/mercado-libre-achieves-growth-through-stable-diffusion-ai",
+          "title": "Mercado Libre Scales Ads with Stability AI’s Stable Diffusion & AWS AI Tools &mdash; Stability AI",
+          "publisher": "stability.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-26T03:46:21.748Z",
+          "content_hash": "939418b80e5889cf",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5f175dfd7f81d11c",
+          "source_url": "https://stability.ai/customer-stories/stride-learning-cultivates-student-creativity-using-stability-ai-in-amazon-bedrock",
+          "title": "Stride Learning Cultivates Student Creativity Using Stability AI in Amazon Bedrock &mdash; Stability AI",
+          "publisher": "stability.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-26T03:46:22.211Z",
+          "content_hash": "e3f0fc431e25d516",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-2a3c20bc832bd7ef",
+          "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+          "title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+          "publisher": "stability.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-26T03:46:22.209Z",
+          "content_hash": "871d436c27d08479",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-26T03:46:57.300Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-657176fd0dff6209",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-26T03:46:57.300Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Stable Audio",
+            "Stable Diffusion",
+            "Stable Video"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Cyrus Hodes",
+            "Emad Mostaque"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-657176fd0dff6209"
+      ],
+      "aggregation": {
+        "key": "EN-336ab1deb42d6284|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-657176fd0dff6209",
+      "company_name": "Stability AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投\" funding company investors product",
+        "\"Stability AI\" \"$76 million\" funding investors round",
+        "\"Stability AI\" product customers case study",
+        "\"Stability AI\" \"Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投\" competitors product use case",
+        "\"Stability AI\" \"$76 million\" investor quote why invested",
+        "\"Stability AI\" \"$76 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Stability AI\" \"$76 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Stability AI\" \"$76 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Stability AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Stability AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Stability AI\" \"Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Stability AI\" \"Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Stability AI\" \"$76 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Stability AI\" \"$76 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Stability AI\" \"$76 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Stability AI\" \"$76 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-26T03:47:23.074Z"
+    },
+    {
+      "event_id": "EV-3ee6b5e876146bb3",
+      "company_name": "Ringg",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"India’s Ringg gets backing from Peak XV as it pushes voice AI past the phone call\" funding company investors product",
+        "\"Ringg\" \"$10 million\" funding investors round",
+        "\"Ringg\" product customers case study",
+        "\"Ringg\" \"India’s Ringg gets backing from Peak XV as it pushes voice AI past the phone call\" competitors product use case",
+        "\"Ringg\" \"$10 million\" investor quote why invested",
+        "\"Ringg\" \"$10 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"India’s Ringg gets backing from Peak XV as it pushes voice AI past the phone call\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"India’s Ringg gets backing from Peak XV as it pushes voice AI past the phone call\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ringg\" \"$10 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ringg\" \"$10 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ringg\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ringg\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ringg\" \"India’s Ringg gets backing from Peak XV as it pushes voice AI past the phone call\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ringg\" \"India’s Ringg gets backing from Peak XV as it pushes voice AI past the phone call\" competitors product use case",
+          "status": "failed",
+          "error": "exa_429"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ringg\" \"$10 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ringg\" \"$10 million\" investor quote why invested",
+          "status": "failed",
+          "error": "exa_429"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ringg\" \"$10 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ringg\" \"$10 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-26T03:47:23.074Z"
+    }
+  ]
+}

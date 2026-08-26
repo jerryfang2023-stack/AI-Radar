@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-7eba758f7757fdd5",
+    "name": "Jalape",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-52c6ed0bb40311d1",
+      "EV-569e956899258a54"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-25",
+    "lastSeen": "2026-08-26",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-52c6ed0bb40311d1"
+      ],
+      "organizationPeople": [],
+      "other": [
+        "EV-569e956899258a54"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-52c6ed0bb40311d1",
+        "dataDate": "2026-08-26",
+        "date": "2026-08-25",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI Jalapeño：优于英伟达 Blackwell",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-8d4321d936320802",
+          "EN-7eba758f7757fdd5"
+        ]
+      },
+      {
+        "id": "EV-569e956899258a54",
+        "dataDate": "2026-08-26",
+        "date": "2026-08-25",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI Jalapeño 芯片基准测试显示：为大规模快速推理而生",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-8d4321d936320802",
+          "EN-7eba758f7757fdd5"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-10d89944d0751f15",
+      "eventId": "EV-52c6ed0bb40311d1",
+      "dataDate": "2026-08-26",
+      "date": "2026-08-25",
+      "title": "OpenAI Jalapeño：优于英伟达 Blackwell",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "OpenAI",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceDate": "2026-08-25",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802",
+        "EN-7eba758f7757fdd5"
+      ]
+    }
+  ]
+}

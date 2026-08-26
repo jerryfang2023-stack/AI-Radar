@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-25T04:10:51.624Z",
-    "latestDataDate": "2026-08-25",
-    "currentDate": "2026-08-25",
-    "eventCount": 2367,
+    "generatedAt": "2026-08-26T03:48:12.127Z",
+    "latestDataDate": "2026-08-26",
+    "currentDate": "2026-08-26",
+    "eventCount": 2391,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -69,6 +69,8 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-2b529f1793d4230f",
+      "EV-470c66c0e334794e",
       "EV-b4a9bdd7e93ce89f",
       "EV-1fe1613825cae718",
       "EV-435ad78c9ec50025",
@@ -194,6 +196,8 @@
     "hardwareIds": [
       "HW-ceb55d9bc637c1d3",
       "HW-8ec8f237534254df",
+      "HW-03c3292149bb6bf9",
+      "HW-89cdf1875115a352",
       "HW-7d718c8abe1716ac",
       "HW-506bfd2ae2c40c2b",
       "HW-eb5bba1ad6c016b0",
@@ -204,7 +208,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-24"
+    "lastSeen": "2026-08-26"
   },
   "events": [
     {
@@ -14420,6 +14424,174 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-2b529f1793d4230f",
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "updatedDate": "2026-08-26",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 发布 Jetson Orin Nano 2 机器人计算机，双倍算力或四成节能",
+      "originalTitle": "",
+      "subject": "NVIDIA",
+      "action": "发布 Jetson Orin Nano 2 机器人计算机",
+      "object": "，双倍算力或四成节能",
+      "metrics": [
+        "60%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-62fcbf9b9027cde3"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Jetson Orin Nano 2"
+      ],
+      "productName": "Jetson Orin Nano 2",
+      "products": [
+        {
+          "name": "Jetson Orin Nano 2",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/994/303.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-470c66c0e334794e",
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "updatedDate": "2026-08-26",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI「辣椒芯」干翻英伟达！老黄股价不跌反涨",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "hardware_product",
+      "object": "小辣椒芯片",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/479320.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-b4a9bdd7e93ce89f",
       "dataDate": "2026-08-24",
       "date": "2026-08-23",
@@ -20595,12 +20767,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
-        "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
@@ -20698,14 +20870,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-industry-manufacturing",
-        "TX-product_form-model",
-        "TX-use_case-physical_automation",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
@@ -20754,10 +20926,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
         "TX-target_user-business_user",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
@@ -20911,7 +21083,9 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -20998,6 +21172,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-2b529f1793d4230f",
+        "EV-470c66c0e334794e",
+        "EV-52c6ed0bb40311d1",
         "EV-3a28c66df32b57d2",
         "EV-9d824ab9d0b0c6b5",
         "EV-78651dfea74b4323",
@@ -21089,6 +21266,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-569e956899258a54",
         "EV-a3ccf873058bb406",
         "EV-36a49fa0e0b96d95",
         "EV-ce32954014cb030d",
@@ -21109,30 +21287,34 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
+        "TX-industry-media_entertainment",
+        "TX-target_user-business_user",
+        "TX-use_case-customer_support",
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-technology-speech_audio",
+        "TX-technology-multimodal",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
         "TX-product_form-ai_compute_system",
-        "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
-        "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
-        "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
-        "TX-industry-media_entertainment",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
-        "TX-use_case-customer_support",
         "TX-technology-agentic_execution",
         "TX-industry-agriculture",
         "TX-industry-automotive_transportation",
@@ -21146,43 +21328,46 @@
         "TX-industry-retail_ecommerce",
         "TX-deployment_model-cloud",
         "TX-technology-embodied_ai",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models",
         "TX-product_form-model_api_service",
         "TX-ai_market_application-chips",
         "TX-product_form-robotic_system",
-        "TX-technology-multimodal",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-open_weights",
         "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-speech_audio"
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -21228,13 +21413,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-product_form-developer_tool",
-        "TX-ai_market_application-ai_development_orchestration",
-        "TX-ai_market_subcategory-development_deployment"
+        "TX-ai_market_application-ai_development_orchestration"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-23",
@@ -21255,10 +21440,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
-        "TX-product_form-enterprise_software_platform"
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
@@ -21279,11 +21464,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-aerospace_defense",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-industry-aerospace_defense",
         "TX-target_user-public_sector_user",
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -21307,16 +21492,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
         "TX-product_form-developer_tool",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-retail_ecommerce",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models"
+        "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-18",
@@ -21338,8 +21523,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
-        "TX-industry-manufacturing",
         "TX-target_user-consumer",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
         "TX-ai_market_category-physical_ai",
@@ -21392,14 +21577,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-product_form-model",
+        "TX-target_user-consumer",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
         "TX-target_user-public_sector_user",
-        "TX-target_user-business_user",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-technology-code_generation",
-        "TX-target_user-consumer",
         "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-product_form-developer_tool",
@@ -21428,12 +21613,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
-        "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
@@ -21568,8 +21753,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-researcher",
         "TX-target_user-business_user",
+        "TX-target_user-researcher",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-education",
@@ -21599,16 +21784,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-manufacturing",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-physical_automation",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-ai_market_application-models"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-13",
@@ -21757,8 +21942,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce",
@@ -22057,7 +22242,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "EN-e59f5a52b6713a29",
@@ -22141,23 +22326,23 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-media_entertainment",
+        "TX-product_form-model",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio",
+        "TX-technology-multimodal",
         "TX-use_case-research_discovery",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
-        "TX-industry-media_entertainment",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
-        "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-video_generation",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
+        "TX-technology-video_generation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
@@ -22210,9 +22395,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-multimodal",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
-        "TX-technology-multimodal"
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
         "EN-be548deba4a093d7"
@@ -22238,8 +22423,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-use_case-physical_automation",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [
         "EN-0bd85984211bd173"
@@ -22290,10 +22475,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-ai_compute_system",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
-        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
@@ -22309,7 +22494,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-26"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -22442,9 +22627,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-multimodal",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
-        "TX-technology-multimodal"
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
         "EN-92ec1124e1de6f54",
@@ -22490,8 +22675,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-use_case-physical_automation",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
@@ -22796,6 +22981,62 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-03c3292149bb6bf9",
+      "eventId": "EV-2b529f1793d4230f",
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "title": "NVIDIA 发布 Jetson Orin Nano 2 机器人计算机，双倍算力或四成节能",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/994/303.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-26",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-62fcbf9b9027cde3"
+      ]
+    },
+    {
+      "id": "HW-89cdf1875115a352",
+      "eventId": "EV-470c66c0e334794e",
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "title": "OpenAI「辣椒芯」干翻英伟达！老黄股价不跌反涨",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/08/479320.html",
+      "sourceName": "量子位",
+      "sourceDate": "2026-08-26",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HW-7d718c8abe1716ac",
       "eventId": "EV-b4a9bdd7e93ce89f",
@@ -23202,6 +23443,186 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-5ef488ccd04ecc0a",
+      "snapshotKey": "5ef488ccd04ecc0a",
+      "snapshotId": "HWS-d94f6134ff165ba9",
+      "eventId": "EV-2b529f1793d4230f",
+      "eventIds": [
+        "EV-2b529f1793d4230f"
+      ],
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "title": "Jetson Orin Nano 2",
+      "subject": "NVIDIA",
+      "productNames": [
+        "Jetson Orin Nano 2"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-de14a896a3524dda"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-26",
+          "hardware_fact_id": "HWF-f71e61242a8eeb20",
+          "fact_type": "product",
+          "observed_at": "2026-08-25T23:18:40.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-62fcbf9b9027cde3"
+          ],
+          "product_names": [
+            "Jetson Orin Nano 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "NVIDIA 发布机器人计算机 Jetson Orin Nano 2，带来双倍算力或四成节能 - IT之家",
+          "event_refs": [
+            "EV-2b529f1793d4230f"
+          ],
+          "claim_ref": "CL-302d0473c079ec05",
+          "source_refs": [
+            "SA-78fa4ae4097e85bf"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-26",
+          "hardware_fact_id": "HWF-250d262cb233d98a",
+          "fact_type": "product",
+          "observed_at": "2026-08-25T23:18:40.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-62fcbf9b9027cde3"
+          ],
+          "product_names": [
+            "Jetson Orin Nano 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "NVIDIA 发布机器人计算机 Jetson Orin Nano 2，带来双倍算力或四成节能",
+          "event_refs": [
+            "EV-2b529f1793d4230f"
+          ],
+          "claim_ref": "CL-3169967c3ab63a04",
+          "source_refs": [
+            "SA-78fa4ae4097e85bf"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-26",
+          "hardware_fact_id": "HWF-de14a896a3524dda",
+          "fact_type": "product",
+          "observed_at": "2026-08-25T23:18:40.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-62fcbf9b9027cde3"
+          ],
+          "product_names": [
+            "Jetson Orin Nano 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 26 日消息，NVIDIA（英伟达）当地时间 25 日宣布推出面向入门级边缘人工智能的 Jetson Orin Nano 2 机器人计算机。",
+          "event_refs": [
+            "EV-2b529f1793d4230f"
+          ],
+          "claim_ref": "CL-6fced5c7596966e1",
+          "source_refs": [
+            "SA-78fa4ae4097e85bf"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/994/303.htm",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-62fcbf9b9027cde3"
+      ]
+    },
+    {
+      "id": "HWC-09a5c6ab3383a14f",
+      "snapshotKey": "09a5c6ab3383a14f",
+      "snapshotId": "HWS-15a4a3d853e6dc43",
+      "eventId": "EV-470c66c0e334794e",
+      "eventIds": [
+        "EV-470c66c0e334794e"
+      ],
+      "dataDate": "2026-08-26",
+      "date": "2026-08-26",
+      "title": "OpenAI",
+      "subject": "OpenAI",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d3cd622a9718e3de"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-26",
+          "hardware_fact_id": "HWF-d3cd622a9718e3de",
+          "fact_type": "product",
+          "observed_at": "2026-08-26T01:24:47.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "被辣椒狙击同一天，英伟达发布了Jetson Orin Nano 2机器人电脑。",
+          "event_refs": [
+            "EV-470c66c0e334794e"
+          ],
+          "claim_ref": "CL-00efc0ca74efdd9d",
+          "source_refs": [
+            "SA-d461f990f0705875"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/08/479320.html",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HWC-bbe95de9f6e1d820",
       "snapshotKey": "bbe95de9f6e1d820",
