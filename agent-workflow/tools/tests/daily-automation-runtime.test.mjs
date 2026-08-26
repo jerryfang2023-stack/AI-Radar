@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 import test from "node:test";
 import { resolveAutomationNetworkEnv } from "../lib/automation-network-env.mjs";
 
@@ -11,11 +13,13 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   const installer = read("install-daily-automation-controller-tasks.ps1");
   assert.match(installer, /LOCALAPPDATA[^\n]+WaveSight\\runtime/u);
   assert.match(installer, /--runtime-dir=/u);
+  assert.match(installer, /--scheduled=true/u);
   assert.match(read("install-hermes-control-plane-watchdog-task.ps1"), /--reports-dir=/u);
   assert.match(read("install-community-intelligence-task.ps1"), /-RuntimePath/u);
   assert.match(read("install-follow-builders-skill-task.ps1"), /-RuntimePath/u);
   assert.match(read("run-community-intelligence.ps1"), /LOCALAPPDATA[^\n]+WaveSight\\runtime/u);
   assert.match(read("run-community-intelligence.ps1"), /publish-community-intelligence-local\.mjs[^]*--reports-dir=\$RuntimePath/u);
+  assert.match(read("run-community-intelligence.ps1"), /assert:community-intelligence[^]*--reports-dir=\$RuntimePath/u);
   const communityPublisher = read("publish-community-intelligence-local.mjs");
   assert.match(communityPublisher, /args\.get\("reports-dir"\)/u);
   assert.match(communityPublisher, /assert-community-intelligence-data\.mjs[^]*--reports-dir=/u);
@@ -40,6 +44,41 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(selfCheck, /assert:community-intelligence[^]*--reports-dir=/u);
   assert.match(selfCheck, /assert-follow-builders-data\.mjs[^]*--reports-dir=/u);
   assert.match(selfCheck, /assert:data-center[^]*--reports-dir=/u);
+});
+
+test("late scheduled controller phases are superseded instead of colliding", () => {
+  const controller = read("run-daily-automation-controller.mjs");
+  const watchdog = read("run-hermes-control-plane-watchdog.mjs");
+  assert.match(controller, /const scheduledRun = args\.get\("scheduled"\) === "true"/u);
+  assert.match(controller, /morning: \{ minute: 9 \* 60 \+ 15, next: "recovery" \}/u);
+  assert.match(controller, /recovery: \{ minute: 9 \* 60 \+ 50, next: "closure" \}/u);
+  assert.match(controller, /closure: \{ minute: 16 \* 60 \+ 45, next: "final-closure" \}/u);
+  assert.match(controller, /status: "superseded"/u);
+  assert.match(watchdog, /args\.get\("grace-ms"\) \|\| "15000"/u);
+  assert.match(watchdog, /inspectControllersWithGrace/u);
+});
+
+test("late scheduled morning execution writes an observable superseded report", () => {
+  const reportsDir = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-controller-catchup-"));
+  const date = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+  const result = spawnSync(process.execPath, [
+    path.join(root, "agent-workflow", "tools", "run-daily-automation-controller.mjs"),
+    "--phase=morning",
+    "--scheduled=true",
+    `--date=${date}`,
+    `--now=${date}T17:20:00+08:00`,
+    `--runtime-dir=${reportsDir}`,
+  ], { cwd: root, encoding: "utf8" });
+  assert.equal(result.status, 0, result.stderr);
+  const report = JSON.parse(fs.readFileSync(path.join(reportsDir, `${date}-daily-automation-morning.json`), "utf8"));
+  assert.equal(report.status, "superseded");
+  assert.equal(report.scheduled_run, true);
+  assert.equal(report.actions.length, 1);
 });
 
 test("scheduled automation bypasses loopback services and falls back from an unavailable local proxy", () => {

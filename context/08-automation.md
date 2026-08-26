@@ -72,6 +72,16 @@ The supported local schedule contains exactly seven tasks:
 | 16:10 | WaveSight Follow-Builders Skill Daily |
 | 16:45 | WaveSight Daily Final Closure |
 
+Task Scheduler catch-up runs are phase-aware. When Windows resumes after a
+later controller window has begun, stale Morning, Recovery, or Closure entries
+write an observable `superseded` report and stop instead of running all
+production phases concurrently. The Hermes watchdog allows a short report
+startup grace period so the simultaneous Windows catch-up notification does not
+create a false liveness incident before those reports are written. Manual CLI
+runs are not superseded. Community validation must send its gate output to the
+configured runtime directory so a successful collection cannot dirty or block
+the primary worktree before publication.
+
 The Morning Production controller treats `agent-workflow/skills/` as the
 authoritative Skill source. Before its Skill Ops preflight, it deterministically
 synchronizes the derived `.agents/skills/` runtime from that source; direct

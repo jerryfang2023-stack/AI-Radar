@@ -16,7 +16,9 @@ const reportsDir = path.resolve(root, args.get("runtime-dir") || path.join("agen
 
 const phase = args.get("phase") || "morning";
 const date = args.get("date") || shanghaiDate();
+const currentTime = args.has("now") ? new Date(args.get("now")) : new Date();
 const dryRun = args.get("dry-run") === "true";
+const scheduledRun = args.get("scheduled") === "true";
 const invokeCodex = args.get("invoke-codex") !== "false";
 const codexCommand = args.get("codex-command") || "codex";
 const automationNetwork = await resolveAutomationNetworkEnv();
@@ -30,6 +32,44 @@ function shanghaiDate(value = new Date()) {
     month: "2-digit",
     day: "2-digit",
   }).format(parsed);
+}
+
+function shanghaiMinuteOfDay(value = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Shanghai",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+  }).formatToParts(value);
+  const hour = Number(parts.find((item) => item.type === "hour")?.value || 0);
+  const minute = Number(parts.find((item) => item.type === "minute")?.value || 0);
+  return hour * 60 + minute;
+}
+
+function scheduledSupersession(currentPhase, value = currentTime) {
+  if (!scheduledRun || shanghaiDate(value) !== date) return null;
+  const minute = shanghaiMinuteOfDay(value);
+  const thresholds = {
+    morning: { minute: 9 * 60 + 15, next: "recovery" },
+    recovery: { minute: 9 * 60 + 50, next: "closure" },
+    closure: { minute: 16 * 60 + 45, next: "final-closure" },
+  };
+  const threshold = thresholds[currentPhase];
+  if (!threshold || minute < threshold.minute) return null;
+  return {
+    ok: true,
+    healthOk: true,
+    status: "superseded",
+    actions: [{
+      label: `Skip stale scheduled ${currentPhase} phase`,
+      ok: true,
+      status: 0,
+      command: `internal: superseded by ${threshold.next}`,
+      stdout: "",
+      stderr: "",
+    }],
+    notes: [`Late Task Scheduler catch-up skipped ${currentPhase}; ${threshold.next} owns the current recovery window.`],
+  };
 }
 
 function rel(file) {
@@ -350,17 +390,18 @@ function main() {
   if (!new Set(["morning", "recovery", "closure", "final-closure"]).has(phase)) {
     throw new Error(`Unsupported phase: ${phase}`);
   }
-  const result = phase === "morning"
+  const result = scheduledSupersession(phase) || (phase === "morning"
     ? morning()
     : phase === "recovery"
       ? recovery()
-      : phase === "closure" ? closure() : finalClosure();
+      : phase === "closure" ? closure() : finalClosure());
   const payload = {
     ...result,
     phase,
     date,
     generated_at: new Date().toISOString(),
     dry_run: dryRun,
+    scheduled_run: scheduledRun,
     network_mode: automationNetwork.mode,
   };
   const report = writeReport(payload);

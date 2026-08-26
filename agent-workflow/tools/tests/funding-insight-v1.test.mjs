@@ -635,6 +635,18 @@ test("创始人常见英文职位统一为中文公开展示", () => {
   assert.equal(normalizeFounderRole("董事长"), "董事长");
 });
 
+test("创始人中间名变体合并为证据更完整的公开身份", () => {
+  const card = validCard();
+  card.company.founders = [
+    { name: "Siddharth Tripathi", role: "Co-founder", evidence_refs: evidence("SRC-SHORT", "co-founder Siddharth Tripathi") },
+    { name: "Siddharth Shankar Tripathi", role: "Founder, CEO", evidence_refs: evidence("SRC-FULL", "Siddharth Shankar Tripathi Founder, CEO") },
+  ];
+  const normalized = normalizeFundingInsightCard(card);
+  assert.equal(normalized.company.founders.length, 1);
+  assert.equal(normalized.company.founders[0].name, "Siddharth Shankar Tripathi");
+  assert.equal(normalized.company.founders[0].evidence_refs.length, 2);
+});
+
 test("融资金额同时保留原文并生成可计算的币种、基准值和中文标准展示", () => {
   assert.deepEqual(normalizeFundingAmount("$312 million"), {
     currency: "USD",

@@ -24,6 +24,7 @@ function runWatchdog(reportsDir, incidentDir) {
     "--force=true",
     `--reports-dir=${reportsDir}`,
     `--incident-dir=${incidentDir}`,
+    "--grace-ms=0",
   ], { cwd: root, encoding: "utf8" });
 }
 

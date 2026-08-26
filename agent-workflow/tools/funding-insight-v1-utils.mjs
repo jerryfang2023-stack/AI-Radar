@@ -662,10 +662,10 @@ export function normalizeFundingInsightCard(
     round,
     card.financing?.announced_at || "",
   );
-  const founders = (card.company?.founders || []).map((item) => ({
+  const founders = mergeEquivalentFounders((card.company?.founders || []).map((item) => ({
     ...resolvedResearchItem(item, "person", resolve, acceptedDecisions),
     role: normalizeFounderRole(item.role),
-  }));
+  })));
   const products = (card.products || []).map(
     (item) => resolvedResearchItem(item, "product", resolve, acceptedDecisions),
   );
@@ -895,6 +895,57 @@ function normalizedName(value = "") {
     .replace(/（(?:联合创始人|创始人|首席执行官|首席技术官|CEO|CTO|CPO|总裁)）$/iu, "")
     .toLowerCase()
     .replace(/[^\p{L}\p{N}]+/gu, "");
+}
+
+function personNameTokens(value = "") {
+  return clean(value)
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .split(/\s+/u)
+    .filter(Boolean);
+}
+
+function personNamesEquivalent(left = "", right = "") {
+  const leftTokens = personNameTokens(left);
+  const rightTokens = personNameTokens(right);
+  if (!leftTokens.length || !rightTokens.length) return false;
+  if (leftTokens.join("") === rightTokens.join("")) return true;
+  if (leftTokens.length < 2 || rightTokens.length < 2) return false;
+  const shorter = leftTokens.length <= rightTokens.length ? leftTokens : rightTokens;
+  const longer = shorter === leftTokens ? rightTokens : leftTokens;
+  return shorter[0] === longer[0]
+    && shorter.at(-1) === longer.at(-1)
+    && shorter.every((token) => longer.includes(token));
+}
+
+function mergeEquivalentFounders(items = []) {
+  const output = [];
+  for (const item of items) {
+    const index = output.findIndex((existing) => personNamesEquivalent(existing.name, item.name));
+    if (index < 0) {
+      output.push(item);
+      continue;
+    }
+    const existing = output[index];
+    const preferred = personNameTokens(item.name).length > personNameTokens(existing.name).length
+      ? item
+      : existing;
+    const alternate = preferred === item ? existing : item;
+    const evidenceRefs = [...(preferred.evidence_refs || []), ...(alternate.evidence_refs || [])]
+      .filter((ref, refIndex, refs) => refs.findIndex((candidate) => (
+        clean(candidate.source_id) === clean(ref.source_id)
+        && clean(candidate.quote_hash || candidate.quote) === clean(ref.quote_hash || ref.quote)
+      )) === refIndex);
+    output[index] = {
+      ...alternate,
+      ...preferred,
+      entity_id: preferred.entity_id || alternate.entity_id || null,
+      evidence_refs: evidenceRefs,
+    };
+  }
+  return output;
 }
 
 function organizationNamesEquivalent(left = "", right = "") {
