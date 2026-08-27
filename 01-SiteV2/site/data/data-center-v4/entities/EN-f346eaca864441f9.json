@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "generatedAt": "2026-08-27T04:52:59.901Z",
     "latestDataDate": "2026-08-27",
     "currentDate": "2026-08-27",
     "eventCount": 2426,
@@ -27,13 +27,13 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-ai_market_category-enterprise_applications",
-      "TX-ai_market_subcategory-marketing",
       "TX-product_form-end_user_application",
       "TX-target_user-business_user",
       "TX-use_case-content_creation",
-      "TX-use_case-marketing",
       "TX-industry-retail_ecommerce",
       "TX-use_case-data_analysis",
+      "TX-ai_market_subcategory-marketing",
+      "TX-use_case-marketing",
       "TX-technology-agentic_execution"
     ],
     "relatedEntityIds": [],
@@ -360,33 +360,6 @@
       "lastSeen": "2026-08-27"
     },
     {
-      "id": "TX-ai_market_subcategory-marketing",
-      "name": "营销",
-      "nodeType": "ai_market_subcategory",
-      "typeLabel": "AI 市场子类",
-      "valueId": "marketing",
-      "eventIds": [
-        "EV-0ea2bbb7280091f2",
-        "EV-1dba157815d84342",
-        "EV-933b02f5736a0366",
-        "EV-f6a72cddbda748b3",
-        "EV-e7dcecaed5a0ee5b",
-        "EV-affa49966121461c"
-      ],
-      "entityIds": [
-        "EN-27d914a99e32f0f2",
-        "EN-50b2676afbe30c83",
-        "EN-13a7f8fe8140462d",
-        "EN-a5d2ae286d0d9e45",
-        "EN-f346eaca864441f9",
-        "EN-835fb9db44937917"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-27"
-    },
-    {
       "id": "TX-product_form-end_user_application",
       "name": "终端 AI 应用",
       "nodeType": "product_form",
@@ -579,6 +552,7 @@
       "eventIds": [
         "EV-0ea2bbb7280091f2",
         "EV-140ecf4fabe544ba",
+        "EV-276878c26b2a06dc",
         "EV-3ee6b5e876146bb3",
         "EV-657176fd0dff6209",
         "EV-8ad153b984ba8729",
@@ -815,6 +789,7 @@
       "entityIds": [
         "EN-27d914a99e32f0f2",
         "EN-a31f26263a2fe821",
+        "EN-26e59d6a3c92de80",
         "EN-3b3ed571bbb19504",
         "EN-336ab1deb42d6284",
         "EN-647aebd730e6d6b2",
@@ -1102,42 +1077,6 @@
       "lastSeen": "2026-08-27"
     },
     {
-      "id": "TX-use_case-marketing",
-      "name": "营销",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "marketing",
-      "eventIds": [
-        "EV-0ea2bbb7280091f2",
-        "EV-1dba157815d84342",
-        "EV-a64fab2ce6bc6c4c",
-        "EV-8b7cbb66a33a945d",
-        "EV-f6a72cddbda748b3",
-        "EV-d642ec7a9ca5eb0f",
-        "EV-18304fc17b31148e",
-        "EV-e7dcecaed5a0ee5b",
-        "EV-affa49966121461c",
-        "EV-b0ed8d5a37784214",
-        "EV-a84ec4216d3ded6d"
-      ],
-      "entityIds": [
-        "EN-27d914a99e32f0f2",
-        "EN-50b2676afbe30c83",
-        "EN-a56c2fbccb257dba",
-        "EN-366289432b214eda",
-        "EN-a5d2ae286d0d9e45",
-        "EN-478cc1059b738832",
-        "EN-f346eaca864441f9",
-        "EN-835fb9db44937917",
-        "EN-7ea76c82c786a5e1",
-        "EN-ee04228c5c6d8b08"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-22",
-      "lastSeen": "2026-08-27"
-    },
-    {
       "id": "TX-industry-retail_ecommerce",
       "name": "零售与电商",
       "nodeType": "industry",
@@ -1382,6 +1321,65 @@
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
       "lastSeen": "2026-08-23"
+    },
+    {
+      "id": "TX-ai_market_subcategory-marketing",
+      "name": "营销",
+      "nodeType": "ai_market_subcategory",
+      "typeLabel": "AI 市场子类",
+      "valueId": "marketing",
+      "eventIds": [
+        "EV-1dba157815d84342",
+        "EV-933b02f5736a0366",
+        "EV-f6a72cddbda748b3",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-affa49966121461c"
+      ],
+      "entityIds": [
+        "EN-50b2676afbe30c83",
+        "EN-13a7f8fe8140462d",
+        "EN-a5d2ae286d0d9e45",
+        "EN-f346eaca864441f9",
+        "EN-835fb9db44937917"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "TX-use_case-marketing",
+      "name": "营销",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "marketing",
+      "eventIds": [
+        "EV-1dba157815d84342",
+        "EV-a64fab2ce6bc6c4c",
+        "EV-8b7cbb66a33a945d",
+        "EV-f6a72cddbda748b3",
+        "EV-d642ec7a9ca5eb0f",
+        "EV-18304fc17b31148e",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-affa49966121461c",
+        "EV-b0ed8d5a37784214",
+        "EV-a84ec4216d3ded6d"
+      ],
+      "entityIds": [
+        "EN-50b2676afbe30c83",
+        "EN-a56c2fbccb257dba",
+        "EN-366289432b214eda",
+        "EN-a5d2ae286d0d9e45",
+        "EN-478cc1059b738832",
+        "EN-f346eaca864441f9",
+        "EN-835fb9db44937917",
+        "EN-7ea76c82c786a5e1",
+        "EN-ee04228c5c6d8b08"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-08-18"
     },
     {
       "id": "TX-technology-agentic_execution",

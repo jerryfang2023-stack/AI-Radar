@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-08-26T03:47:23.075Z",
+    "generated_at": "2026-08-27T04:52:24.945Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1323,
-    "evidence_backed_count": 1323,
-    "current_round_activity_count": 1522,
+    "institution_count": 1332,
+    "evidence_backed_count": 1332,
+    "current_round_activity_count": 1533,
     "individual_investor_count": 182,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -9271,6 +9271,397 @@
       ]
     },
     {
+      "id": "INV-694c1d69c893d8",
+      "name": "Index Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 7,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 7,
+      "first_disclosed_at": "2025-09-09",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 2,
+        "lead": 2,
+        "participant": 3
+      },
+      "round_codes": [
+        "seed",
+        "series_b",
+        "series_c",
+        "series_d"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-0caee180da9d0f3f",
+          "canonical_entity_id": "",
+          "name": "Fireworks AI Inc."
+        },
+        {
+          "entity_id": "EN-26e59d6a3c92de80",
+          "canonical_entity_id": "",
+          "name": "Instinct"
+        },
+        {
+          "entity_id": "EN-9f80a5e14017ccc0",
+          "canonical_entity_id": "",
+          "name": "Intelligence"
+        },
+        {
+          "entity_id": "EN-c04bd5ebd10ab696",
+          "canonical_entity_id": "EN-c04bd5ebd10ab696",
+          "name": "Mistral AI"
+        },
+        {
+          "entity_id": "EN-ef292e56955a1c10",
+          "canonical_entity_id": "",
+          "name": "PointFive Inc."
+        },
+        {
+          "entity_id": "EN-e4540a7c8404b1be",
+          "canonical_entity_id": "",
+          "name": "Temporal Technologies"
+        },
+        {
+          "entity_id": "FICO-wonderful",
+          "canonical_entity_id": "",
+          "name": "Wonderful"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-ee0247175fd1494f",
+          "funding_insight_id": "FI-e57c1a5088b84f89",
+          "event_ids": [
+            "EV-276878c26b2a06dc"
+          ],
+          "company_entity_id": "EN-26e59d6a3c92de80",
+          "company_canonical_entity_id": "",
+          "company_name": "Instinct",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$350 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-6050aa46cf9e60a2",
+              "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
+              "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
+              "source_content_hash": "12db016e60d4c1b4",
+              "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+              "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-a776c87efbe59c04",
+          "funding_insight_id": "FI-36e2dba781b80e3a",
+          "event_ids": [
+            "EV-2301cd1470155075"
+          ],
+          "company_entity_id": "EN-9f80a5e14017ccc0",
+          "company_canonical_entity_id": "",
+          "company_name": "Intelligence",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$7.9 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7900000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "790 万美元"
+          },
+          "announced_at": "2026-08-03",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-3fa34b4b7b9a1a77",
+              "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+              "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+              "source_content_hash": "0633a814981ef4fd",
+              "quote": "a $7.9 million seed round led by Index Ventures",
+              "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-2ccff733875d0d90",
+          "funding_insight_id": "FI-3b1ea359415f476d",
+          "event_ids": [
+            "EV-4eaf3aabecae6016"
+          ],
+          "company_entity_id": "EN-0caee180da9d0f3f",
+          "company_canonical_entity_id": "",
+          "company_name": "Fireworks AI Inc.",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$1.505 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1505000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "15.05 亿美元"
+          },
+          "announced_at": "2026-07-16",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-0d89e0712245c55b",
+              "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
+              "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
+              "source_content_hash": "82ccac3b5ede24d2",
+              "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+              "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-9c40441cc4c4431c",
+          "funding_insight_id": "FI-0e45f5b02e149e04",
+          "event_ids": [
+            "EV-c3b8772c06a25dbc"
+          ],
+          "company_entity_id": "EN-ef292e56955a1c10",
+          "company_canonical_entity_id": "",
+          "company_name": "PointFive Inc.",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "Series B",
+          "amount_original": "$60 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 60000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6000 万美元"
+          },
+          "announced_at": "2026-06-08",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-3ca38471e3f8361d",
+              "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
+              "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote": "it was joined by venture capital firms including Index Ventures",
+              "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-9ba4b2698369cd81",
+          "funding_insight_id": "FI-2b8ea19368209f49",
+          "event_ids": [
+            "EV-aa33ca051f3a7f78",
+            "EV-0ade039d36e077ae",
+            "EV-a84ec4216d3ded6d"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-03-12",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投，种子轮和A轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-a9a14160ac96ad9a",
+              "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
+              "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
+              "source_content_hash": "a1eb7c9802c59903",
+              "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
+              "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-fa1f9c98f4b139d8",
+          "funding_insight_id": "FI-0aa1eca49e73b783",
+          "event_ids": [
+            "EV-3b40ec144e5db22c"
+          ],
+          "company_entity_id": "EN-e4540a7c8404b1be",
+          "company_canonical_entity_id": "",
+          "company_name": "Temporal Technologies",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$300 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 300000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3 亿美元"
+          },
+          "announced_at": "2026-02-17",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "既有投资方，本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-1f69885afd5fc439",
+              "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+              "source_title": "Temporal 完成 D 轮融资",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+              "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-01d7d725733add3f",
+          "funding_insight_id": "FI-1cf34218733257fd",
+          "event_ids": [
+            "EV-85506f9f86779a6d"
+          ],
+          "company_entity_id": "EN-c04bd5ebd10ab696",
+          "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+          "company_name": "Mistral AI",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "Series C",
+          "amount_original": "约17亿欧元（约20亿美元）",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 1700000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 17 亿欧元"
+          },
+          "announced_at": "2025-09-09",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "既有投资方（本轮参投）",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+              "source_title": "European AI startup Mistral AI secures $2B in funding",
+              "source_content_hash": "a710989bdebc7feb",
+              "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+              "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-6050aa46cf9e60a2",
+          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
+          "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
+          "source_content_hash": "12db016e60d4c1b4",
+          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+          "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+        },
+        {
+          "source_id": "FISRC-3fa34b4b7b9a1a77",
+          "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+          "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+          "source_content_hash": "0633a814981ef4fd",
+          "quote": "a $7.9 million seed round led by Index Ventures",
+          "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
+        },
+        {
+          "source_id": "FISRC-0d89e0712245c55b",
+          "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
+          "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
+          "source_content_hash": "82ccac3b5ede24d2",
+          "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+          "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
+        },
+        {
+          "source_id": "FISRC-3ca38471e3f8361d",
+          "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
+          "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
+          "source_content_hash": "11683bab4c01ccd3",
+          "quote": "it was joined by venture capital firms including Index Ventures",
+          "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
+        },
+        {
+          "source_id": "FISRC-a9a14160ac96ad9a",
+          "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
+          "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
+          "source_content_hash": "a1eb7c9802c59903",
+          "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
+          "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
+        },
+        {
+          "source_id": "FISRC-1f69885afd5fc439",
+          "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+          "source_title": "Temporal 完成 D 轮融资",
+          "source_content_hash": "74cb86598e6c9021",
+          "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+          "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+        },
+        {
+          "source_id": "FISRC-8d74a5f6eac0fc90",
+          "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+          "source_title": "European AI startup Mistral AI secures $2B in funding",
+          "source_content_hash": "a710989bdebc7feb",
+          "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+          "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+        }
+      ]
+    },
+    {
       "id": "INV-9eb2439d21a914",
       "name": "Kleiner Perkins",
       "aliases": [],
@@ -11473,346 +11864,6 @@
           "source_content_hash": "494969b64dc816f3",
           "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
           "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-        }
-      ]
-    },
-    {
-      "id": "INV-694c1d69c893d8",
-      "name": "Index Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 6,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 6,
-      "first_disclosed_at": "2025-09-09",
-      "latest_disclosed_at": "2026-08-03",
-      "role_counts": {
-        "co_lead": 1,
-        "lead": 2,
-        "participant": 3
-      },
-      "round_codes": [
-        "seed",
-        "series_b",
-        "series_c",
-        "series_d"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-0caee180da9d0f3f",
-          "canonical_entity_id": "",
-          "name": "Fireworks AI Inc."
-        },
-        {
-          "entity_id": "EN-9f80a5e14017ccc0",
-          "canonical_entity_id": "",
-          "name": "Intelligence"
-        },
-        {
-          "entity_id": "EN-c04bd5ebd10ab696",
-          "canonical_entity_id": "EN-c04bd5ebd10ab696",
-          "name": "Mistral AI"
-        },
-        {
-          "entity_id": "EN-ef292e56955a1c10",
-          "canonical_entity_id": "",
-          "name": "PointFive Inc."
-        },
-        {
-          "entity_id": "EN-e4540a7c8404b1be",
-          "canonical_entity_id": "",
-          "name": "Temporal Technologies"
-        },
-        {
-          "entity_id": "FICO-wonderful",
-          "canonical_entity_id": "",
-          "name": "Wonderful"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-a776c87efbe59c04",
-          "funding_insight_id": "FI-36e2dba781b80e3a",
-          "event_ids": [
-            "EV-2301cd1470155075"
-          ],
-          "company_entity_id": "EN-9f80a5e14017ccc0",
-          "company_canonical_entity_id": "",
-          "company_name": "Intelligence",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$7.9 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7900000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "790 万美元"
-          },
-          "announced_at": "2026-08-03",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-3fa34b4b7b9a1a77",
-              "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
-              "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
-              "source_content_hash": "0633a814981ef4fd",
-              "quote": "a $7.9 million seed round led by Index Ventures",
-              "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-2ccff733875d0d90",
-          "funding_insight_id": "FI-3b1ea359415f476d",
-          "event_ids": [
-            "EV-4eaf3aabecae6016"
-          ],
-          "company_entity_id": "EN-0caee180da9d0f3f",
-          "company_canonical_entity_id": "",
-          "company_name": "Fireworks AI Inc.",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "$1.505 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1505000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "15.05 亿美元"
-          },
-          "announced_at": "2026-07-16",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-0d89e0712245c55b",
-              "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
-              "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
-              "source_content_hash": "82ccac3b5ede24d2",
-              "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
-              "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-9c40441cc4c4431c",
-          "funding_insight_id": "FI-0e45f5b02e149e04",
-          "event_ids": [
-            "EV-c3b8772c06a25dbc"
-          ],
-          "company_entity_id": "EN-ef292e56955a1c10",
-          "company_canonical_entity_id": "",
-          "company_name": "PointFive Inc.",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "Series B",
-          "amount_original": "$60 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 60000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6000 万美元"
-          },
-          "announced_at": "2026-06-08",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
-              "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
-              "source_content_hash": "11683bab4c01ccd3",
-              "quote": "it was joined by venture capital firms including Index Ventures",
-              "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-9ba4b2698369cd81",
-          "funding_insight_id": "FI-2b8ea19368209f49",
-          "event_ids": [
-            "EV-aa33ca051f3a7f78",
-            "EV-0ade039d36e077ae",
-            "EV-a84ec4216d3ded6d"
-          ],
-          "company_entity_id": "FICO-wonderful",
-          "company_canonical_entity_id": "",
-          "company_name": "Wonderful",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "1.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 150000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.5 亿美元"
-          },
-          "announced_at": "2026-03-12",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投，种子轮和A轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-a9a14160ac96ad9a",
-              "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
-              "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
-              "source_content_hash": "a1eb7c9802c59903",
-              "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
-              "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-fa1f9c98f4b139d8",
-          "funding_insight_id": "FI-0aa1eca49e73b783",
-          "event_ids": [
-            "EV-3b40ec144e5db22c"
-          ],
-          "company_entity_id": "EN-e4540a7c8404b1be",
-          "company_canonical_entity_id": "",
-          "company_name": "Temporal Technologies",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "$300 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 300000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3 亿美元"
-          },
-          "announced_at": "2026-02-17",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "既有投资方，本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
-              "source_title": "Temporal 完成 D 轮融资",
-              "source_content_hash": "74cb86598e6c9021",
-              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
-              "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-01d7d725733add3f",
-          "funding_insight_id": "FI-1cf34218733257fd",
-          "event_ids": [
-            "EV-85506f9f86779a6d"
-          ],
-          "company_entity_id": "EN-c04bd5ebd10ab696",
-          "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
-          "company_name": "Mistral AI",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "Series C",
-          "amount_original": "约17亿欧元（约20亿美元）",
-          "amount_normalized": {
-            "currency": "EUR",
-            "value": 1700000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 17 亿欧元"
-          },
-          "announced_at": "2025-09-09",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "既有投资方（本轮参投）",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-8d74a5f6eac0fc90",
-              "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
-              "source_title": "European AI startup Mistral AI secures $2B in funding",
-              "source_content_hash": "a710989bdebc7feb",
-              "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
-              "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-3fa34b4b7b9a1a77",
-          "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
-          "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
-          "source_content_hash": "0633a814981ef4fd",
-          "quote": "a $7.9 million seed round led by Index Ventures",
-          "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
-        },
-        {
-          "source_id": "FISRC-0d89e0712245c55b",
-          "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
-          "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
-          "source_content_hash": "82ccac3b5ede24d2",
-          "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
-          "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
-        },
-        {
-          "source_id": "FISRC-3ca38471e3f8361d",
-          "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
-          "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
-          "source_content_hash": "11683bab4c01ccd3",
-          "quote": "it was joined by venture capital firms including Index Ventures",
-          "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
-        },
-        {
-          "source_id": "FISRC-a9a14160ac96ad9a",
-          "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
-          "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
-          "source_content_hash": "a1eb7c9802c59903",
-          "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
-          "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
-        },
-        {
-          "source_id": "FISRC-1f69885afd5fc439",
-          "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
-          "source_title": "Temporal 完成 D 轮融资",
-          "source_content_hash": "74cb86598e6c9021",
-          "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
-          "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
-        },
-        {
-          "source_id": "FISRC-8d74a5f6eac0fc90",
-          "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
-          "source_title": "European AI startup Mistral AI secures $2B in funding",
-          "source_content_hash": "a710989bdebc7feb",
-          "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
-          "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
         }
       ]
     },
@@ -18973,6 +19024,238 @@
       ]
     },
     {
+      "id": "INV-1caf7c5cbe9bd4",
+      "name": "ARK Invest",
+      "aliases": [
+        "Ark Invest"
+      ],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 3,
+      "first_disclosed_at": "2026-03-31",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 3
+      },
+      "round_codes": [
+        "series_a",
+        "series_d",
+        "series_f"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        },
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_entity_id": "",
+          "name": "Hark"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-ac93a7a70504d71e",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-36551c55b72c6244",
+              "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+              "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+              "source_content_hash": "c68350682f12d445",
+              "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+              "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-092f5c0f994c193f",
+          "funding_insight_id": "FI-082c684e1b4a88c2",
+          "event_ids": [
+            "EV-ef7346378fcf9746"
+          ],
+          "company_entity_id": "EN-e78bdebae031095b",
+          "company_canonical_entity_id": "EN-e78bdebae031095b",
+          "company_name": "SpaceX",
+          "round": "IPO",
+          "round_code": "ipo",
+          "round_original": "IPO",
+          "amount_original": "$75 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 75000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "750 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-0349532f469a6b45",
+              "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+              "source_title": "Early SpaceX investors will now reap the rewards",
+              "source_content_hash": "e4b5710f29e81069",
+              "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
+              "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-f1b31f351eab6712",
+          "funding_insight_id": "FI-35b63d84f1f7c2b0",
+          "event_ids": [
+            "EV-450f624a6a6446ce",
+            "EV-44c9a50b99c76a70"
+          ],
+          "company_entity_id": "EN-245f1e177c5169cb",
+          "company_canonical_entity_id": "",
+          "company_name": "Hark",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$700M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 700000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7 亿美元"
+          },
+          "announced_at": "2026-05-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-9b94f245fa27a161",
+              "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+              "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+              "source_content_hash": "e91739ca23d21469",
+              "quote": "ARK Invest",
+              "quote_hash": "06913ee1095cff235ab418e7e5dcd289488940faa527a20dce51001adc74dcbf"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-a683883a68df0931",
+          "funding_insight_id": "FI-b76fffbf5d0d91bd",
+          "event_ids": [
+            "EV-d4e44892226be468"
+          ],
+          "company_entity_id": "EN-7d3194f79e645c42",
+          "company_canonical_entity_id": "EN-7d3194f79e645c42",
+          "company_name": "OpenAI",
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "Series F",
+          "amount_original": "$1220亿",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 122000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1220 亿美元"
+          },
+          "announced_at": "2026-03-31",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-1e2b3bad243bd066",
+              "source_url": "https://yespress.io/openais-122-b-megaround",
+              "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+              "source_content_hash": "494969b64dc816f3",
+              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+              "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-36551c55b72c6244",
+          "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+          "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+          "source_content_hash": "c68350682f12d445",
+          "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+          "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+        },
+        {
+          "source_id": "FISRC-0349532f469a6b45",
+          "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+          "source_title": "Early SpaceX investors will now reap the rewards",
+          "source_content_hash": "e4b5710f29e81069",
+          "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
+          "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
+        },
+        {
+          "source_id": "FISRC-9b94f245fa27a161",
+          "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+          "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+          "source_content_hash": "e91739ca23d21469",
+          "quote": "ARK Invest",
+          "quote_hash": "06913ee1095cff235ab418e7e5dcd289488940faa527a20dce51001adc74dcbf"
+        },
+        {
+          "source_id": "FISRC-1e2b3bad243bd066",
+          "source_url": "https://yespress.io/openais-122-b-megaround",
+          "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+          "source_content_hash": "494969b64dc816f3",
+          "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+          "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+        }
+      ]
+    },
+    {
       "id": "INV-b92b24e064ec0c",
       "name": "NFX",
       "aliases": [],
@@ -25762,6 +26045,752 @@
           "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
           "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
           "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
+        }
+      ]
+    },
+    {
+      "id": "INV-1996308273c587",
+      "name": "Benchmark",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension",
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-26e59d6a3c92de80",
+          "canonical_entity_id": "",
+          "name": "Instinct"
+        },
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-838ddc558c4a241d",
+          "funding_insight_id": "FI-e57c1a5088b84f89",
+          "event_ids": [
+            "EV-276878c26b2a06dc"
+          ],
+          "company_entity_id": "EN-26e59d6a3c92de80",
+          "company_canonical_entity_id": "",
+          "company_name": "Instinct",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$350 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-6050aa46cf9e60a2",
+              "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
+              "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
+              "source_content_hash": "12db016e60d4c1b4",
+              "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+              "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-dd337745a5588950",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-05f582b31c0a37a3",
+              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+              "source_content_hash": "8e63b4f9948a4c5f",
+              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-6050aa46cf9e60a2",
+          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
+          "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
+          "source_content_hash": "12db016e60d4c1b4",
+          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+          "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+        },
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        }
+      ]
+    },
+    {
+      "id": "INV-17c0004abc688e",
+      "name": "Nexus Venture Partners",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-04-27",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a",
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-27d914a99e32f0f2",
+          "canonical_entity_id": "",
+          "name": "Runable"
+        },
+        {
+          "entity_id": "EN-3c1ae4e6276005e7",
+          "canonical_entity_id": "EN-3c1ae4e6276005e7",
+          "name": "TensorWave Inc."
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-f8feb85c97fe7068",
+          "funding_insight_id": "FI-ce571cd60ef1b102",
+          "event_ids": [
+            "EV-0ea2bbb7280091f2"
+          ],
+          "company_entity_id": "EN-27d914a99e32f0f2",
+          "company_canonical_entity_id": "",
+          "company_name": "Runable",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$21 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 21000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2100 万美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-2d6054cc51934d57",
+              "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+              "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+              "source_content_hash": "c050b0e757896e5c",
+              "quote": "The Series A was co-led by Susquehanna Venture Capital and Nexus Venture Partners",
+              "quote_hash": "172dcdf7baac6a1cd11e0762f9ca00906cb605dd539b08407ee8c8e0947085bc"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-3113857c79897b85",
+          "funding_insight_id": "FI-1f714b499dc9751a",
+          "event_ids": [
+            "EV-6e516b6e68def9cf"
+          ],
+          "company_entity_id": "EN-3c1ae4e6276005e7",
+          "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
+          "company_name": "TensorWave Inc.",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "3.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-06-10",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
+              "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+              "source_content_hash": "1d75cf39c1185f55",
+              "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
+              "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-81234a77cef209cf",
+          "funding_insight_id": "FI-a308a87eb0e97da7",
+          "event_ids": [
+            "EV-dd3217aad32e6891"
+          ],
+          "company_entity_id": "EN-2f88f41306209dd7",
+          "company_canonical_entity_id": "",
+          "company_name": "Avoca AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "种子轮、A轮、B轮",
+          "amount_original": "超过1.25亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 125000000,
+            "min_value": 125000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1.25 亿美元"
+          },
+          "announced_at": "2026-04-27",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-2315f11e10b4df0e",
+              "source_url": "https://www.avoca.ai/blog/avoca-raises-125m-series-b-1b-valuation",
+              "source_title": "Why We Are Building — Avoca | Avoca AI",
+              "source_content_hash": "81473027d0be2429",
+              "quote": "backed by Kleiner Perkins, Meritech, General Catalyst, Amplify Partners, Nexus Venture Partners, and Y Combinator",
+              "quote_hash": "3b2ea162be295ee50d93b66c82bdf36dc8bcf135b660987a22e1b0e42e25919f"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2d6054cc51934d57",
+          "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+          "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+          "source_content_hash": "c050b0e757896e5c",
+          "quote": "The Series A was co-led by Susquehanna Venture Capital and Nexus Venture Partners",
+          "quote_hash": "172dcdf7baac6a1cd11e0762f9ca00906cb605dd539b08407ee8c8e0947085bc"
+        },
+        {
+          "source_id": "FISRC-e98aedbd2eaa6410",
+          "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
+          "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+          "source_content_hash": "1d75cf39c1185f55",
+          "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
+          "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
+        },
+        {
+          "source_id": "FISRC-2315f11e10b4df0e",
+          "source_url": "https://www.avoca.ai/blog/avoca-raises-125m-series-b-1b-valuation",
+          "source_title": "Why We Are Building — Avoca | Avoca AI",
+          "source_content_hash": "81473027d0be2429",
+          "quote": "backed by Kleiner Perkins, Meritech, General Catalyst, Amplify Partners, Nexus Venture Partners, and Y Combinator",
+          "quote_hash": "3b2ea162be295ee50d93b66c82bdf36dc8bcf135b660987a22e1b0e42e25919f"
+        }
+      ]
+    },
+    {
+      "id": "INV-9e801f68178d22",
+      "name": "Qatar Investment Authority",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-03-11",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_d"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        },
+        {
+          "entity_id": "EN-53b69ef92c836777",
+          "canonical_entity_id": "",
+          "name": "Replit"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-2a9b7de94ce1372a",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-36551c55b72c6244",
+              "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+              "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+              "source_content_hash": "c68350682f12d445",
+              "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+              "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-fed01d0fad1df030",
+          "funding_insight_id": "FI-f55b62cf10cb7c98",
+          "event_ids": [
+            "EV-f5dd6dec49ad83aa"
+          ],
+          "company_entity_id": "EN-c70eca6b0f88f44d",
+          "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "company_name": "Anthropic",
+          "round": "G轮",
+          "round_code": "series_g",
+          "round_original": "G轮",
+          "amount_original": "$30 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "300 亿美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "F轮参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-46e8b046ae7a64f0",
+              "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+              "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+              "source_content_hash": "62a5edd881d6cc6e",
+              "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
+              "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-64f4fc49f7d08fdc",
+          "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
+          "event_ids": [
+            "EV-8eb0acb180b7ad9d"
+          ],
+          "company_entity_id": "EN-53b69ef92c836777",
+          "company_canonical_entity_id": "",
+          "company_name": "Replit",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$400M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4 亿美元"
+          },
+          "announced_at": "2026-03-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-00ed3d8fd701898b",
+              "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
+              "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
+              "source_content_hash": "c906371275e7a3ca",
+              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+              "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-36551c55b72c6244",
+          "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+          "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+          "source_content_hash": "c68350682f12d445",
+          "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+          "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+        },
+        {
+          "source_id": "FISRC-46e8b046ae7a64f0",
+          "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+          "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+          "source_content_hash": "62a5edd881d6cc6e",
+          "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
+          "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
+        },
+        {
+          "source_id": "FISRC-00ed3d8fd701898b",
+          "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
+          "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
+          "source_content_hash": "c906371275e7a3ca",
+          "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+          "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
+        }
+      ]
+    },
+    {
+      "id": "INV-a38354a604620e",
+      "name": "Susquehanna Venture Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-04-17",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1,
+        "lead": 1
+      },
+      "round_codes": [
+        "series_a"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-27d914a99e32f0f2",
+          "canonical_entity_id": "",
+          "name": "Runable"
+        },
+        {
+          "entity_id": "EN-08ff6997681fad41",
+          "canonical_entity_id": "",
+          "name": "Zenskar"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-173e2eedae11ba41",
+          "funding_insight_id": "FI-ce571cd60ef1b102",
+          "event_ids": [
+            "EV-0ea2bbb7280091f2"
+          ],
+          "company_entity_id": "EN-27d914a99e32f0f2",
+          "company_canonical_entity_id": "",
+          "company_name": "Runable",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$21 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 21000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2100 万美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-2d6054cc51934d57",
+              "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+              "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+              "source_content_hash": "c050b0e757896e5c",
+              "quote": "The Series A was co-led by Susquehanna Venture Capital and Nexus Venture Partners",
+              "quote_hash": "172dcdf7baac6a1cd11e0762f9ca00906cb605dd539b08407ee8c8e0947085bc"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-f9de947d1f9641cf",
+          "funding_insight_id": "FI-93538e84a3075ee9",
+          "event_ids": [
+            "EV-cbc0b7a7d21a29e2"
+          ],
+          "company_entity_id": "EN-08ff6997681fad41",
+          "company_canonical_entity_id": "",
+          "company_name": "Zenskar",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$15 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 15000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1500 万美元"
+          },
+          "announced_at": "2026-04-17",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-d87b08783c0a062f",
+              "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
+              "source_title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
+              "source_content_hash": "295fb65a11a09075",
+              "quote": "$15 million Series A led by Susquehanna Venture Capital",
+              "quote_hash": "52e32d0a079f35a8c6e1e93148a1c64d56fc49e5d00474343a2d58f96bb5b7c6"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2d6054cc51934d57",
+          "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+          "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+          "source_content_hash": "c050b0e757896e5c",
+          "quote": "The Series A was co-led by Susquehanna Venture Capital and Nexus Venture Partners",
+          "quote_hash": "172dcdf7baac6a1cd11e0762f9ca00906cb605dd539b08407ee8c8e0947085bc"
+        },
+        {
+          "source_id": "FISRC-d87b08783c0a062f",
+          "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
+          "source_title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
+          "source_content_hash": "295fb65a11a09075",
+          "quote": "$15 million Series A led by Susquehanna Venture Capital",
+          "quote_hash": "52e32d0a079f35a8c6e1e93148a1c64d56fc49e5d00474343a2d58f96bb5b7c6"
+        }
+      ]
+    },
+    {
+      "id": "INV-7870f1f2dd0ffb",
+      "name": "Together Fund",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-08-17",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "series_a",
+        "series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-27d914a99e32f0f2",
+          "canonical_entity_id": "",
+          "name": "Runable"
+        },
+        {
+          "entity_id": "EN-8c5929d253b07fed",
+          "canonical_entity_id": "",
+          "name": "Wispr"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-c3a2f15d197916bd",
+          "funding_insight_id": "FI-ce571cd60ef1b102",
+          "event_ids": [
+            "EV-0ea2bbb7280091f2"
+          ],
+          "company_entity_id": "EN-27d914a99e32f0f2",
+          "company_canonical_entity_id": "",
+          "company_name": "Runable",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$21 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 21000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2100 万美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-2d6054cc51934d57",
+              "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+              "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+              "source_content_hash": "c050b0e757896e5c",
+              "quote": "with existing investors Together Fund and Array VC also participating",
+              "quote_hash": "03b68feed21c22339a50f810c91ab23ddebc6fd66a6ff00d76bff117c4332ef8"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-87caaf4cd4aa7d33",
+          "funding_insight_id": "FI-c0b843a5e6f6ea0a",
+          "event_ids": [
+            "EV-d43103952399bc68"
+          ],
+          "company_entity_id": "EN-8c5929d253b07fed",
+          "company_canonical_entity_id": "",
+          "company_name": "Wispr",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$280M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 280000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.8 亿美元"
+          },
+          "announced_at": "2026-08-17",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-2e7a3713da8f3e54",
+              "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
+              "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
+              "source_content_hash": "affdfd9a0ccfb188",
+              "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+              "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2d6054cc51934d57",
+          "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+          "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+          "source_content_hash": "c050b0e757896e5c",
+          "quote": "with existing investors Together Fund and Array VC also participating",
+          "quote_hash": "03b68feed21c22339a50f810c91ab23ddebc6fd66a6ff00d76bff117c4332ef8"
+        },
+        {
+          "source_id": "FISRC-2e7a3713da8f3e54",
+          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
+          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
+          "source_content_hash": "affdfd9a0ccfb188",
+          "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+          "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
         }
       ]
     },
@@ -38806,186 +39835,6 @@
       ]
     },
     {
-      "id": "INV-1caf7c5cbe9bd4",
-      "name": "ARK Invest",
-      "aliases": [
-        "Ark Invest"
-      ],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 2,
-      "first_disclosed_at": "2026-03-31",
-      "latest_disclosed_at": "2026-06-03",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 2
-      },
-      "round_codes": [
-        "series_a",
-        "series_f"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-245f1e177c5169cb",
-          "canonical_entity_id": "",
-          "name": "Hark"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-092f5c0f994c193f",
-          "funding_insight_id": "FI-082c684e1b4a88c2",
-          "event_ids": [
-            "EV-ef7346378fcf9746"
-          ],
-          "company_entity_id": "EN-e78bdebae031095b",
-          "company_canonical_entity_id": "EN-e78bdebae031095b",
-          "company_name": "SpaceX",
-          "round": "IPO",
-          "round_code": "ipo",
-          "round_original": "IPO",
-          "amount_original": "$75 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 75000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "750 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
-              "source_title": "Early SpaceX investors will now reap the rewards",
-              "source_content_hash": "e4b5710f29e81069",
-              "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
-              "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-f1b31f351eab6712",
-          "funding_insight_id": "FI-35b63d84f1f7c2b0",
-          "event_ids": [
-            "EV-450f624a6a6446ce",
-            "EV-44c9a50b99c76a70"
-          ],
-          "company_entity_id": "EN-245f1e177c5169cb",
-          "company_canonical_entity_id": "",
-          "company_name": "Hark",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$700M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 700000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "7 亿美元"
-          },
-          "announced_at": "2026-05-21",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-9b94f245fa27a161",
-              "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
-              "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
-              "source_content_hash": "e91739ca23d21469",
-              "quote": "ARK Invest",
-              "quote_hash": "06913ee1095cff235ab418e7e5dcd289488940faa527a20dce51001adc74dcbf"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-a683883a68df0931",
-          "funding_insight_id": "FI-b76fffbf5d0d91bd",
-          "event_ids": [
-            "EV-d4e44892226be468"
-          ],
-          "company_entity_id": "EN-7d3194f79e645c42",
-          "company_canonical_entity_id": "EN-7d3194f79e645c42",
-          "company_name": "OpenAI",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F",
-          "amount_original": "$1220亿",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-03-31",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "source_url": "https://yespress.io/openais-122-b-megaround",
-              "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
-              "source_content_hash": "494969b64dc816f3",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-              "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-0349532f469a6b45",
-          "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
-          "source_title": "Early SpaceX investors will now reap the rewards",
-          "source_content_hash": "e4b5710f29e81069",
-          "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
-          "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
-        },
-        {
-          "source_id": "FISRC-9b94f245fa27a161",
-          "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
-          "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
-          "source_content_hash": "e91739ca23d21469",
-          "quote": "ARK Invest",
-          "quote_hash": "06913ee1095cff235ab418e7e5dcd289488940faa527a20dce51001adc74dcbf"
-        },
-        {
-          "source_id": "FISRC-1e2b3bad243bd066",
-          "source_url": "https://yespress.io/openais-122-b-megaround",
-          "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
-          "source_content_hash": "494969b64dc816f3",
-          "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-          "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-        }
-      ]
-    },
-    {
       "id": "INV-8ab49f4611119d",
       "name": "137 Ventures",
       "aliases": [],
@@ -43401,6 +44250,443 @@
       ]
     },
     {
+      "id": "INV-85daf1c17a6e43",
+      "name": "Array VC",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-27d914a99e32f0f2",
+          "canonical_entity_id": "",
+          "name": "Runable"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-c5026be4b2c84291",
+          "funding_insight_id": "FI-ce571cd60ef1b102",
+          "event_ids": [
+            "EV-0ea2bbb7280091f2"
+          ],
+          "company_entity_id": "EN-27d914a99e32f0f2",
+          "company_canonical_entity_id": "",
+          "company_name": "Runable",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$21 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 21000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2100 万美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-2d6054cc51934d57",
+              "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+              "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+              "source_content_hash": "c050b0e757896e5c",
+              "quote": "with existing investors Together Fund and Array VC also participating",
+              "quote_hash": "03b68feed21c22339a50f810c91ab23ddebc6fd66a6ff00d76bff117c4332ef8"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2d6054cc51934d57",
+          "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+          "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+          "source_content_hash": "c050b0e757896e5c",
+          "quote": "with existing investors Together Fund and Array VC also participating",
+          "quote_hash": "03b68feed21c22339a50f810c91ab23ddebc6fd66a6ff00d76bff117c4332ef8"
+        }
+      ]
+    },
+    {
+      "id": "INV-84726f705d40c6",
+      "name": "Innovation Endeavors",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-06-25",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-dc8a5a5bf80909de",
+          "canonical_entity_id": "",
+          "name": "General Intuition"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-aa84e0b6fd907d79",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "参投C轮",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-7dc8a65571f189f0",
+              "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+              "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+              "source_content_hash": "8b96227297e6e9e1",
+              "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+              "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-0691bb4dc10d8d53",
+          "funding_insight_id": "FI-9e8f37e4b7cf28a5",
+          "event_ids": [
+            "EV-7283de3f3a76d22b"
+          ],
+          "company_entity_id": "EN-dc8a5a5bf80909de",
+          "company_canonical_entity_id": "",
+          "company_name": "General Intuition",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$320 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 320000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.2 亿美元"
+          },
+          "announced_at": "2026-06-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-fb702d5abe54d323",
+              "source_url": "https://theoutpost.ai/news-story/general-intuition-raises-320-million-to-build-ai-models-that-act-in-the-physical-world-27932/",
+              "source_title": "General Intuition Raises $320M AI Funding Round",
+              "source_content_hash": "fd28378604fe6512",
+              "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg.",
+              "quote_hash": "994ced7253c5833b999940bc6771bc4a6d4bcd7f0e246daaa3cbad655e0e3365"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-7dc8a65571f189f0",
+          "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+          "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+          "source_content_hash": "8b96227297e6e9e1",
+          "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+          "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+        },
+        {
+          "source_id": "FISRC-fb702d5abe54d323",
+          "source_url": "https://theoutpost.ai/news-story/general-intuition-raises-320-million-to-build-ai-models-that-act-in-the-physical-world-27932/",
+          "source_title": "General Intuition Raises $320M AI Funding Round",
+          "source_content_hash": "fd28378604fe6512",
+          "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg.",
+          "quote_hash": "994ced7253c5833b999940bc6771bc4a6d4bcd7f0e246daaa3cbad655e0e3365"
+        }
+      ]
+    },
+    {
+      "id": "INV-5e0d3f292f5b85",
+      "name": "Intact Private Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_d"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-9fed4b4135a3e6ef",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-36551c55b72c6244",
+              "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+              "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+              "source_content_hash": "c68350682f12d445",
+              "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+              "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-36551c55b72c6244",
+          "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+          "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+          "source_content_hash": "c68350682f12d445",
+          "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+          "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+        }
+      ]
+    },
+    {
+      "id": "INV-f826ee8345750d",
+      "name": "Koch Disruptive Technologies",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1
+      },
+      "round_codes": [
+        "series_d"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-062dda6790ff985e",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-36551c55b72c6244",
+              "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+              "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+              "source_content_hash": "c68350682f12d445",
+              "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+              "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-36551c55b72c6244",
+          "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+          "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+          "source_content_hash": "c68350682f12d445",
+          "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+          "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+        }
+      ]
+    },
+    {
+      "id": "INV-2437d5cb092956",
+      "name": "Millennium Management",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_d"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-6a247cea0c28caca",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-36551c55b72c6244",
+              "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+              "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+              "source_content_hash": "c68350682f12d445",
+              "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+              "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-36551c55b72c6244",
+          "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+          "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+          "source_content_hash": "c68350682f12d445",
+          "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+          "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+        }
+      ]
+    },
+    {
       "id": "INV-233fe3b442b6ce",
       "name": "Electronic Arts (EA)",
       "aliases": [],
@@ -44070,84 +45356,6 @@
       "activities": [
         {
           "activity_id": "IA-49f005e092dc5083",
-          "funding_insight_id": "FI-8a42f200f5caa9f3",
-          "event_ids": [
-            "EV-259566f35ea4f66d"
-          ],
-          "company_entity_id": "EN-607a596a603dd679",
-          "company_canonical_entity_id": "",
-          "company_name": "Starcloud",
-          "round": "A轮扩展",
-          "round_code": "series_a_extension",
-          "round_original": "A轮扩展",
-          "amount_original": "$250 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 250000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2.5 亿美元"
-          },
-          "announced_at": "2026-08-21",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-05f582b31c0a37a3",
-              "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
-              "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
-              "source_content_hash": "8e63b4f9948a4c5f",
-              "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
-              "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-05f582b31c0a37a3",
-          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
-          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
-          "source_content_hash": "8e63b4f9948a4c5f",
-          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
-          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
-        }
-      ]
-    },
-    {
-      "id": "INV-1996308273c587",
-      "name": "Benchmark",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-08-21",
-      "latest_disclosed_at": "2026-08-21",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a_extension"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-607a596a603dd679",
-          "canonical_entity_id": "",
-          "name": "Starcloud"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-dd337745a5588950",
           "funding_insight_id": "FI-8a42f200f5caa9f3",
           "event_ids": [
             "EV-259566f35ea4f66d"
@@ -48114,84 +49322,6 @@
       ]
     },
     {
-      "id": "INV-7870f1f2dd0ffb",
-      "name": "Together Fund",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-08-17",
-      "latest_disclosed_at": "2026-08-17",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_b"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-8c5929d253b07fed",
-          "canonical_entity_id": "",
-          "name": "Wispr"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-87caaf4cd4aa7d33",
-          "funding_insight_id": "FI-c0b843a5e6f6ea0a",
-          "event_ids": [
-            "EV-d43103952399bc68"
-          ],
-          "company_entity_id": "EN-8c5929d253b07fed",
-          "company_canonical_entity_id": "",
-          "company_name": "Wispr",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$280M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 280000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2.8 亿美元"
-          },
-          "announced_at": "2026-08-17",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-2e7a3713da8f3e54",
-              "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
-              "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
-              "source_content_hash": "affdfd9a0ccfb188",
-              "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
-              "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-2e7a3713da8f3e54",
-          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
-          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
-          "source_content_hash": "affdfd9a0ccfb188",
-          "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
-          "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
-        }
-      ]
-    },
-    {
       "id": "INV-2ed30490e9cd64",
       "name": "Valor Capital",
       "aliases": [],
@@ -50608,131 +51738,6 @@
           "source_content_hash": "e4b5710f29e81069",
           "quote": "The Ontario Teachers' Pension Plan invested more than $200 million in SpaceX in 2019",
           "quote_hash": "7ec1058b271819faee02121a73dc61d20e668e1d2a50aa327b32629183a1558d"
-        }
-      ]
-    },
-    {
-      "id": "INV-9e801f68178d22",
-      "name": "Qatar Investment Authority",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-03-11",
-      "latest_disclosed_at": "2026-08-10",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "series_d"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-53b69ef92c836777",
-          "canonical_entity_id": "",
-          "name": "Replit"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-fed01d0fad1df030",
-          "funding_insight_id": "FI-f55b62cf10cb7c98",
-          "event_ids": [
-            "EV-f5dd6dec49ad83aa"
-          ],
-          "company_entity_id": "EN-c70eca6b0f88f44d",
-          "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "company_name": "Anthropic",
-          "round": "G轮",
-          "round_code": "series_g",
-          "round_original": "G轮",
-          "amount_original": "$30 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 30000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "300 亿美元"
-          },
-          "announced_at": "2026-08-10",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "F轮参投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-46e8b046ae7a64f0",
-              "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
-              "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
-              "source_content_hash": "62a5edd881d6cc6e",
-              "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
-              "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-64f4fc49f7d08fdc",
-          "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
-          "event_ids": [
-            "EV-8eb0acb180b7ad9d"
-          ],
-          "company_entity_id": "EN-53b69ef92c836777",
-          "company_canonical_entity_id": "",
-          "company_name": "Replit",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "$400M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "4 亿美元"
-          },
-          "announced_at": "2026-03-11",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
-              "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
-              "source_content_hash": "c906371275e7a3ca",
-              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
-              "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-46e8b046ae7a64f0",
-          "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
-          "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
-          "source_content_hash": "62a5edd881d6cc6e",
-          "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
-          "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
-        },
-        {
-          "source_id": "FISRC-00ed3d8fd701898b",
-          "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
-          "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
-          "source_content_hash": "c906371275e7a3ca",
-          "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
-          "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
         }
       ]
     },
@@ -75521,84 +76526,6 @@
       ]
     },
     {
-      "id": "INV-84726f705d40c6",
-      "name": "Innovation Endeavors",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-06-25",
-      "latest_disclosed_at": "2026-06-25",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-dc8a5a5bf80909de",
-          "canonical_entity_id": "",
-          "name": "General Intuition"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-0691bb4dc10d8d53",
-          "funding_insight_id": "FI-9e8f37e4b7cf28a5",
-          "event_ids": [
-            "EV-7283de3f3a76d22b"
-          ],
-          "company_entity_id": "EN-dc8a5a5bf80909de",
-          "company_canonical_entity_id": "",
-          "company_name": "General Intuition",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$320 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 320000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.2 亿美元"
-          },
-          "announced_at": "2026-06-25",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-fb702d5abe54d323",
-              "source_url": "https://theoutpost.ai/news-story/general-intuition-raises-320-million-to-build-ai-models-that-act-in-the-physical-world-27932/",
-              "source_title": "General Intuition Raises $320M AI Funding Round",
-              "source_content_hash": "fd28378604fe6512",
-              "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg.",
-              "quote_hash": "994ced7253c5833b999940bc6771bc4a6d4bcd7f0e246daaa3cbad655e0e3365"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-fb702d5abe54d323",
-          "source_url": "https://theoutpost.ai/news-story/general-intuition-raises-320-million-to-build-ai-models-that-act-in-the-physical-world-27932/",
-          "source_title": "General Intuition Raises $320M AI Funding Round",
-          "source_content_hash": "fd28378604fe6512",
-          "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg.",
-          "quote_hash": "994ced7253c5833b999940bc6771bc4a6d4bcd7f0e246daaa3cbad655e0e3365"
-        }
-      ]
-    },
-    {
       "id": "INV-dce780666f7b49",
       "name": "John Hennessy",
       "aliases": [],
@@ -84296,131 +85223,6 @@
           "source_content_hash": "1d75cf39c1185f55",
           "quote": "The round was co-led by Magnetar and AMD Ventures",
           "quote_hash": "eb9325c57080acd92f299e9e680f9b2150474061e7ee65a997d10cf79534552f"
-        }
-      ]
-    },
-    {
-      "id": "INV-17c0004abc688e",
-      "name": "Nexus Venture Partners",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-04-27",
-      "latest_disclosed_at": "2026-06-10",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "series_b"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-3c1ae4e6276005e7",
-          "canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "name": "TensorWave Inc."
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-3113857c79897b85",
-          "funding_insight_id": "FI-1f714b499dc9751a",
-          "event_ids": [
-            "EV-6e516b6e68def9cf"
-          ],
-          "company_entity_id": "EN-3c1ae4e6276005e7",
-          "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "company_name": "TensorWave Inc.",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "3.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-06-10",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
-              "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
-              "source_content_hash": "1d75cf39c1185f55",
-              "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
-              "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-81234a77cef209cf",
-          "funding_insight_id": "FI-a308a87eb0e97da7",
-          "event_ids": [
-            "EV-dd3217aad32e6891"
-          ],
-          "company_entity_id": "EN-2f88f41306209dd7",
-          "company_canonical_entity_id": "",
-          "company_name": "Avoca AI",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "种子轮、A轮、B轮",
-          "amount_original": "超过1.25亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 125000000,
-            "min_value": 125000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 1.25 亿美元"
-          },
-          "announced_at": "2026-04-27",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-2315f11e10b4df0e",
-              "source_url": "https://www.avoca.ai/blog/avoca-raises-125m-series-b-1b-valuation",
-              "source_title": "Why We Are Building — Avoca | Avoca AI",
-              "source_content_hash": "81473027d0be2429",
-              "quote": "backed by Kleiner Perkins, Meritech, General Catalyst, Amplify Partners, Nexus Venture Partners, and Y Combinator",
-              "quote_hash": "3b2ea162be295ee50d93b66c82bdf36dc8bcf135b660987a22e1b0e42e25919f"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-e98aedbd2eaa6410",
-          "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
-          "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
-          "source_content_hash": "1d75cf39c1185f55",
-          "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
-          "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
-        },
-        {
-          "source_id": "FISRC-2315f11e10b4df0e",
-          "source_url": "https://www.avoca.ai/blog/avoca-raises-125m-series-b-1b-valuation",
-          "source_title": "Why We Are Building — Avoca | Avoca AI",
-          "source_content_hash": "81473027d0be2429",
-          "quote": "backed by Kleiner Perkins, Meritech, General Catalyst, Amplify Partners, Nexus Venture Partners, and Y Combinator",
-          "quote_hash": "3b2ea162be295ee50d93b66c82bdf36dc8bcf135b660987a22e1b0e42e25919f"
         }
       ]
     },
@@ -97143,84 +97945,6 @@
           "source_content_hash": "295fb65a11a09075",
           "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho",
           "quote_hash": "13a213a58f9d56d4c606db97e416ac8976cfb1c4b35d7633d5d1c4e9a47b1895"
-        }
-      ]
-    },
-    {
-      "id": "INV-a38354a604620e",
-      "name": "Susquehanna Venture Capital",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-04-17",
-      "latest_disclosed_at": "2026-04-17",
-      "role_counts": {
-        "lead": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-08ff6997681fad41",
-          "canonical_entity_id": "",
-          "name": "Zenskar"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-f9de947d1f9641cf",
-          "funding_insight_id": "FI-93538e84a3075ee9",
-          "event_ids": [
-            "EV-cbc0b7a7d21a29e2"
-          ],
-          "company_entity_id": "EN-08ff6997681fad41",
-          "company_canonical_entity_id": "",
-          "company_name": "Zenskar",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$15 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 15000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1500 万美元"
-          },
-          "announced_at": "2026-04-17",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
-              "source_title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
-              "source_content_hash": "295fb65a11a09075",
-              "quote": "$15 million Series A led by Susquehanna Venture Capital",
-              "quote_hash": "52e32d0a079f35a8c6e1e93148a1c64d56fc49e5d00474343a2d58f96bb5b7c6"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-d87b08783c0a062f",
-          "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
-          "source_title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
-          "source_content_hash": "295fb65a11a09075",
-          "quote": "$15 million Series A led by Susquehanna Venture Capital",
-          "quote_hash": "52e32d0a079f35a8c6e1e93148a1c64d56fc49e5d00474343a2d58f96bb5b7c6"
         }
       ]
     },
@@ -119596,6 +120320,356 @@
           "source_content_hash": "79c5fe52268cb7e7",
           "quote": "raised $10 million in a round contributed by NEA and “select” angel investors",
           "quote_hash": "74f7fb7f4870b592db0c61a787811ae10aeac6d44b7d28f6a4e09f9cd873949d"
+        }
+      ]
+    },
+    {
+      "id": "INV-9502a52ecbeda7",
+      "name": "Goodyear Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-ea06a49eb115d4a4",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "参投C轮",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-7dc8a65571f189f0",
+              "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+              "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+              "source_content_hash": "8b96227297e6e9e1",
+              "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+              "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-7dc8a65571f189f0",
+          "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+          "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+          "source_content_hash": "8b96227297e6e9e1",
+          "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+          "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+        }
+      ]
+    },
+    {
+      "id": "INV-7368d2d7ac5730",
+      "name": "Intact Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-e9f5c7ce0a69babe",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "参投C轮",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-7dc8a65571f189f0",
+              "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+              "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+              "source_content_hash": "8b96227297e6e9e1",
+              "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+              "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-7dc8a65571f189f0",
+          "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+          "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+          "source_content_hash": "8b96227297e6e9e1",
+          "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+          "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+        }
+      ]
+    },
+    {
+      "id": "INV-bea59b8e795cf5",
+      "name": "Isuzu Motors",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-3a49abcab4e65e12",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2024年投资3000万美元",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-36551c55b72c6244",
+              "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+              "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+              "source_content_hash": "c68350682f12d445",
+              "quote": "Isuzu Motors invested $30 million in Gatik in 2024 as part of a partnership to develop Level 4 autonomous commercial vehicles in North America.",
+              "quote_hash": "da3d0d75cb31e63e69b80895cb54765851024928677a9ee2267f2e099f548c8d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-36551c55b72c6244",
+          "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+          "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+          "source_content_hash": "c68350682f12d445",
+          "quote": "Isuzu Motors invested $30 million in Gatik in 2024 as part of a partnership to develop Level 4 autonomous commercial vehicles in North America.",
+          "quote_hash": "da3d0d75cb31e63e69b80895cb54765851024928677a9ee2267f2e099f548c8d"
+        }
+      ]
+    },
+    {
+      "id": "INV-7ba98c438d6a2c",
+      "name": "Itochu",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-146496eb302e2a92",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "参投C轮",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-7dc8a65571f189f0",
+              "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+              "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+              "source_content_hash": "8b96227297e6e9e1",
+              "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+              "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-7dc8a65571f189f0",
+          "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+          "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+          "source_content_hash": "8b96227297e6e9e1",
+          "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+          "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+        }
+      ]
+    },
+    {
+      "id": "INV-aae603dade95c8",
+      "name": "Koch Industries",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-fcfcad347ececec5",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "领投C轮",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-7dc8a65571f189f0",
+              "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+              "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+              "source_content_hash": "8b96227297e6e9e1",
+              "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+              "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-7dc8a65571f189f0",
+          "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+          "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+          "source_content_hash": "8b96227297e6e9e1",
+          "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+          "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
         }
       ]
     },
