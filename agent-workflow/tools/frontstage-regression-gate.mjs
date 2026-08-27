@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
@@ -233,6 +234,31 @@ function latestContentDate() {
     .at(-1) || "";
 }
 
+export function collectDirectionCardIssues(data, file) {
+  const issues = [];
+  if (!Array.isArray(data?.directionCards)) {
+    issues.push(issue(file, "direction_cards_missing"));
+    return issues;
+  }
+  if (data?.meta?.directionCardCount !== data.directionCards.length) {
+    issues.push(issue(file, "direction_card_count_mismatch", `${data?.meta?.directionCardCount ?? "missing"} != ${data.directionCards.length}`));
+  }
+  for (const card of data.directionCards) {
+    if (!card.id || !card.title || !card.judgment || !card.hypothesis || !card.counterSignal || !["validation_ready", "forming", "tracking"].includes(card.status)) {
+      issues.push(issue(file, "direction_card_incomplete", card.id || card.title || "missing"));
+    }
+    if (!Array.isArray(card.unknowns) || !card.unknowns.length || !card.validationAction) {
+      issues.push(issue(file, "direction_card_validation_boundary_missing", card.id || card.title || "missing"));
+    }
+    if (!Array.isArray(card.evidence) || card.evidence.length < 2 || card.evidence.some((item) => (
+      !item.eventId?.startsWith("EV-") || !item.claimRefs?.length || !item.sourceRefs?.length || !item.sourceUrl
+    ))) {
+      issues.push(issue(file, "direction_card_evidence_invalid", card.id || card.title || "missing"));
+    }
+  }
+  return issues;
+}
+
 function collectIndustryReportsDataIssues() {
   const file = path.join(root, "01-SiteV2/site/data/opportunity-evidence-v2.json");
   const text = read(file);
@@ -266,22 +292,7 @@ function collectIndustryReportsDataIssues() {
         }
       }
     }
-    if (!Array.isArray(data?.directionCards) || !data.directionCards.length) {
-      issues.push(issue(file, "direction_cards_missing"));
-    }
-    for (const card of data?.directionCards || []) {
-      if (!card.id || !card.title || !card.judgment || !card.hypothesis || !card.counterSignal || !["validation_ready", "forming", "tracking"].includes(card.status)) {
-        issues.push(issue(file, "direction_card_incomplete", card.id || card.title || "missing"));
-      }
-      if (!Array.isArray(card.unknowns) || !card.unknowns.length || !card.validationAction) {
-        issues.push(issue(file, "direction_card_validation_boundary_missing", card.id || card.title || "missing"));
-      }
-      if (!Array.isArray(card.evidence) || card.evidence.length < 2 || card.evidence.some((item) => (
-        !item.eventId?.startsWith("EV-") || !item.claimRefs?.length || !item.sourceRefs?.length || !item.sourceUrl
-      ))) {
-        issues.push(issue(file, "direction_card_evidence_invalid", card.id || card.title || "missing"));
-      }
-    }
+    issues.push(...collectDirectionCardIssues(data, file));
   } catch (error) {
     issues.push(issue(file, "industry_reports_json_parse_failed", error.message));
   }
@@ -449,23 +460,27 @@ function writeReport(issues) {
   return report;
 }
 
-const issues = [
-  ...collectRetiredPatternIssues(),
-  ...collectRetiredPageIssues(),
-  ...collectUnifiedNavigationIssues(),
-  ...collectV4FrontstageDataIssues(),
-  ...collectV4EntityRelationIssues(),
-  ...collectRootEntryIssues(),
-  ...collectIndustryReportsDataIssues(),
-  ...collectVersionMetaIssues(),
-];
-const report = writeReport(issues);
+function main() {
+  const issues = [
+    ...collectRetiredPatternIssues(),
+    ...collectRetiredPageIssues(),
+    ...collectUnifiedNavigationIssues(),
+    ...collectV4FrontstageDataIssues(),
+    ...collectV4EntityRelationIssues(),
+    ...collectRootEntryIssues(),
+    ...collectIndustryReportsDataIssues(),
+    ...collectVersionMetaIssues(),
+  ];
+  const report = writeReport(issues);
 
-console.log(JSON.stringify({
-  ok: issues.length === 0,
-  status: issues.length ? "failed" : "passed",
-  issue_count: issues.length,
-  report: rel(report),
-}, null, 2));
+  console.log(JSON.stringify({
+    ok: issues.length === 0,
+    status: issues.length ? "failed" : "passed",
+    issue_count: issues.length,
+    report: rel(report),
+  }, null, 2));
 
-if (issues.length) process.exit(1);
+  if (issues.length) process.exit(1);
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

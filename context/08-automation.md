@@ -204,8 +204,9 @@ skips both collection steps. Required source-title repair is date-bounded and
 runs before the V4 integrity gate; approved cached translations and equivalent
 numeric expressions such as `double` / `翻倍` must pass the same protected-fact
 validator. Opportunity Map gates compare the emitted direction-card count with
-the artifact metadata and require at least one current rolling-window card rather
-than assuming a fixed historical count.
+the artifact metadata. A day may validly emit an empty direction-card array when
+no evidence cluster clears the quality threshold; the count must still match and
+every emitted card must pass the complete evidence and validation-boundary gates.
 
 Funding publication must persist taxonomy decisions with
 `classify:funding-taxonomy-v4.1 -- --write=true`. Both the Business Signals
