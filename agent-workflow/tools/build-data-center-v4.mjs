@@ -722,7 +722,7 @@ function exactAliasIndex(text, alias) {
   return -1;
 }
 
-function fundingClaimOrganizationMentions(eventClaims, claimEvidence) {
+function fundingClaimOrganizationMentions(eventClaims, claimEvidence, title) {
   const candidates = [];
   const addCandidate = (value) => {
     const normalizedCandidate = normalizeSpace(value)
@@ -735,9 +735,10 @@ function fundingClaimOrganizationMentions(eventClaims, claimEvidence) {
     const chineseCandidate = containsChinese(candidate);
     if (!candidate
         || candidate.length < 2
-        || candidate.length > 80
-        || /^(?:the company|company|startup|firm|platform|provider)$/iu.test(candidate)
-        || (chineseCandidate && /^(?:中国|国内|全球|业内|一家|这家|该公司)/u.test(candidate))
+         || candidate.length > 80
+         || /^(?:the company|company|startup|firm|platform|provider)$/iu.test(candidate)
+         || /^(?:CEO|CTO|CFO|COO|founder|co-founder|Series|Seed)\b/iu.test(candidate)
+         || (chineseCandidate && /^(?:中国|国内|全球|业内|一家|这家|该公司)/u.test(candidate))
         || (!chineseCandidate && (!/[A-Za-z]/u.test(candidate) || !/^[A-Z0-9]/u.test(candidate)))) return;
     const index = exactAliasIndex(claimEvidence, candidate);
     if (index < 0) return;
@@ -761,9 +762,16 @@ function fundingClaimOrganizationMentions(eventClaims, claimEvidence) {
     const describedChineseCompany = quote.match(
       /公司\s*([\p{Script=Han}A-Za-z0-9·.&-]{2,24}?)(?:（[A-Za-z0-9 .&'-]{2,40}）)?(?=(?:已|近日)?(?:完成|获得|获|宣布).{0,24}(?:融资|投资|募资))/u,
     )?.[1];
+    const describedEnglishStartup = quote.match(
+      /\b(?:[A-Z][a-z]+\s+)?(?:AI\s+)?[Ss]tartup\s+((?!(?:CEO|CTO|CFO|COO|founder|co-founder|Series|Seed)\b)[A-Z][A-Za-z0-9.&'-]*(?:\s+(?!(?:CEO|CTO|CFO|COO|founder|co-founder|Series|Seed)\b)[A-Z][A-Za-z0-9.&'-]*){0,3})(?=.{0,240}\b(?:has\s+)?(?:raised|raises|secured|closes?|funding)\b)/u,
+    )?.[1];
     if (lead) addCandidate(lead);
     if (chineseLead) addCandidate(chineseLead);
     if (describedChineseCompany) addCandidate(describedChineseCompany);
+    if (describedEnglishStartup && !/\s/u.test(describedEnglishStartup) && (
+      exactAliasIndex(title, describedEnglishStartup) >= 0
+      || eventClaims.some((item) => exactAliasIndex(normalizeSpace(item.subject), describedEnglishStartup) >= 0)
+    )) addCandidate(describedEnglishStartup);
     addCandidate(claim.subject);
   }
   return candidates;
@@ -821,7 +829,7 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
     }
   }
   if (eventType === "funding") {
-    hits.push(...fundingClaimOrganizationMentions(eventClaims, claimEvidence));
+    hits.push(...fundingClaimOrganizationMentions(eventClaims, claimEvidence, title));
     const describedCompany = title.match(
       /(?:开发商|制造商|maker|creator|developer)\s+([A-Z][A-Za-z0-9.&'-]*(?:\s+[A-Z][A-Za-z0-9.&'-]*){0,3})(?=\s+(?:获|获得|完成|raises?|raised|secures?|secured))/iu,
     );
