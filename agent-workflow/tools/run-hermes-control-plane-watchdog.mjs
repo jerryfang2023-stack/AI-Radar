@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import {
+  DEFAULT_CONTROLLER_CLOCK_SKEW_MS,
+  DEFAULT_CONTROLLER_RUNNING_LEASE_MS,
+  inspectControllerReportLiveness,
+} from "./lib/controller-report-liveness.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -13,6 +18,8 @@ const args = new Map(
 const date = args.get("date") || shanghaiDate();
 const force = args.get("force") === "true";
 const graceMs = Math.max(0, Number(args.get("grace-ms") || "15000") || 0);
+const runningLeaseMs = Math.max(0, Number(args.get("running-lease-ms") || DEFAULT_CONTROLLER_RUNNING_LEASE_MS) || 0);
+const clockSkewMs = Math.max(0, Number(args.get("clock-skew-ms") || DEFAULT_CONTROLLER_CLOCK_SKEW_MS) || 0);
 const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
 const incidentDir = path.resolve(root, args.get("incident-dir") || path.join("agent-workflow", "inbox", "production-incidents"));
 const phases = ["morning", "recovery", "closure"];
@@ -71,11 +78,15 @@ function inspectPhase(phase) {
     };
   }
 
-  const validIdentity = report.date === date && report.phase === phase;
-  const hasActions = Array.isArray(report.actions) && report.actions.length > 0;
+  const { validIdentity, hasActions, runningFresh, observable } = inspectControllerReportLiveness(report, {
+    phase,
+    date,
+    runningLeaseMs,
+    clockSkewMs,
+  });
   return {
     phase,
-    observable: validIdentity && hasActions,
+    observable,
     report: rel(file),
     controller_status: report.status || "unknown",
     controller_ok: report.ok === true,
@@ -83,6 +94,8 @@ function inspectPhase(phase) {
       ? `report identity mismatch (date=${report.date || "missing"}, phase=${report.phase || "missing"})`
       : !hasActions
         ? "controller report has no recorded actions"
+        : !runningFresh
+          ? "controller running marker expired before a final report was written"
         : "controller executed; downstream status remains owned by Closure/Codex",
   };
 }

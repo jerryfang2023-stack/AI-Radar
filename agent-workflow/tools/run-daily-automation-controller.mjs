@@ -4,6 +4,10 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
 import { resolveAutomationNetworkEnv } from "./lib/automation-network-env.mjs";
+import {
+  controllerRecoveryOwnershipReason,
+  inspectControllerReportLiveness,
+} from "./lib/controller-report-liveness.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -74,6 +78,17 @@ function scheduledSupersession(currentPhase, value = currentTime) {
 
 function rel(file) {
   return path.relative(root, file).replace(/\\/gu, "/");
+}
+
+function readControllerReport(currentPhase) {
+  try {
+    return JSON.parse(fs.readFileSync(
+      path.join(reportsDir, `${date}-daily-automation-${currentPhase}.json`),
+      "utf8",
+    ));
+  } catch {
+    return null;
+  }
 }
 
 function run(label, command, commandArgs, timeoutMs = 180_000) {
@@ -219,6 +234,18 @@ function recovery() {
 }
 
 function closure() {
+  const recoveryReport = readControllerReport("recovery");
+  const recoveryLiveness = inspectControllerReportLiveness(recoveryReport, {
+    phase: "recovery",
+    date,
+  });
+  const recoveryOwnershipReason = controllerRecoveryOwnershipReason({
+    scheduledRun,
+    report: recoveryReport,
+    liveness: recoveryLiveness,
+  });
+  const ownsLaneRecovery = Boolean(recoveryOwnershipReason);
+  const laneRecovery = ownsLaneRecovery ? recovery() : null;
   const coverage = run("Data Center projection coverage", process.execPath, [
     "agent-workflow/tools/assert-data-center-projection-coverage.mjs",
     `--date=${date}`,
@@ -263,8 +290,13 @@ function closure() {
     ok,
     healthOk: !waiting && Boolean(selfCheckPayload?.ok) && coverage.ok,
     status: ok ? waiting ? "waiting" : "closed" : "repair_required",
-    actions: [coverageAction, selfCheck, codex],
-    notes: waiting ? ["Same-date production is active; Closure recorded waiting instead of a false missing-data failure."] : [],
+    actions: [...(laneRecovery?.actions || []), coverageAction, selfCheck, codex],
+    notes: [
+      ...(ownsLaneRecovery
+        ? [`Closure owns deterministic lane recovery: ${recoveryOwnershipReason}.`]
+        : ["The completed Recovery controller retains lane ownership for this scheduled Closure run."]),
+      ...(waiting ? ["Same-date production is active; Closure recorded waiting instead of a false missing-data failure."] : []),
+    ],
   };
 }
 
@@ -390,6 +422,26 @@ function main() {
   if (!new Set(["morning", "recovery", "closure", "final-closure"]).has(phase)) {
     throw new Error(`Unsupported phase: ${phase}`);
   }
+  writeReport({
+    ok: true,
+    healthOk: false,
+    status: "running",
+    phase,
+    date,
+    generated_at: new Date().toISOString(),
+    dry_run: dryRun,
+    scheduled_run: scheduledRun,
+    network_mode: automationNetwork.mode,
+    actions: [{
+      label: `${phase} controller started`,
+      ok: true,
+      status: 0,
+      command: "internal: controller running",
+      stdout: "",
+      stderr: "",
+    }],
+    notes: ["The final report will replace this liveness marker when the controller exits."],
+  });
   const result = scheduledSupersession(phase) || (phase === "morning"
     ? morning()
     : phase === "recovery"

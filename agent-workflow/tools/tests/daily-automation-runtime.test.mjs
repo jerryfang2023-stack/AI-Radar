@@ -5,6 +5,10 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import test from "node:test";
 import { resolveAutomationNetworkEnv } from "../lib/automation-network-env.mjs";
+import {
+  controllerRecoveryOwnershipReason,
+  inspectControllerReportLiveness,
+} from "../lib/controller-report-liveness.mjs";
 
 const root = process.cwd();
 const read = (name) => fs.readFileSync(path.join(root, "agent-workflow", "tools", name), "utf8");
@@ -56,6 +60,40 @@ test("late scheduled controller phases are superseded instead of colliding", () 
   assert.match(controller, /status: "superseded"/u);
   assert.match(watchdog, /args\.get\("grace-ms"\) \|\| "15000"/u);
   assert.match(watchdog, /inspectControllersWithGrace/u);
+  assert.match(controller, /inspectControllerReportLiveness\(recoveryReport/u);
+  assert.match(controller, /controllerRecoveryOwnershipReason/u);
+  assert.match(controller, /const laneRecovery = ownsLaneRecovery \? recovery\(\) : null/u);
+  assert.match(controller, /actions: \[\.\.\.\(laneRecovery\?\.actions \|\| \[\]\), coverageAction, selfCheck, codex\]/u);
+  assert.match(controller, /status: "running"[^]*internal: controller running/u);
+});
+
+test("Closure records the exact reason when it takes Recovery ownership", () => {
+  const date = "2026-08-27";
+  const report = {
+    ok: true,
+    status: "running",
+    phase: "recovery",
+    date,
+    generated_at: "2026-08-27T00:00:00.000Z",
+    actions: [{ label: "recovery", ok: true }],
+  };
+  const liveness = inspectControllerReportLiveness(report, {
+    phase: "recovery",
+    date,
+    now: Date.parse("2026-08-27T01:00:00.000Z"),
+  });
+  assert.equal(
+    controllerRecoveryOwnershipReason({ scheduledRun: true, report, liveness }),
+    "expired or clock-skewed Recovery running marker",
+  );
+  assert.equal(
+    controllerRecoveryOwnershipReason({
+      scheduledRun: true,
+      report: { ...report, status: "superseded" },
+      liveness: { ...liveness, runningFresh: true, observable: true },
+    }),
+    "superseded Recovery report",
+  );
 });
 
 test("late scheduled morning execution writes an observable superseded report", () => {
