@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { buildIndustryReportsData } from "../../../01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs";
+import { collectDirectionCardIssues } from "../frontstage-regression-gate.mjs";
 import { SITE_VERSION } from "../render-periodic-report-pages.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -58,6 +59,20 @@ test("Opportunity Map projection reads accepted V4 evidence without Signal Cards
   assert.match(opportunityHtml, /model_api_service/u);
   assert.match(opportunityHtml, /data-direction-cards|查看方向|创业假设/u);
   assert.doesNotMatch(opportunityHtml, /data-map-toggle|Cell Evidence|Relation Paths/u);
+
+});
+
+test("frontstage gate accepts an empty direction-card day only when metadata agrees", () => {
+  const file = path.join(root, "01-SiteV2/site/data/opportunity-evidence-v2.json");
+  assert.deepEqual(collectDirectionCardIssues({ meta: { directionCardCount: 0 }, directionCards: [] }, file), []);
+  assert.deepEqual(
+    collectDirectionCardIssues({ meta: { directionCardCount: 1 }, directionCards: [] }, file).map((item) => item.label),
+    ["direction_card_count_mismatch"],
+  );
+  assert.deepEqual(
+    collectDirectionCardIssues({ meta: { directionCardCount: 0 } }, file).map((item) => item.label),
+    ["direction_cards_missing"],
+  );
 });
 
 test("Opportunity Map projection builds from V4 fixtures when all V3 assets are absent", () => {
