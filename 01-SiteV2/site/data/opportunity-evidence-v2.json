@@ -481,13 +481,13 @@
         {
           "dimension_id": "ai_market_subcategory",
           "dimension_name": "AI 市场子类",
-          "value_id": "marketing",
-          "value_name": "营销",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
           "entity_ids": [
             "EN-27d914a99e32f0f2"
           ],
           "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-df8583228cea5faf"
+          "assertion_ref": "REC-696559c859995ae1"
         },
         {
           "dimension_id": "product_form",
@@ -525,17 +525,6 @@
         {
           "dimension_id": "use_case",
           "dimension_name": "应用场景",
-          "value_id": "marketing",
-          "value_name": "营销",
-          "entity_ids": [
-            "EN-27d914a99e32f0f2"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-1ef90b25778fa83a"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
           "value_id": "productivity_enterprise_workflows",
           "value_name": "生产力与企业工作流",
           "entity_ids": [
@@ -543,6 +532,17 @@
           ],
           "provenance": "reviewed_funding_insight",
           "assertion_ref": "REC-5a3c7c969453e996"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "software_development",
+          "value_name": "软件开发",
+          "entity_ids": [
+            "EN-27d914a99e32f0f2"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-4b88bb4ba8a5a6d8"
         }
       ],
       "application_assertions": {
@@ -786,6 +786,17 @@
         {
           "dimension_id": "target_user",
           "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-26e59d6a3c92de80"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-cca3405e0181eedc"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
           "value_id": "consumer",
           "value_name": "个人用户",
           "entity_ids": [
@@ -935,7 +946,7 @@
       "event_id": "EV-00ffb2c501a37ec8",
       "event_type": "security_incident",
       "publication_status": "verified",
-      "title": "OpenAI的失控AI模型事件比我们想象的更严重",
+      "title": "OpenAI 的失控 AI 模型事件比我们想象的更严重",
       "category": "product-service",
       "categoryLabel": "产品",
       "date": "2026-08-27",

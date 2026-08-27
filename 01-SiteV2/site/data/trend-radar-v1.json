@@ -7,7 +7,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:15:08.548Z",
+    "generatedAt": "2026-08-27T04:53:01.700Z",
     "latestDataDate": "2026-08-27",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -160,13 +160,13 @@
         {
           "dimensionId": "ai_market_subcategory",
           "dimensionName": "AI 市场子类",
-          "id": "marketing",
-          "name": "营销",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
           "entityIds": [
             "EN-27d914a99e32f0f2"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-df8583228cea5faf",
+          "reviewRef": "REC-696559c859995ae1",
           "fundingInsightId": "FI-260bfb34f8dee437"
         },
         {
@@ -208,18 +208,6 @@
         {
           "dimensionId": "use_case",
           "dimensionName": "应用场景",
-          "id": "marketing",
-          "name": "营销",
-          "entityIds": [
-            "EN-27d914a99e32f0f2"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-1ef90b25778fa83a",
-          "fundingInsightId": "FI-260bfb34f8dee437"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
           "id": "productivity_enterprise_workflows",
           "name": "生产力与企业工作流",
           "entityIds": [
@@ -227,6 +215,18 @@
           ],
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-5a3c7c969453e996",
+          "fundingInsightId": "FI-260bfb34f8dee437"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-27d914a99e32f0f2"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4b88bb4ba8a5a6d8",
           "fundingInsightId": "FI-260bfb34f8dee437"
         }
       ],
@@ -403,6 +403,18 @@
           ],
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-92a4c87f2e5d9a6a",
+          "fundingInsightId": "FI-705ee26dc399cb0c"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-26e59d6a3c92de80"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cca3405e0181eedc",
           "fundingInsightId": "FI-705ee26dc399cb0c"
         },
         {
@@ -121901,7 +121913,7 @@
       "eventTypeLabel": "安全事件",
       "publicationStatus": "verified",
       "category": "other",
-      "title": "OpenAI的失控AI模型事件比我们想象的更严重",
+      "title": "OpenAI 的失控 AI 模型事件比我们想象的更严重",
       "entityIds": [
         "EN-7d3194f79e645c42"
       ],
@@ -121988,7 +122000,7 @@
       "eventTypeLabel": "组织重组",
       "publicationStatus": "verified",
       "category": "other",
-      "title": "员工反抗和智能体表现不佳迫使Meta放弃AI裁员计划",
+      "title": "员工反抗与智能体表现不佳迫使Meta放弃AI裁员计划",
       "entityIds": [
         "EN-ea3bd73e2b506e00"
       ],
@@ -163737,6 +163749,21 @@
                 "count": 9
               },
               {
+                "id": "productivity_enterprise_workflows",
+                "name": "生产力与企业工作流",
+                "eventIds": [
+                  "EV-0ea2bbb7280091f2",
+                  "EV-276878c26b2a06dc",
+                  "EV-d43103952399bc68",
+                  "EV-df8954acf9a13848",
+                  "EV-f315914e0fedddfa",
+                  "EV-450f624a6a6446ce",
+                  "EV-dc35d54f273196f0",
+                  "EV-914ca1cbc6359ce5"
+                ],
+                "count": 8
+              },
+              {
                 "id": "data",
                 "name": "数据",
                 "eventIds": [
@@ -163750,20 +163777,6 @@
                   "EV-e59938ae531af428"
                 ],
                 "count": 8
-              },
-              {
-                "id": "productivity_enterprise_workflows",
-                "name": "生产力与企业工作流",
-                "eventIds": [
-                  "EV-276878c26b2a06dc",
-                  "EV-d43103952399bc68",
-                  "EV-df8954acf9a13848",
-                  "EV-f315914e0fedddfa",
-                  "EV-450f624a6a6446ce",
-                  "EV-dc35d54f273196f0",
-                  "EV-914ca1cbc6359ce5"
-                ],
-                "count": 7
               },
               {
                 "id": "observability_evaluation",
@@ -163785,16 +163798,6 @@
                   "EV-a81c5dc2e9abff3a",
                   "EV-c6cccaca326dfd45",
                   "EV-24823de8fb76ac31"
-                ],
-                "count": 3
-              },
-              {
-                "id": "marketing",
-                "name": "营销",
-                "eventIds": [
-                  "EV-0ea2bbb7280091f2",
-                  "EV-1dba157815d84342",
-                  "EV-933b02f5736a0366"
                 ],
                 "count": 3
               },
@@ -163822,6 +163825,15 @@
                 "eventIds": [
                   "EV-c6c297156ff274ac",
                   "EV-e6a4e0785ebb268a"
+                ],
+                "count": 2
+              },
+              {
+                "id": "marketing",
+                "name": "营销",
+                "eventIds": [
+                  "EV-1dba157815d84342",
+                  "EV-933b02f5736a0366"
                 ],
                 "count": 2
               },
@@ -164675,6 +164687,7 @@
                 "id": "software_development",
                 "name": "软件开发",
                 "eventIds": [
+                  "EV-0ea2bbb7280091f2",
                   "EV-8ad153b984ba8729",
                   "EV-be76a1e5ed2b6cf5",
                   "EV-129ffa6be41bb485",
@@ -164702,7 +164715,7 @@
                   "EV-7a44a47bf36780d2",
                   "EV-e0a31302688c81ec"
                 ],
-                "count": 26
+                "count": 27
               },
               {
                 "id": "productivity_enterprise_workflows",
@@ -164863,15 +164876,6 @@
                 "count": 2
               },
               {
-                "id": "marketing",
-                "name": "营销",
-                "eventIds": [
-                  "EV-0ea2bbb7280091f2",
-                  "EV-1dba157815d84342"
-                ],
-                "count": 2
-              },
-              {
                 "id": "procurement_supply_chain",
                 "name": "采购与供应链",
                 "eventIds": [
@@ -164892,6 +164896,14 @@
                 "name": "教育与学习",
                 "eventIds": [
                   "EV-b5dd10300e34f2d3"
+                ],
+                "count": 1
+              },
+              {
+                "id": "marketing",
+                "name": "营销",
+                "eventIds": [
+                  "EV-1dba157815d84342"
                 ],
                 "count": 1
               }
@@ -165238,6 +165250,7 @@
                 "eventIds": [
                   "EV-0ea2bbb7280091f2",
                   "EV-140ecf4fabe544ba",
+                  "EV-276878c26b2a06dc",
                   "EV-3ee6b5e876146bb3",
                   "EV-657176fd0dff6209",
                   "EV-4927409c0f4b3ef3",
@@ -165297,7 +165310,7 @@
                   "EV-ee38c30c00b2a754",
                   "EV-914ca1cbc6359ce5"
                 ],
-                "count": 60
+                "count": 61
               },
               {
                 "id": "developer",
