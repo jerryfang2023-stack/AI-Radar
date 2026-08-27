@@ -5,13 +5,94 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "hardware": [
+    {
+      "id": "HW-19692cd9428f2e0f",
+      "eventId": "EV-00e6152baff47d4d",
+      "dataDate": "2026-08-27",
+      "date": "2026-08-26",
+      "title": "亚马逊因“需求激增”将英伟达芯片订单量增至三倍",
+      "hardwareType": "gpu",
+      "eventType": "hardware_supply",
+      "eventTypeLabel": "硬件供应",
+      "computeLayer": "data_center",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "2026-08-26",
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand",
+      "sourceName": "TechCrunch AI",
+      "sourceDate": "2026-08-26",
+      "entityIds": [
+        "EN-5694577a18c5d260",
+        "EN-cbc62794911ff31b",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "HW-f05a371d8e0599b0",
+      "eventId": "EV-127a04dfedc04e0c",
+      "dataDate": "2026-08-27",
+      "date": "2026-08-26",
+      "title": "NVIDIA Jetson Orin Nano 2 发布，将物理 AI 带入无人机与机器人",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://artificialintelligence-news.com/news/nvidia-jetson-orin-nano-2-physical-ai-to-drones-and-robots",
+      "sourceName": "Artificial Intelligence News（RSS）",
+      "sourceDate": "2026-08-26",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-62fcbf9b9027cde3",
+        "EN-c24d9dd17f3f5869"
+      ]
+    },
     {
       "id": "HW-03c3292149bb6bf9",
       "eventId": "EV-2b529f1793d4230f",
@@ -2777,6 +2858,514 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-8c60e882c331fbbc",
+      "snapshotKey": "8c60e882c331fbbc",
+      "snapshotId": "HWS-1482aeef11345986",
+      "eventId": "EV-b1b396e6ba2fe208",
+      "eventIds": [
+        "EV-b1b396e6ba2fe208"
+      ],
+      "dataDate": "2026-08-27",
+      "date": "2026-08-27",
+      "title": "Isaac 0.5",
+      "subject": "Meta",
+      "productNames": [
+        "Isaac 0.5"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-48afe8572dec15ee"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-48afe8572dec15ee",
+          "fact_type": "product",
+          "observed_at": "2026-08-26T00:00:00.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-db9c2298a664bd19"
+          ],
+          "product_names": [
+            "Isaac 0.5"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "This week, the company launched its latest model, Isaac 0.5, which its creators say is designed to provide machines with the ability to “perceive, reason and act” in industrial settings. Specifically, the software is capable of helping vision-guided robots navigate complex environments like warehouses or factory floors. It also helps companies extract visual intelligence from videos recorded by those bots.",
+          "event_refs": [
+            "EV-b1b396e6ba2fe208"
+          ],
+          "claim_ref": "CL-647919eab9846b8b",
+          "source_refs": [
+            "SA-41587520a02b8881"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/26/ex-meta-scientists-want-to-bring-visual-ai-to-the-factory-floor",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-db9c2298a664bd19"
+      ]
+    },
+    {
+      "id": "HWC-5ef488ccd04ecc0a",
+      "snapshotKey": "5ef488ccd04ecc0a",
+      "snapshotId": "HWS-3174878b75abd334",
+      "eventId": "EV-127a04dfedc04e0c",
+      "eventIds": [
+        "EV-127a04dfedc04e0c",
+        "EV-2b529f1793d4230f"
+      ],
+      "dataDate": "2026-08-27",
+      "date": "2026-08-27",
+      "title": "Jetson Orin Nano 2 / Jetson Orin Nano",
+      "subject": "NVIDIA",
+      "productNames": [
+        "Jetson Orin Nano 2",
+        "Jetson Orin Nano"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c4827ca7bd53d2cd"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-27",
+          "previousDate": "2026-08-26",
+          "snapshotId": "HWS-3174878b75abd334",
+          "previousSnapshotId": "HWS-d94f6134ff165ba9",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-c4827ca7bd53d2cd",
+          "fact_type": "product",
+          "observed_at": "2026-08-26T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-62fcbf9b9027cde3",
+            "EN-c24d9dd17f3f5869"
+          ],
+          "product_names": [
+            "Jetson Orin Nano 2",
+            "Jetson Orin Nano"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "NVIDIA has unveiled the Jetson Orin Nano 2, an edge robotics computer aimed at bringing physical AI to drones, robots, and vision systems. The company is positioning the new board as an entry-level option for developers who want generative AI models running directly on a machine instead of inside a data centre.",
+          "event_refs": [
+            "EV-127a04dfedc04e0c"
+          ],
+          "claim_ref": "CL-2181ff5c3284882f",
+          "source_refs": [
+            "SA-44790839076188b5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://artificialintelligence-news.com/news/nvidia-jetson-orin-nano-2-physical-ai-to-drones-and-robots",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-62fcbf9b9027cde3",
+        "EN-c24d9dd17f3f5869"
+      ]
+    },
+    {
+      "id": "HWC-9965e600e64f311a",
+      "snapshotKey": "9965e600e64f311a",
+      "snapshotId": "HWS-d48749430dccb2a6",
+      "eventId": "EV-48d22452ef4464fc",
+      "eventIds": [
+        "EV-48d22452ef4464fc"
+      ],
+      "dataDate": "2026-08-27",
+      "date": "2026-08-27",
+      "title": "ModelBest",
+      "subject": "ModelBest",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-fb228f6fe28190e4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-fb228f6fe28190e4",
+          "fact_type": "product",
+          "observed_at": "2026-08-26T10:55:00.000Z",
+          "subject_entity_id": "EN-e12c9f7f64dec58c",
+          "subject_name": "ModelBest",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "此外，今年 7 月， 面壁智能联合 OpenBMB 在 2026 世界人工智能大会上发布了最新端侧模型 MiniCPM5-2B ，并完成多款芯片适配。",
+          "event_refs": [
+            "EV-48d22452ef4464fc"
+          ],
+          "claim_ref": "CL-8c82d73633d8c7b9",
+          "source_refs": [
+            "SA-c35d2bb7ae02243f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-e12c9f7f64dec58c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/994/708.htm",
+      "entityIds": [
+        "EN-e12c9f7f64dec58c"
+      ]
+    },
+    {
+      "id": "HWC-5b15ed073a6c990b",
+      "snapshotKey": "5b15ed073a6c990b",
+      "snapshotId": "HWS-7928416ea38b0cb3",
+      "eventId": "EV-f41fe4d6189853cd",
+      "eventIds": [
+        "EV-f41fe4d6189853cd"
+      ],
+      "dataDate": "2026-08-27",
+      "date": "2026-08-27",
+      "title": "NVHBM",
+      "subject": "NVIDIA",
+      "productNames": [
+        "NVHBM"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-bd12fb8372025e8d"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-8a0a271ef5105dc1",
+          "fact_type": "specification",
+          "observed_at": "2026-08-27T00:07:15.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-115dd723b2613147"
+          ],
+          "product_names": [
+            "NVHBM"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英伟达称，NVHBM 已经与“领先的内存厂商”共同完成设计和验证，因此，对于开发定制芯片的厂商来说，相比从零开始采用标准 HBM，NVHBM 有望帮助其更快推出产品。",
+          "event_refs": [
+            "EV-f41fe4d6189853cd"
+          ],
+          "claim_ref": "CL-75de8df668058544",
+          "source_refs": [
+            "SA-eae164b5cb0e003d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-bd12fb8372025e8d",
+          "fact_type": "specification",
+          "observed_at": "2026-08-27T00:07:15.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-115dd723b2613147"
+          ],
+          "product_names": [
+            "NVHBM"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "不过需要强调的是，NVHBM 并不是 HBM 的替代品，而是英伟达专门向定制芯片合作伙伴提供的一种全新基础组件。",
+          "event_refs": [
+            "EV-f41fe4d6189853cd"
+          ],
+          "claim_ref": "CL-ba3c45e16f51ae29",
+          "source_refs": [
+            "SA-eae164b5cb0e003d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/994/806.htm",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-115dd723b2613147"
+      ]
+    },
+    {
+      "id": "HWC-5a30e015d5d12a96",
+      "snapshotKey": "5a30e015d5d12a96",
+      "snapshotId": "HWS-c8f5584d4abcba56",
+      "eventId": "EV-6b668e4655192209",
+      "eventIds": [
+        "EV-6b668e4655192209",
+        "EV-467539fe176a470e"
+      ],
+      "dataDate": "2026-08-27",
+      "date": "2026-08-27",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification",
+        "product"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "13",
+          "unit": "$billion",
+          "fact_ref": "HWF-1e0b4b38fd899d45"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 5,
+      "changes": [
+        {
+          "date": "2026-08-27",
+          "previousDate": "2026-08-07",
+          "snapshotId": "HWS-c8f5584d4abcba56",
+          "previousSnapshotId": "HWS-62a40b6eb4a8749f",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "previousDate": "2026-08-06",
+          "snapshotId": "HWS-62a40b6eb4a8749f",
+          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "previousDate": "2026-08-05",
+          "snapshotId": "HWS-df26b5fa3a51a04d",
+          "previousSnapshotId": "HWS-84ba3d86778ff712",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-84ba3d86778ff712",
+          "previousSnapshotId": "HWS-6228f201a75148c3",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-1e0b4b38fd899d45",
+          "fact_type": "specification",
+          "observed_at": "2026-08-27T00:34:46.985Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "13",
+          "unit": "$billion",
+          "source_quote": "Nvidia has been in talks to acquire Hugging Face, the popular AI platform for sharing and building with open-source models, in what could be one of the chip giant's biggest deals yet. The two parties have had acquisition conversations in recent weeks about a deal that would value Hugging Face at more than $13 billion, according to a person familiar with the matter. The companies have not yet reached a deal, and the talks could still fall apart, the person said. Business Insider on Sunday was the first to report that Hugging Face was fielding takeover interest. Nvidia and Hugging Face did not respond to requests for comment. Nvidia has increasingly ramped up dealmaking with its enormous cash pile. The company said Wednesday that it has $18 billion committed to equity investments for the rest of its fiscal year, on top of $47.9 billion it already holds in private companies. Microsoft also met with Hugging Face, but the person familiar and a second person said talks are not ongoing. Nvidia already has a relationship with Hugging Face. The chipmaker participated in its $235 million funding round in 2023 that valued it at $4.5 billion. Hugging Face turned down a $500 million investment offer from Nvidia late last year that would have valued it at $7 billion, the Financial Times previously reported. Hugging Face said at the time it did not want a dominant investor that could sway decisions. Hugging Face sits at the center of the open-source AI ecosystem, hosting millions of AI models and datasets that developers can build on. Owning the platform could give Nvidia a bigger foothold with those developers — and potentially drive more workloads onto its chips. Hugging Face was founded in 2016 by French entrepreneurs Clément Delangue, Julien Chaumond, and Thomas Wolf. But Nvidia ownership could also complicate one of Hugging Face's strengths: its neutrality. The platform supports models and hardware from across the industry, including Nvidia competitors such as AMD and Intel. Have a tip?",
+          "event_refs": [
+            "EV-6b668e4655192209"
+          ],
+          "claim_ref": "CL-7a5ed92342eef2d7",
+          "source_refs": [
+            "SA-bb9c8b9711dd5764"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-96eebba49dbbf422"
+      ]
+    },
+    {
+      "id": "HWC-40c3d6b0661d947b",
+      "snapshotKey": "40c3d6b0661d947b",
+      "snapshotId": "HWS-147102019a8716e9",
+      "eventId": "EV-b1bfe58c3ad65c92",
+      "eventIds": [
+        "EV-b1bfe58c3ad65c92"
+      ],
+      "dataDate": "2026-08-27",
+      "date": "2026-08-27",
+      "title": "undisclosed_subject",
+      "subject": "undisclosed_subject",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-135140dcab09fecb"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-135140dcab09fecb",
+          "fact_type": "product",
+          "observed_at": "2026-08-26T10:07:09.000Z",
+          "subject_entity_id": "",
+          "subject_name": "undisclosed_subject",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "刚刚，北美具身初创 Skild AI 又发布了全新机器人基础模型 S1 ，直接把机器人上下文学习的任务长度拉到了 10分钟往上 。",
+          "event_refs": [
+            "EV-b1bfe58c3ad65c92"
+          ],
+          "claim_ref": "CL-dc2e0596528f3f74",
+          "source_refs": [
+            "SA-d24bafcdea0cdb77"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/08/479834.html",
+      "entityIds": []
+    },
+    {
       "id": "HWC-c08fcad350fc35d8",
       "snapshotKey": "c08fcad350fc35d8",
       "snapshotId": "HWS-461403bbdb929324",
@@ -2995,125 +3584,6 @@
         "EN-49dba228d91e7180",
         "EN-e9bc017140a61e09",
         "EN-6eb8882ab15df1c2"
-      ]
-    },
-    {
-      "id": "HWC-5ef488ccd04ecc0a",
-      "snapshotKey": "5ef488ccd04ecc0a",
-      "snapshotId": "HWS-d94f6134ff165ba9",
-      "eventId": "EV-2b529f1793d4230f",
-      "eventIds": [
-        "EV-2b529f1793d4230f"
-      ],
-      "dataDate": "2026-08-26",
-      "date": "2026-08-26",
-      "title": "Jetson Orin Nano 2",
-      "subject": "NVIDIA",
-      "productNames": [
-        "Jetson Orin Nano 2"
-      ],
-      "hardwareType": "robot",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-de14a896a3524dda"
-        }
-      },
-      "factCount": 3,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-26",
-          "hardware_fact_id": "HWF-f71e61242a8eeb20",
-          "fact_type": "product",
-          "observed_at": "2026-08-25T23:18:40.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [
-            "EN-62fcbf9b9027cde3"
-          ],
-          "product_names": [
-            "Jetson Orin Nano 2"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "NVIDIA 发布机器人计算机 Jetson Orin Nano 2，带来双倍算力或四成节能 - IT之家",
-          "event_refs": [
-            "EV-2b529f1793d4230f"
-          ],
-          "claim_ref": "CL-302d0473c079ec05",
-          "source_refs": [
-            "SA-78fa4ae4097e85bf"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-26",
-          "hardware_fact_id": "HWF-250d262cb233d98a",
-          "fact_type": "product",
-          "observed_at": "2026-08-25T23:18:40.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [
-            "EN-62fcbf9b9027cde3"
-          ],
-          "product_names": [
-            "Jetson Orin Nano 2"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "NVIDIA 发布机器人计算机 Jetson Orin Nano 2，带来双倍算力或四成节能",
-          "event_refs": [
-            "EV-2b529f1793d4230f"
-          ],
-          "claim_ref": "CL-3169967c3ab63a04",
-          "source_refs": [
-            "SA-78fa4ae4097e85bf"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-26",
-          "hardware_fact_id": "HWF-de14a896a3524dda",
-          "fact_type": "product",
-          "observed_at": "2026-08-25T23:18:40.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [
-            "EN-62fcbf9b9027cde3"
-          ],
-          "product_names": [
-            "Jetson Orin Nano 2"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家 8 月 26 日消息，NVIDIA（英伟达）当地时间 25 日宣布推出面向入门级边缘人工智能的 Jetson Orin Nano 2 机器人计算机。",
-          "event_refs": [
-            "EV-2b529f1793d4230f"
-          ],
-          "claim_ref": "CL-6fced5c7596966e1",
-          "source_refs": [
-            "SA-78fa4ae4097e85bf"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/994/303.htm",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-62fcbf9b9027cde3"
       ]
     },
     {
@@ -7532,94 +8002,6 @@
       ]
     },
     {
-      "id": "HWC-5a30e015d5d12a96",
-      "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-62a40b6eb4a8749f",
-      "eventId": "EV-467539fe176a470e",
-      "eventIds": [
-        "EV-467539fe176a470e"
-      ],
-      "dataDate": "2026-08-07",
-      "date": "2026-08-07",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "500",
-          "unit": "$billion",
-          "fact_ref": "HWF-648244327c110ccd"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 4,
-      "changes": [
-        {
-          "date": "2026-08-07",
-          "previousDate": "2026-08-06",
-          "snapshotId": "HWS-62a40b6eb4a8749f",
-          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-06",
-          "previousDate": "2026-08-05",
-          "snapshotId": "HWS-df26b5fa3a51a04d",
-          "previousSnapshotId": "HWS-84ba3d86778ff712",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-05",
-          "previousDate": "2026-08-04",
-          "snapshotId": "HWS-84ba3d86778ff712",
-          "previousSnapshotId": "HWS-6228f201a75148c3",
-          "changedFacts": [
-            "product"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-07",
-          "hardware_fact_id": "HWF-648244327c110ccd",
-          "fact_type": "product",
-          "observed_at": "2026-08-03T00:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "500",
-          "unit": "$billion",
-          "source_quote": "On July 24, 2026, the chipmaker and South Korea’s SK Group unveiled a partnership Nvidia itself is calling worth more than $500 billion, tying Nvidia’s next-generation Vera Rubin chips directly to SK Hynix’s high-bandwidth memory production for years to come.",
-          "event_refs": [
-            "EV-467539fe176a470e"
-          ],
-          "claim_ref": "CL-9762d696cba0c6cd",
-          "source_refs": [
-            "SA-ee00c48ed72f9d91"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-07/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://tech-insider.org/nvidia-sk-hynix-500-billion-memory-deal-2026",
-      "entityIds": [
-        "EN-8d4321d936320802"
-      ]
-    },
-    {
       "id": "HWC-82c56cc41d0db4b4",
       "snapshotKey": "82c56cc41d0db4b4",
       "snapshotId": "HWS-5b1a0752a6b88d14",
@@ -11482,10 +11864,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-26",
-      "funnel_id": "LF-1a3bdfb64af3b0dd",
+      "data_date": "2026-08-27",
+      "funnel_id": "LF-edcbe083754d9cae",
       "lens": "hardware",
-      "date": "2026-08-26",
+      "date": "2026-08-27",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_oem_odm",
@@ -11493,28 +11875,28 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 23,
-      "original_sources": 21,
-      "valid_claims": 16,
+      "raw_documents": 25,
+      "original_sources": 22,
+      "valid_claims": 12,
       "observations": 7,
-      "canonical_events": 5,
+      "canonical_events": 4,
       "blocker_counts": {
-        "source_outside_daily_window": 6,
-        "no_source_bounded_event": 2,
-        "rumor_requires_primary_confirmation": 1,
-        "opinion_without_source_bounded_event": 2,
-        "event_not_ai_relevant": 1,
+        "no_source_bounded_claim": 1,
+        "source_outside_daily_window": 8,
+        "no_source_bounded_event": 4,
+        "opinion_without_source_bounded_event": 1,
         "non_event_or_index_title": 2,
+        "rumor_requires_primary_confirmation": 1,
         "raw_source_quality_block": 3,
         "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.9130434782608695,
-        "valid_claim_rate": 0.6956521739130435,
-        "observation_rate": 0.4375,
-        "event_conversion_rate": 0.3125
+        "original_source_rate": 0.88,
+        "valid_claim_rate": 0.48,
+        "observation_rate": 0.5833333333333334,
+        "event_conversion_rate": 0.3333333333333333
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/monitoring-funnel.json"
     }
   ]
 }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -37,6 +37,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-437a3e3d118f36e9",
       "EV-c74cb30742362fa2",
       "EV-c3ac03a8a0cc3a0e",
       "EV-4e815cac738fa514",
@@ -102,7 +103,7 @@
       "EN-c70eca6b0f88f44d"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-26",
+    "lastSeen": "2026-08-27",
     "relationIds": [
       "REL2-a352560206a1ac3f",
       "REL2-d9ba4c1f870adb8b",
@@ -113,6 +114,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-437a3e3d118f36e9",
         "EV-c74cb30742362fa2",
         "EV-c3ac03a8a0cc3a0e",
         "EV-4e815cac738fa514",
@@ -174,6 +176,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-437a3e3d118f36e9",
+        "dataDate": "2026-08-27",
+        "date": "2026-08-27",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.247 发布：新增 SendFeedback 工具与 /claude-api 成本优化",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cb4754c48f8023d0",
+          "EN-4583e1602d864201"
+        ]
+      },
       {
         "id": "EV-c74cb30742362fa2",
         "dataDate": "2026-08-26",
@@ -1312,6 +1330,9 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-4aff64511cfa8577",
+        "EV-892228f3d092004f",
+        "EV-bd5b6110559f2fda",
         "EV-2b9da4db831578a4",
         "EV-ebe3321efdf8023e",
         "EV-924d196a2412006f",
@@ -1545,6 +1566,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-42c656a8a7e0b362",
         "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-da06805e06990d63",
@@ -1619,14 +1641,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-retail_ecommerce",
+        "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model",
-        "TX-target_user-consumer",
         "TX-target_user-developer",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
@@ -1636,7 +1660,6 @@
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
@@ -1644,7 +1667,6 @@
         "TX-industry-education",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-retail_ecommerce",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-target_user-educator",
@@ -1658,6 +1680,7 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -1672,7 +1695,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -1682,7 +1704,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     }
   ],
   "relationships": [
@@ -1867,6 +1889,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-29f8117648050a66",
         "EV-87c5f6dcc769999c",
         "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
@@ -1953,6 +1976,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-98297329e323dca3",
+        "EV-36b9457d1508a166",
         "EV-6e96760ed7e2ebaa",
         "EV-e3d25b9c0ee541d1",
         "EV-fd62c17a36b4e7e0",
@@ -2234,6 +2259,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-00ffb2c501a37ec8",
         "EV-2c17183b71d8b7d1",
         "EV-ce32954014cb030d",
         "EV-09a29379b6399236",
@@ -2409,6 +2435,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-738e22f0acab814c",
         "EN-bbdefa2950f49882",
         "EN-53a7676bcec5dff6",
         "EN-4cc3012261da02d1",
@@ -2434,7 +2461,6 @@
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-c0fced8f2483e9f5",
-        "EN-738e22f0acab814c",
         "EN-dca6ec9510fc0176",
         "EN-5a28a1a99a417ba5",
         "EN-842fcb5e60989a03",

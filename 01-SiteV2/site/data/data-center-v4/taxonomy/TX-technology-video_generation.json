@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -18,11 +18,13 @@
     "typeLabel": "技术",
     "valueId": "video_generation",
     "eventIds": [
+      "EV-a46f31c7db36c728",
       "EV-d80c43b35418e74d",
       "EV-caffb8981cecae2f",
       "EV-522c339dded54be5",
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
+      "EV-25b88403a237969f",
       "EV-2a30e4a6a8033bcc",
       "EV-c698da7da473b059",
       "EV-2791b442fd32b894",
@@ -41,6 +43,7 @@
       "EV-9766c0f1ac902595"
     ],
     "entityIds": [
+      "EN-50b2676afbe30c83",
       "EN-478676438ee161a3",
       "EN-047364b9be67f665",
       "EN-e1517be14d06cdb7",
@@ -61,9 +64,108 @@
       "HW-68457c8c0a7240ac"
     ],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-08-26"
+    "lastSeen": "2026-08-27"
   },
   "events": [
+    {
+      "id": "EV-a46f31c7db36c728",
+      "dataDate": "2026-08-27",
+      "date": "2026-08-26",
+      "updatedDate": "2026-08-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI视频应用井喷，美图打开新的增长空间",
+      "originalTitle": "",
+      "subject": "Higgsfield",
+      "action": "funding",
+      "object": "4亿美元B轮融资",
+      "metrics": [
+        "4 亿",
+        "3亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-qbitai-rss"
+        ],
+        "claim_refs": [
+          "CL-3060901daec1d366",
+          "CL-99972a5bc9f9735b"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-50b2676afbe30c83"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-50b2676afbe30c83"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-50b2676afbe30c83"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-50b2676afbe30c83",
+        "EN-22b97115d3d8a85d"
+      ],
+      "entityNames": [
+        "Higgsfield",
+        "演语科技6月"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/479895.html",
+      "publisher": "量子位"
+    },
     {
       "id": "EV-d80c43b35418e74d",
       "dataDate": "2026-08-26",
@@ -738,6 +840,141 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/967/217.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-25b88403a237969f",
+      "dataDate": "2026-08-27",
+      "date": "2026-08-26",
+      "updatedDate": "2026-08-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "刚刚，Top级的视频AI免费了！我反手做了个精致版《牛来》",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "刚刚，Top级的视频AI免费了！我反手做了个精致版《牛来》",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f48bef5e1b5b3797"
+      ],
+      "entityNames": [
+        "Pavo"
+      ],
+      "productName": "Pavo",
+      "products": [
+        {
+          "name": "Pavo",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/479670.html",
+      "publisher": "量子位"
     },
     {
       "id": "EV-2a30e4a6a8033bcc",
@@ -2677,6 +2914,37 @@
   ],
   "entities": [
     {
+      "id": "EN-50b2676afbe30c83",
+      "name": "Higgsfield",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a46f31c7db36c728",
+        "EV-1dba157815d84342",
+        "EV-ac5915c4c4e18f5d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-marketing",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-marketing",
+        "TX-target_user-consumer",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-17",
+      "lastSeen": "2026-08-27"
+    },
+    {
       "id": "EN-478676438ee161a3",
       "name": "派早报",
       "entityType": "organization_candidate",
@@ -2696,9 +2964,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_device",
         "TX-use_case-physical_automation",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
@@ -2736,6 +3004,7 @@
         "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-a0d58fe1616d1480",
         "EV-2a30e4a6a8033bcc",
         "EV-c47112d137157d2d",
         "EV-7a600ac040c304a2",
@@ -2795,17 +3064,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-product_form-model",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-video_generation",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
         "TX-use_case-data_analysis",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-ai_device",
         "TX-technology-agentic_execution",
         "TX-technology-computer_use",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation"
+        "TX-technology-mixture_of_experts",
+        "TX-technology-open_weights"
       ],
       "relatedEntityIds": [
         "EN-52e3d014f9a275ea",
@@ -2816,7 +3086,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-25",
+      "lastSeen": "2026-08-27",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -2851,9 +3121,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-video_generation",
         "TX-technology-multimodal",
-        "TX-product_form-chip_accelerator",
-        "TX-technology-video_generation"
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [
         "EN-cf81a61e4eaef17c"
@@ -2924,13 +3194,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-technology-video_generation",
         "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_device",
-        "TX-technology-agentic_execution",
-        "TX-technology-video_generation"
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
         "EN-0c2f714483c404ad",
@@ -2977,10 +3247,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
+        "TX-technology-video_generation",
         "TX-technology-embodied_ai",
         "TX-technology-mixture_of_experts",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation"
+        "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-12",
@@ -3001,8 +3271,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-open_weights",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
@@ -3045,8 +3315,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-speech_audio",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
@@ -3109,8 +3379,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-media_entertainment",
         "TX-product_form-model",
+        "TX-use_case-physical_automation",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
@@ -3119,13 +3391,11 @@
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-technology-video_generation"
+        "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
@@ -3200,9 +3470,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-video_generation",
         "TX-technology-image_generation",
-        "TX-technology-agentic_execution",
-        "TX-technology-video_generation"
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
         "EN-4f96127fdacbb405"

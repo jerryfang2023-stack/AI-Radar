@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-e12c9f7f64dec58c",
+    "name": "ModelBest",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [
+      "面壁智能"
+    ],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-48d22452ef4464fc"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-on_device",
+      "TX-deployment_model-edge_device"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-08-27",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-48d22452ef4464fc"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-48d22452ef4464fc",
+        "dataDate": "2026-08-27",
+        "date": "2026-08-26",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "面壁智能：MiniCPM 系列开源模型全球累计下载量突破 5000 万次",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧",
+            "entityIds": [
+              "EN-e12c9f7f64dec58c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-e12c9f7f64dec58c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e12c9f7f64dec58c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-on_device",
+      "name": "端侧",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "on_device",
+      "eventIds": [
+        "EV-a15da1b52d939967",
+        "EV-736404028b8ad33e",
+        "EV-5bbc509a032b8309",
+        "EV-d5c00f302e1f808c",
+        "EV-7263caa45bbf168e",
+        "EV-3d9aa640411471ea",
+        "EV-48d22452ef4464fc",
+        "EV-cd7ba52564d4091e",
+        "EV-e781e169725006f0",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-7a0f201debe99f2b",
+        "EV-79913a2e72f0269b",
+        "EV-a5efa57f3f744425",
+        "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
+        "EV-712bb6241160c4c5",
+        "EV-f7b60c0c63403f8c",
+        "EV-e28e134345ea5f99",
+        "EV-a736c6c64d106475",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-c5b8faec223a4caf",
+        "EV-4026c95d4c01b96e",
+        "EV-0e2a68efc19bfbaa",
+        "EV-0597e07d7e73051a",
+        "EV-08f736f61f2b46f3",
+        "EV-02186ed7885f68fe",
+        "EV-8692dfde7c3ef5b5",
+        "EV-5613946bdd578a26",
+        "EV-848bdd13f319c516",
+        "EV-dd902b603e2e3dbc",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-a35b80cf9d171015",
+        "EN-48bebf25e5bd5aca",
+        "EN-b5318593e1260f2f",
+        "EN-968e2d5b08687bf4",
+        "EN-87c730bc4f32459e",
+        "EN-e12c9f7f64dec58c",
+        "EN-e3ce9cc5efa9354c",
+        "EN-8d4321d936320802",
+        "EN-74be4cbf48e647b2",
+        "EN-2b6e51bec93e86c1",
+        "EN-e21783b898b55a31",
+        "EN-3309b3b14807f39a",
+        "EN-bbdefa2950f49882",
+        "EN-12a81529bba89666",
+        "EN-44a9bf3b11abea5c",
+        "EN-de6b71bf77ff4299",
+        "EN-3a7bd3e2360a3d29",
+        "EN-dd920a8cd166f486",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-b7dac8ddfad3bea8",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "fdeIds": [
+        "FDE-c846ebc19f50a93f"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-08-27"
+    },
+    {
+      "id": "TX-deployment_model-edge_device",
+      "name": "边缘与端侧",
+      "nodeType": "deployment_model",
+      "typeLabel": "部署形态",
+      "valueId": "edge_device",
+      "eventIds": [
+        "EV-a15da1b52d939967",
+        "EV-736404028b8ad33e",
+        "EV-5bbc509a032b8309",
+        "EV-d5c00f302e1f808c",
+        "EV-7263caa45bbf168e",
+        "EV-3d9aa640411471ea",
+        "EV-48d22452ef4464fc",
+        "EV-cd7ba52564d4091e",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-7a0f201debe99f2b",
+        "EV-79913a2e72f0269b",
+        "EV-a5efa57f3f744425",
+        "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
+        "EV-712bb6241160c4c5",
+        "EV-f7b60c0c63403f8c",
+        "EV-e28e134345ea5f99",
+        "EV-a736c6c64d106475",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-c5b8faec223a4caf",
+        "EV-0e2a68efc19bfbaa",
+        "EV-0597e07d7e73051a",
+        "EV-08f736f61f2b46f3",
+        "EV-02186ed7885f68fe",
+        "EV-8692dfde7c3ef5b5",
+        "EV-5613946bdd578a26",
+        "EV-848bdd13f319c516",
+        "EV-dd902b603e2e3dbc",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-a35b80cf9d171015",
+        "EN-48bebf25e5bd5aca",
+        "EN-b5318593e1260f2f",
+        "EN-968e2d5b08687bf4",
+        "EN-87c730bc4f32459e",
+        "EN-e12c9f7f64dec58c",
+        "EN-e3ce9cc5efa9354c",
+        "EN-74be4cbf48e647b2",
+        "EN-2b6e51bec93e86c1",
+        "EN-e21783b898b55a31",
+        "EN-3309b3b14807f39a",
+        "EN-bbdefa2950f49882",
+        "EN-12a81529bba89666",
+        "EN-44a9bf3b11abea5c",
+        "EN-de6b71bf77ff4299",
+        "EN-3a7bd3e2360a3d29",
+        "EN-dd920a8cd166f486",
+        "EN-8d4321d936320802",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-b7dac8ddfad3bea8",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "fdeIds": [
+        "FDE-c846ebc19f50a93f"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-08-27"
+    }
+  ],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-9965e600e64f311a",
+      "snapshotKey": "9965e600e64f311a",
+      "snapshotId": "HWS-d48749430dccb2a6",
+      "eventId": "EV-48d22452ef4464fc",
+      "eventIds": [
+        "EV-48d22452ef4464fc"
+      ],
+      "dataDate": "2026-08-27",
+      "date": "2026-08-27",
+      "title": "ModelBest",
+      "subject": "ModelBest",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-fb228f6fe28190e4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-fb228f6fe28190e4",
+          "fact_type": "product",
+          "observed_at": "2026-08-26T10:55:00.000Z",
+          "subject_entity_id": "EN-e12c9f7f64dec58c",
+          "subject_name": "ModelBest",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "此外，今年 7 月， 面壁智能联合 OpenBMB 在 2026 世界人工智能大会上发布了最新端侧模型 MiniCPM5-2B ，并完成多款芯片适配。",
+          "event_refs": [
+            "EV-48d22452ef4464fc"
+          ],
+          "claim_ref": "CL-8c82d73633d8c7b9",
+          "source_refs": [
+            "SA-c35d2bb7ae02243f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-e12c9f7f64dec58c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/994/708.htm",
+      "entityIds": [
+        "EN-e12c9f7f64dec58c"
+      ]
+    }
+  ]
+}

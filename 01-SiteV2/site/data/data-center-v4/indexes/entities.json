@@ -5,33 +5,33 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23,
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.1",
-      "generatedAt": "2026-08-26T03:48:10.523Z",
+      "generatedAt": "2026-08-27T04:15:05.297Z",
       "coverage": {
         "startDate": "2017-09-07",
         "endDate": "2027-09-30",
-        "distinctDataDays": 95,
+        "distinctDataDays": 96,
         "dataBatchesByMonth": {
           "2026-05": 8,
           "2026-06": 30,
           "2026-07": 31,
-          "2026-08": 26
+          "2026-08": 27
         }
       },
       "counts": {
-        "entities": 2079,
-        "organizations": 1360,
-        "products": 658,
+        "entities": 2104,
+        "organizations": 1371,
+        "products": 672,
         "people": 61,
         "taxonomyNodes": 113,
-        "relationships": 375
+        "relationships": 373
       },
       "review": {
         "reviewed": 962,
@@ -75,11 +75,11 @@
         "阿里"
       ],
       "tags": [
-        "企业用户",
         "模型",
-        "语音与音频",
-        "多模态",
-        "数据分析"
+        "企业用户",
+        "生产力与企业工作流",
+        "视频生成",
+        "语音与音频"
       ],
       "eventIds": [
         "EV-00514c4ffc2e3cd3",
@@ -99,6 +99,7 @@
         "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-a0d58fe1616d1480",
         "EV-2a30e4a6a8033bcc",
         "EV-c47112d137157d2d",
         "EV-7a600ac040c304a2",
@@ -157,7 +158,7 @@
         "EV-710b145230faa692"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-25",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
@@ -402,10 +403,10 @@
       ],
       "tags": [
         "模型",
+        "视频生成",
         "多模态",
         "软件开发",
-        "代码生成",
-        "医疗与生命科学"
+        "代码生成"
       ],
       "eventIds": [
         "EV-87432dbb99cd6033",
@@ -599,10 +600,10 @@
       "aliases": [],
       "tags": [
         "企业用户",
-        "制造业",
-        "物理自动化",
+        "Physical AI",
         "物流与供应链",
-        "Physical AI"
+        "机器人系统",
+        "物理自动化"
       ],
       "eventIds": [
         "EV-a909450a2d1a1fe1"
@@ -819,12 +820,8 @@
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-07-16",
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "relationIds": [
-        "REL2-7a95bce5aecaba79"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "type": "公司/机构",
       "productIds": []
     },
@@ -874,8 +871,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
         "企业软件平台",
+        "企业级应用",
         "企业用户",
         "生产力与企业工作流",
         "生产力与企业工作流"
@@ -897,10 +894,10 @@
       "aliases": [],
       "tags": [
         "企业用户",
-        "制造业",
-        "物理自动化",
+        "Physical AI",
         "零售与电商",
-        "Physical AI"
+        "机器人系统",
+        "物理自动化"
       ],
       "eventIds": [
         "EV-60d58e2a1f5733f8"
@@ -922,11 +919,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "物流与供应链",
+        "零售与电商",
+        "物理自动化",
         "模型",
-        "基础设施与算力",
-        "开发与部署",
-        "开发者",
-        "制造业"
+        "基础设施与算力"
       ],
       "eventIds": [
         "EV-56da7cceeebc8bcf"
@@ -948,8 +945,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "多模态",
         "物理自动化",
+        "多模态",
         "智能体"
       ],
       "eventIds": [
@@ -979,11 +976,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "媒体与娱乐",
         "企业用户",
+        "汽车与交通",
+        "媒体与娱乐",
         "基础设施与算力",
-        "开发者",
-        "计算基础设施"
+        "开发者"
       ],
       "eventIds": [
         "EV-44ec7c229995ca3c"
@@ -1059,10 +1056,10 @@
       "aliases": [],
       "tags": [
         "企业用户",
-        "制造业",
-        "物理自动化",
+        "Physical AI",
         "汽车与交通",
-        "Physical AI"
+        "机器人系统",
+        "物理自动化"
       ],
       "eventIds": [
         "EV-1188b1585b835fe1"
@@ -1239,10 +1236,10 @@
       "aliases": [],
       "tags": [
         "企业用户",
-        "制造业",
+        "Physical AI",
+        "机器人系统",
         "物理自动化",
-        "餐饮与酒店",
-        "Physical AI"
+        "制造业"
       ],
       "eventIds": [
         "EV-876baa523eb93c4f"
@@ -1265,8 +1262,8 @@
       "aliases": [],
       "tags": [
         "模型",
-        "物理自动化",
         "机器人系统",
+        "物理自动化",
         "视觉语言"
       ],
       "eventIds": [
@@ -1340,10 +1337,10 @@
       "aliases": [],
       "tags": [
         "企业用户",
-        "研究人员",
-        "制造业",
-        "物理自动化",
-        "教育"
+        "Physical AI",
+        "物流与供应链",
+        "机器人系统",
+        "物理自动化"
       ],
       "eventIds": [
         "EV-435d7e7878b0c326",
@@ -1385,10 +1382,10 @@
       "aliases": [],
       "tags": [
         "企业用户",
-        "制造业",
-        "物理自动化",
+        "Physical AI",
         "零售与电商",
-        "Physical AI"
+        "机器人系统",
+        "物理自动化"
       ],
       "eventIds": [
         "EV-d2409770301edc83"
@@ -1532,6 +1529,7 @@
       ],
       "eventIds": [
         "EV-40f14150d6f622f5",
+        "EV-34fd528787e47757",
         "EV-911e7e2722aa5ebc",
         "EV-b613937b7bc1ea64",
         "EV-110d0ab135a08889",
@@ -1542,7 +1540,7 @@
         "EV-1e0871947289ab6e"
       ],
       "firstSeen": "2026-06-13",
-      "lastSeen": "2026-08-26",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-bc77259c5d2eb341",
         "EN-993599624a199fe0"
@@ -1569,10 +1567,10 @@
       "aliases": [],
       "tags": [
         "企业用户",
-        "开发者",
-        "制造业",
-        "物理自动化",
-        "零售与电商"
+        "Physical AI",
+        "零售与电商",
+        "机器人系统",
+        "物理自动化"
       ],
       "eventIds": [
         "EV-cec68369662236fd"
@@ -1702,11 +1700,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "个人用户",
         "生产力与企业工作流",
+        "零售与电商",
+        "个人用户",
         "行业应用",
-        "AI 设备",
-        "零售与电商"
+        "AI 设备"
       ],
       "eventIds": [
         "EV-02882e6f5e1902c6",
@@ -1734,9 +1732,9 @@
       ],
       "tags": [
         "模型",
+        "零售与电商",
         "AI 基础设施软件",
-        "AI 设备",
-        "零售与电商"
+        "AI 设备"
       ],
       "eventIds": [
         "EV-584212d254d882bc",
@@ -1762,10 +1760,10 @@
       "aliases": [],
       "tags": [
         "模型",
-        "基础设施与算力",
-        "开发与部署",
+        "汽车与交通",
         "模型",
-        "开发者"
+        "基础设施与算力",
+        "开发与部署"
       ],
       "eventIds": [
         "EV-dcbe916c6138e5cb",
@@ -1773,6 +1771,7 @@
         "EV-a00763037a94d512",
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
+        "EV-bd5b6110559f2fda",
         "EV-026b9b4462b4adc8",
         "EV-3ebefd784ba0afd0",
         "EV-ba20c6e0144aabb9",
@@ -1806,6 +1805,7 @@
         "EV-7f9631d793292d07",
         "EV-8993e021ac17df4a",
         "EV-67a69ab5b20da3c1",
+        "EV-00e6152baff47d4d",
         "EV-649481503cdb7736",
         "EV-75b1a6a12ce2f03f",
         "EV-2449fe665b666581",
@@ -1814,7 +1814,7 @@
         "EV-933294dfb2d19a67"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-7d1507284a5757ca"
       ],
@@ -1831,10 +1831,10 @@
       "aliases": [],
       "tags": [
         "模型",
+        "机器人系统",
+        "物理自动化",
         "AI 计算系统",
-        "软件开发",
-        "制造业",
-        "芯片与加速器"
+        "软件开发"
       ],
       "eventIds": [
         "EV-a0ca934522418c0b",
@@ -1868,7 +1868,7 @@
         "EV-d709599eddf5db04"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-26",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
         "EN-45c52af0feb0f285",
@@ -1903,11 +1903,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "企业软件平台",
         "企业用户",
-        "客户支持",
-        "模型",
-        "基础设施与算力"
+        "生产力与企业工作流",
+        "零售与电商"
       ],
       "eventIds": [
         "EV-fe49d2ee580cfea2",
@@ -1939,6 +1939,9 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-4aff64511cfa8577",
+        "EV-892228f3d092004f",
+        "EV-bd5b6110559f2fda",
         "EV-2b9da4db831578a4",
         "EV-ebe3321efdf8023e",
         "EV-924d196a2412006f",
@@ -2172,6 +2175,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-42c656a8a7e0b362",
         "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-da06805e06990d63",
@@ -2245,10 +2249,11 @@
         "EV-8654cc0faeb02d14"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-26",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -2263,7 +2268,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -2275,6 +2279,7 @@
       "relationIds": [
         "REL2-02bdd133e9353ff7",
         "REL2-778989c8b3d8bcda",
+        "REL2-5a2b9cfd6f0b1ca6",
         "REL2-6c33e8063218608e",
         "REL2-407abfa4e497ae3f",
         "REL2-7b714ad4b1e6a6da",
@@ -2336,6 +2341,7 @@
       "type": "公司/机构",
       "productIds": [
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-163fa867e7ef6ee6",
@@ -2410,6 +2416,7 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-6b9a76ea8a03b09f",
         "EV-597a6d51533fe5d6",
         "EV-e3da5e799e746408",
         "EV-f7b81752b1fadd87",
@@ -2489,7 +2496,7 @@
         "EV-1b92b6c835ce240c"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-08-21",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-e463d05a14e8697f",
         "EN-7df09a7717ef2feb",
@@ -2741,8 +2748,8 @@
       "aliases": [],
       "tags": [
         "模型",
-        "多模态",
-        "物理自动化"
+        "物理自动化",
+        "多模态"
       ],
       "eventIds": [
         "EV-58457ebde013a438",
@@ -2791,6 +2798,7 @@
       "aliases": [],
       "tags": [],
       "eventIds": [
+        "EV-bd5b6110559f2fda",
         "EV-8fcb52bb6ec980af",
         "EV-31782f0824ae1db1",
         "EV-6eb9a23be3117421",
@@ -2801,7 +2809,7 @@
         "EV-89bdda008227fb6b"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-08-22",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-f4bec299df3f4f27",
         "EN-7d3194f79e645c42"
@@ -2821,9 +2829,9 @@
         "字节跳动"
       ],
       "tags": [
+        "视频生成",
         "图像生成",
-        "智能体",
-        "视频生成"
+        "智能体"
       ],
       "eventIds": [
         "EV-97fdf068afbbe555",
@@ -3137,9 +3145,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "开发者",
-        "物理自动化",
         "零售与电商",
+        "物理自动化",
+        "开发者",
         "具身智能"
       ],
       "eventIds": [
@@ -3185,9 +3193,9 @@
       "aliases": [],
       "tags": [
         "模型",
+        "模型",
         "基础设施与算力",
         "开发与部署",
-        "模型",
         "开发者"
       ],
       "eventIds": [
@@ -3316,9 +3324,9 @@
       "aliases": [],
       "tags": [
         "模型",
+        "模型",
         "基础设施与算力",
         "开发与部署",
-        "模型",
         "开发者"
       ],
       "eventIds": [
@@ -3338,11 +3346,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
         "企业软件平台",
+        "企业级应用",
         "企业用户",
-        "软件开发",
-        "生产力与企业工作流"
+        "生产力与企业工作流",
+        "软件开发"
       ],
       "eventIds": [
         "EV-1a6688afdfd108ef"
@@ -3436,10 +3444,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "企业用户",
         "基础设施与算力",
         "开发与部署",
-        "模型",
         "开发者"
       ],
       "eventIds": [
@@ -3556,15 +3564,13 @@
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "sourceType": "organization_candidate",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "tags": [
-        "企业软件平台",
-        "企业用户",
-        "基础设施与算力",
         "模型",
-        "开发者"
+        "企业软件平台",
+        "终端 AI 应用",
+        "企业用户",
+        "生产力与企业工作流"
       ],
       "eventIds": [
         "EV-fe49d2ee580cfea2",
@@ -3585,6 +3591,7 @@
         "EV-4a162c41bb82f325",
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
+        "EV-bd5b6110559f2fda",
         "EV-7690a249e07ddac8",
         "EV-a4b7cd533b0b34dc",
         "EV-fd329b4350f404ef",
@@ -3611,6 +3618,9 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-1d646122cb4e23a5",
+        "EV-24bb8055449763ae",
+        "EV-df9b78627b91c29f",
         "EV-6e96760ed7e2ebaa",
         "EV-e3d25b9c0ee541d1",
         "EV-897c0d5106398802",
@@ -3772,21 +3782,18 @@
         "EV-ecfc552af7344d65"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-26",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -3794,52 +3801,39 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "relationIds": [
-        "REL2-a675a7f7bd02161e",
         "REL2-f6e62982e0b3d7d6",
         "REL2-a5a15f09d4da8135",
         "REL2-066894debed9bb20",
-        "REL2-9ad2c97e765910d9",
-        "REL2-ddbd67ee39ac2096",
         "REL2-de5487ce28a724fb",
         "REL2-fcedf12f07ebc6c2",
         "REL2-5d24ca1eeaa32514",
         "REL2-70d05a81606b3589",
         "REL2-d68bd82241b5ba02",
-        "REL2-f92ee2f782a8185b",
         "REL2-6e0bd52053c02359",
         "REL2-c2d351d111dce63d",
         "REL2-1967b453be7e7724",
-        "REL2-638b55900181fbf2",
         "REL2-65389a75e3085862",
         "REL2-a973fd9783c033d1",
         "REL2-c1743ef4560536bd",
         "REL2-eba841d5627207a4",
-        "REL2-7a95bce5aecaba79",
         "REL2-80e7d430efc92a5c",
         "REL2-3831db0cf6e33a54",
-        "REL2-44ebd8a7378accce",
         "REL2-d205049958061bb1",
         "REL2-d38107a2fe8bacd9",
-        "REL2-4aa175c42153e014",
         "REL2-572d299c04663eb3",
         "REL2-653e76cf1e48b6fd",
         "REL2-0637ce4d20d93f49"
       ],
       "type": "公司/机构",
       "productIds": [
-        "EN-307557d99a7eb726",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-18f0900d6c487f59",
-        "EN-31055a8d9856fce4",
         "EN-18f0900d6c487f59",
         "EN-18f0900d6c487f59",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
-        "EN-01f1074bb52ff605",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-01f1074bb52ff605",
@@ -3849,8 +3843,6 @@
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
         "EN-d56aa2f9908f566a",
-        "EN-d56aa2f9908f566a",
-        "EN-4baef0e41cbd7ae2",
         "EN-4baef0e41cbd7ae2",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2"
@@ -3870,6 +3862,7 @@
         "EV-b4b5d141dac164c2",
         "EV-6e4dd5111dfaae9c",
         "EV-36a9e4e908249381",
+        "EV-24bb8055449763ae",
         "EV-271b304f0a16b6db",
         "EV-d12aa40eff40c97e",
         "EV-9254af7aaedaafbe",
@@ -3881,7 +3874,7 @@
         "EV-51dfd0d541380500"
       ],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-08-05",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-bbdefa2950f49882",
         "EN-96eebba49dbbf422",
@@ -3905,11 +3898,11 @@
         "DeepMind"
       ],
       "tags": [
-        "媒体与娱乐",
         "模型",
-        "图像生成",
-        "语音与音频",
-        "多模态"
+        "物理自动化",
+        "视频生成",
+        "媒体与娱乐",
+        "图像生成"
       ],
       "eventIds": [
         "EV-55e7c286e95be405",
@@ -4033,10 +4026,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "媒体与娱乐",
-        "个人用户",
-        "内容创作",
         "终端 AI 应用",
+        "内容创作",
+        "个人用户",
+        "媒体与娱乐",
         "行业应用"
       ],
       "eventIds": [
@@ -4124,11 +4117,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业软件平台",
         "模型",
+        "企业软件平台",
+        "零售与电商",
         "语音与音频",
-        "电信",
-        "安全运营"
+        "电信"
       ],
       "eventIds": [
         "EV-32d7c52f89d74e88",
@@ -4142,6 +4135,7 @@
         "EV-d04d03b37046f0ad",
         "EV-6272444f30281858",
         "EV-b95539d17772a4ce",
+        "EV-91d15b11f487760c",
         "EV-c7d0b810ac3b3d4e",
         "EV-57fcbef33071910b",
         "EV-37b18c0341c66c08",
@@ -4153,7 +4147,7 @@
         "EV-2f56b99f72ad6c4f"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-08-20",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
         "EN-dc6c28a2123e8efb"
@@ -4218,11 +4212,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
         "企业软件平台",
+        "企业级应用",
         "企业用户",
-        "销售",
-        "制造业"
+        "生产力与企业工作流",
+        "物流与供应链"
       ],
       "eventIds": [
         "EV-b29878fdf79f2ac5"
@@ -4245,6 +4239,7 @@
         "采购与供应链"
       ],
       "eventIds": [
+        "EV-6b668e4655192209",
         "EV-ccbf97fdf4dc11d0",
         "EV-2069f6a931b8c9d6",
         "EV-02882e6f5e1902c6",
@@ -4381,7 +4376,7 @@
         "EV-8654cc0faeb02d14"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-28",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-8d323d8bba783aa3",
         "EN-c70eca6b0f88f44d"
@@ -4499,8 +4494,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业软件平台",
         "模型",
+        "企业软件平台",
         "生产力与企业工作流",
         "智能体",
         "RAG"
@@ -4635,11 +4630,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "媒体与娱乐",
-        "企业级应用",
+        "模型",
         "企业软件平台",
-        "企业用户",
-        "销售"
+        "企业级应用",
+        "终端 AI 应用",
+        "企业用户"
       ],
       "eventIds": [
         "EV-c1295b8f58024ff6",
@@ -4666,6 +4661,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-b1b396e6ba2fe208",
         "EV-fd62c17a36b4e7e0",
         "EV-6fdbcd14c6a633b6",
         "EV-7b0ff6657c0e0483",
@@ -4720,6 +4716,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-13c5fc1373115b65",
         "EV-1231169f9fddbee6",
         "EV-735fac8d2be356bb",
         "EV-9465c27567216dfa",
@@ -4736,7 +4733,7 @@
         "EV-8fcecabca2e92b40"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-26",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-af54bb0c9a39eb30",
         "EN-62503b0d3dcfd096",
@@ -4776,7 +4773,9 @@
       "id": "EN-9fbf261b62c1d7c0",
       "name": "Microsoft",
       "sourceType": "organization_candidate",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "tags": [
         "企业用户",
         "个人用户",
@@ -4785,6 +4784,8 @@
         "数据分析"
       ],
       "eventIds": [
+        "EV-6b668e4655192209",
+        "EV-b382525eb51777b9",
         "EV-9ed6a759555d7e77",
         "EV-2a78dd5feb40a78a",
         "EV-97854226b6f43a95",
@@ -4812,7 +4813,6 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
-        "EV-d2247eeac1478994",
         "EV-decbf1a34be68603",
         "EV-6272444f30281858",
         "EV-f55d16df5b5fecb2",
@@ -4910,31 +4910,46 @@
         "EV-7580a050ca19a8ae"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-26",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "relationIds": [
+        "REL2-62f415d53b9e1307",
+        "REL2-dceee7ada64357c1",
+        "REL2-899fe78a63eda569",
         "REL2-4410cf5eef104c6e",
+        "REL2-a2d037d3ca0eff3e",
         "REL2-8dc67631418aa4d4",
         "REL2-9fd72463ce6686f3",
         "REL2-c2250eeea2122198",
         "REL2-fdbf7b1aedf4d9ef",
         "REL2-9f6eb62bdd6f6a31",
         "REL2-10ba411040225060",
-        "REL2-e9ef6e697ef06f93"
+        "REL2-e9ef6e697ef06f93",
+        "REL2-9795f8e6814470a6"
       ],
       "type": "公司/机构",
       "productIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-d2f4e09cb01afa3c"
+        "EN-d2f4e09cb01afa3c",
+        "EN-10fce287b4b1464c"
       ]
     },
     {
@@ -4943,9 +4958,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "视频生成",
         "多模态",
-        "芯片与加速器",
-        "视频生成"
+        "芯片与加速器"
       ],
       "eventIds": [
         "EV-0121f0a9e9a975ec",
@@ -5012,11 +5027,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "企业软件平台",
         "企业用户",
-        "模型",
-        "基础设施与算力",
-        "开发与部署"
+        "生产力与企业工作流",
+        "汽车与交通"
       ],
       "eventIds": [
         "EV-55e7c286e95be405",
@@ -5085,11 +5100,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业用户",
         "模型",
-        "基础设施与算力",
-        "开发与部署",
-        "模型"
+        "企业用户",
+        "生产力与企业工作流",
+        "模型",
+        "基础设施与算力"
       ],
       "eventIds": [
         "EV-0e4bddfd5c129618",
@@ -5150,10 +5165,10 @@
       "aliases": [],
       "tags": [
         "模型",
-        "基础设施与算力",
-        "开发与部署",
+        "物理自动化",
         "模型",
-        "开发者"
+        "基础设施与算力",
+        "开发与部署"
       ],
       "eventIds": [
         "EV-c7ba7b093a1a3b94",
@@ -5180,11 +5195,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
         "企业软件平台",
+        "企业级应用",
+        "终端 AI 应用",
         "企业用户",
-        "个人用户",
-        "开发者"
+        "生产力与企业工作流"
       ],
       "eventIds": [
         "EV-7a85e21802efd8b2",
@@ -5206,13 +5221,15 @@
         "英伟达"
       ],
       "tags": [
-        "媒体与娱乐",
-        "企业用户",
-        "客户支持",
         "模型",
-        "基础设施与算力"
+        "企业用户",
+        "汽车与交通",
+        "物流与供应链",
+        "零售与电商"
       ],
       "eventIds": [
+        "EV-6b668e4655192209",
+        "EV-b382525eb51777b9",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
@@ -5237,6 +5254,8 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-4aff64511cfa8577",
+        "EV-aa7f1c2c6933fdb1",
         "EV-fb33ae9b7f9454bf",
         "EV-0121f0a9e9a975ec",
         "EV-49119ae718691877",
@@ -5294,6 +5313,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-f41fe4d6189853cd",
+        "EV-127a04dfedc04e0c",
         "EV-2b529f1793d4230f",
         "EV-470c66c0e334794e",
         "EV-52c6ed0bb40311d1",
@@ -5388,6 +5409,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-00e6152baff47d4d",
         "EV-569e956899258a54",
         "EV-a3ccf873058bb406",
         "EV-36a49fa0e0b96d95",
@@ -5408,7 +5430,7 @@
         "EV-0b49d637d7c07ce0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-26",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
@@ -5507,11 +5529,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "媒体与娱乐",
-        "企业级应用",
+        "模型",
         "企业软件平台",
-        "企业用户",
-        "客户支持"
+        "企业级应用",
+        "终端 AI 应用",
+        "企业用户"
       ],
       "eventIds": [
         "EV-fe49d2ee580cfea2",
@@ -5812,6 +5834,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-00ffb2c501a37ec8",
         "EV-16a0fe419e75402b",
         "EV-569e956899258a54",
         "EV-bce258f8f915ff5f",
@@ -5819,7 +5842,6 @@
         "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-ce32954014cb030d",
-        "EV-00ffb2c501a37ec8",
         "EV-3b30eda1326a6fb1",
         "EV-da06805e06990d63",
         "EV-0c00a6c681f22b98",
@@ -5890,7 +5912,7 @@
         "EV-e8e47f4bb528e107"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-26",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
@@ -6072,9 +6094,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "模型",
         "基础设施与算力",
         "开发与部署",
-        "模型",
         "开发者",
         "软件开发"
       ],
@@ -6154,11 +6176,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "物理自动化",
         "基础设施与算力",
         "开发与部署",
         "开发者",
-        "软件开发",
-        "物理自动化"
+        "软件开发"
       ],
       "eventIds": [
         "EV-7f3298069258b3ea",
@@ -6181,10 +6203,10 @@
       ],
       "tags": [
         "企业级应用",
-        "企业用户",
         "终端 AI 应用",
-        "制造业",
-        "生产力与企业工作流"
+        "企业用户",
+        "生产力与企业工作流",
+        "汽车与交通"
       ],
       "eventIds": [
         "EV-39b075c62ba4e927"
@@ -6202,11 +6224,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
         "企业软件平台",
+        "企业级应用",
         "企业用户",
-        "数据分析",
-        "生产力与企业工作流"
+        "生产力与企业工作流",
+        "物流与供应链"
       ],
       "eventIds": [
         "EV-acf1bcb321414706"
@@ -6224,10 +6246,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业用户",
-        "数据分析",
         "终端 AI 应用",
+        "企业用户",
         "生产力与企业工作流",
+        "数据分析",
         "行业应用"
       ],
       "eventIds": [
@@ -6247,8 +6269,8 @@
       "aliases": [],
       "tags": [
         "企业软件平台",
-        "政府与公共部门",
         "生产力与企业工作流",
+        "政府与公共部门",
         "智能体"
       ],
       "eventIds": [
@@ -6389,8 +6411,8 @@
       "aliases": [],
       "tags": [
         "企业级应用",
-        "开发者",
         "终端 AI 应用",
+        "开发者",
         "软件开发",
         "软件开发与编程工具"
       ],
@@ -6444,10 +6466,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "基础设施与算力",
         "模型",
-        "开发者",
         "内容创作",
+        "基础设施与算力",
+        "开发者",
         "智能体"
       ],
       "eventIds": [
@@ -6545,11 +6567,11 @@
         "MCP AI"
       ],
       "tags": [
-        "媒体与娱乐",
         "企业软件平台",
         "企业用户",
-        "基础设施与算力",
-        "开发者"
+        "生产力与企业工作流",
+        "汽车与交通",
+        "物流与供应链"
       ],
       "eventIds": [
         "EV-7817dc69d5228cbb",
@@ -6768,11 +6790,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业用户",
         "模型",
-        "基础设施与算力",
-        "开发与部署",
-        "模型"
+        "企业用户",
+        "内容创作",
+        "模型",
+        "基础设施与算力"
       ],
       "eventIds": [
         "EV-e3382d1c1d7db751",
@@ -7004,11 +7026,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业用户",
         "模型",
-        "个人用户",
-        "航空航天与国防",
-        "电信"
+        "企业用户",
+        "Physical AI",
+        "物流与供应链",
+        "机器人系统"
       ],
       "eventIds": [
         "EV-fe49d2ee580cfea2",
@@ -7227,10 +7249,10 @@
       "aliases": [],
       "tags": [
         "模型",
+        "零售与电商",
         "制造业",
         "芯片与加速器",
-        "医疗与生命科学",
-        "智能体"
+        "医疗与生命科学"
       ],
       "eventIds": [
         "EV-72e7f5cf283f16b8",
@@ -7401,11 +7423,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "媒体与娱乐",
-        "企业级应用",
         "企业软件平台",
+        "企业级应用",
         "企业用户",
-        "航空航天与国防"
+        "生产力与企业工作流",
+        "汽车与交通"
       ],
       "eventIds": [
         "EV-e31a6bf3c0a979f8"
@@ -7488,11 +7510,11 @@
         "AI Silicon"
       ],
       "tags": [
+        "汽车与交通",
         "基础设施与算力",
         "开发者",
         "硬件与算力",
-        "航空航天与国防",
-        "电信"
+        "航空航天与国防"
       ],
       "eventIds": [
         "EV-b2d94511e4b4dfc8",
@@ -7603,10 +7625,10 @@
       "aliases": [],
       "tags": [
         "企业用户",
+        "生产力与企业工作流",
         "基础设施与算力",
         "开发与部署",
-        "航空航天与国防",
-        "政府与公共部门"
+        "航空航天与国防"
       ],
       "eventIds": [
         "EV-82e77abb1a77f81c"
@@ -7641,10 +7663,10 @@
       "aliases": [],
       "tags": [
         "企业软件平台",
+        "零售与电商",
         "电信",
         "专业服务",
-        "制造业",
-        "医疗与生命科学"
+        "制造业"
       ],
       "eventIds": [
         "EV-6ce6b9c9780b97d9"
@@ -7948,10 +7970,11 @@
         "开放权重"
       ],
       "eventIds": [
+        "EV-32363cb5970acdea",
         "EV-e2da1aafabb3e09c"
       ],
       "firstSeen": "2026-06-18",
-      "lastSeen": "2026-06-28",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-bc1fc5140040180e"
       ],
@@ -9628,8 +9651,8 @@
       "aliases": [],
       "tags": [
         "模型",
-        "物理自动化",
-        "机器人系统"
+        "机器人系统",
+        "物理自动化"
       ],
       "eventIds": [
         "EV-c834a9d33a86373c"
@@ -10241,6 +10264,7 @@
         "工具调用"
       ],
       "eventIds": [
+        "EV-437a3e3d118f36e9",
         "EV-c74cb30742362fa2",
         "EV-c3ac03a8a0cc3a0e",
         "EV-4e815cac738fa514",
@@ -10297,7 +10321,7 @@
         "EV-9576bebb698a4c66"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-26",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d"
       ],
@@ -10334,6 +10358,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "relationIds": [
+        "REL2-5a2b9cfd6f0b1ca6",
         "REL2-8f5f9424d107b468"
       ],
       "legacyIds": [
@@ -10883,13 +10908,21 @@
       ],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-23",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-899fe78a63eda569"
+      ],
       "legacyIds": [
         "PD-9b794bcc23cd8b"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "产品/服务"
     },
     {
@@ -11021,11 +11054,12 @@
       ],
       "tags": [],
       "eventIds": [
+        "EV-9ebf44a367959005",
         "EV-ab93c7a2f4178e93",
         "EV-2059f42c7b2aff44"
       ],
       "firstSeen": "2026-07-04",
-      "lastSeen": "2026-07-28",
+      "lastSeen": "2026-08-27",
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d"
       ],
@@ -11256,7 +11290,6 @@
       ],
       "relationIds": [
         "REL2-1bac7c6922a7a98b",
-        "REL2-44ebd8a7378accce",
         "REL2-d205049958061bb1",
         "REL2-d38107a2fe8bacd9"
       ],
@@ -11607,13 +11640,21 @@
       ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-05-23",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-9795f8e6814470a6"
+      ],
       "legacyIds": [
         "PD-5445e4d3df5873"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "模型"
     },
     {
@@ -11948,21 +11989,13 @@
       ],
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-22",
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "relationIds": [
-        "REL2-ddbd67ee39ac2096"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-66c08d6b6bbf5b"
       ],
-      "companyIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "companyNames": [
-        "Google"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -11982,7 +12015,6 @@
         "EN-bbdefa2950f49882"
       ],
       "relationIds": [
-        "REL2-4aa175c42153e014",
         "REL2-572d299c04663eb3",
         "REL2-653e76cf1e48b6fd"
       ],
@@ -12020,7 +12052,6 @@
       "relationIds": [
         "REL2-a5a15f09d4da8135",
         "REL2-284835caff7e4288",
-        "REL2-9ad2c97e765910d9",
         "REL2-de5487ce28a724fb",
         "REL2-fcedf12f07ebc6c2"
       ],
@@ -12137,21 +12168,13 @@
       ],
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-08-03",
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "relationIds": [
-        "REL2-a675a7f7bd02161e"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-ec7b7e08cb71aa"
       ],
-      "companyIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "companyNames": [
-        "Google"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -13919,13 +13942,21 @@
       ],
       "firstSeen": "2026-07-24",
       "lastSeen": "2026-07-24",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-dceee7ada64357c1"
+      ],
       "legacyIds": [
         "PD-e7515051f4d2d8"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "模型"
     },
     {
@@ -13979,13 +14010,21 @@
       ],
       "firstSeen": "2026-07-24",
       "lastSeen": "2026-07-24",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-62f415d53b9e1307"
+      ],
       "legacyIds": [
         "PD-fe5dceb7529446"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "模型"
     },
     {
@@ -14459,7 +14498,6 @@
         "EN-bbdefa2950f49882"
       ],
       "relationIds": [
-        "REL2-f92ee2f782a8185b",
         "REL2-65389a75e3085862",
         "REL2-c1743ef4560536bd"
       ],
@@ -14496,7 +14534,6 @@
       ],
       "relationIds": [
         "REL2-1967b453be7e7724",
-        "REL2-638b55900181fbf2",
         "REL2-a973fd9783c033d1"
       ],
       "legacyIds": [
@@ -15690,8 +15727,8 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "多模态",
         "物理自动化",
+        "多模态",
         "智能体"
       ],
       "eventIds": [
@@ -17039,13 +17076,21 @@
       ],
       "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-17",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-a2d037d3ca0eff3e"
+      ],
       "legacyIds": [
         "PD-ef192d6c2286e4"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "产品/服务"
     },
     {
@@ -17334,7 +17379,7 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-06",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
@@ -17353,6 +17398,7 @@
         }
       ],
       "viewpointIds": [
+        "2092466424694649066",
         "2077857617859535112",
         "2077782120232350205",
         "2077526010753581156",
@@ -17433,12 +17479,12 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
       "handle": "adityaag",
-      "role": "SouthPkCommons 普通合伙人，Bevel_Health 联合创始人",
+      "role": "普通合伙人SPC，Bevel_Health联合创始人",
       "roleTitle": "普通合伙人、联合创始人",
       "organization": "South Park Commons",
       "organizationNames": [
@@ -17453,6 +17499,7 @@
         }
       ],
       "viewpointIds": [
+        "2092290497826173186",
         "2077983435000324125",
         "2076821102194721167",
         "2076047290083733539",
@@ -17467,11 +17514,11 @@
       "translations": {
         "zh-CN": {
           "role": {
-            "text": "SouthPkCommons 普通合伙人，Bevel_Health 联合创始人",
-            "source_hash": "863f0a9db9d470151f3a2eef2fd00fe6b49f51ba014a3290d274de07159c5bc1",
+            "text": "普通合伙人SPC，Bevel_Health联合创始人",
+            "source_hash": "fa8c018cc5892147b1150b4688082b803b092c6c36271aba19c005401d038478",
             "provider": "deepseek",
             "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:52:37.636Z",
+            "translated_at": "2026-08-22T06:45:21.648Z",
             "status": "translated"
           },
           "roleTitle": {
@@ -18083,7 +18130,7 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-19",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
@@ -18102,6 +18149,7 @@
         }
       ],
       "viewpointIds": [
+        "2092337156455051345",
         "2077933568282755145",
         "2074925531519468012",
         "2074258446686536167",
@@ -18310,7 +18358,7 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-05",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-08-25",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
@@ -18329,6 +18377,7 @@
         }
       ],
       "viewpointIds": [
+        "2092277639591461056",
         "2077839678636732809",
         "2077825318992429286",
         "2077196796586025327",
@@ -18735,7 +18784,7 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-06",
-      "lastSeen": "2026-08-24",
+      "lastSeen": "2026-07-16",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
@@ -18754,7 +18803,6 @@
         }
       ],
       "viewpointIds": [
-        "2091742825042030681",
         "2077626565517590618",
         "2075975184293765564",
         "2075445455438385255",
@@ -18864,7 +18912,7 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-05",
-      "lastSeen": "2026-08-24",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
@@ -18883,8 +18931,8 @@
         }
       ],
       "viewpointIds": [
-        "2091671326897713424",
-        "2091583525661384813",
+        "2092382653161107534",
+        "2092352411839193234",
         "2077900518404321759",
         "2077870043833229692",
         "2077559189015335019",
@@ -19383,12 +19431,12 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-07",
-      "lastSeen": "2026-08-24",
+      "lastSeen": "2026-07-17",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
       "handle": "realmadhuguru",
-      "role": "Meta AI高级总监；曾任Google——领导Gemini、Veo、Nano Banana项目。",
+      "role": "Sr Director, AI at Meta; Prev: Google - Gemini, Veo, Nano Banana.",
       "roleTitle": "AI高级总监",
       "organization": "Meta",
       "organizationNames": [
@@ -19402,7 +19450,6 @@
         }
       ],
       "viewpointIds": [
-        "2091684812012875981",
         "2077885624607228018",
         "2077414312180932668",
         "2077413491586253025",
@@ -19425,14 +19472,6 @@
       "founderEvidence": [],
       "translations": {
         "zh-CN": {
-          "role": {
-            "text": "Meta AI高级总监；曾任Google——领导Gemini、Veo、Nano Banana项目。",
-            "source_hash": "e41aa3b927d65a918bd64e68260680efa5dc39506e9e49baf643e21c425bf6d0",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:59.800Z",
-            "status": "translated"
-          },
           "roleTitle": {
             "text": "AI高级总监",
             "source_hash": "43cb2b5c41ae94ccf51b23da2ed3bd67232eeffbb773bcd9b5e09efd52bc9bc1",
@@ -19675,12 +19714,12 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-14",
-      "lastSeen": "2026-08-24",
+      "lastSeen": "2026-07-14",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
       "handle": "thenanyu",
-      "role": "产品爱好者",
+      "role": "产品负责人（线性）",
       "roleTitle": "产品负责人",
       "organization": "Linear",
       "organizationNames": [
@@ -19694,7 +19733,6 @@
         }
       ],
       "viewpointIds": [
-        "2091559951739277451",
         "2076783865528516971",
         "2074258147015897357",
         "2073920959011074292",
@@ -19713,11 +19751,11 @@
       "translations": {
         "zh-CN": {
           "role": {
-            "text": "产品爱好者",
-            "source_hash": "64235cae20c65018dc3d5ff6a64d31011be284ae248da72e8e7bc69895b9d83a",
+            "text": "产品负责人（线性）",
+            "source_hash": "5994220269c61236330dd2cf2a5f664fc2445bb50f5b45e39d251cf8e1044d00",
             "provider": "deepseek",
             "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-25T03:21:08.142Z",
+            "translated_at": "2026-08-14T07:17:59.800Z",
             "status": "translated"
           },
           "roleTitle": {
@@ -19783,7 +19821,7 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-06",
-      "lastSeen": "2026-07-15",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
@@ -19802,6 +19840,7 @@
         }
       ],
       "viewpointIds": [
+        "2092384774459674957",
         "2077144910508257317",
         "2076878668149002669",
         "2076458876816540144",
@@ -19961,7 +20000,7 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-05",
-      "lastSeen": "2026-08-24",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
@@ -19972,8 +20011,8 @@
       "organizationNames": [],
       "affiliationEvidence": [],
       "viewpointIds": [
-        "2091586298779955512",
-        "2091529714104168870",
+        "2092281120650047746",
+        "2092249012913258946",
         "2077968093406707970",
         "2077966904938127502",
         "2077572198655754583",
@@ -20439,13 +20478,11 @@
       "affiliationEvidence": [],
       "viewpointIds": [
         "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+        "https://simonwillison.net/2026/Aug/23/drew-breunig/",
         "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
         "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
         "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
         "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
-        "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
-        "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
-        "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
         "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
         "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
         "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
@@ -20658,7 +20695,7 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-05",
-      "lastSeen": "2026-07-17",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
@@ -20669,6 +20706,7 @@
       "organizationNames": [],
       "affiliationEvidence": [],
       "viewpointIds": [
+        "2092492963435946494",
         "2077938877407633857",
         "2076809831328157758",
         "2076155833428431012",
@@ -20720,12 +20758,12 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-09",
-      "lastSeen": "2026-07-16",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
       "handle": "trq212",
-      "role": "Claude Code anthropicai。此前YC W20、southpkcommons、medialab",
+      "role": "Claude Code anthropicai。前YC W20、spc、medialab成员",
       "roleTitle": "Claude Code",
       "organization": "Anthropic",
       "organizationNames": [
@@ -20739,6 +20777,7 @@
         }
       ],
       "viewpointIds": [
+        "2092303682616627311",
         "2077539537992229076",
         "2077490092290253259",
         "2077051280267399550",
@@ -20767,11 +20806,11 @@
       "translations": {
         "zh-CN": {
           "role": {
-            "text": "Claude Code anthropicai。此前YC W20、southpkcommons、medialab",
-            "source_hash": "b3bae8e69cdc27289f5388c380c435902edd533fc60dd7dd3a3be50549712699",
+            "text": "Claude Code anthropicai。前YC W20、spc、medialab成员",
+            "source_hash": "7fc6b05128499695a48abfc8dfa0de34327589fecddef460bec548c5f9c7e136",
             "provider": "deepseek",
             "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:59.800Z",
+            "translated_at": "2026-08-15T04:37:45.898Z",
             "status": "translated"
           }
         }
@@ -20785,7 +20824,7 @@
       "tags": [],
       "eventIds": [],
       "firstSeen": "2026-06-05",
-      "lastSeen": "2026-08-24",
+      "lastSeen": "2026-08-26",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "人物",
@@ -20804,7 +20843,7 @@
         }
       ],
       "viewpointIds": [
-        "2091581575108653374",
+        "2092345330272780499",
         "2077928427936710901",
         "2077632589498913087",
         "2077630111499882637",
@@ -22938,6 +22977,156 @@
       ]
     },
     {
+      "id": "INV-694c1d69c893d8",
+      "name": "Index Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 7,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 7,
+      "first_disclosed_at": "2025-09-09",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 2,
+        "lead": 2,
+        "participant": 3
+      },
+      "round_codes": [
+        "seed",
+        "series_b",
+        "series_c",
+        "series_d"
+      ],
+      "activity_count": 7,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-0caee180da9d0f3f",
+          "canonical_entity_id": "",
+          "name": "Fireworks AI Inc."
+        },
+        {
+          "entity_id": "EN-26e59d6a3c92de80",
+          "canonical_entity_id": "",
+          "name": "Instinct"
+        },
+        {
+          "entity_id": "EN-9f80a5e14017ccc0",
+          "canonical_entity_id": "",
+          "name": "Intelligence"
+        },
+        {
+          "entity_id": "EN-c04bd5ebd10ab696",
+          "canonical_entity_id": "EN-c04bd5ebd10ab696",
+          "name": "Mistral AI"
+        },
+        {
+          "entity_id": "EN-ef292e56955a1c10",
+          "canonical_entity_id": "",
+          "name": "PointFive Inc."
+        },
+        {
+          "entity_id": "EN-e4540a7c8404b1be",
+          "canonical_entity_id": "",
+          "name": "Temporal Technologies"
+        },
+        {
+          "entity_id": "FICO-wonderful",
+          "canonical_entity_id": "",
+          "name": "Wonderful"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-a7cff1cab603f9a5",
+          "funding_insight_id": "FI-e57c1a5088b84f89",
+          "event_ids": [
+            "EV-276878c26b2a06dc"
+          ],
+          "company_entity_id": "EN-26e59d6a3c92de80",
+          "company_canonical_entity_id": "",
+          "company_name": "Instinct",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$350 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-a776c87efbe59c04",
+          "funding_insight_id": "FI-36e2dba781b80e3a",
+          "event_ids": [
+            "EV-2301cd1470155075"
+          ],
+          "company_entity_id": "EN-9f80a5e14017ccc0",
+          "company_canonical_entity_id": "",
+          "company_name": "Intelligence",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$7.9 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7900000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "790 万美元"
+          },
+          "announced_at": "2026-08-03",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        },
+        {
+          "activity_id": "IA-2ccff733875d0d90",
+          "funding_insight_id": "FI-3b1ea359415f476d",
+          "event_ids": [
+            "EV-4eaf3aabecae6016"
+          ],
+          "company_entity_id": "EN-0caee180da9d0f3f",
+          "company_canonical_entity_id": "",
+          "company_name": "Fireworks AI Inc.",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$1.505 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1505000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "15.05 亿美元"
+          },
+          "announced_at": "2026-07-16",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        }
+      ]
+    },
+    {
       "id": "INV-9eb2439d21a914",
       "name": "Kleiner Perkins",
       "aliases": [],
@@ -23673,151 +23862,6 @@
             "display_zh": "1.2 亿美元"
           },
           "announced_at": "2026-07-07",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-694c1d69c893d8",
-      "name": "Index Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 6,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 6,
-      "first_disclosed_at": "2025-09-09",
-      "latest_disclosed_at": "2026-08-03",
-      "role_counts": {
-        "co_lead": 1,
-        "lead": 2,
-        "participant": 3
-      },
-      "round_codes": [
-        "seed",
-        "series_b",
-        "series_c",
-        "series_d"
-      ],
-      "activity_count": 6,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-0caee180da9d0f3f",
-          "canonical_entity_id": "",
-          "name": "Fireworks AI Inc."
-        },
-        {
-          "entity_id": "EN-9f80a5e14017ccc0",
-          "canonical_entity_id": "",
-          "name": "Intelligence"
-        },
-        {
-          "entity_id": "EN-c04bd5ebd10ab696",
-          "canonical_entity_id": "EN-c04bd5ebd10ab696",
-          "name": "Mistral AI"
-        },
-        {
-          "entity_id": "EN-ef292e56955a1c10",
-          "canonical_entity_id": "",
-          "name": "PointFive Inc."
-        },
-        {
-          "entity_id": "EN-e4540a7c8404b1be",
-          "canonical_entity_id": "",
-          "name": "Temporal Technologies"
-        },
-        {
-          "entity_id": "FICO-wonderful",
-          "canonical_entity_id": "",
-          "name": "Wonderful"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-a776c87efbe59c04",
-          "funding_insight_id": "FI-36e2dba781b80e3a",
-          "event_ids": [
-            "EV-2301cd1470155075"
-          ],
-          "company_entity_id": "EN-9f80a5e14017ccc0",
-          "company_canonical_entity_id": "",
-          "company_name": "Intelligence",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$7.9 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7900000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "790 万美元"
-          },
-          "announced_at": "2026-08-03",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        },
-        {
-          "activity_id": "IA-2ccff733875d0d90",
-          "funding_insight_id": "FI-3b1ea359415f476d",
-          "event_ids": [
-            "EV-4eaf3aabecae6016"
-          ],
-          "company_entity_id": "EN-0caee180da9d0f3f",
-          "company_canonical_entity_id": "",
-          "company_name": "Fireworks AI Inc.",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "$1.505 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1505000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "15.05 亿美元"
-          },
-          "announced_at": "2026-07-16",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
-        },
-        {
-          "activity_id": "IA-9c40441cc4c4431c",
-          "funding_insight_id": "FI-0e45f5b02e149e04",
-          "event_ids": [
-            "EV-c3b8772c06a25dbc"
-          ],
-          "company_entity_id": "EN-ef292e56955a1c10",
-          "company_canonical_entity_id": "",
-          "company_name": "PointFive Inc.",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "Series B",
-          "amount_original": "$60 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 60000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6000 万美元"
-          },
-          "announced_at": "2026-06-08",
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
@@ -27073,6 +27117,137 @@
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "既有投资方，本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-1caf7c5cbe9bd4",
+      "name": "ARK Invest",
+      "aliases": [
+        "Ark Invest"
+      ],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 3,
+      "first_disclosed_at": "2026-03-31",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 3
+      },
+      "round_codes": [
+        "series_a",
+        "series_d",
+        "series_f"
+      ],
+      "activity_count": 4,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        },
+        {
+          "entity_id": "EN-245f1e177c5169cb",
+          "canonical_entity_id": "",
+          "name": "Hark"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-ac93a7a70504d71e",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-092f5c0f994c193f",
+          "funding_insight_id": "FI-082c684e1b4a88c2",
+          "event_ids": [
+            "EV-ef7346378fcf9746"
+          ],
+          "company_entity_id": "EN-e78bdebae031095b",
+          "company_canonical_entity_id": "EN-e78bdebae031095b",
+          "company_name": "SpaceX",
+          "round": "IPO",
+          "round_code": "ipo",
+          "round_original": "IPO",
+          "amount_original": "$75 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 75000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "750 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-f1b31f351eab6712",
+          "funding_insight_id": "FI-35b63d84f1f7c2b0",
+          "event_ids": [
+            "EV-450f624a6a6446ce",
+            "EV-44c9a50b99c76a70"
+          ],
+          "company_entity_id": "EN-245f1e177c5169cb",
+          "company_canonical_entity_id": "",
+          "company_name": "Hark",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$700M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 700000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7 亿美元"
+          },
+          "announced_at": "2026-05-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
           "role_code": "participant"
         }
       ]
@@ -31270,6 +31445,531 @@
             "display_zh": "超过 2 亿元"
           },
           "announced_at": "2026-02-14",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-1996308273c587",
+      "name": "Benchmark",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_extension",
+        "series_b"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-26e59d6a3c92de80",
+          "canonical_entity_id": "",
+          "name": "Instinct"
+        },
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-2f1b840435067c4e",
+          "funding_insight_id": "FI-e57c1a5088b84f89",
+          "event_ids": [
+            "EV-276878c26b2a06dc"
+          ],
+          "company_entity_id": "EN-26e59d6a3c92de80",
+          "company_canonical_entity_id": "",
+          "company_name": "Instinct",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$350 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-dd337745a5588950",
+          "funding_insight_id": "FI-8a42f200f5caa9f3",
+          "event_ids": [
+            "EV-259566f35ea4f66d"
+          ],
+          "company_entity_id": "EN-607a596a603dd679",
+          "company_canonical_entity_id": "",
+          "company_name": "Starcloud",
+          "round": "A轮扩展",
+          "round_code": "series_a_extension",
+          "round_original": "A轮扩展",
+          "amount_original": "$250 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 250000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.5 亿美元"
+          },
+          "announced_at": "2026-08-21",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-17c0004abc688e",
+      "name": "Nexus Venture Partners",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-04-27",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a",
+        "series_b"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-27d914a99e32f0f2",
+          "canonical_entity_id": "",
+          "name": "Runable"
+        },
+        {
+          "entity_id": "EN-3c1ae4e6276005e7",
+          "canonical_entity_id": "EN-3c1ae4e6276005e7",
+          "name": "TensorWave Inc."
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-f8feb85c97fe7068",
+          "funding_insight_id": "FI-ce571cd60ef1b102",
+          "event_ids": [
+            "EV-0ea2bbb7280091f2"
+          ],
+          "company_entity_id": "EN-27d914a99e32f0f2",
+          "company_canonical_entity_id": "",
+          "company_name": "Runable",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$21 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 21000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2100 万美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-3113857c79897b85",
+          "funding_insight_id": "FI-1f714b499dc9751a",
+          "event_ids": [
+            "EV-6e516b6e68def9cf"
+          ],
+          "company_entity_id": "EN-3c1ae4e6276005e7",
+          "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
+          "company_name": "TensorWave Inc.",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "3.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-06-10",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-81234a77cef209cf",
+          "funding_insight_id": "FI-a308a87eb0e97da7",
+          "event_ids": [
+            "EV-dd3217aad32e6891"
+          ],
+          "company_entity_id": "EN-2f88f41306209dd7",
+          "company_canonical_entity_id": "",
+          "company_name": "Avoca AI",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "种子轮、A轮、B轮",
+          "amount_original": "超过1.25亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 125000000,
+            "min_value": 125000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1.25 亿美元"
+          },
+          "announced_at": "2026-04-27",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-9e801f68178d22",
+      "name": "Qatar Investment Authority",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-03-11",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_d"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        },
+        {
+          "entity_id": "EN-53b69ef92c836777",
+          "canonical_entity_id": "",
+          "name": "Replit"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-2a9b7de94ce1372a",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-fed01d0fad1df030",
+          "funding_insight_id": "FI-f55b62cf10cb7c98",
+          "event_ids": [
+            "EV-f5dd6dec49ad83aa"
+          ],
+          "company_entity_id": "EN-c70eca6b0f88f44d",
+          "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "company_name": "Anthropic",
+          "round": "G轮",
+          "round_code": "series_g",
+          "round_original": "G轮",
+          "amount_original": "$30 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "300 亿美元"
+          },
+          "announced_at": "2026-08-10",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "F轮参投",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-64f4fc49f7d08fdc",
+          "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
+          "event_ids": [
+            "EV-8eb0acb180b7ad9d"
+          ],
+          "company_entity_id": "EN-53b69ef92c836777",
+          "company_canonical_entity_id": "",
+          "company_name": "Replit",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$400M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4 亿美元"
+          },
+          "announced_at": "2026-03-11",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-a38354a604620e",
+      "name": "Susquehanna Venture Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-04-17",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1,
+        "lead": 1
+      },
+      "round_codes": [
+        "series_a"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-27d914a99e32f0f2",
+          "canonical_entity_id": "",
+          "name": "Runable"
+        },
+        {
+          "entity_id": "EN-08ff6997681fad41",
+          "canonical_entity_id": "",
+          "name": "Zenskar"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-173e2eedae11ba41",
+          "funding_insight_id": "FI-ce571cd60ef1b102",
+          "event_ids": [
+            "EV-0ea2bbb7280091f2"
+          ],
+          "company_entity_id": "EN-27d914a99e32f0f2",
+          "company_canonical_entity_id": "",
+          "company_name": "Runable",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$21 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 21000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2100 万美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-f9de947d1f9641cf",
+          "funding_insight_id": "FI-93538e84a3075ee9",
+          "event_ids": [
+            "EV-cbc0b7a7d21a29e2"
+          ],
+          "company_entity_id": "EN-08ff6997681fad41",
+          "company_canonical_entity_id": "",
+          "company_name": "Zenskar",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$15 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 15000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1500 万美元"
+          },
+          "announced_at": "2026-04-17",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        }
+      ]
+    },
+    {
+      "id": "INV-7870f1f2dd0ffb",
+      "name": "Together Fund",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "first_disclosed_at": "2026-08-17",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "series_a",
+        "series_b"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-27d914a99e32f0f2",
+          "canonical_entity_id": "",
+          "name": "Runable"
+        },
+        {
+          "entity_id": "EN-8c5929d253b07fed",
+          "canonical_entity_id": "",
+          "name": "Wispr"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-c3a2f15d197916bd",
+          "funding_insight_id": "FI-ce571cd60ef1b102",
+          "event_ids": [
+            "EV-0ea2bbb7280091f2"
+          ],
+          "company_entity_id": "EN-27d914a99e32f0f2",
+          "company_canonical_entity_id": "",
+          "company_name": "Runable",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$21 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 21000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2100 万美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-87caaf4cd4aa7d33",
+          "funding_insight_id": "FI-c0b843a5e6f6ea0a",
+          "event_ids": [
+            "EV-d43103952399bc68"
+          ],
+          "company_entity_id": "EN-8c5929d253b07fed",
+          "company_canonical_entity_id": "",
+          "company_name": "Wispr",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$280M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 280000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.8 亿美元"
+          },
+          "announced_at": "2026-08-17",
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
@@ -40220,131 +40920,6 @@
       ]
     },
     {
-      "id": "INV-1caf7c5cbe9bd4",
-      "name": "ARK Invest",
-      "aliases": [
-        "Ark Invest"
-      ],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 2,
-      "first_disclosed_at": "2026-03-31",
-      "latest_disclosed_at": "2026-06-03",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 2
-      },
-      "round_codes": [
-        "series_a",
-        "series_f"
-      ],
-      "activity_count": 3,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-245f1e177c5169cb",
-          "canonical_entity_id": "",
-          "name": "Hark"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-092f5c0f994c193f",
-          "funding_insight_id": "FI-082c684e1b4a88c2",
-          "event_ids": [
-            "EV-ef7346378fcf9746"
-          ],
-          "company_entity_id": "EN-e78bdebae031095b",
-          "company_canonical_entity_id": "EN-e78bdebae031095b",
-          "company_name": "SpaceX",
-          "round": "IPO",
-          "round_code": "ipo",
-          "round_original": "IPO",
-          "amount_original": "$75 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 75000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "750 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-f1b31f351eab6712",
-          "funding_insight_id": "FI-35b63d84f1f7c2b0",
-          "event_ids": [
-            "EV-450f624a6a6446ce",
-            "EV-44c9a50b99c76a70"
-          ],
-          "company_entity_id": "EN-245f1e177c5169cb",
-          "company_canonical_entity_id": "",
-          "company_name": "Hark",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$700M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 700000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "7 亿美元"
-          },
-          "announced_at": "2026-05-21",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-a683883a68df0931",
-          "funding_insight_id": "FI-b76fffbf5d0d91bd",
-          "event_ids": [
-            "EV-d4e44892226be468"
-          ],
-          "company_entity_id": "EN-7d3194f79e645c42",
-          "company_canonical_entity_id": "EN-7d3194f79e645c42",
-          "company_name": "OpenAI",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F",
-          "amount_original": "$1220亿",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-03-31",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-8ab49f4611119d",
       "name": "137 Ventures",
       "aliases": [],
@@ -43251,6 +43826,330 @@
       ]
     },
     {
+      "id": "INV-85daf1c17a6e43",
+      "name": "Array VC",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-27d914a99e32f0f2",
+          "canonical_entity_id": "",
+          "name": "Runable"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-c5026be4b2c84291",
+          "funding_insight_id": "FI-ce571cd60ef1b102",
+          "event_ids": [
+            "EV-0ea2bbb7280091f2"
+          ],
+          "company_entity_id": "EN-27d914a99e32f0f2",
+          "company_canonical_entity_id": "",
+          "company_name": "Runable",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$21 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 21000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2100 万美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-84726f705d40c6",
+      "name": "Innovation Endeavors",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-06-25",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-dc8a5a5bf80909de",
+          "canonical_entity_id": "",
+          "name": "General Intuition"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-aa84e0b6fd907d79",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "参投C轮",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-0691bb4dc10d8d53",
+          "funding_insight_id": "FI-9e8f37e4b7cf28a5",
+          "event_ids": [
+            "EV-7283de3f3a76d22b"
+          ],
+          "company_entity_id": "EN-dc8a5a5bf80909de",
+          "company_canonical_entity_id": "",
+          "company_name": "General Intuition",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$320 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 320000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.2 亿美元"
+          },
+          "announced_at": "2026-06-25",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-5e0d3f292f5b85",
+      "name": "Intact Private Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_d"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-9fed4b4135a3e6ef",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-f826ee8345750d",
+      "name": "Koch Disruptive Technologies",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1
+      },
+      "round_codes": [
+        "series_d"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-062dda6790ff985e",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        }
+      ]
+    },
+    {
+      "id": "INV-2437d5cb092956",
+      "name": "Millennium Management",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_d"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a31f26263a2fe821",
+          "canonical_entity_id": "",
+          "name": "Gatik"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-6a247cea0c28caca",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-233fe3b442b6ce",
       "name": "Electronic Arts (EA)",
       "aliases": [],
@@ -43752,65 +44651,6 @@
       "latest_activities": [
         {
           "activity_id": "IA-49f005e092dc5083",
-          "funding_insight_id": "FI-8a42f200f5caa9f3",
-          "event_ids": [
-            "EV-259566f35ea4f66d"
-          ],
-          "company_entity_id": "EN-607a596a603dd679",
-          "company_canonical_entity_id": "",
-          "company_name": "Starcloud",
-          "round": "A轮扩展",
-          "round_code": "series_a_extension",
-          "round_original": "A轮扩展",
-          "amount_original": "$250 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 250000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2.5 亿美元"
-          },
-          "announced_at": "2026-08-21",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-1996308273c587",
-      "name": "Benchmark",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-08-21",
-      "latest_disclosed_at": "2026-08-21",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a_extension"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-607a596a603dd679",
-          "canonical_entity_id": "",
-          "name": "Starcloud"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-dd337745a5588950",
           "funding_insight_id": "FI-8a42f200f5caa9f3",
           "event_ids": [
             "EV-259566f35ea4f66d"
@@ -46619,65 +47459,6 @@
       ]
     },
     {
-      "id": "INV-7870f1f2dd0ffb",
-      "name": "Together Fund",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-08-17",
-      "latest_disclosed_at": "2026-08-17",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_b"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-8c5929d253b07fed",
-          "canonical_entity_id": "",
-          "name": "Wispr"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-87caaf4cd4aa7d33",
-          "funding_insight_id": "FI-c0b843a5e6f6ea0a",
-          "event_ids": [
-            "EV-d43103952399bc68"
-          ],
-          "company_entity_id": "EN-8c5929d253b07fed",
-          "company_canonical_entity_id": "",
-          "company_name": "Wispr",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$280M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 280000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2.8 亿美元"
-          },
-          "announced_at": "2026-08-17",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-2ed30490e9cd64",
       "name": "Valor Capital",
       "aliases": [],
@@ -48473,94 +49254,6 @@
           "scope": "historical_or_ambiguous",
           "role": "既有投资方",
           "role_code": "historical_or_ambiguous"
-        }
-      ]
-    },
-    {
-      "id": "INV-9e801f68178d22",
-      "name": "Qatar Investment Authority",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-03-11",
-      "latest_disclosed_at": "2026-08-10",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "series_d"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-53b69ef92c836777",
-          "canonical_entity_id": "",
-          "name": "Replit"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-fed01d0fad1df030",
-          "funding_insight_id": "FI-f55b62cf10cb7c98",
-          "event_ids": [
-            "EV-f5dd6dec49ad83aa"
-          ],
-          "company_entity_id": "EN-c70eca6b0f88f44d",
-          "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "company_name": "Anthropic",
-          "round": "G轮",
-          "round_code": "series_g",
-          "round_original": "G轮",
-          "amount_original": "$30 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 30000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "300 亿美元"
-          },
-          "announced_at": "2026-08-10",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "F轮参投",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-64f4fc49f7d08fdc",
-          "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
-          "event_ids": [
-            "EV-8eb0acb180b7ad9d"
-          ],
-          "company_entity_id": "EN-53b69ef92c836777",
-          "company_canonical_entity_id": "",
-          "company_name": "Replit",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "$400M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "4 亿美元"
-          },
-          "announced_at": "2026-03-11",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
         }
       ]
     },
@@ -66820,65 +67513,6 @@
       ]
     },
     {
-      "id": "INV-84726f705d40c6",
-      "name": "Innovation Endeavors",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-06-25",
-      "latest_disclosed_at": "2026-06-25",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-dc8a5a5bf80909de",
-          "canonical_entity_id": "",
-          "name": "General Intuition"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-0691bb4dc10d8d53",
-          "funding_insight_id": "FI-9e8f37e4b7cf28a5",
-          "event_ids": [
-            "EV-7283de3f3a76d22b"
-          ],
-          "company_entity_id": "EN-dc8a5a5bf80909de",
-          "company_canonical_entity_id": "",
-          "company_name": "General Intuition",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$320 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 320000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.2 亿美元"
-          },
-          "announced_at": "2026-06-25",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-dce780666f7b49",
       "name": "John Hennessy",
       "aliases": [],
@@ -73129,94 +73763,6 @@
           "scope": "current_round",
           "role": "本轮联合领投",
           "role_code": "co_lead"
-        }
-      ]
-    },
-    {
-      "id": "INV-17c0004abc688e",
-      "name": "Nexus Venture Partners",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-04-27",
-      "latest_disclosed_at": "2026-06-10",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "series_b"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-3c1ae4e6276005e7",
-          "canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "name": "TensorWave Inc."
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-3113857c79897b85",
-          "funding_insight_id": "FI-1f714b499dc9751a",
-          "event_ids": [
-            "EV-6e516b6e68def9cf"
-          ],
-          "company_entity_id": "EN-3c1ae4e6276005e7",
-          "company_canonical_entity_id": "EN-3c1ae4e6276005e7",
-          "company_name": "TensorWave Inc.",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "3.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-06-10",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-81234a77cef209cf",
-          "funding_insight_id": "FI-a308a87eb0e97da7",
-          "event_ids": [
-            "EV-dd3217aad32e6891"
-          ],
-          "company_entity_id": "EN-2f88f41306209dd7",
-          "company_canonical_entity_id": "",
-          "company_name": "Avoca AI",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "种子轮、A轮、B轮",
-          "amount_original": "超过1.25亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 125000000,
-            "min_value": 125000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 1.25 亿美元"
-          },
-          "announced_at": "2026-04-27",
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方",
-          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -82558,65 +83104,6 @@
       "latest_activities": [
         {
           "activity_id": "IA-6beebf8d733b9cf5",
-          "funding_insight_id": "FI-93538e84a3075ee9",
-          "event_ids": [
-            "EV-cbc0b7a7d21a29e2"
-          ],
-          "company_entity_id": "EN-08ff6997681fad41",
-          "company_canonical_entity_id": "",
-          "company_name": "Zenskar",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$15 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 15000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1500 万美元"
-          },
-          "announced_at": "2026-04-17",
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        }
-      ]
-    },
-    {
-      "id": "INV-a38354a604620e",
-      "name": "Susquehanna Venture Capital",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "first_disclosed_at": "2026-04-17",
-      "latest_disclosed_at": "2026-04-17",
-      "role_counts": {
-        "lead": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-08ff6997681fad41",
-          "canonical_entity_id": "",
-          "name": "Zenskar"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-f9de947d1f9641cf",
           "funding_insight_id": "FI-93538e84a3075ee9",
           "event_ids": [
             "EV-cbc0b7a7d21a29e2"
@@ -99276,6 +99763,261 @@
       ]
     },
     {
+      "id": "INV-9502a52ecbeda7",
+      "name": "Goodyear Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-ea06a49eb115d4a4",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "参投C轮",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-7368d2d7ac5730",
+      "name": "Intact Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-e9f5c7ce0a69babe",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "参投C轮",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-bea59b8e795cf5",
+      "name": "Isuzu Motors",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-3a49abcab4e65e12",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2024年投资3000万美元",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-7ba98c438d6a2c",
+      "name": "Itochu",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-146496eb302e2a92",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "参投C轮",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-aae603dade95c8",
+      "name": "Koch Industries",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "first_disclosed_at": "2026-08-26",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-fcfcad347ececec5",
+          "funding_insight_id": "FI-9e3ed4fa47d92efa",
+          "event_ids": [
+            "EV-140ecf4fabe544ba"
+          ],
+          "company_entity_id": "EN-a31f26263a2fe821",
+          "company_canonical_entity_id": "",
+          "company_name": "Gatik",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$200M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "领投C轮",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
       "id": "INV-8ea47e7caa29fd",
       "name": "Capital2B",
       "aliases": [],
@@ -111839,6 +112581,7 @@
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-3d9aa640411471ea",
+        "EV-48d22452ef4464fc",
         "EV-cd7ba52564d4091e",
         "EV-3dc8d5c373ddd1f3",
         "EV-7a0f201debe99f2b",
@@ -111869,6 +112612,7 @@
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
+        "EN-e12c9f7f64dec58c",
         "EN-e3ce9cc5efa9354c",
         "EN-74be4cbf48e647b2",
         "EN-2b6e51bec93e86c1",
@@ -111890,7 +112634,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-use_case-finance_accounting",
@@ -112233,6 +112977,7 @@
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-3d9aa640411471ea",
+        "EV-48d22452ef4464fc",
         "EV-cd7ba52564d4091e",
         "EV-e781e169725006f0",
         "EV-3dc8d5c373ddd1f3",
@@ -112265,6 +113010,7 @@
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
+        "EN-e12c9f7f64dec58c",
         "EN-e3ce9cc5efa9354c",
         "EN-8d4321d936320802",
         "EN-74be4cbf48e647b2",
@@ -112286,7 +113032,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-technology-multimodal",
@@ -112307,6 +113053,8 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-34fd528787e47757",
+        "EV-a0d58fe1616d1480",
         "EV-a09f6e93ad868a57",
         "EV-78651dfea74b4323",
         "EV-7c53df0cdea33936",
@@ -112362,6 +113110,8 @@
         "EN-b81c8201acfc7639",
         "EN-87c730bc4f32459e",
         "EN-7df09a7717ef2feb",
+        "EN-fe074a5bc4bb5163",
+        "EN-047364b9be67f665",
         "EN-6f7ac1823da81d2e",
         "EN-a658fbc24f5e3832",
         "EN-ea3bd73e2b506e00",
@@ -112383,7 +113133,6 @@
         "EN-afe83c198e329ef2",
         "EN-1730144d4e269a62",
         "EN-9a6ee79873b1fb7b",
-        "EN-047364b9be67f665",
         "EN-11507a0e2f5e69d5",
         "EN-b5251b35f15bedc4"
       ],
@@ -112396,7 +113145,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_subcategory-legal",
@@ -112525,6 +113274,7 @@
       "typeLabel": "目标用户",
       "valueId": "consumer",
       "eventIds": [
+        "EV-276878c26b2a06dc",
         "EV-657176fd0dff6209",
         "EV-1dba157815d84342",
         "EV-c6c297156ff274ac",
@@ -112566,6 +113316,7 @@
         "EV-32a5af8d5ef80073"
       ],
       "entityIds": [
+        "EN-26e59d6a3c92de80",
         "EN-336ab1deb42d6284",
         "EN-50b2676afbe30c83",
         "EN-1913c6ab46df3a68",
@@ -112607,7 +113358,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-technology-tool_use",
@@ -112854,6 +113605,7 @@
       "valueId": "mixture_of_experts",
       "eventIds": [
         "EV-80e54c9a390da293",
+        "EV-a0d58fe1616d1480",
         "EV-78651dfea74b4323",
         "EV-58e18eab1b072c9a",
         "EV-7e0d6eb92af58925",
@@ -112870,6 +113622,7 @@
         "EV-57597c92f7b183a9"
       ],
       "entityIds": [
+        "EN-047364b9be67f665",
         "EN-8d4321d936320802",
         "EN-f43fcac12953687c",
         "EN-e59f5a52b6713a29",
@@ -112884,7 +113637,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-06",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-product_form-robotic_system",
@@ -112893,6 +113646,7 @@
       "typeLabel": "产品形态",
       "valueId": "robotic_system",
       "eventIds": [
+        "EV-140ecf4fabe544ba",
         "EV-268e5c3d36e3ed28",
         "EV-fcf3c464260b6730",
         "EV-869c9ea96c58873d",
@@ -112927,6 +113681,7 @@
         "EV-24a536bc53a87050"
       ],
       "entityIds": [
+        "EN-a31f26263a2fe821",
         "EN-5f5ed85925074c92",
         "EN-7ef08ef63597d47c",
         "EN-4e0a97cb956fb1c6",
@@ -112966,7 +113721,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -113275,6 +114030,7 @@
       "eventIds": [
         "EV-c89018d79b3d25bd",
         "EV-97854226b6f43a95",
+        "EV-29f8117648050a66",
         "EV-fabb3080e5263d33",
         "EV-e42e55d1e11a2ba2",
         "EV-333851b077b606c8",
@@ -113293,7 +114049,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-21"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_application-computing_infrastructure",
@@ -113740,6 +114496,7 @@
         "EV-acb2087779a8ea3c",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
+        "EV-127a04dfedc04e0c",
         "EV-e44377720f2ab959",
         "EV-24d84f9f4613ea51",
         "EV-c698da7da473b059",
@@ -113805,6 +114562,7 @@
       ],
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3",
+        "HW-f05a371d8e0599b0",
         "HW-506bfd2ae2c40c2b",
         "HW-eb5bba1ad6c016b0",
         "HW-155f566cfd988f5e",
@@ -113812,7 +114570,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_subcategory-development_deployment",
@@ -114128,6 +114886,7 @@
         "EV-b31602193dbf4e08",
         "EV-0121f0a9e9a975ec",
         "EV-e8bc5b0eebef5813",
+        "EV-127a04dfedc04e0c",
         "EV-96ac5185b17601f0",
         "EV-43a39dfbbc05a8ce",
         "EV-9009adaed650ddde",
@@ -114295,10 +115054,11 @@
       ],
       "fdeIds": [],
       "hardwareIds": [
-        "HW-304c6370cc157449"
+        "HW-304c6370cc157449",
+        "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-product_form-developer_tool",
@@ -114380,6 +115140,7 @@
         "EV-0121f0a9e9a975ec",
         "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-b1b396e6ba2fe208",
         "EV-2afe102017e1b21c",
         "EV-78651dfea74b4323",
         "EV-0d5a32aca724d30e",
@@ -114415,9 +115176,9 @@
       "entityIds": [
         "EN-29b9f0cae32e7a8a",
         "EN-bd6769fe78d0971a",
+        "EN-ea3bd73e2b506e00",
         "EN-7d3194f79e645c42",
         "EN-1ea953e1dbed6788",
-        "EN-ea3bd73e2b506e00",
         "EN-8d4321d936320802",
         "EN-e59f5a52b6713a29",
         "EN-a899a3dde1d51caf",
@@ -114445,7 +115206,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-use_case-research_discovery",
@@ -114721,6 +115482,7 @@
       "typeLabel": "行业",
       "valueId": "retail_ecommerce",
       "eventIds": [
+        "EV-140ecf4fabe544ba",
         "EV-e70a48e36e99d57a",
         "EV-bdcb22b1a53358f5",
         "EV-933b02f5736a0366",
@@ -114773,6 +115535,7 @@
         "EV-02686922dd82c4aa",
         "EV-99a0cb6bac516bdd",
         "EV-2ffc3377977da114",
+        "EV-25b88403a237969f",
         "EV-3a4acc92731cb5ac",
         "EV-7dd55841e1ca4652",
         "EV-ab1b780e6e543b42",
@@ -114788,6 +115551,7 @@
         "EV-dd62847548bb6ae3"
       ],
       "entityIds": [
+        "EN-a31f26263a2fe821",
         "EN-8d4321d936320802",
         "EN-67e8c106650aa683",
         "EN-13a7f8fe8140462d",
@@ -114858,7 +115622,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-industry-media_entertainment",
@@ -114894,6 +115658,7 @@
         "EV-2d6d2dc0ead4be10",
         "EV-afcd5426f5c01dc7",
         "EV-6c361125c3f50bb6",
+        "EV-25b88403a237969f",
         "EV-6360fcef17b43087",
         "EV-35df5cc7eacdade7",
         "EV-c9dda33325d18ba3",
@@ -114952,79 +115717,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-26"
-    },
-    {
-      "id": "TX-ai_market_application-models",
-      "name": "模型",
-      "nodeType": "ai_market_application",
-      "typeLabel": "AI 市场细分",
-      "valueId": "models",
-      "eventIds": [
-        "EV-657176fd0dff6209",
-        "EV-f5dd6dec49ad83aa",
-        "EV-55e7c286e95be405",
-        "EV-88a984b765bb54f1",
-        "EV-00514c4ffc2e3cd3",
-        "EV-c7ba7b093a1a3b94",
-        "EV-44cd5e03d30c85b3",
-        "EV-6f092cfc7a064d64",
-        "EV-e41fc65eb014893f",
-        "EV-6e79974732a5db6b",
-        "EV-12a42b0aabee236f",
-        "EV-78a11d309c3d4e97",
-        "EV-20d762872664fddb",
-        "EV-4f7462a365561bb5",
-        "EV-79a0bbe8b8623b28",
-        "EV-d4d7b019ff0015df",
-        "EV-7283de3f3a76d22b",
-        "EV-d7f7e372d16c2241",
-        "EV-56da7cceeebc8bcf",
-        "EV-a00763037a94d512",
-        "EV-f8c3a83d883c9b22",
-        "EV-e3382d1c1d7db751",
-        "EV-44c9a50b99c76a70",
-        "EV-85506f9f86779a6d",
-        "EV-8861a42a8679562a",
-        "EV-0e4bddfd5c129618",
-        "EV-5d581d112fdbd464",
-        "EV-201b25d4f3cf696a",
-        "EV-31df816db86db282",
-        "EV-c5d7d88d1aef8edb",
-        "EV-cded77b1de2db61a",
-        "EV-535c2f4fb851332d"
-      ],
-      "entityIds": [
-        "EN-336ab1deb42d6284",
-        "EN-c70eca6b0f88f44d",
-        "EN-8ab71d56a963f706",
-        "EN-847c00c904ccdb98",
-        "EN-2e334bb8de4eac34",
-        "EN-0f3360879e746531",
-        "EN-e647c818ac38b6ca",
-        "EN-8d4321d936320802",
-        "EN-7209ec6f68ac0bcd",
-        "EN-b06631033a981321",
-        "EN-450dcf23e621ff10",
-        "EN-858b4458c482f7d2",
-        "EN-88ab1e5d793701f9",
-        "EN-6f7ac1823da81d2e",
-        "EN-dc8a5a5bf80909de",
-        "EN-ccfc5e062828b145",
-        "EN-5aacd10b5dbfa7b7",
-        "EN-cbc62794911ff31b",
-        "EN-ee1e31ffef7dbe64",
-        "EN-245f1e177c5169cb",
-        "EN-c04bd5ebd10ab696",
-        "EN-b5251b35f15bedc4",
-        "EN-7011e12e346d3d22",
-        "EN-a83a3af1a4866fd5",
-        "EN-9b21c9bf3305c0d6"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-product_form-model",
@@ -115033,6 +115726,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-6b668e4655192209",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
         "EV-b231e1a452a7c74a",
@@ -115117,6 +115811,10 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-df9b78627b91c29f",
+        "EV-127a04dfedc04e0c",
+        "EV-91d15b11f487760c",
+        "EV-b1bfe58c3ad65c92",
         "EV-c5290b4100fd8070",
         "EV-fd62c17a36b4e7e0",
         "EV-6b4bd51844bfe967",
@@ -115265,6 +115963,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-00e6152baff47d4d",
         "EV-ce32954014cb030d",
         "EV-8aae4ba13db766a6",
         "EV-649481503cdb7736",
@@ -115342,6 +116041,7 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-bbdefa2950f49882",
         "EN-a658fbc24f5e3832",
         "EN-4cc3012261da02d1",
         "EN-b609846e60064148",
@@ -115351,7 +116051,6 @@
         "EN-99d3fd0fa8fe115e",
         "EN-3a7bd3e2360a3d29",
         "EN-ea3bd73e2b506e00",
-        "EN-bbdefa2950f49882",
         "EN-b93006774cbdd4b2",
         "EN-e32ac33fa53a3db6",
         "EN-83eb1cb31148698f",
@@ -115419,6 +116118,7 @@
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
+        "EN-5694577a18c5d260",
         "EN-5f4db04ac40d991b",
         "EN-1706429cbf67f1c9",
         "EN-af84cfb6c1bb0e98",
@@ -115445,13 +116145,87 @@
         "HW-c5a22adcc66136ed",
         "HW-033a5b73cdc3f4be",
         "HW-ceb55d9bc637c1d3",
+        "HW-f05a371d8e0599b0",
         "HW-da04d48165a60f76",
         "HW-25eea5677838fb54",
         "HW-e44b241c78bbbd26",
         "HW-46a3e65809ab5227",
-        "HW-25ce41fab12d9ef2"
+        "HW-25ce41fab12d9ef2",
+        "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
+      "lastSeen": "2026-08-27"
+    },
+    {
+      "id": "TX-ai_market_application-models",
+      "name": "模型",
+      "nodeType": "ai_market_application",
+      "typeLabel": "AI 市场细分",
+      "valueId": "models",
+      "eventIds": [
+        "EV-657176fd0dff6209",
+        "EV-f5dd6dec49ad83aa",
+        "EV-55e7c286e95be405",
+        "EV-88a984b765bb54f1",
+        "EV-00514c4ffc2e3cd3",
+        "EV-c7ba7b093a1a3b94",
+        "EV-44cd5e03d30c85b3",
+        "EV-6f092cfc7a064d64",
+        "EV-e41fc65eb014893f",
+        "EV-6e79974732a5db6b",
+        "EV-12a42b0aabee236f",
+        "EV-78a11d309c3d4e97",
+        "EV-20d762872664fddb",
+        "EV-4f7462a365561bb5",
+        "EV-79a0bbe8b8623b28",
+        "EV-d4d7b019ff0015df",
+        "EV-7283de3f3a76d22b",
+        "EV-d7f7e372d16c2241",
+        "EV-56da7cceeebc8bcf",
+        "EV-a00763037a94d512",
+        "EV-f8c3a83d883c9b22",
+        "EV-e3382d1c1d7db751",
+        "EV-44c9a50b99c76a70",
+        "EV-85506f9f86779a6d",
+        "EV-8861a42a8679562a",
+        "EV-0e4bddfd5c129618",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-31df816db86db282",
+        "EV-c5d7d88d1aef8edb",
+        "EV-cded77b1de2db61a",
+        "EV-535c2f4fb851332d"
+      ],
+      "entityIds": [
+        "EN-336ab1deb42d6284",
+        "EN-c70eca6b0f88f44d",
+        "EN-8ab71d56a963f706",
+        "EN-847c00c904ccdb98",
+        "EN-2e334bb8de4eac34",
+        "EN-0f3360879e746531",
+        "EN-e647c818ac38b6ca",
+        "EN-8d4321d936320802",
+        "EN-7209ec6f68ac0bcd",
+        "EN-b06631033a981321",
+        "EN-450dcf23e621ff10",
+        "EN-858b4458c482f7d2",
+        "EN-88ab1e5d793701f9",
+        "EN-6f7ac1823da81d2e",
+        "EN-dc8a5a5bf80909de",
+        "EN-ccfc5e062828b145",
+        "EN-5aacd10b5dbfa7b7",
+        "EN-cbc62794911ff31b",
+        "EN-ee1e31ffef7dbe64",
+        "EN-245f1e177c5169cb",
+        "EN-c04bd5ebd10ab696",
+        "EN-b5251b35f15bedc4",
+        "EN-7011e12e346d3d22",
+        "EN-a83a3af1a4866fd5",
+        "EN-9b21c9bf3305c0d6"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-02-08",
       "lastSeen": "2026-08-26"
     },
     {
@@ -115683,6 +116457,7 @@
       "typeLabel": "应用场景",
       "valueId": "content_creation",
       "eventIds": [
+        "EV-0ea2bbb7280091f2",
         "EV-657176fd0dff6209",
         "EV-1dba157815d84342",
         "EV-bdcb22b1a53358f5",
@@ -115710,6 +116485,7 @@
         "EV-631dce4dc135d01b"
       ],
       "entityIds": [
+        "EN-27d914a99e32f0f2",
         "EN-336ab1deb42d6284",
         "EN-50b2676afbe30c83",
         "EN-67e8c106650aa683",
@@ -115740,7 +116516,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-industry-energy_utilities",
@@ -115846,6 +116622,8 @@
       "typeLabel": "AI 市场类别",
       "valueId": "enterprise_applications",
       "eventIds": [
+        "EV-0ea2bbb7280091f2",
+        "EV-276878c26b2a06dc",
         "EV-3ee6b5e876146bb3",
         "EV-1dba157815d84342",
         "EV-d43103952399bc68",
@@ -115929,6 +116707,8 @@
         "EV-b31602193dbf4e08"
       ],
       "entityIds": [
+        "EN-27d914a99e32f0f2",
+        "EN-26e59d6a3c92de80",
         "EN-3b3ed571bbb19504",
         "EN-50b2676afbe30c83",
         "EN-8c5929d253b07fed",
@@ -116008,7 +116788,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -116017,6 +116797,7 @@
       "typeLabel": "产品形态",
       "valueId": "enterprise_software_platform",
       "eventIds": [
+        "EV-6b668e4655192209",
         "EV-3ee6b5e876146bb3",
         "EV-bdcb22b1a53358f5",
         "EV-df8954acf9a13848",
@@ -116121,6 +116902,7 @@
         "EV-b95539d17772a4ce",
         "EV-f63462e34ea40699",
         "EV-05a87b578967c83e",
+        "EV-24bb8055449763ae",
         "EV-ea2598236eae915f",
         "EV-9dd391d60f580f44",
         "EV-54a4809c304587e6",
@@ -116247,6 +117029,7 @@
         "EN-7d3194f79e645c42",
         "EN-c890cfa67d1da908",
         "EN-19e41212c0556603",
+        "EN-d9b1d7819af92e77",
         "EN-26e4cd038c9369f4",
         "EN-3ce360bb40481a80",
         "EN-76a5d97e81b562c4",
@@ -116258,7 +117041,6 @@
         "EN-c70eca6b0f88f44d",
         "EN-1da46c494dfdd8d3",
         "EN-ae4ea495016fb286",
-        "EN-d9b1d7819af92e77",
         "EN-dfc0fdff7af68ed2",
         "EN-3eee4f30151db45a",
         "EN-35e36dc1a5213fa3",
@@ -116279,7 +117061,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-target_user-business_user",
@@ -116288,6 +117070,8 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-0ea2bbb7280091f2",
+        "EV-140ecf4fabe544ba",
         "EV-3ee6b5e876146bb3",
         "EV-657176fd0dff6209",
         "EV-8ad153b984ba8729",
@@ -116522,6 +117306,8 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "EN-27d914a99e32f0f2",
+        "EN-a31f26263a2fe821",
         "EN-3b3ed571bbb19504",
         "EN-336ab1deb42d6284",
         "EN-647aebd730e6d6b2",
@@ -116738,7 +117524,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-industry-automotive_transportation",
@@ -116747,6 +117533,7 @@
       "typeLabel": "行业",
       "valueId": "automotive_transportation",
       "eventIds": [
+        "EV-140ecf4fabe544ba",
         "EV-e70a48e36e99d57a",
         "EV-1bc31f98fa3e34cc",
         "EV-1765fd690cff1cac",
@@ -116786,6 +117573,7 @@
         "EV-6a2f3e9a22edff64"
       ],
       "entityIds": [
+        "EN-a31f26263a2fe821",
         "EN-8d4321d936320802",
         "EN-e4a72fa4f054e9be",
         "EN-2505fe8a9e908e04",
@@ -116824,7 +117612,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-deployment_model-embedded",
@@ -117226,6 +118014,8 @@
       "typeLabel": "应用场景",
       "valueId": "productivity_enterprise_workflows",
       "eventIds": [
+        "EV-0ea2bbb7280091f2",
+        "EV-276878c26b2a06dc",
         "EV-8cb4468fe881602b",
         "EV-d43103952399bc68",
         "EV-9bbe5a98b14acd7f",
@@ -117337,6 +118127,8 @@
         "EV-f5aec01f1466f6bb"
       ],
       "entityIds": [
+        "EN-27d914a99e32f0f2",
+        "EN-26e59d6a3c92de80",
         "EN-2f72d2f93de73383",
         "EN-8c5929d253b07fed",
         "EN-a267b5c12a2015f0",
@@ -117449,7 +118241,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_subcategory-productivity_enterprise_workflows",
@@ -117458,6 +118250,7 @@
       "typeLabel": "AI 市场子类",
       "valueId": "productivity_enterprise_workflows",
       "eventIds": [
+        "EV-276878c26b2a06dc",
         "EV-d43103952399bc68",
         "EV-df8954acf9a13848",
         "EV-f315914e0fedddfa",
@@ -117505,6 +118298,7 @@
         "EV-acf1bcb321414706"
       ],
       "entityIds": [
+        "EN-26e59d6a3c92de80",
         "EN-8c5929d253b07fed",
         "EN-f970fd34532919fe",
         "EN-c0fa1ef864788c45",
@@ -117552,7 +118346,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-technology-vision_language",
@@ -117594,11 +118388,13 @@
       "typeLabel": "技术",
       "valueId": "video_generation",
       "eventIds": [
+        "EV-a46f31c7db36c728",
         "EV-d80c43b35418e74d",
         "EV-caffb8981cecae2f",
         "EV-522c339dded54be5",
         "EV-a354af52772334fd",
         "EV-26d2874c6ce028d6",
+        "EV-25b88403a237969f",
         "EV-2a30e4a6a8033bcc",
         "EV-c698da7da473b059",
         "EV-2791b442fd32b894",
@@ -117617,6 +118413,7 @@
         "EV-9766c0f1ac902595"
       ],
       "entityIds": [
+        "EN-50b2676afbe30c83",
         "EN-478676438ee161a3",
         "EN-047364b9be67f665",
         "EN-e1517be14d06cdb7",
@@ -117637,7 +118434,7 @@
         "HW-68457c8c0a7240ac"
       ],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_subcategory-data",
@@ -117841,6 +118638,7 @@
         "EV-29eea3f4a8fcd6f5",
         "EV-1abf0d076d30ec6d",
         "EV-6011ab83ebd290bd",
+        "EV-bd5b6110559f2fda",
         "EV-9fe6938336dea2a2",
         "EV-70fd5918095d6ab8",
         "EV-0121f0a9e9a975ec",
@@ -117867,10 +118665,10 @@
         "EN-c04bd5ebd10ab696",
         "EN-07c370b082ffd370",
         "EN-ce31f92c521b7b08",
+        "EN-c70eca6b0f88f44d",
         "EN-8f5ef31ed5125786",
         "EN-3c7a24d85b4a5835",
         "EN-29b9f0cae32e7a8a",
-        "EN-c70eca6b0f88f44d",
         "EN-7640da40298286a6",
         "EN-ebf9032e4009b3d9",
         "EN-042e9398f2cc8902",
@@ -117886,7 +118684,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-technology-image_generation",
@@ -118014,6 +118812,7 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
+        "EV-140ecf4fabe544ba",
         "EV-c6c297156ff274ac",
         "EV-1765fd690cff1cac",
         "EV-b116eafe60d71fbe",
@@ -118065,6 +118864,8 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-127a04dfedc04e0c",
+        "EV-b1bfe58c3ad65c92",
         "EV-2b529f1793d4230f",
         "EV-470c66c0e334794e",
         "EV-b4a9bdd7e93ce89f",
@@ -118113,6 +118914,7 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-a31f26263a2fe821",
         "EN-1913c6ab46df3a68",
         "EN-2505fe8a9e908e04",
         "EN-373da2ec629326c0",
@@ -118192,6 +118994,7 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3",
         "HW-8ec8f237534254df",
+        "HW-f05a371d8e0599b0",
         "HW-03c3292149bb6bf9",
         "HW-89cdf1875115a352",
         "HW-7d718c8abe1716ac",
@@ -118204,7 +119007,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-industry-logistics_supply_chain",
@@ -118213,6 +119016,7 @@
       "typeLabel": "行业",
       "valueId": "logistics_supply_chain",
       "eventIds": [
+        "EV-140ecf4fabe544ba",
         "EV-e70a48e36e99d57a",
         "EV-1765fd690cff1cac",
         "EV-60f219702a66bf38",
@@ -118243,6 +119047,7 @@
         "EV-acf1bcb321414706"
       ],
       "entityIds": [
+        "EN-a31f26263a2fe821",
         "EN-8d4321d936320802",
         "EN-2505fe8a9e908e04",
         "EN-6861f63c27eb0ada",
@@ -118274,7 +119079,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_subcategory-consumer_retail",
@@ -118519,6 +119324,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-f41fe4d6189853cd",
         "EV-d26a532231315278",
         "EV-18faec4bf4efe7db",
         "EV-9d824ab9d0b0c6b5",
@@ -118694,7 +119500,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_category-industry_applications",
@@ -118850,6 +119656,7 @@
         "EV-435d7e7878b0c326",
         "EV-e6a4e0785ebb268a",
         "EV-cded77b1de2db61a",
+        "EV-892228f3d092004f",
         "EV-0121f0a9e9a975ec",
         "EV-8803f626b5df5ab0",
         "EV-01212a5ad9db6a20",
@@ -118887,7 +119694,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_subcategory-healthcare_life_sciences",
@@ -119073,6 +119880,7 @@
       "typeLabel": "AI 市场子类",
       "valueId": "marketing",
       "eventIds": [
+        "EV-0ea2bbb7280091f2",
         "EV-1dba157815d84342",
         "EV-933b02f5736a0366",
         "EV-f6a72cddbda748b3",
@@ -119080,6 +119888,7 @@
         "EV-affa49966121461c"
       ],
       "entityIds": [
+        "EN-27d914a99e32f0f2",
         "EN-50b2676afbe30c83",
         "EN-13a7f8fe8140462d",
         "EN-a5d2ae286d0d9e45",
@@ -119089,7 +119898,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-use_case-marketing",
@@ -119098,6 +119907,7 @@
       "typeLabel": "应用场景",
       "valueId": "marketing",
       "eventIds": [
+        "EV-0ea2bbb7280091f2",
         "EV-1dba157815d84342",
         "EV-a64fab2ce6bc6c4c",
         "EV-8b7cbb66a33a945d",
@@ -119110,6 +119920,7 @@
         "EV-a84ec4216d3ded6d"
       ],
       "entityIds": [
+        "EN-27d914a99e32f0f2",
         "EN-50b2676afbe30c83",
         "EN-a56c2fbccb257dba",
         "EN-366289432b214eda",
@@ -119123,7 +119934,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-08-18"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-ai_market_subcategory-hardware_computing",
@@ -119616,6 +120427,7 @@
         "EV-39848cdd62c00e59",
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
+        "EV-b1b396e6ba2fe208",
         "EV-c7d0b810ac3b3d4e",
         "EV-57fcbef33071910b",
         "EV-a37b9d9fb85e460f",
@@ -119723,6 +120535,7 @@
         "EN-222f930b87524636",
         "EN-72138e570e5103e2",
         "EN-51188f73e8dfbfee",
+        "EN-ea3bd73e2b506e00",
         "EN-3bc9f78028bc2dba",
         "EN-2abf8289b2f2113f",
         "EN-d7aba0f660c463d8",
@@ -119750,7 +120563,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -119871,6 +120684,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-29f8117648050a66",
         "EV-87c5f6dcc769999c",
         "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
@@ -119957,6 +120771,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-98297329e323dca3",
+        "EV-36b9457d1508a166",
         "EV-6e96760ed7e2ebaa",
         "EV-e3d25b9c0ee541d1",
         "EV-fd62c17a36b4e7e0",
@@ -120238,6 +121054,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-00ffb2c501a37ec8",
         "EV-2c17183b71d8b7d1",
         "EV-ce32954014cb030d",
         "EV-09a29379b6399236",
@@ -120413,6 +121230,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-738e22f0acab814c",
         "EN-bbdefa2950f49882",
         "EN-53a7676bcec5dff6",
         "EN-4cc3012261da02d1",
@@ -120438,7 +121256,6 @@
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-c0fced8f2483e9f5",
-        "EN-738e22f0acab814c",
         "EN-dca6ec9510fc0176",
         "EN-5a28a1a99a417ba5",
         "EN-842fcb5e60989a03",
@@ -120640,6 +121457,8 @@
       "typeLabel": "产品形态",
       "valueId": "end_user_application",
       "eventIds": [
+        "EV-0ea2bbb7280091f2",
+        "EV-276878c26b2a06dc",
         "EV-8ad153b984ba8729",
         "EV-1dba157815d84342",
         "EV-d43103952399bc68",
@@ -120729,6 +121548,8 @@
         "EV-618e2e96fac28f06"
       ],
       "entityIds": [
+        "EN-27d914a99e32f0f2",
+        "EN-26e59d6a3c92de80",
         "EN-647aebd730e6d6b2",
         "EN-50b2676afbe30c83",
         "EN-8c5929d253b07fed",
@@ -120811,7 +121632,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-22"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-industry-professional_services",
@@ -121273,6 +122094,7 @@
       "typeLabel": "AI 市场类别",
       "valueId": "physical_ai",
       "eventIds": [
+        "EV-140ecf4fabe544ba",
         "EV-268e5c3d36e3ed28",
         "EV-fcf3c464260b6730",
         "EV-869c9ea96c58873d",
@@ -121296,6 +122118,7 @@
         "EV-cec68369662236fd"
       ],
       "entityIds": [
+        "EN-a31f26263a2fe821",
         "EN-5f5ed85925074c92",
         "EN-7ef08ef63597d47c",
         "EN-4e0a97cb956fb1c6",
@@ -121320,7 +122143,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-05"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "TX-technology-retrieval_augmented_generation",

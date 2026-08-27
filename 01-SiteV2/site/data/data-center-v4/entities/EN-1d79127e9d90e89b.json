@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -26,6 +26,7 @@
     ],
     "eventIds": [
       "EV-40f14150d6f622f5",
+      "EV-34fd528787e47757",
       "EV-911e7e2722aa5ebc",
       "EV-b613937b7bc1ea64",
       "EV-110d0ab135a08889",
@@ -45,7 +46,7 @@
       "EN-993599624a199fe0"
     ],
     "firstSeen": "2026-06-13",
-    "lastSeen": "2026-08-26",
+    "lastSeen": "2026-08-27",
     "relationIds": [
       "REL2-09dd97666e545a2c",
       "REL2-ff240950e3bb7f5e"
@@ -57,6 +58,7 @@
         "EV-40f14150d6f622f5"
       ],
       "productsServices": [
+        "EV-34fd528787e47757",
         "EV-911e7e2722aa5ebc",
         "EV-b613937b7bc1ea64",
         "EV-110d0ab135a08889",
@@ -71,6 +73,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-34fd528787e47757",
+        "dataDate": "2026-08-27",
+        "date": "2026-08-27",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "神秘「牛来」模型果然是智谱！GLM首个原生多模态，还用的国产卡",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-fe074a5bc4bb5163"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1d79127e9d90e89b",
+          "EN-fe074a5bc4bb5163"
+        ]
+      },
       {
         "id": "EV-911e7e2722aa5ebc",
         "dataDate": "2026-08-26",

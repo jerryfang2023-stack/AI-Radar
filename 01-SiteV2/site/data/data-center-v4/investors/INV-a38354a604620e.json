@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "institution": {
@@ -20,12 +20,13 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-04-17",
-    "latest_disclosed_at": "2026-04-17",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
+      "co_lead": 1,
       "lead": 1
     },
     "round_codes": [
@@ -33,12 +34,55 @@
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-27d914a99e32f0f2",
+        "canonical_entity_id": "",
+        "name": "Runable"
+      },
+      {
         "entity_id": "EN-08ff6997681fad41",
         "canonical_entity_id": "",
         "name": "Zenskar"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-173e2eedae11ba41",
+        "funding_insight_id": "FI-ce571cd60ef1b102",
+        "event_ids": [
+          "EV-0ea2bbb7280091f2"
+        ],
+        "company_entity_id": "EN-27d914a99e32f0f2",
+        "company_canonical_entity_id": "",
+        "company_name": "Runable",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$21 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 21000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2100 万美元"
+        },
+        "announced_at": "2026-08-26",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2d6054cc51934d57",
+            "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+            "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+            "source_content_hash": "c050b0e757896e5c",
+            "quote": "The Series A was co-led by Susquehanna Venture Capital and Nexus Venture Partners",
+            "quote_hash": "172dcdf7baac6a1cd11e0762f9ca00906cb605dd539b08407ee8c8e0947085bc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f9de947d1f9641cf",
         "funding_insight_id": "FI-93538e84a3075ee9",
@@ -79,6 +123,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2d6054cc51934d57",
+        "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+        "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+        "source_content_hash": "c050b0e757896e5c",
+        "quote": "The Series A was co-led by Susquehanna Venture Capital and Nexus Venture Partners",
+        "quote_hash": "172dcdf7baac6a1cd11e0762f9ca00906cb605dd539b08407ee8c8e0947085bc"
+      },
       {
         "source_id": "FISRC-d87b08783c0a062f",
         "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
