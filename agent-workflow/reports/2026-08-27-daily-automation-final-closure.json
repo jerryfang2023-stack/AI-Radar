@@ -1,0 +1,392 @@
+{
+  "ok": true,
+  "healthOk": true,
+  "status": "closed",
+  "lanes": [
+    {
+      "id": "skill_ops",
+      "label": "Skill Ops Governance",
+      "schedule": "daily supervision preflight",
+      "status": "passed",
+      "evidence": {
+        "command": "npm run check:skill-ops",
+        "registryState": "current",
+        "governed": 23,
+        "current": 23,
+        "laneOwners": 3,
+        "syncDrift": 0,
+        "dashboardState": "passed",
+        "dashboardErrors": [],
+        "evalCoverage": 100,
+        "exampleCoverage": 100,
+        "memoryRequiredMissing": 0,
+        "discoveryState": "passed",
+        "discoveryAvailable": true,
+        "discoveredSkills": 235,
+        "enabledSkills": 52,
+        "disabledSkills": 183,
+        "invalidSkillManifests": 0,
+        "enabledDuplicateSkillNames": 0,
+        "discoveryErrors": []
+      },
+      "problems": [],
+      "warnings": [],
+      "actions": []
+    },
+    {
+      "id": "community_intelligence",
+      "label": "Community Intelligence",
+      "schedule": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure",
+      "status": "passed",
+      "evidence": {
+        "generatedAt": "2026-08-27T03:25:06.914Z",
+        "generatedDate": "2026-08-27",
+        "dataSource": "working_tree",
+        "localGeneratedDate": "2026-08-27",
+        "items": 69,
+        "links": 49,
+        "selectedKeywords": 8,
+        "collectorErrors": 0,
+        "gateStatus": "passed",
+        "gateReport": "agent-workflow/reports/2026-08-27-community-intelligence-gate.md",
+        "scheduledTask": {
+          "available": true,
+          "task": {
+            "State": 3,
+            "LastTaskResult": 0,
+            "LastRunTime": "/Date(1787800227000)/",
+            "NextRunTime": "/Date(1787877000000)/"
+          },
+          "stateName": "Ready",
+          "pendingSameDate": false,
+          "lastResultStatus": "passed"
+        },
+        "github": {
+          "available": true,
+          "latest_run": null,
+          "same_date_run_count": 0,
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-08-27T03:26:46Z",
+              "number": 720,
+              "state": "MERGED",
+              "updatedAt": "2026-08-27T03:26:56Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/720"
+            }
+          ],
+          "pr_warning": ""
+        },
+        "publication": {
+          "communityPrMerged": true,
+          "communityPrOpen": false,
+          "communityPrUrl": "https://github.com/jerryfang2023-stack/AI-Radar/pull/720",
+          "publishedOnOriginMain": true
+        },
+        "login": {
+          "state": "healthy",
+          "log": "missing"
+        },
+        "stageStatus": {
+          "data": "healthy",
+          "publication": "published",
+          "task_execution": "passed",
+          "login": "healthy"
+        }
+      },
+      "problems": [],
+      "waiting": [],
+      "warnings": [],
+      "actions": []
+    },
+    {
+      "id": "business_signals",
+      "label": "Data Center V4 / Business Signals Operations",
+      "schedule": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
+      "status": "passed",
+      "evidence": {
+        "titleTranslations": {
+          "missingSourceTitles": []
+        },
+        "manifest": "agent-workflow/reports/2026-08-27-persistent-asset-manifest.json",
+        "qualityGateStatus": "passed",
+        "readinessReport": "agent-workflow/reports/2026-08-27-daily-production-chain-readiness.md",
+        "dataCenterV4": {
+          "manifest": "01-SiteV2/site/data/data-center-v4/manifest.json",
+          "currentDate": "2026-08-27",
+          "materializedEventCount": 2426,
+          "integrityGate": "agent-workflow/reports/2026-08-27-data-center-v4-integrity-gate.json",
+          "integrityGatePassed": true,
+          "canonicalEventCount": 42,
+          "pipelinePassed": true,
+          "telemetry": "01-SiteV2/site/data/collection-telemetry-v1.json",
+          "telemetryDate": "2026-08-27",
+          "telemetryGateStatus": "passed"
+        },
+        "compatibility": {
+          "status": "retired_archive",
+          "production_write": "disabled",
+          "active_consumers": 0,
+          "blocking": false
+        },
+        "github": {
+          "available": true,
+          "latest_run": {
+            "conclusion": "success",
+            "createdAt": "2026-08-27T04:47:41Z",
+            "databaseId": 33040486344,
+            "event": "workflow_dispatch",
+            "headBranch": "main",
+            "status": "completed",
+            "updatedAt": "2026-08-27T04:53:55Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/33040486344"
+          },
+          "same_date_run_count": 4,
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-08-27T04:53:43Z",
+              "number": 726,
+              "state": "MERGED",
+              "updatedAt": "2026-08-27T04:53:52Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/726"
+            },
+            {
+              "isDraft": false,
+              "mergedAt": "2026-08-27T04:15:51Z",
+              "number": 724,
+              "state": "MERGED",
+              "updatedAt": "2026-08-27T04:16:01Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/724"
+            }
+          ],
+          "pr_warning": ""
+        },
+        "publicationClosure": {
+          "checkpoint": "09:50",
+          "businessDataSameDate": true,
+          "businessPrMerged": true,
+          "businessPrUrl": "https://github.com/jerryfang2023-stack/AI-Radar/pull/726",
+          "pagesSuccess": true,
+          "pagesActive": false,
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/33042540656",
+          "vaultSync": {
+            "status": "passed",
+            "sourceCommit": "41946079b7b4a53767ff294c74d84c6700f631d6",
+            "current": true
+          },
+          "localSync": {
+            "available": true,
+            "clean": false,
+            "dirtyFiles": 7,
+            "ignoredReportFiles": 4,
+            "head": "41946079b7b4a53767ff294c74d84c6700f631d6",
+            "originMain": "41946079b7b4a53767ff294c74d84c6700f631d6",
+            "fastForwarded": true,
+            "warning": ""
+          }
+        },
+        "failedWorkflowSupersededByPublication": false,
+        "dataHealth": {
+          "contract": "SITE-V4.3.0 / Data Center V4 canonical production",
+          "manifestDateMatches": true,
+          "materializedEventCount": 2426,
+          "integrityGatePassed": true,
+          "canonicalEventCount": 42,
+          "pipelinePassed": true,
+          "compatibilityStatus": "retired_archive",
+          "healthy": true
+        },
+        "diagnosis": {
+          "category": "passed",
+          "reason": "same-date Data Center V4 canonical data, integrity gate, and materialization are healthy",
+          "neededAction": "none",
+          "preRerunChecklist": {
+            "dataCenterDate": "2026-08-27",
+            "materializedEventCount": 2426,
+            "canonicalEventCount": 42,
+            "dataCenterGatePassed": true,
+            "dataCenterPipelinePassed": true,
+            "sourceArtifactFreshness": "not_checked_by_daily_supervision",
+            "missingSourceTitleTranslations": [],
+            "businessPrMerged": true,
+            "pagesState": "success",
+            "localDirtyFiles": 7,
+            "localFastForwarded": true
+          }
+        }
+      },
+      "problems": [],
+      "waiting": [],
+      "warnings": [],
+      "actions": []
+    },
+    {
+      "id": "first_line_viewpoints",
+      "label": "First-Line Viewpoints",
+      "schedule": "08:30 local RSS collection + page build; 09:15 conditional fallback; 09:50 consolidated closure",
+      "status": "passed",
+      "evidence": {
+        "generatedAt": "2026-08-27T03:28:52.895Z",
+        "generatedDate": "2026-08-27",
+        "dataSource": "working_tree",
+        "localGeneratedDate": "2026-08-27",
+        "feedGeneratedAt": "2026-08-26T06:28:20.473Z",
+        "remarks": 40,
+        "builders": 19,
+        "gateStatus": "passed",
+        "gateReport": "agent-workflow/reports/2026-08-27-follow-builders-data-gate.md",
+        "manifest": "agent-workflow/reports/2026-08-27-first-line-viewpoints-manifest.md",
+        "manifestHealthy": true,
+        "manifestRequired": false,
+        "manifestStatus": "passed",
+        "historicalEvidenceHealthy": false,
+        "github": {
+          "available": true,
+          "latest_run": {
+            "conclusion": "success",
+            "createdAt": "2026-08-27T03:28:01Z",
+            "databaseId": 33036444820,
+            "event": "workflow_dispatch",
+            "headBranch": "main",
+            "status": "completed",
+            "updatedAt": "2026-08-27T03:31:30Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/33036444820"
+          },
+          "same_date_run_count": 1,
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-08-27T03:31:25Z",
+              "number": 721,
+              "state": "MERGED",
+              "updatedAt": "2026-08-27T03:31:27Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/721"
+            }
+          ],
+          "pr_warning": ""
+        },
+        "localDataHealthy": true
+      },
+      "problems": [],
+      "warnings": [],
+      "actions": []
+    },
+    {
+      "id": "follow_builders_skill",
+      "label": "First-Line Viewpoints Skill",
+      "schedule": "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
+      "status": "passed",
+      "evidence": {
+        "outputFile": "01-SiteV2/content/07-points/2026-08-27-builders-viewpoints.md",
+        "reportFile": "agent-workflow/reports/2026-08-27-follow-builders-skill-local-publish.md",
+        "dataSource": "working_tree",
+        "itemCount": 33,
+        "outputFrontmatterCount": 33,
+        "reportCount": 33,
+        "publishStatus": "generated",
+        "publishError": "",
+        "guanlanVaultProjection": "local_after_main_sync"
+      },
+      "problems": [],
+      "waiting": [],
+      "warnings": [],
+      "actions": []
+    }
+  ],
+  "actions": [
+    {
+      "label": "Refresh V4 data lake",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-08-27T05:31:18.591Z",
+      "finished_at": "2026-08-27T05:31:26.029Z",
+      "command": "node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true",
+      "stdout": "{\n  \"ok\": true,\n  \"contract_version\": \"DATA-LAKE-V4.1\",\n  \"duckdb\": \"duckdb\",\n  \"database\": \"data-lake/wavesight.duckdb\",\n  \"manifest\": \"data-lake/manifest.json\",\n  \"removed_stale_tables\": [],\n  \"generated_tables\": {\n    \"source_artifacts\": 14707,\n    \"raw_documents\": 17509,\n    \"claims\": 8569,\n    \"entities\": 2323,\n    \"entity_mentions\": 6160,\n    \"canonical_events\": 2449,\n    \"event_sources\": 2860,\n    \"event_claims\": 8569,\n    \"event_conflicts\": 3,\n    \"relationships\": 8569,\n    \"tag_assertions\": 1725,\n    \"facet_assertions\": 1973,\n    \"reviewed_event_classifications\": 2322,\n    \"fde_records\": 129,\n    \"fde_observations\": 45,\n    \"hardware_records\": 87,\n    \"hardware_facts\": 243,\n    \"hardware_snapshots\": 142,\n    \"monitoring_funnel\": 66,\n    \"entity_registry\": 2104,\n    \"entity_profiles\": 2104,\n    \"taxonomy_nodes\": 113,\n    \"entity_relationships\": 373,\n    \"qa_queue\": 14674\n  },\n  \"table_count\": 24,\n  \"summary\": [\n    {\n      \"table_name\": \"source_artifacts\",\n      \"rows\": 14707\n    },\n    {\n      \"table_name\": \"raw_documents\",\n      \"rows\": 17509\n    },\n    {\n      \"table_name\": \"claims\",\n      \"rows\": 8569\n    },\n    {\n      \"table_name\": \"entities\",\n      \"rows\": 2323\n    },\n    {\n      \"table_name\": \"entity_mentions\",\n      \"rows\": 6160\n    },\n    {\n      \"table_name\": \"canonical_events\",\n      \"rows\": 2449\n    },\n    {\n      \"table_name\": \"event_sources\",\n      \"rows\": 2860\n    },\n    {\n      \"table_name\": \"event_claims\",\n      \"rows\": 8569\n    },\n    {\n      \"table_name\": \"event_conflicts\",\n      \"rows\": 3\n    },\n    {\n      \"table_name\": \"relationships\",\n      \"rows\": 8569\n    },\n    {\n      \"table_name\": \"tag_assertions\",\n      \"rows\": 1725\n    },\n    {\n      \"table_name\": \"facet_assertions\",\n      \"rows\": 1973\n    },\n    {\n      \"table_name\": \"reviewed_event_classifications\",\n      \"rows\": 2322\n    },\n    {\n      \"table_name\": \"fde_records\",\n      \"rows\": 129\n    },\n    {\n      \"table_name\": \"fde_observations\",\n      \"rows\": 45\n    },\n    {\n      \"table_name\": \"hardware_records\",\n      \"rows\": 87\n    },\n    {\n      \"table_name\": \"hardware_facts\",\n      \"rows\": 243\n    },\n    {\n      \"table_name\": \"hardware_snapshots\",\n      \"rows\": 142\n    },\n    {\n      \"table_name\": \"monitoring_funnel\",\n      \"rows\": 66\n    },\n    {\n      \"table_name\": \"entity_registry\",\n      \"rows\": 2104\n    },\n    {\n      \"table_name\": \"entity_profiles\",\n      \"rows\": 2104\n    },\n    {\n      \"table_name\": \"taxonomy_nodes\",\n      \"rows\": 113\n    },\n    {\n      \"table_name\": \"entity_relationships\",\n      \"rows\": 373\n    },\n    {\n      \"table_name\": \"qa_queue\",\n      \"rows\": 14674\n    }\n  ]\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Assert V4 data lake",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-08-27T05:31:26.030Z",
+      "finished_at": "2026-08-27T05:31:26.946Z",
+      "command": "node agent-workflow/tools/assert-data-lake-v4.mjs",
+      "stdout": "{\n  \"ok\": true,\n  \"contract_version\": \"DATA-LAKE-V4.1\",\n  \"expected_table_count\": 24,\n  \"jsonl_table_count\": 24,\n  \"jsonl_tables\": [\n    \"canonical_events\",\n    \"claims\",\n    \"entities\",\n    \"entity_mentions\",\n    \"entity_profiles\",\n    \"entity_registry\",\n    \"entity_relationships\",\n    \"event_claims\",\n    \"event_conflicts\",\n    \"event_sources\",\n    \"facet_assertions\",\n    \"fde_observations\",\n    \"fde_records\",\n    \"hardware_facts\",\n    \"hardware_records\",\n    \"hardware_snapshots\",\n    \"monitoring_funnel\",\n    \"qa_queue\",\n    \"raw_documents\",\n    \"relationships\",\n    \"reviewed_event_classifications\",\n    \"source_artifacts\",\n    \"tag_assertions\",\n    \"taxonomy_nodes\"\n  ],\n  \"missing_jsonl_tables\": [],\n  \"extra_jsonl_tables\": [],\n  \"forbidden_tables\": [],\n  \"duckdb_tables\": [\n    \"canonical_events\",\n    \"claims\",\n    \"entities\",\n    \"entity_mentions\",\n    \"entity_profiles\",\n    \"entity_registry\",\n    \"entity_relationships\",\n    \"event_claims\",\n    \"event_conflicts\",\n    \"event_sources\",\n    \"facet_assertions\",\n    \"fde_observations\",\n    \"fde_records\",\n    \"hardware_facts\",\n    \"hardware_records\",\n    \"hardware_snapshots\",\n    \"monitoring_funnel\",\n    \"qa_queue\",\n    \"raw_documents\",\n    \"relationships\",\n    \"reviewed_event_classifications\",\n    \"source_artifacts\",\n    \"tag_assertions\",\n    \"taxonomy_nodes\"\n  ],\n  \"row_counts\": {\n    \"canonical_events\": 2449,\n    \"claims\": 8569,\n    \"entities\": 2323,\n    \"entity_mentions\": 6160,\n    \"entity_profiles\": 2104,\n    \"entity_registry\": 2104,\n    \"entity_relationships\": 373,\n    \"event_claims\": 8569,\n    \"event_conflicts\": 3,\n    \"event_sources\": 2860,\n    \"facet_assertions\": 1973,\n    \"fde_observations\": 45,\n    \"fde_records\": 129,\n    \"hardware_facts\": 243,\n    \"hardware_records\": 87,\n    \"hardware_snapshots\": 142,\n    \"monitoring_funnel\": 66,\n    \"qa_queue\": 14674,\n    \"raw_documents\": 17509,\n    \"relationships\": 8569,\n    \"reviewed_event_classifications\": 2322,\n    \"source_artifacts\": 14707,\n    \"tag_assertions\": 1725,\n    \"taxonomy_nodes\": 113\n  },\n  \"issues\": []\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Refresh Guanlan Vault from origin/main",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-08-27T05:31:26.946Z",
+      "finished_at": "2026-08-27T05:32:37.976Z",
+      "command": "node agent-workflow/tools/sync-guanlan-vault-from-main.mjs --date=2026-08-27 --runtime-dir=C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight\\agent-workflow\\reports",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"date\": \"2026-08-27\",\n  \"source_commit\": \"41946079b7b4a53767ff294c74d84c6700f631d6\",\n  \"report\": \"agent-workflow/reports/2026-08-27-guanlan-vault-sync.json\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Publish Funding Portal to VPS",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-08-27T05:32:37.976Z",
+      "finished_at": "2026-08-27T05:32:59.950Z",
+      "command": "node C:\\Users\\86186\\Documents\\Fang\\repos\\Guanlan-Funding-Portal\\scripts\\publish-from-wavesight.mjs --wavesight-repo=C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"no_change\",\n  \"sourceCommit\": \"41946079b7b4a53767ff294c74d84c6700f631d6\",\n  \"latestDate\": \"2026-08-27\",\n  \"cards\": 280,\n  \"reports\": 12\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Refresh Skill discovery summary before final supervision",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-08-27T05:32:59.951Z",
+      "finished_at": "2026-08-27T05:33:02.082Z",
+      "command": "node agent-workflow/tools/build-skill-store-dashboard.mjs --output=C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight\\agent-workflow\\reports\\local-skill-store-data.js",
+      "stdout": "Wrote agent-workflow\\reports\\local-skill-store-data.js (167 skills)\nSkill Store dashboard contract passed: 167 skills.",
+      "stderr": ""
+    },
+    {
+      "label": "Final daily supervision",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-08-27T05:33:02.082Z",
+      "finished_at": "2026-08-27T05:33:22.336Z",
+      "command": "node agent-workflow/tools/write-daily-supervision-report.mjs --date=2026-08-27 --hermes=off --force-afternoon-window=true --output-dir=C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight\\agent-workflow\\reports",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"report\": \"agent-workflow/reports/2026-08-27-daily-supervision-report.json\",\n  \"markdown\": \"agent-workflow/reports/2026-08-27-daily-supervision-report.md\"\n}",
+      "stderr": "",
+      "health_status": "passed"
+    },
+    {
+      "label": "Evidence supply health",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-08-27T05:33:22.337Z",
+      "finished_at": "2026-08-27T05:33:22.521Z",
+      "command": "node agent-workflow/tools/write-evidence-supply-health-report.mjs --date=2026-08-27 --output-dir=C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight\\agent-workflow\\reports",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"review\",\n  \"report\": \"agent-workflow/reports/2026-08-27-evidence-supply-health.json\",\n  \"markdown\": \"agent-workflow/reports/2026-08-27-evidence-supply-health.md\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Recurring issue repair tasks",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-08-27T05:33:22.521Z",
+      "finished_at": "2026-08-27T05:33:22.719Z",
+      "command": "node agent-workflow/tools/write-recurring-production-incidents.mjs --date=2026-08-27 --days=7 --threshold=2 --reports-dir=C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight\\agent-workflow\\reports",
+      "stdout": "{\n  \"ok\": true,\n  \"date\": \"2026-08-27\",\n  \"window_days\": 7,\n  \"threshold\": 2,\n  \"recurring_issues\": 0,\n  \"created\": [],\n  \"existing\": [],\n  \"covered_by_resolved\": []\n}",
+      "stderr": ""
+    }
+  ],
+  "notes": [
+    "This is the final closure after the 16:10 First-Line Viewpoints window.",
+    "The local V4 JSONL and DuckDB serving layer is rebuilt here; no independent data-lake task is supported.",
+    "Accepted Funding Insights changes are validated, committed to the independent portal repository, and atomically deployed to the VPS here.",
+    "Lane findings remain isolated; the report records them without suppressing other lane results."
+  ],
+  "phase": "final-closure",
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T05:33:22.720Z",
+  "dry_run": false,
+  "scheduled_run": false,
+  "network_mode": "configured"
+}
