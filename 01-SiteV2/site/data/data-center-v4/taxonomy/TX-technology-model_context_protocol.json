@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -2596,6 +2596,9 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-4aff64511cfa8577",
+        "EV-892228f3d092004f",
+        "EV-bd5b6110559f2fda",
         "EV-2b9da4db831578a4",
         "EV-ebe3321efdf8023e",
         "EV-924d196a2412006f",
@@ -2829,6 +2832,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-42c656a8a7e0b362",
         "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
         "EV-da06805e06990d63",
@@ -2903,14 +2907,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-retail_ecommerce",
+        "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model",
-        "TX-target_user-consumer",
         "TX-target_user-developer",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
@@ -2920,7 +2926,6 @@
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
@@ -2928,7 +2933,6 @@
         "TX-industry-education",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
-        "TX-industry-retail_ecommerce",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-target_user-educator",
@@ -2942,6 +2946,7 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -2956,7 +2961,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -2966,7 +2970,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "EN-9d3508a8484ee252",
@@ -3085,12 +3089,16 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-6b668e4655192209",
+        "EV-b382525eb51777b9",
         "EV-9ed6a759555d7e77",
         "EV-2a78dd5feb40a78a",
         "EV-97854226b6f43a95",
@@ -3118,7 +3126,6 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
-        "EV-d2247eeac1478994",
         "EV-decbf1a34be68603",
         "EV-6272444f30281858",
         "EV-f55d16df5b5fecb2",
@@ -3231,15 +3238,20 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "EN-e473f24d4325d51a",
@@ -3287,6 +3299,7 @@
         "EV-d04d03b37046f0ad",
         "EV-6272444f30281858",
         "EV-b95539d17772a4ce",
+        "EV-91d15b11f487760c",
         "EV-c7d0b810ac3b3d4e",
         "EV-57fcbef33071910b",
         "EV-37b18c0341c66c08",
@@ -3299,15 +3312,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
+        "TX-product_form-enterprise_software_platform",
+        "TX-industry-retail_ecommerce",
         "TX-technology-speech_audio",
         "TX-industry-telecommunications",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-industry-retail_ecommerce",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
         "TX-technology-model_context_protocol",
@@ -3318,7 +3331,7 @@
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "EN-caf559f7830b566f",

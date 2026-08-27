@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -19,6 +19,7 @@
     "valueId": "mixture_of_experts",
     "eventIds": [
       "EV-80e54c9a390da293",
+      "EV-a0d58fe1616d1480",
       "EV-78651dfea74b4323",
       "EV-58e18eab1b072c9a",
       "EV-7e0d6eb92af58925",
@@ -35,6 +36,7 @@
       "EV-57597c92f7b183a9"
     ],
     "entityIds": [
+      "EN-047364b9be67f665",
       "EN-8d4321d936320802",
       "EN-f43fcac12953687c",
       "EN-e59f5a52b6713a29",
@@ -49,7 +51,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-06",
-    "lastSeen": "2026-08-21"
+    "lastSeen": "2026-08-27"
   },
   "events": [
     {
@@ -576,6 +578,129 @@
       "products": [],
       "sourceUrl": "https://techtimes.com/articles/319393/20260630/transformer-chip-startup-etched-exits-stealth-800m-raised-1b-contracts.htm",
       "publisher": "techtimes.com"
+    },
+    {
+      "id": "EV-a0d58fe1616d1480",
+      "dataDate": "2026-08-27",
+      "date": "2026-08-26",
+      "updatedDate": "2026-08-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里巴巴发布Qwen3.8-Flash-Next，主打“极致成本效益”",
+      "originalTitle": "Alibaba releases Qwen3.8-Flash-Next, targeting \"ultimate cost efficiency\"",
+      "subject": "Alibaba",
+      "action": "releases",
+      "object": "Qwen3.8-Flash-Next, targeting \"ultimate cost efficiency\"",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "mixture_of_experts",
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-75a2110ac1f80645"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "Qwen3.8-Flash-Next"
+      ],
+      "productName": "Qwen3.8-Flash-Next",
+      "products": [
+        {
+          "name": "Qwen3.8-Flash-Next",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/alibaba-releases-qwen3-8-flash-next-targeting-ultimate-cost-efficiency",
+      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-78651dfea74b4323",
@@ -3312,6 +3437,128 @@
   ],
   "entities": [
     {
+      "id": "EN-047364b9be67f665",
+      "name": "阿里巴巴",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-00514c4ffc2e3cd3",
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-56da7cceeebc8bcf",
+        "EV-cec68369662236fd",
+        "EV-caffb8981cecae2f",
+        "EV-2d9fde7bc0cd7a22",
+        "EV-c2b613b5a2fb1135",
+        "EV-ef2cd6bd912a6ed8",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-b99c318c66e1a295",
+        "EV-3d9aa640411471ea",
+        "EV-2a833330267cb2df",
+        "EV-a0d58fe1616d1480",
+        "EV-2a30e4a6a8033bcc",
+        "EV-c47112d137157d2d",
+        "EV-7a600ac040c304a2",
+        "EV-c87e32451657c301",
+        "EV-5fe819e7070b76e6",
+        "EV-defb496c46fcc604",
+        "EV-f7b81752b1fadd87",
+        "EV-5c30f52112d92491",
+        "EV-497344d95d593cf6",
+        "EV-0679a9b49b53ddbd",
+        "EV-355ddfd4c6180ab0",
+        "EV-4a6a0e6b6f50946c",
+        "EV-2791b442fd32b894",
+        "EV-d230942b0787581a",
+        "EV-2fa6949af5b36fb0",
+        "EV-4b286a3354cbf34a",
+        "EV-650e4b23d45d5758",
+        "EV-d2f8019b6783722f",
+        "EV-bfa090c78227abf8",
+        "EV-2e1352039c487bb0",
+        "EV-b4aa08aef57bdb0f",
+        "EV-1a241bcb4fad886c",
+        "EV-6654f62015eff8e3",
+        "EV-8b67e7ac8e61cc1e",
+        "EV-989631c550d89726",
+        "EV-94ad4a217508e6e0",
+        "EV-b43f22d8bc7fec3f",
+        "EV-b888d3eb5f192649",
+        "EV-f388f7ae2debeae8",
+        "EV-d08935b06ed9e7bb",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-a4f413441613beac",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-8692dfde7c3ef5b5",
+        "EV-710b145230faa692"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-video_generation",
+        "TX-technology-speech_audio",
+        "TX-technology-multimodal",
+        "TX-use_case-data_analysis",
+        "TX-product_form-ai_device",
+        "TX-technology-agentic_execution",
+        "TX-technology-computer_use",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [
+        "EN-52e3d014f9a275ea",
+        "EN-0b0c3b228202ab0a",
+        "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
+        "EN-d65d81c60c0c47c4"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-27",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
+    },
+    {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "entityType": "organization_candidate",
@@ -3324,6 +3571,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-6b668e4655192209",
+        "EV-b382525eb51777b9",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
@@ -3348,6 +3597,8 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-4aff64511cfa8577",
+        "EV-aa7f1c2c6933fdb1",
         "EV-fb33ae9b7f9454bf",
         "EV-0121f0a9e9a975ec",
         "EV-49119ae718691877",
@@ -3405,6 +3656,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-f41fe4d6189853cd",
+        "EV-127a04dfedc04e0c",
         "EV-2b529f1793d4230f",
         "EV-470c66c0e334794e",
         "EV-52c6ed0bb40311d1",
@@ -3499,6 +3752,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-00e6152baff47d4d",
         "EV-569e956899258a54",
         "EV-a3ccf873058bb406",
         "EV-36a49fa0e0b96d95",
@@ -3520,13 +3774,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-media_entertainment",
+        "TX-product_form-model",
         "TX-target_user-business_user",
+        "TX-industry-automotive_transportation",
+        "TX-industry-logistics_supply_chain",
+        "TX-industry-retail_ecommerce",
+        "TX-product_form-robotic_system",
+        "TX-use_case-physical_automation",
+        "TX-industry-media_entertainment",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
@@ -3547,23 +3806,18 @@
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-industry-agriculture",
-        "TX-industry-automotive_transportation",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-food_hospitality",
         "TX-industry-legal_services",
-        "TX-industry-logistics_supply_chain",
-        "TX-industry-retail_ecommerce",
         "TX-deployment_model-cloud",
         "TX-technology-embodied_ai",
         "TX-product_form-model_api_service",
         "TX-ai_market_application-chips",
-        "TX-product_form-robotic_system",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -3600,7 +3854,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "EN-f43fcac12953687c",
@@ -3645,10 +3899,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
+        "TX-technology-video_generation",
         "TX-technology-embodied_ai",
         "TX-technology-mixture_of_experts",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation"
+        "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-12",
@@ -3659,12 +3913,16 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-6b668e4655192209",
+        "EV-b382525eb51777b9",
         "EV-9ed6a759555d7e77",
         "EV-2a78dd5feb40a78a",
         "EV-97854226b6f43a95",
@@ -3692,7 +3950,6 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
-        "EV-d2247eeac1478994",
         "EV-decbf1a34be68603",
         "EV-6272444f30281858",
         "EV-f55d16df5b5fecb2",
@@ -3805,15 +4062,20 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-27"
     },
     {
       "id": "EN-0d1e478de2157d48",
@@ -3942,8 +4204,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-media_entertainment",
         "TX-product_form-model",
+        "TX-use_case-physical_automation",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
@@ -3952,13 +4216,11 @@
         "TX-use_case-software_development",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-technology-video_generation"
+        "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",

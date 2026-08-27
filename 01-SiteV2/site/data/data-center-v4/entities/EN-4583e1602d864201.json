@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-4583e1602d864201",
+    "name": "SendFeedback",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-437a3e3d118f36e9"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-27",
+    "lastSeen": "2026-08-27",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-437a3e3d118f36e9"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-437a3e3d118f36e9",
+        "dataDate": "2026-08-27",
+        "date": "2026-08-27",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.247 发布：新增 SendFeedback 工具与 /claude-api 成本优化",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cb4754c48f8023d0",
+          "EN-4583e1602d864201"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

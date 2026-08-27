@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "relationships": [
@@ -22,21 +22,20 @@
       "object_type": "entity",
       "event_id": "EV-d2247eeac1478994",
       "claim_refs": [
-        "CL-38fa6cdd7dc67c46",
-        "CL-b149f41c34d92135",
-        "CL-aafc30cd91c435bd"
+        "CL-394fd9b33979ac99",
+        "CL-30dc256fed497642"
       ],
       "source_refs": [
         "SA-0c51a7494cf30977"
       ],
-      "data_date": "2026-08-26",
+      "data_date": "2026-08-27",
       "status": "verified",
       "subjectName": "AMD",
       "objectName": "Anthropic",
       "predicateLabel": "合作",
       "title": "AMD 合作 Anthropic",
       "eventTitle": "AMD推进AI 2026",
-      "eventDate": "2026-08-26",
+      "eventDate": "2026-08-27",
       "sourceCount": 1
     },
     {
@@ -423,6 +422,31 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-5a2b9cfd6f0b1ca6",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e65e0f2695fa259d",
+      "object_type": "entity",
+      "event_id": "EV-875b31b96ff689df",
+      "claim_refs": [
+        "CL-f441b70d1bca16ef"
+      ],
+      "source_refs": [
+        "SA-2bc62681d0b05bdb"
+      ],
+      "data_date": "2026-08-13",
+      "status": "verified",
+      "subjectName": "Anthropic",
+      "objectName": "Claude Cowork",
+      "predicateLabel": "发布",
+      "title": "Anthropic 发布 Claude Cowork",
+      "eventTitle": "Claude 打破平台壁垒：Chrome 侧边栏 AI 对话互通全平台历史记录",
+      "eventDate": "2026-08-13",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-ddc331c7e06a63b8",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-7d3194f79e645c42",
@@ -532,34 +556,6 @@
       "title": "AWS 合作 Amazon",
       "eventTitle": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
       "eventDate": "2026-08-03",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-a675a7f7bd02161e",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-307557d99a7eb726",
-      "object_type": "entity",
-      "event_id": "EV-5e85bc91a6924760",
-      "claim_refs": [
-        "CL-e195d7727b181bec",
-        "CL-39ec4a2b7d6bd317",
-        "CL-f2323adffd6b687f",
-        "CL-0bc77417b3b9ac0e"
-      ],
-      "source_refs": [
-        "SA-409f38aff93df4c5"
-      ],
-      "data_date": "2026-08-03",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Gemini Spark",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Gemini Spark",
-      "eventTitle": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
-      "eventDate": "2026-08-02",
       "sourceCount": 1
     },
     {
@@ -1294,6 +1290,33 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-62f415d53b9e1307",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-688f8db7018da7d4",
+      "object_type": "entity",
+      "event_id": "EV-82ae0ea3bfe336a1",
+      "claim_refs": [
+        "CL-5fced5cf18afc959",
+        "CL-7c22f66cabb9a37c",
+        "CL-d5a4e0b10c930ed2"
+      ],
+      "source_refs": [
+        "SA-f35e060050d33489"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "MAI-Voice-2-Flash",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 MAI-Voice-2-Flash",
+      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
+      "eventDate": "2026-07-24",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-82d95dce19bccd53",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-febedfcafee9d610",
@@ -1368,6 +1391,33 @@
       "title": "Anthropic 发布 Claude Code",
       "eventTitle": "Anthropic 发布 Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
       "eventDate": "2026-07-23",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-dceee7ada64357c1",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-827b607311e6593e",
+      "object_type": "entity",
+      "event_id": "EV-82ae0ea3bfe336a1",
+      "claim_refs": [
+        "CL-5fced5cf18afc959",
+        "CL-9fea9adc5b3b6d08",
+        "CL-7c22f66cabb9a37c"
+      ],
+      "source_refs": [
+        "SA-f35e060050d33489"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "MAI-Image-2.5-Pro",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 MAI-Image-2.5-Pro",
+      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
+      "eventDate": "2026-07-24",
       "sourceCount": 1
     },
     {
@@ -1497,6 +1547,33 @@
       "predicateLabel": "发布",
       "title": "Ushur 发布 Ushur Agentic Platform",
       "eventTitle": "Ushur 推出 Ushur 智能体平台：能完成任务的 AI 智能体",
+      "eventDate": "2026-07-22",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-899fe78a63eda569",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-068e7ccb7d4b07a6",
+      "object_type": "entity",
+      "event_id": "EV-e1e30a2a4a5232c6",
+      "claim_refs": [
+        "CL-34fddab81951af35",
+        "CL-8b238746e8f2c8ba",
+        "CL-3c62d52890307500"
+      ],
+      "source_refs": [
+        "SA-c75b1e326457605e"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "Copilot",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 Copilot",
+      "eventTitle": "微软 Win11 RP 预览版文件管理器新增 Copilot 按钮",
       "eventDate": "2026-07-22",
       "sourceCount": 1
     },
@@ -2059,34 +2136,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-9ad2c97e765910d9",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-18f0900d6c487f59",
-      "object_type": "entity",
-      "event_id": "EV-597b8257a97b3d02",
-      "claim_refs": [
-        "CL-bcf6cc5593de2a0f",
-        "CL-1407e158e3017631",
-        "CL-bcccc3f03d4b38a9",
-        "CL-910d21a1f5ab0b3c"
-      ],
-      "source_refs": [
-        "SA-a3cf2c06935ba536"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Gemini 3.6 Flash",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Gemini 3.6 Flash",
-      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
-      "eventDate": "2026-07-21",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-a2a2d52284004533",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-ac123e56b0168ec2",
@@ -2162,33 +2211,6 @@
       "predicateLabel": "发布",
       "title": "阿里巴巴 发布 Qwen-Image-3.0",
       "eventTitle": "阿里巴巴的Qwen-Image-3.0单次生成完整信息图网格及可读的十像素文字",
-      "eventDate": "2026-07-21",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-ddbd67ee39ac2096",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-31055a8d9856fce4",
-      "object_type": "entity",
-      "event_id": "EV-597b8257a97b3d02",
-      "claim_refs": [
-        "CL-1407e158e3017631",
-        "CL-bcccc3f03d4b38a9",
-        "CL-910d21a1f5ab0b3c"
-      ],
-      "source_refs": [
-        "SA-a3cf2c06935ba536"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Gemini 3.5 Flash Cyber",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Gemini 3.5 Flash Cyber",
-      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
       "eventDate": "2026-07-21",
       "sourceCount": 1
     },
@@ -3160,6 +3182,33 @@
       "sourceCount": 3
     },
     {
+      "relationship_id": "REL2-a2d037d3ca0eff3e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-597d8c4afa5fe3d6",
+      "object_type": "entity",
+      "event_id": "EV-7c899d5decafc42f",
+      "claim_refs": [
+        "CL-4154aa4e461163c9",
+        "CL-a3cd2bba9a1d055b",
+        "CL-837c7d367f0c26ce"
+      ],
+      "source_refs": [
+        "SA-c532d10bfc903c0c"
+      ],
+      "data_date": "2026-07-17",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "Visual Studio Code 1.129",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 Visual Studio Code 1.129",
+      "eventTitle": "微软发布 Visual Studio Code 1.129 正式版更新，现代 UI 抢先看",
+      "eventDate": "2026-07-16",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-ca465b8d8d369d14",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-d36e5a1a7a3c45ce",
@@ -3541,34 +3590,6 @@
       "predicateLabel": "服务",
       "title": "OpenAI 服务 Anthropic",
       "eventTitle": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元",
-      "eventDate": "2026-07-15",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-f92ee2f782a8185b",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-0e008e2c06144ec8",
-      "object_type": "entity",
-      "event_id": "EV-6359c9f6c2609a38",
-      "claim_refs": [
-        "CL-3c3d4af5e069787d",
-        "CL-714aa682873fac8b",
-        "CL-b606f6b126922962",
-        "CL-4a7039df083c3152"
-      ],
-      "source_refs": [
-        "SA-b894cd4477812b65"
-      ],
-      "data_date": "2026-07-16",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Nano Banana",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Nano Banana",
-      "eventTitle": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
       "eventDate": "2026-07-15",
       "sourceCount": 1
     },
@@ -5628,34 +5649,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-638b55900181fbf2",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-01f1074bb52ff605",
-      "object_type": "entity",
-      "event_id": "EV-d8c69ed782b73a34",
-      "claim_refs": [
-        "CL-b5bc8b4e766de0ef",
-        "CL-dbee760c0db43fab",
-        "CL-72f47e56c761bde4",
-        "CL-9fdeb9adf922c9da"
-      ],
-      "source_refs": [
-        "SA-cb3a20fe357ba722"
-      ],
-      "data_date": "2026-07-01",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Nano Banana 2 Lite",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Nano Banana 2 Lite",
-      "eventTitle": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
-      "eventDate": "2026-07-01",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-65389a75e3085862",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -6846,33 +6839,6 @@
       "title": "Sakana AI 发布 Sakana Fugu",
       "eventTitle": "Sakana AI 发布多智能体编排系统 Sakana Fugu，对外表现为单一模型",
       "eventDate": "2026-06-23",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-7a95bce5aecaba79",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-2ab6d53e717a0e0d",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-bbdefa2950f49882",
-      "object_type": "entity",
-      "event_id": "EV-d1a3f5c8045e548d",
-      "claim_refs": [
-        "CL-5758242d40096958",
-        "CL-108011dcac3f51c9",
-        "CL-6816c5ea4abdfa87"
-      ],
-      "source_refs": [
-        "SA-572f0e8d4b983d74"
-      ],
-      "data_date": "2026-06-23",
-      "status": "verified",
-      "subjectName": "诺基亚",
-      "objectName": "Google",
-      "predicateLabel": "合作",
-      "title": "诺基亚 合作 Google",
-      "eventTitle": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
-      "eventDate": "2026-06-22",
       "sourceCount": 1
     },
     {
@@ -8263,34 +8229,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-44ebd8a7378accce",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-d56aa2f9908f566a",
-      "object_type": "entity",
-      "event_id": "EV-22b8d155ce027905",
-      "claim_refs": [
-        "CL-0ffd4a87d0bf9a23",
-        "CL-9a3abffb4df3b677",
-        "CL-53bc4ba62a2c55fb",
-        "CL-c0d954c60d8247d3"
-      ],
-      "source_refs": [
-        "SA-30fb0e04917bc0f3"
-      ],
-      "data_date": "2026-06-11",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "DiffusionGemma",
-      "predicateLabel": "发布",
-      "title": "Google 发布 DiffusionGemma",
-      "eventTitle": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
-      "eventDate": "2026-06-11",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-48cdf6bd8d397fed",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -8692,34 +8630,6 @@
       "title": "Anthropic 发布 Mythos 5",
       "eventTitle": "Anthropic 发布 Claude Fable 5 和 Mythos 5，编程和科学能力大幅提升",
       "eventDate": "2026-06-10",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-4aa175c42153e014",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-4baef0e41cbd7ae2",
-      "object_type": "entity",
-      "event_id": "EV-4a3cb762183581cd",
-      "claim_refs": [
-        "CL-b487cc8855f09bf4",
-        "CL-5b9c208e3329948f",
-        "CL-a0bae28c89384d4f",
-        "CL-c2d89368f69456e3"
-      ],
-      "source_refs": [
-        "SA-b6f2cdfb3b2eff0e"
-      ],
-      "data_date": "2026-06-10",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Gemini 3.5 Live Translate",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Gemini 3.5 Live Translate",
-      "eventTitle": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
-      "eventDate": "2026-06-09",
       "sourceCount": 1
     },
     {
@@ -9933,6 +9843,33 @@
       "title": "StepFun 发布 StepAudio 2.5 Realtime",
       "eventTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
       "eventDate": "2026-05-25",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-9795f8e6814470a6",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-10fce287b4b1464c",
+      "object_type": "entity",
+      "event_id": "EV-a4f052325d0ef230",
+      "claim_refs": [
+        "CL-4c50bbc497deaee1",
+        "CL-25b9389df0e0f06f",
+        "CL-eece65ce191fb7c6"
+      ],
+      "source_refs": [
+        "SA-af9b5cefb039de38"
+      ],
+      "data_date": "2026-05-23",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "Fara1.5",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 Fara1.5",
+      "eventTitle": "微软推出 Fara1.5 系列浏览器 AI 智能体模型，72% 任务成功率超 OpenAI Operator",
+      "eventDate": "2026-05-23",
       "sourceCount": 1
     },
     {

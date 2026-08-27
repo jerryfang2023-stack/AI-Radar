@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-c24d9dd17f3f5869",
+    "name": "Jetson Orin Nano",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-127a04dfedc04e0c"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-08-27",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-127a04dfedc04e0c"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-127a04dfedc04e0c",
+        "dataDate": "2026-08-27",
+        "date": "2026-08-26",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "NVIDIA Jetson Orin Nano 2 发布，将物理 AI 带入无人机与机器人",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-62fcbf9b9027cde3",
+          "EN-c24d9dd17f3f5869"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-f05a371d8e0599b0",
+      "eventId": "EV-127a04dfedc04e0c",
+      "dataDate": "2026-08-27",
+      "date": "2026-08-26",
+      "title": "NVIDIA Jetson Orin Nano 2 发布，将物理 AI 带入无人机与机器人",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://artificialintelligence-news.com/news/nvidia-jetson-orin-nano-2-physical-ai-to-drones-and-robots",
+      "sourceName": "Artificial Intelligence News（RSS）",
+      "sourceDate": "2026-08-26",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-62fcbf9b9027cde3",
+        "EN-c24d9dd17f3f5869"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-5ef488ccd04ecc0a",
+      "snapshotKey": "5ef488ccd04ecc0a",
+      "snapshotId": "HWS-3174878b75abd334",
+      "eventId": "EV-127a04dfedc04e0c",
+      "eventIds": [
+        "EV-127a04dfedc04e0c",
+        "EV-2b529f1793d4230f"
+      ],
+      "dataDate": "2026-08-27",
+      "date": "2026-08-27",
+      "title": "Jetson Orin Nano 2 / Jetson Orin Nano",
+      "subject": "NVIDIA",
+      "productNames": [
+        "Jetson Orin Nano 2",
+        "Jetson Orin Nano"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c4827ca7bd53d2cd"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-27",
+          "previousDate": "2026-08-26",
+          "snapshotId": "HWS-3174878b75abd334",
+          "previousSnapshotId": "HWS-d94f6134ff165ba9",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-c4827ca7bd53d2cd",
+          "fact_type": "product",
+          "observed_at": "2026-08-26T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-62fcbf9b9027cde3",
+            "EN-c24d9dd17f3f5869"
+          ],
+          "product_names": [
+            "Jetson Orin Nano 2",
+            "Jetson Orin Nano"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "NVIDIA has unveiled the Jetson Orin Nano 2, an edge robotics computer aimed at bringing physical AI to drones, robots, and vision systems. The company is positioning the new board as an entry-level option for developers who want generative AI models running directly on a machine instead of inside a data centre.",
+          "event_refs": [
+            "EV-127a04dfedc04e0c"
+          ],
+          "claim_ref": "CL-2181ff5c3284882f",
+          "source_refs": [
+            "SA-44790839076188b5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://artificialintelligence-news.com/news/nvidia-jetson-orin-nano-2-physical-ai-to-drones-and-robots",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-62fcbf9b9027cde3",
+        "EN-c24d9dd17f3f5869"
+      ]
+    }
+  ]
+}

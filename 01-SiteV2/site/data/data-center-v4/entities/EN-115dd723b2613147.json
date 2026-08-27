@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-115dd723b2613147",
+    "name": "NVHBM",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f41fe4d6189853cd"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-27",
+    "lastSeen": "2026-08-27",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-f41fe4d6189853cd"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f41fe4d6189853cd",
+        "dataDate": "2026-08-27",
+        "date": "2026-08-27",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "英伟达推出 NVHBM 定制高带宽内存：相比 HBM4e 带宽提升 30%、功耗降低 15%",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-115dd723b2613147"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-5b15ed073a6c990b",
+      "snapshotKey": "5b15ed073a6c990b",
+      "snapshotId": "HWS-7928416ea38b0cb3",
+      "eventId": "EV-f41fe4d6189853cd",
+      "eventIds": [
+        "EV-f41fe4d6189853cd"
+      ],
+      "dataDate": "2026-08-27",
+      "date": "2026-08-27",
+      "title": "NVHBM",
+      "subject": "NVIDIA",
+      "productNames": [
+        "NVHBM"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-bd12fb8372025e8d"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-8a0a271ef5105dc1",
+          "fact_type": "specification",
+          "observed_at": "2026-08-27T00:07:15.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-115dd723b2613147"
+          ],
+          "product_names": [
+            "NVHBM"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英伟达称，NVHBM 已经与“领先的内存厂商”共同完成设计和验证，因此，对于开发定制芯片的厂商来说，相比从零开始采用标准 HBM，NVHBM 有望帮助其更快推出产品。",
+          "event_refs": [
+            "EV-f41fe4d6189853cd"
+          ],
+          "claim_ref": "CL-75de8df668058544",
+          "source_refs": [
+            "SA-eae164b5cb0e003d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-27",
+          "hardware_fact_id": "HWF-bd12fb8372025e8d",
+          "fact_type": "specification",
+          "observed_at": "2026-08-27T00:07:15.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-115dd723b2613147"
+          ],
+          "product_names": [
+            "NVHBM"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "不过需要强调的是，NVHBM 并不是 HBM 的替代品，而是英伟达专门向定制芯片合作伙伴提供的一种全新基础组件。",
+          "event_refs": [
+            "EV-f41fe4d6189853cd"
+          ],
+          "claim_ref": "CL-ba3c45e16f51ae29",
+          "source_refs": [
+            "SA-eae164b5cb0e003d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/994/806.htm",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-115dd723b2613147"
+      ]
+    }
+  ]
+}

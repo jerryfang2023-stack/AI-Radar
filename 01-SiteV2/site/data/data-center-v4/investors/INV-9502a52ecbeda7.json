@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
+    "quarantinedEventCount": 23
+  },
+  "institution": {
+    "id": "INV-9502a52ecbeda7",
+    "name": "Goodyear Ventures",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "first_disclosed_at": "2026-08-26",
+    "latest_disclosed_at": "2026-08-26",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-ea06a49eb115d4a4",
+        "funding_insight_id": "FI-9e3ed4fa47d92efa",
+        "event_ids": [
+          "EV-140ecf4fabe544ba"
+        ],
+        "company_entity_id": "EN-a31f26263a2fe821",
+        "company_canonical_entity_id": "",
+        "company_name": "Gatik",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$200M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-08-26",
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "参投C轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7dc8a65571f189f0",
+            "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+            "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+            "source_content_hash": "8b96227297e6e9e1",
+            "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+            "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7dc8a65571f189f0",
+        "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
+        "source_title": "Gatik Raises $85M in Series C | SalesTools AI",
+        "source_content_hash": "8b96227297e6e9e1",
+        "quote": "Gatik has successfully raised $85M in a Series C at a $700M valuation led by Koch Industries, Itochu, Goodyear Ventures, Intact Ventures, Innovation Endeavors.",
+        "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
+      }
+    ]
+  }
+}

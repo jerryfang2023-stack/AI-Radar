@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -27,8 +27,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-speech_audio",
-      "TX-technology-video_generation"
+      "TX-technology-video_generation",
+      "TX-technology-speech_audio"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-17",
@@ -111,6 +111,61 @@
   "relationships": [],
   "taxonomyNodes": [
     {
+      "id": "TX-technology-video_generation",
+      "name": "视频生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "video_generation",
+      "eventIds": [
+        "EV-a46f31c7db36c728",
+        "EV-d80c43b35418e74d",
+        "EV-caffb8981cecae2f",
+        "EV-522c339dded54be5",
+        "EV-a354af52772334fd",
+        "EV-26d2874c6ce028d6",
+        "EV-25b88403a237969f",
+        "EV-2a30e4a6a8033bcc",
+        "EV-c698da7da473b059",
+        "EV-2791b442fd32b894",
+        "EV-10c4f4db6c3f2d72",
+        "EV-63858d9b5ef92175",
+        "EV-650e4b23d45d5758",
+        "EV-6654f62015eff8e3",
+        "EV-50893df365a7097d",
+        "EV-6fbbbfcdcec81df4",
+        "EV-fd8ecce5de2f667d",
+        "EV-5babb43f4b4d302f",
+        "EV-d8c69ed782b73a34",
+        "EV-c7404765df94a3b4",
+        "EV-473f852b374d8b1c",
+        "EV-887d47bb477e2142",
+        "EV-9766c0f1ac902595"
+      ],
+      "entityIds": [
+        "EN-50b2676afbe30c83",
+        "EN-478676438ee161a3",
+        "EN-047364b9be67f665",
+        "EN-e1517be14d06cdb7",
+        "EN-d747d6f5125b6bee",
+        "EN-b81c8201acfc7639",
+        "EN-031f4a060a67e7af",
+        "EN-e59f5a52b6713a29",
+        "EN-422332977c41eb77",
+        "EN-c9e6168149dd7cf6",
+        "EN-ec1c8f558ff61e34",
+        "EN-2b6e51bec93e86c1",
+        "EN-01f1074bb52ff605",
+        "EN-47c1e53c427aafb4",
+        "EN-5388bc10736a0eff"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-68457c8c0a7240ac"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-08-27"
+    },
+    {
       "id": "TX-technology-speech_audio",
       "name": "语音与音频",
       "nodeType": "technology",
@@ -152,58 +207,6 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-26"
-    },
-    {
-      "id": "TX-technology-video_generation",
-      "name": "视频生成",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "video_generation",
-      "eventIds": [
-        "EV-d80c43b35418e74d",
-        "EV-caffb8981cecae2f",
-        "EV-522c339dded54be5",
-        "EV-a354af52772334fd",
-        "EV-26d2874c6ce028d6",
-        "EV-2a30e4a6a8033bcc",
-        "EV-c698da7da473b059",
-        "EV-2791b442fd32b894",
-        "EV-10c4f4db6c3f2d72",
-        "EV-63858d9b5ef92175",
-        "EV-650e4b23d45d5758",
-        "EV-6654f62015eff8e3",
-        "EV-50893df365a7097d",
-        "EV-6fbbbfcdcec81df4",
-        "EV-fd8ecce5de2f667d",
-        "EV-5babb43f4b4d302f",
-        "EV-d8c69ed782b73a34",
-        "EV-c7404765df94a3b4",
-        "EV-473f852b374d8b1c",
-        "EV-887d47bb477e2142",
-        "EV-9766c0f1ac902595"
-      ],
-      "entityIds": [
-        "EN-478676438ee161a3",
-        "EN-047364b9be67f665",
-        "EN-e1517be14d06cdb7",
-        "EN-d747d6f5125b6bee",
-        "EN-b81c8201acfc7639",
-        "EN-031f4a060a67e7af",
-        "EN-e59f5a52b6713a29",
-        "EN-422332977c41eb77",
-        "EN-c9e6168149dd7cf6",
-        "EN-ec1c8f558ff61e34",
-        "EN-2b6e51bec93e86c1",
-        "EN-01f1074bb52ff605",
-        "EN-47c1e53c427aafb4",
-        "EN-5388bc10736a0eff"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-68457c8c0a7240ac"
-      ],
-      "firstSeen": "2026-06-16",
       "lastSeen": "2026-08-26"
     }
   ],

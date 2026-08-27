@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "institution": {
@@ -20,12 +20,13 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "first_disclosed_at": "2026-03-11",
-    "latest_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 1,
       "participant": 1
     },
@@ -34,12 +35,55 @@
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-a31f26263a2fe821",
+        "canonical_entity_id": "",
+        "name": "Gatik"
+      },
+      {
         "entity_id": "EN-53b69ef92c836777",
         "canonical_entity_id": "",
         "name": "Replit"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2a9b7de94ce1372a",
+        "funding_insight_id": "FI-9e3ed4fa47d92efa",
+        "event_ids": [
+          "EV-140ecf4fabe544ba"
+        ],
+        "company_entity_id": "EN-a31f26263a2fe821",
+        "company_canonical_entity_id": "",
+        "company_name": "Gatik",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$200M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-08-26",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-36551c55b72c6244",
+            "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+            "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+            "source_content_hash": "c68350682f12d445",
+            "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+            "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fed01d0fad1df030",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
@@ -118,6 +162,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-36551c55b72c6244",
+        "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
+        "source_title": "Gatik 获 2 亿美元 D 轮融资，扩大 AI 自动驾驶货运业务",
+        "source_content_hash": "c68350682f12d445",
+        "quote": "The round was led by Qatar Investment Authority and Koch Disruptive Technologies, with participation from Millennium Management, ARK Invest, Intact Private Capital, and other investors.",
+        "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
+      },
       {
         "source_id": "FISRC-46e8b046ae7a64f0",
         "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",

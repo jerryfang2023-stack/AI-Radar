@@ -2,38 +2,38 @@
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
-    "data_date": "2026-08-26",
-    "generated_at": "2026-08-26T03:48:25.195Z",
+    "data_date": "2026-08-27",
+    "generated_at": "2026-08-27T04:15:20.222Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 250,
-    "capture_failed": 11,
-    "raw_documents": 250
+    "capture_succeeded": 236,
+    "capture_failed": 0,
+    "raw_documents": 236
   },
   "fact_build": {
-    "accepted_claims": 98,
+    "accepted_claims": 104,
     "rejected_claims": 0,
-    "accepted": 98,
+    "accepted": 104,
     "rejected": 0,
     "pending_claims": 1,
-    "canonical_events": 37,
-    "entities": 50,
-    "relationships": 99,
+    "canonical_events": 42,
+    "entities": 54,
+    "relationships": 105,
     "conflicts": 0,
-    "qa_queue": 214,
+    "qa_queue": 195,
     "qa_by_status": {
-      "review_optional": 194,
-      "open": 20
+      "review_optional": 180,
+      "open": 15
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-08-26",
-    "gate_date": "2026-08-26",
+    "manifest_date": "2026-08-27",
+    "gate_date": "2026-08-27",
     "failures": [],
     "warnings": [
       "No source-bounded FDE projection was produced."
@@ -42,7 +42,7 @@
   "application_projection": {
     "opportunity_map": "passed",
     "trend_radar": "passed",
-    "funding_insights": "passed",
+    "funding_insights": "failed",
     "fde_hardware_sync": "passed"
   },
   "publication": {
@@ -52,16 +52,16 @@
     {
       "id": "collection",
       "label": "采集",
-      "status": "partial",
+      "status": "passed",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 250,
-        "capture_failed": 11,
-        "raw_documents": 250
+        "capture_succeeded": 236,
+        "capture_failed": 0,
+        "raw_documents": 236
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/manifest.json",
-        "agent-workflow/reports/2026-08-26-guanlan-daily-monitor-log.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/manifest.json",
+        "agent-workflow/reports/2026-08-27-guanlan-daily-monitor-log.md"
       ]
     },
     {
@@ -69,34 +69,34 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 98,
+        "accepted_claims": 104,
         "rejected_claims": 0,
-        "accepted": 98,
+        "accepted": 104,
         "rejected": 0,
         "pending_claims": 1,
-        "canonical_events": 37,
-        "entities": 50,
-        "relationships": 99,
+        "canonical_events": 42,
+        "entities": 54,
+        "relationships": 105,
         "conflicts": 0,
-        "qa_queue": 214
+        "qa_queue": 195
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/manifest.json",
-        "agent-workflow/reports/2026-08-26-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/manifest.json",
+        "agent-workflow/reports/2026-08-27-data-center-v4-integrity-gate.json"
       ]
     },
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "passed",
+      "status": "partial",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "passed",
+        "funding_insights": "failed",
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-26-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-27-persistent-asset-manifest.json"
       ]
     },
     {
@@ -107,7 +107,7 @@
         "v4_bundle_ready": true
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-26-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-27-persistent-asset-manifest.json"
       ]
     }
   ],

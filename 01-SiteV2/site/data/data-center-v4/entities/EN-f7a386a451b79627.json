@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-26T03:48:12.127Z",
-    "latestDataDate": "2026-08-26",
-    "currentDate": "2026-08-26",
-    "eventCount": 2391,
+    "generatedAt": "2026-08-27T04:15:06.943Z",
+    "latestDataDate": "2026-08-27",
+    "currentDate": "2026-08-27",
+    "eventCount": 2426,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-32363cb5970acdea",
       "EV-e2da1aafabb3e09c"
     ],
     "viewpointIds": [],
@@ -32,7 +33,7 @@
       "EN-bc1fc5140040180e"
     ],
     "firstSeen": "2026-06-18",
-    "lastSeen": "2026-06-28",
+    "lastSeen": "2026-08-27",
     "relationIds": [
       "REL2-1b03607242e20f5b"
     ],
@@ -41,6 +42,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-32363cb5970acdea",
         "EV-e2da1aafabb3e09c"
       ],
       "hardware": [],
@@ -48,6 +50,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-32363cb5970acdea",
+        "dataDate": "2026-08-27",
+        "date": "2026-08-26",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Z.ai 证实 Ox Alpha 是其 GLM 系列新模型，将于周三开源权重",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f7a386a451b79627",
+          "EN-8baf7a7bbe2db6cb"
+        ]
+      },
       {
         "id": "EV-e2da1aafabb3e09c",
         "dataDate": "2026-06-28",
@@ -142,6 +160,7 @@
         "EV-0121f0a9e9a975ec",
         "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-b1b396e6ba2fe208",
         "EV-2afe102017e1b21c",
         "EV-78651dfea74b4323",
         "EV-0d5a32aca724d30e",
@@ -177,9 +196,9 @@
       "entityIds": [
         "EN-29b9f0cae32e7a8a",
         "EN-bd6769fe78d0971a",
+        "EN-ea3bd73e2b506e00",
         "EN-7d3194f79e645c42",
         "EN-1ea953e1dbed6788",
-        "EN-ea3bd73e2b506e00",
         "EN-8d4321d936320802",
         "EN-e59f5a52b6713a29",
         "EN-a899a3dde1d51caf",
@@ -207,7 +226,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-27"
     }
   ],
   "fde": [],
