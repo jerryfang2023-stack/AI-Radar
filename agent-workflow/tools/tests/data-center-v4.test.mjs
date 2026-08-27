@@ -978,6 +978,75 @@ test("entity extraction recovers claim subjects and described Chinese funding co
     [{ subject: "具身数据来了实战派！40天2轮", source_quote: fundingQuote }],
   );
   assert.ok(fundingMatches.some((item) => item.canonicalName === "元点科技" && item.source === "claim_evidence"));
+
+  const runableQuote = "As artificial intelligence makes it easier to build websites, Indian startup Runable is betting on growth. The startup has raised $21 million.";
+  const runableMatches = organizationMentions(
+    "Runable 获 2100 万美元融资",
+    { subject: "Runable 获 2100 万美元", action: "融资", object: "" },
+    "funding",
+    runableQuote,
+    [{ subject: "Runable 获 2100 万美元", source_quote: runableQuote }],
+  );
+  assert.ok(runableMatches.some((item) => item.canonicalName === "Runable" && item.source === "claim_evidence"));
+
+  const instinctQuote = "Viral AI startup Instinct has raised $350 million at a $2.5 billion valuation.";
+  const instinctMatches = organizationMentions(
+    "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
+    { subject: "爆火AI初创公司Instinct以25亿美元估值", action: "融资", object: "3.5亿美元" },
+    "funding",
+    instinctQuote,
+    [{ subject: "爆火AI初创公司Instinct以25亿美元估值", source_quote: instinctQuote }],
+  );
+  assert.ok(instinctMatches.some((item) => item.canonicalName === "Instinct" && item.source === "claim_evidence"));
+
+  const roleBoundedQuote = "AI startup Acme CEO Jane Doe said the company has raised $25 million.";
+  const roleBoundedMatches = organizationMentions(
+    "Acme 融资 2500 万美元",
+    { subject: "", action: "融资", object: "2500 万美元" },
+    "funding",
+    roleBoundedQuote,
+    [{ subject: "", source_quote: roleBoundedQuote }],
+  );
+  assert.deepEqual(roleBoundedMatches.map((item) => item.canonicalName), ["Acme"]);
+
+  const roleOnlyQuote = "The AI startup CEO Jane Doe said the company has raised $25 million.";
+  assert.deepEqual(organizationMentions(
+    roleOnlyQuote,
+    { subject: "", action: "融资", object: "2500 万美元" },
+    "funding",
+    roleOnlyQuote,
+    [{ subject: "", source_quote: roleOnlyQuote }],
+  ), []);
+
+  for (const role of ["Founder", "Co-Founder", "Chief Executive Officer", "President"]) {
+    const roleQuote = `The AI startup ${role} Jane Doe said the company has raised $25 million.`;
+    assert.deepEqual(organizationMentions(
+      roleQuote,
+      { subject: "", action: "融资", object: "2500 万美元" },
+      "funding",
+      roleQuote,
+      [{ subject: "", source_quote: roleQuote }],
+    ), [], role);
+  }
+
+  const roundBoundedQuote = "Startup Acme Series A funding has raised $25 million.";
+  const roundBoundedMatches = organizationMentions(
+    "Acme A 轮融资 2500 万美元",
+    { subject: "", action: "融资", object: "2500 万美元" },
+    "funding",
+    roundBoundedQuote,
+    [{ subject: "", source_quote: roundBoundedQuote }],
+  );
+  assert.deepEqual(roundBoundedMatches.map((item) => item.canonicalName), ["Acme"]);
+
+  const noFundingQuote = "AI startup Acme CEO Jane Doe announced a product update.";
+  assert.deepEqual(organizationMentions(
+    "AI startup Acme product update",
+    { subject: "", action: "融资", object: "" },
+    "funding",
+    noFundingQuote,
+    [{ subject: "", source_quote: noFundingQuote }],
+  ), []);
 });
 
 test("an earlier release verb preserves the organization when deployment determines the event type", () => {
