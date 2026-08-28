@@ -1,6 +1,6 @@
 # Guanlan Skill Registry
 
-Last updated: 2026-08-23
+Last updated: 2026-08-28
 
 Skill Store version: v2.0.1 (2026-08-01)
 
