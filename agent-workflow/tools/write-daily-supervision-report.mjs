@@ -919,9 +919,9 @@ function buildCommunityLane() {
   const localWindowPassed = hasWindowPassed(date, "08:45");
   const publishWindowPassed = hasWindowPassed(date, "09:50");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
-  const gateFile = path.join(reportsDir, `${date}-community-intelligence-gate.md`);
+  const gateFile = path.join(outputDir, `${date}-community-intelligence-gate.md`);
   const communityLogFile = path.join(
-    reportsDir,
+    outputDir,
     "community-intelligence",
     `community-intelligence-${date.replaceAll("-", "")}.log`,
   );
