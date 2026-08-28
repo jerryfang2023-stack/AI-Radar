@@ -430,6 +430,7 @@ jobs:
             --write=true \
             --concurrency=3
           node agent-workflow/tools/normalize-source-intake-titles.mjs --date="${RUN_DATE}"
+          node agent-workflow/tools/build-data-center-v4.mjs --date="${RUN_DATE}"
           npm run assert:source-titles
 
       - name: Run Data Center V4 integrity gate

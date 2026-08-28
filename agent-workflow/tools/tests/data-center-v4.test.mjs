@@ -2093,7 +2093,7 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(dispatcher, /const requiredSteps = \[\s*"Collect source raw artifacts",\s*"Run Daily Monitor with QC",\s*\]/u);
   assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?if: always\(\)/u);
   assert.match(workflow, /Persist originals privately and enforce the public boundary[\s\S]*?\(steps\.monitor\.outcome == 'success' \|\| steps\.resume-artifact\.outputs\.used == 'true'\)/u);
-  assert.match(workflow, /Repair required source-title translations[\s\S]*backfill-source-title-translations\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*--write=true[\s\S]*normalize-source-intake-titles\.mjs --date="\$\{RUN_DATE\}"[\s\S]*assert:source-titles/u);
+  assert.match(workflow, /Repair required source-title translations[\s\S]*backfill-source-title-translations\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*--write=true[\s\S]*normalize-source-intake-titles\.mjs --date="\$\{RUN_DATE\}"[\s\S]*build-data-center-v4\.mjs --date="\$\{RUN_DATE\}"[\s\S]*assert:source-titles/u);
   assert.match(workflow, /Run Data Center V4 integrity gate[\s\S]*steps\.source-title-repair\.outcome == 'success'/u);
   assert.match(titleRepair, /const selectedDate = arg\("date"\)/u);
   assert.match(titleRepair, /filter\(\(date\) => !selectedDate \|\| date === selectedDate\)/u);
