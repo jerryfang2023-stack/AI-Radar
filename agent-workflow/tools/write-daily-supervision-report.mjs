@@ -658,8 +658,9 @@ export function buildBusinessSignalsLane() {
   };
 }
 
-export function buildFirstLineLane() {
+export function buildFirstLineLane({ github = null } = {}) {
   const problems = [];
+  const waiting = [];
   const warnings = [];
   const evidence = {};
   const actions = [];
@@ -686,7 +687,8 @@ export function buildFirstLineLane() {
     manifestFields.builders_gate,
   ].every((value) => value === "success");
   const historicalEvidenceHealthy = date < shanghaiDate() && manifestHealthy && statusFromGateText(gateText) === "passed";
-  const gh = githubWorkflowState("daily-first-line-viewpoints-pr.yml", `automation/first-line-viewpoints-${date}`);
+  const gh = github || githubWorkflowState("daily-first-line-viewpoints-pr.yml", `automation/first-line-viewpoints-${date}`);
+  const workflowActive = gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued";
 
   evidence.generatedAt = data?.meta?.generatedAt || "";
   evidence.generatedDate = generatedDate;
@@ -715,10 +717,14 @@ export function buildFirstLineLane() {
   evidence.github = gh;
 
   if (windowPassed) {
-    if (!historicalEvidenceHealthy && !exists(dataFile) && !usePublishedData) addProblem(problems, `missing first-line data file: ${rel(dataFile)}`);
-    if (!historicalEvidenceHealthy && generatedDate !== date) addProblem(problems, `first-line data date is ${generatedDate || "missing"}, expected ${date}`);
-    if (!historicalEvidenceHealthy && Number(evidence.remarks) < 12) addProblem(problems, `remarks count ${evidence.remarks} below 12`);
-    if (!historicalEvidenceHealthy && Number(evidence.builders) < 6) addProblem(problems, `builders count ${evidence.builders} below 6`);
+    const recordDataProblem = (message) => {
+      if (workflowActive) warnings.push(`${message}; First-Line Viewpoints workflow is ${gh.latest_run.status}`);
+      else addProblem(problems, message);
+    };
+    if (!historicalEvidenceHealthy && !exists(dataFile) && !usePublishedData) recordDataProblem(`missing first-line data file: ${rel(dataFile)}`);
+    if (!historicalEvidenceHealthy && generatedDate !== date) recordDataProblem(`first-line data date is ${generatedDate || "missing"}, expected ${date}`);
+    if (!historicalEvidenceHealthy && Number(evidence.remarks) < 12) recordDataProblem(`remarks count ${evidence.remarks} below 12`);
+    if (!historicalEvidenceHealthy && Number(evidence.builders) < 6) recordDataProblem(`builders count ${evidence.builders} below 6`);
     if (evidence.gateStatus === "failed") addProblem(problems, `follow-builders gate failed: ${rel(gateFile)}`);
     if (evidence.gateStatus === "missing") warnings.push(`missing follow-builders gate report: ${rel(gateFile)}`);
   }
@@ -736,9 +742,9 @@ export function buildFirstLineLane() {
     if (!gh.latest_run && hasWindowPassed(date, "09:50")) {
       addProblem(problems, "no same-date First-Line Viewpoints RSS run after the morning production window", "manual_required");
       actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` only after targeted diagnosis");
-    } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
-      addProblem(problems, `First-Line Viewpoints workflow is ${gh.latest_run.status}`, "waiting");
-      actions.push("wait for First-Line Viewpoints workflow completion");
+    } else if (workflowActive) {
+      addWaiting(waiting, `First-Line Viewpoints workflow is ${gh.latest_run.status}; data checks should wait`);
+      actions.push("wait for First-Line Viewpoints workflow completion before declaring data missing");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
       addProblem(problems, `First-Line Viewpoints workflow conclusion is ${gh.latest_run.conclusion}`);
     }
@@ -757,9 +763,10 @@ export function buildFirstLineLane() {
     id: "first_line_viewpoints",
     label: "First-Line Viewpoints",
     schedule: "08:30 local RSS collection + page build; 09:15 conditional fallback; 09:50 consolidated closure",
-    status: laneStatus(problems, warnings),
+    status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
+    waiting,
     warnings,
     actions: [...new Set(actions)],
   };
