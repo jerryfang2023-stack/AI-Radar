@@ -198,10 +198,18 @@ mentions hardware financing. Newly discovered company/product entities remain
 outside the public Entity Index until an accepted catalog-review decision
 exists.
 
+Commentary, response, rebuttal, and criticism headlines that discuss financing
+without announcing a completed round are not funding events and cannot produce
+Funding Insight cards. Protected-money validation treats hyphenated English
+amounts such as `45-billion-dollar` as the same fact as their normalized numeric
+form.
+
 If a same-date Business Signals run has already accepted source collection but a
 downstream gate fails, recovery restores the immutable workflow artifact and
 skips both collection steps. Required source-title repair is date-bounded and
-runs before the V4 integrity gate; approved cached translations and equivalent
+runs before the V4 integrity gate, then rebuilds the deterministic V4 outputs so
+the repaired title reaches the gated publication set; approved cached
+translations and equivalent
 numeric expressions such as `double` / `翻倍` must pass the same protected-fact
 validator. Opportunity Map gates compare the emitted direction-card count with
 the artifact metadata. A day may validly emit an empty direction-card array when
