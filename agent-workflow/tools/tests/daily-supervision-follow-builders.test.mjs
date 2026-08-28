@@ -291,6 +291,45 @@ test("morning supervision keeps published data paired with its published gate", 
   }
 });
 
+test("morning supervision waits while same-date First-Line Viewpoints workflow is active", async () => {
+  const originalCwd = process.cwd();
+  const originalArgv = process.argv;
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-first-line-active-workflow-"));
+  const date = "2026-07-24";
+  try {
+    const dataFile = path.join(fixtureRoot, "01-SiteV2", "site", "data", "follow-builders-daily.json");
+    fs.mkdirSync(path.dirname(dataFile), { recursive: true });
+    fs.writeFileSync(dataFile, JSON.stringify({
+      meta: { generatedAt: "2026-07-23T01:00:00.000Z" },
+      stats: { remarks: 20, builders: 10 },
+    }), "utf8");
+
+    const supervisor = await loadSupervisor(
+      fixtureRoot,
+      [`--date=${date}`, "--github=off", "--scheduled-task=off", "--hermes=off"],
+      "active-workflow",
+    );
+    const lane = supervisor.buildFirstLineLane({
+      github: {
+        available: true,
+        latest_run: { status: "in_progress" },
+        prs: [],
+        pr_warning: "",
+      },
+    });
+    assert.equal(lane.status, "waiting");
+    assert.equal(lane.problems.length, 0);
+    assert.equal(lane.waiting.length, 1);
+    assert.match(lane.waiting[0].message, /workflow is in_progress/u);
+    assert.ok(lane.warnings.some((item) => /first-line data date is 2026-07-23, expected 2026-07-24; First-Line Viewpoints workflow is in_progress/u.test(item)));
+    assert.ok(!lane.actions.some((item) => /send Codex/u.test(item)));
+  } finally {
+    process.chdir(originalCwd);
+    process.argv = originalArgv;
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
+
 test("confirmed Community Intelligence publication prevents recurring task-result noise", async () => {
   const originalCwd = process.cwd();
   const originalArgv = process.argv;
