@@ -265,4 +265,10 @@ test("supervision separates immutable evidence inputs from runtime outputs", () 
   assert.match(supervision, /const reportsDir = path\.join\(root, "agent-workflow", "reports"\)/u);
   assert.match(supervision, /const outputDir = path\.resolve/u);
   assert.match(supervision, /path\.join\(outputDir, `\$\{date\}-daily-supervision-report\.json`\)/u);
+  const communityLane = supervision.slice(
+    supervision.indexOf("function buildCommunityLane()"),
+    supervision.indexOf("function buildSkillOpsLane()"),
+  );
+  assert.match(communityLane, /path\.join\(outputDir, `\$\{date\}-community-intelligence-gate\.md`\)/u);
+  assert.match(communityLane, /path\.join\(\s*outputDir,\s*"community-intelligence"/u);
 });
