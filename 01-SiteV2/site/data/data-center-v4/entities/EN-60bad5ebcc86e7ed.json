@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-60bad5ebcc86e7ed",
+    "name": "Microduck on Thursday",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-8b288f548fd59a91"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-27",
+    "lastSeen": "2026-08-28",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-8b288f548fd59a91"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-8b288f548fd59a91",
+        "dataDate": "2026-08-28",
+        "date": "2026-08-27",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Hugging Face 推出 399 美元开源鸭子机器人 Microduck",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-e3ce9cc5efa9354c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-e3ce9cc5efa9354c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e3ce9cc5efa9354c",
+          "EN-60bad5ebcc86e7ed"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-44106c4f7e18a2d3",
+      "eventId": "EV-8b288f548fd59a91",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "title": "Hugging Face 推出 399 美元开源鸭子机器人 Microduck",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Hugging Face",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "$399 ",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceDate": "2026-08-27",
+      "entityIds": [
+        "EN-e3ce9cc5efa9354c",
+        "EN-60bad5ebcc86e7ed"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-2c59854bac2dd408",
+      "snapshotKey": "2c59854bac2dd408",
+      "snapshotId": "HWS-4e203f801afdb987",
+      "eventId": "EV-8b288f548fd59a91",
+      "eventIds": [
+        "EV-8b288f548fd59a91"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Microduck on Thursday",
+      "subject": "Hugging Face",
+      "productNames": [
+        "Microduck on Thursday"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "399",
+          "unit": "$",
+          "fact_ref": "HWF-f90e9facc68c46e2"
+        },
+        "product": {
+          "metric_value": "499",
+          "unit": "$",
+          "fact_ref": "HWF-d21bc351a134a3d0"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-f90e9facc68c46e2",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-e3ce9cc5efa9354c",
+          "subject_name": "Hugging Face",
+          "product_entity_ids": [
+            "EN-60bad5ebcc86e7ed"
+          ],
+          "product_names": [
+            "Microduck on Thursday"
+          ],
+          "component_type": "robot",
+          "metric_value": "399",
+          "unit": "$",
+          "source_quote": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas.",
+          "event_refs": [
+            "EV-8b288f548fd59a91"
+          ],
+          "claim_ref": "CL-c1abc32afe278d60",
+          "source_refs": [
+            "SA-966d909c59f6e1ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-d21bc351a134a3d0",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-e3ce9cc5efa9354c",
+          "subject_name": "Hugging Face",
+          "product_entity_ids": [
+            "EN-60bad5ebcc86e7ed"
+          ],
+          "product_names": [
+            "Microduck on Thursday"
+          ],
+          "component_type": "robot",
+          "metric_value": "499",
+          "unit": "$",
+          "source_quote": "Hugging Face is best known as a platform and community where developers go for open model weights. However, the company acquired French startup Pollen Robotics in April 2025 to build affordable, open source AI hardware. A couple of months later, the two launched Reachy Mini , a small desktop robot . Today, they sell the $499 Reachy Mini, which is powered by a Raspberry Pi computer, and the $399 Reachy Mini Lite, powered by a Mac or PC.",
+          "event_refs": [
+            "EV-8b288f548fd59a91"
+          ],
+          "claim_ref": "CL-296aa031d0a580df",
+          "source_refs": [
+            "SA-966d909c59f6e1ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck",
+      "entityIds": [
+        "EN-e3ce9cc5efa9354c",
+        "EN-60bad5ebcc86e7ed"
+      ]
+    }
+  ]
+}

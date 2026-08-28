@@ -5,13 +5,138 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "hardware": [
+    {
+      "id": "HW-44106c4f7e18a2d3",
+      "eventId": "EV-8b288f548fd59a91",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "title": "Hugging Face 推出 399 美元开源鸭子机器人 Microduck",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Hugging Face",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "$399 ",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceDate": "2026-08-27",
+      "entityIds": [
+        "EN-e3ce9cc5efa9354c",
+        "EN-60bad5ebcc86e7ed"
+      ]
+    },
+    {
+      "id": "HW-7889eb510b9d4210",
+      "eventId": "EV-b93b6abf31662339",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "title": "AWS与NVIDIA将在2027-2028年部署200万颗更多GPU用于AI",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "AWS",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai",
+      "sourceName": "aboutamazon.com",
+      "sourceDate": "2026-08-27",
+      "entityIds": [
+        "EN-7d1507284a5757ca",
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "HW-a310285257185f81",
+      "eventId": "EV-b4376b7d0e863db3",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "title": "黄仁勋回应 OpenAI 首款自研 AI 芯片挑战：英伟达提供\"截然不同\"服务",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/994/904.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-08-27",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HW-19692cd9428f2e0f",
       "eventId": "EV-00e6152baff47d4d",
@@ -2858,6 +2983,552 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-5bc36cc3b4c36dd9",
+      "snapshotKey": "5bc36cc3b4c36dd9",
+      "snapshotId": "HWS-c6e8e5d6cf8381d5",
+      "eventId": "EV-b93b6abf31662339",
+      "eventIds": [
+        "EV-b93b6abf31662339"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "AWS",
+      "subject": "AWS",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "2",
+          "unit": "million",
+          "fact_ref": "HWF-a6e6fc09b5ad9903"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-781398357f35df9e",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-26T21:12:41.684Z",
+          "subject_entity_id": "EN-7d1507284a5757ca",
+          "subject_name": "AWS",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "2",
+          "unit": "million",
+          "source_quote": "AWS will deploy 2 million additional NVIDIA GPUs across its global infrastructure in 2027–2028.",
+          "event_refs": [
+            "EV-b93b6abf31662339"
+          ],
+          "claim_ref": "CL-8c01535a139e8d89",
+          "source_refs": [
+            "SA-d13b4bf58597a06b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-b82cb8d825c5ab19",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-26T21:12:41.684Z",
+          "subject_entity_id": "EN-7d1507284a5757ca",
+          "subject_name": "AWS",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "2",
+          "unit": "million",
+          "source_quote": "Amazon Web Services (AWS) and NVIDIA announced a major expansion of their strategic collaboration . Building on 16 years of joint innovation, the companies plan to deploy 2 million additional NVIDIA GPUs across AWS’s global infrastructure and deepen their work together across AI factories , CPUs , networking, open models, data processing, and robotics—delivering co-engineered solutions that help customers accelerate AI development at unprecedented scale.",
+          "event_refs": [
+            "EV-b93b6abf31662339"
+          ],
+          "claim_ref": "CL-93bc3987f5322bf6",
+          "source_refs": [
+            "SA-d13b4bf58597a06b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-a6e6fc09b5ad9903",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-26T21:12:41.684Z",
+          "subject_entity_id": "EN-7d1507284a5757ca",
+          "subject_name": "AWS",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "2",
+          "unit": "million",
+          "source_quote": "AWS now plans to deploy an additional 2 million NVIDIA GPUs in 2027–2028 across its global infrastructure, including AI factories. This capacity will power customer workloads ranging from agentic AI and scientific discovery to enterprise automation and physical AI. Customers are already seeing results from the collaboration—from faster drug discovery to more efficient fraud detection .",
+          "event_refs": [
+            "EV-b93b6abf31662339"
+          ],
+          "claim_ref": "CL-3ca9c184324f4c1f",
+          "source_refs": [
+            "SA-d13b4bf58597a06b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai",
+      "entityIds": [
+        "EN-7d1507284a5757ca",
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "HWC-c1caaa1f1c8d2423",
+      "snapshotKey": "c1caaa1f1c8d2423",
+      "snapshotId": "HWS-8c89d5a9d864e81f",
+      "eventId": "EV-5c87fffc3534e990",
+      "eventIds": [
+        "EV-5c87fffc3534e990"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Claude Code",
+      "subject": "Claude Code v2.1.248",
+      "productNames": [
+        "Claude Code"
+      ],
+      "hardwareType": "input_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-6bab8dcb3e94d66a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-6bab8dcb3e94d66a",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T22:12:20.000Z",
+          "subject_entity_id": "",
+          "subject_name": "Claude Code v2.1.248",
+          "product_entity_ids": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "product_names": [
+            "Claude Code"
+          ],
+          "component_type": "input_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Windows: Fixed the claude agents list not responding to the keyboard after detaching from a session, or when launched in a terminal tab left in win32-input-mode",
+          "event_refs": [
+            "EV-5c87fffc3534e990"
+          ],
+          "claim_ref": "CL-ed5da60ddf0bb4b3",
+          "source_refs": [
+            "SA-a469c59e808ab3db"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
+      "entityIds": [
+        "EN-cb4754c48f8023d0"
+      ]
+    },
+    {
+      "id": "HWC-30cee6c39cb66e85",
+      "snapshotKey": "30cee6c39cb66e85",
+      "snapshotId": "HWS-386d8a77abc5ae62",
+      "eventId": "EV-a0678a734614b9fc",
+      "eventIds": [
+        "EV-a0678a734614b9fc"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Government of South Korea",
+      "subject": "Government of South Korea",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-fc61b9948dff88b9"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-fc61b9948dff88b9",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-27T23:30:00.000Z",
+          "subject_entity_id": "EN-d31c43526b245fe0",
+          "subject_name": "Government of South Korea",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The new framework would make it possible, for example, for the Ministry of Trade, Industry and Energy to conduct R&D on AI robots for public deployment while the police and the National Fire Agency participate as purchasing agencies.",
+          "event_refs": [
+            "EV-a0678a734614b9fc"
+          ],
+          "claim_ref": "CL-a17edf2338da7438",
+          "source_refs": [
+            "SA-0d1b7e0e2bd1c8d7"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://biz.heraldcorp.com/article/10854950",
+      "entityIds": [
+        "EN-d31c43526b245fe0",
+        "EN-faebddaa4885b004"
+      ]
+    },
+    {
+      "id": "HWC-10bf48c75f2708f2",
+      "snapshotKey": "10bf48c75f2708f2",
+      "snapshotId": "HWS-88e198d85de46cc7",
+      "eventId": "EV-074a78d3cfaf633b",
+      "eventIds": [
+        "EV-074a78d3cfaf633b"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Hugging Face",
+      "subject": "Pollen Robotics",
+      "productNames": [
+        "Hugging Face"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-09144ac8bec9b1ce"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-09144ac8bec9b1ce",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-6117af74470fbaa4",
+          "subject_name": "Pollen Robotics",
+          "product_entity_ids": [
+            "EN-d9352ce019e77ab3"
+          ],
+          "product_names": [
+            "Hugging Face"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Hugging Face’s Pollen Robotics has launched its second cute AI robot, the Microduck , a one-eyed biped standing just under 10 inches tall.",
+          "event_refs": [
+            "EV-074a78d3cfaf633b"
+          ],
+          "claim_ref": "CL-edb789a933998cd7",
+          "source_refs": [
+            "SA-32f94bf29193d50c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://theverge.com/gadgets/985549/hugging-face-microduck-robot",
+      "entityIds": [
+        "EN-6117af74470fbaa4",
+        "EN-d9352ce019e77ab3"
+      ]
+    },
+    {
+      "id": "HWC-2c59854bac2dd408",
+      "snapshotKey": "2c59854bac2dd408",
+      "snapshotId": "HWS-4e203f801afdb987",
+      "eventId": "EV-8b288f548fd59a91",
+      "eventIds": [
+        "EV-8b288f548fd59a91"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Microduck on Thursday",
+      "subject": "Hugging Face",
+      "productNames": [
+        "Microduck on Thursday"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "399",
+          "unit": "$",
+          "fact_ref": "HWF-f90e9facc68c46e2"
+        },
+        "product": {
+          "metric_value": "499",
+          "unit": "$",
+          "fact_ref": "HWF-d21bc351a134a3d0"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-f90e9facc68c46e2",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-e3ce9cc5efa9354c",
+          "subject_name": "Hugging Face",
+          "product_entity_ids": [
+            "EN-60bad5ebcc86e7ed"
+          ],
+          "product_names": [
+            "Microduck on Thursday"
+          ],
+          "component_type": "robot",
+          "metric_value": "399",
+          "unit": "$",
+          "source_quote": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas.",
+          "event_refs": [
+            "EV-8b288f548fd59a91"
+          ],
+          "claim_ref": "CL-c1abc32afe278d60",
+          "source_refs": [
+            "SA-966d909c59f6e1ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-d21bc351a134a3d0",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-e3ce9cc5efa9354c",
+          "subject_name": "Hugging Face",
+          "product_entity_ids": [
+            "EN-60bad5ebcc86e7ed"
+          ],
+          "product_names": [
+            "Microduck on Thursday"
+          ],
+          "component_type": "robot",
+          "metric_value": "499",
+          "unit": "$",
+          "source_quote": "Hugging Face is best known as a platform and community where developers go for open model weights. However, the company acquired French startup Pollen Robotics in April 2025 to build affordable, open source AI hardware. A couple of months later, the two launched Reachy Mini , a small desktop robot . Today, they sell the $499 Reachy Mini, which is powered by a Raspberry Pi computer, and the $399 Reachy Mini Lite, powered by a Mac or PC.",
+          "event_refs": [
+            "EV-8b288f548fd59a91"
+          ],
+          "claim_ref": "CL-296aa031d0a580df",
+          "source_refs": [
+            "SA-966d909c59f6e1ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck",
+      "entityIds": [
+        "EN-e3ce9cc5efa9354c",
+        "EN-60bad5ebcc86e7ed"
+      ]
+    },
+    {
+      "id": "HWC-778c39ceb39ae5ff",
+      "snapshotKey": "778c39ceb39ae5ff",
+      "snapshotId": "HWS-c4b1adb1ea6cb53f",
+      "eventId": "EV-8d1915e3b460afa7",
+      "eventIds": [
+        "EV-8d1915e3b460afa7",
+        "EV-d69d239fd5bcc319"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "OpenAI",
+      "subject": "OpenAI",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-9c2d498a26683555"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-28",
+          "previousDate": "2026-08-26",
+          "snapshotId": "HWS-c4b1adb1ea6cb53f",
+          "previousSnapshotId": "HWS-f5d4b13763569565",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-e738076e6611545e",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T15:04:20.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "An OpenAI researcher warns that state-of-the-art AI models running 50 times faster could infiltrate systems before human teams can react. Simple monitoring won't cut it anymore, he says. What's needed are autonomous shutdown systems. The warning comes as OpenAI unveils a new AI chip that significantly outperforms current hardware in inference speed.",
+          "event_refs": [
+            "EV-8d1915e3b460afa7"
+          ],
+          "claim_ref": "CL-5739e9188798bd81",
+          "source_refs": [
+            "SA-d2a63625c19ae5b6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-9c2d498a26683555",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T15:04:20.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "An OpenAI researcher warns that state-of-the-art AI models running 50 times faster could infiltrate systems before human teams can react. Simple monitoring won't cut it anymore, he says. What's needed are autonomous shutdown systems. The warning comes as OpenAI unveils a new AI chip that significantly outperforms current hardware in inference speed.",
+          "event_refs": [
+            "EV-8d1915e3b460afa7"
+          ],
+          "claim_ref": "CL-a73e408de449e2e7",
+          "source_refs": [
+            "SA-d2a63625c19ae5b6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/openai-researcher-warns-ultrafast-ai-could-leave-security-teams-in-the-dust",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-6f7ac1823da81d2e"
+      ]
+    },
+    {
       "id": "HWC-8c60e882c331fbbc",
       "snapshotKey": "8c60e882c331fbbc",
       "snapshotId": "HWS-1482aeef11345986",
@@ -3300,11 +3971,10 @@
       ],
       "capexFacts": [],
       "tags": [],
-      "sourceUrl": "https://businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+      "sourceUrl": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition",
       "entityIds": [
         "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0",
-        "EN-96eebba49dbbf422"
+        "EN-7f871cbf905f6e0c"
       ]
     },
     {
@@ -3584,67 +4254,6 @@
         "EN-49dba228d91e7180",
         "EN-e9bc017140a61e09",
         "EN-6eb8882ab15df1c2"
-      ]
-    },
-    {
-      "id": "HWC-778c39ceb39ae5ff",
-      "snapshotKey": "778c39ceb39ae5ff",
-      "snapshotId": "HWS-f5d4b13763569565",
-      "eventId": "EV-d69d239fd5bcc319",
-      "eventIds": [
-        "EV-d69d239fd5bcc319"
-      ],
-      "dataDate": "2026-08-26",
-      "date": "2026-08-26",
-      "title": "OpenAI",
-      "subject": "OpenAI",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-ed94262b6b5cdac0"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-26",
-          "hardware_fact_id": "HWF-ed94262b6b5cdac0",
-          "fact_type": "product",
-          "observed_at": "2026-08-25T23:25:37.000Z",
-          "subject_entity_id": "EN-7d3194f79e645c42",
-          "subject_name": "OpenAI",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家 8 月 26 日消息，OpenAI 昨日（8 月 25 日）发布博文，展示其首款自研 Jalapeño 芯片，并表示无论是单用户 token 处理量，还是每千瓦吞吐量，都超过了目前市面上的顶尖推理处理器。",
-          "event_refs": [
-            "EV-d69d239fd5bcc319"
-          ],
-          "claim_ref": "CL-0fd5476ce90b7cb6",
-          "source_refs": [
-            "SA-efad1d0d604fb76b"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-26/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/994/306.htm",
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-6f7ac1823da81d2e"
       ]
     },
     {
@@ -11864,10 +12473,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-27",
-      "funnel_id": "LF-edcbe083754d9cae",
+      "data_date": "2026-08-28",
+      "funnel_id": "LF-a1b0893d22d587bc",
       "lens": "hardware",
-      "date": "2026-08-27",
+      "date": "2026-08-28",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_oem_odm",
@@ -11875,28 +12484,24 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 25,
-      "original_sources": 22,
-      "valid_claims": 12,
-      "observations": 7,
-      "canonical_events": 4,
+      "raw_documents": 21,
+      "original_sources": 21,
+      "valid_claims": 11,
+      "observations": 10,
+      "canonical_events": 5,
       "blocker_counts": {
-        "no_source_bounded_claim": 1,
-        "source_outside_daily_window": 8,
         "no_source_bounded_event": 4,
-        "opinion_without_source_bounded_event": 1,
-        "non_event_or_index_title": 2,
-        "rumor_requires_primary_confirmation": 1,
-        "raw_source_quality_block": 3,
-        "raw_document_not_auditable": 1
+        "source_outside_daily_window": 8,
+        "non_event_or_index_title": 3,
+        "raw_source_quality_block": 1
       },
       "rates": {
-        "original_source_rate": 0.88,
-        "valid_claim_rate": 0.48,
-        "observation_rate": 0.5833333333333334,
-        "event_conversion_rate": 0.3333333333333333
+        "original_source_rate": 1,
+        "valid_claim_rate": 0.5238095238095238,
+        "observation_rate": 0.9090909090909091,
+        "event_conversion_rate": 0.45454545454545453
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/monitoring-funnel.json"
     }
   ]
 }

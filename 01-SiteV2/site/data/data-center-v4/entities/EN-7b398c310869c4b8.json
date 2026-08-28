@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,13 +22,14 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-80fe0d726f77802c",
       "EV-1342766e13330536"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-06-17",
+    "lastSeen": "2026-08-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -36,12 +37,31 @@
       ],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-80fe0d726f77802c"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-80fe0d726f77802c",
+        "dataDate": "2026-08-28",
+        "date": "2026-08-27",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Plaud 推出 AI 智能耳机",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7b398c310869c4b8",
+          "EN-11f44ad2017537de",
+          "EN-a62087a0b3bef9aa"
+        ]
+      },
       {
         "id": "EV-1342766e13330536",
         "dataDate": "2026-06-17",

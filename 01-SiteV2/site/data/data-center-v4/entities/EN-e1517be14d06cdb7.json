@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -16,7 +16,9 @@
     "name": "MiniMax",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "稀宇科技"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -24,6 +26,7 @@
     "eventIds": [
       "EV-0121f0a9e9a975ec",
       "EV-522c339dded54be5",
+      "EV-a6dc310224542dcf",
       "EV-2fa6949af5b36fb0",
       "EV-63858d9b5ef92175",
       "EV-650e4b23d45d5758",
@@ -46,7 +49,7 @@
       "EN-cf81a61e4eaef17c"
     ],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-08-19",
+    "lastSeen": "2026-08-28",
     "relationIds": [
       "REL2-a01e1f1fdf22a3e4",
       "REL2-aedca968ec6469f3",
@@ -60,6 +63,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-a6dc310224542dcf",
         "EV-2fa6949af5b36fb0",
         "EV-63858d9b5ef92175",
         "EV-650e4b23d45d5758",
@@ -77,6 +81,41 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a6dc310224542dcf",
+        "dataDate": "2026-08-28",
+        "date": "2026-08-27",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "我国日均词元调用量突破 500 万亿，中国大模型稳居全球第一梯队",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e1517be14d06cdb7",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
       {
         "id": "EV-0121f0a9e9a975ec",
         "dataDate": "2026-08-19",
@@ -736,6 +775,7 @@
         "EV-522c339dded54be5",
         "EV-a354af52772334fd",
         "EV-26d2874c6ce028d6",
+        "EV-172e82bbbedb3619",
         "EV-25b88403a237969f",
         "EV-2a30e4a6a8033bcc",
         "EV-c698da7da473b059",
@@ -761,6 +801,7 @@
         "EN-e1517be14d06cdb7",
         "EN-d747d6f5125b6bee",
         "EN-b81c8201acfc7639",
+        "EN-1ba4a2b10cfc1093",
         "EN-031f4a060a67e7af",
         "EN-e59f5a52b6713a29",
         "EN-422332977c41eb77",
@@ -776,7 +817,7 @@
         "HW-68457c8c0a7240ac"
       ],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "TX-technology-multimodal",
@@ -797,7 +838,9 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-293d6feac5b8efab",
         "EV-34fd528787e47757",
+        "EV-eedd370fd9cfdbb2",
         "EV-a0d58fe1616d1480",
         "EV-a09f6e93ad868a57",
         "EV-78651dfea74b4323",
@@ -889,7 +932,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "TX-product_form-chip_accelerator",

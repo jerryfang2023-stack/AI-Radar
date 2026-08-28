@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -18,6 +18,7 @@
     "typeLabel": "产品形态",
     "valueId": "model",
     "eventIds": [
+      "EV-10f04014fb3b62ff",
       "EV-6b668e4655192209",
       "EV-657176fd0dff6209",
       "EV-7077778f0eb84f6c",
@@ -103,6 +104,7 @@
       "EV-2fd730d0ad452334",
       "EV-9f6d481a09b063ee",
       "EV-fd21441fb6e143c3",
+      "EV-eedd370fd9cfdbb2",
       "EV-df9b78627b91c29f",
       "EV-127a04dfedc04e0c",
       "EV-91d15b11f487760c",
@@ -255,6 +257,7 @@
       "EV-0cb98302768c2e0a",
       "EV-34929bdd016dc8d6",
       "EV-00834dd71037c7cc",
+      "EV-8d1915e3b460afa7",
       "EV-00e6152baff47d4d",
       "EV-ce32954014cb030d",
       "EV-8aae4ba13db766a6",
@@ -277,6 +280,7 @@
       "EV-5208aa6dcd06cecb"
     ],
     "entityIds": [
+      "EN-40975ceed8df55bb",
       "EN-336ab1deb42d6284",
       "EN-be9d587defa1f0c0",
       "EN-8d4321d936320802",
@@ -333,6 +337,7 @@
       "EN-c890cfa67d1da908",
       "EN-3e52637ec683b555",
       "EN-7df09a7717ef2feb",
+      "EN-921ba2ce81556e42",
       "EN-bbdefa2950f49882",
       "EN-a658fbc24f5e3832",
       "EN-4cc3012261da02d1",
@@ -446,33 +451,27 @@
       "HW-19692cd9428f2e0f"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-08-27"
+    "lastSeen": "2026-08-28"
   },
   "events": [
     {
-      "id": "EV-6b668e4655192209",
-      "dataDate": "2026-08-27",
-      "date": "2026-08-27",
-      "updatedDate": "2026-08-27",
+      "id": "EV-10f04014fb3b62ff",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "updatedDate": "2026-08-28",
       "eventType": "acquisition",
       "eventTypeLabel": "并购",
       "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "英伟达同意以130亿美元收购Hugging Face",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "报道：英伟达拟以130亿美元收购AI模型库Hugging Face",
       "originalTitle": "",
-      "subject": "英伟达同意以130亿美元",
+      "subject": "报道：英伟达拟以130亿美元",
       "action": "收购",
-      "object": "Hugging Face",
+      "object": "AI模型库Hugging Face",
       "metrics": [
-        "$13 billion",
-        "$18 billion",
-        "$47.9 billion",
-        "$235 million",
-        "$4.5 billion",
-        "$500 million",
-        "$7 billion"
+        "$12.9 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -488,15 +487,91 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [],
+            "entityIds": [
+              "EN-40975ceed8df55bb"
+            ],
             "provenance": "claim_assertion",
             "assertionId": ""
-          },
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-40975ceed8df55bb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-40975ceed8df55bb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-40975ceed8df55bb",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "报道",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion",
+      "publisher": "Ars Technica：AI（RSS）"
+    },
+    {
+      "id": "EV-6b668e4655192209",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-26",
+      "updatedDate": "2026-08-28",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Nvidia 拟以 129 亿美元收购 Hugging Face",
+      "originalTitle": "",
+      "subject": "Nvidia 拟以 129 亿美元",
+      "action": "收购",
+      "object": "Hugging Face",
+      "metrics": [
+        "$12.9 billion",
+        "$13 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
           {
             "dimensionId": "product_form",
             "dimensionName": "产品形态",
-            "id": "enterprise_software_platform",
-            "name": "企业软件平台",
+            "id": "model",
+            "name": "模型",
             "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -516,15 +591,6 @@
           "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -536,31 +602,20 @@
           "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "entityIds": [
         "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0",
-        "EN-96eebba49dbbf422"
+        "EN-7f871cbf905f6e0c"
       ],
       "entityNames": [
         "NVIDIA",
-        "Microsoft",
-        "Intel"
+        "OpenRouter"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
-      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+      "sourceUrl": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition",
+      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-657176fd0dff6209",
@@ -22563,6 +22618,242 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-eedd370fd9cfdbb2",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "updatedDate": "2026-08-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里云下调百炼平台 Qwen3.8-Flash 大模型计费单价",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "阿里云下调百炼平台 Qwen3.8-Flash 大模型计费单价",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-921ba2ce81556e42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-921ba2ce81556e42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-921ba2ce81556e42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-921ba2ce81556e42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-921ba2ce81556e42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-921ba2ce81556e42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e9fc4f156e36f6aa",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-921ba2ce81556e42"
+      ],
+      "entityNames": [
+        "Alibaba Cloud",
+        "OpenAI",
+        "Anthropic",
+        "Qwen3.8-Flash"
+      ],
+      "productName": "Qwen3.8-Flash",
+      "products": [
+        {
+          "name": "Qwen3.8-Flash",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba Cloud"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/994/961.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-df9b78627b91c29f",
       "dataDate": "2026-08-27",
       "date": "2026-08-27",
@@ -42631,6 +42922,86 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-8d1915e3b460afa7",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "updatedDate": "2026-08-28",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI研究员警告：超快AI可能让安全团队望尘莫及",
+      "originalTitle": "OpenAI researcher warns ultrafast AI could leave security teams in the dust",
+      "subject": "OpenAI researcher warns ultrafast AI could",
+      "action": "leave",
+      "object": "security teams in the dust",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/openai-researcher-warns-ultrafast-ai-could-leave-security-teams-in-the-dust",
+      "publisher": "The Decoder AI News"
+    },
+    {
       "id": "EV-00e6152baff47d4d",
       "dataDate": "2026-08-27",
       "date": "2026-08-26",
@@ -45039,6 +45410,27 @@
   ],
   "entities": [
     {
+      "id": "EN-40975ceed8df55bb",
+      "name": "报道",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-10f04014fb3b62ff"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28"
+    },
+    {
       "id": "EN-336ab1deb42d6284",
       "name": "Stability AI",
       "entityType": "organization_candidate",
@@ -45105,8 +45497,11 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6b668e4655192209",
+        "EV-10f04014fb3b62ff",
+        "EV-68bb3d5cb4bbd61b",
+        "EV-6ef85b24f1328189",
         "EV-b382525eb51777b9",
+        "EV-6b668e4655192209",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
@@ -45131,6 +45526,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-b93b6abf31662339",
         "EV-4aff64511cfa8577",
         "EV-aa7f1c2c6933fdb1",
         "EV-fb33ae9b7f9454bf",
@@ -45165,6 +45561,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-30be225da68f2f70",
         "EV-afbcb331c874f648",
         "EV-5ac5368309eace1a",
         "EV-0a0fbf647a1f7b70",
@@ -45190,6 +45587,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-5890a74f1a62940e",
+        "EV-b4376b7d0e863db3",
         "EV-f41fe4d6189853cd",
         "EV-127a04dfedc04e0c",
         "EV-2b529f1793d4230f",
@@ -45309,6 +45708,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-automotive_transportation",
@@ -45324,6 +45724,7 @@
         "TX-target_user-developer",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
@@ -45340,7 +45741,6 @@
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-agentic_execution",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
@@ -45361,6 +45761,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-7d1507284a5757ca",
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
@@ -45388,7 +45789,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-7dd2a89f628d7525",
@@ -45483,6 +45884,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-61b1ddeb1e7b7043",
         "EV-4aff64511cfa8577",
         "EV-892228f3d092004f",
         "EV-bd5b6110559f2fda",
@@ -45532,6 +45934,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-eedd370fd9cfdbb2",
         "EV-6e96760ed7e2ebaa",
         "EV-daa8adf2de4e4bf4",
         "EV-4927409c0f4b3ef3",
@@ -45719,6 +46122,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-278745d4aa7a4b3a",
+        "EV-77d347212d8de7ea",
         "EV-42c656a8a7e0b362",
         "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
@@ -45806,6 +46211,7 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
+        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-target_user-researcher",
@@ -45816,7 +46222,6 @@
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-agentic_execution",
         "TX-industry-education",
         "TX-industry-financial_services",
         "TX-industry-legal_services",
@@ -45833,7 +46238,6 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
-        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -45848,6 +46252,7 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
+        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -45857,7 +46262,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -45906,10 +46311,10 @@
         "TX-use_case-software_development",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-product_form-ai_compute_system",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-technology-human_in_loop"
       ],
@@ -45921,7 +46326,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-6861f63c27eb0ada",
@@ -46062,6 +46467,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-6b668e4655192209",
         "EV-9d665270d4feb97e",
         "EV-b73d931bd6adb78d",
         "EV-ef8e1093f14efc90",
@@ -46095,7 +46501,7 @@
         "EN-779965438dd9e7a7"
       ],
       "firstSeen": "2026-06-08",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-e647c818ac38b6ca",
@@ -46458,9 +46864,9 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-technology-agentic_execution",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
@@ -46541,8 +46947,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
+        "TX-ai_market_category-enterprise_applications",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
@@ -46614,6 +47020,7 @@
         "EV-a00763037a94d512",
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
+        "EV-b93b6abf31662339",
         "EV-bd5b6110559f2fda",
         "EV-026b9b4462b4adc8",
         "EV-3ebefd784ba0afd0",
@@ -46673,7 +47080,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-11507a0e2f5e69d5",
@@ -46695,8 +47102,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-technology-multimodal",
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-technology-vision_language"
       ],
@@ -46811,8 +47218,8 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
-        "TX-product_form-ai_infrastructure_software",
         "TX-technology-agentic_execution",
+        "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-ai_development_orchestration"
       ],
       "relatedEntityIds": [],
@@ -46923,8 +47330,8 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-technology-multimodal",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [
@@ -47179,14 +47586,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-technology-video_generation",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-video_generation",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-product_form-ai_device",
-        "TX-technology-agentic_execution",
         "TX-technology-computer_use",
         "TX-technology-mixture_of_experts",
         "TX-technology-open_weights"
@@ -47247,13 +47654,13 @@
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-technology-agentic_execution",
         "TX-product_form-ai_compute_system",
         "TX-target_user-researcher",
         "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
-        "TX-technology-agentic_execution",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights"
       ],
@@ -47276,6 +47683,7 @@
       "eventIds": [
         "EV-d80c43b35418e74d",
         "EV-b25b396e368ee4d9",
+        "EV-eedd370fd9cfdbb2",
         "EV-68897f26c8d956df"
       ],
       "viewpointIds": [],
@@ -47284,7 +47692,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-12",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-bd6769fe78d0971a",
@@ -47407,13 +47815,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-use_case-software_development",
         "TX-technology-video_generation",
+        "TX-use_case-software_development",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-product_form-ai_device",
-        "TX-technology-agentic_execution"
+        "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [
         "EN-0c2f714483c404ad",
@@ -47529,9 +47937,9 @@
         "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
         "TX-technology-speech_audio",
+        "TX-technology-agentic_execution",
         "TX-industry-telecommunications",
         "TX-use_case-security_operations",
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
@@ -47675,11 +48083,35 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "EN-921ba2ce81556e42",
+      "name": "Qwen3.8-Flash",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-eedd370fd9cfdbb2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-product_form-enterprise_software_platform"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-27",
+      "lastSeen": "2026-08-28"
+    },
+    {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -47730,9 +48162,16 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-172e82bbbedb3619",
+        "EV-293d6feac5b8efab",
+        "EV-71727e1a748baf33",
+        "EV-4c184078bc288aa8",
+        "EV-9fac2a799d6cbf57",
+        "EV-bf7d82367f919883",
         "EV-1d646122cb4e23a5",
         "EV-24bb8055449763ae",
         "EV-df9b78627b91c29f",
+        "EV-25410adc93579034",
         "EV-6e96760ed7e2ebaa",
         "EV-e3d25b9c0ee541d1",
         "EV-897c0d5106398802",
@@ -47865,6 +48304,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-5f8479f97236bdea",
         "EV-3b30eda1326a6fb1",
         "EV-f5aec01f1466f6bb",
         "EV-a234ab1495b52c4f",
@@ -47905,6 +48345,7 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-technology-image_generation",
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
@@ -47914,7 +48355,6 @@
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-use_case-legal_compliance",
@@ -47924,16 +48364,19 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -47941,7 +48384,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-a658fbc24f5e3832",
@@ -48337,8 +48780,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
+        "TX-ai_market_category-enterprise_applications",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-use_case-software_development",
@@ -48346,12 +48789,12 @@
         "TX-use_case-sales",
         "TX-technology-image_generation",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-agentic_execution",
         "TX-deployment_model-cloud",
         "TX-product_form-model_api_service",
         "TX-ai_market_subcategory-sales",
@@ -48537,10 +48980,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-technology-agentic_execution",
         "TX-industry-government_public_sector",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-deployment_model-cloud",
         "TX-technology-long_context",
@@ -48624,6 +49067,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-61b1ddeb1e7b7043",
         "EV-fb33ae9b7f9454bf",
         "EV-0121f0a9e9a975ec",
         "EV-eda9fcba2f9fe358",
@@ -48677,6 +49121,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-b4376b7d0e863db3",
+        "EV-eedd370fd9cfdbb2",
         "EV-4268b4be01fc8711",
         "EV-470c66c0e334794e",
         "EV-a9e8de27cc79efb2",
@@ -48883,6 +49329,7 @@
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
         "EV-00ffb2c501a37ec8",
+        "EV-8d1915e3b460afa7",
         "EV-16a0fe419e75402b",
         "EV-569e956899258a54",
         "EV-bce258f8f915ff5f",
@@ -48963,9 +49410,9 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
+        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
@@ -48974,6 +49421,7 @@
         "TX-industry-media_entertainment",
         "TX-use_case-customer_support",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -48983,7 +49431,6 @@
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-agentic_execution",
         "TX-product_form-developer_tool",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
@@ -49019,7 +49466,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-2ee49ef51a776e2c",
@@ -49207,19 +49654,22 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-30be225da68f2f70",
         "EV-ea6abb5378846a71"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-use_case-security_operations"
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [
         "EN-02be787a1aacea06",
         "EN-2ca3f7d58fdda0f5"
       ],
       "firstSeen": "2026-07-22",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -49293,8 +49743,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-use_case-data_analysis",
         "TX-technology-agentic_execution",
+        "TX-use_case-data_analysis",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
@@ -49362,6 +49812,7 @@
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
+        "EV-a6dc310224542dcf",
         "EV-355ddfd4c6180ab0",
         "EV-d14947956b43c97a",
         "EV-cffa617426a5e139",
@@ -49402,7 +49853,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-08-09"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -49451,6 +49902,7 @@
         "EV-ed58c2c69290ee4c",
         "EV-631197767a45d34c",
         "EV-d53cd33e8f541a65",
+        "EV-95875c6cc15e6b29",
         "EV-9e2c443eae76fb50",
         "EV-1329b30fdf4ff060",
         "EV-02abf1e35f1c33e1",
@@ -49472,7 +49924,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-165753d8649b9122",
@@ -49732,11 +50184,11 @@
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
+        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
         "TX-target_user-public_sector_user",
         "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
         "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [
@@ -50220,9 +50672,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-technology-video_generation",
         "TX-use_case-software_development",
         "TX-use_case-physical_automation",
-        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -50585,10 +51037,10 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
+        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-agentic_execution",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [
@@ -52101,6 +52553,100 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-778c39ceb39ae5ff",
+      "snapshotKey": "778c39ceb39ae5ff",
+      "snapshotId": "HWS-c4b1adb1ea6cb53f",
+      "eventId": "EV-8d1915e3b460afa7",
+      "eventIds": [
+        "EV-8d1915e3b460afa7",
+        "EV-d69d239fd5bcc319"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "OpenAI",
+      "subject": "OpenAI",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-9c2d498a26683555"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-28",
+          "previousDate": "2026-08-26",
+          "snapshotId": "HWS-c4b1adb1ea6cb53f",
+          "previousSnapshotId": "HWS-f5d4b13763569565",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-e738076e6611545e",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T15:04:20.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "An OpenAI researcher warns that state-of-the-art AI models running 50 times faster could infiltrate systems before human teams can react. Simple monitoring won't cut it anymore, he says. What's needed are autonomous shutdown systems. The warning comes as OpenAI unveils a new AI chip that significantly outperforms current hardware in inference speed.",
+          "event_refs": [
+            "EV-8d1915e3b460afa7"
+          ],
+          "claim_ref": "CL-5739e9188798bd81",
+          "source_refs": [
+            "SA-d2a63625c19ae5b6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-9c2d498a26683555",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T15:04:20.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "An OpenAI researcher warns that state-of-the-art AI models running 50 times faster could infiltrate systems before human teams can react. Simple monitoring won't cut it anymore, he says. What's needed are autonomous shutdown systems. The warning comes as OpenAI unveils a new AI chip that significantly outperforms current hardware in inference speed.",
+          "event_refs": [
+            "EV-8d1915e3b460afa7"
+          ],
+          "claim_ref": "CL-a73e408de449e2e7",
+          "source_refs": [
+            "SA-d2a63625c19ae5b6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/openai-researcher-warns-ultrafast-ai-could-leave-security-teams-in-the-dust",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-6f7ac1823da81d2e"
+      ]
+    },
+    {
       "id": "HWC-5ef488ccd04ecc0a",
       "snapshotKey": "5ef488ccd04ecc0a",
       "snapshotId": "HWS-3174878b75abd334",
@@ -52299,11 +52845,10 @@
       ],
       "capexFacts": [],
       "tags": [],
-      "sourceUrl": "https://businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+      "sourceUrl": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition",
       "entityIds": [
         "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0",
-        "EN-96eebba49dbbf422"
+        "EN-7f871cbf905f6e0c"
       ]
     },
     {

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -56,6 +56,7 @@
       "EV-af8e95dbe06ac083",
       "EV-876baa523eb93c4f",
       "EV-cec68369662236fd",
+      "EV-b93b6abf31662339",
       "EV-d8748baee002e2b6",
       "EV-cafe435ddd007821",
       "EV-434dcf1813a84ead",
@@ -70,6 +71,8 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-074a78d3cfaf633b",
+      "EV-8b288f548fd59a91",
       "EV-127a04dfedc04e0c",
       "EV-b1bfe58c3ad65c92",
       "EV-2b529f1793d4230f",
@@ -165,6 +168,8 @@
       "EN-3e14bbbb0445c2de",
       "EN-7c5d04104b1d34e7",
       "EN-72138e570e5103e2",
+      "EN-6117af74470fbaa4",
+      "EN-e3ce9cc5efa9354c",
       "EN-648ac0860a36272a",
       "EN-9c3de5f42376b1af",
       "EN-aec12c1b42f6e0b6",
@@ -198,8 +203,10 @@
       "FDE-dadf0e9572889d3d"
     ],
     "hardwareIds": [
+      "HW-7889eb510b9d4210",
       "HW-ceb55d9bc637c1d3",
       "HW-8ec8f237534254df",
+      "HW-44106c4f7e18a2d3",
       "HW-f05a371d8e0599b0",
       "HW-03c3292149bb6bf9",
       "HW-89cdf1875115a352",
@@ -213,7 +220,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-27"
+    "lastSeen": "2026-08-28"
   },
   "events": [
     {
@@ -12766,6 +12773,205 @@
       "publisher": "每日经济新闻"
     },
     {
+      "id": "EV-b93b6abf31662339",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "updatedDate": "2026-08-28",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "AWS与NVIDIA将在2027-2028年部署200万颗更多GPU用于AI",
+      "originalTitle": "AWS and NVIDIA to deploy 2 million more GPUs for AI in 2027-2028",
+      "subject": "AWS and NVIDIA to",
+      "action": "deploy 2 million more GPUs",
+      "object": "for AI in 2027-2028",
+      "metrics": [
+        "2 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d1507284a5757ca",
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b"
+      ],
+      "entityNames": [
+        "AWS",
+        "NVIDIA",
+        "Amazon"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai",
+      "publisher": "aboutamazon.com"
+    },
+    {
       "id": "EV-d8748baee002e2b6",
       "dataDate": "2026-08-17",
       "date": "2026-08-16",
@@ -14733,6 +14939,253 @@
       "products": [],
       "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai",
       "publisher": "NVIDIA AI Blog"
+    },
+    {
+      "id": "EV-074a78d3cfaf633b",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "updatedDate": "2026-08-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Hugging Face 的新机器人是一只可爱的轮滑鸭子",
+      "originalTitle": "Hugging Face’s new robot is an adorable rollerskating duck",
+      "subject": "Pollen Robotics",
+      "action": "product_release",
+      "object": "Microduck",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-6117af74470fbaa4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-6117af74470fbaa4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-6117af74470fbaa4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-6117af74470fbaa4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-6117af74470fbaa4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-6117af74470fbaa4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6117af74470fbaa4",
+        "EN-d9352ce019e77ab3"
+      ],
+      "entityNames": [
+        "Pollen Robotics",
+        "Hugging Face"
+      ],
+      "productName": "Hugging Face",
+      "products": [
+        {
+          "name": "Hugging Face",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://theverge.com/gadgets/985549/hugging-face-microduck-robot",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-8b288f548fd59a91",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "updatedDate": "2026-08-28",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hugging Face 推出 399 美元开源鸭子机器人 Microduck",
+      "originalTitle": "",
+      "subject": "Hugging Face",
+      "action": "推出 399 美元开源鸭子机器人",
+      "object": "Microduck",
+      "metrics": [
+        "$399 ",
+        "$499 "
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-e3ce9cc5efa9354c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e3ce9cc5efa9354c",
+        "EN-60bad5ebcc86e7ed"
+      ],
+      "entityNames": [
+        "Hugging Face",
+        "Microduck on Thursday"
+      ],
+      "productName": "Microduck on Thursday",
+      "products": [
+        {
+          "name": "Microduck on Thursday",
+          "type": "AI 硬件",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck",
+      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-127a04dfedc04e0c",
@@ -21743,8 +22196,11 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6b668e4655192209",
+        "EV-10f04014fb3b62ff",
+        "EV-68bb3d5cb4bbd61b",
+        "EV-6ef85b24f1328189",
         "EV-b382525eb51777b9",
+        "EV-6b668e4655192209",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
@@ -21769,6 +22225,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-b93b6abf31662339",
         "EV-4aff64511cfa8577",
         "EV-aa7f1c2c6933fdb1",
         "EV-fb33ae9b7f9454bf",
@@ -21803,6 +22260,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-30be225da68f2f70",
         "EV-afbcb331c874f648",
         "EV-5ac5368309eace1a",
         "EV-0a0fbf647a1f7b70",
@@ -21828,6 +22286,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-5890a74f1a62940e",
+        "EV-b4376b7d0e863db3",
         "EV-f41fe4d6189853cd",
         "EV-127a04dfedc04e0c",
         "EV-2b529f1793d4230f",
@@ -21947,6 +22407,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-automotive_transportation",
@@ -21962,6 +22423,7 @@
         "TX-target_user-developer",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
@@ -21978,7 +22440,6 @@
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-agentic_execution",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
@@ -21999,6 +22460,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-7d1507284a5757ca",
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
@@ -22026,7 +22488,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -22244,11 +22706,11 @@
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
+        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
         "TX-target_user-public_sector_user",
         "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
         "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [
@@ -22810,6 +23272,55 @@
       "lastSeen": "2026-07-05"
     },
     {
+      "id": "EN-6117af74470fbaa4",
+      "name": "Pollen Robotics",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-074a78d3cfaf633b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-robotic_system",
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-27",
+      "lastSeen": "2026-08-28"
+    },
+    {
+      "id": "EN-e3ce9cc5efa9354c",
+      "name": "Hugging Face",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-386c205c8bbf537d",
+        "EV-8b288f548fd59a91",
+        "EV-cd7ba52564d4091e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-06",
+      "lastSeen": "2026-08-28"
+    },
+    {
       "id": "EN-648ac0860a36272a",
       "name": "海尔",
       "entityType": "organization_candidate",
@@ -22887,6 +23398,7 @@
       ],
       "eventIds": [
         "EV-d80c43b35418e74d",
+        "EV-293d6feac5b8efab",
         "EV-cff5848b8c5453af",
         "EV-5ede0f85a672441c",
         "EV-5c30f52112d92491",
@@ -22895,13 +23407,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-video_generation",
+        "TX-use_case-physical_automation",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-e59f5a52b6713a29",
@@ -22918,8 +23430,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-video_generation",
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-mixture_of_experts",
         "TX-technology-open_weights"
@@ -22986,9 +23498,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-technology-video_generation",
         "TX-use_case-software_development",
         "TX-use_case-physical_automation",
-        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -23138,10 +23650,10 @@
         "TX-use_case-software_development",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-product_form-ai_compute_system",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-technology-human_in_loop"
       ],
@@ -23153,7 +23665,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -23640,6 +24152,103 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-44106c4f7e18a2d3",
+      "eventId": "EV-8b288f548fd59a91",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "title": "Hugging Face 推出 399 美元开源鸭子机器人 Microduck",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Hugging Face",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "$399 ",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceDate": "2026-08-27",
+      "entityIds": [
+        "EN-e3ce9cc5efa9354c",
+        "EN-60bad5ebcc86e7ed"
+      ]
+    },
+    {
+      "id": "HW-7889eb510b9d4210",
+      "eventId": "EV-b93b6abf31662339",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "title": "AWS与NVIDIA将在2027-2028年部署200万颗更多GPU用于AI",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "AWS",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai",
+      "sourceName": "aboutamazon.com",
+      "sourceDate": "2026-08-27",
+      "entityIds": [
+        "EN-7d1507284a5757ca",
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b"
+      ]
+    },
     {
       "id": "HW-f05a371d8e0599b0",
       "eventId": "EV-127a04dfedc04e0c",
@@ -24154,6 +24763,319 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-5bc36cc3b4c36dd9",
+      "snapshotKey": "5bc36cc3b4c36dd9",
+      "snapshotId": "HWS-c6e8e5d6cf8381d5",
+      "eventId": "EV-b93b6abf31662339",
+      "eventIds": [
+        "EV-b93b6abf31662339"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "AWS",
+      "subject": "AWS",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "2",
+          "unit": "million",
+          "fact_ref": "HWF-a6e6fc09b5ad9903"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-781398357f35df9e",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-26T21:12:41.684Z",
+          "subject_entity_id": "EN-7d1507284a5757ca",
+          "subject_name": "AWS",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "2",
+          "unit": "million",
+          "source_quote": "AWS will deploy 2 million additional NVIDIA GPUs across its global infrastructure in 2027–2028.",
+          "event_refs": [
+            "EV-b93b6abf31662339"
+          ],
+          "claim_ref": "CL-8c01535a139e8d89",
+          "source_refs": [
+            "SA-d13b4bf58597a06b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-b82cb8d825c5ab19",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-26T21:12:41.684Z",
+          "subject_entity_id": "EN-7d1507284a5757ca",
+          "subject_name": "AWS",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "2",
+          "unit": "million",
+          "source_quote": "Amazon Web Services (AWS) and NVIDIA announced a major expansion of their strategic collaboration . Building on 16 years of joint innovation, the companies plan to deploy 2 million additional NVIDIA GPUs across AWS’s global infrastructure and deepen their work together across AI factories , CPUs , networking, open models, data processing, and robotics—delivering co-engineered solutions that help customers accelerate AI development at unprecedented scale.",
+          "event_refs": [
+            "EV-b93b6abf31662339"
+          ],
+          "claim_ref": "CL-93bc3987f5322bf6",
+          "source_refs": [
+            "SA-d13b4bf58597a06b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-a6e6fc09b5ad9903",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-26T21:12:41.684Z",
+          "subject_entity_id": "EN-7d1507284a5757ca",
+          "subject_name": "AWS",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "2",
+          "unit": "million",
+          "source_quote": "AWS now plans to deploy an additional 2 million NVIDIA GPUs in 2027–2028 across its global infrastructure, including AI factories. This capacity will power customer workloads ranging from agentic AI and scientific discovery to enterprise automation and physical AI. Customers are already seeing results from the collaboration—from faster drug discovery to more efficient fraud detection .",
+          "event_refs": [
+            "EV-b93b6abf31662339"
+          ],
+          "claim_ref": "CL-3ca9c184324f4c1f",
+          "source_refs": [
+            "SA-d13b4bf58597a06b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai",
+      "entityIds": [
+        "EN-7d1507284a5757ca",
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "HWC-10bf48c75f2708f2",
+      "snapshotKey": "10bf48c75f2708f2",
+      "snapshotId": "HWS-88e198d85de46cc7",
+      "eventId": "EV-074a78d3cfaf633b",
+      "eventIds": [
+        "EV-074a78d3cfaf633b"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Hugging Face",
+      "subject": "Pollen Robotics",
+      "productNames": [
+        "Hugging Face"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-09144ac8bec9b1ce"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-09144ac8bec9b1ce",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-6117af74470fbaa4",
+          "subject_name": "Pollen Robotics",
+          "product_entity_ids": [
+            "EN-d9352ce019e77ab3"
+          ],
+          "product_names": [
+            "Hugging Face"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Hugging Face’s Pollen Robotics has launched its second cute AI robot, the Microduck , a one-eyed biped standing just under 10 inches tall.",
+          "event_refs": [
+            "EV-074a78d3cfaf633b"
+          ],
+          "claim_ref": "CL-edb789a933998cd7",
+          "source_refs": [
+            "SA-32f94bf29193d50c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://theverge.com/gadgets/985549/hugging-face-microduck-robot",
+      "entityIds": [
+        "EN-6117af74470fbaa4",
+        "EN-d9352ce019e77ab3"
+      ]
+    },
+    {
+      "id": "HWC-2c59854bac2dd408",
+      "snapshotKey": "2c59854bac2dd408",
+      "snapshotId": "HWS-4e203f801afdb987",
+      "eventId": "EV-8b288f548fd59a91",
+      "eventIds": [
+        "EV-8b288f548fd59a91"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Microduck on Thursday",
+      "subject": "Hugging Face",
+      "productNames": [
+        "Microduck on Thursday"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "399",
+          "unit": "$",
+          "fact_ref": "HWF-f90e9facc68c46e2"
+        },
+        "product": {
+          "metric_value": "499",
+          "unit": "$",
+          "fact_ref": "HWF-d21bc351a134a3d0"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-f90e9facc68c46e2",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-e3ce9cc5efa9354c",
+          "subject_name": "Hugging Face",
+          "product_entity_ids": [
+            "EN-60bad5ebcc86e7ed"
+          ],
+          "product_names": [
+            "Microduck on Thursday"
+          ],
+          "component_type": "robot",
+          "metric_value": "399",
+          "unit": "$",
+          "source_quote": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas.",
+          "event_refs": [
+            "EV-8b288f548fd59a91"
+          ],
+          "claim_ref": "CL-c1abc32afe278d60",
+          "source_refs": [
+            "SA-966d909c59f6e1ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-d21bc351a134a3d0",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-e3ce9cc5efa9354c",
+          "subject_name": "Hugging Face",
+          "product_entity_ids": [
+            "EN-60bad5ebcc86e7ed"
+          ],
+          "product_names": [
+            "Microduck on Thursday"
+          ],
+          "component_type": "robot",
+          "metric_value": "499",
+          "unit": "$",
+          "source_quote": "Hugging Face is best known as a platform and community where developers go for open model weights. However, the company acquired French startup Pollen Robotics in April 2025 to build affordable, open source AI hardware. A couple of months later, the two launched Reachy Mini , a small desktop robot . Today, they sell the $499 Reachy Mini, which is powered by a Raspberry Pi computer, and the $399 Reachy Mini Lite, powered by a Mac or PC.",
+          "event_refs": [
+            "EV-8b288f548fd59a91"
+          ],
+          "claim_ref": "CL-296aa031d0a580df",
+          "source_refs": [
+            "SA-966d909c59f6e1ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e3ce9cc5efa9354c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck",
+      "entityIds": [
+        "EN-e3ce9cc5efa9354c",
+        "EN-60bad5ebcc86e7ed"
+      ]
+    },
     {
       "id": "HWC-5ef488ccd04ecc0a",
       "snapshotKey": "5ef488ccd04ecc0a",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -26,6 +26,7 @@
     ],
     "eventIds": [
       "EV-40f14150d6f622f5",
+      "EV-293d6feac5b8efab",
       "EV-34fd528787e47757",
       "EV-911e7e2722aa5ebc",
       "EV-b613937b7bc1ea64",
@@ -46,7 +47,7 @@
       "EN-993599624a199fe0"
     ],
     "firstSeen": "2026-06-13",
-    "lastSeen": "2026-08-27",
+    "lastSeen": "2026-08-28",
     "relationIds": [
       "REL2-09dd97666e545a2c",
       "REL2-ff240950e3bb7f5e"
@@ -58,6 +59,7 @@
         "EV-40f14150d6f622f5"
       ],
       "productsServices": [
+        "EV-293d6feac5b8efab",
         "EV-34fd528787e47757",
         "EV-911e7e2722aa5ebc",
         "EV-b613937b7bc1ea64",
@@ -74,8 +76,36 @@
     },
     "timeline": [
       {
+        "id": "EV-293d6feac5b8efab",
+        "dataDate": "2026-08-28",
+        "date": "2026-08-28",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "派早报：智谱开源 GLM-5.3-Flash 原生多模态模型等",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-1d79127e9d90e89b",
+          "EN-bbdefa2950f49882",
+          "EN-92ef967014bccd4a"
+        ]
+      },
+      {
         "id": "EV-34fd528787e47757",
-        "dataDate": "2026-08-27",
+        "dataDate": "2026-08-28",
         "date": "2026-08-27",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
@@ -665,6 +695,9 @@
       "eventIds": [
         "EV-80e54c9a390da293",
         "EV-fd21441fb6e143c3",
+        "EV-5890a74f1a62940e",
+        "EV-a6dc310224542dcf",
+        "EV-eedd370fd9cfdbb2",
         "EV-58e18eab1b072c9a",
         "EV-29c0d969abde2020",
         "EV-3dc8d5c373ddd1f3",
@@ -685,6 +718,7 @@
       ],
       "entityIds": [
         "EN-7df09a7717ef2feb",
+        "EN-f7a386a451b79627",
         "EN-8d4321d936320802",
         "EN-ea3bd73e2b506e00",
         "EN-74be4cbf48e647b2",
@@ -703,7 +737,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-12",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-08-28"
     }
   ],
   "fde": [],

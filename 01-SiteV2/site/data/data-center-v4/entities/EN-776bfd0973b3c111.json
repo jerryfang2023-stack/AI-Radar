@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -24,19 +24,21 @@
     "eventIds": [
       "EV-1d646122cb4e23a5",
       "EV-df9b78627b91c29f",
+      "EV-326859b4fe658617",
       "EV-98cd3d8ce73bce41"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-26",
-    "lastSeen": "2026-08-27",
+    "lastSeen": "2026-08-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-326859b4fe658617",
         "EV-1d646122cb4e23a5",
         "EV-df9b78627b91c29f",
         "EV-98cd3d8ce73bce41"
@@ -46,6 +48,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-326859b4fe658617",
+        "dataDate": "2026-08-28",
+        "date": "2026-08-26",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-776bfd0973b3c111"
+        ]
+      },
       {
         "id": "EV-1d646122cb4e23a5",
         "dataDate": "2026-08-27",

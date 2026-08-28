@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -43,6 +43,7 @@
       "EV-f059fd80d668c6bc",
       "EV-e7b228c1b6b54c6a",
       "EV-f2551f5cc8e2715e",
+      "EV-074a78d3cfaf633b",
       "EV-24d84f9f4613ea51",
       "EV-f79713437230562f",
       "EV-03ab7d0b40d1e5b5",
@@ -76,6 +77,7 @@
       "EN-8dc72a4672894e0f",
       "EN-3b39ea849059759f",
       "EN-3e14bbbb0445c2de",
+      "EN-6117af74470fbaa4",
       "EN-aec12c1b42f6e0b6",
       "EN-240389f4b730bad4",
       "EN-593d0361124f348f",
@@ -93,7 +95,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-27"
+    "lastSeen": "2026-08-28"
   },
   "events": [
     {
@@ -7523,6 +7525,128 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-074a78d3cfaf633b",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-27",
+      "updatedDate": "2026-08-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Hugging Face 的新机器人是一只可爱的轮滑鸭子",
+      "originalTitle": "Hugging Face’s new robot is an adorable rollerskating duck",
+      "subject": "Pollen Robotics",
+      "action": "product_release",
+      "object": "Microduck",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-6117af74470fbaa4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-6117af74470fbaa4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-6117af74470fbaa4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-6117af74470fbaa4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-6117af74470fbaa4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-6117af74470fbaa4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6117af74470fbaa4",
+        "EN-d9352ce019e77ab3"
+      ],
+      "entityNames": [
+        "Pollen Robotics",
+        "Hugging Face"
+      ],
+      "productName": "Hugging Face",
+      "products": [
+        {
+          "name": "Hugging Face",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://theverge.com/gadgets/985549/hugging-face-microduck-robot",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-24d84f9f4613ea51",
       "dataDate": "2026-08-18",
       "date": "2026-08-17",
@@ -9150,11 +9274,11 @@
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
+        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
         "TX-target_user-public_sector_user",
         "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
         "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [
@@ -9482,6 +9606,28 @@
       "lastSeen": "2026-07-26"
     },
     {
+      "id": "EN-6117af74470fbaa4",
+      "name": "Pollen Robotics",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-074a78d3cfaf633b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-robotic_system",
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-27",
+      "lastSeen": "2026-08-28"
+    },
+    {
       "id": "EN-aec12c1b42f6e0b6",
       "name": "共生知行",
       "entityType": "organization_candidate",
@@ -9551,10 +9697,10 @@
         "TX-use_case-software_development",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-product_form-ai_compute_system",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-technology-human_in_loop"
       ],
@@ -9566,7 +9712,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -9654,8 +9800,11 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6b668e4655192209",
+        "EV-10f04014fb3b62ff",
+        "EV-68bb3d5cb4bbd61b",
+        "EV-6ef85b24f1328189",
         "EV-b382525eb51777b9",
+        "EV-6b668e4655192209",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
@@ -9680,6 +9829,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-b93b6abf31662339",
         "EV-4aff64511cfa8577",
         "EV-aa7f1c2c6933fdb1",
         "EV-fb33ae9b7f9454bf",
@@ -9714,6 +9864,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-30be225da68f2f70",
         "EV-afbcb331c874f648",
         "EV-5ac5368309eace1a",
         "EV-0a0fbf647a1f7b70",
@@ -9739,6 +9890,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-5890a74f1a62940e",
+        "EV-b4376b7d0e863db3",
         "EV-f41fe4d6189853cd",
         "EV-127a04dfedc04e0c",
         "EV-2b529f1793d4230f",
@@ -9858,6 +10011,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-automotive_transportation",
@@ -9873,6 +10027,7 @@
         "TX-target_user-developer",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
@@ -9889,7 +10044,6 @@
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-agentic_execution",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
         "TX-industry-education",
@@ -9910,6 +10064,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-7d1507284a5757ca",
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
@@ -9937,7 +10092,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-0d049cd1e9f619f9",
@@ -10152,6 +10307,73 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-10bf48c75f2708f2",
+      "snapshotKey": "10bf48c75f2708f2",
+      "snapshotId": "HWS-88e198d85de46cc7",
+      "eventId": "EV-074a78d3cfaf633b",
+      "eventIds": [
+        "EV-074a78d3cfaf633b"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Hugging Face",
+      "subject": "Pollen Robotics",
+      "productNames": [
+        "Hugging Face"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-09144ac8bec9b1ce"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-09144ac8bec9b1ce",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-6117af74470fbaa4",
+          "subject_name": "Pollen Robotics",
+          "product_entity_ids": [
+            "EN-d9352ce019e77ab3"
+          ],
+          "product_names": [
+            "Hugging Face"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Hugging Face’s Pollen Robotics has launched its second cute AI robot, the Microduck , a one-eyed biped standing just under 10 inches tall.",
+          "event_refs": [
+            "EV-074a78d3cfaf633b"
+          ],
+          "claim_ref": "CL-edb789a933998cd7",
+          "source_refs": [
+            "SA-32f94bf29193d50c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://theverge.com/gadgets/985549/hugging-face-microduck-robot",
+      "entityIds": [
+        "EN-6117af74470fbaa4",
+        "EN-d9352ce019e77ab3"
+      ]
+    },
     {
       "id": "HWC-1eb06bff2147494a",
       "snapshotKey": "1eb06bff2147494a",

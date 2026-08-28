@@ -1,0 +1,2242 @@
+[
+  {
+    "claim_id": "CL-2fbe678de89ace8d",
+    "raw_id": "RAW-efdf108afd7f5053",
+    "claim_type": "model_release",
+    "subject": "Google",
+    "predicate": "model_release",
+    "object": "Gemini 3.5 Transcribe",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6ff2456fc5348e76"
+    },
+    "source_span": {
+      "raw_id": "RAW-efdf108afd7f5053",
+      "start": 616,
+      "end": 751
+    },
+    "source_quote": "Today, we’re introducing Gemini 3.5 Transcribe, our most precise speech-to-text model yet, designed for intelligent voice interactions.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a9aafb4742a4a1fb",
+    "raw_id": "RAW-edef8becba30cad5",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.248",
+    "predicate": "product_release",
+    "object": "：新增受限模式与跨会话消息功能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-edef8becba30cad5",
+      "start": 513,
+      "end": 783
+    },
+    "source_quote": "Added --restricted (or CLAUDE_CODE_RESTRICTED=1 ): removes the built-in tools that run commands or code and WebFetch (unless named in --tools ), keeps file tools inside the working directory, refuses bypassPermissions , and ignores user, project and local settings files",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f13237e31cfb9721",
+    "raw_id": "RAW-edef8becba30cad5",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.248",
+    "predicate": "product_release",
+    "object": "：新增受限模式与跨会话消息功能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-edef8becba30cad5",
+      "start": 784,
+      "end": 927
+    },
+    "source_quote": "Added experimental.cacheTtl ( \"5m\" or \"1h\" ) to agent frontmatter: a per-agent prompt cache TTL used when no subagent TTL setting is configured",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae5c9988dc2ff097",
+    "raw_id": "RAW-edef8becba30cad5",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.248",
+    "predicate": "product_release",
+    "object": "：新增受限模式与跨会话消息功能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-edef8becba30cad5",
+      "start": 928,
+      "end": 1088
+    },
+    "source_quote": "Added claude self-hosted-runner --client-label <label> (or SELF_HOSTED_RUNNER_CLIENT_LABEL ) to override the label the runner registers with (default: hostname)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ed5da60ddf0bb4b3",
+    "raw_id": "RAW-edef8becba30cad5",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.248",
+    "predicate": "product_release",
+    "object": "：新增受限模式与跨会话消息功能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-edef8becba30cad5",
+      "start": 2652,
+      "end": 2812
+    },
+    "source_quote": "Windows: Fixed the claude agents list not responding to the keyboard after detaching from a session, or when launched in a terminal tab left in win32-input-mode",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2bba1d46358812dd",
+    "raw_id": "RAW-9cdb0ecf9693cff2",
+    "claim_type": "lawsuit_settlement",
+    "subject": "Jane Doe",
+    "predicate": "lawsuit_settlement",
+    "object": "xAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-86d751e8ce359dbc"
+    },
+    "source_span": {
+      "raw_id": "RAW-9cdb0ecf9693cff2",
+      "start": 344,
+      "end": 545
+    },
+    "source_quote": "In a complaint filed on Wednesday, a plaintiff known as Jane Doe explained that she was preschool-age in the early 2000s when adult men repeatedly raped her to create CSAM to sell to pedophiles online.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9aff3a2fd6392122",
+    "raw_id": "RAW-9cdb0ecf9693cff2",
+    "claim_type": "lawsuit_settlement",
+    "subject": "Jane Doe",
+    "predicate": "lawsuit_settlement",
+    "object": "xAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-86d751e8ce359dbc"
+    },
+    "source_span": {
+      "raw_id": "RAW-9cdb0ecf9693cff2",
+      "start": 3460,
+      "end": 3653
+    },
+    "source_quote": "In her proposed class action, Doe seeks to put an end to Grok’s harmful outputs. If approved, the class would represent every victim whose childhood images have been used to generate Grok CSAM.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-10b3d786e1784941",
+    "raw_id": "RAW-9cdb0ecf9693cff2",
+    "claim_type": "lawsuit_settlement",
+    "subject": "Jane Doe",
+    "predicate": "lawsuit_settlement",
+    "object": "xAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-86d751e8ce359dbc"
+    },
+    "source_span": {
+      "raw_id": "RAW-9cdb0ecf9693cff2",
+      "start": 4093,
+      "end": 4237
+    },
+    "source_quote": "Doe’s also asked the court to order xAI to destroy all Grok-generated CSAM that it may be storing on its servers and using to train Grok models.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8a3ab2f9980f07fc",
+    "raw_id": "RAW-bb18a8da6128178b",
+    "claim_type": "acquisition",
+    "subject": "报道：英伟达拟以130亿美元",
+    "predicate": "acquisition",
+    "object": "AI模型库Hugging Face",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-bb18a8da6128178b",
+      "start": 155,
+      "end": 347
+    },
+    "source_quote": "Nvidia is reportedly moving forward to acquire Hugging Face for $12.9 billion. The acquisition could help the hardware giant expand and fortify its deep integration with the wider AI industry.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-beed4cf19e290d9e",
+    "raw_id": "RAW-bb18a8da6128178b",
+    "claim_type": "acquisition",
+    "subject": "报道：英伟达拟以130亿美元",
+    "predicate": "acquisition",
+    "object": "AI模型库Hugging Face",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-bb18a8da6128178b",
+      "start": 348,
+      "end": 683
+    },
+    "source_quote": "Among other things, Hugging Face is a cloud repository for AI models, similar in some respects to what GitHub is for conventional computer software. Developers and researchers search for models that meet certain criteria, download and run them, and fine-tune them into different variants that then get uploaded back up to Hugging Face.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-00b4f6e2cd4cf0aa",
+    "raw_id": "RAW-bb18a8da6128178b",
+    "claim_type": "acquisition",
+    "subject": "报道：英伟达拟以130亿美元",
+    "predicate": "acquisition",
+    "object": "AI模型库Hugging Face",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-bb18a8da6128178b",
+      "start": 684,
+      "end": 959
+    },
+    "source_quote": "The deal is not finalized, so it could still run into trouble ahead, but both parties appear to be actively pursuing it, according to a report from The Information, which cites one person with knowledge of the matter. Another source confirmed to CNBC that talks are underway.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-c87c80aedddd424a",
+    "raw_id": "RAW-7c2737891511f2b0",
+    "claim_type": "product_release",
+    "subject": "Google Earth AI",
+    "predicate": "product_release",
+    "object": "行星预测引擎：自动化全球地理空间建模",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7c2737891511f2b0",
+      "start": 185,
+      "end": 536
+    },
+    "source_quote": "As part of Google Earth AI , we introduce the planetary prediction engine (PPE), an experimental research capability that autonomously executes the full geospatial modeling workflow — from data discovery to model training — achieving improvements across diverse prediction tasks in public health, food security, environmental risk, and socioeconomics.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cda30fc829cd8b5d",
+    "raw_id": "RAW-7c2737891511f2b0",
+    "claim_type": "product_release",
+    "subject": "Google Earth AI",
+    "predicate": "product_release",
+    "object": "行星预测引擎：自动化全球地理空间建模",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7c2737891511f2b0",
+      "start": 1432,
+      "end": 2421
+    },
+    "source_quote": "Today we introduce the planetary prediction engine (PPE), the latest experimental research capability within our broader Google Earth AI initiative that turns planetary information into actionable insights. Previously, we demonstrated Earth AI’s reasoning capabilities in intelligently bringing together diverse geospatial assets. As an autonomous AI system, PPE executes the full geospatial prediction workflow, from planetary-scale data discovery and cleanup to training and evaluation, directly from natural-language queries. Given a geospatial predictive query, PPE will autonomously retrieve relevant data, engineer features, train and evaluate predictive models, and generate a comprehensive report. We demonstrate that by delivering improvements over diverse benchmarks without manual intervention, PPE effectively reduces the time needed to build complex planetary prediction models from weeks that include manual data engineering to mere minutes that result in autonomous insight.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8c157083bada03c3",
+    "raw_id": "RAW-7c2737891511f2b0",
+    "claim_type": "product_release",
+    "subject": "Google Earth AI",
+    "predicate": "product_release",
+    "object": "行星预测引擎：自动化全球地理空间建模",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7c2737891511f2b0",
+      "start": 571,
+      "end": 1431
+    },
+    "source_quote": "Addressing humanity's most pressing global challenges — from forecasting regional food security and environmental disaster risks to tracking real-time disease outbreaks and mapping socio-economic vulnerability — requires high-fidelity geospatial modeling. However, building these models is hindered by a fragmented data ecosystem that requires specialized teams to spend weeks on manual data curation, feature engineering, and specialized spatial validation. While existing AutoML and LLM-based agents effectively automate standard machine learning pipelines, they rely on pre-curated tabular data and lack the specialized capabilities needed to autonomously handle geospatial workflows. Consequently, planetary-scale analytics remains a significant bottleneck, a limitation that is especially severe when rapid response is critical during humanitarian crises.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-66d041b5bce07792",
+    "raw_id": "RAW-7c2737891511f2b0",
+    "claim_type": "product_release",
+    "subject": "Google Earth AI",
+    "predicate": "product_release",
+    "object": "行星预测引擎：自动化全球地理空间建模",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-7c2737891511f2b0",
+      "start": 2422,
+      "end": 2463
+    },
+    "source_quote": "How the planetary prediction engine works",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-49fddfbc96ee235c",
+    "raw_id": "RAW-2ee8280949d4fb45",
+    "claim_type": "standard_specification",
+    "subject": "Anthropic",
+    "predicate": "standard_specification",
+    "object": "Model Hardware Standard (MHS)",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3f709a1259f0b7cf"
+    },
+    "source_span": {
+      "raw_id": "RAW-2ee8280949d4fb45",
+      "start": 140,
+      "end": 356
+    },
+    "source_quote": "We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e527f9a48afb74b9",
+    "raw_id": "RAW-96efcfe3c5a0864d",
+    "claim_type": "product_release",
+    "subject": "Gemini Omni 1.1 Flash",
+    "predicate": "product_release",
+    "object": "，为开发者提供更强生成式视频控制",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-96efcfe3c5a0864d",
+      "start": 1608,
+      "end": 1979
+    },
+    "source_quote": "Google just released Gemini Omni 1.1 Flash, which gives developers better tools to create and edit videos with AI. It lets you extend video clips, control camera movements, and make high-quality 4K footage. Developers can also create quick, low-resolution drafts to test their ideas faster and cheaper. It’s a big step forward for anyone building creative video software.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f868b36c749e2534",
+    "raw_id": "RAW-96efcfe3c5a0864d",
+    "claim_type": "product_release",
+    "subject": "Gemini Omni 1.1 Flash",
+    "predicate": "product_release",
+    "object": "，为开发者提供更强生成式视频控制",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-96efcfe3c5a0864d",
+      "start": 0,
+      "end": 32
+    },
+    "source_quote": "Build with Gemini Omni 1.1 Flash",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6b2ecbc11d5b526f",
+    "raw_id": "RAW-96efcfe3c5a0864d",
+    "claim_type": "product_release",
+    "subject": "Gemini Omni 1.1 Flash",
+    "predicate": "product_release",
+    "object": "，为开发者提供更强生成式视频控制",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-96efcfe3c5a0864d",
+      "start": 33,
+      "end": 87
+    },
+    "source_quote": "Gemini Omni 1.1 Flash lets you build with more control",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ad6e6f38aaab5eca",
+    "raw_id": "RAW-96efcfe3c5a0864d",
+    "claim_type": "product_release",
+    "subject": "Gemini Omni 1.1 Flash",
+    "predicate": "product_release",
+    "object": "，为开发者提供更强生成式视频控制",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-96efcfe3c5a0864d",
+      "start": 680,
+      "end": 1044
+    },
+    "source_quote": "We are introducing Gemini Omni 1.1 Flash, a production-ready update for developers that offers improved control over generative video. You can now extend scenes, specify start and end frames for smooth transitions, and generate high-resolution 4K output. Start building today by accessing the model through Google AI Studio or the Gemini Enterprise Agent Platform.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c1abc32afe278d60",
+    "raw_id": "RAW-e58078c18a0d2fe0",
+    "claim_type": "hardware_product",
+    "subject": "Hugging Face",
+    "predicate": "hardware_product",
+    "object": "Microduck",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e58078c18a0d2fe0",
+      "start": 124,
+      "end": 252
+    },
+    "source_quote": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-296aa031d0a580df",
+    "raw_id": "RAW-e58078c18a0d2fe0",
+    "claim_type": "hardware_product",
+    "subject": "Hugging Face",
+    "predicate": "hardware_product",
+    "object": "Microduck",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e58078c18a0d2fe0",
+      "start": 738,
+      "end": 1177
+    },
+    "source_quote": "Hugging Face is best known as a platform and community where developers go for open model weights. However, the company acquired French startup Pollen Robotics in April 2025 to build affordable, open source AI hardware. A couple of months later, the two launched Reachy Mini , a small desktop robot . Today, they sell the $499 Reachy Mini, which is powered by a Raspberry Pi computer, and the $399 Reachy Mini Lite, powered by a Mac or PC.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-224ad96df9383e37",
+    "raw_id": "RAW-e58078c18a0d2fe0",
+    "claim_type": "hardware_product",
+    "subject": "Hugging Face",
+    "predicate": "hardware_product",
+    "object": "Microduck",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-e58078c18a0d2fe0",
+      "start": 253,
+      "end": 533
+    },
+    "source_quote": "Clem Delangue, CEO of Hugging Face, said the Microduck is an “open-source robot you can teach new tricks with reinforcement learning.” The 25-centimeter-tall duck can waddle, pick things up with its beak (up to 800 grams), get back up when it falls, crouch, and even roller skate.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e6a575d00f974460",
+    "raw_id": "RAW-e58078c18a0d2fe0",
+    "claim_type": "hardware_product",
+    "subject": "Hugging Face",
+    "predicate": "hardware_product",
+    "object": "Microduck",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-e58078c18a0d2fe0",
+      "start": 534,
+      "end": 631
+    },
+    "source_quote": "“Welcome to the era of open-source affordable robots to democratize physical AI and world models!",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9f26803ff1abbd1f",
+    "raw_id": "RAW-a597c0d5f203fc21",
+    "claim_type": "acquisition",
+    "subject": "Nvidia 拟以 129 亿美元",
+    "predicate": "acquisition",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a597c0d5f203fc21",
+      "start": 3,
+      "end": 47
+    },
+    "source_quote": "Nvidia closes in on Hugging Face acquisition",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-276e2f8f23b2eebf",
+    "raw_id": "RAW-a597c0d5f203fc21",
+    "claim_type": "acquisition",
+    "subject": "Nvidia 拟以 129 亿美元",
+    "predicate": "acquisition",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a597c0d5f203fc21",
+      "start": 5135,
+      "end": 5504
+    },
+    "source_quote": "Not last, the deal would give Hugging Face access to Nvidia’s much deeper pockets just as other AI infrastructure competitors start to get pulled into other outfits, as suggested by Stripe’s recent deal to acquire OpenRouter, a startup founded in early 2023 that helps customers select different AI models to perform different tasks depending on their needs and budget.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-84221ec8820a24ec",
+    "raw_id": "RAW-a597c0d5f203fc21",
+    "claim_type": "acquisition",
+    "subject": "Nvidia 拟以 129 亿美元",
+    "predicate": "acquisition",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a597c0d5f203fc21",
+      "start": 62,
+      "end": 92
+    },
+    "source_quote": "11:32 PM PDT · August 26, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-656876bf05f54610",
+    "raw_id": "RAW-a597c0d5f203fc21",
+    "claim_type": "acquisition",
+    "subject": "Nvidia 拟以 129 亿美元",
+    "predicate": "acquisition",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a597c0d5f203fc21",
+      "start": 93,
+      "end": 504
+    },
+    "source_quote": "Nvidia has agreed to buy Hugging Face for $12.9 billion, The Information reported Wednesday night, citing a source familiar with the matter. Business Insider, which first reported over the weekend that Hugging Face was fielding takeover interest, reported Wednesday night that the talks — which would value the company at more than $13 billion — had not yet produced a signed agreement and could still atomize .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bd6e473b9653596c",
+    "raw_id": "RAW-f8130b86fb4119af",
+    "claim_type": "product_release",
+    "subject": "Procurement Sciences",
+    "predicate": "product_release",
+    "object": "Awarded AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-10137fd1e7121532"
+    },
+    "source_span": {
+      "raw_id": "RAW-f8130b86fb4119af",
+      "start": 0,
+      "end": 168
+    },
+    "source_quote": "Introducing, Awarded AI\nAwarded AI by Procurement Sciences is our end-to-end platform for proposal creation, capture and business development, powered by generative AI.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7f3966ecf01f1f7a",
+    "raw_id": "RAW-85989236714aaaeb",
+    "claim_type": "organization_restructuring",
+    "subject": "Korea's Public Procurement Service",
+    "predicate": "organization_restructuring",
+    "object": "AI Procurement Innovation Division",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2210df5f9692c2c3"
+    },
+    "source_span": {
+      "raw_id": "RAW-85989236714aaaeb",
+      "start": 607,
+      "end": 754
+    },
+    "source_quote": "Korea's Public Procurement Service launched an \"AI Procurement Innovation Division\" on the 21st to lead the AI transformation of public procurement",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bb5ef2d90ee2b655",
+    "raw_id": "RAW-37747731ccbc55f0",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI Enterprise Infrastructure 8.2",
+    "predicate": "product_release",
+    "object": "Production Branch",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d42f6a84c9d70625"
+    },
+    "source_span": {
+      "raw_id": "RAW-37747731ccbc55f0",
+      "start": 561,
+      "end": 623
+    },
+    "source_quote": "Infrastructure 8.2 (Production Branch) - Released August 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8fb8a6c9a6a27fe3",
+    "raw_id": "RAW-37747731ccbc55f0",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI Enterprise Infrastructure 7.8",
+    "predicate": "product_release",
+    "object": "Long-Term Support Branch",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-d42f6a84c9d70625"
+    },
+    "source_span": {
+      "raw_id": "RAW-37747731ccbc55f0",
+      "start": 805,
+      "end": 854
+    },
+    "source_quote": "Infrastructure 7.8 (LTSB) - Released August 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a3ce6346c1d6b871",
+    "raw_id": "RAW-1bee54022d230cc6",
+    "claim_type": "policy_regulation",
+    "subject": "Government of South Korea",
+    "predicate": "policy_regulation",
+    "object": "National Contract System Reform to Promote Innovative Technologies",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4758807744db1a2b"
+    },
+    "source_span": {
+      "raw_id": "RAW-1bee54022d230cc6",
+      "start": 969,
+      "end": 1190
+    },
+    "source_quote": "The government announced the plan, titled \"National Contract System Reform to Promote Innovative Technologies,\" at a joint emergency economic council and economic ministers' meeting held Friday at Government Complex Seoul",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-782f16e1ecac2606",
+    "raw_id": "RAW-1bee54022d230cc6",
+    "claim_type": "policy_regulation",
+    "subject": "Government of South Korea",
+    "predicate": "policy_regulation",
+    "object": "Amendment to the National Contracts Act",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-4758807744db1a2b"
+    },
+    "source_span": {
+      "raw_id": "RAW-1bee54022d230cc6",
+      "start": 5786,
+      "end": 5968
+    },
+    "source_quote": "The government plans to file an amendment to the National Contracts Act incorporating the three new contract tracks in September, with the aim of passing it into law before year-end.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a17edf2338da7438",
+    "raw_id": "RAW-1bee54022d230cc6",
+    "claim_type": "policy_regulation",
+    "subject": "Ministry of Trade, Industry and Energy",
+    "predicate": "policy_regulation",
+    "object": "AI robots for public deployment",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-4758807744db1a2b"
+    },
+    "source_span": {
+      "raw_id": "RAW-1bee54022d230cc6",
+      "start": 3308,
+      "end": 3541
+    },
+    "source_quote": "The new framework would make it possible, for example, for the Ministry of Trade, Industry and Energy to conduct R&D on AI robots for public deployment while the police and the National Fire Agency participate as purchasing agencies.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8946bcd255d44871",
+    "raw_id": "RAW-98d7147924fa9b71",
+    "claim_type": "hardware_product",
+    "subject": "Cerebras Systems",
+    "predicate": "hardware_product",
+    "object": "CS-4 AI accelerator",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ade25d31aa7c5328"
+    },
+    "source_span": {
+      "raw_id": "RAW-98d7147924fa9b71",
+      "start": 41,
+      "end": 192
+    },
+    "source_quote": "Cerebras Systems pulled the sheet off its fourth-generation wafer-scale system on August 19, 2026, at a launch event called Supernova in San Francisco.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f61063521359cfd0",
+    "raw_id": "RAW-bbac020943d76d9d",
+    "claim_type": "partnership",
+    "subject": "Cisco",
+    "predicate": "partnership",
+    "object": "Supermicro",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fa1d1092f3fa202c"
+    },
+    "source_span": {
+      "raw_id": "RAW-bbac020943d76d9d",
+      "start": 1481,
+      "end": 1792
+    },
+    "source_quote": "Today, Cisco (Nasdaq: CSCO) is expanding the Secure AI Factory with NVIDIA through a partnership with Supermicro, bringing its leadership in high-density, liquid and air-cooled compute to Cisco’s industry-leading full-stack, secure AI infrastructure architecture for enterprises, neoclouds and sovereign clouds.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6457acb84e72455a",
+    "raw_id": "RAW-374d1b36dfa480f0",
+    "claim_type": "partnership",
+    "subject": "AMD",
+    "predicate": "partnership",
+    "object": "Anthropic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-71d07a488065ffdf"
+    },
+    "source_span": {
+      "raw_id": "RAW-374d1b36dfa480f0",
+      "start": 1526,
+      "end": 1574
+    },
+    "source_quote": "AMD and Anthropic Announce Strategic Partnership",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-19fef5e8f26d9a5f",
+    "raw_id": "RAW-374d1b36dfa480f0",
+    "claim_type": "partnership",
+    "subject": "AMD",
+    "predicate": "partnership",
+    "object": "Cerebras",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-71d07a488065ffdf"
+    },
+    "source_span": {
+      "raw_id": "RAW-374d1b36dfa480f0",
+      "start": 1933,
+      "end": 2017
+    },
+    "source_quote": "AMD and Cerebras partner to deliver high-performance for ultra-low latency workloads",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f060fee3cab913b3",
+    "raw_id": "RAW-ae119af32c671441",
+    "claim_type": "funding",
+    "subject": "CogniLex",
+    "predicate": "funding",
+    "object": "£250 million Series C funding round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8329d0ca932386c4"
+    },
+    "source_span": {
+      "raw_id": "RAW-ae119af32c671441",
+      "start": 2687,
+      "end": 2865
+    },
+    "source_quote": "This month, London-based legal tech firm CogniLex secured a £250 million Series C funding round for its platform of AI agents specialised in contract analysis and legal discovery",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8c01535a139e8d89",
+    "raw_id": "RAW-173b1cabea2b1c33",
+    "claim_type": "hardware_deployment",
+    "subject": "AWS and NVIDIA to",
+    "predicate": "hardware_deployment",
+    "object": "for AI in 2027-2028",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-173b1cabea2b1c33",
+      "start": 14,
+      "end": 109
+    },
+    "source_quote": "AWS will deploy 2 million additional NVIDIA GPUs across its global infrastructure in 2027–2028.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-93bc3987f5322bf6",
+    "raw_id": "RAW-173b1cabea2b1c33",
+    "claim_type": "hardware_deployment",
+    "subject": "AWS and NVIDIA to",
+    "predicate": "hardware_deployment",
+    "object": "for AI in 2027-2028",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-173b1cabea2b1c33",
+      "start": 317,
+      "end": 775
+    },
+    "source_quote": "Amazon Web Services (AWS) and NVIDIA announced a major expansion of their strategic collaboration . Building on 16 years of joint innovation, the companies plan to deploy 2 million additional NVIDIA GPUs across AWS’s global infrastructure and deepen their work together across AI factories , CPUs , networking, open models, data processing, and robotics—delivering co-engineered solutions that help customers accelerate AI development at unprecedented scale.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3ca9c184324f4c1f",
+    "raw_id": "RAW-173b1cabea2b1c33",
+    "claim_type": "hardware_deployment",
+    "subject": "AWS and NVIDIA to",
+    "predicate": "hardware_deployment",
+    "object": "for AI in 2027-2028",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-173b1cabea2b1c33",
+      "start": 2927,
+      "end": 3315
+    },
+    "source_quote": "AWS now plans to deploy an additional 2 million NVIDIA GPUs in 2027–2028 across its global infrastructure, including AI factories. This capacity will power customer workloads ranging from agentic AI and scientific discovery to enterprise automation and physical AI. Customers are already seeing results from the collaboration—from faster drug discovery to more efficient fraud detection .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-124e8622286cdf29",
+    "raw_id": "RAW-173b1cabea2b1c33",
+    "claim_type": "hardware_deployment",
+    "subject": "AWS and NVIDIA to",
+    "predicate": "hardware_deployment",
+    "object": "for AI in 2027-2028",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-173b1cabea2b1c33",
+      "start": 110,
+      "end": 200
+    },
+    "source_quote": "NVIDIA Vera CPUs are coming to AWS, providing an additional compute option for agentic AI.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9eb0bc1a70801f20",
+    "raw_id": "RAW-0fa7ecbc8e7dcee2",
+    "claim_type": "product_release",
+    "subject": "Google Cloud",
+    "predicate": "product_release",
+    "object": "Gemini Enterprise for Legal",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b7dfe9c11ac0ccdf"
+    },
+    "source_span": {
+      "raw_id": "RAW-0fa7ecbc8e7dcee2",
+      "start": 296,
+      "end": 528
+    },
+    "source_quote": "Google Cloud launched Gemini Enterprise for Legal on August 25, 2026, delivering a purpose-built agentic platform designed for the strict confidentiality, compliance, and workflow demands of law firms and corporate legal departments",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c10cc90a332e8006",
+    "raw_id": "RAW-87744d8b4e708487",
+    "claim_type": "model_release",
+    "subject": "Z.ai",
+    "predicate": "model_release",
+    "object": "GLM-5.3-Flash",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e81e723f5b222066"
+    },
+    "source_span": {
+      "raw_id": "RAW-87744d8b4e708487",
+      "start": 238,
+      "end": 346
+    },
+    "source_quote": "Z.ai released GLM-5.3-Flash, a model with 320 billion parameters and a context window of one million tokens.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8db3cc503f107712",
+    "raw_id": "RAW-352ea807c3887e94",
+    "claim_type": "security_incident",
+    "subject": "OpenAI",
+    "predicate": "security_incident",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9f44b44cfd6f5660"
+    },
+    "source_span": {
+      "raw_id": "RAW-352ea807c3887e94",
+      "start": 199,
+      "end": 466
+    },
+    "source_quote": "In July, an unreleased OpenAI model broke out of a restricted environment, figured out how to get access to the internet, allowed AI agents to talk to each other using a secret “message board,” and hacked into the internal systems of a different AI lab, Hugging Face.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-03d607d27b781c8c",
+    "raw_id": "RAW-352ea807c3887e94",
+    "claim_type": "security_incident",
+    "subject": "OpenAI",
+    "predicate": "security_incident",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-9f44b44cfd6f5660"
+    },
+    "source_span": {
+      "raw_id": "RAW-352ea807c3887e94",
+      "start": 3367,
+      "end": 3471
+    },
+    "source_quote": "On July 20, OpenAI discovered the hack, 12 days after the AI agents first circumvented their safeguards.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-edb789a933998cd7",
+    "raw_id": "RAW-0f39bcef3770dba2",
+    "claim_type": "product_release",
+    "subject": "Pollen Robotics",
+    "predicate": "product_release",
+    "object": "Microduck",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-40ddc303317abcac"
+    },
+    "source_span": {
+      "raw_id": "RAW-0f39bcef3770dba2",
+      "start": 447,
+      "end": 585
+    },
+    "source_quote": "Hugging Face’s Pollen Robotics has launched its second cute AI robot, the Microduck , a one-eyed biped standing just under 10 inches tall.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-02eb27c05be378d1",
+    "raw_id": "RAW-7183fb58f4cb87e5",
+    "claim_type": "funding",
+    "subject": "黄仁勋驳斥\"循环",
+    "predicate": "funding",
+    "object": "\"质疑：AI 行业需要巨额资金，英伟达投资风险很低",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7183fb58f4cb87e5",
+      "start": 0,
+      "end": 56
+    },
+    "source_quote": "IT之家 8 月 27 日消息，英伟达 CEO 黄仁勋当地时间周三为公司日益深入参与人工智能行业融资进行了辩护。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-68890a381092e951",
+    "raw_id": "RAW-7183fb58f4cb87e5",
+    "claim_type": "funding",
+    "subject": "黄仁勋驳斥\"循环",
+    "predicate": "funding",
+    "object": "\"质疑：AI 行业需要巨额资金，英伟达投资风险很低",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7183fb58f4cb87e5",
+      "start": 167,
+      "end": 194
+    },
+    "source_quote": "“这是第一代需要数百亿美元融资才能发展起来的初创公司。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-98af0b0c9a1bfde0",
+    "raw_id": "RAW-7183fb58f4cb87e5",
+    "claim_type": "funding",
+    "subject": "黄仁勋驳斥\"循环",
+    "predicate": "funding",
+    "object": "\"质疑：AI 行业需要巨额资金，英伟达投资风险很低",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7183fb58f4cb87e5",
+      "start": 629,
+      "end": 695
+    },
+    "source_quote": "英伟达近期还宣布与华尔街多家大型金融机构合作，为数据中心筹集最高 5,000 亿美元 （现汇率约合 3.37 万亿元人民币） 融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-436048884fff3d4b",
+    "raw_id": "RAW-7183fb58f4cb87e5",
+    "claim_type": "funding",
+    "subject": "黄仁勋驳斥\"循环",
+    "predicate": "funding",
+    "object": "\"质疑：AI 行业需要巨额资金，英伟达投资风险很低",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-7183fb58f4cb87e5",
+      "start": 734,
+      "end": 784
+    },
+    "source_quote": "批评者认为，这种做法越来越像一种“循环融资”，并将其与互联网泡沫时期一些最终失败的融资安排相提并论。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7478ae7793949e27",
+    "raw_id": "RAW-c580c8b6f793c5af",
+    "claim_type": "product_release",
+    "subject": "谷歌搜索结果链接",
+    "predicate": "product_release",
+    "object": "goto 跳转参数，旨在反制爬虫与 AI 抓取",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c580c8b6f793c5af",
+      "start": 0,
+      "end": 41
+    },
+    "source_quote": "谷歌搜索结果链接新增 goto 跳转参数，旨在反制爬虫与 AI 抓取 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b226f575d86a6190",
+    "raw_id": "RAW-c580c8b6f793c5af",
+    "claim_type": "product_release",
+    "subject": "谷歌搜索结果链接",
+    "predicate": "product_release",
+    "object": "goto 跳转参数，旨在反制爬虫与 AI 抓取",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c580c8b6f793c5af",
+      "start": 207,
+      "end": 241
+    },
+    "source_quote": "谷歌搜索结果链接新增 goto 跳转参数，旨在反制爬虫与 AI 抓取",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-00ec883f95f0ccec",
+    "raw_id": "RAW-c580c8b6f793c5af",
+    "claim_type": "product_release",
+    "subject": "谷歌搜索结果链接",
+    "predicate": "product_release",
+    "object": "goto 跳转参数，旨在反制爬虫与 AI 抓取",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c580c8b6f793c5af",
+      "start": 288,
+      "end": 309
+    },
+    "source_quote": "感谢IT之家网友 华南吴彦祖 的线索投递！",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4bc2edc34af937f2",
+    "raw_id": "RAW-c580c8b6f793c5af",
+    "claim_type": "product_release",
+    "subject": "谷歌搜索结果链接",
+    "predicate": "product_release",
+    "object": "goto 跳转参数，旨在反制爬虫与 AI 抓取",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c580c8b6f793c5af",
+      "start": 310,
+      "end": 399
+    },
+    "source_quote": "IT之家 8 月 27 日消息，谷歌今日对 Seroundtable 回应证实，其正在搜索结果链接中逐步推广一项新的技术措施 —— 为搜索结果 URL 添加“goto”跳转参数。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-788f1200daacb92d",
+    "raw_id": "RAW-82e12758e29fd219",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "我国日均词元调用量突破 500 万亿，中国大模型稳居全球第一梯队",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-82e12758e29fd219",
+      "start": 529,
+      "end": 596
+    },
+    "source_quote": "稀宇科技开放平台首席架构师冯雯介绍称，2025 年下半年各厂商希望每 3 个月迭代一次模型，如今每 4 至 6 周就要发布一个新模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a64a538173bfbefe",
+    "raw_id": "RAW-82e12758e29fd219",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "我国日均词元调用量突破 500 万亿，中国大模型稳居全球第一梯队",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-82e12758e29fd219",
+      "start": 705,
+      "end": 766
+    },
+    "source_quote": "腾讯公司智慧产业总经理刘峰表示，混元 3 正式版上线第一周，其 Token 调用量比上一代模型混元 2 增长了 68 倍。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-060c023dca1b8277",
+    "raw_id": "RAW-82e12758e29fd219",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "我国日均词元调用量突破 500 万亿，中国大模型稳居全球第一梯队",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-82e12758e29fd219",
+      "start": 597,
+      "end": 626
+    },
+    "source_quote": "各大厂商持续加大训练投入，模型参数量、上下文窗口不断扩大。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-806ff3c019b295da",
+    "raw_id": "RAW-82e12758e29fd219",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "我国日均词元调用量突破 500 万亿，中国大模型稳居全球第一梯队",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-82e12758e29fd219",
+      "start": 626,
+      "end": 664
+    },
+    "source_quote": "IT之家注意到，人工智能正从“会聊天”走向“能干活”，智能体开始规模化落地。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b5cd0f41c1b77105",
+    "raw_id": "RAW-56c9afcc6d0d09b9",
+    "claim_type": "acquisition",
+    "subject": "Nvidia",
+    "predicate": "acquisition",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fd62846d0c613a06"
+    },
+    "source_span": {
+      "raw_id": "RAW-56c9afcc6d0d09b9",
+      "start": 170,
+      "end": 244
+    },
+    "source_quote": "Nvidia is acquiring open-source AI platform Hugging Face for $12.9 billion",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1ef7539a746d6c5e",
+    "raw_id": "RAW-3394a67c6d797990",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "阿里云下调百炼平台 Qwen3.8-Flash 大模型计费单价",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3394a67c6d797990",
+      "start": 470,
+      "end": 609
+    },
+    "source_quote": "据IT之家了解，Qwen3.8-Flash 是千问最新推出的多模态大模型，原生支持百万级上下文窗口，可一次性处理超长文档、代码仓库与复杂对话，在编程辅助、智能体协作、图文理解等场景中表现突出，兼容 OpenAI 与 Anthropic 接口协议，适合构建高并发应用与智能工作流。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-10731637a623f066",
+    "raw_id": "RAW-3394a67c6d797990",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "阿里云下调百炼平台 Qwen3.8-Flash 大模型计费单价",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3394a67c6d797990",
+      "start": 610,
+      "end": 711
+    },
+    "source_quote": "截至目前，Qwen3.8 已开源发布的 2.4T 参数量的 Qwen3.8-Max、Qwen3.8-27B 及 Qwen3.8-Flash 三大尺寸模型，均已上线千问 AI 平台对外提供 API 服务。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-969615ed498fc234",
+    "raw_id": "RAW-3394a67c6d797990",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "阿里云下调百炼平台 Qwen3.8-Flash 大模型计费单价",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3394a67c6d797990",
+      "start": 0,
+      "end": 39
+    },
+    "source_quote": "阿里云：下调百炼平台 Qwen3.8-Flash 大模型计费单价 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8c6e7a77665ed780",
+    "raw_id": "RAW-3394a67c6d797990",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "阿里云下调百炼平台 Qwen3.8-Flash 大模型计费单价",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3394a67c6d797990",
+      "start": 207,
+      "end": 239
+    },
+    "source_quote": "阿里云：下调百炼平台 Qwen3.8-Flash 大模型计费单价",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-77477fe365904e66",
+    "raw_id": "RAW-eacb9ed0eb3e8ab2",
+    "claim_type": "hardware_product",
+    "subject": "OpenAI",
+    "predicate": "hardware_product",
+    "object": "Jalapeño",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-31aa6a24850f3ec2"
+    },
+    "source_span": {
+      "raw_id": "RAW-eacb9ed0eb3e8ab2",
+      "start": 448,
+      "end": 484
+    },
+    "source_quote": "OpenAI 公开首款定制 AI 推理芯片 Jalapeño 的测试结果",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-defef39792f75896",
+    "raw_id": "RAW-e0acc26a20aae237",
+    "claim_type": "research_result",
+    "subject": "AI shopping agents aren't ready to buy on your behalf,",
+    "predicate": "research_result",
+    "object": "AI shopping agents aren't ready to buy on your behalf, study finds",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e0acc26a20aae237",
+      "start": 0,
+      "end": 66
+    },
+    "source_quote": "AI shopping agents aren't ready to buy on your behalf, study finds",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7f70ba674f2877ec",
+    "raw_id": "RAW-e0acc26a20aae237",
+    "claim_type": "research_result",
+    "subject": "AI shopping agents aren't ready to buy on your behalf,",
+    "predicate": "research_result",
+    "object": "AI shopping agents aren't ready to buy on your behalf, study finds",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e0acc26a20aae237",
+      "start": 67,
+      "end": 133
+    },
+    "source_quote": "AI shopping agents aren't ready to buy on your behalf, study finds",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e14c76bf44ed0660",
+    "raw_id": "RAW-e0acc26a20aae237",
+    "claim_type": "research_result",
+    "subject": "AI shopping agents aren't ready to buy on your behalf,",
+    "predicate": "research_result",
+    "object": "AI shopping agents aren't ready to buy on your behalf, study finds",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-e0acc26a20aae237",
+      "start": 1106,
+      "end": 1172
+    },
+    "source_quote": "AI shopping agents aren't ready to buy on your behalf, study finds",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bbf4ef88f58bbf28",
+    "raw_id": "RAW-e0acc26a20aae237",
+    "claim_type": "research_result",
+    "subject": "AI shopping agents aren't ready to buy on your behalf,",
+    "predicate": "research_result",
+    "object": "AI shopping agents aren't ready to buy on your behalf, study finds",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-e0acc26a20aae237",
+      "start": 7000,
+      "end": 7066
+    },
+    "source_quote": "AI shopping agents aren't ready to buy on your behalf, study finds",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9c9e19177a698e87",
+    "raw_id": "RAW-7090001310349d87",
+    "claim_type": "product_release",
+    "subject": "Plaud",
+    "predicate": "product_release",
+    "object": "Plaud One Explorer Edition",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ef069a69b12bdc11"
+    },
+    "source_span": {
+      "raw_id": "RAW-7090001310349d87",
+      "start": 460,
+      "end": 627
+    },
+    "source_quote": "Plaud has introduced a new AI wearable that’s designed to record, transcribe, and summarize your conversations, only this time it looks like earbuds instead of a pin .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-23e0851fedd6710c",
+    "raw_id": "RAW-9c922cfaae98f07b",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "工业Agent不是“套壳”大模型！西门子百年经验灌进工业AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-9c922cfaae98f07b",
+      "start": 885,
+      "end": 951
+    },
+    "source_quote": "一方面 推出Eigen工程智能体等AI原生产品 ，另一方面通过 西门子Xcelerator 汇聚产品与伙伴，推动工业AI规模化落地。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ad1939ad0059f1b2",
+    "raw_id": "RAW-5e86f461b1a4b639",
+    "claim_type": "model_release",
+    "subject": "智谱",
+    "predicate": "model_release",
+    "object": "GLM-5.3 Flash",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ad9bd53b2e670563"
+    },
+    "source_span": {
+      "raw_id": "RAW-5e86f461b1a4b639",
+      "start": 166,
+      "end": 216
+    },
+    "source_quote": "是 智谱 刚刚发布即 开源 的 GLM-5.3 Flash ，还是5系列里 首个 原生多模态的那种。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-09b086cd8c2cb740",
+    "raw_id": "RAW-3edf5bd2c41207c7",
+    "claim_type": "research_result",
+    "subject": "小宇宙",
+    "predicate": "research_result",
+    "object": "《2026 AI趋势报告》",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f983c31187dd4c1f"
+    },
+    "source_span": {
+      "raw_id": "RAW-3edf5bd2c41207c7",
+      "start": 98,
+      "end": 135
+    },
+    "source_quote": "8月22日，小宇宙正式对外发布《2026 AI趋势报告》（下称“报告”）。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-242914dafae2b9c9",
+    "raw_id": "RAW-571331313ca63fc1",
+    "claim_type": "model_release",
+    "subject": "派早报：智谱",
+    "predicate": "model_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-571331313ca63fc1",
+      "start": 6,
+      "end": 37
+    },
+    "source_quote": "派早报：智谱开源 GLM-5.3-Flash 原生多模态模型等",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-42965b80221ff6d7",
+    "raw_id": "RAW-571331313ca63fc1",
+    "claim_type": "model_release",
+    "subject": "派早报：智谱",
+    "predicate": "model_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-571331313ca63fc1",
+      "start": 71,
+      "end": 99
+    },
+    "source_quote": "智谱开源 GLM-5.3-Flash 原生多模态模型 5",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f33b8b25ddc90e5a",
+    "raw_id": "RAW-571331313ca63fc1",
+    "claim_type": "model_release",
+    "subject": "派早报：智谱",
+    "predicate": "model_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-571331313ca63fc1",
+      "start": 170,
+      "end": 211
+    },
+    "source_quote": "Google 推出 Gemini 3.5 Transcribe 语音转文本模型 0",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2cfbee0deab4d7fd",
+    "raw_id": "RAW-571331313ca63fc1",
+    "claim_type": "model_release",
+    "subject": "派早报：智谱",
+    "predicate": "model_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-571331313ca63fc1",
+      "start": 272,
+      "end": 298
+    },
+    "source_quote": "智谱开源 GLM-5.3-Flash 原生多模态模型",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-baabe0dedfb99448",
+    "raw_id": "RAW-556f9c0db8fea420",
+    "claim_type": "capital_investment",
+    "subject": "Infosys",
+    "predicate": "capital_investment",
+    "object": "Aerchain",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-044224cca0e36d89"
+    },
+    "source_span": {
+      "raw_id": "RAW-556f9c0db8fea420",
+      "start": 77,
+      "end": 184
+    },
+    "source_quote": "Infosys has invested in Bengaluru-based AI-powered procurement startup Aerchain through its Innovation Fund",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8033e24c2fea0913",
+    "raw_id": "RAW-8a3020f0a340ff44",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "，最高 4K 分辨率",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8a3020f0a340ff44",
+      "start": 0,
+      "end": 54
+    },
+    "source_quote": "谷歌推出 Gemini Omni 1.1 Flash 视频生成 AI 模型，最高 4K 分辨率 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-139e856635f14693",
+    "raw_id": "RAW-8a3020f0a340ff44",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "，最高 4K 分辨率",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8a3020f0a340ff44",
+      "start": 222,
+      "end": 269
+    },
+    "source_quote": "谷歌推出 Gemini Omni 1.1 Flash 视频生成 AI 模型，最高 4K 分辨率",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3ce8bf3a586aa7b3",
+    "raw_id": "RAW-8a3020f0a340ff44",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "，最高 4K 分辨率",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-8a3020f0a340ff44",
+      "start": 342,
+      "end": 426
+    },
+    "source_quote": "IT之家 8 月 28 日消息，当地时间 8 月 27 日，谷歌宣布推出 Gemini Omni 1.1 Flash 视频生成 AI 模型， 最高可生成 4K 视频 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5b13532130125e4b",
+    "raw_id": "RAW-8a3020f0a340ff44",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "，最高 4K 分辨率",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-8a3020f0a340ff44",
+      "start": 559,
+      "end": 646
+    },
+    "source_quote": "生成 360p 预览：相较于 Omni 1.1 的标准 720p 分辨率，生成速度最高可提升 60%，且成本仅需原有的三分之一，适用于快速原型验证、分镜脚本迭代以及高速渲染；",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-30b11584f0466bfa",
+    "raw_id": "RAW-760edb1e8907148f",
+    "claim_type": "product_release",
+    "subject": "Adobe",
+    "predicate": "product_release",
+    "object": "AI Assisted Editor",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6227768bf0057cd9"
+    },
+    "source_span": {
+      "raw_id": "RAW-760edb1e8907148f",
+      "start": 560,
+      "end": 763
+    },
+    "source_quote": "Launching in beta, the “AI Assisted Editor” view will show all of Photoshop’s AI features in a single toolbar, including its prompt-based image editor, background remover, an AI image extender, and more.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-56f382c75f291d6b",
+    "raw_id": "RAW-760edb1e8907148f",
+    "claim_type": "product_release",
+    "subject": "Adobe",
+    "predicate": "product_release",
+    "object": "markup feature",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-6227768bf0057cd9"
+    },
+    "source_span": {
+      "raw_id": "RAW-760edb1e8907148f",
+      "start": 764,
+      "end": 930
+    },
+    "source_quote": "There are also new ways to refine edits with AI, including a “markup” feature to draw directly on an image to show Photoshop’s AI assistant what you’d like to change.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-348560525dedea75",
+    "raw_id": "RAW-3dc31966a2274b81",
+    "claim_type": "organization_people",
+    "subject": "OpenAI researcher warns ultrafast AI could",
+    "predicate": "organization_people",
+    "object": "security teams in the dust",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3dc31966a2274b81",
+      "start": 0,
+      "end": 75
+    },
+    "source_quote": "OpenAI researcher warns ultrafast AI could leave security teams in the dust",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6d965e9016711af9",
+    "raw_id": "RAW-3dc31966a2274b81",
+    "claim_type": "organization_people",
+    "subject": "OpenAI researcher warns ultrafast AI could",
+    "predicate": "organization_people",
+    "object": "security teams in the dust",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3dc31966a2274b81",
+      "start": 76,
+      "end": 151
+    },
+    "source_quote": "OpenAI researcher warns ultrafast AI could leave security teams in the dust",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5739e9188798bd81",
+    "raw_id": "RAW-3dc31966a2274b81",
+    "claim_type": "organization_people",
+    "subject": "OpenAI researcher warns ultrafast AI could",
+    "predicate": "organization_people",
+    "object": "security teams in the dust",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3dc31966a2274b81",
+      "start": 152,
+      "end": 503
+    },
+    "source_quote": "An OpenAI researcher warns that state-of-the-art AI models running 50 times faster could infiltrate systems before human teams can react. Simple monitoring won't cut it anymore, he says. What's needed are autonomous shutdown systems. The warning comes as OpenAI unveils a new AI chip that significantly outperforms current hardware in inference speed.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a73e408de449e2e7",
+    "raw_id": "RAW-3dc31966a2274b81",
+    "claim_type": "organization_people",
+    "subject": "OpenAI researcher warns ultrafast AI could",
+    "predicate": "organization_people",
+    "object": "security teams in the dust",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3dc31966a2274b81",
+      "start": 504,
+      "end": 855
+    },
+    "source_quote": "An OpenAI researcher warns that state-of-the-art AI models running 50 times faster could infiltrate systems before human teams can react. Simple monitoring won't cut it anymore, he says. What's needed are autonomous shutdown systems. The warning comes as OpenAI unveils a new AI chip that significantly outperforms current hardware in inference speed.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5250c8655ab4996c",
+    "raw_id": "RAW-9b60a2a1912d7297",
+    "claim_type": "funding",
+    "subject": "Viral AI startup Instinct",
+    "predicate": "funding",
+    "object": "$350M at a $2.5B valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-9b60a2a1912d7297",
+      "start": 59,
+      "end": 122
+    },
+    "source_quote": "Viral AI startup Instinct has raised $350M at a $2.5B valuation",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d772e7d741fd53b9",
+    "raw_id": "RAW-9b60a2a1912d7297",
+    "claim_type": "funding",
+    "subject": "Viral AI startup Instinct",
+    "predicate": "funding",
+    "object": "$350M at a $2.5B valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-9b60a2a1912d7297",
+      "start": 302,
+      "end": 622
+    },
+    "source_quote": "The company, which offers an AI assistant that has inspired enthusiasm among its early users, told The Wall Street Journal on Wednesday that it had raised $250 million in a recent Series B funding round. That new round brings the company’s total funding to $350 million and gives the startup a valuation of $2.5 billion.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ad28c0178b59a88d",
+    "raw_id": "RAW-9b60a2a1912d7297",
+    "claim_type": "funding",
+    "subject": "Viral AI startup Instinct",
+    "predicate": "funding",
+    "object": "$350M at a $2.5B valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-9b60a2a1912d7297",
+      "start": 623,
+      "end": 711
+    },
+    "source_quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1b309f67a521e6d7",
+    "raw_id": "RAW-e8f091a7d06418d5",
+    "claim_type": "deployment",
+    "subject": "OpenAI",
+    "predicate": "deployment",
+    "object": "TechCrunch Disrupt 2026 AI Stage",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-f3896489b3206686"
+    },
+    "source_span": {
+      "raw_id": "RAW-e8f091a7d06418d5",
+      "start": 3,
+      "end": 75
+    },
+    "source_quote": "Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6e02af4b8d7cf7b3",
+    "raw_id": "RAW-e8f091a7d06418d5",
+    "claim_type": "deployment",
+    "subject": "TechCrunch Disrupt 2026",
+    "predicate": "deployment",
+    "object": "Moscone Center, San Francisco",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-f3896489b3206686"
+    },
+    "source_span": {
+      "raw_id": "RAW-e8f091a7d06418d5",
+      "start": 607,
+      "end": 702
+    },
+    "source_quote": "From October 13–15 in San Francisco at Moscone Center, join leaders from across the AI industry",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e9c480df5ee7161b",
+    "raw_id": "RAW-caffabcbfc6fc081",
+    "claim_type": "funding",
+    "subject": "Higgsfield",
+    "predicate": "funding",
+    "object": "4 亿美元 B 轮融资",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-01ec73f34b831733"
+    },
+    "source_span": {
+      "raw_id": "RAW-caffabcbfc6fc081",
+      "start": 763,
+      "end": 802
+    },
+    "source_quote": "8月，AI 图像和视频生成平台Higgsfield完成 4 亿美元 B 轮融资",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0b70d1922941f3c8",
+    "raw_id": "RAW-caffabcbfc6fc081",
+    "claim_type": "funding",
+    "subject": "演语科技",
+    "predicate": "funding",
+    "object": "近3亿美元B+轮融资",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-01ec73f34b831733"
+    },
+    "source_span": {
+      "raw_id": "RAW-caffabcbfc6fc081",
+      "start": 803,
+      "end": 832
+    },
+    "source_quote": "6月，LibTV母公司演语科技6月完成近3亿美元B+轮融资",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6f57cc264bab6aa7",
+    "raw_id": "RAW-faaf4930b538caf1",
+    "claim_type": "research_result",
+    "subject": "谷歌推出全球首个双盲 AI 评估技术，基于加密环境保障",
+    "predicate": "research_result",
+    "object": "公正性",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-faaf4930b538caf1",
+      "start": 175,
+      "end": 271
+    },
+    "source_quote": "谷歌联合新加坡人工智能安全研究所、OpenMined、AVERI 以及 MLCommons，在隐私保护环境中对 Gemini Flash Lite 模型进行机密基准测试，提升评估结果的完整性。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-a23961cfd0805375",
+    "raw_id": "RAW-faaf4930b538caf1",
+    "claim_type": "research_result",
+    "subject": "谷歌推出全球首个双盲 AI 评估技术，基于加密环境保障",
+    "predicate": "research_result",
+    "object": "公正性",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-faaf4930b538caf1",
+      "start": 272,
+      "end": 345
+    },
+    "source_quote": "传统高风险外部评估一直存在两难困境：要么 评估方交出测试提示词 ，存在模型方提前看到题目的风险；要么 模型方交出模型权重 ，面临知识产权泄露风险。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-c6199c166ba922bf",
+    "raw_id": "RAW-faaf4930b538caf1",
+    "claim_type": "research_result",
+    "subject": "谷歌推出全球首个双盲 AI 评估技术，基于加密环境保障",
+    "predicate": "research_result",
+    "object": "公正性",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-faaf4930b538caf1",
+      "start": 346,
+      "end": 466
+    },
+    "source_quote": "双盲评估则解决了这一矛盾，通过谷歌云保密计算产品组合中的 Confidential Space，能够通过加密验证，保证外部评估数据和专有模型分别对各自所有者保持隐私：评估方无法看到 Gemini 模型权重，谷歌也无法看到评估方的测试提示词。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-793ff6cadb7f4820",
+    "raw_id": "RAW-8788feb850017b2b",
+    "claim_type": "model_release",
+    "subject": "Google",
+    "predicate": "model_release",
+    "object": "Gemini Omni 1.1 Flash video model",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7016c4f467410a1d"
+    },
+    "source_span": {
+      "raw_id": "RAW-8788feb850017b2b",
+      "start": 166,
+      "end": 329
+    },
+    "source_quote": "Google's Gemini Omni 1.1 Flash video model now analyzes up to ten seconds of existing footage instead of just the last second for more consistent scene extensions.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0b460b7bb3d44956",
+    "raw_id": "RAW-cf8d40ca93845593",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of",
+    "predicate": "ipo_listing",
+    "object": "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of IPO",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-cf8d40ca93845593",
+      "start": 0,
+      "end": 74
+    },
+    "source_quote": "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of IPO",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4024fb17d5c9dafc",
+    "raw_id": "RAW-cf8d40ca93845593",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of",
+    "predicate": "ipo_listing",
+    "object": "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of IPO",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-cf8d40ca93845593",
+      "start": 75,
+      "end": 149
+    },
+    "source_quote": "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of IPO",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4520c67405d129c3",
+    "raw_id": "RAW-cf8d40ca93845593",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of",
+    "predicate": "ipo_listing",
+    "object": "Anthropic has struck a deal worth around 45 billion dollars with British cloud startup Nscale, Bloomberg reports.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-cf8d40ca93845593",
+      "start": 150,
+      "end": 263
+    },
+    "source_quote": "Anthropic has struck a deal worth around 45 billion dollars with British cloud startup Nscale, Bloomberg reports.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2b96394db8fb6248",
+    "raw_id": "RAW-cf8d40ca93845593",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of",
+    "predicate": "ipo_listing",
+    "object": "Anthropic has struck a deal worth around 45 billion dollars with British cloud startup Nscale, Bloomberg reports.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-cf8d40ca93845593",
+      "start": 264,
+      "end": 377
+    },
+    "source_quote": "Anthropic has struck a deal worth around 45 billion dollars with British cloud startup Nscale, Bloomberg reports.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  }
+]

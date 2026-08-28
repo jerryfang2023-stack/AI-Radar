@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,18 +22,20 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-5890a74f1a62940e",
       "EV-32363cb5970acdea",
       "EV-e2da1aafabb3e09c"
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-technology-long_context",
       "TX-technology-open_weights"
     ],
     "relatedEntityIds": [
       "EN-bc1fc5140040180e"
     ],
     "firstSeen": "2026-06-18",
-    "lastSeen": "2026-08-27",
+    "lastSeen": "2026-08-28",
     "relationIds": [
       "REL2-1b03607242e20f5b"
     ],
@@ -42,6 +44,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-5890a74f1a62940e",
         "EV-32363cb5970acdea",
         "EV-e2da1aafabb3e09c"
       ],
@@ -50,6 +53,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-5890a74f1a62940e",
+        "dataDate": "2026-08-28",
+        "date": "2026-08-27",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "GLM-5.3-Flash以极低成本媲美顶级模型，且无需Nvidia即可运行",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [
+              "EN-f7a386a451b79627"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-f7a386a451b79627",
+          "EN-8d4321d936320802",
+          "EN-92ef967014bccd4a"
+        ]
+      },
       {
         "id": "EV-32363cb5970acdea",
         "dataDate": "2026-08-27",
@@ -149,6 +181,59 @@
     }
   ],
   "taxonomyNodes": [
+    {
+      "id": "TX-technology-long_context",
+      "name": "长上下文",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "long_context",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-fd21441fb6e143c3",
+        "EV-5890a74f1a62940e",
+        "EV-a6dc310224542dcf",
+        "EV-eedd370fd9cfdbb2",
+        "EV-58e18eab1b072c9a",
+        "EV-29c0d969abde2020",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-7a4d1e871dcd3b1f",
+        "EV-653cbce2ccc79f8b",
+        "EV-0e616f9e775a77dc",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-86ab9c2f1416e9d8",
+        "EV-a5efa57f3f744425",
+        "EV-70e3f88cb06a856c",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-70efbfcaadcdb259",
+        "EV-0c06df62702d26ab",
+        "EV-534dc9add1c0cc35",
+        "EV-57f083a39393d841",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-7df09a7717ef2feb",
+        "EN-f7a386a451b79627",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-74be4cbf48e647b2",
+        "EN-c70eca6b0f88f44d",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3309b3b14807f39a",
+        "EN-4b078b39d2fcacc7",
+        "EN-7dd7122ad9bf240f",
+        "EN-1d79127e9d90e89b",
+        "EN-7d3194f79e645c42",
+        "EN-3153ebda601cdb79",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-08-28"
+    },
     {
       "id": "TX-technology-open_weights",
       "name": "开放权重",
