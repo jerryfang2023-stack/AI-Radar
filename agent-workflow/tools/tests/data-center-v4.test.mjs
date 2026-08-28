@@ -135,6 +135,10 @@ test("DeepSeek V4 translates source titles through its chat completion endpoint"
   assert.equal(sourceTitleFactsPreserved("Aina Raises $5.5 Mn", "Aina 获得 450 万美元融资"), false);
   assert.equal(sourceTitleFactsPreserved("Aina Raises $5.5 Mn", "Aina 获得 550 万卢比融资"), false);
   assert.equal(sourceTitleFactsPreserved("Parloa triples valuation to $3 billion", "Parloa 估值翻三倍至 30 亿美元"), true);
+  assert.equal(sourceTitleFactsPreserved(
+    "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of IPO",
+    "Anthropic 在 IPO 前与 Nscale 敲定 450 亿美元算力交易",
+  ), true);
 });
 
 test("DeepSeek translations with changed monetary facts are rejected", async (t) => {
