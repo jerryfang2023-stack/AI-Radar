@@ -1230,6 +1230,7 @@ test("index pages, question headlines, roundups, and reaction articles cannot be
     ["Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier", "multi_event_roundup_not_single_event_source"],
     ["最新开源模型盘点（#23）：Laguna S2.1、Inkling 与 Kimi K3 展现开源模型在帕累托前沿的价值", "multi_event_roundup_not_single_event_source"],
     ["OpenAI 总裁布罗克曼回应苹果诉讼：无意窃取商业机密", "reaction_or_commentary_not_new_event"],
+    ["黄仁勋驳斥\"循环融资\"质疑：AI 行业需要巨额资金，英伟达投资风险很低", "reaction_or_commentary_not_new_event"],
   ];
 
   for (const [title, reason] of cases) {
