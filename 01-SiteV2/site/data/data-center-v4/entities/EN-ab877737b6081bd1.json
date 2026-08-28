@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,7 +22,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-794296a712c1cf15"
+      "EV-794296a712c1cf15",
+      "EV-e5a4171747c1e9c9"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -30,11 +31,13 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-24",
-    "lastSeen": "2026-06-29",
+    "lastSeen": "2026-08-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-e5a4171747c1e9c9"
+      ],
       "partnerships": [
         "EV-794296a712c1cf15"
       ],
@@ -44,6 +47,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-e5a4171747c1e9c9",
+        "dataDate": "2026-08-28",
+        "date": "2026-08-28",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Infosys创新基金投资于班加罗尔AI采购初创公司Aerchain",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ab877737b6081bd1"
+        ]
+      },
       {
         "id": "EV-794296a712c1cf15",
         "dataDate": "2026-06-29",
@@ -119,6 +137,7 @@
         "EV-e6a4e0785ebb268a",
         "EV-cded77b1de2db61a",
         "EV-8b0f056571d68269",
+        "EV-b93b6abf31662339",
         "EV-a852dc0ca6011ff6",
         "EV-11b2293769081d4c",
         "EV-9563aa162529aab0",
@@ -223,11 +242,12 @@
         "FDE-1fb7e2ae69d2f044"
       ],
       "hardwareIds": [
+        "HW-7889eb510b9d4210",
         "HW-a033b945449628d5",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-08-25"
+      "lastSeen": "2026-08-28"
     }
   ],
   "fde": [

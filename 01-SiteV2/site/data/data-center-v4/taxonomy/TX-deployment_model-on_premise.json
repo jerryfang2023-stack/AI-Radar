@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -21,6 +21,7 @@
       "EV-0e84a2f49d765ce3",
       "EV-0fc718ab409cdcf5",
       "EV-7263caa45bbf168e",
+      "EV-5c87fffc3534e990",
       "EV-c3ac03a8a0cc3a0e",
       "EV-7164fc80b7526930",
       "EV-6fc9c1eab4501ce9",
@@ -46,7 +47,7 @@
       "HW-ecc6755da7bbbbcd"
     ],
     "firstSeen": "2025-09-26",
-    "lastSeen": "2026-08-21"
+    "lastSeen": "2026-08-28"
   },
   "events": [
     {
@@ -886,6 +887,126 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/959/026.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-5c87fffc3534e990",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "updatedDate": "2026-08-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.248 发布：新增受限模式与跨会话消息功能",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.248",
+      "action": "发布",
+      "object": "：新增受限模式与跨会话消息功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [
+              "EN-cb4754c48f8023d0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Claude Code"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
+      "publisher": "Claude Code：GitHub Releases（RSS）"
     },
     {
       "id": "EV-c3ac03a8a0cc3a0e",
@@ -1911,6 +2032,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-5c87fffc3534e990",
         "EV-437a3e3d118f36e9",
         "EV-c74cb30742362fa2",
         "EV-c3ac03a8a0cc3a0e",
@@ -1977,7 +2099,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-842fcb5e60989a03",
@@ -2041,7 +2163,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6b668e4655192209",
         "EV-b382525eb51777b9",
         "EV-9ed6a759555d7e77",
         "EV-2a78dd5feb40a78a",
@@ -2172,10 +2293,10 @@
         "TX-target_user-consumer",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
+        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-technology-mixture_of_experts",
         "TX-deployment_model-on_premise",
         "TX-technology-model_context_protocol",
@@ -2244,9 +2365,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
-        "TX-technology-agentic_execution",
         "TX-deployment_model-on_premise"
       ],
       "relatedEntityIds": [
@@ -2432,6 +2553,86 @@
         "EN-6f7ac1823da81d2e",
         "EN-46162bbc9eb57274",
         "EN-8dfa869c34844253"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-c1caaa1f1c8d2423",
+      "snapshotKey": "c1caaa1f1c8d2423",
+      "snapshotId": "HWS-8c89d5a9d864e81f",
+      "eventId": "EV-5c87fffc3534e990",
+      "eventIds": [
+        "EV-5c87fffc3534e990"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Claude Code",
+      "subject": "Claude Code v2.1.248",
+      "productNames": [
+        "Claude Code"
+      ],
+      "hardwareType": "input_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-6bab8dcb3e94d66a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-6bab8dcb3e94d66a",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T22:12:20.000Z",
+          "subject_entity_id": "",
+          "subject_name": "Claude Code v2.1.248",
+          "product_entity_ids": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "product_names": [
+            "Claude Code"
+          ],
+          "component_type": "input_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Windows: Fixed the claude agents list not responding to the keyboard after detaching from a session, or when launched in a terminal tab left in win32-input-mode",
+          "event_refs": [
+            "EV-5c87fffc3534e990"
+          ],
+          "claim_ref": "CL-ed5da60ddf0bb4b3",
+          "source_refs": [
+            "SA-a469c59e808ab3db"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-cb4754c48f8023d0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
+      "entityIds": [
+        "EN-cb4754c48f8023d0"
       ]
     }
   ]

@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-faebddaa4885b004",
+    "name": "Ministry of Trade",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-a0678a734614b9fc"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-a0678a734614b9fc"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-a0678a734614b9fc",
+        "dataDate": "2026-08-28",
+        "date": "2026-08-28",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI机器人及先进技术将在新合同制度下获得公共采购快速通道",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d31c43526b245fe0",
+          "EN-faebddaa4885b004"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-30cee6c39cb66e85",
+      "snapshotKey": "30cee6c39cb66e85",
+      "snapshotId": "HWS-386d8a77abc5ae62",
+      "eventId": "EV-a0678a734614b9fc",
+      "eventIds": [
+        "EV-a0678a734614b9fc"
+      ],
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "title": "Government of South Korea",
+      "subject": "Government of South Korea",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-fc61b9948dff88b9"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-28",
+          "hardware_fact_id": "HWF-fc61b9948dff88b9",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-27T23:30:00.000Z",
+          "subject_entity_id": "EN-d31c43526b245fe0",
+          "subject_name": "Government of South Korea",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The new framework would make it possible, for example, for the Ministry of Trade, Industry and Energy to conduct R&D on AI robots for public deployment while the police and the National Fire Agency participate as purchasing agencies.",
+          "event_refs": [
+            "EV-a0678a734614b9fc"
+          ],
+          "claim_ref": "CL-a17edf2338da7438",
+          "source_refs": [
+            "SA-0d1b7e0e2bd1c8d7"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://biz.heraldcorp.com/article/10854950",
+      "entityIds": [
+        "EN-d31c43526b245fe0",
+        "EN-faebddaa4885b004"
+      ]
+    }
+  ]
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-27T04:52:59.901Z",
-    "latestDataDate": "2026-08-27",
-    "currentDate": "2026-08-27",
-    "eventCount": 2426,
+    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "latestDataDate": "2026-08-28",
+    "currentDate": "2026-08-28",
+    "eventCount": 2460,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -24,6 +24,7 @@
       "EV-522c339dded54be5",
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
+      "EV-172e82bbbedb3619",
       "EV-25b88403a237969f",
       "EV-2a30e4a6a8033bcc",
       "EV-c698da7da473b059",
@@ -49,6 +50,7 @@
       "EN-e1517be14d06cdb7",
       "EN-d747d6f5125b6bee",
       "EN-b81c8201acfc7639",
+      "EN-1ba4a2b10cfc1093",
       "EN-031f4a060a67e7af",
       "EN-e59f5a52b6713a29",
       "EN-422332977c41eb77",
@@ -64,14 +66,14 @@
       "HW-68457c8c0a7240ac"
     ],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-08-27"
+    "lastSeen": "2026-08-28"
   },
   "events": [
     {
       "id": "EV-a46f31c7db36c728",
-      "dataDate": "2026-08-27",
+      "dataDate": "2026-08-28",
       "date": "2026-08-26",
-      "updatedDate": "2026-08-27",
+      "updatedDate": "2026-08-28",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -82,7 +84,7 @@
       "originalTitle": "",
       "subject": "Higgsfield",
       "action": "funding",
-      "object": "4亿美元B轮融资",
+      "object": "4 亿美元 B 轮融资",
       "metrics": [
         "4 亿",
         "3亿"
@@ -98,8 +100,8 @@
           "cn-qbitai-rss"
         ],
         "claim_refs": [
-          "CL-3060901daec1d366",
-          "CL-99972a5bc9f9735b"
+          "CL-e9c480df5ee7161b",
+          "CL-0b70d1922941f3c8"
         ]
       },
       "missingFields": [],
@@ -839,6 +841,120 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/967/217.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-172e82bbbedb3619",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-28",
+      "updatedDate": "2026-08-28",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌推出 Gemini Omni 1.1 Flash 视频生成 AI 模型，最高 4K 分辨率",
+      "originalTitle": "",
+      "subject": "谷歌",
+      "action": "推出 Gemini Omni 1.1 Flash 视频生成 AI 模型",
+      "object": "，最高 4K 分辨率",
+      "metrics": [
+        "60%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-1ba4a2b10cfc1093"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-1ba4a2b10cfc1093"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-1ba4a2b10cfc1093"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-1ba4a2b10cfc1093"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-1ba4a2b10cfc1093"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-1ba4a2b10cfc1093"
+      ],
+      "entityNames": [
+        "Google",
+        "Gemini Omni 1.1 Flash"
+      ],
+      "productName": "Gemini Omni 1.1 Flash",
+      "products": [
+        {
+          "name": "Gemini Omni 1.1 Flash",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/995/352.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -2930,19 +3046,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
+        "TX-technology-video_generation",
         "TX-product_form-end_user_application",
+        "TX-ai_market_category-enterprise_applications",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-target_user-consumer",
-        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-ai_market_subcategory-marketing",
         "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-17",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-478676438ee161a3",
@@ -2956,6 +3072,7 @@
       ],
       "eventIds": [
         "EV-d80c43b35418e74d",
+        "EV-293d6feac5b8efab",
         "EV-cff5848b8c5453af",
         "EV-5ede0f85a672441c",
         "EV-5c30f52112d92491",
@@ -2964,13 +3081,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-video_generation",
+        "TX-use_case-physical_automation",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -3065,14 +3182,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-technology-video_generation",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-video_generation",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-product_form-ai_device",
-        "TX-technology-agentic_execution",
         "TX-technology-computer_use",
         "TX-technology-mixture_of_experts",
         "TX-technology-open_weights"
@@ -3099,7 +3216,9 @@
       "name": "MiniMax",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "稀宇科技"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3107,6 +3226,7 @@
       "eventIds": [
         "EV-0121f0a9e9a975ec",
         "EV-522c339dded54be5",
+        "EV-a6dc310224542dcf",
         "EV-2fa6949af5b36fb0",
         "EV-63858d9b5ef92175",
         "EV-650e4b23d45d5758",
@@ -3129,7 +3249,7 @@
         "EN-cf81a61e4eaef17c"
       ],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-08-19"
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-d747d6f5125b6bee",
@@ -3194,13 +3314,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-use_case-software_development",
         "TX-technology-video_generation",
+        "TX-use_case-software_development",
         "TX-technology-multimodal",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-product_form-ai_device",
-        "TX-technology-agentic_execution"
+        "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [
         "EN-0c2f714483c404ad",
@@ -3209,6 +3329,30 @@
       ],
       "firstSeen": "2026-04-16",
       "lastSeen": "2026-08-17"
+    },
+    {
+      "id": "EN-1ba4a2b10cfc1093",
+      "name": "Gemini Omni 1.1 Flash",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-172e82bbbedb3619",
+        "EV-71727e1a748baf33",
+        "EV-9fac2a799d6cbf57"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation",
+        "TX-target_user-developer"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-27",
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-031f4a060a67e7af",
@@ -3246,8 +3390,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-video_generation",
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-mixture_of_experts",
         "TX-technology-open_weights"
@@ -3380,9 +3524,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-technology-video_generation",
         "TX-use_case-software_development",
         "TX-use_case-physical_automation",
-        "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
