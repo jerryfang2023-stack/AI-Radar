@@ -1,6 +1,6 @@
 # 2026-08-28 Daily Production Chain Readiness
 
-- generated_at: 2026-08-28T02:47:47.749Z
+- generated_at: 2026-08-28T02:59:52.555Z
 - stage: pre-commit
 - status: passed
 - source_intake_version: SOURCE-INTAKE-V1.1
@@ -13,17 +13,17 @@
 - monitor_quality_gate_status: passed
 - v4_manifest_status: ready
 - collection_telemetry_status: ready
-- downstream_assets_stale: true
+- downstream_assets_stale: false
 - relevant_worktree_changed: true
 - block_stale: true
 
 ## Stale Groups
 
-- application_funding: 01-SiteV2/site/data/funding-insights-v1.json
+- none
 
 ## Non-blocking Application Warnings
 
-- application_funding: 01-SiteV2/site/data/funding-insights-v1.json
+- none
 
 ## Problems
 

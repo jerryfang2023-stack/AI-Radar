@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-27T04:52:47.272Z",
+    "generated_at": "2026-08-28T02:59:25.708Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 298,
-    "input_hash": "bb69fe64e72af42f",
+    "decision_count": 300,
+    "input_hash": "5eab07bb75db8921",
     "override_count": 17,
-    "needs_review_count": 5,
-    "low_confidence_count": 12
+    "needs_review_count": 6,
+    "low_confidence_count": 13
   },
   "decisions": [
     {
@@ -5910,6 +5910,44 @@
       "confidence": 0.7,
       "needs_review": false,
       "rationale": "Runable 面向小企业，用自然语言构建网站、应用和演示等内容，属于跨行业生产力工作流，非单一行业专属。"
+    },
+    {
+      "event_id": "EV-ab839326ca9597d8",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "legal",
+      "market_application_id": "",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "legal_compliance",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "legal_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品专注于合同分析和法律发现，围绕法律行业的专业数据与工作流构建，属于行业应用而非通用企业应用。"
+    },
+    {
+      "event_id": "EV-c538fb9a61735afc",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "Instinct 是面向个人用户的 AI 助手，帮助组织生活事务，但证据未明确其是否面向企业工作流，且不涉及物理世界操作或基础设施，暂归为跨行业企业应用中的生产力类，需复核。"
     }
   ]
 }
