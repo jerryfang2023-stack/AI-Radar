@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "generatedAt": "2026-08-28T02:59:38.691Z",
     "latestDataDate": "2026-08-28",
     "currentDate": "2026-08-28",
-    "eventCount": 2460,
+    "eventCount": 2459,
     "quarantinedEventCount": 23
   },
   "institution": {
@@ -20,13 +20,13 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "first_disclosed_at": "2026-08-21",
     "latest_disclosed_at": "2026-08-26",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "participant": 1
     },
     "round_codes": [
@@ -38,6 +38,11 @@
         "entity_id": "EN-26e59d6a3c92de80",
         "canonical_entity_id": "",
         "name": "Instinct"
+      },
+      {
+        "entity_id": "EN-8d8b8c50b8da244b",
+        "canonical_entity_id": "",
+        "name": "Spear Street Technology"
       },
       {
         "entity_id": "EN-607a596a603dd679",
@@ -79,6 +84,44 @@
             "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
             "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
             "source_content_hash": "12db016e60d4c1b4",
+            "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+            "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bb28bd4d46cb911d",
+        "funding_insight_id": "FI-94d3afbe69796cf3",
+        "event_ids": [
+          "EV-c538fb9a61735afc"
+        ],
+        "company_entity_id": "EN-8d8b8c50b8da244b",
+        "company_canonical_entity_id": "",
+        "company_name": "Spear Street Technology",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-08-26",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-745d673f45eb476d",
+            "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+            "source_title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
+            "source_content_hash": "10e082ab90bd39e5",
             "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
             "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
           }
@@ -129,6 +172,14 @@
         "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
         "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
         "source_content_hash": "12db016e60d4c1b4",
+        "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+        "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+      },
+      {
+        "source_id": "FISRC-745d673f45eb476d",
+        "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+        "source_title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
+        "source_content_hash": "10e082ab90bd39e5",
         "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
         "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
       },

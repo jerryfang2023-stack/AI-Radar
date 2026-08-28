@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 943,
-    "product_candidates": 435,
+    "candidate_count": 944,
+    "product_candidates": 436,
     "person_candidates": 508,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
@@ -7451,13 +7451,16 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-26e59d6a3c92de80"
+        "EN-26e59d6a3c92de80",
+        "EN-8d8b8c50b8da244b"
       ],
       "funding_insight_ids": [
-        "FI-705ee26dc399cb0c"
+        "FI-705ee26dc399cb0c",
+        "FI-8f6cee6b76d6fa79"
       ],
       "source_event_ids": [
-        "EV-276878c26b2a06dc"
+        "EV-276878c26b2a06dc",
+        "EV-c538fb9a61735afc"
       ],
       "evidence_refs": [
         {
@@ -7465,6 +7468,12 @@
           "quote": "led by founder Noah Shinn",
           "source_content_hash": "12db016e60d4c1b4",
           "quote_hash": "57796939aef002ca25b774902ea5ede624eb807ee3858001b14911a7565f7dba"
+        },
+        {
+          "source_id": "FISRC-745d673f45eb476d",
+          "quote": "Instinct, which is offered by the company Spear Street Technology and is led by founder Noah Shinn",
+          "source_content_hash": "10e082ab90bd39e5",
+          "quote_hash": "8c14273b160b2467381bff984ea205a838bd27248fc1e96e499d44ac459f08d6"
         }
       ]
     },
@@ -14245,6 +14254,36 @@
       ]
     },
     {
+      "candidate_id": "FIER-f9c9597abb0071aa",
+      "candidate_kind": "product",
+      "research_name": "AI智能体平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-05bb7905b99d8025"
+      ],
+      "funding_insight_ids": [
+        "FI-1349f84de460c849"
+      ],
+      "source_event_ids": [
+        "EV-ab839326ca9597d8"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5c6ad4b27635b097",
+          "quote": "its platform of AI agents specialised in contract analysis and legal discovery",
+          "source_content_hash": "74e09b6d61e05783",
+          "quote_hash": "18ab666a9df3272c408f2be92d61350259c23e61d5533f8e2753bfdf43cf33ec"
+        },
+        {
+          "source_id": "FISRC-5c6ad4b27635b097",
+          "quote": "These AaaS platforms typically operate on a subscription model, providing API access to agents that can be integrated directly into a company’s existing software stack.",
+          "source_content_hash": "74e09b6d61e05783",
+          "quote_hash": "fedd107f84916584e307e1a9893e3ba35301e3de9332bc416d5f916bdf7f2d54"
+        }
+      ]
+    },
+    {
       "candidate_id": "FIER-fb264bdc95094580",
       "candidate_kind": "product",
       "research_name": "AI网络全栈组合（硅、系统、软件）",
@@ -18041,13 +18080,16 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-26e59d6a3c92de80"
+        "EN-26e59d6a3c92de80",
+        "EN-8d8b8c50b8da244b"
       ],
       "funding_insight_ids": [
-        "FI-705ee26dc399cb0c"
+        "FI-705ee26dc399cb0c",
+        "FI-8f6cee6b76d6fa79"
       ],
       "source_event_ids": [
-        "EV-276878c26b2a06dc"
+        "EV-276878c26b2a06dc",
+        "EV-c538fb9a61735afc"
       ],
       "evidence_refs": [
         {
@@ -18055,6 +18097,18 @@
           "quote": "Instinct, which is offered by the company Spear Street Technology and led by founder Noah Shinn, is an agent that the company says can efficiently organize your life. Users connect it to their apps and devices and can communicate with it via texts and calls.",
           "source_content_hash": "12db016e60d4c1b4",
           "quote_hash": "3ce28a294a3f1c3565a4eac547a64d54145efd5af078da30d245c08605ecb620"
+        },
+        {
+          "source_id": "FISRC-745d673f45eb476d",
+          "quote": "Instinct, which is offered by the company Spear Street Technology and is led by founder Noah Shinn, is an agent that the company says can efficiently organize your life. Users connect it to their apps and devices and can communicate with it via texts and calls.",
+          "source_content_hash": "10e082ab90bd39e5",
+          "quote_hash": "6aa53a1af47c3c34e06013d09535268c028d16aa462535a516ea3968b3cd98fe"
+        },
+        {
+          "source_id": "FISRC-745d673f45eb476d",
+          "quote": "They’ve told us they’ve planned cross-country road trips, bought weekly groceries and concert tickets, and cancelled hundreds of dollars of subscriptions. Someone’s even planning their wedding with Instinct.",
+          "source_content_hash": "10e082ab90bd39e5",
+          "quote_hash": "3718aa56e1b59b95aa4e02bc27576c9c68384cbc72966c2bb82abf81b2de3c6e"
         }
       ]
     },

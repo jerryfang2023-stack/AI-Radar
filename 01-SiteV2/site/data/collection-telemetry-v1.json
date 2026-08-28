@@ -3,7 +3,7 @@
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
     "data_date": "2026-08-28",
-    "generated_at": "2026-08-28T02:47:47.383Z",
+    "generated_at": "2026-08-28T02:59:52.060Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -15,18 +15,18 @@
     "raw_documents": 249
   },
   "fact_build": {
-    "accepted_claims": 99,
+    "accepted_claims": 95,
     "rejected_claims": 0,
-    "accepted": 99,
+    "accepted": 95,
     "rejected": 0,
     "pending_claims": 6,
-    "canonical_events": 44,
-    "entities": 58,
-    "relationships": 105,
+    "canonical_events": 43,
+    "entities": 57,
+    "relationships": 101,
     "conflicts": 0,
-    "qa_queue": 206,
+    "qa_queue": 207,
     "qa_by_status": {
-      "review_optional": 189,
+      "review_optional": 190,
       "open": 17
     }
   },
@@ -42,7 +42,7 @@
   "application_projection": {
     "opportunity_map": "passed",
     "trend_radar": "passed",
-    "funding_insights": "failed",
+    "funding_insights": "passed",
     "fde_hardware_sync": "passed"
   },
   "publication": {
@@ -69,16 +69,16 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 99,
+        "accepted_claims": 95,
         "rejected_claims": 0,
-        "accepted": 99,
+        "accepted": 95,
         "rejected": 0,
         "pending_claims": 6,
-        "canonical_events": 44,
-        "entities": 58,
-        "relationships": 105,
+        "canonical_events": 43,
+        "entities": 57,
+        "relationships": 101,
         "conflicts": 0,
-        "qa_queue": 206
+        "qa_queue": 207
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/manifest.json",
@@ -88,11 +88,11 @@
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "partial",
+      "status": "passed",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
+        "funding_insights": "passed",
         "fde_hardware_sync": "passed"
       },
       "evidence": [

@@ -1,0 +1,899 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-08-28",
+    "generated_at": "2026-08-28T02:59:04.193Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 2,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 0
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-8f6cee6b76d6fa79",
+      "triggered_by_event_id": "EV-c538fb9a61735afc",
+      "as_of_date": "2026-08-28",
+      "company": {
+        "entity_id": "EN-8d8b8c50b8da244b",
+        "name": "Spear Street Technology",
+        "full_name": "Spear Street Technology",
+        "website": "",
+        "summary": "Spear Street Technology是一家成立于2025年的AI初创公司，由23岁的Noah Shinn领导，提供名为Instinct的AI助手，目前处于私测阶段。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Noah Shinn",
+            "role": "创始人兼领导者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-745d673f45eb476d",
+                "quote": "Instinct, which is offered by the company Spear Street Technology and is led by founder Noah Shinn",
+                "source_content_hash": "10e082ab90bd39e5",
+                "quote_hash": "8c14273b160b2467381bff984ea205a838bd27248fc1e96e499d44ac459f08d6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-745d673f45eb476d",
+            "quote": "Instinct, a startup founded only last year and helmed by a 23-year-old",
+            "source_content_hash": "10e082ab90bd39e5",
+            "quote_hash": "1bdbbf09afbd3d731ea366f60668db1b5d0252fa1bcf048af81448031b535092"
+          },
+          {
+            "source_id": "FISRC-03060986460e8273",
+            "quote": "The San Francisco AI-agent startup has raised at least three rounds in recent months",
+            "source_content_hash": "0a0c0a335d99be2c",
+            "quote_hash": "7cf0c442b213dda28bbf7f78f11d964cf266d975fd75de52590945875af4407e"
+          }
+        ],
+        "application_entity_id": "EN-8d8b8c50b8da244b",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "$350M",
+        "total_raised": "$350 million",
+        "announced_at": "2026-08-26",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Index Ventures",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-745d673f45eb476d",
+                "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+                "source_content_hash": "10e082ab90bd39e5",
+                "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Benchmark",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-745d673f45eb476d",
+                "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+                "source_content_hash": "10e082ab90bd39e5",
+                "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-745d673f45eb476d",
+            "quote": "Viral AI startup Instinct has raised $350M at a $2.5B valuation",
+            "source_content_hash": "10e082ab90bd39e5",
+            "quote_hash": "f2fcdec4f511153ae18240819e197784bb42efc81be0375def0519a606b6cd41"
+          },
+          {
+            "source_id": "FISRC-745d673f45eb476d",
+            "quote": "it had raised $250 million in a recent Series B funding round. That new round brings the company’s total funding to $350 million and gives the startup a valuation of $2.5 billion.",
+            "source_content_hash": "10e082ab90bd39e5",
+            "quote_hash": "8c6625bf21a4d5b1a27ec57f5f043c421ffd6d921a74b0f312e77f01227d1fd1"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "total_raised_original": "$350 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c538fb9a61735afc",
+            "round_original": "B轮",
+            "amount": "$350M",
+            "announced_at": "2026-08-26",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-745d673f45eb476d",
+                "quote": "Viral AI startup Instinct has raised $350M at a $2.5B valuation",
+                "source_content_hash": "10e082ab90bd39e5",
+                "quote_hash": "f2fcdec4f511153ae18240819e197784bb42efc81be0375def0519a606b6cd41"
+              },
+              {
+                "source_id": "FISRC-745d673f45eb476d",
+                "quote": "it had raised $250 million in a recent Series B funding round. That new round brings the company’s total funding to $350 million and gives the startup a valuation of $2.5 billion.",
+                "source_content_hash": "10e082ab90bd39e5",
+                "quote_hash": "8c6625bf21a4d5b1a27ec57f5f043c421ffd6d921a74b0f312e77f01227d1fd1"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Instinct",
+          "description": "Instinct是一款AI助手，能够高效地组织用户的生活。用户将其连接到应用和设备后，可以通过短信和电话与它沟通。",
+          "target_customers": "早期用户（私测阶段）",
+          "features": [
+            "通过短信和电话与用户沟通",
+            "连接用户的应用和设备",
+            "规划跨州公路旅行",
+            "购买每周杂货和演唱会门票",
+            "取消数百美元的订阅"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-745d673f45eb476d",
+              "quote": "Instinct, which is offered by the company Spear Street Technology and is led by founder Noah Shinn, is an agent that the company says can efficiently organize your life. Users connect it to their apps and devices and can communicate with it via texts and calls.",
+              "source_content_hash": "10e082ab90bd39e5",
+              "quote_hash": "6aa53a1af47c3c34e06013d09535268c028d16aa462535a516ea3968b3cd98fe"
+            },
+            {
+              "source_id": "FISRC-745d673f45eb476d",
+              "quote": "They’ve told us they’ve planned cross-country road trips, bought weekly groceries and concert tickets, and cancelled hundreds of dollars of subscriptions. Someone’s even planning their wedding with Instinct.",
+              "source_content_hash": "10e082ab90bd39e5",
+              "quote_hash": "3718aa56e1b59b95aa4e02bc27576c9c68384cbc72966c2bb82abf81b2de3c6e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Town",
+          "product": "企业个人助理",
+          "scenario": "企业环境中的个人助理服务",
+          "target_customer": "企业用户",
+          "funding_summary": "正在洽谈以10亿美元估值融资，由Index Ventures领投",
+          "core_difference": "Town定位为企业个人助理，由前Plaid CTO和前Google应用AI产品总监创立，面向企业场景；Instinct定位为面向个人生活的AI助手，通过短信和电话帮助用户管理日常事务。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03060986460e8273",
+              "quote": "Town, the affable enterprise personal assistant, is in talks to raise at a $1 billion valuation in a round led by Index, sources tell us. The corporate personal assistant, started by former Plaid CTO Jean-Denis Greze and former Google applied AI product director Tony Vincent, received earlier backing from Andreessen Horowitz and Forerunner.",
+              "source_content_hash": "0a0c0a335d99be2c",
+              "quote_hash": "6cf8acbb596327bc1d139e307d4ffdafcb3846d5c93acb23711b6566648596d5"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "估值",
+          "value": "$2.5 billion",
+          "observed_at": "2026-08-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-745d673f45eb476d",
+              "quote": "gives the startup a valuation of $2.5 billion",
+              "source_content_hash": "10e082ab90bd39e5",
+              "quote_hash": "5675b9425e01be33da17db234d6e191c00c2f6077f1b0f26152ab91926353358"
+            }
+          ]
+        },
+        {
+          "label": "本轮融资金额",
+          "value": "$250 million",
+          "observed_at": "2026-08-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-745d673f45eb476d",
+              "quote": "it had raised $250 million in a recent Series B funding round",
+              "source_content_hash": "10e082ab90bd39e5",
+              "quote_hash": "7f78a8f9315bdbc7ef10378b226fe4a19b5edc26f3310ebffb8f3c69bc6baa97"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$350 million",
+          "observed_at": "2026-08-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-745d673f45eb476d",
+              "quote": "That new round brings the company’s total funding to $350 million",
+              "source_content_hash": "10e082ab90bd39e5",
+              "quote_hash": "c49115e522cfc0dc32e2ec0d1ab3cce83aee941d36761fd3d688b8d922d9dc56"
+            }
+          ]
+        },
+        {
+          "label": "创始人年龄",
+          "value": "23岁",
+          "observed_at": "2026-08-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-745d673f45eb476d",
+              "quote": "helmed by a 23-year-old",
+              "source_content_hash": "10e082ab90bd39e5",
+              "quote_hash": "7894bf849e48f6513ccb13a8525bd1d0281ad514ae709f732e952d547e6bdb1d"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI个人助手在用户日常任务管理中的高粘性和快速采用潜力。已验证信号包括：早期用户已实际使用Instinct完成跨州旅行规划、购物、订阅取消等具体任务，且公司估值在数周内从5亿美元跃升至25亿美元。证据边界：来源仅提供早期用户自述的使用案例和估值变化，缺乏付费转化、留存率、收入等商业指标。",
+        "validated_signals": [
+          "早期用户已实际使用Instinct完成跨州旅行规划、购物、订阅取消等具体任务",
+          "估值在数周内从5亿美元跃升至25亿美元",
+          "公司成立仅一年即获得Index Ventures和Benchmark联合领投的B轮融资"
+        ],
+        "risks": [
+          "隐私担忧：用户担心应用要求的过度权限及其使用条款的侵入性潜力"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "consumer"
+        ],
+        "sector": "AI个人助手",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI个人助手在用户日常任务管理中的高粘性和快速采用潜力。已验证信号包括：早期用户已实际使用Instinct完成跨州旅行规划、购物、订阅取消等具体任务，且公司估值在数周内从5亿美元跃升至25亿美元。证据边界：来源仅提供早期用户自述的使用案例和估值变化，缺乏付费转化、留存率、收入等商业指标。",
+          "evidence_signals": [
+            "早期用户已实际使用Instinct完成跨州旅行规划、购物、订阅取消等具体任务",
+            "估值在数周内从5亿美元跃升至25亿美元",
+            "公司成立仅一年即获得Index Ventures和Benchmark联合领投的B轮融资"
+          ],
+          "risks": [
+            "隐私担忧：用户担心应用要求的过度权限及其使用条款的侵入性潜力"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Instinct",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Noah Shinn",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Index Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Benchmark",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Town",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-c538fb9a61735afc",
+          "date": "2026-08-26",
+          "title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
+          "amount": "$350M",
+          "source_refs": [
+            "SA-02e6f08f9c8e66d0"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-745d673f45eb476d",
+          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+          "title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-28T02:24:33.006Z",
+          "content_hash": "10e082ab90bd39e5",
+          "source_artifact_id": "SA-02e6f08f9c8e66d0",
+          "raw_id": "RAW-9b60a2a1912d7297"
+        },
+        {
+          "source_id": "FISRC-03060986460e8273",
+          "source_url": "https://ground.news/article/viral-ai-startup-instinct-has-raised-350-million-at-a-25-billion-valuation_e00b81",
+          "title": "Viral AI Startup Instinct Has Raised $350 Million at a $2.5 Billion Valuation",
+          "publisher": "ground.news",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-28T02:58:41.303Z",
+          "content_hash": "0a0c0a335d99be2c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-28T02:59:04.124Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-c538fb9a61735afc",
+          "confidence": 0.7,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-28T02:59:04.124Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Instinct"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Noah Shinn"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c538fb9a61735afc"
+      ],
+      "aggregation": {
+        "key": "EN-8d8b8c50b8da244b|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-1349f84de460c849",
+      "triggered_by_event_id": "EV-ab839326ca9597d8",
+      "as_of_date": "2026-08-28",
+      "company": {
+        "entity_id": "EN-05bb7905b99d8025",
+        "name": "CogniLex",
+        "full_name": "CogniLex",
+        "website": "",
+        "summary": "伦敦法律科技公司，提供专注于合同分析和法律发现的AI智能体平台。",
+        "headquarters": "伦敦",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5c6ad4b27635b097",
+            "quote": "London-based legal tech firm CogniLex secured a £250 million Series C funding round for its platform of AI agents specialised in contract analysis and legal discovery",
+            "source_content_hash": "74e09b6d61e05783",
+            "quote_hash": "747136a2b204f3cd806199592c29b5b63069b211fe86da18386dc13e7ae58df4"
+          }
+        ],
+        "application_entity_id": "EN-05bb7905b99d8025",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "£250 million",
+        "total_raised": "",
+        "announced_at": "2026-08-23",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5c6ad4b27635b097",
+            "quote": "This month, London-based legal tech firm CogniLex secured a £250 million Series C funding round for its platform of AI agents specialised in contract analysis and legal discovery",
+            "source_content_hash": "74e09b6d61e05783",
+            "quote_hash": "2e652bdf21caff6e557f9bb6da82a341d4106e8a9bf5930aea3842b50d7d5bea"
+          },
+          {
+            "source_id": "FISRC-5c6ad4b27635b097",
+            "quote": "This month, London-based legal tech firm CogniLex secured a £250 million Series C funding round for its platform of AI agents specialised in contract analysis and legal discovery, demonstrating intense investor appetite for vertical-specific solutions.",
+            "source_content_hash": "74e09b6d61e05783",
+            "quote_hash": "d11d29a1024b242ae6632c343d61dc4b797a41f7cb88e2dce5d3aa7b00515b78"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "£250 million",
+        "amount_normalized": {
+          "currency": "GBP",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿英镑"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-ab839326ca9597d8",
+            "round_original": "C轮",
+            "amount": "£250 million",
+            "announced_at": "2026-08-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c6ad4b27635b097",
+                "quote": "This month, London-based legal tech firm CogniLex secured a £250 million Series C funding round for its platform of AI agents specialised in contract analysis and legal discovery",
+                "source_content_hash": "74e09b6d61e05783",
+                "quote_hash": "2e652bdf21caff6e557f9bb6da82a341d4106e8a9bf5930aea3842b50d7d5bea"
+              },
+              {
+                "source_id": "FISRC-5c6ad4b27635b097",
+                "quote": "This month, London-based legal tech firm CogniLex secured a £250 million Series C funding round for its platform of AI agents specialised in contract analysis and legal discovery, demonstrating intense investor appetite for vertical-specific solutions.",
+                "source_content_hash": "74e09b6d61e05783",
+                "quote_hash": "d11d29a1024b242ae6632c343d61dc4b797a41f7cb88e2dce5d3aa7b00515b78"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "AI智能体平台",
+          "description": "专注于合同分析和法律发现的AI智能体平台，以订阅模式提供API访问，可集成到企业现有软件栈中。",
+          "target_customers": "企业，尤其是法律行业及中小企业",
+          "features": [
+            "合同分析",
+            "法律发现",
+            "API访问",
+            "订阅模式"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c6ad4b27635b097",
+              "quote": "its platform of AI agents specialised in contract analysis and legal discovery",
+              "source_content_hash": "74e09b6d61e05783",
+              "quote_hash": "18ab666a9df3272c408f2be92d61350259c23e61d5533f8e2753bfdf43cf33ec"
+            },
+            {
+              "source_id": "FISRC-5c6ad4b27635b097",
+              "quote": "These AaaS platforms typically operate on a subscription model, providing API access to agents that can be integrated directly into a company’s existing software stack.",
+              "source_content_hash": "74e09b6d61e05783",
+              "quote_hash": "fedd107f84916584e307e1a9893e3ba35301e3de9332bc416d5f916bdf7f2d54"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [],
+      "quotes": [
+        {
+          "speaker": "aiconference.london",
+          "quote": "This month, London-based legal tech firm CogniLex secured a £250 million Series C funding round for its platform of AI agents specialised in contract analysis and legal discovery, demonstrating intense investor appetite for vertical-specific solutions.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-69fe0b562775c5f7",
+              "quote": "This month, London-based legal tech firm CogniLex secured a £250 million Series C funding round for its platform of AI agents specialised in contract analysis and legal discovery, demonstrating intense investor appetite for vertical-specific solutions.",
+              "source_content_hash": "f451a8761002c230",
+              "quote_hash": "d11d29a1024b242ae6632c343d61dc4b797a41f7cb88e2dce5d3aa7b00515b78"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是垂直行业专用AI智能体平台在合同分析和法律发现等高价值法律工作流中的商业化能力。来源仅验证了融资事件本身及AaaS市场对垂直解决方案的强烈投资者兴趣，但未披露具体投资机构、估值依据或业务运营数据，因此无法确认估值所依赖的已验证信号。",
+        "validated_signals": [
+          "CogniLex完成£250 million Series C融资，显示投资者对法律垂直AI智能体的强烈兴趣",
+          "AaaS市场正从通用模型转向预训练的行业专用智能体平台"
+        ],
+        "risks": [
+          "来源未披露任何投资方名称，无法验证资本判断的机构背书",
+          "来源未提供CogniLex的客户、收入或产品性能数据，商业化验证不足",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model_api_service",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "legal",
+        "market_application_id": "",
+        "use_case_ids": [
+          "legal_compliance",
+          "knowledge_search",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "法律科技",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是垂直行业专用AI智能体平台在合同分析和法律发现等高价值法律工作流中的商业化能力。来源仅验证了融资事件本身及AaaS市场对垂直解决方案的强烈投资者兴趣，但未披露具体投资机构、估值依据或业务运营数据，因此无法确认估值所依赖的已验证信号。",
+          "evidence_signals": [
+            "CogniLex完成£250 million Series C融资，显示投资者对法律垂直AI智能体的强烈兴趣",
+            "AaaS市场正从通用模型转向预训练的行业专用智能体平台"
+          ],
+          "risks": [
+            "来源未披露任何投资方名称，无法验证资本判断的机构背书",
+            "来源未提供CogniLex的客户、收入或产品性能数据，商业化验证不足"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI智能体平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-ab839326ca9597d8",
+          "date": "2026-08-23",
+          "title": "AI 智能体与工作的未来——2026年8月更新",
+          "amount": "£250 million",
+          "source_refs": [
+            "SA-d323cb796bb44a6c"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-5c6ad4b27635b097",
+          "source_url": "https://aiconference.london/news/ai-agents-and-the-future-of-work-august-2026-20260823-12",
+          "title": "AI 智能体与工作的未来——2026年8月更新",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-28T02:24:04.373Z",
+          "content_hash": "74e09b6d61e05783",
+          "source_artifact_id": "SA-d323cb796bb44a6c",
+          "raw_id": "RAW-ae119af32c671441"
+        },
+        {
+          "source_id": "FISRC-69fe0b562775c5f7",
+          "source_url": "https://aiconference.london/ai-agents-and-the-future-of-work-august-2026-20260823-12",
+          "title": "AI World Congress 2026 - November 25-26, London - AI Conference - AI Events 2026 UK Europe",
+          "publisher": "aiconference.london",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-28T02:58:42.743Z",
+          "content_hash": "f451a8761002c230",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-28T02:58:54.410Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-ab839326ca9597d8",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-28T02:58:54.410Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI智能体平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-ab839326ca9597d8"
+      ],
+      "aggregation": {
+        "key": "EN-05bb7905b99d8025|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-ab839326ca9597d8",
+      "company_name": "CogniLex",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"AI Agents and the Future of Work — August 2026 Update\" funding company investors product",
+        "\"CogniLex\" \"£250 million\" funding investors round",
+        "\"CogniLex\" product customers case study",
+        "\"CogniLex\" \"AI Agents and the Future of Work — August 2026 Update\" competitors product use case",
+        "\"CogniLex\" \"£250 million\" investor quote why invested",
+        "\"CogniLex\" \"£250 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"AI Agents and the Future of Work — August 2026 Update\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI Agents and the Future of Work — August 2026 Update\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"CogniLex\" \"£250 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"CogniLex\" \"£250 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"CogniLex\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"CogniLex\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"CogniLex\" \"AI Agents and the Future of Work — August 2026 Update\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"CogniLex\" \"AI Agents and the Future of Work — August 2026 Update\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"CogniLex\" \"£250 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"CogniLex\" \"£250 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"CogniLex\" \"£250 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"CogniLex\" \"£250 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-28T02:59:04.192Z"
+    },
+    {
+      "event_id": "EV-c538fb9a61735afc",
+      "company_name": "Viral AI startup Instinct",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Viral AI startup Instinct has raised $350M at a $2.5B valuation\" funding company investors product",
+        "\"Viral AI startup Instinct\" \"$350M\" funding investors round",
+        "\"Viral AI startup Instinct\" product customers case study",
+        "\"Viral AI startup Instinct\" \"Viral AI startup Instinct has raised $350M at a $2.5B valuation\" competitors product use case",
+        "\"Viral AI startup Instinct\" \"$350M\" investor quote why invested",
+        "\"Viral AI startup Instinct\" \"$350M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Viral AI startup Instinct has raised $350M at a $2.5B valuation\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Viral AI startup Instinct has raised $350M at a $2.5B valuation\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Viral AI startup Instinct\" \"$350M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Viral AI startup Instinct\" \"$350M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Viral AI startup Instinct\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Viral AI startup Instinct\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Viral AI startup Instinct\" \"Viral AI startup Instinct has raised $350M at a $2.5B valuation\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Viral AI startup Instinct\" \"Viral AI startup Instinct has raised $350M at a $2.5B valuation\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Viral AI startup Instinct\" \"$350M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Viral AI startup Instinct\" \"$350M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Viral AI startup Instinct\" \"$350M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Viral AI startup Instinct\" \"$350M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-28T02:59:04.192Z"
+    }
+  ]
+}

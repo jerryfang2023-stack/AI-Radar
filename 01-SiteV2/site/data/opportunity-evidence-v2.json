@@ -9,7 +9,7 @@
     "activeDate": "2026-08-28",
     "generatedAt": "2026-08-28T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 627,
+    "evidenceCount": 626,
     "directionCardCount": 0,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -255,77 +255,6 @@
       }
     },
     {
-      "id": "EV-6ef85b24f1328189",
-      "event_id": "EV-6ef85b24f1328189",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "黄仁勋驳斥\"循环融资\"质疑：AI 行业需要巨额资金，英伟达投资风险很低",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-08-28",
-      "event_time": "2026-08-27T03:47:34.000Z",
-      "sourceUrl": "https://www.ithome.com/0/994/943.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "黄仁勋驳斥\"循环",
-      "sourceExcerpt": "IT之家 8 月 27 日消息，英伟达 CEO 黄仁勋当地时间周三为公司日益深入参与人工智能行业融资进行了辩护。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-c45206f4c19c8536",
-          "canonical_name": "黄仁勋驳斥\"循环",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-02eb27c05be378d1",
-        "CL-68890a381092e951",
-        "CL-98af0b0c9a1bfde0",
-        "CL-436048884fff3d4b"
-      ],
-      "source_refs": [
-        "SA-ca62a581b856bd8b"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-02eb27c05be378d1",
-            "source_refs": [
-              "SA-ca62a581b856bd8b"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-a46f31c7db36c728",
       "event_id": "EV-a46f31c7db36c728",
       "event_type": "funding",
@@ -437,6 +366,94 @@
       "taxonomy_version": "TAG-V4.1",
       "classifications": [
         {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "industry_applications",
+          "value_name": "行业应用",
+          "entity_ids": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-46f6d3e1feff97b1"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "legal",
+          "value_name": "法律",
+          "entity_ids": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-67f22d1719fdda2f"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "legal_services",
+          "value_name": "法律服务",
+          "entity_ids": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5e5cb4560bba447f"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "model_api_service",
+          "value_name": "模型 API 服务",
+          "entity_ids": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-fc101a1dd1562683"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c2a9aa3e94b2f592"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "data_analysis",
+          "value_name": "数据分析",
+          "entity_ids": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5e57687f4f16a850"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "knowledge_search",
+          "value_name": "知识与搜索",
+          "entity_ids": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-fc05dd2376845627"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "legal_compliance",
+          "value_name": "法律与合规",
+          "entity_ids": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-9bde84e7c370fd67"
+        },
+        {
           "dimension_id": "technology",
           "dimension_name": "技术",
           "value_id": "agentic_execution",
@@ -513,6 +530,28 @@
       "taxonomy_version": "TAG-V4.1",
       "classifications": [
         {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-fc5f21257c657d42"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-40af37212ca83783"
+        },
+        {
           "dimension_id": "product_form",
           "dimension_name": "产品形态",
           "value_id": "end_user_application",
@@ -520,8 +559,30 @@
           "entity_ids": [
             "EN-8d8b8c50b8da244b"
           ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-240d2c22cdacbd06"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a22eac2809ad1c80"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-d1a578cf88d63c78"
         }
       ],
       "application_assertions": {

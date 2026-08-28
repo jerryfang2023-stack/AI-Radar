@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:46:47.728Z",
+    "generatedAt": "2026-08-28T02:59:38.691Z",
     "latestDataDate": "2026-08-28",
     "currentDate": "2026-08-28",
-    "eventCount": 2460,
+    "eventCount": 2459,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -23,6 +23,7 @@
       "EV-276878c26b2a06dc",
       "EV-3ee6b5e876146bb3",
       "EV-657176fd0dff6209",
+      "EV-ab839326ca9597d8",
       "EV-8ad153b984ba8729",
       "EV-8cb4468fe881602b",
       "EV-181cd28d97c4e61d",
@@ -261,6 +262,7 @@
       "EN-26e59d6a3c92de80",
       "EN-3b3ed571bbb19504",
       "EN-336ab1deb42d6284",
+      "EN-05bb7905b99d8025",
       "EN-647aebd730e6d6b2",
       "EN-2f72d2f93de73383",
       "EN-0b79cf2de0ee6b8e",
@@ -2088,6 +2090,382 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-ab839326ca9597d8",
+      "dataDate": "2026-08-28",
+      "date": "2026-08-23",
+      "updatedDate": "2026-08-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 智能体与工作的未来——2026年8月更新",
+      "originalTitle": "AI Agents and the Future of Work — August 2026 Update",
+      "subject": "CogniLex",
+      "action": "funding",
+      "object": "£250 million Series C funding round",
+      "metrics": [
+        "£250 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-05bb7905b99d8025"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-46f6d3e1feff97b1",
+            "fundingInsightId": "FI-1349f84de460c849"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "legal",
+            "name": "法律",
+            "entityIds": [
+              "EN-05bb7905b99d8025"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-67f22d1719fdda2f",
+            "fundingInsightId": "FI-1349f84de460c849"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-05bb7905b99d8025"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fc101a1dd1562683",
+            "fundingInsightId": "FI-1349f84de460c849"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-05bb7905b99d8025"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5e57687f4f16a850",
+            "fundingInsightId": "FI-1349f84de460c849"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-05bb7905b99d8025"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fc05dd2376845627",
+            "fundingInsightId": "FI-1349f84de460c849"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "legal_compliance",
+            "name": "法律与合规",
+            "entityIds": [
+              "EN-05bb7905b99d8025"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9bde84e7c370fd67",
+            "fundingInsightId": "FI-1349f84de460c849"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "legal_services",
+            "name": "法律服务",
+            "entityIds": [
+              "EN-05bb7905b99d8025"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5e5cb4560bba447f",
+            "fundingInsightId": "FI-1349f84de460c849"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-05bb7905b99d8025"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c2a9aa3e94b2f592",
+            "fundingInsightId": "FI-1349f84de460c849"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-46f6d3e1feff97b1",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "legal",
+          "name": "法律",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-67f22d1719fdda2f",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5e5cb4560bba447f",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc101a1dd1562683",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c2a9aa3e94b2f592",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5e57687f4f16a850",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "knowledge_search",
+          "name": "知识与搜索",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc05dd2376845627",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "legal_compliance",
+          "name": "法律与合规",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9bde84e7c370fd67",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-46f6d3e1feff97b1",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "legal",
+          "name": "法律",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-67f22d1719fdda2f",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc101a1dd1562683",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5e57687f4f16a850",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "knowledge_search",
+          "name": "知识与搜索",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc05dd2376845627",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "legal_compliance",
+          "name": "法律与合规",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9bde84e7c370fd67",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5e5cb4560bba447f",
+          "fundingInsightId": "FI-1349f84de460c849"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-05bb7905b99d8025"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c2a9aa3e94b2f592",
+          "fundingInsightId": "FI-1349f84de460c849"
+        }
+      ],
+      "entityIds": [
+        "EN-05bb7905b99d8025"
+      ],
+      "entityNames": [
+        "CogniLex"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aiconference.london/news/ai-agents-and-the-future-of-work-august-2026-20260823-12",
+      "publisher": "aiconference.london"
     },
     {
       "id": "EV-8ad153b984ba8729",
@@ -82915,12 +83293,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-end_user_application",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -82969,12 +83347,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-target_user-consumer"
+        "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-26",
@@ -83023,9 +83401,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-target_user-consumer",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-target_user-consumer",
         "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
@@ -83037,6 +83415,35 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-08-25",
       "lastSeen": "2026-08-26"
+    },
+    {
+      "id": "EN-05bb7905b99d8025",
+      "name": "CogniLex",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ab839326ca9597d8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-legal",
+        "TX-industry-legal_services",
+        "TX-product_form-model_api_service",
+        "TX-use_case-data_analysis",
+        "TX-use_case-knowledge_search",
+        "TX-use_case-legal_compliance",
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-23",
+      "lastSeen": "2026-08-28"
     },
     {
       "id": "EN-647aebd730e6d6b2",
@@ -83083,8 +83490,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
@@ -83141,11 +83548,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-video_generation",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-target_user-consumer",
         "TX-industry-media_entertainment",
         "TX-ai_market_subcategory-marketing",
         "TX-use_case-marketing"
@@ -83169,12 +83576,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-end_user_application",
         "TX-target_user-consumer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
@@ -83196,7 +83603,6 @@
       "eventIds": [
         "EV-10f04014fb3b62ff",
         "EV-68bb3d5cb4bbd61b",
-        "EV-6ef85b24f1328189",
         "EV-b382525eb51777b9",
         "EV-6b668e4655192209",
         "EV-b231e1a452a7c74a",
@@ -83421,6 +83827,9 @@
         "TX-target_user-developer",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
+        "TX-industry-legal_services",
+        "TX-product_form-model_api_service",
+        "TX-use_case-data_analysis",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
@@ -83429,7 +83838,6 @@
         "TX-industry-telecommunications",
         "TX-product_form-ai_compute_system",
         "TX-target_user-researcher",
-        "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
@@ -83444,10 +83852,8 @@
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-food_hospitality",
-        "TX-industry-legal_services",
         "TX-deployment_model-cloud",
         "TX-technology-embodied_ai",
-        "TX-product_form-model_api_service",
         "TX-ai_market_application-chips",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -83511,10 +83917,10 @@
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
+        "TX-use_case-knowledge_search",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-data_preparation_curation",
-        "TX-ai_market_subcategory-data",
-        "TX-use_case-knowledge_search"
+        "TX-ai_market_subcategory-data"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-15",
@@ -83539,15 +83945,15 @@
         "TX-industry-automotive_transportation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
+        "TX-use_case-data_analysis",
+        "TX-use_case-knowledge_search",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
-        "TX-use_case-data_analysis",
         "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
         "TX-industry-financial_services",
         "TX-ai_market_application-data_preparation_curation",
-        "TX-ai_market_subcategory-data",
-        "TX-use_case-knowledge_search"
+        "TX-ai_market_subcategory-data"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-14",
@@ -83571,8 +83977,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-professional_services",
         "TX-industry-construction_real_estate",
         "TX-use_case-finance_accounting"
@@ -83938,21 +84344,23 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
+        "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
-        "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
+        "TX-industry-legal_services",
+        "TX-product_form-model_api_service",
+        "TX-use_case-data_analysis",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-target_user-researcher",
-        "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
@@ -83961,8 +84369,6 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-financial_services",
-        "TX-industry-legal_services",
-        "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-target_user-educator",
         "TX-technology-open_weights",
@@ -84078,11 +84484,11 @@
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-use_case-data_analysis",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-target_user-public_sector_user",
         "TX-target_user-researcher",
-        "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-agriculture",
         "TX-industry-energy_utilities",
@@ -84108,14 +84514,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
+        "TX-industry-legal_services",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
@@ -84130,8 +84537,7 @@
         "TX-industry-education",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
-        "TX-industry-food_hospitality",
-        "TX-industry-legal_services"
+        "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-05",
@@ -84153,17 +84559,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-target_user-consumer",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-industry-retail_ecommerce",
-        "TX-target_user-consumer",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-knowledge_search"
+        "TX-use_case-knowledge_search",
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
@@ -84187,8 +84593,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-target_user-developer"
       ],
@@ -84212,14 +84618,15 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
+        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
@@ -84234,7 +84641,6 @@
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-food_hospitality",
-        "TX-industry-legal_services",
         "TX-ai_market_application-ai_observability_governance"
       ],
       "relatedEntityIds": [],
@@ -84293,8 +84699,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-knowledge_search"
       ],
       "relatedEntityIds": [],
@@ -84317,11 +84723,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-industry_applications",
+        "TX-industry-manufacturing",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-procurement_supply_chain"
       ],
@@ -84348,10 +84754,10 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-data_analysis",
+        "TX-use_case-knowledge_search",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-data_preparation_curation",
-        "TX-ai_market_subcategory-data",
-        "TX-use_case-knowledge_search"
+        "TX-ai_market_subcategory-data"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-02",
@@ -84400,8 +84806,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows"
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-01",
@@ -84423,11 +84829,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
-        "TX-use_case-data_analysis",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-finance_accounting",
         "TX-ai_market_subcategory-financial_services"
@@ -84452,13 +84858,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-use_case-legal_compliance",
         "TX-industry-construction_real_estate",
         "TX-industry-energy_utilities",
-        "TX-ai_market_subcategory-industrials",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-industrials"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-30",
@@ -84479,8 +84885,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
@@ -84602,8 +85008,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-use_case-software_development",
@@ -84611,14 +85017,14 @@
         "TX-use_case-sales",
         "TX-technology-image_generation",
         "TX-technology-multimodal",
-        "TX-technology-agentic_execution",
+        "TX-product_form-model_api_service",
         "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-deployment_model-cloud",
-        "TX-product_form-model_api_service",
         "TX-ai_market_subcategory-sales",
         "TX-technology-computer_use",
         "TX-technology-long_context",
@@ -84656,15 +85062,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-consumer",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-target_user-consumer",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-product_form-model_api_service",
+        "TX-use_case-knowledge_search",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-industry-education",
-        "TX-use_case-knowledge_search",
-        "TX-product_form-model_api_service",
         "TX-ai_market_application-ai_observability_governance"
       ],
       "relatedEntityIds": [],
@@ -84688,11 +85094,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
@@ -84719,11 +85125,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-technology-agentic_execution",
         "TX-use_case-hr_workforce"
       ],
@@ -84746,8 +85152,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
@@ -84804,11 +85210,11 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-ai_market_category-industry_applications",
+        "TX-use_case-legal_compliance",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-ai_market_subcategory-financial_services",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-23",
@@ -84886,12 +85292,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
+        "TX-ai_market_category-industry_applications",
         "TX-industry-aerospace_defense",
         "TX-industry-manufacturing",
-        "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-design_engineering"
       ],
@@ -85040,10 +85446,10 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-technology-multimodal",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
-        "TX-product_form-ai_infrastructure_software",
         "TX-use_case-knowledge_search",
+        "TX-technology-agentic_execution",
+        "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-ai_development_orchestration"
       ],
       "relatedEntityIds": [
@@ -85068,10 +85474,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-technology-agentic_execution",
         "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences"
       ],
@@ -85097,8 +85503,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-use_case-sales",
         "TX-technology-agentic_execution",
@@ -85126,10 +85532,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-technology-agentic_execution",
         "TX-industry-construction_real_estate",
         "TX-use_case-finance_accounting",
         "TX-ai_market_subcategory-industrials"
@@ -85153,8 +85559,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
@@ -85210,8 +85616,8 @@
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
         "TX-use_case-sales",
@@ -85243,8 +85649,8 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-ai_market_subcategory-software_development_coding"
@@ -85295,10 +85701,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-use_case-data_analysis",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-ai_market_subcategory-financial_services"
       ],
@@ -85324,12 +85730,13 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
         "TX-industry-media_entertainment",
+        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
@@ -85341,8 +85748,7 @@
         "TX-industry-education",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
-        "TX-industry-food_hospitality",
-        "TX-industry-legal_services"
+        "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-14",
@@ -85369,10 +85775,10 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-data_analysis",
+        "TX-use_case-knowledge_search",
         "TX-product_form-developer_tool",
         "TX-ai_market_application-data_preparation_curation",
-        "TX-ai_market_subcategory-data",
-        "TX-use_case-knowledge_search"
+        "TX-ai_market_subcategory-data"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-14",
@@ -85393,8 +85799,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-aerospace_defense",
@@ -85428,16 +85834,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-use_case-software_development",
+        "TX-product_form-end_user_application",
         "TX-target_user-consumer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
+        "TX-use_case-software_development",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
         "TX-use_case-knowledge_search",
+        "TX-technology-agentic_execution",
         "TX-technology-retrieval_augmented_generation"
       ],
       "relatedEntityIds": [],
@@ -85463,8 +85869,8 @@
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-data_analysis",
         "TX-ai_market_category-industry_applications",
+        "TX-use_case-data_analysis",
         "TX-use_case-procurement_supply_chain",
         "TX-ai_market_subcategory-consumer_retail"
       ],
@@ -85555,8 +85961,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-customer_support",
         "TX-ai_market_category-industry_applications",
         "TX-industry-food_hospitality",
@@ -85584,8 +85990,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-finance_accounting",
         "TX-use_case-procurement_supply_chain"
       ],
@@ -85611,12 +86017,12 @@
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
-        "TX-industry-government_public_sector",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-legal",
         "TX-industry-legal_services",
-        "TX-use_case-procurement_supply_chain",
         "TX-use_case-legal_compliance",
-        "TX-ai_market_subcategory-legal"
+        "TX-industry-government_public_sector",
+        "TX-use_case-procurement_supply_chain"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -85726,9 +86132,9 @@
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-legal",
         "TX-industry-legal_services",
-        "TX-use_case-legal_compliance",
-        "TX-ai_market_subcategory-legal"
+        "TX-use_case-legal_compliance"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -85751,10 +86157,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-sales",
         "TX-use_case-marketing",
         "TX-ai_market_subcategory-sales"
@@ -85780,12 +86186,12 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-ai_market_category-industry_applications",
-        "TX-industry-financial_services",
+        "TX-ai_market_subcategory-legal",
         "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
-        "TX-ai_market_subcategory-legal"
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -85806,11 +86212,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
@@ -85834,12 +86240,12 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-ai_market_category-industry_applications",
-        "TX-industry-financial_services",
+        "TX-ai_market_subcategory-legal",
         "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
-        "TX-ai_market_subcategory-legal"
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -85862,8 +86268,8 @@
       "classificationRefs": [
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
         "TX-ai_market_category-industry_applications",
+        "TX-use_case-data_analysis",
         "TX-industry-construction_real_estate",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-procurement_supply_chain"
@@ -85914,15 +86320,15 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-consumer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
+        "TX-use_case-knowledge_search",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-data_preparation_curation",
-        "TX-ai_market_subcategory-data",
-        "TX-use_case-knowledge_search"
+        "TX-ai_market_subcategory-data"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
@@ -85970,13 +86376,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
-        "TX-use_case-data_analysis",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-industry_applications",
+        "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-design_engineering"
@@ -86002,9 +86408,9 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-ai_market_category-industry_applications",
         "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-industry_applications",
         "TX-industry-financial_services",
         "TX-use_case-finance_accounting",
         "TX-ai_market_subcategory-financial_services"
@@ -86056,8 +86462,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
@@ -86087,8 +86493,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-sales",
         "TX-ai_market_subcategory-sales"
@@ -86115,8 +86521,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-target_user-developer"
       ],
@@ -86140,8 +86546,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
@@ -86170,8 +86576,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
@@ -86197,11 +86603,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-consumer",
         "TX-target_user-business_user",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-target_user-consumer",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai"
       ],
@@ -86307,19 +86713,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-consumer",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-target_user-consumer",
         "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
-        "TX-industry-professional_services",
-        "TX-industry-education",
+        "TX-product_form-model_api_service",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model_api_service"
+        "TX-industry-professional_services",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
@@ -86340,13 +86746,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
-        "TX-use_case-content_creation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-target_user-consumer"
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-30",
@@ -86369,8 +86775,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
@@ -86402,8 +86808,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows"
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-29",
@@ -86483,8 +86889,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
         "TX-industry-construction_real_estate",
         "TX-ai_market_subcategory-consumer_retail"
@@ -86512,14 +86918,15 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
+        "TX-industry-legal_services",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
@@ -86535,7 +86942,6 @@
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-food_hospitality",
-        "TX-industry-legal_services",
         "TX-ai_market_application-ai_observability_governance"
       ],
       "relatedEntityIds": [],
@@ -86592,6 +86998,7 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
+        "TX-industry-legal_services",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
@@ -86607,7 +87014,6 @@
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-food_hospitality",
-        "TX-industry-legal_services",
         "TX-ai_market_application-ai_development_orchestration"
       ],
       "relatedEntityIds": [],
@@ -86630,8 +87036,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
@@ -86659,8 +87065,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
@@ -86668,6 +87074,7 @@
         "TX-industry-media_entertainment",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
+        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
@@ -86680,7 +87087,6 @@
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-food_hospitality",
-        "TX-industry-legal_services",
         "TX-ai_market_subcategory-sales"
       ],
       "relatedEntityIds": [],
@@ -86703,8 +87109,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
         "TX-industry-education",
         "TX-ai_market_subcategory-consumer_retail"
@@ -86729,10 +87135,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-industry-manufacturing",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-procurement_supply_chain"
       ],
@@ -86756,12 +87162,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-consumer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-customer_support",
-        "TX-technology-agentic_execution",
         "TX-ai_market_category-industry_applications",
+        "TX-technology-agentic_execution",
         "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences"
       ],
@@ -86784,13 +87190,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-industry-retail_ecommerce",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution",
         "TX-ai_market_subcategory-marketing",
         "TX-use_case-marketing"
       ],
@@ -86845,11 +87251,11 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
-        "TX-use_case-knowledge_search"
+        "TX-use_case-knowledge_search",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-22",
@@ -86928,8 +87334,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-retail_ecommerce",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
@@ -87020,12 +87426,12 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-ai_market_category-industry_applications",
+        "TX-use_case-legal_compliance",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-finance_accounting",
-        "TX-ai_market_subcategory-financial_services",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-19",
@@ -87108,8 +87514,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
@@ -87132,13 +87538,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-use_case-data_analysis",
-        "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-industry-energy_utilities",
+        "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
+        "TX-industry-manufacturing",
+        "TX-industry-energy_utilities",
         "TX-ai_market_subcategory-industrials"
       ],
       "relatedEntityIds": [],
@@ -87160,12 +87566,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-consumer",
         "TX-target_user-business_user",
         "TX-ai_market_category-physical_ai",
         "TX-industry-automotive_transportation",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-target_user-consumer",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
@@ -87226,10 +87632,10 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
-        "TX-industry-government_public_sector",
         "TX-use_case-data_analysis",
-        "TX-industry-financial_services",
-        "TX-use_case-knowledge_search"
+        "TX-use_case-knowledge_search",
+        "TX-industry-government_public_sector",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-15",
@@ -87276,14 +87682,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
-        "TX-use_case-research_discovery",
-        "TX-use_case-knowledge_search"
+        "TX-use_case-knowledge_search",
+        "TX-technology-agentic_execution",
+        "TX-use_case-research_discovery"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-13",
@@ -87305,8 +87711,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
@@ -87347,8 +87753,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-automotive_transportation",
         "TX-ai_market_application-models",
@@ -87356,13 +87762,13 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-technology-multimodal",
+        "TX-ai_market_category-industry_applications",
+        "TX-use_case-knowledge_search",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-product_form-compute_cloud_service",
-        "TX-ai_market_category-industry_applications",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
-        "TX-use_case-knowledge_search",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-design_engineering"
       ],
@@ -87393,8 +87799,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services"
@@ -87444,8 +87850,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-observability_evaluation",
@@ -87474,8 +87880,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-retail_ecommerce",
         "TX-technology-agentic_execution",
         "TX-industry-professional_services",
@@ -87504,8 +87910,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search"
       ],
@@ -87531,13 +87937,13 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-retail_ecommerce",
+        "TX-use_case-knowledge_search",
         "TX-technology-agentic_execution",
         "TX-industry-professional_services",
-        "TX-industry-construction_real_estate",
-        "TX-use_case-knowledge_search"
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
@@ -87558,17 +87964,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
+        "TX-use_case-data_analysis",
+        "TX-use_case-knowledge_search",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-government_public_sector",
         "TX-product_form-ai_compute_system",
-        "TX-use_case-data_analysis",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-knowledge_search"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-08",
@@ -87591,8 +87997,8 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-technology-agentic_execution",
         "TX-use_case-hr_workforce",
         "TX-ai_market_subcategory-hr"
@@ -87644,11 +88050,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-manufacturing",
         "TX-ai_market_category-industry_applications",
+        "TX-industry-manufacturing",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-procurement_supply_chain"
       ],
@@ -87674,14 +88080,14 @@
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-industry-government_public_sector",
         "TX-use_case-data_analysis",
+        "TX-use_case-knowledge_search",
+        "TX-industry-government_public_sector",
         "TX-product_form-ai_infrastructure_software",
         "TX-industry-agriculture",
         "TX-industry-energy_utilities",
         "TX-ai_market_application-data_preparation_curation",
-        "TX-ai_market_subcategory-data",
-        "TX-use_case-knowledge_search"
+        "TX-ai_market_subcategory-data"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -87702,16 +88108,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
+        "TX-product_form-model_api_service",
         "TX-industry-telecommunications",
-        "TX-industry-financial_services",
-        "TX-product_form-model_api_service"
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-04",
@@ -87763,8 +88169,8 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_subcategory-customer_support",
         "TX-use_case-customer_support",
         "TX-target_user-developer",
@@ -88009,13 +88415,14 @@
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-technology-image_generation",
+        "TX-use_case-legal_compliance",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
@@ -88028,7 +88435,6 @@
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
-        "TX-use_case-legal_compliance",
         "TX-technology-computer_use",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -88101,13 +88507,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-target_user-consumer",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-ai_market_category-physical_ai",
         "TX-industry-logistics_supply_chain",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-target_user-consumer",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
@@ -88166,8 +88572,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -88224,8 +88630,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-industry-media_entertainment",
@@ -88251,8 +88657,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
@@ -88260,6 +88666,7 @@
         "TX-industry-media_entertainment",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
+        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
@@ -88273,7 +88680,6 @@
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-food_hospitality",
-        "TX-industry-legal_services",
         "TX-ai_market_subcategory-sales"
       ],
       "relatedEntityIds": [],
@@ -88295,12 +88701,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-target_user-consumer",
         "TX-industry-media_entertainment",
         "TX-industry-manufacturing",
         "TX-industry-construction_real_estate",
@@ -88326,8 +88732,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
         "TX-ai_market_category-industry_applications",
@@ -88354,8 +88760,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-target_user-developer",
@@ -88383,8 +88789,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-target_user-consumer",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
         "TX-industry-construction_real_estate",
         "TX-use_case-design_engineering",
@@ -88465,8 +88871,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-target_user-developer"
       ],
@@ -88489,16 +88895,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-retail_ecommerce",
         "TX-use_case-data_analysis",
+        "TX-use_case-knowledge_search",
         "TX-industry-professional_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-knowledge_search"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
@@ -88519,10 +88925,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-use_case-sales",
         "TX-technology-agentic_execution",
@@ -88572,8 +88978,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-target_user-developer",
         "TX-technology-agentic_execution"
@@ -88600,8 +89006,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-technology-agentic_execution",
         "TX-use_case-finance_accounting"
       ],
@@ -88624,11 +89030,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-finance_accounting"
@@ -88732,13 +89138,13 @@
       "classificationRefs": [
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-legal",
+        "TX-industry-legal_services",
+        "TX-use_case-legal_compliance",
         "TX-industry-government_public_sector",
         "TX-target_user-public_sector_user",
-        "TX-ai_market_category-industry_applications",
-        "TX-industry-legal_services",
-        "TX-use_case-procurement_supply_chain",
-        "TX-use_case-legal_compliance",
-        "TX-ai_market_subcategory-legal"
+        "TX-use_case-procurement_supply_chain"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-23",
@@ -88792,14 +89198,14 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
         "TX-use_case-sales",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution",
         "TX-industry-professional_services",
         "TX-industry-manufacturing",
         "TX-use_case-marketing",
@@ -88825,15 +89231,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
         "TX-industry-media_entertainment",
+        "TX-industry-legal_services",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
@@ -88846,8 +89253,7 @@
         "TX-industry-education",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
-        "TX-industry-food_hospitality",
-        "TX-industry-legal_services"
+        "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -88869,8 +89275,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
@@ -88899,8 +89305,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
@@ -89011,8 +89417,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
@@ -89048,10 +89454,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_subcategory-customer_support",
         "TX-use_case-customer_support",
         "TX-use_case-sales"
@@ -89194,13 +89600,13 @@
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-legal",
+        "TX-use_case-legal_compliance",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-target_user-public_sector_user",
-        "TX-ai_market_category-industry_applications",
-        "TX-use_case-procurement_supply_chain",
-        "TX-use_case-legal_compliance",
-        "TX-ai_market_subcategory-legal"
+        "TX-use_case-procurement_supply_chain"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-19",
@@ -89355,8 +89761,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
@@ -89415,12 +89821,12 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-retail_ecommerce",
+        "TX-use_case-legal_compliance",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-finance_accounting",
-        "TX-use_case-legal_compliance"
+        "TX-use_case-finance_accounting"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-20",
@@ -89472,8 +89878,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-target_user-developer"
       ],
       "relatedEntityIds": [],
@@ -89496,10 +89902,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-use_case-data_analysis",
+        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-ai_market_subcategory-financial_services"
       ],
@@ -89525,8 +89931,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services"
@@ -89550,13 +89956,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
-        "TX-use_case-data_analysis"
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2025-08-01",
@@ -89580,8 +89986,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
         "TX-use_case-data_analysis"
@@ -89836,12 +90242,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-target_user-consumer",
+        "TX-target_user-business_user",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
         "TX-technology-mixture_of_experts",
@@ -89914,8 +90320,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-target_user-consumer",
+        "TX-target_user-business_user",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
@@ -90066,12 +90472,12 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-technology-video_generation",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution",
         "TX-product_form-ai_device",
         "TX-technology-computer_use",
         "TX-technology-mixture_of_experts",
@@ -90133,8 +90539,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-target_user-consumer",
+        "TX-target_user-business_user",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
@@ -90535,21 +90941,22 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
-        "TX-target_user-consumer",
         "TX-industry-media_entertainment",
         "TX-use_case-customer_support",
         "TX-technology-multimodal",
+        "TX-product_form-model_api_service",
+        "TX-use_case-data_analysis",
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
-        "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
@@ -90557,7 +90964,6 @@
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-developer_tool",
-        "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-technology-open_weights",
         "TX-technology-inference_optimization",
