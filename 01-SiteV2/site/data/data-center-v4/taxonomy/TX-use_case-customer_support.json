@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:59:38.691Z",
-    "latestDataDate": "2026-08-28",
-    "currentDate": "2026-08-28",
-    "eventCount": 2459,
+    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "latestDataDate": "2026-08-29",
+    "currentDate": "2026-08-29",
+    "eventCount": 2477,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -58,7 +58,8 @@
       "EV-78277c678f01e540",
       "EV-11a8e196deb21300",
       "EV-6364cfadff0d1d30",
-      "EV-94d9c8d5ac1e10de"
+      "EV-94d9c8d5ac1e10de",
+      "EV-5099dd06358bef47"
     ],
     "entityIds": [
       "EN-3b3ed571bbb19504",
@@ -110,7 +111,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-08-26"
+    "lastSeen": "2026-08-29"
   },
   "events": [
     {
@@ -11406,6 +11407,83 @@
       ],
       "sourceUrl": "https://joineta.org/blog/aws-agent-marketplace-whats-coming-and-why-it-matters",
       "publisher": "joineta.org"
+    },
+    {
+      "id": "EV-5099dd06358bef47",
+      "dataDate": "2026-08-29",
+      "date": "2026-08-29",
+      "updatedDate": "2026-08-29",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "2026年客户服务转型报告",
+      "originalTitle": "2026 Customer Service Transformation Report",
+      "subject": "82% of senior leaders",
+      "action": "research_result",
+      "object": "invested in AI for customer service over the last 12 months",
+      "metrics": [
+        "82%",
+        "87%",
+        "52%"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "customer_support",
+          "name": "客户支持",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "customer_support",
+          "name": "客户支持",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://intercom.com/customer-transformation-report",
+      "publisher": "intercom.com"
     }
   ],
   "entities": [
@@ -11605,14 +11683,14 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-40fd274ae86434b8",
+        "EV-c32dd87e1f72b09a",
         "EV-10f04014fb3b62ff",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
@@ -11822,6 +11900,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -11855,7 +11935,6 @@
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
@@ -11871,7 +11950,6 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-open_weights",
         "TX-technology-tool_use",
         "TX-technology-reasoning"
       ],
@@ -11880,31 +11958,24 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-c71a83adf3de3f40",
@@ -12508,6 +12579,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-df8954acf9a13848",
         "EV-f5dd6dec49ad83aa",
@@ -12602,6 +12674,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-4bbb0a030948b8f4",
+        "EV-6944ba9fc55b4f41",
         "EV-b4376b7d0e863db3",
         "EV-eedd370fd9cfdbb2",
         "EV-4268b4be01fc8711",
@@ -12809,6 +12883,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-65612dfb24abce5c",
         "EV-00ffb2c501a37ec8",
         "EV-8d1915e3b460afa7",
         "EV-16a0fe419e75402b",
@@ -12889,6 +12964,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
@@ -12910,12 +12987,10 @@
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
-        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-developer_tool",
         "TX-technology-long_context",
-        "TX-technology-open_weights",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-technology-reasoning"
@@ -12947,7 +13022,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -13039,6 +13114,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-97910e898975c6ca",
+        "EV-db87eda4a39de22a",
         "EV-eedd370fd9cfdbb2",
         "EV-6e96760ed7e2ebaa",
         "EV-daa8adf2de4e4bf4",
@@ -13304,6 +13381,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-consumer",
@@ -13326,14 +13406,12 @@
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
         "TX-technology-long_context",
         "TX-target_user-educator",
-        "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
@@ -13343,6 +13421,7 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -13357,7 +13436,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -13367,7 +13445,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-19e41212c0556603",
@@ -13408,9 +13486,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-target_user-business_user",
-        "TX-use_case-customer_support",
-        "TX-technology-open_weights"
+        "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-10",

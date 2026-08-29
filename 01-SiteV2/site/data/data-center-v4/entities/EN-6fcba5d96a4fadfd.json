@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:59:38.691Z",
-    "latestDataDate": "2026-08-28",
-    "currentDate": "2026-08-28",
-    "eventCount": 2459,
+    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "latestDataDate": "2026-08-29",
+    "currentDate": "2026-08-29",
+    "eventCount": 2477,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -24,6 +24,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-8018e028f1840136",
       "EV-fe49d2ee580cfea2",
       "EV-d57fb9108f2cb220",
       "EV-1744d0e71176f9a1",
@@ -80,7 +81,7 @@
       "EN-24caf10fe9bfb1c5"
     ],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-08-28",
+    "lastSeen": "2026-08-29",
     "relationIds": [
       "REL2-30051dc5d7668662",
       "REL2-e0b4c492d7f56ad2",
@@ -88,6 +89,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-c1295b8f58024ff6",
         "EV-d57fb9108f2cb220",
@@ -142,6 +144,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-8018e028f1840136",
+        "dataDate": "2026-08-29",
+        "date": "2026-08-29",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "OpenAI：因 Cursor 被 SpaceX 收购，将停止向 Cursor 提供 AI 模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-e78bdebae031095b",
+          "EN-6fcba5d96a4fadfd"
+        ]
+      },
       {
         "id": "EV-95875c6cc15e6b29",
         "dataDate": "2026-08-28",
@@ -1792,6 +1811,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
@@ -1843,7 +1863,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-c4bc2d00a42f220f",
@@ -2578,7 +2598,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "TX-use_case-software_development",

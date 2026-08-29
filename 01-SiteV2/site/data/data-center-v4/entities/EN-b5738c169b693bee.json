@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:59:38.691Z",
-    "latestDataDate": "2026-08-28",
-    "currentDate": "2026-08-28",
-    "eventCount": 2459,
+    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "latestDataDate": "2026-08-29",
+    "currentDate": "2026-08-29",
+    "eventCount": 2477,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -551,14 +551,14 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-40fd274ae86434b8",
+        "EV-c32dd87e1f72b09a",
         "EV-10f04014fb3b62ff",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
@@ -768,6 +768,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -801,7 +803,6 @@
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
@@ -817,7 +818,6 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-open_weights",
         "TX-technology-tool_use",
         "TX-technology-reasoning"
       ],
@@ -826,31 +826,24 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     }
   ],
   "relationships": [
@@ -1158,6 +1151,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-1837cd322ed6aa11",
+        "EV-c877ce26c9f8997f",
+        "EV-6944ba9fc55b4f41",
+        "EV-db87eda4a39de22a",
         "EV-5c87fffc3534e990",
         "EV-98297329e323dca3",
         "EV-a6dc310224542dcf",
@@ -1623,6 +1620,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-f8e930daaadf36ec",
+        "EN-c70eca6b0f88f44d",
         "EN-cb4754c48f8023d0",
         "EN-d9b1d7819af92e77",
         "EN-738e22f0acab814c",
@@ -1715,7 +1714,6 @@
         "EN-e395d03e988d30a9",
         "EN-1c3cb68d25565c1c",
         "EN-c0803e19540a3203",
-        "EN-c70eca6b0f88f44d",
         "EN-5388bc10736a0eff",
         "EN-42f0b44cc91cc5e0",
         "EN-09c344df70df9660",
