@@ -1,103 +1,15 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-08-29T03:37:10.622Z",
+  "generated_at": "2026-08-29T03:40:39.476Z",
   "date": "2026-08-29",
   "status": "degraded",
-  "state": "candidate_evidence_insufficient",
+  "state": "source_no_data",
   "last_checked_date": "2026-08-29",
   "latest_financing_date": "2026-08-26",
   "totals": {
-    "fetched": 634,
-    "funding_candidates": 130,
+    "fetched": 0,
+    "funding_candidates": 0,
     "verified_events": 0
   },
-  "channels": [
-    {
-      "id": "aihot",
-      "status": "collected",
-      "last_success_at": "2026-08-29T03:23:37.428Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 238,
-      "latest_content_date": "2026-08-28",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 2,
-      "verified_event_count": 0,
-      "failures": [],
-      "fallback_used": false
-    },
-    {
-      "id": "funding",
-      "status": "collected",
-      "last_success_at": "2026-08-29T03:23:52.211Z",
-      "response_ms": null,
-      "http_status": "429",
-      "fetched_count": 58,
-      "latest_content_date": "2026-08-28",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 58,
-      "verified_event_count": 0,
-      "failures": [
-        "RSS tldr-ai-newsletter: HTTP 429"
-      ],
-      "fallback_used": false
-    },
-    {
-      "id": "gdelt",
-      "status": "collected",
-      "last_success_at": "2026-08-29T03:32:33.279Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 48,
-      "latest_content_date": "",
-      "duplicate_rate": 0.1875,
-      "stale_rate": 1,
-      "funding_candidate_count": 16,
-      "verified_event_count": 0,
-      "failures": [],
-      "fallback_used": false
-    },
-    {
-      "id": "keyword",
-      "status": "collected",
-      "last_success_at": "2026-08-29T03:30:21.461Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 158,
-      "latest_content_date": "2026-08-28",
-      "duplicate_rate": 0.2174,
-      "stale_rate": 1,
-      "funding_candidate_count": 46,
-      "verified_event_count": 0,
-      "failures": [
-        "keyword-search pre-gate filtered 49 result(s): social_or_profile_source=22; missing_ai_anchor_in_result=15; broad_list_or_market_report=11; noise_term:definition=1",
-        "Anysearch fallback for query \"forward deployed engineer AI customer deployment announced August 2026 (\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)\": Anysearch returned 0 usable results",
-        "Anysearch fallback for query \"customer engineering AI production deployment announced August 2026 (\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)\": Anysearch returned 0 usable results",
-        "Anysearch fallback for query \"AI workflow rollout procurement pilot announced August 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
-        "Anysearch fallback for query \"AI workflow automation procurement announced August 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
-        "Anysearch fallback for query \"AI agent startup raises procurement workflow announced August 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
-        "Anysearch fallback for query \"AI procurement startup funding enterprise workflow announced August 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
-        "Anysearch fallback for query \"agent governance evals production rollout enterprise AI announced August 2026 (AI server OR AI hardware) (OEM OR ODM OR \"contract manufacturer\" OR \"manufacturing partner\") (official OR newsroom)\": Anysearch returned 0 usable results",
-        "Anysearch fallback for query \"open-source AI agent GitHub enterprise adoption announced August 2026 (AI server OR AI hardware) (OEM OR ODM OR \"contract manufacturer\" OR \"manufacturing partner\") (official OR newsroom)\": Anysearch returned 0 usable results"
-      ],
-      "fallback_used": true
-    },
-    {
-      "id": "rss",
-      "status": "collected",
-      "last_success_at": "2026-08-29T03:23:43.046Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 132,
-      "latest_content_date": "2026-08-28",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 8,
-      "verified_event_count": 0,
-      "failures": [],
-      "fallback_used": false
-    }
-  ]
+  "channels": []
 }
