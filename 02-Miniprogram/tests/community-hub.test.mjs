@@ -22,7 +22,9 @@ test("registers the confirmed native community hub as the third tab", () => {
 });
 
 test("keeps the community home visible and gates detail actions", () => {
-  for (const label of ["造浪者计划", "悬赏令", "积分榜", "行业图谱", "本周分享", "最近实录"]) assert.match(home, new RegExp(label, "u"));
+  for (const label of ["造浪者计划", "悬赏令", "积分榜", "行业图谱", "下一场", "近期实录"]) assert.match(home, new RegExp(label, "u"));
+  assert.match(home, /community-focus-card/u);
+  assert.match(homeLogic, /archives\.slice\(0, 2\)/u);
   assert.match(homeLogic, /requireCommunityMember/u);
   assert.match(access, /申请加入/u);
   assert.doesNotMatch(access, /switchTab/u);

@@ -1,27 +1,3 @@
-<view class="page-shell">
-  <app-header title="商业观察" />
-  <view class="page-content report-content">
-    <view wx:if="{{featured}}" class="featured-report" data-id="{{featured.id}}" bindtap="openReport">
-      <view class="featured-meta"><text>{{featured.typeLabel || activeLabel}}</text><text class="mono">{{featured.readingTime || featured.issue}}</text></view>
-      <text class="featured-title serif">{{featured.title}}</text>
-      <text class="featured-summary">{{featured.summary}}</text>
-      <view class="featured-action"><text class="mono">{{featured.date}}</text><text>阅读全文</text></view>
-    </view>
-
-    <view class="report-tabs" role="tablist">
-      <button class="report-tab {{activeType === 'all' ? 'active' : ''}}" data-type="all" bindtap="switchType">全部</button>
-      <button class="report-tab {{activeType === 'community' ? 'active' : ''}}" data-type="community" bindtap="switchType">社群精华</button>
-      <button class="report-tab {{activeType === 'weekly' ? 'active' : ''}}" data-type="weekly" bindtap="switchType">周报</button>
-      <button class="report-tab {{activeType === 'monthly' ? 'active' : ''}}" data-type="monthly" bindtap="switchType">月报</button>
-    </view>
-
-    <view class="archive-heading"><text class="serif">往期{{activeLabel}}</text></view>
-    <view wx:if="{{reports.length}}" class="report-list">
-      <view wx:for="{{reports}}" wx:key="id" class="report-card" data-id="{{item.id}}" bindtap="openReport">
-        <view class="report-date"><text class="mono">{{item.dateShort}}</text><text>{{item.issue}}</text></view>
-        <view class="report-main"><text class="report-title serif">{{item.title}}</text><text class="report-summary">{{item.summary}}</text><view class="report-footer"><text>{{item.typeLabel || activeLabel}}</text><text>查看全文</text></view></view>
-      </view>
-    </view>
-    <view wx:else class="empty-state"><view class="title serif">暂无往期{{activeLabel}}</view></view>
-  </view>
+<view class="legacy-observation-page">
+  <text>正在进入生态 · 行业观察…</text>
 </view>

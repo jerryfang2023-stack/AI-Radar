@@ -1,5 +1,5 @@
 <view class="page-shell" wx:if="{{report}}">
-  <app-header title="{{report.typeLabel}}" show-back fallback-url="/pages/watchlist/index" />
+  <app-header title="{{report.typeLabel}}" show-back fallback-url="/pages/market/index" />
   <view class="page-content reader-content {{sharedEntry ? 'with-shared-nav' : ''}}">
     <view class="reader-hero">
       <view class="reader-kicker"><text>{{report.typeLabel}}</text><text class="mono">{{report.issue}}</text></view>
@@ -14,7 +14,7 @@
       <text class="gate-title serif">{{lockReason === 'expired' ? '开通会员继续阅读' : '注册后继续阅读'}}</text>
       <text class="gate-copy">文章标题、摘要和发布信息可见，完整正文需登录后查看。</text>
       <button bindtap="unlockContent">{{lockReason === 'expired' ? '查看会员权益' : '注册并继续'}}</button>
-      <text class="gate-note">是否登录由你选择，可随时返回观察栏目。</text>
+      <text class="gate-note">是否登录由你选择，可随时返回生态栏目。</text>
     </view>
 
     <view wx:else class="reader-body">
@@ -30,8 +30,8 @@
   </view>
   <view wx:if="{{sharedEntry}}" class="shared-entry-nav">
     <button data-url="/pages/terminal/index" bindtap="switchSection">融资</button>
-    <button data-url="/pages/market/index" bindtap="switchSection">生态</button>
-    <button class="active" data-url="/pages/watchlist/index" bindtap="switchSection">观察</button>
+    <button class="active" data-url="/pages/market/index" bindtap="switchSection">生态</button>
+    <button data-url="/pages/community/index" bindtap="switchSection">社群</button>
     <button data-url="/pages/profile/index" bindtap="switchSection">我的</button>
   </view>
   <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />

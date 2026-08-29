@@ -61,11 +61,11 @@ Page({
   },
   onShareAppMessage() {
     const report = this.data.report;
-    return { title: report?.title || "观澜 AI 商业观察", path: `/pages/report-detail/index?id=${report?.id || ""}&from=share` };
+    return { title: report?.title || "观澜 AI 行业观察", path: `/pages/report-detail/index?id=${report?.id || ""}&from=share` };
   },
   onShareTimeline() {
     const report = this.data.report;
-    return { title: report?.title || "观澜 AI 商业观察", query: `id=${report?.id || ""}&from=share` };
+    return { title: report?.title || "观澜 AI 行业观察", query: `id=${report?.id || ""}&from=share` };
   },
   switchSection(event) {
     const url = event.currentTarget.dataset.url;

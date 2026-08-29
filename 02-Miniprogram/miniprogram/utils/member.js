@@ -26,7 +26,7 @@ const BENEFITS = [
   { id: "membership_30d", title: "30 天会员权益", description: "全部栏目浏览权益顺延 30 天", cost: 1000, days: 30, repeatable: true },
 ];
 
-const MEMBER_RIGHTS = ["融资情报完整浏览", "生态图谱主体档案", "商业观察周报月报", "收藏与浏览记录"];
+const MEMBER_RIGHTS = ["融资情报完整浏览", "生态图谱与行业观察", "社群精华与成员档案", "收藏与浏览记录"];
 
 function nowLabel() {
   const date = new Date();

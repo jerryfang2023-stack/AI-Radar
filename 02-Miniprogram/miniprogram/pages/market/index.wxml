@@ -1,16 +1,46 @@
 <view class="page-shell">
-  <app-header title="生态图谱" />
+  <app-header title="生态" />
   <view class="page-content ecosystem-content">
-    <view class="section-head signal-head">
-      <text class="section-title">资本正在流向哪里</text>
-      <view class="market-segment"><button class="{{marketRegion === 'global' ? 'active' : ''}}" data-region="global" bindtap="changeMarket">全球</button><button class="{{marketRegion === 'china' ? 'active' : ''}}" data-region="china" bindtap="changeMarket">中国</button></view>
+    <view class="ecosystem-mode-tabs">
+      <button class="{{mode === 'map' ? 'active' : ''}}" data-mode="map" bindtap="setMode">生态图谱</button>
+      <button class="{{mode === 'observation' ? 'active' : ''}}" data-mode="observation" bindtap="setMode">行业观察</button>
     </view>
-    <scroll-view class="signal-scroller" scroll-x enable-flex show-scrollbar="{{false}}">
-      <button wx:for="{{signals}}" wx:key="kind" class="signal-card {{item.kind}}" data-sector="{{item.sector}}" bindtap="openSector"><text class="signal-eyebrow">{{item.eyebrow}}</text><text class="signal-sector">{{item.sector}}</text><view class="signal-value"><text class="mono">{{item.value}}</text><text>{{item.kind === 'primary' ? '笔融资' : '个百分点'}}</text></view><text class="signal-note">{{item.note}}</text></button>
-    </scroll-view>
-    <view class="section-head"><view><text>市场子类 · 融资事件</text><text class="section-title">赛道热度榜</text></view><text class="head-note mono">Top 5</text></view>
-    <view class="ranking-card"><button wx:for="{{ranking}}" wx:key="sector" class="ranking-row" data-sector="{{item.sector}}" bindtap="openSector"><text class="rank mono">{{item.rank}}</text><view class="ranking-main"><text>{{item.sector}}</text><view class="bar-track"><view class="bar-value" style="width: {{item.width}}%;"></view></view></view><text class="ranking-count mono">{{item.count}} 笔</text></button></view>
-    <view class="section-head heat-head"><view><text>Top 5 × 近 6 个月</text><text class="section-title">热力趋势</text></view><view class="heat-legend"><i></i><i></i><i></i></view></view>
-    <view class="heatmap-card"><view class="heat-row heat-labels"><text></text><text wx:for="{{months}}" wx:key="*this" class="mono">{{item}}</text></view><view wx:for="{{heatmap}}" wx:key="sector" class="heat-row" data-sector="{{item.sector}}" bindtap="openSector"><text class="heat-sector">{{item.sector}}</text><view wx:for="{{item.cells}}" wx:key="key" class="heat-cell l{{item.level}}"></view></view></view>
+
+    <block wx:if="{{mode === 'map'}}">
+      <view class="section-head signal-head">
+        <text class="section-title">资本正在流向哪里</text>
+        <view class="market-segment"><button class="{{marketRegion === 'global' ? 'active' : ''}}" data-region="global" bindtap="changeMarket">全球</button><button class="{{marketRegion === 'china' ? 'active' : ''}}" data-region="china" bindtap="changeMarket">中国</button></view>
+      </view>
+      <scroll-view class="signal-scroller" scroll-x enable-flex show-scrollbar="{{false}}">
+        <button wx:for="{{signals}}" wx:key="kind" class="signal-card {{item.kind}}" data-sector="{{item.sector}}" bindtap="openSector"><text class="signal-eyebrow">{{item.eyebrow}}</text><text class="signal-sector">{{item.sector}}</text><view class="signal-value"><text class="mono">{{item.value}}</text><text>{{item.kind === 'primary' ? '笔融资' : '个百分点'}}</text></view><text class="signal-note">{{item.note}}</text></button>
+      </scroll-view>
+      <view class="section-head"><view><text>市场子类 · 融资事件</text><text class="section-title">赛道热度榜</text></view><text class="head-note mono">Top 5</text></view>
+      <view class="ranking-card"><button wx:for="{{ranking}}" wx:key="sector" class="ranking-row" data-sector="{{item.sector}}" bindtap="openSector"><text class="rank mono">{{item.rank}}</text><view class="ranking-main"><text>{{item.sector}}</text><view class="bar-track"><view class="bar-value" style="width: {{item.width}}%;"></view></view></view><text class="ranking-count mono">{{item.count}} 笔</text></button></view>
+      <view class="section-head heat-head"><view><text>Top 5 × 近 6 个月</text><text class="section-title">热力趋势</text></view><view class="heat-legend"><i></i><i></i><i></i></view></view>
+      <view class="heatmap-card"><view class="heat-row heat-labels"><text></text><text wx:for="{{months}}" wx:key="*this" class="mono">{{item}}</text></view><view wx:for="{{heatmap}}" wx:key="sector" class="heat-row" data-sector="{{item.sector}}" bindtap="openSector"><text class="heat-sector">{{item.sector}}</text><view wx:for="{{item.cells}}" wx:key="key" class="heat-cell l{{item.level}}"></view></view></view>
+    </block>
+
+    <block wx:else>
+      <button wx:if="{{featured}}" class="featured-report" data-id="{{featured.id}}" bindtap="openReport">
+        <view class="featured-meta"><text>{{featured.typeLabel || activeLabel}}</text><text class="mono">{{featured.readingTime || featured.issue}}</text></view>
+        <text class="featured-title">{{featured.title}}</text>
+        <text class="featured-summary">{{featured.summary}}</text>
+        <view class="featured-action"><text class="mono">{{featured.date}}</text><text>阅读全文 ›</text></view>
+      </button>
+      <view class="report-tabs" role="tablist">
+        <button class="report-tab {{activeType === 'all' ? 'active' : ''}}" data-type="all" bindtap="switchType">全部</button>
+        <button class="report-tab {{activeType === 'community' ? 'active' : ''}}" data-type="community" bindtap="switchType">社群精华</button>
+        <button class="report-tab {{activeType === 'weekly' ? 'active' : ''}}" data-type="weekly" bindtap="switchType">周报</button>
+        <button class="report-tab {{activeType === 'monthly' ? 'active' : ''}}" data-type="monthly" bindtap="switchType">月报</button>
+      </view>
+      <view class="archive-heading"><text>往期{{activeLabel}}</text></view>
+      <view wx:if="{{reports.length}}" class="report-list">
+        <button wx:for="{{reports}}" wx:key="id" class="report-card" data-id="{{item.id}}" bindtap="openReport">
+          <view class="report-date"><text class="mono">{{item.dateShort}}</text><text>{{item.issue}}</text></view>
+          <view class="report-main"><text class="report-title">{{item.title}}</text><text class="report-summary">{{item.summary}}</text><view class="report-footer"><text>{{item.typeLabel || activeLabel}}</text><text>查看全文 ›</text></view></view>
+        </button>
+      </view>
+      <view wx:else class="empty-state"><view class="title">暂无往期{{activeLabel}}</view></view>
+    </block>
   </view>
 </view>

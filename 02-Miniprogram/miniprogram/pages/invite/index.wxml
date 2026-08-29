@@ -28,8 +28,8 @@
       <text class="section-title serif">好友可以获得什么</text>
       <view class="value-list">
         <view><text class="value-index">01</text><view><text>融资情报</text><text>快速掌握 AI 企业融资动态与资本动向</text></view></view>
-        <view><text class="value-index">02</text><view><text>生态图谱</text><text>查询企业、投资机构与核心人物档案</text></view></view>
-        <view><text class="value-index">03</text><view><text>商业观察</text><text>阅读周报与月报，理解变化而不只看消息</text></view></view>
+        <view><text class="value-index">02</text><view><text>生态图谱</text><text>理解赛道热度、资本流向与产业结构</text></view></view>
+        <view><text class="value-index">03</text><view><text>生态 · 行业观察</text><text>阅读周报、月报与社群精华，理解变化而不只看消息</text></view></view>
       </view>
     </view>
 
@@ -52,8 +52,8 @@
 
   <view wx:if="{{sharedEntry}}" class="shared-entry-nav">
     <button data-url="/pages/terminal/index" bindtap="switchSection">融资</button>
-    <button data-url="/pages/market/index" bindtap="switchSection">生态</button>
-    <button data-url="/pages/watchlist/index" bindtap="switchSection">观察</button>
+    <button class="active" data-url="/pages/market/index" bindtap="switchSection">生态</button>
+    <button data-url="/pages/community/index" bindtap="switchSection">社群</button>
     <button data-url="/pages/profile/index" bindtap="switchSection">我的</button>
   </view>
   <registration-sheet visible="{{registrationOpen}}" required="{{isInvitee}}" invite-code="{{inviteCode}}" bind:close="closeRegistration" bind:registered="registrationCompleted" bind:continue="continueAfterRegistration" />

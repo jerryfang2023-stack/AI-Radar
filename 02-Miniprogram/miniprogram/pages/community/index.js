@@ -5,7 +5,7 @@ const { syncTabBar } = require("../../utils/tab-bar.js");
 
 Page({
   data: {
-    schedules, archives: archives.map((item) => ({ ...item, dateShort: item.date.replace("2026.", "") })), bounty: bounties[0],
+    schedules, archives: archives.slice(0, 2).map((item) => ({ ...item, dateShort: item.date.replace("2026.", "") })), bounty: bounties[0],
     featuredMembers: ["aihui", "zengjingsi", "guowei", "zizhe"].map((id) => {
       const member = getMember(id);
       return { ...member, roleShort: member.role.split("/")[0].trim() };
