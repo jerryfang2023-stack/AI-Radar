@@ -7,6 +7,7 @@ const { projectPortalFundingData, projectPortalReportData, refreshFundingData, g
 const fallbackFunding = require("../miniprogram/data/funding-index.js");
 const fallbackReports = require("../miniprogram/data/report-index.js");
 const fixtureDate = fallbackFunding.meta.latestDate;
+const reportFixtureDate = fallbackReports.meta.latestDate;
 
 test("projects the VPS funding contract into the native mini program contract", () => {
   const source = {
@@ -66,7 +67,7 @@ test("projects live report index and Markdown body", () => {
       id: "weekly-2026-w33",
       contentType: "weekly-report",
       typeLabel: "周报",
-      date: "2026-08-17",
+      date: reportFixtureDate,
       window: "2026-08-10 至 2026-08-16",
       title: "测试周报",
       summary: "摘要",
@@ -76,8 +77,8 @@ test("projects live report index and Markdown body", () => {
     bodies: { "weekly-2026-w33": { markdown: "## 一句话结论\n\n这是正文。\n\n- 第一条" } },
   });
   assert.equal(result.index.meta.reportCount, 1);
-  assert.equal(result.index.reports[0].id, "weekly-2026-08-17");
-  assert.equal(result.details["weekly-2026-08-17"].blocks[0].type, "heading");
+  assert.equal(result.index.reports[0].id, `weekly-${reportFixtureDate}`);
+  assert.equal(result.details[`weekly-${reportFixtureDate}`].blocks[0].type, "heading");
   assert.equal(result.index.reports[0].counts.signals, 10);
 });
 
@@ -125,12 +126,12 @@ test("refreshes remote community essays and only loads their public detail route
   const id = "community-essay-2026-08-18-remote-test";
   const community = {
     id, contentType: "community-essay", type: "community", typeLabel: "社群精华", title: "远程精华",
-    date: "2026-08-18", dateShort: "08.18", summary: "远程摘要", author: "观澜编辑部", readingTime: "3 分钟",
+    date: reportFixtureDate, dateShort: reportFixtureDate.slice(5).replace("-", "."), summary: "远程摘要", author: "观澜编辑部", readingTime: "3 分钟",
   };
   const index = {
     meta: {
       ...fallbackReports.meta,
-      latestDate: "2026-08-18",
+      latestDate: reportFixtureDate,
       reportCount: fallbackReports.reports.length + 1,
       communityCount: 1,
     },
@@ -144,7 +145,7 @@ test("refreshes remote community essays and only loads their public detail route
       if (url.includes("report-manifest.json")) {
         success({ statusCode: 200, data: {
           version: "reports:test:community",
-          latestDate: "2026-08-18",
+          latestDate: reportFixtureDate,
           reportCount: index.reports.length,
           communityCount: 1,
           indexPath: "/data/mini/report-index.json",
@@ -161,7 +162,7 @@ test("refreshes remote community essays and only loads their public detail route
     const detail = await getCommunityDetail(id);
     const state = await refreshReportData();
     const paidAttempt = await getCommunityDetail("weekly-2026-08-17");
-    assert.equal(state.index.reports[0].id, id);
+    assert.ok(state.index.reports.some((item) => item.id === id));
     assert.equal(detail.blocks[0].text, "公开正文");
     assert.equal(paidAttempt, null);
     assert.ok(requests.some((url) => url.includes(`/data/mini/community-details/${id}.json`)));

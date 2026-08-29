@@ -1,7 +1,7 @@
 const TABS = [
   { pagePath: "/pages/terminal/index", text: "融资" },
   { pagePath: "/pages/market/index", text: "生态" },
-  { pagePath: "/pages/watchlist/index", text: "观察" },
+  { pagePath: "/pages/community/index", text: "社群" },
   { pagePath: "/pages/profile/index", text: "我的" },
 ];
 

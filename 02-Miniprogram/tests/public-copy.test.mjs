@@ -200,7 +200,7 @@ test("binds phone numbers through the account service without internal-facing pr
 
 test("renders the text-only bottom navigation as connected segmented buttons", () => {
   assert.equal(appConfig.tabBar.custom, true);
-  for (const label of ["融资", "生态", "观察", "我的"]) assert.match(customTabBarLogic, new RegExp(label, "u"));
+  for (const label of ["融资", "生态", "社群", "我的"]) assert.match(customTabBarLogic, new RegExp(label, "u"));
   assert.match(customTabBarSource, /class="tab-button/u);
   assert.match(customTabBarStyles, /grid-template-columns:\s*repeat\(4/u);
   assert.match(customTabBarStyles, /gap:\s*0/u);

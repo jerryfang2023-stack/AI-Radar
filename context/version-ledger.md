@@ -44,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.1.0-tag-v4-1 |
 | Funding Insights column version | FUNDING-INSIGHT-V1.5.0-china-market |
-| WeChat Mini Program version | V0.8.3-public-column-sharing |
+| WeChat Mini Program version | V0.9.0-native-community-hub |
 | Investment institution projection | INVESTMENT-INSTITUTION-V1.0 |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -206,6 +206,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `miniprogram-v0.9.0` | Native Community hub / Zaolang schedule and archive / Founder Case / points leaderboard and rules / industry role map, directory and editable public profile | 2026-08-30 | 2026-08-30T02:57:24+08:00 | V0.9.0-native-community-hub | observation as the third bottom tab; community-home application banner; locked community home; contact fields or review notes in the public directory; “contribution leaderboard” terminology; V0.8.3 sharing, account, payment or registration regressions | Mini Program data build + 73 behavioral/copy/privacy tests + 24-page package validation + WeChat DevTools compile and development upload |
 | `miniprogram-v0.8.3` | Native sharing for the financing, ecosystem and observation public column pages | 2026-08-20 | 2026-08-20T18:04:16+08:00 | V0.8.3-public-column-sharing | disabled friend forwarding or Moments sharing on public columns; private profile sharing; V0.8.2 registration-funnel regressions | Mini Program data build + public-column native-sharing contract + 19-page validation + development upload |
 | `miniprogram-v0.8.2` | Explicit registration prompt / phone authorization / server-confirmed registration / failure reason analytics | 2026-08-18 | 2026-08-18T17:28:34+08:00 | V0.8.2-registration-funnel | generic authentication counted as registration; client-asserted registration success; phone or identity values in analytics; loss of V0.8.1 community essay live sync | Mini Program data build + registration analytics copy gate + 19-page validation + Payment Service analytics regression + development upload |
 | `application-analytics-v1.2.0` | Production registration funnel and privacy-safe failure reason aggregation | 2026-08-18 | 2026-08-18T17:28:34+08:00 | APP-ANALYTICS-V1.2.0-registration-funnel | generic auth attempts in registration metrics; client-only success; raw error messages or identity fields in failure analytics | Payment Service analytics regression + dashboard JavaScript syntax + authenticated production API smoke |

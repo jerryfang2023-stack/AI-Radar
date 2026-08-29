@@ -10,6 +10,7 @@ const TASK_KEY = "guanlan_daily_tasks_v1";
 const BENEFIT_KEY = "guanlan_redeemed_benefits_v1";
 const MEMBERSHIP_KEY = "guanlan_membership_v1";
 const COMMUNITY_KEY = "guanlan_community_v1";
+const COMMUNITY_PROFILE_KEY = "guanlan_community_profile_v1";
 const INVITE_REWARD_SYNC_KEY = "guanlan_invite_reward_synced_v1";
 const BEHAVIOR_SYNC_KEY = "guanlan_behavior_sync_queue_v1";
 let behaviorSyncPromise = null;
@@ -139,6 +140,21 @@ function syncCommunity(community) {
   if (!community || !community.status) return getCommunity();
   wx.setStorageSync(COMMUNITY_KEY, community);
   return community;
+}
+
+function getCommunityProfile() {
+  const value = wx.getStorageSync(COMMUNITY_PROFILE_KEY) || {};
+  return {
+    name: "", avatar: "", city: "", company: "", role: "", industry: "",
+    ai: "", project: "", ability: "", need: "", ...value,
+  };
+}
+
+function saveCommunityProfile(input = {}) {
+  const current = getCommunityProfile();
+  const next = { ...current, ...input };
+  wx.setStorageSync(COMMUNITY_PROFILE_KEY, next);
+  return next;
 }
 
 function syncInviteRewards(totalPoints) {
@@ -317,6 +333,8 @@ module.exports = {
   syncWallet,
   getCommunity,
   syncCommunity,
+  getCommunityProfile,
+  saveCommunityProfile,
   getMembership,
   syncMembership,
   syncInviteRewards,

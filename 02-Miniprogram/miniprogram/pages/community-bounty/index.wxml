@@ -1,0 +1,20 @@
+<view class="page-shell">
+  <app-header title="悬赏令" show-back fallback-url="/pages/community/index" />
+  <view class="bounty-page">
+    <block wx:if="{{mode === 'list'}}">
+      <view class="hero"><text>FOUNDER CASE · 悬赏令</text><text>把真实问题，交给真正懂它的人</text><view><span><strong>2</strong><small>进行中</small></span><span><strong>10—30</strong><small>积分悬赏</small></span><span><strong>72h</strong><small>默认周期</small></span></view></view>
+      <button class="create" bindtap="createCase"><view><small>FOUNDER</small><strong>发起一个悬赏令</strong></view><text>＋</text></button>
+      <view class="filters"><button wx:for="{{filters}}" wx:key="*this" class="{{activeFilter === item ? 'active' : ''}}" data-value="{{item}}" bindtap="switchFilter">{{item}}</button></view>
+      <button wx:for="{{bounties}}" wx:key="id" class="case-card" data-id="{{item.id}}" bindtap="openCase">
+        <view><text>{{item.category}} · {{item.mode}}</text><text>{{item.points}} 积分</text></view><text class="question">{{item.question}}</text><text>{{item.founder}} · {{item.role}}</text><view class="footer"><text>{{item.answers}} 个回答 · {{item.participants}} 位参与者</text><text>{{item.time}}</text></view>
+      </button>
+    </block>
+    <block wx:else>
+      <view class="detail-hero"><view><text>{{item.category}} · {{item.mode}}</text><text>{{item.points}} 积分</text></view><text class="detail-question">{{item.question}}</text><text>{{item.summary}}</text><view class="founder"><text>{{item.founderInitial}}</text><view><strong>{{item.founder}}</strong><small>{{item.role}}</small></view></view></view>
+      <view class="progress"><view class="done"><i></i><text>问题发布</text></view><view class="done"><i></i><text>成员作答</text></view><view><i></i><text>Founder 结案</text></view></view>
+      <view class="detail-card"><text class="kicker">DECISION CONTEXT</text><text class="title">Founder 想解决什么</text><text class="copy">{{item.summary}}</text><view class="questions"><text>01 · 哪些需求已经足够高频，可以进入产品化？</text><text>02 · 项目收入和产品投入应该如何分配？</text><text>03 · 哪些客户验证指标可以作为决策依据？</text></view></view>
+      <view class="detail-card"><text class="kicker">MY ANSWER</text><text class="title">提交结构化回答</text><textarea maxlength="2000" value="{{answer}}" bindinput="inputAnswer" placeholder="给出你的判断、依据与可执行建议"></textarea><button class="primary-button" bindtap="submitAnswer">提交我的回答</button></view>
+      <button class="cocreate" disabled="{{participating}}" bindtap="joinCocreate">{{participating ? '已登记参加社群共创' : '参加社群共创'}}</button>
+    </block>
+  </view>
+</view>

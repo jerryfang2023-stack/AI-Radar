@@ -1,5 +1,5 @@
 const { fetchMembership, submitCommunityApplication } = require("../../utils/payment.js");
-const { getCommunity, syncCommunity, syncWallet, syncMembership } = require("../../utils/member.js");
+const { getCommunity, syncCommunity, syncWallet, syncMembership, getCommunityProfile, saveCommunityProfile } = require("../../utils/member.js");
 
 const EMPTY_FORM = {
   name: "", phone: "", wechat: "", city: "", role: "Founder / 创业者", industry: "",
@@ -13,7 +13,21 @@ Page({
     submitting: false,
   },
   onShow() {
-    this.setData({ community: getCommunity() });
+    const publicProfile = getCommunityProfile();
+    this.setData({
+      community: getCommunity(),
+      form: {
+        ...this.data.form,
+        name: publicProfile.name || this.data.form.name,
+        city: publicProfile.city || this.data.form.city,
+        role: publicProfile.role || this.data.form.role,
+        industry: publicProfile.industry || this.data.form.industry,
+        skills: publicProfile.ability || this.data.form.skills,
+        project: publicProfile.project || this.data.form.project,
+        needs: publicProfile.need || this.data.form.needs,
+        direction: publicProfile.ai || this.data.form.direction,
+      },
+    });
     this.refreshStatus();
   },
   async refreshStatus() {
@@ -42,6 +56,11 @@ Page({
     wx.showLoading({ title: "正在提交", mask: true });
     try {
       const result = await submitCommunityApplication(form);
+      saveCommunityProfile({
+        name: form.name, avatar: form.name.slice(0, 1), city: form.city, role: form.role,
+        industry: form.industry, ai: form.direction, project: form.project,
+        ability: form.skills, need: form.needs,
+      });
       const community = syncCommunity(result.community);
       this.setData({ community });
       wx.hideLoading();

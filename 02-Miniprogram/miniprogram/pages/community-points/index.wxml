@@ -1,0 +1,22 @@
+<view class="page-shell">
+  <app-header title="积分榜" show-back fallback-url="/pages/community/index" right-label="{{mode === 'list' ? '积分规则' : ''}}" bind:righttap="openRules" />
+  <view class="points-page">
+    <block wx:if="{{mode === 'list'}}">
+      <view class="leaderboard-hero"><text>COMMUNITY LEADERBOARD</text><text>积分榜</text><view><span><strong>54</strong><small>入榜成员</small></span><span><strong>15</strong><small>已完成场次</small></span><span><strong>08.28</strong><small>最近更新</small></span></view></view>
+      <button class="my-rank" bindtap="openDetail"><view><small>我的当前排名</small><strong>04 · 老方</strong></view><view><strong>{{myPoints}}</strong><small>查看积分详情 ›</small></view></button>
+      <view class="section-head"><view><text>ALL MEMBERS</text><text>全部成员</text></view><text>按积分从高到低</text></view>
+      <view class="rank-list"><view wx:for="{{leaderboard}}" wx:key="rank" class="rank-row {{item.rank === 4 ? 'me' : ''}}"><text class="rank">{{item.rank < 10 ? '0' + item.rank : item.rank}}</text><text class="avatar">{{item.avatar}}</text><view><strong>{{item.name}}</strong><small>{{item.note}}</small></view><view><strong>{{item.points}}</strong><small>积分</small></view></view></view>
+    </block>
+    <block wx:elif="{{mode === 'detail'}}">
+      <view class="detail-hero"><text>MY POINTS</text><text>{{myPoints}}</text><text>当前积分</text><view><span><strong>04</strong><small>当前排名</small></span><span><strong>+10</strong><small>最近积分</small></span></view></view>
+      <text class="detail-title">积分记录</text><view class="ledger"><view wx:for="{{ledger}}" wx:key="date"><text>{{item.date}}</text><text>{{item.title}}</text><strong>{{item.points}}</strong></view></view>
+    </block>
+    <block wx:else>
+      <view class="rules-hero"><text>COMMUNITY POINTS</text><text>每一次真实互动，都有记录</text></view>
+      <view class="rule-heading"><text>INTERACTIVE POINTS</text><text>互动积分</text></view>
+      <view class="rule-list"><view wx:for="{{pointRules.interactive}}" wx:key="title"><text>{{item.points}}<small>积分</small></text><view><strong>{{item.title}}</strong><small>{{item.copy}}</small></view></view></view>
+      <view class="rule-heading"><text>SPECIAL POINTS</text><text>专项积分</text></view>
+      <view class="rule-list"><view wx:for="{{pointRules.special}}" wx:key="title"><text>{{item.points}}<small>积分</small></text><view><strong>{{item.title}}</strong><small>{{item.copy}}</small></view></view></view>
+    </block>
+  </view>
+</view>
