@@ -392,6 +392,7 @@ const ORGANIZATION_ALIASES = [
   ["Intel", ["Intel"]],
   ["InstaLILY", ["InstaLILY", "Instalily AI", "Instalily"]],
   ["Innovation Labs", ["Innovation Labs"]],
+  ["Intercom", ["Intercom"]],
   ["JD Cloud", ["京东云", "JD Cloud"]],
   ["Kingsoft Office", ["金山办公"]],
   ["KT", ["Korea Telecom", "KT"]],
@@ -413,6 +414,8 @@ const ORGANIZATION_ALIASES = [
   ["NVIDIA", ["NVIDIA", "Nvidia", "英伟达"]],
   ["Noetra", ["Noetra"]],
   ["OpenAI", ["OpenAI"]],
+  ["OpenAtom Foundation", ["OpenAtom Foundation", "开放原子开源基金会", "开放原子"]],
+  ["openKylin", ["openKylin", "开放麒麟"], "product_candidate"],
   ["OpenRouter", ["OpenRouter"]],
   ["OPPO", ["OPPO"]],
   ["Orthogonal", ["Orthogonal"]],
@@ -452,13 +455,18 @@ const ORGANIZATION_ALIASES = [
   ["Valarian", ["Valarian"]],
   ["Volcano Engine", ["Volcano Engine", "火山引擎"]],
   ["Whatnot", ["Whatnot"]],
+  ["Wharton School", ["The Wharton School", "Wharton School"]],
   ["Work Louder", ["Work Louder"]],
   ["Xiaomi", ["Xiaomi", "小米"]],
   ["xAI", ["SpaceXAI", "xAI"]],
   ["Xiaomi", ["Xiaomi", "小米"]],
   ["ZTE", ["ZTE", "中兴"]]
-].map(([canonicalName, aliases]) => ({ canonicalName, aliases }))
+].map(([canonicalName, aliases, entityType = "organization_candidate"]) => ({ canonicalName, aliases, entityType }))
   .concat(chinaMarketOrganizationAliases(chinaMarketConfig.entityAliases));
+
+const SOURCE_HOST_ORGANIZATIONS = [
+  { hostname: "intercom.com", canonicalName: "Intercom", mentionText: "intercom" },
+];
 
 function arg(name, fallback = "") {
   const prefix = `--${name}=`;
@@ -799,7 +807,50 @@ function claimSubjectOrganizationMentions(eventClaims, title, claimEvidence) {
   return candidates;
 }
 
-function organizationMentions(title, parsed, eventType, claimEvidence = "", eventClaims = []) {
+function sourceHostOrganizationMentions(sourceUrl = "") {
+  let hostname = "";
+  try {
+    hostname = new URL(sourceUrl).hostname.toLocaleLowerCase().replace(/^www\./u, "");
+  } catch {
+    return [];
+  }
+  return SOURCE_HOST_ORGANIZATIONS.flatMap((entry) => {
+    if (hostname !== entry.hostname && !hostname.endsWith(`.${entry.hostname}`)) return [];
+    const start = Math.max(0, sourceUrl.toLocaleLowerCase().indexOf(entry.mentionText.toLocaleLowerCase()));
+    return [{
+      canonicalName: entry.canonicalName,
+      entityType: entry.entityType || "organization_candidate",
+      mentionText: sourceUrl.slice(start, start + entry.mentionText.length) || entry.mentionText,
+      start,
+      source: "source_url",
+      verified: false,
+    }];
+  });
+}
+
+function researchAttributionMentions(documentEvidence = "") {
+  const hits = [];
+  for (const entry of ORGANIZATION_ALIASES) {
+    for (const alias of entry.aliases) {
+      const index = exactAliasIndex(documentEvidence, alias);
+      if (index < 0) continue;
+      const prefix = documentEvidence.slice(Math.max(0, index - 80), index);
+      if (!/(?:researchers?\s+at(?:\s+the)?|study\s+(?:from|by)|research\s+(?:from|by))\s*$/iu.test(prefix)) continue;
+      hits.push({
+        canonicalName: entry.canonicalName,
+        entityType: entry.entityType || "organization_candidate",
+        mentionText: documentEvidence.slice(index, index + alias.length),
+        start: index,
+        source: "document_evidence",
+        verified: false,
+      });
+      break;
+    }
+  }
+  return hits;
+}
+
+function organizationMentions(title, parsed, eventType, claimEvidence = "", eventClaims = [], context = {}) {
   const hits = [];
   for (const entry of ORGANIZATION_ALIASES) {
     const subjectKey = normalizeSpace(parsed.subject).toLocaleLowerCase();
@@ -812,6 +863,7 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
       const index = source === "title_original" ? titleIndex : claimIndex;
       return [{
         canonicalName: entry.canonicalName,
+        entityType: entry.entityType || "organization_candidate",
         mentionText: sourceText.slice(index, index + alias.length),
         start: index,
         source,
@@ -842,6 +894,10 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
         verified: false,
       });
     }
+  }
+  hits.push(...sourceHostOrganizationMentions(context.sourceUrl));
+  if (eventType === "research_result") {
+    hits.push(...researchAttributionMentions(context.documentEvidence));
   }
   if (!hits.length) hits.push(...claimSubjectOrganizationMentions(eventClaims, title, claimEvidence));
   if (!hits.length && (eventClaims || []).some((claim) => cleanOrganizationCandidate(claim.subject))) {
@@ -1781,7 +1837,8 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         parsed,
         rule.eventType,
         eventClaimRows.map((claim) => claim.source_quote).join("\n"),
-        eventClaimRows
+        eventClaimRows,
+        { sourceUrl: artifact.source_url, documentEvidence: bodyClean }
       ).map((entityMatch) => {
         const reviewedName = reviewedEntityAliases.get(entityMatch.canonicalName.toLocaleLowerCase());
         return reviewedName ? { ...entityMatch, canonicalName: reviewedName, verified: true } : entityMatch;
@@ -1825,7 +1882,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
           entities.set(entityId, {
             entity_id: entityId,
             canonical_name: name,
-            entity_type: "organization_candidate",
+            entity_type: entityMatch.entityType || "organization_candidate",
             aliases: entityMatch.mentionText !== name ? [entityMatch.mentionText] : [],
             verification_status: entityMatch.verified ? "verified" : "candidate"
           });
@@ -1963,6 +2020,11 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         source_ref: event.source_refs[0]
       });
     }
+    event.missing_fields = [...new Set((event.missing_fields || []).filter((field) => {
+      if (field === "entities") return !event.entities?.length;
+      if (field === "display_title_zh") return !isCompletePublicEventTitle(event.display_title_zh);
+      return true;
+    }))];
   }
   const canonicalEvents = clustered.canonicalEvents;
   const acceptedEventIds = new Set(canonicalEvents.map((event) => event.event_id));
@@ -2101,11 +2163,18 @@ export function repairExistingEntityLinks(bundle, generatedAt = new Date().toISO
       action: event.action || event.event_type,
       object: event.object || ""
     };
-    const matches = organizationMentions(event.display_title_zh || "", parsed, event.event_type, claimEvidence, claims);
+    const rawDocument = (event.source_refs || []).map((id) => rawBySource.get(id)).find(Boolean);
+    const matches = organizationMentions(
+      event.display_title_zh || "",
+      parsed,
+      event.event_type,
+      claimEvidence,
+      claims,
+      { sourceUrl: rawDocument?.source_url || rawDocument?.canonical_url || "" },
+    );
     if (!matches.length) continue;
 
     const entityIds = [];
-    const rawDocument = (event.source_refs || []).map((id) => rawBySource.get(id)).find(Boolean);
     for (const match of matches) {
       const entityId = `EN-${hash(match.canonicalName.toLowerCase())}`;
       entityIds.push(entityId);
@@ -2114,7 +2183,7 @@ export function repairExistingEntityLinks(bundle, generatedAt = new Date().toISO
         const entity = {
           entity_id: entityId,
           canonical_name: match.canonicalName,
-          entity_type: "organization_candidate",
+          entity_type: match.entityType || "organization_candidate",
           aliases: match.mentionText !== match.canonicalName ? [match.mentionText] : [],
           verification_status: match.verified ? "verified" : "candidate"
         };

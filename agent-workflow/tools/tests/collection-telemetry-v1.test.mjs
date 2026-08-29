@@ -32,6 +32,13 @@ test("V4 telemetry passes without V3 desk, graph, or Signal Cards", () => {
     failures: [],
     warnings: [],
   });
+  fs.writeFileSync(path.join(root, `agent-workflow/reports/${date}-guanlan-daily-monitor-log.md`), "- unrecovered_failed_sources_count: 10\n", "utf8");
+  fs.writeFileSync(path.join(root, `agent-workflow/reports/${date}-guanlan-monitor-quality-gate.md`), [
+    "- source_provider_recovery_status: recovered_by_fallback",
+    "- recovered_failed_sources_count: 18",
+    "- unrecovered_failed_sources_count: 0",
+    "",
+  ].join("\n"), "utf8");
 
   const result = buildCollectionTelemetry({
     root,
@@ -43,6 +50,9 @@ test("V4 telemetry passes without V3 desk, graph, or Signal Cards", () => {
   assert.equal(result.v4_gate.status, "passed");
   assert.equal(result.fact_build.canonical_events, 0);
   assert.equal(result.stages.find((item) => item.id === "fact_build").status, "passed");
+  assert.equal(result.stages.find((item) => item.id === "collection").status, "passed");
+  assert.equal(result.collection.capture_failed, 0);
+  assert.equal(result.collection.recovered_source_failures, 18);
   assert.equal(result.deprecated_compatibility.status, "retired_archive");
   assert.equal(result.deprecated_compatibility.production_write, "disabled");
   assert.equal(result.deprecated_compatibility.active_consumers, 0);
@@ -91,6 +101,8 @@ test("application projection is not passed while any projection outcome is unkno
   assert.equal(result.application_projection.opportunity_map, "unknown");
   assert.equal(result.application_projection.fde_hardware_sync, "unknown");
   assert.equal(result.stages.find((item) => item.id === "application_projection").status, "partial");
+  assert.equal(result.publication.authoritative, false);
+  assert.equal(result.publication.finalization, "github_pages_artifact");
 });
 
 test("daily workflow keeps OPS telemetry independent and does not write a local Vault in GitHub Actions", () => {
@@ -231,6 +243,8 @@ test("Pages artifact finalization marks publication passed with deployment evide
   const pipeline = JSON.parse(fs.readFileSync(path.join(dataDir, "pipeline-dashboard.json"), "utf8"));
   const ops = JSON.parse(fs.readFileSync(path.join(dataDir, "ops-console.json"), "utf8"));
   assert.equal(telemetry.publication.status, "passed");
+  assert.equal(telemetry.publication.phase, "artifact_ready_for_deployment");
+  assert.equal(telemetry.publication.authoritative, false);
   assert.equal(telemetry.stages[0].status, "passed");
   assert.deepEqual(telemetry.deprecated_compatibility, {
     status: "retired_archive",

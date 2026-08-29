@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "generatedAt": "2026-08-29T05:31:57.972Z",
     "latestDataDate": "2026-08-29",
     "currentDate": "2026-08-29",
-    "eventCount": 2477,
+    "eventCount": 2478,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -30,7 +30,7 @@
       "EV-26d2874c6ce028d6",
       "EV-3d9aa640411471ea",
       "EV-fd21441fb6e143c3",
-      "EV-1837cd322ed6aa11",
+      "EV-a9630a87712e5899",
       "EV-293d6feac5b8efab",
       "EV-34fd528787e47757",
       "EV-eedd370fd9cfdbb2",
@@ -90,6 +90,7 @@
       "EN-b81c8201acfc7639",
       "EN-87c730bc4f32459e",
       "EN-7df09a7717ef2feb",
+      "EN-0d47d3f0783749a8",
       "EN-fe074a5bc4bb5163",
       "EN-047364b9be67f665",
       "EN-6f7ac1823da81d2e",
@@ -2568,7 +2569,7 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-1837cd322ed6aa11",
+      "id": "EV-a9630a87712e5899",
       "dataDate": "2026-08-29",
       "date": "2026-08-29",
       "updatedDate": "2026-08-29",
@@ -2585,9 +2586,7 @@
       "object": "，系统内核升级至 Linux 7.0",
       "metrics": [],
       "locations": [],
-      "missingFields": [
-        "entities"
-      ],
+      "missingFields": [],
       "conflicts": [],
       "tags": [
         {
@@ -2595,7 +2594,9 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [],
+          "entityIds": [
+            "EN-0d47d3f0783749a8"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -2604,7 +2605,9 @@
           "dimensionName": "技术",
           "id": "multimodal",
           "name": "多模态",
-          "entityIds": [],
+          "entityIds": [
+            "EN-0d47d3f0783749a8"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -2625,7 +2628,9 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [],
+          "entityIds": [
+            "EN-0d47d3f0783749a8"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -2634,7 +2639,9 @@
           "dimensionName": "技术",
           "id": "multimodal",
           "name": "多模态",
-          "entityIds": [],
+          "entityIds": [
+            "EN-0d47d3f0783749a8"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -2645,7 +2652,9 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [],
+          "entityIds": [
+            "EN-0d47d3f0783749a8"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -2654,15 +2663,31 @@
           "dimensionName": "技术",
           "id": "multimodal",
           "name": "多模态",
-          "entityIds": [],
+          "entityIds": [
+            "EN-0d47d3f0783749a8"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
       ],
-      "entityIds": [],
-      "entityNames": [],
-      "productName": "",
-      "products": [],
+      "entityIds": [
+        "EN-0d47d3f0783749a8",
+        "EN-39fc00da33235889"
+      ],
+      "entityNames": [
+        "openKylin",
+        "OpenAtom Foundation"
+      ],
+      "productName": "openKylin",
+      "products": [
+        {
+          "name": "openKylin",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAtom Foundation"
+          ]
+        }
+      ],
       "sourceUrl": "https://ithome.com/0/995/859.htm",
       "publisher": "IT之家（RSS）"
     },
@@ -10573,6 +10598,30 @@
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-0d47d3f0783749a8",
+      "name": "openKylin",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a9630a87712e5899"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-39fc00da33235889"
+      ],
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-fe074a5bc4bb5163",

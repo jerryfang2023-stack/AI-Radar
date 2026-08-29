@@ -7,7 +7,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T03:40:38.294Z",
+    "generatedAt": "2026-08-29T05:32:06.730Z",
     "latestDataDate": "2026-08-29",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -37,9 +37,9 @@
       "hardware": "AI 硬件"
     },
     "sourceCounts": {
-      "events": 2384,
-      "entities": 636,
-      "relationships": 355
+      "events": 2385,
+      "entities": 639,
+      "relationships": 356
     }
   },
   "events": {
@@ -62749,52 +62749,6 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-0e68936238460b63"
     },
-    "EV-1837cd322ed6aa11": {
-      "id": "EV-1837cd322ed6aa11",
-      "dataDate": "2026-08-29",
-      "occurrenceDate": "2026-08-29",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "publicationStatus": "verified",
-      "category": "product",
-      "title": "开放麒麟 openKylin 3.0 正式发布，系统内核升级至 Linux 7.0",
-      "entityIds": [],
-      "entityNames": [],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "claimIds": [
-        "CL-b3b44b6ab8b50031",
-        "CL-baa2a7e9fcf8e5e9",
-        "CL-79b4f8bec1b90544",
-        "CL-5cb38486f45bca4a"
-      ],
-      "sourceIds": [
-        "SA-a014757a056b46b0"
-      ],
-      "sourceUrl": "https://ithome.com/0/995/859.htm",
-      "publisher": "IT之家（RSS）",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-1837cd322ed6aa11"
-    },
     "EV-78f8f4914ecf1ed1": {
       "id": "EV-78f8f4914ecf1ed1",
       "dataDate": "2026-08-29",
@@ -62839,6 +62793,70 @@
       "publisher": "The Decoder AI News",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-78f8f4914ecf1ed1"
+    },
+    "EV-a9630a87712e5899": {
+      "id": "EV-a9630a87712e5899",
+      "dataDate": "2026-08-29",
+      "occurrenceDate": "2026-08-29",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "开放麒麟 openKylin 3.0 正式发布，系统内核升级至 Linux 7.0",
+      "entityIds": [
+        "EN-0d47d3f0783749a8",
+        "EN-39fc00da33235889"
+      ],
+      "entityNames": [
+        "openKylin",
+        "OpenAtom Foundation"
+      ],
+      "productNames": [
+        {
+          "name": "openKylin",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAtom Foundation"
+          ]
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0d47d3f0783749a8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-0d47d3f0783749a8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-b3b44b6ab8b50031",
+        "CL-baa2a7e9fcf8e5e9",
+        "CL-79b4f8bec1b90544",
+        "CL-5cb38486f45bca4a"
+      ],
+      "sourceIds": [
+        "SA-a014757a056b46b0"
+      ],
+      "sourceUrl": "https://ithome.com/0/995/859.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-a9630a87712e5899"
     },
     "EV-c877ce26c9f8997f": {
       "id": "EV-c877ce26c9f8997f",
@@ -123835,8 +123853,8 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-00834dd71037c7cc"
     },
-    "EV-5099dd06358bef47": {
-      "id": "EV-5099dd06358bef47",
+    "EV-68c36faec7bb97a8": {
+      "id": "EV-68c36faec7bb97a8",
       "dataDate": "2026-08-29",
       "occurrenceDate": "2026-08-29",
       "eventType": "research_result",
@@ -123844,8 +123862,12 @@
       "publicationStatus": "verified",
       "category": "other",
       "title": "2026年客户服务转型报告",
-      "entityIds": [],
-      "entityNames": [],
+      "entityIds": [
+        "EN-c47b618e17c75f06"
+      ],
+      "entityNames": [
+        "Intercom"
+      ],
       "productNames": [],
       "classifications": [
         {
@@ -123853,7 +123875,9 @@
           "dimensionName": "应用场景",
           "id": "customer_support",
           "name": "客户支持",
-          "entityIds": [],
+          "entityIds": [
+            "EN-c47b618e17c75f06"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -123869,7 +123893,7 @@
       "sourceUrl": "https://intercom.com/customer-transformation-report",
       "publisher": "intercom.com",
       "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-5099dd06358bef47"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-68c36faec7bb97a8"
     },
     "EV-1a2a8971c887e4db": {
       "id": "EV-1a2a8971c887e4db",
@@ -123898,8 +123922,8 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-1a2a8971c887e4db"
     },
-    "EV-234c2011ecf08ffd": {
-      "id": "EV-234c2011ecf08ffd",
+    "EV-74297a82df0e96f9": {
+      "id": "EV-74297a82df0e96f9",
       "dataDate": "2026-08-29",
       "occurrenceDate": "2026-08-28",
       "eventType": "research_result",
@@ -123907,8 +123931,12 @@
       "publicationStatus": "verified",
       "category": "other",
       "title": "研究显示：AI 智能体尚不能代你购物",
-      "entityIds": [],
-      "entityNames": [],
+      "entityIds": [
+        "EN-89090f3a867720c9"
+      ],
+      "entityNames": [
+        "Wharton School"
+      ],
       "productNames": [],
       "classifications": [],
       "claimIds": [
@@ -123923,7 +123951,7 @@
       "sourceUrl": "https://the-decoder.com/ai-shopping-agents-arent-ready-to-buy-on-your-behalf-study-finds",
       "publisher": "The Decoder AI News",
       "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-234c2011ecf08ffd"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-74297a82df0e96f9"
     },
     "EV-8ea50a47e03ae8e1": {
       "id": "EV-8ea50a47e03ae8e1",
@@ -124007,6 +124035,33 @@
       "publisher": "The Decoder AI News",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-c66e27ba13c9ed48"
+    },
+    "EV-234c2011ecf08ffd": {
+      "id": "EV-234c2011ecf08ffd",
+      "dataDate": "2026-08-28",
+      "occurrenceDate": "2026-08-28",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "研究显示：AI 智能体尚不能代你购物",
+      "entityIds": [],
+      "entityNames": [],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-defef39792f75896",
+        "CL-7f70ba674f2877ec",
+        "CL-e14c76bf44ed0660",
+        "CL-bbf4ef88f58bbf28"
+      ],
+      "sourceIds": [
+        "SA-3962f38b5bbe7f59"
+      ],
+      "sourceUrl": "https://the-decoder.com/ai-shopping-agents-arent-ready-to-buy-on-your-behalf-study-finds",
+      "publisher": "The Decoder AI News",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-234c2011ecf08ffd"
     },
     "EV-95875c6cc15e6b29": {
       "id": "EV-95875c6cc15e6b29",
@@ -139028,6 +139083,14 @@
       "typeLabel": "公司与机构",
       "detailUrl": "data-center.html?view=index&detail=entity&id=EN-7d3194f79e645c42"
     },
+    "EN-39fc00da33235889": {
+      "id": "EN-39fc00da33235889",
+      "name": "OpenAtom Foundation",
+      "entityType": "organization",
+      "sourceEntityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "detailUrl": "data-center.html?view=index&detail=entity&id=EN-39fc00da33235889"
+    },
     "EN-ca95aeb01df069e5": {
       "id": "EN-ca95aeb01df069e5",
       "name": "OpenBMB",
@@ -139051,6 +139114,14 @@
       "sourceEntityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
       "detailUrl": "data-center.html?view=index&detail=entity&id=EN-b644c0a9d493976a"
+    },
+    "EN-0d47d3f0783749a8": {
+      "id": "EN-0d47d3f0783749a8",
+      "name": "openKylin",
+      "entityType": "product",
+      "sourceEntityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "detailUrl": "data-center.html?view=index&detail=entity&id=EN-0d47d3f0783749a8"
     },
     "EN-7f871cbf905f6e0c": {
       "id": "EN-7f871cbf905f6e0c",
@@ -140364,6 +140435,14 @@
       "typeLabel": "产品、模型与服务",
       "detailUrl": "data-center.html?view=index&detail=entity&id=EN-62a4b84fb5a8f6b0"
     },
+    "EN-89090f3a867720c9": {
+      "id": "EN-89090f3a867720c9",
+      "name": "Wharton School",
+      "entityType": "organization",
+      "sourceEntityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "detailUrl": "data-center.html?view=index&detail=entity&id=EN-89090f3a867720c9"
+    },
     "EN-fd6d671e8516fc52": {
       "id": "EN-fd6d671e8516fc52",
       "name": "Whatnot",
@@ -140642,7 +140721,6 @@
             "EV-03992c9b7f8fef10",
             "EV-074a78d3cfaf633b",
             "EV-0e68936238460b63",
-            "EV-1837cd322ed6aa11",
             "EV-293d6feac5b8efab",
             "EV-40fd274ae86434b8",
             "EV-4bbb0a030948b8f4",
@@ -140656,6 +140734,7 @@
             "EV-81994f7703698729",
             "EV-8ea50a47e03ae8e1",
             "EV-97910e898975c6ca",
+            "EV-a9630a87712e5899",
             "EV-c877ce26c9f8997f",
             "EV-d2247eeac1478994",
             "EV-db87eda4a39de22a",
@@ -140700,8 +140779,8 @@
             "EV-e5a4171747c1e9c9",
             "EV-eedd370fd9cfdbb2"
           ],
-          "otherCount": 6,
-          "totalAccepted": 30,
+          "otherCount": 7,
+          "totalAccepted": 31,
           "coverage": "数据中心于 2026-08-28 接受的事件；事件发生日期可能不同。"
         },
         "2026-08-27": {
@@ -144252,9 +144331,9 @@
             "product": 86,
             "hardware": 19
           },
-          "totalAccepted": 166,
+          "totalAccepted": 167,
           "trackedCount": 143,
-          "otherCount": 23,
+          "otherCount": 24,
           "activeEntities": [
             {
               "entityId": "EN-7d3194f79e645c42",
@@ -144712,6 +144791,38 @@
               },
               "dataDate": "2026-08-29",
               "eventId": "EV-601240034cf86d7f"
+            },
+            {
+              "entityId": "EN-0d47d3f0783749a8",
+              "classification": {
+                "dimensionId": "technology",
+                "dimensionName": "技术",
+                "id": "agentic_execution",
+                "name": "智能体",
+                "entityIds": [
+                  "EN-0d47d3f0783749a8"
+                ],
+                "provenance": "claim_assertion",
+                "assertionId": ""
+              },
+              "dataDate": "2026-08-29",
+              "eventId": "EV-a9630a87712e5899"
+            },
+            {
+              "entityId": "EN-0d47d3f0783749a8",
+              "classification": {
+                "dimensionId": "technology",
+                "dimensionName": "技术",
+                "id": "multimodal",
+                "name": "多模态",
+                "entityIds": [
+                  "EN-0d47d3f0783749a8"
+                ],
+                "provenance": "claim_assertion",
+                "assertionId": ""
+              },
+              "dataDate": "2026-08-29",
+              "eventId": "EV-a9630a87712e5899"
             },
             {
               "entityId": "EN-c70eca6b0f88f44d",
@@ -165831,9 +165942,9 @@
             "product": -135,
             "hardware": -13
           },
-          "totalAccepted": 719,
+          "totalAccepted": 720,
           "trackedCount": 609,
-          "otherCount": 110,
+          "otherCount": 111,
           "newCompanies": [
             {
               "entityId": "EN-39ba5f9dcab4e98a",
@@ -166056,9 +166167,22 @@
               "eventIds": [
                 "EV-30be225da68f2f70"
               ]
+            },
+            {
+              "entityId": "EN-39fc00da33235889",
+              "eventIds": [
+                "EV-a9630a87712e5899"
+              ]
             }
           ],
-          "newProducts": [],
+          "newProducts": [
+            {
+              "entityId": "EN-0d47d3f0783749a8",
+              "eventIds": [
+                "EV-a9630a87712e5899"
+              ]
+            }
+          ],
           "financing": {
             "eventIds": [
               "EV-40fd274ae86434b8",
@@ -166899,8 +167023,8 @@
                 "id": "agentic_execution",
                 "name": "智能体",
                 "eventIds": [
-                  "EV-1837cd322ed6aa11",
                   "EV-6944ba9fc55b4f41",
+                  "EV-a9630a87712e5899",
                   "EV-c877ce26c9f8997f",
                   "EV-db87eda4a39de22a",
                   "EV-25410adc93579034",
@@ -167008,8 +167132,8 @@
                 "id": "multimodal",
                 "name": "多模态",
                 "eventIds": [
-                  "EV-1837cd322ed6aa11",
                   "EV-293d6feac5b8efab",
+                  "EV-a9630a87712e5899",
                   "EV-34fd528787e47757",
                   "EV-eedd370fd9cfdbb2",
                   "EV-a0d58fe1616d1480",

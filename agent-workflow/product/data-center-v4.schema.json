@@ -159,7 +159,7 @@
         "entity_id": { "type": "string", "minLength": 1 },
         "raw_id": { "type": "string", "minLength": 1 },
         "text": { "type": "string", "minLength": 1 },
-        "source": { "enum": ["title_original", "claim_evidence"] },
+        "source": { "enum": ["title_original", "claim_evidence", "document_evidence", "source_url"] },
         "start": { "type": "integer", "minimum": 0 },
         "end": { "type": "integer", "minimum": 1 },
         "verification_status": { "enum": ["candidate", "verified", "merged", "quarantined"] }

@@ -3,7 +3,7 @@
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
     "data_date": "2026-08-29",
-    "generated_at": "2026-08-29T03:37:10.666Z",
+    "generated_at": "2026-08-29T05:32:32.070Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -11,7 +11,8 @@
   "collection": {
     "discovered": 290,
     "capture_succeeded": 257,
-    "capture_failed": 10,
+    "capture_failed": 0,
+    "recovered_source_failures": 18,
     "raw_documents": 257
   },
   "fact_build": {
@@ -21,7 +22,7 @@
     "rejected": 0,
     "pending_claims": 4,
     "canonical_events": 30,
-    "entities": 42,
+    "entities": 46,
     "relationships": 73,
     "conflicts": 0,
     "qa_queue": 229,
@@ -47,22 +48,27 @@
     "fde_hardware_sync": "passed"
   },
   "publication": {
-    "status": "waiting"
+    "status": "waiting",
+    "phase": "pre_deploy_snapshot",
+    "authoritative": false,
+    "finalization": "github_pages_artifact"
   },
   "stages": [
     {
       "id": "collection",
       "label": "采集",
-      "status": "partial",
+      "status": "passed",
       "counts": {
         "discovered": 290,
         "capture_succeeded": 257,
-        "capture_failed": 10,
+        "capture_failed": 0,
+        "recovered_source_failures": 18,
         "raw_documents": 257
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/manifest.json",
-        "agent-workflow/reports/2026-08-29-guanlan-daily-monitor-log.md"
+        "agent-workflow/reports/2026-08-29-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-08-29-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -76,7 +82,7 @@
         "rejected": 0,
         "pending_claims": 4,
         "canonical_events": 30,
-        "entities": 42,
+        "entities": 46,
         "relationships": 73,
         "conflicts": 0,
         "qa_queue": 229
@@ -105,7 +111,9 @@
       "label": "发布",
       "status": "waiting",
       "counts": {
-        "v4_bundle_ready": true
+        "v4_bundle_ready": true,
+        "snapshot_phase": "pre_deploy_snapshot",
+        "authoritative": false
       },
       "evidence": [
         "agent-workflow/reports/2026-08-29-persistent-asset-manifest.json"

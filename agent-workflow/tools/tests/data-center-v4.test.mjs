@@ -1053,6 +1053,54 @@ test("entity extraction recovers claim subjects and described Chinese funding co
   ), []);
 });
 
+test("research publishers and attributed institutions produce auditable entity links", () => {
+  const intercomMatches = organizationMentions(
+    "2026年客户服务转型报告",
+    { subject: "82% of senior leaders", action: "research_result", object: "invested in AI" },
+    "research_result",
+    "82% of senior leaders say their teams invested in AI for customer service.",
+    [{ subject: "82% of senior leaders", source_quote: "82% of senior leaders say their teams invested in AI for customer service." }],
+    { sourceUrl: "https://www.intercom.com/customer-transformation-report" },
+  );
+  assert.ok(intercomMatches.some((item) => (
+    item.canonicalName === "Intercom"
+    && item.source === "source_url"
+    && item.verified === false
+  )));
+
+  const whartonMatches = organizationMentions(
+    "研究显示：AI 智能体尚不能代你购物",
+    { subject: "AI shopping agents", action: "study finds", object: "aren't ready to buy" },
+    "research_result",
+    "AI shopping agents aren't ready to buy on your behalf, study finds.",
+    [{ subject: "AI shopping agents", source_quote: "AI shopping agents aren't ready to buy on your behalf, study finds." }],
+    {
+      sourceUrl: "https://the-decoder.com/example",
+      documentEvidence: "Researchers at the Wharton School show how erratic AI shopping agents really are.",
+    },
+  );
+  assert.ok(whartonMatches.some((item) => (
+    item.canonicalName === "Wharton School"
+    && item.source === "document_evidence"
+    && item.verified === false
+  )));
+});
+
+test("openKylin releases link both the project and its foundation evidence", () => {
+  const quote = "据开放原子开源基金会，OpenAtom openKylin 3.0 版本正式发布。";
+  const matches = organizationMentions(
+    "开放麒麟 openKylin 3.0 正式发布，系统内核升级至 Linux 7.0",
+    { subject: "开放麒麟 openKylin 3.0", action: "发布", object: "Linux 7.0" },
+    "product_release",
+    quote,
+    [{ subject: "开放麒麟 openKylin 3.0", source_quote: quote }],
+  );
+  const names = new Set(matches.map((item) => item.canonicalName));
+  assert.ok(names.has("openKylin"));
+  assert.ok(names.has("OpenAtom Foundation"));
+  assert.equal(matches.find((item) => item.canonicalName === "openKylin")?.entityType, "product_candidate");
+});
+
 test("an earlier release verb preserves the organization when deployment determines the event type", () => {
   const bundle = buildBundle([
     entry(
@@ -2075,6 +2123,15 @@ test("daily workflow stages only V4-native outputs after the pre-commit gate suc
   }
   assert.doesNotMatch(workflow, /(?:no-)?trend-candidate-decision\.md|v3-data-observation-desk\.json|intelligence-graph-index\.json|01-Signal-Cards/iu);
   assert.match(workflow, /if: always\(\) && steps\.pre-commit-gate\.outcome == 'success'/iu);
+  assert.match(
+    workflow,
+    /Confirm site data freshness[\s\S]*set -euo pipefail[\s\S]*assert-data-center-projection-coverage\.mjs[\s\S]*--reports-dir="agent-workflow\/reports"/u,
+  );
+  const pagesWorkflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
+  assert.match(
+    pagesWorkflow,
+    /Assert factual catalog integrity[\s\S]*assert-data-center-projection-coverage\.mjs[\s\S]*--reports-dir="\$\{RUNNER_TEMP\}\/projection-coverage"/u,
+  );
 });
 
 test("daily workflow resumes downstream failures without repeating accepted collection", () => {

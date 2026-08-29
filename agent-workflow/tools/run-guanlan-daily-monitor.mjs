@@ -225,7 +225,20 @@ const poolMinTarget = numericConfig(monitorDiagnosticTargets.pool_count_target, 
 const routedPoolMinTarget = numericConfig(monitorDiagnosticTargets.routed_pool_count_target, numericConfig(monitorHardGates.routed_pool_count_min, 60));
 const corePoolMinTarget = numericConfig(monitorDiagnosticTargets.core_pool_target, numericConfig(monitorHardGates.core_pool_min, 30));
 const coreNonLargeVendorMinTarget = numericConfig(monitorDiagnosticTargets.core_non_large_vendor_target, numericConfig(monitorHardGates.core_non_large_vendor_min, 20));
-const coreLargeVendorMaxTarget = numericConfig(monitorDiagnosticTargets.core_large_vendor_max, numericConfig(monitorHardGates.core_large_vendor_max, 10));
+const coreLargeVendorMaxTarget = numericConfig(monitorDiagnosticTargets.core_large_vendor_count_target_max, numericConfig(monitorHardGates.core_large_vendor_max, 10));
+const coreLargeVendorRatioMaxTarget = numericConfig(monitorDiagnosticTargets.core_large_vendor_ratio_target_max, numericConfig(monitorHardGates.core_large_vendor_ratio_max, 0.35));
+const largeVendorIdentities = [
+  "Google", "Microsoft", "Anthropic", "OpenAI", "NVIDIA", "Oracle", "AWS", "Amazon", "Meta", "Apple", "IBM", "Salesforce", "DeepMind", "Claude", "Gemini", "Copilot", "ChatGPT", "GitHub", "Alibaba", "Tencent", "Huawei",
+  "谷歌", "微软", "英伟达", "亚马逊", "甲骨文", "阿里巴巴", "腾讯", "华为",
+];
+const largeVendorPattern = new RegExp(largeVendorIdentities.map((value) => {
+  const escaped = value.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  return /[\p{Script=Han}]/u.test(value) ? escaped : `\\b${escaped}\\b`;
+}).join("|"), "iu");
+const independentVendorQuerySuffix = largeVendorIdentities
+  .filter((value) => !/[\p{Script=Han}]/u.test(value))
+  .map((value) => `-${value}`)
+  .join(" ");
 const poolSupplyMin = numericConfig(monitorHardGates.pool_count_min, 15);
 const routedPoolSupplyMin = numericConfig(monitorHardGates.routed_pool_count_min, 10);
 const corePoolSupplyMin = numericConfig(monitorHardGates.core_pool_min, 1);
@@ -3744,6 +3757,18 @@ async function runQuerySelectionRegressionFixtures() {
   if (poolGapRequests.length !== 1 || poolGapRequests[0].importanceType !== "important_funding") {
     throw new Error(`qualified Pool coverage gap did not trigger targeted refill: ${JSON.stringify(poolGapRequests)}`);
   }
+  const independentSourceRequests = refillRequestsForPoolState({
+    gaps: ["core_non_large=7/20", "core_large_ratio=0.59/0.35"],
+    poolCount: 100,
+    routedCount: 100,
+    coreCount: 17,
+    nonLargeCoreCount: 7,
+    nonLargeNeeded: 13,
+    preferNonLargeVendor: true,
+  });
+  if (!independentSourceRequests.length || independentSourceRequests.some((request) => request.preferNonLargeVendor !== true)) {
+    throw new Error(`non-large-vendor core gap did not trigger a biased refill: ${JSON.stringify(independentSourceRequests)}`);
+  }
   console.log(JSON.stringify({
     ok: true,
     fixture: "capital-startup-query-priority",
@@ -4938,31 +4963,55 @@ function coreSupplyGaps(items) {
   const coreMetas = metas.filter((meta) => meta.isCore);
   const routedMetas = metas.filter((meta) => meta.isRouted);
   const nonLargeCoreMetas = coreMetas.filter((meta) => !meta.isLargeVendor);
+  const largeCoreCount = coreMetas.length - nonLargeCoreMetas.length;
+  const largeVendorRatio = coreMetas.length ? largeCoreCount / coreMetas.length : 0;
+  const nonLargeNeededForRatio = coreLargeVendorRatioMaxTarget > 0
+    ? Math.max(0, Math.ceil(largeCoreCount / coreLargeVendorRatioMaxTarget) - coreMetas.length)
+    : 0;
+  const nonLargeNeeded = Math.max(
+    0,
+    coreNonLargeVendorMinTarget - nonLargeCoreMetas.length,
+    nonLargeNeededForRatio,
+  );
+  const preferNonLargeVendor = nonLargeNeeded > 0
+    || largeCoreCount > coreLargeVendorMaxTarget
+    || largeVendorRatio > coreLargeVendorRatioMaxTarget;
   return {
     coreCount: coreMetas.length,
     routedCount: routedMetas.length,
     poolCount: poolItems.length,
     nonLargeCoreCount: nonLargeCoreMetas.length,
+    nonLargeNeeded,
+    preferNonLargeVendor,
     gaps: [
       poolItems.length < poolSupplyMin ? `pool=${poolItems.length}/${poolSupplyMin}` : "",
       routedMetas.length < routedPoolSupplyMin ? `routed_pool=${routedMetas.length}/${routedPoolSupplyMin}` : "",
       coreMetas.length < corePoolSupplyMin ? `core_pool=${coreMetas.length}/${corePoolSupplyMin}` : "",
+      nonLargeCoreMetas.length < coreNonLargeVendorMinTarget ? `core_non_large=${nonLargeCoreMetas.length}/${coreNonLargeVendorMinTarget}` : "",
+      largeCoreCount > coreLargeVendorMaxTarget ? `core_large=${largeCoreCount}/${coreLargeVendorMaxTarget}` : "",
+      largeVendorRatio > coreLargeVendorRatioMaxTarget ? `core_large_ratio=${largeVendorRatio.toFixed(2)}/${coreLargeVendorRatioMaxTarget}` : "",
     ].filter(Boolean),
   };
 }
 
 function refillRequestsForPoolState(supplyGaps, poolGaps = []) {
-  const requests = poolGaps.map((gap) => ({ ...gap }));
+  const requests = poolGaps.map((gap) => ({ ...gap, preferNonLargeVendor: supplyGaps.preferNonLargeVendor === true }));
   if (!supplyGaps.gaps.length) return requests;
   const needed = Math.max(
     poolSupplyMin - supplyGaps.poolCount,
     routedPoolSupplyMin - supplyGaps.routedCount,
     corePoolSupplyMin - supplyGaps.coreCount,
+    supplyGaps.nonLargeNeeded || 0,
     1
   );
   for (const importanceType of targetedCoreRefillImportanceOrder) {
     if (requests.some((request) => request.importanceType === importanceType)) continue;
-    requests.push({ importanceType, count: 0, min: Math.min(needed, 3) });
+    requests.push({
+      importanceType,
+      count: 0,
+      min: Math.min(needed, 3),
+      preferNonLargeVendor: supplyGaps.preferNonLargeVendor === true,
+    });
   }
   return requests;
 }
@@ -4982,7 +5031,7 @@ async function collectTargetedImportanceRefill(poolGaps, existingItems = []) {
         ? [aTierMediaFallbackQuerySuffix, "(official OR newsroom OR press release OR company blog)"]
         : [pathConfig.fallbackQuerySuffix || pathConfig.querySuffix || ""];
       for (const suffix of suffixes) {
-        const query = [baseQuery, suffix].filter(Boolean).join(" ");
+        const query = [baseQuery, suffix, gap.preferNonLargeVendor ? independentVendorQuerySuffix : ""].filter(Boolean).join(" ");
         const queryConfig = {
           query: baseQuery,
           query_theme: "targeted-pool-gap-refill",
@@ -5372,7 +5421,7 @@ function isLargeVendorPoolItem(item = {}) {
     item.url,
     item.search_path_label,
   ].join(" ");
-  return /\b(Google|Microsoft|Anthropic|OpenAI|NVIDIA|Nvidia|Oracle|AWS|Amazon|Meta|Apple|IBM|Salesforce|DeepMind|Claude|Gemini|Copilot|ChatGPT|GitHub)\b|谷歌|微软|英伟达|亚马逊|甲骨文/iu.test(text);
+  return largeVendorPattern.test(text);
 }
 
 function poolCandidateMeta(item) {

@@ -29,6 +29,8 @@ export function finalizeOpsPublicationData({
   const dataDir = path.join(root, "01-SiteV2", "site", "data");
   const evidence = {
     status,
+    phase: "artifact_ready_for_deployment",
+    authoritative: false,
     commit,
     run_url: runUrl,
     deployed_at: deployedAt,

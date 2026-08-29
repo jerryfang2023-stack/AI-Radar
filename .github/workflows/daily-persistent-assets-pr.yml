@@ -562,7 +562,7 @@ jobs:
         continue-on-error: true
         shell: bash
         run: |
-          set -o pipefail
+          set -euo pipefail
           node agent-workflow/tools/assert-daily-production-chain.mjs \
             --date="${RUN_DATE}" \
             --stage=pre-commit \
@@ -570,6 +570,9 @@ jobs:
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pre-commit-gate.log"
           node agent-workflow/tools/normalize-source-intake-titles.mjs --date="${RUN_DATE}"
           npm run assert:source-titles
+          node agent-workflow/tools/assert-data-center-projection-coverage.mjs \
+            --date="${RUN_DATE}" \
+            --reports-dir="agent-workflow/reports"
 
       - name: Write persistent asset manifest
         id: persistent-manifest

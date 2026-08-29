@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "generatedAt": "2026-08-29T05:31:57.972Z",
     "latestDataDate": "2026-08-29",
     "currentDate": "2026-08-29",
-    "eventCount": 2477,
+    "eventCount": 2478,
     "quarantinedEventCount": 23
   },
   "relationships": [
@@ -66,6 +66,76 @@
         "date": "2026-08-29",
         "dataDate": "2026-08-29",
         "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-2fecf3bd9c761650",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-39fc00da33235889",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0d47d3f0783749a8",
+      "object_type": "entity",
+      "event_id": "EV-a9630a87712e5899",
+      "claim_refs": [
+        "CL-b3b44b6ab8b50031",
+        "CL-baa2a7e9fcf8e5e9",
+        "CL-79b4f8bec1b90544",
+        "CL-5cb38486f45bca4a"
+      ],
+      "source_refs": [
+        "SA-a014757a056b46b0"
+      ],
+      "data_date": "2026-08-29",
+      "status": "verified",
+      "subjectName": "OpenAtom Foundation",
+      "objectName": "openKylin",
+      "predicateLabel": "发布",
+      "title": "OpenAtom Foundation 发布 openKylin",
+      "eventTitle": "开放麒麟 openKylin 3.0 正式发布，系统内核升级至 Linux 7.0",
+      "eventDate": "2026-08-29",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b3b44b6ab8b50031",
+          "subject": "开放麒麟 openKylin 3.0 正式",
+          "object": "，系统内核升级至 Linux 7.0",
+          "quote": "开放麒麟 openKylin 3.0 正式发布，系统内核升级至 Linux 7.0 - IT之家"
+        },
+        {
+          "id": "CL-baa2a7e9fcf8e5e9",
+          "subject": "开放麒麟 openKylin 3.0 正式",
+          "object": "，系统内核升级至 Linux 7.0",
+          "quote": "开放麒麟 openKylin 3.0 正式发布，系统内核升级至 Linux 7.0"
+        },
+        {
+          "id": "CL-79b4f8bec1b90544",
+          "subject": "开放麒麟 openKylin 3.0 正式",
+          "object": "，系统内核升级至 Linux 7.0",
+          "quote": "IT之家 8 月 29 日消息，据开放原子开源基金会，OpenAtom openKylin 3.0 版本正式发布。"
+        },
+        {
+          "id": "CL-5cb38486f45bca4a",
+          "subject": "开放麒麟 openKylin 3.0 正式",
+          "object": "，系统内核升级至 Linux 7.0",
+          "quote": "官方表示，本次版本升级， openKylin 将系统内核跨代升级至 Linux 7.0 ，完成 180 余个核心组件全面迭代；构建智能体开放底座，让 AI 贯穿系统全链路；隔空手势、语音输入、屏幕朗读等多模态交互革新；场景覆盖从智能桌面延伸至移动端、服务器等全场景。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a014757a056b46b0",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/995/859.htm"
+        }
+      ],
+      "sourceExcerpt": "开放麒麟 openKylin 3.0 正式发布，系统内核升级至 Linux 7.0 - IT之家",
+      "event": {
+        "id": "EV-a9630a87712e5899",
+        "title": "开放麒麟 openKylin 3.0 正式发布，系统内核升级至 Linux 7.0",
+        "originalTitle": "",
+        "date": "2026-08-29",
+        "dataDate": "2026-08-29",
+        "eventTypeLabel": "产品发布"
       }
     },
     {

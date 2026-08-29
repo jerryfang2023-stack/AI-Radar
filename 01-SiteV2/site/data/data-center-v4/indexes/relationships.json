@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "generatedAt": "2026-08-29T05:31:57.972Z",
     "latestDataDate": "2026-08-29",
     "currentDate": "2026-08-29",
-    "eventCount": 2477,
+    "eventCount": 2478,
     "quarantinedEventCount": 23
   },
   "relationships": [
@@ -35,6 +35,34 @@
       "predicateLabel": "合作",
       "title": "AMD 合作 Anthropic",
       "eventTitle": "AMD推进AI 2026",
+      "eventDate": "2026-08-29",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-2fecf3bd9c761650",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-39fc00da33235889",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0d47d3f0783749a8",
+      "object_type": "entity",
+      "event_id": "EV-a9630a87712e5899",
+      "claim_refs": [
+        "CL-b3b44b6ab8b50031",
+        "CL-baa2a7e9fcf8e5e9",
+        "CL-79b4f8bec1b90544",
+        "CL-5cb38486f45bca4a"
+      ],
+      "source_refs": [
+        "SA-a014757a056b46b0"
+      ],
+      "data_date": "2026-08-29",
+      "status": "verified",
+      "subjectName": "OpenAtom Foundation",
+      "objectName": "openKylin",
+      "predicateLabel": "发布",
+      "title": "OpenAtom Foundation 发布 openKylin",
+      "eventTitle": "开放麒麟 openKylin 3.0 正式发布，系统内核升级至 Linux 7.0",
       "eventDate": "2026-08-29",
       "sourceCount": 1
     },

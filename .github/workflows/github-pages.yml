@@ -149,6 +149,10 @@ jobs:
         run: |
           npm run assert:source-titles
           npm run assert:entity-catalog-review
+          RUN_DATE="$(node -e "const d=require('./01-SiteV2/site/data/data-center-v4-frontstage.json'); process.stdout.write(d.meta.currentDate)")"
+          node agent-workflow/tools/assert-data-center-projection-coverage.mjs \
+            --date="${RUN_DATE}" \
+            --reports-dir="${RUNNER_TEMP}/projection-coverage"
 
       - name: Assert current rule and Skill governance
         if: steps.deployment-gate.outputs.deploy == 'true'

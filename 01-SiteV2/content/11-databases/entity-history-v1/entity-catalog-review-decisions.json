@@ -1,18 +1,19 @@
 {
   "schema_version": "ENTITY-CATALOG-REVIEW-V1",
-  "generated_at": "2026-08-24T03:06:00.000Z",
+  "generated_at": "2026-08-29T05:25:00.000Z",
   "reviewer": "codex-china-funding-review",
   "inputs": [
     "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json",
     "agent-workflow/reports/entity-catalog-secondary-search.json",
-    "agent-workflow/reports/entity-catalog-deepseek-audit-current.json"
+    "agent-workflow/reports/entity-catalog-deepseek-audit-current.json",
+    "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/entity-mentions.json"
   ],
   "summary": {
     "current_catalog_reviewed": 534,
     "supplemental_claim_entities": 23,
     "historical_decisions_retained": 347,
-    "reviewed": 898,
-    "confirmed": 370,
+    "reviewed": 901,
+    "confirmed": 373,
     "corrected": 185,
     "merged": 108,
     "quarantined": 235
@@ -30329,6 +30330,104 @@
       "review_status": "accepted",
       "reviewer": "codex-projection-coverage-repair",
       "reviewed_at": "2026-08-24T03:06:00.000Z",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-89090f3a867720c9",
+      "current": {
+        "name": "Wharton School",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "Wharton School",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "evidence": {
+        "claim_refs": [],
+        "secondary_sources": [
+          {
+            "source_id": "SA-98e188e4a3eb4ec3",
+            "source_url": "https://the-decoder.com/ai-shopping-agents-arent-ready-to-buy-on-your-behalf-study-finds/",
+            "quote": "Researchers at the Wharton School show how erratic AI shopping agents really are."
+          }
+        ]
+      },
+      "advisory_source": "projection_coverage_repair",
+      "advisory_decision": "confirmed",
+      "confidence": 1,
+      "rationale": "当日完整正文明确将该研究归属于 Wharton School 的研究人员，因此确认其为研究机构实体并纳入实体索引。",
+      "review_status": "accepted",
+      "reviewer": "codex-projection-coverage-repair",
+      "reviewed_at": "2026-08-29T05:25:00.000Z",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-0d47d3f0783749a8",
+      "current": {
+        "name": "openKylin",
+        "catalog_type": "product",
+        "company_names": [
+          "OpenAtom Foundation"
+        ]
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "openKylin",
+        "catalog_type": "product",
+        "company_names": [
+          "OpenAtom Foundation"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-b3b44b6ab8b50031",
+          "CL-baa2a7e9fcf8e5e9",
+          "CL-79b4f8bec1b90544",
+          "CL-5cb38486f45bca4a"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "projection_coverage_repair",
+      "advisory_decision": "confirmed",
+      "confidence": 1,
+      "rationale": "当日 Claim 明确记录 openKylin 3.0 的正式发布、版本升级及其与开放原子开源基金会的归属关系，因此确认 openKylin 为产品实体。",
+      "review_status": "accepted",
+      "reviewer": "codex-projection-coverage-repair",
+      "reviewed_at": "2026-08-29T05:25:00.000Z",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-39fc00da33235889",
+      "current": {
+        "name": "OpenAtom Foundation",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "OpenAtom Foundation",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-79b4f8bec1b90544"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "projection_coverage_repair",
+      "advisory_decision": "confirmed",
+      "confidence": 1,
+      "rationale": "当日 Claim 明确写明开放原子开源基金会发布 OpenAtom openKylin 3.0，支持其作为项目发布机构的实体身份。",
+      "review_status": "accepted",
+      "reviewer": "codex-projection-coverage-repair",
+      "reviewed_at": "2026-08-29T05:25:00.000Z",
       "error_patterns": []
     }
   ]

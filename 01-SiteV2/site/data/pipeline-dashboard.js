@@ -1,7 +1,7 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-29T03:37:10.704Z",
+    "generatedAt": "2026-08-29T05:32:32.147Z",
     "dateRange": {
       "start": "2026-08-23",
       "end": "2026-08-29"
@@ -13,16 +13,18 @@ window.WaveSightPipelineDashboard = {
     {
       "id": "collection",
       "label": "采集",
-      "status": "partial",
+      "status": "passed",
       "counts": {
         "discovered": 290,
         "capture_succeeded": 257,
-        "capture_failed": 10,
+        "capture_failed": 0,
+        "recovered_source_failures": 18,
         "raw_documents": 257
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/manifest.json",
-        "agent-workflow/reports/2026-08-29-guanlan-daily-monitor-log.md"
+        "agent-workflow/reports/2026-08-29-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-08-29-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -36,7 +38,7 @@ window.WaveSightPipelineDashboard = {
         "rejected": 0,
         "pending_claims": 4,
         "canonical_events": 30,
-        "entities": 42,
+        "entities": 46,
         "relationships": 73,
         "conflicts": 0,
         "qa_queue": 229
@@ -65,7 +67,9 @@ window.WaveSightPipelineDashboard = {
       "label": "发布",
       "status": "waiting",
       "counts": {
-        "v4_bundle_ready": true
+        "v4_bundle_ready": true,
+        "snapshot_phase": "pre_deploy_snapshot",
+        "authoritative": false
       },
       "evidence": [
         "agent-workflow/reports/2026-08-29-persistent-asset-manifest.json"
@@ -80,7 +84,7 @@ window.WaveSightPipelineDashboard = {
     "captured": 257,
     "claims": 73,
     "events": 30,
-    "entities": 42,
+    "entities": 46,
     "relationships": 73,
     "conflicts": 0,
     "qaQueue": 229,
@@ -88,7 +92,8 @@ window.WaveSightPipelineDashboard = {
     "collection": {
       "discovered": 290,
       "capture_succeeded": 257,
-      "capture_failed": 10,
+      "capture_failed": 0,
+      "recovered_source_failures": 18,
       "raw_documents": 257
     },
     "factBuild": {
@@ -98,7 +103,7 @@ window.WaveSightPipelineDashboard = {
       "rejected": 0,
       "pending_claims": 4,
       "canonical_events": 30,
-      "entities": 42,
+      "entities": 46,
       "relationships": 73,
       "conflicts": 0,
       "qa_queue": 229,
@@ -114,7 +119,10 @@ window.WaveSightPipelineDashboard = {
       "fde_hardware_sync": "passed"
     },
     "publication": {
-      "status": "waiting"
+      "status": "waiting",
+      "phase": "pre_deploy_snapshot",
+      "authoritative": false,
+      "finalization": "github_pages_artifact"
     }
   },
   "days": [
@@ -126,7 +134,7 @@ window.WaveSightPipelineDashboard = {
       "captured": 257,
       "claims": 73,
       "events": 30,
-      "entities": 42,
+      "entities": 46,
       "relationships": 73,
       "conflicts": 0,
       "qaQueue": 229
@@ -215,7 +223,7 @@ window.WaveSightPipelineDashboard = {
     "captured": 1736,
     "claims": 626,
     "events": 256,
-    "entities": 366,
+    "entities": 370,
     "relationships": 626,
     "conflicts": 0,
     "qaQueue": 1490

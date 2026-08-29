@@ -68,6 +68,7 @@ export function buildCollectionTelemetry({
   const gateFile = path.join(reportDir, `${date}-data-center-v4-integrity-gate.json`);
   const persistentManifestFile = path.join(reportDir, `${date}-persistent-asset-manifest.json`);
   const monitorReportFile = path.join(reportDir, `${date}-guanlan-daily-monitor-log.md`);
+  const monitorQualityReportFile = path.join(reportDir, `${date}-guanlan-monitor-quality-gate.md`);
   const manifest = readJson(manifestFile, {});
   const gate = readJson(gateFile, {});
   const persistentManifest = readJson(persistentManifestFile, {});
@@ -80,11 +81,18 @@ export function buildCollectionTelemetry({
   const entities = readJson(path.join(bundleDir, "entities.json"), []);
   const relationships = readJson(path.join(bundleDir, "relationships.json"), []);
   const monitorReport = readText(monitorReportFile);
+  const monitorQualityReport = readText(monitorQualityReportFile);
 
   const capturedSourceIds = new Set(rawDocuments.map((item) => item.source_artifact_id).filter(Boolean));
   const captureSucceeded = sourceArtifacts.filter((item) => capturedSourceIds.has(item.source_artifact_id)).length;
-  const captureFailed = reportNumber(monitorReport, "unrecovered_failed_sources_count")
-    || Math.max(0, sourceArtifacts.length - captureSucceeded);
+  const qualityRecoveryRecorded = /- source_provider_recovery_status:\s*\S+/mu.test(monitorQualityReport);
+  const recoveredSourceFailures = qualityRecoveryRecorded
+    ? reportNumber(monitorQualityReport, "recovered_failed_sources_count")
+    : 0;
+  const captureFailed = qualityRecoveryRecorded
+    ? reportNumber(monitorQualityReport, "unrecovered_failed_sources_count")
+    : reportNumber(monitorReport, "unrecovered_failed_sources_count")
+      || Math.max(0, sourceArtifacts.length - captureSucceeded);
   const discovered = reportNumber(monitorReport, "adaptive_raw_fetched_candidates")
     || sourceArtifacts.length + captureFailed;
   const acceptedClaims = claims.filter((item) => item.verification_status === "accepted").length;
@@ -112,6 +120,12 @@ export function buildCollectionTelemetry({
       : knownProjectionStates.length ? "partial" : "unknown";
 
   const publicationOutcome = normalizedOutcome(outcomes.publication || persistentManifest?.outcomes?.pre_commit_gate);
+  const publicationSnapshot = {
+    status: publicationOutcome,
+    phase: publicationOutcome === "waiting" ? "pre_deploy_snapshot" : "build_snapshot",
+    authoritative: false,
+    finalization: "github_pages_artifact",
+  };
   const compatibilityWarnings = [];
 
   const stages = [
@@ -119,8 +133,9 @@ export function buildCollectionTelemetry({
       discovered,
       capture_succeeded: captureSucceeded,
       capture_failed: captureFailed,
+      recovered_source_failures: recoveredSourceFailures,
       raw_documents: rawDocuments.length,
-    }, [repoRelative(root, manifestFile), repoRelative(root, monitorReportFile)]),
+    }, [repoRelative(root, manifestFile), repoRelative(root, monitorReportFile), repoRelative(root, monitorQualityReportFile)]),
     stage("fact_build", "事实构建", gatePassed ? "passed" : "failed", {
       accepted_claims: acceptedClaims,
       rejected_claims: rejectedClaims,
@@ -136,6 +151,8 @@ export function buildCollectionTelemetry({
     stage("application_projection", "应用投影", projectionStatus, projectionOutcomes, [repoRelative(root, persistentManifestFile)]),
     stage("publication", "发布", publicationOutcome, {
       v4_bundle_ready: gatePassed,
+      snapshot_phase: publicationSnapshot.phase,
+      authoritative: publicationSnapshot.authoritative,
     }, [repoRelative(root, persistentManifestFile)]),
   ];
 
@@ -162,9 +179,7 @@ export function buildCollectionTelemetry({
       warnings: Array.isArray(gate.warnings) ? gate.warnings : [],
     },
     application_projection: projectionOutcomes,
-    publication: {
-      status: publicationOutcome,
-    },
+    publication: publicationSnapshot,
     stages,
     deprecated_compatibility: {
       ...V3_RETIRED_COMPATIBILITY,
