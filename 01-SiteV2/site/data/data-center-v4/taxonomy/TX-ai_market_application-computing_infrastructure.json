@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:59:38.691Z",
-    "latestDataDate": "2026-08-28",
-    "currentDate": "2026-08-28",
-    "eventCount": 2459,
+    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "latestDataDate": "2026-08-29",
+    "currentDate": "2026-08-29",
+    "eventCount": 2477,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -7916,6 +7916,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-use_case-software_development",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
@@ -7923,7 +7924,6 @@
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-ai_compute_system",
         "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -7973,12 +7973,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service",
         "TX-deployment_model-cloud"
       ],
       "relatedEntityIds": [],
@@ -7990,14 +7990,14 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-40fd274ae86434b8",
+        "EV-c32dd87e1f72b09a",
         "EV-10f04014fb3b62ff",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
@@ -8207,6 +8207,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -8240,7 +8242,6 @@
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
@@ -8256,7 +8257,6 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-open_weights",
         "TX-technology-tool_use",
         "TX-technology-reasoning"
       ],
@@ -8265,31 +8265,24 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-a7e079ed603b3436",
@@ -8306,11 +8299,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-chip_accelerator"
+        "TX-ai_market_subcategory-hardware_computing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-06",
@@ -8331,6 +8324,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
@@ -8347,7 +8341,6 @@
         "TX-industry-telecommunications",
         "TX-industry-professional_services",
         "TX-industry-manufacturing",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
@@ -8400,11 +8393,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service"
+        "TX-ai_market_subcategory-hardware_computing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-10",
@@ -8425,12 +8418,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-ai_market_subcategory-hardware_computing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -8452,11 +8445,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
@@ -8478,12 +8471,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service"
+        "TX-ai_market_subcategory-hardware_computing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -8504,15 +8497,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-ai_infrastructure_software"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-06",
@@ -8589,11 +8582,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service"
+        "TX-ai_market_subcategory-hardware_computing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -8604,9 +8597,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -8657,9 +8648,10 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-172e82bbbedb3619",
         "EV-293d6feac5b8efab",
         "EV-71727e1a748baf33",
+        "EV-f71726063c6e1615",
+        "EV-172e82bbbedb3619",
         "EV-4c184078bc288aa8",
         "EV-9fac2a799d6cbf57",
         "EV-bf7d82367f919883",
@@ -8799,6 +8791,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-65612dfb24abce5c",
         "EV-5f8479f97236bdea",
         "EV-3b30eda1326a6fb1",
         "EV-f5aec01f1466f6bb",
@@ -8830,6 +8823,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-end_user_application",
@@ -8856,22 +8850,20 @@
         "TX-technology-computer_use",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
+        "TX-deployment_model-on_premise",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -8879,7 +8871,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-cecdd8369134f75e",

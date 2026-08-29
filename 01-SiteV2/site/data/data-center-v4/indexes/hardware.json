@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:59:38.691Z",
-    "latestDataDate": "2026-08-28",
-    "currentDate": "2026-08-28",
-    "eventCount": 2459,
+    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "latestDataDate": "2026-08-29",
+    "currentDate": "2026-08-29",
+    "eventCount": 2477,
     "quarantinedEventCount": 23
   },
   "hardware": [
@@ -2983,6 +2983,246 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-8f073ac04b656d49",
+      "snapshotKey": "8f073ac04b656d49",
+      "snapshotId": "HWS-ab71e4171fa3ce71",
+      "eventId": "EV-40fd274ae86434b8",
+      "eventIds": [
+        "EV-40fd274ae86434b8"
+      ],
+      "dataDate": "2026-08-29",
+      "date": "2026-08-29",
+      "title": "开源权重AI公司成为硅谷最热",
+      "subject": "开源权重AI公司成为硅谷最热",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "6",
+          "unit": "$billion",
+          "fact_ref": "HWF-310d079cd6bf8f5e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-29",
+          "hardware_fact_id": "HWF-310d079cd6bf8f5e",
+          "fact_type": "specification",
+          "observed_at": "2026-08-28T00:00:00.000Z",
+          "subject_entity_id": "EN-cd3509f4e1fbec99",
+          "subject_name": "开源权重AI公司成为硅谷最热",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "6",
+          "unit": "$billion",
+          "source_quote": "Rumors of that deal come after Nvidia struck a $6 billion agreement with Poolside, an open-weight model builder, that will see most of its employees move to the chip-making giant. And two weeks ago, Stripe acquired OpenRouter, the top provider of open-weight models to businesses, for more than $7 billion.",
+          "event_refs": [
+            "EV-40fd274ae86434b8"
+          ],
+          "claim_ref": "CL-91e6535625a80f50",
+          "source_refs": [
+            "SA-44e930acfdf3fc93"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-cd3509f4e1fbec99"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-cd3509f4e1fbec99"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-cd3509f4e1fbec99"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets",
+      "entityIds": [
+        "EN-cd3509f4e1fbec99",
+        "EN-8d4321d936320802",
+        "EN-7f871cbf905f6e0c"
+      ]
+    },
+    {
+      "id": "HWC-10bf48c75f2708f2",
+      "snapshotKey": "10bf48c75f2708f2",
+      "snapshotId": "HWS-b87a8d64a85a72e1",
+      "eventId": "EV-074a78d3cfaf633b",
+      "eventIds": [
+        "EV-074a78d3cfaf633b"
+      ],
+      "dataDate": "2026-08-29",
+      "date": "2026-08-29",
+      "title": "Hugging Face",
+      "subject": "Pollen Robotics",
+      "productNames": [
+        "Hugging Face"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-49f264a08836438b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-29",
+          "previousDate": "2026-08-28",
+          "snapshotId": "HWS-b87a8d64a85a72e1",
+          "previousSnapshotId": "HWS-88e198d85de46cc7",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-29",
+          "hardware_fact_id": "HWF-49f264a08836438b",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-6117af74470fbaa4",
+          "subject_name": "Pollen Robotics",
+          "product_entity_ids": [
+            "EN-d9352ce019e77ab3"
+          ],
+          "product_names": [
+            "Hugging Face"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Hugging Face’s Pollen Robotics has launched its second cute AI robot, the Microduck , a one-eyed biped standing just under 10 inches tall.",
+          "event_refs": [
+            "EV-074a78d3cfaf633b"
+          ],
+          "claim_ref": "CL-c4e5fd57f665be91",
+          "source_refs": [
+            "SA-7f50ae29ba47ae9c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://theverge.com/gadgets/985549/hugging-face-microduck-robot",
+      "entityIds": [
+        "EN-6117af74470fbaa4",
+        "EN-d9352ce019e77ab3"
+      ]
+    },
+    {
+      "id": "HWC-c6e128583c9bf3fc",
+      "snapshotKey": "c6e128583c9bf3fc",
+      "snapshotId": "HWS-733ad56e1b9abebe",
+      "eventId": "EV-601240034cf86d7f",
+      "eventIds": [
+        "EV-601240034cf86d7f"
+      ],
+      "dataDate": "2026-08-29",
+      "date": "2026-08-29",
+      "title": "ROCm 10.0.0",
+      "subject": "AMD",
+      "productNames": [
+        "ROCm 10.0.0"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-043d729cd4cbdd87"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-29",
+          "hardware_fact_id": "HWF-043d729cd4cbdd87",
+          "fact_type": "product",
+          "observed_at": "2026-08-28T09:03:50.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [
+            "EN-ede32a5c59722bd9"
+          ],
+          "product_names": [
+            "ROCm 10.0.0"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 28 日消息，AMD 本周发布了 GPU 加速计算开放软件堆栈 ROCm 的 10.0.0 版本，这一版本号旨在纪念其诞生 10 周年。",
+          "event_refs": [
+            "EV-601240034cf86d7f"
+          ],
+          "claim_ref": "CL-cfe92d2e471ae147",
+          "source_refs": [
+            "SA-4672f29973f8076c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/995/683.htm",
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-ede32a5c59722bd9"
+      ]
+    },
+    {
       "id": "HWC-5bc36cc3b4c36dd9",
       "snapshotKey": "5bc36cc3b4c36dd9",
       "snapshotId": "HWS-c6e8e5d6cf8381d5",
@@ -3251,75 +3491,7 @@
       "tags": [],
       "sourceUrl": "https://biz.heraldcorp.com/article/10854950",
       "entityIds": [
-        "EN-d31c43526b245fe0",
-        "EN-faebddaa4885b004"
-      ]
-    },
-    {
-      "id": "HWC-10bf48c75f2708f2",
-      "snapshotKey": "10bf48c75f2708f2",
-      "snapshotId": "HWS-88e198d85de46cc7",
-      "eventId": "EV-074a78d3cfaf633b",
-      "eventIds": [
-        "EV-074a78d3cfaf633b"
-      ],
-      "dataDate": "2026-08-28",
-      "date": "2026-08-28",
-      "title": "Hugging Face",
-      "subject": "Pollen Robotics",
-      "productNames": [
-        "Hugging Face"
-      ],
-      "hardwareType": "robot",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-09144ac8bec9b1ce"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-28",
-          "hardware_fact_id": "HWF-09144ac8bec9b1ce",
-          "fact_type": "product",
-          "observed_at": "2026-08-27T00:00:00.000Z",
-          "subject_entity_id": "EN-6117af74470fbaa4",
-          "subject_name": "Pollen Robotics",
-          "product_entity_ids": [
-            "EN-d9352ce019e77ab3"
-          ],
-          "product_names": [
-            "Hugging Face"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Hugging Face’s Pollen Robotics has launched its second cute AI robot, the Microduck , a one-eyed biped standing just under 10 inches tall.",
-          "event_refs": [
-            "EV-074a78d3cfaf633b"
-          ],
-          "claim_ref": "CL-edb789a933998cd7",
-          "source_refs": [
-            "SA-32f94bf29193d50c"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://theverge.com/gadgets/985549/hugging-face-microduck-robot",
-      "entityIds": [
-        "EN-6117af74470fbaa4",
-        "EN-d9352ce019e77ab3"
+        "EN-d31c43526b245fe0"
       ]
     },
     {
@@ -12473,10 +12645,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-28",
-      "funnel_id": "LF-a1b0893d22d587bc",
+      "data_date": "2026-08-29",
+      "funnel_id": "LF-6f22eb925478c401",
       "lens": "hardware",
-      "date": "2026-08-28",
+      "date": "2026-08-29",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_oem_odm",
@@ -12484,24 +12656,26 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 21,
-      "original_sources": 21,
-      "valid_claims": 11,
-      "observations": 10,
-      "canonical_events": 5,
+      "raw_documents": 20,
+      "original_sources": 19,
+      "valid_claims": 7,
+      "observations": 3,
+      "canonical_events": 3,
       "blocker_counts": {
-        "no_source_bounded_event": 4,
-        "source_outside_daily_window": 8,
+        "source_outside_daily_window": 9,
+        "no_source_bounded_event": 1,
         "non_event_or_index_title": 3,
-        "raw_source_quality_block": 1
+        "event_not_ai_relevant": 1,
+        "raw_source_quality_block": 2,
+        "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 1,
-        "valid_claim_rate": 0.5238095238095238,
-        "observation_rate": 0.9090909090909091,
-        "event_conversion_rate": 0.45454545454545453
+        "original_source_rate": 0.95,
+        "valid_claim_rate": 0.35,
+        "observation_rate": 0.42857142857142855,
+        "event_conversion_rate": 0.42857142857142855
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/monitoring-funnel.json"
     }
   ]
 }

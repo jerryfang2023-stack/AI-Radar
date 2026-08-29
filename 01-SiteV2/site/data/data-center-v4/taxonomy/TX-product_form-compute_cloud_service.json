@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:59:38.691Z",
-    "latestDataDate": "2026-08-28",
-    "currentDate": "2026-08-28",
-    "eventCount": 2459,
+    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "latestDataDate": "2026-08-29",
+    "currentDate": "2026-08-29",
+    "eventCount": 2477,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -18,6 +18,7 @@
     "typeLabel": "产品形态",
     "valueId": "compute_cloud_service",
     "eventIds": [
+      "EV-c32dd87e1f72b09a",
       "EV-181cd28d97c4e61d",
       "EV-2dea56b0e97c1685",
       "EV-e3792591090281c6",
@@ -47,6 +48,7 @@
       "EV-a67071a8550cb1be"
     ],
     "entityIds": [
+      "EN-3f2a8b14f8f96937",
       "EN-0b79cf2de0ee6b8e",
       "EN-6fae0bc5a895aab8",
       "EN-fdecfc27f301da9c",
@@ -78,9 +80,134 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-04-30",
-    "lastSeen": "2026-08-27"
+    "lastSeen": "2026-08-29"
   },
   "events": [
+    {
+      "id": "EV-c32dd87e1f72b09a",
+      "dataDate": "2026-08-29",
+      "date": "2026-08-28",
+      "updatedDate": "2026-08-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Neocloud Lambda 获 10 亿美元债务融资以购买更多芯片",
+      "originalTitle": "Neocloud Lambda secures $1B in debt to buy more chips",
+      "subject": "Neocloud Lambda",
+      "action": "secures",
+      "object": "$1B in debt to buy more chips",
+      "metrics": [
+        "$1B",
+        "$1 billion",
+        "$926 million",
+        "300 GPUs",
+        "$3 billion",
+        "$1.5 billion",
+        "$5.43 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-3f2a8b14f8f96937"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-3f2a8b14f8f96937"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-3f2a8b14f8f96937"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3f2a8b14f8f96937"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-3f2a8b14f8f96937"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3f2a8b14f8f96937"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3f2a8b14f8f96937",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Neocloud Lambda",
+        "NVIDIA",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips",
+      "publisher": "TechCrunch AI"
+    },
     {
       "id": "EV-181cd28d97c4e61d",
       "dataDate": "2026-08-21",
@@ -6353,6 +6480,28 @@
   ],
   "entities": [
     {
+      "id": "EN-3f2a8b14f8f96937",
+      "name": "Neocloud Lambda",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c32dd87e1f72b09a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-29"
+    },
+    {
       "id": "EN-0b79cf2de0ee6b8e",
       "name": "Groq",
       "entityType": "organization_candidate",
@@ -6368,12 +6517,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service",
         "TX-deployment_model-cloud"
       ],
       "relatedEntityIds": [],
@@ -6395,6 +6544,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
@@ -6411,7 +6561,6 @@
         "TX-industry-telecommunications",
         "TX-industry-professional_services",
         "TX-industry-manufacturing",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
@@ -6439,11 +6588,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-product_form-model_api_service",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -6465,11 +6614,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-use_case-software_development",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -6491,11 +6640,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service"
+        "TX-ai_market_subcategory-hardware_computing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-10",
@@ -6516,12 +6665,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-ai_market_subcategory-hardware_computing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -6543,11 +6692,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
@@ -6569,12 +6718,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service"
+        "TX-ai_market_subcategory-hardware_computing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -6595,15 +6744,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-ai_infrastructure_software"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-06",
@@ -6637,6 +6786,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
@@ -6652,7 +6802,6 @@
         "TX-use_case-knowledge_search",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-ai_market_subcategory-industrials",
@@ -6681,11 +6830,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service"
+        "TX-ai_market_subcategory-hardware_computing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -6708,6 +6857,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
@@ -6715,7 +6865,6 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -6812,6 +6961,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-97910e898975c6ca",
+        "EV-db87eda4a39de22a",
         "EV-eedd370fd9cfdbb2",
         "EV-6e96760ed7e2ebaa",
         "EV-daa8adf2de4e4bf4",
@@ -7077,6 +7228,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-consumer",
@@ -7099,14 +7253,12 @@
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
         "TX-technology-long_context",
         "TX-target_user-educator",
-        "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
@@ -7116,6 +7268,7 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -7130,7 +7283,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -7140,7 +7292,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-8f5ef31ed5125786",
@@ -7180,8 +7332,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-17",
@@ -7202,6 +7354,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -7210,10 +7365,7 @@
         "TX-target_user-researcher",
         "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights"
+        "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-14",
@@ -7234,9 +7386,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-public_sector_user",
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-target_user-public_sector_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-02",
@@ -7257,8 +7409,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-13",
@@ -7281,10 +7433,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
-        "TX-technology-agentic_execution",
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-end_user_application",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
         "EN-2a817d99285e12c4",
@@ -7329,8 +7481,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-ai_compute_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:59:38.691Z",
-    "latestDataDate": "2026-08-28",
-    "currentDate": "2026-08-28",
-    "eventCount": 2459,
+    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "latestDataDate": "2026-08-29",
+    "currentDate": "2026-08-29",
+    "eventCount": 2477,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -31,7 +31,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-28",
+    "lastSeen": "2026-08-29",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -47,7 +47,7 @@
     "timeline": [
       {
         "id": "EV-074a78d3cfaf633b",
-        "dataDate": "2026-08-28",
+        "dataDate": "2026-08-29",
         "date": "2026-08-27",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -174,7 +174,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -385,7 +385,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     }
   ],
   "fde": [],
@@ -394,13 +394,13 @@
     {
       "id": "HWC-10bf48c75f2708f2",
       "snapshotKey": "10bf48c75f2708f2",
-      "snapshotId": "HWS-88e198d85de46cc7",
+      "snapshotId": "HWS-b87a8d64a85a72e1",
       "eventId": "EV-074a78d3cfaf633b",
       "eventIds": [
         "EV-074a78d3cfaf633b"
       ],
-      "dataDate": "2026-08-28",
-      "date": "2026-08-28",
+      "dataDate": "2026-08-29",
+      "date": "2026-08-29",
       "title": "Hugging Face",
       "subject": "Pollen Robotics",
       "productNames": [
@@ -414,18 +414,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-09144ac8bec9b1ce"
+          "fact_ref": "HWF-49f264a08836438b"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-29",
+          "previousDate": "2026-08-28",
+          "snapshotId": "HWS-b87a8d64a85a72e1",
+          "previousSnapshotId": "HWS-88e198d85de46cc7",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-28",
-          "hardware_fact_id": "HWF-09144ac8bec9b1ce",
+          "data_date": "2026-08-29",
+          "hardware_fact_id": "HWF-49f264a08836438b",
           "fact_type": "product",
           "observed_at": "2026-08-27T00:00:00.000Z",
           "subject_entity_id": "EN-6117af74470fbaa4",
@@ -443,11 +453,11 @@
           "event_refs": [
             "EV-074a78d3cfaf633b"
           ],
-          "claim_ref": "CL-edb789a933998cd7",
+          "claim_ref": "CL-c4e5fd57f665be91",
           "source_refs": [
-            "SA-32f94bf29193d50c"
+            "SA-7f50ae29ba47ae9c"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-28/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/hardware-facts.json"
         }
       ],
       "capexFacts": [],

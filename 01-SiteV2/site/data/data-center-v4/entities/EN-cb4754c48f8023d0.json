@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:59:38.691Z",
-    "latestDataDate": "2026-08-28",
-    "currentDate": "2026-08-28",
-    "eventCount": 2459,
+    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "latestDataDate": "2026-08-29",
+    "currentDate": "2026-08-29",
+    "eventCount": 2477,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -1420,6 +1420,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-97910e898975c6ca",
+        "EV-db87eda4a39de22a",
         "EV-eedd370fd9cfdbb2",
         "EV-6e96760ed7e2ebaa",
         "EV-daa8adf2de4e4bf4",
@@ -1685,6 +1687,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-consumer",
@@ -1707,14 +1712,12 @@
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
         "TX-technology-long_context",
         "TX-target_user-educator",
-        "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
@@ -1724,6 +1727,7 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -1738,7 +1742,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -1748,7 +1751,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     }
   ],
   "relationships": [
@@ -2022,6 +2025,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-1837cd322ed6aa11",
+        "EV-c877ce26c9f8997f",
+        "EV-6944ba9fc55b4f41",
+        "EV-db87eda4a39de22a",
         "EV-5c87fffc3534e990",
         "EV-98297329e323dca3",
         "EV-a6dc310224542dcf",
@@ -2487,6 +2494,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-f8e930daaadf36ec",
+        "EN-c70eca6b0f88f44d",
         "EN-cb4754c48f8023d0",
         "EN-d9b1d7819af92e77",
         "EN-738e22f0acab814c",
@@ -2579,7 +2588,6 @@
         "EN-e395d03e988d30a9",
         "EN-1c3cb68d25565c1c",
         "EN-c0803e19540a3203",
-        "EN-c70eca6b0f88f44d",
         "EN-5388bc10736a0eff",
         "EN-42f0b44cc91cc5e0",
         "EN-09c344df70df9660",
@@ -2718,6 +2726,7 @@
         "EV-0e84a2f49d765ce3",
         "EV-0fc718ab409cdcf5",
         "EV-7263caa45bbf168e",
+        "EV-f71726063c6e1615",
         "EV-5c87fffc3534e990",
         "EV-c3ac03a8a0cc3a0e",
         "EV-7164fc80b7526930",
@@ -2730,6 +2739,7 @@
       ],
       "entityIds": [
         "EN-634561e92b7593c3",
+        "EN-bbdefa2950f49882",
         "EN-cb4754c48f8023d0",
         "EN-842fcb5e60989a03",
         "EN-754b113d548b4469",
@@ -2744,7 +2754,7 @@
         "HW-ecc6755da7bbbbcd"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "TX-technology-tool_use",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-28T02:59:38.691Z",
-    "latestDataDate": "2026-08-28",
-    "currentDate": "2026-08-28",
-    "eventCount": 2459,
+    "generatedAt": "2026-08-29T03:36:57.702Z",
+    "latestDataDate": "2026-08-29",
+    "currentDate": "2026-08-29",
+    "eventCount": 2477,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -197,7 +197,7 @@
       "HW-c5a22adcc66136ed"
     ],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-08-28"
+    "lastSeen": "2026-08-29"
   },
   "events": [
     {
@@ -19977,9 +19977,9 @@
     },
     {
       "id": "EV-81994f7703698729",
-      "dataDate": "2026-08-28",
+      "dataDate": "2026-08-29",
       "date": "2026-08-27",
-      "updatedDate": "2026-08-28",
+      "updatedDate": "2026-08-29",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -24058,6 +24058,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-df8954acf9a13848",
         "EV-f5dd6dec49ad83aa",
@@ -24152,6 +24153,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-4bbb0a030948b8f4",
+        "EV-6944ba9fc55b4f41",
         "EV-b4376b7d0e863db3",
         "EV-eedd370fd9cfdbb2",
         "EV-4268b4be01fc8711",
@@ -24359,6 +24362,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-65612dfb24abce5c",
         "EV-00ffb2c501a37ec8",
         "EV-8d1915e3b460afa7",
         "EV-16a0fe419e75402b",
@@ -24439,6 +24443,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
@@ -24460,12 +24466,10 @@
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
-        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-developer_tool",
         "TX-technology-long_context",
-        "TX-technology-open_weights",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-technology-reasoning"
@@ -24497,7 +24501,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-6998e3957b261cf2",
@@ -25440,7 +25444,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-21",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -25477,6 +25481,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-c877ce26c9f8997f",
         "EV-b1b396e6ba2fe208",
         "EV-fd62c17a36b4e7e0",
         "EV-6fdbcd14c6a633b6",
@@ -25550,6 +25555,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
@@ -25565,14 +25572,12 @@
         "TX-use_case-data_analysis",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-deployment_model-cloud",
         "TX-ai_market_subcategory-sales",
         "TX-technology-computer_use",
         "TX-technology-long_context",
-        "TX-technology-open_weights",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-quantization",
@@ -25589,7 +25594,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-c0fced8f2483e9f5",
@@ -25763,9 +25768,7 @@
         "TX-product_form-end_user_application",
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-08-03"
     },
@@ -25786,10 +25789,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
-        "TX-technology-agentic_execution",
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-end_user_application",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
         "EN-2a817d99285e12c4",
@@ -25846,9 +25849,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -25899,9 +25900,10 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-172e82bbbedb3619",
         "EV-293d6feac5b8efab",
         "EV-71727e1a748baf33",
+        "EV-f71726063c6e1615",
+        "EV-172e82bbbedb3619",
         "EV-4c184078bc288aa8",
         "EV-9fac2a799d6cbf57",
         "EV-bf7d82367f919883",
@@ -26041,6 +26043,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-65612dfb24abce5c",
         "EV-5f8479f97236bdea",
         "EV-3b30eda1326a6fb1",
         "EV-f5aec01f1466f6bb",
@@ -26072,6 +26075,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-end_user_application",
@@ -26098,22 +26102,20 @@
         "TX-technology-computer_use",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
+        "TX-deployment_model-on_premise",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -26121,7 +26123,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-4e721fae5963494d",
@@ -26160,6 +26162,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
@@ -26216,7 +26219,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-29"
     },
     {
       "id": "EN-160b93ba38ba1ecd",
