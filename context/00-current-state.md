@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-08-26
+last_updated: 2026-08-29
 use_when:
   - large task startup
   - dispatch planning
@@ -30,9 +30,10 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
 - Current data-lake contract: `DATA-LAKE-V4.1-24-table`; JSONL and DuckDB must expose exactly the same 24-table V4 allowlist, including reviewed event classifications.
 - Current private evidence store: `PRIVATE-EVIDENCE-STORE-V2.0`; it is the sole complete-original store, deduplicates bodies by `content_hash`, and is physically outside the public repository and Vault. Public V4 data, the Vault, and the website never retain complete bodies.
-- Current Funding Insights inventory: 302 accepted application cards aggregate to 277 public financing-event cards through 2026-08-26. The 2026-08-26 intake adds two evidence-backed cards: Ringg's `$10 million` Series A extension and Stability AI's `$76 million` Series B. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It builds 1,323 evidence-backed investor subjects; unresolved product/person names remain in the evidence-backed entity review queue. The PC portal and Mini Program projection must publish the same 277-card inventory.
-- Current Data Center frontstage inventory: 2,391 events, 210 companies, 341 products, 61 people, 1,323 investors, 375 relationships, 125 FDE records, and 85 hardware records through 2026-08-26.
-- Current private evidence inventory: 18,287 snapshots, 14,694 unique bodies, and zero missing bodies.
+- Current Funding Insights inventory: 307 accepted application cards aggregate to 282 public financing-event cards through 2026-08-29; the latest qualifying financing disclosure is dated 2026-08-26. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It builds 1,332 evidence-backed investor subjects; unresolved product/person names remain in the evidence-backed entity review queue. The PC portal and Mini Program live contract must publish the same 282-card inventory.
+- Current Data Center frontstage inventory: 2,478 events, 212 companies, 342 products, 61 people, 1,332 investors, 361 relationships, 125 FDE records, and 90 hardware records through 2026-08-29.
+- The current daily bundle contains 30 canonical events, of which 29 are accepted; all 29 accepted events resolve at least one source-bounded entity after explicit catalog review. The release chain asserts current-date projection coverage in both the persistent-asset path and GitHub Pages before deployment.
+- Current private-evidence inventory is owned by the latest private-evidence gate rather than a copied count in this state document.
 - Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task. Missed scheduled morning, recovery, and closure phases that start after their useful window write an observable `superseded` report, while manual recovery and final closure remain executable. The watchdog allows a short report grace period during Task Scheduler catch-up.
 
 ## Current Entries
