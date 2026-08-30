@@ -77,7 +77,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Code and rule auditor | guanlan-code-rule-auditor v1.2.1 |
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
-| Skill Store version | v2.0.1 GPT-5.6 full-audit corrections |
+| Skill Store version | v2.1.0 Multi-source content catalog |
 | Git tag | `v4.8.1-research-retirement` |
 | Current entries | Public: independent AI financing site with financing cards and reports. Internal: Data Center, Trend Radar, Opportunity Map, and Dashboard. Retired research/funding/report routes redirect only. |
 
@@ -119,7 +119,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Current V4 lane skills must encode recurring failures in gates or evals.
 - Daily supervision and Codex handoff are routed through the consolidated Closure controller. Retired Hermes inbox items and dated May/June run reports are recoverable through Git history only.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
-- Skill Store governance is versioned separately as `v2.0.1`. Current Skill metadata, evals, UI metadata, registry entries, mirrors, dashboard, and prompt-contract gate enforce V4 semantic and seven-task automation boundaries while preserving independent application lanes.
+- Skill Store governance is versioned separately as `v2.1.0`. The 23 certified project Skills retain their prompt contract and runtime mirrors. Content registrations, AIP project Skills, and latest plugin-cache metadata are separately identified in the catalog, protected from cleanup, and never treated as extra certifications or enablement evidence. Multiline descriptions and available-source freshness are release-gated; source-owned prompts and invocation settings are unchanged.
 - WaveSight compatibility/internal pages deploy through GitHub Pages; the independent AI financing site deploys through its atomic VPS release path. Netlify remains retired.
 
 ## Current Pages

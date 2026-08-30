@@ -24,6 +24,8 @@
       candidate: "candidate",
       dormant: "dormant",
       retired: "retired",
+      registered: "内容登记",
+      external: "外部来源",
     }[value] || value || "unknown";
   }
 
@@ -101,7 +103,7 @@
   }
 
   function isProtectedSkill(skill) {
-    return Boolean(skill.current || /lane owner/i.test(skill.status || "") || ["current", "supporting", "governance"].includes(skill.lifecycle));
+    return Boolean(skill.cleanupProtected || skill.current || /lane owner/i.test(skill.status || "") || ["current", "supporting", "governance"].includes(skill.lifecycle));
   }
 
   function trashItems() {
@@ -114,6 +116,8 @@
       drift: "分叉",
       "store-only": "仅安装",
       "project-only": "仅项目",
+      "external-project": "AIP 项目来源",
+      "plugin-cache": "插件缓存",
       missing: "缺失",
     }[value] || value || "未知";
   }
@@ -164,6 +168,7 @@
       skill.cleanup_reasons?.join(" "),
       skill.localPath,
       skill.projectPath,
+      skill.sourceLabel,
     ].join(" ").toLowerCase();
     return haystack.includes(state.query.toLowerCase());
   }
@@ -219,8 +224,8 @@
       <p>${html(skill.description || skill.originalDescription || "暂无描述")}</p>
       <div class="tag-row">${tags(skill)}</div>
       <div class="skill-foot">
-        <span>${html(skill.usage_count || 0)} uses</span>
-        <span>${html(skill.last_used || "unused")}</span>
+        <span>${html(skill.sourceLabel || ".skill-store")}</span>
+        <span>${html(skill.last_used || "未观测使用")}</span>
       </div>
     </article>`;
   }
@@ -232,15 +237,17 @@
     const versionText = version.version ? `Skill Store v${version.version}` : "Skill Store";
     const quality = `${summary.evalCoverage || 0}% / ${summary.exampleCoverage || 0}%`;
     const metrics = [
-      ["发现", discovery.discovered ?? summary.total ?? skills.length],
-      ["启用", discovery.enabled ?? summary.current ?? 0],
-      ["禁用", discovery.configuredDisabled ?? 0],
+      ["清单总数", summary.total ?? skills.length],
+      ["本地启用", discovery.enabled ?? summary.current ?? 0],
+      ["本地禁用", discovery.configuredDisabled ?? 0],
       ["生产入口", summary.laneOwners || 0],
       ["待处理", summary.needsAction || 0],
       ["覆盖", quality],
     ];
     $("[data-metrics]").innerHTML = metrics.map(([label, value]) => `<article class="metric"><span>${html(label)}</span><strong>${html(value)}</strong></article>`).join("");
-    $("[data-generated]").textContent = `${versionText.replace("Skill Store v", "版本 ")} · 更新 ${data.meta?.generatedAt || "-"} · 已安装 ${summary.total || skills.length} · 发现 ${discovery.discovered ?? "-"} · 启用 ${discovery.enabled ?? "-"} · 禁用 ${discovery.configuredDisabled ?? "-"}`;
+    const external = skills.filter((skill) => skill.sourceKind === "external-project").length;
+    const plugins = skills.filter((skill) => skill.sourceKind === "plugin-cache").length;
+    $("[data-generated]").textContent = `${versionText.replace("Skill Store v", "版本 ")} · 更新 ${data.meta?.generatedAt || "-"} · 清单 ${summary.total || skills.length} · 外部项目 ${external} · 插件缓存 ${plugins}（不代表启用）· 启用/禁用仅统计本地发现目录`;
   }
 
   function renderLaneOwners() {
@@ -411,6 +418,9 @@
       </section>
       <section class="detail-grid">
         ${detailItem("版本", skill.version ? `v${skill.version}` : "未标注")}
+        ${detailItem("来源", skill.sourceLabel || ".skill-store")}
+        ${detailItem("插件缓存版本", skill.sourceVersion || "不适用")}
+        ${detailItem("治理登记", skill.catalogRegistered ? "已登记；不等于提示词认证" : skill.current ? "项目治理" : "目录条目")}
         ${detailItem("Lifecycle", lifecycleLabel(skill.lifecycle))}
         ${detailItem("清理动作", cleanupActionLabel(skill.cleanup_action))}
         ${detailItem("负责人", skill.cleanup_owner || "-")}
@@ -437,6 +447,7 @@
       <section class="detail-grid">
         ${detailItem("项目镜像", skill.projectPath)}
         ${detailItem("运行时安装", skill.localPath)}
+        ${detailItem("来源位置", skill.sourcePath)}
         ${detailItem("文件统计", `${formatSize(skill.sizeKB)} · ${skill.fileCount} files`)}
         ${detailItem("最近修改", skill.modifiedAt)}
       </section>

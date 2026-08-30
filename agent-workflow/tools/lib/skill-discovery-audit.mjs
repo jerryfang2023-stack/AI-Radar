@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { skillSummary } from "./skill-catalog.mjs";
 
 const SKIP_DIRECTORIES = new Set([".git", ".venv", "venv", "node_modules", "__pycache__", ".cache", "dist", "build"]);
 
@@ -58,7 +59,7 @@ export function auditSkillDiscovery(paths = defaultSkillDiscoveryPaths()) {
     const frontmatter = content.match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---/u)?.[1] || "";
     const name = frontmatter.match(/^name:\s*['"]?([^\r\n'"]+)/mu)?.[1]?.trim()
       || path.basename(path.dirname(file));
-    const description = frontmatter.match(/^description:\s*(?:['"]?)([^\r\n]+)/mu)?.[1]?.trim() || "";
+    const description = skillSummary(content).description || "";
     return {
       name,
       file,

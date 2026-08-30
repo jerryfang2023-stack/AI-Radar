@@ -130,7 +130,7 @@
     "assert:skill-store-dashboard": "node agent-workflow/tools/assert-skill-store-dashboard.mjs",
     "audit:skills": "node agent-workflow/tools/check-skill-ops.mjs --verbose",
     "repair:skills": "npm run sync:repo-skills && npm run sync:skill-store && npm run build:skill-store-dashboard && npm run audit:skills",
-    "test:skill-ops": "node --test agent-workflow/tools/tests/skill-ops-audit.test.mjs",
+    "test:skill-ops": "node --test agent-workflow/tools/tests/skill-ops-audit.test.mjs agent-workflow/tools/tests/skill-catalog.test.mjs",
     "check:custom-agent-smoke": "node agent-workflow/tools/run-custom-agent-smoke-evals.mjs",
     "eval:custom-agent-smoke": "node agent-workflow/tools/run-custom-agent-smoke-evals.mjs --execute",
     "audit:skill-discovery": "node agent-workflow/tools/audit-skill-discovery.mjs",

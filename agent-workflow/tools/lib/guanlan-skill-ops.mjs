@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { skillSummary } from "./skill-catalog.mjs";
 
 export const RULE_FILES = ["SKILL.md", "MEMORY.md"];
 export const RULE_DIRS = ["agents", "evals", "examples", "references"];
@@ -105,7 +106,7 @@ export function parseFrontmatter(content) {
     }
   }
 
-  return result;
+  return { ...result, ...skillSummary(content) };
 }
 
 export function readSkill(projectSkillDir, name) {

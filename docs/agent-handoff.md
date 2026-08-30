@@ -25,7 +25,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current funding taxonomy projection uses reviewed event decisions and evidence-backed event/entity classification assertions under `TAG-V4.1`; current counts are owned by the generated taxonomy review and consistency-gate reports rather than this handoff.
 - Current private-evidence counts are owned by the latest private-evidence gate rather than this handoff; the public repository contains locators only.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
-- Current Skill governance: Skill Store `v2.0.1`, with all 23 active governed Skills certified against `GPT-5.6-SKILL-V1.0`; use `npm run check:skill-ops` for the read-only release gate.
+- Current Skill governance: Skill Store `v2.1.0`, preserving all 23 active governed Skills certified against `GPT-5.6-SKILL-V1.0`. Content registrations, AIP project Skills, and latest plugin caches are separate inventory, not extra certifications or global installations. Use `npm run check:skill-ops` for the read-only release gate and `npm run build:skill-store-dashboard` to refresh available local sources.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 
 ## Current Entries

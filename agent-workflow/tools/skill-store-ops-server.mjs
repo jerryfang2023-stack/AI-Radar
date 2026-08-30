@@ -260,7 +260,7 @@ async function deleteSkills(request, response) {
       refused.push({ name, reason: "not in cleanup list" });
       continue;
     }
-    if (skill.current || ["current", "supporting", "governance"].includes(skill.lifecycle)) {
+    if (skill.cleanupProtected || skill.current || ["current", "supporting", "governance"].includes(skill.lifecycle)) {
       refused.push({ name, reason: "protected skill" });
       continue;
     }
@@ -403,7 +403,7 @@ async function markSkillsCleanup(request, response) {
       refused.push({ name, reason: "not found in Skill Store data" });
       continue;
     }
-    if (skill.current || ["current", "supporting", "governance"].includes(skill.lifecycle)) {
+    if (skill.cleanupProtected || skill.current || ["current", "supporting", "governance"].includes(skill.lifecycle)) {
       refused.push({ name, reason: "protected skill" });
       continue;
     }

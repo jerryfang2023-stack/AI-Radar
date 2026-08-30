@@ -7,7 +7,9 @@ import {
   defaultPaths,
   isCurrentLike,
   readGovernedSkills,
+  ruleDigest,
 } from "./lib/guanlan-skill-ops.mjs";
+import { catalogConfig, catalogSources, skillDirectories, skillSummary } from "./lib/skill-catalog.mjs";
 
 const PREFIX = "window.WaveSightLocalSkillStore = ";
 
@@ -133,8 +135,41 @@ export function evaluateSkillStoreDashboard(paths = dashboardContractPaths(), op
   for (const skill of skills) {
     if (seenNames.has(skill.name)) errors.push(`dashboard duplicate skill ${skill.name}`);
     seenNames.add(skill.name);
+    if (/^[|>][+-]?$/u.test(String(skill.originalDescription || "").trim())) errors.push(`${skill.name} has an unparsed multiline description`);
+    if (skill.sourceKind && !/^[a-f0-9]{64}$/u.test(skill.sourceDigest || "")) errors.push(`${skill.name} source digest is missing or invalid`);
+    if ((skill.catalogRegistered || ["plugin-cache", "external-project"].includes(skill.sourceKind))
+      && (!skill.cleanupProtected || skill.cleanup_candidate || skill.cleanup_action !== "keep")) {
+      errors.push(`${skill.name} registered/external Skill must be protected from cleanup`);
+    }
   }
   for (const location of findAbsoluteLocalPaths(payload)) errors.push(`${location} exposes an absolute local path`);
+
+  const catalog = catalogConfig(paths.projectSkillDir);
+  for (const registration of catalog.registrations || []) {
+    const row = dashboardSkills.get(registration.name);
+    if (!row?.catalogRegistered) errors.push(`dashboard missing content registration ${registration.name}`);
+  }
+  // CI may not have local/external sources. Check freshness wherever the source is present.
+  const checkDescription = (name, dir) => {
+    const expected = skillSummary(fs.readFileSync(path.join(dir, "SKILL.md"), "utf8")).description || "";
+    const row = dashboardSkills.get(name);
+    if (!row) errors.push(`dashboard missing source Skill ${name}`);
+    else {
+      if (row.originalDescription !== expected) errors.push(`${name} source description is stale; rebuild Skill Store`);
+      if (row.sourceDigest && row.sourceDigest !== ruleDigest(dir).digest) errors.push(`${name} source rules are stale; rebuild Skill Store`);
+    }
+  };
+  const localNames = new Set([...skillDirectories(paths.storeDir), ...skillDirectories(paths.projectSkillDir)]);
+  for (const name of localNames) {
+    const stored = path.join(paths.storeDir, name);
+    checkDescription(name, fs.existsSync(path.join(stored, "SKILL.md")) ? stored : path.join(paths.projectSkillDir, name));
+  }
+  for (const entry of catalogSources(catalog).entries) {
+    const name = localNames.has(entry.name) ? `${entry.sourceKind}:${entry.name}` : entry.name;
+    checkDescription(name, entry.dir);
+    const row = dashboardSkills.get(name);
+    if (row && (row.sourcePath !== entry.sourcePath || row.sourceVersion !== entry.sourceVersion)) errors.push(`${name} source location/version is stale`);
+  }
 
   for (const skill of readGovernedSkills(paths.projectSkillDir)) {
     const dashboardSkill = dashboardSkills.get(skill.name);

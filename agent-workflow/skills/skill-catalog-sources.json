@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "policy": "Inventory registration is not prompt certification, runtime installation, or usage evidence. Keep external project and plugin rules at their owning source; never delete them through Skill Store cleanup.",
+  "includePluginCache": true,
+  "projectSources": [
+    {
+      "id": "AIP/.agents/skills",
+      "label": "AIP 内容 OS",
+      "category": "Content / AIP",
+      "environment": "GUANLAN_AIP_SKILLS",
+      "homeRelativePath": "Documents/Fang/wiki/AIP/.agents/skills"
+    }
+  ],
+  "registrations": [
+    { "name": "guanlan-sharing-archive", "category": "Content / Guanlan", "owner": "观澜内容运营", "upstream": "群聊完整原文与排期", "downstream": "逐期档案、积分榜、人物稿", "gates": "原文先归档；身份和积分可回溯；发布授权" },
+    { "name": "guanlan-zaolang-profile-writer", "category": "Content / Guanlan", "owner": "观澜内容运营", "upstream": "嘉宾原文、核验背景、AIP 选题与标题", "downstream": "社交平台与网站/小程序双版本人物稿", "gates": "选题与标题确认；引语逐字回溯；四轮审校" },
+    { "name": "guanlan-zaolang-card-maker", "category": "Content / Guanlan", "owner": "观澜内容运营", "upstream": "单个嘉宾完整分享原文", "downstream": "1—5 张独立 3:4 人物观点卡", "gates": "原话和上下文核对；尺寸与 Logo 校验；手机总览；逐人确认" },
+    { "name": "guanlan-wechat-cover-maker", "category": "Content / Guanlan", "owner": "观澜内容运营", "upstream": "人物原文、专题稿或终审融资月报", "downstream": "2.35:1 公众号封面", "gates": "imagegen 插画与官方 VI；融资月报独立栏目署名；脚本及视觉验收" },
+    { "name": "pengyouquan-copywriting", "category": "Content / Writing", "owner": "内容工作流" },
+    { "name": "recording-processing", "category": "Content / Writing", "owner": "内容工作流" },
+    { "name": "sanjin-interview", "category": "Content / Writing", "owner": "内容工作流" },
+    { "name": "fbs-bookwriter", "category": "Content / Writing", "owner": "内容工作流" }
+  ]
+}

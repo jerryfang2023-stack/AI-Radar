@@ -5,6 +5,7 @@ import path from "node:path";
 import { dashboardContractPaths, evaluateSkillStoreDashboard } from "./assert-skill-store-dashboard.mjs";
 import { defaultPaths, readSkillStoreVersion, ruleDigest } from "./lib/guanlan-skill-ops.mjs";
 import { auditSkillDiscovery } from "./lib/skill-discovery-audit.mjs";
+import { catalogConfig, catalogSources, skillDirectories, skillSummary } from "./lib/skill-catalog.mjs";
 
 const root = process.cwd();
 const outputArg = process.argv
@@ -23,6 +24,12 @@ const actionLogsDir = path.join(root, "agent-workflow", "logs", "action-runs");
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const usageOverridesPath = path.join(projectSkillDir, "skill-usage-overrides.json");
 const cleanupObservationPath = path.join(projectSkillDir, "skill-cleanup-observation.json");
+const catalog = catalogConfig(projectSkillDir);
+const registrations = new Map((catalog.registrations || []).map((item) => [item.name, item]));
+const externalCatalog = catalogSources(catalog);
+for (const source of externalCatalog.sources) {
+  if (!source.available) throw new Error(`Skill catalog source unavailable: ${source.id}; preserving previous snapshot`);
+}
 
 const SKIP_DIRS = new Set([".git", "node_modules", ".venv", "venv", "__pycache__", ".cache", "dist", "build"]);
 const CLEANUP_UNUSED_DAYS = 30;
@@ -80,30 +87,11 @@ function exists(file) {
 }
 
 function dirNames(parent) {
-  if (!exists(parent)) return [];
-  return fs.readdirSync(parent, { withFileTypes: true })
-    .filter((item) => item.isDirectory())
-    .map((item) => item.name)
-    .filter((name) => !name.startsWith("."))
-    .sort((a, b) => a.localeCompare(b, "en"));
+  return skillDirectories(parent);
 }
 
 function parseFrontmatter(content) {
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return {};
-  const raw = match[1];
-  const meta = {};
-  const lines = raw.split(/\r?\n/);
-  for (const line of lines) {
-    const item = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
-    if (!item) continue;
-    const key = item[1];
-    const value = item[2].trim().replace(/^['"]|['"]$/g, "");
-    if (key === "name" || key === "description" || key === "license") meta[key] = value;
-  }
-  const version = raw.match(/\bversion:\s*["']?([0-9]+(?:\.[0-9]+){1,2})["']?/);
-  if (version) meta.version = version[1];
-  return meta;
+  return skillSummary(content);
 }
 
 function parseRegistry(file) {
@@ -323,6 +311,7 @@ function observationStartTime(skill, observation) {
 
 function cleanupProfile(skill, generatedDate, observation) {
   const reasons = [];
+  if (skill.cleanupProtected) return { score: 0, candidate: false, reasons, observationStart: "" };
   if (["current", "supporting", "governance"].includes(skill.lifecycle)) {
     return { score: 0, candidate: false, reasons, observationStart: "" };
   }
@@ -346,15 +335,15 @@ function cleanupProfile(skill, generatedDate, observation) {
 }
 
 function cleanupGovernance(skill) {
-  const protectedSkill = skill.current
+  const protectedSkill = skill.cleanupProtected || skill.current
     || /lane owner/i.test(skill.status || "")
     || ["current", "supporting", "governance"].includes(skill.lifecycle);
 
   if (protectedSkill) {
     return {
       cleanup_action: "keep",
-      cleanup_owner: "Skill Ops",
-      cleanup_reason: "protected current/supporting/governance skill",
+      cleanup_owner: skill.catalogOwner || "Skill Ops",
+      cleanup_reason: skill.cleanupProtected ? "registered content or externally owned Skill; inventory is not usage evidence" : "protected current/supporting/governance skill",
       replacement_skill: "",
     };
   }
@@ -408,20 +397,21 @@ function retiredRisk(name, registry) {
   return /^guanlan-(daily-observation|business-brief|trend-report|copy-style|copy-style-qc)/.test(name);
 }
 
-function buildSkill(name, registryMap, usageMap, generatedDate, observation) {
+function buildSkill(name, registryMap, usageMap, generatedDate, observation, external = null) {
   const registry = registryMap.get(name);
+  const registration = registrations.get(name);
   const storePath = path.join(storeDir, name);
   const projectPath = path.join(projectSkillDir, name);
-  const storeExists = exists(storePath);
-  const projectExists = exists(projectPath);
-  const primary = storeExists ? storePath : projectPath;
+  const storeExists = !external && exists(storePath);
+  const projectExists = !external && exists(projectPath);
+  const primary = external?.dir || (storeExists ? storePath : projectPath);
   const stats = scanDirStats(primary);
   const skillMd = path.join(primary, "SKILL.md");
   const frontmatter = parseFrontmatter(readText(skillMd));
   const projectDigest = ruleDigest(projectPath);
   const storeDigest = ruleDigest(storePath);
   const mirroredActual = storeExists && projectExists;
-  const syncState = !storeExists && projectExists
+  const syncState = external ? external.sourceKind : !storeExists && projectExists
     ? "project-only"
     : storeExists && !projectExists
       ? "store-only"
@@ -432,10 +422,10 @@ function buildSkill(name, registryMap, usageMap, generatedDate, observation) {
           : "missing";
   const current = Boolean(registry && /current|governance|supporting/i.test(registry.status));
   const role = registry?.status || (name.startsWith("guanlan-") ? "installed Guanlan skill" : "");
-  const hasEvals = hasFileOrDir(projectPath, ["evals"]) || hasFileOrDir(storePath, ["evals"]);
-  const hasExamples = hasFileOrDir(projectPath, ["examples"]) || hasFileOrDir(storePath, ["examples"]);
-  const hasMemory = hasFileOrDir(projectPath, ["MEMORY.md"]) || hasFileOrDir(storePath, ["MEMORY.md"]);
-  const hasReferences = hasFileOrDir(projectPath, ["references"]) || hasFileOrDir(storePath, ["references"]);
+  const hasEvals = hasFileOrDir(primary, ["evals"]) || (!external && hasFileOrDir(projectPath, ["evals"]));
+  const hasExamples = hasFileOrDir(primary, ["examples"]) || (!external && hasFileOrDir(projectPath, ["examples"]));
+  const hasMemory = hasFileOrDir(primary, ["MEMORY.md"]) || (!external && hasFileOrDir(projectPath, ["MEMORY.md"]));
+  const hasReferences = hasFileOrDir(primary, ["references"]) || (!external && hasFileOrDir(projectPath, ["references"]));
   const usage = usageMap.get(name) || { usage_count: 0, last_used: "" };
   const issues = [];
   const mirrorExpected = registry?.mirroredInStore !== "no";
@@ -450,16 +440,24 @@ function buildSkill(name, registryMap, usageMap, generatedDate, observation) {
 
   const baseSkill = {
     name,
-    category: categoryFor(name, registry),
+    category: external?.category || registration?.category || categoryFor(name, registry),
+    sourceKind: external?.sourceKind || (storeExists ? "skill-store" : "project"),
+    sourceLabel: external?.sourceLabel || (storeExists ? ".skill-store" : "WaveSight"),
+    sourcePath: external?.sourcePath || (storeExists ? `.skill-store/${name}` : relProjectPath(projectPath)),
+    sourceVersion: external?.sourceVersion || "",
+    sourceDigest: ruleDigest(primary).digest,
+    catalogRegistered: Boolean(registration),
+    catalogOwner: registration?.owner || (external ? external.sourceLabel : ""),
+    cleanupProtected: Boolean(registration || external),
     isGuanlan: Boolean(registry || name.startsWith("guanlan-") || name === "follow-builders"),
     current,
     role,
     lane: registry?.lane || "",
-    status: registry?.status || "",
+    status: registry?.status || (external?.sourceKind === "plugin-cache" ? "缓存 / 启用待核验" : external ? "项目来源 / 未全局安装" : registration ? "内容登记 / 非认证" : ""),
     responsibility: registry?.responsibility || "",
-    upstream: registry?.upstream || "",
-    downstream: registry?.downstream || "",
-    gates: registry?.gates || "",
+    upstream: registry?.upstream || registration?.upstream || "",
+    downstream: registry?.downstream || registration?.downstream || "",
+    gates: registry?.gates || registration?.gates || "",
     evalCoverage: registry?.evalCoverage || "",
     learning: registry?.learning || "",
     mirroredExpected: registry?.mirroredInStore || "",
@@ -480,7 +478,7 @@ function buildSkill(name, registryMap, usageMap, generatedDate, observation) {
     hasConfig: stats.hasConfig,
     hasDeps: stats.hasDeps,
     hasTemplates: stats.hasTemplates,
-    lifecycle: lifecycleFor({ registry, role, usage, retired: retiredRisk(name, registry) }),
+    lifecycle: external ? "external" : registration && !registry ? "registered" : lifecycleFor({ registry, role, usage, retired: retiredRisk(name, registry) }),
     installedAt: stats.installedAt,
     installedTime: stats.installedTime,
     last_used: usage.last_used,
@@ -541,7 +539,10 @@ const cleanupObservation = readCleanupObservation();
 const names = new Set([...dirNames(storeDir), ...dirNames(projectSkillDir), ...registry.keys()]);
 const usageMap = usageMapFor(names);
 const generatedAt = new Date();
-const skills = [...names].map((name) => buildSkill(name, registry, usageMap, generatedAt, cleanupObservation)).sort((a, b) => {
+const skills = [
+  ...[...names].map((name) => buildSkill(name, registry, usageMap, generatedAt, cleanupObservation)),
+  ...externalCatalog.entries.map((entry) => buildSkill(names.has(entry.name) ? `${entry.sourceKind}:${entry.name}` : entry.name, registry, usageMap, generatedAt, cleanupObservation, entry)),
+].sort((a, b) => {
   if (a.current !== b.current) return a.current ? -1 : 1;
   if (a.isGuanlan !== b.isGuanlan) return a.isGuanlan ? -1 : 1;
   return a.name.localeCompare(b.name, "en");
@@ -573,6 +574,8 @@ const payload = {
     projectSkillDir: relProjectPath(projectSkillDir),
     registryPath: relProjectPath(registryPath),
     cleanupObservationPath: relProjectPath(cleanupObservationPath),
+    catalogSources: externalCatalog.sources,
+    catalogPolicy: catalog.policy || "",
     version: readSkillStoreVersion(skillOpsPaths),
     cleanupPolicy: CLEANUP_POLICY,
     summary: {
