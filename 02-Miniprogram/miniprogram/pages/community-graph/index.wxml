@@ -18,7 +18,7 @@
 <view class="page-shell">
   <app-header title="角色图谱" show-back fallback-url="/pages/community/index" />
   <view class="graph-page">
-    <view wx:if="{{loading}}" class="service-state">正在加载会员资料…</view>
+    <view wx:if="{{showLoading}}" class="community-skeleton" aria-label="加载中"><view></view><view></view><view></view></view>
     <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
     <view wx:if="{{experience}}" class="experience-note">隔离体验 · 成员列表为精选样例</view>
     <block wx:if="{{mode === 'graph'}}">

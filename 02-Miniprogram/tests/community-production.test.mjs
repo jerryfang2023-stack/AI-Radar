@@ -16,6 +16,7 @@ function pageFor(name, request) {
       if (id.endsWith("community-access.js")) return { requireCommunityMember: () => true };
       if (id.endsWith("member.js")) return { getCommunity: () => ({ status: "joined" }), saveCommunityProfile: (data) => events.push(["save", data]) };
       if (id.endsWith("community-data.js")) return require("../miniprogram/utils/community-data.js");
+      if (id.endsWith("community-loading.js")) return require("../miniprogram/utils/community-loading.js");
       if (id.endsWith("tab-bar.js") || id.endsWith("sharing-preview.js") || id.endsWith("community-case-store.js")) return {};
       throw new Error(id);
     },
@@ -118,6 +119,28 @@ test("directory refresh failures clear earlier protected member records", async 
   await page.refresh();
   assert.equal(page.data.member, null);
   assert.equal(page.data.members.length, 0);
+});
+
+test("role map sorts actual counts and preserves supply meanings after reordering", async () => {
+  const roles = [
+    { name: "行业资源方", count: 1, members: [{ id: "resource" }] },
+    { name: "流量与增长", count: 5, members: [] },
+    { name: "出海与跨境", count: 2, members: [] },
+    { name: "企业服务落地", count: 32, members: [{ id: "builder" }] },
+    { name: "技术构建者", count: 2, members: [] },
+    { name: "资本与研究", count: 3, members: [] },
+  ];
+  const { page } = pageFor("community-graph", async () => ({ members: [], roles }));
+  await page.onLoad();
+  assert.equal(page.data.activeRoleData.name, "企业服务落地");
+  assert.equal(page.data.supply[0].count, 8);
+  assert.equal(page.data.supply[1].count, 32);
+  page.selectRole({ currentTarget: { dataset: { index: 1 } } });
+  const selected = page.data.activeRoleData.name;
+  roles[4].count = 50;
+  await page.refresh();
+  assert.equal(page.data.roles[0].name, "技术构建者");
+  assert.equal(page.data.activeRoleData.name, selected);
 });
 
 test("bounty answer waits for server acknowledgement and cannot report success on failure", async () => {

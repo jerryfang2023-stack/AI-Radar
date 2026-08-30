@@ -3,6 +3,7 @@ import math
 import re
 import secrets
 import sqlite3
+import time
 import hashlib
 import hmac
 import json
@@ -59,6 +60,22 @@ def utcnow():
 
 def iso(value):
     return value.astimezone(timezone.utc).isoformat(timespec="seconds")
+
+
+def enable_wal(conn):
+    # Changing journal mode can return SQLITE_BUSY immediately during worker startup,
+    # even with busy_timeout set. Retry this idempotent pragma, not transactions.
+    deadline = time.monotonic() + 10
+    while True:
+        try:
+            conn.execute("PRAGMA journal_mode=WAL")
+            return
+        except sqlite3.OperationalError as exc:
+            code = getattr(exc, "sqlite_errorcode", 0) & 0xFF
+            busy = code in (sqlite3.SQLITE_BUSY, sqlite3.SQLITE_LOCKED)
+            if not busy or time.monotonic() >= deadline:
+                raise
+            time.sleep(0.05)
 
 
 def ensure_column(conn, table, name, definition):
@@ -141,7 +158,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
 
     def init_db():
         with closing(db()) as conn:
-            conn.execute("PRAGMA journal_mode=WAL")
+            enable_wal(conn)
             conn.executescript("""
                 CREATE TABLE IF NOT EXISTS users (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,

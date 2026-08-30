@@ -2,12 +2,12 @@
   <app-header title="悬赏令" show-back fallback-url="/pages/community/index" />
   <view class="bounty-page">
     <view wx:if="{{experience}}" class="experience-note">隔离体验 · 内容与操作仅保存于本机</view>
-    <view wx:if="{{busy}}" class="service-state">正在处理…</view><button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
+    <view wx:if="{{showLoading}}" class="community-skeleton" aria-label="加载中"><view></view><view></view><view></view></view><button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
     <block wx:if="{{mode === 'list'}}">
       <view class="hero"><text>FOUNDER CASE · 悬赏令</text><text>把真实问题，交给真正懂它的人</text><view class="hero-stats"><view><text>{{activeCount}}</text><text>进行中</text></view><view><text>10—30</text><text>积分悬赏</text></view><view><text>72h</text><text>默认周期</text></view></view></view>
       <button class="create" bindtap="createCase"><view><text class="kicker">FOUNDER</text><text>发起一个悬赏令</text></view><text>＋</text></button>
       <view class="filters"><button wx:for="{{filters}}" wx:key="*this" class="{{activeFilter === item ? 'active' : ''}}" data-value="{{item}}" bindtap="switchFilter">{{item}}</button></view>
-      <view wx:if="{{!bounties.length}}" class="detail-card copy">暂无相关悬赏令</view>
+      <view wx:if="{{loaded && !error && !bounties.length}}" class="detail-card copy">暂无相关悬赏令</view>
       <button wx:for="{{bounties}}" wx:key="id" class="case-card" data-id="{{item.id}}" bindtap="openCase"><view><text>{{item.category}} · {{item.mode}}</text><text>{{item.points}} 积分</text></view><text class="question">{{item.question}}</text><text>{{item.founder}} · {{item.role}}</text><view class="footer"><text>{{item.answers}} 个回答 · {{item.participants}} 位参与者</text><text>{{item.status}}</text></view></button>
     </block>
     <block wx:elif="{{mode === 'create'}}">

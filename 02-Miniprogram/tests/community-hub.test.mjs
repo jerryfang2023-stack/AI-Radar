@@ -39,6 +39,7 @@ test("features three distinct real archives without homepage schedules or person
     Page(config) { page = config; },
     require(id) {
       if (id.endsWith("community-data.js")) return data;
+      if (id.endsWith("community-loading.js")) return require("../miniprogram/utils/community-loading.js");
       if (id.endsWith("community-access.js")) return { requireCommunityMember(callback) { if (memberAllowed) callback(); } };
       if (id.endsWith("tab-bar.js")) return { syncTabBar(instance, index) { tabIndex = index; } };
       if (id.endsWith("experience.js")) return { isExperience() { return false; }, readExperience() { return null; } };
@@ -77,9 +78,10 @@ test("features three distinct real archives without homepage schedules or person
 });
 
 test("publishes only public member fields in the packaged directory", () => {
-  assert.equal(data.members.length, 15);
+  assert.equal(data.members.length, 14);
   assert.equal(data.roles.length, 6);
-  assert.equal(data.leaderboard.length, 15);
+  assert.equal(data.leaderboard.length, 14);
+  assert.doesNotMatch(dataSource, /sylvan/i);
   for (const member of data.members) {
     for (const privateField of ["phone", "wechat", "review", "internal", "contact"]) assert.equal(member[privateField], undefined);
   }

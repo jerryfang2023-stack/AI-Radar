@@ -1,19 +1,19 @@
 <view class="page-shell">
   <app-header title="积分榜" show-back fallback-url="/pages/community/index" right-label="{{mode === 'list' ? '积分规则' : ''}}" bind:righttap="openRules" />
   <view class="points-page">
-    <view wx:if="{{loading}}" class="service-state">正在加载积分…</view>
+    <view wx:if="{{showLoading}}" class="community-skeleton" aria-label="加载中"><view></view><view></view><view></view></view>
     <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
     <view wx:if="{{experience}}" class="experience-note">隔离体验 · 排名与积分为示例数据</view>
     <block wx:if="{{mode === 'list'}}">
       <view class="leaderboard-hero"><text>COMMUNITY LEADERBOARD</text><text>积分榜</text><view><view class="span"><text class="strong">{{leaderboard.length}}</text><text class="small">入榜成员</text></view><view class="span"><text class="strong">{{sessionCount}}</text><text class="small">已完成场次</text></view><view class="span"><text class="strong">{{updatedAt}}</text><text class="small">最近更新</text></view></view></view>
       <button class="my-rank" bindtap="openDetail"><view><text class="small">我的当前排名</text><text class="strong">{{myRank}} · {{myName}}</text></view><view><text class="strong">{{myPoints}}</text><text class="small">查看积分详情 ›</text></view></button>
       <view class="section-head"><view><text>ALL MEMBERS</text><text>全部成员</text></view><text>按积分从高到低</text></view>
-      <view wx:if="{{!leaderboard.length}}" class="empty-state">暂无入榜成员</view>
+      <view wx:if="{{loaded && !error && !leaderboard.length}}" class="empty-state">暂无入榜成员</view>
       <view class="rank-list"><view wx:for="{{leaderboard}}" wx:key="memberId" class="rank-row {{item.isMe ? 'me' : ''}}"><text class="rank">{{item.rank < 10 ? '0' + item.rank : item.rank}}</text><text class="avatar">{{item.avatar}}</text><view><text class="strong">{{item.name}}</text><text class="small">{{item.note}}</text></view><view><text class="strong">{{item.points}}</text><text class="small">积分</text></view></view></view>
     </block>
     <block wx:elif="{{mode === 'detail'}}">
       <view class="detail-hero"><text>MY POINTS</text><text>{{myPoints}}</text><text>累计积分</text><view><view class="span"><text class="strong">{{myRank}}</text><text class="small">当前排名</text></view><view class="span"><text class="strong">{{latestPoints}}</text><text class="small">最近积分</text></view></view></view>
-      <text class="detail-title">积分记录</text><view wx:if="{{!ledger.length}}" class="empty-state">暂无已同步的积分记录</view><view class="ledger"><view wx:for="{{ledger}}" wx:key="id"><text>{{item.date}}</text><text>{{item.title}}</text><text class="strong">{{item.points}}</text></view></view>
+      <text class="detail-title">积分记录</text><view wx:if="{{loaded && !error && !ledger.length}}" class="empty-state">暂无已同步的积分记录</view><view class="ledger"><view wx:for="{{ledger}}" wx:key="id"><text>{{item.date}}</text><text>{{item.title}}</text><text class="strong">{{item.points}}</text></view></view>
     </block>
     <block wx:else>
       <view class="rules-hero"><text>COMMUNITY POINTS</text><text>每一次真实互动，都有记录</text></view>

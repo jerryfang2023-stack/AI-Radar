@@ -2,6 +2,7 @@ const { isExperience } = require("../../utils/experience.js");
 const { requireCommunityMember } = require("../../utils/community-access.js");
 const { communityRequest } = require("../../utils/payment.js");
 const store = require("../../utils/community-case-store.js");
+const { readCommunityPage } = require("../../utils/community-loading.js");
 
 Page({
   data: { mode: "list", experience: false, activeFilter: "全部", filters: ["全部", "进行中", "待结案", "已结案", "我的"], bounties: [], item: null, form: {}, response: {}, allocation: {}, own: false, participating: false, error: "", busy: false, selfId: null, activeCount: 0, approvedResponses: [] },
@@ -9,13 +10,13 @@ Page({
     if (!requireCommunityMember()) return;
     this.caseId = options.id;
     this.setData({ experience: isExperience() });
-    this.refresh();
+    return this.refresh();
   },
-  onShow() { if (this.loaded && !this.data.busy) this.refresh(); },
+  onShow() { if (this.loaded && !this.data.busy && this.data.mode !== "create") return this.refresh(); },
   async run(action) {
     if (this.data.busy) return;
     this.setData({ busy: true, error: "" });
-    try { await action(); }
+    try { if (this._communityRead) await this._communityRead; await action(); }
     catch (error) {
       this.setData({ error: error.message });
       if (error.status === 401 || error.status === 403 || error.statusCode === 401 || error.statusCode === 403) this.setData({ item: null, bounties: [], response: {}, form: {}, own: false, approvedResponses: [] });
@@ -23,10 +24,18 @@ Page({
     }
     finally { this.setData({ busy: false }); }
   },
-  refresh() { return this.run(() => this.load()); },
+  refresh() {
+    return readCommunityPage(this, () => this.load(), () => this.setData({ item: null, bounties: [], response: {}, form: {}, own: false, approvedResponses: [] }));
+  },
+  applyList(result) {
+    const all = result.items;
+    const filter = this.data.activeFilter;
+    const filtered = all.filter((item) => filter === "全部" || (filter === "我的" ? item.own || item.owner === result.selfId || item.participating || (item.responses || []).some((answer) => answer.id === result.selfId) : item.status === filter));
+    this.setData({ selfId: result.selfId, bounties: filtered, activeCount: all.filter((item) => item.status === "进行中").length, loaded: true, showLoading: false });
+  },
   async load() {
     const preview = this.data.experience;
-    const result = preview ? { items: store.listCases(), selfId: store.SELF } : await communityRequest(this.caseId ? "cases/" + encodeURIComponent(this.caseId) : "cases");
+    const result = preview ? { items: store.listCases(), selfId: store.SELF } : await communityRequest(this.caseId ? "cases/" + encodeURIComponent(this.caseId) : "cases", this.caseId ? {} : { onCached: (snapshot) => this.applyList(snapshot) });
     this.setData({ selfId: result.selfId });
     if (this.caseId) {
       const item = preview ? result.items.find((entry) => entry.id === this.caseId) : result.item;
@@ -37,10 +46,7 @@ Page({
         response: { ...mine, ...draft }, approvedResponses: (item.responses || []).filter((entry) => preview || entry.status === "approved"),
         participating: preview ? (item.joined || []).includes(store.SELF) : item.participating });
     } else {
-      const all = result.items;
-      const filter = this.data.activeFilter;
-      const filtered = all.filter((item) => filter === "全部" || (filter === "我的" ? item.own || item.owner === result.selfId || item.participating || (item.responses || []).some((answer) => answer.id === result.selfId) : item.status === filter));
-      this.setData({ bounties: filtered, activeCount: all.filter((item) => item.status === "进行中").length });
+      this.applyList(result);
     }
     this.loaded = true;
   },

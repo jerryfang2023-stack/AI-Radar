@@ -2,8 +2,9 @@ const { archives, bounties, getMember } = require("../../utils/community-data.js
 const { requireCommunityMember } = require("../../utils/community-access.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
 const { isExperience, readExperience, saveExperience } = require("../../utils/experience.js");
-const { communityRequest, fetchMembership } = require("../../utils/payment.js");
+const { communityRequest, fetchMembership, prefetchCommunity, clearCommunityCache } = require("../../utils/payment.js");
 const { syncCommunity, syncWallet, syncMembership } = require("../../utils/member.js");
+const { readCommunityPage } = require("../../utils/community-loading.js");
 
 Page({
   data: {
@@ -20,19 +21,23 @@ Page({
     syncTabBar(this, 2);
     this.refresh();
     if (!preview) fetchMembership().then((result) => {
-      if (result.community) syncCommunity(result.community);
+      if (result.community) {
+        syncCommunity(result.community);
+        if (result.community.status === "joined") prefetchCommunity();
+        else clearCommunityCache();
+      }
       if (result.wallet) syncWallet(result.wallet);
       if (result.membership) syncMembership(result.membership);
     }).catch(() => {});
   },
-  async refresh() {
-    this.setData({ loading: true, error: "" });
-    try {
-      const result = readExperience() ? { archives: archives.slice(0, 5), bounty: bounties[0], featuredMembers: ["aihui", "zengjingsi", "guowei", "zizhe"].map(getMember), memberCount: 54 } : await communityRequest("home");
-      const rows = result.archives.map((item) => ({ ...item, dateShort: item.date.slice(5) }));
-      this.setData({ featuredArchive: rows[0] || null, olderArchives: rows.slice(1, 5), bounty: result.bounty, memberCount: result.memberCount, featuredMembers: result.featuredMembers.map((member) => ({ ...member, roleShort: member.role.split("/")[0].trim() })) });
-    } catch (error) { this.setData({ error: error.message }); }
-    finally { this.setData({ loading: false }); }
+  refresh() {
+    return readCommunityPage(this, async () => {
+      const apply = (result) => {
+        const rows = result.archives.map((item) => ({ ...item, dateShort: item.date.slice(5) }));
+        this.setData({ loaded: true, showLoading: false, featuredArchive: rows[0] || null, olderArchives: rows.slice(1, 5), bounty: result.bounty, memberCount: result.memberCount, featuredMembers: result.featuredMembers.map((member) => ({ ...member, roleShort: member.role.split("/")[0].trim() })) });
+      };
+      apply(readExperience() ? { archives: archives.slice(0, 5), bounty: bounties[0], featuredMembers: ["aihui", "zengjingsi", "guowei", "zizhe"].map(getMember), memberCount: 54 } : await communityRequest("home", { onCached: apply }));
+    });
   },
   switchExperience() {
     const preview = readExperience();

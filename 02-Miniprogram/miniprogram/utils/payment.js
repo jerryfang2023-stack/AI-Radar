@@ -2,6 +2,27 @@ const API_ROOT = "https://www.zkdlj.vip/api/v1";
 const TOKEN_KEY = "guanlan_api_token_v1";
 const VISITOR_KEY = "guanlan_content_visitor_v1";
 const analytics = require("./analytics.js");
+const communityCache = new Map();
+const communityPending = new Map();
+const COMMUNITY_FRESH_MS = 30000;
+const COMMUNITY_HOME_KEY = "guanlan_public_community_home_v2";
+let communityIdentity;
+let communityGeneration = 0;
+
+function clearCommunityCache() {
+  communityCache.clear();
+  communityPending.clear();
+  communityGeneration += 1;
+}
+
+function communityScope() {
+  const identity = wx.getStorageSync(TOKEN_KEY) || "";
+  if (identity !== communityIdentity) {
+    clearCommunityCache();
+    communityIdentity = identity;
+  }
+  return identity;
+}
 
 function apiRequest(path, options = {}) {
   return new Promise((resolve, reject) => {
@@ -164,8 +185,53 @@ async function fetchMembership() {
 }
 
 async function communityRequest(path, options = {}) {
-  if (path === "home" && !options.method) return apiRequest("/community/home");
-  return withExistingToken((token) => apiRequest(`/community/${path}`, { ...options, token }));
+  const identity = communityScope();
+  const reading = !options.method || options.method === "GET";
+  // Only short-lived, identity-scoped list snapshots live in memory. Never store
+  // full archives, personal profile forms or drafts; writes invalidate all lists.
+  const cacheable = reading && ["home", "points", "cases", "program", "directory"].includes(path);
+  if (!reading) {
+    clearCommunityCache();
+    wx.removeStorageSync(COMMUNITY_HOME_KEY);
+  }
+  const generation = communityGeneration;
+  let cached = cacheable ? communityCache.get(path) : null;
+  if (path === "home" && !cached) {
+    const stored = wx.getStorageSync(COMMUNITY_HOME_KEY);
+    if (stored && Number.isFinite(stored.time) && stored.time <= Date.now() && Array.isArray(stored.value?.archives) && Array.isArray(stored.value?.featuredMembers)) cached = stored;
+  }
+  const copy = (value) => JSON.parse(JSON.stringify(value));
+  if (cached && Date.now() - cached.time < COMMUNITY_FRESH_MS && !options.force) return copy(cached.value);
+  if (cached && Date.now() - cached.time < (path === "home" ? 300000 : COMMUNITY_FRESH_MS * 2) && options.onCached) options.onCached(copy(cached.value));
+  if (cacheable && communityPending.has(path)) return communityPending.get(path).then(copy);
+  const request = (path === "home" && reading ? apiRequest("/community/home") : withExistingToken((token) => apiRequest(`/community/${path}`, { ...options, token })))
+    .then((result) => {
+      if (communityScope() !== identity || generation !== communityGeneration) {
+        throw Object.assign(new Error("数据已更新，请重试"), { code: "COMMUNITY_CHANGED" });
+      }
+      // A read started during a write may still contain the pre-write state.
+      if (!reading) clearCommunityCache();
+      if (cacheable) {
+        const snapshot = { value: copy(result), time: Date.now() };
+        communityCache.set(path, snapshot);
+        if (path === "home") {
+          try { wx.setStorageSync(COMMUNITY_HOME_KEY, snapshot); } catch (_) { /* Storage failure must not hide live content. */ }
+        }
+      }
+      return result;
+    }).catch((error) => {
+      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "AUTH_REQUIRED") clearCommunityCache();
+      throw error;
+    }).finally(() => {
+      if (communityPending.get(path) === request) communityPending.delete(path);
+    });
+  if (cacheable) communityPending.set(path, request);
+  return request.then(copy);
+}
+
+function prefetchCommunity() {
+  if (!hasAuthToken()) return Promise.resolve();
+  return Promise.all(["program", "cases", "points", "directory"].map((path) => communityRequest(path).catch(() => null)));
 }
 
 async function recordMemberBehavior(type, subjectId, behaviorDate) {
@@ -236,6 +302,8 @@ module.exports = {
   hasAuthToken,
   fetchMembership,
   communityRequest,
+  prefetchCommunity,
+  clearCommunityCache,
   recordMemberBehavior,
   bindPhoneNumber,
   purchaseMembership,

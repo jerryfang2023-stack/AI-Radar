@@ -1,5 +1,5 @@
 const schedules = [
-  { id: "schedule-12", issue: "第 12 场", day: "今天", date: "08.27 20:00", title: "Physical AI 与产业落地", speakers: "梓哲、朱叫兽、Sylvan", status: "进行中", note: "三位成员依次分享，每人 15 分钟。" },
+  { id: "schedule-12", issue: "第 12 场", day: "今天", date: "08.27 20:00", title: "Physical AI 与产业落地", speakers: "梓哲、朱叫兽", status: "进行中", note: "两位成员依次分享，每人 15 分钟。" },
   { id: "schedule-13", issue: "第 13 场", day: "明天", date: "08.28 20:00", title: "数字员工与传统企业提效", speakers: "苏茂金、黄文强、谷先生", status: "排期", note: "围绕数字员工、门店增长与组织提效展开。" },
 ];
 
@@ -49,7 +49,6 @@ const members = [
   { id: "jasper", name: "jasper", avatar: "J", city: "新加坡", company: "bbx.com", role: "Founder / 创业者", industry: "金融与海外资产", ai: ["AI 应用", "数据分析"], project: "推进海外金融资产数据分析产品 bbx.com。", ability: "区块链与海外资产研究。", need: "寻找具备海外业务经验的创业者。" },
   { id: "zizhe", name: "梓哲", avatar: "梓", city: "北京", company: "云南沃茂科技公司", role: "投资 / 研究", industry: "生态环境、媒体、智慧农业机器人", ai: ["Agent", "AI 产品", "AI Coding"], project: "智慧农业机器人应用。", ability: "AI 行业研究与应用、生态环境和智慧农业机器人。", need: "交流 AI 出海、Physical AI 与智慧农业机器人应用。" },
   { id: "zhujiaoshou", name: "朱叫兽", avatar: "朱", city: "上海", company: "上海帷尔自动化有限公司", role: "Founder / 创业者", industry: "跨境出海、机器人", ai: ["Agent", "AI Coding"], project: "工业自动化与机器人出海业务。", ability: "外贸、跨境业务、GEO 与机器人行业实践。", need: "寻找用 AI 推动业务增长和海外推广的同行。" },
-  { id: "sylvan", name: "Sylvan", avatar: "S", city: "南京", company: "长三角电商直播示范区", role: "产业方", industry: "文旅、政府、教育", ai: ["AI 产品"], project: "电商直播与文旅产业项目。", ability: "产业策划、商务与政府平台资源。", need: "寻找愿意在南京落地、具有市场效用的 AI 产品或团队。" },
   { id: "sumaokin", name: "苏茂金", avatar: "苏", city: "广州", company: "广州市飞鑫信息科技有限公司", role: "Founder / 创业者", industry: "运营商、大数据", ai: ["AI 产品", "AI 应用"], project: "AI 在企业管理与数字员工中的应用。", ability: "产品设计、大数据平台应用与数据治理。", need: "交流 AI 数字员工和 AI ERP 的产品实践。" },
   { id: "huangwenqiang", name: "黄文强", avatar: "黄", city: "桂林", company: "桂林三体网络科技有限公司", role: "运营 / 增长", industry: "实体门店", ai: ["LLM", "Agent", "AI Coding"], project: "帮助实体门店开展线上运营和流量增长。", ability: "产品设计、运营策划与流量运营。", need: "了解更多 AI 落地应用实操方法和 Agent 实践。" },
   { id: "gu", name: "谷先生", avatar: "谷", city: "石家庄", company: "个人实践", role: "Founder / 创业者", industry: "企业服务", ai: ["AI 产品", "AI 应用"], project: "OEM 代工、直播与货架电商、跨境电商。", ability: "销售与企业服务。", need: "用 AI 优化组织人效、提升工作效率。" },
@@ -62,7 +61,7 @@ const members = [
 ];
 
 const roles = [
-  { name: "行业资源方", count: 12, share: "25.0%", description: "场景入口 · 行业渠道 · 产业关系", memberIds: ["sylvan", "zengjingsi", "zizhe"] },
+  { name: "行业资源方", count: 12, share: "25.0%", description: "场景入口 · 行业渠道 · 产业关系", memberIds: ["zengjingsi", "zizhe"] },
   { name: "流量与增长", count: 7, share: "14.6%", description: "投流 · 内容矩阵 · 获客链路", memberIds: ["aihui", "huangwenqiang", "xiaowang"] },
   { name: "出海与跨境", count: 10, share: "20.8%", description: "海外渠道 · 本地化 · 跨境供应链", memberIds: ["aze", "ayao", "zhujiaoshou"] },
   { name: "企业服务落地", count: 8, share: "16.7%", description: "ToB 交付 · 流程改造 · 大客户", memberIds: ["sumaokin", "gu", "guowei"] },
@@ -71,7 +70,7 @@ const roles = [
 ];
 
 const leaderboard = [
-  ["苏茂金", "苏", 87, "分享互动与内容共建", "sumaokin"], ["葡萄", "葡", 83, "多期讨论与有效补充"], ["曾景斯", "曾", 81, "医疗议题与连续互动", "zengjingsi"], ["老方", "方", 80, "主持、整理与现场问答", "me"], ["朱枫", "朱", 74, "行业分享与讨论共建"], ["国伟", "国", 71, "实体增长与案例分享", "guowei"], ["杨旭", "杨", 68, "金融实践与主题分享", "yangxu"], ["爱辉", "爱", 66, "AI 应用与投流实践", "aihui"], ["阿澤", "澤", 61, "内容产品与跨境分享", "aze"], ["张武", "张", 58, "产业实践与持续互动"], ["小王", "王", 55, "Agent 工作流与内容实践", "xiaowang"], ["黄文强", "黄", 54, "实体门店与运营交流", "huangwenqiang"], ["梓哲", "梓", 51, "智慧农业与行业研究", "zizhe"], ["阿耀", "耀", 48, "海外短剧与内容实践", "ayao"], ["Sylvan", "S", 46, "产业落地与资源连接", "sylvan"],
+  ["苏茂金", "苏", 87, "分享互动与内容共建", "sumaokin"], ["葡萄", "葡", 83, "多期讨论与有效补充"], ["曾景斯", "曾", 81, "医疗议题与连续互动", "zengjingsi"], ["老方", "方", 80, "主持、整理与现场问答", "me"], ["朱枫", "朱", 74, "行业分享与讨论共建"], ["国伟", "国", 71, "实体增长与案例分享", "guowei"], ["杨旭", "杨", 68, "金融实践与主题分享", "yangxu"], ["爱辉", "爱", 66, "AI 应用与投流实践", "aihui"], ["阿澤", "澤", 61, "内容产品与跨境分享", "aze"], ["张武", "张", 58, "产业实践与持续互动"], ["小王", "王", 55, "Agent 工作流与内容实践", "xiaowang"], ["黄文强", "黄", 54, "实体门店与运营交流", "huangwenqiang"], ["梓哲", "梓", 51, "智慧农业与行业研究", "zizhe"], ["阿耀", "耀", 48, "海外短剧与内容实践", "ayao"],
 ].map((item, index) => ({ rank: index + 1, name: item[0], avatar: item[1], points: item[2], note: item[3], memberId: item[4] || "" }));
 
 const pointRules = {

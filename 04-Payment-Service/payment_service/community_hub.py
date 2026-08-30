@@ -57,13 +57,15 @@ def register_routes(app, *, db, auth_required, user_by_id):
             return jsonify(error={"code": "COMMUNITY_REQUIRED", "message": "请先加入社群"}), 403
         result = app.community_client.hub("points", viewer=member_id)
         # Remote points already contain every community activity and bounty award.
-        # Add only app-earned lifetime points, never spendable balance or a second import.
+        # Management grants unlock account privileges; they are not social activity.
+        # Exclude their net value from ranks and details without changing the wallet.
         with closing(db()) as conn:
             additions = {}
             for user in conn.execute("SELECT id,community_member_id,point_lifetime FROM users WHERE community_member_id IS NOT NULL AND merged_into_user_id IS NULL"):
                 imported = conn.execute("SELECT COALESCE(SUM(points),0) FROM point_ledger WHERE user_id=? AND source_type='community_history'", (user["id"],)).fetchone()[0]
-                additions[user["community_member_id"]] = additions.get(user["community_member_id"], 0) + max(0, int(user["point_lifetime"] or 0) - int(imported))
-            own_ledger = conn.execute("SELECT id,label,points,created_at FROM point_ledger WHERE user_id=? AND source_type!='community_history' AND points>0 ORDER BY created_at DESC,id DESC", (g.user_id,)).fetchall()
+                management = conn.execute("SELECT COALESCE(SUM(points),0) FROM point_ledger WHERE user_id=? AND source_type='admin_grant'", (user["id"],)).fetchone()[0]
+                additions[user["community_member_id"]] = additions.get(user["community_member_id"], 0) + max(0, int(user["point_lifetime"] or 0) - int(imported) - int(management))
+            own_ledger = conn.execute("SELECT id,label,points,created_at FROM point_ledger WHERE user_id=? AND source_type NOT IN ('community_history','admin_grant') AND points>0 ORDER BY created_at DESC,id DESC", (g.user_id,)).fetchall()
         rows = result.get("leaderboard", [])
         for row in rows:
             row["points"] += additions.get(row["memberId"], 0)

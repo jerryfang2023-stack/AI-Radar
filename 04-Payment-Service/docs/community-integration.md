@@ -39,7 +39,7 @@
 | `program`、`archives/<issue-slug>` | GET | 真实排期及受保护的完整实录 |
 | `directory`、`profile` | GET | 公开资料及独立分享证据档案，排除联系方式 |
 | `profile` | PUT | 白名单字段及 revision；版本冲突返回 409 |
-| `points` | GET | 按会员 ID 合并社群分和小程序累计活跃分，扣除已导入社群分，避免双计 |
+| `points` | GET | 按会员 ID 合并社群分和正常累计活跃分，扣除已导入社群分及 `admin_grant` 管理权限授分；明细也排除管理授分，不改动钱包或权限 |
 | `drafts/<key>` | GET / PUT | 本人跨设备悬赏草稿 |
 | `cases`、`cases/<id>` | GET | 已审核悬赏及本人待审内容 |
 | `cases` | POST | 幂等提交，进入原会员后台审核 |

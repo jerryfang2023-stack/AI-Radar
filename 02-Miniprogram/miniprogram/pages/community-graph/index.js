@@ -3,6 +3,7 @@ const { getCommunity, getCommunityProfile, saveCommunityProfile } = require("../
 const { readExperience, saveExperience } = require("../../utils/experience.js");
 const { requireCommunityMember } = require("../../utils/community-access.js");
 const { communityRequest } = require("../../utils/payment.js");
+const { readCommunityPage } = require("../../utils/community-loading.js");
 
 const DEFAULT_PROFILE = {
   name: "", avatar: "", city: "", company: "", role: "",
@@ -26,7 +27,7 @@ Page({
     }
     if (mode === "member") return this.setData({ mode, member: decorateMember(getMember(options.id)) });
     if (mode === "profile" || mode === "edit") return this.loadProfile(mode);
-    const roleData = roles.map((role) => ({ ...role, count: role.memberIds.length, members: role.memberIds.map((id) => decorateMember(getMember(id))) }));
+    const roleData = roles.map((role) => ({ ...role, count: role.memberIds.length, members: role.memberIds.map((id) => decorateMember(getMember(id))) })).sort((a, b) => b.count - a.count);
     this.setData({ mode: "graph", tab: options.tab === "directory" ? "directory" : "map", roles: roleData, activeRoleData: roleData[0] });
   },
   loadProfile(mode) {
@@ -48,23 +49,26 @@ Page({
       this.setData({ members: rows, filteredMembers: rows, query: "" });
     }
   },
-  async refresh() {
-    this.setData({ loading: true, error: "" });
-    try {
+  applyDirectory(result) {
+    const member = this.data.mode === "member" ? result.members.find((entry) => String(entry.id) === String(this.options.id)) : null;
+    if (this.data.mode === "member" && !member) throw new Error("此成员资料暂不可见");
+    const roles = [...result.roles].sort((a, b) => b.count - a.count);
+    const selected = this.data.activeRoleData?.name;
+    const activeRole = Math.max(0, roles.findIndex((role) => role.name === selected));
+    const count = (names) => roles.filter((role) => names.includes(role.name)).reduce((sum, role) => sum + role.count, 0);
+    const supply = [{ name: "场景 / 市场", count: count(["行业资源方", "流量与增长", "出海与跨境"]) }, { name: "企业服务", count: count(["企业服务落地"]) }, { name: "技术构建", count: count(["技术构建者"]) }, { name: "资本 / 研究", count: count(["资本与研究"]) }];
+    this.setData({ ...result, roles, activeRole, member: member ? decorateMember(member) : null, filteredMembers: result.members, activeRoleData: roles[activeRole] || null, supply, loaded: true, showLoading: false });
+    this.search({ detail: { value: this.data.query } });
+  },
+  refresh() {
+    return readCommunityPage(this, async () => {
       if (this.data.mode === "profile" || this.data.mode === "edit") {
         const result = await communityRequest("profile");
         this.setData({ profile: result.profile });
       } else {
-        const result = await communityRequest("directory");
-        const member = this.data.mode === "member" ? result.members.find((entry) => String(entry.id) === String(this.options.id)) : null;
-        if (this.data.mode === "member" && !member) throw new Error("此成员资料暂不可见");
-        const supply = [{ name: "场景 / 市场", count: result.roles.slice(0, 3).reduce((sum, role) => sum + role.count, 0) }, { name: "企业服务", count: result.roles[3].count }, { name: "技术构建", count: result.roles[4].count }, { name: "资本 / 研究", count: result.roles[5].count }];
-        this.setData({ ...result, member: member ? decorateMember(member) : null, filteredMembers: result.members, activeRoleData: result.roles[this.data.activeRole] || result.roles[0], supply, query: "" });
+        this.applyDirectory(await communityRequest("directory", { onCached: (result) => this.applyDirectory(result) }));
       }
-    } catch (error) {
-      this.setData({ error: error.message, member: null, members: [], filteredMembers: [], roles: [], activeRoleData: null, supply: [], profile: { ...DEFAULT_PROFILE } });
-    }
-    finally { this.setData({ loading: false }); }
+    }, () => this.setData({ member: null, members: [], filteredMembers: [], roles: [], activeRoleData: null, supply: [], profile: { ...DEFAULT_PROFILE } }));
   },
   switchTab(event) { this.setData({ tab: event.currentTarget.dataset.tab }); },
   selectRole(event) {

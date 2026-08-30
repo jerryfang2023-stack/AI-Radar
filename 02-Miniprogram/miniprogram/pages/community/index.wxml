@@ -9,7 +9,7 @@
       <button data-url="/pages/community-graph/index" bindtap="openProtected">角色图谱</button>
     </view>
 
-    <view wx:if="{{loading}}" class="service-state">正在加载社群内容…</view>
+    <view wx:if="{{showLoading}}" class="community-skeleton" aria-label="加载中"><view></view><view></view><view></view></view>
     <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
     <view class="sharing-section">
       <view class="section-heading"><view><text class="eyebrow">SHARING ARCHIVE</text><text class="section-main">分享实录</text></view><button data-url="/pages/community-program/index?tab=archive" bindtap="openProtected">查看全部 ›</button></view>

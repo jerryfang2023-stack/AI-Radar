@@ -3,6 +3,7 @@ const { isExperience } = require("../../utils/experience.js");
 const sharingPreview = require("../../utils/sharing-preview.js");
 const { requireCommunityMember } = require("../../utils/community-access.js");
 const { communityRequest } = require("../../utils/payment.js");
+const { readCommunityPage } = require("../../utils/community-loading.js");
 
 Page({
   data: { mode: "list", activeTab: "schedule", schedules: [], archives: [], item: null, speaker: null, error: "", loading: false, sessionCount: 0, speakerCount: 0 },
@@ -10,7 +11,7 @@ Page({
     if (!requireCommunityMember()) return;
     this.options = options;
     if (!isExperience()) return this.refresh();
-    this.setData({ schedules, archives, sessionCount: archives.length, speakerCount: archives.length * 3 });
+    this.setData({ schedules, archives, loaded: true, sessionCount: archives.length, speakerCount: archives.length * 3 });
     if (options.type === "speaker") {
       const item = getArchive(options.id);
       const speaker = isExperience() ? sharingPreview[options.id]?.speakers?.[Number(options.speaker)] : null;
@@ -21,10 +22,11 @@ Page({
     else if (options.type === "schedule") this.setData({ mode: "schedule", item: schedules.find((value) => value.id === options.id) || schedules[0] });
     else this.setData({ activeTab: options.tab === "archive" ? "archive" : "schedule" });
   },
-  async refresh() {
+  onShow() { if (this.data.loaded && !isExperience()) return this.refresh(); },
+  refresh() {
     const options = this.options || {};
-    this.setData({ loading: true, error: "", activeTab: options.tab === "archive" ? "archive" : "schedule" });
-    try {
+    if (!this.data.loaded) this.setData({ activeTab: options.tab === "archive" ? "archive" : "schedule" });
+    return readCommunityPage(this, async () => {
       if (options.type === "archive" || options.type === "speaker") {
         const { item } = await communityRequest(`archives/${encodeURIComponent(options.id)}`);
         const speaker = options.type === "speaker" ? item.speakerDetails[Number(options.speaker)] : null;
@@ -36,8 +38,7 @@ Page({
         if (options.type === "schedule" && !item) throw new Error("此排期不存在");
         this.setData({ ...result, mode: item ? "schedule" : "list", item });
       }
-    } catch (error) { this.setData({ error: error.message, item: null, speaker: null, archives: [], schedules: [] }); }
-    finally { this.setData({ loading: false }); }
+    }, () => this.setData({ item: null, speaker: null, archives: [], schedules: [] }));
   },
   switchTab(event) { this.setData({ activeTab: event.currentTarget.dataset.tab }); },
   openSchedule(event) { wx.navigateTo({ url: `/pages/community-program/index?type=schedule&id=${event.currentTarget.dataset.id}` }); },

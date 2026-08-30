@@ -67,13 +67,13 @@ test("nonmembers cannot mutate isolated cases", () => {
   const value = exp.readExperience(); value.status = "none"; exp.saveExperience(value);
   assert.throws(() => store.saveDraft("create", {}));
 });
-test("points never substitute demo balance or identity for a real zero balance", () => {
+test("points never substitute demo balance or identity for a real zero balance", async () => {
   let page;
   vm.runInNewContext(fs.readFileSync("miniprogram/pages/community-points/index.js", "utf8"), {
     Page: (value) => { page = value; },
-    require: (id) => id.includes("community-data") ? data : id.includes("member.js") ? { getCommunity: () => ({ points: 0, name: "测试账户" }) } : id.includes("access") ? { requireCommunityMember: () => true } : { readExperience: () => null },
+    require: (id) => id.includes("community-loading") ? require("../miniprogram/utils/community-loading.js") : id.includes("payment") ? { communityRequest: async () => { throw new Error("Unavailable"); } } : id.includes("community-data") ? data : id.includes("member.js") ? { getCommunity: () => ({ points: 0, name: "测试账户" }) } : id.includes("access") ? { requireCommunityMember: () => true } : { readExperience: () => null },
   });
-  page.setData = (value) => Object.assign(page.data, value); page.onLoad({});
+  page.setData = (value) => Object.assign(page.data, value); await page.onLoad({});
   assert.equal(page.data.myPoints, 0); assert.equal(page.data.myName, "测试账户");
   assert.equal(page.data.myRank, "—"); assert.equal(page.data.leaderboard.length, 0);
 });
