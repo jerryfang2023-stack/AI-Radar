@@ -1,7 +1,7 @@
-<view class="page-shell" wx:if="{{report}}">
-  <app-header title="{{report.typeLabel}}" show-back fallback-url="/pages/market/index" />
+<view class="page-shell">
+  <app-header title="{{report.typeLabel || '行业观察'}}" show-back fallback-url="/pages/market/index" />
   <view class="page-content reader-content {{sharedEntry ? 'with-shared-nav' : ''}}">
-    <view class="reader-hero">
+    <view wx:if="{{report}}" class="reader-hero">
       <view class="reader-kicker"><text>{{report.typeLabel}}</text><text class="mono">{{report.issue}}</text></view>
       <text class="reader-title serif">{{report.title}}</text>
       <text class="reader-summary">{{report.summary}}</text>
@@ -17,6 +17,11 @@
       <text class="gate-note">是否登录由你选择，可随时返回生态栏目。</text>
     </view>
 
+    <view wx:elif="{{loading}}" class="reader-status">正在读取正文…</view>
+    <view wx:elif="{{loadError}}" class="reader-status">
+      <text>{{loadError}}</text>
+      <button bindtap="verifyServerAccess">重新加载</button>
+    </view>
     <view wx:else class="reader-body">
       <block wx:for="{{report.blocks}}" wx:key="id">
         <view wx:if="{{item.type === 'heading'}}" class="block-heading serif">{{item.text}}</view>

@@ -397,7 +397,13 @@ function refreshFundingData() {
       writeStorage(CACHE_KEYS.fundingIndex, index);
       return mergeFundingIndex(index);
     });
-  }).catch(() => fundingState).then((value) => {
+  }).then((value) => {
+    fundingState = { ...value, refreshFailed: false };
+    return fundingState;
+  }).catch(() => {
+    fundingState = { ...fundingState, refreshFailed: true };
+    return fundingState;
+  }).then((value) => {
     fundingRequest = null;
     return value;
   });
@@ -461,7 +467,13 @@ function refreshReportData() {
       reportState = { index, details: reportState.details, source: "live" };
       return reportState;
     });
-  }).catch(() => reportState).then((value) => {
+  }).then((value) => {
+    reportState = { ...value, refreshFailed: false };
+    return reportState;
+  }).catch(() => {
+    reportState = { ...reportState, refreshFailed: true };
+    return reportState;
+  }).then((value) => {
     reportRequest = null;
     return value;
   });

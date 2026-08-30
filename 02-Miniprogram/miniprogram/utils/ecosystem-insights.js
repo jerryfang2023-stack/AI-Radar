@@ -97,6 +97,8 @@ function buildOverview(index, marketRegion = "global") {
   });
   return {
     latestDate: index.meta.latestDate,
+    systemCheckDate: index.meta.latestDate,
+    latestFundingDate: cards.map((card) => text(card.date)).filter((date) => /^\d{4}-\d{2}-\d{2}$/.test(date)).sort().pop() || "暂无",
     marketRegion,
     signals: buildSignals(cards, index.meta.latestDate),
     ranking,

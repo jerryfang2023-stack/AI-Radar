@@ -6,7 +6,7 @@ const { resolveDetailAccess, requestLockedContent } = require("../../utils/meter
 const { fetchProtectedContent } = require("../../utils/payment.js");
 
 Page({
-  data: { report: null, sharedEntry: false, registrationOpen: false, contentLocked: false, lockReason: "" },
+  data: { report: null, sharedEntry: false, registrationOpen: false, contentLocked: false, lockReason: "", loading: false, loadError: "" },
   onLoad(options) {
     this.reportId = options.id;
     this.setData(resolveDetailAccess(`report:${this.reportId || "unknown"}`));
@@ -22,23 +22,27 @@ Page({
     this.verifyServerAccess();
   },
   async verifyServerAccess() {
-    if (!this.reportId) return;
-    if (this.isCommunityEssay) {
-      const report = await getCommunityDetail(this.reportId);
-      if (report) this.render(report);
-      this.setData({ contentLocked: false, lockReason: "public" });
+    if (this.data.loading) return;
+    if (!this.reportId) {
+      this.setData({ loadError: "文章地址无效，请返回生态栏目" });
       return;
     }
+    this.setData({ loading: true, loadError: "" });
     try {
-      const report = await fetchProtectedContent("report", this.reportId);
-      if (report) this.render(report);
-      this.setData({ contentLocked: false, lockReason: "server" });
+      const report = this.isCommunityEssay
+        ? await getCommunityDetail(this.reportId)
+        : await fetchProtectedContent("report", this.reportId);
+      if (!report?.title || !Array.isArray(report.blocks) || !report.blocks.some((block) => block.text)) throw new Error("REPORT_BODY_MISSING");
+      this.render(report);
+      this.setData({ contentLocked: false, lockReason: this.isCommunityEssay ? "public" : "server" });
     } catch (error) {
       if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") {
         this.setData({ contentLocked: true, lockReason: getAccessState() === "expired" ? "expired" : "unregistered" });
-      } else if (!this.data.report) {
-        wx.showToast({ title: "报告暂时无法读取", icon: "none" });
+      } else {
+        this.setData({ loadError: "正文暂时无法读取" });
       }
+    } finally {
+      this.setData({ loading: false });
     }
   },
   render(report) {
@@ -53,11 +57,8 @@ Page({
   continueAfterRegistration() {
     const unlock = this.pendingAction === "content";
     this.pendingAction = "";
-    this.setData({ registrationOpen: false, contentLocked: unlock ? false : this.data.contentLocked, lockReason: unlock ? "active" : this.data.lockReason });
-    if (unlock && this.data.report && !this.browseRecorded) {
-      recordBehavior("browse", `report:${this.data.report.id}`);
-      this.browseRecorded = true;
-    }
+    this.setData({ registrationOpen: false });
+    if (unlock) return this.verifyServerAccess();
   },
   onShareAppMessage() {
     const report = this.data.report;

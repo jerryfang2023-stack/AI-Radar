@@ -11,6 +11,7 @@ Page({
   data: {
     mode: "map", marketRegion: "global", latestDate: "", signals: [], ranking: [], months: [], heatmap: [],
     activeType: "all", activeLabel: "最新观察", featured: null, reports: [],
+    systemCheckDate: "", latestFundingDate: "", refreshFailed: false,
   },
   onLoad(options = {}) {
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
@@ -21,8 +22,6 @@ Page({
     this.setData({ mode });
     this.applyFunding(getFundingData());
     this.refreshReports("all");
-    refreshFundingData().then((state) => this.applyFunding(state));
-    refreshReportData().then(() => this.refreshReports(this.data.activeType));
   },
   onShow() {
     syncTabBar(this, 1);
@@ -30,6 +29,22 @@ Page({
     if (["map", "observation"].includes(savedMode) && savedMode !== this.data.mode) this.setData({ mode: savedMode });
     this.applyFunding(getFundingData());
     this.refreshReports(this.data.activeType);
+    return this.refreshData();
+  },
+  refreshData() {
+    if (this.refreshRequest) return this.refreshRequest;
+    // Keep the current content visible while checking both remote versions on every entry.
+    this.refreshRequest = Promise.all([refreshFundingData(), refreshReportData()]).then(([funding, reports]) => {
+      this.applyFunding(funding);
+      this.refreshReports(this.data.activeType);
+      this.setData({ refreshFailed: Boolean(funding.refreshFailed || reports.refreshFailed) });
+    }).catch(() => this.setData({ refreshFailed: true })).finally(() => { this.refreshRequest = null; });
+    return this.refreshRequest;
+  },
+  onPullDownRefresh() {
+    return this.refreshData().then(() => {
+      if (this.data.refreshFailed && wx.showToast) wx.showToast({ title: "刷新未完成，已保留原内容", icon: "none" });
+    }).finally(() => wx.stopPullDownRefresh());
   },
   setMode(event) {
     const mode = event.currentTarget.dataset.mode;

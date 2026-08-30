@@ -1,5 +1,7 @@
 # 个人中心设计验收
 
+历史个人中心方案验收，不代表 0.9.2 的整包验收。当前社群功能与审核入口见 [合并说明](REVIEW-0.9.2-COMBINED.md)。
+
 - 参考图：`exec-0c2f7a3c-3445-48ce-bddc-b7c157ef66be.png`（方案 2：成长任务中心）
 - 实现截图：`profile-implementation.png`
 - 并排对照：`profile-comparison.png`

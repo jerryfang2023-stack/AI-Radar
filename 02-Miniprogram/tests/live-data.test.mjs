@@ -9,6 +9,42 @@ const fallbackReports = require("../miniprogram/data/report-index.js");
 const fixtureDate = fallbackFunding.meta.latestDate;
 const reportFixtureDate = fallbackReports.meta.latestDate;
 
+test("version checks repeat across days, deduplicate in flight and retain good data on failure", async () => {
+  const storage = new Map();
+  const calls = [];
+  let version = "one", failed = false;
+  let index = fallbackFunding;
+  global.wx = {
+    getStorageSync: (key) => storage.get(key), setStorageSync: (key, value) => storage.set(key, value),
+    request: ({ url, success, fail }) => {
+      calls.push(url);
+      if (failed) { fail(new Error("offline")); return; }
+      success({ statusCode: 200, data: url.includes("manifest") ? {
+        version, latestDate: index.meta.latestDate, fundingVersion: index.meta.fundingVersion,
+        cardCount: index.cards.length, indexPath: "/data/mini/funding-index.json",
+      } : index });
+    },
+  };
+  try {
+    const a = refreshFundingData(), b = refreshFundingData();
+    assert.equal(a, b);
+    await a;
+    await refreshFundingData();
+    assert.equal(calls.filter((url) => url.includes("manifest")).length, 2);
+    assert.equal(calls.filter((url) => url.includes("funding-index")).length, 1);
+    version = "two";
+    index = { ...fallbackFunding, meta: { ...fallbackFunding.meta, latestDate: "2099-01-02" } };
+    assert.equal((await refreshFundingData()).index.meta.latestDate, "2099-01-02");
+    assert.equal(calls.filter((url) => url.includes("funding-index")).length, 2);
+    failed = true;
+    const retained = await refreshFundingData();
+    assert.equal(retained.index.meta.latestDate, "2099-01-02");
+    assert.equal(retained.refreshFailed, true);
+    failed = false;
+    assert.equal((await refreshFundingData()).refreshFailed, false);
+  } finally { delete global.wx; }
+});
+
 test("projects the VPS funding contract into the native mini program contract", () => {
   const source = {
     meta: {
