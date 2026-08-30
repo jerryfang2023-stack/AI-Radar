@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -73,6 +73,7 @@
       "EV-c5d7d88d1aef8edb",
       "EV-cded77b1de2db61a",
       "EV-535c2f4fb851332d",
+      "EV-73c7062edbdf5d08",
       "EV-caffb8981cecae2f",
       "EV-b69f78a4919cb1bc",
       "EV-0fc718ab409cdcf5",
@@ -104,6 +105,8 @@
       "EV-2fd730d0ad452334",
       "EV-9f6d481a09b063ee",
       "EV-fd21441fb6e143c3",
+      "EV-dff4ff4127cba5d9",
+      "EV-eb3b431d4ce98ec5",
       "EV-eedd370fd9cfdbb2",
       "EV-df9b78627b91c29f",
       "EV-127a04dfedc04e0c",
@@ -257,6 +260,7 @@
       "EV-0cb98302768c2e0a",
       "EV-34929bdd016dc8d6",
       "EV-00834dd71037c7cc",
+      "EV-fd00664984e9ae3d",
       "EV-8d1915e3b460afa7",
       "EV-00e6152baff47d4d",
       "EV-ce32954014cb030d",
@@ -321,6 +325,7 @@
       "EN-cd35ca6b5c3cf23c",
       "EN-883be863cc6562bb",
       "EN-a83a3af1a4866fd5",
+      "EN-25465dbbb180e21b",
       "EN-047364b9be67f665",
       "EN-f420373dc2aa4371",
       "EN-29b9f0cae32e7a8a",
@@ -337,6 +342,7 @@
       "EN-c890cfa67d1da908",
       "EN-3e52637ec683b555",
       "EN-7df09a7717ef2feb",
+      "EN-6e00d63f3be2ed2e",
       "EN-921ba2ce81556e42",
       "EN-bbdefa2950f49882",
       "EN-a658fbc24f5e3832",
@@ -451,7 +457,7 @@
       "HW-19692cd9428f2e0f"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-08-28"
+    "lastSeen": "2026-08-30"
   },
   "events": [
     {
@@ -17912,6 +17918,120 @@
       "publisher": "国家科技创新信息服务平台"
     },
     {
+      "id": "EV-73c7062edbdf5d08",
+      "dataDate": "2026-08-30",
+      "date": "2026-08-29",
+      "updatedDate": "2026-08-30",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI本地部署不如官方版的元凶找到了：734个依赖包，每一个都可能坑",
+      "originalTitle": "",
+      "subject": "AI本地",
+      "action": "部署",
+      "object": "不如官方版的元凶找到了：734个依赖包，每一个都可能坑",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-25465dbbb180e21b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [
+              "EN-25465dbbb180e21b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-25465dbbb180e21b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-25465dbbb180e21b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-25465dbbb180e21b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-25465dbbb180e21b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-25465dbbb180e21b"
+      ],
+      "entityNames": [
+        "AI本地"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/481372.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-caffb8981cecae2f",
       "dataDate": "2026-08-25",
       "date": "2026-08-24",
@@ -22616,6 +22736,233 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/966/539.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-dff4ff4127cba5d9",
+      "dataDate": "2026-08-30",
+      "date": "2026-08-29",
+      "updatedDate": "2026-08-30",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "行业首个量子增强型大模型\"玄幂 Xenomi\"发布：深度融合 AI 与量子计算",
+      "originalTitle": "",
+      "subject": "行业首个量子增强型大模型\"玄幂 Xenomi\"",
+      "action": "发布",
+      "object": "：深度融合 AI 与量子计算",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-6e00d63f3be2ed2e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-6e00d63f3be2ed2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-6e00d63f3be2ed2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6e00d63f3be2ed2e"
+      ],
+      "entityNames": [
+        "玄幂 Xenomi"
+      ],
+      "productName": "玄幂 Xenomi",
+      "products": [
+        {
+          "name": "玄幂 Xenomi",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/995/921.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-eb3b431d4ce98ec5",
+      "dataDate": "2026-08-30",
+      "date": "2026-08-28",
+      "updatedDate": "2026-08-30",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "腾讯发布并开源 Tencent Hy4 Preview",
+      "originalTitle": "",
+      "subject": "腾讯",
+      "action": "发布",
+      "object": "并开源 Tencent Hy4 Preview",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-tencent-hunyuan"
+        ],
+        "claim_refs": [
+          "CL-a1ea82598596e278",
+          "CL-c62e6419f50c2e78",
+          "CL-6e9caa926234cb7b",
+          "CL-7cef1cc94ce74600"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e",
+        "EN-fb646a85ad74e7c5",
+        "EN-7f871cbf905f6e0c",
+        "EN-a50ef9352a2aac60",
+        "EN-20b7b60147aca363"
+      ],
+      "entityNames": [
+        "Tencent",
+        "Tencent Cloud",
+        "OpenRouter",
+        "Hy4",
+        "Hy4 Preview"
+      ],
+      "productName": "Hy4",
+      "products": [
+        {
+          "name": "Hy4",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Tencent"
+          ]
+        },
+        {
+          "name": "Hy4 Preview",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Tencent"
+          ]
+        }
+      ],
+      "sourceUrl": "https://tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
       "id": "EV-eedd370fd9cfdbb2",
@@ -42922,6 +43269,88 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-fd00664984e9ae3d",
+      "dataDate": "2026-08-30",
+      "date": "2026-08-29",
+      "updatedDate": "2026-08-30",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "索尼音乐、华纳联合起诉Anthropic，指控其\"公然\"盗用版权作品训练AI",
+      "originalTitle": "",
+      "subject": "索尼音乐、华纳联合",
+      "action": "起诉",
+      "object": "Anthropic，指控其\"公然\"盗用版权作品训练AI",
+      "metrics": [
+        "$1.5 billion"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-51df6a5cf1c2a7e6",
+        "EN-2c5483e74a151e56",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "索尼音乐",
+        "华纳联合",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
       "id": "EV-8d1915e3b460afa7",
       "dataDate": "2026-08-28",
       "date": "2026-08-27",
@@ -45489,14 +45918,18 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-40fd274ae86434b8",
+        "EV-532031a0c390a2e3",
+        "EV-4f6e481c90ff0e3c",
         "EV-c32dd87e1f72b09a",
+        "EV-40fd274ae86434b8",
         "EV-10f04014fb3b62ff",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
@@ -45706,7 +46139,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-technology-open_weights",
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
@@ -45740,8 +46175,6 @@
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
-        "TX-product_form-ai_infrastructure_software",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
@@ -45764,24 +46197,31 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-7dd2a89f628d7525",
@@ -45926,6 +46366,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-87974a7ba1fef32a",
         "EV-97910e898975c6ca",
         "EV-db87eda4a39de22a",
         "EV-eedd370fd9cfdbb2",
@@ -46116,6 +46557,10 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-2dd16bf18068dca9",
+        "EV-5019dff541a05950",
+        "EV-b33256317fc8ef4f",
+        "EV-fd00664984e9ae3d",
         "EV-278745d4aa7a4b3a",
         "EV-77d347212d8de7ea",
         "EV-42c656a8a7e0b362",
@@ -46257,7 +46702,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -46303,6 +46748,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-developer_tool",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
@@ -46312,7 +46758,6 @@
         "TX-technology-agentic_execution",
         "TX-product_form-ai_compute_system",
         "TX-industry-manufacturing",
-        "TX-product_form-developer_tool",
         "TX-technology-embodied_ai",
         "TX-technology-human_in_loop"
       ],
@@ -46465,6 +46910,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-532031a0c390a2e3",
+        "EV-4f6e481c90ff0e3c",
         "EV-40fd274ae86434b8",
         "EV-6b668e4655192209",
         "EV-9d665270d4feb97e",
@@ -46475,6 +46922,7 @@
         "EV-55e7c286e95be405",
         "EV-cf6e7a2edad82c6f",
         "EV-0e84a2f49d765ce3",
+        "EV-eb3b431d4ce98ec5",
         "EV-1b3dde71d5e25f54",
         "EV-85ea6e0ef8bda162",
         "EV-110d0ab135a08889",
@@ -46488,6 +46936,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-ai_market_category-infrastructure_compute",
@@ -46500,7 +46949,7 @@
         "EN-779965438dd9e7a7"
       ],
       "firstSeen": "2026-06-08",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-e647c818ac38b6ca",
@@ -46669,6 +47118,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -46676,7 +47126,6 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-knowledge_search",
-        "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_subcategory-data"
       ],
@@ -47212,13 +47661,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
-        "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-ai_development_orchestration"
       ],
       "relatedEntityIds": [],
@@ -47320,6 +47769,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
@@ -47330,7 +47780,6 @@
         "TX-target_user-developer",
         "TX-technology-multimodal",
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [
@@ -47493,6 +47942,28 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "EN-25465dbbb180e21b",
+      "name": "AI本地",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-73c7062edbdf5d08"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-deployment_model-on_premise"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-30"
+    },
+    {
       "id": "EN-047364b9be67f665",
       "name": "阿里巴巴",
       "entityType": "organization_candidate",
@@ -47651,6 +48122,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-open_weights",
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
@@ -47660,7 +48132,6 @@
         "TX-product_form-ai_compute_system",
         "TX-target_user-researcher",
         "TX-industry-manufacturing",
-        "TX-product_form-ai_infrastructure_software",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
@@ -47813,12 +48284,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-product_form-model",
         "TX-technology-video_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_device"
       ],
@@ -48000,9 +48471,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
@@ -48082,6 +48553,27 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "EN-6e00d63f3be2ed2e",
+      "name": "玄幂 Xenomi",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dff4ff4127cba5d9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-30"
+    },
+    {
       "id": "EN-921ba2ce81556e42",
       "name": "Qwen3.8-Flash",
       "entityType": "product_candidate",
@@ -48159,6 +48651,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-c5f8f07d714f330f",
         "EV-293d6feac5b8efab",
         "EV-71727e1a748baf33",
         "EV-f71726063c6e1615",
@@ -48302,6 +48795,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-10fe2269806246e8",
         "EV-65612dfb24abce5c",
         "EV-5f8479f97236bdea",
         "EV-3b30eda1326a6fb1",
@@ -48334,9 +48828,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
+        "TX-technology-video_generation",
         "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
@@ -48345,6 +48841,7 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-technology-image_generation",
+        "TX-technology-multimodal",
         "TX-use_case-legal_compliance",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-computing_infrastructure",
@@ -48354,7 +48851,6 @@
         "TX-use_case-research_discovery",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -48382,7 +48878,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-a658fbc24f5e3832",
@@ -48759,6 +49255,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-860fbba841badfec",
         "EV-13c5fc1373115b65",
         "EV-1231169f9fddbee6",
         "EV-735fac8d2be356bb",
@@ -48777,6 +49274,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
@@ -48794,7 +49292,6 @@
         "TX-use_case-data_analysis",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-deployment_model-cloud",
         "TX-ai_market_subcategory-sales",
@@ -48816,7 +49313,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-b93006774cbdd4b2",
@@ -49026,6 +49523,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-086902ad904c1c90",
         "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-df8954acf9a13848",
@@ -49121,6 +49619,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-6e5b93a91480885c",
         "EV-4bbb0a030948b8f4",
         "EV-6944ba9fc55b4f41",
         "EV-b4376b7d0e863db3",
@@ -49330,6 +49829,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2dd16bf18068dca9",
+        "EV-860fbba841badfec",
         "EV-65612dfb24abce5c",
         "EV-00ffb2c501a37ec8",
         "EV-8d1915e3b460afa7",
@@ -49411,6 +49912,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-product_form-developer_tool",
         "TX-technology-open_weights",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
@@ -49434,9 +49937,7 @@
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
-        "TX-product_form-developer_tool",
         "TX-technology-long_context",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
@@ -49469,7 +49970,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-2ee49ef51a776e2c",
@@ -49815,6 +50316,7 @@
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
+        "EV-eb3b431d4ce98ec5",
         "EV-a6dc310224542dcf",
         "EV-355ddfd4c6180ab0",
         "EV-d14947956b43c97a",
@@ -49856,7 +50358,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -49917,10 +50419,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-product_form-model",
         "TX-product_form-end_user_application",
-        "TX-use_case-software_development",
-        "TX-technology-code_generation"
+        "TX-use_case-software_development"
       ],
       "relatedEntityIds": [
         "EN-e78bdebae031095b",
@@ -49928,7 +50430,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-165753d8649b9122",
@@ -50101,18 +50603,20 @@
       "eventIds": [
         "EV-2cd95ab95d0f2ad9",
         "EV-a591b0c96f79de45",
-        "EV-dab4d3f2059e8880"
+        "EV-dab4d3f2059e8880",
+        "EV-10fe2269806246e8"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
+        "TX-use_case-knowledge_search",
         "TX-technology-agentic_execution",
         "TX-technology-retrieval_augmented_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-05",
-      "lastSeen": "2026-07-10"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-3ae50afab3e392b8",
@@ -50131,7 +50635,9 @@
       "classificationRefs": [
         "TX-product_form-model"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
       "firstSeen": "2026-07-03",
       "lastSeen": "2026-07-04"
     },
@@ -50146,6 +50652,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-086902ad904c1c90",
         "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
@@ -50179,6 +50686,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-product_form-developer_tool",
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-target_user-business_user",
@@ -50190,15 +50699,13 @@
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-target_user-public_sector_user",
-        "TX-technology-code_generation",
-        "TX-product_form-developer_tool"
+        "TX-target_user-public_sector_user"
       ],
       "relatedEntityIds": [
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-cd6362472aea60ef",
@@ -50675,6 +51182,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-technology-video_generation",
@@ -50686,7 +51194,6 @@
         "TX-technology-multimodal",
         "TX-use_case-research_discovery",
         "TX-use_case-security_operations",
-        "TX-technology-code_generation",
         "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
@@ -50701,7 +51208,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-6e898ad0522fca30",
@@ -50761,8 +51268,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-code_generation"
+        "TX-technology-code_generation",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [
         "EN-101a515191c6be9e",
@@ -50786,10 +51293,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
-        "TX-use_case-software_development",
-        "TX-technology-code_generation"
+        "TX-use_case-software_development"
       ],
       "relatedEntityIds": [
         "EN-c27c48199bb1e14b"
@@ -50913,10 +51420,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
-        "TX-target_user-business_user",
-        "TX-product_form-ai_infrastructure_software"
+        "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-27",
@@ -51006,6 +51513,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-compute_cloud_service",
         "TX-product_form-model",
         "TX-target_user-business_user",
@@ -51013,7 +51521,6 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
-        "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -52557,6 +53064,146 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-5a30e015d5d12a96",
+      "snapshotKey": "5a30e015d5d12a96",
+      "snapshotId": "HWS-1f8365423dfd5027",
+      "eventId": "EV-4f6e481c90ff0e3c",
+      "eventIds": [
+        "EV-4f6e481c90ff0e3c",
+        "EV-6b668e4655192209",
+        "EV-467539fe176a470e"
+      ],
+      "dataDate": "2026-08-30",
+      "date": "2026-08-30",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification",
+        "product"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "6",
+          "unit": "$billion",
+          "fact_ref": "HWF-aaffb08c577c72e6"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 6,
+      "changes": [
+        {
+          "date": "2026-08-30",
+          "previousDate": "2026-08-27",
+          "snapshotId": "HWS-1f8365423dfd5027",
+          "previousSnapshotId": "HWS-c8f5584d4abcba56",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-27",
+          "previousDate": "2026-08-07",
+          "snapshotId": "HWS-c8f5584d4abcba56",
+          "previousSnapshotId": "HWS-62a40b6eb4a8749f",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "previousDate": "2026-08-06",
+          "snapshotId": "HWS-62a40b6eb4a8749f",
+          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "previousDate": "2026-08-05",
+          "snapshotId": "HWS-df26b5fa3a51a04d",
+          "previousSnapshotId": "HWS-84ba3d86778ff712",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-84ba3d86778ff712",
+          "previousSnapshotId": "HWS-6228f201a75148c3",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-30",
+          "hardware_fact_id": "HWF-aaffb08c577c72e6",
+          "fact_type": "specification",
+          "observed_at": "2026-08-28T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "6",
+          "unit": "$billion",
+          "source_quote": "Rumors of that deal come after Nvidia struck a $6 billion agreement with Poolside, an open-weight model builder, that will see most of its employees move to the chip-making giant. And two weeks ago, Stripe acquired OpenRouter, the top provider of open-weight models to businesses, for more than $7 billion.",
+          "event_refs": [
+            "EV-4f6e481c90ff0e3c"
+          ],
+          "claim_ref": "CL-69df8d31821d1f90",
+          "source_refs": [
+            "SA-fe65ca58e90faefd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-7f871cbf905f6e0c"
+      ]
+    },
+    {
       "id": "HWC-778c39ceb39ae5ff",
       "snapshotKey": "778c39ceb39ae5ff",
       "snapshotId": "HWS-c4b1adb1ea6cb53f",
@@ -52753,106 +53400,6 @@
         "EN-8d4321d936320802",
         "EN-62fcbf9b9027cde3",
         "EN-c24d9dd17f3f5869"
-      ]
-    },
-    {
-      "id": "HWC-5a30e015d5d12a96",
-      "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-c8f5584d4abcba56",
-      "eventId": "EV-6b668e4655192209",
-      "eventIds": [
-        "EV-6b668e4655192209",
-        "EV-467539fe176a470e"
-      ],
-      "dataDate": "2026-08-27",
-      "date": "2026-08-27",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "specification",
-        "product"
-      ],
-      "latestValues": {
-        "specification": {
-          "metric_value": "13",
-          "unit": "$billion",
-          "fact_ref": "HWF-1e0b4b38fd899d45"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 5,
-      "changes": [
-        {
-          "date": "2026-08-27",
-          "previousDate": "2026-08-07",
-          "snapshotId": "HWS-c8f5584d4abcba56",
-          "previousSnapshotId": "HWS-62a40b6eb4a8749f",
-          "changedFacts": [
-            "specification"
-          ]
-        },
-        {
-          "date": "2026-08-07",
-          "previousDate": "2026-08-06",
-          "snapshotId": "HWS-62a40b6eb4a8749f",
-          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-06",
-          "previousDate": "2026-08-05",
-          "snapshotId": "HWS-df26b5fa3a51a04d",
-          "previousSnapshotId": "HWS-84ba3d86778ff712",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-05",
-          "previousDate": "2026-08-04",
-          "snapshotId": "HWS-84ba3d86778ff712",
-          "previousSnapshotId": "HWS-6228f201a75148c3",
-          "changedFacts": [
-            "product"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-27",
-          "hardware_fact_id": "HWF-1e0b4b38fd899d45",
-          "fact_type": "specification",
-          "observed_at": "2026-08-27T00:34:46.985Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "13",
-          "unit": "$billion",
-          "source_quote": "Nvidia has been in talks to acquire Hugging Face, the popular AI platform for sharing and building with open-source models, in what could be one of the chip giant's biggest deals yet. The two parties have had acquisition conversations in recent weeks about a deal that would value Hugging Face at more than $13 billion, according to a person familiar with the matter. The companies have not yet reached a deal, and the talks could still fall apart, the person said. Business Insider on Sunday was the first to report that Hugging Face was fielding takeover interest. Nvidia and Hugging Face did not respond to requests for comment. Nvidia has increasingly ramped up dealmaking with its enormous cash pile. The company said Wednesday that it has $18 billion committed to equity investments for the rest of its fiscal year, on top of $47.9 billion it already holds in private companies. Microsoft also met with Hugging Face, but the person familiar and a second person said talks are not ongoing. Nvidia already has a relationship with Hugging Face. The chipmaker participated in its $235 million funding round in 2023 that valued it at $4.5 billion. Hugging Face turned down a $500 million investment offer from Nvidia late last year that would have valued it at $7 billion, the Financial Times previously reported. Hugging Face said at the time it did not want a dominant investor that could sway decisions. Hugging Face sits at the center of the open-source AI ecosystem, hosting millions of AI models and datasets that developers can build on. Owning the platform could give Nvidia a bigger foothold with those developers — and potentially drive more workloads onto its chips. Hugging Face was founded in 2016 by French entrepreneurs Clément Delangue, Julien Chaumond, and Thomas Wolf. But Nvidia ownership could also complicate one of Hugging Face's strengths: its neutrality. The platform supports models and hardware from across the industry, including Nvidia competitors such as AMD and Intel. Have a tip?",
-          "event_refs": [
-            "EV-6b668e4655192209"
-          ],
-          "claim_ref": "CL-7a5ed92342eef2d7",
-          "source_refs": [
-            "SA-bb9c8b9711dd5764"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-7f871cbf905f6e0c"
       ]
     },
     {

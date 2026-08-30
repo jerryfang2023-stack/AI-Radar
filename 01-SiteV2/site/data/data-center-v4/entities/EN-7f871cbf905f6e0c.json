@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,6 +22,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-532031a0c390a2e3",
+      "EV-4f6e481c90ff0e3c",
       "EV-40fd274ae86434b8",
       "EV-6b668e4655192209",
       "EV-9d665270d4feb97e",
@@ -32,6 +34,7 @@
       "EV-55e7c286e95be405",
       "EV-cf6e7a2edad82c6f",
       "EV-0e84a2f49d765ce3",
+      "EV-eb3b431d4ce98ec5",
       "EV-1b3dde71d5e25f54",
       "EV-85ea6e0ef8bda162",
       "EV-110d0ab135a08889",
@@ -45,6 +48,7 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-technology-open_weights",
       "TX-product_form-model",
       "TX-use_case-software_development",
       "TX-ai_market_category-infrastructure_compute",
@@ -57,12 +61,14 @@
       "EN-779965438dd9e7a7"
     ],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-08-29",
+    "lastSeen": "2026-08-30",
     "relationIds": [
       "REL2-eaf27cde7b70ddb9"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-532031a0c390a2e3",
+        "EV-4f6e481c90ff0e3c",
         "EV-40fd274ae86434b8",
         "EV-6b668e4655192209",
         "EV-9d665270d4feb97e",
@@ -77,6 +83,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-eb3b431d4ce98ec5",
         "EV-1b3dde71d5e25f54",
         "EV-85ea6e0ef8bda162",
         "EV-110d0ab135a08889",
@@ -95,6 +102,127 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-532031a0c390a2e3",
+        "dataDate": "2026-08-30",
+        "date": "2026-08-29",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "英伟达\"看中\"Hugging Face，开放权重 AI 模型成硅谷热门收购目标",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-7f871cbf905f6e0c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-7f871cbf905f6e0c"
+        ]
+      },
+      {
+        "id": "EV-4f6e481c90ff0e3c",
+        "dataDate": "2026-08-30",
+        "date": "2026-08-28",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "开源权重AI公司成为硅谷最热门的收购目标",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-7f871cbf905f6e0c"
+        ]
+      },
+      {
+        "id": "EV-eb3b431d4ce98ec5",
+        "dataDate": "2026-08-30",
+        "date": "2026-08-28",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "腾讯发布并开源 Tencent Hy4 Preview",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9c8ae69b84f21a2e",
+          "EN-a7baed72c308ce88",
+          "EN-7f871cbf905f6e0c",
+          "EN-a50ef9352a2aac60",
+          "EN-20b7b60147aca363"
+        ]
+      },
       {
         "id": "EV-40fd274ae86434b8",
         "dataDate": "2026-08-29",
@@ -882,6 +1010,92 @@
   ],
   "taxonomyNodes": [
     {
+      "id": "TX-technology-open_weights",
+      "name": "开放权重",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "open_weights",
+      "eventIds": [
+        "EV-532031a0c390a2e3",
+        "EV-4f6e481c90ff0e3c",
+        "EV-40fd274ae86434b8",
+        "EV-1abf0d076d30ec6d",
+        "EV-0121f0a9e9a975ec",
+        "EV-d2a623e8eef1f61d",
+        "EV-f55d16df5b5fecb2",
+        "EV-f71726063c6e1615",
+        "EV-b1b396e6ba2fe208",
+        "EV-2afe102017e1b21c",
+        "EV-78651dfea74b4323",
+        "EV-0d5a32aca724d30e",
+        "EV-615fbb4de33fad2d",
+        "EV-defb496c46fcc604",
+        "EV-c17a52220be52dc1",
+        "EV-58e18eab1b072c9a",
+        "EV-c698da7da473b059",
+        "EV-29c0d969abde2020",
+        "EV-7228e4310ee1341a",
+        "EV-890ffd351486b884",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-d230942b0787581a",
+        "EV-db304937ceac95d2",
+        "EV-cfba8b877da20eaf",
+        "EV-63858d9b5ef92175",
+        "EV-acf3df526813ed37",
+        "EV-afcefb5d86a2db45",
+        "EV-ca18725115b61bd3",
+        "EV-0f0b2013927ce156",
+        "EV-702276a31f123374",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-b888d3eb5f192649",
+        "EV-b84035029a63e52e",
+        "EV-3028dfadf94c8f4c",
+        "EV-a06011da69abcc3d",
+        "EV-e2da1aafabb3e09c",
+        "EV-2258329f33d413cf",
+        "EV-735fac8d2be356bb",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-7f871cbf905f6e0c",
+        "EN-8d4321d936320802",
+        "EN-cd3509f4e1fbec99",
+        "EN-29b9f0cae32e7a8a",
+        "EN-bd6769fe78d0971a",
+        "EN-bbdefa2950f49882",
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
+        "EN-1ea953e1dbed6788",
+        "EN-e59f5a52b6713a29",
+        "EN-a899a3dde1d51caf",
+        "EN-74be4cbf48e647b2",
+        "EN-47dd52018c2b6985",
+        "EN-920510199770f4d6",
+        "EN-422332977c41eb77",
+        "EN-88ab1e5d793701f9",
+        "EN-c70eca6b0f88f44d",
+        "EN-6b61eab266a42eb0",
+        "EN-cc70f504af53013a",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-047364b9be67f665",
+        "EN-d41ebd9f02722fc8",
+        "EN-b3e3bce83d29e787",
+        "EN-f7a386a451b79627",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [
+        "FDE-0193a6afd26db7ae",
+        "FDE-a8fea104d63ff671"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-08-30"
+    },
+    {
       "id": "TX-product_form-model",
       "name": "模型",
       "nodeType": "product_form",
@@ -943,6 +1157,7 @@
         "EV-c5d7d88d1aef8edb",
         "EV-cded77b1de2db61a",
         "EV-535c2f4fb851332d",
+        "EV-73c7062edbdf5d08",
         "EV-caffb8981cecae2f",
         "EV-b69f78a4919cb1bc",
         "EV-0fc718ab409cdcf5",
@@ -974,6 +1189,8 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-dff4ff4127cba5d9",
+        "EV-eb3b431d4ce98ec5",
         "EV-eedd370fd9cfdbb2",
         "EV-df9b78627b91c29f",
         "EV-127a04dfedc04e0c",
@@ -1127,6 +1344,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-fd00664984e9ae3d",
         "EV-8d1915e3b460afa7",
         "EV-00e6152baff47d4d",
         "EV-ce32954014cb030d",
@@ -1191,6 +1409,7 @@
         "EN-cd35ca6b5c3cf23c",
         "EN-883be863cc6562bb",
         "EN-a83a3af1a4866fd5",
+        "EN-25465dbbb180e21b",
         "EN-047364b9be67f665",
         "EN-f420373dc2aa4371",
         "EN-29b9f0cae32e7a8a",
@@ -1207,6 +1426,7 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-6e00d63f3be2ed2e",
         "EN-921ba2ce81556e42",
         "EN-bbdefa2950f49882",
         "EN-a658fbc24f5e3832",
@@ -1321,7 +1541,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "TX-use_case-software_development",
@@ -2367,7 +2587,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "TX-ai_market_application-model_deployment",
@@ -2405,6 +2625,146 @@
   "fde": [],
   "hardware": [],
   "hardwareCatalog": [
+    {
+      "id": "HWC-5a30e015d5d12a96",
+      "snapshotKey": "5a30e015d5d12a96",
+      "snapshotId": "HWS-1f8365423dfd5027",
+      "eventId": "EV-4f6e481c90ff0e3c",
+      "eventIds": [
+        "EV-4f6e481c90ff0e3c",
+        "EV-6b668e4655192209",
+        "EV-467539fe176a470e"
+      ],
+      "dataDate": "2026-08-30",
+      "date": "2026-08-30",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification",
+        "product"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "6",
+          "unit": "$billion",
+          "fact_ref": "HWF-aaffb08c577c72e6"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 6,
+      "changes": [
+        {
+          "date": "2026-08-30",
+          "previousDate": "2026-08-27",
+          "snapshotId": "HWS-1f8365423dfd5027",
+          "previousSnapshotId": "HWS-c8f5584d4abcba56",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-27",
+          "previousDate": "2026-08-07",
+          "snapshotId": "HWS-c8f5584d4abcba56",
+          "previousSnapshotId": "HWS-62a40b6eb4a8749f",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "previousDate": "2026-08-06",
+          "snapshotId": "HWS-62a40b6eb4a8749f",
+          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "previousDate": "2026-08-05",
+          "snapshotId": "HWS-df26b5fa3a51a04d",
+          "previousSnapshotId": "HWS-84ba3d86778ff712",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-84ba3d86778ff712",
+          "previousSnapshotId": "HWS-6228f201a75148c3",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-30",
+          "hardware_fact_id": "HWF-aaffb08c577c72e6",
+          "fact_type": "specification",
+          "observed_at": "2026-08-28T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "6",
+          "unit": "$billion",
+          "source_quote": "Rumors of that deal come after Nvidia struck a $6 billion agreement with Poolside, an open-weight model builder, that will see most of its employees move to the chip-making giant. And two weeks ago, Stripe acquired OpenRouter, the top provider of open-weight models to businesses, for more than $7 billion.",
+          "event_refs": [
+            "EV-4f6e481c90ff0e3c"
+          ],
+          "claim_ref": "CL-69df8d31821d1f90",
+          "source_refs": [
+            "SA-fe65ca58e90faefd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-7f871cbf905f6e0c"
+      ]
+    },
     {
       "id": "HWC-8f073ac04b656d49",
       "snapshotKey": "8f073ac04b656d49",
@@ -2497,106 +2857,6 @@
       "sourceUrl": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets",
       "entityIds": [
         "EN-cd3509f4e1fbec99",
-        "EN-8d4321d936320802",
-        "EN-7f871cbf905f6e0c"
-      ]
-    },
-    {
-      "id": "HWC-5a30e015d5d12a96",
-      "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-c8f5584d4abcba56",
-      "eventId": "EV-6b668e4655192209",
-      "eventIds": [
-        "EV-6b668e4655192209",
-        "EV-467539fe176a470e"
-      ],
-      "dataDate": "2026-08-27",
-      "date": "2026-08-27",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "specification",
-        "product"
-      ],
-      "latestValues": {
-        "specification": {
-          "metric_value": "13",
-          "unit": "$billion",
-          "fact_ref": "HWF-1e0b4b38fd899d45"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 5,
-      "changes": [
-        {
-          "date": "2026-08-27",
-          "previousDate": "2026-08-07",
-          "snapshotId": "HWS-c8f5584d4abcba56",
-          "previousSnapshotId": "HWS-62a40b6eb4a8749f",
-          "changedFacts": [
-            "specification"
-          ]
-        },
-        {
-          "date": "2026-08-07",
-          "previousDate": "2026-08-06",
-          "snapshotId": "HWS-62a40b6eb4a8749f",
-          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-06",
-          "previousDate": "2026-08-05",
-          "snapshotId": "HWS-df26b5fa3a51a04d",
-          "previousSnapshotId": "HWS-84ba3d86778ff712",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-05",
-          "previousDate": "2026-08-04",
-          "snapshotId": "HWS-84ba3d86778ff712",
-          "previousSnapshotId": "HWS-6228f201a75148c3",
-          "changedFacts": [
-            "product"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-27",
-          "hardware_fact_id": "HWF-1e0b4b38fd899d45",
-          "fact_type": "specification",
-          "observed_at": "2026-08-27T00:34:46.985Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "13",
-          "unit": "$billion",
-          "source_quote": "Nvidia has been in talks to acquire Hugging Face, the popular AI platform for sharing and building with open-source models, in what could be one of the chip giant's biggest deals yet. The two parties have had acquisition conversations in recent weeks about a deal that would value Hugging Face at more than $13 billion, according to a person familiar with the matter. The companies have not yet reached a deal, and the talks could still fall apart, the person said. Business Insider on Sunday was the first to report that Hugging Face was fielding takeover interest. Nvidia and Hugging Face did not respond to requests for comment. Nvidia has increasingly ramped up dealmaking with its enormous cash pile. The company said Wednesday that it has $18 billion committed to equity investments for the rest of its fiscal year, on top of $47.9 billion it already holds in private companies. Microsoft also met with Hugging Face, but the person familiar and a second person said talks are not ongoing. Nvidia already has a relationship with Hugging Face. The chipmaker participated in its $235 million funding round in 2023 that valued it at $4.5 billion. Hugging Face turned down a $500 million investment offer from Nvidia late last year that would have valued it at $7 billion, the Financial Times previously reported. Hugging Face said at the time it did not want a dominant investor that could sway decisions. Hugging Face sits at the center of the open-source AI ecosystem, hosting millions of AI models and datasets that developers can build on. Owning the platform could give Nvidia a bigger foothold with those developers — and potentially drive more workloads onto its chips. Hugging Face was founded in 2016 by French entrepreneurs Clément Delangue, Julien Chaumond, and Thomas Wolf. But Nvidia ownership could also complicate one of Hugging Face's strengths: its neutrality. The platform supports models and hardware from across the industry, including Nvidia competitors such as AMD and Intel. Have a tip?",
-          "event_refs": [
-            "EV-6b668e4655192209"
-          ],
-          "claim_ref": "CL-7a5ed92342eef2d7",
-          "source_refs": [
-            "SA-bb9c8b9711dd5764"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition",
-      "entityIds": [
         "EN-8d4321d936320802",
         "EN-7f871cbf905f6e0c"
       ]

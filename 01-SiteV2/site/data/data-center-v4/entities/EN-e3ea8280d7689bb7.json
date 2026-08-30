@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -23,6 +23,7 @@
     ],
     "eventIds": [
       "EV-b69f78a4919cb1bc",
+      "EV-ec8b36dcb97645da",
       "EV-b756b17219597a4e",
       "EV-72d4a00d52a3201c"
     ],
@@ -30,7 +31,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-14",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-30",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -39,6 +40,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-ec8b36dcb97645da",
         "EV-b756b17219597a4e",
         "EV-72d4a00d52a3201c"
       ],
@@ -47,6 +49,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-ec8b36dcb97645da",
+        "dataDate": "2026-08-30",
+        "date": "2026-08-29",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "智谱开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-1d79127e9d90e89b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1d79127e9d90e89b",
+          "EN-e3ea8280d7689bb7"
+        ]
+      },
       {
         "id": "EV-b756b17219597a4e",
         "dataDate": "2026-08-20",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "hardware": [
@@ -2983,6 +2983,232 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-10bf48c75f2708f2",
+      "snapshotKey": "10bf48c75f2708f2",
+      "snapshotId": "HWS-ab8d961593e2488b",
+      "eventId": "EV-074a78d3cfaf633b",
+      "eventIds": [
+        "EV-074a78d3cfaf633b"
+      ],
+      "dataDate": "2026-08-30",
+      "date": "2026-08-30",
+      "title": "Hugging Face",
+      "subject": "Pollen Robotics",
+      "productNames": [
+        "Hugging Face"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d16e0b58d44ad456"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 3,
+      "changes": [
+        {
+          "date": "2026-08-30",
+          "previousDate": "2026-08-29",
+          "snapshotId": "HWS-ab8d961593e2488b",
+          "previousSnapshotId": "HWS-b87a8d64a85a72e1",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-29",
+          "previousDate": "2026-08-28",
+          "snapshotId": "HWS-b87a8d64a85a72e1",
+          "previousSnapshotId": "HWS-88e198d85de46cc7",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-30",
+          "hardware_fact_id": "HWF-d16e0b58d44ad456",
+          "fact_type": "product",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-6117af74470fbaa4",
+          "subject_name": "Pollen Robotics",
+          "product_entity_ids": [
+            "EN-d9352ce019e77ab3"
+          ],
+          "product_names": [
+            "Hugging Face"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Hugging Face’s Pollen Robotics has launched its second cute AI robot, the Microduck , a one-eyed biped standing just under 10 inches tall.",
+          "event_refs": [
+            "EV-074a78d3cfaf633b"
+          ],
+          "claim_ref": "CL-7c4573c5f58e766d",
+          "source_refs": [
+            "SA-e303bf53879dac05"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://theverge.com/gadgets/985549/hugging-face-microduck-robot",
+      "entityIds": [
+        "EN-6117af74470fbaa4",
+        "EN-d9352ce019e77ab3"
+      ]
+    },
+    {
+      "id": "HWC-5a30e015d5d12a96",
+      "snapshotKey": "5a30e015d5d12a96",
+      "snapshotId": "HWS-1f8365423dfd5027",
+      "eventId": "EV-4f6e481c90ff0e3c",
+      "eventIds": [
+        "EV-4f6e481c90ff0e3c",
+        "EV-6b668e4655192209",
+        "EV-467539fe176a470e"
+      ],
+      "dataDate": "2026-08-30",
+      "date": "2026-08-30",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification",
+        "product"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "6",
+          "unit": "$billion",
+          "fact_ref": "HWF-aaffb08c577c72e6"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 6,
+      "changes": [
+        {
+          "date": "2026-08-30",
+          "previousDate": "2026-08-27",
+          "snapshotId": "HWS-1f8365423dfd5027",
+          "previousSnapshotId": "HWS-c8f5584d4abcba56",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-27",
+          "previousDate": "2026-08-07",
+          "snapshotId": "HWS-c8f5584d4abcba56",
+          "previousSnapshotId": "HWS-62a40b6eb4a8749f",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "previousDate": "2026-08-06",
+          "snapshotId": "HWS-62a40b6eb4a8749f",
+          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "previousDate": "2026-08-05",
+          "snapshotId": "HWS-df26b5fa3a51a04d",
+          "previousSnapshotId": "HWS-84ba3d86778ff712",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-84ba3d86778ff712",
+          "previousSnapshotId": "HWS-6228f201a75148c3",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-30",
+          "hardware_fact_id": "HWF-aaffb08c577c72e6",
+          "fact_type": "specification",
+          "observed_at": "2026-08-28T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "6",
+          "unit": "$billion",
+          "source_quote": "Rumors of that deal come after Nvidia struck a $6 billion agreement with Poolside, an open-weight model builder, that will see most of its employees move to the chip-making giant. And two weeks ago, Stripe acquired OpenRouter, the top provider of open-weight models to businesses, for more than $7 billion.",
+          "event_refs": [
+            "EV-4f6e481c90ff0e3c"
+          ],
+          "claim_ref": "CL-69df8d31821d1f90",
+          "source_refs": [
+            "SA-fe65ca58e90faefd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-7f871cbf905f6e0c"
+      ]
+    },
+    {
       "id": "HWC-8f073ac04b656d49",
       "snapshotKey": "8f073ac04b656d49",
       "snapshotId": "HWS-ab71e4171fa3ce71",
@@ -3076,83 +3302,6 @@
         "EN-cd3509f4e1fbec99",
         "EN-8d4321d936320802",
         "EN-7f871cbf905f6e0c"
-      ]
-    },
-    {
-      "id": "HWC-10bf48c75f2708f2",
-      "snapshotKey": "10bf48c75f2708f2",
-      "snapshotId": "HWS-b87a8d64a85a72e1",
-      "eventId": "EV-074a78d3cfaf633b",
-      "eventIds": [
-        "EV-074a78d3cfaf633b"
-      ],
-      "dataDate": "2026-08-29",
-      "date": "2026-08-29",
-      "title": "Hugging Face",
-      "subject": "Pollen Robotics",
-      "productNames": [
-        "Hugging Face"
-      ],
-      "hardwareType": "robot",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-49f264a08836438b"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 2,
-      "changes": [
-        {
-          "date": "2026-08-29",
-          "previousDate": "2026-08-28",
-          "snapshotId": "HWS-b87a8d64a85a72e1",
-          "previousSnapshotId": "HWS-88e198d85de46cc7",
-          "changedFacts": [
-            "product"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-29",
-          "hardware_fact_id": "HWF-49f264a08836438b",
-          "fact_type": "product",
-          "observed_at": "2026-08-27T00:00:00.000Z",
-          "subject_entity_id": "EN-6117af74470fbaa4",
-          "subject_name": "Pollen Robotics",
-          "product_entity_ids": [
-            "EN-d9352ce019e77ab3"
-          ],
-          "product_names": [
-            "Hugging Face"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Hugging Face’s Pollen Robotics has launched its second cute AI robot, the Microduck , a one-eyed biped standing just under 10 inches tall.",
-          "event_refs": [
-            "EV-074a78d3cfaf633b"
-          ],
-          "claim_ref": "CL-c4e5fd57f665be91",
-          "source_refs": [
-            "SA-7f50ae29ba47ae9c"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://theverge.com/gadgets/985549/hugging-face-microduck-robot",
-      "entityIds": [
-        "EN-6117af74470fbaa4",
-        "EN-d9352ce019e77ab3"
       ]
     },
     {
@@ -4047,106 +4196,6 @@
       "entityIds": [
         "EN-8d4321d936320802",
         "EN-115dd723b2613147"
-      ]
-    },
-    {
-      "id": "HWC-5a30e015d5d12a96",
-      "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-c8f5584d4abcba56",
-      "eventId": "EV-6b668e4655192209",
-      "eventIds": [
-        "EV-6b668e4655192209",
-        "EV-467539fe176a470e"
-      ],
-      "dataDate": "2026-08-27",
-      "date": "2026-08-27",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "specification",
-        "product"
-      ],
-      "latestValues": {
-        "specification": {
-          "metric_value": "13",
-          "unit": "$billion",
-          "fact_ref": "HWF-1e0b4b38fd899d45"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 5,
-      "changes": [
-        {
-          "date": "2026-08-27",
-          "previousDate": "2026-08-07",
-          "snapshotId": "HWS-c8f5584d4abcba56",
-          "previousSnapshotId": "HWS-62a40b6eb4a8749f",
-          "changedFacts": [
-            "specification"
-          ]
-        },
-        {
-          "date": "2026-08-07",
-          "previousDate": "2026-08-06",
-          "snapshotId": "HWS-62a40b6eb4a8749f",
-          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-06",
-          "previousDate": "2026-08-05",
-          "snapshotId": "HWS-df26b5fa3a51a04d",
-          "previousSnapshotId": "HWS-84ba3d86778ff712",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-05",
-          "previousDate": "2026-08-04",
-          "snapshotId": "HWS-84ba3d86778ff712",
-          "previousSnapshotId": "HWS-6228f201a75148c3",
-          "changedFacts": [
-            "product"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-27",
-          "hardware_fact_id": "HWF-1e0b4b38fd899d45",
-          "fact_type": "specification",
-          "observed_at": "2026-08-27T00:34:46.985Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "13",
-          "unit": "$billion",
-          "source_quote": "Nvidia has been in talks to acquire Hugging Face, the popular AI platform for sharing and building with open-source models, in what could be one of the chip giant's biggest deals yet. The two parties have had acquisition conversations in recent weeks about a deal that would value Hugging Face at more than $13 billion, according to a person familiar with the matter. The companies have not yet reached a deal, and the talks could still fall apart, the person said. Business Insider on Sunday was the first to report that Hugging Face was fielding takeover interest. Nvidia and Hugging Face did not respond to requests for comment. Nvidia has increasingly ramped up dealmaking with its enormous cash pile. The company said Wednesday that it has $18 billion committed to equity investments for the rest of its fiscal year, on top of $47.9 billion it already holds in private companies. Microsoft also met with Hugging Face, but the person familiar and a second person said talks are not ongoing. Nvidia already has a relationship with Hugging Face. The chipmaker participated in its $235 million funding round in 2023 that valued it at $4.5 billion. Hugging Face turned down a $500 million investment offer from Nvidia late last year that would have valued it at $7 billion, the Financial Times previously reported. Hugging Face said at the time it did not want a dominant investor that could sway decisions. Hugging Face sits at the center of the open-source AI ecosystem, hosting millions of AI models and datasets that developers can build on. Owning the platform could give Nvidia a bigger foothold with those developers — and potentially drive more workloads onto its chips. Hugging Face was founded in 2016 by French entrepreneurs Clément Delangue, Julien Chaumond, and Thomas Wolf. But Nvidia ownership could also complicate one of Hugging Face's strengths: its neutrality. The platform supports models and hardware from across the industry, including Nvidia competitors such as AMD and Intel. Have a tip?",
-          "event_refs": [
-            "EV-6b668e4655192209"
-          ],
-          "claim_ref": "CL-7a5ed92342eef2d7",
-          "source_refs": [
-            "SA-bb9c8b9711dd5764"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-27/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-7f871cbf905f6e0c"
       ]
     },
     {
@@ -12645,37 +12694,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-29",
-      "funnel_id": "LF-6f22eb925478c401",
+      "data_date": "2026-08-30",
+      "funnel_id": "LF-1f3d45d1600526e0",
       "lens": "hardware",
-      "date": "2026-08-29",
+      "date": "2026-08-30",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_oem_odm",
         "hardware_product_specs",
-        "hardware_shipment_deployment",
-        "hardware_supply_agreement"
+        "hardware_shipment_deployment"
       ],
-      "raw_documents": 20,
-      "original_sources": 19,
+      "raw_documents": 18,
+      "original_sources": 15,
       "valid_claims": 7,
-      "observations": 3,
-      "canonical_events": 3,
+      "observations": 2,
+      "canonical_events": 2,
       "blocker_counts": {
-        "source_outside_daily_window": 9,
+        "source_outside_daily_window": 6,
         "no_source_bounded_event": 1,
+        "no_source_bounded_claim": 1,
         "non_event_or_index_title": 3,
         "event_not_ai_relevant": 1,
-        "raw_source_quality_block": 2,
-        "raw_document_not_auditable": 1
+        "raw_source_quality_block": 4
       },
       "rates": {
-        "original_source_rate": 0.95,
-        "valid_claim_rate": 0.35,
-        "observation_rate": 0.42857142857142855,
-        "event_conversion_rate": 0.42857142857142855
+        "original_source_rate": 0.8333333333333334,
+        "valid_claim_rate": 0.3888888888888889,
+        "observation_rate": 0.2857142857142857,
+        "event_conversion_rate": 0.2857142857142857
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/monitoring-funnel.json"
     }
   ]
 }

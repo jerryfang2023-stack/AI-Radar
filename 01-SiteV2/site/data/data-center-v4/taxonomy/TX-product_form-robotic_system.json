@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -95,7 +95,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-29"
+    "lastSeen": "2026-08-30"
   },
   "events": [
     {
@@ -7526,9 +7526,9 @@
     },
     {
       "id": "EV-074a78d3cfaf633b",
-      "dataDate": "2026-08-29",
+      "dataDate": "2026-08-30",
       "date": "2026-08-27",
-      "updatedDate": "2026-08-29",
+      "updatedDate": "2026-08-30",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -9234,6 +9234,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-086902ad904c1c90",
         "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
@@ -9267,6 +9268,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-product_form-developer_tool",
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-target_user-business_user",
@@ -9278,15 +9281,13 @@
         "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-target_user-public_sector_user",
-        "TX-technology-code_generation",
-        "TX-product_form-developer_tool"
+        "TX-target_user-public_sector_user"
       ],
       "relatedEntityIds": [
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-7d0445227e7dde72",
@@ -9626,7 +9627,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-27",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-aec12c1b42f6e0b6",
@@ -9695,6 +9696,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-developer_tool",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
@@ -9704,7 +9706,6 @@
         "TX-technology-agentic_execution",
         "TX-product_form-ai_compute_system",
         "TX-industry-manufacturing",
-        "TX-product_form-developer_tool",
         "TX-technology-embodied_ai",
         "TX-technology-human_in_loop"
       ],
@@ -9796,14 +9797,18 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-40fd274ae86434b8",
+        "EV-532031a0c390a2e3",
+        "EV-4f6e481c90ff0e3c",
         "EV-c32dd87e1f72b09a",
+        "EV-40fd274ae86434b8",
         "EV-10f04014fb3b62ff",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
@@ -10013,7 +10018,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-technology-open_weights",
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
@@ -10047,8 +10054,6 @@
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
-        "TX-product_form-ai_infrastructure_software",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
@@ -10071,24 +10076,31 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0"
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-0d049cd1e9f619f9",
@@ -10306,13 +10318,13 @@
     {
       "id": "HWC-10bf48c75f2708f2",
       "snapshotKey": "10bf48c75f2708f2",
-      "snapshotId": "HWS-b87a8d64a85a72e1",
+      "snapshotId": "HWS-ab8d961593e2488b",
       "eventId": "EV-074a78d3cfaf633b",
       "eventIds": [
         "EV-074a78d3cfaf633b"
       ],
-      "dataDate": "2026-08-29",
-      "date": "2026-08-29",
+      "dataDate": "2026-08-30",
+      "date": "2026-08-30",
       "title": "Hugging Face",
       "subject": "Pollen Robotics",
       "productNames": [
@@ -10326,12 +10338,21 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-49f264a08836438b"
+          "fact_ref": "HWF-d16e0b58d44ad456"
         }
       },
       "factCount": 1,
-      "snapshotCount": 2,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-08-30",
+          "previousDate": "2026-08-29",
+          "snapshotId": "HWS-ab8d961593e2488b",
+          "previousSnapshotId": "HWS-b87a8d64a85a72e1",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-08-29",
           "previousDate": "2026-08-28",
@@ -10346,8 +10367,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-29",
-          "hardware_fact_id": "HWF-49f264a08836438b",
+          "data_date": "2026-08-30",
+          "hardware_fact_id": "HWF-d16e0b58d44ad456",
           "fact_type": "product",
           "observed_at": "2026-08-27T00:00:00.000Z",
           "subject_entity_id": "EN-6117af74470fbaa4",
@@ -10365,11 +10386,11 @@
           "event_refs": [
             "EV-074a78d3cfaf633b"
           ],
-          "claim_ref": "CL-c4e5fd57f665be91",
+          "claim_ref": "CL-7c4573c5f58e766d",
           "source_refs": [
-            "SA-7f50ae29ba47ae9c"
+            "SA-e303bf53879dac05"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/hardware-facts.json"
         }
       ],
       "capexFacts": [],
