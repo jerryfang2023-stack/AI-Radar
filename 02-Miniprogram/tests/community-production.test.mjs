@@ -34,6 +34,25 @@ test("production homepage never substitutes demo archives on API failure", async
   assert.equal(page.data.error, "Unavailable");
 });
 
+test("homepage hides the bounty module unless a published bounty exists", async () => {
+  let bounty = null;
+  const { page } = pageFor("community", async () => ({ archives: [], bounty, featuredMembers: [], memberCount: 0 }));
+  await page.refresh();
+  assert.equal(page.data.bounty, null);
+  bounty = { id: "published-case", question: "A reviewed question", points: 20 };
+  await page.refresh();
+  assert.equal(page.data.bounty.id, "published-case");
+  bounty = null;
+  await page.refresh();
+  assert.equal(page.data.bounty, null);
+  const template = fs.readFileSync("miniprogram/pages/community/index.wxml", "utf8");
+  const cards = template.match(/<button[^>]*class="bounty-feature"[^>]*>/g);
+  assert.equal(cards.length, 1);
+  assert.match(cards[0], /wx:if="{{bounty}}"/);
+  assert.doesNotMatch(template, /发起问题，与成员一起寻找答案/);
+  assert.match(template, /data-url="\/pages\/community-bounty\/index" bindtap="openProtected">悬赏令/);
+});
+
 test("protected reader renders server sections and clears them when access is revoked", async () => {
   let revoked = false;
   const { page } = pageFor("community-program", async (path) => {
