@@ -16,15 +16,15 @@
   </view>
 </template>
 <view class="page-shell">
-  <app-header title="行业图谱" show-back fallback-url="/pages/community/index" />
+  <app-header title="角色图谱" show-back fallback-url="/pages/community/index" />
   <view class="graph-page">
     <view wx:if="{{loading}}" class="service-state">正在加载会员资料…</view>
     <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
     <view wx:if="{{experience}}" class="experience-note">隔离体验 · 成员列表为精选样例</view>
     <block wx:if="{{mode === 'graph'}}">
-      <view class="top-actions"><view class="segment"><button class="{{tab === 'map' ? 'active' : ''}}" data-tab="map" bindtap="switchTab">行业图谱</button><button class="{{tab === 'directory' ? 'active' : ''}}" data-tab="directory" bindtap="switchTab">通讯录</button></view><button class="profile-link" bindtap="openProfile">我的档案</button></view>
+      <view class="top-actions"><view class="segment"><button class="{{tab === 'map' ? 'active' : ''}}" data-tab="map" bindtap="switchTab">角色图谱</button><button class="{{tab === 'directory' ? 'active' : ''}}" data-tab="directory" bindtap="switchTab">通讯录</button></view><button class="profile-link" bindtap="openProfile">我的档案</button></view>
       <block wx:if="{{tab === 'map'}}">
-        <view class="section-heading"><view><text>INDUSTRY ROLE MAP</text><text>成员行业图谱</text></view><text>{{members.length}} 位 · 6 类角色</text></view>
+        <view class="section-heading"><view><text>MEMBER ROLE MAP</text><text>成员角色图谱</text></view><text>{{members.length}} 位 · 6 类角色</text></view>
         <view class="supply"><text>成员供给结构</text><view><view wx:for="{{supply}}" wx:key="name" class="i s{{index + 1}}" style="flex: {{item.count}}"></view></view><view><view wx:for="{{supply}}" wx:key="name" class="span">{{item.name}} <text class="strong">{{item.count}}</text></view></view></view>
         <scroll-view class="role-tabs" scroll-x enable-flex><button wx:for="{{roles}}" wx:key="name" class="{{activeRole === index ? 'active' : ''}}" data-index="{{index}}" bindtap="selectRole"><text>0{{index + 1}}</text><view><text class="strong">{{item.name}}</text><text class="small">{{item.count}} 人</text></view></button></scroll-view>
         <text wx:if="{{!loading && !activeRoleData.count}}" class="service-state">该角色暂无公开成员</text><view class="member-list"><button wx:for="{{activeRoleData.members}}" wx:key="id" data-id="{{item.id}}" bindtap="openMember"><text class="avatar">{{item.avatar}}</text><view><text class="strong">{{item.name}}</text><text class="small">{{item.company}} · {{item.city}}</text></view><text>›</text></button></view>
@@ -46,10 +46,10 @@
       <view class="profile-hero"><text class="avatar-large">{{profile.avatar}}</text><view><text>MY COMMUNITY PROFILE</text><text>{{profile.name}}</text><text>{{profile.role}} · {{profile.company}}</text><view><view class="span">{{profile.city}}</view><view class="span">{{profile.ai}}</view></view></view></view>
       <template wx:if="{{profile.roleEvidence}}" is="role-evidence" data="{{evidence: profile.roleEvidence}}" />
       <view class="public-card"><text>PUBLIC PROFILE</text><text>正在做什么</text><text>{{profile.project}}</text><view><view><text class="small">行业背景</text><text class="strong">{{profile.industry}}</text></view><view><text class="small">AI 实践方向</text><text class="strong">{{profile.ai}}</text></view><view><text class="small">可交流能力</text><text class="strong">{{profile.ability}}</text></view><view><text class="small">当前诉求</text><text class="strong">{{profile.need}}</text></view></view></view>
-      <text class="privacy">这是你在行业图谱与成员通讯录中的公开资料。手机号、微信号和内部审核信息不会公开。</text>
+      <text class="privacy">这是你在角色图谱与成员通讯录中的公开资料。手机号、微信号和内部审核信息不会公开。</text>
     </block>
     <block wx:else>
-      <view class="edit-hero"><text>MY COMMUNITY PROFILE</text><text>更新公开会员资料</text><text>{{experience ? '本次修改仅更新本机体验档案。' : '保存公开资料，供行业图谱和通讯录展示。'}}</text></view>
+      <view class="edit-hero"><text>MY COMMUNITY PROFILE</text><text>更新公开会员资料</text><text>{{experience ? '本次修改仅更新本机体验档案。' : '保存公开资料，供角色图谱和通讯录展示。'}}</text></view>
       <view class="form-card">
         <label>姓名 / 常用称呼 *</label><input value="{{profile.name}}" data-field="name" bindinput="updateField" maxlength="80" />
         <label>所在城市 *</label><input value="{{profile.city}}" data-field="city" bindinput="updateField" maxlength="100" />

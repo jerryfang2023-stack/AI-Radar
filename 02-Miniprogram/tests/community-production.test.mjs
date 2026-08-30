@@ -131,6 +131,15 @@ test("bounty answer waits for server acknowledgement and cannot report success o
   assert.equal(page.data.error, "Access revoked");
 });
 
+test("community consistently names the member navigation as role map", () => {
+  for (const page of ["community", "community-graph"]) {
+    const markup = fs.readFileSync(`miniprogram/pages/${page}/index.wxml`, "utf8");
+    assert.match(markup, /角色图谱/);
+    assert.doesNotMatch(markup, /行业图谱|INDUSTRY ROLE MAP/);
+  }
+  assert.match(fs.readFileSync("miniprogram/pages/community-graph/index.wxml", "utf8"), /行业领域/);
+});
+
 test("role evidence stays runtime-only and is distinct from original self-reported profile", () => {
   const source = fs.readFileSync("miniprogram/pages/community-graph/index.wxml", "utf8");
   assert.match(source, /member\.roleEvidence/);
