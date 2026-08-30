@@ -461,6 +461,18 @@
     .shell[data-skill-view] .controls { grid-template-columns: minmax(0, 1fr); }
     .skill-grid { grid-template-columns: 1fr; }
   }
+.platform-sync { margin: 16px 0; padding: 16px; border: 1px solid var(--line, #dedbd4); border-radius: 12px; background: #fffdf8; }
+.platform-sync summary { cursor: pointer; font-size: 16px; line-height: 24px; font-weight: 600; color: #0d355c; }
+.platform-sync p { font-size: 12px; line-height: 20px; color: #596471; }
+.platform-coverage { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 12px 0; }
+.platform-coverage article { min-width: 0; display: grid; gap: 6px; padding: 12px; background: #f7f4ef; border-radius: 8px; }
+.platform-coverage strong { font-size: 14px; line-height: 24px; color: #0d355c; }
+.platform-coverage span, .platform-coverage small { font-size: 12px; line-height: 18px; overflow-wrap: anywhere; }
+.platform-filter { display: flex; align-items: center; gap: 6px; font-size: 12px; min-width: 0; }
+.platform-filter select { width: 100%; min-width: 0; }
+.controls { grid-template-columns: minmax(150px, 1fr) minmax(140px, 190px) 140px 140px; }
+@media (max-width: 900px) { .controls { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .platform-coverage, .controls { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -480,6 +492,12 @@
     </header>
 
     <section class="metrics" data-metrics></section>
+    <details class="platform-sync" open>
+      <summary>各平台 Skill 同步与覆盖</summary>
+      <p data-platform-policy></p>
+      <div class="platform-coverage" data-platform-coverage></div>
+      <p>同步方式：本地执行目录构建时扫描配置来源，Git 发布后刷新本页可见。摘要带来源指纹；不复制、改写各项目原文，也不改变安装或启用状态。</p>
+    </details>
 
     <section class="skill-view is-active" data-view-panel="catalog"></section>
 
@@ -521,6 +539,7 @@
 
     <section class="controls" data-controls>
       <input type="search" data-search placeholder="搜索 skill 名称、分类或描述">
+      <label class="platform-filter">平台<select data-skill-platform><option value="all">全部平台</option></select></label>
       <select data-sort>
         <option value="priority">推荐排序</option>
         <option value="name">按名称</option>
@@ -563,7 +582,7 @@
   <script>
     if (new URLSearchParams(location.search).get("embed") === "1") document.body.classList.add("is-embedded");
   </script>
-  <script src="data/local-skill-store-data.js?v=20260830-skill-store-v210"></script>
-  <script src="assets/local-skill-store.js?v=20260830-skill-store-v210"></script>
+  <script src="data/local-skill-store-data.js?v=20260830-skill-store-v220"></script>
+  <script src="assets/local-skill-store.js?v=20260830-skill-store-v220"></script>
 </body>
 </html>

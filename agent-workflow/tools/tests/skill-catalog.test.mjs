@@ -71,4 +71,9 @@ test("builder registers content and AIP, excludes wrappers, and blocks stale des
   const unavailable = spawnSync(process.execPath, [builder], { cwd: fixture, env: { ...env, TEST_AIP_SKILLS: path.join(fixture, "missing") }, encoding: "utf8" });
   assert.equal(unavailable.status, 1);
   assert.equal(fs.readFileSync(dashboardPath, "utf8"), prior);
+  config.projectSources[0].required = false;
+  write(path.join(project, "skill-catalog-sources.json"), JSON.stringify(config));
+  const disappearedOptional = spawnSync(process.execPath, [builder], { cwd: fixture, env: { ...env, TEST_AIP_SKILLS: path.join(fixture, "missing") }, encoding: "utf8" });
+  assert.equal(disappearedOptional.status, 1, "a formerly available optional source must not silently disappear");
+  assert.equal(fs.readFileSync(dashboardPath, "utf8"), prior);
 });

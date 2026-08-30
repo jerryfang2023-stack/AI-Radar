@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V2.0.0-v4-telemetry">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.0.0-unified-platform">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -279,6 +279,63 @@
       .stage { padding: 16px 8px 36px; }
       .page-surface { padding: 12px; }
     }
+    /* Compact internal dashboard: Guanlan column-title scale, not a marketing hero. */
+    h1 { line-height: 42px; }
+    h2, h3 { font-size: 20px; line-height: 30px; font-weight: 600; }
+    p { font-size: 14px; line-height: 24px; }
+    .nav button { font-size: 14px; line-height: 20px; font-weight: 500; min-height: 44px; }
+    .nav button[aria-current="true"] { background: var(--blue); box-shadow: inset 3px 0 0 var(--gold); }
+    .label, .kicker { font-size: 12px; line-height: 18px; font-weight: 500; }
+    a, .text-button { color: var(--blue); }
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .snapshot-stamp { margin: -4px 0 20px; font-size: 12px; line-height: 18px; }
+    .platform-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .platform-card, .version-card { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+    .platform-top, .platform-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+    .platform-version { color: var(--blue); font: 500 18px/28px var(--mono); overflow-wrap: anywhere; }
+    .platform-note { font-size: 12px; line-height: 18px; }
+    .platform-bottom { padding-top: 12px; margin-top: auto; border-top: 1px solid var(--line); font-size: 12px; line-height: 18px; }
+    .text-button { border: 0; padding: 8px 0; background: none; font-size: 14px; line-height: 24px; text-align: left; }
+    .version-source, .data-status-item { overflow-wrap: anywhere; }
+    .version-controls { display: flex; gap: 16px; align-items: end; flex-wrap: wrap; margin-bottom: 16px; font-size: 14px; line-height: 24px; }
+    .version-controls label, .preferences-form label { display: grid; gap: 6px; }
+    .version-query { flex: 1; min-width: 180px; }
+    .version-controls input, .version-controls select, .preferences-form select { min-height: 44px; min-width: 0; max-width: 100%; border: 1px solid var(--line); border-radius: 6px; background: white; padding: 8px 10px; color: var(--ink); }
+    [data-version-count] { color: var(--muted); font-size: 12px; }
+    .quick-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .quick-links button { text-align: left; padding: 16px; border: 1px solid var(--gold-line); border-radius: 10px; color: var(--blue); background: var(--card); font-weight: 600; }
+    .quick-links span { display: block; margin-top: 6px; font-size: 12px; line-height: 18px; font-weight: 400; }
+    .governance-principles { padding-left: 22px; font-size: 14px; line-height: 28px; color: var(--muted); }
+    .preferences-form { display: grid; gap: 16px; margin-top: 16px; font-size: 14px; line-height: 24px; }
+    .preferences-form .checkbox-label { display: flex; align-items: center; gap: 8px; }
+    .form-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .form-actions button { min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--blue); }
+    .form-actions button[type="submit"] { color: var(--paper); background: var(--blue); }
+    .integration-card { margin-top: 20px; }
+    .data-status-item { align-items: start; font-size: 14px; line-height: 24px; }
+    .is-compact .card { padding: 12px; }
+    .is-compact .grid { gap: 8px; }
+    @media (max-width: 1100px) { .platform-grid, .quick-links { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 700px) {
+      .shell, .shell.is-rail-collapsed { display: block; }
+      .rail, .shell.is-rail-collapsed .rail { position: static; height: auto; padding: 12px; border-right: 0; border-bottom: 1px solid var(--line); }
+      .brand { padding: 0 4px 12px; }
+      .brand span, .rail-actions { display: none; }
+      .brand small { font-size: 12px; line-height: 18px; }
+      .shell.is-rail-collapsed .brand strong { font-size: 18px; }
+      .shell.is-rail-collapsed .brand strong::before { display: none; }
+      .shell.is-rail-collapsed .nav-text { display: inline; }
+      .nav { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; }
+      .nav button, .shell.is-rail-collapsed .nav button { justify-content: center; padding: 8px 4px; font-size: 12px; }
+      .nav-icon { display: none; }
+      .stage { padding: 16px 8px 32px; }
+      .page-surface { padding: 16px; }
+      .platform-grid, .quick-links, .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      [data-overview-status] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .version-controls { align-items: stretch; flex-direction: column; }
+      .version-query { min-width: 0; }
+      .data-status-item { grid-template-columns: 1fr; gap: 4px; }
+    }
   </style>
   <meta name="wavesight-analytics-version" content="APP-ANALYTICS-V1.3.0-ops-readonly">
   <meta name="robots" content="noindex,nofollow">
@@ -287,11 +344,9 @@
 <body class="page-operations-console">
   <main class="shell" data-ops-console>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V2.0.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.0.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
-        <button type="button" data-tab="issues"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span><span class="nav-text">问题中心</span></button>
-        <button type="button" data-tab="tasks"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h10"/><path d="M18 16l2 2 3-4"/></svg></span><span class="nav-text">任务链路</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
         <button type="button" data-tab="analytics"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M7 16v-5M12 16V4M17 16V8"/></svg></span><span class="nav-text">运营统计</span></button>
         <button type="button" data-tab="governance"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">版本治理</span></button>
@@ -305,66 +360,22 @@
       <section class="panel is-active" data-panel="overview">
         <div class="page-surface">
           <header class="page-head">
-            <div><span class="kicker">DATA OBSERVATION OPS</span><h1>总览</h1></div>
-            <p>每天先看是否有问题，再看卡在哪里、谁负责、下一步怎么处理，以及是否已经形成闭环。</p>
+            <div><span class="kicker">GUANLAN · UNIFIED OPERATIONS</span><h1>整体运营总览</h1></div>
+            <p>一个入口，查看数据中心、融资情报站、小程序与社群的运营、质量、版本和规则。</p>
           </header>
-          <div class="overview-command">
-            <div class="status-strip" data-overview-status></div>
-            <article class="card action-card" data-overview-actions></article>
+          <p class="snapshot-stamp" data-overview-stamp role="status"></p>
+          <div class="grid grid-4" data-overview-status></div>
+          <div class="module-head"><div><span class="kicker">PLATFORMS</span><h2>平台运行档案</h2></div><p>展示已知版本与接入范围；源码版本不代表线上已发布。</p></div>
+          <div class="grid platform-grid" data-platform-cards></div>
+          <div class="module-head"><div><span class="kicker">COVERAGE</span><h2>接入与核验提醒</h2></div><p>缺少数据不等于零，待接入不等于故障。</p></div>
+          <div class="grid grid-3" data-coverage-gaps></div>
+          <div class="module-head"><div><span class="kicker">WORKSPACE</span><h2>常用入口</h2></div></div>
+          <div class="quick-links">
+            <button type="button" data-tab="analytics">运营统计 <span>访问 / 注册 / 付费 →</span></button>
+            <button type="button" data-tab="quality">数据质量 <span>逐来源数量 / 质量 →</span></button>
+            <button type="button" data-tab="skills">Skill Store <span>平台目录 / 来源同步 →</span></button>
+            <button type="button" data-tab="settings">系统设置 <span>接入登记 / 本机偏好 →</span></button>
           </div>
-          <div class="module-head"><div><span class="kicker">TODAY</span><h2>今日治理状态</h2></div><p>把生产状态、未解决问题和已关闭问题放在同一个判断面里。</p></div>
-          <div class="grid grid-3" data-overview-risks></div>
-          <div class="grid grid-3" style="margin-top:12px">
-            <article class="card"><span class="label">Production Stages</span><h2>生产阶段</h2><div class="rows" data-overview-funnel></div></article>
-            <article class="card"><span class="label">Issue Queue</span><h2>待处理队列</h2><div class="rows" data-work-queue></div></article>
-            <article class="card"><span class="label">Release</span><h2>上线同步</h2><div class="rows" data-overview-routing></div></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel" data-panel="issues">
-        <div class="page-surface">
-          <header class="page-head">
-            <div><span class="kicker">ISSUE CENTER</span><h1>问题中心</h1></div>
-            <p>按日发现问题，按周/月复盘重复问题。后台的目标不是展示，而是让问题能被关闭。</p>
-          </header>
-          <div class="grid grid-4" data-issue-summary></div>
-          <section>
-            <div class="module-head"><div><span class="kicker">DAILY</span><h2>今日问题</h2></div><p>来自每日监督报告和 Hermes 问题单。</p></div>
-            <div class="list" data-issue-list></div>
-          </section>
-          <section>
-            <div class="module-head"><div><span class="kicker">REVIEW</span><h2>周/月复盘</h2></div><p>重复出现的类别要进入规则、门禁或自动化修复。</p></div>
-            <div class="grid grid-2">
-              <article class="card"><span class="label">7 Days</span><h2>本周问题</h2><div class="rows" data-weekly-issues></div></article>
-              <article class="card"><span class="label">30 Days</span><h2>本月问题</h2><div class="rows" data-monthly-issues></div></article>
-            </div>
-          </section>
-          <section>
-            <div class="module-head"><div><span class="kicker">CLOSED LOOP</span><h2>已解决记录</h2></div><p>保留验证方式、预防动作和修复记录，避免同类问题反复出现。</p></div>
-            <div class="list" data-resolved-issues></div>
-          </section>
-        </div>
-      </section>
-
-      <section class="panel" data-panel="tasks">
-        <div class="page-surface">
-          <header class="page-head">
-            <div><span class="kicker">TASK CHAIN</span><h1>任务链路</h1></div>
-            <p>看每条自动化链路是否执行、是否失败、是否等待，以及人工接管点在哪里。</p>
-          </header>
-          <section>
-            <div class="module-head"><div><span class="kicker">DAILY V4</span><h2>每日 V4 数据</h2></div><p>按日期查看来源、Claim、Event 与 QA 变化。</p></div>
-            <div class="timeline" data-daily-timeline></div>
-          </section>
-          <section>
-            <div class="module-head"><div><span class="kicker">LANES</span><h2>今日任务链路</h2></div><p>按数据观察台生产顺序查看状态和下一步动作。</p></div>
-            <div class="grid grid-3" data-task-lanes></div>
-          </section>
-          <section>
-            <div class="module-head"><div><span class="kicker">SYNC</span><h2>上线同步</h2></div><p>GitHub Pages、PR、本地同步和监督报告合在这里看。</p></div>
-            <div class="grid grid-3" data-sync-status></div>
-          </section>
         </div>
       </section>
 
@@ -382,6 +393,8 @@
             <div class="module-head"><div><span class="kicker">FACT STRUCTURE</span><h2>事实结构</h2></div><p>查看 Event、Entity、Relationship、Conflict 与 QA 的结构。</p></div>
             <div class="asset-matrix" data-asset-matrix></div>
           </section>
+          <section><div class="module-head"><div><span class="kicker">Production Stages</span><h2>数据生产状态</h2></div><p>采集、事实构建、应用投影与发布的批次遥测。</p></div><div class="grid grid-4" data-production-stages></div></section>
+          <section><div class="module-head"><div><span class="kicker">BATCH HISTORY</span><h2>近期数据批次</h2></div></div><div class="timeline" data-daily-timeline></div></section>
         </div>
       </section>
 
@@ -456,19 +469,24 @@
         <div class="page-surface">
           <header class="page-head">
             <div><span class="kicker">VERSION GOVERNANCE</span><h1>版本治理</h1></div>
-            <p>统一管理后台总版本、网站栏目版本、冻结点和治理原则。</p>
+            <p>按平台与职责管理产品、数据契约和规则版本。公开端点保留核验时间，未接入线上版本明确标注。</p>
           </header>
-          <div class="grid grid-4" data-version-cards></div>
+          <div class="version-controls">
+            <label>分类<select data-version-category><option value="">全部分类</option><option>融资产品</option><option>社群与会员</option><option>数据中心</option><option>数据契约</option><option>运营与规则</option></select></label>
+            <label class="version-query">查找版本<input type="search" data-version-search placeholder="平台、版本号或来源"></label>
+            <span data-version-count role="status" aria-live="polite"></span>
+          </div>
+          <div class="grid grid-2" data-version-cards></div>
           <section>
-            <div class="module-head"><div><span class="kicker">PRINCIPLES</span><h2>治理原则</h2></div><p>每个重复问题都应该沉淀为规则、门禁、评估或版本冻结点。</p></div>
-            <div class="grid grid-2" data-governance-principles></div>
+            <div class="module-head"><div><span class="kicker">PRINCIPLES</span><h2>治理原则</h2></div><p>版本来源可追溯，发布事实不推断。</p></div>
+            <ul class="governance-principles" data-governance-principles></ul>
           </section>
         </div>
       </section>
 
       <section class="panel" data-panel="skills">
         <div class="page-surface">
-          <iframe class="skill-frame" src="local-skill-store.html?embed=1&v=20260630-ops-v122" title="Skill Store"></iframe>
+          <iframe class="skill-frame" src="local-skill-store.html?embed=1&v=20260830-ops-v300" title="Skill Store"></iframe>
         </div>
       </section>
 
@@ -476,12 +494,22 @@
         <div class="page-surface">
           <header class="page-head">
             <div><span class="kicker">SYSTEM SETTINGS</span><h1>系统设置</h1></div>
-            <p>查看后台数据源、生成时间、自动化入口和本地任务状态。</p>
+            <p>职责：维护接入说明与快照时效，设置本机浏览偏好。此页不管理账号权限、不修改线上服务配置。</p>
           </header>
           <div class="grid grid-2">
-            <article class="card"><span class="label">Automation</span><h2>本地任务</h2><p>每日监督、V4 telemetry 同步和后台数据生成会共同驱动这个后台。</p></article>
-            <article class="card"><span class="label">Data</span><h2>数据状态</h2><div class="rows" data-data-status></div></article>
+            <article class="card"><span class="label">LOCAL PREFERENCES</span><h2>本机显示偏好</h2>
+              <form class="preferences-form" data-preferences-form>
+                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="quality">数据质量</option><option value="governance">版本治理</option><option value="skills">Skill Store</option><option value="settings">系统设置</option></select></label>
+                <label>快照过期提醒<select data-setting-stale><option value="24">超过 24 小时</option><option value="48">超过 48 小时</option><option value="72">超过 72 小时</option></select></label>
+                <label class="checkbox-label"><input type="checkbox" data-setting-compact>使用紧凑卡片间距</label>
+                <div class="form-actions"><button type="submit">保存本机设置</button><button type="button" data-reset-preferences>恢复默认</button></div>
+                <p role="status" aria-live="polite" data-setting-status>仅保存到当前浏览器，不会更改他人的后台。</p>
+              </form>
+            </article>
+            <article class="card"><span class="label">REFRESH &amp; ACCESS</span><h2>刷新与权限边界</h2><p>运营统计按需读取公开聚合 API；质量、版本和 Skill 目录来自已发布快照。重新载入不会扫描本地目录或部署任何平台。</p><button class="text-button" type="button" data-reload-snapshot>重新载入已发布快照 ↻</button><p>会员明细、手机号、管理操作仍需各系统鉴权。此免密页面只负责安全展示与导航。</p></article>
           </div>
+          <section class="card integration-card"><span class="label">INTEGRATIONS</span><h2>接入清单与更新来源</h2><div class="data-status-list" data-data-status></div></section>
+          <div class="card integration-card"><h3>如何更新接入</h3><p>维护仓库平台清单与 Skill 来源配置；运行公开版本核验、Skill 目录构建和后台构建，再通过 Git / Pages 发布。公开网页不提供文件写入或部署开关。</p></div>
         </div>
       </section>
     </section>
@@ -489,7 +517,7 @@
 
   <script src="data/pipeline-dashboard.js"></script>
   <script src="data/ops-console.js"></script>
-  <script src="assets/operations-console.js?v=20260830-ops-analytics"></script>
+  <script src="assets/operations-console.js?v=20260830-ops-v300"></script>
   <script src="assets/application-analytics.js?v=20260830-ops-readonly"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current local automation: exactly seven Windows tasks; Final Closure owns the strict 24-table `DATA-LAKE-V4.1` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
 - Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
 - Current public product: the independent AI financing site at `https://www.zkdlj.vip/` owns Funding Insights and weekly/monthly reports. Data Center, Trend Radar, Opportunity Map, and operations remain internal supporting surfaces.
-- Current dashboard: `01-SiteV2/site/operations-console.html`.
+- Current dashboard: `01-SiteV2/site/operations-console.html`, `OPS-V3.0.0-unified-platform`; unified operations for Data Center, Funding Portal, Mini Program, H5 and community. Issue/task UI panels are retired; records remain. System Settings owns integration/freshness information and device-local preferences.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
 - Current First-Line Viewpoints column version: FLV-V1.1.0-history-backfill.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
@@ -32,7 +32,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current factual relationship contract: RELATION-V2.1.
 - Current targeted historical collection contract: BACKFILL-V1.0.
 - Current tag taxonomy version: TAG-V4.1.
-- Current Skill Store version: `v2.1.0`; all 23 active governed Skills follow `GPT-5.6-SKILL-V1.0`, include `agents/openai.yaml`, and have five-case trigger-eval inventory coverage. Separately registered content, AIP project, and plugin-cache entries are inventory, not additional certified or globally enabled Skills.
+- Current Skill Store version: `v2.2.0`; all 23 active governed Skills follow `GPT-5.6-SKILL-V1.0`, include `agents/openai.yaml`, and have five-case trigger-eval inventory coverage. Separately registered content, AIP project, and plugin-cache entries are inventory, not additional certified or globally enabled Skills.
 - Current data-center rule source: `context/12-data-center-v4.md`.
 - `context/07-v3-intelligence-generation-rules.md` documents frozen V3 history only; it is not a production route.
 - V2 website pages and old four-column output rules are retired.

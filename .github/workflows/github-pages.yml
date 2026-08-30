@@ -165,6 +165,8 @@ jobs:
           node agent-workflow/tools/sync-repo-skills.mjs
           node agent-workflow/tools/validate-guanlan-skills.mjs
           node agent-workflow/tools/assert-skill-store-dashboard.mjs
+          npm run test:ops-unified
+          node --test agent-workflow/tools/tests/application-analytics.test.mjs
 
       - name: Finalize OPS publication telemetry for Pages
         if: steps.deployment-gate.outputs.deploy == 'true'

@@ -1,6 +1,7 @@
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { OPS_VERSION } from "../../../agent-workflow/tools/lib/collection-telemetry-v1.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const siteRoot = path.resolve(scriptDir, "..");
@@ -54,7 +55,7 @@ const days = await recentV4Days();
 const latest = days[0] || {};
 const payload = {
   meta: {
-    version: "OPS-V2.0.0-v4-telemetry",
+    version: OPS_VERSION,
     generatedAt: new Date().toISOString(),
     dateRange: days.length ? { start: days.at(-1).date, end: days[0].date } : null,
     source: "Data Center V4 manifest + collection-telemetry-v1",

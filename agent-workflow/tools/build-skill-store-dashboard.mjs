@@ -5,7 +5,7 @@ import path from "node:path";
 import { dashboardContractPaths, evaluateSkillStoreDashboard } from "./assert-skill-store-dashboard.mjs";
 import { defaultPaths, readSkillStoreVersion, ruleDigest } from "./lib/guanlan-skill-ops.mjs";
 import { auditSkillDiscovery } from "./lib/skill-discovery-audit.mjs";
-import { catalogConfig, catalogSources, skillDirectories, skillSummary } from "./lib/skill-catalog.mjs";
+import { catalogConfig, catalogSources, skillDirectories, skillSummary, skillPlatformIds, platformCoverage } from "./lib/skill-catalog.mjs";
 
 const root = process.cwd();
 const outputArg = process.argv
@@ -28,7 +28,8 @@ const catalog = catalogConfig(projectSkillDir);
 const registrations = new Map((catalog.registrations || []).map((item) => [item.name, item]));
 const externalCatalog = catalogSources(catalog);
 for (const source of externalCatalog.sources) {
-  if (!source.available) throw new Error(`Skill catalog source unavailable: ${source.id}; preserving previous snapshot`);
+  const priorSource = readExistingPayload(outFile)?.meta?.catalogSources?.find((item) => item.id === source.id);
+  if (!source.available && (source.required !== false || priorSource?.available)) throw new Error(`Skill catalog source unavailable: ${source.id}; preserving previous snapshot`);
 }
 
 const SKIP_DIRS = new Set([".git", "node_modules", ".venv", "venv", "__pycache__", ".cache", "dist", "build"]);
@@ -446,6 +447,7 @@ function buildSkill(name, registryMap, usageMap, generatedDate, observation, ext
     sourcePath: external?.sourcePath || (storeExists ? `.skill-store/${name}` : relProjectPath(projectPath)),
     sourceVersion: external?.sourceVersion || "",
     sourceDigest: ruleDigest(primary).digest,
+    platformIds: skillPlatformIds(catalog, name, external),
     catalogRegistered: Boolean(registration),
     catalogOwner: registration?.owner || (external ? external.sourceLabel : ""),
     cleanupProtected: Boolean(registration || external),
@@ -575,6 +577,8 @@ const payload = {
     registryPath: relProjectPath(registryPath),
     cleanupObservationPath: relProjectPath(cleanupObservationPath),
     catalogSources: externalCatalog.sources,
+    platformCoverage: platformCoverage(catalog, skills, externalCatalog.sources),
+    platformPolicy: catalog.platformPolicy || "",
     catalogPolicy: catalog.policy || "",
     version: readSkillStoreVersion(skillOpsPaths),
     cleanupPolicy: CLEANUP_POLICY,

@@ -20,7 +20,7 @@ npm run diff:repo-skills
 
 ## Current governance contract
 
-- Skill Store version: `v2.1.0`.
+- Skill Store version: `v2.2.0`.
 - Prompt contract: `GPT-5.6-SKILL-V1.0`.
 - Every active governed Skill requires `agents/openai.yaml` and five-case trigger-eval inventory coverage.
 - Run `npm run check:skill-ops` after synchronization; do not edit this generated runtime directly.

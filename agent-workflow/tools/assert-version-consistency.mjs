@@ -42,14 +42,14 @@ const expected = {
   dataCenterRelease: "GUANLAN-DATA-CENTER-V4.8.1-internal-foundation",
   dataCenterGitTag: "data-center-v4.8.1-internal-foundation",
   site: "SITE-V4.6.1-research-retirement",
-  ops: "OPS-V2.0.0-v4-telemetry",
+  ops: "OPS-V3.0.0-unified-platform",
   reports: "REPORTS-V1.3.0-funding-portal",
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.1.0-tag-v4-1",
   taxonomy: "TAG-V4.1",
   fundingInsights: "FUNDING-INSIGHT-V1.5.0-china-market",
   person: "PERSON-REVIEW-V1.1",
-  skillStore: "v2.1.0 Multi-source content catalog",
+  skillStore: "v2.2.0 Cross-platform Skill catalog",
   vault: "GUANLAN-VAULT-V1.2-private-evidence-linked (external)",
   dataLake: "DATA-LAKE-V4.1-24-table",
   privateEvidence: "PRIVATE-EVIDENCE-STORE-V2.0",
@@ -95,7 +95,7 @@ const ledgerChecks = [
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
 }
-expectText("AGENTS.md", "Current Skill Store version: `v2.1.0`");
+expectText("AGENTS.md", "Current Skill Store version: `v2.2.0`");
 expectText("AGENTS.md", `Current tag taxonomy version: ${expected.taxonomy}`);
 expectText("context/00-current-state.md", expected.taxonomy);
 expectText("context/12-data-center-v4.md", expected.taxonomy);
@@ -105,8 +105,8 @@ if (dataCenterSchema.$defs?.tagAssertion?.properties?.taxonomy_version?.const !=
   || dataCenterSchema.$defs?.reviewedEventClassification?.properties?.taxonomy_version?.const !== expected.taxonomy) {
   fail("Data Center schema taxonomy version does not match the version ledger");
 }
-expectText(".agents/README.md", "Skill Store version: `v2.1.0`");
-expectText("docs/agent-handoff.md", "Current Skill governance: Skill Store `v2.1.0`");
+expectText(".agents/README.md", "Skill Store version: `v2.2.0`");
+expectText("docs/agent-handoff.md", "Current Skill governance: Skill Store `v2.2.0`");
 expectText("context/version-ledger.md", "`guanlan-code-rule-auditor` v1.2.1 audits V4 facts");
 const packageVersion = readJson("package.json").version;
 const packageLockVersion = readJson("package-lock.json").version;

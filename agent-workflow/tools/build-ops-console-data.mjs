@@ -1,10 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { isProductionIncidentFilename } from "./incident-filename-utils.mjs";
+import { buildPortfolio } from "./lib/ops-platforms.mjs";
+import { OPS_VERSION } from "./lib/collection-telemetry-v1.mjs";
 import { buildOpsSourceQuality } from "./lib/ops-source-quality.mjs";
 
 const root = process.cwd();
-const VERSION = "OPS-V2.0.0-v4-telemetry";
+const VERSION = OPS_VERSION;
 
 const rel = (...parts) => path.join(...parts).replaceAll("\\", "/");
 const abs = (...parts) => path.join(root, ...parts);
@@ -230,6 +232,7 @@ function parseVersionLedger() {
     }
   }
   const wanted = [
+    ["DATA-CENTER", "Data Center Git baseline"],
     ["SITE", "Main website version"],
     ["OPS", "Operations backend version"],
     ["BSIG", "Business Signals column version"],
@@ -237,7 +240,6 @@ function parseVersionLedger() {
     ["FLV", "First-Line Viewpoints column version"],
     ["CINT", "Community Intelligence column version"],
     ["FDE", "Enterprise AI / FDE data contract"],
-    ["EAI", "Enterprise AI compatibility lens version"],
     ["HARDWARE", "AI Hardware data version"],
     ["REPORTS", "Guanlan Research column version"],
     ["OMAP", "Opportunity Map column version"],
@@ -316,7 +318,10 @@ const sourceQuality = buildOpsSourceQuality({
   canonicalEvents: dailyBundle ? readJson(`${dailyBundle}/canonical-events.json`, []) : [],
 });
 
+const portfolio = buildPortfolio(root, parseVersionLedger(), readJson("agent-workflow/reports/ops-platform-versions.json"));
+
 const data = {
+  portfolio,
   meta: {
     version: VERSION,
     generatedAt: new Date().toISOString(),
@@ -325,8 +330,7 @@ const data = {
   },
   navigation: [
     { id: "overview", label: "总览" },
-    { id: "issues", label: "问题中心" },
-    { id: "tasks", label: "任务链路" },
+    { id: "analytics", label: "运营统计" },
     { id: "quality", label: "数据质量" },
     { id: "governance", label: "版本治理" },
     { id: "skills", label: "Skill Store" },
@@ -384,12 +388,12 @@ const data = {
     sourceQuality,
   },
   governance: {
-    versions: parseVersionLedger(),
+    versions: portfolio.versions,
     principles: [
-      "问题先进入问题中心，不在聊天里丢失",
-      "每个问题必须有责任链路、下一步动作和关闭证据",
-      "重复问题进入周/月复盘，不靠当天修补结束",
-      "创作相关能力从本后台剥离，后台只治理数据观察台",
+      "独立产品独立版本；源码、数据契约与线上版本分开登记",
+      "公开端点核验只代表检查时刻；小程序审核与未接入部署不推断",
+      "Skill 统一登记来源与摘要，原文归所属项目；登记不等于安装或认证",
+      "免密页面只展示允许公开的聚合；会员、账号与管理写操作继续鉴权",
     ],
   },
 };

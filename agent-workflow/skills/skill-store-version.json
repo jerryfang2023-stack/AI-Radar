@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "name": "Guanlan Skill Store",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "release_date": "2026-08-30",
-  "stage": "Multi-source content catalog",
-  "scope": "Preserves the 23 certified project Skills and adds protected content registrations, AIP project inventory, and explicitly unverified plugin-cache inventory. Parses multiline descriptions and checks snapshot freshness without changing runtime discovery, invocation settings, or source-owned prompts.",
+  "stage": "Cross-platform Skill catalog",
+  "scope": "Classifies shared rules and independently scanned platform directories with source fingerprints and explicit missing-source states. Inventory does not imply installation, activation or certification; preserves 23 governed Skills and protected content registrations.",
   "upgrade_policy": {
     "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
     "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",

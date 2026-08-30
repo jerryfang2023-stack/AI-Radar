@@ -2,7 +2,7 @@
   const data = window.WaveSightLocalSkillStore || { meta: {}, skills: [] };
   const skills = Array.isArray(data.skills) ? data.skills : [];
   const initialParams = new URLSearchParams(location.search);
-  const state = { view: initialParams.get("view") === "cleanup" ? "cleanup" : "catalog", filter: "all", group: "lane", sort: "priority", query: "", activeGroup: "", selectedCleanup: new Set(), selectedTrash: new Set(), trashItems: [], trashLoaded: false };
+  const state = { view: initialParams.get("view") === "cleanup" ? "cleanup" : "catalog", filter: "all", platform: "all", group: "lane", sort: "priority", query: "", activeGroup: "", selectedCleanup: new Set(), selectedTrash: new Set(), trashItems: [], trashLoaded: false };
   const cleanupOpsApi = "http://127.0.0.1:8787";
 
   const $ = (selector, node = document) => node.querySelector(selector);
@@ -116,7 +116,7 @@
       drift: "分叉",
       "store-only": "仅安装",
       "project-only": "仅项目",
-      "external-project": "AIP 项目来源",
+      "external-project": "平台项目来源",
       "plugin-cache": "插件缓存",
       missing: "缺失",
     }[value] || value || "未知";
@@ -129,6 +129,7 @@
   }
 
   function isVisible(skill) {
+    if (state.platform !== "all" && !(skill.platformIds || ["shared"]).includes(state.platform)) return false;
     if (state.view === "cleanup" && !skill.cleanup_candidate) return false;
     if (state.filter === "current" && !skill.current) return false;
     if (state.filter === "lane-owner" && !/lane owner/i.test(skill.status || "")) return false;
@@ -250,6 +251,20 @@
     $("[data-generated]").textContent = `${versionText.replace("Skill Store v", "版本 ")} · 更新 ${data.meta?.generatedAt || "-"} · 清单 ${summary.total || skills.length} · 外部项目 ${external} · 插件缓存 ${plugins}（不代表启用）· 启用/禁用仅统计本地发现目录`;
   }
 
+  function renderPlatformCoverage() {
+    const platforms = data.meta?.platformCoverage || [];
+    const select = $("[data-skill-platform]");
+    if (!select) return;
+    select.innerHTML = '<option value="all">全部平台</option>' + platforms.map((platform) => '<option value="' + html(platform.id) + '">' + html(platform.label) + '（' + platform.count + '）</option>').join("");
+    select.value = state.platform;
+    $("[data-platform-coverage]").innerHTML = platforms.filter((platform) => platform.id !== "shared").map((platform) => {
+      const sources = platform.sources || [];
+      const status = sources.length ? sources.map((source) => source.available ? (source.count ? "已读取 " + source.count + " 项" : "目录为空") : "独立目录未接入").join(" / ") : "仓库共享规则";
+      return '<article><strong>' + html(platform.label) + '</strong><span>共享规则 ' + platform.sharedCount + ' · 项目来源 ' + platform.projectCount + '</span><small>' + html(status) + '</small></article>';
+    }).join("");
+    $("[data-platform-policy]").textContent = data.meta?.platformPolicy || "平台映射不代表运行时安装或启用。";
+  }
+
   function renderLaneOwners() {
     const container = $("[data-lane-owners]");
     if (!container) return;
@@ -346,6 +361,7 @@
   function renderAll() {
     renderView();
     renderMetrics();
+    renderPlatformCoverage();
     renderLaneOwners();
     renderIssueList();
     renderCleanupQueue();
@@ -702,6 +718,11 @@
 
   $("[data-search]")?.addEventListener("input", (event) => {
     state.query = event.target.value.trim();
+    state.activeGroup = "";
+    renderSkills();
+  });
+  $("[data-skill-platform]")?.addEventListener("change", (event) => {
+    state.platform = event.target.value;
     state.activeGroup = "";
     renderSkills();
   });

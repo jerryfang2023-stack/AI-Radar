@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-08-30 20:52:51",
+    "generatedAt": "2026-08-30 21:18:46",
     "generatedDate": "2026-08-30",
     "storeDir": ".skill-store",
     "projectSkillDir": "agent-workflow/skills",
@@ -11,7 +11,41 @@ window.WaveSightLocalSkillStore = {
         "id": "AIP/.agents/skills",
         "label": "AIP 内容 OS",
         "available": true,
-        "count": 16
+        "count": 16,
+        "platformId": "aip",
+        "required": true
+      },
+      {
+        "id": "Funding-Portal/.agents/skills",
+        "label": "融资站项目",
+        "available": false,
+        "count": 0,
+        "platformId": "funding",
+        "required": false
+      },
+      {
+        "id": "Miniprogram/.agents/skills",
+        "label": "小程序项目",
+        "available": false,
+        "count": 0,
+        "platformId": "miniprogram",
+        "required": false
+      },
+      {
+        "id": "H5/.agents/skills",
+        "label": "融资 H5 项目",
+        "available": false,
+        "count": 0,
+        "platformId": "h5",
+        "required": false
+      },
+      {
+        "id": "Members/.agents/skills",
+        "label": "社群会员项目",
+        "available": false,
+        "count": 0,
+        "platformId": "community",
+        "required": false
       },
       {
         "id": "plugin-cache",
@@ -20,14 +54,118 @@ window.WaveSightLocalSkillStore = {
         "count": 101
       }
     ],
+    "platformCoverage": [
+      {
+        "id": "data-center",
+        "label": "数据中心",
+        "count": 14,
+        "sharedCount": 14,
+        "projectCount": 0,
+        "sources": []
+      },
+      {
+        "id": "funding",
+        "label": "融资情报站",
+        "count": 5,
+        "sharedCount": 5,
+        "projectCount": 0,
+        "sources": [
+          {
+            "id": "Funding-Portal/.agents/skills",
+            "label": "融资站项目",
+            "available": false,
+            "count": 0,
+            "platformId": "funding",
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "miniprogram",
+        "label": "小程序",
+        "count": 2,
+        "sharedCount": 2,
+        "projectCount": 0,
+        "sources": [
+          {
+            "id": "Miniprogram/.agents/skills",
+            "label": "小程序项目",
+            "available": false,
+            "count": 0,
+            "platformId": "miniprogram",
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "h5",
+        "label": "融资 H5",
+        "count": 2,
+        "sharedCount": 2,
+        "projectCount": 0,
+        "sources": [
+          {
+            "id": "H5/.agents/skills",
+            "label": "融资 H5 项目",
+            "available": false,
+            "count": 0,
+            "platformId": "h5",
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "community",
+        "label": "社群会员",
+        "count": 5,
+        "sharedCount": 5,
+        "projectCount": 0,
+        "sources": [
+          {
+            "id": "Members/.agents/skills",
+            "label": "社群会员项目",
+            "available": false,
+            "count": 0,
+            "platformId": "community",
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "aip",
+        "label": "AIP 内容 OS",
+        "count": 16,
+        "sharedCount": 0,
+        "projectCount": 16,
+        "sources": [
+          {
+            "id": "AIP/.agents/skills",
+            "label": "AIP 内容 OS",
+            "available": true,
+            "count": 16,
+            "platformId": "aip",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "shared",
+        "label": "通用 / 未分配",
+        "count": 241,
+        "sharedCount": 241,
+        "projectCount": 0,
+        "sources": []
+      }
+    ],
+    "platformPolicy": "平台映射表示声明的使用范围，不证明安装、启用或执行。每次目录构建重新扫描已登记来源；未接入的独立目录不计为同步成功。",
     "catalogPolicy": "Inventory registration is not prompt certification, runtime installation, or usage evidence. Keep external project and plugin rules at their owning source; never delete them through Skill Store cleanup.",
     "version": {
       "schema_version": 1,
       "name": "Guanlan Skill Store",
-      "version": "2.1.0",
+      "version": "2.2.0",
       "release_date": "2026-08-30",
-      "stage": "Multi-source content catalog",
-      "scope": "Preserves the 23 certified project Skills and adds protected content registrations, AIP project inventory, and explicitly unverified plugin-cache inventory. Parses multiline descriptions and checks snapshot freshness without changing runtime discovery, invocation settings, or source-owned prompts.",
+      "stage": "Cross-platform Skill catalog",
+      "scope": "Classifies shared rules and independently scanned platform directories with source fingerprints and explicit missing-source states. Inventory does not imply installation, activation or certification; preserves 23 governed Skills and protected content registrations.",
       "upgrade_policy": {
         "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
         "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",
@@ -2258,6 +2396,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/follow-builders",
       "sourceVersion": "",
       "sourceDigest": "fe7b034b7ffd6077335cce0ae9949a31424212b43d0393d9acd2728d086216b3",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2319,6 +2460,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-ai-hardware-data-projection",
       "sourceVersion": "",
       "sourceDigest": "9759b32c178daaa9f257ca9dd466af604d0d789f29c8e23383b21136f6a7c71c",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2380,6 +2524,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-code-rule-auditor",
       "sourceVersion": "",
       "sourceDigest": "8d237d540cdda5b3f445bb9ec16a02185790fb59a8986321cf11c516e906541b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2441,6 +2588,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-community-intelligence-monitor",
       "sourceVersion": "",
       "sourceDigest": "c135624e9703f479c2d02218843b45563f1d406613fc9171f20437d833f1008f",
+      "platformIds": [
+        "community"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2502,6 +2652,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-daily-monitor",
       "sourceVersion": "",
       "sourceDigest": "7def24badcf7370daebb178d57a237cb36e3b34a4fd594d7be2f6f6b09192d4b",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2563,6 +2716,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-daily-monitor-qc",
       "sourceVersion": "",
       "sourceDigest": "9d5cc8795275744df1859a6d9377afcffd55f199c1185c7349c917d93bef3134",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2628,6 +2784,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-data-center-supervisor",
       "sourceVersion": "",
       "sourceDigest": "5c5047678256ed26320c5b2503a63f1e831da141857c20d7d0bbe4d264d46cbb",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2689,6 +2848,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-data-integrity-gate",
       "sourceVersion": "",
       "sourceDigest": "e85272433b51913100f0a2eaf2f6b5b1f2ea3365be05467a663dc33a66293e70",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2750,6 +2912,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-event-normalizer",
       "sourceVersion": "",
       "sourceDigest": "293238dbafad8aa4ce7258d1062580b856063117076e5668888fa0274ded101c",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2811,6 +2976,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-fde-data-projection",
       "sourceVersion": "",
       "sourceDigest": "7edb0d31018232c32f7cf4008c4c537f584170873f29b194c335c7d39996c9e5",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2872,6 +3040,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-first-line-viewpoints-monitor",
       "sourceVersion": "",
       "sourceDigest": "b16fdb75aaad50f015a7e5a0391d4e5039ad7308870e532f83fdcefd80af040a",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2933,6 +3104,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-funding-insight-generator",
       "sourceVersion": "",
       "sourceDigest": "a5f99e8d5e89b8f5965fa0665bb7ccb0f6d7bf59bbc2854a9ba1c84c58aeada7",
+      "platformIds": [
+        "funding"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -2995,6 +3169,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-monitor-quality-gate",
       "sourceVersion": "",
       "sourceDigest": "71fcd2abc00dfd3b1df28e374c11f728907b2d2cb589a41f4c8ffce5b1e45de0",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3056,6 +3233,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-monthly-report-page-generator",
       "sourceVersion": "",
       "sourceDigest": "61f82e29bb70e1bceddc7b629da5ae5f44026b1dfd959698abfac564965e30af",
+      "platformIds": [
+        "funding"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3117,6 +3297,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-skill-editor",
       "sourceVersion": "",
       "sourceDigest": "95e2dc8bab5b8210f769ed513f2d8b2328d010773e1346c7524ddce997b7b555",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3178,6 +3361,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-source-ingestion",
       "sourceVersion": "",
       "sourceDigest": "13d098e581563e110d55e66080da963f40ce98e015021229f8f4b0d3ffd6f95f",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3239,6 +3425,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-taxonomy-governor",
       "sourceVersion": "",
       "sourceDigest": "da838130b2963f46bbce90db5b1adcd54c93cd8bf1e7f2bc386e53876d457772",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3300,6 +3489,10 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-typography-qc",
       "sourceVersion": "",
       "sourceDigest": "8e395a136a4a4723bcb536e0d99a8d7bfc5a034903afdba0114616623a8ab5ed",
+      "platformIds": [
+        "miniprogram",
+        "h5"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3361,6 +3554,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-weekly-report-page-generator",
       "sourceVersion": "",
       "sourceDigest": "6baed1659725fd01a583d243797c06f814cc7dc8a086e1660d134753649fa0cb",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3422,6 +3618,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/guanlan-community-essay-writer",
       "sourceVersion": "",
       "sourceDigest": "5805c4873c0ea853c36725442a3adec0cff1862c0cdf53bad5bb788d8d3798e8",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -3483,6 +3682,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-monthly-business-structure-report",
       "sourceVersion": "",
       "sourceDigest": "37c62102c8ec10ae66b3461a03d482a925f16f5b23ed30706e4529cb6b12a012",
+      "platformIds": [
+        "funding"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3548,6 +3750,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-opportunity-radar-updater",
       "sourceVersion": "",
       "sourceDigest": "90b6d0df233ee1fd65cd390d2d3e3dff9eac11c7eaf448bb3d29e1f5aeb83c00",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3613,6 +3818,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-sharing-archive",
       "sourceVersion": "",
       "sourceDigest": "20f094b7342a317a08281bf3e8be398a87d30c4bb7521ea6d8fd4667e2680c0e",
+      "platformIds": [
+        "community"
+      ],
       "catalogRegistered": true,
       "catalogOwner": "观澜内容运营",
       "cleanupProtected": true,
@@ -3674,6 +3882,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-trend-radar-updater",
       "sourceVersion": "",
       "sourceDigest": "effd754c24a0a84c12e8fb0693ce100868c72c4dbc2c570fd60b566b5fc09aad",
+      "platformIds": [
+        "data-center"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3736,6 +3947,10 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-wechat-cover-maker",
       "sourceVersion": "",
       "sourceDigest": "cec92dbcf8559907173154bc1fb640d702512993ee674f7e243ed4be57203adb",
+      "platformIds": [
+        "funding",
+        "community"
+      ],
       "catalogRegistered": true,
       "catalogOwner": "观澜内容运营",
       "cleanupProtected": true,
@@ -3797,6 +4012,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-weekly-business-change-radar",
       "sourceVersion": "",
       "sourceDigest": "cef4ff939d1cad75d9bebee5c8093c24fcb8ff5348890fcabf40a91fa0548cfe",
+      "platformIds": [
+        "funding"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -3862,6 +4080,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-zaolang-card-maker",
       "sourceVersion": "",
       "sourceDigest": "70d43ae9162892bd8bd7ed942879e9cf08d76c99e64a6e53b624d1969ce8f3fe",
+      "platformIds": [
+        "community"
+      ],
       "catalogRegistered": true,
       "catalogOwner": "观澜内容运营",
       "cleanupProtected": true,
@@ -3923,6 +4144,10 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/guanlan-zaolang-profile-writer",
       "sourceVersion": "",
       "sourceDigest": "40ec8d5095421abe594b53db9fd66b96a19337e2c417e3bfff85f0cdba17e178",
+      "platformIds": [
+        "miniprogram",
+        "community"
+      ],
       "catalogRegistered": true,
       "catalogOwner": "观澜内容运营",
       "cleanupProtected": true,
@@ -3984,6 +4209,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/admapix",
       "sourceVersion": "",
       "sourceDigest": "9d377db445b0de425617573d73d31c552bd5d677ef3eb041585b436780f9d8bd",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4049,6 +4277,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/agent-mail",
       "sourceVersion": "",
       "sourceDigest": "aa0133b63d438d4f76c9af77123e96e0fd043242e3a5ca16ca951055b7cd7c03",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4114,6 +4345,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/aihot",
       "sourceVersion": "",
       "sourceDigest": "c79ba9179998f2ad2443bb9d729d0975a65175db0d43e51c1dfa67a414e7e670",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4176,6 +4410,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/article-writer",
       "sourceVersion": "",
       "sourceDigest": "c38077a9eec6a0e7353455dbf613e10a7ac6a9e7e7918fb9adf33de6026823b6",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4241,6 +4478,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/arxiv-reader",
       "sourceVersion": "",
       "sourceDigest": "704781b453d37a4b9a655d62b0f040d8b0fed53d9870f44a4f153574da04c55a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4306,6 +4546,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/arxiv-watcher",
       "sourceVersion": "",
       "sourceDigest": "9c64d10ea6990437802de956d2c481e754928c055aebd4eb94d95249f512bcb8",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4371,6 +4614,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/autoresearch",
       "sourceVersion": "",
       "sourceDigest": "7d73b0f107169e184eedc93723f1316b27d2b49abef7eb6ecbccbd34d393c46c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4436,6 +4682,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/awesome-design-md",
       "sourceVersion": "",
       "sourceDigest": "678df235bcf70d0bedde270efe4a64cf6c4c59a1a8c19b280a06912241c69008",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4501,6 +4750,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-article-illustrator",
       "sourceVersion": "",
       "sourceDigest": "88c0a437b352fb734f969f3c4ad02a48abc64f62214d621027538e59fea89be6",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4566,6 +4818,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-comic",
       "sourceVersion": "",
       "sourceDigest": "a2349597607a922ab8d3b5f8ef3342c7143facab8d0b359dc6363364c6a72f30",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4631,6 +4886,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-compress-image",
       "sourceVersion": "",
       "sourceDigest": "afce8f4d1a3d80f11ee6b786779e4bff4bf95e83a19e330acf6e6ad4277f4913",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4696,6 +4954,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-cover-image",
       "sourceVersion": "",
       "sourceDigest": "28d97270d2bf53fc13e513b0e08e8f3cb876ec35ef9f972fbcbeba7ed5a4e529",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4761,6 +5022,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-danger-gemini-web",
       "sourceVersion": "",
       "sourceDigest": "95dfe64e446c2078ad59895eaf18a1a3651765dd8678ed964cd8ec9793bcb47a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4826,6 +5090,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-danger-x-to-markdown",
       "sourceVersion": "",
       "sourceDigest": "e406a671ba51faa9bff2736932425d07b25584dccb486a3b800efc900c91231e",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4891,6 +5158,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-diagram",
       "sourceVersion": "",
       "sourceDigest": "b14a33bedc567b1ec2ea699c1108ad5bbf00e91eacf096f6e6d2aeae74f8ca08",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -4956,6 +5226,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-format-markdown",
       "sourceVersion": "",
       "sourceDigest": "648a7d0fe5ff31137c0f2449e616d0be613d859971a6759dbce338f4993fcea4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5021,6 +5294,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-image-cards",
       "sourceVersion": "",
       "sourceDigest": "c4c33cb9f98cccefee75d30a78d4d8c8d7f84e432708a91c6644feecceaa3c99",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5086,6 +5362,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-image-gen",
       "sourceVersion": "",
       "sourceDigest": "c495e8454bfa0a965f58bb7efb995bd0169a2d086313ad2754aec351a1a6143c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5151,6 +5430,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-imagine",
       "sourceVersion": "",
       "sourceDigest": "dc65cf25000b145c371a79f93cde886c334ecbdf946f23d7c6d264e4e861a1d1",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5216,6 +5498,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-infographic",
       "sourceVersion": "",
       "sourceDigest": "928c5179201454e7d846b39c6a7047a5b0d07611edaa97b0fee4a296b98173d0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5281,6 +5566,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-markdown-to-html",
       "sourceVersion": "",
       "sourceDigest": "e97cf2b5c02ed913cfbece033cd4b226526928a8de7453502e8bfc3713dc7c83",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5346,6 +5634,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-post-to-wechat",
       "sourceVersion": "",
       "sourceDigest": "589a4e5509aeb32521a49736b61d7b1cdb604d45032af7b2e332dc7c6176d39a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5411,6 +5702,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-post-to-weibo",
       "sourceVersion": "",
       "sourceDigest": "22b3499a4aaf8f9e133d26a5bda7858a891a7aede9d3d5c3b152c9d2a23eacd4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5476,6 +5770,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-post-to-x",
       "sourceVersion": "",
       "sourceDigest": "c49a3424312584e894ac311eaafb29729d176a61ba0cfdeaf4ba3049278ad889",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5541,6 +5838,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-slide-deck",
       "sourceVersion": "",
       "sourceDigest": "801ef1d13d5f6f3ab762a67ce54050452d1e5ad3fe343f858ec02c302cea2d23",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5606,6 +5906,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-translate",
       "sourceVersion": "",
       "sourceDigest": "21e404a43d6f68359af1afb003c1e460c86ce174e9a4db2673940e1d70ea2b8b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5671,6 +5974,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-url-to-markdown",
       "sourceVersion": "",
       "sourceDigest": "900eaad9416dfbf168fc8c2c2726eb38b0a817021e1b30587558ed229fa38336",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5736,6 +6042,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-xhs-images",
       "sourceVersion": "",
       "sourceDigest": "504edeeebbe4eacd534779bdfff1838d642324f9023ffdc4f4fc55458220d1f0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5801,6 +6110,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/baoyu-youtube-transcript",
       "sourceVersion": "",
       "sourceDigest": "b9b88fceb1617632aa8abfa6f749ae1757cad984405b5e6c3b38a10426488d95",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5866,6 +6178,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/brand-guidelines",
       "sourceVersion": "",
       "sourceDigest": "8ac5ddaf1c999cc0df996c720b1cf4409fce985afa93de768052b36f85e937c4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5931,6 +6246,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/brandkit",
       "sourceVersion": "",
       "sourceDigest": "66c068d44001b4e6354c09e4b799f908ed1a7003211c7e7295331c122bea9f02",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -5996,6 +6314,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/browser-act",
       "sourceVersion": "",
       "sourceDigest": "3c5bf1cd4777e8dfd3d07cd5960ea3b31cde7b41fcb93c476f3ce73fbaa388c2",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -6061,6 +6382,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/browser-use",
       "sourceVersion": "",
       "sourceDigest": "9b74b686a120c0b34bb2e82d849dbd51fd350273be8783a537d642ca2bfe7e80",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -6126,6 +6450,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-bundled/browser/26.825.41651/skills/control-in-app-browser",
       "sourceVersion": "26.825.41651",
       "sourceDigest": "a141b4528697173cd9f60f4e26b2bd604e550e09f18c45cc7e1983e9312e5d2b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "browser / openai-bundled",
       "cleanupProtected": true,
@@ -6187,6 +6514,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/brutalist-skill",
       "sourceVersion": "",
       "sourceDigest": "d915c228e1fd8ff18f9f417ddfff605f045a15acb85e15906dcb347ba6e2c941",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -6252,6 +6582,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/canva/14.0.0/skills/canva-brand-check",
       "sourceVersion": "14.0.0",
       "sourceDigest": "9582d9349cfc6bcb29cce086a4034e4c4bce7033902e3c2e0f5e149403b4f841",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "canva / openai-curated-remote",
       "cleanupProtected": true,
@@ -6313,6 +6646,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/canva/14.0.0/skills/canva-branded-presentation",
       "sourceVersion": "14.0.0",
       "sourceDigest": "c48862315b4122909b610f03c09856674348a4eef09176e6e496019921b38653",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "canva / openai-curated-remote",
       "cleanupProtected": true,
@@ -6374,6 +6710,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/canva/14.0.0/skills/canva-bulk-create",
       "sourceVersion": "14.0.0",
       "sourceDigest": "ee0d4c5d1db82a0697efb813dbbd62f5b8be8b2ddde749bf571d413eea7c082b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "canva / openai-curated-remote",
       "cleanupProtected": true,
@@ -6435,6 +6774,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/canva/14.0.0/skills/canva-design-feedback",
       "sourceVersion": "14.0.0",
       "sourceDigest": "4e7f5b9a94a76c130709a5bff1f70f599efac59d348763ef0286f1e792409b7e",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "canva / openai-curated-remote",
       "cleanupProtected": true,
@@ -6496,6 +6838,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/canva/14.0.0/skills/canva-edit-design",
       "sourceVersion": "14.0.0",
       "sourceDigest": "0183256731389e3b6a228884c71191d74f35052fd067c69df770d3a2a0945d5e",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "canva / openai-curated-remote",
       "cleanupProtected": true,
@@ -6557,6 +6902,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/canva/14.0.0/skills/canva-implement-feedback",
       "sourceVersion": "14.0.0",
       "sourceDigest": "b76a24db5f8f03bc01f1f5d1b3c66bb9e11701f855ddbace86a6f822cb3cbbd5",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "canva / openai-curated-remote",
       "cleanupProtected": true,
@@ -6618,6 +6966,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/canva/14.0.0/skills/canva-resize-for-social-media",
       "sourceVersion": "14.0.0",
       "sourceDigest": "a59eb5b28db7f57151c99603e1ec45d934eb6b7dcecfecb6d70c89ea862aa18f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "canva / openai-curated-remote",
       "cleanupProtected": true,
@@ -6679,6 +7030,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/canva/14.0.0/skills/canva-translate-design",
       "sourceVersion": "14.0.0",
       "sourceDigest": "bfe338800d514536c2662e5d8b550f0a70756ab635913c001577fa034ab6e1c4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "canva / openai-curated-remote",
       "cleanupProtected": true,
@@ -6740,6 +7094,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/canvas-design",
       "sourceVersion": "",
       "sourceDigest": "4c548edcfc47e2b8da08dbab1498ed443b124100cdacd3e680f509883dcfb8ed",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -6805,6 +7162,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/caveman",
       "sourceVersion": "",
       "sourceDigest": "7e2fa5f052ed8572bbe892d4c1baeea80ba8659d0b72e6432bfd7e8fb98abc0c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -6870,6 +7230,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-bundled/chrome/26.825.41651/skills/control-chrome",
       "sourceVersion": "26.825.41651",
       "sourceDigest": "b7b378113a76c8c6d86b79c5d67cc90437267c0a25acf5a18d4ecf21362cf29a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "chrome / openai-bundled",
       "cleanupProtected": true,
@@ -6931,6 +7294,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/citation-manager",
       "sourceVersion": "",
       "sourceDigest": "1737766bdcd7e0caa615f085a8f3b63e222eec0ea03086067a85169f659a4a54",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -6996,6 +7362,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/code-review",
       "sourceVersion": "",
       "sourceDigest": "d45f786768d013c1e387aa5b3d067f7a2540c9350b1ef116d0245d9881a61bde",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -7058,6 +7427,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/attack-path-analysis",
       "sourceVersion": "0.1.22",
       "sourceDigest": "e76a7d1e150e43fb8943f6575800b876edeb95d868a4853fd4b481f5e888090a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7119,6 +7491,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/deep-security-scan",
       "sourceVersion": "0.1.22",
       "sourceDigest": "81a6f9415c6ee142c0d2e4db1ccae95af664a5c2b35df67a37440932cc60929d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7180,6 +7555,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/define-security-policy",
       "sourceVersion": "0.1.22",
       "sourceDigest": "529c0b7a0ccc7f7745acfea32cf72577351219b49744cca8c2b1a1d2a6b284c0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7241,6 +7619,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/finding-discovery",
       "sourceVersion": "0.1.22",
       "sourceDigest": "c18715da92f47d3dc88d0f478125dc853d4d2908376511974ffea118d15c33f2",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7302,6 +7683,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/fix-finding",
       "sourceVersion": "0.1.22",
       "sourceDigest": "d524a27f17f1681e9d934fc3b13b0cab918594e58c625f91bccfd37f6ffbcd65",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7363,6 +7747,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/propose-security-hardening",
       "sourceVersion": "0.1.22",
       "sourceDigest": "75fc14ae80de3c308ece64ece63f5e49fd44395aee10ea9ebc21362347939ee1",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7424,6 +7811,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/security-diff-scan",
       "sourceVersion": "0.1.22",
       "sourceDigest": "0d5ed6356da053e0dfe8b9ce00c4ee2d39d2e515db9efcf2dd92a0639d4127d6",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7485,6 +7875,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/security-scan",
       "sourceVersion": "0.1.22",
       "sourceDigest": "149b8b4cfc7d7d03c38be4f9bbbdfc5b4b1d085150f3e330264cb06a04ef5225",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7546,6 +7939,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/threat-model",
       "sourceVersion": "0.1.22",
       "sourceDigest": "cc2e011fafc61675992237dcc69c9441905d7d4aed1b94e98a19230f3db7b80c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7607,6 +8003,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/track-findings",
       "sourceVersion": "0.1.22",
       "sourceDigest": "40d15f75006b4ea1ae90890a41948269b8e56f986ca54c919cc866facb0722f8",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7668,6 +8067,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/triage-finding",
       "sourceVersion": "0.1.22",
       "sourceDigest": "8d53c7f246adea605cc33ff9afbf0b28688cf9df81ebbb4a0d89dbe562a464fc",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7729,6 +8131,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/validation",
       "sourceVersion": "0.1.22",
       "sourceDigest": "bb68cdbc217b4a7062736ec128480672c355a6995cc93f02b42113bf0c62bcbf",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7790,6 +8195,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/verify-fix",
       "sourceVersion": "0.1.22",
       "sourceDigest": "ff1d842e2dec7587aedfff8f8087775006e349930a2c7f9d21af4b1b7a31f129",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7851,6 +8259,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.22/skills/vulnerability-writeup",
       "sourceVersion": "0.1.22",
       "sourceDigest": "61056398c6c84d2d8fffb95781351c196a3963e1ab7b4aaf2614542618656c4a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "codex-security / openai-curated-remote",
       "cleanupProtected": true,
@@ -7912,6 +8323,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-bundled/computer-use/26.825.41651/skills/computer-use",
       "sourceVersion": "26.825.41651",
       "sourceDigest": "0ab2667b4006d3e43e7a96b41568b5c8c74dd208b0657ba0ccc063bd68673a1b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "computer-use / openai-bundled",
       "cleanupProtected": true,
@@ -7973,6 +8387,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/content-factory",
       "sourceVersion": "",
       "sourceDigest": "a2dd2250179ed20b5cecd4860ea5259881383f2f5e02dacd2e6a7530ddb55fe6",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8038,6 +8455,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/content-ops",
       "sourceVersion": "",
       "sourceDigest": "2a48b385e61ad916c01180db333345d546a62586f186cdb0528da6249d893f85",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8103,6 +8523,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/content-repurposer",
       "sourceVersion": "",
       "sourceDigest": "8d93d1a2113981035769bb6c76627bb8504b4f2c8b6023b153b1c47e48b4c298",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8168,6 +8591,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/creative-production/0.1.25/skills/intake",
       "sourceVersion": "0.1.25",
       "sourceDigest": "ae6599a9de47eba4402a58971ba3a024f3c4acb63128b3cc00249cbd496aa6c7",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "creative-production / openai-curated-remote",
       "cleanupProtected": true,
@@ -8229,6 +8655,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/creative-production/0.1.25/skills/produce",
       "sourceVersion": "0.1.25",
       "sourceDigest": "973b3e40b7bd7aeb66a38e87e09601c3710be6dd2fac5e90d86036517e28c65d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "creative-production / openai-curated-remote",
       "cleanupProtected": true,
@@ -8290,6 +8719,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/deep-research",
       "sourceVersion": "",
       "sourceDigest": "54638831f9903f020ffdf8e1ae98e5e210f7eae1f7097f9bb1bc8e6ce2ab0f7a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8355,6 +8787,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/diagnose",
       "sourceVersion": "",
       "sourceDigest": "c8bafba01efc7a2c67e4f83e7f657a4fa55c5578b1d75c50764ff0f11db4ff6c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8420,6 +8855,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-primary-runtime/documents/26.826.12353/skills/documents",
       "sourceVersion": "26.826.12353",
       "sourceDigest": "6d9f1254f2aec52f2d431a680592c898306d2de90ac8cf30cb2e3f52ec69de55",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "documents / openai-primary-runtime",
       "cleanupProtected": true,
@@ -8481,6 +8919,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/edit-article",
       "sourceVersion": "",
       "sourceDigest": "85cd22a5a8c7dab3725dad281f3264cb86ac1fe33b5137de624763db10fe9951",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8546,6 +8987,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/email-skill",
       "sourceVersion": "",
       "sourceDigest": "ff51a7439e98f804c3e5b085a4389963051ea04ebbfceab71a056e4b13c8a2b7",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8611,6 +9055,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/fbs-bookwriter",
       "sourceVersion": "",
       "sourceDigest": "92758c4d28114b1210749ac9ff3d943c6542c5c63ca09591e024979ca88d85a6",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": true,
       "catalogOwner": "内容工作流",
       "cleanupProtected": true,
@@ -8672,6 +9119,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/financial-analyst-master",
       "sourceVersion": "",
       "sourceDigest": "ffd6ae545520cacc1d4bc7e10164101133956606f0af12a50bddbef7bf0abaf4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8737,6 +9187,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/find-skills",
       "sourceVersion": "",
       "sourceDigest": "b7ce6ffacc33135e1d111c7385f8eb91436d8222de3461e86a6e5c90ac7455aa",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8802,6 +9255,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/frontend-design",
       "sourceVersion": "",
       "sourceDigest": "59edaee47554f214edc7f85110876959372bc21e37c6e3f11835cbd041f21e7d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8867,6 +9323,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/frontend-dev",
       "sourceVersion": "",
       "sourceDigest": "d8c4723ada15015973e69ec227f518ceb955c6109218cdd6601827ac4d4b9dee",
+      "platformIds": [
+        "h5"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8929,6 +9388,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/fullstack-dev",
       "sourceVersion": "",
       "sourceDigest": "5a8609adf29e99f6e8f3aa3a4e6509009baf8fb56eb7e8994be12c614c62be68",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -8994,6 +9456,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/git-guardrails-claude-code",
       "sourceVersion": "",
       "sourceDigest": "74051eeef393b5adce74d9c1f22428093bc3cc3094ad1ff72c1dd648f39d021c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9059,6 +9524,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/github",
       "sourceVersion": "",
       "sourceDigest": "ebdac0af47494608bf5a57600c9ac034dbefc08821c20159ab2f197ae637c1ba",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9121,6 +9589,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/github-ai-trends",
       "sourceVersion": "",
       "sourceDigest": "e158eb40052a760380bc718bb27893652485adaf114e117530b0d659416a9ee6",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9186,6 +9657,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/github-trending-cn",
       "sourceVersion": "",
       "sourceDigest": "df557f1e01fffd1c5f92025ad9a58314161f2e855eb2a6234a281175e99e74e2",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9251,6 +9725,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-docs",
       "sourceVersion": "0.1.16",
       "sourceDigest": "e78bb592ecd9db7887a01034e669d7780d94a8439a4ab19a4db4a001ae015b0f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "google-drive / openai-curated-remote",
       "cleanupProtected": true,
@@ -9312,6 +9789,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive",
       "sourceVersion": "0.1.16",
       "sourceDigest": "6b81db9e0d4c9244a33b2b815e68dfb3d5b03f656c7ed0380a37eff78e3255e7",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "google-drive / openai-curated-remote",
       "cleanupProtected": true,
@@ -9373,6 +9853,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive-comments",
       "sourceVersion": "0.1.16",
       "sourceDigest": "b91f8d4d8e6bcf7a895a4461277b1551f6ee63a20f1e48def65b54a1a0bfad70",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "google-drive / openai-curated-remote",
       "cleanupProtected": true,
@@ -9434,6 +9917,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-sheets",
       "sourceVersion": "0.1.16",
       "sourceDigest": "32cf9841e10ebf05d20ddbb350bf1fcdde719e152c93e89dbeec812069426f02",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "google-drive / openai-curated-remote",
       "cleanupProtected": true,
@@ -9495,6 +9981,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-slides",
       "sourceVersion": "0.1.16",
       "sourceDigest": "d1299cd6a0716c3e102efd9ea42d6f820d290afbebda61160d71af3f953300c6",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "google-drive / openai-curated-remote",
       "cleanupProtected": true,
@@ -9556,6 +10045,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/gpt-tasteskill",
       "sourceVersion": "",
       "sourceDigest": "2699f333a4cf2c43ef49b7cdf66674b5a19d05c1ca6a9a848dd4ec0acc41984d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9621,6 +10113,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/grill-me",
       "sourceVersion": "",
       "sourceDigest": "0fe30e2291a6f990a5414f85205535bc06519622bf604980511d7c11dad327e0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9686,6 +10181,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/grill-with-docs",
       "sourceVersion": "",
       "sourceDigest": "f360e734f99c74d9dacd62f0968d336e01e94947b114a605719058a03f4607f7",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9751,6 +10249,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/growth-engine",
       "sourceVersion": "",
       "sourceDigest": "240016a05b4f7652b7c7cd650ad3c4eade1c8459d40014c8d27b70ed9fe7462f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9816,6 +10317,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/handoff",
       "sourceVersion": "",
       "sourceDigest": "dd07215fc3994f8c4ca06fd7e47d5f0ff50f6e624e6b45458745aec93f722c1c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9878,6 +10382,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/hardcore-tech-writer",
       "sourceVersion": "",
       "sourceDigest": "aae8b57f6f09ba7583ad8ee299159256f9321e7d0d949ffff5f0855057299694",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -9943,6 +10450,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/humanizer",
       "sourceVersion": "",
       "sourceDigest": "f4ab5d6cf0e28ad7b2bb73b712610ab2e1204c8c2bfcce31910830b4ab3c1549",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -10008,6 +10518,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/ima-skills",
       "sourceVersion": "",
       "sourceDigest": "6040ff11ef71a11fe5b8946fbac9790452f73f5835b9d9aa26b50b362b6e2c9e",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -10070,6 +10583,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/image-to-code-skill",
       "sourceVersion": "",
       "sourceDigest": "ce9e7282b05e6cf247352c0f68953b943755899eb14a2198d72c97c6e5ffa807",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -10135,6 +10651,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/imagegen-frontend-mobile",
       "sourceVersion": "",
       "sourceDigest": "9d08a2fd4f71d9fa9f6808506fed4a8231ab451e2016570ab80514074571c64a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -10200,6 +10719,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/imagegen-frontend-web",
       "sourceVersion": "",
       "sourceDigest": "d5215faecc59120b499726e2c0d6fd802d47f7f69c9243e328120b4759ed8f60",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -10265,6 +10787,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/improve-codebase-architecture",
       "sourceVersion": "",
       "sourceDigest": "a81f800019e1d727987d0cc0ee0e2de95168ed5ab2ebcc2b43d17fe7780738c5",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -10330,6 +10855,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/infographic-maker",
       "sourceVersion": "",
       "sourceDigest": "9e583ebd6f3ade4ffd5fbabfcb117d5de1d0a4c7768454f4096ac9cb224e3d3f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -10395,6 +10923,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/interview-prep",
       "sourceVersion": "",
       "sourceDigest": "ee51ef04e6fef0e799c0fc890c6083350e33b5b937db29484f6f79823defdb55",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -10460,6 +10991,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-article-writer",
       "sourceVersion": "",
       "sourceDigest": "6cc9610c2f4c0277eb50f54e8f18f972d7577656bdce852c45bb2755ffde3271",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -10521,6 +11055,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-content-router",
       "sourceVersion": "",
       "sourceDigest": "4eacf37d502fbd44dc2c62afd46d88629f535f2116b2569ef7783c5257cc8a7c",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -10582,6 +11119,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-editorial-qc",
       "sourceVersion": "",
       "sourceDigest": "3af06999bd71da8b90b43423282176b3efa5c353ed3f705fe4d7ea62dd268905",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -10643,6 +11183,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-founder-reflection",
       "sourceVersion": "",
       "sourceDigest": "415aebaa39831afb9653cd727f5438bdba2966227b3a51e646c4057c1fade9b1",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -10704,6 +11247,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-funding-daily",
       "sourceVersion": "",
       "sourceDigest": "5338f61de566860bcbfb21cd3b6fd4876f0d9885faf2be172ab7176adab39c07",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -10765,6 +11311,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-funding-periodic",
       "sourceVersion": "",
       "sourceDigest": "86a989a55fe74d09c77fcf0f1cb718ead0353aaf2d006322a6e0a1a479fd6dda",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -10826,6 +11375,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-hot-commentary",
       "sourceVersion": "",
       "sourceDigest": "196313a4e8f07a3e1b7068afcc38e07abc68b287d34af4152923044c6e22e13e",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -10887,6 +11439,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-hot-commentary-topic-selector",
       "sourceVersion": "",
       "sourceDigest": "e62029e5b25a45636609a6c9872fcebb77e341bf71cc69681ee6a30d7719fbed",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -10948,6 +11503,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-hot-topic-radar",
       "sourceVersion": "",
       "sourceDigest": "70b589de4b8241c1b1848b3cb6c8fe246dad9ade0ade21336b7646e60f141506",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -11009,6 +11567,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-industry-judgment",
       "sourceVersion": "",
       "sourceDigest": "0c1c7dd7f9e1ff8572a06634d677666acf8199ebac2b38ff0dcbbd212cbac2df",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -11070,6 +11631,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-ip-knowledge",
       "sourceVersion": "",
       "sourceDigest": "e1bc22dcc077441ebfb02b2c05b348f11a6a0a9d7e948450c5388c2455b42025",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -11131,6 +11695,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-opportunity-analysis",
       "sourceVersion": "",
       "sourceDigest": "e514e1c88ee049467093a017cd5f00590eebfa3d734ead5cb555da033e86c9ef",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -11192,6 +11759,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-style-calibrator",
       "sourceVersion": "",
       "sourceDigest": "112c9388f4a04d707b7fa222ef3803335037dd34bedc33da9192cd14733ae27c",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -11253,6 +11823,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-title-writer",
       "sourceVersion": "",
       "sourceDigest": "256b8dd8e0aabd9fbc11b560e026da2551c0fe1858be38ea301864d64b29ef48",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -11314,6 +11887,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "AIP/.agents/skills/laofang-topic-selector",
       "sourceVersion": "",
       "sourceDigest": "cb1f3dc643b84e7bde52977d48dc0f8132f81d78dbc3d07980c5bcdfe9473d88",
+      "platformIds": [
+        "aip"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "AIP 内容 OS",
       "cleanupProtected": true,
@@ -11375,6 +11951,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/lark-unified",
       "sourceVersion": "",
       "sourceDigest": "f3bd19995333457d068f68aa5cc4c85dc67ca3ffee12c17ba457666998dbe10d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -11440,6 +12019,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/llm-wiki",
       "sourceVersion": "",
       "sourceDigest": "4f11ab635e402d41f33a680ed69dbc90ac80bffa4791a930e64fc2d0534a9a1f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -11505,6 +12087,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/llm-wiki-upgrade",
       "sourceVersion": "",
       "sourceDigest": "74fb456dabc0d0c23825cfebcb1c9faead3d16f0350ab1dc19c48ded84a42198",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -11570,6 +12155,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/macro-monitor",
       "sourceVersion": "",
       "sourceDigest": "96c4a59c4d165b4f1b956a273dc22f32d0a50d338fc7d8c2554e5bdf5e7f1a86",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -11635,6 +12223,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/market-researcher",
       "sourceVersion": "",
       "sourceDigest": "f5269ec304bbb2d8724d0d396f0cb7c04ff58433e96bb988cf5244f0442d5198",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -11700,6 +12291,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/marketing-skills",
       "sourceVersion": "",
       "sourceDigest": "347a3cf395b0864d19d96bdc762ceab8cd6678453d9d63c77ea9defb3e559c8b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -11765,6 +12359,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/md2wechat",
       "sourceVersion": "",
       "sourceDigest": "cc5adb21de4d8ed7bc285c62a925ee9d0aa2fcf7ce6f3e1fbcd83b2eaf0490f5",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -11830,6 +12427,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/migrate-to-shoehorn",
       "sourceVersion": "",
       "sourceDigest": "b41d9a3748a8bdb90ce3b91de8f56bc2b2354d2dd943571bf5ccecf81b28a762",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -11895,6 +12495,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/minimalist-skill",
       "sourceVersion": "",
       "sourceDigest": "0b63afb03f68657b51042d075b0a7f8c2362bdb5bb1f77caab99693e90c91e21",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -11960,6 +12563,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/minimax-docx",
       "sourceVersion": "",
       "sourceDigest": "9c79fa5a035b8a00a94c788669305edb30a36b815b5a8a1e566458a65d11f958",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -12025,6 +12631,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/minimax-pdf",
       "sourceVersion": "",
       "sourceDigest": "d7cd4cebf36fd0b1509858b8488469af9110abaa0bef17c9b46415d2ad02bc68",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -12090,6 +12699,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/minimax-xlsx",
       "sourceVersion": "",
       "sourceDigest": "1a320f3b5206df61616f042ef84d609c3ef724d69fe4083bd29b38f8a5f27f29",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -12155,6 +12767,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/multi-search-engine",
       "sourceVersion": "",
       "sourceDigest": "5f871797e97c3b8799d1c6083ac35460b76155a6720e85ad5d215541d57cb4a5",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -12220,6 +12835,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/nano-pdf",
       "sourceVersion": "",
       "sourceDigest": "f061efda3e14f3ce7bd0f58dd3ea3a0019853f549341fc800aa15d51aee6cfe5",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -12285,6 +12903,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/neat-freak",
       "sourceVersion": "",
       "sourceDigest": "296a86cd89fa722067dc32a81413585743938eef19e644e78076228d46ecf1ec",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -12347,6 +12968,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-ai-gateway",
       "sourceVersion": "1.0.0",
       "sourceDigest": "8693d7d23a0d6c2088d684de8c53fefdfb2484680ca80496f1489cd352dccc0f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12408,6 +13032,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-blobs",
       "sourceVersion": "1.0.0",
       "sourceDigest": "65accd9dfd4b6d16d5f98b61f573fc272423c1e630b05f8afa19f0d0a9a7a85f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12469,6 +13096,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-caching",
       "sourceVersion": "1.0.0",
       "sourceDigest": "1c927b78c04b4d6362fa27a09fe7c194bc274a88928b86129e56ff122502c258",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12530,6 +13160,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-cli-and-deploy",
       "sourceVersion": "1.0.0",
       "sourceDigest": "f9ce2a14268822e4a59d7d297b1c207862e7c12b6760990a0c428d998e8d2cf7",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12591,6 +13224,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-config",
       "sourceVersion": "1.0.0",
       "sourceDigest": "a47dc029442f16fd1b9e0a1992da29c8d2985f4f29d7630599894668c9280ac8",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12652,6 +13288,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-deploy",
       "sourceVersion": "1.0.0",
       "sourceDigest": "7804a5c4fccabb61e8c8c307c2febf530f09b692efcad664c2c5f7c37b2f67f4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12713,6 +13352,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-edge-functions",
       "sourceVersion": "1.0.0",
       "sourceDigest": "643e0c31cf2d4263713f126770c047b229849a082cd5aecfbb9eb9c3ece81b30",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12774,6 +13416,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-forms",
       "sourceVersion": "1.0.0",
       "sourceDigest": "e211b214abc2171385b7595cf273c017b1e1097f50552bdcfd6496bd766e1e42",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12835,6 +13480,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-frameworks",
       "sourceVersion": "1.0.0",
       "sourceDigest": "6d7ad2841151ec3dbd1479945ed129f43347134fc4fbbf6564983c3241075852",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12896,6 +13544,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-functions",
       "sourceVersion": "1.0.0",
       "sourceDigest": "4811c00055a11464cd57bd7302592d4cf7448afb9c4b7e62a3ae205343594cba",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -12957,6 +13608,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-identity",
       "sourceVersion": "1.0.0",
       "sourceDigest": "5c340020393eb58af744f07a964722ddd36e24042332cd5bb5750546ae94caad",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -13018,6 +13672,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-image-cdn",
       "sourceVersion": "1.0.0",
       "sourceDigest": "dc62c9365cf4be89bf67efb0df718a48cbc8de397bae6736a8bb1f453fd8331d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "netlify / openai-curated-remote",
       "cleanupProtected": true,
@@ -13079,6 +13736,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/news-summary",
       "sourceVersion": "",
       "sourceDigest": "5b539d5f4ac62a32ee3a11f52f4d7e84a059e40e6d2de968101809ed0cf2760f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -13144,6 +13804,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/newsroom-style",
       "sourceVersion": "",
       "sourceDigest": "558b23f64dbcbd7d2b161371d906904e4c4503e13e91008d0f6ed244dc0302d4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -13209,6 +13872,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/note-organizer",
       "sourceVersion": "",
       "sourceDigest": "bde2b3e6dfe62551b7dca821fcf0b3a80cfce16efefc05fad1e063083cf6f0b9",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -13274,6 +13940,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/notebooklm",
       "sourceVersion": "",
       "sourceDigest": "1d229162dff38d4dbd0951275ec2eaf1a60df5c360a4dfafd3d25da49e9cd3ac",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -13339,6 +14008,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/notebooklm-studio",
       "sourceVersion": "",
       "sourceDigest": "fa797657b4b63c2bc3d07ce1070751adefb9038e1dd85874445b4647bdf52914",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -13404,6 +14076,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/obsidian",
       "sourceVersion": "",
       "sourceDigest": "35c2bc13aff6fc9b3dbc8916cb42382b21cc573c5cf6c3c11f70fa9eabafee6b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -13466,6 +14141,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/obsidian-vault",
       "sourceVersion": "",
       "sourceDigest": "1e34caaa182c3e70be80aad679952bd0850e76c257a3f24bd7118bebfbec6c72",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -13531,6 +14209,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.2.3/skills/agents-sdk",
       "sourceVersion": "1.2.3",
       "sourceDigest": "d8cbd7c07e264e38e66de4e92e3dd18992cea13fcf5aaa6a64372a6161f5833e",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-developers / openai-curated-remote",
       "cleanupProtected": true,
@@ -13592,6 +14273,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.2.3/skills/build-chatgpt-app",
       "sourceVersion": "1.2.3",
       "sourceDigest": "d38e829e7c70a25bbf693ebf7c452725ecfd8c14aed02fe5ca2a13094b1f0e7e",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-developers / openai-curated-remote",
       "cleanupProtected": true,
@@ -13653,6 +14337,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.2.3/skills/chatgpt-app-submission",
       "sourceVersion": "1.2.3",
       "sourceDigest": "c2b6c5aea209dc41fc332714da269b5274fcab26b7c9fcad55ddd0788c3fe9a7",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-developers / openai-curated-remote",
       "cleanupProtected": true,
@@ -13714,6 +14401,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.2.3/skills/openai-api-troubleshooting",
       "sourceVersion": "1.2.3",
       "sourceDigest": "1da6bd091b3989a2ce1931d9a32fa5f8c3e667081ae70c21fc63928a73bcb2d2",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-developers / openai-curated-remote",
       "cleanupProtected": true,
@@ -13775,6 +14465,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.2.3/skills/openai-platform-api-key",
       "sourceVersion": "1.2.3",
       "sourceDigest": "5dfa70d7aef7fd395fc527bcbf723899ec338710f1e867740bfd71ebc1c798f9",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-developers / openai-curated-remote",
       "cleanupProtected": true,
@@ -13836,6 +14529,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/openai-image-gen",
       "sourceVersion": "",
       "sourceDigest": "6b5b556088ee1de1b441b95ba5b8188df6b9056aa520b81aae939e8007aed7eb",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -13901,6 +14597,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard",
       "sourceVersion": "0.1.1",
       "sourceDigest": "f943fba42e7a98e7e1fad472997250ae903ed9e96d21a079a3f67b3f8c99bbef",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -13962,6 +14661,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review",
       "sourceVersion": "0.1.1",
       "sourceDigest": "2e85a831fde96af61d3e55bc02d324d39f223fea5a2d89498ee37003ee1bdb2d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14023,6 +14725,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report",
       "sourceVersion": "0.1.1",
       "sourceDigest": "8ddfe8015786579e96c3184c14c1e2ee4ca1ee237c798b442629fe02f6c3f00c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14084,6 +14789,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis",
       "sourceVersion": "0.1.1",
       "sourceDigest": "ad4557a1b635fb2985679009b457b69a7c588572cb8abc4b3e1fd5d1bed6d4c4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14145,6 +14853,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget",
       "sourceVersion": "0.1.1",
       "sourceDigest": "e93a88bdf1c20582e4e18ddbcabdc3e226b607e74a0873a6132792f8439db883",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14206,6 +14917,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo",
       "sourceVersion": "0.1.1",
       "sourceDigest": "f9fedc4126aebd7f01f57450a042260f7274eb94d6b3a81b816a0b8ae0f73f39",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14267,6 +14981,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum",
       "sourceVersion": "0.1.1",
       "sourceDigest": "9b308ce1fa9018750ef3d3ba041827dda1d4a7dc00c2670d35682c4fa6e62ee4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14328,6 +15045,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report",
       "sourceVersion": "0.1.1",
       "sourceDigest": "e374a21d851c77bed55692e78da90d532b3f7d353a8010c3a15667496920a8ae",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14389,6 +15109,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead",
       "sourceVersion": "0.1.1",
       "sourceDigest": "0ce84a89d5daee74f0a7c0d13ccbd16563a23d1473a250b5c3d7b51d7face8dd",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14450,6 +15173,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar",
       "sourceVersion": "0.1.1",
       "sourceDigest": "20fdefc97e29fea889665c0d4b08fb6aa391ba29deba51da9ca9438d7461ab33",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14511,6 +15237,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review",
       "sourceVersion": "0.1.1",
       "sourceDigest": "b376bbc2e5f7d901977d58bf080c192c56d8e7b5f06c97c40b5adb46092c12a9",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14572,6 +15301,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff",
       "sourceVersion": "0.1.1",
       "sourceDigest": "9fff7c45d148d1c4fb6c6cd996ffee1ad872a1b27a3acf90e4e371b87cace893",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14633,6 +15365,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker",
       "sourceVersion": "0.1.1",
       "sourceDigest": "866fb8c6588aab0f8c2d5b7641d13daa18cc53cfd544327d331d71daaa0e0f00",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14694,6 +15429,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline",
       "sourceVersion": "0.1.1",
       "sourceDigest": "06410f91f63c7261529a75e7ec94152fadec42bd9edbfcee13a0db440cfef792",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14755,6 +15493,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode",
       "sourceVersion": "0.1.1",
       "sourceDigest": "c38a71f66f21c13c886422291784a464fe397faae9484a6bd418e0a024e707e6",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14816,6 +15557,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode",
       "sourceVersion": "0.1.1",
       "sourceDigest": "52871aad0ce3e4e6aef7682e7ba184bb9c4f4e47adda6749df4636d81889f255",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14877,6 +15621,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum",
       "sourceVersion": "0.1.1",
       "sourceDigest": "7b872c2d7ae9a4a5d2f7dc00f96a334ed50d9dccd02647817c95b28d71610c20",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14938,6 +15685,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design",
       "sourceVersion": "0.1.1",
       "sourceDigest": "76eba16205cd54787477038e04c072e1daf7e5e3c30447f36c3b93fdfdfe0f38",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -14999,6 +15749,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment",
       "sourceVersion": "0.1.1",
       "sourceDigest": "5019b60d6a73add4357d02e8cd6601aeb677ac94e05bbba6157de238b1054b66",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -15060,6 +15813,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast",
       "sourceVersion": "0.1.1",
       "sourceDigest": "83fb829be3bf727cdb8dd728901ad65b7b48181d98c09b8b9238b17f76f8c965",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "openai-templates / openai-curated-remote",
       "cleanupProtected": true,
@@ -15121,6 +15877,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/openai-whisper",
       "sourceVersion": "",
       "sourceDigest": "ca25de574c9e1970d82aa27653dceed2f354ba7f35aea0e9aeb4fabc9e7dacc0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -15186,6 +15945,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/openai-whisper-api",
       "sourceVersion": "",
       "sourceDigest": "03f046fbfcede2d07bcb8babe9f077d7ccbca6150f0dd323975117ed5b706b2f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -15251,6 +16013,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/output-skill",
       "sourceVersion": "",
       "sourceDigest": "933b89da884015e2a4189417fd2dad62610c9aeb1c80d0166567354594836b1c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -15316,6 +16081,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-primary-runtime/pdf/26.826.12353/skills/pdf",
       "sourceVersion": "26.826.12353",
       "sourceDigest": "cfe20037620f0159fd2c9f0ab32eb017234ce0b9ef419a33f39ab471b73ea0db",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "pdf / openai-primary-runtime",
       "cleanupProtected": true,
@@ -15377,6 +16145,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/pengyouquan-copywriting",
       "sourceVersion": "",
       "sourceDigest": "7c874cc46437bfecdcd8c5f5472469e2d7c3e1db78cdd5888c881a615d4dc2d1",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": true,
       "catalogOwner": "内容工作流",
       "cleanupProtected": true,
@@ -15438,6 +16209,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/playwright-browser-automation",
       "sourceVersion": "",
       "sourceDigest": "9aade2b391299751ae422eea9ba1ef03f6a3c88ebc10739df5453ea373b98453",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -15503,6 +16277,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/playwright-scraper-skill",
       "sourceVersion": "",
       "sourceDigest": "b64476f73b70d84ab44423712c6905167e2fb8c348b696fcbbe675f810b8f1bd",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -15568,6 +16345,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management",
       "sourceVersion": "0.1.0",
       "sourceDigest": "372bd4d9e307291d203ff7010d04874318875a490cc97fe80faf940f5812a1b8",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "plugin-management / openai-curated-remote",
       "cleanupProtected": true,
@@ -15629,6 +16409,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/podcast-ops",
       "sourceVersion": "",
       "sourceDigest": "30d2f1d8c5c2c83647cec39a2829c96d6f6f710cd93747e55f2be4b5df0ac612",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -15694,6 +16477,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/ppt-slideshow",
       "sourceVersion": "",
       "sourceDigest": "76d87c58700c9a3f5417a73a77ff08011572d7ba7932b8b0c3e4b56fb925539a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -15756,6 +16542,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/pptx-generator",
       "sourceVersion": "",
       "sourceDigest": "46a2902230ccd7ea3d185e7687187996a8224a49aa25ea50f894a6ce3674470f",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -15821,6 +16610,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-primary-runtime/presentations/26.826.12353/skills/presentations",
       "sourceVersion": "26.826.12353",
       "sourceDigest": "262f8269c2a28f62762323a66f56324c1ccbc339b5e9d68e33e2f44226848c6b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "presentations / openai-primary-runtime",
       "cleanupProtected": true,
@@ -15882,6 +16674,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/audit",
       "sourceVersion": "0.1.52",
       "sourceDigest": "e6bb11f9d571d8e394414985034d6fc5bfe6a8ae57779669a2b5207f9e0dd9b4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -15943,6 +16738,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/design-qa",
       "sourceVersion": "0.1.52",
       "sourceDigest": "de4b1d1c67c6f6fa5ef3fad553d80cdac663e7aecc33598580316a01ad2be805",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -16004,6 +16802,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/get-context",
       "sourceVersion": "0.1.52",
       "sourceDigest": "9787d461900f6c644706497b28dd9b735b313902f099f7a1a565b5386e163192",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -16065,6 +16866,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/ideate",
       "sourceVersion": "0.1.52",
       "sourceDigest": "da777113d22538bcdababf93a684dbe3c0a2b46119a372c849d509f0d79feb25",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -16126,6 +16930,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/image-to-code",
       "sourceVersion": "0.1.52",
       "sourceDigest": "f0be6be18128e05beb77f8344886cae3d0fa747581e418bf3ef70a113f114374",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -16187,6 +16994,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/index",
       "sourceVersion": "0.1.52",
       "sourceDigest": "ea75c184b0b9fe793bed31404a67acafbf50a38de5dcf4437d7dba87d5d5c552",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -16248,6 +17058,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/research",
       "sourceVersion": "0.1.52",
       "sourceDigest": "f310e3cdaad308629c878954ca13833d510d251d1a7f9b166795391e7be0b4a2",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -16309,6 +17122,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/share",
       "sourceVersion": "0.1.52",
       "sourceDigest": "8e1e0da62a4f8e8db8f2844a3bc138aa66155b084de4c8d4636dd7253150d4c0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -16370,6 +17186,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/url-to-code",
       "sourceVersion": "0.1.52",
       "sourceDigest": "4a0f51a2b8a0fbe6625f3f00509138f975ea355b481a22ce196fdebc574b6a16",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -16431,6 +17250,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.52/skills/user-context",
       "sourceVersion": "0.1.52",
       "sourceDigest": "7729f3454ca0b8db59560a7d0a5c989420fb68abe31a7e02d63a11f234675907",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "product-design / openai-curated-remote",
       "cleanupProtected": true,
@@ -16492,6 +17314,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/prompt-engineering-expert",
       "sourceVersion": "",
       "sourceDigest": "d34abf5dd80a9039d3b57d1251c1bdd24a67b889dea80b854d07465499886469",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -16557,6 +17382,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/prototype",
       "sourceVersion": "",
       "sourceDigest": "f2a9d586d9a095fa69bc450638b6d56c792aaa124881152e5292e52871c278b0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -16622,6 +17450,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/recording-processing",
       "sourceVersion": "",
       "sourceDigest": "b31a3217009984cd234aea8497c605d8498b17c1c5ccac49ca09264ee68912b0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": true,
       "catalogOwner": "内容工作流",
       "cleanupProtected": true,
@@ -16683,6 +17514,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/redesign-skill",
       "sourceVersion": "",
       "sourceDigest": "f6b0637adf3481f0fbd23a365a8e0773ed82b322c1df78a40d7a8b4cda65c9e3",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -16748,6 +17582,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/remotion-video-toolkit",
       "sourceVersion": "",
       "sourceDigest": "718c2b64c6bacf5c331e4bd8def3c9a8f7d22e6309ca8e6f976a0857859cedc4",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -16813,6 +17650,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-best-practices",
       "sourceVersion": "1.0.7",
       "sourceDigest": "4805421c3789690d94ee3a220e42e17b98e05235ef1d11c186ec3b910c17c377",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -16874,6 +17714,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-captions",
       "sourceVersion": "1.0.7",
       "sourceDigest": "f9e21ccc6ea6f7d04895992674213ec372d6ddc64b18a72e1e89414002a52e49",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -16935,6 +17778,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-create",
       "sourceVersion": "1.0.7",
       "sourceDigest": "67f06ef24145ce4b55798b7c550546b1f6436168a6c5bbf32bcd7bfbb71eef77",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -16996,6 +17842,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-docs",
       "sourceVersion": "1.0.7",
       "sourceDigest": "4e6874efe52909cc63acfe76dce46a63b0f20715412be80679f2f902d31798c7",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -17057,6 +17906,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-interactivity",
       "sourceVersion": "1.0.7",
       "sourceDigest": "1503c8b314184db803d099b312595c685ebaa8fb13b2e25c7e09a4ea49172438",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -17118,6 +17970,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-maps",
       "sourceVersion": "1.0.7",
       "sourceDigest": "be9a08005e7173530c3b76bd0b1970d24cefb2b2507c28a5d32f91db1a5d9e7b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -17179,6 +18034,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-markup",
       "sourceVersion": "1.0.7",
       "sourceDigest": "b62301fe488d534272ef27eda91e78a559e2583739a4deef71452eae112362a7",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -17240,6 +18098,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-multimedia",
       "sourceVersion": "1.0.7",
       "sourceDigest": "ac18073f91c3fb7dc00b3d0a7917794645cc1253f7e06b87e72f3537266880f0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -17301,6 +18162,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-render",
       "sourceVersion": "1.0.7",
       "sourceDigest": "c3837f6a20b4eeb4c6bf7696ad487889585857861cd89a5a4db5f9dab1b584ed",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -17362,6 +18226,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-saas",
       "sourceVersion": "1.0.7",
       "sourceDigest": "515f6d3f74cf8f7a94476e6a604cdc8ec9b2fa2c64d4a859df28ea56ae77562b",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -17423,6 +18290,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-studio",
       "sourceVersion": "1.0.7",
       "sourceDigest": "57862275094658d1cf9efcb253aadcd95f9c0238ed082a77599a5b59c5eab17e",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -17484,6 +18354,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-upgrade",
       "sourceVersion": "1.0.7",
       "sourceDigest": "84618a23af9e6b19c3424a5ca5dfbc4aa4c5181f4262590c609ab7d3418c72b3",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "remotion / openai-curated-remote",
       "cleanupProtected": true,
@@ -17545,6 +18418,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/sales-pipeline",
       "sourceVersion": "",
       "sourceDigest": "12826724c5547d76b5552aa32d6642f3183fba4844617d88c51fa1b0962f60f0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -17610,6 +18486,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/sales-playbook",
       "sourceVersion": "",
       "sourceDigest": "c097a87808b74d4a1416cbde98681bf7cdfdd82c897bd3a36ed0c02db39f5951",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -17675,6 +18554,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/sanjin-interview",
       "sourceVersion": "",
       "sourceDigest": "4ae59f591cf2ed5d7927e16b90514c45aae1ba0101007f5440e33198ccdd7856",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": true,
       "catalogOwner": "内容工作流",
       "cleanupProtected": true,
@@ -17736,6 +18618,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/scaffold-exercises",
       "sourceVersion": "",
       "sourceDigest": "be30d12029fe1dbe2a6144f8542ef87d5bcd7fd68e9f04f5ae09a129387cc0ea",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -17801,6 +18686,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/seo-ops",
       "sourceVersion": "",
       "sourceDigest": "f8bb964d0fa24b0539dd21bbc78afade0acbfa8f1d43afe71081f9e84feb56d0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -17866,6 +18754,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/setup-matt-pocock-skills",
       "sourceVersion": "",
       "sourceDigest": "59e4a8bd27f3abbe24495d1f15a4404e63443c529c9c26200889b68a43a25f31",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -17931,6 +18822,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/setup-pre-commit",
       "sourceVersion": "",
       "sourceDigest": "39df5538137477d3788152ef92ba1264b675157cd038794f82141edcebfddb96",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -17996,6 +18890,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-bundled/sites/0.1.46/skills/sites-building",
       "sourceVersion": "0.1.46",
       "sourceDigest": "8953c31b8a2e416b679310f02847f373b72dd1c073435c64343bf28253c52096",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "sites / openai-bundled",
       "cleanupProtected": true,
@@ -18057,6 +18954,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-bundled/sites/0.1.46/skills/sites-hosting",
       "sourceVersion": "0.1.46",
       "sourceDigest": "165117ec6fa357b13082123088ee6e0e41f5f016150af7fdddf4e0f23db25440",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "sites / openai-bundled",
       "cleanupProtected": true,
@@ -18118,6 +19018,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/skill-creator",
       "sourceVersion": "",
       "sourceDigest": "f2731d8e8dd88a2177b32bbcddc22886f44cd5ced99300a4801b354de9690d4c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18183,6 +19086,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/skill-scanner",
       "sourceVersion": "",
       "sourceDigest": "53ff416184b771009ad49fa14845e12434dac92ea182fcea1ac5d418c55556ed",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18248,6 +19154,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/skill-vetter",
       "sourceVersion": "",
       "sourceDigest": "ad4fd6a906d226828c0c1e1e6e141b52b3ef37759f3e508aceeb8f62c3faf017",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18313,6 +19222,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/skills-security-check",
       "sourceVersion": "",
       "sourceDigest": "56c4653197df76f0c58428bdc6dc18c025fedc21614467a19444bffc0a7623af",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18378,6 +19290,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/social-auto-upload",
       "sourceVersion": "",
       "sourceDigest": "97c9d08c716cc0dad3f5a8021d759bf185d3ce7327f95485f03f6b6fcc58d446",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18443,6 +19358,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/soft-skill",
       "sourceVersion": "",
       "sourceDigest": "49c7b83a53374522fc0603e5b0d8bd2eadc1ad819356f4b56f08f5e73d91ee2d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18508,6 +19426,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/source-verification",
       "sourceVersion": "",
       "sourceDigest": "bba32b5f8955a9f31ef80c6beea5b57e3f04e600c575abb42baba6f48a451834",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18573,6 +19494,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-primary-runtime/spreadsheets/26.826.12353/skills/excel-live-control",
       "sourceVersion": "26.826.12353",
       "sourceDigest": "b506de85f5764aa44648406aa55f65117dbb99ea7f98bf953e93a373921ff93c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "spreadsheets / openai-primary-runtime",
       "cleanupProtected": true,
@@ -18634,6 +19558,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-primary-runtime/spreadsheets/26.826.12353/skills/spreadsheets",
       "sourceVersion": "26.826.12353",
       "sourceDigest": "c682b52a6c80a4cc78701b2d3ad2645b8145de1a542b9d4fde9366c00f766682",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "spreadsheets / openai-primary-runtime",
       "cleanupProtected": true,
@@ -18695,6 +19622,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/stitch-skill",
       "sourceVersion": "",
       "sourceDigest": "0df674ab287dac937a44727a257b241f9b0c4ea62eb1a947224366211a266ca2",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18760,6 +19690,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/story-pitch",
       "sourceVersion": "",
       "sourceDigest": "31a3167c3be653ae1d4e4c26a53cedaebf66fe8f1fd7933c190b7477201deb65",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18825,6 +19758,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/summarize",
       "sourceVersion": "",
       "sourceDigest": "c0d58e75f99f3b5ff82aacbee58801b9c15e1060a6e6ee706e428480c7ffd106",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18890,6 +19826,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/taste-skill",
       "sourceVersion": "",
       "sourceDigest": "b22aec648128a27c2646cf8847259073d939e7c7a28761a8ce39e84a082416dc",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -18955,6 +19894,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/tdd",
       "sourceVersion": "",
       "sourceDigest": "c864f040b555c4d0ec464daa38fef8e1f4f142b26bc11191b978775bff868372",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19017,6 +19959,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-primary-runtime/template-creator/26.826.12353/skills/template-creator",
       "sourceVersion": "26.826.12353",
       "sourceDigest": "978ddabb22208d8763501dba5705a195497a74d152dad77d0e13eda98f2db239",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "template-creator / openai-primary-runtime",
       "cleanupProtected": true,
@@ -19078,6 +20023,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/the-entrepreneurship-handbook",
       "sourceVersion": "",
       "sourceDigest": "bcd3172136a868b6bf12408f79c00351b7d71ad6ee99569dbabe66f4a02d00c2",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19143,6 +20091,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/to-issues",
       "sourceVersion": "",
       "sourceDigest": "3fc7c307251c4f08a50326236e7e70faffe1dadb99ee35a3d854b1b7a0b79418",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19208,6 +20159,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/to-prd",
       "sourceVersion": "",
       "sourceDigest": "a9a42e82d98fc26a289ee525b29af933b81a5b937f58284bda69128c88e49b3d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19273,6 +20227,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/triage",
       "sourceVersion": "",
       "sourceDigest": "670cfb7cbc2d946813c687b2b9a25d22b304e7af46ed30c48ae1d5544b31d41e",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19338,6 +20295,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": "plugin-cache/openai-bundled/visualize/1.0.23/skills/visualize",
       "sourceVersion": "1.0.23",
       "sourceDigest": "90862b061604ab54c0955857bc4d4baa9312898d0a7d75098c2e6fc6d5dd3e3c",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "visualize / openai-bundled",
       "cleanupProtected": true,
@@ -19399,6 +20359,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/weather",
       "sourceVersion": "",
       "sourceDigest": "8ba2ca8a199d25610fd2705b4470647fe31e8a9419b84ad62fb524a90a602a9a",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19464,6 +20427,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/web-search-exa",
       "sourceVersion": "",
       "sourceDigest": "2042d5275c38c5b3f62fecbb17e6e56fecfeb2d366073b2e3da1f1f14147beae",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19529,6 +20495,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/wechat-article-search",
       "sourceVersion": "",
       "sourceDigest": "91022079aace35d74b5b832304e39381bf7abfa0750461129e981060379dd9db",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19594,6 +20563,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/wechat-topic-radar",
       "sourceVersion": "",
       "sourceDigest": "4ac159049bce14b43f7f93e859212a95fe4a82d232bde158824d116650386313",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19659,6 +20631,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/write-a-skill",
       "sourceVersion": "",
       "sourceDigest": "03840258378476cbefa13fd3f7bf70db93ec1c3cdd7d0dc4edb9431e71a2a24d",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19724,6 +20699,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/x-longform-post",
       "sourceVersion": "",
       "sourceDigest": "80118868cf5c66bd541f96221cb1fa35fc76b1ebf096955fdea35d7a8e364d12",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19789,6 +20767,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/youtube-transcript",
       "sourceVersion": "",
       "sourceDigest": "a9a52f93cc648a54d785a7ebe8873f4b2bb895f28587d72273927d996e83dcb0",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19854,6 +20835,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/yt-competitive-analysis",
       "sourceVersion": "",
       "sourceDigest": "e560b52ee900653a1475afb56637f75a8cec0a321ae9c52a7992c2244ad2195e",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,
@@ -19919,6 +20903,9 @@ window.WaveSightLocalSkillStore = {
       "sourcePath": ".skill-store/zoom-out",
       "sourceVersion": "",
       "sourceDigest": "34f4bab271b9b9bbad01e08413d5a096ec84d1ee983d747de9219f77afc5e897",
+      "platformIds": [
+        "shared"
+      ],
       "catalogRegistered": false,
       "catalogOwner": "",
       "cleanupProtected": false,

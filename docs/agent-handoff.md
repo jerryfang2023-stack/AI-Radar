@@ -15,7 +15,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current release: `V4.8.1-research-retirement`; compatibility shell `SITE-V4.6.1-research-retirement`.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
 - Current public application: the independent AI financing site owns financing cards and accepted weekly/monthly reports. WaveSight keeps the internal Data Center and Trend Radar; Guanlan Research is retired.
-- Current backend: Dashboard / operations console.
+- Current backend: `OPS-V3.0.0-unified-platform`, shared by the Data Center, Funding Portal, Mini Program, H5 and community membership. Six modules; issue/task UI retired with production records preserved. Integration/local settings and cross-platform Skill sync are documented in `docs/operations-console.md`; source baselines must not be represented as verified deployments.
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.1-24-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
@@ -25,7 +25,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current funding taxonomy projection uses reviewed event decisions and evidence-backed event/entity classification assertions under `TAG-V4.1`; current counts are owned by the generated taxonomy review and consistency-gate reports rather than this handoff.
 - Current private-evidence counts are owned by the latest private-evidence gate rather than this handoff; the public repository contains locators only.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
-- Current Skill governance: Skill Store `v2.1.0`, preserving all 23 active governed Skills certified against `GPT-5.6-SKILL-V1.0`. Content registrations, AIP project Skills, and latest plugin caches are separate inventory, not extra certifications or global installations. Use `npm run check:skill-ops` for the read-only release gate and `npm run build:skill-store-dashboard` to refresh available local sources.
+- Current Skill governance: Skill Store `v2.2.0`, preserving all 23 active governed Skills certified against `GPT-5.6-SKILL-V1.0`. Content registrations, AIP project Skills, and latest plugin caches are separate inventory, not extra certifications or global installations. Use `npm run check:skill-ops` for the read-only release gate and `npm run build:skill-store-dashboard` to refresh available local sources.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 
 ## Current Entries

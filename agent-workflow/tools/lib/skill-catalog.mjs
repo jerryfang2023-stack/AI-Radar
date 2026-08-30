@@ -42,14 +42,14 @@ export function catalogConfig(projectSkillDir) {
   return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : { registrations: [], projectSources: [] };
 }
 
-export function catalogSources(config, { homeDir = os.homedir(), pluginCacheDir = process.env.GUANLAN_PLUGIN_CACHE || path.join(homeDir, ".codex", "plugins", "cache"), env = process.env } = {}) {
+export function catalogSources(config, { rootDir = process.cwd(), homeDir = os.homedir(), pluginCacheDir = process.env.GUANLAN_PLUGIN_CACHE || path.join(homeDir, ".codex", "plugins", "cache"), env = process.env } = {}) {
   const entries = [];
   const sources = [];
   for (const source of config.projectSources || []) {
-    const base = env[source.environment] || path.join(homeDir, source.homeRelativePath);
+    const base = env[source.environment] || (source.rootRelativePath ? path.join(rootDir, source.rootRelativePath) : path.join(homeDir, source.homeRelativePath));
     const names = skillDirectories(base);
-    sources.push({ id: source.id, label: source.label, available: fs.existsSync(base), count: names.length });
-    for (const name of names) entries.push({ name, dir: path.join(base, name), sourceKind: "external-project", sourceLabel: source.label, sourcePath: `${source.id}/${name}`, category: source.category, sourceVersion: "" });
+    sources.push({ id: source.id, label: source.label, available: fs.existsSync(base), count: names.length, platformId: source.platformId || "shared", required: source.required !== false });
+    for (const name of names) entries.push({ name, dir: path.join(base, name), sourceKind: "external-project", sourceLabel: source.label, sourcePath: `${source.id}/${name}`, category: source.category, sourceVersion: "", platformId: source.platformId || "shared" });
   }
   if (config.includePluginCache) {
     // Cached != installed or enabled. One latest cached version per marketplace/plugin.
@@ -74,4 +74,20 @@ export function catalogSources(config, { homeDir = os.homedir(), pluginCacheDir 
     sources.push({ id: "plugin-cache", label: "插件缓存（不代表当前启用）", available: fs.existsSync(pluginCacheDir), count: entries.filter((entry) => entry.sourceKind === "plugin-cache").length });
   }
   return { entries, sources };
+}
+
+export function skillPlatformIds(config, name, external) {
+  if (external?.platformId) return [external.platformId];
+  const ids = (config.platforms || []).filter((platform) => platform.skillNames?.includes(name)).map((platform) => platform.id);
+  return ids.length ? ids : ["shared"];
+}
+
+export function platformCoverage(config, skills, sources) {
+  return (config.platforms || []).map((platform) => ({
+    id: platform.id, label: platform.label,
+    count: skills.filter((skill) => skill.platformIds?.includes(platform.id)).length,
+    sharedCount: skills.filter((skill) => skill.platformIds?.includes(platform.id) && skill.sourceKind !== "external-project").length,
+    projectCount: skills.filter((skill) => skill.platformIds?.includes(platform.id) && skill.sourceKind === "external-project").length,
+    sources: sources.filter((source) => source.platformId === platform.id),
+  }));
 }

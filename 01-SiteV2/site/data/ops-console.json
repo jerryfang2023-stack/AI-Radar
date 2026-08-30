@@ -1,7 +1,525 @@
 {
+  "portfolio": {
+    "platforms": [
+      {
+        "id": "data-center",
+        "label": "观澜数据中心",
+        "scope": "事实资产、采集与质量",
+        "url": "data-center.html",
+        "versionKey": "DATA-CENTER",
+        "version": {
+          "key": "DATA-CENTER",
+          "label": "数据中心 Git 基线",
+          "value": "GUANLAN-DATA-CENTER-V4.8.1-internal-foundation",
+          "category": "数据中心",
+          "source": "context/version-ledger.md",
+          "status": "仓库基线",
+          "kind": "source",
+          "checkedAt": ""
+        },
+        "analytics": "业务统计待接入"
+      },
+      {
+        "id": "funding",
+        "label": "观澜融资情报站",
+        "scope": "融资内容、访问与转化",
+        "url": "https://www.zkdlj.vip/",
+        "versionKey": "FUNDING",
+        "version": {
+          "key": "FUNDING",
+          "label": "AI 融资站",
+          "category": "融资产品",
+          "value": "FUNDING-PORTAL-V2.8.4",
+          "source": "https://www.zkdlj.vip/version.json",
+          "status": "公开端点已核验",
+          "kind": "deployed",
+          "checkedAt": "2026-08-30T13:08:19.459Z",
+          "attemptedAt": "2026-08-30T13:08:19.459Z",
+          "verified": true
+        },
+        "analytics": "聚合统计已接入"
+      },
+      {
+        "id": "miniprogram",
+        "label": "观澜小程序",
+        "scope": "微信原生应用、内容与权益",
+        "url": "",
+        "versionKey": "MINIPROGRAM",
+        "version": {
+          "key": "MINIPROGRAM",
+          "label": "微信小程序",
+          "category": "融资产品",
+          "value": "0.9.0",
+          "source": "02-Miniprogram/package.json",
+          "status": "源码版本 · 微信线上待核验",
+          "kind": "source",
+          "checkedAt": ""
+        },
+        "analytics": "聚合统计已接入"
+      },
+      {
+        "id": "h5",
+        "label": "融资 H5",
+        "scope": "移动端融资产品原型",
+        "url": "",
+        "versionKey": "H5",
+        "version": {
+          "key": "H5",
+          "label": "融资 H5 原型",
+          "category": "融资产品",
+          "value": "0.2.0",
+          "source": "03-H5/package.json",
+          "status": "源码版本 · 部署待接入",
+          "kind": "source",
+          "checkedAt": ""
+        },
+        "analytics": "业务统计待接入"
+      },
+      {
+        "id": "community",
+        "label": "社群与会员",
+        "scope": "会员服务、申请页与分享内容",
+        "url": "https://members.zkdlj.vip/",
+        "versionKey": "MEMBERS",
+        "version": {
+          "key": "MEMBERS",
+          "label": "社群会员服务",
+          "category": "社群与会员",
+          "value": "1.6.13",
+          "source": "https://members.zkdlj.vip/healthz",
+          "status": "公开端点已核验",
+          "kind": "deployed",
+          "checkedAt": "2026-08-30T13:08:19.606Z",
+          "attemptedAt": "2026-08-30T13:08:19.606Z",
+          "verified": true
+        },
+        "analytics": "业务统计待接入"
+      }
+    ],
+    "versions": [
+      {
+        "key": "DATA-CENTER",
+        "label": "数据中心 Git 基线",
+        "value": "GUANLAN-DATA-CENTER-V4.8.1-internal-foundation",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "SITE",
+        "label": "兼容站点外壳",
+        "value": "SITE-V4.6.1-research-retirement",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "OPS",
+        "label": "整体运营后台",
+        "value": "OPS-V3.0.0-unified-platform",
+        "category": "运营与规则",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "BSIG",
+        "label": "商业信号生产链路",
+        "value": "BSIG-V2.2.0-pipeline-stage-ownership",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "TAG",
+        "label": "分类与标签",
+        "value": "TAG-V4.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "FLV",
+        "label": "一线观点",
+        "value": "FLV-V1.1.0-history-backfill",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "CINT",
+        "label": "社群情报",
+        "value": "CINT-V1.0.2-publication-waiting-gate",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "FDE",
+        "label": "企业 AI / FDE 数据",
+        "value": "FDE-V2.0",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "HARDWARE",
+        "label": "AI 硬件数据",
+        "value": "HARDWARE-V1.0",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "REPORTS",
+        "label": "融资报告发布",
+        "value": "REPORTS-V1.3.0-funding-portal",
+        "category": "融资产品",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "OMAP",
+        "label": "机会地图",
+        "value": "OMAP-V2.0.0-v4-evidence",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "TRADAR",
+        "label": "变化雷达",
+        "value": "TRADAR-V1.1.0-tag-v4-1",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "RAW",
+        "label": "原始数据契约",
+        "value": "RAW-V4.0",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "EVENT",
+        "label": "规范事件契约",
+        "value": "EVENT-V1.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "ENTITY",
+        "label": "实体历史契约",
+        "value": "ENTITY-V1.0",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "PERSON",
+        "label": "人物审核契约",
+        "value": "PERSON-REVIEW-V1.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "RELATION",
+        "label": "事实关系契约",
+        "value": "RELATION-V2.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "BACKFILL",
+        "label": "历史采集契约",
+        "value": "BACKFILL-V1.0",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "SKILL",
+        "label": "Skill Store",
+        "value": "v2.2.0 Cross-platform Skill catalog",
+        "category": "运营与规则",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "FUNDING",
+        "label": "AI 融资站",
+        "category": "融资产品",
+        "value": "FUNDING-PORTAL-V2.8.4",
+        "source": "https://www.zkdlj.vip/version.json",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-08-30T13:08:19.459Z",
+        "attemptedAt": "2026-08-30T13:08:19.459Z",
+        "verified": true
+      },
+      {
+        "key": "FUNDING-DATA",
+        "label": "融资数据",
+        "category": "融资产品",
+        "value": "FUNDING-INSIGHT-V1.5.0-china-market",
+        "source": "https://www.zkdlj.vip/version.json",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-08-30T13:08:19.459Z",
+        "attemptedAt": "2026-08-30T13:08:19.459Z",
+        "verified": true
+      },
+      {
+        "key": "MINIPROGRAM",
+        "label": "微信小程序",
+        "category": "融资产品",
+        "value": "0.9.0",
+        "source": "02-Miniprogram/package.json",
+        "status": "源码版本 · 微信线上待核验",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "H5",
+        "label": "融资 H5 原型",
+        "category": "融资产品",
+        "value": "0.2.0",
+        "source": "03-H5/package.json",
+        "status": "源码版本 · 部署待接入",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "MEMBERS",
+        "label": "社群会员服务",
+        "category": "社群与会员",
+        "value": "1.6.13",
+        "source": "https://members.zkdlj.vip/healthz",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-08-30T13:08:19.606Z",
+        "attemptedAt": "2026-08-30T13:08:19.606Z",
+        "verified": true
+      },
+      {
+        "key": "MEMBERS-H5",
+        "label": "社群申请 H5 / PC",
+        "category": "社群与会员",
+        "value": "4.6.1",
+        "source": "https://members.zkdlj.vip/healthz",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-08-30T13:08:19.606Z",
+        "attemptedAt": "2026-08-30T13:08:19.606Z",
+        "verified": true
+      }
+    ],
+    "skills": {
+      "total": 282,
+      "generatedAt": "2026-08-30 21:18:46",
+      "sources": [
+        {
+          "id": "AIP/.agents/skills",
+          "label": "AIP 内容 OS",
+          "available": true,
+          "count": 16,
+          "platformId": "aip",
+          "required": true
+        },
+        {
+          "id": "Funding-Portal/.agents/skills",
+          "label": "融资站项目",
+          "available": false,
+          "count": 0,
+          "platformId": "funding",
+          "required": false
+        },
+        {
+          "id": "Miniprogram/.agents/skills",
+          "label": "小程序项目",
+          "available": false,
+          "count": 0,
+          "platformId": "miniprogram",
+          "required": false
+        },
+        {
+          "id": "H5/.agents/skills",
+          "label": "融资 H5 项目",
+          "available": false,
+          "count": 0,
+          "platformId": "h5",
+          "required": false
+        },
+        {
+          "id": "Members/.agents/skills",
+          "label": "社群会员项目",
+          "available": false,
+          "count": 0,
+          "platformId": "community",
+          "required": false
+        },
+        {
+          "id": "plugin-cache",
+          "label": "插件缓存（不代表当前启用）",
+          "available": true,
+          "count": 101
+        }
+      ],
+      "platforms": [
+        {
+          "id": "data-center",
+          "label": "数据中心",
+          "count": 14,
+          "sharedCount": 14,
+          "projectCount": 0,
+          "sources": []
+        },
+        {
+          "id": "funding",
+          "label": "融资情报站",
+          "count": 5,
+          "sharedCount": 5,
+          "projectCount": 0,
+          "sources": [
+            {
+              "id": "Funding-Portal/.agents/skills",
+              "label": "融资站项目",
+              "available": false,
+              "count": 0,
+              "platformId": "funding",
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "miniprogram",
+          "label": "小程序",
+          "count": 2,
+          "sharedCount": 2,
+          "projectCount": 0,
+          "sources": [
+            {
+              "id": "Miniprogram/.agents/skills",
+              "label": "小程序项目",
+              "available": false,
+              "count": 0,
+              "platformId": "miniprogram",
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "h5",
+          "label": "融资 H5",
+          "count": 2,
+          "sharedCount": 2,
+          "projectCount": 0,
+          "sources": [
+            {
+              "id": "H5/.agents/skills",
+              "label": "融资 H5 项目",
+              "available": false,
+              "count": 0,
+              "platformId": "h5",
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "community",
+          "label": "社群会员",
+          "count": 5,
+          "sharedCount": 5,
+          "projectCount": 0,
+          "sources": [
+            {
+              "id": "Members/.agents/skills",
+              "label": "社群会员项目",
+              "available": false,
+              "count": 0,
+              "platformId": "community",
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "aip",
+          "label": "AIP 内容 OS",
+          "count": 16,
+          "sharedCount": 0,
+          "projectCount": 16,
+          "sources": [
+            {
+              "id": "AIP/.agents/skills",
+              "label": "AIP 内容 OS",
+              "available": true,
+              "count": 16,
+              "platformId": "aip",
+              "required": true
+            }
+          ]
+        },
+        {
+          "id": "shared",
+          "label": "通用 / 未分配",
+          "count": 241,
+          "sharedCount": 241,
+          "projectCount": 0,
+          "sources": []
+        }
+      ]
+    },
+    "analytics": {
+      "url": "https://www.zkdlj.vip/api/v1/analytics/summary",
+      "scope": "融资站与小程序的匿名聚合；不包含社群会员明细"
+    },
+    "sourceBaseline": "SITE-V4.6.1-research-retirement"
+  },
   "meta": {
-    "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-30T01:31:33.780Z",
+    "version": "OPS-V3.0.0-unified-platform",
+    "generatedAt": "2026-08-30T13:25:11.690Z",
     "date": "2026-08-30",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -17,12 +535,8 @@
       "label": "总览"
     },
     {
-      "id": "issues",
-      "label": "问题中心"
-    },
-    {
-      "id": "tasks",
-      "label": "任务链路"
+      "id": "analytics",
+      "label": "运营统计"
     },
     {
       "id": "quality",
@@ -1023,7 +1537,7 @@
           "rejected": 0,
           "pending_claims": 11,
           "canonical_events": 30,
-          "entities": 44,
+          "entities": 45,
           "relationships": 84,
           "conflicts": 0,
           "qa_queue": 216
@@ -1067,7 +1581,7 @@
       "captured": 244,
       "claims": 84,
       "events": 30,
-      "entities": 44,
+      "entities": 45,
       "relationships": 84
     },
     "sync": [
@@ -1089,7 +1603,7 @@
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-30T01:31:33.730Z"
+        "detail": "2026-08-30T05:57:44.424Z"
       },
       {
         "label": "Daily Supervision",
@@ -1102,9 +1616,9 @@
     "telemetry": {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
-        "ops_version": "OPS-V2.0.0-v4-telemetry",
+        "ops_version": "OPS-V3.0.0-unified-platform",
         "data_date": "2026-08-30",
-        "generated_at": "2026-08-30T01:31:33.688Z",
+        "generated_at": "2026-08-30T05:57:44.280Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -1123,7 +1637,7 @@
         "rejected": 0,
         "pending_claims": 11,
         "canonical_events": 30,
-        "entities": 44,
+        "entities": 45,
         "relationships": 84,
         "conflicts": 0,
         "qa_queue": 216,
@@ -1162,8 +1676,8 @@
       }
     },
     "pipelineMeta": {
-      "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-30T01:31:33.730Z",
+      "version": "OPS-V3.0.0-unified-platform",
+      "generatedAt": "2026-08-30T05:57:44.424Z",
       "dateRange": {
         "start": "2026-08-24",
         "end": "2026-08-30"
@@ -1179,7 +1693,7 @@
       "captured": 244,
       "claims": 84,
       "events": 30,
-      "entities": 44,
+      "entities": 45,
       "relationships": 84,
       "conflicts": 0,
       "qaQueue": 216,
@@ -1198,7 +1712,7 @@
         "rejected": 0,
         "pending_claims": 11,
         "canonical_events": 30,
-        "entities": 44,
+        "entities": 45,
         "relationships": 84,
         "conflicts": 0,
         "qa_queue": 216,
@@ -1225,7 +1739,7 @@
       "captured": 1739,
       "claims": 639,
       "events": 254,
-      "entities": 361,
+      "entities": 362,
       "relationships": 639,
       "conflicts": 0,
       "qaQueue": 1495
@@ -1239,7 +1753,7 @@
         "captured": 244,
         "claims": 84,
         "events": 30,
-        "entities": 44,
+        "entities": 45,
         "relationships": 84,
         "conflicts": 0,
         "qaQueue": 216
@@ -1324,7 +1838,7 @@
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-08-30T01:31:33.779Z",
+      "updatedAt": "2026-08-30T13:25:11.680Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1390,106 +1904,269 @@
   "governance": {
     "versions": [
       {
+        "key": "DATA-CENTER",
+        "label": "数据中心 Git 基线",
+        "value": "GUANLAN-DATA-CENTER-V4.8.1-internal-foundation",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
         "key": "SITE",
-        "label": "Main website",
-        "value": "SITE-V4.6.1-research-retirement"
+        "label": "兼容站点外壳",
+        "value": "SITE-V4.6.1-research-retirement",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "OPS",
-        "label": "Operations backend",
-        "value": "OPS-V2.0.0-v4-telemetry"
+        "label": "整体运营后台",
+        "value": "OPS-V3.0.0-unified-platform",
+        "category": "运营与规则",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "BSIG",
-        "label": "Business Signals",
-        "value": "BSIG-V2.2.0-pipeline-stage-ownership"
+        "label": "商业信号生产链路",
+        "value": "BSIG-V2.2.0-pipeline-stage-ownership",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "TAG",
-        "label": "Tag taxonomy",
-        "value": "TAG-V4.1"
+        "label": "分类与标签",
+        "value": "TAG-V4.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "FLV",
-        "label": "First-Line Viewpoints",
-        "value": "FLV-V1.1.0-history-backfill"
+        "label": "一线观点",
+        "value": "FLV-V1.1.0-history-backfill",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "CINT",
-        "label": "Community Intelligence",
-        "value": "CINT-V1.0.2-publication-waiting-gate"
+        "label": "社群情报",
+        "value": "CINT-V1.0.2-publication-waiting-gate",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "FDE",
-        "label": "Enterprise AI / FDE data contract",
-        "value": "FDE-V2.0"
-      },
-      {
-        "key": "EAI",
-        "label": "Enterprise AI compatibility lens",
-        "value": ""
+        "label": "企业 AI / FDE 数据",
+        "value": "FDE-V2.0",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "HARDWARE",
-        "label": "AI Hardware data",
-        "value": "HARDWARE-V1.0"
+        "label": "AI 硬件数据",
+        "value": "HARDWARE-V1.0",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "REPORTS",
-        "label": "Guanlan Research",
-        "value": "REPORTS-V1.3.0-funding-portal"
+        "label": "融资报告发布",
+        "value": "REPORTS-V1.3.0-funding-portal",
+        "category": "融资产品",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "OMAP",
-        "label": "Opportunity Map",
-        "value": "OMAP-V2.0.0-v4-evidence"
+        "label": "机会地图",
+        "value": "OMAP-V2.0.0-v4-evidence",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "TRADAR",
-        "label": "Trend Radar",
-        "value": "TRADAR-V1.1.0-tag-v4-1"
+        "label": "变化雷达",
+        "value": "TRADAR-V1.1.0-tag-v4-1",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "RAW",
-        "label": "Data Center Raw contract",
-        "value": "RAW-V4.0"
+        "label": "原始数据契约",
+        "value": "RAW-V4.0",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "EVENT",
-        "label": "Canonical event contract",
-        "value": "EVENT-V1.1"
+        "label": "规范事件契约",
+        "value": "EVENT-V1.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "ENTITY",
-        "label": "Entity history contract",
-        "value": "ENTITY-V1.0"
+        "label": "实体历史契约",
+        "value": "ENTITY-V1.0",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "PERSON",
-        "label": "Person-account review contract",
-        "value": "PERSON-REVIEW-V1.1"
+        "label": "人物审核契约",
+        "value": "PERSON-REVIEW-V1.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "RELATION",
-        "label": "Factual relationship contract",
-        "value": "RELATION-V2.1"
+        "label": "事实关系契约",
+        "value": "RELATION-V2.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "BACKFILL",
-        "label": "Targeted historical collection contract",
-        "value": "BACKFILL-V1.0"
+        "label": "历史采集契约",
+        "value": "BACKFILL-V1.0",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
       },
       {
         "key": "SKILL",
         "label": "Skill Store",
-        "value": "v2.1.0 Multi-source content catalog"
+        "value": "v2.2.0 Cross-platform Skill catalog",
+        "category": "运营与规则",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "FUNDING",
+        "label": "AI 融资站",
+        "category": "融资产品",
+        "value": "FUNDING-PORTAL-V2.8.4",
+        "source": "https://www.zkdlj.vip/version.json",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-08-30T13:08:19.459Z",
+        "attemptedAt": "2026-08-30T13:08:19.459Z",
+        "verified": true
+      },
+      {
+        "key": "FUNDING-DATA",
+        "label": "融资数据",
+        "category": "融资产品",
+        "value": "FUNDING-INSIGHT-V1.5.0-china-market",
+        "source": "https://www.zkdlj.vip/version.json",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-08-30T13:08:19.459Z",
+        "attemptedAt": "2026-08-30T13:08:19.459Z",
+        "verified": true
+      },
+      {
+        "key": "MINIPROGRAM",
+        "label": "微信小程序",
+        "category": "融资产品",
+        "value": "0.9.0",
+        "source": "02-Miniprogram/package.json",
+        "status": "源码版本 · 微信线上待核验",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "H5",
+        "label": "融资 H5 原型",
+        "category": "融资产品",
+        "value": "0.2.0",
+        "source": "03-H5/package.json",
+        "status": "源码版本 · 部署待接入",
+        "kind": "source",
+        "checkedAt": ""
+      },
+      {
+        "key": "MEMBERS",
+        "label": "社群会员服务",
+        "category": "社群与会员",
+        "value": "1.6.13",
+        "source": "https://members.zkdlj.vip/healthz",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-08-30T13:08:19.606Z",
+        "attemptedAt": "2026-08-30T13:08:19.606Z",
+        "verified": true
+      },
+      {
+        "key": "MEMBERS-H5",
+        "label": "社群申请 H5 / PC",
+        "category": "社群与会员",
+        "value": "4.6.1",
+        "source": "https://members.zkdlj.vip/healthz",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-08-30T13:08:19.606Z",
+        "attemptedAt": "2026-08-30T13:08:19.606Z",
+        "verified": true
       }
     ],
     "principles": [
-      "问题先进入问题中心，不在聊天里丢失",
-      "每个问题必须有责任链路、下一步动作和关闭证据",
-      "重复问题进入周/月复盘，不靠当天修补结束",
-      "创作相关能力从本后台剥离，后台只治理数据观察台"
+      "独立产品独立版本；源码、数据契约与线上版本分开登记",
+      "公开端点核验只代表检查时刻；小程序审核与未接入部署不推断",
+      "Skill 统一登记来源与摘要，原文归所属项目；登记不等于安装或认证",
+      "免密页面只展示允许公开的聚合；会员、账号与管理写操作继续鉴权"
     ]
   }
 }

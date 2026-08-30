@@ -1,216 +1,84 @@
 (function () {
   const root = document.querySelector("[data-ops-console]");
   if (!root) return;
-
   const ops = window.WaveSightOpsConsole || {};
   const pipeline = window.WaveSightPipelineDashboard || {};
   const quality = ops.quality || {};
-  const state = {
-    panel: location.hash ? location.hash.slice(1) : "overview",
-    railCollapsed: localStorage.getItem("wavesight-rail-collapsed") === "1",
-  };
-  const validPanels = new Set(["overview", "issues", "tasks", "quality", "analytics", "governance", "skills", "settings"]);
-
+  const portfolio = ops.portfolio || {};
   const $ = (selector, node = document) => node.querySelector(selector);
   const $$ = (selector, node = document) => Array.from(node.querySelectorAll(selector));
-  const text = (value) => value == null ? "" : String(value);
-  const html = (value) => text(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-  const pct = (value) => Number.isFinite(Number(value)) ? `${Math.round(Number(value))}%` : "-";
+  const html = (value) => String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#39;");
   const list = (value) => Array.isArray(value) ? value : [];
-
+  const pct = (value) => value != null && Number.isFinite(Number(value)) ? Math.round(Number(value)) + "%" : "—";
+  const storage = {
+    get(key) { try { return localStorage.getItem(key); } catch { return null; } },
+    set(key, value) { try { localStorage.setItem(key, value); return true; } catch { return false; } },
+  };
+  const validPanels = new Set(["overview", "analytics", "quality", "governance", "skills", "settings"]);
+  const defaults = { landing: "overview", compact: false, staleHours: 72 };
+  let preferences = { ...defaults };
+  try {
+    const saved = JSON.parse(storage.get("guanlan-ops-preferences") || "{}");
+    preferences = { landing: validPanels.has(saved.landing) ? saved.landing : defaults.landing, compact: saved.compact === true, staleHours: [24, 48, 72].includes(saved.staleHours) ? saved.staleHours : 72 };
+  } catch { /* Corrupt or unavailable storage must not prevent opening the console. */ }
+  const state = { panel: location.hash.slice(1) || preferences.landing, railCollapsed: storage.get("wavesight-rail-collapsed") === "1" };
+  const timestamp = (value) => {
+    const date = new Date(value);
+    return value && Number.isFinite(date.getTime()) ? date.toLocaleString("zh-CN", { hour12: false }) : "未记录";
+  };
+  const stale = (value) => !value || !Number.isFinite(Date.parse(value)) || Date.now() - Date.parse(value) > preferences.staleHours * 3600000;
+  const badge = (label, good = false) => '<span class="badge ' + (good ? "is-green" : "is-blue") + '">' + html(label) + "</span>";
+  const safeLink = (url, label) => /^(https:\/\/(www\.zkdlj\.vip|members\.zkdlj\.vip)\/|data-center\.html$)/u.test(url || "")
+    ? '<a href="' + html(url) + '" target="_blank" rel="noopener noreferrer">' + html(label) + ' ↗</a>' : html(label);
+  const metric = (label, value, note) => '<article class="card metric"><span class="label">' + html(label) + "</span><strong>" + html(value ?? "—") + "</strong><em>" + html(note) + "</em></article>";
+  const row = (label, value, percent) => '<div class="row"><span>' + html(label) + '</span><span class="bar"><i style="width:' + Math.max(3, Math.min(100, Number(percent) || 0)) + '%"></i></span><b>' + html(value) + "</b></div>";
+  function versionStatus(item) {
+    if (item.kind === "deployed" && stale(item.checkedAt)) return "核验已过期 · 需刷新";
+    return item.status || "未接入";
+  }
   function setPanel(id) {
     state.panel = validPanels.has(id) ? id : "overview";
     $$("[data-tab]").forEach((button) => button.setAttribute("aria-current", String(button.dataset.tab === state.panel)));
     $$("[data-panel]").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === state.panel));
-    history.replaceState(null, "", `#${state.panel}`);
+    history.replaceState(null, "", "#" + state.panel);
     if (state.panel === "analytics") $("[data-application-analytics]")?.dispatchEvent(new Event("analytics:open"));
+    if (state.panel === "skills") resizeSkillFrame();
   }
-
   function setRailCollapsed(collapsed) {
     state.railCollapsed = collapsed;
     root.classList.toggle("is-rail-collapsed", collapsed);
-    localStorage.setItem("wavesight-rail-collapsed", collapsed ? "1" : "0");
+    storage.set("wavesight-rail-collapsed", collapsed ? "1" : "0");
     const toggle = $("[data-rail-toggle]");
-    if (toggle) toggle.textContent = collapsed ? "展开" : "收起";
+    if (toggle) { toggle.textContent = collapsed ? "展开" : "收起"; toggle.setAttribute("aria-expanded", String(!collapsed)); }
   }
-
   function resizeSkillFrame(height) {
     const frame = $(".skill-frame");
     if (!frame) return;
-    const measured = Number(height) || (() => {
-      try {
-        const doc = frame.contentDocument;
-        return Math.max(doc?.body?.scrollHeight || 0, doc?.documentElement?.scrollHeight || 0);
-      } catch {
-        return 0;
-      }
-    })();
-    frame.style.height = `${Math.max(720, measured + 24)}px`;
+    let measured = Number(height) || 0;
+    if (!measured) try { measured = frame.contentDocument?.documentElement?.scrollHeight || 0; } catch { /* Isolated frame. */ }
+    frame.style.height = Math.max(720, measured + 24) + "px";
   }
-
-  function row(label, value, percent) {
-    const width = Math.max(3, Math.min(100, Number(percent) || 0));
-    return `<div class="row"><span>${html(label)}</span><span class="bar"><i style="width:${width}%"></i></span><b>${html(value)}</b></div>`;
-  }
-
-  function metric(label, value, note, extra = "") {
-    return `<article class="card metric ${extra}"><span class="label">${html(label)}</span><strong>${html(value)}</strong><em>${html(note)}</em></article>`;
-  }
-
-  function statusBadge(status) {
-    const value = text(status || "unknown");
-    const lower = value.toLowerCase();
-    const isGood = ["passed", "success", "completed", "resolved"].includes(lower);
-    const isBad = ["failed", "manual_required", "urgent", "error", "open"].includes(lower);
-    const cls = isGood ? "is-green" : isBad ? "is-red" : "is-blue";
-    const label = {
-      passed: "已通过",
-      success: "已通过",
-      completed: "已完成",
-      resolved: "已解决",
-      failed: "失败",
-      manual_required: "需人工",
-      waiting: "等待中",
-      warning: "提醒",
-      open: "未解决",
-      unknown: "未知",
-    }[lower] || value;
-    return `<span class="badge ${cls}">${html(label)}</span>`;
-  }
-
   function renderOverview() {
-    const summary = ops.daily?.issueSummary || {};
-    const status = $("[data-overview-status]");
-    if (status) {
-      status.innerHTML = [
-        metric("今日监督", ops.daily?.statusText || "未生成", ops.daily?.date || ops.meta?.date || "-", "hero-card"),
-        metric("未解决", summary.open || 0, "Hermes + 每日监督"),
-        metric("已解决", summary.resolved || 0, "保留验证和预防记录"),
-      ].join("");
-    }
-    const actions = $("[data-overview-actions]");
-    if (actions) {
-      actions.innerHTML = `<span class="label">Next Actions</span><h3>今日处理顺序</h3><div class="action-list">
-        <button type="button" data-tab="issues">看问题中心<span>发现 / 关闭 / 复盘</span></button>
-        <button type="button" data-tab="tasks">看任务链路<span>执行 / 等待 / 接管</span></button>
-        <button type="button" data-tab="governance">看版本治理<span>冻结点 / 责任边界</span></button>
-      </div>`;
-    }
-    const risks = $("[data-overview-risks]");
-    if (risks) {
-      const weekly = ops.periods?.weekly || {};
-      const monthly = ops.periods?.monthly || {};
-      const recurring = list(monthly.recurring)[0];
-      risks.innerHTML = [
-        {
-          status: ops.daily?.status,
-          value: summary.urgent || 0,
-          title: "紧急问题",
-          body: summary.urgent ? "存在需要优先接管的问题。" : "当前没有紧急问题。",
-          action: summary.urgent ? "先处理阻塞上线和数据缺失的问题。" : "继续看周/月重复问题。",
-        },
-        {
-          status: weekly.open ? "warning" : "passed",
-          value: weekly.open || 0,
-          title: "本周未关闭",
-          body: "本周仍未解决的问题越多，说明闭环不够快。",
-          action: "按责任链路处理，关闭时记录验证和预防动作。",
-        },
-        {
-          status: recurring ? "warning" : "passed",
-          value: recurring ? recurring.count : 0,
-          title: "重复问题",
-          body: recurring ? `重复类别：${recurring.category}` : "本月没有明显重复类别。",
-          action: recurring ? "沉淀为门禁、评估或自动化修复。" : "保持周/月复盘。",
-        },
-      ].map((item) => `<article class="card"><div style="display:flex;justify-content:space-between;gap:10px;align-items:center">${statusBadge(item.status)}<span class="label">PRIMARY</span></div><div style="margin-top:10px;color:var(--blue);font-family:var(--mono);font-size:24px;font-weight:700">${html(item.value)}</div><h3 style="margin-top:5px">${html(item.title)}</h3><p>${html(item.body)}</p><div class="issue-meta"><span>${html(item.action)}</span></div></article>`).join("");
-    }
-    const funnel = $("[data-overview-funnel]");
-    if (funnel) {
-      const stageLabels = {
-        collection: "采集",
-        fact_build: "事实构建",
-        application_projection: "应用投影",
-        publication: "发布",
-      };
-      const stageProgress = { passed: 100, success: 100, completed: 100, partial: 65, waiting: 45, in_progress: 55, skipped: 35, unknown: 18, failed: 12 };
-      funnel.innerHTML = list(ops.tasks?.stages).map((stage) => (
-        row(stageLabels[stage.id] || stage.label || stage.id, stage.status || "unknown", stageProgress[stage.status] ?? 18)
-      )).join("") || row("V4 telemetry", "missing", 8);
-    }
-    const queue = $("[data-work-queue]");
-    if (queue) {
-      queue.innerHTML = [
-        row("Daily Issues", summary.daily || 0, Math.min(100, (summary.daily || 0) * 18)),
-        row("Open Inbox", summary.open || 0, Math.min(100, (summary.open || 0) * 5)),
-        row("Resolved", summary.resolved || 0, Math.min(100, (summary.resolved || 0) * 6)),
-      ].join("");
-    }
-    const routing = $("[data-overview-routing]");
-    if (routing) {
-      routing.innerHTML = list(ops.tasks?.sync).slice(0, 4).map((item) => row(item.label, item.status, item.status === "passed" ? 100 : item.status === "waiting" ? 55 : 28)).join("");
-    }
-  }
-
-  function issueCard(issue) {
-    return `<article class="card issue-card">
-      <div>
-        <h3>${html(issue.title || issue.category || "未命名问题")}</h3>
-        <p>${html(issue.neededAction || issue.evidence || "暂无下一步动作")}</p>
-        <div class="issue-meta">
-          <span>${html(issue.lane || issue.laneId || "unknown")}</span>
-          <span>${html(issue.category || "uncategorized")}</span>
-          <span>${html(issue.source || "hermes")}</span>
-        </div>
-      </div>
-      <div class="issue-side">
-        ${statusBadge(issue.state === "resolved" ? "resolved" : issue.status)}
-        <span>${html(issue.date || issue.createdAt || "-")}</span>
-        <span>${html(issue.reportPath || issue.sourceFile || "")}</span>
-      </div>
-    </article>`;
-  }
-
-  function renderIssueRows(container, aggregate) {
-    if (!container) return;
-    const recurring = list(aggregate.recurring);
-    const rows = [
-      row("问题总数", aggregate.total || 0, Math.min(100, (aggregate.total || 0) * 4)),
-      row("未解决", aggregate.open || 0, Math.min(100, (aggregate.open || 0) * 7)),
-      row("已解决", aggregate.resolved || 0, Math.min(100, (aggregate.resolved || 0) * 7)),
-      row("重复类别", recurring.length, Math.min(100, recurring.length * 18)),
+    const platforms = list(portfolio.platforms);
+    const versions = list(ops.governance?.versions);
+    const sourceRows = list(quality.sourceQuality?.rows);
+    $("[data-overview-status]").innerHTML = [
+      metric("运营平台", platforms.length || null, "数据中心 / 融资站 / 小程序 / H5 / 社群"),
+      metric("最新批次事实", quality.telemetry?.factBuild?.canonical_events, ops.meta?.date || "未读取到数据批次"),
+      metric("来源质量", sourceRows.length || null, "逐来源数量、可用率与质量评分"),
+      metric("Skill 目录", portfolio.skills?.total, "登记数量 ≠ 全局启用数量"),
+    ].join("");
+    $("[data-platform-cards]").innerHTML = platforms.map((platform) => {
+      const version = platform.version || {};
+      return '<article class="card platform-card"><div class="platform-top"><span class="label">' + html(platform.id) + "</span>" + badge(versionStatus(version), version.verified && !stale(version.checkedAt)) + "</div><h2>" + html(platform.label) + "</h2><p>" + html(platform.scope) + '</p><strong class="platform-version">' + html(version.value || "未登记") + '</strong><p class="platform-note">' + html(platform.analytics) + '</p><div class="platform-bottom">' + (platform.url ? safeLink(platform.url, "打开平台") : "<span>独立客户端 / 部署待接入</span>") + '<button class="text-button" type="button" data-version-key="' + html(platform.versionKey) + '">版本详情 →</button></div></article>';
+    }).join("") || '<div class="empty">跨平台清单尚未生成，请检查系统设置中的快照状态。</div>';
+    const gaps = [
+      ["线上核验", versions.filter((item) => item.kind === "deployed" && (!item.verified || stale(item.checkedAt))).length + " 项公开版本需要重新核验；小程序审核版本、融资 H5 部署版本尚未接入。", "governance"],
+      ["统计覆盖", "融资站与小程序已接入匿名聚合。社群活跃、续费和 H5 独立埋点尚未接入，不能视为零。", "analytics"],
+      ["规则同步", list(portfolio.skills?.sources).filter((source) => source.required === false && !source.available).length + " 个平台目录尚未接入。共享规则与独立来源分开计数，完整状态见 Skill Store。", "skills"],
     ];
-    container.innerHTML = rows.join("");
-  }
-
-  function renderIssues() {
-    const summaryEl = $("[data-issue-summary]");
-    const summary = ops.daily?.issueSummary || {};
-    if (summaryEl) {
-      summaryEl.innerHTML = [
-        metric("今日问题", summary.daily || 0, ops.daily?.date || "-"),
-        metric("未解决", summary.open || 0, "需要继续处理"),
-        metric("已解决", summary.resolved || 0, "有关闭证据"),
-        metric("紧急", summary.urgent || 0, "优先接管"),
-      ].join("");
-    }
-    const dailyList = $("[data-issue-list]");
-    if (dailyList) {
-      const items = list(ops.daily?.issues);
-      dailyList.innerHTML = items.length ? items.map(issueCard).join("") : `<div class="empty">今日监督没有发现问题。</div>`;
-    }
-    renderIssueRows($("[data-weekly-issues]"), ops.periods?.weekly || {});
-    renderIssueRows($("[data-monthly-issues]"), ops.periods?.monthly || {});
-    const resolved = $("[data-resolved-issues]");
-    if (resolved) {
-      const items = list(ops.inbox?.resolved).slice(0, 8);
-      resolved.innerHTML = items.length ? items.map(issueCard).join("") : `<div class="empty">还没有读取到已解决问题单。</div>`;
-    }
+    $("[data-coverage-gaps]").innerHTML = gaps.map(([title, detail, panel]) => '<article class="card"><h3>' + html(title) + "</h3><p>" + html(detail) + '</p><button class="text-button" type="button" data-tab="' + panel + '">查看详情 →</button></article>').join("");
+    $("[data-overview-stamp]").textContent = "后台快照 " + timestamp(ops.meta?.generatedAt) + " · " + (stale(ops.meta?.generatedAt) ? "已超过本机时效阈值" : "在本机时效阈值内") + "；并非实时在线监控";
   }
 
   function renderDashboard() {
@@ -269,79 +137,68 @@
     }
   }
 
-  function renderTasks() {
-    const lanes = $("[data-task-lanes]");
-    if (lanes) {
-      const items = list(ops.tasks?.lanes);
-      const stages = list(ops.tasks?.stages);
-      const stageCards = stages.map((stage) => {
-        const counts = Object.entries(stage.counts || {})
-          .map(([key, value]) => `<span>${html(key)} ${html(value)}</span>`)
-          .join("");
-        return `<article class="card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center">${statusBadge(stage.status)}<span class="label">OPS STAGE</span></div><h2 style="margin-top:10px">${html(stage.label || stage.id)}</h2><p>${html(stage.id)}</p><div class="tag-cloud" style="margin-top:12px">${counts || "<span>no metrics</span>"}</div></article>`;
-      }).join("");
-      const laneCards = items.map((lane) => {
-        const evidence = list(lane.evidence).map((item) => row(item.label, item.value, Math.min(100, Number(item.value) || 0))).join("");
-        const action = list(lane.actions)[0] || "暂无人工动作";
-        return `<article class="card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center">${statusBadge(lane.status)}<span class="label">${html(lane.id)}</span></div><h2 style="margin-top:10px">${html(lane.label)}</h2><p>${html(lane.schedule)}</p><div class="rows">${evidence || row("Evidence", "-", 3)}</div><div class="issue-meta"><span>问题 ${html(lane.problemCount || 0)}</span><span>提醒 ${html(lane.warningCount || 0)}</span><span>${html(action)}</span></div></article>`;
-      }).join("");
-      lanes.innerHTML = stageCards || laneCards ? `${stageCards}${laneCards}` : `<div class="empty">未读取到任务链路数据。</div>`;
-    }
-    const sync = $("[data-sync-status]");
-    if (sync) {
-      const items = list(ops.tasks?.sync);
-      sync.innerHTML = items.map((item) => `<article class="card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center">${statusBadge(item.status)}<span class="label">SYNC</span></div><h2 style="margin-top:10px">${html(item.label)}</h2><p>${html(item.detail)}</p></article>`).join("");
-    }
-  }
 
+  function renderProduction() {
+    const labels = { collection: "采集", fact_build: "事实构建", application_projection: "应用投影", publication: "发布" };
+    $("[data-production-stages]").innerHTML = list(ops.tasks?.stages).map((stage) => '<article class="card"><span class="label">' + html(stage.id) + '</span><h3>' + html(labels[stage.id] || stage.label) + '</h3>' + badge(stage.status || "unknown", ["passed", "success", "completed"].includes(stage.status)) + '</article>').join("") || '<div class="empty">尚无生产阶段遥测。</div>';
+  }
   function renderGovernance() {
-    const versions = $("[data-version-cards]");
-    if (versions) {
-      versions.innerHTML = list(ops.governance?.versions).map((item) => `<article class="card"><span class="label">${html(item.key)}</span><h2>${html(item.value || "-")}</h2><p>${html(item.label)}</p></article>`).join("");
-    }
-    const principles = $("[data-governance-principles]");
-    if (principles) {
-      principles.innerHTML = list(ops.governance?.principles).map((item, index) => `<article class="card"><span class="label">Rule ${index + 1}</span><h2>${html(item)}</h2></article>`).join("");
-    }
+    const versions = list(ops.governance?.versions);
+    const category = $("[data-version-category]").value;
+    const query = $("[data-version-search]").value.trim().toLowerCase();
+    const filtered = versions.filter((item) => (!category || item.category === category) && (!query || [item.key, item.label, item.value, item.source].join(" ").toLowerCase().includes(query)));
+    $("[data-version-count]").textContent = filtered.length + " / " + versions.length + " 项；源码与线上核验独立标注";
+    $("[data-version-cards]").innerHTML = filtered.map((item) => '<article class="card version-card"><div class="platform-top"><span class="label">' + html(item.category + " / " + item.key) + "</span>" + badge(versionStatus(item), item.verified && !stale(item.checkedAt)) + "</div><h3>" + html(item.label) + '</h3><strong class="platform-version">' + html(item.value || "未登记") + '</strong><p class="version-source">来源：' + safeLink(item.source, item.source) + "</p><p>上次核验：" + (item.kind === "source" ? "仓库构建时读取 · 非线上证明" : timestamp(item.checkedAt)) + "</p></article>").join("") || '<div class="empty">没有匹配的版本，请调整分类或搜索词。</div>';
+    $("[data-governance-principles]").innerHTML = list(ops.governance?.principles).map((item) => '<li>' + html(item) + '</li>').join("");
   }
-
   function renderSettings() {
-    const dataStatus = $("[data-data-status]");
-    if (!dataStatus) return;
-    dataStatus.classList.add("data-status-list");
-    const sources = list(ops.meta?.sources);
-    dataStatus.innerHTML = [
-      ["ops-console", ops.meta?.version || "OPS-V2.0.0-v4-telemetry"],
-      ["generated", ops.meta?.generatedAt || "-"],
-      ["date", ops.meta?.date || "-"],
-      ["pipeline", quality.pipelineMeta?.generatedAt || pipeline.meta?.generatedAt || "-"],
-      ["sources", sources.join(" / ") || "-"],
-    ].map(([label, value]) => `<div class="data-status-item"><span>${html(label)}</span><b>${html(value)}</b></div>`).join("");
+    const rows = [
+      ["后台快照", timestamp(ops.meta?.generatedAt), "随仓库构建与 Pages 发布更新"],
+      ["数据质量批次", ops.meta?.date || "未接入", "V4 逐来源采集与事实构建快照"],
+      ["Skill 同步", timestamp(portfolio.skills?.generatedAt), "本地构建扫描已登记平台目录，发布后可见；网页不安装 Skill"],
+      ["运营聚合 API", portfolio.analytics?.url || "未接入", portfolio.analytics?.scope || ""],
+      ...list(portfolio.platforms).filter((item) => item.version?.kind === "deployed").map((item) => [item.label, item.version.source, versionStatus(item.version) + " · " + timestamp(item.version.checkedAt)]),
+    ];
+    $("[data-data-status]").innerHTML = rows.map(([label, value, detail]) => '<div class="data-status-item"><span>' + html(label) + '</span><div><b>' + safeLink(value, value) + '</b><p>' + html(detail) + '</p></div></div>').join("");
+    $("[data-setting-landing]").value = preferences.landing;
+    $("[data-setting-compact]").checked = preferences.compact;
+    $("[data-setting-stale]").value = String(preferences.staleHours);
+    root.classList.toggle("is-compact", preferences.compact);
   }
-
-  function renderAll() {
-    renderOverview();
-    renderIssues();
-    renderDashboard();
-    renderTasks();
-    renderGovernance();
-    renderSettings();
-    setRailCollapsed(state.railCollapsed);
-    setPanel(state.panel);
-    resizeSkillFrame();
-  }
-
   root.addEventListener("click", (event) => {
     const tab = event.target.closest("[data-tab]");
     if (tab) setPanel(tab.dataset.tab);
-    const railToggle = event.target.closest("[data-rail-toggle]");
-    if (railToggle) setRailCollapsed(!state.railCollapsed);
+    if (event.target.closest("[data-rail-toggle]")) setRailCollapsed(!state.railCollapsed);
+    const version = event.target.closest("[data-version-key]");
+    if (version) {
+      $("[data-version-category]").value = "";
+      $("[data-version-search]").value = version.dataset.versionKey;
+      renderGovernance();
+      setPanel("governance");
+    }
+    if (event.target.closest("[data-reload-snapshot]")) location.reload();
+    if (event.target.closest("[data-reset-preferences]")) {
+      preferences = { ...defaults };
+      const saved = storage.set("guanlan-ops-preferences", JSON.stringify(preferences));
+      renderSettings(); renderOverview(); renderGovernance();
+      $("[data-setting-status]").textContent = saved ? "已恢复本机默认设置。" : "已临时恢复；浏览器不允许保存设置。";
+    }
   });
+  $("[data-preferences-form]").addEventListener("submit", (event) => {
+    event.preventDefault();
+    preferences = { landing: $("[data-setting-landing]").value, compact: $("[data-setting-compact]").checked, staleHours: Number($("[data-setting-stale]").value) };
+    const saved = storage.set("guanlan-ops-preferences", JSON.stringify(preferences));
+    renderSettings(); renderOverview(); renderGovernance();
+    $("[data-setting-status]").textContent = saved ? "已保存，仅对本机浏览器生效。" : "已临时应用；浏览器不允许保存设置。";
+  });
+  $("[data-version-category]").addEventListener("change", renderGovernance);
+  $("[data-version-search]").addEventListener("input", renderGovernance);
   $(".skill-frame")?.addEventListener("load", () => resizeSkillFrame());
   window.addEventListener("message", (event) => {
-    if (event.data?.type === "wavesight-skill-store-height") resizeSkillFrame(event.data.height);
+    if (event.origin === location.origin && event.source === $(".skill-frame")?.contentWindow && event.data?.type === "wavesight-skill-store-height") resizeSkillFrame(event.data.height);
   });
-  window.addEventListener("hashchange", () => setPanel(location.hash ? location.hash.slice(1) : "overview"));
-
-  renderAll();
+  window.addEventListener("hashchange", () => setPanel(location.hash.slice(1) || preferences.landing));
+  renderOverview(); renderDashboard(); renderProduction(); renderGovernance(); renderSettings();
+  setRailCollapsed(state.railCollapsed);
+  setPanel(state.panel);
 })();

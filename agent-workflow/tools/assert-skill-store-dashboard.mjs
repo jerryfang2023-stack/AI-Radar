@@ -9,7 +9,7 @@ import {
   readGovernedSkills,
   ruleDigest,
 } from "./lib/guanlan-skill-ops.mjs";
-import { catalogConfig, catalogSources, skillDirectories, skillSummary } from "./lib/skill-catalog.mjs";
+import { catalogConfig, catalogSources, skillDirectories, skillSummary, skillPlatformIds, platformCoverage } from "./lib/skill-catalog.mjs";
 
 const PREFIX = "window.WaveSightLocalSkillStore = ";
 
@@ -149,6 +149,14 @@ export function evaluateSkillStoreDashboard(paths = dashboardContractPaths(), op
     const row = dashboardSkills.get(registration.name);
     if (!row?.catalogRegistered) errors.push(`dashboard missing content registration ${registration.name}`);
   }
+  if (catalog.platforms?.length) {
+    const ids = new Set(catalog.platforms.map((platform) => platform.id));
+    for (const skill of skills) {
+      if (!skill.platformIds?.length || skill.platformIds.some((id) => !ids.has(id))) errors.push(`${skill.name} platform mapping is missing or invalid`);
+      if (skill.sourceKind !== "external-project" && JSON.stringify(skill.platformIds) !== JSON.stringify(skillPlatformIds(catalog, skill.name))) errors.push(`${skill.name} platform mapping is stale`);
+    }
+    if (JSON.stringify(payload.meta?.platformCoverage) !== JSON.stringify(platformCoverage(catalog, skills, payload.meta?.catalogSources || []))) errors.push("platform coverage counts are stale");
+  }
   // CI may not have local/external sources. Check freshness wherever the source is present.
   const checkDescription = (name, dir) => {
     const expected = skillSummary(fs.readFileSync(path.join(dir, "SKILL.md"), "utf8")).description || "";
@@ -168,6 +176,7 @@ export function evaluateSkillStoreDashboard(paths = dashboardContractPaths(), op
     const name = localNames.has(entry.name) ? `${entry.sourceKind}:${entry.name}` : entry.name;
     checkDescription(name, entry.dir);
     const row = dashboardSkills.get(name);
+    if (catalog.platforms?.length && row && JSON.stringify(row.platformIds) !== JSON.stringify(skillPlatformIds(catalog, name, entry))) errors.push(`${name} source platform mapping is stale`);
     if (row && (row.sourcePath !== entry.sourcePath || row.sourceVersion !== entry.sourceVersion)) errors.push(`${name} source location/version is stale`);
   }
 
