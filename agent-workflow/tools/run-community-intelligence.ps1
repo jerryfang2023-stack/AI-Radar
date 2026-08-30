@@ -179,11 +179,11 @@ function Invoke-NpmStep {
   foreach ($line in $output) {
     Write-LogLine ("[$Name] " + $line)
   }
+  $detail = $output -join "`n"
+  if ($detail -match "COMMUNITY_LOGIN_REQUIRED") {
+    throw ('COMMUNITY_LOGIN_REQUIRED: login expired. Open the dedicated Community Intelligence Chrome profile, complete login/QR verification, then rerun the local task.')
+  }
   if ($exitCode -ne 0) {
-    $detail = $output -join "`n"
-    if ($detail -match "COMMUNITY_LOGIN_REQUIRED") {
-      throw ('COMMUNITY_LOGIN_REQUIRED: login expired. Open the dedicated Community Intelligence Chrome profile, complete login/QR verification, then rerun the local task.')
-    }
     throw ($Name + ' failed with exit code ' + $exitCode + ".`n" + $detail)
   }
 }

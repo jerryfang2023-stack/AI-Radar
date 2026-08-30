@@ -1,36 +1,45 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T09:38:02.150Z",
-  "date": "2026-08-23",
-  "action": "Repair Community Intelligence supervision waiting classification",
-  "action_status": "unregistered",
+  "generated_at": "2026-08-30T01:55:22.508Z",
+  "date": "2026-08-30",
+  "action": "Repair Community Intelligence login-stage recovery",
+  "action_status": "current",
   "record_level": "required",
   "trigger": "codex_self_repair",
   "status": "success",
-  "summary": "Deferred stale-data and missing-publication failures while a same-date Community scheduled task is queued or running; retained failure behavior for stale task state.",
-  "contexts": [],
+  "summary": "Fail fast when the local collector reports expired authentication and block downstream publication escalation until the same-date community gate is healthy.",
+  "contexts": [
+    "context/08-automation.md",
+    "agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md",
+    "2026-08-30 daily supervision and community gate"
+  ],
   "changed_files": [
+    "agent-workflow/tools/run-community-intelligence.ps1",
     "agent-workflow/tools/write-daily-supervision-report.mjs",
+    "agent-workflow/tools/tests/daily-automation-runtime.test.mjs",
     "agent-workflow/tools/tests/daily-supervision-community-stages.test.mjs"
   ],
   "outputs": [],
   "checks": [
-    "node --check agent-workflow/tools/write-daily-supervision-report.mjs",
-    "node --test daily supervision community/business/follow-builders tests",
-    "live daily supervision readback from accepted origin/main snapshot"
+    "25 focused Node tests passed",
+    "JavaScript syntax passed",
+    "PowerShell syntax passed",
+    "git diff --check passed"
   ],
   "issues": [
-    "Daily Closure started Codex repair one minute after the bounded Community recovery began."
+    "Collector emitted COMMUNITY_LOGIN_REQUIRED with exit zero, so the wrapper continued to the failed gate and retried unattended",
+    "Supervision reported missing publication while the upstream local gate was blocked"
   ],
   "risks": [
-    "A genuinely hung same-date task remains waiting until Task Scheduler exits; later supervision still observes its state."
+    "Human QR/login renewal and one owning local collector rerun remain required for 2026-08-30 data publication"
   ],
   "lessons": [
-    "In-flight same-date lane work is an upstream waiting condition",
-    "so stale downstream artifacts are not yet failures."
+    "Collector semantic failure markers must outrank process exit codes",
+    "Downstream publication cannot be missing until upstream data is publishable"
   ],
   "reusable_rules": [
-    "Do not run stale-data gates or declare publication missing while the responsible same-date Community task is queued or running."
+    "Stop Community Intelligence retries immediately on COMMUNITY_LOGIN_REQUIRED",
+    "Only escalate missing publication after healthy same-date data and gate"
   ],
   "retired_flags": [],
   "notes": []
