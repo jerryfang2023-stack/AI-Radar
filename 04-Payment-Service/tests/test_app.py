@@ -428,7 +428,42 @@ def test_analytics_events_are_anonymous_idempotent_and_aggregated(client):
     assert stored == ("https://example.com/source", '{"source":"test"}')
 
 
-def test_analytics_summary_uses_server_truth_for_registration_and_payment(client):
+def test_passwordless_analytics_is_aggregate_only_and_keeps_admin_protected(client):
+    tracked = client.post("/api/v1/analytics/events", json={"events": [analytics_event(
+        page="/pages/terminal/index?phone=13800138000#openid-secret",
+        properties={"phoneNumber": "13800138000", "openId": "openid-secret"},
+    )]})
+    assert tracked.status_code == 200
+    origin = "https://jerryfang2023-stack.github.io"
+    response = client.get("/api/v1/analytics/summary?days=7", headers={"Origin": origin})
+    assert response.status_code == 200
+    assert response.headers["Access-Control-Allow-Origin"] == origin
+    assert response.headers["Access-Control-Allow-Methods"] == "GET, OPTIONS"
+    assert response.headers["Cache-Control"] == "no-store"
+    payload = response.get_json()
+    assert payload["overview"]["visitors"] == 1
+    assert payload["topPages"] == [{"page": "/pages/terminal/index", "views": 1, "visitors": 1}]
+    encoded = json.dumps(payload)
+    for private in ("13800138000", "openid-secret", "event-0001", "visitor-0001", "session-0001", "user_id", "properties_json"):
+        assert private not in encoded
+    assert client.get("/api/v1/admin/analytics/summary").status_code == 503
+    client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
+    assert client.get("/api/v1/admin/analytics/summary").status_code == 401
+    assert client.get("/api/v1/admin/analytics/summary", headers={"Authorization": "Bearer wrong"}).status_code == 401
+    assert client.get("/api/v1/member/me").status_code == 401
+    for method in ("POST", "PUT", "PATCH", "DELETE"):
+        assert client.open("/api/v1/analytics/summary", method=method).status_code == 405
+    assert client.get("/api/v1/analytics/summary?platform=invalid").status_code == 400
+    assert client.get("/api/v1/analytics/summary?days=invalid").get_json()["filters"]["days"] == 7
+    preflight = client.options("/api/v1/analytics/summary", headers={"Origin": origin})
+    assert preflight.status_code == 204
+    assert preflight.headers["Access-Control-Allow-Origin"] == origin
+    untrusted = client.get("/api/v1/analytics/summary", headers={"Origin": "https://untrusted.example"})
+    assert "Access-Control-Allow-Origin" not in untrusted.headers
+
+
+@pytest.mark.parametrize("endpoint", ["/api/v1/admin/analytics/summary", "/api/v1/analytics/summary"])
+def test_analytics_summary_uses_server_truth_for_registration_and_payment(client, endpoint):
     client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
     events = [
         analytics_event(
@@ -460,7 +495,7 @@ def test_analytics_summary_uses_server_truth_for_registration_and_payment(client
     assert paid.get_json()["order"]["status"] == "PAID"
 
     summary = client.get(
-        "/api/v1/admin/analytics/summary?days=7&platform=miniprogram",
+        f"{endpoint}?days=7&platform=miniprogram",
         headers={"Authorization": "Bearer admin-test-token"},
     ).get_json()
     assert summary["overview"]["newRegistrations"] == 1
@@ -492,7 +527,8 @@ def test_analytics_cors_allows_configured_portal_origin(client):
     assert response.headers["Access-Control-Allow-Origin"] == "https://www.zkdlj.vip"
 
 
-def test_analytics_live_cutoff_rejects_demo_history_and_scopes_server_truth(client):
+@pytest.mark.parametrize("endpoint", ["/api/v1/admin/analytics/summary", "/api/v1/analytics/summary"])
+def test_analytics_live_cutoff_rejects_demo_history_and_scopes_server_truth(client, endpoint):
     login(client, "prelaunch-user")
     cutoff = datetime.now(timezone.utc).replace(microsecond=0) + timedelta(minutes=1)
     client.application.config.update(
@@ -519,7 +555,7 @@ def test_analytics_live_cutoff_rejects_demo_history_and_scopes_server_truth(clie
     assert live.get_json() == {"accepted": 1, "received": 1}
 
     payload = client.get(
-        "/api/v1/admin/analytics/summary?days=7",
+        f"{endpoint}?days=7",
         headers={"Authorization": "Bearer admin-test-token"},
     ).get_json()
     assert payload["dataSource"] == "production"

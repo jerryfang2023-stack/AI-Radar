@@ -760,11 +760,12 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 response.headers["Access-Control-Allow-Origin"] = origin
                 response.headers["Vary"] = "Origin"
                 response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type"
-                response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+                response.headers["Access-Control-Allow-Methods"] = "GET, OPTIONS" if request.path.endswith("/summary") else "POST, OPTIONS"
             response.headers["Cache-Control"] = "no-store"
         return response
 
     @app.route("/api/v1/analytics/events", methods=["OPTIONS"])
+    @app.route("/api/v1/analytics/summary", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/summary", methods=["OPTIONS"])
     def analytics_options():
         return ("", 204)
@@ -790,6 +791,14 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
 
     @app.get("/api/v1/admin/analytics/summary")
     @analytics_admin_required
+    def admin_analytics_summary():
+        return analytics_summary()
+
+    @app.get("/api/v1/analytics/summary")
+    def public_analytics_summary():
+        # Passwordless OPS reads aggregates only; administrative routes stay protected.
+        return analytics_summary()
+
     def analytics_summary():
         try:
             days = int(request.args.get("days", "7"))
@@ -861,7 +870,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             session["last"] = max(session["last"], occurred)
             if event_name == "page_view":
                 session["pageViews"] += 1
-                page = row["page_path"] or "未知页面"
+                page = (row["page_path"] or "未知页面").split("?", 1)[0].split("#", 1)[0]
                 page_counts[page] = page_counts.get(page, 0) + 1
                 page_visitors.setdefault(page, set()).add(visitor_id)
             if event_name == "content_view":

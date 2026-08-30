@@ -280,6 +280,9 @@
       .page-surface { padding: 12px; }
     }
   </style>
+  <meta name="wavesight-analytics-version" content="APP-ANALYTICS-V1.3.0-ops-readonly">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
 </head>
 <body class="page-operations-console">
   <main class="shell" data-ops-console>
@@ -290,6 +293,7 @@
         <button type="button" data-tab="issues"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span><span class="nav-text">问题中心</span></button>
         <button type="button" data-tab="tasks"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h10"/><path d="M18 16l2 2 3-4"/></svg></span><span class="nav-text">任务链路</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
+        <button type="button" data-tab="analytics"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M7 16v-5M12 16V4M17 16V8"/></svg></span><span class="nav-text">运营统计</span></button>
         <button type="button" data-tab="governance"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">版本治理</span></button>
         <button type="button" data-tab="skills"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M10 8l5 4-5 4"/></svg></span><span class="nav-text">Skill Store</span></button>
         <button type="button" data-tab="settings"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8"/></svg></span><span class="nav-text">系统设置</span></button>
@@ -381,6 +385,73 @@
         </div>
       </section>
 
+      <section class="panel" data-panel="analytics" data-application-analytics>
+        <div class="page-surface">
+          <div class="aa-shell">
+            <header class="aa-page-head">
+              <div>
+                <p class="aa-eyebrow">APPLICATION ANALYTICS · READ ONLY</p>
+                <h1>应用运营</h1>
+                <p>小程序与融资网站的访问、注册、内容和付费表现</p>
+              </div>
+              <div class="aa-live-group">
+                <span class="aa-production"><i aria-hidden="true"></i>真实数据 <small data-tracking-since>正在连接</small></span>
+                <span class="aa-live"><b data-active-now>—</b> 位访客近 30 分钟活跃</span>
+              </div>
+            </header>
+
+            <div class="aa-dashboard" data-dashboard>
+              <div class="aa-toolbar" aria-label="统计筛选">
+                <div class="aa-periods" role="group" aria-label="时间范围">
+                  <button type="button" data-days="1">今日</button>
+                  <button type="button" data-days="7" aria-pressed="true">近 7 天</button>
+                  <button type="button" data-days="30">近 30 天</button>
+                  <button type="button" data-days="90">近 90 天</button>
+                </div>
+                <label><span>平台</span><select data-platform><option value="all">全部平台</option><option value="miniprogram">小程序</option><option value="pc">PC 融资站</option></select></label>
+                <button class="aa-refresh" type="button" data-refresh>刷新</button>
+              </div>
+
+              <div class="aa-status" data-status role="status" aria-live="polite">正在读取运营数据…</div>
+              <div class="aa-skeleton" data-skeleton aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div data-content hidden>
+                <section aria-labelledby="overview-title">
+                  <header class="aa-section-head"><div><p>OVERVIEW</p><h2 id="overview-title">核心表现</h2></div><time data-generated-at></time></header>
+                  <div class="aa-kpi-grid" data-kpis></div>
+                </section>
+                <section class="aa-two-column" aria-label="趋势与漏斗">
+                  <article class="aa-panel">
+                    <header class="aa-section-head compact"><div><p>TREND</p><h2>每日趋势</h2></div></header>
+                    <div class="aa-chart" data-trend-chart></div>
+                  </article>
+                  <article class="aa-panel">
+                    <header class="aa-section-head compact"><div><p>REGISTRATION</p><h2>注册漏斗</h2></div></header>
+                    <div class="aa-funnel" data-funnel></div>
+                    <div class="aa-failure-reasons" data-registration-failures></div>
+                  </article>
+                </section>
+                <section class="aa-two-column" aria-label="页面与内容表现">
+                  <article class="aa-panel">
+                    <header class="aa-section-head compact"><div><p>PAGES</p><h2>热门页面</h2></div></header>
+                    <div class="aa-table" data-top-pages></div>
+                  </article>
+                  <article class="aa-panel">
+                    <header class="aa-section-head compact"><div><p>CONTENT</p><h2>热门内容</h2></div></header>
+                    <div class="aa-table" data-top-content></div>
+                  </article>
+                </section>
+                <section class="aa-panel" aria-labelledby="platform-title">
+                  <header class="aa-section-head compact"><div><p>PLATFORMS</p><h2 id="platform-title">平台分布</h2></div></header>
+                  <div class="aa-platforms" data-platforms></div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="panel" data-panel="governance">
         <div class="page-surface">
           <header class="page-head">
@@ -418,6 +489,7 @@
 
   <script src="data/pipeline-dashboard.js"></script>
   <script src="data/ops-console.js"></script>
-  <script src="assets/operations-console.js?v=20260825-source-quality-v1"></script>
+  <script src="assets/operations-console.js?v=20260830-ops-analytics"></script>
+  <script src="assets/application-analytics.js?v=20260830-ops-readonly"></script>
 </body>
 </html>

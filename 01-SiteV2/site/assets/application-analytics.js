@@ -1,9 +1,10 @@
 (() => {
-  const API_URL = "https://www.zkdlj.vip/api/v1/admin/analytics/summary";
-  const TOKEN_KEY = "wavesight_analytics_admin_token";
-  const $ = (selector, root = document) => root.querySelector(selector);
-  const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const state = { days: 7, platform: "all", token: sessionStorage.getItem(TOKEN_KEY) || "" };
+  const root = document.querySelector("[data-application-analytics]");
+  if (!root) return;
+  const API_URL = "https://www.zkdlj.vip/api/v1/analytics/summary";
+  const $ = (selector) => root.querySelector(selector);
+  const $$ = (selector) => [...root.querySelectorAll(selector)];
+  const state = { days: 7, platform: "all", started: false, requestId: 0 };
   const number = (value) => new Intl.NumberFormat("zh-CN").format(Number(value || 0));
   const currency = (value) => new Intl.NumberFormat("zh-CN", { style: "currency", currency: "CNY", maximumFractionDigits: 0 }).format(Number(value || 0) / 100);
   const percent = (value) => `${(Number(value || 0) * 100).toFixed(1)}%`;
@@ -14,11 +15,18 @@
     $("[data-skeleton]").hidden = !loading;
     $("[data-content]").hidden = loading;
     $("[data-refresh]").disabled = loading;
-    if (loading) $("[data-status]").textContent = "正在读取运营数据…";
+    if (loading) {
+      $("[data-status]").textContent = "正在读取运营数据…";
+      $("[data-status]").classList.remove("is-error");
+      $("[data-active-now]").textContent = "—";
+      $("[data-tracking-since]").textContent = "正在连接";
+      $("[data-generated-at]").textContent = "";
+    }
   }
   function showError(message) {
     setLoading(false);
     $("[data-content]").hidden = true;
+    $("[data-tracking-since]").textContent = "连接失败";
     const status = $("[data-status]");
     status.textContent = message;
     status.classList.add("is-error");
@@ -90,34 +98,26 @@
     $("[data-content]").hidden = false;
   }
   async function load() {
-    if (!state.token) return;
+    state.started = true;
+    const requestId = ++state.requestId;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
     setLoading(true);
     try {
       const url = `${API_URL}?days=${state.days}&platform=${encodeURIComponent(state.platform)}`;
-      const response = await fetch(url, { headers: { Authorization: `Bearer ${state.token}` }, cache: "no-store" });
+      const response = await fetch(url, { credentials: "omit", cache: "no-store", signal: controller.signal });
       const payload = await response.json().catch(() => ({}));
+      if (requestId !== state.requestId) return;
       if (!response.ok) throw new Error(payload.error?.message || "数据读取失败");
       if (payload.dataSource !== "production" || !payload.trackingSince) throw new Error("真实数据口径尚未启用");
       render(payload);
     } catch (error) {
-      if (/令牌|访问/.test(error.message)) {
-        sessionStorage.removeItem(TOKEN_KEY);
-        state.token = "";
-        $("[data-dashboard]").hidden = true;
-        $("[data-auth-panel]").hidden = false;
-        $("[data-auth-error]").textContent = error.message;
-      } else showError(`${error.message}，请检查服务状态后重试。`);
+      if (requestId !== state.requestId) return;
+      showError(error.name === "AbortError" ? "读取超时，请点击刷新重试。" : "运营数据暂时无法读取，请点击刷新重试。");
+    } finally {
+      clearTimeout(timeout);
     }
   }
-  $("[data-auth-form]").addEventListener("submit", (event) => {
-    event.preventDefault();
-    state.token = new FormData(event.currentTarget).get("token").trim();
-    sessionStorage.setItem(TOKEN_KEY, state.token);
-    $("[data-auth-error]").textContent = "";
-    $("[data-auth-panel]").hidden = true;
-    $("[data-dashboard]").hidden = false;
-    load();
-  });
   $$('[data-days]').forEach((button) => button.addEventListener("click", () => {
     state.days = Number(button.dataset.days);
     $$('[data-days]').forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
@@ -125,21 +125,6 @@
   }));
   $("[data-platform]").addEventListener("change", (event) => { state.platform = event.target.value; load(); });
   $("[data-refresh]").addEventListener("click", load);
-  $("[data-exit]").addEventListener("click", () => {
-    sessionStorage.removeItem(TOKEN_KEY);
-    state.token = "";
-    $("[data-dashboard]").hidden = true;
-    $("[data-auth-panel]").hidden = false;
-    $("#analytics-token").value = "";
-  });
-  const navToggle = $("[data-nav-toggle]");
-  navToggle.addEventListener("click", () => {
-    const open = $("[data-sidebar]").classList.toggle("is-open");
-    navToggle.setAttribute("aria-expanded", String(open));
-  });
-  if (state.token) {
-    $("[data-auth-panel]").hidden = true;
-    $("[data-dashboard]").hidden = false;
-    load();
-  }
+  root.addEventListener("analytics:open", () => { if (!state.started) load(); });
+  if (root.classList.contains("is-active")) load();
 })();

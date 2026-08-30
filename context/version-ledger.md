@@ -28,7 +28,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Data Center Git baseline | GUANLAN-DATA-CENTER-V4.8.1-internal-foundation |
 | Data Center Git tag | `data-center-v4.8.1-internal-foundation` |
 | Main website version | SITE-V4.6.1-research-retirement |
-| Application analytics version | APP-ANALYTICS-V1.2.0-registration-funnel |
+| Application analytics version | APP-ANALYTICS-V1.3.0-ops-readonly |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
 | Tag taxonomy version | TAG-V4.1 |
 | First-Line Viewpoints column version | FLV-V1.1.0-history-backfill |
@@ -206,6 +206,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `application-analytics-v1.3.0` | OPS 运营统计 / passwordless read-only summary / legacy URL redirect | 2026-08-30 | 2026-08-30 | APP-ANALYTICS-V1.3.0-ops-readonly | Data Center analytics nav; frontend admin tokens; anonymous admin/write access; raw identity/event/order details; non-production fallback | dashboard behavioral/redirect tests + service authorization/privacy/cutoff tests + frontstage/version gates; rollback reference: ff58e32813e22c14dfdcfa3dc90cda2c907bf847 |
 | `miniprogram-v0.9.0` | Native Community hub / Zaolang schedule and archive / Founder Case / points leaderboard and rules / industry role map, directory and editable public profile | 2026-08-30 | 2026-08-30T02:57:24+08:00 | V0.9.0-native-community-hub | observation as the third bottom tab; community-home application banner; locked community home; contact fields or review notes in the public directory; “contribution leaderboard” terminology; V0.8.3 sharing, account, payment or registration regressions | Mini Program data build + 73 behavioral/copy/privacy tests + 24-page package validation + WeChat DevTools compile and development upload |
 | `miniprogram-v0.8.3` | Native sharing for the financing, ecosystem and observation public column pages | 2026-08-20 | 2026-08-20T18:04:16+08:00 | V0.8.3-public-column-sharing | disabled friend forwarding or Moments sharing on public columns; private profile sharing; V0.8.2 registration-funnel regressions | Mini Program data build + public-column native-sharing contract + 19-page validation + development upload |
 | `miniprogram-v0.8.2` | Explicit registration prompt / phone authorization / server-confirmed registration / failure reason analytics | 2026-08-18 | 2026-08-18T17:28:34+08:00 | V0.8.2-registration-funnel | generic authentication counted as registration; client-asserted registration success; phone or identity values in analytics; loss of V0.8.1 community essay live sync | Mini Program data build + registration analytics copy gate + 19-page validation + Payment Service analytics regression + development upload |

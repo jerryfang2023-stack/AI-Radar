@@ -81,8 +81,9 @@ python scripts/provision_virtual_products.py --env 0
 
 - `POST /api/v1/analytics/events`：接收小程序与 PC 端的匿名访问事件，单批最多 20 条；事件按 `eventId` 幂等写入。
 - `GET /api/v1/admin/analytics/summary?days=7&platform=all`：返回访问、页面、内容、注册、付费、退款和漏斗聚合；需要 `Authorization: Bearer <ANALYTICS_ADMIN_TOKEN>`。
+- `GET /api/v1/analytics/summary?days=7&platform=all`：按用户要求提供相同口径的免密码只读汇总，用于运营后台“运营统计”。不返回原始事件、访客/会话 ID、用户身份或订单明细；页面路径剥离查询参数及片段。该路由不支持 POST/PUT/PATCH/DELETE，其他管理、会员与支付鉴权保持不变。
 - 注册漏斗分别统计打开注册引导、提交手机号授权、服务端注册成功及失败原因；普通登录与静默鉴权不进入注册漏斗。
 - 注册成功、支付、退款、积分兑换和社群申请均由服务端记录，运营口径不依赖客户端成功提示。
 - `ANALYTICS_LIVE_FROM` 定义正式运营统计起点（ISO 8601）；起点前的访问事件、注册和订单不进入运营汇总，离线队列中的旧测试事件也不会重新写入。
-- 生产环境必须设置随机 `ANALYTICS_ADMIN_TOKEN`；令牌不得写入仓库，只在运营后台当前浏览器会话中使用。
+- 原管理员查询仍使用生产环境随机 `ANALYTICS_ADMIN_TOKEN`；令牌不得写入仓库或前端。免密码运营页面不需要、不存储、不发送该令牌。
 - 默认允许 `https://www.zkdlj.vip` 与 WaveSight GitHub Pages 读取；若内部站点域名变化，通过 `ANALYTICS_ALLOWED_ORIGINS` 调整。

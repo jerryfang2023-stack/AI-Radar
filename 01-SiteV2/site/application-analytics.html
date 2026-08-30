@@ -4,113 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="wavesight-version" content="SITE-V4.6.1-research-retirement">
-  <meta name="wavesight-column-version" content="APP-ANALYTICS-V1.2.0">
+  <meta name="wavesight-column-version" content="APP-ANALYTICS-V1.3.0-ops-readonly">
   <meta name="robots" content="noindex,nofollow">
-  <title>应用运营｜观澜 AI</title>
-  <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/data-center-v4.css?v=20260816-application-analytics">
-  <link rel="stylesheet" href="assets/application-analytics.css?v=20260818-registration-funnel">
+  <meta http-equiv="refresh" content="0;url=operations-console.html#analytics">
+  <link rel="canonical" href="operations-console.html#analytics">
+  <title>运营统计已迁移｜观澜 AI</title>
 </head>
 <body>
-  <a class="dc-skip-link" href="#main-content">跳到主要内容</a>
-  <header class="dc-header">
-    <a class="dc-brand" href="data-center.html?view=events" aria-label="观澜 AI 数据中心">
-      <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
-    </a>
-    <button class="dc-nav-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-nav-toggle>栏目</button>
-  </header>
-  <div class="dc-layout">
-    <aside class="dc-sidebar" data-sidebar>
-      <nav aria-label="数据中心与应用中心">
-        <section class="dc-nav-group" aria-labelledby="data-center-nav-title">
-          <h2 id="data-center-nav-title">数据中心</h2>
-          <a href="data-center.html?view=events">事件库</a>
-          <a href="data-center.html?view=community">社群情报</a>
-          <a href="data-center.html?view=viewpoints">一线观点</a>
-          <a href="data-center.html?view=index">实体库</a>
-        </section>
-        <section class="dc-nav-group dc-nav-apps" aria-labelledby="app-center-nav-title">
-          <h2 id="app-center-nav-title">应用中心</h2>
-          <a href="trend-radar.html">变化雷达</a>
-          <a href="application-analytics.html" aria-current="page">运营统计</a>
-        </section>
-      </nav>
-    </aside>
-    <main class="dc-main aa-main" id="main-content" tabindex="-1">
-      <div class="aa-shell">
-        <header class="dc-page-head aa-page-head">
-          <div>
-            <p class="aa-eyebrow">APPLICATION ANALYTICS</p>
-            <h1>应用运营</h1>
-            <p>小程序与融资网站的访问、注册、内容和付费表现</p>
-          </div>
-          <div class="aa-live-group">
-            <span class="aa-production"><i aria-hidden="true"></i>真实数据 <small data-tracking-since>等待连接</small></span>
-            <span class="aa-live"><b data-active-now>—</b> 位访客近 30 分钟活跃</span>
-          </div>
-        </header>
-
-        <section class="aa-auth" data-auth-panel>
-          <div><h2>连接运营数据</h2><p>访问令牌仅保存在当前浏览器会话，关闭页面后自动清除。</p></div>
-          <form data-auth-form>
-            <label for="analytics-token">运营后台访问令牌</label>
-            <div><input id="analytics-token" name="token" type="password" autocomplete="current-password" required><button type="submit">进入统计后台</button></div>
-            <p class="aa-form-error" data-auth-error aria-live="polite"></p>
-          </form>
-        </section>
-
-        <div class="aa-dashboard" data-dashboard hidden>
-          <div class="aa-toolbar" aria-label="统计筛选">
-            <div class="aa-periods" role="group" aria-label="时间范围">
-              <button type="button" data-days="1">今日</button>
-              <button type="button" data-days="7" aria-pressed="true">近 7 天</button>
-              <button type="button" data-days="30">近 30 天</button>
-              <button type="button" data-days="90">近 90 天</button>
-            </div>
-            <label><span>平台</span><select data-platform><option value="all">全部平台</option><option value="miniprogram">小程序</option><option value="pc">PC 融资站</option></select></label>
-            <button class="aa-refresh" type="button" data-refresh>刷新</button>
-            <button class="aa-exit" type="button" data-exit>退出</button>
-          </div>
-
-          <div class="aa-status" data-status role="status" aria-live="polite">正在读取运营数据…</div>
-          <div class="aa-skeleton" data-skeleton aria-hidden="true">
-            <span></span><span></span><span></span><span></span>
-          </div>
-          <div data-content hidden>
-            <section aria-labelledby="overview-title">
-              <header class="aa-section-head"><div><p>OVERVIEW</p><h2 id="overview-title">核心表现</h2></div><time data-generated-at></time></header>
-              <div class="aa-kpi-grid" data-kpis></div>
-            </section>
-            <section class="aa-two-column" aria-label="趋势与漏斗">
-              <article class="aa-panel">
-                <header class="aa-section-head compact"><div><p>TREND</p><h2>每日趋势</h2></div></header>
-                <div class="aa-chart" data-trend-chart></div>
-              </article>
-              <article class="aa-panel">
-                <header class="aa-section-head compact"><div><p>REGISTRATION</p><h2>注册漏斗</h2></div></header>
-                <div class="aa-funnel" data-funnel></div>
-                <div class="aa-failure-reasons" data-registration-failures></div>
-              </article>
-            </section>
-            <section class="aa-two-column" aria-label="页面与内容表现">
-              <article class="aa-panel">
-                <header class="aa-section-head compact"><div><p>PAGES</p><h2>热门页面</h2></div></header>
-                <div class="aa-table" data-top-pages></div>
-              </article>
-              <article class="aa-panel">
-                <header class="aa-section-head compact"><div><p>CONTENT</p><h2>热门内容</h2></div></header>
-                <div class="aa-table" data-top-content></div>
-              </article>
-            </section>
-            <section class="aa-panel" aria-labelledby="platform-title">
-              <header class="aa-section-head compact"><div><p>PLATFORMS</p><h2 id="platform-title">平台分布</h2></div></header>
-              <div class="aa-platforms" data-platforms></div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </main>
-  </div>
-  <script src="assets/application-analytics.js?v=20260818-registration-funnel"></script>
+  <p>运营统计已迁移至<a href="operations-console.html#analytics">运营后台 · 运营统计</a>，可直接查看，无需密码。</p>
 </body>
 </html>

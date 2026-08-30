@@ -9,7 +9,7 @@
     panel: location.hash ? location.hash.slice(1) : "overview",
     railCollapsed: localStorage.getItem("wavesight-rail-collapsed") === "1",
   };
-  const validPanels = new Set(["overview", "issues", "tasks", "quality", "governance", "skills", "settings"]);
+  const validPanels = new Set(["overview", "issues", "tasks", "quality", "analytics", "governance", "skills", "settings"]);
 
   const $ = (selector, node = document) => node.querySelector(selector);
   const $$ = (selector, node = document) => Array.from(node.querySelectorAll(selector));
@@ -28,6 +28,7 @@
     $$("[data-tab]").forEach((button) => button.setAttribute("aria-current", String(button.dataset.tab === state.panel)));
     $$("[data-panel]").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === state.panel));
     history.replaceState(null, "", `#${state.panel}`);
+    if (state.panel === "analytics") $("[data-application-analytics]")?.dispatchEvent(new Event("analytics:open"));
   }
 
   function setRailCollapsed(collapsed) {
