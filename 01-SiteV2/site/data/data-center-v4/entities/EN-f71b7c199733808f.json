@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,13 +22,14 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-c3f2380f39d120ea"
+      "EV-c3f2380f39d120ea",
+      "EV-3848f09e5989ef69"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-19",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-30",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -39,9 +40,39 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-3848f09e5989ef69"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-3848f09e5989ef69",
+        "dataDate": "2026-08-30",
+        "date": "2026-08-29",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI生成的视频已在中国娱乐行业取代演员和直播主播",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-05de668d5bccd05b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-05de668d5bccd05b",
+          "EN-f71b7c199733808f"
+        ]
+      },
       {
         "id": "EV-c3f2380f39d120ea",
         "dataDate": "2026-08-20",

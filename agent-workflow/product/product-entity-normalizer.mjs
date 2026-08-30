@@ -67,6 +67,9 @@ function captureNames(value = "") {
   for (const match of text.matchAll(/(?:发布|推出|上线|新增|开源|升级)(?:了|其|全新|新一代|一款|首个)?\s*[“《]([^”》]{2,30})[”》]/gu)) {
     captures.push(match[1]);
   }
+  for (const match of text.matchAll(/(?:模型|产品|平台|工具|系统|应用)\s*["“《]([^"”》]{2,30})["”》]\s*(?:正式|现已)?(?:发布|推出|上线|开源)(?=$|[\s，。！？：:；;、])/gu)) {
+    captures.push(match[1]);
+  }
   for (const match of text.matchAll(/(?:发布|推出|上线|新增|开源|升级)(?:了|其|全新|新一代|一款|首个)?\s*([A-Z][A-Za-z0-9+_.-]*(?:\s+(?:[A-Z][A-Za-z0-9+_.-]*|\d+(?:\.\d+)*)){0,4})/gu)) {
     captures.push(match[1]);
   }

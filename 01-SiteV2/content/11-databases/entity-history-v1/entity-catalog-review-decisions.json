@@ -1,24 +1,63 @@
 {
   "schema_version": "ENTITY-CATALOG-REVIEW-V1",
-  "generated_at": "2026-08-29T05:25:00.000Z",
+  "generated_at": "2026-08-30T05:52:00.000Z",
   "reviewer": "codex-china-funding-review",
   "inputs": [
     "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json",
     "agent-workflow/reports/entity-catalog-secondary-search.json",
     "agent-workflow/reports/entity-catalog-deepseek-audit-current.json",
-    "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/entity-mentions.json"
+    "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/entity-mentions.json",
+    "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/entity-mentions.json"
   ],
   "summary": {
     "current_catalog_reviewed": 534,
     "supplemental_claim_entities": 23,
     "historical_decisions_retained": 347,
-    "reviewed": 901,
-    "confirmed": 373,
+    "reviewed": 903,
+    "confirmed": 374,
     "corrected": 185,
-    "merged": 108,
+    "merged": 109,
     "quarantined": 235
   },
   "decisions": [
+    {
+      "entity_id": "EN-6e00d63f3be2ed2e",
+      "current": { "name": "玄幂 Xenomi", "catalog_type": "product", "company_names": [] },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "玄幂 Xenomi", "catalog_type": "product", "company_names": [] },
+      "evidence": {
+        "claim_refs": ["CL-de3c561a2664fd08", "CL-80742e01ae01eb8e", "CL-c2903fa7f3310e24"],
+        "secondary_sources": []
+      },
+      "advisory_source": "projection_coverage_repair",
+      "advisory_decision": "confirmed",
+      "confidence": 1,
+      "rationale": "当日原文及 Claim 明确记录玄幂 Xenomi 大模型家族已发布。仅确认产品名称，不依据公众号名或研究团队简称推断法律主体归属。",
+      "review_status": "accepted",
+      "reviewer": "codex-projection-coverage-repair",
+      "reviewed_at": "2026-08-30T05:52:00.000Z",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-fb646a85ad74e7c5",
+      "current": { "name": "Tencent Cloud", "catalog_type": "company", "company_names": [] },
+      "action": "merge",
+      "merge_into_entity_id": "EN-a7baed72c308ce88",
+      "canonical": { "name": "腾讯云", "catalog_type": "company", "company_names": [] },
+      "evidence": {
+        "claim_refs": ["CL-6e9caa926234cb7b", "CL-22e678ef91c9a288", "CL-25d40e01b1c2d859", "CL-7167eecf07abfae3"],
+        "secondary_sources": []
+      },
+      "advisory_source": "projection_coverage_repair",
+      "advisory_decision": "merged",
+      "confidence": 1,
+      "rationale": "腾讯官方当日 Claim 明确列出 Tencent Cloud TokenHub；Tencent Cloud 为已审定腾讯云的英文别名，归并到现有稳定实体，保留来源与事件关联。",
+      "review_status": "accepted",
+      "reviewer": "codex-projection-coverage-repair",
+      "reviewed_at": "2026-08-30T05:52:00.000Z",
+      "error_patterns": ["duplicate_entity"]
+    },
     {
       "entity_id": "EN-d58fc8daf00e9bc3",
       "current": {

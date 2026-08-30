@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-04b84c1f3430c055",
       "EV-b2e374d54b10b9af"
     ],
     "viewpointIds": [],
@@ -30,14 +31,16 @@
       "EN-ce635c4eabff5e4f"
     ],
     "firstSeen": "2026-06-04",
-    "lastSeen": "2026-07-16",
+    "lastSeen": "2026-08-30",
     "relationIds": [
       "REL2-d2ede6f8bc103718",
       "REL2-d684f1db9d77f6cd"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-04b84c1f3430c055"
+      ],
       "partnerships": [
         "EV-b2e374d54b10b9af"
       ],
@@ -47,6 +50,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-04b84c1f3430c055",
+        "dataDate": "2026-08-30",
+        "date": "2026-08-30",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "生成式AI用于维护",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-b3c2b1c099ddf347"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b3c2b1c099ddf347",
+          "EN-f48a4090493d2b5e"
+        ]
+      },
       {
         "id": "EV-b2e374d54b10b9af",
         "dataDate": "2026-07-16",
@@ -168,6 +199,44 @@
   "taxonomyNodes": [],
   "fde": [
     {
+      "id": "FDE-bdcc1cc24296c7ca",
+      "eventId": "EV-04b84c1f3430c055",
+      "dataDate": "2026-08-30",
+      "date": "2026-08-30",
+      "title": "生成式AI用于维护",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "C3 AI",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "select remote service operators",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "During the 2-day deployment process, the team uploaded and indexed over forty equipment manuals, each 80-page documents, fine-tuned search performance, and added seventeen users to roll-out to the field and customer service teams."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://c3.ai/customers/generative-ai-for-manufacturing",
+      "entityIds": [
+        "EN-b3c2b1c099ddf347",
+        "EN-f48a4090493d2b5e"
+      ]
+    },
+    {
       "id": "FDE-8d7df617732e7c45",
       "eventId": "EV-b2e374d54b10b9af",
       "dataDate": "2026-07-16",
@@ -216,5 +285,56 @@
       ]
     }
   ],
-  "hardware": []
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-02a5be60f16af502",
+      "implementationKey": "02a5be60f16af502",
+      "eventId": "EV-04b84c1f3430c055",
+      "eventIds": [
+        "EV-04b84c1f3430c055"
+      ],
+      "dataDate": "2026-08-30",
+      "date": "2026-08-30",
+      "title": "C3 AI × 未披露：select remote service operators",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "C3 AI",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "select remote service operators",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-558faf163ef6be1a",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-30",
+          "dataDate": "2026-08-30",
+          "eventId": "EV-04b84c1f3430c055",
+          "eventTitle": "生成式AI用于维护",
+          "claimCount": 2,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://c3.ai/customers/generative-ai-for-manufacturing",
+      "entityIds": [
+        "EN-b3c2b1c099ddf347",
+        "EN-f48a4090493d2b5e"
+      ]
+    }
+  ]
 }

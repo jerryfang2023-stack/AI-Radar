@@ -9,6 +9,14 @@ import {
 
 const date = "2026-07-30";
 
+test("failed-run artifacts retain accepted model decisions and projection diagnostics", () => {
+  const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+  const artifactPaths = workflow.slice(workflow.indexOf("retention-days: 14"), workflow.indexOf("- name: Commit Data Center V4 assets"));
+  assert.ok(artifactPaths.includes("model-assist-v1/${{ steps.run-date.outputs.date }}.json"));
+  assert.ok(artifactPaths.includes("model-assist-v1/checkpoint.json"));
+  assert.ok(artifactPaths.includes("-data-center-projection-coverage.*"));
+});
+
 test("pre-commit state accepts the current V4 manifest and collection telemetry contracts", () => {
   assert.equal(isV4ManifestReady({
     product_version: "SITE-V4.0-data-center",

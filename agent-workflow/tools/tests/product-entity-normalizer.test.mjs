@@ -50,3 +50,14 @@ test("deployment extraction preserves an explicitly named web product", () => {
     organizationNames: ["Together AI"]
   }), []);
 });
+
+test("product extraction recognizes quoted names before Chinese release verbs", () => {
+  for (const [open, close] of [["\"", "\""], ["“", "”"], ["《", "》"]]) {
+    assert.deepEqual(extract(`行业首个量子增强型大模型${open}玄幂 Xenomi${close}发布：深度融合 AI 与量子计算`), ["玄幂 Xenomi"]);
+    assert.deepEqual(extract(`产品${open}星河${close}正式上线`), ["星河"]);
+  }
+  assert.deepEqual(extract('模型“人工智能”发布'), []);
+  assert.deepEqual(extract('模型“年度研究报告”发布'), []);
+  assert.deepEqual(extract('观点“未来已来”发布'), []);
+  assert.deepEqual(extract('大模型“玄幂 Xenomi”发布计划尚未确定'), []);
+});

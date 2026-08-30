@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -2728,12 +2728,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-product_form-model",
         "TX-technology-video_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_device"
       ],
@@ -2769,9 +2769,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
@@ -2805,7 +2805,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-5fdd673ed1fcff1d",
@@ -2958,12 +2958,16 @@
       "name": "腾讯云",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Tencent Cloud"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-eb3b431d4ce98ec5",
+        "EV-68897f26c8d956df",
         "EV-cffa617426a5e139",
         "EV-59fb7ba1fd6ac55e",
         "EV-9e35de25113a9269"
@@ -2979,7 +2983,7 @@
         "EN-7ff4fb5ddc1f4700"
       ],
       "firstSeen": "2026-07-09",
-      "lastSeen": "2026-08-08"
+      "lastSeen": "2026-08-30"
     }
   ],
   "fde": [],

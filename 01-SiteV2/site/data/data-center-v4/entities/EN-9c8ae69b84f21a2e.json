@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -35,6 +35,7 @@
       "EV-619e33abf3f9bfbf",
       "EV-be2f6bfcad93c42f",
       "EV-c7b81290859057b0",
+      "EV-eb3b431d4ce98ec5",
       "EV-a6dc310224542dcf",
       "EV-355ddfd4c6180ab0",
       "EV-d14947956b43c97a",
@@ -76,7 +77,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-05-18",
-    "lastSeen": "2026-08-28",
+    "lastSeen": "2026-08-30",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -104,6 +105,7 @@
         "EV-c7b81290859057b0"
       ],
       "productsServices": [
+        "EV-eb3b431d4ce98ec5",
         "EV-a6dc310224542dcf",
         "EV-355ddfd4c6180ab0",
         "EV-d14947956b43c97a",
@@ -137,6 +139,44 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-eb3b431d4ce98ec5",
+        "dataDate": "2026-08-30",
+        "date": "2026-08-28",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "腾讯发布并开源 Tencent Hy4 Preview",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9c8ae69b84f21a2e",
+          "EN-a7baed72c308ce88",
+          "EN-7f871cbf905f6e0c",
+          "EN-a50ef9352a2aac60",
+          "EN-20b7b60147aca363"
+        ]
+      },
       {
         "id": "EV-a6dc310224542dcf",
         "dataDate": "2026-08-28",
@@ -253,7 +293,6 @@
           }
         ],
         "entityIds": [
-          "EN-fb646a85ad74e7c5",
           "EN-a7baed72c308ce88",
           "EN-9c8ae69b84f21a2e",
           "EN-b0ef0e08783be830",
@@ -1359,6 +1398,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-860fbba841badfec",
         "EV-13c5fc1373115b65",
         "EV-1231169f9fddbee6",
         "EV-735fac8d2be356bb",
@@ -1377,6 +1417,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
@@ -1394,7 +1435,6 @@
         "TX-use_case-data_analysis",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-deployment_model-cloud",
         "TX-ai_market_subcategory-sales",
@@ -1416,7 +1456,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-29"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -1626,6 +1666,7 @@
         "EV-c5d7d88d1aef8edb",
         "EV-cded77b1de2db61a",
         "EV-535c2f4fb851332d",
+        "EV-73c7062edbdf5d08",
         "EV-caffb8981cecae2f",
         "EV-b69f78a4919cb1bc",
         "EV-0fc718ab409cdcf5",
@@ -1657,6 +1698,8 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-dff4ff4127cba5d9",
+        "EV-eb3b431d4ce98ec5",
         "EV-eedd370fd9cfdbb2",
         "EV-df9b78627b91c29f",
         "EV-127a04dfedc04e0c",
@@ -1810,6 +1853,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-fd00664984e9ae3d",
         "EV-8d1915e3b460afa7",
         "EV-00e6152baff47d4d",
         "EV-ce32954014cb030d",
@@ -1874,6 +1918,7 @@
         "EN-cd35ca6b5c3cf23c",
         "EN-883be863cc6562bb",
         "EN-a83a3af1a4866fd5",
+        "EN-25465dbbb180e21b",
         "EN-047364b9be67f665",
         "EN-f420373dc2aa4371",
         "EN-29b9f0cae32e7a8a",
@@ -1890,6 +1935,7 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-6e00d63f3be2ed2e",
         "EN-921ba2ce81556e42",
         "EN-bbdefa2950f49882",
         "EN-a658fbc24f5e3832",
@@ -2004,7 +2050,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -2505,6 +2551,8 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-10fe2269806246e8",
+        "EV-5019dff541a05950",
         "EV-00ffb2c501a37ec8",
         "EV-278745d4aa7a4b3a",
         "EV-2c17183b71d8b7d1",
@@ -2915,6 +2963,7 @@
       "eventIds": [
         "EV-80e54c9a390da293",
         "EV-fd21441fb6e143c3",
+        "EV-eb3b431d4ce98ec5",
         "EV-5890a74f1a62940e",
         "EV-a6dc310224542dcf",
         "EV-eedd370fd9cfdbb2",
@@ -2957,7 +3006,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-12",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-30"
     }
   ],
   "fde": [],

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-29T05:31:57.972Z",
-    "latestDataDate": "2026-08-29",
-    "currentDate": "2026-08-29",
-    "eventCount": 2478,
+    "generatedAt": "2026-08-30T05:57:05.139Z",
+    "latestDataDate": "2026-08-30",
+    "currentDate": "2026-08-30",
+    "eventCount": 2497,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -16,12 +16,16 @@
     "name": "腾讯云",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "Tencent Cloud"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
+      "EV-eb3b431d4ce98ec5",
+      "EV-68897f26c8d956df",
       "EV-cffa617426a5e139",
       "EV-59fb7ba1fd6ac55e",
       "EV-9e35de25113a9269"
@@ -37,7 +41,7 @@
       "EN-7ff4fb5ddc1f4700"
     ],
     "firstSeen": "2026-07-09",
-    "lastSeen": "2026-08-08",
+    "lastSeen": "2026-08-30",
     "relationIds": [
       "REL2-4c75c6e459d26ed8",
       "REL2-b02827533a1608c0"
@@ -47,6 +51,8 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-eb3b431d4ce98ec5",
+        "EV-68897f26c8d956df",
         "EV-cffa617426a5e139",
         "EV-59fb7ba1fd6ac55e",
         "EV-9e35de25113a9269"
@@ -56,6 +62,75 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-eb3b431d4ce98ec5",
+        "dataDate": "2026-08-30",
+        "date": "2026-08-28",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "腾讯发布并开源 Tencent Hy4 Preview",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9c8ae69b84f21a2e",
+          "EN-a7baed72c308ce88",
+          "EN-7f871cbf905f6e0c",
+          "EN-a50ef9352a2aac60",
+          "EN-20b7b60147aca363"
+        ]
+      },
+      {
+        "id": "EV-68897f26c8d956df",
+        "dataDate": "2026-08-20",
+        "date": "2026-08-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "IDC发布2026中国AI50强：360以“智能体+安全”双轮驱动入选",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-796e923025d6fbb2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-796e923025d6fbb2",
+          "EN-e9fc4f156e36f6aa",
+          "EN-a89151ba4b5ac0f2",
+          "EN-a7baed72c308ce88",
+          "EN-c608c4787821de1b"
+        ]
+      },
       {
         "id": "EV-cffa617426a5e139",
         "dataDate": "2026-08-08",
@@ -80,7 +155,6 @@
           }
         ],
         "entityIds": [
-          "EN-fb646a85ad74e7c5",
           "EN-a7baed72c308ce88",
           "EN-9c8ae69b84f21a2e",
           "EN-b0ef0e08783be830",
@@ -724,7 +798,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-30"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -1225,6 +1299,8 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-10fe2269806246e8",
+        "EV-5019dff541a05950",
         "EV-00ffb2c501a37ec8",
         "EV-278745d4aa7a4b3a",
         "EV-2c17183b71d8b7d1",
