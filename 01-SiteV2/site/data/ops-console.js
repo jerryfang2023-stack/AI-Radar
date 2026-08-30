@@ -37,7 +37,7 @@ window.WaveSightOpsConsole = {
           "attemptedAt": "2026-08-30T13:58:08.225Z",
           "verified": true
         },
-        "analytics": "聚合统计已接入"
+        "analytics": "聚合统计与会员权益已接入"
       },
       {
         "id": "miniprogram",
@@ -55,7 +55,7 @@ window.WaveSightOpsConsole = {
           "kind": "source",
           "checkedAt": ""
         },
-        "analytics": "聚合统计已接入"
+        "analytics": "聚合统计与会员权益已接入"
       },
       {
         "id": "h5",
@@ -93,7 +93,7 @@ window.WaveSightOpsConsole = {
           "attemptedAt": "2026-08-30T13:58:08.392Z",
           "verified": true
         },
-        "analytics": "业务统计待接入"
+        "analytics": "会员与分享汇总按需接入"
       }
     ],
     "versions": [
@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.1.0-membership",
-    "generatedAt": "2026-08-30T13:58:10.345Z",
+    "generatedAt": "2026-08-30T14:01:21.539Z",
     "date": "2026-08-30",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1838,7 +1838,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-08-30T13:58:10.327Z",
+      "updatedAt": "2026-08-30T14:01:21.502Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
