@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
+import vm from "node:vm";
 import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
@@ -22,12 +23,52 @@ test("registers the confirmed native community hub as the third tab", () => {
 });
 
 test("keeps the community home visible and gates detail actions", () => {
-  for (const label of ["造浪者计划", "悬赏令", "积分榜", "行业图谱", "下一场", "近期实录"]) assert.match(home, new RegExp(label, "u"));
+  for (const label of ["造浪者计划", "悬赏令", "积分榜", "行业图谱", "分享实录"]) assert.match(home, new RegExp(label, "u"));
   assert.match(home, /community-focus-card/u);
-  assert.match(homeLogic, /archives\.slice\(0, 2\)/u);
   assert.match(homeLogic, /requireCommunityMember/u);
   assert.match(access, /申请加入/u);
   assert.doesNotMatch(access, /switchTab/u);
+});
+
+test("features three distinct real archives without homepage schedules or personal points", () => {
+  let page;
+  const navigations = [];
+  let memberAllowed = false;
+  let tabIndex;
+  vm.runInNewContext(homeLogic, {
+    Page(config) { page = config; },
+    require(id) {
+      if (id.endsWith("community-data.js")) return data;
+      if (id.endsWith("community-access.js")) return { requireCommunityMember(callback) { if (memberAllowed) callback(); } };
+      if (id.endsWith("tab-bar.js")) return { syncTabBar(instance, index) { tabIndex = index; } };
+      if (id.endsWith("experience.js")) return { isExperience() { return false; }, readExperience() { return null; } };
+      throw new Error(`Unexpected homepage dependency: ${id}`);
+    },
+    wx: { navigateTo({ url }) { navigations.push(url); } },
+  });
+  const displayed = [page.data.featuredArchive, ...page.data.olderArchives];
+  assert.equal(displayed.length, 3);
+  assert.equal(new Set(displayed.map((item) => item.id)).size, 3);
+  for (const item of displayed) {
+    const source = data.archives.find((entry) => entry.id === item.id);
+    assert.ok(source);
+    for (const field of ["title", "subtitle", "speakers", "date"]) assert.equal(item[field], source[field]);
+  }
+  assert.doesNotMatch(home, /type=schedule|schedules\[|下一场|本场排期|正在进行|points-strip|最近积分|社群积分/u);
+  assert.match(home, /type=archive&amp;id=\{\{featuredArchive\.id\}\}/u);
+  assert.match(home, /type=archive&amp;id=\{\{item\.id\}\}/u);
+  assert.match(home, /tab=archive/u);
+  for (const item of displayed) {
+    const url = `/pages/community-program/index?type=archive&id=${item.id}`;
+    memberAllowed = false;
+    page.openProtected({ currentTarget: { dataset: { url } } });
+    memberAllowed = true;
+    page.openProtected({ currentTarget: { dataset: { url } } });
+  }
+  assert.equal(navigations.length, 3);
+  page.setData = (value) => Object.assign(page.data, value);
+  page.onShow();
+  assert.equal(tabIndex, 2);
 });
 
 test("publishes only public member fields in the packaged directory", () => {
@@ -39,6 +80,14 @@ test("publishes only public member fields in the packaged directory", () => {
   }
   assert.doesNotMatch(dataSource, /手机号|微信号|审核备注/u);
   assert.match(graph, /手机号、微信号和内部审核信息不会公开/u);
+});
+
+test("shows the role member list immediately after role selection", () => {
+  assert.doesNotMatch(graph, /role-hero|member-heading|MEMBERS BY ROLE|当前角色/u);
+  assert.match(graph, /class="role-tabs"[\s\S]*?<\/scroll-view>\s*<view class="member-list">/u);
+  assert.ok(graph.includes('wx:for="{{activeRoleData.members}}"'));
+  assert.match(graph, /bindtap="openMember"/u);
+  assert.match(graph, /bindtap="selectRole"/u);
 });
 
 test("uses the confirmed points terminology and rule grouping", () => {

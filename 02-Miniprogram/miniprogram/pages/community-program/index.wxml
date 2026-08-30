@@ -4,26 +4,40 @@
     <block wx:if="{{mode === 'list'}}">
       <view class="segment"><button class="{{activeTab === 'schedule' ? 'active' : ''}}" data-tab="schedule" bindtap="switchTab">分享排期</button><button class="{{activeTab === 'archive' ? 'active' : ''}}" data-tab="archive" bindtap="switchTab">分享实录</button></view>
       <view wx:if="{{activeTab === 'schedule'}}">
-        <view class="hero"><text>ZAOLANG PROGRAM</text><text>把真实实践带到同一张桌上</text><view><strong>13</strong><small>已排期场次</small><strong>36</strong><small>分享成员</small></view></view>
+        <view class="hero"><text>ZAOLANG PROGRAM</text><text>把真实实践带到同一张桌上</text><view><text class="strong">13</text><text class="small">已排期场次</text><text class="strong">36</text><text class="small">分享成员</text></view></view>
         <text class="list-title">近期排期</text>
         <button wx:for="{{schedules}}" wx:key="id" class="program-card" data-id="{{item.id}}" bindtap="openSchedule"><view><text>{{item.issue}}</text><text>{{item.date}}</text></view><text class="title">{{item.title}}</text><text>{{item.speakers}}</text><text class="link">查看完整排期 ›</text></button>
       </view>
       <view wx:else>
-        <view class="hero"><text>SHARING ARCHIVE</text><text>完整实录，沉淀每一次真实分享</text><view><strong>12</strong><small>期实录</small><strong>36</strong><small>分享成员</small></view></view>
+        <view class="hero"><text>SHARING ARCHIVE</text><text>完整实录，沉淀每一次真实分享</text><view><text class="strong">12</text><text class="small">期实录</text><text class="strong">36</text><text class="small">分享成员</text></view></view>
         <text class="list-title">分享实录</text>
         <button wx:for="{{archives}}" wx:key="id" class="archive-card" data-id="{{item.id}}" bindtap="openArchive"><text class="issue">{{item.issue}}</text><view><text class="title">{{item.title}}</text><text>{{item.speakers}}</text><text>{{item.date}} · 已发布</text></view><text>›</text></button>
       </view>
     </block>
     <block wx:elif="{{mode === 'schedule'}}">
       <view class="detail-hero"><text>{{item.issue}} · {{item.status}}</text><text>{{item.title}}</text><text>{{item.date}}</text><text>{{item.speakers}}</text></view>
-      <view class="detail-card"><text class="eyebrow">AGENDA</text><text class="detail-title">分享安排</text><view class="agenda"><text>20:00</text><view><strong>主题分享</strong><small>{{item.note}}</small></view></view><view class="agenda"><text>20:45</text><view><strong>现场问答</strong><small>围绕真实业务问题开放交流。</small></view></view><view class="agenda"><text>21:00</text><view><strong>实录整理</strong><small>经分享者确认后发布完整实录。</small></view></view></view>
-      <button class="primary-button" bindtap="back">已加入排期</button>
+      <view class="detail-card"><text class="eyebrow">AGENDA</text><text class="detail-title">分享安排</text><view class="agenda"><text>20:00</text><view><text class="strong">主题分享</text><text class="small">{{item.note}}</text></view></view><view class="agenda"><text>20:45</text><view><text class="strong">现场问答</text><text class="small">围绕真实业务问题开放交流。</text></view></view><view class="agenda"><text>21:00</text><view><text class="strong">实录整理</text><text class="small">经分享者确认后发布完整实录。</text></view></view></view>
+      <button class="primary-button" bindtap="back">返回分享排期</button>
     </block>
-    <block wx:else>
+    <block wx:elif="{{mode === 'archive'}}">
       <view class="detail-hero archive"><text>SHARING ARCHIVE · {{item.issue}}</text><text>{{item.title}}</text><text>{{item.subtitle}}</text><text>{{item.speakers}}</text></view>
       <view class="detail-card"><text class="eyebrow">SUMMARY</text><text class="detail-title">本期摘要</text><text class="body-copy">{{item.summary}}</text></view>
-      <view class="detail-card"><text class="eyebrow">SHARING NOTES</text><text class="detail-title">分享整理</text><view wx:for="{{item.chapters}}" wx:key="index" class="chapter"><text>{{item.index}}</text><view><strong>{{item.title}}</strong><small>{{item.copy}}</small></view></view></view>
+      <view class="detail-card"><text class="eyebrow">SHARING NOTES</text><text class="detail-title">分享整理</text><button wx:for="{{item.chapters}}" wx:key="index" class="chapter" data-index="{{index}}" bindtap="openSpeaker"><text>{{item.index}}</text><view><text class="strong">{{item.title}}</text><text class="small">{{item.copy}}</text><text class="link">查看完整分享 ›</text></view></button></view>
       <view class="detail-card"><text class="eyebrow">SPEAKERS</text><text class="detail-title">本期分享者</text><text class="body-copy">{{item.speakers}}</text></view>
+    </block>
+    <block wx:elif="{{mode === 'speaker'}}">
+      <view wx:if="{{error}}" class="detail-card"><text class="body-copy">{{error}}</text><button class="primary-button" bindtap="back">返回实录</button></view>
+      <block wx:else>
+        <view class="detail-hero"><text>第 {{item.issue}} 场 · {{speaker.name}}</text><text>{{speaker.title}}</text><text>{{item.date}}</text></view>
+        <view wx:for="{{speaker.sections}}" wx:key="title" class="reading-section">
+          <text class="detail-title">{{item.title}}</text>
+          <text wx:for="{{item.paragraphs}}" wx:for-item="paragraph" wx:key="*this" class="reading-paragraph" selectable>{{paragraph}}</text>
+        </view>
+        <text wx:if="{{speaker.qa.length}}" class="list-title">精华问答</text>
+        <view wx:for="{{speaker.qa}}" wx:key="question" class="detail-card">
+          <text class="eyebrow">{{item.asker}} 提问</text><text class="detail-title">{{item.question}}</text><text class="reading-paragraph" selectable>{{item.answer}}</text>
+        </view>
+      </block>
     </block>
   </view>
 </view>

@@ -6,7 +6,7 @@
 .hero > text:first-child,.detail-hero > text:first-child,.eyebrow { color: #d8b45e; font-size: 20rpx; font-weight: 700; letter-spacing: 2rpx; }
 .hero > text:nth-child(2),.detail-hero > text:nth-child(2) { font-size: 38rpx; font-weight: 750; line-height: 1.4; }
 .hero > view { display: grid; grid-template-columns: auto 1fr auto 1fr; margin-top: 18rpx; align-items: end; gap: 10rpx; }
-.hero strong { color: #e1bd64; font-size: 38rpx; }.hero small { color: rgba(255,255,255,.65); font-size: 19rpx; }
+.hero .strong { color: #e1bd64; font-size: 38rpx; }.hero .small { color: rgba(255,255,255,.65); font-size: 19rpx; }
 .list-title { display: block; margin: 34rpx 0 16rpx; color: #071827; font-size: 34rpx; font-weight: 750; }
 .program-card { display: flex; width: 100%; margin: 0 0 18rpx; padding: 28rpx; border: 1rpx solid #e1d6c5; border-radius: 22rpx; background: #fff; flex-direction: column; gap: 12rpx; text-align: left; }
 .program-card > view { display: flex; justify-content: space-between; color: #9b6d20; font-size: 20rpx; }
@@ -21,5 +21,10 @@
 .body-copy { color: #536779; font-size: 23rpx; line-height: 1.8; }
 .agenda,.chapter { display: grid; grid-template-columns: 90rpx 1fr; gap: 20rpx; padding: 20rpx 0; border-top: 1rpx solid #e2d9cc; }
 .agenda > text,.chapter > text { color: #9b6d20; font-size: 21rpx; font-weight: 700; }
-.agenda view,.chapter view { display: flex; flex-direction: column; gap: 8rpx; }.agenda strong,.chapter strong { color: #071827; font-size: 24rpx; }.agenda small,.chapter small { color: #718191; font-size: 21rpx; line-height: 1.65; }
+.agenda view,.chapter view { display: flex; flex-direction: column; gap: 8rpx; }.agenda .strong,.chapter .strong { color: #071827; font-size: 24rpx; }.agenda .small,.chapter .small { color: #718191; font-size: 21rpx; line-height: 1.65; }
 .primary-button { margin-top: 24rpx; }
+.chapter { width: 100%; margin: 0; border-radius: 0; background: transparent; text-align: left; }
+.reading-section { padding: 32rpx 6rpx; border-bottom: 1rpx solid #e2d9cc; }
+.reading-paragraph { display: block; margin: 22rpx 0; color: #334b5e; font-size: 28rpx; line-height: 1.9; }
+.strong { font-weight: 700; }
+.small { font-weight: 400; }
