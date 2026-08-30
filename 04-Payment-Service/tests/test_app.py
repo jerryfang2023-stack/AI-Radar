@@ -906,8 +906,9 @@ def test_community_point_recovery_does_not_refund_spent_points(client):
 
 def test_native_application_is_forwarded_to_existing_member_management(client):
     token = login(client, "applicant")
+    verified_phone = client.application.pay_client.exchange_phone_code("phone-applicant")["phoneNumber"]
     response = client.post("/api/v1/community/applications", headers=auth(token), json={
-        "name": "新申请人", "phone": "13900139000", "wechat": "new_member",
+        "name": "新申请人", "phone": verified_phone, "wechat": "new_member",
         "city": "上海", "role": "Founder / 创业者", "industry": "企业服务",
         "skills": "产品与交付", "project": "AI 企业服务", "needs": "寻找客户",
         "direction": "企业 AI", "perspective": "从真实交付开始验证"

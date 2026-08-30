@@ -14,6 +14,8 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 
 ## Frontstage UI contract
 
+- Current Mini Program candidate is 0.9.1, based on online 0.8.3. The approved community demo supersedes older observation-tab descriptions below: bottom tabs are 融资、生态、社群、我的; industry observation (reports/community highlights) is inside 生态. Community home prioritizes sharing archives, then bounties and member-map previews; no schedule or points strip on home.
+- Production community pages use the authenticated account gateway and existing member service 1.7.0, never bundled private sharing content or demo fallback. Profile edits use revision conflict checks; editorial sharing evidence is separate and not member-editable. See `docs/REVIEW-0.9.1.md` for release behavior.
 - Treat `../03-H5/` as the visual baseline for the first three tabs: 融资情报、生态图谱、商业观察. Keep the native Mini Program interaction model and capsule safe area.
 - Those three tab pages use one shared branded header in the top safe area: the H5 horizontal logo at left, one concise four-character title centered on screen, and a fine divider below. Do not repeat English headings, dates, explanatory subtitles, or internal validation language above the primary content.
 - Do not show collection controls or selection checkboxes in the financing list. Collection and selection belong to detail or dedicated management pages.

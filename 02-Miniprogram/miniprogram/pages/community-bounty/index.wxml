@@ -1,20 +1,44 @@
 <view class="page-shell">
   <app-header title="悬赏令" show-back fallback-url="/pages/community/index" />
   <view class="bounty-page">
+    <view wx:if="{{experience}}" class="experience-note">隔离体验 · 内容与操作仅保存于本机</view>
+    <view wx:if="{{busy}}" class="service-state">正在处理…</view><button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
     <block wx:if="{{mode === 'list'}}">
-      <view class="hero"><text>FOUNDER CASE · 悬赏令</text><text>把真实问题，交给真正懂它的人</text><view><span><strong>2</strong><small>进行中</small></span><span><strong>10—30</strong><small>积分悬赏</small></span><span><strong>72h</strong><small>默认周期</small></span></view></view>
-      <button class="create" bindtap="createCase"><view><small>FOUNDER</small><strong>发起一个悬赏令</strong></view><text>＋</text></button>
+      <view class="hero"><text>FOUNDER CASE · 悬赏令</text><text>把真实问题，交给真正懂它的人</text><view class="hero-stats"><view><text>{{activeCount}}</text><text>进行中</text></view><view><text>10—30</text><text>积分悬赏</text></view><view><text>72h</text><text>默认周期</text></view></view></view>
+      <button class="create" bindtap="createCase"><view><text class="kicker">FOUNDER</text><text>发起一个悬赏令</text></view><text>＋</text></button>
       <view class="filters"><button wx:for="{{filters}}" wx:key="*this" class="{{activeFilter === item ? 'active' : ''}}" data-value="{{item}}" bindtap="switchFilter">{{item}}</button></view>
-      <button wx:for="{{bounties}}" wx:key="id" class="case-card" data-id="{{item.id}}" bindtap="openCase">
-        <view><text>{{item.category}} · {{item.mode}}</text><text>{{item.points}} 积分</text></view><text class="question">{{item.question}}</text><text>{{item.founder}} · {{item.role}}</text><view class="footer"><text>{{item.answers}} 个回答 · {{item.participants}} 位参与者</text><text>{{item.time}}</text></view>
-      </button>
+      <view wx:if="{{!bounties.length}}" class="detail-card copy">暂无相关悬赏令</view>
+      <button wx:for="{{bounties}}" wx:key="id" class="case-card" data-id="{{item.id}}" bindtap="openCase"><view><text>{{item.category}} · {{item.mode}}</text><text>{{item.points}} 积分</text></view><text class="question">{{item.question}}</text><text>{{item.founder}} · {{item.role}}</text><view class="footer"><text>{{item.answers}} 个回答 · {{item.participants}} 位参与者</text><text>{{item.status}}</text></view></button>
     </block>
-    <block wx:else>
-      <view class="detail-hero"><view><text>{{item.category}} · {{item.mode}}</text><text>{{item.points}} 积分</text></view><text class="detail-question">{{item.question}}</text><text>{{item.summary}}</text><view class="founder"><text>{{item.founderInitial}}</text><view><strong>{{item.founder}}</strong><small>{{item.role}}</small></view></view></view>
-      <view class="progress"><view class="done"><i></i><text>问题发布</text></view><view class="done"><i></i><text>成员作答</text></view><view><i></i><text>Founder 结案</text></view></view>
-      <view class="detail-card"><text class="kicker">DECISION CONTEXT</text><text class="title">Founder 想解决什么</text><text class="copy">{{item.summary}}</text><view class="questions"><text>01 · 哪些需求已经足够高频，可以进入产品化？</text><text>02 · 项目收入和产品投入应该如何分配？</text><text>03 · 哪些客户验证指标可以作为决策依据？</text></view></view>
-      <view class="detail-card"><text class="kicker">MY ANSWER</text><text class="title">提交结构化回答</text><textarea maxlength="2000" value="{{answer}}" bindinput="inputAnswer" placeholder="给出你的判断、依据与可执行建议"></textarea><button class="primary-button" bindtap="submitAnswer">提交我的回答</button></view>
-      <button class="cocreate" disabled="{{participating}}" bindtap="joinCocreate">{{participating ? '已登记参加社群共创' : '参加社群共创'}}</button>
+    <block wx:elif="{{mode === 'create'}}">
+      <view class="detail-card"><text class="kicker">NEW CASE</text><text class="title">发起悬赏令</text>
+        <text class="field-label">你需要解决什么问题？</text><textarea maxlength="150" data-field="question" value="{{form.question}}" bindinput="editForm" placeholder="写清楚当前要做的决策（至少8字）" />
+        <text class="field-label">背景与希望获得的帮助</text><textarea maxlength="2000" data-field="summary" value="{{form.summary}}" bindinput="editForm" placeholder="当前阶段、已做的尝试、限制条件与关键疑问" />
+        <text class="field-label">参与方式</text><view class="filters"><button class="{{form.mode === '线上回答' ? 'active' : ''}}" data-value="线上回答" bindtap="chooseMode">线上回答</button><button class="{{form.mode === '社群共创' ? 'active' : ''}}" data-value="社群共创" bindtap="chooseMode">社群共创</button></view>
+        <text class="field-label">积分悬赏</text><view class="filters"><button wx:for="{{[10,20,30]}}" wx:key="*this" class="{{form.points === item ? 'active' : ''}}" data-value="{{item}}" bindtap="choosePoints">{{item}} 积分</button></view>
+        <button class="primary-button" disabled="{{busy}}" bindtap="submitCase">{{experience ? "提交体验申请" : "提交审核"}}</button><button class="cocreate" bindtap="saveCaseDraft">保存草稿</button><button class="text-button" bindtap="backToList">返回列表</button>
+      </view>
+    </block>
+    <block wx:elif="{{item}}">
+      <view class="detail-hero"><view><text>{{item.category}} · {{item.mode}}</text><text>{{item.points}} 积分</text></view><text class="detail-question">{{item.question}}</text><text>{{item.summary}}</text><view class="founder"><text>{{item.founderInitial}}</text><view><text>{{item.founder}}</text><text>{{item.status}}</text></view></view></view>
+      <view class="detail-card"><text class="kicker">DECISION CONTEXT</text><text class="title">问题背景</text><text class="copy" selectable>{{item.summary}}</text></view>
+      <view wx:if="{{experience && own}}" class="detail-card"><text class="title">我的悬赏令</text><text class="copy">{{item.status === '待审核' ? '体验申请已保存在本机。以下按钮仅用于模拟审核流程。' : '发起人体验流程：查看回答、共创记录、分配积分并结案。'}}</text>
+        <button wx:if="{{item.status === '待审核'}}" class="cocreate" bindtap="approve">模拟审核通过</button><button wx:if="{{item.status === '进行中'}}" class="cocreate" bindtap="sampleAnswer">添加示例回答，体验结案</button>
+      </view>
+      <view class="detail-card"><text class="kicker">ANSWERS</text><text class="title">回答与建议</text><text wx:if="{{!item.responses.length}}" class="copy">暂无已发布回答</text>
+        <view wx:for="{{item.responses}}" wx:key="id" class="answer-entry"><text class="answer-name">{{item.name}}{{item.status === "pending" ? " · 审核中" : (item.status === "rejected" ? " · 未通过，请修改" : "")}}</text><text class="field-label">判断</text><text class="copy" selectable>{{item.judgement}}</text><text class="field-label">依据</text><text class="copy" selectable>{{item.reason}}</text><text class="field-label">行动建议</text><text class="copy" selectable>{{item.steps}}</text><text wx:if="{{item.help}}" class="copy">可提供帮助：{{item.help}}</text></view>
+      </view>
+      <view wx:if="{{!own && item.status === '进行中'}}" class="detail-card"><text class="kicker">MY ANSWER</text><text class="title">我的结构化回答</text>
+        <text class="field-label">核心判断</text><textarea maxlength="800" data-field="judgement" value="{{response.judgement}}" bindinput="inputAnswer" placeholder="你的判断与建议方向" />
+        <text class="field-label">判断依据</text><textarea maxlength="1200" data-field="reason" value="{{response.reason}}" bindinput="inputAnswer" placeholder="相关经验、事实或案例" />
+        <text class="field-label">可执行的行动建议</text><textarea maxlength="1200" data-field="steps" value="{{response.steps}}" bindinput="inputAnswer" placeholder="建议从哪几步开始" />
+        <text class="field-label">你可提供的帮助（选填）</text><input maxlength="200" data-field="help" value="{{response.help}}" bindinput="inputAnswer" placeholder="资源、经验或后续沟通" />
+        <button class="primary-button" disabled="{{busy}}" bindtap="submitAnswer">{{experience ? "保存体验回答" : "提交回答审核"}}</button><button class="cocreate" bindtap="saveAnswerDraft">保存草稿</button>
+      </view>
+      <button wx:if="{{!own && item.mode === '社群共创' && item.status === '进行中'}}" class="cocreate" disabled="{{participating}}" bindtap="joinCocreate">{{participating ? '已登记参加社群共创' : '参加社群共创'}}</button>
+      <view wx:if="{{participating}}" class="detail-card"><text class="title">我的共创记录</text><text class="copy">已登记参加本次社群共创。</text></view>
+      <view wx:if="{{own && approvedResponses.length && (item.status === '待结案' || item.status === '进行中')}}" class="detail-card"><text class="title">积分分配 · 共 {{item.points}} 分</text><view wx:for="{{approvedResponses}}" wx:key="id" class="allocation-row"><text>{{item.name}}</text><input type="number" maxlength="3" data-id="{{item.id}}" bindinput="setAllocation" placeholder="分配积分" /></view><button class="primary-button" bindtap="closeCase">确认分配并结案</button></view>
+      <view wx:if="{{item.status === '已结案'}}" class="detail-card"><text class="title">已结案</text><view wx:for="{{item.allocations}}" wx:key="id" class="copy">{{item.name || (item.id === 'sample-helper' ? '示例参与者' : '参与者')}} · {{item.points}} 积分</view><text class="copy">{{experience ? '本机体验记录，不计入正式余额。' : '积分已记录。'}}</text></view>
     </block>
   </view>
 </view>

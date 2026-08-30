@@ -732,7 +732,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
 
     @app.errorhandler(CommunityServiceError)
     def handle_community_error(error):
-        return jsonify(error={"code": "COMMUNITY_SERVICE_ERROR", "message": str(error)}), 502
+        return jsonify(error={"code": error.code, "message": str(error)}), error.status
 
     @app.errorhandler(400)
     def handle_bad_request(error):
@@ -1282,6 +1282,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     @auth_required
     def submit_community_application():
         payload = request.get_json(silent=True) or {}
+        # A typed phone number is not proof of ownership. Reuse the verified phone
+        # digest established during registration/binding before associating a member.
+        with closing(db()) as conn:
+            applying_user = user_by_id(conn, g.user_id)
+        submitted_phone = re.sub(r"\D", "", str(payload.get("phone") or ""))
+        if len(submitted_phone) != 11 or not applying_user["phone_hash"] or not hmac.compare_digest(phone_digest(submitted_phone), applying_user["phone_hash"]):
+            return jsonify(error={"code": "PHONE_VERIFICATION_REQUIRED", "message": "请填写当前账号已授权的手机号"}), 403
         required = ["name", "phone", "wechat", "city", "role", "industry", "skills", "project", "needs", "direction", "perspective"]
         cleaned = {field: str(payload.get(field) or "").strip() for field in required}
         if any(not cleaned[field] for field in required):
@@ -1677,6 +1684,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             conn.commit()
         return "", 204
 
+    from payment_service.community_hub import register_routes as register_community_hub_routes
+    register_community_hub_routes(app, db=db, auth_required=auth_required, user_by_id=user_by_id)
     return app
 
 

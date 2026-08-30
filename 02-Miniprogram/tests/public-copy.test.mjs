@@ -113,7 +113,7 @@ test("records the explicit registration funnel instead of silent account authent
   assert.match(registrationLogic, /phone_authorization_cancelled/u);
   assert.match(registrationLogic, /registrationFailureReason/u);
   assert.doesNotMatch(paymentSource, /registration_started|registration_client_confirmed/u);
-  assert.match(analyticsSource, /const APP_VERSION = "0\.8\.3"/u);
+  assert.match(analyticsSource, /const APP_VERSION = "0\.9\.1"/u);
 });
 
 test("keeps lists public and gates only the second distinct detail behind a voluntary action", () => {

@@ -163,6 +163,11 @@ async function fetchMembership() {
   return withExistingToken((token) => apiRequest("/member/me", { token }));
 }
 
+async function communityRequest(path, options = {}) {
+  if (path === "home" && !options.method) return apiRequest("/community/home");
+  return withExistingToken((token) => apiRequest(`/community/${path}`, { ...options, token }));
+}
+
 async function recordMemberBehavior(type, subjectId, behaviorDate) {
   return withExistingToken((token) => apiRequest("/member/behaviors", {
     method: "POST",
@@ -230,6 +235,7 @@ module.exports = {
   login,
   hasAuthToken,
   fetchMembership,
+  communityRequest,
   recordMemberBehavior,
   bindPhoneNumber,
   purchaseMembership,

@@ -1,6 +1,7 @@
 <view class="page-shell">
   <app-header title="社群" />
   <view class="community-page">
+    <button wx:if="{{experience}}" class="experience-note" bindtap="switchExperience">隔离体验 · {{experienceStatus}} · 点击切换身份</button>
     <view class="community-nav" aria-label="社群功能导航">
       <button class="active" data-url="/pages/community-program/index" bindtap="openProtected">造浪者计划</button>
       <button data-url="/pages/community-bounty/index" bindtap="openProtected">悬赏令</button>
@@ -8,56 +9,43 @@
       <button data-url="/pages/community-graph/index" bindtap="openProtected">行业图谱</button>
     </view>
 
-    <button class="community-focus-card" data-url="/pages/community-program/index?type=schedule&amp;id={{schedules[0].id}}" bindtap="openProtected">
-      <view class="focus-meta"><text>造浪者计划 · {{schedules[0].issue}}</text><text>{{schedules[0].date}}</text></view>
-      <text class="focus-status">{{schedules[0].status}}</text>
-      <text class="focus-title">{{schedules[0].title}}</text>
-      <text class="focus-copy">{{schedules[0].speakers}}依次分享，每人 15 分钟。</text>
-      <view class="focus-action"><text>查看本场排期</text><text>›</text></view>
-    </button>
-
-    <view class="community-quick-grid">
-      <button data-url="/pages/community-program/index?type=schedule&amp;id={{schedules[1].id}}" bindtap="openProtected">
-        <text class="quick-kicker">下一场 · {{schedules[1].date}}</text>
-        <text class="quick-title">{{schedules[1].title}}</text>
-        <text class="quick-copy">{{schedules[1].speakers}}</text>
+    <view wx:if="{{loading}}" class="service-state">正在加载社群内容…</view>
+    <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
+    <view class="sharing-section">
+      <view class="section-heading"><view><text class="eyebrow">SHARING ARCHIVE</text><text class="section-main">分享实录</text></view><button data-url="/pages/community-program/index?tab=archive" bindtap="openProtected">查看全部 ›</button></view>
+      <text wx:if="{{!loading && !error && !featuredArchive}}" class="service-state">暂无已发布实录</text>
+      <button wx:if="{{featuredArchive}}" class="community-focus-card" data-url="/pages/community-program/index?type=archive&amp;id={{featuredArchive.id}}" bindtap="openProtected">
+        <view class="focus-meta"><text>精选实录 · 第 {{featuredArchive.issue}} 场</text><text>{{featuredArchive.dateShort}}</text></view>
+        <text class="focus-title">{{featuredArchive.title}}</text>
+        <text class="focus-copy">{{featuredArchive.subtitle}}</text>
+        <text class="focus-speakers">{{featuredArchive.speakers}}</text>
+        <view class="focus-action"><text>阅读完整实录</text><text>›</text></view>
       </button>
-      <button data-url="/pages/community-program/index?type=archive&amp;id={{archives[0].id}}" bindtap="openProtected">
-        <text class="quick-kicker">最新实录 · 第 {{archives[0].issue}} 场</text>
-        <text class="quick-title">{{archives[0].title}}</text>
-        <text class="quick-copy">已完成整理与确认</text>
-      </button>
-    </view>
-
-    <view class="home-section archive-section">
-      <view class="section-heading"><view><text class="eyebrow">SHARING ARCHIVE</text><text class="section-main">近期实录</text></view><button data-url="/pages/community-program/index?tab=archive" bindtap="openProtected">查看全部 ›</button></view>
-      <view class="archive-list">
-        <button wx:for="{{archives}}" wx:key="id" class="archive-row" data-url="/pages/community-program/index?type=archive&amp;id={{item.id}}" bindtap="openProtected">
-          <view class="archive-time"><text>已结束</text><text>{{item.dateShort}} 20:00</text></view>
-          <view class="archive-copy"><text>{{item.title}}</text><text>{{item.speakers}}</text></view>
-          <text class="archive-action">实录 ›</text>
+      <view class="community-quick-grid">
+        <button wx:for="{{olderArchives}}" wx:key="id" data-url="/pages/community-program/index?type=archive&amp;id={{item.id}}" bindtap="openProtected">
+          <view class="quick-meta"><text>第 {{item.issue}} 场</text><text>{{item.dateShort}}</text></view>
+          <text class="quick-title">{{item.title}}</text>
+          <view class="quick-footer"><text>{{item.speakers}}</text><text>↗</text></view>
         </button>
       </view>
     </view>
 
-    <button class="bounty-feature" data-url="/pages/community-bounty/index?id={{bounty.id}}" bindtap="openProtected">
+    <button wx:if="{{bounty}}" class="bounty-feature" data-url="/pages/community-bounty/index?id={{bounty.id}}" bindtap="openProtected">
       <view class="bounty-top"><text>{{bounty.category}} · {{bounty.mode}}</text><text>查看详情 ›</text></view>
       <view class="bounty-title"><text>悬赏令</text><text>{{bounty.points}} 积分</text></view>
       <text class="bounty-question">{{bounty.question}}</text>
       <view class="bounty-bottom"><text>{{bounty.answers}} 个回答 · {{bounty.participants}} 位参与者</text><text>{{bounty.time}}</text></view>
     </button>
 
+    <button wx:else class="bounty-feature" data-url="/pages/community-bounty/index" bindtap="openProtected"><view class="bounty-title"><text>悬赏令</text></view><text class="bounty-question">发起问题，与成员一起寻找答案</text><view class="bounty-bottom"><text>查看悬赏令</text><text>›</text></view></button>
+
     <view class="home-section role-section">
       <view class="section-heading"><view><text class="eyebrow">INDUSTRY ROLE MAP</text><text class="section-main">行业图谱</text></view><button data-url="/pages/community-graph/index" bindtap="openProtected">查看图谱 ›</button></view>
       <view class="member-chips">
         <button wx:for="{{featuredMembers}}" wx:key="id" data-url="/pages/community-graph/index?mode=member&amp;id={{item.id}}" bindtap="openProtected"><text>{{item.avatar}}</text><text class="member-name">{{item.name}}</text><text class="member-role">{{item.roleShort}}</text></button>
-        <button data-url="/pages/community-graph/index?tab=directory" bindtap="openProtected"><text class="more">•••</text><text class="member-name">更多成员</text><text class="member-role">54 位</text></button>
+        <button data-url="/pages/community-graph/index?tab=directory" bindtap="openProtected"><text class="more">•••</text><text class="member-name">更多成员</text><text class="member-role">{{memberCount}} 位</text></button>
       </view>
     </view>
 
-    <button class="points-strip" data-url="/pages/community-points/index" bindtap="openProtected">
-      <view class="points-primary"><text>社群积分</text><text>{{points}} <text class="points-unit">积分</text></text></view>
-      <view class="points-latest"><text>最近积分 <text class="points-plus">+10</text></text><text>›</text></view>
-    </button>
   </view>
 </view>

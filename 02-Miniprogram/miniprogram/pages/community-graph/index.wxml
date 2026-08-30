@@ -1,40 +1,60 @@
+<template name="role-evidence">
+  <view class="evidence-card">
+    <view class="evidence-heading"><text>行业角色与分享证据</text><text>{{evidence.asOf}}</text></view>
+    <text class="evidence-sector">{{evidence.sector}} · {{evidence.roleShort}}</text>
+    <view class="evidence-tags"><text wx:for="{{evidence.roles}}" wx:key="*this">{{item}}</text></view>
+    <text class="evidence-stage">{{evidence.stage}}</text>
+    <view class="evidence-details">
+      <view><text>背景</text><text>{{evidence.background}}</text></view>
+      <view><text>在做</text><text>{{evidence.current}}</text></view>
+      <view><text>能力</text><text>{{evidence.supply}}</text></view>
+      <view><text>需求</text><text>{{evidence.need}}</text></view>
+    </view>
+    <view class="evidence-topics"><text wx:for="{{evidence.tags}}" wx:key="*this">{{item}}</text></view>
+    <text class="evidence-note">需求：{{evidence.needType}} · 依据本人分享归纳，具体合作请与本人确认。</text>
+    <button class="evidence-source" bindtap="openEvidence">第 {{evidence.issue}} 场 · {{evidence.date}} · {{evidence.evidenceGrade}} ›</button>
+  </view>
+</template>
 <view class="page-shell">
   <app-header title="行业图谱" show-back fallback-url="/pages/community/index" />
   <view class="graph-page">
+    <view wx:if="{{loading}}" class="service-state">正在加载会员资料…</view>
+    <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
+    <view wx:if="{{experience}}" class="experience-note">隔离体验 · 成员列表为精选样例</view>
     <block wx:if="{{mode === 'graph'}}">
       <view class="top-actions"><view class="segment"><button class="{{tab === 'map' ? 'active' : ''}}" data-tab="map" bindtap="switchTab">行业图谱</button><button class="{{tab === 'directory' ? 'active' : ''}}" data-tab="directory" bindtap="switchTab">通讯录</button></view><button class="profile-link" bindtap="openProfile">我的档案</button></view>
       <block wx:if="{{tab === 'map'}}">
-        <view class="section-heading"><view><text>INDUSTRY ROLE MAP</text><text>成员行业图谱</text></view><text>54 位成员 · 6 类角色</text></view>
-        <view class="supply"><text>成员供给结构</text><view><i class="s1"></i><i class="s2"></i><i class="s3"></i><i class="s4"></i></view><view><span>场景 / 市场 <strong>29</strong></span><span>企业服务 <strong>8</strong></span><span>技术构建 <strong>6</strong></span><span>资本 / 研究 <strong>5</strong></span></view></view>
-        <scroll-view class="role-tabs" scroll-x enable-flex><button wx:for="{{roles}}" wx:key="name" class="{{activeRole === index ? 'active' : ''}}" data-index="{{index}}" bindtap="selectRole"><text>0{{index + 1}}</text><view><strong>{{item.name}}</strong><small>{{item.count}} 人</small></view></button></scroll-view>
-        <view class="role-hero"><view><text>0{{activeRole + 1}} · 当前角色</text><text>{{activeRoleData.share}}</text></view><text>{{activeRoleData.name}}</text><text>{{activeRoleData.description}}</text><view><strong>{{activeRoleData.count}}</strong><small>位成员</small></view></view>
-        <view class="member-heading"><view><text>MEMBERS BY ROLE</text><text>{{activeRoleData.name}}成员</text></view><text>{{activeRoleData.count}} 人</text></view>
-        <view class="member-list"><button wx:for="{{activeRoleData.members}}" wx:key="id" data-id="{{item.id}}" bindtap="openMember"><text class="avatar">{{item.avatar}}</text><view><strong>{{item.name}}</strong><small>{{item.company}} · {{item.city}}</small></view><text>›</text></button></view>
+        <view class="section-heading"><view><text>INDUSTRY ROLE MAP</text><text>成员行业图谱</text></view><text>{{members.length}} 位 · 6 类角色</text></view>
+        <view class="supply"><text>成员供给结构</text><view><view wx:for="{{supply}}" wx:key="name" class="i s{{index + 1}}" style="flex: {{item.count}}"></view></view><view><view wx:for="{{supply}}" wx:key="name" class="span">{{item.name}} <text class="strong">{{item.count}}</text></view></view></view>
+        <scroll-view class="role-tabs" scroll-x enable-flex><button wx:for="{{roles}}" wx:key="name" class="{{activeRole === index ? 'active' : ''}}" data-index="{{index}}" bindtap="selectRole"><text>0{{index + 1}}</text><view><text class="strong">{{item.name}}</text><text class="small">{{item.count}} 人</text></view></button></scroll-view>
+        <text wx:if="{{!loading && !activeRoleData.count}}" class="service-state">该角色暂无公开成员</text><view class="member-list"><button wx:for="{{activeRoleData.members}}" wx:key="id" data-id="{{item.id}}" bindtap="openMember"><text class="avatar">{{item.avatar}}</text><view><text class="strong">{{item.name}}</text><text class="small">{{item.company}} · {{item.city}}</text></view><text>›</text></button></view>
       </block>
       <block wx:else>
-        <view class="section-heading"><view><text>MEMBER DIRECTORY</text><text>全部成员</text></view><text>54 位</text></view>
+        <view class="section-heading"><view><text>MEMBER DIRECTORY</text><text>全部成员</text></view><text>{{members.length}} 位</text></view>
         <view class="search"><text>⌕</text><input placeholder="姓名 / 公司 / 行业 / 城市" value="{{query}}" bindinput="search" /></view>
-        <view class="directory"><button wx:for="{{filteredMembers}}" wx:key="id" data-id="{{item.id}}" bindtap="openMember"><text class="avatar gold">{{item.avatar}}</text><view><strong>{{item.name}}</strong><small>{{item.role}} · {{item.company}}</small><text>{{item.project}}</text><view><span>{{item.city}}</span><span>{{item.industry}}</span></view></view><text>›</text></button></view>
+        <view class="directory"><button wx:for="{{filteredMembers}}" wx:key="id" data-id="{{item.id}}" bindtap="openMember"><text class="avatar gold">{{item.avatar}}</text><view><text class="strong">{{item.name}}</text><text class="small">{{item.role}} · {{item.company}}</text><text>{{item.project}}</text><view><view class="span">{{item.city}}</view><view class="span">{{item.industry}}</view></view></view><text>›</text></button></view>
       </block>
     </block>
     <block wx:elif="{{mode === 'member'}}">
-      <view class="profile-hero"><text class="avatar-large">{{member.avatar}}</text><view><text>MEMBER PROFILE</text><text>{{member.name}}</text><text>{{member.role}} · {{member.company}}</text><view><span>{{member.city}}</span><span wx:for="{{member.ai}}" wx:key="*this">{{item}}</span></view></view></view>
-      <view class="public-card"><text>PUBLIC PROFILE</text><text>正在做什么</text><text>{{member.project}}</text><view><view><small>行业背景</small><strong>{{member.industry}}</strong></view><view><small>AI 实践方向</small><strong>{{member.aiText}}</strong></view><view><small>可交流能力</small><strong>{{member.ability}}</strong></view><view><small>当前诉求</small><strong>{{member.need}}</strong></view></view></view>
+      <view class="profile-hero"><text class="avatar-large">{{member.avatar}}</text><view><text>MEMBER PROFILE</text><text>{{member.name}}</text><text>{{member.role}} · {{member.company}}</text><view><view class="span">{{member.city}}</view><view class="span" wx:for="{{member.aiList}}" wx:key="*this">{{item}}</view></view></view></view>
+      <template wx:if="{{member.roleEvidence}}" is="role-evidence" data="{{evidence: member.roleEvidence}}" />
+      <view class="public-card"><text>PUBLIC PROFILE</text><text>正在做什么</text><text>{{member.project}}</text><view><view><text class="small">行业背景</text><text class="strong">{{member.industry}}</text></view><view><text class="small">AI 实践方向</text><text class="strong">{{member.aiText}}</text></view><view><text class="small">可交流能力</text><text class="strong">{{member.ability}}</text></view><view><text class="small">当前诉求</text><text class="strong">{{member.need}}</text></view></view></view>
       <text class="privacy">仅展示成员主动公开的资料；手机号、微信号和内部审核信息不会公开。</text>
     </block>
     <block wx:elif="{{mode === 'profile'}}">
       <view class="profile-title"><text>我的档案</text><button bindtap="editProfile">编辑资料</button></view>
-      <view class="profile-hero"><text class="avatar-large">{{profile.avatar}}</text><view><text>MY COMMUNITY PROFILE</text><text>{{profile.name}}</text><text>{{profile.role}} · {{profile.company}}</text><view><span>{{profile.city}}</span><span>{{profile.ai}}</span></view></view></view>
-      <view class="public-card"><text>PUBLIC PROFILE</text><text>正在做什么</text><text>{{profile.project}}</text><view><view><small>行业背景</small><strong>{{profile.industry}}</strong></view><view><small>AI 实践方向</small><strong>{{profile.ai}}</strong></view><view><small>可交流能力</small><strong>{{profile.ability}}</strong></view><view><small>当前诉求</small><strong>{{profile.need}}</strong></view></view></view>
+      <view class="profile-hero"><text class="avatar-large">{{profile.avatar}}</text><view><text>MY COMMUNITY PROFILE</text><text>{{profile.name}}</text><text>{{profile.role}} · {{profile.company}}</text><view><view class="span">{{profile.city}}</view><view class="span">{{profile.ai}}</view></view></view></view>
+      <template wx:if="{{profile.roleEvidence}}" is="role-evidence" data="{{evidence: profile.roleEvidence}}" />
+      <view class="public-card"><text>PUBLIC PROFILE</text><text>正在做什么</text><text>{{profile.project}}</text><view><view><text class="small">行业背景</text><text class="strong">{{profile.industry}}</text></view><view><text class="small">AI 实践方向</text><text class="strong">{{profile.ai}}</text></view><view><text class="small">可交流能力</text><text class="strong">{{profile.ability}}</text></view><view><text class="small">当前诉求</text><text class="strong">{{profile.need}}</text></view></view></view>
       <text class="privacy">这是你在行业图谱与成员通讯录中的公开资料。手机号、微信号和内部审核信息不会公开。</text>
     </block>
     <block wx:else>
-      <view class="edit-hero"><text>MY COMMUNITY PROFILE</text><text>更新公开会员资料</text><text>保存后将同步更新行业图谱和通讯录中的个人档案。</text></view>
+      <view class="edit-hero"><text>MY COMMUNITY PROFILE</text><text>更新公开会员资料</text><text>{{experience ? '本次修改仅更新本机体验档案。' : '保存公开资料，供行业图谱和通讯录展示。'}}</text></view>
       <view class="form-card">
         <label>姓名 / 常用称呼 *</label><input value="{{profile.name}}" data-field="name" bindinput="updateField" maxlength="80" />
         <label>所在城市 *</label><input value="{{profile.city}}" data-field="city" bindinput="updateField" maxlength="100" />
         <label>公司 / 项目</label><input value="{{profile.company}}" data-field="company" bindinput="updateField" maxlength="120" />
-        <label>当前身份 *</label><input value="{{profile.role}}" data-field="role" bindinput="updateField" maxlength="80" />
+        <label>当前身份 *</label><input value="{{profile.role}}" data-field="role" bindinput="updateField" maxlength="40" />
         <label>行业领域 *</label><input value="{{profile.industry}}" data-field="industry" bindinput="updateField" maxlength="300" />
         <label>AI 实践方向</label><input value="{{profile.ai}}" data-field="ai" bindinput="updateField" maxlength="300" />
         <label>当前项目 *</label><textarea value="{{profile.project}}" data-field="project" bindinput="updateField" maxlength="1200"></textarea>
@@ -42,7 +62,7 @@
         <label>当前诉求</label><textarea value="{{profile.need}}" data-field="need" bindinput="updateField" maxlength="1200"></textarea>
       </view>
       <text class="privacy">仅保存公开字段，不展示手机号、微信号或内部审核信息。</text>
-      <button class="primary-button save" bindtap="saveProfile">保存修改</button>
+      <button class="primary-button save" loading="{{saving}}" disabled="{{saving || loading}}" bindtap="saveProfile">保存修改</button>
     </block>
   </view>
 </view>

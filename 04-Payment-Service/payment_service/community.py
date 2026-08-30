@@ -5,7 +5,10 @@ import urllib.request
 
 
 class CommunityServiceError(RuntimeError):
-    pass
+    def __init__(self, message, status=502, code="COMMUNITY_SERVICE_ERROR"):
+        super().__init__(message)
+        self.status = status
+        self.code = code
 
 
 class CommunityClient:
@@ -35,7 +38,8 @@ class CommunityClient:
                 message = (json.loads(raw or b"{}").get("error") or {}).get("message")
             except json.JSONDecodeError:
                 message = ""
-            raise CommunityServiceError(message or "社群服务请求失败") from exc
+            status = exc.code if exc.code in {400, 403, 404, 409, 429} else 502
+            raise CommunityServiceError(message or "社群服务请求失败", status) from exc
         except (urllib.error.URLError, TimeoutError) as exc:
             raise CommunityServiceError("社群服务暂时不可用") from exc
 
@@ -48,3 +52,7 @@ class CommunityClient:
 
     def submit_application(self, payload):
         return self._request("/api/internal/v1/applications", method="POST", payload=payload)
+
+    def hub(self, path, *, viewer=None, method="GET", payload=None):
+        query = "?" + urllib.parse.urlencode({"viewer": int(viewer)}) if viewer is not None else ""
+        return self._request("/api/internal/v1/community/" + path + query, method=method, payload=payload)
