@@ -38,6 +38,8 @@ Event Library, Entity Library, and Trend Radar expose the same evidence-backed C
 
 ## Current Frontstage Versions
 
+The OPS membership panel (`operations-console.html#membership`) owns independent public community/application summaries, bounded 7/30/90-day filters, explicit unavailable states and authenticated management links. Do not expose identities, aggregate across unresolved cross-platform accounts, infer community renewal/expiry fields, or grant writes through this panel. Verify service privacy/authentication tests and `test:ops-unified` for changes.
+
 | Scope | Version | Meaning |
 |---|---|---|
 | Compatibility website | `SITE-V4.6.1-research-retirement` | Research, funding, and report compatibility routes redirect to the independent AI financing site. |

@@ -55,7 +55,7 @@ export function buildPortfolio(root, ledgerVersions, snapshot = {}) {
     skillData = JSON.parse(raw.replace(/^window\.WaveSightLocalSkillStore\s*=\s*/u, "").replace(/;\s*$/u, ""));
   } catch { /* Missing snapshot is shown as unavailable, not zero. */ }
   return {
-    platforms: platformDefinitions.map((platform) => ({ ...platform, version: versions.find((item) => item.key === platform.versionKey) || {}, analytics: ["funding", "miniprogram"].includes(platform.id) ? "聚合统计已接入" : "业务统计待接入" })),
+    platforms: platformDefinitions.map((platform) => ({ ...platform, version: versions.find((item) => item.key === platform.versionKey) || {}, analytics: platform.id === "community" ? "会员与分享汇总按需接入" : ["funding", "miniprogram"].includes(platform.id) ? "聚合统计与会员权益已接入" : "业务统计待接入" })),
     versions,
     skills: { total: skillData.skills?.length ?? null, generatedAt: skillData.meta?.generatedAt || "", sources: skillData.meta?.catalogSources || [], platforms: skillData.meta?.platformCoverage || [] },
     analytics: { url: "https://www.zkdlj.vip/api/v1/analytics/summary", scope: "融资站与小程序的匿名聚合；不包含社群会员明细" },

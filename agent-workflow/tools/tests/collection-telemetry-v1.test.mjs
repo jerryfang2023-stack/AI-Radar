@@ -121,7 +121,7 @@ test("daily workflow keeps OPS telemetry independent and does not write a local 
 test("operations console renders the four V4 production stages instead of the V3 funnel", () => {
   const html = fs.readFileSync(path.join(process.cwd(), "01-SiteV2/site/operations-console.html"), "utf8");
   const client = fs.readFileSync(path.join(process.cwd(), "01-SiteV2/site/assets/operations-console.js"), "utf8");
-  assert.match(html, /OPS V3\.0\.0/u);
+  assert.ok(html.includes(OPS_VERSION.replace("OPS-V", "OPS V").split("-")[0]));
   assert.match(html, /Production Stages/u);
   assert.match(client, /application_projection/u);
   assert.match(client, /fact_build/u);

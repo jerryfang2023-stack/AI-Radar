@@ -18,7 +18,7 @@ Validation: both service pytest suites; `npm run test:ops-unified`; existing ana
 
 ## Scope and boundaries
 
-Six modules: Overview, Analytics, Data Quality, Version Governance, Skill Store, System Settings.
+Seven modules: Overview, Analytics, Membership & Entitlements, Data Quality, Version Governance, Skill Store, System Settings.
 Issue-center and task-chain panels are retired. Incident records, daily supervision, collection telemetry and batch history remain owned by their existing workflows.
 
 The passwordless page displays sanitized aggregate analytics and public version metadata only. Member identities, payment/admin actions and protected community pages keep authentication. Hidden navigation and noindex are not authentication.
