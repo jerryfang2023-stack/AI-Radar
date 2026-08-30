@@ -184,7 +184,11 @@ export function classifyCommunityStages({
     data: communityDataHealthy ? "healthy" : dataWaiting ? "waiting" : localWindowPassed ? "failed" : "pre_window_waiting",
     publication: published
       ? "published"
-      : publicationWaiting ? "waiting" : publishWindowPassed ? "failed" : "not_due",
+      : publicationWaiting
+        ? "waiting"
+        : !communityDataHealthy && localWindowPassed
+          ? "blocked_on_data"
+          : publishWindowPassed ? "failed" : "not_due",
     task_execution: !taskAvailable
       ? "unavailable"
       : ["Queued", "Running"].includes(taskState)
@@ -910,6 +914,15 @@ export function communityTaskPending({
   return taskState === "Running" && scheduledTaskRunDate(lastRunTime) === targetDate;
 }
 
+export function communityPublicationMissingIsProblem({
+  communityDataHealthy,
+  publicationReady,
+  publishWindowPassed,
+  taskPending,
+}) {
+  return communityDataHealthy && !publicationReady && publishWindowPassed && !taskPending;
+}
+
 function buildCommunityLane() {
   const problems = [];
   const waiting = [];
@@ -1047,7 +1060,12 @@ function buildCommunityLane() {
   }
 
   if (gh.available) {
-    if (!publicationReady && publishWindowPassed && !taskPending) {
+    if (communityPublicationMissingIsProblem({
+      communityDataHealthy,
+      publicationReady,
+      publishWindowPassed,
+      taskPending,
+    })) {
       addProblem(problems, "no same-date Community Intelligence publish workflow after the morning publication window", "manual_required");
       actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass");
     } else if (!gh.latest_run && openPr) {

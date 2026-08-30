@@ -172,6 +172,15 @@ test("community collection restarts only its dedicated Chrome after a CDP timeou
   assert.match(runner, /CommandLine\.ToLowerInvariant\(\)\.Contains\(\$profileLower\)/u);
 });
 
+test("community collection stops immediately when output reports expired login", () => {
+  const runner = read("run-community-intelligence.ps1");
+  const loginCheck = runner.indexOf('$detail -match "COMMUNITY_LOGIN_REQUIRED"');
+  const exitCheck = runner.indexOf("if ($exitCode -ne 0)");
+  assert.ok(loginCheck >= 0, "runner must inspect collector output for the login marker");
+  assert.ok(loginCheck < exitCheck, "login marker must be handled even when the collector exits zero");
+  assert.match(runner, /if \(\$lastError -match "COMMUNITY_LOGIN_REQUIRED"\)[^]*MANUAL_ACTION_REQUIRED[^]*break/u);
+});
+
 test("closure reuses its self-check instead of running it twice", () => {
   const controller = read("run-daily-automation-controller.mjs");
   const repair = read("run-codex-self-repair.mjs");

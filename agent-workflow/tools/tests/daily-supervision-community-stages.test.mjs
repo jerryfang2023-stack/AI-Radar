@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  communityPublicationMissingIsProblem,
   classifyCommunityPublication,
   classifyCommunityStages,
   communityTaskPending,
@@ -39,9 +40,24 @@ test("expired login is carried as an independent manual state", () => {
     loginState: "manual_relogin_required",
   });
   assert.equal(stages.data, "failed");
-  assert.equal(stages.publication, "failed");
+  assert.equal(stages.publication, "blocked_on_data");
   assert.equal(stages.task_execution, "failed");
   assert.equal(stages.login, "manual_relogin_required");
+});
+
+test("an unhealthy local gate blocks downstream missing-publication escalation", () => {
+  assert.equal(communityPublicationMissingIsProblem({
+    communityDataHealthy: false,
+    publicationReady: false,
+    publishWindowPassed: true,
+    taskPending: false,
+  }), false);
+  assert.equal(communityPublicationMissingIsProblem({
+    communityDataHealthy: true,
+    publicationReady: false,
+    publishWindowPassed: true,
+    taskPending: false,
+  }), true);
 });
 
 test("a running scheduled task is waiting even while Task Scheduler reports 0x41301", () => {
