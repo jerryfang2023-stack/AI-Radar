@@ -794,6 +794,9 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     def admin_analytics_summary():
         return analytics_summary()
 
+    from payment_service.member_operations import register as register_member_operations
+    register_member_operations(app, db, utcnow)
+
     @app.get("/api/v1/analytics/summary")
     def public_analytics_summary():
         # Passwordless OPS reads aggregates only; administrative routes stay protected.

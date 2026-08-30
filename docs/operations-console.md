@@ -1,6 +1,20 @@
 # Unified Operations Console
 
-Release: OPS-V3.0.0-unified-platform / Skill Store v2.2.0
+Release: OPS-V3.1.0-membership / Skill Store v2.2.0
+
+## Membership operations (OPS V3.1.0)
+
+`operations-console.html#membership` is the seventh panel. Community and application sources load independently on opening the panel, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. No identity data is fetched or rendered.
+
+- Community: `https://members.zkdlj.vip/api/v1/operations/membership-summary`. Formal members require approval and a valid past/present joined date. Participation and speakers resolve only unique member identities from dated issue evidence; unmatched activity aliases are counted separately. One person per issue is one participation; the highest issue activity score plus manual adjustments produces the OPS points distribution. Opt-outs are excluded from points/activity, not membership stock.
+- Application: `https://www.zkdlj.vip/api/v1/analytics/membership/summary`. Current accounts exclude merged-away and future-created rows. Effective entitlement includes paid and points-granted membership; trials are separate. First and repeat purchases use server-confirmed non-refunded orders, never client events. Repeat purchases are not auto-renewal. Active behavior means recorded growth-task actions, not all visitors.
+- Periods use Asia/Shanghai calendar dates including today; stock and point distributions are current totals. Expiring means the next seven elapsed days. Existing historical records are included; this is not limited to the traffic analytics launch date.
+- Membership package distribution is the latest non-refunded paid package among currently entitled accounts, with an other/redemption bucket; it does not reconstruct mixed entitlement sources.
+- Do not add the two sources' members or points: cross-platform identity resolution is not implemented here. Community expiry/renewals and offline benefit claims are explicitly unavailable. No claim/renewal rate is inferred.
+- Both endpoints accept GET/OPTIONS only, return an explicit allowlist under `MEMBER-OPS-V1.0`, use query-only SQLite transactions and no-store responses. The page sends no credentials. Admin/member/write routes keep their original authentication.
+- The community code is additive and compatible with production 1.6.13 and source 1.7.x. Deploy only `member_operations.py` and its registration hunk onto the verified production app; do not deploy unrelated 1.7.0 hub features or overwrite runtime data. Back up code and SQLite before restart; rollback only these code files.
+
+Validation: both service pytest suites; `npm run test:ops-unified`; existing analytics tests, OPS/Skill/version gates; desktop/mobile browser checks. Public aggregates are intentionally public, not protected by hidden navigation.
 
 ## Scope and boundaries
 

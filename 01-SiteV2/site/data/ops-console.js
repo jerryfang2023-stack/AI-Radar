@@ -120,7 +120,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.0.0-unified-platform",
+        "value": "OPS-V3.1.0-membership",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -518,8 +518,8 @@ window.WaveSightOpsConsole = {
     "sourceBaseline": "SITE-V4.6.1-research-retirement"
   },
   "meta": {
-    "version": "OPS-V3.0.0-unified-platform",
-    "generatedAt": "2026-08-30T13:25:11.690Z",
+    "version": "OPS-V3.1.0-membership",
+    "generatedAt": "2026-08-30T13:51:15.745Z",
     "date": "2026-08-30",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1550,12 +1550,12 @@ window.WaveSightOpsConsole = {
       {
         "id": "application_projection",
         "label": "应用投影",
-        "status": "passed",
+        "status": "partial",
         "counts": {
           "opportunity_map": "passed",
           "trend_radar": "passed",
           "funding_insights": "passed",
-          "fde_hardware_sync": "passed"
+          "fde_hardware_sync": "unknown"
         },
         "evidence": [
           "agent-workflow/reports/2026-08-30-persistent-asset-manifest.json"
@@ -1564,10 +1564,10 @@ window.WaveSightOpsConsole = {
       {
         "id": "publication",
         "label": "发布",
-        "status": "waiting",
+        "status": "passed",
         "counts": {
           "v4_bundle_ready": true,
-          "snapshot_phase": "pre_deploy_snapshot",
+          "snapshot_phase": "build_snapshot",
           "authoritative": false
         },
         "evidence": [
@@ -1603,7 +1603,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-30T05:57:44.424Z"
+        "detail": "2026-08-30T13:51:15.168Z"
       },
       {
         "label": "Daily Supervision",
@@ -1616,9 +1616,9 @@ window.WaveSightOpsConsole = {
     "telemetry": {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
-        "ops_version": "OPS-V3.0.0-unified-platform",
+        "ops_version": "OPS-V3.1.0-membership",
         "data_date": "2026-08-30",
-        "generated_at": "2026-08-30T05:57:44.280Z",
+        "generated_at": "2026-08-30T13:51:15.019Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -1659,11 +1659,11 @@ window.WaveSightOpsConsole = {
         "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "passed",
-        "fde_hardware_sync": "passed"
+        "fde_hardware_sync": "unknown"
       },
       "publication": {
-        "status": "waiting",
-        "phase": "pre_deploy_snapshot",
+        "status": "passed",
+        "phase": "build_snapshot",
         "authoritative": false,
         "finalization": "github_pages_artifact"
       },
@@ -1676,8 +1676,8 @@ window.WaveSightOpsConsole = {
       }
     },
     "pipelineMeta": {
-      "version": "OPS-V3.0.0-unified-platform",
-      "generatedAt": "2026-08-30T05:57:44.424Z",
+      "version": "OPS-V3.1.0-membership",
+      "generatedAt": "2026-08-30T13:51:15.168Z",
       "dateRange": {
         "start": "2026-08-24",
         "end": "2026-08-30"
@@ -1725,11 +1725,11 @@ window.WaveSightOpsConsole = {
         "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "passed",
-        "fde_hardware_sync": "passed"
+        "fde_hardware_sync": "unknown"
       },
       "publication": {
-        "status": "waiting",
-        "phase": "pre_deploy_snapshot",
+        "status": "passed",
+        "phase": "build_snapshot",
         "authoritative": false,
         "finalization": "github_pages_artifact"
       }
@@ -1838,7 +1838,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-08-30T13:25:11.680Z",
+      "updatedAt": "2026-08-30T13:51:15.737Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1926,7 +1926,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.0.0-unified-platform",
+        "value": "OPS-V3.1.0-membership",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",

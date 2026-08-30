@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
-    "ops_version": "OPS-V3.0.0-unified-platform",
+    "ops_version": "OPS-V3.1.0-membership",
     "data_date": "2026-08-30",
-    "generated_at": "2026-08-30T05:57:44.280Z",
+    "generated_at": "2026-08-30T13:51:15.019Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -44,11 +44,11 @@
     "opportunity_map": "passed",
     "trend_radar": "passed",
     "funding_insights": "passed",
-    "fde_hardware_sync": "passed"
+    "fde_hardware_sync": "unknown"
   },
   "publication": {
-    "status": "waiting",
-    "phase": "pre_deploy_snapshot",
+    "status": "passed",
+    "phase": "build_snapshot",
     "authoritative": false,
     "finalization": "github_pages_artifact"
   },
@@ -94,12 +94,12 @@
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "passed",
+      "status": "partial",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "passed",
-        "fde_hardware_sync": "passed"
+        "fde_hardware_sync": "unknown"
       },
       "evidence": [
         "agent-workflow/reports/2026-08-30-persistent-asset-manifest.json"
@@ -108,10 +108,10 @@
     {
       "id": "publication",
       "label": "发布",
-      "status": "waiting",
+      "status": "passed",
       "counts": {
         "v4_bundle_ready": true,
-        "snapshot_phase": "pre_deploy_snapshot",
+        "snapshot_phase": "build_snapshot",
         "authoritative": false
       },
       "evidence": [

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.0.0-unified-platform">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.1.0-membership">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -340,15 +340,17 @@
   <meta name="wavesight-analytics-version" content="APP-ANALYTICS-V1.3.0-ops-readonly">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
+  <link rel="stylesheet" href="assets/member-operations.css?v=ops-v310">
 </head>
 <body class="page-operations-console">
   <main class="shell" data-ops-console>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.0.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.1.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
         <button type="button" data-tab="analytics"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M7 16v-5M12 16V4M17 16V8"/></svg></span><span class="nav-text">运营统计</span></button>
+        <button type="button" data-tab="membership"><span class="nav-icon" aria-hidden="true">◇</span><span class="nav-text">会员与权益</span></button>
         <button type="button" data-tab="governance"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">版本治理</span></button>
         <button type="button" data-tab="skills"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M10 8l5 4-5 4"/></svg></span><span class="nav-text">Skill Store</span></button>
         <button type="button" data-tab="settings"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8"/></svg></span><span class="nav-text">系统设置</span></button>
@@ -371,6 +373,7 @@
           <div class="grid grid-3" data-coverage-gaps></div>
           <div class="module-head"><div><span class="kicker">WORKSPACE</span><h2>常用入口</h2></div></div>
           <div class="quick-links">
+            <button type="button" data-tab="membership">会员与权益 <span>入群 / 到期 / 兑换 / 活跃 →</span></button>
             <button type="button" data-tab="analytics">运营统计 <span>访问 / 注册 / 付费 →</span></button>
             <button type="button" data-tab="quality">数据质量 <span>逐来源数量 / 质量 →</span></button>
             <button type="button" data-tab="skills">Skill Store <span>平台目录 / 来源同步 →</span></button>
@@ -465,6 +468,17 @@
         </div>
       </section>
 
+      <section class="panel" data-panel="membership" data-member-operations>
+        <div class="page-surface">
+          <header class="page-head"><div><span class="kicker">MEMBERSHIP · READ ONLY</span><h1>会员与权益运营</h1></div><p>分开看社群成员与应用会员，从新增、参与到到期与兑换。</p></header>
+          <div class="mo-toolbar"><label>统计期间<select data-mo-days><option value="7">近 7 天</option><option value="30" selected>近 30 天</option><option value="90">近 90 天</option></select></label><button type="button" data-mo-refresh>刷新会员数据</button></div>
+          <p class="mo-boundary">免密页面仅展示汇总，不提供成员名单。两套系统人数、积分不相加。当前存量按读取时刻统计；期间指标按北京时间自然日，包含今天。待接入不等于零。</p>
+          <section class="mo-section" aria-label="社群成员"><header><h2>社群成员与分享</h2><p class="mo-status" data-mo-status="community" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="community"></div></section>
+          <section class="mo-section" aria-label="应用会员"><header><h2>融资站与小程序会员</h2><p class="mo-status" data-mo-status="application" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="application"></div></section>
+          <section class="mo-management"><h2>管理与待接入</h2><p>查看成员明细、修改资料及管理积分，请进入需鉴权的社群后台。融资站暂未提供独立会员管理网页，此处不开放管理 API。</p><a href="https://members.zkdlj.vip/admin" target="_blank" rel="noopener noreferrer">进入社群管理后台 · 需登录 ↗</a><p>后续接入：社群到期 / 续费、线下权益领取与核销、跨端统一会员去重。当前没有这些记录，因此不会生成转化率或续费率。</p></section>
+        </div>
+      </section>
+
       <section class="panel" data-panel="governance">
         <div class="page-surface">
           <header class="page-head">
@@ -486,7 +500,7 @@
 
       <section class="panel" data-panel="skills">
         <div class="page-surface">
-          <iframe class="skill-frame" src="local-skill-store.html?embed=1&v=20260830-ops-v300" title="Skill Store"></iframe>
+          <iframe class="skill-frame" src="local-skill-store.html?embed=1&v=20260830-ops-v310" title="Skill Store"></iframe>
         </div>
       </section>
 
@@ -499,7 +513,7 @@
           <div class="grid grid-2">
             <article class="card"><span class="label">LOCAL PREFERENCES</span><h2>本机显示偏好</h2>
               <form class="preferences-form" data-preferences-form>
-                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="quality">数据质量</option><option value="governance">版本治理</option><option value="skills">Skill Store</option><option value="settings">系统设置</option></select></label>
+                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="membership">会员与权益</option><option value="quality">数据质量</option><option value="governance">版本治理</option><option value="skills">Skill Store</option><option value="settings">系统设置</option></select></label>
                 <label>快照过期提醒<select data-setting-stale><option value="24">超过 24 小时</option><option value="48">超过 48 小时</option><option value="72">超过 72 小时</option></select></label>
                 <label class="checkbox-label"><input type="checkbox" data-setting-compact>使用紧凑卡片间距</label>
                 <div class="form-actions"><button type="submit">保存本机设置</button><button type="button" data-reset-preferences>恢复默认</button></div>
@@ -517,7 +531,8 @@
 
   <script src="data/pipeline-dashboard.js"></script>
   <script src="data/ops-console.js"></script>
-  <script src="assets/operations-console.js?v=20260830-ops-v300"></script>
+  <script src="assets/operations-console.js?v=20260830-ops-v310"></script>
   <script src="assets/application-analytics.js?v=20260830-ops-readonly"></script>
+  <script src="assets/member-operations.js?v=ops-v310"></script>
 </body>
 </html>

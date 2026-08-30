@@ -14,7 +14,7 @@
     get(key) { try { return localStorage.getItem(key); } catch { return null; } },
     set(key, value) { try { localStorage.setItem(key, value); return true; } catch { return false; } },
   };
-  const validPanels = new Set(["overview", "analytics", "quality", "governance", "skills", "settings"]);
+  const validPanels = new Set(["overview", "analytics", "membership", "quality", "governance", "skills", "settings"]);
   const defaults = { landing: "overview", compact: false, staleHours: 72 };
   let preferences = { ...defaults };
   try {
@@ -42,6 +42,7 @@
     $$("[data-panel]").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === state.panel));
     history.replaceState(null, "", "#" + state.panel);
     if (state.panel === "analytics") $("[data-application-analytics]")?.dispatchEvent(new Event("analytics:open"));
+    if (state.panel === "membership") $("[data-member-operations]")?.dispatchEvent(new Event("membership:open"));
     if (state.panel === "skills") resizeSkillFrame();
   }
   function setRailCollapsed(collapsed) {
@@ -74,7 +75,7 @@
     }).join("") || '<div class="empty">跨平台清单尚未生成，请检查系统设置中的快照状态。</div>';
     const gaps = [
       ["线上核验", versions.filter((item) => item.kind === "deployed" && (!item.verified || stale(item.checkedAt))).length + " 项公开版本需要重新核验；小程序审核版本、融资 H5 部署版本尚未接入。", "governance"],
-      ["统计覆盖", "融资站与小程序已接入匿名聚合。社群活跃、续费和 H5 独立埋点尚未接入，不能视为零。", "analytics"],
+      ["会员与权益", "社群参与、应用会员到期与兑换按需读取汇总；社群续费、线下核销仍待接入，两套系统不合并计数。", "membership"],
       ["规则同步", list(portfolio.skills?.sources).filter((source) => source.required === false && !source.available).length + " 个平台目录尚未接入。共享规则与独立来源分开计数，完整状态见 Skill Store。", "skills"],
     ];
     $("[data-coverage-gaps]").innerHTML = gaps.map(([title, detail, panel]) => '<article class="card"><h3>' + html(title) + "</h3><p>" + html(detail) + '</p><button class="text-button" type="button" data-tab="' + panel + '">查看详情 →</button></article>').join("");
@@ -157,6 +158,8 @@
       ["数据质量批次", ops.meta?.date || "未接入", "V4 逐来源采集与事实构建快照"],
       ["Skill 同步", timestamp(portfolio.skills?.generatedAt), "本地构建扫描已登记平台目录，发布后可见；网页不安装 Skill"],
       ["运营聚合 API", portfolio.analytics?.url || "未接入", portfolio.analytics?.scope || ""],
+      ["社群会员汇总", "https://members.zkdlj.vip/api/v1/operations/membership-summary", "按需只读 · 正式入群、分享参与、累计积分分布"],
+      ["应用会员汇总", "https://www.zkdlj.vip/api/v1/analytics/membership/summary", "按需只读 · 会员到期、未退款订单、积分兑换"],
       ...list(portfolio.platforms).filter((item) => item.version?.kind === "deployed").map((item) => [item.label, item.version.source, versionStatus(item.version) + " · " + timestamp(item.version.checkedAt)]),
     ];
     $("[data-data-status]").innerHTML = rows.map(([label, value, detail]) => '<div class="data-status-item"><span>' + html(label) + '</span><div><b>' + safeLink(value, value) + '</b><p>' + html(detail) + '</p></div></div>').join("");

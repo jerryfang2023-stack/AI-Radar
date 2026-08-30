@@ -53,14 +53,14 @@ test("optional platform directories are scanned without claiming absent sources 
   assert.equal(counts.projectCount, 1);
 });
 
-test("console has six panels and local settings without removed modules", () => {
+test("console has seven panels and local settings without removed modules", () => {
   const html = fs.readFileSync("01-SiteV2/site/operations-console.html", "utf8");
   const client = fs.readFileSync("01-SiteV2/site/assets/operations-console.js", "utf8");
   const data = JSON.parse(fs.readFileSync("01-SiteV2/site/data/ops-console.json", "utf8"));
   assert.equal(data.meta.version, OPS_VERSION);
   assert.equal(data.quality.telemetry.meta.ops_version, OPS_VERSION);
   assert.ok(html.includes(OPS_VERSION));
-  assert.deepEqual([...html.matchAll(/data-panel="([^"]+)"/gu)].map((match) => match[1]).sort(), ["analytics", "governance", "overview", "quality", "settings", "skills"]);
+  assert.deepEqual([...html.matchAll(/data-panel="([^"]+)"/gu)].map((match) => match[1]).sort(), ["analytics", "governance", "membership", "overview", "quality", "settings", "skills"]);
   assert.doesNotMatch(html, /data-tab="(?:issues|tasks)"|问题中心|任务链路/u);
   assert.doesNotMatch(client, /renderIssues|renderTasks|data-work-queue/u);
   for (const marker of ["data-platform-cards", "data-version-category", "data-version-search", "data-preferences-form", "data-setting-stale", "data-source-quality"]) assert.ok(html.includes(marker));

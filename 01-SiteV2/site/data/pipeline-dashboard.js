@@ -1,7 +1,7 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "version": "OPS-V3.0.0-unified-platform",
-    "generatedAt": "2026-08-30T05:57:44.424Z",
+    "version": "OPS-V3.1.0-membership",
+    "generatedAt": "2026-08-30T13:51:15.168Z",
     "dateRange": {
       "start": "2026-08-24",
       "end": "2026-08-30"
@@ -51,12 +51,12 @@ window.WaveSightPipelineDashboard = {
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "passed",
+      "status": "partial",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "passed",
-        "fde_hardware_sync": "passed"
+        "fde_hardware_sync": "unknown"
       },
       "evidence": [
         "agent-workflow/reports/2026-08-30-persistent-asset-manifest.json"
@@ -65,10 +65,10 @@ window.WaveSightPipelineDashboard = {
     {
       "id": "publication",
       "label": "发布",
-      "status": "waiting",
+      "status": "passed",
       "counts": {
         "v4_bundle_ready": true,
-        "snapshot_phase": "pre_deploy_snapshot",
+        "snapshot_phase": "build_snapshot",
         "authoritative": false
       },
       "evidence": [
@@ -116,11 +116,11 @@ window.WaveSightPipelineDashboard = {
       "opportunity_map": "passed",
       "trend_radar": "passed",
       "funding_insights": "passed",
-      "fde_hardware_sync": "passed"
+      "fde_hardware_sync": "unknown"
     },
     "publication": {
-      "status": "waiting",
-      "phase": "pre_deploy_snapshot",
+      "status": "passed",
+      "phase": "build_snapshot",
       "authoritative": false,
       "finalization": "github_pages_artifact"
     }

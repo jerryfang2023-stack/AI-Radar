@@ -20,7 +20,7 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 - WaveSight AI is an AI industry data center and structured factual data foundation for downstream AIP, industry research, and startup decision-support products.
 - The data center does not make decisions, judge commercial value, recommend actions, or educate readers toward a conclusion.
 - Funding Insights is the independent public application website. The Data Center / Application Center shell is an internal supporting surface and is not public navigation.
-- The current backend is OPS-V3.0.0-unified-platform: one operations entry for the Data Center, Funding Portal, Mini Program, financing H5 and community membership.
+- The current backend is OPS-V3.1.0-membership: one operations entry for the Data Center, Funding Portal, Mini Program, financing H5 and community membership.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - The current collection lane writes ephemeral source snapshots, copies complete bodies into the authoritative private evidence store, converts public V4 records to `evidence://<content_hash>` locators, and then removes the ephemeral public copies. `SOURCE-INTAKE-V1` remains the structured handoff.
 - Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.1.0-tag-v4-1`, Funding Insights `FUNDING-INSIGHT-V1.5.0-china-market`, financing portal `FUNDING-PORTAL-V2.8.4`, report publication `REPORTS-V1.3.0-funding-portal`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
