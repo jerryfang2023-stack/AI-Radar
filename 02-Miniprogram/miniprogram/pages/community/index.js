@@ -28,9 +28,9 @@ Page({
   async refresh() {
     this.setData({ loading: true, error: "" });
     try {
-      const result = readExperience() ? { archives: archives.slice(0, 3), bounty: bounties[0], featuredMembers: ["aihui", "zengjingsi", "guowei", "zizhe"].map(getMember), memberCount: 54 } : await communityRequest("home");
+      const result = readExperience() ? { archives: archives.slice(0, 5), bounty: bounties[0], featuredMembers: ["aihui", "zengjingsi", "guowei", "zizhe"].map(getMember), memberCount: 54 } : await communityRequest("home");
       const rows = result.archives.map((item) => ({ ...item, dateShort: item.date.slice(5) }));
-      this.setData({ featuredArchive: rows[0] || null, olderArchives: rows.slice(1, 3), bounty: result.bounty, memberCount: result.memberCount, featuredMembers: result.featuredMembers.map((member) => ({ ...member, roleShort: member.role.split("/")[0].trim() })) });
+      this.setData({ featuredArchive: rows[0] || null, olderArchives: rows.slice(1, 5), bounty: result.bounty, memberCount: result.memberCount, featuredMembers: result.featuredMembers.map((member) => ({ ...member, roleShort: member.role.split("/")[0].trim() })) });
     } catch (error) { this.setData({ error: error.message }); }
     finally { this.setData({ loading: false }); }
   },

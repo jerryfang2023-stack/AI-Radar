@@ -15,13 +15,13 @@
       <view class="section-heading"><view><text class="eyebrow">SHARING ARCHIVE</text><text class="section-main">分享实录</text></view><button data-url="/pages/community-program/index?tab=archive" bindtap="openProtected">查看全部 ›</button></view>
       <text wx:if="{{!loading && !error && !featuredArchive}}" class="service-state">暂无已发布实录</text>
       <button wx:if="{{featuredArchive}}" class="community-focus-card" data-url="/pages/community-program/index?type=archive&amp;id={{featuredArchive.id}}" bindtap="openProtected">
-        <view class="focus-meta"><text>精选实录 · 第 {{featuredArchive.issue}} 场</text><text>{{featuredArchive.dateShort}}</text></view>
+        <view class="focus-meta"><text>编辑推荐 · 第 {{featuredArchive.issue}} 场</text><text>{{featuredArchive.dateShort}}</text></view>
         <text class="focus-title">{{featuredArchive.title}}</text>
         <text class="focus-copy">{{featuredArchive.subtitle}}</text>
         <text class="focus-speakers">{{featuredArchive.speakers}}</text>
         <view class="focus-action"><text>阅读完整实录</text><text>›</text></view>
       </button>
-      <view class="community-quick-grid">
+      <view class="community-archive-list">
         <button wx:for="{{olderArchives}}" wx:key="id" data-url="/pages/community-program/index?type=archive&amp;id={{item.id}}" bindtap="openProtected">
           <view class="quick-meta"><text>第 {{item.issue}} 场</text><text>{{item.dateShort}}</text></view>
           <text class="quick-title">{{item.title}}</text>

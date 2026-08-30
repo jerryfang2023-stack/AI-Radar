@@ -10,13 +10,13 @@
 .focus-copy { display: block; margin-top: 12rpx; color: rgba(255,255,255,.68); font-size: 21rpx; line-height: 1.55; }
 .focus-speakers { display: block; margin-top: 28rpx; color: #d5dfe7; font-size: 20rpx; line-height: 1.6; }
 .focus-action { display: flex; margin-top: 32rpx; padding-top: 23rpx; align-items: center; justify-content: space-between; border-top: 1rpx solid rgba(255,255,255,.16); color: #f0d588; font-size: 21rpx; font-weight: 700; }
-.community-quick-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20rpx; margin-top: 22rpx; }
-.community-quick-grid button { display: flex; min-width: 0; min-height: 252rpx; margin: 0; padding: 26rpx; flex-direction: column; align-items: flex-start; border: 1rpx solid #ddd2c1; border-radius: 23rpx; background: #fffdfa; text-align: left; }
+.community-archive-list { display: flex; flex-direction: column; margin-top: 24rpx; }
+.community-archive-list button { display: flex; width: 100%; min-width: 0; margin: 0; padding: 28rpx 4rpx; flex-direction: column; align-items: flex-start; border: 0; border-bottom: 1rpx solid #ddd2c1; border-radius: 0; background: transparent; text-align: left; }
 .quick-meta { display: flex; width: 100%; flex-wrap: wrap; justify-content: space-between; gap: 6rpx 12rpx; color: #a36d17; font-size: 18rpx; font-weight: 700; }
 .quick-meta text:last-child { color: #768696; font-weight: 400; }
-.quick-title { display: block; margin: 24rpx 0 28rpx; color: #071827; font-size: 25rpx; font-weight: 750; line-height: 1.6; }
-.quick-footer { display: flex; width: 100%; margin-top: auto; padding-top: 20rpx; align-items: flex-end; justify-content: space-between; gap: 12rpx; border-top: 1rpx solid #ded4c4; }
-.quick-footer text:first-child { color: #768696; font-size: 18rpx; line-height: 1.65; }
+.quick-title { display: block; margin: 12rpx 0 10rpx; color: #071827; font-size: 29rpx; font-weight: 750; line-height: 1.5; }
+.quick-footer { display: flex; width: 100%; align-items: baseline; justify-content: space-between; gap: 18rpx; }
+.quick-footer text:first-child { color: #768696; font-size: 21rpx; line-height: 1.65; }
 .quick-footer text:last-child { color: #a36d17; font-size: 24rpx; }
 .home-section { margin-top: 44rpx; }
 .section-heading { display: flex; margin-bottom: 18rpx; align-items: flex-end; justify-content: space-between; }

@@ -34,6 +34,24 @@ test("production homepage never substitutes demo archives on API failure", async
   assert.equal(page.data.error, "Unavailable");
 });
 
+test("homepage renders one recommendation and four distinct full-width archive rows", async () => {
+  let archives = Array.from({ length: 7 }, (_, index) => ({ id: "issue-" + index, issue: index, title: "Archive " + index, date: "2026-08-30" }));
+  const { page } = pageFor("community", async () => ({ archives, bounty: null, featuredMembers: [], memberCount: 0 }));
+  await page.refresh();
+  assert.equal(page.data.featuredArchive.id, "issue-0");
+  assert.equal(page.data.olderArchives.length, 4);
+  assert.deepEqual(Array.from(page.data.olderArchives, item => item.id), ["issue-1", "issue-2", "issue-3", "issue-4"]);
+  archives = archives.slice(0, 2);
+  await page.refresh();
+  assert.equal(page.data.olderArchives.length, 1);
+  const markup = fs.readFileSync("miniprogram/pages/community/index.wxml", "utf8");
+  const style = fs.readFileSync("miniprogram/pages/community/index.wxss", "utf8");
+  assert.match(markup, /编辑推荐/);
+  assert.match(markup, /class="community-archive-list"/);
+  assert.match(style, /\.community-archive-list\s*\{[^}]*flex-direction: column/);
+  assert.match(style, /\.community-archive-list button\s*\{[^}]*width: 100%/);
+});
+
 test("homepage hides the bounty module unless a published bounty exists", async () => {
   let bounty = null;
   const { page } = pageFor("community", async () => ({ archives: [], bounty, featuredMembers: [], memberCount: 0 }));
