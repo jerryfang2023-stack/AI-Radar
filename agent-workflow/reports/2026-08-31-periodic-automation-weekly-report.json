@@ -1,0 +1,81 @@
+{
+  "ok": true,
+  "status": "page_gate_passed",
+  "window": {
+    "start": "2026-08-24",
+    "end": "2026-08-30",
+    "reportDate": "2026-08-31"
+  },
+  "actions": [
+    {
+      "label": "build weekly V4 opportunity evidence",
+      "ok": true,
+      "status": 0,
+      "command": "node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs --date=2026-08-30",
+      "stdout": "{\n  \"ok\": true,\n  \"output\": \"01-SiteV2/site/data/opportunity-evidence-v2.json\",\n  \"activeDate\": \"2026-08-30\",\n  \"evidence\": 615,\n  \"directionCards\": 0\n}",
+      "stderr": ""
+    },
+    {
+      "label": "V4 opportunity evidence tests",
+      "ok": true,
+      "status": 0,
+      "command": "node --test agent-workflow/tools/tests/industry-reports-frontstage.test.mjs",
+      "stdout": "TAP version 13\n# Subtest: Opportunity Map projection reads accepted V4 evidence without Signal Cards\nok 1 - Opportunity Map projection reads accepted V4 evidence without Signal Cards\n  ---\n  duration_ms: 482.853583\n  type: 'test'\n  ...\n# Subtest: frontstage gate accepts an empty direction-card day only when metadata agrees\nok 2 - frontstage gate accepts an empty direction-card day only when metadata agrees\n  ---\n  duration_ms: 0.821331\n  type: 'test'\n  ...\n# Subtest: Opportunity Map projection builds from V4 fixtures when all V3 assets are absent\nok 3 - Opportunity Map projection builds from V4 fixtures when all V3 assets are absent\n  ---\n  duration_ms: 1.799846\n  type: 'test'\n  ...\n# Subtest: Opportunity Map evidence excludes viewpoints, community material, and OPS reports\nok 4 - Opportunity Map evidence excludes viewpoints, community material, and OPS reports\n  ---\n  duration_ms: 0.306074\n  type: 'test'\n  ...\n# Subtest: legacy public routes and report pages redirect to their current owners\nok 5 - legacy public routes and report pages redirect to their current owners\n  ---\n  duration_ms: 0.529364\n  type: 'test'\n  ...\n# Subtest: the two latest weekly issues keep stable compatibility redirects\nok 6 - the two latest weekly issues keep stable compatibility redirects\n  ---\n  duration_ms: 1.202472\n  type: 'test'\n  ...\n# Subtest: retired V3 page assets and datasets are absent while the current internal viewpoint feed stays private\nok 7 - retired V3 page assets and datasets are absent while the current internal viewpoint feed stays private\n  ---\n  duration_ms: 0.366802\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 548.039997",
+      "stderr": ""
+    },
+    {
+      "label": "DeepSeek Pro V4 direction card candidates",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/generate-opportunity-direction-cards-deepseek.mjs --date=2026-08-30",
+      "stdout": "{\n  \"ok\": true,\n  \"output\": \"agent-workflow/product/opportunity-direction-card-candidates.json\",\n  \"model\": \"deepseek-v4-pro\",\n  \"candidates\": 3,\n  \"review_status\": \"pending_human_review\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "DeepSeek Pro report draft",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/generate-periodic-report-deepseek.mjs --kind=weekly --date=2026-08-31 --window-start=2026-08-24 --window-end=2026-08-30",
+      "stdout": "{\n  \"ok\": true,\n  \"kind\": \"weekly\",\n  \"date\": \"2026-08-31\",\n  \"content\": \"01-SiteV2/content/12-applications/industry-reports/2026-08-31--weekly-report--ai-business-change-radar.md\",\n  \"counts\": {\n    \"Signals\": 243,\n    \"Opinions\": 11,\n    \"Community\": 159\n  }\n}",
+      "stderr": ""
+    },
+    {
+      "label": "content acceptance gate",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/assert-periodic-report-content.mjs --kind=weekly --date=2026-08-31 --window-start=2026-08-24 --window-end=2026-08-30",
+      "stdout": "{\n  \"ok\": true,\n  \"kind\": \"weekly\",\n  \"date\": \"2026-08-31\",\n  \"report\": \"agent-workflow/reports/2026-08-31-weekly-content-gate.json\",\n  \"failures\": []\n}",
+      "stderr": ""
+    },
+    {
+      "label": "deterministic report page renderer",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/render-periodic-report-pages.mjs --kind=weekly --date=2026-08-31",
+      "stdout": "{\n  \"ok\": true,\n  \"kind\": \"weekly\",\n  \"date\": \"2026-08-31\",\n  \"route\": \"weekly-ai-business-change-radar-2026-08-31.html\",\n  \"source\": \"01-SiteV2/content/12-applications/industry-reports/2026-08-31--weekly-report--ai-business-change-radar.md\",\n  \"target\": \"https://www.zkdlj.vip/#report/weekly-2026-w35\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "periodic report renderer tests",
+      "ok": true,
+      "status": 0,
+      "command": "node --test agent-workflow/tools/tests/periodic-report-renderer.test.mjs",
+      "stdout": "TAP version 13\n# Subtest: periodic renderer owns the report-center release version\nok 1 - periodic renderer owns the report-center release version\n  ---\n  duration_ms: 0.569731\n  type: 'test'\n  ...\n# Subtest: periodic report titles carry tension and a business consequence\nok 2 - periodic report titles carry tension and a business consequence\n  ---\n  duration_ms: 1.015343\n  type: 'test'\n  ...\n# Subtest: June monthly title records DeepSeek title provenance\nok 3 - June monthly title records DeepSeek title provenance\n  ---\n  duration_ms: 0.667957\n  type: 'test'\n  ...\n# Subtest: periodic renderer removes all inline source annotations without harming readability\nok 4 - periodic renderer removes all inline source annotations without harming readability\n  ---\n  duration_ms: 0.79731\n  type: 'test'\n  ...\n# Subtest: public evidence index resolves event, viewpoint, and historical community sources\nok 5 - public evidence index resolves event, viewpoint, and historical community sources\n  ---\n  duration_ms: 276.864259\n  type: 'test'\n  ...\n# Subtest: public evidence index keeps historical viewpoint sources after current snapshots are rebuilt\nok 6 - public evidence index keeps historical viewpoint sources after current snapshots are rebuilt\n  ---\n  duration_ms: 1.834332\n  type: 'test'\n  ...\n# Subtest: periodic renderer escapes model-supplied HTML\nok 7 - periodic renderer escapes model-supplied HTML\n  ---\n  duration_ms: 0.234354\n  type: 'test'\n  ...\n# Subtest: recent weekly reports render as editorial modules with evidence last\nok 8 - recent weekly reports render as editorial modules with evidence last\n  ---\n  duration_ms: 4.640235\n  type: 'test'\n  ...\n# Subtest: all published periodic report pages omit inline source annotations\nok 9 - all published periodic report pages omit inline source annotations\n  ---\n  duration_ms: 6.740046\n  type: 'test'\n  ...\n# Subtest: monthly reports preserve prose and render editorial tables for mobile\nok 10 - monthly reports preserve prose and render editorial tables for mobile\n  ---\n  duration_ms: 0.859929\n  type: 'test'\n  ...\n# Subtest: report center and report routes redirect to stable funding portal hashes\nok 11 - report center and report routes redirect to stable funding portal hashes\n  ---\n  duration_ms: 1.647933\n  type: 'test'\n  ...\n1..11\n# tests 11\n# suites 0\n# pass 11\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 345.199605",
+      "stderr": ""
+    },
+    {
+      "label": "V4 report shell syntax",
+      "ok": true,
+      "status": 0,
+      "command": "node --check 01-SiteV2/site/assets/v4-report-shell.js",
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "opportunity_warning": false,
+  "phase": "weekly-report",
+  "date": "2026-08-31",
+  "dry_run": false,
+  "report_provider": "deepseek",
+  "generated_at": "2026-08-31T08:50:05.101Z"
+}
