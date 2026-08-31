@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -294,7 +294,7 @@
       "EN-bdfecbcd7dbf76d2"
     ],
     "firstSeen": "2025-10-09",
-    "lastSeen": "2026-08-30",
+    "lastSeen": "2026-08-31",
     "relationIds": [
       "REL2-f6e62982e0b3d7d6",
       "REL2-a5a15f09d4da8135",
@@ -379,8 +379,8 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
-        "EV-c5f8f07d714f330f",
         "EV-293d6feac5b8efab",
+        "EV-c5f8f07d714f330f",
         "EV-71727e1a748baf33",
         "EV-f71726063c6e1615",
         "EV-172e82bbbedb3619",
@@ -559,6 +559,74 @@
     },
     "timeline": [
       {
+        "id": "EV-293d6feac5b8efab",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-28",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "派早报：智谱开源 GLM-5.3-Flash 原生多模态模型等",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-1d79127e9d90e89b",
+          "EN-bbdefa2950f49882",
+          "EN-92ef967014bccd4a"
+        ]
+      },
+      {
+        "id": "EV-10fe2269806246e8",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-29",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌WikiSkill为AI智能体提供过往错误的持久记忆，以提升未来表现",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-35e36dc1a5213fa3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-35e36dc1a5213fa3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-35e36dc1a5213fa3",
+          "EN-bbdefa2950f49882",
+          "EN-76faa47316295b1a"
+        ]
+      },
+      {
         "id": "EV-c5f8f07d714f330f",
         "dataDate": "2026-08-30",
         "date": "2026-08-29",
@@ -606,74 +674,6 @@
         "entityIds": [
           "EN-bbdefa2950f49882",
           "EN-1ba4a2b10cfc1093"
-        ]
-      },
-      {
-        "id": "EV-293d6feac5b8efab",
-        "dataDate": "2026-08-30",
-        "date": "2026-08-28",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "派早报：智谱开源 GLM-5.3-Flash 原生多模态模型等",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "multimodal",
-            "name": "多模态",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-478676438ee161a3",
-          "EN-1d79127e9d90e89b",
-          "EN-bbdefa2950f49882",
-          "EN-92ef967014bccd4a"
-        ]
-      },
-      {
-        "id": "EV-10fe2269806246e8",
-        "dataDate": "2026-08-30",
-        "date": "2026-08-29",
-        "eventType": "research_result",
-        "eventTypeLabel": "研究结果",
-        "eventGroup": "研究结果",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "谷歌WikiSkill为AI智能体提供过往错误的持久记忆，以提升未来表现",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "knowledge_search",
-            "name": "知识与搜索",
-            "entityIds": [
-              "EN-35e36dc1a5213fa3"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [
-              "EN-35e36dc1a5213fa3"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-35e36dc1a5213fa3",
-          "EN-bbdefa2950f49882",
-          "EN-76faa47316295b1a"
         ]
       },
       {
@@ -8404,7 +8404,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-technology-open_weights",
@@ -8490,7 +8490,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-model",
@@ -8586,6 +8586,8 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-082a9cdae7904aac",
+        "EV-ca2ab3833c31b91b",
         "EV-dff4ff4127cba5d9",
         "EV-eb3b431d4ce98ec5",
         "EV-eedd370fd9cfdbb2",
@@ -8741,6 +8743,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-9530bb61702d4a33",
         "EV-fd00664984e9ae3d",
         "EV-8d1915e3b460afa7",
         "EV-00e6152baff47d4d",
@@ -8823,6 +8826,8 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-0b914b1a1e589338",
+        "EN-7d3194f79e645c42",
         "EN-6e00d63f3be2ed2e",
         "EN-921ba2ce81556e42",
         "EN-bbdefa2950f49882",
@@ -8843,7 +8848,6 @@
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
-        "EN-7d3194f79e645c42",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
         "EN-febedfcafee9d610",
@@ -8938,7 +8942,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -10172,7 +10176,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-use_case-software_development",
@@ -11336,7 +11340,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-use_case-legal_compliance",
@@ -11879,10 +11883,10 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-278745d4aa7a4b3a",
         "EV-10fe2269806246e8",
         "EV-5019dff541a05950",
         "EV-00ffb2c501a37ec8",
-        "EV-278745d4aa7a4b3a",
         "EV-2c17183b71d8b7d1",
         "EV-ce32954014cb030d",
         "EV-09a29379b6399236",
@@ -12707,6 +12711,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-ca2ab3833c31b91b",
         "EV-ec8b36dcb97645da",
         "EV-92634b09de96ca83",
         "EV-72d4a00d52a3201c",
@@ -12823,7 +12828,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -13069,7 +13074,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -13131,6 +13136,7 @@
         "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
+        "EV-082a9cdae7904aac",
         "EV-c47112d137157d2d",
         "EV-be4b6dc8829070e5",
         "EV-58e18eab1b072c9a",
@@ -13195,6 +13201,7 @@
         "EN-ab877737b6081bd1",
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
+        "EN-0b914b1a1e589338",
         "EN-42f0b44cc91cc5e0",
         "EN-bbdefa2950f49882",
         "EN-74be4cbf48e647b2",
@@ -13223,7 +13230,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-industry-financial_services",
@@ -13707,7 +13714,7 @@
         "HW-ecc6755da7bbbbcd"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-technology-tool_use",

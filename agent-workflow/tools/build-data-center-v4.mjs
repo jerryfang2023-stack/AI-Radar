@@ -568,6 +568,10 @@ function findEventRule(title, lead = "") {
   if (/(?:代码库|codebase).{0,30}(?:中|里)?.{0,30}(?:发现|came across|discovered)/iu.test(`${title}\n${lead}`)) return null;
   if (!/\b(?:report|research|study)\b|报告|研究/iu.test(title)
       && /(?:上线|发布).{0,15}(?:一周|一月|一个月).{0,60}(?:调用量|用量|排名)|(?:调用量|用量).{0,40}(?:增长|登顶|排名)/iu.test(title)) return null;
+  if (/^[\p{Script=Han}A-Za-z·]{2,16}研究[：:]/u.test(title)
+      && /发布.{0,50}研究报告/u.test(lead)) {
+    return { eventType: "research_result", pattern: /发布.{0,50}研究报告/u };
+  }
   if (/\bThe Home Depot\b.{0,100}\bDelivers\b.{0,120}\bUsing Google Cloud\b/iu.test(title)) {
     return { eventType: "deployment", pattern: /\b(?:launching|pilot|AI voice agents?)\b/iu };
   }
@@ -787,6 +791,20 @@ function fundingClaimOrganizationMentions(eventClaims, claimEvidence, title) {
 
 function claimSubjectOrganizationMentions(eventClaims, title, claimEvidence) {
   const candidates = [];
+  // Localized headlines can leave the whole Chinese action in the parsed subject.
+  // Keep the exact name only when an accepted Claim independently contains it.
+  const localizedLead = title.match(/^([A-Z][A-Za-z0-9.&'-]*(?:\s+[A-Z][A-Za-z0-9.&'-]*){0,3})\s+(?=将|把|已将)/u)?.[1];
+  const researchLead = title.match(/^([\p{Script=Han}A-Za-z·]{2,16}?)(?:研究|报告)[：:]/u)?.[1];
+  for (const lead of [localizedLead, researchLead]) {
+    const candidate = cleanOrganizationCandidate(lead || "");
+    if (!candidate || exactAliasIndex(claimEvidence, candidate) < 0) continue;
+    if (lead === researchLead && !(eventClaims || []).some((claim) => {
+      const quote = normalizeSpace(claim.source_quote);
+      const index = exactAliasIndex(quote, candidate);
+      return index >= 0 && /^.{0,24}发布.{0,50}(?:研究报告|研究|报告)/u.test(quote.slice(index + candidate.length));
+    })) continue;
+    candidates.push({ canonicalName: candidate, mentionText: candidate, start: 0, source: "title_original", verified: false });
+  }
   for (const claim of eventClaims || []) {
     const candidate = cleanOrganizationCandidate(claim.subject);
     if (!candidate) continue;

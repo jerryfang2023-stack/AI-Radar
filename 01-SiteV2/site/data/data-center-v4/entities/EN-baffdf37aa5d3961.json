@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-baffdf37aa5d3961",
+    "name": "Caterpillar",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b1236dadc85894e4"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-30",
+    "lastSeen": "2026-08-31",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-b1236dadc85894e4"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b1236dadc85894e4",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-30",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Caterpillar 将采矿自动化经验应用于 AI 部署",
+        "displayTags": [],
+        "entityIds": [
+          "EN-baffdf37aa5d3961"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-6ff5a42a72e32a30",
+      "eventId": "EV-b1236dadc85894e4",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "title": "Caterpillar 将采矿自动化经验应用于 AI 部署",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Caterpillar 将采矿自动化经验应用于 AI 部署",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining",
+      "entityIds": [
+        "EN-baffdf37aa5d3961"
+      ]
+    }
+  ],
+  "hardware": []
+}

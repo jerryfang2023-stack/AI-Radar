@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -16,9 +16,7 @@
     "name": "NVIDIA",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [
-      "英伟达"
-    ],
+    "aliases": [],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -91,6 +89,7 @@
       "EV-79c3f4f7cb2f2c86",
       "EV-7263caa45bbf168e",
       "EV-234ad54940674bf6",
+      "EV-8321e5cd7d423d62",
       "EV-30be225da68f2f70",
       "EV-afbcb331c874f648",
       "EV-5ac5368309eace1a",
@@ -291,56 +290,45 @@
       "TX-technology-reasoning"
     ],
     "relatedEntityIds": [
+      "EN-9fbf261b62c1d7c0",
       "EN-7d1507284a5757ca",
       "EN-7d3194f79e645c42",
       "EN-9bc22dcabf7f45b3",
       "EN-c70eca6b0f88f44d",
-      "EN-7dfafb44ee67bcd8",
       "EN-e07654c7cc29acbd",
-      "EN-52c2f30b6bda5898",
       "EN-683d8d597da71192",
-      "EN-aa15d891a32a51b8",
       "EN-0f3360879e746531",
       "EN-a1b0d8a938903dc7",
-      "EN-956b7280912ef1cc",
       "EN-4a639cb888a15d75",
       "EN-8d323d8bba783aa3",
       "EN-b5738c169b693bee",
       "EN-51fd7dc086fcb858",
       "EN-9e193e1ec8d75d41",
-      "EN-3ae50afab3e392b8",
       "EN-4e7e886400fe6a83",
       "EN-1dc405a4cda895d0",
       "EN-12ab68e37d104d27",
       "EN-8395dc051feafc4c",
-      "EN-a3266ab9e10d6105",
-      "EN-9fbf261b62c1d7c0",
-      "EN-11ef7b03c79c9bbd",
-      "EN-171fa23d27b5894b"
+      "EN-a3266ab9e10d6105"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-08-30",
+    "lastSeen": "2026-08-31",
     "relationIds": [
+      "REL2-ee25fecc7314abd4",
       "REL2-f2a574345a7b8fa5",
       "REL2-1a63e4b77f739862",
       "REL2-5adcd6a62a7c957e",
       "REL2-a413b62820bbd0b4",
-      "REL2-a96854ad8a7b0bbc",
       "REL2-2e2947ee2164a001",
-      "REL2-7a766493d6d54dde",
       "REL2-ad458f34aa92dd3d",
       "REL2-cafdb908d0ccedc9",
-      "REL2-cd31c7f1b13d1c27",
       "REL2-d2669b3b21d3263a",
       "REL2-6cbc4c2f090d044c",
       "REL2-e450a1c99a5b2883",
-      "REL2-2106a1b212c3c15f",
       "REL2-5c7eb93c8f39f28d",
       "REL2-434765e50ff89fea",
       "REL2-6bbe82d002f050c9",
       "REL2-1408b94e058f06a8",
       "REL2-bcb7c3de6286e47d",
-      "REL2-09079be08468cadc",
       "REL2-484ba978461cb818",
       "REL2-ae83b89a043b00cb",
       "REL2-b1345cf8cfaa1fc3",
@@ -353,17 +341,13 @@
       "REL2-594da80406279eb3",
       "REL2-c03f8010834c7954",
       "REL2-e9ef6e697ef06f93",
-      "REL2-4ba72572dcf15f72",
-      "REL2-6e1c341aeaa60f54",
-      "REL2-cd95b9638b93b057",
-      "REL2-f07aa4dea6ae17e2",
-      "REL2-f1a8de714fc4b399"
+      "REL2-f07aa4dea6ae17e2"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
         "EV-c32dd87e1f72b09a",
+        "EV-532031a0c390a2e3",
         "EV-40fd274ae86434b8",
         "EV-10f04014fb3b62ff",
         "EV-68bb3d5cb4bbd61b",
@@ -437,6 +421,7 @@
         "EV-234ad54940674bf6"
       ],
       "partnerships": [
+        "EV-8321e5cd7d423d62",
         "EV-30be225da68f2f70",
         "EV-afbcb331c874f648",
         "EV-5ac5368309eace1a",
@@ -587,6 +572,139 @@
     },
     "timeline": [
       {
+        "id": "EV-4f6e481c90ff0e3c",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-28",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "开源权重AI公司成为硅谷最热门的收购目标",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-7f871cbf905f6e0c"
+        ]
+      },
+      {
+        "id": "EV-c32dd87e1f72b09a",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-28",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Neocloud Lambda 获 10 亿美元债务融资以购买更多芯片",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-3f2a8b14f8f96937"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-3f2a8b14f8f96937"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3f2a8b14f8f96937",
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
+        "id": "EV-8321e5cd7d423d62",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-27",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "ChronoScale宣布与微软达成AI基础设施合作，在北美部署50 MW AI算力",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d7b07a77dce19ab",
+          "EN-9fbf261b62c1d7c0",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-30be225da68f2f70",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-25",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "思科携手英伟达扩展安全AI工厂，迎接机架规模时代",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-e73b79a0b10f8cdb"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-e73b79a0b10f8cdb"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e73b79a0b10f8cdb",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
         "id": "EV-532031a0c390a2e3",
         "dataDate": "2026-08-30",
         "date": "2026-08-29",
@@ -630,83 +748,6 @@
         "entityIds": [
           "EN-8d4321d936320802",
           "EN-7f871cbf905f6e0c"
-        ]
-      },
-      {
-        "id": "EV-4f6e481c90ff0e3c",
-        "dataDate": "2026-08-30",
-        "date": "2026-08-28",
-        "eventType": "acquisition",
-        "eventTypeLabel": "并购",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "开源权重AI公司成为硅谷最热门的收购目标",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "open_weights",
-            "name": "开放权重",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "open_weights",
-            "name": "开放权重",
-            "entityIds": [
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-8d4321d936320802",
-          "EN-7f871cbf905f6e0c"
-        ]
-      },
-      {
-        "id": "EV-c32dd87e1f72b09a",
-        "dataDate": "2026-08-30",
-        "date": "2026-08-28",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "Neocloud Lambda 获 10 亿美元债务融资以购买更多芯片",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "compute_cloud_service",
-            "name": "算力云服务",
-            "entityIds": [
-              "EN-3f2a8b14f8f96937"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-3f2a8b14f8f96937"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-3f2a8b14f8f96937",
-          "EN-8d4321d936320802",
-          "EN-9fbf261b62c1d7c0"
         ]
       },
       {
@@ -880,45 +921,6 @@
           "EN-7d1507284a5757ca",
           "EN-8d4321d936320802",
           "EN-cbc62794911ff31b"
-        ]
-      },
-      {
-        "id": "EV-30be225da68f2f70",
-        "dataDate": "2026-08-28",
-        "date": "2026-08-25",
-        "eventType": "partnership",
-        "eventTypeLabel": "合作",
-        "eventGroup": "商业合作",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "思科携手英伟达扩展安全AI工厂，迎接机架规模时代",
-        "displayTags": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [
-              "EN-e73b79a0b10f8cdb"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-e73b79a0b10f8cdb"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-e73b79a0b10f8cdb",
-          "EN-8d4321d936320802"
         ]
       },
       {
@@ -9612,6 +9614,169 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-9fbf261b62c1d7c0",
+      "name": "Microsoft",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c32dd87e1f72b09a",
+        "EV-b382525eb51777b9",
+        "EV-9ed6a759555d7e77",
+        "EV-2a78dd5feb40a78a",
+        "EV-97854226b6f43a95",
+        "EV-86ca5af11ee4d275",
+        "EV-52115fee0e716170",
+        "EV-20d762872664fddb",
+        "EV-88f4ee8cd57bdf42",
+        "EV-44a4e92c03a31ab1",
+        "EV-7585b033d4005977",
+        "EV-87c5f6dcc769999c",
+        "EV-be76a1e5ed2b6cf5",
+        "EV-e46756260827cd86",
+        "EV-e65f17f35ef7f1a3",
+        "EV-57944eebac69d510",
+        "EV-306ac8217c66dc81",
+        "EV-005a017a310d1fdd",
+        "EV-e09efcd49776cb95",
+        "EV-883d3b5f6d30eb48",
+        "EV-fa66f00e9d4b20c2",
+        "EV-f31feb5ed41be8f2",
+        "EV-4fba2b2f1ac10a79",
+        "EV-bcb74b02448b7d78",
+        "EV-47a16db069ed320e",
+        "EV-381b79897d896995",
+        "EV-d756f05478303505",
+        "EV-7263caa45bbf168e",
+        "EV-8abf5adc3e72fbb8",
+        "EV-8321e5cd7d423d62",
+        "EV-decbf1a34be68603",
+        "EV-6272444f30281858",
+        "EV-f55d16df5b5fecb2",
+        "EV-16cfe946bbf69aa3",
+        "EV-eec1e6857f0e0b2b",
+        "EV-6acfb15c012ddf6d",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-b833b29d904b39ac",
+        "EV-9dab7fa55702e561",
+        "EV-b2e374d54b10b9af",
+        "EV-4763b46821ab746e",
+        "EV-58c1cc3749294649",
+        "EV-c0a65877001ed413",
+        "EV-bd508dbe4205774f",
+        "EV-9d824ab9d0b0c6b5",
+        "EV-325c0a0b80938627",
+        "EV-ea2598236eae915f",
+        "EV-6018392d4cc4b472",
+        "EV-088870c111b4e968",
+        "EV-0ad3854d95038ea3",
+        "EV-890ffd351486b884",
+        "EV-bfaac87ceac44b9d",
+        "EV-ec283dd6bd3ac991",
+        "EV-1797eada6fb392a6",
+        "EV-ab1b780e6e543b42",
+        "EV-4c949b6aac6d26e7",
+        "EV-7a4d1e871dcd3b1f",
+        "EV-3eb44a239ebef4b0",
+        "EV-272aea63d4e50349",
+        "EV-5f2acbfb8f54fd59",
+        "EV-6aae550a6523a8fd",
+        "EV-c9216f0145c3ef2b",
+        "EV-395884a4c090103c",
+        "EV-272c5c798bc95d9d",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
+        "EV-37ff2485172cab0b",
+        "EV-82ae0ea3bfe336a1",
+        "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
+        "EV-6c81f03e885f10af",
+        "EV-e1e30a2a4a5232c6",
+        "EV-cd067fa6f39fe828",
+        "EV-1e611bcabcb049e9",
+        "EV-118317b7f92e5e16",
+        "EV-c4723445b11bb275",
+        "EV-7963d8c78531f12d",
+        "EV-7c899d5decafc42f",
+        "EV-b920999c64aa9ef6",
+        "EV-33292a33d0f4d599",
+        "EV-b3a050d576cea2f2",
+        "EV-fdcc4ff01b49053e",
+        "EV-cadcc94249dea81d",
+        "EV-dae42c1daf8ba2f8",
+        "EV-b862692915ae70bb",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-0370a17f0ef39c3e",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-7309586168387ad8",
+        "EV-8aead769e84de342",
+        "EV-7fb25ff3d853c314",
+        "EV-3acf607a02706fa8",
+        "EV-4ee99f92b011d16f",
+        "EV-9009adaed650ddde",
+        "EV-8a26b85b4f432525",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-10aac036228b3c6b",
+        "EV-8495af729cd05f62",
+        "EV-e28e134345ea5f99",
+        "EV-f7484ad16a6d1876",
+        "EV-d2d1834222ab32d3",
+        "EV-04c2ffd7f6b10126",
+        "EV-922de7a46f447efa",
+        "EV-1f61330a3f828179",
+        "EV-523e5de44cc464fb",
+        "EV-ae89898e7aa4a4d6",
+        "EV-d596f111808bd55b",
+        "EV-a4f052325d0ef230",
+        "EV-6ce6b9c9780b97d9",
+        "EV-649481503cdb7736",
+        "EV-741728825db1f14e",
+        "EV-89bdda008227fb6b",
+        "EV-62df953d81def866",
+        "EV-1b92b6c835ce240c",
+        "EV-3da14e3743571e92",
+        "EV-d9a78a839d6c628f",
+        "EV-1587a760d81451be",
+        "EV-33e7429a7bc94840",
+        "EV-022d1f3160d94048",
+        "EV-933294dfb2d19a67",
+        "EV-7580a050ca19a8ae"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-consumer",
+        "TX-target_user-business_user",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio",
+        "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution",
+        "TX-use_case-security_operations",
+        "TX-industry-manufacturing",
+        "TX-technology-mixture_of_experts",
+        "TX-deployment_model-on_premise",
+        "TX-technology-model_context_protocol",
+        "TX-technology-distillation"
+      ],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802",
+        "EN-8652f6cd9088f1fa",
+        "EN-d2f4e09cb01afa3c",
+        "EN-7d3194f79e645c42",
+        "EN-38945a66b4806b11",
+        "EN-c141d2237427f30d"
+      ],
+      "firstSeen": "2026-02-13",
+      "lastSeen": "2026-08-31"
+    },
+    {
       "id": "EN-7d1507284a5757ca",
       "name": "AWS",
       "entityType": "organization_candidate",
@@ -9755,6 +9920,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-ca2ab3833c31b91b",
         "EV-6e5b93a91480885c",
         "EV-4bbb0a030948b8f4",
         "EV-6944ba9fc55b4f41",
@@ -10106,7 +10272,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-9bc22dcabf7f45b3",
@@ -10223,6 +10389,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-56f6b96b92fbd6ca",
         "EV-87974a7ba1fef32a",
         "EV-97910e898975c6ca",
         "EV-db87eda4a39de22a",
@@ -10414,11 +10581,13 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-278745d4aa7a4b3a",
+        "EV-dff2cb04fb2c59be",
+        "EV-9530bb61702d4a33",
         "EV-2dd16bf18068dca9",
         "EV-5019dff541a05950",
         "EV-b33256317fc8ef4f",
         "EV-fd00664984e9ae3d",
-        "EV-278745d4aa7a4b3a",
         "EV-77d347212d8de7ea",
         "EV-42c656a8a7e0b362",
         "EV-6872f7635267e39c",
@@ -10559,28 +10728,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-30"
-    },
-    {
-      "id": "EN-7dfafb44ee67bcd8",
-      "name": "SVD",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-828698c8779bb522"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-07-22",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-e07654c7cc29acbd",
@@ -10607,29 +10755,6 @@
       "lastSeen": "2026-07-22"
     },
     {
-      "id": "EN-52c2f30b6bda5898",
-      "name": "Vera CPU",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-cb3a8846bc4f8aca"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-07-22",
-      "lastSeen": "2026-07-22"
-    },
-    {
       "id": "EN-683d8d597da71192",
       "name": "AI Processing Chip",
       "entityType": "product_candidate",
@@ -10649,30 +10774,6 @@
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-20"
-    },
-    {
-      "id": "EN-aa15d891a32a51b8",
-      "name": "Nemotron 3 Embed",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-950237c6b3eb6343"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-retrieval_augmented_generation"
-      ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-0f3360879e746531",
@@ -10729,29 +10830,6 @@
       ],
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-07-16"
-    },
-    {
-      "id": "EN-956b7280912ef1cc",
-      "name": "Mitsubishi Heavy Industries",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "三菱重工"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5b16886442234f81"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-07-14",
-      "lastSeen": "2026-07-15"
     },
     {
       "id": "EN-4a639cb888a15d75",
@@ -10903,29 +10981,6 @@
       "lastSeen": "2026-07-08"
     },
     {
-      "id": "EN-3ae50afab3e392b8",
-      "name": "Nemotron-Labs-TwoTower",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-3028dfadf94c8f4c"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model"
-      ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-04"
-    },
-    {
       "id": "EN-4e7e886400fe6a83",
       "name": "Halos for Robotics",
       "entityType": "product_candidate",
@@ -11038,213 +11093,30 @@
       ],
       "firstSeen": "2026-06-01",
       "lastSeen": "2026-06-05"
-    },
-    {
-      "id": "EN-9fbf261b62c1d7c0",
-      "name": "Microsoft",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-c32dd87e1f72b09a",
-        "EV-b382525eb51777b9",
-        "EV-9ed6a759555d7e77",
-        "EV-2a78dd5feb40a78a",
-        "EV-97854226b6f43a95",
-        "EV-86ca5af11ee4d275",
-        "EV-52115fee0e716170",
-        "EV-20d762872664fddb",
-        "EV-88f4ee8cd57bdf42",
-        "EV-44a4e92c03a31ab1",
-        "EV-7585b033d4005977",
-        "EV-87c5f6dcc769999c",
-        "EV-be76a1e5ed2b6cf5",
-        "EV-e46756260827cd86",
-        "EV-e65f17f35ef7f1a3",
-        "EV-57944eebac69d510",
-        "EV-306ac8217c66dc81",
-        "EV-005a017a310d1fdd",
-        "EV-e09efcd49776cb95",
-        "EV-883d3b5f6d30eb48",
-        "EV-fa66f00e9d4b20c2",
-        "EV-f31feb5ed41be8f2",
-        "EV-4fba2b2f1ac10a79",
-        "EV-bcb74b02448b7d78",
-        "EV-47a16db069ed320e",
-        "EV-381b79897d896995",
-        "EV-d756f05478303505",
-        "EV-7263caa45bbf168e",
-        "EV-8abf5adc3e72fbb8",
-        "EV-decbf1a34be68603",
-        "EV-6272444f30281858",
-        "EV-f55d16df5b5fecb2",
-        "EV-16cfe946bbf69aa3",
-        "EV-eec1e6857f0e0b2b",
-        "EV-6acfb15c012ddf6d",
-        "EV-2fab4396000198d2",
-        "EV-3fb492fb45980541",
-        "EV-b833b29d904b39ac",
-        "EV-9dab7fa55702e561",
-        "EV-b2e374d54b10b9af",
-        "EV-4763b46821ab746e",
-        "EV-58c1cc3749294649",
-        "EV-c0a65877001ed413",
-        "EV-bd508dbe4205774f",
-        "EV-9d824ab9d0b0c6b5",
-        "EV-325c0a0b80938627",
-        "EV-ea2598236eae915f",
-        "EV-6018392d4cc4b472",
-        "EV-088870c111b4e968",
-        "EV-0ad3854d95038ea3",
-        "EV-890ffd351486b884",
-        "EV-bfaac87ceac44b9d",
-        "EV-ec283dd6bd3ac991",
-        "EV-1797eada6fb392a6",
-        "EV-ab1b780e6e543b42",
-        "EV-4c949b6aac6d26e7",
-        "EV-7a4d1e871dcd3b1f",
-        "EV-3eb44a239ebef4b0",
-        "EV-272aea63d4e50349",
-        "EV-5f2acbfb8f54fd59",
-        "EV-6aae550a6523a8fd",
-        "EV-c9216f0145c3ef2b",
-        "EV-395884a4c090103c",
-        "EV-272c5c798bc95d9d",
-        "EV-5bc7efca0bc7fec0",
-        "EV-702276a31f123374",
-        "EV-37ff2485172cab0b",
-        "EV-82ae0ea3bfe336a1",
-        "EV-243e73016576fa43",
-        "EV-563843979fb55b9b",
-        "EV-6c81f03e885f10af",
-        "EV-e1e30a2a4a5232c6",
-        "EV-cd067fa6f39fe828",
-        "EV-1e611bcabcb049e9",
-        "EV-118317b7f92e5e16",
-        "EV-c4723445b11bb275",
-        "EV-7963d8c78531f12d",
-        "EV-7c899d5decafc42f",
-        "EV-b920999c64aa9ef6",
-        "EV-33292a33d0f4d599",
-        "EV-b3a050d576cea2f2",
-        "EV-fdcc4ff01b49053e",
-        "EV-cadcc94249dea81d",
-        "EV-dae42c1daf8ba2f8",
-        "EV-b862692915ae70bb",
-        "EV-51aed98773a9fca1",
-        "EV-cc3b92fe233953cf",
-        "EV-0370a17f0ef39c3e",
-        "EV-578a9db1fe952d0a",
-        "EV-b93b5cc15823e9c3",
-        "EV-7309586168387ad8",
-        "EV-8aead769e84de342",
-        "EV-7fb25ff3d853c314",
-        "EV-3acf607a02706fa8",
-        "EV-4ee99f92b011d16f",
-        "EV-9009adaed650ddde",
-        "EV-8a26b85b4f432525",
-        "EV-f953555178744c22",
-        "EV-28145c97a7237d6d",
-        "EV-10aac036228b3c6b",
-        "EV-8495af729cd05f62",
-        "EV-e28e134345ea5f99",
-        "EV-f7484ad16a6d1876",
-        "EV-d2d1834222ab32d3",
-        "EV-04c2ffd7f6b10126",
-        "EV-922de7a46f447efa",
-        "EV-1f61330a3f828179",
-        "EV-523e5de44cc464fb",
-        "EV-ae89898e7aa4a4d6",
-        "EV-d596f111808bd55b",
-        "EV-a4f052325d0ef230",
-        "EV-6ce6b9c9780b97d9",
-        "EV-649481503cdb7736",
-        "EV-741728825db1f14e",
-        "EV-89bdda008227fb6b",
-        "EV-62df953d81def866",
-        "EV-1b92b6c835ce240c",
-        "EV-3da14e3743571e92",
-        "EV-d9a78a839d6c628f",
-        "EV-1587a760d81451be",
-        "EV-33e7429a7bc94840",
-        "EV-022d1f3160d94048",
-        "EV-933294dfb2d19a67",
-        "EV-7580a050ca19a8ae"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-target_user-consumer",
-        "TX-target_user-business_user",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio",
-        "TX-use_case-data_analysis",
-        "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-industry-manufacturing",
-        "TX-technology-mixture_of_experts",
-        "TX-deployment_model-on_premise",
-        "TX-technology-model_context_protocol",
-        "TX-technology-distillation"
-      ],
-      "relatedEntityIds": [
-        "EN-8652f6cd9088f1fa",
-        "EN-d2f4e09cb01afa3c",
-        "EN-7d3194f79e645c42",
-        "EN-38945a66b4806b11",
-        "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-30"
-    },
-    {
-      "id": "EN-11ef7b03c79c9bbd",
-      "name": "Vera",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-631197767a45d34c"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-06-01"
-    },
-    {
-      "id": "EN-171fa23d27b5894b",
-      "name": "Cosmos 3",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-67f32771d69084d6"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-06-01"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-ee25fecc7314abd4",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-8d4321d936320802",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-9fbf261b62c1d7c0",
+      "object_type": "entity",
+      "event_id": "EV-8321e5cd7d423d62",
+      "claim_refs": [
+        "CL-bd0596ea4cb942fd",
+        "CL-ce6d5c37ec1f043e",
+        "CL-d4d1003e32dd764c",
+        "CL-1d17b0fdbb354bc0"
+      ],
+      "source_refs": [
+        "SA-9c4c7a3f6b48c3cb"
+      ],
+      "data_date": "2026-08-31",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-f2a574345a7b8fa5",
       "relationship_version": "RELATION-V2.1",
@@ -11327,26 +11199,6 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-a96854ad8a7b0bbc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-7dfafb44ee67bcd8",
-      "object_type": "entity",
-      "event_id": "EV-828698c8779bb522",
-      "claim_refs": [
-        "CL-802ad84118cf32ec",
-        "CL-4bea83191f9c4afc",
-        "CL-14abc711708348a9"
-      ],
-      "source_refs": [
-        "SA-d31abd0756f4c76a"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified"
-    },
-    {
       "relationship_id": "REL2-2e2947ee2164a001",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8d4321d936320802",
@@ -11363,25 +11215,6 @@
       ],
       "source_refs": [
         "SA-2975099e9be34f8b"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-7a766493d6d54dde",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-52c2f30b6bda5898",
-      "object_type": "entity",
-      "event_id": "EV-cb3a8846bc4f8aca",
-      "claim_refs": [
-        "CL-45faa3838295a3b1",
-        "CL-770ae8d405e879c6"
-      ],
-      "source_refs": [
-        "SA-2ed6d789fcc56d74"
       ],
       "data_date": "2026-07-22",
       "status": "verified"
@@ -11424,26 +11257,6 @@
         "SA-7474f2d741d25276"
       ],
       "data_date": "2026-07-20",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-cd31c7f1b13d1c27",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-aa15d891a32a51b8",
-      "object_type": "entity",
-      "event_id": "EV-950237c6b3eb6343",
-      "claim_refs": [
-        "CL-8a89be65a1a0c758",
-        "CL-515e4015e6d27579",
-        "CL-313db46aab7e3aab"
-      ],
-      "source_refs": [
-        "SA-5bc68137ea7bcb63"
-      ],
-      "data_date": "2026-07-18",
       "status": "verified"
     },
     {
@@ -11513,27 +11326,6 @@
         "SA-976748d90721f77e"
       ],
       "data_date": "2026-07-16",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-2106a1b212c3c15f",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-956b7280912ef1cc",
-      "object_type": "entity",
-      "event_id": "EV-5b16886442234f81",
-      "claim_refs": [
-        "CL-23841ec9ad74e5be",
-        "CL-f5588a6595b80582",
-        "CL-f206a4415dd1222e",
-        "CL-35c73e08269377e7"
-      ],
-      "source_refs": [
-        "SA-bc6a154e09c703b9"
-      ],
-      "data_date": "2026-07-15",
       "status": "verified"
     },
     {
@@ -11634,26 +11426,6 @@
         "SA-233b53691866c29d"
       ],
       "data_date": "2026-07-08",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-09079be08468cadc",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-3ae50afab3e392b8",
-      "object_type": "entity",
-      "event_id": "EV-3028dfadf94c8f4c",
-      "claim_refs": [
-        "CL-e97a7a589b9980c1",
-        "CL-0bbdad6779952a81",
-        "CL-6baa9897903cc3dc"
-      ],
-      "source_refs": [
-        "SA-7d7d63f2484913f7"
-      ],
-      "data_date": "2026-07-04",
       "status": "verified"
     },
     {
@@ -11891,66 +11663,6 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-4ba72572dcf15f72",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-11ef7b03c79c9bbd",
-      "object_type": "entity",
-      "event_id": "EV-631197767a45d34c",
-      "claim_refs": [
-        "CL-a5be3ebbffb97ab9",
-        "CL-4e30f271c8017d66",
-        "CL-bb382a9773443f24"
-      ],
-      "source_refs": [
-        "SA-b74ed4d2a25dc3b4"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-6e1c341aeaa60f54",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-9bc22dcabf7f45b3",
-      "object_type": "entity",
-      "event_id": "EV-aa63303570154a9b",
-      "claim_refs": [
-        "CL-4119c112dfe6ff3e",
-        "CL-008a6f6f83e5e40d",
-        "CL-eeaddb533e49827c"
-      ],
-      "source_refs": [
-        "SA-4dcdfe948f82b975"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-cd95b9638b93b057",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-171fa23d27b5894b",
-      "object_type": "entity",
-      "event_id": "EV-67f32771d69084d6",
-      "claim_refs": [
-        "CL-54dd99f7128a923b",
-        "CL-bdbc2f09ee0b8373",
-        "CL-6daec18c87ead702"
-      ],
-      "source_refs": [
-        "SA-471f373438651acc"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified"
-    },
-    {
       "relationship_id": "REL2-f07aa4dea6ae17e2",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8d4321d936320802",
@@ -11965,25 +11677,6 @@
       ],
       "source_refs": [
         "SA-ea04b2db9eef1083"
-      ],
-      "data_date": "2026-06-01",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-f1a8de714fc4b399",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-8d4321d936320802",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-a3266ab9e10d6105",
-      "object_type": "entity",
-      "event_id": "EV-d43a561da59b2897",
-      "claim_refs": [
-        "CL-b1f07f161ec7dee0",
-        "CL-553758c225568c2a"
-      ],
-      "source_refs": [
-        "SA-ae55abf27e9077a9"
       ],
       "data_date": "2026-06-01",
       "status": "verified"
@@ -12104,7 +11797,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-technology-open_weights",
@@ -12190,7 +11883,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-ai_infrastructure_software",
@@ -12531,7 +12224,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-model",
@@ -12627,6 +12320,8 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-082a9cdae7904aac",
+        "EV-ca2ab3833c31b91b",
         "EV-dff4ff4127cba5d9",
         "EV-eb3b431d4ce98ec5",
         "EV-eedd370fd9cfdbb2",
@@ -12782,6 +12477,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-9530bb61702d4a33",
         "EV-fd00664984e9ae3d",
         "EV-8d1915e3b460afa7",
         "EV-00e6152baff47d4d",
@@ -12864,6 +12560,8 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-0b914b1a1e589338",
+        "EN-7d3194f79e645c42",
         "EN-6e00d63f3be2ed2e",
         "EN-921ba2ce81556e42",
         "EN-bbdefa2950f49882",
@@ -12884,7 +12582,6 @@
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
-        "EN-7d3194f79e645c42",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
         "EN-febedfcafee9d610",
@@ -12979,7 +12676,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -13728,7 +13425,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-use_case-software_development",
@@ -14578,6 +14275,7 @@
         "EV-2d6d2dc0ead4be10",
         "EV-afcd5426f5c01dc7",
         "EV-6c361125c3f50bb6",
+        "EV-ca2ab3833c31b91b",
         "EV-c877ce26c9f8997f",
         "EV-25b88403a237969f",
         "EV-6360fcef17b43087",
@@ -14622,9 +14320,9 @@
         "EN-3db1f560db626918",
         "EN-bfc698cb0f9b4d72",
         "EN-23929c7dca3eb576",
+        "EN-7d3194f79e645c42",
         "EN-f8e930daaadf36ec",
         "EN-dd668059ea96880e",
-        "EN-7d3194f79e645c42",
         "EN-24f5eb8d2e667579",
         "EN-d36e5a1a7a3c45ce",
         "EN-754c490bd199c21a",
@@ -14641,7 +14339,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-use_case-customer_support",
@@ -14746,7 +14444,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-ai_market_application-models",
@@ -15769,7 +15467,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-industry-legal_services",
@@ -16474,10 +16172,10 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-278745d4aa7a4b3a",
         "EV-10fe2269806246e8",
         "EV-5019dff541a05950",
         "EV-00ffb2c501a37ec8",
-        "EV-278745d4aa7a4b3a",
         "EV-2c17183b71d8b7d1",
         "EV-ce32954014cb030d",
         "EV-09a29379b6399236",
@@ -17622,6 +17320,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-ca2ab3833c31b91b",
         "EV-ec8b36dcb97645da",
         "EV-92634b09de96ca83",
         "EV-72d4a00d52a3201c",
@@ -17738,7 +17437,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -17984,7 +17683,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -18046,6 +17745,7 @@
         "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
+        "EV-082a9cdae7904aac",
         "EV-c47112d137157d2d",
         "EV-be4b6dc8829070e5",
         "EV-58e18eab1b072c9a",
@@ -18110,6 +17810,7 @@
         "EN-ab877737b6081bd1",
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
+        "EN-0b914b1a1e589338",
         "EN-42f0b44cc91cc5e0",
         "EN-bbdefa2950f49882",
         "EN-74be4cbf48e647b2",
@@ -18138,7 +17839,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-industry-agriculture",
@@ -19087,6 +18788,51 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-1157d9714feb1476",
+      "eventId": "EV-8321e5cd7d423d62",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-27",
+      "title": "ChronoScale宣布与微软达成AI基础设施合作，在北美部署50 MW AI算力",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Microsoft",
+      "vendor": "NVIDIA",
+      "industry": "cloud compute industry",
+      "useCase": "with Microsoft for 50 MW AI Compute Deployment in North America :: ChronoScale Holdings Corporation (CHRN)",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "ChronoScale Announces AI Infrastructure Partnership with Microsoft for 50 MW AI Compute Deployment in North America",
+        "“Microsoft is helping define the next era of AI, and we are proud to partner with them on the infrastructure required to support that transformation,” said Cenly Chen, Chief Executive Officer of ChronoScale. “This planned 50 MW deployment reflects our focus on building AI infrastructure for the density and scale of accelerated computing. By combining NVIDIA GB300 NVL72 systems, liquid cooling, and our full-stack infrastructure capabilities, we intend to deliver production-ready AI compute with the performance, reliability, and scalability our customers require.”",
+        "Statements in this Press Release about future expectations, plans, and prospects, as well as any other statements regarding matters that are not historical facts, may constitute “forward-looking statements” within the meaning of The Private Securities Litigation Reform Act of 1995. The words “anticipate,” “believe,” “continue,” “could,” “estimate,” “expect,” “intend,” “may,” “plan,” “potential,” “predict,” “project,” “should,” “target,” “will,” “would,” and similar expressions are intended to identify forward-looking statements, although not all forward-looking statements contain these identifying words. Actual results may differ materially from those indicated by such forward-looking statements as a result of various important factors, including, but are not limited to, (i) statements regarding the Company, its plans and objectives and anticipated future economic performance; (ii) statements about the cloud compute industry; (iii) statements regarding the Company’s ability to expand capacity and meet accelerating demand; (iv) statements regarding the planned partnership, deployment, performance, reliability, and scalability of the infrastructure described herein; and (v) statements of assumptions underlying other statements and statements about the Company or its business. You are cautioned not to rely on these forward-looking statements. These statements are based on current expectations of future events and thus are inherently subject to uncertainty. If underlying assumptions prove inaccurate or known or unknown risks or uncertainties materialize, actual results could vary materially from the Company’s expectations. These risks, uncertainties, and other factors include: difficulties and delays in integrating the combined business resulting from the recently consummated business combination; the possibility that the anticipated benefits of the business combination are not realized when expected or at all, including as a result of the impact of, or problems arising from, the integration of the two companies; limitations on the Company’s ability to attract and retain key personnel, including executive officers and Board members of the Company; customer concentration, and an inability to renew existing customer agreements; the success of the Company’s risk management activities, including any failure by the Company to implement and maintain effective internal controls; litigation, including the potential litigation concerning the business combination; cash flow and access to capital; conditions in the debt and equity capital markets; slower than anticipated growth in the cloud compute industry; uncertainties related to market conditions, and other factors discussed in the “Risk Factors” section of the Company’s Annual Report on Form 10-K filed with the SEC on February 23, 2026, as amended on April 10, 2026, subsequently filed Quarterly Reports on Form 10-Q, the definitive Information Statement on Schedule 14C filed with the SEC on April 3, 2026, and the risks described in other filings that the Company may make from time to time with the SEC. Any forward-looking statements contained in this press release speak only as of the date hereof, and the Company specifically disclaims any obligation to update any forward-looking statement, whether as a result of new information, future events, or otherwise, except to the extent required by applicable law.",
+        "MENLO PARK, Calif., Aug. 27, 2026 (GLOBE NEWSWIRE) -- ChronoScale Corporation (NASDAQ: CHRN), (“ChronoScale” or the “Company”), an accelerated compute platform purpose-built to support demanding artificial intelligence workloads, today announced plans with Microsoft for a 50-megawatt (MW) AI compute deployment in North America. The deployment will feature NVIDIA GB300 NVL72 systems and advanced liquid-cooling infrastructure designed for high-density AI workloads."
+      ],
+      "outcomes": [
+        "deliver production-ready AI compute with the performance, reliability, and scalability our customers require",
+        "provide the performance, efficiency and flexibility developers and enterprises need to train and deploy frontier and open-source AI at scale"
+      ],
+      "metrics": [
+        "50 MW",
+        "50 MW"
+      ],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ir.chronoscale.com/press-releases/detail/793/chronoscale-announces-ai-infrastructure-partnership-with",
+      "entityIds": [
+        "EN-8d7b07a77dce19ab",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "FDE-c846ebc19f50a93f",
       "eventId": "EV-5bbc509a032b8309",
@@ -21008,6 +20754,56 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-69f02b9f8472ef65",
+      "implementationKey": "69f02b9f8472ef65",
+      "eventId": "EV-8321e5cd7d423d62",
+      "eventIds": [
+        "EV-8321e5cd7d423d62"
+      ],
+      "dataDate": "2026-08-31",
+      "date": "2026-08-27",
+      "title": "Microsoft × NVIDIA：with Microsoft for 50 MW AI Compute Deployment in North America :: ChronoScale Holdings Corporation (CHRN)",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Microsoft",
+      "vendor": "NVIDIA",
+      "industry": "cloud compute industry",
+      "useCase": "with Microsoft for 50 MW AI Compute Deployment in North America :: ChronoScale Holdings Corporation (CHRN)",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [
+        "deliver production-ready AI compute with the performance, reliability, and scalability our customers require",
+        "provide the performance, efficiency and flexibility developers and enterprises need to train and deploy frontier and open-source AI at scale"
+      ],
+      "observationCount": 1,
+      "completeness": 0.75,
+      "completenessPercent": 75,
+      "missingFields": [
+        "workflow",
+        "systems_integrated"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-bf7b6443b4089178",
+          "type": "earnings_disclosure",
+          "stage": "announced",
+          "date": "2026-08-27",
+          "dataDate": "2026-08-31",
+          "eventId": "EV-8321e5cd7d423d62",
+          "eventTitle": "ChronoScale宣布与微软达成AI基础设施合作，在北美部署50 MW AI算力",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://ir.chronoscale.com/press-releases/detail/793/chronoscale-announces-ai-infrastructure-partnership-with",
+      "entityIds": [
+        "EN-8d7b07a77dce19ab",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
       "id": "FDED-7cd24f1cc1f6d12e",
       "implementationKey": "7cd24f1cc1f6d12e",
       "eventId": "EV-5bbc509a032b8309",
@@ -21178,17 +20974,101 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-2efe3e24a0c5afd7",
+      "snapshotKey": "2efe3e24a0c5afd7",
+      "snapshotId": "HWS-0ce163997ed8c6ec",
+      "eventId": "EV-8321e5cd7d423d62",
+      "eventIds": [
+        "EV-8321e5cd7d423d62"
+      ],
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
+      "title": "ChronoScale Announces AI Infrastructure",
+      "subject": "ChronoScale Announces AI Infrastructure",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "50",
+          "unit": "MW",
+          "fact_ref": "HWF-949bdcfe52f81072"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-31",
+          "hardware_fact_id": "HWF-02402fd6af93f0d5",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-8d7b07a77dce19ab",
+          "subject_name": "ChronoScale Announces AI Infrastructure",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "50",
+          "unit": "MW",
+          "source_quote": "ChronoScale Announces AI Infrastructure Partnership with Microsoft for 50 MW AI Compute Deployment in North America",
+          "event_refs": [
+            "EV-8321e5cd7d423d62"
+          ],
+          "claim_ref": "CL-bd0596ea4cb942fd",
+          "source_refs": [
+            "SA-9c4c7a3f6b48c3cb"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-31",
+          "hardware_fact_id": "HWF-949bdcfe52f81072",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-8d7b07a77dce19ab",
+          "subject_name": "ChronoScale Announces AI Infrastructure",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "50",
+          "unit": "MW",
+          "source_quote": "“Microsoft is helping define the next era of AI, and we are proud to partner with them on the infrastructure required to support that transformation,” said Cenly Chen, Chief Executive Officer of ChronoScale. “This planned 50 MW deployment reflects our focus on building AI infrastructure for the density and scale of accelerated computing. By combining NVIDIA GB300 NVL72 systems, liquid cooling, and our full-stack infrastructure capabilities, we intend to deliver production-ready AI compute with the performance, reliability, and scalability our customers require.”",
+          "event_refs": [
+            "EV-8321e5cd7d423d62"
+          ],
+          "claim_ref": "CL-ce6d5c37ec1f043e",
+          "source_refs": [
+            "SA-9c4c7a3f6b48c3cb"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ir.chronoscale.com/press-releases/detail/793/chronoscale-announces-ai-infrastructure-partnership-with",
+      "entityIds": [
+        "EN-8d7b07a77dce19ab",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
       "id": "HWC-5a30e015d5d12a96",
       "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-1f8365423dfd5027",
+      "snapshotId": "HWS-f7c37a70f9fd91da",
       "eventId": "EV-4f6e481c90ff0e3c",
       "eventIds": [
         "EV-4f6e481c90ff0e3c",
         "EV-6b668e4655192209",
         "EV-467539fe176a470e"
       ],
-      "dataDate": "2026-08-30",
-      "date": "2026-08-30",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
       "title": "NVIDIA",
       "subject": "NVIDIA",
       "productNames": [],
@@ -21201,12 +21081,21 @@
         "specification": {
           "metric_value": "6",
           "unit": "$billion",
-          "fact_ref": "HWF-aaffb08c577c72e6"
+          "fact_ref": "HWF-e1b40db6ee472c4b"
         }
       },
       "factCount": 1,
-      "snapshotCount": 6,
+      "snapshotCount": 7,
       "changes": [
+        {
+          "date": "2026-08-31",
+          "previousDate": "2026-08-30",
+          "snapshotId": "HWS-f7c37a70f9fd91da",
+          "previousSnapshotId": "HWS-1f8365423dfd5027",
+          "changedFacts": [
+            "specification"
+          ]
+        },
         {
           "date": "2026-08-30",
           "previousDate": "2026-08-27",
@@ -21257,8 +21146,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-30",
-          "hardware_fact_id": "HWF-aaffb08c577c72e6",
+          "data_date": "2026-08-31",
+          "hardware_fact_id": "HWF-e1b40db6ee472c4b",
           "fact_type": "specification",
           "observed_at": "2026-08-28T00:00:00.000Z",
           "subject_entity_id": "EN-8d4321d936320802",
@@ -21272,11 +21161,11 @@
           "event_refs": [
             "EV-4f6e481c90ff0e3c"
           ],
-          "claim_ref": "CL-69df8d31821d1f90",
+          "claim_ref": "CL-3a6032ca4f7dc802",
           "source_refs": [
-            "SA-fe65ca58e90faefd"
+            "SA-7c73d6eda40d6b43"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],

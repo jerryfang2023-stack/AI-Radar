@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -95,7 +95,7 @@
       "HW-304c6370cc157449"
     ],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-08-30"
+    "lastSeen": "2026-08-31"
   },
   "events": [
     {
@@ -276,9 +276,9 @@
     },
     {
       "id": "EV-4f6e481c90ff0e3c",
-      "dataDate": "2026-08-30",
+      "dataDate": "2026-08-31",
       "date": "2026-08-28",
-      "updatedDate": "2026-08-30",
+      "updatedDate": "2026-08-31",
       "eventType": "acquisition",
       "eventTypeLabel": "并购",
       "eventGroup": "融资与并购",
@@ -6940,16 +6940,14 @@
         "EN-779965438dd9e7a7"
       ],
       "firstSeen": "2026-06-08",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -7022,6 +7020,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-8321e5cd7d423d62",
         "EV-30be225da68f2f70",
         "EV-afbcb331c874f648",
         "EV-5ac5368309eace1a",
@@ -7222,35 +7221,28 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0",
         "EN-7d1507284a5757ca",
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
-        "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-cd3509f4e1fbec99",
@@ -7611,7 +7603,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -7871,6 +7863,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-ca2ab3833c31b91b",
         "EV-6e5b93a91480885c",
         "EV-4bbb0a030948b8f4",
         "EV-6944ba9fc55b4f41",
@@ -8222,7 +8215,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-1ea953e1dbed6788",
@@ -8490,6 +8483,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-56f6b96b92fbd6ca",
         "EV-87974a7ba1fef32a",
         "EV-97910e898975c6ca",
         "EV-db87eda4a39de22a",
@@ -8681,11 +8675,13 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-278745d4aa7a4b3a",
+        "EV-dff2cb04fb2c59be",
+        "EV-9530bb61702d4a33",
         "EV-2dd16bf18068dca9",
         "EV-5019dff541a05950",
         "EV-b33256317fc8ef4f",
         "EV-fd00664984e9ae3d",
-        "EV-278745d4aa7a4b3a",
         "EV-77d347212d8de7ea",
         "EV-42c656a8a7e0b362",
         "EV-6872f7635267e39c",
@@ -8826,7 +8822,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-6b61eab266a42eb0",
@@ -9402,15 +9398,15 @@
     {
       "id": "HWC-5a30e015d5d12a96",
       "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-1f8365423dfd5027",
+      "snapshotId": "HWS-f7c37a70f9fd91da",
       "eventId": "EV-4f6e481c90ff0e3c",
       "eventIds": [
         "EV-4f6e481c90ff0e3c",
         "EV-6b668e4655192209",
         "EV-467539fe176a470e"
       ],
-      "dataDate": "2026-08-30",
-      "date": "2026-08-30",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
       "title": "NVIDIA",
       "subject": "NVIDIA",
       "productNames": [],
@@ -9423,12 +9419,21 @@
         "specification": {
           "metric_value": "6",
           "unit": "$billion",
-          "fact_ref": "HWF-aaffb08c577c72e6"
+          "fact_ref": "HWF-e1b40db6ee472c4b"
         }
       },
       "factCount": 1,
-      "snapshotCount": 6,
+      "snapshotCount": 7,
       "changes": [
+        {
+          "date": "2026-08-31",
+          "previousDate": "2026-08-30",
+          "snapshotId": "HWS-f7c37a70f9fd91da",
+          "previousSnapshotId": "HWS-1f8365423dfd5027",
+          "changedFacts": [
+            "specification"
+          ]
+        },
         {
           "date": "2026-08-30",
           "previousDate": "2026-08-27",
@@ -9479,8 +9484,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-30",
-          "hardware_fact_id": "HWF-aaffb08c577c72e6",
+          "data_date": "2026-08-31",
+          "hardware_fact_id": "HWF-e1b40db6ee472c4b",
           "fact_type": "specification",
           "observed_at": "2026-08-28T00:00:00.000Z",
           "subject_entity_id": "EN-8d4321d936320802",
@@ -9494,11 +9499,11 @@
           "event_refs": [
             "EV-4f6e481c90ff0e3c"
           ],
-          "claim_ref": "CL-69df8d31821d1f90",
+          "claim_ref": "CL-3a6032ca4f7dc802",
           "source_refs": [
-            "SA-fe65ca58e90faefd"
+            "SA-7c73d6eda40d6b43"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],

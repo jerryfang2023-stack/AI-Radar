@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -101,6 +101,7 @@
       "EV-fe63a869fe4cee45",
       "EV-35be62272c77c556",
       "EV-c0a65877001ed413",
+      "EV-56f6b96b92fbd6ca",
       "EV-87974a7ba1fef32a",
       "EV-97910e898975c6ca",
       "EV-db87eda4a39de22a",
@@ -292,11 +293,13 @@
       "EV-8115dd18f2812a29",
       "EV-cf496e0f8a56ca97",
       "EV-8cb5b0ed18c7cdd8",
+      "EV-278745d4aa7a4b3a",
+      "EV-dff2cb04fb2c59be",
+      "EV-9530bb61702d4a33",
       "EV-2dd16bf18068dca9",
       "EV-5019dff541a05950",
       "EV-b33256317fc8ef4f",
       "EV-fd00664984e9ae3d",
-      "EV-278745d4aa7a4b3a",
       "EV-77d347212d8de7ea",
       "EV-42c656a8a7e0b362",
       "EV-6872f7635267e39c",
@@ -437,7 +440,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-08-30",
+    "lastSeen": "2026-08-31",
     "relationIds": [
       "REL2-02bdd133e9353ff7",
       "REL2-778989c8b3d8bcda",
@@ -610,13 +613,14 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-56f6b96b92fbd6ca",
+        "EV-278745d4aa7a4b3a",
         "EV-87974a7ba1fef32a",
         "EV-5019dff541a05950",
         "EV-b33256317fc8ef4f",
         "EV-97910e898975c6ca",
         "EV-db87eda4a39de22a",
         "EV-eedd370fd9cfdbb2",
-        "EV-278745d4aa7a4b3a",
         "EV-6e96760ed7e2ebaa",
         "EV-daa8adf2de4e4bf4",
         "EV-4927409c0f4b3ef3",
@@ -835,6 +839,8 @@
         "EV-ad269fada2269f35"
       ],
       "other": [
+        "EV-dff2cb04fb2c59be",
+        "EV-9530bb61702d4a33",
         "EV-fd00664984e9ae3d",
         "EV-3343be31faab2cce",
         "EV-d7d649a3126aa663",
@@ -861,6 +867,92 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-56f6b96b92fbd6ca",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-30",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic的Claude Code限额调整：纸面加薪，实则削减",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cb4754c48f8023d0"
+        ]
+      },
+      {
+        "id": "EV-278745d4aa7a4b3a",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-30",
+        "eventType": "standard_specification",
+        "eventTypeLabel": "技术标准",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 开放模型硬件标准（MHS）研究预览：让 AI 智能体安全操作物理设备的共享规范",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-dff2cb04fb2c59be",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-30",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "索尼和华纳起诉Anthropic，称其“历史上最大规模、最明目张胆的知识产权盗窃行为之一”",
+        "displayTags": [],
+        "entityIds": [
+          "EN-587d392b6c7680ec",
+          "EN-091d29ac0b09248a",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-9530bb61702d4a33",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-29",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "索尼音乐和华纳起诉Anthropic，指控其“公然”窃取知识产权",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-49a42e072bf8d566",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-87974a7ba1fef32a",
         "dataDate": "2026-08-30",
@@ -1123,33 +1215,6 @@
           "EN-7d3194f79e645c42",
           "EN-c70eca6b0f88f44d",
           "EN-921ba2ce81556e42"
-        ]
-      },
-      {
-        "id": "EV-278745d4aa7a4b3a",
-        "dataDate": "2026-08-28",
-        "date": "2026-08-27",
-        "eventType": "standard_specification",
-        "eventTypeLabel": "技术标准",
-        "eventGroup": "组织、政策与法律",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Anthropic 开放模型硬件标准（MHS）研究预览",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -11386,6 +11451,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-56f6b96b92fbd6ca",
         "EV-5c87fffc3534e990",
         "EV-437a3e3d118f36e9",
         "EV-c74cb30742362fa2",
@@ -11453,7 +11519,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-830abc32d2a443c5",
@@ -11481,9 +11547,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -11556,6 +11620,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-8321e5cd7d423d62",
         "EV-30be225da68f2f70",
         "EV-afbcb331c874f648",
         "EV-5ac5368309eace1a",
@@ -11756,35 +11821,28 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0",
         "EN-7d1507284a5757ca",
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
-        "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -11893,6 +11951,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-ca2ab3833c31b91b",
         "EV-6e5b93a91480885c",
         "EV-4bbb0a030948b8f4",
         "EV-6944ba9fc55b4f41",
@@ -12244,7 +12303,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-729324072d368379",
@@ -13961,7 +14020,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-compute_cloud_service",
@@ -14032,7 +14091,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -14274,7 +14333,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-model",
@@ -14370,6 +14429,8 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-082a9cdae7904aac",
+        "EV-ca2ab3833c31b91b",
         "EV-dff4ff4127cba5d9",
         "EV-eb3b431d4ce98ec5",
         "EV-eedd370fd9cfdbb2",
@@ -14525,6 +14586,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-9530bb61702d4a33",
         "EV-fd00664984e9ae3d",
         "EV-8d1915e3b460afa7",
         "EV-00e6152baff47d4d",
@@ -14607,6 +14669,8 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-0b914b1a1e589338",
+        "EN-7d3194f79e645c42",
         "EN-6e00d63f3be2ed2e",
         "EN-921ba2ce81556e42",
         "EN-bbdefa2950f49882",
@@ -14627,7 +14691,6 @@
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
-        "EN-7d3194f79e645c42",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
         "EN-febedfcafee9d610",
@@ -14722,7 +14785,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -15804,7 +15867,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-use_case-software_development",
@@ -16266,7 +16329,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-ai_market_application-models",
@@ -17831,10 +17894,10 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-278745d4aa7a4b3a",
         "EV-10fe2269806246e8",
         "EV-5019dff541a05950",
         "EV-00ffb2c501a37ec8",
-        "EV-278745d4aa7a4b3a",
         "EV-2c17183b71d8b7d1",
         "EV-ce32954014cb030d",
         "EV-09a29379b6399236",
@@ -18673,6 +18736,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-ca2ab3833c31b91b",
         "EV-ec8b36dcb97645da",
         "EV-92634b09de96ca83",
         "EV-72d4a00d52a3201c",
@@ -18789,7 +18853,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -18851,6 +18915,7 @@
         "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
+        "EV-082a9cdae7904aac",
         "EV-c47112d137157d2d",
         "EV-be4b6dc8829070e5",
         "EV-58e18eab1b072c9a",
@@ -18915,6 +18980,7 @@
         "EN-ab877737b6081bd1",
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
+        "EN-0b914b1a1e589338",
         "EN-42f0b44cc91cc5e0",
         "EN-bbdefa2950f49882",
         "EN-74be4cbf48e647b2",
@@ -18943,7 +19009,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-industry-education",

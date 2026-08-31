@@ -81,6 +81,30 @@ test("lawsuit claims resolve Twitch from exact title and Claim evidence", () => 
   );
 });
 
+test("localized action and attributed research titles preserve Claim-backed candidate names", () => {
+  const cases = [
+    ["Caterpillar 将采矿自动化经验应用于 AI 部署", "Caterpillar 将采矿自动化经验应用于 AI", "Industrial heavyweight Caterpillar is using its experience to deploy AI.", "Caterpillar"],
+    ["巴克莱研究：AI 模型公司的成本结构", "undisclosed_subject", "这一结论来自巴克莱 8 月 28 日发布的 AI 行业单位经济模型研究报告。", "巴克莱"],
+  ];
+  for (const [title, subject, quote, name] of cases) {
+    const mentions = organizationMentions(title, { subject }, "research_result", quote, [{ subject, source_quote: quote }]);
+    assert.ok(mentions.some(item => item.canonicalName === name && item.verified === false && item.start === 0));
+    assert.ok(!mentions.some(item => item.canonicalName.includes("将采矿")));
+  }
+  const absent = organizationMentions("Caterpillar 将采矿自动化经验应用于 AI 部署", { subject: "undisclosed_subject" }, "deployment", "The company is testing a tool.", []);
+  assert.ok(!absent.some(item => item.canonicalName === "Caterpillar"));
+  const generic = organizationMentions("最新研究：AI 模型公司的成本结构", { subject: "undisclosed_subject" }, "research_result", "最新研究揭示了成本结构。", [{ subject: "undisclosed_subject", source_quote: "最新研究揭示了成本结构。" }]);
+  assert.ok(!generic.some(item => item.canonicalName === "最新"));
+});
+
+test("an attributed AI economics research report is not a product release", () => {
+  const title = "巴克莱研究：AI 模型公司每赚 100 美元，约 35 至 40 美元流向三大云巨头";
+  const quote = "这一结论来自巴克莱 8 月 28 日发布的 AI 行业单位经济模型研究报告。";
+  assert.equal(findEventRule(title, quote).eventType, "research_result");
+  assert.equal(findEventRule("巴克莱研究：AI 模型公司的成本……", quote), null);
+  assert.equal(findEventRule("Acme 发布 AI 研究工具", "Acme 发布 AI 研究工具，用于检索论文。").eventType, "product_release");
+});
+
 test("facet matching does not treat trailing retrieval metadata as event evidence", () => {
   const facets = facetAssertionsForClaim({
     claim_id: "CL-facet-metadata",
