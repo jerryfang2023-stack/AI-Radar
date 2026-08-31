@@ -27,4 +27,3 @@
 
 - The production wrapper does not recollect all source lanes or rerun the full monitor automatically.
 - Supply diagnostics remain in the report. A hard evidence-supply failure routes to targeted repair.
-
