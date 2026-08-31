@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -29,8 +29,8 @@
       "TX-use_case-customer_support"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-30",
-    "lastSeen": "2026-08-30",
+    "firstSeen": "2026-08-31",
+    "lastSeen": "2026-08-31",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -46,8 +46,8 @@
     "timeline": [
       {
         "id": "EV-04b84c1f3430c055",
-        "dataDate": "2026-08-30",
-        "date": "2026-08-30",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-31",
         "eventType": "deployment",
         "eventTypeLabel": "部署",
         "eventGroup": "部署与案例",
@@ -181,15 +181,15 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     }
   ],
   "fde": [
     {
       "id": "FDE-bdcc1cc24296c7ca",
       "eventId": "EV-04b84c1f3430c055",
-      "dataDate": "2026-08-30",
-      "date": "2026-08-30",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
       "title": "生成式AI用于维护",
       "stage": "announced",
       "stageLabel": "已公布",
@@ -233,8 +233,8 @@
       "eventIds": [
         "EV-04b84c1f3430c055"
       ],
-      "dataDate": "2026-08-30",
-      "date": "2026-08-30",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
       "title": "C3 AI × 未披露：select remote service operators",
       "stage": "announced",
       "stageLabel": "已公布",
@@ -245,7 +245,7 @@
       "workflow": "未披露",
       "systems": [],
       "outcomes": [],
-      "observationCount": 1,
+      "observationCount": 2,
       "completeness": 0.375,
       "completenessPercent": 38,
       "missingFields": [
@@ -256,6 +256,17 @@
         "reported_outcomes"
       ],
       "timeline": [
+        {
+          "observationId": "FDEO-857e4ba9de2ca79c",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-31",
+          "dataDate": "2026-08-31",
+          "eventId": "EV-04b84c1f3430c055",
+          "eventTitle": "生成式AI用于维护",
+          "claimCount": 2,
+          "sourceCount": 1
+        },
         {
           "observationId": "FDEO-558faf163ef6be1a",
           "type": "implementation_update",

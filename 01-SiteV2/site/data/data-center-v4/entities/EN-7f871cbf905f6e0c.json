@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -61,14 +61,14 @@
       "EN-779965438dd9e7a7"
     ],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-08-30",
+    "lastSeen": "2026-08-31",
     "relationIds": [
       "REL2-eaf27cde7b70ddb9"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
+        "EV-532031a0c390a2e3",
         "EV-40fd274ae86434b8",
         "EV-6b668e4655192209",
         "EV-9d665270d4feb97e",
@@ -102,6 +102,43 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-4f6e481c90ff0e3c",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-28",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "开源权重AI公司成为硅谷最热门的收购目标",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-7f871cbf905f6e0c"
+        ]
+      },
       {
         "id": "EV-532031a0c390a2e3",
         "dataDate": "2026-08-30",
@@ -138,43 +175,6 @@
             "name": "开放权重",
             "entityIds": [
               "EN-7f871cbf905f6e0c"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-8d4321d936320802",
-          "EN-7f871cbf905f6e0c"
-        ]
-      },
-      {
-        "id": "EV-4f6e481c90ff0e3c",
-        "dataDate": "2026-08-30",
-        "date": "2026-08-28",
-        "eventType": "acquisition",
-        "eventTypeLabel": "并购",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "开源权重AI公司成为硅谷最热门的收购目标",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "open_weights",
-            "name": "开放权重",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "open_weights",
-            "name": "开放权重",
-            "entityIds": [
-              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1093,7 +1093,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-product_form-model",
@@ -1189,6 +1189,8 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-082a9cdae7904aac",
+        "EV-ca2ab3833c31b91b",
         "EV-dff4ff4127cba5d9",
         "EV-eb3b431d4ce98ec5",
         "EV-eedd370fd9cfdbb2",
@@ -1344,6 +1346,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-9530bb61702d4a33",
         "EV-fd00664984e9ae3d",
         "EV-8d1915e3b460afa7",
         "EV-00e6152baff47d4d",
@@ -1426,6 +1429,8 @@
         "EN-c890cfa67d1da908",
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-0b914b1a1e589338",
+        "EN-7d3194f79e645c42",
         "EN-6e00d63f3be2ed2e",
         "EN-921ba2ce81556e42",
         "EN-bbdefa2950f49882",
@@ -1446,7 +1451,6 @@
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
-        "EN-7d3194f79e645c42",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
         "EN-febedfcafee9d610",
@@ -1541,7 +1545,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-use_case-software_development",
@@ -2628,15 +2632,15 @@
     {
       "id": "HWC-5a30e015d5d12a96",
       "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-1f8365423dfd5027",
+      "snapshotId": "HWS-f7c37a70f9fd91da",
       "eventId": "EV-4f6e481c90ff0e3c",
       "eventIds": [
         "EV-4f6e481c90ff0e3c",
         "EV-6b668e4655192209",
         "EV-467539fe176a470e"
       ],
-      "dataDate": "2026-08-30",
-      "date": "2026-08-30",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
       "title": "NVIDIA",
       "subject": "NVIDIA",
       "productNames": [],
@@ -2649,12 +2653,21 @@
         "specification": {
           "metric_value": "6",
           "unit": "$billion",
-          "fact_ref": "HWF-aaffb08c577c72e6"
+          "fact_ref": "HWF-e1b40db6ee472c4b"
         }
       },
       "factCount": 1,
-      "snapshotCount": 6,
+      "snapshotCount": 7,
       "changes": [
+        {
+          "date": "2026-08-31",
+          "previousDate": "2026-08-30",
+          "snapshotId": "HWS-f7c37a70f9fd91da",
+          "previousSnapshotId": "HWS-1f8365423dfd5027",
+          "changedFacts": [
+            "specification"
+          ]
+        },
         {
           "date": "2026-08-30",
           "previousDate": "2026-08-27",
@@ -2705,8 +2718,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-30",
-          "hardware_fact_id": "HWF-aaffb08c577c72e6",
+          "data_date": "2026-08-31",
+          "hardware_fact_id": "HWF-e1b40db6ee472c4b",
           "fact_type": "specification",
           "observed_at": "2026-08-28T00:00:00.000Z",
           "subject_entity_id": "EN-8d4321d936320802",
@@ -2720,11 +2733,11 @@
           "event_refs": [
             "EV-4f6e481c90ff0e3c"
           ],
-          "claim_ref": "CL-69df8d31821d1f90",
+          "claim_ref": "CL-3a6032ca4f7dc802",
           "source_refs": [
-            "SA-fe65ca58e90faefd"
+            "SA-7c73d6eda40d6b43"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],

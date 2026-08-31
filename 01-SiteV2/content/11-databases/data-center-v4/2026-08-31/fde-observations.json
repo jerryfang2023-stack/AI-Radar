@@ -1,0 +1,76 @@
+[
+  {
+    "observation_id": "FDEO-bf7b6443b4089178",
+    "implementation_key": "69f02b9f8472ef65",
+    "observation_type": "earnings_disclosure",
+    "observed_at": "2026-08-27T00:00:00.000Z",
+    "customer": "Microsoft",
+    "vendor": "NVIDIA",
+    "industry": "cloud compute industry",
+    "use_case": "with Microsoft for 50 MW AI Compute Deployment in North America :: ChronoScale Holdings Corporation (CHRN)",
+    "workflow": "",
+    "systems_integrated": [],
+    "lifecycle_stage": "announced",
+    "reported_outcomes": [
+      "deliver production-ready AI compute with the performance, reliability, and scalability our customers require",
+      "provide the performance, efficiency and flexibility developers and enterprises need to train and deploy frontier and open-source AI at scale"
+    ],
+    "event_refs": [
+      "EV-8321e5cd7d423d62"
+    ],
+    "claim_refs": [
+      "CL-bd0596ea4cb942fd",
+      "CL-ce6d5c37ec1f043e",
+      "CL-d4d1003e32dd764c",
+      "CL-1d17b0fdbb354bc0"
+    ],
+    "source_refs": [
+      "SA-9c4c7a3f6b48c3cb"
+    ],
+    "completeness": {
+      "resolved_fields": 6,
+      "total_fields": 8,
+      "ratio": 0.75,
+      "missing_fields": [
+        "workflow",
+        "systems_integrated"
+      ]
+    }
+  },
+  {
+    "observation_id": "FDEO-857e4ba9de2ca79c",
+    "implementation_key": "02a5be60f16af502",
+    "observation_type": "implementation_update",
+    "observed_at": "2026-08-31T02:33:51.045Z",
+    "customer": "C3 AI",
+    "vendor": "",
+    "industry": "",
+    "use_case": "select remote service operators",
+    "workflow": "",
+    "systems_integrated": [],
+    "lifecycle_stage": "announced",
+    "reported_outcomes": [],
+    "event_refs": [
+      "EV-04b84c1f3430c055"
+    ],
+    "claim_refs": [
+      "CL-08a9f582f32ac985",
+      "CL-05633b27a634867a"
+    ],
+    "source_refs": [
+      "SA-9a9d929ad7114918"
+    ],
+    "completeness": {
+      "resolved_fields": 3,
+      "total_fields": 8,
+      "ratio": 0.375,
+      "missing_fields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ]
+    }
+  }
+]
