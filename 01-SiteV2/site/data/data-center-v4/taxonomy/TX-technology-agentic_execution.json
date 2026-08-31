@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -510,10 +510,10 @@
       "EV-8cb5b0ed18c7cdd8",
       "EV-6566d065f5500a85",
       "EV-34929bdd016dc8d6",
+      "EV-278745d4aa7a4b3a",
       "EV-10fe2269806246e8",
       "EV-5019dff541a05950",
       "EV-00ffb2c501a37ec8",
-      "EV-278745d4aa7a4b3a",
       "EV-2c17183b71d8b7d1",
       "EV-ce32954014cb030d",
       "EV-09a29379b6399236",
@@ -83087,10 +83087,90 @@
       "publisher": "supermicro.com"
     },
     {
+      "id": "EV-278745d4aa7a4b3a",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "standard_specification",
+      "eventTypeLabel": "技术标准",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 开放模型硬件标准（MHS）研究预览：让 AI 智能体安全操作物理设备的共享规范",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "standard_specification",
+      "object": "Model Hardware Standard (MHS)",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://marktechpost.com/2026/08/29/anthropic-opens-a-research-preview-of-the-model-hardware-standard-mhs-a-shared-specification-for-ai-agents-to-safely-operate-physical-devices",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-10fe2269806246e8",
-      "dataDate": "2026-08-30",
+      "dataDate": "2026-08-31",
       "date": "2026-08-29",
-      "updatedDate": "2026-08-30",
+      "updatedDate": "2026-08-31",
       "eventType": "research_result",
       "eventTypeLabel": "研究结果",
       "eventGroup": "研究结果",
@@ -83382,86 +83462,6 @@
       "products": [],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
       "publisher": "The Verge AI"
-    },
-    {
-      "id": "EV-278745d4aa7a4b3a",
-      "dataDate": "2026-08-28",
-      "date": "2026-08-27",
-      "updatedDate": "2026-08-28",
-      "eventType": "standard_specification",
-      "eventTypeLabel": "技术标准",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Anthropic 开放模型硬件标准（MHS）研究预览",
-      "originalTitle": "",
-      "subject": "Anthropic",
-      "action": "standard_specification",
-      "object": "Model Hardware Standard (MHS)",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://anthropic.com/news/model-hardware-standard-research-preview",
-      "publisher": "Anthropic：Newsroom（网页）"
     },
     {
       "id": "EV-2c17183b71d8b7d1",
@@ -88762,6 +88762,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-8321e5cd7d423d62",
         "EV-decbf1a34be68603",
         "EV-6272444f30281858",
         "EV-f55d16df5b5fecb2",
@@ -88874,15 +88875,15 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-8d4321d936320802",
         "EN-8652f6cd9088f1fa",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
-        "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-c141d2237427f30d"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-29b9f0cae32e7a8a",
@@ -89257,6 +89258,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-ca2ab3833c31b91b",
         "EV-6e5b93a91480885c",
         "EV-4bbb0a030948b8f4",
         "EV-6944ba9fc55b4f41",
@@ -89608,7 +89610,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -90387,9 +90389,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -90462,6 +90462,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-8321e5cd7d423d62",
         "EV-30be225da68f2f70",
         "EV-afbcb331c874f648",
         "EV-5ac5368309eace1a",
@@ -90662,35 +90663,28 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0",
         "EN-7d1507284a5757ca",
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
-        "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -91387,6 +91381,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-56f6b96b92fbd6ca",
         "EV-87974a7ba1fef32a",
         "EV-97910e898975c6ca",
         "EV-db87eda4a39de22a",
@@ -91578,11 +91573,13 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-278745d4aa7a4b3a",
+        "EV-dff2cb04fb2c59be",
+        "EV-9530bb61702d4a33",
         "EV-2dd16bf18068dca9",
         "EV-5019dff541a05950",
         "EV-b33256317fc8ef4f",
         "EV-fd00664984e9ae3d",
-        "EV-278745d4aa7a4b3a",
         "EV-77d347212d8de7ea",
         "EV-42c656a8a7e0b362",
         "EV-6872f7635267e39c",
@@ -91723,7 +91720,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-cb4754c48f8023d0",
@@ -91751,6 +91748,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-56f6b96b92fbd6ca",
         "EV-5c87fffc3534e990",
         "EV-437a3e3d118f36e9",
         "EV-c74cb30742362fa2",
@@ -91818,7 +91816,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-738e22f0acab814c",
@@ -92131,7 +92129,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-53a7676bcec5dff6",
@@ -92585,7 +92583,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-92df1be3e37c9268",
@@ -93362,9 +93360,7 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-22"
     },
@@ -93621,6 +93617,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-6feb7616ceb6c917",
         "EV-ee489212ff9135a4",
         "EV-2499dc922663af7e",
         "EV-c844ddabb8528896"
@@ -93636,7 +93633,7 @@
         "EN-8d57f84bd1847b24"
       ],
       "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-02865db849986974",
@@ -93701,9 +93698,7 @@
         "TX-technology-agentic_execution",
         "TX-technology-retrieval_augmented_generation"
       ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-07-18",
       "lastSeen": "2026-07-18"
     },
@@ -95383,7 +95378,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-05",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-31f61ed3e6e210c5",

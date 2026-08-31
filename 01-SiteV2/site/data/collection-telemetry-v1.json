@@ -2,39 +2,39 @@
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V3.1.0-membership",
-    "data_date": "2026-08-30",
-    "generated_at": "2026-08-30T13:58:09.589Z",
+    "data_date": "2026-08-31",
+    "generated_at": "2026-08-31T02:51:16.336Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 244,
+    "capture_succeeded": 237,
     "capture_failed": 0,
-    "recovered_source_failures": 17,
-    "raw_documents": 244
+    "recovered_source_failures": 19,
+    "raw_documents": 237
   },
   "fact_build": {
-    "accepted_claims": 73,
+    "accepted_claims": 57,
     "rejected_claims": 0,
-    "accepted": 73,
+    "accepted": 57,
     "rejected": 0,
-    "pending_claims": 11,
-    "canonical_events": 30,
-    "entities": 45,
-    "relationships": 84,
+    "pending_claims": 8,
+    "canonical_events": 23,
+    "entities": 37,
+    "relationships": 65,
     "conflicts": 0,
     "qa_queue": 216,
     "qa_by_status": {
-      "review_optional": 206,
-      "open": 10
+      "review_optional": 210,
+      "open": 6
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-08-30",
-    "gate_date": "2026-08-30",
+    "manifest_date": "2026-08-31",
+    "gate_date": "2026-08-31",
     "failures": [],
     "warnings": [
       "No source-bounded hardware projection was produced."
@@ -44,11 +44,11 @@
     "opportunity_map": "passed",
     "trend_radar": "passed",
     "funding_insights": "passed",
-    "fde_hardware_sync": "unknown"
+    "fde_hardware_sync": "passed"
   },
   "publication": {
-    "status": "passed",
-    "phase": "build_snapshot",
+    "status": "waiting",
+    "phase": "pre_deploy_snapshot",
     "authoritative": false,
     "finalization": "github_pages_artifact"
   },
@@ -59,15 +59,15 @@
       "status": "passed",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 244,
+        "capture_succeeded": 237,
         "capture_failed": 0,
-        "recovered_source_failures": 17,
-        "raw_documents": 244
+        "recovered_source_failures": 19,
+        "raw_documents": 237
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/manifest.json",
-        "agent-workflow/reports/2026-08-30-guanlan-daily-monitor-log.md",
-        "agent-workflow/reports/2026-08-30-guanlan-monitor-quality-gate.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/manifest.json",
+        "agent-workflow/reports/2026-08-31-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-08-31-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -75,47 +75,47 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 73,
+        "accepted_claims": 57,
         "rejected_claims": 0,
-        "accepted": 73,
+        "accepted": 57,
         "rejected": 0,
-        "pending_claims": 11,
-        "canonical_events": 30,
-        "entities": 45,
-        "relationships": 84,
+        "pending_claims": 8,
+        "canonical_events": 23,
+        "entities": 37,
+        "relationships": 65,
         "conflicts": 0,
         "qa_queue": 216
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/manifest.json",
-        "agent-workflow/reports/2026-08-30-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/manifest.json",
+        "agent-workflow/reports/2026-08-31-data-center-v4-integrity-gate.json"
       ]
     },
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "partial",
+      "status": "passed",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "passed",
-        "fde_hardware_sync": "unknown"
+        "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-30-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-31-persistent-asset-manifest.json"
       ]
     },
     {
       "id": "publication",
       "label": "发布",
-      "status": "passed",
+      "status": "waiting",
       "counts": {
         "v4_bundle_ready": true,
-        "snapshot_phase": "build_snapshot",
+        "snapshot_phase": "pre_deploy_snapshot",
         "authoritative": false
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-30-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-31-persistent-asset-manifest.json"
       ]
     }
   ],

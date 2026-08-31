@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "eventTypes": {
@@ -116,16 +116,16 @@
   "events": [
     {
       "id": "EV-086902ad904c1c90",
-      "dataDate": "2026-08-30",
+      "dataDate": "2026-08-31",
       "date": "2026-08-29",
-      "updatedDate": "2026-08-30",
+      "updatedDate": "2026-08-31",
       "eventType": "acquisition",
       "eventTypeLabel": "并购",
       "eventGroup": "融资与并购",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "OpenAI切断Cursor服务，因SpaceX收购后引用马斯克违约历史",
+      "title": "OpenAI切断Cursor合作，因SpaceX收购后马斯克有违约前科",
       "originalTitle": "OpenAI cuts off Cursor after SpaceX acquisition, citing Musk's history of breaking contracts",
       "subject": "OpenAI cuts off Cursor after SpaceX",
       "action": "acquisition",
@@ -446,9 +446,9 @@
     },
     {
       "id": "EV-4f6e481c90ff0e3c",
-      "dataDate": "2026-08-30",
+      "dataDate": "2026-08-31",
       "date": "2026-08-28",
-      "updatedDate": "2026-08-30",
+      "updatedDate": "2026-08-31",
       "eventType": "acquisition",
       "eventTypeLabel": "并购",
       "eventGroup": "融资与并购",
@@ -568,9 +568,9 @@
     },
     {
       "id": "EV-c32dd87e1f72b09a",
-      "dataDate": "2026-08-30",
+      "dataDate": "2026-08-31",
       "date": "2026-08-28",
-      "updatedDate": "2026-08-30",
+      "updatedDate": "2026-08-31",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -122905,9 +122905,9 @@
     },
     {
       "id": "EV-04b84c1f3430c055",
-      "dataDate": "2026-08-30",
-      "date": "2026-08-30",
-      "updatedDate": "2026-08-30",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
+      "updatedDate": "2026-08-31",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
       "eventGroup": "部署与案例",
@@ -122988,10 +122988,56 @@
       "publisher": "c3.ai"
     },
     {
+      "id": "EV-b1236dadc85894e4",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Caterpillar 将采矿自动化经验应用于 AI 部署",
+      "originalTitle": "",
+      "subject": "Caterpillar 将采矿自动化经验应用于 AI",
+      "action": "部署",
+      "object": "Caterpillar 将采矿自动化经验应用于 AI 部署",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-baffdf37aa5d3961"
+      ],
+      "entityNames": [
+        "Caterpillar"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
       "id": "EV-73c7062edbdf5d08",
-      "dataDate": "2026-08-30",
+      "dataDate": "2026-08-31",
       "date": "2026-08-29",
-      "updatedDate": "2026-08-30",
+      "updatedDate": "2026-08-31",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
       "eventGroup": "部署与案例",
@@ -144858,6 +144904,56 @@
       "publisher": "amd.com"
     },
     {
+      "id": "EV-8321e5cd7d423d62",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-27",
+      "updatedDate": "2026-08-31",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "ChronoScale宣布与微软达成AI基础设施合作，在北美部署50 MW AI算力",
+      "originalTitle": "ChronoScale Announces AI Infrastructure Partnership with Microsoft for 50 MW AI Compute Deployment in North America :: ChronoScale Holdings Corporation (CHRN)",
+      "subject": "ChronoScale Announces AI Infrastructure",
+      "action": "Partnership",
+      "object": "with Microsoft for 50 MW AI Compute Deployment in North America :: ChronoScale Holdings Corporation (CHRN)",
+      "metrics": [
+        "50 MW"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d7b07a77dce19ab",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "ChronoScale Announces AI Infrastructure",
+        "Microsoft",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ir.chronoscale.com/press-releases/detail/793/chronoscale-announces-ai-infrastructure-partnership-with",
+      "publisher": "ir.chronoscale.com"
+    },
+    {
       "id": "EV-1e6f73c188a9e946",
       "dataDate": "2026-08-26",
       "date": "2026-08-26",
@@ -145023,9 +145119,9 @@
     },
     {
       "id": "EV-30be225da68f2f70",
-      "dataDate": "2026-08-28",
+      "dataDate": "2026-08-31",
       "date": "2026-08-25",
-      "updatedDate": "2026-08-28",
+      "updatedDate": "2026-08-31",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -158483,9 +158579,9 @@
     },
     {
       "id": "EV-03992c9b7f8fef10",
-      "dataDate": "2026-08-30",
-      "date": "2026-08-30",
-      "updatedDate": "2026-08-30",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
+      "updatedDate": "2026-08-31",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -158534,6 +158630,460 @@
       ],
       "sourceUrl": "https://procurementsciences.com/platform",
       "publisher": "procurementsciences.com"
+    },
+    {
+      "id": "EV-6feb7616ceb6c917",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
+      "updatedDate": "2026-08-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "荣耀MagicOS 11 提前剧透：AI 窥屏防护覆盖超多机型，智能识别机主身份",
+      "originalTitle": "",
+      "subject": "荣耀",
+      "action": "product_release",
+      "object": "MagicOS 11",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-be548deba4a093d7",
+        "EN-076d2f378a8ea994"
+      ],
+      "entityNames": [
+        "荣耀",
+        "MagicOS 11"
+      ],
+      "productName": "MagicOS 11",
+      "products": [
+        {
+          "name": "MagicOS 11",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/340.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-082a9cdae7904aac",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "华为云联合瑞金医院发布瑞智病理大模型 RuiPath 2.0",
+      "originalTitle": "",
+      "subject": "华为云联合瑞金医院",
+      "action": "发布瑞智病理大模型",
+      "object": "RuiPath 2.0",
+      "metrics": [
+        "90%"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-f06063df8cf1aa75",
+          "CL-edb869e7f8a02fc7",
+          "CL-e7887641a4e292a5",
+          "CL-0c36dd1993d9aa36"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-0b914b1a1e589338"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-0b914b1a1e589338"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-0b914b1a1e589338"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-0b914b1a1e589338"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-0b914b1a1e589338"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-0b914b1a1e589338"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0b914b1a1e589338",
+        "EN-0e4b2ba14f2fd761",
+        "EN-586a3cd93f031366"
+      ],
+      "entityNames": [
+        "华为云联合瑞金医院",
+        "Huawei Cloud",
+        "RuiPath 2.0"
+      ],
+      "productName": "RuiPath 2.0",
+      "products": [
+        {
+          "name": "RuiPath 2.0",
+          "type": "模型",
+          "ownerNames": [
+            "Huawei Cloud"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/195.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-56f6b96b92fbd6ca",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "pricing_change",
+      "eventTypeLabel": "定价变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic的Claude Code限额调整：纸面加薪，实则削减",
+      "originalTitle": "Anthropic's Claude Code limit change is a raise on paper but a cut in practice",
+      "subject": "Anthropic",
+      "action": "pricing_change",
+      "object": "Claude Code weekly usage limits",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/anthropics-claude-code-limit-change-is-a-raise-on-paper-but-a-cut-in-practice",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-b1146684fc4b4dd2",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "pricing_change",
+      "eventTypeLabel": "定价变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Claude Code 标准周限额 9 月 14 日起对 Pro / Max / Team 用户永久上调 25%",
+      "originalTitle": "",
+      "subject": "Claude Code",
+      "action": "pricing_change",
+      "object": "Pro / Max / Team 用户",
+      "metrics": [
+        "25%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-a625159d18da5718"
+      ],
+      "entityNames": [
+        "Claude Code"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/996/097.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ca2ab3833c31b91b",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "预估为 GPT-6 模型：OpenAI Astra 首批演示样本流出，1 次交互生成类 GTA 2 游戏",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "预估为 GPT-6 模型：OpenAI Astra 首批演示样本流出，1 次交互生成类 GTA 2 游戏",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-3850792f618f534b"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "GPT-6"
+      ],
+      "productName": "GPT-6",
+      "products": [
+        {
+          "name": "GPT-6",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/120.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-6e5b93a91480885c",
@@ -159421,9 +159971,9 @@
     },
     {
       "id": "EV-293d6feac5b8efab",
-      "dataDate": "2026-08-30",
+      "dataDate": "2026-08-31",
       "date": "2026-08-28",
-      "updatedDate": "2026-08-30",
+      "updatedDate": "2026-08-31",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
@@ -159447,10 +159997,10 @@
           "cn-sspai-rss"
         ],
         "claim_refs": [
-          "CL-e7382b431f2a35b3",
-          "CL-f5b95f5ec7bd3767",
-          "CL-9af26b0a14edebcf",
-          "CL-60c7da49dd660539"
+          "CL-b751b0defa82650a",
+          "CL-11cdd3de88887c7d",
+          "CL-f5e8927dddb4a9af",
+          "CL-26c1a6da76600762"
         ]
       },
       "missingFields": [],
@@ -273979,6 +274529,182 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-278745d4aa7a4b3a",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "standard_specification",
+      "eventTypeLabel": "技术标准",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 开放模型硬件标准（MHS）研究预览：让 AI 智能体安全操作物理设备的共享规范",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "standard_specification",
+      "object": "Model Hardware Standard (MHS)",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://marktechpost.com/2026/08/29/anthropic-opens-a-research-preview-of-the-model-hardware-standard-mhs-a-shared-specification-for-ai-agents-to-safely-operate-physical-devices",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-a0bc74f4892dcfad",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "巴克莱研究：AI 模型公司每赚 100 美元，约 35 至 40 美元流向三大云巨头",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "发布研究报告",
+      "object": "巴克莱研究：AI 模型公司每赚 100 美元，约 35 至 40 美元流向三大云巨头",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-728a23561d377753"
+      ],
+      "entityNames": [
+        "巴克莱"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/996/218.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-dff2cb04fb2c59be",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "索尼和华纳起诉Anthropic，称其“历史上最大规模、最明目张胆的知识产权盗窃行为之一”",
+      "originalTitle": "Sony and Warner sue Anthropic over \"one of the largest and most blatant ongoing thefts of intellectual property in history\"",
+      "subject": "Sony and Warner",
+      "action": "sue",
+      "object": "Anthropic over \"one of the largest and most blatant ongoing thefts of intellectual property in history\"",
+      "metrics": [
+        "$1.5 billion"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-587d392b6c7680ec",
+        "EN-091d29ac0b09248a",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Sony",
+        "Warner",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/sony-and-warner-sue-anthropic-over-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history",
+      "publisher": "The Decoder AI News"
+    },
+    {
       "id": "EV-26bc16f473f3f3c2",
       "dataDate": "2026-08-30",
       "date": "2026-08-30",
@@ -274030,9 +274756,9 @@
     },
     {
       "id": "EV-10fe2269806246e8",
-      "dataDate": "2026-08-30",
+      "dataDate": "2026-08-31",
       "date": "2026-08-29",
-      "updatedDate": "2026-08-30",
+      "updatedDate": "2026-08-31",
       "eventType": "research_result",
       "eventTypeLabel": "研究结果",
       "eventGroup": "研究结果",
@@ -274153,6 +274879,86 @@
       ],
       "sourceUrl": "https://the-decoder.com/google-gives-ai-agents-their-own-wiki-so-they-can-learn-from-mistakes-and-successes",
       "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-9530bb61702d4a33",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-29",
+      "updatedDate": "2026-08-31",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "索尼音乐和华纳起诉Anthropic，指控其“公然”窃取知识产权",
+      "originalTitle": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+      "subject": "Sony Music, Warner",
+      "action": "sue",
+      "object": "Anthropic, alleging a “brazen campaign” of intellectual property theft",
+      "metrics": [
+        "$1.5 billion"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-49a42e072bf8d566",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Sony Music",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft",
+      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-2dd16bf18068dca9",
@@ -274587,6 +275393,50 @@
       "publisher": "intercom.com"
     },
     {
+      "id": "EV-a0678a734614b9fc",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-28",
+      "updatedDate": "2026-08-31",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI机器人及先进技术将在新合同制度下获得公共采购快速通道",
+      "originalTitle": "AI robots, advanced tech to get public procurement fast track under new contract system - The Herald Business",
+      "subject": "Government of South Korea",
+      "action": "policy_regulation",
+      "object": "National Contract System Reform to Promote Innovative Technologies",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d31c43526b245fe0"
+      ],
+      "entityNames": [
+        "Government of South Korea"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://biz.heraldcorp.com/article/10854950",
+      "publisher": "biz.heraldcorp.com"
+    },
+    {
       "id": "EV-860fbba841badfec",
       "dataDate": "2026-08-30",
       "date": "2026-08-28",
@@ -274634,50 +275484,6 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india",
       "publisher": "TechCrunch AI"
-    },
-    {
-      "id": "EV-a0678a734614b9fc",
-      "dataDate": "2026-08-30",
-      "date": "2026-08-28",
-      "updatedDate": "2026-08-30",
-      "eventType": "policy_regulation",
-      "eventTypeLabel": "政策监管",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI机器人及先进技术将在新合同制度下获得公共采购快速通道",
-      "originalTitle": "AI robots, advanced tech to get public procurement fast track under new contract system - The Herald Business",
-      "subject": "Government of South Korea",
-      "action": "policy_regulation",
-      "object": "National Contract System Reform to Promote Innovative Technologies",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-d31c43526b245fe0"
-      ],
-      "entityNames": [
-        "Government of South Korea"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://biz.heraldcorp.com/article/10854950",
-      "publisher": "biz.heraldcorp.com"
     },
     {
       "id": "EV-1a2a8971c887e4db",
@@ -275137,86 +275943,6 @@
       "products": [],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
       "publisher": "The Verge AI"
-    },
-    {
-      "id": "EV-278745d4aa7a4b3a",
-      "dataDate": "2026-08-28",
-      "date": "2026-08-27",
-      "updatedDate": "2026-08-28",
-      "eventType": "standard_specification",
-      "eventTypeLabel": "技术标准",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Anthropic 开放模型硬件标准（MHS）研究预览",
-      "originalTitle": "",
-      "subject": "Anthropic",
-      "action": "standard_specification",
-      "object": "Model Hardware Standard (MHS)",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://anthropic.com/news/model-hardware-standard-research-preview",
-      "publisher": "Anthropic：Newsroom（网页）"
     },
     {
       "id": "EV-5f8479f97236bdea",

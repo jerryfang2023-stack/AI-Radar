@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -37,6 +37,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-56f6b96b92fbd6ca",
       "EV-5c87fffc3534e990",
       "EV-437a3e3d118f36e9",
       "EV-c74cb30742362fa2",
@@ -104,7 +105,7 @@
       "EN-c70eca6b0f88f44d"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-28",
+    "lastSeen": "2026-08-31",
     "relationIds": [
       "REL2-a352560206a1ac3f",
       "REL2-d9ba4c1f870adb8b",
@@ -115,6 +116,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-56f6b96b92fbd6ca",
         "EV-5c87fffc3534e990",
         "EV-437a3e3d118f36e9",
         "EV-c74cb30742362fa2",
@@ -178,6 +180,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-56f6b96b92fbd6ca",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-30",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic的Claude Code限额调整：纸面加薪，实则削减",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cb4754c48f8023d0"
+        ]
+      },
       {
         "id": "EV-5c87fffc3534e990",
         "dataDate": "2026-08-28",
@@ -1420,6 +1438,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-56f6b96b92fbd6ca",
         "EV-87974a7ba1fef32a",
         "EV-97910e898975c6ca",
         "EV-db87eda4a39de22a",
@@ -1611,11 +1630,13 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-278745d4aa7a4b3a",
+        "EV-dff2cb04fb2c59be",
+        "EV-9530bb61702d4a33",
         "EV-2dd16bf18068dca9",
         "EV-5019dff541a05950",
         "EV-b33256317fc8ef4f",
         "EV-fd00664984e9ae3d",
-        "EV-278745d4aa7a4b3a",
         "EV-77d347212d8de7ea",
         "EV-42c656a8a7e0b362",
         "EV-6872f7635267e39c",
@@ -1756,7 +1777,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     }
   ],
   "relationships": [
@@ -2321,10 +2342,10 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-278745d4aa7a4b3a",
         "EV-10fe2269806246e8",
         "EV-5019dff541a05950",
         "EV-00ffb2c501a37ec8",
-        "EV-278745d4aa7a4b3a",
         "EV-2c17183b71d8b7d1",
         "EV-ce32954014cb030d",
         "EV-09a29379b6399236",
@@ -2764,7 +2785,7 @@
         "HW-ecc6755da7bbbbcd"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-technology-tool_use",

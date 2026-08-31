@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -49,7 +49,7 @@
       "EN-993599624a199fe0"
     ],
     "firstSeen": "2026-06-13",
-    "lastSeen": "2026-08-30",
+    "lastSeen": "2026-08-31",
     "relationIds": [
       "REL2-09dd97666e545a2c",
       "REL2-ff240950e3bb7f5e"
@@ -61,8 +61,8 @@
         "EV-40f14150d6f622f5"
       ],
       "productsServices": [
-        "EV-ec8b36dcb97645da",
         "EV-293d6feac5b8efab",
+        "EV-ec8b36dcb97645da",
         "EV-34fd528787e47757",
         "EV-911e7e2722aa5ebc",
         "EV-b613937b7bc1ea64",
@@ -78,6 +78,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-293d6feac5b8efab",
+        "dataDate": "2026-08-31",
+        "date": "2026-08-28",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "派早报：智谱开源 GLM-5.3-Flash 原生多模态模型等",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-1d79127e9d90e89b",
+          "EN-bbdefa2950f49882",
+          "EN-92ef967014bccd4a"
+        ]
+      },
       {
         "id": "EV-ec8b36dcb97645da",
         "dataDate": "2026-08-30",
@@ -104,34 +132,6 @@
         "entityIds": [
           "EN-1d79127e9d90e89b",
           "EN-e3ea8280d7689bb7"
-        ]
-      },
-      {
-        "id": "EV-293d6feac5b8efab",
-        "dataDate": "2026-08-30",
-        "date": "2026-08-28",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "派早报：智谱开源 GLM-5.3-Flash 原生多模态模型等",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "multimodal",
-            "name": "多模态",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-478676438ee161a3",
-          "EN-1d79127e9d90e89b",
-          "EN-bbdefa2950f49882",
-          "EN-92ef967014bccd4a"
         ]
       },
       {
@@ -764,6 +764,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-ca2ab3833c31b91b",
         "EV-ec8b36dcb97645da",
         "EV-92634b09de96ca83",
         "EV-72d4a00d52a3201c",
@@ -880,7 +881,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "TX-technology-long_context",

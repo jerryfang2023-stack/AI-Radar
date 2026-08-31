@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "hardware": [
@@ -2983,6 +2983,239 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-2efe3e24a0c5afd7",
+      "snapshotKey": "2efe3e24a0c5afd7",
+      "snapshotId": "HWS-0ce163997ed8c6ec",
+      "eventId": "EV-8321e5cd7d423d62",
+      "eventIds": [
+        "EV-8321e5cd7d423d62"
+      ],
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
+      "title": "ChronoScale Announces AI Infrastructure",
+      "subject": "ChronoScale Announces AI Infrastructure",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "50",
+          "unit": "MW",
+          "fact_ref": "HWF-949bdcfe52f81072"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-31",
+          "hardware_fact_id": "HWF-02402fd6af93f0d5",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-8d7b07a77dce19ab",
+          "subject_name": "ChronoScale Announces AI Infrastructure",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "50",
+          "unit": "MW",
+          "source_quote": "ChronoScale Announces AI Infrastructure Partnership with Microsoft for 50 MW AI Compute Deployment in North America",
+          "event_refs": [
+            "EV-8321e5cd7d423d62"
+          ],
+          "claim_ref": "CL-bd0596ea4cb942fd",
+          "source_refs": [
+            "SA-9c4c7a3f6b48c3cb"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-31",
+          "hardware_fact_id": "HWF-949bdcfe52f81072",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-27T00:00:00.000Z",
+          "subject_entity_id": "EN-8d7b07a77dce19ab",
+          "subject_name": "ChronoScale Announces AI Infrastructure",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "50",
+          "unit": "MW",
+          "source_quote": "“Microsoft is helping define the next era of AI, and we are proud to partner with them on the infrastructure required to support that transformation,” said Cenly Chen, Chief Executive Officer of ChronoScale. “This planned 50 MW deployment reflects our focus on building AI infrastructure for the density and scale of accelerated computing. By combining NVIDIA GB300 NVL72 systems, liquid cooling, and our full-stack infrastructure capabilities, we intend to deliver production-ready AI compute with the performance, reliability, and scalability our customers require.”",
+          "event_refs": [
+            "EV-8321e5cd7d423d62"
+          ],
+          "claim_ref": "CL-ce6d5c37ec1f043e",
+          "source_refs": [
+            "SA-9c4c7a3f6b48c3cb"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ir.chronoscale.com/press-releases/detail/793/chronoscale-announces-ai-infrastructure-partnership-with",
+      "entityIds": [
+        "EN-8d7b07a77dce19ab",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "HWC-5a30e015d5d12a96",
+      "snapshotKey": "5a30e015d5d12a96",
+      "snapshotId": "HWS-f7c37a70f9fd91da",
+      "eventId": "EV-4f6e481c90ff0e3c",
+      "eventIds": [
+        "EV-4f6e481c90ff0e3c",
+        "EV-6b668e4655192209",
+        "EV-467539fe176a470e"
+      ],
+      "dataDate": "2026-08-31",
+      "date": "2026-08-31",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification",
+        "product"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "6",
+          "unit": "$billion",
+          "fact_ref": "HWF-e1b40db6ee472c4b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 7,
+      "changes": [
+        {
+          "date": "2026-08-31",
+          "previousDate": "2026-08-30",
+          "snapshotId": "HWS-f7c37a70f9fd91da",
+          "previousSnapshotId": "HWS-1f8365423dfd5027",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-30",
+          "previousDate": "2026-08-27",
+          "snapshotId": "HWS-1f8365423dfd5027",
+          "previousSnapshotId": "HWS-c8f5584d4abcba56",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-27",
+          "previousDate": "2026-08-07",
+          "snapshotId": "HWS-c8f5584d4abcba56",
+          "previousSnapshotId": "HWS-62a40b6eb4a8749f",
+          "changedFacts": [
+            "specification"
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "previousDate": "2026-08-06",
+          "snapshotId": "HWS-62a40b6eb4a8749f",
+          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "previousDate": "2026-08-05",
+          "snapshotId": "HWS-df26b5fa3a51a04d",
+          "previousSnapshotId": "HWS-84ba3d86778ff712",
+          "changedFacts": [
+            "product"
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "previousDate": "2026-08-04",
+          "snapshotId": "HWS-84ba3d86778ff712",
+          "previousSnapshotId": "HWS-6228f201a75148c3",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-31",
+          "hardware_fact_id": "HWF-e1b40db6ee472c4b",
+          "fact_type": "specification",
+          "observed_at": "2026-08-28T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "6",
+          "unit": "$billion",
+          "source_quote": "Rumors of that deal come after Nvidia struck a $6 billion agreement with Poolside, an open-weight model builder, that will see most of its employees move to the chip-making giant. And two weeks ago, Stripe acquired OpenRouter, the top provider of open-weight models to businesses, for more than $7 billion.",
+          "event_refs": [
+            "EV-4f6e481c90ff0e3c"
+          ],
+          "claim_ref": "CL-3a6032ca4f7dc802",
+          "source_refs": [
+            "SA-7c73d6eda40d6b43"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-7f871cbf905f6e0c"
+      ]
+    },
+    {
       "id": "HWC-10bf48c75f2708f2",
       "snapshotKey": "10bf48c75f2708f2",
       "snapshotId": "HWS-ab8d961593e2488b",
@@ -3066,146 +3299,6 @@
       "entityIds": [
         "EN-6117af74470fbaa4",
         "EN-d9352ce019e77ab3"
-      ]
-    },
-    {
-      "id": "HWC-5a30e015d5d12a96",
-      "snapshotKey": "5a30e015d5d12a96",
-      "snapshotId": "HWS-1f8365423dfd5027",
-      "eventId": "EV-4f6e481c90ff0e3c",
-      "eventIds": [
-        "EV-4f6e481c90ff0e3c",
-        "EV-6b668e4655192209",
-        "EV-467539fe176a470e"
-      ],
-      "dataDate": "2026-08-30",
-      "date": "2026-08-30",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "specification",
-        "product"
-      ],
-      "latestValues": {
-        "specification": {
-          "metric_value": "6",
-          "unit": "$billion",
-          "fact_ref": "HWF-aaffb08c577c72e6"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 6,
-      "changes": [
-        {
-          "date": "2026-08-30",
-          "previousDate": "2026-08-27",
-          "snapshotId": "HWS-1f8365423dfd5027",
-          "previousSnapshotId": "HWS-c8f5584d4abcba56",
-          "changedFacts": [
-            "specification"
-          ]
-        },
-        {
-          "date": "2026-08-27",
-          "previousDate": "2026-08-07",
-          "snapshotId": "HWS-c8f5584d4abcba56",
-          "previousSnapshotId": "HWS-62a40b6eb4a8749f",
-          "changedFacts": [
-            "specification"
-          ]
-        },
-        {
-          "date": "2026-08-07",
-          "previousDate": "2026-08-06",
-          "snapshotId": "HWS-62a40b6eb4a8749f",
-          "previousSnapshotId": "HWS-df26b5fa3a51a04d",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-06",
-          "previousDate": "2026-08-05",
-          "snapshotId": "HWS-df26b5fa3a51a04d",
-          "previousSnapshotId": "HWS-84ba3d86778ff712",
-          "changedFacts": [
-            "product"
-          ]
-        },
-        {
-          "date": "2026-08-05",
-          "previousDate": "2026-08-04",
-          "snapshotId": "HWS-84ba3d86778ff712",
-          "previousSnapshotId": "HWS-6228f201a75148c3",
-          "changedFacts": [
-            "product"
-          ]
-        }
-      ],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-30",
-          "hardware_fact_id": "HWF-aaffb08c577c72e6",
-          "fact_type": "specification",
-          "observed_at": "2026-08-28T00:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "6",
-          "unit": "$billion",
-          "source_quote": "Rumors of that deal come after Nvidia struck a $6 billion agreement with Poolside, an open-weight model builder, that will see most of its employees move to the chip-making giant. And two weeks ago, Stripe acquired OpenRouter, the top provider of open-weight models to businesses, for more than $7 billion.",
-          "event_refs": [
-            "EV-4f6e481c90ff0e3c"
-          ],
-          "claim_ref": "CL-69df8d31821d1f90",
-          "source_refs": [
-            "SA-fe65ca58e90faefd"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-7f871cbf905f6e0c"
       ]
     },
     {
@@ -12694,10 +12787,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-30",
-      "funnel_id": "LF-1f3d45d1600526e0",
+      "data_date": "2026-08-31",
+      "funnel_id": "LF-d271f3b191ae573b",
       "lens": "hardware",
-      "date": "2026-08-30",
+      "date": "2026-08-31",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_oem_odm",
@@ -12705,25 +12798,25 @@
         "hardware_shipment_deployment"
       ],
       "raw_documents": 18,
-      "original_sources": 15,
-      "valid_claims": 7,
-      "observations": 2,
-      "canonical_events": 2,
+      "original_sources": 16,
+      "valid_claims": 0,
+      "observations": 3,
+      "canonical_events": 0,
       "blocker_counts": {
-        "source_outside_daily_window": 6,
-        "no_source_bounded_event": 1,
-        "no_source_bounded_claim": 1,
+        "source_outside_daily_window": 7,
         "non_event_or_index_title": 3,
+        "no_source_bounded_event": 3,
         "event_not_ai_relevant": 1,
-        "raw_source_quality_block": 4
+        "rumor_requires_primary_confirmation": 1,
+        "raw_source_quality_block": 3
       },
       "rates": {
-        "original_source_rate": 0.8333333333333334,
-        "valid_claim_rate": 0.3888888888888889,
-        "observation_rate": 0.2857142857142857,
-        "event_conversion_rate": 0.2857142857142857
+        "original_source_rate": 0.8888888888888888,
+        "valid_claim_rate": 0,
+        "observation_rate": 0,
+        "event_conversion_rate": 1
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/monitoring-funnel.json"
     }
   ]
 }

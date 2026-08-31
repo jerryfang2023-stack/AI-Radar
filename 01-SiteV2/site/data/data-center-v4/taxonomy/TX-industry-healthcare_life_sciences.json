@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-30T05:57:05.139Z",
-    "latestDataDate": "2026-08-30",
-    "currentDate": "2026-08-30",
-    "eventCount": 2497,
+    "generatedAt": "2026-08-31T02:48:56.246Z",
+    "latestDataDate": "2026-08-31",
+    "currentDate": "2026-08-31",
+    "eventCount": 2507,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -71,6 +71,7 @@
       "EV-e999f3386aba7a2e",
       "EV-bad301e14b034fbd",
       "EV-4763b46821ab746e",
+      "EV-082a9cdae7904aac",
       "EV-c47112d137157d2d",
       "EV-be4b6dc8829070e5",
       "EV-58e18eab1b072c9a",
@@ -135,6 +136,7 @@
       "EN-ab877737b6081bd1",
       "EN-cbadff7c58c26e1a",
       "EN-06b5472c16feae4c",
+      "EN-0b914b1a1e589338",
       "EN-42f0b44cc91cc5e0",
       "EN-bbdefa2950f49882",
       "EN-74be4cbf48e647b2",
@@ -163,7 +165,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-08-28"
+    "lastSeen": "2026-08-31"
   },
   "events": [
     {
@@ -22667,6 +22669,150 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-082a9cdae7904aac",
+      "dataDate": "2026-08-31",
+      "date": "2026-08-30",
+      "updatedDate": "2026-08-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "华为云联合瑞金医院发布瑞智病理大模型 RuiPath 2.0",
+      "originalTitle": "",
+      "subject": "华为云联合瑞金医院",
+      "action": "发布瑞智病理大模型",
+      "object": "RuiPath 2.0",
+      "metrics": [
+        "90%"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-f06063df8cf1aa75",
+          "CL-edb869e7f8a02fc7",
+          "CL-e7887641a4e292a5",
+          "CL-0c36dd1993d9aa36"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-0b914b1a1e589338"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-0b914b1a1e589338"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-0b914b1a1e589338"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-0b914b1a1e589338"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-0b914b1a1e589338"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-0b914b1a1e589338"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0b914b1a1e589338",
+        "EN-0e4b2ba14f2fd761",
+        "EN-586a3cd93f031366"
+      ],
+      "entityNames": [
+        "华为云联合瑞金医院",
+        "Huawei Cloud",
+        "RuiPath 2.0"
+      ],
+      "productName": "RuiPath 2.0",
+      "products": [
+        {
+          "name": "RuiPath 2.0",
+          "type": "模型",
+          "ownerNames": [
+            "Huawei Cloud"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/195.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-c47112d137157d2d",
       "dataDate": "2026-08-25",
       "date": "2026-08-24",
@@ -25591,9 +25737,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -25666,6 +25810,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-8321e5cd7d423d62",
         "EV-30be225da68f2f70",
         "EV-afbcb331c874f648",
         "EV-5ac5368309eace1a",
@@ -25866,35 +26011,28 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0",
         "EN-7d1507284a5757ca",
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
-        "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-171fa23d27b5894b"
+        "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -25986,6 +26124,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-56f6b96b92fbd6ca",
         "EV-87974a7ba1fef32a",
         "EV-97910e898975c6ca",
         "EV-db87eda4a39de22a",
@@ -26177,11 +26316,13 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-278745d4aa7a4b3a",
+        "EV-dff2cb04fb2c59be",
+        "EV-9530bb61702d4a33",
         "EV-2dd16bf18068dca9",
         "EV-5019dff541a05950",
         "EV-b33256317fc8ef4f",
         "EV-fd00664984e9ae3d",
-        "EV-278745d4aa7a4b3a",
         "EV-77d347212d8de7ea",
         "EV-42c656a8a7e0b362",
         "EV-6872f7635267e39c",
@@ -26322,7 +26463,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-6fae0bc5a895aab8",
@@ -27716,6 +27857,28 @@
       "lastSeen": "2026-06-13"
     },
     {
+      "id": "EN-0b914b1a1e589338",
+      "name": "华为云联合瑞金医院",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-082a9cdae7904aac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-industry-healthcare_life_sciences"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-30",
+      "lastSeen": "2026-08-31"
+    },
+    {
       "id": "EN-42f0b44cc91cc5e0",
       "name": "阿里达摩院",
       "entityType": "organization_candidate",
@@ -28021,7 +28184,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -28442,6 +28605,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-ca2ab3833c31b91b",
         "EV-6e5b93a91480885c",
         "EV-4bbb0a030948b8f4",
         "EV-6944ba9fc55b4f41",
@@ -28793,7 +28957,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-a19ad969c84178e9",
