@@ -1129,11 +1129,16 @@ function buildSkillOpsLane() {
   const problems = [];
   const warnings = [];
   const actions = [];
-  const result = runOptional("node", ["agent-workflow/tools/check-skill-ops.mjs", "--json"], 20000);
+  const runtimeDashboard = path.join(outputDir, "local-skill-store-data.js");
+  const dashboardArgs = args.has("output-dir") && exists(runtimeDashboard)
+    ? [`--dashboard=${runtimeDashboard}`]
+    : [];
+  const result = runOptional("node", ["agent-workflow/tools/check-skill-ops.mjs", "--json", ...dashboardArgs], 20000);
   const check = parseCommandJson(result, null);
   const summary = check?.summary || {};
   const evidence = {
     command: "npm run check:skill-ops",
+    dashboardPath: dashboardArgs.length ? rel(runtimeDashboard) : "01-SiteV2/site/data/local-skill-store-data.js",
     registryState: summary.registryState || "unknown",
     governed: summary.governed ?? null,
     current: summary.current ?? null,

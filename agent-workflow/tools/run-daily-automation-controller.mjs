@@ -150,7 +150,10 @@ function morning() {
     "agent-workflow/tools/build-skill-store-dashboard.mjs",
     `--output=${path.join(reportsDir, "local-skill-store-data.js")}`,
   ]);
-  const preflight = run("Skill Ops preflight", process.execPath, ["agent-workflow/tools/check-skill-ops.mjs"]);
+  const preflight = run("Skill Ops preflight", process.execPath, [
+    "agent-workflow/tools/check-skill-ops.mjs",
+    `--dashboard=${path.join(reportsDir, "local-skill-store-data.js")}`,
+  ]);
   const business = run("Data Center V4 production dispatch", process.execPath, [
     "agent-workflow/tools/run-business-signals-health-dispatch.mjs",
     `--date=${date}`,
