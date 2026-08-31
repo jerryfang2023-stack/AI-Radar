@@ -28,6 +28,7 @@ Page({
     if (!this.data.loaded) this.setData({ activeTab: options.tab === "archive" ? "archive" : "schedule" });
     return readCommunityPage(this, async () => {
       if (options.type === "archive" || options.type === "speaker") {
+        if (!options.id) throw new Error("实录链接无效，请返回列表重新打开");
         const { item } = await communityRequest(`archives/${encodeURIComponent(options.id)}`);
         const speaker = options.type === "speaker" ? item.speakerDetails[Number(options.speaker)] : null;
         if (options.type === "speaker" && !speaker) throw new Error("此分享不存在");

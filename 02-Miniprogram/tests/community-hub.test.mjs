@@ -61,15 +61,14 @@ test("features three distinct real archives without homepage schedules or person
     for (const field of ["title", "subtitle", "speakers", "date"]) assert.equal(item[field], source[field]);
   }
   assert.doesNotMatch(home, /type=schedule|schedules\[|下一场|本场排期|正在进行|points-strip|最近积分|社群积分/u);
-  assert.match(home, /type=archive&amp;id=\{\{featuredArchive\.id\}\}/u);
-  assert.match(home, /type=archive&amp;id=\{\{item\.id\}\}/u);
+  assert.match(home, /data-id="\{\{featuredArchive\.id\}\}" bindtap="openArchive"/u);
+  assert.match(home, /data-id="\{\{item\.id\}\}" bindtap="openArchive"/u);
   assert.match(home, /tab=archive/u);
   for (const item of displayed) {
-    const url = `/pages/community-program/index?type=archive&id=${item.id}`;
     memberAllowed = false;
-    page.openProtected({ currentTarget: { dataset: { url } } });
+    page.openArchive({ currentTarget: { dataset: { id: item.id } } });
     memberAllowed = true;
-    page.openProtected({ currentTarget: { dataset: { url } } });
+    page.openArchive({ currentTarget: { dataset: { id: item.id } } });
   }
   assert.equal(navigations.length, 3);
   page.setData = (value) => Object.assign(page.data, value);

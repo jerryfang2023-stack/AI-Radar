@@ -5,7 +5,7 @@ import test from "node:test";
 import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
-function pageFor(name, request) {
+function pageFor(name, request, memberAllowed = true) {
   let page;
   const events = [];
   vm.runInNewContext(fs.readFileSync(`miniprogram/pages/${name}/index.js`, "utf8"), {
@@ -13,7 +13,7 @@ function pageFor(name, request) {
     require(id) {
       if (id.endsWith("payment.js")) return { communityRequest: request, fetchMembership: async () => ({}) };
       if (id.endsWith("experience.js")) return { isExperience: () => false, readExperience: () => null };
-      if (id.endsWith("community-access.js")) return { requireCommunityMember: () => true };
+      if (id.endsWith("community-access.js")) return { requireCommunityMember(callback) { if (memberAllowed && callback) callback(); return memberAllowed; } };
       if (id.endsWith("member.js")) return { getCommunity: () => ({ status: "joined" }), saveCommunityProfile: (data) => events.push(["save", data]) };
       if (id.endsWith("community-data.js")) return require("../miniprogram/utils/community-data.js");
       if (id.endsWith("community-loading.js")) return require("../miniprogram/utils/community-loading.js");
@@ -26,6 +26,78 @@ function pageFor(name, request) {
   page.setData = (values) => Object.assign(page.data, values);
   return { page, events };
 }
+
+// Resolve the actual template's simple data bindings; WXML literals do not
+// HTML-decode &amp;. Never replace this with a separately hand-built URL.
+function tapHome(page, marker, scope) {
+  const markup = fs.readFileSync("miniprogram/pages/community/index.wxml", "utf8");
+  const button = [...markup.matchAll(/<button\b[^>]*>/g)].find(([tag]) => tag.includes(marker))?.[0];
+  assert.ok(button, marker);
+  const dataset = Object.fromEntries([...button.matchAll(/data-([\w]+)="([^"]*)"/g)].map(([, key, value]) => [key, value.replace(/\{\{([\w.]+)\}\}/g, (_, expression) => expression.split(".").reduce((value, key) => value[key], scope))]));
+  page[button.match(/bindtap="([^"]+)"/)[1]]({ currentTarget: { dataset } });
+}
+
+test("home recommendation and four archive rows pass their IDs into the protected reader", async () => {
+  const archives = Array.from({ length: 5 }, (_, index) => ({ id: `issue-${13 - index < 10 ? "0" : ""}${13 - index}`, date: "2026-08-30", title: `Archive ${index}` }));
+  const home = pageFor("community", async () => ({ archives, bounty: null, featuredMembers: [], memberCount: 0 }));
+  await home.page.refresh();
+  for (const [index, item] of [home.page.data.featuredArchive, ...home.page.data.olderArchives].entries()) {
+    tapHome(home.page, index ? 'wx:for="{{olderArchives}}"' : 'class="community-focus-card"', { featuredArchive: item, item });
+    const url = home.events.at(-1)[1].url;
+    const parsed = new URL(url, "https://mini.test");
+    assert.equal(parsed.pathname, "/pages/community-program/index");
+    assert.equal(parsed.searchParams.get("id"), item.id);
+    const calls = [];
+    const reader = pageFor("community-program", async (path) => { calls.push(path); return { item: { ...item, speakerDetails: [] } }; });
+    await reader.page.onLoad(Object.fromEntries(parsed.searchParams));
+    assert.deepEqual(calls, [`archives/${item.id}`]);
+    assert.equal(reader.page.data.item.id, item.id);
+    assert.equal(reader.page.data.mode, "archive");
+    assert.equal(reader.page.data.error, "");
+    reader.page.openArchive({ currentTarget: { dataset: { id: item.id } } });
+    assert.equal(reader.events.at(-1)[1].url, url);
+  }
+});
+
+test("home member avatars open the same profile as the directory", async () => {
+  const members = Array.from({ length: 4 }, (_, index) => ({ id: String(index + 1), name: `Member ${index}`, role: "Builder" }));
+  const home = pageFor("community", async () => ({ archives: [], bounty: null, featuredMembers: members, memberCount: 4 }));
+  await home.page.refresh();
+  for (const item of home.page.data.featuredMembers) {
+    tapHome(home.page, 'wx:for="{{featuredMembers}}"', { item });
+    const url = home.events.at(-1)[1].url;
+    const parsed = new URL(url, "https://mini.test");
+    assert.equal(parsed.pathname, "/pages/community-graph/index");
+    const graph = pageFor("community-graph", async () => ({ members, roles: [] }));
+    await graph.page.onLoad(Object.fromEntries(parsed.searchParams));
+    assert.equal(graph.page.data.member?.id, item.id);
+    assert.equal(graph.page.data.error, "");
+    graph.page.openMember({ currentTarget: { dataset: { id: item.id } } });
+    assert.equal(graph.events.at(-1)[1].url, url);
+  }
+});
+
+test("home detail taps still require membership", () => {
+  const { page, events } = pageFor("community", async () => {}, false);
+  const item = { id: "issue-13" };
+  for (const marker of ['class="community-focus-card"', 'wx:for="{{olderArchives}}"', 'wx:for="{{featuredMembers}}"']) {
+    tapHome(page, marker, { featuredArchive: item, item });
+  }
+  assert.equal(events.length, 0);
+});
+
+test("detail readers reject missing IDs without requesting nonexistent content", async () => {
+  for (const options of [{ type: "archive" }, { type: "speaker", speaker: "0" }, { type: "archive", id: "" }, { mode: "member" }]) {
+    const calls = [];
+    const { page } = pageFor(options.mode ? "community-graph" : "community-program", async (path) => { calls.push(path); throw new Error("Unexpected request"); });
+    await page.onLoad(options);
+    await page.refresh();
+    assert.deepEqual(calls, []);
+    assert.match(page.data.error, /链接无效/);
+    assert.equal(page.data.item || page.data.member || null, null);
+    assert.equal(page.data.loading, false);
+  }
+});
 
 test("production homepage never substitutes demo archives on API failure", async () => {
   const { page } = pageFor("community", async () => { throw new Error("Unavailable"); });

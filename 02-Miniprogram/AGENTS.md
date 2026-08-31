@@ -16,6 +16,8 @@ Release record (2026-08-31): WeChat development version 0.9.3 was uploaded succe
 
 ## Frontstage UI contract
 
+- 0.9.4 fixes home archive/member detail navigation. Bind record IDs in WXML and build encoded query parameters in JavaScript; never put HTML-escaped query separators in navigation attributes. Regression tests must pass actual template datasets through tap handlers and target page loading. Missing detail IDs must not trigger API requests. Keep existing styles, membership gates and server data unchanged; no backend redeployment is needed for this client-only fix.
+
 - 0.9.3 evolves from 0.9.2: ecosystem revalidates funding/report manifests on every onShow and native pull-down refresh; retain content during background requests and after failures. Do not add date/status modules or redesign its WXML/WXSS. Source check dates and disclosure dates are distinct internal fields, not user-facing hints. Weekly/monthly bodies are projected only into the server's protected content bundle; reject empty bodies in the reader and re-fetch after explicit registration.
 
 - Mini Program 0.9.2 was uploaded on 2026-08-30 from commit `e52824573ce2bd0473e28a4e68593bc497eb654c`, evolved from online 0.8.3; upload is not review approval or production publication. Bottom tabs are 融资、生态、社群、我的; industry observation (reports/community highlights) is inside 生态. Community home shows one featured archive and up to four distinct archive rows, then a published bounty if available and member-map previews; no schedule or points strip on home.

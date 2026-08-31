@@ -62,6 +62,7 @@ Page({
   },
   refresh() {
     return readCommunityPage(this, async () => {
+      if (this.data.mode === "member" && !this.options?.id) throw new Error("成员链接无效，请返回通讯录重新打开");
       if (this.data.mode === "profile" || this.data.mode === "edit") {
         const result = await communityRequest("profile");
         this.setData({ profile: result.profile });

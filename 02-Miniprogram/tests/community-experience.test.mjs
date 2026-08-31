@@ -5,6 +5,12 @@ import vm from "node:vm";
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const data = require("../miniprogram/utils/community-data.js");
+test("WXML navigation attributes never contain HTML-escaped query separators", () => {
+  for (const file of fs.readdirSync("miniprogram", { recursive: true }).filter((file) => file.endsWith(".wxml"))) {
+    const source = fs.readFileSync(`miniprogram/${file}`, "utf8");
+    for (const [, value] of source.matchAll(/(?:data-url|\burl)="([^"]*)"/g)) assert.doesNotMatch(value, /&(?:amp|#0*38|#x0*26);/i, file);
+  }
+});
 test("WXML expressions use native operators, not HTML entities", () => {
   for (const page of ["community", "community-bounty", "community-graph", "community-program", "community-points"]) {
     const source = fs.readFileSync(`miniprogram/pages/${page}/index.wxml`, "utf8");

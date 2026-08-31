@@ -14,7 +14,7 @@
     <view class="sharing-section">
       <view class="section-heading"><view><text class="eyebrow">SHARING ARCHIVE</text><text class="section-main">分享实录</text></view><button data-url="/pages/community-program/index?tab=archive" bindtap="openProtected">查看全部 ›</button></view>
       <text wx:if="{{!loading && !error && !featuredArchive}}" class="service-state">暂无已发布实录</text>
-      <button wx:if="{{featuredArchive}}" class="community-focus-card" data-url="/pages/community-program/index?type=archive&amp;id={{featuredArchive.id}}" bindtap="openProtected">
+      <button wx:if="{{featuredArchive}}" class="community-focus-card" data-id="{{featuredArchive.id}}" bindtap="openArchive">
         <view class="focus-meta"><text>编辑推荐 · 第 {{featuredArchive.issue}} 场</text><text>{{featuredArchive.dateShort}}</text></view>
         <text class="focus-title">{{featuredArchive.title}}</text>
         <text class="focus-copy">{{featuredArchive.subtitle}}</text>
@@ -22,7 +22,7 @@
         <view class="focus-action"><text>阅读完整实录</text><text>›</text></view>
       </button>
       <view class="community-archive-list">
-        <button wx:for="{{olderArchives}}" wx:key="id" data-url="/pages/community-program/index?type=archive&amp;id={{item.id}}" bindtap="openProtected">
+        <button wx:for="{{olderArchives}}" wx:key="id" data-id="{{item.id}}" bindtap="openArchive">
           <view class="quick-meta"><text>第 {{item.issue}} 场</text><text>{{item.dateShort}}</text></view>
           <text class="quick-title">{{item.title}}</text>
           <view class="quick-footer"><text>{{item.speakers}}</text><text>↗</text></view>
@@ -40,7 +40,7 @@
     <view class="home-section role-section">
       <view class="section-heading"><view><text class="eyebrow">MEMBER ROLE MAP</text><text class="section-main">角色图谱</text></view><button data-url="/pages/community-graph/index" bindtap="openProtected">查看图谱 ›</button></view>
       <view class="member-chips">
-        <button wx:for="{{featuredMembers}}" wx:key="id" data-url="/pages/community-graph/index?mode=member&amp;id={{item.id}}" bindtap="openProtected"><text>{{item.avatar}}</text><text class="member-name">{{item.name}}</text><text class="member-role">{{item.roleShort}}</text></button>
+        <button wx:for="{{featuredMembers}}" wx:key="id" data-id="{{item.id}}" bindtap="openMember"><text>{{item.avatar}}</text><text class="member-name">{{item.name}}</text><text class="member-role">{{item.roleShort}}</text></button>
         <button data-url="/pages/community-graph/index?tab=directory" bindtap="openProtected"><text class="more">•••</text><text class="member-name">更多成员</text><text class="member-role">{{memberCount}} 位</text></button>
       </view>
     </view>
