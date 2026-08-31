@@ -139,14 +139,31 @@ function runSafeRepairs(report) {
   const attempts = [];
   if (!["safe", "on", "true", "1"].includes(String(repairMode).toLowerCase())) return attempts;
   const businessLane = (report?.lanes || []).find((lane) => lane.id === "business_signals");
+  const runtimeDashboard = args.has("runtime-dir")
+    ? path.join(reportsDir, "local-skill-store-data.js")
+    : "";
+  function rebuildSkillDashboard(label) {
+    return runtimeDashboard
+      ? runCommand(label, process.execPath, [
+        "agent-workflow/tools/build-skill-store-dashboard.mjs",
+        `--output=${runtimeDashboard}`,
+      ])
+      : runNpm(label, "build:skill-store-dashboard");
+  }
+  function checkSkillDashboard(label) {
+    return runCommand(label, process.execPath, [
+      "agent-workflow/tools/check-skill-ops.mjs",
+      ...(runtimeDashboard ? [`--dashboard=${runtimeDashboard}`] : []),
+    ]);
+  }
 
   if (shouldSyncSkillStore(report, allowSkillStoreSync)) {
     attempts.push(runNpm("sync skill store after explicit opt-in", "sync:skill-store", [], 120000));
-    attempts.push(runNpm("rebuild dashboard after skill-store sync", "build:skill-store-dashboard", [], 120000));
-    attempts.push(runNpm("check skill ops after skill-store sync", "check:skill-ops", [], 120000));
+    attempts.push(rebuildSkillDashboard("rebuild dashboard after skill-store sync"));
+    attempts.push(checkSkillDashboard("check skill ops after skill-store sync"));
   } else if (shouldRebuildSkillStore(report)) {
-    attempts.push(runNpm("rebuild and validate Skill Store dashboard", "build:skill-store-dashboard", [], 120000));
-    attempts.push(runNpm("check skill ops after dashboard rebuild", "check:skill-ops", [], 120000));
+    attempts.push(rebuildSkillDashboard("rebuild and validate Skill Store dashboard"));
+    attempts.push(checkSkillDashboard("check skill ops after dashboard rebuild"));
   }
 
   if (hasLaneProblem(report, "community_intelligence", /gate report|missing community gate|community data date|archive|items|links/iu)

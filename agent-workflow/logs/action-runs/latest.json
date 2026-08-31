@@ -1,46 +1,27 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-30T01:55:22.508Z",
-  "date": "2026-08-30",
-  "action": "Repair Community Intelligence login-stage recovery",
+  "generated_at": "2026-08-31T02:32:29.431Z",
+  "date": "2026-08-31",
+  "action": "Operations telemetry and health",
   "action_status": "current",
   "record_level": "required",
-  "trigger": "codex_self_repair",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Fail fast when the local collector reports expired authentication and block downstream publication escalation until the same-date community gate is healthy.",
-  "contexts": [
-    "context/08-automation.md",
-    "agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md",
-    "2026-08-30 daily supervision and community gate"
-  ],
+  "summary": "Align scheduled Skill dashboard producer and validators on runtime output; preserve tracked release assets",
+  "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/run-community-intelligence.ps1",
-    "agent-workflow/tools/write-daily-supervision-report.mjs",
-    "agent-workflow/tools/tests/daily-automation-runtime.test.mjs",
-    "agent-workflow/tools/tests/daily-supervision-community-stages.test.mjs"
+    "agent-workflow/tools/run-daily-self-check.mjs;agent-workflow/tools/write-daily-supervision-report.mjs;agent-workflow/tools/run-daily-automation-controller.mjs;agent-workflow/tools/tests/daily-self-check-runtime.test.mjs;package.json;context/08-automation.md"
   ],
   "outputs": [],
   "checks": [
-    "25 focused Node tests passed",
-    "JavaScript syntax passed",
-    "PowerShell syntax passed",
-    "git diff --check passed"
+    "44 runtime and skill tests passed;26 OPS tests passed;9 control-plane tests passed;live self-check waiting with zero repair tasks"
   ],
-  "issues": [
-    "Collector emitted COMMUNITY_LOGIN_REQUIRED with exit zero, so the wrapper continued to the failed gate and retried unattended",
-    "Supervision reported missing publication while the upstream local gate was blocked"
-  ],
-  "risks": [
-    "Human QR/login renewal and one owning local collector rerun remain required for 2026-08-30 data publication"
-  ],
+  "issues": [],
+  "risks": [],
   "lessons": [
-    "Collector semantic failure markers must outrank process exit codes",
-    "Downstream publication cannot be missing until upstream data is publishable"
+    "A runtime producer and every validator must use the same snapshot; scheduled self-check must not invoke the release registry wrapper"
   ],
-  "reusable_rules": [
-    "Stop Community Intelligence retries immediately on COMMUNITY_LOGIN_REQUIRED",
-    "Only escalate missing publication after healthy same-date data and gate"
-  ],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }

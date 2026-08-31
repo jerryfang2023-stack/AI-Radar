@@ -124,6 +124,14 @@ checked-in dashboard remains a release artifact; controller-only usage counters
 and timestamps must not dirty the primary worktree or block the final local
 fast-forward.
 
+Skill preflight, supervision, and safe self-check repair read the same runtime
+dashboard via `--dashboard`. Scheduled self-check calls the direct dashboard
+producer with `--output`, not the release npm wrapper that also rewrites the
+tracked registry. Missing runtime snapshots may fall back to the published
+snapshot for diagnosis; a repaired snapshot is validated and re-read in runtime.
+Registry or source-contract defects remain explicit repair findings rather than
+being hidden by a runtime refresh.
+
 The installer also resolves a runnable native `codex.exe` for scheduled repair.
 An explicit `-CodexExecutable` wins; otherwise it reuses the managed installation
 under `%LOCALAPPDATA%\WaveSight\codex-cli` or a runnable PATH command, and

@@ -41,6 +41,15 @@ The passwordless page displays sanitized aggregate analytics and public version 
 
 CI consumes committed catalog snapshots without access to local project repositories. Local-source refresh is neither a browser action nor an unattended cross-device sync service.
 
+Daily Windows controllers and safe self-checks use a separate runtime snapshot.
+To inspect the same snapshot manually, pass `--dashboard=<runtime>/local-skill-store-data.js`
+to `check-skill-ops.mjs`. Runtime refresh calls `build-skill-store-dashboard.mjs`
+directly with `--output=<runtime>/local-skill-store-data.js`; the release npm
+wrapper above also updates the tracked registry and is not a scheduled repair
+command. Supervision with `--output-dir=<runtime>` reads that runtime snapshot
+when present. Source or registry defects remain visible and require a scoped
+repository fix; they must not be hidden by refreshing only the runtime file.
+
 ## Skill ownership and configuration
 
 agent-workflow/skills/skill-catalog-sources.json defines platform bindings and optional independent directories. Shared-rule counts express declared applicability, not installation or observed invocation. One Skill may serve several platforms; do not sum platform counts as unique Skills.
