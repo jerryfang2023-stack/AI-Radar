@@ -119,7 +119,7 @@
     "sync:ops-platforms": "node agent-workflow/tools/sync-ops-platforms.mjs",
     "test:ops-unified": "node --test agent-workflow/tools/tests/ops-unified.test.mjs agent-workflow/tools/tests/member-operations.test.mjs",
     "build:ops-console": "node agent-workflow/tools/build-ops-console-data.mjs",
-    "test:ops-v2": "node --test agent-workflow/tools/tests/collection-telemetry-v1.test.mjs agent-workflow/tools/tests/daily-supervision-business-v4.test.mjs agent-workflow/tools/tests/daily-automation-runtime.test.mjs && node agent-workflow/tools/run-business-signals-health-dispatch.mjs --policy-fixtures=true",
+    "test:ops-v2": "node --test agent-workflow/tools/tests/collection-telemetry-v1.test.mjs agent-workflow/tools/tests/daily-supervision-business-v4.test.mjs agent-workflow/tools/tests/daily-automation-runtime.test.mjs agent-workflow/tools/tests/daily-self-check-runtime.test.mjs && node agent-workflow/tools/run-business-signals-health-dispatch.mjs --policy-fixtures=true",
     "assert:versions": "node agent-workflow/tools/assert-version-consistency.mjs",
     "build:skill-registry": "node agent-workflow/tools/build-skill-registry.mjs",
     "check:skill-ops": "node agent-workflow/tools/check-skill-ops.mjs",
