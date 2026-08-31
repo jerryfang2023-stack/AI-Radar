@@ -2,6 +2,8 @@
 
 This is the native WeChat Mini Program frontstage for Funding Insights.
 
+Release record (2026-08-31): WeChat development version 0.9.3 was uploaded successfully from `e2244bdf83306fd812e611aef616652d75638dbf` (750157 bytes). Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.3/README.md` for the immutable source and receipt.
+
 ## Boundaries
 
 - Source truth remains `../01-SiteV2/site/data/funding-insights-v1.json`.
@@ -17,7 +19,7 @@ This is the native WeChat Mini Program frontstage for Funding Insights.
 - 0.9.3 evolves from 0.9.2: ecosystem revalidates funding/report manifests on every onShow and native pull-down refresh; retain content during background requests and after failures. Do not add date/status modules or redesign its WXML/WXSS. Source check dates and disclosure dates are distinct internal fields, not user-facing hints. Weekly/monthly bodies are projected only into the server's protected content bundle; reject empty bodies in the reader and re-fetch after explicit registration.
 
 - Mini Program 0.9.2 was uploaded on 2026-08-30 from commit `e52824573ce2bd0473e28a4e68593bc497eb654c`, evolved from online 0.8.3; upload is not review approval or production publication. Bottom tabs are 融资、生态、社群、我的; industry observation (reports/community highlights) is inside 生态. Community home shows one featured archive and up to four distinct archive rows, then a published bounty if available and member-map previews; no schedule or points strip on home.
-- Production community pages use the authenticated account gateway and existing member service 1.7.0, never bundled private sharing content or demo fallback. Profile edits use revision conflict checks; editorial sharing evidence is separate and not member-editable. See `docs/REVIEW-0.9.2-COMBINED.md` for release behavior. Preserve older uploaded snapshots; do not treat the dirty primary checkout as the release source or overwrite newer remote changes.
+- Production community pages use the authenticated account gateway and existing member service 1.7.0, never bundled private sharing content or demo fallback. Profile edits use revision conflict checks; editorial sharing evidence is separate and not member-editable. See `docs/REVIEW-0.9.3-COMBINED.md` for release behavior. Preserve uploaded snapshots; use the recorded exact source commit rather than an unverified working tree, and never overwrite newer remote changes with an older checkout.
 - Community home uses a five-minute public-only local snapshot plus background refresh. Common protected lists use identity-scoped memory snapshots (30 seconds fresh, at most 60 seconds stale while revalidating), never persistent storage. Writes and authentication/permission failures invalidate these snapshots; full archives, personal profile forms and drafts always request the server. Repeated refreshes must not flash global loading text. Role categories sort by real visible-member counts, and supply groups use names rather than array positions.
 - Management-account `admin_grant` points must not affect the community leaderboard or its point details; the separate wallet, growth level and management privileges remain unchanged.
 - Treat `../03-H5/` as the historical visual baseline, not the current navigation contract. The first three bottom tabs are 融资、生态、社群. Keep the native Mini Program interaction model and capsule safe area.
