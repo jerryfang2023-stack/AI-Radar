@@ -2,7 +2,7 @@
 
 This is the native WeChat Mini Program frontstage for Funding Insights.
 
-Release record (2026-08-31): WeChat development version 0.9.3 was uploaded successfully from `e2244bdf83306fd812e611aef616652d75638dbf` (750157 bytes). Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.3/README.md` for the immutable source and receipt.
+Release record (2026-08-31): WeChat development version 0.9.4 was uploaded successfully from `cdc8cc091c8d62260705a662142d613631db23b1` (750571 bytes), tagged `miniprogram-v0.9.4`. Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.4/README.md` for the immutable source and receipt. The previous 0.9.3 source and receipt remain under `docs/releases/0.9.3/`.
 
 ## Boundaries
 
