@@ -63,7 +63,7 @@ test("late scheduled controller phases are superseded instead of colliding", () 
   assert.match(controller, /inspectControllerReportLiveness\(recoveryReport/u);
   assert.match(controller, /controllerRecoveryOwnershipReason/u);
   assert.match(controller, /const laneRecovery = ownsLaneRecovery \? recovery\(\) : null/u);
-  assert.match(controller, /actions: \[\.\.\.\(laneRecovery\?\.actions \|\| \[\]\), coverageAction, selfCheck, codex\]/u);
+  assert.match(controller, /actions: \[\.\.\.\(laneRecovery\?\.actions \|\| \[\]\), runtimeSync, coverageAction, selfCheck, codex\]/u);
   assert.match(controller, /status: "running"[^]*internal: controller running/u);
 });
 
@@ -234,6 +234,20 @@ test("morning controller repairs derived repo Skill runtime before auditing it",
   assert.ok(checkIndex > discoveryIndex, "Skill Ops audit must run after discovery refresh");
   assert.match(controller.slice(discoveryIndex, checkIndex), /--output=/u);
   assert.match(controller, /actions: \[runtimeSync, discoveryRefresh, preflight, business\]/u);
+});
+
+test("closure resyncs the derived repo Skill runtime after same-day main updates", () => {
+  const controller = read("run-daily-automation-controller.mjs");
+  const closure = controller.slice(
+    controller.indexOf("function closure()"),
+    controller.indexOf("function finalClosure()"),
+  );
+  const syncIndex = closure.indexOf('"agent-workflow/tools/sync-repo-skills.mjs"');
+  const selfCheckIndex = closure.indexOf('"agent-workflow/tools/run-daily-self-check.mjs"');
+  assert.ok(syncIndex >= 0, "closure must rematerialize runtime Skills after publication updates main");
+  assert.ok(selfCheckIndex > syncIndex, "closure must sync runtime Skills before the daily self-check");
+  assert.match(closure, /const ok = runtimeSync\.ok && coverageAction\.ok && selfCheck\.ok && codex\.ok/u);
+  assert.match(closure, /actions: \[\.\.\.\(laneRecovery\?\.actions \|\| \[\]\), runtimeSync, coverageAction, selfCheck, codex\]/u);
 });
 
 test("final closure refreshes Skill discovery immediately before supervision", () => {
