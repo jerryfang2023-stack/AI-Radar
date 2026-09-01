@@ -1,0 +1,291 @@
+{
+  "ok": true,
+  "status": "review",
+  "generated_at": "2026-09-01T10:35:16.709Z",
+  "date": "2026-09-01",
+  "stale_after_days": 30,
+  "git": {
+    "countObjects": {
+      "count": "0",
+      "size": "0 bytes",
+      "in-pack": "301700",
+      "packs": "1",
+      "size-pack": "486.44 MiB",
+      "prune-packable": "0",
+      "garbage": "0",
+      "size-garbage": "0 bytes"
+    },
+    "countObjectsRaw": "count: 0\nsize: 0 bytes\nin-pack: 301700\npacks: 1\nsize-pack: 486.44 MiB\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0 bytes",
+    "status": "## main...origin/main",
+    "branches": "* main a817192d86 [origin/main] Update follow-builders skill for 2026-09-01",
+    "worktrees": "worktree /home/runner/work/AI-Radar/AI-Radar\nHEAD a817192d86a2ce7492c515764c5b87175910376a\nbranch refs/heads/main",
+    "remotePrune": "",
+    "ahead": "",
+    "behind": "",
+    "gitDirSize": "488.77 MiB"
+  },
+  "runtime": {
+    "packageVersion": "4.8.1",
+    "lockfileVersion": "4.8.1",
+    "scripts": [
+      "assert:china-market",
+      "assert:community-intelligence",
+      "assert:compatibility-retirement",
+      "assert:current-rule-hygiene",
+      "assert:data-center",
+      "assert:data-center:history",
+      "assert:data-lake-v4",
+      "assert:entity-catalog-review",
+      "assert:entity-history",
+      "assert:first-line-v4",
+      "assert:funding-founders",
+      "assert:funding-insights",
+      "assert:funding-insights:full",
+      "assert:funding-taxonomy-v4.1",
+      "assert:guanlan-vault",
+      "assert:investment-institutions",
+      "assert:model-assist",
+      "assert:no-active-v3",
+      "assert:periodic-report",
+      "assert:pipeline-policy",
+      "assert:private-evidence-backup",
+      "assert:private-evidence-remote",
+      "assert:projection-coverage",
+      "assert:public-evidence-boundary",
+      "assert:skill-store-dashboard",
+      "assert:source-titles",
+      "assert:tag-taxonomy",
+      "assert:targeted-backfill",
+      "assert:taxonomy-consistency",
+      "assert:trend-radar",
+      "assert:versions",
+      "assert:windows-automation",
+      "audit:skill-discovery",
+      "audit:skills",
+      "audit:tag-taxonomy",
+      "audit:tags",
+      "audit:workspace",
+      "automation:daily:closure",
+      "automation:daily:final-closure",
+      "automation:daily:morning",
+      "automation:daily:recovery",
+      "automation:monthly",
+      "automation:weekly:health",
+      "automation:weekly:report",
+      "backfill:data-center",
+      "backfill:entity-history",
+      "backfill:first-line-history",
+      "backfill:funding-insights",
+      "backfill:report-taxonomy-v4.1",
+      "backfill:source-titles",
+      "backup:private-evidence",
+      "build:collection-telemetry",
+      "build:data-center",
+      "build:data-center-site",
+      "build:first-line-v4",
+      "build:funding-insights-site",
+      "build:funding-source-health",
+      "build:guanlan-vault",
+      "build:investment-institutions",
+      "build:opportunity-map-site",
+      "build:ops-console",
+      "build:skill-registry",
+      "build:skill-store-dashboard",
+      "build:targeted-backfill",
+      "build:trend-radar-site",
+      "business:health-dispatch",
+      "capture:targeted-backfill",
+      "check:custom-agent-smoke",
+      "check:model-routing-evals",
+      "check:skill-ops",
+      "classify:funding-taxonomy-v4.1",
+      "cleanup:workspace",
+      "codex:selfrepair",
+      "codex:selfrepair:invoke",
+      "collect:community-intelligence",
+      "diff:repo-skills",
+      "diff:skill-store",
+      "eval:custom-agent-smoke",
+      "eval:model-routing",
+      "generate:direction-cards",
+      "generate:funding-insights",
+      "generate:model-assist",
+      "health:daily",
+      "health:monthly",
+      "health:weekly",
+      "hermes:control-plane",
+      "hermes:publish-heartbeat",
+      "hermes:watchdog",
+      "inbox:incidents",
+      "inspect:funding-insights",
+      "install:daily-automation-tasks",
+      "install:hermes-watchdog",
+      "install:periodic-automation-tasks",
+      "install:windows-automation",
+      "manage:targeted-backfill",
+      "materialize:entity-history",
+      "migrate:funding-cny-display",
+      "migrate:funding-insights-v1.1",
+      "migrate:funding-insights-v1.3",
+      "migrate:private-evidence",
+      "problem:daily",
+      "project:funding-taxonomy-events",
+      "publish:private-evidence-backup",
+      "record:action",
+      "regenerate:source-titles:deepseek",
+      "register:guanlan-vault",
+      "repair:skills",
+      "reproject:tag-taxonomy",
+      "resolve:incident",
+      "review:entity-catalog",
+      "review:funding-founders",
+      "review:model-assist",
+      "review:model-assist:queue",
+      "review:person-accounts",
+      "selfcheck:daily",
+      "selfrepair:daily",
+      "skill-store:ops",
+      "source:intake:aggregate",
+      "source:intake:aihot",
+      "source:intake:funding",
+      "source:intake:gdelt",
+      "source:intake:keyword",
+      "source:intake:rss",
+      "summarize:actions",
+      "supervise:daily",
+      "sync:data-center",
+      "sync:data-lake",
+      "sync:data-lake:local",
+      "sync:guanlan-evidence",
+      "sync:guanlan-vault",
+      "sync:ops-platforms",
+      "sync:pipeline-dashboard",
+      "sync:repo-skills",
+      "sync:skill-store",
+      "test",
+      "test:data-center",
+      "test:data-center-site",
+      "test:data-center-site:core",
+      "test:data-center-site:opportunity",
+      "test:data-center-site:preflight",
+      "test:data-center-site:prepared",
+      "test:data-center-site:retirement",
+      "test:funding-insights",
+      "test:ops-unified",
+      "test:ops-v2",
+      "test:skill-ops",
+      "test:trend-radar",
+      "test:v4-frontstage-smoke",
+      "test:workspace",
+      "translate:community-intelligence",
+      "translate:public-structured-fields",
+      "validate:guanlan-skills"
+    ],
+    "workflows": [
+      "business-signals-health-dispatch.yml",
+      "daily-community-intelligence-pr.yml",
+      "daily-first-line-viewpoints-pr.yml",
+      "daily-funding-insights-pr.yml",
+      "daily-persistent-assets-pr.yml",
+      "daily-production-chain-dry-run.yml",
+      "daily-recovery-watchdog.yml",
+      "data-center-source-intake.yml",
+      "github-pages.yml",
+      "hermes-control-plane-heartbeat.yml",
+      "model-assist-historical-backfill-pr.yml",
+      "periodic-reports-pr.yml"
+    ],
+    "nodeVersion": "v22.23.2",
+    "npmVersion": "10.9.8"
+  },
+  "largeFiles": [
+    {
+      "file": "01-SiteV2/site/data/data-center-v4-frontstage.json",
+      "bytes": 28553363
+    },
+    {
+      "file": "01-SiteV2/content/01-raw/source-index.jsonl",
+      "bytes": 14554676
+    },
+    {
+      "file": "01-SiteV2/site/data/data-center-v4/details/events.json",
+      "bytes": 13436938
+    },
+    {
+      "file": "01-SiteV2/site/data/funding-insights-v1.json",
+      "bytes": 10054509
+    },
+    {
+      "file": "agent-workflow/reports/entity-catalog-secondary-search.json",
+      "bytes": 9964291
+    },
+    {
+      "file": "01-SiteV2/site/data/data-center-v4/details/hardware.json",
+      "bytes": 9584743
+    },
+    {
+      "file": "01-SiteV2/site/data/data-center-v4/details/fde.json",
+      "bytes": 9454634
+    },
+    {
+      "file": "01-SiteV2/site/data/data-center-v4/indexes/events.json",
+      "bytes": 9119510
+    },
+    {
+      "file": "01-SiteV2/content/11-databases/investment-institutions-v1.json",
+      "bytes": 6078759
+    },
+    {
+      "file": "01-SiteV2/site/data/trend-radar-v1.json",
+      "bytes": 5760414
+    },
+    {
+      "file": "01-SiteV2/site/data/data-center-v4/indexes/entities.json",
+      "bytes": 3764972
+    },
+    {
+      "file": "01-SiteV2/site/data/data-center-v4/taxonomy/TX-technology-agentic_execution.json",
+      "bytes": 3124635
+    },
+    {
+      "file": "01-SiteV2/site/data/first-line-viewpoints-v4.json",
+      "bytes": 3018404
+    },
+    {
+      "file": "01-SiteV2/site/data/data-center-v4/taxonomy/TX-target_user-business_user.json",
+      "bytes": 3010846
+    },
+    {
+      "file": "01-SiteV2/content/11-databases/targeted-backfill-v1/queue.json",
+      "bytes": 2748138
+    },
+    {
+      "file": "01-SiteV2/site/data/data-center-v4/taxonomy/TX-target_user-developer.json",
+      "bytes": 2351138
+    },
+    {
+      "file": "01-SiteV2/site/assets/generated/brief-framework-evidence-imagegen.png",
+      "bytes": 2125648
+    },
+    {
+      "file": "01-SiteV2/site/data/opportunity-evidence-v2.json",
+      "bytes": 2088336
+    },
+    {
+      "file": "01-SiteV2/site/data/data-center-v4/taxonomy/TX-ai_market_category-infrastructure_compute.json",
+      "bytes": 2049365
+    },
+    {
+      "file": "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json",
+      "bytes": 2041325
+    }
+  ],
+  "oldReports": [],
+  "residue": {
+    "files": [],
+    "contentMatches": []
+  },
+  "actions": [
+    "Review large tracked files and move generated artifacts out of repository history when possible."
+  ]
+}
