@@ -6,7 +6,7 @@ window: 2026-08-01 to 2026-08-29
 content_type: monthly-report
 report_format: funding-newsletter
 slug: monthly-2026-08
-status: published
+status: superseded
 model_provider: deepseek
 model: deepseek-v4-flash
 ---
