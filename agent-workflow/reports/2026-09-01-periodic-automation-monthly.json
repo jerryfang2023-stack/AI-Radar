@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "status": "page_gate_passed",
+  "window": {
+    "start": "2026-08-01",
+    "end": "2026-08-31",
+    "reportDate": "2026-08-31"
+  },
+  "actions": [
+    {
+      "label": "monthly maintenance",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/write-monthly-maintenance-report.mjs --date=2026-09-01 --days=30",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"review\",\n  \"report\": \"agent-workflow/reports/2026-09-01-monthly-maintenance.json\",\n  \"markdown\": \"agent-workflow/reports/2026-09-01-monthly-maintenance.md\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "DeepSeek Pro report draft",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/generate-periodic-report-deepseek.mjs --kind=monthly --date=2026-08-31 --window-start=2026-08-01 --window-end=2026-08-31",
+      "stdout": "{\n  \"ok\": true,\n  \"kind\": \"monthly\",\n  \"date\": \"2026-08-31\",\n  \"content\": \"01-SiteV2/content/12-applications/industry-reports/monthly/2026-08-31--monthly-report--ai-business-structure-and-opportunity.md\",\n  \"counts\": {\n    \"Signals\": 1005,\n    \"Opinions\": 12,\n    \"Community\": 478\n  }\n}",
+      "stderr": ""
+    },
+    {
+      "label": "content acceptance gate",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/assert-periodic-report-content.mjs --kind=monthly --date=2026-08-31 --window-start=2026-08-01 --window-end=2026-08-31",
+      "stdout": "{\n  \"ok\": true,\n  \"kind\": \"monthly\",\n  \"date\": \"2026-08-31\",\n  \"report\": \"agent-workflow/reports/2026-08-31-monthly-content-gate.json\",\n  \"failures\": []\n}",
+      "stderr": ""
+    },
+    {
+      "label": "deterministic report page renderer",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/render-periodic-report-pages.mjs --kind=monthly --date=2026-08-31",
+      "stdout": "{\n  \"ok\": true,\n  \"kind\": \"monthly\",\n  \"date\": \"2026-08-31\",\n  \"route\": \"monthly-business-structure-2026-08.html\",\n  \"source\": \"01-SiteV2/content/12-applications/industry-reports/monthly/2026-08-31--monthly-report--ai-business-structure-and-opportunity.md\",\n  \"target\": \"https://www.zkdlj.vip/#report/monthly-2026-08\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "periodic report renderer tests",
+      "ok": true,
+      "status": 0,
+      "command": "node --test agent-workflow/tools/tests/periodic-report-renderer.test.mjs",
+      "stdout": "TAP version 13\n# Subtest: periodic renderer owns the report-center release version\nok 1 - periodic renderer owns the report-center release version\n  ---\n  duration_ms: 0.96722\n  type: 'test'\n  ...\n# Subtest: periodic report titles carry tension and a business consequence\nok 2 - periodic report titles carry tension and a business consequence\n  ---\n  duration_ms: 1.563172\n  type: 'test'\n  ...\n# Subtest: June monthly title records DeepSeek title provenance\nok 3 - June monthly title records DeepSeek title provenance\n  ---\n  duration_ms: 0.925779\n  type: 'test'\n  ...\n# Subtest: periodic renderer removes all inline source annotations without harming readability\nok 4 - periodic renderer removes all inline source annotations without harming readability\n  ---\n  duration_ms: 1.214135\n  type: 'test'\n  ...\n# Subtest: public evidence index resolves event, viewpoint, and historical community sources\nok 5 - public evidence index resolves event, viewpoint, and historical community sources\n  ---\n  duration_ms: 390.091928\n  type: 'test'\n  ...\n# Subtest: public evidence index keeps historical viewpoint sources after current snapshots are rebuilt\nok 6 - public evidence index keeps historical viewpoint sources after current snapshots are rebuilt\n  ---\n  duration_ms: 2.797896\n  type: 'test'\n  ...\n# Subtest: periodic renderer escapes model-supplied HTML\nok 7 - periodic renderer escapes model-supplied HTML\n  ---\n  duration_ms: 0.323068\n  type: 'test'\n  ...\n# Subtest: recent weekly reports render as editorial modules with evidence last\nok 8 - recent weekly reports render as editorial modules with evidence last\n  ---\n  duration_ms: 6.79689\n  type: 'test'\n  ...\n# Subtest: all published periodic report pages omit inline source annotations\nok 9 - all published periodic report pages omit inline source annotations\n  ---\n  duration_ms: 10.857884\n  type: 'test'\n  ...\n# Subtest: monthly reports preserve prose and render editorial tables for mobile\nok 10 - monthly reports preserve prose and render editorial tables for mobile\n  ---\n  duration_ms: 1.380691\n  type: 'test'\n  ...\n# Subtest: report center and report routes redirect to stable funding portal hashes\nok 11 - report center and report routes redirect to stable funding portal hashes\n  ---\n  duration_ms: 2.438585\n  type: 'test'\n  ...\n1..11\n# tests 11\n# suites 0\n# pass 11\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 505.031046",
+      "stderr": ""
+    },
+    {
+      "label": "V4 report shell syntax",
+      "ok": true,
+      "status": 0,
+      "command": "node --check 01-SiteV2/site/assets/v4-report-shell.js",
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "opportunity_warning": false,
+  "phase": "monthly",
+  "date": "2026-09-01",
+  "dry_run": false,
+  "report_provider": "deepseek",
+  "generated_at": "2026-09-01T10:35:45.758Z"
+}
