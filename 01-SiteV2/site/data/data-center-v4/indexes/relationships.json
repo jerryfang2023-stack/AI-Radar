@@ -5,13 +5,39 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-a3bd8b736cbfac80",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "supplies_hardware_to",
+      "object_ref": "EN-7d3194f79e645c42",
+      "object_type": "entity",
+      "event_id": "EV-4a982ba6f291ddec",
+      "claim_refs": [
+        "CL-eee3d2fabc32a1f5",
+        "CL-dce7c3bc960bbf1e"
+      ],
+      "source_refs": [
+        "SA-11f8f85bcebc8e04"
+      ],
+      "data_date": "2026-09-01",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "OpenAI",
+      "predicateLabel": "供应硬件",
+      "title": "Apple 供应硬件 OpenAI",
+      "eventTitle": "OpenAI及竞争对手AI实验室正购买数万台Mac mini以训练计算机使用智能体",
+      "eventDate": "2026-08-31",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-ee25fecc7314abd4",
       "relationship_version": "RELATION-V2.1",
@@ -5991,33 +6017,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-2c82bf25c532a4e1",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-e463d05a14e8697f",
-      "object_type": "entity",
-      "event_id": "EV-abf0990dcaceb1ce",
-      "claim_refs": [
-        "CL-cc54439600e016cd",
-        "CL-6f211a4cbf5e0ea7",
-        "CL-f7e909b299efdfc5"
-      ],
-      "source_refs": [
-        "SA-077837221f61e911"
-      ],
-      "data_date": "2026-06-26",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "Xcode 26.6",
-      "predicateLabel": "发布",
-      "title": "Apple 发布 Xcode 26.6",
-      "eventTitle": "苹果 Xcode 26.6 正式版发布，新增谷歌 Gemini 编程助手支持",
-      "eventDate": "2026-06-26",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-eba841d5627207a4",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -6810,34 +6809,6 @@
       "title": "OpenAI 发布 GPT-5.6",
       "eventTitle": "OpenAI GPT-5.6 系列模型有望下周发布，SVG 生成测试超越 Claude Mythos",
       "eventDate": "2026-06-21",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-328522f06ece8143",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-7df09a7717ef2feb",
-      "object_type": "entity",
-      "event_id": "EV-fd21441fb6e143c3",
-      "claim_refs": [
-        "CL-46fb3d5ad9508a38",
-        "CL-727fd142f1eda91e",
-        "CL-63d0477cab28738f",
-        "CL-c8732339ea9bef1a"
-      ],
-      "source_refs": [
-        "SA-f1b7650b27891e44"
-      ],
-      "data_date": "2026-06-21",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "LM Studio",
-      "predicateLabel": "合作",
-      "title": "Apple 合作 LM Studio",
-      "eventTitle": "LM Studio 与苹果合作，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
-      "eventDate": "2026-06-20",
       "sourceCount": 1
     },
     {
@@ -7910,33 +7881,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-0700c100aba4f7c2",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-dd920a8cd166f486",
-      "object_type": "entity",
-      "event_id": "EV-4e6dc3ec2b3f0bd6",
-      "claim_refs": [
-        "CL-c219014c38d3e963",
-        "CL-18d554f72c3e47aa",
-        "CL-6125ee27d333b5c5"
-      ],
-      "source_refs": [
-        "SA-122b35fc54deabea"
-      ],
-      "data_date": "2026-06-12",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "CoreAI",
-      "predicateLabel": "发布",
-      "title": "Apple 发布 CoreAI",
-      "eventTitle": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
-      "eventDate": "2026-06-11",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-b34511f516d08ba3",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-b81c8201acfc7639",
@@ -8502,31 +8446,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-5a09d0744942f11b",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-1924fff8eb4d54ae",
-      "object_type": "entity",
-      "event_id": "EV-85373b8ec9148127",
-      "claim_refs": [
-        "CL-36760828e3e4b086"
-      ],
-      "source_refs": [
-        "SA-b888617f1f81722a"
-      ],
-      "data_date": "2026-06-10",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "Siri",
-      "predicateLabel": "发布",
-      "title": "Apple 发布 Siri",
-      "eventTitle": "苹果高管回应为何 iOS 27 推出 Siri 独立应用：方便查看历史对话",
-      "eventDate": "2026-06-10",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-653e76cf1e48b6fd",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -8755,165 +8674,6 @@
       "predicateLabel": "发布",
       "title": "Apple 发布 Siri AI",
       "eventTitle": "Apple 发布 watchOS 27，整合 Siri AI 功能",
-      "eventDate": "2026-06-09",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-27b659bc5e5fe00b",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-af3ceabbe048a291",
-      "object_type": "entity",
-      "event_id": "EV-1ae8027c085679e9",
-      "claim_refs": [
-        "CL-412c1165ad9aea08",
-        "CL-0d7806422b8f4731",
-        "CL-bf480f9596975b92"
-      ],
-      "source_refs": [
-        "SA-c509109acff08b2a"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "Siri AI",
-      "predicateLabel": "发布",
-      "title": "Apple 发布 Siri AI",
-      "eventTitle": "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能",
-      "eventDate": "2026-06-09",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-3d00d7538e09943f",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-1924fff8eb4d54ae",
-      "object_type": "entity",
-      "event_id": "EV-52e1ac21c25a0a09",
-      "claim_refs": [
-        "CL-200387b333a63bec"
-      ],
-      "source_refs": [
-        "SA-07362e7a0eeb27d0"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "Siri",
-      "predicateLabel": "发布",
-      "title": "Apple 发布 Siri",
-      "eventTitle": "苹果 macOS 27 开发者预览版 Beta 1 发布，引入独立 Siri 应用",
-      "eventDate": "2026-06-09",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-74ad6f207729d6ae",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-45b5216872656eb3",
-      "object_type": "entity",
-      "event_id": "EV-a9fe726c4ea2a17b",
-      "claim_refs": [
-        "CL-abeb123796984e45",
-        "CL-237aa10e9131be89",
-        "CL-bb177f8c54f761c6"
-      ],
-      "source_refs": [
-        "SA-4c454bcda76945d8"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "Core AI",
-      "predicateLabel": "发布",
-      "title": "Apple 发布 Core AI",
-      "eventTitle": "苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
-      "eventDate": "2026-06-09",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-bcbf4f353ec2e5b3",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-af3ceabbe048a291",
-      "object_type": "entity",
-      "event_id": "EV-9f338c4815cc65f3",
-      "claim_refs": [
-        "CL-9331a7c7b2ffd150"
-      ],
-      "source_refs": [
-        "SA-637ded00ea45f133"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "Siri AI",
-      "predicateLabel": "发布",
-      "title": "Apple 发布 Siri AI",
-      "eventTitle": "苹果智能和 Siri AI 适配机型公布，iPhone 15 Pro 系列及后续型号可用",
-      "eventDate": "2026-06-09",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-ced495a5aea356e0",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-0502bb9ed34980aa",
-      "object_type": "entity",
-      "event_id": "EV-a9fe726c4ea2a17b",
-      "claim_refs": [
-        "CL-abeb123796984e45",
-        "CL-be6397745be4b268",
-        "CL-237aa10e9131be89",
-        "CL-bb177f8c54f761c6"
-      ],
-      "source_refs": [
-        "SA-4c454bcda76945d8"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "Xcode 27",
-      "predicateLabel": "发布",
-      "title": "Apple 发布 Xcode 27",
-      "eventTitle": "苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
-      "eventDate": "2026-06-09",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-ea61135fcfa1e38f",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-af3ceabbe048a291",
-      "object_type": "entity",
-      "event_id": "EV-d40a1a873015ac98",
-      "claim_refs": [
-        "CL-83825fd97ece377c",
-        "CL-1e7bf0c798e22d55",
-        "CL-a2450fd5f23e04cd"
-      ],
-      "source_refs": [
-        "SA-bdae3fd54febab4f"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified",
-      "subjectName": "Apple",
-      "objectName": "Siri AI",
-      "predicateLabel": "发布",
-      "title": "Apple 发布 Siri AI",
-      "eventTitle": "苹果推出 Siri AI：独立 App，为灵动岛优化",
       "eventDate": "2026-06-09",
       "sourceCount": 1
     },

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "node": {
     "id": "TX-product_form-end_user_application",
@@ -70,6 +70,7 @@
       "EV-23ae55daa341be06",
       "EV-b31602193dbf4e08",
       "EV-1196b80b537957f2",
+      "EV-1a846b94337dd961",
       "EV-b998b508567246a1",
       "EV-b9a1cba0b59a5354",
       "EV-7a48a67bab77cb73",
@@ -162,6 +163,7 @@
       "EN-c189daf477a2d4ca",
       "EN-50e2a4156631df49",
       "EN-91776f01fce0c960",
+      "EN-b9d3a6fa30af078e",
       "EN-81b430b696435180",
       "EN-bc76f4b93d8c1ca6",
       "EN-75857a45899985be",
@@ -188,6 +190,7 @@
       "EN-160b93ba38ba1ecd"
     ],
     "fdeIds": [
+      "FDE-a8968d398c9626cb",
       "FDE-802c377126f36fc5",
       "FDE-3d5eb0bc571f55bf",
       "FDE-5314a0e746758b29",
@@ -197,14 +200,14 @@
       "HW-c5a22adcc66136ed"
     ],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-08-29"
+    "lastSeen": "2026-09-01"
   },
   "events": [
     {
       "id": "EV-c538fb9a61735afc",
-      "dataDate": "2026-08-28",
+      "dataDate": "2026-09-01",
       "date": "2026-08-26",
-      "updatedDate": "2026-08-28",
+      "updatedDate": "2026-09-01",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -18816,6 +18819,130 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-1a846b94337dd961",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "originalTitle": "",
+      "subject": "博通推出 VMware AI 工厂，简化企业私有云 AI",
+      "action": "部署",
+      "object": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-b9d3a6fa30af078e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-b9d3a6fa30af078e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-33dbfdc3b4b67b9d",
+        "EN-b9d3a6fa30af078e"
+      ],
+      "entityNames": [
+        "博通",
+        "VMware AI"
+      ],
+      "productName": "VMware AI",
+      "products": [
+        {
+          "name": "VMware AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/680.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-b998b508567246a1",
       "dataDate": "2026-08-09",
       "date": "2026-08-08",
@@ -23426,7 +23553,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-26",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-27d914a99e32f0f2",
@@ -23443,12 +23570,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -23528,12 +23655,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-video_generation",
+        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
         "TX-target_user-consumer",
+        "TX-technology-video_generation",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-industry-media_entertainment",
         "TX-ai_market_subcategory-marketing",
         "TX-use_case-marketing"
@@ -23783,9 +23910,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-product_form-end_user_application",
         "TX-target_user-consumer",
-        "TX-use_case-content_creation",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-consumer_retail"
@@ -23899,9 +24026,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-legal",
         "TX-industry-legal_services",
@@ -24035,13 +24162,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
-        "TX-use_case-content_creation"
+        "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-30",
@@ -24365,6 +24492,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-4a982ba6f291ddec",
+        "EV-88dcf97a6e4a903e",
         "EV-2dd16bf18068dca9",
         "EV-860fbba841badfec",
         "EV-65612dfb24abce5c",
@@ -24480,6 +24609,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29",
         "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
@@ -24506,7 +24636,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-6998e3957b261cf2",
@@ -24648,10 +24778,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-industry-retail_ecommerce",
         "TX-use_case-data_analysis",
         "TX-technology-agentic_execution",
@@ -24784,10 +24914,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-industry-media_entertainment",
         "TX-ai_market_subcategory-marketing",
         "TX-use_case-marketing"
@@ -24855,12 +24985,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-target_user-consumer",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-industry-media_entertainment",
         "TX-industry-manufacturing",
         "TX-industry-construction_real_estate",
@@ -25296,6 +25426,28 @@
       "lastSeen": "2026-07-28"
     },
     {
+      "id": "EN-b9d3a6fa30af078e",
+      "name": "VMware AI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1a846b94337dd961"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-end_user_application",
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-09-01"
+    },
+    {
       "id": "EN-81b430b696435180",
       "name": "微信",
       "entityType": "organization_candidate",
@@ -25561,6 +25713,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-product_form-chip_accelerator",
@@ -25569,7 +25722,6 @@
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-use_case-software_development",
         "TX-industry-media_entertainment",
         "TX-use_case-sales",
@@ -25906,6 +26058,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-53957f94b3924ad3",
         "EV-c5f8f07d714f330f",
         "EV-293d6feac5b8efab",
         "EV-71727e1a748baf33",
@@ -26087,9 +26240,9 @@
         "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-video_generation",
         "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-video_generation",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
@@ -26133,7 +26286,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-4e721fae5963494d",
@@ -26255,6 +26408,48 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-a8968d398c9626cb",
+      "eventId": "EV-1a846b94337dd961",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "title": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "博通推出 VMware AI 工厂，简化企业私有云 AI 部署 - IT之家",
+        "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+        "新产品是 VMware AI 私有云的软件定义基础，通过一系列自动化创新功能为 AI 基础设施部署提供支持， 进而为客户提供更加简单的 AI 生产力部署路径 。",
+        "据介绍，VMware AI 工厂可将 AI 应用直接部署到企业私有云环境。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/996/680.htm",
+      "entityIds": [
+        "EN-33dbfdc3b4b67b9d",
+        "EN-b9d3a6fa30af078e"
+      ]
+    },
     {
       "id": "FDE-5314a0e746758b29",
       "eventId": "EV-22f0d8caaa65a6a2",
@@ -26507,6 +26702,56 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-9a37cbb20bf82aa1",
+      "implementationKey": "9a37cbb20bf82aa1",
+      "eventId": "EV-1a846b94337dd961",
+      "eventIds": [
+        "EV-1a846b94337dd961"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "title": "未披露 × 未披露：博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-9e6ce1cd5e14a010",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-08-31",
+          "dataDate": "2026-09-01",
+          "eventId": "EV-1a846b94337dd961",
+          "eventTitle": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/996/680.htm",
+      "entityIds": [
+        "EN-33dbfdc3b4b67b9d",
+        "EN-b9d3a6fa30af078e"
+      ]
+    },
+    {
       "id": "FDED-534521941a007f6a",
       "implementationKey": "534521941a007f6a",
       "eventId": "EV-22f0d8caaa65a6a2",
@@ -26552,6 +26797,75 @@
         "EN-1706716bb5eebbe2",
         "EN-7d1507284a5757ca",
         "EN-cbc62794911ff31b"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-f176a0ca7122d7ab",
+      "snapshotKey": "f176a0ca7122d7ab",
+      "snapshotId": "HWS-ff719e20cbe837ea",
+      "eventId": "EV-1a846b94337dd961",
+      "eventIds": [
+        "EV-1a846b94337dd961"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "title": "VMware AI",
+      "subject": "博通",
+      "productNames": [
+        "VMware AI"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-9252779aca959cc8"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-01",
+          "hardware_fact_id": "HWF-9252779aca959cc8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-31T15:33:31.000Z",
+          "subject_entity_id": "EN-33dbfdc3b4b67b9d",
+          "subject_name": "博通",
+          "product_entity_ids": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "product_names": [
+            "VMware AI"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "新产品是 VMware AI 私有云的软件定义基础，通过一系列自动化创新功能为 AI 基础设施部署提供支持， 进而为客户提供更加简单的 AI 生产力部署路径 。",
+          "event_refs": [
+            "EV-1a846b94337dd961"
+          ],
+          "claim_ref": "CL-3a3366e576da8715",
+          "source_refs": [
+            "SA-cd2483df51dfe671"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/996/680.htm",
+      "entityIds": [
+        "EN-33dbfdc3b4b67b9d",
+        "EN-b9d3a6fa30af078e"
       ]
     }
   ]

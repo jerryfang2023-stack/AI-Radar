@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-520f7bab7410f6eb",
+    "name": "范式",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-bf23c87d0aa1f205"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-31",
+    "lastSeen": "2026-09-01",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-bf23c87d0aa1f205"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-bf23c87d0aa1f205",
+        "dataDate": "2026-09-01",
+        "date": "2026-08-31",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "范式与华为达成重磅算力战略合作，成为首批拥抱国产最高端算力底座的AI企业",
+        "displayTags": [],
+        "entityIds": [
+          "EN-520f7bab7410f6eb",
+          "EN-b0c5789fc04bf94f",
+          "EN-b81c8201acfc7639"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-16afae9b91eb133c",
+      "eventId": "EV-bf23c87d0aa1f205",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "title": "范式与华为达成重磅算力战略合作，成为首批拥抱国产最高端算力底座的AI企业",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "范式",
+      "industry": "未披露",
+      "useCase": "成为首批拥抱国产最高端算力底座的AI企业",
+      "reportedNeed": "面对潜在的境外算力不确定性及国产算力全面崛起的大趋势",
+      "deliveryComponents": [
+        "首先，面对潜在的境外算力不确定性及国产算力全面崛起的大趋势，此次合作是范式极具前瞻性的“超前部署”。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/08/481919.html",
+      "entityIds": [
+        "EN-520f7bab7410f6eb",
+        "EN-b0c5789fc04bf94f",
+        "EN-b81c8201acfc7639"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-cdd585f904dc9522",
+      "implementationKey": "cdd585f904dc9522",
+      "eventId": "EV-bf23c87d0aa1f205",
+      "eventIds": [
+        "EV-bf23c87d0aa1f205"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "title": "未披露 × 范式：成为首批拥抱国产最高端算力底座的AI企业",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "范式",
+      "industry": "未披露",
+      "useCase": "成为首批拥抱国产最高端算力底座的AI企业",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-fcb5951c1e9efaa9",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-31",
+          "dataDate": "2026-09-01",
+          "eventId": "EV-bf23c87d0aa1f205",
+          "eventTitle": "范式与华为达成重磅算力战略合作，成为首批拥抱国产最高端算力底座的AI企业",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/08/481919.html",
+      "entityIds": [
+        "EN-520f7bab7410f6eb",
+        "EN-b0c5789fc04bf94f",
+        "EN-b81c8201acfc7639"
+      ]
+    }
+  ]
+}

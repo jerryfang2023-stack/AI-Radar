@@ -885,11 +885,14 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
         mentionText: sourceText.slice(index, index + alias.length),
         start: index,
         source,
-        verified: true,
+        // A registered alias in a headline is enough to retain a candidate
+        // mention, but only accepted Claim evidence can verify the entity.
+        verified: claimIndex >= 0,
         exactSubjectAlias: normalizeSpace(alias).toLocaleLowerCase() === subjectKey,
       }];
     }).sort((left, right) => (
-      Number(right.exactSubjectAlias) - Number(left.exactSubjectAlias)
+      Number(right.verified) - Number(left.verified)
+      || Number(right.exactSubjectAlias) - Number(left.exactSubjectAlias)
       || Number(right.source === "title_original") - Number(left.source === "title_original")
       || [...right.mentionText].length - [...left.mentionText].length
     ));

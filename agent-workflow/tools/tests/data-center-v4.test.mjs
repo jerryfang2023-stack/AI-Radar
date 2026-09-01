@@ -81,6 +81,35 @@ test("lawsuit claims resolve Twitch from exact title and Claim evidence", () => 
   );
 });
 
+test("registered headline aliases remain candidates until accepted Claim evidence verifies them", () => {
+  const titleOnly = organizationMentions(
+    "快手：国家人工智能基金向北京可灵注入现金资本14亿元",
+    { subject: "Charoen Pokphand Robot Limited（正大机器人）", action: "注入现金资本", object: "北京可灵" },
+    "capital_investment",
+    "国家人工智能基金及正大机器人各自同意作为额外投资者成为增资协议的订约方，并分别向北京可灵注入现金资本人民币14亿元及约1929万美元。",
+    [{
+      subject: "Charoen Pokphand Robot Limited（正大机器人）",
+      source_quote: "国家人工智能基金及正大机器人各自同意作为额外投资者成为增资协议的订约方，并分别向北京可灵注入现金资本人民币14亿元及约1929万美元。",
+    }],
+  );
+  assert.deepEqual(
+    titleOnly.filter((item) => item.canonicalName === "Kuaishou").map((item) => [item.source, item.verified]),
+    [["title_original", false]],
+  );
+
+  const claimBacked = organizationMentions(
+    "快手：北京可灵获得增资",
+    { subject: "快手", action: "增资", object: "北京可灵" },
+    "capital_investment",
+    "快手宣布北京可灵获得新一轮增资。",
+    [{ subject: "快手", source_quote: "快手宣布北京可灵获得新一轮增资。" }],
+  );
+  assert.deepEqual(
+    claimBacked.filter((item) => item.canonicalName === "Kuaishou").map((item) => item.verified),
+    [true],
+  );
+});
+
 test("localized action and attributed research titles preserve Claim-backed candidate names", () => {
   const cases = [
     ["Caterpillar 将采矿自动化经验应用于 AI 部署", "Caterpillar 将采矿自动化经验应用于 AI", "Industrial heavyweight Caterpillar is using its experience to deploy AI.", "Caterpillar"],

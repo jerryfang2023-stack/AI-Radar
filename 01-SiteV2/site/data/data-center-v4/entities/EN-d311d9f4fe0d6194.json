@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-d311d9f4fe0d6194",
+    "name": "M5 Max",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-93cb2a7faf07bd35"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-25",
+    "lastSeen": "2026-09-01",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-93cb2a7faf07bd35"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-93cb2a7faf07bd35",
+        "dataDate": "2026-09-01",
+        "date": "2026-08-25",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "苹果推出搭载M5 Max和M5 Ultra的Mac Studio",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-fc2dd90a306ec0ba",
+          "EN-d311d9f4fe0d6194",
+          "EN-8eb41e77bd5d6022"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-c82dd190312bd3ba",
+      "snapshotKey": "c82dd190312bd3ba",
+      "snapshotId": "HWS-6c9ffa9118bb1171",
+      "eventId": "EV-93cb2a7faf07bd35",
+      "eventIds": [
+        "EV-93cb2a7faf07bd35"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "title": "Mac Studio / M5 Max / M5 Ultra",
+      "subject": "Apple",
+      "productNames": [
+        "Mac Studio",
+        "M5 Max",
+        "M5 Ultra"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a51b911aad725cef"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-01",
+          "hardware_fact_id": "HWF-a51b911aad725cef",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-25T00:00:00.000Z",
+          "subject_entity_id": "EN-3a7bd3e2360a3d29",
+          "subject_name": "Apple",
+          "product_entity_ids": [
+            "EN-fc2dd90a306ec0ba",
+            "EN-d311d9f4fe0d6194",
+            "EN-8eb41e77bd5d6022"
+          ],
+          "product_names": [
+            "Mac Studio",
+            "M5 Max",
+            "M5 Ultra"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Mac Studio is also a powerful platform for the rich ecosystem of tools AI researchers and developers rely on every day, utilizing the advanced frameworks in macOS. Core AI is a brand-new framework for building, running, and deploying AI models on Apple silicon. It provides an architecture optimized for Apple silicon, including unified memory, CPU, GPU, and Neural Engine, allowing developers to deploy full-scale LLMs locally and bring their own custom models into their apps. MLX, Apple’s open-source machine learning framework optimized for Apple silicon, enables developers to run, train, and fine-tune models with exceptional efficiency on Mac. In addition to these powerful frameworks, combined with Xcode and a robust ecosystem of AI tools and solutions, Mac Studio provides a complete, end-to-end platform for AI development — from experimentation and training to deployment.",
+          "event_refs": [
+            "EV-93cb2a7faf07bd35"
+          ],
+          "claim_ref": "CL-d247c6e741047540",
+          "source_refs": [
+            "SA-dfbd63e23c63222d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://apple.com/gn/newsroom/2026/08/apple-introduces-mac-studio-with-m5-max-and-m5-ultra",
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29",
+        "EN-fc2dd90a306ec0ba",
+        "EN-d311d9f4fe0d6194",
+        "EN-8eb41e77bd5d6022"
+      ]
+    }
+  ]
+}

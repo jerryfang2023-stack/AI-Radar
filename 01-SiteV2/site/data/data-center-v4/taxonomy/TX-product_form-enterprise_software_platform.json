@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "node": {
     "id": "TX-product_form-enterprise_software_platform",
@@ -123,6 +123,7 @@
       "EV-b95539d17772a4ce",
       "EV-f63462e34ea40699",
       "EV-05a87b578967c83e",
+      "EV-e9b6c8b13cd12e47",
       "EV-c5f8f07d714f330f",
       "EV-601240034cf86d7f",
       "EV-f71726063c6e1615",
@@ -255,6 +256,7 @@
       "EN-7d3194f79e645c42",
       "EN-c890cfa67d1da908",
       "EN-19e41212c0556603",
+      "EN-96a4bc2602655473",
       "EN-bbdefa2950f49882",
       "EN-240389f4b730bad4",
       "EN-921ba2ce81556e42",
@@ -289,7 +291,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-08-30"
+    "lastSeen": "2026-09-01"
   },
   "events": [
     {
@@ -33870,6 +33872,86 @@
       "publisher": "sierra.ai"
     },
     {
+      "id": "EV-e9b6c8b13cd12e47",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenClaw 2.0 带来简化设置、重建的浏览器应用及多人会话功能",
+      "originalTitle": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions",
+      "subject": "OpenClaw",
+      "action": "product_release",
+      "object": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-96a4bc2602655473"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-96a4bc2602655473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-96a4bc2602655473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-96a4bc2602655473"
+      ],
+      "entityNames": [
+        "OpenClaw"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions",
+      "publisher": "The Decoder AI News"
+    },
+    {
       "id": "EV-c5f8f07d714f330f",
       "dataDate": "2026-08-30",
       "date": "2026-08-29",
@@ -38880,6 +38962,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-81f1fd52e41d4664",
         "EV-00e6152baff47d4d",
         "EV-569e956899258a54",
         "EV-a3ccf873058bb406",
@@ -38977,7 +39060,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-3b3ed571bbb19504",
@@ -39020,10 +39103,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-industry-retail_ecommerce",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
@@ -39106,10 +39189,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-industry-retail_ecommerce",
         "TX-use_case-data_analysis",
         "TX-ai_market_subcategory-marketing"
@@ -39408,6 +39491,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-product_form-chip_accelerator",
@@ -39416,7 +39500,6 @@
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-use_case-software_development",
         "TX-industry-media_entertainment",
         "TX-use_case-sales",
@@ -40544,13 +40627,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
         "TX-technology-agentic_execution"
       ],
@@ -42052,6 +42135,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-4a982ba6f291ddec",
+        "EV-88dcf97a6e4a903e",
         "EV-2dd16bf18068dca9",
         "EV-860fbba841badfec",
         "EV-65612dfb24abce5c",
@@ -42167,6 +42252,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29",
         "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
@@ -42193,7 +42279,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-c890cfa67d1da908",
@@ -42240,6 +42326,29 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-03-04",
       "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-96a4bc2602655473",
+      "name": "OpenClaw",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e9b6c8b13cd12e47",
+        "EV-281fa47442349b52"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -42297,6 +42406,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-53957f94b3924ad3",
         "EV-c5f8f07d714f330f",
         "EV-293d6feac5b8efab",
         "EV-71727e1a748baf33",
@@ -42478,9 +42588,9 @@
         "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-video_generation",
         "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-video_generation",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
@@ -42524,7 +42634,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -43052,6 +43162,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-4a982ba6f291ddec",
         "EV-278745d4aa7a4b3a",
         "EV-dff2cb04fb2c59be",
         "EV-9530bb61702d4a33",
@@ -43199,7 +43310,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-1da46c494dfdd8d3",
@@ -43318,6 +43429,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-53957f94b3924ad3",
         "EV-2cd95ab95d0f2ad9",
         "EV-a591b0c96f79de45",
         "EV-dab4d3f2059e8880",
@@ -43327,13 +43439,16 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
+        "TX-industry-retail_ecommerce",
         "TX-use_case-knowledge_search",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-retrieval_augmented_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-05",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-61cce404a45c3545",
@@ -44016,6 +44131,66 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-5a0d5e342020560a",
+      "snapshotKey": "5a0d5e342020560a",
+      "snapshotId": "HWS-9168bb548619537a",
+      "eventId": "EV-e9b6c8b13cd12e47",
+      "eventIds": [
+        "EV-e9b6c8b13cd12e47"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "title": "OpenClaw",
+      "subject": "OpenClaw",
+      "productNames": [],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-f68d6858a5999bd3"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-01",
+          "hardware_fact_id": "HWF-f68d6858a5999bd3",
+          "fact_type": "product",
+          "observed_at": "2026-08-31T00:00:00.000Z",
+          "subject_entity_id": "EN-96a4bc2602655473",
+          "subject_name": "OpenClaw",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Version 2.0 is the largest OpenClaw release so far, and the biggest change is a simplified first-run setup. The software now detects existing resources on the computer, including ChatGPT or Claude subscriptions, API keys, and local models, which cuts out many of the configuration steps users previously had to deal with. Additional settings can be adjusted later during a conversation with the bot.",
+          "event_refs": [
+            "EV-e9b6c8b13cd12e47"
+          ],
+          "claim_ref": "CL-64c8a94113d747a8",
+          "source_refs": [
+            "SA-18134b8f4cfe325a"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions",
+      "entityIds": [
+        "EN-96a4bc2602655473"
+      ]
+    },
     {
       "id": "HWC-c6e128583c9bf3fc",
       "snapshotKey": "c6e128583c9bf3fc",

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-ab5e9e376f953917",
+    "name": "Government",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4db4d35b65e7f982"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-31",
+    "lastSeen": "2026-09-01",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-4db4d35b65e7f982"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-4db4d35b65e7f982",
+        "dataDate": "2026-09-01",
+        "date": "2026-08-31",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英国AI公司修复公共服务竞赛获1亿英镑资助 - GOV.UK",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ab5e9e376f953917"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-8fc5cb9ccfc3ad3f",
+      "eventId": "EV-4db4d35b65e7f982",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "title": "英国AI公司修复公共服务竞赛获1亿英镑资助 - GOV.UK",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Sovereign AI R&D Procurement Scheme",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [
+        "£100 million"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://gov.uk/government/news/100-million-competition-to-back-british-ai-companies-to-fix-public-services",
+      "entityIds": [
+        "EN-ab5e9e376f953917"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-cd8bc29a58ba5f73",
+      "implementationKey": "cd8bc29a58ba5f73",
+      "eventId": "EV-4db4d35b65e7f982",
+      "eventIds": [
+        "EV-4db4d35b65e7f982"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "title": "未披露 × 未披露：Sovereign AI R&D Procurement Scheme",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Sovereign AI R&D Procurement Scheme",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-e7cb45189b36b69d",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-08-31",
+          "dataDate": "2026-09-01",
+          "eventId": "EV-4db4d35b65e7f982",
+          "eventTitle": "英国AI公司修复公共服务竞赛获1亿英镑资助 - GOV.UK",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://gov.uk/government/news/100-million-competition-to-back-british-ai-companies-to-fix-public-services",
+      "entityIds": [
+        "EN-ab5e9e376f953917"
+      ]
+    }
+  ]
+}

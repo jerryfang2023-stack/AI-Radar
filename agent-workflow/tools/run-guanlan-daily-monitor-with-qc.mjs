@@ -106,7 +106,6 @@ function writeReport(result) {
     "",
     "- The production wrapper does not recollect all source lanes or rerun the full monitor automatically.",
     "- Supply diagnostics remain in the report. A hard evidence-supply failure routes to targeted repair.",
-    "",
   ].join("\n");
   fs.writeFileSync(reportPath, `${text}\n`, "utf8");
   fs.writeFileSync(latestPath, `${text}\n`, "utf8");

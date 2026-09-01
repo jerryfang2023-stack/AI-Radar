@@ -6056,7 +6056,7 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     `- generated_at: ${new Date().toISOString()}`,
     `- raw_count: ${items.length}`,
     `- aihot_mode: ${runMeta.aihot_mode || aihotMode}`,
-    `- aihot_since: ${runMeta.aihot_since || ""}`,
+    `- aihot_since: ${runMeta.aihot_since || "none"}`,
     `- aihot_discovered_count: ${runMeta.aihot_discovered_count ?? "unknown"}`,
     `- aihot_daily_discovered_count: ${runMeta.aihot_daily_discovered_count ?? "unknown"}`,
     `- aihot_all_discovered_count: ${runMeta.aihot_all_discovered_count ?? "unknown"}`,

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-a625159d18da5718",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c728a9809f57bba8",
       "EV-b1146684fc4b4dd2",
       "EV-0e68936238460b63",
       "EV-6dc56d23bf29768b",
@@ -33,13 +34,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-19",
-    "lastSeen": "2026-08-31",
+    "lastSeen": "2026-09-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-c728a9809f57bba8",
         "EV-b1146684fc4b4dd2",
         "EV-0e68936238460b63",
         "EV-6dc56d23bf29768b",
@@ -52,6 +54,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c728a9809f57bba8",
+        "dataDate": "2026-09-01",
+        "date": "2026-09-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.252 发布，修复 Bash 报错、always allow 未保存等多项问题",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a625159d18da5718"
+        ]
+      },
       {
         "id": "EV-b1146684fc4b4dd2",
         "dataDate": "2026-08-31",

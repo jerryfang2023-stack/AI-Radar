@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-d36e5a1a7a3c45ce",
@@ -22,7 +22,9 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-aad2b98b8f25d64b"
+      "EV-aad2b98b8f25d64b",
+      "EV-88a23844556ed7be",
+      "EV-aadda8232529b268"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -32,7 +34,7 @@
       "EN-dd172e183ec20177"
     ],
     "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-17",
+    "lastSeen": "2026-09-01",
     "relationIds": [
       "REL2-ca465b8d8d369d14"
     ],
@@ -45,9 +47,46 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-88a23844556ed7be",
+        "EV-aadda8232529b268"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-88a23844556ed7be",
+        "dataDate": "2026-09-01",
+        "date": "2026-08-31",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "欧盟将 ChatGPT、Reddit、Roblox 纳入《数字服务法》监管范围",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1f42df8956eb0723",
+          "EN-1706429cbf67f1c9",
+          "EN-2e183f2a7a70de1c",
+          "EN-d36e5a1a7a3c45ce"
+        ]
+      },
+      {
+        "id": "EV-aadda8232529b268",
+        "dataDate": "2026-09-01",
+        "date": "2026-08-31",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "ChatGPT将在欧盟面临更严格的监管",
+        "displayTags": [],
+        "entityIds": [
+          "EN-98b150f0b66e19fa",
+          "EN-d36e5a1a7a3c45ce"
+        ]
+      },
       {
         "id": "EV-aad2b98b8f25d64b",
         "dataDate": "2026-07-17",

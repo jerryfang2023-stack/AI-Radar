@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-33dbfdc3b4b67b9d",
+    "name": "博通",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-1a846b94337dd961"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-31",
+    "lastSeen": "2026-09-01",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-1a846b94337dd961"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-1a846b94337dd961",
+        "dataDate": "2026-09-01",
+        "date": "2026-08-31",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-b9d3a6fa30af078e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-b9d3a6fa30af078e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-33dbfdc3b4b67b9d",
+          "EN-b9d3a6fa30af078e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-a8968d398c9626cb",
+      "eventId": "EV-1a846b94337dd961",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "title": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "博通推出 VMware AI 工厂，简化企业私有云 AI 部署 - IT之家",
+        "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+        "新产品是 VMware AI 私有云的软件定义基础，通过一系列自动化创新功能为 AI 基础设施部署提供支持， 进而为客户提供更加简单的 AI 生产力部署路径 。",
+        "据介绍，VMware AI 工厂可将 AI 应用直接部署到企业私有云环境。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/996/680.htm",
+      "entityIds": [
+        "EN-33dbfdc3b4b67b9d",
+        "EN-b9d3a6fa30af078e"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-9a37cbb20bf82aa1",
+      "implementationKey": "9a37cbb20bf82aa1",
+      "eventId": "EV-1a846b94337dd961",
+      "eventIds": [
+        "EV-1a846b94337dd961"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "title": "未披露 × 未披露：博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-9e6ce1cd5e14a010",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-08-31",
+          "dataDate": "2026-09-01",
+          "eventId": "EV-1a846b94337dd961",
+          "eventTitle": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/996/680.htm",
+      "entityIds": [
+        "EN-33dbfdc3b4b67b9d",
+        "EN-b9d3a6fa30af078e"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-f176a0ca7122d7ab",
+      "snapshotKey": "f176a0ca7122d7ab",
+      "snapshotId": "HWS-ff719e20cbe837ea",
+      "eventId": "EV-1a846b94337dd961",
+      "eventIds": [
+        "EV-1a846b94337dd961"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "title": "VMware AI",
+      "subject": "博通",
+      "productNames": [
+        "VMware AI"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-9252779aca959cc8"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-01",
+          "hardware_fact_id": "HWF-9252779aca959cc8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-31T15:33:31.000Z",
+          "subject_entity_id": "EN-33dbfdc3b4b67b9d",
+          "subject_name": "博通",
+          "product_entity_ids": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "product_names": [
+            "VMware AI"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "新产品是 VMware AI 私有云的软件定义基础，通过一系列自动化创新功能为 AI 基础设施部署提供支持， 进而为客户提供更加简单的 AI 生产力部署路径 。",
+          "event_refs": [
+            "EV-1a846b94337dd961"
+          ],
+          "claim_ref": "CL-3a3366e576da8715",
+          "source_refs": [
+            "SA-cd2483df51dfe671"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/996/680.htm",
+      "entityIds": [
+        "EN-33dbfdc3b4b67b9d",
+        "EN-b9d3a6fa30af078e"
+      ]
+    }
+  ]
+}

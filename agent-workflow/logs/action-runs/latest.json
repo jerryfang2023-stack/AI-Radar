@@ -1,40 +1,50 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T02:52:47.278Z",
-  "date": "2026-08-31",
-  "action": "Data-Center-V4-targeted-recovery",
-  "action_status": "current",
+  "generated_at": "2026-09-01T01:48:30.330Z",
+  "date": "2026-09-01",
+  "action": "Claim/Event normalization and canonical build",
+  "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "user",
-  "status": "validated-awaiting-publication",
-  "summary": "Reuse accepted run 33350493823; repair Claim-backed entity links and research classification; regenerate date-consistent projections",
+  "trigger": "manual-recovery",
+  "status": "success",
+  "summary": "Recovered the accepted 2026-09-01 artifact without recollection, fixed title-only organization verification, rebuilt all current projections, and verified the funding event deduplicates to the existing 282-card inventory.",
   "contexts": [],
   "changed_files": [
     "agent-workflow/tools/build-data-center-v4.mjs",
     "agent-workflow/tools/tests/data-center-v4.test.mjs",
-    "review ledger",
-    "Aug31 bundle and projections"
+    "01-SiteV2/site/data/data-center-v4-frontstage.json",
+    "01-SiteV2/site/data/funding-insights-v1.json"
   ],
   "outputs": [
-    "agent-workflow/reports/2026-08-31-targeted-recovery.md"
+    "2026-09-01 V4 bundle",
+    "282-card Funding Insights projection",
+    "OPS telemetry"
   ],
   "checks": [
-    "139 normalization tests",
-    "projection coverage 100 percent",
-    "private evidence gates",
-    "funding full history gate",
-    "frontstage prepared tests",
-    "pre-commit readiness"
+    "test:data-center 243/243",
+    "test:data-center-site",
+    "test:ops-v2",
+    "test:ops-unified",
+    "test:v4-frontstage-smoke",
+    "assert:funding-insights:full",
+    "daily-production-chain gate",
+    "projection coverage 100%"
   ],
-  "issues": [],
+  "issues": [
+    "Initial cloud run blocked on a title-only Kuaishou alias promoted as verified",
+    "Funding source health degraded by TLDR 429",
+    "ITHome timeout",
+    "and unavailable Anysearch fallbacks"
+  ],
   "risks": [
-    "Browser visual QA pending connection recovery",
-    "16:10 and 16:45 tasks not yet due"
+    "External source coverage remains degraded although publication data is complete"
   ],
-  "lessons": [],
+  "lessons": [
+    "A registered headline alias is a candidate until an accepted Claim contains the exact alias"
+  ],
   "reusable_rules": [
-    "Downstream failure reuses accepted artifact",
-    "candidate entity requires accepted Claim then explicit review"
+    "Verify organizations from accepted Claim evidence",
+    "never headline presence alone"
   ],
   "retired_flags": [],
   "notes": []

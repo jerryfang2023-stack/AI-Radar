@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "node": {
     "id": "TX-use_case-customer_support",
@@ -43,7 +43,6 @@
       "EV-b85139b8fba1a5c5",
       "EV-dd3217aad32e6891",
       "EV-1196b80b537957f2",
-      "EV-04b84c1f3430c055",
       "EV-7690a249e07ddac8",
       "EV-eb61ddca7f36f55c",
       "EV-9ff0c57323ed8318",
@@ -87,7 +86,6 @@
       "EN-28d0bd981118a907",
       "EN-2f88f41306209dd7",
       "EN-91776f01fce0c960",
-      "EN-b3c2b1c099ddf347",
       "EN-5e9e4638fa2ec9a4",
       "EN-d3565d297d476f10",
       "EN-3474e24464fc25a7",
@@ -103,7 +101,6 @@
       "EN-7d1507284a5757ca"
     ],
     "fdeIds": [
-      "FDE-bdcc1cc24296c7ca",
       "FDE-34d87868ff636016",
       "FDE-d57aceb85d7bcd3e",
       "FDE-e79a238725a98c06",
@@ -114,7 +111,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-08-29"
   },
   "events": [
     {
@@ -9172,90 +9169,6 @@
       "publisher": "front.ai"
     },
     {
-      "id": "EV-04b84c1f3430c055",
-      "dataDate": "2026-08-31",
-      "date": "2026-08-31",
-      "updatedDate": "2026-08-31",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "eventGroup": "部署与案例",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "生成式AI用于维护",
-      "originalTitle": "Generative AI for Maintenance",
-      "subject": "C3 Generative AI",
-      "action": "deployment",
-      "object": "select remote service operators",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "customer_support",
-            "name": "客户支持",
-            "entityIds": [
-              "EN-b3c2b1c099ddf347"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "customer_support",
-          "name": "客户支持",
-          "entityIds": [
-            "EN-b3c2b1c099ddf347"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "customer_support",
-          "name": "客户支持",
-          "entityIds": [
-            "EN-b3c2b1c099ddf347"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-b3c2b1c099ddf347",
-        "EN-f48a4090493d2b5e"
-      ],
-      "entityNames": [
-        "C3 Generative AI",
-        "C3 AI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://c3.ai/customers/generative-ai-for-manufacturing",
-      "publisher": "c3.ai"
-    },
-    {
       "id": "EV-7690a249e07ddac8",
       "dataDate": "2026-08-18",
       "date": "2026-08-18",
@@ -11651,10 +11564,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-content_creation",
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-target_user-business_user",
-        "TX-use_case-content_creation",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
@@ -11977,6 +11890,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-81f1fd52e41d4664",
         "EV-00e6152baff47d4d",
         "EV-569e956899258a54",
         "EV-a3ccf873058bb406",
@@ -12074,7 +11988,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-c71a83adf3de3f40",
@@ -12261,6 +12175,7 @@
         "EV-6272444f30281858",
         "EV-9009adaed650ddde",
         "EV-11a8e196deb21300",
+        "EV-42b3196bf09fe88d",
         "EV-f7aa6d43b75238fb"
       ],
       "viewpointIds": [],
@@ -12272,7 +12187,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-a972bc1b3220493e",
@@ -12572,27 +12487,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2019-03-11",
       "lastSeen": "2026-07-28"
-    },
-    {
-      "id": "EN-b3c2b1c099ddf347",
-      "name": "C3 Generative AI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-04b84c1f3430c055"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-customer_support"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-08-31",
-      "lastSeen": "2026-08-31"
     },
     {
       "id": "EN-5e9e4638fa2ec9a4",
@@ -13006,6 +12900,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-4a982ba6f291ddec",
+        "EV-88dcf97a6e4a903e",
         "EV-2dd16bf18068dca9",
         "EV-860fbba841badfec",
         "EV-65612dfb24abce5c",
@@ -13121,6 +13017,7 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29",
         "EN-6a50fbf0b970c03a",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
@@ -13147,7 +13044,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -13431,6 +13328,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-4a982ba6f291ddec",
         "EV-278745d4aa7a4b3a",
         "EV-dff2cb04fb2c59be",
         "EV-9530bb61702d4a33",
@@ -13578,7 +13476,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-19e41212c0556603",
@@ -13756,44 +13654,6 @@
     }
   ],
   "fde": [
-    {
-      "id": "FDE-bdcc1cc24296c7ca",
-      "eventId": "EV-04b84c1f3430c055",
-      "dataDate": "2026-08-31",
-      "date": "2026-08-31",
-      "title": "生成式AI用于维护",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "C3 AI",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "select remote service operators",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "During the 2-day deployment process, the team uploaded and indexed over forty equipment manuals, each 80-page documents, fine-tuned search performance, and added seventeen users to roll-out to the field and customer service teams."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://c3.ai/customers/generative-ai-for-manufacturing",
-      "entityIds": [
-        "EN-b3c2b1c099ddf347",
-        "EN-f48a4090493d2b5e"
-      ]
-    },
     {
       "id": "FDE-34d87868ff636016",
       "eventId": "EV-eb61ddca7f36f55c",
@@ -14227,67 +14087,5 @@
       ]
     }
   ],
-  "hardware": [],
-  "fdeDossiers": [
-    {
-      "id": "FDED-02a5be60f16af502",
-      "implementationKey": "02a5be60f16af502",
-      "eventId": "EV-04b84c1f3430c055",
-      "eventIds": [
-        "EV-04b84c1f3430c055"
-      ],
-      "dataDate": "2026-08-31",
-      "date": "2026-08-31",
-      "title": "C3 AI × 未披露：select remote service operators",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "C3 AI",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "select remote service operators",
-      "workflow": "未披露",
-      "systems": [],
-      "outcomes": [],
-      "observationCount": 2,
-      "completeness": 0.375,
-      "completenessPercent": 38,
-      "missingFields": [
-        "vendor",
-        "industry",
-        "workflow",
-        "systems_integrated",
-        "reported_outcomes"
-      ],
-      "timeline": [
-        {
-          "observationId": "FDEO-857e4ba9de2ca79c",
-          "type": "implementation_update",
-          "stage": "announced",
-          "date": "2026-08-31",
-          "dataDate": "2026-08-31",
-          "eventId": "EV-04b84c1f3430c055",
-          "eventTitle": "生成式AI用于维护",
-          "claimCount": 2,
-          "sourceCount": 1
-        },
-        {
-          "observationId": "FDEO-558faf163ef6be1a",
-          "type": "implementation_update",
-          "stage": "announced",
-          "date": "2026-08-30",
-          "dataDate": "2026-08-30",
-          "eventId": "EV-04b84c1f3430c055",
-          "eventTitle": "生成式AI用于维护",
-          "claimCount": 2,
-          "sourceCount": 1
-        }
-      ],
-      "tags": [],
-      "sourceUrl": "https://c3.ai/customers/generative-ai-for-manufacturing",
-      "entityIds": [
-        "EN-b3c2b1c099ddf347",
-        "EN-f48a4090493d2b5e"
-      ]
-    }
-  ]
+  "hardware": []
 }

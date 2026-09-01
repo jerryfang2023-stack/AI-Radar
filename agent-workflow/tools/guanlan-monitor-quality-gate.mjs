@@ -781,7 +781,6 @@ export function runGuanlanMonitorQualityGate({
     `- structured_intake_file: ${structuredIntake?.file ? rel(structuredIntake.file) : "missing"}`,
     `- monitor_log_file: ${logFile && fs.existsSync(logFile) ? rel(logFile) : "missing"}`,
     `- config_file: ${rel(configPath)}`,
-    "",
   ].join("\n");
 
   fs.writeFileSync(reportPath, `${report}\n`, "utf8");

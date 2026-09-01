@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-75ff8ed66696684e",
+    "name": "LG 电子",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7311986c33501189"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-31",
+    "lastSeen": "2026-09-01",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-7311986c33501189"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7311986c33501189",
+        "dataDate": "2026-09-01",
+        "date": "2026-08-31",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "摆脱对台积电依赖，LG 电子将委托三星代工 AI 家电芯片",
+        "displayTags": [],
+        "entityIds": [
+          "EN-75ff8ed66696684e",
+          "EN-968e2d5b08687bf4"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-1166e0de5cfe2bab",
+      "snapshotKey": "1166e0de5cfe2bab",
+      "snapshotId": "HWS-e83895eda10e96e7",
+      "eventId": "EV-7311986c33501189",
+      "eventIds": [
+        "EV-7311986c33501189"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "title": "LG 电子",
+      "subject": "LG 电子",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "oem_odm"
+      ],
+      "latestValues": {
+        "oem_odm": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-61131cf663357208"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-01",
+          "hardware_fact_id": "HWF-61131cf663357208",
+          "fact_type": "oem_odm",
+          "observed_at": "2026-08-31T09:01:09.000Z",
+          "subject_entity_id": "EN-75ff8ed66696684e",
+          "subject_name": "LG 电子",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "这些芯片将交由三星电子负责晶圆代工。",
+          "event_refs": [
+            "EV-7311986c33501189"
+          ],
+          "claim_ref": "CL-05fb3c034a878b79",
+          "source_refs": [
+            "SA-f9a7b1e61651b42d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/996/564.htm",
+      "entityIds": [
+        "EN-75ff8ed66696684e",
+        "EN-968e2d5b08687bf4"
+      ]
+    }
+  ]
+}

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "node": {
     "id": "TX-use_case-physical_automation",
@@ -119,6 +119,8 @@
       "EV-7da59380bb30e76a",
       "EV-67f32771d69084d6",
       "EV-df3f5cf6bc985a9c",
+      "EV-1fd2dfea0a3f7322",
+      "EV-de976687caf47511",
       "EV-1587a760d81451be",
       "EV-ad64347138da72bb"
     ],
@@ -196,6 +198,7 @@
       "EN-7f6333102da9e8bd",
       "EN-5e1fcba4c9f1cf69",
       "EN-80ea42a231357d12",
+      "EN-a2878edf5c6c1bfa",
       "EN-0a7411a215b0fa5b"
     ],
     "fdeIds": [
@@ -220,7 +223,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-08-30"
+    "lastSeen": "2026-09-01"
   },
   "events": [
     {
@@ -21618,6 +21621,168 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-1fd2dfea0a3f7322",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "快手：国家人工智能基金向北京可灵注入现金资本14亿元",
+      "originalTitle": "",
+      "subject": "Charoen Pokphand Robot Limited（正大机器人）",
+      "action": "capital_investment",
+      "object": "北京可灵",
+      "metrics": [
+        "14 亿",
+        "1929 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8abe43a7f9a7bd94",
+        "EN-8073c2660ad5c348"
+      ],
+      "entityNames": [
+        "Kuaishou",
+        "国家人工智能基金"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/996/663.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-de976687caf47511",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "工业巨头卡特彼勒将 AI 推向真实作业现场，未来五年投入 1 亿美元培训员工",
+      "originalTitle": "",
+      "subject": "卡特彼勒",
+      "action": "capital_investment",
+      "object": "1 亿美元",
+      "metrics": [
+        "1 亿",
+        "6.74 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-a2878edf5c6c1bfa"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-a2878edf5c6c1bfa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-a2878edf5c6c1bfa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a2878edf5c6c1bfa"
+      ],
+      "entityNames": [
+        "卡特彼勒"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/996/633.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-1587a760d81451be",
       "dataDate": "2026-07-07",
       "date": "2026-07-06",
@@ -22386,6 +22551,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-81f1fd52e41d4664",
         "EV-00e6152baff47d4d",
         "EV-569e956899258a54",
         "EV-a3ccf873058bb406",
@@ -22483,7 +22649,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -24020,6 +24186,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-25"
+    },
+    {
+      "id": "EN-a2878edf5c6c1bfa",
+      "name": "卡特彼勒",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-de976687caf47511"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-31",
+      "lastSeen": "2026-09-01"
     },
     {
       "id": "EN-0a7411a215b0fa5b",

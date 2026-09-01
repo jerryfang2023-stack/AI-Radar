@@ -11,7 +11,7 @@ metadata:
     upstream: "accepted and partial RawDocument records"
     downstream: "CanonicalEvent, relationships, tags and domain projections"
     gates: "exact source spans, event enum, disclosed status, dedupe, conflict preservation"
-    recent_learning: "A source channel labeled AI does not make an event AI-industry data; eligibility must be proved by the title or accepted Claims."
+    recent_learning: "A registered organization alias found only in a headline remains a candidate; verified entity status requires the same canonical organization to have an exact alias in accepted Claim evidence."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -32,6 +32,7 @@ Read `context/12-data-center-v4.md`, `agent-workflow/product/data-center-v4-cont
 6. Send absent, ambiguous, or contaminated evidence to QA rather than inventing an event.
 7. Require source-bounded AI-industry scope. Publisher, feed, query, discovery channel, navigation, or incidental AI mentions do not qualify an event.
 8. Route generic vertical “智慧 / 大模型” publicity without an identifiable AI-industry actor, product identity, market action, or reusable technical release to QA as `event_outside_ai_industry_scope`.
+9. Preserve registered organization aliases found only in `title_original` as candidate mentions; promote them to verified only when an accepted Claim contains an exact alias for the same canonical organization.
 
 ## Boundaries
 

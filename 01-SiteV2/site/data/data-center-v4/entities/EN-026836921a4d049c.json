@@ -5,15 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-026836921a4d049c",
-    "name": "SK hynix",
+    "name": "SK Hynix",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -23,19 +23,21 @@
     ],
     "eventIds": [
       "EV-43b7f45e9bd7ec9b",
+      "EV-9de9231242b04509",
       "EV-a644b20d68e0b31a"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-11",
-    "lastSeen": "2026-08-04",
+    "lastSeen": "2026-09-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-43b7f45e9bd7ec9b"
       ],
       "deployments": [
+        "EV-9de9231242b04509",
         "EV-a644b20d68e0b31a"
       ],
       "partnerships": [],
@@ -45,6 +47,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-9de9231242b04509",
+        "dataDate": "2026-09-01",
+        "date": "2026-08-27",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SK海力士在印第安纳州投资40亿美元建设AI内存工厂",
+        "displayTags": [],
+        "entityIds": [
+          "EN-026836921a4d049c"
+        ]
+      },
       {
         "id": "EV-a644b20d68e0b31a",
         "dataDate": "2026-08-04",

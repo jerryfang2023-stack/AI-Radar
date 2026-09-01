@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-2df7697dbb612878",
@@ -22,17 +22,20 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-8ea4e403a1024ad2",
       "EV-7d684605d08584e2"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-14",
-    "lastSeen": "2026-08-14",
+    "lastSeen": "2026-09-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-8ea4e403a1024ad2"
+      ],
       "partnerships": [],
       "productsServices": [
         "EV-7d684605d08584e2"
@@ -42,6 +45,41 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8ea4e403a1024ad2",
+        "dataDate": "2026-09-01",
+        "date": "2026-08-31",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "工信部：加大大模型、智能体、Token 等服务采购力度",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-99ab66e520f71a9b",
+          "EN-2df7697dbb612878"
+        ]
+      },
       {
         "id": "EV-7d684605d08584e2",
         "dataDate": "2026-08-14",

@@ -5,13 +5,184 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "events": [
+    {
+      "id": "EV-3697ca2d5bfefff7",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "VC疯了！200万现金冠军奖，又花4000万造了一座AI「创业乌托邦」",
+      "originalTitle": "",
+      "subject": "德邻资本",
+      "action": "funding",
+      "object": "Delin Residency（德邻乌托邦）",
+      "metrics": [
+        "4000万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8ec0ceca62dd17f3"
+      ],
+      "entityNames": [
+        "德邻资本"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-9ced0bf763b57077",
+          "subject": "德邻资本",
+          "object": "Delin Residency（德邻乌托邦）",
+          "quote": "主办方 德邻资本 真正押上的，是斥资4000万打造的一座约4000平方米的 Delin Residency（德邻乌托邦） 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a358f9a0faa1ae3a",
+          "publisher": "量子位",
+          "url": "https://qbitai.com/2026/08/481928.html"
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/481928.html",
+      "publisher": "量子位",
+      "sourceExcerpt": "主办方 德邻资本 真正押上的，是斥资4000万打造的一座约4000平方米的 Delin Residency（德邻乌托邦） 。"
+    },
+    {
+      "id": "EV-93c2515d50157281",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Clipto用AI搜索海量视频，估值达2.5亿美元",
+      "originalTitle": "",
+      "subject": "Tencent",
+      "action": "acquisition",
+      "object": "Zenvideo",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "techcrunch-ai"
+        ],
+        "claim_refs": [
+          "CL-f8771c559762e13a"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-9c8ae69b84f21a2e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-9c8ae69b84f21a2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-9c8ae69b84f21a2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-f8771c559762e13a",
+          "subject": "Tencent",
+          "object": "Zenvideo",
+          "quote": "His second company, Zenvideo, focused on making video creation easier and was acquired by Tencent in 2020"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-934a4df80c23688d",
+          "publisher": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation",
+      "publisher": "TechCrunch：AI（RSS）",
+      "sourceExcerpt": "His second company, Zenvideo, focused on making video creation easier and was acquired by Tencent in 2020"
+    },
     {
       "id": "EV-086902ad904c1c90",
       "dataDate": "2026-08-31",
@@ -1191,6 +1362,271 @@
       "sourceExcerpt": "IT之家 8 月 27 日消息，据 Business Insider 今日报道， 英伟达一直在洽谈收购 Hugging Face ，可能达成英伟达迄今为止最大的交易之一。"
     },
     {
+      "id": "EV-c538fb9a61735afc",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-26",
+      "updatedDate": "2026-09-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
+      "originalTitle": "Viral AI startup Instinct has raised $350M at a $2.5B valuation",
+      "subject": "Viral AI startup Instinct",
+      "action": "raised",
+      "object": "$350M at a $2.5B valuation",
+      "metrics": [
+        "$350M",
+        "$2.5B",
+        "$250 million",
+        "$350 million",
+        "$2.5 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-8d8b8c50b8da244b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fc5f21257c657d42",
+            "fundingInsightId": "FI-8f6cee6b76d6fa79"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-8d8b8c50b8da244b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-40af37212ca83783",
+            "fundingInsightId": "FI-8f6cee6b76d6fa79"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-8d8b8c50b8da244b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-240d2c22cdacbd06",
+            "fundingInsightId": "FI-8f6cee6b76d6fa79"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-8d8b8c50b8da244b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d1a578cf88d63c78",
+            "fundingInsightId": "FI-8f6cee6b76d6fa79"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-8d8b8c50b8da244b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a22eac2809ad1c80",
+            "fundingInsightId": "FI-8f6cee6b76d6fa79"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc5f21257c657d42",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-40af37212ca83783",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-240d2c22cdacbd06",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a22eac2809ad1c80",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d1a578cf88d63c78",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fc5f21257c657d42",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-40af37212ca83783",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-240d2c22cdacbd06",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d1a578cf88d63c78",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-8d8b8c50b8da244b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a22eac2809ad1c80",
+          "fundingInsightId": "FI-8f6cee6b76d6fa79"
+        }
+      ],
+      "entityIds": [
+        "EN-8d8b8c50b8da244b"
+      ],
+      "entityNames": [
+        "Viral AI startup Instinct"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-0f12260b18f865d1",
+          "subject": "Viral AI startup Instinct",
+          "object": "$350M at a $2.5B valuation",
+          "quote": "Viral AI startup Instinct has raised $350M at a $2.5B valuation"
+        },
+        {
+          "id": "CL-97cca0453acc43b2",
+          "subject": "Viral AI startup Instinct",
+          "object": "$350M at a $2.5B valuation",
+          "quote": "The company, which offers an AI assistant that has inspired enthusiasm among its early users, told The Wall Street Journal on Wednesday that it had raised $250 million in a recent Series B funding round. That new round brings the company’s total funding to $350 million and gives the startup a valuation of $2.5 billion."
+        },
+        {
+          "id": "CL-380ac90429746d27",
+          "subject": "Viral AI startup Instinct",
+          "object": "$350M at a $2.5B valuation",
+          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-06505686c38a5577",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Viral AI startup Instinct has raised $350M at a $2.5B valuation"
+    },
+    {
       "id": "EV-6b668e4655192209",
       "dataDate": "2026-08-28",
       "date": "2026-08-26",
@@ -1423,271 +1859,6 @@
       "sourceUrl": "https://qbitai.com/2026/08/479895.html",
       "publisher": "量子位",
       "sourceExcerpt": "8月，AI 图像和视频生成平台Higgsfield完成 4 亿美元 B 轮融资"
-    },
-    {
-      "id": "EV-c538fb9a61735afc",
-      "dataDate": "2026-08-28",
-      "date": "2026-08-26",
-      "updatedDate": "2026-08-28",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
-      "originalTitle": "Viral AI startup Instinct has raised $350M at a $2.5B valuation",
-      "subject": "Viral AI startup Instinct",
-      "action": "raised",
-      "object": "$350M at a $2.5B valuation",
-      "metrics": [
-        "$350M",
-        "$2.5B",
-        "$250 million",
-        "$350 million",
-        "$2.5 billion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "enterprise_applications",
-            "name": "企业级应用",
-            "entityIds": [
-              "EN-8d8b8c50b8da244b"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-fc5f21257c657d42",
-            "fundingInsightId": "FI-8f6cee6b76d6fa79"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "productivity_enterprise_workflows",
-            "name": "生产力与企业工作流",
-            "entityIds": [
-              "EN-8d8b8c50b8da244b"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-40af37212ca83783",
-            "fundingInsightId": "FI-8f6cee6b76d6fa79"
-          }
-        ],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "end_user_application",
-            "name": "终端 AI 应用",
-            "entityIds": [
-              "EN-8d8b8c50b8da244b"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-240d2c22cdacbd06",
-            "fundingInsightId": "FI-8f6cee6b76d6fa79"
-          }
-        ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "productivity_enterprise_workflows",
-            "name": "生产力与企业工作流",
-            "entityIds": [
-              "EN-8d8b8c50b8da244b"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-d1a578cf88d63c78",
-            "fundingInsightId": "FI-8f6cee6b76d6fa79"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "consumer",
-            "name": "个人用户",
-            "entityIds": [
-              "EN-8d8b8c50b8da244b"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-a22eac2809ad1c80",
-            "fundingInsightId": "FI-8f6cee6b76d6fa79"
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "enterprise_applications",
-          "name": "企业级应用",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-fc5f21257c657d42",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-40af37212ca83783",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "end_user_application",
-          "name": "终端 AI 应用",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-240d2c22cdacbd06",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "consumer",
-          "name": "个人用户",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-a22eac2809ad1c80",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-d1a578cf88d63c78",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "enterprise_applications",
-          "name": "企业级应用",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-fc5f21257c657d42",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-40af37212ca83783",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "end_user_application",
-          "name": "终端 AI 应用",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-240d2c22cdacbd06",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-d1a578cf88d63c78",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "consumer",
-          "name": "个人用户",
-          "entityIds": [
-            "EN-8d8b8c50b8da244b"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-a22eac2809ad1c80",
-          "fundingInsightId": "FI-8f6cee6b76d6fa79"
-        }
-      ],
-      "entityIds": [
-        "EN-8d8b8c50b8da244b"
-      ],
-      "entityNames": [
-        "Viral AI startup Instinct"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-5250c8655ab4996c",
-          "subject": "Viral AI startup Instinct",
-          "object": "$350M at a $2.5B valuation",
-          "quote": "Viral AI startup Instinct has raised $350M at a $2.5B valuation"
-        },
-        {
-          "id": "CL-d772e7d741fd53b9",
-          "subject": "Viral AI startup Instinct",
-          "object": "$350M at a $2.5B valuation",
-          "quote": "The company, which offers an AI assistant that has inspired enthusiasm among its early users, told The Wall Street Journal on Wednesday that it had raised $250 million in a recent Series B funding round. That new round brings the company’s total funding to $350 million and gives the startup a valuation of $2.5 billion."
-        },
-        {
-          "id": "CL-ad28c0178b59a88d",
-          "subject": "Viral AI startup Instinct",
-          "object": "$350M at a $2.5B valuation",
-          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-02e6f08f9c8e66d0",
-          "publisher": "techcrunch.com",
-          "url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation"
-        }
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
-      "publisher": "techcrunch.com",
-      "sourceExcerpt": "Viral AI startup Instinct has raised $350M at a $2.5B valuation"
     },
     {
       "id": "EV-0ea2bbb7280091f2",
@@ -47135,7 +47306,7 @@
       ],
       "entityNames": [
         "SK Hynix 美国 IPO",
-        "SK hynix",
+        "SK Hynix",
         "Alibaba"
       ],
       "productName": "",
@@ -136709,9 +136880,9 @@
     },
     {
       "id": "EV-04b84c1f3430c055",
-      "dataDate": "2026-08-31",
-      "date": "2026-08-31",
-      "updatedDate": "2026-08-31",
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-01",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
       "eventGroup": "部署与案例",
@@ -136735,49 +136906,13 @@
         "ai_market_subcategory": [],
         "ai_market_application": [],
         "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "customer_support",
-            "name": "客户支持",
-            "entityIds": [
-              "EN-b3c2b1c099ddf347"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "use_case": [],
         "industry": [],
         "deployment_model": [],
         "target_user": []
       },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "customer_support",
-          "name": "客户支持",
-          "entityIds": [
-            "EN-b3c2b1c099ddf347"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "customer_support",
-          "name": "客户支持",
-          "entityIds": [
-            "EN-b3c2b1c099ddf347"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
+      "classifications": [],
+      "displayTags": [],
       "entityIds": [
         "EN-b3c2b1c099ddf347",
         "EN-f48a4090493d2b5e"
@@ -136790,16 +136925,10 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-08a9f582f32ac985",
+          "id": "CL-f56a98c3dd7dc579",
           "subject": "C3 Generative AI",
           "object": "select remote service operators",
           "quote": "A joint team of C3 AI developers and customer subject matter experts configured the application in less than 2 days and made available to select remote service operators."
-        },
-        {
-          "id": "CL-05633b27a634867a",
-          "subject": "C3 Generative AI",
-          "object": "field and customer service teams",
-          "quote": "During the 2-day deployment process, the team uploaded and indexed over forty equipment manuals, each 80-page documents, fine-tuned search performance, and added seventeen users to roll-out to the field and customer service teams."
         }
       ],
       "sources": [
@@ -136812,6 +136941,518 @@
       "sourceUrl": "https://c3.ai/customers/generative-ai-for-manufacturing",
       "publisher": "c3.ai",
       "sourceExcerpt": "A joint team of C3 AI developers and customer subject matter experts configured the application in less than 2 days and made available to select remote service operators."
+    },
+    {
+      "id": "EV-e34f71c639b7420a",
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-01",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "人工智能政府合同授予",
+      "originalTitle": "Artificial Intelligence Government Contract Awards",
+      "subject": "Department of Defense",
+      "action": "procurement_contract",
+      "object": "MORSECORP, INC",
+      "metrics": [
+        "$27.6 million",
+        "$4.3 million",
+        "$40.3 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c068051eb027b9f5",
+        "EN-aee7b9a633dddb09"
+      ],
+      "entityNames": [
+        "Department of Defense",
+        "Public Spend Forum"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-069378b702cf8292",
+          "subject": "Department of Defense",
+          "object": "MORSECORP, INC",
+          "quote": "The Department of Defense's $27.6 million definitive contract to MORSECORP, INC in April 2024 stands out as the largest recent federal AI award"
+        },
+        {
+          "id": "CL-dfa4e2b3bc3c0123",
+          "subject": "BAE Systems Information and Electronic Systems Integration Inc.",
+          "object": "Artificial Intelligence Command and Control (AIC2)",
+          "quote": "BAE Systems Information and Electronic Systems Integration Inc. received a $4.3 million definitive contract (#FA875024CB117) focused on AI Command and Control (AIC2)"
+        },
+        {
+          "id": "CL-a5c9f9f71386670f",
+          "subject": "Public Spend Forum, LLC",
+          "object": "AI-driven market intelligence",
+          "quote": "Public Spend Forum, LLC secured a $40.3 million multi-year IDV (#47QFSA22D0001) for AI-driven market intelligence"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c83beef90ae0822b",
+          "publisher": "app.govly.com",
+          "url": "https://app.govly.com/public/explore/awards/artificial-intelligence-awards"
+        }
+      ],
+      "sourceUrl": "https://app.govly.com/public/explore/awards/artificial-intelligence-awards",
+      "publisher": "app.govly.com",
+      "sourceExcerpt": "The Department of Defense's $27.6 million definitive contract to MORSECORP, INC in April 2024 stands out as the largest recent federal AI award"
+    },
+    {
+      "id": "EV-1a846b94337dd961",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "originalTitle": "",
+      "subject": "博通推出 VMware AI 工厂，简化企业私有云 AI",
+      "action": "部署",
+      "object": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-b9d3a6fa30af078e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-b9d3a6fa30af078e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-33dbfdc3b4b67b9d",
+        "EN-b9d3a6fa30af078e"
+      ],
+      "entityNames": [
+        "博通",
+        "VMware AI"
+      ],
+      "productName": "VMware AI",
+      "products": [
+        {
+          "name": "VMware AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-9d94b7330c4e0f6d",
+          "subject": "博通推出 VMware AI 工厂，简化企业私有云 AI",
+          "object": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署 - IT之家",
+          "quote": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署 - IT之家"
+        },
+        {
+          "id": "CL-0ec619a5ebda2450",
+          "subject": "博通推出 VMware AI 工厂，简化企业私有云 AI",
+          "object": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署",
+          "quote": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署"
+        },
+        {
+          "id": "CL-3a3366e576da8715",
+          "subject": "博通推出 VMware AI 工厂，简化企业私有云 AI",
+          "object": "新产品是 VMware AI 私有云的软件定义基础，通过一系列自动化创新功能为 AI 基础设施部署提供支持， 进而为客户提供更加简单的 AI 生产力部署路径 。",
+          "quote": "新产品是 VMware AI 私有云的软件定义基础，通过一系列自动化创新功能为 AI 基础设施部署提供支持， 进而为客户提供更加简单的 AI 生产力部署路径 。"
+        },
+        {
+          "id": "CL-0b9fbd4d3cdd4383",
+          "subject": "博通推出 VMware AI 工厂，简化企业私有云 AI",
+          "object": "据介绍，VMware AI 工厂可将 AI 应用直接部署到企业私有云环境。",
+          "quote": "据介绍，VMware AI 工厂可将 AI 应用直接部署到企业私有云环境。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-cd2483df51dfe671",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/680.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/680.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "博通推出 VMware AI 工厂，简化企业私有云 AI 部署 - IT之家"
+    },
+    {
+      "id": "EV-4db4d35b65e7f982",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英国AI公司修复公共服务竞赛获1亿英镑资助 - GOV.UK",
+      "originalTitle": "£100 million competition to back British AI companies to fix public services - GOV.UK",
+      "subject": "Government",
+      "action": "procurement_contract",
+      "object": "Sovereign AI R&D Procurement Scheme",
+      "metrics": [
+        "£100 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ab5e9e376f953917"
+      ],
+      "entityNames": [
+        "Government"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-b893b2c45de02127",
+          "subject": "Government",
+          "object": "Sovereign AI R&D Procurement Scheme",
+          "quote": "the Government today launches the first procurement competitions under its £100 million Sovereign AI R&D Procurement Scheme"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d8846650281ddb47",
+          "publisher": "gov.uk",
+          "url": "https://gov.uk/government/news/100-million-competition-to-back-british-ai-companies-to-fix-public-services"
+        }
+      ],
+      "sourceUrl": "https://gov.uk/government/news/100-million-competition-to-back-british-ai-companies-to-fix-public-services",
+      "publisher": "gov.uk",
+      "sourceExcerpt": "the Government today launches the first procurement competitions under its £100 million Sovereign AI R&D Procurement Scheme"
+    },
+    {
+      "id": "EV-7311986c33501189",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "摆脱对台积电依赖，LG 电子将委托三星代工 AI 家电芯片",
+      "originalTitle": "",
+      "subject": "LG 电子",
+      "action": "procurement_contract",
+      "object": "三星电子",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-75ff8ed66696684e",
+        "EN-968e2d5b08687bf4"
+      ],
+      "entityNames": [
+        "LG 电子",
+        "Samsung"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-05fb3c034a878b79",
+          "subject": "LG 电子",
+          "object": "三星电子",
+          "quote": "这些芯片将交由三星电子负责晶圆代工。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f9a7b1e61651b42d",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/564.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/564.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "这些芯片将交由三星电子负责晶圆代工。"
+    },
+    {
+      "id": "EV-8ea4e403a1024ad2",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "工信部：加大大模型、智能体、Token 等服务采购力度",
+      "originalTitle": "",
+      "subject": "工信部：加大大模型、智能体、Token 等服务",
+      "action": "采购",
+      "object": "力度",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-99ab66e520f71a9b",
+        "EN-2df7697dbb612878"
+      ],
+      "entityNames": [
+        "工信部",
+        "智能体"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-6bcddeab007ac39e",
+          "subject": "工信部：加大大模型、智能体、Token 等服务",
+          "object": "力度",
+          "quote": "工信部：加大大模型、智能体、Token 等服务采购力度 - IT之家"
+        },
+        {
+          "id": "CL-b4c210920111206f",
+          "subject": "工信部：加大大模型、智能体、Token 等服务",
+          "object": "力度",
+          "quote": "工信部：加大大模型、智能体、Token 等服务采购力度"
+        },
+        {
+          "id": "CL-f677a9791f4a755a",
+          "subject": "工信部：加大大模型、智能体、Token 等服务",
+          "object": "力度",
+          "quote": "探索通过首购首用、风险补偿等模式，加大大模型、智能体、Token 等服务采购力度，提升行业用模用智质效。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9802ecee750c4ff1",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/543.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/543.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "工信部：加大大模型、智能体、Token 等服务采购力度 - IT之家"
     },
     {
       "id": "EV-b1236dadc85894e4",
@@ -136889,9 +137530,9 @@
     },
     {
       "id": "EV-73c7062edbdf5d08",
-      "dataDate": "2026-08-31",
+      "dataDate": "2026-09-01",
       "date": "2026-08-29",
-      "updatedDate": "2026-08-31",
+      "updatedDate": "2026-09-01",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
       "eventGroup": "部署与案例",
@@ -137000,19 +137641,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-28954970681e0cca",
+          "id": "CL-1cd224b89f09ebc5",
           "subject": "AI本地",
           "object": "不如官方版的元凶找到了：734个依赖包，每一个都可能坑",
           "quote": "AI本地部署不如官方版的元凶找到了：734个依赖包，每一个都可能坑"
         },
         {
-          "id": "CL-0cc61595618c2c47",
+          "id": "CL-ae4d9634a99e4c03",
           "subject": "AI本地",
           "object": "不如官方版的元凶找到了：734个依赖包，每一个都可能坑",
           "quote": "辛辛苦苦本地部署的大模型，怎么就是比官方版更笨？"
         },
         {
-          "id": "CL-69ec5eb4d8227856",
+          "id": "CL-15e406978f6e268c",
           "subject": "AI本地",
           "object": "不如官方版的元凶找到了：734个依赖包，每一个都可能坑",
           "quote": "虽然你的本地部署很烂，但别伤心，其他人部署的各有不一样的烂法。"
@@ -137020,7 +137661,7 @@
       ],
       "sources": [
         {
-          "id": "SA-488708ee0e3d88fa",
+          "id": "SA-c4c71fd1c6810cfd",
           "publisher": "量子位",
           "url": "https://qbitai.com/2026/08/481372.html"
         }
@@ -137028,6 +137669,68 @@
       "sourceUrl": "https://qbitai.com/2026/08/481372.html",
       "publisher": "量子位",
       "sourceExcerpt": "AI本地部署不如官方版的元凶找到了：734个依赖包，每一个都可能坑"
+    },
+    {
+      "id": "EV-9de9231242b04509",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-27",
+      "updatedDate": "2026-09-01",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SK海力士在印第安纳州投资40亿美元建设AI内存工厂",
+      "originalTitle": "SK Hynix builds $4B AI memory plant in Indiana",
+      "subject": "SK Hynix",
+      "action": "hardware_deployment",
+      "object": "advanced packaging plant in Indiana",
+      "metrics": [
+        "$4 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-026836921a4d049c"
+      ],
+      "entityNames": [
+        "SK Hynix"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-615c788f1e7a0379",
+          "subject": "SK Hynix",
+          "object": "advanced packaging plant in Indiana",
+          "quote": "SK Hynix has commenced building a $4 billion advanced packaging plant in Indiana to address booming demand for high-bandwidth memory used in artificial intelligence systems."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-14d9461d63b23843",
+          "publisher": "briefs.co",
+          "url": "https://briefs.co/news/sk-hynix-begins-construction-of-4-billion-ai-memory-packagin"
+        }
+      ],
+      "sourceUrl": "https://briefs.co/news/sk-hynix-begins-construction-of-4-billion-ai-memory-packagin",
+      "publisher": "briefs.co",
+      "sourceExcerpt": "SK Hynix has commenced building a $4 billion advanced packaging plant in Indiana to address booming demand for high-bandwidth memory used in artificial intelligence systems."
     },
     {
       "id": "EV-61b1ddeb1e7b7043",
@@ -137842,6 +138545,123 @@
       "sourceUrl": "https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale",
       "publisher": "TechCrunch：AI（RSS）",
       "sourceExcerpt": "Anthropic has signed a deal to rent about $45 billion in AI compute from Nscale , a British AI infrastructure company, a source familiar with the deal told TechCrunch."
+    },
+    {
+      "id": "EV-f98b84fe16d57b72",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-25",
+      "updatedDate": "2026-09-01",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "企业部署AI于客户体验的速度，快于其让AI真正发挥作用的能力。",
+      "originalTitle": "Companies are deploying AI in customer experience faster than they can make it work",
+      "subject": "Companies",
+      "action": "deploying",
+      "object": "AI in customer experience faster than they can make it work",
+      "metrics": [
+        "98%",
+        "15%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-1701cfb023a18b15"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-1701cfb023a18b15"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-1701cfb023a18b15"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1701cfb023a18b15"
+      ],
+      "entityNames": [
+        "Companies"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fad93b76721635df",
+          "subject": "Companies",
+          "object": "AI in customer experience faster than they can make it work",
+          "quote": "Companies are deploying AI in customer experience faster than they can make it work"
+        },
+        {
+          "id": "CL-d554a3010f84bccb",
+          "subject": "Companies",
+          "object": "AI in customer experience faster than they can make it work",
+          "quote": "PALO ALTO, Calif., Aug. 25, 2026 (GLOBE NEWSWIRE) -- Talkdesk®, Inc. , a leader in Customer Experience Automation (CXA), today released “ The State of Agentic Automation in CX ” report, revealing that AI adoption has outpaced organizations’ ability to turn AI investments into business results. While 98% of organizations have deployed AI in their customer journey, only 15% combine agentic AI with cross-departmental orchestration to resolve customer needs end-to-end. This execution gap creates a dual cost for businesses — paying for isolated AI tools while also absorbing the operational expenses of unresolved customer requests."
+        },
+        {
+          "id": "CL-9ccc5b3385ca101a",
+          "subject": "Companies",
+          "object": "AI in customer experience faster than they can make it work",
+          "quote": "While companies rush to deploy AI, a lack of organizational readiness leaves workflows unfinished, turning promised efficiency into financial risk."
+        },
+        {
+          "id": "CL-ac3589c08f05196f",
+          "subject": "Companies",
+          "object": "AI in customer experience faster than they can make it work",
+          "quote": "Talkdesk commissioned NewtonX to conduct a global survey of more than 250 customer experience (CX), information technology (IT), operations, and AI strategy leaders at mid-market and enterprise organizations — to understand how businesses are adapting for a human-AI hybrid workforce. The research focused on leaders accountable for both customer outcomes and the systems and operating models behind them."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ec3760101369b8fa",
+          "publisher": "globenewswire.com",
+          "url": "https://globenewswire.com/news-release/2026/08/25/3350556/0/en/companies-are-deploying-ai-in-customer-experience-faster-than-they-can-make-it-work.html"
+        }
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/25/3350556/0/en/companies-are-deploying-ai-in-customer-experience-faster-than-they-can-make-it-work.html",
+      "publisher": "globenewswire.com",
+      "sourceExcerpt": "Companies are deploying AI in customer experience faster than they can make it work"
     },
     {
       "id": "EV-d80c43b35418e74d",
@@ -166235,6 +167055,104 @@
       "sourceExcerpt": "The General Services Administration has struck a new agentic artificial intelligence OneGov deal with CORAS"
     },
     {
+      "id": "EV-bf23c87d0aa1f205",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "范式与华为达成重磅算力战略合作，成为首批拥抱国产最高端算力底座的AI企业",
+      "originalTitle": "",
+      "subject": "范式与华为达成重磅算力战略",
+      "action": "合作",
+      "object": "，成为首批拥抱国产最高端算力底座的AI企业",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-qbitai-rss"
+        ],
+        "claim_refs": [
+          "CL-e4239a99fe2ec9c4",
+          "CL-6c01e8f1abd3dc99",
+          "CL-6cce71bd37ea9ab1",
+          "CL-c759bb50f23582f1"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-520f7bab7410f6eb",
+        "EN-b0c5789fc04bf94f",
+        "EN-b81c8201acfc7639"
+      ],
+      "entityNames": [
+        "范式",
+        "华为达成重磅算力战略",
+        "Huawei"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-e4239a99fe2ec9c4",
+          "subject": "范式与华为达成重磅算力战略",
+          "object": "，成为首批拥抱国产最高端算力底座的AI企业",
+          "quote": "范式与华为达成重磅算力战略合作，成为首批拥抱国产最高端算力底座的AI企业"
+        },
+        {
+          "id": "CL-6c01e8f1abd3dc99",
+          "subject": "范式与华为达成重磅算力战略",
+          "object": "，成为首批拥抱国产最高端算力底座的AI企业",
+          "quote": "据悉，双方已达成关于昇腾950芯片的重磅级算力战略合作，范式将成为首批拥抱国产最高端算力的AI企业。"
+        },
+        {
+          "id": "CL-6cce71bd37ea9ab1",
+          "subject": "范式与华为达成重磅算力战略",
+          "object": "，成为首批拥抱国产最高端算力底座的AI企业",
+          "quote": "算力是当前国内AI业务的核心基石，华为作为国产算力绝对龙头，此次双方在算力底座上的深度合作，是对范式主营业务具有决定性意义的战略赋能。"
+        },
+        {
+          "id": "CL-c759bb50f23582f1",
+          "subject": "范式与华为达成重磅算力战略",
+          "object": "，成为首批拥抱国产最高端算力底座的AI企业",
+          "quote": "首先，面对潜在的境外算力不确定性及国产算力全面崛起的大趋势，此次合作是范式极具前瞻性的“超前部署”。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ec5c464b8c5bb53e",
+          "publisher": "量子位",
+          "url": "https://qbitai.com/2026/08/481919.html"
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/481919.html",
+      "publisher": "量子位",
+      "sourceExcerpt": "范式与华为达成重磅算力战略合作，成为首批拥抱国产最高端算力底座的AI企业"
+    },
+    {
       "id": "EV-d2247eeac1478994",
       "dataDate": "2026-08-29",
       "date": "2026-08-29",
@@ -184376,6 +185294,859 @@
       "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
     },
     {
+      "id": "EV-6e9a64dce695ae7e",
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-01",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Keenable AI 开源 NEEDLE：每小时重建查询集的实时搜索基准",
+      "originalTitle": "",
+      "subject": "Keenable",
+      "action": "model_release",
+      "object": "NEEDLE",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-53cd2ae89e9ee2f1",
+        "EN-5326805dc305fa71",
+        "EN-16051d78b4ed23ba"
+      ],
+      "entityNames": [
+        "Keenable AI",
+        "Keenable",
+        "NEEDLE"
+      ],
+      "productName": "NEEDLE",
+      "products": [
+        {
+          "name": "NEEDLE",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-c53c7b41a7704485",
+          "subject": "Keenable",
+          "object": "NEEDLE",
+          "quote": "Keenable’s answer is NEEDLE , a live open-source benchmark that rebuilds its query set from fresh public sources rather than freezing one."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-6a1372607f0427b1",
+          "publisher": "MarkTechPost（RSS）",
+          "url": "https://marktechpost.com/2026/08/31/keenable-ai-open-sources-needle-a-live-search-benchmark-that-rebuilds-its-query-set-every-hour"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/08/31/keenable-ai-open-sources-needle-a-live-search-benchmark-that-rebuilds-its-query-set-every-hour",
+      "publisher": "MarkTechPost（RSS）",
+      "sourceExcerpt": "Keenable’s answer is NEEDLE , a live open-source benchmark that rebuilds its query set from fresh public sources rather than freezing one."
+    },
+    {
+      "id": "EV-c728a9809f57bba8",
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.252 发布，修复 Bash 报错、always allow 未保存等多项问题",
+      "originalTitle": "",
+      "subject": "Claude Code",
+      "action": "发布",
+      "object": "，修复 Bash 报错、always allow 未保存等多项问题",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-a625159d18da5718"
+      ],
+      "entityNames": [
+        "Claude Code"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-db876dc1812ca575",
+          "subject": "Claude Code",
+          "object": "v2.1.252",
+          "quote": "v2.1.252"
+        },
+        {
+          "id": "CL-5b7a270fc81c6367",
+          "subject": "Claude Code",
+          "object": "Fixed Bash commands failing with \"task output swap refused (tasks dir moved or linked)\" on some Macs",
+          "quote": "Fixed Bash commands failing with \"task output swap refused (tasks dir moved or linked)\" on some Macs"
+        },
+        {
+          "id": "CL-206b834e6ac5eca1",
+          "subject": "Claude Code",
+          "object": "Fixed \"always allow\" not saving in a project that has no .claude/settings.local.json yet",
+          "quote": "Fixed \"always allow\" not saving in a project that has no .claude/settings.local.json yet"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7ba2075228f05c4e",
+          "publisher": "Claude Code：GitHub Releases（RSS）",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.252"
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.252",
+      "publisher": "Claude Code：GitHub Releases（RSS）",
+      "sourceExcerpt": "v2.1.252"
+    },
+    {
+      "id": "EV-15d30aa24446fb79",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面",
+      "originalTitle": "",
+      "subject": "Runway",
+      "action": "发布 Solaris：首个界面世界模型",
+      "object": "，实时生成操作系统级交互界面",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ae679821f0649c15",
+        "EN-2250ee20de07de60"
+      ],
+      "entityNames": [
+        "Runway",
+        "Solaris"
+      ],
+      "productName": "Solaris",
+      "products": [
+        {
+          "name": "Solaris",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-6672c03bfb8a9778",
+          "subject": "Runway",
+          "object": "Solaris",
+          "quote": "Today, we're sharing Solaris : the first model in a new family of AI systems we call Interface World Models ."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-0c0bbb5541f304d7",
+          "publisher": "Runway：News（网页）",
+          "url": "https://runwayml.com/news/research/introducing-solaris"
+        }
+      ],
+      "sourceUrl": "https://runwayml.com/news/research/introducing-solaris",
+      "publisher": "Runway：News（网页）",
+      "sourceExcerpt": "Today, we're sharing Solaris : the first model in a new family of AI systems we call Interface World Models ."
+    },
+    {
+      "id": "EV-53957f94b3924ad3",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google Research 发布 TimesFM-3 零样本多变量时间序列预测基础模型",
+      "originalTitle": "",
+      "subject": "Google Research",
+      "action": "发布 TimesFM-3 零样本多变量时间序列预测基础模型",
+      "object": "Google Research 发布 TimesFM-3 零样本多变量时间序列预测基础模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-35e36dc1a5213fa3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-35e36dc1a5213fa3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-35e36dc1a5213fa3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-35e36dc1a5213fa3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-35e36dc1a5213fa3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-35e36dc1a5213fa3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-35e36dc1a5213fa3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-35e36dc1a5213fa3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-35e36dc1a5213fa3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-35e36dc1a5213fa3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-35e36dc1a5213fa3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-35e36dc1a5213fa3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-35e36dc1a5213fa3",
+        "EN-bbdefa2950f49882",
+        "EN-e4a3c8023742fec4",
+        "EN-e3db3da2b7dc6057"
+      ],
+      "entityNames": [
+        "Google Research",
+        "Google",
+        "TimesFM-3",
+        "Research"
+      ],
+      "productName": "TimesFM-3",
+      "products": [
+        {
+          "name": "TimesFM-3",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Research",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-06d3eca0ea148651",
+          "subject": "Google Research",
+          "object": "We introduce TimesFM-3, a state-of-the-art time series foundation model that enables highly accurate multivariate time series forecasting in a single forward pass, significantly outperforming other forecasting models across major benchmarks.",
+          "quote": "We introduce TimesFM-3, a state-of-the-art time series foundation model that enables highly accurate multivariate time series forecasting in a single forward pass, significantly outperforming other forecasting models across major benchmarks."
+        },
+        {
+          "id": "CL-72c327763df79492",
+          "subject": "Google Research",
+          "object": "Since the debut of TimesFM in 2024, we’ve seen the adoption of time-series foundation models for real-world time-series forecasting tasks across multiple domains, such as retail, finance, observability, manufacturing, healthcare and natural sciences .",
+          "quote": "Since the debut of TimesFM in 2024, we’ve seen the adoption of time-series foundation models for real-world time-series forecasting tasks across multiple domains, such as retail, finance, observability, manufacturing, healthcare and natural sciences ."
+        },
+        {
+          "id": "CL-bf0d22be8527381c",
+          "subject": "Google Research",
+          "object": "Up until TimesFM-2.5 (released in September 2025), our models were strictly limited to univariate forecasting: forecasting using only the history of a single time series. Yet, most real-world forecasting problems are inherently multivariate: where multiple time series and auxiliary external features jointly impact the future forecast of a time series. Consider forecasting ice cream sales for a retail chain. Past sales alone rarely tell the full story. A good forecast should also draw on sales of related products (e.g., ice cream cones, syrups), historical foot traffic, and known future events like weather forecasts, promotions, and holidays.",
+          "quote": "Up until TimesFM-2.5 (released in September 2025), our models were strictly limited to univariate forecasting: forecasting using only the history of a single time series. Yet, most real-world forecasting problems are inherently multivariate: where multiple time series and auxiliary external features jointly impact the future forecast of a time series. Consider forecasting ice cream sales for a retail chain. Past sales alone rarely tell the full story. A good forecast should also draw on sales of related products (e.g., ice cream cones, syrups), historical foot traffic, and known future events like weather forecasts, promotions, and holidays."
+        },
+        {
+          "id": "CL-af7271b28fd32721",
+          "subject": "Google Research",
+          "object": "Ayush Jain and Rajat Sen, Research Scientists, Google Research",
+          "quote": "Ayush Jain and Rajat Sen, Research Scientists, Google Research"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-258e53ce01ae0179",
+          "publisher": "Google Research：Blog（网页）",
+          "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting"
+        }
+      ],
+      "sourceUrl": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting",
+      "publisher": "Google Research：Blog（网页）",
+      "sourceExcerpt": "We introduce TimesFM-3, a state-of-the-art time series foundation model that enables highly accurate multivariate time series forecasting in a single forward pass, significantly outperforming other forecasting models across major benchmarks."
+    },
+    {
+      "id": "EV-9fc30c0818be6664",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenShot 4.0 发布：新增录制、调色与本地 AI 遮罩功能",
+      "originalTitle": "",
+      "subject": "OpenShot 4.0",
+      "action": "发布",
+      "object": "：新增录制、调色与本地 AI 遮罩功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-832903f14b31ec6b",
+        "EN-e052fa101a77cf7c"
+      ],
+      "entityNames": [
+        "OpenShot 4.0",
+        "Color Grade effect"
+      ],
+      "productName": "OpenShot 4.0",
+      "products": [
+        {
+          "name": "OpenShot 4.0",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Color Grade effect",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-16badfcd150c4b3d",
+          "subject": "OpenShot 4.0",
+          "object": "：新增录制、调色与本地 AI 遮罩功能",
+          "quote": "You do not need to be a professional colorist to get started. Right-click a video clip and choose Look > Adjust Colors . OpenShot adds the new Color Grade effect, selects it, and opens the tools you need. You can begin with a quick adjustment and learn the more advanced controls at your own pace."
+        },
+        {
+          "id": "CL-ccb5b882bc2f8c93",
+          "subject": "OpenShot 4.0",
+          "object": "：新增录制、调色与本地 AI 遮罩功能",
+          "quote": "OpenShot 4.0 adds ten effects to the underlying video engine. Some solve everyday problems, while others make entirely new creative workflows possible."
+        },
+        {
+          "id": "CL-d47cb19a45652613",
+          "subject": "OpenShot 4.0",
+          "object": "：新增录制、调色与本地 AI 遮罩功能",
+          "quote": "Add a few positive points on the subject and negative points on the surrounding area. OpenShot generates a detailed selection preview, then follows that mask through the clip. Add more prompts on difficult frames when the subject changes shape or becomes hidden."
+        },
+        {
+          "id": "CL-8d02ab70c3c1ea9c",
+          "subject": "OpenShot 4.0",
+          "object": "：新增录制、调色与本地 AI 遮罩功能",
+          "quote": "A major-version release is not only about what appears on the screen today. OpenShot 4.0 includes a large modernization effort across the user interface, build system, packaging, and underlying C++ libraries."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-fd75d698d0e9b4fc",
+          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before"
+        }
+      ],
+      "sourceUrl": "https://openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceExcerpt": "You do not need to be a professional colorist to get started. Right-click a video clip and choose Look > Adjust Colors . OpenShot adds the new Color Grade effect, selects it, and opens the tools you need. You can begin with a quick adjustment and learn the more advanced controls at your own pace."
+    },
+    {
+      "id": "EV-dccd93eb171a6aa4",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Instagram 推出全新\"AI 生成个人资料\"标签，整治 AI 虚假账号",
+      "originalTitle": "",
+      "subject": "Instagram",
+      "action": "推出",
+      "object": "全新\"AI 生成个人资料\"标签，整治 AI 虚假账号",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5ede56738376a8c5"
+      ],
+      "entityNames": [
+        "Instagram"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-043c1762664cda26",
+          "subject": "Instagram",
+          "object": "全新\"AI 生成个人资料\"标签，整治 AI 虚假账号",
+          "quote": "整治 AI 虚假账号，Instagram 推出全新 AI 个人资料标签 - IT之家"
+        },
+        {
+          "id": "CL-49c6f6654341c952",
+          "subject": "Instagram",
+          "object": "全新\"AI 生成个人资料\"标签，整治 AI 虚假账号",
+          "quote": "整治 AI 虚假账号，Instagram 推出全新 AI 个人资料标签"
+        },
+        {
+          "id": "CL-463b6474234b260a",
+          "subject": "Instagram",
+          "object": "全新\"AI 生成个人资料\"标签，整治 AI 虚假账号",
+          "quote": "IT之家 8 月 31 日消息，社交媒体 Instagram 今天宣布将原本的“AI 创作者”标签更新为“AI 生成个人资料”，使用户能够一眼分辨出眼前的创作者究竟是真人，还是 AI 生成的虚假人物。"
+        },
+        {
+          "id": "CL-0cc29821db22c19f",
+          "subject": "Instagram",
+          "object": "全新\"AI 生成个人资料\"标签，整治 AI 虚假账号",
+          "quote": "IT之家了解到， 该标签适用于高度拟真且从未主动披露虚拟身份的 AI 生成账号 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b4c3f630cec28c04",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/679.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/679.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "整治 AI 虚假账号，Instagram 推出全新 AI 个人资料标签 - IT之家"
+    },
+    {
+      "id": "EV-e4552a80d406645e",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "智谱披露下一代大模型规划：采用大基座路线，目标发布首日即可支持满规模业务调用",
+      "originalTitle": "",
+      "subject": "智谱披露下一代大模型规划：采用大基座路线，目标",
+      "action": "发布",
+      "object": "首日即可支持满规模业务调用",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-8e55e66ee71f73d4",
+          "CL-e4f521bb3a8721a4",
+          "CL-3c280bb019108552"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-1d79127e9d90e89b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-1d79127e9d90e89b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-1d79127e9d90e89b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1d79127e9d90e89b"
+      ],
+      "entityNames": [
+        "智谱AI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-8e55e66ee71f73d4",
+          "subject": "智谱披露下一代大模型规划：采用大基座路线，目标",
+          "object": "首日即可支持满规模业务调用",
+          "quote": "IT之家 8 月 31 日消息，据科创板日报报道，智谱今日在 2026 年半年度业绩发布会上，对外透露下一代大模型研发进展。"
+        },
+        {
+          "id": "CL-e4f521bb3a8721a4",
+          "subject": "智谱披露下一代大模型规划：采用大基座路线，目标",
+          "object": "首日即可支持满规模业务调用",
+          "quote": "公司现已针对下一代模型开展推理侧预研， 目标实现模型发布首日即可支持满规模业务调用 ，避免出现“模型规模大但难以实际应用”的问题。"
+        },
+        {
+          "id": "CL-3c280bb019108552",
+          "subject": "智谱披露下一代大模型规划：采用大基座路线，目标",
+          "object": "首日即可支持满规模业务调用",
+          "quote": "据IT之家此前报道，智谱今日发布 2026 财年（2026 年 1 月～2026 年 12 月）半年报（2026 年 1 月～2026 年 6 月）报告："
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-62934dc339d78861",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/649.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/649.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 8 月 31 日消息，据科创板日报报道，智谱今日在 2026 年半年度业绩发布会上，对外透露下一代大模型研发进展。"
+    },
+    {
+      "id": "EV-e9b6c8b13cd12e47",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenClaw 2.0 带来简化设置、重建的浏览器应用及多人会话功能",
+      "originalTitle": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions",
+      "subject": "OpenClaw",
+      "action": "product_release",
+      "object": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-96a4bc2602655473"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-96a4bc2602655473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-96a4bc2602655473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-96a4bc2602655473"
+      ],
+      "entityNames": [
+        "OpenClaw"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-f3e4ac1aa07c90e2",
+          "subject": "OpenClaw",
+          "object": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions",
+          "quote": "The OpenClaw Foundation has released version 2.0 of its open-source AI platform. It's the project's largest release to date with over 16,000 pull requests, adding shared cloud sessions, a streamlined onboarding process, and a browser app rebuilt from scratch."
+        },
+        {
+          "id": "CL-64c8a94113d747a8",
+          "subject": "OpenClaw",
+          "object": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions",
+          "quote": "Version 2.0 is the largest OpenClaw release so far, and the biggest change is a simplified first-run setup. The software now detects existing resources on the computer, including ChatGPT or Claude subscriptions, API keys, and local models, which cuts out many of the configuration steps users previously had to deal with. Additional settings can be adjusted later during a conversation with the bot."
+        },
+        {
+          "id": "CL-5c828463dee42b5e",
+          "subject": "OpenClaw",
+          "object": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions",
+          "quote": "The browser app is rebuilt from scratch"
+        },
+        {
+          "id": "CL-3d01028a14078dc6",
+          "subject": "OpenClaw",
+          "object": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions",
+          "quote": "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-18134b8f4cfe325a",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions",
+      "publisher": "The Decoder AI News",
+      "sourceExcerpt": "The OpenClaw Foundation has released version 2.0 of its open-source AI platform. It's the project's largest release to date with over 16,000 pull requests, adding shared cloud sessions, a streamlined onboarding process, and a browser app rebuilt from scratch."
+    },
+    {
       "id": "EV-03992c9b7f8fef10",
       "dataDate": "2026-08-31",
       "date": "2026-08-31",
@@ -184512,6 +186283,76 @@
       "sourceUrl": "https://ithome.com/0/996/340.htm",
       "publisher": "IT之家",
       "sourceExcerpt": "荣耀今日发布 MagicOS 11 提前剧透第四弹 ——AI 窥屏防护覆盖超多机型"
+    },
+    {
+      "id": "EV-e5883e1e8f305b67",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-30",
+      "updatedDate": "2026-09-01",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Mac mini 和 Mac Studio 的企业 AI 需求让苹果措手不及",
+      "originalTitle": "",
+      "subject": "Apple",
+      "action": "hardware_product",
+      "object": "Mac mini and Mac Studio",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29",
+        "EN-fc2dd90a306ec0ba"
+      ],
+      "entityNames": [
+        "Apple",
+        "Mac Studio"
+      ],
+      "productName": "Mac Studio",
+      "products": [
+        {
+          "name": "Mac Studio",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "Apple"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-3542306d471d40f0",
+          "subject": "Apple",
+          "object": "Mac mini and Mac Studio",
+          "quote": "Apple's unusually timed announcement of new Mac mini and Mac Studio models this week was driven by unexpectedly strong enterprise appetite for AI hardware, according to The Information ."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5bb29279d886375f",
+          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand"
+        }
+      ],
+      "sourceUrl": "https://macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceExcerpt": "Apple's unusually timed announcement of new Mac mini and Mac Studio models this week was driven by unexpectedly strong enterprise appetite for AI hardware, according to The Information ."
     },
     {
       "id": "EV-082a9cdae7904aac",
@@ -192451,6 +194292,112 @@
       "sourceUrl": "https://ithome.com/0/994/319.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "谷歌杀入法律 AI 赛道，推出专用 Gemini 工具 - IT之家"
+    },
+    {
+      "id": "EV-93cb2a7faf07bd35",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-25",
+      "updatedDate": "2026-09-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "苹果推出搭载M5 Max和M5 Ultra的Mac Studio",
+      "originalTitle": "Apple introduces Mac Studio with M5 Max and M5 Ultra",
+      "subject": "Apple",
+      "action": "introduces",
+      "object": "Mac Studio with M5 Max and M5 Ultra",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29",
+        "EN-fc2dd90a306ec0ba",
+        "EN-d311d9f4fe0d6194",
+        "EN-8eb41e77bd5d6022"
+      ],
+      "entityNames": [
+        "Apple",
+        "Mac Studio",
+        "M5 Max",
+        "M5 Ultra"
+      ],
+      "productName": "Mac Studio",
+      "products": [
+        {
+          "name": "Mac Studio",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Apple"
+          ]
+        },
+        {
+          "name": "M5 Max",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Apple"
+          ]
+        },
+        {
+          "name": "M5 Ultra",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Apple"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-53a777a65aabc337",
+          "subject": "Apple",
+          "object": "Mac Studio with M5 Max and M5 Ultra",
+          "quote": "Apple introduces new Mac Studio with M5 Max and M5 Ultra — the ultimate desktop for on‑device AI and the most extreme pro workflows"
+        },
+        {
+          "id": "CL-214378b2cc2d4715",
+          "subject": "Apple",
+          "object": "Mac Studio with M5 Max and M5 Ultra",
+          "quote": "Apple unveils the new Mac Studio, the most powerful Mac ever, featuring M5 Max and M5 Ultra."
+        },
+        {
+          "id": "CL-d247c6e741047540",
+          "subject": "Apple",
+          "object": "Mac Studio with M5 Max and M5 Ultra",
+          "quote": "Mac Studio is also a powerful platform for the rich ecosystem of tools AI researchers and developers rely on every day, utilizing the advanced frameworks in macOS. Core AI is a brand-new framework for building, running, and deploying AI models on Apple silicon. It provides an architecture optimized for Apple silicon, including unified memory, CPU, GPU, and Neural Engine, allowing developers to deploy full-scale LLMs locally and bring their own custom models into their apps. MLX, Apple’s open-source machine learning framework optimized for Apple silicon, enables developers to run, train, and fine-tune models with exceptional efficiency on Mac. In addition to these powerful frameworks, combine…"
+        },
+        {
+          "id": "CL-9ec48ca86fe79b68",
+          "subject": "Apple",
+          "object": "Mac Studio with M5 Max and M5 Ultra",
+          "quote": "Apple introduces new Mac Studio with M5 Max and M5 Ultra — the ultimate desktop for on‑device AI and the most extreme pro workflows"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-dfbd63e23c63222d",
+          "publisher": "apple.com",
+          "url": "https://apple.com/gn/newsroom/2026/08/apple-introduces-mac-studio-with-m5-max-and-m5-ultra"
+        }
+      ],
+      "sourceUrl": "https://apple.com/gn/newsroom/2026/08/apple-introduces-mac-studio-with-m5-max-and-m5-ultra",
+      "publisher": "apple.com",
+      "sourceExcerpt": "Apple introduces new Mac Studio with M5 Max and M5 Ultra — the ultimate desktop for on‑device AI and the most extreme pro workflows"
     },
     {
       "id": "EV-52c6ed0bb40311d1",
@@ -336741,6 +338688,799 @@
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
     },
     {
+      "id": "EV-d5d985325a1baacb",
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-01",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "CX服务商今秋引领智能体CX发展步伐",
+      "originalTitle": "CX Providers Set the Pace for Agentic CX This Fall",
+      "subject": "Twilio",
+      "action": "research_result",
+      "object": "78% of consumers have tried to bypass an AI agent to reach a human",
+      "metrics": [
+        "78%",
+        "63%",
+        "47%",
+        "80%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-89d01c9ba73cb5c4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-89d01c9ba73cb5c4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-89d01c9ba73cb5c4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-89d01c9ba73cb5c4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-89d01c9ba73cb5c4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-89d01c9ba73cb5c4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-89d01c9ba73cb5c4",
+        "EN-07f4ddd0d7e395b3",
+        "EN-16b560867db9e4fc",
+        "EN-21ea839060bb01ad"
+      ],
+      "entityNames": [
+        "Twilio",
+        "CX Providers Set",
+        "CX This Fall",
+        "Pace for Agentic CX"
+      ],
+      "productName": "CX Providers Set",
+      "products": [
+        {
+          "name": "CX Providers Set",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "CX This Fall",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Pace for Agentic CX",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-62a3220f36ca005b",
+          "subject": "Twilio",
+          "object": "78% of consumers have tried to bypass an AI agent to reach a human",
+          "quote": "According to the company, 78% of consumers have tried to bypass an AI agent to reach a human, and 63% want an easy way to escalate at any point in a conversation — yet only 47% of brands currently offer one."
+        },
+        {
+          "id": "CL-f66c2a9f4fdc342e",
+          "subject": "Twilio",
+          "object": "80% of consumers report a negative AI experience",
+          "quote": "Twilio found 80% of consumers report a negative AI experience, and when an agent can't resolve an issue, it burns an average of 81 seconds before finally escalating."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-67647e5e195bfdcb",
+          "publisher": "cmswire.com",
+          "url": "https://cmswire.com/customer-experience/cx-providers-set-the-pace-for-agentic-cx-this-fall"
+        }
+      ],
+      "sourceUrl": "https://cmswire.com/customer-experience/cx-providers-set-the-pace-for-agentic-cx-this-fall",
+      "publisher": "cmswire.com",
+      "sourceExcerpt": "According to the company, 78% of consumers have tried to bypass an AI agent to reach a human, and 63% want an easy way to escalate at any point in a conversation — yet only 47% of brands currently offer one."
+    },
+    {
+      "id": "EV-1fd2dfea0a3f7322",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "快手：国家人工智能基金向北京可灵注入现金资本14亿元",
+      "originalTitle": "",
+      "subject": "Charoen Pokphand Robot Limited（正大机器人）",
+      "action": "capital_investment",
+      "object": "北京可灵",
+      "metrics": [
+        "14 亿",
+        "1929 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8abe43a7f9a7bd94",
+        "EN-8073c2660ad5c348"
+      ],
+      "entityNames": [
+        "Kuaishou",
+        "国家人工智能基金"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-e5a982a951ec224f",
+          "subject": "Charoen Pokphand Robot Limited（正大机器人）",
+          "object": "北京可灵",
+          "quote": "国家人工智能基金及正大机器人各自同意作为额外投资者成为增资协议的订约方，并分别向北京可灵 注入现金资本人民币 14 亿元 及约 1929 万美元"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e94542969fc5a10b",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/663.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/663.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "国家人工智能基金及正大机器人各自同意作为额外投资者成为增资协议的订约方，并分别向北京可灵 注入现金资本人民币 14 亿元 及约 1929 万美元"
+    },
+    {
+      "id": "EV-42b3196bf09fe88d",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "更好的AI软件推动电力和配送支出增长",
+      "originalTitle": "Better AI software drives spending on power and delivery",
+      "subject": "Salesforce",
+      "action": "financial_performance",
+      "object": "Agentforce annual recurring revenue reached $1.5 billion",
+      "metrics": [
+        "$1.5 billion",
+        "30%",
+        "40%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "entityNames": [
+        "Salesforce"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-739f9af165a16f94",
+          "subject": "Salesforce",
+          "object": "Agentforce annual recurring revenue reached $1.5 billion",
+          "quote": "Salesforce told the market its Agentforce annual recurring revenue has reached $1.5 billion"
+        },
+        {
+          "id": "CL-b4fa7e25b8992f49",
+          "subject": "Okta",
+          "object": "AI-driven identity products generated about 30% of new bookings in the quarter",
+          "quote": "Okta said its AI-driven identity products generated about 30% of new bookings in the quarter"
+        },
+        {
+          "id": "CL-1804dc2e267888f6",
+          "subject": "Okta",
+          "object": "deals including AI-driven identity products lifted average contract values by roughly 40%",
+          "quote": "deals including them lifted average contract values by roughly 40%"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5b35f4664f161c83",
+          "publisher": "marketscale.com",
+          "url": "https://marketscale.com/industries/software-and-technology/better-ai-software-is-driving-up-spending-on-power-partners-and-delivery"
+        }
+      ],
+      "sourceUrl": "https://marketscale.com/industries/software-and-technology/better-ai-software-is-driving-up-spending-on-power-partners-and-delivery",
+      "publisher": "marketscale.com",
+      "sourceExcerpt": "Salesforce told the market its Agentforce annual recurring revenue has reached $1.5 billion"
+    },
+    {
+      "id": "EV-4a982ba6f291ddec",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "hardware_supply",
+      "eventTypeLabel": "硬件供应",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI及竞争对手AI实验室正购买数万台Mac mini以训练计算机使用智能体",
+      "originalTitle": "OpenAI and rival AI labs are buying tens of thousands of Mac minis to train computer-use agents",
+      "subject": "OpenAI",
+      "action": "hardware_supply",
+      "object": "tens of thousands of Mac minis and Mac Studios",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Anthropic",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-eee3d2fabc32a1f5",
+          "subject": "OpenAI",
+          "object": "tens of thousands of Mac minis and Mac Studios",
+          "quote": "OpenAI has purchased tens of thousands of Mac minis and Mac Studios to train computer agents"
+        },
+        {
+          "id": "CL-dce7c3bc960bbf1e",
+          "subject": "Anthropic",
+          "object": "Apple hardware",
+          "quote": "Anthropic also relies on Apple hardware"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-11f8f85bcebc8e04",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/openai-and-rival-ai-labs-are-buying-tens-of-thousands-of-mac-minis-to-train-computer-use-agents"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/openai-and-rival-ai-labs-are-buying-tens-of-thousands-of-mac-minis-to-train-computer-use-agents",
+      "publisher": "The Decoder AI News",
+      "sourceExcerpt": "OpenAI has purchased tens of thousands of Mac minis and Mac Studios to train computer agents"
+    },
+    {
+      "id": "EV-81f1fd52e41d4664",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达35亿美元投资联发科，揭示其应对大型科技公司AI芯片扩张的计划",
+      "originalTitle": "Nvidia’s $3.5B MediaTek bet reveals its plan for tackling Big Tech’s AI chip buildout",
+      "subject": "Nvidia",
+      "action": "capital_investment",
+      "object": "MediaTek",
+      "metrics": [
+        "$3.5 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-ae8f8bd05a563562",
+          "subject": "Nvidia",
+          "object": "MediaTek",
+          "quote": "Nvidia is investing $3.5 billion into Taiwanese chipmaker MediaTek."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-40173ad17154b247",
+          "publisher": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout",
+      "publisher": "TechCrunch AI",
+      "sourceExcerpt": "Nvidia is investing $3.5 billion into Taiwanese chipmaker MediaTek."
+    },
+    {
+      "id": "EV-88a23844556ed7be",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "欧盟将 ChatGPT、Reddit、Roblox 纳入《数字服务法》监管范围",
+      "originalTitle": "",
+      "subject": "欧盟将 ChatGPT、Reddit、Roblox 纳入《数字服务法》",
+      "action": "监管",
+      "object": "范围",
+      "metrics": [
+        "4500 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1f42df8956eb0723",
+        "EN-1706429cbf67f1c9",
+        "EN-2e183f2a7a70de1c",
+        "EN-d36e5a1a7a3c45ce"
+      ],
+      "entityNames": [
+        "欧盟将 ChatGPT",
+        "European Union",
+        "Reddit",
+        "Roblox"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a4aa33617594d574",
+          "subject": "欧盟将 ChatGPT、Reddit、Roblox 纳入《数字服务法》",
+          "object": "范围",
+          "quote": "IT之家 8 月 31 日消息，欧盟委员会当地时间 8 月 31 日宣布，依据《数字服务法》（DSA），正式认定 ChatGPT、Reddit 及 Roblox 为监管对象。"
+        },
+        {
+          "id": "CL-9bca33e0c20216af",
+          "subject": "欧盟将 ChatGPT、Reddit、Roblox 纳入《数字服务法》",
+          "object": "范围",
+          "quote": "IT之家注：根据《数字服务法》，一旦被列入超大型在线平台或超大型在线搜索引擎名单， 相关企业就必须遵守欧盟规定的一系列更严格的规则和义务 ，包括风险评估、内容审核、透明度报告以及其他监管要求。"
+        },
+        {
+          "id": "CL-c5318d4a4eebc8bf",
+          "subject": "欧盟将 ChatGPT、Reddit、Roblox 纳入《数字服务法》",
+          "object": "范围",
+          "quote": "欧盟委员会表示， 上述服务在欧盟境内的月均活跃用户数已达 4500 万人以上 ，达到法定的认定门槛；将 ChatGPT 认定为超大型在线搜索引擎，并将 Reddit 与 Roblox 认定为超大型在线平台。"
+        },
+        {
+          "id": "CL-b7ec22b7964aaad8",
+          "subject": "欧盟将 ChatGPT、Reddit、Roblox 纳入《数字服务法》",
+          "object": "范围",
+          "quote": "欧盟委员会称，ChatGPT 属于人工智能系统，能够与用户交互并响应其提示词和查询请求（包括执行网络检索）。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-8fa9cb804a717703",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/607.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/607.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 8 月 31 日消息，欧盟委员会当地时间 8 月 31 日宣布，依据《数字服务法》（DSA），正式认定 ChatGPT、Reddit 及 Roblox 为监管对象。"
+    },
+    {
+      "id": "EV-88dcf97a6e4a903e",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI：ChatGPT 广告年化收入运行率已达 10 亿美元",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "financial_performance",
+      "object": "ChatGPT advertising annualized revenue run rate",
+      "metrics": [
+        "10 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-691c3b3328df3a66",
+          "subject": "OpenAI",
+          "object": "ChatGPT advertising annualized revenue run rate",
+          "quote": "OpenAI 当地时间周一宣布，其广告业务的年化收入运行率（annualized revenue run rate，是将企业短期已确认收入按当前速度外推至全年的估算指标）已经达到 10 亿美元"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1c32e0bb61171716",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/653.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/653.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "OpenAI 当地时间周一宣布，其广告业务的年化收入运行率（annualized revenue run rate，是将企业短期已确认收入按当前速度外推至全年的估算指标）已经达到 10 亿美元"
+    },
+    {
+      "id": "EV-aadda8232529b268",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "ChatGPT将在欧盟面临更严格的监管",
+      "originalTitle": "ChatGPT to face tougher regulation in the EU",
+      "subject": "ChatGPT to face tougher",
+      "action": "regulation",
+      "object": "in the EU",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-98b150f0b66e19fa",
+        "EN-d36e5a1a7a3c45ce"
+      ],
+      "entityNames": [
+        "ChatGPT to face tougher",
+        "Roblox"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-80e6c40e5bf40291",
+          "subject": "ChatGPT to face tougher",
+          "object": "in the EU",
+          "quote": "ChatGPT to face tougher regulation in the EU"
+        },
+        {
+          "id": "CL-1c584ce9b0410e64",
+          "subject": "ChatGPT to face tougher",
+          "object": "in the EU",
+          "quote": "Along with ChatGPT, the European Commission also announced that Reddit and Roblox are considered Very Large Online Platforms, subjecting them to the same rules. The DSA restricts platforms from targeting ads to minors or using a person’s sexual orientation, religion, ethnicity, or political beliefs. It requires them to provide more transparency about how their recommendation algorithms work, too."
+        },
+        {
+          "id": "CL-71e6ba825b9eef3b",
+          "subject": "ChatGPT to face tougher",
+          "object": "in the EU",
+          "quote": "The EU designated ChatGPT, Reddit, and Roblox as ‘Very Large’ under the Digital Services Act."
+        },
+        {
+          "id": "CL-777a806650ab1edb",
+          "subject": "ChatGPT to face tougher",
+          "object": "in the EU",
+          "quote": "The EU designated ChatGPT, Reddit, and Roblox as ‘Very Large’ under the Digital Services Act."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-59a4675341dc4480",
+          "publisher": "The Verge AI",
+          "url": "https://theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa"
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+      "publisher": "The Verge AI",
+      "sourceExcerpt": "ChatGPT to face tougher regulation in the EU"
+    },
+    {
+      "id": "EV-de976687caf47511",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-01",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "工业巨头卡特彼勒将 AI 推向真实作业现场，未来五年投入 1 亿美元培训员工",
+      "originalTitle": "",
+      "subject": "卡特彼勒",
+      "action": "capital_investment",
+      "object": "1 亿美元",
+      "metrics": [
+        "1 亿",
+        "6.74 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-a2878edf5c6c1bfa"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-a2878edf5c6c1bfa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-a2878edf5c6c1bfa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a2878edf5c6c1bfa"
+      ],
+      "entityNames": [
+        "卡特彼勒"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-91dabcba75e5cec8",
+          "subject": "卡特彼勒",
+          "object": "1 亿美元",
+          "quote": "未来五年，卡特彼勒计划投入 1 亿美元 （IT之家注：现汇率约合 6.74 亿元人民币） ，对员工开展 AI、自动化和机器人技术培训。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f25ca7daaa310fc4",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/633.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/633.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "未来五年，卡特彼勒计划投入 1 亿美元 （IT之家注：现汇率约合 6.74 亿元人民币） ，对员工开展 AI、自动化和机器人技术培训。"
+    },
+    {
       "id": "EV-278745d4aa7a4b3a",
       "dataDate": "2026-08-31",
       "date": "2026-08-30",
@@ -348857,7 +351597,7 @@
         "EN-026836921a4d049c"
       ],
       "entityNames": [
-        "SK hynix"
+        "SK Hynix"
       ],
       "productName": "",
       "products": [],

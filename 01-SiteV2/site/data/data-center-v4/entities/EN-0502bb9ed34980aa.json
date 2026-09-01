@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-0502bb9ed34980aa",
@@ -37,8 +37,7 @@
     "firstSeen": "2026-06-09",
     "lastSeen": "2026-06-18",
     "relationIds": [
-      "REL2-1088b525da98df85",
-      "REL2-ced495a5aea356e0"
+      "REL2-1088b525da98df85"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -153,9 +152,7 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "苹果"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -173,7 +170,9 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-e5883e1e8f305b67",
         "EV-6b9a76ea8a03b09f",
+        "EV-93cb2a7faf07bd35",
         "EV-597a6d51533fe5d6",
         "EV-e3da5e799e746408",
         "EV-f7b81752b1fadd87",
@@ -228,6 +227,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-4a982ba6f291ddec",
         "EV-9434ab7a2e818ce9",
         "EV-4b0065f780bd73bd",
         "EV-e07d82ffbad83150",
@@ -261,16 +261,12 @@
         "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [
-        "EN-e463d05a14e8697f",
-        "EN-7df09a7717ef2feb",
+        "EN-7d3194f79e645c42",
         "EN-0502bb9ed34980aa",
-        "EN-dd920a8cd166f486",
-        "EN-1924fff8eb4d54ae",
-        "EN-af3ceabbe048a291",
-        "EN-45b5216872656eb3"
+        "EN-af3ceabbe048a291"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-09-01"
     }
   ],
   "relationships": [
@@ -290,27 +286,6 @@
         "SA-4cd346680b734b4c"
       ],
       "data_date": "2026-06-18",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-ced495a5aea356e0",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3a7bd3e2360a3d29",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-0502bb9ed34980aa",
-      "object_type": "entity",
-      "event_id": "EV-a9fe726c4ea2a17b",
-      "claim_refs": [
-        "CL-abeb123796984e45",
-        "CL-be6397745be4b268",
-        "CL-237aa10e9131be89",
-        "CL-bb177f8c54f761c6"
-      ],
-      "source_refs": [
-        "SA-4c454bcda76945d8"
-      ],
-      "data_date": "2026-06-09",
       "status": "verified"
     }
   ],
@@ -435,8 +410,10 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-8ea4e403a1024ad2",
         "EV-b93b6abf31662339",
         "EV-29f8117648050a66",
+        "EV-f98b84fe16d57b72",
         "EV-87c5f6dcc769999c",
         "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
@@ -814,6 +791,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-d5d985325a1baacb",
         "EV-278745d4aa7a4b3a",
         "EV-10fe2269806246e8",
         "EV-5019dff541a05950",
@@ -943,6 +921,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-1701cfb023a18b15",
         "EN-9fbf261b62c1d7c0",
         "EN-29b9f0cae32e7a8a",
         "EN-30cd4a85fc09f695",
@@ -1145,6 +1124,7 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
+        "EN-89d01c9ba73cb5c4",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
         "EN-11507a0e2f5e69d5",
@@ -1160,6 +1140,7 @@
         "EN-e72901462ebe4458"
       ],
       "fdeIds": [
+        "FDE-98c63fdef8a7d160",
         "FDE-d20f430306d29bbd",
         "FDE-b093649016ddce0b",
         "FDE-13bbc5471db90438",

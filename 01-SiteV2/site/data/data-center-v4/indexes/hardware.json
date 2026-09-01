@@ -5,13 +5,42 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-31T02:48:56.246Z",
-    "latestDataDate": "2026-08-31",
-    "currentDate": "2026-08-31",
-    "eventCount": 2507,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-01T01:37:08.808Z",
+    "latestDataDate": "2026-09-01",
+    "currentDate": "2026-09-01",
+    "eventCount": 2536,
+    "quarantinedEventCount": 24
   },
   "hardware": [
+    {
+      "id": "HW-73f251c79d91c350",
+      "eventId": "EV-4a982ba6f291ddec",
+      "dataDate": "2026-09-01",
+      "date": "2026-08-31",
+      "title": "OpenAI及竞争对手AI实验室正购买数万台Mac mini以训练计算机使用智能体",
+      "hardwareType": "ai_device",
+      "eventType": "hardware_supply",
+      "eventTypeLabel": "硬件供应",
+      "computeLayer": "未披露",
+      "supplier": "Apple",
+      "customer": "OpenAI",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/openai-and-rival-ai-labs-are-buying-tens-of-thousands-of-mac-minis-to-train-computer-use-agents",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-08-31",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-3a7bd3e2360a3d29"
+      ]
+    },
     {
       "id": "HW-44106c4f7e18a2d3",
       "eventId": "EV-8b288f548fd59a91",
@@ -2982,6 +3011,269 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-1166e0de5cfe2bab",
+      "snapshotKey": "1166e0de5cfe2bab",
+      "snapshotId": "HWS-e83895eda10e96e7",
+      "eventId": "EV-7311986c33501189",
+      "eventIds": [
+        "EV-7311986c33501189"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "title": "LG 电子",
+      "subject": "LG 电子",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "oem_odm"
+      ],
+      "latestValues": {
+        "oem_odm": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-61131cf663357208"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-01",
+          "hardware_fact_id": "HWF-61131cf663357208",
+          "fact_type": "oem_odm",
+          "observed_at": "2026-08-31T09:01:09.000Z",
+          "subject_entity_id": "EN-75ff8ed66696684e",
+          "subject_name": "LG 电子",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "这些芯片将交由三星电子负责晶圆代工。",
+          "event_refs": [
+            "EV-7311986c33501189"
+          ],
+          "claim_ref": "CL-05fb3c034a878b79",
+          "source_refs": [
+            "SA-f9a7b1e61651b42d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/996/564.htm",
+      "entityIds": [
+        "EN-75ff8ed66696684e",
+        "EN-968e2d5b08687bf4"
+      ]
+    },
+    {
+      "id": "HWC-c82dd190312bd3ba",
+      "snapshotKey": "c82dd190312bd3ba",
+      "snapshotId": "HWS-6c9ffa9118bb1171",
+      "eventId": "EV-93cb2a7faf07bd35",
+      "eventIds": [
+        "EV-93cb2a7faf07bd35"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "title": "Mac Studio / M5 Max / M5 Ultra",
+      "subject": "Apple",
+      "productNames": [
+        "Mac Studio",
+        "M5 Max",
+        "M5 Ultra"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a51b911aad725cef"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-01",
+          "hardware_fact_id": "HWF-a51b911aad725cef",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-25T00:00:00.000Z",
+          "subject_entity_id": "EN-3a7bd3e2360a3d29",
+          "subject_name": "Apple",
+          "product_entity_ids": [
+            "EN-fc2dd90a306ec0ba",
+            "EN-d311d9f4fe0d6194",
+            "EN-8eb41e77bd5d6022"
+          ],
+          "product_names": [
+            "Mac Studio",
+            "M5 Max",
+            "M5 Ultra"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Mac Studio is also a powerful platform for the rich ecosystem of tools AI researchers and developers rely on every day, utilizing the advanced frameworks in macOS. Core AI is a brand-new framework for building, running, and deploying AI models on Apple silicon. It provides an architecture optimized for Apple silicon, including unified memory, CPU, GPU, and Neural Engine, allowing developers to deploy full-scale LLMs locally and bring their own custom models into their apps. MLX, Apple’s open-source machine learning framework optimized for Apple silicon, enables developers to run, train, and fine-tune models with exceptional efficiency on Mac. In addition to these powerful frameworks, combined with Xcode and a robust ecosystem of AI tools and solutions, Mac Studio provides a complete, end-to-end platform for AI development — from experimentation and training to deployment.",
+          "event_refs": [
+            "EV-93cb2a7faf07bd35"
+          ],
+          "claim_ref": "CL-d247c6e741047540",
+          "source_refs": [
+            "SA-dfbd63e23c63222d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://apple.com/gn/newsroom/2026/08/apple-introduces-mac-studio-with-m5-max-and-m5-ultra",
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29",
+        "EN-fc2dd90a306ec0ba",
+        "EN-d311d9f4fe0d6194",
+        "EN-8eb41e77bd5d6022"
+      ]
+    },
+    {
+      "id": "HWC-5a0d5e342020560a",
+      "snapshotKey": "5a0d5e342020560a",
+      "snapshotId": "HWS-9168bb548619537a",
+      "eventId": "EV-e9b6c8b13cd12e47",
+      "eventIds": [
+        "EV-e9b6c8b13cd12e47"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "title": "OpenClaw",
+      "subject": "OpenClaw",
+      "productNames": [],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-f68d6858a5999bd3"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-01",
+          "hardware_fact_id": "HWF-f68d6858a5999bd3",
+          "fact_type": "product",
+          "observed_at": "2026-08-31T00:00:00.000Z",
+          "subject_entity_id": "EN-96a4bc2602655473",
+          "subject_name": "OpenClaw",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Version 2.0 is the largest OpenClaw release so far, and the biggest change is a simplified first-run setup. The software now detects existing resources on the computer, including ChatGPT or Claude subscriptions, API keys, and local models, which cuts out many of the configuration steps users previously had to deal with. Additional settings can be adjusted later during a conversation with the bot.",
+          "event_refs": [
+            "EV-e9b6c8b13cd12e47"
+          ],
+          "claim_ref": "CL-64c8a94113d747a8",
+          "source_refs": [
+            "SA-18134b8f4cfe325a"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions",
+      "entityIds": [
+        "EN-96a4bc2602655473"
+      ]
+    },
+    {
+      "id": "HWC-f176a0ca7122d7ab",
+      "snapshotKey": "f176a0ca7122d7ab",
+      "snapshotId": "HWS-ff719e20cbe837ea",
+      "eventId": "EV-1a846b94337dd961",
+      "eventIds": [
+        "EV-1a846b94337dd961"
+      ],
+      "dataDate": "2026-09-01",
+      "date": "2026-09-01",
+      "title": "VMware AI",
+      "subject": "博通",
+      "productNames": [
+        "VMware AI"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-9252779aca959cc8"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-01",
+          "hardware_fact_id": "HWF-9252779aca959cc8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-31T15:33:31.000Z",
+          "subject_entity_id": "EN-33dbfdc3b4b67b9d",
+          "subject_name": "博通",
+          "product_entity_ids": [
+            "EN-b9d3a6fa30af078e"
+          ],
+          "product_names": [
+            "VMware AI"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "新产品是 VMware AI 私有云的软件定义基础，通过一系列自动化创新功能为 AI 基础设施部署提供支持， 进而为客户提供更加简单的 AI 生产力部署路径 。",
+          "event_refs": [
+            "EV-1a846b94337dd961"
+          ],
+          "claim_ref": "CL-3a3366e576da8715",
+          "source_refs": [
+            "SA-cd2483df51dfe671"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/996/680.htm",
+      "entityIds": [
+        "EN-33dbfdc3b4b67b9d",
+        "EN-b9d3a6fa30af078e"
+      ]
+    },
     {
       "id": "HWC-2efe3e24a0c5afd7",
       "snapshotKey": "2efe3e24a0c5afd7",
@@ -12787,36 +13079,33 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-31",
-      "funnel_id": "LF-d271f3b191ae573b",
+      "data_date": "2026-09-01",
+      "funnel_id": "LF-ab32e1123fccdf1c",
       "lens": "hardware",
-      "date": "2026-08-31",
+      "date": "2026-09-01",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_oem_odm",
         "hardware_product_specs",
         "hardware_shipment_deployment"
       ],
-      "raw_documents": 18,
-      "original_sources": 16,
-      "valid_claims": 0,
-      "observations": 3,
-      "canonical_events": 0,
+      "raw_documents": 23,
+      "original_sources": 20,
+      "valid_claims": 8,
+      "observations": 4,
+      "canonical_events": 5,
       "blocker_counts": {
-        "source_outside_daily_window": 7,
-        "non_event_or_index_title": 3,
-        "no_source_bounded_event": 3,
+        "non_event_or_index_title": 6,
+        "source_outside_daily_window": 3,
         "event_not_ai_relevant": 1,
-        "rumor_requires_primary_confirmation": 1,
-        "raw_source_quality_block": 3
+        "raw_source_quality_block": 7
       },
       "rates": {
-        "original_source_rate": 0.8888888888888888,
-        "valid_claim_rate": 0,
-        "observation_rate": 0,
-        "event_conversion_rate": 1
+        "original_source_rate": 0.8695652173913043,
+        "valid_claim_rate": 0.34782608695652173,
+        "observation_rate": 0.5,
+        "event_conversion_rate": 0.625
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-01/monitoring-funnel.json"
     }
   ]
 }
