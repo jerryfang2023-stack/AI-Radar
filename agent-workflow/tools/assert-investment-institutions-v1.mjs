@@ -20,6 +20,18 @@ if (new Set((data.institutions || []).map((item) => item.id)).size !== data.inst
 if ((data.institutions || []).some((item) => item.activities.some((activity) => !activity.evidence.length))) {
   problems.push("activity_without_evidence");
 }
+for (const institution of data.institutions || []) {
+  const chinaActivities = institution.activities.filter((activity) => activity.china_market_match);
+  if (institution.china_market_activity_count !== chinaActivities.filter((activity) => activity.scope === "current_round").length) {
+    problems.push(`china_market_activity_count_mismatch:${institution.id}`);
+  }
+  if (institution.market_regions.some((region) => !["CN", "GLOBAL"].includes(region))) {
+    problems.push(`market_region_invalid:${institution.id}`);
+  }
+  if (institution.activities.some((activity) => activity.china_market_match !== (activity.market_region === "CN"))) {
+    problems.push(`china_market_activity_scope_invalid:${institution.id}`);
+  }
+}
 const evidenceRows = (data.institutions || []).flatMap((item) => item.activities.flatMap((activity) => activity.evidence));
 for (const evidence of evidenceRows) {
   const normalizedQuote = String(evidence.quote || "").replace(/\s+/gu, " ").trim();
@@ -37,4 +49,5 @@ console.log(JSON.stringify({
   institutions: data.meta.institution_count,
   evidence_backed: data.meta.evidence_backed_count,
   current_round_activities: data.meta.current_round_activity_count,
+  china_market_institutions: data.institutions.filter((item) => item.china_market_activity_count > 0).length,
 }, null, 2));

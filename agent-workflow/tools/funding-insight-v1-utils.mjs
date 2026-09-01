@@ -799,6 +799,7 @@ export function buildFundingEntityReviewQueue(cards = []) {
             funding_insight_ids: [],
             source_event_ids: [],
             evidence_refs: [],
+            market_regions: [],
           });
         }
         const candidate = candidates.get(key);
@@ -806,6 +807,7 @@ export function buildFundingEntityReviewQueue(cards = []) {
         candidate.funding_insight_ids.push(card.funding_insight_id);
         candidate.source_event_ids.push(...(card.source_event_ids || [card.triggered_by_event_id]));
         candidate.evidence_refs.push(...(item.evidence_refs || []));
+        candidate.market_regions.push(card.market_scope?.market_region || "GLOBAL");
       }
     }
   }
@@ -819,6 +821,8 @@ export function buildFundingEntityReviewQueue(cards = []) {
         `${item.source_id}|${item.quote}`,
         item,
       ])).values()].slice(0, 3),
+      market_regions: [...new Set(candidate.market_regions.filter(Boolean))].sort(),
+      china_market_match: candidate.market_regions.includes("CN"),
     }))
     .sort((left, right) => (
       left.candidate_kind.localeCompare(right.candidate_kind, "en")
@@ -831,6 +835,9 @@ export function buildFundingEntityReviewQueue(cards = []) {
       candidate_count: rows.length,
       product_candidates: rows.filter((item) => item.candidate_kind === "product").length,
       person_candidates: rows.filter((item) => item.candidate_kind === "person").length,
+      china_market_candidates: rows.filter((item) => item.china_market_match).length,
+      china_market_product_candidates: rows.filter((item) => item.china_market_match && item.candidate_kind === "product").length,
+      china_market_person_candidates: rows.filter((item) => item.china_market_match && item.candidate_kind === "person").length,
       rule: "Application evidence never mutates canonical V4 entities automatically.",
     },
     candidates: rows,

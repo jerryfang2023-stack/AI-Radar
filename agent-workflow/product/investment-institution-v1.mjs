@@ -10,6 +10,10 @@ function normalizedName(value = "") {
   return clean(value).toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 }
 
+function unique(values = []) {
+  return [...new Set(values.filter(Boolean))];
+}
+
 const INVESTOR_ALIAS_GROUPS = [
   { name: "Y Combinator", aliases: ["YC"], kind: "investment_institution", stableKey: "name:ycombinator" },
   { name: "Andreessen Horowitz", aliases: ["a16z", "Andreessen Horowitz (a16z)"], kind: "investment_institution" },
@@ -192,6 +196,8 @@ export function buildInvestmentInstitutionRegistry(cards = [], entityIndex = {},
       amount_original: card.financing?.amount_original || card.financing?.amount || "",
       amount_normalized: card.financing?.amount_normalized || null,
       announced_at: card.financing?.announced_at || "",
+      market_region: card.market_scope?.market_region || "GLOBAL",
+      china_market_match: card.market_scope?.market_region === "CN",
       disclosure_status: card.financing?.disclosure_status || "unknown",
       scope,
       role: item.role || "",
@@ -205,6 +211,8 @@ export function buildInvestmentInstitutionRegistry(cards = [], entityIndex = {},
       .sort()
       .map((code) => [code, uniqueActivities.filter((activity) => activity.role_code === code).length]));
     const dates = uniqueActivities.map((activity) => activity.announced_at).filter(Boolean).sort();
+    const marketRegions = unique(uniqueActivities.map((activity) => activity.market_region || "GLOBAL")).sort();
+    const chinaMarketActivities = currentActivities.filter((activity) => activity.china_market_match);
     const evidence = [...new Map(uniqueActivities.flatMap((activity) => activity.evidence)
       .map((item) => [`${item.source_id}|${item.quote_hash || item.quote}`, item])).values()];
     return {
@@ -221,6 +229,9 @@ export function buildInvestmentInstitutionRegistry(cards = [], entityIndex = {},
       current_round_count: currentActivities.length,
       historical_or_ambiguous_count: uniqueActivities.length - currentActivities.length,
       portfolio_company_count: new Set(currentActivities.map((activity) => activity.company_entity_id || activity.company_name)).size,
+      market_regions: marketRegions,
+      china_market_activity_count: chinaMarketActivities.length,
+      china_market_company_count: new Set(chinaMarketActivities.map((activity) => activity.company_entity_id || activity.company_name)).size,
       first_disclosed_at: dates[0] || "",
       latest_disclosed_at: dates.at(-1) || "",
       role_counts: roleCounts,

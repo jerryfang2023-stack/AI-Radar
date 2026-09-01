@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 export const CHINA_MARKET_SOURCE_REGISTRY_VERSION = "CHINA-MARKET-SOURCE-REGISTRY-V1.0";
-export const CHINA_MARKET_MONITORING_VERSION = "CHINA-MARKET-MONITORING-V1.1";
+export const CHINA_MARKET_MONITORING_VERSION = "CHINA-MARKET-MONITORING-V1.2";
 export const CHINA_MARKET_ENTITY_ALIASES_VERSION = "CHINA-MARKET-ENTITY-ALIASES-V1.0";
 
 const DATABASE_DIR = path.join("01-SiteV2", "content", "11-databases");
@@ -236,6 +236,11 @@ export function chinaMarketMatch(item = {}, entityAliases = {}) {
     return { matched: true, basis: `explicit_market_term:${explicitMatch[0]}` };
   }
 
+  const legalEntityMatch = text.match(/[\u3400-\u9fff]{2,36}(?:有限责任公司|股份有限公司|有限公司)/u);
+  if (legalEntityMatch) {
+    return { matched: true, basis: `china_legal_entity:${legalEntityMatch[0]}` };
+  }
+
   const aliases = chinaMarketOrganizationAliases(entityAliases)
     .flatMap((entity) => entity.aliases.map((alias) => ({
       canonicalName: entity.canonicalName,
@@ -256,6 +261,7 @@ export function chinaMarketMatch(item = {}, entityAliases = {}) {
 export function chinaMarketBasisType(value = "") {
   const basis = clean(value);
   if (basis.startsWith("china_entity:")) return "actor_origin";
+  if (basis.startsWith("china_legal_entity:")) return "actor_origin";
   if (/国家网信办|工业和信息化部|工信部|备案|算法/u.test(basis)) return "regulatory_jurisdiction";
   if (/落地|部署|客户案例|智算中心/u.test(basis)) return "deployment_location";
   if (basis) return "event_market";

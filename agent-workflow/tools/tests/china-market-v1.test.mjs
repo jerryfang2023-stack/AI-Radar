@@ -25,6 +25,7 @@ test("China market source registry is source-only and adds no ranking fields", (
   );
   assert.ok(config.sourceRegistry.sources.some((source) => source.source_category === "company_official"));
   assert.ok(config.sourceRegistry.sources.some((source) => source.interface_type === "rss"));
+  assert.ok(config.sourceRegistry.sources.some((source) => source.source_id === "cn-cyzone" && source.collection_scope.includes("startup_funding")));
 });
 
 test("China market sources adapt to the existing monitor without source levels", () => {
@@ -45,6 +46,9 @@ test("China market queries preserve explicit collection paths and do not change 
   assert.equal(keyword.some((query) => query.search_paths.includes("procurement_marketplace")), false);
   assert.equal(keyword.some((query) => query.query_theme === "china-procurement"), false);
   assert.ok(keyword.some((query) => query.search_paths.includes("official_original")));
+  assert.ok(keyword.some((query) => query.china_market_query_id === "cn-ai-hardware-funding" && query.search_paths.includes("capital_startup")));
+  assert.ok(keyword.some((query) => query.china_market_query_id === "cn-vertical-agent-funding" && query.search_paths.includes("capital_startup")));
+  assert.ok(keyword.some((query) => query.china_market_query_id === "cn-ai-funding-media-sweep"));
   assert.ok(gdelt.some((query) => query.query_theme === "china-policy-regulation"));
   assert.equal(keyword.every((query) => query.market_region === "CN"), true);
   assert.equal(keyword.every((query) => !("score" in query) && !("weight" in query) && !("priority" in query)), true);
@@ -102,6 +106,26 @@ test("China market scope ignores appended search-query metadata and recognizes E
   assert.deepEqual(scoped.included.map((item) => item.title), ["DeepSeek releases a new reasoning model"]);
   assert.match(scoped.included[0].china_market_match_basis, /^china_entity:DeepSeek:/u);
   assert.deepEqual(scoped.excluded.map((item) => item.title), ["OpenAI lowers global API prices"]);
+});
+
+test("China market scope recognizes a disclosed Chinese legal entity without trusting publisher geography", () => {
+  const config = loadChinaMarketConfig(root);
+  const scoped = scopeChinaMarketItems([
+    {
+      title: "博登智能完成 A+ 轮融资",
+      summary: "宁波博登智能科技有限公司宣布完成本轮融资。",
+      source: "创业邦",
+    },
+    {
+      title: "Global startup raises funding",
+      summary: "The company announced a new financing round.",
+      source: "创业邦",
+    },
+  ], config.entityAliases);
+
+  assert.equal(scoped.included.length, 1);
+  assert.match(scoped.included[0].china_market_match_basis, /^china_legal_entity:/u);
+  assert.deepEqual(scoped.excluded.map((item) => item.title), ["Global startup raises funding"]);
 });
 
 test("China market intake selection reads only the CN subset from a unified daily intake", () => {

@@ -1,6 +1,6 @@
 {
   "schema_version": "CHINA-MARKET-SOURCE-REGISTRY-V1.0",
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-09-01",
   "owner": "Data Center Source Ingestion",
   "market_region": "CN",
   "purpose": "中国 AI 市场来源注册表。仅记录来源身份、来源类别与采集接口，不表达来源等级、可信权重、价值排序或算法加成。",
@@ -461,6 +461,25 @@
         "startup_funding",
         "investor_activity",
         "company_strategy"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-cyzone",
+      "name": "创业邦",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.cyzone.cn/",
+      "publisher_domains": [
+        "cyzone.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "investor_activity",
+        "company_strategy",
+        "ai_hardware",
+        "vertical_agent"
       ],
       "enabled_default": true
     },

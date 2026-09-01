@@ -56,7 +56,7 @@
     },
     "activity": {
       "type": "object",
-      "required": ["activity_id", "funding_insight_id", "event_ids", "company_entity_id", "company_canonical_entity_id", "company_name", "round", "round_code", "round_original", "amount_original", "amount_normalized", "announced_at", "disclosure_status", "scope", "role", "role_code", "evidence"],
+      "required": ["activity_id", "funding_insight_id", "event_ids", "company_entity_id", "company_canonical_entity_id", "company_name", "round", "round_code", "round_original", "amount_original", "amount_normalized", "announced_at", "market_region", "china_market_match", "disclosure_status", "scope", "role", "role_code", "evidence"],
       "properties": {
         "activity_id": { "type": "string", "minLength": 1 },
         "funding_insight_id": { "type": "string", "minLength": 1 },
@@ -70,6 +70,8 @@
         "amount_original": { "type": "string" },
         "amount_normalized": { "$ref": "#/$defs/normalizedAmount" },
         "announced_at": { "type": "string" },
+        "market_region": { "enum": ["CN", "GLOBAL"] },
+        "china_market_match": { "type": "boolean" },
         "disclosure_status": { "enum": ["disclosed", "partially_disclosed", "not_disclosed", "unknown"] },
         "scope": { "enum": ["current_round", "historical_or_ambiguous"] },
         "role": { "type": "string" },
@@ -80,7 +82,7 @@
     },
     "institution": {
       "type": "object",
-      "required": ["id", "name", "aliases", "canonical_entity_id", "investor_kind", "investor_kind_label", "classification_confidence", "collection_status", "current_round_count", "historical_or_ambiguous_count", "portfolio_company_count", "first_disclosed_at", "latest_disclosed_at", "role_counts", "round_codes", "portfolio_companies", "activities", "evidence"],
+      "required": ["id", "name", "aliases", "canonical_entity_id", "investor_kind", "investor_kind_label", "classification_confidence", "collection_status", "current_round_count", "historical_or_ambiguous_count", "portfolio_company_count", "market_regions", "china_market_activity_count", "china_market_company_count", "first_disclosed_at", "latest_disclosed_at", "role_counts", "round_codes", "portfolio_companies", "activities", "evidence"],
       "properties": {
         "id": { "type": "string", "pattern": "^INV-" },
         "name": { "type": "string", "minLength": 1 },
@@ -93,6 +95,9 @@
         "current_round_count": { "type": "integer", "minimum": 0 },
         "historical_or_ambiguous_count": { "type": "integer", "minimum": 0 },
         "portfolio_company_count": { "type": "integer", "minimum": 0 },
+        "market_regions": { "type": "array", "minItems": 1, "items": { "enum": ["CN", "GLOBAL"] } },
+        "china_market_activity_count": { "type": "integer", "minimum": 0 },
+        "china_market_company_count": { "type": "integer", "minimum": 0 },
         "first_disclosed_at": { "type": "string" },
         "latest_disclosed_at": { "type": "string" },
         "role_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },

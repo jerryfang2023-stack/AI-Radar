@@ -15,6 +15,7 @@ const canonicalRoot = path.join(root, "01-SiteV2/content/11-databases/data-cente
 const outputDir = path.join(root, "01-SiteV2/content/11-databases/targeted-backfill-v1");
 const queueFile = path.join(outputDir, "queue.json");
 const reviewDecisionsFile = path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json");
+const fundingFrontstageFile = path.join(root, "01-SiteV2/site/data/funding-insights-v1.json");
 
 const args = new Map(process.argv.slice(2).map((arg) => {
   const [key, ...rest] = arg.replace(/^--/u, "").split("=");
@@ -91,14 +92,41 @@ const entityHistory = buildEntityHistoryService({
   reviewDecisions: readJson(reviewDecisionsFile, { decisions: [] })
 });
 const collections = buildEntityCollections(entityHistory, eventsById);
+const fundingFrontstage = readJson(fundingFrontstageFile, { cards: [] });
+const chinaFundingCards = (fundingFrontstage.cards || [])
+  .filter((card) => card.market_scope?.market_region === "CN");
+const verifiedCanonicalEntityIds = new Set(entityRows
+  .filter((entity) => entity.verification_status === "verified")
+  .map((entity) => entity.entity_id));
+const companiesById = new Map(collections.companies.map((company) => [company.id, company]));
+for (const card of chinaFundingCards) {
+  const companyId = card.company?.application_entity_id || card.company?.entity_id || "";
+  if (!companyId || !verifiedCanonicalEntityIds.has(companyId)) continue;
+  const previous = companiesById.get(companyId);
+  companiesById.set(companyId, {
+    ...(previous || {}),
+    id: companyId,
+    name: card.company?.name || previous?.name || companyId,
+    eventIds: [...new Set([
+      ...(previous?.eventIds || []),
+      ...(card.source_event_ids || []),
+    ])],
+    chinaMarketMatch: true,
+    fundingInsightIds: [...new Set([
+      ...(previous?.fundingInsightIds || []),
+      card.funding_insight_id,
+    ])],
+  });
+}
 const currentDate = eventRecords.map((event) => event.dataDate).filter(Boolean).sort().at(-1) || "";
 const data = {
   meta: { productVersion: "SITE-V4.2.0-entity-history", currentDate },
   entityHistoryManifest: entityHistory.manifest,
   events: eventRecords,
-  companies: collections.companies,
+  companies: [...companiesById.values()],
   products: collections.products,
   people: collections.people,
+  chinaFundingInsightIds: chinaFundingCards.map((card) => card.funding_insight_id),
   relationships: entityHistory.relationships,
   fde
 };

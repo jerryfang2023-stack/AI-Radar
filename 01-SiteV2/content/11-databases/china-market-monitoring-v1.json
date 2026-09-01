@@ -1,6 +1,6 @@
 {
-  "schema_version": "CHINA-MARKET-MONITORING-V1.1",
-  "updated_at": "2026-07-31",
+  "schema_version": "CHINA-MARKET-MONITORING-V1.2",
+  "updated_at": "2026-09-01",
   "owner": "Data Center Source Ingestion",
   "market_region": "CN",
   "source_registry_ref": "01-SiteV2/content/11-databases/china-market-source-registry-v1.json",
@@ -126,7 +126,7 @@
     },
     {
       "query_id": "cn-ai-startup-funding",
-      "query": "中国 AI 公司 (融资 OR 获投 OR 完成融资 OR 战略投资) (大模型 OR 智能体 OR 具身智能 OR AI 芯片)",
+      "query": "(中国 OR 国内) (AI 公司 OR 人工智能企业 OR 大模型 OR 智能体 OR 具身智能) (融资 OR 获投 OR 完成融资 OR 新一轮融资 OR 战略投资 OR 领投 OR 参投)",
       "query_theme": "china-startup-funding",
       "keyword_group": "china-startup-funding",
       "lanes": [
@@ -136,6 +136,52 @@
       "search_paths": [
         "capital_startup",
         "a_media_gdelt"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-ai-hardware-funding",
+      "query": "(中国 OR 国内) (AI 芯片 OR 推理芯片 OR GPU OR NPU OR ASIC OR 智算服务器 OR AI 服务器 OR 光模块 OR CPO OR 液冷 OR 机器人核心零部件 OR AI 眼镜) (融资 OR 获投 OR 完成融资 OR 新一轮融资 OR 领投 OR 参投)",
+      "query_theme": "china-startup-funding",
+      "keyword_group": "china-ai-hardware-funding",
+      "lanes": [
+        "keyword_search",
+        "gdelt"
+      ],
+      "search_paths": [
+        "capital_startup",
+        "hardware_product_specs",
+        "hardware_capacity_fab",
+        "a_media_gdelt"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-vertical-agent-funding",
+      "query": "(中国 OR 国内) (医疗智能体 OR 法律智能体 OR 金融智能体 OR 工业智能体 OR 供应链智能体 OR 销售智能体 OR 客服智能体 OR 研发智能体 OR 教育智能体 OR 垂直 Agent OR 行业 Agent OR 垂直智能体) (融资 OR 获投 OR 完成融资 OR 新一轮融资 OR 领投 OR 参投)",
+      "query_theme": "china-startup-funding",
+      "keyword_group": "china-vertical-agent-funding",
+      "lanes": [
+        "keyword_search",
+        "gdelt"
+      ],
+      "search_paths": [
+        "capital_startup",
+        "industry_landing",
+        "a_media_gdelt"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-ai-funding-media-sweep",
+      "query": "(site:36kr.com OR site:pedaily.cn OR site:cyzone.cn OR site:qbitai.com OR site:cls.cn OR site:readaitime.com) (AI OR 人工智能 OR 智能体 OR 机器人 OR 芯片 OR 算力) (融资 OR 获投 OR 完成融资 OR 领投 OR 参投)",
+      "query_theme": "china-startup-funding",
+      "keyword_group": "china-funding-media-sweep",
+      "lanes": [
+        "keyword_search"
+      ],
+      "search_paths": [
+        "capital_startup"
       ],
       "market_region": "CN"
     },

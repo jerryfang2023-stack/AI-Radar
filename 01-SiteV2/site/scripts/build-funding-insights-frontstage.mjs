@@ -606,14 +606,32 @@ export function writeFundingInsightsFrontstage(projectRoot = root) {
     projectRoot,
     "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json",
   ), {});
+  const marketScopeByFundingInsightId = new Map((data.cards || []).map((card) => [
+    card.funding_insight_id,
+    card.market_scope,
+  ]));
+  const marketScopeByEventId = new Map((data.cards || []).flatMap((card) => (
+    (card.source_event_ids || [card.triggered_by_event_id]).filter(Boolean)
+      .map((eventId) => [eventId, card.market_scope])
+  )));
   const entityReviewQueue = buildFundingEntityReviewQueue(listBundles(projectRoot)
     .flatMap((bundle) => bundle.cards || [])
-    .map((card) => normalizeFundingInsightCard(
-      card,
-      entityIndex,
-      entityDecisions,
-      companyIdentityReview,
-    )));
+    .map((card) => {
+      const normalized = normalizeFundingInsightCard(
+        card,
+        entityIndex,
+        entityDecisions,
+        companyIdentityReview,
+      );
+      return {
+        ...normalized,
+        market_scope: marketScopeByFundingInsightId.get(normalized.funding_insight_id)
+          || (normalized.source_event_ids || [normalized.triggered_by_event_id])
+            .map((eventId) => marketScopeByEventId.get(eventId))
+            .find(Boolean)
+          || normalized.market_scope,
+      };
+    }));
   const entityReviewOutput = path.join(
     projectRoot,
     "01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json",

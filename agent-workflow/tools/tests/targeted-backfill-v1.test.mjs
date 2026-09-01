@@ -151,6 +151,23 @@ test("funding searches use the disclosed company subject instead of an investor-
   assert.ok(task.searchPlan.queries[0].startsWith("\"Solve Intelligence\""));
 });
 
+test("China funding companies and founders receive Chinese evidence-backfill queries", () => {
+  const data = fixture();
+  data.companies[0].chinaMarketMatch = true;
+  data.chinaFundingInsightIds = ["FI-CN"];
+  data.people[0].fundingInsightIds = ["FI-CN"];
+  data.people[0].founderCompanies = [{ entityId: company.id, name: company.name, role: "联合创始人" }];
+  data.people[0].founderEvidence = [{ sourceId: "FISRC-CN", sourceEventId: "EV-F" }];
+  data.relationships = [];
+
+  const queue = buildTargetedBackfillQueue({ data, generatedAt });
+  const companyTask = queue.tasks.find((task) => task.taskType === "company_history" && task.target.id === company.id);
+  const personTask = queue.tasks.find((task) => task.taskType === "person_history" && task.target.id === person.id);
+  assert.ok(companyTask.searchPlan.queries.some((query) => query.includes("融资 OR 获投")));
+  assert.ok(personTask.searchPlan.queries.some((query) => query.includes("创始人 OR 联合创始人")));
+  assert.ok(personTask.detection.detectedFromRefs.includes("FI-CN"));
+});
+
 test("excludes upstream false funding, consumer feature, and generic product targets", () => {
   const data = fixture();
   data.events.push(

@@ -312,6 +312,9 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
       domains,
       queries: [
         `${quoted(company.name)} (AI OR "artificial intelligence") (launch OR funding OR partnership OR customer OR deployment) ${timeClause}`,
+        ...(company.chinaMarketMatch ? [
+          `${quoted(company.name)} (融资 OR 获投 OR 产品 OR 客户 OR 创始人 OR 投资方) ${timeClause}`,
+        ] : []),
         ...domains.map((domain) => `site:${domain} ${quoted(company.name)} (AI OR launch OR funding OR customer OR deployment) ${timeClause}`)
       ],
       window,
@@ -401,6 +404,7 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
     }));
   }
 
+  const chinaFundingInsightIds = new Set(data.chinaFundingInsightIds || []);
   const personRelationships = (data.relationships || []).filter((relationship) =>
     peopleById.has(relationship.subject_ref)
     && ["joins", "leaves", "founds"].includes(relationship.predicate)
@@ -408,14 +412,24 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
   );
   for (const person of data.people || []) {
     const relationships = personRelationships.filter((relationship) => relationship.subject_ref === person.id);
-    if (!relationships.length) continue;
-    const personEvents = unique(relationships.map((relationship) => relationship.event_id)).map((id) => eventsById.get(id)).filter(Boolean);
-    const organizationNames = unique(relationships.map((relationship) => companiesById.get(relationship.object_ref)?.name));
+    const chinaFundingRefs = (person.fundingInsightIds || []).filter((id) => chinaFundingInsightIds.has(id));
+    if (!relationships.length && !chinaFundingRefs.length) continue;
+    const founderEventIds = (person.founderEvidence || []).map((evidence) => evidence.sourceEventId).filter(Boolean);
+    const personEvents = unique([
+      ...relationships.map((relationship) => relationship.event_id),
+      ...founderEventIds,
+    ]).map((id) => eventsById.get(id)).filter(Boolean);
+    const organizationNames = unique([
+      ...relationships.map((relationship) => companiesById.get(relationship.object_ref)?.name),
+      ...(person.founderCompanies || []).map((company) => company.name),
+      ...(person.organizationNames || []),
+    ]);
     const actionTerms = unique(relationships.flatMap((relationship) => relationship.predicate === "joins"
       ? ["joined", "joins", "appointed"]
       : relationship.predicate === "leaves"
         ? ["left", "leaves", "departed"]
         : ["founded", "founds", "started"]));
+    if (chinaFundingRefs.length) actionTerms.push("founded", "co-founded", "founder");
     const timeClause = `after:${window.startDate} before:${shiftDays(window.endDate, 1)}`;
     const organizationClause = organizationNames.length ? ` (${organizationNames.map(quoted).join(" OR ")})` : "";
     const domains = knownDomains(personEvents);
@@ -424,11 +438,18 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
       target: { kind: "entity", id: person.id, name: person.name },
       priority: { tier: "core", reasons: ["person_relationship"] },
       gapKind: "coverage_sweep",
-      detectedFromRefs: personEvents.flatMap((event) => [event.id, ...(event.claims || []).map((claim) => claim.id), ...(event.sources || []).map((source) => source.id)]),
+      detectedFromRefs: unique([
+        ...chinaFundingRefs,
+        ...personEvents.flatMap((event) => [event.id, ...(event.claims || []).map((claim) => claim.id), ...(event.sources || []).map((source) => source.id)]),
+        ...(person.founderEvidence || []).flatMap((evidence) => [evidence.sourceId, evidence.sourceEventId]),
+      ]),
       paths: ["official_original", "company_people", "capital_startup"],
       domains,
       queries: [
         `${quoted(person.name)} (${actionTerms.join(" OR ")})${organizationClause} ${timeClause}`,
+        ...(chinaFundingRefs.length ? [
+          `${quoted(person.name)} (创始人 OR 联合创始人 OR 董事长 OR 首席执行官 OR CEO)${organizationClause} ${timeClause}`,
+        ] : []),
         ...domains.map((domain) => `site:${domain} ${quoted(person.name)} (${actionTerms.join(" OR ")}) ${timeClause}`)
       ],
       window,

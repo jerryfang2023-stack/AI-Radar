@@ -727,6 +727,7 @@ test("已知轮次累计金额保留模糊金额区间而不是显示未披露",
 
 test("投资机构库只从融资卡精确投资方证据生成可追溯活动", () => {
   const card = validCard();
+  card.market_scope = { market_region: "CN", china_market_match: true };
   card.financing.investors[0].institution_id = "ignored";
   const registry = buildInvestmentInstitutionRegistry([card], {}, card.published_at);
   assert.equal(registry.meta.institution_count, 1);
@@ -734,6 +735,10 @@ test("投资机构库只从融资卡精确投资方证据生成可追溯活动",
   assert.equal(registry.institutions[0].name, "Northstar Ventures");
   assert.equal(registry.institutions[0].investor_kind, "investment_institution");
   assert.equal(registry.institutions[0].activities[0].role_code, "lead");
+  assert.equal(registry.institutions[0].activities[0].market_region, "CN");
+  assert.equal(registry.institutions[0].china_market_activity_count, 1);
+  assert.equal(registry.institutions[0].china_market_company_count, 1);
+  assert.deepEqual(registry.institutions[0].market_regions, ["CN"]);
   assert.equal(registry.institutions[0].activities[0].evidence[0].quote, evidence()[0].quote);
 });
 
@@ -923,6 +928,7 @@ test("已审核实体决策只回写到现有同类型规范实体", () => {
 
 test("未链接产品与创始人进入证据化待审队列，已链接实体不重复排队", () => {
   const card = validCard();
+  card.market_scope = { market_region: "CN", china_market_match: true };
   card.products[0].entity_id = "EN-PRODUCT";
   card.company.founders = [{
     name: "Ada Lee",
@@ -934,7 +940,11 @@ test("未链接产品与创始人进入证据化待审队列，已链接实体�
   assert.equal(queue.meta.candidate_count, 1);
   assert.equal(queue.meta.product_candidates, 0);
   assert.equal(queue.meta.person_candidates, 1);
+  assert.equal(queue.meta.china_market_candidates, 1);
+  assert.equal(queue.meta.china_market_person_candidates, 1);
   assert.equal(queue.candidates[0].research_name, "Ada Lee");
+  assert.deepEqual(queue.candidates[0].market_regions, ["CN"]);
+  assert.equal(queue.candidates[0].china_market_match, true);
   assert.ok(queue.candidates[0].evidence_refs.length);
 });
 
