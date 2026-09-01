@@ -249,6 +249,9 @@ function closure() {
   });
   const ownsLaneRecovery = Boolean(recoveryOwnershipReason);
   const laneRecovery = ownsLaneRecovery ? recovery() : null;
+  const runtimeSync = run("Sync repo Skill runtime before closure", process.execPath, [
+    "agent-workflow/tools/sync-repo-skills.mjs",
+  ]);
   const coverage = run("Data Center projection coverage", process.execPath, [
     "agent-workflow/tools/assert-data-center-projection-coverage.mjs",
     `--date=${date}`,
@@ -288,12 +291,12 @@ function closure() {
   const coverageAction = waiting && !coverage.ok
     ? { ...coverage, ok: true, observed_ok: false, resolution: "same_date_production_waiting" }
     : coverage;
-  const ok = coverageAction.ok && selfCheck.ok && codex.ok;
+  const ok = runtimeSync.ok && coverageAction.ok && selfCheck.ok && codex.ok;
   return {
     ok,
     healthOk: !waiting && Boolean(selfCheckPayload?.ok) && coverage.ok,
     status: ok ? waiting ? "waiting" : "closed" : "repair_required",
-    actions: [...(laneRecovery?.actions || []), coverageAction, selfCheck, codex],
+    actions: [...(laneRecovery?.actions || []), runtimeSync, coverageAction, selfCheck, codex],
     notes: [
       ...(ownsLaneRecovery
         ? [`Closure owns deterministic lane recovery: ${recoveryOwnershipReason}.`]
