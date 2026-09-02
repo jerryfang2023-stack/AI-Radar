@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-153e60515f449aa3",
+    "name": "Ministry of Defence",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-6e8e34c13f9125a3"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-01",
+    "lastSeen": "2026-09-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-6e8e34c13f9125a3"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-6e8e34c13f9125a3",
+        "dataDate": "2026-09-02",
+        "date": "2026-09-01",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英国启动1亿英镑AI采购计划",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-c6d98ffa6a60d2ff"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c6d98ffa6a60d2ff",
+          "EN-153e60515f449aa3"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-4edd0de40bf7395b",
+      "eventId": "EV-6e8e34c13f9125a3",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "title": "英国启动1亿英镑AI采购计划",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "£100 million artificial intelligence procurement programme",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [
+        "£100 million"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://businessquarter.co.uk/uk-opens-100m-ai-procurement-drive",
+      "entityIds": [
+        "EN-c6d98ffa6a60d2ff",
+        "EN-153e60515f449aa3"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-1f1f34eb6671fd10",
+      "implementationKey": "1f1f34eb6671fd10",
+      "eventId": "EV-6e8e34c13f9125a3",
+      "eventIds": [
+        "EV-6e8e34c13f9125a3"
+      ],
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "title": "未披露 × 未披露：£100 million artificial intelligence procurement programme",
+      "stage": "procurement",
+      "stageLabel": "procurement",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "£100 million artificial intelligence procurement programme",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-be1354bedb161a43",
+          "type": "procurement",
+          "stage": "procurement",
+          "date": "2026-09-01",
+          "dataDate": "2026-09-02",
+          "eventId": "EV-6e8e34c13f9125a3",
+          "eventTitle": "英国启动1亿英镑AI采购计划",
+          "claimCount": 3,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://businessquarter.co.uk/uk-opens-100m-ai-procurement-drive",
+      "entityIds": [
+        "EN-c6d98ffa6a60d2ff",
+        "EN-153e60515f449aa3"
+      ]
+    }
+  ]
+}

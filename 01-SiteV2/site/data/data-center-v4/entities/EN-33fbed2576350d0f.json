@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-33fbed2576350d0f",
+    "name": "Tyler Technologies",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-a56569d808206c63"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-01",
+    "lastSeen": "2026-09-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-a56569d808206c63"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-a56569d808206c63",
+        "dataDate": "2026-09-02",
+        "date": "2026-09-01",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "内布拉斯加州在成功试点后扩大Tyler Technologies的AI赋能解决方案覆盖范围",
+        "displayTags": [],
+        "entityIds": [
+          "EN-33fbed2576350d0f"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-bbd84b923854dc4c",
+      "eventId": "EV-a56569d808206c63",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "title": "内布拉斯加州在成功试点后扩大Tyler Technologies的AI赋能解决方案覆盖范围",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Program | MarketMinute",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Tyler Technologies, Inc. ( NYSE: TYL ) today announced that the state of Nebraska has selected Tyler’s Resident AI Assistant for statewide deployment following a successful pilot at the Nebraska Department of Motor Vehicles (DMV). The Nebraska DMV is also expanding its use of Tyler’s Document Automation platform to modernize motor carrier operations and strengthen compliance processes.",
+        "In addition to the statewide AI initiative, the Nebraska DMV is implementing Tyler’s Document Automation platform to support motor carrier vehicle identification number (VIN) validation processes. The solution is expected to provide 100% audit capability across nearly 500,000 VIN records while allowing staff to spend more time assisting residents. The rollout will begin on Nebraska.gov before expanding to participating agencies."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "100%",
+        "20%"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://2swffwnbc.marketminute.com/article/bizwire-2026-9-1-nebraska-expands-tyler-technologies-ai-enabled-solutions-footprint-following-successful-pilot-program",
+      "entityIds": [
+        "EN-33fbed2576350d0f"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-42adbf86909cfafc",
+      "implementationKey": "42adbf86909cfafc",
+      "eventId": "EV-a56569d808206c63",
+      "eventIds": [
+        "EV-a56569d808206c63"
+      ],
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "title": "未披露 × 未披露：Program | MarketMinute",
+      "stage": "pilot",
+      "stageLabel": "试点",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Program | MarketMinute",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0600982b229e6ebd",
+          "type": "implementation_update",
+          "stage": "pilot",
+          "date": "2026-09-01",
+          "dataDate": "2026-09-02",
+          "eventId": "EV-a56569d808206c63",
+          "eventTitle": "内布拉斯加州在成功试点后扩大Tyler Technologies的AI赋能解决方案覆盖范围",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://2swffwnbc.marketminute.com/article/bizwire-2026-9-1-nebraska-expands-tyler-technologies-ai-enabled-solutions-footprint-following-successful-pilot-program",
+      "entityIds": [
+        "EN-33fbed2576350d0f"
+      ]
+    }
+  ]
+}
