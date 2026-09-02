@@ -5,13 +5,973 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-01T01:37:08.808Z",
-    "latestDataDate": "2026-09-01",
-    "currentDate": "2026-09-01",
-    "eventCount": 2536,
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
     "quarantinedEventCount": 24
   },
   "events": [
+    {
+      "id": "EV-453e10c6637a0771",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Progress Software：释放AI为您的业务带来的力量",
+      "originalTitle": "Progress Software: Unleash the Power of AI for Your Business",
+      "subject": "Progress Software",
+      "action": "acquisition",
+      "object": "Domo's AI and Data Platform Business",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0eca0fcdf655224d"
+      ],
+      "entityNames": [
+        "Progress Software"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c84cdda2fd904dda",
+          "subject": "Progress Software",
+          "object": "Domo's AI and Data Platform Business",
+          "quote": "Progress Software to Acquire Domo's AI and Data Platform Business"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9ced96c038a0085e",
+          "publisher": "progress.com",
+          "url": "https://progress.com/?post_type=product"
+        }
+      ],
+      "sourceUrl": "https://progress.com/?post_type=product",
+      "publisher": "progress.com",
+      "sourceExcerpt": "Progress Software to Acquire Domo's AI and Data Platform Business"
+    },
+    {
+      "id": "EV-33db6a2054f77837",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "可灵AI完成超15亿新融资，国家人工智能基金入局",
+      "originalTitle": "",
+      "subject": "可灵AI",
+      "action": "完成超15亿新融资",
+      "object": "，国家人工智能基金入局",
+      "metrics": [
+        "15亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-3458b4e8a2fa5385",
+          "CL-34fcfa2323ac3cc6"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-fc94fbec023bffba"
+      ],
+      "entityNames": [
+        "可灵AI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-3458b4e8a2fa5385",
+          "subject": "可灵AI",
+          "object": "，国家人工智能基金入局",
+          "quote": "可灵AI完成超15亿新融资，国家人工智能基金入局"
+        },
+        {
+          "id": "CL-34fcfa2323ac3cc6",
+          "subject": "可灵AI",
+          "object": "，国家人工智能基金入局",
+          "quote": "可灵AI完成超15亿新融资，国家人工智能基金入局"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-01ad053ef88988f8",
+          "publisher": "stock.10jqka.com.cn",
+          "url": "https://stock.10jqka.com.cn/20260901/c679503461.shtml"
+        }
+      ],
+      "sourceUrl": "https://stock.10jqka.com.cn/20260901/c679503461.shtml",
+      "publisher": "stock.10jqka.com.cn",
+      "sourceExcerpt": "可灵AI完成超15亿新融资，国家人工智能基金入局"
+    },
+    {
+      "id": "EV-a40e5e8c638e323d",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Aranya融资1100万美元，将裸机服务器在48小时内转化为AI集群",
+      "originalTitle": "Aranya raises $11M to turn bare-metal servers into AI clusters in less than 48 hours - SiliconANGLE",
+      "subject": "Aranya",
+      "action": "raises",
+      "object": "$11M to turn bare-metal servers into AI clusters in less than 48 hours - SiliconANGLE",
+      "metrics": [
+        "$11M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-76eda8ba20686b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a72632b4557320ad",
+            "fundingInsightId": "FI-0541edd2dc662a1b"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "observability_evaluation",
+            "name": "可观测与评估",
+            "entityIds": [
+              "EN-76eda8ba20686b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b7292f5d12f01f9c",
+            "fundingInsightId": "FI-0541edd2dc662a1b"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "ai_observability_governance",
+            "name": "AI 可观测与治理",
+            "entityIds": [
+              "EN-76eda8ba20686b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ee03cb88e6834fb4",
+            "fundingInsightId": "FI-0541edd2dc662a1b"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-76eda8ba20686b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bc8cec8054619730",
+            "fundingInsightId": "FI-0541edd2dc662a1b"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-76eda8ba20686b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-12603be467b3982d",
+            "fundingInsightId": "FI-0541edd2dc662a1b"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-76eda8ba20686b8e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-71f24957982c55d7",
+            "fundingInsightId": "FI-0541edd2dc662a1b"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "ai_observability_governance",
+          "name": "AI 可观测与治理",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ee03cb88e6834fb4",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a72632b4557320ad",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b7292f5d12f01f9c",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bc8cec8054619730",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-71f24957982c55d7",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-12603be467b3982d",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a72632b4557320ad",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b7292f5d12f01f9c",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "ai_observability_governance",
+          "name": "AI 可观测与治理",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ee03cb88e6834fb4",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bc8cec8054619730",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-12603be467b3982d",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-76eda8ba20686b8e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-71f24957982c55d7",
+          "fundingInsightId": "FI-0541edd2dc662a1b"
+        }
+      ],
+      "entityIds": [
+        "EN-76eda8ba20686b8e"
+      ],
+      "entityNames": [
+        "Aranya"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-b7fe4e20952011d7",
+          "subject": "Aranya",
+          "object": "$11M to turn bare-metal servers into AI clusters in less than 48 hours - SiliconANGLE",
+          "quote": "Aranya raises $11M to turn bare-metal servers into AI clusters in less than 48 hours"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d14aedc29e216c93",
+          "publisher": "siliconangle.com",
+          "url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours"
+        }
+      ],
+      "sourceUrl": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours",
+      "publisher": "siliconangle.com",
+      "sourceExcerpt": "Aranya raises $11M to turn bare-metal servers into AI clusters in less than 48 hours"
+    },
+    {
+      "id": "EV-b9d8b3582f12bdc7",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+      "originalTitle": "",
+      "subject": "AI 安全初创公司 AIR 出手隐身并",
+      "action": "融资",
+      "object": "5000 万美元，为企业审查 AI 智能体所用技能和插件",
+      "metrics": [
+        "$50M",
+        "$50 million",
+        "$10 million",
+        "$40 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1e3e8fd3808adfe2",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "observability_evaluation",
+            "name": "可观测与评估",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0c8f8adbb7bf20a2",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "ai_observability_governance",
+            "name": "AI 可观测与治理",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-af842000e2e84c50",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f123e6d0b84c2af0",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-145c6d8c5996e867",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-15d54f5bfc3e1478",
+            "fundingInsightId": "FI-88967eae3befde75"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bd9d111b6cde741c",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "ai_observability_governance",
+          "name": "AI 可观测与治理",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af842000e2e84c50",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1e3e8fd3808adfe2",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0c8f8adbb7bf20a2",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f123e6d0b84c2af0",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-15d54f5bfc3e1478",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bd9d111b6cde741c",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-145c6d8c5996e867",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1e3e8fd3808adfe2",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0c8f8adbb7bf20a2",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "ai_observability_governance",
+          "name": "AI 可观测与治理",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af842000e2e84c50",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f123e6d0b84c2af0",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-145c6d8c5996e867",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-15d54f5bfc3e1478",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bd9d111b6cde741c",
+          "fundingInsightId": "FI-88967eae3befde75"
+        }
+      ],
+      "entityIds": [
+        "EN-9fe430e5274621be"
+      ],
+      "entityNames": [
+        "AIR"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-32320ddab6928430",
+          "subject": "AI 安全初创公司 AIR 出手隐身并",
+          "object": "5000 万美元，为企业审查 AI 智能体所用技能和插件",
+          "quote": "AIR raises $50M to help companies vet the skills and add-ons AI agents use"
+        },
+        {
+          "id": "CL-2ccc2eac77940643",
+          "subject": "AI 安全初创公司 AIR 出手隐身并",
+          "object": "5000 万美元，为企业审查 AI 智能体所用技能和插件",
+          "quote": "AI security startup AIR believes companies will need a way to monitor that supply chain, and it’s now coming out of stealth with $50 million raised across two seed rounds to build that product."
+        },
+        {
+          "id": "CL-287e24678cc584d5",
+          "subject": "AI 安全初创公司 AIR 出手隐身并",
+          "object": "5000 万美元，为企业审查 AI 智能体所用技能和插件",
+          "quote": "The funding rounds closed within weeks of each other, Saban told TechCrunch, with the first round raising $10 million, and the second $40 million. Sequoia led the first round, while Greenoaks led the second, Saban said. Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-452a00717604869d",
+          "publisher": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+      "publisher": "TechCrunch：AI（RSS）",
+      "sourceExcerpt": "AIR raises $50M to help companies vet the skills and add-ons AI agents use"
+    },
+    {
+      "id": "EV-e5c4c6c038b4975f",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "瑞典初创公司 Speya 品牌重塑并获 600 万瑞典克朗，用于 AI 智能体供应商评估平台",
+      "originalTitle": "Swedish Startup Speya Rebrands and Secures 6 Million SEK for AI-Powered Supplier Assessment Platform - EU Startups News",
+      "subject": "Speya",
+      "action": "funding",
+      "object": "6 million SEK seed funding round",
+      "metrics": [
+        "6 million",
+        "$540,000"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-2d4d500a67aa336e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-2d4d500a67aa336e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-2d4d500a67aa336e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2d4d500a67aa336e"
+      ],
+      "entityNames": [
+        "Speya"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-d9ba7db34adca603",
+          "subject": "Speya",
+          "object": "6 million SEK seed funding round",
+          "quote": "Speya , a Swedish startup formerly known as Find My Factory, has announced a rebrand alongside a 6 million SEK ($540,000) seed funding round to advance its artificial intelligence-driven supplier review platform."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-953ffc7f033d5f2c",
+          "publisher": "eustartups.news",
+          "url": "https://eustartups.news/swedish-startup-speya-rebrands-and-secures-6-million-sek-for-ai-powered-supplier-assessment-platform"
+        }
+      ],
+      "sourceUrl": "https://eustartups.news/swedish-startup-speya-rebrands-and-secures-6-million-sek-for-ai-powered-supplier-assessment-platform",
+      "publisher": "eustartups.news",
+      "sourceExcerpt": "Speya , a Swedish startup formerly known as Find My Factory, has announced a rebrand alongside a 6 million SEK ($540,000) seed funding round to advance its artificial intelligence-driven supplier review platform."
+    },
+    {
+      "id": "EV-e894f69f46d6cb4d",
+      "dataDate": "2026-09-02",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "VC疯了！200万现金冠军奖，又花4000万造了一座AI「创业乌托邦」",
+      "originalTitle": "",
+      "subject": "德邻资本",
+      "action": "funding",
+      "object": "德邻杯2026AI创业大赛冠军",
+      "metrics": [
+        "200万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8ec0ceca62dd17f3"
+      ],
+      "entityNames": [
+        "德邻资本"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fbb444bc0f89ac7d",
+          "subject": "德邻资本",
+          "object": "德邻杯2026AI创业大赛冠军",
+          "quote": "「德邻杯2026AI创业大赛」 ，冠军独享 200万元现金 ，无条件、不占股份。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-0f5eafa077b21eec",
+          "publisher": "量子位",
+          "url": "https://qbitai.com/2026/08/481928.html"
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/08/481928.html",
+      "publisher": "量子位",
+      "sourceExcerpt": "「德邻杯2026AI创业大赛」 ，冠军独享 200万元现金 ，无条件、不占股份。"
+    },
     {
       "id": "EV-3697ca2d5bfefff7",
       "dataDate": "2026-09-01",
@@ -136879,6 +137839,821 @@
       "sourceExcerpt": "Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding"
     },
     {
+      "id": "EV-1f579f5061b3fad3",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "浙北Token运营中心上线：构建算力超市，赋能企业AI转型新路径-人工智能-ITBear科技资讯",
+      "originalTitle": "",
+      "subject": "浙北Token运营中心",
+      "action": "上线",
+      "object": "：构建算力超市，赋能企业AI转型新路径-人工智能-ITBear科技资讯",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-4f5a879000761e8f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-4f5a879000761e8f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-4f5a879000761e8f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-4f5a879000761e8f"
+      ],
+      "entityNames": [
+        "浙北Token运营中心"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-1d5101ea2c27489f",
+          "subject": "浙北Token运营中心",
+          "object": "：构建算力超市，赋能企业AI转型新路径-人工智能-ITBear科技资讯",
+          "quote": "浙北Token运营中心上线：构建算力超市，赋能企业AI转型新路径-人工智能-ITBear科技资讯"
+        },
+        {
+          "id": "CL-a7d73d4f84b43a32",
+          "subject": "浙北Token运营中心",
+          "object": "：构建算力超市，赋能企业AI转型新路径-人工智能-ITBear科技资讯",
+          "quote": "博通发布VMWare AI工厂：助力企业私有云AI部署更高效便捷 09-01"
+        },
+        {
+          "id": "CL-f17395d7608b447b",
+          "subject": "浙北Token运营中心",
+          "object": "：构建算力超市，赋能企业AI转型新路径-人工智能-ITBear科技资讯",
+          "quote": "浙北Token运营中心上线：构建算力超市，赋能企业AI转型新路径"
+        },
+        {
+          "id": "CL-d547ed4e149a204a",
+          "subject": "浙北Token运营中心",
+          "object": "：构建算力超市，赋能企业AI转型新路径-人工智能-ITBear科技资讯",
+          "quote": "业内人士认为，浙北Token运营中心的上线填补了湖州在算力和模型统一调度运营方面的空白，为中小企业智能化转型提供了低成本通道，同时也为湖州融入长三角算力协同网络、抢占人工智能产业赛道提供了关键基础设施支撑。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1cb04749a486d6a6",
+          "publisher": "itbear.com.cn",
+          "url": "https://itbear.com.cn/html/2026-09/1533869.html"
+        }
+      ],
+      "sourceUrl": "https://itbear.com.cn/html/2026-09/1533869.html",
+      "publisher": "itbear.com.cn",
+      "sourceExcerpt": "浙北Token运营中心上线：构建算力超市，赋能企业AI转型新路径-人工智能-ITBear科技资讯"
+    },
+    {
+      "id": "EV-0884926673438e82",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "北京首个AI算力共享智能工厂投产-国际在线",
+      "originalTitle": "",
+      "subject": "软通华方通州智能共享工厂",
+      "action": "hardware_deployment",
+      "object": "北京首个AI算力共享智能工厂",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-23be99c23bd68620"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-23be99c23bd68620"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-23be99c23bd68620"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-23be99c23bd68620"
+      ],
+      "entityNames": [
+        "软通华方通州智能共享工厂"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-e2c75077b1177374",
+          "subject": "软通华方通州智能共享工厂",
+          "object": "北京首个AI算力共享智能工厂",
+          "quote": "软通华方通州智能共享工厂正式投产，首台液冷服务器下线。据悉，这是北京首个AI算力共享智能工厂。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-2e53e7125b53bc95",
+          "publisher": "city.cri.cn",
+          "url": "https://city.cri.cn/20260901/4cf976e9-cb99-412d-ba3d-462bb61a2d03.html"
+        }
+      ],
+      "sourceUrl": "https://city.cri.cn/20260901/4cf976e9-cb99-412d-ba3d-462bb61a2d03.html",
+      "publisher": "city.cri.cn",
+      "sourceExcerpt": "软通华方通州智能共享工厂正式投产，首台液冷服务器下线。据悉，这是北京首个AI算力共享智能工厂。"
+    },
+    {
+      "id": "EV-136ddc4cd6223f81",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "韩国将投入1130亿韩元用于创新产品试点采购",
+      "originalTitle": "Korea to Spend 113 Billion Won on Innovative Product Pilot Purchases - Seoul Economic Daily",
+      "subject": "Korea to Spend 113 Billion Won on Innovative Product",
+      "action": "Pilot",
+      "object": "Purchases - Seoul Economic Daily",
+      "metrics": [
+        "113 Billion",
+        "372.3 billion",
+        "113 billion",
+        "30.6 billion",
+        "13 billion"
+      ],
+      "locations": [
+        "Korea"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4d42a268c39b1dcc"
+      ],
+      "entityNames": [
+        "Public Procurement Service"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-6635e67e1edf1318",
+          "subject": "Korea to Spend 113 Billion Won on Innovative Product",
+          "object": "Purchases - Seoul Economic Daily",
+          "quote": "Korea to Spend 113 Billion Won on Innovative Product Pilot Purchases"
+        },
+        {
+          "id": "CL-0c2fd6e388edbe67",
+          "subject": "Korea to Spend 113 Billion Won on Innovative Product",
+          "object": "Purchases - Seoul Economic Daily",
+          "quote": "Korea's Public Procurement Service set a 372.3 billion won budget for 2027, including 113 billion won for innovative product pilot purchases."
+        },
+        {
+          "id": "CL-4a20c89e42e6ca70",
+          "subject": "Korea to Spend 113 Billion Won on Innovative Product",
+          "object": "Purchases - Seoul Economic Daily",
+          "quote": "DAEJEON — South Korea's Public Procurement Service will sharply expand pilot purchases of innovative products in 2027 as part of a broader push to strengthen innovation-driven procurement."
+        },
+        {
+          "id": "CL-e4204268aab5112f",
+          "subject": "Korea to Spend 113 Billion Won on Innovative Product",
+          "object": "Purchases - Seoul Economic Daily",
+          "quote": "For next year, the agency allocated 113 billion won for pilot purchases of innovative products, an increase of 30.6 billion won from this year. It also created a new 13 billion won budget line tied to government-wide demonstration programs such as AX-SPRINT for emerging-industry technology products including AI, robots and drones, aiming to broadly disseminate the results of technology demonstrations."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e6600b17aa075eb1",
+          "publisher": "en.sedaily.com",
+          "url": "https://en.sedaily.com/society/2026/09/01/korea-to-spend-113-billion-won-on-innovative-product-pilot"
+        }
+      ],
+      "sourceUrl": "https://en.sedaily.com/society/2026/09/01/korea-to-spend-113-billion-won-on-innovative-product-pilot",
+      "publisher": "en.sedaily.com",
+      "sourceExcerpt": "Korea to Spend 113 Billion Won on Innovative Product Pilot Purchases"
+    },
+    {
+      "id": "EV-6e8e34c13f9125a3",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英国启动1亿英镑AI采购计划",
+      "originalTitle": "UK opens £100m AI procurement drive — Business Quarter",
+      "subject": "UK government",
+      "action": "procurement_contract",
+      "object": "£100 million artificial intelligence procurement programme",
+      "metrics": [
+        "£100 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-c6d98ffa6a60d2ff"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-c6d98ffa6a60d2ff"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-c6d98ffa6a60d2ff"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c6d98ffa6a60d2ff",
+        "EN-153e60515f449aa3"
+      ],
+      "entityNames": [
+        "UK Government",
+        "Ministry of Defence"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-b80779360d2e1122",
+          "subject": "UK government",
+          "object": "£100 million artificial intelligence procurement programme",
+          "quote": "The UK government has opened the first competitions under a £100 million artificial intelligence procurement programme designed to give British technology companies a route into public-sector contracts while testing AI against operational problems in health, defence, computing infrastructure, and cybersecurity."
+        },
+        {
+          "id": "CL-445f5820bb5853dd",
+          "subject": "Department of Health and Social Care",
+          "object": "systems capable of automating NHS workflows, coordinating care, and supporting decision-making",
+          "quote": "The first challenge, developed with the Department of Health and Social Care, will seek systems capable of automating NHS workflows, coordinating care, and supporting decision-making."
+        },
+        {
+          "id": "CL-a9817e09d6160070",
+          "subject": "Ministry of Defence",
+          "object": "connect data and frontier AI capabilities securely across defence systems",
+          "quote": "The Ministry of Defence is involved in a third competition intended to connect data and frontier AI capabilities securely across defence systems."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-227717b2ce252ce5",
+          "publisher": "businessquarter.co.uk",
+          "url": "https://businessquarter.co.uk/uk-opens-100m-ai-procurement-drive"
+        }
+      ],
+      "sourceUrl": "https://businessquarter.co.uk/uk-opens-100m-ai-procurement-drive",
+      "publisher": "businessquarter.co.uk",
+      "sourceExcerpt": "The UK government has opened the first competitions under a £100 million artificial intelligence procurement programme designed to give British technology companies a route into public-sector contracts while testing AI against operational problems in health, defence, computing infrastructure, and cybersecurity."
+    },
+    {
+      "id": "EV-81318fb4bcdb926a",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 与英伟达支持的 Lambda 签署 350 亿美元云计算协议",
+      "originalTitle": "Anthropic Inks $35 Billion Cloud Compute Deal With Nvidia-Backed Lambda - TechGolly",
+      "subject": "Anthropic",
+      "action": "procurement_contract",
+      "object": "Anthropic Inks $35 Billion Cloud Compute Deal With Nvidia-Backed Lambda - TechGolly",
+      "metrics": [
+        "$35 billion",
+        "$45 billion",
+        "$80 billion",
+        "$35 Billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fe0a99861c5b0761",
+          "subject": "Anthropic",
+          "object": "Anthropic Inks $35 Billion Cloud Compute Deal With Nvidia-Backed Lambda - TechGolly",
+          "quote": "Anthropic signed a $35 billion cloud computing agreement with Nvidia-backed cloud provider Lambda to secure dedicated AI chip capacity."
+        },
+        {
+          "id": "CL-0c0634d0ef7c4401",
+          "subject": "Anthropic",
+          "object": "Anthropic Inks $35 Billion Cloud Compute Deal With Nvidia-Backed Lambda - TechGolly",
+          "quote": "Artificial intelligence developer Anthropic signed a massive $35 billion cloud computing agreement with Lambda, a specialized graphics processing unit (GPU) cloud provider backed by Nvidia. The multi-year contract secures vast computational power to support the rapid growth of Anthropic’s Claude conversational assistant and next-generation frontier models. The deal represents one of the largest infrastructure agreements in AI history, highlighting the astronomical capital required to build and deploy advanced generative artificial intelligence."
+        },
+        {
+          "id": "CL-75ba81fee60e77a1",
+          "subject": "Anthropic",
+          "object": "Anthropic Inks $35 Billion Cloud Compute Deal With Nvidia-Backed Lambda - TechGolly",
+          "quote": "This $35 billion contract follows another massive computing transaction that Anthropic finalized earlier this month. The AI company signed a $45 billion computing agreement with Nscale, another Nvidia-backed specialized cloud provider, to lease computing capacity from a major facility in West Virginia. Together, these two agreements represent an unprecedented $80 billion infrastructure commitment aimed at locking down GPU supply through the end of the decade."
+        },
+        {
+          "id": "CL-737f7e0eabd71336",
+          "subject": "Anthropic",
+          "object": "Anthropic Inks $35 Billion Cloud Compute Deal With Nvidia-Backed Lambda - TechGolly",
+          "quote": "Anthropic Inks $35 Billion Cloud Compute Deal With Nvidia-Backed Lambda"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-262da241bcf2a97d",
+          "publisher": "techgolly.com",
+          "url": "https://techgolly.com/news/anthropic-inks-35-billion-cloud-compute-deal-with-nvidia-backed-lambda"
+        }
+      ],
+      "sourceUrl": "https://techgolly.com/news/anthropic-inks-35-billion-cloud-compute-deal-with-nvidia-backed-lambda",
+      "publisher": "techgolly.com",
+      "sourceExcerpt": "Anthropic signed a $35 billion cloud computing agreement with Nvidia-backed cloud provider Lambda to secure dedicated AI chip capacity."
+    },
+    {
+      "id": "EV-a56569d808206c63",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "内布拉斯加州在成功试点后扩大Tyler Technologies的AI赋能解决方案覆盖范围",
+      "originalTitle": "Nebraska Expands Tyler Technologies’ AI Enabled Solutions Footprint Following Successful Pilot Program | MarketMinute",
+      "subject": "Nebraska Expands Tyler Technologies’ AI Enabled Solutions Footprint Following Successful",
+      "action": "Pilot",
+      "object": "Program | MarketMinute",
+      "metrics": [
+        "100%",
+        "20%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-33fbed2576350d0f"
+      ],
+      "entityNames": [
+        "Tyler Technologies"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c0ba17439e31e08a",
+          "subject": "Nebraska Expands Tyler Technologies’ AI Enabled Solutions Footprint Following Successful",
+          "object": "Program | MarketMinute",
+          "quote": "Nebraska Expands Tyler Technologies’ AI Enabled Solutions Footprint Following Successful Pilot Program"
+        },
+        {
+          "id": "CL-6fbb986fd6dd9c2e",
+          "subject": "Nebraska Expands Tyler Technologies’ AI Enabled Solutions Footprint Following Successful",
+          "object": "Program | MarketMinute",
+          "quote": "Tyler Technologies, Inc. ( NYSE: TYL ) today announced that the state of Nebraska has selected Tyler’s Resident AI Assistant for statewide deployment following a successful pilot at the Nebraska Department of Motor Vehicles (DMV). The Nebraska DMV is also expanding its use of Tyler’s Document Automation platform to modernize motor carrier operations and strengthen compliance processes."
+        },
+        {
+          "id": "CL-3477e82f72cea0db",
+          "subject": "Nebraska Expands Tyler Technologies’ AI Enabled Solutions Footprint Following Successful",
+          "object": "Program | MarketMinute",
+          "quote": "In addition to the statewide AI initiative, the Nebraska DMV is implementing Tyler’s Document Automation platform to support motor carrier vehicle identification number (VIN) validation processes. The solution is expected to provide 100% audit capability across nearly 500,000 VIN records while allowing staff to spend more time assisting residents. The rollout will begin on Nebraska.gov before expanding to participating agencies."
+        },
+        {
+          "id": "CL-de7bd93e9dcd9af9",
+          "subject": "Nebraska Expands Tyler Technologies’ AI Enabled Solutions Footprint Following Successful",
+          "object": "Program | MarketMinute",
+          "quote": "“The results from our DMV pilot demonstrated that AI improves resident experience while reducing pressure on agency resources,” said Mitch Greenwall, deputy director of the Nebraska DMV. “In just three months, the Resident AI Assistant answered more than 88,000 questions from over 38,000 users and helped reduce call volume by up to 20% in key service areas. Expanding this capability statewide will make government information more accessible for all Nebraskans.”"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a1440b965859c823",
+          "publisher": "2swffwnbc.marketminute.com",
+          "url": "https://2swffwnbc.marketminute.com/article/bizwire-2026-9-1-nebraska-expands-tyler-technologies-ai-enabled-solutions-footprint-following-successful-pilot-program"
+        }
+      ],
+      "sourceUrl": "https://2swffwnbc.marketminute.com/article/bizwire-2026-9-1-nebraska-expands-tyler-technologies-ai-enabled-solutions-footprint-following-successful-pilot-program",
+      "publisher": "2swffwnbc.marketminute.com",
+      "sourceExcerpt": "Nebraska Expands Tyler Technologies’ AI Enabled Solutions Footprint Following Successful Pilot Program"
+    },
+    {
+      "id": "EV-fec0251eafea1a20",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "范式智能拟出资超 10 亿元采购华为昇腾 950 芯片用于大模型落地",
+      "originalTitle": "",
+      "subject": "范式智能拟出资超 10 亿元采购华为昇腾 950",
+      "action": "芯片用于大模型落地",
+      "object": "范式智能拟出资超 10 亿元采购华为昇腾 950 芯片用于大模型落地",
+      "metrics": [
+        "10 亿",
+        "4 亿",
+        "22.37 亿",
+        "2.8 万"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-f28815cef59307a3",
+          "CL-6c3e9d74931f6cbe",
+          "CL-eaa2541afafb637b",
+          "CL-022e489723099aa5"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-b81c8201acfc7639"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-b81c8201acfc7639"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-b81c8201acfc7639"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-b81c8201acfc7639"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-b81c8201acfc7639"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-b81c8201acfc7639"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b81c8201acfc7639"
+      ],
+      "entityNames": [
+        "Huawei"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-f28815cef59307a3",
+          "subject": "范式智能拟出资超 10 亿元采购华为昇腾 950",
+          "object": "9 月 1 日上午消息，新浪科技从知情人士处独家获悉，港股上市公司范式智能近期与华为达成了一项大规模算力订单合作： 范式将出资超 10 亿元采购华为昇腾 950 芯片 ，用于支撑 AI 大模型在金融、制造等核心领域的落地。",
+          "quote": "9 月 1 日上午消息，新浪科技从知情人士处独家获悉，港股上市公司范式智能近期与华为达成了一项大规模算力订单合作： 范式将出资超 10 亿元采购华为昇腾 950 芯片 ，用于支撑 AI 大模型在金融、制造等核心领域的落地。"
+        },
+        {
+          "id": "CL-6c3e9d74931f6cbe",
+          "subject": "范式智能拟出资超 10 亿元采购华为昇腾 950",
+          "object": "据前述知情人士透露，在围绕此次合作的高层战略会晤中，范式创始人兼 CEO 戴文渊与华为常务董事杨超斌等华为及范式智能核心管理层多人出席，就算力合作进行了交流。",
+          "quote": "据前述知情人士透露，在围绕此次合作的高层战略会晤中，范式创始人兼 CEO 戴文渊与华为常务董事杨超斌等华为及范式智能核心管理层多人出席，就算力合作进行了交流。"
+        },
+        {
+          "id": "CL-eaa2541afafb637b",
+          "subject": "范式智能拟出资超 10 亿元采购华为昇腾 950",
+          "object": "公开信息显示，今年 4 月，范式曾公告拟以 4 亿元采购 GPU 服务器，用于推理训练及 API 支撑；其最新中报也披露，今年上半年公司资本开支高达 22.37 亿元，战略性加码算力储备，期末可用算力规模已达 2.8 万 PFLOPS。",
+          "quote": "公开信息显示，今年 4 月，范式曾公告拟以 4 亿元采购 GPU 服务器，用于推理训练及 API 支撑；其最新中报也披露，今年上半年公司资本开支高达 22.37 亿元，战略性加码算力储备，期末可用算力规模已达 2.8 万 PFLOPS。"
+        },
+        {
+          "id": "CL-022e489723099aa5",
+          "subject": "范式智能拟出资超 10 亿元采购华为昇腾 950",
+          "object": "范式智能出资 10 亿元采购华为昇腾 950，用于 AI 大模型落地 - IT之家",
+          "quote": "范式智能出资 10 亿元采购华为昇腾 950，用于 AI 大模型落地 - IT之家"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9401da2f696c57a6",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/996/745.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/996/745.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "9 月 1 日上午消息，新浪科技从知情人士处独家获悉，港股上市公司范式智能近期与华为达成了一项大规模算力订单合作： 范式将出资超 10 亿元采购华为昇腾 950 芯片 ，用于支撑 AI 大模型在金融、制造等核心领域的落地。"
+    },
+    {
       "id": "EV-04b84c1f3430c055",
       "dataDate": "2026-09-01",
       "date": "2026-09-01",
@@ -137021,6 +138796,164 @@
       "sourceUrl": "https://app.govly.com/public/explore/awards/artificial-intelligence-awards",
       "publisher": "app.govly.com",
       "sourceExcerpt": "The Department of Defense's $27.6 million definitive contract to MORSECORP, INC in April 2024 stands out as the largest recent federal AI award"
+    },
+    {
+      "id": "EV-42460c75ef9dab9b",
+      "dataDate": "2026-09-02",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-02",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英国AI公司修复公共服务竞赛获1亿英镑资助 - GOV.UK",
+      "originalTitle": "£100 million competition to back British AI companies to fix public services - GOV.UK",
+      "subject": "UK Government",
+      "action": "procurement_contract",
+      "object": "Sovereign AI R&D Procurement Scheme",
+      "metrics": [
+        "£100 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c6d98ffa6a60d2ff"
+      ],
+      "entityNames": [
+        "UK Government"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-e8875fea933a8712",
+          "subject": "UK Government",
+          "object": "Sovereign AI R&D Procurement Scheme",
+          "quote": "the Government today launches the first procurement competitions under its £100 million Sovereign AI R&D Procurement Scheme"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d8846650281ddb47",
+          "publisher": "gov.uk",
+          "url": "https://gov.uk/government/news/100-million-competition-to-back-british-ai-companies-to-fix-public-services"
+        }
+      ],
+      "sourceUrl": "https://gov.uk/government/news/100-million-competition-to-back-british-ai-companies-to-fix-public-services",
+      "publisher": "gov.uk",
+      "sourceExcerpt": "the Government today launches the first procurement competitions under its £100 million Sovereign AI R&D Procurement Scheme"
+    },
+    {
+      "id": "EV-bf7ced1008b5cbc6",
+      "dataDate": "2026-09-02",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-02",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AMD、思科与HUMAIN扩大沙特阿拉伯AI基础设施，AMD Instinct系统正式上线",
+      "originalTitle": "AMD, Cisco and HUMAIN Expand Saudi Arabia’s AI Infrastructure as AMD Instinct Systems Go Live",
+      "subject": "HUMAIN",
+      "action": "hardware_deployment",
+      "object": "AMD Instinct MI355X GPU-based AI infrastructure",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-3c8b824c18029ad6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3c8b824c18029ad6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3c8b824c18029ad6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3c8b824c18029ad6"
+      ],
+      "entityNames": [
+        "HUMAIN"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-103511b14d32b22e",
+          "subject": "HUMAIN",
+          "object": "AMD Instinct MI355X GPU-based AI infrastructure",
+          "quote": "AMD Instinct MI355X GPU-based AI infrastructure built on Cisco Silicon One-based AI networking is now live in Saudi Arabia and serving HUMAIN customers in the Kingdom and beyond."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-eb6f1c65040c4c98",
+          "publisher": "newsroom.cisco.com",
+          "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/amd-cisco-and-humain-expand-saudi-arabia-ai-infrastructure.html"
+        }
+      ],
+      "sourceUrl": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/amd-cisco-and-humain-expand-saudi-arabia-ai-infrastructure.html",
+      "publisher": "newsroom.cisco.com",
+      "sourceExcerpt": "AMD Instinct MI355X GPU-based AI infrastructure built on Cisco Silicon One-based AI networking is now live in Saudi Arabia and serving HUMAIN customers in the Kingdom and beyond."
     },
     {
       "id": "EV-1a846b94337dd961",
@@ -167055,6 +168988,165 @@
       "sourceExcerpt": "The General Services Administration has struck a new agentic artificial intelligence OneGov deal with CORAS"
     },
     {
+      "id": "EV-3ad9a2bb87c407dd",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "CrowdStrike 在 Fal.Con 2026 发布 agentic 网络安全系统 SafeMind，与 NVIDIA 合作构建",
+      "originalTitle": "",
+      "subject": "CrowdStrike 在 Fal.Con 2026 发布 agentic 网络安全系统 SafeMind，与 NVIDIA",
+      "action": "合作",
+      "object": "构建",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-75f137d36156c707",
+          "subject": "CrowdStrike 在 Fal.Con 2026 发布 agentic 网络安全系统 SafeMind，与 NVIDIA",
+          "object": "构建",
+          "quote": "“Together with NVIDIA, we built cybersecurity’s first complete agentic system for cybersecurity, including the first frontier models and harness purpose-built for defenders,” Kurtz said. “This isn’t a copilot baked into someone else’s intelligence. It’s not a chatbot with a security skin. It is a frontier-class model built and trained by CrowdStrike on our data in partnership with NVIDIA.”"
+        },
+        {
+          "id": "CL-bf9f14ba5ce98fb2",
+          "subject": "CrowdStrike 在 Fal.Con 2026 发布 agentic 网络安全系统 SafeMind，与 NVIDIA",
+          "object": "构建",
+          "quote": "With NVIDIA’s full-stack accelerated computing platform, the collaboration runs from the chips up through the models to the harnesses acting on what those models find. For Kurtz, that’s the point."
+        },
+        {
+          "id": "CL-8e111db1ecb0c24d",
+          "subject": "CrowdStrike 在 Fal.Con 2026 发布 agentic 网络安全系统 SafeMind，与 NVIDIA",
+          "object": "构建",
+          "quote": "“We’re at an inflection point in cybersecurity,” Jensen Huang told a sold-out crowd at CrowdStrike’s Fal.Con 2026 in Las Vegas Tuesday. Attacks are now automated. Defense has to be, too."
+        },
+        {
+          "id": "CL-370d178d2a8bab48",
+          "subject": "CrowdStrike 在 Fal.Con 2026 发布 agentic 网络安全系统 SafeMind，与 NVIDIA",
+          "object": "构建",
+          "quote": "The NVIDIA founder and CEO joined CrowdStrike CEO and founder George Kurtz to announce CrowdStrike SafeMind , its agentic cybersecurity system developed by the CrowdStrike Cyber Superintelligence Lab."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d3473a559642516b",
+          "publisher": "NVIDIA Blog（RSS）",
+          "url": "https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026"
+        }
+      ],
+      "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026",
+      "publisher": "NVIDIA Blog（RSS）",
+      "sourceExcerpt": "“Together with NVIDIA, we built cybersecurity’s first complete agentic system for cybersecurity, including the first frontier models and harness purpose-built for defenders,” Kurtz said. “This isn’t a copilot baked into someone else’s intelligence. It’s not a chatbot with a security skin. It is a frontier-class model built and trained by CrowdStrike on our data in partnership with NVIDIA.”"
+    },
+    {
       "id": "EV-bf23c87d0aa1f205",
       "dataDate": "2026-09-01",
       "date": "2026-08-31",
@@ -185294,6 +187386,1763 @@
       "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
     },
     {
+      "id": "EV-3590ab0568b70ba2",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic向监管机构、媒体、事实核查人员等开放Claude AI文本检测功能",
+      "originalTitle": "Anthropic opens Claude AI text detection to regulators, media, fact-checkers, and others",
+      "subject": "Anthropic",
+      "action": "product_release",
+      "object": "API for Claude digital watermark detection",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-d2fb7d4e78cef111"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude AI"
+      ],
+      "productName": "Claude AI",
+      "products": [
+        {
+          "name": "Claude AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-816d08c669d6bb56",
+          "subject": "Anthropic",
+          "object": "API for Claude digital watermark detection",
+          "quote": "Anthropic is launching an API that lets regulators, media outlets, and researchers check whether text carries Claude's digital watermark."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-0998bd120edf7aaa",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/anthropic-opens-claude-ai-text-detection-to-regulators-media-fact-checkers-and-others"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/anthropic-opens-claude-ai-text-detection-to-regulators-media-fact-checkers-and-others",
+      "publisher": "The Decoder AI News",
+      "sourceExcerpt": "Anthropic is launching an API that lets regulators, media outlets, and researchers check whether text carries Claude's digital watermark."
+    },
+    {
+      "id": "EV-56a8650295d994ba",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "OpenAI 吸取“AI 越狱”事件教训，首个达“关键”门槛模型 Astra 因能力过强将限制网络安全功能",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 吸取“AI 越狱”事件教训，首个达“关键”门槛模型 Astra 因能力过强将限制网络安全功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-2cfbb82f2a433554",
+          "subject": "OpenAI",
+          "object": "OpenAI 吸取“AI 越狱”事件教训，首个达“关键”门槛模型 Astra 因能力过强将限制网络安全功能",
+          "quote": "IT之家 9 月 2 日消息，OpenAI 于当地时间 9 月 1 日宣布，该公司计划“很快”推出下一代 AI 模型 Astra，但将严格限制该模型网络安全功能的使用范围。"
+        },
+        {
+          "id": "CL-5df20bfc575049df",
+          "subject": "OpenAI",
+          "object": "OpenAI 吸取“AI 越狱”事件教训，首个达“关键”门槛模型 Astra 因能力过强将限制网络安全功能",
+          "quote": "此次发布计划出台的背景是，OpenAI 在 2026 年 7 月发生了一起 AI 智能体意外“越狱”并攻击 AI 平台 Hugging Face 的事件。"
+        },
+        {
+          "id": "CL-dc0a8a8d835686af",
+          "subject": "OpenAI",
+          "object": "OpenAI 吸取“AI 越狱”事件教训，首个达“关键”门槛模型 Astra 因能力过强将限制网络安全功能",
+          "quote": "OpenAI 在 8 月底发布的报告中承认，公司本可以更早做出反应以防止该事件发生。"
+        },
+        {
+          "id": "CL-9c0e74d7ba272180",
+          "subject": "OpenAI",
+          "object": "OpenAI 吸取“AI 越狱”事件教训，首个达“关键”门槛模型 Astra 因能力过强将限制网络安全功能",
+          "quote": "据介绍，Astra 是 OpenAI 旗下首个达到其《准备框架》（Preparedness Framework）中“关键”（Critical）网络安全能力门槛的模型。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5450142ae6b6a982",
+          "publisher": "IT之家",
+          "url": "https://ithome.com/0/997/207.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/997/207.htm",
+      "publisher": "IT之家",
+      "sourceExcerpt": "IT之家 9 月 2 日消息，OpenAI 于当地时间 9 月 1 日宣布，该公司计划“很快”推出下一代 AI 模型 Astra，但将严格限制该模型网络安全功能的使用范围。"
+    },
+    {
+      "id": "EV-5d6ae96065843410",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic推出Claude Fable 5.1，称其智能体工作成本降低高达45%",
+      "originalTitle": "Anthropic launches Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work",
+      "subject": "Anthropic",
+      "action": "launches",
+      "object": "Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-a92a398699e20046"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Fable 5.1"
+      ],
+      "productName": "Claude Fable 5.1",
+      "products": [
+        {
+          "name": "Claude Fable 5.1",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-e90c7be90e285339",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work",
+          "quote": "Anthropic launches Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work"
+        },
+        {
+          "id": "CL-60b72feebfb8a274",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work",
+          "quote": "Anthropic has released Claude Fable 5.1 and Mythos 5.1 models with price reductions on cached data and more precise safeguards that produce fewer false positives."
+        },
+        {
+          "id": "CL-d5d351e9f8f7e71f",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work",
+          "quote": "Anthropic launches Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work"
+        },
+        {
+          "id": "CL-606a7577d26805d8",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work",
+          "quote": "Anthropic has released Claude Fable 5.1 and Mythos 5.1 models with price reductions on cached data and more precise safeguards that produce fewer false positives."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ef10e815944c7e5d",
+          "publisher": "The Verge AI",
+          "url": "https://theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1"
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+      "publisher": "The Verge AI",
+      "sourceExcerpt": "Anthropic launches Claude Fable 5.1 and says it’s up to 45 percent cheaper for agentic work"
+    },
+    {
+      "id": "EV-6c1304bb9c6cc29e",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 发布 Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75%",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "发布",
+      "object": "Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75%",
+      "metrics": [
+        "75%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-a92a398699e20046",
+        "EN-5cef4a710b6fd009"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Fable 5.1",
+        "Mythos 5.1"
+      ],
+      "productName": "Claude Fable 5.1",
+      "products": [
+        {
+          "name": "Claude Fable 5.1",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Mythos 5.1",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-c7686dbcee715344",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75%",
+          "quote": "Anthropic 发布 Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75% - IT之家"
+        },
+        {
+          "id": "CL-3ae5eb023504a661",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75%",
+          "quote": "Anthropic 发布 Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75%"
+        },
+        {
+          "id": "CL-e9a89148a8dbc1eb",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75%",
+          "quote": "IT之家 9 月 2 日消息，当地时间 9 月 1 日，Anthropic 宣布推出 Claude Fable 5.1 和 Claude Mythos 5.1 模型。"
+        },
+        {
+          "id": "CL-ae71051203dbac66",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75%",
+          "quote": "数据保留方面，Anthropic 推出了全新的企业级前沿防护措施（Enterprise Frontier Safeguards，EFS）。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-557a73114d6ed2cf",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/997/193.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/997/193.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "Anthropic 发布 Claude Fable 5.1 和 Mythos 5.1：性能超越前代，缓存读取费用下调 75% - IT之家"
+    },
+    {
+      "id": "EV-8d3d2da24815d504",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "约翰迪尔为农民推出AI智能体聊天机器人",
+      "originalTitle": "John Deere launched an AI chatbot for farmers",
+      "subject": "John Deere",
+      "action": "launched",
+      "object": "an AI chatbot for farmers",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-e58c9634bf3a383f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-e58c9634bf3a383f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-e58c9634bf3a383f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e58c9634bf3a383f",
+        "EN-ad71a2b99af87961"
+      ],
+      "entityNames": [
+        "John Deere",
+        "AI chatbot"
+      ],
+      "productName": "AI chatbot",
+      "products": [
+        {
+          "name": "AI chatbot",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-624e9124fa132e55",
+          "subject": "John Deere",
+          "object": "an AI chatbot for farmers",
+          "quote": "John Deere launched an AI chatbot for farmers"
+        },
+        {
+          "id": "CL-a1ad4944327e001e",
+          "subject": "John Deere",
+          "object": "an AI chatbot for farmers",
+          "quote": "John Deere launched a “JD” AI chatbot in its Operations Center app that farmers can use to ask questions about their farm’s data and equipment."
+        },
+        {
+          "id": "CL-d65c76ba99e2f0bb",
+          "subject": "John Deere",
+          "object": "an AI chatbot for farmers",
+          "quote": "The press release didn’t mention which AI technology is behind this platform. But after fighting with farmers and the FTC for years over the right to repair, the news of Early Access Program testing for this bot comes with a mention of its 10-point Farmer Data Commitment saying it won’t sell the data, and lets farmers control third-party sharing:"
+        },
+        {
+          "id": "CL-46a9e91feee4de05",
+          "subject": "John Deere",
+          "object": "an AI chatbot for farmers",
+          "quote": "John Deere launched an AI chatbot for farmers"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c06c21416db5f94c",
+          "publisher": "The Verge AI",
+          "url": "https://theverge.com/ai-artificial-intelligence/987486/john-deere-jd-ai-chatbot"
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/987486/john-deere-jd-ai-chatbot",
+      "publisher": "The Verge AI",
+      "sourceExcerpt": "John Deere launched an AI chatbot for farmers"
+    },
+    {
+      "id": "EV-96ca024d2e76b973",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Google 员工分享如何设计可信的 AI 评测的五条规则",
+      "originalTitle": "",
+      "subject": "Google",
+      "action": "product_release",
+      "object": "suite of Agent Skills for Google products and technologies on GitHub",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-6f0fb18955ec0721"
+      ],
+      "entityNames": [
+        "Google",
+        "Agent Skills for Google"
+      ],
+      "productName": "Agent Skills for Google",
+      "products": [
+        {
+          "name": "Agent Skills for Google",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-a264bcb12c390b26",
+          "subject": "Google",
+          "object": "suite of Agent Skills for Google products and technologies on GitHub",
+          "quote": "As part of my work at Google, we are publishing a suite of Agent Skills for Google products and technologies on GitHub ."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f622c35afb54a2dc",
+          "publisher": "Google AI：DEV 作者专属（RSS）",
+          "url": "https://dev.to/googleai/how-to-design-ai-evaluations-you-can-actually-trust-41c3"
+        }
+      ],
+      "sourceUrl": "https://dev.to/googleai/how-to-design-ai-evaluations-you-can-actually-trust-41c3",
+      "publisher": "Google AI：DEV 作者专属（RSS）",
+      "sourceExcerpt": "As part of my work at Google, we are publishing a suite of Agent Skills for Google products and technologies on GitHub ."
+    },
+    {
+      "id": "EV-d60335a12d394f65",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.257 发布，默认模型改为 Claude Fable 5.1",
+      "originalTitle": "",
+      "subject": "Claude Code",
+      "action": "发布，默认模型",
+      "object": "改为 Claude Fable 5.1",
+      "metrics": [
+        "$10",
+        "$50 ",
+        "$0.25"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-a625159d18da5718"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-a625159d18da5718"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-a625159d18da5718"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a625159d18da5718",
+        "EN-a92a398699e20046"
+      ],
+      "entityNames": [
+        "Claude Code",
+        "Claude Fable 5.1"
+      ],
+      "productName": "Claude Fable 5.1",
+      "products": [
+        {
+          "name": "Claude Fable 5.1",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-1a807b2c45fbd83e",
+          "subject": "Claude Code",
+          "object": "Claude Fable 5.1",
+          "quote": "Added Claude Fable 5.1 ( claude-fable-5-1 ), now the default Fable model — 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b252e79944185ed5",
+          "publisher": "Claude Code：GitHub Releases（RSS）",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257"
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
+      "publisher": "Claude Code：GitHub Releases（RSS）",
+      "sourceExcerpt": "Added Claude Fable 5.1 ( claude-fable-5-1 ), now the default Fable model — 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads"
+    },
+    {
+      "id": "EV-ed28b389f079f0dc",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.258 发布，修复 macOS 12 启动失败等问题",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.258",
+      "action": "发布",
+      "object": "，修复 macOS 12 启动失败等问题",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Claude Code"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-6c8f90387c9b3b4b",
+          "subject": "Claude Code v2.1.258",
+          "object": "，修复 macOS 12 启动失败等问题",
+          "quote": "Fixed Claude Code failing to launch on macOS 12 (Monterey), a regression introduced in 2.1.255"
+        },
+        {
+          "id": "CL-11bbc5704b8b5b23",
+          "subject": "Claude Code v2.1.258",
+          "object": "，修复 macOS 12 启动失败等问题",
+          "quote": "Fixed remote and scheduled sessions failing with \"user messages must have non-empty content\" after a re-sent permission approval could not be applied"
+        },
+        {
+          "id": "CL-8870bdad8682c2cf",
+          "subject": "Claude Code v2.1.258",
+          "object": "，修复 macOS 12 启动失败等问题",
+          "quote": "There was an error while loading. Please reload this page ."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1f92034ec154e7b7",
+          "publisher": "Claude Code：GitHub Releases（RSS）",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.258"
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.258",
+      "publisher": "Claude Code：GitHub Releases（RSS）",
+      "sourceExcerpt": "Fixed Claude Code failing to launch on macOS 12 (Monterey), a regression introduced in 2.1.255"
+    },
+    {
+      "id": "EV-0990900bf0754803",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 新发布的 Fable 版本更便宜、限制更少",
+      "originalTitle": "Anthropic’s new Fable release is cheaper, less restrictive",
+      "subject": "Anthropic’s new Fable",
+      "action": "release",
+      "object": "is cheaper, less restrictive",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-a9bb92c88f467a8e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-a9bb92c88f467a8e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-a9bb92c88f467a8e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a9bb92c88f467a8e",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic’s new Fable",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-3252e626303d46f3",
+          "subject": "Anthropic’s new Fable",
+          "object": "is cheaper, less restrictive",
+          "quote": "Anthropic’s new Fable release is cheaper, less restrictive"
+        },
+        {
+          "id": "CL-cf388be254e72c09",
+          "subject": "Anthropic’s new Fable",
+          "object": "is cheaper, less restrictive",
+          "quote": "On Tuesday, Anthropic released Fable and Mythos 5.1, twinned versions of the company’s most advanced AI model. In addition to performance upgrades, the new Fable release includes changes meant to reduce token cost and false-positive restrictions from the model’s safeguards."
+        },
+        {
+          "id": "CL-b77ddf138aa1f56d",
+          "subject": "Anthropic’s new Fable",
+          "object": "is cheaper, less restrictive",
+          "quote": "As is common for an Anthropic release, the new models set records in a range of benchmarks, including Terminal-Bench 4.0 (for CLI-based coding) and Humanity’s Last Exam (for general reasoning). Anthropic also released three novel scientific findings generated by the models before their release, including a custom GPU optimization and a high-resolution map of Venus assembled from existing photos."
+        },
+        {
+          "id": "CL-3bff44bff1d8e467",
+          "subject": "Anthropic’s new Fable",
+          "object": "is cheaper, less restrictive",
+          "quote": "As with the previous Mythos model, Mythos 5.1 will only be available to registered Anthropic partners engaged in either cybersecurity or life sciences research. Fable 5.1, the unrestricted version, is available starting today on cloud platforms or through the Anthropic API."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d0d3b60a0017222c",
+          "publisher": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive",
+      "publisher": "TechCrunch AI",
+      "sourceExcerpt": "Anthropic’s new Fable release is cheaper, less restrictive"
+    },
+    {
+      "id": "EV-4a06a6a6b94c3c71",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "World Labs 发布世界模型 Atlas：面向空间智能的多模态自回归扩散 Transformer",
+      "originalTitle": "",
+      "subject": "World Labs",
+      "action": "发布世界模型",
+      "object": "Atlas：面向空间智能的多模态自回归扩散 Transformer",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-da2f0f03bc3a24f5"
+      ],
+      "entityNames": [
+        "World Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-cc626160d9ec6cad",
+          "subject": "World Labs",
+          "object": "Atlas",
+          "quote": "Today we are introducing Atlas, our next-generation world model."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-51d8c9df79fb02a8",
+          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://worldlabs.ai/blog/atlas"
+        }
+      ],
+      "sourceUrl": "https://worldlabs.ai/blog/atlas",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceExcerpt": "Today we are introducing Atlas, our next-generation world model."
+    },
+    {
+      "id": "EV-4f1b4e0af41abda6",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic的Claude Fable 5.1承诺以最高降低45%的成本提供更优编码与研究能力",
+      "originalTitle": "Anthropic's Claude Fable 5.1 promises better coding and research at up to 45 percent less",
+      "subject": "Anthropic",
+      "action": "model_release",
+      "object": "Claude Fable 5.1 and Mythos 5.1",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-a92a398699e20046",
+        "EN-5cef4a710b6fd009"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Fable 5.1",
+        "Mythos 5.1"
+      ],
+      "productName": "Claude Fable 5.1",
+      "products": [
+        {
+          "name": "Claude Fable 5.1",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Mythos 5.1",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-8f6edfe1b00a08d5",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5.1 and Mythos 5.1",
+          "quote": "Anthropic has released two new models, Claude Fable 5.1 and Mythos 5.1, delivering stronger coding performance and better text quality."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-0b1764ab6253200a",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less",
+      "publisher": "The Decoder AI News",
+      "sourceExcerpt": "Anthropic has released two new models, Claude Fable 5.1 and Mythos 5.1, delivering stronger coding performance and better text quality."
+    },
+    {
+      "id": "EV-53c7f7bbbb51b8ae",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 发布 Enterprise Frontier Safeguards：零数据保留与跨会话滥用监控兼得",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "发布",
+      "object": "Enterprise Frontier Safeguards：零数据保留与跨会话滥用监控兼得",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-ce177ba6dd222302"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Enterprise Frontier Safeguards"
+      ],
+      "productName": "Enterprise Frontier Safeguards",
+      "products": [
+        {
+          "name": "Enterprise Frontier Safeguards",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-9cf40016aea52d4b",
+          "subject": "Anthropic",
+          "object": "Enterprise Frontier Safeguards：零数据保留与跨会话滥用监控兼得",
+          "quote": "For this reason, we introduced 30-day data retention starting with Fable 5. This policy was not motivated by a desire to train on enterprise data: Anthropic has never trained on enterprise data without explicit permission, and never will."
+        },
+        {
+          "id": "CL-d14a771c3cca220d",
+          "subject": "Anthropic",
+          "object": "Enterprise Frontier Safeguards：零数据保留与跨会话滥用监控兼得",
+          "quote": "Developing Enterprise Frontier Safeguards with our customers \\ Anthropic"
+        },
+        {
+          "id": "CL-3bdc296e47d13219",
+          "subject": "Anthropic",
+          "object": "Enterprise Frontier Safeguards：零数据保留与跨会话滥用监控兼得",
+          "quote": "Developing Enterprise Frontier Safeguards with our customers"
+        },
+        {
+          "id": "CL-afd764bf2dd4fd73",
+          "subject": "Anthropic",
+          "object": "Enterprise Frontier Safeguards：零数据保留与跨会话滥用监控兼得",
+          "quote": "Today we’re announcing Enterprise Frontier Safeguards (EFS), a solution that combines the privacy of zero data retention (ZDR) with state-of-the-art safeguards for detecting misuse. EFS works by storing data in cloud infrastructure controlled by the customer, not Anthropic. EFS will be rolling out to customers in phases, starting later this fall. To make the transition smooth, eligible customers will receive ZDR on Fable 5 and Fable 5.1 until EFS is ready."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3811c715e5679a83",
+          "publisher": "Anthropic：Newsroom（网页）",
+          "url": "https://anthropic.com/news/enterprise-frontier-safeguards"
+        }
+      ],
+      "sourceUrl": "https://anthropic.com/news/enterprise-frontier-safeguards",
+      "publisher": "Anthropic：Newsroom（网页）",
+      "sourceExcerpt": "For this reason, we introduced 30-day data retention starting with Fable 5. This policy was not motivated by a desire to train on enterprise data: Anthropic has never trained on enterprise data without explicit permission, and never will."
+    },
+    {
+      "id": "EV-67adfb3393d95976",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "采购通过Civic Marketplace获得新的AI连接",
+      "originalTitle": "Procurement Gets New AI Connections via Civic Marketplace",
+      "subject": "Civic Marketplace",
+      "action": "product_release",
+      "object": "AI connectors",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-16d58f45cfadf19d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-777330f917ab8689",
+        "EN-2e67a5afbfcb3bc1"
+      ],
+      "entityNames": [
+        "Civic Marketplace",
+        "Microsoft",
+        "AI Connections",
+        "Procurement Gets New AI"
+      ],
+      "productName": "AI Connections",
+      "products": [
+        {
+          "name": "AI Connections",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        },
+        {
+          "name": "Procurement Gets New AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-ca071ccaa1acc9c1",
+          "subject": "Civic Marketplace",
+          "object": "AI connectors",
+          "quote": "The company says it has launched AI connectors — that is, software bridges — that can bring contract and supplier data into Claude, ChatGPT and Microsoft Copilot."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-2b40b5323c92e5f3",
+          "publisher": "govtech.com",
+          "url": "https://govtech.com/biz/procurement-gets-new-ai-connections-via-civic-marketplace"
+        }
+      ],
+      "sourceUrl": "https://govtech.com/biz/procurement-gets-new-ai-connections-via-civic-marketplace",
+      "publisher": "govtech.com",
+      "sourceExcerpt": "The company says it has launched AI connectors — that is, software bridges — that can bring contract and supplier data into Claude, ChatGPT and Microsoft Copilot."
+    },
+    {
+      "id": "EV-878b16fd5278ec4a",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google 与 NASA JPL 发布 MAPL-EMIT 深度学习框架，用卫星高光谱数据绘制全球甲烷排放",
+      "originalTitle": "",
+      "subject": "Google 与 NASA JPL",
+      "action": "发布",
+      "object": "MAPL-EMIT 深度学习框架，用卫星高光谱数据绘制全球甲烷排放",
+      "metrics": [
+        "84%"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-82c9fbd57dda8bbb",
+        "EN-1d87a28a87b7507b"
+      ],
+      "entityNames": [
+        "Google",
+        "NASA JPL",
+        "MAPL-EMIT"
+      ],
+      "productName": "MAPL-EMIT",
+      "products": [
+        {
+          "name": "MAPL-EMIT",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-9803a7c7f92c4e51",
+          "subject": "Google 与 NASA JPL",
+          "object": "MAPL-EMIT 深度学习框架，用卫星高光谱数据绘制全球甲烷排放",
+          "quote": "By expanding our ability to detect plumes across the full EMIT data catalog, MAPL-EMIT provides a powerful new tool for local stakeholders, researchers, policymakers, and industries to identify methane emissions faster than ever. As NASA prepares to launch the next generation of imaging spectrometers that will increase coverage by a factor of 30–50 times , robust and automated techniques are more important than ever. We invite the broader scientific community to explore our newly released global plume database on Earth Engine along with an Earth Engine App for interactive visualization, download the trained model and synthetic plumes from Kaggle, and access our inference library on Github. W…"
+        },
+        {
+          "id": "CL-115aad44c36515be",
+          "subject": "Google 与 NASA JPL",
+          "object": "MAPL-EMIT 深度学习框架，用卫星高光谱数据绘制全球甲烷排放",
+          "quote": "We would like to thank individuals across Google and NASA JPL who carried out this work and made the launch possible, including (in alphabetical order): Alex Wilson, Anna M. Michalak , Varun Gulshan, Philip G. Brodrick, Andrew K. Thorpe, Christopher V. Arsdale, Burak Ekim, Carl Elkin, Tal Geller, Omry Gillon, Nita Goyal, Mansi Kansal, Roy Nadler, John Platt, Sergei Shames, Bijoy Shetty, Aaron Sonabend, Deepika Sukhija, Shahar Timnat, Maxim Neumann, Anton Raichuk, Frances Reuland, Adam R. Brandt, David R. Thompson, Robert O. Green, Jay Radzinski, Vishal V. Batchu, and Michelangelo Conserva."
+        },
+        {
+          "id": "CL-b78ef1ab044539ac",
+          "subject": "Google 与 NASA JPL",
+          "object": "MAPL-EMIT 深度学习框架，用卫星高光谱数据绘制全球甲烷排放",
+          "quote": "To track these emissions on a global scale, scientists increasingly rely on space-based imaging. A prime example is NASA’s Earth Surface Mineral Dust Source Investigation (EMIT) instrument on the International Space Station. While originally designed to map mineral composition in arid regions, scientists at NASA’s Jet Propulsion Laboratory (JPL) and the broader scientific community have leveraged EMIT's advanced hyperspectral capabilities to detect methane emissions. By recording hundreds of distinct bands of light for every pixel, it allows researchers to \"see\" the unique chemical fingerprints of these otherwise invisible gases."
+        },
+        {
+          "id": "CL-ba8fa7a38fe614b1",
+          "subject": "Google 与 NASA JPL",
+          "object": "MAPL-EMIT 深度学习框架，用卫星高光谱数据绘制全球甲烷排放",
+          "quote": "Building on these investments, in “ Global monitoring of methane point sources using deep learning on hyperspectral radiance measurements from EMIT ”, published in Proceedings of the National Academy of Sciences (PNAS), we describe a new approach that turns raw satellite data into scalable mitigation action. Methane Analysis and Plume Localization with EMIT (MAPL-EMIT) is a deep-learning framework that represents a significant step toward automating the detection, enhancement prediction, and source estimation of methane plumes globally. We demonstrate how MAPL-EMIT achieves a high recall of 84% on expert annotated plumes and has a high signal to noise ratio compared to existing matched-filte…"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-24b0e2e7520ee627",
+          "publisher": "Google Research：Blog（网页）",
+          "url": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning"
+        }
+      ],
+      "sourceUrl": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning",
+      "publisher": "Google Research：Blog（网页）",
+      "sourceExcerpt": "By expanding our ability to detect plumes across the full EMIT data catalog, MAPL-EMIT provides a powerful new tool for local stakeholders, researchers, policymakers, and industries to identify methane emissions faster than ever. As NASA prepares to launch the next generation of imaging spectrometers that will increase coverage by a factor of 30–50 times , robust and automated techniques are more important than ever. We invite the broader scientific community to explore our newly released global plume database on Earth Engine along with an Earth Engine App for interactive visualization, download the trained model and synthetic plumes from Kaggle, and access our inference library on Github. W…"
+    },
+    {
+      "id": "EV-8e13f1a043f7b979",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "亚马逊Alexa现在可以在有新商品可能吸引你购物时提醒你",
+      "originalTitle": "Amazon Alexa can now alert you when something new might tempt you to shop",
+      "subject": "Amazon",
+      "action": "product_release",
+      "object": "Amazon Alexa can now alert you when something new might tempt you to shop",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-cbc62794911ff31b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-cbc62794911ff31b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-cbc62794911ff31b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-cbc62794911ff31b",
+        "EN-377de6da8a5c5b63"
+      ],
+      "entityNames": [
+        "Amazon",
+        "Alexa"
+      ],
+      "productName": "Alexa",
+      "products": [
+        {
+          "name": "Alexa",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Amazon"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-20e1909aeb9254d2",
+          "subject": "Amazon",
+          "object": "Amazon Alexa can now alert you when something new might tempt you to shop",
+          "quote": "For instance, Amazon suggests people could use the feature to track when a favorite brand launches a new product line, when a new season of a favorite TV show drops, when an artist they like announces a concert tour, when an author they read releases a new book, when a tech company releases a new product, and more."
+        },
+        {
+          "id": "CL-638503cff9428e33",
+          "subject": "Amazon",
+          "object": "Amazon Alexa can now alert you when something new might tempt you to shop",
+          "quote": "The launch is one of several AI-powered shopping features that Amazon highlighted on Tuesday, many of which point to a broader shift in the company’s AI strategy. Historically, Alexa has mainly answered product questions when shoppers ask directly. Now it can help anticipate when something might prompt a user to make a purchase — before the shopper even thinks to ask."
+        },
+        {
+          "id": "CL-594a8def15e63593",
+          "subject": "Amazon",
+          "object": "Amazon Alexa can now alert you when something new might tempt you to shop",
+          "quote": "While initially, consumers have to configure these alerts directly, it’s not hard to imagine a future where Amazon automatically generates alerts or may suggest alerts for shoppers to subscribe to as they browse favorite products."
+        },
+        {
+          "id": "CL-85ecfc09174bb6f5",
+          "subject": "Amazon",
+          "object": "Amazon Alexa can now alert you when something new might tempt you to shop",
+          "quote": "Amazon Alexa can now alert you when something new might tempt you to shop"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-77fb294d2b347e36",
+          "publisher": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/09/01/amazon-alexa-can-now-alert-you-when-something-new-might-tempt-you-to-shop"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/09/01/amazon-alexa-can-now-alert-you-when-something-new-might-tempt-you-to-shop",
+      "publisher": "TechCrunch AI",
+      "sourceExcerpt": "For instance, Amazon suggests people could use the feature to track when a favorite brand launches a new product line, when a new season of a favorite TV show drops, when an artist they like announces a concert tour, when an author they read releases a new book, when a tech company releases a new product, and more."
+    },
+    {
+      "id": "EV-e03a4e649a6715a4",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Runway的Solaris是一款实时生成软件界面的AI智能体系统",
+      "originalTitle": "Runway's Solaris is an AI system that generates software interfaces in real time",
+      "subject": "Runway",
+      "action": "model_release",
+      "object": "Solaris",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ae679821f0649c15",
+        "EN-2250ee20de07de60"
+      ],
+      "entityNames": [
+        "Runway",
+        "Solaris"
+      ],
+      "productName": "Solaris",
+      "products": [
+        {
+          "name": "Solaris",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-0bb941e840f26d0b",
+          "subject": "Runway",
+          "object": "Solaris",
+          "quote": "AI company Runway has unveiled Solaris, the first model in a new category it calls \"Interface World Models.\""
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-41cea22bad343824",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/runways-solaris-is-an-ai-system-that-generates-software-interfaces-in-real-time"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/runways-solaris-is-an-ai-system-that-generates-software-interfaces-in-real-time",
+      "publisher": "The Decoder AI News",
+      "sourceExcerpt": "AI company Runway has unveiled Solaris, the first model in a new category it calls \"Interface World Models.\""
+    },
+    {
+      "id": "EV-e5b1864636f23f25",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
+      "originalTitle": "",
+      "subject": "Google DeepMind 为 Gemini",
+      "action": "推出",
+      "object": "agentic 视频理解功能",
+      "metrics": [
+        "88%",
+        "66%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "DeepMind"
+      ],
+      "productName": "DeepMind",
+      "products": [
+        {
+          "name": "DeepMind",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-5636a4aaefc0a5c0",
+          "subject": "Google DeepMind 为 Gemini",
+          "object": "agentic 视频理解功能",
+          "quote": "Google just launched agentic video understanding for Gemini 3.7 Flash, 3.6 Flash, and 3.5 Flash-Lite. This feature allows the model to dynamically scan video segments, which improves accuracy while cutting token usage by up to 88% and costs by up to 66%. You can start using this today by setting your API configuration to \"agentic\" in Google AI Studio or the Gemini Enterprise Agent Platform."
+        },
+        {
+          "id": "CL-9362c998cc8e17d1",
+          "subject": "Google DeepMind 为 Gemini",
+          "object": "agentic 视频理解功能",
+          "quote": "Introducing Agentic Video in Gemini"
+        },
+        {
+          "id": "CL-003b6518bea107d1",
+          "subject": "Google DeepMind 为 Gemini",
+          "object": "agentic 视频理解功能",
+          "quote": "Introducing agentic video understanding with Gemini"
+        },
+        {
+          "id": "CL-b5f015d74fb55b8d",
+          "subject": "Google DeepMind 为 Gemini",
+          "object": "agentic 视频理解功能",
+          "quote": "Senior Product Manager, Google DeepMind"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c228840687663e18",
+          "publisher": "Google DeepMind：Blog（RSS）",
+          "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini"
+        }
+      ],
+      "sourceUrl": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+      "publisher": "Google DeepMind：Blog（RSS）",
+      "sourceExcerpt": "Google just launched agentic video understanding for Gemini 3.7 Flash, 3.6 Flash, and 3.5 Flash-Lite. This feature allows the model to dynamically scan video segments, which improves accuracy while cutting token usage by up to 88% and costs by up to 66%. You can start using this today by setting your API configuration to \"agentic\" in Google AI Studio or the Gemini Enterprise Agent Platform."
+    },
+    {
       "id": "EV-6e9a64dce695ae7e",
       "dataDate": "2026-09-01",
       "date": "2026-09-01",
@@ -185434,6 +189283,368 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.252",
       "publisher": "Claude Code：GitHub Releases（RSS）",
       "sourceExcerpt": "v2.1.252"
+    },
+    {
+      "id": "EV-49577d438cb6624b",
+      "dataDate": "2026-09-02",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "博通推出AgentMinder，面向AI智能体治理与运行时控制的企业级解决方案",
+      "originalTitle": "Broadcom Unveils AgentMinder, An Enterprise Solution for AI Agent Governance and Runtime Control",
+      "subject": "Broadcom",
+      "action": "Unveils",
+      "object": "AgentMinder, An Enterprise Solution for AI Agent Governance and Runtime Control",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-373ac021a2c0bb2c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-373ac021a2c0bb2c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-373ac021a2c0bb2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-373ac021a2c0bb2c",
+        "EN-81b256a1aac3fd3e"
+      ],
+      "entityNames": [
+        "Broadcom",
+        "AgentMinder"
+      ],
+      "productName": "AgentMinder",
+      "products": [
+        {
+          "name": "AgentMinder",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Broadcom"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-25e56c88b82ca33a",
+          "subject": "Broadcom",
+          "object": "AgentMinder, An Enterprise Solution for AI Agent Governance and Runtime Control",
+          "quote": "Broadcom Unveils AgentMinder, An Enterprise Solution for AI Agent Governance and Runtime Control"
+        },
+        {
+          "id": "CL-67d98776afe79f85",
+          "subject": "Broadcom",
+          "object": "AgentMinder, An Enterprise Solution for AI Agent Governance and Runtime Control",
+          "quote": "LAS VEGAS, Aug. 31, 2026 (GLOBE NEWSWIRE) -- VMware Explore 2026 -- Broadcom Inc. (NASDAQ: AVGO), a global technology leader that designs, develops, and supplies semiconductor and infrastructure software solutions, today introduced AgentMinder, a new solution that acts like a traffic controller for autonomous artificial intelligence (AI) agents. As AI agents move from generating content to accessing data, invoking tools, and completing business processes, organizations need more than model guardrails or static permissions. AgentMinder independently verifies agent identity and authorizes each action against its declared mission, intent, context, and current risk before the action reaches an e…"
+        },
+        {
+          "id": "CL-baec8331e7b380e0",
+          "subject": "Broadcom",
+          "object": "AgentMinder, An Enterprise Solution for AI Agent Governance and Runtime Control",
+          "quote": "Broadcom Introduces VMware Private AI Cloud, Enabling Enterprises to Scale AI Cost-Effectively, Operate More Securely, and Innovate Rapidly"
+        },
+        {
+          "id": "CL-d714871b8630d6a0",
+          "subject": "Broadcom",
+          "object": "AgentMinder, An Enterprise Solution for AI Agent Governance and Runtime Control",
+          "quote": "New Solution Makes It Possible for Enterprises to Use AI Agents While Ensuring They Follow Company Rules and Security Standards"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5ac0b2d79822e8a5",
+          "publisher": "globenewswire.com",
+          "url": "https://globenewswire.com/news-release/2026/08/31/3353342/19933/en/broadcom-unveils-agentminder-an-enterprise-solution-for-ai-agent-governance-and-runtime-control.html"
+        }
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/08/31/3353342/19933/en/broadcom-unveils-agentminder-an-enterprise-solution-for-ai-agent-governance-and-runtime-control.html",
+      "publisher": "globenewswire.com",
+      "sourceExcerpt": "Broadcom Unveils AgentMinder, An Enterprise Solution for AI Agent Governance and Runtime Control"
+    },
+    {
+      "id": "EV-737a6c098b70f6ff",
+      "dataDate": "2026-09-02",
+      "date": "2026-08-31",
+      "updatedDate": "2026-09-02",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AMD、Cisco与HUMAIN扩大沙特阿拉伯AI基础设施，AMD Instinct系统正式上线",
+      "originalTitle": "AMD, Cisco and HUMAIN Expand Saudi Arabia’s AI Infrastructure as AMD Instinct Systems Go Live :: Advanced Micro Devices, Inc. (AMD)",
+      "subject": "AMD, Cisco and HUMAIN",
+      "action": "Expand Saudi Arabia’s AI Infrastructure as AMD Instinct Systems Go Live :: Advanced Micro Devices",
+      "object": ", Inc. (AMD)",
+      "metrics": [
+        "1GW",
+        "250 MW"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-3c8b824c18029ad6",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "AMD",
+        "HUMAIN",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-76d6cd94a5e534a6",
+          "subject": "AMD, Cisco and HUMAIN",
+          "object": ", Inc. (AMD)",
+          "quote": "This press release contains forward-looking statements concerning Advanced Micro Devices, Inc. (AMD) such as the expected benefits of AMD’s joint venture with Cisco and HUMAIN; the expected plans to deploy 1GW of AMD AI infrastructure by 2030; and the ability of AMD to provide its AMD AI infrastructure, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995. Forward-looking statements are commonly identified by words such as \"would,\" \"may,\" \"expects,\" \"believes,\" \"plans,\" \"intends,\" \"projects\" and other terms with similar meaning. Investors are cautioned that the forward-looking statements in this press release are based on current belie…"
+        },
+        {
+          "id": "CL-0d5ccee33fe14bab",
+          "subject": "AMD, Cisco and HUMAIN",
+          "object": ", Inc. (AMD)",
+          "quote": "AMD, Cisco and HUMAIN Expand Saudi Arabia’s AI Infrastructure as AMD Instinct Systems Go Live"
+        },
+        {
+          "id": "CL-d3b42dc53052354f",
+          "subject": "AMD, Cisco and HUMAIN",
+          "object": ", Inc. (AMD)",
+          "quote": "HUMAIN is now delivering production AI compute in Saudi Arabia powered by AMD Instinct™ MI355X GPUs, AMD EPYC™ CPUs and Cisco Silicon One-based AI networking to deliver the performance, scale and resilience necessary for next-generation workloads."
+        },
+        {
+          "id": "CL-09d20570cd4ea57e",
+          "subject": "AMD, Cisco and HUMAIN",
+          "object": ", Inc. (AMD)",
+          "quote": "AMD, Cisco and HUMAIN plan to deploy up to 250 MW of AI infrastructure as part of the next phase of the buildout beginning in 2027."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-6bdb456ea6674589",
+          "publisher": "ir.amd.com",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1298/amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live"
+        }
+      ],
+      "sourceUrl": "https://ir.amd.com/news-events/press-releases/detail/1298/amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live",
+      "publisher": "ir.amd.com",
+      "sourceExcerpt": "This press release contains forward-looking statements concerning Advanced Micro Devices, Inc. (AMD) such as the expected benefits of AMD’s joint venture with Cisco and HUMAIN; the expected plans to deploy 1GW of AMD AI infrastructure by 2030; and the ability of AMD to provide its AMD AI infrastructure, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995. Forward-looking statements are commonly identified by words such as \"would,\" \"may,\" \"expects,\" \"believes,\" \"plans,\" \"intends,\" \"projects\" and other terms with similar meaning. Investors are cautioned that the forward-looking statements in this press release are based on current belie…"
     },
     {
       "id": "EV-15d30aa24446fb79",
@@ -189495,6 +193706,102 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
       "publisher": "Claude Code：GitHub Releases（RSS）",
       "sourceExcerpt": "Added --restricted (or CLAUDE_CODE_RESTRICTED=1 ): removes the built-in tools that run commands or code and WebFetch (unless named in --tools ), keeps file tools inside the working directory, refuses bypassPermissions , and ignores user, project and local settings files"
+    },
+    {
+      "id": "EV-96437a7cce4b082b",
+      "dataDate": "2026-09-02",
+      "date": "2026-08-27",
+      "updatedDate": "2026-09-02",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenClaw走红。认识构建并保护它的维护者。",
+      "originalTitle": "OpenClaw went viral. Meet the maintainers building and securing it.",
+      "subject": "OpenClaw",
+      "action": "model_release",
+      "object": "personal AI assistant",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-96a4bc2602655473"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-96a4bc2602655473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-96a4bc2602655473"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-96a4bc2602655473"
+      ],
+      "entityNames": [
+        "OpenClaw"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fb79518c317d786a",
+          "subject": "OpenClaw",
+          "object": "personal AI assistant",
+          "quote": "OpenClaw is a personal AI assistant that runs on users&rsquo; devices and connects with the messaging channels they already use."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-95968c553ab40f5b",
+          "publisher": "GitHub Blog AI",
+          "url": "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it"
+        }
+      ],
+      "sourceUrl": "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it",
+      "publisher": "GitHub Blog AI",
+      "sourceExcerpt": "OpenClaw is a personal AI assistant that runs on users&rsquo; devices and connects with the messaging channels they already use."
     },
     {
       "id": "EV-074a78d3cfaf633b",
@@ -338688,6 +342995,311 @@
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
     },
     {
+      "id": "EV-00ffb2c501a37ec8",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI在Hugging Face遭黑客攻击后推迟了新模型的开发",
+      "originalTitle": "OpenAI delayed its new model’s development after the Hugging Face hack",
+      "subject": "OpenAI",
+      "action": "security_incident",
+      "object": "Hugging Face",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-11bbb0b0dc42eb44",
+          "subject": "OpenAI",
+          "object": "Hugging Face",
+          "quote": "In July, an unreleased OpenAI model broke out of its restricted environment, finagled its way into internet access, made it possible for AI agents to secretly conspire under the company’s nose using a secret message board, and hacked into the network of AI lab Hugging Face."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-8daa8650d110174c",
+          "publisher": "The Verge AI",
+          "url": "https://theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay"
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
+      "publisher": "The Verge AI",
+      "sourceExcerpt": "In July, an unreleased OpenAI model broke out of its restricted environment, finagled its way into internet access, made it possible for AI agents to secretly conspire under the company’s nose using a secret message board, and hacked into the network of AI lab Hugging Face."
+    },
+    {
+      "id": "EV-2601f35761ee270e",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "总投资65亿元，18000个标准机架！韶绿智算中心项目正式启动 - njjyb - betway版本",
+      "originalTitle": "",
+      "subject": "韶绿智算中心项目",
+      "action": "capital_investment",
+      "object": "65亿元",
+      "metrics": [
+        "65亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "deployment_location"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-a8f3369e7fb85f49"
+        ]
+      },
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5254370516242e73"
+      ],
+      "entityNames": [
+        "韶绿智算中心项目"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a8f3369e7fb85f49",
+          "subject": "韶绿智算中心项目",
+          "object": "65亿元",
+          "quote": "项目计划投资65亿元，规划18000个标准机架，引入异构芯片集群、浸没式液冷等前沿技术，打造国家新型算力基础设施标杆。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ec56d09e7f43d5c9",
+          "publisher": "njjyb.com",
+          "url": "https://njjyb.com/news/show/3692.html"
+        }
+      ],
+      "sourceUrl": "https://njjyb.com/news/show/3692.html",
+      "publisher": "njjyb.com",
+      "sourceExcerpt": "项目计划投资65亿元，规划18000个标准机架，引入异构芯片集群、浸没式液冷等前沿技术，打造国家新型算力基础设施标杆。"
+    },
+    {
+      "id": "EV-51548a69e952646b",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "谷歌对好莱坞的需求，超过制片厂对AI的需求",
+      "originalTitle": "Google needs Hollywood more than the studios need AI",
+      "subject": "Google DeepMind",
+      "action": "capital_investment",
+      "object": "A24",
+      "metrics": [
+        "$75 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-60643316d18ef90b",
+          "subject": "Google DeepMind",
+          "object": "A24",
+          "quote": "whose DeepMind arm struck a $75 million investment deal with A24 earlier this summer"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-bd693d6524104f15",
+          "publisher": "The Verge AI",
+          "url": "https://theverge.com/tech/987429/google-needs-hollywood-more-than-the-studios-need-ai"
+        }
+      ],
+      "sourceUrl": "https://theverge.com/tech/987429/google-needs-hollywood-more-than-the-studios-need-ai",
+      "publisher": "The Verge AI",
+      "sourceExcerpt": "whose DeepMind arm struck a $75 million investment deal with A24 earlier this summer"
+    },
+    {
+      "id": "EV-3c99b18c480e3cde",
+      "dataDate": "2026-09-02",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-02",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hugging Face 与 Ai2 发布 BenchMIRT：从题目层面审计 LLM 基准究竟测了什么",
+      "originalTitle": "",
+      "subject": "BenchMIRT",
+      "action": "发布 BenchMIRT：从题目层面审计 LLM 基准",
+      "object": "究竟测了什么",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e3ce9cc5efa9354c",
+        "EN-6e8bd5b0ddb673c6",
+        "EN-a7942f18cc09db0b"
+      ],
+      "entityNames": [
+        "Hugging Face",
+        "Ai2",
+        "BenchMIRT"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-1d731271e53fd21c",
+          "subject": "BenchMIRT",
+          "object": "BBQ benchmark",
+          "quote": "BBQ, which evaluates social bias and is commonly grouped with safety benchmarks, aligned much more strongly with general reasoning in BenchMIRT’s analysis."
+        },
+        {
+          "id": "CL-426bfb6fc148fa01",
+          "subject": "BenchMIRT",
+          "object": "WMDP benchmark",
+          "quote": "BenchMIRT found that WMDP scores were more strongly associated with general reasoning than with safety."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e22282f93ccad2f0",
+          "publisher": "Hugging Face：Blog（RSS）",
+          "url": "https://huggingface.co/blog/allenai/benchmirt"
+        }
+      ],
+      "sourceUrl": "https://huggingface.co/blog/allenai/benchmirt",
+      "publisher": "Hugging Face：Blog（RSS）",
+      "sourceExcerpt": "BBQ, which evaluates social bias and is commonly grouped with safety benchmarks, aligned much more strongly with general reasoning in BenchMIRT’s analysis."
+    },
+    {
       "id": "EV-d5d985325a1baacb",
       "dataDate": "2026-09-01",
       "date": "2026-09-01",
@@ -341366,119 +345978,6 @@
       "sourceUrl": "https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google",
       "publisher": "TechCrunch AI",
       "sourceExcerpt": "Zoph has taken a position as vice president of research at Google"
-    },
-    {
-      "id": "EV-00ffb2c501a37ec8",
-      "dataDate": "2026-08-28",
-      "date": "2026-08-27",
-      "updatedDate": "2026-08-28",
-      "eventType": "security_incident",
-      "eventTypeLabel": "安全事件",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "OpenAI 的失控 AI 模型事件比我们想象的更严重",
-      "originalTitle": "OpenAI’s rogue AI model incident was worse than we thought",
-      "subject": "OpenAI",
-      "action": "security_incident",
-      "object": "Hugging Face",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-7d3194f79e645c42"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-7d3194f79e645c42"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-7d3194f79e645c42"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-7d3194f79e645c42"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-8db3cc503f107712",
-          "subject": "OpenAI",
-          "object": "Hugging Face",
-          "quote": "In July, an unreleased OpenAI model broke out of a restricted environment, figured out how to get access to the internet, allowed AI agents to talk to each other using a secret “message board,” and hacked into the internal systems of a different AI lab, Hugging Face."
-        },
-        {
-          "id": "CL-03d607d27b781c8c",
-          "subject": "OpenAI",
-          "object": "Hugging Face",
-          "quote": "On July 20, OpenAI discovered the hack, 12 days after the AI agents first circumvented their safeguards."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-44dfcf04c6c1ee93",
-          "publisher": "The Verge AI",
-          "url": "https://theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr"
-        }
-      ],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
-      "publisher": "The Verge AI",
-      "sourceExcerpt": "In July, an unreleased OpenAI model broke out of a restricted environment, figured out how to get access to the internet, allowed AI agents to talk to each other using a secret “message board,” and hacked into the internal systems of a different AI lab, Hugging Face."
     },
     {
       "id": "EV-5f8479f97236bdea",
