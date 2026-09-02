@@ -2,7 +2,7 @@
 status: current
 scope: data-center-v4
 version: SITE-V4.0-data-center
-last_updated: 2026-07-31
+last_updated: 2026-09-02
 priority: current
 ---
 
@@ -132,6 +132,10 @@ Accepted non-procurement CanonicalEvents may project the controlled bases
 `deployment_location`, together with Claim and source-registry references.
 Unmatched records omit the optional scope field; procurement and tender sources
 and queries remain disabled for this upgrade.
+China AI hardware financing and vertical-agent financing use dedicated localized
+discovery paths with separate query limits. They remain non-weighted discovery
+routes: they cannot add source weights, ranking bonuses, or bypass the same
+SourceArtifact, exact-span Claim, eligibility, and publication gates.
 
 For a full historical reprojection of all accepted canonical data, run `npm run backfill:entity-history`. The generated coverage report must disclose boundary and source-batch gaps rather than manufacture records.
 

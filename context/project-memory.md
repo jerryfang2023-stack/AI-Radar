@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-memory
-last_updated: 2026-08-22
+last_updated: 2026-09-02
 use_when:
   - project startup
   - agent handoff
@@ -31,7 +31,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Builders / First-Line Viewpoints must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - Community posts are demand signals unless recaptured through source-backed business evidence.
 - If an old rule conflicts with `SITE-V4.6.1-research-retirement`, rebuild or delete the old route instead of restoring retired content.
-- China-market coverage is a scope projection inside the existing V4 fact chain. Source categories are descriptive only: no source weights or ranking bonuses are permitted, and procurement/tender sources remain disabled for this scope.
+- China-market coverage is a scope projection inside the existing V4 fact chain. Source categories are descriptive only: no source weights or ranking bonuses are permitted, and procurement/tender sources remain disabled for this scope. China AI hardware financing and vertical-agent financing keep dedicated localized discovery paths and separate query limits, but those paths cannot alter event eligibility or ranking.
 - First-Line Viewpoints and Community Intelligence keep their existing content contracts. FDE / AI Hardware are Event Library themes, relationships are embedded in Entity Library detail, financing cards and reports publish to the independent AI financing site, and Opportunity Map is an unlisted internal lab.
 - DeepSeek is the sole production source-title translation provider. Formal translation-registry entries must retain `deepseek_title_translation` plus a non-empty model identifier; manual-reviewed, MyMemory, business-rule, and missing-provenance entries are not approved publication translations.
 - A verified funding event may publish without named investors only when captured evidence confirms the financing but discloses investors solely by generic category. The card must keep an empty investor list, set `investor_disclosure_status=not_disclosed`, retain the `investors_missing` risk marker, and never materialize the generic category as an institution.

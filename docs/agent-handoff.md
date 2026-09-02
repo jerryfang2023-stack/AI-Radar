@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-09-01
+date: 2026-09-02
 status: current
 encoding: UTF-8
 ---
@@ -19,9 +19,9 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.1-24-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
-- Current Funding Insights projection: 307 accepted application cards aggregate to 282 public financing-event cards checked through 2026-09-01, with the latest qualifying financing disclosure dated 2026-08-26. The 2026-09-01 eligible event deduplicates to an existing company-and-round card, so the daily bundle correctly adds zero new cards. The public financing portal and Mini Program live contract consume the same gated projection; publication must still be verified independently from the generated source.
-- Current Data Center frontstage: 2,536 events, 215 companies, 343 products, 61 people, 1,332 investors, 353 relationships, 132 FDE records, and 91 hardware records through 2026-09-01.
-- The 2026-09-01 quality repair keeps a registered organization alias found only in a headline as a candidate and requires an exact accepted-Claim alias before catalog verification. Current-date projection coverage is 100%; publisher-host, document-attribution, and title-only matches remain candidates until evidence or explicit catalog review supports promotion.
+- Current Funding Insights projection: 309 accepted application cards aggregate to 284 public financing-event cards checked through 2026-09-02, including 34 China-market cards; the latest qualifying financing disclosure is dated 2026-09-01. The 2026-09-02 bundle adds two eligible cards, AIR ($50M) and Aranya ($11M). Three other funding-like records remain excluded because they lack a supported currency, omit an explicit currency, or describe a prize rather than company financing. The public financing portal and Mini Program live contract consume the same gated projection; publication must still be verified independently from the generated source.
+- Current Data Center frontstage: 2,575 events, 217 companies, 343 products, 61 people, 1,345 investors, 353 relationships, 136 FDE records, and 95 hardware records through 2026-09-02.
+- The 2026-09-02 daily bundle contains 40 canonical events and restores accepted-event entity/project coverage to 100% through exact accepted-Claim subject evidence. Publisher-host, document-attribution, and title-only matches remain candidates until evidence or explicit catalog review supports promotion.
 - Current funding taxonomy projection uses reviewed event decisions and evidence-backed event/entity classification assertions under `TAG-V4.1`; current counts are owned by the generated taxonomy review and consistency-gate reports rather than this handoff.
 - Current private-evidence counts are owned by the latest private-evidence gate rather than this handoff; the public repository contains locators only.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
@@ -57,7 +57,7 @@ External sources
 
 Model-assist production validates and rebuilds from the accepted candidate subset even when an isolated candidate generation fails; invalid partial output still fails closed at the model-assist gate.
 
-Failed-run recovery artifacts retain same-date model-assist decisions/checkpoint and projection-coverage diagnostics. Older artifacts may omit model decisions: do not rebuild an accepted factual bundle from intake alone or silently replace it with fewer events. The 2026-09-01 recovery reused workflow run `33458088725` and its 250-Raw/85-Claim accepted artifact, rebuilt 35 canonical events without recollection, and restored entity-index organization coverage to 100% by keeping the title-only Kuaishou alias in candidate state.
+Failed-run recovery artifacts retain same-date model-assist decisions/checkpoint and projection-coverage diagnostics. Older artifacts may omit model decisions: do not rebuild an accepted factual bundle from intake alone or silently replace it with fewer events. The 2026-09-02 recovery preserved 197 RawDocuments and 99 Claims, rebuilt 40 canonical events without inventing missing currency or financing facts, and restored accepted-event entity/project coverage to 100%.
 
 Community login-expiry markers override a zero collector exit code. After the collection window, any non-passed gate (including missing or malformed reports) is an upstream failure; publication stays blocked on that evidence rather than generating a duplicate missing-publication repair.
 
