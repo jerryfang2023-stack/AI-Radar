@@ -2,7 +2,7 @@
 
 This is the native WeChat Mini Program frontstage for Funding Insights.
 
-Current source target: 0.9.5 adds a global native-share baseline, fixes related-company entity deep links and first-time phone binding, and grants verified approved community members one idempotent 90-day Mini Program access window while synchronizing their community identity. Members without a recorded phone may create a nickname candidate, but only an administrator-confirmed server-side claim can grant identity or access; later confirmations require no Mini Program release. The last immutable uploaded release remains 0.9.4 until the 0.9.5 upload receipt is recorded. Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.4/README.md` for the preceding immutable source and receipt.
+Current source and last immutable uploaded release: 0.9.5 adds a global native-share baseline, fixes related-company entity deep links and first-time phone binding, and grants verified approved community members one idempotent 90-day Mini Program access window while synchronizing their community identity. Members without a recorded phone may create a nickname candidate, but only an administrator-confirmed server-side claim can grant identity or access; later confirmations require no Mini Program release. Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.5/README.md` for the immutable source and receipt.
 
 ## Boundaries
 
