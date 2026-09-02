@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-01T01:37:08.808Z",
-    "latestDataDate": "2026-09-01",
-    "currentDate": "2026-09-01",
-    "eventCount": 2536,
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
     "quarantinedEventCount": 24
   },
   "institution": {
@@ -22,14 +22,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
+    "current_round_count": 14,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 11,
+    "portfolio_company_count": 12,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-25",
-    "latest_disclosed_at": "2026-08-19",
+    "latest_disclosed_at": "2026-09-01",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "lead": 7,
+      "lead": 8,
       "other_current_round": 1,
       "participant": 5
     },
@@ -45,6 +50,11 @@
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-9fe430e5274621be",
+        "canonical_entity_id": "",
+        "name": "AIR"
+      },
       {
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
@@ -103,6 +113,46 @@
     ],
     "activities": [
       {
+        "activity_id": "IA-b8c2836011deda65",
+        "funding_insight_id": "FI-29e37a6d373071d9",
+        "event_ids": [
+          "EV-b9d8b3582f12bdc7"
+        ],
+        "company_entity_id": "EN-9fe430e5274621be",
+        "company_canonical_entity_id": "",
+        "company_name": "AIR",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$50M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-09-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0426e4b3b9347f4f",
+            "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+            "source_title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+            "source_content_hash": "f272d6219c1373f8",
+            "quote": "Sequoia led the first round, while Greenoaks led the second, Saban said.",
+            "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-9cc86dd5c6d39dab",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
         "event_ids": [
@@ -126,6 +176,8 @@
           "display_zh": "7 亿美元"
         },
         "announced_at": "2026-08-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
@@ -164,6 +216,8 @@
           "display_zh": "300 亿美元"
         },
         "announced_at": "2026-08-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
@@ -202,6 +256,8 @@
           "display_zh": "3 亿美元"
         },
         "announced_at": "2026-07-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮领投",
@@ -248,6 +304,8 @@
           "display_zh": "2500 万美元"
         },
         "announced_at": "2026-07-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投，种子轮领投",
@@ -286,6 +344,8 @@
           "display_zh": "4500 万美元"
         },
         "announced_at": "2026-07-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "partially_disclosed",
         "scope": "current_round",
         "role": "本轮领投",
@@ -324,6 +384,8 @@
           "display_zh": "8000 万美元"
         },
         "announced_at": "2026-06-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "种子轮领投",
@@ -362,6 +424,8 @@
           "display_zh": "9800 万美元"
         },
         "announced_at": "2026-06-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
@@ -400,6 +464,8 @@
           "display_zh": "9800 万美元"
         },
         "announced_at": "2026-06-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
@@ -438,6 +504,8 @@
           "display_zh": "4000 万美元"
         },
         "announced_at": "2026-06-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "种子轮领投，本轮（Series A）参投",
@@ -476,6 +544,8 @@
           "display_zh": "750 亿美元"
         },
         "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
@@ -514,6 +584,8 @@
           "display_zh": "1.13 亿美元"
         },
         "announced_at": "2026-05-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "A轮参投",
@@ -552,6 +624,8 @@
           "display_zh": "1220 亿美元"
         },
         "announced_at": "2026-03-31",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
@@ -590,6 +664,8 @@
           "display_zh": "3000 万美元"
         },
         "announced_at": "2026-03-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮领投",
@@ -628,6 +704,8 @@
           "display_zh": "3 亿美元"
         },
         "announced_at": "2026-02-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "既有投资方，本轮参投",
@@ -666,6 +744,8 @@
           "display_zh": "1.8 亿美元"
         },
         "announced_at": "2025-10-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "既有投资方（本轮跟投）",
@@ -704,6 +784,8 @@
           "display_zh": "6000 万美元"
         },
         "announced_at": "2025-03-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投，种子轮领投",
@@ -721,6 +803,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0426e4b3b9347f4f",
+        "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+        "source_title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+        "source_content_hash": "f272d6219c1373f8",
+        "quote": "Sequoia led the first round, while Greenoaks led the second, Saban said.",
+        "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
+      },
       {
         "source_id": "FISRC-134a8e8124653c90",
         "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
