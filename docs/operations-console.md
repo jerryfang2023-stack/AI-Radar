@@ -12,7 +12,7 @@ Release: OPS-V3.1.0-membership / Skill Store v2.2.0
 - Membership package distribution is the latest non-refunded paid package among currently entitled accounts, with an other/redemption bucket; it does not reconstruct mixed entitlement sources.
 - Do not add the two sources' members or points: cross-platform identity resolution is not implemented here. Community expiry/renewals and offline benefit claims are explicitly unavailable. No claim/renewal rate is inferred.
 - Both endpoints accept GET/OPTIONS only, return an explicit allowlist under `MEMBER-OPS-V1.0`, use query-only SQLite transactions and no-store responses. The page sends no credentials. Admin/member/write routes keep their original authentication.
-- The community code is additive and compatible with production 1.6.13 and source 1.7.x. Deploy only `member_operations.py` and its registration hunk onto the verified production app; do not deploy unrelated 1.7.0 hub features or overwrite runtime data. Back up code and SQLite before restart; rollback only these code files.
+- The membership aggregate remains schema-compatible with 1.6.13 and 1.7.x. Production currently runs member service 1.7.3; deploy only from an exact tested release and never transplant this module onto an older production baseline or overwrite runtime data. Back up code and SQLite before restart; roll back code without replacing a database that may contain newer activity.
 
 Validation: both service pytest suites; `npm run test:ops-unified`; existing analytics tests, OPS/Skill/version gates; desktop/mobile browser checks. Public aggregates are intentionally public, not protected by hidden navigation.
 
