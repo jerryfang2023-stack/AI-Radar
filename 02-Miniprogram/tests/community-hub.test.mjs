@@ -27,6 +27,8 @@ test("keeps the community home visible and gates detail actions", () => {
   assert.match(home, /community-focus-card/u);
   assert.match(homeLogic, /requireCommunityMember/u);
   assert.match(access, /申请加入/u);
+  assert.match(access, /claim_pending/u);
+  assert.match(access, /无需再次申请/u);
   assert.doesNotMatch(access, /switchTab/u);
 });
 

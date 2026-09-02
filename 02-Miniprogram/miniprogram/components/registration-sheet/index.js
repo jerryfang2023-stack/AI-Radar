@@ -34,6 +34,8 @@ Component({
     linkingExisting: false,
     registered: false,
     membership: {},
+    successTitle: "7 天体验已开启",
+    successCopy: "",
   },
 
   observers: {
@@ -98,6 +100,14 @@ Component({
         phonePending: false,
       });
       syncBehaviorQueue().catch(() => {});
+      const communityStatus = result.community?.status;
+      const successTitle = communityStatus === "joined" ? "社群身份已同步" : communityStatus === "claim_pending" ? "资料认领已提交" : "7 天体验已开启";
+      const successCopy = communityStatus === "joined"
+        ? `社群资料、积分与权限已同步，有效至 ${membership.activeUntil}`
+        : communityStatus === "claim_pending"
+          ? `管理员确认后会自动同步社群资料与权限，当前体验有效至 ${membership.activeUntil}`
+          : `完整栏目权益已生效，有效至 ${membership.activeUntil}`;
+      this.setData({ successTitle, successCopy });
       return membership;
     },
 

@@ -130,6 +130,8 @@ class FakeCommunityClient:
     def __init__(self):
         self.applications = []
         self.member_points = 860
+        self.claims = {}
+        self.claim_member = None
 
     def lookup(self, phone):
         if phone == "13800138000":
@@ -142,6 +144,16 @@ class FakeCommunityClient:
     def submit_application(self, payload):
         self.applications.append(payload)
         return {"member": {"id": 77, "name": payload["name"], "status": "pending", "points": 0}}
+
+    def submit_claim(self, account_ref, nickname):
+        claim = self.claims.get(account_ref)
+        if claim:
+            return {"claim": claim}
+        if not self.claim_member:
+            return {"claim": {"nickname": nickname, "status": "not_found"}}
+        claim = {"id": len(self.claims) + 1, "nickname": nickname, "status": "pending"}
+        self.claims[account_ref] = claim
+        return {"claim": claim}
 
 
 class FakeVirtualPayClient:
@@ -602,6 +614,48 @@ def test_existing_community_member_can_link_during_first_login_without_profile_r
     assert payload["wallet"] == {"balance": 860, "lifetime": 860}
     assert payload["membership"]["remainingDays"] == 90
     assert payload["membership"]["statusLabel"] == "社群成员 3 个月权益"
+
+
+def test_nickname_claim_waits_for_admin_then_syncs_member_and_90_day_access_once(client):
+    community = client.application.community_client
+    community.claim_member = {"id": 88, "name": "阿泽", "status": "approved", "points": 126}
+    registered = client.post(
+        "/api/v1/auth/wechat",
+        json=registration_payload(
+            "nickname-community-member",
+            phoneCode="nickname-phone",
+            nickname="阿泽",
+            avatarSelected=True,
+        ),
+    )
+    assert registered.status_code == 200
+    payload = registered.get_json()
+    assert payload["community"]["status"] == "claim_pending"
+    assert payload["community"]["statusLabel"] == "资料认领审核中"
+    assert payload["community"]["points"] == 0
+    assert len(community.claims) == 1
+
+    claim = next(iter(community.claims.values()))
+    claim.update({"status": "approved", "member": community.claim_member})
+    refreshed = client.get("/api/v1/member/me", headers=auth(payload["token"]))
+    assert refreshed.status_code == 200
+    result = refreshed.get_json()
+    assert result["community"] == {
+        "memberId": 88,
+        "name": "阿泽",
+        "status": "joined",
+        "statusLabel": "已入群",
+        "points": 126,
+    }
+    assert result["membership"]["statusLabel"] == "社群成员 3 个月权益"
+
+    repeated = client.get("/api/v1/member/me", headers=auth(payload["token"]))
+    assert repeated.status_code == 200
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        count = conn.execute(
+            "SELECT COUNT(*) FROM membership_ledger WHERE source_id='community-welcome:88'"
+        ).fetchone()[0]
+    assert count == 1
 
 
 def test_existing_mini_program_user_can_link_by_phone_without_profile_repeat(client):

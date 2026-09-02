@@ -341,7 +341,11 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     def community_snapshot(row):
         raw_status = row["community_status"] or "none"
         status = "joined" if raw_status == "approved" else raw_status
-        labels = {"joined": "已入群", "pending": "审核中", "candidate": "候补", "rejected": "暂未通过", "none": "未入群"}
+        labels = {
+            "joined": "已入群", "pending": "审核中", "candidate": "候补",
+            "rejected": "暂未通过", "claim_pending": "资料认领审核中",
+            "claim_rejected": "资料认领未通过", "none": "未入群",
+        }
         return {
             "memberId": row["community_member_id"],
             "name": row["community_name"] or "",
@@ -367,6 +371,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         return hmac.new(
             app.config["SECRET_KEY"].encode("utf-8"),
             str(phone_number).encode("utf-8"),
+            hashlib.sha256,
+        ).hexdigest()
+
+    def community_claim_ref(user_id):
+        return hmac.new(
+            app.config["SECRET_KEY"].encode("utf-8"),
+            f"community-claim:{int(user_id)}".encode("utf-8"),
             hashlib.sha256,
         ).hexdigest()
 
@@ -471,6 +482,43 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         while user and user["merged_into_user_id"] and user["id"] not in seen:
             seen.add(user["id"])
             user = conn.execute("SELECT * FROM users WHERE id=?", (user["merged_into_user_id"],)).fetchone()
+        return user
+
+    def sync_community_claim(conn, user):
+        if not user or user["community_member_id"] or not str(user["nickname"] or "").strip():
+            return user
+        try:
+            remote = app.community_client.submit_claim(
+                community_claim_ref(user["id"]),
+                str(user["nickname"] or "")[:20],
+            )
+        except CommunityServiceError:
+            return user
+        claim = remote.get("claim") or {}
+        member = claim.get("member") if claim.get("status") == "approved" else None
+        if member and member.get("id"):
+            conn.execute(
+                "UPDATE users SET community_member_id=?, community_name=?, community_status=?, updated_at=? WHERE id=?",
+                (
+                    member["id"], member.get("name") or user["nickname"] or "",
+                    member.get("status") or "approved", iso(utcnow()), user["id"],
+                ),
+            )
+            user = user_by_id(conn, user["id"])
+            user = grant_community_access(conn, user, member)
+            import_community_points(conn, user, member)
+            return user_by_id(conn, user["id"])
+        claim_status = claim.get("status")
+        if claim_status in {"pending", "rejected"}:
+            conn.execute(
+                "UPDATE users SET community_name=?, community_status=?, updated_at=? WHERE id=?",
+                (
+                    user["nickname"] or "",
+                    "claim_pending" if claim_status == "pending" else "claim_rejected",
+                    iso(utcnow()), user["id"],
+                ),
+            )
+            return user_by_id(conn, user["id"])
         return user
 
     def token_for(user_id):
@@ -1093,8 +1141,10 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 if community_member:
                     user = grant_community_access(conn, user, community_member)
                     import_community_points(conn, user, community_member)
-                    conn.commit()
-                    user = user_by_id(conn, user["id"])
+                else:
+                    user = sync_community_claim(conn, user)
+                conn.commit()
+                user = user_by_id(conn, user["id"])
                 inviter = conn.execute("SELECT * FROM users WHERE invite_code=?", (invite_code,)).fetchone() if invite_code else None
                 if inviter and inviter["id"] != user["id"]:
                     before = conn.total_changes
@@ -1129,23 +1179,31 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                     remote = app.community_client.lookup(number)
                     community_member = remote.get("member") if remote.get("found") else None
                     if not community_member:
-                        return jsonify(error={
-                            "code": "REGISTRATION_REQUIRED",
-                            "message": "未匹配到社群成员，请完成资料注册",
-                        }), 409
-                    conn.execute(
-                        """UPDATE users SET phone_hash=?, phone_masked=?, phone_bound_at=?,
-                           community_member_id=?, community_name=?, community_status=?,
-                           nickname=COALESCE(NULLIF(?, ''), nickname), updated_at=? WHERE id=?""",
-                        (
-                            digest, masked, iso(now), community_member.get("id"), community_member.get("name") or "",
-                            community_member.get("status") or "none", (community_member.get("name") or "")[:20],
-                            iso(now), user["id"],
-                        ),
-                    )
-                    user = user_by_id(conn, user["id"])
-                    user = grant_community_access(conn, user, community_member)
-                    import_community_points(conn, user, community_member)
+                        if not nickname or len(nickname) > 20 or not avatar_selected:
+                            return jsonify(error={
+                                "code": "REGISTRATION_REQUIRED",
+                                "message": "未匹配到社群成员，请完成资料注册",
+                            }), 409
+                        conn.execute(
+                            """UPDATE users SET phone_hash=?, phone_masked=?, phone_bound_at=?,
+                               nickname=?, avatar_selected_at=COALESCE(avatar_selected_at, ?), updated_at=? WHERE id=?""",
+                            (digest, masked, iso(now), nickname[:20], iso(now), iso(now), user["id"]),
+                        )
+                        user = sync_community_claim(conn, user_by_id(conn, user["id"]))
+                    else:
+                        conn.execute(
+                            """UPDATE users SET phone_hash=?, phone_masked=?, phone_bound_at=?,
+                               community_member_id=?, community_name=?, community_status=?,
+                               nickname=COALESCE(NULLIF(?, ''), nickname), updated_at=? WHERE id=?""",
+                            (
+                                digest, masked, iso(now), community_member.get("id"), community_member.get("name") or "",
+                                community_member.get("status") or "none", (community_member.get("name") or "")[:20],
+                                iso(now), user["id"],
+                            ),
+                        )
+                        user = user_by_id(conn, user["id"])
+                        user = grant_community_access(conn, user, community_member)
+                        import_community_points(conn, user, community_member)
                     conn.commit()
                     user = user_by_id(conn, user["id"])
                 if nickname or avatar_selected:
@@ -1154,6 +1212,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                         (nickname[:20], avatar_selected, iso(now), iso(now), user["id"]),
                     )
                     user = user_by_id(conn, user["id"])
+                if not user["community_member_id"]:
+                    user = sync_community_claim(conn, user)
             own_invite_code = ensure_invite_code(conn, user)
             unified_account["sync_legacy_identities"](conn, user)
             if is_new_user:
@@ -1190,6 +1250,10 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                     (member.get("name") or user["community_name"], member.get("status") or user["community_status"], iso(utcnow()), user["id"]),
                 )
                 import_community_points(conn, user, member)
+                conn.commit()
+                user = user_by_id(conn, g.user_id)
+            else:
+                user = sync_community_claim(conn, user)
                 conn.commit()
                 user = user_by_id(conn, g.user_id)
             return jsonify(
@@ -1310,6 +1374,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 user = user_by_id(conn, g.user_id)
                 user = grant_community_access(conn, user, member)
                 import_community_points(conn, user, member)
+            else:
+                user = sync_community_claim(conn, user_by_id(conn, g.user_id))
             conn.commit()
             user = user_by_id(conn, g.user_id)
             return jsonify(

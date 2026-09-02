@@ -50,6 +50,17 @@ class CommunityClient:
     def status(self, member_id):
         return self._request(f"/api/internal/v1/members/{int(member_id)}")
 
+    def submit_claim(self, account_ref, nickname):
+        return self._request(
+            "/api/internal/v1/members/claims",
+            method="POST",
+            payload={"accountRef": account_ref, "nickname": nickname},
+        )
+
+    def claim_status(self, account_ref):
+        value = urllib.parse.quote(str(account_ref), safe="")
+        return self._request(f"/api/internal/v1/members/claims/{value}")
+
     def submit_application(self, payload):
         return self._request("/api/internal/v1/applications", method="POST", payload=payload)
 

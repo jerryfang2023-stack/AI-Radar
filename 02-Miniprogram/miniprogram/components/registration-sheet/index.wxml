@@ -34,8 +34,8 @@
 
     <block wx:else>
       <image class="success-mark" src="/assets/brand/app-icon-light.svg" mode="aspectFit" />
-      <view class="registration-title serif">7 天体验已开启</view>
-      <view class="registration-copy">完整栏目权益已生效，有效至 {{membership.activeUntil}}</view>
+      <view class="registration-title serif">{{successTitle}}</view>
+      <view class="registration-copy">{{successCopy}}</view>
       <button class="registration-primary success-button" bindtap="continueBrowsing">开始浏览</button>
     </block>
   </view>

@@ -4,8 +4,8 @@
 
 1. 小程序登录后，支付服务按 `openid` 建立账号；微信返回 `unionid` 时优先复用已有账号。
 2. 用户在“我的”授权手机号，支付服务调用微信接口换取真实手机号。
-3. 支付服务使用内部令牌查询现有会员库。命中已审核正式成员后保存 `community_member_id`、社群资料及社群积分，直接授予社群权限，并一次性授予 90 天小程序使用权限；同一社群会员不可重复领取。未命中时保留已核验手机号的 HMAC 和脱敏显示，用户可继续提交原生申请。手填号码必须与已授权号码摘要一致，不能凭号码认领他人身份。
-4. 每次读取 `/api/v1/member/me` 时刷新社群状态和积分。积分按远端累计值与上次快照的差额更新，避免重复导入。
+3. 支付服务使用内部令牌查询现有会员库。命中已审核正式成员后保存 `community_member_id`、社群资料及社群积分，直接授予社群权限，并一次性授予 90 天小程序使用权限；同一社群会员不可重复领取。未命中手机号但昵称形成正式成员候选时，只创建待管理员确认的资料认领，不授予权限。手填号码必须与已授权号码摘要一致，不能凭号码或昵称认领他人身份。
+4. 每次读取 `/api/v1/member/me` 时刷新社群状态和积分；未绑定成员的账号同时检查后台认领结果。管理员确认后，账号自动绑定并同步积分与 90 天权益，不需要重新发布小程序。积分按远端累计值与上次快照的差额更新，避免重复导入。
 5. 原生申请通过现有会员服务写入同一 `members` 表，后台继续使用原审核与管理流程。
 
 ## 小程序接口
@@ -24,7 +24,7 @@
 
 - `users.phone_hash` / `users.phone_masked`：已核验手机号的 HMAC 与脱敏显示，不保存原始号码。
 - `users.community_member_id`：现有会员库主键。
-- `users.community_status`：`none`、`pending`、`candidate`、`rejected` 或 `approved`。
+- `users.community_status`：`none`、`pending`、`candidate`、`rejected`、`claim_pending`、`claim_rejected` 或 `approved`。
 - `users.community_points`：远端社群积分最新快照。
 - `users.point_balance`：可兑换积分。
 - `users.point_lifetime`：累计成长积分，不因兑换减少。
