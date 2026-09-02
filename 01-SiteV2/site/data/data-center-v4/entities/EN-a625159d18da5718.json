@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-01T01:37:08.808Z",
-    "latestDataDate": "2026-09-01",
-    "currentDate": "2026-09-01",
-    "eventCount": 2536,
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d60335a12d394f65",
       "EV-c728a9809f57bba8",
       "EV-b1146684fc4b4dd2",
       "EV-0e68936238460b63",
@@ -31,16 +32,19 @@
       "EV-1bba7775c80af1f0"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-technology-long_context"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-19",
-    "lastSeen": "2026-09-01",
+    "lastSeen": "2026-09-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-d60335a12d394f65",
         "EV-c728a9809f57bba8",
         "EV-b1146684fc4b4dd2",
         "EV-0e68936238460b63",
@@ -54,6 +58,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d60335a12d394f65",
+        "dataDate": "2026-09-02",
+        "date": "2026-09-02",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.257 发布，默认模型改为 Claude Fable 5.1",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [
+              "EN-a625159d18da5718"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a625159d18da5718",
+          "EN-a92a398699e20046"
+        ]
+      },
       {
         "id": "EV-c728a9809f57bba8",
         "dataDate": "2026-09-01",
@@ -164,7 +196,64 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-long_context",
+      "name": "长上下文",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "long_context",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-fd21441fb6e143c3",
+        "EV-d60335a12d394f65",
+        "EV-eb3b431d4ce98ec5",
+        "EV-5890a74f1a62940e",
+        "EV-a6dc310224542dcf",
+        "EV-eedd370fd9cfdbb2",
+        "EV-58e18eab1b072c9a",
+        "EV-29c0d969abde2020",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-7a4d1e871dcd3b1f",
+        "EV-653cbce2ccc79f8b",
+        "EV-0e616f9e775a77dc",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-86ab9c2f1416e9d8",
+        "EV-a5efa57f3f744425",
+        "EV-70e3f88cb06a856c",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-70efbfcaadcdb259",
+        "EV-0c06df62702d26ab",
+        "EV-534dc9add1c0cc35",
+        "EV-57f083a39393d841",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-7df09a7717ef2feb",
+        "EN-a625159d18da5718",
+        "EN-f7a386a451b79627",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-74be4cbf48e647b2",
+        "EN-c70eca6b0f88f44d",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3309b3b14807f39a",
+        "EN-4b078b39d2fcacc7",
+        "EN-7dd7122ad9bf240f",
+        "EN-1d79127e9d90e89b",
+        "EN-7d3194f79e645c42",
+        "EN-3153ebda601cdb79",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-09-02"
+    }
+  ],
   "fde": [],
   "hardware": []
 }
