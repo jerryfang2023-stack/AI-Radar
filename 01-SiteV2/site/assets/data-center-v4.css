@@ -229,6 +229,53 @@ a {
   margin-bottom: 18px;
 }
 
+@media (min-width: 1081px) {
+  body[data-dc-view="events"] .dc-toolbar {
+    grid-template-columns: repeat(4, minmax(135px, 1fr)) auto;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar .dc-search {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-button {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-select[name="region"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-select[name="theme"] {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-select[name="type"] {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-select[name="tag"] {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-more {
+    grid-column: 5;
+    grid-row: 2;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-clear {
+    grid-column: 5;
+    grid-row: 1;
+    justify-self: center;
+  }
+}
+
 .dc-search {
   min-width: 0;
 }
