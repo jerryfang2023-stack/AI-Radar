@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
+    "quarantinedEventCount": 24
+  },
+  "institution": {
+    "id": "INV-1e4056c2339f19",
+    "name": "BoxGroup Ventures LLC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-01",
+    "latest_disclosed_at": "2026-09-01",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-76eda8ba20686b8e",
+        "canonical_entity_id": "",
+        "name": "Aranya Inc."
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-beba06e284307b15",
+        "funding_insight_id": "FI-47cbfa718574b335",
+        "event_ids": [
+          "EV-a40e5e8c638e323d"
+        ],
+        "company_entity_id": "EN-76eda8ba20686b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Aranya Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮及种子前轮",
+        "amount_original": "$11M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1100 万美元"
+        },
+        "announced_at": "2026-09-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-89934e15127d3d0d",
+            "source_url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours/",
+            "source_title": "Aranya融资1100万美元，将裸机服务器在48小时内转化为AI集群",
+            "source_content_hash": "38aef4d5d540ee15",
+            "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
+            "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-89934e15127d3d0d",
+        "source_url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours/",
+        "source_title": "Aranya融资1100万美元，将裸机服务器在48小时内转化为AI集群",
+        "source_content_hash": "38aef4d5d540ee15",
+        "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
+        "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+      }
+    ]
+  }
+}
