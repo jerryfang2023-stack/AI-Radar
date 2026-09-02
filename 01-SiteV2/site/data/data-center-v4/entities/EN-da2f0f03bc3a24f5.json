@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-01T01:37:08.808Z",
-    "latestDataDate": "2026-09-01",
-    "currentDate": "2026-09-01",
-    "eventCount": 2536,
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -22,13 +22,14 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-c6d84982982597aa"
+      "EV-c6d84982982597aa",
+      "EV-4a06a6a6b94c3c71"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-09-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -36,12 +37,29 @@
       ],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-4a06a6a6b94c3c71"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-4a06a6a6b94c3c71",
+        "dataDate": "2026-09-02",
+        "date": "2026-09-01",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "World Labs 发布世界模型 Atlas：面向空间智能的多模态自回归扩散 Transformer",
+        "displayTags": [],
+        "entityIds": [
+          "EN-da2f0f03bc3a24f5"
+        ]
+      },
       {
         "id": "EV-c6d84982982597aa",
         "dataDate": "2026-08-21",

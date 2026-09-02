@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-a7942f18cc09db0b",
+    "name": "BenchMIRT",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3c99b18c480e3cde"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-01",
+    "lastSeen": "2026-09-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-3c99b18c480e3cde"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-3c99b18c480e3cde",
+        "dataDate": "2026-09-02",
+        "date": "2026-09-01",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Hugging Face 与 Ai2 发布 BenchMIRT：从题目层面审计 LLM 基准究竟测了什么",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e3ce9cc5efa9354c",
+          "EN-6e8bd5b0ddb673c6",
+          "EN-a7942f18cc09db0b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

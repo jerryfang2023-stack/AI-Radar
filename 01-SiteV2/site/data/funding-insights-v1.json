@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-09-01",
-    "last_checked_date": "2026-09-01",
-    "latest_financing_date": "2026-08-26",
-    "generated_at": "2026-09-01T01:20:51.708Z",
-    "card_count": 282,
+    "latest_date": "2026-09-02",
+    "last_checked_date": "2026-09-02",
+    "latest_financing_date": "2026-09-01",
+    "generated_at": "2026-09-02T02:15:15.469Z",
+    "card_count": 284,
     "china_market_card_count": 34,
     "duplicate_rounds_removed": 18,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-09-01T01:54:16.945Z"
+      "generated_at": "2026-09-02T02:15:46.924Z"
     },
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -296,6 +296,1454 @@
     "directions": []
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-29e37a6d373071d9",
+      "triggered_by_event_id": "EV-b9d8b3582f12bdc7",
+      "as_of_date": "2026-09-02",
+      "company": {
+        "entity_id": "EN-9fe430e5274621be",
+        "name": "AIR",
+        "full_name": "AIR",
+        "website": "",
+        "summary": "AIR是一家AI安全初创公司，为企业提供平台以发现运行中的AI代理，持续审查这些代理使用的技能、插件、MCP服务器和附加组件，并阻止不符合安全标准的交互。公司还提供经过审查的AI代理附加组件和技能市场。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Yair Saban",
+            "role": "首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Founded by Yair Saban (CEO) and Niv Hoffman (CTO)",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "5a3f0fd9b242da6e9a97b788bf93cc86d16ac76fe41df27ad1aa14d980a13d00"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Niv Hoffman",
+            "role": "首席技术官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Founded by Yair Saban (CEO) and Niv Hoffman (CTO)",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "5a3f0fd9b242da6e9a97b788bf93cc86d16ac76fe41df27ad1aa14d980a13d00"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约40名员工",
+          "observed_at": "2026-09-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "AIR currently has around 40 employees.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "707f0d19d721fa7af74c460ce1b25327be70feb869694b28d198ba9d53cace73"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0426e4b3b9347f4f",
+            "quote": "AI security startup AIR believes companies will need a way to monitor that supply chain, and it’s now coming out of stealth with $50 million raised across two seed rounds to build that product.",
+            "source_content_hash": "f272d6219c1373f8",
+            "quote_hash": "497ffbffaa1aae9a3113873c1c29da031a3ee57db7e0d720969f1b7861c1ba83"
+          }
+        ],
+        "application_entity_id": "EN-9fe430e5274621be",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$50M",
+        "total_raised": "5000万美元",
+        "announced_at": "2026-09-01",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Sequoia",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Sequoia led the first round, while Greenoaks led the second, Saban said.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-862e0e7d2ba5cf"
+          },
+          {
+            "name": "Greenoaks",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Sequoia led the first round, while Greenoaks led the second, Saban said.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-97bea5e589d4d7"
+          },
+          {
+            "name": "Swish",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ff53f8d73b820c"
+          },
+          {
+            "name": "Netz",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c8dbdacc150ccb"
+          },
+          {
+            "name": "Zach Frankel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-28e2ee2f51e199"
+          },
+          {
+            "name": "Yinon Costica",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b9d1780520f6d3"
+          },
+          {
+            "name": "Ofir Ehrlich",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-118224bf08157b"
+          },
+          {
+            "name": "Anne Neuberger",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-053d78be990688"
+          },
+          {
+            "name": "Omer Adam",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a202c6b81de576"
+          },
+          {
+            "name": "Varun Anand",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-adada0197df8a6"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0426e4b3b9347f4f",
+            "quote": "AIR raises $50M to help companies vet the skills and add-ons AI agents use",
+            "source_content_hash": "f272d6219c1373f8",
+            "quote_hash": "8f889dc387f98be3f48c0f51ad7e52383f402ddaebd9de2afdcfe8668fc2698d"
+          },
+          {
+            "source_id": "FISRC-0426e4b3b9347f4f",
+            "quote": "The funding rounds closed within weeks of each other, Saban told TechCrunch, with the first round raising $10 million, and the second $40 million. Sequoia led the first round, while Greenoaks led the second, Saban said.",
+            "source_content_hash": "f272d6219c1373f8",
+            "quote_hash": "897cd29f390a612f4869929543c8dc89401bdfbf28d9b041bdeaf1e46baae725"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$50M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "total_raised_original": "5000万美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-b9d8b3582f12bdc7",
+            "round_original": "种子轮",
+            "amount": "$50M",
+            "announced_at": "2026-09-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "AIR raises $50M to help companies vet the skills and add-ons AI agents use",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "8f889dc387f98be3f48c0f51ad7e52383f402ddaebd9de2afdcfe8668fc2698d"
+              },
+              {
+                "source_id": "FISRC-0426e4b3b9347f4f",
+                "quote": "The funding rounds closed within weeks of each other, Saban told TechCrunch, with the first round raising $10 million, and the second $40 million. Sequoia led the first round, while Greenoaks led the second, Saban said.",
+                "source_content_hash": "f272d6219c1373f8",
+                "quote_hash": "897cd29f390a612f4869929543c8dc89401bdfbf28d9b041bdeaf1e46baae725"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "5000万美元",
+          "normalized": {
+            "currency": "USD",
+            "value": 50000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5000 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 50000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "5000 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "AIR平台",
+          "description": "一个可以发现企业内部运行中的AI代理、持续审查这些代理使用的技能、工具和组件，并阻止其与不符合安全标准的软件或外部来源交互的平台。平台还提供经过审查的AI代理附加组件和技能市场。",
+          "target_customers": "企业，尤其是受严格监管行业中的大型企业",
+          "features": [
+            "发现企业环境中的AI代理",
+            "持续审查技能、插件、MCP服务器和附加组件",
+            "阻止不符合安全标准的交互",
+            "维护白名单并评估公开技能和附加组件的变化与恶意行为",
+            "提供经过审查的附加组件和技能市场"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "AIR offers a platform that can discover agents running inside companies, continuously vet any skills, tools, and components those agents use, and block them from interacting with software or external sources that don’t pass security criteria. It also offers a marketplace of vetted add-ons and skills for AI agents.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "1b6a92a6be1c96c66e7bfbdd840affdcfaa995384771489ff66b09fc40aafac0"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Noma Security",
+          "product": "代理、MCP服务器和技能的发现、访问控制和运行时监控",
+          "scenario": "企业AI代理安全治理",
+          "target_customer": "企业",
+          "funding_summary": "Noma去年完成1亿美元B轮融资",
+          "core_difference": "AIR强调对技能和附加组件生态系统的持续审查能力，而Noma Security提供发现、访问控制和运行时监控。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "Noma Security offers discovery, access controls, and runtime monitoring for agents, MCP servers, and skills, while Zenity sells security and governance tools that work similarly.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "b1547e8f0a3df9a9d68443110549d2046f6db483d39a3ca619b663a3648f45aa"
+            },
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "Noma raised a $100 million Series B last year.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "9e74b5eee7a0f567d6f1f0017e1738a289eff82e575e308c4794039b0259f216"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Zenity",
+          "product": "安全与治理工具",
+          "scenario": "企业AI代理安全治理",
+          "target_customer": "企业",
+          "funding_summary": "Zenity于2026年8月完成1.25亿美元C轮融资",
+          "core_difference": "AIR强调对技能和附加组件生态系统的持续审查能力，而Zenity销售功能类似的安全与治理工具。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "Noma Security offers discovery, access controls, and runtime monitoring for agents, MCP servers, and skills, while Zenity sells security and governance tools that work similarly.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "b1547e8f0a3df9a9d68443110549d2046f6db483d39a3ca619b663a3648f45aa"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Operant AI",
+          "product": "代理保护及MCP网关",
+          "scenario": "企业AI代理安全治理",
+          "target_customer": "企业",
+          "funding_summary": "",
+          "core_difference": "AIR强调对技能和附加组件生态系统的持续审查能力，而Operant AI提供代理保护以及MCP网关。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "Operant AI offers agent protections as well as an MCP gateway.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "b8081fc749cfaade7bae112a475db02382d316a48d04c4db658763eefdbd9271"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "大型企业客户占比",
+          "value": "约四分之一",
+          "observed_at": "2026-09-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "Saban said roughly a quarter of these are large enterprises.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "76fda73898aeca4943e6bc0e4a94fe797e17983f7c0d37048a1b61e165c31646"
+            }
+          ]
+        },
+        {
+          "label": "在线发现的附加组件和技能过滤率",
+          "value": "约27%",
+          "observed_at": "2026-09-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "He added that AIR’s platform currently filters out about 27% of the add-ons and skills it finds online.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "e7d38b516a37055cc8e8ca7bda04d51bf0d843e169a4f3686cb73464c6dc65c6"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "约40人",
+          "observed_at": "2026-09-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "AIR currently has around 40 employees.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "707f0d19d721fa7af74c460ce1b25327be70feb869694b28d198ba9d53cace73"
+            }
+          ]
+        },
+        {
+          "label": "第一轮种子轮金额",
+          "value": "1000万美元",
+          "observed_at": "2026-09-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "The funding rounds closed within weeks of each other, Saban told TechCrunch, with the first round raising $10 million, and the second $40 million.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "d2c46c47cbde98469a27946ced7a5c2aea13a6fef5e5522428b6f58f1a8b7834"
+            }
+          ]
+        },
+        {
+          "label": "第二轮种子轮金额",
+          "value": "4000万美元",
+          "observed_at": "2026-09-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0426e4b3b9347f4f",
+              "quote": "The funding rounds closed within weeks of each other, Saban told TechCrunch, with the first round raising $10 million, and the second $40 million.",
+              "source_content_hash": "f272d6219c1373f8",
+              "quote_hash": "d2c46c47cbde98469a27946ced7a5c2aea13a6fef5e5522428b6f58f1a8b7834"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "ground.news",
+          "quote": "AIR Raises $50M to Help Companies Vet the Skills and Add-Ons AI Agents Use Skip to main content See every side of every news story Get Started Browser Extension Wednesday, September 2, 2026 Set Location US Edition Home For You Local Blindspot Subscribe Login Search Subscribe Login Published 9 hours ago • loading.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a33ec4cf1a91ab7b",
+              "quote": "AIR Raises $50M to Help Companies Vet the Skills and Add-Ons AI Agents Use Skip to main content See every side of every news story Get Started Browser Extension Wednesday, September 2, 2026 Set Location US Edition Home For You Local Blindspot Subscribe Login Search Subscribe Login Published 9 hours ago • loading.",
+              "source_content_hash": "7bb8e06211f27c9a",
+              "quote_hash": "9373b77e1fe45afc364efadd341df58896fad68f638dfa5d22403040c3a1d527"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI代理软件供应链的持续审查与再验证能力能否形成独立安全层。AIR在成立仅约六个月、约40名员工的情况下完成两轮合计5000万美元种子轮融资，Sequoia和Greenoaks分别领投两轮，说明投资机构认可其将代理技能、插件和MCP服务器的持续审查定位为基础设施级问题而非单纯扫描问题。已验证信号包括：平台过滤约27%的在线附加组件和技能、超过20家客户且约四分之一为大型企业、在金融服务和制药等强监管行业需求最强。但证据边界明显：公司未披露具体客户名称、收入规模或估值，客户数量和过滤率均为公司自述，且竞争格局中已有Noma、Zenity、Astrix Security和Operant AI等获得大额融资的对手。",
+        "validated_signals": [
+          "平台可发现企业内运行中的AI代理并持续审查其使用的技能、插件和MCP服务器",
+          "平台过滤约27%的在线附加组件和技能",
+          "拥有超过20家客户，约四分之一为大型企业",
+          "在金融服务和制药等强监管行业需求最强",
+          "两轮种子轮分别由Sequoia和Greenoaks领投"
+        ],
+        "risks": [
+          "AI实验室和提供商可能最终内置安全检查和策略来过滤恶意技能和工具使用，削弱独立产品的需求",
+          "竞争激烈，Noma、Zenity、Astrix Security和Operant AI等对手已获得大额融资",
+          "客户数量、过滤率等关键指标均为公司自述，缺乏独立验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI安全",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI代理软件供应链的持续审查与再验证能力能否形成独立安全层。AIR在成立仅约六个月、约40名员工的情况下完成两轮合计5000万美元种子轮融资，Sequoia和Greenoaks分别领投两轮，说明投资机构认可其将代理技能、插件和MCP服务器的持续审查定位为基础设施级问题而非单纯扫描问题。已验证信号包括：平台过滤约27%的在线附加组件和技能、超过20家客户且约四分之一为大型企业、在金融服务和制药等强监管行业需求最强。但证据边界明显：公司未披露具体客户名称、收入规模或估值，客户数量和过滤率均为公司自述，且竞争格局中已有Noma、Zenity、Astrix Security和Operant AI等获得大额融资的对手。",
+          "evidence_signals": [
+            "平台可发现企业内运行中的AI代理并持续审查其使用的技能、插件和MCP服务器",
+            "平台过滤约27%的在线附加组件和技能",
+            "拥有超过20家客户，约四分之一为大型企业",
+            "在金融服务和制药等强监管行业需求最强",
+            "两轮种子轮分别由Sequoia和Greenoaks领投"
+          ],
+          "risks": [
+            "AI实验室和提供商可能最终内置安全检查和策略来过滤恶意技能和工具使用，削弱独立产品的需求",
+            "竞争激烈，Noma、Zenity、Astrix Security和Operant AI等对手已获得大额融资",
+            "客户数量、过滤率等关键指标均为公司自述，缺乏独立验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AIR平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Yair Saban",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Niv Hoffman",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Greenoaks",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Swish",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Netz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Zach Frankel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Yinon Costica",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ofir Ehrlich",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Anne Neuberger",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Omer Adam",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Varun Anand",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Noma Security",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Zenity",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Operant AI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-b9d8b3582f12bdc7",
+          "date": "2026-09-01",
+          "title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+          "amount": "$50M",
+          "source_refs": [
+            "SA-452a00717604869d"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-0426e4b3b9347f4f",
+          "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+          "title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-02T00:22:31.148Z",
+          "content_hash": "f272d6219c1373f8",
+          "source_artifact_id": "SA-452a00717604869d",
+          "raw_id": "RAW-a5d151ba4a92df38"
+        },
+        {
+          "source_id": "FISRC-a33ec4cf1a91ab7b",
+          "source_url": "https://ground.news/article/air-emerges-from-stealth-with-50m-to-build-a-firewall-for-agents",
+          "title": "AIR Raises $50M to Help Companies Vet the Skills and Add-Ons AI Agents Use",
+          "publisher": "ground.news",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-02T00:26:24.080Z",
+          "content_hash": "7bb8e06211f27c9a",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-02T00:27:19.855Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-b9d8b3582f12bdc7",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-02T00:27:19.855Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AIR平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Niv Hoffman",
+            "Yair Saban"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-b9d8b3582f12bdc7"
+      ],
+      "aggregation": {
+        "key": "EN-9fe430e5274621be|seed|USD:exact:50000000:::|2026-09-01",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-29e37a6d373071d9",
+          "event_ids": [
+            "EV-b9d8b3582f12bdc7"
+          ],
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$50M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 50000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5000 万美元"
+          },
+          "announced_at": "2026-09-01",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "security_software",
+        "name": "安全软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "observability_evaluation",
+        "name": "可观测与评估",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "ai_observability_governance",
+        "name": "AI 可观测与治理",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-b9d8b3582f12bdc7",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "company.founders[0].role": {
+            "text": "首席执行官",
+            "source_hash": "57f0df0e3d01f3f2b0aaf23f34e9555027766525ce779fbe5f0b044021d6fd15",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:15.985Z",
+            "status": "translated"
+          },
+          "company.founders[1].role": {
+            "text": "首席技术官",
+            "source_hash": "e7f67dded93a78700d529f3294c3085bae8d30cd0b3290dec82b0e2007a0078f",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:18.959Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-47cbfa718574b335",
+      "triggered_by_event_id": "EV-a40e5e8c638e323d",
+      "as_of_date": "2026-09-02",
+      "company": {
+        "entity_id": "EN-76eda8ba20686b8e",
+        "name": "Aranya Inc.",
+        "full_name": "Aranya Inc.",
+        "website": "https://aranya.tech",
+        "summary": "Aranya Inc. 是一家AI基础设施初创公司，声称能在不到两天内将原始裸机服务器转化为定制、生产就绪的GPU集群，用于AI推理。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Christian Bhatia Ondaatje",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-89934e15127d3d0d",
+                "quote": "Christian Bhatia Ondaatje, co-founder and CEO of Aranya",
+                "source_content_hash": "38aef4d5d540ee15",
+                "quote_hash": "f08d79a678b4efc1fe38b06c365fb57ef3dd9c6da732aa9944b0c8942f02a500"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-89934e15127d3d0d",
+            "quote": "Aranya Inc. , a startup that says it can transform raw bare-metal servers into custom, production-ready graphics processing unit clusters for artificial intelligence inference in less than two days, launched today with $11 million in funding.",
+            "source_content_hash": "38aef4d5d540ee15",
+            "quote_hash": "da9fa30edc95b583d5c5c4d8436f948cf4f60efcdd441db67d538ce409f9c61e"
+          }
+        ],
+        "application_entity_id": "EN-76eda8ba20686b8e",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$11M",
+        "total_raised": "$11M",
+        "announced_at": "2026-09-01",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "First Round Capital Holdings L.P.",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-89934e15127d3d0d",
+                "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
+                "source_content_hash": "38aef4d5d540ee15",
+                "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-15e40a3e2f6592"
+          },
+          {
+            "name": "BoxGroup Ventures LLC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-89934e15127d3d0d",
+                "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
+                "source_content_hash": "38aef4d5d540ee15",
+                "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1e4056c2339f19"
+          },
+          {
+            "name": "Vermilion Cliffs Ventures LLC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-89934e15127d3d0d",
+                "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
+                "source_content_hash": "38aef4d5d540ee15",
+                "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-56b14828bee8af"
+          },
+          {
+            "name": "Asylum Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-89934e15127d3d0d",
+                "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
+                "source_content_hash": "38aef4d5d540ee15",
+                "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2e3d85ed47ee91"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Asylum Ventures",
+            "role": "种子前轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-89934e15127d3d0d",
+                "quote": "a $2 million pre-seed round led by Asylum Ventures",
+                "source_content_hash": "38aef4d5d540ee15",
+                "quote_hash": "2006eee4b667351a1deabf3e2e60ba73ee9e0b21fc5b47e69991af1cfc961617"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2e3d85ed47ee91"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-89934e15127d3d0d",
+            "quote": "Aranya raises $11M to turn bare-metal servers into AI clusters in less than 48 hours",
+            "source_content_hash": "38aef4d5d540ee15",
+            "quote_hash": "008a543489f5c6976e675c00d7570ffc9fede3041780b199aa0cb4877416e16f"
+          },
+          {
+            "source_id": "FISRC-89934e15127d3d0d",
+            "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
+            "source_content_hash": "38aef4d5d540ee15",
+            "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮及种子前轮",
+        "amount_original": "$11M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1100 万美元"
+        },
+        "total_raised_original": "$11M",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 11000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1100 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-a40e5e8c638e323d",
+            "round_original": "种子轮及种子前轮",
+            "amount": "$11M",
+            "announced_at": "2026-09-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-89934e15127d3d0d",
+                "quote": "Aranya raises $11M to turn bare-metal servers into AI clusters in less than 48 hours",
+                "source_content_hash": "38aef4d5d540ee15",
+                "quote_hash": "008a543489f5c6976e675c00d7570ffc9fede3041780b199aa0cb4877416e16f"
+              },
+              {
+                "source_id": "FISRC-89934e15127d3d0d",
+                "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
+                "source_content_hash": "38aef4d5d540ee15",
+                "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "$11M",
+          "normalized": {
+            "currency": "USD",
+            "value": 11000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1100 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 11000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "1100 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "clusterdOS",
+          "description": "一个建立在Kubernetes之上的开源引擎，通过声明式配置文件提供部署和维护基础设施的框架，并自动化容器化工作负载、网络和存储资源的编排。",
+          "target_customers": "AI推理提供商、数据中心、AI推理和训练公司",
+          "features": [
+            "在48小时内将任意数量的机架硬件转化为自愈集群",
+            "发现、诊断并解决硬件问题，包括GPU热事件、ECC错误和网络故障",
+            "跨多个集群的联邦控制",
+            "自然语言接口，允许工程师用普通命令管理基础设施",
+            "严格的多租户和基于角色的权限控制"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89934e15127d3d0d",
+              "quote": "Its flagship technology is an open-source engine called clusterdOS, built on top of Kubernetes, that provides a framework for deploying and maintaining infrastructure through declarative configuration files.",
+              "source_content_hash": "38aef4d5d540ee15",
+              "quote_hash": "567e00b1236559b857408ac6f9b5d453f70ceefaf7e7cd6ebe971fc4f02953ab"
+            },
+            {
+              "source_id": "FISRC-09020511e960560b",
+              "quote": "ClusterdOS handles Kubernetes natively, with Slurm and VMs running on top of K8s.",
+              "source_content_hash": "df98c397ad7d154b",
+              "quote_hash": "7e9f8c98b445dad005af9c7619527079c1b062e5686d448ceea4706958b6e2f5"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Hydra Host",
+          "industry": "AI基础设施",
+          "use_case": "为AI推理和训练公司提供裸金属GPU计算和运营支持，通过clusterdOS将生产就绪集群交付时间缩短至24-48小时",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09020511e960560b",
+              "quote": "Hydra Host provides bare metal GPU compute and operational support to AI inference and training companies.",
+              "source_content_hash": "df98c397ad7d154b",
+              "quote_hash": "2794091493d2261ef9c04bba7eedadba84b1913923902056d18e87a66b4428b9"
+            },
+            {
+              "source_id": "FISRC-09020511e960560b",
+              "quote": "By bringing in Aranya for the Kubernetes layer, built on clusterdOS, Hydra Host now ships customers production-ready clusters in 24–48 hours, with cluster issue resolution time cut by 90%.",
+              "source_content_hash": "df98c397ad7d154b",
+              "quote_hash": "f99d035488a44712e5332e79ad9962d7daac66b7862f91d7b1978a41d33ececa"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "管理的GPU硬件价值",
+          "value": "超过5亿美元",
+          "observed_at": "2026-09-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89934e15127d3d0d",
+              "quote": "Aranya says it has already been tasked with managing more than $500 million worth of GPU hardware for leading AI inference providers and data centers.",
+              "source_content_hash": "38aef4d5d540ee15",
+              "quote_hash": "a0f44daedd36d7dd17bb7ebaef237f3c4054d95efb806335575062b5f2721a7d"
+            }
+          ]
+        },
+        {
+          "label": "集群交付时间",
+          "value": "48小时内",
+          "observed_at": "2026-09-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89934e15127d3d0d",
+              "quote": "The company promises it can transform any quantity of racked hardware into a cohesive, self-healing cluster within 48 hours",
+              "source_content_hash": "38aef4d5d540ee15",
+              "quote_hash": "df372d6840f20c30ceef4364084105ccce0ab327407293431bb3e5e74f6c9d22"
+            }
+          ]
+        },
+        {
+          "label": "Hydra Host联合部署GPU数量",
+          "value": "1,700+",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09020511e960560b",
+              "quote": "A leading AI inference company runs over 1,700 GPUs across the joint stack.",
+              "source_content_hash": "df98c397ad7d154b",
+              "quote_hash": "829e7927d22220e6db5433ca9c64829e1dec778fdbabe37b3b86452f0f158b78"
+            }
+          ]
+        },
+        {
+          "label": "集群问题解决时间缩短",
+          "value": "90%",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09020511e960560b",
+              "quote": "Resolution time −90% vs prior baseline",
+              "source_content_hash": "df98c397ad7d154b",
+              "quote_hash": "f07fd5da89ada38ff1103bcad2fa80885e0883bcb6dc2eb3c02b4ace859870de"
+            }
+          ]
+        },
+        {
+          "label": "K8s控制平面正常运行时间",
+          "value": "99.99%",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09020511e960560b",
+              "quote": "K8s stack uptime 99.99% control plane uptime",
+              "source_content_hash": "df98c397ad7d154b",
+              "quote_hash": "e2529240e29f3954e2a5af43770f1f5ca5b4eba529b0bed5db38d83be5af54f7"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Christian Bhatia Ondaatje",
+          "quote": "ClusterdOS is built for organization-scale computing, not for managing individual applications or isolated workloads",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89934e15127d3d0d",
+              "quote": "ClusterdOS is built for organization-scale computing, not for managing individual applications or isolated workloads",
+              "source_content_hash": "38aef4d5d540ee15",
+              "quote_hash": "9d1c4b560fcb0080933285ed866d903695f81e4780a24a8b89e843526129e3ac"
+            }
+          ]
+        },
+        {
+          "speaker": "Christian Bhatia Ondaatje",
+          "quote": "ClusterdOS discovers, diagnoses and resolves the hardware itself",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89934e15127d3d0d",
+              "quote": "ClusterdOS discovers, diagnoses and resolves the hardware itself",
+              "source_content_hash": "38aef4d5d540ee15",
+              "quote_hash": "4d68c76fde3c05e6920fa74f9d316c49fe414bde4cf5b70c0b6b4cd6d7acd3d7"
+            }
+          ]
+        },
+        {
+          "speaker": "Christian Bhatia Ondaatje",
+          "quote": "Real GPU infrastructure is heterogeneous and the OS layer has to absorb that",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89934e15127d3d0d",
+              "quote": "Real GPU infrastructure is heterogeneous and the OS layer has to absorb that",
+              "source_content_hash": "38aef4d5d540ee15",
+              "quote_hash": "9abeaa21456198d1457e1ee949879e63ebde8ec735eb2555020baab08056ffcd"
+            }
+          ]
+        },
+        {
+          "speaker": "Aaron Ginn",
+          "quote": "A growing number of customers need more than raw infrastructure. They need a faster, more reliable path to production. This partnership with Aranya brings together Hydra Host's bare metal compute and operational support with Aranya's Kubernetes expertise — giving customers a more complete solution for deploying and scaling real workloads with less complexity.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09020511e960560b",
+              "quote": "A growing number of customers need more than raw infrastructure. They need a faster, more reliable path to production. This partnership with Aranya brings together Hydra Host's bare metal compute and operational support with Aranya's Kubernetes expertise — giving customers a more complete solution for deploying and scaling real workloads with less complexity.",
+              "source_content_hash": "df98c397ad7d154b",
+              "quote_hash": "006ae660ed1ca4df64f58da3fa539128175ed1c2c73d6f5bbd005911f1bc2fb8"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Aranya能否将异构裸金属GPU基础设施的集群化交付时间从行业基准的2-6周压缩到48小时以内，并以此建立可复制的运营层标准。已验证信号包括：公司声称已管理超过5亿美元GPU硬件，Hydra Host联合部署超过1,700个GPU，集群问题解决时间缩短90%，K8s控制平面正常运行时间达99.99%。这些信号来自公司官方案例研究和融资公告，尚未有独立第三方审计数据支撑。",
+        "validated_signals": [
+          "已管理超过5亿美元GPU硬件",
+          "Hydra Host联合部署超过1,700个GPU",
+          "集群问题解决时间缩短90%",
+          "生产就绪集群交付时间24-48小时，对比行业基准2-6周",
+          "K8s控制平面正常运行时间99.99%"
+        ],
+        "risks": [
+          "所有运营指标均来自公司官方案例研究，缺乏独立第三方验证",
+          "开源引擎clusterdOS的商业模式和收入来源尚未在来源中披露",
+          "公司成立仅一年，客户集中度风险较高，目前仅披露Hydra Host一个具名客户"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Aranya能否将异构裸金属GPU基础设施的集群化交付时间从行业基准的2-6周压缩到48小时以内，并以此建立可复制的运营层标准。已验证信号包括：公司声称已管理超过5亿美元GPU硬件，Hydra Host联合部署超过1,700个GPU，集群问题解决时间缩短90%，K8s控制平面正常运行时间达99.99%。这些信号来自公司官方案例研究和融资公告，尚未有独立第三方审计数据支撑。",
+          "evidence_signals": [
+            "已管理超过5亿美元GPU硬件",
+            "Hydra Host联合部署超过1,700个GPU",
+            "集群问题解决时间缩短90%",
+            "生产就绪集群交付时间24-48小时，对比行业基准2-6周",
+            "K8s控制平面正常运行时间99.99%"
+          ],
+          "risks": [
+            "所有运营指标均来自公司官方案例研究，缺乏独立第三方验证",
+            "开源引擎clusterdOS的商业模式和收入来源尚未在来源中披露",
+            "公司成立仅一年，客户集中度风险较高，目前仅披露Hydra Host一个具名客户"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "clusterdOS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Christian Bhatia Ondaatje",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "First Round Capital Holdings L.P.",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BoxGroup Ventures LLC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Vermilion Cliffs Ventures LLC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Asylum Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Asylum Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Hydra Host",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-a40e5e8c638e323d",
+          "date": "2026-09-01",
+          "title": "Aranya融资1100万美元，将裸机服务器在48小时内转化为AI集群",
+          "amount": "$11M",
+          "source_refs": [
+            "SA-d14aedc29e216c93"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-89934e15127d3d0d",
+          "source_url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours/",
+          "title": "Aranya融资1100万美元，将裸机服务器在48小时内转化为AI集群",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-02T00:22:35.334Z",
+          "content_hash": "38aef4d5d540ee15",
+          "source_artifact_id": "SA-d14aedc29e216c93",
+          "raw_id": "RAW-77b2f49c01237319"
+        },
+        {
+          "source_id": "FISRC-09020511e960560b",
+          "source_url": "https://aranya.tech/blog/how-hydra-host-cut-cluster-issue-resolution-time-by-90-with-aranya",
+          "title": "How Hydra Host cut cluster issue resolution time by 90% with Aranya | Aranya",
+          "publisher": "aranya.tech",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-02T00:26:25.360Z",
+          "content_hash": "df98c397ad7d154b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-02T00:27:00.732Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-a40e5e8c638e323d",
+          "confidence": 0.8,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-02T00:27:00.732Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "clusterdOS"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Christian Bhatia Ondaatje"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-a40e5e8c638e323d"
+      ],
+      "aggregation": {
+        "key": "EN-76eda8ba20686b8e|seed|USD:exact:11000000:::|2026-09-01",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-47cbfa718574b335",
+          "event_ids": [
+            "EV-a40e5e8c638e323d"
+          ],
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮及种子前轮",
+          "amount_original": "$11M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 11000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1100 万美元"
+          },
+          "announced_at": "2026-09-01",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_infrastructure_software",
+        "name": "AI 基础设施软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "observability_evaluation",
+        "name": "可观测与评估",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "ai_observability_governance",
+        "name": "AI 可观测与治理",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-a40e5e8c638e323d",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "metrics[2].label": {
+            "text": "Hydra Host联合部署GPU数量",
+            "source_hash": "ce155efb2c216309dc53aadf48179099eab58b638a0dd5d83e7141048f5e13af",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-02T02:15:46.924Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-94d3afbe69796cf3",

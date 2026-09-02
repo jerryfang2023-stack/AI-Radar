@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
+    "quarantinedEventCount": 24
+  },
+  "institution": {
+    "id": "INV-97bea5e589d4d7",
+    "name": "Greenoaks",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-01",
+    "latest_disclosed_at": "2026-09-01",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-9fe430e5274621be",
+        "canonical_entity_id": "",
+        "name": "AIR"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9cdd82a2469bf504",
+        "funding_insight_id": "FI-29e37a6d373071d9",
+        "event_ids": [
+          "EV-b9d8b3582f12bdc7"
+        ],
+        "company_entity_id": "EN-9fe430e5274621be",
+        "company_canonical_entity_id": "",
+        "company_name": "AIR",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$50M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-09-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0426e4b3b9347f4f",
+            "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+            "source_title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+            "source_content_hash": "f272d6219c1373f8",
+            "quote": "Sequoia led the first round, while Greenoaks led the second, Saban said.",
+            "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-0426e4b3b9347f4f",
+        "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+        "source_title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+        "source_content_hash": "f272d6219c1373f8",
+        "quote": "Sequoia led the first round, while Greenoaks led the second, Saban said.",
+        "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
+      }
+    ]
+  }
+}

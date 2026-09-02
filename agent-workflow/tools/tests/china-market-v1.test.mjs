@@ -46,9 +46,11 @@ test("China market queries preserve explicit collection paths and do not change 
   assert.equal(keyword.some((query) => query.search_paths.includes("procurement_marketplace")), false);
   assert.equal(keyword.some((query) => query.query_theme === "china-procurement"), false);
   assert.ok(keyword.some((query) => query.search_paths.includes("official_original")));
-  assert.ok(keyword.some((query) => query.china_market_query_id === "cn-ai-hardware-funding" && query.search_paths.includes("capital_startup")));
-  assert.ok(keyword.some((query) => query.china_market_query_id === "cn-vertical-agent-funding" && query.search_paths.includes("capital_startup")));
+  assert.ok(keyword.some((query) => query.china_market_query_id === "cn-ai-hardware-funding" && query.search_paths.includes("china_ai_hardware_funding")));
+  assert.ok(keyword.some((query) => query.china_market_query_id === "cn-vertical-agent-funding" && query.search_paths.includes("china_vertical_agent_funding")));
   assert.ok(keyword.some((query) => query.china_market_query_id === "cn-ai-funding-media-sweep"));
+  assert.equal(keyword.find((query) => query.china_market_query_id === "cn-ai-hardware-funding")?.query_theme, "china-ai-hardware-funding");
+  assert.equal(keyword.find((query) => query.china_market_query_id === "cn-vertical-agent-funding")?.query_theme, "china-vertical-agent-funding");
   assert.ok(gdelt.some((query) => query.query_theme === "china-policy-regulation"));
   assert.equal(keyword.every((query) => query.market_region === "CN"), true);
   assert.equal(keyword.every((query) => !("score" in query) && !("weight" in query) && !("priority" in query)), true);
@@ -126,6 +128,16 @@ test("China market scope recognizes a disclosed Chinese legal entity without tru
   assert.equal(scoped.included.length, 1);
   assert.match(scoped.included[0].china_market_match_basis, /^china_legal_entity:/u);
   assert.deepEqual(scoped.excluded.map((item) => item.title), ["Global startup raises funding"]);
+});
+
+test("China market scope recognizes the Kling AI product actor as Kuaishou", () => {
+  const config = loadChinaMarketConfig(root);
+  const scoped = scopeChinaMarketItems([
+    { title: "可灵AI完成新一轮融资", summary: "国家人工智能基金参与本轮投资。", source: "公开报道" },
+  ], config.entityAliases);
+
+  assert.equal(scoped.included.length, 1);
+  assert.equal(scoped.included[0].china_market_match_basis, "china_entity:Kuaishou:可灵AI");
 });
 
 test("China market intake selection reads only the CN subset from a unified daily intake", () => {

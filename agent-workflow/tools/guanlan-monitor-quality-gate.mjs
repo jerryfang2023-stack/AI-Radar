@@ -100,6 +100,17 @@ function splitSourceFailureRecovery(items = [], fallbackRecovered = false) {
   return { recovered, unrecovered };
 }
 
+export function reconcileSourceFailureRecovery(items = [], recoveredCount = -1, unrecoveredCount = -1) {
+  const reportedCountsClose = recoveredCount >= 0
+    && unrecoveredCount >= 0
+    && recoveredCount + unrecoveredCount === items.length;
+  if (!reportedCountsClose) return splitSourceFailureRecovery(items, false);
+  return {
+    recovered: items.slice(0, recoveredCount),
+    unrecovered: items.slice(recoveredCount),
+  };
+}
+
 function weekdayNameForDate(value = "") {
   const match = String(value).match(/^(\d{4})-(\d{2})-(\d{2})$/u);
   if (!match) return "";
@@ -495,15 +506,21 @@ export function runGuanlanMonitorQualityGate({
     coreRawQcBlockCount <= coreRawQcBlockMax &&
     coreRawQcDegradedCount <= coreRawQcDegradedMax;
   const rawCountRecoveredByStructuredSupply = rawCount < effectiveRawMinHard && structuredSupplyHealthy;
-  // Once structured intake supply is healthy, peer source-channel failures are
-  // diagnostic supply-risk notes rather than downstream release blockers.
-  const sourceFallbackRecovered = structuredSupplyHealthy;
-  const sourceFailureRecovery = splitSourceFailureRecovery(failedSources, sourceFallbackRecovered);
+  // Healthy structured supply can make provider failures non-blocking, but it
+  // does not make the failed provider attempts disappear from operations data.
+  const reportedRecoveredSourceFailures = parseNumber(logBullets.recovered_failed_sources_count, -1);
+  const reportedUnrecoveredSourceFailures = parseNumber(logBullets.unrecovered_failed_sources_count, -1);
+  const sourceFailureRecovery = reconcileSourceFailureRecovery(
+    failedSources,
+    reportedRecoveredSourceFailures,
+    reportedUnrecoveredSourceFailures,
+  );
   const recoveredFailedSources = sourceFailureRecovery.recovered;
   const unrecoveredFailedSources = sourceFailureRecovery.unrecovered;
   const sourceProviderRecoveryStatus = failedSources.length
     ? (unrecoveredFailedSources.length ? "unrecovered" : "recovered_by_fallback")
     : "none";
+  const sourceProviderFailuresBlockRelease = !structuredSupplyHealthy && unrecoveredFailedSources.length > 0;
 
   const diagnosticChecks = [
     { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard || rawCountRecoveredByStructuredSupply, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}${rawCountRecoveredByStructuredSupply ? "; recovered_by_structured_supply=true" : ""}` },
@@ -736,7 +753,7 @@ export function runGuanlanMonitorQualityGate({
     `- source_provider_recovery_status: ${sourceProviderRecoveryStatus}`,
     `- recovered_failed_sources_count: ${recoveredFailedSources.length}`,
     `- unrecovered_failed_sources_count: ${unrecoveredFailedSources.length}`,
-    "- source_provider_failures_block_release: false",
+    `- source_provider_failures_block_release: ${sourceProviderFailuresBlockRelease ? "true" : "false"}`,
     `- failed_sources: ${failedSources.length ? failedSources.join("; ") : "none"}`,
     `- evidence_gaps: ${logBullets.evidence_gaps || "unknown"}`,
     `- fallback_used: ${logBullets.fallback_used || "unknown"}`,
@@ -833,7 +850,7 @@ export function runGuanlanMonitorQualityGate({
       failed_sources_count: failedSources.length,
       recovered_failed_sources_count: recoveredFailedSources.length,
       unrecovered_failed_sources_count: unrecoveredFailedSources.length,
-      source_provider_failures_block_release: false,
+      source_provider_failures_block_release: sourceProviderFailuresBlockRelease,
       importance_coverage_gaps: importanceCoverageValue,
       pool_importance_coverage_gaps: poolImportanceCoverageValue,
     },

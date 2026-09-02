@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-01T01:37:08.808Z",
-    "latestDataDate": "2026-09-01",
-    "currentDate": "2026-09-01",
-    "eventCount": 2536,
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -26,9 +26,9 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-product_form-compute_cloud_service",
       "TX-ai_market_category-infrastructure_compute",
       "TX-target_user-developer",
+      "TX-product_form-compute_cloud_service",
       "TX-ai_market_application-computing_infrastructure",
       "TX-ai_market_subcategory-hardware_computing"
     ],
@@ -145,83 +145,14 @@
   "relationships": [],
   "taxonomyNodes": [
     {
-      "id": "TX-product_form-compute_cloud_service",
-      "name": "算力云服务",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "compute_cloud_service",
-      "eventIds": [
-        "EV-c32dd87e1f72b09a",
-        "EV-181cd28d97c4e61d",
-        "EV-2dea56b0e97c1685",
-        "EV-e3792591090281c6",
-        "EV-4eaf3aabecae6016",
-        "EV-6e516b6e68def9cf",
-        "EV-13ec78dfdbca678b",
-        "EV-53acea531ac371d6",
-        "EV-7b1c734882fa1ea6",
-        "EV-327ba605bd9e8307",
-        "EV-24265c0f0fa45343",
-        "EV-4118202ed0f91895",
-        "EV-29eea3f4a8fcd6f5",
-        "EV-1abf0d076d30ec6d",
-        "EV-6011ab83ebd290bd",
-        "EV-bd5b6110559f2fda",
-        "EV-9fe6938336dea2a2",
-        "EV-70fd5918095d6ab8",
-        "EV-0121f0a9e9a975ec",
-        "EV-7dcbf6eab4339b22",
-        "EV-a86b04e679044c45",
-        "EV-f2750a3d66e06fe7",
-        "EV-f84894a567752c40",
-        "EV-826c8088c4adf591",
-        "EV-0ec219a94317215f",
-        "EV-5493c61bcbe58aa2",
-        "EV-4b44f5eafecf4922",
-        "EV-a67071a8550cb1be"
-      ],
-      "entityIds": [
-        "EN-3f2a8b14f8f96937",
-        "EN-0b79cf2de0ee6b8e",
-        "EN-6fae0bc5a895aab8",
-        "EN-fdecfc27f301da9c",
-        "EN-0caee180da9d0f3f",
-        "EN-3c1ae4e6276005e7",
-        "EN-816bab802b34b308",
-        "EN-18b4bbfd60f4137e",
-        "EN-830cefea8ed73a00",
-        "EN-d1a61df8d3146e48",
-        "EN-c04bd5ebd10ab696",
-        "EN-07c370b082ffd370",
-        "EN-ce31f92c521b7b08",
-        "EN-c70eca6b0f88f44d",
-        "EN-8f5ef31ed5125786",
-        "EN-3c7a24d85b4a5835",
-        "EN-29b9f0cae32e7a8a",
-        "EN-7640da40298286a6",
-        "EN-ebf9032e4009b3d9",
-        "EN-042e9398f2cc8902",
-        "EN-9d07f526fab9cfe9",
-        "EN-a89a94ff38d4dc95"
-      ],
-      "fdeIds": [
-        "FDE-3c16927208b7ac37",
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [
-        "HW-304c6370cc157449",
-        "HW-9a39a7f449362f96"
-      ],
-      "firstSeen": "2026-04-30",
-      "lastSeen": "2026-08-31"
-    },
-    {
       "id": "TX-ai_market_category-infrastructure_compute",
       "name": "基础设施与算力",
       "nodeType": "ai_market_category",
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-a40e5e8c638e323d",
+        "EV-b9d8b3582f12bdc7",
         "EV-657176fd0dff6209",
         "EV-259566f35ea4f66d",
         "EV-8ad153b984ba8729",
@@ -374,6 +305,8 @@
         "EV-535c2f4fb851332d"
       ],
       "entityIds": [
+        "EN-76eda8ba20686b8e",
+        "EN-9fe430e5274621be",
         "EN-336ab1deb42d6284",
         "EN-607a596a603dd679",
         "EN-647aebd730e6d6b2",
@@ -511,7 +444,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-09-02"
     },
     {
       "id": "TX-target_user-developer",
@@ -520,6 +453,8 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-a40e5e8c638e323d",
+        "EV-b9d8b3582f12bdc7",
         "EV-657176fd0dff6209",
         "EV-259566f35ea4f66d",
         "EV-8ad153b984ba8729",
@@ -701,6 +636,8 @@
         "EV-a9fe726c4ea2a17b"
       ],
       "entityIds": [
+        "EN-76eda8ba20686b8e",
+        "EN-9fe430e5274621be",
         "EN-336ab1deb42d6284",
         "EN-607a596a603dd679",
         "EN-647aebd730e6d6b2",
@@ -864,7 +801,80 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-09-02"
+    },
+    {
+      "id": "TX-product_form-compute_cloud_service",
+      "name": "算力云服务",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "compute_cloud_service",
+      "eventIds": [
+        "EV-c32dd87e1f72b09a",
+        "EV-181cd28d97c4e61d",
+        "EV-2dea56b0e97c1685",
+        "EV-e3792591090281c6",
+        "EV-4eaf3aabecae6016",
+        "EV-6e516b6e68def9cf",
+        "EV-13ec78dfdbca678b",
+        "EV-53acea531ac371d6",
+        "EV-7b1c734882fa1ea6",
+        "EV-327ba605bd9e8307",
+        "EV-24265c0f0fa45343",
+        "EV-4118202ed0f91895",
+        "EV-29eea3f4a8fcd6f5",
+        "EV-1abf0d076d30ec6d",
+        "EV-6011ab83ebd290bd",
+        "EV-bd5b6110559f2fda",
+        "EV-9fe6938336dea2a2",
+        "EV-70fd5918095d6ab8",
+        "EV-0121f0a9e9a975ec",
+        "EV-7dcbf6eab4339b22",
+        "EV-a86b04e679044c45",
+        "EV-f2750a3d66e06fe7",
+        "EV-f84894a567752c40",
+        "EV-49577d438cb6624b",
+        "EV-826c8088c4adf591",
+        "EV-0ec219a94317215f",
+        "EV-5493c61bcbe58aa2",
+        "EV-4b44f5eafecf4922",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-3f2a8b14f8f96937",
+        "EN-0b79cf2de0ee6b8e",
+        "EN-6fae0bc5a895aab8",
+        "EN-fdecfc27f301da9c",
+        "EN-0caee180da9d0f3f",
+        "EN-3c1ae4e6276005e7",
+        "EN-816bab802b34b308",
+        "EN-18b4bbfd60f4137e",
+        "EN-830cefea8ed73a00",
+        "EN-d1a61df8d3146e48",
+        "EN-c04bd5ebd10ab696",
+        "EN-07c370b082ffd370",
+        "EN-ce31f92c521b7b08",
+        "EN-c70eca6b0f88f44d",
+        "EN-8f5ef31ed5125786",
+        "EN-3c7a24d85b4a5835",
+        "EN-29b9f0cae32e7a8a",
+        "EN-7640da40298286a6",
+        "EN-373ac021a2c0bb2c",
+        "EN-ebf9032e4009b3d9",
+        "EN-042e9398f2cc8902",
+        "EN-9d07f526fab9cfe9",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-3c16927208b7ac37",
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-04-30",
+      "lastSeen": "2026-09-02"
     },
     {
       "id": "TX-ai_market_application-computing_infrastructure",

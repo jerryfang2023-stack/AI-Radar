@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-01T01:37:08.808Z",
-    "latestDataDate": "2026-09-01",
-    "currentDate": "2026-09-01",
-    "eventCount": 2536,
+    "generatedAt": "2026-09-02T02:22:03.432Z",
+    "latestDataDate": "2026-09-02",
+    "currentDate": "2026-09-02",
+    "eventCount": 2575,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-e03a4e649a6715a4",
       "EV-15d30aa24446fb79"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-01",
+    "lastSeen": "2026-09-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-e03a4e649a6715a4",
         "EV-15d30aa24446fb79"
       ],
       "hardware": [],
@@ -42,6 +44,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-e03a4e649a6715a4",
+        "dataDate": "2026-09-02",
+        "date": "2026-09-01",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Runway的Solaris是一款实时生成软件界面的AI智能体系统",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ae679821f0649c15",
+          "EN-2250ee20de07de60"
+        ]
+      },
       {
         "id": "EV-15d30aa24446fb79",
         "dataDate": "2026-09-01",

@@ -825,6 +825,32 @@ function claimSubjectOrganizationMentions(eventClaims, title, claimEvidence) {
   return candidates;
 }
 
+function explicitClaimOrganizationMentions(eventClaims = []) {
+  const candidates = [];
+  const add = (claim, name, offset) => {
+    const candidate = normalizeSpace(name).replace(/[,:;]+$/u, "").trim();
+    if (!candidate || candidate.length < 2 || candidate.length > 80 || /[$€£¥]/u.test(candidate)) return;
+    candidates.push({
+      canonicalName: candidate,
+      mentionText: claim.source_quote.slice(offset, offset + name.length),
+      start: offset,
+      source: "claim_evidence",
+      verified: true,
+    });
+  };
+  for (const claim of eventClaims) {
+    const quote = normalizeSpace(claim.source_quote);
+    const legal = quote.match(/\b([A-Z][A-Za-z0-9&.'/-]*(?:\s+[A-Z][A-Za-z0-9&.'/-]*){1,5}),?\s+(?:Inc\.?|LLC|Ltd\.?|Corp\.?|Corporation|Limited)\b/u);
+    if (legal?.[1]) add({ ...claim, source_quote: quote }, legal[1], legal.index);
+    const possessiveAgency = quote.match(/\b(?:[A-Z][A-Za-z]+\s+){0,2}[A-Z][A-Za-z]+(?:'s|’s)\s+([A-Z][A-Za-z&.'/-]*(?:\s+[A-Z][A-Za-z&.'/-]*){1,5})(?=\s+(?:will|has|have|announced|selected|launched|deployed)\b)/u);
+    if (possessiveAgency?.[1]) {
+      const offset = possessiveAgency.index + possessiveAgency[0].indexOf(possessiveAgency[1]);
+      add({ ...claim, source_quote: quote }, possessiveAgency[1], offset);
+    }
+  }
+  return candidates;
+}
+
 function sourceHostOrganizationMentions(sourceUrl = "") {
   let hostname = "";
   try {
@@ -920,6 +946,7 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
   if (eventType === "research_result") {
     hits.push(...researchAttributionMentions(context.documentEvidence));
   }
+  hits.push(...explicitClaimOrganizationMentions(eventClaims));
   if (!hits.length) hits.push(...claimSubjectOrganizationMentions(eventClaims, title, claimEvidence));
   if (!hits.length && (eventClaims || []).some((claim) => cleanOrganizationCandidate(claim.subject))) {
     const localizedTitleLead = title.match(/^(.{2,24}?)(?=\s*(?:--|—|–)\s*)/u)?.[1] || "";
