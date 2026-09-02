@@ -140,6 +140,13 @@ available. Scheduled tasks must not depend on a WindowsApps execution alias or a
 shell-only shim. Re-run `npm run install:windows-automation` after repairing the
 CLI so every controller receives the resolved executable path.
 
+The managed scheduled-task CLI must be at least `0.151.0`, the model-cache schema
+compatibility baseline. An older managed binary is treated as incompatible and
+updated in place before its stable absolute path is reused. Explicit operator
+overrides and PATH fallbacks must pass the same compatibility baseline; among
+compatible candidates, the explicit override remains authoritative and PATH is
+used only when no managed installation is available.
+
 The 16:10 Follow-Builders task follows the same isolation boundary. Generation,
 validation, PR publication, and forced lane supervision run from a temporary
 worktree under `%LOCALAPPDATA%\WaveSight\runtime\worktrees`; the detailed local

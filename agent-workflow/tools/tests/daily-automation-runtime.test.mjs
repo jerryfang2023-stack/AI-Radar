@@ -201,7 +201,9 @@ test("closure resolves and forwards an absolute Codex executable", () => {
   const controller = read("run-daily-automation-controller.mjs");
   assert.match(installer, /function Resolve-CodexExecutable/u);
   assert.match(installer, /WaveSight\\codex-cli/u);
-  assert.match(installer, /npm install --prefix \$managedRoot "@openai\/codex"/u);
+  assert.match(installer, /npm install --prefix \$managedRoot "@openai\/codex@latest"/u);
+  assert.match(installer, /MinimumVersion \(\[version\]"0\.151\.0"\)/u);
+  assert.match(installer, /Test-CodexExecutable -Candidate \$command\.Source -MinimumVersion/u);
   assert.match(installer, /Test-CodexExecutable -Candidate \$managedExecutable/u);
   assert.match(installer, /--codex-command="' \+ \$CodexExecutable/u);
   assert.match(controller, /const codexCommand = args\.get\("codex-command"\) \|\| "codex"/u);

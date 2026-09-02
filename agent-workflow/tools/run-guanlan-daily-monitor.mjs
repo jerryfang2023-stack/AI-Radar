@@ -3467,6 +3467,15 @@ function inferSearchIntent(query = "") {
   return "verify_company_action";
 }
 
+const chinaFundingSearchPathIds = new Set([
+  "china_ai_hardware_funding",
+  "china_vertical_agent_funding",
+]);
+
+function isDedicatedChinaFundingQuery(query = {}) {
+  return (query.search_paths || []).some((pathId) => chinaFundingSearchPathIds.has(pathId));
+}
+
 const keywordSearchPaths = [
   {
     id: "official_original",
@@ -3488,6 +3497,20 @@ const keywordSearchPaths = [
     role: "find startups, investors and funding signals",
     method: "ddg",
     querySuffix: "(startup OR funding OR seed OR pre-seed OR YC OR venture OR Crunchbase OR Dealroom OR PitchBook OR Tracxn)",
+  },
+  {
+    id: "china_ai_hardware_funding",
+    label: "中国 AI 硬件融资路径",
+    role: "collect China AI hardware financing without changing source weights or event ranking",
+    method: "ddg",
+    querySuffix: "",
+  },
+  {
+    id: "china_vertical_agent_funding",
+    label: "中国垂直智能体融资路径",
+    role: "collect China vertical-agent financing without changing source weights or event ranking",
+    method: "ddg",
+    querySuffix: "",
   },
   {
     id: "industry_landing",
@@ -3616,6 +3639,9 @@ function pathConfigById(id = "") {
 
 function selectQueriesForPath(allQueries, pathConfig) {
   const limit = Math.max(searchPathQueryLimit, 1);
+  if (chinaFundingSearchPathIds.has(pathConfig.id)) {
+    return allQueries.filter((query) => query.search_paths?.includes(pathConfig.id)).slice(0, limit);
+  }
   const eligibleQueries = allQueries.filter((query) =>
     !Array.isArray(query.search_paths)
     || query.search_paths.length === 0
@@ -3692,19 +3718,24 @@ function selectQueriesForPath(allQueries, pathConfig) {
   return selected.slice(0, limit);
 }
 
-function queryRecencyHintForPath(pathConfig) {
+function queryRecencyHintForPath(pathConfig, queryConfig = {}) {
   if (!new Set([
     "official_original",
     "capital_startup",
     "industry_landing",
     "procurement_marketplace",
-  ]).has(pathConfig.id) && !["fde", "hardware"].includes(pathConfig.lens)) return "";
+  ]).has(pathConfig.id) && !chinaFundingSearchPathIds.has(pathConfig.id) && !["fde", "hardware"].includes(pathConfig.lens)) return "";
   const [year, monthValue] = date.split("-");
   const month = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December",
   ][Number(monthValue) - 1];
+  if (queryConfig.market_region === "CN") return year && monthValue ? `${year}年${Number(monthValue)}月` : year;
   return month && year ? `announced ${month} ${year}` : `announced ${year}`;
+}
+
+function querySuffixForPath(pathConfig, queryConfig = {}) {
+  return queryConfig.market_region === "CN" ? "" : pathConfig.querySuffix;
 }
 
 async function runQuerySelectionRegressionFixtures() {
@@ -3722,17 +3753,34 @@ async function runQuerySelectionRegressionFixtures() {
     { query: "AI server customer deployment enterprise inference", query_theme: "ai-hardware-scenario-service-signal" },
     { query: "AI server product launch enterprise inference", query_theme: "ai-hardware-trend-innovation-signal" },
     { query: "site:supermicro.com/en/pressreleases \"Supermicro Simplifies Edge AI Deployments\" Red Hat Everpure", query_theme: "ai-hardware-trend-innovation-signal" },
+    { query: "中国 AI 芯片 融资", query_theme: "china-ai-hardware-funding", market_region: "CN", china_market_query_id: "cn-ai-hardware-funding", search_paths: ["china_ai_hardware_funding"] },
+    { query: "中国 垂直智能体 融资", query_theme: "china-vertical-agent-funding", market_region: "CN", china_market_query_id: "cn-vertical-agent-funding", search_paths: ["china_vertical_agent_funding"] },
   ];
   const selected = selectQueriesForPath(queries, pathConfigById("capital_startup"));
-  if (!selected.length || selected.some((query) => !/startup|seed|funding|financing|raises?|series\s+[a-z]/iu.test(query.query))) {
+  if (!selected.length || selected.some((query) => !/startup|seed|funding|financing|raises?|series\s+[a-z]|融资|获投|投资|种子轮|天使轮/iu.test(query.query))) {
     throw new Error(`capital startup path selected non-funding queries: ${JSON.stringify(selected)}`);
   }
   if (!selected.some((query) => query.query_theme === "important-funding")) {
     throw new Error(`capital startup path omitted the dedicated funding theme: ${JSON.stringify(selected)}`);
   }
+  const selectedChinaHardware = selectQueriesForPath(queries, pathConfigById("china_ai_hardware_funding"));
+  const selectedChinaAgent = selectQueriesForPath(queries, pathConfigById("china_vertical_agent_funding"));
+  if (selectedChinaHardware.length !== 1 || selectedChinaHardware[0].china_market_query_id !== "cn-ai-hardware-funding") {
+    throw new Error(`China AI hardware funding path did not remain source-bounded: ${JSON.stringify(selectedChinaHardware)}`);
+  }
+  if (selectedChinaAgent.length !== 1 || selectedChinaAgent[0].china_market_query_id !== "cn-vertical-agent-funding") {
+    throw new Error(`China vertical-agent funding path did not remain source-bounded: ${JSON.stringify(selectedChinaAgent)}`);
+  }
   const recencyHint = queryRecencyHintForPath(pathConfigById("capital_startup"));
   if (!new RegExp(`^announced [A-Z][a-z]+ ${date.slice(0, 4)}$`, "u").test(recencyHint)) {
     throw new Error(`capital startup path omitted the production-month recency hint: ${recencyHint}`);
+  }
+  const chinaRecencyHint = queryRecencyHintForPath(pathConfigById("china_ai_hardware_funding"), { market_region: "CN" });
+  if (chinaRecencyHint !== `${date.slice(0, 4)}年${Number(date.slice(5, 7))}月`) {
+    throw new Error(`China capital startup path used a non-local recency hint: ${chinaRecencyHint}`);
+  }
+  if (querySuffixForPath(pathConfigById("china_ai_hardware_funding"), { market_region: "CN" })) {
+    throw new Error("China AI hardware funding path appended a generic English query suffix");
   }
   const selectedHardware = selectQueriesForPath(queries, pathConfigById("hardware_product_specs"));
   if (!selectedHardware.some((query) => /AI server product launch/iu.test(query.query))) {
@@ -4215,7 +4263,11 @@ async function collectKeywordSearch() {
   for (const pathConfig of keywordSearchPaths) {
     const queries = selectQueriesForPath(allQueries, pathConfig);
     for (const queryConfig of queries) {
-      const query = [queryConfig.query, queryRecencyHintForPath(pathConfig), pathConfig.querySuffix].filter(Boolean).join(" ");
+      const query = [
+        queryConfig.query,
+        queryRecencyHintForPath(pathConfig, queryConfig),
+        querySuffixForPath(pathConfig, queryConfig),
+      ].filter(Boolean).join(" ");
       try {
         if (pathConfig.method === "hn") {
           const url = new URL("https://hn.algolia.com/api/v1/search_by_date");
@@ -4392,6 +4444,9 @@ async function collectGDELT() {
     }
   }
   const queries = [...firstPerTheme, ...rest].slice(0, gdeltQueryLimit);
+  for (const query of allQueries.filter(isDedicatedChinaFundingQuery)) {
+    if (!queries.includes(query)) queries.push(query);
+  }
   const items = [];
   const failures = [];
   for (const queryConfig of queries) {

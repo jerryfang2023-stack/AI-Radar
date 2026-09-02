@@ -38,11 +38,16 @@ function Resolve-CodexExecutable {
   param([string]$InputPath)
 
   function Test-CodexExecutable {
-    param([string]$Candidate)
+    param(
+      [string]$Candidate,
+      [version]$MinimumVersion = [version]"0.0.0"
+    )
     if (-not $Candidate -or -not (Test-Path -LiteralPath $Candidate -PathType Leaf)) { return $false }
     try {
-      $process = Start-Process -FilePath $Candidate -ArgumentList "--version" -PassThru -Wait -WindowStyle Hidden
-      return $process.ExitCode -eq 0
+      $versionOutput = (& $Candidate --version 2>$null | Out-String).Trim()
+      if ($LASTEXITCODE -ne 0) { return $false }
+      $versionMatch = [regex]::Match($versionOutput, '(\d+\.\d+\.\d+)')
+      return $versionMatch.Success -and [version]$versionMatch.Groups[1].Value -ge $MinimumVersion
     } catch {
       return $false
     }
@@ -50,8 +55,8 @@ function Resolve-CodexExecutable {
 
   if ($InputPath) {
     $resolved = (Resolve-Path -LiteralPath $InputPath).Path
-    if (-not (Test-CodexExecutable -Candidate $resolved)) {
-      throw "Codex executable is not runnable: $resolved"
+    if (-not (Test-CodexExecutable -Candidate $resolved -MinimumVersion ([version]"0.151.0"))) {
+      throw "Codex executable is not runnable or is below the model-cache compatibility baseline: $resolved"
     }
     return $resolved
   }
@@ -60,18 +65,31 @@ function Resolve-CodexExecutable {
   $managedExecutable = Get-ChildItem -LiteralPath (Join-Path $managedRoot "node_modules\@openai") `
     -Recurse -Filter "codex.exe" -File -ErrorAction SilentlyContinue |
     Select-Object -First 1 -ExpandProperty FullName
-  if (Test-CodexExecutable -Candidate $managedExecutable) { return $managedExecutable }
+  if (Test-CodexExecutable -Candidate $managedExecutable -MinimumVersion ([version]"0.151.0")) {
+    return $managedExecutable
+  }
+  if (Test-CodexExecutable -Candidate $managedExecutable) {
+    & npm install --prefix $managedRoot "@openai/codex@latest"
+    if ($LASTEXITCODE -ne 0) { throw "Failed to update the managed Codex CLI for model-cache compatibility." }
+    $managedExecutable = Get-ChildItem -LiteralPath (Join-Path $managedRoot "node_modules\@openai") `
+      -Recurse -Filter "codex.exe" -File -ErrorAction Stop |
+      Select-Object -First 1 -ExpandProperty FullName
+    if (-not (Test-CodexExecutable -Candidate $managedExecutable -MinimumVersion ([version]"0.151.0"))) {
+      throw "Managed Codex CLI remains below the model-cache compatibility baseline: $managedExecutable"
+    }
+    return $managedExecutable
+  }
 
   $command = Get-Command codex.exe -ErrorAction SilentlyContinue
-  if ($command -and (Test-CodexExecutable -Candidate $command.Source)) { return $command.Source }
+  if ($command -and (Test-CodexExecutable -Candidate $command.Source -MinimumVersion ([version]"0.151.0"))) { return $command.Source }
 
   New-Item -ItemType Directory -Path $managedRoot -Force | Out-Null
-  & npm install --prefix $managedRoot "@openai/codex"
+  & npm install --prefix $managedRoot "@openai/codex@latest"
   if ($LASTEXITCODE -ne 0) { throw "Failed to install the managed Codex CLI." }
   $managedExecutable = Get-ChildItem -LiteralPath (Join-Path $managedRoot "node_modules\@openai") `
     -Recurse -Filter "codex.exe" -File -ErrorAction Stop |
     Select-Object -First 1 -ExpandProperty FullName
-  if (-not (Test-CodexExecutable -Candidate $managedExecutable)) {
+  if (-not (Test-CodexExecutable -Candidate $managedExecutable -MinimumVersion ([version]"0.151.0"))) {
     throw "Managed Codex CLI is not runnable: $managedExecutable"
   }
   return $managedExecutable

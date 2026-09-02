@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, metricValues, modelAssistedEventEligibility, normalizeEventTitle, normalizedFundingMetric, organizationMentions, publicEventSourceTitleIssue, publicEventSourceUrlIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
-import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
+import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem, reconcileSourceFailureRecovery } from "../guanlan-monitor-quality-gate.mjs";
 import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleFromCapturedPayload, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -912,6 +912,33 @@ test("a procurement headline ending in an AI tender product still links the winn
   assert.ok(cactus);
   assert.ok(event.entities.includes(cactus.entity_id));
   assert.ok(!event.missing_fields.includes("entities"));
+});
+
+test("accepted deployment claims recover legal companies and possessive public agencies", () => {
+  const quotes = [
+    "Tyler Technologies, Inc. today announced that the state of Nebraska selected Tyler's Resident AI Assistant for statewide deployment.",
+    "South Korea's Public Procurement Service will expand pilot purchases for emerging-industry products including AI, robots and drones.",
+  ];
+  const matches = organizationMentions(
+    "Nebraska and Korea expand AI pilots",
+    { subject: "undisclosed_subject", action: "deployment", object: "AI pilots" },
+    "deployment",
+    quotes.join("\n"),
+    quotes.map((source_quote) => ({ subject: "undisclosed_subject", source_quote })),
+  );
+  const names = new Set(matches.map((entity) => entity.canonicalName));
+
+  assert.ok(names.has("Tyler Technologies"));
+  assert.ok(names.has("Public Procurement Service"));
+  assert.equal(matches.every((entity) => entity.verified), true);
+});
+
+test("quality telemetry preserves unrecovered provider attempts when structured supply is healthy", () => {
+  const attempts = ["diagnostic filter", "provider timeout", "provider 429"];
+  const recovery = reconcileSourceFailureRecovery(attempts, 1, 2);
+
+  assert.deepEqual(recovery.recovered, ["diagnostic filter"]);
+  assert.deepEqual(recovery.unrecovered, ["provider timeout", "provider 429"]);
 });
 
 test("a sovereign AI appliance headline resolves the operator instead of the title fragment", () => {

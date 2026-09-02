@@ -514,6 +514,22 @@ function supplementalClaimEntities(claimsById) {
       company_names: [],
       claim_refs: ["CL-b55ffa6a004d3eb5"],
       rationale: "accepted Claim 明确称 TensorWave Inc. 为 AI 基础设施初创公司并记载 B 轮融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-33fbed2576350d0f",
+      name: "Tyler Technologies",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-c0ba17439e31e08a", "CL-6fbb986fd6dd9c2e"],
+      rationale: "accepted Claims 精确写明 Tyler Technologies, Inc. 宣布内布拉斯加州扩大其 AI 解决方案部署，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-4d42a268c39b1dcc",
+      name: "Public Procurement Service",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-0c2fd6e388edbe67", "CL-4a20c89e42e6ca70"],
+      rationale: "accepted Claims 精确写明韩国公共采购厅（Public Procurement Service）设置并执行创新产品试点采购预算，确认其为机构实体。"
     }
   ];
   return rows.map((row) => {

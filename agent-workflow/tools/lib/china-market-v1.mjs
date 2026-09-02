@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 export const CHINA_MARKET_SOURCE_REGISTRY_VERSION = "CHINA-MARKET-SOURCE-REGISTRY-V1.0";
-export const CHINA_MARKET_MONITORING_VERSION = "CHINA-MARKET-MONITORING-V1.2";
+export const CHINA_MARKET_MONITORING_VERSION = "CHINA-MARKET-MONITORING-V1.3";
 export const CHINA_MARKET_ENTITY_ALIASES_VERSION = "CHINA-MARKET-ENTITY-ALIASES-V1.0";
 
 const DATABASE_DIR = path.join("01-SiteV2", "content", "11-databases");
