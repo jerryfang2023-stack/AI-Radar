@@ -1,5 +1,7 @@
 const analytics = require("./utils/analytics.js");
+const pageSharing = require("./utils/page-sharing.js");
 
+pageSharing.installPageSharing();
 analytics.installPageTracking();
 
 App({

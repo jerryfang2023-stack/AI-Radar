@@ -14,7 +14,7 @@ function loadPaymentWx({ orderStatus = "PAID", paymentFailure = null } = {}) {
     login: ({ success }) => success({ code: "login-code" }),
     request: ({ url, method, data, header, success }) => {
       requests.push({ url, method, data, header });
-      if (url.endsWith("/auth/wechat")) return success({ statusCode: 200, data: { token: "token-1", isNewUser: true } });
+      if (url.endsWith("/auth/wechat")) return success({ statusCode: 200, data: { token: "token-1", isNewUser: true, profile: { phoneMasked: "138****8000" } } });
       if (url.endsWith("/member/phone")) return success({ statusCode: 200, data: { profile: { phoneMasked: "138****8000" } } });
       if (url.endsWith("/member/me")) return success({ statusCode: 200, data: { membership: { status: "trial" }, profile: { phoneMasked: "138****8000" } } });
       if (url.endsWith("/member/behaviors")) return success({ statusCode: 200, data: { awarded: 5, wallet: { balance: 5, lifetime: 5 } } });
@@ -32,7 +32,7 @@ function loadPaymentWx({ orderStatus = "PAID", paymentFailure = null } = {}) {
     requestVirtualPayment: ({ success, fail }) => paymentFailure ? fail({ errMsg: paymentFailure }) : success({ errMsg: "requestVirtualPayment:ok" }),
   };
   delete require.cache[require.resolve("../miniprogram/utils/payment.js")];
-  return { payment: require("../miniprogram/utils/payment.js"), requests };
+  return { payment: require("../miniprogram/utils/payment.js"), requests, storage };
 }
 
 test("creates a server-priced order and confirms paid status", async () => {
@@ -86,8 +86,19 @@ test("does not silently register while checking membership", async () => {
   assert.equal(requests.some((item) => item.url.endsWith("/auth/wechat")), false);
 });
 
-test("exchanges a phone authorization code and returns the masked phone", async () => {
+test("uses the same phone authorization code when binding also needs a first login", async () => {
   const { payment, requests } = loadPaymentWx();
+  const result = await payment.bindPhoneNumber("phone-code");
+  assert.equal(result.profile.phoneMasked, "138****8000");
+  const request = requests.find((item) => item.url.endsWith("/auth/wechat"));
+  assert.equal(request.method, "POST");
+  assert.equal(request.data.phoneCode, "phone-code");
+  assert.equal(requests.some((item) => item.url.endsWith("/member/phone")), false);
+});
+
+test("exchanges a phone authorization code through the binding endpoint for an existing login", async () => {
+  const { payment, requests, storage } = loadPaymentWx();
+  storage.set("guanlan_api_token_v1", "token-1");
   const result = await payment.bindPhoneNumber("phone-code");
   assert.equal(result.profile.phoneMasked, "138****8000");
   const request = requests.find((item) => item.url.endsWith("/member/phone"));

@@ -1,5 +1,5 @@
 const { getFundingData } = require("../../utils/live-data.js");
-const { buildEntityLibrary, findEntity } = require("../../utils/entity-library.js");
+const { buildEntityLibrary, findEntity, companyEntityKey } = require("../../utils/entity-library.js");
 const { resolveDetailAccess, requestLockedContent, protectedResourceId } = require("../../utils/metered-access.js");
 const { fetchProtectedContent } = require("../../utils/payment.js");
 
@@ -14,6 +14,7 @@ Page({
     this.setData({ sharedEntry });
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     try { this.key = decodeURIComponent(options.key || ""); } catch { this.key = options.key || ""; }
+    try { this.name = decodeURIComponent(options.name || ""); } catch { this.name = options.name || ""; }
     this.setData(resolveDetailAccess(`entity:${this.type || "unknown"}:${this.key || "unknown"}`));
     this.setData({ title: TITLES[this.type] || "主体档案", type: this.type });
     this.applyData({ index: getFundingData().index, details: {} });
@@ -34,7 +35,19 @@ Page({
     const library = buildEntityLibrary(state.index.cards, state.details);
     const entity = findEntity(library, this.type, this.key);
     if (entity) this.setData({ entity });
-    else if (!this.data.entity) wx.showToast({ title: "主体档案不存在", icon: "none" });
+    else if (this.type === "companies" && this.name && !this.data.entity) {
+      // Protected person/investor profiles can reference a company that is newer
+      // than the bundled funding index. Keep the relation navigable while the
+      // authoritative server profile is fetched instead of reporting a false
+      // "not found" from the stale local projection.
+      this.setData({ entity: {
+        key: companyEntityKey(this.name), type: "companies", name: this.name,
+        initial: this.name.slice(0, 1).toUpperCase(), summary: "企业资料正在同步",
+        headquarters: "暂未披露", productsText: "暂未披露", categoriesText: "AI 企业",
+        categoriesFullText: "暂未分类", website: "", rounds: [], founders: [], investors: [],
+        investorLinks: [], roundCount: 0, investorCount: 0, founderCount: 0,
+      } });
+    }
   },
 
   openFunding(event) {
@@ -43,8 +56,12 @@ Page({
   },
 
   openEntity(event) {
-    const { key, type } = event.currentTarget.dataset;
-    if (key && type) this.openProtectedUrl(`/pages/entity-detail/index?type=${type}&key=${encodeURIComponent(key)}`);
+    const { key, name, type } = event.currentTarget.dataset;
+    // Protected person/investor profiles may carry canonical relation IDs, while
+    // the Mini Program company library is keyed by the normalized company name.
+    const resolvedKey = type === "companies" && name ? companyEntityKey(name) : key;
+    const nameQuery = type === "companies" && name ? `&name=${encodeURIComponent(name)}` : "";
+    if (resolvedKey && type) this.openProtectedUrl(`/pages/entity-detail/index?type=${type}&key=${encodeURIComponent(resolvedKey)}${nameQuery}`);
   },
 
   copyWebsite() {
@@ -67,18 +84,20 @@ Page({
   onShareAppMessage() {
     const entity = this.data.entity;
     const key = encodeURIComponent(this.key || "");
+    const name = this.name ? `&name=${encodeURIComponent(this.name)}` : "";
     return {
       title: entity ? `${entity.name}｜${this.data.title}｜观澜 AI` : "观澜 AI 生态图谱",
-      path: `/pages/entity-detail/index?type=${this.type || "companies"}&key=${key}&from=share`,
+      path: `/pages/entity-detail/index?type=${this.type || "companies"}&key=${key}${name}&from=share`,
     };
   },
 
   onShareTimeline() {
     const entity = this.data.entity;
     const key = encodeURIComponent(this.key || "");
+    const name = this.name ? `&name=${encodeURIComponent(this.name)}` : "";
     return {
       title: entity ? `${entity.name}｜${this.data.title}｜观澜 AI` : "观澜 AI 生态图谱",
-      query: `type=${this.type || "companies"}&key=${key}&from=share`,
+      query: `type=${this.type || "companies"}&key=${key}${name}&from=share`,
     };
   },
 });

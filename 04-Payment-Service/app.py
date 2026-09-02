@@ -323,13 +323,14 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         active_end = max(value for value in [trial_end, member_end] if value is not None)
         is_member = member_end is not None and member_end > now
         is_trial = not is_member and trial_end > now
+        community_trial = (row["community_status"] or "none") in {"approved", "joined"}
         return {
             "trialStartedAt": row["trial_started_at"],
             "trialEndsAt": row["trial_ends_at"],
             "memberEndsAt": row["member_ends_at"] or "",
             "status": "member" if is_member else "trial" if is_trial else "expired",
             "active": is_member or is_trial,
-            "statusLabel": "观澜会员" if is_member else "7 天体验中" if is_trial else "体验已结束",
+            "statusLabel": "观澜会员" if is_member else "社群成员 3 个月权益" if is_trial and community_trial else "7 天体验中" if is_trial else "体验已结束",
             "remainingDays": max(0, math.ceil((active_end - now).total_seconds() / 86400)),
             "activeUntil": active_end.date().isoformat(),
         }
@@ -405,6 +406,23 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 "INSERT INTO point_ledger(user_id, source_type, source_id, points, balance_after, lifetime_after, label, created_at) VALUES(?,?,?,?,?,?,?,?)",
                 (user["id"], "community_history", source_id, points, balance, lifetime, "社群历史积分", now),
             )
+
+    def grant_community_access(conn, user, member):
+        """Grant one non-renewing 90-day access window per approved community member."""
+        if str(member.get("status") or "") not in {"approved", "joined"}:
+            return user
+        source_id = f"community-welcome:{int(member['id'])}"
+        if conn.execute("SELECT id FROM membership_ledger WHERE source_id=?", (source_id,)).fetchone():
+            return user
+        now = utcnow()
+        previous_end = datetime.fromisoformat(user["trial_ends_at"])
+        new_end = max(previous_end, now + timedelta(days=90))
+        conn.execute("UPDATE users SET trial_ends_at=?, updated_at=? WHERE id=?", (iso(new_end), iso(now), user["id"]))
+        conn.execute(
+            "INSERT INTO membership_ledger(user_id, source_type, source_id, days, previous_ends_at, new_ends_at, created_at) VALUES(?,?,?,?,?,?,?)",
+            (user["id"], "community_welcome", source_id, 90, user["trial_ends_at"], iso(new_end), iso(now)),
+        )
+        return user_by_id(conn, user["id"])
 
     def extend_member_days(conn, user, days, source_type, source_id):
         now = utcnow()
@@ -1065,7 +1083,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                             result["openid"], result.get("unionid"), phone_digest(number), masked, iso(now), display_name,
                             iso(now) if avatar_selected else None,
                             (community_member or {}).get("id"), (community_member or {}).get("name") or "", community_status,
-                            iso(now), iso(now + timedelta(days=7)), iso(now), iso(now),
+                            iso(now), iso(now + timedelta(days=90 if community_member and community_status in {"approved", "joined"} else 7)), iso(now), iso(now),
                         ),
                     )
                 except sqlite3.IntegrityError:
@@ -1073,6 +1091,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 conn.commit()
                 user = conn.execute("SELECT * FROM users WHERE openid=?", (result["openid"],)).fetchone()
                 if community_member:
+                    user = grant_community_access(conn, user, community_member)
                     import_community_points(conn, user, community_member)
                     conn.commit()
                     user = user_by_id(conn, user["id"])
@@ -1125,6 +1144,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                         ),
                     )
                     user = user_by_id(conn, user["id"])
+                    user = grant_community_access(conn, user, community_member)
                     import_community_points(conn, user, community_member)
                     conn.commit()
                     user = user_by_id(conn, user["id"])
@@ -1288,6 +1308,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                     (member["id"], member.get("name") or "", member.get("status") or "pending", iso(utcnow()), user["id"]),
                 )
                 user = user_by_id(conn, g.user_id)
+                user = grant_community_access(conn, user, member)
                 import_community_points(conn, user, member)
             conn.commit()
             user = user_by_id(conn, g.user_id)

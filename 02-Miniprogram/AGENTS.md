@@ -2,7 +2,7 @@
 
 This is the native WeChat Mini Program frontstage for Funding Insights.
 
-Release record (2026-08-31): WeChat development version 0.9.4 was uploaded successfully from `cdc8cc091c8d62260705a662142d613631db23b1` (750571 bytes), tagged `miniprogram-v0.9.4`. Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.4/README.md` for the immutable source and receipt. The previous 0.9.3 source and receipt remain under `docs/releases/0.9.3/`.
+Current source target: 0.9.5 adds a global native-share baseline, fixes related-company entity deep links and first-time phone binding, and grants verified approved community members one idempotent 90-day Mini Program access window while synchronizing their community identity. The last immutable uploaded release remains 0.9.4 until the 0.9.5 upload receipt is recorded. Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.4/README.md` for the preceding immutable source and receipt.
 
 ## Boundaries
 
@@ -15,6 +15,8 @@ Release record (2026-08-31): WeChat development version 0.9.4 was uploaded succe
 - The project may use `touristappid`, a WeChat test AppID, or the production AppID. Never store AppSecret or other account credentials in the repository.
 
 ## Frontstage UI contract
+
+- 0.9.5 installs native friend/timeline sharing on every registered page. Existing detail/invitation handlers keep their specialized titles and deep links; community program, bounty, points and graph pages allowlist only their stable routing fields. Private/edit/settings pages must share a public front door and must never leak account state or authorization parameters. Related-company links from protected people/investor profiles resolve the visible company name through the Mini Program company key rather than trusting a server-side canonical relation ID, and retain a server-backed company reference when the protected profile is newer than the bundled index. A first phone binding without a local token must reuse that same one-time phone code for login. An approved existing community member linked by verified phone receives synced community identity/points and one non-renewing, idempotent 90-day access window; ordinary new users keep the seven-day rule.
 
 - 0.9.4 fixes home archive/member detail navigation. Bind record IDs in WXML and build encoded query parameters in JavaScript; never put HTML-escaped query separators in navigation attributes. Regression tests must pass actual template datasets through tap handlers and target page loading. Missing detail IDs must not trigger API requests. Keep existing styles, membership gates and server data unchanged; no backend redeployment is needed for this client-only fix.
 

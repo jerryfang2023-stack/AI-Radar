@@ -244,7 +244,12 @@ async function recordMemberBehavior(type, subjectId, behaviorDate) {
 
 async function bindPhoneNumber(code) {
   if (!code) throw new Error("未获得手机号授权");
-  return withToken((token) => apiRequest("/member/phone", { method: "POST", token, data: { code } }));
+  // The phone code is single-use and is also sufficient to complete a first
+  // Mini Program login. Do not discard it by starting an implicit login without
+  // phoneCode: the server would correctly answer REGISTRATION_REQUIRED even
+  // though the user just authorized their number.
+  if (!hasAuthToken()) return login({ phoneCode: code });
+  return withExistingToken((token) => apiRequest("/member/phone", { method: "POST", token, data: { code } }));
 }
 
 async function linkCommunityPhone(code) {

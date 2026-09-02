@@ -47,7 +47,7 @@ python scripts/provision_virtual_products.py --env 0
 
 ## 社群集成
 
-详细的数据流、接口和运维冒烟命令见 [社群集成说明](docs/community-integration.md)。核心原则：手机号必须由微信 `getPhoneNumber` 服务端换取后才能匹配；社群历史积分全量进入可用积分和累计成长积分；兑换只减少可用积分。
+详细的数据流、接口和运维冒烟命令见 [社群集成说明](docs/community-integration.md)。核心原则：手机号必须由微信 `getPhoneNumber` 服务端换取后才能匹配；已审核社群成员首次绑定后同步社群权限并获得一次性 90 天小程序使用期；社群历史积分全量进入可用积分和累计成长积分；兑换只减少可用积分。
 
 ## 邀请注册
 

@@ -600,6 +600,8 @@ def test_existing_community_member_can_link_during_first_login_without_profile_r
     assert payload["profile"]["nickname"] == "现有社群成员"
     assert payload["community"]["status"] == "joined"
     assert payload["wallet"] == {"balance": 860, "lifetime": 860}
+    assert payload["membership"]["remainingDays"] == 90
+    assert payload["membership"]["statusLabel"] == "社群成员 3 个月权益"
 
 
 def test_existing_mini_program_user_can_link_by_phone_without_profile_repeat(client):
@@ -613,6 +615,13 @@ def test_existing_mini_program_user_can_link_by_phone_without_profile_repeat(cli
     assert payload["profile"]["nickname"] == "现有社群成员"
     assert payload["community"]["status"] == "joined"
     assert payload["wallet"] == {"balance": 860, "lifetime": 860}
+    assert payload["membership"]["remainingDays"] == 90
+
+    repeated = client.post("/api/v1/auth/wechat", json={"code": "legacy-community", "phoneCode": "phone-code"}).get_json()
+    assert repeated["membership"]["remainingDays"] == 90
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        grants = conn.execute("SELECT COUNT(*) FROM membership_ledger WHERE source_type='community_welcome'").fetchone()[0]
+    assert grants == 1
 
 
 def test_phone_cannot_be_bound_to_two_accounts(client):
@@ -825,6 +834,7 @@ def test_existing_community_member_links_by_verified_phone_and_imports_all_histo
     assert payload["phoneMasked"] == "138****8000"
     assert payload["community"] == {"memberId": 42, "name": "现有社群成员", "status": "joined", "statusLabel": "已入群", "points": 860}
     assert payload["wallet"] == {"balance": 860, "lifetime": 860}
+    assert payload["membership"]["remainingDays"] == 90
 
     repeated = client.post("/api/v1/community/link-phone", headers=auth(token), json={"code": "phone-code"}).get_json()
     assert repeated["wallet"] == {"balance": 860, "lifetime": 860}

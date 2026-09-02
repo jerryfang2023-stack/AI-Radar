@@ -49,7 +49,7 @@
     </view>
 
     <view wx:if="{{type !== 'companies'}}" class="detail-section">
-      <text class="section-title serif">关联企业</text><view class="profile-list relation-list"><button wx:for="{{entity.companyLinks}}" wx:key="name" data-key="{{item.key}}" data-type="companies" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{type === 'investors' ? '已投企业' : '任职企业'}}</text></view><text>查看企业 ›</text></button></view>
+      <text class="section-title serif">关联企业</text><view class="profile-list relation-list"><button wx:for="{{entity.companyLinks}}" wx:key="name" data-key="{{item.key}}" data-name="{{item.name}}" data-type="companies" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{type === 'investors' ? '已投企业' : '任职企业'}}</text></view><text>查看企业 ›</text></button></view>
     </view>
 
     <view class="detail-section">

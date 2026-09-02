@@ -41,3 +41,16 @@ test("builds stable links across funding, company, institution and person views"
   assert.match(fs.readFileSync("miniprogram/pages/detail/index.wxml", "utf8"), /openCompany|openInvestor|openPerson/u);
   assert.match(fs.readFileSync("miniprogram/pages/entity-detail/index.wxml", "utf8"), /bindtap="openEntity"/u);
 });
+
+test("related-company taps resolve by visible company name instead of protected canonical relation IDs", () => {
+  const source = fs.readFileSync("miniprogram/pages/entity-detail/index.wxml", "utf8");
+  const logic = fs.readFileSync("miniprogram/pages/entity-detail/index.js", "utf8");
+  assert.match(source, /data-name="\{\{item\.name\}\}"[\s\S]*data-type="companies"/u);
+  assert.match(logic, /type === "companies" && name \? companyEntityKey\(name\) : key/u);
+  assert.match(logic, /nameQuery[\s\S]*encodeURIComponent\(name\)/u);
+  assert.match(logic, /this\.type === "companies" && this\.name/u);
+  assert.doesNotMatch(logic, /主体档案不存在/u);
+  assert.equal(companyEntityKey("  DeepSeek  "), "deepseek");
+  assert.equal(companyEntityKey("极佳视界"), "极佳视界");
+  assert.equal(companyEntityKey("助擎科技"), "助擎科技");
+});

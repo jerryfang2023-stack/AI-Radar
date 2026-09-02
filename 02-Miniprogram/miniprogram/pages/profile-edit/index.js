@@ -62,7 +62,7 @@ Page({
     this.setData({ bindingPhone: true });
     try {
       const result = await bindPhoneNumber(code);
-      saveProfile({ phoneMasked: result.profile.phoneMasked, phonePending: false });
+      saveProfile({ phoneMasked: result.profile?.phoneMasked || "", phonePending: false });
       this.refreshProfile();
       wx.showToast({ title: "手机号绑定成功", icon: "success" });
     } catch (error) {
