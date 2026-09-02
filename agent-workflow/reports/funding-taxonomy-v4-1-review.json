@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-25T04:09:28.788Z",
+    "generated_at": "2026-09-02T02:15:59.256Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 293,
-    "input_hash": "c06955614830ba7e",
+    "decision_count": 302,
+    "input_hash": "7a743fb99a3abb98",
     "override_count": 17,
-    "needs_review_count": 3,
-    "low_confidence_count": 9
+    "needs_review_count": 6,
+    "low_confidence_count": 13
   },
   "decisions": [
     {
@@ -5813,6 +5813,176 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Starcloud开发在轨卫星执行AI推理，提供轨道数据中心和计算基础设施，属于为AI构建者提供硬件计算资源，故归入infrastructure_compute下的hardware_computing。"
+    },
+    {
+      "event_id": "EV-3ee6b5e876146bb3",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "customer_support",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "customer_support",
+        "sales"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示Ringg提供跨行业的语音AI编排层，处理呼叫并路由到不同模型，客户涵盖金融、电商等，但未明确单一行业数据或监管，故归为企业应用；具体子类别证据不足，暂列客户支持，需复核。"
+    },
+    {
+      "event_id": "EV-657176fd0dff6209",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Stability AI develops open-source generative AI models (Stable Diffusion, Stable Audio, Stable Video) for image, music, and video generation. The company's primary offering is models, fitting the infrastructure_compute > development_deployment > models hierarchy. The main use case is content creation, with media and entertainment as the primary industry. Target users include developers integrating the models, business users leveraging them for creative workflows, and consumers using the tools directly."
+    },
+    {
+      "event_id": "EV-140ecf4fabe544ba",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain",
+        "retail_ecommerce",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "Gatik Driver 是自动驾驶货运系统，直接感知、决策并控制车辆在物理世界运行，符合 Physical AI 定义；产品形态为 robotic_system。"
+    },
+    {
+      "event_id": "EV-276878c26b2a06dc",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "rationale": "Instinct 是个人生活组织助手，连接用户应用与设备，属于跨行业生产力工具；但证据未明确其面向企业还是消费者，需复核。"
+    },
+    {
+      "event_id": "EV-0ea2bbb7280091f2",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "content_creation",
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": false,
+      "rationale": "Runable 面向小企业，用自然语言构建网站、应用和演示等内容，属于跨行业生产力工作流，非单一行业专属。"
+    },
+    {
+      "event_id": "EV-ab839326ca9597d8",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "legal",
+      "market_application_id": "",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "legal_compliance",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "legal_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品专注于合同分析和法律发现，围绕法律行业的专业数据与工作流构建，属于行业应用而非通用企业应用。"
+    },
+    {
+      "event_id": "EV-c538fb9a61735afc",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "Instinct 是面向个人用户的 AI 助手，帮助组织生活事务，但证据未明确其是否面向企业工作流，且不涉及物理世界操作或基础设施，暂归为跨行业企业应用中的生产力类，需复核。"
+    },
+    {
+      "event_id": "EV-b9d8b3582f12bdc7",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品监控并阻止AI代理使用不合规技能、工具和外部来源，属于为AI构建者提供安全基础设施，归入基础设施计算下的模型/代理安全。"
+    },
+    {
+      "event_id": "EV-a40e5e8c638e323d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "clusterdOS将裸金属服务器转化为GPU集群，属于为AI构建者提供硬件/计算基础设施，归入基础设施计算下的计算基础设施。"
     }
   ],
   "inputs": [
@@ -7322,6 +7492,30 @@
       }
     },
     {
+      "event_id": "EV-b9d8b3582f12bdc7",
+      "funding_insight_id": "FI-88967eae3befde75",
+      "company_name": "AIR",
+      "company_full_name": "AIR",
+      "website": "",
+      "current_sector": "AI安全",
+      "company_evidence_quotes": [
+        "AI security startup AIR believes companies will need a way to monitor that supply chain, and it’s now coming out of stealth with $50 million raised across two seed rounds to build that product."
+      ],
+      "products": [
+        {
+          "name": "AIR平台",
+          "evidence_quotes": [
+            "AIR offers a platform that can discover agents running inside companies, continuously vet any skills, tools, and components those agents use, and block them from interacting with software or external sources that don’t pass security criteria. It also offers a marketplace of vetted add-ons and skills for AI agents."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-3d93d1da8cb64462",
       "funding_insight_id": "FI-aceffe6f1021c1b1",
       "company_name": "AIsa",
@@ -7687,6 +7881,33 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-a40e5e8c638e323d",
+      "funding_insight_id": "FI-0541edd2dc662a1b",
+      "company_name": "Aranya Inc.",
+      "company_full_name": "Aranya Inc.",
+      "website": "https://aranya.tech",
+      "current_sector": "AI基础设施",
+      "company_evidence_quotes": [
+        "Aranya Inc. , a startup that says it can transform raw bare-metal servers into custom, production-ready graphics processing unit clusters for artificial intelligence inference in less than two days, launched today with $11 million in funding."
+      ],
+      "products": [
+        {
+          "name": "clusterdOS",
+          "evidence_quotes": [
+            "Its flagship technology is an open-source engine called clusterdOS, built on top of Kubernetes, that provides a framework for deploying and maintaining infrastructure through declarative configuration files.",
+            "ClusterdOS handles Kubernetes natively, with Slurm and VMs running on top of K8s."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Hydra Host"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -8231,6 +8452,31 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-ab839326ca9597d8",
+      "funding_insight_id": "FI-1349f84de460c849",
+      "company_name": "CogniLex",
+      "company_full_name": "CogniLex",
+      "website": "",
+      "current_sector": "法律科技",
+      "company_evidence_quotes": [
+        "London-based legal tech firm CogniLex secured a £250 million Series C funding round for its platform of AI agents specialised in contract analysis and legal discovery"
+      ],
+      "products": [
+        {
+          "name": "AI智能体平台",
+          "evidence_quotes": [
+            "its platform of AI agents specialised in contract analysis and legal discovery",
+            "These AaaS platforms typically operate on a subscription model, providing API access to agents that can be integrated directly into a company’s existing software stack."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "model_api_service",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -9485,6 +9731,43 @@
       }
     },
     {
+      "event_id": "EV-140ecf4fabe544ba",
+      "funding_insight_id": "FI-5e2aa22048db6eff",
+      "company_name": "Gatik",
+      "company_full_name": "Gatik",
+      "website": "gatik.ai",
+      "current_sector": "自动驾驶货运",
+      "company_evidence_quotes": [
+        "Autonomous trucking company Gatik has raised $200 million in Series D funding to expand its driverless freight operations across North America.",
+        "Gatik, the leader in autonomous trucking, today announced $200 million in financing as demand accelerates for driverless commercial freight across Fortune 50 retail, grocery and CPG supply chains."
+      ],
+      "products": [
+        {
+          "name": "Gatik Driver",
+          "evidence_quotes": [
+            "Gatik describes Gatik Driver as its proprietary AI system for autonomous freight.",
+            "powered by the Gatik Driver™, a scalable, interpretable AI system purpose-built to enable safe, consistent, and high-frequency freight movement"
+          ]
+        },
+        {
+          "name": "Arena",
+          "evidence_quotes": [
+            "In July 2025, the company introduced Arena, an internally developed simulation platform designed to reproduce driving environments without relying exclusively on physical road testing."
+          ]
+        }
+      ],
+      "customer_names": [
+        "PepsiCo",
+        "Walmart",
+        "Kroger",
+        "Tyson Foods"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
       "event_id": "EV-61546e58c0e669e7",
       "funding_insight_id": "FI-756ef43f08c8f540",
       "company_name": "General Analysis",
@@ -10385,6 +10668,30 @@
       ],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-276878c26b2a06dc",
+      "funding_insight_id": "FI-705ee26dc399cb0c",
+      "company_name": "Instinct",
+      "company_full_name": "Instinct",
+      "website": "",
+      "current_sector": "AI个人助手",
+      "company_evidence_quotes": [
+        "Instinct, a startup founded only last year and helmed by a 23-year-old, has managed to ride the wave of AI enthusiasm toward a gargantuan valuation over the course of the summer."
+      ],
+      "products": [
+        {
+          "name": "Instinct",
+          "evidence_quotes": [
+            "Instinct, which is offered by the company Spear Street Technology and led by founder Noah Shinn, is an agent that the company says can efficiently organize your life. Users connect it to their apps and devices and can communicate with it via texts and calls."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
         "market_category_id": "enterprise_applications"
       }
     },
@@ -13327,6 +13634,37 @@
       }
     },
     {
+      "event_id": "EV-3ee6b5e876146bb3",
+      "funding_insight_id": "FI-ffb91b38f24d1475",
+      "company_name": "Ringg",
+      "company_full_name": "Ringg",
+      "website": "https://ringg.ai/",
+      "current_sector": "企业语音AI",
+      "company_evidence_quotes": [
+        "Voice AI startup Ringg, which already processes 20 million call attempts a month",
+        "Ringg AI is a brand under Stoic AI Private Limited"
+      ],
+      "products": [
+        {
+          "name": "Ringg AI平台",
+          "evidence_quotes": [
+            "the product works as an orchestration layer, routing tasks to different models depending on the use case",
+            "AI agents that deliver outcomes you want across Voice, Chat, WhatsApp and Web."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Cred",
+        "Flipkart",
+        "Groww",
+        "PolicyBazaar"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-55e7c286e95be405",
       "funding_insight_id": "FI-c796f2e7d43a0ecb",
       "company_name": "River AI",
@@ -13386,6 +13724,38 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-0ea2bbb7280091f2",
+      "funding_insight_id": "FI-260bfb34f8dee437",
+      "company_name": "Runable",
+      "company_full_name": "Runable",
+      "website": "https://runable.com",
+      "current_sector": "AI 智能体与企业服务",
+      "company_evidence_quotes": [
+        "Founded in 2025, Runable is targeting small businesses"
+      ],
+      "products": [
+        {
+          "name": "Runable AI Agent",
+          "evidence_quotes": [
+            "Runable’s agent allows users to build websites, apps, presentations, and other content by using natural language prompts, while handling some of the underlying infrastructure, including deployment and analytics."
+          ]
+        },
+        {
+          "name": "Runable 2.0",
+          "evidence_quotes": [
+            "Runable 2.0 rebuilds the agent around a plan-first workflow: it asks clarifying questions, shows you a visual plan, and only builds after you approve"
+          ]
+        }
+      ],
+      "customer_names": [
+        "小企业主（约两人团队）"
+      ],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -13826,6 +14196,32 @@
       }
     },
     {
+      "event_id": "EV-c538fb9a61735afc",
+      "funding_insight_id": "FI-8f6cee6b76d6fa79",
+      "company_name": "Spear Street Technology",
+      "company_full_name": "Spear Street Technology",
+      "website": "",
+      "current_sector": "AI个人助手",
+      "company_evidence_quotes": [
+        "Instinct, a startup founded only last year and helmed by a 23-year-old",
+        "The San Francisco AI-agent startup has raised at least three rounds in recent months"
+      ],
+      "products": [
+        {
+          "name": "Instinct",
+          "evidence_quotes": [
+            "Instinct, which is offered by the company Spear Street Technology and is led by founder Noah Shinn, is an agent that the company says can efficiently organize your life. Users connect it to their apps and devices and can communicate with it via texts and calls.",
+            "They’ve told us they’ve planned cross-country road trips, bought weekly groceries and concert tickets, and cancelled hundreds of dollars of subscriptions. Someone’s even planning their wedding with Instinct."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-d5aa723446feebbb",
       "funding_insight_id": "FI-a068b8f09b73607c",
       "company_name": "SRE.ai",
@@ -13849,6 +14245,47 @@
       "current_classification": {
         "product_form_id": "developer_tool",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-657176fd0dff6209",
+      "funding_insight_id": "FI-66ecc56695f1e970",
+      "company_name": "Stability AI",
+      "company_full_name": "Stability AI",
+      "website": "https://stability.ai",
+      "current_sector": "生成式 AI 模型与创意生产工具",
+      "company_evidence_quotes": [
+        "Stability AI, the startup behind AI image generation model Stable Diffusion, has raised $76 million in Series B funding.",
+        "Headquartered in London with developers distributed across the globe, Stability AI was founded by Emad Mostaque as the first open-source, artificial intelligence (AI) company developing breakthrough technologies for the benefit of humanity and the world."
+      ],
+      "products": [
+        {
+          "name": "Stable Diffusion",
+          "evidence_quotes": [
+            "Stability AI, the startup behind AI image generation model Stable Diffusion",
+            "SD3.5 Large can create photorealistic pictures, follow a wide range of artistic styles, or design fantastical imagery."
+          ]
+        },
+        {
+          "name": "Stable Audio",
+          "evidence_quotes": [
+            "Currently, Stability offers a variety of AI models that are designed for the purposes of AI music, video, and image generation."
+          ]
+        },
+        {
+          "name": "Stable Video",
+          "evidence_quotes": [
+            "Currently, Stability offers a variety of AI models that are designed for the purposes of AI music, video, and image generation."
+          ]
+        }
+      ],
+      "customer_names": [
+        "HubSpot",
+        "Stride Learning"
+      ],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {

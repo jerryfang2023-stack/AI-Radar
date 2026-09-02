@@ -1,112 +1,29 @@
-# 2026-09-02 Guanlan Monitor Quality Gate
+# 2026-09-02 Guanlan Monitor Quality Loop
 
-- generated_at: 2026-09-02T02:32:18.863Z
-- attempt: 1/1
+- generated_at: 2026-09-02T00:23:57.713Z
 - status: passed
-- production_weekday: wednesday
-- weekend_policy: inactive
-- weekend_policy_note: not_applied
-- total_score: 0
 - diagnostic_score_reference: 85
 - score_mode: diagnostic_only
-- raw_count: 197
-- structured_supply_healthy: true
-- pool_count: 175
-- pool_index_count: 175
-- routed_pool_count: 18
-- index_only_pool_count: 157
-- aihot_index_only_count: 16
-- aihot_core_count: 16
-- keyword_search_non_community_count: 57
-- non_community_paths_hit: official_original, developer_ecosystem, industry_landing, procurement_marketplace, a_media_gdelt
-- ai_relevant_title_ratio: 0.690
-- off_topic_title_count: 0
-- core_pool_count: 16
-- core_pool_min_effective: 1
-- core_pool_min_default: 1
-- usable_core_evidence_count: 16
-- usable_core_evidence_min_effective: 1
-- usable_core_evidence_min_default: 1
-- core_evidence_strength_distribution: rich_evidence=16
-- core_blocked_evidence_count: 0
-- core_traceable_summary_count: 0
-- core_source_backed_event_count: 0
-- core_rich_evidence_count: 16
-- homepage_directory_core_count: 0
-- core_text_contamination_count: 0
-- core_raw_qc_block_count: 0
-- core_raw_qc_degraded_count: 0
-- core_large_vendor_count: 8
-- core_non_large_vendor_count: 8
-- core_non_large_vendor_min_effective: 0
-- core_non_large_vendor_min_default: 0
-- core_large_vendor_ratio: 0.500
-- aihot_resolved_evidence_count: 16
-- aihot_resolved_core_count: 16
-- importance_coverage_gaps: none
-- pool_importance_coverage_gaps: important_case=3/5
-- source_provider_recovery_status: unrecovered
-- recovered_failed_sources_count: 7
-- unrecovered_failed_sources_count: 21
-- source_provider_failures_block_release: false
+- max_cycles: 1
+- final_cycle: 1
+- manual_intervention_required: false
+- downstream_action: Allow the V4 factual build to proceed with noted source-supply diagnostics.
+- downstream_reasons: AI relevance insufficient | Pool importance coverage gaps remain
+
+## Single Monitor Attempt
+
+- monitor_status: collected
+- failed_stage: completed
+- monitor_raw_count: 197
+- quality_status: passed
+- quality_score: 0
+- hard_failed: none
 - failed_sources: source-artifact keyword: keyword-search pre-gate filtered 117 result(s): missing_ai_anchor_in_result=100; social_or_profile_source=7; broad_list_or_market_report=6; noise_term:dictionary=2; noise_term:career=1; noise_term:hiring=1; source-artifact keyword: Anysearch fallback for query "FDE AI implementation production rollout announced September 2026 ("customer story" OR "case study" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "applied AI engineer enterprise customer case announced September 2026 ("customer story" OR "case study" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "customer engineering AI production deployment announced September 2026 ("customer story" OR "case study" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "AI workflow rollout procurement pilot announced September 2026 (AI procurement OR tender OR "contract awarded" OR "purchasing agreement") (official OR government OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "public sector AI procurement pilot announced September 2026 (AI procurement OR tender OR "contract awarded" OR "purchasing agreement") (official OR government OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "AI workflow automation procurement announced September 2026 (AI procurement OR tender OR "contract awarded" OR "purchasing agreement") (official OR government OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "AI agent startup raises procurement workflow announced September 2026 (AI procurement OR tender OR "contract awarded" OR "purchasing agreement") (official OR government OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "AI procurement startup funding enterprise workflow announced September 2026 (AI procurement OR tender OR "contract awarded" OR "purchasing agreement") (official OR government OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "(site:cninfo.com.cn OR site:sse.com.cn OR site:szse.cn) (人工智能 OR 大模型 OR 智算) (公告 OR 投资 OR 合同 OR 营收) announced September 2026 (AI implementation OR AI deployment OR AI operations) (earnings OR "annual report" OR "quarterly report" OR 10-K OR 10-Q)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "forward deployed engineer AI customer deployment announced September 2026 ("production rollout" OR "go live" OR "in production" OR pilot OR deployment) (AI OR agent) (official OR newsroom OR customer)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "FDE AI implementation production rollout announced September 2026 ("production rollout" OR "go live" OR "in production" OR pilot OR deployment) (AI OR agent) (official OR newsroom OR customer)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "enterprise AI production rollout case study announced September 2026 ("production rollout" OR "go live" OR "in production" OR pilot OR deployment) (AI OR agent) (official OR newsroom OR customer)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "enterprise AI transformation production rollout customer deployment announced September 2026 (AI server OR AI hardware) (OEM OR ODM OR "contract manufacturer" OR "manufacturing partner") (official OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "agent governance evals production rollout enterprise AI announced September 2026 (AI server OR AI hardware) (OEM OR ODM OR "contract manufacturer" OR "manufacturing partner") (official OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "open-source AI agent GitHub enterprise adoption announced September 2026 (AI server OR AI hardware) (OEM OR ODM OR "contract manufacturer" OR "manufacturing partner") (official OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "AI implementation startup funding enterprise workflow announced September 2026 (AI server OR AI hardware) (OEM OR ODM OR "contract manufacturer" OR "manufacturing partner") (official OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "AI accelerator supply agreement data center announced September 2026 (GPU OR accelerator OR HBM OR AI server) ("supply agreement" OR "supply contract" OR supplier OR "purchasing agreement") (official OR newsroom)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "site:supermicro.com/en/pressreleases "Supermicro Simplifies Edge AI Deployments" Red Hat Everpure announced September 2026 (GPU OR accelerator OR AI server OR cluster) (shipment OR ships OR delivery OR install OR deployment) (customer OR site OR official)": Anysearch returned 0 usable results; source-artifact keyword: Anysearch fallback for query "(人工智能产业园 OR 大模型项目 OR 智算中心) (签约 OR 落地 OR 开工 OR 投产) (市政府 OR 区政府 OR 管委会) announced September 2026 (AI infrastructure OR data center OR fab) (capex OR "capital expenditure" OR "capital spending" OR investment) (earnings OR official)": Anysearch returned 0 usable results; source-artifact rss: RSS tldr-ai-newsletter: HTTP 429; targeted-refill pre-gate filtered 10 result(s): missing_ai_anchor_in_result=10; targeted pool/core refill cycle 1 returned 0 usable result(s) for important_case=3/5
-- evidence_gaps: keyword-search must not stop at community feedback. If official, developer ecosystem, startup/funding, industry landing, procurement/marketplace or A-media paths fail, the item can only remain Watchlist/User Feedback until non-community evidence is found.
 - fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.
+- evidence_gaps: none
+- report: agent-workflow/reports/2026-09-02-guanlan-monitor-quality-gate.md
 
-## Score Breakdown
+## Retry Policy
 
-- source_integrity (undefined): 0
-- content_quality (undefined): 0
-- coverage_scope (undefined): 0
-- keyword_compliance (undefined): 0
-- strategic_alignment (undefined): 0
-- importance_readiness (10): 6.37
-
-## Hard Gates
-
-- pool_count_min: passed (175/15)
-- routed_pool_count_min: passed (18/10)
-- core_pool_min: passed (16/1)
-- usable_core_evidence_min: passed (16/1)
-- homepage_directory_core_max: passed (0/0)
-- core_text_contamination_max: passed (0/0)
-- core_raw_qc_block_max: passed (0/0)
-- core_raw_qc_degraded_max: passed (0/0)
-
-## Diagnostics
-
-- raw_count_min: passed (197/150)
-- keyword_search_non_community_min: passed (57/6)
-- ai_relevant_title_ratio_min: passed (0.69/0.7; diagnostic_recovered_by_structured_supply=true)
-- off_topic_title_max: passed (0/3)
-- importance_coverage_gaps: passed (none)
-- pool_importance_coverage_gaps: warning (important_case=3/5)
-
-## Risks
-
-- unrecovered_failed_sources=21
-- theme_concentration_warning=warning: uncategorized concentration 43.1% exceeds 40%; downstream Pool / cards / business signals must diversify or declare theme_day=true.
-- pool_importance_coverage_gaps=important_case=3/5
-- core_large_vendor=8/10; ratio=0.50/0.35
-
-## Recovered Diagnostics
-
-- none
-
-## Skill Feedback
-
-- Tighten Raw AI relevance anchors and noise filters before accepting candidates.
-- Repair Pool importance coverage before downstream assets; each required importance type needs the configured Pool minimum.
-- Keep provider failures diagnostic; repair the deficient evidence-supply bucket through any available source channel.
-
-## Downstream Recommendation
-
-- level: allow_with_notes
-- action: Allow the V4 factual build to proceed with noted source-supply diagnostics.
-- reasons: AI relevance insufficient | Pool importance coverage gaps remain | source-provider failures remain visible as supply diagnostics
-
-## Inputs
-
-- structured_intake_file: 01-SiteV2/content/11-databases/data-center-v4/intake-v1/2026-09-02.json
-- monitor_log_file: agent-workflow/reports/2026-09-02-guanlan-daily-monitor-log.md
-- config_file: 01-SiteV2/content/11-databases/source-intake-gate-v1.json
+- The production wrapper does not recollect all source lanes or rerun the full monitor automatically.
+- Supply diagnostics remain in the report. A hard evidence-supply failure routes to targeted repair.

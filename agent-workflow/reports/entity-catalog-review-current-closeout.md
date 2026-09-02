@@ -1,13 +1,13 @@
 # Current Entity Catalog Review Closeout
 
-- Generated: 2026-08-03T07:15:00.000Z
+- Generated: 2026-09-02T10:25:00+08:00
 - Current catalog reviewed: 533
-- Claim-backed entities added: 22
-- Historical decisions retained: 347
-- Total explicit decisions: 895
-- Confirmed: 368
-- Corrected: 184
-- Merged: 108
+- Claim-backed entities added: 25
+- Historical decisions retained: 358
+- Total explicit decisions: 909
+- Confirmed: 377
+- Corrected: 187
+- Merged: 110
 - Quarantined: 235
 
 ## Current corrections and merges
@@ -46,14 +46,17 @@
 | Cloud | Google Cloud | company | correct |  |
 | Google Cloud | Google Cloud | company | merge |  |
 | Hugging Face | Hugging Face | company | correct |  |
+| KT | KT | company | correct |  |
 | LaunchDarkly | LaunchDarkly | company | correct |  |
 | LM Studio | LM Studio | company | correct |  |
 | OpenBMB | OpenBMB | company | correct |  |
 | Parabola | Parabola | company | correct |  |
+| Public Procurement Service | Public Procurement Service | company | correct |  |
 | Quash | Quash | company | correct |  |
 | Red Hat | Red Hat | company | correct |  |
 | TensorWave Inc. | TensorWave Inc. | company | correct |  |
 | The Home Depot | The Home Depot | company | correct |  |
+| Tyler Technologies | Tyler Technologies | company | correct |  |
 | SpaceXAI | xAI | company | merge |  |
 | SpaceXAI | xAI | company | merge |  |
 | xAI | xAI | company | correct |  |
