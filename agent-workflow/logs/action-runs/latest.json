@@ -1,50 +1,54 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-01T01:48:30.330Z",
-  "date": "2026-09-01",
-  "action": "Claim/Event normalization and canonical build",
+  "generated_at": "2026-09-02T03:23:00.480Z",
+  "date": "2026-09-02",
+  "action": "Daily full-chain repair and publication",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "manual-recovery",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Recovered the accepted 2026-09-01 artifact without recollection, fixed title-only organization verification, rebuilt all current projections, and verified the funding event deduplicates to the existing 282-card inventory.",
+  "summary": "Recovered Sep 2 business signals; generated two evidence-complete funding cards; strengthened China AI hardware and vertical-agent funding discovery; fixed managed Codex cache compatibility and truthful source telemetry; published Data Center and Funding Portal; fixed desktop filter clipping.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/tests/data-center-v4.test.mjs",
-    "01-SiteV2/site/data/data-center-v4-frontstage.json",
-    "01-SiteV2/site/data/funding-insights-v1.json"
+    "agent-workflow/tools/install-daily-automation-controller-tasks.ps1",
+    "agent-workflow/tools/guanlan-monitor-quality-gate.mjs",
+    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
+    "01-SiteV2/site/assets/data-center-v4.css"
   ],
   "outputs": [
-    "2026-09-01 V4 bundle",
-    "282-card Funding Insights projection",
-    "OPS telemetry"
+    "AI-Radar PR 772",
+    "Funding Insights PR 773",
+    "Data Center layout PR 774",
+    "Funding Portal commit 721b68c6",
+    "284 published cards",
+    "2 new Sep 2 cards"
   ],
   "checks": [
-    "test:data-center 243/243",
-    "test:data-center-site",
-    "test:ops-v2",
-    "test:ops-unified",
-    "test:v4-frontstage-smoke",
-    "assert:funding-insights:full",
-    "daily-production-chain gate",
-    "projection coverage 100%"
+    "Data Center 248 of 248",
+    "Funding 88 of 88",
+    "Site core 82 of 82",
+    "Automation and China monitoring 28 of 28",
+    "Entity coverage 100 percent",
+    "Independent standards and spec audits passed",
+    "Desktop and mobile browser QA passed"
   ],
   "issues": [
-    "Initial cloud run blocked on a title-only Kuaishou alias promoted as verified",
-    "Funding source health degraded by TLDR 429",
-    "ITHome timeout",
-    "and unavailable Anysearch fallbacks"
+    "Scheduled Closure failed on Codex models cache schema",
+    "Two accepted events lacked entity links",
+    "Provider failure telemetry was overwritten by derived health",
+    "Desktop taxonomy filter collapsed"
   ],
-  "risks": [
-    "External source coverage remains degraded although publication data is complete"
-  ],
+  "risks": [],
   "lessons": [
-    "A registered headline alias is a candidate until an accepted Claim contains the exact alias"
+    "Version-gate every managed Codex candidate",
+    "Preserve observed provider failures separately from release health",
+    "Give specialized China financing queries dedicated non-weighted paths",
+    "Guard responsive filter geometry with regression checks"
   ],
   "reusable_rules": [
-    "Verify organizations from accepted Claim evidence",
-    "never headline presence alone"
+    "Do not rerun accepted collection when canonical artifacts are recoverable",
+    "Do not infer missing financing currency",
+    "Require tree-level equality after split pushes"
   ],
   "retired_flags": [],
   "notes": []
