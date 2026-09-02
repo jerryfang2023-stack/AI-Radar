@@ -445,6 +445,9 @@ test("event toolbar is wired to real query controls", () => {
   assert.doesNotMatch(script, /dc-chevron/u);
   assert.doesNotMatch(css, /\.dc-chevron/u);
   assert.match(css, /\.dc-list-row:hover \.dc-row-title/u);
+  assert.match(css, /@media \(min-width: 1081px\)[\s\S]*body\[data-dc-view="events"\] \.dc-toolbar \{\s*grid-template-columns: repeat\(4, minmax\(135px, 1fr\)\) auto/u);
+  assert.match(css, /body\[data-dc-view="events"\] \.dc-toolbar \.dc-search \{\s*grid-column: 1 \/ 4;\s*grid-row: 1/u);
+  assert.match(css, /\.dc-select\[name="tag"\] \{\s*grid-column: 4;\s*grid-row: 2/u);
   assert.match(css, /body\[data-dc-view="events"\] \.dc-toolbar \{\s*grid-template-columns: 112px minmax\(0, 1fr\)/u);
   assert.match(css, /\.dc-select\[name="type"\],[\s\S]*\.dc-select\[name="tag"\] \{\s*grid-column: 1 \/ -1/u);
   assert.match(css, /\.dc-button \{[\s\S]*white-space: nowrap/u);
