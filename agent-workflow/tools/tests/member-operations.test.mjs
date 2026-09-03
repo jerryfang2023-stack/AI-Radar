@@ -75,8 +75,8 @@ test("invalid or non-production payloads fail closed without rendering arbitrary
 test("user details reuse the protected console cookie session", async () => {
   const h = harness();
   h.document.dispatchEvent(new h.TestEvent("operations:authenticated", { detail: { csrfToken: "csrf-token-with-enough-entropy" } }));
-  assert.equal(h.requests.length, 1);
-  const request = h.requests[0];
+  assert.equal(h.requests.length, 2);
+  const request = h.requests.find((item) => item.url.startsWith("/ops/member-api/users"));
   assert.match(request.url, /^\/ops\/member-api\/users/);
   assert.equal(request.options.credentials, "same-origin");
   assert.equal(request.options.headers.Authorization, undefined);
@@ -96,4 +96,23 @@ test("user details reuse the protected console cookie session", async () => {
   assert.doesNotMatch(script, /localStorage|sessionStorage|ANALYTICS_ADMIN_TOKEN|data-mo-admin-token/);
   assert.doesNotMatch(page, /运营后台访问令牌|data-mo-admin-token|type="password"|data-mo-admin-email|data-mo-admin-code/);
   assert.doesNotMatch(page, /先看跨平台汇总|当前存量按读取时刻统计|这里不显示 OpenID|无需从终端获取/);
+});
+
+test("community approval is embedded in the membership panel and uses the same session", async () => {
+  const h = harness();
+  h.document.dispatchEvent(new h.TestEvent("operations:authenticated", { detail: { csrfToken: "csrf-token-with-enough-entropy" } }));
+  const request = h.requests.find((item) => item.url.startsWith("/ops/member-api/community-members"));
+  assert.ok(request);
+  assert.equal(request.options.credentials, "same-origin");
+  assert.equal(request.options.headers.Authorization, undefined);
+  await respond(request, {
+    schemaVersion: "COMMUNITY-APPROVAL-V1.0", generatedAt: "2026-09-03T00:00:00Z",
+    statusCounts: { pending: 1, approved: 2, waitlist: 0, rejected: 0 },
+    page: { number: 1, size: 20, total: 1, totalPages: 1 },
+    members: [{ id: 77, name: "待审成员", city: "杭州", company: "示例公司", role: "创业者", status: "pending", totalScore: 68, joinedOn: "", createdAt: "2026-09-01T00:00:00Z", updatedAt: "2026-09-01T00:00:00Z" }],
+  });
+  assert.match(h.element("[data-mo-approval-members]").innerHTML, /待审成员/);
+  assert.match(h.element("[data-mo-approval-state]").textContent, /待审核 1 项/);
+  assert.match(page, /data-mo-approval[^]*社群会员审批/u);
+  assert.doesNotMatch(page, /href="https:\/\/members\.zkdlj\.vip\/admin"/u);
 });

@@ -59,6 +59,7 @@ test("console and login surfaces contain no reusable secret storage", () => {
 });
 
 test("VPS protects OPS artifacts and Pages excludes their public copies", () => {
+  assert.match(nginx, /location = \/ops\/ \{[\s\S]*auth_request \/ops-auth-check[\s\S]*try_files \/ops\/operations-console\.html =404/u);
   assert.match(nginx, /location \^~ \/ops\/ \{[\s\S]*auth_request \/ops-auth-check/u);
   assert.match(nginx, /location @ops-login-redirect \{ return 302 \/ops\/login\/; \}/u);
   assert.match(nginx, /error_page 401 = @ops-login-redirect/u);

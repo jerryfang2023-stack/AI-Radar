@@ -149,6 +149,38 @@ def test_admin_can_list_search_and_adjust_mini_program_users(client):
         assert conn.execute("SELECT source_type, days FROM membership_ledger WHERE user_id=? ORDER BY id DESC", (user_id,)).fetchone() == ("ops_admin", 30)
 
 
+def test_admin_session_proxies_community_member_approval(client):
+    path = "/api/v1/admin/analytics/membership/community-members"
+    assert client.get(path).status_code == 401
+    _, headers = admin_login(client)
+
+    listed = client.get(path + "?status=pending&query=待审&page=1&pageSize=20", headers=headers)
+    assert listed.status_code == 200
+    assert listed.get_json()["members"][0]["name"] == "待审成员"
+    assert listed.headers["Access-Control-Allow-Methods"] == "GET, POST, OPTIONS"
+    assert client.get(path + "/77", headers=headers).get_json()["member"]["scores"]["total"] == 68
+
+    review = {
+        "operationId": "community-review-0001",
+        "status": "approved",
+        "joinedOn": "2026-09-03",
+        "reviewNotes": "核验通过",
+        "hideCompanyInDirectory": False,
+        "scores": {"ai": 20, "industry": 18, "entrepreneurship": 15, "contribution": 10, "fit": 5},
+    }
+    assert client.post(path + "/77/reviews", json=review).status_code == 401
+    assert client.post(path + "/77/reviews", headers={"Authorization": headers["Authorization"]}, json=review).status_code == 403
+    saved = client.post(path + "/77/reviews", headers=headers, json=review)
+    assert saved.status_code == 200
+    assert saved.get_json()["member"]["status"] == "approved"
+    forwarded = client.application.community_client.operations_reviews[0]
+    assert forwarded["actorHash"] and "operator@example.com" not in forwarded["actorHash"]
+    assert len(forwarded["actorHash"]) == 16
+
+    preflight = client.options(path + "/77/reviews", headers={"Origin": headers["Origin"]})
+    assert preflight.status_code == 204
+
+
 def test_admin_membership_routes_reject_untrusted_origin_and_non_mini_account(client):
     _, headers = admin_login(client)
     path = "/api/v1/admin/analytics/membership/users"

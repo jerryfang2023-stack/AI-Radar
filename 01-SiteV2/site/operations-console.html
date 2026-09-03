@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.4.0-console-login">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.4.1-community-approval">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -340,13 +340,13 @@
   <meta name="wavesight-analytics-version" content="APP-ANALYTICS-V1.3.0-ops-readonly">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
-  <link rel="stylesheet" href="assets/operations-auth.css?v=ops-v340">
-  <link rel="stylesheet" href="assets/member-operations.css?v=ops-v340">
+  <link rel="stylesheet" href="assets/operations-auth.css?v=ops-v341">
+  <link rel="stylesheet" href="assets/member-operations.css?v=ops-v341">
 </head>
 <body class="page-operations-console">
   <main class="shell" data-ops-console tabindex="-1" hidden>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.4.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.4.1</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
@@ -374,7 +374,7 @@
           <div class="grid grid-3" data-coverage-gaps></div>
           <div class="module-head"><div><span class="kicker">WORKSPACE</span><h2>常用入口</h2></div></div>
           <div class="quick-links">
-            <button type="button" data-tab="membership">会员与权益 <span>入群 / 到期 / 兑换 / 活跃 →</span></button>
+            <button type="button" data-tab="membership">会员与权益 <span>审批 / 到期 / 积分 →</span></button>
             <button type="button" data-tab="analytics">运营统计 <span>访问 / 注册 / 付费 →</span></button>
             <button type="button" data-tab="quality">数据质量 <span>逐来源数量 / 质量 →</span></button>
             <button type="button" data-tab="skills">Skill Store <span>平台目录 / 来源同步 →</span></button>
@@ -475,6 +475,18 @@
           <div class="mo-toolbar"><label>统计期间<select data-mo-days><option value="7">近 7 天</option><option value="30" selected>近 30 天</option><option value="90">近 90 天</option></select></label><button type="button" data-mo-refresh>刷新会员数据</button></div>
           <section class="mo-section" aria-label="社群成员"><header><h2>社群成员与分享</h2><p class="mo-status" data-mo-status="community" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="community"></div></section>
           <section class="mo-section" aria-label="应用会员"><header><h2>融资站与小程序会员</h2><p class="mo-status" data-mo-status="application" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="application"></div></section>
+          <section class="mo-admin" data-mo-approval>
+            <header><div><span class="kicker">COMMUNITY APPROVAL</span><h2>社群会员审批</h2></div></header>
+            <form class="mo-admin-toolbar" data-mo-approval-search-form>
+              <label>查找申请<input type="search" data-mo-approval-query placeholder="姓名、城市、公司或方向"></label>
+              <label>审批状态<select data-mo-approval-status><option value="pending">待审核</option><option value="all">全部状态</option><option value="approved">已通过</option><option value="waitlist">候补</option><option value="rejected">暂不邀请</option></select></label>
+              <button type="submit">查询</button>
+            </form>
+            <p class="mo-admin-state" data-mo-approval-state role="status" aria-live="polite"></p>
+            <div class="mo-user-table-wrap"><table class="mo-user-table mo-approval-table"><thead><tr><th>申请人</th><th>角色 / 公司</th><th>状态</th><th>申请评分</th><th>申请时间</th><th></th></tr></thead><tbody data-mo-approval-members></tbody></table></div>
+            <div class="mo-admin-paging"><button type="button" data-mo-approval-prev>上一页</button><span data-mo-approval-page></span><button type="button" data-mo-approval-next>下一页</button></div>
+            <div data-mo-approval-detail></div>
+          </section>
           <section class="mo-admin" data-mo-admin>
             <header><div><span class="kicker">MINI PROGRAM USERS</span><h2>小程序用户明细与管理</h2></div></header>
             <div class="mo-admin-console" data-mo-admin-console>
@@ -488,7 +500,7 @@
               <div class="mo-admin-paging"><button type="button" data-mo-admin-prev>上一页</button><span data-mo-admin-page></span><button type="button" data-mo-admin-next>下一页</button></div>
               <div data-mo-admin-detail></div>
             </div>
-            <footer><p>仅显示脱敏资料；所有调整均记录审计。</p><a href="https://members.zkdlj.vip/admin" target="_blank" rel="noopener noreferrer">社群管理后台 ↗</a></footer>
+            <footer><p>仅显示脱敏资料；所有调整均记录审计。</p></footer>
           </section>
         </div>
       </section>
@@ -547,7 +559,7 @@
   <script src="data/ops-console.js"></script>
   <script src="assets/operations-console.js?v=20260830-ops-v310"></script>
   <script src="assets/application-analytics.js?v=20260830-ops-readonly"></script>
-  <script src="assets/member-operations.js?v=ops-v340"></script>
-  <script src="assets/operations-auth.js?v=ops-v340"></script>
+  <script src="assets/member-operations.js?v=ops-v341"></script>
+  <script src="assets/operations-auth.js?v=ops-v341"></script>
 </body>
 </html>

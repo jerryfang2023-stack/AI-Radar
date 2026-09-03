@@ -21,7 +21,7 @@ priority: current
 | Trend Radar | `TRADAR-V1.1.0-tag-v4-1` |
 | Funding Insights | `FUNDING-INSIGHT-V1.5.0-china-market` |
 | AI financing site / weekly and monthly reports | `REPORTS-V1.3.0-funding-portal` |
-| Operations telemetry and health | `OPS-V3.4.0-console-login` |
+| Operations telemetry and health | `OPS-V3.4.1-community-approval` |
 | First-Line Viewpoints | independent `O` lane |
 | Community Intelligence | independent `C` lane |
 

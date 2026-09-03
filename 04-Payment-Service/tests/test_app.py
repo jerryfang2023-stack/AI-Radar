@@ -132,6 +132,7 @@ class FakeCommunityClient:
         self.member_points = 860
         self.claims = {}
         self.claim_member = None
+        self.operations_reviews = []
 
     def lookup(self, phone):
         if phone == "13800138000":
@@ -154,6 +155,17 @@ class FakeCommunityClient:
         claim = {"id": len(self.claims) + 1, "nickname": nickname, "status": "pending"}
         self.claims[account_ref] = claim
         return {"claim": claim}
+
+    def operations_members(self, **filters):
+        member = {"id": 77, "name": "待审成员", "city": "杭州", "company": "示例公司", "role": "Founder / 创业者", "status": "pending", "totalScore": 68, "joinedOn": "", "createdAt": "2026-09-01T08:00:00+08:00", "updatedAt": "2026-09-01T08:00:00+08:00"}
+        return {"schemaVersion": "COMMUNITY-APPROVAL-V1.0", "generatedAt": "2026-09-03T08:00:00+08:00", "filters": filters, "statusCounts": {"pending": 1, "approved": 0, "waitlist": 0, "rejected": 0}, "page": {"number": 1, "size": 20, "total": 1, "totalPages": 1}, "members": [member]}
+
+    def operations_member(self, member_id):
+        return {"schemaVersion": "COMMUNITY-APPROVAL-V1.0", "member": {"id": member_id, "name": "待审成员", "status": "pending", "scores": {"ai": 20, "industry": 18, "entrepreneurship": 15, "contribution": 10, "fit": 5, "total": 68}}}
+
+    def review_operations_member(self, member_id, payload):
+        self.operations_reviews.append({"memberId": member_id, **payload})
+        return {"schemaVersion": "COMMUNITY-APPROVAL-V1.0", "member": {"id": member_id, "name": "待审成员", "status": payload["status"], "scores": {**payload["scores"], "total": sum(payload["scores"].values())}}}
 
 
 class FakeVirtualPayClient:
