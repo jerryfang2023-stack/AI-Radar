@@ -425,15 +425,30 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         if str(member.get("status") or "") not in {"approved", "joined"}:
             return user
         source_id = f"community-welcome:{int(member['id'])}"
-        if conn.execute("SELECT id FROM membership_ledger WHERE source_id=?", (source_id,)).fetchone():
-            return user
+        existing = conn.execute(
+            "SELECT user_id, new_ends_at FROM membership_ledger WHERE source_id=?",
+            (source_id,),
+        ).fetchone()
         now = utcnow()
-        previous_end = datetime.fromisoformat(user["trial_ends_at"])
-        new_end = max(previous_end, now + timedelta(days=90))
-        conn.execute("UPDATE users SET trial_ends_at=?, updated_at=? WHERE id=?", (iso(new_end), iso(now), user["id"]))
+        trial_end = datetime.fromisoformat(user["trial_ends_at"])
+        member_end = datetime.fromisoformat(user["member_ends_at"]) if user["member_ends_at"] else None
+        if existing:
+            if int(existing["user_id"]) != int(user["id"]):
+                return user
+            recorded_end = datetime.fromisoformat(existing["new_ends_at"])
+            new_end = max(value for value in (recorded_end, trial_end, member_end) if value is not None)
+            if member_end is None or member_end < new_end:
+                conn.execute(
+                    "UPDATE users SET member_ends_at=?, updated_at=? WHERE id=?",
+                    (iso(new_end), iso(now), user["id"]),
+                )
+                return user_by_id(conn, user["id"])
+            return user
+        new_end = max(value for value in (now + timedelta(days=90), trial_end, member_end) if value is not None)
+        conn.execute("UPDATE users SET member_ends_at=?, updated_at=? WHERE id=?", (iso(new_end), iso(now), user["id"]))
         conn.execute(
             "INSERT INTO membership_ledger(user_id, source_type, source_id, days, previous_ends_at, new_ends_at, created_at) VALUES(?,?,?,?,?,?,?)",
-            (user["id"], "community_welcome", source_id, 90, user["trial_ends_at"], iso(new_end), iso(now)),
+            (user["id"], "community_welcome", source_id, 90, user["member_ends_at"], iso(new_end), iso(now)),
         )
         return user_by_id(conn, user["id"])
 
@@ -1145,7 +1160,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                             result["openid"], result.get("unionid"), phone_digest(number), masked, iso(now), display_name,
                             iso(now) if avatar_selected else None,
                             (community_member or {}).get("id"), (community_member or {}).get("name") or "", community_status,
-                            iso(now), iso(now + timedelta(days=90 if community_member and community_status in {"approved", "joined"} else 7)), iso(now), iso(now),
+                            iso(now), iso(now + timedelta(days=7)), iso(now), iso(now),
                         ),
                     )
                 except sqlite3.IntegrityError:
@@ -1263,6 +1278,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                     "UPDATE users SET community_name=?, community_status=?, updated_at=? WHERE id=?",
                     (member.get("name") or user["community_name"], member.get("status") or user["community_status"], iso(utcnow()), user["id"]),
                 )
+                user = grant_community_access(conn, user_by_id(conn, user["id"]), member)
                 import_community_points(conn, user, member)
                 conn.commit()
                 user = user_by_id(conn, g.user_id)

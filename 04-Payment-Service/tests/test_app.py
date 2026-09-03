@@ -625,7 +625,8 @@ def test_existing_community_member_can_link_during_first_login_without_profile_r
     assert payload["community"]["status"] == "joined"
     assert payload["wallet"] == {"balance": 860, "lifetime": 860}
     assert payload["membership"]["remainingDays"] == 90
-    assert payload["membership"]["statusLabel"] == "社群成员 3 个月权益"
+    assert payload["membership"]["status"] == "member"
+    assert payload["membership"]["statusLabel"] == "观澜会员"
 
 
 def test_nickname_claim_waits_for_admin_then_syncs_member_and_90_day_access_once(client):
@@ -659,7 +660,8 @@ def test_nickname_claim_waits_for_admin_then_syncs_member_and_90_day_access_once
         "statusLabel": "已入群",
         "points": 126,
     }
-    assert result["membership"]["statusLabel"] == "社群成员 3 个月权益"
+    assert result["membership"]["status"] == "member"
+    assert result["membership"]["statusLabel"] == "观澜会员"
 
     repeated = client.get("/api/v1/member/me", headers=auth(payload["token"]))
     assert repeated.status_code == 200
@@ -668,6 +670,37 @@ def test_nickname_claim_waits_for_admin_then_syncs_member_and_90_day_access_once
             "SELECT COUNT(*) FROM membership_ledger WHERE source_id='community-welcome:88'"
         ).fetchone()[0]
     assert count == 1
+
+
+def test_existing_community_welcome_trial_is_formalized_without_renewal(client):
+    response = client.post("/api/v1/auth/wechat", json={"code": "community-user", "phoneCode": "phone-code"})
+    assert response.status_code == 200
+    token = response.get_json()["token"]
+
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        recorded_end = conn.execute(
+            "SELECT new_ends_at FROM membership_ledger WHERE source_id='community-welcome:42'"
+        ).fetchone()[0]
+        conn.execute(
+            "UPDATE users SET trial_ends_at=?, member_ends_at=NULL WHERE openid='openid-community-user'",
+            (recorded_end,),
+        )
+        conn.commit()
+
+    refreshed = client.get("/api/v1/member/me", headers=auth(token))
+    assert refreshed.status_code == 200
+    membership = refreshed.get_json()["membership"]
+    assert membership["status"] == "member"
+    assert membership["statusLabel"] == "观澜会员"
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        member_end = conn.execute(
+            "SELECT member_ends_at FROM users WHERE openid='openid-community-user'"
+        ).fetchone()[0]
+        grant_count = conn.execute(
+            "SELECT COUNT(*) FROM membership_ledger WHERE source_id='community-welcome:42'"
+        ).fetchone()[0]
+    assert member_end == recorded_end
+    assert grant_count == 1
 
 
 def test_existing_mini_program_user_can_link_by_phone_without_profile_repeat(client):
