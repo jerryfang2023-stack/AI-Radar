@@ -7,7 +7,7 @@ const script = fs.readFileSync("01-SiteV2/site/assets/member-operations.js", "ut
 function harness(active = true) {
   const elements = new Map();
   const element = (selector) => {
-    if (!elements.has(selector)) elements.set(selector, { innerHTML: "", textContent: "", listeners: {}, addEventListener(name, fn) { this.listeners[name] = fn; } });
+    if (!elements.has(selector)) elements.set(selector, { innerHTML: "", textContent: "", value: "", hidden: false, disabled: false, listeners: {}, addEventListener(name, fn) { this.listeners[name] = fn; } });
     return elements.get(selector);
   };
   const root = element("root");
@@ -28,7 +28,7 @@ test("membership loads lazily, uses no credentials and survives partial failure"
   assert.equal(h.requests.length, 0);
   h.root.listeners["membership:open"]();
   assert.equal(h.requests.length, 2);
-  for (const request of h.requests) { assert.equal(request.options.credentials, "omit"); assert.equal(request.options.method, "GET"); }
+  for (const request of h.requests) { assert.equal(request.options.credentials, "omit"); assert.equal(request.options.method, "GET"); assert.equal(request.options.headers, undefined); }
   await respond(h.requests[0], payload("community"));
   await respond(h.requests[1], {}, false);
   assert.match(h.element('[data-mo-content="community"]').innerHTML, /12/);
@@ -58,5 +58,29 @@ test("invalid or non-production payloads fail closed without rendering arbitrary
   await respond(h.requests[1], { ...payload("application"), dataSource: "test", name: "PRIVATE" });
   assert.match(h.element('[data-mo-content="community"]').innerHTML, /暂不可用/);
   assert.doesNotMatch(h.element('[data-mo-content="application"]').innerHTML, /PRIVATE/);
-  assert.doesNotMatch(script, /localStorage|sessionStorage|Authorization|\.metrics\s*\)|Object\.entries\(payload/);
+  assert.doesNotMatch(script, /localStorage|sessionStorage|\.metrics\s*\)|Object\.entries\(payload/);
+});
+
+test("user details require an in-memory admin token and render only validated fields", async () => {
+  const h = harness();
+  h.element("[data-mo-admin-token]").value = "admin-secret";
+  h.element("[data-mo-admin-connect]").listeners.click();
+  assert.equal(h.element("[data-mo-admin-token]").value, "");
+  assert.equal(h.requests.length, 3);
+  const request = h.requests[2];
+  assert.match(request.url, /\/api\/v1\/admin\/analytics\/membership\/users/);
+  assert.equal(request.options.headers.Authorization, "Bearer admin-secret");
+  await respond(request, {
+    schemaVersion: "MEMBER-ADMIN-V1.0", dataSource: "production", generatedAt: "2026-09-03T00:00:00Z",
+    page: { number: 1, size: 20, total: 1, totalPages: 1 }, users: [{
+      id: 7, displayName: "测试用户", phoneMasked: "138****8000", community: { name: "社群成员", status: "approved" },
+      membership: { status: "member", trialEndsAt: "", memberEndsAt: "2026-10-01T00:00:00Z", activeUntil: "2026-10-01T00:00:00Z" },
+      points: { balance: 120, lifetime: 300, community: 80 }, payment: { paidOrders: 1, paidCents: 3000, lastPaidAt: "2026-09-01T00:00:00Z" },
+      activity: { lastBehaviorAt: "2026-09-02T00:00:00Z" }, createdAt: "2026-08-01T00:00:00Z", updatedAt: "2026-09-02T00:00:00Z", recentAdjustments: [], openid: "must-not-render",
+    }],
+  });
+  assert.match(h.element("[data-mo-admin-users]").innerHTML, /测试用户/);
+  assert.match(h.element("[data-mo-admin-users]").innerHTML, /138\*\*\*\*8000/);
+  assert.doesNotMatch(h.element("[data-mo-admin-users]").innerHTML, /must-not-render|admin-secret/);
+  assert.doesNotMatch(script, /localStorage|sessionStorage/);
 });
