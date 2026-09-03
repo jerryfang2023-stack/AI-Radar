@@ -95,3 +95,5 @@ python scripts/provision_virtual_products.py --env 0
 验证码 10 分钟有效、最多尝试 5 次且同一邮箱 10 分钟最多发送 3 次；浏览器会话默认 8 小时。会话 Cookie 为 Secure、HttpOnly、SameSite=Strict，CSRF Cookie 与服务端 HMAC 双重校验；数据库不保存邮箱原文、验证码、会话或 CSRF 原文。
 
 列表仅包含具备微信身份且未合并的小程序账户，只返回昵称、脱敏手机号、权益、积分、非退款付费汇总和最近活跃，不返回 OpenID、身份摘要或订单明细。写操作只允许按 7/30/90/180/365 天延长权益，或在余额不低于零的前提下调整可用积分；每次必须填写原因，并同时写入业务流水与 `operations_admin_audits`。不支持删除账号、修改/合并身份、改订单、任意覆盖到期日或改累计成长积分。
+
+社群申请审批也复用同一运营后台会话。浏览器只访问 `/ops/member-api/community-members`、`/ops/member-api/community-members/<id>` 和 `/ops/member-api/community-members/<id>/reviews`；支付服务在服务端使用 `COMMUNITY_SERVICE_TOKEN` 调用会员服务的 `COMMUNITY-APPROVAL-V1.0` 接口，令牌不会返回前端。审批写入还要求 OPS CSRF 和唯一操作 ID，操作者身份由服务端会话派生。
