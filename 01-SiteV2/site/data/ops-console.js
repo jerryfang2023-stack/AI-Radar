@@ -33,8 +33,8 @@ window.WaveSightOpsConsole = {
           "source": "https://www.zkdlj.vip/version.json",
           "status": "公开端点已核验",
           "kind": "deployed",
-          "checkedAt": "2026-09-03T10:07:13.072Z",
-          "attemptedAt": "2026-09-03T10:07:13.072Z",
+          "checkedAt": "2026-09-03T11:44:45.101Z",
+          "attemptedAt": "2026-09-03T11:44:45.101Z",
           "verified": true
         },
         "analytics": "聚合统计与会员权益已接入"
@@ -89,8 +89,8 @@ window.WaveSightOpsConsole = {
           "source": "https://members.zkdlj.vip/healthz",
           "status": "公开端点已核验",
           "kind": "deployed",
-          "checkedAt": "2026-09-03T10:07:13.184Z",
-          "attemptedAt": "2026-09-03T10:07:13.184Z",
+          "checkedAt": "2026-09-03T11:44:45.240Z",
+          "attemptedAt": "2026-09-03T11:44:45.240Z",
           "verified": true
         },
         "analytics": "会员与分享汇总按需接入"
@@ -120,7 +120,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.4.1-community-approval",
+        "value": "OPS-V3.5.0-membership-management",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -295,8 +295,8 @@ window.WaveSightOpsConsole = {
         "source": "https://www.zkdlj.vip/version.json",
         "status": "公开端点已核验",
         "kind": "deployed",
-        "checkedAt": "2026-09-03T10:07:13.072Z",
-        "attemptedAt": "2026-09-03T10:07:13.072Z",
+        "checkedAt": "2026-09-03T11:44:45.101Z",
+        "attemptedAt": "2026-09-03T11:44:45.101Z",
         "verified": true
       },
       {
@@ -307,8 +307,8 @@ window.WaveSightOpsConsole = {
         "source": "https://www.zkdlj.vip/version.json",
         "status": "公开端点已核验",
         "kind": "deployed",
-        "checkedAt": "2026-09-03T10:07:13.072Z",
-        "attemptedAt": "2026-09-03T10:07:13.072Z",
+        "checkedAt": "2026-09-03T11:44:45.101Z",
+        "attemptedAt": "2026-09-03T11:44:45.101Z",
         "verified": true
       },
       {
@@ -339,8 +339,8 @@ window.WaveSightOpsConsole = {
         "source": "https://members.zkdlj.vip/healthz",
         "status": "公开端点已核验",
         "kind": "deployed",
-        "checkedAt": "2026-09-03T10:07:13.184Z",
-        "attemptedAt": "2026-09-03T10:07:13.184Z",
+        "checkedAt": "2026-09-03T11:44:45.240Z",
+        "attemptedAt": "2026-09-03T11:44:45.240Z",
         "verified": true
       },
       {
@@ -351,14 +351,14 @@ window.WaveSightOpsConsole = {
         "source": "https://members.zkdlj.vip/healthz",
         "status": "公开端点已核验",
         "kind": "deployed",
-        "checkedAt": "2026-09-03T10:07:13.184Z",
-        "attemptedAt": "2026-09-03T10:07:13.184Z",
+        "checkedAt": "2026-09-03T11:44:45.240Z",
+        "attemptedAt": "2026-09-03T11:44:45.240Z",
         "verified": true
       }
     ],
     "skills": {
       "total": 282,
-      "generatedAt": "2026-09-01 09:43:21",
+      "generatedAt": "2026-09-03 19:44:56",
       "sources": [
         {
           "id": "AIP/.agents/skills",
@@ -404,7 +404,7 @@ window.WaveSightOpsConsole = {
           "id": "plugin-cache",
           "label": "插件缓存（不代表当前启用）",
           "available": true,
-          "count": 101
+          "count": 100
         }
       ],
       "platforms": [
@@ -518,8 +518,8 @@ window.WaveSightOpsConsole = {
     "sourceBaseline": "SITE-V4.6.1-research-retirement"
   },
   "meta": {
-    "version": "OPS-V3.4.1-community-approval",
-    "generatedAt": "2026-09-03T10:07:14.152Z",
+    "version": "OPS-V3.5.0-membership-management",
+    "generatedAt": "2026-09-03T11:46:51.472Z",
     "date": "2026-09-03",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1591,9 +1591,9 @@ window.WaveSightOpsConsole = {
     "telemetry": {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
-        "ops_version": "OPS-V3.4.1-community-approval",
+        "ops_version": "OPS-V3.5.0-membership-management",
         "data_date": "2026-09-03",
-        "generated_at": "2026-09-03T09:54:20.192Z",
+        "generated_at": "2026-09-03T11:45:47.234Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -1811,7 +1811,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-03T10:07:14.143Z",
+      "updatedAt": "2026-09-03T11:46:51.465Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1899,7 +1899,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.4.1-community-approval",
+        "value": "OPS-V3.5.0-membership-management",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -2074,8 +2074,8 @@ window.WaveSightOpsConsole = {
         "source": "https://www.zkdlj.vip/version.json",
         "status": "公开端点已核验",
         "kind": "deployed",
-        "checkedAt": "2026-09-03T10:07:13.072Z",
-        "attemptedAt": "2026-09-03T10:07:13.072Z",
+        "checkedAt": "2026-09-03T11:44:45.101Z",
+        "attemptedAt": "2026-09-03T11:44:45.101Z",
         "verified": true
       },
       {
@@ -2086,8 +2086,8 @@ window.WaveSightOpsConsole = {
         "source": "https://www.zkdlj.vip/version.json",
         "status": "公开端点已核验",
         "kind": "deployed",
-        "checkedAt": "2026-09-03T10:07:13.072Z",
-        "attemptedAt": "2026-09-03T10:07:13.072Z",
+        "checkedAt": "2026-09-03T11:44:45.101Z",
+        "attemptedAt": "2026-09-03T11:44:45.101Z",
         "verified": true
       },
       {
@@ -2118,8 +2118,8 @@ window.WaveSightOpsConsole = {
         "source": "https://members.zkdlj.vip/healthz",
         "status": "公开端点已核验",
         "kind": "deployed",
-        "checkedAt": "2026-09-03T10:07:13.184Z",
-        "attemptedAt": "2026-09-03T10:07:13.184Z",
+        "checkedAt": "2026-09-03T11:44:45.240Z",
+        "attemptedAt": "2026-09-03T11:44:45.240Z",
         "verified": true
       },
       {
@@ -2130,8 +2130,8 @@ window.WaveSightOpsConsole = {
         "source": "https://members.zkdlj.vip/healthz",
         "status": "公开端点已核验",
         "kind": "deployed",
-        "checkedAt": "2026-09-03T10:07:13.184Z",
-        "attemptedAt": "2026-09-03T10:07:13.184Z",
+        "checkedAt": "2026-09-03T11:44:45.240Z",
+        "attemptedAt": "2026-09-03T11:44:45.240Z",
         "verified": true
       }
     ],

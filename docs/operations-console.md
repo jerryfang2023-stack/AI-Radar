@@ -1,14 +1,14 @@
 # Unified Operations Console
 
-Release: OPS-V3.4.1-community-approval / Skill Store v2.2.0
+Release: OPS-V3.5.0-membership-management / Skill Store v2.2.0
 
 Production URL: `https://www.zkdlj.vip/ops/`
 
 The whole console is published through an atomic VPS release and protected by an allowlisted email challenge. Verification sets an HttpOnly `SameSite=Strict` session cookie plus a separate CSRF cookie scoped to `/ops`. Nginx checks the session before serving the console, scripts or operational snapshots. The public login page is the only anonymous OPS surface. GitHub Pages excludes the console application, Skill Store embed and OPS data artifacts.
 
-## Membership operations (OPS V3.4.1)
+## Membership operations (OPS V3.5.0)
 
-`https://www.zkdlj.vip/ops/#membership` is the seventh panel. Community and application sources load independently on opening the panel, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. The Mini Program user table reuses the whole-console session and has no separate login form.
+`https://www.zkdlj.vip/ops/#membership` is the membership overview. Community and application sources load independently on opening it, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. Two persistent second-level entries sit beneath Membership & Entitlements in the left navigation: `#membership-approval` for community applications and `#membership-users` for Mini Program member operations. Each management view loads its own protected data only when opened.
 
 The page is metric-first: card-level methodology notes and repeated boundary explanations stay out of the interface. Detailed definitions remain in this operational reference; the UI keeps only live values, source status, controls and the necessary authentication/privacy boundary.
 
@@ -24,9 +24,9 @@ Validation: both service pytest suites; `npm run test:ops-unified`; existing ana
 
 ### Mini Program user management
 
-The same panel provides protected Mini Program account search through `GET /api/v1/admin/analytics/membership/users` and audited changes through `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`, contract `MEMBER-ADMIN-V1.0`. The operator verifies once at the console login page. The server session is held in an HttpOnly cookie; JavaScript receives only the scoped CSRF value. There is no terminal-token field or membership-specific login.
+The dedicated `#membership-users` subpanel provides protected Mini Program account search through `GET /api/v1/admin/analytics/membership/users` and audited changes through `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`, contract `MEMBER-ADMIN-V1.0`. The operator verifies once at the console login page. The server session is held in an HttpOnly cookie; JavaScript receives only the scoped CSRF value. There is no terminal-token field or membership-specific login.
 
-Community-member applications are reviewed natively in the same panel through the payment service's authenticated server-side proxy. List/detail/review calls use `COMMUNITY-APPROVAL-V1.0`; the browser never receives the community service token. Review writes require the OPS CSRF value, a unique operation ID, bounded scores and a server-derived administrator hash. The community service stores before/after audit records and safely replays duplicate operation IDs. The legacy `members.zkdlj.vip/admin` remains available only as a temporary operational fallback and is no longer linked from the unified console.
+Community-member applications are reviewed in the dedicated `#membership-approval` subpanel through the payment service's authenticated server-side proxy. Operators can search applicants, open each complete internal application and save status, joined date, five scores, review notes and company visibility. List/detail/review calls use `COMMUNITY-APPROVAL-V1.0`; the browser never receives the community service token. Review writes require the OPS CSRF value, a unique operation ID, bounded scores and a server-derived administrator hash. The community service stores before/after audit records and safely replays duplicate operation IDs. The legacy `members.zkdlj.vip/admin` remains available only as a temporary operational fallback and is no longer linked from the unified console.
 
 Allowed identities are server-only `OPERATIONS_ADMIN_EMAILS` values. The database stores email HMAC/masking, verification-code HMAC, session-token HMAC and CSRF HMAC, never the raw email, code or session token. A challenge lasts ten minutes, permits five attempts and is limited to three sends per email per ten minutes. Reads require the session bearer; writes additionally require its CSRF value. Logout revokes the server session.
 
@@ -36,7 +36,7 @@ Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 
 
 ## Scope and boundaries
 
-Seven modules: Overview, Analytics, Membership & Entitlements, Data Quality, Version Governance, Skill Store, System Settings.
+Seven primary modules: Overview, Analytics, Membership & Entitlements, Data Quality, Version Governance, Skill Store, System Settings. Membership & Entitlements owns two second-level routes: Community Application Review and Mini Program Member Management.
 Issue-center and task-chain panels are retired. Incident records, daily supervision, collection telemetry and batch history remain owned by their existing workflows.
 
 The production console, scripts and snapshots require the VPS session. Public aggregate APIs remain identity-free and may still be used by other products; their existence is not treated as console authorization. Member identities, payment/admin actions and protected community pages retain their own server-side boundaries.

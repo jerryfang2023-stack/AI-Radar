@@ -35,7 +35,7 @@
       ["offlineClaims", "线下权益核销"],
     ],
   };
-  let days = 30, generation = 0, loaded = false;
+  let days = 30, generation = 0, loaded = false, activeView = "membership";
   let adminCsrfToken = "", adminPage = 1, adminPages = 1, adminUsers = [], selectedUserId = null, adminLoaded = false;
   let approvalPage = 1, approvalPages = 1, approvalMembers = [], selectedApprovalId = null, approvalsLoaded = false;
   const controllers = new Map();
@@ -269,12 +269,18 @@
   $("[data-mo-approval-next]").addEventListener("click", () => { if (approvalPage < approvalPages) { approvalPage += 1; void loadApprovals(); } });
   $("[data-mo-approval-members]").addEventListener("click", (event) => { const button = event.target.closest("[data-mo-approval-id]"); if (button) void loadApprovalDetail(Number(button.dataset.moApprovalId)); });
   $("[data-mo-approval-detail]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-review]"); if (!form) return; event.preventDefault(); void submitApprovalReview(form); });
-  root.addEventListener("membership:open", () => { if (!loaded) refresh(); if (adminCsrfToken && !adminLoaded) void loadAdminUsers(); if (adminCsrfToken && !approvalsLoaded) void loadApprovals(); });
+  root.addEventListener("membership:open", (event) => {
+    activeView = ["membership", "membership-approval", "membership-users"].includes(event?.detail?.view) ? event.detail.view : "membership";
+    if (activeView === "membership" && !loaded) refresh();
+    if (activeView === "membership-users" && adminCsrfToken && !adminLoaded) void loadAdminUsers();
+    if (activeView === "membership-approval" && adminCsrfToken && !approvalsLoaded) void loadApprovals();
+  });
   document.addEventListener("operations:authenticated", (event) => {
     const token = String(event.detail?.csrfToken || "");
     if (token.length < 20) return;
     adminCsrfToken = token; adminPage = 1; adminLoaded = false; approvalPage = 1; approvalsLoaded = false;
-    if (root.classList.contains("is-active")) { void loadAdminUsers(); void loadApprovals(); }
+    if (activeView === "membership-users") void loadAdminUsers();
+    if (activeView === "membership-approval") void loadApprovals();
   });
   document.addEventListener("operations:logout", resetAdminSession);
 })();

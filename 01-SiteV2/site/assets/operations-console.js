@@ -14,7 +14,8 @@
     get(key) { try { return localStorage.getItem(key); } catch { return null; } },
     set(key, value) { try { localStorage.setItem(key, value); return true; } catch { return false; } },
   };
-  const validPanels = new Set(["overview", "analytics", "membership", "quality", "governance", "skills", "settings"]);
+  const validPanels = new Set(["overview", "analytics", "membership", "membership-approval", "membership-users", "quality", "governance", "skills", "settings"]);
+  const membershipPanels = new Set(["membership", "membership-approval", "membership-users"]);
   const defaults = { landing: "overview", compact: false, staleHours: 72 };
   let preferences = { ...defaults };
   try {
@@ -38,11 +39,13 @@
   }
   function setPanel(id) {
     state.panel = validPanels.has(id) ? id : "overview";
-    $$("[data-tab]").forEach((button) => button.setAttribute("aria-current", String(button.dataset.tab === state.panel)));
+    $$(".nav [data-tab]").forEach((button) => button.setAttribute("aria-current", String(button.dataset.tab === state.panel)));
+    const membershipParent = $("[data-membership-nav] > [data-tab=membership]");
+    membershipParent?.classList.toggle("is-context", membershipPanels.has(state.panel) && state.panel !== "membership");
     $$("[data-panel]").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === state.panel));
     history.replaceState(null, "", "#" + state.panel);
     if (state.panel === "analytics") $("[data-application-analytics]")?.dispatchEvent(new Event("analytics:open"));
-    if (state.panel === "membership") $("[data-member-operations]")?.dispatchEvent(new Event("membership:open"));
+    if (membershipPanels.has(state.panel)) $("[data-member-operations]")?.dispatchEvent(new CustomEvent("membership:open", { detail: { view: state.panel } }));
     if (state.panel === "skills") resizeSkillFrame();
   }
   function setRailCollapsed(collapsed) {

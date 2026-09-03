@@ -38,7 +38,7 @@ Event Library, Entity Library, and Trend Radar expose the same evidence-backed C
 
 ## Current Frontstage Versions
 
-The OPS membership panel (`https://www.zkdlj.vip/ops/#membership`) reuses the whole-console VPS session for Mini Program user management. Community/application summaries retain bounded 7/30/90-day filters and explicit unavailable states. Do not expose raw identities, aggregate across unresolved cross-platform accounts, infer community renewal/expiry fields, or grant unaudited writes. Verify service privacy/authentication tests and `test:ops-unified` for changes.
+The OPS membership overview (`https://www.zkdlj.vip/ops/#membership`) retains bounded 7/30/90-day community/application summaries and explicit unavailable states. Its persistent second-level navigation routes community application review to `#membership-approval` and Mini Program member operations to `#membership-users`; both reuse the whole-console VPS session and load protected data only when opened. Do not expose raw identities, aggregate across unresolved cross-platform accounts, infer community renewal/expiry fields, or grant unaudited writes. Verify service privacy/authentication tests and `test:ops-unified` for changes.
 
 | Scope | Version | Meaning |
 |---|---|---|
