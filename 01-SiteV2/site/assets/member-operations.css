@@ -5,35 +5,30 @@
 .mo-toolbar label { display: flex; gap: 12px; align-items: center; font: 400 14px/24px var(--sans); }
 .mo-toolbar select, .mo-toolbar button { min-height: 44px; padding: 8px 16px; border: 1px solid var(--gold-line); border-radius: 8px; background: var(--paper); color: var(--blue); }
 .mo-toolbar button { background: var(--blue); color: var(--paper); }
-.mo-boundary { padding: 16px; background: var(--paper-soft); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; }
 .mo-section { margin-top: 28px; min-width: 0; }
 .mo-section header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; margin-bottom: 12px; align-items: end; }
 [data-member-operations] .mo-status { font: 400 12px/18px var(--sans); color: var(--muted); }
 .mo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .mo-metric { padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); min-width: 0; }
 .mo-metric h3, .mo-distribution h3 { color: var(--blue); font: 600 14px/24px var(--sans); }
-.mo-metric strong { display: block; margin: 8px 0; font: 600 28px/36px var(--mono); }
+.mo-metric strong { display: block; margin-top: 8px; font: 600 28px/36px var(--mono); }
 .mo-metric .mo-missing { color: var(--muted); font: 400 20px/36px var(--sans); }
-[data-member-operations] .mo-metric p { font: 400 12px/18px var(--sans); }
 .mo-distributions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
 .mo-distribution { padding: 18px; border-radius: 12px; border: 1px solid var(--line); }
 .mo-distribution dl { margin: 12px 0 0; }
 .mo-distribution dl div { display: flex; gap: 16px; justify-content: space-between; font: 400 14px/24px var(--sans); border-top: 1px solid var(--line); padding: 8px 0; }
 .mo-distribution dd { margin: 0; font-family: var(--mono); }
-[data-member-operations] .mo-note { margin-top: 12px; font: 400 12px/18px var(--sans); }
 .mo-empty { padding: 24px; border: 1px dashed var(--gold-line); border-radius: 12px; color: var(--muted); font: 400 14px/24px var(--sans); }
 .mo-management { margin-top: 28px; padding: 20px; border: 1px solid var(--gold-line); border-radius: 12px; }
 .mo-management a { display: inline-block; padding: 12px 0; color: var(--blue); font: 600 14px/24px var(--sans); }
 .mo-admin { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--gold-line); }
-.mo-admin > header { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 440px); gap: 24px; align-items: end; }
-.mo-admin-auth { display: grid; grid-template-columns: minmax(260px, 1fr) auto; gap: 12px; align-items: end; max-width: 760px; margin-top: 18px; padding: 18px; background: var(--paper-soft); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; }
+.mo-admin > header { display: block; }
 .mo-admin label { display: grid; gap: 6px; color: var(--blue); font: 600 12px/18px var(--sans); }
 .mo-admin input, .mo-admin select, .mo-admin button { min-height: 42px; border: 1px solid var(--gold-line); border-radius: 8px; padding: 8px 12px; background: var(--paper); color: var(--blue); font: 400 14px/22px var(--sans); }
 .mo-admin button { cursor: pointer; background: var(--blue); color: var(--paper); font-weight: 600; transition: transform 160ms ease, opacity 160ms ease; }
 .mo-admin button:active { transform: scale(.98); }
 .mo-admin button:disabled { cursor: not-allowed; opacity: .45; }
 .mo-admin .mo-secondary { background: transparent; color: var(--blue); }
-.mo-admin-auth p { grid-column: 1 / -1; margin: 0; color: var(--muted); }
 .mo-admin-console { margin-top: 18px; }
 .mo-admin-toolbar { display: grid; grid-template-columns: minmax(220px, 1fr) 180px auto auto; gap: 10px; align-items: end; }
 .mo-admin-state { min-height: 24px; margin: 12px 0; color: var(--muted); }
@@ -61,6 +56,6 @@
 .mo-admin footer { margin-top: 18px; color: var(--muted); }
 .mo-admin footer a { color: var(--blue); font-weight: 600; }
 [data-member-operations] :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
-@media (max-width: 900px) { .mo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-admin > header, .mo-user-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-admin-toolbar { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 640px) { .mo-grid, .mo-distributions, .mo-admin > header, .mo-admin-auth, .mo-admin-toolbar, .mo-user-facts, .mo-adjustments { grid-template-columns: 1fr; } .mo-metric { padding: 16px; } .mo-admin-auth p { grid-column: auto; } .mo-admin-paging { justify-content: space-between; } }
+@media (max-width: 900px) { .mo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-user-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-admin-toolbar { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .mo-grid, .mo-distributions, .mo-admin-toolbar, .mo-user-facts, .mo-adjustments { grid-template-columns: 1fr; } .mo-metric { padding: 16px; } .mo-admin-paging { justify-content: space-between; } }
 @media (prefers-reduced-motion: reduce) { .mo-admin button { transition: none; } }

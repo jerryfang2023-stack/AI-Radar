@@ -13,7 +13,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current local automation: exactly seven Windows tasks; Final Closure owns the strict 24-table `DATA-LAKE-V4.1` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
 - Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
 - Current public product: the independent AI financing site at `https://www.zkdlj.vip/` owns Funding Insights and weekly/monthly reports. Data Center, Trend Radar, Opportunity Map, and operations remain internal supporting surfaces.
-- Current dashboard: `01-SiteV2/site/operations-console.html`, `OPS-V3.2.0-member-admin`; unified operations for Data Center, Funding Portal, Mini Program, H5 and community. Issue/task UI panels are retired; records remain. Membership aggregates stay passwordless and identity-free; Mini Program account details and audited adjustments require the runtime admin token. System Settings owns integration/freshness information and device-local preferences.
+- Current dashboard source: `01-SiteV2/site/operations-console.html`, `OPS-V3.4.0-console-login`; deploy only to the authenticated VPS route `https://www.zkdlj.vip/ops/`, never in the GitHub Pages artifact. The allowlisted administrator email challenge establishes an HttpOnly, SameSite=Strict VPS session for the whole console; the membership panel reuses it and has no separate login. Issue/task UI panels are retired; records remain. System Settings owns integration/freshness information and device-local preferences.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
 - Current First-Line Viewpoints column version: FLV-V1.1.0-history-backfill.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
@@ -59,7 +59,7 @@ First-line viewpoints are a separate builders column. They are useful for readin
 | Data Center / 数据中心 | `01-SiteV2/site/data-center.html` | internal factual-data serving and review surface |
 | Application Center / 应用中心 | `trend-radar.html` | internal downstream factual-change surface; Guanlan Research is retired |
 | Report compatibility routes | `intelligence-map.html`, `reports.html`, weekly/monthly HTML routes | redirects only to the AI financing site |
-| Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | internal operations backend |
+| Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | VPS-only authenticated operations backend |
 
 The public website must not expose Data Center or Application Center as primary columns. Funding Insights owns its public navigation and may consume their governed data projections without exposing the internal information architecture.
 

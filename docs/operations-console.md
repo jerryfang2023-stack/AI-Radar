@@ -1,35 +1,43 @@
 # Unified Operations Console
 
-Release: OPS-V3.2.0-member-admin / Skill Store v2.2.0
+Release: OPS-V3.4.0-console-login / Skill Store v2.2.0
 
-## Membership operations (OPS V3.2.0)
+Production URL: `https://www.zkdlj.vip/ops/`
 
-`operations-console.html#membership` is the seventh panel. Community and application sources load independently on opening the panel, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. No identity data is fetched or rendered.
+The whole console is published through an atomic VPS release and protected by an allowlisted email challenge. Verification sets an HttpOnly `SameSite=Strict` session cookie plus a separate CSRF cookie scoped to `/ops`. Nginx checks the session before serving the console, scripts or operational snapshots. The public login page is the only anonymous OPS surface. GitHub Pages excludes the console application, Skill Store embed and OPS data artifacts.
+
+## Membership operations (OPS V3.4.0)
+
+`https://www.zkdlj.vip/ops/#membership` is the seventh panel. Community and application sources load independently on opening the panel, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. The Mini Program user table reuses the whole-console session and has no separate login form.
+
+The page is metric-first: card-level methodology notes and repeated boundary explanations stay out of the interface. Detailed definitions remain in this operational reference; the UI keeps only live values, source status, controls and the necessary authentication/privacy boundary.
 
 - Community: `https://members.zkdlj.vip/api/v1/operations/membership-summary`. Formal members require approval and a valid past/present joined date. Participation and speakers resolve only unique member identities from dated issue evidence; unmatched activity aliases are counted separately. One person per issue is one participation; the highest issue activity score plus manual adjustments produces the OPS points distribution. Opt-outs are excluded from points/activity, not membership stock.
-- Application: `https://www.zkdlj.vip/api/v1/analytics/membership/summary`. Current accounts exclude merged-away and future-created rows. Effective entitlement includes paid and points-granted membership; trials are separate. First and repeat purchases use server-confirmed non-refunded orders, never client events. Repeat purchases are not auto-renewal. Active behavior means recorded growth-task actions, not all visitors.
+- Application: `https://www.zkdlj.vip/ops/application-membership-summary` (requires the whole-console session). Current accounts exclude merged-away and future-created rows. Effective entitlement includes paid and points-granted membership; trials are separate. First and repeat purchases use server-confirmed non-refunded orders, never client events. Repeat purchases are not auto-renewal. Active behavior means recorded growth-task actions, not all visitors.
 - Periods use Asia/Shanghai calendar dates including today; stock and point distributions are current totals. Expiring means the next seven elapsed days. Existing historical records are included; this is not limited to the traffic analytics launch date.
 - Membership package distribution is the latest non-refunded paid package among currently entitled accounts, with an other/redemption bucket; it does not reconstruct mixed entitlement sources.
 - Do not add the two sources' members or points: cross-platform identity resolution is not implemented here. Community expiry/renewals and offline benefit claims are explicitly unavailable. No claim/renewal rate is inferred.
-- Both endpoints accept GET/OPTIONS only, return an explicit allowlist under `MEMBER-OPS-V1.0`, use query-only SQLite transactions and no-store responses. The page sends no credentials. Admin/member/write routes keep their original authentication.
+- Both sources accept GET/OPTIONS only, return an explicit allowlist under `MEMBER-OPS-V1.0`, use query-only SQLite transactions and no-store responses. The application source is reached through the authenticated same-origin OPS proxy; the community aggregate remains an independently managed read-only source. Admin/member/write routes keep their original authentication.
 - The membership aggregate remains schema-compatible with 1.6.13 and 1.7.x. Production currently runs member service 1.7.3; deploy only from an exact tested release and never transplant this module onto an older production baseline or overwrite runtime data. Back up code and SQLite before restart; roll back code without replacing a database that may contain newer activity.
 
-Validation: both service pytest suites; `npm run test:ops-unified`; existing analytics tests, OPS/Skill/version gates; desktop/mobile browser checks. Public aggregates are intentionally public, not protected by hidden navigation.
+Validation: both service pytest suites; `npm run test:ops-unified`; existing analytics tests, OPS/Skill/version gates; Nginx configuration check; desktop/mobile browser checks. The OPS page and application aggregates are protected by the VPS session boundary.
 
 ### Mini Program user management
 
-The same panel provides protected Mini Program account search through `GET /api/v1/admin/analytics/membership/users` and audited changes through `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`, contract `MEMBER-ADMIN-V1.0`. Both require `Authorization: Bearer <ANALYTICS_ADMIN_TOKEN>` and an allowlisted OPS origin. The browser keeps the token in memory only and clears the input immediately; it is never written to local/session storage or repository data.
+The same panel provides protected Mini Program account search through `GET /api/v1/admin/analytics/membership/users` and audited changes through `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`, contract `MEMBER-ADMIN-V1.0`. The operator verifies once at the console login page. The server session is held in an HttpOnly cookie; JavaScript receives only the scoped CSRF value. There is no terminal-token field or membership-specific login.
+
+Allowed identities are server-only `OPERATIONS_ADMIN_EMAILS` values. The database stores email HMAC/masking, verification-code HMAC, session-token HMAC and CSRF HMAC, never the raw email, code or session token. A challenge lasts ten minutes, permits five attempts and is limited to three sends per email per ten minutes. Reads require the session bearer; writes additionally require its CSRF value. Logout revokes the server session.
 
 The list includes only non-merged accounts with a verified WeChat OpenID identity, but never returns the OpenID or identity hash. It exposes display name, masked phone, community link status, entitlement dates, available/lifetime/community points, non-refunded paid-order count/value, and last recorded behavior. Search supports display name, masked phone, community name and numeric user ID; filters support member/trial/expired.
 
-Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 days or adjust available points by ±1—100000. A 2—120 character reason and a unique operation ID are mandatory, so a retried request cannot apply twice. Entitlement changes append `membership_ledger`; point changes append `point_ledger` without changing lifetime points; both append `operations_admin_audits` with token fingerprint, before/after values and timestamp. Negative available balances are rejected. Account deletion, identity edit/merge, order mutation, arbitrary expiry replacement and lifetime-point rewriting are not exposed.
+Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 days or adjust available points by ±1—100000. A 2—120 character reason and a unique operation ID are mandatory, so a retried request cannot apply twice. Entitlement changes append `membership_ledger`; point changes append `point_ledger` without changing lifetime points; both append `operations_admin_audits` with administrator identity fingerprint, before/after values and timestamp. Negative available balances are rejected. Account deletion, identity edit/merge, order mutation, arbitrary expiry replacement and lifetime-point rewriting are not exposed.
 
 ## Scope and boundaries
 
 Seven modules: Overview, Analytics, Membership & Entitlements, Data Quality, Version Governance, Skill Store, System Settings.
 Issue-center and task-chain panels are retired. Incident records, daily supervision, collection telemetry and batch history remain owned by their existing workflows.
 
-The passwordless page displays sanitized aggregate analytics and public version metadata only. Member identities, payment/admin actions and protected community pages keep authentication. Hidden navigation and noindex are not authentication.
+The production console, scripts and snapshots require the VPS session. Public aggregate APIs remain identity-free and may still be used by other products; their existence is not treated as console authorization. Member identities, payment/admin actions and protected community pages retain their own server-side boundaries.
 
 ## Version ownership
 
@@ -45,7 +53,7 @@ The passwordless page displays sanitized aggregate analytics and public version 
 1. Run npm run sync:ops-platforms. Only whitelisted version fields are saved; never raw responses or private service config.
 2. Run npm run build:skill-store-dashboard on the owning local machine. It scans .skill-store, AIP, latest plugin cache and configured project directories. Missing optional directories are unconnected; disappearance of a previously available directory fails closed and preserves the old snapshot.
 3. Run npm run build:ops-console, npm run test:ops-unified, npm run test:ops-v2, npm run test:skill-ops and npm run assert:versions. Complete normal repository gates before publishing.
-4. Commit scoped files, tag the OPS release, push main, and verify GitHub Pages plus the live page.
+4. Commit scoped files, tag the OPS release, push main, publish the protected OPS artifact to `/var/www/wavesight-ops`, and verify unauthenticated redirects plus authenticated access. GitHub Pages must pass while excluding OPS artifacts.
 
 CI consumes committed catalog snapshots without access to local project repositories. Local-source refresh is neither a browser action nor an unattended cross-device sync service.
 

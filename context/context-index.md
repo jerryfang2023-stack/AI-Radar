@@ -61,7 +61,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 - `01-SiteV2/site/opportunity-map.html`: source-backed Opportunity Map.
 - `01-SiteV2/site/weekly-ai-business-change-radar.html`: weekly AI business change radar detail page.
 - `01-SiteV2/site/v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html`: compatibility redirects only.
-- `01-SiteV2/site/operations-console.html`: dashboard / operations backend.
+- `01-SiteV2/site/operations-console.html`: authenticated VPS dashboard source; production entry is `https://www.zkdlj.vip/ops/` and Pages excludes its artifacts.
 
 ## Paused Or Retired
 

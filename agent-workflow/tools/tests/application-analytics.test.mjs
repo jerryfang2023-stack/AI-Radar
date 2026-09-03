@@ -27,16 +27,17 @@ test("OPS owns analytics and the old entry redirects without a duplicate dashboa
   assert.ok(analyticsStart >= 0 && membershipStart > analyticsStart);
   assert.doesNotMatch(page.slice(analyticsStart, membershipStart), /data-auth|type="password"|data-exit/);
   const redirect = read("01-SiteV2/site/application-analytics.html");
-  assert.match(redirect, /http-equiv="refresh" content="0;url=operations-console\.html#analytics"/);
+  assert.match(redirect, /http-equiv="refresh" content="0;url=https:\/\/www\.zkdlj\.vip\/ops\/#analytics"/);
+  assert.match(redirect, /需要管理员邮箱验证/);
   assert.doesNotMatch(redirect, /dc-sidebar|data-kpis/);
   for (const file of ["data-center.html", "trend-radar.html", "opportunity-map.html"]) {
     assert.doesNotMatch(read(`01-SiteV2/site/${file}`), /application-analytics\.html|运营统计/);
   }
 });
 
-test("dashboard uses passwordless aggregate reads and renders required metrics", () => {
-  assert.match(script, /api\/v1\/analytics\/summary/);
-  assert.match(script, /credentials: "omit"/);
+test("dashboard uses the protected same-origin aggregate and renders required metrics", () => {
+  assert.match(script, /\/ops\/analytics-api\/summary/);
+  assert.match(script, /credentials: "same-origin"/);
   assert.match(script, /newRegistrations/);
   assert.match(script, /netRevenueCents/);
   assert.match(script, /registrationRate/);
@@ -101,11 +102,11 @@ const respond = async (request, data = production(), ok = true) => {
   await new Promise((resolve) => setImmediate(resolve));
 };
 
-test("direct analytics entry loads without credentials and refresh/filter controls work", async () => {
+test("embedded analytics loads through the console session and refresh/filter controls work", async () => {
   const app = dashboardHarness();
   assert.equal(app.requests.length, 1);
   assert.match(app.requests[0].url, /days=7&platform=all$/);
-  assert.equal(app.requests[0].options.credentials, "omit");
+  assert.equal(app.requests[0].options.credentials, "same-origin");
   assert.equal(app.requests[0].options.headers, undefined);
   assert.equal(app.element("[data-content]").hidden, true);
   await respond(app.requests[0]);

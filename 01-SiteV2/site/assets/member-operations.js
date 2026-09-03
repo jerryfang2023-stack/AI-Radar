@@ -4,38 +4,38 @@
   const $ = (selector) => root.querySelector(selector);
   const endpoints = {
     community: "https://members.zkdlj.vip/api/v1/operations/membership-summary",
-    application: "https://www.zkdlj.vip/api/v1/analytics/membership/summary",
-    adminUsers: "https://www.zkdlj.vip/api/v1/admin/analytics/membership/users",
+    application: "/ops/application-membership-summary",
+    adminUsers: "/ops/member-api/users",
   };
   const definitions = {
     community: [
-      ["joinedMembers", "正式入群", "当前审核通过且已登记入群日期"],
-      ["newJoinedMembers", "新增入群", "所选期间入群的当前正式成员"],
-      ["awaitingJoin", "审核通过待入群", "尚未登记有效入群日期"],
-      ["participants", "分享参与成员", "当期活动记录匹配到的正式成员去重"],
-      ["speakers", "分享者", "当期嘉宾匹配到的正式成员去重"],
-      ["participations", "参与人次", "同一期每位成员只计一次"],
-      ["issues", "分享期数", "按期号去重；不含未来排期"],
-      ["expiring7d", "即将到期", "社群尚无会员到期字段"],
-      ["renewals", "社群续费", "社群尚无续费记录"],
+      ["joinedMembers", "正式入群"],
+      ["newJoinedMembers", "新增入群"],
+      ["awaitingJoin", "审核通过待入群"],
+      ["participants", "分享参与成员"],
+      ["speakers", "分享者"],
+      ["participations", "参与人次"],
+      ["issues", "分享期数"],
+      ["expiring7d", "即将到期"],
+      ["renewals", "社群续费"],
     ],
     application: [
-      ["accounts", "应用账户", "小程序 / PC 共用账户；剔除被合并账户"],
-      ["activeEntitlements", "有效会员权益", "当前会员期限未到；含付费与积分兑换"],
-      ["expiring7d", "7 天内到期", "有效会员权益中，未来 7 天到期账户"],
-      ["newAccounts", "新增账户", "所选期间创建；不等于新增付费会员"],
-      ["firstPaidAccounts", "首次付费", "首笔未退款的服务端确认订单在当期"],
-      ["repeatPaidAccounts", "再次购买", "当期存在第二笔及以后未退款订单；非自动续费"],
-      ["engagedAccounts", "有行为记录账户", "当期签到 / 阅读 / 收藏任务记录去重"],
-      ["trialAccounts", "试用中", "试用未到期且无有效会员权益"],
-      ["redemptions", "积分兑换次数", "当期已入账的积分兑换记录"],
-      ["redeemingAccounts", "兑换账户", "当期兑换账户去重"],
-      ["redeemedPoints", "已兑换积分", "当期兑换实际扣减积分；非社群积分总额"],
-      ["offlineClaims", "线下权益核销", "线下领取、核销记录待接入"],
+      ["accounts", "应用账户"],
+      ["activeEntitlements", "有效会员权益"],
+      ["expiring7d", "7 天内到期"],
+      ["newAccounts", "新增账户"],
+      ["firstPaidAccounts", "首次付费"],
+      ["repeatPaidAccounts", "再次购买"],
+      ["engagedAccounts", "有行为记录账户"],
+      ["trialAccounts", "试用中"],
+      ["redemptions", "积分兑换次数"],
+      ["redeemingAccounts", "兑换账户"],
+      ["redeemedPoints", "已兑换积分"],
+      ["offlineClaims", "线下权益核销"],
     ],
   };
   let days = 30, generation = 0, loaded = false;
-  let adminToken = "", adminPage = 1, adminPages = 1, adminUsers = [], selectedUserId = null;
+  let adminCsrfToken = "", adminPage = 1, adminPages = 1, adminUsers = [], selectedUserId = null, adminLoaded = false;
   const controllers = new Map();
   const number = (value) => value == null ? "待接入" : new Intl.NumberFormat("zh-CN").format(value);
   const count = (value) => Number.isSafeInteger(value) && value >= 0;
@@ -52,7 +52,7 @@
   }
   function render(source, payload) {
     const metrics = payload.metrics;
-    let content = '<div class="mo-grid">' + definitions[source].map(([key, label, note]) => '<article class="mo-metric"><h3>' + label + '</h3><strong' + (metrics[key] == null ? ' class="mo-missing"' : '') + '>' + number(metrics[key]) + '</strong><p>' + note + '</p></article>').join("") + '</div>';
+    let content = '<div class="mo-grid">' + definitions[source].map(([key, label]) => '<article class="mo-metric"><h3>' + label + '</h3><strong' + (metrics[key] == null ? ' class="mo-missing"' : '') + '>' + number(metrics[key]) + '</strong></article>').join("") + '</div>';
     const buckets = payload.pointBuckets;
     content += '<div class="mo-distributions">' + distribution(source === "community" ? "社群累计积分分布" : "应用可用积分分布", [
       [source === "community" ? "≤ 0 分" : "0 分", buckets.zero], [source === "community" ? "1–29 分" : "1–299 分", buckets.low],
@@ -60,8 +60,6 @@
     ]);
     if (source === "application") content += distribution("有效权益账户 · 最近付费套餐", [["月度", payload.tiers.monthly], ["半年", payload.tiers.half_year], ["年度", payload.tiers.annual], ["兑换 / 其他", payload.tiers.other]]);
     content += '</div>';
-    if (source === "community") content += '<p class="mo-note">当期有 ' + number(metrics.unresolvedParticipants) + ' 个活动昵称未能唯一匹配正式成员，未计入参与人数。积分排除已退出积分统计的成员；同一期活动取最高分，再加人工加减分，不改变业务积分账本。</p>';
-    else content += '<p class="mo-note">套餐按当前有效权益账户最近一笔未退款订单分类，并非当前权益来源拆账。首次付费 / 再次购买均排除已退款订单；此页不提供自动续费。应用可用积分可能包含社群同步值，不与社群积分相加。</p>';
     $('[data-mo-content="' + source + '"]').innerHTML = content;
     $('[data-mo-status="' + source + '"]').textContent = "已连接 · " + days + " 天窗口 · 更新于 " + new Date(payload.generatedAt).toLocaleString("zh-CN", { hour12: false });
   }
@@ -75,7 +73,7 @@
     controllers.set(source, controller);
     const timer = setTimeout(() => controller.abort(), 12000);
     try {
-      const response = await fetch(endpoints[source] + "?days=" + selectedDays, { method: "GET", credentials: "omit", cache: "no-store", signal: controller.signal });
+      const response = await fetch(endpoints[source] + "?days=" + selectedDays, { method: "GET", credentials: source === "application" ? "same-origin" : "omit", cache: "no-store", signal: controller.signal });
       if (!response.ok) throw new Error("unavailable");
       const payload = await response.json();
       if (current !== generation) return;
@@ -110,12 +108,20 @@
       recentAdjustments: Array.isArray(item.recentAdjustments) ? item.recentAdjustments.slice(0, 5).map((entry) => ({ action: entry?.action === "extend_membership" ? "延长权益" : "调整积分", reason: String(entry?.reason || "").slice(0, 120), createdAt: String(entry?.createdAt || "") })) : [],
     };
   }
-  function adminHeaders(json = false) { return { Authorization: "Bearer " + adminToken, ...(json ? { "Content-Type": "application/json" } : {}) }; }
-  function setAdminConnected(connected) { $("[data-mo-admin-auth]").hidden = connected; $("[data-mo-admin-console]").hidden = !connected; }
-  function adminFailure(message, reset = false) {
+  function adminHeaders(json = false, write = false) { return { ...(write ? { "X-CSRF-Token": adminCsrfToken } : {}), ...(json ? { "Content-Type": "application/json" } : {}) }; }
+  function resetAdminSession() {
+    adminCsrfToken = ""; adminUsers = []; selectedUserId = null; adminLoaded = false;
+    $("[data-mo-admin-detail]").innerHTML = "";
+    $("[data-mo-admin-state]").textContent = "";
+    $("[data-mo-admin-users]").innerHTML = "";
+  }
+  function adminFailure(message, expired = false) {
     $("[data-mo-admin-state]").textContent = message;
     $("[data-mo-admin-users]").innerHTML = '<tr><td colspan="6"><div class="mo-empty">' + escape(message) + '</div></td></tr>';
-    if (reset) { adminToken = ""; adminUsers = []; selectedUserId = null; setAdminConnected(false); $("[data-mo-admin-auth-status]").textContent = message; }
+    if (expired) {
+      resetAdminSession();
+      document.dispatchEvent(new CustomEvent("operations:session-expired", { detail: { message } }));
+    }
   }
   function renderAdminUsers() {
     const body = $("[data-mo-admin-users]");
@@ -129,16 +135,17 @@
     $("[data-mo-admin-detail]").innerHTML = '<section class="mo-user-detail"><header><div><span class="kicker">USER #' + user.id + '</span><h2>' + escape(user.displayName) + '</h2></div><span class="mo-badge">' + statusLabels[user.membership.status] + '</span></header><dl class="mo-user-facts"><div><dt>脱敏手机号</dt><dd>' + escape(user.phoneMasked) + '</dd></div><div><dt>权益有效至</dt><dd>' + date(user.membership.activeUntil) + '</dd></div><div><dt>可用 / 累计积分</dt><dd>' + number(user.points.balance) + ' / ' + number(user.points.lifetime) + '</dd></div><div><dt>社群关联</dt><dd>' + escape(user.community.name || "未关联") + '</dd></div><div><dt>付费订单</dt><dd>' + user.payment.paidOrders + ' 单 · ' + money(user.payment.paidCents) + '</dd></div><div><dt>最近付费</dt><dd>' + date(user.payment.lastPaidAt) + '</dd></div><div><dt>最近活跃</dt><dd>' + date(user.activity.lastBehaviorAt) + '</dd></div><div><dt>注册时间</dt><dd>' + date(user.createdAt) + '</dd></div></dl><div class="mo-adjustments"><form class="mo-adjustment" data-mo-adjust="membership"><h3>延长会员权益</h3><label>增加时长<select name="membershipDays"><option value="7">7 天</option><option value="30" selected>30 天</option><option value="90">90 天</option><option value="180">180 天</option><option value="365">365 天</option></select></label><label>调整原因<input name="reason" maxlength="120" required placeholder="如：客户补偿、活动奖励"></label><button type="submit">确认延长权益</button></form><form class="mo-adjustment" data-mo-adjust="points"><h3>调整可用积分</h3><label>增减积分<input name="pointsDelta" type="number" min="-100000" max="100000" required placeholder="正数增加，负数扣减"></label><label>调整原因<input name="reason" maxlength="120" required placeholder="如：线下活动奖励、误发修正"></label><button type="submit">确认调整积分</button></form></div><p class="mo-admin-state" data-mo-adjust-state role="status" aria-live="polite"></p><h3>最近人工调整</h3>' + audits + '</section>';
   }
   async function loadAdminUsers() {
+    if (!adminCsrfToken) return;
     const query = encodeURIComponent($("[data-mo-admin-query]").value || ""), status = encodeURIComponent($("[data-mo-admin-status]").value || "all");
     $("[data-mo-admin-state]").textContent = "正在读取小程序用户…"; $("[data-mo-admin-users]").innerHTML = '<tr><td colspan="6"><div class="mo-empty">正在加载受保护的用户明细…</div></td></tr>';
     try {
-      const response = await fetch(endpoints.adminUsers + "?query=" + query + "&status=" + status + "&page=" + adminPage + "&pageSize=20", { method: "GET", headers: adminHeaders(), credentials: "omit", cache: "no-store" });
-      if (response.status === 401 || response.status === 503) return adminFailure("运营令牌无效或服务未配置，请重新验证。", true);
+      const response = await fetch(endpoints.adminUsers + "?query=" + query + "&status=" + status + "&page=" + adminPage + "&pageSize=20", { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      if (response.status === 401 || response.status === 503) return adminFailure("管理员会话已失效或服务未配置，请重新验证。", true);
       if (!response.ok) throw new Error("用户明细暂不可用");
       const payload = await response.json();
       if (payload?.schemaVersion !== "MEMBER-ADMIN-V1.0" || payload.dataSource !== "production" || !Array.isArray(payload.users) || !Number.isSafeInteger(payload.page?.totalPages)) throw new Error("用户数据校验失败");
       const users = payload.users.map(safeAdminUser); if (users.some((item) => !item)) throw new Error("用户数据校验失败");
-      adminUsers = users; adminPage = payload.page.number; adminPages = Math.max(1, payload.page.totalPages);
+      adminUsers = users; adminPage = payload.page.number; adminPages = Math.max(1, payload.page.totalPages); adminLoaded = true;
       $("[data-mo-admin-state]").textContent = "已授权 · 共 " + payload.page.total + " 位小程序用户 · 更新于 " + date(payload.generatedAt); renderAdminUsers();
       if (selectedUserId) { const selected = adminUsers.find((user) => user.id === selectedUserId); $("[data-mo-admin-detail]").innerHTML = ""; if (selected) renderAdminDetail(selected); }
     } catch (error) { adminFailure(error.message || "用户明细暂不可用"); }
@@ -150,8 +157,8 @@
     if (reason.length < 2) { state.textContent = "请填写至少 2 个字的调整原因。"; return; }
     const button = form.querySelector("button"); button.disabled = true; state.textContent = "正在提交调整…";
     try {
-      const response = await fetch(endpoints.adminUsers + "/" + selectedUserId + "/adjustments", { method: "POST", headers: adminHeaders(true), credentials: "omit", cache: "no-store", body: JSON.stringify(body) });
-      const payload = await response.json(); if (response.status === 401 || response.status === 503) return adminFailure("授权已失效，请重新验证。", true);
+      const response = await fetch(endpoints.adminUsers + "/" + selectedUserId + "/adjustments", { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
+      const payload = await response.json(); if (response.status === 401 || response.status === 403 || response.status === 503) return adminFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "调整未成功").slice(0, 120));
       const user = safeAdminUser(payload?.user); if (payload?.schemaVersion !== "MEMBER-ADMIN-V1.0" || !user) throw new Error("调整结果校验失败");
       adminUsers = adminUsers.map((item) => item.id === user.id ? user : item); renderAdminUsers(); renderAdminDetail(user); $("[data-mo-adjust-state]").textContent = "调整已保存并写入审计记录。";
@@ -163,18 +170,18 @@
     refresh();
   });
   $("[data-mo-refresh]").addEventListener("click", refresh);
-  $("[data-mo-admin-connect]").addEventListener("click", () => {
-    const input = $("[data-mo-admin-token]"); adminToken = String(input.value || "").trim(); input.value = "";
-    if (!adminToken) { $("[data-mo-admin-auth-status]").textContent = "请输入运营后台访问令牌。"; return; }
-    adminPage = 1; setAdminConnected(true); void loadAdminUsers();
-  });
   $("[data-mo-admin-search-form]").addEventListener("submit", (event) => { event.preventDefault(); adminPage = 1; void loadAdminUsers(); });
   $("[data-mo-admin-status]").addEventListener("change", () => { adminPage = 1; void loadAdminUsers(); });
   $("[data-mo-admin-prev]").addEventListener("click", () => { if (adminPage > 1) { adminPage -= 1; void loadAdminUsers(); } });
   $("[data-mo-admin-next]").addEventListener("click", () => { if (adminPage < adminPages) { adminPage += 1; void loadAdminUsers(); } });
-  $("[data-mo-admin-disconnect]").addEventListener("click", () => { adminToken = ""; adminUsers = []; selectedUserId = null; $("[data-mo-admin-detail]").innerHTML = ""; setAdminConnected(false); $("[data-mo-admin-auth-status]").textContent = "已退出用户明细，页面内存中的令牌已清除。"; });
   $("[data-mo-admin-users]").addEventListener("click", (event) => { const button = event.target.closest("[data-mo-user-id]"); if (!button) return; const user = adminUsers.find((item) => item.id === Number(button.dataset.moUserId)); if (user) renderAdminDetail(user); });
   $("[data-mo-admin-detail]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-adjust]"); if (!form) return; event.preventDefault(); void submitAdjustment(form); });
-  root.addEventListener("membership:open", () => { if (!loaded) refresh(); });
-  if (root.classList.contains("is-active")) refresh();
+  root.addEventListener("membership:open", () => { if (!loaded) refresh(); if (adminCsrfToken && !adminLoaded) void loadAdminUsers(); });
+  document.addEventListener("operations:authenticated", (event) => {
+    const token = String(event.detail?.csrfToken || "");
+    if (token.length < 20) return;
+    adminCsrfToken = token; adminPage = 1; adminLoaded = false;
+    if (root.classList.contains("is-active")) void loadAdminUsers();
+  });
+  document.addEventListener("operations:logout", resetAdminSession);
 })();

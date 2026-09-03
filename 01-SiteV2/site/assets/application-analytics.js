@@ -1,7 +1,7 @@
 (() => {
   const root = document.querySelector("[data-application-analytics]");
   if (!root) return;
-  const API_URL = "https://www.zkdlj.vip/api/v1/analytics/summary";
+  const API_URL = "/ops/analytics-api/summary";
   const $ = (selector) => root.querySelector(selector);
   const $$ = (selector) => [...root.querySelectorAll(selector)];
   const state = { days: 7, platform: "all", started: false, requestId: 0 };
@@ -105,7 +105,7 @@
     setLoading(true);
     try {
       const url = `${API_URL}?days=${state.days}&platform=${encodeURIComponent(state.platform)}`;
-      const response = await fetch(url, { credentials: "omit", cache: "no-store", signal: controller.signal });
+      const response = await fetch(url, { credentials: "same-origin", cache: "no-store", signal: controller.signal });
       const payload = await response.json().catch(() => ({}));
       if (requestId !== state.requestId) return;
       if (!response.ok) throw new Error(payload.error?.message || "数据读取失败");

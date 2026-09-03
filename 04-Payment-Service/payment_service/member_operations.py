@@ -1,16 +1,24 @@
 """Membership aggregates plus authenticated Mini Program account operations."""
 from contextlib import closing
 from datetime import datetime, timedelta, timezone
-import hashlib
+from functools import wraps
+import hmac
 import json
 import math
+import secrets
 
-from flask import jsonify, request
+from flask import g, jsonify, request
+
+from payment_service.unified_account import VerificationSender, digest, mask_identity, normalize_identity
 
 LOCAL = timezone(timedelta(hours=8))
 VERSION = "MEMBER-OPS-V1.0"
 ADMIN_VERSION = "MEMBER-ADMIN-V1.0"
+ADMIN_AUTH_VERSION = "OPS-AUTH-V1.0"
 ADMIN_DAYS = {7, 30, 90, 180, 365}
+ADMIN_SESSION_COOKIE = "guanlan_ops_session"
+ADMIN_CSRF_COOKIE = "guanlan_ops_csrf"
+ADMIN_COOKIE_PATH = "/ops"
 
 
 def parsed(value):
@@ -77,6 +85,33 @@ def init_admin_schema(conn):
         )
     """)
     conn.execute("CREATE INDEX IF NOT EXISTS idx_operations_admin_audits_user ON operations_admin_audits(user_id, created_at DESC)")
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS operations_admin_challenges (
+            id TEXT PRIMARY KEY,
+            email_hash TEXT NOT NULL,
+            email_masked TEXT NOT NULL,
+            code_hash TEXT NOT NULL,
+            attempts INTEGER NOT NULL DEFAULT 0,
+            expires_at TEXT NOT NULL,
+            consumed_at TEXT,
+            created_at TEXT NOT NULL
+        )
+    """)
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_operations_admin_challenges_email ON operations_admin_challenges(email_hash, created_at DESC)")
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS operations_admin_sessions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            token_hash TEXT NOT NULL UNIQUE,
+            email_hash TEXT NOT NULL,
+            email_masked TEXT NOT NULL,
+            csrf_hash TEXT NOT NULL,
+            expires_at TEXT NOT NULL,
+            revoked_at TEXT,
+            last_seen_at TEXT NOT NULL,
+            created_at TEXT NOT NULL
+        )
+    """)
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_operations_admin_sessions_email ON operations_admin_sessions(email_hash, created_at DESC)")
 
 
 def status_for(user, now):
@@ -122,10 +157,58 @@ def admin_user(conn, user, now):
     }
 
 
-def register(app, db, clock, admin_required=None):
+def register(app, db, clock):
     with closing(db()) as conn:
         init_admin_schema(conn)
         conn.commit()
+    secret = str(app.config["SECRET_KEY"])
+    sender = VerificationSender(app.config)
+
+    def allowed_admin_hashes():
+        emails = {
+            normalized
+            for raw in str(app.config.get("OPERATIONS_ADMIN_EMAILS") or "").split(",")
+            if (normalized := normalize_identity("email", raw))
+        }
+        return {digest(secret, "ops-admin-email", email) for email in emails}
+
+    def session_required(write=False, touch=True):
+        provided = request.headers.get("Authorization", "")
+        token = provided[7:] if provided.startswith("Bearer ") else request.cookies.get(ADMIN_SESSION_COOKIE, "")
+        if not token:
+            return None, (jsonify(error={"code": "ADMIN_AUTH_REQUIRED", "message": "请使用管理员邮箱验证码登录"}), 401)
+        allowed = allowed_admin_hashes()
+        if not allowed:
+            return None, (jsonify(error={"code": "ADMIN_AUTH_NOT_CONFIGURED", "message": "运营管理员尚未配置"}), 503)
+        token_hash = digest(secret, "ops-admin-session", token)
+        now = clock()
+        with closing(db()) as conn:
+            row = conn.execute(
+                "SELECT * FROM operations_admin_sessions WHERE token_hash=? AND revoked_at IS NULL",
+                (token_hash,),
+            ).fetchone()
+            if not row or row["email_hash"] not in allowed or not parsed(row["expires_at"]) or parsed(row["expires_at"]) <= now:
+                return None, (jsonify(error={"code": "ADMIN_SESSION_EXPIRED", "message": "管理员会话已失效，请重新验证"}), 401)
+            if write:
+                csrf = request.headers.get("X-CSRF-Token", "")
+                if not csrf or not hmac.compare_digest(digest(secret, "ops-admin-csrf", csrf), row["csrf_hash"]):
+                    return None, (jsonify(error={"code": "ADMIN_CSRF_INVALID", "message": "页面安全凭证已失效，请重新验证"}), 403)
+            if touch:
+                conn.execute("UPDATE operations_admin_sessions SET last_seen_at=? WHERE id=?", (now.astimezone(timezone.utc).isoformat(timespec="seconds"), row["id"]))
+                conn.commit()
+            return dict(row), None
+
+    def admin_required(write=False, touch=True):
+        def decorate(fn):
+            @wraps(fn)
+            def wrapped(*args, **kwargs):
+                session, error = session_required(write=write, touch=touch)
+                if error:
+                    return error
+                g.operations_admin_session = session
+                return fn(*args, **kwargs)
+            return wrapped
+        return decorate
 
     @app.get("/api/v1/analytics/membership/summary")
     def membership_operations_summary():
@@ -139,8 +222,104 @@ def register(app, db, clock, admin_required=None):
         result["dataSource"] = "production" if app.config.get("APP_ENV") == "production" else "test"
         return jsonify(result)
 
-    if admin_required is None:
-        return
+    @app.post("/api/v1/admin/auth/challenges")
+    def create_admin_challenge():
+        email = normalize_identity("email", (request.get_json(silent=True) or {}).get("email"))
+        if not email:
+            return jsonify(error={"code": "INVALID_ADMIN_EMAIL", "message": "请输入有效的管理员邮箱"}), 400
+        allowed = allowed_admin_hashes()
+        if not allowed:
+            return jsonify(error={"code": "ADMIN_AUTH_NOT_CONFIGURED", "message": "运营管理员尚未配置"}), 503
+        email_hash = digest(secret, "ops-admin-email", email)
+        if email_hash not in allowed:
+            return jsonify(error={"code": "ADMIN_EMAIL_FORBIDDEN", "message": "该邮箱没有运营后台权限"}), 403
+        now = clock()
+        now_text = now.astimezone(timezone.utc).isoformat(timespec="seconds")
+        challenge_id = secrets.token_urlsafe(24)
+        code = f"{secrets.randbelow(1000000):06d}"
+        with closing(db()) as conn:
+            recent = conn.execute(
+                "SELECT COUNT(*) FROM operations_admin_challenges WHERE email_hash=? AND created_at>?",
+                (email_hash, (now - timedelta(minutes=10)).astimezone(timezone.utc).isoformat(timespec="seconds")),
+            ).fetchone()[0]
+            if recent >= 3:
+                return jsonify(error={"code": "TOO_MANY_ADMIN_CHALLENGES", "message": "验证码发送过于频繁，请稍后再试"}), 429
+            conn.execute(
+                "INSERT INTO operations_admin_challenges(id, email_hash, email_masked, code_hash, expires_at, created_at) VALUES(?,?,?,?,?,?)",
+                (challenge_id, email_hash, mask_identity("email", email), digest(secret, "ops-admin-code", code), (now + timedelta(minutes=10)).astimezone(timezone.utc).isoformat(timespec="seconds"), now_text),
+            )
+            conn.commit()
+        if not app.config.get("TESTING"):
+            try:
+                sender.send("email", email, code)
+            except Exception:
+                with closing(db()) as conn:
+                    conn.execute("DELETE FROM operations_admin_challenges WHERE id=? AND consumed_at IS NULL", (challenge_id,))
+                    conn.commit()
+                raise
+        payload = {"schemaVersion": ADMIN_AUTH_VERSION, "challengeId": challenge_id, "emailMasked": mask_identity("email", email), "expiresIn": 600}
+        if app.config.get("TESTING"):
+            payload["testCode"] = code
+        return jsonify(payload), 201
+
+    @app.post("/api/v1/admin/auth/challenges/<challenge_id>/verify")
+    def verify_admin_challenge(challenge_id):
+        code = str((request.get_json(silent=True) or {}).get("code") or "").strip()
+        now = clock()
+        now_text = now.astimezone(timezone.utc).isoformat(timespec="seconds")
+        with closing(db()) as conn:
+            conn.execute("BEGIN IMMEDIATE")
+            challenge = conn.execute("SELECT * FROM operations_admin_challenges WHERE id=?", (challenge_id,)).fetchone()
+            if not challenge or challenge["consumed_at"] or not parsed(challenge["expires_at"]) or parsed(challenge["expires_at"]) <= now:
+                conn.rollback()
+                return jsonify(error={"code": "ADMIN_CHALLENGE_EXPIRED", "message": "验证码已失效，请重新获取"}), 410
+            if challenge["email_hash"] not in allowed_admin_hashes():
+                conn.rollback()
+                return jsonify(error={"code": "ADMIN_EMAIL_FORBIDDEN", "message": "该邮箱没有运营后台权限"}), 403
+            if challenge["attempts"] >= 5 or not hmac.compare_digest(challenge["code_hash"], digest(secret, "ops-admin-code", code)):
+                conn.execute("UPDATE operations_admin_challenges SET attempts=attempts+1 WHERE id=?", (challenge_id,))
+                conn.commit()
+                return jsonify(error={"code": "INVALID_ADMIN_CODE", "message": "验证码不正确"}), 400
+            session_token = secrets.token_urlsafe(40)
+            csrf = secrets.token_urlsafe(24)
+            expires = now + timedelta(hours=int(app.config.get("OPERATIONS_ADMIN_SESSION_HOURS") or 8))
+            conn.execute("UPDATE operations_admin_challenges SET consumed_at=? WHERE id=?", (now_text, challenge_id))
+            conn.execute(
+                "INSERT INTO operations_admin_sessions(token_hash, email_hash, email_masked, csrf_hash, expires_at, last_seen_at, created_at) VALUES(?,?,?,?,?,?,?)",
+                (digest(secret, "ops-admin-session", session_token), challenge["email_hash"], challenge["email_masked"], digest(secret, "ops-admin-csrf", csrf), expires.astimezone(timezone.utc).isoformat(timespec="seconds"), now_text, now_text),
+            )
+            conn.commit()
+        payload = {"schemaVersion": ADMIN_AUTH_VERSION, "expiresAt": expires.isoformat(), "admin": {"emailMasked": challenge["email_masked"]}}
+        if app.config.get("TESTING"):
+            payload.update(sessionToken=session_token, csrfToken=csrf)
+        response = jsonify(payload)
+        cookie_secure = app.config.get("APP_ENV") == "production"
+        max_age = int((expires - now).total_seconds())
+        response.set_cookie(ADMIN_SESSION_COOKIE, session_token, max_age=max_age, secure=cookie_secure, httponly=True, samesite="Strict", path=ADMIN_COOKIE_PATH)
+        response.set_cookie(ADMIN_CSRF_COOKIE, csrf, max_age=max_age, secure=cookie_secure, httponly=False, samesite="Strict", path=ADMIN_COOKIE_PATH)
+        return response
+
+    @app.get("/api/v1/admin/auth/session")
+    @admin_required(touch=False)
+    def current_admin_session():
+        return jsonify(
+            schemaVersion=ADMIN_AUTH_VERSION,
+            authenticated=True,
+            expiresAt=g.operations_admin_session["expires_at"],
+            admin={"emailMasked": g.operations_admin_session["email_masked"]},
+        )
+
+    @app.post("/api/v1/admin/auth/logout")
+    @admin_required(write=True)
+    def logout_admin_session():
+        with closing(db()) as conn:
+            conn.execute("UPDATE operations_admin_sessions SET revoked_at=? WHERE id=?", (clock().astimezone(timezone.utc).isoformat(timespec="seconds"), g.operations_admin_session["id"]))
+            conn.commit()
+        response = app.make_response(("", 204))
+        cookie_secure = app.config.get("APP_ENV") == "production"
+        response.delete_cookie(ADMIN_SESSION_COOKIE, path=ADMIN_COOKIE_PATH, secure=cookie_secure, httponly=True, samesite="Strict")
+        response.delete_cookie(ADMIN_CSRF_COOKIE, path=ADMIN_COOKIE_PATH, secure=cookie_secure, samesite="Strict")
+        return response
 
     def mini_program_user(conn, user_id):
         return conn.execute(
@@ -150,7 +329,7 @@ def register(app, db, clock, admin_required=None):
         ).fetchone()
 
     @app.get("/api/v1/admin/analytics/membership/users")
-    @admin_required
+    @admin_required()
     def membership_admin_users():
         query = str(request.args.get("query") or "").strip().casefold()[:80]
         wanted_status = str(request.args.get("status") or "all")
@@ -185,7 +364,7 @@ def register(app, db, clock, admin_required=None):
         )
 
     @app.post("/api/v1/admin/analytics/membership/users/<int:user_id>/adjustments")
-    @admin_required
+    @admin_required(write=True)
     def membership_admin_adjust(user_id):
         payload = request.get_json(silent=True) or {}
         reason = str(payload.get("reason") or "").strip()
@@ -199,8 +378,7 @@ def register(app, db, clock, admin_required=None):
             return jsonify(error={"code": "INVALID_ADJUSTMENT", "message": "每次只能调整一种项目"}), 400
         now = clock()
         now_text = now.astimezone(timezone.utc).isoformat(timespec="seconds")
-        actor = request.headers.get("Authorization", "")[7:]
-        actor_hash = hashlib.sha256(actor.encode("utf-8")).hexdigest()[:16]
+        actor_hash = str(g.operations_admin_session["email_hash"])[:16]
         with closing(db()) as conn:
             conn.execute("BEGIN IMMEDIATE")
             user = mini_program_user(conn, user_id)

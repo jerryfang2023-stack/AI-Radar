@@ -1,7 +1,7 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "version": "OPS-V3.2.0-member-admin",
-    "generatedAt": "2026-09-03T07:49:50.928Z",
+    "version": "OPS-V3.4.0-console-login",
+    "generatedAt": "2026-09-03T09:07:15.896Z",
     "dateRange": {
       "start": "2026-08-28",
       "end": "2026-09-03"

@@ -20,8 +20,8 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 - WaveSight AI is an AI industry data center and structured factual data foundation for downstream AIP, industry research, and startup decision-support products.
 - The data center does not make decisions, judge commercial value, recommend actions, or educate readers toward a conclusion.
 - Funding Insights is the independent public application website. The Data Center / Application Center shell is an internal supporting surface and is not public navigation.
-- The current backend is OPS-V3.2.0-member-admin: one operations entry for the Data Center, Funding Portal, Mini Program, financing H5 and community membership.
-- Membership operations keeps passwordless, allowlisted community/application aggregates with independent failures and explicit missing expiry/renewal/claim metrics. An admin-token boundary exposes only validated Mini Program user details and audited entitlement/available-point adjustments; raw WeChat identities, account deletion, merging and order mutation remain unavailable. Source counts and points must not be added across systems.
+- The current backend is OPS-V3.4.0-console-login at `https://www.zkdlj.vip/ops/`: one authenticated operations entry for the Data Center, Funding Portal, Mini Program, financing H5 and community membership. The login uses an allowlisted email challenge and an HttpOnly, SameSite=Strict VPS session; GitHub Pages excludes the console and its operational assets.
+- Membership operations reuses the whole-console session and has no separate login. It exposes only validated Mini Program user details and audited entitlement/available-point adjustments; raw WeChat identities, account deletion, merging and order mutation remain unavailable. Community/application aggregates fail independently, and source counts or points must not be added across systems.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - The current collection lane writes ephemeral source snapshots, copies complete bodies into the authoritative private evidence store, converts public V4 records to `evidence://<content_hash>` locators, and then removes the ephemeral public copies. `SOURCE-INTAKE-V1` remains the structured handoff.
 - Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.1.0-tag-v4-1`, Funding Insights `FUNDING-INSIGHT-V1.5.0-china-market`, financing portal `FUNDING-PORTAL-V2.8.4`, report publication `REPORTS-V1.3.0-funding-portal`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
@@ -45,12 +45,12 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 | AI Financing Site | `https://www.zkdlj.vip/` | Independent public application backed by evidence-linked financing data and the canonical weekly/monthly report archive |
 | Data Center | `01-SiteV2/site/data-center.html` | Internal factual-data serving and review surface, including the investment-institution projection |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Internal downstream factual-change projection |
-| Application Analytics | `01-SiteV2/site/operations-console.html#analytics` | Passwordless read-only Mini Program and PC aggregate analytics; old application-analytics route redirects here |
+| Application Analytics | `https://www.zkdlj.vip/ops/#analytics` | Authenticated operations view for Mini Program and PC aggregate analytics; old application-analytics route redirects here |
 | Retired Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Compatibility redirect to `https://www.zkdlj.vip/#reports` |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Unlisted `noindex,nofollow` internal lab route retained for evidence-backed map experiments |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and person timeline |
 | Community Intelligence | `01-SiteV2/site/data-center.html?view=community` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
-| Dashboard | `01-SiteV2/site/operations-console.html` | Unified platform overview, read-only analytics, source quality, categorized versions, cross-platform Skill Store and integration/local settings; issue/task UI retired, records retained |
+| Dashboard | `https://www.zkdlj.vip/ops/` | VPS-authenticated platform overview, analytics, source quality, categorized versions, cross-platform Skill Store and integration/local settings; issue/task UI retired, records retained |
 
 ## Current Data Chain
 

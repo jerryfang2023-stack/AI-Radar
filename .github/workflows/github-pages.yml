@@ -191,6 +191,24 @@ jobs:
             --exclude=.github \
             --exclude=".[^/]*" \
             --exclude="data/follow-builders-daily.json" \
+            --exclude="operations-console.html" \
+            --exclude="operations-login.html" \
+            --exclude="local-skill-store.html" \
+            --exclude="assets/operations-console.js" \
+            --exclude="assets/operations-auth.css" \
+            --exclude="assets/operations-auth.js" \
+            --exclude="assets/application-analytics.css" \
+            --exclude="assets/application-analytics.js" \
+            --exclude="assets/member-operations.css" \
+            --exclude="assets/member-operations.js" \
+            --exclude="assets/local-skill-store.css" \
+            --exclude="assets/local-skill-store.js" \
+            --exclude="data/ops-console.js" \
+            --exclude="data/ops-console.json" \
+            --exclude="data/pipeline-dashboard.js" \
+            --exclude="data/pipeline-dashboard.json" \
+            --exclude="data/local-skill-store-data.js" \
+            --exclude="data/local-skill-store-data.json" \
             .
 
       - name: Upload Frontstage artifact

@@ -17,7 +17,7 @@ Current public frontstage:
 
 Current backend:
 
-- Dashboard: `operations-console.html`
+- Dashboard source: `operations-console.html`; production is VPS-only at `https://www.zkdlj.vip/ops/` and is excluded from GitHub Pages.
 
 ## Task Startup
 

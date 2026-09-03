@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.2.0-member-admin">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.4.0-console-login">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -340,12 +340,13 @@
   <meta name="wavesight-analytics-version" content="APP-ANALYTICS-V1.3.0-ops-readonly">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
-  <link rel="stylesheet" href="assets/member-operations.css?v=ops-v320">
+  <link rel="stylesheet" href="assets/operations-auth.css?v=ops-v340">
+  <link rel="stylesheet" href="assets/member-operations.css?v=ops-v340">
 </head>
 <body class="page-operations-console">
-  <main class="shell" data-ops-console>
+  <main class="shell" data-ops-console tabindex="-1" hidden>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.2.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.4.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
@@ -355,7 +356,7 @@
         <button type="button" data-tab="skills"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M10 8l5 4-5 4"/></svg></span><span class="nav-text">Skill Store</span></button>
         <button type="button" data-tab="settings"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8"/></svg></span><span class="nav-text">系统设置</span></button>
       </nav>
-      <div class="rail-actions"><button type="button" class="rail-toggle" data-rail-toggle>收起</button></div>
+      <div class="rail-actions"><button type="button" class="rail-toggle" data-rail-toggle>收起</button><button type="button" class="ops-logout" data-ops-logout>退出后台</button></div>
     </aside>
 
     <section class="stage">
@@ -470,30 +471,24 @@
 
       <section class="panel" data-panel="membership" data-member-operations>
         <div class="page-surface">
-          <header class="page-head"><div><span class="kicker">MEMBERSHIP · SECURE OPERATIONS</span><h1>会员与权益运营</h1></div><p>先看跨平台汇总，再在授权后管理具体小程序用户。</p></header>
+          <header class="page-head"><div><span class="kicker">MEMBERSHIP · SECURE OPERATIONS</span><h1>会员与权益运营</h1></div></header>
           <div class="mo-toolbar"><label>统计期间<select data-mo-days><option value="7">近 7 天</option><option value="30" selected>近 30 天</option><option value="90">近 90 天</option></select></label><button type="button" data-mo-refresh>刷新会员数据</button></div>
-          <p class="mo-boundary">免密页面仅展示汇总，不提供成员名单。两套系统人数、积分不相加。当前存量按读取时刻统计；期间指标按北京时间自然日，包含今天。待接入不等于零。</p>
           <section class="mo-section" aria-label="社群成员"><header><h2>社群成员与分享</h2><p class="mo-status" data-mo-status="community" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="community"></div></section>
           <section class="mo-section" aria-label="应用会员"><header><h2>融资站与小程序会员</h2><p class="mo-status" data-mo-status="application" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="application"></div></section>
           <section class="mo-admin" data-mo-admin>
-            <header><div><span class="kicker">MINI PROGRAM USERS</span><h2>小程序用户明细与管理</h2></div><p>明细及修改操作需要运营令牌，令牌仅保存在当前页面内存中。</p></header>
-            <div class="mo-admin-auth" data-mo-admin-auth>
-              <label>运营后台访问令牌<input type="password" autocomplete="off" data-mo-admin-token placeholder="输入 ANALYTICS_ADMIN_TOKEN"></label>
-              <button type="button" data-mo-admin-connect>验证并查看用户</button>
-              <p data-mo-admin-auth-status role="status" aria-live="polite">未授权时不会请求或显示任何用户明细。</p>
-            </div>
-            <div class="mo-admin-console" data-mo-admin-console hidden>
+            <header><div><span class="kicker">MINI PROGRAM USERS</span><h2>小程序用户明细与管理</h2></div></header>
+            <div class="mo-admin-console" data-mo-admin-console>
               <form class="mo-admin-toolbar" data-mo-admin-search-form>
                 <label>查找用户<input type="search" data-mo-admin-query placeholder="昵称、脱敏手机号或用户 ID"></label>
                 <label>权益状态<select data-mo-admin-status><option value="all">全部状态</option><option value="member">正式会员</option><option value="trial">试用中</option><option value="expired">已到期</option></select></label>
-                <button type="submit">查询</button><button type="button" class="mo-secondary" data-mo-admin-disconnect>退出明细</button>
+                <button type="submit">查询</button>
               </form>
               <p class="mo-admin-state" data-mo-admin-state role="status" aria-live="polite"></p>
               <div class="mo-user-table-wrap"><table class="mo-user-table"><thead><tr><th>用户</th><th>权益</th><th>可用积分</th><th>付费</th><th>最近活跃</th><th></th></tr></thead><tbody data-mo-admin-users></tbody></table></div>
               <div class="mo-admin-paging"><button type="button" data-mo-admin-prev>上一页</button><span data-mo-admin-page></span><button type="button" data-mo-admin-next>下一页</button></div>
               <div data-mo-admin-detail></div>
             </div>
-            <footer><p>这里不显示 OpenID、手机号原文或订单明细，也不提供删除账号、身份合并和订单改写。社群成员资料仍在独立后台管理。</p><a href="https://members.zkdlj.vip/admin" target="_blank" rel="noopener noreferrer">进入社群管理后台 · 需登录 ↗</a></footer>
+            <footer><p>仅显示脱敏资料；所有调整均记录审计。</p><a href="https://members.zkdlj.vip/admin" target="_blank" rel="noopener noreferrer">社群管理后台 ↗</a></footer>
           </section>
         </div>
       </section>
@@ -539,7 +534,7 @@
                 <p role="status" aria-live="polite" data-setting-status>仅保存到当前浏览器，不会更改他人的后台。</p>
               </form>
             </article>
-            <article class="card"><span class="label">REFRESH &amp; ACCESS</span><h2>刷新与权限边界</h2><p>运营统计按需读取公开聚合 API；质量、版本和 Skill 目录来自已发布快照。重新载入不会扫描本地目录或部署任何平台。</p><button class="text-button" type="button" data-reload-snapshot>重新载入已发布快照 ↻</button><p>会员明细、手机号、管理操作仍需各系统鉴权。此免密页面只负责安全展示与导航。</p></article>
+            <article class="card"><span class="label">REFRESH &amp; ACCESS</span><h2>刷新与权限边界</h2><p>质量、版本和 Skill 目录来自已发布快照；用户明细与管理操作由当前后台会话鉴权。</p><button class="text-button" type="button" data-reload-snapshot>重新载入已发布快照 ↻</button></article>
           </div>
           <section class="card integration-card"><span class="label">INTEGRATIONS</span><h2>接入清单与更新来源</h2><div class="data-status-list" data-data-status></div></section>
           <div class="card integration-card"><h3>如何更新接入</h3><p>维护仓库平台清单与 Skill 来源配置；运行公开版本核验、Skill 目录构建和后台构建，再通过 Git / Pages 发布。公开网页不提供文件写入或部署开关。</p></div>
@@ -552,6 +547,7 @@
   <script src="data/ops-console.js"></script>
   <script src="assets/operations-console.js?v=20260830-ops-v310"></script>
   <script src="assets/application-analytics.js?v=20260830-ops-readonly"></script>
-  <script src="assets/member-operations.js?v=ops-v320"></script>
+  <script src="assets/member-operations.js?v=ops-v340"></script>
+  <script src="assets/operations-auth.js?v=ops-v340"></script>
 </body>
 </html>
