@@ -66,3 +66,76 @@ def test_public_summary_readonly_cors_and_private_routes(client):
     assert client.get("/api/v1/admin/analytics/summary").status_code in {401, 503}
     with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
         assert list(conn.iterdump()) == before
+
+
+def test_admin_can_list_search_and_adjust_mini_program_users(client):
+    token = login(client, "ops-managed-user")
+    assert token
+    path = "/api/v1/admin/analytics/membership/users"
+    assert client.get(path).status_code == 503
+    client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
+    headers = {"Authorization": "Bearer admin-test-token", "Origin": "https://jerryfang2023-stack.github.io"}
+    assert client.get(path).status_code == 401
+
+    listed = client.get(path + "?query=观澜用户&status=trial&page=1&pageSize=20", headers=headers)
+    assert listed.status_code == 200
+    assert listed.headers["Access-Control-Allow-Origin"] == headers["Origin"]
+    assert listed.headers["Access-Control-Allow-Methods"] == "GET, POST, OPTIONS"
+    payload = listed.get_json()
+    assert payload["schemaVersion"] == "MEMBER-ADMIN-V1.0"
+    assert payload["page"] == {"number": 1, "size": 20, "total": 1, "totalPages": 1}
+    user = payload["users"][0]
+    assert user["displayName"] == "观澜用户"
+    assert user["phoneMasked"].startswith("139")
+    assert user["membership"]["status"] == "trial"
+    encoded = json.dumps(payload, ensure_ascii=False)
+    for private in ("openid-ops-managed-user", "phone_hash", "identity_hash", "admin-test-token"):
+        assert private not in encoded
+
+    user_id = user["id"]
+    extended = client.post(
+        f"{path}/{user_id}/adjustments", headers=headers,
+        json={"operationId": "membership-adjust-0001", "membershipDays": 30, "reason": "客户补偿权益"},
+    )
+    assert extended.status_code == 200
+    assert extended.get_json()["user"]["membership"]["status"] == "member"
+    adjusted = client.post(
+        f"{path}/{user_id}/adjustments", headers=headers,
+        json={"operationId": "points-adjust-0001", "pointsDelta": 120, "reason": "线下活动奖励"},
+    )
+    assert adjusted.status_code == 200
+    managed = adjusted.get_json()["user"]
+    assert managed["points"]["balance"] == 120
+    assert [item["action"] for item in managed["recentAdjustments"][:2]] == ["adjust_points", "extend_membership"]
+    replayed = client.post(f"{path}/{user_id}/adjustments", headers=headers, json={"operationId": "points-adjust-0001", "pointsDelta": 120, "reason": "线下活动奖励"})
+    assert replayed.status_code == 200 and replayed.get_json()["replayed"] is True
+    assert client.post(f"{path}/{user_id}/adjustments", headers=headers, json={"operationId": "points-adjust-0002", "pointsDelta": -121, "reason": "错误扣减测试"}).status_code == 409
+    assert client.post(f"{path}/{user_id}/adjustments", headers=headers, json={"operationId": "membership-adjust-0002", "membershipDays": 1, "reason": "无效权益"}).status_code == 400
+    assert client.post(f"{path}/{user_id}/adjustments", headers=headers, json={"operationId": "points-adjust-0003", "pointsDelta": 1}).status_code == 400
+
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        assert conn.execute("SELECT COUNT(*) FROM operations_admin_audits WHERE user_id=?", (user_id,)).fetchone()[0] == 2
+        assert conn.execute("SELECT source_type, points FROM point_ledger WHERE user_id=? ORDER BY id DESC", (user_id,)).fetchone() == ("ops_admin_adjustment", 120)
+        assert conn.execute("SELECT source_type, days FROM membership_ledger WHERE user_id=? ORDER BY id DESC", (user_id,)).fetchone() == ("ops_admin", 30)
+
+
+def test_admin_membership_routes_reject_untrusted_origin_and_non_mini_account(client):
+    client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
+    headers = {"Authorization": "Bearer admin-test-token"}
+    path = "/api/v1/admin/analytics/membership/users"
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        now = datetime.now(timezone.utc).isoformat()
+        conn.execute(
+            "INSERT INTO users(openid, trial_started_at, trial_ends_at, created_at, updated_at) VALUES(?,?,?,?,?)",
+            ("pc:private-account", now, now, now, now),
+        )
+        pc_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+        conn.commit()
+    assert client.get(path, headers=headers).get_json()["page"]["total"] == 0
+    missing = client.post(f"{path}/{pc_id}/adjustments", headers=headers, json={"operationId": "points-adjust-pc01", "pointsDelta": 1, "reason": "不可操作"})
+    assert missing.status_code == 404
+    untrusted = client.get(path, headers={**headers, "Origin": "https://evil.example"})
+    assert "Access-Control-Allow-Origin" not in untrusted.headers
+    preflight = client.options(path, headers={"Origin": "https://jerryfang2023-stack.github.io"})
+    assert preflight.status_code == 204
+    assert preflight.headers["Access-Control-Allow-Methods"] == "GET, POST, OPTIONS"

@@ -1,8 +1,8 @@
 # Unified Operations Console
 
-Release: OPS-V3.1.0-membership / Skill Store v2.2.0
+Release: OPS-V3.2.0-member-admin / Skill Store v2.2.0
 
-## Membership operations (OPS V3.1.0)
+## Membership operations (OPS V3.2.0)
 
 `operations-console.html#membership` is the seventh panel. Community and application sources load independently on opening the panel, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. No identity data is fetched or rendered.
 
@@ -15,6 +15,14 @@ Release: OPS-V3.1.0-membership / Skill Store v2.2.0
 - The membership aggregate remains schema-compatible with 1.6.13 and 1.7.x. Production currently runs member service 1.7.3; deploy only from an exact tested release and never transplant this module onto an older production baseline or overwrite runtime data. Back up code and SQLite before restart; roll back code without replacing a database that may contain newer activity.
 
 Validation: both service pytest suites; `npm run test:ops-unified`; existing analytics tests, OPS/Skill/version gates; desktop/mobile browser checks. Public aggregates are intentionally public, not protected by hidden navigation.
+
+### Mini Program user management
+
+The same panel provides protected Mini Program account search through `GET /api/v1/admin/analytics/membership/users` and audited changes through `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`, contract `MEMBER-ADMIN-V1.0`. Both require `Authorization: Bearer <ANALYTICS_ADMIN_TOKEN>` and an allowlisted OPS origin. The browser keeps the token in memory only and clears the input immediately; it is never written to local/session storage or repository data.
+
+The list includes only non-merged accounts with a verified WeChat OpenID identity, but never returns the OpenID or identity hash. It exposes display name, masked phone, community link status, entitlement dates, available/lifetime/community points, non-refunded paid-order count/value, and last recorded behavior. Search supports display name, masked phone, community name and numeric user ID; filters support member/trial/expired.
+
+Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 days or adjust available points by ±1—100000. A 2—120 character reason and a unique operation ID are mandatory, so a retried request cannot apply twice. Entitlement changes append `membership_ledger`; point changes append `point_ledger` without changing lifetime points; both append `operations_admin_audits` with token fingerprint, before/after values and timestamp. Negative available balances are rejected. Account deletion, identity edit/merge, order mutation, arbitrary expiry replacement and lifetime-point rewriting are not exposed.
 
 ## Scope and boundaries
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.1.0-membership">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.2.0-member-admin">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -340,12 +340,12 @@
   <meta name="wavesight-analytics-version" content="APP-ANALYTICS-V1.3.0-ops-readonly">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
-  <link rel="stylesheet" href="assets/member-operations.css?v=ops-v310">
+  <link rel="stylesheet" href="assets/member-operations.css?v=ops-v320">
 </head>
 <body class="page-operations-console">
   <main class="shell" data-ops-console>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.1.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.2.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
@@ -470,12 +470,31 @@
 
       <section class="panel" data-panel="membership" data-member-operations>
         <div class="page-surface">
-          <header class="page-head"><div><span class="kicker">MEMBERSHIP · READ ONLY</span><h1>会员与权益运营</h1></div><p>分开看社群成员与应用会员，从新增、参与到到期与兑换。</p></header>
+          <header class="page-head"><div><span class="kicker">MEMBERSHIP · SECURE OPERATIONS</span><h1>会员与权益运营</h1></div><p>先看跨平台汇总，再在授权后管理具体小程序用户。</p></header>
           <div class="mo-toolbar"><label>统计期间<select data-mo-days><option value="7">近 7 天</option><option value="30" selected>近 30 天</option><option value="90">近 90 天</option></select></label><button type="button" data-mo-refresh>刷新会员数据</button></div>
           <p class="mo-boundary">免密页面仅展示汇总，不提供成员名单。两套系统人数、积分不相加。当前存量按读取时刻统计；期间指标按北京时间自然日，包含今天。待接入不等于零。</p>
           <section class="mo-section" aria-label="社群成员"><header><h2>社群成员与分享</h2><p class="mo-status" data-mo-status="community" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="community"></div></section>
           <section class="mo-section" aria-label="应用会员"><header><h2>融资站与小程序会员</h2><p class="mo-status" data-mo-status="application" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="application"></div></section>
-          <section class="mo-management"><h2>管理与待接入</h2><p>查看成员明细、修改资料及管理积分，请进入需鉴权的社群后台。融资站暂未提供独立会员管理网页，此处不开放管理 API。</p><a href="https://members.zkdlj.vip/admin" target="_blank" rel="noopener noreferrer">进入社群管理后台 · 需登录 ↗</a><p>后续接入：社群到期 / 续费、线下权益领取与核销、跨端统一会员去重。当前没有这些记录，因此不会生成转化率或续费率。</p></section>
+          <section class="mo-admin" data-mo-admin>
+            <header><div><span class="kicker">MINI PROGRAM USERS</span><h2>小程序用户明细与管理</h2></div><p>明细及修改操作需要运营令牌，令牌仅保存在当前页面内存中。</p></header>
+            <div class="mo-admin-auth" data-mo-admin-auth>
+              <label>运营后台访问令牌<input type="password" autocomplete="off" data-mo-admin-token placeholder="输入 ANALYTICS_ADMIN_TOKEN"></label>
+              <button type="button" data-mo-admin-connect>验证并查看用户</button>
+              <p data-mo-admin-auth-status role="status" aria-live="polite">未授权时不会请求或显示任何用户明细。</p>
+            </div>
+            <div class="mo-admin-console" data-mo-admin-console hidden>
+              <form class="mo-admin-toolbar" data-mo-admin-search-form>
+                <label>查找用户<input type="search" data-mo-admin-query placeholder="昵称、脱敏手机号或用户 ID"></label>
+                <label>权益状态<select data-mo-admin-status><option value="all">全部状态</option><option value="member">正式会员</option><option value="trial">试用中</option><option value="expired">已到期</option></select></label>
+                <button type="submit">查询</button><button type="button" class="mo-secondary" data-mo-admin-disconnect>退出明细</button>
+              </form>
+              <p class="mo-admin-state" data-mo-admin-state role="status" aria-live="polite"></p>
+              <div class="mo-user-table-wrap"><table class="mo-user-table"><thead><tr><th>用户</th><th>权益</th><th>可用积分</th><th>付费</th><th>最近活跃</th><th></th></tr></thead><tbody data-mo-admin-users></tbody></table></div>
+              <div class="mo-admin-paging"><button type="button" data-mo-admin-prev>上一页</button><span data-mo-admin-page></span><button type="button" data-mo-admin-next>下一页</button></div>
+              <div data-mo-admin-detail></div>
+            </div>
+            <footer><p>这里不显示 OpenID、手机号原文或订单明细，也不提供删除账号、身份合并和订单改写。社群成员资料仍在独立后台管理。</p><a href="https://members.zkdlj.vip/admin" target="_blank" rel="noopener noreferrer">进入社群管理后台 · 需登录 ↗</a></footer>
+          </section>
         </div>
       </section>
 
@@ -533,6 +552,6 @@
   <script src="data/ops-console.js"></script>
   <script src="assets/operations-console.js?v=20260830-ops-v310"></script>
   <script src="assets/application-analytics.js?v=20260830-ops-readonly"></script>
-  <script src="assets/member-operations.js?v=ops-v310"></script>
+  <script src="assets/member-operations.js?v=ops-v320"></script>
 </body>
 </html>

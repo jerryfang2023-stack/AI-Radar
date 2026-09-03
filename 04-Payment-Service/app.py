@@ -843,13 +843,18 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 response.headers["Access-Control-Allow-Origin"] = origin
                 response.headers["Vary"] = "Origin"
                 response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type"
-                response.headers["Access-Control-Allow-Methods"] = "GET, OPTIONS" if request.path.endswith("/summary") else "POST, OPTIONS"
+                if request.path.startswith("/api/v1/admin/analytics/membership/users"):
+                    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+                else:
+                    response.headers["Access-Control-Allow-Methods"] = "GET, OPTIONS" if request.path.endswith("/summary") else "POST, OPTIONS"
             response.headers["Cache-Control"] = "no-store"
         return response
 
     @app.route("/api/v1/analytics/events", methods=["OPTIONS"])
     @app.route("/api/v1/analytics/summary", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/summary", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/users", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/users/<int:user_id>/adjustments", methods=["OPTIONS"])
     def analytics_options():
         return ("", 204)
 
@@ -878,7 +883,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         return analytics_summary()
 
     from payment_service.member_operations import register as register_member_operations
-    register_member_operations(app, db, utcnow)
+    register_member_operations(app, db, utcnow, analytics_admin_required)
 
     @app.get("/api/v1/analytics/summary")
     def public_analytics_summary():
