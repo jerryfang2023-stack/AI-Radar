@@ -55,7 +55,21 @@
 .mo-audit-list li { display: flex; justify-content: space-between; gap: 14px; padding: 8px 0; border-top: 1px solid var(--line); font: 400 12px/18px var(--sans); }
 .mo-admin footer { margin-top: 18px; color: var(--muted); }
 .mo-admin footer a { color: var(--blue); font-weight: 600; }
+.mo-approval-table { min-width: 920px; }
+.mo-approval-detail { margin-top: 18px; padding: 20px; border: 1px solid var(--gold-line); border-radius: 12px; background: var(--paper-soft); }
+.mo-approval-detail > header { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+.mo-approval-profile { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 18px; margin: 16px 0; }
+.mo-approval-profile div { padding-top: 10px; border-top: 1px solid var(--line); }
+.mo-approval-profile dt { color: var(--muted); font: 400 12px/18px var(--sans); }
+.mo-approval-profile dd { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; font: 500 14px/22px var(--sans); }
+.mo-review-form { display: grid; gap: 12px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--gold-line); }
+.mo-review-row { display: grid; grid-template-columns: 180px 180px minmax(240px, 1fr); gap: 10px; }
+.mo-score-fields { display: grid; grid-template-columns: repeat(5, minmax(100px, 1fr)); gap: 10px; }
+.mo-review-form textarea { min-height: 92px; resize: vertical; }
+.mo-review-check { display: flex !important; align-items: center; gap: 8px !important; }
+.mo-review-check input { min-height: 18px; width: 18px; margin: 0; }
+.mo-review-actions { display: flex; justify-content: flex-end; gap: 10px; }
 [data-member-operations] :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
-@media (max-width: 900px) { .mo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-user-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-admin-toolbar { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 640px) { .mo-grid, .mo-distributions, .mo-admin-toolbar, .mo-user-facts, .mo-adjustments { grid-template-columns: 1fr; } .mo-metric { padding: 16px; } .mo-admin-paging { justify-content: space-between; } }
+@media (max-width: 900px) { .mo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-user-facts, .mo-approval-profile { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-admin-toolbar, .mo-review-row { grid-template-columns: 1fr 1fr; } .mo-score-fields { grid-template-columns: repeat(3, minmax(100px, 1fr)); } }
+@media (max-width: 640px) { .mo-grid, .mo-distributions, .mo-admin-toolbar, .mo-user-facts, .mo-adjustments, .mo-approval-profile, .mo-review-row, .mo-score-fields { grid-template-columns: 1fr; } .mo-metric, .mo-approval-detail { padding: 16px; } .mo-admin-paging { justify-content: space-between; } }
 @media (prefers-reduced-motion: reduce) { .mo-admin button { transition: none; } }

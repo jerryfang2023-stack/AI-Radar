@@ -6,6 +6,7 @@
     community: "https://members.zkdlj.vip/api/v1/operations/membership-summary",
     application: "/ops/application-membership-summary",
     adminUsers: "/ops/member-api/users",
+    communityApprovals: "/ops/member-api/community-members",
   };
   const definitions = {
     community: [
@@ -36,6 +37,7 @@
   };
   let days = 30, generation = 0, loaded = false;
   let adminCsrfToken = "", adminPage = 1, adminPages = 1, adminUsers = [], selectedUserId = null, adminLoaded = false;
+  let approvalPage = 1, approvalPages = 1, approvalMembers = [], selectedApprovalId = null, approvalsLoaded = false;
   const controllers = new Map();
   const number = (value) => value == null ? "待接入" : new Intl.NumberFormat("zh-CN").format(value);
   const count = (value) => Number.isSafeInteger(value) && value >= 0;
@@ -111,9 +113,13 @@
   function adminHeaders(json = false, write = false) { return { ...(write ? { "X-CSRF-Token": adminCsrfToken } : {}), ...(json ? { "Content-Type": "application/json" } : {}) }; }
   function resetAdminSession() {
     adminCsrfToken = ""; adminUsers = []; selectedUserId = null; adminLoaded = false;
+    approvalMembers = []; selectedApprovalId = null; approvalsLoaded = false;
     $("[data-mo-admin-detail]").innerHTML = "";
     $("[data-mo-admin-state]").textContent = "";
     $("[data-mo-admin-users]").innerHTML = "";
+    $("[data-mo-approval-detail]").innerHTML = "";
+    $("[data-mo-approval-state]").textContent = "";
+    $("[data-mo-approval-members]").innerHTML = "";
   }
   function adminFailure(message, expired = false) {
     $("[data-mo-admin-state]").textContent = message;
@@ -164,6 +170,87 @@
       adminUsers = adminUsers.map((item) => item.id === user.id ? user : item); renderAdminUsers(); renderAdminDetail(user); $("[data-mo-adjust-state]").textContent = "调整已保存并写入审计记录。";
     } catch (error) { state.textContent = error.message || "调整未成功"; } finally { button.disabled = false; }
   }
+  const approvalStatusLabels = { pending: "待审核", approved: "已通过", waitlist: "候补", rejected: "暂不邀请" };
+  function safeApprovalMember(item) {
+    if (!Number.isSafeInteger(item?.id) || item.id < 1 || typeof item.name !== "string" || typeof item.city !== "string" || !Object.hasOwn(approvalStatusLabels, item.status) || !Number.isSafeInteger(item.totalScore)) return null;
+    return { id: item.id, name: item.name.slice(0, 80), city: item.city.slice(0, 100), company: String(item.company || "").slice(0, 200), role: String(item.role || "").slice(0, 80), status: item.status, totalScore: item.totalScore, joinedOn: String(item.joinedOn || ""), createdAt: String(item.createdAt || ""), updatedAt: String(item.updatedAt || "") };
+  }
+  function approvalFailure(message, expired = false) {
+    $("[data-mo-approval-state]").textContent = message;
+    $("[data-mo-approval-members]").innerHTML = '<tr><td colspan="6"><div class="mo-empty">' + escape(message) + '</div></td></tr>';
+    if (expired) {
+      resetAdminSession();
+      document.dispatchEvent(new CustomEvent("operations:session-expired", { detail: { message } }));
+    }
+  }
+  function renderApprovalMembers() {
+    $("[data-mo-approval-members]").innerHTML = approvalMembers.length ? approvalMembers.map((member) => '<tr><td><span class="mo-user-name">' + escape(member.name) + '</span><span class="mo-user-meta">#' + member.id + ' · ' + escape(member.city) + '</span></td><td>' + escape(member.role) + '<span class="mo-user-meta">' + escape(member.company || "未填写公司") + '</span></td><td><span class="mo-badge">' + approvalStatusLabels[member.status] + '</span></td><td>' + member.totalScore + ' / 100</td><td>' + date(member.createdAt) + '</td><td><button type="button" data-mo-approval-id="' + member.id + '">审批</button></td></tr>').join("") : '<tr><td colspan="6"><div class="mo-empty">没有符合条件的会员申请。</div></td></tr>';
+    $("[data-mo-approval-page]").textContent = "第 " + approvalPage + " / " + approvalPages + " 页";
+    $("[data-mo-approval-prev]").disabled = approvalPage <= 1;
+    $("[data-mo-approval-next]").disabled = approvalPage >= approvalPages;
+  }
+  async function loadApprovals() {
+    if (!adminCsrfToken) return;
+    const query = encodeURIComponent($("[data-mo-approval-query]").value || ""), status = encodeURIComponent($("[data-mo-approval-status]").value || "pending");
+    $("[data-mo-approval-state]").textContent = "正在读取会员申请…";
+    $("[data-mo-approval-members]").innerHTML = '<tr><td colspan="6"><div class="mo-empty">正在加载受保护的审批数据…</div></td></tr>';
+    try {
+      const response = await fetch(endpoints.communityApprovals + "?query=" + query + "&status=" + status + "&page=" + approvalPage + "&pageSize=20", { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      if (response.status === 401 || response.status === 503) return approvalFailure("管理员会话已失效或社群服务未配置，请重新验证。", true);
+      if (!response.ok) throw new Error("会员审批暂不可用");
+      const payload = await response.json();
+      if (payload?.schemaVersion !== "COMMUNITY-APPROVAL-V1.0" || !Array.isArray(payload.members) || !Number.isSafeInteger(payload.page?.totalPages)) throw new Error("审批数据校验失败");
+      const members = payload.members.map(safeApprovalMember); if (members.some((item) => !item)) throw new Error("审批数据校验失败");
+      approvalMembers = members; approvalPage = payload.page.number; approvalPages = Math.max(1, payload.page.totalPages); approvalsLoaded = true;
+      $("[data-mo-approval-state]").textContent = "共 " + payload.page.total + " 项 · 待审核 " + Number(payload.statusCounts?.pending || 0) + " 项";
+      renderApprovalMembers();
+    } catch (error) { approvalFailure(error.message || "会员审批暂不可用"); }
+  }
+  function detailValue(label, value) { return '<div><dt>' + label + '</dt><dd>' + escape(value || "—") + '</dd></div>'; }
+  function renderApprovalDetail(member) {
+    selectedApprovalId = member.id;
+    const scores = member.scores;
+    const profile = [
+      ["微信", member.wechat], ["联系方式", member.contact], ["邀请线索", member.inviterHint], ["AI 方向", member.aiDirections],
+      ["行业", member.industry], ["核心能力", member.skills], ["当前项目", member.project], ["可交流资源", member.resources],
+      ["核心诉求", member.needs], ["希望交流对象", member.connectTargets], ["创业方向", member.direction], ["创业判断", member.perspective],
+      ["参与意愿", member.activities], ["补充", member.extra],
+    ].map(([label, value]) => detailValue(label, value)).join("");
+    $("[data-mo-approval-detail]").innerHTML = '<section class="mo-approval-detail"><header><div><span class="kicker">APPLICATION #' + member.id + '</span><h2>' + escape(member.name) + '</h2><p>' + escape(member.city + " · " + member.role + (member.company ? " · " + member.company : "")) + '</p></div><span class="mo-badge">' + approvalStatusLabels[member.status] + '</span></header><dl class="mo-approval-profile">' + profile + '</dl><form class="mo-review-form" data-mo-review><div class="mo-review-row"><label>审批状态<select name="status"><option value="pending">待审核</option><option value="approved">已通过</option><option value="waitlist">候补</option><option value="rejected">暂不邀请</option></select></label><label>正式入群日期<input type="date" name="joinedOn" max="' + new Date().toISOString().slice(0, 10) + '" value="' + escape(member.joinedOn) + '"></label><label>审核备注<textarea name="reviewNotes" maxlength="3000" placeholder="记录判断与后续事项">' + escape(member.reviewNotes) + '</textarea></label></div><div class="mo-score-fields"><label>AI 能力 / 30<input type="number" name="ai" min="0" max="30" value="' + scores.ai + '" required></label><label>行业资源 / 25<input type="number" name="industry" min="0" max="25" value="' + scores.industry + '" required></label><label>创业意愿 / 25<input type="number" name="entrepreneurship" min="0" max="25" value="' + scores.entrepreneurship + '" required></label><label>贡献潜力 / 15<input type="number" name="contribution" min="0" max="15" value="' + scores.contribution + '" required></label><label>社群契合 / 5<input type="number" name="fit" min="0" max="5" value="' + scores.fit + '" required></label></div><label class="mo-review-check"><input type="checkbox" name="hideCompanyInDirectory" ' + (member.hideCompanyInDirectory ? "checked" : "") + '>在会员公开页面隐藏公司</label><div class="mo-review-actions"><button type="submit">保存审批</button></div><p class="mo-admin-state" data-mo-review-state role="status" aria-live="polite"></p></form></section>';
+    $("[data-mo-review] [name=status]").value = member.status;
+  }
+  async function loadApprovalDetail(memberId) {
+    $("[data-mo-approval-detail]").innerHTML = '<div class="mo-empty">正在读取申请详情…</div>';
+    try {
+      const response = await fetch(endpoints.communityApprovals + "/" + memberId, { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      if (response.status === 401 || response.status === 503) return approvalFailure("管理员会话已失效，请重新验证。", true);
+      const payload = await response.json();
+      const member = payload?.member;
+      if (!response.ok) throw new Error(String(payload?.error?.message || "申请详情暂不可用").slice(0, 120));
+      if (payload?.schemaVersion !== "COMMUNITY-APPROVAL-V1.0" || !safeApprovalMember(member) || !member.scores || typeof member.contact !== "string") throw new Error("申请详情校验失败");
+      renderApprovalDetail(member);
+    } catch (error) { $("[data-mo-approval-detail]").innerHTML = '<div class="mo-empty">' + escape(error.message || "申请详情暂不可用") + '</div>'; }
+  }
+  async function submitApprovalReview(form) {
+    const state = $("[data-mo-review-state]"), data = new FormData(form), button = form.querySelector("button");
+    const body = {
+      operationId: globalThis.crypto?.randomUUID?.() || ("community-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2)),
+      status: String(data.get("status") || "pending"), joinedOn: String(data.get("joinedOn") || ""), reviewNotes: String(data.get("reviewNotes") || "").trim(),
+      hideCompanyInDirectory: data.get("hideCompanyInDirectory") === "on",
+      scores: { ai: Number(data.get("ai")), industry: Number(data.get("industry")), entrepreneurship: Number(data.get("entrepreneurship")), contribution: Number(data.get("contribution")), fit: Number(data.get("fit")) },
+    };
+    button.disabled = true; state.textContent = "正在保存审批…";
+    try {
+      const response = await fetch(endpoints.communityApprovals + "/" + selectedApprovalId + "/reviews", { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
+      const payload = await response.json();
+      if (response.status === 401 || response.status === 403 || response.status === 503) return approvalFailure("管理员会话已失效，请重新验证。", true);
+      if (!response.ok) throw new Error(String(payload?.error?.message || "审批未保存").slice(0, 120));
+      if (payload?.schemaVersion !== "COMMUNITY-APPROVAL-V1.0" || !safeApprovalMember(payload.member)) throw new Error("审批结果校验失败");
+      renderApprovalDetail(payload.member);
+      await loadApprovals();
+      $("[data-mo-review-state]").textContent = "审批已保存并写入审计记录。";
+    } catch (error) { state.textContent = error.message || "审批未保存"; } finally { button.disabled = false; }
+  }
   $("[data-mo-days]").addEventListener("change", (event) => {
     const value = Number(event.target.value);
     days = [7, 30, 90].includes(value) ? value : 30;
@@ -176,12 +263,18 @@
   $("[data-mo-admin-next]").addEventListener("click", () => { if (adminPage < adminPages) { adminPage += 1; void loadAdminUsers(); } });
   $("[data-mo-admin-users]").addEventListener("click", (event) => { const button = event.target.closest("[data-mo-user-id]"); if (!button) return; const user = adminUsers.find((item) => item.id === Number(button.dataset.moUserId)); if (user) renderAdminDetail(user); });
   $("[data-mo-admin-detail]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-adjust]"); if (!form) return; event.preventDefault(); void submitAdjustment(form); });
-  root.addEventListener("membership:open", () => { if (!loaded) refresh(); if (adminCsrfToken && !adminLoaded) void loadAdminUsers(); });
+  $("[data-mo-approval-search-form]").addEventListener("submit", (event) => { event.preventDefault(); approvalPage = 1; void loadApprovals(); });
+  $("[data-mo-approval-status]").addEventListener("change", () => { approvalPage = 1; void loadApprovals(); });
+  $("[data-mo-approval-prev]").addEventListener("click", () => { if (approvalPage > 1) { approvalPage -= 1; void loadApprovals(); } });
+  $("[data-mo-approval-next]").addEventListener("click", () => { if (approvalPage < approvalPages) { approvalPage += 1; void loadApprovals(); } });
+  $("[data-mo-approval-members]").addEventListener("click", (event) => { const button = event.target.closest("[data-mo-approval-id]"); if (button) void loadApprovalDetail(Number(button.dataset.moApprovalId)); });
+  $("[data-mo-approval-detail]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-review]"); if (!form) return; event.preventDefault(); void submitApprovalReview(form); });
+  root.addEventListener("membership:open", () => { if (!loaded) refresh(); if (adminCsrfToken && !adminLoaded) void loadAdminUsers(); if (adminCsrfToken && !approvalsLoaded) void loadApprovals(); });
   document.addEventListener("operations:authenticated", (event) => {
     const token = String(event.detail?.csrfToken || "");
     if (token.length < 20) return;
-    adminCsrfToken = token; adminPage = 1; adminLoaded = false;
-    if (root.classList.contains("is-active")) void loadAdminUsers();
+    adminCsrfToken = token; adminPage = 1; adminLoaded = false; approvalPage = 1; approvalsLoaded = false;
+    if (root.classList.contains("is-active")) { void loadAdminUsers(); void loadApprovals(); }
   });
   document.addEventListener("operations:logout", resetAdminSession);
 })();

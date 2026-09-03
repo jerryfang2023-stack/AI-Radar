@@ -64,6 +64,22 @@ class CommunityClient:
     def submit_application(self, payload):
         return self._request("/api/internal/v1/applications", method="POST", payload=payload)
 
+    def operations_members(self, *, query="", status="pending", page=1, page_size=20):
+        params = urllib.parse.urlencode(
+            {"query": query, "status": status, "page": page, "pageSize": page_size}
+        )
+        return self._request(f"/api/internal/v1/operations/member-approvals?{params}")
+
+    def operations_member(self, member_id):
+        return self._request(f"/api/internal/v1/operations/member-approvals/{int(member_id)}")
+
+    def review_operations_member(self, member_id, payload):
+        return self._request(
+            f"/api/internal/v1/operations/member-approvals/{int(member_id)}/reviews",
+            method="POST",
+            payload=payload,
+        )
+
     def hub(self, path, *, viewer=None, method="GET", payload=None):
         query = "?" + urllib.parse.urlencode({"viewer": int(viewer)}) if viewer is not None else ""
         return self._request("/api/internal/v1/community/" + path + query, method=method, payload=payload)

@@ -845,7 +845,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 response.headers["Access-Control-Allow-Origin"] = origin
                 response.headers["Vary"] = "Origin"
                 response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type, X-CSRF-Token"
-                if request.path.startswith("/api/v1/admin/analytics/membership/users") or request.path.startswith("/api/v1/admin/auth"):
+                if request.path.startswith("/api/v1/admin/analytics/membership/") or request.path.startswith("/api/v1/admin/auth"):
                     response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
                 else:
                     response.headers["Access-Control-Allow-Methods"] = "GET, OPTIONS" if request.path.endswith("/summary") else "POST, OPTIONS"
@@ -861,7 +861,10 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     @app.route("/api/v1/admin/auth/logout", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/membership/users", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/membership/users/<int:user_id>/adjustments", methods=["OPTIONS"])
-    def analytics_options():
+    @app.route("/api/v1/admin/analytics/membership/community-members", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/community-members/<int:member_id>", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/community-members/<int:member_id>/reviews", methods=["OPTIONS"])
+    def analytics_options(**_kwargs):
         return ("", 204)
 
     @app.post("/api/v1/analytics/events")

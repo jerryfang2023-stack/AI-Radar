@@ -75,7 +75,7 @@
     }).join("") || '<div class="empty">跨平台清单尚未生成，请检查系统设置中的快照状态。</div>';
     const gaps = [
       ["线上核验", versions.filter((item) => item.kind === "deployed" && (!item.verified || stale(item.checkedAt))).length + " 项公开版本需要重新核验；小程序审核版本、融资 H5 部署版本尚未接入。", "governance"],
-      ["会员与权益", "社群参与、应用会员到期与兑换按需读取汇总；社群续费、线下核销仍待接入，两套系统不合并计数。", "membership"],
+      ["会员与权益", "社群申请审批、参与和应用会员权益均已接入；社群续费、线下核销仍待接入，两套系统不合并计数。", "membership"],
       ["规则同步", list(portfolio.skills?.sources).filter((source) => source.required === false && !source.available).length + " 个平台目录尚未接入。共享规则与独立来源分开计数，完整状态见 Skill Store。", "skills"],
     ];
     $("[data-coverage-gaps]").innerHTML = gaps.map(([title, detail, panel]) => '<article class="card"><h3>' + html(title) + "</h3><p>" + html(detail) + '</p><button class="text-button" type="button" data-tab="' + panel + '">查看详情 →</button></article>').join("");

@@ -9,6 +9,7 @@ import secrets
 
 from flask import g, jsonify, request
 
+from payment_service.community import CommunityServiceError
 from payment_service.unified_account import VerificationSender, digest, mask_identity, normalize_identity
 
 LOCAL = timezone(timedelta(hours=8))
@@ -362,6 +363,36 @@ def register(app, db, clock):
             generatedAt=now.isoformat(), filters={"query": query, "status": wanted_status},
             page={"number": page, "size": page_size, "total": total, "totalPages": max(1, math.ceil(total / page_size))}, users=users,
         )
+
+    def community_result(call):
+        try:
+            return jsonify(call())
+        except CommunityServiceError as error:
+            return jsonify(error={"code": error.code, "message": str(error)}), error.status
+
+    @app.get("/api/v1/admin/analytics/membership/community-members")
+    @admin_required()
+    def community_approval_members():
+        return community_result(
+            lambda: app.community_client.operations_members(
+                query=str(request.args.get("query") or "")[:80],
+                status=str(request.args.get("status") or "pending"),
+                page=request.args.get("page", "1"),
+                page_size=request.args.get("pageSize", "20"),
+            )
+        )
+
+    @app.get("/api/v1/admin/analytics/membership/community-members/<int:member_id>")
+    @admin_required()
+    def community_approval_member(member_id):
+        return community_result(lambda: app.community_client.operations_member(member_id))
+
+    @app.post("/api/v1/admin/analytics/membership/community-members/<int:member_id>/reviews")
+    @admin_required(write=True)
+    def community_approval_review(member_id):
+        payload = dict(request.get_json(silent=True) or {})
+        payload["actorHash"] = str(g.operations_admin_session["email_hash"])[:16]
+        return community_result(lambda: app.community_client.review_operations_member(member_id, payload))
 
     @app.post("/api/v1/admin/analytics/membership/users/<int:user_id>/adjustments")
     @admin_required(write=True)
