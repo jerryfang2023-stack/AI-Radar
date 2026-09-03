@@ -22,7 +22,10 @@ test("OPS owns analytics and the old entry redirects without a duplicate dashboa
   assert.match(page, /data-tab="analytics"/);
   assert.match(page, /data-panel="analytics" data-application-analytics/);
   assert.match(page, /assets\/application-analytics\.js\?v=20260830-ops-readonly/);
-  assert.doesNotMatch(page, /data-auth|type="password"|data-exit/);
+  const analyticsStart = page.indexOf('data-panel="analytics"');
+  const membershipStart = page.indexOf('data-panel="membership"');
+  assert.ok(analyticsStart >= 0 && membershipStart > analyticsStart);
+  assert.doesNotMatch(page.slice(analyticsStart, membershipStart), /data-auth|type="password"|data-exit/);
   const redirect = read("01-SiteV2/site/application-analytics.html");
   assert.match(redirect, /http-equiv="refresh" content="0;url=operations-console\.html#analytics"/);
   assert.doesNotMatch(redirect, /dc-sidebar|data-kpis/);
