@@ -1,7 +1,7 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "version": "OPS-V3.3.0-passwordless-admin",
-    "generatedAt": "2026-09-03T08:30:26.376Z",
+    "version": "OPS-V3.3.1-concise-membership",
+    "generatedAt": "2026-09-03T08:45:02.913Z",
     "dateRange": {
       "start": "2026-08-28",
       "end": "2026-09-03"

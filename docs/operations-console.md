@@ -1,10 +1,12 @@
 # Unified Operations Console
 
-Release: OPS-V3.3.0-passwordless-admin / Skill Store v2.2.0
+Release: OPS-V3.3.1-concise-membership / Skill Store v2.2.0
 
-## Membership operations (OPS V3.3.0)
+## Membership operations (OPS V3.3.1)
 
 `operations-console.html#membership` is the seventh panel. Community and application sources load independently on opening the panel, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. No identity data is fetched or rendered.
+
+The page is metric-first: card-level methodology notes and repeated boundary explanations stay out of the interface. Detailed definitions remain in this operational reference; the UI keeps only live values, source status, controls and the necessary authentication/privacy boundary.
 
 - Community: `https://members.zkdlj.vip/api/v1/operations/membership-summary`. Formal members require approval and a valid past/present joined date. Participation and speakers resolve only unique member identities from dated issue evidence; unmatched activity aliases are counted separately. One person per issue is one participation; the highest issue activity score plus manual adjustments produces the OPS points distribution. Opt-outs are excluded from points/activity, not membership stock.
 - Application: `https://www.zkdlj.vip/api/v1/analytics/membership/summary`. Current accounts exclude merged-away and future-created rows. Effective entitlement includes paid and points-granted membership; trials are separate. First and repeat purchases use server-confirmed non-refunded orders, never client events. Repeat purchases are not auto-renewal. Active behavior means recorded growth-task actions, not all visitors.

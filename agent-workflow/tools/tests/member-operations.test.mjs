@@ -35,6 +35,7 @@ test("membership loads lazily, uses no credentials and survives partial failure"
   await respond(h.requests[1], {}, false);
   assert.match(h.element('[data-mo-content="community"]').innerHTML, /12/);
   assert.match(h.element('[data-mo-content="community"]').innerHTML, /待接入/);
+  assert.doesNotMatch(h.element('[data-mo-content="community"]').innerHTML, /当前审核通过且已登记入群日期|活动昵称未能唯一匹配/);
   assert.match(h.element('[data-mo-content="application"]').innerHTML, /不代表人数为零/);
 });
 
@@ -97,4 +98,5 @@ test("user details use email verification and an in-memory admin session", async
   assert.match(style, /\.mo-admin-auth-form\[hidden\]\s*\{\s*display:\s*none/);
   assert.doesNotMatch(script, /localStorage|sessionStorage|ANALYTICS_ADMIN_TOKEN|data-mo-admin-token/);
   assert.doesNotMatch(page, /运营后台访问令牌|data-mo-admin-token|type="password"/);
+  assert.doesNotMatch(page, /先看跨平台汇总|当前存量按读取时刻统计|这里不显示 OpenID|无需从终端获取/);
 });
