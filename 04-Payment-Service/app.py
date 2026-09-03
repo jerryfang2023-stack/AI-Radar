@@ -121,6 +121,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             "ANALYTICS_ALLOWED_ORIGINS",
             "https://www.zkdlj.vip,https://jerryfang2023-stack.github.io",
         ),
+        OPERATIONS_ADMIN_EMAILS=os.getenv("OPERATIONS_ADMIN_EMAILS", ""),
+        OPERATIONS_ADMIN_SESSION_HOURS=int(os.getenv("OPERATIONS_ADMIN_SESSION_HOURS", "8")),
         PC_SESSION_DAYS=int(os.getenv("PC_SESSION_DAYS", "30")),
         VERIFICATION_WEBHOOK_URL=os.getenv("VERIFICATION_WEBHOOK_URL", ""),
         VERIFICATION_WEBHOOK_TOKEN=os.getenv("VERIFICATION_WEBHOOK_TOKEN", ""),
@@ -836,14 +838,14 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
 
     @app.after_request
     def analytics_cors(response):
-        if request.path.startswith("/api/v1/analytics") or request.path.startswith("/api/v1/admin/analytics"):
+        if request.path.startswith("/api/v1/analytics") or request.path.startswith("/api/v1/admin/analytics") or request.path.startswith("/api/v1/admin/auth"):
             origin = request.headers.get("Origin", "")
             allowed = {item.strip() for item in str(app.config["ANALYTICS_ALLOWED_ORIGINS"]).split(",") if item.strip()}
             if origin in allowed:
                 response.headers["Access-Control-Allow-Origin"] = origin
                 response.headers["Vary"] = "Origin"
-                response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type"
-                if request.path.startswith("/api/v1/admin/analytics/membership/users"):
+                response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type, X-CSRF-Token"
+                if request.path.startswith("/api/v1/admin/analytics/membership/users") or request.path.startswith("/api/v1/admin/auth"):
                     response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
                 else:
                     response.headers["Access-Control-Allow-Methods"] = "GET, OPTIONS" if request.path.endswith("/summary") else "POST, OPTIONS"
@@ -853,6 +855,9 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     @app.route("/api/v1/analytics/events", methods=["OPTIONS"])
     @app.route("/api/v1/analytics/summary", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/summary", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/auth/challenges", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/auth/challenges/<challenge_id>/verify", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/auth/logout", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/membership/users", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/membership/users/<int:user_id>/adjustments", methods=["OPTIONS"])
     def analytics_options():
@@ -883,7 +888,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         return analytics_summary()
 
     from payment_service.member_operations import register as register_member_operations
-    register_member_operations(app, db, utcnow, analytics_admin_required)
+    register_member_operations(app, db, utcnow)
 
     @app.get("/api/v1/analytics/summary")
     def public_analytics_summary():

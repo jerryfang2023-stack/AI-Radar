@@ -6,6 +6,30 @@ from payment_service.member_operations import summarize
 from test_app import client, login
 
 
+def admin_login(client, email="operator@example.com"):
+    client.application.config["OPERATIONS_ADMIN_EMAILS"] = email
+    created = client.post(
+        "/api/v1/admin/auth/challenges",
+        headers={"Origin": "https://jerryfang2023-stack.github.io"},
+        json={"email": email},
+    )
+    assert created.status_code == 201
+    assert created.headers["Access-Control-Allow-Origin"] == "https://jerryfang2023-stack.github.io"
+    challenge = created.get_json()
+    assert challenge["schemaVersion"] == "OPS-AUTH-V1.0"
+    verified = client.post(
+        f"/api/v1/admin/auth/challenges/{challenge['challengeId']}/verify",
+        json={"code": challenge["testCode"]},
+    )
+    assert verified.status_code == 200
+    session = verified.get_json()
+    return session, {
+        "Authorization": f"Bearer {session['sessionToken']}",
+        "X-CSRF-Token": session["csrfToken"],
+        "Origin": "https://jerryfang2023-stack.github.io",
+    }
+
+
 def test_membership_stock_orders_refunds_and_merged_accounts():
     conn = sqlite3.connect(":memory:")
     conn.row_factory = sqlite3.Row
@@ -72,10 +96,11 @@ def test_admin_can_list_search_and_adjust_mini_program_users(client):
     token = login(client, "ops-managed-user")
     assert token
     path = "/api/v1/admin/analytics/membership/users"
-    assert client.get(path).status_code == 503
-    client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
-    headers = {"Authorization": "Bearer admin-test-token", "Origin": "https://jerryfang2023-stack.github.io"}
     assert client.get(path).status_code == 401
+    client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
+    assert client.get(path, headers={"Authorization": "Bearer admin-test-token"}).status_code == 503
+    session, headers = admin_login(client)
+    assert session["admin"]["emailMasked"] == "op***@example.com"
 
     listed = client.get(path + "?query=观澜用户&status=trial&page=1&pageSize=20", headers=headers)
     assert listed.status_code == 200
@@ -89,10 +114,15 @@ def test_admin_can_list_search_and_adjust_mini_program_users(client):
     assert user["phoneMasked"].startswith("139")
     assert user["membership"]["status"] == "trial"
     encoded = json.dumps(payload, ensure_ascii=False)
-    for private in ("openid-ops-managed-user", "phone_hash", "identity_hash", "admin-test-token"):
+    for private in ("openid-ops-managed-user", "phone_hash", "identity_hash", "admin-test-token", session["sessionToken"]):
         assert private not in encoded
 
     user_id = user["id"]
+    assert client.post(
+        f"{path}/{user_id}/adjustments",
+        headers={"Authorization": headers["Authorization"]},
+        json={"operationId": "membership-adjust-csrf", "membershipDays": 30, "reason": "缺少安全凭证"},
+    ).status_code == 403
     extended = client.post(
         f"{path}/{user_id}/adjustments", headers=headers,
         json={"operationId": "membership-adjust-0001", "membershipDays": 30, "reason": "客户补偿权益"},
@@ -120,8 +150,7 @@ def test_admin_can_list_search_and_adjust_mini_program_users(client):
 
 
 def test_admin_membership_routes_reject_untrusted_origin_and_non_mini_account(client):
-    client.application.config["ANALYTICS_ADMIN_TOKEN"] = "admin-test-token"
-    headers = {"Authorization": "Bearer admin-test-token"}
+    _, headers = admin_login(client)
     path = "/api/v1/admin/analytics/membership/users"
     with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
         now = datetime.now(timezone.utc).isoformat()
@@ -139,3 +168,38 @@ def test_admin_membership_routes_reject_untrusted_origin_and_non_mini_account(cl
     preflight = client.options(path, headers={"Origin": "https://jerryfang2023-stack.github.io"})
     assert preflight.status_code == 204
     assert preflight.headers["Access-Control-Allow-Methods"] == "GET, POST, OPTIONS"
+    assert "X-CSRF-Token" in preflight.headers["Access-Control-Allow-Headers"]
+
+
+def test_admin_email_challenge_session_and_logout_are_hardened(client):
+    auth_path = "/api/v1/admin/auth/challenges"
+    assert client.post(auth_path, json={"email": "operator@example.com"}).status_code == 503
+    client.application.config["OPERATIONS_ADMIN_EMAILS"] = "operator@example.com"
+    assert client.post(auth_path, json={"email": "attacker@example.com"}).status_code == 403
+    locked = client.post(auth_path, json={"email": "operator@example.com"}).get_json()
+    locked_path = f"{auth_path}/{locked['challengeId']}/verify"
+    for _ in range(5):
+        assert client.post(locked_path, json={"code": "invalid"}).status_code == 400
+    assert client.post(locked_path, json={"code": locked["testCode"]}).status_code == 400
+    created = client.post(auth_path, json={"email": "Operator@Example.com"})
+    assert created.status_code == 201
+    challenge = created.get_json()
+    verify_path = f"{auth_path}/{challenge['challengeId']}/verify"
+    assert client.post(verify_path, json={"code": "000000"}).status_code == 400
+    verified = client.post(verify_path, json={"code": challenge["testCode"]})
+    assert verified.status_code == 200
+    session = verified.get_json()
+    assert client.post(verify_path, json={"code": challenge["testCode"]}).status_code == 410
+    auth = {"Authorization": f"Bearer {session['sessionToken']}"}
+    assert client.get("/api/v1/admin/analytics/membership/users", headers=auth).status_code == 200
+    assert client.post("/api/v1/admin/auth/logout", headers=auth).status_code == 403
+    logged_out = client.post("/api/v1/admin/auth/logout", headers={**auth, "X-CSRF-Token": session["csrfToken"]})
+    assert logged_out.status_code == 204
+    assert client.get("/api/v1/admin/analytics/membership/users", headers=auth).status_code == 401
+    assert client.post(auth_path, json={"email": "operator@example.com"}).status_code == 201
+    assert client.post(auth_path, json={"email": "operator@example.com"}).status_code == 429
+    assert "Access-Control-Allow-Origin" not in client.post(auth_path, headers={"Origin": "https://evil.example"}, json={"email": "operator@example.com"}).headers
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        dump = "\n".join(conn.iterdump())
+    assert "operator@example.com" not in dump
+    assert session["sessionToken"] not in dump

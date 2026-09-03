@@ -90,6 +90,8 @@ python scripts/provision_virtual_products.py --env 0
 
 ## 会员与权益运营
 
-`GET /api/v1/analytics/membership/summary?days=30` 为统一运营后台提供免密码只读汇总，契约为 `MEMBER-OPS-V1.0`。小程序用户明细使用 `GET /api/v1/admin/analytics/membership/users`，权益或积分调整使用 `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`，契约为 `MEMBER-ADMIN-V1.0`，后两者均要求 `Authorization: Bearer <ANALYTICS_ADMIN_TOKEN>`。
+`GET /api/v1/analytics/membership/summary?days=30` 为统一运营后台提供免密码只读汇总，契约为 `MEMBER-OPS-V1.0`。小程序用户明细使用 `GET /api/v1/admin/analytics/membership/users`，权益或积分调整使用 `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`，契约为 `MEMBER-ADMIN-V1.0`。管理员先通过 `POST /api/v1/admin/auth/challenges` 与对应 verify 路由完成白名单邮箱验证码登录，换取短时浏览器会话；写操作还必须携带会话绑定的 CSRF 凭据。允许邮箱仅配置在服务器 `OPERATIONS_ADMIN_EMAILS`，不写入仓库或前端。
+
+验证码 10 分钟有效、最多尝试 5 次且同一邮箱 10 分钟最多发送 3 次；浏览器会话默认 8 小时，仅在页面内存中保存，刷新或退出后重新验证。数据库仅保存管理员邮箱 HMAC/掩码、验证码 HMAC、会话 HMAC 与 CSRF HMAC，不保存邮箱原文、验证码或会话原文。
 
 列表仅包含具备微信身份且未合并的小程序账户，只返回昵称、脱敏手机号、权益、积分、非退款付费汇总和最近活跃，不返回 OpenID、身份摘要或订单明细。写操作只允许按 7/30/90/180/365 天延长权益，或在余额不低于零的前提下调整可用积分；每次必须填写原因，并同时写入业务流水与 `operations_admin_audits`。不支持删除账号、修改/合并身份、改订单、任意覆盖到期日或改累计成长积分。

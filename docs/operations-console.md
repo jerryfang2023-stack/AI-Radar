@@ -1,8 +1,8 @@
 # Unified Operations Console
 
-Release: OPS-V3.2.0-member-admin / Skill Store v2.2.0
+Release: OPS-V3.3.0-passwordless-admin / Skill Store v2.2.0
 
-## Membership operations (OPS V3.2.0)
+## Membership operations (OPS V3.3.0)
 
 `operations-console.html#membership` is the seventh panel. Community and application sources load independently on opening the panel, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. No identity data is fetched or rendered.
 
@@ -18,11 +18,13 @@ Validation: both service pytest suites; `npm run test:ops-unified`; existing ana
 
 ### Mini Program user management
 
-The same panel provides protected Mini Program account search through `GET /api/v1/admin/analytics/membership/users` and audited changes through `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`, contract `MEMBER-ADMIN-V1.0`. Both require `Authorization: Bearer <ANALYTICS_ADMIN_TOKEN>` and an allowlisted OPS origin. The browser keeps the token in memory only and clears the input immediately; it is never written to local/session storage or repository data.
+The same panel provides protected Mini Program account search through `GET /api/v1/admin/analytics/membership/users` and audited changes through `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`, contract `MEMBER-ADMIN-V1.0`. The operator enters an allowlisted email, receives a six-digit verification code, and exchanges it for an eight-hour `OPS-AUTH-V1.0` browser session. There is no terminal-token field. The opaque session and CSRF values live only in page memory and are never written to local/session storage or repository data; reload and logout require verification again.
+
+Allowed identities are server-only `OPERATIONS_ADMIN_EMAILS` values. The database stores email HMAC/masking, verification-code HMAC, session-token HMAC and CSRF HMAC, never the raw email, code or session token. A challenge lasts ten minutes, permits five attempts and is limited to three sends per email per ten minutes. Reads require the session bearer; writes additionally require its CSRF value. Logout revokes the server session.
 
 The list includes only non-merged accounts with a verified WeChat OpenID identity, but never returns the OpenID or identity hash. It exposes display name, masked phone, community link status, entitlement dates, available/lifetime/community points, non-refunded paid-order count/value, and last recorded behavior. Search supports display name, masked phone, community name and numeric user ID; filters support member/trial/expired.
 
-Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 days or adjust available points by ±1—100000. A 2—120 character reason and a unique operation ID are mandatory, so a retried request cannot apply twice. Entitlement changes append `membership_ledger`; point changes append `point_ledger` without changing lifetime points; both append `operations_admin_audits` with token fingerprint, before/after values and timestamp. Negative available balances are rejected. Account deletion, identity edit/merge, order mutation, arbitrary expiry replacement and lifetime-point rewriting are not exposed.
+Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 days or adjust available points by ±1—100000. A 2—120 character reason and a unique operation ID are mandatory, so a retried request cannot apply twice. Entitlement changes append `membership_ledger`; point changes append `point_ledger` without changing lifetime points; both append `operations_admin_audits` with administrator identity fingerprint, before/after values and timestamp. Negative available balances are rejected. Account deletion, identity edit/merge, order mutation, arbitrary expiry replacement and lifetime-point rewriting are not exposed.
 
 ## Scope and boundaries
 

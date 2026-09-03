@@ -4,6 +4,8 @@ import fs from "node:fs";
 import vm from "node:vm";
 
 const script = fs.readFileSync("01-SiteV2/site/assets/member-operations.js", "utf8");
+const page = fs.readFileSync("01-SiteV2/site/operations-console.html", "utf8");
+const style = fs.readFileSync("01-SiteV2/site/assets/member-operations.css", "utf8");
 function harness(active = true) {
   const elements = new Map();
   const element = (selector) => {
@@ -61,15 +63,24 @@ test("invalid or non-production payloads fail closed without rendering arbitrary
   assert.doesNotMatch(script, /localStorage|sessionStorage|\.metrics\s*\)|Object\.entries\(payload/);
 });
 
-test("user details require an in-memory admin token and render only validated fields", async () => {
+test("user details use email verification and an in-memory admin session", async () => {
   const h = harness();
-  h.element("[data-mo-admin-token]").value = "admin-secret";
-  h.element("[data-mo-admin-connect]").listeners.click();
-  assert.equal(h.element("[data-mo-admin-token]").value, "");
+  h.element("[data-mo-admin-email]").value = "operator@example.com";
+  h.element("[data-mo-admin-email-form]").listeners.submit({ preventDefault() {} });
   assert.equal(h.requests.length, 3);
-  const request = h.requests[2];
+  assert.match(h.requests[2].url, /\/api\/v1\/admin\/auth\/challenges$/);
+  assert.equal(JSON.parse(h.requests[2].options.body).email, "operator@example.com");
+  await respond(h.requests[2], { schemaVersion: "OPS-AUTH-V1.0", challengeId: "challenge-id-with-enough-entropy", emailMasked: "op***@example.com" });
+  assert.equal(h.element("[data-mo-admin-email]").value, "");
+  assert.equal(h.element("[data-mo-admin-code-form]").hidden, false);
+  h.element("[data-mo-admin-code]").value = "123456";
+  h.element("[data-mo-admin-code-form]").listeners.submit({ preventDefault() {} });
+  assert.match(h.requests[3].url, /\/api\/v1\/admin\/auth\/challenges\/challenge-id-with-enough-entropy\/verify$/);
+  assert.equal(JSON.parse(h.requests[3].options.body).code, "123456");
+  await respond(h.requests[3], { schemaVersion: "OPS-AUTH-V1.0", sessionToken: "browser-session-token-with-enough-entropy", csrfToken: "csrf-token-with-enough-entropy" });
+  const request = h.requests[4];
   assert.match(request.url, /\/api\/v1\/admin\/analytics\/membership\/users/);
-  assert.equal(request.options.headers.Authorization, "Bearer admin-secret");
+  assert.equal(request.options.headers.Authorization, "Bearer browser-session-token-with-enough-entropy");
   await respond(request, {
     schemaVersion: "MEMBER-ADMIN-V1.0", dataSource: "production", generatedAt: "2026-09-03T00:00:00Z",
     page: { number: 1, size: 20, total: 1, totalPages: 1 }, users: [{
@@ -81,6 +92,9 @@ test("user details require an in-memory admin token and render only validated fi
   });
   assert.match(h.element("[data-mo-admin-users]").innerHTML, /测试用户/);
   assert.match(h.element("[data-mo-admin-users]").innerHTML, /138\*\*\*\*8000/);
-  assert.doesNotMatch(h.element("[data-mo-admin-users]").innerHTML, /must-not-render|admin-secret/);
-  assert.doesNotMatch(script, /localStorage|sessionStorage/);
+  assert.doesNotMatch(h.element("[data-mo-admin-users]").innerHTML, /must-not-render|browser-session-token/);
+  assert.match(script, /"X-CSRF-Token": adminCsrfToken/);
+  assert.match(style, /\.mo-admin-auth-form\[hidden\]\s*\{\s*display:\s*none/);
+  assert.doesNotMatch(script, /localStorage|sessionStorage|ANALYTICS_ADMIN_TOKEN|data-mo-admin-token/);
+  assert.doesNotMatch(page, /运营后台访问令牌|data-mo-admin-token|type="password"/);
 });
