@@ -189,12 +189,16 @@ def test_admin_email_challenge_session_and_logout_are_hardened(client):
     verified = client.post(verify_path, json={"code": challenge["testCode"]})
     assert verified.status_code == 200
     session = verified.get_json()
+    cookies = verified.headers.getlist("Set-Cookie")
+    assert any("guanlan_ops_session=" in value and "HttpOnly" in value and "Path=/ops" in value and "SameSite=Strict" in value for value in cookies)
+    assert any("guanlan_ops_csrf=" in value and "HttpOnly" not in value and "Path=/ops" in value and "SameSite=Strict" in value for value in cookies)
     assert client.post(verify_path, json={"code": challenge["testCode"]}).status_code == 410
     auth = {"Authorization": f"Bearer {session['sessionToken']}"}
     assert client.get("/api/v1/admin/analytics/membership/users", headers=auth).status_code == 200
     assert client.post("/api/v1/admin/auth/logout", headers=auth).status_code == 403
     logged_out = client.post("/api/v1/admin/auth/logout", headers={**auth, "X-CSRF-Token": session["csrfToken"]})
     assert logged_out.status_code == 204
+    assert sum("Max-Age=0" in value for value in logged_out.headers.getlist("Set-Cookie")) == 2
     assert client.get("/api/v1/admin/analytics/membership/users", headers=auth).status_code == 401
     assert client.post(auth_path, json={"email": "operator@example.com"}).status_code == 201
     assert client.post(auth_path, json={"email": "operator@example.com"}).status_code == 429
@@ -203,3 +207,19 @@ def test_admin_email_challenge_session_and_logout_are_hardened(client):
         dump = "\n".join(conn.iterdump())
     assert "operator@example.com" not in dump
     assert session["sessionToken"] not in dump
+
+
+def test_admin_cookie_session_protects_console_and_member_routes(client):
+    session, _ = admin_login(client)
+    cookie_client = client.application.test_client()
+    cookie_client.set_cookie("guanlan_ops_session", session["sessionToken"], path="/")
+    cookie_client.set_cookie("guanlan_ops_csrf", session["csrfToken"], path="/")
+    current = cookie_client.get("/api/v1/admin/auth/session")
+    assert current.status_code == 200
+    assert current.get_json()["authenticated"] is True
+    assert "csrf" not in current.get_data(as_text=True).lower()
+    assert cookie_client.get("/api/v1/admin/analytics/membership/users").status_code == 200
+    assert cookie_client.post("/api/v1/admin/auth/logout").status_code == 403
+    logged_out = cookie_client.post("/api/v1/admin/auth/logout", headers={"X-CSRF-Token": session["csrfToken"]})
+    assert logged_out.status_code == 204
+    assert cookie_client.get("/api/v1/admin/auth/session").status_code == 401

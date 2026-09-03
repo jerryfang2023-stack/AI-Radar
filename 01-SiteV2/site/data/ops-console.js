@@ -120,7 +120,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.3.1-concise-membership",
+        "value": "OPS-V3.4.0-console-login",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -512,14 +512,14 @@ window.WaveSightOpsConsole = {
       ]
     },
     "analytics": {
-      "url": "https://www.zkdlj.vip/api/v1/analytics/summary",
-      "scope": "融资站与小程序的匿名聚合；不包含社群会员明细"
+      "url": "https://www.zkdlj.vip/ops/analytics-api/summary",
+      "scope": "登录后读取融资站与小程序聚合；不包含社群会员明细"
     },
     "sourceBaseline": "SITE-V4.6.1-research-retirement"
   },
   "meta": {
-    "version": "OPS-V3.3.1-concise-membership",
-    "generatedAt": "2026-09-03T08:45:03.536Z",
+    "version": "OPS-V3.4.0-console-login",
+    "generatedAt": "2026-09-03T09:18:52.499Z",
     "date": "2026-09-03",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1578,7 +1578,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-09-03T08:45:02.913Z"
+        "detail": "2026-09-03T09:07:15.896Z"
       },
       {
         "label": "Daily Supervision",
@@ -1591,9 +1591,9 @@ window.WaveSightOpsConsole = {
     "telemetry": {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
-        "ops_version": "OPS-V3.3.1-concise-membership",
+        "ops_version": "OPS-V3.4.0-console-login",
         "data_date": "2026-09-03",
-        "generated_at": "2026-09-03T08:45:02.812Z",
+        "generated_at": "2026-09-03T09:07:15.765Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -1649,8 +1649,8 @@ window.WaveSightOpsConsole = {
       }
     },
     "pipelineMeta": {
-      "version": "OPS-V3.3.1-concise-membership",
-      "generatedAt": "2026-09-03T08:45:02.913Z",
+      "version": "OPS-V3.4.0-console-login",
+      "generatedAt": "2026-09-03T09:07:15.896Z",
       "dateRange": {
         "start": "2026-08-28",
         "end": "2026-09-03"
@@ -1811,7 +1811,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-03T08:45:03.528Z",
+      "updatedAt": "2026-09-03T09:18:52.491Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1899,7 +1899,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.3.1-concise-membership",
+        "value": "OPS-V3.4.0-console-login",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -2139,7 +2139,7 @@ window.WaveSightOpsConsole = {
       "独立产品独立版本；源码、数据契约与线上版本分开登记",
       "公开端点核验只代表检查时刻；小程序审核与未接入部署不推断",
       "Skill 统一登记来源与摘要，原文归所属项目；登记不等于安装或认证",
-      "免密页面只展示允许公开的聚合；会员、账号与管理写操作继续鉴权"
+      "运营后台由 VPS 会话门禁保护；会员、账号与管理写操作继续使用服务端鉴权与审计"
     ]
   }
 };

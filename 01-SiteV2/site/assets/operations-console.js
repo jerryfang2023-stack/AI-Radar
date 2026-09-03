@@ -159,7 +159,7 @@
       ["Skill 同步", timestamp(portfolio.skills?.generatedAt), "本地构建扫描已登记平台目录，发布后可见；网页不安装 Skill"],
       ["运营聚合 API", portfolio.analytics?.url || "未接入", portfolio.analytics?.scope || ""],
       ["社群会员汇总", "https://members.zkdlj.vip/api/v1/operations/membership-summary", "按需只读 · 正式入群、分享参与、累计积分分布"],
-      ["应用会员汇总", "https://www.zkdlj.vip/api/v1/analytics/membership/summary", "按需只读 · 会员到期、未退款订单、积分兑换"],
+      ["应用会员汇总", "https://www.zkdlj.vip/ops/application-membership-summary", "登录后只读 · 会员到期、未退款订单、积分兑换"],
       ...list(portfolio.platforms).filter((item) => item.version?.kind === "deployed").map((item) => [item.label, item.version.source, versionStatus(item.version) + " · " + timestamp(item.version.checkedAt)]),
     ];
     $("[data-data-status]").innerHTML = rows.map(([label, value, detail]) => '<div class="data-status-item"><span>' + html(label) + '</span><div><b>' + safeLink(value, value) + '</b><p>' + html(detail) + '</p></div></div>').join("");
@@ -201,7 +201,12 @@
     if (event.origin === location.origin && event.source === $(".skill-frame")?.contentWindow && event.data?.type === "wavesight-skill-store-height") resizeSkillFrame(event.data.height);
   });
   window.addEventListener("hashchange", () => setPanel(location.hash.slice(1) || preferences.landing));
-  renderOverview(); renderDashboard(); renderProduction(); renderGovernance(); renderSettings();
-  setRailCollapsed(state.railCollapsed);
-  setPanel(state.panel);
+  let initialized = false;
+  document.addEventListener("operations:authenticated", () => {
+    if (initialized) return;
+    initialized = true;
+    renderOverview(); renderDashboard(); renderProduction(); renderGovernance(); renderSettings();
+    setRailCollapsed(state.railCollapsed);
+    setPanel(state.panel);
+  });
 })();

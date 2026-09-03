@@ -42,7 +42,7 @@ const expected = {
   dataCenterRelease: "GUANLAN-DATA-CENTER-V4.8.1-internal-foundation",
   dataCenterGitTag: "data-center-v4.8.1-internal-foundation",
   site: "SITE-V4.6.1-research-retirement",
-  ops: "OPS-V3.3.1-concise-membership",
+  ops: "OPS-V3.4.0-console-login",
   reports: "REPORTS-V1.3.0-funding-portal",
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.1.0-tag-v4-1",

@@ -66,5 +66,6 @@ test("console has seven panels and local settings without removed modules", () =
   for (const marker of ["data-platform-cards", "data-version-category", "data-version-search", "data-preferences-form", "data-setting-stale", "data-source-quality"]) assert.ok(html.includes(marker));
   assert.match(client, /localStorage.setItem/u);
   assert.match(client, /event.origin === location.origin/u);
-  assert.match(html, /免密页面只负责安全展示/u);
+  assert.match(html, /data-ops-console[^>]+hidden/u);
+  assert.match(html, /data-ops-logout/u);
 });

@@ -15,7 +15,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current release: `V4.8.1-research-retirement`; compatibility shell `SITE-V4.6.1-research-retirement`.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
 - Current public application: the independent AI financing site owns financing cards and accepted weekly/monthly reports. WaveSight keeps the internal Data Center and Trend Radar; Guanlan Research is retired.
-- Current backend: `OPS-V3.3.1-concise-membership`, shared by the Data Center, Funding Portal, Mini Program, H5 and community membership. Seven modules; issue/task UI retired with production records preserved. Membership aggregates are identity-free and use concise metric-first presentation; Mini Program user detail and audited adjustments use an allowlisted email challenge and short-lived in-memory browser session. Integration/local settings and cross-platform Skill sync are documented in `docs/operations-console.md`; source baselines must not be represented as verified deployments.
+- Current backend: `OPS-V3.4.0-console-login` at `https://www.zkdlj.vip/ops/`, shared by the Data Center, Funding Portal, Mini Program, H5 and community membership. The whole console, scripts and operational snapshots are protected by an allowlisted email challenge plus an HttpOnly VPS session; GitHub Pages excludes them. The membership panel reuses that session and contains no separate login. Integration/local settings and cross-platform Skill sync are documented in `docs/operations-console.md`.
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.1-24-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
@@ -37,7 +37,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 | Trend Radar | `01-SiteV2/site/trend-radar.html` |
 | Financing intelligence | `https://www.zkdlj.vip/#home` |
 | Opportunity Map (unlisted internal lab) | `01-SiteV2/site/opportunity-map.html` |
-| Dashboard | `01-SiteV2/site/operations-console.html` |
+| Dashboard | `https://www.zkdlj.vip/ops/` (source: `01-SiteV2/site/operations-console.html`) |
 
 ## Current Production Chain
 

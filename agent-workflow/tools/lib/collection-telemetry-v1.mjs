@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 export const COLLECTION_TELEMETRY_VERSION = "COLLECTION-TELEMETRY-V1.0";
-export const OPS_VERSION = "OPS-V3.3.1-concise-membership";
+export const OPS_VERSION = "OPS-V3.4.0-console-login";
 export const V3_RETIRED_COMPATIBILITY = Object.freeze({
   status: "retired_archive",
   production_write: "disabled",

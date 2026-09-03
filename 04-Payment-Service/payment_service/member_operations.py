@@ -16,6 +16,9 @@ VERSION = "MEMBER-OPS-V1.0"
 ADMIN_VERSION = "MEMBER-ADMIN-V1.0"
 ADMIN_AUTH_VERSION = "OPS-AUTH-V1.0"
 ADMIN_DAYS = {7, 30, 90, 180, 365}
+ADMIN_SESSION_COOKIE = "guanlan_ops_session"
+ADMIN_CSRF_COOKIE = "guanlan_ops_csrf"
+ADMIN_COOKIE_PATH = "/ops"
 
 
 def parsed(value):
@@ -169,14 +172,15 @@ def register(app, db, clock):
         }
         return {digest(secret, "ops-admin-email", email) for email in emails}
 
-    def session_required(write=False):
+    def session_required(write=False, touch=True):
         provided = request.headers.get("Authorization", "")
-        if not provided.startswith("Bearer ") or not provided[7:]:
+        token = provided[7:] if provided.startswith("Bearer ") else request.cookies.get(ADMIN_SESSION_COOKIE, "")
+        if not token:
             return None, (jsonify(error={"code": "ADMIN_AUTH_REQUIRED", "message": "请使用管理员邮箱验证码登录"}), 401)
         allowed = allowed_admin_hashes()
         if not allowed:
             return None, (jsonify(error={"code": "ADMIN_AUTH_NOT_CONFIGURED", "message": "运营管理员尚未配置"}), 503)
-        token_hash = digest(secret, "ops-admin-session", provided[7:])
+        token_hash = digest(secret, "ops-admin-session", token)
         now = clock()
         with closing(db()) as conn:
             row = conn.execute(
@@ -189,15 +193,16 @@ def register(app, db, clock):
                 csrf = request.headers.get("X-CSRF-Token", "")
                 if not csrf or not hmac.compare_digest(digest(secret, "ops-admin-csrf", csrf), row["csrf_hash"]):
                     return None, (jsonify(error={"code": "ADMIN_CSRF_INVALID", "message": "页面安全凭证已失效，请重新验证"}), 403)
-            conn.execute("UPDATE operations_admin_sessions SET last_seen_at=? WHERE id=?", (now.astimezone(timezone.utc).isoformat(timespec="seconds"), row["id"]))
-            conn.commit()
+            if touch:
+                conn.execute("UPDATE operations_admin_sessions SET last_seen_at=? WHERE id=?", (now.astimezone(timezone.utc).isoformat(timespec="seconds"), row["id"]))
+                conn.commit()
             return dict(row), None
 
-    def admin_required(write=False):
+    def admin_required(write=False, touch=True):
         def decorate(fn):
             @wraps(fn)
             def wrapped(*args, **kwargs):
-                session, error = session_required(write=write)
+                session, error = session_required(write=write, touch=touch)
                 if error:
                     return error
                 g.operations_admin_session = session
@@ -284,7 +289,25 @@ def register(app, db, clock):
                 (digest(secret, "ops-admin-session", session_token), challenge["email_hash"], challenge["email_masked"], digest(secret, "ops-admin-csrf", csrf), expires.astimezone(timezone.utc).isoformat(timespec="seconds"), now_text, now_text),
             )
             conn.commit()
-        return jsonify(schemaVersion=ADMIN_AUTH_VERSION, sessionToken=session_token, csrfToken=csrf, expiresAt=expires.isoformat(), admin={"emailMasked": challenge["email_masked"]})
+        payload = {"schemaVersion": ADMIN_AUTH_VERSION, "expiresAt": expires.isoformat(), "admin": {"emailMasked": challenge["email_masked"]}}
+        if app.config.get("TESTING"):
+            payload.update(sessionToken=session_token, csrfToken=csrf)
+        response = jsonify(payload)
+        cookie_secure = app.config.get("APP_ENV") == "production"
+        max_age = int((expires - now).total_seconds())
+        response.set_cookie(ADMIN_SESSION_COOKIE, session_token, max_age=max_age, secure=cookie_secure, httponly=True, samesite="Strict", path=ADMIN_COOKIE_PATH)
+        response.set_cookie(ADMIN_CSRF_COOKIE, csrf, max_age=max_age, secure=cookie_secure, httponly=False, samesite="Strict", path=ADMIN_COOKIE_PATH)
+        return response
+
+    @app.get("/api/v1/admin/auth/session")
+    @admin_required(touch=False)
+    def current_admin_session():
+        return jsonify(
+            schemaVersion=ADMIN_AUTH_VERSION,
+            authenticated=True,
+            expiresAt=g.operations_admin_session["expires_at"],
+            admin={"emailMasked": g.operations_admin_session["email_masked"]},
+        )
 
     @app.post("/api/v1/admin/auth/logout")
     @admin_required(write=True)
@@ -292,7 +315,11 @@ def register(app, db, clock):
         with closing(db()) as conn:
             conn.execute("UPDATE operations_admin_sessions SET revoked_at=? WHERE id=?", (clock().astimezone(timezone.utc).isoformat(timespec="seconds"), g.operations_admin_session["id"]))
             conn.commit()
-        return "", 204
+        response = app.make_response(("", 204))
+        cookie_secure = app.config.get("APP_ENV") == "production"
+        response.delete_cookie(ADMIN_SESSION_COOKIE, path=ADMIN_COOKIE_PATH, secure=cookie_secure, httponly=True, samesite="Strict")
+        response.delete_cookie(ADMIN_CSRF_COOKIE, path=ADMIN_COOKIE_PATH, secure=cookie_secure, samesite="Strict")
+        return response
 
     def mini_program_user(conn, user_id):
         return conn.execute(

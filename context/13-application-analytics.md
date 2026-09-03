@@ -15,7 +15,7 @@ last_updated: 2026-08-30
 
 ## 目标与边界
 
-应用运营统计位于 `operations-console.html#analytics` 的“运营统计”栏目，不再占用数据中心“应用中心”导航。`application-analytics.html` 仅保留迁移跳转。它统一接收小程序与 PC 融资站的访问事件，并以会员/支付服务端事实核准注册、下单、支付、退款、积分兑换和社群申请。
+应用运营统计位于 `https://www.zkdlj.vip/ops/#analytics` 的“运营统计”栏目，不再占用数据中心“应用中心”导航。`application-analytics.html` 仅保留迁移跳转。整个运营后台先通过管理员邮箱验证码登录，再展示小程序与 PC 融资站的聚合运营事实。
 
 - 不采集明文手机号、微信号、OpenID、UnionID、IP 地址或完整 User-Agent。
 - 访客、会话和事件使用随机匿名 ID；登录用户只在服务端关联内部 user_id。
@@ -23,8 +23,8 @@ last_updated: 2026-08-30
 - 页面事件最多补传 7 天；单次最多 20 条，客户端离线队列最多 100 条。
 - `ANALYTICS_LIVE_FROM` 是正式运营统计起点；起点前的联调访问、注册与订单不进入汇总，旧离线队列也不能在清理后回灌。
 - 后台只显示服务端返回的 `production` 数据源，并明确展示正式统计开始时间，不提供演示数据回退。
-- 按 2026-08-30 的用户要求，`GET /api/v1/analytics/summary` 免密码提供只读汇总；持有链接者可查看访问、注册、付费、热门页面和内容等聚合，不返回原始事件、访客/会话 ID、个人身份或订单明细。页面 URL 聚合剥离查询参数及片段。
-- 原 `/api/v1/admin/analytics/summary` 仍要求服务端 `ANALYTICS_ADMIN_TOKEN`；会员、支付和其他管理鉴权不变。令牌不进入 Git、前端请求或浏览器存储。页面保持 `noindex,nofollow`，但不将隐藏入口或 CORS 视为鉴权。
+- 自 OPS V3.4 起，公网旧 `/api/v1/analytics/summary` 由 Nginx 返回 404；后台通过统一会话保护的 `/ops/analytics-api/summary` 读取访问、注册、付费、热门页面和内容聚合。兼容路由仅供 VPS 环回代理调用，且不返回原始事件、访客/会话 ID、个人身份或订单明细。页面 URL 聚合剥离查询参数及片段。
+- 原 `/api/v1/admin/analytics/summary` 仍要求服务端 `ANALYTICS_ADMIN_TOKEN`；VPS 页面不读取或保存该令牌。后台 HTML、脚本、快照及应用聚合均由服务端会话门禁保护，不依赖隐藏入口或 CORS。
 - 切入栏目自动加载；支持今日/7/30/90 天、平台筛选、刷新、空状态与超时重试，快速切换筛选时忽略旧请求。
 
 ## 核心指标口径

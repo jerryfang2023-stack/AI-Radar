@@ -857,6 +857,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     @app.route("/api/v1/admin/analytics/summary", methods=["OPTIONS"])
     @app.route("/api/v1/admin/auth/challenges", methods=["OPTIONS"])
     @app.route("/api/v1/admin/auth/challenges/<challenge_id>/verify", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/auth/session", methods=["OPTIONS"])
     @app.route("/api/v1/admin/auth/logout", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/membership/users", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/membership/users/<int:user_id>/adjustments", methods=["OPTIONS"])

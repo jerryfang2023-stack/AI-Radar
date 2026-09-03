@@ -81,17 +81,17 @@ python scripts/provision_virtual_products.py --env 0
 
 - `POST /api/v1/analytics/events`：接收小程序与 PC 端的匿名访问事件，单批最多 20 条；事件按 `eventId` 幂等写入。
 - `GET /api/v1/admin/analytics/summary?days=7&platform=all`：返回访问、页面、内容、注册、付费、退款和漏斗聚合；需要 `Authorization: Bearer <ANALYTICS_ADMIN_TOKEN>`。
-- `GET /api/v1/analytics/summary?days=7&platform=all`：按用户要求提供相同口径的免密码只读汇总，用于运营后台“运营统计”。不返回原始事件、访客/会话 ID、用户身份或订单明细；页面路径剥离查询参数及片段。该路由不支持 POST/PUT/PATCH/DELETE，其他管理、会员与支付鉴权保持不变。
+- `GET /api/v1/analytics/summary?days=7&platform=all`：保留为仅供环回代理调用的兼容汇总；公网 Nginx 对旧 URL 返回 404，运营后台通过经过统一会话检查的 `/ops/analytics-api/summary` 读取。不返回原始事件、访客/会话 ID、用户身份或订单明细；页面路径剥离查询参数及片段。
 - 注册漏斗分别统计打开注册引导、提交手机号授权、服务端注册成功及失败原因；普通登录与静默鉴权不进入注册漏斗。
 - 注册成功、支付、退款、积分兑换和社群申请均由服务端记录，运营口径不依赖客户端成功提示。
 - `ANALYTICS_LIVE_FROM` 定义正式运营统计起点（ISO 8601）；起点前的访问事件、注册和订单不进入运营汇总，离线队列中的旧测试事件也不会重新写入。
-- 原管理员查询仍使用生产环境随机 `ANALYTICS_ADMIN_TOKEN`；令牌不得写入仓库或前端。免密码运营页面不需要、不存储、不发送该令牌。
+- 原管理员查询仍使用生产环境随机 `ANALYTICS_ADMIN_TOKEN`；令牌不得写入仓库或前端。VPS 运营后台不需要、不存储、不发送该令牌。
 - 默认允许 `https://www.zkdlj.vip` 与 WaveSight GitHub Pages 读取；若内部站点域名变化，通过 `ANALYTICS_ALLOWED_ORIGINS` 调整。
 
 ## 会员与权益运营
 
-`GET /api/v1/analytics/membership/summary?days=30` 为统一运营后台提供免密码只读汇总，契约为 `MEMBER-OPS-V1.0`。小程序用户明细使用 `GET /api/v1/admin/analytics/membership/users`，权益或积分调整使用 `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`，契约为 `MEMBER-ADMIN-V1.0`。管理员先通过 `POST /api/v1/admin/auth/challenges` 与对应 verify 路由完成白名单邮箱验证码登录，换取短时浏览器会话；写操作还必须携带会话绑定的 CSRF 凭据。允许邮箱仅配置在服务器 `OPERATIONS_ADMIN_EMAILS`，不写入仓库或前端。
+`GET /api/v1/analytics/membership/summary?days=30` 保留为环回兼容汇总，公网旧 URL 返回 404；后台通过会话保护的 `/ops/application-membership-summary` 读取，契约为 `MEMBER-OPS-V1.0`。统一运营后台发布在 VPS 的 `/ops/` 路径；管理员通过邮箱验证码登录一次，服务端设置限定 `/ops` 的 HttpOnly 会话 Cookie，Nginx 在返回后台 HTML、脚本、快照和应用汇总前调用会话检查。小程序用户明细使用 `GET /api/v1/admin/analytics/membership/users`，权益或积分调整使用 `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`，契约为 `MEMBER-ADMIN-V1.0`，并复用整个后台会话。允许邮箱仅配置在服务器 `OPERATIONS_ADMIN_EMAILS`，不写入仓库或前端。
 
-验证码 10 分钟有效、最多尝试 5 次且同一邮箱 10 分钟最多发送 3 次；浏览器会话默认 8 小时，仅在页面内存中保存，刷新或退出后重新验证。数据库仅保存管理员邮箱 HMAC/掩码、验证码 HMAC、会话 HMAC 与 CSRF HMAC，不保存邮箱原文、验证码或会话原文。
+验证码 10 分钟有效、最多尝试 5 次且同一邮箱 10 分钟最多发送 3 次；浏览器会话默认 8 小时。会话 Cookie 为 Secure、HttpOnly、SameSite=Strict，CSRF Cookie 与服务端 HMAC 双重校验；数据库不保存邮箱原文、验证码、会话或 CSRF 原文。
 
 列表仅包含具备微信身份且未合并的小程序账户，只返回昵称、脱敏手机号、权益、积分、非退款付费汇总和最近活跃，不返回 OpenID、身份摘要或订单明细。写操作只允许按 7/30/90/180/365 天延长权益，或在余额不低于零的前提下调整可用积分；每次必须填写原因，并同时写入业务流水与 `operations_admin_audits`。不支持删除账号、修改/合并身份、改订单、任意覆盖到期日或改累计成长积分。
