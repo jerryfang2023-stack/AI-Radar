@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -16,13 +16,19 @@
     "name": "蚂蚁集团",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "Ant Group"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-6f1729f6968b72c9"
+      "EV-88a984b765bb54f1",
+      "EV-72dc9ab86e08fbab",
+      "EV-4c8fa40c36b6ddb7",
+      "EV-6f1729f6968b72c9",
+      "EV-9718a3d74dae5446"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -33,22 +39,264 @@
       "EN-8989aada6eb4a4c3"
     ],
     "firstSeen": "2026-07-24",
-    "lastSeen": "2026-07-25",
+    "lastSeen": "2026-09-03",
     "relationIds": [
+      "REL2-dcc3f6e959d6073a",
       "REL2-e1d65aab90a4ab28"
     ],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-88a984b765bb54f1"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-72dc9ab86e08fbab",
+        "EV-4c8fa40c36b6ddb7",
         "EV-6f1729f6968b72c9"
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-9718a3d74dae5446"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-9718a3d74dae5446",
+        "dataDate": "2026-09-03",
+        "date": "2026-09-02",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "还在为大模型洗数据熬夜？蚂蚁拿下VLDB工业最佳论文，一套宽表搞定35PB语料，效率狂飙5.6倍",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6e4b8b3b791b08c1",
+          "EN-d30e5ffc0ba9150b",
+          "EN-97d62a0592fc97b9"
+        ]
+      },
+      {
+        "id": "EV-72dc9ab86e08fbab",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-08",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁集团百灵开源 Ling-3.0-flash 模型：124B 总参数、5.1B 激活参数",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "reasoning",
+            "name": "推理能力",
+            "entityIds": [
+              "EN-b7ff6c95ddfdac24"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b7ff6c95ddfdac24",
+          "EN-d30e5ffc0ba9150b",
+          "EN-8989aada6eb4a4c3"
+        ]
+      },
+      {
+        "id": "EV-4c8fa40c36b6ddb7",
+        "dataDate": "2026-08-08",
+        "date": "2026-08-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-5a28a1a99a417ba5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d30e5ffc0ba9150b",
+          "EN-6782c62ce2e7b65a"
+        ]
+      },
+      {
+        "id": "EV-88a984b765bb54f1",
+        "dataDate": "2026-08-03",
+        "date": "2026-08-03",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "西湖心辰完成数亿元B+轮融资，蚂蚁系创始人领衔扩散模型创业",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-31587455ee69f1bb",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e8bb33113c892060",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b1cab28ebbb08cad",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0721102fc8eef407",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-00a4347661c2486b",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f33e04d43cc83b35",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-69e45f7f85a83744",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9472c2f9230b9de8",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f2bdb2d1ac16efe8",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c6b32f74e71c483a",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-993da186f3bfbdac",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-847c00c904ccdb98"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a549b403cb4c961d",
+            "fundingInsightId": "FI-08e798f440d06eda"
+          }
+        ],
+        "entityIds": [
+          "EN-847c00c904ccdb98",
+          "EN-d30e5ffc0ba9150b"
+        ]
+      },
       {
         "id": "EV-6f1729f6968b72c9",
         "dataDate": "2026-07-25",
@@ -117,6 +365,27 @@
   ],
   "relationships": [
     {
+      "relationship_id": "REL2-dcc3f6e959d6073a",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-d30e5ffc0ba9150b",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8989aada6eb4a4c3",
+      "object_type": "entity",
+      "event_id": "EV-72dc9ab86e08fbab",
+      "claim_refs": [
+        "CL-24c1d3ba0b3991a6",
+        "CL-310204201291f150",
+        "CL-ecb55432ea944920",
+        "CL-b203b1076c6cbafd"
+      ],
+      "source_refs": [
+        "SA-b44fb0bd0c5ebf61"
+      ],
+      "data_date": "2026-08-08",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-e1d65aab90a4ab28",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-d30e5ffc0ba9150b",
@@ -145,7 +414,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
-        "EV-10f04014fb3b62ff",
+        "EV-df2b04d9d720c544",
         "EV-6b668e4655192209",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
@@ -153,14 +422,12 @@
         "EV-b73d931bd6adb78d",
         "EV-bdcb22b1a53358f5",
         "EV-f5dd6dec49ad83aa",
-        "EV-a0ca934522418c0b",
         "EV-60f219702a66bf38",
         "EV-88a984b765bb54f1",
         "EV-2301cd1470155075",
         "EV-eb881f5de456b59a",
         "EV-d3054a8a2b62a503",
         "EV-c7ba7b093a1a3b94",
-        "EV-cf6e7a2edad82c6f",
         "EV-44cd5e03d30c85b3",
         "EV-f6a72cddbda748b3",
         "EV-6f092cfc7a064d64",
@@ -179,7 +446,6 @@
         "EV-d7f7e372d16c2241",
         "EV-9fc8916c19c19f99",
         "EV-14a666fc27d73a80",
-        "EV-d8ab585446e56beb",
         "EV-a00763037a94d512",
         "EV-189e43cb9fea8e1a",
         "EV-edcb66d0401cfb8f",
@@ -233,12 +499,13 @@
         "EV-8c526681b74e2762",
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
-        "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-7832e96ace41fc15",
+        "EV-b8a7ddde8a7e42c8",
+        "EV-0fb1258b1013bd71",
         "EV-53957f94b3924ad3",
         "EV-e4552a80d406645e",
         "EV-082a9cdae7904aac",
-        "EV-ca2ab3833c31b91b",
         "EV-dff4ff4127cba5d9",
         "EV-eb3b431d4ce98ec5",
         "EV-eedd370fd9cfdbb2",
@@ -261,7 +528,6 @@
         "EV-eb3545d5948aa255",
         "EV-3a4acc92731cb5ac",
         "EV-63948deaec161736",
-        "EV-f7b81752b1fadd87",
         "EV-c17a52220be52dc1",
         "EV-be4b6dc8829070e5",
         "EV-576e81e479b78605",
@@ -281,7 +547,6 @@
         "EV-04fe726fa16722f3",
         "EV-15c5107c993baae8",
         "EV-2791b442fd32b894",
-        "EV-1b5b1d3317c8f688",
         "EV-10c4f4db6c3f2d72",
         "EV-bf4871cd96fc25ac",
         "EV-e05e2ff09137017d",
@@ -306,7 +571,6 @@
         "EV-c9d7b46d167df2d1",
         "EV-fe519605ebb69aaf",
         "EV-5b193a038ab4ea22",
-        "EV-ea6abb5378846a71",
         "EV-6ce069b1845f5a52",
         "EV-03ab7d0b40d1e5b5",
         "EV-1a241bcb4fad886c",
@@ -330,8 +594,6 @@
         "EV-c2800c1c5a3f568f",
         "EV-d9da7dea91725a1c",
         "EV-3353bd96728c99e2",
-        "EV-8a9b12665a3e40a0",
-        "EV-98dd0db65ab955f7",
         "EV-f8ba1728de6a4899",
         "EV-826c8088c4adf591",
         "EV-e8105c2990ca8172",
@@ -379,8 +641,6 @@
         "EV-e09bff5515b1896b",
         "EV-a9fe726c4ea2a17b",
         "EV-c5b8faec223a4caf",
-        "EV-cf00e83782783915",
-        "EV-eeb05e9a870efd97",
         "EV-8e6f9c324aa0b2f3",
         "EV-57597c92f7b183a9",
         "EV-284f06d7bd2d24f9",
@@ -394,6 +654,8 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-b1ac270277a5c1bc",
+        "EV-bed92f9b4b3664e2",
         "EV-9530bb61702d4a33",
         "EV-fd00664984e9ae3d",
         "EV-8d1915e3b460afa7",
@@ -408,7 +670,6 @@
         "EV-94db92599d064963",
         "EV-ff374e781601bfc7",
         "EV-dbda21182e61923b",
-        "EV-3aefbdfa5df2fd6a",
         "EV-22c88b4ff8c7d8d8",
         "EV-08f736f61f2b46f3",
         "EV-02186ed7885f68fe",
@@ -419,19 +680,17 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
-        "EN-40975ceed8df55bb",
+        "EN-e7e7b91d8a1d8b01",
         "EN-336ab1deb42d6284",
         "EN-be9d587defa1f0c0",
         "EN-8d4321d936320802",
         "EN-7dd2a89f628d7525",
         "EN-67e8c106650aa683",
         "EN-c70eca6b0f88f44d",
-        "EN-240389f4b730bad4",
         "EN-6861f63c27eb0ada",
         "EN-847c00c904ccdb98",
         "EN-9f80a5e14017ccc0",
         "EN-0f3360879e746531",
-        "EN-7f871cbf905f6e0c",
         "EN-e647c818ac38b6ca",
         "EN-a5d2ae286d0d9e45",
         "EN-b0532e1af75cc4ab",
@@ -475,15 +734,15 @@
         "EN-87c730bc4f32459e",
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
-        "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-da2f0f03bc3a24f5",
         "EN-35e36dc1a5213fa3",
         "EN-1d79127e9d90e89b",
         "EN-0b914b1a1e589338",
-        "EN-7d3194f79e645c42",
         "EN-6e00d63f3be2ed2e",
         "EN-921ba2ce81556e42",
-        "EN-bbdefa2950f49882",
         "EN-a658fbc24f5e3832",
         "EN-4cc3012261da02d1",
         "EN-b609846e60064148",
@@ -491,7 +750,6 @@
         "EN-9c3de5f42376b1af",
         "EN-f7d9f5a90479d632",
         "EN-99d3fd0fa8fe115e",
-        "EN-3a7bd3e2360a3d29",
         "EN-ea3bd73e2b506e00",
         "EN-b93006774cbdd4b2",
         "EN-e32ac33fa53a3db6",
@@ -501,6 +759,7 @@
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
         "EN-04468f769adbb15b",
+        "EN-7f871cbf905f6e0c",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
         "EN-febedfcafee9d610",
@@ -508,7 +767,6 @@
         "EN-0f553f48551aef83",
         "EN-a7b54a780af509be",
         "EN-ae679821f0649c15",
-        "EN-e73b79a0b10f8cdb",
         "EN-593d0361124f348f",
         "EN-bae152c4560df38c",
         "EN-e16fc821f34228d1",
@@ -520,7 +778,6 @@
         "EN-3c6d89173e6636d7",
         "EN-f0edcf96f6fa2ccb",
         "EN-522d3edeb64a7ca4",
-        "EN-12a81529bba89666",
         "EN-ebf9032e4009b3d9",
         "EN-6416272bf06ab3ec",
         "EN-44a9bf3b11abea5c",
@@ -549,8 +806,6 @@
         "EN-c608c4787821de1b",
         "EN-412b57e712039032",
         "EN-50537dab76505dfc",
-        "EN-7f6333102da9e8bd",
-        "EN-1a8141d5b3fef420",
         "EN-e956b4e6d9c37fa7",
         "EN-d5c876a36e02b120",
         "EN-c3ce0cc92b48bbd6",
@@ -558,11 +813,11 @@
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
+        "EN-c3961295b7b3da96",
         "EN-5694577a18c5d260",
         "EN-5f4db04ac40d991b",
         "EN-1706429cbf67f1c9",
         "EN-af84cfb6c1bb0e98",
-        "EN-2d559a898cc329c8",
         "EN-783ef849d8a6ffe6",
         "EN-1c27324f013705cb",
         "EN-c9fd53f3265ef997"
@@ -596,7 +851,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-02"
+      "lastSeen": "2026-09-03"
     },
     {
       "id": "TX-technology-reasoning",
@@ -606,6 +861,7 @@
       "valueId": "reasoning",
       "eventIds": [
         "EV-b95539d17772a4ce",
+        "EV-5afbe3c786191728",
         "EV-85ea6e0ef8bda162",
         "EV-afd50641f48c5e98",
         "EV-58e18eab1b072c9a",
@@ -621,6 +877,7 @@
         "EV-aa63303570154a9b"
       ],
       "entityIds": [
+        "EN-0b01f10e87d13e75",
         "EN-3ebe8498fb071652",
         "EN-8d4321d936320802",
         "EN-b7ff6c95ddfdac24",
@@ -638,7 +895,7 @@
         "HW-94ca08e08e6e52fe"
       ],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-09-03"
     }
   ],
   "fde": [],

@@ -1,15 +1,96 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-02T02:58:47.973Z",
-  "date": "2026-09-02",
-  "status": "degraded",
-  "state": "source_no_data",
-  "last_checked_date": "2026-09-02",
-  "latest_financing_date": "2026-09-01",
+  "generated_at": "2026-09-03T03:31:35.698Z",
+  "date": "2026-09-03",
+  "status": "passed",
+  "state": "healthy",
+  "last_checked_date": "2026-09-03",
+  "latest_financing_date": "2026-09-02",
   "totals": {
-    "fetched": 0,
-    "funding_candidates": 0,
-    "verified_events": 2
+    "fetched": 704,
+    "funding_candidates": 145,
+    "verified_events": 4
   },
-  "channels": []
+  "channels": [
+    {
+      "id": "aihot",
+      "status": "collected",
+      "last_success_at": "2026-09-03T00:12:49.532Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 329,
+      "latest_content_date": "2026-09-02",
+      "duplicate_rate": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 7,
+      "verified_event_count": 2,
+      "failures": [],
+      "fallback_used": false
+    },
+    {
+      "id": "funding",
+      "status": "collected",
+      "last_success_at": "2026-09-03T00:13:10.663Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 61,
+      "latest_content_date": "2026-09-02",
+      "duplicate_rate": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 61,
+      "verified_event_count": 0,
+      "failures": [],
+      "fallback_used": false
+    },
+    {
+      "id": "gdelt",
+      "status": "collected",
+      "last_success_at": "2026-09-03T00:24:11.198Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 56,
+      "latest_content_date": "2026-09-02",
+      "duplicate_rate": 0.1364,
+      "stale_rate": 1,
+      "funding_candidate_count": 22,
+      "verified_event_count": 2,
+      "failures": [],
+      "fallback_used": false
+    },
+    {
+      "id": "keyword",
+      "status": "collected",
+      "last_success_at": "2026-09-03T00:22:01.451Z",
+      "response_ms": null,
+      "http_status": "200",
+      "fetched_count": 137,
+      "latest_content_date": "2026-09-02",
+      "duplicate_rate": 0.087,
+      "stale_rate": 1,
+      "funding_candidate_count": 46,
+      "verified_event_count": 0,
+      "failures": [
+        "keyword-search pre-gate filtered 82 result(s): missing_ai_anchor_in_result=34; social_or_profile_source=26; broad_list_or_market_report=15; noise_term:hiring=4; directory_or_search_page=2; noise_term:salary=1",
+        "Anysearch fallback for query \"AI agent startup raises procurement workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results"
+      ],
+      "fallback_used": true
+    },
+    {
+      "id": "rss",
+      "status": "collected",
+      "last_success_at": "2026-09-03T00:12:53.322Z",
+      "response_ms": null,
+      "http_status": "429",
+      "fetched_count": 121,
+      "latest_content_date": "2026-09-02",
+      "duplicate_rate": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 9,
+      "verified_event_count": 0,
+      "failures": [
+        "RSS tldr-ai-newsletter: HTTP 429"
+      ],
+      "fallback_used": false
+    }
+  ]
 }

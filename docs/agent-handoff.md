@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-09-02
+date: 2026-09-03
 status: current
 encoding: UTF-8
 ---
@@ -19,9 +19,9 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.1-24-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
-- Current Funding Insights projection: 309 accepted application cards aggregate to 284 public financing-event cards checked through 2026-09-02, including 34 China-market cards; the latest qualifying financing disclosure is dated 2026-09-01. The 2026-09-02 bundle adds two eligible cards, AIR ($50M) and Aranya ($11M). Three other funding-like records remain excluded because they lack a supported currency, omit an explicit currency, or describe a prize rather than company financing. The public financing portal and Mini Program live contract consume the same gated projection; publication must still be verified independently from the generated source.
-- Current Data Center frontstage: 2,575 events, 217 companies, 343 products, 61 people, 1,345 investors, 353 relationships, 136 FDE records, and 95 hardware records through 2026-09-02.
-- The 2026-09-02 daily bundle contains 40 canonical events and restores accepted-event entity/project coverage to 100% through exact accepted-Claim subject evidence. Publisher-host, document-attribution, and title-only matches remain candidates until evidence or explicit catalog review supports promotion.
+- Current Funding Insights projection: 288 public financing-event cards checked through 2026-09-03, including 34 China-market cards; the latest qualifying financing disclosure is dated 2026-09-02. The 2026-09-03 bundle publishes 上海以太之心科技有限公司（数千万人民币种子轮）、小鹏机器人业务（9 亿美元战略融资）、HiddenLayer（1 亿美元）和 Wonderful（5.5 亿美元 C 轮），并去重一条重复披露。The public financing portal and Mini Program live contract consume the same gated projection; publication must still be verified independently from the generated source.
+- Current Data Center frontstage: 2,614 events, 219 companies, 343 products, 61 people, 1,353 investors, 370 relationships, 137 FDE records, and 96 hardware records through 2026-09-03.
+- The 2026-09-03 daily bundle contains 45 canonical events and restores accepted-event entity coverage to 100% through exact accepted-Claim subject evidence. University/institute-led research now resolves as research results with the cited institution; disputed Claims cannot project factual tag/facet assertions. Publisher-host, document-attribution, and title-only matches remain candidates until evidence or explicit catalog review supports promotion.
 - Current funding taxonomy projection uses reviewed event decisions and evidence-backed event/entity classification assertions under `TAG-V4.1`; current counts are owned by the generated taxonomy review and consistency-gate reports rather than this handoff.
 - Current private-evidence counts are owned by the latest private-evidence gate rather than this handoff; the public repository contains locators only.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "node": {
@@ -31,7 +31,6 @@
       "EV-4e8f6e91e4451ba1",
       "EV-82e68f59d8584e4e",
       "EV-f6ac2938949f74ec",
-      "EV-98dd0db65ab955f7",
       "EV-7256017056b81bbe",
       "EV-9e35de25113a9269"
     ],
@@ -2194,109 +2193,6 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-98dd0db65ab955f7",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-15",
-      "updatedDate": "2026-07-16",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "eventGroup": "AI 硬件",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "交友应用 Soul 将推出首款便携式 AI 智能硬件，搭载自研大模型 SoulX 亮相 WAIC 2026",
-      "originalTitle": "",
-      "subject": "交友应用 Soul 将",
-      "action": "推出首款便携式 AI 智能硬件",
-      "object": "，搭载自研大模型 SoulX 亮相 WAIC 2026",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "ai_device",
-            "name": "AI 设备",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "ai_device",
-          "name": "AI 设备",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "ai_device",
-          "name": "AI 设备",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-4e3da39e54ff3137",
-        "EN-ae0facccf0a3723a"
-      ],
-      "entityNames": [
-        "交友应用 Soul",
-        "Soul"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/977/175.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
       "id": "EV-7256017056b81bbe",
       "dataDate": "2026-07-12",
       "date": "2026-07-12",
@@ -2594,8 +2490,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-consumer",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-ai_device",
@@ -2620,10 +2516,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-content_creation",
-        "TX-target_user-consumer",
-        "TX-industry-retail_ecommerce",
         "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
+        "TX-use_case-content_creation",
+        "TX-industry-retail_ecommerce",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-ai_device",
         "TX-ai_market_subcategory-consumer_retail",
@@ -2650,14 +2546,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-consumer",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-consumer",
-        "TX-ai_market_application-models",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
+        "TX-ai_market_application-models",
         "TX-use_case-research_discovery",
         "TX-product_form-ai_device"
       ],
@@ -2730,13 +2626,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
-        "TX-technology-video_generation",
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-video_generation",
         "TX-technology-multimodal",
+        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_device"
       ],
@@ -2772,8 +2668,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-model",
+        "TX-product_form-ai_infrastructure_software",
         "TX-industry-retail_ecommerce",
         "TX-product_form-ai_device"
       ],
@@ -2802,8 +2698,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-video_generation",
         "TX-use_case-physical_automation",
+        "TX-technology-video_generation",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
@@ -2849,6 +2745,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-987cb2e5e20f79ce",
+        "EV-a2f902b9707ffd02",
         "EV-00514c4ffc2e3cd3",
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
@@ -2926,11 +2824,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
-        "TX-technology-open_weights",
         "TX-product_form-model",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-technology-video_generation",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
@@ -2948,7 +2845,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-27",
+      "lastSeen": "2026-09-03",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [

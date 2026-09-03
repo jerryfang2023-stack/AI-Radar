@@ -662,10 +662,12 @@ export function normalizeFundingInsightCard(
     round,
     card.financing?.announced_at || "",
   );
-  const founders = mergeEquivalentFounders((card.company?.founders || []).map((item) => ({
-    ...resolvedResearchItem(item, "person", resolve, acceptedDecisions),
-    role: normalizeFounderRole(item.role),
-  })));
+  const founders = mergeEquivalentFounders((card.company?.founders || [])
+    .filter((item) => clean(item.name) && (item.evidence_refs || []).length)
+    .map((item) => ({
+      ...resolvedResearchItem(item, "person", resolve, acceptedDecisions),
+      role: normalizeFounderRole(item.role),
+    })));
   const products = (card.products || []).map(
     (item) => resolvedResearchItem(item, "product", resolve, acceptedDecisions),
   );
@@ -1096,8 +1098,17 @@ function fundedStartupNameFromClaims(claims = []) {
   const acceptedQuotes = claims
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
     .map((claim) => clean(claim.source_quote))
-    .filter((quote) => /(?:raises?|raised|funding|series|seed|round|financing)/iu.test(quote));
+    .filter((quote) => /(?:融资|投资|募资|raises?|raised|funding|series|seed|round|financing)/iu.test(quote));
   for (const quote of acceptedQuotes) {
+    const chineseLegalPattern = /(?:^|[———:：，,；;\s])([\p{Script=Han}A-Za-z0-9·&.-]{2,40}?(?:有限责任公司|股份有限公司|有限公司))(?=[（(，,。；;\s]|$)/gu;
+    for (const legalMatch of quote.matchAll(chineseLegalPattern)) {
+      const legalName = clean(legalMatch[1]);
+      const legalOffset = legalMatch.index + legalMatch[0].lastIndexOf(legalMatch[1]);
+      const following = quote.slice(legalOffset + legalMatch[1].length, legalOffset + legalMatch[1].length + 120);
+      if (/^(?:（[^）]{0,60}）|\([^)]{0,60}\))?\s*(?:宣布)?(?:已)?(?:完成|获得|获).{0,40}(?:融资|投资|募资)/u.test(following)) {
+        return legalName;
+      }
+    }
     const match = quote.match(
       /\b(?:new\s+|their\s+|its\s+)?(?:startup|company|firm)\s*,\s*([A-Z][\p{L}\p{N}.&'-]*(?:\s+[A-Z][\p{L}\p{N}.&'-]*){0,3})\s*[\s.，,]*(?=(?:The company|the company|it|has|had|raised|raises|announced|said)\b)/u,
     );
@@ -1327,7 +1338,12 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
     const quote = clean(evidence?.quote);
     return Boolean(source && quote && source.body_clean.includes(quote));
   });
-  if (sanitized.company) sanitized.company.evidence_refs = cleanRefs(sanitized.company.evidence_refs);
+  if (sanitized.company) {
+    sanitized.company.evidence_refs = cleanRefs(sanitized.company.evidence_refs);
+    sanitized.company.founders = (sanitized.company.founders || [])
+      .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
+      .filter((item) => clean(item.name) && item.evidence_refs.length);
+  }
   if (sanitized.financing) {
     sanitized.financing.evidence_refs = cleanRefs(sanitized.financing.evidence_refs);
     sanitized.financing.investors = (sanitized.financing.investors || [])

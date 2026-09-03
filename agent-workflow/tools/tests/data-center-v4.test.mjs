@@ -110,6 +110,22 @@ test("registered headline aliases remain candidates until accepted Claim evidenc
   );
 });
 
+test("accepted Chinese funding Claims expose the exact legal company as a verified organization", () => {
+  const quote = "近日，国内AI智能体全栈技术研发企业——上海以太之心科技有限公司（以下简称“以太之心”）宣布完成数千万种子轮融资。";
+  const mentions = organizationMentions(
+    "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+    { subject: "AI智能体基础设施公司“以太之心”", action: "完成", object: "数千万种子轮融资" },
+    "funding",
+    quote,
+    [{ subject: "AI智能体基础设施公司“以太之心”", source_quote: quote }],
+  );
+  assert.ok(mentions.some((item) => (
+    item.canonicalName === "上海以太之心科技有限公司"
+    && item.source === "claim_evidence"
+    && item.verified === true
+  )));
+});
+
 test("localized action and attributed research titles preserve Claim-backed candidate names", () => {
   const cases = [
     ["Caterpillar 将采矿自动化经验应用于 AI 部署", "Caterpillar 将采矿自动化经验应用于 AI", "Industrial heavyweight Caterpillar is using its experience to deploy AI.", "Caterpillar"],
@@ -132,6 +148,10 @@ test("an attributed AI economics research report is not a product release", () =
   assert.equal(findEventRule(title, quote).eventType, "research_result");
   assert.equal(findEventRule("巴克莱研究：AI 模型公司的成本……", quote), null);
   assert.equal(findEventRule("Acme 发布 AI 研究工具", "Acme 发布 AI 研究工具，用于检索论文。").eventType, "product_release");
+  assert.equal(findEventRule(
+    "探索太阳风暴早期预警：AI 提前 9.24 小时捕捉太阳活动区信号",
+    "由美国新泽西理工学院（NJIT）牵头的科研团队发布最新研究，成功打造出机器学习模型 EarlyDetect。",
+  ).eventType, "research_result");
 });
 
 test("facet matching does not treat trailing retrieval metadata as event evidence", () => {
@@ -1163,6 +1183,20 @@ test("research publishers and attributed institutions produce auditable entity l
     item.canonicalName === "Wharton School"
     && item.source === "document_evidence"
     && item.verified === false
+  )));
+
+  const njitQuote = "科技媒体报道，由美国新泽西理工学院（NJIT）牵头的科研团队发布最新研究，成功打造出机器学习模型 EarlyDetect。";
+  const njitMatches = organizationMentions(
+    "探索太阳风暴早期预警：AI 提前 9.24 小时捕捉太阳活动区信号",
+    { subject: "undisclosed_subject", action: "research_result", object: "EarlyDetect" },
+    "research_result",
+    njitQuote,
+    [{ subject: "undisclosed_subject", source_quote: njitQuote }],
+  );
+  assert.ok(njitMatches.some((item) => (
+    item.canonicalName === "美国新泽西理工学院"
+    && item.source === "claim_evidence"
+    && item.verified === true
   )));
 });
 

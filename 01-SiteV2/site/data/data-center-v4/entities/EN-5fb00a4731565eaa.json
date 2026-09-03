@@ -1,0 +1,403 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-5fb00a4731565eaa",
+    "name": "Gemini 3.8 Flash",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-8ae771f26c02f7c4",
+      "EV-6ffd497940673b62",
+      "EV-a74ea4ad6a095ac3",
+      "EV-b8a7ddde8a7e42c8",
+      "EV-859489cd3fa4e596"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-02",
+    "lastSeen": "2026-09-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-8ae771f26c02f7c4"
+      ],
+      "partnerships": [],
+      "productsServices": [
+        "EV-6ffd497940673b62",
+        "EV-a74ea4ad6a095ac3",
+        "EV-b8a7ddde8a7e42c8",
+        "EV-859489cd3fa4e596"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-8ae771f26c02f7c4",
+        "dataDate": "2026-09-03",
+        "date": "2026-09-02",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "谷歌低调上线 Gemini 3.8 Flash 模型，面向软件工程与智能体任务",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-03ecbdd9b68f40a0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-03ecbdd9b68f40a0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-03ecbdd9b68f40a0",
+          "EN-bbdefa2950f49882",
+          "EN-2b6e51bec93e86c1",
+          "EN-5fb00a4731565eaa"
+        ]
+      },
+      {
+        "id": "EV-6ffd497940673b62",
+        "dataDate": "2026-09-03",
+        "date": "2026-09-03",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google DeepMind 发布 Gemini 3.8 Flash 模型卡",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-5fb00a4731565eaa"
+        ]
+      },
+      {
+        "id": "EV-a74ea4ad6a095ac3",
+        "dataDate": "2026-09-03",
+        "date": "2026-09-03",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "llm-gemini 0.34",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-5fb00a4731565eaa"
+        ]
+      },
+      {
+        "id": "EV-b8a7ddde8a7e42c8",
+        "dataDate": "2026-09-03",
+        "date": "2026-09-03",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google 发布 Gemini 3.8 Flash，六周内第三款 Flash 模型",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-5fb00a4731565eaa"
+        ]
+      },
+      {
+        "id": "EV-859489cd3fa4e596",
+        "dataDate": "2026-09-03",
+        "date": "2026-09-02",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber 两款新模型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-5fb00a4731565eaa",
+          "EN-31055a8d9856fce4"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-6b6d74f3b3bbf5a5",
+      "eventId": "EV-8ae771f26c02f7c4",
+      "dataDate": "2026-09-03",
+      "date": "2026-09-02",
+      "title": "谷歌低调上线 Gemini 3.8 Flash 模型，面向软件工程与智能体任务",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Gemini 3.8 Flash 模型，面向软件工程与智能体任务",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "谷歌 Gemini 3.8 Flash 模型上线，适用软件工程、智能体任务等场景 - IT之家",
+        "谷歌 Gemini 3.8 Flash 模型上线，适用软件工程、智能体任务等场景",
+        "IT之家 9 月 2 日消息，谷歌今天（2 日）在 Google DeepMind 网站低调上线了 Gemini 3.8 Flash 模型。",
+        "根据介绍，Gemini 3.8 Flash 面向个人用户、开发者和企业，适合以较低成本大规模部署通用型、可直接用于生产环境的智能体，典型用途包括 软件工程、智能体任务以及复杂的知识处理流程 。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-03ecbdd9b68f40a0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-03ecbdd9b68f40a0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-03ecbdd9b68f40a0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/997/702.htm",
+      "entityIds": [
+        "EN-03ecbdd9b68f40a0",
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1",
+        "EN-5fb00a4731565eaa"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-f3447b846f4bd1e9",
+      "implementationKey": "f3447b846f4bd1e9",
+      "eventId": "EV-8ae771f26c02f7c4",
+      "eventIds": [
+        "EV-8ae771f26c02f7c4"
+      ],
+      "dataDate": "2026-09-03",
+      "date": "2026-09-02",
+      "title": "未披露 × 未披露：Gemini 3.8 Flash 模型，面向软件工程与智能体任务",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Gemini 3.8 Flash 模型，面向软件工程与智能体任务",
+      "workflow": "根据介绍，Gemini 3.8 Flash 面向个人用户、开发者和企业，适合以较低成本大规模部署通用型、可直接用于生产环境的智能体，典型用途包括 软件工程、智能体任务以及复杂的知识处理流程 。",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0853132f094969d9",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-09-02",
+          "dataDate": "2026-09-03",
+          "eventId": "EV-8ae771f26c02f7c4",
+          "eventTitle": "谷歌低调上线 Gemini 3.8 Flash 模型，面向软件工程与智能体任务",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-03ecbdd9b68f40a0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-03ecbdd9b68f40a0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-03ecbdd9b68f40a0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/997/702.htm",
+      "entityIds": [
+        "EN-03ecbdd9b68f40a0",
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1",
+        "EN-5fb00a4731565eaa"
+      ]
+    }
+  ]
+}

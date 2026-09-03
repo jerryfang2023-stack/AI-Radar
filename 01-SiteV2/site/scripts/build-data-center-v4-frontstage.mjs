@@ -221,6 +221,9 @@ export function buildEventRecords({
 
   return events.map((event) => {
     const eventClaims = safeArray(event.claim_refs).map((id) => claimsById.get(id)).filter(Boolean);
+    const acceptedClaimIds = new Set(eventClaims
+      .filter((claim) => !claim.verification_status || claim.verification_status === "accepted")
+      .map((claim) => claim.claim_id));
     const primaryClaim = eventClaims[0] || null;
     const rawCandidates = unique(eventClaims.map((claim) => claim.raw_id))
       .map((id) => rawById.get(id))
@@ -249,6 +252,7 @@ export function buildEventRecords({
       eventEntities,
     );
     const technicalTags = safeArray(event.claim_refs)
+      .filter((claimId) => acceptedClaimIds.has(claimId))
       .flatMap((claimId) => (tagsByClaim.get(claimId) || []).map((assertion) => ({
         dimensionId: "technology",
         dimensionName: "技术",
@@ -259,6 +263,7 @@ export function buildEventRecords({
         assertionId: assertion.assertion_id || ""
       })));
     const assertedFacets = safeArray(event.claim_refs)
+      .filter((claimId) => acceptedClaimIds.has(claimId))
       .flatMap((claimId) => (facetsByClaim.get(claimId) || []).map((assertion) => ({
         dimensionId: assertion.dimension_id,
         dimensionName: facetNames.get(assertion.dimension_id)?.name || assertion.dimension_id,

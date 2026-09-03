@@ -122,6 +122,37 @@ test("frontstage projects China market scope to events and linked entities", () 
   assert.deepEqual(collections.companies[0].marketScopes, ["actor_origin"]);
 });
 
+test("frontstage classifications exclude assertions backed only by disputed Claims", () => {
+  const records = buildEventRecords({
+    events: [{
+      event_id: "EV-DISPUTED-CLASSIFICATION",
+      event_type: "model_release",
+      event_status: "announced",
+      event_time: "2026-09-03T00:00:00.000Z",
+      disclosed_at: "2026-09-03T00:00:00.000Z",
+      display_title_zh: "Google 发布 Gemini 测试版本",
+      entities: ["EN-GOOGLE"],
+      claim_refs: ["CL-ACCEPTED", "CL-DISPUTED"],
+      source_refs: ["SA-1"],
+      publication_status: "disputed",
+    }],
+    claims: [
+      { claim_id: "CL-ACCEPTED", raw_id: "RAW-1", subject: "Google", source_quote: "Google 发布 Gemini 测试版本。", verification_status: "accepted" },
+      { claim_id: "CL-DISPUTED", raw_id: "RAW-1", subject: "Google", source_quote: "传闻该版本面向网络安全。", verification_status: "disputed" },
+    ],
+    rawDocuments: [{ raw_id: "RAW-1", title_original: "Google 发布 Gemini 测试版本", title_zh: "Google 发布 Gemini 测试版本" }],
+    sourceArtifacts: [{ source_artifact_id: "SA-1", source_url: "https://example.com/google-gemini" }],
+    entities: [{ entity_id: "EN-GOOGLE", canonical_name: "Google", entity_type: "organization_candidate", verification_status: "verified" }],
+    tagAssertions: [],
+    facetAssertions: [{ asset_id: "CL-DISPUTED", evidence_ref: "CL-DISPUTED", dimension_id: "use_case", value_id: "security_operations", status: "active" }],
+    reviewedEventClassifications: [],
+    tagNames: new Map(),
+    facetNames: new Map([["use_case", { name: "应用场景", values: new Map([["security_operations", "安全运营"]]) }]]),
+  });
+
+  assert.deepEqual(records[0].classifications, []);
+});
+
 test("classification scope prefers the Claim subject and never copies a company tag to investors", () => {
   const startup = { entity_id: "EN-STARTUP", canonical_name: "Example AI", entity_type: "organization_candidate" };
   const investor = { entity_id: "EN-INVESTOR", canonical_name: "Example Capital", entity_type: "organization_candidate" };

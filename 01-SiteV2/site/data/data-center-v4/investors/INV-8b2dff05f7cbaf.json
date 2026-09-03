@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
+    "quarantinedEventCount": 24
+  },
+  "institution": {
+    "id": "INV-8b2dff05f7cbaf",
+    "name": "高信资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-08-31",
+    "latest_disclosed_at": "2026-08-31",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-447a48e5d0951831",
+        "canonical_entity_id": "EN-447a48e5d0951831",
+        "name": "上海以太之心科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-eee9c2a03cc162da",
+        "funding_insight_id": "FI-88ed5f2ad4bd8ab7",
+        "event_ids": [
+          "EV-89ec502a1340079a"
+        ],
+        "company_entity_id": "EN-447a48e5d0951831",
+        "company_canonical_entity_id": "EN-447a48e5d0951831",
+        "company_name": "上海以太之心科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-31",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1a358dfcb10fed1c",
+            "source_url": "https://www.stcn.com/article/detail/4165239.html",
+            "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+            "source_content_hash": "d05d4ca6f929c2cb",
+            "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+            "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1a358dfcb10fed1c",
+        "source_url": "https://www.stcn.com/article/detail/4165239.html",
+        "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+        "source_content_hash": "d05d4ca6f929c2cb",
+        "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+        "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+      }
+    ]
+  }
+}

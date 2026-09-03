@@ -1355,6 +1355,34 @@ test("accepted funding claim quote can correct a descriptive founder-group subje
   assert.ok(company?.aliases?.includes("Ex-Spotify employees"));
 });
 
+test("accepted Chinese funding Claim corrects a descriptive subject to the legal company name", () => {
+  const entities = [{
+    entity_id: "EN-ETHERHEART",
+    entity_type: "organization_candidate",
+    canonical_name: "AI智能体基础设施公司“以太之心”",
+  }];
+  const claims = [{
+    claim_id: "CL-ETHERHEART",
+    claim_type: "funding",
+    verification_status: "accepted",
+    subject: "AI智能体基础设施公司“以太之心”",
+    source_quote: "近日，国内AI智能体全栈技术研发企业——上海以太之心科技有限公司（以下简称“以太之心”）宣布完成数千万种子轮融资。",
+  }];
+  const event = {
+    display_title_zh: "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+    action: "完成数千万种子轮融资",
+    object: "",
+    metrics: ["数千万"],
+    entities: ["EN-ETHERHEART"],
+    claim_refs: ["CL-ETHERHEART"],
+  };
+
+  const company = subjectCompanyForEvent(event, entities, {}, claims);
+  assert.equal(company?.entity_id, "EN-ETHERHEART");
+  assert.equal(company?.canonical_name, "上海以太之心科技有限公司");
+  assert.ok(company?.aliases?.includes("AI智能体基础设施公司“以太之心”"));
+});
+
 test("Chinese funding titles resolve the company entity instead of a headline fragment", () => {
   const cases = [
     {
@@ -1738,6 +1766,9 @@ test("可选研究数组中的不完整条目在硬门禁前被删除", () => {
     body_clean: "Northstar invested in Acme. Acme Agent automates enterprise workflows. Peer serves developers. Revenue grew 50%.",
   };
   const payload = sanitizeResearchPayload({
+    company: {
+      founders: [{ name: "", role: "", evidence_refs: evidence("SRC-1", "Northstar invested in Acme.") }],
+    },
     financing: {
       investors: [{
         name: "Northstar",
@@ -1767,6 +1798,7 @@ test("可选研究数组中的不完整条目在硬门禁前被删除", () => {
       }],
     },
   }, [source]);
+  assert.deepEqual(payload.company.founders, []);
   assert.deepEqual(payload.customers, []);
   assert.deepEqual(payload.comparisons, []);
   assert.deepEqual(payload.metrics, []);

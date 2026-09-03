@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-e70ac58b701a7498",
+    "name": "谷歌拆解退役",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-631c8bc2350d6d66"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-02",
+    "lastSeen": "2026-09-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-631c8bc2350d6d66"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-631c8bc2350d6d66",
+        "dataDate": "2026-09-03",
+        "date": "2026-09-02",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "谷歌拆解退役服务器回收 DDR4 内存，重新部署至新型 AI 服务器",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e70ac58b701a7498",
+          "EN-bbdefa2950f49882"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-3847ae9d638e1264",
+      "eventId": "EV-631c8bc2350d6d66",
+      "dataDate": "2026-09-03",
+      "date": "2026-09-02",
+      "title": "谷歌拆解退役服务器回收 DDR4 内存，重新部署至新型 AI 服务器",
+      "hardwareType": "server",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/997/687.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-09-02",
+      "entityIds": [
+        "EN-e70ac58b701a7498",
+        "EN-bbdefa2950f49882"
+      ]
+    }
+  ]
+}

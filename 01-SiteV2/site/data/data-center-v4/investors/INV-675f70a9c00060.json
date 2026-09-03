@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "institution": {
@@ -20,23 +20,30 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-08-24",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "first_external"
+      "first_external",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-9a970ad7900121db",
+        "canonical_entity_id": "",
+        "name": "小鹏机器人业务"
+      },
       {
         "entity_id": "EN-6f7ac1823da81d2e",
         "canonical_entity_id": "EN-6f7ac1823da81d2e",
@@ -44,6 +51,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e52bb42b272a3729",
+        "funding_insight_id": "FI-e3406c2e889004e3",
+        "event_ids": [
+          "EV-987cb2e5e20f79ce"
+        ],
+        "company_entity_id": "EN-9a970ad7900121db",
+        "company_canonical_entity_id": "",
+        "company_name": "小鹏机器人业务",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9 亿美元"
+        },
+        "announced_at": "2026-08-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ec9a5e83ce18f75",
+            "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+            "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+            "source_content_hash": "b8e4f0b869df00ee",
+            "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+            "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+          }
+        ]
+      },
       {
         "activity_id": "IA-60bdf48f03f8b5d6",
         "funding_insight_id": "FI-71c58a10a93101c8",
@@ -94,6 +141,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2ec9a5e83ce18f75",
+        "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+        "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+        "source_content_hash": "b8e4f0b869df00ee",
+        "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+        "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+      },
       {
         "source_id": "FISRC-d2c8c841370ed82a",
         "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",

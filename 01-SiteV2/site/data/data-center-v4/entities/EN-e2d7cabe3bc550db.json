@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -24,7 +24,8 @@
     ],
     "eventIds": [],
     "viewpointIds": [
-      "2094639655258091792",
+      "2094995775952740795",
+      "2094987791566622971",
       "2077968093406707970",
       "2077966904938127502",
       "2077572198655754583",
@@ -79,23 +80,23 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-05",
-    "lastSeen": "2026-09-01",
+    "lastSeen": "2026-09-02",
     "handle": "petergyang",
     "role": "为忙碌人士提供的实用AI教程和访谈",
     "organization": "",
     "viewpointTags": [
-      "Agent",
-      "Agent 工作流观点",
-      "Agentic AI",
-      "AI 编程",
-      "AI Coding 观点",
-      "AI Coding",
       "产品与创业",
       "产品策略观点",
       "AI 应用与平台",
       "AI 基础设施",
       "模型基础设施观点",
+      "AI 编程",
+      "AI Coding 观点",
+      "AI Coding",
       "企业工作流",
+      "Agent",
+      "Agent 工作流观点",
+      "Agentic AI",
       "Builder 观点"
     ],
     "relationIds": [],
@@ -111,10 +112,16 @@
     "timeline": [],
     "viewpoints": [
       {
-        "id": "2094639655258091792",
-        "date": "2026-09-01",
-        "title": "信任将成为个人智能体普及的最大障碍（也是最大驱动力）。",
-        "sourceUrl": "https://x.com/petergyang/status/2094639655258091792"
+        "id": "2094995775952740795",
+        "date": "2026-09-02",
+        "title": "在我整理AI技能的过程中，有个问题想请教这里的专家们。有时我会陷入这样的模式：1. 运行我的技能，但一次无法完美完成；2. 我手动与AI迭代调整，直到正确；3. 然后我问AI类似“你会如何更新技能，以便我们能一次搞定？”的问题，再审查并批准它的修改。问题在于，AI常常过度拟合这一条线索，随着时间推移，技能会逐渐偏离初衷。这里有什么好的解决方案吗？",
+        "sourceUrl": "https://x.com/petergyang/status/2094995775952740795"
+      },
+      {
+        "id": "2094987791566622971",
+        "date": "2026-09-02",
+        "title": "如果你正在试用Fable 5.1，我强烈建议在你的技能上运行：/claude-api prompt-audit。它能找出大量冗余内容和规则，供最新模型移除。我现在正在为我的所有技能运行它。",
+        "sourceUrl": "https://x.com/petergyang/status/2094987791566622971"
       },
       {
         "id": "2077968093406707970",

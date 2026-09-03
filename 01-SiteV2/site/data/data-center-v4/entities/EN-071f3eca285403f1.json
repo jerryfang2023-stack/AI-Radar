@@ -5,119 +5,55 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "entity": {
-    "id": "EN-5a28a1a99a417ba5",
-    "name": "Ant Group",
+    "id": "EN-071f3eca285403f1",
+    "name": "AI智能体基础设施公司“以太之心”",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [
-      "蚂蚁集团"
-    ],
-    "verificationStatus": "verified",
+    "aliases": [],
+    "verificationStatus": "candidate",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-88a984b765bb54f1",
-      "EV-72dc9ab86e08fbab",
-      "EV-4c8fa40c36b6ddb7"
+      "EV-89ec502a1340079a"
     ],
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-03",
-    "lastSeen": "2026-08-08",
+    "firstSeen": "2026-08-31",
+    "lastSeen": "2026-09-03",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-88a984b765bb54f1"
+        "EV-89ec502a1340079a"
       ],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [
-        "EV-72dc9ab86e08fbab",
-        "EV-4c8fa40c36b6ddb7"
-      ],
+      "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
       {
-        "id": "EV-72dc9ab86e08fbab",
-        "dataDate": "2026-08-08",
-        "date": "2026-08-08",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "蚂蚁集团百灵开源 Ling-3.0-flash 模型：124B 总参数、5.1B 激活参数",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "reasoning",
-            "name": "推理能力",
-            "entityIds": [
-              "EN-b7ff6c95ddfdac24"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-b7ff6c95ddfdac24",
-          "EN-5a28a1a99a417ba5",
-          "EN-8989aada6eb4a4c3"
-        ]
-      },
-      {
-        "id": "EV-4c8fa40c36b6ddb7",
-        "dataDate": "2026-08-08",
-        "date": "2026-08-07",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [
-              "EN-5a28a1a99a417ba5"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-5a28a1a99a417ba5",
-          "EN-6782c62ce2e7b65a"
-        ]
-      },
-      {
-        "id": "EV-88a984b765bb54f1",
-        "dataDate": "2026-08-03",
-        "date": "2026-08-03",
+        "id": "EV-89ec502a1340079a",
+        "dataDate": "2026-09-03",
+        "date": "2026-08-31",
         "eventType": "funding",
         "eventTypeLabel": "融资",
         "eventGroup": "融资与并购",
         "status": "completed",
         "statusLabel": "已完成",
-        "title": "西湖心辰完成数亿元B+轮融资，蚂蚁系创始人领衔扩散模型创业",
+        "title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资_新浪财经_新浪网",
         "displayTags": [
           {
             "dimensionId": "ai_market_category",
@@ -125,11 +61,11 @@
             "id": "infrastructure_compute",
             "name": "基础设施与算力",
             "entityIds": [
-              "EN-847c00c904ccdb98"
+              "EN-447a48e5d0951831"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-31587455ee69f1bb",
-            "fundingInsightId": "FI-08e798f440d06eda"
+            "reviewRef": "REC-6a81720bddb0f0f6",
+            "fundingInsightId": "FI-6068d3b0fa0a22d2"
           },
           {
             "dimensionId": "ai_market_subcategory",
@@ -137,95 +73,70 @@
             "id": "development_deployment",
             "name": "开发与部署",
             "entityIds": [
-              "EN-847c00c904ccdb98"
+              "EN-447a48e5d0951831"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-e8bb33113c892060",
-            "fundingInsightId": "FI-08e798f440d06eda"
+            "reviewRef": "REC-91fa31626f23beec",
+            "fundingInsightId": "FI-6068d3b0fa0a22d2"
           },
           {
             "dimensionId": "ai_market_application",
             "dimensionName": "AI 市场细分",
-            "id": "models",
-            "name": "模型",
+            "id": "ai_development_orchestration",
+            "name": "AI 开发与编排",
             "entityIds": [
-              "EN-847c00c904ccdb98"
+              "EN-447a48e5d0951831"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-b1cab28ebbb08cad",
-            "fundingInsightId": "FI-08e798f440d06eda"
+            "reviewRef": "REC-2bdca90000e852bf",
+            "fundingInsightId": "FI-6068d3b0fa0a22d2"
           },
           {
             "dimensionId": "product_form",
             "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
             "entityIds": [
-              "EN-847c00c904ccdb98"
+              "EN-447a48e5d0951831"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-0721102fc8eef407",
-            "fundingInsightId": "FI-08e798f440d06eda"
+            "reviewRef": "REC-252170dbc55ba199",
+            "fundingInsightId": "FI-6068d3b0fa0a22d2"
           },
           {
             "dimensionId": "use_case",
             "dimensionName": "应用场景",
-            "id": "content_creation",
-            "name": "内容创作",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
             "entityIds": [
-              "EN-847c00c904ccdb98"
+              "EN-447a48e5d0951831"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-00a4347661c2486b",
-            "fundingInsightId": "FI-08e798f440d06eda"
+            "reviewRef": "REC-7b03a3037ef4dbc7",
+            "fundingInsightId": "FI-6068d3b0fa0a22d2"
           },
           {
             "dimensionId": "use_case",
             "dimensionName": "应用场景",
-            "id": "customer_support",
-            "name": "客户支持",
+            "id": "software_development",
+            "name": "软件开发",
             "entityIds": [
-              "EN-847c00c904ccdb98"
+              "EN-447a48e5d0951831"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-f33e04d43cc83b35",
-            "fundingInsightId": "FI-08e798f440d06eda"
+            "reviewRef": "REC-98621b520abc1b72",
+            "fundingInsightId": "FI-6068d3b0fa0a22d2"
           },
           {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "knowledge_search",
-            "name": "知识与搜索",
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
             "entityIds": [
-              "EN-847c00c904ccdb98"
+              "EN-071f3eca285403f1"
             ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-69e45f7f85a83744",
-            "fundingInsightId": "FI-08e798f440d06eda"
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "healthcare_life_sciences",
-            "name": "医疗与生命科学",
-            "entityIds": [
-              "EN-847c00c904ccdb98"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-9472c2f9230b9de8",
-            "fundingInsightId": "FI-08e798f440d06eda"
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "retail_ecommerce",
-            "name": "零售与电商",
-            "entityIds": [
-              "EN-847c00c904ccdb98"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-f2bdb2d1ac16efe8",
-            "fundingInsightId": "FI-08e798f440d06eda"
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "target_user",
@@ -233,23 +144,11 @@
             "id": "business_user",
             "name": "企业用户",
             "entityIds": [
-              "EN-847c00c904ccdb98"
+              "EN-447a48e5d0951831"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-c6b32f74e71c483a",
-            "fundingInsightId": "FI-08e798f440d06eda"
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "consumer",
-            "name": "个人用户",
-            "entityIds": [
-              "EN-847c00c904ccdb98"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-993da186f3bfbdac",
-            "fundingInsightId": "FI-08e798f440d06eda"
+            "reviewRef": "REC-797f6e88354cca73",
+            "fundingInsightId": "FI-6068d3b0fa0a22d2"
           },
           {
             "dimensionId": "target_user",
@@ -257,16 +156,17 @@
             "id": "developer",
             "name": "开发者",
             "entityIds": [
-              "EN-847c00c904ccdb98"
+              "EN-447a48e5d0951831"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-a549b403cb4c961d",
-            "fundingInsightId": "FI-08e798f440d06eda"
+            "reviewRef": "REC-94f4ed562e334775",
+            "fundingInsightId": "FI-6068d3b0fa0a22d2"
           }
         ],
         "entityIds": [
-          "EN-847c00c904ccdb98",
-          "EN-5a28a1a99a417ba5"
+          "EN-071f3eca285403f1",
+          "EN-48b9eb06dc1d0353",
+          "EN-447a48e5d0951831"
         ]
       }
     ],
@@ -283,6 +183,7 @@
       "valueId": "agentic_execution",
       "eventIds": [
         "EV-b9d8b3582f12bdc7",
+        "EV-89ec502a1340079a",
         "EV-ab839326ca9597d8",
         "EV-1744d0e71176f9a1",
         "EV-bdcb22b1a53358f5",
@@ -358,7 +259,6 @@
         "EV-6ae3594aadfcd3d8",
         "EV-917a390341b9fce6",
         "EV-c85011ca6a0389bf",
-        "EV-d8ab585446e56beb",
         "EV-8bbc23e53e799d9d",
         "EV-fb5d2ae875255804",
         "EV-f020dd198aa2f952",
@@ -396,6 +296,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-8ae771f26c02f7c4",
         "EV-8ea4e403a1024ad2",
         "EV-b93b6abf31662339",
         "EV-29f8117648050a66",
@@ -487,6 +388,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-127ae714eb61dff9",
+        "EV-6ffd497940673b62",
+        "EV-b8a7ddde8a7e42c8",
+        "EV-859489cd3fa4e596",
         "EV-56a8650295d994ba",
         "EV-5d6ae96065843410",
         "EV-e5b1864636f23f25",
@@ -543,7 +448,6 @@
         "EV-cfaa2f6b5c7a5f8a",
         "EV-3dc8d5c373ddd1f3",
         "EV-92d9b6931bcfdd11",
-        "EV-355ddfd4c6180ab0",
         "EV-51891fe9f47dd616",
         "EV-997609968760857a",
         "EV-e6b22f59df71890e",
@@ -604,17 +508,14 @@
         "EV-cb3a8846bc4f8aca",
         "EV-d0c8602da4e16d43",
         "EV-77673483fd101c8f",
-        "EV-8b67e7ac8e61cc1e",
         "EV-91b44062c92837ee",
         "EV-938eebe85a688ff1",
         "EV-aa25937649956e62",
         "EV-cc974e0031c69715",
         "EV-d4278191ae11f198",
-        "EV-ed272c57e1513d3f",
         "EV-4f36e494d9281522",
         "EV-b43f22d8bc7fec3f",
         "EV-86ab9c2f1416e9d8",
-        "EV-3b1d1dd87442e7f1",
         "EV-4cb7e4c371fb252e",
         "EV-7d09b00182b08c3f",
         "EV-938e395d50c33f40",
@@ -757,7 +658,6 @@
         "EV-cac9d9f31ef675ce",
         "EV-284f06d7bd2d24f9",
         "EV-84b423077bf8dac8",
-        "EV-c11ee0da38376254",
         "EV-1f61330a3f828179",
         "EV-309ea4fc27a66485",
         "EV-e295f808713644c7",
@@ -804,7 +704,6 @@
         "EV-5cdcd1fc66f8288b",
         "EV-392894a7cc673b9e",
         "EV-d65865bfd265d537",
-        "EV-4beb890f0879aeaf",
         "EV-cf306b007f5c321b",
         "EV-8ac35758179e5ce6",
         "EV-6552317423a0c956",
@@ -813,6 +712,7 @@
       ],
       "entityIds": [
         "EN-9fe430e5274621be",
+        "EN-071f3eca285403f1",
         "EN-05bb7905b99d8025",
         "EN-01b4537c6e0a2da7",
         "EN-67e8c106650aa683",
@@ -913,6 +813,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-03ecbdd9b68f40a0",
         "EN-1701cfb023a18b15",
         "EN-9fbf261b62c1d7c0",
         "EN-29b9f0cae32e7a8a",
@@ -965,15 +866,15 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-c70eca6b0f88f44d",
         "EN-2b6e51bec93e86c1",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
         "EN-373ac021a2c0bb2c",
         "EN-0d47d3f0783749a8",
         "EN-f8e930daaadf36ec",
         "EN-cb4754c48f8023d0",
         "EN-d9b1d7819af92e77",
         "EN-738e22f0acab814c",
-        "EN-bbdefa2950f49882",
         "EN-53a7676bcec5dff6",
         "EN-4cc3012261da02d1",
         "EN-4a6a6aae5047db03",
@@ -997,7 +898,6 @@
         "EN-6c87e5496f592f3c",
         "EN-6849cf65695e6e77",
         "EN-74be4cbf48e647b2",
-        "EN-c0fced8f2483e9f5",
         "EN-dca6ec9510fc0176",
         "EN-5a28a1a99a417ba5",
         "EN-842fcb5e60989a03",
@@ -1019,6 +919,7 @@
         "EN-cd6362472aea60ef",
         "EN-8d57f84bd1847b24",
         "EN-3149ad548669e717",
+        "EN-c0fced8f2483e9f5",
         "EN-f1649339197f76d6",
         "EN-a7baed72c308ce88",
         "EN-ba728f8ca730921f",
@@ -1030,7 +931,6 @@
         "EN-149e96efddc48168",
         "EN-09d3eb0b07daf955",
         "EN-e16fc821f34228d1",
-        "EN-dd758281d0c70e60",
         "EN-6f21a653c48f4f19",
         "EN-2c348893efb2316e",
         "EN-2abf8289b2f2113f",
@@ -1134,6 +1034,7 @@
         "EN-e72901462ebe4458"
       ],
       "fdeIds": [
+        "FDE-6b6d74f3b3bbf5a5",
         "FDE-98c63fdef8a7d160",
         "FDE-d20f430306d29bbd",
         "FDE-b093649016ddce0b",

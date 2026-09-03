@@ -572,6 +572,9 @@ function findEventRule(title, lead = "") {
       && /发布.{0,50}研究报告/u.test(lead)) {
     return { eventType: "research_result", pattern: /发布.{0,50}研究报告/u };
   }
+  if (/(?:大学|学院|研究院|研究所)(?:（[A-Za-z0-9 .&'-]{2,30}）)?[^。]{0,40}(?:牵头|开展)[^。]{0,30}(?:发布|发表).{0,12}(?:最新)?研究/u.test(lead)) {
+    return { eventType: "research_result", pattern: /(?:发布|发表).{0,12}(?:最新)?研究/u };
+  }
   if (/\bThe Home Depot\b.{0,100}\bDelivers\b.{0,120}\bUsing Google Cloud\b/iu.test(title)) {
     return { eventType: "deployment", pattern: /\b(?:launching|pilot|AI voice agents?)\b/iu };
   }
@@ -840,6 +843,20 @@ function explicitClaimOrganizationMentions(eventClaims = []) {
   };
   for (const claim of eventClaims) {
     const quote = normalizeSpace(claim.source_quote);
+    const chineseResearchInstitution = quote.match(
+      /(?:^|[———:：，,。；;\s])(?:报道称由|由)?([\p{Script=Han}A-Za-z0-9·&.-]{2,24}?(?:大学|学院|研究院|研究所))(?=(?:（[A-Za-z0-9 .&'-]{2,30}）)?[^。]{0,25}(?:牵头|开展)[^。]{0,25}(?:发布|发表).{0,12}(?:最新)?研究)/u,
+    );
+    if (chineseResearchInstitution?.[1]) {
+      const offset = chineseResearchInstitution.index
+        + chineseResearchInstitution[0].lastIndexOf(chineseResearchInstitution[1]);
+      add({ ...claim, source_quote: quote }, chineseResearchInstitution[1], offset);
+    }
+    const chineseLegalPattern = /(?:^|[———:：，,；;\s])([\p{Script=Han}A-Za-z0-9·&.-]{2,40}?(?:有限责任公司|股份有限公司|有限公司))(?=[（(，,。；;\s]|$)/gu;
+    for (const match of quote.matchAll(chineseLegalPattern)) {
+      const name = match[1];
+      const offset = match.index + match[0].lastIndexOf(name);
+      add({ ...claim, source_quote: quote }, name, offset);
+    }
     const legal = quote.match(/\b([A-Z][A-Za-z0-9&.'/-]*(?:\s+[A-Z][A-Za-z0-9&.'/-]*){1,5}),?\s+(?:Inc\.?|LLC|Ltd\.?|Corp\.?|Corporation|Limited)\b/u);
     if (legal?.[1]) add({ ...claim, source_quote: quote }, legal[1], legal.index);
     const possessiveAgency = quote.match(/\b(?:[A-Z][A-Za-z]+\s+){0,2}[A-Z][A-Za-z]+(?:'s|’s)\s+([A-Z][A-Za-z&.'/-]*(?:\s+[A-Z][A-Za-z&.'/-]*){1,5})(?=\s+(?:will|has|have|announced|selected|launched|deployed)\b)/u);
