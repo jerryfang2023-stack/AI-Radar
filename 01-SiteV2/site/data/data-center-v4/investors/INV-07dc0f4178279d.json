@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "institution": {
@@ -20,7 +20,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 3,
     "market_regions": [
@@ -29,13 +29,14 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-09-02",
     "role_counts": {
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
       {
@@ -55,6 +56,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-983206a5556a6799",
+        "funding_insight_id": "FI-d61afc2c6c00363a",
+        "event_ids": [
+          "EV-81bbaaec2965864a"
+        ],
+        "company_entity_id": "FICO-wonderful",
+        "company_canonical_entity_id": "",
+        "company_name": "Wonderful",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$550 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 550000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5.5 亿美元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3bc5a4e973b035eb",
+            "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+            "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+            "source_content_hash": "290d66b36443e7c5",
+            "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+            "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d46599890a2b0b19",
         "funding_insight_id": "FI-2a73fb895b9521fe",
@@ -179,6 +220,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-3bc5a4e973b035eb",
+        "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+        "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+        "source_content_hash": "290d66b36443e7c5",
+        "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+        "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+      },
       {
         "source_id": "FISRC-44c6debf2c528a2a",
         "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",

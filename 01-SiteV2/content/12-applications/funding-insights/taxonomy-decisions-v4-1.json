@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-02T02:15:59.256Z",
+    "generated_at": "2026-09-03T03:26:05.629Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 302,
-    "input_hash": "7a743fb99a3abb98",
+    "decision_count": 306,
+    "input_hash": "434341dd9781eaef",
     "override_count": 17,
-    "needs_review_count": 6,
-    "low_confidence_count": 13
+    "needs_review_count": 8,
+    "low_confidence_count": 15
   },
   "decisions": [
     {
@@ -5983,6 +5983,79 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "clusterdOS将裸金属服务器转化为GPU集群，属于为AI构建者提供硬件/计算基础设施，归入基础设施计算下的计算基础设施。"
+    },
+    {
+      "event_id": "EV-89ec502a1340079a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.72,
+      "needs_review": true,
+      "rationale": "公司定位为AI智能体基础设施，Aeloon负责编排工具与流程，AetherStation提供本地运行底座，属于为AI构建者提供开发部署基础设施，而非面向单一行业或跨行业业务功能。"
+    },
+    {
+      "event_id": "EV-987cb2e5e20f79ce",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "小鹏IRON是人形机器人，具备感知、决策和物理行动能力，直接属于物理AI，而非仅世界模型或未来规划。"
+    },
+    {
+      "event_id": "EV-f0a666f5416e049f",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "HiddenLayer保护AI模型、智能体和工作流免受攻击，属于为AI构建者提供安全基础设施，归入可观测性与评估下的模型/智能体安全。"
+    },
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.78,
+      "needs_review": true,
+      "rationale": "Wonderful AI OS协调智能体、工作流和企业上下文，属于跨行业企业工作流平台，而非单一行业应用或基础设施。"
     }
   ]
 }

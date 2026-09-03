@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "node": {
@@ -19,20 +19,21 @@
     "valueId": "human_in_loop",
     "eventIds": [
       "EV-fe63a869fe4cee45",
+      "EV-b600caa2f74af16f",
       "EV-243e73016576fa43",
       "EV-36883997905d34d8",
       "EV-9576bebb698a4c66"
     ],
     "entityIds": [
-      "EN-240389f4b730bad4",
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-240389f4b730bad4"
     ],
     "fdeIds": [
       "FDE-8cc818b0e819b217"
     ],
     "hardwareIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-08-11"
+    "lastSeen": "2026-09-03"
   },
   "events": [
     {
@@ -175,6 +176,107 @@
       "products": [],
       "sourceUrl": "https://markets-data-api-proxy.ft.com/data/announce/detail?dockey=600-202606110800CANADANWCANADAPR_C8019-1",
       "publisher": "markets-data-api-proxy.ft.com"
+    },
+    {
+      "id": "EV-b600caa2f74af16f",
+      "dataDate": "2026-09-03",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-03",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 推出 Enterprise Frontier Safeguards（EFS）：零数据保留与跨会话滥用检测兼得",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "推出",
+      "object": "Enterprise Frontier Safeguards（EFS）：零数据保留与跨会话滥用检测兼得",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-ce177ba6dd222302"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Enterprise Frontier Safeguards"
+      ],
+      "productName": "Enterprise Frontier Safeguards",
+      "products": [
+        {
+          "name": "Enterprise Frontier Safeguards",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/02/anthropic-enterprise-frontier-safeguards-efs",
+      "publisher": "MarkTechPost（RSS）"
     },
     {
       "id": "EV-243e73016576fa43",
@@ -535,74 +637,6 @@
   ],
   "entities": [
     {
-      "id": "EN-240389f4b730bad4",
-      "name": "AMD",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-a0ca934522418c0b",
-        "EV-18223a8aeea7bcdd",
-        "EV-83728e3b6c7736ce",
-        "EV-a00763037a94d512",
-        "EV-b75870625504d004",
-        "EV-1abf0d076d30ec6d",
-        "EV-2c13574b57844567",
-        "EV-67212040ee9cd7c8",
-        "EV-b150af93042566a6",
-        "EV-0e3f748f87f5892a",
-        "EV-8a2d8ebbd700c787",
-        "EV-d2247eeac1478994",
-        "EV-ad8e1754463695fd",
-        "EV-acb2087779a8ea3c",
-        "EV-b334f46b11a68045",
-        "EV-fe644da028a13217",
-        "EV-75b9b997e9c7e5d1",
-        "EV-737a6c098b70f6ff",
-        "EV-601240034cf86d7f",
-        "EV-099c1bce0a50965d",
-        "EV-443e093ab54d0228",
-        "EV-b8893d112f761a30",
-        "EV-f79713437230562f",
-        "EV-ca819cdf9008f342",
-        "EV-2bbbe9f38c3d66f0",
-        "EV-243e73016576fa43",
-        "EV-563843979fb55b9b",
-        "EV-87f052d24396fdbc",
-        "EV-5cd352f2a021350d",
-        "EV-ae9142b65fa86975",
-        "EV-d709599eddf5db04"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-product_form-developer_tool",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-model",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-software_development",
-        "TX-product_form-robotic_system",
-        "TX-use_case-physical_automation",
-        "TX-product_form-ai_compute_system",
-        "TX-technology-embodied_ai",
-        "TX-technology-human_in_loop"
-      ],
-      "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-45c52af0feb0f285",
-        "EN-dc9993227a515201",
-        "EN-147b4d06ea998b70",
-        "EN-630d75372b4d1eb5"
-      ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-09-02"
-    },
-    {
       "id": "EN-c70eca6b0f88f44d",
       "name": "Anthropic",
       "entityType": "organization_candidate",
@@ -693,7 +727,12 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-37e3784d55f5f5d0",
+        "EV-4b60d535f321263d",
+        "EV-03ce826429a97aa9",
         "EV-3590ab0568b70ba2",
+        "EV-b600caa2f74af16f",
+        "EV-d8707197c20b118e",
         "EV-5d6ae96065843410",
         "EV-6c1304bb9c6cc29e",
         "EV-0990900bf0754803",
@@ -891,6 +930,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-b1ac270277a5c1bc",
         "EV-4a982ba6f291ddec",
         "EV-278745d4aa7a4b3a",
         "EV-dff2cb04fb2c59be",
@@ -976,34 +1016,34 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-education",
+        "TX-product_form-model_api_service",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
-        "TX-technology-agentic_execution",
-        "TX-technology-open_weights",
-        "TX-product_form-compute_cloud_service",
-        "TX-product_form-chip_accelerator",
+        "TX-target_user-consumer",
+        "TX-technology-embodied_ai",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-consumer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-developer",
+        "TX-use_case-security_operations",
+        "TX-technology-agentic_execution",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
+        "TX-technology-open_weights",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-industry-legal_services",
-        "TX-product_form-model_api_service",
         "TX-use_case-data_analysis",
         "TX-industry-aerospace_defense",
         "TX-industry-government_public_sector",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-education",
         "TX-industry-financial_services",
-        "TX-technology-embodied_ai",
         "TX-technology-long_context",
         "TX-target_user-educator",
         "TX-technology-model_context_protocol",
@@ -1015,7 +1055,6 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
-        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -1030,6 +1069,7 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
+        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -1039,6 +1079,73 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
+      "lastSeen": "2026-09-03"
+    },
+    {
+      "id": "EN-240389f4b730bad4",
+      "name": "AMD",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a0ca934522418c0b",
+        "EV-18223a8aeea7bcdd",
+        "EV-83728e3b6c7736ce",
+        "EV-a00763037a94d512",
+        "EV-b75870625504d004",
+        "EV-1abf0d076d30ec6d",
+        "EV-2c13574b57844567",
+        "EV-67212040ee9cd7c8",
+        "EV-b150af93042566a6",
+        "EV-0e3f748f87f5892a",
+        "EV-8a2d8ebbd700c787",
+        "EV-d2247eeac1478994",
+        "EV-ad8e1754463695fd",
+        "EV-acb2087779a8ea3c",
+        "EV-b334f46b11a68045",
+        "EV-fe644da028a13217",
+        "EV-75b9b997e9c7e5d1",
+        "EV-737a6c098b70f6ff",
+        "EV-601240034cf86d7f",
+        "EV-099c1bce0a50965d",
+        "EV-443e093ab54d0228",
+        "EV-b8893d112f761a30",
+        "EV-f79713437230562f",
+        "EV-ca819cdf9008f342",
+        "EV-2bbbe9f38c3d66f0",
+        "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
+        "EV-87f052d24396fdbc",
+        "EV-5cd352f2a021350d",
+        "EV-ae9142b65fa86975",
+        "EV-d709599eddf5db04"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-robotic_system",
+        "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
+        "TX-product_form-enterprise_software_platform",
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-software_development",
+        "TX-product_form-developer_tool",
+        "TX-product_form-ai_compute_system",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-human_in_loop"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-45c52af0feb0f285",
+        "EN-dc9993227a515201",
+        "EN-147b4d06ea998b70",
+        "EN-630d75372b4d1eb5"
+      ],
+      "firstSeen": "2026-05-23",
       "lastSeen": "2026-09-02"
     }
   ],

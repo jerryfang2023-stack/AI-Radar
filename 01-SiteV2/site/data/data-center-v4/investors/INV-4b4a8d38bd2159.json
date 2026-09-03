@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
+    "quarantinedEventCount": 24
+  },
+  "institution": {
+    "id": "INV-4b4a8d38bd2159",
+    "name": "Delta-v Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-02",
+    "latest_disclosed_at": "2026-09-02",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-befd0093486b775d",
+        "canonical_entity_id": "",
+        "name": "HiddenLayer"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-4b60e1e76d6741c1",
+        "funding_insight_id": "FI-1355b7139ccc6c99",
+        "event_ids": [
+          "EV-f0a666f5416e049f"
+        ],
+        "company_entity_id": "EN-befd0093486b775d",
+        "company_canonical_entity_id": "",
+        "company_name": "HiddenLayer",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$100M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d8f7e5310c5b9a5e",
+            "source_url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments",
+            "source_title": "HiddenLayer 融资 1 亿美元 B 轮，企业加码 AI 部署安全",
+            "source_content_hash": "d0830065200fc42b",
+            "quote": "a Series B funding round that was led by Delta-v Capital",
+            "quote_hash": "54f3eadb85ed75ef25adb2a0d0b6630b6b583558f4114c2b3a95040a92451316"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d8f7e5310c5b9a5e",
+        "source_url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments",
+        "source_title": "HiddenLayer 融资 1 亿美元 B 轮，企业加码 AI 部署安全",
+        "source_content_hash": "d0830065200fc42b",
+        "quote": "a Series B funding round that was led by Delta-v Capital",
+        "quote_hash": "54f3eadb85ed75ef25adb2a0d0b6630b6b583558f4114c2b3a95040a92451316"
+      }
+    ]
+  }
+}

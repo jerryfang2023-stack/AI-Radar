@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-6162efd3ae5eaf85",
+    "name": "XPeng",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [
+      "小鹏汽车"
+    ],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-987cb2e5e20f79ce"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-03",
+    "lastSeen": "2026-09-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-987cb2e5e20f79ce"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-987cb2e5e20f79ce",
+        "dataDate": "2026-09-03",
+        "date": "2026-09-03",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b9425f45ae287895",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cb3e8dfb205545cf",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1996171c3015443f",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-369f32171e20e0af",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-450d1ad153ce50c9",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          }
+        ],
+        "entityIds": [
+          "EN-6162efd3ae5eaf85",
+          "EN-9a970ad7900121db",
+          "EN-9c8ae69b84f21a2e",
+          "EN-047364b9be67f665"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

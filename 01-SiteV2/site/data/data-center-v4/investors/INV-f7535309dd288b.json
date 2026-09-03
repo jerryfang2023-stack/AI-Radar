@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
+    "quarantinedEventCount": 24
+  },
+  "institution": {
+    "id": "INV-f7535309dd288b",
+    "name": "小鹏集团旗下全资子公司",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-08-24",
+    "latest_disclosed_at": "2026-08-24",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-866bfcfddf3cc385",
+        "funding_insight_id": "FI-e3406c2e889004e3",
+        "event_ids": [
+          "EV-987cb2e5e20f79ce"
+        ],
+        "company_entity_id": "EN-9a970ad7900121db",
+        "company_canonical_entity_id": "",
+        "company_name": "小鹏机器人业务",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9 亿美元"
+        },
+        "announced_at": "2026-08-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "本轮认购方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2b9c9aa0b968cbe6",
+            "source_url": "https://eu.36kr.com/zh/p/3954397242473863",
+            "source_title": "何小鹏打破宇树纪录 行业突破引关注",
+            "source_content_hash": "53298de93d50bd64",
+            "quote": "小鹏集团旗下全资子公司拟出资2亿美元，认购9867.52万股A系列优先股",
+            "quote_hash": "42b2cdd1001411eb0097a0ddf075fd1799977318c70d7f75468a5b7ef7197f22"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-2b9c9aa0b968cbe6",
+        "source_url": "https://eu.36kr.com/zh/p/3954397242473863",
+        "source_title": "何小鹏打破宇树纪录 行业突破引关注",
+        "source_content_hash": "53298de93d50bd64",
+        "quote": "小鹏集团旗下全资子公司拟出资2亿美元，认购9867.52万股A系列优先股",
+        "quote_hash": "42b2cdd1001411eb0097a0ddf075fd1799977318c70d7f75468a5b7ef7197f22"
+      }
+    ]
+  }
+}

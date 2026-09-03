@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "institution": {
@@ -20,7 +20,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 6,
     "market_regions": [
@@ -29,14 +29,15 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-05-06",
-    "latest_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-09-02",
     "role_counts": {
-      "lead": 2,
+      "lead": 3,
       "participant": 4
     },
     "round_codes": [
       "series_a",
       "series_b",
+      "series_c",
       "series_d",
       "series_f"
     ],
@@ -73,6 +74,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0e4c60414aef4bfa",
+        "funding_insight_id": "FI-d61afc2c6c00363a",
+        "event_ids": [
+          "EV-81bbaaec2965864a"
+        ],
+        "company_entity_id": "FICO-wonderful",
+        "company_canonical_entity_id": "",
+        "company_name": "Wonderful",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$550 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 550000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5.5 亿美元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3bc5a4e973b035eb",
+            "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+            "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+            "source_content_hash": "290d66b36443e7c5",
+            "quote": "Insight Partners returned to lead this round, too",
+            "quote_hash": "e83ddba2629ebc0a50266e83e0af77210dffaeef336e64cea6a1df209dc9e9de"
+          }
+        ]
+      },
       {
         "activity_id": "IA-53eca9a2793faf9b",
         "funding_insight_id": "FI-3b1ea359415f476d",
@@ -325,6 +366,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-3bc5a4e973b035eb",
+        "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+        "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+        "source_content_hash": "290d66b36443e7c5",
+        "quote": "Insight Partners returned to lead this round, too",
+        "quote_hash": "e83ddba2629ebc0a50266e83e0af77210dffaeef336e64cea6a1df209dc9e9de"
+      },
       {
         "source_id": "FISRC-80d6b020dd75ac09",
         "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",

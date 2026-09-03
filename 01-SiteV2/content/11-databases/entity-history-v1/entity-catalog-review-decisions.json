@@ -1,23 +1,24 @@
 {
   "schema_version": "ENTITY-CATALOG-REVIEW-V1",
-  "generated_at": "2026-09-02T10:25:00+08:00",
-  "reviewer": "codex-2026-09-02",
+  "generated_at": "2026-09-03T11:36:00+08:00",
+  "reviewer": "codex-2026-09-03",
   "inputs": [
     "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json",
     "agent-workflow/reports/entity-catalog-secondary-search.json",
     "agent-workflow/reports/entity-catalog-deepseek-audit-current.json",
     "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/entity-mentions.json",
     "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/entity-mentions.json",
-    "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/entity-mentions.json"
+    "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/entity-mentions.json",
+    "01-SiteV2/content/11-databases/data-center-v4/2026-09-03/entity-mentions.json"
   ],
   "summary": {
-    "current_catalog_reviewed": 533,
+    "current_catalog_reviewed": 536,
     "supplemental_claim_entities": 25,
     "historical_decisions_retained": 358,
-    "reviewed": 909,
-    "confirmed": 377,
+    "reviewed": 912,
+    "confirmed": 379,
     "corrected": 187,
-    "merged": 110,
+    "merged": 111,
     "quarantined": 235
   },
   "decisions": [
@@ -30680,6 +30681,90 @@
       "review_status": "accepted",
       "reviewer": "codex-2026-09-02",
       "reviewed_at": "2026-09-02T10:25:00+08:00",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-447a48e5d0951831",
+      "current": {
+        "name": "上海以太之心科技有限公司",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "上海以太之心科技有限公司",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": ["以太之心"]
+      },
+      "evidence": {
+        "claim_refs": ["CL-91c7eba6da50dcd4"],
+        "secondary_sources": []
+      },
+      "advisory_source": "current_claim_audit",
+      "advisory_decision": "confirmed",
+      "confidence": 1,
+      "rationale": "已接受 Claim 明确给出上海以太之心科技有限公司的法定名称，并记载其宣布完成种子轮融资，支持作为公司实体收录。",
+      "review_status": "accepted",
+      "reviewer": "codex-2026-09-03",
+      "reviewed_at": "2026-09-03T11:36:00+08:00",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-5a28a1a99a417ba5",
+      "current": {
+        "name": "Ant Group",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "merge",
+      "merge_into_entity_id": "EN-d30e5ffc0ba9150b",
+      "canonical": {
+        "name": "蚂蚁集团",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": ["蚂蚁集团"]
+      },
+      "evidence": {
+        "claim_refs": ["CL-6004b26f67b0f6d8", "CL-3d57abdf856d16e7"],
+        "secondary_sources": []
+      },
+      "advisory_source": "current_claim_audit",
+      "advisory_decision": "confirmed",
+      "confidence": 1,
+      "rationale": "已接受 Claim 明确记载蚂蚁集团开源 Avernet、推出 OmniTable；Ant Group 与蚂蚁集团为同一抽取身份，合并到已复核的蚂蚁集团稳定实体。",
+      "review_status": "accepted",
+      "reviewer": "codex-2026-09-03",
+      "reviewed_at": "2026-09-03T11:36:00+08:00",
+      "error_patterns": ["duplicate_entity"]
+    },
+    {
+      "entity_id": "EN-315bc2490de86ba0",
+      "current": {
+        "name": "美国新泽西理工学院",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "美国新泽西理工学院",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": ["NJIT"]
+      },
+      "evidence": {
+        "claim_refs": ["CL-0775b1331c7a946d"],
+        "secondary_sources": []
+      },
+      "advisory_source": "current_claim_audit",
+      "advisory_decision": "confirmed",
+      "confidence": 1,
+      "rationale": "已接受 Claim 明确记载美国新泽西理工学院（NJIT）牵头科研团队发布研究，支持作为研究机构实体收录。",
+      "review_status": "accepted",
+      "reviewer": "codex-2026-09-03",
+      "reviewed_at": "2026-09-03T11:36:00+08:00",
       "error_patterns": []
     }
   ]

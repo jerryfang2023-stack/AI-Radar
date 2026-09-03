@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -33,6 +33,7 @@
     "firstSeen": "2026-07-24",
     "lastSeen": "2026-08-08",
     "relationIds": [
+      "REL2-dcc3f6e959d6073a",
       "REL2-e1d65aab90a4ab28"
     ],
     "groupedEventIds": {
@@ -73,7 +74,7 @@
         ],
         "entityIds": [
           "EN-b7ff6c95ddfdac24",
-          "EN-5a28a1a99a417ba5",
+          "EN-d30e5ffc0ba9150b",
           "EN-8989aada6eb4a4c3"
         ]
       },
@@ -125,13 +126,19 @@
       "name": "蚂蚁集团",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Ant Group"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-6f1729f6968b72c9"
+        "EV-88a984b765bb54f1",
+        "EV-72dc9ab86e08fbab",
+        "EV-4c8fa40c36b6ddb7",
+        "EV-6f1729f6968b72c9",
+        "EV-9718a3d74dae5446"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -142,10 +149,31 @@
         "EN-8989aada6eb4a4c3"
       ],
       "firstSeen": "2026-07-24",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-09-03"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-dcc3f6e959d6073a",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-d30e5ffc0ba9150b",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8989aada6eb4a4c3",
+      "object_type": "entity",
+      "event_id": "EV-72dc9ab86e08fbab",
+      "claim_refs": [
+        "CL-24c1d3ba0b3991a6",
+        "CL-310204201291f150",
+        "CL-ecb55432ea944920",
+        "CL-b203b1076c6cbafd"
+      ],
+      "source_refs": [
+        "SA-b44fb0bd0c5ebf61"
+      ],
+      "data_date": "2026-08-08",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-e1d65aab90a4ab28",
       "relationship_version": "RELATION-V2.1",

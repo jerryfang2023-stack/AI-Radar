@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "institution": {
@@ -20,30 +20,77 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-07-13",
-    "latest_disclosed_at": "2026-07-13",
+    "latest_disclosed_at": "2026-08-31",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "pre_series_a"
+      "pre_series_a",
+      "seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-7f505bc9744206fd",
         "canonical_entity_id": "",
         "name": "上海灵睿智芯计算技术有限公司"
+      },
+      {
+        "entity_id": "EN-447a48e5d0951831",
+        "canonical_entity_id": "EN-447a48e5d0951831",
+        "name": "上海以太之心科技有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-25bc9866fe5becd5",
+        "funding_insight_id": "FI-88ed5f2ad4bd8ab7",
+        "event_ids": [
+          "EV-89ec502a1340079a"
+        ],
+        "company_entity_id": "EN-447a48e5d0951831",
+        "company_canonical_entity_id": "EN-447a48e5d0951831",
+        "company_name": "上海以太之心科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-31",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1a358dfcb10fed1c",
+            "source_url": "https://www.stcn.com/article/detail/4165239.html",
+            "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+            "source_content_hash": "d05d4ca6f929c2cb",
+            "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+            "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+          }
+        ]
+      },
       {
         "activity_id": "IA-026473ccf9453664",
         "funding_insight_id": "FI-3923d1a4fc2b8a40",
@@ -86,6 +133,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1a358dfcb10fed1c",
+        "source_url": "https://www.stcn.com/article/detail/4165239.html",
+        "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+        "source_content_hash": "d05d4ca6f929c2cb",
+        "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+        "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+      },
       {
         "source_id": "FISRC-760e793448781182",
         "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",

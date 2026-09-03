@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-02T02:15:59.256Z",
+    "generated_at": "2026-09-03T03:26:05.629Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 302,
-    "input_hash": "7a743fb99a3abb98",
+    "decision_count": 306,
+    "input_hash": "434341dd9781eaef",
     "override_count": 17,
-    "needs_review_count": 6,
-    "low_confidence_count": 13
+    "needs_review_count": 8,
+    "low_confidence_count": 15
   },
   "decisions": [
     {
@@ -5983,6 +5983,79 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "clusterdOS将裸金属服务器转化为GPU集群，属于为AI构建者提供硬件/计算基础设施，归入基础设施计算下的计算基础设施。"
+    },
+    {
+      "event_id": "EV-89ec502a1340079a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.72,
+      "needs_review": true,
+      "rationale": "公司定位为AI智能体基础设施，Aeloon负责编排工具与流程，AetherStation提供本地运行底座，属于为AI构建者提供开发部署基础设施，而非面向单一行业或跨行业业务功能。"
+    },
+    {
+      "event_id": "EV-987cb2e5e20f79ce",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "小鹏IRON是人形机器人，具备感知、决策和物理行动能力，直接属于物理AI，而非仅世界模型或未来规划。"
+    },
+    {
+      "event_id": "EV-f0a666f5416e049f",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "HiddenLayer保护AI模型、智能体和工作流免受攻击，属于为AI构建者提供安全基础设施，归入可观测性与评估下的模型/智能体安全。"
+    },
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.78,
+      "needs_review": true,
+      "rationale": "Wonderful AI OS协调智能体、工作流和企业上下文，属于跨行业企业工作流平台，而非单一行业应用或基础设施。"
     }
   ],
   "inputs": [
@@ -6787,6 +6860,37 @@
       }
     },
     {
+      "event_id": "EV-89ec502a1340079a",
+      "funding_insight_id": "FI-6068d3b0fa0a22d2",
+      "company_name": "上海以太之心科技有限公司",
+      "company_full_name": "上海以太之心科技有限公司",
+      "website": "",
+      "current_sector": "AI智能体基础设施",
+      "company_evidence_quotes": [
+        "近日，国内AI智能体全栈技术研发企业——上海以太之心科技有限公司（以下简称“以太之心”）宣布完成数千万种子轮融资。",
+        "以太之心作为国内新兴的AI智能体基础设施公司，致力于通过软硬协同的路线，在端侧提供极具性价比的AI服务。"
+      ],
+      "products": [
+        {
+          "name": "Aeloon",
+          "evidence_quotes": [
+            "Aeloon是面向真实任务构建的原生AI智能体，基于Tamer + Core架构，负责理解目标、编排工具与流程并监控执行状态，使智能体能力从代码生成与修复延展至办公协作、项目管理及行业工作流等场景。"
+          ]
+        },
+        {
+          "name": "AetherStation",
+          "evidence_quotes": [
+            "AetherStation则是支撑智能体本地运行的边缘智能体基础设施，将模型、推理引擎、异构硬件以及部署运维集成为一体，为智能体提供高吞吐、低时延、数据不出域的运行底座。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-e54bfac94961f4d2",
       "funding_insight_id": "FI-7ab08fda67c9a702",
       "company_name": "深圳忆纪元科技有限公司",
@@ -6969,6 +7073,32 @@
       "current_classification": {
         "product_form_id": "model",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-987cb2e5e20f79ce",
+      "funding_insight_id": "FI-45963c2baf94d978",
+      "company_name": "小鹏机器人业务",
+      "company_full_name": "小鹏机器人业务",
+      "website": "https://www.xpeng.com/",
+      "current_sector": "具身智能/人形机器人",
+      "company_evidence_quotes": [
+        "全球领先的物理AI公司小鹏集团（NYSE: XPEV；HKEX: 9868）于今日宣布，旗下人形机器人业务已与多家投资者签署股权融资协议。",
+        "小鹏集团正式宣布，旗下人形机器人业务已与多家投资者签署股权融资协议"
+      ],
+      "products": [
+        {
+          "name": "小鹏IRON",
+          "evidence_quotes": [
+            "小鹏IRON定位为极致拟人、AI驱动、具备最高标准安全品质的高阶人形机器人，目标是成为下一代通用人形机器人平台",
+            "全身76个自由度，单手21个自由度，均处于行业领先水平。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -10352,6 +10482,32 @@
       ],
       "current_classification": {
         "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-f0a666f5416e049f",
+      "funding_insight_id": "FI-2651c14fc2e4ff4f",
+      "company_name": "HiddenLayer",
+      "company_full_name": "HiddenLayer",
+      "website": "https://www.hiddenlayer.com",
+      "current_sector": "AI安全",
+      "company_evidence_quotes": [
+        "HiddenLayer, which makes tools to protect AI models, agents, and workflows from adversarial attacks, vulnerabilities, and malicious code injections",
+        "HiddenLayer secures agentic, generative, and predictive AI applications across the entire AI lifecycle, from discovery and AI supply chain security to attack simulation and runtime protection."
+      ],
+      "products": [
+        {
+          "name": "HiddenLayer AI Security Platform",
+          "evidence_quotes": [
+            "HiddenLayer secures agentic, generative, and predictive AI applications across the entire AI lifecycle, from discovery and AI supply chain security to attack simulation and runtime protection.",
+            "extend its existing products — discovery, runtime protection, attack simulation, and supply chain security — to address prompt injection, agent manipulation, and malicious tool use"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "security_software",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -15321,6 +15477,35 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "funding_insight_id": "FI-9b713185d4e090d8",
+      "company_name": "Wonderful",
+      "company_full_name": "Wonderful",
+      "website": "www.wonderful.ai",
+      "current_sector": "企业AI操作系统",
+      "company_evidence_quotes": [
+        "Israeli-Dutch AI startup Wonderful has raised $550 million in a Series C funding round",
+        "Wonderful, the AI OS for the enterprise, today announced the closing of a $550 million Series C funding round at a $5B valuation."
+      ],
+      "products": [
+        {
+          "name": "Wonderful AI OS",
+          "evidence_quotes": [
+            "The Wonderful AI OS is the shared operating layer that coordinates agents, workflows, AI-native applications, enterprise context, integrations, and governed execution across the organization."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Bank Hapoalim",
+        "Discount Bank",
+        "Maccabi Health Services"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {

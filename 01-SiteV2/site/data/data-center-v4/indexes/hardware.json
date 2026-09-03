@@ -5,13 +5,41 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-02T02:22:03.432Z",
-    "latestDataDate": "2026-09-02",
-    "currentDate": "2026-09-02",
-    "eventCount": 2575,
+    "generatedAt": "2026-09-03T03:38:21.560Z",
+    "latestDataDate": "2026-09-03",
+    "currentDate": "2026-09-03",
+    "eventCount": 2614,
     "quarantinedEventCount": 24
   },
   "hardware": [
+    {
+      "id": "HW-3847ae9d638e1264",
+      "eventId": "EV-631c8bc2350d6d66",
+      "dataDate": "2026-09-03",
+      "date": "2026-09-02",
+      "title": "谷歌拆解退役服务器回收 DDR4 内存，重新部署至新型 AI 服务器",
+      "hardwareType": "server",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/997/687.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-09-02",
+      "entityIds": [
+        "EN-e70ac58b701a7498",
+        "EN-bbdefa2950f49882"
+      ]
+    },
     {
       "id": "HW-568a5296594ab4fe",
       "eventId": "EV-0884926673438e82",
@@ -13558,34 +13586,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-02",
-      "funnel_id": "LF-a75b5a560ac95f87",
+      "data_date": "2026-09-03",
+      "funnel_id": "LF-d1047f02c06c3bc7",
       "lens": "hardware",
-      "date": "2026-09-02",
+      "date": "2026-09-03",
       "monitoring_paths": [
-        "hardware_capex",
-        "hardware_oem_odm",
+        "hardware_capacity_fab",
         "hardware_product_specs",
+        "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 13,
-      "original_sources": 10,
-      "valid_claims": 14,
-      "observations": 6,
-      "canonical_events": 5,
+      "raw_documents": 22,
+      "original_sources": 15,
+      "valid_claims": 12,
+      "observations": 0,
+      "canonical_events": 4,
       "blocker_counts": {
-        "non_event_or_index_title": 1,
-        "no_source_bounded_event": 1,
-        "rumor_requires_primary_confirmation": 2,
-        "raw_source_quality_block": 3
+        "non_event_or_index_title": 2,
+        "source_outside_funding_backfill_window": 2,
+        "no_source_bounded_event": 2,
+        "source_outside_daily_window": 4,
+        "no_source_bounded_claim": 1,
+        "raw_source_quality_block": 7
       },
       "rates": {
-        "original_source_rate": 0.7692307692307693,
-        "valid_claim_rate": 1,
-        "observation_rate": 0.42857142857142855,
-        "event_conversion_rate": 0.35714285714285715
+        "original_source_rate": 0.6818181818181818,
+        "valid_claim_rate": 0.5454545454545454,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.3333333333333333
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-02/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-03/monitoring-funnel.json"
     }
   ]
 }

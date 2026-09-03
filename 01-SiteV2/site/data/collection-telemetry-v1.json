@@ -2,39 +2,39 @@
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V3.1.0-membership",
-    "data_date": "2026-09-02",
-    "generated_at": "2026-09-02T02:32:20.395Z",
+    "data_date": "2026-09-03",
+    "generated_at": "2026-09-03T03:38:29.647Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 197,
-    "capture_failed": 21,
-    "recovered_source_failures": 7,
-    "raw_documents": 197
+    "capture_succeeded": 241,
+    "capture_failed": 2,
+    "recovered_source_failures": 8,
+    "raw_documents": 241
   },
   "fact_build": {
-    "accepted_claims": 94,
+    "accepted_claims": 104,
     "rejected_claims": 0,
-    "accepted": 94,
+    "accepted": 104,
     "rejected": 0,
-    "pending_claims": 5,
-    "canonical_events": 40,
-    "entities": 49,
-    "relationships": 99,
-    "conflicts": 0,
-    "qa_queue": 157,
+    "pending_claims": 4,
+    "canonical_events": 45,
+    "entities": 57,
+    "relationships": 108,
+    "conflicts": 1,
+    "qa_queue": 196,
     "qa_by_status": {
-      "review_optional": 146,
+      "review_optional": 185,
       "open": 11
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-09-02",
-    "gate_date": "2026-09-02",
+    "manifest_date": "2026-09-03",
+    "gate_date": "2026-09-03",
     "failures": [],
     "warnings": []
   },
@@ -57,15 +57,15 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 197,
-        "capture_failed": 21,
-        "recovered_source_failures": 7,
-        "raw_documents": 197
+        "capture_succeeded": 241,
+        "capture_failed": 2,
+        "recovered_source_failures": 8,
+        "raw_documents": 241
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-02/manifest.json",
-        "agent-workflow/reports/2026-09-02-guanlan-daily-monitor-log.md",
-        "agent-workflow/reports/2026-09-02-guanlan-monitor-quality-gate.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-03/manifest.json",
+        "agent-workflow/reports/2026-09-03-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-09-03-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -73,20 +73,20 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 94,
+        "accepted_claims": 104,
         "rejected_claims": 0,
-        "accepted": 94,
+        "accepted": 104,
         "rejected": 0,
-        "pending_claims": 5,
-        "canonical_events": 40,
-        "entities": 49,
-        "relationships": 99,
-        "conflicts": 0,
-        "qa_queue": 157
+        "pending_claims": 4,
+        "canonical_events": 45,
+        "entities": 57,
+        "relationships": 108,
+        "conflicts": 1,
+        "qa_queue": 196
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-02/manifest.json",
-        "agent-workflow/reports/2026-09-02-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-03/manifest.json",
+        "agent-workflow/reports/2026-09-03-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -100,7 +100,7 @@
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-02-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-03-persistent-asset-manifest.json"
       ]
     },
     {
@@ -113,7 +113,7 @@
         "authoritative": false
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-02-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-03-persistent-asset-manifest.json"
       ]
     }
   ],

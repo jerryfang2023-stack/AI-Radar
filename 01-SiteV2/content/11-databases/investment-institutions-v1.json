@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-09-02T02:15:15.469Z",
+    "generated_at": "2026-09-03T03:24:14.685Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1345,
-    "evidence_backed_count": 1345,
-    "current_round_activity_count": 1549,
+    "institution_count": 1353,
+    "evidence_backed_count": 1353,
+    "current_round_activity_count": 1565,
     "individual_investor_count": 182,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -4672,7 +4672,7 @@
       "investor_kind_label": "投资机构",
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
-      "current_round_count": 12,
+      "current_round_count": 13,
       "historical_or_ambiguous_count": 0,
       "portfolio_company_count": 12,
       "market_regions": [
@@ -4681,17 +4681,18 @@
       "china_market_activity_count": 0,
       "china_market_company_count": 0,
       "first_disclosed_at": "2025-03-03",
-      "latest_disclosed_at": "2026-08-06",
+      "latest_disclosed_at": "2026-09-02",
       "role_counts": {
         "co_lead": 1,
         "lead": 5,
-        "participant": 6
+        "participant": 7
       },
       "round_codes": [
         "multi_round",
         "seed",
         "series_a",
         "series_b",
+        "series_c",
         "series_d",
         "series_e"
       ],
@@ -4758,6 +4759,46 @@
         }
       ],
       "activities": [
+        {
+          "activity_id": "IA-826567ba0539149e",
+          "funding_insight_id": "FI-d61afc2c6c00363a",
+          "event_ids": [
+            "EV-81bbaaec2965864a"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$550 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 550000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5.5 亿美元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc5a4e973b035eb",
+              "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+              "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+              "source_content_hash": "290d66b36443e7c5",
+              "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+              "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+            }
+          ]
+        },
         {
           "activity_id": "IA-c8f8342c1c99a771",
           "funding_insight_id": "FI-2d1d7b6262e319c3",
@@ -5250,6 +5291,14 @@
         }
       ],
       "evidence": [
+        {
+          "source_id": "FISRC-3bc5a4e973b035eb",
+          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+          "source_content_hash": "290d66b36443e7c5",
+          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+        },
         {
           "source_id": "FISRC-d328724fdcb5ff4b",
           "source_url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
@@ -8413,6 +8462,566 @@
       ]
     },
     {
+      "id": "INV-694c1d69c893d8",
+      "name": "Index Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 9,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 8,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2025-09-09",
+      "latest_disclosed_at": "2026-09-02",
+      "role_counts": {
+        "co_lead": 3,
+        "historical_or_ambiguous": 1,
+        "lead": 2,
+        "participant": 4
+      },
+      "round_codes": [
+        "seed",
+        "series_b",
+        "series_c",
+        "series_d"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-0caee180da9d0f3f",
+          "canonical_entity_id": "",
+          "name": "Fireworks AI Inc."
+        },
+        {
+          "entity_id": "EN-26e59d6a3c92de80",
+          "canonical_entity_id": "",
+          "name": "Instinct"
+        },
+        {
+          "entity_id": "EN-9f80a5e14017ccc0",
+          "canonical_entity_id": "",
+          "name": "Intelligence"
+        },
+        {
+          "entity_id": "EN-c04bd5ebd10ab696",
+          "canonical_entity_id": "EN-c04bd5ebd10ab696",
+          "name": "Mistral AI"
+        },
+        {
+          "entity_id": "EN-ef292e56955a1c10",
+          "canonical_entity_id": "",
+          "name": "PointFive Inc."
+        },
+        {
+          "entity_id": "EN-8d8b8c50b8da244b",
+          "canonical_entity_id": "",
+          "name": "Spear Street Technology"
+        },
+        {
+          "entity_id": "EN-e4540a7c8404b1be",
+          "canonical_entity_id": "",
+          "name": "Temporal Technologies"
+        },
+        {
+          "entity_id": "FICO-wonderful",
+          "canonical_entity_id": "",
+          "name": "Wonderful"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-e1769379dafd63b0",
+          "funding_insight_id": "FI-d61afc2c6c00363a",
+          "event_ids": [
+            "EV-81bbaaec2965864a"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$550 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 550000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5.5 亿美元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc5a4e973b035eb",
+              "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+              "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+              "source_content_hash": "290d66b36443e7c5",
+              "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+              "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-fb7af8aabacb83c3",
+          "funding_insight_id": "FI-d61afc2c6c00363a",
+          "event_ids": [
+            "EV-81bbaaec2965864a"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$550 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 550000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5.5 亿美元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "领投A轮",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-714290c8e2823c5a",
+              "source_url": "https://techstartups.com/2026/09/02/wonderful-raises-550m-at-5-billion-valuation-just-20-months-after-launch/",
+              "source_title": "AI startup Wonderful raises $550M at $5 billion valuation just 20 months after launch - Tech Startups",
+              "source_content_hash": "ecd0ed91dee57818",
+              "quote": "Index Ventures led that round, joined by Insight Partners, IVP, Bessemer Venture Partners, and Vine Ventures.",
+              "quote_hash": "475cef1b4e2b713bdc387af09aa4b496ed807ecd1d8ba28fdb14d0b7de091054"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-ee0247175fd1494f",
+          "funding_insight_id": "FI-e57c1a5088b84f89",
+          "event_ids": [
+            "EV-276878c26b2a06dc"
+          ],
+          "company_entity_id": "EN-26e59d6a3c92de80",
+          "company_canonical_entity_id": "",
+          "company_name": "Instinct",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$350 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-6050aa46cf9e60a2",
+              "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
+              "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
+              "source_content_hash": "12db016e60d4c1b4",
+              "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+              "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-eaaf5608468bd0c4",
+          "funding_insight_id": "FI-94d3afbe69796cf3",
+          "event_ids": [
+            "EV-c538fb9a61735afc"
+          ],
+          "company_entity_id": "EN-8d8b8c50b8da244b",
+          "company_canonical_entity_id": "",
+          "company_name": "Spear Street Technology",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$350M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-745d673f45eb476d",
+              "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+              "source_title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
+              "source_content_hash": "10e082ab90bd39e5",
+              "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+              "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-a776c87efbe59c04",
+          "funding_insight_id": "FI-36e2dba781b80e3a",
+          "event_ids": [
+            "EV-2301cd1470155075"
+          ],
+          "company_entity_id": "EN-9f80a5e14017ccc0",
+          "company_canonical_entity_id": "",
+          "company_name": "Intelligence",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$7.9 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7900000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "790 万美元"
+          },
+          "announced_at": "2026-08-03",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-3fa34b4b7b9a1a77",
+              "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+              "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+              "source_content_hash": "0633a814981ef4fd",
+              "quote": "a $7.9 million seed round led by Index Ventures",
+              "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-2ccff733875d0d90",
+          "funding_insight_id": "FI-3b1ea359415f476d",
+          "event_ids": [
+            "EV-4eaf3aabecae6016"
+          ],
+          "company_entity_id": "EN-0caee180da9d0f3f",
+          "company_canonical_entity_id": "",
+          "company_name": "Fireworks AI Inc.",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$1.505 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1505000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "15.05 亿美元"
+          },
+          "announced_at": "2026-07-16",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-0d89e0712245c55b",
+              "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
+              "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
+              "source_content_hash": "82ccac3b5ede24d2",
+              "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+              "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-9c40441cc4c4431c",
+          "funding_insight_id": "FI-0e45f5b02e149e04",
+          "event_ids": [
+            "EV-c3b8772c06a25dbc"
+          ],
+          "company_entity_id": "EN-ef292e56955a1c10",
+          "company_canonical_entity_id": "",
+          "company_name": "PointFive Inc.",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "Series B",
+          "amount_original": "$60 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 60000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6000 万美元"
+          },
+          "announced_at": "2026-06-08",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-3ca38471e3f8361d",
+              "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
+              "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote": "it was joined by venture capital firms including Index Ventures",
+              "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-9ba4b2698369cd81",
+          "funding_insight_id": "FI-2b8ea19368209f49",
+          "event_ids": [
+            "EV-aa33ca051f3a7f78",
+            "EV-0ade039d36e077ae",
+            "EV-a84ec4216d3ded6d"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-03-12",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投，种子轮和A轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-a9a14160ac96ad9a",
+              "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
+              "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
+              "source_content_hash": "a1eb7c9802c59903",
+              "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
+              "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-fa1f9c98f4b139d8",
+          "funding_insight_id": "FI-0aa1eca49e73b783",
+          "event_ids": [
+            "EV-3b40ec144e5db22c"
+          ],
+          "company_entity_id": "EN-e4540a7c8404b1be",
+          "company_canonical_entity_id": "",
+          "company_name": "Temporal Technologies",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$300 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 300000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3 亿美元"
+          },
+          "announced_at": "2026-02-17",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "既有投资方，本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-1f69885afd5fc439",
+              "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+              "source_title": "Temporal 完成 D 轮融资",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+              "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-01d7d725733add3f",
+          "funding_insight_id": "FI-1cf34218733257fd",
+          "event_ids": [
+            "EV-85506f9f86779a6d"
+          ],
+          "company_entity_id": "EN-c04bd5ebd10ab696",
+          "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+          "company_name": "Mistral AI",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "Series C",
+          "amount_original": "约17亿欧元（约20亿美元）",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 1700000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 17 亿欧元"
+          },
+          "announced_at": "2025-09-09",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "既有投资方（本轮参投）",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+              "source_title": "European AI startup Mistral AI secures $2B in funding",
+              "source_content_hash": "a710989bdebc7feb",
+              "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+              "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-3bc5a4e973b035eb",
+          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+          "source_content_hash": "290d66b36443e7c5",
+          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+        },
+        {
+          "source_id": "FISRC-714290c8e2823c5a",
+          "source_url": "https://techstartups.com/2026/09/02/wonderful-raises-550m-at-5-billion-valuation-just-20-months-after-launch/",
+          "source_title": "AI startup Wonderful raises $550M at $5 billion valuation just 20 months after launch - Tech Startups",
+          "source_content_hash": "ecd0ed91dee57818",
+          "quote": "Index Ventures led that round, joined by Insight Partners, IVP, Bessemer Venture Partners, and Vine Ventures.",
+          "quote_hash": "475cef1b4e2b713bdc387af09aa4b496ed807ecd1d8ba28fdb14d0b7de091054"
+        },
+        {
+          "source_id": "FISRC-6050aa46cf9e60a2",
+          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
+          "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
+          "source_content_hash": "12db016e60d4c1b4",
+          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+          "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+        },
+        {
+          "source_id": "FISRC-745d673f45eb476d",
+          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+          "source_title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
+          "source_content_hash": "10e082ab90bd39e5",
+          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+          "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+        },
+        {
+          "source_id": "FISRC-3fa34b4b7b9a1a77",
+          "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+          "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
+          "source_content_hash": "0633a814981ef4fd",
+          "quote": "a $7.9 million seed round led by Index Ventures",
+          "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
+        },
+        {
+          "source_id": "FISRC-0d89e0712245c55b",
+          "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
+          "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
+          "source_content_hash": "82ccac3b5ede24d2",
+          "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+          "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
+        },
+        {
+          "source_id": "FISRC-3ca38471e3f8361d",
+          "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
+          "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
+          "source_content_hash": "11683bab4c01ccd3",
+          "quote": "it was joined by venture capital firms including Index Ventures",
+          "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
+        },
+        {
+          "source_id": "FISRC-a9a14160ac96ad9a",
+          "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
+          "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
+          "source_content_hash": "a1eb7c9802c59903",
+          "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
+          "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
+        },
+        {
+          "source_id": "FISRC-1f69885afd5fc439",
+          "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+          "source_title": "Temporal 完成 D 轮融资",
+          "source_content_hash": "74cb86598e6c9021",
+          "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+          "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+        },
+        {
+          "source_id": "FISRC-8d74a5f6eac0fc90",
+          "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+          "source_title": "European AI startup Mistral AI secures $2B in funding",
+          "source_content_hash": "a710989bdebc7feb",
+          "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
+          "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+        }
+      ]
+    },
+    {
       "id": "INV-4f4727ed8c67e2",
       "name": "Menlo Ventures",
       "aliases": [],
@@ -9100,469 +9709,6 @@
       ]
     },
     {
-      "id": "INV-694c1d69c893d8",
-      "name": "Index Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 8,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 8,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2025-09-09",
-      "latest_disclosed_at": "2026-08-26",
-      "role_counts": {
-        "co_lead": 3,
-        "lead": 2,
-        "participant": 3
-      },
-      "round_codes": [
-        "seed",
-        "series_b",
-        "series_c",
-        "series_d"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-0caee180da9d0f3f",
-          "canonical_entity_id": "",
-          "name": "Fireworks AI Inc."
-        },
-        {
-          "entity_id": "EN-26e59d6a3c92de80",
-          "canonical_entity_id": "",
-          "name": "Instinct"
-        },
-        {
-          "entity_id": "EN-9f80a5e14017ccc0",
-          "canonical_entity_id": "",
-          "name": "Intelligence"
-        },
-        {
-          "entity_id": "EN-c04bd5ebd10ab696",
-          "canonical_entity_id": "EN-c04bd5ebd10ab696",
-          "name": "Mistral AI"
-        },
-        {
-          "entity_id": "EN-ef292e56955a1c10",
-          "canonical_entity_id": "",
-          "name": "PointFive Inc."
-        },
-        {
-          "entity_id": "EN-8d8b8c50b8da244b",
-          "canonical_entity_id": "",
-          "name": "Spear Street Technology"
-        },
-        {
-          "entity_id": "EN-e4540a7c8404b1be",
-          "canonical_entity_id": "",
-          "name": "Temporal Technologies"
-        },
-        {
-          "entity_id": "FICO-wonderful",
-          "canonical_entity_id": "",
-          "name": "Wonderful"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-ee0247175fd1494f",
-          "funding_insight_id": "FI-e57c1a5088b84f89",
-          "event_ids": [
-            "EV-276878c26b2a06dc"
-          ],
-          "company_entity_id": "EN-26e59d6a3c92de80",
-          "company_canonical_entity_id": "",
-          "company_name": "Instinct",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$350 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-08-26",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-6050aa46cf9e60a2",
-              "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
-              "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
-              "source_content_hash": "12db016e60d4c1b4",
-              "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
-              "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-eaaf5608468bd0c4",
-          "funding_insight_id": "FI-94d3afbe69796cf3",
-          "event_ids": [
-            "EV-c538fb9a61735afc"
-          ],
-          "company_entity_id": "EN-8d8b8c50b8da244b",
-          "company_canonical_entity_id": "",
-          "company_name": "Spear Street Technology",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$350M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-08-26",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-745d673f45eb476d",
-              "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
-              "source_title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
-              "source_content_hash": "10e082ab90bd39e5",
-              "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
-              "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-a776c87efbe59c04",
-          "funding_insight_id": "FI-36e2dba781b80e3a",
-          "event_ids": [
-            "EV-2301cd1470155075"
-          ],
-          "company_entity_id": "EN-9f80a5e14017ccc0",
-          "company_canonical_entity_id": "",
-          "company_name": "Intelligence",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$7.9 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7900000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "790 万美元"
-          },
-          "announced_at": "2026-08-03",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-3fa34b4b7b9a1a77",
-              "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
-              "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
-              "source_content_hash": "0633a814981ef4fd",
-              "quote": "a $7.9 million seed round led by Index Ventures",
-              "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-2ccff733875d0d90",
-          "funding_insight_id": "FI-3b1ea359415f476d",
-          "event_ids": [
-            "EV-4eaf3aabecae6016"
-          ],
-          "company_entity_id": "EN-0caee180da9d0f3f",
-          "company_canonical_entity_id": "",
-          "company_name": "Fireworks AI Inc.",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "$1.505 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1505000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "15.05 亿美元"
-          },
-          "announced_at": "2026-07-16",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-0d89e0712245c55b",
-              "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
-              "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
-              "source_content_hash": "82ccac3b5ede24d2",
-              "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
-              "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-9c40441cc4c4431c",
-          "funding_insight_id": "FI-0e45f5b02e149e04",
-          "event_ids": [
-            "EV-c3b8772c06a25dbc"
-          ],
-          "company_entity_id": "EN-ef292e56955a1c10",
-          "company_canonical_entity_id": "",
-          "company_name": "PointFive Inc.",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "Series B",
-          "amount_original": "$60 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 60000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6000 万美元"
-          },
-          "announced_at": "2026-06-08",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
-              "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
-              "source_content_hash": "11683bab4c01ccd3",
-              "quote": "it was joined by venture capital firms including Index Ventures",
-              "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-9ba4b2698369cd81",
-          "funding_insight_id": "FI-2b8ea19368209f49",
-          "event_ids": [
-            "EV-aa33ca051f3a7f78",
-            "EV-0ade039d36e077ae",
-            "EV-a84ec4216d3ded6d"
-          ],
-          "company_entity_id": "FICO-wonderful",
-          "company_canonical_entity_id": "",
-          "company_name": "Wonderful",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "1.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 150000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.5 亿美元"
-          },
-          "announced_at": "2026-03-12",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投，种子轮和A轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-a9a14160ac96ad9a",
-              "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
-              "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
-              "source_content_hash": "a1eb7c9802c59903",
-              "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
-              "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-fa1f9c98f4b139d8",
-          "funding_insight_id": "FI-0aa1eca49e73b783",
-          "event_ids": [
-            "EV-3b40ec144e5db22c"
-          ],
-          "company_entity_id": "EN-e4540a7c8404b1be",
-          "company_canonical_entity_id": "",
-          "company_name": "Temporal Technologies",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "$300 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 300000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3 亿美元"
-          },
-          "announced_at": "2026-02-17",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "既有投资方，本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
-              "source_title": "Temporal 完成 D 轮融资",
-              "source_content_hash": "74cb86598e6c9021",
-              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
-              "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-01d7d725733add3f",
-          "funding_insight_id": "FI-1cf34218733257fd",
-          "event_ids": [
-            "EV-85506f9f86779a6d"
-          ],
-          "company_entity_id": "EN-c04bd5ebd10ab696",
-          "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
-          "company_name": "Mistral AI",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "Series C",
-          "amount_original": "约17亿欧元（约20亿美元）",
-          "amount_normalized": {
-            "currency": "EUR",
-            "value": 1700000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 17 亿欧元"
-          },
-          "announced_at": "2025-09-09",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "既有投资方（本轮参投）",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-8d74a5f6eac0fc90",
-              "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
-              "source_title": "European AI startup Mistral AI secures $2B in funding",
-              "source_content_hash": "a710989bdebc7feb",
-              "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
-              "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-6050aa46cf9e60a2",
-          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
-          "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
-          "source_content_hash": "12db016e60d4c1b4",
-          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
-          "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
-        },
-        {
-          "source_id": "FISRC-745d673f45eb476d",
-          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
-          "source_title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
-          "source_content_hash": "10e082ab90bd39e5",
-          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
-          "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
-        },
-        {
-          "source_id": "FISRC-3fa34b4b7b9a1a77",
-          "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
-          "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
-          "source_content_hash": "0633a814981ef4fd",
-          "quote": "a $7.9 million seed round led by Index Ventures",
-          "quote_hash": "fb055bc5d3b5112cb1e0e5a4e5884fd2f541c3f8f866f7827731a035e2ce689c"
-        },
-        {
-          "source_id": "FISRC-0d89e0712245c55b",
-          "source_url": "https://siliconangle.com/2026/07/16/ai-infrastructure-startup-fireworks-closes-1-5b-round-17-5b-valuation/",
-          "source_title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
-          "source_content_hash": "82ccac3b5ede24d2",
-          "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
-          "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
-        },
-        {
-          "source_id": "FISRC-3ca38471e3f8361d",
-          "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
-          "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
-          "source_content_hash": "11683bab4c01ccd3",
-          "quote": "it was joined by venture capital firms including Index Ventures",
-          "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
-        },
-        {
-          "source_id": "FISRC-a9a14160ac96ad9a",
-          "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
-          "source_title": "Wonderful Raises $150M Series B to... | Index Ventures",
-          "source_content_hash": "a1eb7c9802c59903",
-          "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
-          "quote_hash": "7edcfafd587b4a7c548af8294f8eaec589b3eb38a800f7e901b9673f891395f2"
-        },
-        {
-          "source_id": "FISRC-1f69885afd5fc439",
-          "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
-          "source_title": "Temporal 完成 D 轮融资",
-          "source_content_hash": "74cb86598e6c9021",
-          "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
-          "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
-        },
-        {
-          "source_id": "FISRC-8d74a5f6eac0fc90",
-          "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
-          "source_title": "European AI startup Mistral AI secures $2B in funding",
-          "source_content_hash": "a710989bdebc7feb",
-          "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
-          "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
-        }
-      ]
-    },
-    {
       "id": "INV-0d309b859ee1fe",
       "name": "Coatue",
       "aliases": [
@@ -10178,6 +10324,427 @@
           "source_content_hash": "3b03664369ea0afe",
           "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
           "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+        }
+      ]
+    },
+    {
+      "id": "INV-7626f5b02a6cc8",
+      "name": "Insight Partners",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 7,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 6,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2025-05-06",
+      "latest_disclosed_at": "2026-09-02",
+      "role_counts": {
+        "lead": 3,
+        "participant": 4
+      },
+      "round_codes": [
+        "series_a",
+        "series_b",
+        "series_c",
+        "series_d",
+        "series_f"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-3032646694ad17bb",
+          "canonical_entity_id": "",
+          "name": "E2B"
+        },
+        {
+          "entity_id": "EN-0caee180da9d0f3f",
+          "canonical_entity_id": "",
+          "name": "Fireworks AI Inc."
+        },
+        {
+          "entity_id": "EN-b0bc23fa8e20c543",
+          "canonical_entity_id": "EN-b0bc23fa8e20c543",
+          "name": "InstaLILY AI"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "name": "OpenAI"
+        },
+        {
+          "entity_id": "EN-52f1bab72d488823",
+          "canonical_entity_id": "",
+          "name": "Relevance AI"
+        },
+        {
+          "entity_id": "FICO-wonderful",
+          "canonical_entity_id": "",
+          "name": "Wonderful"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-0e4c60414aef4bfa",
+          "funding_insight_id": "FI-d61afc2c6c00363a",
+          "event_ids": [
+            "EV-81bbaaec2965864a"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$550 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 550000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5.5 亿美元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc5a4e973b035eb",
+              "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+              "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+              "source_content_hash": "290d66b36443e7c5",
+              "quote": "Insight Partners returned to lead this round, too",
+              "quote_hash": "e83ddba2629ebc0a50266e83e0af77210dffaeef336e64cea6a1df209dc9e9de"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-53eca9a2793faf9b",
+          "funding_insight_id": "FI-3b1ea359415f476d",
+          "event_ids": [
+            "EV-4eaf3aabecae6016"
+          ],
+          "company_entity_id": "EN-0caee180da9d0f3f",
+          "company_canonical_entity_id": "",
+          "company_name": "Fireworks AI Inc.",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "$1.505 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1505000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "15.05 亿美元"
+          },
+          "announced_at": "2026-07-16",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-80d6b020dd75ac09",
+              "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
+              "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
+              "source_content_hash": "2ac54d2d554e9655",
+              "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+              "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-640953b2dd1efa0c",
+          "funding_insight_id": "FI-5401335ad961f05d",
+          "event_ids": [
+            "EV-b29878fdf79f2ac5"
+          ],
+          "company_entity_id": "EN-b0bc23fa8e20c543",
+          "company_canonical_entity_id": "EN-b0bc23fa8e20c543",
+          "company_name": "InstaLILY AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "Series B",
+          "amount_original": "$60 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 60000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6000 万美元"
+          },
+          "announced_at": "2026-07-14",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投，并增加了既有投资",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-b6c1fe80a4b09131",
+              "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
+              "source_title": "InstaLILY 融资 6000 万美元，将 AI 智能体引入建筑和物流企业",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote": "Insight Partners increased its existing stake",
+              "quote_hash": "f2633b02cb21a919072fbd9a71744a55ff79ab82cc784fe73b16f84cf5a45a8c"
+            },
+            {
+              "source_id": "FISRC-c8150575e9fc83bc",
+              "source_url": "https://www.morningstar.com/news/accesswire/1190835msn/instalily-raises-60-million-series-b-and-launches-lily-the-worlds-first-ai-forward-deployed-engineer",
+              "source_title": "InstaLILY Raises $60 Million Series B and Launches Lily, the World's First AI Forward Deployed Engineer | Morningstar",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote": "with participation from Insight Partners who has increased its investment",
+              "quote_hash": "7588b36ed010544e044b5bf53636c54ebb118d38c2c61022260e89a7e91d816c"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-43a92c9d0679393b",
+          "funding_insight_id": "FI-b76fffbf5d0d91bd",
+          "event_ids": [
+            "EV-d4e44892226be468"
+          ],
+          "company_entity_id": "EN-7d3194f79e645c42",
+          "company_canonical_entity_id": "EN-7d3194f79e645c42",
+          "company_name": "OpenAI",
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "Series F",
+          "amount_original": "$1220亿",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 122000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1220 亿美元"
+          },
+          "announced_at": "2026-03-31",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-b86e0fbe62dfd3dc",
+              "source_url": "https://www.mexc.com/news/996087",
+              "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+              "source_content_hash": "4e51c91e5fc7160c",
+              "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+              "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-77fa7361de8d4f68",
+          "funding_insight_id": "FI-2b8ea19368209f49",
+          "event_ids": [
+            "EV-aa33ca051f3a7f78",
+            "EV-0ade039d36e077ae",
+            "EV-a84ec4216d3ded6d"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-03-12",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+              "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+              "source_content_hash": "67f409ee5b146b1d",
+              "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners",
+              "quote_hash": "aac2bea2bbcae8d744e68bfda908240bb403ac3ace58a3f9c30ffd8d038de68a"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-b793306402b09b4a",
+          "funding_insight_id": "FI-c88f07d6a7726d1d",
+          "event_ids": [
+            "EV-d7f561bc4f6cb02d"
+          ],
+          "company_entity_id": "EN-3032646694ad17bb",
+          "company_canonical_entity_id": "",
+          "company_name": "E2B",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "Series A",
+          "amount_original": "$21 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 21000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2100 万美元"
+          },
+          "announced_at": "2025-07-28",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
+              "source_title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
+              "source_content_hash": "db0c071a75daeddf",
+              "quote": "led by global software investor Insight Partners",
+              "quote_hash": "01808c66215b589399519b4efd96640f961e742ba2321c13d5dc8ae1326368b9"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-4e400529e56d43d5",
+          "funding_insight_id": "FI-943beca4faf7346d",
+          "event_ids": [
+            "EV-15bbdd37c516309a"
+          ],
+          "company_entity_id": "EN-52f1bab72d488823",
+          "company_canonical_entity_id": "",
+          "company_name": "Relevance AI",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "Series B",
+          "amount_original": "$24 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 24000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2400 万美元"
+          },
+          "announced_at": "2025-05-06",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "既有投资方，本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e2076aaadf946323",
+              "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
+              "source_title": "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体",
+              "source_content_hash": "569a3e9ef99a7000",
+              "quote": "Returning investors King River Capital, Insight Partners, and Peak XV also participated",
+              "quote_hash": "f72178b073c8d598e270b84d1abc5c2f0a48a92296cb47a35233eadac198c052"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-3bc5a4e973b035eb",
+          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+          "source_content_hash": "290d66b36443e7c5",
+          "quote": "Insight Partners returned to lead this round, too",
+          "quote_hash": "e83ddba2629ebc0a50266e83e0af77210dffaeef336e64cea6a1df209dc9e9de"
+        },
+        {
+          "source_id": "FISRC-80d6b020dd75ac09",
+          "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
+          "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
+          "source_content_hash": "2ac54d2d554e9655",
+          "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+          "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
+        },
+        {
+          "source_id": "FISRC-b6c1fe80a4b09131",
+          "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
+          "source_title": "InstaLILY 融资 6000 万美元，将 AI 智能体引入建筑和物流企业",
+          "source_content_hash": "5cfacab2e15c6feb",
+          "quote": "Insight Partners increased its existing stake",
+          "quote_hash": "f2633b02cb21a919072fbd9a71744a55ff79ab82cc784fe73b16f84cf5a45a8c"
+        },
+        {
+          "source_id": "FISRC-c8150575e9fc83bc",
+          "source_url": "https://www.morningstar.com/news/accesswire/1190835msn/instalily-raises-60-million-series-b-and-launches-lily-the-worlds-first-ai-forward-deployed-engineer",
+          "source_title": "InstaLILY Raises $60 Million Series B and Launches Lily, the World's First AI Forward Deployed Engineer | Morningstar",
+          "source_content_hash": "3a191e9f00bd3318",
+          "quote": "with participation from Insight Partners who has increased its investment",
+          "quote_hash": "7588b36ed010544e044b5bf53636c54ebb118d38c2c61022260e89a7e91d816c"
+        },
+        {
+          "source_id": "FISRC-b86e0fbe62dfd3dc",
+          "source_url": "https://www.mexc.com/news/996087",
+          "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+          "source_content_hash": "4e51c91e5fc7160c",
+          "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+          "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+        },
+        {
+          "source_id": "FISRC-c29f00f067579660",
+          "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+          "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+          "source_content_hash": "67f409ee5b146b1d",
+          "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners",
+          "quote_hash": "aac2bea2bbcae8d744e68bfda908240bb403ac3ace58a3f9c30ffd8d038de68a"
+        },
+        {
+          "source_id": "FISRC-c4bbfe8565d35dc2",
+          "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
+          "source_title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
+          "source_content_hash": "db0c071a75daeddf",
+          "quote": "led by global software investor Insight Partners",
+          "quote_hash": "01808c66215b589399519b4efd96640f961e742ba2321c13d5dc8ae1326368b9"
+        },
+        {
+          "source_id": "FISRC-e2076aaadf946323",
+          "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
+          "source_title": "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体",
+          "source_content_hash": "569a3e9ef99a7000",
+          "quote": "Returning investors King River Capital, Insight Partners, and Peak XV also participated",
+          "quote_hash": "f72178b073c8d598e270b84d1abc5c2f0a48a92296cb47a35233eadac198c052"
         }
       ]
     },
@@ -12841,378 +13408,6 @@
           "source_content_hash": "4e1c1175bbda2d1a",
           "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator",
           "quote_hash": "98e6f8730b388d572e3942e6fd8ffd53d7b336a37c0c76e4b18c9b93df67f25d"
-        }
-      ]
-    },
-    {
-      "id": "INV-7626f5b02a6cc8",
-      "name": "Insight Partners",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 6,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 6,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2025-05-06",
-      "latest_disclosed_at": "2026-07-16",
-      "role_counts": {
-        "lead": 2,
-        "participant": 4
-      },
-      "round_codes": [
-        "series_a",
-        "series_b",
-        "series_d",
-        "series_f"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-3032646694ad17bb",
-          "canonical_entity_id": "",
-          "name": "E2B"
-        },
-        {
-          "entity_id": "EN-0caee180da9d0f3f",
-          "canonical_entity_id": "",
-          "name": "Fireworks AI Inc."
-        },
-        {
-          "entity_id": "EN-b0bc23fa8e20c543",
-          "canonical_entity_id": "EN-b0bc23fa8e20c543",
-          "name": "InstaLILY AI"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_entity_id": "EN-7d3194f79e645c42",
-          "name": "OpenAI"
-        },
-        {
-          "entity_id": "EN-52f1bab72d488823",
-          "canonical_entity_id": "",
-          "name": "Relevance AI"
-        },
-        {
-          "entity_id": "FICO-wonderful",
-          "canonical_entity_id": "",
-          "name": "Wonderful"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-53eca9a2793faf9b",
-          "funding_insight_id": "FI-3b1ea359415f476d",
-          "event_ids": [
-            "EV-4eaf3aabecae6016"
-          ],
-          "company_entity_id": "EN-0caee180da9d0f3f",
-          "company_canonical_entity_id": "",
-          "company_name": "Fireworks AI Inc.",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "$1.505 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1505000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "15.05 亿美元"
-          },
-          "announced_at": "2026-07-16",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-80d6b020dd75ac09",
-              "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
-              "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
-              "source_content_hash": "2ac54d2d554e9655",
-              "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
-              "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-640953b2dd1efa0c",
-          "funding_insight_id": "FI-5401335ad961f05d",
-          "event_ids": [
-            "EV-b29878fdf79f2ac5"
-          ],
-          "company_entity_id": "EN-b0bc23fa8e20c543",
-          "company_canonical_entity_id": "EN-b0bc23fa8e20c543",
-          "company_name": "InstaLILY AI",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "Series B",
-          "amount_original": "$60 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 60000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6000 万美元"
-          },
-          "announced_at": "2026-07-14",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投，并增加了既有投资",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
-              "source_title": "InstaLILY 融资 6000 万美元，将 AI 智能体引入建筑和物流企业",
-              "source_content_hash": "5cfacab2e15c6feb",
-              "quote": "Insight Partners increased its existing stake",
-              "quote_hash": "f2633b02cb21a919072fbd9a71744a55ff79ab82cc784fe73b16f84cf5a45a8c"
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "source_url": "https://www.morningstar.com/news/accesswire/1190835msn/instalily-raises-60-million-series-b-and-launches-lily-the-worlds-first-ai-forward-deployed-engineer",
-              "source_title": "InstaLILY Raises $60 Million Series B and Launches Lily, the World's First AI Forward Deployed Engineer | Morningstar",
-              "source_content_hash": "3a191e9f00bd3318",
-              "quote": "with participation from Insight Partners who has increased its investment",
-              "quote_hash": "7588b36ed010544e044b5bf53636c54ebb118d38c2c61022260e89a7e91d816c"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-43a92c9d0679393b",
-          "funding_insight_id": "FI-b76fffbf5d0d91bd",
-          "event_ids": [
-            "EV-d4e44892226be468"
-          ],
-          "company_entity_id": "EN-7d3194f79e645c42",
-          "company_canonical_entity_id": "EN-7d3194f79e645c42",
-          "company_name": "OpenAI",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F",
-          "amount_original": "$1220亿",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-03-31",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "source_url": "https://www.mexc.com/news/996087",
-              "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
-              "source_content_hash": "4e51c91e5fc7160c",
-              "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
-              "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-77fa7361de8d4f68",
-          "funding_insight_id": "FI-2b8ea19368209f49",
-          "event_ids": [
-            "EV-aa33ca051f3a7f78",
-            "EV-0ade039d36e077ae",
-            "EV-a84ec4216d3ded6d"
-          ],
-          "company_entity_id": "FICO-wonderful",
-          "company_canonical_entity_id": "",
-          "company_name": "Wonderful",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "1.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 150000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.5 亿美元"
-          },
-          "announced_at": "2026-03-12",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-c29f00f067579660",
-              "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
-              "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
-              "source_content_hash": "67f409ee5b146b1d",
-              "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners",
-              "quote_hash": "aac2bea2bbcae8d744e68bfda908240bb403ac3ace58a3f9c30ffd8d038de68a"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-b793306402b09b4a",
-          "funding_insight_id": "FI-c88f07d6a7726d1d",
-          "event_ids": [
-            "EV-d7f561bc4f6cb02d"
-          ],
-          "company_entity_id": "EN-3032646694ad17bb",
-          "company_canonical_entity_id": "",
-          "company_name": "E2B",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "Series A",
-          "amount_original": "$21 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 21000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2100 万美元"
-          },
-          "announced_at": "2025-07-28",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-c4bbfe8565d35dc2",
-              "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
-              "source_title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
-              "source_content_hash": "db0c071a75daeddf",
-              "quote": "led by global software investor Insight Partners",
-              "quote_hash": "01808c66215b589399519b4efd96640f961e742ba2321c13d5dc8ae1326368b9"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-4e400529e56d43d5",
-          "funding_insight_id": "FI-943beca4faf7346d",
-          "event_ids": [
-            "EV-15bbdd37c516309a"
-          ],
-          "company_entity_id": "EN-52f1bab72d488823",
-          "company_canonical_entity_id": "",
-          "company_name": "Relevance AI",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "Series B",
-          "amount_original": "$24 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 24000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "2400 万美元"
-          },
-          "announced_at": "2025-05-06",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "既有投资方，本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-e2076aaadf946323",
-              "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
-              "source_title": "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体",
-              "source_content_hash": "569a3e9ef99a7000",
-              "quote": "Returning investors King River Capital, Insight Partners, and Peak XV also participated",
-              "quote_hash": "f72178b073c8d598e270b84d1abc5c2f0a48a92296cb47a35233eadac198c052"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-80d6b020dd75ac09",
-          "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
-          "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
-          "source_content_hash": "2ac54d2d554e9655",
-          "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
-          "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
-        },
-        {
-          "source_id": "FISRC-b6c1fe80a4b09131",
-          "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
-          "source_title": "InstaLILY 融资 6000 万美元，将 AI 智能体引入建筑和物流企业",
-          "source_content_hash": "5cfacab2e15c6feb",
-          "quote": "Insight Partners increased its existing stake",
-          "quote_hash": "f2633b02cb21a919072fbd9a71744a55ff79ab82cc784fe73b16f84cf5a45a8c"
-        },
-        {
-          "source_id": "FISRC-c8150575e9fc83bc",
-          "source_url": "https://www.morningstar.com/news/accesswire/1190835msn/instalily-raises-60-million-series-b-and-launches-lily-the-worlds-first-ai-forward-deployed-engineer",
-          "source_title": "InstaLILY Raises $60 Million Series B and Launches Lily, the World's First AI Forward Deployed Engineer | Morningstar",
-          "source_content_hash": "3a191e9f00bd3318",
-          "quote": "with participation from Insight Partners who has increased its investment",
-          "quote_hash": "7588b36ed010544e044b5bf53636c54ebb118d38c2c61022260e89a7e91d816c"
-        },
-        {
-          "source_id": "FISRC-b86e0fbe62dfd3dc",
-          "source_url": "https://www.mexc.com/news/996087",
-          "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
-          "source_content_hash": "4e51c91e5fc7160c",
-          "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
-          "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
-        },
-        {
-          "source_id": "FISRC-c29f00f067579660",
-          "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
-          "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
-          "source_content_hash": "67f409ee5b146b1d",
-          "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners",
-          "quote_hash": "aac2bea2bbcae8d744e68bfda908240bb403ac3ace58a3f9c30ffd8d038de68a"
-        },
-        {
-          "source_id": "FISRC-c4bbfe8565d35dc2",
-          "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
-          "source_title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
-          "source_content_hash": "db0c071a75daeddf",
-          "quote": "led by global software investor Insight Partners",
-          "quote_hash": "01808c66215b589399519b4efd96640f961e742ba2321c13d5dc8ae1326368b9"
-        },
-        {
-          "source_id": "FISRC-e2076aaadf946323",
-          "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
-          "source_title": "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体",
-          "source_content_hash": "569a3e9ef99a7000",
-          "quote": "Returning investors King River Capital, Insight Partners, and Peak XV also participated",
-          "quote_hash": "f72178b073c8d598e270b84d1abc5c2f0a48a92296cb47a35233eadac198c052"
         }
       ]
     },
@@ -16316,6 +16511,249 @@
           "source_content_hash": "27fac1d61d267f2c",
           "quote": "Sequoia led the seed round for n8n in 2020; Felicis the Series A in 2021.",
           "quote_hash": "f3411a3d81225e862fd180c9eb64915b2b7e5d236423228eec433bf8bffbee5c"
+        }
+      ]
+    },
+    {
+      "id": "INV-07dc0f4178279d",
+      "name": "Vine Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 4,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 3,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-03-12",
+      "latest_disclosed_at": "2026-09-02",
+      "role_counts": {
+        "participant": 4
+      },
+      "round_codes": [
+        "seed",
+        "series_b",
+        "series_c"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-830cefea8ed73a00",
+          "canonical_entity_id": "",
+          "name": "Ornn AI Inc."
+        },
+        {
+          "entity_id": "EN-5b3767eb23d5e4ed",
+          "canonical_entity_id": "",
+          "name": "Qodo"
+        },
+        {
+          "entity_id": "FICO-wonderful",
+          "canonical_entity_id": "",
+          "name": "Wonderful"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-983206a5556a6799",
+          "funding_insight_id": "FI-d61afc2c6c00363a",
+          "event_ids": [
+            "EV-81bbaaec2965864a"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$550 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 550000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5.5 亿美元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc5a4e973b035eb",
+              "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+              "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+              "source_content_hash": "290d66b36443e7c5",
+              "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+              "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-d46599890a2b0b19",
+          "funding_insight_id": "FI-2a73fb895b9521fe",
+          "event_ids": [
+            "EV-7b1c734882fa1ea6"
+          ],
+          "company_entity_id": "EN-830cefea8ed73a00",
+          "company_canonical_entity_id": "",
+          "company_name": "Ornn AI Inc.",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$33M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 33000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3300 万美元"
+          },
+          "announced_at": "2026-06-24",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "既有投资方（本轮参投）",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-44c6debf2c528a2a",
+              "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
+              "source_title": "Ornn 融资 3300 万美元，帮助企业像买卖石油一样交易 AI 算力",
+              "source_content_hash": "5fe0ae2b10239c5e",
+              "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
+              "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-4f678f586776b74e",
+          "funding_insight_id": "FI-f8ac4d58dc2c42cb",
+          "event_ids": [
+            "EV-acdeebead5324344"
+          ],
+          "company_entity_id": "EN-5b3767eb23d5e4ed",
+          "company_canonical_entity_id": "",
+          "company_name": "Qodo",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "Series B",
+          "amount_original": "$70 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 70000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7000 万美元"
+          },
+          "announced_at": "2026-03-30",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
+              "source_title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
+              "source_content_hash": "043dbfa14e6bef8c",
+              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+              "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-5458ff56571426e2",
+          "funding_insight_id": "FI-2b8ea19368209f49",
+          "event_ids": [
+            "EV-aa33ca051f3a7f78",
+            "EV-0ade039d36e077ae",
+            "EV-a84ec4216d3ded6d"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-03-12",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+              "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+              "source_content_hash": "67f409ee5b146b1d",
+              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+              "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-3bc5a4e973b035eb",
+          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+          "source_content_hash": "290d66b36443e7c5",
+          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+        },
+        {
+          "source_id": "FISRC-44c6debf2c528a2a",
+          "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
+          "source_title": "Ornn 融资 3300 万美元，帮助企业像买卖石油一样交易 AI 算力",
+          "source_content_hash": "5fe0ae2b10239c5e",
+          "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
+          "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
+        },
+        {
+          "source_id": "FISRC-f001682a294672d5",
+          "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
+          "source_title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
+          "source_content_hash": "043dbfa14e6bef8c",
+          "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+          "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
+        },
+        {
+          "source_id": "FISRC-c29f00f067579660",
+          "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+          "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+          "source_content_hash": "67f409ee5b146b1d",
+          "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+          "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
         }
       ]
     },
@@ -26722,200 +27160,6 @@
       ]
     },
     {
-      "id": "INV-07dc0f4178279d",
-      "name": "Vine Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 3,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 3,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-03-12",
-      "latest_disclosed_at": "2026-06-24",
-      "role_counts": {
-        "participant": 3
-      },
-      "round_codes": [
-        "seed",
-        "series_b"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-830cefea8ed73a00",
-          "canonical_entity_id": "",
-          "name": "Ornn AI Inc."
-        },
-        {
-          "entity_id": "EN-5b3767eb23d5e4ed",
-          "canonical_entity_id": "",
-          "name": "Qodo"
-        },
-        {
-          "entity_id": "FICO-wonderful",
-          "canonical_entity_id": "",
-          "name": "Wonderful"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-d46599890a2b0b19",
-          "funding_insight_id": "FI-2a73fb895b9521fe",
-          "event_ids": [
-            "EV-7b1c734882fa1ea6"
-          ],
-          "company_entity_id": "EN-830cefea8ed73a00",
-          "company_canonical_entity_id": "",
-          "company_name": "Ornn AI Inc.",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$33M",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 33000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3300 万美元"
-          },
-          "announced_at": "2026-06-24",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "既有投资方（本轮参投）",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
-              "source_title": "Ornn 融资 3300 万美元，帮助企业像买卖石油一样交易 AI 算力",
-              "source_content_hash": "5fe0ae2b10239c5e",
-              "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
-              "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-4f678f586776b74e",
-          "funding_insight_id": "FI-f8ac4d58dc2c42cb",
-          "event_ids": [
-            "EV-acdeebead5324344"
-          ],
-          "company_entity_id": "EN-5b3767eb23d5e4ed",
-          "company_canonical_entity_id": "",
-          "company_name": "Qodo",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "Series B",
-          "amount_original": "$70 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 70000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "7000 万美元"
-          },
-          "announced_at": "2026-03-30",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
-              "source_title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
-              "source_content_hash": "043dbfa14e6bef8c",
-              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
-              "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-5458ff56571426e2",
-          "funding_insight_id": "FI-2b8ea19368209f49",
-          "event_ids": [
-            "EV-aa33ca051f3a7f78",
-            "EV-0ade039d36e077ae",
-            "EV-a84ec4216d3ded6d"
-          ],
-          "company_entity_id": "FICO-wonderful",
-          "company_canonical_entity_id": "",
-          "company_name": "Wonderful",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "1.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 150000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.5 亿美元"
-          },
-          "announced_at": "2026-03-12",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-c29f00f067579660",
-              "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
-              "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
-              "source_content_hash": "67f409ee5b146b1d",
-              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
-              "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-44c6debf2c528a2a",
-          "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
-          "source_title": "Ornn 融资 3300 万美元，帮助企业像买卖石油一样交易 AI 算力",
-          "source_content_hash": "5fe0ae2b10239c5e",
-          "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
-          "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
-        },
-        {
-          "source_id": "FISRC-f001682a294672d5",
-          "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
-          "source_title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
-          "source_content_hash": "043dbfa14e6bef8c",
-          "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
-          "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
-        },
-        {
-          "source_id": "FISRC-c29f00f067579660",
-          "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
-          "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
-          "source_content_hash": "67f409ee5b146b1d",
-          "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
-          "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
-        }
-      ]
-    },
-    {
       "id": "INV-2c38ce24857ae7",
       "name": "Amplify Partners",
       "aliases": [],
@@ -27639,6 +27883,282 @@
       ]
     },
     {
+      "id": "INV-c1a95750e9b0e9",
+      "name": "IVP",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-03-12",
+      "latest_disclosed_at": "2026-09-02",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "series_b",
+        "series_c"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-wonderful",
+          "canonical_entity_id": "",
+          "name": "Wonderful"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-5947c45a5b325f63",
+          "funding_insight_id": "FI-d61afc2c6c00363a",
+          "event_ids": [
+            "EV-81bbaaec2965864a"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$550 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 550000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5.5 亿美元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc5a4e973b035eb",
+              "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+              "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+              "source_content_hash": "290d66b36443e7c5",
+              "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+              "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-dab2f38a3a543902",
+          "funding_insight_id": "FI-2b8ea19368209f49",
+          "event_ids": [
+            "EV-aa33ca051f3a7f78",
+            "EV-0ade039d36e077ae",
+            "EV-a84ec4216d3ded6d"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-03-12",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+              "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+              "source_content_hash": "67f409ee5b146b1d",
+              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+              "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-3bc5a4e973b035eb",
+          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+          "source_content_hash": "290d66b36443e7c5",
+          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+        },
+        {
+          "source_id": "FISRC-c29f00f067579660",
+          "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+          "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+          "source_content_hash": "67f409ee5b146b1d",
+          "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+          "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
+        }
+      ]
+    },
+    {
+      "id": "INV-93f1a68c693363",
+      "name": "上海天使会",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-07-13",
+      "latest_disclosed_at": "2026-08-31",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "pre_series_a",
+        "seed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-7f505bc9744206fd",
+          "canonical_entity_id": "",
+          "name": "上海灵睿智芯计算技术有限公司"
+        },
+        {
+          "entity_id": "EN-447a48e5d0951831",
+          "canonical_entity_id": "EN-447a48e5d0951831",
+          "name": "上海以太之心科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-25bc9866fe5becd5",
+          "funding_insight_id": "FI-88ed5f2ad4bd8ab7",
+          "event_ids": [
+            "EV-89ec502a1340079a"
+          ],
+          "company_entity_id": "EN-447a48e5d0951831",
+          "company_canonical_entity_id": "EN-447a48e5d0951831",
+          "company_name": "上海以太之心科技有限公司",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "数千万",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-08-31",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-1a358dfcb10fed1c",
+              "source_url": "https://www.stcn.com/article/detail/4165239.html",
+              "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+              "source_content_hash": "d05d4ca6f929c2cb",
+              "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+              "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-026473ccf9453664",
+          "funding_insight_id": "FI-3923d1a4fc2b8a40",
+          "event_ids": [
+            "EV-800384d4fd2434a5"
+          ],
+          "company_entity_id": "EN-7f505bc9744206fd",
+          "company_canonical_entity_id": "",
+          "company_name": "上海灵睿智芯计算技术有限公司",
+          "round": "Pre-A轮",
+          "round_code": "pre_series_a",
+          "round_original": "Pre-A轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-07-13",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-760e793448781182",
+              "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
+              "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
+              "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
+              "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
+              "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-1a358dfcb10fed1c",
+          "source_url": "https://www.stcn.com/article/detail/4165239.html",
+          "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+          "source_content_hash": "d05d4ca6f929c2cb",
+          "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+          "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+        },
+        {
+          "source_id": "FISRC-760e793448781182",
+          "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
+          "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
+          "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
+          "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
+          "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+        }
+      ]
+    },
+    {
       "id": "INV-17c0004abc688e",
       "name": "Nexus Venture Partners",
       "aliases": [],
@@ -28290,6 +28810,400 @@
           "source_content_hash": "affdfd9a0ccfb188",
           "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+        }
+      ]
+    },
+    {
+      "id": "INV-675f70a9c00060",
+      "name": "腾讯",
+      "aliases": [],
+      "canonical_entity_id": "EN-9c8ae69b84f21a2e",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-06-03",
+      "latest_disclosed_at": "2026-08-24",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "first_external",
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-9a970ad7900121db",
+          "canonical_entity_id": "",
+          "name": "小鹏机器人业务"
+        },
+        {
+          "entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "name": "DeepSeek"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-e52bb42b272a3729",
+          "funding_insight_id": "FI-e3406c2e889004e3",
+          "event_ids": [
+            "EV-987cb2e5e20f79ce"
+          ],
+          "company_entity_id": "EN-9a970ad7900121db",
+          "company_canonical_entity_id": "",
+          "company_name": "小鹏机器人业务",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "9亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-24",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+              "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+              "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-60bdf48f03f8b5d6",
+          "funding_insight_id": "FI-71c58a10a93101c8",
+          "event_ids": [
+            "EV-d4d7b019ff0015df"
+          ],
+          "company_entity_id": "EN-6f7ac1823da81d2e",
+          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "company_name": "DeepSeek",
+          "round": "首次外部融资",
+          "round_code": "first_external",
+          "round_original": "首次外部融资轮",
+          "amount_original": "约74亿美元（约500亿元人民币）",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 74 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+              "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+              "source_content_hash": "1a156474d760e02b",
+              "quote": "Tencent ​¥10B",
+              "quote_hash": "47ccb8ca0a160a154819a8c94913cdbb3c3928767235b01401debc701e04a303"
+            },
+            {
+              "source_id": "FISRC-20480dcf3f970893",
+              "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
+              "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
+              "source_content_hash": "94a6c6ef0b270e0d",
+              "quote": "Strategic capital was anchored by Tencent",
+              "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2ec9a5e83ce18f75",
+          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "source_content_hash": "b8e4f0b869df00ee",
+          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+          "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+        },
+        {
+          "source_id": "FISRC-d2c8c841370ed82a",
+          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+          "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+          "source_content_hash": "1a156474d760e02b",
+          "quote": "Tencent ​¥10B",
+          "quote_hash": "47ccb8ca0a160a154819a8c94913cdbb3c3928767235b01401debc701e04a303"
+        },
+        {
+          "source_id": "FISRC-20480dcf3f970893",
+          "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
+          "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
+          "source_content_hash": "94a6c6ef0b270e0d",
+          "quote": "Strategic capital was anchored by Tencent",
+          "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
+        }
+      ]
+    },
+    {
+      "id": "INV-581465289348eb",
+      "name": "IDG资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2024-09-12",
+      "latest_disclosed_at": "2026-08-24",
+      "role_counts": {
+        "historical_or_ambiguous": 2,
+        "lead": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "first_external",
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-9a970ad7900121db",
+          "canonical_entity_id": "",
+          "name": "小鹏机器人业务"
+        },
+        {
+          "entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "name": "DeepSeek"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-14519fdd0cc3b0f9",
+          "funding_insight_id": "FI-e3406c2e889004e3",
+          "event_ids": [
+            "EV-987cb2e5e20f79ce"
+          ],
+          "company_entity_id": "EN-9a970ad7900121db",
+          "company_canonical_entity_id": "",
+          "company_name": "小鹏机器人业务",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "9亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-24",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+              "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+              "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-aae733cb888f1a2d",
+          "funding_insight_id": "FI-f7342735e68375d9",
+          "event_ids": [
+            "EV-6ca567f6e80c36c5"
+          ],
+          "company_entity_id": "EN-bbc41366a5a7cf78",
+          "company_canonical_entity_id": "",
+          "company_name": "北京星动纪元科技有限公司",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-07-06",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2026年4月新一轮参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-8c073d38e1f34758",
+              "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+              "source_title": "星动纪元完成10亿元新一轮融资",
+              "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+              "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
+              "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-3e557b0bed7f928f",
+          "funding_insight_id": "FI-71c58a10a93101c8",
+          "event_ids": [
+            "EV-d4d7b019ff0015df"
+          ],
+          "company_entity_id": "EN-6f7ac1823da81d2e",
+          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "company_name": "DeepSeek",
+          "round": "首次外部融资",
+          "round_code": "first_external",
+          "round_original": "首次外部融资轮",
+          "amount_original": "约74亿美元（约500亿元人民币）",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 74 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+              "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+              "source_content_hash": "1a156474d760e02b",
+              "quote": "JD.com and IDG ​¥3B each",
+              "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-8d562a8225452727",
+          "funding_insight_id": "FI-17403f62777b52b5",
+          "event_ids": [
+            "EV-7a44a47bf36780d2"
+          ],
+          "company_entity_id": "EN-721eb3fd31f8e1f6",
+          "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
+          "company_name": "上海壁仞科技股份有限公司",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "超过50亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 5000000000,
+            "min_value": 5000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 50 亿元"
+          },
+          "announced_at": "2024-09-12",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-081c8476182d3ff7",
+              "source_url": "https://36kr.com/p/753999774079237",
+              "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
+              "source_content_hash": "48f7a6ff96b731e7",
+              "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
+              "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2ec9a5e83ce18f75",
+          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "source_content_hash": "b8e4f0b869df00ee",
+          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+          "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+        },
+        {
+          "source_id": "FISRC-8c073d38e1f34758",
+          "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+          "source_title": "星动纪元完成10亿元新一轮融资",
+          "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+          "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
+          "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
+        },
+        {
+          "source_id": "FISRC-d2c8c841370ed82a",
+          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+          "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+          "source_content_hash": "1a156474d760e02b",
+          "quote": "JD.com and IDG ​¥3B each",
+          "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
+        },
+        {
+          "source_id": "FISRC-081c8476182d3ff7",
+          "source_url": "https://36kr.com/p/753999774079237",
+          "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
+          "source_content_hash": "48f7a6ff96b731e7",
+          "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
+          "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
         }
       ]
     },
@@ -46892,6 +47806,261 @@
       ]
     },
     {
+      "id": "INV-1bba61cf27836f",
+      "name": "9Yards",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-09-02",
+      "latest_disclosed_at": "2026-09-02",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_c"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-wonderful",
+          "canonical_entity_id": "",
+          "name": "Wonderful"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-45167032ea86fd06",
+          "funding_insight_id": "FI-d61afc2c6c00363a",
+          "event_ids": [
+            "EV-81bbaaec2965864a"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$550 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 550000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5.5 亿美元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc5a4e973b035eb",
+              "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+              "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+              "source_content_hash": "290d66b36443e7c5",
+              "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+              "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-3bc5a4e973b035eb",
+          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+          "source_content_hash": "290d66b36443e7c5",
+          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+        }
+      ]
+    },
+    {
+      "id": "INV-4b4a8d38bd2159",
+      "name": "Delta-v Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-09-02",
+      "latest_disclosed_at": "2026-09-02",
+      "role_counts": {
+        "lead": 1
+      },
+      "round_codes": [
+        "multi_round"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-befd0093486b775d",
+          "canonical_entity_id": "",
+          "name": "HiddenLayer"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-4b60e1e76d6741c1",
+          "funding_insight_id": "FI-1355b7139ccc6c99",
+          "event_ids": [
+            "EV-f0a666f5416e049f"
+          ],
+          "company_entity_id": "EN-befd0093486b775d",
+          "company_canonical_entity_id": "",
+          "company_name": "HiddenLayer",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "$100M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1 亿美元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-d8f7e5310c5b9a5e",
+              "source_url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments",
+              "source_title": "HiddenLayer 融资 1 亿美元 B 轮，企业加码 AI 部署安全",
+              "source_content_hash": "d0830065200fc42b",
+              "quote": "a Series B funding round that was led by Delta-v Capital",
+              "quote_hash": "54f3eadb85ed75ef25adb2a0d0b6630b6b583558f4114c2b3a95040a92451316"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-d8f7e5310c5b9a5e",
+          "source_url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments",
+          "source_title": "HiddenLayer 融资 1 亿美元 B 轮，企业加码 AI 部署安全",
+          "source_content_hash": "d0830065200fc42b",
+          "quote": "a Series B funding round that was led by Delta-v Capital",
+          "quote_hash": "54f3eadb85ed75ef25adb2a0d0b6630b6b583558f4114c2b3a95040a92451316"
+        }
+      ]
+    },
+    {
+      "id": "INV-687d5a6b6d6353",
+      "name": "Salesforce",
+      "aliases": [],
+      "canonical_entity_id": "EN-3ccbd9105a45d8fc",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-09-02",
+      "latest_disclosed_at": "2026-09-02",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_c"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-wonderful",
+          "canonical_entity_id": "",
+          "name": "Wonderful"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-960372adb8efa521",
+          "funding_insight_id": "FI-d61afc2c6c00363a",
+          "event_ids": [
+            "EV-81bbaaec2965864a"
+          ],
+          "company_entity_id": "FICO-wonderful",
+          "company_canonical_entity_id": "",
+          "company_name": "Wonderful",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$550 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 550000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5.5 亿美元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc5a4e973b035eb",
+              "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+              "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+              "source_content_hash": "290d66b36443e7c5",
+              "quote": "Salesforce is investing in the company for the first time in this round.",
+              "quote_hash": "02773655320bf00e0bd4ccf2d0888f6fc2810941bf9a7f76546a6a664cf87768"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-3bc5a4e973b035eb",
+          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+          "source_content_hash": "290d66b36443e7c5",
+          "quote": "Salesforce is investing in the company for the first time in this round.",
+          "quote_hash": "02773655320bf00e0bd4ccf2d0888f6fc2810941bf9a7f76546a6a664cf87768"
+        }
+      ]
+    },
+    {
       "id": "INV-053d78be990688",
       "name": "Anne Neuberger",
       "aliases": [],
@@ -48042,6 +49211,261 @@
           "source_content_hash": "f272d6219c1373f8",
           "quote": "Swish, Netz, and Zach Frankel (president of Cognition), Yinon Costica (co-founder of Wiz), Ofir Ehrlich (co-founder of Eon), Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
           "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
+        }
+      ]
+    },
+    {
+      "id": "INV-8b2dff05f7cbaf",
+      "name": "高信资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-08-31",
+      "latest_disclosed_at": "2026-08-31",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-447a48e5d0951831",
+          "canonical_entity_id": "EN-447a48e5d0951831",
+          "name": "上海以太之心科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-eee9c2a03cc162da",
+          "funding_insight_id": "FI-88ed5f2ad4bd8ab7",
+          "event_ids": [
+            "EV-89ec502a1340079a"
+          ],
+          "company_entity_id": "EN-447a48e5d0951831",
+          "company_canonical_entity_id": "EN-447a48e5d0951831",
+          "company_name": "上海以太之心科技有限公司",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "数千万",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-08-31",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-1a358dfcb10fed1c",
+              "source_url": "https://www.stcn.com/article/detail/4165239.html",
+              "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+              "source_content_hash": "d05d4ca6f929c2cb",
+              "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+              "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-1a358dfcb10fed1c",
+          "source_url": "https://www.stcn.com/article/detail/4165239.html",
+          "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+          "source_content_hash": "d05d4ca6f929c2cb",
+          "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+          "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+        }
+      ]
+    },
+    {
+      "id": "INV-4cd81b2fccccf1",
+      "name": "浦东创投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-08-31",
+      "latest_disclosed_at": "2026-08-31",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-447a48e5d0951831",
+          "canonical_entity_id": "EN-447a48e5d0951831",
+          "name": "上海以太之心科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-93a2e84dda88a8df",
+          "funding_insight_id": "FI-88ed5f2ad4bd8ab7",
+          "event_ids": [
+            "EV-89ec502a1340079a"
+          ],
+          "company_entity_id": "EN-447a48e5d0951831",
+          "company_canonical_entity_id": "EN-447a48e5d0951831",
+          "company_name": "上海以太之心科技有限公司",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "数千万",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-08-31",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-1a358dfcb10fed1c",
+              "source_url": "https://www.stcn.com/article/detail/4165239.html",
+              "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+              "source_content_hash": "d05d4ca6f929c2cb",
+              "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+              "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-1a358dfcb10fed1c",
+          "source_url": "https://www.stcn.com/article/detail/4165239.html",
+          "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+          "source_content_hash": "d05d4ca6f929c2cb",
+          "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+          "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+        }
+      ]
+    },
+    {
+      "id": "INV-d9012e2d5d8ee7",
+      "name": "天使清芬",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-08-31",
+      "latest_disclosed_at": "2026-08-31",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "seed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-447a48e5d0951831",
+          "canonical_entity_id": "EN-447a48e5d0951831",
+          "name": "上海以太之心科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-7142e4e4275ecd54",
+          "funding_insight_id": "FI-88ed5f2ad4bd8ab7",
+          "event_ids": [
+            "EV-89ec502a1340079a"
+          ],
+          "company_entity_id": "EN-447a48e5d0951831",
+          "company_canonical_entity_id": "EN-447a48e5d0951831",
+          "company_name": "上海以太之心科技有限公司",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "数千万",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-08-31",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-1a358dfcb10fed1c",
+              "source_url": "https://www.stcn.com/article/detail/4165239.html",
+              "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+              "source_content_hash": "d05d4ca6f929c2cb",
+              "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+              "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-1a358dfcb10fed1c",
+          "source_url": "https://www.stcn.com/article/detail/4165239.html",
+          "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
+          "source_content_hash": "d05d4ca6f929c2cb",
+          "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
+          "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
         }
       ]
     },
@@ -49209,6 +50633,340 @@
           "source_content_hash": "3f1c5718c2b6b5fd",
           "quote": "The company announced the round Tuesday, saying the new capital comes partly from a number of prominent entertainment industry organizations, including Universal Music Group, Sony Music Group, Warner Music Group, and gaming giant Electronic Arts (EA).",
           "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
+        }
+      ]
+    },
+    {
+      "id": "INV-2a0f206438a414",
+      "name": "阿里巴巴",
+      "aliases": [],
+      "canonical_entity_id": "EN-047364b9be67f665",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-05-07",
+      "latest_disclosed_at": "2026-08-24",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-9a970ad7900121db",
+          "canonical_entity_id": "",
+          "name": "小鹏机器人业务"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-0a0cb714a81563d4",
+          "funding_insight_id": "FI-e3406c2e889004e3",
+          "event_ids": [
+            "EV-987cb2e5e20f79ce"
+          ],
+          "company_entity_id": "EN-9a970ad7900121db",
+          "company_canonical_entity_id": "",
+          "company_name": "小鹏机器人业务",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "9亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-24",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+              "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+              "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-d8d2b6a1bd789781",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
+          "event_ids": [
+            "EV-c5d7d88d1aef8edb"
+          ],
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "约20亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 20 亿美元"
+          },
+          "announced_at": "2026-05-07",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A+轮领投；B轮参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+              "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+              "source_content_hash": "eeb091dd8db852e6",
+              "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
+              "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
+            },
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+              "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+              "source_content_hash": "eeb091dd8db852e6",
+              "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
+              "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2ec9a5e83ce18f75",
+          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "source_content_hash": "b8e4f0b869df00ee",
+          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+          "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+        },
+        {
+          "source_id": "FISRC-5d82f5dc9fc96ce5",
+          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+          "source_content_hash": "eeb091dd8db852e6",
+          "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
+          "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
+        },
+        {
+          "source_id": "FISRC-5d82f5dc9fc96ce5",
+          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+          "source_content_hash": "eeb091dd8db852e6",
+          "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
+          "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
+        }
+      ]
+    },
+    {
+      "id": "INV-5e189044745410",
+      "name": "高榕创投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-03-25",
+      "latest_disclosed_at": "2026-08-24",
+      "role_counts": {
+        "historical_or_ambiguous": 2,
+        "participant": 1
+      },
+      "round_codes": [
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-9a970ad7900121db",
+          "canonical_entity_id": "",
+          "name": "小鹏机器人业务"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-7574006920ec4306",
+          "funding_insight_id": "FI-e3406c2e889004e3",
+          "event_ids": [
+            "EV-987cb2e5e20f79ce"
+          ],
+          "company_entity_id": "EN-9a970ad7900121db",
+          "company_canonical_entity_id": "",
+          "company_name": "小鹏机器人业务",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "9亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-24",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+              "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+              "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-50004477c1e83309",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
+          "event_ids": [
+            "EV-c5d7d88d1aef8edb"
+          ],
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "约20亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 20 亿美元"
+          },
+          "announced_at": "2026-05-07",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "B轮参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+              "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+              "source_content_hash": "eeb091dd8db852e6",
+              "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
+              "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-2df83d9f446226bc",
+          "funding_insight_id": "FI-c3bce60cc6406ae5",
+          "event_ids": [
+            "EV-e6a4e0785ebb268a"
+          ],
+          "company_entity_id": "EN-be8f311b8bb47e9c",
+          "company_canonical_entity_id": "",
+          "company_name": "华深智药科技（北京）有限公司",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "7.87亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 787000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "7.87 亿美元"
+          },
+          "announced_at": "2026-03-25",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-972ef11d09af7ec8",
+              "source_url": "https://vc.pedaily.cn/company/205217.html",
+              "source_title": "华深智药完成7.87亿美元B轮融资",
+              "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+              "quote": "A轮融资：金额 近5亿人民币 ，投资方为五源资本、高榕创投、Neumann Advisors、襄禾资本、高瓴创投、清智资本",
+              "quote_hash": "49e975ab0c8bd1e87a8fc18d6354e5d517499da3608a91fdf0fbb5dd193fcd3b"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2ec9a5e83ce18f75",
+          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "source_content_hash": "b8e4f0b869df00ee",
+          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+          "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+        },
+        {
+          "source_id": "FISRC-5d82f5dc9fc96ce5",
+          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+          "source_content_hash": "eeb091dd8db852e6",
+          "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
+          "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
+        },
+        {
+          "source_id": "FISRC-972ef11d09af7ec8",
+          "source_url": "https://vc.pedaily.cn/company/205217.html",
+          "source_title": "华深智药完成7.87亿美元B轮融资",
+          "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+          "quote": "A轮融资：金额 近5亿人民币 ，投资方为五源资本、高榕创投、Neumann Advisors、襄禾资本、高瓴创投、清智资本",
+          "quote_hash": "49e975ab0c8bd1e87a8fc18d6354e5d517499da3608a91fdf0fbb5dd193fcd3b"
         }
       ]
     },
@@ -71478,91 +73236,6 @@
       ]
     },
     {
-      "id": "INV-93f1a68c693363",
-      "name": "上海天使会",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-07-13",
-      "latest_disclosed_at": "2026-07-13",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "pre_series_a"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-7f505bc9744206fd",
-          "canonical_entity_id": "",
-          "name": "上海灵睿智芯计算技术有限公司"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-026473ccf9453664",
-          "funding_insight_id": "FI-3923d1a4fc2b8a40",
-          "event_ids": [
-            "EV-800384d4fd2434a5"
-          ],
-          "company_entity_id": "EN-7f505bc9744206fd",
-          "company_canonical_entity_id": "",
-          "company_name": "上海灵睿智芯计算技术有限公司",
-          "round": "Pre-A轮",
-          "round_code": "pre_series_a",
-          "round_original": "Pre-A轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-07-13",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-760e793448781182",
-              "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
-              "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
-              "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
-              "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
-              "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-760e793448781182",
-          "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
-          "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
-          "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
-          "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
-          "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
-        }
-      ]
-    },
-    {
       "id": "INV-570f36454a200e",
       "name": "石溪资本",
       "aliases": [],
@@ -78288,188 +79961,6 @@
           "source_content_hash": "0eae2122fce5a05c",
           "quote": "DevRev CEO Dheeraj Pandey",
           "quote_hash": "3b9a99cf520dfa2c8dd60566b0aec4acd56269bb2001efdd49b3fe78a08b0427"
-        }
-      ]
-    },
-    {
-      "id": "INV-581465289348eb",
-      "name": "IDG资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 2,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2024-09-12",
-      "latest_disclosed_at": "2026-07-06",
-      "role_counts": {
-        "historical_or_ambiguous": 2,
-        "participant": 1
-      },
-      "round_codes": [
-        "first_external"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-6f7ac1823da81d2e",
-          "canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "name": "DeepSeek"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-aae733cb888f1a2d",
-          "funding_insight_id": "FI-f7342735e68375d9",
-          "event_ids": [
-            "EV-6ca567f6e80c36c5"
-          ],
-          "company_entity_id": "EN-bbc41366a5a7cf78",
-          "company_canonical_entity_id": "",
-          "company_name": "北京星动纪元科技有限公司",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-07-06",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "2026年4月新一轮参投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-8c073d38e1f34758",
-              "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-              "source_title": "星动纪元完成10亿元新一轮融资",
-              "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
-              "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
-              "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-3e557b0bed7f928f",
-          "funding_insight_id": "FI-71c58a10a93101c8",
-          "event_ids": [
-            "EV-d4d7b019ff0015df"
-          ],
-          "company_entity_id": "EN-6f7ac1823da81d2e",
-          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "company_name": "DeepSeek",
-          "round": "首次外部融资",
-          "round_code": "first_external",
-          "round_original": "首次外部融资轮",
-          "amount_original": "约74亿美元（约500亿元人民币）",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 74 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-d2c8c841370ed82a",
-              "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
-              "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
-              "source_content_hash": "1a156474d760e02b",
-              "quote": "JD.com and IDG ​¥3B each",
-              "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-8d562a8225452727",
-          "funding_insight_id": "FI-17403f62777b52b5",
-          "event_ids": [
-            "EV-7a44a47bf36780d2"
-          ],
-          "company_entity_id": "EN-721eb3fd31f8e1f6",
-          "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
-          "company_name": "上海壁仞科技股份有限公司",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "超过50亿元人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 5000000000,
-            "min_value": 5000000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 50 亿元"
-          },
-          "announced_at": "2024-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A轮领投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-081c8476182d3ff7",
-              "source_url": "https://36kr.com/p/753999774079237",
-              "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
-              "source_content_hash": "48f7a6ff96b731e7",
-              "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
-              "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-8c073d38e1f34758",
-          "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-          "source_title": "星动纪元完成10亿元新一轮融资",
-          "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
-          "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
-          "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
-        },
-        {
-          "source_id": "FISRC-d2c8c841370ed82a",
-          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
-          "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
-          "source_content_hash": "1a156474d760e02b",
-          "quote": "JD.com and IDG ​¥3B each",
-          "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
-        },
-        {
-          "source_id": "FISRC-081c8476182d3ff7",
-          "source_url": "https://36kr.com/p/753999774079237",
-          "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
-          "source_content_hash": "48f7a6ff96b731e7",
-          "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
-          "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
         }
       ]
     },
@@ -94035,107 +95526,6 @@
           "source_content_hash": "94a6c6ef0b270e0d",
           "quote": "battery manufacturer CATL",
           "quote_hash": "e0b616b1ac277c041925d4a8c3cf5a0787096db311274a1b71b625b306586175"
-        }
-      ]
-    },
-    {
-      "id": "INV-675f70a9c00060",
-      "name": "腾讯",
-      "aliases": [],
-      "canonical_entity_id": "EN-9c8ae69b84f21a2e",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-06-03",
-      "latest_disclosed_at": "2026-06-03",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "first_external"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-6f7ac1823da81d2e",
-          "canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "name": "DeepSeek"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-60bdf48f03f8b5d6",
-          "funding_insight_id": "FI-71c58a10a93101c8",
-          "event_ids": [
-            "EV-d4d7b019ff0015df"
-          ],
-          "company_entity_id": "EN-6f7ac1823da81d2e",
-          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "company_name": "DeepSeek",
-          "round": "首次外部融资",
-          "round_code": "first_external",
-          "round_original": "首次外部融资轮",
-          "amount_original": "约74亿美元（约500亿元人民币）",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 74 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-d2c8c841370ed82a",
-              "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
-              "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
-              "source_content_hash": "1a156474d760e02b",
-              "quote": "Tencent ​¥10B",
-              "quote_hash": "47ccb8ca0a160a154819a8c94913cdbb3c3928767235b01401debc701e04a303"
-            },
-            {
-              "source_id": "FISRC-20480dcf3f970893",
-              "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
-              "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
-              "source_content_hash": "94a6c6ef0b270e0d",
-              "quote": "Strategic capital was anchored by Tencent",
-              "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-d2c8c841370ed82a",
-          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
-          "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
-          "source_content_hash": "1a156474d760e02b",
-          "quote": "Tencent ​¥10B",
-          "quote_hash": "47ccb8ca0a160a154819a8c94913cdbb3c3928767235b01401debc701e04a303"
-        },
-        {
-          "source_id": "FISRC-20480dcf3f970893",
-          "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
-          "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
-          "source_content_hash": "94a6c6ef0b270e0d",
-          "quote": "Strategic capital was anchored by Tencent",
-          "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
         }
       ]
     },
@@ -115022,93 +116412,6 @@
       ]
     },
     {
-      "id": "INV-c1a95750e9b0e9",
-      "name": "IVP",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-03-12",
-      "latest_disclosed_at": "2026-03-12",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_b"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "FICO-wonderful",
-          "canonical_entity_id": "",
-          "name": "Wonderful"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-dab2f38a3a543902",
-          "funding_insight_id": "FI-2b8ea19368209f49",
-          "event_ids": [
-            "EV-aa33ca051f3a7f78",
-            "EV-0ade039d36e077ae",
-            "EV-a84ec4216d3ded6d"
-          ],
-          "company_entity_id": "FICO-wonderful",
-          "company_canonical_entity_id": "",
-          "company_name": "Wonderful",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "1.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 150000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1.5 亿美元"
-          },
-          "announced_at": "2026-03-12",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-c29f00f067579660",
-              "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
-              "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
-              "source_content_hash": "67f409ee5b146b1d",
-              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
-              "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-c29f00f067579660",
-          "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
-          "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
-          "source_content_hash": "67f409ee5b146b1d",
-          "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
-          "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
-        }
-      ]
-    },
-    {
       "id": "INV-fc67aa4952b271",
       "name": "Jeff Bezos",
       "aliases": [],
@@ -131436,6 +132739,160 @@
       ]
     },
     {
+      "id": "INV-de1bd0b1129057",
+      "name": "何小鹏、顾宏地全资控制的关联主体",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-08-24",
+      "latest_disclosed_at": "2026-08-24",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-bf4155d7577f7d0d",
+          "funding_insight_id": "FI-e3406c2e889004e3",
+          "event_ids": [
+            "EV-987cb2e5e20f79ce"
+          ],
+          "company_entity_id": "EN-9a970ad7900121db",
+          "company_canonical_entity_id": "",
+          "company_name": "小鹏机器人业务",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "9亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-24",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "高管认购方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-2b9c9aa0b968cbe6",
+              "source_url": "https://eu.36kr.com/zh/p/3954397242473863",
+              "source_title": "何小鹏打破宇树纪录 行业突破引关注",
+              "source_content_hash": "53298de93d50bd64",
+              "quote": "高管认购方即由何小鹏、顾宏地全资控制的关联主体，拟合计出资1亿美元，认购4933.76万普通股。",
+              "quote_hash": "54c251a3a2cf16f1f0c06fc479700e2ce663c62d94a8adeb64f90bb6634b3f16"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2b9c9aa0b968cbe6",
+          "source_url": "https://eu.36kr.com/zh/p/3954397242473863",
+          "source_title": "何小鹏打破宇树纪录 行业突破引关注",
+          "source_content_hash": "53298de93d50bd64",
+          "quote": "高管认购方即由何小鹏、顾宏地全资控制的关联主体，拟合计出资1亿美元，认购4933.76万普通股。",
+          "quote_hash": "54c251a3a2cf16f1f0c06fc479700e2ce663c62d94a8adeb64f90bb6634b3f16"
+        }
+      ]
+    },
+    {
+      "id": "INV-f7535309dd288b",
+      "name": "小鹏集团旗下全资子公司",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-08-24",
+      "latest_disclosed_at": "2026-08-24",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-866bfcfddf3cc385",
+          "funding_insight_id": "FI-e3406c2e889004e3",
+          "event_ids": [
+            "EV-987cb2e5e20f79ce"
+          ],
+          "company_entity_id": "EN-9a970ad7900121db",
+          "company_canonical_entity_id": "",
+          "company_name": "小鹏机器人业务",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "9亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-24",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "本轮认购方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-2b9c9aa0b968cbe6",
+              "source_url": "https://eu.36kr.com/zh/p/3954397242473863",
+              "source_title": "何小鹏打破宇树纪录 行业突破引关注",
+              "source_content_hash": "53298de93d50bd64",
+              "quote": "小鹏集团旗下全资子公司拟出资2亿美元，认购9867.52万股A系列优先股",
+              "quote_hash": "42b2cdd1001411eb0097a0ddf075fd1799977318c70d7f75468a5b7ef7197f22"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2b9c9aa0b968cbe6",
+          "source_url": "https://eu.36kr.com/zh/p/3954397242473863",
+          "source_title": "何小鹏打破宇树纪录 行业突破引关注",
+          "source_content_hash": "53298de93d50bd64",
+          "quote": "小鹏集团旗下全资子公司拟出资2亿美元，认购9867.52万股A系列优先股",
+          "quote_hash": "42b2cdd1001411eb0097a0ddf075fd1799977318c70d7f75468a5b7ef7197f22"
+        }
+      ]
+    },
+    {
       "id": "INV-ccb176f47658b3",
       "name": "Adjacent",
       "aliases": [],
@@ -142929,224 +144386,6 @@
           "source_content_hash": "a2cf4553631fde95",
           "quote": "种子轮 2025-05 数千万人民币 云岫资本 ， 某半导体知名投资机构",
           "quote_hash": "aa3c604a4aa71cb1421acf8bcaaff6c64e3363a362ce290f95faae78455f93cd"
-        }
-      ]
-    },
-    {
-      "id": "INV-2a0f206438a414",
-      "name": "阿里巴巴",
-      "aliases": [],
-      "canonical_entity_id": "EN-047364b9be67f665",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-05-07",
-      "latest_disclosed_at": "2026-05-07",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-d8d2b6a1bd789781",
-          "funding_insight_id": "FI-4c761f22f0ef6d7f",
-          "event_ids": [
-            "EV-c5d7d88d1aef8edb"
-          ],
-          "company_entity_id": "FICO-481243d2f2a235c1",
-          "company_canonical_entity_id": "",
-          "company_name": "月之暗面",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮",
-          "amount_original": "约20亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 20 亿美元"
-          },
-          "announced_at": "2026-05-07",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A+轮领投；B轮参投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-5d82f5dc9fc96ce5",
-              "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-              "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-              "source_content_hash": "eeb091dd8db852e6",
-              "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
-              "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
-            },
-            {
-              "source_id": "FISRC-5d82f5dc9fc96ce5",
-              "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-              "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-              "source_content_hash": "eeb091dd8db852e6",
-              "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
-              "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-5d82f5dc9fc96ce5",
-          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-          "source_content_hash": "eeb091dd8db852e6",
-          "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
-          "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
-        },
-        {
-          "source_id": "FISRC-5d82f5dc9fc96ce5",
-          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-          "source_content_hash": "eeb091dd8db852e6",
-          "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
-          "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
-        }
-      ]
-    },
-    {
-      "id": "INV-5e189044745410",
-      "name": "高榕创投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 2,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-03-25",
-      "latest_disclosed_at": "2026-05-07",
-      "role_counts": {
-        "historical_or_ambiguous": 2
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-50004477c1e83309",
-          "funding_insight_id": "FI-4c761f22f0ef6d7f",
-          "event_ids": [
-            "EV-c5d7d88d1aef8edb"
-          ],
-          "company_entity_id": "FICO-481243d2f2a235c1",
-          "company_canonical_entity_id": "",
-          "company_name": "月之暗面",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮",
-          "amount_original": "约20亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 20 亿美元"
-          },
-          "announced_at": "2026-05-07",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "B轮参投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-5d82f5dc9fc96ce5",
-              "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-              "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-              "source_content_hash": "eeb091dd8db852e6",
-              "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
-              "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-2df83d9f446226bc",
-          "funding_insight_id": "FI-c3bce60cc6406ae5",
-          "event_ids": [
-            "EV-e6a4e0785ebb268a"
-          ],
-          "company_entity_id": "EN-be8f311b8bb47e9c",
-          "company_canonical_entity_id": "",
-          "company_name": "华深智药科技（北京）有限公司",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "7.87亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 787000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "7.87 亿美元"
-          },
-          "announced_at": "2026-03-25",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A轮投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-972ef11d09af7ec8",
-              "source_url": "https://vc.pedaily.cn/company/205217.html",
-              "source_title": "华深智药完成7.87亿美元B轮融资",
-              "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
-              "quote": "A轮融资：金额 近5亿人民币 ，投资方为五源资本、高榕创投、Neumann Advisors、襄禾资本、高瓴创投、清智资本",
-              "quote_hash": "49e975ab0c8bd1e87a8fc18d6354e5d517499da3608a91fdf0fbb5dd193fcd3b"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-5d82f5dc9fc96ce5",
-          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-          "source_content_hash": "eeb091dd8db852e6",
-          "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等",
-          "quote_hash": "3aad06c0a7e15ca660730f6ef16dfcbd46ff62cb98b27c161781e75b327273f2"
-        },
-        {
-          "source_id": "FISRC-972ef11d09af7ec8",
-          "source_url": "https://vc.pedaily.cn/company/205217.html",
-          "source_title": "华深智药完成7.87亿美元B轮融资",
-          "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
-          "quote": "A轮融资：金额 近5亿人民币 ，投资方为五源资本、高榕创投、Neumann Advisors、襄禾资本、高瓴创投、清智资本",
-          "quote_hash": "49e975ab0c8bd1e87a8fc18d6354e5d517499da3608a91fdf0fbb5dd193fcd3b"
         }
       ]
     },
