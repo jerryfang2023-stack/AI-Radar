@@ -2259,6 +2259,11 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(workflow, /resume_dir="\$\(mktemp -d\)"/u);
   assert.match(workflow, /gh run download "\$resume_run_id" --name "\$artifact_name" --dir "\$resume_dir\/artifact"/u);
   assert.match(workflow, /cp -a "\$resume_dir\/artifact\/\." \./u);
+  assert.match(
+    workflow,
+    /normalize-source-intake-titles\.mjs --date="\$\{RUN_DATE\}"[\s\S]*guanlan-monitor-quality-gate\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*assert-daily-production-chain\.mjs[\s\S]*--stage=post-monitor/u,
+    "a restored intake must be re-evaluated by the current quality gate before post-monitor handoff",
+  );
   assert.match(workflow, /Collect source raw artifacts[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
   assert.match(workflow, /Run Daily Monitor with QC[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
   assert.match(workflow, /const requiredSteps = \[\s*"Collect source raw artifacts",\s*"Run Daily Monitor with QC",\s*\]/u);
