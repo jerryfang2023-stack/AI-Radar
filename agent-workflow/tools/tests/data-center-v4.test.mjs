@@ -371,6 +371,25 @@ test("placeholder source title is repaired from captured article text", () => {
   }), "Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents");
 });
 
+test("truncated discovery title is repaired only by a matching captured article title", () => {
+  assert.equal(sourceTitleFromCapturedPayload({
+    title: "Wonderful Raises $550 Million Series C to Scale the AI Operating ...",
+    clean_text: "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise\nWonderful Raises $550M Series C",
+  }), "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise");
+  assert.equal(sourceTitleFromCapturedPayload({
+    title: "Wonderful Raises $550 Million Series C to Scale the AI Operating ...",
+    clean_text: "Unrelated navigation title\nWonderful Raises $550M Series C",
+  }), "Wonderful Raises $550 Million Series C to Scale the AI Operating ...");
+  assert.equal(sourceTitleFromCapturedPayload({
+    title: "《深圳市加快打造人工智能先锋城市行动计划（2025—2026年 ...",
+    clean_text: "《深圳市加快打造人工智能先锋城市行动计划（2025—2026年）》发布 · 一、发展目标 · 二、加速推进全域全时全场景应用 / query=人工智能产业园 / intent=verify_company_action / path=hardware_capex",
+  }), "《深圳市加快打造人工智能先锋城市行动计划（2025—2026年 ...");
+  assert.equal(sourceTitleFromCapturedPayload({
+    title: "GPT-6 Astra is the first model making OpenAI willing to declare the \"AGI era\"",
+    clean_text: "GPT-6 Astra is the first model making OpenAI willing to declare the \"AGI era\"",
+  }), "GPT-6 Astra is the first model making OpenAI willing to declare the \"AGI era\"");
+});
+
 function entry(id, title, body, extra = {}) {
   return {
     file: path.join(root, `fixtures/${id}.json`),
@@ -404,6 +423,37 @@ function acceptedModelCandidate(sourceEntry, claims, evidence) {
     evidence,
   };
 }
+
+test("a cross-linked AI snippet cannot publish an unrelated entity-free headline", () => {
+  const bundle = buildBundle([
+    entry(
+      "cross-linked-expo",
+      "第二十一届中国国际中小企业博览会在广州开幕-金融界",
+      "第二十一届中国国际中小企业博览会在广州开幕。李飞飞推出首个多模态世界模型，AI迎来里程碑！",
+      { language: "zh" },
+    ),
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.ok(bundle.qa_queue.some((item) => item.reason === "event_entity_unresolved"));
+});
+
+test("a publisher inferred only from the source URL cannot admit an entity-free event", () => {
+  const bundle = buildBundle([
+    entry(
+      "publisher-only-report",
+      "AI agent customer service platform launches for enterprise customers",
+      "The AI agent customer service platform launched for enterprise customers.",
+      {
+        original_url: "https://www.intercom.com/customer-transformation-report",
+        canonical_url: "https://www.intercom.com/customer-transformation-report",
+      },
+    ),
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.ok(bundle.qa_queue.some((item) => item.reason === "event_entity_unresolved"));
+});
 
 test("URL-less SourceArtifact ids use repository-relative paths", () => {
   const file = path.join(root, "01-SiteV2/content/01-raw/originals/2026-07-20/r-001.json");

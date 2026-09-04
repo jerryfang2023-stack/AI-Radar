@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-5fb00a4731565eaa",
@@ -23,8 +23,9 @@
     ],
     "eventIds": [
       "EV-8ae771f26c02f7c4",
-      "EV-6ffd497940673b62",
       "EV-a74ea4ad6a095ac3",
+      "EV-b22136a993b21f0c",
+      "EV-6ffd497940673b62",
       "EV-b8a7ddde8a7e42c8",
       "EV-859489cd3fa4e596"
     ],
@@ -32,7 +33,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-03",
+    "lastSeen": "2026-09-04",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -41,8 +42,9 @@
       ],
       "partnerships": [],
       "productsServices": [
-        "EV-6ffd497940673b62",
         "EV-a74ea4ad6a095ac3",
+        "EV-b22136a993b21f0c",
+        "EV-6ffd497940673b62",
         "EV-b8a7ddde8a7e42c8",
         "EV-859489cd3fa4e596"
       ],
@@ -51,6 +53,51 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a74ea4ad6a095ac3",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-03",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "llm-gemini 0.34",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-5fb00a4731565eaa"
+        ]
+      },
+      {
+        "id": "EV-b22136a993b21f0c",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-03",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：Google 发布 Gemini 3.8 Flash、理想推出新一代 MEGA 等",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-bbdefa2950f49882",
+          "EN-047364b9be67f665",
+          "EN-5fb00a4731565eaa",
+          "EN-08bffe54ec1d750b"
+        ]
+      },
       {
         "id": "EV-8ae771f26c02f7c4",
         "dataDate": "2026-09-03",
@@ -117,22 +164,6 @@
         ],
         "entityIds": [
           "EN-2b6e51bec93e86c1",
-          "EN-5fb00a4731565eaa"
-        ]
-      },
-      {
-        "id": "EV-a74ea4ad6a095ac3",
-        "dataDate": "2026-09-03",
-        "date": "2026-09-03",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "llm-gemini 0.34",
-        "displayTags": [],
-        "entityIds": [
-          "EN-bbdefa2950f49882",
           "EN-5fb00a4731565eaa"
         ]
       },

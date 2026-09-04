@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "node": {
     "id": "TX-use_case-knowledge_search",
@@ -88,7 +88,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-04"
   },
   "events": [
     {
@@ -508,24 +508,23 @@
     },
     {
       "id": "EV-81bbaaec2965864a",
-      "dataDate": "2026-09-03",
+      "dataDate": "2026-09-04",
       "date": "2026-09-02",
-      "updatedDate": "2026-09-03",
+      "updatedDate": "2026-09-04",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-      "originalTitle": "",
+      "title": "Wonderful 完成 5.5 亿美元 C 轮融资，以扩展企业级 AI 操作系统",
+      "originalTitle": "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise",
       "subject": "Wonderful",
-      "action": "融资",
-      "object": "5.5 亿美元，估值半年内翻倍至 50 亿美元",
+      "action": "Raises",
+      "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
       "metrics": [
-        "$550 million",
-        "$5 billion",
-        "$2 billion"
+        "$550 Million",
+        "$550M"
       ],
       "locations": [],
       "missingFields": [],
@@ -774,8 +773,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-      "publisher": "TechCrunch：AI（RSS）"
+      "sourceUrl": "https://wonderful.ai/blog-articles/wonderful-raises-550m-series-c?scLang=en",
+      "publisher": "wonderful.ai"
     },
     {
       "id": "EV-ab839326ca9597d8",
@@ -11608,7 +11607,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-04"
     },
     {
       "id": "EN-05bb7905b99d8025",
@@ -11654,12 +11653,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-media_entertainment",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
@@ -11719,12 +11718,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-retail_ecommerce",
@@ -11942,11 +11941,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-developer",
         "TX-product_form-ai_infrastructure_software",
@@ -12033,10 +12032,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
@@ -12093,11 +12092,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
@@ -12193,10 +12192,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-developer",
@@ -12456,8 +12455,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-knowledge_search",
         "TX-product_form-model",
+        "TX-use_case-knowledge_search",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-3ccbd9105a45d8fc",
@@ -41,6 +41,7 @@
       "EV-6272444f30281858",
       "EV-9009adaed650ddde",
       "EV-11a8e196deb21300",
+      "EV-0094ff6922e9d570",
       "EV-42b3196bf09fe88d",
       "EV-f7aa6d43b75238fb"
     ],
@@ -53,7 +54,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2023-03-21",
-    "lastSeen": "2026-09-01",
+    "lastSeen": "2026-09-04",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -86,10 +87,28 @@
         "EV-f7aa6d43b75238fb"
       ],
       "hardware": [],
-      "organizationPeople": [],
+      "organizationPeople": [
+        "EV-0094ff6922e9d570"
+      ],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-0094ff6922e9d570",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-02",
+        "eventType": "organization_people",
+        "eventTypeLabel": "组织与人员",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "CrowdStrike 公布2026年度客户与合作伙伴奖获奖名单",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-3ccbd9105a45d8fc"
+        ]
+      },
       {
         "id": "EV-42b3196bf09fe88d",
         "dataDate": "2026-09-01",
@@ -1568,7 +1587,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-04"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -1783,6 +1802,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-36a9af9b98a66be3",
+        "EV-4809eb76696a9e61",
+        "EV-51dcf527010e4f19",
         "EV-127ae714eb61dff9",
         "EV-6ffd497940673b62",
         "EV-b8a7ddde8a7e42c8",
@@ -2077,6 +2099,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-7a24f8d94f5eede7",
         "EV-00ffb2c501a37ec8",
         "EV-d5d985325a1baacb",
         "EV-278745d4aa7a4b3a",

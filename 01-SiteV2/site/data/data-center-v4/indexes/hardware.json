@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "hardware": [
     {
@@ -3149,6 +3149,349 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-121c9699144faa88",
+      "snapshotKey": "121c9699144faa88",
+      "snapshotId": "HWS-02aa3bb653103a34",
+      "eventId": "EV-4809eb76696a9e61",
+      "eventIds": [
+        "EV-4809eb76696a9e61"
+      ],
+      "dataDate": "2026-09-04",
+      "date": "2026-09-04",
+      "title": "CyberAgents Exchange AI Inspector / AI Inspector / AI Agents News",
+      "subject": "Tenable",
+      "productNames": [
+        "CyberAgents Exchange AI Inspector",
+        "AI Inspector",
+        "AI Agents News"
+      ],
+      "hardwareType": "server",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b833d704095e3cee"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-04",
+          "hardware_fact_id": "HWF-b833d704095e3cee",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-04T00:00:00.000Z",
+          "subject_entity_id": "EN-3464f13b59481aa6",
+          "subject_name": "Tenable",
+          "product_entity_ids": [
+            "EN-4f3451967af3c62f",
+            "EN-ce2ebccd646fcd01",
+            "EN-a7ca8eb528225191"
+          ],
+          "product_names": [
+            "CyberAgents Exchange AI Inspector",
+            "AI Inspector",
+            "AI Agents News"
+          ],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Tenable announced the CyberAgents Exchange AI Inspector — a security review process that combines OpenAI GPT cyber models, Tenable’s researcher review, and its Tenable One analysis to inspect agents, skills, MCP servers and multi-agent playbooks before deployment.",
+          "event_refs": [
+            "EV-4809eb76696a9e61"
+          ],
+          "claim_ref": "CL-c7e4a8b1e44a601b",
+          "source_refs": [
+            "SA-35321f05fa2836ba"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "entityIds": [
+        "EN-3464f13b59481aa6",
+        "EN-7d3194f79e645c42",
+        "EN-4f3451967af3c62f",
+        "EN-ce2ebccd646fcd01",
+        "EN-a7ca8eb528225191"
+      ]
+    },
+    {
+      "id": "HWC-61de795c51fc7614",
+      "snapshotKey": "61de795c51fc7614",
+      "snapshotId": "HWS-47ac73c7c1a4122b",
+      "eventId": "EV-4adc165f85ae86ff",
+      "eventIds": [
+        "EV-4adc165f85ae86ff"
+      ],
+      "dataDate": "2026-09-04",
+      "date": "2026-09-04",
+      "title": "GPT-6 Astra",
+      "subject": "OpenAI 开始",
+      "productNames": [
+        "GPT-6 Astra"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ef5e10beac37db7d"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-04",
+          "hardware_fact_id": "HWF-ef5e10beac37db7d",
+          "fact_type": "product",
+          "observed_at": "2026-09-02T00:00:00.000Z",
+          "subject_entity_id": "EN-cbdc46f896784f98",
+          "subject_name": "OpenAI 开始",
+          "product_entity_ids": [
+            "EN-45ea02f28f8d8e50"
+          ],
+          "product_names": [
+            "GPT-6 Astra"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "In addition to its advanced cybersecurity capabilities, Astra is state-of-the-art across functions like computer use, software engineering, professional work and science OpenAI said. The model is also better at staying oriented, respecting task boundaries, understanding user intent, completing tedious tasks and carrying out multi-step workflows, according to a release.",
+          "event_refs": [
+            "EV-4adc165f85ae86ff"
+          ],
+          "claim_ref": "CL-2050ac03b1d9310d",
+          "source_refs": [
+            "SA-19685eca1ceb0d25"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-cbdc46f896784f98"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+      "entityIds": [
+        "EN-cbdc46f896784f98",
+        "EN-7d3194f79e645c42",
+        "EN-cbc62794911ff31b",
+        "EN-45ea02f28f8d8e50"
+      ]
+    },
+    {
+      "id": "HWC-4c9d04b1cb1db737",
+      "snapshotKey": "4c9d04b1cb1db737",
+      "snapshotId": "HWS-e955c6d7f39507db",
+      "eventId": "EV-1f88bfaf77dcfca3",
+      "eventIds": [
+        "EV-1f88bfaf77dcfca3"
+      ],
+      "dataDate": "2026-09-04",
+      "date": "2026-09-04",
+      "title": "GPT-6 Astra",
+      "subject": "OpenAI",
+      "productNames": [
+        "GPT-6 Astra"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a25a3a9c2a6d2472"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-04",
+          "hardware_fact_id": "HWF-a25a3a9c2a6d2472",
+          "fact_type": "product",
+          "observed_at": "2026-09-03T21:16:11.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [
+            "EN-45ea02f28f8d8e50"
+          ],
+          "product_names": [
+            "GPT-6 Astra"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Today, OpenAI released GPT-6 Astra . The company calls it its most intelligent and aligned model, and positions it primarily as a computer-use system rather than a chat model. The pitch is that Astra operates software the way a person does, across browsers, spreadsheets, desktop applications and terminals, and finishes multi-step jobs instead of describing how to do them.",
+          "event_refs": [
+            "EV-1f88bfaf77dcfca3"
+          ],
+          "claim_ref": "CL-8b4379c615409717",
+          "source_refs": [
+            "SA-64fb61e369f9e97a"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-45ea02f28f8d8e50"
+      ]
+    },
+    {
+      "id": "HWC-329fcf3475ab6d1b",
+      "snapshotKey": "329fcf3475ab6d1b",
+      "snapshotId": "HWS-b1a0f456ed87f78a",
+      "eventId": "EV-36a9af9b98a66be3",
+      "eventIds": [
+        "EV-36a9af9b98a66be3"
+      ],
+      "dataDate": "2026-09-04",
+      "date": "2026-09-04",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-0f53a533dbc33367"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-04",
+          "hardware_fact_id": "HWF-29edce348848317c",
+          "fact_type": "product",
+          "observed_at": "2026-09-03T16:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
+          "event_refs": [
+            "EV-36a9af9b98a66be3"
+          ],
+          "claim_ref": "CL-c28d68cb98ab01c0",
+          "source_refs": [
+            "SA-e71dd56ec7e3b365"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-04",
+          "hardware_fact_id": "HWF-0f53a533dbc33367",
+          "fact_type": "product",
+          "observed_at": "2026-09-03T16:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
+          "event_refs": [
+            "EV-36a9af9b98a66be3"
+          ],
+          "claim_ref": "CL-a1623bd36780a8c7",
+          "source_refs": [
+            "SA-e71dd56ec7e3b365"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-3a7bd3e2360a3d29"
+      ]
+    },
     {
       "id": "HWC-782f385baae37a60",
       "snapshotKey": "782f385baae37a60",
@@ -13586,36 +13929,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-03",
-      "funnel_id": "LF-d1047f02c06c3bc7",
+      "data_date": "2026-09-04",
+      "funnel_id": "LF-64781093d5d0ca60",
       "lens": "hardware",
-      "date": "2026-09-03",
+      "date": "2026-09-04",
       "monitoring_paths": [
         "hardware_capacity_fab",
+        "hardware_capex",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 22,
+      "raw_documents": 19,
       "original_sources": 15,
-      "valid_claims": 12,
-      "observations": 0,
-      "canonical_events": 4,
+      "valid_claims": 7,
+      "observations": 5,
+      "canonical_events": 2,
       "blocker_counts": {
-        "non_event_or_index_title": 2,
-        "source_outside_funding_backfill_window": 2,
-        "no_source_bounded_event": 2,
-        "source_outside_daily_window": 4,
-        "no_source_bounded_claim": 1,
-        "raw_source_quality_block": 7
+        "source_outside_daily_window": 8,
+        "non_event_or_index_title": 3,
+        "opinion_without_source_bounded_event": 1,
+        "event_entity_unresolved": 1,
+        "raw_source_quality_block": 4
       },
       "rates": {
-        "original_source_rate": 0.6818181818181818,
-        "valid_claim_rate": 0.5454545454545454,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.3333333333333333
+        "original_source_rate": 0.7894736842105263,
+        "valid_claim_rate": 0.3684210526315789,
+        "observation_rate": 0.7142857142857143,
+        "event_conversion_rate": 0.2857142857142857
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-03/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/monitoring-funnel.json"
     }
   ]
 }

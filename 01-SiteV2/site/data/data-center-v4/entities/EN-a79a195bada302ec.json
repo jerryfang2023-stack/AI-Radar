@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-a79a195bada302ec",
@@ -21,23 +21,46 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-f01a13953fa7aaaa"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-09-04",
+    "lastSeen": "2026-09-04",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-f01a13953fa7aaaa"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-f01a13953fa7aaaa",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-04",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "NVIDIA AI Enterprise - NVIDIA 文档",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-a79a195bada302ec",
+          "EN-f0fa944bc088687b",
+          "EN-28992d55822c87f9"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

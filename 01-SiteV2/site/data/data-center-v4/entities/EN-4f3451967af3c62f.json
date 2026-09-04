@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-4f3451967af3c62f",
+    "name": "CyberAgents Exchange AI Inspector",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4809eb76696a9e61"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-04",
+    "lastSeen": "2026-09-04",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-4809eb76696a9e61"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-4809eb76696a9e61",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-04",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 智能体新闻 — 2026年9月4日当周（每日更新）AI 智能体新闻 — 2026年9月4日",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3464f13b59481aa6",
+          "EN-7d3194f79e645c42",
+          "EN-4f3451967af3c62f",
+          "EN-ce2ebccd646fcd01",
+          "EN-a7ca8eb528225191"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-121c9699144faa88",
+      "snapshotKey": "121c9699144faa88",
+      "snapshotId": "HWS-02aa3bb653103a34",
+      "eventId": "EV-4809eb76696a9e61",
+      "eventIds": [
+        "EV-4809eb76696a9e61"
+      ],
+      "dataDate": "2026-09-04",
+      "date": "2026-09-04",
+      "title": "CyberAgents Exchange AI Inspector / AI Inspector / AI Agents News",
+      "subject": "Tenable",
+      "productNames": [
+        "CyberAgents Exchange AI Inspector",
+        "AI Inspector",
+        "AI Agents News"
+      ],
+      "hardwareType": "server",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b833d704095e3cee"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-04",
+          "hardware_fact_id": "HWF-b833d704095e3cee",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-04T00:00:00.000Z",
+          "subject_entity_id": "EN-3464f13b59481aa6",
+          "subject_name": "Tenable",
+          "product_entity_ids": [
+            "EN-4f3451967af3c62f",
+            "EN-ce2ebccd646fcd01",
+            "EN-a7ca8eb528225191"
+          ],
+          "product_names": [
+            "CyberAgents Exchange AI Inspector",
+            "AI Inspector",
+            "AI Agents News"
+          ],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Tenable announced the CyberAgents Exchange AI Inspector — a security review process that combines OpenAI GPT cyber models, Tenable’s researcher review, and its Tenable One analysis to inspect agents, skills, MCP servers and multi-agent playbooks before deployment.",
+          "event_refs": [
+            "EV-4809eb76696a9e61"
+          ],
+          "claim_ref": "CL-c7e4a8b1e44a601b",
+          "source_refs": [
+            "SA-35321f05fa2836ba"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "entityIds": [
+        "EN-3464f13b59481aa6",
+        "EN-7d3194f79e645c42",
+        "EN-4f3451967af3c62f",
+        "EN-ce2ebccd646fcd01",
+        "EN-a7ca8eb528225191"
+      ]
+    }
+  ]
+}

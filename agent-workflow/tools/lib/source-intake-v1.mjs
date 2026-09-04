@@ -67,8 +67,19 @@ function sourceBoundedExcerpts(record = {}) {
     .filter((excerpt) => excerpt.text);
 }
 
-function applyIntakeTitleMetadata(raw = {}, document = {}) {
+function repairedPrivateSourceTitle(raw = {}, document = {}) {
+  const intakeTitle = clean(document.title_original);
+  const privateTitle = clean(raw.title || raw.title_original);
+  if (!/(?:\.\.\.|…)$/u.test(intakeTitle) || !privateTitle || /(?:\.\.\.|…)$/u.test(privateTitle)) {
+    return "";
+  }
+  const intakePrefix = intakeTitle.replace(/(?:\.\.\.|…)$/u, "").trim();
+  return privateTitle.startsWith(intakePrefix) ? privateTitle : "";
+}
+
+export function applyIntakeTitleMetadata(raw = {}, document = {}) {
   const marketScope = document.market_scope || {};
+  const repairedTitle = repairedPrivateSourceTitle(raw, document);
   return {
     ...raw,
     // The structured intake is the authoritative identity envelope. Private
@@ -78,8 +89,10 @@ function applyIntakeTitleMetadata(raw = {}, document = {}) {
     source_url: clean(document.source_url) || clean(raw.source_url) || clean(raw.original_url),
     canonical_url: clean(document.canonical_url) || clean(raw.canonical_url) || clean(raw.source_url),
     content_hash: clean(document.content_hash) || clean(raw.content_hash),
-    title: clean(document.title_original) || clean(raw.title),
-    title_zh: clean(document.title_zh) || clean(raw.title_zh),
+    // Accepted intake remains immutable. A later private-evidence metadata
+    // repair may only expand the exact truncated prefix at read time.
+    title: repairedTitle || clean(document.title_original) || clean(raw.title),
+    title_zh: repairedTitle ? clean(raw.title_zh) : clean(document.title_zh) || clean(raw.title_zh),
     published_at: clean(document.published_at) || clean(raw.published_at),
     source_registry_id: clean(marketScope.source_registry_id) || clean(raw.source_registry_id),
     source_region: clean(marketScope.source_region) || clean(raw.source_region),

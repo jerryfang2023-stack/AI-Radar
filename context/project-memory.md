@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-memory
-last_updated: 2026-09-03
+last_updated: 2026-09-04
 use_when:
   - project startup
   - agent handoff
@@ -34,6 +34,8 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - China-market coverage is a scope projection inside the existing V4 fact chain. Source categories are descriptive only: no source weights or ranking bonuses are permitted, and procurement/tender sources remain disabled for this scope. China AI hardware financing and vertical-agent financing keep dedicated localized discovery paths and separate query limits, but those paths cannot alter event eligibility or ranking.
 - First-Line Viewpoints and Community Intelligence keep their existing content contracts. FDE / AI Hardware are Event Library themes, relationships are embedded in Entity Library detail, financing cards and reports publish to the independent AI financing site, and Opportunity Map is an unlisted internal lab.
 - DeepSeek is the sole production source-title translation provider. Formal translation-registry entries must retain `deepseek_title_translation` plus a non-empty model identifier; manual-reviewed, MyMemory, business-rule, and missing-provenance entries are not approved publication translations.
+- An accepted same-date `SOURCE-INTAKE-V1.1` envelope is immutable. A truncated source title may be expanded only as a derived read-time overlay from the private evidence record when the complete title extends the exact accepted prefix; title repair must not rewrite accepted intake or the public source index.
+- A publisher inferred only from `source_url` is provenance, not an event participant. Canonical event admission requires at least one entity supported by accepted title/Claim/document-attribution evidence or explicit catalog review.
 - A verified funding event may publish without named investors only when captured evidence confirms the financing but discloses investors solely by generic category. The card must keep an empty investor list, set `investor_disclosure_status=not_disclosed`, retain the `investors_missing` risk marker, and never materialize the generic category as an institution.
 - Funding publication is one atomic application release: card, accepted identity/taxonomy decisions, reviewed classifications, institution registry, Data Center monolith and split service, Trend Radar, and Opportunity Map must be rebuilt, gated, and committed together. A card-only commit is incomplete even when card validation passes.
 - When an accepted funding Claim names a Chinese legal company immediately before the financing action, that exact legal name outranks a descriptive headline subject. Empty founder placeholders are not entities and must be removed from public funding projections even when their surrounding quote describes an unnamed founding team.

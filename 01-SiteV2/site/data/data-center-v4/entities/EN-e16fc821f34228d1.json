@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-e16fc821f34228d1",
@@ -251,6 +251,7 @@
         "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-b22136a993b21f0c",
         "EV-a0d58fe1616d1480",
         "EV-2a30e4a6a8033bcc",
         "EV-c47112d137157d2d",
@@ -311,8 +312,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-product_form-model",
+        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
         "TX-technology-video_generation",
@@ -332,7 +333,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-03",
+      "lastSeen": "2026-09-04",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -371,8 +372,8 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
-        "EV-df2b04d9d720c544",
         "EV-6b668e4655192209",
+        "EV-df2b04d9d720c544",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
         "EV-b231e1a452a7c74a",
@@ -457,8 +458,11 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-125040ec61215481",
+        "EV-85ba013c379a9d3d",
         "EV-7832e96ace41fc15",
         "EV-b8a7ddde8a7e42c8",
+        "EV-4adc165f85ae86ff",
         "EV-0fb1258b1013bd71",
         "EV-53957f94b3924ad3",
         "EV-e4552a80d406645e",
@@ -637,10 +641,10 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-8d4321d936320802",
         "EN-e7e7b91d8a1d8b01",
         "EN-336ab1deb42d6284",
         "EN-be9d587defa1f0c0",
-        "EN-8d4321d936320802",
         "EN-7dd2a89f628d7525",
         "EN-67e8c106650aa683",
         "EN-c70eca6b0f88f44d",
@@ -693,7 +697,9 @@
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
         "EN-7d3194f79e645c42",
+        "EN-39ba5f9dcab4e98a",
         "EN-bbdefa2950f49882",
+        "EN-cbdc46f896784f98",
         "EN-da2f0f03bc3a24f5",
         "EN-35e36dc1a5213fa3",
         "EN-1d79127e9d90e89b",
@@ -808,7 +814,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-04"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -1023,6 +1029,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-36a9af9b98a66be3",
+        "EV-4809eb76696a9e61",
+        "EV-51dcf527010e4f19",
         "EV-127ae714eb61dff9",
         "EV-6ffd497940673b62",
         "EV-b8a7ddde8a7e42c8",
@@ -1317,6 +1326,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-7a24f8d94f5eede7",
         "EV-00ffb2c501a37ec8",
         "EV-d5d985325a1baacb",
         "EV-278745d4aa7a4b3a",
@@ -1837,6 +1847,8 @@
         "EV-c89018d79b3d25bd",
         "EV-97854226b6f43a95",
         "EV-29f8117648050a66",
+        "EV-125040ec61215481",
+        "EV-4adc165f85ae86ff",
         "EV-fabb3080e5263d33",
         "EV-e42e55d1e11a2ba2",
         "EV-333851b077b606c8",
@@ -1847,6 +1859,8 @@
       "entityIds": [
         "EN-876e7751ed9e3473",
         "EN-9d4cbc0ceab2c56a",
+        "EN-7d3194f79e645c42",
+        "EN-cbdc46f896784f98",
         "EN-ea3bd73e2b506e00",
         "EN-047364b9be67f665",
         "EN-bbdefa2950f49882",
@@ -1855,7 +1869,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-09-04"
     }
   ],
   "fde": [],

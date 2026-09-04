@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-cb4754c48f8023d0",
@@ -38,6 +38,7 @@
     ],
     "eventIds": [
       "EV-ed28b389f079f0dc",
+      "EV-446089c7f3d3e569",
       "EV-56f6b96b92fbd6ca",
       "EV-5c87fffc3534e990",
       "EV-437a3e3d118f36e9",
@@ -106,7 +107,7 @@
       "EN-c70eca6b0f88f44d"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-09-02",
+    "lastSeen": "2026-09-04",
     "relationIds": [
       "REL2-a352560206a1ac3f",
       "REL2-d9ba4c1f870adb8b",
@@ -117,6 +118,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-446089c7f3d3e569",
         "EV-ed28b389f079f0dc",
         "EV-56f6b96b92fbd6ca",
         "EV-5c87fffc3534e990",
@@ -182,6 +184,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-446089c7f3d3e569",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-01",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "构建你的创意",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cb4754c48f8023d0"
+        ]
+      },
       {
         "id": "EV-ed28b389f079f0dc",
         "dataDate": "2026-09-02",
@@ -1405,6 +1423,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
         "EV-61b1ddeb1e7b7043",
         "EV-4aff64511cfa8577",
@@ -1456,6 +1475,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-0fce4630e77c9db7",
+        "EV-1f88bfaf77dcfca3",
+        "EV-8232ad0075a77b7a",
         "EV-37e3784d55f5f5d0",
         "EV-4b60d535f321263d",
         "EV-03ce826429a97aa9",
@@ -1464,6 +1486,7 @@
         "EV-d8707197c20b118e",
         "EV-5d6ae96065843410",
         "EV-6c1304bb9c6cc29e",
+        "EV-446089c7f3d3e569",
         "EV-0990900bf0754803",
         "EV-4f1b4e0af41abda6",
         "EV-53c7f7bbbb51b8ae",
@@ -1479,7 +1502,6 @@
         "EV-30211b84aacd0598",
         "EV-a09f6e93ad868a57",
         "EV-07f531fe7a46ea43",
-        "EV-8232ad0075a77b7a",
         "EV-3873f7ea8ac5a93f",
         "EV-d93dd19a481307ec",
         "EV-40d88f6279d48304",
@@ -1659,6 +1681,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-7a24f8d94f5eede7",
+        "EV-bf57b79e05a537e6",
         "EV-b1ac270277a5c1bc",
         "EV-4a982ba6f291ddec",
         "EV-278745d4aa7a4b3a",
@@ -1744,13 +1768,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-education",
+        "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-technology-embodied_ai",
-        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-developer",
@@ -1784,6 +1809,7 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -1798,7 +1824,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -1808,7 +1833,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-04"
     }
   ],
   "relationships": [
@@ -2087,6 +2112,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-36a9af9b98a66be3",
+        "EV-4809eb76696a9e61",
+        "EV-51dcf527010e4f19",
         "EV-127ae714eb61dff9",
         "EV-6ffd497940673b62",
         "EV-b8a7ddde8a7e42c8",
@@ -2381,6 +2409,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-7a24f8d94f5eede7",
         "EV-00ffb2c501a37ec8",
         "EV-d5d985325a1baacb",
         "EV-278745d4aa7a4b3a",

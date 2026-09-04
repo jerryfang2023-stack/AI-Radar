@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const args = new Map(process.argv.slice(2).map((arg) => {
   const [key, ...rest] = arg.replace(/^--/u, "").split("=");
@@ -53,16 +54,56 @@ function sourceHealth() {
     });
 }
 
+export function verifiedFundingEventCount(fundingBundle = {}) {
+  const eventIds = new Set();
+  for (const card of fundingBundle.cards || []) {
+    if (card.triggered_by_event_id) eventIds.add(card.triggered_by_event_id);
+  }
+  for (const item of fundingBundle.queue || []) {
+    if (item.status === "deduplicated" && item.event_id) eventIds.add(item.event_id);
+  }
+  const counts = fundingBundle.meta?.counts || {};
+  const acceptedCount = Number(counts.auto_published || 0) + Number(counts.deduplicated || 0);
+  return Math.max(eventIds.size, acceptedCount);
+}
+
+export function verifiedFundingSourceUrls(
+  fundingBundle = {},
+  frontstage = {},
+  eventSources = [],
+  sourceArtifacts = [],
+) {
+  const deduplicatedEventIds = new Set((fundingBundle.queue || [])
+    .filter((item) => item.status === "deduplicated" && item.event_id)
+    .map((item) => item.event_id));
+  const reusedCards = (frontstage.cards || []).filter((card) => (
+    deduplicatedEventIds.has(card.triggered_by_event_id)
+    || (card.source_event_ids || []).some((eventId) => deduplicatedEventIds.has(eventId))
+  ));
+  const sourceArtifactIds = new Set(eventSources
+    .filter((item) => deduplicatedEventIds.has(item.event_id))
+    .map((item) => item.source_artifact_id)
+    .filter(Boolean));
+  const eventSourceUrls = sourceArtifacts
+    .filter((item) => sourceArtifactIds.has(item.source_artifact_id))
+    .flatMap((item) => [item.source_url, item.canonical_url]);
+  return new Set([...(fundingBundle.cards || []), ...reusedCards]
+    .flatMap((card) => card.research_sources || [])
+    .map((source) => String(source.source_url || "").replace(/[?#].*$/u, ""))
+    .concat(eventSourceUrls.map((url) => String(url || "").replace(/[?#].*$/u, "")))
+    .filter(Boolean));
+}
+
 function main() {
   const rawChannels = sourceHealth();
   const fundingBundle = readJson(path.join(root, "01-SiteV2/content/12-applications/funding-insights", `${date}.json`), null);
   const frontstage = readJson(path.join(root, "01-SiteV2/site/data/funding-insights-v1.json"), { meta: {}, cards: [] });
-  const verifiedCount = Array.isArray(fundingBundle?.cards) ? fundingBundle.cards.length : 0;
-  const verifiedSourceUrls = new Set(
-    (fundingBundle?.cards || [])
-      .flatMap((card) => card.research_sources || [])
-      .map((source) => String(source.source_url || "").replace(/[?#].*$/u, ""))
-      .filter(Boolean),
+  const dataCenterDir = path.join(root, "01-SiteV2/content/11-databases/data-center-v4", date);
+  const eventSources = readJson(path.join(dataCenterDir, "event-sources.json"), []);
+  const sourceArtifacts = readJson(path.join(dataCenterDir, "source-artifacts.json"), []);
+  const verifiedCount = verifiedFundingEventCount(fundingBundle || {});
+  const verifiedSourceUrls = verifiedFundingSourceUrls(
+    fundingBundle || {}, frontstage, eventSources, sourceArtifacts,
   );
   const channels = rawChannels.map((channel) => {
     const data = readJson(path.join(sourceDir, `${channel.id}-source-intake-candidates.json`), {});
@@ -107,4 +148,4 @@ function main() {
   console.log(JSON.stringify({ ok: true, output: path.relative(root, outputFile), status: payload.status, state }, null, 2));
 }
 
-main();
+if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) main();

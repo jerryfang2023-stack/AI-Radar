@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-4b078b39d2fcacc7",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-8ed7d4e02cc5c2ab",
       "EV-70e3f88cb06a856c"
     ],
     "viewpointIds": [],
@@ -32,10 +33,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-17",
+    "lastSeen": "2026-09-04",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-8ed7d4e02cc5c2ab"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -46,6 +49,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8ed7d4e02cc5c2ab",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-03",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Accel 据报道洽淡领投 Thinking Machines 10 亿美元融资，估值至少 400 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4b078b39d2fcacc7",
+          "EN-7d3194f79e645c42"
+        ]
+      },
       {
         "id": "EV-70e3f88cb06a856c",
         "dataDate": "2026-07-17",
@@ -141,9 +160,9 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-b22136a993b21f0c",
         "EV-a9630a87712e5899",
         "EV-c5f8f07d714f330f",
-        "EV-293d6feac5b8efab",
         "EV-34fd528787e47757",
         "EV-eedd370fd9cfdbb2",
         "EV-a0d58fe1616d1480",
@@ -236,7 +255,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-04"
     },
     {
       "id": "TX-technology-long_context",

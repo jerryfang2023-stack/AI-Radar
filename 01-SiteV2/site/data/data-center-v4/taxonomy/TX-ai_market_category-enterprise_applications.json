@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "node": {
     "id": "TX-ai_market_category-enterprise_applications",
@@ -187,29 +187,28 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2023-04-27",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-04"
   },
   "events": [
     {
       "id": "EV-81bbaaec2965864a",
-      "dataDate": "2026-09-03",
+      "dataDate": "2026-09-04",
       "date": "2026-09-02",
-      "updatedDate": "2026-09-03",
+      "updatedDate": "2026-09-04",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-      "originalTitle": "",
+      "title": "Wonderful 完成 5.5 亿美元 C 轮融资，以扩展企业级 AI 操作系统",
+      "originalTitle": "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise",
       "subject": "Wonderful",
-      "action": "融资",
-      "object": "5.5 亿美元，估值半年内翻倍至 50 亿美元",
+      "action": "Raises",
+      "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
       "metrics": [
-        "$550 million",
-        "$5 billion",
-        "$2 billion"
+        "$550 Million",
+        "$550M"
       ],
       "locations": [],
       "missingFields": [],
@@ -458,8 +457,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-      "publisher": "TechCrunch：AI（RSS）"
+      "sourceUrl": "https://wonderful.ai/blog-articles/wonderful-raises-550m-series-c?scLang=en",
+      "publisher": "wonderful.ai"
     },
     {
       "id": "EV-c538fb9a61735afc",
@@ -30608,7 +30607,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-04"
     },
     {
       "id": "EN-8d8b8c50b8da244b",
@@ -30944,6 +30943,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f2c93c155070cd35",
         "EV-c1295b8f58024ff6",
         "EV-cbce4f1f5187efcf",
         "EV-5df885dbd24b6d00",
@@ -30968,6 +30968,8 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-293d6feac5b8efab",
+        "EV-f29c0c51a5cbfd84",
         "EV-c877ce26c9f8997f",
         "EV-b1b396e6ba2fe208",
         "EV-fd62c17a36b4e7e0",
@@ -31043,11 +31045,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
@@ -31082,7 +31084,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-09-04"
     },
     {
       "id": "EN-f9075cc99990820a",
@@ -31356,8 +31358,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-product_form-model",
+        "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
@@ -31737,6 +31739,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-8ed7d4e02cc5c2ab",
+        "EV-f2c93c155070cd35",
         "EV-086902ad904c1c90",
         "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
@@ -31833,8 +31837,19 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-1f88bfaf77dcfca3",
+        "EV-293d6feac5b8efab",
+        "EV-2954a6f0220f5b18",
+        "EV-3a8752218ab2b487",
+        "EV-4809eb76696a9e61",
+        "EV-51dcf527010e4f19",
+        "EV-ad41b8a1f9f8d747",
+        "EV-c04ef2433ae230f6",
+        "EV-125040ec61215481",
+        "EV-ffa46f84468cffd9",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
+        "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
         "EV-56a8650295d994ba",
@@ -32049,6 +32064,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-bf57b79e05a537e6",
         "EV-23ebd5f5d32e950a",
         "EV-b1ac270277a5c1bc",
         "EV-2288bcf43e910968",
@@ -32137,11 +32153,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
-        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
@@ -32159,11 +32175,13 @@
         "TX-industry-legal_services",
         "TX-use_case-data_analysis",
         "TX-industry-aerospace_defense",
+        "TX-industry-government_public_sector",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-computer_use",
         "TX-technology-long_context",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
@@ -32197,7 +32215,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-04"
     },
     {
       "id": "EN-4728b0c37dc84206",
@@ -32290,10 +32308,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-target_user-business_user",
-        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-manufacturing",
         "TX-product_form-end_user_application",
@@ -32363,10 +32381,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
@@ -33043,9 +33061,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-consumer",
-        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
