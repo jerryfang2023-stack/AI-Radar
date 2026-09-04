@@ -120,6 +120,7 @@ test("community approval loads only from its protected membership subpanel", asy
   assert.match(page, /data-panel="membership-approval"[^]*社群加入申请审核/u);
   assert.match(page, /data-panel="membership-users"[^]*小程序会员管理/u);
   assert.match(script, /延长会员权益[^]*调整可用积分/u);
+  assert.match(script, /renderAdminUsers\(\);[^]*selectedUserId = null;[^]*data-mo-admin-detail[^]*innerHTML = "";[^]*调整已保存，用户编辑已收起。/u);
   assert.doesNotMatch(page, /href="https:\/\/members\.zkdlj\.vip\/admin"/u);
   assert.match(script, /通过申请[^]*不通过[^]*转为候补/u);
   assert.match(script, /event\.submitter\?\.value/u);

@@ -179,7 +179,11 @@
       const payload = await response.json(); if (response.status === 401 || response.status === 403 || response.status === 503) return adminFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "调整未成功").slice(0, 120));
       const user = safeAdminUser(payload?.user); if (payload?.schemaVersion !== "MEMBER-ADMIN-V1.0" || !user) throw new Error("调整结果校验失败");
-      adminUsers = adminUsers.map((item) => item.id === user.id ? user : item); renderAdminUsers(); renderAdminDetail(user); $("[data-mo-adjust-state]").textContent = "调整已保存并写入审计记录。";
+      adminUsers = adminUsers.map((item) => item.id === user.id ? user : item);
+      renderAdminUsers();
+      selectedUserId = null;
+      $("[data-mo-admin-detail]").innerHTML = "";
+      $("[data-mo-admin-state]").textContent = "调整已保存，用户编辑已收起。";
     } catch (error) { state.textContent = error.message || "调整未成功"; } finally { button.disabled = false; }
   }
   const communityStateLabels = { not_joined: "未入群", joined: "已入群", eliminated: "已淘汰" };
