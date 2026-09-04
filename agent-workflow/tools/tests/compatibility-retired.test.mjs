@@ -201,7 +201,8 @@ test("V4 production no longer depends on active legacy mappings or a public V3 p
     );
   }
   const pipeline = read("01-SiteV2/site/pipeline-dashboard.html");
-  assert.match(pipeline, /url=operations-console\.html/u);
+  assert.match(pipeline, /url=https:\/\/www\.zkdlj\.vip\/ops\//u);
+  assert.doesNotMatch(pipeline, /url=operations-console\.html/u);
   assert.doesNotMatch(pipeline, /Signal Cards|Raw\s*(?:→|->)\s*Pool/u);
 });
 
