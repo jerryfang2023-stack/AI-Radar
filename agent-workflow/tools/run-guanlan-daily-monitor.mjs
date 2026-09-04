@@ -2848,7 +2848,7 @@ async function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
     discovery_source: item.discovery_source || "",
     discovery_record: item.discovery_record || null,
     source_role: sourceRoleFor(item, item.snapshot),
-    origin_fetch_status: item.acquisition_channel === "aihot" ? originFetchStatus(item.snapshot) : "",
+    origin_fetch_status: originFetchStatus(item.snapshot),
     paywall_status: flags.paywall ? "suspected" : "none",
     block_status: flags.blocked ? "suspected" : "none",
     duplicate_status: item.duplicate_count ? "merged_provider_duplicates" : flags.duplicate ? "duplicate" : "unique",

@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, metricValues, modelAssistedEventEligibility, normalizeEventTitle, normalizedFundingMetric, organizationMentions, publicEventSourceTitleIssue, publicEventSourceUrlIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
-import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem, reconcileSourceFailureRecovery } from "../guanlan-monitor-quality-gate.mjs";
+import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem, normalizedOriginFetchStatus, reconcileSourceFailureRecovery } from "../guanlan-monitor-quality-gate.mjs";
 import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleFromCapturedPayload, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -2317,6 +2317,37 @@ test("source-intake gate replays V4 evidence eligibility without private Raw rou
   assert.equal(isUsableCoreEvidenceItem({ ...accepted, evidenceObjectType: "official_index_or_directory" }), false);
   assert.equal(isCoreV4EvidenceItem({ ...accepted, rawQcDecision: "allow_with_degradation" }), false);
   assert.equal(isUsableCoreEvidenceItem({ ...accepted, rawQcDecision: "allow_with_degradation" }), false);
+});
+
+test("source-intake gate recovers legacy non-AIHot readable captures without weakening failed evidence", () => {
+  assert.deepEqual(normalizedOriginFetchStatus({
+    acquisition_channel: "rss-feed",
+    has_full_text: true,
+    extraction_quality: "high",
+    evidence_object_usable: true,
+    raw_qc_decision: "allow",
+  }), { status: "success", inferred: true });
+  assert.deepEqual(normalizedOriginFetchStatus({
+    acquisition_channel: "aihot",
+    has_full_text: true,
+    extraction_quality: "high",
+    evidence_object_usable: true,
+    raw_qc_decision: "allow",
+  }), { status: "", inferred: false });
+  assert.deepEqual(normalizedOriginFetchStatus({
+    acquisition_channel: "keyword-search",
+    has_full_text: false,
+    extraction_quality: "failed",
+    evidence_object_usable: false,
+    raw_qc_decision: "block",
+  }), { status: "", inferred: false });
+  assert.deepEqual(normalizedOriginFetchStatus({
+    acquisition_channel: "",
+    has_full_text: true,
+    extraction_quality: "high",
+    evidence_object_usable: true,
+    raw_qc_decision: "allow",
+  }), { status: "", inferred: false });
 });
 
 test("Core Raw QC metrics count blocked or degraded records before the decision filter", () => {
