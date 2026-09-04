@@ -54,6 +54,12 @@ function sourceHealth() {
     });
 }
 
+export function preserveFundingSourceChannels(currentChannels = [], previousHealth = {}, selectedDate = "") {
+  if (currentChannels.length) return currentChannels;
+  if (previousHealth.date !== selectedDate || !Array.isArray(previousHealth.channels)) return currentChannels;
+  return previousHealth.channels.length ? previousHealth.channels : currentChannels;
+}
+
 export function verifiedFundingEventCount(fundingBundle = {}) {
   const eventIds = new Set();
   for (const card of fundingBundle.cards || []) {
@@ -95,7 +101,9 @@ export function verifiedFundingSourceUrls(
 }
 
 function main() {
-  const rawChannels = sourceHealth();
+  const existingHealth = readJson(outputFile, {});
+  const detectedChannels = sourceHealth();
+  const rawChannels = preserveFundingSourceChannels(detectedChannels, existingHealth, date);
   const fundingBundle = readJson(path.join(root, "01-SiteV2/content/12-applications/funding-insights", `${date}.json`), null);
   const frontstage = readJson(path.join(root, "01-SiteV2/site/data/funding-insights-v1.json"), { meta: {}, cards: [] });
   const dataCenterDir = path.join(root, "01-SiteV2/content/11-databases/data-center-v4", date);
@@ -105,7 +113,7 @@ function main() {
   const verifiedSourceUrls = verifiedFundingSourceUrls(
     fundingBundle || {}, frontstage, eventSources, sourceArtifacts,
   );
-  const channels = rawChannels.map((channel) => {
+  const channels = detectedChannels.length ? rawChannels.map((channel) => {
     const data = readJson(path.join(sourceDir, `${channel.id}-source-intake-candidates.json`), {});
     const verifiedUrls = new Set(
       (data.items || [])
@@ -113,7 +121,7 @@ function main() {
         .filter((url) => verifiedSourceUrls.has(url)),
     );
     return { ...channel, verified_event_count: verifiedUrls.size };
-  });
+  }) : rawChannels;
   const projectionCurrent = frontstage.meta?.last_checked_date === date || frontstage.meta?.latest_date === date;
   const anyReturned = channels.some((item) => item.fetched_count > 0);
   const candidateCount = channels.reduce((sum, item) => sum + item.funding_candidate_count, 0);

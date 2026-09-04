@@ -33,7 +33,11 @@ import {
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
 import { canonicalSources } from "../generate-funding-insights-deepseek.mjs";
-import { verifiedFundingEventCount, verifiedFundingSourceUrls } from "../build-funding-source-health-v1.mjs";
+import {
+  preserveFundingSourceChannels,
+  verifiedFundingEventCount,
+  verifiedFundingSourceUrls,
+} from "../build-funding-source-health-v1.mjs";
 import { resolveReviewedCompany } from "../project-funding-taxonomy-to-events-v4-1.mjs";
 
 test("source health counts a verified event whose existing card is reused by deduplication", () => {
@@ -67,6 +71,22 @@ test("source health counts a verified event whose existing card is reused by ded
     "https://wonderful.ai/news",
     "https://www.wonderful.ai/news",
   ]);
+});
+
+test("downstream funding projection cannot replace same-day source health with an empty cloud snapshot", () => {
+  const previousChannels = [{ id: "keyword", fetched_count: 137, verified_event_count: 1 }];
+  assert.deepEqual(preserveFundingSourceChannels([], {
+    date: "2026-09-04",
+    channels: previousChannels,
+  }, "2026-09-04"), previousChannels);
+  assert.deepEqual(preserveFundingSourceChannels([], {
+    date: "2026-09-03",
+    channels: previousChannels,
+  }, "2026-09-04"), []);
+  assert.deepEqual(preserveFundingSourceChannels([{ id: "rss" }], {
+    date: "2026-09-04",
+    channels: previousChannels,
+  }, "2026-09-04"), [{ id: "rss" }]);
 });
 
 test("multi-company canonical funding events cannot publish a mismatched company amount", () => {
