@@ -2,50 +2,53 @@
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V3.6.0-community-lifecycle",
-    "data_date": "2026-09-03",
-    "generated_at": "2026-09-04T04:37:57.275Z",
+    "data_date": "2026-09-04",
+    "generated_at": "2026-09-04T05:25:29.554Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 241,
-    "capture_failed": 2,
-    "recovered_source_failures": 8,
-    "raw_documents": 241
+    "capture_succeeded": 277,
+    "capture_failed": 6,
+    "recovered_source_failures": 6,
+    "raw_documents": 277
   },
   "fact_build": {
-    "accepted_claims": 104,
+    "accepted_claims": 90,
     "rejected_claims": 0,
-    "accepted": 104,
+    "accepted": 90,
     "rejected": 0,
-    "pending_claims": 4,
-    "canonical_events": 45,
-    "entities": 57,
-    "relationships": 108,
+    "pending_claims": 8,
+    "canonical_events": 36,
+    "entities": 59,
+    "relationships": 98,
     "conflicts": 1,
-    "qa_queue": 196,
+    "qa_queue": 239,
     "qa_by_status": {
-      "review_optional": 185,
-      "open": 11
+      "review_optional": 223,
+      "open": 16
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-09-03",
-    "gate_date": "2026-09-03",
+    "manifest_date": "2026-09-04",
+    "gate_date": "2026-09-04",
     "failures": [],
-    "warnings": []
+    "warnings": [
+      "No source-bounded FDE projection was produced.",
+      "No source-bounded hardware projection was produced."
+    ]
   },
   "application_projection": {
-    "opportunity_map": "passed",
-    "trend_radar": "passed",
-    "funding_insights": "passed",
+    "opportunity_map": "unknown",
+    "trend_radar": "unknown",
+    "funding_insights": "unknown",
     "fde_hardware_sync": "unknown"
   },
   "publication": {
-    "status": "passed",
+    "status": "unknown",
     "phase": "build_snapshot",
     "authoritative": false,
     "finalization": "github_pages_artifact"
@@ -57,15 +60,15 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 241,
-        "capture_failed": 2,
-        "recovered_source_failures": 8,
-        "raw_documents": 241
+        "capture_succeeded": 277,
+        "capture_failed": 6,
+        "recovered_source_failures": 6,
+        "raw_documents": 277
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-03/manifest.json",
-        "agent-workflow/reports/2026-09-03-guanlan-daily-monitor-log.md",
-        "agent-workflow/reports/2026-09-03-guanlan-monitor-quality-gate.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/manifest.json",
+        "agent-workflow/reports/2026-09-04-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-09-04-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -73,47 +76,47 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 104,
+        "accepted_claims": 90,
         "rejected_claims": 0,
-        "accepted": 104,
+        "accepted": 90,
         "rejected": 0,
-        "pending_claims": 4,
-        "canonical_events": 45,
-        "entities": 57,
-        "relationships": 108,
+        "pending_claims": 8,
+        "canonical_events": 36,
+        "entities": 59,
+        "relationships": 98,
         "conflicts": 1,
-        "qa_queue": 196
+        "qa_queue": 239
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-03/manifest.json",
-        "agent-workflow/reports/2026-09-03-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/manifest.json",
+        "agent-workflow/reports/2026-09-04-data-center-v4-integrity-gate.json"
       ]
     },
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "partial",
+      "status": "unknown",
       "counts": {
-        "opportunity_map": "passed",
-        "trend_radar": "passed",
-        "funding_insights": "passed",
+        "opportunity_map": "unknown",
+        "trend_radar": "unknown",
+        "funding_insights": "unknown",
         "fde_hardware_sync": "unknown"
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-03-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-04-persistent-asset-manifest.json"
       ]
     },
     {
       "id": "publication",
       "label": "发布",
-      "status": "passed",
+      "status": "unknown",
       "counts": {
         "v4_bundle_ready": true,
         "snapshot_phase": "build_snapshot",
         "authoritative": false
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-03-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-04-persistent-asset-manifest.json"
       ]
     }
   ],

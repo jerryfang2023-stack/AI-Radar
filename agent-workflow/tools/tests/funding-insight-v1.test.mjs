@@ -33,7 +33,41 @@ import {
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
 import { canonicalSources } from "../generate-funding-insights-deepseek.mjs";
+import { verifiedFundingEventCount, verifiedFundingSourceUrls } from "../build-funding-source-health-v1.mjs";
 import { resolveReviewedCompany } from "../project-funding-taxonomy-to-events-v4-1.mjs";
+
+test("source health counts a verified event whose existing card is reused by deduplication", () => {
+  assert.equal(verifiedFundingEventCount({
+    meta: { counts: { funding_events: 1, auto_published: 0, deduplicated: 1 } },
+    cards: [],
+    queue: [{ event_id: "EV-existing", status: "deduplicated" }],
+  }), 1);
+  assert.equal(verifiedFundingEventCount({
+    meta: { counts: { funding_events: 1, auto_published: 0, blocked: 1, deduplicated: 0 } },
+    cards: [],
+    queue: [{ event_id: "EV-blocked", status: "blocked" }],
+  }), 0);
+  assert.deepEqual([...verifiedFundingSourceUrls({
+    cards: [],
+    queue: [{ event_id: "EV-existing", status: "deduplicated" }],
+  }, {
+    cards: [{
+      triggered_by_event_id: "EV-existing",
+      source_event_ids: ["EV-existing", "EV-secondary"],
+      research_sources: [{ source_url: "https://wonderful.ai/news?utm_source=test" }],
+    }],
+  }, [{
+    event_id: "EV-existing",
+    source_artifact_id: "SA-existing",
+  }], [{
+    source_artifact_id: "SA-existing",
+    source_url: "https://www.wonderful.ai/news?scLang=en",
+    canonical_url: "https://wonderful.ai/news?scLang=en",
+  }])], [
+    "https://wonderful.ai/news",
+    "https://www.wonderful.ai/news",
+  ]);
+});
 
 test("multi-company canonical funding events cannot publish a mismatched company amount", () => {
   const card = {

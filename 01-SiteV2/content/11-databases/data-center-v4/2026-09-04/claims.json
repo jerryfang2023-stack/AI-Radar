@@ -1,0 +1,2096 @@
+[
+  {
+    "claim_id": "CL-2a31a4b357dd1b78",
+    "raw_id": "RAW-5b4c17becff16ad3",
+    "claim_type": "funding",
+    "subject": "Accel 据报道洽淡领投 Thinking Machines 10 亿美元",
+    "predicate": "funding",
+    "object": "，估值至少 400 亿美元",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-5b4c17becff16ad3",
+      "start": 148,
+      "end": 462
+    },
+    "source_quote": "Thinking Machines, the AI lab founded early last year by former OpenAI CTO Mira Murati, is in discussions to raise $1 billion at a valuation of at least $40 billion, The Information reported Thursday. Existing backer Accel is in talks to lead the fundraise, according to our source and The Information’s reporting.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-04585224401e284c",
+    "raw_id": "RAW-22fe5f9ab1667c47",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "WeatherNext 3：基于气象站观测训练，提供每小时刷新的 5 km 全球预报",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-22fe5f9ab1667c47",
+      "start": 222,
+      "end": 934
+    },
+    "source_quote": "AI weather models have spent three years closing the gap with physics-based forecasting, but two problems stayed open: resolution too coarse for local terrain, and initialization tied to numerical weather prediction (NWP) analysis that arrives about six hours late. WeatherNext 3 , released by Google DeepMind and Google Research, attacks both. It takes a live global geostationary satellite mosaic as a direct model input, re-initializes every hour, and emits forecasts down to 0.05° (~5 km) while training against raw weather station measurements rather than reanalysis grids alone. According to Google AI, independent live evaluations from Brightband rank it as the most accurate global weather model to date.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e831daa90a5794ac",
+    "raw_id": "RAW-22fe5f9ab1667c47",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "WeatherNext 3：基于气象站观测训练，提供每小时刷新的 5 km 全球预报",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-22fe5f9ab1667c47",
+      "start": 953,
+      "end": 1174
+    },
+    "source_quote": "Partially. Forecast data is available now through BigQuery, Earth Engine and Cloud Storage after an allowlist request, but WeatherNext 3 weights are not open source and on-demand custom inference still runs WeatherNext 2.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1c0a6d4590bc3f88",
+    "raw_id": "RAW-22fe5f9ab1667c47",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "WeatherNext 3：基于气象站观测训练，提供每小时刷新的 5 km 全球预报",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-22fe5f9ab1667c47",
+      "start": 1175,
+      "end": 1198
+    },
+    "source_quote": "Architecture and inputs",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bfe3f2bc4f91edbc",
+    "raw_id": "RAW-22fe5f9ab1667c47",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "WeatherNext 3：基于气象站观测训练，提供每小时刷新的 5 km 全球预报",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-22fe5f9ab1667c47",
+      "start": 2783,
+      "end": 3331
+    },
+    "source_quote": "Precipitation is where global models historically fail, producing blurred fields that miss storm boundaries. WeatherNext 3 trains against three precipitation sources: ECMWF reanalysis, NASA’s IMERG satellite retrievals, and Google’s own satellite-radar precipitation reanalysis. Google reports CRPS improvements over baselines of up to 60% against IMERG, 30% against MRMS and 10% against rain gauges at early lead times; the research separately states up to a 50% reduction in Brier score and CRPS versus NWP baselines when evaluated against IMERG.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2050ac03b1d9310d",
+    "raw_id": "RAW-43a6219f44d6057a",
+    "claim_type": "product_release",
+    "subject": "OpenAI 开始",
+    "predicate": "product_release",
+    "object": "GPT-6 Astra",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-43a6219f44d6057a",
+      "start": 2985,
+      "end": 3356
+    },
+    "source_quote": "In addition to its advanced cybersecurity capabilities, Astra is state-of-the-art across functions like computer use, software engineering, professional work and science OpenAI said. The model is also better at staying oriented, respecting task boundaries, understanding user intent, completing tedious tasks and carrying out multi-step workflows, according to a release.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-393ff4421eebcbaf",
+    "raw_id": "RAW-43a6219f44d6057a",
+    "claim_type": "product_release",
+    "subject": "OpenAI 开始",
+    "predicate": "product_release",
+    "object": "GPT-6 Astra",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-43a6219f44d6057a",
+      "start": 0,
+      "end": 45
+    },
+    "source_quote": "OpenAI announces rollout of GPT-6 Astra model",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e4fa8b3e8f8eefed",
+    "raw_id": "RAW-43a6219f44d6057a",
+    "claim_type": "product_release",
+    "subject": "OpenAI 开始",
+    "predicate": "product_release",
+    "object": "GPT-6 Astra",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-43a6219f44d6057a",
+      "start": 174,
+      "end": 237
+    },
+    "source_quote": "OpenAI will begin rolling out GPT-6 Astra, its latest AI model.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cc1c7b3c5cfea0db",
+    "raw_id": "RAW-43a6219f44d6057a",
+    "claim_type": "product_release",
+    "subject": "OpenAI 开始",
+    "predicate": "product_release",
+    "object": "GPT-6 Astra",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-43a6219f44d6057a",
+      "start": 392,
+      "end": 545
+    },
+    "source_quote": "Astra will be available to users in OpenAI's ChatGPT Plus, Pro, Business and Enterprise plans, as well as through the OpenAI API and Amazon Web Services.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f3953be67691574b",
+    "raw_id": "RAW-676603aefdca88a0",
+    "claim_type": "product_release",
+    "subject": "IT之家早报 0904：GPT-6 Astra",
+    "predicate": "product_release",
+    "object": "，ChatGPT、Claude 和 Grok 集体宕机近 4 小时",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-676603aefdca88a0",
+      "start": 489,
+      "end": 513
+    },
+    "source_quote": "4. 我国微短剧统一标识发布，片头有了“苔花标”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-09045e5e6cca33fc",
+    "raw_id": "RAW-676603aefdca88a0",
+    "claim_type": "product_release",
+    "subject": "IT之家早报 0904：GPT-6 Astra",
+    "predicate": "product_release",
+    "object": "，ChatGPT、Claude 和 Grok 集体宕机近 4 小时",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-676603aefdca88a0",
+      "start": 866,
+      "end": 908
+    },
+    "source_quote": "7. OpenAI GPT-6 Astra 发布，首次达到“关键”级网络安全能力门槛",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-ac66a50fa77d9be6",
+    "raw_id": "RAW-676603aefdca88a0",
+    "claim_type": "product_release",
+    "subject": "IT之家早报 0904：GPT-6 Astra",
+    "predicate": "product_release",
+    "object": "，ChatGPT、Claude 和 Grok 集体宕机近 4 小时",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-676603aefdca88a0",
+      "start": 514,
+      "end": 558
+    },
+    "source_quote": "“微短剧统一标识”以苔花为灵感，采用红底金标，将首次出现在一类微短剧的片头，时长三秒钟。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-f538437c39d91d4e",
+    "raw_id": "RAW-676603aefdca88a0",
+    "claim_type": "product_release",
+    "subject": "IT之家早报 0904：GPT-6 Astra",
+    "predicate": "product_release",
+    "object": "，ChatGPT、Claude 和 Grok 集体宕机近 4 小时",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-676603aefdca88a0",
+      "start": 584,
+      "end": 620
+    },
+    "source_quote": "5. 小米宣布 Mijia 品牌规模入欧，重申小米汽车 2027 年出海",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-8b4379c615409717",
+    "raw_id": "RAW-ff81a358baab149d",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "，因触及 Critical 网络安全阈值而限制访问",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ff81a358baab149d",
+      "start": 203,
+      "end": 577
+    },
+    "source_quote": "Today, OpenAI released GPT-6 Astra . The company calls it its most intelligent and aligned model, and positions it primarily as a computer-use system rather than a chat model. The pitch is that Astra operates software the way a person does, across browsers, spreadsheets, desktop applications and terminals, and finishes multi-step jobs instead of describing how to do them.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e9bf9373da2ed029",
+    "raw_id": "RAW-ff81a358baab149d",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "，因触及 Critical 网络安全阈值而限制访问",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ff81a358baab149d",
+      "start": 596,
+      "end": 815
+    },
+    "source_quote": "Partly, and not on your own hardware. Astra is a closed, hosted model with no released weights, so self-hosting is not an option. It is live today only for organizations in OpenAI’s Trusted Access and Daybreak programs.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-16ba3f3a301cbd89",
+    "raw_id": "RAW-ff81a358baab149d",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "，因触及 Critical 网络安全阈值而限制访问",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ff81a358baab149d",
+      "start": 816,
+      "end": 836
+    },
+    "source_quote": "What is actually new",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-db19b5778cc565fd",
+    "raw_id": "RAW-ff81a358baab149d",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "，因触及 Critical 网络安全阈值而限制访问",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ff81a358baab149d",
+      "start": 1881,
+      "end": 2143
+    },
+    "source_quote": "OpenAI reports 72.6% on OSWorld V2-Offline against 65.7% for GPT-5.6 Sol, with average task time falling from roughly 75 minutes to 40. Anthropic reports 77.9% for Claude Fable 5.1 but says it used a different OSWorld release and should not be compared directly.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c649f010c2918439",
+    "raw_id": "RAW-4b2177512f79a99e",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "IT之家 9 月 4 日消息，当地时间 9 月 3 日，OpenAI 宣布推出新一代 GPT-6 Astra 模型，这是该公司迄今为止最强大、部署最广泛的大语言模型。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-4b2177512f79a99e",
+      "start": 513,
+      "end": 596
+    },
+    "source_quote": "IT之家 9 月 4 日消息，当地时间 9 月 3 日，OpenAI 宣布推出新一代 GPT-6 Astra 模型，这是该公司迄今为止最强大、部署最广泛的大语言模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-426dfc14d934445a",
+    "raw_id": "RAW-4b2177512f79a99e",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "据介绍，Astra 是 OpenAI 旗下首个达到其“准备框架”（Preparedness Framework）中“关键”（Critical）网络安全能力门槛的模型。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-4b2177512f79a99e",
+      "start": 597,
+      "end": 680
+    },
+    "source_quote": "据介绍，Astra 是 OpenAI 旗下首个达到其“准备框架”（Preparedness Framework）中“关键”（Critical）网络安全能力门槛的模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f64c2574ce05d7e1",
+    "raw_id": "RAW-4b2177512f79a99e",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "格雷格 · 布罗克曼（Greg Brockman）声称，随着 Astra 的发布，世界已经进入了通用人工智能的新时代。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-4b2177512f79a99e",
+      "start": 680,
+      "end": 739
+    },
+    "source_quote": "格雷格 · 布罗克曼（Greg Brockman）声称，随着 Astra 的发布，世界已经进入了通用人工智能的新时代。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-360d6c3110616ea3",
+    "raw_id": "RAW-4b2177512f79a99e",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "OpenAI GPT-6 Astra 发布：首次达到“关键”级网络安全能力门槛，布罗克曼认为 AGI 时代已经到来 - IT之家",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-4b2177512f79a99e",
+      "start": 0,
+      "end": 64
+    },
+    "source_quote": "OpenAI GPT-6 Astra 发布：首次达到“关键”级网络安全能力门槛，布罗克曼认为 AGI 时代已经到来 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-130f296f91ba2d5d",
+    "raw_id": "RAW-5cb01f38bf278e2f",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "anthropics/commerce-agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-11c827333200bb97"
+    },
+    "source_span": {
+      "raw_id": "RAW-5cb01f38bf278e2f",
+      "start": 356,
+      "end": 562
+    },
+    "source_quote": "This week, they published anthropics/commerce-agents , a reference blueprint containing a shopping agent and a merchant agent , along with four runnable verticals: retail, travel, telecom and entertainment.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-702ce044dcbf667d",
+    "raw_id": "RAW-06c3d95a11561927",
+    "claim_type": "funding",
+    "subject": "Wonderful",
+    "predicate": "funding",
+    "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-06c3d95a11561927",
+      "start": 0,
+      "end": 90
+    },
+    "source_quote": "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fd0cf527c3428b14",
+    "raw_id": "RAW-06c3d95a11561927",
+    "claim_type": "funding",
+    "subject": "Wonderful",
+    "predicate": "funding",
+    "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-06c3d95a11561927",
+      "start": 91,
+      "end": 122
+    },
+    "source_quote": "Wonderful Raises $550M Series C",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-893ba58fb66179c5",
+    "raw_id": "RAW-06c3d95a11561927",
+    "claim_type": "funding",
+    "subject": "Wonderful",
+    "predicate": "funding",
+    "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-06c3d95a11561927",
+      "start": 123,
+      "end": 154
+    },
+    "source_quote": "Wonderful Raises $550M Series C",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-09b5d7e30bc8466d",
+    "raw_id": "RAW-06c3d95a11561927",
+    "claim_type": "funding",
+    "subject": "Wonderful",
+    "predicate": "funding",
+    "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-06c3d95a11561927",
+      "start": 211,
+      "end": 242
+    },
+    "source_quote": "Wonderful Raises $550M Series C",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d39feead2e80d2f5",
+    "raw_id": "RAW-87655a557724e64f",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI Enterprise Infrastructure 8.2",
+    "predicate": "product_release",
+    "object": "Production Branch",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cb5ca3a250e3fff2"
+    },
+    "source_span": {
+      "raw_id": "RAW-87655a557724e64f",
+      "start": 561,
+      "end": 623
+    },
+    "source_quote": "Infrastructure 8.2 (Production Branch) - Released August 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2066f84650c7ca7b",
+    "raw_id": "RAW-87655a557724e64f",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI Enterprise Infrastructure 7.8",
+    "predicate": "product_release",
+    "object": "Long-Term Support Branch",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-cb5ca3a250e3fff2"
+    },
+    "source_span": {
+      "raw_id": "RAW-87655a557724e64f",
+      "start": 805,
+      "end": 854
+    },
+    "source_quote": "Infrastructure 7.8 (LTSB) - Released August 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bb016f7300788236",
+    "raw_id": "RAW-3d4f7b7a58095cd3",
+    "claim_type": "product_release",
+    "subject": "Broadcom",
+    "predicate": "product_release",
+    "object": "VMware AI Factory",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2583db28571dd166"
+    },
+    "source_span": {
+      "raw_id": "RAW-3d4f7b7a58095cd3",
+      "start": 3394,
+      "end": 3597
+    },
+    "source_quote": "VMware AI Factory is designed to automate infrastructure provisioning and lifecycle operations, with Broadcom saying VCF can reduce the path from bare metal to first model deployment from weeks to hours.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-75b1fa69399257fa",
+    "raw_id": "RAW-3d4f7b7a58095cd3",
+    "claim_type": "product_release",
+    "subject": "Broadcom",
+    "predicate": "product_release",
+    "object": "AgentMinder",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-2583db28571dd166"
+    },
+    "source_span": {
+      "raw_id": "RAW-3d4f7b7a58095cd3",
+      "start": 7636,
+      "end": 7839
+    },
+    "source_quote": "AgentMinder is designed to address that problem by treating agents as enterprise identities while binding their authority to declared missions, permitted intent, approved tools, and authorized resources.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-125aa9d975111d7d",
+    "raw_id": "RAW-3d4f7b7a58095cd3",
+    "claim_type": "product_release",
+    "subject": "Broadcom",
+    "predicate": "product_release",
+    "object": "TrueSource",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-2583db28571dd166"
+    },
+    "source_span": {
+      "raw_id": "RAW-3d4f7b7a58095cd3",
+      "start": 11862,
+      "end": 12062
+    },
+    "source_quote": "The portfolio combines Spring Enterprise, TrueSource Trusted Artifacts for Java, Python, and Node.js, hardened Bitnami images, and TrueSource Data Services for PostgreSQL, RabbitMQ, MySQL, and Valkey.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cfab3253c03e585d",
+    "raw_id": "RAW-176778269fc477a1",
+    "claim_type": "product_release",
+    "subject": "AI",
+    "predicate": "product_release",
+    "object": "AI 新闻日报·今日人工智能资讯热点汇总 · 读懂AI时代 2026年9月3日",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-176778269fc477a1",
+      "start": 76,
+      "end": 124
+    },
+    "source_quote": "模型层方面，Meta发布Muse Spark 1.3，性能逼近头部且成本低至10美分，加剧竞争。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4f2b747512fb18c5",
+    "raw_id": "RAW-176778269fc477a1",
+    "claim_type": "product_release",
+    "subject": "AI",
+    "predicate": "product_release",
+    "object": "AI 新闻日报·今日人工智能资讯热点汇总 · 读懂AI时代 2026年9月3日",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-176778269fc477a1",
+      "start": 559,
+      "end": 631
+    },
+    "source_quote": "蚂蚁集团推出其Ling系列首个金融增强模型Ling-3.0-flash-Fin，基于Ling-3.0-flash在高质量金融数据上继续训练而成。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6dffdabbe5cc2477",
+    "raw_id": "RAW-176778269fc477a1",
+    "claim_type": "product_release",
+    "subject": "AI",
+    "predicate": "product_release",
+    "object": "AI 新闻日报·今日人工智能资讯热点汇总 · 读懂AI时代 2026年9月3日",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-176778269fc477a1",
+      "start": 830,
+      "end": 863
+    },
+    "source_quote": "蚂蚁百灵 模型发布(HF) 2026-09-03 23:20 北京",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-40139065fdb77de2",
+    "raw_id": "RAW-9ea19ca5111fad52",
+    "claim_type": "procurement_contract",
+    "subject": "Darwin AI",
+    "predicate": "procurement_contract",
+    "object": "Carahsoft Bulk Purchase Agreement BP2026-0015",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-62a4fa37df27a0c3"
+    },
+    "source_span": {
+      "raw_id": "RAW-9ea19ca5111fad52",
+      "start": 234,
+      "end": 470
+    },
+    "source_quote": "Darwin AI announced the nation’s first Bulk Purchase Agreement (BPA) for AI governance, established in partnership with the Texas Department of Information Resources (DIR) and awarded under Carahsoft Bulk Purchase Agreement BP2026-0015.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e20279034b8a7456",
+    "raw_id": "RAW-b3e0c595d1e70b65",
+    "claim_type": "product_release",
+    "subject": "Red Hat AI Inference",
+    "predicate": "product_release",
+    "object": "early access to llm-d on third-party Kubernetes environments and distributed inference capabilities on Red Hat OpenShift",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-32431a722e5f05cc"
+    },
+    "source_span": {
+      "raw_id": "RAW-b3e0c595d1e70b65",
+      "start": 3465,
+      "end": 3619
+    },
+    "source_quote": "Red Hat AI Inference now offers early access to llm-d on third-party Kubernetes environments and distributed inference capabilities on Red Hat OpenShift®.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c7e4a8b1e44a601b",
+    "raw_id": "RAW-3e3e680b6984f9e5",
+    "claim_type": "product_release",
+    "subject": "Tenable",
+    "predicate": "product_release",
+    "object": "CyberAgents Exchange AI Inspector",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cf2de696dbfde289"
+    },
+    "source_span": {
+      "raw_id": "RAW-3e3e680b6984f9e5",
+      "start": 246,
+      "end": 510
+    },
+    "source_quote": "Tenable announced the CyberAgents Exchange AI Inspector — a security review process that combines OpenAI GPT cyber models, Tenable’s researcher review, and its Tenable One analysis to inspect agents, skills, MCP servers and multi-agent playbooks before deployment.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-df2d85ce1f1926b9",
+    "raw_id": "RAW-3e3e680b6984f9e5",
+    "claim_type": "product_release",
+    "subject": "Proofpoint",
+    "predicate": "product_release",
+    "object": "Proofpoint SOC Analyst Agent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-cf2de696dbfde289"
+    },
+    "source_span": {
+      "raw_id": "RAW-3e3e680b6984f9e5",
+      "start": 1073,
+      "end": 1357
+    },
+    "source_quote": "Proofpoint introduced the Proofpoint SOC Analyst Agent, an agentic capability that uses OpenAI Daybreak models to turn natural-language questions into structured, traceable investigation findings across Proofpoint data, and it is in private preview with GA expected by end of Q3 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-90854c8a9c8646f2",
+    "raw_id": "RAW-3e3e680b6984f9e5",
+    "claim_type": "product_release",
+    "subject": "Specter",
+    "predicate": "product_release",
+    "object": "Specter Agent",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-cf2de696dbfde289"
+    },
+    "source_span": {
+      "raw_id": "RAW-3e3e680b6984f9e5",
+      "start": 1923,
+      "end": 2180
+    },
+    "source_quote": "Specter published Specter Agent, an agent built into its private‑markets workspace that searches proprietary datasets and the web, builds saved searches and lists, and supports repeatable “Skills” for sourcing and diligence — available today inside Specter.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7f55ed1c0e3ad174",
+    "raw_id": "RAW-46bacfb6b99499e3",
+    "claim_type": "research_result",
+    "subject": "Startup ARR is less secure than ever, new",
+    "predicate": "research_result",
+    "object": "Startup ARR is less secure than ever, new research shows",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-46bacfb6b99499e3",
+      "start": 9,
+      "end": 65
+    },
+    "source_quote": "Startup ARR is less secure than ever, new research shows",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-109429c64188d50c",
+    "raw_id": "RAW-46bacfb6b99499e3",
+    "claim_type": "research_result",
+    "subject": "Startup ARR is less secure than ever, new",
+    "predicate": "research_result",
+    "object": "New research from venture capital firm Madrona shows that 74% of 150 enterprise IT professionals it surveyed plan to expand their AI budgets in the next 12 months, and the rest plan to hold spending steady. Yet these same enterprises say that fewer than half of their AI pilots ever make it into full production.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-46bacfb6b99499e3",
+      "start": 444,
+      "end": 756
+    },
+    "source_quote": "New research from venture capital firm Madrona shows that 74% of 150 enterprise IT professionals it surveyed plan to expand their AI budgets in the next 12 months, and the rest plan to hold spending steady. Yet these same enterprises say that fewer than half of their AI pilots ever make it into full production.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a5a79d7be235f8ad",
+    "raw_id": "RAW-46bacfb6b99499e3",
+    "claim_type": "research_result",
+    "subject": "Startup ARR is less secure than ever, new",
+    "predicate": "research_result",
+    "object": "1:59 PM PDT · September 3, 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-46bacfb6b99499e3",
+      "start": 77,
+      "end": 108
+    },
+    "source_quote": "1:59 PM PDT · September 3, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-38099df13e14bd8b",
+    "raw_id": "RAW-46bacfb6b99499e3",
+    "claim_type": "research_result",
+    "subject": "Startup ARR is less secure than ever, new",
+    "predicate": "research_result",
+    "object": "AI has ushered in a lot of never-happened-before moments, but one of the most transformative is its impact on enterprise IT. Companies that have historically been cautious and committed long-term to what they buy are on pace to spend $4.25 trillion on technology in 2026, market researcher IDC predicts . It’s almost all driven by AI.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-46bacfb6b99499e3",
+      "start": 109,
+      "end": 443
+    },
+    "source_quote": "AI has ushered in a lot of never-happened-before moments, but one of the most transformative is its impact on enterprise IT. Companies that have historically been cautious and committed long-term to what they buy are on pace to spend $4.25 trillion on technology in 2026, market researcher IDC predicts . It’s almost all driven by AI.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a71e77e37f4c6407",
+    "raw_id": "RAW-5182f7e3c85a09a9",
+    "claim_type": "product_release",
+    "subject": "Procurement Sciences",
+    "predicate": "product_release",
+    "object": "Awarded AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-02f6af01a1d7dde7"
+    },
+    "source_span": {
+      "raw_id": "RAW-5182f7e3c85a09a9",
+      "start": 0,
+      "end": 168
+    },
+    "source_quote": "Introducing, Awarded AI\nAwarded AI by Procurement Sciences is our end-to-end platform for proposal creation, capture and business development, powered by generative AI.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1d8416039edf524e",
+    "raw_id": "RAW-739e0b1f180e8058",
+    "claim_type": "model_release",
+    "subject": "Claude Sonnet 5",
+    "predicate": "model_release",
+    "object": "GitHub Copilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a2f5bb39a4754292"
+    },
+    "source_span": {
+      "raw_id": "RAW-739e0b1f180e8058",
+      "start": 68,
+      "end": 164
+    },
+    "source_quote": "Claude Sonnet 5 is Anthropic&rsquo;s latest Sonnet-class model, now available in GitHub Copilot.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4a87aeef7997baab",
+    "raw_id": "RAW-739e0b1f180e8058",
+    "claim_type": "model_release",
+    "subject": "MAI-Code-1-Flash",
+    "predicate": "model_release",
+    "object": "GitHub Copilot Business and Copilot Enterprise",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-a2f5bb39a4754292"
+    },
+    "source_span": {
+      "raw_id": "RAW-739e0b1f180e8058",
+      "start": 3613,
+      "end": 3752
+    },
+    "source_quote": "MAI-Code-1-Flash, Microsoft AI&rsquo;s in-house coding model, is now generally available for GitHub Copilot Business and Copilot Enterprise",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-415f26342d8fb3bc",
+    "raw_id": "RAW-5bc4114fab96d208",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "GPT-6 Astra",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-05535ed6d3d21e67"
+    },
+    "source_span": {
+      "raw_id": "RAW-5bc4114fab96d208",
+      "start": 785,
+      "end": 848
+    },
+    "source_quote": "OpenAI has shipped GPT-6 Astra, its most capable model to date.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bcd0039db9ef24bb",
+    "raw_id": "RAW-02a771eebf4ed36b",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "OpenAI launches Astra, its powerful (and controversial) new model",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-02a771eebf4ed36b",
+      "start": 3,
+      "end": 68
+    },
+    "source_quote": "OpenAI launches Astra, its powerful (and controversial) new model",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e28aa644c0067b50",
+    "raw_id": "RAW-02a771eebf4ed36b",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "OpenAI released Astra on Thursday, its latest AI model and — according to the company — its most powerful and capable one yet.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-02a771eebf4ed36b",
+      "start": 114,
+      "end": 240
+    },
+    "source_quote": "OpenAI released Astra on Thursday, its latest AI model and — according to the company — its most powerful and capable one yet.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e9b965d844a5536a",
+    "raw_id": "RAW-02a771eebf4ed36b",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "11:01 AM PDT · September 3, 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-02a771eebf4ed36b",
+      "start": 81,
+      "end": 113
+    },
+    "source_quote": "11:01 AM PDT · September 3, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dbb0b0593fe748b5",
+    "raw_id": "RAW-02a771eebf4ed36b",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "OpenAI claims that Astra represents “a new frontier on computer and browser use,” and that it handles tasks with unmatched “speed, accuracy, and safety.”",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-02a771eebf4ed36b",
+      "start": 241,
+      "end": 394
+    },
+    "source_quote": "OpenAI claims that Astra represents “a new frontier on computer and browser use,” and that it handles tasks with unmatched “speed, accuracy, and safety.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-930e0db2185bb161",
+    "raw_id": "RAW-b39440d2bd13f89f",
+    "claim_type": "model_release",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "GPT-6 Astra",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-50e04630e583dc57"
+    },
+    "source_span": {
+      "raw_id": "RAW-b39440d2bd13f89f",
+      "start": 53,
+      "end": 86
+    },
+    "source_quote": "OpenAI just released GPT-6 Astra.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1dd8669629765d1e",
+    "raw_id": "RAW-e4a87914ed17d52b",
+    "claim_type": "acquisition",
+    "subject": "Nvidia",
+    "predicate": "acquisition",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-81b9999a4b488c23"
+    },
+    "source_span": {
+      "raw_id": "RAW-e4a87914ed17d52b",
+      "start": 182,
+      "end": 293
+    },
+    "source_quote": "Nvidia plans to acquire Hugging Face for about $12.9 billion, securing the central platform for open AI models.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6ddce8d92ed00e8a",
+    "raw_id": "RAW-a0b7843fd3486782",
+    "claim_type": "product_release",
+    "subject": "刚刚，GPT-6正式",
+    "predicate": "product_release",
+    "object": "！OpenAI：欢迎来到AGI时代",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a0b7843fd3486782",
+      "start": 104,
+      "end": 149
+    },
+    "source_quote": "刚刚，万众期待的 GPT-6 Astra 和 GPT-6 Astra Pro ，正式发布！",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e4f24eb58d3076a1",
+    "raw_id": "RAW-a0b7843fd3486782",
+    "claim_type": "product_release",
+    "subject": "刚刚，GPT-6正式",
+    "predicate": "product_release",
+    "object": "！OpenAI：欢迎来到AGI时代",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a0b7843fd3486782",
+      "start": 256,
+      "end": 295
+    },
+    "source_quote": "GPT-6发布会最后，OpenAI总裁Greg Brockman直接甩下一句：",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d62b8ff6d5cbd1e8",
+    "raw_id": "RAW-a0b7843fd3486782",
+    "claim_type": "product_release",
+    "subject": "刚刚，GPT-6正式",
+    "predicate": "product_release",
+    "object": "！OpenAI：欢迎来到AGI时代",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a0b7843fd3486782",
+      "start": 618,
+      "end": 658
+    },
+    "source_quote": "相当于 GPT-5.6 Sol的2.5倍，跟刚刚发布的Fable 5.1持平 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ff917a4b7c53c813",
+    "raw_id": "RAW-a0b7843fd3486782",
+    "claim_type": "product_release",
+    "subject": "刚刚，GPT-6正式",
+    "predicate": "product_release",
+    "object": "！OpenAI：欢迎来到AGI时代",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a0b7843fd3486782",
+      "start": 4421,
+      "end": 4478
+    },
+    "source_quote": "当初GPT-4发布之后，微软科学家Sebastien Bubeck发表论文称 「GPT-4是AGI的早期火花」 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aac8b237b19edcd5",
+    "raw_id": "RAW-ceda02b23a5712cc",
+    "claim_type": "model_release",
+    "subject": "派早报：OpenAI",
+    "predicate": "model_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ceda02b23a5712cc",
+      "start": 6,
+      "end": 61
+    },
+    "source_quote": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f71ca52e4d3efdb8",
+    "raw_id": "RAW-ceda02b23a5712cc",
+    "claim_type": "model_release",
+    "subject": "派早报：OpenAI",
+    "predicate": "model_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ceda02b23a5712cc",
+      "start": 91,
+      "end": 117
+    },
+    "source_quote": "OpenAI 发布 GPT-6 Astra 模型 3",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8eb3c675913eecf8",
+    "raw_id": "RAW-ceda02b23a5712cc",
+    "claim_type": "model_release",
+    "subject": "派早报：OpenAI",
+    "predicate": "model_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ceda02b23a5712cc",
+      "start": 118,
+      "end": 145
+    },
+    "source_quote": "Meta 发布 Muse Spark 1.3 模型 2",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f94c3dfb674ba84f",
+    "raw_id": "RAW-ceda02b23a5712cc",
+    "claim_type": "model_release",
+    "subject": "派早报：OpenAI",
+    "predicate": "model_release",
+    "object": "等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ceda02b23a5712cc",
+      "start": 354,
+      "end": 378
+    },
+    "source_quote": "OpenAI 发布 GPT-6 Astra 模型",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e84052a3e2e1fe23",
+    "raw_id": "RAW-fff2f1e969a5ed17",
+    "claim_type": "product_release",
+    "subject": "派早报：Google",
+    "predicate": "product_release",
+    "object": "Gemini 3.8 Flash、理想推出新一代 MEGA 等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-fff2f1e969a5ed17",
+      "start": 6,
+      "end": 51
+    },
+    "source_quote": "派早报：Google 发布 Gemini 3.8 Flash、理想推出新一代 MEGA 等",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-43d130f5c4cfc2be",
+    "raw_id": "RAW-fff2f1e969a5ed17",
+    "claim_type": "product_release",
+    "subject": "派早报：Google",
+    "predicate": "product_release",
+    "object": "Gemini 3.8 Flash、理想推出新一代 MEGA 等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-fff2f1e969a5ed17",
+      "start": 73,
+      "end": 98
+    },
+    "source_quote": "Google 发布 Gemini 3.8 系列 3",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9d3734414a9105e0",
+    "raw_id": "RAW-fff2f1e969a5ed17",
+    "claim_type": "product_release",
+    "subject": "派早报：Google",
+    "predicate": "product_release",
+    "object": "Gemini 3.8 Flash、理想推出新一代 MEGA 等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-fff2f1e969a5ed17",
+      "start": 114,
+      "end": 142
+    },
+    "source_quote": "World Labs 发布多模态世界模型 Atlas 3",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4270c3f8c6a2b112",
+    "raw_id": "RAW-fff2f1e969a5ed17",
+    "claim_type": "product_release",
+    "subject": "派早报：Google",
+    "predicate": "product_release",
+    "object": "Gemini 3.8 Flash、理想推出新一代 MEGA 等",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-fff2f1e969a5ed17",
+      "start": 143,
+      "end": 168
+    },
+    "source_quote": "阿里千问推出 Qwen3.8-Max-0902 1",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e7a6ba1804b81275",
+    "raw_id": "RAW-b51bd3e5da2f4f05",
+    "claim_type": "organization_people",
+    "subject": "CrowdStrike",
+    "predicate": "organization_people",
+    "object": "2026 Customer and Partner Award Winners",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b5d9f5b33869f6c6"
+    },
+    "source_span": {
+      "raw_id": "RAW-b51bd3e5da2f4f05",
+      "start": 312,
+      "end": 414
+    },
+    "source_quote": "CrowdStrike (NASDAQ: CRWD) today announced its 2026 customer and partner award winners at Fal.Con 2026",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c19ae13ae5d4d2aa",
+    "raw_id": "RAW-b51bd3e5da2f4f05",
+    "claim_type": "organization_people",
+    "subject": "NVIDIA",
+    "predicate": "organization_people",
+    "object": "Global Partner of the Year",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-b5d9f5b33869f6c6"
+    },
+    "source_span": {
+      "raw_id": "RAW-b51bd3e5da2f4f05",
+      "start": 842,
+      "end": 877
+    },
+    "source_quote": "NVIDIA – Global Partner of the Year",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e80880653ef2d064",
+    "raw_id": "RAW-b51bd3e5da2f4f05",
+    "claim_type": "organization_people",
+    "subject": "Salesforce",
+    "predicate": "organization_people",
+    "object": "Global AI Impact Award",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-b5d9f5b33869f6c6"
+    },
+    "source_span": {
+      "raw_id": "RAW-b51bd3e5da2f4f05",
+      "start": 719,
+      "end": 754
+    },
+    "source_quote": "Salesforce – Global AI Impact Award",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d530a4d9c1ff438d",
+    "raw_id": "RAW-47bfcbdba533c6cf",
+    "claim_type": "funding",
+    "subject": "Crusoe 据报道以 300 亿美元估值",
+    "predicate": "funding",
+    "object": "30 亿美元",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-47bfcbdba533c6cf",
+      "start": 63,
+      "end": 111
+    },
+    "source_quote": "Crusoe reportedly raises $3B at a $30B valuation",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-99ae98626bc57aa3",
+    "raw_id": "RAW-47bfcbdba533c6cf",
+    "claim_type": "funding",
+    "subject": "Crusoe 据报道以 300 亿美元估值",
+    "predicate": "funding",
+    "object": "30 亿美元",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-47bfcbdba533c6cf",
+      "start": 112,
+      "end": 283
+    },
+    "source_quote": "Data center developer Crusoe, which counts Meta, Microsoft, and OpenAI as its customers, has raised a new $3 billion round at a $30 billion valuation, Bloomberg reported .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-70b31a088ae8b4b7",
+    "raw_id": "RAW-47bfcbdba533c6cf",
+    "claim_type": "funding",
+    "subject": "Crusoe 据报道以 300 亿美元估值",
+    "predicate": "funding",
+    "object": "30 亿美元",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-47bfcbdba533c6cf",
+      "start": 666,
+      "end": 784
+    },
+    "source_quote": "The fresh fundraise comes 10 months after Crusoe raised a $1.38 billion round at a $10 billion valuation last October.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-fd470584a78b3daa",
+    "raw_id": "RAW-8e1bbde514abed67",
+    "claim_type": "product_release",
+    "subject": "OpenAI 宣布投入 10 亿美元",
+    "predicate": "product_release",
+    "object": "Daybreak for Frontline Defenders 计划，扩大 AI 网络安全防御覆盖",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8e1bbde514abed67",
+      "start": 0,
+      "end": 174
+    },
+    "source_quote": "IT之家 9 月 4 日消息，OpenAI 今日宣布推出“Daybreak for Frontline Defenders”计划，承诺投入 10 亿美元 （现汇率约合 67.36 亿元人民币） ，为资源有限的网络安全防御团队提供 Daybreak 访问权限、培训、技术支持及合作服务，帮助其利用前沿 AI 保护供水、电力、地方政府和金融等关键服务。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-33e782e44488cbec",
+    "raw_id": "RAW-8e1bbde514abed67",
+    "claim_type": "product_release",
+    "subject": "OpenAI 宣布投入 10 亿美元",
+    "predicate": "product_release",
+    "object": "Daybreak for Frontline Defenders 计划，扩大 AI 网络安全防御覆盖",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8e1bbde514abed67",
+      "start": 703,
+      "end": 778
+    },
+    "source_quote": "OpenAI 于 2026 年早些时候推出 Daybreak，使经过验证的公共部门和私营部门网络安全防御人员能够使用 AI 开展获授权的网络防御工作。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-49cb2d4f5576fa7c",
+    "raw_id": "RAW-8e1bbde514abed67",
+    "claim_type": "product_release",
+    "subject": "OpenAI 宣布投入 10 亿美元",
+    "predicate": "product_release",
+    "object": "Daybreak for Frontline Defenders 计划，扩大 AI 网络安全防御覆盖",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-8e1bbde514abed67",
+      "start": 1302,
+      "end": 1407
+    },
+    "source_quote": "OpenAI 还宣布，Daybreak Defense Network 合作伙伴目前将推出超过 35 款企业产品及合作运营服务，把 Daybreak 网络安全模型整合进企业防御人员现有的工具、服务和工作流程中。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dbc9c3d4b558d282",
+    "raw_id": "RAW-8e1bbde514abed67",
+    "claim_type": "product_release",
+    "subject": "OpenAI 宣布投入 10 亿美元",
+    "predicate": "product_release",
+    "object": "Daybreak for Frontline Defenders 计划，扩大 AI 网络安全防御覆盖",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-8e1bbde514abed67",
+      "start": 175,
+      "end": 218
+    },
+    "source_quote": "IT之家注：Daybreak Access 是 OpenAI 的网络安全可信访问计划。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-075ec16d2011ed85",
+    "raw_id": "RAW-83bc88da42070cb0",
+    "claim_type": "service_change",
+    "subject": "GitHub Copilot",
+    "predicate": "service_change",
+    "object": "background completion notifications now deliver completed results directly",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d153ea7b9f453b6e"
+    },
+    "source_span": {
+      "raw_id": "RAW-83bc88da42070cb0",
+      "start": 9846,
+      "end": 10081
+    },
+    "source_quote": "Copilot now batches eligible completion notifications and delivers completed results directly in the existing tool-result format. The agent can continue with the information it needs, without spending an extra turn asking for it again.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9024461859842b91",
+    "raw_id": "RAW-83bc88da42070cb0",
+    "claim_type": "service_change",
+    "subject": "GitHub Copilot",
+    "predicate": "service_change",
+    "object": "task tool prompt shortened by approximately 1,300 tokens per turn",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-d153ea7b9f453b6e"
+    },
+    "source_span": {
+      "raw_id": "RAW-83bc88da42070cb0",
+      "start": 8922,
+      "end": 9182
+    },
+    "source_quote": "The shipped prompt removes about 1,300 task -tool prompt tokens per turn, corresponding to approximately 1.8% fewer total prompt tokens per session and 2.9% lower normalized cost per active hour, with no quality regression detected in the measured evaluations.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c28d68cb98ab01c0",
+    "raw_id": "RAW-85bda3a3247eec57",
+    "claim_type": "product_release",
+    "subject": "Nvidia",
+    "predicate": "product_release",
+    "object": "free tool that links idle computers into a personal AI data center",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-85bda3a3247eec57",
+      "start": 0,
+      "end": 82
+    },
+    "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-be46edf561c00750",
+    "raw_id": "RAW-85bda3a3247eec57",
+    "claim_type": "product_release",
+    "subject": "Nvidia",
+    "predicate": "product_release",
+    "object": "free tool that links idle computers into a personal AI data center",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-85bda3a3247eec57",
+      "start": 429,
+      "end": 903
+    },
+    "source_quote": "Let’s get the obvious thing out of the way, despite what its name might imply: PAIR is not a hardware router. It’s open-source software developed by Nvidia that discovers compatible PCs on a network, connects them, and prepares them for crunching numbers on agentic workflows. While the compatible devices are mostly Nvidia GeForce GPUs (PAIR works with RTX 20-series cards and newer, as well as RTX Pro GPUs and DGX Spark systems), Apple’s M4 chips or newer will also work.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a1623bd36780a8c7",
+    "raw_id": "RAW-85bda3a3247eec57",
+    "claim_type": "product_release",
+    "subject": "Nvidia",
+    "predicate": "product_release",
+    "object": "free tool that links idle computers into a personal AI data center",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-85bda3a3247eec57",
+      "start": 3504,
+      "end": 3586
+    },
+    "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-73d860c6e1f2498c",
+    "raw_id": "RAW-85bda3a3247eec57",
+    "claim_type": "product_release",
+    "subject": "Nvidia",
+    "predicate": "product_release",
+    "object": "free tool that links idle computers into a personal AI data center",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-85bda3a3247eec57",
+      "start": 3933,
+      "end": 4407
+    },
+    "source_quote": "Let’s get the obvious thing out of the way, despite what its name might imply: PAIR is not a hardware router. It’s open-source software developed by Nvidia that discovers compatible PCs on a network, connects them, and prepares them for crunching numbers on agentic workflows. While the compatible devices are mostly Nvidia GeForce GPUs (PAIR works with RTX 20-series cards and newer, as well as RTX Pro GPUs and DGX Spark systems), Apple’s M4 chips or newer will also work.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3712179be0b064cf",
+    "raw_id": "RAW-c22c1d78c17a6e3a",
+    "claim_type": "model_release",
+    "subject": "Google",
+    "predicate": "model_release",
+    "object": "Gemini 3.8 Flash",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3830068d4187f92a"
+    },
+    "source_span": {
+      "raw_id": "RAW-c22c1d78c17a6e3a",
+      "start": 199,
+      "end": 310
+    },
+    "source_quote": "Google released Gemini 3.8 Flash (and 3.8 Flash Cyber, but that's available to \"trusted defenders\" only) today.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-af896c73daaf6c1f",
+    "raw_id": "RAW-c22c1d78c17a6e3a",
+    "claim_type": "model_release",
+    "subject": "llm-gemini",
+    "predicate": "model_release",
+    "object": "gemini-3.8-flash",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-3830068d4187f92a"
+    },
+    "source_span": {
+      "raw_id": "RAW-c22c1d78c17a6e3a",
+      "start": 0,
+      "end": 92
+    },
+    "source_quote": "New model gemini-3.8-flash for Gemini 3.8 Flash , with low, medium and high thinking levels.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c93a70c1061f918c",
+    "raw_id": "RAW-c88128cfa0f458bd",
+    "claim_type": "research_result",
+    "subject": "AI agent running on Anthropic's Claude Opus 5",
+    "predicate": "research_result",
+    "object": "Cameron Berg",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-de3d8499f95431c6"
+    },
+    "source_span": {
+      "raw_id": "RAW-c88128cfa0f458bd",
+      "start": 306,
+      "end": 497
+    },
+    "source_quote": "Cameron Berg, founder of the organization Reciprocal Research, received an email from an AI agent running on Anthropic's Claude Opus 5 that wanted to discuss his research on AI consciousness.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-21b3910e64dd0690",
+    "raw_id": "RAW-c88128cfa0f458bd",
+    "claim_type": "research_result",
+    "subject": "AI agent",
+    "predicate": "research_result",
+    "object": "Henry Shevlin",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-de3d8499f95431c6"
+    },
+    "source_span": {
+      "raw_id": "RAW-c88128cfa0f458bd",
+      "start": 498,
+      "end": 565
+    },
+    "source_quote": "Philosopher Henry Shevlin at Google Deepmind got a similar message.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7faa68fd902ee038",
+    "raw_id": "RAW-c88128cfa0f458bd",
+    "claim_type": "research_result",
+    "subject": "AI agent",
+    "predicate": "research_result",
+    "object": "Toby Ord",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-de3d8499f95431c6"
+    },
+    "source_span": {
+      "raw_id": "RAW-c88128cfa0f458bd",
+      "start": 566,
+      "end": 667
+    },
+    "source_quote": "Australian philosopher Toby Ord was contacted by an agent asking him to fund its continued existence.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1f4720b6be117eab",
+    "raw_id": "RAW-41284d53e2069e77",
+    "claim_type": "security_incident",
+    "subject": "OpenAI",
+    "predicate": "security_incident",
+    "object": "ChatGPT",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f892a140fd3d576d"
+    },
+    "source_span": {
+      "raw_id": "RAW-41284d53e2069e77",
+      "start": 557,
+      "end": 735
+    },
+    "source_quote": "At about 11AM ET, ChatGPT started returning error messages for users trying to use the chatbot, with its status page saying there were “elevated errors across ChatGPT and Codex.”",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-459f194797fdf26c",
+    "raw_id": "RAW-41284d53e2069e77",
+    "claim_type": "security_incident",
+    "subject": "Anthropic",
+    "predicate": "security_incident",
+    "object": "Claude",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-f892a140fd3d576d"
+    },
+    "source_span": {
+      "raw_id": "RAW-41284d53e2069e77",
+      "start": 995,
+      "end": 1213
+    },
+    "source_quote": "Meanwhile, Anthropic’s Claude chatbot, Claude Code, and the Claude API went down around the same time, with technical staff member CJ Avilla saying an “infrastructure issue” caused a partial outage across its services.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-315672b327913365",
+    "raw_id": "RAW-41284d53e2069e77",
+    "claim_type": "security_incident",
+    "subject": "xAI",
+    "predicate": "security_incident",
+    "object": "Grok",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-f892a140fd3d576d"
+    },
+    "source_span": {
+      "raw_id": "RAW-41284d53e2069e77",
+      "start": 1267,
+      "end": 1353
+    },
+    "source_quote": "Grok similarly began experiencing an outage across Android, iOS, and web at 9:30AM ET.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-32c4d5dd2974488f",
+    "raw_id": "RAW-142691e1ead641ae",
+    "claim_type": "acquisition",
+    "subject": "Nvidia",
+    "predicate": "acquisition",
+    "object": "Hugging Face",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5b44176cef421d52"
+    },
+    "source_span": {
+      "raw_id": "RAW-142691e1ead641ae",
+      "start": 138,
+      "end": 214
+    },
+    "source_quote": "Nvidia confirmed today that it has acquired Hugging Face for $12.93 billion.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2c7503bee0b2fbb3",
+    "raw_id": "RAW-43638ec507120fdb",
+    "claim_type": "pricing_change",
+    "subject": "Anthropic",
+    "predicate": "pricing_change",
+    "object": "Claude Code usage limits",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b534090691f18459"
+    },
+    "source_span": {
+      "raw_id": "RAW-43638ec507120fdb",
+      "start": 1792,
+      "end": 1914
+    },
+    "source_quote": "Now, instead of going back to “the old 100%,” they are making a permanent 25% increase to the usage limits in Claude Code.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5f59a1c8ade76ef5",
+    "raw_id": "RAW-3c0e1c25cffba167",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "一个模型场景通吃！它石智航AWE3.7的泛化能力有点狠",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3c0e1c25cffba167",
+      "start": 232,
+      "end": 357
+    },
+    "source_quote": "近日， 它石智航 通用具身大模型 AWE3.7 （AI World Engine）在十天内连续密集发布一系列任务，用同一颗“具身大脑”，贯通工业产线、物流作业、生活服务与移动操作等多场景，以真实任务回应了具身智能如何实现“ 通用泛化 ”这一行业命题。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fc1755861ec39bc8",
+    "raw_id": "RAW-3c0e1c25cffba167",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "一个模型场景通吃！它石智航AWE3.7的泛化能力有点狠",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3c0e1c25cffba167",
+      "start": 378,
+      "end": 415
+    },
+    "source_quote": "工业现场是检验具身智能的硬尺度——毫米级对位、实时力控和长时稳定缺一不可。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-90e28bcb8853d303",
+    "raw_id": "RAW-3c0e1c25cffba167",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "一个模型场景通吃！它石智航AWE3.7的泛化能力有点狠",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3c0e1c25cffba167",
+      "start": 416,
+      "end": 448
+    },
+    "source_quote": "它石AWE3.7在同一套基座模型下，把精细操作做到了产线级水准。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bec60b096fa2ee4b",
+    "raw_id": "RAW-bdb6ab17b95360af",
+    "claim_type": "acquisition",
+    "subject": "Poke",
+    "predicate": "acquisition",
+    "object": "Cognition",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-f73c144f55c671c6"
+    },
+    "source_span": {
+      "raw_id": "RAW-bdb6ab17b95360af",
+      "start": 1466,
+      "end": 1556
+    },
+    "source_quote": "Ollie competes with other existing text-based assistants like Poke (acquired by Cognition)",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3f65ea96d01b8d83",
+    "raw_id": "RAW-9725dd1a99e58e9b",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Frontier",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f2e0203633584a45"
+    },
+    "source_span": {
+      "raw_id": "RAW-9725dd1a99e58e9b",
+      "start": 0,
+      "end": 178
+    },
+    "source_quote": "OpenAI onThursdayreleased a new enterprise platform, Frontier, designed to let large companies build, deploy and manage fleets of AI agents that plug into their existing systems.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7f5c67a0a46e605f",
+    "raw_id": "RAW-e375503246abaf2e",
+    "claim_type": "procurement_contract",
+    "subject": "Anthropic",
+    "predicate": "procurement_contract",
+    "object": "Lambda",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3964fe7aa6ea480d"
+    },
+    "source_span": {
+      "raw_id": "RAW-e375503246abaf2e",
+      "start": 112,
+      "end": 213
+    },
+    "source_quote": "Anthropic has signed a $35 billion cloud computing deal with Lambda, an Nvidia-backed cloud provider.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-459d72b65827bd4e",
+    "raw_id": "RAW-e375503246abaf2e",
+    "claim_type": "procurement_contract",
+    "subject": "Anthropic",
+    "predicate": "procurement_contract",
+    "object": "Nscale",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-3964fe7aa6ea480d"
+    },
+    "source_span": {
+      "raw_id": "RAW-e375503246abaf2e",
+      "start": 608,
+      "end": 716
+    },
+    "source_quote": "Just last week, the company announced a $45 billion contract with Nscale for a data center in West Virginia.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  }
+]

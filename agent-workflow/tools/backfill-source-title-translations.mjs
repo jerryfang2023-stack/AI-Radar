@@ -97,6 +97,9 @@ async function main() {
     const events = readJson(path.join(dir, "canonical-events.json"));
     for (const raw of raws) {
       rawBySourceArtifact.set(raw.source_artifact_id, raw.raw_id);
+      if (/(?:\.\.\.|…)$/.test(String(raw.title_original || "").trim())) {
+        eventTargetRawIds.add(raw.raw_id);
+      }
     }
     for (const [rawId, snapshotRef] of sourceSnapshotRefsByRawId(sourceArtifacts, raws)) rawPathById.set(rawId, snapshotRef);
     for (const event of events) {
@@ -118,8 +121,9 @@ async function main() {
     const file = privateEvidence?.file || path.join(root, relativePath);
     if (!fs.existsSync(file)) continue;
     const payload = privateEvidence?.metadata || readJson(file);
+    const capturedPayload = privateEvidence?.raw || payload;
     const storedSourceTitle = String(payload.title || payload.title_original || "").trim();
-    const sourceTitle = sourceTitleFromCapturedPayload(payload);
+    const sourceTitle = sourceTitleFromCapturedPayload(capturedPayload);
     if (!sourceTitle) continue;
     jobsByPath.set(relativePath, {
       rawId,
@@ -127,7 +131,7 @@ async function main() {
       file,
       payload,
       sourceTitle,
-      sourceTitleRepaired: sourceTitle !== storedSourceTitle,
+      sourceTitleRepaired: /(?:\.\.\.|…)$/.test(storedSourceTitle) && sourceTitle !== storedSourceTitle,
       sourceUrl: payload.original_url || payload.canonical_url || payload.source_url || "",
     });
   }
@@ -262,6 +266,8 @@ async function main() {
   report.raw_json_updated = rawJsonUpdated;
   report.raw_markdown_updated = rawMarkdownUpdated;
   report.source_titles_repaired = sourceTitlesRepaired;
+  report.intake_titles_repaired = 0;
+  report.source_index_titles_repaired = 0;
   writeJson(reportFile, report);
   console.log(JSON.stringify({
     ok: true,
@@ -273,6 +279,8 @@ async function main() {
     raw_json_updated: report.raw_json_updated,
     raw_markdown_updated: report.raw_markdown_updated,
     source_titles_repaired: report.source_titles_repaired,
+    intake_titles_repaired: report.intake_titles_repaired,
+    source_index_titles_repaired: report.source_index_titles_repaired,
   }, null, 2));
 }
 

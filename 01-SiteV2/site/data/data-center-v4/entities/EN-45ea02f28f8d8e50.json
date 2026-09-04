@@ -1,0 +1,345 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-45ea02f28f8d8e50",
+    "name": "GPT-6 Astra",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-1f88bfaf77dcfca3",
+      "EV-293d6feac5b8efab",
+      "EV-3a8752218ab2b487",
+      "EV-ffa46f84468cffd9",
+      "EV-4adc165f85ae86ff"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-02",
+    "lastSeen": "2026-09-04",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-1f88bfaf77dcfca3",
+        "EV-293d6feac5b8efab",
+        "EV-3a8752218ab2b487",
+        "EV-ffa46f84468cffd9",
+        "EV-4adc165f85ae86ff"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-1f88bfaf77dcfca3",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-04",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 发布 GPT-6 Astra：1.05M 上下文的计算机操作模型，因触及 Critical 网络安全阈值而限制访问",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
+      {
+        "id": "EV-293d6feac5b8efab",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-04",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
+        "displayTags": [],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-7d3194f79e645c42",
+          "EN-ea3bd73e2b506e00",
+          "EN-45ea02f28f8d8e50",
+          "EN-b1f973caf4a8c776"
+        ]
+      },
+      {
+        "id": "EV-3a8752218ab2b487",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-04",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 发布 GPT-6 Astra，首个达到关键级网络安全能力门槛的模型",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
+      {
+        "id": "EV-ffa46f84468cffd9",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-03",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "GPT-6 Astra 是首个让 OpenAI 愿意宣告“AGI 时代”的模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50",
+          "EN-380aba6d50e0af64"
+        ]
+      },
+      {
+        "id": "EV-4adc165f85ae86ff",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-02",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 开始推出 GPT-6 Astra",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-cbdc46f896784f98"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-cbdc46f896784f98"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "computer_use",
+            "name": "计算机操作",
+            "entityIds": [
+              "EN-cbdc46f896784f98"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-cbdc46f896784f98",
+          "EN-7d3194f79e645c42",
+          "EN-cbc62794911ff31b",
+          "EN-45ea02f28f8d8e50"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-61de795c51fc7614",
+      "snapshotKey": "61de795c51fc7614",
+      "snapshotId": "HWS-47ac73c7c1a4122b",
+      "eventId": "EV-4adc165f85ae86ff",
+      "eventIds": [
+        "EV-4adc165f85ae86ff"
+      ],
+      "dataDate": "2026-09-04",
+      "date": "2026-09-04",
+      "title": "GPT-6 Astra",
+      "subject": "OpenAI 开始",
+      "productNames": [
+        "GPT-6 Astra"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ef5e10beac37db7d"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-04",
+          "hardware_fact_id": "HWF-ef5e10beac37db7d",
+          "fact_type": "product",
+          "observed_at": "2026-09-02T00:00:00.000Z",
+          "subject_entity_id": "EN-cbdc46f896784f98",
+          "subject_name": "OpenAI 开始",
+          "product_entity_ids": [
+            "EN-45ea02f28f8d8e50"
+          ],
+          "product_names": [
+            "GPT-6 Astra"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "In addition to its advanced cybersecurity capabilities, Astra is state-of-the-art across functions like computer use, software engineering, professional work and science OpenAI said. The model is also better at staying oriented, respecting task boundaries, understanding user intent, completing tedious tasks and carrying out multi-step workflows, according to a release.",
+          "event_refs": [
+            "EV-4adc165f85ae86ff"
+          ],
+          "claim_ref": "CL-2050ac03b1d9310d",
+          "source_refs": [
+            "SA-19685eca1ceb0d25"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-cbdc46f896784f98"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+      "entityIds": [
+        "EN-cbdc46f896784f98",
+        "EN-7d3194f79e645c42",
+        "EN-cbc62794911ff31b",
+        "EN-45ea02f28f8d8e50"
+      ]
+    },
+    {
+      "id": "HWC-4c9d04b1cb1db737",
+      "snapshotKey": "4c9d04b1cb1db737",
+      "snapshotId": "HWS-e955c6d7f39507db",
+      "eventId": "EV-1f88bfaf77dcfca3",
+      "eventIds": [
+        "EV-1f88bfaf77dcfca3"
+      ],
+      "dataDate": "2026-09-04",
+      "date": "2026-09-04",
+      "title": "GPT-6 Astra",
+      "subject": "OpenAI",
+      "productNames": [
+        "GPT-6 Astra"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a25a3a9c2a6d2472"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-04",
+          "hardware_fact_id": "HWF-a25a3a9c2a6d2472",
+          "fact_type": "product",
+          "observed_at": "2026-09-03T21:16:11.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [
+            "EN-45ea02f28f8d8e50"
+          ],
+          "product_names": [
+            "GPT-6 Astra"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Today, OpenAI released GPT-6 Astra . The company calls it its most intelligent and aligned model, and positions it primarily as a computer-use system rather than a chat model. The pitch is that Astra operates software the way a person does, across browsers, spreadsheets, desktop applications and terminals, and finishes multi-step jobs instead of describing how to do them.",
+          "event_refs": [
+            "EV-1f88bfaf77dcfca3"
+          ],
+          "claim_ref": "CL-8b4379c615409717",
+          "source_refs": [
+            "SA-64fb61e369f9e97a"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-45ea02f28f8d8e50"
+      ]
+    }
+  ]
+}

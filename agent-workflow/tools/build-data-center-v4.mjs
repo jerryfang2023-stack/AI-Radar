@@ -1930,6 +1930,18 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         rawDocuments.push(doc);
         continue;
       }
+      const participantEntityNames = entityNames.filter((item) => item.source !== "source_url");
+      if (!participantEntityNames.length) {
+        qaQueue.push({
+          qa_id: `QA-${hash(`${rawId}|entity-unresolved`)}`,
+          asset_id: rawId,
+          reason: "event_entity_unresolved",
+          status: "review_optional",
+          source_ref: artifact.source_artifact_id
+        });
+        rawDocuments.push(doc);
+        continue;
+      }
 
       claims.push(...eventClaimRows);
       doc.claim_ids.push(...eventClaimRows.map((claim) => claim.claim_id));

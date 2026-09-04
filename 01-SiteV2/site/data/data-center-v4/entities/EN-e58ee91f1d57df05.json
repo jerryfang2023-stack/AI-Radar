@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-03T03:38:21.560Z",
-    "latestDataDate": "2026-09-03",
-    "currentDate": "2026-09-03",
-    "eventCount": 2614,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-04T04:59:27.384Z",
+    "latestDataDate": "2026-09-04",
+    "currentDate": "2026-09-04",
+    "eventCount": 2642,
+    "quarantinedEventCount": 23
   },
   "entity": {
     "id": "EN-e58ee91f1d57df05",
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-3aadd182733359ee",
       "EV-625904809a9b14b8"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-07-20",
+    "lastSeen": "2026-09-04",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-3aadd182733359ee",
         "EV-625904809a9b14b8"
       ],
       "hardware": [],
@@ -42,6 +44,36 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-3aadd182733359ee",
+        "dataDate": "2026-09-04",
+        "date": "2026-09-03",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "VMware Explore 2026 将私有云置于 AI 核心位置",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-373ac021a2c0bb2c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-373ac021a2c0bb2c",
+          "EN-e58ee91f1d57df05",
+          "EN-6645ef506a12544f",
+          "EN-a623db26595ea09d"
+        ]
+      },
       {
         "id": "EV-625904809a9b14b8",
         "dataDate": "2026-07-20",

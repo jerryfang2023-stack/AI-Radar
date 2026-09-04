@@ -9,6 +9,24 @@ const args = new Map(process.argv.slice(2).map((arg) => {
   return [key, rest.join("=") || "true"];
 }));
 
+if (args.has("help") || args.has("h")) {
+  console.log([
+    "Usage: node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs [options]",
+    "",
+    "Runs one production monitor collection followed by the source-intake quality gate.",
+    "",
+    "Options:",
+    "  --date=YYYY-MM-DD                 Monitoring date (defaults to today)",
+    "  --quality-config=PATH             Source-intake quality configuration",
+    "  --use-source-artifacts=true       Replay existing source artifacts",
+    "  --source-artifact-dir=PATH        Directory containing replay artifacts",
+    "  --merge-existing-intake=true      Merge with the existing intake snapshot",
+    "  --monitor-timeout-ms=N            Monitor timeout in milliseconds",
+    "  --help, -h                        Show this help without starting collection",
+  ].join("\n"));
+  process.exit(0);
+}
+
 const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const configPath = args.get("quality-config") || path.join(root, "01-SiteV2", "content", "11-databases", "source-intake-gate-v1.json");

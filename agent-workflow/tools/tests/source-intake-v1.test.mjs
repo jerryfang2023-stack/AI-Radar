@@ -1,9 +1,11 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import {
+  applyIntakeTitleMetadata,
   buildSourceIntake,
   hasActiveHistoricalDuplicate,
   loadSourceIntakeEntries,
@@ -22,6 +24,22 @@ function writeJson(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, `${JSON.stringify(value)}\n`, "utf8");
 }
+
+test("monitor quality wrapper help exits before reading config or starting collection", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-monitor-help-"));
+  try {
+    const script = path.resolve("agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs");
+    const output = execFileSync(process.execPath, [script, "--help"], {
+      cwd: root,
+      encoding: "utf8",
+      timeout: 10_000,
+    });
+    assert.match(output, /Show this help without starting collection/u);
+    assert.equal(fs.existsSync(path.join(root, "agent-workflow")), false);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
 
 test("source title translation keys normalize spaced dash variants", () => {
   const hyphen = "Deploying and Scaling Enterprise AI Agents - Eloquent AI";
@@ -405,4 +423,112 @@ test("all discovery channels persist original-source fetch status for routed-poo
     /origin_fetch_status:\s*item\.acquisition_channel\s*===\s*["']aihot["']/u,
     "original-source fetch status must not be limited to AIHot discoveries",
   );
+});
+
+test("source-title backfill hydrates private evidence without mutating accepted public intake", () => {
+  const projectRoot = process.cwd();
+  const backfill = fs.readFileSync(
+    path.join(projectRoot, "agent-workflow/tools/backfill-source-title-translations.mjs"),
+    "utf8",
+  );
+  assert.match(backfill, /const capturedPayload = privateEvidence\?\.raw \|\| payload/u);
+  assert.doesNotMatch(backfill, /document\.title_original = repair\.sourceTitle/u);
+  assert.doesNotMatch(backfill, /row\.title_original = repair\.sourceTitle/u);
+
+  const acceptedDocument = {
+    title_original: "Wonderful Raises $550 Million Series C to Scale the AI Operating ...",
+    title_zh: "Wonderful 融资",
+    source_url: "https://wonderful.ai/example",
+    canonical_url: "https://wonderful.ai/example",
+    content_hash: "abc123",
+  };
+  const acceptedBefore = structuredClone(acceptedDocument);
+  const hydrated = applyIntakeTitleMetadata({
+    title: "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise",
+    title_zh: "Wonderful 完成 5.5 亿美元 C 轮融资，加速扩展企业 AI 操作系统",
+    clean_text: "source body",
+  }, acceptedDocument);
+
+  assert.equal(hydrated.title, "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise");
+  assert.equal(hydrated.title_zh, "Wonderful 完成 5.5 亿美元 C 轮融资，加速扩展企业 AI 操作系统");
+  assert.deepEqual(acceptedDocument, acceptedBefore);
+});
+
+test("source-title backfill updates private metadata while public intake and index stay byte-identical", () => {
+  const projectRoot = process.cwd();
+  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-title-backfill-public-"));
+  const privateRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-title-backfill-private-"));
+  const date = "2026-09-04";
+  const hash = "aa6b2aca03901a9f";
+  const truncated = "Wonderful Raises $550 Million Series C to Scale the AI Operating ...";
+  const complete = "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise";
+  const translated = "Wonderful 完成 5.5 亿美元 C 轮融资，以扩展企业级 AI 操作系统";
+  const snapshotRef = `01-SiteV2/content/01-raw/originals/${date}/r-001.json`;
+  const recordRef = `records/${date}/r-001.json`;
+  const objectRef = `objects/${hash.slice(0, 2)}/${hash}.txt`;
+  try {
+    writeJson(path.join(tempRoot, ".evidence-backup.json"), { backupRoot: privateRoot });
+    writeJson(path.join(privateRoot, "manifest.json"), { schemaVersion: "PRIVATE-EVIDENCE-STORE-V2.0" });
+    writeJson(path.join(privateRoot, recordRef), {
+      title: truncated,
+      original_url: "https://wonderful.ai/news",
+      canonical_url: "https://wonderful.ai/news",
+      content_hash: hash,
+    });
+    fs.mkdirSync(path.dirname(path.join(privateRoot, objectRef)), { recursive: true });
+    fs.writeFileSync(path.join(privateRoot, objectRef), `${complete}\nBody evidence.`, "utf8");
+    fs.writeFileSync(path.join(privateRoot, "catalog.jsonl"), `${JSON.stringify({
+      snapshot_ref: snapshotRef,
+      content_hash: hash,
+      evidence_ref: `evidence://${hash}`,
+      object_ref: objectRef,
+      record_ref: recordRef,
+      source_url: "https://wonderful.ai/news",
+      data_date: date,
+    })}\n`, "utf8");
+
+    const dateRoot = path.join(tempRoot, `01-SiteV2/content/11-databases/data-center-v4/${date}`);
+    writeJson(path.join(dateRoot, "raw-documents.json"), [{
+      raw_id: "RAW-1",
+      source_artifact_id: "SA-1",
+      title_original: truncated,
+      body_ref: `evidence://${hash}`,
+    }]);
+    writeJson(path.join(dateRoot, "source-artifacts.json"), [{
+      source_artifact_id: "SA-1",
+      snapshot_refs: [snapshotRef],
+    }]);
+    writeJson(path.join(dateRoot, "canonical-events.json"), []);
+    writeJson(path.join(tempRoot, "01-SiteV2/content/11-databases/source-title-translations.json"), {
+      version: "source-title-translations-v1",
+      translations: [{
+        sourceTitle: complete,
+        zhTitle: translated,
+        generatedBy: "deepseek_title_translation",
+        generatedModel: "deepseek-v4-flash",
+      }],
+    });
+    const intakeFile = path.join(tempRoot, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`);
+    writeJson(intakeFile, { raw_documents: [{ raw_id: "RAW-1", title_original: truncated }] });
+    const indexFile = path.join(tempRoot, "01-SiteV2/content/01-raw/source-index.jsonl");
+    fs.mkdirSync(path.dirname(indexFile), { recursive: true });
+    fs.writeFileSync(indexFile, `${JSON.stringify({ data_date: date, content_hash: hash, title_original: truncated })}\n`, "utf8");
+    const intakeBefore = fs.readFileSync(intakeFile);
+    const indexBefore = fs.readFileSync(indexFile);
+
+    execFileSync(process.execPath, [
+      path.join(projectRoot, "agent-workflow/tools/backfill-source-title-translations.mjs"),
+      `--date=${date}`,
+      "--write=true",
+    ], { cwd: tempRoot, encoding: "utf8", timeout: 10_000 });
+
+    assert.deepEqual(fs.readFileSync(intakeFile), intakeBefore);
+    assert.deepEqual(fs.readFileSync(indexFile), indexBefore);
+    const repairedPrivate = JSON.parse(fs.readFileSync(path.join(privateRoot, recordRef), "utf8"));
+    assert.equal(repairedPrivate.title, complete);
+    assert.equal(repairedPrivate.title_zh, translated);
+  } finally {
+    fs.rmSync(tempRoot, { recursive: true, force: true });
+    fs.rmSync(privateRoot, { recursive: true, force: true });
+  }
 });

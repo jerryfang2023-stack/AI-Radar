@@ -49,7 +49,7 @@ function decodeHtmlEntities(value = "") {
 
 function stripGeneratorNoise(value = "") {
   let text = decodeHtmlEntities(value)
-    .replace(/^["'`]+|["'`]+$/gu, "")
+    .replace(/^(["'`])([\s\S]*)\1$/u, "$2")
     .replace(/^(?:\u4e2d\u6587\u6807\u9898|\u8bd1\u6587|\u7ffb\u8bd1)[:\uff1a]\s*/u, "")
     .replace(/^SOURCE TITLE:\s*/iu, "")
     .replace(/\s+/gu, " ")
@@ -75,7 +75,9 @@ export function sourceTitleFromCapturedPayload(payload = {}) {
   const storedCandidates = [payload.title, payload.title_original]
     .map((value) => String(value || "").trim())
     .filter((value) => value && !sourceTitlePlaceholderPattern.test(value));
-  if (storedCandidates.length) return normalizeSourceTitleTranslation(storedCandidates[0]);
+  const storedTitle = normalizeSourceTitleTranslation(storedCandidates[0] || "");
+  const truncatedStoredTitle = /(?:\.\.\.|…)$/.test(storedTitle);
+  if (storedTitle && !truncatedStoredTitle) return storedTitle;
 
   const capturedText = String(
     payload.clean_text
@@ -91,10 +93,14 @@ export function sourceTitleFromCapturedPayload(payload = {}) {
       && line.length <= 240
       && !sourceTitlePlaceholderPattern.test(line)
       && !/^(?:home|blog|menu|share|sign in|log in|we['’]re hiring|no headings found)/iu.test(line)
+      && !/\s\/\s*(?:query|intent|path)=/iu.test(line)
     ));
-  if (!candidate) return "";
-  return normalizeSourceTitleTranslation(candidate
+  if (!candidate) return storedTitle;
+  const capturedTitle = normalizeSourceTitleTranslation(candidate
     .replace(/\s+-\s+(?:My Framer Site|Official (?:Site|Website)|Home)\s*$/iu, ""));
+  if (!storedTitle) return capturedTitle;
+  const storedPrefix = storedTitle.replace(/(?:\.\.\.|…)$/u, "").trim();
+  return capturedTitle.startsWith(storedPrefix) ? capturedTitle : storedTitle;
 }
 
 const moneyUnitFactors = new Map([
