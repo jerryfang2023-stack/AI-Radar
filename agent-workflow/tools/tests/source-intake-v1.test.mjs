@@ -388,3 +388,21 @@ test("AI Funding Tracker insights are enabled in the daily RSS collection lane",
     "same-day reruns must preserve previously accepted intake while current gates re-evaluate it",
   );
 });
+
+test("all discovery channels persist original-source fetch status for routed-pool gating", () => {
+  const projectRoot = process.cwd();
+  const monitor = fs.readFileSync(
+    path.join(projectRoot, "agent-workflow/tools/run-guanlan-daily-monitor.mjs"),
+    "utf8",
+  );
+  assert.match(
+    monitor,
+    /origin_fetch_status:\s*originFetchStatus\(item\.snapshot\)/u,
+    "RSS and keyword captures with readable source text must be eligible for routed-pool gating",
+  );
+  assert.doesNotMatch(
+    monitor,
+    /origin_fetch_status:\s*item\.acquisition_channel\s*===\s*["']aihot["']/u,
+    "original-source fetch status must not be limited to AIHot discoveries",
+  );
+});

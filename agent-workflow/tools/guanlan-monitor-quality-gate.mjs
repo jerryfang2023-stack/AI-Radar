@@ -155,6 +155,21 @@ function normalizeEvidenceStrength(value = "") {
   return evidenceStrengthOrder.includes(tier) ? tier : "unknown";
 }
 
+export function normalizedOriginFetchStatus(diagnostics = {}) {
+  const recorded = String(diagnostics.origin_fetch_status || "").trim().toLowerCase();
+  if (recorded) return { status: recorded, inferred: false };
+  const legacyReadableOriginal = ["rss-feed", "keyword-search", "funding-search", "gdelt"]
+    .includes(diagnostics.acquisition_channel)
+    && diagnostics.has_full_text === true
+    && ["high", "medium"].includes(String(diagnostics.extraction_quality || "").toLowerCase())
+    && diagnostics.evidence_object_usable === true
+    && ["allow", "allow_with_degradation"].includes(diagnostics.raw_qc_decision);
+  return {
+    status: legacyReadableOriginal ? "success" : "",
+    inferred: legacyReadableOriginal,
+  };
+}
+
 function formatEvidenceStrengthDistribution(distribution = {}) {
   const ordered = evidenceStrengthOrder
     .filter((key) => distribution[key])
@@ -167,6 +182,7 @@ function structuredIntakeItems(intake = null) {
   if (!intake?.payload?.raw_documents) return [];
   return intake.payload.raw_documents.map((document) => {
     const diagnostics = document.intake_diagnostics || {};
+    const originFetch = normalizedOriginFetchStatus(diagnostics);
     return {
       title: document.title_original || document.title_zh || "",
       sourceName: document.publisher || "",
@@ -183,7 +199,8 @@ function structuredIntakeItems(intake = null) {
       readabilityScore: Number(diagnostics.readability_score || 0),
       contentHash: document.content_hash || "",
       keyExcerpts: JSON.stringify(diagnostics.key_excerpts || []),
-      originFetchStatus: diagnostics.origin_fetch_status || "",
+      originFetchStatus: originFetch.status,
+      originFetchStatusInferred: originFetch.inferred,
       rawRef: document.raw_id || "",
       text: [
         document.title_original,
@@ -392,6 +409,7 @@ export function runGuanlanMonitorQualityGate({
   const poolCount = Number(structuredIntake?.payload?.counts?.eligible_documents || 0);
 
   const intakeItems = structuredIntakeItems(structuredIntake);
+  const inferredOriginFetchStatusCount = intakeItems.filter((item) => item.originFetchStatusInferred).length;
   const rawTitles = intakeItems.map((item) => item.title).filter(Boolean);
   const aiRelevantCount = rawTitles.filter((title) => isAIRelevant(title)).length;
   const offTopicCount = rawTitles.filter((title) => hasOffTopicSignal(title, offTopicPatterns) && !isAIRelevant(title)).length;
@@ -620,6 +638,7 @@ export function runGuanlanMonitorQualityGate({
       rawCount,
       poolCount,
       routedPoolCount,
+      inferredOriginFetchStatusCount,
       nonCommunityCount: keywordNonCommunityCount,
       aiRelevantRatio,
       offTopicCount,
@@ -719,6 +738,7 @@ export function runGuanlanMonitorQualityGate({
     `- pool_count: ${poolCount}`,
     `- pool_index_count: ${poolItems.length}`,
     `- routed_pool_count: ${routedPoolCount}`,
+    `- legacy_origin_fetch_status_inferred_count: ${inferredOriginFetchStatusCount}`,
     `- index_only_pool_count: ${indexOnlyPoolCount}`,
     `- aihot_index_only_count: ${aihotIndexOnlyCount}`,
     `- aihot_core_count: ${aihotCoreCount}`,
