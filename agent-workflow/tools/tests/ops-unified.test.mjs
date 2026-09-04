@@ -53,15 +53,15 @@ test("optional platform directories are scanned without claiming absent sources 
   assert.equal(counts.projectCount, 1);
 });
 
-test("console has seven primary modules plus two membership subpanels", () => {
+test("console has seven primary modules plus four membership subpanels", () => {
   const html = fs.readFileSync("01-SiteV2/site/operations-console.html", "utf8");
   const client = fs.readFileSync("01-SiteV2/site/assets/operations-console.js", "utf8");
   const data = JSON.parse(fs.readFileSync("01-SiteV2/site/data/ops-console.json", "utf8"));
   assert.equal(data.meta.version, OPS_VERSION);
   assert.equal(data.quality.telemetry.meta.ops_version, OPS_VERSION);
   assert.ok(html.includes(OPS_VERSION));
-  assert.deepEqual([...html.matchAll(/data-panel="([^"]+)"/gu)].map((match) => match[1]).sort(), ["analytics", "governance", "membership", "membership-approval", "membership-users", "overview", "quality", "settings", "skills"]);
-  assert.match(html, /data-membership-nav[^]*data-tab="membership-approval"[^]*data-tab="membership-users"/u);
+  assert.deepEqual([...html.matchAll(/data-panel="([^"]+)"/gu)].map((match) => match[1]).sort(), ["analytics", "governance", "membership", "membership-approval", "membership-community", "membership-schedule", "membership-users", "overview", "quality", "settings", "skills"]);
+  assert.match(html, /data-membership-nav[^]*data-tab="membership-community"[^]*data-tab="membership-approval"[^]*data-tab="membership-users"[^]*data-tab="membership-schedule"/u);
   assert.match(client, /membershipPanels[^]*membership:open[^]*detail: \{ view: state\.panel \}/u);
   assert.doesNotMatch(html, /data-tab="(?:issues|tasks)"|问题中心|任务链路/u);
   assert.doesNotMatch(client, /renderIssues|renderTasks|data-work-queue/u);

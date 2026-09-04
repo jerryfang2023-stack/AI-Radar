@@ -121,4 +121,47 @@ test("community approval loads only from its protected membership subpanel", asy
   assert.match(page, /data-panel="membership-users"[^]*小程序会员管理/u);
   assert.match(script, /延长会员权益[^]*调整可用积分/u);
   assert.doesNotMatch(page, /href="https:\/\/members\.zkdlj\.vip\/admin"/u);
+  assert.match(script, /通过申请[^]*不通过[^]*转为候补/u);
+  assert.match(script, /event\.submitter\?\.value/u);
+  assert.match(script, /data-mo-approval-status[^]*\.value = "all"/u);
+  assert.match(script, /审批已完成，已返回全部用户/u);
+});
+
+test("community member management shows cohort, lifecycle and Mini Program account state", async () => {
+  const h = harness();
+  h.root.listeners["membership:open"](new h.TestEvent("membership:open", { detail: { view: "membership-community" } }));
+  h.document.dispatchEvent(new h.TestEvent("operations:authenticated", { detail: { csrfToken: "csrf-token-with-enough-entropy" } }));
+  assert.equal(h.requests.length, 1);
+  const request = h.requests[0];
+  assert.match(request.url, /^\/ops\/member-api\/community-directory/);
+  await respond(request, {
+    schemaVersion: "COMMUNITY-MEMBER-ADMIN-V1.0", generatedAt: "2026-09-04T00:00:00Z",
+    cohorts: [2, 1], stateCounts: { not_joined: 1, joined: 1, eliminated: 1 },
+    page: { number: 1, size: 20, total: 1, totalPages: 1 },
+    members: [{ id: 88, name: "二期成员", city: "上海", company: "示例公司", role: "产品", status: "approved", cohort: 2, communityState: "joined", joinedOn: "2026-09-04", eliminatedOn: "", eliminationReason: "", points: 42, updatedAt: "2026-09-04T00:00:00Z", miniProgram: { accountOpened: true, userId: 7 } }],
+  });
+  assert.match(h.element("[data-mo-community-members]").innerHTML, /二期成员/);
+  assert.match(h.element("[data-mo-community-members]").innerHTML, /二期/);
+  assert.match(h.element("[data-mo-community-members]").innerHTML, /已入群/);
+  assert.match(h.element("[data-mo-community-members]").innerHTML, /已开通/);
+  assert.match(page, /data-tab="membership-community"[^]*社群成员管理/u);
+});
+
+test("phase two schedule is a protected subpanel with phase one archived", async () => {
+  const h = harness();
+  h.root.listeners["membership:open"](new h.TestEvent("membership:open", { detail: { view: "membership-schedule" } }));
+  h.document.dispatchEvent(new h.TestEvent("operations:authenticated", { detail: { csrfToken: "csrf-token-with-enough-entropy" } }));
+  assert.equal(h.requests.length, 1);
+  const request = h.requests[0];
+  assert.equal(request.url, "/ops/member-api/community-schedule");
+  await respond(request, {
+    schemaVersion: "COMMUNITY-SCHEDULE-V1.0", generatedAt: "2026-09-04T00:00:00Z", seasons: [
+      { season: 1, label: "一期", status: "completed", completedCount: 15, sessions: [] },
+      { season: 2, label: "二期", status: "planning", sessions: [] },
+    ],
+  });
+  assert.match(h.element("[data-mo-schedule-summary]").innerHTML, /一期/);
+  assert.match(h.element("[data-mo-schedule-summary]").innerHTML, /15 场/);
+  assert.match(h.element("[data-mo-schedule-list]").innerHTML, /二期尚未创建排期/);
+  assert.match(page, /data-tab="membership-schedule"[^]*活动排期管理/u);
 });

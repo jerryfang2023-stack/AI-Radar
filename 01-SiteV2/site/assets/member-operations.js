@@ -7,6 +7,8 @@
     application: "/ops/application-membership-summary",
     adminUsers: "/ops/member-api/users",
     communityApprovals: "/ops/member-api/community-members",
+    communityDirectory: "/ops/member-api/community-directory",
+    communitySchedule: "/ops/member-api/community-schedule",
   };
   const definitions = {
     community: [
@@ -38,6 +40,8 @@
   let days = 30, generation = 0, loaded = false, activeView = "membership";
   let adminCsrfToken = "", adminPage = 1, adminPages = 1, adminUsers = [], selectedUserId = null, adminLoaded = false;
   let approvalPage = 1, approvalPages = 1, approvalMembers = [], selectedApprovalId = null, approvalsLoaded = false;
+  let communityPage = 1, communityPages = 1, communityMembers = [], selectedCommunityId = null, communityLoaded = false;
+  let scheduleSessions = [], scheduleLoaded = false, selectedScheduleId = null;
   const controllers = new Map();
   const number = (value) => value == null ? "待接入" : new Intl.NumberFormat("zh-CN").format(value);
   const count = (value) => Number.isSafeInteger(value) && value >= 0;
@@ -114,12 +118,20 @@
   function resetAdminSession() {
     adminCsrfToken = ""; adminUsers = []; selectedUserId = null; adminLoaded = false;
     approvalMembers = []; selectedApprovalId = null; approvalsLoaded = false;
+    communityMembers = []; selectedCommunityId = null; communityLoaded = false;
+    scheduleSessions = []; selectedScheduleId = null; scheduleLoaded = false;
     $("[data-mo-admin-detail]").innerHTML = "";
     $("[data-mo-admin-state]").textContent = "";
     $("[data-mo-admin-users]").innerHTML = "";
     $("[data-mo-approval-detail]").innerHTML = "";
     $("[data-mo-approval-state]").textContent = "";
     $("[data-mo-approval-members]").innerHTML = "";
+    $("[data-mo-community-detail]").innerHTML = "";
+    $("[data-mo-community-status]").textContent = "";
+    $("[data-mo-community-members]").innerHTML = "";
+    $("[data-mo-schedule-list]").innerHTML = "";
+    $("[data-mo-schedule-editor]").innerHTML = "";
+    $("[data-mo-schedule-state]").textContent = "";
   }
   function adminFailure(message, expired = false) {
     $("[data-mo-admin-state]").textContent = message;
@@ -170,10 +182,97 @@
       adminUsers = adminUsers.map((item) => item.id === user.id ? user : item); renderAdminUsers(); renderAdminDetail(user); $("[data-mo-adjust-state]").textContent = "调整已保存并写入审计记录。";
     } catch (error) { state.textContent = error.message || "调整未成功"; } finally { button.disabled = false; }
   }
+  const communityStateLabels = { not_joined: "未入群", joined: "已入群", eliminated: "已淘汰" };
+  const cohortLabel = (value) => (["", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"][value] ? ["", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"][value] + "期" : "第 " + value + " 期");
+  function safeCommunityMember(item) {
+    if (!Number.isSafeInteger(item?.id) || item.id < 1 || typeof item.name !== "string" || !Number.isSafeInteger(item.cohort) || !Object.hasOwn(communityStateLabels, item.communityState) || !Number.isSafeInteger(item.points) || typeof item.miniProgram?.accountOpened !== "boolean") return null;
+    return {
+      ...item,
+      name: item.name.slice(0, 80), city: String(item.city || "").slice(0, 100), company: String(item.company || "").slice(0, 200), role: String(item.role || "").slice(0, 80),
+      joinedOn: String(item.joinedOn || ""), eliminatedOn: String(item.eliminatedOn || ""), eliminationReason: String(item.eliminationReason || "").slice(0, 300), updatedAt: String(item.updatedAt || ""),
+      miniProgram: { accountOpened: item.miniProgram.accountOpened, userId: Number.isSafeInteger(item.miniProgram.userId) ? item.miniProgram.userId : null },
+    };
+  }
+  function communityFailure(message, expired = false) {
+    $("[data-mo-community-status]").textContent = message;
+    $("[data-mo-community-members]").innerHTML = '<tr><td colspan="7"><div class="mo-empty">' + escape(message) + '</div></td></tr>';
+    if (expired) {
+      resetAdminSession();
+      document.dispatchEvent(new CustomEvent("operations:session-expired", { detail: { message } }));
+    }
+  }
+  function renderCommunityMembers() {
+    $("[data-mo-community-members]").innerHTML = communityMembers.length ? communityMembers.map((member) => '<tr><td><span class="mo-user-name">' + escape(member.name) + '</span><span class="mo-user-meta">#' + member.id + ' · ' + escape(member.city || member.role) + '</span></td><td><span class="mo-badge">' + cohortLabel(member.cohort) + '</span></td><td><span class="mo-badge mo-state-' + member.communityState + '">' + communityStateLabels[member.communityState] + '</span><span class="mo-user-meta">' + (member.communityState === "eliminated" ? escape(member.eliminationReason || "未记录原因") : member.joinedOn ? "入群 " + escape(member.joinedOn) : "") + '</span></td><td><span class="mo-badge">' + (member.miniProgram.accountOpened ? "已开通" : "未开通") + '</span><span class="mo-user-meta">' + (member.miniProgram.userId ? "用户 #" + member.miniProgram.userId : "") + '</span></td><td>' + number(member.points) + '</td><td>' + date(member.updatedAt) + '</td><td><button type="button" data-mo-community-id="' + member.id + '">管理</button></td></tr>').join("") : '<tr><td colspan="7"><div class="mo-empty">没有符合条件的社群成员。</div></td></tr>';
+    $("[data-mo-community-page]").textContent = "第 " + communityPage + " / " + communityPages + " 页";
+    $("[data-mo-community-prev]").disabled = communityPage <= 1;
+    $("[data-mo-community-next]").disabled = communityPage >= communityPages;
+  }
+  function renderCohortOptions(cohorts) {
+    const select = $("[data-mo-community-cohort]"), current = select.value;
+    select.innerHTML = '<option value="all">全部期数</option>' + cohorts.map((value) => '<option value="' + value + '">' + cohortLabel(value) + '</option>').join("");
+    select.value = current === "all" || cohorts.map(String).includes(current) ? current : "all";
+  }
+  async function loadCommunityMembers() {
+    if (!adminCsrfToken) return;
+    const query = encodeURIComponent($("[data-mo-community-query]").value || ""), cohort = encodeURIComponent($("[data-mo-community-cohort]").value || "all"), state = encodeURIComponent($("[data-mo-community-state]").value || "all");
+    $("[data-mo-community-status]").textContent = "正在读取社群成员…";
+    $("[data-mo-community-members]").innerHTML = '<tr><td colspan="7"><div class="mo-empty">正在加载成员数据…</div></td></tr>';
+    try {
+      const response = await fetch(endpoints.communityDirectory + "?query=" + query + "&cohort=" + cohort + "&state=" + state + "&page=" + communityPage + "&pageSize=20", { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      if (response.status === 401 || response.status === 503) return communityFailure("管理员会话已失效或社群服务未配置，请重新验证。", true);
+      const payload = await response.json();
+      if (!response.ok) throw new Error(String(payload?.error?.message || "社群成员暂不可用").slice(0, 120));
+      if (payload?.schemaVersion !== "COMMUNITY-MEMBER-ADMIN-V1.0" || !Array.isArray(payload.members) || !Array.isArray(payload.cohorts) || !Number.isSafeInteger(payload.page?.totalPages)) throw new Error("成员数据校验失败");
+      const members = payload.members.map(safeCommunityMember); if (members.some((item) => !item)) throw new Error("成员数据校验失败");
+      communityMembers = members; communityPage = payload.page.number; communityPages = Math.max(1, payload.page.totalPages); communityLoaded = true;
+      renderCohortOptions(payload.cohorts.filter((value) => Number.isSafeInteger(value) && value > 0));
+      $("[data-mo-community-status]").textContent = "共 " + payload.page.total + " 人 · 已入群 " + Number(payload.stateCounts?.joined || 0) + " · 未入群 " + Number(payload.stateCounts?.not_joined || 0) + " · 已淘汰 " + Number(payload.stateCounts?.eliminated || 0);
+      renderCommunityMembers();
+    } catch (error) { communityFailure(error.message || "社群成员暂不可用"); }
+  }
+  function renderCommunityDetail(member) {
+    selectedCommunityId = member.id;
+    const profile = [
+      ["城市", member.city], ["角色", member.role], ["公司", member.company], ["微信", member.wechat], ["联系方式", member.contact],
+      ["行业", member.industry], ["核心能力", member.skills], ["当前项目", member.project], ["核心诉求", member.needs], ["创业方向", member.direction],
+    ].map(([label, value]) => detailValue(label, value)).join("");
+    $("[data-mo-community-detail]").innerHTML = '<section class="mo-approval-detail"><header><div><span class="kicker">MEMBER #' + member.id + '</span><h2>' + escape(member.name) + '</h2></div><div class="mo-detail-badges"><span class="mo-badge">' + cohortLabel(member.cohort) + '</span><span class="mo-badge mo-state-' + member.communityState + '">' + communityStateLabels[member.communityState] + '</span><span class="mo-badge">小程序' + (member.miniProgram.accountOpened ? "已开通" : "未开通") + '</span></div></header><dl class="mo-approval-profile">' + profile + '</dl><form class="mo-community-form" data-mo-community-manage><div class="mo-review-row"><label>期数<input type="number" name="cohort" min="1" max="99" value="' + member.cohort + '" required></label><label>社群状态<select name="state"><option value="not_joined">未入群</option><option value="joined">已入群</option><option value="eliminated">已淘汰</option></select></label><label>入群日期<input type="date" name="joinedOn" max="' + new Date().toISOString().slice(0, 10) + '" value="' + escape(member.joinedOn) + '"></label></div><label>淘汰原因<textarea name="eliminationReason" maxlength="300" placeholder="仅标记淘汰时必填">' + escape(member.eliminationReason) + '</textarea></label><div class="mo-review-actions"><button type="submit">保存成员状态</button></div><p class="mo-admin-state" data-mo-community-manage-state role="status" aria-live="polite"></p></form></section>';
+    $("[data-mo-community-manage] [name=state]").value = member.communityState;
+  }
+  async function loadCommunityDetail(memberId) {
+    $("[data-mo-community-detail]").innerHTML = '<div class="mo-empty">正在读取成员资料…</div>';
+    try {
+      const response = await fetch(endpoints.communityDirectory + "/" + memberId, { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      const payload = await response.json();
+      if (response.status === 401 || response.status === 503) return communityFailure("管理员会话已失效，请重新验证。", true);
+      if (!response.ok) throw new Error(String(payload?.error?.message || "成员资料暂不可用").slice(0, 120));
+      const member = safeCommunityMember(payload.member);
+      if (payload?.schemaVersion !== "COMMUNITY-MEMBER-ADMIN-V1.0" || !member || typeof member.contact !== "string") throw new Error("成员资料校验失败");
+      renderCommunityDetail(member);
+    } catch (error) { $("[data-mo-community-detail]").innerHTML = '<div class="mo-empty">' + escape(error.message || "成员资料暂不可用") + '</div>'; }
+  }
+  async function submitCommunityManagement(form) {
+    const stateNode = $("[data-mo-community-manage-state]"), data = new FormData(form), button = form.querySelector("button");
+    const body = {
+      operationId: globalThis.crypto?.randomUUID?.() || ("community-manage-" + Date.now().toString(36)),
+      cohort: Number(data.get("cohort")), state: String(data.get("state") || "not_joined"), joinedOn: String(data.get("joinedOn") || ""), eliminationReason: String(data.get("eliminationReason") || "").trim(),
+    };
+    if (body.state === "joined" && !body.joinedOn) { stateNode.textContent = "标记已入群时，请填写入群日期。"; return; }
+    if (body.state === "eliminated" && body.eliminationReason.length < 2) { stateNode.textContent = "标记淘汰时，请填写原因。"; return; }
+    button.disabled = true; stateNode.textContent = "正在保存…";
+    try {
+      const response = await fetch(endpoints.communityDirectory + "/" + selectedCommunityId + "/management", { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
+      const payload = await response.json();
+      if (response.status === 401 || response.status === 403 || response.status === 503) return communityFailure("管理员会话已失效，请重新验证。", true);
+      if (!response.ok) throw new Error(String(payload?.error?.message || "成员状态未保存").slice(0, 120));
+      const member = safeCommunityMember(payload.member); if (payload?.schemaVersion !== "COMMUNITY-MEMBER-ADMIN-V1.0" || !member) throw new Error("保存结果校验失败");
+      await loadCommunityMembers(); renderCommunityDetail(member); $("[data-mo-community-manage-state]").textContent = "成员状态已保存。";
+    } catch (error) { stateNode.textContent = error.message || "成员状态未保存"; } finally { button.disabled = false; }
+  }
   const approvalStatusLabels = { pending: "待审核", approved: "已通过", waitlist: "候补", rejected: "暂不邀请" };
   function safeApprovalMember(item) {
     if (!Number.isSafeInteger(item?.id) || item.id < 1 || typeof item.name !== "string" || typeof item.city !== "string" || !Object.hasOwn(approvalStatusLabels, item.status) || !Number.isSafeInteger(item.totalScore)) return null;
-    return { id: item.id, name: item.name.slice(0, 80), city: item.city.slice(0, 100), company: String(item.company || "").slice(0, 200), role: String(item.role || "").slice(0, 80), status: item.status, totalScore: item.totalScore, joinedOn: String(item.joinedOn || ""), createdAt: String(item.createdAt || ""), updatedAt: String(item.updatedAt || "") };
+    return { id: item.id, name: item.name.slice(0, 80), city: item.city.slice(0, 100), company: String(item.company || "").slice(0, 200), role: String(item.role || "").slice(0, 80), status: item.status, cohort: Number.isSafeInteger(item.cohort) ? item.cohort : 1, totalScore: item.totalScore, joinedOn: String(item.joinedOn || ""), createdAt: String(item.createdAt || ""), updatedAt: String(item.updatedAt || "") };
   }
   function approvalFailure(message, expired = false) {
     $("[data-mo-approval-state]").textContent = message;
@@ -216,8 +315,9 @@
       ["核心诉求", member.needs], ["希望交流对象", member.connectTargets], ["创业方向", member.direction], ["创业判断", member.perspective],
       ["参与意愿", member.activities], ["补充", member.extra],
     ].map(([label, value]) => detailValue(label, value)).join("");
-    $("[data-mo-approval-detail]").innerHTML = '<section class="mo-approval-detail"><header><div><span class="kicker">APPLICATION #' + member.id + '</span><h2>' + escape(member.name) + '</h2><p>' + escape(member.city + " · " + member.role + (member.company ? " · " + member.company : "")) + '</p></div><span class="mo-badge">' + approvalStatusLabels[member.status] + '</span></header><dl class="mo-approval-profile">' + profile + '</dl><form class="mo-review-form" data-mo-review><div class="mo-review-row"><label>审批状态<select name="status"><option value="pending">待审核</option><option value="approved">已通过</option><option value="waitlist">候补</option><option value="rejected">暂不邀请</option></select></label><label>正式入群日期<input type="date" name="joinedOn" max="' + new Date().toISOString().slice(0, 10) + '" value="' + escape(member.joinedOn) + '"></label><label>审核备注<textarea name="reviewNotes" maxlength="3000" placeholder="记录判断与后续事项">' + escape(member.reviewNotes) + '</textarea></label></div><div class="mo-score-fields"><label>AI 能力 / 30<input type="number" name="ai" min="0" max="30" value="' + scores.ai + '" required></label><label>行业资源 / 25<input type="number" name="industry" min="0" max="25" value="' + scores.industry + '" required></label><label>创业意愿 / 25<input type="number" name="entrepreneurship" min="0" max="25" value="' + scores.entrepreneurship + '" required></label><label>贡献潜力 / 15<input type="number" name="contribution" min="0" max="15" value="' + scores.contribution + '" required></label><label>社群契合 / 5<input type="number" name="fit" min="0" max="5" value="' + scores.fit + '" required></label></div><label class="mo-review-check"><input type="checkbox" name="hideCompanyInDirectory" ' + (member.hideCompanyInDirectory ? "checked" : "") + '>在会员公开页面隐藏公司</label><div class="mo-review-actions"><button type="submit">保存审批</button></div><p class="mo-admin-state" data-mo-review-state role="status" aria-live="polite"></p></form></section>';
-    $("[data-mo-review] [name=status]").value = member.status;
+    const cohort = member.status === "pending" ? 2 : member.cohort;
+    $("[data-mo-approval-detail]").innerHTML = '<section class="mo-approval-detail"><header><div><span class="kicker">APPLICATION #' + member.id + '</span><h2>' + escape(member.name) + '</h2><p>' + escape(member.city + " · " + member.role + (member.company ? " · " + member.company : "")) + '</p></div><span class="mo-badge">' + approvalStatusLabels[member.status] + '</span></header><form class="mo-review-form" data-mo-review><div class="mo-decision-bar" aria-label="审批操作"><button type="submit" name="decision" value="approved" class="mo-approve">通过申请</button><button type="submit" name="decision" value="rejected" class="mo-reject">不通过</button><button type="submit" name="decision" value="waitlist" class="mo-secondary">转为候补</button></div><div class="mo-review-row mo-review-row-compact"><label>归属期数<input type="number" name="cohort" min="1" max="99" value="' + cohort + '" required></label><label>审核备注<textarea name="reviewNotes" maxlength="3000" placeholder="可选：记录判断与后续事项">' + escape(member.reviewNotes) + '</textarea></label></div><details class="mo-review-more"><summary>评分与展示设置</summary><div class="mo-score-fields"><label>AI 能力 / 30<input type="number" name="ai" min="0" max="30" value="' + scores.ai + '" required></label><label>行业资源 / 25<input type="number" name="industry" min="0" max="25" value="' + scores.industry + '" required></label><label>创业意愿 / 25<input type="number" name="entrepreneurship" min="0" max="25" value="' + scores.entrepreneurship + '" required></label><label>贡献潜力 / 15<input type="number" name="contribution" min="0" max="15" value="' + scores.contribution + '" required></label><label>社群契合 / 5<input type="number" name="fit" min="0" max="5" value="' + scores.fit + '" required></label></div><label class="mo-review-check"><input type="checkbox" name="hideCompanyInDirectory" ' + (member.hideCompanyInDirectory ? "checked" : "") + '>在会员公开页面隐藏公司</label></details><p class="mo-admin-state" data-mo-review-state role="status" aria-live="polite"></p></form><dl class="mo-approval-profile">' + profile + '</dl></section>';
+    $("[data-mo-approval-detail]").scrollIntoView({ behavior: "smooth", block: "start" });
   }
   async function loadApprovalDetail(memberId) {
     $("[data-mo-approval-detail]").innerHTML = '<div class="mo-empty">正在读取申请详情…</div>';
@@ -231,25 +331,83 @@
       renderApprovalDetail(member);
     } catch (error) { $("[data-mo-approval-detail]").innerHTML = '<div class="mo-empty">' + escape(error.message || "申请详情暂不可用") + '</div>'; }
   }
-  async function submitApprovalReview(form) {
-    const state = $("[data-mo-review-state]"), data = new FormData(form), button = form.querySelector("button");
+  async function submitApprovalReview(form, decision) {
+    const state = $("[data-mo-review-state]"), data = new FormData(form), buttons = [...form.querySelectorAll("button[type=submit]")];
     const body = {
       operationId: globalThis.crypto?.randomUUID?.() || ("community-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2)),
-      status: String(data.get("status") || "pending"), joinedOn: String(data.get("joinedOn") || ""), reviewNotes: String(data.get("reviewNotes") || "").trim(),
+      status: String(decision || "pending"), cohort: Number(data.get("cohort")), reviewNotes: String(data.get("reviewNotes") || "").trim(),
       hideCompanyInDirectory: data.get("hideCompanyInDirectory") === "on",
       scores: { ai: Number(data.get("ai")), industry: Number(data.get("industry")), entrepreneurship: Number(data.get("entrepreneurship")), contribution: Number(data.get("contribution")), fit: Number(data.get("fit")) },
     };
-    button.disabled = true; state.textContent = "正在保存审批…";
+    buttons.forEach((button) => { button.disabled = true; }); state.textContent = "正在提交审批…";
     try {
       const response = await fetch(endpoints.communityApprovals + "/" + selectedApprovalId + "/reviews", { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
       const payload = await response.json();
       if (response.status === 401 || response.status === 403 || response.status === 503) return approvalFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "审批未保存").slice(0, 120));
       if (payload?.schemaVersion !== "COMMUNITY-APPROVAL-V1.0" || !safeApprovalMember(payload.member)) throw new Error("审批结果校验失败");
-      renderApprovalDetail(payload.member);
+      selectedApprovalId = null; $("[data-mo-approval-detail]").innerHTML = "";
+      $("[data-mo-approval-query]").value = ""; $("[data-mo-approval-status]").value = "all"; approvalPage = 1;
       await loadApprovals();
-      $("[data-mo-review-state]").textContent = "审批已保存并写入审计记录。";
-    } catch (error) { state.textContent = error.message || "审批未保存"; } finally { button.disabled = false; }
+      $("[data-mo-approval-state]").textContent = "审批已完成，已返回全部用户。";
+      $("[data-mo-approval-search-form]").scrollIntoView({ behavior: "smooth", block: "start" });
+      $("[data-mo-approval-query]").focus();
+    } catch (error) { state.textContent = error.message || "审批未保存"; } finally { buttons.forEach((button) => { button.disabled = false; }); }
+  }
+  const scheduleStatusLabels = { pending: "待确认", confirmed: "已确认", completed: "已完成", cancelled: "已取消" };
+  function safeScheduleSession(item) {
+    if (typeof item?.id !== "string" || !Object.hasOwn(scheduleStatusLabels, item.status) || typeof item.title !== "string" || !Array.isArray(item.speakers)) return null;
+    const speakers = item.speakers.map((speaker) => ({ name: String(speaker?.name || "").slice(0, 60), focus: String(speaker?.focus || "").slice(0, 120) })).filter((speaker) => speaker.name);
+    return { id: item.id.slice(0, 16), date: String(item.date || ""), status: item.status, title: item.title.slice(0, 120), category: String(item.category || "").slice(0, 60), notes: String(item.notes || "").slice(0, 1000), speakers, updatedAt: String(item.updatedAt || "") };
+  }
+  function renderScheduleList() {
+    $("[data-mo-schedule-list]").innerHTML = scheduleSessions.length ? '<div class="mo-schedule-list">' + scheduleSessions.map((session) => '<article class="mo-schedule-item"><div><span class="mo-badge">' + scheduleStatusLabels[session.status] + '</span><time>' + escape(session.date || "日期待定") + '</time><h3>' + escape(session.title) + '</h3><p>' + escape(session.speakers.map((speaker) => speaker.name).join("、") || "嘉宾待定") + '</p></div><button type="button" class="mo-secondary" data-mo-schedule-id="' + escape(session.id) + '">编辑</button></article>').join("") + '</div>' : '<div class="mo-empty">二期尚未创建排期。</div>';
+  }
+  function renderScheduleEditor(session = null) {
+    selectedScheduleId = session?.id || null;
+    const speakers = session?.speakers?.map((speaker) => speaker.name + (speaker.focus ? "｜" + speaker.focus : "")).join("\n") || "";
+    $("[data-mo-schedule-editor]").innerHTML = '<form class="mo-schedule-editor" data-mo-schedule-form><header><h2>' + (session ? "编辑 " + escape(session.id) : "新增二期排期") + '</h2><button type="button" class="mo-secondary" data-mo-schedule-cancel>取消</button></header><div class="mo-schedule-fields"><label>日期<input type="date" name="date" value="' + escape(session?.date || "") + '"></label><label>状态<select name="status"><option value="pending">待确认</option><option value="confirmed">已确认</option><option value="completed">已完成</option><option value="cancelled">已取消</option></select></label><label>标题<input name="title" maxlength="120" required value="' + escape(session?.title || "") + '" placeholder="如：二期首场主题分享"></label><label>分类<input name="category" maxlength="60" value="' + escape(session?.category || "") + '" placeholder="可选"></label></div><label>嘉宾<textarea name="speakers" placeholder="每行一位：姓名｜分享方向">' + escape(speakers) + '</textarea></label><label>备注<textarea name="notes" maxlength="1000" placeholder="可选">' + escape(session?.notes || "") + '</textarea></label><div class="mo-review-actions"><button type="submit">保存排期</button></div><p class="mo-admin-state" data-mo-schedule-save-state role="status" aria-live="polite"></p></form>';
+    $("[data-mo-schedule-form] [name=status]").value = session?.status || "pending";
+    $("[data-mo-schedule-form] [name=title]").focus();
+  }
+  async function loadSchedule() {
+    if (!adminCsrfToken) return;
+    $("[data-mo-schedule-state]").textContent = "正在读取排期…";
+    $("[data-mo-schedule-list]").innerHTML = '<div class="mo-empty">正在加载二期排期…</div>';
+    try {
+      const response = await fetch(endpoints.communitySchedule, { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      const payload = await response.json();
+      if (response.status === 401 || response.status === 503) return communityFailure("管理员会话已失效或社群服务未配置，请重新验证。", true);
+      if (!response.ok) throw new Error(String(payload?.error?.message || "排期暂不可用").slice(0, 120));
+      if (payload?.schemaVersion !== "COMMUNITY-SCHEDULE-V1.0" || !Array.isArray(payload.seasons)) throw new Error("排期数据校验失败");
+      const seasonOne = payload.seasons.find((season) => season.season === 1), seasonTwo = payload.seasons.find((season) => season.season === 2);
+      if (!seasonOne || !seasonTwo || !Array.isArray(seasonTwo.sessions)) throw new Error("排期数据校验失败");
+      const sessions = seasonTwo.sessions.map(safeScheduleSession); if (sessions.some((item) => !item)) throw new Error("排期数据校验失败");
+      scheduleSessions = sessions; scheduleLoaded = true;
+      $("[data-mo-schedule-summary]").innerHTML = '<article><span class="kicker">一期</span><strong>已完成</strong><p>' + Number(seasonOne.completedCount || 0) + ' 场</p></article>';
+      $("[data-mo-schedule-state]").textContent = "共 " + scheduleSessions.length + " 场";
+      renderScheduleList();
+      if (selectedScheduleId) { const selected = scheduleSessions.find((item) => item.id === selectedScheduleId); if (selected) renderScheduleEditor(selected); }
+    } catch (error) {
+      $("[data-mo-schedule-state]").textContent = error.message || "排期暂不可用";
+      $("[data-mo-schedule-list]").innerHTML = '<div class="mo-empty">' + escape(error.message || "排期暂不可用") + '</div>';
+    }
+  }
+  async function submitSchedule(form) {
+    const data = new FormData(form), stateNode = $("[data-mo-schedule-save-state]"), button = form.querySelector("button[type=submit]");
+    const speakers = String(data.get("speakers") || "").split(/\r?\n/).map((line) => line.trim()).filter(Boolean).map((line) => { const parts = line.split(/[｜|]/, 2); return { name: parts[0].trim(), focus: (parts[1] || "").trim() }; });
+    const body = { operationId: globalThis.crypto?.randomUUID?.() || ("schedule-" + Date.now().toString(36)), date: String(data.get("date") || ""), status: String(data.get("status") || "pending"), title: String(data.get("title") || "").trim(), category: String(data.get("category") || "").trim(), notes: String(data.get("notes") || "").trim(), speakers };
+    if (["confirmed", "completed"].includes(body.status) && !body.date) { stateNode.textContent = "确认或完成排期时，请填写日期。"; return; }
+    button.disabled = true; stateNode.textContent = "正在保存…";
+    const target = endpoints.communitySchedule + "/season-2/sessions" + (selectedScheduleId ? "/" + encodeURIComponent(selectedScheduleId) : "");
+    try {
+      const response = await fetch(target, { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
+      const payload = await response.json();
+      if (response.status === 401 || response.status === 403 || response.status === 503) return communityFailure("管理员会话已失效，请重新验证。", true);
+      if (!response.ok) throw new Error(String(payload?.error?.message || "排期未保存").slice(0, 120));
+      if (payload?.schemaVersion !== "COMMUNITY-SCHEDULE-V1.0" || !safeScheduleSession(payload.session)) throw new Error("排期结果校验失败");
+      selectedScheduleId = null; $("[data-mo-schedule-editor]").innerHTML = ""; await loadSchedule(); $("[data-mo-schedule-state]").textContent = "排期已保存。";
+    } catch (error) { stateNode.textContent = error.message || "排期未保存"; } finally { button.disabled = false; }
   }
   $("[data-mo-days]").addEventListener("change", (event) => {
     const value = Number(event.target.value);
@@ -263,24 +421,39 @@
   $("[data-mo-admin-next]").addEventListener("click", () => { if (adminPage < adminPages) { adminPage += 1; void loadAdminUsers(); } });
   $("[data-mo-admin-users]").addEventListener("click", (event) => { const button = event.target.closest("[data-mo-user-id]"); if (!button) return; const user = adminUsers.find((item) => item.id === Number(button.dataset.moUserId)); if (user) renderAdminDetail(user); });
   $("[data-mo-admin-detail]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-adjust]"); if (!form) return; event.preventDefault(); void submitAdjustment(form); });
+  $("[data-mo-community-search-form]").addEventListener("submit", (event) => { event.preventDefault(); communityPage = 1; void loadCommunityMembers(); });
+  $("[data-mo-community-cohort]").addEventListener("change", () => { communityPage = 1; void loadCommunityMembers(); });
+  $("[data-mo-community-state]").addEventListener("change", () => { communityPage = 1; void loadCommunityMembers(); });
+  $("[data-mo-community-prev]").addEventListener("click", () => { if (communityPage > 1) { communityPage -= 1; void loadCommunityMembers(); } });
+  $("[data-mo-community-next]").addEventListener("click", () => { if (communityPage < communityPages) { communityPage += 1; void loadCommunityMembers(); } });
+  $("[data-mo-community-members]").addEventListener("click", (event) => { const button = event.target.closest("[data-mo-community-id]"); if (button) void loadCommunityDetail(Number(button.dataset.moCommunityId)); });
+  $("[data-mo-community-detail]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-community-manage]"); if (!form) return; event.preventDefault(); void submitCommunityManagement(form); });
   $("[data-mo-approval-search-form]").addEventListener("submit", (event) => { event.preventDefault(); approvalPage = 1; void loadApprovals(); });
   $("[data-mo-approval-status]").addEventListener("change", () => { approvalPage = 1; void loadApprovals(); });
   $("[data-mo-approval-prev]").addEventListener("click", () => { if (approvalPage > 1) { approvalPage -= 1; void loadApprovals(); } });
   $("[data-mo-approval-next]").addEventListener("click", () => { if (approvalPage < approvalPages) { approvalPage += 1; void loadApprovals(); } });
   $("[data-mo-approval-members]").addEventListener("click", (event) => { const button = event.target.closest("[data-mo-approval-id]"); if (button) void loadApprovalDetail(Number(button.dataset.moApprovalId)); });
-  $("[data-mo-approval-detail]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-review]"); if (!form) return; event.preventDefault(); void submitApprovalReview(form); });
+  $("[data-mo-approval-detail]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-review]"); if (!form) return; event.preventDefault(); void submitApprovalReview(form, event.submitter?.value); });
+  $("[data-mo-schedule-new]").addEventListener("click", () => renderScheduleEditor());
+  $("[data-mo-schedule-list]").addEventListener("click", (event) => { const button = event.target.closest("[data-mo-schedule-id]"); if (!button) return; const session = scheduleSessions.find((item) => item.id === button.dataset.moScheduleId); if (session) renderScheduleEditor(session); });
+  $("[data-mo-schedule-editor]").addEventListener("click", (event) => { if (event.target.closest("[data-mo-schedule-cancel]")) { selectedScheduleId = null; $("[data-mo-schedule-editor]").innerHTML = ""; } });
+  $("[data-mo-schedule-editor]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-schedule-form]"); if (!form) return; event.preventDefault(); void submitSchedule(form); });
   root.addEventListener("membership:open", (event) => {
-    activeView = ["membership", "membership-approval", "membership-users"].includes(event?.detail?.view) ? event.detail.view : "membership";
+    activeView = ["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule"].includes(event?.detail?.view) ? event.detail.view : "membership";
     if (activeView === "membership" && !loaded) refresh();
     if (activeView === "membership-users" && adminCsrfToken && !adminLoaded) void loadAdminUsers();
+    if (activeView === "membership-community" && adminCsrfToken && !communityLoaded) void loadCommunityMembers();
     if (activeView === "membership-approval" && adminCsrfToken && !approvalsLoaded) void loadApprovals();
+    if (activeView === "membership-schedule" && adminCsrfToken && !scheduleLoaded) void loadSchedule();
   });
   document.addEventListener("operations:authenticated", (event) => {
     const token = String(event.detail?.csrfToken || "");
     if (token.length < 20) return;
-    adminCsrfToken = token; adminPage = 1; adminLoaded = false; approvalPage = 1; approvalsLoaded = false;
+    adminCsrfToken = token; adminPage = 1; adminLoaded = false; approvalPage = 1; approvalsLoaded = false; communityPage = 1; communityLoaded = false; scheduleLoaded = false;
     if (activeView === "membership-users") void loadAdminUsers();
+    if (activeView === "membership-community") void loadCommunityMembers();
     if (activeView === "membership-approval") void loadApprovals();
+    if (activeView === "membership-schedule") void loadSchedule();
   });
   document.addEventListener("operations:logout", resetAdminSession);
 })();

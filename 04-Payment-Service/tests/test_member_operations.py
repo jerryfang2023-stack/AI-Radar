@@ -181,6 +181,72 @@ def test_admin_session_proxies_community_member_approval(client):
     assert preflight.status_code == 204
 
 
+def test_admin_manages_community_lifecycle_and_phase_two_schedule(client):
+    _, headers = admin_login(client)
+    directory = "/api/v1/admin/analytics/membership/community-directory"
+
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        now = datetime.now(timezone.utc).isoformat()
+        conn.execute(
+            """INSERT INTO users(
+                openid, nickname, community_member_id, community_name, community_status,
+                trial_started_at, trial_ends_at, created_at, updated_at
+            ) VALUES(?,?,?,?,?,?,?,?,?)""",
+            ("openid-linked-member", "二期成员", 88, "二期成员", "approved", now, now, now, now),
+        )
+        user_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+        conn.execute(
+            "INSERT INTO user_identities(user_id, identity_type, identity_hash, identity_masked, verified_at, created_at) VALUES(?,?,?,?,?,?)",
+            (user_id, "wechat_openid", "linked-member-hash", "微信用户", now, now),
+        )
+        conn.commit()
+
+    listed = client.get(directory + "?cohort=2&state=joined", headers=headers)
+    assert listed.status_code == 200
+    assert listed.get_json()["members"][0]["miniProgram"] == {
+        "accountOpened": True, "userId": user_id,
+    }
+    detail = client.get(directory + "/88", headers=headers)
+    assert detail.get_json()["member"]["miniProgram"]["accountOpened"] is True
+
+    management = {
+        "operationId": "community-manage-ops01",
+        "cohort": 2,
+        "state": "eliminated",
+        "joinedOn": "2026-09-04",
+        "eliminationReason": "长期不活跃",
+    }
+    assert client.post(directory + "/88/management", json=management).status_code == 401
+    assert client.post(
+        directory + "/88/management",
+        headers={"Authorization": headers["Authorization"]},
+        json=management,
+    ).status_code == 403
+    managed = client.post(directory + "/88/management", headers=headers, json=management)
+    assert managed.status_code == 200
+    forwarded = client.application.community_client.operations_member_management[0]
+    assert forwarded["actorHash"] and "operator@example.com" not in forwarded["actorHash"]
+
+    schedule = "/api/v1/admin/analytics/membership/community-schedule"
+    assert client.get(schedule, headers=headers).get_json()["seasons"][0]["completedCount"] == 15
+    session = {
+        "operationId": "schedule-season2-ops01",
+        "date": "2026-09-12",
+        "status": "confirmed",
+        "title": "二期首场",
+        "speakers": [{"name": "测试嘉宾", "focus": "AI 产品"}],
+    }
+    created = client.post(schedule + "/season-2/sessions", headers=headers, json=session)
+    assert created.status_code == 200
+    assert created.get_json()["session"]["id"] == "S2-01"
+    assert client.application.community_client.operations_schedule_writes[0]["actorHash"]
+    updated = client.post(schedule + "/season-2/sessions/S2-01", headers=headers, json={
+        **session, "operationId": "schedule-season2-ops02", "status": "completed",
+    })
+    assert updated.status_code == 200
+    assert client.options(schedule, headers={"Origin": headers["Origin"]}).status_code == 204
+
+
 def test_admin_membership_routes_reject_untrusted_origin_and_non_mini_account(client):
     _, headers = admin_login(client)
     path = "/api/v1/admin/analytics/membership/users"

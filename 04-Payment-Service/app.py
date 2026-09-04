@@ -346,7 +346,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         labels = {
             "joined": "已入群", "pending": "审核中", "candidate": "候补",
             "rejected": "暂未通过", "claim_pending": "资料认领审核中",
-            "claim_rejected": "资料认领未通过", "none": "未入群",
+            "claim_rejected": "资料认领未通过", "eliminated": "已淘汰", "none": "未入群",
         }
         return {
             "memberId": row["community_member_id"],
@@ -384,7 +384,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         ).hexdigest()
 
     def import_community_points(conn, user, member):
-        points = max(0, int(member.get("points") or 0))
+        state = member.get("communityState")
+        points = max(0, int(member.get("points") or 0)) if state in {None, "joined"} else 0
         source_id = f"community-history:{int(member['id'])}"
         existing = conn.execute("SELECT id, points FROM point_ledger WHERE source_id=?", (source_id,)).fetchone()
         previous_current = max(0, int(user["community_points"] or 0))
@@ -422,7 +423,10 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
 
     def grant_community_access(conn, user, member):
         """Grant one non-renewing 90-day access window per approved community member."""
-        if str(member.get("status") or "") not in {"approved", "joined"}:
+        state = member.get("communityState")
+        if (state is not None and state != "joined") or (
+            state is None and str(member.get("status") or "") not in {"approved", "joined"}
+        ):
             return user
         source_id = f"community-welcome:{int(member['id'])}"
         existing = conn.execute(
@@ -879,6 +883,12 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     @app.route("/api/v1/admin/analytics/membership/community-members", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/membership/community-members/<int:member_id>", methods=["OPTIONS"])
     @app.route("/api/v1/admin/analytics/membership/community-members/<int:member_id>/reviews", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/community-directory", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/community-directory/<int:member_id>", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/community-directory/<int:member_id>/management", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/community-schedule", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/community-schedule/season-2/sessions", methods=["OPTIONS"])
+    @app.route("/api/v1/admin/analytics/membership/community-schedule/season-2/sessions/<session_id>", methods=["OPTIONS"])
     def analytics_options(**_kwargs):
         return ("", 204)
 

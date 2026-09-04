@@ -41,6 +41,8 @@
 .mo-user-name { display: block; color: var(--blue); font-weight: 600; }
 .mo-user-meta { display: block; color: var(--muted); font-size: 12px; }
 .mo-badge { display: inline-flex; align-items: center; border: 1px solid var(--gold-line); border-radius: 999px; padding: 2px 8px; background: var(--paper-soft); white-space: nowrap; }
+.mo-state-joined { border-color: #7ca88a; color: #24623a; }
+.mo-state-eliminated { border-color: #c79797; color: #8f2727; }
 .mo-admin-paging { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-top: 12px; }
 .mo-admin-paging button { background: transparent; color: var(--blue); }
 .mo-user-detail { margin-top: 18px; padding: 20px; border: 1px solid var(--gold-line); border-radius: 12px; background: var(--paper-soft); }
@@ -59,18 +61,44 @@
 .mo-approval-table { min-width: 920px; }
 .mo-approval-detail { margin-top: 18px; padding: 20px; border: 1px solid var(--gold-line); border-radius: 12px; background: var(--paper-soft); }
 .mo-approval-detail > header { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+.mo-detail-badges { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
 .mo-approval-profile { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 18px; margin: 16px 0; }
 .mo-approval-profile div { padding-top: 10px; border-top: 1px solid var(--line); }
 .mo-approval-profile dt { color: var(--muted); font: 400 12px/18px var(--sans); }
 .mo-approval-profile dd { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; font: 500 14px/22px var(--sans); }
 .mo-review-form { display: grid; gap: 12px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--gold-line); }
 .mo-review-row { display: grid; grid-template-columns: 180px 180px minmax(240px, 1fr); gap: 10px; }
+.mo-review-row-compact { grid-template-columns: 160px minmax(260px, 1fr); }
 .mo-score-fields { display: grid; grid-template-columns: repeat(5, minmax(100px, 1fr)); gap: 10px; }
 .mo-review-form textarea { min-height: 92px; resize: vertical; }
+.mo-decision-bar { display: grid; grid-template-columns: minmax(160px, 1fr) minmax(140px, .7fr) minmax(120px, .55fr); gap: 10px; padding: 14px; border: 1px solid var(--gold-line); border-radius: 10px; background: var(--card); }
+.mo-admin .mo-decision-bar button { min-height: 50px; font-size: 15px; }
+.mo-admin .mo-decision-bar .mo-approve { background: #1f643c; border-color: #1f643c; }
+.mo-admin .mo-decision-bar .mo-reject { background: #8f2727; border-color: #8f2727; }
+.mo-review-more { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.mo-review-more summary { cursor: pointer; color: var(--blue); font: 600 13px/22px var(--sans); }
+.mo-review-more .mo-score-fields { margin-top: 12px; }
 .mo-review-check { display: flex !important; align-items: center; gap: 8px !important; }
 .mo-review-check input { min-height: 18px; width: 18px; margin: 0; }
 .mo-review-actions { display: flex; justify-content: flex-end; gap: 10px; }
+.mo-community-table { min-width: 980px; }
+.mo-community-form { display: grid; gap: 12px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--gold-line); }
+.mo-community-form textarea, .mo-schedule-editor textarea { min-height: 86px; resize: vertical; }
+.mo-schedule-summary { margin-bottom: 18px; }
+.mo-schedule-summary article { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper-soft); }
+.mo-schedule-summary strong { color: #24623a; }
+.mo-schedule-summary p { margin-left: auto; color: var(--muted); }
+.mo-schedule-head { display: flex; align-items: end; justify-content: space-between; gap: 14px; margin-bottom: 12px; }
+.mo-schedule-head .mo-admin-state { margin: 2px 0 0; }
+.mo-schedule-list { display: grid; gap: 10px; }
+.mo-schedule-item { display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+.mo-schedule-item time { margin-left: 8px; color: var(--muted); font: 400 12px/18px var(--mono); }
+.mo-schedule-item h3 { margin: 7px 0 0; color: var(--blue); font: 600 16px/24px var(--sans); }
+.mo-schedule-item p { margin: 2px 0 0; color: var(--muted); }
+.mo-schedule-editor { display: grid; gap: 12px; margin-top: 18px; padding: 18px; border: 1px solid var(--gold-line); border-radius: 12px; background: var(--paper-soft); }
+.mo-schedule-editor header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.mo-schedule-fields { display: grid; grid-template-columns: 160px 160px minmax(220px, 1fr) 180px; gap: 10px; }
 [data-member-operations] :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
-@media (max-width: 900px) { .mo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-user-facts, .mo-approval-profile { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-admin-toolbar, .mo-review-row { grid-template-columns: 1fr 1fr; } .mo-score-fields { grid-template-columns: repeat(3, minmax(100px, 1fr)); } }
-@media (max-width: 640px) { .mo-grid, .mo-distributions, .mo-admin-toolbar, .mo-user-facts, .mo-adjustments, .mo-approval-profile, .mo-review-row, .mo-score-fields { grid-template-columns: 1fr; } .mo-metric, .mo-approval-detail { padding: 16px; } .mo-admin-paging { justify-content: space-between; } }
+@media (max-width: 900px) { .mo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-user-facts, .mo-approval-profile { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mo-admin-toolbar, .mo-review-row, .mo-schedule-fields { grid-template-columns: 1fr 1fr; } .mo-score-fields { grid-template-columns: repeat(3, minmax(100px, 1fr)); } }
+@media (max-width: 640px) { .mo-grid, .mo-distributions, .mo-admin-toolbar, .mo-user-facts, .mo-adjustments, .mo-approval-profile, .mo-review-row, .mo-score-fields, .mo-decision-bar, .mo-schedule-fields { grid-template-columns: 1fr; } .mo-metric, .mo-approval-detail { padding: 16px; } .mo-admin-paging { justify-content: space-between; } .mo-schedule-head, .mo-schedule-item { align-items: stretch; flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { .mo-admin button { transition: none; } }

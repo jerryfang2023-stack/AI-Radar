@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.5.0-membership-management">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.6.0-community-lifecycle">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -354,12 +354,12 @@
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
   <link rel="stylesheet" href="assets/operations-auth.css?v=ops-v341">
-  <link rel="stylesheet" href="assets/member-operations.css?v=ops-v350">
+  <link rel="stylesheet" href="assets/member-operations.css?v=ops-v360">
 </head>
 <body class="page-operations-console">
   <main class="shell" data-ops-console tabindex="-1" hidden>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.5.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.6.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
@@ -367,8 +367,10 @@
         <div class="nav-group" data-membership-nav>
           <button type="button" data-tab="membership" aria-expanded="true"><span class="nav-icon" aria-hidden="true">◇</span><span class="nav-text">会员与权益</span></button>
           <div class="nav-sub" aria-label="会员与权益子栏目">
+            <button type="button" data-tab="membership-community"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">社群成员管理</span></button>
             <button type="button" data-tab="membership-approval"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">社群加入审核</span></button>
             <button type="button" data-tab="membership-users"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">小程序会员管理</span></button>
+            <button type="button" data-tab="membership-schedule"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">活动排期管理</span></button>
           </div>
         </div>
         <button type="button" data-tab="governance"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">版本治理</span></button>
@@ -498,9 +500,27 @@
           </div>
         </section>
 
+        <section class="panel" data-panel="membership-community">
+          <div class="page-surface">
+            <header class="page-head"><div><span class="kicker">COMMUNITY MEMBERS</span><h1>社群成员管理</h1></div></header>
+            <section class="mo-admin mo-subpage" data-mo-community>
+              <form class="mo-admin-toolbar mo-community-toolbar" data-mo-community-search-form>
+                <label>查找成员<input type="search" data-mo-community-query placeholder="姓名、城市、公司或方向"></label>
+                <label>期数<select data-mo-community-cohort><option value="all">全部期数</option></select></label>
+                <label>入群状态<select data-mo-community-state><option value="all">全部状态</option><option value="not_joined">未入群</option><option value="joined">已入群</option><option value="eliminated">已淘汰</option></select></label>
+                <button type="submit">查询</button>
+              </form>
+              <p class="mo-admin-state" data-mo-community-status role="status" aria-live="polite"></p>
+              <div class="mo-user-table-wrap"><table class="mo-user-table mo-community-table"><thead><tr><th>成员</th><th>期数</th><th>社群状态</th><th>小程序账号</th><th>积分</th><th>更新时间</th><th></th></tr></thead><tbody data-mo-community-members></tbody></table></div>
+              <div class="mo-admin-paging"><button type="button" data-mo-community-prev>上一页</button><span data-mo-community-page></span><button type="button" data-mo-community-next>下一页</button></div>
+              <div data-mo-community-detail></div>
+            </section>
+          </div>
+        </section>
+
         <section class="panel" data-panel="membership-approval">
           <div class="page-surface">
-            <header class="page-head"><div><span class="kicker">COMMUNITY APPLICATION REVIEW</span><h1>社群加入申请审核</h1></div><p>查看每位申请人的完整资料、五项评分和审批记录。</p></header>
+            <header class="page-head"><div><span class="kicker">COMMUNITY APPLICATION REVIEW</span><h1>社群加入申请审核</h1></div></header>
             <section class="mo-admin mo-subpage" data-mo-approval>
               <form class="mo-admin-toolbar" data-mo-approval-search-form>
                 <label>查找申请<input type="search" data-mo-approval-query placeholder="姓名、城市、公司或方向"></label>
@@ -517,7 +537,7 @@
 
         <section class="panel" data-panel="membership-users">
           <div class="page-surface">
-            <header class="page-head"><div><span class="kicker">MINI PROGRAM MEMBER OPERATIONS</span><h1>小程序会员管理</h1></div><p>查看用户权益与积分，并执行有原因、有审计的运营调整。</p></header>
+            <header class="page-head"><div><span class="kicker">MINI PROGRAM MEMBER OPERATIONS</span><h1>小程序会员管理</h1></div></header>
             <section class="mo-admin mo-subpage" data-mo-admin>
               <div class="mo-admin-console" data-mo-admin-console>
                 <form class="mo-admin-toolbar" data-mo-admin-search-form>
@@ -531,6 +551,18 @@
                 <div data-mo-admin-detail></div>
               </div>
               <footer><p>仅显示脱敏资料；权益和积分调整均记录操作原因与审计。</p></footer>
+            </section>
+          </div>
+        </section>
+
+        <section class="panel" data-panel="membership-schedule">
+          <div class="page-surface">
+            <header class="page-head"><div><span class="kicker">COMMUNITY SCHEDULE</span><h1>活动排期管理</h1></div></header>
+            <section class="mo-admin mo-subpage" data-mo-schedule>
+              <div class="mo-schedule-summary" data-mo-schedule-summary></div>
+              <div class="mo-schedule-head"><div><h2>二期排期</h2><p class="mo-admin-state" data-mo-schedule-state role="status" aria-live="polite"></p></div><button type="button" data-mo-schedule-new>新增排期</button></div>
+              <div data-mo-schedule-list></div>
+              <div data-mo-schedule-editor></div>
             </section>
           </div>
         </section>
@@ -570,7 +602,7 @@
           <div class="grid grid-2">
             <article class="card"><span class="label">LOCAL PREFERENCES</span><h2>本机显示偏好</h2>
               <form class="preferences-form" data-preferences-form>
-                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="membership">会员与权益总览</option><option value="membership-approval">社群加入审核</option><option value="membership-users">小程序会员管理</option><option value="quality">数据质量</option><option value="governance">版本治理</option><option value="skills">Skill Store</option><option value="settings">系统设置</option></select></label>
+                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="membership">会员与权益总览</option><option value="membership-community">社群成员管理</option><option value="membership-approval">社群加入审核</option><option value="membership-users">小程序会员管理</option><option value="membership-schedule">活动排期管理</option><option value="quality">数据质量</option><option value="governance">版本治理</option><option value="skills">Skill Store</option><option value="settings">系统设置</option></select></label>
                 <label>快照过期提醒<select data-setting-stale><option value="24">超过 24 小时</option><option value="48">超过 48 小时</option><option value="72">超过 72 小时</option></select></label>
                 <label class="checkbox-label"><input type="checkbox" data-setting-compact>使用紧凑卡片间距</label>
                 <div class="form-actions"><button type="submit">保存本机设置</button><button type="button" data-reset-preferences>恢复默认</button></div>
@@ -588,9 +620,9 @@
 
   <script src="data/pipeline-dashboard.js"></script>
   <script src="data/ops-console.js"></script>
-  <script src="assets/operations-console.js?v=ops-v350"></script>
+  <script src="assets/operations-console.js?v=ops-v360"></script>
   <script src="assets/application-analytics.js?v=20260830-ops-readonly"></script>
-  <script src="assets/member-operations.js?v=ops-v350"></script>
+  <script src="assets/member-operations.js?v=ops-v360"></script>
   <script src="assets/operations-auth.js?v=ops-v341"></script>
 </body>
 </html>

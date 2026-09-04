@@ -1,14 +1,14 @@
 # Unified Operations Console
 
-Release: OPS-V3.5.0-membership-management / Skill Store v2.2.0
+Release: OPS-V3.6.0-community-lifecycle / Skill Store v2.2.0
 
 Production URL: `https://www.zkdlj.vip/ops/`
 
 The whole console is published through an atomic VPS release and protected by an allowlisted email challenge. Verification sets an HttpOnly `SameSite=Strict` session cookie plus a separate CSRF cookie scoped to `/ops`. Nginx checks the session before serving the console, scripts or operational snapshots. The public login page is the only anonymous OPS surface. GitHub Pages excludes the console application, Skill Store embed and OPS data artifacts.
 
-## Membership operations (OPS V3.5.0)
+## Membership operations (OPS V3.6.0)
 
-`https://www.zkdlj.vip/ops/#membership` is the membership overview. Community and application sources load independently on opening it, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. Two persistent second-level entries sit beneath Membership & Entitlements in the left navigation: `#membership-approval` for community applications and `#membership-users` for Mini Program member operations. Each management view loads its own protected data only when opened.
+`https://www.zkdlj.vip/ops/#membership` is the membership overview. Community and application sources load independently on opening it, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. Four persistent second-level entries sit beneath Membership & Entitlements in the left navigation: `#membership-approval` for community applications, `#membership-community` for community-member lifecycle management, `#membership-users` for Mini Program member operations, and `#membership-schedule` for activity scheduling. Each management view loads its own protected data only when opened.
 
 The page is metric-first: card-level methodology notes and repeated boundary explanations stay out of the interface. Detailed definitions remain in this operational reference; the UI keeps only live values, source status, controls and the necessary authentication/privacy boundary.
 
@@ -26,7 +26,11 @@ Validation: both service pytest suites; `npm run test:ops-unified`; existing ana
 
 The dedicated `#membership-users` subpanel provides protected Mini Program account search through `GET /api/v1/admin/analytics/membership/users` and audited changes through `POST /api/v1/admin/analytics/membership/users/<id>/adjustments`, contract `MEMBER-ADMIN-V1.0`. The operator verifies once at the console login page. The server session is held in an HttpOnly cookie; JavaScript receives only the scoped CSRF value. There is no terminal-token field or membership-specific login.
 
-Community-member applications are reviewed in the dedicated `#membership-approval` subpanel through the payment service's authenticated server-side proxy. Operators can search applicants, open each complete internal application and save status, joined date, five scores, review notes and company visibility. List/detail/review calls use `COMMUNITY-APPROVAL-V1.0`; the browser never receives the community service token. Review writes require the OPS CSRF value, a unique operation ID, bounded scores and a server-derived administrator hash. The community service stores before/after audit records and safely replays duplicate operation IDs. The legacy `members.zkdlj.vip/admin` remains available only as a temporary operational fallback and is no longer linked from the unified console.
+Community-member applications are reviewed in the dedicated `#membership-approval` subpanel through the payment service's authenticated server-side proxy. Operators can search applicants, open each complete internal application and choose a prominent approve, reject or waitlist action. Approval assigns a cohort without treating approval as formal entry; after a successful write the view returns to the complete user list. List/detail/review calls use `COMMUNITY-APPROVAL-V1.0`; the browser never receives the community service token. Review writes require the OPS CSRF value, a unique operation ID, bounded scores and a server-derived administrator hash. The community service stores before/after audit records and safely replays duplicate operation IDs. The legacy `members.zkdlj.vip/admin` remains available only as a temporary operational fallback and is no longer linked from the unified console.
+
+The dedicated `#membership-community` subpanel lists approved community members by cohort and lifecycle state. Operators can mark actual entry, move a member between cohorts or record elimination with a reason through `COMMUNITY-MEMBER-ADMIN-V1.0`; records also show verified Mini Program account availability without exposing an OpenID. Eliminated members retain their history but are excluded from active community, claim and entitlement eligibility.
+
+The dedicated `#membership-schedule` subpanel keeps the completed first season as a 15-session summary and manages second-season sessions through `COMMUNITY-SCHEDULE-V1.0`. Create and update operations are idempotent and audited. Confirmed or completed sessions require a date; pending sessions can remain open.
 
 Allowed identities are server-only `OPERATIONS_ADMIN_EMAILS` values. The database stores email HMAC/masking, verification-code HMAC, session-token HMAC and CSRF HMAC, never the raw email, code or session token. A challenge lasts ten minutes, permits five attempts and is limited to three sends per email per ten minutes. Reads require the session bearer; writes additionally require its CSRF value. Logout revokes the server session.
 
@@ -36,7 +40,7 @@ Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 
 
 ## Scope and boundaries
 
-Seven primary modules: Overview, Analytics, Membership & Entitlements, Data Quality, Version Governance, Skill Store, System Settings. Membership & Entitlements owns two second-level routes: Community Application Review and Mini Program Member Management.
+Seven primary modules: Overview, Analytics, Membership & Entitlements, Data Quality, Version Governance, Skill Store, System Settings. Membership & Entitlements owns four second-level routes: Community Application Review, Community Member Management, Mini Program Member Management, and Activity Scheduling.
 Issue-center and task-chain panels are retired. Incident records, daily supervision, collection telemetry and batch history remain owned by their existing workflows.
 
 The production console, scripts and snapshots require the VPS session. Public aggregate APIs remain identity-free and may still be used by other products; their existence is not treated as console authorization. Member identities, payment/admin actions and protected community pages retain their own server-side boundaries.

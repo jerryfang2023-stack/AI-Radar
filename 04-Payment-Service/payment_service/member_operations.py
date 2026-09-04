@@ -364,11 +364,38 @@ def register(app, db, clock):
             page={"number": page, "size": page_size, "total": total, "totalPages": max(1, math.ceil(total / page_size))}, users=users,
         )
 
-    def community_result(call):
+    def community_result(call, transform=None):
         try:
-            return jsonify(call())
+            payload = call()
+            return jsonify(transform(payload) if transform else payload)
         except CommunityServiceError as error:
             return jsonify(error={"code": error.code, "message": str(error)}), error.status
+
+    def with_mini_program_accounts(payload):
+        result = dict(payload)
+        members = result.get("members")
+        if not isinstance(members, list):
+            member = result.get("member")
+            members = [member] if isinstance(member, dict) else []
+        member_ids = [int(member["id"]) for member in members if member.get("id")]
+        linked = {}
+        if member_ids:
+            placeholders = ",".join("?" for _ in member_ids)
+            with closing(db()) as conn:
+                rows = conn.execute(
+                    f"""SELECT id, community_member_id FROM users
+                        WHERE merged_into_user_id IS NULL AND community_member_id IN ({placeholders})
+                        AND EXISTS (
+                            SELECT 1 FROM user_identities i
+                            WHERE i.user_id=users.id AND i.identity_type='wechat_openid'
+                        )""",
+                    member_ids,
+                ).fetchall()
+            linked = {int(row["community_member_id"]): int(row["id"]) for row in rows}
+        for member in members:
+            user_id = linked.get(int(member["id"])) if member.get("id") else None
+            member["miniProgram"] = {"accountOpened": user_id is not None, "userId": user_id}
+        return result
 
     @app.get("/api/v1/admin/analytics/membership/community-members")
     @admin_required()
@@ -393,6 +420,59 @@ def register(app, db, clock):
         payload = dict(request.get_json(silent=True) or {})
         payload["actorHash"] = str(g.operations_admin_session["email_hash"])[:16]
         return community_result(lambda: app.community_client.review_operations_member(member_id, payload))
+
+    @app.get("/api/v1/admin/analytics/membership/community-directory")
+    @admin_required()
+    def community_member_directory():
+        return community_result(
+            lambda: app.community_client.operations_community_members(
+                query=str(request.args.get("query") or "")[:80],
+                cohort=str(request.args.get("cohort") or "all"),
+                state=str(request.args.get("state") or "all"),
+                page=request.args.get("page", "1"),
+                page_size=request.args.get("pageSize", "20"),
+            ),
+            with_mini_program_accounts,
+        )
+
+    @app.get("/api/v1/admin/analytics/membership/community-directory/<int:member_id>")
+    @admin_required()
+    def community_member_directory_detail(member_id):
+        return community_result(
+            lambda: app.community_client.operations_community_member(member_id),
+            with_mini_program_accounts,
+        )
+
+    @app.post("/api/v1/admin/analytics/membership/community-directory/<int:member_id>/management")
+    @admin_required(write=True)
+    def community_member_directory_management(member_id):
+        payload = dict(request.get_json(silent=True) or {})
+        payload["actorHash"] = str(g.operations_admin_session["email_hash"])[:16]
+        return community_result(
+            lambda: app.community_client.manage_operations_community_member(member_id, payload),
+            with_mini_program_accounts,
+        )
+
+    @app.get("/api/v1/admin/analytics/membership/community-schedule")
+    @admin_required()
+    def community_schedule():
+        return community_result(app.community_client.operations_schedule)
+
+    @app.post("/api/v1/admin/analytics/membership/community-schedule/season-2/sessions")
+    @admin_required(write=True)
+    def community_schedule_create_session():
+        payload = dict(request.get_json(silent=True) or {})
+        payload["actorHash"] = str(g.operations_admin_session["email_hash"])[:16]
+        return community_result(lambda: app.community_client.create_operations_schedule_session(payload))
+
+    @app.post("/api/v1/admin/analytics/membership/community-schedule/season-2/sessions/<session_id>")
+    @admin_required(write=True)
+    def community_schedule_update_session(session_id):
+        payload = dict(request.get_json(silent=True) or {})
+        payload["actorHash"] = str(g.operations_admin_session["email_hash"])[:16]
+        return community_result(
+            lambda: app.community_client.update_operations_schedule_session(session_id, payload)
+        )
 
     @app.post("/api/v1/admin/analytics/membership/users/<int:user_id>/adjustments")
     @admin_required(write=True)

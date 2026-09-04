@@ -80,6 +80,40 @@ class CommunityClient:
             payload=payload,
         )
 
+    def operations_community_members(self, *, query="", cohort="all", state="all", page=1, page_size=20):
+        params = urllib.parse.urlencode(
+            {"query": query, "cohort": cohort, "state": state, "page": page, "pageSize": page_size}
+        )
+        return self._request(f"/api/internal/v1/operations/community-members?{params}")
+
+    def operations_community_member(self, member_id):
+        return self._request(f"/api/internal/v1/operations/community-members/{int(member_id)}")
+
+    def manage_operations_community_member(self, member_id, payload):
+        return self._request(
+            f"/api/internal/v1/operations/community-members/{int(member_id)}/management",
+            method="POST",
+            payload=payload,
+        )
+
+    def operations_schedule(self):
+        return self._request("/api/internal/v1/operations/schedule")
+
+    def create_operations_schedule_session(self, payload):
+        return self._request(
+            "/api/internal/v1/operations/schedule/season-2/sessions",
+            method="POST",
+            payload=payload,
+        )
+
+    def update_operations_schedule_session(self, session_id, payload):
+        value = urllib.parse.quote(str(session_id), safe="")
+        return self._request(
+            f"/api/internal/v1/operations/schedule/season-2/sessions/{value}",
+            method="POST",
+            payload=payload,
+        )
+
     def hub(self, path, *, viewer=None, method="GET", payload=None):
         query = "?" + urllib.parse.urlencode({"viewer": int(viewer)}) if viewer is not None else ""
         return self._request("/api/internal/v1/community/" + path + query, method=method, payload=payload)

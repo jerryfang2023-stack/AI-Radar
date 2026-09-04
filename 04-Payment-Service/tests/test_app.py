@@ -133,14 +133,19 @@ class FakeCommunityClient:
         self.claims = {}
         self.claim_member = None
         self.operations_reviews = []
+        self.operations_member_management = []
+        self.operations_schedule_writes = []
+        self.member_state = "joined"
 
     def lookup(self, phone):
         if phone == "13800138000":
-            return {"found": True, "member": {"id": 42, "name": "现有社群成员", "status": "approved", "points": self.member_points}}
+            status = "eliminated" if self.member_state == "eliminated" else "approved"
+            return {"found": True, "member": {"id": 42, "name": "现有社群成员", "status": status, "communityState": self.member_state, "points": self.member_points}}
         return {"found": False}
 
     def status(self, member_id):
-        return {"member": {"id": member_id, "name": "现有社群成员", "status": "approved", "points": self.member_points}}
+        status = "eliminated" if self.member_state == "eliminated" else "approved"
+        return {"member": {"id": member_id, "name": "现有社群成员", "status": status, "communityState": self.member_state, "points": self.member_points}}
 
     def submit_application(self, payload):
         self.applications.append(payload)
@@ -166,6 +171,45 @@ class FakeCommunityClient:
     def review_operations_member(self, member_id, payload):
         self.operations_reviews.append({"memberId": member_id, **payload})
         return {"schemaVersion": "COMMUNITY-APPROVAL-V1.0", "member": {"id": member_id, "name": "待审成员", "status": payload["status"], "scores": {**payload["scores"], "total": sum(payload["scores"].values())}}}
+
+    def operations_community_members(self, **filters):
+        member = {
+            "id": 88, "name": "二期成员", "city": "上海", "company": "示例公司",
+            "role": "产品", "status": "approved", "cohort": 2, "communityState": "joined",
+            "joinedOn": "2026-09-04", "eliminatedOn": "", "eliminationReason": "", "points": 42,
+        }
+        return {
+            "schemaVersion": "COMMUNITY-MEMBER-ADMIN-V1.0", "filters": filters,
+            "cohorts": [2, 1], "stateCounts": {"not_joined": 0, "joined": 1, "eliminated": 0},
+            "page": {"number": 1, "size": 20, "total": 1, "totalPages": 1}, "members": [member],
+        }
+
+    def operations_community_member(self, member_id):
+        return {"schemaVersion": "COMMUNITY-MEMBER-ADMIN-V1.0", "member": {
+            "id": member_id, "name": "二期成员", "status": "approved", "cohort": 2,
+            "communityState": "joined", "joinedOn": "2026-09-04", "points": 42,
+        }}
+
+    def manage_operations_community_member(self, member_id, payload):
+        self.operations_member_management.append({"memberId": member_id, **payload})
+        return {"schemaVersion": "COMMUNITY-MEMBER-ADMIN-V1.0", "member": {
+            "id": member_id, "name": "二期成员", "status": "approved", "cohort": payload["cohort"],
+            "communityState": payload["state"], "joinedOn": payload.get("joinedOn", ""),
+        }}
+
+    def operations_schedule(self):
+        return {"schemaVersion": "COMMUNITY-SCHEDULE-V1.0", "seasons": [
+            {"season": 1, "label": "一期", "status": "completed", "completedCount": 15, "sessions": []},
+            {"season": 2, "label": "二期", "status": "planning", "sessions": []},
+        ]}
+
+    def create_operations_schedule_session(self, payload):
+        self.operations_schedule_writes.append({"action": "create", **payload})
+        return {"schemaVersion": "COMMUNITY-SCHEDULE-V1.0", "session": {"id": "S2-01", **payload}}
+
+    def update_operations_schedule_session(self, session_id, payload):
+        self.operations_schedule_writes.append({"action": "update", "sessionId": session_id, **payload})
+        return {"schemaVersion": "COMMUNITY-SCHEDULE-V1.0", "session": {"id": session_id, **payload}}
 
 
 class FakeVirtualPayClient:
@@ -627,6 +671,21 @@ def test_existing_community_member_can_link_during_first_login_without_profile_r
     assert payload["membership"]["remainingDays"] == 90
     assert payload["membership"]["status"] == "member"
     assert payload["membership"]["statusLabel"] == "观澜会员"
+
+
+def test_eliminated_community_member_does_not_receive_points_or_welcome_membership(client):
+    client.application.community_client.member_state = "eliminated"
+    response = client.post("/api/v1/auth/wechat", json={"code": "community-user", "phoneCode": "phone-code"})
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["community"]["status"] == "eliminated"
+    assert payload["community"]["statusLabel"] == "已淘汰"
+    assert payload["wallet"] == {"balance": 0, "lifetime": 0}
+    assert payload["membership"]["status"] == "trial"
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        assert conn.execute(
+            "SELECT COUNT(*) FROM membership_ledger WHERE source_id='community-welcome:42'"
+        ).fetchone()[0] == 0
 
 
 def test_nickname_claim_waits_for_admin_then_syncs_member_and_90_day_access_once(client):
