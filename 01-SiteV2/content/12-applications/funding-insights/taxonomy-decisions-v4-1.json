@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-05T04:36:39.553Z",
+    "generated_at": "2026-09-05T05:06:02.826Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 305,
-    "input_hash": "c8b5f311b31370a7",
+    "decision_count": 306,
+    "input_hash": "19aa7bb1c1de578c",
     "override_count": 17,
-    "needs_review_count": 8,
-    "low_confidence_count": 15
+    "needs_review_count": 9,
+    "low_confidence_count": 16
   },
   "decisions": [
     {
@@ -6034,6 +6034,25 @@
       "confidence": 0.78,
       "needs_review": true,
       "rationale": "Wonderful AI OS协调智能体、工作流和企业上下文，属于跨行业企业工作流平台，而非单一行业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-2f0f3200b9800877",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "rationale": "证据显示产品为智能眼镜，提供通知、翻译和导航提示，未涉及物理世界自主决策或机器人控制，故不属Physical AI；也未提供AI基础设施，故不属infrastructure_compute；产品面向通用用户而非单一行业工作流，因此归入enterprise_applications。但证据不足以明确其核心企业功能，需人工复核。"
     }
   ]
 }

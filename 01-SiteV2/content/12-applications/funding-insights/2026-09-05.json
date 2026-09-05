@@ -1,0 +1,1034 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-09-05",
+    "generated_at": "2026-09-05T05:05:36.181Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 1,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 1
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-20a08a4c9398fa77",
+      "triggered_by_event_id": "EV-2f0f3200b9800877",
+      "as_of_date": "2026-09-05",
+      "company": {
+        "entity_id": "EN-aa949c066d46acbf",
+        "name": "Even Realities Technology",
+        "full_name": "Even Realities Technology",
+        "website": "",
+        "summary": "由前苹果工程师创立的中国智能眼镜制造商，主打无摄像头、带微LED波导显示的有屏智能眼镜，强调隐私优先和全天佩戴体验。",
+        "headquarters": "深圳",
+        "founders": [
+          {
+            "name": "Will Wang",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-14c7002d9d31f5c4",
+                "quote": "由前苹果工程师创立的中国智能眼镜制造商Even Realities Technology",
+                "source_content_hash": "3135decac0924349",
+                "quote_hash": "4685cece915a642a954e235b1ce973d23175a928f99fd4c086304fcefc9d2810"
+              },
+              {
+                "source_id": "FISRC-340182e8dcb597a3",
+                "quote": "said Will Wang, founder and CEO of Even Realities",
+                "source_content_hash": "5e7f9a9c8a73026b",
+                "quote_hash": "c228a9b8e501a02ea4f7991a8b2bfb3ebb1222583d63d513c033fef9a0cba884"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "近400名员工",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "quote": "Team grows to nearly 400 employees.",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote_hash": "d9f7aa267f35e1f02f3911147091bf1027a1ef2a40a454cc5f951de50c6d0cdb"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-14c7002d9d31f5c4",
+            "quote": "由前苹果工程师创立的中国智能眼镜制造商Even Realities Technology",
+            "source_content_hash": "3135decac0924349",
+            "quote_hash": "4685cece915a642a954e235b1ce973d23175a928f99fd4c086304fcefc9d2810"
+          },
+          {
+            "source_id": "FISRC-340182e8dcb597a3",
+            "quote": "Even Realities, the China-based smart glasses company",
+            "source_content_hash": "5e7f9a9c8a73026b",
+            "quote_hash": "e087e330c5aa4cc531a3f5e4a7ab345cbc8934f8124fdead655f326753fb86cc"
+          }
+        ],
+        "application_entity_id": "EN-aa949c066d46acbf",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "Pre-B轮",
+        "amount": "1.5亿美元",
+        "total_raised": "约1.6亿美元",
+        "announced_at": "2026-07-07",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "美团",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-340182e8dcb597a3",
+                "quote": "The round, which was led by Meituan and Tencent",
+                "source_content_hash": "5e7f9a9c8a73026b",
+                "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
+              }
+            ],
+            "entity_id": "EN-cd6362472aea60ef"
+          },
+          {
+            "name": "腾讯",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-340182e8dcb597a3",
+                "quote": "The round, which was led by Meituan and Tencent",
+                "source_content_hash": "5e7f9a9c8a73026b",
+                "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
+              }
+            ],
+            "entity_id": "EN-9c8ae69b84f21a2e"
+          },
+          {
+            "name": "Hillhouse",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9b7c7aa8538dbf1",
+                "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+                "source_content_hash": "40e5d01acf447bfc",
+                "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "HSG（原红杉中国）",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9b7c7aa8538dbf1",
+                "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+                "source_content_hash": "40e5d01acf447bfc",
+                "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Northern Light Venture Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9b7c7aa8538dbf1",
+                "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+                "source_content_hash": "40e5d01acf447bfc",
+                "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "CDH Investments",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9b7c7aa8538dbf1",
+                "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+                "source_content_hash": "40e5d01acf447bfc",
+                "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cyanhill Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9b7c7aa8538dbf1",
+                "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+                "source_content_hash": "40e5d01acf447bfc",
+                "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "CDH Investments",
+            "role": "A轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-340182e8dcb597a3",
+                "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+                "source_content_hash": "5e7f9a9c8a73026b",
+                "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cyanhill Capital",
+            "role": "A轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-340182e8dcb597a3",
+                "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+                "source_content_hash": "5e7f9a9c8a73026b",
+                "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "China Growth Capital",
+            "role": "A轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-340182e8dcb597a3",
+                "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+                "source_content_hash": "5e7f9a9c8a73026b",
+                "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Beyond Capital",
+            "role": "早期轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cea4a6d222abf61e",
+                "quote": "Even Realities had already raised over $10 million in three earlier rounds, with backers like Cyanhill Capital, Beyond Capital, China Growth Capital, Monolith Capital, and CDH Investments.",
+                "source_content_hash": "6fdf82c33e720be6",
+                "quote_hash": "cb244d587ea49c84e4cb481a4ab137a772a5046e95cfbd12b7b7ef7ab59b6fca"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Monolith Capital",
+            "role": "早期轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cea4a6d222abf61e",
+                "quote": "Even Realities had already raised over $10 million in three earlier rounds, with backers like Cyanhill Capital, Beyond Capital, China Growth Capital, Monolith Capital, and CDH Investments.",
+                "source_content_hash": "6fdf82c33e720be6",
+                "quote_hash": "cb244d587ea49c84e4cb481a4ab137a772a5046e95cfbd12b7b7ef7ab59b6fca"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-14c7002d9d31f5c4",
+            "quote": "前苹果工程师的AI眼镜获得1.5亿美元融资",
+            "source_content_hash": "3135decac0924349",
+            "quote_hash": "c740bf9dc6184eaba3ea93fda28402b8d03ab53d1e7d38b76268eb318d7fc173"
+          },
+          {
+            "source_id": "FISRC-14c7002d9d31f5c4",
+            "quote": "Even Realities获得1.5亿美元融资，估值达10亿美元",
+            "source_content_hash": "3135decac0924349",
+            "quote_hash": "bf3d2910c39f9d4f083c24b13457220902d892ecf4a51a49c7c0e26616392ea3"
+          },
+          {
+            "source_id": "FISRC-340182e8dcb597a3",
+            "quote": "bringing the company $150 million and a $1 billion valuation",
+            "source_content_hash": "5e7f9a9c8a73026b",
+            "quote_hash": "1df9856025e9ef0a53874b69dc0f34f5bb782f409f38dc39e3d4848447e6095b"
+          }
+        ],
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "total_raised_original": "约1.6亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 160000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1.6 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-2f0f3200b9800877",
+            "round_original": "Pre-B轮",
+            "amount": "1.5亿美元",
+            "announced_at": "2026-07-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-14c7002d9d31f5c4",
+                "quote": "前苹果工程师的AI眼镜获得1.5亿美元融资",
+                "source_content_hash": "3135decac0924349",
+                "quote_hash": "c740bf9dc6184eaba3ea93fda28402b8d03ab53d1e7d38b76268eb318d7fc173"
+              },
+              {
+                "source_id": "FISRC-14c7002d9d31f5c4",
+                "quote": "Even Realities获得1.5亿美元融资，估值达10亿美元",
+                "source_content_hash": "3135decac0924349",
+                "quote_hash": "bf3d2910c39f9d4f083c24b13457220902d892ecf4a51a49c7c0e26616392ea3"
+              },
+              {
+                "source_id": "FISRC-340182e8dcb597a3",
+                "quote": "bringing the company $150 million and a $1 billion valuation",
+                "source_content_hash": "5e7f9a9c8a73026b",
+                "quote_hash": "1df9856025e9ef0a53874b69dc0f34f5bb782f409f38dc39e3d4848447e6095b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Even G2",
+          "description": "旗舰智能眼镜，采用双目单色绿色微LED波导显示，无摄像头，镜片内显示通知、翻译和导航提示，搭配Even R1智能戒指进行手势控制。",
+          "target_customers": "欧美隐私优先的消费者，尤其是企业高管和日常通勤用户",
+          "features": [
+            "双目单色绿色微LED显示",
+            "无摄像头设计",
+            "实时翻译",
+            "导航提示",
+            "通知显示",
+            "搭配Even R1智能戒指控制"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-340182e8dcb597a3",
+              "quote": "Even Realities builds frames that incorporate binocular, monochrome green displays, critically omitting any sort of camera.",
+              "source_content_hash": "5e7f9a9c8a73026b",
+              "quote_hash": "c957afb4cd9cd29e6a8b324ba5c1cabbfec2774e0e20a38d455055f11f20d248"
+            },
+            {
+              "source_id": "FISRC-cea4a6d222abf61e",
+              "quote": "Instead, a micro-LED display in the lens shows notifications, translations, and navigation prompts. Users control the glasses with a companion ring called the Even R1, which works as a touchpad.",
+              "source_content_hash": "6fdf82c33e720be6",
+              "quote_hash": "5013e442e919fa64957529e2df40ceaac677574031678200d49d359edbd776fb"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Even R1",
+          "description": "健康追踪智能戒指，作为Even G2的配套输入设备，通过手势控制眼镜显示。",
+          "target_customers": "Even G2用户",
+          "features": [
+            "手势控制",
+            "健康追踪"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-340182e8dcb597a3",
+              "quote": "incorporating user input through its health-tracking Even R1 smart ring",
+              "source_content_hash": "5e7f9a9c8a73026b",
+              "quote_hash": "b5b801c37a453e25e6a863c508d21802349497e19e4764be08ac919d9efc8d38"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "美国用户群",
+          "industry": "consumer_retail",
+          "use_case": "日常信息显示、翻译、导航",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cea4a6d222abf61e",
+              "quote": "More than half of its users and about 80% of its developer community are based in the United States",
+              "source_content_hash": "6fdf82c33e720be6",
+              "quote_hash": "e739561a4e2f20563dca391e9c446e3fee37dac8530f8ccead0764c29db8b98c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "日本用户群",
+          "industry": "consumer_retail",
+          "use_case": "日常信息显示",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "quote": "Core markets: US and Japan.",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote_hash": "eb4f3a63fca6ccd60756075471584518f47b37c25a828235767c515175af202c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "企业高管用户",
+          "industry": "professional_services",
+          "use_case": "全天佩戴的信息辅助",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "quote": "One-third of users are company executives.",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote_hash": "fce58cadae72cc8c124c47c2957046a16d59e2a8a59e67426e0da478c1394e89"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "XREAL",
+          "product": "显示类智能眼镜",
+          "scenario": "有屏显示路线",
+          "target_customer": "全球消费者",
+          "funding_summary": "融资4.33亿美元，2026年1月估值达10亿美元",
+          "core_difference": "XREAL累计融资4.33亿美元，Even Realities累计融资约1.6亿美元；两者均走有屏显示路线，但Even Realities明确不装摄像头。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cea4a6d222abf61e",
+              "quote": "XREAL raised $433 million across five rounds, reaching a $1 billion valuation in January 2026.",
+              "source_content_hash": "6fdf82c33e720be6",
+              "quote_hash": "dd00aa77b2fabcab7450bb0b88e0935399b187ba5dd89c60398e11284f444b1b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Viture",
+          "product": "显示类智能眼镜",
+          "scenario": "有屏显示路线",
+          "target_customer": "全球消费者",
+          "funding_summary": "六个月内完成两轮各1亿美元融资，累计超过2亿美元",
+          "core_difference": "Viture在六个月内完成两轮各1亿美元融资，Even Realities本轮单轮1.5亿美元；两者均属显示眼镜细分市场。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cea4a6d222abf61e",
+              "quote": "Viture raised two $100 million rounds in six months, totalling over $200 million by February.",
+              "source_content_hash": "6fdf82c33e720be6",
+              "quote_hash": "bad9a06ab8e88c689909d2f99cb3151ffafa28e82328a5847bfe0ea4b2008738"
+            }
+          ],
+          "entity_id": "EN-e21783b898b55a31"
+        },
+        {
+          "name": "Rokid",
+          "product": "Rokid AI Glasses",
+          "scenario": "有屏显示且带摄像头的智能眼镜",
+          "target_customer": "全球开发者和消费者",
+          "funding_summary": "估值25.8亿美元，最近一轮融资5.22亿美元",
+          "core_difference": "Rokid的AI眼镜配备摄像头，Even Realities的G2无摄像头；Rokid估值25.8亿美元，Even Realities估值10亿美元。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77845fcc596ebc91",
+              "quote": "But it still trails domestic rival Rokid, which is valued at $2.58 billion per PitchBook data. Rokid raised $522 million in its latest round in March.",
+              "source_content_hash": "c45f3136e70a21be",
+              "quote_hash": "8ff18e7e2d23b059cc10cf251074af243d7a3d929a23bcc2f22b36663556774c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "RayNeo",
+          "product": "智能眼镜",
+          "scenario": "有屏显示路线",
+          "target_customer": "消费者",
+          "funding_summary": "估值2.399亿美元",
+          "core_difference": "RayNeo估值2.399亿美元，Even Realities估值10亿美元，两者均属中国智能眼镜厂商。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77845fcc596ebc91",
+              "quote": "Another competitor, RayNeo, is valued at $239.9 million.",
+              "source_content_hash": "c45f3136e70a21be",
+              "quote_hash": "1c8d692dd3c31cb0f44e2f5ff22641935b14ca20b9e20d5c4103be76cf2a0483"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "1.5亿美元",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-14c7002d9d31f5c4",
+              "quote": "Even Realities获得1.5亿美元融资",
+              "source_content_hash": "3135decac0924349",
+              "quote_hash": "e4fd408bbd72239241595dff2f633dd1d3b5602b975a5704206e21dfb3c91c43"
+            }
+          ]
+        },
+        {
+          "label": "本轮估值",
+          "value": "10亿美元",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-14c7002d9d31f5c4",
+              "quote": "估值达10亿美元",
+              "source_content_hash": "3135decac0924349",
+              "quote_hash": "89e0f2cac98c2468224c7ce507ad8c1f8f05d2c8d020c59518c21b65b0d3ee75"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "约1.6亿美元",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "quote": "Total funding has reached approximately $160 million.",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote_hash": "13815b29005d1fca71d13dc95e5f169829584e8d94b2fd060a01b08518ef2d5d"
+            }
+          ]
+        },
+        {
+          "label": "美国用户占比",
+          "value": "超过一半",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cea4a6d222abf61e",
+              "quote": "More than half of its users and about 80% of its developer community are based in the United States",
+              "source_content_hash": "6fdf82c33e720be6",
+              "quote_hash": "e739561a4e2f20563dca391e9c446e3fee37dac8530f8ccead0764c29db8b98c"
+            }
+          ]
+        },
+        {
+          "label": "美国开发者占比",
+          "value": "约80%",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cea4a6d222abf61e",
+              "quote": "about 80% of its developer community are based in the United States",
+              "source_content_hash": "6fdf82c33e720be6",
+              "quote_hash": "cebe6c0326a35269fdb9d45e7aae0ed25b6f15e440466868861c1128d0bbd86a"
+            }
+          ]
+        },
+        {
+          "label": "G2日均佩戴时长",
+          "value": "8-10小时",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cea4a6d222abf61e",
+              "quote": "people wear the G2 glasses for eight to ten hours each day",
+              "source_content_hash": "6fdf82c33e720be6",
+              "quote_hash": "52295770e241ffc64ddd24a9f27b30019267bb7cbac708fa4e2023bb92509ffa"
+            }
+          ]
+        },
+        {
+          "label": "首代产品销量里程碑",
+          "value": "超过1万副",
+          "observed_at": "2026-07-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-277c1ab954f64fd2",
+              "quote": "这是全球显示类智能眼镜里，第一家突破 1 万副销售量的公司",
+              "source_content_hash": "3598fd8fb6284fa8",
+              "quote_hash": "f8441fa42bfe8863c106e5847afed042ecf310831ef4049cf4046fb4f2db7fcf"
+            }
+          ]
+        },
+        {
+          "label": "员工规模",
+          "value": "近400人",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "quote": "Team grows to nearly 400 employees.",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote_hash": "d9f7aa267f35e1f02f3911147091bf1027a1ef2a40a454cc5f951de50c6d0cdb"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：在AI眼镜从摄像头音频路线向显示路线分化的窗口期，无摄像头、有屏显示的产品能否凭借隐私优势和全天佩戴体验在欧美市场建立差异化壁垒。本轮1.5亿美元融资和10亿美元估值所依赖的已验证信号包括：首代产品成为全球显示类智能眼镜中第一家销量突破1万副的公司、硬件毛利已实现盈利、美国用户占比过半且开发者占比约80%、G2日均佩戴8-10小时。证据边界在于：日均佩戴时长来自公司自述，未经独立验证；盈利状态仅来自创始人访谈，缺乏审计财务数据；10亿美元估值与Meta约69%的出货量份额相比仍有数量级差距。",
+        "validated_signals": [
+          "首代产品销量突破1万副，为全球显示类智能眼镜首家",
+          "硬件毛利已实现盈利",
+          "美国用户占比超过一半，开发者占比约80%",
+          "G2日均佩戴8-10小时",
+          "本轮由美团和腾讯联合领投，估值达10亿美元"
+        ],
+        "risks": [
+          "日均佩戴时长和盈利状态来自公司自述，缺乏独立验证",
+          "Meta以约69%的出货量份额主导市场，Even Realities的规模差距显著",
+          "有屏显示类眼镜在强光户外环境下显示效果受限，续航仅2-4小时，技术瓶颈短期难以突破"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "knowledge_search"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user",
+          "consumer"
+        ],
+        "sector": "智能眼镜/AI可穿戴设备",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：在AI眼镜从摄像头音频路线向显示路线分化的窗口期，无摄像头、有屏显示的产品能否凭借隐私优势和全天佩戴体验在欧美市场建立差异化壁垒。本轮1.5亿美元融资和10亿美元估值所依赖的已验证信号包括：首代产品成为全球显示类智能眼镜中第一家销量突破1万副的公司、硬件毛利已实现盈利、美国用户占比过半且开发者占比约80%、G2日均佩戴8-10小时。证据边界在于：日均佩戴时长来自公司自述，未经独立验证；盈利状态仅来自创始人访谈，缺乏审计财务数据；10亿美元估值与Meta约69%的出货量份额相比仍有数量级差距。",
+          "evidence_signals": [
+            "首代产品销量突破1万副，为全球显示类智能眼镜首家",
+            "硬件毛利已实现盈利",
+            "美国用户占比超过一半，开发者占比约80%",
+            "G2日均佩戴8-10小时",
+            "本轮由美团和腾讯联合领投，估值达10亿美元"
+          ],
+          "risks": [
+            "日均佩戴时长和盈利状态来自公司自述，缺乏独立验证",
+            "Meta以约69%的出货量份额主导市场，Even Realities的规模差距显著",
+            "有屏显示类眼镜在强光户外环境下显示效果受限，续航仅2-4小时，技术瓶颈短期难以突破"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Even G2",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Even R1",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Will Wang",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "美团",
+          "canonical_entity_id": "EN-cd6362472aea60ef",
+          "canonical_name": "美团"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "腾讯",
+          "canonical_entity_id": "EN-9c8ae69b84f21a2e",
+          "canonical_name": "腾讯"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hillhouse",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "HSG（原红杉中国）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Northern Light Venture Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CDH Investments",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cyanhill Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "CDH Investments",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Cyanhill Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "China Growth Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Beyond Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Monolith Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "美国用户群",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "日本用户群",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "企业高管用户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "XREAL",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Viture",
+          "canonical_entity_id": "EN-e21783b898b55a31",
+          "canonical_name": "VITURE"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Rokid",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "RayNeo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2f0f3200b9800877",
+          "date": "2026-07-07",
+          "title": "前苹果工程师的AI眼镜获得1.5亿美元融资 - IDN Financials",
+          "amount": "1.5亿美元",
+          "source_refs": [
+            "SA-48cf2f1c5be0fd84"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-14c7002d9d31f5c4",
+          "source_url": "https://www.idnfinancials.com/cn/news/65720/%E5%89%8D%E8%8B%B9%E6%9E%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84ai%E7%9C%BC%E9%95%9C%E8%8E%B7%E5%BE%971-5%E4%BA%BF%E7%BE%8E%E5%85%83%E8%9E%8D%E8%B5%84",
+          "title": "前苹果工程师的AI眼镜获得1.5亿美元融资 - IDN Financials",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-05T03:48:06.931Z",
+          "content_hash": "3135decac0924349",
+          "source_artifact_id": "SA-48cf2f1c5be0fd84",
+          "raw_id": "RAW-590edf2df6f439f9"
+        },
+        {
+          "source_id": "FISRC-340182e8dcb597a3",
+          "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+          "title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+          "publisher": "roadtovr.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-05T05:03:58.516Z",
+          "content_hash": "5e7f9a9c8a73026b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-cea4a6d222abf61e",
+          "source_url": "https://techfundingnews.com/even-realities-1b-valuation-camera-free-glasses/",
+          "title": "Ex-Apple engineer's Even Realities hits unicorn status: Can camera ...",
+          "publisher": "techfundingnews.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-09-05T05:03:58.390Z",
+          "content_hash": "6fdf82c33e720be6",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-77845fcc596ebc91",
+          "source_url": "https://www.briefs.co/news/apple-alum-s-smart-glass-startup-even-realities-attains-unic/",
+          "title": "Apple Alum's Even Realities Hits $1B Smart-Glass Valuation",
+          "publisher": "briefs.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-05T05:03:59.192Z",
+          "content_hash": "c45f3136e70a21be",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-277c1ab954f64fd2",
+          "source_url": "https://aieii.com/posts/2026-07-25-even-realities-ai-glasses-funding/",
+          "title": "AI 眼镜赛道升温：Even Realities 拿下美团腾讯 1.5 亿美元，端侧硬件谁能赢 | AIEII",
+          "publisher": "aieii.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-05T05:03:59.195Z",
+          "content_hash": "3598fd8fb6284fa8",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e9b7c7aa8538dbf1",
+          "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+          "title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+          "publisher": "siliconvalleyinvestclub.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-05T05:03:59.633Z",
+          "content_hash": "40e5d01acf447bfc",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-05T05:05:36.106Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-2f0f3200b9800877",
+          "confidence": 0.55,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-05T05:05:36.106Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Even G2",
+            "Even R1"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Will Wang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-2f0f3200b9800877"
+      ],
+      "aggregation": {
+        "key": "EN-aa949c066d46acbf|pre_series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-05T05:05:36.181Z"
+    },
+    {
+      "event_id": "EV-2f0f3200b9800877",
+      "company_name": "Even Realities",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"前苹果工程师的AI眼镜获得1.5亿美元融资 - IDN Financials\" funding company investors product",
+        "\"Even Realities\" \"1.5亿美元\" funding investors round",
+        "\"Even Realities\" product customers case study",
+        "\"Even Realities\" \"前苹果工程师的AI眼镜获得1.5亿美元融资 - IDN Financials\" competitors product use case",
+        "\"Even Realities\" \"1.5亿美元\" investor quote why invested",
+        "\"Even Realities\" \"1.5亿美元\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"前苹果工程师的AI眼镜获得1.5亿美元融资 - IDN Financials\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"前苹果工程师的AI眼镜获得1.5亿美元融资 - IDN Financials\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Even Realities\" \"1.5亿美元\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Even Realities\" \"1.5亿美元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Even Realities\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Even Realities\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Even Realities\" \"前苹果工程师的AI眼镜获得1.5亿美元融资 - IDN Financials\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Even Realities\" \"前苹果工程师的AI眼镜获得1.5亿美元融资 - IDN Financials\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Even Realities\" \"1.5亿美元\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Even Realities\" \"1.5亿美元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Even Realities\" \"1.5亿美元\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Even Realities\" \"1.5亿美元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-05T05:05:36.181Z"
+    }
+  ]
+}
