@@ -69,6 +69,12 @@ test("China organization aliases include Chinese, English and legal names", () =
   assert.ok(biren.aliases.includes("壁仞科技"));
   const evenRealities = aliases.find((entity) => entity.canonicalName === "Even Realities");
   assert.deepEqual(evenRealities.aliases, ["Even Realities", "Even Realities Technology"]);
+  const aliasEvidence = config.entityAliases.entities.find((entity) => entity.canonical_name === "Even Realities").evidence_refs[0];
+  const fundingBundle = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/12-applications/funding-insights/2026-09-05.json"), "utf8"));
+  const sourceCard = fundingBundle.cards.find((card) => card.funding_insight_id === aliasEvidence.funding_insight_id);
+  const researchSource = sourceCard.research_sources.find((source) => source.source_id === aliasEvidence.source_id);
+  assert.equal(aliasEvidence.source_url, researchSource.source_url);
+  assert.ok(sourceCard.company.evidence_refs.some((ref) => ref.source_id === aliasEvidence.source_id && ref.quote === aliasEvidence.quote));
   assert.ok(aliases.length >= 30);
 });
 
