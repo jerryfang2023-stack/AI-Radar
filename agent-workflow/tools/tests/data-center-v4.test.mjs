@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
+import { isReusableBusinessSignalsRun } from "../lib/business-signals-checkpoint.mjs";
 import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, metricValues, modelAssistedEventEligibility, normalizeEventTitle, normalizedFundingMetric, organizationMentions, publicEventSourceTitleIssue, publicEventSourceUrlIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
@@ -2298,6 +2299,22 @@ test("daily workflow stages only V4-native outputs after the pre-commit gate suc
   );
 });
 
+test("durable checkpoints support repeated and cancelled recovery without trusting monitor conclusions", () => {
+  const checkpoint = (names, conclusion = "failure") => ({
+    workflowName: "WaveSight Business Signals PR", conclusion,
+    jobs: [{ steps: names.map((name) => ({ name, conclusion: "success" })) }],
+  });
+  const persisted = "Persist originals privately and enforce the public boundary";
+  const collected = "Collect source raw artifacts";
+  const restored = "Restore accepted source intake from failed run";
+  assert.equal(isReusableBusinessSignalsRun(checkpoint([collected, "Run Daily Monitor with QC"])), false);
+  assert.equal(isReusableBusinessSignalsRun(checkpoint([collected, persisted])), true);
+  assert.equal(isReusableBusinessSignalsRun(checkpoint([restored, persisted])), true);
+  assert.equal(isReusableBusinessSignalsRun(checkpoint([restored, persisted], "cancelled")), true);
+  assert.equal(isReusableBusinessSignalsRun(checkpoint([collected, persisted], "success")), false);
+  assert.equal(isReusableBusinessSignalsRun(checkpoint([restored])), false);
+});
+
 test("daily workflow resumes downstream failures without repeating accepted collection", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
   const dispatcher = fs.readFileSync(path.join(root, "agent-workflow/tools/run-business-signals-health-dispatch.mjs"), "utf8");
@@ -2311,16 +2328,17 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(workflow, /cp -a "\$resume_dir\/artifact\/\." \./u);
   assert.match(
     workflow,
-    /normalize-source-intake-titles\.mjs --date="\$\{RUN_DATE\}"[\s\S]*guanlan-monitor-quality-gate\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*assert-daily-production-chain\.mjs[\s\S]*--stage=post-monitor/u,
+    /guanlan-monitor-quality-gate\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*assert-daily-production-chain\.mjs[\s\S]*--stage=post-monitor/u,
     "a restored intake must be re-evaluated by the current quality gate before post-monitor handoff",
   );
   assert.match(workflow, /Collect source raw artifacts[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
   assert.match(workflow, /Run Daily Monitor with QC[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
-  assert.match(workflow, /const requiredSteps = \[\s*"Collect source raw artifacts",\s*"Run Daily Monitor with QC",\s*\]/u);
-  assert.match(dispatcher, /const requiredSteps = \[\s*"Collect source raw artifacts",\s*"Run Daily Monitor with QC",\s*\]/u);
+  assert.match(workflow, /isReusableBusinessSignalsRun\(run\)/u);
+  assert.match(dispatcher, /isReusableBusinessSignalsRun\(detail\)/u);
+  assert.doesNotMatch(workflow, /node agent-workflow\/tools\/normalize-(?:source-intake-titles|china-market-intake)\.mjs/u);
   assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?if: always\(\)/u);
-  assert.match(workflow, /Persist originals privately and enforce the public boundary[\s\S]*?\(steps\.monitor\.outcome == 'success' \|\| steps\.resume-artifact\.outputs\.used == 'true'\)/u);
-  assert.match(workflow, /Repair required source-title translations[\s\S]*backfill-source-title-translations\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*--write=true[\s\S]*normalize-source-intake-titles\.mjs --date="\$\{RUN_DATE\}"[\s\S]*build-data-center-v4\.mjs --date="\$\{RUN_DATE\}"[\s\S]*assert:source-titles/u);
+  assert.match(workflow, /Persist originals privately and enforce the public boundary[\s\S]*?\(steps\.source-artifacts\.outcome == 'success' \|\| steps\.resume-artifact\.outputs\.used == 'true'\)/u);
+  assert.match(workflow, /Repair required source-title translations[\s\S]*backfill-source-title-translations\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*--write=true[\s\S]*build-data-center-v4\.mjs --date="\$\{RUN_DATE\}"[\s\S]*assert:source-titles/u);
   assert.match(workflow, /Run Data Center V4 integrity gate[\s\S]*steps\.source-title-repair\.outcome == 'success'/u);
   assert.match(titleRepair, /const selectedDate = arg\("date"\)/u);
   assert.match(titleRepair, /filter\(\(date\) => !selectedDate \|\| date === selectedDate\)/u);

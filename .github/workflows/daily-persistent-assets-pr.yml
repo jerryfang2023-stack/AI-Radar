@@ -224,22 +224,10 @@ jobs:
 
           run_json="$(gh run view "$resume_run_id" --json workflowName,conclusion,jobs)"
           RUN_JSON="$run_json" node --input-type=module <<'NODE'
+          import { isReusableBusinessSignalsRun } from './agent-workflow/tools/lib/business-signals-checkpoint.mjs';
           const run = JSON.parse(process.env.RUN_JSON || "{}");
-          // Reuse only a run whose collection and monitor execution completed.
-          // The restored intake is re-evaluated with the current gate code below.
-          const requiredSteps = [
-            "Collect source raw artifacts",
-            "Run Daily Monitor with QC",
-          ];
-          if (run.workflowName !== "WaveSight Business Signals PR" || run.conclusion !== "failure") {
-            throw new Error("Resume source must be a failed WaveSight Business Signals PR run.");
-          }
-          const steps = (run.jobs || []).flatMap((job) => job.steps || []);
-          for (const name of requiredSteps) {
-            const step = steps.find((candidate) => candidate.name === name);
-            if (step?.conclusion !== "success") {
-              throw new Error(`Resume source is not reusable: ${name} concluded ${step?.conclusion || "missing"}.`);
-            }
+          if (!isReusableBusinessSignalsRun(run)) {
+            throw new Error("Resume source lacks a durable private-evidence checkpoint.");
           }
           NODE
 
@@ -258,8 +246,7 @@ jobs:
           gh run download "$resume_run_id" --name "$artifact_name" --dir "$resume_dir/artifact"
           cp -a "$resume_dir/artifact/." .
           cp "$resume_dir/source-title-translations-main.json" "$translation_db"
-          node agent-workflow/tools/normalize-china-market-intake.mjs --date="${RUN_DATE}"
-          node agent-workflow/tools/normalize-source-intake-titles.mjs --date="${RUN_DATE}"
+          # Accepted input bytes are immutable; metadata repairs are read-time overlays.
           node agent-workflow/tools/guanlan-monitor-quality-gate.mjs \
             --date="${RUN_DATE}" \
             --pass-score="${{ github.event.inputs.pass_score || '85' }}"
@@ -364,7 +351,7 @@ jobs:
 
       - name: Persist originals privately and enforce the public boundary
         id: evidence-boundary
-        if: always() && steps.existing-assets.outputs.skip != 'true' && (steps.monitor.outcome == 'success' || steps.resume-artifact.outputs.used == 'true')
+        if: always() && steps.existing-assets.outputs.skip != 'true' && (steps.source-artifacts.outcome == 'success' || steps.resume-artifact.outputs.used == 'true')
         shell: bash
         run: |
           set -euo pipefail
@@ -432,7 +419,12 @@ jobs:
             --date="${RUN_DATE}" \
             --write=true \
             --concurrency=3
-          node agent-workflow/tools/normalize-source-intake-titles.mjs --date="${RUN_DATE}"
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" add -A
+          if ! git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" diff --cached --quiet; then
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" commit -m "Persist source-title metadata for ${RUN_DATE}"
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --rebase origin main
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main
+          fi
           node agent-workflow/tools/build-data-center-v4.mjs --date="${RUN_DATE}"
           npm run assert:source-titles
 
@@ -571,7 +563,6 @@ jobs:
             --stage=pre-commit \
             --block-stale=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pre-commit-gate.log"
-          node agent-workflow/tools/normalize-source-intake-titles.mjs --date="${RUN_DATE}"
           npm run assert:source-titles
           node agent-workflow/tools/assert-data-center-projection-coverage.mjs \
             --date="${RUN_DATE}" \

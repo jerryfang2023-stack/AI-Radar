@@ -189,13 +189,10 @@ test("the daily post-monitor handoff runs the dated China market gate", () => {
     workflow,
     /Confirm V4 source-intake handoff[\s\S]*npm run assert:china-market -- --date="\$\{RUN_DATE\}" --stage=intake/u,
   );
+  assert.doesNotMatch(workflow, /node agent-workflow\/tools\/normalize-china-market-intake\.mjs/u);
   assert.match(
     workflow,
-    /Restore accepted source intake[\s\S]*normalize-china-market-intake\.mjs --date="\$\{RUN_DATE\}"/u,
-  );
-  assert.match(
-    workflow,
-    /Restore accepted source intake[\s\S]*source-title-translations-main\.json[\s\S]*normalize-source-intake-titles\.mjs --date="\$\{RUN_DATE\}"/u,
+    /Restore accepted source intake[\s\S]*source-title-translations-main\.json[\s\S]*guanlan-monitor-quality-gate\.mjs/u,
   );
   assert.match(
     workflow,
@@ -203,6 +200,6 @@ test("the daily post-monitor handoff runs the dated China market gate", () => {
   );
   assert.match(
     workflow,
-    /Confirm site data freshness[\s\S]*normalize-source-intake-titles\.mjs --date="\$\{RUN_DATE\}"[\s\S]*npm run assert:source-titles/u,
+    /Confirm site data freshness[\s\S]*npm run assert:source-titles/u,
   );
 });

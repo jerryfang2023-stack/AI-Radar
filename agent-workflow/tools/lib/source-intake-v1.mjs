@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { loadPrivateEvidenceRecord } from "./private-evidence-store.mjs";
+import { loadSourceTitleTranslations, titleTranslationKey, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
 export const SOURCE_INTAKE_VERSION = "SOURCE-INTAKE-V1.1";
 export const RAW_VERSION = "RAW-V4.0";
@@ -77,9 +78,12 @@ function repairedPrivateSourceTitle(raw = {}, document = {}) {
   return privateTitle.startsWith(intakePrefix) ? privateTitle : "";
 }
 
-export function applyIntakeTitleMetadata(raw = {}, document = {}) {
+export function applyIntakeTitleMetadata(raw = {}, document = {}, approvedTranslations = new Map()) {
   const marketScope = document.market_scope || {};
   const repairedTitle = repairedPrivateSourceTitle(raw, document);
+  const title = repairedTitle || clean(document.title_original) || clean(raw.title);
+  const approvedTitle = approvedTranslations.get(titleTranslationKey(title)) || "";
+  const hasApprovedTitle = titleTranslationLooksUsable(title, approvedTitle);
   return {
     ...raw,
     // The structured intake is the authoritative identity envelope. Private
@@ -91,8 +95,12 @@ export function applyIntakeTitleMetadata(raw = {}, document = {}) {
     content_hash: clean(document.content_hash) || clean(raw.content_hash),
     // Accepted intake remains immutable. A later private-evidence metadata
     // repair may only expand the exact truncated prefix at read time.
-    title: repairedTitle || clean(document.title_original) || clean(raw.title),
-    title_zh: repairedTitle ? clean(raw.title_zh) : clean(document.title_zh) || clean(raw.title_zh),
+    title,
+    title_zh: hasApprovedTitle ? approvedTitle : repairedTitle ? clean(raw.title_zh) : clean(document.title_zh) || clean(raw.title_zh),
+    ...(hasApprovedTitle ? {
+      title_translation_status: "translated",
+      title_translation_method: "source_title_translation_db",
+    } : {}),
     published_at: clean(document.published_at) || clean(raw.published_at),
     source_registry_id: clean(marketScope.source_registry_id) || clean(raw.source_registry_id),
     source_region: clean(marketScope.source_region) || clean(raw.source_region),
@@ -213,7 +221,7 @@ export function readSourceIntake(root, date) {
   if (payload.schema_version !== SOURCE_INTAKE_VERSION || payload.data_date !== date) {
     throw new Error(`Invalid structured source intake: ${rel(root, file)}`);
   }
-  return { file, payload };
+  return { file, payload: normalizeSourceIntakeMarketScopes(payload).payload };
 }
 
 export function mergeSourceIntakes(...payloads) {
@@ -259,6 +267,7 @@ export function mergeSourceIntakes(...payloads) {
 export function loadSourceIntakeEntries(root, date) {
   const intake = readSourceIntake(root, date);
   if (!intake) return null;
+  const approvedTranslations = loadSourceTitleTranslations(path.join(root, "01-SiteV2/content/11-databases/source-title-translations.json"));
   const entries = intake.payload.raw_documents.map((document) => {
     const bodyRef = clean(document.body_ref);
     if (!bodyRef.startsWith("evidence://")) {
@@ -268,7 +277,7 @@ export function loadSourceIntakeEntries(root, date) {
       }
       if (fs.existsSync(file)) {
         const raw = JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
-        return { raw: applyIntakeTitleMetadata(raw, document), file, intake_document: document };
+        return { raw: applyIntakeTitleMetadata(raw, document, approvedTranslations), file, intake_document: document };
       }
     }
     const privateEvidence = loadPrivateEvidenceRecord(root, bodyRef, document.content_hash, {
@@ -276,7 +285,7 @@ export function loadSourceIntakeEntries(root, date) {
       dataDate: date,
     });
     return {
-      raw: applyIntakeTitleMetadata(privateEvidence.raw, document),
+      raw: applyIntakeTitleMetadata(privateEvidence.raw, document, approvedTranslations),
       file: privateEvidence.logicalFile,
       evidence_entry: privateEvidence.entry,
       intake_document: document,

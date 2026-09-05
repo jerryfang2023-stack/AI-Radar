@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
+import { isReusableBusinessSignalsRun } from "./lib/business-signals-checkpoint.mjs";
 
 const root = process.cwd();
 
@@ -175,24 +176,14 @@ function publicationState() {
 }
 
 function reusableFailedRun(sameDateRuns) {
-  // Collection and monitor success establish reusable accepted input. The
-  // workflow reruns the handoff and private evidence boundary after restore.
-  const requiredSteps = [
-    "Collect source raw artifacts",
-    "Run Daily Monitor with QC",
-  ];
-  for (const run of sameDateRuns.filter((candidate) => candidate.conclusion === "failure")) {
+  for (const run of sameDateRuns.filter((candidate) => ["failure", "cancelled", "timed_out"].includes(candidate.conclusion))) {
     const view = runOptional("gh", [
       "run", "view", String(run.databaseId),
       "--json", "workflowName,conclusion,jobs",
     ]);
     if (!view.ok) continue;
     const detail = readJsonText(view.stdout, {});
-    const steps = (detail.jobs || []).flatMap((job) => job.steps || []);
-    const evidenceReady = detail.workflowName === "WaveSight Business Signals PR"
-      && detail.conclusion === "failure"
-      && requiredSteps.every((name) => steps.some((step) => step.name === name && step.conclusion === "success"));
-    if (!evidenceReady) continue;
+    if (!isReusableBusinessSignalsRun(detail)) continue;
 
     const artifacts = runOptional("gh", [
       "api", `repos/{owner}/{repo}/actions/runs/${run.databaseId}/artifacts`,
