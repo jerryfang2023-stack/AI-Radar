@@ -351,6 +351,12 @@ test("accepted Chinese proceeds quote supplies an English company name instead o
     source_quote: "Even Realities获得1.5亿美元融资，估值达10亿美元，用于AI扩张。" };
   assert.equal(subjectCompanyForEvent(event, [entity], {}, [claim]).canonical_name, "Even Realities");
   assert.equal(subjectCompanyForEvent(event, [entity], {}, [{ ...claim, verification_status: "pending" }])?.canonical_name === "Even Realities", false);
+  for (const quote of ["Meituan完成对Even Realities的1.5亿美元融资领投。", "Tencent宣布完成对Even Realities的1.5亿美元融资。"] ) {
+    const namedEntity = { ...entity, canonical_name: "Even Realities" };
+    assert.equal(subjectCompanyForEvent(event, [namedEntity], {}, [{ ...claim,
+      subject: namedEntity.canonical_name, source_quote: quote }]).canonical_name, "Even Realities");
+    assert.equal(subjectCompanyForEvent(event, [entity], {}, [{ ...claim, source_quote: quote }]).canonical_name, fragment);
+  }
 });
 
 test("funding research prompt enumerates every governed taxonomy list ID", () => {

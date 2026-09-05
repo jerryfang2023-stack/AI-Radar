@@ -1112,6 +1112,9 @@ function descriptiveCompanyTail(name = "") {
 }
 
 function fundedStartupNameFromClaims(claims = []) {
+  const hasHeadlineSubject = claims.some((claim) => claim?.claim_type === "funding"
+    && claim?.verification_status === "accepted" && fundingAmountMentions(claim.subject).length > 0
+    && /(?:融资|获得|获|完成|筹集)/u.test(clean(claim.subject)));
   const acceptedQuotes = claims
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
     .map((claim) => clean(claim.source_quote))
@@ -1120,7 +1123,10 @@ function fundedStartupNameFromClaims(claims = []) {
     // Chinese coverage can name an English company directly before the
     // financing verb while the deterministic Claim subject is a headline.
     const namedProceeds = quote.match(/(?:^|[。！？；;：:])\s*([A-Z][A-Za-z0-9&.'-]*(?:[ \t]+[A-Z][A-Za-z0-9&.'-]*){0,4})\s*(?:已|宣布)?(?:获得|获|完成|筹集)[^。！？；;]{0,60}(?:融资|募资)/u);
-    if (namedProceeds && fundingAmountMentions(namedProceeds[0]).some((mention) => mention.round)) {
+    if (hasHeadlineSubject && namedProceeds
+      && !/(?:对|投资|领投|跟投|参投)/u.test(namedProceeds[0])
+      && !/(?:领投|跟投|参投)/u.test(quote)
+      && fundingAmountMentions(namedProceeds[0]).some((mention) => mention.round)) {
       return clean(namedProceeds[1]);
     }
     const chineseLegalPattern = /(?:^|[———:：，,；;\s])([\p{Script=Han}A-Za-z0-9·&.-]{2,40}?(?:有限责任公司|股份有限公司|有限公司))(?=[（(，,。；;\s]|$)/gu;
