@@ -454,6 +454,21 @@ test("source-title backfill hydrates private evidence without mutating accepted 
   assert.deepEqual(acceptedDocument, acceptedBefore);
 });
 
+test("approved translations repair an unchanged source title only at read time", () => {
+  const original = "Acme AI raises $10 million in Series A funding";
+  const chinese = "Acme AI 完成 1000 万美元 A 轮融资";
+  const accepted = { title_original: original, title_zh: "翻译失败…", content_hash: "abc123" };
+  const before = structuredClone(accepted);
+  const hydrated = applyIntakeTitleMetadata({ title: original }, accepted,
+    new Map([[titleTranslationKey(original), chinese]]));
+  assert.equal(hydrated.title_zh, chinese);
+  assert.equal(hydrated.title_translation_method, "source_title_translation_db");
+  assert.deepEqual(accepted, before);
+  const unmatched = applyIntakeTitleMetadata({ title: original }, accepted,
+    new Map([[titleTranslationKey("A different company raises funding"), chinese]]));
+  assert.equal(unmatched.title_zh, accepted.title_zh);
+});
+
 test("source-title backfill updates private metadata while public intake and index stay byte-identical", () => {
   const projectRoot = process.cwd();
   const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-title-backfill-public-"));
