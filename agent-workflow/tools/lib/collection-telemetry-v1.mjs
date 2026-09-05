@@ -61,14 +61,20 @@ export function buildCollectionTelemetry({
   date,
   generatedAt = new Date().toISOString(),
   outcomes = {},
+  reportsDir,
 }) {
   const bundleDir = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4", date);
-  const reportDir = path.join(root, "agent-workflow", "reports");
+  const trackedReportDir = path.join(root, "agent-workflow", "reports");
+  const reportDir = path.resolve(reportsDir || trackedReportDir);
+  const inputReport = (name) => {
+    const runtimeFile = path.join(reportDir, name);
+    return fs.existsSync(runtimeFile) ? runtimeFile : path.join(trackedReportDir, name);
+  };
   const manifestFile = path.join(bundleDir, "manifest.json");
   const gateFile = path.join(reportDir, `${date}-data-center-v4-integrity-gate.json`);
-  const persistentManifestFile = path.join(reportDir, `${date}-persistent-asset-manifest.json`);
-  const monitorReportFile = path.join(reportDir, `${date}-guanlan-daily-monitor-log.md`);
-  const monitorQualityReportFile = path.join(reportDir, `${date}-guanlan-monitor-quality-gate.md`);
+  const persistentManifestFile = inputReport(`${date}-persistent-asset-manifest.json`);
+  const monitorReportFile = inputReport(`${date}-guanlan-daily-monitor-log.md`);
+  const monitorQualityReportFile = inputReport(`${date}-guanlan-monitor-quality-gate.md`);
   const manifest = readJson(manifestFile, {});
   const gate = readJson(gateFile, {});
   const persistentManifest = readJson(persistentManifestFile, {});
@@ -162,6 +168,7 @@ export function buildCollectionTelemetry({
       ops_version: OPS_VERSION,
       data_date: date,
       generated_at: generatedAt,
+      source_snapshot: gate.source_snapshot || "",
       scope: "OPS",
       canonical_writeback: false,
       source_of_truth: "Data Center V4 manifest and integrity gate",

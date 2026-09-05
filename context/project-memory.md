@@ -56,6 +56,8 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - GitHub Actions schedule can be delayed or skipped during busy periods; Hermes must use staged checks instead of waiting blindly.
 - Business Signals should not fail only because one source lane failed; source artifacts should isolate source-lane failures behind unified quality gates.
 - Business Signals can regress when immutable source capture is incomplete, source titles remain untranslated before V4 event publication, or duplicate discovery candidates reduce accepted factual coverage.
+- Catalog publication coverage must share the frontstage's accepted-review admission and merge resolution; factual verification alone does not authorize a public company/product profile.
+- Runtime diagnostics, repair logs and unreviewed incident drafts stay outside the primary checkout. Large child output goes to files, and a repair handoff must outlive the inner repair timeout; see `docs/daily-production-recovery.md`.
 - First-Line Viewpoints must keep morning RSS collection and afternoon follow-builders skill publishing separate.
 - Community Intelligence depends on local logged-in collection; GitHub can publish already collected data but cannot replace the logged-in local collector.
 - Weekly and monthly report content is sourced from `01-SiteV2/content/12-applications/industry-reports/` before site generation.

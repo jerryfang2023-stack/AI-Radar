@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { applyEntityReviewDecisions, publicCatalogEntityIds } from "../product/entity-history-v1.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -32,10 +34,6 @@ function ratio(numerator, denominator) {
   return denominator ? numerator / denominator : 1;
 }
 
-function normalizeName(value = "") {
-  return String(value).normalize("NFKC").toLocaleLowerCase().replace(/\s+/gu, " ").trim();
-}
-
 export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, reviewLedger = {}) {
   const failures = [];
   const warnings = [];
@@ -61,44 +59,30 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
   const entityIds = new Set(entities.map((item) => item.entity_id).filter(Boolean));
   const mentionedEntityIds = new Set(mentions.map((item) => item.entity_id).filter(Boolean));
   const acceptedEvents = events.filter((item) => ["verified", "partial"].includes(item.publication_status));
-  const eventEntityIds = new Set(acceptedEvents.flatMap((item) => item.entities || []).filter(Boolean));
-  const reviewById = new Map((reviewLedger.decisions || []).map((decision) => [decision.entity_id, decision]));
-  const resolveReviewedId = (entityId) => {
-    const seen = new Set();
-    let resolved = entityId;
-    while (reviewById.get(resolved)?.action === "merge" && !seen.has(resolved)) {
-      seen.add(resolved);
-      resolved = reviewById.get(resolved).merge_into_entity_id;
-    }
-    return resolved;
-  };
-  const reviewedEntity = (item) => {
-    const decision = reviewById.get(item.entity_id);
-    if (decision?.action === "quarantine") return null;
-    const reviewedType = { company: "organization_candidate", product: "product_candidate", person: "person_candidate" }[decision?.canonical?.catalog_type];
-    return {
-      ...item,
-      entity_id: resolveReviewedId(item.entity_id),
-      canonical_name: decision?.canonical?.name || item.canonical_name,
-      entity_type: reviewedType || item.entity_type,
-      verification_status: decision ? "verified" : item.verification_status,
-    };
-  };
-  const uniqueReviewedEntities = (rows) => [...new Map(rows.filter(Boolean).map((item) => [item.entity_id, item])).values()];
-  const participatingEntities = uniqueReviewedEntities(entities
-    .filter((item) => eventEntityIds.has(item.entity_id))
-    .map(reviewedEntity));
+  const reviewed = applyEntityReviewDecisions(entities, acceptedEvents.map((event) => ({
+    entityIds: event.entities || [],
+    claims: (event.claim_refs || []).map((id) => ({ id })),
+  })), reviewLedger);
+  const eventEntityIds = new Set(reviewed.events.flatMap((item) => item.entityIds || []));
+  const catalogIds = publicCatalogEntityIds(reviewLedger);
+  const participatingEntities = reviewed.entityRows.filter((item) => eventEntityIds.has(item.entity_id));
+  const pendingCatalogEntities = participatingEntities.filter((item) => (
+    ["organization_candidate", "product_candidate"].includes(item.entity_type)
+    && !catalogIds.has(item.entity_id)
+  ));
   const participatingVerifiedOrganizations = participatingEntities.filter((item) => (
     item.entity_type === "organization_candidate"
     && item.verification_status === "verified"
+    && catalogIds.has(item.entity_id)
   ));
   const participatingVerifiedProducts = participatingEntities.filter((item) => (
     item.entity_type === "product_candidate"
     && item.verification_status === "verified"
+    && catalogIds.has(item.entity_id)
   ));
 
   const companyIds = new Set((frontstage.companies || []).map((item) => item.id).filter(Boolean));
-  const productNames = new Set((frontstage.products || []).map((item) => normalizeName(item.name)).filter(Boolean));
+  const productIds = new Set((frontstage.products || []).map((item) => item.id).filter(Boolean));
   const frontstageFde = new Map((frontstage.fde || []).map((item) => [item.id, item]));
   const frontstageHardware = new Map((frontstage.hardware || []).map((item) => [item.id, item]));
   const frontstageFdeDossiers = new Map((frontstage.fdeDossiers || []).map((item) => [item.implementationKey, item]));
@@ -122,7 +106,7 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
   if (unmentionedEntities.length) failures.push(`${unmentionedEntities.length} entity record(s) have no EntityMention evidence`);
 
   const missingCompanies = participatingVerifiedOrganizations.filter((item) => !companyIds.has(item.entity_id));
-  const missingProducts = participatingVerifiedProducts.filter((item) => !productNames.has(normalizeName(item.canonical_name)));
+  const missingProducts = participatingVerifiedProducts.filter((item) => !productIds.has(item.entity_id));
   const missingFde = fde.filter((item) => {
     const projected = frontstageFde.get(item.fde_id);
     return !projected || projected.dataDate !== expectedDate;
@@ -153,6 +137,7 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
   if (missingHardwareSnapshots.length) failures.push(`frontstage hardware catalog is missing ${missingHardwareSnapshots.length} current-batch snapshot(s)`);
   if (projectedHardwareFactCount < hardwareFacts.length) failures.push(`frontstage hardware catalog represents ${projectedHardwareFactCount}/${hardwareFacts.length} current-batch fact(s)`);
   if (missingFunnelLenses.length) failures.push(`frontstage monitoring funnel is missing lens(es): ${missingFunnelLenses.map((item) => item.lens).join(", ")}`);
+  if (pendingCatalogEntities.length) warnings.push(`${pendingCatalogEntities.length} participating entity/entities await public catalog review: ${pendingCatalogEntities.map((item) => item.canonical_name).join(", ")}`);
   if (!fde.length) warnings.push("No source-bounded FDE record was produced for the daily batch.");
   if (!hardware.length) warnings.push("No source-bounded hardware record was produced for the daily batch.");
   if (!fdeObservations.length) warnings.push("No Claim-native FDE observation was produced for the daily batch.");
@@ -179,6 +164,7 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
       accepted_events: acceptedEvents.length,
       verified_event_organizations: participatingVerifiedOrganizations.length,
       verified_event_products: participatingVerifiedProducts.length,
+      pending_catalog_entities: pendingCatalogEntities.length,
       fde_records: fde.length,
       hardware_records: hardware.length,
       fde_observations: fdeObservations.length,
@@ -275,13 +261,14 @@ function runFixtures() {
     hardwareCatalog: [{ id: "HWC-1", snapshotKey: "snapshot-1", dataDate: "2026-07-17", factCount: 1 }],
     monitoringFunnel: [{ funnel_id: "LF-1", lens: "fde", date: "2026-07-17" }],
   };
-  const passed = evaluateProjectionCoverage(bundle, frontstage, "2026-07-17");
-  const failed = evaluateProjectionCoverage(bundle, { ...frontstage, companies: [] }, "2026-07-17");
+  const review = { decisions: [{ entity_id: "EN-1", review_status: "accepted", reviewer: "fixture", action: "confirm", canonical: { catalog_type: "company" } }] };
+  const passed = evaluateProjectionCoverage(bundle, frontstage, "2026-07-17", review);
+  const failed = evaluateProjectionCoverage(bundle, { ...frontstage, companies: [] }, "2026-07-17", review);
   const quarantined = evaluateProjectionCoverage({
     ...bundle,
     entities: [{ ...entity, entity_type: "product_candidate" }],
   }, { ...frontstage, companies: [], products: [] }, "2026-07-17", {
-    decisions: [{ entity_id: "EN-1", action: "quarantine", canonical: { catalog_type: "other" } }],
+    decisions: [{ entity_id: "EN-1", review_status: "accepted", reviewer: "fixture", action: "quarantine", canonical: { catalog_type: "other" } }],
   });
   if (!passed.ok || failed.ok || !quarantined.ok) throw new Error("projection coverage fixtures failed");
   console.log(JSON.stringify({ ok: true, fixture: "data-center-projection-coverage" }, null, 2));
@@ -306,4 +293,4 @@ function main() {
   if (!result.ok) process.exit(1);
 }
 
-main();
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

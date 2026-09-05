@@ -5,6 +5,8 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { isReusableBusinessSignalsRun } from "../lib/business-signals-checkpoint.mjs";
+import { evaluateProjectionCoverage } from "../assert-data-center-projection-coverage.mjs";
+import { publicCatalogEntityIds } from "../../product/entity-history-v1.mjs";
 import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, metricValues, modelAssistedEventEligibility, normalizeEventTitle, normalizedFundingMetric, organizationMentions, publicEventSourceTitleIssue, publicEventSourceUrlIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
@@ -15,6 +17,41 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
+
+test("catalog coverage shares public admission and never auto-approves pending entities", () => {
+  const entity = { entity_id: "EN-1", canonical_name: "Alta", entity_type: "organization_candidate", verification_status: "verified" };
+  const bundle = { entities: [entity], entity_mentions: [{ entity_id: "EN-1" }], canonical_events: [{ event_id: "EV-1", publication_status: "verified", entities: ["EN-1"] }] };
+  const frontstage = { meta: { currentDate: date }, companies: [], products: [] };
+  const decision = { entity_id: "EN-1", action: "confirm", review_status: "accepted", reviewer: "fixture", canonical: { catalog_type: "company", name: "Alta" } };
+  for (const decisions of [[], [{ ...decision, review_status: "pending" }], [{ ...decision, reviewer: "" }]]) {
+    const review = { decisions };
+    const result = evaluateProjectionCoverage(bundle, frontstage, date, review);
+    assert.equal(result.ok, true);
+    assert.equal(result.counts.pending_catalog_entities, 1);
+    assert.match(result.warnings.join(" "), /Alta/u);
+    assert.equal(publicCatalogEntityIds(review).size, 0);
+  }
+  const accepted = { decisions: [decision] };
+  assert.equal(evaluateProjectionCoverage(bundle, frontstage, date, accepted).ok, false);
+  assert.equal(evaluateProjectionCoverage(bundle, { ...frontstage, companies: [{ id: "EN-1" }] }, date, accepted).ok, true);
+  const merged = { decisions: [{ ...decision, action: "merge", merge_into_entity_id: "EN-2" }, { ...decision, entity_id: "EN-2", action: "correct" }] };
+  assert.equal(evaluateProjectionCoverage(bundle, { ...frontstage, companies: [{ id: "EN-2" }] }, date, merged).ok, true);
+  assert.equal(evaluateProjectionCoverage(bundle, frontstage, date, merged).ok, false);
+  const evidenceLinked = { ...bundle, canonical_events: [{ ...bundle.canonical_events[0], claim_refs: ["CL-1"] }] };
+  const linkedReview = { decisions: [decision, { ...decision, entity_id: "EN-2", canonical: { catalog_type: "company", name: "Linked company" }, evidence: { claim_refs: ["CL-1"] } }] };
+  assert.equal(evaluateProjectionCoverage(evidenceLinked, { ...frontstage, companies: [{ id: "EN-1" }] }, date, linkedReview).ok, false);
+  assert.equal(evaluateProjectionCoverage(evidenceLinked, { ...frontstage, companies: [{ id: "EN-1" }, { id: "EN-2" }] }, date, linkedReview).ok, true);
+  const quarantined = evaluateProjectionCoverage(bundle, frontstage, date, { decisions: [{ ...decision, action: "quarantine" }] });
+  assert.equal(quarantined.ok, true);
+  assert.equal(quarantined.counts.pending_catalog_entities, 0);
+  assert.equal(evaluateProjectionCoverage({ ...bundle, entity_mentions: [] }, frontstage, date).ok, false);
+  assert.equal(evaluateProjectionCoverage({ ...bundle, canonical_events: [{ event_id: "EV-1", publication_status: "verified", entities: [] }] }, frontstage, date).ok, false);
+  assert.equal(evaluateProjectionCoverage({ ...bundle, canonical_events: [{ event_id: "EV-1", publication_status: "verified", entities: ["missing"] }] }, frontstage, date).ok, false);
+  const productBundle = { ...bundle, entities: [{ ...entity, entity_type: "product_candidate" }] };
+  const productReview = { decisions: [{ ...decision, canonical: { catalog_type: "product", name: "Alta" } }] };
+  assert.equal(evaluateProjectionCoverage(productBundle, { ...frontstage, products: [{ id: "wrong", name: "Alta" }] }, date, productReview).ok, false);
+  assert.equal(evaluateProjectionCoverage(productBundle, { ...frontstage, products: [{ id: "EN-1", name: "Alta" }] }, date, productReview).ok, true);
+});
 
 test("technical tag exclusions are scoped to the matching evidence sentence", () => {
   const claim = {

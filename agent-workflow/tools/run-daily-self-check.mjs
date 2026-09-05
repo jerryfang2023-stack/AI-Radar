@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { runLoggedCommand, defaultRuntimeDirectory } from "./lib/logged-command.mjs";
 import { shouldRebuildSkillStore, shouldSyncSkillStore } from "./lib/daily-self-check-policy.mjs";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
 
@@ -12,7 +12,7 @@ const args = new Map(
     return [key, rest.join("=") || "true"];
   })
 );
-const reportsDir = path.resolve(root, args.get("runtime-dir") || path.join("agent-workflow", "reports"));
+const reportsDir = path.resolve(root, args.get("runtime-dir") || defaultRuntimeDirectory());
 
 const date = args.get("date") || shanghaiDate();
 const repairMode = args.get("repair") || "off";
@@ -49,7 +49,9 @@ function exists(file) {
 
 function runCommand(label, command, argsList, timeoutMs = 120000) {
   const startedAt = new Date().toISOString();
-  const result = spawnSync(command, argsList, {
+  const result = runLoggedCommand(command, argsList, {
+    logDir: path.join(reportsDir, "command-logs"),
+    label,
     cwd: root,
     encoding: "utf8",
     timeout: timeoutMs,
@@ -61,8 +63,10 @@ function runCommand(label, command, argsList, timeoutMs = 120000) {
     ok: !result.error && result.status === 0,
     status: result.status,
     error: result.error?.message || "",
-    stdout: String(result.stdout || "").trim().slice(0, 8000),
-    stderr: String(result.stderr || "").trim().slice(0, 8000),
+    stdout: String(result.stdout || "").trim().slice(-8000),
+    stderr: String(result.stderr || "").trim().slice(-8000),
+    stdout_log: result.stdout_log,
+    stderr_log: result.stderr_log,
     started_at: startedAt,
     finished_at: new Date().toISOString(),
   };
@@ -139,21 +143,17 @@ function runSafeRepairs(report) {
   const attempts = [];
   if (!["safe", "on", "true", "1"].includes(String(repairMode).toLowerCase())) return attempts;
   const businessLane = (report?.lanes || []).find((lane) => lane.id === "business_signals");
-  const runtimeDashboard = args.has("runtime-dir")
-    ? path.join(reportsDir, "local-skill-store-data.js")
-    : "";
+  const runtimeDashboard = path.join(reportsDir, "local-skill-store-data.js");
   function rebuildSkillDashboard(label) {
-    return runtimeDashboard
-      ? runCommand(label, process.execPath, [
+    return runCommand(label, process.execPath, [
         "agent-workflow/tools/build-skill-store-dashboard.mjs",
         `--output=${runtimeDashboard}`,
-      ])
-      : runNpm(label, "build:skill-store-dashboard");
+      ]);
   }
   function checkSkillDashboard(label) {
     return runCommand(label, process.execPath, [
       "agent-workflow/tools/check-skill-ops.mjs",
-      ...(runtimeDashboard ? [`--dashboard=${runtimeDashboard}`] : []),
+      `--dashboard=${runtimeDashboard}`,
     ]);
   }
 
@@ -196,7 +196,11 @@ function runSafeRepairs(report) {
         `--date=${date}`,
         `--reports-dir=${reportsDir}`,
       ], 120000));
-      attempts.push(runNpm("rebuild collection telemetry", "build:collection-telemetry", [`--date=${date}`], 120000));
+      attempts.push(runNpm("rebuild collection telemetry", "build:collection-telemetry", [
+        `--date=${date}`,
+        `--reports-dir=${reportsDir}`,
+        `--output=${path.join(reportsDir, `${date}-collection-telemetry-v1.json`)}`,
+      ], 120000));
     }
   }
 

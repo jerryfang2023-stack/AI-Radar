@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { pathToFileURL } from "node:url";
+import { runtimeSourceSnapshot } from "../lib/runtime-source-snapshot.mjs";
 
 const repositoryRoot = process.cwd();
 const scriptFile = path.join(repositoryRoot, "agent-workflow", "tools", "write-daily-supervision-report.mjs");
@@ -59,6 +60,7 @@ test("Business supervision passes V4 telemetry with no V3 desk, graph, Cards, or
       process.execPath,
       path.join(fixtureRoot, "test-harness.mjs"),
       `--date=${date}`,
+      `--output-dir=${path.join(fixtureRoot, "runtime")}`,
       "--github=off",
       "--scheduled-task=off",
       "--hermes=off",
@@ -75,6 +77,20 @@ test("Business supervision passes V4 telemetry with no V3 desk, graph, Cards, or
     assert.equal(lane.evidence.compatibility.active_consumers, 0);
     assert.equal(lane.problems.length, 0);
     assert.ok(lane.warnings.every((message) => !/V3 observation desk|Signal Card directory/u.test(message)));
+    const bundleManifest = path.join(fixtureRoot, "01-SiteV2", "content", "11-databases", "data-center-v4", date, "manifest.json");
+    writeJson(bundleManifest, { date, build: "morning" });
+    const morningSnapshot = runtimeSourceSnapshot(fixtureRoot, date);
+    const gatePath = path.join(fixtureRoot, "runtime", `${date}-data-center-v4-integrity-gate.json`);
+    const telemetryPath = path.join(fixtureRoot, "runtime", `${date}-collection-telemetry-v1.json`);
+    writeJson(gatePath, { date, ok: false, failures: ["morning failure"], source_snapshot: morningSnapshot });
+    writeJson(telemetryPath, { meta: { data_date: date, source_snapshot: morningSnapshot }, v4_gate: { status: "failed" } });
+    assert.equal(supervisor.buildBusinessSignalsLane().evidence.dataCenterV4.diagnosticSnapshot, "matching_runtime");
+    assert.equal(supervisor.buildBusinessSignalsLane().evidence.dataHealth.healthy, false);
+    writeJson(bundleManifest, { date, build: "published afternoon" });
+    const publishedLane = supervisor.buildBusinessSignalsLane();
+    assert.equal(publishedLane.evidence.dataCenterV4.diagnosticSnapshot, "published");
+    assert.equal(publishedLane.evidence.dataHealth.healthy, true);
+    assert.equal(publishedLane.evidence.dataCenterV4.telemetryGateStatus, "passed");
   } finally {
     process.chdir(originalCwd);
     process.argv = originalArgv;

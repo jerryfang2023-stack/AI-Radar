@@ -3,6 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import { execFileSync } from "node:child_process";
 import { buildCollectionTelemetry, OPS_VERSION } from "../lib/collection-telemetry-v1.mjs";
 import { buildOpsSourceQuality } from "../lib/ops-source-quality.mjs";
 import { finalizeOpsPublicationData } from "../finalize-ops-publication-for-pages.mjs";
@@ -68,6 +69,29 @@ test("V4 telemetry passes without V3 desk, graph, or Signal Cards", () => {
   assert.ok(evidence.every((item) => !path.isAbsolute(item)));
   assert.ok(evidence.every((item) => !item.includes("\\")));
   assert.ok(evidence.every((item) => item.startsWith("01-SiteV2/") || item.startsWith("agent-workflow/")));
+});
+
+test("runtime telemetry uses the new gate without overwriting published files", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-telemetry-runtime-"));
+  const date = "2026-09-05";
+  const runtime = path.join(root, "runtime");
+  const gate = `${date}-data-center-v4-integrity-gate.json`;
+  const published = "01-SiteV2/site/data/collection-telemetry-v1.json";
+  try {
+    writeJson(root, `01-SiteV2/content/11-databases/data-center-v4/${date}/manifest.json`, { date });
+    writeJson(root, `agent-workflow/reports/${gate}`, { date, ok: false, failures: ["old failure"] });
+    writeJson(root, `runtime/${gate}`, { date, ok: true, failures: [] });
+    writeJson(root, published, { preserved: true });
+    const before = fs.readFileSync(path.join(root, published));
+    const output = path.join(runtime, `${date}-collection-telemetry-v1.json`);
+    execFileSync(process.execPath, [path.resolve("agent-workflow/tools/build-collection-telemetry-v1.mjs"),
+      `--root=${root}`, `--date=${date}`, `--reports-dir=${runtime}`, `--output=${output}`,
+    ], { encoding: "utf8", timeout: 10000 });
+    assert.equal(JSON.parse(fs.readFileSync(output)).v4_gate.status, "passed");
+    assert.deepEqual(fs.readFileSync(path.join(root, published)), before);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
 });
 
 test("application projection is not passed while any projection outcome is unknown", () => {

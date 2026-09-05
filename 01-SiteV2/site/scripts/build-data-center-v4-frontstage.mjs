@@ -6,7 +6,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   buildEntityHistoryService,
-  mergeEntityReviewDecisionSets
+  mergeEntityReviewDecisionSets,
+  publicCatalogEntityIds
 } from "../../../agent-workflow/product/entity-history-v1.mjs";
 import { productEntityDisplayType } from "../../../agent-workflow/product/product-entity-normalizer.mjs";
 import { classificationEntityIds } from "../../../agent-workflow/product/classification-entity-scope.mjs";
@@ -625,11 +626,7 @@ export function buildViewpoints(root, entityProfiles = []) {
 
 export function buildEntityCollections(service, eventsById, reviewDecisions = null) {
   const enforceCatalogReview = reviewDecisions !== null;
-  const reviewedCatalogIds = new Set((Array.isArray(reviewDecisions) ? reviewDecisions : reviewDecisions?.decisions || [])
-    .filter((decision) => decision.review_status === "accepted")
-    .filter((decision) => ["confirm", "correct"].includes(decision.action))
-    .filter((decision) => ["company", "product"].includes(decision.canonical?.catalog_type))
-    .map((decision) => decision.entity_id));
+  const reviewedCatalogIds = publicCatalogEntityIds(reviewDecisions || {});
   const nodeById = new Map(service.taxonomyNodes.map((item) => [item.id, item]));
   const nameById = new Map(service.profiles.map((item) => [item.id, item.name]));
   const profileById = new Map(service.profiles.map((item) => [item.id, item]));
