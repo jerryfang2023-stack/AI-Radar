@@ -30,7 +30,7 @@ jobs:
     env:
       # Tests must isolate fixtures even when the production job sets this.
       # No private evidence checkout, credentials, collection, or publication.
-      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ runner.temp }}/nonexistent-production-evidence
+      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ github.workspace }}/../nonexistent-production-evidence
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
