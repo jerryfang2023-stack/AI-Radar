@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -24,6 +24,7 @@
       "EV-d5c00f302e1f808c",
       "EV-7263caa45bbf168e",
       "EV-3d9aa640411471ea",
+      "EV-049c7d6cdc237a59",
       "EV-48d22452ef4464fc",
       "EV-cd7ba52564d4091e",
       "EV-e781e169725006f0",
@@ -55,6 +56,7 @@
       "EN-b5318593e1260f2f",
       "EN-968e2d5b08687bf4",
       "EN-87c730bc4f32459e",
+      "EN-9b91d0f808382601",
       "EN-e12c9f7f64dec58c",
       "EN-e3ce9cc5efa9354c",
       "EN-8d4321d936320802",
@@ -75,7 +77,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-08-27"
+    "lastSeen": "2026-09-05"
   },
   "events": [
     {
@@ -1372,6 +1374,142 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-049c7d6cdc237a59",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-04",
+      "updatedDate": "2026-09-05",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "这家NAS公司想运行你的本地智能家居",
+      "originalTitle": "This NAS company wants to run your local smart home",
+      "subject": "Ugreen",
+      "action": "product_release",
+      "object": "HomeAgent smart home platform",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-9b91d0f808382601"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-9b91d0f808382601"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-9b91d0f808382601"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-9b91d0f808382601"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-9b91d0f808382601"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-9b91d0f808382601"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9b91d0f808382601",
+        "EN-601c1d91052f8f53",
+        "EN-b2cac098c1c1ba6c",
+        "EN-71e50d45ca00b989"
+      ],
+      "entityNames": [
+        "Ugreen",
+        "HomeAgent",
+        "This NAS",
+        "HomeAgent smart home"
+      ],
+      "productName": "HomeAgent",
+      "products": [
+        {
+          "name": "HomeAgent",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "This NAS",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "HomeAgent smart home",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-48d22452ef4464fc",
       "dataDate": "2026-08-27",
       "date": "2026-08-26",
@@ -2237,14 +2375,14 @@
           "name": "Pokee-Isaac",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "SGLang"
           ]
         },
         {
           "name": "Pokee-Isaac 28",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "SGLang"
           ]
         }
       ],
@@ -5600,6 +5738,28 @@
       "lastSeen": "2026-08-08"
     },
     {
+      "id": "EN-9b91d0f808382601",
+      "name": "Ugreen",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-049c7d6cdc237a59"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-05"
+    },
+    {
       "id": "EN-e12c9f7f64dec58c",
       "name": "ModelBest",
       "entityType": "organization_candidate",
@@ -5759,8 +5919,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-36a9af9b98a66be3",
+        "EV-8061c8eb754e0542",
         "EV-f01a13953fa7aaaa",
+        "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
         "EV-5890a74f1a62940e",
@@ -5861,6 +6022,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-bef842eacf8b7aad",
+        "EV-c06d008e73a0d337",
         "EV-0094ff6922e9d570",
         "EV-81f1fd52e41d4664",
         "EV-00e6152baff47d4d",
@@ -5960,7 +6123,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -6031,7 +6194,6 @@
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",
-        "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
         "EV-6654f62015eff8e3",
@@ -6144,7 +6306,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -6199,6 +6363,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6b0106ef4a79df05",
         "EV-a74ea4ad6a095ac3",
         "EV-b22136a993b21f0c",
         "EV-b8a7ddde8a7e42c8",
@@ -6250,7 +6415,6 @@
         "EV-ebd76d18d3f0ee7b",
         "EV-60110525440fac47",
         "EV-3ebf23c149dde19d",
-        "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
@@ -6417,16 +6581,19 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -6434,7 +6601,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-44a9bf3b11abea5c",
@@ -6490,13 +6657,16 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "苹果"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-f282ab8740ff0096",
+        "EV-2f0f3200b9800877",
         "EV-026b9b4462b4adc8",
         "EV-3ebefd784ba0afd0",
         "EV-5bbc509a032b8309",
@@ -6508,6 +6678,7 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-8e0c25aebb1d4f5f",
         "EV-36a9af9b98a66be3",
         "EV-e5883e1e8f305b67",
         "EV-6b9a76ea8a03b09f",
@@ -6566,6 +6737,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-c06d008e73a0d337",
         "EV-4a982ba6f291ddec",
         "EV-9434ab7a2e818ce9",
         "EV-4b0065f780bd73bd",
@@ -6600,11 +6772,16 @@
       ],
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
+        "EN-e463d05a14e8697f",
+        "EN-7df09a7717ef2feb",
         "EN-0502bb9ed34980aa",
-        "EN-af3ceabbe048a291"
+        "EN-dd920a8cd166f486",
+        "EN-1924fff8eb4d54ae",
+        "EN-af3ceabbe048a291",
+        "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-dd920a8cd166f486",
@@ -6625,7 +6802,9 @@
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-06-12"
     },
@@ -6667,11 +6846,13 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-40dbd71782c11373",
         "EV-b69f78a4919cb1bc",
         "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
         "EV-eda9fcba2f9fe358",
         "EV-3664fd6826c319bb",
+        "EV-358643eefe0a5df5",
         "EV-d69d239fd5bcc319",
         "EV-911e7e2722aa5ebc",
         "EV-a09f6e93ad868a57",
@@ -6725,9 +6906,11 @@
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-b81c8201acfc7639"
+      ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-09-05"
     }
   ],
   "fde": [

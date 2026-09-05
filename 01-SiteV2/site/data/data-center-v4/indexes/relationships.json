@@ -5,13 +5,66 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-82440d5b28e9d08a",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-b81c8201acfc7639",
+      "subject_type": "entity",
+      "predicate": "supplies_hardware_to",
+      "object_ref": "EN-6f7ac1823da81d2e",
+      "object_type": "entity",
+      "event_id": "EV-40dbd71782c11373",
+      "claim_refs": [
+        "CL-a7a30fc4171481b1"
+      ],
+      "source_refs": [
+        "SA-12cc8c7620951daf"
+      ],
+      "data_date": "2026-09-05",
+      "status": "verified",
+      "subjectName": "华为",
+      "objectName": "DeepSeek",
+      "predicateLabel": "供应硬件",
+      "title": "华为 供应硬件 DeepSeek",
+      "eventTitle": "Deepseek计划在内蒙古建设已知最大的华为芯片集群，配备16万处理器",
+      "eventDate": "2026-09-04",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-ccdd7ba180a57a40",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-6a50fbf0b970c03a",
+      "object_type": "entity",
+      "event_id": "EV-4e31149f2cd129f7",
+      "claim_refs": [
+        "CL-7ec68eacd62e9fb6",
+        "CL-a6e7af309ea16fd8",
+        "CL-8b35059292f6a876",
+        "CL-bfd7f5f018d1fc0f"
+      ],
+      "source_refs": [
+        "SA-81f0635be094c314"
+      ],
+      "data_date": "2026-09-05",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "ChatGPT Work",
+      "predicateLabel": "发布",
+      "title": "OpenAI 发布 ChatGPT Work",
+      "eventTitle": "OpenAI GPT-6 Astra 登陆 ChatGPT Work、Codex 及 API，率先向 Pro、Enterprise 和 Business Premium 用户开放",
+      "eventDate": "2026-09-05",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-a3bd8b736cbfac80",
       "relationship_version": "RELATION-V2.1",
@@ -532,31 +585,6 @@
       "sourceCount": 1
     },
     {
-      "relationship_id": "REL2-5a2b9cfd6f0b1ca6",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-c70eca6b0f88f44d",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-e65e0f2695fa259d",
-      "object_type": "entity",
-      "event_id": "EV-875b31b96ff689df",
-      "claim_refs": [
-        "CL-f441b70d1bca16ef"
-      ],
-      "source_refs": [
-        "SA-2bc62681d0b05bdb"
-      ],
-      "data_date": "2026-08-13",
-      "status": "verified",
-      "subjectName": "Anthropic",
-      "objectName": "Claude Cowork",
-      "predicateLabel": "发布",
-      "title": "Anthropic 发布 Claude Cowork",
-      "eventTitle": "Claude 打破平台壁垒：Chrome 侧边栏 AI 对话互通全平台历史记录",
-      "eventDate": "2026-08-13",
-      "sourceCount": 1
-    },
-    {
       "relationship_id": "REL2-ddc331c7e06a63b8",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-7d3194f79e645c42",
@@ -694,6 +722,34 @@
       "title": "AWS 合作 Amazon",
       "eventTitle": "Superblocks与AWS宣布战略合作，为Amazon Bedrock带来安全的企业级AI应用开发 - 美国新闻中心",
       "eventDate": "2026-08-03",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-a675a7f7bd02161e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-307557d99a7eb726",
+      "object_type": "entity",
+      "event_id": "EV-5e85bc91a6924760",
+      "claim_refs": [
+        "CL-e195d7727b181bec",
+        "CL-39ec4a2b7d6bd317",
+        "CL-f2323adffd6b687f",
+        "CL-0bc77417b3b9ac0e"
+      ],
+      "source_refs": [
+        "SA-409f38aff93df4c5"
+      ],
+      "data_date": "2026-08-03",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini Spark",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini Spark",
+      "eventTitle": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
+      "eventDate": "2026-08-02",
       "sourceCount": 1
     },
     {
@@ -2221,6 +2277,34 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-9ad2c97e765910d9",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-18f0900d6c487f59",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-bcf6cc5593de2a0f",
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.6 Flash",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.6 Flash",
+      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+      "eventDate": "2026-07-21",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-a2a2d52284004533",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-ac123e56b0168ec2",
@@ -2296,6 +2380,33 @@
       "predicateLabel": "发布",
       "title": "阿里巴巴 发布 Qwen-Image-3.0",
       "eventTitle": "阿里巴巴的Qwen-Image-3.0单次生成完整信息图网格及可读的十像素文字",
+      "eventDate": "2026-07-21",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-ddbd67ee39ac2096",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-31055a8d9856fce4",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.5 Flash Cyber",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.5 Flash Cyber",
+      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
       "eventDate": "2026-07-21",
       "sourceCount": 1
     },
@@ -3648,6 +3759,34 @@
       "predicateLabel": "服务",
       "title": "OpenAI 服务 Anthropic",
       "eventTitle": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元",
+      "eventDate": "2026-07-15",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-f92ee2f782a8185b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0e008e2c06144ec8",
+      "object_type": "entity",
+      "event_id": "EV-6359c9f6c2609a38",
+      "claim_refs": [
+        "CL-3c3d4af5e069787d",
+        "CL-714aa682873fac8b",
+        "CL-b606f6b126922962",
+        "CL-4a7039df083c3152"
+      ],
+      "source_refs": [
+        "SA-b894cd4477812b65"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana",
+      "eventTitle": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
       "eventDate": "2026-07-15",
       "sourceCount": 1
     },
@@ -5652,6 +5791,34 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-638b55900181fbf2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-01f1074bb52ff605",
+      "object_type": "entity",
+      "event_id": "EV-d8c69ed782b73a34",
+      "claim_refs": [
+        "CL-b5bc8b4e766de0ef",
+        "CL-dbee760c0db43fab",
+        "CL-72f47e56c761bde4",
+        "CL-9fdeb9adf922c9da"
+      ],
+      "source_refs": [
+        "SA-cb3a20fe357ba722"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana 2 Lite",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana 2 Lite",
+      "eventTitle": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+      "eventDate": "2026-07-01",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-65389a75e3085862",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -6150,6 +6317,33 @@
       "title": "DigitalOcean 发布 AI-Native Cloud",
       "eventTitle": "DigitalOcean推出专为推理时代打造的AI原生云平台",
       "eventDate": "2026-06-27",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-2c82bf25c532a4e1",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e463d05a14e8697f",
+      "object_type": "entity",
+      "event_id": "EV-abf0990dcaceb1ce",
+      "claim_refs": [
+        "CL-cc54439600e016cd",
+        "CL-6f211a4cbf5e0ea7",
+        "CL-f7e909b299efdfc5"
+      ],
+      "source_refs": [
+        "SA-077837221f61e911"
+      ],
+      "data_date": "2026-06-26",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Xcode 26.6",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Xcode 26.6",
+      "eventTitle": "苹果 Xcode 26.6 正式版发布，新增谷歌 Gemini 编程助手支持",
+      "eventDate": "2026-06-26",
       "sourceCount": 1
     },
     {
@@ -6818,6 +7012,33 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-7a95bce5aecaba79",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2ab6d53e717a0e0d",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-bbdefa2950f49882",
+      "object_type": "entity",
+      "event_id": "EV-d1a3f5c8045e548d",
+      "claim_refs": [
+        "CL-5758242d40096958",
+        "CL-108011dcac3f51c9",
+        "CL-6816c5ea4abdfa87"
+      ],
+      "source_refs": [
+        "SA-572f0e8d4b983d74"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified",
+      "subjectName": "诺基亚",
+      "objectName": "Google",
+      "predicateLabel": "合作",
+      "title": "诺基亚 合作 Google",
+      "eventTitle": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+      "eventDate": "2026-06-22",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-7cd349866749f667",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-81baf57e05f11276",
@@ -6945,6 +7166,34 @@
       "title": "OpenAI 发布 GPT-5.6",
       "eventTitle": "OpenAI GPT-5.6 系列模型有望下周发布，SVG 生成测试超越 Claude Mythos",
       "eventDate": "2026-06-21",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-328522f06ece8143",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-7df09a7717ef2feb",
+      "object_type": "entity",
+      "event_id": "EV-fd21441fb6e143c3",
+      "claim_refs": [
+        "CL-46fb3d5ad9508a38",
+        "CL-727fd142f1eda91e",
+        "CL-63d0477cab28738f",
+        "CL-c8732339ea9bef1a"
+      ],
+      "source_refs": [
+        "SA-f1b7650b27891e44"
+      ],
+      "data_date": "2026-06-21",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "LM Studio",
+      "predicateLabel": "合作",
+      "title": "Apple 合作 LM Studio",
+      "eventTitle": "LM Studio 与苹果合作，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型",
+      "eventDate": "2026-06-20",
       "sourceCount": 1
     },
     {
@@ -8017,6 +8266,33 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-0700c100aba4f7c2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-dd920a8cd166f486",
+      "object_type": "entity",
+      "event_id": "EV-4e6dc3ec2b3f0bd6",
+      "claim_refs": [
+        "CL-c219014c38d3e963",
+        "CL-18d554f72c3e47aa",
+        "CL-6125ee27d333b5c5"
+      ],
+      "source_refs": [
+        "SA-122b35fc54deabea"
+      ],
+      "data_date": "2026-06-12",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "CoreAI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 CoreAI",
+      "eventTitle": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+      "eventDate": "2026-06-11",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-b34511f516d08ba3",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-b81c8201acfc7639",
@@ -8147,6 +8423,34 @@
       "title": "Decart 发布 Oasis 3",
       "eventTitle": "Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景",
       "eventDate": "2026-06-10",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-44ebd8a7378accce",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-22b8d155ce027905",
+      "claim_refs": [
+        "CL-0ffd4a87d0bf9a23",
+        "CL-9a3abffb4df3b677",
+        "CL-53bc4ba62a2c55fb",
+        "CL-c0d954c60d8247d3"
+      ],
+      "source_refs": [
+        "SA-30fb0e04917bc0f3"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "DiffusionGemma",
+      "predicateLabel": "发布",
+      "title": "Google 发布 DiffusionGemma",
+      "eventTitle": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+      "eventDate": "2026-06-11",
       "sourceCount": 1
     },
     {
@@ -8554,6 +8858,34 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-4aa175c42153e014",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4baef0e41cbd7ae2",
+      "object_type": "entity",
+      "event_id": "EV-4a3cb762183581cd",
+      "claim_refs": [
+        "CL-b487cc8855f09bf4",
+        "CL-5b9c208e3329948f",
+        "CL-a0bae28c89384d4f",
+        "CL-c2d89368f69456e3"
+      ],
+      "source_refs": [
+        "SA-b6f2cdfb3b2eff0e"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.5 Live Translate",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.5 Live Translate",
+      "eventTitle": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-572d299c04663eb3",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -8578,6 +8910,31 @@
       "predicateLabel": "发布",
       "title": "Google 发布 Gemini 3.5 Live Translate",
       "eventTitle": "Google 发布 Gemini 3.5 Live Translate，实现即时语音到语音翻译",
+      "eventDate": "2026-06-10",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-5a09d0744942f11b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1924fff8eb4d54ae",
+      "object_type": "entity",
+      "event_id": "EV-85373b8ec9148127",
+      "claim_refs": [
+        "CL-36760828e3e4b086"
+      ],
+      "source_refs": [
+        "SA-b888617f1f81722a"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri",
+      "eventTitle": "苹果高管回应为何 iOS 27 推出 Siri 独立应用：方便查看历史对话",
       "eventDate": "2026-06-10",
       "sourceCount": 1
     },
@@ -8810,6 +9167,165 @@
       "predicateLabel": "发布",
       "title": "Apple 发布 Siri AI",
       "eventTitle": "Apple 发布 watchOS 27，整合 Siri AI 功能",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-27b659bc5e5fe00b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-1ae8027c085679e9",
+      "claim_refs": [
+        "CL-412c1165ad9aea08",
+        "CL-0d7806422b8f4731",
+        "CL-bf480f9596975b92"
+      ],
+      "source_refs": [
+        "SA-c509109acff08b2a"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri AI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri AI",
+      "eventTitle": "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-3d00d7538e09943f",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1924fff8eb4d54ae",
+      "object_type": "entity",
+      "event_id": "EV-52e1ac21c25a0a09",
+      "claim_refs": [
+        "CL-200387b333a63bec"
+      ],
+      "source_refs": [
+        "SA-07362e7a0eeb27d0"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri",
+      "eventTitle": "苹果 macOS 27 开发者预览版 Beta 1 发布，引入独立 Siri 应用",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-74ad6f207729d6ae",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-45b5216872656eb3",
+      "object_type": "entity",
+      "event_id": "EV-a9fe726c4ea2a17b",
+      "claim_refs": [
+        "CL-abeb123796984e45",
+        "CL-237aa10e9131be89",
+        "CL-bb177f8c54f761c6"
+      ],
+      "source_refs": [
+        "SA-4c454bcda76945d8"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Core AI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Core AI",
+      "eventTitle": "苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-bcbf4f353ec2e5b3",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-9f338c4815cc65f3",
+      "claim_refs": [
+        "CL-9331a7c7b2ffd150"
+      ],
+      "source_refs": [
+        "SA-637ded00ea45f133"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri AI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri AI",
+      "eventTitle": "苹果智能和 Siri AI 适配机型公布，iPhone 15 Pro 系列及后续型号可用",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-ced495a5aea356e0",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0502bb9ed34980aa",
+      "object_type": "entity",
+      "event_id": "EV-a9fe726c4ea2a17b",
+      "claim_refs": [
+        "CL-abeb123796984e45",
+        "CL-be6397745be4b268",
+        "CL-237aa10e9131be89",
+        "CL-bb177f8c54f761c6"
+      ],
+      "source_refs": [
+        "SA-4c454bcda76945d8"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Xcode 27",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Xcode 27",
+      "eventTitle": "苹果发布 Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-ea61135fcfa1e38f",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-d40a1a873015ac98",
+      "claim_refs": [
+        "CL-83825fd97ece377c",
+        "CL-1e7bf0c798e22d55",
+        "CL-a2450fd5f23e04cd"
+      ],
+      "source_refs": [
+        "SA-bdae3fd54febab4f"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "Siri AI",
+      "predicateLabel": "发布",
+      "title": "Apple 发布 Siri AI",
+      "eventTitle": "苹果推出 Siri AI：独立 App，为灵动岛优化",
       "eventDate": "2026-06-09",
       "sourceCount": 1
     },

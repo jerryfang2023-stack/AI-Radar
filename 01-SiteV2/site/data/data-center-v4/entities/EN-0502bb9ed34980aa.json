@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -37,7 +37,8 @@
     "firstSeen": "2026-06-09",
     "lastSeen": "2026-06-18",
     "relationIds": [
-      "REL2-1088b525da98df85"
+      "REL2-1088b525da98df85",
+      "REL2-ced495a5aea356e0"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -152,13 +153,16 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "苹果"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-f282ab8740ff0096",
+        "EV-2f0f3200b9800877",
         "EV-026b9b4462b4adc8",
         "EV-3ebefd784ba0afd0",
         "EV-5bbc509a032b8309",
@@ -170,6 +174,7 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-8e0c25aebb1d4f5f",
         "EV-36a9af9b98a66be3",
         "EV-e5883e1e8f305b67",
         "EV-6b9a76ea8a03b09f",
@@ -228,6 +233,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-c06d008e73a0d337",
         "EV-4a982ba6f291ddec",
         "EV-9434ab7a2e818ce9",
         "EV-4b0065f780bd73bd",
@@ -262,11 +268,16 @@
       ],
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
+        "EN-e463d05a14e8697f",
+        "EN-7df09a7717ef2feb",
         "EN-0502bb9ed34980aa",
-        "EN-af3ceabbe048a291"
+        "EN-dd920a8cd166f486",
+        "EN-1924fff8eb4d54ae",
+        "EN-af3ceabbe048a291",
+        "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     }
   ],
   "relationships": [
@@ -286,6 +297,27 @@
         "SA-4cd346680b734b4c"
       ],
       "data_date": "2026-06-18",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-ced495a5aea356e0",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0502bb9ed34980aa",
+      "object_type": "entity",
+      "event_id": "EV-a9fe726c4ea2a17b",
+      "claim_refs": [
+        "CL-abeb123796984e45",
+        "CL-be6397745be4b268",
+        "CL-237aa10e9131be89",
+        "CL-bb177f8c54f761c6"
+      ],
+      "source_refs": [
+        "SA-4c454bcda76945d8"
+      ],
+      "data_date": "2026-06-09",
       "status": "verified"
     }
   ],
@@ -503,6 +535,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-358643eefe0a5df5",
+        "EV-8e0c25aebb1d4f5f",
         "EV-36a9af9b98a66be3",
         "EV-4809eb76696a9e61",
         "EV-51dcf527010e4f19",
@@ -985,6 +1019,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-32e83e92d45d71f6",
         "EN-2b6e51bec93e86c1",
         "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d",

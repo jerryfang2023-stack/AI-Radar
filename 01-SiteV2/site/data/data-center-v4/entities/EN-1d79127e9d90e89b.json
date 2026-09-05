@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -25,6 +25,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-783866f9782691b6",
       "EV-40f14150d6f622f5",
       "EV-e4552a80d406645e",
       "EV-ec8b36dcb97645da",
@@ -50,14 +51,16 @@
       "EN-993599624a199fe0"
     ],
     "firstSeen": "2026-06-13",
-    "lastSeen": "2026-09-01",
+    "lastSeen": "2026-09-05",
     "relationIds": [
       "REL2-09dd97666e545a2c",
       "REL2-ff240950e3bb7f5e"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-783866f9782691b6"
+      ],
       "partnerships": [
         "EV-40f14150d6f622f5"
       ],
@@ -79,6 +82,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-783866f9782691b6",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "匿名模型 Omen Alpha 上线 OpenCode，线索指向智谱",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-b644c0a9d493976a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1d79127e9d90e89b",
+          "EN-b644c0a9d493976a"
+        ]
+      },
       {
         "id": "EV-e4552a80d406645e",
         "dataDate": "2026-09-01",
@@ -602,6 +633,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-e5f13798813adfbf",
+        "EV-4465e8bfd74508a6",
         "EV-125040ec61215481",
         "EV-85ba013c379a9d3d",
         "EV-7832e96ace41fc15",
@@ -840,6 +873,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c608c4787821de1b",
+        "EN-ec31d2be1b244616",
         "EN-7d3194f79e645c42",
         "EN-39ba5f9dcab4e98a",
         "EN-bbdefa2950f49882",
@@ -910,7 +945,6 @@
         "EN-dd920a8cd166f486",
         "EN-2b6e51bec93e86c1",
         "EN-6e898ad0522fca30",
-        "EN-c608c4787821de1b",
         "EN-412b57e712039032",
         "EN-50537dab76505dfc",
         "EN-e956b4e6d9c37fa7",
@@ -958,7 +992,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -1056,6 +1090,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-7371ffb603de3e1c",
         "EV-0c00a6c681f22b98",
         "EV-3badd98afb847643",
         "EV-42d0b85486576c88",
@@ -1120,6 +1155,7 @@
         "EN-8de7e44229714152",
         "EN-ced86039c0ad6a7c",
         "EN-842a7da99bd249d4",
+        "EN-a81b5ef9c23cdf0c",
         "EN-a0d4ca5b6474c67c",
         "EN-52d25a9e30ba94f1",
         "EN-55018455fd10b832",
@@ -1136,7 +1172,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-use_case-software_development",

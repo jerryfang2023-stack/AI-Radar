@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -27,6 +27,8 @@
       "EV-be59d9048dd1b6a0",
       "EV-d80c43b35418e74d",
       "EV-53f08daddd011dbb",
+      "EV-58df7e344df0f7fe",
+      "EV-e5f13798813adfbf",
       "EV-2954a6f0220f5b18",
       "EV-5793770e51604ada",
       "EV-68897f26c8d956df",
@@ -53,7 +55,7 @@
       "EN-ddf9916b459b6d77"
     ],
     "firstSeen": "2026-05-09",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-05",
     "relationIds": [
       "REL2-d51ced7ee48e317e",
       "REL2-b30737fc4bbfa97d"
@@ -68,6 +70,8 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-58df7e344df0f7fe",
+        "EV-e5f13798813adfbf",
         "EV-2954a6f0220f5b18",
         "EV-68897f26c8d956df",
         "EV-96198b8644eb94d9",
@@ -91,6 +95,49 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-58df7e344df0f7fe",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "每日AI资讯 - 猫目",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c608c4787821de1b"
+        ]
+      },
+      {
+        "id": "EV-e5f13798813adfbf",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "小米发布并开源表格结构化数据大模型 Xiaomi-TabLDM，回归登顶 OpenML-CTR23",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-c608c4787821de1b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c608c4787821de1b",
+          "EN-5e5237095f994404"
+        ]
+      },
       {
         "id": "EV-2954a6f0220f5b18",
         "dataDate": "2026-09-04",
@@ -851,6 +898,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-e5f13798813adfbf",
+        "EV-4465e8bfd74508a6",
         "EV-125040ec61215481",
         "EV-85ba013c379a9d3d",
         "EV-7832e96ace41fc15",
@@ -1089,6 +1138,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c608c4787821de1b",
+        "EN-ec31d2be1b244616",
         "EN-7d3194f79e645c42",
         "EN-39ba5f9dcab4e98a",
         "EN-bbdefa2950f49882",
@@ -1159,7 +1210,6 @@
         "EN-dd920a8cd166f486",
         "EN-2b6e51bec93e86c1",
         "EN-6e898ad0522fca30",
-        "EN-c608c4787821de1b",
         "EN-412b57e712039032",
         "EN-50537dab76505dfc",
         "EN-e956b4e6d9c37fa7",
@@ -1207,7 +1257,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-technology-code_generation",

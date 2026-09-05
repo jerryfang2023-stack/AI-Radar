@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -104,6 +104,8 @@
       "EV-2ffc3377977da114",
       "EV-2fd730d0ad452334",
       "EV-fd21441fb6e143c3",
+      "EV-e5f13798813adfbf",
+      "EV-4465e8bfd74508a6",
       "EV-125040ec61215481",
       "EV-85ba013c379a9d3d",
       "EV-7832e96ace41fc15",
@@ -342,6 +344,8 @@
       "EN-88e2cce43eeadb36",
       "EN-c890cfa67d1da908",
       "EN-7df09a7717ef2feb",
+      "EN-c608c4787821de1b",
+      "EN-ec31d2be1b244616",
       "EN-7d3194f79e645c42",
       "EN-39ba5f9dcab4e98a",
       "EN-bbdefa2950f49882",
@@ -412,7 +416,6 @@
       "EN-dd920a8cd166f486",
       "EN-2b6e51bec93e86c1",
       "EN-6e898ad0522fca30",
-      "EN-c608c4787821de1b",
       "EN-412b57e712039032",
       "EN-50537dab76505dfc",
       "EN-e956b4e6d9c37fa7",
@@ -460,34 +463,33 @@
       "HW-19692cd9428f2e0f"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-09-04"
+    "lastSeen": "2026-09-05"
   },
   "events": [
     {
       "id": "EV-6b668e4655192209",
-      "dataDate": "2026-09-04",
-      "date": "2026-09-03",
-      "updatedDate": "2026-09-04",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-05",
+      "updatedDate": "2026-09-05",
       "eventType": "acquisition",
       "eventTypeLabel": "并购",
       "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "disputed",
-      "title": "英伟达收购AI入口，封闭实验室日益自研芯片",
-      "originalTitle": "Nvidia buys the front door to open AI as closed labs increasingly design their own silicon",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 智能体新闻 — 2026年9月4日当周（每日更新）",
+      "originalTitle": "AI Agents News — Week of September 4, 2026 (Daily Updates)",
       "subject": "Nvidia",
       "action": "acquisition",
       "object": "Hugging Face",
       "metrics": [
-        "$12.9 billion",
-        "$12.93 billion"
+        "$12.9",
+        "13 billion",
+        "$12.9 billion"
       ],
       "locations": [],
       "missingFields": [],
-      "conflicts": [
-        "CF-6b668e4655192209"
-      ],
+      "conflicts": [],
       "tags": [],
       "facets": {
         "ai_market_category": [],
@@ -545,8 +547,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://the-decoder.com/nvidia-buys-the-front-door-to-open-ai-as-closed-labs-increasingly-design-their-own-silicon",
-      "publisher": "The Decoder AI News"
+      "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "publisher": "aiagentstore.ai"
     },
     {
       "id": "EV-df2b04d9d720c544",
@@ -15485,7 +15487,7 @@
           "name": "Featherless.ai",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -22739,6 +22741,236 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-e5f13798813adfbf",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-05",
+      "updatedDate": "2026-09-05",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "小米发布并开源表格结构化数据大模型 Xiaomi-TabLDM，回归登顶 OpenML-CTR23",
+      "originalTitle": "",
+      "subject": "小米",
+      "action": "发布并开源表格结构化数据大模型",
+      "object": "Xiaomi-TabLDM，回归登顶 OpenML-CTR23",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-c4451c45a3f689da",
+          "CL-1e60e7c8fbd2c8b5",
+          "CL-49ec22fc4ed27ff5",
+          "CL-4b1e9a290961f954"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-c608c4787821de1b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c608c4787821de1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c608c4787821de1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c608c4787821de1b",
+        "EN-5e5237095f994404"
+      ],
+      "entityNames": [
+        "Xiaomi",
+        "Xiaomi-TabLDM"
+      ],
+      "productName": "Xiaomi-TabLDM",
+      "products": [
+        {
+          "name": "Xiaomi-TabLDM",
+          "type": "模型",
+          "ownerNames": [
+            "Xiaomi"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/683.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-4465e8bfd74508a6",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-04",
+      "updatedDate": "2026-09-05",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理",
+      "originalTitle": "",
+      "subject": "机器人不能停下来等模型：星尘",
+      "action": "发布 SmoothRL，让在线强化学习跟上大模型",
+      "object": "的异步推理",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-ec31d2be1b244616"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-ec31d2be1b244616"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-ec31d2be1b244616"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-ec31d2be1b244616"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-ec31d2be1b244616"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-ec31d2be1b244616"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a6e5382c05dd0d16",
+        "EN-ec31d2be1b244616"
+      ],
+      "entityNames": [
+        "星海图",
+        "SmoothRL"
+      ],
+      "productName": "SmoothRL",
+      "products": [
+        {
+          "name": "SmoothRL",
+          "type": "模型",
+          "ownerNames": [
+            "星海图"
+          ]
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/484437.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-125040ec61215481",
       "dataDate": "2026-09-04",
       "date": "2026-09-03",
@@ -22856,9 +23088,7 @@
         {
           "name": "Astra",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model",
@@ -23435,12 +23665,12 @@
           "name": "GPT-6 Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Amazon"
           ]
         }
       ],
       "sourceUrl": "https://cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
-      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+      "publisher": "cnbc.com"
     },
     {
       "id": "EV-0fb1258b1013bd71",
@@ -28506,14 +28736,14 @@
           "name": "AI-led",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "As AI-led",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -29155,14 +29385,14 @@
           "name": "Pokee-Isaac",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "SGLang"
           ]
         },
         {
           "name": "Pokee-Isaac 28",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "SGLang"
           ]
         }
       ],
@@ -30434,7 +30664,7 @@
           "name": "GPT-5.6",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Google"
           ]
         }
       ],
@@ -32138,16 +32368,12 @@
         {
           "name": "Hugging Face",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GLM-5.2",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/837.htm",
@@ -32325,7 +32551,7 @@
           "name": "Presence",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -38710,7 +38936,7 @@
           "name": "Baichuan-M4",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -39815,14 +40041,14 @@
           "name": "Claude Fable 5",
           "type": "模型",
           "ownerNames": [
-            "OpenRouter"
+            "Anthropic"
           ]
         },
         {
           "name": "Fusion API",
           "type": "模型",
           "ownerNames": [
-            "OpenRouter"
+            "Anthropic"
           ]
         }
       ],
@@ -43624,9 +43850,7 @@
         {
           "name": "Sam Altman 2022",
           "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Jul/20/sam-altman",
@@ -46468,8 +46692,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-36a9af9b98a66be3",
+        "EV-8061c8eb754e0542",
         "EV-f01a13953fa7aaaa",
+        "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
         "EV-5890a74f1a62940e",
@@ -46570,6 +46795,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-bef842eacf8b7aad",
+        "EV-c06d008e73a0d337",
         "EV-0094ff6922e9d570",
         "EV-81f1fd52e41d4664",
         "EV-00e6152baff47d4d",
@@ -46669,7 +46896,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-e7e7b91d8a1d8b01",
@@ -47225,7 +47452,6 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
-        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -47240,6 +47466,7 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
+        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -47688,11 +47915,13 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-40dbd71782c11373",
         "EV-b69f78a4919cb1bc",
         "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
         "EV-eda9fcba2f9fe358",
         "EV-3664fd6826c319bb",
+        "EV-358643eefe0a5df5",
         "EV-d69d239fd5bcc319",
         "EV-911e7e2722aa5ebc",
         "EV-a09f6e93ad868a57",
@@ -47746,9 +47975,11 @@
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-b81c8201acfc7639"
+      ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-dc8a5a5bf80909de",
@@ -48258,7 +48489,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-479eb3f55eda442e"
+        "EV-479eb3f55eda442e",
+        "EV-8061c8eb754e0542"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -48269,7 +48501,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-03",
-      "lastSeen": "2026-06-03"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-8da5eafb322ee86e",
@@ -48388,6 +48620,7 @@
         "EV-87432dbb99cd6033",
         "EV-3a591b0f027f66cf",
         "EV-499a62114b0fd616",
+        "EV-40dbd71782c11373",
         "EV-fec0251eafea1a20",
         "EV-e3fe8993f46d5e12",
         "EV-9563aa162529aab0",
@@ -48398,6 +48631,7 @@
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
         "EV-bf23c87d0aa1f205",
+        "EV-358643eefe0a5df5",
         "EV-63948deaec161736",
         "EV-6360fcef17b43087",
         "EV-fbe519268ddce396",
@@ -48426,12 +48660,13 @@
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [
+        "EN-6f7ac1823da81d2e",
         "EN-0c2f714483c404ad",
         "EN-eec6044eb8e4941a",
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-02"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-25465dbbb180e21b",
@@ -48962,9 +49197,79 @@
         "TX-technology-multimodal",
         "TX-technology-long_context"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-c608c4787821de1b",
+      "name": "Xiaomi",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "小米"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-be59d9048dd1b6a0",
+        "EV-d80c43b35418e74d",
+        "EV-53f08daddd011dbb",
+        "EV-58df7e344df0f7fe",
+        "EV-e5f13798813adfbf",
+        "EV-2954a6f0220f5b18",
+        "EV-5793770e51604ada",
+        "EV-68897f26c8d956df",
+        "EV-96198b8644eb94d9",
+        "EV-3353bd96728c99e2",
+        "EV-8a9b12665a3e40a0",
+        "EV-28145c97a7237d6d",
+        "EV-c6629f97e4bb1aa8",
+        "EV-564f3df8d487ca6f",
+        "EV-634ce5b42f6d32f6",
+        "EV-f5dd192f6d4e04a3",
+        "EV-3aefbdfa5df2fd6a",
+        "EV-8692dfde7c3ef5b5",
+        "EV-86537be17d50ff20",
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-code_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-101a515191c6be9e",
+        "EN-ddf9916b459b6d77"
+      ],
+      "firstSeen": "2026-05-09",
+      "lastSeen": "2026-09-05"
+    },
+    {
+      "id": "EN-ec31d2be1b244616",
+      "name": "SmoothRL",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4465e8bfd74508a6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -49075,8 +49380,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1f88bfaf77dcfca3",
+        "EV-358643eefe0a5df5",
+        "EV-4e31149f2cd129f7",
+        "EV-7a7a5267ca73e44c",
+        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
+        "EV-a474530ccf6cd872",
+        "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
         "EV-3a8752218ab2b487",
         "EV-4809eb76696a9e61",
@@ -49084,9 +49394,9 @@
         "EV-ad41b8a1f9f8d747",
         "EV-c04ef2433ae230f6",
         "EV-125040ec61215481",
-        "EV-ffa46f84468cffd9",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
+        "EV-ffa46f84468cffd9",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -49302,6 +49612,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-345378cb7f1f64fd",
+        "EV-7371ffb603de3e1c",
+        "EV-d04298029a8ab693",
         "EV-bf57b79e05a537e6",
         "EV-23ebd5f5d32e950a",
         "EV-b1ac270277a5c1bc",
@@ -49426,8 +49739,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29",
         "EN-6a50fbf0b970c03a",
+        "EN-3a7bd3e2360a3d29",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
@@ -49453,7 +49766,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-39ba5f9dcab4e98a",
@@ -49489,7 +49802,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -49544,6 +49859,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6b0106ef4a79df05",
         "EV-a74ea4ad6a095ac3",
         "EV-b22136a993b21f0c",
         "EV-b8a7ddde8a7e42c8",
@@ -49595,7 +49911,6 @@
         "EV-ebd76d18d3f0ee7b",
         "EV-60110525440fac47",
         "EV-3ebf23c149dde19d",
-        "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
@@ -49762,16 +50077,19 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -49779,7 +50097,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-cbdc46f896784f98",
@@ -49873,6 +50191,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-783866f9782691b6",
         "EV-40f14150d6f622f5",
         "EV-e4552a80d406645e",
         "EV-ec8b36dcb97645da",
@@ -49898,7 +50217,7 @@
         "EN-993599624a199fe0"
       ],
       "firstSeen": "2026-06-13",
-      "lastSeen": "2026-09-01"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-0b914b1a1e589338",
@@ -50277,7 +50596,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-b93006774cbdd4b2",
@@ -50384,6 +50703,7 @@
       "eventIds": [
         "EV-6808f7d1be84c23c",
         "EV-30d7f1c5dc8ea464",
+        "EV-358643eefe0a5df5",
         "EV-f29c0c51a5cbfd84",
         "EV-497344d95d593cf6",
         "EV-8f0c63ed7bb153dc",
@@ -50394,11 +50714,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-6849cf65695e6e77",
@@ -50499,6 +50822,7 @@
         "EV-55e7c286e95be405",
         "EV-cf6e7a2edad82c6f",
         "EV-0e84a2f49d765ce3",
+        "EV-a474530ccf6cd872",
         "EV-eb3b431d4ce98ec5",
         "EV-1b3dde71d5e25f54",
         "EV-85ea6e0ef8bda162",
@@ -50525,7 +50849,7 @@
         "EN-779965438dd9e7a7"
       ],
       "firstSeen": "2026-06-08",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-2ee49ef51a776e2c",
@@ -50849,6 +51173,7 @@
         "EV-d3054a8a2b62a503",
         "EV-87432dbb99cd6033",
         "EV-427081ec574b43bb",
+        "EV-2f0f3200b9800877",
         "EV-acaf06b262d9c3db",
         "EV-27b69ea604475b72",
         "EV-da9bb2c98c1ce8cd",
@@ -50899,7 +51224,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -50932,6 +51257,7 @@
         "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
+        "EV-8e0c25aebb1d4f5f",
         "EV-85dc7f34cb077fba",
         "EV-2868ff08777b5de9",
         "EV-65e50237cd603c8e",
@@ -50972,7 +51298,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-165753d8649b9122",
@@ -51209,6 +51535,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-2f0f3200b9800877",
         "EV-cec68369662236fd",
         "EV-bd81083dbb6eab3e",
         "EV-50853632f4b54972"
@@ -51222,7 +51549,7 @@
         "EN-8992f4a61a19a74b"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-03b974cdbd22fe32",
@@ -51607,7 +51934,9 @@
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-06-12"
     },
@@ -51649,7 +51978,6 @@
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",
-        "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
         "EV-6654f62015eff8e3",
@@ -51732,50 +52060,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-06-11"
-    },
-    {
-      "id": "EN-c608c4787821de1b",
-      "name": "Xiaomi",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "小米"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-be59d9048dd1b6a0",
-        "EV-d80c43b35418e74d",
-        "EV-53f08daddd011dbb",
-        "EV-2954a6f0220f5b18",
-        "EV-5793770e51604ada",
-        "EV-68897f26c8d956df",
-        "EV-96198b8644eb94d9",
-        "EV-3353bd96728c99e2",
-        "EV-8a9b12665a3e40a0",
-        "EV-28145c97a7237d6d",
-        "EV-c6629f97e4bb1aa8",
-        "EV-564f3df8d487ca6f",
-        "EV-634ce5b42f6d32f6",
-        "EV-f5dd192f6d4e04a3",
-        "EV-3aefbdfa5df2fd6a",
-        "EV-8692dfde7c3ef5b5",
-        "EV-86537be17d50ff20",
-        "EV-dd902b603e2e3dbc"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-code_generation"
-      ],
-      "relatedEntityIds": [
-        "EN-101a515191c6be9e",
-        "EN-ddf9916b459b6d77"
-      ],
-      "firstSeen": "2026-05-09",
-      "lastSeen": "2026-09-04"
     },
     {
       "id": "EN-412b57e712039032",
@@ -53587,6 +53871,73 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-25745f3a94bced50",
+      "snapshotKey": "25745f3a94bced50",
+      "snapshotId": "HWS-2ba148f6c98ba5eb",
+      "eventId": "EV-4465e8bfd74508a6",
+      "eventIds": [
+        "EV-4465e8bfd74508a6"
+      ],
+      "dataDate": "2026-09-05",
+      "date": "2026-09-05",
+      "title": "SmoothRL",
+      "subject": "星海图",
+      "productNames": [
+        "SmoothRL"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-aa0b623828e7c314"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-05",
+          "hardware_fact_id": "HWF-aa0b623828e7c314",
+          "fact_type": "product",
+          "observed_at": "2026-09-04T09:19:29.000Z",
+          "subject_entity_id": "EN-a6e5382c05dd0d16",
+          "subject_name": "星海图",
+          "product_entity_ids": [
+            "EN-ec31d2be1b244616"
+          ],
+          "product_names": [
+            "SmoothRL"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理",
+          "event_refs": [
+            "EV-4465e8bfd74508a6"
+          ],
+          "claim_ref": "CL-2a718ba2c6aa742e",
+          "source_refs": [
+            "SA-86b613a58a209898"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/09/484437.html",
+      "entityIds": [
+        "EN-a6e5382c05dd0d16",
+        "EN-ec31d2be1b244616"
+      ]
+    },
     {
       "id": "HWC-61de795c51fc7614",
       "snapshotKey": "61de795c51fc7614",

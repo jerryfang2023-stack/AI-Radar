@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -70,6 +70,9 @@
       "EV-58c1cc3749294649",
       "EV-c0a65877001ed413",
       "EV-bd508dbe4205774f",
+      "EV-6d92bb807f339b53",
+      "EV-d5db0416bede29de",
+      "EV-c638f91cbb8bf845",
       "EV-8232ad0075a77b7a",
       "EV-ad41b8a1f9f8d747",
       "EV-67adfb3393d95976",
@@ -185,7 +188,7 @@
       "EN-10fce287b4b1464c"
     ],
     "firstSeen": "2026-02-13",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-05",
     "relationIds": [
       "REL2-ee25fecc7314abd4",
       "REL2-62f415d53b9e1307",
@@ -259,6 +262,8 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-6d92bb807f339b53",
+        "EV-d5db0416bede29de",
         "EV-8232ad0075a77b7a",
         "EV-ad41b8a1f9f8d747",
         "EV-d06e34a0546a00a5",
@@ -332,6 +337,7 @@
         "EV-6ce6b9c9780b97d9"
       ],
       "hardware": [
+        "EV-c638f91cbb8bf845",
         "EV-737a6c098b70f6ff",
         "EV-89bdda008227fb6b",
         "EV-b862692915ae70bb"
@@ -351,6 +357,56 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-6d92bb807f339b53",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "微软公布 Zenith 计划，面向开发者推出预配置 Win11 Pro 开发 PC",
+        "displayTags": [],
+        "entityIds": [
+          "EN-895fb28aaa7ed9b4",
+          "EN-9fbf261b62c1d7c0",
+          "EN-076570600b6d171d"
+        ]
+      },
+      {
+        "id": "EV-d5db0416bede29de",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "微软预告 Excel 新增 AI 画布，打造可视化交互式数据看板",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9d71991d2be3299a",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
+        "id": "EV-c638f91cbb8bf845",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-240389f4b730bad4",
+          "EN-2f8f0e714db5c847"
+        ]
+      },
       {
         "id": "EV-f2c93c155070cd35",
         "dataDate": "2026-09-04",
@@ -4709,8 +4765,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-36a9af9b98a66be3",
+        "EV-8061c8eb754e0542",
         "EV-f01a13953fa7aaaa",
+        "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
         "EV-5890a74f1a62940e",
@@ -4811,6 +4868,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-bef842eacf8b7aad",
+        "EV-c06d008e73a0d337",
         "EV-0094ff6922e9d570",
         "EV-81f1fd52e41d4664",
         "EV-00e6152baff47d4d",
@@ -4910,7 +4969,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-688f8db7018da7d4",
@@ -5153,8 +5212,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1f88bfaf77dcfca3",
+        "EV-358643eefe0a5df5",
+        "EV-4e31149f2cd129f7",
+        "EV-7a7a5267ca73e44c",
+        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
+        "EV-a474530ccf6cd872",
+        "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
         "EV-3a8752218ab2b487",
         "EV-4809eb76696a9e61",
@@ -5162,9 +5226,9 @@
         "EV-ad41b8a1f9f8d747",
         "EV-c04ef2433ae230f6",
         "EV-125040ec61215481",
-        "EV-ffa46f84468cffd9",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
+        "EV-ffa46f84468cffd9",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -5380,6 +5444,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-345378cb7f1f64fd",
+        "EV-7371ffb603de3e1c",
+        "EV-d04298029a8ab693",
         "EV-bf57b79e05a537e6",
         "EV-23ebd5f5d32e950a",
         "EV-b1ac270277a5c1bc",
@@ -5504,8 +5571,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29",
         "EN-6a50fbf0b970c03a",
+        "EN-3a7bd3e2360a3d29",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
@@ -5531,7 +5598,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-38945a66b4806b11",
@@ -6355,7 +6422,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-target_user-consumer",
@@ -6557,6 +6624,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-7371ffb603de3e1c",
         "EV-0c00a6c681f22b98",
         "EV-3badd98afb847643",
         "EV-42d0b85486576c88",
@@ -6621,6 +6689,7 @@
         "EN-8de7e44229714152",
         "EN-ced86039c0ad6a7c",
         "EN-842a7da99bd249d4",
+        "EN-a81b5ef9c23cdf0c",
         "EN-a0d4ca5b6474c67c",
         "EN-52d25a9e30ba94f1",
         "EN-55018455fd10b832",
@@ -6637,7 +6706,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -6852,6 +6921,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-358643eefe0a5df5",
+        "EV-8e0c25aebb1d4f5f",
         "EV-36a9af9b98a66be3",
         "EV-4809eb76696a9e61",
         "EV-51dcf527010e4f19",
@@ -7334,6 +7405,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-32e83e92d45d71f6",
         "EN-2b6e51bec93e86c1",
         "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d",
@@ -7657,6 +7729,7 @@
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
         "EV-7263caa45bbf168e",
+        "EV-f6ad842485bb71ab",
         "EV-1e6f73c188a9e946",
         "EV-30be225da68f2f70",
         "EV-da148848ec026bdf",
@@ -7818,7 +7891,7 @@
         "HW-cff6ff4add035b48"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-technology-image_generation",
@@ -8830,6 +8903,35 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-d97073cdfcae6b98",
+      "eventId": "EV-c638f91cbb8bf845",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-04",
+      "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "AMD",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
+      "sourceName": "The Verge AI",
+      "sourceDate": "2026-09-04",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-240389f4b730bad4",
+        "EN-2f8f0e714db5c847"
+      ]
+    },
     {
       "id": "HW-cff6ff4add035b48",
       "eventId": "EV-737a6c098b70f6ff",

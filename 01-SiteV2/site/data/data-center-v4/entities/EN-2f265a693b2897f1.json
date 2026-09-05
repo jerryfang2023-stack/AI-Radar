@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,7 +22,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-479eb3f55eda442e"
+      "EV-479eb3f55eda442e",
+      "EV-8061c8eb754e0542"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -33,7 +34,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-03",
-    "lastSeen": "2026-06-03",
+    "lastSeen": "2026-09-05",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -41,12 +42,30 @@
       ],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-8061c8eb754e0542"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8061c8eb754e0542",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Cloudera AI 推理服务",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2f265a693b2897f1",
+          "EN-8d4321d936320802"
+        ]
+      },
       {
         "id": "EV-479eb3f55eda442e",
         "dataDate": "2026-06-03",
@@ -206,6 +225,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-e5f13798813adfbf",
+        "EV-4465e8bfd74508a6",
         "EV-125040ec61215481",
         "EV-85ba013c379a9d3d",
         "EV-7832e96ace41fc15",
@@ -444,6 +465,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c608c4787821de1b",
+        "EN-ec31d2be1b244616",
         "EN-7d3194f79e645c42",
         "EN-39ba5f9dcab4e98a",
         "EN-bbdefa2950f49882",
@@ -514,7 +537,6 @@
         "EN-dd920a8cd166f486",
         "EN-2b6e51bec93e86c1",
         "EN-6e898ad0522fca30",
-        "EN-c608c4787821de1b",
         "EN-412b57e712039032",
         "EN-50537dab76505dfc",
         "EN-e956b4e6d9c37fa7",
@@ -562,7 +584,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -850,7 +872,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-technology-retrieval_augmented_generation",

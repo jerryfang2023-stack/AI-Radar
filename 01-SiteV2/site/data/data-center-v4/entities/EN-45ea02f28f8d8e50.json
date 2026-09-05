@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,8 +22,12 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-1f88bfaf77dcfca3",
+      "EV-4e31149f2cd129f7",
+      "EV-7a7a5267ca73e44c",
+      "EV-cb1bc28f78888566",
       "EV-293d6feac5b8efab",
+      "EV-a474530ccf6cd872",
+      "EV-1f88bfaf77dcfca3",
       "EV-3a8752218ab2b487",
       "EV-ffa46f84468cffd9",
       "EV-4adc165f85ae86ff"
@@ -32,17 +36,21 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-05",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-1f88bfaf77dcfca3",
+        "EV-4e31149f2cd129f7",
+        "EV-7a7a5267ca73e44c",
+        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
-        "EV-3a8752218ab2b487",
+        "EV-a474530ccf6cd872",
         "EV-ffa46f84468cffd9",
+        "EV-1f88bfaf77dcfca3",
+        "EV-3a8752218ab2b487",
         "EV-4adc165f85ae86ff"
       ],
       "hardware": [],
@@ -50,6 +58,109 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-4e31149f2cd129f7",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI GPT-6 Astra 登陆 ChatGPT Work、Codex 及 API，率先向 Pro、Enterprise 和 Business Premium 用户开放",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50",
+          "EN-6a50fbf0b970c03a"
+        ]
+      },
+      {
+        "id": "EV-7a7a5267ca73e44c",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Readhub 每日早报",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cbbb18a0811e31b9",
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
+      {
+        "id": "EV-cb1bc28f78888566",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "奥尔特曼致歉 GPT-6 Astra 发布混乱，现已面向所有 Plus / Pro 等用户推出",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
+      {
+        "id": "EV-293d6feac5b8efab",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
+        "displayTags": [],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-7d3194f79e645c42",
+          "EN-ea3bd73e2b506e00",
+          "EN-45ea02f28f8d8e50",
+          "EN-b1f973caf4a8c776"
+        ]
+      },
+      {
+        "id": "EV-a474530ccf6cd872",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI GPT-6 Astra 上线 OpenRouter，定价 $10/$50 每百万 token",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-7f871cbf905f6e0c",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
+      {
+        "id": "EV-ffa46f84468cffd9",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-02",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI宣布推出GPT-6 Astra模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50",
+          "EN-7e821af0c80afa54"
+        ]
+      },
       {
         "id": "EV-1f88bfaf77dcfca3",
         "dataDate": "2026-09-04",
@@ -65,25 +176,6 @@
           "EN-7d3194f79e645c42",
           "EN-c70eca6b0f88f44d",
           "EN-45ea02f28f8d8e50"
-        ]
-      },
-      {
-        "id": "EV-293d6feac5b8efab",
-        "dataDate": "2026-09-04",
-        "date": "2026-09-04",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
-        "displayTags": [],
-        "entityIds": [
-          "EN-478676438ee161a3",
-          "EN-7d3194f79e645c42",
-          "EN-ea3bd73e2b506e00",
-          "EN-45ea02f28f8d8e50",
-          "EN-b1f973caf4a8c776"
         ]
       },
       {
@@ -112,23 +204,6 @@
         "entityIds": [
           "EN-7d3194f79e645c42",
           "EN-45ea02f28f8d8e50"
-        ]
-      },
-      {
-        "id": "EV-ffa46f84468cffd9",
-        "dataDate": "2026-09-04",
-        "date": "2026-09-03",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "GPT-6 Astra 是首个让 OpenAI 愿意宣告“AGI 时代”的模型",
-        "displayTags": [],
-        "entityIds": [
-          "EN-7d3194f79e645c42",
-          "EN-45ea02f28f8d8e50",
-          "EN-380aba6d50e0af64"
         ]
       },
       {

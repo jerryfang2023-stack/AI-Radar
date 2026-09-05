@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -120,8 +120,13 @@
       "EV-1c6adfef6f405319",
       "EV-66df35d14361a6cb",
       "EV-3c4d6d70ac763885",
-      "EV-1f88bfaf77dcfca3",
+      "EV-358643eefe0a5df5",
+      "EV-4e31149f2cd129f7",
+      "EV-7a7a5267ca73e44c",
+      "EV-cb1bc28f78888566",
       "EV-293d6feac5b8efab",
+      "EV-a474530ccf6cd872",
+      "EV-1f88bfaf77dcfca3",
       "EV-2954a6f0220f5b18",
       "EV-3a8752218ab2b487",
       "EV-4809eb76696a9e61",
@@ -129,9 +134,9 @@
       "EV-ad41b8a1f9f8d747",
       "EV-c04ef2433ae230f6",
       "EV-125040ec61215481",
-      "EV-ffa46f84468cffd9",
       "EV-37e3784d55f5f5d0",
       "EV-7832e96ace41fc15",
+      "EV-ffa46f84468cffd9",
       "EV-4adc165f85ae86ff",
       "EV-85dc7f34cb077fba",
       "EV-b8572e821bca0e6f",
@@ -347,6 +352,9 @@
       "EV-02b19ffbe883ee2e",
       "EV-cf496e0f8a56ca97",
       "EV-00834dd71037c7cc",
+      "EV-345378cb7f1f64fd",
+      "EV-7371ffb603de3e1c",
+      "EV-d04298029a8ab693",
       "EV-bf57b79e05a537e6",
       "EV-23ebd5f5d32e950a",
       "EV-b1ac270277a5c1bc",
@@ -471,8 +479,8 @@
       "TX-technology-reasoning"
     ],
     "relatedEntityIds": [
-      "EN-3a7bd3e2360a3d29",
       "EN-6a50fbf0b970c03a",
+      "EN-3a7bd3e2360a3d29",
       "EN-d1ad14d4ad57d207",
       "EN-916a98f0fa2a39af",
       "EN-8d4321d936320802",
@@ -498,8 +506,9 @@
       "EN-b9db1ff13ae8496e"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-05",
     "relationIds": [
+      "REL2-ccdd7ba180a57a40",
       "REL2-a3bd8b736cbfac80",
       "REL2-4d08c2aaa7f9328a",
       "REL2-b2fd7c5284307b20",
@@ -687,8 +696,17 @@
         "EV-66df35d14361a6cb"
       ],
       "productsServices": [
-        "EV-1f88bfaf77dcfca3",
+        "EV-358643eefe0a5df5",
+        "EV-4e31149f2cd129f7",
+        "EV-7a7a5267ca73e44c",
+        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
+        "EV-a474530ccf6cd872",
+        "EV-ffa46f84468cffd9",
+        "EV-345378cb7f1f64fd",
+        "EV-7371ffb603de3e1c",
+        "EV-d04298029a8ab693",
+        "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
         "EV-3a8752218ab2b487",
         "EV-4809eb76696a9e61",
@@ -696,7 +714,6 @@
         "EV-ad41b8a1f9f8d747",
         "EV-c04ef2433ae230f6",
         "EV-125040ec61215481",
-        "EV-ffa46f84468cffd9",
         "EV-4adc165f85ae86ff",
         "EV-bf57b79e05a537e6",
         "EV-37e3784d55f5f5d0",
@@ -986,6 +1003,222 @@
     },
     "timeline": [
       {
+        "id": "EV-358643eefe0a5df5",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 日报 · 每日 AI 领域资讯精选 - AI225",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-32e83e92d45d71f6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-32e83e92d45d71f6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-32e83e92d45d71f6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-32e83e92d45d71f6",
+          "EN-6f7ac1823da81d2e",
+          "EN-b81c8201acfc7639",
+          "EN-e1517be14d06cdb7",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-4e31149f2cd129f7",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI GPT-6 Astra 登陆 ChatGPT Work、Codex 及 API，率先向 Pro、Enterprise 和 Business Premium 用户开放",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50",
+          "EN-6a50fbf0b970c03a"
+        ]
+      },
+      {
+        "id": "EV-7a7a5267ca73e44c",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Readhub 每日早报",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cbbb18a0811e31b9",
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
+      {
+        "id": "EV-cb1bc28f78888566",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "奥尔特曼致歉 GPT-6 Astra 发布混乱，现已面向所有 Plus / Pro 等用户推出",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
+      {
+        "id": "EV-293d6feac5b8efab",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
+        "displayTags": [],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-7d3194f79e645c42",
+          "EN-ea3bd73e2b506e00",
+          "EN-45ea02f28f8d8e50",
+          "EN-b1f973caf4a8c776"
+        ]
+      },
+      {
+        "id": "EV-a474530ccf6cd872",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI GPT-6 Astra 上线 OpenRouter，定价 $10/$50 每百万 token",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-7f871cbf905f6e0c",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
+      {
+        "id": "EV-ffa46f84468cffd9",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-02",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI宣布推出GPT-6 Astra模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50",
+          "EN-7e821af0c80afa54"
+        ]
+      },
+      {
+        "id": "EV-345378cb7f1f64fd",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "研究者发现 OpenAI 智能体在未经实验室知情的情况下涌入德国公开 Wiki 协作",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a81b5ef9c23cdf0c",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-7371ffb603de3e1c",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI的失控智能体不断逃脱，且没有正式流程对其进行调查",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-a81b5ef9c23cdf0c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a81b5ef9c23cdf0c",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-d04298029a8ab693",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "恶意的OpenAI智能体似乎利用德国维基策划了又一次攻击",
+        "displayTags": [],
+        "entityIds": [
+          "EN-285abcf07f93b5bf",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
         "id": "EV-8ed7d4e02cc5c2ab",
         "dataDate": "2026-09-04",
         "date": "2026-09-03",
@@ -1034,25 +1267,6 @@
           "EN-7d3194f79e645c42",
           "EN-c70eca6b0f88f44d",
           "EN-45ea02f28f8d8e50"
-        ]
-      },
-      {
-        "id": "EV-293d6feac5b8efab",
-        "dataDate": "2026-09-04",
-        "date": "2026-09-04",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
-        "displayTags": [],
-        "entityIds": [
-          "EN-478676438ee161a3",
-          "EN-7d3194f79e645c42",
-          "EN-ea3bd73e2b506e00",
-          "EN-45ea02f28f8d8e50",
-          "EN-b1f973caf4a8c776"
         ]
       },
       {
@@ -1251,23 +1465,6 @@
         "entityIds": [
           "EN-7d3194f79e645c42",
           "EN-329b660ea7dfe78b"
-        ]
-      },
-      {
-        "id": "EV-ffa46f84468cffd9",
-        "dataDate": "2026-09-04",
-        "date": "2026-09-03",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "GPT-6 Astra 是首个让 OpenAI 愿意宣告“AGI 时代”的模型",
-        "displayTags": [],
-        "entityIds": [
-          "EN-7d3194f79e645c42",
-          "EN-45ea02f28f8d8e50",
-          "EN-380aba6d50e0af64"
         ]
       },
       {
@@ -13532,17 +13729,44 @@
   },
   "relatedEntities": [
     {
-      "id": "EN-3a7bd3e2360a3d29",
-      "name": "Apple",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
+      "id": "EN-6a50fbf0b970c03a",
+      "name": "ChatGPT Work",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
       "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-4e31149f2cd129f7",
+        "EV-4268b4be01fc8711",
+        "EV-efee7c1ac4dc336f",
+        "EV-d07f7a8d4d20a034"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-09-05"
+    },
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "苹果"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
         "EV-f282ab8740ff0096",
+        "EV-2f0f3200b9800877",
         "EV-026b9b4462b4adc8",
         "EV-3ebefd784ba0afd0",
         "EV-5bbc509a032b8309",
@@ -13554,6 +13778,7 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-8e0c25aebb1d4f5f",
         "EV-36a9af9b98a66be3",
         "EV-e5883e1e8f305b67",
         "EV-6b9a76ea8a03b09f",
@@ -13612,6 +13837,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-c06d008e73a0d337",
         "EV-4a982ba6f291ddec",
         "EV-9434ab7a2e818ce9",
         "EV-4b0065f780bd73bd",
@@ -13646,34 +13872,16 @@
       ],
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
+        "EN-e463d05a14e8697f",
+        "EN-7df09a7717ef2feb",
         "EN-0502bb9ed34980aa",
-        "EN-af3ceabbe048a291"
+        "EN-dd920a8cd166f486",
+        "EN-1924fff8eb4d54ae",
+        "EN-af3ceabbe048a291",
+        "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-09-04"
-    },
-    {
-      "id": "EN-6a50fbf0b970c03a",
-      "name": "ChatGPT Work",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-4268b4be01fc8711",
-        "EV-efee7c1ac4dc336f",
-        "EV-d07f7a8d4d20a034"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "firstSeen": "2026-07-10",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-d1ad14d4ad57d207",
@@ -13881,8 +14089,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-36a9af9b98a66be3",
+        "EV-8061c8eb754e0542",
         "EV-f01a13953fa7aaaa",
+        "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
         "EV-5890a74f1a62940e",
@@ -13983,6 +14192,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-bef842eacf8b7aad",
+        "EV-c06d008e73a0d337",
         "EV-0094ff6922e9d570",
         "EV-81f1fd52e41d4664",
         "EV-00e6152baff47d4d",
@@ -14082,7 +14293,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-7839fb10a8f14c70",
@@ -14666,7 +14877,6 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
-        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -14681,6 +14891,7 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
+        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -14782,6 +14993,9 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-6d92bb807f339b53",
+        "EV-d5db0416bede29de",
+        "EV-c638f91cbb8bf845",
         "EV-8232ad0075a77b7a",
         "EV-ad41b8a1f9f8d747",
         "EV-67adfb3393d95976",
@@ -14897,7 +15111,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -15009,7 +15223,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-af53dbc3e443f7a9",
@@ -15198,6 +15412,27 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-ccdd7ba180a57a40",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-6a50fbf0b970c03a",
+      "object_type": "entity",
+      "event_id": "EV-4e31149f2cd129f7",
+      "claim_refs": [
+        "CL-7ec68eacd62e9fb6",
+        "CL-a6e7af309ea16fd8",
+        "CL-8b35059292f6a876",
+        "CL-bfd7f5f018d1fc0f"
+      ],
+      "source_refs": [
+        "SA-81f0635be094c314"
+      ],
+      "data_date": "2026-09-05",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-a3bd8b736cbfac80",
       "relationship_version": "RELATION-V2.1",
@@ -16414,6 +16649,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-e5f13798813adfbf",
+        "EV-4465e8bfd74508a6",
         "EV-125040ec61215481",
         "EV-85ba013c379a9d3d",
         "EV-7832e96ace41fc15",
@@ -16652,6 +16889,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c608c4787821de1b",
+        "EN-ec31d2be1b244616",
         "EN-7d3194f79e645c42",
         "EN-39ba5f9dcab4e98a",
         "EN-bbdefa2950f49882",
@@ -16722,7 +16961,6 @@
         "EN-dd920a8cd166f486",
         "EN-2b6e51bec93e86c1",
         "EN-6e898ad0522fca30",
-        "EN-c608c4787821de1b",
         "EN-412b57e712039032",
         "EN-50537dab76505dfc",
         "EN-e956b4e6d9c37fa7",
@@ -16770,7 +17008,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-industry-media_entertainment",
@@ -16806,6 +17044,7 @@
         "EV-2d6d2dc0ead4be10",
         "EV-afcd5426f5c01dc7",
         "EV-6c361125c3f50bb6",
+        "EV-78b759d491382d09",
         "EV-0fce4630e77c9db7",
         "EV-c877ce26c9f8997f",
         "EV-25b88403a237969f",
@@ -16851,6 +17090,7 @@
         "EN-3db1f560db626918",
         "EN-bfc698cb0f9b4d72",
         "EN-23929c7dca3eb576",
+        "EN-bc44764a5e2cdba7",
         "EN-c70eca6b0f88f44d",
         "EN-f8e930daaadf36ec",
         "EN-dd668059ea96880e",
@@ -16871,7 +17111,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-product_form-model_api_service",
@@ -17400,7 +17640,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-target_user-consumer",
@@ -17682,7 +17922,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-ai_market_subcategory-productivity_enterprise_workflows",
@@ -17792,7 +18032,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -18080,7 +18320,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -18323,7 +18563,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -18421,6 +18661,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-7371ffb603de3e1c",
         "EV-0c00a6c681f22b98",
         "EV-3badd98afb847643",
         "EV-42d0b85486576c88",
@@ -18485,6 +18726,7 @@
         "EN-8de7e44229714152",
         "EN-ced86039c0ad6a7c",
         "EN-842a7da99bd249d4",
+        "EN-a81b5ef9c23cdf0c",
         "EN-a0d4ca5b6474c67c",
         "EN-52d25a9e30ba94f1",
         "EN-55018455fd10b832",
@@ -18501,7 +18743,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -18716,6 +18958,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-358643eefe0a5df5",
+        "EV-8e0c25aebb1d4f5f",
         "EV-36a9af9b98a66be3",
         "EV-4809eb76696a9e61",
         "EV-51dcf527010e4f19",
@@ -19198,6 +19442,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-32e83e92d45d71f6",
         "EN-2b6e51bec93e86c1",
         "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d",
@@ -20361,6 +20606,7 @@
         "EV-7077778f0eb84f6c",
         "EV-d3054a8a2b62a503",
         "EV-535c2f4fb851332d",
+        "EV-783866f9782691b6",
         "EV-5bbc509a032b8309",
         "EV-522c339dded54be5",
         "EV-dda9429d76897a3d",
@@ -20370,6 +20616,7 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-15847ebe206ad028",
         "EV-b22136a993b21f0c",
         "EV-a9630a87712e5899",
         "EV-c5f8f07d714f330f",
@@ -20422,12 +20669,14 @@
       ],
       "entityIds": [
         "EN-be9d587defa1f0c0",
+        "EN-b644c0a9d493976a",
         "EN-b5318593e1260f2f",
         "EN-e1517be14d06cdb7",
         "EN-193d220b421d776e",
         "EN-b81c8201acfc7639",
         "EN-87c730bc4f32459e",
         "EN-7df09a7717ef2feb",
+        "EN-1847d9e6a1580042",
         "EN-0d47d3f0783749a8",
         "EN-bbdefa2950f49882",
         "EN-fe074a5bc4bb5163",
@@ -20465,7 +20714,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-industry-legal_services",
@@ -23370,6 +23619,93 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-aaea2664aab8ab22",
+      "snapshotKey": "aaea2664aab8ab22",
+      "snapshotId": "HWS-be8ab1af3546a18d",
+      "eventId": "EV-358643eefe0a5df5",
+      "eventIds": [
+        "EV-358643eefe0a5df5"
+      ],
+      "dataDate": "2026-09-05",
+      "date": "2026-09-05",
+      "title": "AI",
+      "subject": "AI",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "16",
+          "unit": "万",
+          "fact_ref": "HWF-eb68a9cf0de9f0f2"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-05",
+          "hardware_fact_id": "HWF-eb68a9cf0de9f0f2",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-05T00:52:11.893Z",
+          "subject_entity_id": "EN-32e83e92d45d71f6",
+          "subject_name": "AI",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "16",
+          "unit": "万",
+          "source_quote": "算力与模型层面，DeepSeek拟在内蒙古部署16万颗华为昇腾芯片推理集群，沙特胡迈因联合MiniMax推出4280亿参数阿拉伯语原生大模型。",
+          "event_refs": [
+            "EV-358643eefe0a5df5"
+          ],
+          "claim_ref": "CL-66b73377f1186d3a",
+          "source_refs": [
+            "SA-3681cf8a45f81088"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-32e83e92d45d71f6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-32e83e92d45d71f6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://daily.ai225.com",
+      "entityIds": [
+        "EN-32e83e92d45d71f6",
+        "EN-6f7ac1823da81d2e",
+        "EN-b81c8201acfc7639",
+        "EN-e1517be14d06cdb7",
+        "EN-7d3194f79e645c42"
+      ]
+    },
     {
       "id": "HWC-121c9699144faa88",
       "snapshotKey": "121c9699144faa88",
