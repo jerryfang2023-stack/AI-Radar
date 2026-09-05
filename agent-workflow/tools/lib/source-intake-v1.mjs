@@ -213,7 +213,7 @@ export function readSourceIntake(root, date) {
   if (payload.schema_version !== SOURCE_INTAKE_VERSION || payload.data_date !== date) {
     throw new Error(`Invalid structured source intake: ${rel(root, file)}`);
   }
-  return { file, payload };
+  return { file, payload: normalizeSourceIntakeMarketScopes(payload).payload };
 }
 
 export function mergeSourceIntakes(...payloads) {
