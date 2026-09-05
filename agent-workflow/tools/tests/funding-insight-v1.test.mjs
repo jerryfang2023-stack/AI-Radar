@@ -342,6 +342,23 @@ test("Even Realities accepted evidence cannot overwrite proceeds with its unicor
   assert.deepEqual(fundingEvidenceProofProblems(evidenceCard), []);
 });
 
+test("accepted Chinese proceeds quote supplies an English company name instead of a headline fragment", () => {
+  const fragment = "前苹果工程师的AI眼镜获得1.5亿美元";
+  const entity = { entity_id: "EN-EVEN", entity_type: "organization_candidate", canonical_name: fragment };
+  const event = { event_id: "EV-EVEN", entities: [entity.entity_id], claim_refs: ["CL-EVEN"],
+    display_title_zh: `${fragment}融资 - IDN Financials` };
+  const claim = { claim_id: "CL-EVEN", subject: fragment, claim_type: "funding", verification_status: "accepted",
+    source_quote: "Even Realities获得1.5亿美元融资，估值达10亿美元，用于AI扩张。" };
+  assert.equal(subjectCompanyForEvent(event, [entity], {}, [claim]).canonical_name, "Even Realities");
+  assert.equal(subjectCompanyForEvent(event, [entity], {}, [{ ...claim, verification_status: "pending" }])?.canonical_name === "Even Realities", false);
+  for (const quote of ["Meituan完成对Even Realities的1.5亿美元融资领投。", "Tencent宣布完成对Even Realities的1.5亿美元融资。"] ) {
+    const namedEntity = { ...entity, canonical_name: "Even Realities" };
+    assert.equal(subjectCompanyForEvent(event, [namedEntity], {}, [{ ...claim,
+      subject: namedEntity.canonical_name, source_quote: quote }]).canonical_name, "Even Realities");
+    assert.equal(subjectCompanyForEvent(event, [entity], {}, [{ ...claim, source_quote: quote }]).canonical_name, fragment);
+  }
+});
+
 test("funding research prompt enumerates every governed taxonomy list ID", () => {
   const prompt = promptFor(
     { event_id: "EV-1", display_title_zh: "示例融资", event_time: "2026-08-01", action: "融资", object: "A 轮", metrics: ["$10M"] },
