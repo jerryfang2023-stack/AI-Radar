@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-09-04
+date: 2026-09-05
 status: current
 encoding: UTF-8
 ---
@@ -19,9 +19,9 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.1-24-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
-- Current Funding Insights projection: 288 public financing-event cards checked through 2026-09-04, including 34 China-market cards; the latest qualifying financing disclosure is dated 2026-09-02. The current cycle reuses the existing Wonderful（5.5 亿美元 C 轮）card by stable event identity, while two secondary-source rumors remain excluded. The public financing portal and Mini Program live contract consume the same gated projection; publication must still be verified independently from the generated source.
-- Current Data Center frontstage: 2,642 events, 219 companies, 343 products, 61 people, 1,353 investors, 359 relationships, 137 FDE records, and 96 hardware records through 2026-09-04.
-- The 2026-09-04 daily bundle contains 36 canonical events from 277 RawDocuments and keeps accepted-event entity, Claim, and SourceArtifact coverage at 100%. University/institute-led research resolves as research results only with cited participant evidence; disputed Claims cannot project factual tag/facet assertions. A publisher inferred only from the source URL cannot satisfy an event's participant-entity gate.
+- Current Funding Insights projection: 288 public financing-event cards checked through 2026-09-05, including 35 China-market cards; the latest qualifying financing disclosure is dated 2026-09-02. The 2026-09-05 update adds the Even Realities 1.5 亿美元 Pre-B card (2026-07-07 disclosure), reuses Wonderful by stable event identity, and withdraws the Articul8 card whose cited 5 亿美元 was valuation, not round proceeds. Canonical evidence remains intact. The public financing portal and Mini Program live contract consume the same gated projection; publication must still be verified independently from the generated source.
+- Current Data Center frontstage: 2,671 events, 219 companies, 343 products, 61 people, 1,356 investors, 378 relationships, 137 FDE records, 99 hardware records, 66 community items, and 1,109 viewpoints through 2026-09-05.
+- The 2026-09-05 daily bundle contains 43 canonical events and 121 Claims from 228 RawDocuments; accepted-event entity, Claim, and SourceArtifact coverage is 100%. University/institute-led research resolves as research results only with cited participant evidence; disputed Claims cannot project factual tag/facet assertions. A publisher inferred only from the source URL cannot satisfy an event's participant-entity gate.
 - Current funding taxonomy projection uses reviewed event decisions and evidence-backed event/entity classification assertions under `TAG-V4.1`; current counts are owned by the generated taxonomy review and consistency-gate reports rather than this handoff.
 - Current private-evidence counts are owned by the latest private-evidence gate rather than this handoff; the public repository contains locators only.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
@@ -52,10 +52,13 @@ External sources
 -> operations data
 -> GitHub PR / merge
 -> GitHub Pages
+-> independent Funding Portal / protected Mini Program publication and matching release receipts
 -> projection-only local refresh into the independent Guanlan AI Vault
 ```
 
 Model-assist production validates and rebuilds from the accepted candidate subset even when an isolated candidate generation fails; invalid partial output still fails closed at the model-assist gate.
+
+Use `docs/daily-production-recovery.md` for recovery and `agent-workflow/reports/2026-09-05-daily-pipeline-root-cause-audit.md` for the latest repair evidence. Runtime logs, incident drafts, and local Skill discovery output belong outside Git. Reuse a failed same-date checkpoint only when private-original archival is proven; do not recollect accepted intake to repair a downstream card or publication. First-line history merges approved records incrementally; 1,101 historical records are retained, including all 623 previously archived records.
 
 Failed-run recovery artifacts retain same-date model-assist decisions/checkpoint and projection-coverage diagnostics. Older artifacts may omit model decisions: do not rebuild an accepted factual bundle from intake alone or silently replace it with fewer events. The 2026-09-02 recovery preserved 197 RawDocuments and 99 Claims, rebuilt 40 canonical events without inventing missing currency or financing facts, and restored accepted-event entity/project coverage to 100%.
 

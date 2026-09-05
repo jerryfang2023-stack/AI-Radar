@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-memory
-last_updated: 2026-09-04
+last_updated: 2026-09-05
 use_when:
   - project startup
   - agent handoff
@@ -38,6 +38,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - A publisher inferred only from `source_url` is provenance, not an event participant. Canonical event admission requires at least one entity supported by accepted title/Claim/document-attribution evidence or explicit catalog review.
 - A verified funding event may publish without named investors only when captured evidence confirms the financing but discloses investors solely by generic category. The card must keep an empty investor list, set `investor_disclosure_status=not_disclosed`, retain the `investors_missing` risk marker, and never materialize the generic category as an institution.
 - Funding publication is one atomic application release: card, accepted identity/taxonomy decisions, reviewed classifications, institution registry, Data Center monolith and split service, Trend Radar, and Opportunity Map must be rebuilt, gated, and committed together. A card-only commit is incomplete even when card validation passes.
+- Financing proceeds and valuation must remain separate even when both share an exact source quote. A wrong historical card is withdrawn from the financing application, not rescued by an undisclosed-amount exception; its canonical evidence remains intact.
 - When an accepted funding Claim names a Chinese legal company immediately before the financing action, that exact legal name outranks a descriptive headline subject. Empty founder placeholders are not entities and must be removed from public funding projections even when their surrounding quote describes an unnamed founding team.
 - Tag and facet assertions from disputed Claims are review evidence only. They must never enter factual Data Center, Trend Radar, or Opportunity Map projections.
 - Legacy V3 column URLs remain redirects only; no public page may load V3 navigation, V3 page assets, or the V3 desk JSON.
@@ -59,6 +60,8 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Catalog publication coverage must share the frontstage's accepted-review admission and merge resolution; factual verification alone does not authorize a public company/product profile.
 - Runtime diagnostics, repair logs and unreviewed incident drafts stay outside the primary checkout. Large child output goes to files, and a repair handoff must outlive the inner repair timeout; see `docs/daily-production-recovery.md`.
 - First-Line Viewpoints must keep morning RSS collection and afternoon follow-builders skill publishing separate.
+- Approved viewpoint history must be incrementally retained even in a shallow checkout; untranslated replacement candidates cannot erase accepted historical translations.
+- Pages completion is not independent financing-site completion. Public and protected Mini Program release receipts must agree on the full portal commit and release ID, including on no-change publication attempts.
 - Community Intelligence depends on local logged-in collection; GitHub can publish already collected data but cannot replace the logged-in local collector.
 - Weekly and monthly report content is sourced from `01-SiteV2/content/12-applications/industry-reports/` before site generation.
 - Local knowledge refresh writes only to the externally configured `GUANLAN-VAULT-V1.0` directory map. The removed repository `vault/` and retired Obsidian targets under old production paths must not be recreated.

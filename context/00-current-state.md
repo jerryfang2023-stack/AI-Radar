@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-09-04
+last_updated: 2026-09-05
 use_when:
   - large task startup
   - dispatch planning
@@ -31,9 +31,9 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
 - Current data-lake contract: `DATA-LAKE-V4.1-24-table`; JSONL and DuckDB must expose exactly the same 24-table V4 allowlist, including reviewed event classifications.
 - Current private evidence store: `PRIVATE-EVIDENCE-STORE-V2.0`; it is the sole complete-original store, deduplicates bodies by `content_hash`, and is physically outside the public repository and Vault. Public V4 data, the Vault, and the website never retain complete bodies.
-- Current Funding Insights inventory: 288 public financing-event cards checked through 2026-09-04, including 34 China-market cards; the latest qualifying financing disclosure is dated 2026-09-02. The current cycle reuses the already-published Wonderful（5.5 亿美元 C 轮）card by stable event identity instead of generating a duplicate; two secondary-source rumors remain excluded. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It builds 1,353 evidence-backed investor subjects; unresolved product/person names remain in the evidence-backed entity review queue. The PC portal and Mini Program live contract must publish the same 288-card inventory.
-- Current Data Center frontstage inventory: 2,642 events, 219 companies, 343 products, 61 people, 1,353 investors, 359 relationships, 137 FDE records, and 96 hardware records through 2026-09-04.
-- The 2026-09-04 daily bundle contains 36 canonical events from 277 RawDocuments; accepted-event entity, Claim, and SourceArtifact coverage is 100%, and relationship, trend, opportunity, FDE, hardware, and funding projections pass their release gates. The release chain asserts current-date projection coverage in both the persistent-asset path and GitHub Pages before deployment. Current non-blocking diagnostics are two of five important customer-case sources, six unrecovered provider-attempt notes despite healthy structured supply, and no formal China-market event from the current supplemental discovery set.
+- Current Funding Insights inventory: 288 public financing-event cards checked through 2026-09-05, including 35 China-market cards; the latest qualifying financing disclosure is dated 2026-09-02. The 2026-09-05 update adds Even Realities（1.5 亿美元 Pre-B，2026-07-07 披露）, reuses Wonderful by stable event identity, and withdraws the Articul8 card whose amount was actually a valuation. The projection exposes original and normalized amount, round, financing date, disclosure status, investor roles, cumulative basis, and stable history. It builds 1,356 evidence-backed investor subjects; unresolved product/person names remain in the evidence-backed entity review queue. The PC portal and Mini Program live contract must publish the same 288-card inventory, verified by identical full-commit and release-ID receipts.
+- Current Data Center frontstage inventory: 2,671 events, 219 companies, 343 products, 61 people, 1,356 investors, 378 relationships, 137 FDE records, 99 hardware records, 66 community items, and 1,109 viewpoints through 2026-09-05.
+- The 2026-09-05 daily bundle contains 43 canonical events and 121 Claims from 228 RawDocuments; accepted-event entity, Claim, and SourceArtifact coverage is 100%. Current-date projection coverage gates share the frontstage's reviewed admission scope and still reject missing admitted records. The funding recovery is independent from core event publication; a green core job is not proof that financing or the Mini Program is live. See `docs/daily-production-recovery.md` and the dated 2026-09-05 root-cause audit for failure, recovery, and publication evidence. No source-bounded FDE record was found in this batch; absent fields remain absent.
 - Current private-evidence inventory is owned by the latest private-evidence gate rather than a copied count in this state document.
 - Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task. Missed scheduled morning, recovery, and closure phases that start after their useful window write an observable `superseded` report, while manual recovery and final closure remain executable. The watchdog allows a short report grace period during Task Scheduler catch-up.
 
@@ -68,6 +68,7 @@ External sources
 -> downstream application projections, including Trend Radar, financing cards, and reports
 -> GitHub PR / merge
 -> GitHub Pages
+-> independent financing site / protected Mini Program release with matching publication receipts
 -> local Guanlan AI Vault refresh
 ```
 
