@@ -521,6 +521,8 @@ test("source-title backfill updates private metadata while public intake and ind
       raw_id: "RAW-1",
       source_artifact_id: "SA-1",
       title_original: truncated,
+      content_hash: hash,
+      canonical_url: "https://wonderful.ai/news",
       body_ref: `evidence://${hash}`,
     }]);
     writeJson(path.join(dateRoot, "source-artifacts.json"), [{
@@ -563,6 +565,18 @@ test("source-title backfill updates private metadata while public intake and ind
     const repairedPrivate = JSON.parse(fs.readFileSync(path.join(privateRoot, recordRef), "utf8"));
     assert.equal(repairedPrivate.title, complete);
     assert.equal(repairedPrivate.title_zh, translated);
+    const catalogFile = path.join(privateRoot, "catalog.jsonl");
+    const previousDateEntry = JSON.parse(fs.readFileSync(catalogFile, "utf8"));
+    previousDateEntry.data_date = "2026-09-03";
+    fs.writeFileSync(catalogFile, `${JSON.stringify(previousDateEntry)}\n`);
+    writeJson(path.join(dateRoot, "raw-documents.json"), [{ raw_id: "RAW-1", source_artifact_id: "SA-1", title_original: complete, content_hash: hash, canonical_url: "https://wonderful.ai/news", body_ref: `evidence://${hash}` }]);
+    writeJson(path.join(dateRoot, "canonical-events.json"), [{ source_refs: ["SA-1"] }]);
+    const privateBefore = fs.readFileSync(path.join(privateRoot, recordRef));
+    execFileSync(process.execPath, [path.join(projectRoot, "agent-workflow/tools/backfill-source-title-translations.mjs"), `--date=${date}`, "--write=true"], {
+      cwd: tempRoot, env: { ...process.env, GUANLAN_EVIDENCE_BACKUP_ROOT: privateRoot }, encoding: "utf8", timeout: 10000,
+    });
+    assert.deepEqual(fs.readFileSync(path.join(privateRoot, recordRef)), privateBefore);
+    assert.equal(JSON.parse(fs.readFileSync(path.join(tempRoot, "agent-workflow/reports/source-title-translation-backfill-write.json"), "utf8")).metadata_identity_skipped, 1);
   } finally {
     fs.rmSync(tempRoot, { recursive: true, force: true });
     fs.rmSync(privateRoot, { recursive: true, force: true });
