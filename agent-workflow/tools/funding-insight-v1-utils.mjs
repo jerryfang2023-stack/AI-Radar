@@ -1117,6 +1117,12 @@ function fundedStartupNameFromClaims(claims = []) {
     .map((claim) => clean(claim.source_quote))
     .filter((quote) => /(?:融资|投资|募资|raises?|raised|funding|series|seed|round|financing)/iu.test(quote));
   for (const quote of acceptedQuotes) {
+    // Chinese coverage can name an English company directly before the
+    // financing verb while the deterministic Claim subject is a headline.
+    const namedProceeds = quote.match(/(?:^|[。！？；;：:])\s*([A-Z][A-Za-z0-9&.'-]*(?:[ \t]+[A-Z][A-Za-z0-9&.'-]*){0,4})\s*(?:已|宣布)?(?:获得|获|完成|筹集)[^。！？；;]{0,60}(?:融资|募资)/u);
+    if (namedProceeds && fundingAmountMentions(namedProceeds[0]).some((mention) => mention.round)) {
+      return clean(namedProceeds[1]);
+    }
     const chineseLegalPattern = /(?:^|[———:：，,；;\s])([\p{Script=Han}A-Za-z0-9·&.-]{2,40}?(?:有限责任公司|股份有限公司|有限公司))(?=[（(，,。；;\s]|$)/gu;
     for (const legalMatch of quote.matchAll(chineseLegalPattern)) {
       const legalName = clean(legalMatch[1]);
