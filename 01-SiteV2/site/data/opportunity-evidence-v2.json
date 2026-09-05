@@ -427,7 +427,85 @@
         "SA-48cf2f1c5be0fd84"
       ],
       "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-aa949c066d46acbf"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0edefc639c0d4726"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-aa949c066d46acbf"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-33f69dac8d8735a0"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-aa949c066d46acbf"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-535f77f895d927c3"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-aa949c066d46acbf"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-15af872c682cc90b"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-aa949c066d46acbf"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0184e636eb2efb9f"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "knowledge_search",
+          "value_name": "知识与搜索",
+          "entity_ids": [
+            "EN-aa949c066d46acbf"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c872deeae805c20b"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-aa949c066d46acbf"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-1b59bc8ae4699ced"
+        }
+      ],
       "application_assertions": {
         "buyer_or_user": [
           {
@@ -36532,50 +36610,6 @@
       "taxonomy_version": "TAG-V4.1",
       "classifications": [
         {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "industry_applications",
-          "value_name": "行业应用",
-          "entity_ids": [
-            "EN-5e0971a2294ea3f7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-04e154d5a91c7c35"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "industrials",
-          "value_name": "工业",
-          "entity_ids": [
-            "EN-5e0971a2294ea3f7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-bda7ea9a766540c1"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "energy_utilities",
-          "value_name": "能源与公用事业",
-          "entity_ids": [
-            "EN-5e0971a2294ea3f7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-dd810575ae5844da"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "manufacturing",
-          "value_name": "制造业",
-          "entity_ids": [
-            "EN-5e0971a2294ea3f7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-95d5c9357f150fba"
-        },
-        {
           "dimension_id": "product_form",
           "dimension_name": "产品形态",
           "value_id": "enterprise_software_platform",
@@ -36583,52 +36617,8 @@
           "entity_ids": [
             "EN-5e0971a2294ea3f7"
           ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-5da2f4c07fd43148"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "business_user",
-          "value_name": "企业用户",
-          "entity_ids": [
-            "EN-5e0971a2294ea3f7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-7127de9ab4c7fc26"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "data_analysis",
-          "value_name": "数据分析",
-          "entity_ids": [
-            "EN-5e0971a2294ea3f7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-a86044c70851b9b7"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "knowledge_search",
-          "value_name": "知识与搜索",
-          "entity_ids": [
-            "EN-5e0971a2294ea3f7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-6a04e9d18287cf55"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "productivity_enterprise_workflows",
-          "value_name": "生产力与企业工作流",
-          "entity_ids": [
-            "EN-5e0971a2294ea3f7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-aa6ee516b154b4d5"
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
         }
       ],
       "application_assertions": {

@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-09-04T04:55:10.540Z",
+    "generated_at": "2026-09-05T05:05:36.181Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1349,
-    "evidence_backed_count": 1349,
-    "current_round_activity_count": 1565,
+    "institution_count": 1356,
+    "evidence_backed_count": 1356,
+    "current_round_activity_count": 1572,
     "individual_investor_count": 182,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -20895,6 +20895,217 @@
       ]
     },
     {
+      "id": "INV-675f70a9c00060",
+      "name": "腾讯",
+      "aliases": [],
+      "canonical_entity_id": "EN-9c8ae69b84f21a2e",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 3,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-06-03",
+      "latest_disclosed_at": "2026-08-24",
+      "role_counts": {
+        "co_lead": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "first_external",
+        "pre_series_b",
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-9a970ad7900121db",
+          "canonical_entity_id": "",
+          "name": "小鹏机器人业务"
+        },
+        {
+          "entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "name": "DeepSeek"
+        },
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-e52bb42b272a3729",
+          "funding_insight_id": "FI-e3406c2e889004e3",
+          "event_ids": [
+            "EV-987cb2e5e20f79ce"
+          ],
+          "company_entity_id": "EN-9a970ad7900121db",
+          "company_canonical_entity_id": "",
+          "company_name": "小鹏机器人业务",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "9亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-24",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+              "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+              "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-4306369201ed63f9",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-340182e8dcb597a3",
+              "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+              "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+              "source_content_hash": "5e7f9a9c8a73026b",
+              "quote": "The round, which was led by Meituan and Tencent",
+              "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-60bdf48f03f8b5d6",
+          "funding_insight_id": "FI-71c58a10a93101c8",
+          "event_ids": [
+            "EV-d4d7b019ff0015df"
+          ],
+          "company_entity_id": "EN-6f7ac1823da81d2e",
+          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "company_name": "DeepSeek",
+          "round": "首次外部融资",
+          "round_code": "first_external",
+          "round_original": "首次外部融资轮",
+          "amount_original": "约74亿美元（约500亿元人民币）",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 74 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+              "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+              "source_content_hash": "1a156474d760e02b",
+              "quote": "Tencent ​¥10B",
+              "quote_hash": "47ccb8ca0a160a154819a8c94913cdbb3c3928767235b01401debc701e04a303"
+            },
+            {
+              "source_id": "FISRC-20480dcf3f970893",
+              "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
+              "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
+              "source_content_hash": "94a6c6ef0b270e0d",
+              "quote": "Strategic capital was anchored by Tencent",
+              "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-2ec9a5e83ce18f75",
+          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "source_content_hash": "b8e4f0b869df00ee",
+          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+          "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+        },
+        {
+          "source_id": "FISRC-340182e8dcb597a3",
+          "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+          "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+          "source_content_hash": "5e7f9a9c8a73026b",
+          "quote": "The round, which was led by Meituan and Tencent",
+          "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
+        },
+        {
+          "source_id": "FISRC-d2c8c841370ed82a",
+          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+          "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+          "source_content_hash": "1a156474d760e02b",
+          "quote": "Tencent ​¥10B",
+          "quote_hash": "47ccb8ca0a160a154819a8c94913cdbb3c3928767235b01401debc701e04a303"
+        },
+        {
+          "source_id": "FISRC-20480dcf3f970893",
+          "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
+          "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
+          "source_content_hash": "94a6c6ef0b270e0d",
+          "quote": "Strategic capital was anchored by Tencent",
+          "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
+        }
+      ]
+    },
+    {
       "id": "INV-b92b24e064ec0c",
       "name": "NFX",
       "aliases": [],
@@ -28810,162 +29021,6 @@
           "source_content_hash": "affdfd9a0ccfb188",
           "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
-        }
-      ]
-    },
-    {
-      "id": "INV-675f70a9c00060",
-      "name": "腾讯",
-      "aliases": [],
-      "canonical_entity_id": "EN-9c8ae69b84f21a2e",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 2,
-      "market_regions": [
-        "CN",
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-06-03",
-      "latest_disclosed_at": "2026-08-24",
-      "role_counts": {
-        "participant": 2
-      },
-      "round_codes": [
-        "first_external",
-        "strategic"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-9a970ad7900121db",
-          "canonical_entity_id": "",
-          "name": "小鹏机器人业务"
-        },
-        {
-          "entity_id": "EN-6f7ac1823da81d2e",
-          "canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "name": "DeepSeek"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-e52bb42b272a3729",
-          "funding_insight_id": "FI-e3406c2e889004e3",
-          "event_ids": [
-            "EV-987cb2e5e20f79ce"
-          ],
-          "company_entity_id": "EN-9a970ad7900121db",
-          "company_canonical_entity_id": "",
-          "company_name": "小鹏机器人业务",
-          "round": "战略融资",
-          "round_code": "strategic",
-          "round_original": "战略融资",
-          "amount_original": "9亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 900000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "9 亿美元"
-          },
-          "announced_at": "2026-08-24",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-2ec9a5e83ce18f75",
-              "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-              "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-              "source_content_hash": "b8e4f0b869df00ee",
-              "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
-              "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-60bdf48f03f8b5d6",
-          "funding_insight_id": "FI-71c58a10a93101c8",
-          "event_ids": [
-            "EV-d4d7b019ff0015df"
-          ],
-          "company_entity_id": "EN-6f7ac1823da81d2e",
-          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "company_name": "DeepSeek",
-          "round": "首次外部融资",
-          "round_code": "first_external",
-          "round_original": "首次外部融资轮",
-          "amount_original": "约74亿美元（约500亿元人民币）",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 74 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-d2c8c841370ed82a",
-              "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
-              "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
-              "source_content_hash": "1a156474d760e02b",
-              "quote": "Tencent ​¥10B",
-              "quote_hash": "47ccb8ca0a160a154819a8c94913cdbb3c3928767235b01401debc701e04a303"
-            },
-            {
-              "source_id": "FISRC-20480dcf3f970893",
-              "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
-              "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
-              "source_content_hash": "94a6c6ef0b270e0d",
-              "quote": "Strategic capital was anchored by Tencent",
-              "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-2ec9a5e83ce18f75",
-          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-          "source_content_hash": "b8e4f0b869df00ee",
-          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
-          "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
-        },
-        {
-          "source_id": "FISRC-d2c8c841370ed82a",
-          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
-          "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
-          "source_content_hash": "1a156474d760e02b",
-          "quote": "Tencent ​¥10B",
-          "quote_hash": "47ccb8ca0a160a154819a8c94913cdbb3c3928767235b01401debc701e04a303"
-        },
-        {
-          "source_id": "FISRC-20480dcf3f970893",
-          "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
-          "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
-          "source_content_hash": "94a6c6ef0b270e0d",
-          "quote": "Strategic capital was anchored by Tencent",
-          "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
         }
       ]
     },
@@ -38194,6 +38249,147 @@
           "source_content_hash": "99e8e0f48b30eed2",
           "quote": "with participation from Vista Equity Partners",
           "quote_hash": "8675f498cc47f8b1b529cfa4f40c9f48d46b02c7ce2e8ac6c2303159a57740f2"
+        }
+      ]
+    },
+    {
+      "id": "INV-151eb7391f9219",
+      "name": "美团",
+      "aliases": [],
+      "canonical_entity_id": "EN-cd6362472aea60ef",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-05-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "co_lead": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b",
+        "undisclosed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-481243d2f2a235c1",
+          "canonical_entity_id": "",
+          "name": "月之暗面"
+        },
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-340faa68e0aaf3c3",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-340182e8dcb597a3",
+              "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+              "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+              "source_content_hash": "5e7f9a9c8a73026b",
+              "quote": "The round, which was led by Meituan and Tencent",
+              "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-6548a9eb9b96181d",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
+          "event_ids": [
+            "EV-c5d7d88d1aef8edb"
+          ],
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "约20亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 20 亿美元"
+          },
+          "announced_at": "2026-05-07",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "A+轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+              "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+              "source_content_hash": "eeb091dd8db852e6",
+              "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
+              "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-340182e8dcb597a3",
+          "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+          "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+          "source_content_hash": "5e7f9a9c8a73026b",
+          "quote": "The round, which was led by Meituan and Tencent",
+          "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
+        },
+        {
+          "source_id": "FISRC-5d82f5dc9fc96ce5",
+          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+          "source_content_hash": "eeb091dd8db852e6",
+          "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
+          "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
         }
       ]
     },
@@ -77340,6 +77536,140 @@
       ]
     },
     {
+      "id": "INV-6ba0ec6446762b",
+      "name": "CDH Investments",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-edc5f7384562a7b8",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+              "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+              "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-052e46c4ede92d8b",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-340182e8dcb597a3",
+              "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+              "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+              "source_content_hash": "5e7f9a9c8a73026b",
+              "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+              "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e9b7c7aa8538dbf1",
+          "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+          "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+          "source_content_hash": "40e5d01acf447bfc",
+          "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+          "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+        },
+        {
+          "source_id": "FISRC-340182e8dcb597a3",
+          "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+          "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+          "source_content_hash": "5e7f9a9c8a73026b",
+          "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+          "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+        }
+      ]
+    },
+    {
       "id": "INV-ddc6cf6c97a29d",
       "name": "Citi",
       "aliases": [],
@@ -77474,6 +77804,140 @@
       ]
     },
     {
+      "id": "INV-dcaac0ffbd69c6",
+      "name": "Cyanhill Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-95cb7df870187cc2",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+              "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+              "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-882f74246295abbb",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-340182e8dcb597a3",
+              "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+              "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+              "source_content_hash": "5e7f9a9c8a73026b",
+              "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+              "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e9b7c7aa8538dbf1",
+          "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+          "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+          "source_content_hash": "40e5d01acf447bfc",
+          "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+          "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+        },
+        {
+          "source_id": "FISRC-340182e8dcb597a3",
+          "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+          "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+          "source_content_hash": "5e7f9a9c8a73026b",
+          "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+          "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+        }
+      ]
+    },
+    {
       "id": "INV-4dd9283d234e3e",
       "name": "Draper Associates",
       "aliases": [],
@@ -77555,6 +78019,176 @@
           "source_content_hash": "bea7c0ab495b081d",
           "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
           "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
+        }
+      ]
+    },
+    {
+      "id": "INV-b45b816ec482bd",
+      "name": "Hillhouse",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-ac6793092b9f7c49",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+              "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+              "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e9b7c7aa8538dbf1",
+          "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+          "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+          "source_content_hash": "40e5d01acf447bfc",
+          "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+          "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+        }
+      ]
+    },
+    {
+      "id": "INV-07267e14eb89a4",
+      "name": "HSG(原红杉中国)",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-a04d0af721675090",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+              "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+              "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e9b7c7aa8538dbf1",
+          "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+          "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+          "source_content_hash": "40e5d01acf447bfc",
+          "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+          "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
         }
       ]
     },
@@ -77814,6 +78448,141 @@
       ]
     },
     {
+      "id": "INV-4de452f444fbf2",
+      "name": "Monolith Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-06-03",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "first_external"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "name": "DeepSeek"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-692790c385e29c07",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "早期轮次投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-cea4a6d222abf61e",
+              "source_url": "https://techfundingnews.com/even-realities-1b-valuation-camera-free-glasses/",
+              "source_title": "Ex-Apple engineer's Even Realities hits unicorn status: Can camera ...",
+              "source_content_hash": "6fdf82c33e720be6",
+              "quote": "Even Realities had already raised over $10 million in three earlier rounds, with backers like Cyanhill Capital, Beyond Capital, China Growth Capital, Monolith Capital, and CDH Investments.",
+              "quote_hash": "cb244d587ea49c84e4cb481a4ab137a772a5046e95cfbd12b7b7ef7ab59b6fca"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-20c99ea4053b880e",
+          "funding_insight_id": "FI-71c58a10a93101c8",
+          "event_ids": [
+            "EV-d4d7b019ff0015df"
+          ],
+          "company_entity_id": "EN-6f7ac1823da81d2e",
+          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "company_name": "DeepSeek",
+          "round": "首次外部融资",
+          "round_code": "first_external",
+          "round_original": "首次外部融资轮",
+          "amount_original": "约74亿美元（约500亿元人民币）",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 74 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-cb79cada9cfde759",
+              "source_url": "https://techfastforward.com/articles/deepseek-raises-7-4b-at-up-to-a-59b-value-in-2026",
+              "source_title": "DeepSeek Raises 7.4B at 59B and Ends VC-Free Run 2026 | TechFastForward",
+              "source_content_hash": "3082f211a1386051",
+              "quote": "Monolith Capital",
+              "quote_hash": "e84f2fa665381e39626afa907b0dd5ade66ddb91acd5530ec578ab6b3cf7cdf0"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-cea4a6d222abf61e",
+          "source_url": "https://techfundingnews.com/even-realities-1b-valuation-camera-free-glasses/",
+          "source_title": "Ex-Apple engineer's Even Realities hits unicorn status: Can camera ...",
+          "source_content_hash": "6fdf82c33e720be6",
+          "quote": "Even Realities had already raised over $10 million in three earlier rounds, with backers like Cyanhill Capital, Beyond Capital, China Growth Capital, Monolith Capital, and CDH Investments.",
+          "quote_hash": "cb244d587ea49c84e4cb481a4ab137a772a5046e95cfbd12b7b7ef7ab59b6fca"
+        },
+        {
+          "source_id": "FISRC-cb79cada9cfde759",
+          "source_url": "https://techfastforward.com/articles/deepseek-raises-7-4b-at-up-to-a-59b-value-in-2026",
+          "source_title": "DeepSeek Raises 7.4B at 59B and Ends VC-Free Run 2026 | TechFastForward",
+          "source_content_hash": "3082f211a1386051",
+          "quote": "Monolith Capital",
+          "quote_hash": "e84f2fa665381e39626afa907b0dd5ade66ddb91acd5530ec578ab6b3cf7cdf0"
+        }
+      ]
+    },
+    {
       "id": "INV-a9c2f70ac40b65",
       "name": "New York Life",
       "aliases": [],
@@ -77895,6 +78664,91 @@
           "source_content_hash": "bdcf73e00730d3c9",
           "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
           "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
+        }
+      ]
+    },
+    {
+      "id": "INV-7b009a36ac6f7a",
+      "name": "Northern Light Venture Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-005ba6eb852245f7",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e9b7c7aa8538dbf1",
+              "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+              "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+              "source_content_hash": "40e5d01acf447bfc",
+              "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+              "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e9b7c7aa8538dbf1",
+          "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+          "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+          "source_content_hash": "40e5d01acf447bfc",
+          "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+          "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
         }
       ]
     },
@@ -96307,91 +97161,6 @@
       ]
     },
     {
-      "id": "INV-4de452f444fbf2",
-      "name": "Monolith Capital",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-06-03",
-      "latest_disclosed_at": "2026-06-03",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "first_external"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-6f7ac1823da81d2e",
-          "canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "name": "DeepSeek"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-20c99ea4053b880e",
-          "funding_insight_id": "FI-71c58a10a93101c8",
-          "event_ids": [
-            "EV-d4d7b019ff0015df"
-          ],
-          "company_entity_id": "EN-6f7ac1823da81d2e",
-          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "company_name": "DeepSeek",
-          "round": "首次外部融资",
-          "round_code": "first_external",
-          "round_original": "首次外部融资轮",
-          "amount_original": "约74亿美元（约500亿元人民币）",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 74 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-cb79cada9cfde759",
-              "source_url": "https://techfastforward.com/articles/deepseek-raises-7-4b-at-up-to-a-59b-value-in-2026",
-              "source_title": "DeepSeek Raises 7.4B at 59B and Ends VC-Free Run 2026 | TechFastForward",
-              "source_content_hash": "3082f211a1386051",
-              "quote": "Monolith Capital",
-              "quote_hash": "e84f2fa665381e39626afa907b0dd5ade66ddb91acd5530ec578ab6b3cf7cdf0"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-cb79cada9cfde759",
-          "source_url": "https://techfastforward.com/articles/deepseek-raises-7-4b-at-up-to-a-59b-value-in-2026",
-          "source_title": "DeepSeek Raises 7.4B at 59B and Ends VC-Free Run 2026 | TechFastForward",
-          "source_content_hash": "3082f211a1386051",
-          "quote": "Monolith Capital",
-          "quote_hash": "e84f2fa665381e39626afa907b0dd5ade66ddb91acd5530ec578ab6b3cf7cdf0"
-        }
-      ]
-    },
-    {
       "id": "INV-a7676ba458df02",
       "name": "Redstone",
       "aliases": [],
@@ -103262,91 +104031,6 @@
           "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
           "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
           "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
-        }
-      ]
-    },
-    {
-      "id": "INV-151eb7391f9219",
-      "name": "美团",
-      "aliases": [],
-      "canonical_entity_id": "EN-cd6362472aea60ef",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-05-07",
-      "latest_disclosed_at": "2026-05-07",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "undisclosed"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "FICO-481243d2f2a235c1",
-          "canonical_entity_id": "",
-          "name": "月之暗面"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-6548a9eb9b96181d",
-          "funding_insight_id": "FI-4c761f22f0ef6d7f",
-          "event_ids": [
-            "EV-c5d7d88d1aef8edb"
-          ],
-          "company_entity_id": "FICO-481243d2f2a235c1",
-          "company_canonical_entity_id": "",
-          "company_name": "月之暗面",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮",
-          "amount_original": "约20亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 20 亿美元"
-          },
-          "announced_at": "2026-05-07",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "current_round",
-          "role": "A+轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-5d82f5dc9fc96ce5",
-              "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-              "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-              "source_content_hash": "eeb091dd8db852e6",
-              "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
-              "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-5d82f5dc9fc96ce5",
-          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-          "source_content_hash": "eeb091dd8db852e6",
-          "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本",
-          "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
         }
       ]
     },
@@ -138283,6 +138967,160 @@
           "source_content_hash": "66a29d7fc8fabd22",
           "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).",
           "quote_hash": "e4135e332d37b9d3537f7d0afd52be9eed631285c4a2a1e7fc8ef9d278fc8fd4"
+        }
+      ]
+    },
+    {
+      "id": "INV-8b9ea1d57b4d91",
+      "name": "Beyond Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-8f7806aa1dfab4da",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "早期轮次投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-cea4a6d222abf61e",
+              "source_url": "https://techfundingnews.com/even-realities-1b-valuation-camera-free-glasses/",
+              "source_title": "Ex-Apple engineer's Even Realities hits unicorn status: Can camera ...",
+              "source_content_hash": "6fdf82c33e720be6",
+              "quote": "Even Realities had already raised over $10 million in three earlier rounds, with backers like Cyanhill Capital, Beyond Capital, China Growth Capital, Monolith Capital, and CDH Investments.",
+              "quote_hash": "cb244d587ea49c84e4cb481a4ab137a772a5046e95cfbd12b7b7ef7ab59b6fca"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-cea4a6d222abf61e",
+          "source_url": "https://techfundingnews.com/even-realities-1b-valuation-camera-free-glasses/",
+          "source_title": "Ex-Apple engineer's Even Realities hits unicorn status: Can camera ...",
+          "source_content_hash": "6fdf82c33e720be6",
+          "quote": "Even Realities had already raised over $10 million in three earlier rounds, with backers like Cyanhill Capital, Beyond Capital, China Growth Capital, Monolith Capital, and CDH Investments.",
+          "quote_hash": "cb244d587ea49c84e4cb481a4ab137a772a5046e95cfbd12b7b7ef7ab59b6fca"
+        }
+      ]
+    },
+    {
+      "id": "INV-30fd3e1fef244b",
+      "name": "China Growth Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-43b7efbbbac32b7a",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-340182e8dcb597a3",
+              "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+              "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+              "source_content_hash": "5e7f9a9c8a73026b",
+              "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+              "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-340182e8dcb597a3",
+          "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+          "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+          "source_content_hash": "5e7f9a9c8a73026b",
+          "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+          "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
         }
       ]
     },

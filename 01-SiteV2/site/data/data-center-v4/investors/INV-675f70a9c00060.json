@@ -20,9 +20,9 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -32,10 +32,12 @@
     "first_disclosed_at": "2026-06-03",
     "latest_disclosed_at": "2026-08-24",
     "role_counts": {
+      "co_lead": 1,
       "participant": 2
     },
     "round_codes": [
       "first_external",
+      "pre_series_b",
       "strategic"
     ],
     "portfolio_companies": [
@@ -48,6 +50,11 @@
         "entity_id": "EN-6f7ac1823da81d2e",
         "canonical_entity_id": "EN-6f7ac1823da81d2e",
         "name": "DeepSeek"
+      },
+      {
+        "entity_id": "EN-aa949c066d46acbf",
+        "canonical_entity_id": "",
+        "name": "Even Realities Technology"
       }
     ],
     "activities": [
@@ -88,6 +95,46 @@
             "source_content_hash": "b8e4f0b869df00ee",
             "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
             "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4306369201ed63f9",
+        "funding_insight_id": "FI-43fe661ce1291832",
+        "event_ids": [
+          "EV-2f0f3200b9800877"
+        ],
+        "company_entity_id": "EN-aa949c066d46acbf",
+        "company_canonical_entity_id": "",
+        "company_name": "Even Realities Technology",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-340182e8dcb597a3",
+            "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+            "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+            "source_content_hash": "5e7f9a9c8a73026b",
+            "quote": "The round, which was led by Meituan and Tencent",
+            "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
           }
         ]
       },
@@ -148,6 +195,14 @@
         "source_content_hash": "b8e4f0b869df00ee",
         "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
         "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+      },
+      {
+        "source_id": "FISRC-340182e8dcb597a3",
+        "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+        "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+        "source_content_hash": "5e7f9a9c8a73026b",
+        "quote": "The round, which was led by Meituan and Tencent",
+        "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
       },
       {
         "source_id": "FISRC-d2c8c841370ed82a",

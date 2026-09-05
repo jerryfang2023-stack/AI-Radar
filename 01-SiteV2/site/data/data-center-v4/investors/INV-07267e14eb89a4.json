@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
+    "quarantinedEventCount": 23
+  },
+  "institution": {
+    "id": "INV-07267e14eb89a4",
+    "name": "HSG(原红杉中国)",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-07-07",
+    "latest_disclosed_at": "2026-07-07",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-aa949c066d46acbf",
+        "canonical_entity_id": "",
+        "name": "Even Realities Technology"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a04d0af721675090",
+        "funding_insight_id": "FI-43fe661ce1291832",
+        "event_ids": [
+          "EV-2f0f3200b9800877"
+        ],
+        "company_entity_id": "EN-aa949c066d46acbf",
+        "company_canonical_entity_id": "",
+        "company_name": "Even Realities Technology",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e9b7c7aa8538dbf1",
+            "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+            "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+            "source_content_hash": "40e5d01acf447bfc",
+            "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+            "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e9b7c7aa8538dbf1",
+        "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
+        "source_title": "Interview with Will Wang, Founder & CEO of Even Realities: $150M Raise at $1B Valuation | Silicon Valley Investclub",
+        "source_content_hash": "40e5d01acf447bfc",
+        "quote": "The round was co-led by Meituan and Tencent, with participation from Hillhouse, HSG (formerly Sequoia China), Northern Light Venture Capital, CDH Investments, and Cyanhill Capital.",
+        "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
+      }
+    ]
+  }
+}

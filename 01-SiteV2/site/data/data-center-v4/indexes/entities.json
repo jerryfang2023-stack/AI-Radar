@@ -28903,6 +28903,146 @@
       ]
     },
     {
+      "id": "INV-675f70a9c00060",
+      "name": "腾讯",
+      "aliases": [],
+      "canonical_entity_id": "EN-9c8ae69b84f21a2e",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 3,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-06-03",
+      "latest_disclosed_at": "2026-08-24",
+      "role_counts": {
+        "co_lead": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "first_external",
+        "pre_series_b",
+        "strategic"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-9a970ad7900121db",
+          "canonical_entity_id": "",
+          "name": "小鹏机器人业务"
+        },
+        {
+          "entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "name": "DeepSeek"
+        },
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-e52bb42b272a3729",
+          "funding_insight_id": "FI-e3406c2e889004e3",
+          "event_ids": [
+            "EV-987cb2e5e20f79ce"
+          ],
+          "company_entity_id": "EN-9a970ad7900121db",
+          "company_canonical_entity_id": "",
+          "company_name": "小鹏机器人业务",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "9亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-24",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-4306369201ed63f9",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-60bdf48f03f8b5d6",
+          "funding_insight_id": "FI-71c58a10a93101c8",
+          "event_ids": [
+            "EV-d4d7b019ff0015df"
+          ],
+          "company_entity_id": "EN-6f7ac1823da81d2e",
+          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "company_name": "DeepSeek",
+          "round": "首次外部融资",
+          "round_code": "first_external",
+          "round_original": "首次外部融资轮",
+          "amount_original": "约74亿美元（约500亿元人民币）",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 74 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-b92b24e064ec0c",
       "name": "NFX",
       "aliases": [],
@@ -33992,109 +34132,6 @@
           "announced_at": "2026-08-17",
           "market_region": "GLOBAL",
           "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-675f70a9c00060",
-      "name": "腾讯",
-      "aliases": [],
-      "canonical_entity_id": "EN-9c8ae69b84f21a2e",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 2,
-      "market_regions": [
-        "CN",
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-06-03",
-      "latest_disclosed_at": "2026-08-24",
-      "role_counts": {
-        "participant": 2
-      },
-      "round_codes": [
-        "first_external",
-        "strategic"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-9a970ad7900121db",
-          "canonical_entity_id": "",
-          "name": "小鹏机器人业务"
-        },
-        {
-          "entity_id": "EN-6f7ac1823da81d2e",
-          "canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "name": "DeepSeek"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-e52bb42b272a3729",
-          "funding_insight_id": "FI-e3406c2e889004e3",
-          "event_ids": [
-            "EV-987cb2e5e20f79ce"
-          ],
-          "company_entity_id": "EN-9a970ad7900121db",
-          "company_canonical_entity_id": "",
-          "company_name": "小鹏机器人业务",
-          "round": "战略融资",
-          "round_code": "strategic",
-          "round_original": "战略融资",
-          "amount_original": "9亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 900000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "9 亿美元"
-          },
-          "announced_at": "2026-08-24",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-60bdf48f03f8b5d6",
-          "funding_insight_id": "FI-71c58a10a93101c8",
-          "event_ids": [
-            "EV-d4d7b019ff0015df"
-          ],
-          "company_entity_id": "EN-6f7ac1823da81d2e",
-          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "company_name": "DeepSeek",
-          "round": "首次外部融资",
-          "round_code": "first_external",
-          "round_original": "首次外部融资轮",
-          "amount_original": "约74亿美元（约500亿元人民币）",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 74 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "market_region": "CN",
-          "china_market_match": true,
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
@@ -40614,6 +40651,110 @@
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-151eb7391f9219",
+      "name": "美团",
+      "aliases": [],
+      "canonical_entity_id": "EN-cd6362472aea60ef",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-05-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "co_lead": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b",
+        "undisclosed"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-481243d2f2a235c1",
+          "canonical_entity_id": "",
+          "name": "月之暗面"
+        },
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-340faa68e0aaf3c3",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-6548a9eb9b96181d",
+          "funding_insight_id": "FI-4c761f22f0ef6d7f",
+          "event_ids": [
+            "EV-c5d7d88d1aef8edb"
+          ],
+          "company_entity_id": "FICO-481243d2f2a235c1",
+          "company_canonical_entity_id": "",
+          "company_name": "月之暗面",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "约20亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 20 亿美元"
+          },
+          "announced_at": "2026-05-07",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "A+轮参投",
           "role_code": "participant"
         }
       ]
@@ -69455,6 +69596,103 @@
       ]
     },
     {
+      "id": "INV-6ba0ec6446762b",
+      "name": "CDH Investments",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-edc5f7384562a7b8",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-052e46c4ede92d8b",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮投资方",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
       "id": "INV-ddc6cf6c97a29d",
       "name": "Citi",
       "aliases": [],
@@ -69552,6 +69790,103 @@
       ]
     },
     {
+      "id": "INV-dcaac0ffbd69c6",
+      "name": "Cyanhill Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-95cb7df870187cc2",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-882f74246295abbb",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮投资方",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
       "id": "INV-4dd9283d234e3e",
       "name": "Draper Associates",
       "aliases": [],
@@ -69606,6 +69941,138 @@
             "unit": "base",
             "status": "exact",
             "display_zh": "650 万美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-b45b816ec482bd",
+      "name": "Hillhouse",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-ac6793092b9f7c49",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-07267e14eb89a4",
+      "name": "HSG(原红杉中国)",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-a04d0af721675090",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
           },
           "announced_at": "2026-07-07",
           "market_region": "GLOBAL",
@@ -69816,6 +70283,104 @@
       ]
     },
     {
+      "id": "INV-4de452f444fbf2",
+      "name": "Monolith Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-06-03",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "first_external"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "name": "DeepSeek"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-692790c385e29c07",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "早期轮次投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-20c99ea4053b880e",
+          "funding_insight_id": "FI-71c58a10a93101c8",
+          "event_ids": [
+            "EV-d4d7b019ff0015df"
+          ],
+          "company_entity_id": "EN-6f7ac1823da81d2e",
+          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "company_name": "DeepSeek",
+          "round": "首次外部融资",
+          "round_code": "first_external",
+          "round_original": "首次外部融资轮",
+          "amount_original": "约74亿美元（约500亿元人民币）",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 74 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-a9c2f70ac40b65",
       "name": "New York Life",
       "aliases": [],
@@ -69870,6 +70435,72 @@
             "unit": "base",
             "status": "exact",
             "display_zh": "1.2 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-7b009a36ac6f7a",
+      "name": "Northern Light Venture Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-aa949c066d46acbf",
+          "canonical_entity_id": "",
+          "name": "Even Realities Technology"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-005ba6eb852245f7",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
           },
           "announced_at": "2026-07-07",
           "market_region": "GLOBAL",
@@ -83634,72 +84265,6 @@
       ]
     },
     {
-      "id": "INV-4de452f444fbf2",
-      "name": "Monolith Capital",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-06-03",
-      "latest_disclosed_at": "2026-06-03",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "first_external"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-6f7ac1823da81d2e",
-          "canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "name": "DeepSeek"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-20c99ea4053b880e",
-          "funding_insight_id": "FI-71c58a10a93101c8",
-          "event_ids": [
-            "EV-d4d7b019ff0015df"
-          ],
-          "company_entity_id": "EN-6f7ac1823da81d2e",
-          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "company_name": "DeepSeek",
-          "round": "首次外部融资",
-          "round_code": "first_external",
-          "round_original": "首次外部融资轮",
-          "amount_original": "约74亿美元（约500亿元人民币）",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 74 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-a7676ba458df02",
       "name": "Redstone",
       "aliases": [],
@@ -88983,72 +89548,6 @@
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-151eb7391f9219",
-      "name": "美团",
-      "aliases": [],
-      "canonical_entity_id": "EN-cd6362472aea60ef",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-05-07",
-      "latest_disclosed_at": "2026-05-07",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "undisclosed"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "FICO-481243d2f2a235c1",
-          "canonical_entity_id": "",
-          "name": "月之暗面"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-6548a9eb9b96181d",
-          "funding_insight_id": "FI-4c761f22f0ef6d7f",
-          "event_ids": [
-            "EV-c5d7d88d1aef8edb"
-          ],
-          "company_entity_id": "FICO-481243d2f2a235c1",
-          "company_canonical_entity_id": "",
-          "company_name": "月之暗面",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮",
-          "amount_original": "约20亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 20 亿美元"
-          },
-          "announced_at": "2026-05-07",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "current_round",
-          "role": "A+轮参投",
           "role_code": "participant"
         }
       ]
@@ -115589,6 +116088,122 @@
       ]
     },
     {
+      "id": "INV-8b9ea1d57b4d91",
+      "name": "Beyond Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-8f7806aa1dfab4da",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "早期轮次投资方",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-30fd3e1fef244b",
+      "name": "China Growth Capital",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-07-07",
+      "latest_disclosed_at": "2026-07-07",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-43b7efbbbac32b7a",
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "event_ids": [
+            "EV-2f0f3200b9800877"
+          ],
+          "company_entity_id": "EN-aa949c066d46acbf",
+          "company_canonical_entity_id": "",
+          "company_name": "Even Realities Technology",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "1.5亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-07-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮投资方",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
       "id": "INV-5ff895e921cd69",
       "name": "Henry R. Kravis",
       "aliases": [],
@@ -125762,6 +126377,7 @@
         "EV-ecc12e5ec883b7e7",
         "EV-b5dd10300e34f2d3",
         "EV-7a85e21802efd8b2",
+        "EV-2f0f3200b9800877",
         "EV-e54bfac94961f4d2",
         "EV-52115fee0e716170",
         "EV-ee38c30c00b2a754",
@@ -125809,6 +126425,7 @@
         "EN-7706c3c94d5f9b59",
         "EN-e22521e7de65d819",
         "EN-3eee4f30151db45a",
+        "EN-aa949c066d46acbf",
         "EN-d361e2fd6b342245",
         "EN-24af08c2634cb45a",
         "EN-2b60b46911fc1640",
@@ -125843,7 +126460,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-technology-tool_use",
@@ -125903,7 +126520,6 @@
         "EV-232ab5bcbaf6552d",
         "EV-95341497f7ba9d83",
         "EV-ad0589423b3aa1ce",
-        "EV-a81c5dc2e9abff3a",
         "EV-40d196865997025c",
         "EV-9e678b626c2a5c83",
         "EV-d292329c0ec64c8f",
@@ -125919,7 +126535,6 @@
         "EN-c945929c3683ffb0",
         "EN-d387c8c96239d383",
         "EN-ab447173a7f5af44",
-        "EN-5e0971a2294ea3f7",
         "EN-8bb4f88fd3cf9b29",
         "EN-5c178682f5573d29",
         "EN-c04bd5ebd10ab696",
@@ -125929,7 +126544,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-11"
     },
     {
       "id": "TX-target_user-public_sector_user",
@@ -129117,7 +129732,6 @@
         "EV-7817dc69d5228cbb",
         "EV-561e2028a6212b99",
         "EV-9fc8916c19c19f99",
-        "EV-a81c5dc2e9abff3a",
         "EV-85506f9f86779a6d",
         "EV-e579af588ad8cf64",
         "EV-d292329c0ec64c8f",
@@ -129138,7 +129752,6 @@
         "EN-e69f64149edae6b1",
         "EN-19a5848a577315c5",
         "EN-f96246b78ef26d59",
-        "EN-5e0971a2294ea3f7",
         "EN-c04bd5ebd10ab696",
         "EN-2b81d85809794782",
         "EN-7ea76c82c786a5e1",
@@ -129150,7 +129763,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-08-16"
     },
     {
       "id": "TX-industry-agriculture",
@@ -129237,6 +129850,7 @@
         "EV-d642ec7a9ca5eb0f",
         "EV-f2143ba3124a2105",
         "EV-18304fc17b31148e",
+        "EV-2f0f3200b9800877",
         "EV-81bd541510a530f0",
         "EV-dfddbb260b3d1c77",
         "EV-f0fee44c1dfdcb09",
@@ -129322,6 +129936,7 @@
         "EN-d6386c59a6bcfcb1",
         "EN-478cc1059b738832",
         "EN-a2183526e5130b45",
+        "EN-aa949c066d46acbf",
         "EN-b0a914ead94a88da",
         "EN-d2d165dff04ba225",
         "EN-0cc3af265406c202",
@@ -129755,6 +130370,7 @@
         "EV-0f520c9e5b1ea1d2",
         "EV-232ab5bcbaf6552d",
         "EV-7b1c734882fa1ea6",
+        "EV-2f0f3200b9800877",
         "EV-e54bfac94961f4d2",
         "EV-869c9ea96c58873d",
         "EV-6e06cfa28f76a76f",
@@ -129798,7 +130414,6 @@
         "EV-c85011ca6a0389bf",
         "EV-8bbc23e53e799d9d",
         "EV-8c2fdaad276818b0",
-        "EV-a81c5dc2e9abff3a",
         "EV-3a591b0f027f66cf",
         "EV-e0a31302688c81ec",
         "EV-e3382d1c1d7db751",
@@ -129996,6 +130611,7 @@
         "EN-733859c1fc6b9331",
         "EN-c945929c3683ffb0",
         "EN-830cefea8ed73a00",
+        "EN-aa949c066d46acbf",
         "EN-d361e2fd6b342245",
         "EN-4e0a97cb956fb1c6",
         "EN-caaa8e02be54cfc9",
@@ -130037,7 +130653,6 @@
         "EN-c0cd6e83b6dd78a5",
         "EN-da454b02b4700b1f",
         "EN-8311b78e7ece59dd",
-        "EN-5e0971a2294ea3f7",
         "EN-6862b0d243051cd3",
         "EN-a5e5f031b6f878cf",
         "EN-ee1e31ffef7dbe64",
@@ -130652,6 +131267,7 @@
         "EV-0dfcd1e634de755b",
         "EV-63236c15166b71e0",
         "EV-f2143ba3124a2105",
+        "EV-2f0f3200b9800877",
         "EV-dfddbb260b3d1c77",
         "EV-f0fee44c1dfdcb09",
         "EV-fab81bddb815267b",
@@ -130703,6 +131319,7 @@
         "EN-5afd6103effc8a64",
         "EN-d6386c59a6bcfcb1",
         "EN-a2183526e5130b45",
+        "EN-aa949c066d46acbf",
         "EN-d2d165dff04ba225",
         "EN-0cc3af265406c202",
         "EN-ee00b93bf0631b3e",
@@ -130785,6 +131402,7 @@
         "EV-0dfcd1e634de755b",
         "EV-d642ec7a9ca5eb0f",
         "EV-f2143ba3124a2105",
+        "EV-2f0f3200b9800877",
         "EV-e54bfac94961f4d2",
         "EV-3d93d1da8cb64462",
         "EV-6e06cfa28f76a76f",
@@ -130809,7 +131427,6 @@
         "EV-14a666fc27d73a80",
         "EV-2083b9eda52a3f76",
         "EV-8c2fdaad276818b0",
-        "EV-a81c5dc2e9abff3a",
         "EV-b695dedc9acda5dc",
         "EV-85506f9f86779a6d",
         "EV-a42e51959c627554",
@@ -130902,6 +131519,7 @@
         "EN-5afd6103effc8a64",
         "EN-478cc1059b738832",
         "EN-a2183526e5130b45",
+        "EN-aa949c066d46acbf",
         "EN-d361e2fd6b342245",
         "EN-14ce7672aaca7a68",
         "EN-caaa8e02be54cfc9",
@@ -130925,7 +131543,6 @@
         "EN-4abc3bd0f9e75c63",
         "EN-ef2bee7868007cd4",
         "EN-8311b78e7ece59dd",
-        "EN-5e0971a2294ea3f7",
         "EN-4479ee1b529c5e82",
         "EN-c04bd5ebd10ab696",
         "EN-b314f58f5f506fd2",
@@ -131143,7 +131760,6 @@
         "EV-5f5f252c6a826599",
         "EV-e7dcecaed5a0ee5b",
         "EV-11b5192fc54c0aa0",
-        "EV-a81c5dc2e9abff3a",
         "EV-c4c8976ab5b629a3",
         "EV-e3382d1c1d7db751",
         "EV-b348083270be6c65",
@@ -131188,7 +131804,6 @@
         "EN-122c0bebae950c77",
         "EN-f346eaca864441f9",
         "EN-bf0e59763d382462",
-        "EN-5e0971a2294ea3f7",
         "EN-a8ef01283d653e46",
         "EN-ee1e31ffef7dbe64",
         "EN-1c5483264189feef",
@@ -132199,7 +132814,6 @@
         "EV-ad0589423b3aa1ce",
         "EV-f487788f3d44f288",
         "EV-917a390341b9fce6",
-        "EV-a81c5dc2e9abff3a",
         "EV-40d196865997025c",
         "EV-c0d19b8641a7a36c",
         "EV-9e678b626c2a5c83",
@@ -132245,7 +132859,6 @@
         "EN-ab447173a7f5af44",
         "EN-f3d05a0f6248941d",
         "EN-e781481ff5ffe530",
-        "EN-5e0971a2294ea3f7",
         "EN-8bb4f88fd3cf9b29",
         "EN-a972bc1b3220493e",
         "EN-5c178682f5573d29",
@@ -132937,12 +133550,12 @@
         "EV-0d4e656aa51f9a46",
         "EV-4da1a7c4d527eb69",
         "EV-7a85e21802efd8b2",
+        "EV-2f0f3200b9800877",
         "EV-e54bfac94961f4d2",
         "EV-2bb63a3015195f9b",
         "EV-4f7462a365561bb5",
         "EV-f54ec32c67e9447c",
         "EV-14a666fc27d73a80",
-        "EV-a81c5dc2e9abff3a",
         "EV-e3382d1c1d7db751",
         "EV-30466ebe86779a64",
         "EV-b348083270be6c65",
@@ -132972,11 +133585,11 @@
         "EN-2dc010636b9dce91",
         "EN-ae1eae1d76e5b7c8",
         "EN-3eee4f30151db45a",
+        "EN-aa949c066d46acbf",
         "EN-d361e2fd6b342245",
         "EN-e23228440ca5340f",
         "EN-858b4458c482f7d2",
         "EN-4abc3bd0f9e75c63",
-        "EN-5e0971a2294ea3f7",
         "EN-ee1e31ffef7dbe64",
         "EN-a9aff9e0737a5d4a",
         "EN-1c5483264189feef",
@@ -133048,7 +133661,6 @@
         "EV-2083b9eda52a3f76",
         "EV-56da7cceeebc8bcf",
         "EV-8c2fdaad276818b0",
-        "EV-a81c5dc2e9abff3a",
         "EV-3a591b0f027f66cf",
         "EV-e0a31302688c81ec",
         "EV-dd78b63f18dba410",
@@ -133176,7 +133788,6 @@
         "EN-ef2bee7868007cd4",
         "EN-5aacd10b5dbfa7b7",
         "EN-8311b78e7ece59dd",
-        "EN-5e0971a2294ea3f7",
         "EN-6862b0d243051cd3",
         "EN-a5e5f031b6f878cf",
         "EN-20b5af8f2c749bf8",
@@ -134753,6 +135364,7 @@
         "EV-c6c297156ff274ac",
         "EV-02882e6f5e1902c6",
         "EV-b5dd10300e34f2d3",
+        "EV-2f0f3200b9800877",
         "EV-450f624a6a6446ce",
         "EV-a9810b47e0408a05",
         "EV-b93102125cc062e3",
@@ -134770,6 +135382,7 @@
         "EN-1913c6ab46df3a68",
         "EN-2a920347dfcf07a7",
         "EN-e22521e7de65d819",
+        "EN-aa949c066d46acbf",
         "EN-245f1e177c5169cb",
         "EN-193d220b421d776e",
         "EN-b81c8201acfc7639",
@@ -134785,7 +135398,7 @@
         "HW-073f0034b9be13b2"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-technology-model_context_protocol",

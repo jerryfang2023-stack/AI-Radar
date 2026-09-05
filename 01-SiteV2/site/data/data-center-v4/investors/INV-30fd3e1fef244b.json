@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
+    "quarantinedEventCount": 23
+  },
+  "institution": {
+    "id": "INV-30fd3e1fef244b",
+    "name": "China Growth Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-07-07",
+    "latest_disclosed_at": "2026-07-07",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-43b7efbbbac32b7a",
+        "funding_insight_id": "FI-43fe661ce1291832",
+        "event_ids": [
+          "EV-2f0f3200b9800877"
+        ],
+        "company_entity_id": "EN-aa949c066d46acbf",
+        "company_canonical_entity_id": "",
+        "company_name": "Even Realities Technology",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-340182e8dcb597a3",
+            "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+            "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+            "source_content_hash": "5e7f9a9c8a73026b",
+            "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+            "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-340182e8dcb597a3",
+        "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+        "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+        "source_content_hash": "5e7f9a9c8a73026b",
+        "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
+        "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+      }
+    ]
+  }
+}

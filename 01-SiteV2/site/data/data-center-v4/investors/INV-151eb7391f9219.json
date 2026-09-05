@@ -20,20 +20,23 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-07-07",
     "role_counts": {
+      "co_lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "pre_series_b",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -41,9 +44,54 @@
         "entity_id": "FICO-481243d2f2a235c1",
         "canonical_entity_id": "",
         "name": "月之暗面"
+      },
+      {
+        "entity_id": "EN-aa949c066d46acbf",
+        "canonical_entity_id": "",
+        "name": "Even Realities Technology"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-340faa68e0aaf3c3",
+        "funding_insight_id": "FI-43fe661ce1291832",
+        "event_ids": [
+          "EV-2f0f3200b9800877"
+        ],
+        "company_entity_id": "EN-aa949c066d46acbf",
+        "company_canonical_entity_id": "",
+        "company_name": "Even Realities Technology",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "1.5亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-07-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-340182e8dcb597a3",
+            "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+            "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+            "source_content_hash": "5e7f9a9c8a73026b",
+            "quote": "The round, which was led by Meituan and Tencent",
+            "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6548a9eb9b96181d",
         "funding_insight_id": "FI-4c761f22f0ef6d7f",
@@ -86,6 +134,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-340182e8dcb597a3",
+        "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
+        "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
+        "source_content_hash": "5e7f9a9c8a73026b",
+        "quote": "The round, which was led by Meituan and Tencent",
+        "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
+      },
       {
         "source_id": "FISRC-5d82f5dc9fc96ce5",
         "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
