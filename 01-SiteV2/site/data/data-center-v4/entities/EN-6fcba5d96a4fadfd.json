@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -42,6 +42,7 @@
       "EV-883d3b5f6d30eb48",
       "EV-e15ae1112294d59e",
       "EV-43301de739fe560e",
+      "EV-8e0c25aebb1d4f5f",
       "EV-85dc7f34cb077fba",
       "EV-2868ff08777b5de9",
       "EV-65e50237cd603c8e",
@@ -82,7 +83,7 @@
       "EN-24caf10fe9bfb1c5"
     ],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-09-03",
+    "lastSeen": "2026-09-05",
     "relationIds": [
       "REL2-30051dc5d7668662",
       "REL2-e0b4c492d7f56ad2",
@@ -113,6 +114,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-8e0c25aebb1d4f5f",
         "EV-85dc7f34cb077fba",
         "EV-2868ff08777b5de9",
         "EV-65e50237cd603c8e",
@@ -146,6 +148,42 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-8e0c25aebb1d4f5f",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "马斯克旗下 SpaceXAI 将 Grok Bot 拓展至 iPad 和安卓平台",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-3a7bd3e2360a3d29",
+          "EN-92df1be3e37c9268"
+        ]
+      },
       {
         "id": "EV-85dc7f34cb077fba",
         "dataDate": "2026-09-03",
@@ -2079,6 +2117,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-e5f13798813adfbf",
+        "EV-4465e8bfd74508a6",
         "EV-125040ec61215481",
         "EV-85ba013c379a9d3d",
         "EV-7832e96ace41fc15",
@@ -2317,6 +2357,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c608c4787821de1b",
+        "EN-ec31d2be1b244616",
         "EN-7d3194f79e645c42",
         "EN-39ba5f9dcab4e98a",
         "EN-bbdefa2950f49882",
@@ -2387,7 +2429,6 @@
         "EN-dd920a8cd166f486",
         "EN-2b6e51bec93e86c1",
         "EN-6e898ad0522fca30",
-        "EN-c608c4787821de1b",
         "EN-412b57e712039032",
         "EN-50537dab76505dfc",
         "EN-e956b4e6d9c37fa7",
@@ -2435,7 +2476,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-use_case-software_development",
@@ -3013,6 +3054,97 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-9aa8dc06359294bf",
+      "snapshotKey": "9aa8dc06359294bf",
+      "snapshotId": "HWS-ca28170b1e050661",
+      "eventId": "EV-8e0c25aebb1d4f5f",
+      "eventIds": [
+        "EV-8e0c25aebb1d4f5f"
+      ],
+      "dataDate": "2026-09-05",
+      "date": "2026-09-05",
+      "title": "SpaceXAI / Grok Bot",
+      "subject": "xAI",
+      "productNames": [
+        "SpaceXAI",
+        "Grok Bot"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-40b3953b53f7a5c7"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-05",
+          "hardware_fact_id": "HWF-40b3953b53f7a5c7",
+          "fact_type": "product",
+          "observed_at": "2026-09-05T02:35:59.000Z",
+          "subject_entity_id": "EN-6fcba5d96a4fadfd",
+          "subject_name": "xAI",
+          "product_entity_ids": [
+            "EN-0b9ca57f53ba758b",
+            "EN-92df1be3e37c9268"
+          ],
+          "product_names": [
+            "SpaceXAI",
+            "Grok Bot"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家曾于 8 月报道，SpaceXAI 推出 Grok Bot，让 AI 智能体全天候组队干活，能够登录不同的应用和网站，保留此前任务中的信息，还可以让不同机器人之间共享相关细节和上下文信息。",
+          "event_refs": [
+            "EV-8e0c25aebb1d4f5f"
+          ],
+          "claim_ref": "CL-117b967034f753ca",
+          "source_refs": [
+            "SA-e1c4546606a71d08"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/685.htm",
+      "entityIds": [
+        "EN-6fcba5d96a4fadfd",
+        "EN-3a7bd3e2360a3d29",
+        "EN-0b9ca57f53ba758b",
+        "EN-92df1be3e37c9268"
+      ]
+    },
     {
       "id": "HWC-429144795ad2bc71",
       "snapshotKey": "429144795ad2bc71",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -16,13 +16,16 @@
     "name": "Apple",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "苹果"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
       "EV-f282ab8740ff0096",
+      "EV-2f0f3200b9800877",
       "EV-026b9b4462b4adc8",
       "EV-3ebefd784ba0afd0",
       "EV-5bbc509a032b8309",
@@ -34,6 +37,7 @@
       "EV-d116b0aa5bb292e2",
       "EV-e857f9d1c1478c70",
       "EV-fd21441fb6e143c3",
+      "EV-8e0c25aebb1d4f5f",
       "EV-36a9af9b98a66be3",
       "EV-e5883e1e8f305b67",
       "EV-6b9a76ea8a03b09f",
@@ -92,6 +96,7 @@
       "EV-ebef81764102ee7c",
       "EV-f6611268f119a172",
       "EV-342799d4e68e7416",
+      "EV-c06d008e73a0d337",
       "EV-4a982ba6f291ddec",
       "EV-9434ab7a2e818ce9",
       "EV-4b0065f780bd73bd",
@@ -126,20 +131,36 @@
     ],
     "relatedEntityIds": [
       "EN-7d3194f79e645c42",
+      "EN-e463d05a14e8697f",
+      "EN-7df09a7717ef2feb",
       "EN-0502bb9ed34980aa",
-      "EN-af3ceabbe048a291"
+      "EN-dd920a8cd166f486",
+      "EN-1924fff8eb4d54ae",
+      "EN-af3ceabbe048a291",
+      "EN-45b5216872656eb3"
     ],
     "firstSeen": "2026-06-04",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-05",
     "relationIds": [
       "REL2-a3bd8b736cbfac80",
+      "REL2-2c82bf25c532a4e1",
+      "REL2-328522f06ece8143",
       "REL2-1088b525da98df85",
+      "REL2-0700c100aba4f7c2",
+      "REL2-5a09d0744942f11b",
       "REL2-04014818e378c5b2",
       "REL2-1f4fedf249db5eac",
+      "REL2-27b659bc5e5fe00b",
+      "REL2-3d00d7538e09943f",
+      "REL2-74ad6f207729d6ae",
+      "REL2-bcbf4f353ec2e5b3",
+      "REL2-ced495a5aea356e0",
+      "REL2-ea61135fcfa1e38f",
       "REL2-f5b7bf87ac9c1791"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-2f0f3200b9800877",
         "EV-f282ab8740ff0096",
         "EV-1b92b6c835ce240c"
       ],
@@ -159,6 +180,7 @@
         "EV-fd21441fb6e143c3"
       ],
       "productsServices": [
+        "EV-8e0c25aebb1d4f5f",
         "EV-36a9af9b98a66be3",
         "EV-93cb2a7faf07bd35",
         "EV-6b9a76ea8a03b09f",
@@ -223,6 +245,7 @@
         "EV-4a982ba6f291ddec"
       ],
       "organizationPeople": [
+        "EV-c06d008e73a0d337",
         "EV-7d4b4b8d4e3599d4"
       ],
       "other": [
@@ -249,6 +272,76 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-2f0f3200b9800877",
+        "dataDate": "2026-09-05",
+        "date": "2026-07-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "前苹果工程师的AI眼镜获得1.5亿美元融资 - IDN Financials",
+        "displayTags": [],
+        "entityIds": [
+          "EN-aa949c066d46acbf",
+          "EN-3a7bd3e2360a3d29",
+          "EN-cd6362472aea60ef",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
+        "id": "EV-8e0c25aebb1d4f5f",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "马斯克旗下 SpaceXAI 将 Grok Bot 拓展至 iPad 和安卓平台",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-3a7bd3e2360a3d29",
+          "EN-92df1be3e37c9268"
+        ]
+      },
+      {
+        "id": "EV-c06d008e73a0d337",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "organization_people",
+        "eventTypeLabel": "组织与人员",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "苹果Ternus时代开启，英伟达押注整个AI技术栈",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-8d4321d936320802"
+        ]
+      },
       {
         "id": "EV-36a9af9b98a66be3",
         "dataDate": "2026-09-04",
@@ -2642,8 +2735,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1f88bfaf77dcfca3",
+        "EV-358643eefe0a5df5",
+        "EV-4e31149f2cd129f7",
+        "EV-7a7a5267ca73e44c",
+        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
+        "EV-a474530ccf6cd872",
+        "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
         "EV-3a8752218ab2b487",
         "EV-4809eb76696a9e61",
@@ -2651,9 +2749,9 @@
         "EV-ad41b8a1f9f8d747",
         "EV-c04ef2433ae230f6",
         "EV-125040ec61215481",
-        "EV-ffa46f84468cffd9",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
+        "EV-ffa46f84468cffd9",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -2869,6 +2967,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-345378cb7f1f64fd",
+        "EV-7371ffb603de3e1c",
+        "EV-d04298029a8ab693",
         "EV-bf57b79e05a537e6",
         "EV-23ebd5f5d32e950a",
         "EV-b1ac270277a5c1bc",
@@ -2993,8 +3094,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29",
         "EN-6a50fbf0b970c03a",
+        "EN-3a7bd3e2360a3d29",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
@@ -3020,7 +3121,57 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
+    },
+    {
+      "id": "EN-e463d05a14e8697f",
+      "name": "Xcode 26.6",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-abf0990dcaceb1ce"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "firstSeen": "2026-06-26",
+      "lastSeen": "2026-06-26"
+    },
+    {
+      "id": "EN-7df09a7717ef2feb",
+      "name": "LM Studio",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-fd21441fb6e143c3",
+        "EV-653cbce2ccc79f8b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-agentic_execution",
+        "TX-technology-multimodal",
+        "TX-technology-long_context"
+      ],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "firstSeen": "2026-06-20",
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-0502bb9ed34980aa",
@@ -3047,6 +3198,54 @@
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-18"
+    },
+    {
+      "id": "EN-dd920a8cd166f486",
+      "name": "CoreAI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4e6dc3ec2b3f0bd6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-06-12"
+    },
+    {
+      "id": "EN-1924fff8eb4d54ae",
+      "name": "Siri",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-89930fa8d1db98eb",
+        "EV-85373b8ec9148127",
+        "EV-52e1ac21c25a0a09"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-20"
     },
     {
       "id": "EN-af3ceabbe048a291",
@@ -3077,6 +3276,27 @@
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-45b5216872656eb3",
+      "name": "Core AI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a9fe726c4ea2a17b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-09"
     }
   ],
   "relationships": [
@@ -3100,6 +3320,47 @@
       "status": "verified"
     },
     {
+      "relationship_id": "REL2-2c82bf25c532a4e1",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e463d05a14e8697f",
+      "object_type": "entity",
+      "event_id": "EV-abf0990dcaceb1ce",
+      "claim_refs": [
+        "CL-cc54439600e016cd",
+        "CL-6f211a4cbf5e0ea7",
+        "CL-f7e909b299efdfc5"
+      ],
+      "source_refs": [
+        "SA-077837221f61e911"
+      ],
+      "data_date": "2026-06-26",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-328522f06ece8143",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-7df09a7717ef2feb",
+      "object_type": "entity",
+      "event_id": "EV-fd21441fb6e143c3",
+      "claim_refs": [
+        "CL-46fb3d5ad9508a38",
+        "CL-727fd142f1eda91e",
+        "CL-63d0477cab28738f",
+        "CL-c8732339ea9bef1a"
+      ],
+      "source_refs": [
+        "SA-f1b7650b27891e44"
+      ],
+      "data_date": "2026-06-21",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-1088b525da98df85",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-3a7bd3e2360a3d29",
@@ -3115,6 +3376,44 @@
         "SA-4cd346680b734b4c"
       ],
       "data_date": "2026-06-18",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-0700c100aba4f7c2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-dd920a8cd166f486",
+      "object_type": "entity",
+      "event_id": "EV-4e6dc3ec2b3f0bd6",
+      "claim_refs": [
+        "CL-c219014c38d3e963",
+        "CL-18d554f72c3e47aa",
+        "CL-6125ee27d333b5c5"
+      ],
+      "source_refs": [
+        "SA-122b35fc54deabea"
+      ],
+      "data_date": "2026-06-12",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-5a09d0744942f11b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1924fff8eb4d54ae",
+      "object_type": "entity",
+      "event_id": "EV-85373b8ec9148127",
+      "claim_refs": [
+        "CL-36760828e3e4b086"
+      ],
+      "source_refs": [
+        "SA-b888617f1f81722a"
+      ],
+      "data_date": "2026-06-10",
       "status": "verified"
     },
     {
@@ -3149,6 +3448,123 @@
       ],
       "source_refs": [
         "SA-28748e8b0a1767a3"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-27b659bc5e5fe00b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-1ae8027c085679e9",
+      "claim_refs": [
+        "CL-412c1165ad9aea08",
+        "CL-0d7806422b8f4731",
+        "CL-bf480f9596975b92"
+      ],
+      "source_refs": [
+        "SA-c509109acff08b2a"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-3d00d7538e09943f",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1924fff8eb4d54ae",
+      "object_type": "entity",
+      "event_id": "EV-52e1ac21c25a0a09",
+      "claim_refs": [
+        "CL-200387b333a63bec"
+      ],
+      "source_refs": [
+        "SA-07362e7a0eeb27d0"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-74ad6f207729d6ae",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-45b5216872656eb3",
+      "object_type": "entity",
+      "event_id": "EV-a9fe726c4ea2a17b",
+      "claim_refs": [
+        "CL-abeb123796984e45",
+        "CL-237aa10e9131be89",
+        "CL-bb177f8c54f761c6"
+      ],
+      "source_refs": [
+        "SA-4c454bcda76945d8"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-bcbf4f353ec2e5b3",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-9f338c4815cc65f3",
+      "claim_refs": [
+        "CL-9331a7c7b2ffd150"
+      ],
+      "source_refs": [
+        "SA-637ded00ea45f133"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-ced495a5aea356e0",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0502bb9ed34980aa",
+      "object_type": "entity",
+      "event_id": "EV-a9fe726c4ea2a17b",
+      "claim_refs": [
+        "CL-abeb123796984e45",
+        "CL-be6397745be4b268",
+        "CL-237aa10e9131be89",
+        "CL-bb177f8c54f761c6"
+      ],
+      "source_refs": [
+        "SA-4c454bcda76945d8"
+      ],
+      "data_date": "2026-06-09",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-ea61135fcfa1e38f",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-af3ceabbe048a291",
+      "object_type": "entity",
+      "event_id": "EV-d40a1a873015ac98",
+      "claim_refs": [
+        "CL-83825fd97ece377c",
+        "CL-1e7bf0c798e22d55",
+        "CL-a2450fd5f23e04cd"
+      ],
+      "source_refs": [
+        "SA-bdae3fd54febab4f"
       ],
       "data_date": "2026-06-09",
       "status": "verified"
@@ -3386,6 +3802,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-358643eefe0a5df5",
+        "EV-8e0c25aebb1d4f5f",
         "EV-36a9af9b98a66be3",
         "EV-4809eb76696a9e61",
         "EV-51dcf527010e4f19",
@@ -3868,6 +4286,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-32e83e92d45d71f6",
         "EN-2b6e51bec93e86c1",
         "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d",
@@ -4151,6 +4570,7 @@
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-3d9aa640411471ea",
+        "EV-049c7d6cdc237a59",
         "EV-48d22452ef4464fc",
         "EV-cd7ba52564d4091e",
         "EV-e781e169725006f0",
@@ -4182,6 +4602,7 @@
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
+        "EN-9b91d0f808382601",
         "EN-e12c9f7f64dec58c",
         "EN-e3ce9cc5efa9354c",
         "EN-8d4321d936320802",
@@ -4202,7 +4623,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -4217,6 +4638,7 @@
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-3d9aa640411471ea",
+        "EV-049c7d6cdc237a59",
         "EV-48d22452ef4464fc",
         "EV-cd7ba52564d4091e",
         "EV-3dc8d5c373ddd1f3",
@@ -4246,6 +4668,7 @@
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
+        "EN-9b91d0f808382601",
         "EN-e12c9f7f64dec58c",
         "EN-e3ce9cc5efa9354c",
         "EN-74be4cbf48e647b2",
@@ -4266,7 +4689,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-09-05"
     }
   ],
   "fde": [
@@ -4536,6 +4959,97 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-9aa8dc06359294bf",
+      "snapshotKey": "9aa8dc06359294bf",
+      "snapshotId": "HWS-ca28170b1e050661",
+      "eventId": "EV-8e0c25aebb1d4f5f",
+      "eventIds": [
+        "EV-8e0c25aebb1d4f5f"
+      ],
+      "dataDate": "2026-09-05",
+      "date": "2026-09-05",
+      "title": "SpaceXAI / Grok Bot",
+      "subject": "xAI",
+      "productNames": [
+        "SpaceXAI",
+        "Grok Bot"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-40b3953b53f7a5c7"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-05",
+          "hardware_fact_id": "HWF-40b3953b53f7a5c7",
+          "fact_type": "product",
+          "observed_at": "2026-09-05T02:35:59.000Z",
+          "subject_entity_id": "EN-6fcba5d96a4fadfd",
+          "subject_name": "xAI",
+          "product_entity_ids": [
+            "EN-0b9ca57f53ba758b",
+            "EN-92df1be3e37c9268"
+          ],
+          "product_names": [
+            "SpaceXAI",
+            "Grok Bot"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家曾于 8 月报道，SpaceXAI 推出 Grok Bot，让 AI 智能体全天候组队干活，能够登录不同的应用和网站，保留此前任务中的信息，还可以让不同机器人之间共享相关细节和上下文信息。",
+          "event_refs": [
+            "EV-8e0c25aebb1d4f5f"
+          ],
+          "claim_ref": "CL-117b967034f753ca",
+          "source_refs": [
+            "SA-e1c4546606a71d08"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/685.htm",
+      "entityIds": [
+        "EN-6fcba5d96a4fadfd",
+        "EN-3a7bd3e2360a3d29",
+        "EN-0b9ca57f53ba758b",
+        "EN-92df1be3e37c9268"
+      ]
+    },
     {
       "id": "HWC-329fcf3475ab6d1b",
       "snapshotKey": "329fcf3475ab6d1b",

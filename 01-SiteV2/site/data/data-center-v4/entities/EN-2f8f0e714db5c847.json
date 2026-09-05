@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-2f8f0e714db5c847",
+    "name": "Project Zenith",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c638f91cbb8bf845"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-04",
+    "lastSeen": "2026-09-05",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-c638f91cbb8bf845"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c638f91cbb8bf845",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-240389f4b730bad4",
+          "EN-2f8f0e714db5c847"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-d97073cdfcae6b98",
+      "eventId": "EV-c638f91cbb8bf845",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-04",
+      "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "AMD",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
+      "sourceName": "The Verge AI",
+      "sourceDate": "2026-09-04",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-240389f4b730bad4",
+        "EN-2f8f0e714db5c847"
+      ]
+    }
+  ]
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -107,6 +107,7 @@
       "EV-ff1f6119de13fa19",
       "EV-4dd25589d834060d",
       "EV-7263caa45bbf168e",
+      "EV-f6ad842485bb71ab",
       "EV-1e6f73c188a9e946",
       "EV-30be225da68f2f70",
       "EV-da148848ec026bdf",
@@ -268,7 +269,7 @@
       "HW-cff6ff4add035b48"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-09-04"
+    "lastSeen": "2026-09-05"
   },
   "events": [
     {
@@ -34833,6 +34834,100 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-f6ad842485bb71ab",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-04",
+      "updatedDate": "2026-09-05",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "趋境科技与摩尔线程达成战略合作，高品质 AI Token 国产异构方案性价比超越国际先进算力",
+      "originalTitle": "",
+      "subject": "趋境科技与摩尔线程达成战略",
+      "action": "合作",
+      "object": "，高品质 AI Token 国产异构方案性价比超越国际先进算力",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-qbitai-rss"
+        ],
+        "claim_refs": [
+          "CL-481e01465e62c9d6",
+          "CL-86591965ed2d294b",
+          "CL-5f8ea7851032bbce",
+          "CL-4862157111df1908"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b38ce43cd405210e",
+        "EN-4dfd2951bd45baa2",
+        "EN-9545b56fe75b6ffa"
+      ],
+      "entityNames": [
+        "趋境科技",
+        "摩尔线程达成战略",
+        "Moore Threads"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/09/484547.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-1e6f73c188a9e946",
       "dataDate": "2026-08-26",
       "date": "2026-08-26",
@@ -36349,16 +36444,16 @@
     },
     {
       "id": "EV-3aadd182733359ee",
-      "dataDate": "2026-09-04",
+      "dataDate": "2026-09-05",
       "date": "2026-09-03",
-      "updatedDate": "2026-09-04",
+      "updatedDate": "2026-09-05",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "VMware Explore 2026 将私有云置于 AI 核心位置",
+      "title": "VMware Explore 2026 将私有云置于AI核心位置",
       "originalTitle": "VMware Explore 2026 Puts Private Cloud at the Center of AI",
       "subject": "Broadcom",
       "action": "product_release",
@@ -40271,8 +40366,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-36a9af9b98a66be3",
+        "EV-8061c8eb754e0542",
         "EV-f01a13953fa7aaaa",
+        "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
         "EV-5890a74f1a62940e",
@@ -40373,6 +40469,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-bef842eacf8b7aad",
+        "EV-c06d008e73a0d337",
         "EV-0094ff6922e9d570",
         "EV-81f1fd52e41d4664",
         "EV-00e6152baff47d4d",
@@ -40472,7 +40570,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-2733b0272eaa721d",
@@ -42087,7 +42185,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-eafe895eb8119e6e",
@@ -42287,7 +42385,9 @@
       "name": "星海图",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Astribot"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -42295,6 +42395,7 @@
       "eventIds": [
         "EV-435d7e7878b0c326",
         "EV-cec68369662236fd",
+        "EV-4465e8bfd74508a6",
         "EV-e44377720f2ab959"
       ],
       "viewpointIds": [],
@@ -42313,7 +42414,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-23"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-a83a3af1a4866fd5",
@@ -42725,6 +42826,7 @@
         "EV-b334f46b11a68045",
         "EV-fe644da028a13217",
         "EV-75b9b997e9c7e5d1",
+        "EV-c638f91cbb8bf845",
         "EV-737a6c098b70f6ff",
         "EV-601240034cf86d7f",
         "EV-099c1bce0a50965d",
@@ -42762,7 +42864,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-09-02"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-449777124b1466a8",
@@ -42866,6 +42968,9 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-6d92bb807f339b53",
+        "EV-d5db0416bede29de",
+        "EV-c638f91cbb8bf845",
         "EV-8232ad0075a77b7a",
         "EV-ad41b8a1f9f8d747",
         "EV-67adfb3393d95976",
@@ -42981,7 +43086,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -43202,7 +43307,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-35e36dc1a5213fa3",
@@ -43388,7 +43493,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-3bc9f78028bc2dba",
@@ -43609,7 +43714,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -43664,6 +43771,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6b0106ef4a79df05",
         "EV-a74ea4ad6a095ac3",
         "EV-b22136a993b21f0c",
         "EV-b8a7ddde8a7e42c8",
@@ -43715,7 +43823,6 @@
         "EV-ebd76d18d3f0ee7b",
         "EV-60110525440fac47",
         "EV-3ebf23c149dde19d",
-        "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
@@ -43882,16 +43989,19 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -43899,7 +44009,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-1706429cbf67f1c9",

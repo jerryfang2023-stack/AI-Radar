@@ -1,27 +1,27 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-04T05:47:14.318Z",
-  "date": "2026-09-04",
+  "generated_at": "2026-09-05T04:50:32.582Z",
+  "date": "2026-09-05",
   "status": "passed",
   "state": "healthy",
-  "last_checked_date": "2026-09-04",
+  "last_checked_date": "2026-09-05",
   "latest_financing_date": "2026-09-02",
   "totals": {
-    "fetched": 691,
-    "funding_candidates": 113,
+    "fetched": 568,
+    "funding_candidates": 102,
     "verified_events": 1
   },
   "channels": [
     {
       "id": "aihot",
       "status": "collected",
-      "last_success_at": "2026-09-04T04:01:12.461Z",
+      "last_success_at": "2026-09-05T03:34:42.478Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 369,
+      "fetched_count": 267,
       "latest_content_date": "2026-09-04",
       "duplicate_rate": 0,
-      "stale_rate": 0.75,
+      "stale_rate": 1,
       "funding_candidate_count": 4,
       "verified_event_count": 0,
       "failures": [],
@@ -30,14 +30,14 @@
     {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-09-04T04:01:37.466Z",
+      "last_success_at": "2026-09-05T03:35:04.421Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 60,
+      "fetched_count": 51,
       "latest_content_date": "2026-09-04",
       "duplicate_rate": 0,
-      "stale_rate": 0.9833,
-      "funding_candidate_count": 60,
+      "stale_rate": 1,
+      "funding_candidate_count": 51,
       "verified_event_count": 0,
       "failures": [
         "RSS venturebeat-ai: HTTP 429"
@@ -64,36 +64,39 @@
     {
       "id": "keyword",
       "status": "collected",
-      "last_success_at": "2026-09-04T04:10:35.472Z",
+      "last_success_at": "2026-09-05T03:42:57.201Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 137,
-      "latest_content_date": "2026-09-03",
-      "duplicate_rate": 0.125,
+      "fetched_count": 139,
+      "latest_content_date": "2024-10-23",
+      "duplicate_rate": 0.1163,
       "stale_rate": 1,
-      "funding_candidate_count": 40,
+      "funding_candidate_count": 43,
       "verified_event_count": 1,
       "failures": [
-        "keyword-search pre-gate filtered 86 result(s): missing_ai_anchor_in_result=37; social_or_profile_source=28; broad_list_or_market_report=16; noise_term:hiring=3; directory_or_search_page=1; noise_term:dictionary=1",
-        "Anysearch fallback for query \"customer engineering AI production deployment announced September 2026 (\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)\": Anysearch returned 0 usable results",
-        "Anysearch fallback for query \"AI procurement startup funding enterprise workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results"
+        "keyword-search pre-gate filtered 81 result(s): missing_ai_anchor_in_result=31; social_or_profile_source=31; broad_list_or_market_report=15; noise_term:hiring=2; directory_or_search_page=1; noise_term:meme=1",
+        "Anysearch business fallback for query \"open-source AI agent GitHub enterprise adoption (site:github.com OR site:npmjs.com OR site:pypi.org OR site:huggingface.co OR site:marketplace.visualstudio.com OR site:chromewebstore.google.com)\": Anysearch Search service temporarily unavailable.",
+        "Anysearch tech fallback for query \"open-source AI agent GitHub enterprise adoption (site:github.com OR site:npmjs.com OR site:pypi.org OR site:huggingface.co OR site:marketplace.visualstudio.com OR site:chromewebstore.google.com)\": Anysearch Search service temporarily unavailable.",
+        "Anysearch documented-payload retry for query \"open-source AI agent GitHub enterprise adoption (site:github.com OR site:npmjs.com OR site:pypi.org OR site:huggingface.co OR site:marketplace.visualstudio.com OR site:chromewebstore.google.com)\": business: Anysearch Search service temporarily unavailable.; tech: Anysearch Search service temporarily unavailable.",
+        "Anysearch business fallback for query \"agent governance evals production rollout enterprise AI (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)\": Anysearch Search service temporarily unavailable."
       ],
       "fallback_used": true
     },
     {
       "id": "rss",
       "status": "collected",
-      "last_success_at": "2026-09-04T04:01:17.934Z",
+      "last_success_at": "2026-09-05T03:34:46.881Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 125,
+      "fetched_count": 111,
       "latest_content_date": "2026-09-04",
       "duplicate_rate": 0,
-      "stale_rate": 0.8889,
-      "funding_candidate_count": 9,
+      "stale_rate": 1,
+      "funding_candidate_count": 4,
       "verified_event_count": 0,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429",
+        "RSS tldr-ai-newsletter: HTTP 429"
       ],
       "fallback_used": false
     }

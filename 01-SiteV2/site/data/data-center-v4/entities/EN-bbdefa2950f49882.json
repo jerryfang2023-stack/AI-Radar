@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -16,7 +16,9 @@
     "name": "Google",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "谷歌"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -71,6 +73,7 @@
       "EV-f949fd95df58d42d",
       "EV-97747aee0cafd9f3",
       "EV-c0a65877001ed413",
+      "EV-6b0106ef4a79df05",
       "EV-a74ea4ad6a095ac3",
       "EV-b22136a993b21f0c",
       "EV-b8a7ddde8a7e42c8",
@@ -122,7 +125,6 @@
       "EV-ebd76d18d3f0ee7b",
       "EV-60110525440fac47",
       "EV-3ebf23c149dde19d",
-      "EV-6b0106ef4a79df05",
       "EV-a4fe78df6ccd63c8",
       "EV-395884a4c090103c",
       "EV-6f26809c0ae960a8",
@@ -289,16 +291,19 @@
       "TX-technology-tool_use"
     ],
     "relatedEntityIds": [
+      "EN-307557d99a7eb726",
       "EN-8d323d8bba783aa3",
       "EN-18f0900d6c487f59",
       "EN-a85d5a9b4a77d59b",
+      "EN-31055a8d9856fce4",
       "EN-81e577740888ca6d",
       "EN-1229af0aa3b0305e",
+      "EN-0e008e2c06144ec8",
       "EN-40f98159922ab514",
       "EN-9ff1a58a589bc318",
       "EN-01f1074bb52ff605",
-      "EN-0e008e2c06144ec8",
       "EN-f2c032b19edb7900",
+      "EN-2ab6d53e717a0e0d",
       "EN-2998f8b13f4fd72e",
       "EN-b5c336c0dd1ff29c",
       "EN-d56aa2f9908f566a",
@@ -306,27 +311,35 @@
       "EN-bdfecbcd7dbf76d2"
     ],
     "firstSeen": "2025-10-09",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-05",
     "relationIds": [
+      "REL2-a675a7f7bd02161e",
       "REL2-f6e62982e0b3d7d6",
       "REL2-a5a15f09d4da8135",
       "REL2-066894debed9bb20",
+      "REL2-9ad2c97e765910d9",
+      "REL2-ddbd67ee39ac2096",
       "REL2-de5487ce28a724fb",
       "REL2-fcedf12f07ebc6c2",
       "REL2-5d24ca1eeaa32514",
       "REL2-70d05a81606b3589",
       "REL2-d68bd82241b5ba02",
+      "REL2-f92ee2f782a8185b",
       "REL2-6e0bd52053c02359",
       "REL2-c2d351d111dce63d",
       "REL2-1967b453be7e7724",
+      "REL2-638b55900181fbf2",
       "REL2-65389a75e3085862",
       "REL2-a973fd9783c033d1",
       "REL2-c1743ef4560536bd",
       "REL2-eba841d5627207a4",
+      "REL2-7a95bce5aecaba79",
       "REL2-80e7d430efc92a5c",
       "REL2-3831db0cf6e33a54",
+      "REL2-44ebd8a7378accce",
       "REL2-d205049958061bb1",
       "REL2-d38107a2fe8bacd9",
+      "REL2-4aa175c42153e014",
       "REL2-572d299c04663eb3",
       "REL2-653e76cf1e48b6fd",
       "REL2-0637ce4d20d93f49"
@@ -396,6 +409,7 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-6b0106ef4a79df05",
         "EV-a74ea4ad6a095ac3",
         "EV-b22136a993b21f0c",
         "EV-b8a7ddde8a7e42c8",
@@ -446,7 +460,6 @@
         "EV-ebd76d18d3f0ee7b",
         "EV-60110525440fac47",
         "EV-3ebf23c149dde19d",
-        "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
@@ -583,8 +596,44 @@
     },
     "timeline": [
       {
+        "id": "EV-6b0106ef4a79df05",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-05",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "谷歌在 Gemini 应用和 API 中上线音乐生成模型 Lyria 3.5，可生成长达数分钟的完整歌曲",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "speech_audio",
+            "name": "语音与音频",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-6d8f1756a5c5b4f4",
+          "EN-bbdefa2950f49882",
+          "EN-76e33aa7ea4d3a63"
+        ]
+      },
+      {
         "id": "EV-a74ea4ad6a095ac3",
-        "dataDate": "2026-09-04",
+        "dataDate": "2026-09-05",
         "date": "2026-09-03",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
@@ -2893,65 +2942,6 @@
           "EN-bbdefa2950f49882",
           "EN-7931b6d10b3c8a5f",
           "EN-63182c7ff1033426"
-        ]
-      },
-      {
-        "id": "EV-6b0106ef4a79df05",
-        "dataDate": "2026-07-30",
-        "date": "2026-07-30",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "谷歌推出 Lyria 3.5 音乐生成 AI 模型：提升旋律编排、人声表现更细腻",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "content_creation",
-            "name": "内容创作",
-            "entityIds": [
-              "EN-7ad34701224a4d2d"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "content_creation",
-            "name": "内容创作",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "speech_audio",
-            "name": "语音与音频",
-            "entityIds": [
-              "EN-7ad34701224a4d2d"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "speech_audio",
-            "name": "语音与音频",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-bbdefa2950f49882",
-          "EN-7ad34701224a4d2d",
-          "EN-2b6e51bec93e86c1",
-          "EN-ba8a9b6ce159cd8c"
         ]
       },
       {
@@ -7813,6 +7803,32 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-307557d99a7eb726",
+      "name": "Gemini Spark",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5e85bc91a6924760",
+        "EV-8aead769e84de342",
+        "EV-982a92fc86f1d20c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-08-03"
+    },
+    {
       "id": "EN-8d323d8bba783aa3",
       "name": "Google Cloud",
       "entityType": "organization_candidate",
@@ -7901,6 +7917,30 @@
       "lastSeen": "2026-07-22"
     },
     {
+      "id": "EN-31055a8d9856fce4",
+      "name": "Gemini 3.5 Flash Cyber",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "Flash Cyber"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-859489cd3fa4e596",
+        "EV-597b8257a97b3d02"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-09-03"
+    },
+    {
       "id": "EN-81e577740888ca6d",
       "name": "SensorFM",
       "entityType": "product_candidate",
@@ -7944,6 +7984,29 @@
         "EN-bbdefa2950f49882"
       ],
       "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-0e008e2c06144ec8",
+      "name": "Nano Banana",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6359c9f6c2609a38",
+        "EV-5babb43f4b4d302f",
+        "EV-89b644ff05e6b93b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-01",
       "lastSeen": "2026-07-16"
     },
     {
@@ -8018,29 +8081,6 @@
       "lastSeen": "2026-07-15"
     },
     {
-      "id": "EN-0e008e2c06144ec8",
-      "name": "Nano Banana",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6359c9f6c2609a38",
-        "EV-5babb43f4b4d302f",
-        "EV-89b644ff05e6b93b"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "firstSeen": "2026-07-01",
-      "lastSeen": "2026-07-16"
-    },
-    {
       "id": "EN-f2c032b19edb7900",
       "name": "Google Finance",
       "entityType": "product_candidate",
@@ -8062,6 +8102,30 @@
       ],
       "firstSeen": "2026-06-26",
       "lastSeen": "2026-06-26"
+    },
+    {
+      "id": "EN-2ab6d53e717a0e0d",
+      "name": "诺基亚",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Nokia"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d1a3f5c8045e548d",
+        "EV-1ff169120ed385f6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-2998f8b13f4fd72e",
@@ -8179,6 +8243,27 @@
   ],
   "relationships": [
     {
+      "relationship_id": "REL2-a675a7f7bd02161e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-307557d99a7eb726",
+      "object_type": "entity",
+      "event_id": "EV-5e85bc91a6924760",
+      "claim_refs": [
+        "CL-e195d7727b181bec",
+        "CL-39ec4a2b7d6bd317",
+        "CL-f2323adffd6b687f",
+        "CL-0bc77417b3b9ac0e"
+      ],
+      "source_refs": [
+        "SA-409f38aff93df4c5"
+      ],
+      "data_date": "2026-08-03",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-f6e62982e0b3d7d6",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8d323d8bba783aa3",
@@ -8233,6 +8318,47 @@
       ],
       "source_refs": [
         "SA-47f03229e8169f4f"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-9ad2c97e765910d9",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-18f0900d6c487f59",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-bcf6cc5593de2a0f",
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-ddbd67ee39ac2096",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-31055a8d9856fce4",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
       ],
       "data_date": "2026-07-22",
       "status": "verified"
@@ -8333,6 +8459,27 @@
       "status": "verified"
     },
     {
+      "relationship_id": "REL2-f92ee2f782a8185b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0e008e2c06144ec8",
+      "object_type": "entity",
+      "event_id": "EV-6359c9f6c2609a38",
+      "claim_refs": [
+        "CL-3c3d4af5e069787d",
+        "CL-714aa682873fac8b",
+        "CL-b606f6b126922962",
+        "CL-4a7039df083c3152"
+      ],
+      "source_refs": [
+        "SA-b894cd4477812b65"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-6e0bd52053c02359",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -8388,6 +8535,27 @@
       ],
       "source_refs": [
         "SA-7c91c84c27e2a1a0"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-638b55900181fbf2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-01f1074bb52ff605",
+      "object_type": "entity",
+      "event_id": "EV-d8c69ed782b73a34",
+      "claim_refs": [
+        "CL-b5bc8b4e766de0ef",
+        "CL-dbee760c0db43fab",
+        "CL-72f47e56c761bde4",
+        "CL-9fdeb9adf922c9da"
+      ],
+      "source_refs": [
+        "SA-cb3a20fe357ba722"
       ],
       "data_date": "2026-07-01",
       "status": "verified"
@@ -8468,6 +8636,26 @@
       "status": "verified"
     },
     {
+      "relationship_id": "REL2-7a95bce5aecaba79",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2ab6d53e717a0e0d",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-bbdefa2950f49882",
+      "object_type": "entity",
+      "event_id": "EV-d1a3f5c8045e548d",
+      "claim_refs": [
+        "CL-5758242d40096958",
+        "CL-108011dcac3f51c9",
+        "CL-6816c5ea4abdfa87"
+      ],
+      "source_refs": [
+        "SA-572f0e8d4b983d74"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-80e7d430efc92a5c",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -8505,6 +8693,27 @@
         "SA-3322f5b356cb1b1c"
       ],
       "data_date": "2026-06-17",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-44ebd8a7378accce",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-22b8d155ce027905",
+      "claim_refs": [
+        "CL-0ffd4a87d0bf9a23",
+        "CL-9a3abffb4df3b677",
+        "CL-53bc4ba62a2c55fb",
+        "CL-c0d954c60d8247d3"
+      ],
+      "source_refs": [
+        "SA-30fb0e04917bc0f3"
+      ],
+      "data_date": "2026-06-11",
       "status": "verified"
     },
     {
@@ -8546,6 +8755,27 @@
         "SA-87ccc3513174eaba"
       ],
       "data_date": "2026-06-11",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-4aa175c42153e014",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4baef0e41cbd7ae2",
+      "object_type": "entity",
+      "event_id": "EV-4a3cb762183581cd",
+      "claim_refs": [
+        "CL-b487cc8855f09bf4",
+        "CL-5b9c208e3329948f",
+        "CL-a0bae28c89384d4f",
+        "CL-c2d89368f69456e3"
+      ],
+      "source_refs": [
+        "SA-b6f2cdfb3b2eff0e"
+      ],
+      "data_date": "2026-06-10",
       "status": "verified"
     },
     {
@@ -8701,6 +8931,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-e5f13798813adfbf",
+        "EV-4465e8bfd74508a6",
         "EV-125040ec61215481",
         "EV-85ba013c379a9d3d",
         "EV-7832e96ace41fc15",
@@ -8939,6 +9171,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c608c4787821de1b",
+        "EN-ec31d2be1b244616",
         "EN-7d3194f79e645c42",
         "EN-39ba5f9dcab4e98a",
         "EN-bbdefa2950f49882",
@@ -9009,7 +9243,6 @@
         "EN-dd920a8cd166f486",
         "EN-2b6e51bec93e86c1",
         "EN-6e898ad0522fca30",
-        "EN-c608c4787821de1b",
         "EN-412b57e712039032",
         "EN-50537dab76505dfc",
         "EN-e956b4e6d9c37fa7",
@@ -9057,7 +9290,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -9843,7 +10076,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -9874,6 +10107,7 @@
         "EV-acb2087779a8ea3c",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
+        "EV-358643eefe0a5df5",
         "EV-85ba013c379a9d3d",
         "EV-db87eda4a39de22a",
         "EV-8b288f548fd59a91",
@@ -9921,6 +10155,7 @@
         "EN-8d4321d936320802",
         "EN-85f0c155e340fb63",
         "EN-240389f4b730bad4",
+        "EN-32e83e92d45d71f6",
         "EN-39ba5f9dcab4e98a",
         "EN-c70eca6b0f88f44d",
         "EN-e3ce9cc5efa9354c",
@@ -9957,7 +10192,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -10245,7 +10480,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -10488,7 +10723,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-target_user-developer",
@@ -10948,6 +11183,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-7371ffb603de3e1c",
         "EV-0c00a6c681f22b98",
         "EV-3badd98afb847643",
         "EV-42d0b85486576c88",
@@ -11012,6 +11248,7 @@
         "EN-8de7e44229714152",
         "EN-ced86039c0ad6a7c",
         "EN-842a7da99bd249d4",
+        "EN-a81b5ef9c23cdf0c",
         "EN-a0d4ca5b6474c67c",
         "EN-52d25a9e30ba94f1",
         "EN-55018455fd10b832",
@@ -11028,7 +11265,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -11243,6 +11480,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-358643eefe0a5df5",
+        "EV-8e0c25aebb1d4f5f",
         "EV-36a9af9b98a66be3",
         "EV-4809eb76696a9e61",
         "EV-51dcf527010e4f19",
@@ -11725,6 +11964,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-32e83e92d45d71f6",
         "EN-2b6e51bec93e86c1",
         "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d",
@@ -12048,6 +12288,7 @@
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
         "EV-7263caa45bbf168e",
+        "EV-f6ad842485bb71ab",
         "EV-1e6f73c188a9e946",
         "EV-30be225da68f2f70",
         "EV-da148848ec026bdf",
@@ -12209,7 +12450,7 @@
         "HW-cff6ff4add035b48"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-use_case-software_development",
@@ -13065,6 +13306,7 @@
         "EV-7077778f0eb84f6c",
         "EV-d3054a8a2b62a503",
         "EV-535c2f4fb851332d",
+        "EV-783866f9782691b6",
         "EV-5bbc509a032b8309",
         "EV-522c339dded54be5",
         "EV-dda9429d76897a3d",
@@ -13074,6 +13316,7 @@
         "EV-26d2874c6ce028d6",
         "EV-3d9aa640411471ea",
         "EV-fd21441fb6e143c3",
+        "EV-15847ebe206ad028",
         "EV-b22136a993b21f0c",
         "EV-a9630a87712e5899",
         "EV-c5f8f07d714f330f",
@@ -13126,12 +13369,14 @@
       ],
       "entityIds": [
         "EN-be9d587defa1f0c0",
+        "EN-b644c0a9d493976a",
         "EN-b5318593e1260f2f",
         "EN-e1517be14d06cdb7",
         "EN-193d220b421d776e",
         "EN-b81c8201acfc7639",
         "EN-87c730bc4f32459e",
         "EN-7df09a7717ef2feb",
+        "EN-1847d9e6a1580042",
         "EN-0d47d3f0783749a8",
         "EN-bbdefa2950f49882",
         "EN-fe074a5bc4bb5163",
@@ -13169,7 +13414,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-use_case-legal_compliance",
@@ -13961,6 +14206,7 @@
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-3d9aa640411471ea",
+        "EV-049c7d6cdc237a59",
         "EV-48d22452ef4464fc",
         "EV-cd7ba52564d4091e",
         "EV-e781e169725006f0",
@@ -13992,6 +14238,7 @@
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
+        "EN-9b91d0f808382601",
         "EN-e12c9f7f64dec58c",
         "EN-e3ce9cc5efa9354c",
         "EN-8d4321d936320802",
@@ -14012,7 +14259,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -14027,6 +14274,7 @@
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
         "EV-3d9aa640411471ea",
+        "EV-049c7d6cdc237a59",
         "EV-48d22452ef4464fc",
         "EV-cd7ba52564d4091e",
         "EV-3dc8d5c373ddd1f3",
@@ -14056,6 +14304,7 @@
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
+        "EN-9b91d0f808382601",
         "EN-e12c9f7f64dec58c",
         "EN-e3ce9cc5efa9354c",
         "EN-74be4cbf48e647b2",
@@ -14076,7 +14325,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "TX-deployment_model-on_premise",

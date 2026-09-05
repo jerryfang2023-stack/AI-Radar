@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -38,8 +38,8 @@
       "EV-affa49966121461c",
       "EV-e12b17260d19c5ff",
       "EV-535c2f4fb851332d",
-      "EV-7b0ff6657c0e0483",
       "EV-6b0106ef4a79df05",
+      "EV-7b0ff6657c0e0483",
       "EV-1de38866b4b92754",
       "EV-99e5df844a1bd670",
       "EV-0933cc40b4fe5f21",
@@ -68,7 +68,6 @@
       "EN-f30ad7677baf7ea2",
       "EN-9b21c9bf3305c0d6",
       "EN-ea3bd73e2b506e00",
-      "EN-7ad34701224a4d2d",
       "EN-e93e29634540a290",
       "EN-afe83c198e329ef2",
       "EN-e0bab6f6c58bfe4e",
@@ -79,7 +78,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-02-08",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-05"
   },
   "events": [
     {
@@ -7511,6 +7510,112 @@
       "publisher": "国家科技创新信息服务平台"
     },
     {
+      "id": "EV-6b0106ef4a79df05",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-05",
+      "updatedDate": "2026-09-05",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌在 Gemini 应用和 API 中上线音乐生成模型 Lyria 3.5，可生成长达数分钟的完整歌曲",
+      "originalTitle": "",
+      "subject": "谷歌在 Gemini 应用和 API 中",
+      "action": "上线",
+      "object": "音乐生成模型 Lyria 3.5，可生成长达数分钟的完整歌曲",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6d8f1756a5c5b4f4",
+        "EN-bbdefa2950f49882",
+        "EN-76e33aa7ea4d3a63"
+      ],
+      "entityNames": [
+        "谷歌在 Gemini 应用",
+        "Google",
+        "API 中"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/998/647.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-7b0ff6657c0e0483",
       "dataDate": "2026-08-20",
       "date": "2026-08-20",
@@ -7658,215 +7763,6 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/991/866.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-6b0106ef4a79df05",
-      "dataDate": "2026-07-30",
-      "date": "2026-07-30",
-      "updatedDate": "2026-07-30",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "谷歌推出 Lyria 3.5 音乐生成 AI 模型：提升旋律编排、人声表现更细腻",
-      "originalTitle": "",
-      "subject": "谷歌",
-      "action": "推出 Lyria 3.5 音乐生成 AI 模型",
-      "object": "：提升旋律编排、人声表现更细腻",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [
-            "EN-7ad34701224a4d2d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [
-            "EN-7ad34701224a4d2d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "content_creation",
-            "name": "内容创作",
-            "entityIds": [
-              "EN-7ad34701224a4d2d"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "content_creation",
-            "name": "内容创作",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [
-            "EN-7ad34701224a4d2d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "content_creation",
-          "name": "内容创作",
-          "entityIds": [
-            "EN-7ad34701224a4d2d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "content_creation",
-          "name": "内容创作",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "content_creation",
-          "name": "内容创作",
-          "entityIds": [
-            "EN-7ad34701224a4d2d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "content_creation",
-          "name": "内容创作",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [
-            "EN-7ad34701224a4d2d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-bbdefa2950f49882",
-        "EN-7ad34701224a4d2d",
-        "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-ba8a9b6ce159cd8c"
-      ],
-      "entityNames": [
-        "Google",
-        "Lyria 3.5",
-        "Google DeepMind",
-        "DeepMind",
-        "Flow Music"
-      ],
-      "productName": "Lyria 3.5",
-      "products": [
-        {
-          "name": "Lyria 3.5",
-          "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
-        },
-        {
-          "name": "DeepMind",
-          "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
-        },
-        {
-          "name": "Flow Music",
-          "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/983/412.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -8665,6 +8561,7 @@
         "EV-d3054a8a2b62a503",
         "EV-87432dbb99cd6033",
         "EV-427081ec574b43bb",
+        "EV-2f0f3200b9800877",
         "EV-acaf06b262d9c3db",
         "EV-27b69ea604475b72",
         "EV-da9bb2c98c1ce8cd",
@@ -8715,7 +8612,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-27d914a99e32f0f2",
@@ -9434,29 +9331,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-09-04"
-    },
-    {
-      "id": "EN-7ad34701224a4d2d",
-      "name": "Lyria 3.5",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6b0106ef4a79df05"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-content_creation",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-30",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-e93e29634540a290",

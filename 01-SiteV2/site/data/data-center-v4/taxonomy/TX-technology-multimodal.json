@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-04T04:59:27.384Z",
-    "latestDataDate": "2026-09-04",
-    "currentDate": "2026-09-04",
-    "eventCount": 2642,
+    "generatedAt": "2026-09-05T04:50:09.388Z",
+    "latestDataDate": "2026-09-05",
+    "currentDate": "2026-09-05",
+    "eventCount": 2671,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -21,6 +21,7 @@
       "EV-7077778f0eb84f6c",
       "EV-d3054a8a2b62a503",
       "EV-535c2f4fb851332d",
+      "EV-783866f9782691b6",
       "EV-5bbc509a032b8309",
       "EV-522c339dded54be5",
       "EV-dda9429d76897a3d",
@@ -30,6 +31,7 @@
       "EV-26d2874c6ce028d6",
       "EV-3d9aa640411471ea",
       "EV-fd21441fb6e143c3",
+      "EV-15847ebe206ad028",
       "EV-b22136a993b21f0c",
       "EV-a9630a87712e5899",
       "EV-c5f8f07d714f330f",
@@ -82,12 +84,14 @@
     ],
     "entityIds": [
       "EN-be9d587defa1f0c0",
+      "EN-b644c0a9d493976a",
       "EN-b5318593e1260f2f",
       "EN-e1517be14d06cdb7",
       "EN-193d220b421d776e",
       "EN-b81c8201acfc7639",
       "EN-87c730bc4f32459e",
       "EN-7df09a7717ef2feb",
+      "EN-1847d9e6a1580042",
       "EN-0d47d3f0783749a8",
       "EN-bbdefa2950f49882",
       "EN-fe074a5bc4bb5163",
@@ -125,7 +129,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-02-08",
-    "lastSeen": "2026-09-04"
+    "lastSeen": "2026-09-05"
   },
   "events": [
     {
@@ -799,6 +803,112 @@
       "products": [],
       "sourceUrl": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
       "publisher": "国家科技创新信息服务平台"
+    },
+    {
+      "id": "EV-783866f9782691b6",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-05",
+      "updatedDate": "2026-09-05",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "匿名模型 Omen Alpha 上线 OpenCode，线索指向智谱",
+      "originalTitle": "",
+      "subject": "匿名模型 Omen Alpha",
+      "action": "上线",
+      "object": "OpenCode，线索指向智谱",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-7d8959ef63993e83",
+          "CL-6e8cf3fe36288942",
+          "CL-b0e6d3ae56538644",
+          "CL-97b8521993795d1f"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-b644c0a9d493976a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-b644c0a9d493976a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-b644c0a9d493976a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1d79127e9d90e89b",
+        "EN-b644c0a9d493976a"
+      ],
+      "entityNames": [
+        "智谱AI",
+        "OpenCode"
+      ],
+      "productName": "OpenCode",
+      "products": [
+        {
+          "name": "OpenCode",
+          "type": "产品/服务",
+          "ownerNames": [
+            "智谱AI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/641.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-5bbc509a032b8309",
@@ -2566,6 +2676,94 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/966/539.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-15847ebe206ad028",
+      "dataDate": "2026-09-05",
+      "date": "2026-09-04",
+      "updatedDate": "2026-09-05",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "李飞飞刚发Atlas，中国开源“同款”已抢跑半年？",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "李飞飞刚发Atlas，中国开源“同款”已抢跑半年？",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-1847d9e6a1580042"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-1847d9e6a1580042"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-1847d9e6a1580042"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1847d9e6a1580042",
+        "EN-508556a7706b9303"
+      ],
+      "entityNames": [
+        "李飞飞刚发Atlas",
+        "同款"
+      ],
+      "productName": "同款",
+      "products": [
+        {
+          "name": "同款",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/484163.html",
+      "publisher": "量子位"
     },
     {
       "id": "EV-b22136a993b21f0c",
@@ -7627,7 +7825,7 @@
           "name": "GPT-5.6",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Intel"
           ]
         }
       ],
@@ -10209,6 +10407,29 @@
       "lastSeen": "2026-08-26"
     },
     {
+      "id": "EN-b644c0a9d493976a",
+      "name": "OpenCode",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-783866f9782691b6",
+        "EV-79e295585f997372",
+        "EV-564f3df8d487ca6f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-09-05"
+    },
+    {
       "id": "EN-b5318593e1260f2f",
       "name": "资本重仓端侧物理AI",
       "entityType": "organization_candidate",
@@ -10237,9 +10458,7 @@
       "name": "MiniMax",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "稀宇科技"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -10247,6 +10466,7 @@
       "eventIds": [
         "EV-0121f0a9e9a975ec",
         "EV-522c339dded54be5",
+        "EV-358643eefe0a5df5",
         "EV-a6dc310224542dcf",
         "EV-2fa6949af5b36fb0",
         "EV-63858d9b5ef92175",
@@ -10270,7 +10490,7 @@
         "EN-cf81a61e4eaef17c"
       ],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-08-28"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-193d220b421d776e",
@@ -10310,6 +10530,7 @@
         "EV-87432dbb99cd6033",
         "EV-3a591b0f027f66cf",
         "EV-499a62114b0fd616",
+        "EV-40dbd71782c11373",
         "EV-fec0251eafea1a20",
         "EV-e3fe8993f46d5e12",
         "EV-9563aa162529aab0",
@@ -10320,6 +10541,7 @@
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
         "EV-bf23c87d0aa1f205",
+        "EV-358643eefe0a5df5",
         "EV-63948deaec161736",
         "EV-6360fcef17b43087",
         "EV-fbe519268ddce396",
@@ -10348,12 +10570,13 @@
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [
+        "EN-6f7ac1823da81d2e",
         "EN-0c2f714483c404ad",
         "EN-eec6044eb8e4941a",
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-02"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-87c730bc4f32459e",
@@ -10402,9 +10625,32 @@
         "TX-technology-multimodal",
         "TX-technology-long_context"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-1847d9e6a1580042",
+      "name": "李飞飞刚发Atlas",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-15847ebe206ad028"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-0d47d3f0783749a8",
@@ -10435,7 +10681,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -10490,6 +10738,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-6b0106ef4a79df05",
         "EV-a74ea4ad6a095ac3",
         "EV-b22136a993b21f0c",
         "EV-b8a7ddde8a7e42c8",
@@ -10541,7 +10790,6 @@
         "EV-ebd76d18d3f0ee7b",
         "EV-60110525440fac47",
         "EV-3ebf23c149dde19d",
-        "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
@@ -10708,16 +10956,19 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -10725,7 +10976,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-fe074a5bc4bb5163",
@@ -10887,11 +11138,13 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-40dbd71782c11373",
         "EV-b69f78a4919cb1bc",
         "EV-0fc718ab409cdcf5",
         "EV-0121f0a9e9a975ec",
         "EV-eda9fcba2f9fe358",
         "EV-3664fd6826c319bb",
+        "EV-358643eefe0a5df5",
         "EV-d69d239fd5bcc319",
         "EV-911e7e2722aa5ebc",
         "EV-a09f6e93ad868a57",
@@ -10945,9 +11198,11 @@
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-b81c8201acfc7639"
+      ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-a658fbc24f5e3832",
@@ -11125,7 +11380,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-c04bd5ebd10ab696",
@@ -11555,8 +11810,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-36a9af9b98a66be3",
+        "EV-8061c8eb754e0542",
         "EV-f01a13953fa7aaaa",
+        "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
         "EV-5890a74f1a62940e",
@@ -11657,6 +11913,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-bef842eacf8b7aad",
+        "EV-c06d008e73a0d337",
         "EV-0094ff6922e9d570",
         "EV-81f1fd52e41d4664",
         "EV-00e6152baff47d4d",
@@ -11756,7 +12014,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -11867,8 +12125,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1f88bfaf77dcfca3",
+        "EV-358643eefe0a5df5",
+        "EV-4e31149f2cd129f7",
+        "EV-7a7a5267ca73e44c",
+        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
+        "EV-a474530ccf6cd872",
+        "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
         "EV-3a8752218ab2b487",
         "EV-4809eb76696a9e61",
@@ -11876,9 +12139,9 @@
         "EV-ad41b8a1f9f8d747",
         "EV-c04ef2433ae230f6",
         "EV-125040ec61215481",
-        "EV-ffa46f84468cffd9",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
+        "EV-ffa46f84468cffd9",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -12094,6 +12357,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-345378cb7f1f64fd",
+        "EV-7371ffb603de3e1c",
+        "EV-d04298029a8ab693",
         "EV-bf57b79e05a537e6",
         "EV-23ebd5f5d32e950a",
         "EV-b1ac270277a5c1bc",
@@ -12218,8 +12484,8 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29",
         "EN-6a50fbf0b970c03a",
+        "EN-3a7bd3e2360a3d29",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
@@ -12245,7 +12511,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-05"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -12285,7 +12551,6 @@
         "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",
-        "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
         "EV-6654f62015eff8e3",
