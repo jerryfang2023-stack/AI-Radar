@@ -222,15 +222,21 @@ function fundingAmountMentions(value = "") {
   return [...text.matchAll(pattern)].map((match) => {
     const before = text.slice(Math.max(0, match.index - 56), match.index);
     const after = text.slice(match.index + match[0].length, match.index + match[0].length + 56);
-    const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?|valued\s+at|估值(?:达到|达|为|约|超过|高达|逾|超)?)\s*$/iu.test(before)
+    const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?|valued\s+at|估值(?:达到|达|为|约|超过|高达|逾|超|推高至|提升至|升至|增至)?)\s*$/iu.test(before)
       || /^\s*(?:pre[-\s]?money|post[-\s]?money)?\s*valuation\b/iu.test(after)
       || /^\s*估值/iu.test(after);
     const round = !valuation && (
       /(?:融资|筹集|募资|raises?|raised|raising|secured|funding\s+round|round\s+of)[^。！？.!?]{0,48}$/iu.test(before)
-      || /^\s*(?:融资|funding\s+round|round)\b/iu.test(after)
+      || /^\s*(?:(?:的\s*)?(?:(?:Pre[-\s]?)?[A-Z](?:\+)?轮\s*)?融资|(?:funding\s+round|round)\b)/iu.test(after)
     );
     return { raw: clean(match[0]), valuation, round };
   });
+}
+
+function fundingAmountUsesValuation(amount, texts = []) {
+  const mentions = texts.flatMap(fundingAmountMentions);
+  return mentions.some((mention) => mention.valuation && fundingAmountsEquivalent(amount, mention.raw))
+    && !mentions.some((mention) => mention.round && fundingAmountsEquivalent(amount, mention.raw));
 }
 
 function fundingEventAmountSemantics(event = {}, claims = []) {
@@ -587,6 +593,11 @@ export function attachFundingEvidenceProofs(inputCard = {}) {
 
 export function fundingEvidenceProofProblems(card = {}) {
   const problems = [];
+  // A valid quote hash proves integrity, not the financial role of its amount.
+  if (fundingAmountUsesValuation(card.financing?.amount,
+    (card.financing?.evidence_refs || []).map((item) => item.quote))) {
+    problems.push("funding_amount_is_valuation");
+  }
   const sourceHashById = new Map((card.research_sources || [])
     .map((source) => [source.source_id, clean(source.content_hash).toLowerCase()]));
   const visit = (value, location = "card") => {
@@ -991,6 +1002,12 @@ function fundingAmountsEquivalent(left = "", right = "") {
 
 export function fundingEventCardConsistencyProblems(card = {}, event = {}, claims = [], entities = []) {
   if (!card?.company?.entity_id || !event?.event_id) return [];
+  const acceptedClaims = claims.filter((claim) => (event.claim_refs || []).includes(claim.claim_id)
+    && claim.claim_type === "funding" && claim.verification_status === "accepted");
+  if (fundingAmountUsesValuation(card.financing?.amount, [
+    event.display_title_zh, event.object,
+    ...acceptedClaims.flatMap((claim) => [claim.object, claim.source_quote]),
+  ])) return ["funding_amount_is_valuation"];
   // A single canonical event may mention several companies. Only apply the
   // claim-to-card amount check to that ambiguous shape; older single-company
   // events use legacy claim subject conventions that are not always exact.
@@ -1459,7 +1476,7 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
   const suppliedNormalized = normalizeFundingAmount(suppliedAmount);
   if (eventNormalized.currency) {
     payload.financing.amount = eventAmount;
-  } else if (!suppliedNormalized.currency) {
+  } else if (!suppliedNormalized.currency && !fundingEventAmountSemantics(event, bundle.claims || []).excluded) {
     const claimAmount = (event.claim_refs || [])
       .map((claimId) => claimById.get(claimId))
       .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")

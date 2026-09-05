@@ -294,6 +294,54 @@ test("round amount selection does not depend on metric order", () => {
   assert.equal(isEligibleFundingInsightEvent(event), true);
 });
 
+test("Chinese post-amount financing wording identifies proceeds without a Latin word boundary", () => {
+  for (const phrase of ["获得1.5亿美元融资", "获得1.5亿美元的Pre-B轮融资"]) {
+    assert.equal(canonicalFundingEventAmount({ display_title_zh: phrase }), "1.5亿美元");
+  }
+});
+
+test("financing that pushes valuation higher does not disclose round proceeds", () => {
+  const event = {
+    event_type: "funding", event_status: "completed", publication_status: "verified",
+    display_title_zh: "这笔融资将公司估值推高至10亿美元。", metrics: ["10亿美元"],
+    claim_refs: ["CL-VALUATION"],
+  };
+  const claims = [{ claim_id: "CL-VALUATION", claim_type: "funding", verification_status: "accepted",
+    source_quote: event.display_title_zh }];
+  assert.equal(canonicalFundingEventAmount(event, claims), "");
+  assert.equal(isEligibleFundingInsightEvent(event, claims), false);
+  const payload = ensureCanonicalFundingEvidence({ financing: { amount: "未披露" } }, { claims }, event);
+  assert.equal(payload.financing.amount, "未披露");
+});
+
+test("Even Realities accepted evidence cannot overwrite proceeds with its unicorn valuation", () => {
+  const claims = [
+    "前苹果工程师的AI眼镜获得1.5亿美元融资",
+    "Even Realities获得1.5亿美元融资，估值达10亿美元，用于AI扩张。",
+    "Even Realities Technology，在获得包括美团和腾讯在内的投资者1.5亿美元的Pre-B轮融资后，正式成为独角兽企业。",
+    "据 CNBC 报道，这笔融资将公司估值推高至10亿美元。",
+  ].map((source_quote, index) => ({ claim_id: `CL-EVEN-${index}`, claim_type: "funding",
+    verification_status: "accepted", subject: "Even Realities Technology", source_quote }));
+  const event = { event_id: "EV-EVEN", display_title_zh: claims[0].source_quote,
+    object: "- IDN Financials", metrics: ["1.5亿", "10亿"],
+    claim_refs: claims.map((claim) => claim.claim_id) };
+  assert.equal(canonicalFundingEventAmount(event, claims), "1.5亿美元");
+  const payload = ensureCanonicalFundingEvidence({ financing: { amount: "1.5亿美元" } }, { claims }, event);
+  assert.equal(payload.financing.amount, "1.5亿美元");
+  for (const entities of [["EN-EVEN"], ["EN-EVEN", "EN-TENCENT"]]) {
+    const card = { company: { entity_id: "EN-EVEN", name: "Even Realities Technology" },
+      financing: { amount: "10亿美元" } };
+    assert.ok(fundingEventCardConsistencyProblems(card, { ...event, entities }, claims)
+      .includes("funding_amount_is_valuation"));
+    card.financing.amount = "1.5亿美元";
+    assert.deepEqual(fundingEventCardConsistencyProblems(card, { ...event, entities }, claims), []);
+  }
+  const evidenceCard = { financing: { amount: "10亿美元", evidence_refs: claims.map((claim) => ({ quote: claim.source_quote })) } };
+  assert.ok(fundingEvidenceProofProblems(evidenceCard).includes("funding_amount_is_valuation"));
+  evidenceCard.financing.amount = "1.5亿美元";
+  assert.deepEqual(fundingEvidenceProofProblems(evidenceCard), []);
+});
+
 test("funding research prompt enumerates every governed taxonomy list ID", () => {
   const prompt = promptFor(
     { event_id: "EV-1", display_title_zh: "示例融资", event_time: "2026-08-01", action: "融资", object: "A 轮", metrics: ["$10M"] },
