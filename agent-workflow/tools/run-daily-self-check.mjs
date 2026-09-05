@@ -143,21 +143,17 @@ function runSafeRepairs(report) {
   const attempts = [];
   if (!["safe", "on", "true", "1"].includes(String(repairMode).toLowerCase())) return attempts;
   const businessLane = (report?.lanes || []).find((lane) => lane.id === "business_signals");
-  const runtimeDashboard = args.has("runtime-dir")
-    ? path.join(reportsDir, "local-skill-store-data.js")
-    : "";
+  const runtimeDashboard = path.join(reportsDir, "local-skill-store-data.js");
   function rebuildSkillDashboard(label) {
-    return runtimeDashboard
-      ? runCommand(label, process.execPath, [
+    return runCommand(label, process.execPath, [
         "agent-workflow/tools/build-skill-store-dashboard.mjs",
         `--output=${runtimeDashboard}`,
-      ])
-      : runNpm(label, "build:skill-store-dashboard");
+      ]);
   }
   function checkSkillDashboard(label) {
     return runCommand(label, process.execPath, [
       "agent-workflow/tools/check-skill-ops.mjs",
-      ...(runtimeDashboard ? [`--dashboard=${runtimeDashboard}`] : []),
+      `--dashboard=${runtimeDashboard}`,
     ]);
   }
 

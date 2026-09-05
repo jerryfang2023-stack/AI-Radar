@@ -53,6 +53,15 @@ test("safe scheduled Skill repair builds and checks runtime without touching rel
   assert.equal(report.repair_attempts.length, 2);
   assert.ok(report.repair_attempts.every(attempt => attempt.ok));
   for (const file of releaseFiles) assert.equal(fs.readFileSync(path.join(fixture, file), "utf8"), "existing release content");
+  const localAppData = path.join(fixture, "local-app-data");
+  const manual = spawnSync(process.execPath, [path.join(targetTools, "run-daily-self-check.mjs"),
+    "--date=2026-08-31", "--repair=safe",
+  ], { cwd: fixture, encoding: "utf8", env: { ...process.env, LOCALAPPDATA: localAppData } });
+  assert.equal(manual.status, 0, manual.stdout + manual.stderr);
+  const manualReport = JSON.parse(fs.readFileSync(path.join(localAppData, "WaveSight", "runtime", "2026-08-31-daily-self-check.json"), "utf8"));
+  assert.equal(manualReport.status, "passed");
+  assert.equal(manualReport.repair_attempts.length, 2);
+  for (const file of releaseFiles) assert.equal(fs.readFileSync(path.join(fixture, file), "utf8"), "existing release content");
 });
 
 test("controller and supervision pass the runtime dashboard to the read-only gate", () => {
