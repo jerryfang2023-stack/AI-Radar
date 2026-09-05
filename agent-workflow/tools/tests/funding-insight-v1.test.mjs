@@ -354,15 +354,16 @@ test("funding research prompt enumerates every governed taxonomy list ID", () =>
   }
 });
 
-test("Articul8 preserves its disclosed valuation without reporting it as financing proceeds", () => {
+test("Articul8 valuation-only disclosure is withdrawn from funding, not from canonical evidence", () => {
   const bundle = JSON.parse(fs.readFileSync(path.join(root,
     "01-SiteV2/content/12-applications/funding-insights/2026-08-20.json"), "utf8"));
-  const card = bundle.cards.find((item) => item.funding_insight_id === "FI-168dcf41bf120176");
-  assert.equal(card.financing.amount, "未披露");
-  assert.deepEqual(card.financing.amount_normalized, normalizeFundingAmount("未披露"));
-  assert.ok(card.financing.disclosures.every((item) => item.amount === "未披露"));
-  assert.equal(card.funding_history.find((item) => item.event_id === "EV-a81c5dc2e9abff3a").amount, "未披露");
-  assert.ok(card.metrics.some((item) => item.label === "B轮投前估值" && item.value === "5亿美元"));
+  assert.ok(!bundle.cards.some((item) => item.funding_insight_id === "FI-168dcf41bf120176"));
+  const queue = bundle.queue.find((item) => item.event_id === "EV-a81c5dc2e9abff3a");
+  assert.equal(queue.status, "blocked");
+  assert.ok(queue.problems.some((item) => item.startsWith("valuation_is_not_round_proceeds")));
+  const events = JSON.parse(fs.readFileSync(path.join(root,
+    "01-SiteV2/content/11-databases/data-center-v4/2026-08-20/canonical-events.json"), "utf8"));
+  assert.ok(events.some((item) => item.event_id === "EV-a81c5dc2e9abff3a"));
 });
 
 test("funding generation skips event IDs already published in another date bundle", () => {
@@ -432,7 +433,7 @@ test("the withdrawn valuation-only card is absent from every funding projection"
   ]) {
     assert.doesNotMatch(
       fs.readFileSync(path.join(root, relativePath), "utf8"),
-      /EV-4a3fa2b57b7ce64a/u,
+      /EV-4a3fa2b57b7ce64a|EV-a81c5dc2e9abff3a/u,
       `${relativePath} must not retain the withdrawn valuation-only funding card`,
     );
   }

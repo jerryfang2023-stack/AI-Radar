@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { buildViewpoints } from "../../01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs";
+import { writeFrontstageData } from "../../01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs";
 
 const root = process.cwd();
 const frontstageFile = path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json");
@@ -17,14 +17,15 @@ function main() {
   }
 
   const previousCount = Array.isArray(frontstage.viewpoints) ? frontstage.viewpoints.length : 0;
-  frontstage.viewpoints = buildViewpoints(root, frontstage.entityProfiles);
-  fs.writeFileSync(frontstageFile, `${JSON.stringify(frontstage, null, 2)}\n`, "utf8");
+  // Viewpoint lists and person profiles/last-seen indexes are one publication.
+  // The caller materializes and gates the current V4 data lake first.
+  const { data } = writeFrontstageData(root);
 
   console.log(JSON.stringify({
     ok: true,
     output: path.relative(root, frontstageFile).replace(/\\/gu, "/"),
     previousCount,
-    viewpoints: frontstage.viewpoints.length,
+    viewpoints: data.viewpoints.length,
   }, null, 2));
 }
 

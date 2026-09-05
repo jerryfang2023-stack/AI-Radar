@@ -144,6 +144,8 @@ jobs:
           set -o pipefail
           node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-builders-data.log"
+          node agent-workflow/tools/backfill-first-line-viewpoints-history.mjs --translate=false
+          node 01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs
 
       - name: Run first-line viewpoints data gate
         id: builders-gate
@@ -164,6 +166,8 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
+          node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true --duckdb=skip
+          node agent-workflow/tools/assert-data-lake-v4.mjs --duckdb=skip
           node agent-workflow/tools/refresh-data-center-viewpoints-adapter.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-adapter.log"
 
@@ -213,7 +217,9 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-follow-builders-data-gate.md
             01-SiteV2/site/data/follow-builders-daily.json
             01-SiteV2/site/data/first-line-viewpoints-v4.json
+            01-SiteV2/site/data/first-line-viewpoints-history.json
             01-SiteV2/site/data/data-center-v4-frontstage.json
+            01-SiteV2/site/data/data-center-v4/
             01-SiteV2/content/11-databases/builder-blog-feed.json
             01-SiteV2/content/11-databases/builder-podcast-feed.json
 
@@ -239,7 +245,9 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-follow-builders-data-gate.md"
           stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
           stage_if_exists "01-SiteV2/site/data/first-line-viewpoints-v4.json"
+          stage_if_exists "01-SiteV2/site/data/first-line-viewpoints-history.json"
           stage_if_exists "01-SiteV2/site/data/data-center-v4-frontstage.json"
+          stage_if_exists "01-SiteV2/site/data/data-center-v4"
           stage_if_exists "01-SiteV2/content/11-databases/builder-blog-feed.json"
           stage_if_exists "01-SiteV2/content/11-databases/builder-podcast-feed.json"
 

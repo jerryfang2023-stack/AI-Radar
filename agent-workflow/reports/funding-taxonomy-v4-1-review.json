@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-03T03:26:05.629Z",
+    "generated_at": "2026-09-05T04:36:39.553Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 306,
-    "input_hash": "434341dd9781eaef",
+    "decision_count": 305,
+    "input_hash": "c8b5f311b31370a7",
     "override_count": 17,
     "needs_review_count": 8,
     "low_confidence_count": 15
@@ -5653,28 +5653,6 @@
       "rationale": "Ontora 通过 AI 代理持续访谈员工以映射实际工作流程，属于跨行业的业务流程发现与运营智能，不涉及物理世界执行，也不是面向 AI 构建者的基础设施，因此归入企业应用下的生产力/企业工作流。"
     },
     {
-      "event_id": "EV-a81c5dc2e9abff3a",
-      "market_category_id": "industry_applications",
-      "market_subcategory_id": "industrials",
-      "market_application_id": "",
-      "product_form_id": "enterprise_software_platform",
-      "use_case_ids": [
-        "productivity_enterprise_workflows",
-        "data_analysis",
-        "knowledge_search"
-      ],
-      "industry_ids": [
-        "manufacturing",
-        "energy_utilities"
-      ],
-      "target_user_ids": [
-        "business_user"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "证据明确指向工业领域专用生成式AI平台，连接SCADA、PLM、ERP等工业系统，围绕工业数据和合规工作流构建，属于行业应用而非通用基础设施。"
-    },
-    {
       "event_id": "EV-4af14568b1bdeb35",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "hardware_computing",
@@ -8176,45 +8154,6 @@
         }
       ],
       "customer_names": [],
-      "current_classification": {
-        "product_form_id": "enterprise_software_platform",
-        "market_category_id": "industry_applications"
-      }
-    },
-    {
-      "event_id": "EV-a81c5dc2e9abff3a",
-      "funding_insight_id": "FI-168dcf41bf120176",
-      "company_name": "Articul8 AI",
-      "company_full_name": "Articul8 AI",
-      "website": "articul8.ai",
-      "current_sector": "工业领域专用生成式AI平台",
-      "company_evidence_quotes": [
-        "Articul8 AI is the enterprise domain-specific generative AI platform for mission-critical and regulated industries."
-      ],
-      "products": [
-        {
-          "name": "Articul8 Platform",
-          "evidence_quotes": [
-            "Articul8 delivers a vertically integrated enterprise AI platform purpose-built for industrial data and mission-critical operations.",
-            "The company's platform combines Data Perception for multimodal data intelligence, AgentMesh for multi-AI agent reasoning and orchestration, and domain-specific GenAI models trained for industrial use cases."
-          ]
-        },
-        {
-          "name": "Data Perception",
-          "evidence_quotes": [
-            "Its Data Perception product connects directly to more than 25 enterprise and operational systems, including Supervisory Control and Data Acquisition (SCADA) systems, data historians, Product Lifecycle Management (PLM) platforms, Enterprise Resource Planning (ERP) systems, engineering drawings, sensor feeds, maintenance systems, and document repositories, creating a unified knowledge graph without requiring data movement."
-          ]
-        },
-        {
-          "name": "AgentMesh",
-          "evidence_quotes": [
-            "AgentMesh reasons at runtime across multiple AI agents that work collaboratively on engineering workflows, diagnose root causes, validate compliance, and answer operational questions, with every action explainable and auditable."
-          ]
-        }
-      ],
-      "customer_names": [
-        "Intel"
-      ],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "industry_applications"
