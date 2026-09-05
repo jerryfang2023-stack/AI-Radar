@@ -131,10 +131,14 @@ test("operations console renders the four V4 production stages instead of the V3
   assert.match(client, /const pct =/u);
   assert.match(client, /quality\.sourceQuality\?\.rows/u);
   const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "01-SiteV2/site/data/ops-console.json"), "utf8"));
-  assert.deepEqual(
-    data.quality?.sourceQuality?.rows?.map((item) => item.id),
-    ["aihot", "rss-feed", "keyword-search", "gdelt"],
-  );
+  // A provider with zero captured documents is legitimately absent on a day.
+  // Test stable channel ordering with fixtures, not a changing daily snapshot.
+  assert.ok(Array.isArray(data.quality?.sourceQuality?.rows));
+  assert.deepEqual(buildOpsSourceQuality({
+    rawDocuments: ["gdelt", "keyword-search", "rss-feed", "aihot"].map((id) => ({
+      intake_diagnostics: { acquisition_channel: id },
+    })),
+  }).rows.map((item) => item.id), ["aihot", "rss-feed", "keyword-search", "gdelt"]);
   const publishedIssues = [...(data.inbox?.open || []), ...(data.inbox?.resolved || [])];
   assert.equal(
     publishedIssues.some((item) => item.laneId === "business_signals" && item.state === "resolved" && item.date < "2026-07-29"),
