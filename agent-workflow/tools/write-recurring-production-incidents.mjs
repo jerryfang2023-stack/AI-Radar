@@ -97,14 +97,16 @@ export function collectRecurringIssues(root, endDate, days = 7, threshold = 2, r
     }));
 }
 
-export function writeRecurringIncidents(root, endDate, issues) {
-  const inboxDir = path.join(root, "agent-workflow", "inbox", "production-incidents");
+export function writeRecurringIncidents(root, endDate, issues, inboxDir = path.join(root, "agent-workflow", "inbox", "production-incidents")) {
   fs.mkdirSync(inboxDir, { recursive: true });
   const existingOpen = new Map();
   const resolvedCoverage = new Map();
-  for (const entry of fs.readdirSync(inboxDir, { withFileTypes: true })) {
+  const registryDir = path.join(root, "agent-workflow", "inbox", "production-incidents");
+  const entries = [...new Set([registryDir, inboxDir])].flatMap((dir) => fs.existsSync(dir)
+    ? fs.readdirSync(dir, { withFileTypes: true }).map((entry) => ({ entry, dir })) : []);
+  for (const { entry, dir } of entries) {
     if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
-    const file = path.join(inboxDir, entry.name);
+    const file = path.join(dir, entry.name);
     const text = fs.readFileSync(file, "utf8");
     const status = text.match(/^status:\s*(.+)$/imu)?.[1]?.trim();
     const fingerprint = text.match(/^fingerprint:\s*(.+)$/imu)?.[1]?.trim();
@@ -187,7 +189,8 @@ function main() {
   const days = Math.max(2, Number(args.get("days") || 7));
   const threshold = Math.max(2, Number(args.get("threshold") || 2));
   const issues = collectRecurringIssues(root, date, days, threshold, reportsDir);
-  const files = writeRecurringIncidents(root, date, issues);
+  const inboxDir = args.has("inbox-dir") ? path.resolve(root, args.get("inbox-dir")) : undefined;
+  const files = writeRecurringIncidents(root, date, issues, inboxDir);
   console.log(JSON.stringify({
     ok: true,
     date,

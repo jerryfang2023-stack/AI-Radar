@@ -430,8 +430,10 @@ export function buildBusinessSignalsLane() {
   const windowPassed = hasWindowPassed(date, "09:50");
 
   const dataCenterManifestFile = path.join(root, "01-SiteV2", "site", "data", "data-center-v4", "manifest.json");
-  const telemetryFile = path.join(root, "01-SiteV2", "site", "data", "collection-telemetry-v1.json");
-  const dataCenterGateFile = path.join(reportsDir, `${date}-data-center-v4-integrity-gate.json`);
+  const runtimeTelemetryFile = path.join(outputDir, `${date}-collection-telemetry-v1.json`);
+  const telemetryFile = exists(runtimeTelemetryFile) ? runtimeTelemetryFile : path.join(root, "01-SiteV2", "site", "data", "collection-telemetry-v1.json");
+  const runtimeGateFile = path.join(outputDir, `${date}-data-center-v4-integrity-gate.json`);
+  const dataCenterGateFile = exists(runtimeGateFile) ? runtimeGateFile : path.join(reportsDir, `${date}-data-center-v4-integrity-gate.json`);
   const manifestFile = path.join(reportsDir, `${date}-persistent-asset-manifest.json`);
   const qualityGateFile = path.join(reportsDir, `${date}-guanlan-monitor-quality-gate.md`);
   const readinessFile = path.join(reportsDir, `${date}-daily-production-chain-readiness.md`);

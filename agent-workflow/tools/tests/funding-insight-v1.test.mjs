@@ -1234,7 +1234,8 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   assert.match(workflow, /group: wavesight-funding-insights-\$\{\{ needs\.resolve-date\.outputs\.date \}\}/u);
   assert.match(workflow, /Wait for Funding Insights PR to reach main/u);
   assert.match(workflow, /gh workflow run github-pages\.yml --ref main -f source_sha=/u);
-  assert.match(workflow, /gh run watch "\$run_id" --exit-status/u);
+  assert.match(workflow, /wait-for-pages-deployment\.mjs --source-sha=/u);
+  assert.match(workflow, /awaiting_portal/u);
   assert.match(pagesWorkflow, /run-name: Deploy Frontstage to GitHub Pages \$\{\{ inputs\.source_sha \|\| github\.sha \}\}/u);
   assert.match(
     fullGate,

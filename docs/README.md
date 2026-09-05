@@ -7,6 +7,7 @@ This directory keeps only current operator and handoff documentation.
 - `docs/agent-handoff.md`: current project handoff.
 - `docs/obsidian-vault.md`: independent Vault structure, refresh, validation, and recovery.
 - `docs/operations-console.md`: unified operations, membership analytics, Skill ownership, and release checks.
+- `docs/daily-production-recovery.md`: checkpoint recovery, runtime isolation, and website/Mini Program publication acceptance.
 - `docs/brand/wavesight-ai-vi/`: current brand, typography, logo, SVG, and visual tokens.
 
 New tasks should start from `AGENTS.md`, then `context/context-index.md`, the current task dispatch, and only the directly relevant files or Skill.

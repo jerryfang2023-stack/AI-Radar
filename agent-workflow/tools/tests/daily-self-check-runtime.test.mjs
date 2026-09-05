@@ -14,7 +14,7 @@ test("safe scheduled Skill repair builds and checks runtime without touching rel
   const runtime = path.join(fixture, "runtime with spaces");
   fs.mkdirSync(path.join(targetTools, "lib"), { recursive: true });
   fs.mkdirSync(runtime);
-  for (const file of ["run-daily-self-check.mjs", "lib/daily-self-check-policy.mjs", "lib/report-command.mjs"]) {
+  for (const file of ["run-daily-self-check.mjs", "lib/daily-self-check-policy.mjs", "lib/report-command.mjs", "lib/logged-command.mjs"]) {
     fs.copyFileSync(path.join(toolsDir, file), path.join(targetTools, file));
   }
   const releaseFiles = ["agent-workflow/skills/skill-registry.md", "01-SiteV2/site/data/local-skill-store-data.js"];

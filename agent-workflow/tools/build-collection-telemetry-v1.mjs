@@ -21,6 +21,7 @@ const output = path.resolve(root, args.get("output") || "01-SiteV2/site/data/col
 const telemetry = buildCollectionTelemetry({
   root,
   date,
+  reportsDir: args.has("reports-dir") ? path.resolve(root, args.get("reports-dir")) : undefined,
   outcomes: {
     opportunity: args.get("opportunity"),
     trend: args.get("trend"),

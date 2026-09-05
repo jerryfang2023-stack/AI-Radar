@@ -92,6 +92,13 @@ function acceptedReviewDecisions(reviewDecisions = {}) {
   return rows.filter((decision) => decision?.review_status === "accepted" && clean(decision.reviewer));
 }
 
+export function publicCatalogEntityIds(reviewDecisions = {}) {
+  return new Set(acceptedReviewDecisions(reviewDecisions)
+    .filter((decision) => ["confirm", "correct"].includes(decision.action))
+    .filter((decision) => ["company", "product"].includes(decision.canonical?.catalog_type))
+    .map((decision) => decision.entity_id));
+}
+
 export function mergeEntityReviewDecisionSets(...reviewDecisionSets) {
   const merged = new Map();
   for (const reviewDecisions of reviewDecisionSets) {
@@ -103,7 +110,7 @@ export function mergeEntityReviewDecisionSets(...reviewDecisionSets) {
   return { decisions: [...merged.values()] };
 }
 
-function applyEntityReviewDecisions(entityRows, events, reviewDecisions) {
+export function applyEntityReviewDecisions(entityRows, events, reviewDecisions) {
   const decisions = acceptedReviewDecisions(reviewDecisions);
   if (!decisions.length) {
     return {

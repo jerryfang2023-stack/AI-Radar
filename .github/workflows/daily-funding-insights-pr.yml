@@ -384,30 +384,8 @@ jobs:
         run: |
           set -euo pipefail
           main_sha="${{ steps.merged.outputs.main_sha }}"
-          run_title="Deploy Frontstage to GitHub Pages ${main_sha}"
           gh workflow run github-pages.yml --ref main -f source_sha="$main_sha"
-          run_id=""
-          for attempt in $(seq 1 20); do
-            run_id="$(gh run list \
-              --workflow github-pages.yml \
-              --event workflow_dispatch \
-              --limit 20 \
-              --json databaseId,displayTitle \
-              --jq ".[] | select(.displayTitle == \"${run_title}\") | .databaseId" \
-              | head -n 1)"
-            if [ -n "$run_id" ]; then
-              break
-            fi
-            echo "Waiting for explicit GitHub Pages run (${attempt}/20)"
-            sleep 5
-          done
-          if [ -z "$run_id" ]; then
-            echo "Unable to resolve the dispatched GitHub Pages run." >&2
-            exit 1
-          fi
-          gh run watch "$run_id" --exit-status --interval 10
-          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
-          echo "status=deployed" >> "$GITHUB_OUTPUT"
+          node agent-workflow/tools/wait-for-pages-deployment.mjs --source-sha="$main_sha"
 
       - name: Funding Insights result
         if: always()
@@ -442,4 +420,4 @@ jobs:
             echo "Funding Insights GitHub Pages deployment did not pass." >&2
             exit 1
           fi
-          echo "Funding Insights downstream publication completed for ${RUN_DATE}; the external Guanlan Vault refreshes after local main sync."
+          echo "Funding Insights internal projection completed for ${RUN_DATE}; awaiting_portal: Final Closure must publish and verify VPS and Mini Program data, then refresh the external Guanlan Vault."

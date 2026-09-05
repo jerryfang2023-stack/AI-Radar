@@ -5,6 +5,10 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import test from "node:test";
 import { resolveAutomationNetworkEnv } from "../lib/automation-network-env.mjs";
+import { runLoggedCommand, CODEX_REPAIR_TIMEOUT_MS, CODEX_REPAIR_HANDOFF_TIMEOUT_MS } from "../lib/logged-command.mjs";
+import { refreshRepairWorktree } from "../lib/repair-worktree.mjs";
+import { successfulPagesDeployment } from "../wait-for-pages-deployment.mjs";
+import { writeRecurringIncidents } from "../write-recurring-production-incidents.mjs";
 import {
   controllerRecoveryOwnershipReason,
   inspectControllerReportLiveness,
@@ -12,6 +16,107 @@ import {
 
 const root = process.cwd();
 const read = (name) => fs.readFileSync(path.join(root, "agent-workflow", "tools", name), "utf8");
+
+test("agent output above the default pipe limit is retained without ENOBUFS", () => {
+  const logDir = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-command-log-"));
+  try {
+    const result = runLoggedCommand(process.execPath, ["-e", `
+      const fs = require('node:fs');
+      fs.writeSync(1, 'x'.repeat(2 * 1024 * 1024) + 'stdout-end');
+      fs.writeSync(2, 'y'.repeat(2 * 1024 * 1024) + 'stderr-end');
+      fs.writeSync(1, fs.readFileSync(0, 'utf8'));
+    `], { logDir, input: "-input", timeout: 10000, maxOutputBytes: 1024 });
+    assert.equal(result.error, undefined);
+    assert.equal(result.status, 0);
+    assert.equal(result.stdout.length, 1024);
+    assert.match(result.stdout, /stdout-end-input$/u);
+    assert.match(result.stderr, /stderr-end$/u);
+    assert.ok(fs.statSync(result.stdout_log).size > 2 * 1024 * 1024);
+    const failed = runLoggedCommand(process.execPath, ["-e", "process.exit(7)"], { logDir, timeout: 10000 });
+    assert.equal(failed.status, 7);
+    const timedOut = runLoggedCommand(process.execPath, ["-e", "setInterval(() => {}, 1000)"], { logDir, timeout: 200 });
+    assert.equal(timedOut.error?.code, "ETIMEDOUT");
+    assert.equal(timedOut.status, null);
+  } finally {
+    fs.rmSync(logDir, { recursive: true, force: true });
+  }
+});
+
+test("the handoff budget outlives the Codex budget and report finalization", () => {
+  assert.ok(CODEX_REPAIR_HANDOFF_TIMEOUT_MS >= CODEX_REPAIR_TIMEOUT_MS + 180000);
+  assert.match(read("run-daily-automation-controller.mjs"), /\], CODEX_REPAIR_HANDOFF_TIMEOUT_MS\)/u);
+});
+
+test("Pages supersession requires a successful deployment of the target or its descendant", async () => {
+  const source = "a".repeat(40);
+  const descendant = "b".repeat(40);
+  const old = "c".repeat(40);
+  const run = (sha, conclusion = "success", databaseId = 1) => ({
+    headBranch: "main", event: "workflow_dispatch", status: "completed", conclusion, databaseId,
+    displayTitle: `Deploy Frontstage to GitHub Pages ${sha}`, headSha: descendant,
+  });
+  const ancestry = async (base, head) => base === source && head === descendant;
+  assert.equal(await successfulPagesDeployment([run(source, "cancelled"), run(old)], source, ancestry), null);
+  assert.equal((await successfulPagesDeployment([run(source, "cancelled"), run(descendant, "success", 2)], source, ancestry)).databaseId, 2);
+  assert.equal((await successfulPagesDeployment([run(source)], source, ancestry)).deployedSha, source);
+  assert.equal(await successfulPagesDeployment([{ ...run(source), headBranch: "unmerged" }], source, ancestry), null);
+});
+
+test("final-closure incident drafts do not dirty the canonical repository", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-incident-runtime-"));
+  const repo = path.join(fixture, "repo");
+  const inbox = path.join(fixture, "runtime", "production-incidents");
+  fs.mkdirSync(repo);
+  try {
+    const issues = [{ lane: "business_signals", kind: "problem", fingerprint: "abc123",
+      count: 2, dates: ["2026-09-04", "2026-09-05"], report_paths: ["runtime://daily-supervision/2026-09-05"], message: "fixture failure" }];
+    const result = writeRecurringIncidents(repo, "2026-09-05", issues, inbox);
+    assert.equal(result.created.length, 1);
+    assert.deepEqual(fs.readdirSync(repo), []);
+    assert.equal(writeRecurringIncidents(repo, "2026-09-05", issues, inbox).existing.length, 1);
+  } finally {
+    fs.rmSync(fixture, { recursive: true, force: true });
+  }
+});
+
+test("clean stale repair worktrees fast-forward, while unique and dirty work are preserved", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-repair-base-"));
+  const repo = path.join(fixture, "repo");
+  const repair = path.join(fixture, "repair");
+  const remote = path.join(fixture, "remote.git");
+  fs.mkdirSync(repo);
+  const git = (cwd, args) => {
+    const result = spawnSync("git", args, { cwd, encoding: "utf8" });
+    assert.equal(result.status, 0, result.stderr);
+    return result.stdout.trim();
+  };
+  try {
+    git(repo, ["init", "-b", "main"]);
+    git(repo, ["config", "user.name", "Fixture"]);
+    git(repo, ["config", "user.email", "fixture@example.invalid"]);
+    git(repo, ["commit", "--allow-empty", "-m", "base"]);
+    git(fixture, ["clone", "--bare", repo, remote]);
+    git(repo, ["remote", "add", "origin", remote]);
+    git(repo, ["worktree", "add", "-b", "repair", repair]);
+    git(repo, ["commit", "--allow-empty", "-m", "new main"]);
+    git(repo, ["push", "origin", "main"]);
+    const refreshed = refreshRepairWorktree(repo, repair, "repair");
+    assert.equal(refreshed.ok, true, refreshed.reason);
+    assert.equal(refreshed.base_sha, git(repo, ["rev-parse", "HEAD"]));
+    fs.writeFileSync(path.join(repair, "user-note.txt"), "preserve");
+    assert.equal(refreshRepairWorktree(repo, repair, "repair").ok, false);
+    assert.equal(fs.readFileSync(path.join(repair, "user-note.txt"), "utf8"), "preserve");
+    git(repair, ["add", "user-note.txt"]);
+    git(repair, ["commit", "-m", "unique work"]);
+    const unique = git(repair, ["rev-parse", "HEAD"]);
+    assert.equal(refreshRepairWorktree(repo, repair, "repair").ok, false);
+    assert.equal(git(repair, ["rev-parse", "HEAD"]), unique);
+    assert.equal(refreshRepairWorktree(repo, repo, "main").ok, false);
+    assert.equal(refreshRepairWorktree(repo, repair, "wrong-branch").ok, false);
+  } finally {
+    fs.rmSync(fixture, { recursive: true, force: true });
+  }
+});
 
 test("scheduled controllers keep runtime reports outside the repository", () => {
   const installer = read("install-daily-automation-controller-tasks.ps1");

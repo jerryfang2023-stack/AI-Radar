@@ -119,7 +119,7 @@ Rules:
 ### Funding Insights publication
 
 - **A funding card is not complete when it only exists in the repository.** Every accepted funding-card generation must also build and publish the Funding Insights frontstage to the public financing site (`https://www.zkdlj.vip/`), then verify the deployed endpoint returns HTTP 200 and its `latest_date` matches the card run date.
-- The completion chain is: funding-card gate -> `build:funding-insights-site` -> commit/merge to `main` -> GitHub Pages deployment -> live financing-page/data check. A local JSON artifact, merged PR, or successful generator alone is not a published funding update.
+- The completion chain is: funding-card gate -> atomic application projections -> commit/merge to `main` -> internal GitHub Pages deployment -> independent Funding Portal atomic VPS release -> live website and Mini Program data parity check. Pages success alone is `awaiting_portal`, not public-product completion. A superseding Pages run must successfully deploy the required commit or a verified descendant.
 - If site publication or live verification fails, report the funding task as incomplete and resume from the failed publication stage; do not recollect accepted raw data.
 
 ### Historical V3 Recovery

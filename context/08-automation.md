@@ -263,6 +263,22 @@ Scheduled Codex repair uses `--ask-for-approval never` as a global CLI option
 before the `exec` subcommand. Keep that ordering covered by the Windows runtime
 tests; placing the flag after `exec` makes the handoff fail before repair starts.
 
+Controller child output is streamed to per-command files under the external
+runtime directory, with bounded tails in JSON reports. The controller handoff
+budget must exceed the 30-minute Codex budget and report finalization. Reused
+repair worktrees must be clean, on the expected branch, and fast-forwardable to
+fresh `origin/main`; unique commits or dirty work are preserved, never reset.
+Runtime self-check telemetry consumes the same runtime gate it repaired and
+does not rewrite the tracked public snapshot. Recurring incident drafts also
+stay under runtime until reviewed for the canonical incident registry.
+
+Public entity coverage uses the same accepted, attributed catalog decisions
+and merge resolution as the frontstage builder. Pending catalog review is a
+counted warning, not automatic approval or a missing-publication error. Missing
+approved entities, unresolved event/mention references and absent evidence
+remain hard failures. `docs/daily-production-recovery.md` owns the recovery
+procedure and the separate website/Mini Program completion checks.
+
 First-Line Viewpoints recovery is date-strict. The 09:15 controller may treat
 the morning RSS lane as healthy only when `follow-builders-daily.json` was
 generated on the requested Asia/Shanghai date; a prior-day

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { runLoggedCommand, CODEX_REPAIR_TIMEOUT_MS } from "./lib/logged-command.mjs";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
+import { refreshRepairWorktree } from "./lib/repair-worktree.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -103,7 +104,9 @@ function enforceRepairWorktree(argsList, repairPath) {
 
 function runCommand(label, command, argsList, options = {}) {
   const startedAt = new Date().toISOString();
-  const result = spawnSync(command, argsList, {
+  const result = runLoggedCommand(command, argsList, {
+    logDir: path.join(reportsDir, "command-logs"),
+    label,
     cwd: root,
     encoding: "utf8",
     input: options.input || undefined,
@@ -116,8 +119,10 @@ function runCommand(label, command, argsList, options = {}) {
     ok: !result.error && result.status === 0,
     status: result.status,
     error: result.error?.message || "",
-    stdout: String(result.stdout || "").trim().slice(0, 12000),
-    stderr: String(result.stderr || "").trim().slice(0, 12000),
+    stdout: String(result.stdout || "").trim().slice(-12000),
+    stderr: String(result.stderr || "").trim().slice(-12000),
+    stdout_log: result.stdout_log,
+    stderr_log: result.stderr_log,
     started_at: startedAt,
     finished_at: new Date().toISOString(),
   };
@@ -157,11 +162,7 @@ function prepareRepairWorktree() {
   );
   const branch = `automation/codex-self-repair-${date}`;
   if (fs.existsSync(path.join(repairRoot, ".git"))) {
-    const status = runCommand("inspect repair worktree", "git", ["-C", repairRoot, "status", "--porcelain"], { timeoutMs: 30000 });
-    if (!status.ok || status.stdout) {
-      return { ok: false, path: repairRoot, branch, command: status, reason: status.stdout ? "Existing repair worktree is dirty." : "Could not inspect repair worktree." };
-    }
-    return { ok: true, path: repairRoot, branch, command: status };
+    return refreshRepairWorktree(root, repairRoot, branch);
   }
   fs.mkdirSync(path.dirname(repairRoot), { recursive: true });
   const fetch = runCommand("fetch repair base", "git", ["fetch", "origin", "main"], { timeoutMs: 120000 });
@@ -171,7 +172,8 @@ function prepareRepairWorktree() {
     ? ["worktree", "add", repairRoot, branch]
     : ["worktree", "add", "-b", branch, repairRoot, "origin/main"];
   const created = runCommand("create isolated repair worktree", "git", worktreeArgs, { timeoutMs: 120000 });
-  return { ok: created.ok, path: repairRoot, branch, command: created, reason: created.ok ? "" : "Could not create isolated repair worktree." };
+  if (!created.ok) return { ok: false, path: repairRoot, branch, command: created, reason: "Could not create isolated repair worktree." };
+  return refreshRepairWorktree(root, repairRoot, branch);
 }
 
 function selectedTasks(selfCheckReport) {
@@ -208,6 +210,7 @@ function buildPrompt(selfCheckReport, tasks, promptPath) {
     "1. Read `AGENTS.md` first.",
     "2. Read the current task context in `context/08-automation.md` and the linked report files.",
     `3. Read \`${dailySelfCheckMd}\` and \`${dailySupervisionMd}\`.`,
+    `Recurring incident drafts are in \`${path.join(reportsDir, "production-incidents")}\`; preserve them and promote resolved records through an isolated reviewed commit.`,
     "4. Work only on the task(s) below unless a directly required dependency blocks them.",
     "",
     "Hard boundaries:",
@@ -322,7 +325,7 @@ function main() {
       const codexArgs = enforceRepairWorktree(parseArgList(args.get("codex-args") || defaultCodexArgs), repairWorktree.path);
       codexInvocation = runCommand("codex self repair", codexCommand, codexArgs, {
         input: prompt,
-        timeoutMs: Number.parseInt(args.get("codex-timeout-ms") || "1800000", 10),
+        timeoutMs: Number.parseInt(args.get("codex-timeout-ms") || String(CODEX_REPAIR_TIMEOUT_MS), 10),
       });
       status = codexInvocation.ok ? "invoked" : "invoke_failed";
       if (!codexInvocation.ok) blockReason = codexInvocation.stderr || codexInvocation.error || "Codex command failed.";

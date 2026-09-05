@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { runLoggedCommand } from "./lib/logged-command.mjs";
 import { shouldRebuildSkillStore, shouldSyncSkillStore } from "./lib/daily-self-check-policy.mjs";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
 
@@ -49,7 +49,9 @@ function exists(file) {
 
 function runCommand(label, command, argsList, timeoutMs = 120000) {
   const startedAt = new Date().toISOString();
-  const result = spawnSync(command, argsList, {
+  const result = runLoggedCommand(command, argsList, {
+    logDir: path.join(reportsDir, "command-logs"),
+    label,
     cwd: root,
     encoding: "utf8",
     timeout: timeoutMs,
@@ -61,8 +63,10 @@ function runCommand(label, command, argsList, timeoutMs = 120000) {
     ok: !result.error && result.status === 0,
     status: result.status,
     error: result.error?.message || "",
-    stdout: String(result.stdout || "").trim().slice(0, 8000),
-    stderr: String(result.stderr || "").trim().slice(0, 8000),
+    stdout: String(result.stdout || "").trim().slice(-8000),
+    stderr: String(result.stderr || "").trim().slice(-8000),
+    stdout_log: result.stdout_log,
+    stderr_log: result.stderr_log,
     started_at: startedAt,
     finished_at: new Date().toISOString(),
   };
@@ -196,7 +200,11 @@ function runSafeRepairs(report) {
         `--date=${date}`,
         `--reports-dir=${reportsDir}`,
       ], 120000));
-      attempts.push(runNpm("rebuild collection telemetry", "build:collection-telemetry", [`--date=${date}`], 120000));
+      attempts.push(runNpm("rebuild collection telemetry", "build:collection-telemetry", [
+        `--date=${date}`,
+        `--reports-dir=${reportsDir}`,
+        `--output=${path.join(reportsDir, `${date}-collection-telemetry-v1.json`)}`,
+      ], 120000));
     }
   }
 

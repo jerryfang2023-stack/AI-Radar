@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { runLoggedCommand, CODEX_REPAIR_TIMEOUT_MS, CODEX_REPAIR_HANDOFF_TIMEOUT_MS } from "./lib/logged-command.mjs";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
 import { resolveAutomationNetworkEnv } from "./lib/automation-network-env.mjs";
 import {
@@ -93,7 +93,9 @@ function readControllerReport(currentPhase) {
 
 function run(label, command, commandArgs, timeoutMs = 180_000) {
   const startedAt = new Date().toISOString();
-  const result = spawnSync(command, commandArgs, {
+  const result = runLoggedCommand(command, commandArgs, {
+    logDir: path.join(reportsDir, "command-logs"),
+    label,
     cwd: root,
     encoding: "utf8",
     timeout: timeoutMs,
@@ -109,6 +111,8 @@ function run(label, command, commandArgs, timeoutMs = 180_000) {
     command: formatRecordedCommand(command, commandArgs),
     stdout: String(result.stdout || "").trim(),
     stderr: String(result.stderr || result.error?.message || "").trim(),
+    stdout_log: result.stdout_log,
+    stderr_log: result.stderr_log,
   };
 }
 
@@ -271,7 +275,8 @@ function closure() {
     `--codex-command=${codexCommand}`,
     `--runtime-dir=${reportsDir}`,
     "--reuse-self-check=true",
-  ], 900_000);
+    `--codex-timeout-ms=${CODEX_REPAIR_TIMEOUT_MS}`,
+  ], CODEX_REPAIR_HANDOFF_TIMEOUT_MS);
   const selfCheckPayload = (() => {
     try {
       return JSON.parse(fs.readFileSync(path.join(reportsDir, `${date}-daily-self-check.json`), "utf8"));
@@ -333,7 +338,7 @@ function finalClosure() {
     "agent-workflow/tools/write-daily-supervision-report.mjs",
     `--date=${date}`,
     "--hermes=off",
-    "--force-afternoon-window=true",
+    ...(args.get("force-afternoon-window") === "true" ? ["--force-afternoon-window=true"] : []),
     `--output-dir=${reportsDir}`,
     ...(dryRun ? ["--github=false", "--scheduled-task=false"] : []),
   ], 300_000);
@@ -348,6 +353,7 @@ function finalClosure() {
     "--days=7",
     "--threshold=2",
     `--reports-dir=${reportsDir}`,
+    `--inbox-dir=${path.join(reportsDir, "production-incidents")}`,
   ]);
   const supervisionPayload = (() => {
     try {
@@ -375,7 +381,7 @@ function finalClosure() {
     lanes: supervisionPayload?.lanes || [],
     actions: [dataLake, dataLakeGate, vaultSync, fundingPortal, discoveryRefresh, supervisionAction, evidenceSupply, recurringIncidents],
     notes: [
-      "This is the final closure after the 16:10 First-Line Viewpoints window.",
+      "Scheduled final closure follows the 16:10 First-Line Viewpoints window; manual runs respect the current time unless explicitly forced.",
       "The local V4 JSONL and DuckDB serving layer is rebuilt here; no independent data-lake task is supported.",
       "Accepted Funding Insights changes are validated, committed to the independent portal repository, and atomically deployed to the VPS here.",
       "Lane findings remain isolated; the report records them without suppressing other lane results.",
