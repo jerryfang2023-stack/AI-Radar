@@ -145,7 +145,7 @@ async function main() {
       metadataWritable,
       sourceTitle,
       sourceTitleRepaired: /(?:\.\.\.|…)$/.test(storedSourceTitle) && sourceTitle !== storedSourceTitle,
-      sourceUrl: payload.original_url || payload.canonical_url || payload.source_url || "",
+      sourceUrl: context.raw.canonical_url || context.raw.source_url || "",
     });
   }
 
