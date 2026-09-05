@@ -18,6 +18,11 @@ const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
 
+test("daily recovery revalidates and reuses existing model decisions", () => {
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+  assert.match(workflow, /generate-data-center-model-assist\.mjs[^]*?--reuse-existing=true/u);
+});
+
 test("catalog coverage shares public admission and never auto-approves pending entities", () => {
   const entity = { entity_id: "EN-1", canonical_name: "Alta", entity_type: "organization_candidate", verification_status: "verified" };
   const bundle = { entities: [entity], entity_mentions: [{ entity_id: "EN-1" }], canonical_events: [{ event_id: "EV-1", publication_status: "verified", entities: ["EN-1"] }] };

@@ -1,9 +1,23 @@
 import assert from "node:assert/strict";
+import test from "node:test";
+import { sourceTitleLocator, sourceTitleMetadataMatches } from "../lib/source-title-locator.mjs";
+
+test("title provenance selects the dated exact title, not the first identical body", () => {
+  const raw = { content_hash: "same-body", title_original: "OpenAI announces rollout of GPT-6 Astra model", title_zh: "OpenAI 宣布推出 GPT-6 Astra 模型", canonical_url: "https://www.cnbc.com/article" };
+  const current = { ...raw, source_url: "https://cnbc.com/article", data_date: "2026-09-05", title_translation_method: "deepseek_title_translation", title_translation_model: "deepseek-v4-flash" };
+  const previous = { ...current, data_date: "2026-09-04", title_original: "OpenAI 开始推出 GPT-6 Astra", title_zh: "OpenAI 开始推出 GPT-6 Astra", title_translation_method: "source_title" };
+  assert.equal(sourceTitleLocator(raw, [previous, current], "2026-09-05"), current);
+  assert.deepEqual(sourceTitleLocator(raw, [previous], "2026-09-05"), {});
+  assert.deepEqual(sourceTitleLocator(raw, [{ ...current, source_url: "https://example.com/article" }], "2026-09-05"), {});
+  assert.equal(sourceTitleMetadataMatches(raw, "2026-09-05", current, { title: raw.title_original }), true);
+  assert.equal(sourceTitleMetadataMatches(raw, "2026-09-05", previous, { title: raw.title_original }), false);
+  assert.equal(sourceTitleMetadataMatches(raw, "2026-09-05", { ...current, source_url: "https://example.com/article" }, { title: raw.title_original }), false);
+  assert.equal(sourceTitleMetadataMatches(raw, "2026-09-05", current, { title: "Unrelated headline" }), false);
+});
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import test from "node:test";
 import {
   applyIntakeTitleMetadata,
   buildSourceIntake,
@@ -507,6 +521,8 @@ test("source-title backfill updates private metadata while public intake and ind
       raw_id: "RAW-1",
       source_artifact_id: "SA-1",
       title_original: truncated,
+      content_hash: hash,
+      canonical_url: "https://wonderful.ai/news",
       body_ref: `evidence://${hash}`,
     }]);
     writeJson(path.join(dateRoot, "source-artifacts.json"), [{
@@ -549,6 +565,18 @@ test("source-title backfill updates private metadata while public intake and ind
     const repairedPrivate = JSON.parse(fs.readFileSync(path.join(privateRoot, recordRef), "utf8"));
     assert.equal(repairedPrivate.title, complete);
     assert.equal(repairedPrivate.title_zh, translated);
+    const catalogFile = path.join(privateRoot, "catalog.jsonl");
+    const previousDateEntry = JSON.parse(fs.readFileSync(catalogFile, "utf8"));
+    previousDateEntry.data_date = "2026-09-03";
+    fs.writeFileSync(catalogFile, `${JSON.stringify(previousDateEntry)}\n`);
+    writeJson(path.join(dateRoot, "raw-documents.json"), [{ raw_id: "RAW-1", source_artifact_id: "SA-1", title_original: complete, content_hash: hash, canonical_url: "https://wonderful.ai/news", body_ref: `evidence://${hash}` }]);
+    writeJson(path.join(dateRoot, "canonical-events.json"), [{ source_refs: ["SA-1"] }]);
+    const privateBefore = fs.readFileSync(path.join(privateRoot, recordRef));
+    execFileSync(process.execPath, [path.join(projectRoot, "agent-workflow/tools/backfill-source-title-translations.mjs"), `--date=${date}`, "--write=true"], {
+      cwd: tempRoot, env: { ...process.env, GUANLAN_EVIDENCE_BACKUP_ROOT: privateRoot }, encoding: "utf8", timeout: 10000,
+    });
+    assert.deepEqual(fs.readFileSync(path.join(privateRoot, recordRef)), privateBefore);
+    assert.equal(JSON.parse(fs.readFileSync(path.join(tempRoot, "agent-workflow/reports/source-title-translation-backfill-write.json"), "utf8")).metadata_identity_skipped, 1);
   } finally {
     fs.rmSync(tempRoot, { recursive: true, force: true });
     fs.rmSync(privateRoot, { recursive: true, force: true });

@@ -10,6 +10,7 @@ import {
   titleTranslationKey,
 } from "./source-title-translation-generator.mjs";
 import { buildEventDisplayTitle } from "./event-public-title.mjs";
+import { sourceTitleLocator } from "./lib/source-title-locator.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
@@ -22,6 +23,7 @@ function readJson(file) {
 }
 
 const rawById = new Map();
+const rawDateById = new Map();
 const rawBySourceArtifact = new Map();
 const locatorsByContentHash = new Map();
 const eventTargetRawIds = new Set();
@@ -44,6 +46,7 @@ for (const date of dates) {
   const dateRawByArtifact = new Map();
   for (const raw of raws) {
     rawById.set(raw.raw_id, raw);
+    rawDateById.set(raw.raw_id, date);
     rawBySourceArtifact.set(raw.source_artifact_id, raw.raw_id);
     dateRawByArtifact.set(raw.source_artifact_id, raw);
   }
@@ -69,11 +72,8 @@ for (const rawId of targetRawIds) {
   }
   const original = String(raw.title || raw.title_original || "").trim();
   const chinese = String(raw.title_zh || "").trim();
-  const rawUrl = String(raw.canonical_url || raw.source_url || "").replace(/\/+$/u, "");
   const locatorCandidates = locatorsByContentHash.get(String(raw.content_hash || "").toLowerCase()) || [];
-  const locator = locatorCandidates.find((entry) => (
-    String(entry.source_url || "").replace(/\/+$/u, "") === rawUrl
-  )) || locatorCandidates.find((entry) => entry.title_translation_method) || locatorCandidates[0] || {};
+  const locator = sourceTitleLocator(raw, locatorCandidates, rawDateById.get(rawId));
   const method = String(raw.title_translation_method || locator.title_translation_method || "").trim();
   const translationLooksUsable = approvedTranslations.has(titleTranslationKey(original))
     ? titleTranslationLooksUsable(original, chinese)

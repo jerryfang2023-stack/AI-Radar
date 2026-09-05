@@ -19,6 +19,10 @@ despite a failed outcome.
 4. Source-title fixes use approved DeepSeek metadata as read-time overlays.
    Do not rewrite accepted source intake/index files or discard translation
    provenance. A private title can expand only the exact accepted prefix.
+   A reused content hash is not title identity: bind provenance to the source
+   URL, exact original title and capture date, and select private metadata with
+   the same date/URL. Model generation revalidates existing candidate decisions
+   with `--reuse-existing=true` instead of replacing successful work on retries.
 
 ## Preserve operational state
 
