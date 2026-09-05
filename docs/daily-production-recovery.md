@@ -62,6 +62,13 @@ the VPS release, and reads back the website and Mini Program contract. Compare
 the source commit, latest data date and card/report counts. A Mini Program data
 update is distinct from a new WeChat client binary release.
 
+Funding amounts require proceeds-specific evidence, not merely a number in a
+valid quoted source. Chinese post-amount financing and valuation-rise wording
+must remain covered by regressions. A valuation may remain a labelled metric,
+but cannot populate financing amount, disclosure amount or funding history.
+If a completed investment announcement does not disclose proceeds, retain the
+event and mark the application amount undisclosed; do not substitute valuation.
+
 Vault refresh uses an isolated `origin/main` worktree. Resolve broken manual-note
 links at the referenced file and archive retired duplicate repository copies
 outside the wiki. Do not weaken the Vault boundary gate to tolerate old roots.

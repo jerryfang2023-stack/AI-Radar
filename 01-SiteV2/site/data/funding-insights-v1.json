@@ -14738,7 +14738,7 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-ffd2c01a3352f704",
+      "funding_insight_id": "FI-f3cebcdc9c32153f",
       "triggered_by_event_id": "EV-a81c5dc2e9abff3a",
       "as_of_date": "2026-08-20",
       "company": {
@@ -14781,7 +14781,7 @@
       },
       "financing": {
         "round": "B轮",
-        "amount": "$500 million",
+        "amount": "未披露",
         "total_raised": "",
         "announced_at": "2026-06-16",
         "investor_disclosure_status": "not_disclosed",
@@ -14874,15 +14874,15 @@
         ],
         "round_code": "series_b",
         "round_original": "B轮",
-        "amount_original": "$500 million",
+        "amount_original": "未披露",
         "amount_normalized": {
-          "currency": "USD",
-          "value": 500000000,
+          "currency": "",
+          "value": null,
           "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "5 亿美元"
+          "status": "unparsed",
+          "display_zh": "未披露"
         },
         "total_raised_original": "",
         "total_raised_normalized": {
@@ -14901,7 +14901,7 @@
           {
             "event_id": "EV-a81c5dc2e9abff3a",
             "round_original": "B轮",
-            "amount": "$500 million",
+            "amount": "未披露",
             "announced_at": "2026-06-16",
             "evidence_refs": [
               {
@@ -14932,18 +14932,7 @@
             "display_zh": ""
           },
           "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": 500000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 1,
-              "status": "exact",
-              "display_zh": "5 亿美元"
-            }
-          ],
+          "known_round_totals": [],
           "historical_round_count": 1
         }
       },
@@ -15271,7 +15260,7 @@
           "event_id": "EV-a81c5dc2e9abff3a",
           "date": "2026-06-16",
           "title": "Articul8 AI 获得全球工业软件领导者的战略投资，完成B轮融资",
-          "amount": "$500 million",
+          "amount": "未披露",
           "source_refs": [
             "SA-93528b3fa58bc383"
           ]
@@ -15364,28 +15353,28 @@
         "EV-a81c5dc2e9abff3a"
       ],
       "aggregation": {
-        "key": "EN-5e0971a2294ea3f7|series_b|USD:exact:500000000:::|2026-06-16",
+        "key": "EN-5e0971a2294ea3f7|series_b|:unparsed::::未披露|2026-06-16",
         "event_count": 1,
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-ffd2c01a3352f704",
+          "funding_insight_id": "FI-f3cebcdc9c32153f",
           "event_ids": [
             "EV-a81c5dc2e9abff3a"
           ],
           "round": "B轮",
           "round_code": "series_b",
           "round_original": "B轮",
-          "amount_original": "$500 million",
+          "amount_original": "未披露",
           "amount_normalized": {
-            "currency": "USD",
-            "value": 500000000,
+            "currency": "",
+            "value": null,
             "min_value": null,
             "max_value": null,
             "unit": "base",
-            "status": "exact",
-            "display_zh": "5 亿美元"
+            "status": "unparsed",
+            "display_zh": "未披露"
           },
           "announced_at": "2026-06-16",
           "disclosure_status": "partially_disclosed",

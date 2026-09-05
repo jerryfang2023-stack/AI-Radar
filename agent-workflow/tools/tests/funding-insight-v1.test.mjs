@@ -354,6 +354,17 @@ test("funding research prompt enumerates every governed taxonomy list ID", () =>
   }
 });
 
+test("Articul8 preserves its disclosed valuation without reporting it as financing proceeds", () => {
+  const bundle = JSON.parse(fs.readFileSync(path.join(root,
+    "01-SiteV2/content/12-applications/funding-insights/2026-08-20.json"), "utf8"));
+  const card = bundle.cards.find((item) => item.funding_insight_id === "FI-168dcf41bf120176");
+  assert.equal(card.financing.amount, "未披露");
+  assert.deepEqual(card.financing.amount_normalized, normalizeFundingAmount("未披露"));
+  assert.ok(card.financing.disclosures.every((item) => item.amount === "未披露"));
+  assert.equal(card.funding_history.find((item) => item.event_id === "EV-a81c5dc2e9abff3a").amount, "未披露");
+  assert.ok(card.metrics.some((item) => item.label === "B轮投前估值" && item.value === "5亿美元"));
+});
+
 test("funding generation skips event IDs already published in another date bundle", () => {
   const selection = selectFundingEventsForGeneration([
     { event_id: "EV-NEW" },
