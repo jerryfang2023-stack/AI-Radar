@@ -37,6 +37,10 @@ test("catalog coverage shares public admission and never auto-approves pending e
   const merged = { decisions: [{ ...decision, action: "merge", merge_into_entity_id: "EN-2" }, { ...decision, entity_id: "EN-2", action: "correct" }] };
   assert.equal(evaluateProjectionCoverage(bundle, { ...frontstage, companies: [{ id: "EN-2" }] }, date, merged).ok, true);
   assert.equal(evaluateProjectionCoverage(bundle, frontstage, date, merged).ok, false);
+  const evidenceLinked = { ...bundle, canonical_events: [{ ...bundle.canonical_events[0], claim_refs: ["CL-1"] }] };
+  const linkedReview = { decisions: [decision, { ...decision, entity_id: "EN-2", canonical: { catalog_type: "company", name: "Linked company" }, evidence: { claim_refs: ["CL-1"] } }] };
+  assert.equal(evaluateProjectionCoverage(evidenceLinked, { ...frontstage, companies: [{ id: "EN-1" }] }, date, linkedReview).ok, false);
+  assert.equal(evaluateProjectionCoverage(evidenceLinked, { ...frontstage, companies: [{ id: "EN-1" }, { id: "EN-2" }] }, date, linkedReview).ok, true);
   const quarantined = evaluateProjectionCoverage(bundle, frontstage, date, { decisions: [{ ...decision, action: "quarantine" }] });
   assert.equal(quarantined.ok, true);
   assert.equal(quarantined.counts.pending_catalog_entities, 0);

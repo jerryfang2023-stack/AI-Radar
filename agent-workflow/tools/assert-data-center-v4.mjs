@@ -10,6 +10,7 @@ import { eventAiRelevanceEvidence, forbiddenKeys, publicEventSourceTitleIssue, p
 import { buildEventDisplayTitle } from "./event-public-title.mjs";
 import { validateTaxonomy } from "./assert-tag-taxonomy-v4.mjs";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
+import { runtimeSourceSnapshot } from "./lib/runtime-source-snapshot.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -511,7 +512,7 @@ function main() {
   };
   const reportJson = path.join(reportRoot, `${date}-data-center-v4-integrity-gate.json`);
   const reportMd = path.join(reportRoot, `${date}-data-center-v4-integrity-gate.md`);
-  writeJson(reportJson, { date, generated_at: new Date().toISOString(), ...result });
+  writeJson(reportJson, { date, generated_at: new Date().toISOString(), source_snapshot: runtimeSourceSnapshot(root, date), ...result });
   fs.writeFileSync(reportMd, markdownReport(date, result), "utf8");
   console.log(JSON.stringify({ date, report: path.relative(root, reportMd).replace(/\\/gu, "/"), ...result }, null, 2));
   if (!result.ok) process.exit(1);

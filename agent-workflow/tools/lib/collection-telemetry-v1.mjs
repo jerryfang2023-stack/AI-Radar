@@ -168,6 +168,7 @@ export function buildCollectionTelemetry({
       ops_version: OPS_VERSION,
       data_date: date,
       generated_at: generatedAt,
+      source_snapshot: gate.source_snapshot || "",
       scope: "OPS",
       canonical_writeback: false,
       source_of_truth: "Data Center V4 manifest and integrity gate",

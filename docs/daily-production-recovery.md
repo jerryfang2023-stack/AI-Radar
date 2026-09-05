@@ -24,6 +24,10 @@ despite a failed outcome.
 
 - Repair logs, supervision, gates, telemetry and incident drafts belong in the
   runtime directory. Commit only reviewed source/data changes and audit evidence.
+  Controller and repair entrypoints default there, including manual npm calls.
+  Runtime gate and telemetry are consumed together only when their source
+  fingerprint matches the current Git commit and dated canonical JSON bundle;
+  stale or unbound diagnostics cannot override a newer published snapshot.
 - Existing repair worktrees are refreshed only when clean, on the expected
   branch, and fast-forwardable to `origin/main`. Preserve divergent or dirty
   work; use a separately reviewed repair branch instead of force-resetting it.

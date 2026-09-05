@@ -5,7 +5,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import test from "node:test";
 import { resolveAutomationNetworkEnv } from "../lib/automation-network-env.mjs";
-import { runLoggedCommand, CODEX_REPAIR_TIMEOUT_MS, CODEX_REPAIR_HANDOFF_TIMEOUT_MS } from "../lib/logged-command.mjs";
+import { runLoggedCommand, defaultRuntimeDirectory, CODEX_REPAIR_TIMEOUT_MS, CODEX_REPAIR_HANDOFF_TIMEOUT_MS } from "../lib/logged-command.mjs";
 import { refreshRepairWorktree } from "../lib/repair-worktree.mjs";
 import { successfulPagesDeployment } from "../wait-for-pages-deployment.mjs";
 import { writeRecurringIncidents } from "../write-recurring-production-incidents.mjs";
@@ -16,6 +16,14 @@ import {
 
 const root = process.cwd();
 const read = (name) => fs.readFileSync(path.join(root, "agent-workflow", "tools", name), "utf8");
+
+test("manual controller and repair defaults keep logs outside the checkout", () => {
+  assert.equal(defaultRuntimeDirectory({ LOCALAPPDATA: path.join(os.tmpdir(), "local-app-data") }), path.join(os.tmpdir(), "local-app-data", "WaveSight", "runtime"));
+  assert.equal(path.isAbsolute(defaultRuntimeDirectory({})), true);
+  for (const file of ["run-daily-automation-controller.mjs", "run-daily-self-check.mjs", "run-codex-self-repair.mjs"]) {
+    assert.match(read(file), /args.get\("runtime-dir"\) \|\| defaultRuntimeDirectory\(\)/u);
+  }
+});
 
 test("agent output above the default pipe limit is retained without ENOBUFS", () => {
   const logDir = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-command-log-"));

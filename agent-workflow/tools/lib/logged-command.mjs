@@ -1,10 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
 import { randomUUID } from "node:crypto";
 import { spawnSync } from "node:child_process";
 
 export const CODEX_REPAIR_TIMEOUT_MS = 30 * 60 * 1000;
 export const CODEX_REPAIR_HANDOFF_TIMEOUT_MS = CODEX_REPAIR_TIMEOUT_MS + 3 * 60 * 1000;
+
+export function defaultRuntimeDirectory(env = process.env) {
+  return path.join(env.LOCALAPPDATA || path.join(os.homedir(), ".local", "state"), "WaveSight", "runtime");
+}
 
 function readTail(file, limit) {
   const fd = fs.openSync(file, "r");

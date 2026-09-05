@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { runLoggedCommand, CODEX_REPAIR_TIMEOUT_MS } from "./lib/logged-command.mjs";
+import { runLoggedCommand, defaultRuntimeDirectory, CODEX_REPAIR_TIMEOUT_MS } from "./lib/logged-command.mjs";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
 import { refreshRepairWorktree } from "./lib/repair-worktree.mjs";
 
@@ -12,7 +12,7 @@ const args = new Map(
     return [key, rest.join("=") || "true"];
   })
 );
-const reportsDir = path.resolve(root, args.get("runtime-dir") || path.join("agent-workflow", "reports"));
+const reportsDir = path.resolve(root, args.get("runtime-dir") || defaultRuntimeDirectory());
 
 const date = args.get("date") || shanghaiDate();
 const repairMode = args.get("repair") || "safe";

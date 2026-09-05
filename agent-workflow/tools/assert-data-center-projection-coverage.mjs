@@ -61,6 +61,7 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
   const acceptedEvents = events.filter((item) => ["verified", "partial"].includes(item.publication_status));
   const reviewed = applyEntityReviewDecisions(entities, acceptedEvents.map((event) => ({
     entityIds: event.entities || [],
+    claims: (event.claim_refs || []).map((id) => ({ id })),
   })), reviewLedger);
   const eventEntityIds = new Set(reviewed.events.flatMap((item) => item.entityIds || []));
   const catalogIds = publicCatalogEntityIds(reviewLedger);
