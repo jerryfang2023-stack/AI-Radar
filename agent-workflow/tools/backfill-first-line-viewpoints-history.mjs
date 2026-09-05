@@ -2,12 +2,14 @@
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import {
   cleanOpinionSource,
   completeOpinionTranslation,
   loadTranslationCache,
   saveTranslationCache,
   translateOpinionText,
+  visibleChineseTranslation,
 } from "./opinion-translation-utils.mjs";
 import { sourceTextHash } from "./deepseek-translation-client.mjs";
 import { buildTagIndex, readTagTaxonomy } from "./tag-taxonomy-utils.mjs";
@@ -92,10 +94,12 @@ function isAiRelevant(item = {}) {
 }
 
 function approvedTranslation(source, translation, status, method, model, preferFull = false) {
+  const originalChinese = method === "source_chinese" && Boolean(visibleChineseTranslation(source))
+    && clean(source) === clean(translation);
   return status === "translated"
     && approvedMethods.has(method)
     && (method !== "deepseek_translation" || Boolean(model))
-    && Boolean(completeOpinionTranslation(source, translation, { preferFullTranslation: preferFull }));
+    && (originalChinese || Boolean(completeOpinionTranslation(source, translation, { preferFullTranslation: preferFull })));
 }
 
 function normalizeRecord(item = {}, snapshotHash = "") {
@@ -227,13 +231,12 @@ async function main() {
   const translated = allowNetwork ? await mapConcurrent(needsTranslation, (item) => translateRecord(item, cache)) : needsTranslation;
   if (allowNetwork) await saveTranslationCache(root, cache);
 
-  const accepted = [...alreadyApproved, ...translated.filter(publicReady)]
-    .sort((a, b) => b.date.localeCompare(a.date) || String(b.createdAt).localeCompare(String(a.createdAt)) || a.url.localeCompare(b.url));
+  const accepted = mergeApprovedHistory(
+    [...alreadyApproved, ...translated.filter(publicReady)], previous.remarks || [],
+  );
   const pending = translated.filter((item) => !publicReady(item));
-  const pendingReasons = !allowNetwork && previous.stats?.pendingReasons
-    ? previous.stats.pendingReasons
-    : {};
-  if (allowNetwork || !previous.stats?.pendingReasons) {
+  const pendingReasons = {};
+  {
     for (const item of pending) {
       const titleApproved = approvedTranslation(item.text, item.translation, item.translationStatus, item.translationMethod, item.translationModel, true);
       const reason = titleApproved && item.content
@@ -285,4 +288,13 @@ async function main() {
   if (allowNetwork && pending.length) process.exitCode = 1;
 }
 
-await main();
+export function mergeApprovedHistory(current = [], previous = []) {
+  // Committed approved translations are durable evidence, not a disposable
+  // cache. An offline rebuild must not drop them when its cache is absent.
+  const byUrl = new Map(previous.filter(publicReady).map((item) => [item.url, item]));
+  for (const item of current.filter(publicReady)) byUrl.set(item.url, item);
+  return [...byUrl.values()].sort((a, b) => b.date.localeCompare(a.date)
+    || String(b.createdAt).localeCompare(String(a.createdAt)) || a.url.localeCompare(b.url));
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) await main();

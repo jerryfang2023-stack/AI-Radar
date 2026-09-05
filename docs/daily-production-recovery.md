@@ -62,6 +62,21 @@ the VPS release, and reads back the website and Mini Program contract. Compare
 the source commit, latest data date and card/report counts. A Mini Program data
 update is distinct from a new WeChat client binary release.
 
+Funding amounts require proceeds-specific evidence, not merely a number in a
+valid quoted source. Chinese post-amount financing and valuation-rise wording
+must remain covered by regressions. A valuation may remain a labelled metric,
+but cannot populate financing amount, disclosure amount or funding history.
+If an investment announcement does not disclose proceeds, retain the event in
+the Data Center but exclude it from Funding Insights. Withdraw an incorrectly
+published application card and prune its derived taxonomy decision; retain the
+source evidence and a withdrawal reason in its queue.
+
+First-Line Viewpoints archives approved morning records by original URL on each
+publication. Offline rebuilds merge the existing approved history before adding
+new snapshots: shallow Git history or an absent translation cache must never
+erase already accepted translations. Rebuild the full Data Center adapter after
+history recovery so person profiles and last-seen dates recover with the list.
+
 Vault refresh uses an isolated `origin/main` worktree. Resolve broken manual-note
 links at the referenced file and archive retired duplicate repository copies
 outside the wiki. Do not weaken the Vault boundary gate to tolerate old roots.
