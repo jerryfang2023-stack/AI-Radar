@@ -9,6 +9,7 @@ import {
   loadTranslationCache,
   saveTranslationCache,
   translateOpinionText,
+  visibleChineseTranslation,
 } from "./opinion-translation-utils.mjs";
 import { sourceTextHash } from "./deepseek-translation-client.mjs";
 import { buildTagIndex, readTagTaxonomy } from "./tag-taxonomy-utils.mjs";
@@ -93,7 +94,7 @@ function isAiRelevant(item = {}) {
 }
 
 function approvedTranslation(source, translation, status, method, model, preferFull = false) {
-  const originalChinese = method === "source_chinese" && /[\u3400-\u9fff]/u.test(source)
+  const originalChinese = method === "source_chinese" && Boolean(visibleChineseTranslation(source))
     && clean(source) === clean(translation);
   return status === "translated"
     && approvedMethods.has(method)

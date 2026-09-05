@@ -25,6 +25,9 @@ test("history deduplicates by URL and unapproved replacements cannot destroy app
   const newer = { ...old, likes: 42 };
   assert.deepEqual(mergeApprovedHistory([newer], [old]), [newer]);
   assert.deepEqual(mergeApprovedHistory([], [invalid]), []);
+  const mostlyEnglish = { ...old, text: "An AI model still needs independent evaluation before production. 中",
+    translation: "An AI model still needs independent evaluation before production. 中" };
+  assert.deepEqual(mergeApprovedHistory([mostlyEnglish], []), []);
 });
 
 test("daily publication archives accepted morning history before gating and stages the archive", () => {
