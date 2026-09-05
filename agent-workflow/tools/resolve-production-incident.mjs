@@ -4,7 +4,6 @@ import path from "node:path";
 import { isProductionIncidentFilename } from "./incident-filename-utils.mjs";
 
 const root = process.cwd();
-const inboxDir = path.join(root, "agent-workflow", "inbox", "production-incidents");
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -12,6 +11,8 @@ const args = new Map(
     return [key, rest.join("=") || "true"];
   })
 );
+
+const inboxDir = path.resolve(root, args.get("inbox-dir") || "agent-workflow/inbox/production-incidents");
 
 const orderedFields = [
   "status",
@@ -185,7 +186,7 @@ function resolveFile() {
 
   let file = path.isAbsolute(fileArg)
     ? path.resolve(fileArg)
-    : path.resolve(root, fileArg.includes("/") || fileArg.includes("\\") ? fileArg : path.join("agent-workflow", "inbox", "production-incidents", fileArg));
+    : path.resolve(root, fileArg.includes("/") || fileArg.includes("\\") ? fileArg : path.join(inboxDir, fileArg));
   if (!isInside(inboxDir, file)) {
     fail("Incident file must be inside the production incident registry.");
   }

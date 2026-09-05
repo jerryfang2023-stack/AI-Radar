@@ -80,3 +80,9 @@ history recovery so person profiles and last-seen dates recover with the list.
 Vault refresh uses an isolated `origin/main` worktree. Resolve broken manual-note
 links at the referenced file and archive retired duplicate repository copies
 outside the wiki. Do not weaken the Vault boundary gate to tolerate old roots.
+
+Read or resolve external incident drafts with `--inbox-dir=<runtime>/production-incidents`
+on `inbox:incidents` and `resolve:incident`; keep the same explicit directory when
+following the generated repair prompt. The legacy in-repository registry remains
+the default for historical records. A resolution must include the fix commit,
+validation and prevention artifact; moving a draft is not a resolution.

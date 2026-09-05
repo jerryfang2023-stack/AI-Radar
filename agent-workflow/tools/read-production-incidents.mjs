@@ -4,7 +4,6 @@ import path from "node:path";
 import { isProductionIncidentFilename } from "./incident-filename-utils.mjs";
 
 const root = process.cwd();
-const inboxDir = path.join(root, "agent-workflow", "inbox", "production-incidents");
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -13,6 +12,7 @@ const args = new Map(
   })
 );
 
+const inboxDir = path.resolve(root, args.get("inbox-dir") || "agent-workflow/inbox/production-incidents");
 const statusFilter = args.get("status") || "open";
 const latestOnly = args.has("latest") ? args.get("latest") !== "false" : false;
 const outputFormat = args.get("format") || "json";
@@ -109,7 +109,7 @@ function repairPrompt(messages) {
   lines.push("3. Rerun the exact failed gate or the smallest relevant validation.");
   lines.push("4. Add a prevention artifact when the issue can recur: gate, eval, memory, or context rule.");
   lines.push("5. Record the repair action, then close the inbox item with:");
-  lines.push("   npm run resolve:incident -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>");
+  lines.push(`   npm run resolve:incident -- --inbox-dir="${inboxDir}" --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>`);
 
   return lines.join("\n");
 }
