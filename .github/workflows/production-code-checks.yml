@@ -1,0 +1,46 @@
+name: WaveSight Production Code Checks
+
+on:
+  pull_request:
+    paths:
+      - "agent-workflow/tools/**"
+      - ".github/workflows/**"
+      - "01-SiteV2/site/scripts/**"
+      - "context/**"
+      - "AGENTS.md"
+      - "package*.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-code-checks-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  production-code:
+    name: Production code (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    env:
+      # Tests must isolate fixtures even when the production job sets this.
+      # No private evidence checkout, credentials, collection, or publication.
+      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ runner.temp }}/nonexistent-production-evidence
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run assert:no-active-v3
+      - run: npm run assert:compatibility-retirement
+      - run: npm run assert:pipeline-policy
+      - run: npm run assert:versions
+      - run: npm run test:data-center
+      - run: npm run test:ops-v2

@@ -520,7 +520,14 @@ test("source-title backfill updates private metadata while public intake and ind
       path.join(projectRoot, "agent-workflow/tools/backfill-source-title-translations.mjs"),
       `--date=${date}`,
       "--write=true",
-    ], { cwd: tempRoot, encoding: "utf8", timeout: 10_000 });
+    ], {
+      cwd: tempRoot,
+      // CI has a production evidence path in its job environment. A child
+      // process must only read/write this test's private fixture store.
+      env: { ...process.env, GUANLAN_EVIDENCE_BACKUP_ROOT: privateRoot },
+      encoding: "utf8",
+      timeout: 10_000,
+    });
 
     assert.deepEqual(fs.readFileSync(intakeFile), intakeBefore);
     assert.deepEqual(fs.readFileSync(indexFile), indexBefore);
