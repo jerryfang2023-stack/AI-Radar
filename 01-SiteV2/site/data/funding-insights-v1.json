@@ -10,7 +10,7 @@
     "latest_financing_date": "2026-09-02",
     "generated_at": "2026-09-05T05:05:36.181Z",
     "card_count": 288,
-    "china_market_card_count": 34,
+    "china_market_card_count": 35,
     "duplicate_rounds_removed": 18,
     "automatic_publication": true,
     "translation_registry": {
@@ -1273,9 +1273,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "china_entity_alias:Even Realities"
+        ],
         "source_registry_ids": []
       },
       "product_form": {

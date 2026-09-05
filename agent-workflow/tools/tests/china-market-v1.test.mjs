@@ -67,6 +67,8 @@ test("China organization aliases include Chinese, English and legal names", () =
   assert.ok(moonshot.aliases.includes("月之暗面"));
   assert.ok(biren.aliases.includes("Biren Technology"));
   assert.ok(biren.aliases.includes("壁仞科技"));
+  const evenRealities = aliases.find((entity) => entity.canonicalName === "Even Realities");
+  assert.deepEqual(evenRealities.aliases, ["Even Realities", "Even Realities Technology"]);
   assert.ok(aliases.length >= 30);
 });
 

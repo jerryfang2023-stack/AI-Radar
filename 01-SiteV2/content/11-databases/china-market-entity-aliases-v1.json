@@ -1,6 +1,6 @@
 {
   "schema_version": "CHINA-MARKET-ENTITY-ALIASES-V1.0",
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-05",
   "owner": "Data Center Entity Resolution",
   "market_region": "CN",
   "purpose": "中国 AI 市场常见公司、品牌与法人主体别名。只做实体统一，不表达实体价值、来源权重或事件优先级。",
@@ -592,6 +592,20 @@
       "entity_type": "organization",
       "aliases": ["昉擎科技", "昉擎"],
       "legal_names": []
+    },
+    {
+      "canonical_name": "Even Realities",
+      "entity_type": "organization",
+      "aliases": ["Even Realities", "Even Realities Technology"],
+      "legal_names": [],
+      "evidence_refs": [
+        {
+          "funding_insight_id": "FI-43fe661ce1291832",
+          "source_id": "FISRC-340182e8dcb597a3",
+          "source_url": "https://techcrunch.com/2026/07/06/smart-glasses-maker-even-realities-hits-1b-valuation-with-150m-funding-led-by-meituan-tencent/",
+          "quote": "Even Realities, the China-based smart glasses company"
+        }
+      ]
     },
     {
       "canonical_name": "西湖心辰",
