@@ -86,6 +86,7 @@ async function mapConcurrent(items, worker, limit) {
 
 async function main() {
   const rawPathById = new Map();
+  const rawContextById = new Map();
   const rawBySourceArtifact = new Map();
   const eventTargetRawIds = new Set();
   const availableDates = dates();
@@ -96,6 +97,7 @@ async function main() {
     const sourceArtifacts = readJson(path.join(dir, "source-artifacts.json"));
     const events = readJson(path.join(dir, "canonical-events.json"));
     for (const raw of raws) {
+      rawContextById.set(raw.raw_id, { date, raw });
       rawBySourceArtifact.set(raw.source_artifact_id, raw.raw_id);
       if (/(?:\.\.\.|…)$/.test(String(raw.title_original || "").trim())) {
         eventTargetRawIds.add(raw.raw_id);
@@ -117,15 +119,23 @@ async function main() {
     if (selectedRawIds.size && !selectedRawIds.has(rawId)) continue;
     const relativePath = rawPathById.get(rawId);
     if (!relativePath) continue;
-    const privateEvidence = loadPrivateEvidenceRecord(root, relativePath, "", { required: false });
+    const context = rawContextById.get(rawId);
+    const privateEvidence = loadPrivateEvidenceRecord(root, relativePath, context.raw.content_hash, {
+      required: false,
+      sourceUrl: context.raw.canonical_url || context.raw.source_url,
+      dataDate: context.date,
+    });
     const file = privateEvidence?.file || path.join(root, relativePath);
     if (!fs.existsSync(file)) continue;
     const payload = privateEvidence?.metadata || readJson(file);
     const capturedPayload = privateEvidence?.raw || payload;
     const storedSourceTitle = String(payload.title || payload.title_original || "").trim();
-    const sourceTitle = sourceTitleFromCapturedPayload(capturedPayload);
+    const acceptedTitle = String(context.raw.title_original || context.raw.title || "").trim();
+    const sourceTitle = acceptedTitle && !/(?:\.\.\.|…)$/u.test(acceptedTitle)
+      ? acceptedTitle
+      : sourceTitleFromCapturedPayload(capturedPayload);
     if (!sourceTitle) continue;
-    jobsByPath.set(relativePath, {
+    jobsByPath.set(`${relativePath}|${context.date}|${sourceTitle}`, {
       rawId,
       relativePath,
       file,

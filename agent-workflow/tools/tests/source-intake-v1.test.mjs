@@ -1,9 +1,19 @@
 import assert from "node:assert/strict";
+import test from "node:test";
+import { sourceTitleLocator } from "../lib/source-title-locator.mjs";
+
+test("title provenance selects the dated exact title, not the first identical body", () => {
+  const raw = { content_hash: "same-body", title_original: "OpenAI announces rollout of GPT-6 Astra model", title_zh: "OpenAI 宣布推出 GPT-6 Astra 模型", canonical_url: "https://www.cnbc.com/article" };
+  const current = { ...raw, source_url: "https://cnbc.com/article", data_date: "2026-09-05", title_translation_method: "deepseek_title_translation", title_translation_model: "deepseek-v4-flash" };
+  const previous = { ...current, data_date: "2026-09-04", title_original: "OpenAI 开始推出 GPT-6 Astra", title_zh: "OpenAI 开始推出 GPT-6 Astra", title_translation_method: "source_title" };
+  assert.equal(sourceTitleLocator(raw, [previous, current], "2026-09-05"), current);
+  assert.deepEqual(sourceTitleLocator(raw, [previous], "2026-09-05"), {});
+  assert.deepEqual(sourceTitleLocator(raw, [{ ...current, source_url: "https://example.com/article" }], "2026-09-05"), {});
+});
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import test from "node:test";
 import {
   applyIntakeTitleMetadata,
   buildSourceIntake,

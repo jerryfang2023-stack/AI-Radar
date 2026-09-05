@@ -390,7 +390,7 @@ jobs:
           set -o pipefail
           set +e
           node agent-workflow/tools/generate-data-center-model-assist.mjs \
-            --date="${RUN_DATE}" --write=true --concurrency=2 \
+            --date="${RUN_DATE}" --write=true --concurrency=2 --reuse-existing=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-model-assist.log"
           model_assist_status=${PIPESTATUS[0]}
           set -e
