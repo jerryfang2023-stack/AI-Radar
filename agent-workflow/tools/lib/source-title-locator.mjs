@@ -20,3 +20,15 @@ export function sourceTitleLocator(raw, candidates, date = "") {
   ));
   return matches.find((entry) => entry.data_date === date) || matches[0] || {};
 }
+
+export function sourceTitleMetadataMatches(raw, date, entry, metadata) {
+  const accepted = titleTranslationKey(raw.title_original || raw.title || "");
+  const stored = titleTranslationKey(metadata.title || metadata.title_original || "");
+  const extendsPrefix = (short, full) => /(?:\.\.\.|…)$/u.test(short)
+    && full.startsWith(short.replace(/(?:\.\.\.|…)$/u, "").trim());
+  return Boolean(date && entry.data_date === date
+    && entry.content_hash === raw.content_hash
+    && sourceIdentity(entry.source_url) === sourceIdentity(raw.canonical_url || raw.source_url)
+    && accepted && stored
+    && (accepted === stored || extendsPrefix(accepted, stored) || extendsPrefix(stored, accepted)));
+}

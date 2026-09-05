@@ -14,6 +14,7 @@ import {
 } from "./source-title-translation-generator.mjs";
 import { sourceSnapshotRefsByRawId } from "./lib/source-snapshot-ref-v1.mjs";
 import { loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
+import { sourceTitleMetadataMatches } from "./lib/source-title-locator.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
@@ -129,9 +130,10 @@ async function main() {
     if (!fs.existsSync(file)) continue;
     const payload = privateEvidence?.metadata || readJson(file);
     const capturedPayload = privateEvidence?.raw || payload;
+    const metadataWritable = !privateEvidence || sourceTitleMetadataMatches(context.raw, context.date, privateEvidence.entry, payload);
     const storedSourceTitle = String(payload.title || payload.title_original || "").trim();
     const acceptedTitle = String(context.raw.title_original || context.raw.title || "").trim();
-    const sourceTitle = acceptedTitle && !/(?:\.\.\.|…)$/u.test(acceptedTitle)
+    const sourceTitle = acceptedTitle && (!metadataWritable || !/(?:\.\.\.|…)$/u.test(acceptedTitle))
       ? acceptedTitle
       : sourceTitleFromCapturedPayload(capturedPayload);
     if (!sourceTitle) continue;
@@ -140,6 +142,7 @@ async function main() {
       relativePath,
       file,
       payload,
+      metadataWritable,
       sourceTitle,
       sourceTitleRepaired: /(?:\.\.\.|…)$/.test(storedSourceTitle) && sourceTitle !== storedSourceTitle,
       sourceUrl: payload.original_url || payload.canonical_url || payload.source_url || "",
@@ -254,7 +257,12 @@ async function main() {
   let rawJsonUpdated = 0;
   let rawMarkdownUpdated = 0;
   let sourceTitlesRepaired = 0;
+  let metadataIdentitySkipped = 0;
   for (const job of jobsByPath.values()) {
+    if (!job.metadataWritable) {
+      metadataIdentitySkipped += 1;
+      continue;
+    }
     const result = translationResults.get(titleTranslationKey(job.sourceTitle));
     const before = JSON.stringify(job.payload);
     if (job.sourceTitleRepaired) {
@@ -276,6 +284,7 @@ async function main() {
   report.raw_json_updated = rawJsonUpdated;
   report.raw_markdown_updated = rawMarkdownUpdated;
   report.source_titles_repaired = sourceTitlesRepaired;
+  report.metadata_identity_skipped = metadataIdentitySkipped;
   report.intake_titles_repaired = 0;
   report.source_index_titles_repaired = 0;
   writeJson(reportFile, report);

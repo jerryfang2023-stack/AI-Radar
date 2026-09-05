@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { sourceTitleLocator } from "../lib/source-title-locator.mjs";
+import { sourceTitleLocator, sourceTitleMetadataMatches } from "../lib/source-title-locator.mjs";
 
 test("title provenance selects the dated exact title, not the first identical body", () => {
   const raw = { content_hash: "same-body", title_original: "OpenAI announces rollout of GPT-6 Astra model", title_zh: "OpenAI 宣布推出 GPT-6 Astra 模型", canonical_url: "https://www.cnbc.com/article" };
@@ -9,6 +9,10 @@ test("title provenance selects the dated exact title, not the first identical bo
   assert.equal(sourceTitleLocator(raw, [previous, current], "2026-09-05"), current);
   assert.deepEqual(sourceTitleLocator(raw, [previous], "2026-09-05"), {});
   assert.deepEqual(sourceTitleLocator(raw, [{ ...current, source_url: "https://example.com/article" }], "2026-09-05"), {});
+  assert.equal(sourceTitleMetadataMatches(raw, "2026-09-05", current, { title: raw.title_original }), true);
+  assert.equal(sourceTitleMetadataMatches(raw, "2026-09-05", previous, { title: raw.title_original }), false);
+  assert.equal(sourceTitleMetadataMatches(raw, "2026-09-05", { ...current, source_url: "https://example.com/article" }, { title: raw.title_original }), false);
+  assert.equal(sourceTitleMetadataMatches(raw, "2026-09-05", current, { title: "Unrelated headline" }), false);
 });
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
