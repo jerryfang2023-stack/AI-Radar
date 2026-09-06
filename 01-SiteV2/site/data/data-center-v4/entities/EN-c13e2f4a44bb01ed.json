@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-eb282b4658bbdd7e",
       "EV-5e2b5770eac85ca5",
       "EV-8fcb52bb6ec980af",
       "EV-6ebcbb2660ec7ad9",
@@ -33,11 +34,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-27",
-    "lastSeen": "2026-07-16",
+    "lastSeen": "2026-09-06",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
+        "EV-eb282b4658bbdd7e",
         "EV-5e2b5770eac85ca5"
       ],
       "partnerships": [
@@ -52,6 +54,24 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-eb282b4658bbdd7e",
+        "dataDate": "2026-09-06",
+        "date": "2026-08-30",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "企业AI智能体：21个实际部署案例 - AI周刊",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4d748ebd71af03a7",
+          "EN-9fbf261b62c1d7c0",
+          "EN-c13e2f4a44bb01ed",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-5e2b5770eac85ca5",
         "dataDate": "2026-07-16",
@@ -229,6 +249,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-617f1daf708475d0",
         "EV-601240034cf86d7f",
         "EV-f41fe4d6189853cd",
         "EV-d26a532231315278",
@@ -332,6 +353,7 @@
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
+        "EN-54239100b953b6ee",
         "EN-77b30b8a88051252",
         "EN-99d3fd0fa8fe115e",
         "EN-83eb1cb31148698f",
@@ -404,10 +426,50 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-02"
+      "lastSeen": "2026-09-06"
     }
   ],
   "fde": [
+    {
+      "id": "FDE-5ebb24c6d956139a",
+      "eventId": "EV-eb282b4658bbdd7e",
+      "dataDate": "2026-09-06",
+      "date": "2026-08-30",
+      "title": "企业AI智能体：21个实际部署案例 - AI周刊",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Accenture",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Microsoft 365 Copilot",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Samsung SDS is deploying Claude Enterprise and Claude Code across Samsung affiliates and training applied-AI engineers with Anthropic.",
+        "Deloitte is deploying Anthropic's Claude to its 470,000 employees as an anchor partner in the Claude Partner Network, alongside Cognizant's rollout to roughly 350,000 associates."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/use/enterprise-copilots",
+      "entityIds": [
+        "EN-4d748ebd71af03a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDE-08f12caedc3b2f13",
       "eventId": "EV-8fcb52bb6ec980af",
@@ -484,6 +546,58 @@
   ],
   "hardware": [],
   "fdeDossiers": [
+    {
+      "id": "FDED-272210d4c120a9f6",
+      "implementationKey": "272210d4c120a9f6",
+      "eventId": "EV-eb282b4658bbdd7e",
+      "eventIds": [
+        "EV-eb282b4658bbdd7e"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-08-30",
+      "title": "Accenture × 未披露：Microsoft 365 Copilot",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Accenture",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Microsoft 365 Copilot",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-c807d8ec837bb36b",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-30",
+          "dataDate": "2026-09-06",
+          "eventId": "EV-eb282b4658bbdd7e",
+          "eventTitle": "企业AI智能体：21个实际部署案例 - AI周刊",
+          "claimCount": 3,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/use/enterprise-copilots",
+      "entityIds": [
+        "EN-4d748ebd71af03a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDED-a8205a9fb725cadf",
       "implementationKey": "a8205a9fb725cadf",
