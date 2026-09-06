@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
+    "quarantinedEventCount": 23
+  },
+  "entity": {
+    "id": "EN-a8ba56e1dfa501b1",
+    "name": "达拉斯联邦储备银行研究人员",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-81a78212d3927bc4"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-05",
+    "lastSeen": "2026-09-06",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-81a78212d3927bc4"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-81a78212d3927bc4",
+        "dataDate": "2026-09-06",
+        "date": "2026-09-05",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "研究称得克萨斯州大学毕业生失业率在 AI 快速发展期间升至异常高水平",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-fbafd39fc890e662"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a8ba56e1dfa501b1",
+          "EN-fbafd39fc890e662"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

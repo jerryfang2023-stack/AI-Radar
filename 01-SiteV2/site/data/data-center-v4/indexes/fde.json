@@ -5,13 +5,53 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "fde": [
+    {
+      "id": "FDE-5ebb24c6d956139a",
+      "eventId": "EV-eb282b4658bbdd7e",
+      "dataDate": "2026-09-06",
+      "date": "2026-08-30",
+      "title": "企业AI智能体：21个实际部署案例 - AI周刊",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Accenture",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Microsoft 365 Copilot",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Samsung SDS is deploying Claude Enterprise and Claude Code across Samsung affiliates and training applied-AI engineers with Anthropic.",
+        "Deloitte is deploying Anthropic's Claude to its 470,000 employees as an anchor partner in the Claude Partner Network, alongside Cognizant's rollout to roughly 350,000 associates."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/use/enterprise-copilots",
+      "entityIds": [
+        "EN-4d748ebd71af03a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDE-6b6d74f3b3bbf5a5",
       "eventId": "EV-8ae771f26c02f7c4",
@@ -6626,6 +6666,58 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-272210d4c120a9f6",
+      "implementationKey": "272210d4c120a9f6",
+      "eventId": "EV-eb282b4658bbdd7e",
+      "eventIds": [
+        "EV-eb282b4658bbdd7e"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-08-30",
+      "title": "Accenture × 未披露：Microsoft 365 Copilot",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Accenture",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Microsoft 365 Copilot",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-c807d8ec837bb36b",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-30",
+          "dataDate": "2026-09-06",
+          "eventId": "EV-eb282b4658bbdd7e",
+          "eventTitle": "企业AI智能体：21个实际部署案例 - AI周刊",
+          "claimCount": 3,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/use/enterprise-copilots",
+      "entityIds": [
+        "EN-4d748ebd71af03a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDED-f3447b846f4bd1e9",
       "implementationKey": "f3447b846f4bd1e9",
       "eventId": "EV-8ae771f26c02f7c4",
@@ -9060,39 +9152,38 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-05",
-      "funnel_id": "LF-b062e067c6f4da3f",
+      "data_date": "2026-09-06",
+      "funnel_id": "LF-3e84f1ffaa8cff1d",
       "lens": "fde",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 117,
-      "original_sources": 99,
-      "valid_claims": 39,
-      "observations": 0,
-      "canonical_events": 17,
+      "raw_documents": 110,
+      "original_sources": 102,
+      "valid_claims": 36,
+      "observations": 1,
+      "canonical_events": 15,
       "blocker_counts": {
-        "no_source_bounded_event": 11,
-        "source_outside_daily_window": 51,
+        "event_not_ai_relevant": 3,
+        "repository_page_requires_release_source": 2,
+        "no_source_bounded_claim": 2,
+        "source_outside_daily_window": 58,
         "non_event_or_index_title": 7,
-        "directory_page_not_event_source": 3,
-        "event_entity_unresolved": 1,
-        "opinion_without_source_bounded_event": 1,
-        "event_not_ai_relevant": 4,
-        "repository_page_requires_release_source": 1,
-        "raw_source_quality_block": 18
+        "no_source_bounded_event": 12,
+        "opinion_without_source_bounded_event": 2,
+        "raw_source_quality_block": 8
       },
       "rates": {
-        "original_source_rate": 0.8461538461538461,
-        "valid_claim_rate": 0.3333333333333333,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.4358974358974359
+        "original_source_rate": 0.9272727272727272,
+        "valid_claim_rate": 0.32727272727272727,
+        "observation_rate": 0.027777777777777776,
+        "event_conversion_rate": 0.4166666666666667
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/monitoring-funnel.json"
     }
   ]
 }

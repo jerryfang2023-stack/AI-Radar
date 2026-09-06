@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -33,7 +33,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-12",
-    "lastSeen": "2026-09-05",
+    "lastSeen": "2026-09-06",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -52,7 +52,7 @@
     "timeline": [
       {
         "id": "EV-8e0c25aebb1d4f5f",
-        "dataDate": "2026-09-05",
+        "dataDate": "2026-09-06",
         "date": "2026-09-05",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -414,8 +414,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-358643eefe0a5df5",
+        "EV-50e7de294816f918",
         "EV-8e0c25aebb1d4f5f",
+        "EV-358643eefe0a5df5",
+        "EV-7d0144597aa9b489",
         "EV-36a9af9b98a66be3",
         "EV-4809eb76696a9e61",
         "EV-51dcf527010e4f19",
@@ -898,9 +900,10 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-32e83e92d45d71f6",
-        "EN-2b6e51bec93e86c1",
         "EN-bbdefa2950f49882",
+        "EN-32e83e92d45d71f6",
+        "EN-8ff5e729cd4089df",
+        "EN-2b6e51bec93e86c1",
         "EN-c70eca6b0f88f44d",
         "EN-373ac021a2c0bb2c",
         "EN-0d47d3f0783749a8",
@@ -1133,13 +1136,13 @@
     {
       "id": "HWC-9aa8dc06359294bf",
       "snapshotKey": "9aa8dc06359294bf",
-      "snapshotId": "HWS-ca28170b1e050661",
+      "snapshotId": "HWS-1fa5ff0b9ad62ce5",
       "eventId": "EV-8e0c25aebb1d4f5f",
       "eventIds": [
         "EV-8e0c25aebb1d4f5f"
       ],
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
       "title": "SpaceXAI / Grok Bot",
       "subject": "xAI",
       "productNames": [
@@ -1154,18 +1157,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-40b3953b53f7a5c7"
+          "fact_ref": "HWF-c9ae6c8c182afb52"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-06",
+          "previousDate": "2026-09-05",
+          "snapshotId": "HWS-1fa5ff0b9ad62ce5",
+          "previousSnapshotId": "HWS-ca28170b1e050661",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-09-05",
-          "hardware_fact_id": "HWF-40b3953b53f7a5c7",
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-c9ae6c8c182afb52",
           "fact_type": "product",
           "observed_at": "2026-09-05T02:35:59.000Z",
           "subject_entity_id": "EN-6fcba5d96a4fadfd",
@@ -1185,11 +1198,11 @@
           "event_refs": [
             "EV-8e0c25aebb1d4f5f"
           ],
-          "claim_ref": "CL-117b967034f753ca",
+          "claim_ref": "CL-124beb09461d4505",
           "source_refs": [
             "SA-e1c4546606a71d08"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
         }
       ],
       "capexFacts": [],

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -61,6 +61,7 @@
       "EV-c108e7cc2df7faf4",
       "EV-83acf26a011ef213",
       "EV-c7a2774b07554f5d",
+      "EV-86516e11c8a7f94d",
       "EV-d5d985325a1baacb",
       "EV-f2d29ca7b05c3dd9",
       "EV-32a5af8d5ef80073"
@@ -106,6 +107,7 @@
       "EN-8a96f1a807787797",
       "EN-28d79881d0386305",
       "EN-c70eca6b0f88f44d",
+      "EN-1226f22c559007e0",
       "EN-89d01c9ba73cb5c4",
       "EN-50537dab76505dfc"
     ],
@@ -115,7 +117,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2025-10-09",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-06"
   },
   "events": [
     {
@@ -11590,6 +11592,92 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-86516e11c8a7f94d",
+      "dataDate": "2026-09-06",
+      "date": "2026-09-05",
+      "updatedDate": "2026-09-06",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "《西雅图时报》与 Newsday 起诉 OpenAI 和 Microsoft 涉嫌版权侵权",
+      "originalTitle": "",
+      "subject": "《西雅图时报》与 Newsday",
+      "action": "起诉",
+      "object": "OpenAI 和 Microsoft 涉嫌版权侵权",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-1226f22c559007e0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-1226f22c559007e0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-1226f22c559007e0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-48546e0df08910e1",
+        "EN-1226f22c559007e0",
+        "EN-7d3194f79e645c42",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "《西雅图时报》",
+        "Newsday",
+        "OpenAI",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
       "id": "EV-d5d985325a1baacb",
       "dataDate": "2026-09-01",
       "date": "2026-09-01",
@@ -12021,12 +12109,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-media_entertainment",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
@@ -12136,12 +12224,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-retail_ecommerce",
@@ -12344,11 +12432,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-knowledge_search",
+        "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-developer",
         "TX-product_form-ai_infrastructure_software",
@@ -12550,6 +12638,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-636b45c518ae1313",
         "EV-61b1ddeb1e7b7043",
         "EV-fb33ae9b7f9454bf",
         "EV-0121f0a9e9a975ec",
@@ -12604,11 +12693,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-39abdf174aa3aeec",
+        "EV-cb1bc28f78888566",
         "EV-358643eefe0a5df5",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
+        "EV-ffa46f84468cffd9",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -12620,7 +12711,6 @@
         "EV-125040ec61215481",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
-        "EV-ffa46f84468cffd9",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -12836,9 +12926,13 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-345378cb7f1f64fd",
+        "EV-3bb3577e52eb08ea",
+        "EV-86516e11c8a7f94d",
+        "EV-cdc2db5ed61d59bb",
+        "EV-4efa076340382741",
         "EV-7371ffb603de3e1c",
         "EV-d04298029a8ab693",
+        "EV-345378cb7f1f64fd",
         "EV-bf57b79e05a537e6",
         "EV-23ebd5f5d32e950a",
         "EV-b1ac270277a5c1bc",
@@ -12928,11 +13022,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
@@ -12990,7 +13084,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-f3d05a0f6248941d",
@@ -13064,9 +13158,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-consumer",
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
@@ -13125,12 +13219,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
@@ -13311,9 +13405,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-consumer",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-ai_market_subcategory-development_deployment",
@@ -13403,6 +13497,7 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-eb282b4658bbdd7e",
         "EV-87c5f6dcc769999c",
         "EV-be76a1e5ed2b6cf5",
         "EV-e46756260827cd86",
@@ -13437,6 +13532,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-617f1daf708475d0",
+        "EV-7db34aecc1e1e817",
         "EV-6d92bb807f339b53",
         "EV-d5db0416bede29de",
         "EV-c638f91cbb8bf845",
@@ -13512,6 +13609,8 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-86516e11c8a7f94d",
+        "EV-cdc2db5ed61d59bb",
         "EV-b1ac270277a5c1bc",
         "EV-d06e34a0546a00a5",
         "EV-649481503cdb7736",
@@ -13555,7 +13654,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-3f726694f178ed7a",
@@ -13720,6 +13819,7 @@
         "EV-ed8260ee9a7a80af",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
+        "EV-eb282b4658bbdd7e",
         "EV-61b1ddeb1e7b7043",
         "EV-4aff64511cfa8577",
         "EV-892228f3d092004f",
@@ -14063,7 +14163,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-education",
         "TX-industry-media_entertainment",
@@ -14071,6 +14170,7 @@
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-developer",
@@ -14104,6 +14204,7 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -14118,7 +14219,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -14128,7 +14228,28 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-06"
+    },
+    {
+      "id": "EN-1226f22c559007e0",
+      "name": "Newsday",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-86516e11c8a7f94d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-consumer"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-89d01c9ba73cb5c4",
@@ -14175,8 +14296,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-target_user-consumer",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-technology-agentic_execution"
       ],

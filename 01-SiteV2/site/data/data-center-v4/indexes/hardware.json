@@ -5,13 +5,68 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "hardware": [
+    {
+      "id": "HW-662a7e40c8349289",
+      "eventId": "EV-c3b67ac2dcd72881",
+      "dataDate": "2026-09-06",
+      "date": "2026-09-05",
+      "title": "塔塔咨询将在海得拉巴建设 1GW AI 数据中心园区，投资达 7000 亿卢比",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "塔塔咨询将在海得拉巴",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 1,
+      "capacityUnit": "GW",
+      "site": "印度海得拉巴",
+      "region": "印度",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/998/810.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-09-05",
+      "entityIds": [
+        "EN-e1680f5d27ebecb8"
+      ]
+    },
+    {
+      "id": "HW-ea3c1efb007290fa",
+      "eventId": "EV-40dbd71782c11373",
+      "dataDate": "2026-09-06",
+      "date": "2026-09-04",
+      "title": "Deepseek计划在内蒙古建设已知最大的华为芯片集群，配备16万处理器",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/deepseek-plans-the-largest-known-huawei-chip-cluster-with-160000-processors-in-inner-mongolia",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-09-04",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-b81c8201acfc7639"
+      ]
+    },
     {
       "id": "HW-fdbf605c5b0c109e",
       "eventId": "EV-81937f2e4fa0f9fe",
@@ -66,34 +121,6 @@
         "EN-9fbf261b62c1d7c0",
         "EN-240389f4b730bad4",
         "EN-2f8f0e714db5c847"
-      ]
-    },
-    {
-      "id": "HW-ea3c1efb007290fa",
-      "eventId": "EV-40dbd71782c11373",
-      "dataDate": "2026-09-05",
-      "date": "2026-09-04",
-      "title": "Deepseek计划在内蒙古建设已知最大的华为芯片集群，配备16万处理器",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_deployment",
-      "eventTypeLabel": "硬件部署",
-      "computeLayer": "data_center",
-      "supplier": "Huawei",
-      "customer": "Deepseek",
-      "processNode": "未披露",
-      "capacity": 160000,
-      "capacityUnit": "",
-      "site": "Inner Mongolia data center",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://the-decoder.com/deepseek-plans-the-largest-known-huawei-chip-cluster-with-160000-processors-in-inner-mongolia",
-      "sourceName": "The Decoder AI News",
-      "sourceDate": "2026-09-04",
-      "entityIds": [
-        "EN-6f7ac1823da81d2e",
-        "EN-b81c8201acfc7639"
       ]
     },
     {
@@ -3234,6 +3261,323 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-0e3e33c7f2b91d6e",
+      "snapshotKey": "0e3e33c7f2b91d6e",
+      "snapshotId": "HWS-f1872eae017d2a3b",
+      "eventId": "EV-c3b67ac2dcd72881",
+      "eventIds": [
+        "EV-c3b67ac2dcd72881"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
+      "title": "塔塔咨询将在海得拉巴",
+      "subject": "塔塔咨询将在海得拉巴",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ee8af8630046a011"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-ee8af8630046a011",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-05T11:07:31.000Z",
+          "subject_entity_id": "EN-e1680f5d27ebecb8",
+          "subject_name": "塔塔咨询将在海得拉巴",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "官方表示，该数据中心可支持面向 AI 模型训练、推理以及复杂高性能计算工作负载的高密度 GPU 部署。",
+          "event_refs": [
+            "EV-c3b67ac2dcd72881"
+          ],
+          "claim_ref": "CL-b39045d774669a22",
+          "source_refs": [
+            "SA-aab90e2b7062a684"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/998/810.htm",
+      "entityIds": [
+        "EN-e1680f5d27ebecb8"
+      ]
+    },
+    {
+      "id": "HWC-e302135ca4bca960",
+      "snapshotKey": "e302135ca4bca960",
+      "snapshotId": "HWS-fd4d593024530ff1",
+      "eventId": "EV-617f1daf708475d0",
+      "eventIds": [
+        "EV-617f1daf708475d0"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
+      "title": "MAI-Image-2.6-Flash",
+      "subject": "Microsoft",
+      "productNames": [
+        "MAI-Image-2.6-Flash"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "72",
+          "unit": "%",
+          "fact_ref": "HWF-fba1c94c53de020f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-fba1c94c53de020f",
+          "fact_type": "product",
+          "observed_at": "2026-09-05T06:58:19.000Z",
+          "subject_entity_id": "EN-9fbf261b62c1d7c0",
+          "subject_name": "Microsoft",
+          "product_entity_ids": [
+            "EN-54239100b953b6ee"
+          ],
+          "product_names": [
+            "MAI-Image-2.6-Flash"
+          ],
+          "component_type": "gpu",
+          "metric_value": "72",
+          "unit": "%",
+          "source_quote": "微软 AI 负责人穆斯塔法 · 苏莱曼（Mustafa Suleyman）今天发布推文，称相比较目前世界上最好的 GPT Image 2（微软官方博文显示为 GPT-Image-2-Medium）， MAI-Image-2.6-Flash 生图速度是其 2 倍 ，GPU 效率提高了 72%。",
+          "event_refs": [
+            "EV-617f1daf708475d0"
+          ],
+          "claim_ref": "CL-680f2c501947f341",
+          "source_refs": [
+            "SA-1895dd86f4666ae4"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/747.htm",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-54239100b953b6ee"
+      ]
+    },
+    {
+      "id": "HWC-25745f3a94bced50",
+      "snapshotKey": "25745f3a94bced50",
+      "snapshotId": "HWS-0bbffd8c520dfdb3",
+      "eventId": "EV-4465e8bfd74508a6",
+      "eventIds": [
+        "EV-4465e8bfd74508a6"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
+      "title": "SmoothRL",
+      "subject": "星海图",
+      "productNames": [
+        "SmoothRL"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-230683fa18d23af4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-06",
+          "previousDate": "2026-09-05",
+          "snapshotId": "HWS-0bbffd8c520dfdb3",
+          "previousSnapshotId": "HWS-2ba148f6c98ba5eb",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-230683fa18d23af4",
+          "fact_type": "product",
+          "observed_at": "2026-09-04T09:19:29.000Z",
+          "subject_entity_id": "EN-a6e5382c05dd0d16",
+          "subject_name": "星海图",
+          "product_entity_ids": [
+            "EN-ec31d2be1b244616"
+          ],
+          "product_names": [
+            "SmoothRL"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理",
+          "event_refs": [
+            "EV-4465e8bfd74508a6"
+          ],
+          "claim_ref": "CL-979bab1216916782",
+          "source_refs": [
+            "SA-ba2bd20116291631"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/09/484437.html",
+      "entityIds": [
+        "EN-a6e5382c05dd0d16",
+        "EN-ec31d2be1b244616"
+      ]
+    },
+    {
+      "id": "HWC-9aa8dc06359294bf",
+      "snapshotKey": "9aa8dc06359294bf",
+      "snapshotId": "HWS-1fa5ff0b9ad62ce5",
+      "eventId": "EV-8e0c25aebb1d4f5f",
+      "eventIds": [
+        "EV-8e0c25aebb1d4f5f"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
+      "title": "SpaceXAI / Grok Bot",
+      "subject": "xAI",
+      "productNames": [
+        "SpaceXAI",
+        "Grok Bot"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c9ae6c8c182afb52"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-06",
+          "previousDate": "2026-09-05",
+          "snapshotId": "HWS-1fa5ff0b9ad62ce5",
+          "previousSnapshotId": "HWS-ca28170b1e050661",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-c9ae6c8c182afb52",
+          "fact_type": "product",
+          "observed_at": "2026-09-05T02:35:59.000Z",
+          "subject_entity_id": "EN-6fcba5d96a4fadfd",
+          "subject_name": "xAI",
+          "product_entity_ids": [
+            "EN-0b9ca57f53ba758b",
+            "EN-92df1be3e37c9268"
+          ],
+          "product_names": [
+            "SpaceXAI",
+            "Grok Bot"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家曾于 8 月报道，SpaceXAI 推出 Grok Bot，让 AI 智能体全天候组队干活，能够登录不同的应用和网站，保留此前任务中的信息，还可以让不同机器人之间共享相关细节和上下文信息。",
+          "event_refs": [
+            "EV-8e0c25aebb1d4f5f"
+          ],
+          "claim_ref": "CL-124beb09461d4505",
+          "source_refs": [
+            "SA-e1c4546606a71d08"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/685.htm",
+      "entityIds": [
+        "EN-6fcba5d96a4fadfd",
+        "EN-3a7bd3e2360a3d29",
+        "EN-0b9ca57f53ba758b",
+        "EN-92df1be3e37c9268"
+      ]
+    },
+    {
       "id": "HWC-aaea2664aab8ab22",
       "snapshotKey": "aaea2664aab8ab22",
       "snapshotId": "HWS-be8ab1af3546a18d",
@@ -3378,164 +3722,6 @@
       "sourceUrl": "https://extruct.ai/data-room/ycombinator-companies-f26",
       "entityIds": [
         "EN-a84cd4bf5dd3e20f"
-      ]
-    },
-    {
-      "id": "HWC-25745f3a94bced50",
-      "snapshotKey": "25745f3a94bced50",
-      "snapshotId": "HWS-2ba148f6c98ba5eb",
-      "eventId": "EV-4465e8bfd74508a6",
-      "eventIds": [
-        "EV-4465e8bfd74508a6"
-      ],
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
-      "title": "SmoothRL",
-      "subject": "星海图",
-      "productNames": [
-        "SmoothRL"
-      ],
-      "hardwareType": "robot",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-aa0b623828e7c314"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-09-05",
-          "hardware_fact_id": "HWF-aa0b623828e7c314",
-          "fact_type": "product",
-          "observed_at": "2026-09-04T09:19:29.000Z",
-          "subject_entity_id": "EN-a6e5382c05dd0d16",
-          "subject_name": "星海图",
-          "product_entity_ids": [
-            "EN-ec31d2be1b244616"
-          ],
-          "product_names": [
-            "SmoothRL"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理",
-          "event_refs": [
-            "EV-4465e8bfd74508a6"
-          ],
-          "claim_ref": "CL-2a718ba2c6aa742e",
-          "source_refs": [
-            "SA-86b613a58a209898"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://qbitai.com/2026/09/484437.html",
-      "entityIds": [
-        "EN-a6e5382c05dd0d16",
-        "EN-ec31d2be1b244616"
-      ]
-    },
-    {
-      "id": "HWC-9aa8dc06359294bf",
-      "snapshotKey": "9aa8dc06359294bf",
-      "snapshotId": "HWS-ca28170b1e050661",
-      "eventId": "EV-8e0c25aebb1d4f5f",
-      "eventIds": [
-        "EV-8e0c25aebb1d4f5f"
-      ],
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
-      "title": "SpaceXAI / Grok Bot",
-      "subject": "xAI",
-      "productNames": [
-        "SpaceXAI",
-        "Grok Bot"
-      ],
-      "hardwareType": "robot",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-40b3953b53f7a5c7"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-09-05",
-          "hardware_fact_id": "HWF-40b3953b53f7a5c7",
-          "fact_type": "product",
-          "observed_at": "2026-09-05T02:35:59.000Z",
-          "subject_entity_id": "EN-6fcba5d96a4fadfd",
-          "subject_name": "xAI",
-          "product_entity_ids": [
-            "EN-0b9ca57f53ba758b",
-            "EN-92df1be3e37c9268"
-          ],
-          "product_names": [
-            "SpaceXAI",
-            "Grok Bot"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家曾于 8 月报道，SpaceXAI 推出 Grok Bot，让 AI 智能体全天候组队干活，能够登录不同的应用和网站，保留此前任务中的信息，还可以让不同机器人之间共享相关细节和上下文信息。",
-          "event_refs": [
-            "EV-8e0c25aebb1d4f5f"
-          ],
-          "claim_ref": "CL-117b967034f753ca",
-          "source_refs": [
-            "SA-e1c4546606a71d08"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/998/685.htm",
-      "entityIds": [
-        "EN-6fcba5d96a4fadfd",
-        "EN-3a7bd3e2360a3d29",
-        "EN-0b9ca57f53ba758b",
-        "EN-92df1be3e37c9268"
       ]
     },
     {
@@ -14318,10 +14504,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-05",
-      "funnel_id": "LF-dc0e189e48649e62",
+      "data_date": "2026-09-06",
+      "funnel_id": "LF-036806cfe7c55241",
       "lens": "hardware",
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
@@ -14329,25 +14515,26 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 14,
-      "original_sources": 9,
-      "valid_claims": 4,
+      "raw_documents": 19,
+      "original_sources": 14,
+      "valid_claims": 0,
       "observations": 4,
-      "canonical_events": 1,
+      "canonical_events": 0,
       "blocker_counts": {
+        "source_outside_daily_window": 6,
         "non_event_or_index_title": 2,
-        "source_outside_daily_window": 4,
-        "rumor_requires_primary_confirmation": 1,
+        "no_source_bounded_event": 1,
+        "source_outside_funding_backfill_window": 2,
         "event_not_ai_relevant": 1,
-        "raw_source_quality_block": 5
+        "raw_source_quality_block": 7
       },
       "rates": {
-        "original_source_rate": 0.6428571428571429,
-        "valid_claim_rate": 0.2857142857142857,
-        "observation_rate": 1,
-        "event_conversion_rate": 0.25
+        "original_source_rate": 0.7368421052631579,
+        "valid_claim_rate": 0,
+        "observation_rate": 0,
+        "event_conversion_rate": 1
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/monitoring-funnel.json"
     }
   ]
 }

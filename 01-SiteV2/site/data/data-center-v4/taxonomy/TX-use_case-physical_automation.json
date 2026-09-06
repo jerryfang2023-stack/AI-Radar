@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -74,8 +74,8 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
-      "EV-358643eefe0a5df5",
       "EV-8e0c25aebb1d4f5f",
+      "EV-358643eefe0a5df5",
       "EV-4465e8bfd74508a6",
       "EV-074a78d3cfaf633b",
       "EV-8b288f548fd59a91",
@@ -234,7 +234,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-06"
   },
   "events": [
     {
@@ -15401,6 +15401,138 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-8e0c25aebb1d4f5f",
+      "dataDate": "2026-09-06",
+      "date": "2026-09-05",
+      "updatedDate": "2026-09-06",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "马斯克旗下 SpaceXAI 将 Grok Bot 拓展至 iPad 和安卓平台",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "马斯克旗下 SpaceXAI 将 Grok Bot 拓展至 iPad 和安卓平台",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6fcba5d96a4fadfd",
+        "EN-3a7bd3e2360a3d29",
+        "EN-0b9ca57f53ba758b",
+        "EN-92df1be3e37c9268"
+      ],
+      "entityNames": [
+        "xAI",
+        "Apple",
+        "SpaceXAI",
+        "Grok Bot"
+      ],
+      "productName": "SpaceXAI",
+      "products": [
+        {
+          "name": "SpaceXAI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "xAI"
+          ]
+        },
+        {
+          "name": "Grok Bot",
+          "type": "产品/服务",
+          "ownerNames": [
+            "xAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/685.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-358643eefe0a5df5",
       "dataDate": "2026-09-05",
       "date": "2026-09-05",
@@ -15574,142 +15706,10 @@
       "publisher": "daily.ai225.com"
     },
     {
-      "id": "EV-8e0c25aebb1d4f5f",
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
-      "updatedDate": "2026-09-05",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "planned",
-      "statusLabel": "计划中",
-      "publicationStatus": "partial",
-      "title": "马斯克旗下 SpaceXAI 将 Grok Bot 拓展至 iPad 和安卓平台",
-      "originalTitle": "",
-      "subject": "undisclosed_subject",
-      "action": "product_release",
-      "object": "马斯克旗下 SpaceXAI 将 Grok Bot 拓展至 iPad 和安卓平台",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-6fcba5d96a4fadfd",
-        "EN-3a7bd3e2360a3d29",
-        "EN-0b9ca57f53ba758b",
-        "EN-92df1be3e37c9268"
-      ],
-      "entityNames": [
-        "xAI",
-        "Apple",
-        "SpaceXAI",
-        "Grok Bot"
-      ],
-      "productName": "SpaceXAI",
-      "products": [
-        {
-          "name": "SpaceXAI",
-          "type": "产品/服务",
-          "ownerNames": [
-            "xAI"
-          ]
-        },
-        {
-          "name": "Grok Bot",
-          "type": "产品/服务",
-          "ownerNames": [
-            "xAI"
-          ]
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/998/685.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
       "id": "EV-4465e8bfd74508a6",
-      "dataDate": "2026-09-05",
+      "dataDate": "2026-09-06",
       "date": "2026-09-04",
-      "updatedDate": "2026-09-05",
+      "updatedDate": "2026-09-06",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
@@ -22035,7 +22035,9 @@
         {
           "name": "Oasis 3",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats",
@@ -22930,9 +22932,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-ai_market_subcategory-development_deployment",
@@ -23246,8 +23248,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-8061c8eb754e0542",
         "EV-f01a13953fa7aaaa",
+        "EV-d626fbf563d8afc7",
+        "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
@@ -23375,7 +23378,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-education",
         "TX-industry-media_entertainment",
@@ -23384,6 +23386,7 @@
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
@@ -23450,7 +23453,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -23662,12 +23665,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
@@ -23755,12 +23758,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation"
       ],
@@ -23858,7 +23861,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-a83a3af1a4866fd5",
@@ -23875,9 +23878,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-ai_market_subcategory-development_deployment",
@@ -24285,9 +24288,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-industry-financial_services"
       ],
@@ -24310,12 +24313,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-04",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-6117af74470fbaa4",
@@ -24403,8 +24406,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-20",
@@ -24461,7 +24464,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-e59f5a52b6713a29",
@@ -24553,10 +24556,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
@@ -24652,8 +24655,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -24745,9 +24748,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [
@@ -24909,8 +24912,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -25001,9 +25004,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-product_form-robotic_system",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [
         "EN-c5456c9421743002"
@@ -25875,6 +25878,184 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-25745f3a94bced50",
+      "snapshotKey": "25745f3a94bced50",
+      "snapshotId": "HWS-0bbffd8c520dfdb3",
+      "eventId": "EV-4465e8bfd74508a6",
+      "eventIds": [
+        "EV-4465e8bfd74508a6"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
+      "title": "SmoothRL",
+      "subject": "星海图",
+      "productNames": [
+        "SmoothRL"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-230683fa18d23af4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-06",
+          "previousDate": "2026-09-05",
+          "snapshotId": "HWS-0bbffd8c520dfdb3",
+          "previousSnapshotId": "HWS-2ba148f6c98ba5eb",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-230683fa18d23af4",
+          "fact_type": "product",
+          "observed_at": "2026-09-04T09:19:29.000Z",
+          "subject_entity_id": "EN-a6e5382c05dd0d16",
+          "subject_name": "星海图",
+          "product_entity_ids": [
+            "EN-ec31d2be1b244616"
+          ],
+          "product_names": [
+            "SmoothRL"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理",
+          "event_refs": [
+            "EV-4465e8bfd74508a6"
+          ],
+          "claim_ref": "CL-979bab1216916782",
+          "source_refs": [
+            "SA-ba2bd20116291631"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/09/484437.html",
+      "entityIds": [
+        "EN-a6e5382c05dd0d16",
+        "EN-ec31d2be1b244616"
+      ]
+    },
+    {
+      "id": "HWC-9aa8dc06359294bf",
+      "snapshotKey": "9aa8dc06359294bf",
+      "snapshotId": "HWS-1fa5ff0b9ad62ce5",
+      "eventId": "EV-8e0c25aebb1d4f5f",
+      "eventIds": [
+        "EV-8e0c25aebb1d4f5f"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
+      "title": "SpaceXAI / Grok Bot",
+      "subject": "xAI",
+      "productNames": [
+        "SpaceXAI",
+        "Grok Bot"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c9ae6c8c182afb52"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-06",
+          "previousDate": "2026-09-05",
+          "snapshotId": "HWS-1fa5ff0b9ad62ce5",
+          "previousSnapshotId": "HWS-ca28170b1e050661",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-c9ae6c8c182afb52",
+          "fact_type": "product",
+          "observed_at": "2026-09-05T02:35:59.000Z",
+          "subject_entity_id": "EN-6fcba5d96a4fadfd",
+          "subject_name": "xAI",
+          "product_entity_ids": [
+            "EN-0b9ca57f53ba758b",
+            "EN-92df1be3e37c9268"
+          ],
+          "product_names": [
+            "SpaceXAI",
+            "Grok Bot"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家曾于 8 月报道，SpaceXAI 推出 Grok Bot，让 AI 智能体全天候组队干活，能够登录不同的应用和网站，保留此前任务中的信息，还可以让不同机器人之间共享相关细节和上下文信息。",
+          "event_refs": [
+            "EV-8e0c25aebb1d4f5f"
+          ],
+          "claim_ref": "CL-124beb09461d4505",
+          "source_refs": [
+            "SA-e1c4546606a71d08"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/685.htm",
+      "entityIds": [
+        "EN-6fcba5d96a4fadfd",
+        "EN-3a7bd3e2360a3d29",
+        "EN-0b9ca57f53ba758b",
+        "EN-92df1be3e37c9268"
+      ]
+    },
+    {
       "id": "HWC-aaea2664aab8ab22",
       "snapshotKey": "aaea2664aab8ab22",
       "snapshotId": "HWS-be8ab1af3546a18d",
@@ -26019,164 +26200,6 @@
       "sourceUrl": "https://extruct.ai/data-room/ycombinator-companies-f26",
       "entityIds": [
         "EN-a84cd4bf5dd3e20f"
-      ]
-    },
-    {
-      "id": "HWC-25745f3a94bced50",
-      "snapshotKey": "25745f3a94bced50",
-      "snapshotId": "HWS-2ba148f6c98ba5eb",
-      "eventId": "EV-4465e8bfd74508a6",
-      "eventIds": [
-        "EV-4465e8bfd74508a6"
-      ],
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
-      "title": "SmoothRL",
-      "subject": "星海图",
-      "productNames": [
-        "SmoothRL"
-      ],
-      "hardwareType": "robot",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-aa0b623828e7c314"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-09-05",
-          "hardware_fact_id": "HWF-aa0b623828e7c314",
-          "fact_type": "product",
-          "observed_at": "2026-09-04T09:19:29.000Z",
-          "subject_entity_id": "EN-a6e5382c05dd0d16",
-          "subject_name": "星海图",
-          "product_entity_ids": [
-            "EN-ec31d2be1b244616"
-          ],
-          "product_names": [
-            "SmoothRL"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理",
-          "event_refs": [
-            "EV-4465e8bfd74508a6"
-          ],
-          "claim_ref": "CL-2a718ba2c6aa742e",
-          "source_refs": [
-            "SA-86b613a58a209898"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://qbitai.com/2026/09/484437.html",
-      "entityIds": [
-        "EN-a6e5382c05dd0d16",
-        "EN-ec31d2be1b244616"
-      ]
-    },
-    {
-      "id": "HWC-9aa8dc06359294bf",
-      "snapshotKey": "9aa8dc06359294bf",
-      "snapshotId": "HWS-ca28170b1e050661",
-      "eventId": "EV-8e0c25aebb1d4f5f",
-      "eventIds": [
-        "EV-8e0c25aebb1d4f5f"
-      ],
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
-      "title": "SpaceXAI / Grok Bot",
-      "subject": "xAI",
-      "productNames": [
-        "SpaceXAI",
-        "Grok Bot"
-      ],
-      "hardwareType": "robot",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-40b3953b53f7a5c7"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-09-05",
-          "hardware_fact_id": "HWF-40b3953b53f7a5c7",
-          "fact_type": "product",
-          "observed_at": "2026-09-05T02:35:59.000Z",
-          "subject_entity_id": "EN-6fcba5d96a4fadfd",
-          "subject_name": "xAI",
-          "product_entity_ids": [
-            "EN-0b9ca57f53ba758b",
-            "EN-92df1be3e37c9268"
-          ],
-          "product_names": [
-            "SpaceXAI",
-            "Grok Bot"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家曾于 8 月报道，SpaceXAI 推出 Grok Bot，让 AI 智能体全天候组队干活，能够登录不同的应用和网站，保留此前任务中的信息，还可以让不同机器人之间共享相关细节和上下文信息。",
-          "event_refs": [
-            "EV-8e0c25aebb1d4f5f"
-          ],
-          "claim_ref": "CL-117b967034f753ca",
-          "source_refs": [
-            "SA-e1c4546606a71d08"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/998/685.htm",
-      "entityIds": [
-        "EN-6fcba5d96a4fadfd",
-        "EN-3a7bd3e2360a3d29",
-        "EN-0b9ca57f53ba758b",
-        "EN-92df1be3e37c9268"
       ]
     },
     {

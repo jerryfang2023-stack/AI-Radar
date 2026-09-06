@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -36,6 +36,7 @@
       "EV-88f4ee8cd57bdf42",
       "EV-44a4e92c03a31ab1",
       "EV-7585b033d4005977",
+      "EV-eb282b4658bbdd7e",
       "EV-87c5f6dcc769999c",
       "EV-be76a1e5ed2b6cf5",
       "EV-e46756260827cd86",
@@ -70,6 +71,8 @@
       "EV-58c1cc3749294649",
       "EV-c0a65877001ed413",
       "EV-bd508dbe4205774f",
+      "EV-617f1daf708475d0",
+      "EV-7db34aecc1e1e817",
       "EV-6d92bb807f339b53",
       "EV-d5db0416bede29de",
       "EV-c638f91cbb8bf845",
@@ -145,6 +148,8 @@
       "EV-d596f111808bd55b",
       "EV-a4f052325d0ef230",
       "EV-6ce6b9c9780b97d9",
+      "EV-86516e11c8a7f94d",
+      "EV-cdc2db5ed61d59bb",
       "EV-b1ac270277a5c1bc",
       "EV-d06e34a0546a00a5",
       "EV-649481503cdb7736",
@@ -188,7 +193,7 @@
       "EN-10fce287b4b1464c"
     ],
     "firstSeen": "2026-02-13",
-    "lastSeen": "2026-09-05",
+    "lastSeen": "2026-09-06",
     "relationIds": [
       "REL2-ee25fecc7314abd4",
       "REL2-62f415d53b9e1307",
@@ -223,6 +228,7 @@
         "EV-44a4e92c03a31ab1"
       ],
       "deployments": [
+        "EV-eb282b4658bbdd7e",
         "EV-87c5f6dcc769999c",
         "EV-be76a1e5ed2b6cf5",
         "EV-e46756260827cd86",
@@ -262,6 +268,8 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-617f1daf708475d0",
+        "EV-7db34aecc1e1e817",
         "EV-6d92bb807f339b53",
         "EV-d5db0416bede29de",
         "EV-8232ad0075a77b7a",
@@ -351,12 +359,136 @@
         "EV-933294dfb2d19a67"
       ],
       "other": [
+        "EV-86516e11c8a7f94d",
+        "EV-cdc2db5ed61d59bb",
         "EV-b1ac270277a5c1bc",
         "EV-1587a760d81451be",
         "EV-7580a050ca19a8ae"
       ]
     },
     "timeline": [
+      {
+        "id": "EV-eb282b4658bbdd7e",
+        "dataDate": "2026-09-06",
+        "date": "2026-08-30",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "企业AI智能体：21个实际部署案例 - AI周刊",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4d748ebd71af03a7",
+          "EN-9fbf261b62c1d7c0",
+          "EN-c13e2f4a44bb01ed",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-617f1daf708475d0",
+        "dataDate": "2026-09-06",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "微软发布 MAI-Image-2.6-Flash：生图速度是 GPT Image 2 的 2 倍",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-54239100b953b6ee"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "image_generation",
+            "name": "图像生成",
+            "entityIds": [
+              "EN-9fbf261b62c1d7c0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-54239100b953b6ee"
+        ]
+      },
+      {
+        "id": "EV-7db34aecc1e1e817",
+        "dataDate": "2026-09-06",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "微软预告 Excel 新增 Copilot Canvas AI 画布，打造可视化交互式数据看板",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9d71991d2be3299a",
+          "EN-9fbf261b62c1d7c0",
+          "EN-52eb8eceb3a576d4"
+        ]
+      },
+      {
+        "id": "EV-86516e11c8a7f94d",
+        "dataDate": "2026-09-06",
+        "date": "2026-09-05",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "《西雅图时报》与 Newsday 起诉 OpenAI 和 Microsoft 涉嫌版权侵权",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-1226f22c559007e0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-48546e0df08910e1",
+          "EN-1226f22c559007e0",
+          "EN-7d3194f79e645c42",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
+        "id": "EV-cdc2db5ed61d59bb",
+        "dataDate": "2026-09-06",
+        "date": "2026-09-05",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "《西雅图时报》与《新闻日报》起诉 OpenAI 和微软，指控 AI 训练侵犯版权",
+        "displayTags": [],
+        "entityIds": [
+          "EN-48546e0df08910e1",
+          "EN-2a75389920b0d5e0",
+          "EN-7d3194f79e645c42",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
       {
         "id": "EV-6d92bb807f339b53",
         "dataDate": "2026-09-05",
@@ -4765,8 +4897,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-8061c8eb754e0542",
         "EV-f01a13953fa7aaaa",
+        "EV-d626fbf563d8afc7",
+        "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
@@ -4894,7 +5027,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-education",
         "TX-industry-media_entertainment",
@@ -4903,6 +5035,7 @@
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
@@ -4969,7 +5102,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-688f8db7018da7d4",
@@ -5158,6 +5291,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-636b45c518ae1313",
         "EV-61b1ddeb1e7b7043",
         "EV-fb33ae9b7f9454bf",
         "EV-0121f0a9e9a975ec",
@@ -5212,11 +5346,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-39abdf174aa3aeec",
+        "EV-cb1bc28f78888566",
         "EV-358643eefe0a5df5",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
+        "EV-ffa46f84468cffd9",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -5228,7 +5364,6 @@
         "EV-125040ec61215481",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
-        "EV-ffa46f84468cffd9",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -5444,9 +5579,13 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-345378cb7f1f64fd",
+        "EV-3bb3577e52eb08ea",
+        "EV-86516e11c8a7f94d",
+        "EV-cdc2db5ed61d59bb",
+        "EV-4efa076340382741",
         "EV-7371ffb603de3e1c",
         "EV-d04298029a8ab693",
+        "EV-345378cb7f1f64fd",
         "EV-bf57b79e05a537e6",
         "EV-23ebd5f5d32e950a",
         "EV-b1ac270277a5c1bc",
@@ -5536,11 +5675,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
@@ -5598,7 +5737,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-38945a66b4806b11",
@@ -6474,6 +6613,7 @@
         "EV-c108e7cc2df7faf4",
         "EV-83acf26a011ef213",
         "EV-c7a2774b07554f5d",
+        "EV-86516e11c8a7f94d",
         "EV-d5d985325a1baacb",
         "EV-f2d29ca7b05c3dd9",
         "EV-32a5af8d5ef80073"
@@ -6519,6 +6659,7 @@
         "EN-8a96f1a807787797",
         "EN-28d79881d0386305",
         "EN-c70eca6b0f88f44d",
+        "EN-1226f22c559007e0",
         "EN-89d01c9ba73cb5c4",
         "EN-50537dab76505dfc"
       ],
@@ -6528,7 +6669,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -6708,7 +6849,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -6923,8 +7064,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-358643eefe0a5df5",
+        "EV-50e7de294816f918",
         "EV-8e0c25aebb1d4f5f",
+        "EV-358643eefe0a5df5",
+        "EV-7d0144597aa9b489",
         "EV-36a9af9b98a66be3",
         "EV-4809eb76696a9e61",
         "EV-51dcf527010e4f19",
@@ -7407,9 +7550,10 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-32e83e92d45d71f6",
-        "EN-2b6e51bec93e86c1",
         "EN-bbdefa2950f49882",
+        "EN-32e83e92d45d71f6",
+        "EN-8ff5e729cd4089df",
+        "EN-2b6e51bec93e86c1",
         "EN-c70eca6b0f88f44d",
         "EN-373ac021a2c0bb2c",
         "EN-0d47d3f0783749a8",
@@ -7891,7 +8035,7 @@
         "HW-cff6ff4add035b48"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "TX-technology-image_generation",
@@ -7902,6 +8046,7 @@
       "eventIds": [
         "EV-657176fd0dff6209",
         "EV-fd329b4350f404ef",
+        "EV-617f1daf708475d0",
         "EV-ea2598236eae915f",
         "EV-5111b297a0234e46",
         "EV-cf4da5583e9311d7",
@@ -7916,9 +8061,9 @@
       "entityIds": [
         "EN-336ab1deb42d6284",
         "EN-b97e07c31e87f7d0",
+        "EN-9fbf261b62c1d7c0",
         "EN-4721e06a8b6d85ff",
         "EN-bbdefa2950f49882",
-        "EN-9fbf261b62c1d7c0",
         "EN-bae152c4560df38c",
         "EN-ea3bd73e2b506e00",
         "EN-534e99d81da1c54d",
@@ -7928,7 +8073,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -8189,6 +8334,46 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-5ebb24c6d956139a",
+      "eventId": "EV-eb282b4658bbdd7e",
+      "dataDate": "2026-09-06",
+      "date": "2026-08-30",
+      "title": "企业AI智能体：21个实际部署案例 - AI周刊",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Accenture",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Microsoft 365 Copilot",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Samsung SDS is deploying Claude Enterprise and Claude Code across Samsung affiliates and training applied-AI engineers with Anthropic.",
+        "Deloitte is deploying Anthropic's Claude to its 470,000 employees as an anchor partner in the Claude Partner Network, alongside Cognizant's rollout to roughly 350,000 associates."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/use/enterprise-copilots",
+      "entityIds": [
+        "EN-4d748ebd71af03a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDE-1157d9714feb1476",
       "eventId": "EV-8321e5cd7d423d62",
@@ -9118,6 +9303,58 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-272210d4c120a9f6",
+      "implementationKey": "272210d4c120a9f6",
+      "eventId": "EV-eb282b4658bbdd7e",
+      "eventIds": [
+        "EV-eb282b4658bbdd7e"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-08-30",
+      "title": "Accenture × 未披露：Microsoft 365 Copilot",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Accenture",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Microsoft 365 Copilot",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-c807d8ec837bb36b",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-30",
+          "dataDate": "2026-09-06",
+          "eventId": "EV-eb282b4658bbdd7e",
+          "eventTitle": "企业AI智能体：21个实际部署案例 - AI周刊",
+          "claimCount": 3,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/use/enterprise-copilots",
+      "entityIds": [
+        "EN-4d748ebd71af03a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDED-69f02b9f8472ef65",
       "implementationKey": "69f02b9f8472ef65",
       "eventId": "EV-8321e5cd7d423d62",
@@ -9352,6 +9589,85 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-e302135ca4bca960",
+      "snapshotKey": "e302135ca4bca960",
+      "snapshotId": "HWS-fd4d593024530ff1",
+      "eventId": "EV-617f1daf708475d0",
+      "eventIds": [
+        "EV-617f1daf708475d0"
+      ],
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
+      "title": "MAI-Image-2.6-Flash",
+      "subject": "Microsoft",
+      "productNames": [
+        "MAI-Image-2.6-Flash"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "72",
+          "unit": "%",
+          "fact_ref": "HWF-fba1c94c53de020f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-fba1c94c53de020f",
+          "fact_type": "product",
+          "observed_at": "2026-09-05T06:58:19.000Z",
+          "subject_entity_id": "EN-9fbf261b62c1d7c0",
+          "subject_name": "Microsoft",
+          "product_entity_ids": [
+            "EN-54239100b953b6ee"
+          ],
+          "product_names": [
+            "MAI-Image-2.6-Flash"
+          ],
+          "component_type": "gpu",
+          "metric_value": "72",
+          "unit": "%",
+          "source_quote": "微软 AI 负责人穆斯塔法 · 苏莱曼（Mustafa Suleyman）今天发布推文，称相比较目前世界上最好的 GPT Image 2（微软官方博文显示为 GPT-Image-2-Medium）， MAI-Image-2.6-Flash 生图速度是其 2 倍 ，GPU 效率提高了 72%。",
+          "event_refs": [
+            "EV-617f1daf708475d0"
+          ],
+          "claim_ref": "CL-680f2c501947f341",
+          "source_refs": [
+            "SA-1895dd86f4666ae4"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/747.htm",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-54239100b953b6ee"
+      ]
+    },
     {
       "id": "HWC-5011ab43f9121e5e",
       "snapshotKey": "5011ab43f9121e5e",

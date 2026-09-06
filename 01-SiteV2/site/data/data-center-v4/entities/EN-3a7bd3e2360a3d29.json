@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -96,6 +96,7 @@
       "EV-ebef81764102ee7c",
       "EV-f6611268f119a172",
       "EV-342799d4e68e7416",
+      "EV-3bb3577e52eb08ea",
       "EV-c06d008e73a0d337",
       "EV-4a982ba6f291ddec",
       "EV-9434ab7a2e818ce9",
@@ -140,7 +141,7 @@
       "EN-45b5216872656eb3"
     ],
     "firstSeen": "2026-06-04",
-    "lastSeen": "2026-09-05",
+    "lastSeen": "2026-09-06",
     "relationIds": [
       "REL2-a3bd8b736cbfac80",
       "REL2-2c82bf25c532a4e1",
@@ -249,6 +250,7 @@
         "EV-7d4b4b8d4e3599d4"
       ],
       "other": [
+        "EV-3bb3577e52eb08ea",
         "EV-9434ab7a2e818ce9",
         "EV-4b0065f780bd73bd",
         "EV-e07d82ffbad83150",
@@ -272,6 +274,59 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-8e0c25aebb1d4f5f",
+        "dataDate": "2026-09-06",
+        "date": "2026-09-05",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "马斯克旗下 SpaceXAI 将 Grok Bot 拓展至 iPad 和安卓平台",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-3a7bd3e2360a3d29",
+          "EN-92df1be3e37c9268"
+        ]
+      },
+      {
+        "id": "EV-3bb3577e52eb08ea",
+        "dataDate": "2026-09-06",
+        "date": "2026-09-05",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "奥尔特曼称自己是苹果超级果粉，对苹果起诉 OpenAI 感到难过",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bef8e6b8efae8306",
+          "EN-3a7bd3e2360a3d29",
+          "EN-7d3194f79e645c42"
+        ]
+      },
       {
         "id": "EV-2f0f3200b9800877",
         "dataDate": "2026-09-05",
@@ -373,42 +428,6 @@
           "EN-3a7bd3e2360a3d29",
           "EN-cd6362472aea60ef",
           "EN-9c8ae69b84f21a2e"
-        ]
-      },
-      {
-        "id": "EV-8e0c25aebb1d4f5f",
-        "dataDate": "2026-09-05",
-        "date": "2026-09-05",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "planned",
-        "statusLabel": "计划中",
-        "title": "马斯克旗下 SpaceXAI 将 Grok Bot 拓展至 iPad 和安卓平台",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-6fcba5d96a4fadfd",
-          "EN-3a7bd3e2360a3d29",
-          "EN-92df1be3e37c9268"
         ]
       },
       {
@@ -2766,6 +2785,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-636b45c518ae1313",
         "EV-61b1ddeb1e7b7043",
         "EV-fb33ae9b7f9454bf",
         "EV-0121f0a9e9a975ec",
@@ -2820,11 +2840,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-39abdf174aa3aeec",
+        "EV-cb1bc28f78888566",
         "EV-358643eefe0a5df5",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
+        "EV-ffa46f84468cffd9",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -2836,7 +2858,6 @@
         "EV-125040ec61215481",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
-        "EV-ffa46f84468cffd9",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -3052,9 +3073,13 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-345378cb7f1f64fd",
+        "EV-3bb3577e52eb08ea",
+        "EV-86516e11c8a7f94d",
+        "EV-cdc2db5ed61d59bb",
+        "EV-4efa076340382741",
         "EV-7371ffb603de3e1c",
         "EV-d04298029a8ab693",
+        "EV-345378cb7f1f64fd",
         "EV-bf57b79e05a537e6",
         "EV-23ebd5f5d32e950a",
         "EV-b1ac270277a5c1bc",
@@ -3144,11 +3169,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
@@ -3206,7 +3231,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-e463d05a14e8697f",
@@ -3887,8 +3912,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-358643eefe0a5df5",
+        "EV-50e7de294816f918",
         "EV-8e0c25aebb1d4f5f",
+        "EV-358643eefe0a5df5",
+        "EV-7d0144597aa9b489",
         "EV-36a9af9b98a66be3",
         "EV-4809eb76696a9e61",
         "EV-51dcf527010e4f19",
@@ -4371,9 +4398,10 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-32e83e92d45d71f6",
-        "EN-2b6e51bec93e86c1",
         "EN-bbdefa2950f49882",
+        "EN-32e83e92d45d71f6",
+        "EN-8ff5e729cd4089df",
+        "EN-2b6e51bec93e86c1",
         "EN-c70eca6b0f88f44d",
         "EN-373ac021a2c0bb2c",
         "EN-0d47d3f0783749a8",
@@ -5047,13 +5075,13 @@
     {
       "id": "HWC-9aa8dc06359294bf",
       "snapshotKey": "9aa8dc06359294bf",
-      "snapshotId": "HWS-ca28170b1e050661",
+      "snapshotId": "HWS-1fa5ff0b9ad62ce5",
       "eventId": "EV-8e0c25aebb1d4f5f",
       "eventIds": [
         "EV-8e0c25aebb1d4f5f"
       ],
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
       "title": "SpaceXAI / Grok Bot",
       "subject": "xAI",
       "productNames": [
@@ -5068,18 +5096,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-40b3953b53f7a5c7"
+          "fact_ref": "HWF-c9ae6c8c182afb52"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-06",
+          "previousDate": "2026-09-05",
+          "snapshotId": "HWS-1fa5ff0b9ad62ce5",
+          "previousSnapshotId": "HWS-ca28170b1e050661",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-09-05",
-          "hardware_fact_id": "HWF-40b3953b53f7a5c7",
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-c9ae6c8c182afb52",
           "fact_type": "product",
           "observed_at": "2026-09-05T02:35:59.000Z",
           "subject_entity_id": "EN-6fcba5d96a4fadfd",
@@ -5099,11 +5137,11 @@
           "event_refs": [
             "EV-8e0c25aebb1d4f5f"
           ],
-          "claim_ref": "CL-117b967034f753ca",
+          "claim_ref": "CL-124beb09461d4505",
           "source_refs": [
             "SA-e1c4546606a71d08"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
         }
       ],
       "capexFacts": [],

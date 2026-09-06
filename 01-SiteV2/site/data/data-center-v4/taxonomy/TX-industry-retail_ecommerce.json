@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "node": {
@@ -88,7 +88,8 @@
       "EV-52e1ac21c25a0a09",
       "EV-040a66dd1ae1ab32",
       "EV-6ce6b9c9780b97d9",
-      "EV-dd62847548bb6ae3"
+      "EV-dd62847548bb6ae3",
+      "EV-81a78212d3927bc4"
     ],
     "entityIds": [
       "EN-a31f26263a2fe821",
@@ -150,7 +151,8 @@
       "EN-40e307d789f77264",
       "EN-a29bf111a9414273",
       "EN-61cce404a45c3545",
-      "EN-4a639cb888a15d75"
+      "EN-4a639cb888a15d75",
+      "EN-fbafd39fc890e662"
     ],
     "fdeIds": [
       "FDE-92651b837298ec81",
@@ -163,7 +165,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-09-04"
+    "lastSeen": "2026-09-06"
   },
   "events": [
     {
@@ -24961,7 +24963,9 @@
         {
           "name": "Oasis 3",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats",
@@ -25717,6 +25721,88 @@
       ],
       "sourceUrl": "https://supermicro.com/en/pressreleases/supermicro-introduces-compact-energy-efficient-systems-accelerate-adoption",
       "publisher": "supermicro.com"
+    },
+    {
+      "id": "EV-81a78212d3927bc4",
+      "dataDate": "2026-09-06",
+      "date": "2026-09-05",
+      "updatedDate": "2026-09-06",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "研究称得克萨斯州大学毕业生失业率在 AI 快速发展期间升至异常高水平",
+      "originalTitle": "",
+      "subject": "达拉斯联邦储备银行研究人员",
+      "action": "research_result",
+      "object": "得克萨斯州大学毕业生失业率升至异常高水平",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-fbafd39fc890e662"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-fbafd39fc890e662"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-fbafd39fc890e662"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a8ba56e1dfa501b1",
+        "EN-fbafd39fc890e662"
+      ],
+      "entityNames": [
+        "达拉斯联邦储备银行研究人员",
+        "斯坦福大学数字经济实验室"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/998/782.htm",
+      "publisher": "IT之家（RSS）"
     }
   ],
   "entities": [
@@ -25855,8 +25941,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-8061c8eb754e0542",
         "EV-f01a13953fa7aaaa",
+        "EV-d626fbf563d8afc7",
+        "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
@@ -25984,7 +26071,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-education",
         "TX-industry-media_entertainment",
@@ -25993,6 +26079,7 @@
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
@@ -26059,7 +26146,7 @@
         "EN-a3266ab9e10d6105"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-67e8c106650aa683",
@@ -26076,12 +26163,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-media_entertainment",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-technology-agentic_execution",
@@ -26200,12 +26287,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
+        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-retail_ecommerce",
@@ -26340,8 +26427,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-target_user-business_user",
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
@@ -26540,6 +26627,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-636b45c518ae1313",
         "EV-61b1ddeb1e7b7043",
         "EV-fb33ae9b7f9454bf",
         "EV-0121f0a9e9a975ec",
@@ -26594,11 +26682,13 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-39abdf174aa3aeec",
+        "EV-cb1bc28f78888566",
         "EV-358643eefe0a5df5",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-cb1bc28f78888566",
         "EV-293d6feac5b8efab",
+        "EV-ffa46f84468cffd9",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -26610,7 +26700,6 @@
         "EV-125040ec61215481",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
-        "EV-ffa46f84468cffd9",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -26826,9 +26915,13 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-345378cb7f1f64fd",
+        "EV-3bb3577e52eb08ea",
+        "EV-86516e11c8a7f94d",
+        "EV-cdc2db5ed61d59bb",
+        "EV-4efa076340382741",
         "EV-7371ffb603de3e1c",
         "EV-d04298029a8ab693",
+        "EV-345378cb7f1f64fd",
         "EV-bf57b79e05a537e6",
         "EV-23ebd5f5d32e950a",
         "EV-b1ac270277a5c1bc",
@@ -26918,11 +27011,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
@@ -26980,7 +27073,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-e69f64149edae6b1",
@@ -27092,10 +27185,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-target_user-business_user",
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-manufacturing",
         "TX-product_form-end_user_application",
@@ -28041,6 +28134,7 @@
         "EV-ed8260ee9a7a80af",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
+        "EV-eb282b4658bbdd7e",
         "EV-61b1ddeb1e7b7043",
         "EV-4aff64511cfa8577",
         "EV-892228f3d092004f",
@@ -28384,7 +28478,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-education",
         "TX-industry-media_entertainment",
@@ -28392,6 +28485,7 @@
         "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-developer",
@@ -28425,6 +28519,7 @@
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
+        "EN-e65e0f2695fa259d",
         "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-fa12a0c13e906f43",
@@ -28439,7 +28534,6 @@
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
-        "EN-e65e0f2695fa259d",
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
@@ -28449,7 +28543,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-35e36dc1a5213fa3",
@@ -28470,8 +28564,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-knowledge_search",
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
@@ -28574,9 +28668,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -28631,6 +28723,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-50e7de294816f918",
         "EV-6b0106ef4a79df05",
         "EV-a74ea4ad6a095ac3",
         "EV-b22136a993b21f0c",
@@ -28816,10 +28909,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-technology-embodied_ai",
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-developer",
@@ -28842,6 +28935,7 @@
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
+        "TX-deployment_model-cloud",
         "TX-technology-computer_use",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -28849,19 +28943,16 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -28869,7 +28960,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "EN-5e1fcba4c9f1cf69",
@@ -28981,6 +29072,27 @@
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "EN-fbafd39fc890e662",
+      "name": "斯坦福大学数字经济实验室",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-81a78212d3927bc4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-05",
+      "lastSeen": "2026-09-06"
     }
   ],
   "fde": [

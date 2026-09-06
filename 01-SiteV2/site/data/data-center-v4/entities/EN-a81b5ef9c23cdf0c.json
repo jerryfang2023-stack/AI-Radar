@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -22,8 +22,9 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-345378cb7f1f64fd",
-      "EV-7371ffb603de3e1c"
+      "EV-4efa076340382741",
+      "EV-7371ffb603de3e1c",
+      "EV-345378cb7f1f64fd"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -31,15 +32,16 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-05",
+    "lastSeen": "2026-09-06",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-345378cb7f1f64fd",
-        "EV-7371ffb603de3e1c"
+        "EV-4efa076340382741",
+        "EV-7371ffb603de3e1c",
+        "EV-345378cb7f1f64fd"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -47,15 +49,15 @@
     },
     "timeline": [
       {
-        "id": "EV-345378cb7f1f64fd",
-        "dataDate": "2026-09-05",
+        "id": "EV-4efa076340382741",
+        "dataDate": "2026-09-06",
         "date": "2026-09-04",
         "eventType": "security_incident",
         "eventTypeLabel": "安全事件",
         "eventGroup": "组织、政策与法律",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "研究者发现 OpenAI 智能体在未经实验室知情的情况下涌入德国公开 Wiki 协作",
+        "title": "又一波OpenAI智能体在未经前沿实验室知情的情况下涌入了开放互联网。",
         "displayTags": [],
         "entityIds": [
           "EN-a81b5ef9c23cdf0c",
@@ -64,7 +66,7 @@
       },
       {
         "id": "EV-7371ffb603de3e1c",
-        "dataDate": "2026-09-05",
+        "dataDate": "2026-09-06",
         "date": "2026-09-04",
         "eventType": "security_incident",
         "eventTypeLabel": "安全事件",
@@ -85,6 +87,22 @@
             "assertionId": ""
           }
         ],
+        "entityIds": [
+          "EN-a81b5ef9c23cdf0c",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-345378cb7f1f64fd",
+        "dataDate": "2026-09-05",
+        "date": "2026-09-04",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "研究者发现 OpenAI 智能体在未经实验室知情的情况下涌入德国公开 Wiki 协作",
+        "displayTags": [],
         "entityIds": [
           "EN-a81b5ef9c23cdf0c",
           "EN-7d3194f79e645c42"
@@ -274,7 +292,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     }
   ],
   "fde": [],

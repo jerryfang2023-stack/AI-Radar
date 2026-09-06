@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-05T04:50:09.388Z",
-    "latestDataDate": "2026-09-05",
-    "currentDate": "2026-09-05",
-    "eventCount": 2671,
+    "generatedAt": "2026-09-06T00:28:48.601Z",
+    "latestDataDate": "2026-09-06",
+    "currentDate": "2026-09-06",
+    "eventCount": 2688,
     "quarantinedEventCount": 23
   },
   "entity": {
@@ -45,7 +45,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-05",
+    "lastSeen": "2026-09-06",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -65,7 +65,7 @@
     "timeline": [
       {
         "id": "EV-4465e8bfd74508a6",
-        "dataDate": "2026-09-05",
+        "dataDate": "2026-09-06",
         "date": "2026-09-04",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
@@ -1160,8 +1160,8 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
-        "EV-358643eefe0a5df5",
         "EV-8e0c25aebb1d4f5f",
+        "EV-358643eefe0a5df5",
         "EV-4465e8bfd74508a6",
         "EV-074a78d3cfaf633b",
         "EV-8b288f548fd59a91",
@@ -1320,7 +1320,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -1694,7 +1694,7 @@
         "HW-cff6ff4add035b48"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-06"
     },
     {
       "id": "TX-industry-logistics_supply_chain",
@@ -1891,13 +1891,13 @@
     {
       "id": "HWC-25745f3a94bced50",
       "snapshotKey": "25745f3a94bced50",
-      "snapshotId": "HWS-2ba148f6c98ba5eb",
+      "snapshotId": "HWS-0bbffd8c520dfdb3",
       "eventId": "EV-4465e8bfd74508a6",
       "eventIds": [
         "EV-4465e8bfd74508a6"
       ],
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
+      "dataDate": "2026-09-06",
+      "date": "2026-09-06",
       "title": "SmoothRL",
       "subject": "星海图",
       "productNames": [
@@ -1911,18 +1911,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-aa0b623828e7c314"
+          "fact_ref": "HWF-230683fa18d23af4"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-06",
+          "previousDate": "2026-09-05",
+          "snapshotId": "HWS-0bbffd8c520dfdb3",
+          "previousSnapshotId": "HWS-2ba148f6c98ba5eb",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-09-05",
-          "hardware_fact_id": "HWF-aa0b623828e7c314",
+          "data_date": "2026-09-06",
+          "hardware_fact_id": "HWF-230683fa18d23af4",
           "fact_type": "product",
           "observed_at": "2026-09-04T09:19:29.000Z",
           "subject_entity_id": "EN-a6e5382c05dd0d16",
@@ -1940,11 +1950,11 @@
           "event_refs": [
             "EV-4465e8bfd74508a6"
           ],
-          "claim_ref": "CL-2a718ba2c6aa742e",
+          "claim_ref": "CL-979bab1216916782",
           "source_refs": [
-            "SA-86b613a58a209898"
+            "SA-ba2bd20116291631"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-05/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/hardware-facts.json"
         }
       ],
       "capexFacts": [],
