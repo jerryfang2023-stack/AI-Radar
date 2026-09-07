@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "node": {
     "id": "TX-deployment_model-on_premise",
@@ -2347,7 +2347,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2402,8 +2404,10 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-50e7de294816f918",
+        "EV-54451ee210a0d0d4",
         "EV-6b0106ef4a79df05",
+        "EV-db926055d40a4dff",
+        "EV-50e7de294816f918",
         "EV-a74ea4ad6a095ac3",
         "EV-b22136a993b21f0c",
         "EV-b8a7ddde8a7e42c8",
@@ -2592,12 +2596,12 @@
         "TX-target_user-business_user",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
+        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-open_weights",
@@ -2622,16 +2626,19 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -2639,7 +2646,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-06"
+      "lastSeen": "2026-09-07"
     },
     {
       "id": "EN-cb4754c48f8023d0",
@@ -2848,10 +2855,12 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-fbdc0b51572a88a4",
         "EV-617f1daf708475d0",
         "EV-7db34aecc1e1e817",
         "EV-6d92bb807f339b53",
         "EV-d5db0416bede29de",
+        "EV-8d48a9b8a69c331d",
         "EV-c638f91cbb8bf845",
         "EV-8232ad0075a77b7a",
         "EV-ad41b8a1f9f8d747",
@@ -2925,6 +2934,8 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-34b7b2083170b680",
+        "EV-81f3efe8cc085ef4",
         "EV-86516e11c8a7f94d",
         "EV-cdc2db5ed61d59bb",
         "EV-b1ac270277a5c1bc",
@@ -2946,9 +2957,9 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-target_user-consumer",
-        "TX-use_case-security_operations",
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
+        "TX-use_case-security_operations",
         "TX-technology-image_generation",
         "TX-use_case-data_analysis",
         "TX-technology-mixture_of_experts",
@@ -2970,7 +2981,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-06"
+      "lastSeen": "2026-09-07"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -2987,8 +2998,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-open_weights",
         "TX-product_form-chip_accelerator",
+        "TX-technology-open_weights",
         "TX-deployment_model-on_premise"
       ],
       "relatedEntityIds": [
@@ -3019,9 +3030,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_infrastructure_software",
-        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
+        "TX-technology-agentic_execution",
+        "TX-product_form-ai_infrastructure_software",
         "TX-deployment_model-on_premise"
       ],
       "relatedEntityIds": [

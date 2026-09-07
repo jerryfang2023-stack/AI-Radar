@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "fde": [
     {
@@ -9152,38 +9152,39 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-06",
-      "funnel_id": "LF-3e84f1ffaa8cff1d",
+      "data_date": "2026-09-07",
+      "funnel_id": "LF-b3e5129b19e63467",
       "lens": "fde",
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 110,
-      "original_sources": 102,
-      "valid_claims": 36,
-      "observations": 1,
-      "canonical_events": 15,
+      "raw_documents": 115,
+      "original_sources": 100,
+      "valid_claims": 42,
+      "observations": 0,
+      "canonical_events": 17,
       "blocker_counts": {
-        "event_not_ai_relevant": 3,
-        "repository_page_requires_release_source": 2,
-        "no_source_bounded_claim": 2,
-        "source_outside_daily_window": 58,
-        "non_event_or_index_title": 7,
-        "no_source_bounded_event": 12,
+        "source_outside_daily_window": 54,
+        "non_event_or_index_title": 4,
+        "no_source_bounded_event": 15,
+        "source_published_after_data_date": 2,
+        "directory_page_not_event_source": 2,
+        "event_not_ai_relevant": 2,
         "opinion_without_source_bounded_event": 2,
-        "raw_source_quality_block": 8
+        "repository_page_requires_release_source": 1,
+        "raw_source_quality_block": 15
       },
       "rates": {
-        "original_source_rate": 0.9272727272727272,
-        "valid_claim_rate": 0.32727272727272727,
-        "observation_rate": 0.027777777777777776,
-        "event_conversion_rate": 0.4166666666666667
+        "original_source_rate": 0.8695652173913043,
+        "valid_claim_rate": 0.3652173913043478,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.40476190476190477
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-06/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-07/monitoring-funnel.json"
     }
   ]
 }

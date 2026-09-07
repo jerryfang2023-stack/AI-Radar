@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "node": {
     "id": "TX-technology-vision_language",
@@ -19,6 +19,7 @@
     "valueId": "vision_language",
     "eventIds": [
       "EV-6f092cfc7a064d64",
+      "EV-6a3286e2186e4774",
       "EV-7c53df0cdea33936",
       "EV-39d56d5cef4cea80",
       "EV-03ab7d0b40d1e5b5",
@@ -31,6 +32,7 @@
     ],
     "entityIds": [
       "EN-2b6e51bec93e86c1",
+      "EN-bae152c4560df38c",
       "EN-a658fbc24f5e3832",
       "EN-593d0361124f348f",
       "EN-3c6d89173e6636d7",
@@ -42,7 +44,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-06",
-    "lastSeen": "2026-08-16"
+    "lastSeen": "2026-09-07"
   },
   "events": [
     {
@@ -390,6 +392,145 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product",
       "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-6a3286e2186e4774",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里千问开源 Qwen-Drive-1.0-4B 自动驾驶视觉语言模型",
+      "originalTitle": "",
+      "subject": "阿里千问",
+      "action": "开源 Qwen-Drive-1.0-4B 自动驾驶视觉语言模型",
+      "object": "阿里千问开源 Qwen-Drive-1.0-4B 自动驾驶视觉语言模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-bae152c4560df38c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bae152c4560df38c",
+        "EN-047364b9be67f665",
+        "EN-30c8eadb9e215134"
+      ],
+      "entityNames": [
+        "阿里千问",
+        "Alibaba",
+        "Qwen-Drive-1.0-4B"
+      ],
+      "productName": "Qwen-Drive-1.0-4B",
+      "products": [
+        {
+          "name": "Qwen-Drive-1.0-4B",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/997.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-7c53df0cdea33936",
@@ -1672,6 +1813,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-db926055d40a4dff",
         "EV-2db5afe6d0aa14b5",
         "EV-6ffd497940673b62",
         "EV-859489cd3fa4e596",
@@ -1719,9 +1861,10 @@
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
+        "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-video_generation",
@@ -1730,7 +1873,6 @@
         "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -1744,7 +1886,34 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "EN-bae152c4560df38c",
+      "name": "阿里千问",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6a3286e2186e4774",
+        "EV-1a241bcb4fad886c",
+        "EV-f388f7ae2debeae8",
+        "EV-bbc34d7bc9c02b6f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio",
+        "TX-technology-vision_language"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-09-07"
     },
     {
       "id": "EN-a658fbc24f5e3832",
@@ -1914,8 +2083,8 @@
         "TX-target_user-business_user",
         "TX-product_form-model",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-target_user-developer",
         "TX-technology-agentic_execution",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
         "TX-technology-code_generation",

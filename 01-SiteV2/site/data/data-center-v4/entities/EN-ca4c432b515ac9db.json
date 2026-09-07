@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-ca4c432b515ac9db",
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-db926055d40a4dff",
       "EV-2db5afe6d0aa14b5"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-db926055d40a4dff",
         "EV-2db5afe6d0aa14b5"
       ],
       "hardware": [],
@@ -42,6 +44,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-db926055d40a4dff",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-06",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌WeatherNext 3弃用物理模拟，直接从实时卫星数据学习天气",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-2b6e51bec93e86c1",
+          "EN-ca4c432b515ac9db"
+        ]
+      },
       {
         "id": "EV-2db5afe6d0aa14b5",
         "dataDate": "2026-09-04",

@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-86d0c85aec3ff6a7",
+    "name": "Nscale Sign Strategic",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-80775a8178f39aa5"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-03",
+    "lastSeen": "2026-09-07",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-80775a8178f39aa5"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-80775a8178f39aa5",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-03",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Figure 与 Nscale 签署战略合作，基于 NVIDIA Vera Rubin 平台部署多达 100,000 个 GPU",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-889393fb69a5b305",
+          "EN-86d0c85aec3ff6a7",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-526460c4600c67a0",
+      "snapshotKey": "526460c4600c67a0",
+      "snapshotId": "HWS-9c53c0f3ae78ad96",
+      "eventId": "EV-80775a8178f39aa5",
+      "eventIds": [
+        "EV-80775a8178f39aa5"
+      ],
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "title": "Figure",
+      "subject": "Figure",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "100000",
+          "unit": "GPUs",
+          "fact_ref": "HWF-641838518bdd334b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-07",
+          "hardware_fact_id": "HWF-641838518bdd334b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-03T00:00:00.000Z",
+          "subject_entity_id": "EN-889393fb69a5b305",
+          "subject_name": "Figure",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "100000",
+          "unit": "GPUs",
+          "source_quote": "Today we are announcing a partnership with Nscale to deploy the NVIDIA Vera Rubin platform for up to 100,000 GPUs targeted for initial deployment starting the second half of 2027 in Barstow, Texas. This deal represents an initial commitment of $3.5 billion of compute with intent to scale to over $6 billion. As part of the agreement, Nscale is also making a strategic investment in Figure, and the parties will also explore the potential to scale Nscale’s supply chain with humanoids.",
+          "event_refs": [
+            "EV-80775a8178f39aa5"
+          ],
+          "claim_ref": "CL-90d2df72d167a08e",
+          "source_refs": [
+            "SA-fbf799bc6e212e80"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-07/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://figure.ai/news/figure-and-nscale-sign-strategic-partnership",
+      "entityIds": [
+        "EN-889393fb69a5b305",
+        "EN-86d0c85aec3ff6a7",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}

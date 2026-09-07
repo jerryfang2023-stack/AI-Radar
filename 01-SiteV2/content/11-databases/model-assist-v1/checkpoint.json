@@ -1,22 +1,28 @@
 {
   "schema_version": "model-assist-2026-07-18.2",
-  "generated_at": "2026-09-06T00:27:42.265Z",
+  "generated_at": "2026-09-07T02:24:26.016Z",
   "dates": [
-    "2026-09-06"
+    "2026-09-07"
   ],
-  "raw_documents_scanned": 248,
-  "scanned_jobs": 64,
+  "raw_documents_scanned": 243,
+  "scanned_jobs": 83,
   "reuse_existing": true,
-  "reused_jobs": 0,
+  "reused_jobs": 81,
   "regated_existing": 0,
   "offset": 0,
-  "selected_jobs": 64,
-  "completed": 63,
+  "selected_jobs": 2,
+  "completed": 0,
   "failures": [
     {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "task_type": "qa_repair",
-      "asset_id": "QA-ec465b25984473a9",
+      "asset_id": "QA-6c98eb746c0d9336",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-07",
+      "task_type": "qa_repair",
+      "asset_id": "QA-cd567784d312c8fa",
       "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
     }
   ]
