@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-07T02:51:30.693Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2712,
+    "quarantinedEventCount": 24
+  },
+  "institution": {
+    "id": "INV-db78922d9a6b68",
+    "name": "Markus Flik",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "individual",
+    "investor_kind_label": "个人投资者",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-03",
+    "latest_disclosed_at": "2026-09-03",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-4373575f6d790f13",
+        "funding_insight_id": "FI-78f364239a4fd7d3",
+        "event_ids": [
+          "EV-bce46f2e5cc68d5d"
+        ],
+        "company_entity_id": "FICO-6f92e043fe518e14",
+        "company_canonical_entity_id": "",
+        "company_name": "Atira",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-09-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "个人投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ea3a79586b031d21",
+            "source_url": "https://thundertiger-europe.com/atira-17-5-million-accel-industrial-sales-ai/",
+            "source_title": "Atira Raises $17.5M for Industrial Sales AI",
+            "source_content_hash": "8e34e0c74422cbe2",
+            "quote": "Industry names joined: Whirlpool chairman and CEO Marc Bitzer, former Chiron Group CEO Markus Flik, investor Ann-Kristin Achleitner, and Nominacher.",
+            "quote_hash": "12035122e81a64707a9f32128b5c44d9ed053b4db8acdb5af62582a5e40468e6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ea3a79586b031d21",
+        "source_url": "https://thundertiger-europe.com/atira-17-5-million-accel-industrial-sales-ai/",
+        "source_title": "Atira Raises $17.5M for Industrial Sales AI",
+        "source_content_hash": "8e34e0c74422cbe2",
+        "quote": "Industry names joined: Whirlpool chairman and CEO Marc Bitzer, former Chiron Group CEO Markus Flik, investor Ann-Kristin Achleitner, and Nominacher.",
+        "quote_hash": "12035122e81a64707a9f32128b5c44d9ed053b4db8acdb5af62582a5e40468e6"
+      }
+    ]
+  }
+}

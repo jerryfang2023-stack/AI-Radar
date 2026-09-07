@@ -9,6 +9,14 @@ import {
 
 const date = "2026-07-30";
 
+test("bulk generated-data PRs cannot suppress production checks through path filters", () => {
+  const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/production-code-checks.yml"), "utf8");
+  const trigger = workflow.slice(workflow.indexOf("  pull_request:"), workflow.indexOf("  workflow_dispatch:"));
+  assert.match(trigger, /pull_request:/u);
+  assert.doesNotMatch(trigger, /paths(?:-ignore)?:/u);
+  assert.match(workflow, /os: \[ubuntu-latest, windows-latest\]/u);
+});
+
 test("failed-run artifacts retain accepted model decisions and projection diagnostics", () => {
   const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
   const artifactPaths = workflow.slice(workflow.indexOf("retention-days: 14"), workflow.indexOf("- name: Commit Data Center V4 assets"));

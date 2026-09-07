@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "generatedAt": "2026-09-07T02:51:30.693Z",
     "latestDataDate": "2026-09-07",
     "currentDate": "2026-09-07",
-    "eventCount": 2715,
+    "eventCount": 2712,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -28,9 +28,9 @@
     "classificationRefs": [
       "TX-target_user-business_user",
       "TX-use_case-productivity_enterprise_workflows",
+      "TX-use_case-sales",
       "TX-product_form-end_user_application",
       "TX-use_case-customer_support",
-      "TX-use_case-sales",
       "TX-ai_market_category-industry_applications",
       "TX-industry-financial_services",
       "TX-ai_market_subcategory-financial_services"
@@ -186,6 +186,7 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-bce46f2e5cc68d5d",
         "EV-2dff88f85e3bce86",
         "EV-987cb2e5e20f79ce",
         "EV-81bbaaec2965864a",
@@ -431,6 +432,7 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "FICO-6f92e043fe518e14",
         "EN-770ef1d2b6e24172",
         "EN-9a970ad7900121db",
         "EN-ee04228c5c6d8b08",
@@ -666,6 +668,7 @@
       "typeLabel": "应用场景",
       "valueId": "productivity_enterprise_workflows",
       "eventIds": [
+        "EV-bce46f2e5cc68d5d",
         "EV-81bbaaec2965864a",
         "EV-a40e5e8c638e323d",
         "EV-89ec502a1340079a",
@@ -783,6 +786,7 @@
         "EV-f5aec01f1466f6bb"
       ],
       "entityIds": [
+        "FICO-6f92e043fe518e14",
         "EN-ee04228c5c6d8b08",
         "EN-76eda8ba20686b8e",
         "EN-447a48e5d0951831",
@@ -900,6 +904,59 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "TX-use_case-sales",
+      "name": "销售",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "sales",
+      "eventIds": [
+        "EV-bce46f2e5cc68d5d",
+        "EV-3ee6b5e876146bb3",
+        "EV-57cf8e14d6994c1b",
+        "EV-cbce4f1f5187efcf",
+        "EV-a64fab2ce6bc6c4c",
+        "EV-b29878fdf79f2ac5",
+        "EV-1da2e46e39a57d33",
+        "EV-8b7cbb66a33a945d",
+        "EV-f6a72cddbda748b3",
+        "EV-d642ec7a9ca5eb0f",
+        "EV-18304fc17b31148e",
+        "EV-81bd541510a530f0",
+        "EV-439ba8d5f2f575c4",
+        "EV-6484904c176aa016",
+        "EV-9fc8916c19c19f99",
+        "EV-b0ed8d5a37784214",
+        "EV-e4b3a19529576778",
+        "EV-474d5a8ffca11ed9",
+        "EV-a84ec4216d3ded6d",
+        "EV-dd3217aad32e6891"
+      ],
+      "entityIds": [
+        "FICO-6f92e043fe518e14",
+        "EN-3b3ed571bbb19504",
+        "EN-556c337c4f0b031e",
+        "EN-ea3bd73e2b506e00",
+        "EN-a56c2fbccb257dba",
+        "EN-b0bc23fa8e20c543",
+        "EN-cfd90af8403941bf",
+        "EN-366289432b214eda",
+        "EN-a5d2ae286d0d9e45",
+        "EN-478cc1059b738832",
+        "EN-b0a914ead94a88da",
+        "EN-72badbbdbf521cec",
+        "EN-f96246b78ef26d59",
+        "EN-7ea76c82c786a5e1",
+        "EN-eaa1c24270a0d057",
+        "EN-7d4e02d31a7eb0f8",
+        "EN-ee04228c5c6d8b08",
+        "EN-2f88f41306209dd7"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-04-27",
       "lastSeen": "2026-09-07"
     },
     {
@@ -1196,57 +1253,6 @@
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
       "lastSeen": "2026-08-29"
-    },
-    {
-      "id": "TX-use_case-sales",
-      "name": "销售",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "sales",
-      "eventIds": [
-        "EV-3ee6b5e876146bb3",
-        "EV-57cf8e14d6994c1b",
-        "EV-cbce4f1f5187efcf",
-        "EV-a64fab2ce6bc6c4c",
-        "EV-b29878fdf79f2ac5",
-        "EV-1da2e46e39a57d33",
-        "EV-8b7cbb66a33a945d",
-        "EV-f6a72cddbda748b3",
-        "EV-d642ec7a9ca5eb0f",
-        "EV-18304fc17b31148e",
-        "EV-81bd541510a530f0",
-        "EV-439ba8d5f2f575c4",
-        "EV-6484904c176aa016",
-        "EV-9fc8916c19c19f99",
-        "EV-b0ed8d5a37784214",
-        "EV-e4b3a19529576778",
-        "EV-474d5a8ffca11ed9",
-        "EV-a84ec4216d3ded6d",
-        "EV-dd3217aad32e6891"
-      ],
-      "entityIds": [
-        "EN-3b3ed571bbb19504",
-        "EN-556c337c4f0b031e",
-        "EN-ea3bd73e2b506e00",
-        "EN-a56c2fbccb257dba",
-        "EN-b0bc23fa8e20c543",
-        "EN-cfd90af8403941bf",
-        "EN-366289432b214eda",
-        "EN-a5d2ae286d0d9e45",
-        "EN-478cc1059b738832",
-        "EN-b0a914ead94a88da",
-        "EN-72badbbdbf521cec",
-        "EN-f96246b78ef26d59",
-        "EN-7ea76c82c786a5e1",
-        "EN-eaa1c24270a0d057",
-        "EN-7d4e02d31a7eb0f8",
-        "EN-ee04228c5c6d8b08",
-        "EN-2f88f41306209dd7"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-04-27",
-      "lastSeen": "2026-08-26"
     },
     {
       "id": "TX-ai_market_category-industry_applications",

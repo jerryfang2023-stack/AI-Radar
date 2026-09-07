@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-07T02:51:30.693Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2712,
+    "quarantinedEventCount": 24
+  },
+  "institution": {
+    "id": "INV-bc0ac8af4d29b3",
+    "name": "Bastian Nominacher",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-03",
+    "latest_disclosed_at": "2026-09-03",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-6f92e043fe518e14",
+        "canonical_entity_id": "",
+        "name": "Atira"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ecca616d42e3a475",
+        "funding_insight_id": "FI-78f364239a4fd7d3",
+        "event_ids": [
+          "EV-bce46f2e5cc68d5d"
+        ],
+        "company_entity_id": "FICO-6f92e043fe518e14",
+        "company_canonical_entity_id": "",
+        "company_name": "Atira",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-09-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dfab45611a59a6cf",
+            "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
+            "source_title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
+            "source_content_hash": "2c19612efff8843e",
+            "quote": "individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
+            "quote_hash": "ddd137cc1c0cfeb1f42b4b0c7f8c311a8c24c2be2514361527a2de2faa100d5c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-dfab45611a59a6cf",
+        "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
+        "source_title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
+        "source_content_hash": "2c19612efff8843e",
+        "quote": "individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
+        "quote_hash": "ddd137cc1c0cfeb1f42b4b0c7f8c311a8c24c2be2514361527a2de2faa100d5c"
+      }
+    ]
+  }
+}

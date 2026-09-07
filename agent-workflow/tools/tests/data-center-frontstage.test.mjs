@@ -12,6 +12,11 @@ const root = path.resolve(__dirname, "../../..");
 let cachedFrontstageData;
 const buildFrontstageData = (targetRoot) => cachedFrontstageData ??= buildFreshFrontstageData(targetRoot);
 
+test("application-company classifications never synthesize canonical entity profiles", () => {
+  const data = buildFrontstageData(root);
+  assert.ok(data.entityProfiles.every((profile) => /^EN-[a-f0-9]{16}$/u.test(profile.id)));
+});
+
 test("business-signal publishing persists the split V4 frontstage service", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
 

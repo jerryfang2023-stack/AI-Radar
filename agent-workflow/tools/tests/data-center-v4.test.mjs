@@ -1513,6 +1513,36 @@ test("TLDR, listicle, and context-only titles cannot become commercial events", 
   }
 });
 
+test("fundraising guides and sector funding directories are not single financing events", () => {
+  const cases = [
+    ["How to Raise a Seed Round for an AI Startup (2026)", "fundraising_guide_not_company_event"],
+    ["AI初创公司如何完成种子轮融资（2026）", "fundraising_guide_not_company_event"],
+    ["AI Infrastructure Startup Funding 2025-2026 - New Market Pitch", "multi_event_roundup_not_single_event_source"],
+    ["AI基础设施初创公司融资2025-2026——新市场推介", "multi_event_roundup_not_single_event_source"],
+    ["AI Agent Funding 2026: 95 Companies", "multi_event_roundup_not_single_event_source"],
+    ["AI 智能体融资 2026：95 家公司", "multi_event_roundup_not_single_event_source"],
+  ];
+  const body = "Acme raised $21 million in seed funding for its AI agent platform. Other companies raised separate rounds.";
+  for (const [title, reason] of cases) {
+    assert.equal(publicEventSourceTitleIssue(title), reason, title);
+    const source = entry("funding-container", title, body);
+    const candidate = acceptedModelCandidate(source, [{
+      event_type: "funding", subject: "Acme", predicate: "raised", object: "$21 million", evidence_index: 0,
+    }], [{ start: 0, end: body.length, quote: body }]);
+    const bundle = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00.000Z", {
+      modelAssist: { candidates: [candidate] },
+    });
+    assert.equal(bundle.raw_documents.length, 1, title);
+    assert.equal(bundle.canonical_events.length, 0, title);
+    assert.ok(bundle.qa_queue.some((item) => item.reason === reason), title);
+  }
+  for (const title of [
+    "How a former DeepMind researcher raised at a $300M pre-seed valuation",
+    "Wonderful raises $550 Million in Series C funding",
+    "Exclusive: German startup Atira raises $17.5 million to simplify industrial sales",
+  ]) assert.equal(publicEventSourceTitleIssue(title), "", title);
+});
+
 test("the reviewed Top 50 AI funded startups source remains eligible", () => {
   for (const title of [
     "50 Top AI Funded Startups (July 2026)",

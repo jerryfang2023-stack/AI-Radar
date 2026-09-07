@@ -39,6 +39,17 @@ import {
   verifiedFundingSourceUrls,
 } from "../build-funding-source-health-v1.mjs";
 import { resolveReviewedCompany } from "../project-funding-taxonomy-to-events-v4-1.mjs";
+import { classificationEntityAggregationProblems } from "../assert-taxonomy-consistency-v4-1.mjs";
+
+test("taxonomy gates require canonical aggregation but forbid application identity promotion", () => {
+  const row = { reviewed_classification_id: "REC-1", entity_id: "FICO-50b2676afbe30c83", dimension_id: "industry", value_id: "manufacturing" };
+  const profile = { classificationRefs: ["TX-industry-manufacturing"] };
+  assert.deepEqual(classificationEntityAggregationProblems(row), []);
+  assert.ok(classificationEntityAggregationProblems(row, profile)[0].includes("leaked into canonical"));
+  const canonical = { ...row, entity_id: "EN-50b2676afbe30c83" };
+  assert.ok(classificationEntityAggregationProblems(canonical)[0].includes("aggregation missing"));
+  assert.deepEqual(classificationEntityAggregationProblems(canonical, profile), []);
+});
 
 test("source health counts a verified event whose existing card is reused by deduplication", () => {
   assert.equal(verifiedFundingEventCount({
@@ -549,6 +560,32 @@ test("canonical funding evidence tolerates deterministic source whitespace norma
     source_id: "FISRC-WHITESPACE",
     quote: "Acme raised $20 million in Series A funding.",
   }]);
+});
+
+test("a current seed round stays separate from a previously undisclosed pre-seed", () => {
+  const quote = "The company said it has closed a $15 million seed round led by Acme Ventures, along with a previously undisclosed $2.5 million pre-seed.";
+  const claims = [{ claim_id: "CL-ROUNDS", raw_id: "RAW-ROUNDS", claim_type: "funding",
+    subject: "Acme", object: "$17.5 million", verification_status: "accepted", source_quote: quote }];
+  const event = { event_id: "EV-ROUNDS", display_title_zh: "Acme 融资1750万美元",
+    metrics: ["$17.5 million", "$15 million", "$2.5 million"], claim_refs: ["CL-ROUNDS"], entities: ["EN-ACME", "EN-VC"] };
+  assert.equal(canonicalFundingEventAmount(event, claims), "$15 million");
+  const payload = { company: { entity_id: "EN-ACME", name: "Acme" }, financing: {
+    amount: "$17.5 million", total_raised: "$17.5 million", round: "预种子轮",
+  } };
+  assert.ok(fundingEventCardConsistencyProblems(payload, event, claims)
+    .includes("funding_current_round_amount_mismatch"));
+  ensureCanonicalFundingEvidence(payload, { claims }, event, [{ source_id: "SRC-ROUNDS", raw_id: "RAW-ROUNDS" }]);
+  assert.equal(payload.financing.amount, "$15 million");
+  assert.equal(payload.financing.total_raised, "$17.5 million");
+  assert.equal(payload.financing.round, "种子轮");
+  assert.deepEqual(fundingEventCardConsistencyProblems(payload, event, claims), []);
+  payload.financing.round = "预种子轮";
+  assert.ok(fundingEventCardConsistencyProblems(payload, event, claims)
+    .includes("funding_current_round_label_mismatch"));
+  assert.equal(canonicalFundingEventAmount(event, [{ ...claims[0], verification_status: "disputed" }]), "$17.5 million");
+  assert.equal(canonicalFundingEventAmount(event, [{ ...claims[0], source_quote: quote.replace("The company said it has", "Competitor Beta has") }]), "$17.5 million");
+  assert.equal(normalizeFundingRound("seed and pre-seed").code, "multi_round");
+  assert.equal(normalizeFundingRound("预种子轮").code, "pre_seed");
 });
 
 test("canonical source remains citable when private evidence body is unavailable", () => {
@@ -1643,17 +1680,19 @@ test("accepted Chinese descriptive funding subjects recover an application compa
 });
 
 test("funding taxonomy projection preserves an existing application company id", () => {
-  assert.deepEqual(resolveReviewedCompany({
-    company: {
+  for (const names of [new Map(), new Map([["higgsfield", "EN-UNREVIEWED-RAW"]])]) {
+    assert.deepEqual(resolveReviewedCompany({
+      company: {
+        entity_id: "FICO-50b2676afbe30c83",
+        name: "Higgsfield Inc.",
+        full_name: "Higgsfield Inc.",
+      },
+    }, new Map(), names), {
       entity_id: "FICO-50b2676afbe30c83",
-      name: "Higgsfield Inc.",
-      full_name: "Higgsfield Inc.",
-    },
-  }, new Map(), new Map()), {
-    entity_id: "FICO-50b2676afbe30c83",
-    company_name: "Higgsfield Inc.",
-    resolution: "funding_application_entity",
-  });
+      company_name: "Higgsfield Inc.",
+      resolution: "funding_application_entity",
+    });
+  }
 });
 
 test("company normalization relinks a descriptive entity to the exact full-name entity", () => {

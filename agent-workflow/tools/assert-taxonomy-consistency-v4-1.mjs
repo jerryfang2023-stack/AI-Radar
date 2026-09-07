@@ -131,6 +131,14 @@ function fundingCardHasClassification(card, row) {
   return arrayField ? (card.analysis?.[arrayField] || []).includes(row.value_id) : false;
 }
 
+export function classificationEntityAggregationProblems(row, profile) {
+  if (/^FICO-[a-f0-9]{16}$/u.test(row.entity_id || "")) {
+    return profile ? [`${row.reviewed_classification_id}: application entity leaked into canonical profiles`] : [];
+  }
+  return profile?.classificationRefs?.includes(`TX-${row.dimension_id}-${row.value_id}`)
+    ? [] : [`${row.reviewed_classification_id}: entity aggregation missing`];
+}
+
 export function taxonomyConsistencyProblems(rootDir = root) {
   const failures = [];
   const taxonomy = readJson(path.join(rootDir, "agent-workflow/product/tag-taxonomy-v4.json"), {});
@@ -247,9 +255,7 @@ export function taxonomyConsistencyProblems(rootDir = root) {
     ));
     if (!classification) failures.push(`${row.reviewed_classification_id}: data-center application projection missing`);
     const profile = profileById.get(row.entity_id);
-    if (!profile?.classificationRefs?.includes(`TX-${row.dimension_id}-${row.value_id}`)) {
-      failures.push(`${row.reviewed_classification_id}: entity aggregation missing`);
-    }
+    failures.push(...classificationEntityAggregationProblems(row, profile));
   }
   for (const event of frontstage.events || []) for (const item of event.classifications || []) {
     assertKnownClassification(item, validValues, `data-center ${event.id}`, failures);
