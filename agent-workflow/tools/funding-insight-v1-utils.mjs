@@ -239,6 +239,26 @@ function fundingAmountUsesValuation(amount, texts = []) {
     && !mentions.some((mention) => mention.round && fundingAmountsEquivalent(amount, mention.raw));
 }
 
+function currentRoundBesideHistoricalDisclosure(event = {}, claims = []) {
+  const claimIds = new Set(event.claim_refs || []);
+  const rounds = new Map();
+  for (const claim of claims) {
+    if (!claimIds.has(claim.claim_id) || claim.claim_type !== "funding" || claim.verification_status !== "accepted") continue;
+    const quote = clean(claim.source_quote);
+    const historical = quote.search(/\b(?:along with|in addition to|plus)\s+(?:a\s+)?previously\s+(?:undisclosed|announced|raised)\b/iu);
+    if (historical < 0) continue;
+    // The headline can aggregate both rounds. Only a completed, explicitly
+    // amount-bound round before the historical clause owns current proceeds.
+    const match = quote.slice(0, historical).match(/^The company\s+(?:said it\s+)?(?:has\s+)?(?:closed|raised|secured)\s+(?:a\s+)?([$€£]\s*\d[\d,]*(?:\.\d+)?\s*(?:billion|million|thousand|[BMK])?)\s+(?:in\s+(?:a\s+)?)?((?:pre[-\s]?)?seed|(?:pre[-\s]?)?series\s+[a-g])\s+(?:round|funding)\b/iu);
+    if (!match) continue;
+    const round = normalizeFundingRound(match[2]);
+    const amount = clean(match[1]);
+    const normalized = normalizeFundingAmount(amount);
+    rounds.set(`${normalized.currency}|${normalized.value}|${round.code}`, { amount, round });
+  }
+  return rounds.size === 1 ? [...rounds.values()][0] : null;
+}
+
 function fundingEventAmountSemantics(event = {}, claims = []) {
   const claimIds = new Set(event.claim_refs || []);
   const claimTexts = claims
@@ -271,6 +291,8 @@ export function canonicalFundingEventAmount(event = {}, claims = []) {
   // amount whose own local context describes proceeds; preliminary disclosures
   // and valuation-only disclosures never manufacture a round amount.
   if (semantics.excluded) return "";
+  const currentRound = currentRoundBesideHistoricalDisclosure(event, claims);
+  if (currentRound) return currentRound.amount;
   if (semantics.roundAmount) return semantics.roundAmount;
   if (!metrics.length) return "";
   const primary = metrics[0];
@@ -342,7 +364,8 @@ export function normalizeFundingRound(value = "") {
   const compact = text.replace(/[\s_]+/gu, "").replace(/[－—–]/gu, "-");
   const signals = new Set();
   if (/pre[-\s]?seed|种子轮前|预种子/iu.test(text)) signals.add("pre_seed");
-  if (/(?:^|[^a-z])seed(?:[^a-z]|$)|种子轮|种子扩展/iu.test(text) && !signals.has("pre_seed")) signals.add("seed");
+  const withoutPreSeed = text.replace(/pre[-\s]?seed|种子轮前|预种子(?:轮)?/giu, "");
+  if (/(?:^|[^a-z])seed(?:[^a-z]|$)|种子轮|种子扩展/iu.test(withoutPreSeed)) signals.add("seed");
   if (/天使/iu.test(text)) signals.add("angel");
   const seriesMatches = [...text.matchAll(
     /(?:(?:pre[-\s]*)?series\s*[a-g](?:[-\s]?\d+)?|(?:pre[-\s]*)?[a-g](?:[-\s]?\d+)?\s*轮)/giu,
@@ -1008,6 +1031,11 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
     event.display_title_zh, event.object,
     ...acceptedClaims.flatMap((claim) => [claim.object, claim.source_quote]),
   ])) return ["funding_amount_is_valuation"];
+  const currentRound = currentRoundBesideHistoricalDisclosure(event, claims);
+  if (currentRound) {
+    if (!fundingAmountsEquivalent(card.financing?.amount, currentRound.amount)) return ["funding_current_round_amount_mismatch"];
+    if (normalizeFundingRound(card.financing?.round).code !== currentRound.round.code) return ["funding_current_round_label_mismatch"];
+  }
   // A single canonical event may mention several companies. Only apply the
   // claim-to-card amount check to that ambiguous shape; older single-company
   // events use legacy claim subject conventions that are not always exact.
@@ -1037,10 +1065,12 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
   // is authoritative for amount consistency, so accept it when the normalized
   // claim object is incomplete but the source quote contains the disclosed
   // company amount.
+  // A current/historical disclosure has already passed the stricter paired
+  // amount/round check above; its legacy object can still repeat the total.
   if (!companyClaims.some((claim) => (
     fundingAmountsEquivalent(card.financing?.amount, claim.object)
       || fundingAmountsEquivalent(card.financing?.amount, claim.source_quote)
-  ))) {
+  )) && !currentRound) {
     return ["funding_event_company_amount_mismatch"];
   }
   return [];
@@ -1504,7 +1534,8 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
     event.object,
     ...(event.claim_refs || []).map((claimId) => claimById.get(claimId)?.source_quote),
   ].filter(Boolean).join(" ");
-  const canonicalRound = normalizeFundingRound(roundEvidence);
+  const canonicalRound = currentRoundBesideHistoricalDisclosure(event, bundle.claims || [])?.round
+    || normalizeFundingRound(roundEvidence);
   if (!["other", "undisclosed"].includes(canonicalRound.code)) {
     payload.financing.round = canonicalRound.label;
   }

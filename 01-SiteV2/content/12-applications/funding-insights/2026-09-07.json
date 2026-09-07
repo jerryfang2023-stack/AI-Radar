@@ -1,0 +1,720 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-09-07",
+    "generated_at": "2026-09-07T02:42:15.409Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 1,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 1
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-8ed4fdb401415a2e",
+      "triggered_by_event_id": "EV-bce46f2e5cc68d5d",
+      "as_of_date": "2026-09-07",
+      "company": {
+        "entity_id": "FICO-6f92e043fe518e14",
+        "name": "Atira",
+        "full_name": "Atira",
+        "website": "https://atira.ai",
+        "summary": "Atira是一家总部位于慕尼黑的初创公司，利用AI自动化工业销售工程流程，将客户请求转化为技术可行、已定价的投标。",
+        "headquarters": "德国慕尼黑",
+        "founders": [
+          {
+            "name": "Florian Diegruber",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dfab45611a59a6cf",
+                "quote": "Atira cofounder and CEO Florian Diegruber said.",
+                "source_content_hash": "2c19612efff8843e",
+                "quote_hash": "7f68c85c1cdc0f4163dd4f8f2833f101367bd8a1d8833608c0d51ef5fea211f8"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约15人",
+          "observed_at": "2026-09-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dfab45611a59a6cf",
+              "quote": "Atira had just four employees at the start of the year and has about 15 now, with nine more due to start soon.",
+              "source_content_hash": "2c19612efff8843e",
+              "quote_hash": "c87b3582781210f57527302f0877d59fe29497513ff61ff709bf10af6a748c21"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ea3a79586b031d21",
+            "quote": "Atira Raises $17.5M for Industrial Sales AI # Accel Backs Atira to Automate Industrial Sales Engineering Accel is backing Munich’s Atira with $15 million to automate industrial quoting, a Celonis-style bet already live at ABB and Chiron. Publish",
+            "source_content_hash": "8e34e0c74422cbe2",
+            "quote_hash": "66c373257b1338fe5028c46ee6a6e066ad13c5576f9ed38b657475289ec141a8"
+          }
+        ],
+        "application_entity_id": "FICO-6f92e043fe518e14",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$15 million",
+        "total_raised": "$17.5 million",
+        "announced_at": "2026-09-03",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Accel",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dfab45611a59a6cf",
+                "quote": "The company said it has closed a $15 million seed round led by Accel, along with a previously undisclosed $2.5 million pre-seed.",
+                "source_content_hash": "2c19612efff8843e",
+                "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "UVC Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dfab45611a59a6cf",
+                "quote": "UVC Partners, Fortino, and BOOOM also invested, alongside individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
+                "source_content_hash": "2c19612efff8843e",
+                "quote_hash": "a7350adc3548469bf9854d18554f075c91786719e60015be6c0830e47f511e8d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fortino",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dfab45611a59a6cf",
+                "quote": "UVC Partners, Fortino, and BOOOM also invested, alongside individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
+                "source_content_hash": "2c19612efff8843e",
+                "quote_hash": "a7350adc3548469bf9854d18554f075c91786719e60015be6c0830e47f511e8d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BOOOM",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dfab45611a59a6cf",
+                "quote": "UVC Partners, Fortino, and BOOOM also invested, alongside individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
+                "source_content_hash": "2c19612efff8843e",
+                "quote_hash": "a7350adc3548469bf9854d18554f075c91786719e60015be6c0830e47f511e8d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Marc Bitzer",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dfab45611a59a6cf",
+                "quote": "individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
+                "source_content_hash": "2c19612efff8843e",
+                "quote_hash": "ddd137cc1c0cfeb1f42b4b0c7f8c311a8c24c2be2514361527a2de2faa100d5c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bastian Nominacher",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dfab45611a59a6cf",
+                "quote": "individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
+                "source_content_hash": "2c19612efff8843e",
+                "quote_hash": "ddd137cc1c0cfeb1f42b4b0c7f8c311a8c24c2be2514361527a2de2faa100d5c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Ann-Kristin Achleitner",
+            "role": "个人投资者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ea3a79586b031d21",
+                "quote": "Industry names joined: Whirlpool chairman and CEO Marc Bitzer, former Chiron Group CEO Markus Flik, investor Ann-Kristin Achleitner, and Nominacher.",
+                "source_content_hash": "8e34e0c74422cbe2",
+                "quote_hash": "12035122e81a64707a9f32128b5c44d9ed053b4db8acdb5af62582a5e40468e6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Markus Flik",
+            "role": "个人投资者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ea3a79586b031d21",
+                "quote": "Industry names joined: Whirlpool chairman and CEO Marc Bitzer, former Chiron Group CEO Markus Flik, investor Ann-Kristin Achleitner, and Nominacher.",
+                "source_content_hash": "8e34e0c74422cbe2",
+                "quote_hash": "12035122e81a64707a9f32128b5c44d9ed053b4db8acdb5af62582a5e40468e6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-dfab45611a59a6cf",
+            "quote": "Exclusive: German AI startup Atira raises $17.5 million to unclog the paperwork bottleneck in industrial dealmaking",
+            "source_content_hash": "2c19612efff8843e",
+            "quote_hash": "285dbfbc78c9ec01f4455b9221e0d530cb9c661360c377372de1dcd7cfd2e365"
+          },
+          {
+            "source_id": "FISRC-dfab45611a59a6cf",
+            "quote": "The company said it has closed a $15 million seed round led by Accel, along with a previously undisclosed $2.5 million pre-seed.",
+            "source_content_hash": "2c19612efff8843e",
+            "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "total_raised_original": "$17.5 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 17500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1750 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-bce46f2e5cc68d5d",
+            "round_original": "种子轮",
+            "amount": "$15 million",
+            "announced_at": "2026-09-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dfab45611a59a6cf",
+                "quote": "Exclusive: German AI startup Atira raises $17.5 million to unclog the paperwork bottleneck in industrial dealmaking",
+                "source_content_hash": "2c19612efff8843e",
+                "quote_hash": "285dbfbc78c9ec01f4455b9221e0d530cb9c661360c377372de1dcd7cfd2e365"
+              },
+              {
+                "source_id": "FISRC-dfab45611a59a6cf",
+                "quote": "The company said it has closed a $15 million seed round led by Accel, along with a previously undisclosed $2.5 million pre-seed.",
+                "source_content_hash": "2c19612efff8843e",
+                "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Atira多智能体AI平台",
+          "description": "一个多智能体AI平台，用于自动化工业销售工程工作流，处理复杂报价请求（RFQ），通过审查规格、识别和评论关键需求、配置合适解决方案并生成投标文档。",
+          "target_customers": "销售复杂、按订单设计产品和服务的工业公司",
+          "features": [
+            "需求提取",
+            "红旗检测",
+            "投标/不投标决策",
+            "规范与标准报告",
+            "CPQ支持",
+            "技术文档生成",
+            "系统回写"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64b791575f467b5d",
+              "quote": "Multi-Agent Orchestration for Industrial Sales Processes",
+              "source_content_hash": "b561d1fd26289422",
+              "quote_hash": "63451acd8cc2de7eea3590ca15fbd4d4bc9071c203670da235715f4e5c3a9391"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Rema Tip Top",
+          "industry": "工业服务",
+          "use_case": "Atira平台生产使用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64b791575f467b5d",
+              "quote": "REMA TIP TOP Industrial Services Live Learn More 150 Countries",
+              "source_content_hash": "b561d1fd26289422",
+              "quote_hash": "4830879cc82ae8412da24c6445a9fe558882f34dc0b65b1736412b07d427899b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Schmitz Feuerwehrtechnik",
+          "industry": "消防车制造",
+          "use_case": "每个销售代表每年处理200个项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64b791575f467b5d",
+              "quote": "Schmitz Feuerwehrtechnik Fire Truck Manufacturing Live Learn More 200 Projects per Sales Rep p.a.",
+              "source_content_hash": "b561d1fd26289422",
+              "quote_hash": "2ea78f26a130ec668fbaf9d9020c47a3afccc74e49612f519f488930c912b507"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Roadrunner",
+          "product": "AI驱动的复杂报价流程系统",
+          "scenario": "加速复杂报价流程",
+          "target_customer": "工业客户",
+          "funding_summary": "最近从Kleiner Perkins和Founders Fund融资2700万美元",
+          "core_difference": "Atira强调其AI代理通过Microsoft Teams向人类专家询问文档无法回答的问题，以捕捉工业公司内部的隐性知识；Roadrunner是另一家竞争初创公司，但来源未提供其具体产品差异。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dfab45611a59a6cf",
+              "quote": "There are other startups in the hunt too, including Roadrunner, which recently raised $27 million from Silicon Valley venture firms Kleiner Perkins and Founders Fund.",
+              "source_content_hash": "2c19612efff8843e",
+              "quote_hash": "03ca36cec5e2276348355f2f33d86db3c003523109ac6a3774d6f4709b6882bf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Bryo",
+          "product": "AI技术销售层",
+          "scenario": "与工厂已有的CPQ系统配合使用",
+          "target_customer": "机器制造商",
+          "funding_summary": "",
+          "core_difference": "Atira读取非结构化的前端工作（如2500页能源招标、红旗条款、投标/不投标决策）并写回CRM、ERP和CPQ；Bryo提供类似的AI层用于技术销售，但来源未提供其具体产品差异。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ea3a79586b031d21",
+              "quote": "Berlin-and-Munich rival Bryo pitches a similar AI layer for technical sales and says it works with the CPQ a plant already owns.",
+              "source_content_hash": "8e34e0c74422cbe2",
+              "quote_hash": "a98082045dd6951e6d051cdcf4b9b065941c05d44187b4ce7c7ee591881ed720"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "员工人数",
+          "value": "约15人",
+          "observed_at": "2026-09-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dfab45611a59a6cf",
+              "quote": "Atira had just four employees at the start of the year and has about 15 now, with nine more due to start soon.",
+              "source_content_hash": "2c19612efff8843e",
+              "quote_hash": "c87b3582781210f57527302f0877d59fe29497513ff61ff709bf10af6a748c21"
+            }
+          ]
+        },
+        {
+          "label": "部署时间",
+          "value": "1-2天",
+          "observed_at": "2026-09-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dfab45611a59a6cf",
+              "quote": "Atira uses a deployment model that gets customers up and running within a day or two and lets them cancel after a month.",
+              "source_content_hash": "2c19612efff8843e",
+              "quote_hash": "330166d7a2fb1ce66048df5b0f142876fa0dd30917861f0d8ac934034e38deb8"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Irfan Coskuner",
+          "quote": "We have evaluated multiple providers offering AI Tender Processing and Requirement Engineering and Atira impressed us by their ability to really meet and enhance our current processes and a solution that was implemented and working productively within a week.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64b791575f467b5d",
+              "quote": "\"We have evaluated multiple providers offering AI Tender Processing and Requirement Engineering and Atira impressed us by their ability to really meet and enhance our current processes and a solution that was implemented and working productively within a week.\" Irfan Coskuner, Team Lead Tender Projects",
+              "source_content_hash": "b561d1fd26289422",
+              "quote_hash": "ad8293ce206efbe6122b361d706ea902e06ea397b0474d85dd5be029932617b4"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是工业销售工程这一长期未被软件自动化的大型工作流能否被AI代理有效接管。Atira的已验证信号包括：约15家客户全部在生产环境中使用（非试点）、5家客户拥有超过100名用户、Chiron Group报告入站报价处理速度提升80%、Robel报告每个报价请求节省95小时。这些信号表明产品已从试点阶段进入实际生产部署，且客户在扩大使用规模。证据边界在于：这些数据均为公司或客户自报，未经第三方审计；Atira拒绝披露估值；美国市场仍处于试点阶段，尚未验证跨大西洋的扩展能力。",
+        "validated_signals": [
+          "约15家客户全部在生产环境中使用Atira平台，而非试点",
+          "5家客户拥有超过100名用户",
+          "Chiron Group报告入站报价处理速度提升80%",
+          "Robel报告每个报价请求节省95小时销售和工程时间",
+          "部署时间仅需1-2天，且无客户在一个月后取消"
+        ],
+        "risks": [
+          "客户报告的效率数据（80%提速、95小时节省）均为公司或客户自报，未经第三方审计，可能存在选择性披露偏差",
+          "美国市场仍处于试点阶段，尚未验证跨大西洋的扩展能力",
+          "Salesforce、ServiceNow等大型软件供应商以及OpenAI、Anthropic、Google DeepMind、Mistral等AI公司也在争夺工业客户，竞争激烈"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "sales",
+        "market_application_id": "",
+        "use_case_ids": [
+          "sales",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "工业销售工程AI自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是工业销售工程这一长期未被软件自动化的大型工作流能否被AI代理有效接管。Atira的已验证信号包括：约15家客户全部在生产环境中使用（非试点）、5家客户拥有超过100名用户、Chiron Group报告入站报价处理速度提升80%、Robel报告每个报价请求节省95小时。这些信号表明产品已从试点阶段进入实际生产部署，且客户在扩大使用规模。证据边界在于：这些数据均为公司或客户自报，未经第三方审计；Atira拒绝披露估值；美国市场仍处于试点阶段，尚未验证跨大西洋的扩展能力。",
+          "evidence_signals": [
+            "约15家客户全部在生产环境中使用Atira平台，而非试点",
+            "5家客户拥有超过100名用户",
+            "Chiron Group报告入站报价处理速度提升80%",
+            "Robel报告每个报价请求节省95小时销售和工程时间",
+            "部署时间仅需1-2天，且无客户在一个月后取消"
+          ],
+          "risks": [
+            "客户报告的效率数据（80%提速、95小时节省）均为公司或客户自报，未经第三方审计，可能存在选择性披露偏差",
+            "美国市场仍处于试点阶段，尚未验证跨大西洋的扩展能力",
+            "Salesforce、ServiceNow等大型软件供应商以及OpenAI、Anthropic、Google DeepMind、Mistral等AI公司也在争夺工业客户，竞争激烈"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Atira多智能体AI平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Florian Diegruber",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "UVC Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fortino",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BOOOM",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Marc Bitzer",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bastian Nominacher",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Ann-Kristin Achleitner",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Markus Flik",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Rema Tip Top",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Schmitz Feuerwehrtechnik",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Roadrunner",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Bryo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-dfab45611a59a6cf",
+          "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
+          "title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-07T00:26:29.052Z",
+          "content_hash": "2c19612efff8843e",
+          "source_artifact_id": "SA-265f14df7112733b",
+          "raw_id": "RAW-92994486d5555293"
+        },
+        {
+          "source_id": "FISRC-ea3a79586b031d21",
+          "source_url": "https://thundertiger-europe.com/atira-17-5-million-accel-industrial-sales-ai/",
+          "title": "Atira Raises $17.5M for Industrial Sales AI",
+          "publisher": "thundertiger-europe.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-09-07T02:25:15.578Z",
+          "content_hash": "8e34e0c74422cbe2",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-64b791575f467b5d",
+          "source_url": "https://atira.ai/",
+          "title": "Atira",
+          "publisher": "atira.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-07T02:25:15.085Z",
+          "content_hash": "b561d1fd26289422",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-07T02:26:52.673Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-bce46f2e5cc68d5d",
+          "confidence": 0.8,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-07T02:26:52.673Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Atira多智能体AI平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Florian Diegruber"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-bce46f2e5cc68d5d"
+      ],
+      "aggregation": {
+        "key": "FICO-6f92e043fe518e14|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-07T02:42:15.409Z"
+    },
+    {
+      "event_id": "EV-bce46f2e5cc68d5d",
+      "company_name": "Atira",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune\" funding company investors product",
+        "\"Atira\" \"$17.5 million\" funding investors round",
+        "\"Atira\" product customers case study",
+        "\"Atira\" \"Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune\" competitors product use case",
+        "\"Atira\" \"$17.5 million\" investor quote why invested",
+        "\"Atira\" \"$17.5 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Atira\" \"$17.5 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Atira\" \"$17.5 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Atira\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Atira\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Atira\" \"Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Atira\" \"Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Atira\" \"$17.5 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Atira\" \"$17.5 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Atira\" \"$17.5 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Atira\" \"$17.5 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-07T02:42:15.408Z"
+    }
+  ]
+}

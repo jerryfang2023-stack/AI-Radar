@@ -743,6 +743,9 @@ export function buildFrontstageData(root = defaultRoot) {
   const entityRows = [...sourceEntityRows];
   const existingEntityIds = new Set(entityRows.map((item) => item.entity_id));
   for (const row of reviewedEventClassifications) {
+    // FICO classifications stay application-scoped; they cannot manufacture
+    // canonical ENTITY-V1 profiles from an unreviewed financing company.
+    if (!/^EN-[a-f0-9]{16}$/u.test(row.entity_id || "")) continue;
     if (existingEntityIds.has(row.entity_id)) continue;
     entityRows.push({
       schema_version: "4.0.0",

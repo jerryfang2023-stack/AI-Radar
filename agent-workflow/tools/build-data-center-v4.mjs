@@ -287,6 +287,12 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
 
 function publicEventSourceTitleIssue(title) {
   const value = cleanString(title);
+  if (/^how\s+to\b.{0,100}\b(?:rais(?:e|ing)|funding|financing|seed\s+round)\b|^(?:AI\s*(?:初创公司|初创企业))?如何.{0,50}(?:融资|募资|种子轮)/iu.test(value)) {
+    return "fundraising_guide_not_company_event";
+  }
+  if (/^AI\s+(?:(?:infrastructure\s+)?startups?|agents?)\s+funding\s+20\d{2}\b|^AI\s*(?:基础设施)?(?:初创公司|初创企业|智能体)\s*融资\s*20\d{2}/iu.test(value)) {
+    return "multi_event_roundup_not_single_event_source";
+  }
   if (QUESTION_HEADLINE.test(value)) return "question_headline_not_event_specific";
   if (GENERIC_INDEX_TITLE.test(value)) return "index_or_listing_page_not_event_source";
   if (GENERIC_ROUNDUP_TITLE.test(value)) return "multi_event_roundup_not_single_event_source";

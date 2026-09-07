@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-05T05:06:02.826Z",
+    "generated_at": "2026-09-07T02:42:22.326Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 306,
-    "input_hash": "19aa7bb1c1de578c",
+    "decision_count": 307,
+    "input_hash": "9ed740b7e72abae1",
     "override_count": 17,
     "needs_review_count": 9,
     "low_confidence_count": 16
@@ -6053,6 +6053,26 @@
       "confidence": 0.55,
       "needs_review": true,
       "rationale": "证据显示产品为智能眼镜，提供通知、翻译和导航提示，未涉及物理世界自主决策或机器人控制，故不属Physical AI；也未提供AI基础设施，故不属infrastructure_compute；产品面向通用用户而非单一行业工作流，因此归入enterprise_applications。但证据不足以明确其核心企业功能，需人工复核。"
+    },
+    {
+      "event_id": "EV-bce46f2e5cc68d5d",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "sales",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "sales",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据显示Atira自动化工业报价与销售工程流程，属于跨行业销售职能的企业应用，而非仅限单一行业数据或物理AI。"
     }
   ]
 }

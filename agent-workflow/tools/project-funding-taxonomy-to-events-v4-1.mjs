@@ -132,8 +132,8 @@ export function resolveReviewedCompany(card, entitiesById, entityIdByName) {
   if (declared) {
     return { entity_id: declaredId, company_name: canonicalName, resolution: "declared_event_entity" };
   }
-  const resolvedId = entityIdByName.get(nameKey(fullName)) || entityIdByName.get(nameKey(displayName));
-  if (resolvedId) return { entity_id: resolvedId, company_name: canonicalName, resolution: "catalog_name_exact" };
+  // Raw event entities are not the reviewed public catalog. Keep the card's
+  // application identity unless the caller resolved an approved profile.
   if (/^FICO-[a-f0-9]{16}$/u.test(declaredId)) {
     return {
       entity_id: declaredId,
@@ -141,6 +141,8 @@ export function resolveReviewedCompany(card, entitiesById, entityIdByName) {
       resolution: "funding_application_entity",
     };
   }
+  const resolvedId = entityIdByName.get(nameKey(fullName)) || entityIdByName.get(nameKey(displayName));
+  if (resolvedId) return { entity_id: resolvedId, company_name: canonicalName, resolution: "catalog_name_exact" };
   return {
     entity_id: `EN-${hash(`funding-reviewed-company|${nameKey(canonicalName)}`)}`,
     company_name: canonicalName,

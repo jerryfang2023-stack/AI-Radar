@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "generatedAt": "2026-09-07T02:51:30.693Z",
     "latestDataDate": "2026-09-07",
     "currentDate": "2026-09-07",
-    "eventCount": 2715,
+    "eventCount": 2712,
     "quarantinedEventCount": 24
   },
   "institution": {
@@ -20,23 +20,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 11,
+    "portfolio_company_count": 12,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-09-03",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "lead": 7,
+      "lead": 8,
       "participant": 3
     },
     "round_codes": [
+      "seed",
       "series_a",
       "series_b",
       "series_c",
@@ -62,6 +63,11 @@
         "entity_id": "EN-834cc12fc35adde7",
         "canonical_entity_id": "",
         "name": "Arrakis"
+      },
+      {
+        "entity_id": "FICO-6f92e043fe518e14",
+        "canonical_entity_id": "",
+        "name": "Atira"
       },
       {
         "entity_id": "EN-8da5eafb322ee86e",
@@ -100,6 +106,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c74c7087dffbd76a",
+        "funding_insight_id": "FI-78f364239a4fd7d3",
+        "event_ids": [
+          "EV-bce46f2e5cc68d5d"
+        ],
+        "company_entity_id": "FICO-6f92e043fe518e14",
+        "company_canonical_entity_id": "",
+        "company_name": "Atira",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-09-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dfab45611a59a6cf",
+            "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
+            "source_title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
+            "source_content_hash": "2c19612efff8843e",
+            "quote": "The company said it has closed a $15 million seed round led by Accel, along with a previously undisclosed $2.5 million pre-seed.",
+            "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4f79850cbd50740e",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
@@ -591,6 +637,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-dfab45611a59a6cf",
+        "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
+        "source_title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
+        "source_content_hash": "2c19612efff8843e",
+        "quote": "The company said it has closed a $15 million seed round led by Accel, along with a previously undisclosed $2.5 million pre-seed.",
+        "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
+      },
       {
         "source_id": "FISRC-7c15ac15bf3d0b1a",
         "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",

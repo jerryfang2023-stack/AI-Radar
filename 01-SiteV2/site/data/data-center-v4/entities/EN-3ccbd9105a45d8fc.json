@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "generatedAt": "2026-09-07T02:51:30.693Z",
     "latestDataDate": "2026-09-07",
     "currentDate": "2026-09-07",
-    "eventCount": 2715,
+    "eventCount": 2712,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -107,14 +107,100 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d663029e9f63ca9d",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "sales",
+            "name": "销售",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4430e63e18ef8a71",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-18dde56ad521c85d",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4aea7236523abdaf",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "sales",
+            "name": "销售",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b90df96b978922a4",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4215b6211b4235b4",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b37e95d84aef579b",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          }
+        ],
         "entityIds": [
           "EN-1b34327fac9a188e",
           "EN-6f92e043fe518e14",
           "EN-3ccbd9105a45d8fc",
           "EN-b5738c169b693bee",
           "EN-7d3194f79e645c42",
-          "EN-c70eca6b0f88f44d"
+          "EN-c70eca6b0f88f44d",
+          "FICO-6f92e043fe518e14"
         ]
       },
       {
@@ -1156,6 +1242,7 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-bce46f2e5cc68d5d",
         "EV-2dff88f85e3bce86",
         "EV-987cb2e5e20f79ce",
         "EV-81bbaaec2965864a",
@@ -1401,6 +1488,7 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "FICO-6f92e043fe518e14",
         "EN-770ef1d2b6e24172",
         "EN-9a970ad7900121db",
         "EN-ee04228c5c6d8b08",
@@ -1636,7 +1724,6 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-db817106c17fd439",
         "EV-b9d8b3582f12bdc7",
         "EV-89ec502a1340079a",
         "EV-ab839326ca9597d8",
@@ -2175,8 +2262,6 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
-        "EN-f8b37bdcef61de7a",
-        "EN-7d3194f79e645c42",
         "EN-9fe430e5274621be",
         "EN-071f3eca285403f1",
         "EN-05bb7905b99d8025",
@@ -2289,6 +2374,7 @@
         "EN-76a9a8a6e2f1a47b",
         "EN-ebfeb2f51b9eaf40",
         "EN-047364b9be67f665",
+        "EN-7d3194f79e645c42",
         "EN-df3b29befa02cd17",
         "EN-48b85dc3fd54f74d",
         "EN-9c8ae69b84f21a2e",

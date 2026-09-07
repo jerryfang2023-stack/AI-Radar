@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "generatedAt": "2026-09-07T02:51:30.693Z",
     "latestDataDate": "2026-09-07",
     "currentDate": "2026-09-07",
-    "eventCount": 2715,
+    "eventCount": 2712,
     "quarantinedEventCount": 24
   },
   "eventTypes": {
@@ -188,24 +188,285 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d663029e9f63ca9d",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "sales",
+            "name": "销售",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4430e63e18ef8a71",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          }
+        ],
         "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-18dde56ad521c85d",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4aea7236523abdaf",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "sales",
+            "name": "销售",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b90df96b978922a4",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4215b6211b4235b4",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          }
+        ],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "FICO-6f92e043fe518e14"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b37e95d84aef579b",
+            "fundingInsightId": "FI-8ed4fdb401415a2e"
+          }
+        ]
       },
-      "classifications": [],
-      "displayTags": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d663029e9f63ca9d",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "sales",
+          "name": "销售",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4430e63e18ef8a71",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4215b6211b4235b4",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-18dde56ad521c85d",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b37e95d84aef579b",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4aea7236523abdaf",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "sales",
+          "name": "销售",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b90df96b978922a4",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d663029e9f63ca9d",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "sales",
+          "name": "销售",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4430e63e18ef8a71",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-18dde56ad521c85d",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4aea7236523abdaf",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "sales",
+          "name": "销售",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b90df96b978922a4",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4215b6211b4235b4",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "FICO-6f92e043fe518e14"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b37e95d84aef579b",
+          "fundingInsightId": "FI-8ed4fdb401415a2e"
+        }
+      ],
       "entityIds": [
         "EN-1b34327fac9a188e",
         "EN-6f92e043fe518e14",
         "EN-3ccbd9105a45d8fc",
         "EN-b5738c169b693bee",
         "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
+        "EN-c70eca6b0f88f44d",
+        "FICO-6f92e043fe518e14"
       ],
       "entityNames": [
         "German startup Atira",
@@ -213,7 +474,8 @@
         "Salesforce",
         "ServiceNow",
         "OpenAI",
-        "Anthropic"
+        "Anthropic",
+        "Atira"
       ],
       "productName": "",
       "products": [],
@@ -1145,264 +1407,6 @@
       "publisher": "wap.seccw.com"
     },
     {
-      "id": "EV-25d36f2f87e7cb64",
-      "dataDate": "2026-09-07",
-      "date": "2026-09-02",
-      "updatedDate": "2026-09-07",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI基础设施初创公司融资2025-2026——新市场推介",
-      "originalTitle": "AI Infrastructure Startup Funding 2025-2026 - New Market Pitch",
-      "subject": "Firmus",
-      "action": "funding",
-      "object": "$2,000M",
-      "metrics": [
-        "$2,000M",
-        "$1,500M",
-        "$1,375M"
-      ],
-      "locations": [
-        "US"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-3af708031d4a7106"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "compute_cloud_service",
-            "name": "算力云服务",
-            "entityIds": [
-              "EN-3af708031d4a7106"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-554e79e652b29f3a"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "compute_cloud_service",
-            "name": "算力云服务",
-            "entityIds": [
-              "EN-554e79e652b29f3a"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-d41ebd9f02722fc8"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [
-              "EN-d41ebd9f02722fc8"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-3af708031d4a7106"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-3af708031d4a7106"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-554e79e652b29f3a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-554e79e652b29f3a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-3af708031d4a7106"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-3af708031d4a7106"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-554e79e652b29f3a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-554e79e652b29f3a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-3af708031d4a7106",
-        "EN-8d4321d936320802",
-        "EN-554e79e652b29f3a",
-        "EN-d41ebd9f02722fc8"
-      ],
-      "entityNames": [
-        "Firmus",
-        "NVIDIA",
-        "Lambda",
-        "Crusoe"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://newmarketpitch.com/blogs/news/ai-infrastructure-funding-analysis",
-      "publisher": "newmarketpitch.com"
-    },
-    {
       "id": "EV-81bbaaec2965864a",
       "dataDate": "2026-09-07",
       "date": "2026-09-02",
@@ -1671,126 +1675,6 @@
       "products": [],
       "sourceUrl": "https://wonderful.ai/blog-articles/wonderful-raises-550m-series-c?scLang=en",
       "publisher": "wonderful.ai"
-    },
-    {
-      "id": "EV-db817106c17fd439",
-      "dataDate": "2026-09-07",
-      "date": "2026-09-02",
-      "updatedDate": "2026-09-07",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI 智能体融资 2026：95 家公司",
-      "originalTitle": "AI Agent Funding 2026: 95 Companies",
-      "subject": "empirik.ai",
-      "action": "funding",
-      "object": "$21M",
-      "metrics": [
-        "$21 million",
-        "$700M",
-        "$5.5B",
-        "$550M"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f8b37bdcef61de7a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-7d3194f79e645c42"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f8b37bdcef61de7a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-7d3194f79e645c42"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f8b37bdcef61de7a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-7d3194f79e645c42"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-f8b37bdcef61de7a",
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "empirik.ai",
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://aifunding.me/ai-agent-funding",
-      "publisher": "aifunding.me"
     },
     {
       "id": "EV-a2f902b9707ffd02",
@@ -10368,99 +10252,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/990/410.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-4e7d7ddd476b190f",
-      "dataDate": "2026-09-07",
-      "date": "2026-08-16",
-      "updatedDate": "2026-09-07",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "AI初创公司如何完成种子轮融资（2026）",
-      "originalTitle": "How to Raise a Seed Round for an AI Startup (2026)",
-      "subject": "How to",
-      "action": "Raise",
-      "object": "a Seed Round for an AI Startup (2026)",
-      "metrics": [
-        "$500K",
-        "$1M",
-        "20%",
-        "100%",
-        "35%",
-        "50%",
-        "$5M",
-        "$600M",
-        "$900M",
-        "$100 "
-      ],
-      "locations": [
-        "U.S."
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-8044aae1f86875d9"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-8044aae1f86875d9"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-8044aae1f86875d9"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-8044aae1f86875d9"
-      ],
-      "entityNames": [
-        "How"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://getdeal.ai/ai-market/how-to-raise-a-seed-round-for-an-ai-startup",
-      "publisher": "getdeal.ai"
     },
     {
       "id": "EV-276f0a1577748558",

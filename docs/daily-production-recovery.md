@@ -74,6 +74,22 @@ the Data Center but exclude it from Funding Insights. Withdraw an incorrectly
 published application card and prune its derived taxonomy decision; retain the
 source evidence and a withdrawal reason in its queue.
 
+Fundraising tutorials and sector/year financing directories are discovery
+containers, not single-company funding events. Reject them at source eligibility
+before either deterministic or model-assisted event admission; retain their Raw
+evidence and QA reason. A real company-specific announcement or retrospective
+must not be rejected merely because its headline contains "How".
+
+When accepted evidence separately names a completed current round and a
+previously undisclosed historical round, bind current amount and round together
+from that clause. A combined headline amount may remain the reported total, but
+cannot overwrite current proceeds or turn a seed round into its prior pre-seed.
+The funding consistency gate checks both the current amount and round label.
+
+Funding taxonomy keeps an existing application-company ID until an approved
+public profile or explicit identity decision resolves it. An exact name in Raw
+event entities alone must not silently promote that ID into the public catalog.
+
 First-Line Viewpoints archives approved morning records by original URL on each
 publication. Offline rebuilds merge the existing approved history before adding
 new snapshots: shallow Git history or an absent translation cache must never
