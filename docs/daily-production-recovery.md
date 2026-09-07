@@ -90,6 +90,11 @@ Funding taxonomy keeps an existing application-company ID until an approved
 public profile or explicit identity decision resolves it. An exact name in Raw
 event entities alone must not silently promote that ID into the public catalog.
 
+Production Code Checks run for every pull request without path filters. Atomic
+split-data publications can exceed GitHub's filtered diff limit and previously
+left code changes unchecked. Verify both Windows and Linux results for the exact
+head commit before merging; an empty check list is not a passing check.
+
 First-Line Viewpoints archives approved morning records by original URL on each
 publication. Offline rebuilds merge the existing approved history before adding
 new snapshots: shallow Git history or an absent translation cache must never
