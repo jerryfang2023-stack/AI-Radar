@@ -552,6 +552,27 @@ test("source-title backfill defers unresolved non-event discovery titles", () =>
         return true;
       },
     );
+
+    // A discovery record must not hide a canonical requirement when both
+    // records reuse the same captured title and translation job.
+    const rawFile = path.join(dateRoot, "raw-documents.json");
+    const [firstRaw] = JSON.parse(fs.readFileSync(rawFile, "utf8"));
+    writeJson(rawFile, [firstRaw, { ...firstRaw, raw_id: "RAW-2", source_artifact_id: "SA-2" }]);
+    writeJson(path.join(dateRoot, "source-artifacts.json"), [
+      { source_artifact_id: "SA-1", snapshot_refs: [snapshotRef] },
+      { source_artifact_id: "SA-2", snapshot_refs: [snapshotRef] },
+    ]);
+    writeJson(path.join(dateRoot, "canonical-events.json"), [{ source_refs: ["SA-2"] }]);
+    assert.throws(
+      () => execFileSync(process.execPath, args, options),
+      (error) => {
+        const blocked = JSON.parse(error.stdout);
+        assert.equal(blocked.ok, false);
+        assert.equal(blocked.blocking_unresolved, 1);
+        assert.equal(blocked.deferred_non_event, 0);
+        return true;
+      },
+    );
   } finally {
     fs.rmSync(tempRoot, { recursive: true, force: true });
     fs.rmSync(privateRoot, { recursive: true, force: true });

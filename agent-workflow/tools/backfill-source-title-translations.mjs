@@ -117,6 +117,7 @@ async function main() {
   const targetRawIds = new Set([...eventTargetRawIds, ...truncatedTitleRawIds]);
 
   const jobsByPath = new Map();
+  const requiredTitleKeys = new Set();
   for (const rawId of targetRawIds) {
     if (selectedRawIds.size && !selectedRawIds.has(rawId)) continue;
     const relativePath = rawPathById.get(rawId);
@@ -138,6 +139,7 @@ async function main() {
       ? acceptedTitle
       : sourceTitleFromCapturedPayload(capturedPayload);
     if (!sourceTitle) continue;
+    if (eventTargetRawIds.has(rawId)) requiredTitleKeys.add(titleTranslationKey(sourceTitle));
     jobsByPath.set(`${relativePath}|${context.date}|${sourceTitle}`, {
       rawId,
       relativePath,
@@ -195,8 +197,8 @@ async function main() {
     }
     translationResults.set(titleTranslationKey(job.sourceTitle), result);
   }
-  const blockingFailures = failures.filter((failure) => eventTargetRawIds.has(failure.raw_id));
-  const deferredFailures = failures.filter((failure) => !eventTargetRawIds.has(failure.raw_id));
+  const blockingFailures = failures.filter((failure) => requiredTitleKeys.has(titleTranslationKey(failure.title)));
+  const deferredFailures = failures.filter((failure) => !requiredTitleKeys.has(titleTranslationKey(failure.title)));
 
   if (write) {
     const updates = generated.flatMap(({ job, result }) => {

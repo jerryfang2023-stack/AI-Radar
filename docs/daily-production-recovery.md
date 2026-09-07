@@ -23,6 +23,9 @@ despite a failed outcome.
    URL, exact original title and capture date, and select private metadata with
    the same date/URL. Model generation revalidates existing candidate decisions
    with `--reuse-existing=true` instead of replacing successful work on retries.
+   Unresolved truncated discovery titles may stay deferred only when no
+   CanonicalEvent requires their translation. Shared title/job deduplication
+   retains the canonical requirement; unresolved public-event titles still block.
 
 ## Preserve operational state
 
