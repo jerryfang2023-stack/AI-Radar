@@ -89,6 +89,7 @@ async function main() {
   const rawPathById = new Map();
   const rawContextById = new Map();
   const rawBySourceArtifact = new Map();
+  const truncatedTitleRawIds = new Set();
   const eventTargetRawIds = new Set();
   const availableDates = dates();
 
@@ -101,7 +102,7 @@ async function main() {
       rawContextById.set(raw.raw_id, { date, raw });
       rawBySourceArtifact.set(raw.source_artifact_id, raw.raw_id);
       if (/(?:\.\.\.|…)$/.test(String(raw.title_original || "").trim())) {
-        eventTargetRawIds.add(raw.raw_id);
+        truncatedTitleRawIds.add(raw.raw_id);
       }
     }
     for (const [rawId, snapshotRef] of sourceSnapshotRefsByRawId(sourceArtifacts, raws)) rawPathById.set(rawId, snapshotRef);
@@ -113,9 +114,10 @@ async function main() {
     }
   }
 
-  const targetRawIds = new Set(eventTargetRawIds);
+  const targetRawIds = new Set([...eventTargetRawIds, ...truncatedTitleRawIds]);
 
   const jobsByPath = new Map();
+  const requiredTitleKeys = new Set();
   for (const rawId of targetRawIds) {
     if (selectedRawIds.size && !selectedRawIds.has(rawId)) continue;
     const relativePath = rawPathById.get(rawId);
@@ -137,6 +139,7 @@ async function main() {
       ? acceptedTitle
       : sourceTitleFromCapturedPayload(capturedPayload);
     if (!sourceTitle) continue;
+    if (eventTargetRawIds.has(rawId)) requiredTitleKeys.add(titleTranslationKey(sourceTitle));
     jobsByPath.set(`${relativePath}|${context.date}|${sourceTitle}`, {
       rawId,
       relativePath,
@@ -194,6 +197,8 @@ async function main() {
     }
     translationResults.set(titleTranslationKey(job.sourceTitle), result);
   }
+  const blockingFailures = failures.filter((failure) => requiredTitleKeys.has(titleTranslationKey(failure.title)));
+  const deferredFailures = failures.filter((failure) => !requiredTitleKeys.has(titleTranslationKey(failure.title)));
 
   if (write) {
     const updates = generated.flatMap(({ job, result }) => {
@@ -221,6 +226,8 @@ async function main() {
     cached_or_chinese: uniqueTitles.size - missingJobs.length,
     generated: generated.length - failures.length,
     unresolved: failures.length,
+    blocking_unresolved: blockingFailures.length,
+    deferred_non_event: deferredFailures.length,
     failures,
   };
 
@@ -228,7 +235,7 @@ async function main() {
   const suffix = write ? "write" : "dry-run";
   const reportFile = path.join(reportRoot, `source-title-translation-backfill-${suffix}.json`);
   writeJson(reportFile, report);
-  if (failures.length) {
+  if (blockingFailures.length) {
     console.log(JSON.stringify({
       ok: false,
       report: path.relative(root, reportFile),
@@ -236,7 +243,9 @@ async function main() {
       target_raws: report.target_raws,
       unique_titles: report.unique_titles,
       unresolved: report.unresolved,
-      failure_examples: failures.slice(0, 10),
+      blocking_unresolved: report.blocking_unresolved,
+      deferred_non_event: report.deferred_non_event,
+      failure_examples: blockingFailures.slice(0, 10),
     }, null, 2));
     if (write) process.exitCode = 1;
     return;
@@ -250,6 +259,8 @@ async function main() {
       unique_titles: report.unique_titles,
       cached_or_chinese: report.cached_or_chinese,
       unresolved: report.unresolved,
+      blocking_unresolved: report.blocking_unresolved,
+      deferred_non_event: report.deferred_non_event,
     }, null, 2));
     return;
   }
@@ -264,6 +275,7 @@ async function main() {
       continue;
     }
     const result = translationResults.get(titleTranslationKey(job.sourceTitle));
+    if (!result) continue;
     const before = JSON.stringify(job.payload);
     if (job.sourceTitleRepaired) {
       job.payload.title = job.sourceTitle;
@@ -295,6 +307,9 @@ async function main() {
     target_raws: report.target_raws,
     unique_titles: report.unique_titles,
     generated: report.generated,
+    unresolved: report.unresolved,
+    blocking_unresolved: report.blocking_unresolved,
+    deferred_non_event: report.deferred_non_event,
     raw_json_updated: report.raw_json_updated,
     raw_markdown_updated: report.raw_markdown_updated,
     source_titles_repaired: report.source_titles_repaired,

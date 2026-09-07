@@ -468,6 +468,117 @@ test("source-title backfill hydrates private evidence without mutating accepted 
   assert.deepEqual(acceptedDocument, acceptedBefore);
 });
 
+test("source-title backfill defers unresolved non-event discovery titles", () => {
+  const projectRoot = process.cwd();
+  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-title-backfill-non-event-"));
+  const privateRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-title-backfill-private-"));
+  const date = "2026-09-07";
+  const hash = "a8cc8b7888e20d6e";
+  const truncated = "Global Startup Investment Hit Record $510B In H1 2026 As AI Boom ...";
+  const snapshotRef = `01-SiteV2/content/01-raw/originals/${date}/r-001.json`;
+  const recordRef = `records/${date}/r-001.json`;
+  const objectRef = `objects/${hash.slice(0, 2)}/${hash}.txt`;
+  try {
+    writeJson(path.join(tempRoot, ".evidence-backup.json"), { backupRoot: privateRoot });
+    writeJson(path.join(privateRoot, "manifest.json"), { schemaVersion: "PRIVATE-EVIDENCE-STORE-V2.0" });
+    writeJson(path.join(privateRoot, recordRef), {
+      title: truncated,
+      original_url: "https://news.example.com/non-event",
+      canonical_url: "https://news.example.com/non-event",
+      content_hash: hash,
+    });
+    fs.mkdirSync(path.dirname(path.join(privateRoot, objectRef)), { recursive: true });
+    fs.writeFileSync(path.join(privateRoot, objectRef), `${truncated}\nDiscovery-only source body.`, "utf8");
+    fs.writeFileSync(path.join(privateRoot, "catalog.jsonl"), `${JSON.stringify({
+      snapshot_ref: snapshotRef,
+      content_hash: hash,
+      evidence_ref: `evidence://${hash}`,
+      object_ref: objectRef,
+      record_ref: recordRef,
+      source_url: "https://news.example.com/non-event",
+      data_date: date,
+    })}\n`, "utf8");
+
+    const dateRoot = path.join(tempRoot, `01-SiteV2/content/11-databases/data-center-v4/${date}`);
+    writeJson(path.join(dateRoot, "raw-documents.json"), [{
+      raw_id: "RAW-1",
+      source_artifact_id: "SA-1",
+      title_original: truncated,
+      content_hash: hash,
+      canonical_url: "https://news.example.com/non-event",
+      body_ref: `evidence://${hash}`,
+    }]);
+    writeJson(path.join(dateRoot, "source-artifacts.json"), [{
+      source_artifact_id: "SA-1",
+      snapshot_refs: [snapshotRef],
+    }]);
+    writeJson(path.join(dateRoot, "canonical-events.json"), []);
+    writeJson(path.join(tempRoot, "01-SiteV2/content/11-databases/source-title-translations.json"), {
+      version: "source-title-translations-v1",
+      translations: [],
+    });
+
+    const args = [
+      path.join(projectRoot, "agent-workflow/tools/backfill-source-title-translations.mjs"),
+      `--date=${date}`,
+      "--write=true",
+    ];
+    const options = {
+      cwd: tempRoot,
+      env: {
+        ...process.env,
+        GUANLAN_EVIDENCE_BACKUP_ROOT: privateRoot,
+        DEEPSEEK_API_KEY: "test-key",
+        DEEPSEEK_BASE_URL: "http://127.0.0.1:9",
+        TITLE_TRANSLATION_TIMEOUT_MS: "50",
+      },
+      encoding: "utf8",
+      timeout: 10_000,
+    };
+    const output = execFileSync(process.execPath, args, options);
+    const result = JSON.parse(output);
+    assert.equal(result.ok, true);
+    assert.equal(result.blocking_unresolved, 0);
+    assert.equal(result.deferred_non_event, 1);
+
+    writeJson(path.join(dateRoot, "canonical-events.json"), [{ source_refs: ["SA-1"] }]);
+    assert.throws(
+      () => execFileSync(process.execPath, args, options),
+      (error) => {
+        const blocked = JSON.parse(error.stdout);
+        assert.equal(blocked.ok, false);
+        assert.equal(blocked.blocking_unresolved, 1);
+        assert.equal(blocked.deferred_non_event, 0);
+        return true;
+      },
+    );
+
+    // A discovery record must not hide a canonical requirement when both
+    // records reuse the same captured title and translation job.
+    const rawFile = path.join(dateRoot, "raw-documents.json");
+    const [firstRaw] = JSON.parse(fs.readFileSync(rawFile, "utf8"));
+    writeJson(rawFile, [firstRaw, { ...firstRaw, raw_id: "RAW-2", source_artifact_id: "SA-2" }]);
+    writeJson(path.join(dateRoot, "source-artifacts.json"), [
+      { source_artifact_id: "SA-1", snapshot_refs: [snapshotRef] },
+      { source_artifact_id: "SA-2", snapshot_refs: [snapshotRef] },
+    ]);
+    writeJson(path.join(dateRoot, "canonical-events.json"), [{ source_refs: ["SA-2"] }]);
+    assert.throws(
+      () => execFileSync(process.execPath, args, options),
+      (error) => {
+        const blocked = JSON.parse(error.stdout);
+        assert.equal(blocked.ok, false);
+        assert.equal(blocked.blocking_unresolved, 1);
+        assert.equal(blocked.deferred_non_event, 0);
+        return true;
+      },
+    );
+  } finally {
+    fs.rmSync(tempRoot, { recursive: true, force: true });
+    fs.rmSync(privateRoot, { recursive: true, force: true });
+  }
+});
+
 test("approved translations repair an unchanged source title only at read time", () => {
   const original = "Acme AI raises $10 million in Series A funding";
   const chinese = "Acme AI 完成 1000 万美元 A 轮融资";
