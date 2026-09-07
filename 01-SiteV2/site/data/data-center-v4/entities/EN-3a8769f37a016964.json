@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-3a8769f37a016964",
+    "name": "Newsday are the latest publications",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-81f3efe8cc085ef4"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-05",
+    "lastSeen": "2026-09-07",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-81f3efe8cc085ef4"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-81f3efe8cc085ef4",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-05",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "西雅图时报和Newsday成为最新起诉OpenAI和微软的媒体机构",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2810327a8c3a03aa",
+          "EN-3a8769f37a016964",
+          "EN-7d3194f79e645c42",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

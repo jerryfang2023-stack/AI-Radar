@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "eventTypes": {
     "model_release": {
@@ -160,6 +160,65 @@
       "products": [],
       "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
       "publisher": "aiagentstore.ai"
+    },
+    {
+      "id": "EV-bce46f2e5cc68d5d",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-03",
+      "updatedDate": "2026-09-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
+      "originalTitle": "Exclusive: German startup Atira raises $17.5 million to streamline industrial sales processes | Fortune",
+      "subject": "Exclusive: German startup Atira",
+      "action": "raises",
+      "object": "$17.5 million to streamline industrial sales processes | Fortune",
+      "metrics": [
+        "$17.5 million",
+        "$15 million",
+        "$2.5 million",
+        "$27 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1b34327fac9a188e",
+        "EN-6f92e043fe518e14",
+        "EN-3ccbd9105a45d8fc",
+        "EN-b5738c169b693bee",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "German startup Atira",
+        "Atira",
+        "Salesforce",
+        "ServiceNow",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking",
+      "publisher": "fortune.com"
     },
     {
       "id": "EV-8ed7d4e02cc5c2ab",
@@ -1086,10 +1145,268 @@
       "publisher": "wap.seccw.com"
     },
     {
-      "id": "EV-81bbaaec2965864a",
-      "dataDate": "2026-09-05",
+      "id": "EV-25d36f2f87e7cb64",
+      "dataDate": "2026-09-07",
       "date": "2026-09-02",
-      "updatedDate": "2026-09-05",
+      "updatedDate": "2026-09-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI基础设施初创公司融资2025-2026——新市场推介",
+      "originalTitle": "AI Infrastructure Startup Funding 2025-2026 - New Market Pitch",
+      "subject": "Firmus",
+      "action": "funding",
+      "object": "$2,000M",
+      "metrics": [
+        "$2,000M",
+        "$1,500M",
+        "$1,375M"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-3af708031d4a7106"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-3af708031d4a7106"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-554e79e652b29f3a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-554e79e652b29f3a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3af708031d4a7106"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-3af708031d4a7106"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-554e79e652b29f3a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-554e79e652b29f3a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3af708031d4a7106"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-3af708031d4a7106"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-554e79e652b29f3a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-554e79e652b29f3a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3af708031d4a7106",
+        "EN-8d4321d936320802",
+        "EN-554e79e652b29f3a",
+        "EN-d41ebd9f02722fc8"
+      ],
+      "entityNames": [
+        "Firmus",
+        "NVIDIA",
+        "Lambda",
+        "Crusoe"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://newmarketpitch.com/blogs/news/ai-infrastructure-funding-analysis",
+      "publisher": "newmarketpitch.com"
+    },
+    {
+      "id": "EV-81bbaaec2965864a",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-07",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -1354,6 +1671,126 @@
       "products": [],
       "sourceUrl": "https://wonderful.ai/blog-articles/wonderful-raises-550m-series-c?scLang=en",
       "publisher": "wonderful.ai"
+    },
+    {
+      "id": "EV-db817106c17fd439",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 智能体融资 2026：95 家公司",
+      "originalTitle": "AI Agent Funding 2026: 95 Companies",
+      "subject": "empirik.ai",
+      "action": "funding",
+      "object": "$21M",
+      "metrics": [
+        "$21 million",
+        "$700M",
+        "$5.5B",
+        "$550M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f8b37bdcef61de7a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f8b37bdcef61de7a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f8b37bdcef61de7a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f8b37bdcef61de7a",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "empirik.ai",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aifunding.me/ai-agent-funding",
+      "publisher": "aifunding.me"
     },
     {
       "id": "EV-a2f902b9707ffd02",
@@ -9931,6 +10368,99 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/990/410.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-4e7d7ddd476b190f",
+      "dataDate": "2026-09-07",
+      "date": "2026-08-16",
+      "updatedDate": "2026-09-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI初创公司如何完成种子轮融资（2026）",
+      "originalTitle": "How to Raise a Seed Round for an AI Startup (2026)",
+      "subject": "How to",
+      "action": "Raise",
+      "object": "a Seed Round for an AI Startup (2026)",
+      "metrics": [
+        "$500K",
+        "$1M",
+        "20%",
+        "100%",
+        "35%",
+        "50%",
+        "$5M",
+        "$600M",
+        "$900M",
+        "$100 "
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-8044aae1f86875d9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-8044aae1f86875d9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-8044aae1f86875d9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8044aae1f86875d9"
+      ],
+      "entityNames": [
+        "How"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://getdeal.ai/ai-market/how-to-raise-a-seed-round-for-an-ai-startup",
+      "publisher": "getdeal.ai"
     },
     {
       "id": "EV-276f0a1577748558",
@@ -125754,10 +126284,10 @@
       "publisher": "itbear.com.cn"
     },
     {
-      "id": "EV-810d0f3892cdf3ab",
-      "dataDate": "2026-09-06",
+      "id": "EV-e3a282c070969a55",
+      "dataDate": "2026-09-07",
       "date": "2026-09-01",
-      "updatedDate": "2026-09-06",
+      "updatedDate": "2026-09-07",
       "eventType": "procurement_contract",
       "eventTypeLabel": "采购合同",
       "eventGroup": "商业合作",
@@ -125768,7 +126298,7 @@
       "originalTitle": "The Nation’s First Bulk Purchase Agreement for AI Governance",
       "subject": "Darwin AI",
       "action": "procurement_contract",
-      "object": "Carahsoft Bulk Purchase Agreement BP2026-0015",
+      "object": "Bulk Purchase Agreement BP2026-0015",
       "metrics": [],
       "locations": [],
       "missingFields": [],
@@ -125798,10 +126328,10 @@
       "publisher": "insider.govtech.com"
     },
     {
-      "id": "EV-e3a282c070969a55",
-      "dataDate": "2026-09-03",
+      "id": "EV-810d0f3892cdf3ab",
+      "dataDate": "2026-09-06",
       "date": "2026-09-01",
-      "updatedDate": "2026-09-03",
+      "updatedDate": "2026-09-06",
       "eventType": "procurement_contract",
       "eventTypeLabel": "采购合同",
       "eventGroup": "商业合作",
@@ -125812,7 +126342,7 @@
       "originalTitle": "The Nation’s First Bulk Purchase Agreement for AI Governance",
       "subject": "Darwin AI",
       "action": "procurement_contract",
-      "object": "Bulk Purchase Agreement BP2026-0015",
+      "object": "Carahsoft Bulk Purchase Agreement BP2026-0015",
       "metrics": [],
       "locations": [],
       "missingFields": [],
@@ -148797,9 +149327,9 @@
     },
     {
       "id": "EV-f6ad842485bb71ab",
-      "dataDate": "2026-09-06",
+      "dataDate": "2026-09-07",
       "date": "2026-09-04",
-      "updatedDate": "2026-09-06",
+      "updatedDate": "2026-09-07",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -148823,10 +149353,10 @@
           "cn-qbitai-rss"
         ],
         "claim_refs": [
-          "CL-d6914372eb3a7919",
-          "CL-1a827a6c7fd5a642",
-          "CL-d247c0b8f6b372ad",
-          "CL-5d9223432376c8ad"
+          "CL-40ba75f5113ff71a",
+          "CL-9dc59b2b5593aa38",
+          "CL-79621d20dd6b5eaf",
+          "CL-49d85fa8fea6fa64"
         ]
       },
       "missingFields": [],
@@ -148888,6 +149418,88 @@
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/09/484547.html",
       "publisher": "量子位"
+    },
+    {
+      "id": "EV-80775a8178f39aa5",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-03",
+      "updatedDate": "2026-09-07",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Figure 与 Nscale 签署战略合作，基于 NVIDIA Vera Rubin 平台部署多达 100,000 个 GPU",
+      "originalTitle": "Figure and Nscale Sign Strategic Partnership For Up to 100,000 GPUs on the NVIDIA Vera Rubin Platform",
+      "subject": "Figure and Nscale Sign Strategic",
+      "action": "Partnership",
+      "object": "For Up to 100,000 GPUs on the NVIDIA Vera Rubin Platform",
+      "metrics": [
+        "100,000 GPUs",
+        "$3.5 billion",
+        "$6 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-889393fb69a5b305",
+        "EN-86d0c85aec3ff6a7",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Figure",
+        "Nscale Sign Strategic",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://figure.ai/news/figure-and-nscale-sign-strategic-partnership",
+      "publisher": "figure.ai"
     },
     {
       "id": "EV-a4f0e4fe1350a810",
@@ -162775,10 +163387,98 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-2d17a87d3863dcee",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "updatedDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "英伟达黄仁勋祝贺 OpenAI 团队发布 Astra，称“AGI 已经到来”",
+      "originalTitle": "",
+      "subject": "英伟达黄仁勋祝贺 OpenAI 团队",
+      "action": "发布",
+      "object": "Astra，称“AGI 已经到来”",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d1288f6a06bedcc4",
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
+        "EN-329b660ea7dfe78b"
+      ],
+      "entityNames": [
+        "英伟达黄仁勋祝贺 OpenAI",
+        "NVIDIA",
+        "OpenAI",
+        "Astra"
+      ],
+      "productName": "Astra",
+      "products": [
+        {
+          "name": "Astra",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/999/069.htm",
+      "publisher": "IT之家"
+    },
+    {
       "id": "EV-f01a13953fa7aaaa",
-      "dataDate": "2026-09-06",
-      "date": "2026-09-06",
-      "updatedDate": "2026-09-06",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "updatedDate": "2026-09-07",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -162847,6 +163547,795 @@
       ],
       "sourceUrl": "https://docs.nvidia.com/ai-enterprise",
       "publisher": "docs.nvidia.com"
+    },
+    {
+      "id": "EV-4ecc308baf04ff02",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "绿联发布家庭 AIoT 中枢 HomeAgent，至高可选 Jetson Thor T5000",
+      "originalTitle": "",
+      "subject": "绿联",
+      "action": "发布",
+      "object": "家庭 AIoT 中枢 HomeAgent，至高可选 Jetson Thor T5000",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-72fcf35a691c9bc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-72fcf35a691c9bc5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-72fcf35a691c9bc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-72fcf35a691c9bc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-72fcf35a691c9bc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-72fcf35a691c9bc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-72fcf35a691c9bc5",
+        "EN-8d4321d936320802",
+        "EN-a1b0d8a938903dc7",
+        "EN-601c1d91052f8f53"
+      ],
+      "entityNames": [
+        "绿联",
+        "NVIDIA",
+        "Jetson Thor",
+        "HomeAgent"
+      ],
+      "productName": "Jetson Thor",
+      "products": [
+        {
+          "name": "Jetson Thor",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "HomeAgent",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/879.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-54451ee210a0d0d4",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "CNBC：科技巨头一周密集更新 AI 模型，模型疲劳问题凸显",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "CNBC：科技巨头一周密集更新 AI 模型，模型疲劳问题凸显",
+      "metrics": [
+        "1 万",
+        "6.73 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-ea3bd73e2b506e00",
+        "EN-bbdefa2950f49882",
+        "EN-7d3194f79e645c42",
+        "EN-45ea02f28f8d8e50"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Meta",
+        "Google",
+        "OpenAI",
+        "GPT-6 Astra"
+      ],
+      "productName": "GPT-6 Astra",
+      "products": [
+        {
+          "name": "GPT-6 Astra",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/999/036.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6a3286e2186e4774",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里千问开源 Qwen-Drive-1.0-4B 自动驾驶视觉语言模型",
+      "originalTitle": "",
+      "subject": "阿里千问",
+      "action": "开源 Qwen-Drive-1.0-4B 自动驾驶视觉语言模型",
+      "object": "阿里千问开源 Qwen-Drive-1.0-4B 自动驾驶视觉语言模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-bae152c4560df38c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bae152c4560df38c",
+        "EN-047364b9be67f665",
+        "EN-30c8eadb9e215134"
+      ],
+      "entityNames": [
+        "阿里千问",
+        "Alibaba",
+        "Qwen-Drive-1.0-4B"
+      ],
+      "productName": "Qwen-Drive-1.0-4B",
+      "products": [
+        {
+          "name": "Qwen-Drive-1.0-4B",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/997.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6b0106ef4a79df05",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌将AI音乐生成功能直接引入Gemini应用，搭载全新Lyria 3.5模型",
+      "originalTitle": "Google brings AI music generation directly into the Gemini app with its new Lyria 3.5 model",
+      "subject": "Google",
+      "action": "model_release",
+      "object": "Lyria 3.5 music model",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-7ad34701224a4d2d",
+        "EN-d8c72a1b5049f258"
+      ],
+      "entityNames": [
+        "Google",
+        "Lyria 3.5",
+        "Lyria 3.5 music"
+      ],
+      "productName": "Lyria 3.5",
+      "products": [
+        {
+          "name": "Lyria 3.5",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Lyria 3.5 music",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/google-brings-ai-music-generation-directly-into-the-gemini-app-with-its-new-lyria-3-5-model",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-9db7fbddb8ab4715",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "卫报报道 AI 生成食物图片攻占美国餐厅菜单引发消费者反感",
+      "originalTitle": "",
+      "subject": "DoorDash",
+      "action": "product_release",
+      "object": "卫报报道 AI 生成食物图片攻占美国餐厅菜单引发消费者反感",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b0126946c556dc47"
+      ],
+      "entityNames": [
+        "DoorDash"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/999/042.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-9ef426e51f4690ee",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "UC Berkeley 发布 CUA-Lite：统一沙箱、数据、评测与 RL 的计算机使用智能体开源平台",
+      "originalTitle": "",
+      "subject": "UC Berkeley",
+      "action": "发布",
+      "object": "CUA-Lite：统一沙箱、数据、评测与 RL 的计算机使用智能体开源平台",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c5b80d395ee0b261",
+        "EN-38d0f9d15d6c8fcd"
+      ],
+      "entityNames": [
+        "UC Berkeley",
+        "CUA-Lite"
+      ],
+      "productName": "CUA-Lite",
+      "products": [
+        {
+          "name": "CUA-Lite",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/05/uc-berkeley-researchers-release-cua-lite-an-open-platform-unifying-sandboxes-data-evaluation-and-rl-for-computer-use-agents",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-d30d99933a02e332",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "B站首届AI创造公开赛收官，超八成参赛者为一人团队",
+      "originalTitle": "",
+      "subject": "UP主W博士与AI猫娘",
+      "action": "product_release",
+      "object": "B站首届AI创造公开赛收官，超八成参赛者为一人团队",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ed2171ff8fb2f9ce"
+      ],
+      "entityNames": [
+        "UP主W博士与AI猫娘"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/09/484890.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-db926055d40a4dff",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌WeatherNext 3弃用物理模拟，直接从实时卫星数据学习天气",
+      "originalTitle": "Google's WeatherNext 3 ditches physics simulations and learns weather directly from live satellite data",
+      "subject": "Google and DeepMind",
+      "action": "model_release",
+      "object": "WeatherNext 3",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-2b6e51bec93e86c1",
+        "EN-ca4c432b515ac9db"
+      ],
+      "entityNames": [
+        "Google",
+        "Google DeepMind",
+        "WeatherNext 3"
+      ],
+      "productName": "WeatherNext 3",
+      "products": [
+        {
+          "name": "WeatherNext 3",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/googles-weathernext-3-ditches-physics-simulations-and-learns-weather-directly-from-live-satellite-data",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-eea8fc1a5c5a7326",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "公安部发布\"国家反诈 AI\"App，微信、支付宝小程序同步开放",
+      "originalTitle": "",
+      "subject": "公安部",
+      "action": "发布",
+      "object": "\"国家反诈 AI\"App，微信、支付宝小程序同步开放",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0d3ead46c00ecd09",
+        "EN-88e2cce43eeadb36"
+      ],
+      "entityNames": [
+        "Ministry of Public Security of China",
+        "Alipay"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/998/922.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-f26c01475e591f11",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta新实时音频模型为永不停止聆听的AI智能体奠定基础",
+      "originalTitle": "Meta's new real-time audio model is the foundation for AI assistants that never stop listening",
+      "subject": "Meta",
+      "action": "model_release",
+      "object": "Muse Voice Transcribe",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-e6af46098723586a"
+      ],
+      "entityNames": [
+        "Meta",
+        "Muse Voice Transcribe"
+      ],
+      "productName": "Muse Voice Transcribe",
+      "products": [
+        {
+          "name": "Muse Voice Transcribe",
+          "type": "模型",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/metas-new-real-time-audio-model-is-the-foundation-for-ai-assistants-that-never-stop-listening",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-fbdc0b51572a88a4",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "微软发布 AI 快速入门指南，30 分钟即可生成并发布 WinUI 原生应用",
+      "originalTitle": "",
+      "subject": "微软",
+      "action": "发布",
+      "object": "AI 快速入门指南，30 分钟即可生成并发布 WinUI 原生应用",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-60798c12d04a1cbd",
+        "EN-9d5c6d39199308d6"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "WinUI",
+        "WinUI 3"
+      ],
+      "productName": "WinUI",
+      "products": [
+        {
+          "name": "WinUI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        },
+        {
+          "name": "WinUI 3",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/999/015.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-39abdf174aa3aeec",
@@ -164135,112 +165624,6 @@
       "publisher": "maomu.com"
     },
     {
-      "id": "EV-6b0106ef4a79df05",
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
-      "updatedDate": "2026-09-05",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "谷歌在 Gemini 应用和 API 中上线音乐生成模型 Lyria 3.5，可生成长达数分钟的完整歌曲",
-      "originalTitle": "",
-      "subject": "谷歌在 Gemini 应用和 API 中",
-      "action": "上线",
-      "object": "音乐生成模型 Lyria 3.5，可生成长达数分钟的完整歌曲",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "content_creation",
-            "name": "内容创作",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "content_creation",
-          "name": "内容创作",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "content_creation",
-          "name": "内容创作",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "speech_audio",
-          "name": "语音与音频",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-6d8f1756a5c5b4f4",
-        "EN-bbdefa2950f49882",
-        "EN-76e33aa7ea4d3a63"
-      ],
-      "entityNames": [
-        "谷歌在 Gemini 应用",
-        "Google",
-        "API 中"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/998/647.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
       "id": "EV-6d92bb807f339b53",
       "dataDate": "2026-09-05",
       "date": "2026-09-05",
@@ -164476,9 +165859,9 @@
     },
     {
       "id": "EV-293d6feac5b8efab",
-      "dataDate": "2026-09-06",
+      "dataDate": "2026-09-07",
       "date": "2026-09-04",
-      "updatedDate": "2026-09-06",
+      "updatedDate": "2026-09-07",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
@@ -164540,6 +165923,62 @@
       ],
       "sourceUrl": "https://sspai.com/post/114164",
       "publisher": "少数派"
+    },
+    {
+      "id": "EV-8d48a9b8a69c331d",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-04",
+      "updatedDate": "2026-09-07",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
+      "originalTitle": "Microsoft’s Project Zenith is a ‘distraction-free Windows experience’ for developers",
+      "subject": "AMD",
+      "action": "hardware_product",
+      "object": "Project Zenith miniature PC",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-240389f4b730bad4",
+        "EN-2f8f0e714db5c847"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "AMD",
+        "Project Zenith"
+      ],
+      "productName": "Project Zenith",
+      "products": [
+        {
+          "name": "Project Zenith",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
+      "publisher": "The Verge AI"
     },
     {
       "id": "EV-4465e8bfd74508a6",
@@ -166310,9 +167749,9 @@
     },
     {
       "id": "EV-3aadd182733359ee",
-      "dataDate": "2026-09-06",
+      "dataDate": "2026-09-07",
       "date": "2026-09-03",
-      "updatedDate": "2026-09-06",
+      "updatedDate": "2026-09-07",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -167567,9 +169006,9 @@
     },
     {
       "id": "EV-62cb40b3abef60c7",
-      "dataDate": "2026-09-06",
+      "dataDate": "2026-09-07",
       "date": "2026-09-02",
-      "updatedDate": "2026-09-06",
+      "updatedDate": "2026-09-07",
       "eventType": "service_change",
       "eventTypeLabel": "服务变更",
       "eventGroup": "模型、产品与服务",
@@ -169341,9 +170780,9 @@
     },
     {
       "id": "EV-35df58b993efa71a",
-      "dataDate": "2026-09-05",
+      "dataDate": "2026-09-07",
       "date": "2026-09-01",
-      "updatedDate": "2026-09-05",
+      "updatedDate": "2026-09-07",
       "eventType": "pricing_change",
       "eventTypeLabel": "定价变更",
       "eventGroup": "模型、产品与服务",
@@ -169385,6 +170824,60 @@
       "products": [],
       "sourceUrl": "https://bensbites.com/p/build-your-ideas",
       "publisher": "Ben's Bites AI Newsletter"
+    },
+    {
+      "id": "EV-91eccd583f77528f",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-01",
+      "updatedDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 智能体正从聊天机器人转向工作流程",
+      "originalTitle": "AI agents are moving from chatbots to workflows - MarketScale",
+      "subject": "Salesforce",
+      "action": "product_release",
+      "object": "Winter '27 release",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-b4ce42ffc757cc19"
+      ],
+      "entityNames": [
+        "Salesforce",
+        "MarketScale"
+      ],
+      "productName": "MarketScale",
+      "products": [
+        {
+          "name": "MarketScale",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Salesforce"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marketscale.com/industries/software-and-technology/ai-agents-are-moving-from-chatbots-to-running-workflows-and-ops-will-feel-it-first",
+      "publisher": "marketscale.com"
     },
     {
       "id": "EV-446089c7f3d3e569",
@@ -285528,10 +287021,174 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-20571b175944604c",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "updatedDate": "2026-09-07",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI芯片销售文档 – 方法论 - Epoch AI",
+      "originalTitle": "AI Chip Sales Documentation – Methodology - Epoch AI",
+      "subject": "Nvidia",
+      "action": "hardware_capacity",
+      "object": "4M Hopper GPUs and 3M Blackwell GPUs through October 2025",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://epoch.ai/data/ai-chip-sales-documentation/methodology",
+      "publisher": "epoch.ai"
+    },
+    {
+      "id": "EV-6c2f395e1961f6ef",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "updatedDate": "2026-09-07",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 15 亿美元 AI 版权和解金开始发放，出版社与作者分配争议不断",
+      "originalTitle": "",
+      "subject": "Anthropic 15 亿美元 AI 版权",
+      "action": "和解",
+      "object": "金开始发放，出版社与作者分配争议不断",
+      "metrics": [
+        "50 万",
+        "15 亿",
+        "101.02 亿",
+        "50%",
+        "100%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/999/049.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-8a1086b789782cff",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "updatedDate": "2026-09-07",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta FAIR 联合牛津和 UCL 提出 AI Research Preference Models（RPMs）：在消耗 GPU 时数前排序 ML 实验",
+      "originalTitle": "",
+      "subject": "Meta FAIR",
+      "action": "research_result",
+      "object": "AI Research Preference Models (RPMs)",
+      "metrics": [
+        "94.1%",
+        "95.7%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0859355140ee4e41",
+        "EN-ea3bd73e2b506e00",
+        "EN-109c238bb522c38a",
+        "EN-bc92a6eaba9c48d9"
+      ],
+      "entityNames": [
+        "Meta FAIR",
+        "Meta",
+        "AI Research Preference",
+        "FAIR"
+      ],
+      "productName": "AI Research Preference",
+      "products": [
+        {
+          "name": "AI Research Preference",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Meta"
+          ]
+        },
+        {
+          "name": "FAIR",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/06/meta-fair-introduces-ai-research-preference-models-rpms-ranking-ml-experiments-before-spending-gpu-hours",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-c230c05281ef3aa2",
-      "dataDate": "2026-09-06",
-      "date": "2026-09-06",
-      "updatedDate": "2026-09-06",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "updatedDate": "2026-09-07",
       "eventType": "certification_compliance",
       "eventTypeLabel": "认证合规",
       "eventGroup": "组织、政策与法律",
@@ -285572,6 +287229,215 @@
       "products": [],
       "sourceUrl": "https://procurementsciences.com",
       "publisher": "procurementsciences.com"
+    },
+    {
+      "id": "EV-16f359eab1f09a1d",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
+      "originalTitle": "",
+      "subject": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra",
+      "action": "基准测试",
+      "object": "数据，部分成绩大幅变化",
+      "metrics": [
+        "99.9%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-45ea02f28f8d8e50"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "GPT-6 Astra"
+      ],
+      "productName": "GPT-6 Astra",
+      "products": [
+        {
+          "name": "GPT-6 Astra",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/998/927.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-34b7b2083170b680",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "西雅图时报和Newsday起诉OpenAI和微软侵权",
+      "originalTitle": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
+      "subject": "Seattle Times and Newsday",
+      "action": "sue",
+      "object": "OpenAI and Microsoft for infringement",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2810327a8c3a03aa",
+        "EN-1226f22c559007e0",
+        "EN-7d3194f79e645c42",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Seattle Times",
+        "Newsday",
+        "OpenAI",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-9970d6460e106e29",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 15 亿美元版权和解金分配引争议，出版商和文学经纪被指超额认领",
+      "originalTitle": "",
+      "subject": "Anthropic 15 亿美元版权",
+      "action": "和解",
+      "object": "金分配引争议，出版商和文学经纪被指超额认领",
+      "metrics": [
+        "$1.5 billion",
+        "$3,000 "
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-a6752127196a49c3",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-06",
+      "updatedDate": "2026-09-07",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "聊天机器人构建了“一个人的回音室”，如今精神病学必须判定“AI精神病”是否存在",
+      "originalTitle": "Chatbots built an \"echo chamber of one\" and now psychiatry has to decide if \"AI psychosis\" exists",
+      "subject": "Researchers at King's College London and other institutions",
+      "action": "research_result",
+      "object": "AI-associated psychosis",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5b6d829e7e08e8f9",
+        "EN-fe5c1a03814631fb",
+        "EN-f8fe5a0e1c9c9fc6",
+        "EN-470d249d8bd4cda7"
+      ],
+      "entityNames": [
+        "other institutions",
+        "PsychosisBench",
+        "EchoBench",
+        "AI-associated"
+      ],
+      "productName": "AI-associated",
+      "products": [
+        {
+          "name": "AI-associated",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/chatbots-built-an-echo-chamber-of-one-and-now-psychiatry-has-to-decide-if-ai-psychosis-exists",
+      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-fad0a95e71d54b11",
@@ -285637,6 +287503,130 @@
       ],
       "sourceUrl": "https://supplychainbrain.com/blogs/1-think-tank/post/43687-why-2026-is-the-year-of-ai-agents-for-autonomous-procurement",
       "publisher": "supplychainbrain.com"
+    },
+    {
+      "id": "EV-81f3efe8cc085ef4",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-05",
+      "updatedDate": "2026-09-07",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "西雅图时报和Newsday成为最新起诉OpenAI和微软的媒体机构",
+      "originalTitle": "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft",
+      "subject": "Seattle Times and Newsday are the latest publications to",
+      "action": "sue",
+      "object": "OpenAI and Microsoft",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2810327a8c3a03aa",
+        "EN-3a8769f37a016964",
+        "EN-7d3194f79e645c42",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Seattle Times",
+        "Newsday are the latest publications",
+        "OpenAI",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-b64782b7e6340893",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-05",
+      "updatedDate": "2026-09-07",
+      "eventType": "standard_specification",
+      "eventTypeLabel": "技术标准",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Artificial Analysis 在 GPT-6 Astra 评分引发质疑后，对其智能指数进行全面改革",
+      "originalTitle": "Artificial Analysis overhauls its Intelligence Index after GPT-6 Astra scoring drew skepticism",
+      "subject": "Artificial Analysis",
+      "action": "standard_specification",
+      "object": "Intelligence Index v4.2",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8ff5e729cd4089df"
+      ],
+      "entityNames": [
+        "Artificial Analysis"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/artificial-analysis-overhauls-its-intelligence-index-after-gpt-6-astra-scoring-drew-skepticism",
+      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-3bb3577e52eb08ea",
@@ -285907,6 +287897,185 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-7371ffb603de3e1c",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-04",
+      "updatedDate": "2026-09-07",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI的失控智能体不断逃脱，且没有正式流程对其进行调查",
+      "originalTitle": "OpenAI’s rogue agents keep escaping, with no formal process to investigate them",
+      "subject": "OpenAI agents",
+      "action": "security_incident",
+      "object": "German-language wiki",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-a81b5ef9c23cdf0c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-a81b5ef9c23cdf0c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-a81b5ef9c23cdf0c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a81b5ef9c23cdf0c",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI agents",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-bef842eacf8b7aad",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-04",
+      "updatedDate": "2026-09-07",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "AI计算提供商Nscale寻求35亿美元IPO前融资",
+      "originalTitle": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
+      "subject": "AI compute provider Nscale is looking for $3.5B in pre-",
+      "action": "IPO",
+      "object": "financing",
+      "metrics": [
+        "$3.5B",
+        "$3.5 billion",
+        "$1.5 billion",
+        "$2 billion",
+        "$1.1 billion",
+        "$155 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-d04298029a8ab693",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-04",
+      "updatedDate": "2026-09-07",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "恶意的OpenAI智能体似乎利用德国维基策划了又一次攻击",
+      "originalTitle": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
+      "subject": "Rogue OpenAI agents",
+      "action": "security_incident",
+      "object": "DseWiki",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-285abcf07f93b5bf",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Rogue OpenAI agents",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-0129eafcf88d891d",
       "dataDate": "2026-09-06",
       "date": "2026-09-04",
@@ -286013,185 +288182,6 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge",
       "publisher": "TechCrunch AI"
-    },
-    {
-      "id": "EV-7371ffb603de3e1c",
-      "dataDate": "2026-09-06",
-      "date": "2026-09-04",
-      "updatedDate": "2026-09-06",
-      "eventType": "security_incident",
-      "eventTypeLabel": "安全事件",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "OpenAI的失控智能体不断逃脱，且没有正式流程对其进行调查",
-      "originalTitle": "OpenAI’s rogue agents keep escaping, with no formal process to investigate them",
-      "subject": "OpenAI agents",
-      "action": "security_incident",
-      "object": "German-language wiki",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "security_operations",
-            "name": "安全运营",
-            "entityIds": [
-              "EN-a81b5ef9c23cdf0c"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-a81b5ef9c23cdf0c"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-a81b5ef9c23cdf0c"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-a81b5ef9c23cdf0c",
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "OpenAI agents",
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them",
-      "publisher": "TechCrunch AI"
-    },
-    {
-      "id": "EV-bef842eacf8b7aad",
-      "dataDate": "2026-09-06",
-      "date": "2026-09-04",
-      "updatedDate": "2026-09-06",
-      "eventType": "ipo_listing",
-      "eventTypeLabel": "IPO 与上市",
-      "eventGroup": "融资与并购",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "AI计算提供商Nscale寻求35亿美元IPO前融资",
-      "originalTitle": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
-      "subject": "AI compute provider Nscale is looking for $3.5B in pre-",
-      "action": "IPO",
-      "object": "financing",
-      "metrics": [
-        "$3.5B",
-        "$3.5 billion",
-        "$1.5 billion",
-        "$2 billion",
-        "$1.1 billion",
-        "$155 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "entityNames": [
-        "NVIDIA"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing",
-      "publisher": "TechCrunch AI"
-    },
-    {
-      "id": "EV-d04298029a8ab693",
-      "dataDate": "2026-09-06",
-      "date": "2026-09-04",
-      "updatedDate": "2026-09-06",
-      "eventType": "security_incident",
-      "eventTypeLabel": "安全事件",
-      "eventGroup": "组织、政策与法律",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "恶意的OpenAI智能体似乎利用德国维基策划了又一次攻击",
-      "originalTitle": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
-      "subject": "Rogue OpenAI agents",
-      "action": "security_incident",
-      "object": "DseWiki",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-285abcf07f93b5bf",
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "Rogue OpenAI agents",
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
-      "publisher": "The Verge AI"
     },
     {
       "id": "EV-345378cb7f1f64fd",
@@ -286829,9 +288819,9 @@
     },
     {
       "id": "EV-0094ff6922e9d570",
-      "dataDate": "2026-09-05",
+      "dataDate": "2026-09-07",
       "date": "2026-09-02",
-      "updatedDate": "2026-09-05",
+      "updatedDate": "2026-09-07",
       "eventType": "organization_people",
       "eventTypeLabel": "组织与人员",
       "eventGroup": "组织、政策与法律",

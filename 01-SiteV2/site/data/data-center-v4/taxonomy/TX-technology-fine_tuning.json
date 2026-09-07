@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "node": {
     "id": "TX-technology-fine_tuning",
@@ -2862,15 +2862,15 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-compute_cloud_service",
+        "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-target_user-developer",
         "TX-product_form-ai_infrastructure_software",
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-technology-open_weights",
         "TX-product_form-ai_compute_system",
         "TX-target_user-researcher",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
@@ -2893,9 +2893,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-industry-government_public_sector",
         "TX-product_form-ai_compute_system",
-        "TX-product_form-chip_accelerator",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
@@ -2939,8 +2939,8 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
+        "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
         "TX-technology-speech_audio",
@@ -3042,11 +3042,13 @@
       ],
       "eventIds": [
         "EV-f2c93c155070cd35",
+        "EV-25d36f2f87e7cb64",
         "EV-1e6f73c188a9e946",
         "EV-b84035029a63e52e"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-technology-open_weights",
         "TX-technology-fine_tuning"
@@ -3055,7 +3057,7 @@
         "EN-10556ee2cee94c72"
       ],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-07"
     },
     {
       "id": "EN-4a639cb888a15d75",
@@ -3077,10 +3079,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-industry-retail_ecommerce",
         "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-fine_tuning"
       ],

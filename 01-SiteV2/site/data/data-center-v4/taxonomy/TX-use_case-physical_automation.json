@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "node": {
     "id": "TX-use_case-physical_automation",
@@ -67,6 +67,7 @@
       "EV-e7b228c1b6b54c6a",
       "EV-57d3b7aa1a2f0fda",
       "EV-234ad54940674bf6",
+      "EV-80775a8178f39aa5",
       "EV-b40ba79822469bc0",
       "EV-8540958262148517",
       "EV-f2551f5cc8e2715e",
@@ -234,7 +235,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "events": [
     {
@@ -14536,6 +14537,88 @@
       "publisher": "NVIDIA Technical Blog（开发者技术博客 · RSS）"
     },
     {
+      "id": "EV-80775a8178f39aa5",
+      "dataDate": "2026-09-07",
+      "date": "2026-09-03",
+      "updatedDate": "2026-09-07",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Figure 与 Nscale 签署战略合作，基于 NVIDIA Vera Rubin 平台部署多达 100,000 个 GPU",
+      "originalTitle": "Figure and Nscale Sign Strategic Partnership For Up to 100,000 GPUs on the NVIDIA Vera Rubin Platform",
+      "subject": "Figure and Nscale Sign Strategic",
+      "action": "Partnership",
+      "object": "For Up to 100,000 GPUs on the NVIDIA Vera Rubin Platform",
+      "metrics": [
+        "100,000 GPUs",
+        "$3.5 billion",
+        "$6 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-889393fb69a5b305",
+        "EN-86d0c85aec3ff6a7",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Figure",
+        "Nscale Sign Strategic",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://figure.ai/news/figure-and-nscale-sign-strategic-partnership",
+      "publisher": "figure.ai"
+    },
+    {
       "id": "EV-b40ba79822469bc0",
       "dataDate": "2026-08-03",
       "date": "2026-08-02",
@@ -22802,9 +22885,9 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-industry-manufacturing",
         "TX-target_user-developer",
         "TX-product_form-ai_infrastructure_software",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_application-data_preparation_curation",
@@ -22832,13 +22915,13 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
-        "TX-target_user-developer",
+        "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-industry-automotive_transportation",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -22935,8 +23018,8 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-physical_automation",
         "TX-product_form-model",
-        "TX-target_user-developer",
         "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
         "TX-target_user-researcher"
@@ -22991,12 +23074,12 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
-        "TX-target_user-developer",
+        "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -23126,9 +23209,9 @@
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
         "TX-target_user-developer",
         "TX-product_form-ai_infrastructure_software",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-target_user-researcher",
@@ -23145,13 +23228,16 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "英伟达"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-6b668e4655192209",
+        "EV-25d36f2f87e7cb64",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
         "EV-c32dd87e1f72b09a",
@@ -23220,6 +23306,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-80775a8178f39aa5",
         "EV-3ad9a2bb87c407dd",
         "EV-8321e5cd7d423d62",
         "EV-30be225da68f2f70",
@@ -23248,7 +23335,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-2d17a87d3863dcee",
         "EV-f01a13953fa7aaaa",
+        "EV-4ecc308baf04ff02",
         "EV-d626fbf563d8afc7",
         "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
@@ -23352,6 +23441,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-20571b175944604c",
         "EV-bef842eacf8b7aad",
         "EV-c06d008e73a0d337",
         "EV-0094ff6922e9d570",
@@ -23387,12 +23477,13 @@
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
+        "TX-technology-agentic_execution",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-product_form-ai_infrastructure_software",
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
@@ -23415,7 +23506,6 @@
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-professional_services",
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
@@ -23437,23 +23527,30 @@
         "EN-7d3194f79e645c42",
         "EN-9bc22dcabf7f45b3",
         "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
-        "EN-a3266ab9e10d6105"
+        "EN-a3266ab9e10d6105",
+        "EN-11ef7b03c79c9bbd",
+        "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-06"
+      "lastSeen": "2026-09-07"
     },
     {
       "id": "EN-6b5df3bd8bb0c67d",
@@ -23500,8 +23597,8 @@
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-physical_automation",
-        "TX-target_user-developer",
         "TX-technology-agentic_execution",
+        "TX-target_user-developer",
         "TX-ai_market_application-ai_development_orchestration",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
@@ -23580,8 +23677,8 @@
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-physical_automation",
-        "TX-target_user-developer",
         "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-developer_tool",
         "TX-industry-logistics_supply_chain",
@@ -23704,12 +23801,12 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
-        "TX-target_user-developer",
+        "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
       ],
       "relatedEntityIds": [],
@@ -23881,8 +23978,8 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-physical_automation",
         "TX-product_form-model",
-        "TX-target_user-developer",
         "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
         "TX-target_user-researcher",
@@ -24040,8 +24137,8 @@
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-target_user-developer",
         "TX-industry-manufacturing",
+        "TX-target_user-developer",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
@@ -24464,7 +24561,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-06"
+      "lastSeen": "2026-09-07"
     },
     {
       "id": "EN-e59f5a52b6713a29",
@@ -24513,6 +24610,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-db926055d40a4dff",
         "EV-2db5afe6d0aa14b5",
         "EV-6ffd497940673b62",
         "EV-859489cd3fa4e596",
@@ -24560,9 +24658,10 @@
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
+        "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-video_generation",
@@ -24571,7 +24670,6 @@
         "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -24585,7 +24683,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-07"
     },
     {
       "id": "EN-364df82f85761d58",
@@ -24693,6 +24791,7 @@
         "EV-b334f46b11a68045",
         "EV-fe644da028a13217",
         "EV-75b9b997e9c7e5d1",
+        "EV-8d48a9b8a69c331d",
         "EV-c638f91cbb8bf845",
         "EV-737a6c098b70f6ff",
         "EV-601240034cf86d7f",
@@ -24714,13 +24813,13 @@
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-product_form-developer_tool",
         "TX-product_form-ai_compute_system",
-        "TX-product_form-chip_accelerator",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
@@ -24731,7 +24830,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-07"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -25877,6 +25976,68 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-526460c4600c67a0",
+      "snapshotKey": "526460c4600c67a0",
+      "snapshotId": "HWS-9c53c0f3ae78ad96",
+      "eventId": "EV-80775a8178f39aa5",
+      "eventIds": [
+        "EV-80775a8178f39aa5"
+      ],
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "title": "Figure",
+      "subject": "Figure",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "100000",
+          "unit": "GPUs",
+          "fact_ref": "HWF-641838518bdd334b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-07",
+          "hardware_fact_id": "HWF-641838518bdd334b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-03T00:00:00.000Z",
+          "subject_entity_id": "EN-889393fb69a5b305",
+          "subject_name": "Figure",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "100000",
+          "unit": "GPUs",
+          "source_quote": "Today we are announcing a partnership with Nscale to deploy the NVIDIA Vera Rubin platform for up to 100,000 GPUs targeted for initial deployment starting the second half of 2027 in Barstow, Texas. This deal represents an initial commitment of $3.5 billion of compute with intent to scale to over $6 billion. As part of the agreement, Nscale is also making a strategic investment in Figure, and the parties will also explore the potential to scale Nscale’s supply chain with humanoids.",
+          "event_refs": [
+            "EV-80775a8178f39aa5"
+          ],
+          "claim_ref": "CL-90d2df72d167a08e",
+          "source_refs": [
+            "SA-fbf799bc6e212e80"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-07/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://figure.ai/news/figure-and-nscale-sign-strategic-partnership",
+      "entityIds": [
+        "EN-889393fb69a5b305",
+        "EN-86d0c85aec3ff6a7",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HWC-25745f3a94bced50",
       "snapshotKey": "25745f3a94bced50",

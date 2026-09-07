@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-329b660ea7dfe78b",
@@ -22,19 +22,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-2d17a87d3863dcee",
       "EV-125040ec61215481"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-03",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-2d17a87d3863dcee",
         "EV-125040ec61215481"
       ],
       "hardware": [],
@@ -42,6 +44,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-2d17a87d3863dcee",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "英伟达黄仁勋祝贺 OpenAI 团队发布 Astra，称“AGI 已经到来”",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d1288f6a06bedcc4",
+          "EN-8d4321d936320802",
+          "EN-7d3194f79e645c42",
+          "EN-329b660ea7dfe78b"
+        ]
+      },
       {
         "id": "EV-125040ec61215481",
         "dataDate": "2026-09-04",

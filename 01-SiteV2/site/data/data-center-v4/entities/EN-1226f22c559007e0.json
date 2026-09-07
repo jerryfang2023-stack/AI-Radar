@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-1226f22c559007e0",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-34b7b2083170b680",
       "EV-86516e11c8a7f94d"
     ],
     "viewpointIds": [],
@@ -30,7 +31,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-05",
-    "lastSeen": "2026-09-06",
+    "lastSeen": "2026-09-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -40,10 +41,29 @@
       "hardware": [],
       "organizationPeople": [],
       "other": [
+        "EV-34b7b2083170b680",
         "EV-86516e11c8a7f94d"
       ]
     },
     "timeline": [
+      {
+        "id": "EV-34b7b2083170b680",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-06",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "西雅图时报和Newsday起诉OpenAI和微软侵权",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2810327a8c3a03aa",
+          "EN-1226f22c559007e0",
+          "EN-7d3194f79e645c42",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
       {
         "id": "EV-86516e11c8a7f94d",
         "dataDate": "2026-09-06",
@@ -130,6 +150,7 @@
         "EV-c108e7cc2df7faf4",
         "EV-83acf26a011ef213",
         "EV-c7a2774b07554f5d",
+        "EV-81f3efe8cc085ef4",
         "EV-86516e11c8a7f94d",
         "EV-d5d985325a1baacb",
         "EV-f2d29ca7b05c3dd9",
@@ -186,7 +207,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-06"
+      "lastSeen": "2026-09-07"
     }
   ],
   "fde": [],

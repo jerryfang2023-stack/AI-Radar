@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-45ea02f28f8d8e50",
@@ -23,6 +23,7 @@
     ],
     "eventIds": [
       "EV-636b45c518ae1313",
+      "EV-54451ee210a0d0d4",
       "EV-39abdf174aa3aeec",
       "EV-cb1bc28f78888566",
       "EV-4e31149f2cd129f7",
@@ -32,13 +33,14 @@
       "EV-a474530ccf6cd872",
       "EV-1f88bfaf77dcfca3",
       "EV-3a8752218ab2b487",
-      "EV-4adc165f85ae86ff"
+      "EV-4adc165f85ae86ff",
+      "EV-16f359eab1f09a1d"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-06",
+    "lastSeen": "2026-09-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -47,9 +49,10 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-54451ee210a0d0d4",
+        "EV-293d6feac5b8efab",
         "EV-39abdf174aa3aeec",
         "EV-cb1bc28f78888566",
-        "EV-293d6feac5b8efab",
         "EV-ffa46f84468cffd9",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
@@ -60,9 +63,75 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-16f359eab1f09a1d"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-54451ee210a0d0d4",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-06",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "CNBC：科技巨头一周密集更新 AI 模型，模型疲劳问题凸显",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-ea3bd73e2b506e00",
+          "EN-bbdefa2950f49882",
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
+      {
+        "id": "EV-293d6feac5b8efab",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-04",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
+        "displayTags": [],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-7d3194f79e645c42",
+          "EN-ea3bd73e2b506e00",
+          "EN-45ea02f28f8d8e50",
+          "EN-b1f973caf4a8c776"
+        ]
+      },
+      {
+        "id": "EV-16f359eab1f09a1d",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-06",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
       {
         "id": "EV-636b45c518ae1313",
         "dataDate": "2026-09-06",
@@ -121,25 +190,6 @@
         "entityIds": [
           "EN-7d3194f79e645c42",
           "EN-45ea02f28f8d8e50"
-        ]
-      },
-      {
-        "id": "EV-293d6feac5b8efab",
-        "dataDate": "2026-09-06",
-        "date": "2026-09-04",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
-        "displayTags": [],
-        "entityIds": [
-          "EN-478676438ee161a3",
-          "EN-7d3194f79e645c42",
-          "EN-ea3bd73e2b506e00",
-          "EN-45ea02f28f8d8e50",
-          "EN-b1f973caf4a8c776"
         ]
       },
       {
@@ -316,6 +366,76 @@
   "fde": [],
   "hardware": [],
   "hardwareCatalog": [
+    {
+      "id": "HWC-14198e649dcdf340",
+      "snapshotKey": "14198e649dcdf340",
+      "snapshotId": "HWS-f5260bd73d83830b",
+      "eventId": "EV-54451ee210a0d0d4",
+      "eventIds": [
+        "EV-54451ee210a0d0d4"
+      ],
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "title": "GPT-6 Astra",
+      "subject": "Anthropic",
+      "productNames": [
+        "GPT-6 Astra"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "1",
+          "unit": "万",
+          "fact_ref": "HWF-a7e01a270d9e7a1f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-07",
+          "hardware_fact_id": "HWF-a7e01a270d9e7a1f",
+          "fact_type": "product",
+          "observed_at": "2026-09-06T13:44:18.000Z",
+          "subject_entity_id": "EN-c70eca6b0f88f44d",
+          "subject_name": "Anthropic",
+          "product_entity_ids": [
+            "EN-45ea02f28f8d8e50"
+          ],
+          "product_names": [
+            "GPT-6 Astra"
+          ],
+          "component_type": "data_center",
+          "metric_value": "1",
+          "unit": "万",
+          "source_quote": "Gartner 在今年 5 月发布的一份报告中表示，超过一半的 AI 支出将用于 AI 基础设施，而服务、软件、网络安全、模型及其他工具的支出总额也将超过 1 万亿美元 （现汇率约合 6.73 万亿元人民币） 。",
+          "event_refs": [
+            "EV-54451ee210a0d0d4"
+          ],
+          "claim_ref": "CL-88155869096feb45",
+          "source_refs": [
+            "SA-9823287e7b3e2bb6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-07/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/999/036.htm",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-ea3bd73e2b506e00",
+        "EN-bbdefa2950f49882",
+        "EN-7d3194f79e645c42",
+        "EN-45ea02f28f8d8e50"
+      ]
+    },
     {
       "id": "HWC-61de795c51fc7614",
       "snapshotKey": "61de795c51fc7614",

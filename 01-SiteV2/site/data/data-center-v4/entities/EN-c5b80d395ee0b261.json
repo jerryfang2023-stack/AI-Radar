@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-c5b80d395ee0b261",
+    "name": "UC Berkeley",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-9ef426e51f4690ee"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-06",
+    "lastSeen": "2026-09-07",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-9ef426e51f4690ee"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-9ef426e51f4690ee",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-06",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "UC Berkeley 发布 CUA-Lite：统一沙箱、数据、评测与 RL 的计算机使用智能体开源平台",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c5b80d395ee0b261",
+          "EN-38d0f9d15d6c8fcd"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-ee177629adba1141",
+      "snapshotKey": "ee177629adba1141",
+      "snapshotId": "HWS-029d98cf2204eec8",
+      "eventId": "EV-9ef426e51f4690ee",
+      "eventIds": [
+        "EV-9ef426e51f4690ee"
+      ],
+      "dataDate": "2026-09-07",
+      "date": "2026-09-07",
+      "title": "CUA-Lite",
+      "subject": "UC Berkeley",
+      "productNames": [
+        "CUA-Lite"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8c8ac3073257d2c5"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-07",
+          "hardware_fact_id": "HWF-8c8ac3073257d2c5",
+          "fact_type": "product",
+          "observed_at": "2026-09-06T06:11:02.000Z",
+          "subject_entity_id": "EN-c5b80d395ee0b261",
+          "subject_name": "UC Berkeley",
+          "product_entity_ids": [
+            "EN-38d0f9d15d6c8fcd"
+          ],
+          "product_names": [
+            "CUA-Lite"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "A team of researchers from UC Berkeley have released CUA-Lite , an open platform for computer-use agents (CUAs). The argument behind it is infrastructural rather than model-centric: training and benchmarking a CUA requires four pieces: agents, environments, traces, and a framework to evaluate and train them and all four are currently fragmented across separate repositories with incompatible interfaces. CUA-Lite puts them behind one action space, one data schema, and one command, across desktop, browser and mobile.",
+          "event_refs": [
+            "EV-9ef426e51f4690ee"
+          ],
+          "claim_ref": "CL-e58205b9bf7fa955",
+          "source_refs": [
+            "SA-80b68a62aa7a6f90"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-07/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://marktechpost.com/2026/09/05/uc-berkeley-researchers-release-cua-lite-an-open-platform-unifying-sandboxes-data-evaluation-and-rl-for-computer-use-agents",
+      "entityIds": [
+        "EN-c5b80d395ee0b261",
+        "EN-38d0f9d15d6c8fcd"
+      ]
+    }
+  ]
+}

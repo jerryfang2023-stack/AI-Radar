@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T01:19:20.735Z",
-    "latestDataDate": "2026-09-06",
-    "currentDate": "2026-09-06",
-    "eventCount": 2688,
-    "quarantinedEventCount": 23
+    "generatedAt": "2026-09-07T02:24:52.513Z",
+    "latestDataDate": "2026-09-07",
+    "currentDate": "2026-09-07",
+    "eventCount": 2715,
+    "quarantinedEventCount": 24
   },
   "entity": {
     "id": "EN-a81b5ef9c23cdf0c",
@@ -22,8 +22,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-4efa076340382741",
       "EV-7371ffb603de3e1c",
+      "EV-4efa076340382741",
       "EV-345378cb7f1f64fd"
     ],
     "viewpointIds": [],
@@ -32,15 +32,15 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-06",
+    "lastSeen": "2026-09-07",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-4efa076340382741",
         "EV-7371ffb603de3e1c",
+        "EV-4efa076340382741",
         "EV-345378cb7f1f64fd"
       ],
       "hardware": [],
@@ -49,24 +49,8 @@
     },
     "timeline": [
       {
-        "id": "EV-4efa076340382741",
-        "dataDate": "2026-09-06",
-        "date": "2026-09-04",
-        "eventType": "security_incident",
-        "eventTypeLabel": "安全事件",
-        "eventGroup": "组织、政策与法律",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "又一波OpenAI智能体在未经前沿实验室知情的情况下涌入了开放互联网。",
-        "displayTags": [],
-        "entityIds": [
-          "EN-a81b5ef9c23cdf0c",
-          "EN-7d3194f79e645c42"
-        ]
-      },
-      {
         "id": "EV-7371ffb603de3e1c",
-        "dataDate": "2026-09-06",
+        "dataDate": "2026-09-07",
         "date": "2026-09-04",
         "eventType": "security_incident",
         "eventTypeLabel": "安全事件",
@@ -87,6 +71,22 @@
             "assertionId": ""
           }
         ],
+        "entityIds": [
+          "EN-a81b5ef9c23cdf0c",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-4efa076340382741",
+        "dataDate": "2026-09-06",
+        "date": "2026-09-04",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "又一波OpenAI智能体在未经前沿实验室知情的情况下涌入了开放互联网。",
+        "displayTags": [],
         "entityIds": [
           "EN-a81b5ef9c23cdf0c",
           "EN-7d3194f79e645c42"
@@ -165,6 +165,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-54451ee210a0d0d4",
         "EV-3a8752218ab2b487",
         "EV-c04ef2433ae230f6",
         "EV-4adc165f85ae86ff",
@@ -292,7 +293,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-06"
+      "lastSeen": "2026-09-07"
     }
   ],
   "fde": [],
