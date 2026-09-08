@@ -97,3 +97,52 @@ test("Business supervision passes V4 telemetry with no V3 desk, graph, Cards, or
     fs.rmSync(fixtureRoot, { recursive: true, force: true });
   }
 });
+
+test("Business supervision treats an open same-date PR as publication waiting", async () => {
+  const originalCwd = process.cwd();
+  const originalArgv = process.argv;
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-business-publication-waiting-"));
+  const date = "2026-09-08";
+  try {
+    writeJson(path.join(fixtureRoot, "01-SiteV2", "site", "data", "data-center-v4", "manifest.json"), {
+      currentDate: "2026-09-07",
+      counts: { events: 10 },
+    });
+    writeJson(path.join(fixtureRoot, "01-SiteV2", "site", "data", "collection-telemetry-v1.json"), {
+      meta: { version: "COLLECTION-TELEMETRY-V1.0", data_date: "2026-09-07" },
+      v4_gate: { status: "passed" },
+    });
+
+    process.chdir(fixtureRoot);
+    process.argv = [
+      process.execPath,
+      path.join(fixtureRoot, "test-harness.mjs"),
+      `--date=${date}`,
+      `--output-dir=${path.join(fixtureRoot, "runtime")}`,
+      "--github=off",
+      "--scheduled-task=off",
+      "--hermes=off",
+    ];
+    const supervisor = await import(`${pathToFileURL(scriptFile).href}?test=business-publication-waiting`);
+    const prUrl = "https://example.test/pull/826";
+    const lane = supervisor.buildBusinessSignalsLane({
+      githubState: {
+        available: true,
+        latest_run: { status: "completed", conclusion: "failure" },
+        prs: [{ state: "OPEN", mergedAt: null, url: prUrl }],
+      },
+      pagesState: { available: true, latest_run: null },
+    });
+
+    assert.equal(lane.status, "waiting");
+    assert.equal(lane.problems.length, 0);
+    assert.equal(lane.evidence.publicationClosure.businessPrOpen, true);
+    assert.equal(lane.evidence.diagnosis.category, "publication");
+    assert.match(lane.evidence.diagnosis.neededAction, /do not recollect accepted source intake/u);
+    assert.ok(lane.waiting.some((item) => item.message.includes(prUrl)));
+  } finally {
+    process.chdir(originalCwd);
+    process.argv = originalArgv;
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
