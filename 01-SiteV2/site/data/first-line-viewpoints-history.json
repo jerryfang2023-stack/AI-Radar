@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-09-07T01:19:11.319Z",
+    "generatedAt": "2026-09-08T01:19:32.815Z",
     "sourceFile": "01-SiteV2/site/data/follow-builders-daily.json",
-    "sourceCommits": 143,
-    "sourceSnapshots": 144,
+    "sourceCommits": 144,
+    "sourceSnapshots": 145,
     "earliestDate": "2026-06-01",
     "latestDate": "2026-09-07",
     "dedupeKey": "original_url",
@@ -11,12 +11,12 @@
     "translationPolicy": "Only complete approved Chinese translations with matching source hashes are published."
   },
   "stats": {
-    "discovered": 2578,
-    "aiRelevant": 1437,
-    "alreadyApproved": 640,
+    "discovered": 2584,
+    "aiRelevant": 1441,
+    "alreadyApproved": 644,
     "translatedThisRun": 0,
     "pendingTranslation": 797,
-    "published": 1237,
+    "published": 1241,
     "pendingReasons": {
       "translation_gate_failed": 138,
       "mymemory": 634,
@@ -26,6 +26,182 @@
     }
   },
   "remarks": [
+    {
+      "id": "https://tldr.tech/ai/2026-09-07",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Claude proves Fermat 🧮, automated AI researcher 🔬, Z1 efficiency chip ⚡",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Claude证明了费马大定理 🧮，自动化AI研究员 🔬，Z1高效芯片 ⚡",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "7e838d57b8569b56",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Mon, 07 Sep 2026 00:00:00 GMT",
+      "date": "2026-09-07",
+      "url": "https://tldr.tech/ai/2026-09-07",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2096824861108928701",
+      "source": "x",
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "Builder. Make something people want, then make people want it. Harvard’17. GitHub: https://t.co/KCuEaje1wd",
+      "text": "One of the biggest crises of our time is the shortening of the human attention span Agents just make things worse",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我们这个时代最大的危机之一，就是人类注意力的缩短。而智能体只会让情况变得更糟。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "7c8ffe45dc9d8694",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-07T04:56:18.000Z",
+      "date": "2026-09-07",
+      "url": "https://x.com/zarazhangrui/status/2096824861108928701",
+      "likes": 78,
+      "retweets": 2,
+      "replies": 27,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2096798671547646134",
+      "source": "x",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
+      "text": "Fable reviewing literally every Astra code change.. \"this fix is the real deal\" Fable PM, Astra engineer is undefeated 🤝",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Fable 审查了 Astra 的每一个代码改动……“这个修复是真材实料” Fable 产品经理，Astra 工程师无可匹敌 🤝",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "76ce278bd706ed34",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-07T03:12:14.000Z",
+      "date": "2026-09-07",
+      "url": "https://x.com/nikunj/status/2096798671547646134",
+      "likes": 26,
+      "retweets": 0,
+      "replies": 2,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2096735726750908464",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "The internet is almost entirely unprepared for a future where everyone’s personal agents are running around executing tasks for them. There are going to be endless new challenges and opportunities at the infrastructure layer, for user experiences, new business models, and more. https://t.co/lmbQNJAeF6",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "互联网几乎完全没有为这样一个未来做好准备：届时每个人的个人代理都在四处奔走，替他们执行任务。在基础设施层面、用户体验、新商业模式等方面，将涌现出无穷无尽的新挑战和新机遇。https://t.co/lmbQNJAeF6",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "3add0539d3e61488",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-06T23:02:07.000Z",
+      "date": "2026-09-07",
+      "url": "https://x.com/levie/status/2096735726750908464",
+      "likes": 451,
+      "retweets": 41,
+      "replies": 51,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
     {
       "id": "2096688770523467947",
       "source": "x",
@@ -68,7 +244,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "5d3f174af302d2c3ee6f37aa2a3ca8bb50bb0500"
     },
     {
       "id": "2096095862732755342",
@@ -1315,7 +1491,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Muse Spark 1.3 ✨，Gemini 3.8 Flash ⚡，智能与成本的较量 📊",
+      "translation": "Muse Spark 1.3 ✨，Gemini 3.8 Flash ⚡，智能与成本之较量 📊",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
