@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-09-07",
-    "last_checked_date": "2026-09-07",
+    "latest_date": "2026-09-08",
+    "last_checked_date": "2026-09-08",
     "latest_financing_date": "2026-09-03",
-    "generated_at": "2026-09-07T02:42:15.409Z",
+    "generated_at": "2026-09-08T01:34:10.857Z",
     "card_count": 289,
     "china_market_card_count": 35,
     "duplicate_rounds_removed": 18,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-09-07T03:03:37.468Z"
+      "generated_at": "2026-09-08T01:34:24.842Z"
     },
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -88754,7 +88754,7 @@
                 "quote_hash": "c683f4356fe03853973a47ec6e6d76dff0a7f36e81c6f3f3f2f2718013497185"
               }
             ],
-            "entity_id": null,
+            "entity_id": "EN-80d387ccb3289295",
             "institution_id": "INV-cc23c5476d683c"
           },
           {
@@ -89154,8 +89154,8 @@
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "软银",
-          "canonical_entity_id": null,
-          "canonical_name": ""
+          "canonical_entity_id": "EN-80d387ccb3289295",
+          "canonical_name": "SoftBank"
         },
         {
           "relation_type": "invested_in_round",
@@ -204294,16 +204294,16 @@
           "known_round_totals": [
             {
               "currency": "USD",
-              "value": 2000000000,
-              "min_value": null,
+              "value": 4000000000,
+              "min_value": 4000000000,
               "max_value": null,
               "unit": "base",
-              "round_count": 1,
-              "status": "exact",
-              "display_zh": "20 亿美元"
+              "round_count": 2,
+              "status": "approximate",
+              "display_zh": "约 40 亿美元"
             }
           ],
-          "historical_round_count": 1
+          "historical_round_count": 2
         }
       },
       "products": [
@@ -204592,6 +204592,15 @@
           "source_refs": [
             "SA-0ad771754278ac30"
           ]
+        },
+        {
+          "event_id": "EV-c5d7d88d1aef8edb",
+          "date": "2026-05-07",
+          "title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
+          "amount": "20亿",
+          "source_refs": [
+            "SA-73107fccccac2fc2"
+          ]
         }
       ],
       "research_sources": [
@@ -204722,6 +204731,30 @@
           "is_summary": false,
           "counts_toward_known_total": true,
           "is_current": true
+        },
+        {
+          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "event_ids": [
+            "EV-c5d7d88d1aef8edb"
+          ],
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "约20亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 20 亿美元"
+          },
+          "announced_at": "2026-05-07",
+          "disclosure_status": "partially_disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
         }
       ],
       "market_scope": {
@@ -204787,12 +204820,12 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-4c761f22f0ef6d7f",
+      "funding_insight_id": "FI-f5103149f04ea6ed",
       "triggered_by_event_id": "EV-c5d7d88d1aef8edb",
       "as_of_date": "2026-06-09",
       "company": {
         "entity_id": "EN-b5251b35f15bedc4",
-        "name": "月之暗面",
+        "name": "Moonshot AI",
         "full_name": "月之暗面",
         "website": "",
         "summary": "月之暗面是一家成立于2023年4月的国内头部AI大模型创业公司，由杨植麟创办，专注于通用人工智能（AGI）领域，以长文本处理能力和Agent技术为核心突破方向，旗下产品Kimi智能助手在全球市场具备竞争力。",
@@ -204870,8 +204903,8 @@
             "quote_hash": "e737babe535055c795cdca3ef502d018ee4f51a93bf08cef269021b6f1c0e1bd"
           }
         ],
-        "application_entity_id": "FICO-481243d2f2a235c1",
-        "canonical_entity_consistent": false
+        "application_entity_id": "EN-b5251b35f15bedc4",
+        "canonical_entity_consistent": true
       },
       "financing": {
         "round": "轮次未披露",
@@ -205286,16 +205319,16 @@
           "known_round_totals": [
             {
               "currency": "USD",
-              "value": 2000000000,
-              "min_value": 2000000000,
+              "value": 4000000000,
+              "min_value": 4000000000,
               "max_value": null,
               "unit": "base",
-              "round_count": 1,
+              "round_count": 2,
               "status": "approximate",
-              "display_zh": "约 20 亿美元"
+              "display_zh": "约 40 亿美元"
             }
           ],
-          "historical_round_count": 1
+          "historical_round_count": 2
         }
       },
       "products": [
@@ -205943,6 +205976,15 @@
       ],
       "funding_history": [
         {
+          "event_id": "EV-0e4bddfd5c129618",
+          "date": "2026-06-08",
+          "title": "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍",
+          "amount": "$30 billion",
+          "source_refs": [
+            "SA-0ad771754278ac30"
+          ]
+        },
+        {
           "event_id": "EV-c5d7d88d1aef8edb",
           "date": "2026-05-07",
           "title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
@@ -206089,13 +206131,37 @@
         "EV-c5d7d88d1aef8edb"
       ],
       "aggregation": {
-        "key": "FICO-481243d2f2a235c1|undisclosed|USD:approximate:2000000000:::|2026-05-07",
+        "key": "EN-b5251b35f15bedc4|undisclosed|USD:approximate:2000000000:::|2026-05-07",
         "event_count": 1,
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-4c761f22f0ef6d7f",
+          "funding_insight_id": "FI-1b3b5e07545457bb",
+          "event_ids": [
+            "EV-0e4bddfd5c129618"
+          ],
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "20亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿美元"
+          },
+          "announced_at": "2026-06-08",
+          "disclosure_status": "partially_disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
+        {
+          "funding_insight_id": "FI-f5103149f04ea6ed",
           "event_ids": [
             "EV-c5d7d88d1aef8edb"
           ],
@@ -206154,8 +206220,8 @@
         "method": "card_explicit"
       },
       "links": {
-        "company": "",
-        "relation_map": "",
+        "company": "data-center.html?view=index&detail=entity&id=EN-b5251b35f15bedc4",
+        "relation_map": "data-center.html?view=relations&entity=EN-b5251b35f15bedc4",
         "funding_event": "data-center.html?view=events&detail=event&id=EV-c5d7d88d1aef8edb",
         "direction": "opportunity-map.html#direction-cards"
       },

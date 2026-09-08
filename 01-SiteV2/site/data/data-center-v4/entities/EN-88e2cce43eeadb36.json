@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -41,10 +41,14 @@
       "TX-industry-retail_ecommerce",
       "TX-product_form-ai_device"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-2c348893efb2316e"
+    ],
     "firstSeen": "2026-07-07",
     "lastSeen": "2026-09-07",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-63ce62ef3ad38467"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -370,8 +374,67 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-2c348893efb2316e",
+      "name": "StepFun",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "阶跃星辰",
+        "阶跃"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-bb8acbaab5f7aa4e",
+        "EV-584212d254d882bc",
+        "EV-ca223f2a929b67a2",
+        "EV-2c1fc2143d7d4a6a",
+        "EV-3edf153477310ffc",
+        "EV-6824e76c4aa69a71",
+        "EV-ee363e679d12329c",
+        "EV-712bb6241160c4c5",
+        "EV-d99037f2ed8db897"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [
+        "EN-88e2cce43eeadb36",
+        "EN-44a9bf3b11abea5c",
+        "EN-ed501d3e2d977553"
+      ],
+      "firstSeen": "2026-05-08",
+      "lastSeen": "2026-08-03"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-63ce62ef3ad38467",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2c348893efb2316e",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-88e2cce43eeadb36",
+      "object_type": "entity",
+      "event_id": "EV-584212d254d882bc",
+      "claim_refs": [
+        "CL-27c816131f62b34c",
+        "CL-17615e81feef9751",
+        "CL-7d8102d1fe2cc06b",
+        "CL-463b4fab2b7e8bb4"
+      ],
+      "source_refs": [
+        "SA-ea3e988bf3c873d8"
+      ],
+      "data_date": "2026-07-18",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-product_form-model",
@@ -465,6 +528,9 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-6a5b724c821567f3",
+        "EV-a251b011afec190d",
+        "EV-d32e50951ff7f9a1",
         "EV-2d17a87d3863dcee",
         "EV-6a3286e2186e4774",
         "EV-39abdf174aa3aeec",
@@ -708,6 +774,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-572e31f55b6ac1b1",
+        "EN-1a6d6ea981e8688c",
         "EN-bae152c4560df38c",
         "EN-7d3194f79e645c42",
         "EN-c608c4787821de1b",
@@ -827,7 +895,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-product_form-ai_infrastructure_software",

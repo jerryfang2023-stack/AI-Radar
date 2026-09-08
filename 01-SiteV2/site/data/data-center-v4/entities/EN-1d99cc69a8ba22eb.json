@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-6a5b724c821567f3",
       "EV-d08935b06ed9e7bb",
       "EV-363fe72da52bdb86"
     ],
@@ -29,13 +30,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-15",
-    "lastSeen": "2026-07-20",
+    "lastSeen": "2026-09-08",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-6a5b724c821567f3",
         "EV-d08935b06ed9e7bb",
         "EV-363fe72da52bdb86"
       ],
@@ -44,6 +46,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6a5b724c821567f3",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里发布 Qwen-Drive 1.0，一个模型同时承担驾驶与座舱助手",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-047364b9be67f665"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1d99cc69a8ba22eb",
+          "EN-047364b9be67f665",
+          "EN-04e05f9b8c061afd"
+        ]
+      },
       {
         "id": "EV-d08935b06ed9e7bb",
         "dataDate": "2026-07-20",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -225,14 +225,17 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-2d17a87d3863dcee",
         "EV-f01a13953fa7aaaa",
+        "EV-21fcd6420d6ff726",
+        "EV-ba091f86fba39da0",
+        "EV-2d17a87d3863dcee",
         "EV-4ecc308baf04ff02",
         "EV-d626fbf563d8afc7",
         "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
+        "EV-c942862b476b9eae",
         "EV-5890a74f1a62940e",
         "EV-b4376b7d0e863db3",
         "EV-f41fe4d6189853cd",
@@ -358,6 +361,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -365,10 +369,7 @@
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
-        "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-product_form-ai_infrastructure_software",
@@ -380,6 +381,8 @@
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
+        "TX-product_form-robotic_system",
+        "TX-technology-embodied_ai",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-technology-speech_audio",
@@ -440,7 +443,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     }
   ],
   "relationships": [
@@ -473,9 +476,9 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
-        "EV-987cb2e5e20f79ce",
         "EV-a2f902b9707ffd02",
         "EV-140ecf4fabe544ba",
+        "EV-987cb2e5e20f79ce",
         "EV-c6c297156ff274ac",
         "EV-1765fd690cff1cac",
         "EV-b116eafe60d71fbe",
@@ -530,6 +533,8 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-66561ec28d8b1fec",
+        "EV-ba091f86fba39da0",
         "EV-8e0c25aebb1d4f5f",
         "EV-358643eefe0a5df5",
         "EV-4465e8bfd74508a6",
@@ -586,9 +591,9 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
-        "EN-9a970ad7900121db",
         "EN-94cca1a82802fa64",
         "EN-a31f26263a2fe821",
+        "EN-9a970ad7900121db",
         "EN-1913c6ab46df3a68",
         "EN-2505fe8a9e908e04",
         "EN-373da2ec629326c0",
@@ -634,6 +639,7 @@
         "EN-3e14bbbb0445c2de",
         "EN-7c5d04104b1d34e7",
         "EN-72138e570e5103e2",
+        "EN-35826112ed957325",
         "EN-32e83e92d45d71f6",
         "EN-ec31d2be1b244616",
         "EN-6117af74470fbaa4",
@@ -690,7 +696,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-technology-guardrails_safety",

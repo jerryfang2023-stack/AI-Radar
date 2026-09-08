@@ -5,13 +5,72 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "hardware": [
+    {
+      "id": "HW-e0ad31e5b30c33bd",
+      "eventId": "EV-8d48a9b8a69c331d",
+      "dataDate": "2026-09-08",
+      "date": "2026-09-04",
+      "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
+      "sourceName": "The Verge AI",
+      "sourceDate": "2026-09-04",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-240389f4b730bad4",
+        "EN-2f8f0e714db5c847"
+      ]
+    },
+    {
+      "id": "HW-481a1d8ae5d122ed",
+      "eventId": "EV-c942862b476b9eae",
+      "dataDate": "2026-09-08",
+      "date": "2026-09-02",
+      "title": "OpenAI 揭秘自研 Jalapeño 芯片——基准测试称其超越英伟达 GB300",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://techradar.com/pro/openai-lifts-the-lid-on-its-in-house-jalapeno-chip-with-benchmarks-claiming-it-beats-nvidias-gb300",
+      "sourceName": "techradar.com",
+      "sourceDate": "2026-09-02",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802",
+        "EN-373ac021a2c0bb2c",
+        "EN-f5a8d7c00446d322"
+      ]
+    },
     {
       "id": "HW-14fa67c99bb909d0",
       "eventId": "EV-20571b175944604c",
@@ -37,35 +96,6 @@
       "sourceDate": "2026-09-07",
       "entityIds": [
         "EN-8d4321d936320802"
-      ]
-    },
-    {
-      "id": "HW-e0ad31e5b30c33bd",
-      "eventId": "EV-8d48a9b8a69c331d",
-      "dataDate": "2026-09-07",
-      "date": "2026-09-04",
-      "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
-      "hardwareType": "semiconductor",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
-      "supplier": "AMD",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
-      "sourceName": "The Verge AI",
-      "sourceDate": "2026-09-04",
-      "entityIds": [
-        "EN-9fbf261b62c1d7c0",
-        "EN-240389f4b730bad4",
-        "EN-2f8f0e714db5c847"
       ]
     },
     {
@@ -3316,6 +3346,158 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-fde7880cbf9629d0",
+      "snapshotKey": "fde7880cbf9629d0",
+      "snapshotId": "HWS-5b82eadefe30fee2",
+      "eventId": "EV-ba091f86fba39da0",
+      "eventIds": [
+        "EV-ba091f86fba39da0"
+      ],
+      "dataDate": "2026-09-08",
+      "date": "2026-09-08",
+      "title": "Anthropic",
+      "subject": "Anthropic",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-7a001c886fa83310"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-08",
+          "hardware_fact_id": "HWF-7a001c886fa83310",
+          "fact_type": "product",
+          "observed_at": "2026-09-07T08:51:30.000Z",
+          "subject_entity_id": "EN-c70eca6b0f88f44d",
+          "subject_name": "Anthropic",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Anthropic、Google Cloud、DeepSeek、智谱等厂商持续推出新模型、刷新能力边界的同时，Agent、AI 编程、端侧智能、AI 原生设备、机器人等方向也在快速升温。",
+          "event_refs": [
+            "EV-ba091f86fba39da0"
+          ],
+          "claim_ref": "CL-df8b364b94c32c4c",
+          "source_refs": [
+            "SA-51732fcb7e6e95de"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-08/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/485154.html",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-8d4321d936320802",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6f7ac1823da81d2e",
+        "EN-1d79127e9d90e89b"
+      ]
+    },
+    {
+      "id": "HWC-131941179f4c329b",
+      "snapshotKey": "131941179f4c329b",
+      "snapshotId": "HWS-07042d6804a65247",
+      "eventId": "EV-66561ec28d8b1fec",
+      "eventIds": [
+        "EV-66561ec28d8b1fec"
+      ],
+      "dataDate": "2026-09-08",
+      "date": "2026-09-08",
+      "title": "UnifoLM-X2-1.0",
+      "subject": "宇树科技",
+      "productNames": [
+        "UnifoLM-X2-1.0"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-f42f3df45fdb4914"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-08",
+          "hardware_fact_id": "HWF-f42f3df45fdb4914",
+          "fact_type": "product",
+          "observed_at": "2026-09-07T11:14:11.000Z",
+          "subject_entity_id": "EN-35826112ed957325",
+          "subject_name": "宇树科技",
+          "product_entity_ids": [
+            "EN-7cac0ae8e1bc51bf"
+          ],
+          "product_names": [
+            "UnifoLM-X2-1.0"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "业界代表包括 Meta 首席 AI 科学家 Yann LeCun 提出的 JEPA 系列架构（如 V-JEPA 2 已展示零样本机器人规划能力），以及多家厂商推出的世界模型底座。",
+          "event_refs": [
+            "EV-66561ec28d8b1fec"
+          ],
+          "claim_ref": "CL-0bb066fc7767cb92",
+          "source_refs": [
+            "SA-1fac3b91bddaad96"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-08/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/999/432.htm",
+      "entityIds": [
+        "EN-35826112ed957325",
+        "EN-ea3bd73e2b506e00",
+        "EN-7cac0ae8e1bc51bf"
+      ]
+    },
     {
       "id": "HWC-ee177629adba1141",
       "snapshotKey": "ee177629adba1141",
@@ -14759,33 +14941,34 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-07",
-      "funnel_id": "LF-93b86b3e08915f2f",
+      "data_date": "2026-09-08",
+      "funnel_id": "LF-974ccbad2c8fa534",
       "lens": "hardware",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
         "hardware_product_specs",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 15,
-      "original_sources": 9,
-      "valid_claims": 5,
-      "observations": 3,
-      "canonical_events": 2,
+      "raw_documents": 22,
+      "original_sources": 17,
+      "valid_claims": 7,
+      "observations": 2,
+      "canonical_events": 3,
       "blocker_counts": {
-        "source_outside_daily_window": 5,
+        "source_outside_daily_window": 7,
         "non_event_or_index_title": 2,
-        "raw_source_quality_block": 6
+        "source_outside_funding_backfill_window": 2,
+        "raw_source_quality_block": 8
       },
       "rates": {
-        "original_source_rate": 0.6,
-        "valid_claim_rate": 0.3333333333333333,
-        "observation_rate": 0.6,
-        "event_conversion_rate": 0.4
+        "original_source_rate": 0.7727272727272727,
+        "valid_claim_rate": 0.3181818181818182,
+        "observation_rate": 0.2857142857142857,
+        "event_conversion_rate": 0.42857142857142855
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-07/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-08/monitoring-funnel.json"
     }
   ]
 }

@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-28be1fc3808080ef",
+    "name": "iFlytek",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [
+      "科大讯飞"
+    ],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f07a8d1917413b6c"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-14754db7f1439c88"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-08",
+    "relationIds": [
+      "REL2-ae7bb1da6bf54e5c"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-f07a8d1917413b6c",
+        "EV-e2f3ad52e83f51ed"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f07a8d1917413b6c",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "科大讯飞发布星火 X2.5 模型：293B-A30B MoE 架构，全国产平台训练",
+        "displayTags": [],
+        "entityIds": [
+          "EN-28be1fc3808080ef",
+          "EN-040ddc407fcfdcfe"
+        ]
+      },
+      {
+        "id": "EV-e2f3ad52e83f51ed",
+        "dataDate": "2026-05-25",
+        "date": "2026-05-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-14754db7f1439c88"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-14754db7f1439c88"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-14754db7f1439c88",
+      "name": "科大讯飞智能办公本 Air 3 系列",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "Air 3"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e2f3ad52e83f51ed"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model"
+      ],
+      "relatedEntityIds": [
+        "EN-28be1fc3808080ef"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-05-25"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-ae7bb1da6bf54e5c",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-28be1fc3808080ef",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-14754db7f1439c88",
+      "object_type": "entity",
+      "event_id": "EV-e2f3ad52e83f51ed",
+      "claim_refs": [
+        "CL-122d5452e326e7e0",
+        "CL-092fa3ba898c9332",
+        "CL-a46da6f2ae0481e9"
+      ],
+      "source_refs": [
+        "SA-95e20144a2f414f2"
+      ],
+      "data_date": "2026-05-25",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

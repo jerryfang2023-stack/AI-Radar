@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -17,7 +17,8 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [
-      "阶跃星辰"
+      "阶跃星辰",
+      "阶跃"
     ],
     "verificationStatus": "verified",
     "datasetScopes": [
@@ -39,12 +40,14 @@
       "TX-technology-agentic_execution"
     ],
     "relatedEntityIds": [
+      "EN-88e2cce43eeadb36",
       "EN-44a9bf3b11abea5c",
       "EN-ed501d3e2d977553"
     ],
     "firstSeen": "2026-05-08",
     "lastSeen": "2026-08-03",
     "relationIds": [
+      "REL2-63ce62ef3ad38467",
       "REL2-a243d283b580493c",
       "REL2-b2812101f3a49110"
     ],
@@ -350,6 +353,42 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-88e2cce43eeadb36",
+      "name": "Alipay",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "支付宝"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-584212d254d882bc",
+        "EV-02686922dd82c4aa",
+        "EV-3fb492fb45980541",
+        "EV-2ffc3377977da114",
+        "EV-eea8fc1a5c5a7326",
+        "EV-3126fb08491de669",
+        "EV-7d09b00182b08c3f",
+        "EV-f6ac2938949f74ec",
+        "EV-2c1fc2143d7d4a6a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-industry-retail_ecommerce",
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [
+        "EN-2c348893efb2316e"
+      ],
+      "firstSeen": "2026-07-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
       "id": "EN-44a9bf3b11abea5c",
       "name": "Step Edge",
       "entityType": "product_candidate",
@@ -399,6 +438,27 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-63ce62ef3ad38467",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2c348893efb2316e",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-88e2cce43eeadb36",
+      "object_type": "entity",
+      "event_id": "EV-584212d254d882bc",
+      "claim_refs": [
+        "CL-27c816131f62b34c",
+        "CL-17615e81feef9751",
+        "CL-7d8102d1fe2cc06b",
+        "CL-463b4fab2b7e8bb4"
+      ],
+      "source_refs": [
+        "SA-ea3e988bf3c873d8"
+      ],
+      "data_date": "2026-07-18",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-a243d283b580493c",
       "relationship_version": "RELATION-V2.1",
@@ -654,6 +714,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-0f6e4d81f3dbbb64",
         "EV-4ecc308baf04ff02",
         "EV-50e7de294816f918",
         "EV-8e0c25aebb1d4f5f",

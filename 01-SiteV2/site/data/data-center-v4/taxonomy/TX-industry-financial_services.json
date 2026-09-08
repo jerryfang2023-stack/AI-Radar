@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "node": {
@@ -81,6 +81,7 @@
       "EV-2c87c8ea47cbd1b6",
       "EV-97747aee0cafd9f3",
       "EV-bad301e14b034fbd",
+      "EV-21fcd6420d6ff726",
       "EV-f71726063c6e1615",
       "EV-3dc8d5c373ddd1f3",
       "EV-9cd1cb31e2adf5dc",
@@ -149,6 +150,7 @@
       "EN-2b1bf2dbb57b6603",
       "EN-bbdefa2950f49882",
       "EN-06b5472c16feae4c",
+      "EN-eaee1415bd59b210",
       "EN-74be4cbf48e647b2",
       "EN-0078ec52880eaa14",
       "EN-4e721fae5963494d",
@@ -173,7 +175,7 @@
       "HW-a033b945449628d5"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-08-29"
+    "lastSeen": "2026-09-08"
   },
   "events": [
     {
@@ -26634,6 +26636,100 @@
       "publisher": "Anthropic：Newsroom（网页）"
     },
     {
+      "id": "EV-21fcd6420d6ff726",
+      "dataDate": "2026-09-08",
+      "date": "2026-09-07",
+      "updatedDate": "2026-09-08",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "IFM 发布 K2 Horizon：六款 Apache 2.0 开源模型，规模覆盖 0.9B 到 375B",
+      "originalTitle": "",
+      "subject": "IFM",
+      "action": "发布 K2 Horizon：六款 Apache 2.0 开源模型",
+      "object": "，规模覆盖 0.9B 到 375B",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-eaee1415bd59b210"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-eaee1415bd59b210"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-eaee1415bd59b210"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-eaee1415bd59b210",
+        "EN-6c87e5496f592f3c",
+        "EN-8d4321d936320802",
+        "EN-274d305865aa3144"
+      ],
+      "entityNames": [
+        "IFM",
+        "SGLang",
+        "NVIDIA",
+        "K2 Horizon"
+      ],
+      "productName": "K2 Horizon",
+      "products": [
+        {
+          "name": "K2 Horizon",
+          "type": "模型",
+          "ownerNames": [
+            "SGLang"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/06/ifm-releases-k2-horizon-six-apache-2-0-models-from-0-9b-to-375b",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-f71726063c6e1615",
       "dataDate": "2026-08-29",
       "date": "2026-08-28",
@@ -28238,14 +28334,17 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-2d17a87d3863dcee",
         "EV-f01a13953fa7aaaa",
+        "EV-21fcd6420d6ff726",
+        "EV-ba091f86fba39da0",
+        "EV-2d17a87d3863dcee",
         "EV-4ecc308baf04ff02",
         "EV-d626fbf563d8afc7",
         "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
+        "EV-c942862b476b9eae",
         "EV-5890a74f1a62940e",
         "EV-b4376b7d0e863db3",
         "EV-f41fe4d6189853cd",
@@ -28371,6 +28470,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -28378,10 +28478,7 @@
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
-        "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-product_form-ai_infrastructure_software",
@@ -28393,6 +28490,8 @@
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
+        "TX-product_form-robotic_system",
+        "TX-technology-embodied_ai",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-technology-speech_audio",
@@ -28453,7 +28552,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-e4a72fa4f054e9be",
@@ -28582,10 +28681,11 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-8232ad0075a77b7a",
+        "EV-ba091f86fba39da0",
         "EV-54451ee210a0d0d4",
         "EV-0fce4630e77c9db7",
         "EV-1f88bfaf77dcfca3",
-        "EV-8232ad0075a77b7a",
         "EV-37e3784d55f5f5d0",
         "EV-4b60d535f321263d",
         "EV-03ce826429a97aa9",
@@ -28790,6 +28890,7 @@
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
         "EV-6c2f395e1961f6ef",
+        "EV-0af472b1f95d7945",
         "EV-9970d6460e106e29",
         "EV-7a24f8d94f5eede7",
         "EV-bf57b79e05a537e6",
@@ -28878,6 +28979,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
@@ -28886,8 +28988,6 @@
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-consumer",
-        "TX-technology-embodied_ai",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
@@ -28895,6 +28995,7 @@
         "TX-use_case-software_development",
         "TX-technology-open_weights",
         "TX-industry-retail_ecommerce",
+        "TX-technology-embodied_ai",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-industry-legal_services",
@@ -28943,7 +29044,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-6fae0bc5a895aab8",
@@ -29167,13 +29268,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-sales",
-        "TX-product_form-model",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
         "TX-use_case-data_analysis",
@@ -29443,9 +29544,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-technology-open_weights",
@@ -29569,6 +29670,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-sales",
         "TX-industry-manufacturing",
@@ -29576,7 +29678,6 @@
         "TX-use_case-sales",
         "TX-industry-education",
         "TX-industry-media_entertainment",
-        "TX-product_form-model",
         "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
@@ -29789,11 +29890,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-models",
@@ -29833,12 +29934,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-use_case-knowledge_search",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
@@ -30217,7 +30318,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-eafe895eb8119e6e",
@@ -30572,8 +30673,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
@@ -30661,6 +30762,7 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-24ae0372410706ee",
         "EV-a4f0e4fe1350a810",
         "EV-3d9aa640411471ea",
         "EV-bfc1664d74f43fb3",
@@ -30677,6 +30779,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-ba091f86fba39da0",
         "EV-54451ee210a0d0d4",
         "EV-6b0106ef4a79df05",
         "EV-db926055d40a4dff",
@@ -30865,13 +30968,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-technology-embodied_ai",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
@@ -30881,6 +30983,7 @@
         "TX-product_form-end_user_application",
         "TX-technology-video_generation",
         "TX-industry-retail_ecommerce",
+        "TX-technology-embodied_ai",
         "TX-technology-image_generation",
         "TX-technology-multimodal",
         "TX-use_case-legal_compliance",
@@ -30919,7 +31022,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-06b5472c16feae4c",
@@ -30943,6 +31046,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-06-13"
+    },
+    {
+      "id": "EN-eaee1415bd59b210",
+      "name": "IFM",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-21fcd6420d6ff726"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -31115,10 +31239,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-product_form-model",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],

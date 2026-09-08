@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-09-07
+date: 2026-09-08
 status: current
 encoding: UTF-8
 ---
@@ -19,9 +19,9 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.1-24-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
-- Current accepted Funding Insights projection: 289 cards through 2026-09-07, including 35 China-market cards. Atira adds one card (current seed $15 million; total $17.5 million), Wonderful is deduplicated, and no generation remains blocked or pending. Independent live website/Mini Program full-commit and release-ID receipt verification remains mandatory; accepted repository data alone is not publication success.
-- Current Data Center accepted frontstage: 2,712 events, 219 companies, 343 products, 61 people, 1,363 investors, 386 relationships, 138 FDE records, 102 hardware records, 69 community items, and 1,244 viewpoints for 2026-09-07.
-- The 2026-09-07 daily bundle contains 40 canonical events and 109 Claims from 243 RawDocuments, with no FDE record and two hardware records; accepted-event entity, Claim, and SourceArtifact coverage is 100%. Three tutorials/directories were moved out of canonical admission, with Raw evidence preserved. University/institute-led research still requires cited participant evidence, and disputed Claims cannot project factual assertions.
+- Current accepted Funding Insights projection: 289 cards through 2026-09-08, including 35 China-market cards. Today's two eligible events are already covered and deduplicated; zero new, blocked or pending cards. Full-commit and release-ID receipt verification is required independently for the website and Mini Program.
+- Current Data Center accepted frontstage: 2,733 events, 219 companies, 343 products, 61 people, 1,363 investors, 388 relationships, 138 FDE records, 103 hardware records, 69 community items, and 1,249 viewpoints for 2026-09-08.
+- The 2026-09-08 daily bundle contains 37 canonical events and 100 Claims from 235 RawDocuments, with no FDE record and two hardware records. Source/Claim traceability is 100%. Publication recovery reuses accepted PR #826 without recollection. Entity materialization now preserves historical aliases for the same identity; all 386 prior relationships survive and two new relationships are present. The failed 09:50 scheduled closure remains historical evidence; afternoon windows must not be marked passed early.
 - Current funding taxonomy projection uses reviewed event decisions and evidence-backed event/entity classification assertions under `TAG-V4.1`; current counts are owned by the generated taxonomy review and consistency-gate reports rather than this handoff.
 - Current private-evidence counts are owned by the latest private-evidence gate rather than this handoff; the public repository contains locators only.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
@@ -58,7 +58,7 @@ External sources
 
 Model-assist production validates and rebuilds from the accepted candidate subset even when an isolated candidate generation fails; invalid partial output still fails closed at the model-assist gate.
 
-Use `docs/daily-production-recovery.md` for recovery; runtime logs, incident drafts, and local Skill discovery output belong outside Git. The 2026-09-07 recovery reused accepted run `34076089561` and private-evidence commit `7fc829947b30c1b46f83db9c2d8bee5b5ce9fa33`. Regression coverage now protects deduplicated canonical title jobs, tutorial/directory admission, current-versus-historical financing, and application-company taxonomy identity. The 09:50 scheduled failure remains historical evidence; consult the dated external final-closure report for the later publication result. Browser debugging was unattached, so live data checks are not desktop/mobile visual acceptance. Reuse a failed same-date checkpoint only when private-original archival is proven; do not recollect accepted intake to repair downstream publication.
+Use `docs/daily-production-recovery.md` for recovery. The 2026-09-08 accepted production run is `34176091575`, its publication PR is #826, and private-evidence HEAD is `7a83be765ed7cc319231c4f100ebaac199815b08`. PR #827 repairs publication-waiting supervision. Publication overlap is resolved by preserving each lane's accepted inputs and rebuilding shared outputs; no new source/model calls are needed. Data-lake alias-history regression coverage now runs in both Windows and Linux code checks. Runtime final-closure reports and live receipts, not this handoff, establish deployment completion. Browser control timed out during this run; data checks are not PC/mobile visual acceptance.
 
 The retired OPS worktree was removed after archiving its unique commit and 15 unsubmitted image deletions on local-only `workspace-archive/ops-analytics-readonly-20260907` (`54d9a0de72`). These deletions are not production changes. All 156 non-cache ignored files were SHA-256-verified into `C:/Users/86186/Documents/Fang/backups/workspace-cleanup-20260907/ops-analytics-readonly`; 746 rebuildable cache files were discarded. Keep this archive and backup until explicitly released. The merged 2026-09-07 auto-repair worktree was also removed; active monitoring browser profiles and the external Vault workspace were not deleted.
 

@@ -52,6 +52,12 @@ attributed reviewer. Coverage and frontstage construction share that admission
 set and merge resolution. Unreviewed entities remain pending, with counts and
 warnings; missing approved entities or event/mention evidence still block.
 
+Entity materialization must retain aliases across accepted daily records of the
+same stable ID, name and type. An empty latest alias array is not a withdrawal:
+discarding historical Chinese aliases can silently remove Claim-backed
+relationships. Latest verification status and explicit catalog corrections stay
+authoritative; never repair this by rewriting immutable daily evidence.
+
 Production code PR checks run secret-free on Linux and Windows, including with
 a production-shaped external evidence-root environment. Fixture tests must bind
 their own evidence root rather than inherit the runner's private store.

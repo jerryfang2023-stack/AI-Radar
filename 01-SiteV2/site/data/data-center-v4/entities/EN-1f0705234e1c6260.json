@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -22,13 +22,14 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-b99c318c66e1a295"
+      "EV-b99c318c66e1a295",
+      "EV-4ad737260c42c505"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-18",
-    "lastSeen": "2026-08-19",
+    "lastSeen": "2026-09-08",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -36,12 +37,31 @@
       "partnerships": [
         "EV-b99c318c66e1a295"
       ],
-      "productsServices": [],
+      "productsServices": [
+        "EV-4ad737260c42c505"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-4ad737260c42c505",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里千问办公推出业内首个多人工作台，支持百人在线协作",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1f0705234e1c6260",
+          "EN-047364b9be67f665",
+          "EN-e9fc4f156e36f6aa"
+        ]
+      },
       {
         "id": "EV-b99c318c66e1a295",
         "dataDate": "2026-08-19",

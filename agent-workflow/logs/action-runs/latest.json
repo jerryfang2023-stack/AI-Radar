@@ -1,45 +1,43 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08T02:00:05.997Z",
+  "generated_at": "2026-09-08T04:00:12.673Z",
   "date": "2026-09-08",
-  "action": "Business Signals daily supervision publication-state repair",
+  "action": "Daily publication and entity-history recovery",
   "action_status": "current",
   "record_level": "required",
   "trigger": "codex",
   "status": "success",
-  "summary": "Classified an open same-date Business Signals PR as publication waiting after all V4 gates passed, preventing stale local assets from triggering recollection.",
-  "contexts": [
-    "AGENTS.md",
-    "context/08-automation.md",
-    "context/10-experience-automation.md",
-    "context/11-hermes-daily-supervision-instructions.md",
-    "context/12-data-center-v4.md"
-  ],
+  "summary": "Reused accepted Sep 8 input and financing deduplication; resolved independent-lane publication overlap; retained historical aliases and restored all prior relationships.",
+  "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/write-daily-supervision-report.mjs",
-    "agent-workflow/tools/tests/daily-supervision-business-v4.test.mjs",
-    "agent-workflow/inbox/production-incidents/2026-09-04-business-signals-recurring-9b3705b9af766a92.md"
+    "agent-workflow/tools/sync-light-data-lake.mjs",
+    "agent-workflow/tools/tests/data-lake-v4-convergence.test.mjs",
+    ".github/workflows/production-code-checks.yml",
+    "context/00-current-state.md",
+    "docs/agent-handoff.md",
+    "docs/daily-production-recovery.md"
   ],
-  "outputs": [
-    "runtime://daily-supervision/2026-09-08"
-  ],
+  "outputs": [],
   "checks": [
-    "node --test agent-workflow/tools/tests/daily-supervision-business-v4.test.mjs",
-    "real-state supervision replay: business_signals waiting/publication with zero problems"
+    "Data Center daily integrity passed",
+    "Funding full gate passed",
+    "Alias-history tests 4 of 4 passed",
+    "386 prior relationships retained and 2 new relationships",
+    "Frontstage regression zero issues"
   ],
   "issues": [
-    "GitHub auto-merge returned a transient GraphQL error and left PR 826 open",
-    "daily supervision misclassified stale local assets as missing data"
+    "Publication PR 826 conflicted with first-line projections",
+    "Latest empty entity aliases erased historical Chinese relationship matches"
   ],
   "risks": [
-    "PR 826 remains conflicting and unpublished"
+    "Browser control timed out; visual PC and mobile acceptance remains unverified",
+    "Afternoon lanes are not yet due"
   ],
   "lessons": [
-    "An open exact-date production PR proves the chain reached publication and stale local assets are expected until merge"
+    "An empty latest alias array is not an identity withdrawal",
+    "Merge accepted lane inputs and rebuild shared serving data; never recollect to fix publication"
   ],
-  "reusable_rules": [
-    "Resume from the open publication PR and never recollect accepted same-date intake"
-  ],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }

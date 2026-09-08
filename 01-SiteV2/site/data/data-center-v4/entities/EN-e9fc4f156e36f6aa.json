@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -26,6 +26,7 @@
     "eventIds": [
       "EV-d80c43b35418e74d",
       "EV-b25b396e368ee4d9",
+      "EV-4ad737260c42c505",
       "EV-eedd370fd9cfdbb2",
       "EV-68897f26c8d956df"
     ],
@@ -35,7 +36,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-12",
-    "lastSeen": "2026-08-28",
+    "lastSeen": "2026-09-08",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -45,6 +46,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-4ad737260c42c505",
         "EV-eedd370fd9cfdbb2",
         "EV-68897f26c8d956df"
       ],
@@ -53,6 +55,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-4ad737260c42c505",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里千问办公推出业内首个多人工作台，支持百人在线协作",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1f0705234e1c6260",
+          "EN-047364b9be67f665",
+          "EN-e9fc4f156e36f6aa"
+        ]
+      },
       {
         "id": "EV-eedd370fd9cfdbb2",
         "dataDate": "2026-08-28",
@@ -315,6 +334,9 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-6a5b724c821567f3",
+        "EV-a251b011afec190d",
+        "EV-d32e50951ff7f9a1",
         "EV-2d17a87d3863dcee",
         "EV-6a3286e2186e4774",
         "EV-39abdf174aa3aeec",
@@ -558,6 +580,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-572e31f55b6ac1b1",
+        "EN-1a6d6ea981e8688c",
         "EN-bae152c4560df38c",
         "EN-7d3194f79e645c42",
         "EN-c608c4787821de1b",
@@ -677,7 +701,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     }
   ],
   "fde": [],

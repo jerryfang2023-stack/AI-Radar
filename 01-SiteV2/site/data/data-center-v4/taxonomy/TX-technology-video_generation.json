@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "node": {
@@ -24,6 +24,7 @@
       "EV-522c339dded54be5",
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
+      "EV-a251b011afec190d",
       "EV-c5f8f07d714f330f",
       "EV-172e82bbbedb3619",
       "EV-25b88403a237969f",
@@ -50,6 +51,7 @@
       "EN-e1517be14d06cdb7",
       "EN-d747d6f5125b6bee",
       "EN-b81c8201acfc7639",
+      "EN-572e31f55b6ac1b1",
       "EN-bbdefa2950f49882",
       "EN-1ba4a2b10cfc1093",
       "EN-031f4a060a67e7af",
@@ -67,7 +69,7 @@
       "HW-68457c8c0a7240ac"
     ],
     "firstSeen": "2026-06-16",
-    "lastSeen": "2026-08-30"
+    "lastSeen": "2026-09-08"
   },
   "events": [
     {
@@ -842,6 +844,128 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/967/217.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a251b011afec190d",
+      "dataDate": "2026-09-08",
+      "date": "2026-09-07",
+      "updatedDate": "2026-09-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Arena 第 36 周 AI 大模型盲测榜：国产多模型扎堆入榜前端开发榜，阿里 wan3.0 冲进视频榜前三",
+      "originalTitle": "",
+      "subject": "Arena",
+      "action": "product_release",
+      "object": "Arena 第 36 周 AI 大模型盲测榜：国产多模型扎堆入榜前端开发榜，阿里 wan3.0 冲进视频榜前三",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-572e31f55b6ac1b1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-572e31f55b6ac1b1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-572e31f55b6ac1b1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-572e31f55b6ac1b1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-572e31f55b6ac1b1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-572e31f55b6ac1b1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-572e31f55b6ac1b1",
+        "EN-047364b9be67f665",
+        "EN-9c8ae69b84f21a2e",
+        "EN-1d79127e9d90e89b"
+      ],
+      "entityNames": [
+        "Arena",
+        "Alibaba",
+        "Tencent",
+        "智谱AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/999/324.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -3138,17 +3262,19 @@
         "EV-5ede0f85a672441c",
         "EV-5c30f52112d92491",
         "EV-2fa6949af5b36fb0",
-        "EV-6ce6bebf0d6408d9"
+        "EV-6ce6bebf0d6408d9",
+        "EV-375b675a454e3b8e"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
+        "TX-use_case-software_development",
         "TX-technology-video_generation",
         "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -3165,8 +3291,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-987cb2e5e20f79ce",
         "EV-a2f902b9707ffd02",
+        "EV-987cb2e5e20f79ce",
         "EV-00514c4ffc2e3cd3",
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
@@ -3184,6 +3310,9 @@
         "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-4ad737260c42c505",
+        "EV-6a5b724c821567f3",
+        "EV-a251b011afec190d",
         "EV-6a3286e2186e4774",
         "EV-b22136a993b21f0c",
         "EV-a0d58fe1616d1480",
@@ -3246,9 +3375,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-technology-video_generation",
         "TX-technology-speech_audio",
@@ -3267,7 +3396,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-07",
+      "lastSeen": "2026-09-08",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -3280,7 +3409,9 @@
       "name": "MiniMax",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "稀宇科技"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3362,6 +3493,7 @@
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
         "EV-bf23c87d0aa1f205",
+        "EV-bc24f0b939f2dfa2",
         "EV-358643eefe0a5df5",
         "EV-63948deaec161736",
         "EV-6360fcef17b43087",
@@ -3396,7 +3528,29 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-06"
+      "lastSeen": "2026-09-08"
+    },
+    {
+      "id": "EN-572e31f55b6ac1b1",
+      "name": "Arena",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a251b011afec190d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -3444,6 +3598,7 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-24ae0372410706ee",
         "EV-a4f0e4fe1350a810",
         "EV-3d9aa640411471ea",
         "EV-bfc1664d74f43fb3",
@@ -3460,6 +3615,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-ba091f86fba39da0",
         "EV-54451ee210a0d0d4",
         "EV-6b0106ef4a79df05",
         "EV-db926055d40a4dff",
@@ -3648,13 +3804,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-technology-embodied_ai",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
@@ -3664,6 +3819,7 @@
         "TX-product_form-end_user_application",
         "TX-technology-video_generation",
         "TX-industry-retail_ecommerce",
+        "TX-technology-embodied_ai",
         "TX-technology-image_generation",
         "TX-technology-multimodal",
         "TX-use_case-legal_compliance",
@@ -3702,7 +3858,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-1ba4a2b10cfc1093",
@@ -3766,9 +3922,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
+        "TX-technology-embodied_ai",
         "TX-technology-mixture_of_experts"
       ],
       "relatedEntityIds": [],
@@ -3847,7 +4003,8 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "DeepMind"
+        "DeepMind",
+        "谷歌 DeepMind"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -3907,16 +4064,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-media_entertainment",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-video_generation",
+        "TX-technology-embodied_ai",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",

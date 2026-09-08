@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-f5a8d7c00446d322",
+    "name": "TechRadar",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c942862b476b9eae"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-02",
+    "lastSeen": "2026-09-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-c942862b476b9eae"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c942862b476b9eae",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-02",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 揭秘自研 Jalapeño 芯片——基准测试称其超越英伟达 GB300",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-8d4321d936320802",
+          "EN-373ac021a2c0bb2c",
+          "EN-f5a8d7c00446d322"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-481a1d8ae5d122ed",
+      "eventId": "EV-c942862b476b9eae",
+      "dataDate": "2026-09-08",
+      "date": "2026-09-02",
+      "title": "OpenAI 揭秘自研 Jalapeño 芯片——基准测试称其超越英伟达 GB300",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://techradar.com/pro/openai-lifts-the-lid-on-its-in-house-jalapeno-chip-with-benchmarks-claiming-it-beats-nvidias-gb300",
+      "sourceName": "techradar.com",
+      "sourceDate": "2026-09-02",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802",
+        "EN-373ac021a2c0bb2c",
+        "EN-f5a8d7c00446d322"
+      ]
+    }
+  ]
+}

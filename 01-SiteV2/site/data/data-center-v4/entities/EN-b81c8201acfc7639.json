@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -38,6 +38,7 @@
       "EV-b93102125cc062e3",
       "EV-6c361125c3f50bb6",
       "EV-bf23c87d0aa1f205",
+      "EV-bc24f0b939f2dfa2",
       "EV-358643eefe0a5df5",
       "EV-63948deaec161736",
       "EV-6360fcef17b43087",
@@ -72,7 +73,7 @@
       "EN-24381ecb01753c1b"
     ],
     "firstSeen": "2026-04-16",
-    "lastSeen": "2026-09-06",
+    "lastSeen": "2026-09-08",
     "relationIds": [
       "REL2-1c93528fe8275df1",
       "REL2-f54ed840f69a1dcb",
@@ -100,6 +101,7 @@
         "EV-bf23c87d0aa1f205"
       ],
       "productsServices": [
+        "EV-bc24f0b939f2dfa2",
         "EV-358643eefe0a5df5",
         "EV-63948deaec161736",
         "EV-6360fcef17b43087",
@@ -121,6 +123,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-bc24f0b939f2dfa2",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "华为鸿蒙 HarmonyOS 7 正式发布：搭载系统智能体小艺，即日开启公测",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b81c8201acfc7639",
+          "EN-f55e6bd6d311b0b0"
+        ]
+      },
       {
         "id": "EV-40dbd71782c11373",
         "dataDate": "2026-09-06",
@@ -1356,6 +1374,9 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-6a5b724c821567f3",
+        "EV-a251b011afec190d",
+        "EV-d32e50951ff7f9a1",
         "EV-2d17a87d3863dcee",
         "EV-6a3286e2186e4774",
         "EV-39abdf174aa3aeec",
@@ -1599,6 +1620,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-572e31f55b6ac1b1",
+        "EN-1a6d6ea981e8688c",
         "EN-bae152c4560df38c",
         "EN-7d3194f79e645c42",
         "EN-c608c4787821de1b",
@@ -1718,7 +1741,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -1933,6 +1956,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-0f6e4d81f3dbbb64",
         "EV-4ecc308baf04ff02",
         "EV-50e7de294816f918",
         "EV-8e0c25aebb1d4f5f",
@@ -2732,6 +2756,7 @@
         "EV-129ffa6be41bb485",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-0f6e4d81f3dbbb64",
         "EV-b8a7ddde8a7e42c8",
         "EV-3a4acc92731cb5ac",
         "EV-2868ff08777b5de9",
@@ -2760,6 +2785,7 @@
         "EV-e295f808713644c7",
         "EV-d53cd33e8f541a65",
         "EV-cfce55156a2ed7d2",
+        "EV-375b675a454e3b8e",
         "EV-ab89552719b28177",
         "EV-79d4cce8950d7639"
       ],
@@ -2830,9 +2856,9 @@
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
         "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42",
         "EN-bbdefa2950f49882",
         "EN-0b9ca57f53ba758b",
-        "EN-7d3194f79e645c42",
         "EN-76a9a8a6e2f1a47b",
         "EN-240389f4b730bad4",
         "EN-1d79127e9d90e89b",
@@ -2844,7 +2870,8 @@
         "EN-2b6e51bec93e86c1",
         "EN-630dc133336bc266",
         "EN-6fcba5d96a4fadfd",
-        "EN-f19600b9e18f7f27"
+        "EN-f19600b9e18f7f27",
+        "EN-478676438ee161a3"
       ],
       "fdeIds": [
         "FDE-0ef4045e28c345f8",
@@ -2857,7 +2884,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-technology-code_generation",
@@ -2891,6 +2918,8 @@
         "EV-4c0af31f1399ea8c",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
+        "EV-0f6e4d81f3dbbb64",
+        "EV-ba091f86fba39da0",
         "EV-2868ff08777b5de9",
         "EV-ff924015298048ba",
         "EV-29c0d969abde2020",
@@ -2968,7 +2997,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-technology-video_generation",
@@ -2983,6 +3012,7 @@
         "EV-522c339dded54be5",
         "EV-a354af52772334fd",
         "EV-26d2874c6ce028d6",
+        "EV-a251b011afec190d",
         "EV-c5f8f07d714f330f",
         "EV-172e82bbbedb3619",
         "EV-25b88403a237969f",
@@ -3009,6 +3039,7 @@
         "EN-e1517be14d06cdb7",
         "EN-d747d6f5125b6bee",
         "EN-b81c8201acfc7639",
+        "EN-572e31f55b6ac1b1",
         "EN-bbdefa2950f49882",
         "EN-1ba4a2b10cfc1093",
         "EN-031f4a060a67e7af",
@@ -3026,7 +3057,7 @@
         "HW-68457c8c0a7240ac"
       ],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-technology-multimodal",

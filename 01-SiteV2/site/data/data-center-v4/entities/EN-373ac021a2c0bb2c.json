@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -25,6 +25,7 @@
       "EV-bd5b6110559f2fda",
       "EV-8fcb52bb6ec980af",
       "EV-3aadd182733359ee",
+      "EV-c942862b476b9eae",
       "EV-49577d438cb6624b",
       "EV-31782f0824ae1db1",
       "EV-6eb9a23be3117421",
@@ -47,7 +48,7 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-05-27",
-    "lastSeen": "2026-09-07",
+    "lastSeen": "2026-09-08",
     "relationIds": [
       "REL2-f8319ba3694b2987",
       "REL2-59ab2863fcb1e150"
@@ -66,6 +67,7 @@
         "EV-ad1444d8653b37ae"
       ],
       "hardware": [
+        "EV-c942862b476b9eae",
         "EV-3b30eda1326a6fb1",
         "EV-89bdda008227fb6b",
         "EV-31782f0824ae1db1",
@@ -79,7 +81,7 @@
     "timeline": [
       {
         "id": "EV-3aadd182733359ee",
-        "dataDate": "2026-09-07",
+        "dataDate": "2026-09-08",
         "date": "2026-09-03",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -105,6 +107,24 @@
           "EN-e58ee91f1d57df05",
           "EN-6645ef506a12544f",
           "EN-a623db26595ea09d"
+        ]
+      },
+      {
+        "id": "EV-c942862b476b9eae",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-02",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 揭秘自研 Jalapeño 芯片——基准测试称其超越英伟达 GB300",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-8d4321d936320802",
+          "EN-373ac021a2c0bb2c",
+          "EN-f5a8d7c00446d322"
         ]
       },
       {
@@ -580,6 +600,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-0f6e4d81f3dbbb64",
         "EV-2d17a87d3863dcee",
         "EV-54451ee210a0d0d4",
         "EV-39abdf174aa3aeec",
@@ -600,6 +621,7 @@
         "EV-125040ec61215481",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
+        "EV-c942862b476b9eae",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -815,14 +837,15 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-16f359eab1f09a1d",
         "EV-34b7b2083170b680",
+        "EV-16f359eab1f09a1d",
         "EV-81f3efe8cc085ef4",
         "EV-3bb3577e52eb08ea",
         "EV-86516e11c8a7f94d",
         "EV-cdc2db5ed61d59bb",
-        "EV-7371ffb603de3e1c",
+        "EV-a5a2807ca49753ee",
         "EV-d04298029a8ab693",
+        "EV-7371ffb603de3e1c",
         "EV-4efa076340382741",
         "EV-345378cb7f1f64fd",
         "EV-bf57b79e05a537e6",
@@ -914,6 +937,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -921,7 +945,6 @@
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-consumer",
-        "TX-product_form-model",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
@@ -976,7 +999,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     }
   ],
   "relationships": [
@@ -1287,7 +1310,7 @@
         "HW-cff6ff4add035b48"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-target_user-business_user",
@@ -1298,7 +1321,6 @@
       "eventIds": [
         "EV-bce46f2e5cc68d5d",
         "EV-2dff88f85e3bce86",
-        "EV-987cb2e5e20f79ce",
         "EV-81bbaaec2965864a",
         "EV-f0a666f5416e049f",
         "EV-b9d8b3582f12bdc7",
@@ -1306,6 +1328,7 @@
         "EV-0ea2bbb7280091f2",
         "EV-140ecf4fabe544ba",
         "EV-276878c26b2a06dc",
+        "EV-987cb2e5e20f79ce",
         "EV-3ee6b5e876146bb3",
         "EV-657176fd0dff6209",
         "EV-ab839326ca9597d8",
@@ -1544,7 +1567,6 @@
       "entityIds": [
         "FICO-6f92e043fe518e14",
         "EN-770ef1d2b6e24172",
-        "EN-9a970ad7900121db",
         "EN-ee04228c5c6d8b08",
         "EN-befd0093486b775d",
         "EN-9fe430e5274621be",
@@ -1552,6 +1574,7 @@
         "EN-27d914a99e32f0f2",
         "EN-a31f26263a2fe821",
         "EN-26e59d6a3c92de80",
+        "EN-9a970ad7900121db",
         "EN-3b3ed571bbb19504",
         "EN-336ab1deb42d6284",
         "EN-05bb7905b99d8025",
@@ -1769,7 +1792,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -1984,6 +2007,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-0f6e4d81f3dbbb64",
         "EV-4ecc308baf04ff02",
         "EV-50e7de294816f918",
         "EV-8e0c25aebb1d4f5f",
@@ -2889,6 +2913,36 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-481a1d8ae5d122ed",
+      "eventId": "EV-c942862b476b9eae",
+      "dataDate": "2026-09-08",
+      "date": "2026-09-02",
+      "title": "OpenAI 揭秘自研 Jalapeño 芯片——基准测试称其超越英伟达 GB300",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://techradar.com/pro/openai-lifts-the-lid-on-its-in-house-jalapeno-chip-with-benchmarks-claiming-it-beats-nvidias-gb300",
+      "sourceName": "techradar.com",
+      "sourceDate": "2026-09-02",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802",
+        "EN-373ac021a2c0bb2c",
+        "EN-f5a8d7c00446d322"
+      ]
+    },
     {
       "id": "HW-257d5a367a91c5aa",
       "eventId": "EV-3b30eda1326a6fb1",

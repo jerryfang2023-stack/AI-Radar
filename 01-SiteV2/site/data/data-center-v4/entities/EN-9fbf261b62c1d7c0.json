@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:19:43.894Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T03:58:06.527Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -71,6 +71,7 @@
       "EV-58c1cc3749294649",
       "EV-c0a65877001ed413",
       "EV-bd508dbe4205774f",
+      "EV-ba091f86fba39da0",
       "EV-fbdc0b51572a88a4",
       "EV-617f1daf708475d0",
       "EV-7db34aecc1e1e817",
@@ -78,7 +79,6 @@
       "EV-d5db0416bede29de",
       "EV-8d48a9b8a69c331d",
       "EV-c638f91cbb8bf845",
-      "EV-8232ad0075a77b7a",
       "EV-ad41b8a1f9f8d747",
       "EV-67adfb3393d95976",
       "EV-737a6c098b70f6ff",
@@ -150,6 +150,7 @@
       "EV-d596f111808bd55b",
       "EV-a4f052325d0ef230",
       "EV-6ce6b9c9780b97d9",
+      "EV-375b675a454e3b8e",
       "EV-34b7b2083170b680",
       "EV-81f3efe8cc085ef4",
       "EV-86516e11c8a7f94d",
@@ -197,7 +198,7 @@
       "EN-10fce287b4b1464c"
     ],
     "firstSeen": "2026-02-13",
-    "lastSeen": "2026-09-07",
+    "lastSeen": "2026-09-08",
     "relationIds": [
       "REL2-ee25fecc7314abd4",
       "REL2-62f415d53b9e1307",
@@ -272,12 +273,12 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-ba091f86fba39da0",
         "EV-fbdc0b51572a88a4",
         "EV-617f1daf708475d0",
         "EV-7db34aecc1e1e817",
         "EV-6d92bb807f339b53",
         "EV-d5db0416bede29de",
-        "EV-8232ad0075a77b7a",
         "EV-ad41b8a1f9f8d747",
         "EV-d06e34a0546a00a5",
         "EV-67adfb3393d95976",
@@ -365,6 +366,7 @@
         "EV-933294dfb2d19a67"
       ],
       "other": [
+        "EV-375b675a454e3b8e",
         "EV-34b7b2083170b680",
         "EV-81f3efe8cc085ef4",
         "EV-86516e11c8a7f94d",
@@ -376,25 +378,65 @@
     },
     "timeline": [
       {
-        "id": "EV-fbdc0b51572a88a4",
-        "dataDate": "2026-09-07",
-        "date": "2026-09-06",
+        "id": "EV-ba091f86fba39da0",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
         "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "微软发布 AI 快速入门指南，30 分钟即可生成并发布 WinUI 原生应用",
-        "displayTags": [],
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "DHH领衔，英伟达、微软、HuggingFace等150+全球技术大咖集结，GOSIM Shenzhen 2026全议程公布",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
         "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-8d4321d936320802",
+          "EN-bbdefa2950f49882",
           "EN-9fbf261b62c1d7c0",
-          "EN-60798c12d04a1cbd",
-          "EN-9d5c6d39199308d6"
+          "EN-6f7ac1823da81d2e",
+          "EN-1d79127e9d90e89b"
         ]
       },
       {
         "id": "EV-8d48a9b8a69c331d",
-        "dataDate": "2026-09-07",
+        "dataDate": "2026-09-08",
         "date": "2026-09-04",
         "eventType": "hardware_product",
         "eventTypeLabel": "硬件产品",
@@ -410,8 +452,36 @@
         ]
       },
       {
+        "id": "EV-375b675a454e3b8e",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "派早报：微软公布 Project Zenith 计划、F-Droid 拟效仿 Debian 制定生成式 AI 使用政策",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-478676438ee161a3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
         "id": "EV-34b7b2083170b680",
-        "dataDate": "2026-09-07",
+        "dataDate": "2026-09-08",
         "date": "2026-09-06",
         "eventType": "lawsuit_settlement",
         "eventTypeLabel": "诉讼与和解",
@@ -429,7 +499,7 @@
       },
       {
         "id": "EV-81f3efe8cc085ef4",
-        "dataDate": "2026-09-07",
+        "dataDate": "2026-09-08",
         "date": "2026-09-05",
         "eventType": "lawsuit_settlement",
         "eventTypeLabel": "诉讼与和解",
@@ -453,6 +523,23 @@
           "EN-3a8769f37a016964",
           "EN-7d3194f79e645c42",
           "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
+        "id": "EV-fbdc0b51572a88a4",
+        "dataDate": "2026-09-07",
+        "date": "2026-09-06",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "微软发布 AI 快速入门指南，30 分钟即可生成并发布 WinUI 原生应用",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-60798c12d04a1cbd",
+          "EN-9d5c6d39199308d6"
         ]
       },
       {
@@ -643,23 +730,6 @@
           "EN-ea3bd73e2b506e00",
           "EN-9fbf261b62c1d7c0",
           "EN-7d3194f79e645c42"
-        ]
-      },
-      {
-        "id": "EV-8232ad0075a77b7a",
-        "dataDate": "2026-09-04",
-        "date": "2026-09-04",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "GitHub 更新日志：06/2026",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d",
-          "EN-9fbf261b62c1d7c0",
-          "EN-6d7b7fd67cb649ae"
         ]
       },
       {
@@ -4988,14 +5058,17 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-2d17a87d3863dcee",
         "EV-f01a13953fa7aaaa",
+        "EV-21fcd6420d6ff726",
+        "EV-ba091f86fba39da0",
+        "EV-2d17a87d3863dcee",
         "EV-4ecc308baf04ff02",
         "EV-d626fbf563d8afc7",
         "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
+        "EV-c942862b476b9eae",
         "EV-5890a74f1a62940e",
         "EV-b4376b7d0e863db3",
         "EV-f41fe4d6189853cd",
@@ -5121,6 +5194,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -5128,10 +5202,7 @@
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
-        "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-product_form-model",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-product_form-ai_infrastructure_software",
@@ -5143,6 +5214,8 @@
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
+        "TX-product_form-robotic_system",
+        "TX-technology-embodied_ai",
         "TX-use_case-customer_support",
         "TX-ai_market_application-models",
         "TX-technology-speech_audio",
@@ -5203,7 +5276,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-688f8db7018da7d4",
@@ -5448,6 +5521,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-0f6e4d81f3dbbb64",
         "EV-2d17a87d3863dcee",
         "EV-54451ee210a0d0d4",
         "EV-39abdf174aa3aeec",
@@ -5468,6 +5542,7 @@
         "EV-125040ec61215481",
         "EV-37e3784d55f5f5d0",
         "EV-7832e96ace41fc15",
+        "EV-c942862b476b9eae",
         "EV-4adc165f85ae86ff",
         "EV-85dc7f34cb077fba",
         "EV-b8572e821bca0e6f",
@@ -5683,14 +5758,15 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-16f359eab1f09a1d",
         "EV-34b7b2083170b680",
+        "EV-16f359eab1f09a1d",
         "EV-81f3efe8cc085ef4",
         "EV-3bb3577e52eb08ea",
         "EV-86516e11c8a7f94d",
         "EV-cdc2db5ed61d59bb",
-        "EV-7371ffb603de3e1c",
+        "EV-a5a2807ca49753ee",
         "EV-d04298029a8ab693",
+        "EV-7371ffb603de3e1c",
         "EV-4efa076340382741",
         "EV-345378cb7f1f64fd",
         "EV-bf57b79e05a537e6",
@@ -5782,6 +5858,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -5789,7 +5866,6 @@
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-consumer",
-        "TX-product_form-model",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
@@ -5844,7 +5920,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-38945a66b4806b11",
@@ -6448,7 +6524,7 @@
         "HW-cff6ff4add035b48"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-target_user-business_user",
@@ -6459,7 +6535,6 @@
       "eventIds": [
         "EV-bce46f2e5cc68d5d",
         "EV-2dff88f85e3bce86",
-        "EV-987cb2e5e20f79ce",
         "EV-81bbaaec2965864a",
         "EV-f0a666f5416e049f",
         "EV-b9d8b3582f12bdc7",
@@ -6467,6 +6542,7 @@
         "EV-0ea2bbb7280091f2",
         "EV-140ecf4fabe544ba",
         "EV-276878c26b2a06dc",
+        "EV-987cb2e5e20f79ce",
         "EV-3ee6b5e876146bb3",
         "EV-657176fd0dff6209",
         "EV-ab839326ca9597d8",
@@ -6705,7 +6781,6 @@
       "entityIds": [
         "FICO-6f92e043fe518e14",
         "EN-770ef1d2b6e24172",
-        "EN-9a970ad7900121db",
         "EN-ee04228c5c6d8b08",
         "EN-befd0093486b775d",
         "EN-9fe430e5274621be",
@@ -6713,6 +6788,7 @@
         "EN-27d914a99e32f0f2",
         "EN-a31f26263a2fe821",
         "EN-26e59d6a3c92de80",
+        "EN-9a970ad7900121db",
         "EN-3b3ed571bbb19504",
         "EN-336ab1deb42d6284",
         "EN-05bb7905b99d8025",
@@ -6930,7 +7006,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-target_user-consumer",
@@ -6940,9 +7016,9 @@
       "valueId": "consumer",
       "eventIds": [
         "EV-2dff88f85e3bce86",
-        "EV-987cb2e5e20f79ce",
         "EV-c538fb9a61735afc",
         "EV-276878c26b2a06dc",
+        "EV-987cb2e5e20f79ce",
         "EV-657176fd0dff6209",
         "EV-1dba157815d84342",
         "EV-c6c297156ff274ac",
@@ -6990,9 +7066,9 @@
       ],
       "entityIds": [
         "EN-770ef1d2b6e24172",
-        "EN-9a970ad7900121db",
         "EN-8d8b8c50b8da244b",
         "EN-26e59d6a3c92de80",
+        "EN-9a970ad7900121db",
         "EN-336ab1deb42d6284",
         "EN-50b2676afbe30c83",
         "EN-1913c6ab46df3a68",
@@ -7039,7 +7115,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -7138,6 +7214,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-a5a2807ca49753ee",
         "EV-7371ffb603de3e1c",
         "EV-0c00a6c681f22b98",
         "EV-3badd98afb847643",
@@ -7220,7 +7297,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -7435,6 +7512,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-0f6e4d81f3dbbb64",
         "EV-4ecc308baf04ff02",
         "EV-50e7de294816f918",
         "EV-8e0c25aebb1d4f5f",
@@ -9204,14 +9282,14 @@
     {
       "id": "HW-e0ad31e5b30c33bd",
       "eventId": "EV-8d48a9b8a69c331d",
-      "dataDate": "2026-09-07",
+      "dataDate": "2026-09-08",
       "date": "2026-09-04",
       "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
       "hardwareType": "semiconductor",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "computeLayer": "未披露",
-      "supplier": "AMD",
+      "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",
       "capacity": "未披露",
@@ -9733,6 +9811,90 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-fde7880cbf9629d0",
+      "snapshotKey": "fde7880cbf9629d0",
+      "snapshotId": "HWS-5b82eadefe30fee2",
+      "eventId": "EV-ba091f86fba39da0",
+      "eventIds": [
+        "EV-ba091f86fba39da0"
+      ],
+      "dataDate": "2026-09-08",
+      "date": "2026-09-08",
+      "title": "Anthropic",
+      "subject": "Anthropic",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-7a001c886fa83310"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-08",
+          "hardware_fact_id": "HWF-7a001c886fa83310",
+          "fact_type": "product",
+          "observed_at": "2026-09-07T08:51:30.000Z",
+          "subject_entity_id": "EN-c70eca6b0f88f44d",
+          "subject_name": "Anthropic",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Anthropic、Google Cloud、DeepSeek、智谱等厂商持续推出新模型、刷新能力边界的同时，Agent、AI 编程、端侧智能、AI 原生设备、机器人等方向也在快速升温。",
+          "event_refs": [
+            "EV-ba091f86fba39da0"
+          ],
+          "claim_ref": "CL-df8b364b94c32c4c",
+          "source_refs": [
+            "SA-51732fcb7e6e95de"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-08/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/485154.html",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-8d4321d936320802",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6f7ac1823da81d2e",
+        "EN-1d79127e9d90e89b"
+      ]
+    },
     {
       "id": "HWC-e302135ca4bca960",
       "snapshotKey": "e302135ca4bca960",
