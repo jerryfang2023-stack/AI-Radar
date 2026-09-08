@@ -422,7 +422,7 @@ function scheduledTaskStateName(value) {
   return String(value || "");
 }
 
-export function buildBusinessSignalsLane() {
+export function buildBusinessSignalsLane({ githubState = null, pagesState = null } = {}) {
   const problems = [];
   const waiting = [];
   const warnings = [];
@@ -466,9 +466,10 @@ export function buildBusinessSignalsLane() {
       && telemetry?.v4_gate?.status === "passed"
     );
   const titleTranslations = { missingSourceTitles: [] };
-  const gh = githubWorkflowState("daily-persistent-assets-pr.yml", `automation/business-signals-${date}`);
-  const pages = githubWorkflowState("github-pages.yml");
+  const gh = githubState || githubWorkflowState("daily-persistent-assets-pr.yml", `automation/business-signals-${date}`);
+  const pages = pagesState || githubWorkflowState("github-pages.yml");
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
+  const openPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.state === "OPEN") : null;
   const businessWorkflowActive = gh.latest_run?.status === "queued" || gh.latest_run?.status === "in_progress";
   const pagesActive = pages.latest_run?.status === "queued" || pages.latest_run?.status === "in_progress";
   const publicationClosureWindowPassed = hasWindowPassed(date, "09:50");
@@ -504,6 +505,8 @@ export function buildBusinessSignalsLane() {
     businessDataSameDate: dataCenterDate === date,
     businessPrMerged: Boolean(mergedPr),
     businessPrUrl: mergedPr?.url || "",
+    businessPrOpen: Boolean(openPr),
+    businessOpenPrUrl: openPr?.url || "",
     pagesSuccess: pages.latest_run?.conclusion === "success",
     pagesActive,
     pagesRunUrl: pages.latest_run?.url || "",
@@ -553,6 +556,7 @@ export function buildBusinessSignalsLane() {
       sourceArtifactFreshness: "not_checked_by_daily_supervision",
       missingSourceTitleTranslations: titleTranslations.missingSourceTitles,
       businessPrMerged: Boolean(mergedPr),
+      businessPrOpen: Boolean(openPr),
       pagesState: pages.latest_run?.conclusion || pages.latest_run?.status || "unknown",
       localDirtyFiles: evidence.publicationClosure.localSync.dirtyFiles,
       localFastForwarded: evidence.publicationClosure.localSync.fastForwarded,
@@ -560,9 +564,9 @@ export function buildBusinessSignalsLane() {
   };
 
   if (windowPassed) {
-    const waitingForBusinessRun = businessWorkflowActive;
     const recordDataProblem = (message) => {
-      if (waitingForBusinessRun) warnings.push(`${message}; Business Signals workflow is ${gh.latest_run.status}`);
+      if (businessWorkflowActive) warnings.push(`${message}; Business Signals workflow is ${gh.latest_run.status}`);
+      else if (openPr) warnings.push(`${message}; same-date Business Signals PR is open and awaits publication`);
       else addProblem(problems, message);
     };
     if (!exists(dataCenterManifestFile)) recordDataProblem(`missing Data Center V4 manifest: ${rel(dataCenterManifestFile)}`);
@@ -610,6 +614,9 @@ export function buildBusinessSignalsLane() {
       if (!failedWorkflowSupersededByPublication) {
         if (mergedPr) {
           warnings.push(`latest Business Signals workflow conclusion is ${gh.latest_run.conclusion}, but same-date PR already merged: ${mergedPr.url}`);
+        } else if (openPr) {
+          addWaiting(waiting, `same-date Business Signals PR is open; publication should resume from ${openPr.url}`);
+          actions.push("repair or merge the open Business Signals PR without rerunning collection");
         } else if (businessDataHealthy) {
           warnings.push(`latest Business Signals workflow conclusion is ${gh.latest_run.conclusion}, but same-date data and gates are healthy; repair branch / PR / publication only`);
         } else {
@@ -627,6 +634,10 @@ export function buildBusinessSignalsLane() {
       evidence.diagnosis.category = "supervision_observability";
       evidence.diagnosis.reason = "workflow or Pages is still queued/in_progress";
       evidence.diagnosis.neededAction = "wait for active workflow completion and rerun supervision";
+    } else if (openPr) {
+      evidence.diagnosis.category = "publication";
+      evidence.diagnosis.reason = `same-date production completed through PR creation and is awaiting publication: ${openPr.url}`;
+      evidence.diagnosis.neededAction = "repair or merge the open Business Signals PR; do not recollect accepted source intake";
     } else if (!exists(dataCenterManifestFile) || dataCenterDate !== date) {
       evidence.diagnosis.category = "no_run_or_stale_assets";
       evidence.diagnosis.reason = `Data Center V4 currentDate is ${dataCenterDate || "missing"}, expected ${date}`;
