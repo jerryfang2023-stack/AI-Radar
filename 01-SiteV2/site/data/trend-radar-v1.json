@@ -7,8 +7,8 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T03:03:56.973Z",
-    "latestDataDate": "2026-09-07",
+    "generatedAt": "2026-09-08T01:34:43.378Z",
+    "latestDataDate": "2026-09-08",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
     "boundary": "accepted-canonical-events-only; no viewpoints, community, scores or recommendations",
@@ -37,12 +37,82 @@
       "hardware": "AI 硬件"
     },
     "sourceCounts": {
-      "events": 2606,
-      "entities": 649,
-      "relationships": 381
+      "events": 2627,
+      "entities": 651,
+      "relationships": 375
     }
   },
   "events": {
+    "EV-df2b04d9d720c544": {
+      "id": "EV-df2b04d9d720c544",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "北极雄芯完成新一轮融资 加码大模型应用基础设施服务",
+      "entityIds": [],
+      "entityNames": [
+        "北极雄芯"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-e7e7b91d8a1d8b01"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-7b2813e385daabc5",
+        "CL-984a42517a7ca079"
+      ],
+      "sourceIds": [
+        "SA-38c0eeb4eb6ddbba"
+      ],
+      "sourceUrl": "http://wap.seccw.com/Document/detail/id/36265.html",
+      "publisher": "wap.seccw.com",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-df2b04d9d720c544"
+    },
+    "EV-46df5f4044877a39": {
+      "id": "EV-46df5f4044877a39",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "AI基础设施融资升温 中科类脑完成数亿元B+轮战略融资",
+      "entityIds": [
+        "EN-d1d137efd55a338c"
+      ],
+      "entityNames": [
+        "合肥中科类脑智能技术有限公司"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "marketScopes": [
+        "event_market"
+      ],
+      "claimIds": [
+        "CL-57cba361239c219d"
+      ],
+      "sourceIds": [
+        "SA-62f34b508c50ae21"
+      ],
+      "sourceUrl": "https://cs.com.cn/xwzx/01/2026/09/07/detail_2026090710037273.html",
+      "publisher": "cs.com.cn",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-46df5f4044877a39"
+    },
     "EV-6b668e4655192209": {
       "id": "EV-6b668e4655192209",
       "dataDate": "2026-09-06",
@@ -369,155 +439,9 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-2dff88f85e3bce86"
     },
-    "EV-987cb2e5e20f79ce": {
-      "id": "EV-987cb2e5e20f79ce",
-      "dataDate": "2026-09-03",
-      "occurrenceDate": "2026-09-03",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-      "entityIds": [
-        "EN-9c8ae69b84f21a2e",
-        "EN-047364b9be67f665"
-      ],
-      "entityNames": [
-        "XPeng",
-        "小鹏机器人业务首轮",
-        "Tencent",
-        "Alibaba"
-      ],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "physical_ai",
-          "name": "Physical AI",
-          "entityIds": [
-            "EN-9a970ad7900121db"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b9425f45ae287895",
-          "fundingInsightId": "FI-45963c2baf94d978"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "robotic_system",
-          "name": "机器人系统",
-          "entityIds": [
-            "EN-9a970ad7900121db"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-cb3e8dfb205545cf",
-          "fundingInsightId": "FI-45963c2baf94d978"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-9a970ad7900121db"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-369f32171e20e0af",
-          "fundingInsightId": "FI-45963c2baf94d978"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "consumer",
-          "name": "个人用户",
-          "entityIds": [
-            "EN-9a970ad7900121db"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-450d1ad153ce50c9",
-          "fundingInsightId": "FI-45963c2baf94d978"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-9a970ad7900121db"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-1996171c3015443f",
-          "fundingInsightId": "FI-45963c2baf94d978"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-9a970ad7900121db"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "claimIds": [
-        "CL-1f35f5dad0b12118",
-        "CL-0df25ba4eac2b868",
-        "CL-c2982e5c68ba288b",
-        "CL-72b9c4cb225aaf59"
-      ],
-      "sourceIds": [
-        "SA-8f959a6b12c89c05"
-      ],
-      "sourceUrl": "https://xiaopeng.com/news/company_news/5585.html",
-      "publisher": "xiaopeng.com",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-987cb2e5e20f79ce"
-    },
-    "EV-df2b04d9d720c544": {
-      "id": "EV-df2b04d9d720c544",
-      "dataDate": "2026-09-03",
-      "occurrenceDate": "2026-09-03",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "北极雄芯完成新一轮融资 加码大模型应用基础设施服务",
-      "entityIds": [],
-      "entityNames": [
-        "北极雄芯"
-      ],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-e7e7b91d8a1d8b01"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "claimIds": [
-        "CL-fd426f624424d847",
-        "CL-f8597490f0e32258"
-      ],
-      "sourceIds": [
-        "SA-3943e822faa6b7d8"
-      ],
-      "sourceUrl": "http://wap.seccw.com/Document/detail/id/36265.html",
-      "publisher": "wap.seccw.com",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-df2b04d9d720c544"
-    },
     "EV-81bbaaec2965864a": {
       "id": "EV-81bbaaec2965864a",
-      "dataDate": "2026-09-07",
+      "dataDate": "2026-09-08",
       "occurrenceDate": "2026-09-02",
       "eventType": "funding",
       "eventTypeLabel": "融资",
@@ -604,10 +528,10 @@
         }
       ],
       "claimIds": [
-        "CL-73aa4c75c01c90a6",
-        "CL-99ccbc9472a16042",
-        "CL-cd506ea8f4b730a1",
-        "CL-421bbbe55e46a2ef"
+        "CL-c036d0cf4416a3e1",
+        "CL-6ccd90b0e96f6bb0",
+        "CL-bce718ab9292814e",
+        "CL-01dbe2255ca3526f"
       ],
       "sourceIds": [
         "SA-c180cf343d4fb526"
@@ -2111,6 +2035,113 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-f477568b1385e25a"
+    },
+    "EV-987cb2e5e20f79ce": {
+      "id": "EV-987cb2e5e20f79ce",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-08-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e",
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "XPeng",
+        "小鹏机器人业务首轮",
+        "Tencent",
+        "Alibaba"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b9425f45ae287895",
+          "fundingInsightId": "FI-45963c2baf94d978"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cb3e8dfb205545cf",
+          "fundingInsightId": "FI-45963c2baf94d978"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-369f32171e20e0af",
+          "fundingInsightId": "FI-45963c2baf94d978"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-450d1ad153ce50c9",
+          "fundingInsightId": "FI-45963c2baf94d978"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1996171c3015443f",
+          "fundingInsightId": "FI-45963c2baf94d978"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-5577673dea2edde9",
+        "CL-2d01b8129f2821ec",
+        "CL-a1a4491ca6765afc",
+        "CL-75e8d2569205603c"
+      ],
+      "sourceIds": [
+        "SA-8f959a6b12c89c05"
+      ],
+      "sourceUrl": "https://xiaopeng.com/news/company_news/5585.html",
+      "publisher": "xiaopeng.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-987cb2e5e20f79ce"
     },
     "EV-3ee6b5e876146bb3": {
       "id": "EV-3ee6b5e876146bb3",
@@ -47037,6 +47068,32 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-8ae771f26c02f7c4"
     },
+    "EV-810d0f3892cdf3ab": {
+      "id": "EV-810d0f3892cdf3ab",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-01",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "publicationStatus": "verified",
+      "category": "partnership",
+      "title": "全国首份AI治理批量采购协议",
+      "entityIds": [],
+      "entityNames": [
+        "Darwin AI"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-e1b0c98b65884014"
+      ],
+      "sourceIds": [
+        "SA-d231e9a459d448ad"
+      ],
+      "sourceUrl": "https://insider.govtech.com/texas/sponsored/the-nations-first-bulk-purchase-agreement-for-ai-governance",
+      "publisher": "insider.govtech.com",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-810d0f3892cdf3ab"
+    },
     "EV-e3a282c070969a55": {
       "id": "EV-e3a282c070969a55",
       "dataDate": "2026-09-07",
@@ -47062,32 +47119,6 @@
       "publisher": "insider.govtech.com",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-e3a282c070969a55"
-    },
-    "EV-810d0f3892cdf3ab": {
-      "id": "EV-810d0f3892cdf3ab",
-      "dataDate": "2026-09-06",
-      "occurrenceDate": "2026-09-01",
-      "eventType": "procurement_contract",
-      "eventTypeLabel": "采购合同",
-      "publicationStatus": "verified",
-      "category": "partnership",
-      "title": "全国首份AI治理批量采购协议",
-      "entityIds": [],
-      "entityNames": [
-        "Darwin AI"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-146a2163718f6680"
-      ],
-      "sourceIds": [
-        "SA-d231e9a459d448ad"
-      ],
-      "sourceUrl": "https://insider.govtech.com/texas/sponsored/the-nations-first-bulk-purchase-agreement-for-ai-governance",
-      "publisher": "insider.govtech.com",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-810d0f3892cdf3ab"
     },
     "EV-0884926673438e82": {
       "id": "EV-0884926673438e82",
@@ -58254,6 +58285,35 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-cab03fca079f62e6"
     },
+    "EV-24ae0372410706ee": {
+      "id": "EV-24ae0372410706ee",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-08",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "publicationStatus": "verified",
+      "category": "partnership",
+      "title": "Mars 案例研究",
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Mars",
+        "Google"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-f16eb097d96e43e6"
+      ],
+      "sourceIds": [
+        "SA-0b0db6f573325c22"
+      ],
+      "sourceUrl": "https://cloud.google.com/customers/mars",
+      "publisher": "cloud.google.com",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-24ae0372410706ee"
+    },
     "EV-f6ad842485bb71ab": {
       "id": "EV-f6ad842485bb71ab",
       "dataDate": "2026-09-07",
@@ -65285,6 +65345,787 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-c8f3db31cb266b64"
     },
+    "EV-03992c9b7f8fef10": {
+      "id": "EV-03992c9b7f8fef10",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "推出 Awarded AI - Procurement Sciences",
+      "entityIds": [],
+      "entityNames": [
+        "Procurement Sciences",
+        "Awarded AI"
+      ],
+      "productNames": [
+        {
+          "name": "Awarded AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-8cb5568a389d1b70"
+      ],
+      "sourceIds": [
+        "SA-f4ef6253f064a433"
+      ],
+      "sourceUrl": "https://procurementsciences.com/platform",
+      "publisher": "procurementsciences.com",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-03992c9b7f8fef10"
+    },
+    "EV-8232ad0075a77b7a": {
+      "id": "EV-8232ad0075a77b7a",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-08",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "GitHub 更新日志：06/2026",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "GitHub Copilot",
+        "GitHub Changelog"
+      ],
+      "productNames": [
+        {
+          "name": "GitHub Copilot",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "GitHub Changelog",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-64f56db9baf09815",
+        "CL-9abd0337c97271a9"
+      ],
+      "sourceIds": [
+        "SA-0a68edee80553fee"
+      ],
+      "sourceUrl": "https://github.blog/changelog/month/06-2026",
+      "publisher": "github.blog",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-8232ad0075a77b7a"
+    },
+    "EV-f01a13953fa7aaaa": {
+      "id": "EV-f01a13953fa7aaaa",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-08",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "NVIDIA AI Enterprise - NVIDIA 文档",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Production Branch",
+        "Docs",
+        "August 2026."
+      ],
+      "productNames": [
+        {
+          "name": "Production Branch",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "Docs",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "August 2026.",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-a552bb91b09bab79",
+        "CL-38afe35fcee93a31"
+      ],
+      "sourceIds": [
+        "SA-ac18cb711b7aab93"
+      ],
+      "sourceUrl": "https://docs.nvidia.com/ai-enterprise",
+      "publisher": "docs.nvidia.com",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-f01a13953fa7aaaa"
+    },
+    "EV-0f6e4d81f3dbbb64": {
+      "id": "EV-0f6e4d81f3dbbb64",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "OpenAI 披露研究员 AI 编程智能体用量，前 10% 用户日耗 Token 价值超 7000 美元",
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-a2fc0f172755ae69",
+        "CL-5075e5b2479c9934",
+        "CL-0ac543dfda4eea14",
+        "CL-c27e0c55797d6126"
+      ],
+      "sourceIds": [
+        "SA-95498cc5ae37e23b"
+      ],
+      "sourceUrl": "https://ithome.com/0/999/447.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-0f6e4d81f3dbbb64"
+    },
+    "EV-21fcd6420d6ff726": {
+      "id": "EV-21fcd6420d6ff726",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "IFM 发布 K2 Horizon：六款 Apache 2.0 开源模型，规模覆盖 0.9B 到 375B",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "IFM",
+        "SGLang",
+        "NVIDIA",
+        "K2 Horizon"
+      ],
+      "productNames": [
+        {
+          "name": "K2 Horizon",
+          "type": "模型",
+          "ownerNames": [
+            "SGLang"
+          ]
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-eaee1415bd59b210"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-09f3ddcf44c9a882",
+        "CL-cf4340262ec12bfc",
+        "CL-e2b48acde88ae19f",
+        "CL-305e72fe423df8ed"
+      ],
+      "sourceIds": [
+        "SA-1a12a1c8e197a486"
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/06/ifm-releases-k2-horizon-six-apache-2-0-models-from-0-9b-to-375b",
+      "publisher": "MarkTechPost（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-21fcd6420d6ff726"
+    },
+    "EV-411dc97b66bd8251": {
+      "id": "EV-411dc97b66bd8251",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "腾讯混元：Hy4 preview 模型升级，显著降低任务轮次及输入输出 Token 消耗",
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "Tencent",
+        "Hy4"
+      ],
+      "productNames": [
+        {
+          "name": "Hy4",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Tencent"
+          ]
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-4643db722fcea682",
+        "CL-f87d49dfe9f5f5ea",
+        "CL-ad5ca6a18b44c9cc",
+        "CL-117fa151011be914"
+      ],
+      "sourceIds": [
+        "SA-e34488a41fb3a01a"
+      ],
+      "sourceUrl": "https://ithome.com/0/999/369.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-411dc97b66bd8251"
+    },
+    "EV-4ad737260c42c505": {
+      "id": "EV-4ad737260c42c505",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "阿里千问办公推出业内首个多人工作台，支持百人在线协作",
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-e9fc4f156e36f6aa"
+      ],
+      "entityNames": [
+        "阿里千问办公",
+        "Alibaba",
+        "Alibaba Cloud"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-5d9a2d53fd894c96",
+        "CL-cfb9ee8a3c4b5e60",
+        "CL-4f7e63f152927e17",
+        "CL-e668835c3e5a0978"
+      ],
+      "sourceIds": [
+        "SA-5af71788116c51e9"
+      ],
+      "sourceUrl": "https://ithome.com/0/999/254.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-4ad737260c42c505"
+    },
+    "EV-5ec6f963b0aab137": {
+      "id": "EV-5ec6f963b0aab137",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "partial",
+      "category": "product",
+      "title": "最高法发布涉人工智能纠纷案件审理意见，明确 AI 换脸拟声等裁判规则",
+      "entityIds": [],
+      "entityNames": [
+        "最高法",
+        "关于依法审理涉人工智能纠纷案件的意见"
+      ],
+      "productNames": [
+        {
+          "name": "关于依法审理涉人工智能纠纷案件的意见",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-025b2b1d9e13d334",
+        "CL-c16b4a9633b35e5f",
+        "CL-bb4219217e3f0e0c",
+        "CL-e56d8f53eb9728a5"
+      ],
+      "sourceIds": [
+        "SA-e2af77cd2c173359"
+      ],
+      "sourceUrl": "https://ithome.com/0/999/313.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-5ec6f963b0aab137"
+    },
+    "EV-66561ec28d8b1fec": {
+      "id": "EV-66561ec28d8b1fec",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "宇树科技发布 UnifoLM-X2-1.0：世界模型实时驱动全自主人形机器人格斗",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "宇树科技",
+        "Meta",
+        "UnifoLM-X2-1.0"
+      ],
+      "productNames": [
+        {
+          "name": "UnifoLM-X2-1.0",
+          "type": "模型",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-35826112ed957325"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-0bb066fc7767cb92"
+      ],
+      "sourceIds": [
+        "SA-1fac3b91bddaad96"
+      ],
+      "sourceUrl": "https://ithome.com/0/999/432.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-66561ec28d8b1fec"
+    },
+    "EV-6a5b724c821567f3": {
+      "id": "EV-6a5b724c821567f3",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "阿里发布 Qwen-Drive 1.0，一个模型同时承担驾驶与座舱助手",
+      "entityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "阿里",
+        "Alibaba",
+        "Qwen-Drive 1.0"
+      ],
+      "productNames": [
+        {
+          "name": "Qwen-Drive 1.0",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-07a7f62fcd324284",
+        "CL-b767a40f62337f64"
+      ],
+      "sourceIds": [
+        "SA-eddc0ed06e64f4a0"
+      ],
+      "sourceUrl": "https://the-decoder.com/qwen-drive-1-0-tells-you-why-it-brakes-just-dont-expect-the-explanation-to-match-the-maneuver",
+      "publisher": "The Decoder：AI News（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-6a5b724c821567f3"
+    },
+    "EV-a251b011afec190d": {
+      "id": "EV-a251b011afec190d",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "Arena 第 36 周 AI 大模型盲测榜：国产多模型扎堆入榜前端开发榜，阿里 wan3.0 冲进视频榜前三",
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-9c8ae69b84f21a2e",
+        "EN-1d79127e9d90e89b"
+      ],
+      "entityNames": [
+        "Arena",
+        "Alibaba",
+        "Tencent",
+        "智谱AI"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-572e31f55b6ac1b1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-572e31f55b6ac1b1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-796123936d1430ed",
+        "CL-bd054e8b2861de53",
+        "CL-fcb8d46e63cce4b1",
+        "CL-568e648ac0c8eed6"
+      ],
+      "sourceIds": [
+        "SA-81e5e04f4728bf5a"
+      ],
+      "sourceUrl": "https://ithome.com/0/999/324.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-a251b011afec190d"
+    },
+    "EV-ba091f86fba39da0": {
+      "id": "EV-ba091f86fba39da0",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "DHH领衔，英伟达、微软、HuggingFace等150+全球技术大咖集结，GOSIM Shenzhen 2026全议程公布",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-8d4321d936320802",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6f7ac1823da81d2e",
+        "EN-1d79127e9d90e89b"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "NVIDIA",
+        "Google",
+        "Microsoft",
+        "DeepSeek",
+        "智谱AI"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-df8b364b94c32c4c",
+        "CL-e4d560f2b9e22d02",
+        "CL-2c12801a16ff3ba6",
+        "CL-b33ef76a36b19860"
+      ],
+      "sourceIds": [
+        "SA-51732fcb7e6e95de"
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/485154.html",
+      "publisher": "量子位",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-ba091f86fba39da0"
+    },
+    "EV-bc24f0b939f2dfa2": {
+      "id": "EV-bc24f0b939f2dfa2",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "华为鸿蒙 HarmonyOS 7 正式发布：搭载系统智能体小艺，即日开启公测",
+      "entityIds": [
+        "EN-b81c8201acfc7639"
+      ],
+      "entityNames": [
+        "Huawei",
+        "HarmonyOS 7"
+      ],
+      "productNames": [
+        {
+          "name": "HarmonyOS 7",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Huawei"
+          ]
+        }
+      ],
+      "classifications": [],
+      "marketScopes": [
+        "actor_origin"
+      ],
+      "claimIds": [
+        "CL-a83017c307b85276",
+        "CL-ff90930d5ac568b2",
+        "CL-a7078e9a6b271739",
+        "CL-ceba52242dd5f818"
+      ],
+      "sourceIds": [
+        "SA-9297762d7a928923"
+      ],
+      "sourceUrl": "https://ithome.com/0/999/277.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-bc24f0b939f2dfa2"
+    },
+    "EV-d32e50951ff7f9a1": {
+      "id": "EV-d32e50951ff7f9a1",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "原生全模态技术战略闭环，智象（HiDream.ai）发布具身世界模型HiDream-O1-Embodied",
+      "entityIds": [],
+      "entityNames": [
+        "原生全模态技术战略闭环",
+        "HiDream-O1-Embodied"
+      ],
+      "productNames": [
+        {
+          "name": "HiDream-O1-Embodied",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-1a6d6ea981e8688c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-1a6d6ea981e8688c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-96d991f7ef89989b",
+        "CL-b0ad9f2dfe6e6365",
+        "CL-4cfca3534e9cb524",
+        "CL-ea317124c6268526"
+      ],
+      "sourceIds": [
+        "SA-d42dc8c07afc7e01"
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/485056.html",
+      "publisher": "量子位",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-d32e50951ff7f9a1"
+    },
+    "EV-d3d92cecbb44d44b": {
+      "id": "EV-d3d92cecbb44d44b",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "京东 JoyAI App 推出首个能实时视频购物的 AI 数字人",
+      "entityIds": [],
+      "entityNames": [
+        "京东 JoyAI App",
+        "JoyAI"
+      ],
+      "productNames": [
+        {
+          "name": "JoyAI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-df96020643b2db97",
+        "CL-bcb7064eb6552295",
+        "CL-fa8289aaa1a1c073",
+        "CL-5311c2995a19be46"
+      ],
+      "sourceIds": [
+        "SA-929f1fbddc82c077"
+      ],
+      "sourceUrl": "https://ithome.com/0/999/415.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-d3d92cecbb44d44b"
+    },
+    "EV-f07a8d1917413b6c": {
+      "id": "EV-f07a8d1917413b6c",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "科大讯飞发布星火 X2.5 模型：293B-A30B MoE 架构，全国产平台训练",
+      "entityIds": [
+        "EN-28be1fc3808080ef"
+      ],
+      "entityNames": [
+        "iFlytek",
+        "X2.5"
+      ],
+      "productNames": [
+        {
+          "name": "X2.5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "iFlytek"
+          ]
+        }
+      ],
+      "classifications": [],
+      "marketScopes": [
+        "actor_origin"
+      ],
+      "claimIds": [
+        "CL-455012446e8eb220",
+        "CL-fee5bcf982ad53c1",
+        "CL-699509d0dff9d8a6",
+        "CL-fdf020ad3fe84c4f"
+      ],
+      "sourceIds": [
+        "SA-fafab4fc268ba7ae"
+      ],
+      "sourceUrl": "https://ithome.com/0/999/204.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-f07a8d1917413b6c"
+    },
     "EV-2d17a87d3863dcee": {
       "id": "EV-2d17a87d3863dcee",
       "dataDate": "2026-09-07",
@@ -65337,60 +66178,6 @@
       "publisher": "IT之家",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-2d17a87d3863dcee"
-    },
-    "EV-f01a13953fa7aaaa": {
-      "id": "EV-f01a13953fa7aaaa",
-      "dataDate": "2026-09-07",
-      "occurrenceDate": "2026-09-07",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "publicationStatus": "verified",
-      "category": "product",
-      "title": "NVIDIA AI Enterprise - NVIDIA 文档",
-      "entityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "entityNames": [
-        "NVIDIA",
-        "Production Branch",
-        "Docs",
-        "August 2026."
-      ],
-      "productNames": [
-        {
-          "name": "Production Branch",
-          "type": "产品/服务",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        },
-        {
-          "name": "Docs",
-          "type": "产品/服务",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        },
-        {
-          "name": "August 2026.",
-          "type": "产品/服务",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        }
-      ],
-      "classifications": [],
-      "claimIds": [
-        "CL-0c761a2ebdcb40d4",
-        "CL-06f1b10854cfae62"
-      ],
-      "sourceIds": [
-        "SA-ac18cb711b7aab93"
-      ],
-      "sourceUrl": "https://docs.nvidia.com/ai-enterprise",
-      "publisher": "docs.nvidia.com",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-f01a13953fa7aaaa"
     },
     "EV-4ecc308baf04ff02": {
       "id": "EV-4ecc308baf04ff02",
@@ -66382,39 +67169,6 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-f590baeec8e792fe"
     },
-    "EV-03992c9b7f8fef10": {
-      "id": "EV-03992c9b7f8fef10",
-      "dataDate": "2026-09-05",
-      "occurrenceDate": "2026-09-05",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "publicationStatus": "verified",
-      "category": "product",
-      "title": "推出 Awarded AI - Procurement Sciences",
-      "entityIds": [],
-      "entityNames": [
-        "Procurement Sciences",
-        "Awarded AI"
-      ],
-      "productNames": [
-        {
-          "name": "Awarded AI",
-          "type": "产品/服务",
-          "ownerNames": []
-        }
-      ],
-      "classifications": [],
-      "claimIds": [
-        "CL-31b70179574ea63c"
-      ],
-      "sourceIds": [
-        "SA-f4ef6253f064a433"
-      ],
-      "sourceUrl": "https://procurementsciences.com/platform",
-      "publisher": "procurementsciences.com",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-03992c9b7f8fef10"
-    },
     "EV-358643eefe0a5df5": {
       "id": "EV-358643eefe0a5df5",
       "dataDate": "2026-09-05",
@@ -66721,6 +67475,45 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-d5db0416bede29de"
     },
+    "EV-8d48a9b8a69c331d": {
+      "id": "EV-8d48a9b8a69c331d",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-04",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "publicationStatus": "verified",
+      "category": "hardware",
+      "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-240389f4b730bad4"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "AMD",
+        "Project Zenith"
+      ],
+      "productNames": [
+        {
+          "name": "Project Zenith",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-4055e401125ddde5"
+      ],
+      "sourceIds": [
+        "SA-6c6325df82582254"
+      ],
+      "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
+      "publisher": "The Verge AI",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-8d48a9b8a69c331d"
+    },
     "EV-293d6feac5b8efab": {
       "id": "EV-293d6feac5b8efab",
       "dataDate": "2026-09-07",
@@ -66771,45 +67564,6 @@
       "publisher": "少数派",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-293d6feac5b8efab"
-    },
-    "EV-8d48a9b8a69c331d": {
-      "id": "EV-8d48a9b8a69c331d",
-      "dataDate": "2026-09-07",
-      "occurrenceDate": "2026-09-04",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "publicationStatus": "verified",
-      "category": "hardware",
-      "title": "微软Project Zenith为开发者打造“无干扰Windows体验”",
-      "entityIds": [
-        "EN-9fbf261b62c1d7c0",
-        "EN-240389f4b730bad4"
-      ],
-      "entityNames": [
-        "Microsoft",
-        "AMD",
-        "Project Zenith"
-      ],
-      "productNames": [
-        {
-          "name": "Project Zenith",
-          "type": "AI 硬件",
-          "ownerNames": [
-            "Microsoft"
-          ]
-        }
-      ],
-      "classifications": [],
-      "claimIds": [
-        "CL-d158ecd3081847d3"
-      ],
-      "sourceIds": [
-        "SA-1350bb239c05833b"
-      ],
-      "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
-      "publisher": "The Verge AI",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-8d48a9b8a69c331d"
     },
     "EV-4465e8bfd74508a6": {
       "id": "EV-4465e8bfd74508a6",
@@ -67652,54 +68406,6 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-51dcf527010e4f19"
     },
-    "EV-8232ad0075a77b7a": {
-      "id": "EV-8232ad0075a77b7a",
-      "dataDate": "2026-09-04",
-      "occurrenceDate": "2026-09-04",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "publicationStatus": "verified",
-      "category": "product",
-      "title": "GitHub 更新日志：06/2026",
-      "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "entityNames": [
-        "Anthropic",
-        "Microsoft",
-        "GitHub Copilot",
-        "GitHub Changelog"
-      ],
-      "productNames": [
-        {
-          "name": "GitHub Copilot",
-          "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        },
-        {
-          "name": "GitHub Changelog",
-          "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        }
-      ],
-      "classifications": [],
-      "claimIds": [
-        "CL-1d8416039edf524e",
-        "CL-4a87aeef7997baab"
-      ],
-      "sourceIds": [
-        "SA-0a68edee80553fee"
-      ],
-      "sourceUrl": "https://github.blog/changelog/month/06-2026",
-      "publisher": "github.blog",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-8232ad0075a77b7a"
-    },
     "EV-ad41b8a1f9f8d747": {
       "id": "EV-ad41b8a1f9f8d747",
       "dataDate": "2026-09-04",
@@ -67807,7 +68513,7 @@
     },
     "EV-3aadd182733359ee": {
       "id": "EV-3aadd182733359ee",
-      "dataDate": "2026-09-07",
+      "dataDate": "2026-09-08",
       "occurrenceDate": "2026-09-03",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
@@ -67861,12 +68567,12 @@
         }
       ],
       "claimIds": [
-        "CL-c166672a0c2b07ed",
-        "CL-c028773ae38ee8bc",
-        "CL-ce77092bdf470fa1"
+        "CL-5ba0a272fee5d2ed",
+        "CL-dd30c6f6d75b0ec5",
+        "CL-1151f6af1b14126d"
       ],
       "sourceIds": [
-        "SA-e38168e5dec1ac6d"
+        "SA-063be30b3d8be23c"
       ],
       "sourceUrl": "https://thecuberesearch.com/vmware-explore-2026-wrap-up-private-cloud-becomes-the-operating-layer-for-enterprise-ai",
       "publisher": "thecuberesearch.com",
@@ -68486,7 +69192,7 @@
     },
     "EV-62cb40b3abef60c7": {
       "id": "EV-62cb40b3abef60c7",
-      "dataDate": "2026-09-07",
+      "dataDate": "2026-09-08",
       "occurrenceDate": "2026-09-02",
       "eventType": "service_change",
       "eventTypeLabel": "服务变更",
@@ -68500,8 +69206,8 @@
       "productNames": [],
       "classifications": [],
       "claimIds": [
-        "CL-300ac6baa13ebd26",
-        "CL-c48c637f0a866241"
+        "CL-c376c5d0684e3884",
+        "CL-9f7eda69c7631795"
       ],
       "sourceIds": [
         "SA-b5b17d791d9702a9"
@@ -68510,6 +69216,47 @@
       "publisher": "GitHub Blog AI",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-62cb40b3abef60c7"
+    },
+    "EV-c942862b476b9eae": {
+      "id": "EV-c942862b476b9eae",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-02",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "publicationStatus": "verified",
+      "category": "hardware",
+      "title": "OpenAI 揭秘自研 Jalapeño 芯片——基准测试称其超越英伟达 GB300",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802",
+        "EN-373ac021a2c0bb2c"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "NVIDIA",
+        "Broadcom",
+        "TechRadar"
+      ],
+      "productNames": [
+        {
+          "name": "TechRadar",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-ada10085568aa214"
+      ],
+      "sourceIds": [
+        "SA-e3587dd5cb8cce40"
+      ],
+      "sourceUrl": "https://techradar.com/pro/openai-lifts-the-lid-on-its-in-house-jalapeno-chip-with-benchmarks-claiming-it-beats-nvidias-gb300",
+      "publisher": "techradar.com",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-c942862b476b9eae"
     },
     "EV-4adc165f85ae86ff": {
       "id": "EV-4adc165f85ae86ff",
@@ -69444,7 +70191,7 @@
     },
     "EV-35df58b993efa71a": {
       "id": "EV-35df58b993efa71a",
-      "dataDate": "2026-09-07",
+      "dataDate": "2026-09-08",
       "occurrenceDate": "2026-09-01",
       "eventType": "pricing_change",
       "eventTypeLabel": "定价变更",
@@ -69458,7 +70205,7 @@
       "productNames": [],
       "classifications": [],
       "claimIds": [
-        "CL-9a9d8e1ebccc6ac1"
+        "CL-6cc9393ee95f4916"
       ],
       "sourceIds": [
         "SA-a98e0a4343d964d7"
@@ -131910,6 +132657,180 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-00834dd71037c7cc"
     },
+    "EV-8ce2dd0436377c09": {
+      "id": "EV-8ce2dd0436377c09",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-08",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "ChatGPT网页流量份额回升至55.5%，Gemini短暂反弹势头消退",
+      "entityIds": [],
+      "entityNames": [
+        "ChatGPT",
+        "Gemini"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-60965168ce762e94"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-eb3c4ec4a851921c",
+        "CL-d3e48e104eed1eaa"
+      ],
+      "sourceIds": [
+        "SA-54d3173f9f774877"
+      ],
+      "sourceUrl": "https://the-decoder.com/chatgpt-claws-back-web-traffic-share-to-55-5-percent-as-geminis-brief-comeback-fades",
+      "publisher": "The Decoder AI News",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-8ce2dd0436377c09"
+    },
+    "EV-c230c05281ef3aa2": {
+      "id": "EV-c230c05281ef3aa2",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-08",
+      "eventType": "certification_compliance",
+      "eventTypeLabel": "认证合规",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "AI 助力政府合同竞标：赢得更多投标",
+      "entityIds": [],
+      "entityNames": [
+        "Procurement Sciences"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-48f37efd806a20a9"
+      ],
+      "sourceIds": [
+        "SA-e22982460bd55618"
+      ],
+      "sourceUrl": "https://procurementsciences.com",
+      "publisher": "procurementsciences.com",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-c230c05281ef3aa2"
+    },
+    "EV-da0ff54a5a474820": {
+      "id": "EV-da0ff54a5a474820",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-08",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "三星SDS押注基于多维AI全栈的定制AX，将FDE扩展至约200家",
+      "entityIds": [
+        "EN-c13e2f4a44bb01ed"
+      ],
+      "entityNames": [
+        "Samsung SDS"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-b8103b2f49d24b31"
+      ],
+      "sourceIds": [
+        "SA-5d61bc331c8c8cac"
+      ],
+      "sourceUrl": "https://digitaltoday.co.kr/en/view/100988/samsung-sds-bets-on-custom-ax-built-on-multi-dimensional-ai-full-stack-expands-fde-to-about-200",
+      "publisher": "digitaltoday.co.kr",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-da0ff54a5a474820"
+    },
+    "EV-fad0a95e71d54b11": {
+      "id": "EV-fad0a95e71d54b11",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-08",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "2026年：AI智能体引领自主采购元年",
+      "entityIds": [],
+      "entityNames": [
+        "AI at Wharton",
+        "MIT's NANDA initiative",
+        "AI Agents for Autonomous"
+      ],
+      "productNames": [
+        {
+          "name": "AI Agents for Autonomous",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-364669e21375d96a",
+        "CL-f4ecb0b95b38b4f4",
+        "CL-142281458df16062"
+      ],
+      "sourceIds": [
+        "SA-40ee20248c91e98f"
+      ],
+      "sourceUrl": "https://supplychainbrain.com/blogs/1-think-tank/post/43687-why-2026-is-the-year-of-ai-agents-for-autonomous-procurement",
+      "publisher": "supplychainbrain.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-fad0a95e71d54b11"
+    },
+    "EV-375b675a454e3b8e": {
+      "id": "EV-375b675a454e3b8e",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-07",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "publicationStatus": "partial",
+      "category": "other",
+      "title": "派早报：微软公布 Project Zenith 计划、F-Droid 拟效仿 Debian 制定生成式 AI 使用政策",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "派早报",
+        "Microsoft"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-478676438ee161a3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-0c40baba904542a3",
+        "CL-5904bb015b6dc490",
+        "CL-fa8edea94b9dffb4",
+        "CL-0268346f0e263ed5"
+      ],
+      "sourceIds": [
+        "SA-96396b1aa556d42b"
+      ],
+      "sourceUrl": "https://sspai.com/post/114250",
+      "publisher": "少数派",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-375b675a454e3b8e"
+    },
     "EV-20571b175944604c": {
       "id": "EV-20571b175944604c",
       "dataDate": "2026-09-07",
@@ -132017,31 +132938,72 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-8a1086b789782cff"
     },
-    "EV-c230c05281ef3aa2": {
-      "id": "EV-c230c05281ef3aa2",
-      "dataDate": "2026-09-07",
-      "occurrenceDate": "2026-09-07",
-      "eventType": "certification_compliance",
-      "eventTypeLabel": "认证合规",
+    "EV-0af472b1f95d7945": {
+      "id": "EV-0af472b1f95d7945",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-06",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
       "publicationStatus": "verified",
       "category": "other",
-      "title": "AI 助力政府合同竞标：赢得更多投标",
-      "entityIds": [],
+      "title": "作者反击：出版商与代理商对Anthropic和解提出索赔",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
       "entityNames": [
-        "Procurement Sciences"
+        "agents make claims on Anthropic",
+        "Anthropic"
       ],
       "productNames": [],
       "classifications": [],
       "claimIds": [
-        "CL-d58bc9ba1f09217b"
+        "CL-2ecc5113300af0d3",
+        "CL-84c3051547e02ccd",
+        "CL-9ae969e953ce3dcc",
+        "CL-ff3068f06f88d5fc"
       ],
       "sourceIds": [
-        "SA-e22982460bd55618"
+        "SA-6915f8ef95395ede"
       ],
-      "sourceUrl": "https://procurementsciences.com",
-      "publisher": "procurementsciences.com",
+      "sourceUrl": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement",
+      "publisher": "TechCrunch AI",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-0af472b1f95d7945"
+    },
+    "EV-34b7b2083170b680": {
+      "id": "EV-34b7b2083170b680",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-06",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "西雅图时报和Newsday起诉OpenAI和微软侵权",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Seattle Times",
+        "Newsday",
+        "OpenAI",
+        "Microsoft"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-95c8fad3ac2b7430",
+        "CL-04fef4b1e87a2294",
+        "CL-ad84d9938827a928",
+        "CL-11e4a452865ffe5c"
+      ],
+      "sourceIds": [
+        "SA-e179d7bf4267b56e"
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+      "publisher": "The Verge AI",
       "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-c230c05281ef3aa2"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-34b7b2083170b680"
     },
     "EV-16f359eab1f09a1d": {
       "id": "EV-16f359eab1f09a1d",
@@ -132082,41 +133044,6 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-16f359eab1f09a1d"
-    },
-    "EV-34b7b2083170b680": {
-      "id": "EV-34b7b2083170b680",
-      "dataDate": "2026-09-07",
-      "occurrenceDate": "2026-09-06",
-      "eventType": "lawsuit_settlement",
-      "eventTypeLabel": "诉讼与和解",
-      "publicationStatus": "verified",
-      "category": "other",
-      "title": "西雅图时报和Newsday起诉OpenAI和微软侵权",
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-9fbf261b62c1d7c0"
-      ],
-      "entityNames": [
-        "Seattle Times",
-        "Newsday",
-        "OpenAI",
-        "Microsoft"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-4ab05e625f879798",
-        "CL-9d66d89a0bc3c3b9",
-        "CL-e8a55dbf1573bd3f",
-        "CL-f0a3daaf2c28ce24"
-      ],
-      "sourceIds": [
-        "SA-e5508d508454d384"
-      ],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
-      "publisher": "The Verge AI",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-34b7b2083170b680"
     },
     "EV-9970d6460e106e29": {
       "id": "EV-9970d6460e106e29",
@@ -132186,46 +133113,9 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-a6752127196a49c3"
     },
-    "EV-fad0a95e71d54b11": {
-      "id": "EV-fad0a95e71d54b11",
-      "dataDate": "2026-09-06",
-      "occurrenceDate": "2026-09-06",
-      "eventType": "research_result",
-      "eventTypeLabel": "研究结果",
-      "publicationStatus": "verified",
-      "category": "other",
-      "title": "2026年：AI智能体引领自主采购元年",
-      "entityIds": [],
-      "entityNames": [
-        "AI at Wharton",
-        "The Hackett Group",
-        "MIT's NANDA initiative",
-        "AI Agents for Autonomous"
-      ],
-      "productNames": [
-        {
-          "name": "AI Agents for Autonomous",
-          "type": "产品/服务",
-          "ownerNames": []
-        }
-      ],
-      "classifications": [],
-      "claimIds": [
-        "CL-f2955894cd66f694",
-        "CL-e3e9221ff51d7090",
-        "CL-10e5111d0732d6fa"
-      ],
-      "sourceIds": [
-        "SA-40ee20248c91e98f"
-      ],
-      "sourceUrl": "https://supplychainbrain.com/blogs/1-think-tank/post/43687-why-2026-is-the-year-of-ai-agents-for-autonomous-procurement",
-      "publisher": "supplychainbrain.com",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-fad0a95e71d54b11"
-    },
     "EV-81f3efe8cc085ef4": {
       "id": "EV-81f3efe8cc085ef4",
-      "dataDate": "2026-09-07",
+      "dataDate": "2026-09-08",
       "occurrenceDate": "2026-09-05",
       "eventType": "lawsuit_settlement",
       "eventTypeLabel": "诉讼与和解",
@@ -132255,13 +133145,13 @@
         }
       ],
       "claimIds": [
-        "CL-0a63c782f06eb054",
-        "CL-0ba1cd367554f294",
-        "CL-3fbf06805d4c4731",
-        "CL-083da7586bd74f72"
+        "CL-f3cf798961b69fe7",
+        "CL-d94e5e8e83e1ae98",
+        "CL-0e8982094dbf51ab",
+        "CL-034ad936b1400b41"
       ],
       "sourceIds": [
-        "SA-b053190675efff1a"
+        "SA-c3d4d63435962fa2"
       ],
       "sourceUrl": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft",
       "publisher": "TechCrunch AI",
@@ -132451,6 +133341,47 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-cdc2db5ed61d59bb"
+    },
+    "EV-a5a2807ca49753ee": {
+      "id": "EV-a5a2807ca49753ee",
+      "dataDate": "2026-09-08",
+      "occurrenceDate": "2026-09-04",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "OpenAI的失控智能体不断逃脱，且没有正式流程对其进行调查",
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-3b6a5cd574c07e76",
+        "CL-fb6f260ae1cc91af"
+      ],
+      "sourceIds": [
+        "SA-78bcfc28b29e0043"
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them",
+      "publisher": "TechCrunch AI",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-a5a2807ca49753ee"
     },
     "EV-7371ffb603de3e1c": {
       "id": "EV-7371ffb603de3e1c",
@@ -145629,6 +146560,14 @@
       "typeLabel": "产品、模型与服务",
       "detailUrl": "data-center.html?view=index&detail=entity&id=EN-3c2a3673eabc9a46"
     },
+    "EN-d1d137efd55a338c": {
+      "id": "EN-d1d137efd55a338c",
+      "name": "合肥中科类脑智能技术有限公司",
+      "entityType": "organization",
+      "sourceEntityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "detailUrl": "data-center.html?view=index&detail=entity&id=EN-d1d137efd55a338c"
+    },
     "EN-bdedcf7e3b01508b": {
       "id": "EN-bdedcf7e3b01508b",
       "name": "华擎",
@@ -148213,6 +149152,14 @@
       "typeLabel": "公司与机构",
       "detailUrl": "data-center.html?view=index&detail=entity&id=EN-916a98f0fa2a39af"
     },
+    "EN-28be1fc3808080ef": {
+      "id": "EN-28be1fc3808080ef",
+      "name": "iFlytek",
+      "entityType": "organization",
+      "sourceEntityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "detailUrl": "data-center.html?view=index&detail=entity&id=EN-28be1fc3808080ef"
+    },
     "EN-4540952d4d9138db": {
       "id": "EN-4540952d4d9138db",
       "name": "Inference Engine",
@@ -150696,8 +151643,9 @@
   },
   "periods": {
     "day": {
-      "defaultKey": "2026-09-07",
+      "defaultKey": "2026-09-08",
       "options": [
+        "2026-09-08",
         "2026-09-07",
         "2026-09-06",
         "2026-09-05",
@@ -150807,29 +151755,66 @@
         "2026-05-18"
       ],
       "records": {
+        "2026-09-08": {
+          "key": "2026-09-08",
+          "counts": {
+            "financing": 4,
+            "deployment": 0,
+            "partnership": 2,
+            "product": 19,
+            "hardware": 2
+          },
+          "eventIds": [
+            "EV-03992c9b7f8fef10",
+            "EV-0f6e4d81f3dbbb64",
+            "EV-21fcd6420d6ff726",
+            "EV-24ae0372410706ee",
+            "EV-35df58b993efa71a",
+            "EV-3aadd182733359ee",
+            "EV-411dc97b66bd8251",
+            "EV-46df5f4044877a39",
+            "EV-4ad737260c42c505",
+            "EV-5ec6f963b0aab137",
+            "EV-62cb40b3abef60c7",
+            "EV-66561ec28d8b1fec",
+            "EV-6a5b724c821567f3",
+            "EV-810d0f3892cdf3ab",
+            "EV-81bbaaec2965864a",
+            "EV-8232ad0075a77b7a",
+            "EV-8d48a9b8a69c331d",
+            "EV-987cb2e5e20f79ce",
+            "EV-a251b011afec190d",
+            "EV-ba091f86fba39da0",
+            "EV-bc24f0b939f2dfa2",
+            "EV-c942862b476b9eae",
+            "EV-d32e50951ff7f9a1",
+            "EV-d3d92cecbb44d44b",
+            "EV-df2b04d9d720c544",
+            "EV-f01a13953fa7aaaa",
+            "EV-f07a8d1917413b6c"
+          ],
+          "otherCount": 9,
+          "totalAccepted": 36,
+          "coverage": "数据中心于 2026-09-08 接受的事件；事件发生日期可能不同。"
+        },
         "2026-09-07": {
           "key": "2026-09-07",
           "counts": {
-            "financing": 2,
+            "financing": 1,
             "deployment": 0,
             "partnership": 3,
-            "product": 18,
-            "hardware": 2
+            "product": 14,
+            "hardware": 1
           },
           "eventIds": [
             "EV-20571b175944604c",
             "EV-293d6feac5b8efab",
             "EV-2d17a87d3863dcee",
-            "EV-35df58b993efa71a",
-            "EV-3aadd182733359ee",
             "EV-4ecc308baf04ff02",
             "EV-54451ee210a0d0d4",
-            "EV-62cb40b3abef60c7",
             "EV-6a3286e2186e4774",
             "EV-6b0106ef4a79df05",
             "EV-80775a8178f39aa5",
-            "EV-81bbaaec2965864a",
-            "EV-8d48a9b8a69c331d",
             "EV-91eccd583f77528f",
             "EV-9db7fbddb8ab4715",
             "EV-9ef426e51f4690ee",
@@ -150838,13 +151823,12 @@
             "EV-db926055d40a4dff",
             "EV-e3a282c070969a55",
             "EV-eea8fc1a5c5a7326",
-            "EV-f01a13953fa7aaaa",
             "EV-f26c01475e591f11",
             "EV-f6ad842485bb71ab",
             "EV-fbdc0b51572a88a4"
           ],
-          "otherCount": 11,
-          "totalAccepted": 36,
+          "otherCount": 8,
+          "totalAccepted": 27,
           "coverage": "数据中心于 2026-09-07 接受的事件；事件发生日期可能不同。"
         },
         "2026-09-06": {
@@ -150852,7 +151836,7 @@
           "counts": {
             "financing": 1,
             "deployment": 2,
-            "partnership": 1,
+            "partnership": 0,
             "product": 14,
             "hardware": 2
           },
@@ -150867,7 +151851,6 @@
             "EV-78b759d491382d09",
             "EV-7d0144597aa9b489",
             "EV-7db34aecc1e1e817",
-            "EV-810d0f3892cdf3ab",
             "EV-8e0c25aebb1d4f5f",
             "EV-a74ea4ad6a095ac3",
             "EV-c3b67ac2dcd72881",
@@ -150878,8 +151861,8 @@
             "EV-f590baeec8e792fe",
             "EV-ffa46f84468cffd9"
           ],
-          "otherCount": 8,
-          "totalAccepted": 28,
+          "otherCount": 7,
+          "totalAccepted": 26,
           "coverage": "数据中心于 2026-09-06 接受的事件；事件发生日期可能不同。"
         },
         "2026-09-05": {
@@ -150888,11 +151871,10 @@
             "financing": 1,
             "deployment": 1,
             "partnership": 1,
-            "product": 12,
+            "product": 11,
             "hardware": 2
           },
           "eventIds": [
-            "EV-03992c9b7f8fef10",
             "EV-049c7d6cdc237a59",
             "EV-15847ebe206ad028",
             "EV-2f0f3200b9800877",
@@ -150911,7 +151893,7 @@
             "EV-e34f71c639b7420a"
           ],
           "otherCount": 3,
-          "totalAccepted": 20,
+          "totalAccepted": 19,
           "coverage": "数据中心于 2026-09-05 接受的事件；事件发生日期可能不同。"
         },
         "2026-09-04": {
@@ -150920,7 +151902,7 @@
             "financing": 1,
             "deployment": 0,
             "partnership": 1,
-            "product": 17,
+            "product": 16,
             "hardware": 0
           },
           "eventIds": [
@@ -150935,7 +151917,6 @@
             "EV-4adc165f85ae86ff",
             "EV-4f94f35c8fca50ec",
             "EV-51dcf527010e4f19",
-            "EV-8232ad0075a77b7a",
             "EV-85ba013c379a9d3d",
             "EV-ad41b8a1f9f8d747",
             "EV-b02d4c02ede22ebe",
@@ -150945,13 +151926,13 @@
             "EV-f29c0c51a5cbfd84"
           ],
           "otherCount": 2,
-          "totalAccepted": 21,
+          "totalAccepted": 20,
           "coverage": "数据中心于 2026-09-04 接受的事件；事件发生日期可能不同。"
         },
         "2026-09-03": {
           "key": "2026-09-03",
           "counts": {
-            "financing": 7,
+            "financing": 5,
             "deployment": 2,
             "partnership": 1,
             "product": 17,
@@ -150974,7 +151955,6 @@
             "EV-85dc7f34cb077fba",
             "EV-89ec502a1340079a",
             "EV-8ae771f26c02f7c4",
-            "EV-987cb2e5e20f79ce",
             "EV-a2f902b9707ffd02",
             "EV-a4f0e4fe1350a810",
             "EV-ad7f1a52c13e2ae1",
@@ -150983,12 +151963,11 @@
             "EV-cbf245e13978209e",
             "EV-d3cf20e748a41ce3",
             "EV-d8707197c20b118e",
-            "EV-df2b04d9d720c544",
             "EV-e83058fce343dc53",
             "EV-f0a666f5416e049f"
           ],
           "otherCount": 8,
-          "totalAccepted": 36,
+          "totalAccepted": 34,
           "coverage": "数据中心于 2026-09-03 接受的事件；事件发生日期可能不同。"
         },
         "2026-09-02": {
@@ -154728,45 +155707,84 @@
           "start": "2026-09-07",
           "end": "2026-09-13",
           "observedDataDays": [
-            "2026-09-07"
+            "2026-09-07",
+            "2026-09-08"
           ],
           "counts": {
-            "financing": 2,
+            "financing": 5,
             "deployment": 0,
-            "partnership": 3,
-            "product": 18,
-            "hardware": 2
+            "partnership": 5,
+            "product": 33,
+            "hardware": 3
           },
-          "totalAccepted": 36,
-          "trackedCount": 25,
-          "otherCount": 11,
+          "totalAccepted": 63,
+          "trackedCount": 46,
+          "otherCount": 17,
           "activeEntities": [
             {
               "entityId": "EN-8d4321d936320802",
               "eventIds": [
+                "EV-21fcd6420d6ff726",
+                "EV-ba091f86fba39da0",
+                "EV-c942862b476b9eae",
+                "EV-f01a13953fa7aaaa",
                 "EV-20571b175944604c",
                 "EV-2d17a87d3863dcee",
                 "EV-4ecc308baf04ff02",
-                "EV-80775a8178f39aa5",
-                "EV-f01a13953fa7aaaa"
+                "EV-80775a8178f39aa5"
               ],
               "categoryCount": 3
             },
             {
               "entityId": "EN-7d3194f79e645c42",
               "eventIds": [
+                "EV-0f6e4d81f3dbbb64",
+                "EV-c942862b476b9eae",
                 "EV-293d6feac5b8efab",
                 "EV-2d17a87d3863dcee",
                 "EV-54451ee210a0d0d4",
                 "EV-bce46f2e5cc68d5d"
+              ],
+              "categoryCount": 3
+            },
+            {
+              "entityId": "EN-bbdefa2950f49882",
+              "eventIds": [
+                "EV-24ae0372410706ee",
+                "EV-ba091f86fba39da0",
+                "EV-54451ee210a0d0d4",
+                "EV-6b0106ef4a79df05",
+                "EV-db926055d40a4dff"
+              ],
+              "categoryCount": 2
+            },
+            {
+              "entityId": "EN-047364b9be67f665",
+              "eventIds": [
+                "EV-4ad737260c42c505",
+                "EV-6a5b724c821567f3",
+                "EV-987cb2e5e20f79ce",
+                "EV-a251b011afec190d",
+                "EV-6a3286e2186e4774"
               ],
               "categoryCount": 2
             },
             {
               "entityId": "EN-c70eca6b0f88f44d",
               "eventIds": [
+                "EV-8232ad0075a77b7a",
+                "EV-ba091f86fba39da0",
                 "EV-54451ee210a0d0d4",
                 "EV-bce46f2e5cc68d5d"
+              ],
+              "categoryCount": 2
+            },
+            {
+              "entityId": "EN-9c8ae69b84f21a2e",
+              "eventIds": [
+                "EV-411dc97b66bd8251",
+                "EV-987cb2e5e20f79ce",
+                "EV-a251b011afec190d"
               ],
               "categoryCount": 2
             },
@@ -154774,7 +155792,16 @@
               "entityId": "EN-9fbf261b62c1d7c0",
               "eventIds": [
                 "EV-8d48a9b8a69c331d",
+                "EV-ba091f86fba39da0",
                 "EV-fbdc0b51572a88a4"
+              ],
+              "categoryCount": 2
+            },
+            {
+              "entityId": "EN-373ac021a2c0bb2c",
+              "eventIds": [
+                "EV-3aadd182733359ee",
+                "EV-c942862b476b9eae"
               ],
               "categoryCount": 2
             },
@@ -154803,7 +155830,7 @@
                 "provenance": "claim_assertion",
                 "assertionId": ""
               },
-              "dataDate": "2026-09-07",
+              "dataDate": "2026-09-08",
               "eventId": "EV-3aadd182733359ee"
             }
           ],
@@ -154823,15 +155850,15 @@
             "2026-09-06"
           ],
           "counts": {
-            "financing": 25,
+            "financing": 23,
             "deployment": 12,
-            "partnership": 14,
-            "product": 91,
+            "partnership": 13,
+            "product": 89,
             "hardware": 11
           },
-          "totalAccepted": 187,
-          "trackedCount": 153,
-          "otherCount": 34,
+          "totalAccepted": 181,
+          "trackedCount": 148,
+          "otherCount": 33,
           "activeEntities": [
             {
               "entityId": "EN-7d3194f79e645c42",
@@ -154868,7 +155895,6 @@
                 "EV-0fce4630e77c9db7",
                 "EV-1f88bfaf77dcfca3",
                 "EV-446089c7f3d3e569",
-                "EV-8232ad0075a77b7a",
                 "EV-b02d4c02ede22ebe",
                 "EV-03ce826429a97aa9",
                 "EV-3590ab0568b70ba2",
@@ -154933,7 +155959,6 @@
                 "EV-6d92bb807f339b53",
                 "EV-c638f91cbb8bf845",
                 "EV-d5db0416bede29de",
-                "EV-8232ad0075a77b7a",
                 "EV-ad41b8a1f9f8d747",
                 "EV-67adfb3393d95976",
                 "EV-737a6c098b70f6ff",
@@ -154975,15 +156000,6 @@
               "categoryCount": 3
             },
             {
-              "entityId": "EN-047364b9be67f665",
-              "eventIds": [
-                "EV-b22136a993b21f0c",
-                "EV-987cb2e5e20f79ce",
-                "EV-a2f902b9707ffd02"
-              ],
-              "categoryCount": 2
-            },
-            {
               "entityId": "EN-6f7ac1823da81d2e",
               "eventIds": [
                 "EV-40dbd71782c11373",
@@ -155004,6 +156020,14 @@
               "eventIds": [
                 "EV-a474530ccf6cd872",
                 "EV-4f6e481c90ff0e3c"
+              ],
+              "categoryCount": 2
+            },
+            {
+              "entityId": "EN-047364b9be67f665",
+              "eventIds": [
+                "EV-b22136a993b21f0c",
+                "EV-a2f902b9707ffd02"
               ],
               "categoryCount": 2
             }
@@ -177040,7 +178064,7 @@
         "2026-09": {
           "key": "2026-09",
           "start": "2026-09-01",
-          "end": "2026-09-07",
+          "end": "2026-09-08",
           "observedDataDays": [
             "2026-09-01",
             "2026-09-02",
@@ -177048,19 +178072,20 @@
             "2026-09-04",
             "2026-09-05",
             "2026-09-06",
-            "2026-09-07"
+            "2026-09-07",
+            "2026-09-08"
           ],
           "counts": {
-            "financing": 25,
+            "financing": 26,
             "deployment": 11,
-            "partnership": 15,
-            "product": 105,
-            "hardware": 13
+            "partnership": 16,
+            "product": 118,
+            "hardware": 14
           },
           "previousMonth": "2026-08",
           "comparisonAvailable": true,
           "comparisonWindow": {
-            "currentEndDay": 7,
+            "currentEndDay": 8,
             "previousObservedDataDays": [
               "2026-08-01",
               "2026-08-02",
@@ -177068,26 +178093,27 @@
               "2026-08-04",
               "2026-08-05",
               "2026-08-06",
-              "2026-08-07"
+              "2026-08-07",
+              "2026-08-08"
             ]
           },
           "previousCounts": {
-            "financing": 62,
+            "financing": 67,
             "deployment": 6,
-            "partnership": 14,
-            "product": 64,
-            "hardware": 4
+            "partnership": 17,
+            "product": 81,
+            "hardware": 5
           },
           "deltas": {
-            "financing": -37,
+            "financing": -41,
             "deployment": 5,
-            "partnership": 1,
-            "product": 41,
+            "partnership": -1,
+            "product": 37,
             "hardware": 9
           },
-          "totalAccepted": 208,
-          "trackedCount": 169,
-          "otherCount": 39,
+          "totalAccepted": 229,
+          "trackedCount": 185,
+          "otherCount": 44,
           "newCompanies": [
             {
               "entityId": "EN-4d42a268c39b1dcc",
@@ -177130,22 +178156,35 @@
               "eventIds": [
                 "EV-f6ad842485bb71ab"
               ]
+            },
+            {
+              "entityId": "EN-d1d137efd55a338c",
+              "eventIds": [
+                "EV-46df5f4044877a39"
+              ]
+            },
+            {
+              "entityId": "EN-28be1fc3808080ef",
+              "eventIds": [
+                "EV-f07a8d1917413b6c"
+              ]
             }
           ],
           "newProducts": [],
           "financing": {
             "eventIds": [
+              "EV-46df5f4044877a39",
               "EV-81bbaaec2965864a",
+              "EV-987cb2e5e20f79ce",
+              "EV-df2b04d9d720c544",
               "EV-bce46f2e5cc68d5d",
               "EV-6b668e4655192209",
               "EV-2f0f3200b9800877",
               "EV-e28066d3db0e5765",
               "EV-2dff88f85e3bce86",
               "EV-89ec502a1340079a",
-              "EV-987cb2e5e20f79ce",
               "EV-a2f902b9707ffd02",
               "EV-cbf245e13978209e",
-              "EV-df2b04d9d720c544",
               "EV-f0a666f5416e049f",
               "EV-2601f35761ee270e",
               "EV-33db6a2054f77837",
@@ -177269,6 +178308,10 @@
                 "id": "model",
                 "name": "模型",
                 "eventIds": [
+                  "EV-6a5b724c821567f3",
+                  "EV-a251b011afec190d",
+                  "EV-d32e50951ff7f9a1",
+                  "EV-df2b04d9d720c544",
                   "EV-2d17a87d3863dcee",
                   "EV-6a3286e2186e4774",
                   "EV-39abdf174aa3aeec",
@@ -177280,7 +178323,6 @@
                   "EV-0fb1258b1013bd71",
                   "EV-7832e96ace41fc15",
                   "EV-b8a7ddde8a7e42c8",
-                  "EV-df2b04d9d720c544",
                   "EV-81318fb4bcdb926a",
                   "EV-fec0251eafea1a20",
                   "EV-53957f94b3924ad3",
@@ -177288,7 +178330,7 @@
                   "EV-8ea4e403a1024ad2",
                   "EV-e4552a80d406645e"
                 ],
-                "count": 18
+                "count": 21
               },
               {
                 "id": "enterprise_software_platform",
@@ -177392,6 +178434,7 @@
                 "id": "agentic_execution",
                 "name": "智能体",
                 "eventIds": [
+                  "EV-0f6e4d81f3dbbb64",
                   "EV-4ecc308baf04ff02",
                   "EV-50e7de294816f918",
                   "EV-7d0144597aa9b489",
@@ -177415,7 +178458,18 @@
                   "EV-8ea4e403a1024ad2",
                   "EV-f98b84fe16d57b72"
                 ],
-                "count": 22
+                "count": 23
+              },
+              {
+                "id": "embodied_ai",
+                "name": "具身智能",
+                "eventIds": [
+                  "EV-987cb2e5e20f79ce",
+                  "EV-d32e50951ff7f9a1",
+                  "EV-358643eefe0a5df5",
+                  "EV-85ba013c379a9d3d"
+                ],
+                "count": 4
               },
               {
                 "id": "multimodal",
@@ -177428,14 +178482,22 @@
                 "count": 3
               },
               {
-                "id": "embodied_ai",
-                "name": "具身智能",
+                "id": "code_generation",
+                "name": "代码生成",
                 "eventIds": [
-                  "EV-358643eefe0a5df5",
-                  "EV-85ba013c379a9d3d",
-                  "EV-987cb2e5e20f79ce"
+                  "EV-0f6e4d81f3dbbb64",
+                  "EV-ba091f86fba39da0"
                 ],
-                "count": 3
+                "count": 2
+              },
+              {
+                "id": "on_device",
+                "name": "端侧",
+                "eventIds": [
+                  "EV-ba091f86fba39da0",
+                  "EV-049c7d6cdc237a59"
+                ],
+                "count": 2
               },
               {
                 "id": "computer_use",
@@ -177451,14 +178513,6 @@
                 "name": "安全护栏",
                 "eventIds": [
                   "EV-49577d438cb6624b"
-                ],
-                "count": 1
-              },
-              {
-                "id": "on_device",
-                "name": "端侧",
-                "eventIds": [
-                  "EV-049c7d6cdc237a59"
                 ],
                 "count": 1
               },
@@ -177483,6 +178537,14 @@
                 "name": "视觉语言",
                 "eventIds": [
                   "EV-6a3286e2186e4774"
+                ],
+                "count": 1
+              },
+              {
+                "id": "video_generation",
+                "name": "视频生成",
+                "eventIds": [
+                  "EV-a251b011afec190d"
                 ],
                 "count": 1
               },
@@ -177534,17 +178596,19 @@
                 "id": "physical_automation",
                 "name": "物理自动化",
                 "eventIds": [
+                  "EV-66561ec28d8b1fec",
+                  "EV-987cb2e5e20f79ce",
+                  "EV-ba091f86fba39da0",
                   "EV-80775a8178f39aa5",
                   "EV-4465e8bfd74508a6",
                   "EV-8e0c25aebb1d4f5f",
                   "EV-358643eefe0a5df5",
                   "EV-81937f2e4fa0f9fe",
-                  "EV-987cb2e5e20f79ce",
                   "EV-a2f902b9707ffd02",
                   "EV-1fd2dfea0a3f7322",
                   "EV-de976687caf47511"
                 ],
-                "count": 9
+                "count": 11
               },
               {
                 "id": "productivity_enterprise_workflows",
@@ -177558,6 +178622,16 @@
                   "EV-c538fb9a61735afc"
                 ],
                 "count": 6
+              },
+              {
+                "id": "software_development",
+                "name": "软件开发",
+                "eventIds": [
+                  "EV-0f6e4d81f3dbbb64",
+                  "EV-89ec502a1340079a",
+                  "EV-b8a7ddde8a7e42c8"
+                ],
+                "count": 3
               },
               {
                 "id": "knowledge_search",
@@ -177575,15 +178649,6 @@
                 "eventIds": [
                   "EV-2dff88f85e3bce86",
                   "EV-93c2515d50157281"
-                ],
-                "count": 2
-              },
-              {
-                "id": "software_development",
-                "name": "软件开发",
-                "eventIds": [
-                  "EV-89ec502a1340079a",
-                  "EV-b8a7ddde8a7e42c8"
                 ],
                 "count": 2
               },
@@ -177651,6 +178716,14 @@
                 "count": 1
               },
               {
+                "id": "financial_services",
+                "name": "金融服务",
+                "eventIds": [
+                  "EV-21fcd6420d6ff726"
+                ],
+                "count": 1
+              },
+              {
                 "id": "healthcare_life_sciences",
                 "name": "医疗与生命科学",
                 "eventIds": [
@@ -177673,11 +178746,11 @@
                 "name": "企业用户",
                 "eventIds": [
                   "EV-81bbaaec2965864a",
+                  "EV-987cb2e5e20f79ce",
                   "EV-bce46f2e5cc68d5d",
                   "EV-2f0f3200b9800877",
                   "EV-2dff88f85e3bce86",
                   "EV-89ec502a1340079a",
-                  "EV-987cb2e5e20f79ce",
                   "EV-f0a666f5416e049f",
                   "EV-49577d438cb6624b",
                   "EV-b9d8b3582f12bdc7"
@@ -177688,10 +178761,10 @@
                 "id": "consumer",
                 "name": "个人用户",
                 "eventIds": [
+                  "EV-987cb2e5e20f79ce",
                   "EV-2f0f3200b9800877",
                   "EV-2dff88f85e3bce86",
                   "EV-8ae771f26c02f7c4",
-                  "EV-987cb2e5e20f79ce",
                   "EV-8e13f1a043f7b979",
                   "EV-c538fb9a61735afc"
                 ],
@@ -177712,18 +178785,19 @@
             ],
             "deploymentModel": [
               {
+                "id": "edge_device",
+                "name": "边缘与端侧",
+                "eventIds": [
+                  "EV-ba091f86fba39da0",
+                  "EV-049c7d6cdc237a59"
+                ],
+                "count": 2
+              },
+              {
                 "id": "on_premise",
                 "name": "本地部署",
                 "eventIds": [
                   "EV-73c7062edbdf5d08"
-                ],
-                "count": 1
-              },
-              {
-                "id": "edge_device",
-                "name": "边缘与端侧",
-                "eventIds": [
-                  "EV-049c7d6cdc237a59"
                 ],
                 "count": 1
               },

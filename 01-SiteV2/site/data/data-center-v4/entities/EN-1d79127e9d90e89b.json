@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T02:51:30.693Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T01:34:41.505Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -27,6 +27,8 @@
     "eventIds": [
       "EV-783866f9782691b6",
       "EV-40f14150d6f622f5",
+      "EV-a251b011afec190d",
+      "EV-ba091f86fba39da0",
       "EV-e4552a80d406645e",
       "EV-ec8b36dcb97645da",
       "EV-34fd528787e47757",
@@ -51,7 +53,7 @@
       "EN-993599624a199fe0"
     ],
     "firstSeen": "2026-06-13",
-    "lastSeen": "2026-09-05",
+    "lastSeen": "2026-09-08",
     "relationIds": [
       "REL2-09dd97666e545a2c",
       "REL2-ff240950e3bb7f5e"
@@ -65,6 +67,8 @@
         "EV-40f14150d6f622f5"
       ],
       "productsServices": [
+        "EV-a251b011afec190d",
+        "EV-ba091f86fba39da0",
         "EV-e4552a80d406645e",
         "EV-ec8b36dcb97645da",
         "EV-34fd528787e47757",
@@ -82,6 +86,104 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a251b011afec190d",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Arena 第 36 周 AI 大模型盲测榜：国产多模型扎堆入榜前端开发榜，阿里 wan3.0 冲进视频榜前三",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-572e31f55b6ac1b1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成",
+            "entityIds": [
+              "EN-572e31f55b6ac1b1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-572e31f55b6ac1b1",
+          "EN-047364b9be67f665",
+          "EN-9c8ae69b84f21a2e",
+          "EN-1d79127e9d90e89b"
+        ]
+      },
+      {
+        "id": "EV-ba091f86fba39da0",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "DHH领衔，英伟达、微软、HuggingFace等150+全球技术大咖集结，GOSIM Shenzhen 2026全议程公布",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-8d4321d936320802",
+          "EN-bbdefa2950f49882",
+          "EN-9fbf261b62c1d7c0",
+          "EN-6f7ac1823da81d2e",
+          "EN-1d79127e9d90e89b"
+        ]
+      },
       {
         "id": "EV-783866f9782691b6",
         "dataDate": "2026-09-05",
@@ -632,6 +734,9 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-6a5b724c821567f3",
+        "EV-a251b011afec190d",
+        "EV-d32e50951ff7f9a1",
         "EV-2d17a87d3863dcee",
         "EV-6a3286e2186e4774",
         "EV-39abdf174aa3aeec",
@@ -875,6 +980,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-572e31f55b6ac1b1",
+        "EN-1a6d6ea981e8688c",
         "EN-bae152c4560df38c",
         "EN-7d3194f79e645c42",
         "EN-c608c4787821de1b",
@@ -994,7 +1101,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -1093,6 +1200,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-a5a2807ca49753ee",
         "EV-7371ffb603de3e1c",
         "EV-0c00a6c681f22b98",
         "EV-3badd98afb847643",
@@ -1175,7 +1283,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-use_case-software_development",
@@ -1259,6 +1367,7 @@
         "EV-129ffa6be41bb485",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-0f6e4d81f3dbbb64",
         "EV-b8a7ddde8a7e42c8",
         "EV-3a4acc92731cb5ac",
         "EV-2868ff08777b5de9",
@@ -1287,6 +1396,7 @@
         "EV-e295f808713644c7",
         "EV-d53cd33e8f541a65",
         "EV-cfce55156a2ed7d2",
+        "EV-375b675a454e3b8e",
         "EV-ab89552719b28177",
         "EV-79d4cce8950d7639"
       ],
@@ -1357,9 +1467,9 @@
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
         "EN-916a98f0fa2a39af",
+        "EN-7d3194f79e645c42",
         "EN-bbdefa2950f49882",
         "EN-0b9ca57f53ba758b",
-        "EN-7d3194f79e645c42",
         "EN-76a9a8a6e2f1a47b",
         "EN-240389f4b730bad4",
         "EN-1d79127e9d90e89b",
@@ -1371,7 +1481,8 @@
         "EN-2b6e51bec93e86c1",
         "EN-630dc133336bc266",
         "EN-6fcba5d96a4fadfd",
-        "EN-f19600b9e18f7f27"
+        "EN-f19600b9e18f7f27",
+        "EN-478676438ee161a3"
       ],
       "fdeIds": [
         "FDE-0ef4045e28c345f8",
@@ -1384,7 +1495,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "TX-technology-long_context",
@@ -1444,5 +1555,91 @@
     }
   ],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-fde7880cbf9629d0",
+      "snapshotKey": "fde7880cbf9629d0",
+      "snapshotId": "HWS-5b82eadefe30fee2",
+      "eventId": "EV-ba091f86fba39da0",
+      "eventIds": [
+        "EV-ba091f86fba39da0"
+      ],
+      "dataDate": "2026-09-08",
+      "date": "2026-09-08",
+      "title": "Anthropic",
+      "subject": "Anthropic",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-7a001c886fa83310"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-08",
+          "hardware_fact_id": "HWF-7a001c886fa83310",
+          "fact_type": "product",
+          "observed_at": "2026-09-07T08:51:30.000Z",
+          "subject_entity_id": "EN-c70eca6b0f88f44d",
+          "subject_name": "Anthropic",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Anthropic、Google Cloud、DeepSeek、智谱等厂商持续推出新模型、刷新能力边界的同时，Agent、AI 编程、端侧智能、AI 原生设备、机器人等方向也在快速升温。",
+          "event_refs": [
+            "EV-ba091f86fba39da0"
+          ],
+          "claim_ref": "CL-df8b364b94c32c4c",
+          "source_refs": [
+            "SA-51732fcb7e6e95de"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-08/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/485154.html",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-8d4321d936320802",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6f7ac1823da81d2e",
+        "EN-1d79127e9d90e89b"
+      ]
+    }
+  ]
 }

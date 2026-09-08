@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T02:51:30.693Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T01:34:41.505Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -22,16 +22,19 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-b8206195828dc573"
+      "EV-b8206195828dc573",
+      "EV-8ce2dd0436377c09"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-17",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-09-08",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-8ce2dd0436377c09"
+      ],
       "deployments": [],
       "partnerships": [
         "EV-b8206195828dc573"
@@ -42,6 +45,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8ce2dd0436377c09",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-08",
+        "eventType": "financial_performance",
+        "eventTypeLabel": "财务表现",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "ChatGPT网页流量份额回升至55.5%，Gemini短暂反弹势头消退",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-60965168ce762e94"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-60965168ce762e94",
+          "EN-5d72436256ada538"
+        ]
+      },
       {
         "id": "EV-b8206195828dc573",
         "dataDate": "2026-08-21",

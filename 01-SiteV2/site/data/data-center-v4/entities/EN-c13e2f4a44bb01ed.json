@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T02:51:30.693Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T01:34:41.505Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -26,7 +26,8 @@
       "EV-5e2b5770eac85ca5",
       "EV-8fcb52bb6ec980af",
       "EV-6ebcbb2660ec7ad9",
-      "EV-770cea9de2337d0e"
+      "EV-770cea9de2337d0e",
+      "EV-da0ff54a5a474820"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -34,7 +35,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-27",
-    "lastSeen": "2026-09-06",
+    "lastSeen": "2026-09-08",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -50,10 +51,27 @@
         "EV-770cea9de2337d0e"
       ],
       "hardware": [],
-      "organizationPeople": [],
+      "organizationPeople": [
+        "EV-da0ff54a5a474820"
+      ],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-da0ff54a5a474820",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-08",
+        "eventType": "organization_people",
+        "eventTypeLabel": "组织与人员",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "三星SDS押注基于多维AI全栈的定制AX，将FDE扩展至约200家",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c13e2f4a44bb01ed"
+        ]
+      },
       {
         "id": "EV-eb282b4658bbdd7e",
         "dataDate": "2026-09-06",

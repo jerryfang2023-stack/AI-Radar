@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-08T01:34:41.505Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-7cac0ae8e1bc51bf",
+    "name": "UnifoLM-X2-1.0",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-66561ec28d8b1fec"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-66561ec28d8b1fec"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-66561ec28d8b1fec",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "宇树科技发布 UnifoLM-X2-1.0：世界模型实时驱动全自主人形机器人格斗",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-35826112ed957325"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-35826112ed957325",
+          "EN-ea3bd73e2b506e00",
+          "EN-7cac0ae8e1bc51bf"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-131941179f4c329b",
+      "snapshotKey": "131941179f4c329b",
+      "snapshotId": "HWS-07042d6804a65247",
+      "eventId": "EV-66561ec28d8b1fec",
+      "eventIds": [
+        "EV-66561ec28d8b1fec"
+      ],
+      "dataDate": "2026-09-08",
+      "date": "2026-09-08",
+      "title": "UnifoLM-X2-1.0",
+      "subject": "宇树科技",
+      "productNames": [
+        "UnifoLM-X2-1.0"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-f42f3df45fdb4914"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-08",
+          "hardware_fact_id": "HWF-f42f3df45fdb4914",
+          "fact_type": "product",
+          "observed_at": "2026-09-07T11:14:11.000Z",
+          "subject_entity_id": "EN-35826112ed957325",
+          "subject_name": "宇树科技",
+          "product_entity_ids": [
+            "EN-7cac0ae8e1bc51bf"
+          ],
+          "product_names": [
+            "UnifoLM-X2-1.0"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "业界代表包括 Meta 首席 AI 科学家 Yann LeCun 提出的 JEPA 系列架构（如 V-JEPA 2 已展示零样本机器人规划能力），以及多家厂商推出的世界模型底座。",
+          "event_refs": [
+            "EV-66561ec28d8b1fec"
+          ],
+          "claim_ref": "CL-0bb066fc7767cb92",
+          "source_refs": [
+            "SA-1fac3b91bddaad96"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-08/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/999/432.htm",
+      "entityIds": [
+        "EN-35826112ed957325",
+        "EN-ea3bd73e2b506e00",
+        "EN-7cac0ae8e1bc51bf"
+      ]
+    }
+  ]
+}

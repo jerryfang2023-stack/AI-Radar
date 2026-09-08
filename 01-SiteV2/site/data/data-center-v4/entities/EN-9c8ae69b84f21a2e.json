@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-07T02:51:30.693Z",
-    "latestDataDate": "2026-09-07",
-    "currentDate": "2026-09-07",
-    "eventCount": 2712,
+    "generatedAt": "2026-09-08T01:34:41.505Z",
+    "latestDataDate": "2026-09-08",
+    "currentDate": "2026-09-08",
+    "eventCount": 2733,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -24,9 +24,9 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-987cb2e5e20f79ce",
       "EV-a2f902b9707ffd02",
       "EV-93c2515d50157281",
+      "EV-987cb2e5e20f79ce",
       "EV-00514c4ffc2e3cd3",
       "EV-d3054a8a2b62a503",
       "EV-87432dbb99cd6033",
@@ -39,6 +39,8 @@
       "EV-619e33abf3f9bfbf",
       "EV-be2f6bfcad93c42f",
       "EV-c7b81290859057b0",
+      "EV-411dc97b66bd8251",
+      "EV-a251b011afec190d",
       "EV-eb3b431d4ce98ec5",
       "EV-a6dc310224542dcf",
       "EV-355ddfd4c6180ab0",
@@ -69,8 +71,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-use_case-content_creation",
       "TX-product_form-model",
+      "TX-use_case-content_creation",
       "TX-technology-agentic_execution",
       "TX-technology-long_context"
     ],
@@ -82,7 +84,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-05-18",
-    "lastSeen": "2026-09-05",
+    "lastSeen": "2026-09-08",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -92,8 +94,8 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-2f0f3200b9800877",
         "EV-987cb2e5e20f79ce",
+        "EV-2f0f3200b9800877",
         "EV-a2f902b9707ffd02",
         "EV-93c2515d50157281",
         "EV-00514c4ffc2e3cd3",
@@ -114,6 +116,8 @@
         "EV-c7b81290859057b0"
       ],
       "productsServices": [
+        "EV-411dc97b66bd8251",
+        "EV-a251b011afec190d",
         "EV-eb3b431d4ce98ec5",
         "EV-a6dc310224542dcf",
         "EV-355ddfd4c6180ab0",
@@ -148,6 +152,153 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-987cb2e5e20f79ce",
+        "dataDate": "2026-09-08",
+        "date": "2026-08-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b9425f45ae287895",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cb3e8dfb205545cf",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1996171c3015443f",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-369f32171e20e0af",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-450d1ad153ce50c9",
+            "fundingInsightId": "FI-45963c2baf94d978"
+          }
+        ],
+        "entityIds": [
+          "EN-6162efd3ae5eaf85",
+          "EN-9a970ad7900121db",
+          "EN-9c8ae69b84f21a2e",
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-411dc97b66bd8251",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "腾讯混元：Hy4 preview 模型升级，显著降低任务轮次及输入输出 Token 消耗",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9c8ae69b84f21a2e",
+          "EN-a50ef9352a2aac60"
+        ]
+      },
+      {
+        "id": "EV-a251b011afec190d",
+        "dataDate": "2026-09-08",
+        "date": "2026-09-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Arena 第 36 周 AI 大模型盲测榜：国产多模型扎堆入榜前端开发榜，阿里 wan3.0 冲进视频榜前三",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-572e31f55b6ac1b1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成",
+            "entityIds": [
+              "EN-572e31f55b6ac1b1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-572e31f55b6ac1b1",
+          "EN-047364b9be67f665",
+          "EN-9c8ae69b84f21a2e",
+          "EN-1d79127e9d90e89b"
+        ]
+      },
       {
         "id": "EV-2f0f3200b9800877",
         "dataDate": "2026-09-05",
@@ -249,96 +400,6 @@
           "EN-3a7bd3e2360a3d29",
           "EN-cd6362472aea60ef",
           "EN-9c8ae69b84f21a2e"
-        ]
-      },
-      {
-        "id": "EV-987cb2e5e20f79ce",
-        "dataDate": "2026-09-03",
-        "date": "2026-09-03",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-        "displayTags": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "physical_ai",
-            "name": "Physical AI",
-            "entityIds": [
-              "EN-9a970ad7900121db"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-b9425f45ae287895",
-            "fundingInsightId": "FI-45963c2baf94d978"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "robotic_system",
-            "name": "机器人系统",
-            "entityIds": [
-              "EN-9a970ad7900121db"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-cb3e8dfb205545cf",
-            "fundingInsightId": "FI-45963c2baf94d978"
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [
-              "EN-9a970ad7900121db"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-1996171c3015443f",
-            "fundingInsightId": "FI-45963c2baf94d978"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "embodied_ai",
-            "name": "具身智能",
-            "entityIds": [
-              "EN-9a970ad7900121db"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-9a970ad7900121db"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-369f32171e20e0af",
-            "fundingInsightId": "FI-45963c2baf94d978"
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "consumer",
-            "name": "个人用户",
-            "entityIds": [
-              "EN-9a970ad7900121db"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-450d1ad153ce50c9",
-            "fundingInsightId": "FI-45963c2baf94d978"
-          }
-        ],
-        "entityIds": [
-          "EN-6162efd3ae5eaf85",
-          "EN-9a970ad7900121db",
-          "EN-9c8ae69b84f21a2e",
-          "EN-047364b9be67f665"
         ]
       },
       {
@@ -1556,6 +1617,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-66561ec28d8b1fec",
         "EV-54451ee210a0d0d4",
         "EV-f26c01475e591f11",
         "EV-293d6feac5b8efab",
@@ -1636,6 +1698,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-sales",
         "TX-industry-manufacturing",
@@ -1645,7 +1708,6 @@
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-use_case-content_creation",
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
@@ -1675,7 +1737,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -1824,74 +1886,6 @@
   ],
   "taxonomyNodes": [
     {
-      "id": "TX-use_case-content_creation",
-      "name": "内容创作",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "content_creation",
-      "eventIds": [
-        "EV-2dff88f85e3bce86",
-        "EV-93c2515d50157281",
-        "EV-0ea2bbb7280091f2",
-        "EV-657176fd0dff6209",
-        "EV-1dba157815d84342",
-        "EV-bdcb22b1a53358f5",
-        "EV-933b02f5736a0366",
-        "EV-88a984b765bb54f1",
-        "EV-64fb6d791e19d10a",
-        "EV-ecc12e5ec883b7e7",
-        "EV-b5dd10300e34f2d3",
-        "EV-86ca5af11ee4d275",
-        "EV-4f7462a365561bb5",
-        "EV-fab81bddb815267b",
-        "EV-e7dcecaed5a0ee5b",
-        "EV-14a666fc27d73a80",
-        "EV-e3382d1c1d7db751",
-        "EV-affa49966121461c",
-        "EV-e12b17260d19c5ff",
-        "EV-535c2f4fb851332d",
-        "EV-7b0ff6657c0e0483",
-        "EV-1de38866b4b92754",
-        "EV-99e5df844a1bd670",
-        "EV-0933cc40b4fe5f21",
-        "EV-3bd84e75aa7f18b3",
-        "EV-631dce4dc135d01b"
-      ],
-      "entityIds": [
-        "EN-770ef1d2b6e24172",
-        "EN-9c8ae69b84f21a2e",
-        "EN-27d914a99e32f0f2",
-        "EN-336ab1deb42d6284",
-        "EN-50b2676afbe30c83",
-        "EN-67e8c106650aa683",
-        "EN-13a7f8fe8140462d",
-        "EN-847c00c904ccdb98",
-        "EN-b0532e1af75cc4ab",
-        "EN-7706c3c94d5f9b59",
-        "EN-e22521e7de65d819",
-        "EN-10905d25fc373f32",
-        "EN-858b4458c482f7d2",
-        "EN-ee00b93bf0631b3e",
-        "EN-f346eaca864441f9",
-        "EN-4abc3bd0f9e75c63",
-        "EN-ee1e31ffef7dbe64",
-        "EN-835fb9db44937917",
-        "EN-f30ad7677baf7ea2",
-        "EN-9b21c9bf3305c0d6",
-        "EN-ea3bd73e2b506e00",
-        "EN-e93e29634540a290",
-        "EN-afe83c198e329ef2",
-        "EN-e0bab6f6c58bfe4e",
-        "EN-8104520f6e69796d",
-        "EN-f8bebacc033880dd",
-        "EN-b2968d9ba72f4818"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-02-08",
-      "lastSeen": "2026-09-03"
-    },
-    {
       "id": "TX-product_form-model",
       "name": "模型",
       "nodeType": "product_form",
@@ -1983,6 +1977,9 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-6a5b724c821567f3",
+        "EV-a251b011afec190d",
+        "EV-d32e50951ff7f9a1",
         "EV-2d17a87d3863dcee",
         "EV-6a3286e2186e4774",
         "EV-39abdf174aa3aeec",
@@ -2226,6 +2223,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-572e31f55b6ac1b1",
+        "EN-1a6d6ea981e8688c",
         "EN-bae152c4560df38c",
         "EN-7d3194f79e645c42",
         "EN-c608c4787821de1b",
@@ -2345,7 +2344,75 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-08"
+    },
+    {
+      "id": "TX-use_case-content_creation",
+      "name": "内容创作",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "content_creation",
+      "eventIds": [
+        "EV-2dff88f85e3bce86",
+        "EV-93c2515d50157281",
+        "EV-0ea2bbb7280091f2",
+        "EV-657176fd0dff6209",
+        "EV-1dba157815d84342",
+        "EV-bdcb22b1a53358f5",
+        "EV-933b02f5736a0366",
+        "EV-88a984b765bb54f1",
+        "EV-64fb6d791e19d10a",
+        "EV-ecc12e5ec883b7e7",
+        "EV-b5dd10300e34f2d3",
+        "EV-86ca5af11ee4d275",
+        "EV-4f7462a365561bb5",
+        "EV-fab81bddb815267b",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-14a666fc27d73a80",
+        "EV-e3382d1c1d7db751",
+        "EV-affa49966121461c",
+        "EV-e12b17260d19c5ff",
+        "EV-535c2f4fb851332d",
+        "EV-7b0ff6657c0e0483",
+        "EV-1de38866b4b92754",
+        "EV-99e5df844a1bd670",
+        "EV-0933cc40b4fe5f21",
+        "EV-3bd84e75aa7f18b3",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-770ef1d2b6e24172",
+        "EN-9c8ae69b84f21a2e",
+        "EN-27d914a99e32f0f2",
+        "EN-336ab1deb42d6284",
+        "EN-50b2676afbe30c83",
+        "EN-67e8c106650aa683",
+        "EN-13a7f8fe8140462d",
+        "EN-847c00c904ccdb98",
+        "EN-b0532e1af75cc4ab",
+        "EN-7706c3c94d5f9b59",
+        "EN-e22521e7de65d819",
+        "EN-10905d25fc373f32",
+        "EN-858b4458c482f7d2",
+        "EN-ee00b93bf0631b3e",
+        "EN-f346eaca864441f9",
+        "EN-4abc3bd0f9e75c63",
+        "EN-ee1e31ffef7dbe64",
+        "EN-835fb9db44937917",
+        "EN-f30ad7677baf7ea2",
+        "EN-9b21c9bf3305c0d6",
+        "EN-ea3bd73e2b506e00",
+        "EN-e93e29634540a290",
+        "EN-afe83c198e329ef2",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-8104520f6e69796d",
+        "EN-f8bebacc033880dd",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-02-08",
+      "lastSeen": "2026-09-03"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -2560,6 +2627,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-0f6e4d81f3dbbb64",
         "EV-4ecc308baf04ff02",
         "EV-50e7de294816f918",
         "EV-8e0c25aebb1d4f5f",
