@@ -4,6 +4,38 @@ import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import test from "node:test";
+import { collectDataCenterRows } from "../sync-light-data-lake.mjs";
+
+test("entity materialization retains historical aliases without changing daily evidence or latest status", () => {
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-entity-alias-history-"));
+  const bundleRoot = path.join(fixtureRoot, "01-SiteV2/content/11-databases/data-center-v4");
+  const oldRow = { entity_id: "EN-google", canonical_name: "Google", entity_type: "organization_candidate", aliases: ["谷歌"], verification_status: "verified" };
+  const newRow = { ...oldRow, aliases: [], verification_status: "candidate" };
+  try {
+    for (const [date, row] of [["2026-09-07", oldRow], ["2026-09-08", newRow]]) {
+      const dir = path.join(bundleRoot, date);
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(path.join(dir, "entities.json"), JSON.stringify([row]));
+    }
+    const rows = collectDataCenterRows("entities", "entity_id", fixtureRoot);
+    assert.equal(rows.length, 1);
+    assert.deepEqual(rows[0].aliases, ["谷歌"]);
+    assert.equal(rows[0].verification_status, "candidate");
+    assert.equal(rows[0].data_date, "2026-09-08");
+    const newest = path.join(bundleRoot, "2026-09-08/entities.json");
+    assert.deepEqual(JSON.parse(fs.readFileSync(newest, "utf8")), [newRow]);
+    for (const correction of [
+      { verification_status: "quarantined" },
+      { entity_type: "product_candidate" },
+      { canonical_name: "Different identity" },
+    ]) {
+      fs.writeFileSync(newest, JSON.stringify([{ ...newRow, ...correction }]));
+      assert.deepEqual(collectDataCenterRows("entities", "entity_id", fixtureRoot)[0].aliases, []);
+    }
+  } finally {
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
 
 const root = process.cwd();
 const assertRunner = path.join(root, "agent-workflow", "tools", "assert-data-lake-v4.mjs");

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-08T01:34:41.505Z",
+    "generatedAt": "2026-09-08T03:58:06.527Z",
     "latestDataDate": "2026-09-08",
     "currentDate": "2026-09-08",
     "eventCount": 2733,
@@ -444,7 +444,6 @@
     "relatedEntityIds": [
       "EN-240389f4b730bad4",
       "EN-9f15bb7e29e191eb",
-      "EN-e65e0f2695fa259d",
       "EN-5a4c2be958c0af72",
       "EN-163fa867e7ef6ee6",
       "EN-fa12a0c13e906f43",
@@ -459,6 +458,7 @@
       "EN-968e2d5b08687bf4",
       "EN-2c063f604e634100",
       "EN-d0a0acb9a5ef0560",
+      "EN-e65e0f2695fa259d",
       "EN-e4ffb7bd879b89da",
       "EN-c8185a1a8a6595ad",
       "EN-96eebba49dbbf422",
@@ -472,7 +472,6 @@
     "relationIds": [
       "REL2-02bdd133e9353ff7",
       "REL2-778989c8b3d8bcda",
-      "REL2-5a2b9cfd6f0b1ca6",
       "REL2-6c33e8063218608e",
       "REL2-407abfa4e497ae3f",
       "REL2-7b714ad4b1e6a6da",
@@ -12041,29 +12040,6 @@
       "lastSeen": "2026-08-25"
     },
     {
-      "id": "EN-e65e0f2695fa259d",
-      "name": "Claude Cowork",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-875b31b96ff689df",
-        "EV-d60e53c8a70c656e",
-        "EV-2740cdc5243d5c47"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "firstSeen": "2026-06-25",
-      "lastSeen": "2026-08-13"
-    },
-    {
       "id": "EN-5a4c2be958c0af72",
       "name": "Cowork",
       "entityType": "product_candidate",
@@ -13323,6 +13299,29 @@
       "lastSeen": "2026-07-22"
     },
     {
+      "id": "EN-e65e0f2695fa259d",
+      "name": "Claude Cowork",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-875b31b96ff689df",
+        "EV-d60e53c8a70c656e",
+        "EV-2740cdc5243d5c47"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "firstSeen": "2026-06-25",
+      "lastSeen": "2026-08-13"
+    },
+    {
       "id": "EN-e4ffb7bd879b89da",
       "name": "PwC",
       "entityType": "organization_candidate",
@@ -13661,24 +13660,6 @@
         "SA-85f3980a1512b434"
       ],
       "data_date": "2026-08-25",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-5a2b9cfd6f0b1ca6",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-c70eca6b0f88f44d",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-e65e0f2695fa259d",
-      "object_type": "entity",
-      "event_id": "EV-875b31b96ff689df",
-      "claim_refs": [
-        "CL-f441b70d1bca16ef"
-      ],
-      "source_refs": [
-        "SA-2bc62681d0b05bdb"
-      ],
-      "data_date": "2026-08-13",
       "status": "verified"
     },
     {

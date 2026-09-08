@@ -133,8 +133,8 @@ function collectEntityRegistryRows() {
   return collectEntityHistoryRows("entityProfiles").map(({ timeline, viewpoints, groupedEventIds, relationIds, ...entity }) => entity);
 }
 
-function collectDataCenterRows(fileName, idKey = "") {
-  const dataCenterRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
+export function collectDataCenterRows(fileName, idKey = "", projectRoot = root) {
+  const dataCenterRoot = path.join(projectRoot, "01-SiteV2/content/11-databases/data-center-v4");
   if (!exists(dataCenterRoot)) return [];
   const rows = [];
   for (const dateEntry of fs.readdirSync(dataCenterRoot, { withFileTypes: true }).filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name)).sort((a, b) => a.name.localeCompare(b.name))) {
@@ -146,7 +146,20 @@ function collectDataCenterRows(fileName, idKey = "") {
   }
   if (!idKey) return rows;
   const deduped = new Map();
-  for (const row of rows) deduped.set(safeString(row[idKey]) || JSON.stringify(row), row);
+  for (const row of rows) {
+    const rowKey = safeString(row[idKey]) || JSON.stringify(row);
+    const previous = deduped.get(rowKey);
+    // Daily absence is not an alias withdrawal. Retain accepted history for
+    // the same identity; explicit catalog corrections still apply downstream.
+    if (fileName === "entities" && previous
+      && previous.canonical_name === row.canonical_name
+      && previous.entity_type === row.entity_type
+      && !["quarantined", "merged"].includes(row.verification_status)
+      && !["quarantined", "merged"].includes(previous.verification_status)) {
+      row.aliases = [...new Set([...(previous.aliases || []), ...(row.aliases || [])])];
+    }
+    deduped.set(rowKey, row);
+  }
   return [...deduped.values()];
 }
 
@@ -314,4 +327,4 @@ function main() {
   }, null, 2));
 }
 
-main();
+if (path.resolve(process.argv[1] || "") === __filename) main();
