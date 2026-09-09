@@ -1,19 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-09T04:07:48.386Z",
+  "generated_at": "2026-09-09T04:34:39.102Z",
   "date": "2026-09-09",
-  "action": "Protect Indian title amounts during translation",
+  "action": "Funding Insights deterministic recovery",
   "action_status": "unregistered",
-  "record_level": "required",
+  "record_level": "full",
   "trigger": "manual",
-  "status": "success",
-  "summary": "Restored accepted 2026-09-09 source run 34309251252 after PR 831; diagnosed actual tenfold model errors, added exact-span monetary protection and qualified-INR validation with fail-closed tests.",
+  "status": "validated",
+  "summary": "Reused three research cards from run 34310028499; repaired spaced-round amount parsing, qualified valuation rejection and company-bound latest financing history; merged Mistral naming variants in the application only. Zero new research calls in recovery.",
   "contexts": [],
-  "changed_files": [],
+  "changed_files": [
+    "agent-workflow/tools/funding-insight-v1-utils.mjs;agent-workflow/tools/generate-funding-insights-deepseek.mjs;agent-workflow/tools/tests/funding-insight-v1.test.mjs;company-identity-decisions.json"
+  ],
   "outputs": [],
-  "checks": [],
+  "checks": [
+    "funding tests 101/101;daily and all-card funding gates;valuation-only DeepSeek excluded"
+  ],
   "issues": [],
-  "risks": [],
+  "risks": [
+    "Browser control unavailable;primary concurrent edits preserved"
+  ],
   "lessons": [],
   "reusable_rules": [],
   "retired_flags": [],

@@ -1,6 +1,6 @@
 {
   "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-  "generated_at": "2026-09-08T01:34:24.842Z",
+  "generated_at": "2026-09-09T04:30:28.567Z",
   "entries": {
     "funding_card|cards[0].metrics[0].label|deb8c07b5be9dbc7e437cff0b0ce9c1acc44eb7c12ad444e80a12c29bba9b9f6": {
       "entity_type": "funding_card",
@@ -8436,6 +8436,90 @@
       "provider": "deepseek",
       "model": "deepseek-v4-flash",
       "translated_at": "2026-09-07T02:37:45.320Z",
+      "status": "translated"
+    },
+    "funding_card|cards[1].products[0].features[1]|ca90f3a8e74ad3a2d437d4aebfaa20849cdf2f5ff96a70960284dc70421e7c3b": {
+      "entity_type": "funding_card",
+      "field_name": "features",
+      "field_path": "cards[1].products[0].features[1]",
+      "source_text": "SQL生成",
+      "source_hash": "ca90f3a8e74ad3a2d437d4aebfaa20849cdf2f5ff96a70960284dc70421e7c3b",
+      "text": "SQL生成",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-09-09T04:30:28.567Z",
+      "status": "translated"
+    },
+    "funding_card|cards[1].products[3].features[1]|3a08702da89cb33f65159fdd7306d0cc1af2aa96c0218399e231ccb55cc48e4a": {
+      "entity_type": "funding_card",
+      "field_name": "features",
+      "field_path": "cards[1].products[3].features[1]",
+      "source_text": "企业API",
+      "source_hash": "3a08702da89cb33f65159fdd7306d0cc1af2aa96c0218399e231ccb55cc48e4a",
+      "text": "企业API",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-09-09T04:30:28.567Z",
+      "status": "translated"
+    },
+    "funding_card|cards[1].customers[0].industry|78aba2643d0c02c8e0217ec2583264bdb78816ea6580eee81eebe9aa2ea64039": {
+      "entity_type": "funding_card",
+      "field_name": "industry",
+      "field_path": "cards[1].customers[0].industry",
+      "source_text": "technology_software",
+      "source_hash": "78aba2643d0c02c8e0217ec2583264bdb78816ea6580eee81eebe9aa2ea64039",
+      "text": "技术软件",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-09-09T04:30:28.567Z",
+      "status": "translated"
+    },
+    "funding_card|cards[1].customers[0].use_case|296b239f6b557be3b4a44d547ede67e50d5abc3af7cbb01255c4f6f6f81f9263": {
+      "entity_type": "funding_card",
+      "field_name": "use_case",
+      "field_path": "cards[1].customers[0].use_case",
+      "source_text": "文本到SQL生成，提升Cortex Analyst的准确率",
+      "source_hash": "296b239f6b557be3b4a44d547ede67e50d5abc3af7cbb01255c4f6f6f81f9263",
+      "text": "文本到SQL生成，提升Cortex Analyst的准确率",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-09-09T04:30:28.567Z",
+      "status": "translated"
+    },
+    "funding_card|cards[1].metrics[2].label|a47ffe16d692755077f9220be3c9f8a442044be8e209375b522c7b690982db23": {
+      "entity_type": "funding_card",
+      "field_name": "label",
+      "field_path": "cards[1].metrics[2].label",
+      "source_text": "Snowflake Cortex Analyst 准确率提升",
+      "source_hash": "a47ffe16d692755077f9220be3c9f8a442044be8e209375b522c7b690982db23",
+      "text": "Snowflake Cortex Analyst 准确率提升",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-09-09T04:30:28.567Z",
+      "status": "translated"
+    },
+    "funding_card|cards[1].metrics[3].label|e561bdc594a1779fe6245b505167fc192746ccc237ff23aaaa1b9279deb75a76": {
+      "entity_type": "funding_card",
+      "field_name": "label",
+      "field_path": "cards[1].metrics[3].label",
+      "source_text": "Capgemini 开发者采用率",
+      "source_hash": "e561bdc594a1779fe6245b505167fc192746ccc237ff23aaaa1b9279deb75a76",
+      "text": "Capgemini 开发者采用率",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-09-09T04:30:28.567Z",
+      "status": "translated"
+    },
+    "funding_card|cards[1].metrics[4].label|bd61bea6dd875c9b6643d8397fed3db87bcbe8048c67895db07998fe67d406cb": {
+      "entity_type": "funding_card",
+      "field_name": "label",
+      "field_path": "cards[1].metrics[4].label",
+      "source_text": "Capgemini 代码补全准确率",
+      "source_hash": "bd61bea6dd875c9b6643d8397fed3db87bcbe8048c67895db07998fe67d406cb",
+      "text": "Capgemini 代码补全准确率",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "translated_at": "2026-09-09T04:30:28.567Z",
       "status": "translated"
     }
   }

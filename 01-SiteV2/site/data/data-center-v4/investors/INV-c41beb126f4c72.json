@@ -20,8 +20,8 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -29,12 +29,15 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2025-09-09",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "lead": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "series_c"
+      "series_c",
+      "series_d"
     ],
     "portfolio_companies": [
       {
@@ -44,6 +47,90 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5de34e55f6e2f87f",
+        "funding_insight_id": "FI-e0e22d70a91e704e",
+        "event_ids": [
+          "EV-dccfca59b3e58638",
+          "EV-5ea74d357e73366b",
+          "EV-dc442b91a69fcc5a"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "€3 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "30 亿欧元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4d11ed62a144a3f4",
+            "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+            "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+            "source_content_hash": "714c413ab36c1848",
+            "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
+            "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-615c550e4762bce1",
+        "funding_insight_id": "FI-e0e22d70a91e704e",
+        "event_ids": [
+          "EV-dccfca59b3e58638",
+          "EV-5ea74d357e73366b",
+          "EV-dc442b91a69fcc5a"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "€3 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "30 亿欧元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "C轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4d11ed62a144a3f4",
+            "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+            "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+            "source_content_hash": "714c413ab36c1848",
+            "quote": "With a Series C led by ASML and a Series D led by Samsung Electronics",
+            "quote_hash": "01c0f4626c3a9eff02925b0f411a96af0791c692f90e103ca04ffe1c75638d64"
+          }
+        ]
+      },
       {
         "activity_id": "IA-986e9f7243698584",
         "funding_insight_id": "FI-1cf34218733257fd",
@@ -94,6 +181,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4d11ed62a144a3f4",
+        "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+        "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+        "source_content_hash": "714c413ab36c1848",
+        "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
+        "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+      },
+      {
+        "source_id": "FISRC-4d11ed62a144a3f4",
+        "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+        "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+        "source_content_hash": "714c413ab36c1848",
+        "quote": "With a Series C led by ASML and a Series D led by Samsung Electronics",
+        "quote_hash": "01c0f4626c3a9eff02925b0f411a96af0791c692f90e103ca04ffe1c75638d64"
+      },
       {
         "source_id": "FISRC-69c99e24132a43e4",
         "source_url": "https://ae.marketscreener.com/news/asml-becomes-mistral-ai-s-top-shareholder-after-leading-latest-funding-round-sources-say-ce7d59ded981ff23",

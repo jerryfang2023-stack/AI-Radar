@@ -20,22 +20,115 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2025-09-09",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c04bd5ebd10ab696",
+        "canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "name": "Mistral AI"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-f78e7703981cca09",
+        "funding_insight_id": "FI-e0e22d70a91e704e",
+        "event_ids": [
+          "EV-dccfca59b3e58638",
+          "EV-5ea74d357e73366b",
+          "EV-dc442b91a69fcc5a"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "€3 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "30 亿欧元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4d11ed62a144a3f4",
+            "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+            "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+            "source_content_hash": "714c413ab36c1848",
+            "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
+            "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-33a5cbcf2d44a190",
+        "funding_insight_id": "FI-e0e22d70a91e704e",
+        "event_ids": [
+          "EV-dccfca59b3e58638",
+          "EV-5ea74d357e73366b",
+          "EV-dc442b91a69fcc5a"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "€3 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "30 亿欧元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-27e01480407caae0",
+            "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
+            "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
+            "source_content_hash": "d6a4b74f9e758dc8",
+            "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
+            "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e8c86fd0a7f589d3",
         "funding_insight_id": "FI-1cf34218733257fd",
@@ -78,6 +171,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4d11ed62a144a3f4",
+        "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+        "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+        "source_content_hash": "714c413ab36c1848",
+        "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
+        "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+      },
+      {
+        "source_id": "FISRC-27e01480407caae0",
+        "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
+        "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
+        "source_content_hash": "d6a4b74f9e758dc8",
+        "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
+        "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
+      },
       {
         "source_id": "FISRC-ff92324bbd437a73",
         "source_url": "https://notice.co/c/mistral-ai",

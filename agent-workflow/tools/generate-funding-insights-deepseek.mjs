@@ -658,17 +658,30 @@ function linkObject(kind, relationType, item, resolver) {
   };
 }
 
-function fundingHistory(companyId) {
-  const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
+export function fundingHistory(companyId, projectRoot = root) {
+  const dataRoot = path.join(projectRoot, "01-SiteV2/content/11-databases/data-center-v4");
   const seen = new Set();
   const history = [];
-  for (const entry of fs.readdirSync(dataRoot, { withFileTypes: true })) {
+  for (const entry of fs.readdirSync(dataRoot, { withFileTypes: true }).sort((a, b) => b.name.localeCompare(a.name))) {
     if (!entry.isDirectory() || !/^\d{4}-\d{2}-\d{2}$/u.test(entry.name)) continue;
     const events = readJson(path.join(dataRoot, entry.name, "canonical-events.json"), []);
     const claims = readJson(path.join(dataRoot, entry.name, "claims.json"), []);
+    const entities = readJson(path.join(dataRoot, entry.name, "entities.json"), []);
     for (const event of events) {
-      if (event.event_type !== "funding" || !(event.entities || []).includes(companyId) || seen.has(event.event_id)) continue;
+      if (seen.has(event.event_id)) continue;
       seen.add(event.event_id);
+      if (event.event_type !== "funding" || !(event.entities || []).includes(companyId)) continue;
+      // Mentioned investors, comparisons and uncompleted rounds are not this
+      // company's financing history. Use the same subject/amount admission.
+      const subject = subjectCompanyForEvent(event, entities, {}, claims);
+      const entity = entities.find((item) => item.entity_id === companyId);
+      const nameKey = (name) => clean(name).toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+      const names = new Set([entity?.canonical_name, ...(entity?.aliases || [])].map(nameKey).filter(Boolean));
+      const subjectBound = claims.some((claim) => (event.claim_refs || []).includes(claim.claim_id)
+        && claim.claim_type === "funding" && claim.verification_status === "accepted"
+        && names.has(nameKey(claim.subject)));
+      if (!isEligibleFundingInsightEvent(event, claims) || subject?.entity_id !== companyId
+        || !subjectBound || !names.has(nameKey(subject.canonical_name))) continue;
       history.push({
         event_id: event.event_id,
         date: String(event.event_time || event.disclosed_at || "").slice(0, 10),

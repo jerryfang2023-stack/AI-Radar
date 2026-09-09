@@ -1,10 +1,29 @@
 {
   "meta": {
     "schema_version": "FUNDING-COMPANY-IDENTITY-DECISION-V1.0",
-    "updated_at": "2026-08-08T16:00:00+08:00",
+    "updated_at": "2026-09-09T12:35:00+08:00",
     "rule": "Funding Insights may merge public cards only after an explicit identity review. The decision changes the application projection, preserves every source event, and does not mutate Data Center V4 canonical facts."
   },
   "decisions": [
+    {
+      "decision_id": "FICID-MISTRAL-NAME",
+      "entity_id": "EN-920510199770f4d6",
+      "application_entity_id": "EN-c04bd5ebd10ab696",
+      "current": { "name": "Mistral", "catalog_type": "company" },
+      "match_names": ["Mistral"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "Mistral AI", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-09-09",
+      "evidence": {
+        "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+        "quote": "Mistral today announced that it has raised €3 billion",
+        "corroborating_source_url": "https://www.ithome.com/0/999/657.htm",
+        "corroborating_quote": "Mistral AI 完成 30 亿欧元 D 轮融资"
+      },
+      "rationale": "两种名称均指向 mistral.ai；已捕获的官方公告与中文原文披露同日同额 D 轮融资。仅统一融资应用身份并保留各来源事件，不修改规范实体，也不影响 NP Company 的独立身份决定。"
+    },
     {
       "entity_id": "EN-b0a914ead94a88da",
       "current": {

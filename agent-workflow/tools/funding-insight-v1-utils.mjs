@@ -222,12 +222,13 @@ function fundingAmountMentions(value = "") {
   return [...text.matchAll(pattern)].map((match) => {
     const before = text.slice(Math.max(0, match.index - 56), match.index);
     const after = text.slice(match.index + match[0].length, match.index + match[0].length + 56);
-    const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?|valued\s+at|估值(?:达到|达|为|约|超过|高达|逾|超|推高至|提升至|升至|增至)?)\s*$/iu.test(before)
+    const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?(?:\s+(?:above|over|more\s+than|at\s+least|approximately|about))?|valued\s+at|估值(?:达到|达|为|约|超过|高达|逾|超|推高至|提升至|升至|增至)?)\s*$/iu.test(before)
       || /^\s*(?:pre[-\s]?money|post[-\s]?money)?\s*valuation\b/iu.test(after)
       || /^\s*估值/iu.test(after);
     const round = !valuation && (
-      /(?:融资|筹集|募资|raises?|raised|raising|secured|funding\s+round|round\s+of)[^。！？.!?]{0,48}$/iu.test(before)
-      || /^\s*(?:(?:的\s*)?(?:(?:Pre[-\s]?)?[A-Z](?:\+)?轮\s*)?融资|(?:funding\s+round|round)\b)/iu.test(after)
+      // A financing verb in an earlier clause must not own a later valuation.
+      /(?:融资|筹集|募资|raises?|raised|raising|secured|funding\s+round|round\s+of)[^，,：:；;。！？.!?]{0,48}$/iu.test(before)
+      || /^\s*(?:(?:的\s*)?(?:(?:Pre[-\s]?)?[A-Z](?:\+)?\s*轮\s*)?融资|(?:funding\s+round|round)\b)/iu.test(after)
     );
     return { raw: clean(match[0]), valuation, round };
   });

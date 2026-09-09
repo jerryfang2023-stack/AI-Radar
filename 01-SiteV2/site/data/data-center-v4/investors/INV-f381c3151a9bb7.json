@@ -20,7 +20,7 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 11,
     "market_regions": [
@@ -29,11 +29,11 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-08-11",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 7,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
@@ -101,6 +101,48 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7c314cde69f709fb",
+        "funding_insight_id": "FI-e0e22d70a91e704e",
+        "event_ids": [
+          "EV-dccfca59b3e58638",
+          "EV-5ea74d357e73366b",
+          "EV-dc442b91a69fcc5a"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "€3 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "30 亿欧元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4d11ed62a144a3f4",
+            "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+            "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+            "source_content_hash": "714c413ab36c1848",
+            "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
+            "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f4356ca54d284e17",
         "funding_insight_id": "FI-d1444f877a3e580e",
@@ -631,6 +673,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4d11ed62a144a3f4",
+        "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+        "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+        "source_content_hash": "714c413ab36c1848",
+        "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
+        "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+      },
       {
         "source_id": "FISRC-0deb7f666bec5423",
         "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
