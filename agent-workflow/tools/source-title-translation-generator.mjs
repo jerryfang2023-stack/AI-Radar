@@ -111,6 +111,9 @@ const moneyUnitFactors = new Map([
   ["million", 1e6],
   ["mn", 1e6],
   ["m", 1e6],
+  ["crore", 1e7],
+  ["crores", 1e7],
+  ["cr", 1e7],
   ["k", 1e3],
   ["万亿", 1e12],
   ["亿", 1e8],
@@ -131,7 +134,7 @@ function moneyCurrency(value = "") {
 
 export function extractMoneyAmounts(value = "") {
   const text = String(value || "");
-  const pattern = /(?:(?:US\$|\$|€|£|¥|₹|USD|EUR|GBP|RMB|CNY|JPY|INR)\s*)?(\d[\d,]*(?:\.\d+)?)(?:\s*[-‑–—]?\s*(trillion|billion|million|bn|mn|m|b|k|万亿|亿|万|千))?(?![A-Za-z])(?:\s*[-‑–—]?\s*(?:US\s*)?(?:dollars?|euros?|pounds?|rupees?|yuan|yen|美元|美金|欧元|英镑|卢比|人民币|日元|元))?/giu;
+  const pattern = /(?:(?:US\$|\$|€|£|¥|₹|USD|EUR|GBP|RMB|CNY|JPY|INR)\s*)?(\d[\d,]*(?:\.\d+)?)(?:\s*[-‑–—]?\s*(trillion|billion|million|crores?|bn|mn|cr|m|b|k|万亿|亿|万|千))?(?![A-Za-z])(?:\s*[-‑–—]?\s*(?:US\s*)?(?:dollars?|euros?|pounds?|rupees?|yuan|yen|美元|美金|欧元|英镑|卢比|人民币|日元|元))?/giu;
   const results = [];
   for (const match of text.matchAll(pattern)) {
     const raw = match[0];
