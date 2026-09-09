@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-07T02:42:22.326Z",
+    "generated_at": "2026-09-09T04:30:52.149Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 307,
-    "input_hash": "9ed740b7e72abae1",
+    "decision_count": 310,
+    "input_hash": "a52d269e6329ea84",
     "override_count": 17,
     "needs_review_count": 9,
     "low_confidence_count": 16
@@ -6073,6 +6073,72 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "证据显示Atira自动化工业报价与销售工程流程，属于跨行业销售职能的企业应用，而非仅限单一行业数据或物理AI。"
+    },
+    {
+      "event_id": "EV-dccfca59b3e58638",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "content_creation",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Mistral 提供开源权重模型、AI Cloud 算力及 Vibe 平台，核心是供其他 AI 产品构建者使用的模型与基础设施，符合 infrastructure_compute 下的 development_deployment/models。"
+    },
+    {
+      "event_id": "EV-5ea74d357e73366b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "content_creation",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Mistral AI 以开放权重模型（Mistral Large、Codestral）和 AI Cloud 为核心，客户为 Snowflake、Capgemini 等构建者，属于基础设施计算中的模型开发部署。"
+    },
+    {
+      "event_id": "EV-dc442b91a69fcc5a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "manufacturing",
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Mistral AI builds open-weight large language models, the Le Chat assistant, and enterprise APIs. The core offering is foundation models (Mistral Large, Codestral) and model APIs, which fit the infrastructure_compute > development_deployment > models hierarchy. Product form is model (with model_api_service also relevant, but model is the primary classification). Use cases include software development (Codestral for code generation), knowledge search, and data analysis (Snowflake SQL generation). Industries include financial services (HSBC), manufacturing (BMW, Airbus), and professional services. Target users are developers and business users."
     }
   ]
 }

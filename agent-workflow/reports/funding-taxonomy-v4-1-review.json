@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-05T04:36:39.553Z",
+    "generated_at": "2026-09-09T04:30:52.149Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 305,
-    "input_hash": "c8b5f311b31370a7",
+    "decision_count": 310,
+    "input_hash": "a52d269e6329ea84",
     "override_count": 17,
-    "needs_review_count": 8,
-    "low_confidence_count": 15
+    "needs_review_count": 9,
+    "low_confidence_count": 16
   },
   "decisions": [
     {
@@ -6034,6 +6034,111 @@
       "confidence": 0.78,
       "needs_review": true,
       "rationale": "Wonderful AI OS协调智能体、工作流和企业上下文，属于跨行业企业工作流平台，而非单一行业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-2f0f3200b9800877",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "rationale": "证据显示产品为智能眼镜，提供通知、翻译和导航提示，未涉及物理世界自主决策或机器人控制，故不属Physical AI；也未提供AI基础设施，故不属infrastructure_compute；产品面向通用用户而非单一行业工作流，因此归入enterprise_applications。但证据不足以明确其核心企业功能，需人工复核。"
+    },
+    {
+      "event_id": "EV-bce46f2e5cc68d5d",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "sales",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "sales",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据显示Atira自动化工业报价与销售工程流程，属于跨行业销售职能的企业应用，而非仅限单一行业数据或物理AI。"
+    },
+    {
+      "event_id": "EV-dccfca59b3e58638",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "content_creation",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Mistral 提供开源权重模型、AI Cloud 算力及 Vibe 平台，核心是供其他 AI 产品构建者使用的模型与基础设施，符合 infrastructure_compute 下的 development_deployment/models。"
+    },
+    {
+      "event_id": "EV-5ea74d357e73366b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "content_creation",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Mistral AI 以开放权重模型（Mistral Large、Codestral）和 AI Cloud 为核心，客户为 Snowflake、Capgemini 等构建者，属于基础设施计算中的模型开发部署。"
+    },
+    {
+      "event_id": "EV-dc442b91a69fcc5a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "manufacturing",
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Mistral AI builds open-weight large language models, the Le Chat assistant, and enterprise APIs. The core offering is foundation models (Mistral Large, Codestral) and model APIs, which fit the infrastructure_compute > development_deployment > models hierarchy. Product form is model (with model_api_service also relevant, but model is the primary classification). Use cases include software development (Codestral for code generation), knowledge search, and data analysis (Snowflake SQL generation). Industries include financial services (HSBC), manufacturing (BMW, Airbus), and professional services. Target users are developers and business users."
     }
   ],
   "inputs": [
@@ -8200,6 +8305,33 @@
       }
     },
     {
+      "event_id": "EV-bce46f2e5cc68d5d",
+      "funding_insight_id": "FI-8ed4fdb401415a2e",
+      "company_name": "Atira",
+      "company_full_name": "Atira",
+      "website": "https://atira.ai",
+      "current_sector": "工业销售工程AI自动化",
+      "company_evidence_quotes": [
+        "Atira Raises $17.5M for Industrial Sales AI # Accel Backs Atira to Automate Industrial Sales Engineering Accel is backing Munich’s Atira with $15 million to automate industrial quoting, a Celonis-style bet already live at ABB and Chiron. Publish"
+      ],
+      "products": [
+        {
+          "name": "Atira多智能体AI平台",
+          "evidence_quotes": [
+            "Multi-Agent Orchestration for Industrial Sales Processes"
+          ]
+        }
+      ],
+      "customer_names": [
+        "Rema Tip Top",
+        "Schmitz Feuerwehrtechnik"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-dcbe916c6138e5cb",
       "funding_insight_id": "FI-594ff98dadcfaaf9",
       "company_name": "Auger",
@@ -9445,6 +9577,42 @@
       "current_classification": {
         "product_form_id": "chip_accelerator",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-2f0f3200b9800877",
+      "funding_insight_id": "FI-20a08a4c9398fa77",
+      "company_name": "Even Realities Technology",
+      "company_full_name": "Even Realities Technology",
+      "website": "",
+      "current_sector": "智能眼镜/AI可穿戴设备",
+      "company_evidence_quotes": [
+        "由前苹果工程师创立的中国智能眼镜制造商Even Realities Technology",
+        "Even Realities, the China-based smart glasses company"
+      ],
+      "products": [
+        {
+          "name": "Even G2",
+          "evidence_quotes": [
+            "Even Realities builds frames that incorporate binocular, monochrome green displays, critically omitting any sort of camera.",
+            "Instead, a micro-LED display in the lens shows notifications, translations, and navigation prompts. Users control the glasses with a companion ring called the Even R1, which works as a touchpad."
+          ]
+        },
+        {
+          "name": "Even R1",
+          "evidence_quotes": [
+            "incorporating user input through its health-tracking Even R1 smart ring"
+          ]
+        }
+      ],
+      "customer_names": [
+        "美国用户群",
+        "日本用户群",
+        "企业高管用户"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_device",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -11392,6 +11560,89 @@
       }
     },
     {
+      "event_id": "EV-dccfca59b3e58638",
+      "funding_insight_id": "FI-497ec4150acfeb12",
+      "company_name": "Mistral",
+      "company_full_name": "Mistral",
+      "website": "https://mistral.ai",
+      "current_sector": "人工智能基础设施与开源权重模型",
+      "company_evidence_quotes": [
+        "Mistral today announced that it has raised €3 billion in a Series D funding round at a post-money valuation of more than €21 billion",
+        "Mistral is a global Al lab building state-of-the-art open-weight models, products and infrastructure that enable enterprises, public institutions and advanced industries to truly own, customize, and control their Al."
+      ],
+      "products": [
+        {
+          "name": "Mistral开源权重模型",
+          "evidence_quotes": [
+            "Mistral, which develops \"open\" models which allow its more than 125 customers to download and customise models on their own servers"
+          ]
+        },
+        {
+          "name": "Vibe",
+          "evidence_quotes": [
+            "At the AI Now Summit 2026 in May, the company announced it would rebrand its chatbot, Le Chat, as Vibe, a unified agent platform that combines workflow automation and coding capabilities."
+          ]
+        },
+        {
+          "name": "AI Cloud",
+          "evidence_quotes": [
+            "AI Cloud Frontier-scale infrastructure for training and inference.",
+            "It is also renting out AI computing capacity from its data centres."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-5ea74d357e73366b",
+      "funding_insight_id": "FI-2389bc258b75f066",
+      "company_name": "Mistral AI",
+      "company_full_name": "Mistral AI",
+      "website": "https://mistral.ai",
+      "current_sector": "基础模型与生成式AI基础设施",
+      "company_evidence_quotes": [
+        "法国人工智能初创企业 Mistral AI 当地时间今日宣布完成 D 轮融资",
+        "该企业凭借开放权重模型、算力基础设施、人工智能产品提供了全栈解决方案，同时保障客户无需依赖被单一供应商。"
+      ],
+      "products": [
+        {
+          "name": "Mistral Large",
+          "evidence_quotes": [
+            "Mistral Large , for reasoning, language generation, and code generation.",
+            "Mistral Large was critical in providing both the SQL knowledge and conversational quality."
+          ]
+        },
+        {
+          "name": "Codestral",
+          "evidence_quotes": [
+            "Codestral , an open-weight model explicitly tailored for code generation tasks",
+            "Leveraging Mistral’s Codestral has been a game changer in the adoption of private software engineering assistants for our client projects in regulated sectors."
+          ]
+        },
+        {
+          "name": "AI Cloud",
+          "evidence_quotes": [
+            "AI Cloud Frontier-scale infrastructure for training and inference."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Snowflake",
+        "Capgemini",
+        "Stellantis",
+        "Cisco",
+        "BNP Paribas"
+      ],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-85506f9f86779a6d",
       "funding_insight_id": "FI-5e7a360baa1c7aca",
       "company_name": "Mistral AI",
@@ -11426,6 +11677,48 @@
         "TotalEnergies",
         "HSBC",
         "France Travail"
+      ],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-dc442b91a69fcc5a",
+      "funding_insight_id": "FI-9b0eb322f196a88d",
+      "company_name": "Mistral AI",
+      "company_full_name": "Mistral AI",
+      "website": "https://mistral.ai",
+      "current_sector": "AI基础模型与主权AI基础设施",
+      "company_evidence_quotes": [
+        "French AI lab Mistral AI on Tuesday said it has raised €3 billion (about $3.58 billion) at a post-money valuation of more than €21 billion (about $24.39 billion)"
+      ],
+      "products": [
+        {
+          "name": "Le Chat",
+          "evidence_quotes": [
+            "Mistral AI builds open-weight large language models, the Le Chat assistant and enterprise APIs"
+          ]
+        },
+        {
+          "name": "Mistral Large",
+          "evidence_quotes": [
+            "Snowflake uses Mistral Large and a finetuned Codestral for the initial SQL generation and uses Codestral for synthesizing the final SQL response."
+          ]
+        },
+        {
+          "name": "Codestral",
+          "evidence_quotes": [
+            "Codestral , an open-weight model explicitly tailored for code generation tasks"
+          ]
+        }
+      ],
+      "customer_names": [
+        "Airbus",
+        "ASML",
+        "HSBC",
+        "Snowflake",
+        "BMW"
       ],
       "current_classification": {
         "product_form_id": "model",

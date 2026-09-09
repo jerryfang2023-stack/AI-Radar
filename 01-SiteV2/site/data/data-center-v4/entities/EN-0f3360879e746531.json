@@ -690,13 +690,15 @@
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-data_analysis",
+        "TX-use_case-software_development",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-industry-manufacturing",
+        "TX-industry-professional_services",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-education",
         "TX-industry-media_entertainment",
@@ -716,7 +718,6 @@
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
         "TX-industry-legal_services",
-        "TX-use_case-data_analysis",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
@@ -724,7 +725,6 @@
         "TX-product_form-ai_compute_system",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-industry-professional_services",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
@@ -831,7 +831,10 @@
       "valueId": "model",
       "eventIds": [
         "EV-df2b04d9d720c544",
+        "EV-5ea74d357e73366b",
         "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-dccfca59b3e58638",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
         "EV-b231e1a452a7c74a",
@@ -1293,7 +1296,10 @@
       "typeLabel": "AI 市场细分",
       "valueId": "models",
       "eventIds": [
+        "EV-5ea74d357e73366b",
         "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-dccfca59b3e58638",
         "EV-657176fd0dff6209",
         "EV-f5dd6dec49ad83aa",
         "EV-55e7c286e95be405",
@@ -1365,7 +1371,10 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-5ea74d357e73366b",
         "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-dccfca59b3e58638",
         "EV-2dff88f85e3bce86",
         "EV-f0a666f5416e049f",
         "EV-a40e5e8c638e323d",
@@ -1671,7 +1680,10 @@
       "typeLabel": "AI 市场子类",
       "valueId": "development_deployment",
       "eventIds": [
+        "EV-5ea74d357e73366b",
         "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-dccfca59b3e58638",
         "EV-89ec502a1340079a",
         "EV-657176fd0dff6209",
         "EV-cca4bd983a16b8d9",
@@ -1810,7 +1822,10 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-5ea74d357e73366b",
         "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-dccfca59b3e58638",
         "EV-f0a666f5416e049f",
         "EV-a40e5e8c638e323d",
         "EV-b9d8b3582f12bdc7",
@@ -2172,6 +2187,7 @@
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
+        "EV-dc442b91a69fcc5a",
         "EV-bce46f2e5cc68d5d",
         "EV-e5c4c6c038b4975f",
         "EV-b231e1a452a7c74a",
@@ -2303,6 +2319,7 @@
         "EV-2c7d13d234147817"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "FICO-6f92e043fe518e14",
         "EN-2d4d500a67aa336e",
         "EN-8d4321d936320802",
@@ -2423,7 +2440,7 @@
         "HW-cff6ff4add035b48"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-use_case-physical_automation",

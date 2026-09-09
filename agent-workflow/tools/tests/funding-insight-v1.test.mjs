@@ -32,7 +32,7 @@ import {
   subjectCompanyForEvent,
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
-import { canonicalSources } from "../generate-funding-insights-deepseek.mjs";
+import { canonicalSources, fundingHistory } from "../generate-funding-insights-deepseek.mjs";
 import {
   preserveFundingSourceChannels,
   verifiedFundingEventCount,
@@ -323,6 +323,71 @@ test("financing that pushes valuation higher does not disclose round proceeds", 
   assert.equal(isEligibleFundingInsightEvent(event, claims), false);
   const payload = ensureCanonicalFundingEvidence({ financing: { amount: "未披露" } }, { claims }, event);
   assert.equal(payload.financing.amount, "未披露");
+});
+
+test("spaced Chinese round labels and valuation clauses keep proceeds distinct", () => {
+  const quotes = [
+    "Mistral AI 完成 30 亿欧元 D 轮融资：投后估值超 210 亿欧元，三星电子领投",
+    "宣布完成 D 轮融资，以超 210 亿欧元 （现汇率约合 1,640.75 亿元人民币） 的投后估值筹集了 30 亿欧元。",
+  ];
+  const claims = quotes.map((source_quote, index) => ({ claim_id: `CL-SPACED-${index}`,
+    claim_type: "funding", verification_status: "accepted", source_quote }));
+  const event = { event_id: "EV-SPACED", display_title_zh: quotes[0],
+    metrics: ["30 亿", "210 亿"], claim_refs: claims.map((claim) => claim.claim_id) };
+  assert.equal(canonicalFundingEventAmount(event, claims), "30 亿欧元");
+  assert.equal(canonicalFundingEventAmount({ display_title_zh: quotes[1] }), "30 亿欧元");
+  const card = { company: { entity_id: "EN-MISTRAL" },
+    financing: { amount: "210 亿欧元", evidence_refs: quotes.map((quote) => ({ quote })) } };
+  assert.ok(fundingEventCardConsistencyProblems(card, event, claims).includes("funding_amount_is_valuation"));
+  assert.ok(fundingEvidenceProofProblems(card).includes("funding_amount_is_valuation"));
+  assert.equal(ensureCanonicalFundingEvidence(card, { claims }, event).financing.amount, "30 亿欧元");
+  for (const round of ["D 轮", "Pre-B 轮", "A+ 轮"]) {
+    assert.equal(canonicalFundingEventAmount({ display_title_zh: `完成 30 亿欧元 ${round}融资，估值达 210 亿欧元` }), "30 亿欧元");
+  }
+});
+
+test("qualified English post-money valuations cannot become proceeds", () => {
+  for (const qualifier of ["above", "over", "of more than", "at least", "approximately", "about"]) {
+    const quote = `its June 2026 funding round set a post-money valuation ${qualifier} $52 billion`;
+    const event = { event_type: "funding", event_status: "announced", publication_status: "verified",
+      display_title_zh: quote, metrics: ["$52 billion"] };
+    assert.equal(canonicalFundingEventAmount(event), "");
+    assert.equal(isEligibleFundingInsightEvent(event), false);
+    assert.ok(fundingEvidenceProofProblems({ financing: { amount: "$52 billion", evidence_refs: [{ quote }] } })
+      .includes("funding_amount_is_valuation"));
+  }
+});
+
+test("funding history excludes investor mentions, valuation-only and planned rounds", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "funding-history-"));
+  try {
+    const daily = path.join(fixture, "01-SiteV2/content/11-databases/data-center-v4/2026-09-09");
+    fs.mkdirSync(daily, { recursive: true });
+    const entities = ["Acme", "Other"].map((name) => ({ entity_id: `EN-${name}`,
+      canonical_name: name, entity_type: "organization_candidate" }));
+    const quotes = ["Acme raised $30 million", "Other raised $5 million with Acme participating",
+      "Acme plans to raise $10 million", "Acme funding round set a valuation above $52 billion",
+      "Backed by Acme founders, NewCo secures $6M pre-seed"];
+    const claims = quotes.map((source_quote, index) => ({ claim_id: `CL-${index}`, subject: index === 1 ? "Other" : "Acme",
+      source_quote, claim_type: "funding", verification_status: "accepted" }));
+    claims[4].subject = "Backed by Acme founders, NewCo";
+    const events = quotes.map((display_title_zh, index) => ({ event_id: `EV-${index}`, event_type: "funding",
+      event_status: "completed", publication_status: "verified", display_title_zh,
+      event_time: "2026-09-09", entities: entities.map((entity) => entity.entity_id), claim_refs: [`CL-${index}`] }));
+    for (const [name, value] of Object.entries({ "canonical-events": events, claims, entities })) {
+      fs.writeFileSync(path.join(daily, `${name}.json`), JSON.stringify(value));
+    }
+    const previous = path.join(path.dirname(daily), "2026-09-08");
+    fs.mkdirSync(previous);
+    for (const [name, value] of Object.entries({ "canonical-events": [{ ...events[0], display_title_zh: "Acme raised $1 million" }],
+      claims: [{ ...claims[0], source_quote: "Acme raised $1 million" }], entities })) {
+      fs.writeFileSync(path.join(previous, `${name}.json`), JSON.stringify(value));
+    }
+    assert.deepEqual(fundingHistory("EN-Acme", fixture).map(({ event_id, amount }) => ({ event_id, amount })),
+      [{ event_id: "EV-0", amount: "$30 million" }]);
+  } finally {
+    fs.rmSync(fixture, { recursive: true, force: true });
+  }
 });
 
 test("Even Realities accepted evidence cannot overwrite proceeds with its unicorn valuation", () => {

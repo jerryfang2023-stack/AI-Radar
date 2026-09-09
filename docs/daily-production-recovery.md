@@ -79,6 +79,14 @@ Funding amounts require proceeds-specific evidence, not merely a number in a
 valid quoted source. Chinese post-amount financing and valuation-rise wording
 must remain covered by regressions. A valuation may remain a labelled metric,
 but cannot populate financing amount, disclosure amount or funding history.
+Spaced Chinese round labels (for example, `D 轮`) remain proceeds wording.
+An earlier-clause financing verb cannot classify a later valuation as proceeds;
+English valuation qualifiers such as `above` and `of more than` stay valuations.
+Financing history reads the latest event snapshot first and requires an accepted
+funding Claim whose subject resolves to the company; investor mentions and
+unresolved headline-shaped subjects do not constitute that company's history.
+Known naming variants are unified only by evidence-backed application identity
+decisions, without rewriting canonical entity IDs or unrelated companies.
 If an investment announcement does not disclose proceeds, retain the event in
 the Data Center but exclude it from Funding Insights. Withdraw an incorrectly
 published application card and prune its derived taxonomy decision; retain the

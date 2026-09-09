@@ -1731,22 +1731,22 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-data_analysis",
         "TX-use_case-software_development",
+        "TX-industry-manufacturing",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-sales",
-        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-sales",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
-        "TX-use_case-content_creation",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-product_form-end_user_application",
         "TX-technology-image_generation",
         "TX-technology-multimodal",
-        "TX-use_case-data_analysis",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-deployment_model-cloud",
@@ -1924,7 +1924,10 @@
       "valueId": "model",
       "eventIds": [
         "EV-df2b04d9d720c544",
+        "EV-5ea74d357e73366b",
         "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-dccfca59b3e58638",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
         "EV-b231e1a452a7c74a",
@@ -2386,6 +2389,8 @@
       "typeLabel": "应用场景",
       "valueId": "content_creation",
       "eventIds": [
+        "EV-5ea74d357e73366b",
+        "EV-dccfca59b3e58638",
         "EV-2dff88f85e3bce86",
         "EV-93c2515d50157281",
         "EV-0ea2bbb7280091f2",
@@ -2414,6 +2419,7 @@
         "EV-631dce4dc135d01b"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-770ef1d2b6e24172",
         "EN-9c8ae69b84f21a2e",
         "EN-27d914a99e32f0f2",
@@ -2445,7 +2451,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-technology-agentic_execution",

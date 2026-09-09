@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-09T04:13:54.793Z",
+    "latestDataDate": "2026-09-09",
+    "currentDate": "2026-09-09",
+    "eventCount": 2761,
+    "quarantinedEventCount": 24
+  },
+  "institution": {
+    "id": "INV-15495e6db8b964",
+    "name": "三星电子",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-08",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c04bd5ebd10ab696",
+        "canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "name": "Mistral AI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-2aa7ec044704df39",
+        "funding_insight_id": "FI-e0e22d70a91e704e",
+        "event_ids": [
+          "EV-dccfca59b3e58638",
+          "EV-5ea74d357e73366b",
+          "EV-dc442b91a69fcc5a"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "€3 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "30 亿欧元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-056e24fe41ba3e93",
+            "source_url": "https://www.ithome.com/0/999/657.htm",
+            "source_title": "Mistral AI 完成 30 亿欧元 D 轮融资，投后估值超 210 亿欧元，三星电子领投",
+            "source_content_hash": "dec4a7c86fa7da81",
+            "quote": "Mistral AI 本次融资的领投方包括三星电子、Scaleup Europe Fund、 PSG Equity。",
+            "quote_hash": "f7f01ddd4c1ecfe0776c2ec8e56863f5db35a725427b3f51afb24c2dfff1b246"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-056e24fe41ba3e93",
+        "source_url": "https://www.ithome.com/0/999/657.htm",
+        "source_title": "Mistral AI 完成 30 亿欧元 D 轮融资，投后估值超 210 亿欧元，三星电子领投",
+        "source_content_hash": "dec4a7c86fa7da81",
+        "quote": "Mistral AI 本次融资的领投方包括三星电子、Scaleup Europe Fund、 PSG Equity。",
+        "quote_hash": "f7f01ddd4c1ecfe0776c2ec8e56863f5db35a725427b3f51afb24c2dfff1b246"
+      }
+    ]
+  }
+}
