@@ -26,6 +26,10 @@ despite a failed outcome.
    Unresolved truncated discovery titles may stay deferred only when no
    CanonicalEvent requires their translation. Shared title/job deduplication
    retains the canonical requirement; unresolved public-event titles still block.
+   Indian `crore` monetary spans are protected before model translation and
+   restored verbatim afterwards. Validate the restored title against the
+   original amount and currency; neither repeated model arithmetic nor a
+   relaxed numeric gate is a repair for a tenfold conversion error.
 
 ## Preserve operational state
 
