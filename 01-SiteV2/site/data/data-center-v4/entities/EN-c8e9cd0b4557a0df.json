@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-09T04:13:54.793Z",
+    "latestDataDate": "2026-09-09",
+    "currentDate": "2026-09-09",
+    "eventCount": 2761,
+    "quarantinedEventCount": 24
+  },
+  "entity": {
+    "id": "EN-c8e9cd0b4557a0df",
+    "name": "Nvidia prepares AI 'inference' chip",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-dc7ca88afc22099a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-09",
+    "lastSeen": "2026-09-09",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-dc7ca88afc22099a"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-dc7ca88afc22099a",
+        "dataDate": "2026-09-09",
+        "date": "2026-09-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英伟达筹备推出AI“推理”芯片，以应对日益崛起的挑战者",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c8e9cd0b4557a0df",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-d80983b9b732ce1d",
+      "snapshotKey": "d80983b9b732ce1d",
+      "snapshotId": "HWS-2bfd6b4ef28553ae",
+      "eventId": "EV-dc7ca88afc22099a",
+      "eventIds": [
+        "EV-dc7ca88afc22099a"
+      ],
+      "dataDate": "2026-09-09",
+      "date": "2026-09-09",
+      "title": "Nvidia prepares AI 'inference' chip",
+      "subject": "Nvidia prepares AI 'inference' chip",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-cd762b54c7b4edda"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-09",
+          "hardware_fact_id": "HWF-6515bc40622cd759",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T00:26:25.882Z",
+          "subject_entity_id": "EN-c8e9cd0b4557a0df",
+          "subject_name": "Nvidia prepares AI 'inference' chip",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Nvidia prepares AI ‘inference’ chip launch to counter rising challengers",
+          "event_refs": [
+            "EV-dc7ca88afc22099a"
+          ],
+          "claim_ref": "CL-1729765bef42c39c",
+          "source_refs": [
+            "SA-76bc23ee6a888b71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-09/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-09",
+          "hardware_fact_id": "HWF-cd762b54c7b4edda",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T00:26:25.882Z",
+          "subject_entity_id": "EN-c8e9cd0b4557a0df",
+          "subject_name": "Nvidia prepares AI 'inference' chip",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Nvidia prepares AI ‘inference’ chip launch to counter rising challengers",
+          "event_refs": [
+            "EV-dc7ca88afc22099a"
+          ],
+          "claim_ref": "CL-db3ed2ffe4781793",
+          "source_refs": [
+            "SA-76bc23ee6a888b71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-09/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://facebook.com/financialtimes/posts/nvidia-prepares-ai-inference-chip-launch-to-counter-rising-challengers/1332369508936423",
+      "entityIds": [
+        "EN-c8e9cd0b4557a0df",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}
