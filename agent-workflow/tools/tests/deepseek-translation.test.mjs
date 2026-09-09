@@ -8,6 +8,7 @@ import {
 } from "../deepseek-translation-client.mjs";
 import { translateOpinionText } from "../opinion-translation-utils.mjs";
 import {
+  generatedTitleTranslationLooksUsable,
   sourceTitleFactsPreserved,
   sourceTitleNeedsChineseTranslation,
 } from "../source-title-translation-generator.mjs";
@@ -88,6 +89,22 @@ test("treats Indian lakh and Chinese wan counts as equivalent", () => {
     "VANI powers over 1 Lakh conversations daily",
     "VANI 每天支持超过 10 万次对话",
   ), true);
+});
+
+test("treats Indian crore and Chinese yi monetary amounts as equivalent", () => {
+  const symbolTitle = "TCS Wins ₹122.6 Crore Odisha AI Governance Deal to Build OSWAS 3.0 for 50,000 Users - InfotechLead";
+  const symbolTranslation = "TCS 赢得奥迪沙邦 12.26 亿卢比 AI 治理项目，为 50,000 名用户建设 OSWAS 3.0";
+  assert.equal(sourceTitleFactsPreserved(symbolTitle, symbolTranslation), true);
+  assert.equal(generatedTitleTranslationLooksUsable(symbolTitle, symbolTranslation), true);
+
+  const codeTitle = "TCS Wins INR 122 Crore Bid to Build AI-enabled Digital Governance Platform - Entrepreneur India";
+  const codeTranslation = "TCS 赢得 12.2 亿卢比项目，建设 AI 数字治理平台";
+  assert.equal(sourceTitleFactsPreserved(codeTitle, codeTranslation), true);
+  assert.equal(generatedTitleTranslationLooksUsable(codeTitle, codeTranslation), true);
+  assert.equal(sourceTitleFactsPreserved(
+    "TCS Wins ₹122.6 Crore Odisha AI Governance Deal",
+    "TCS 赢得奥迪沙邦 1.226 亿卢比 AI 治理项目",
+  ), false);
 });
 
 test("preserves multiplier words and scaled non-money counts", () => {
