@@ -1,42 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08T04:00:12.673Z",
-  "date": "2026-09-08",
-  "action": "Daily publication and entity-history recovery",
-  "action_status": "current",
+  "generated_at": "2026-09-09T04:07:48.386Z",
+  "date": "2026-09-09",
+  "action": "Protect Indian title amounts during translation",
+  "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "codex",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Reused accepted Sep 8 input and financing deduplication; resolved independent-lane publication overlap; retained historical aliases and restored all prior relationships.",
+  "summary": "Restored accepted 2026-09-09 source run 34309251252 after PR 831; diagnosed actual tenfold model errors, added exact-span monetary protection and qualified-INR validation with fail-closed tests.",
   "contexts": [],
-  "changed_files": [
-    "agent-workflow/tools/sync-light-data-lake.mjs",
-    "agent-workflow/tools/tests/data-lake-v4-convergence.test.mjs",
-    ".github/workflows/production-code-checks.yml",
-    "context/00-current-state.md",
-    "docs/agent-handoff.md",
-    "docs/daily-production-recovery.md"
-  ],
+  "changed_files": [],
   "outputs": [],
-  "checks": [
-    "Data Center daily integrity passed",
-    "Funding full gate passed",
-    "Alias-history tests 4 of 4 passed",
-    "386 prior relationships retained and 2 new relationships",
-    "Frontstage regression zero issues"
-  ],
-  "issues": [
-    "Publication PR 826 conflicted with first-line projections",
-    "Latest empty entity aliases erased historical Chinese relationship matches"
-  ],
-  "risks": [
-    "Browser control timed out; visual PC and mobile acceptance remains unverified",
-    "Afternoon lanes are not yet due"
-  ],
-  "lessons": [
-    "An empty latest alias array is not an identity withdrawal",
-    "Merge accepted lane inputs and rebuild shared serving data; never recollect to fix publication"
-  ],
+  "checks": [],
+  "issues": [],
+  "risks": [],
+  "lessons": [],
   "reusable_rules": [],
   "retired_flags": [],
   "notes": []

@@ -134,7 +134,7 @@ function moneyCurrency(value = "") {
 
 export function extractMoneyAmounts(value = "") {
   const text = String(value || "");
-  const pattern = /(?:(?:US\$|\$|€|£|¥|₹|USD|EUR|GBP|RMB|CNY|JPY|INR)\s*)?(\d[\d,]*(?:\.\d+)?)(?:\s*[-‑–—]?\s*(trillion|billion|million|crores?|bn|mn|cr|m|b|k|万亿|亿|万|千))?(?![A-Za-z])(?:\s*[-‑–—]?\s*(?:US\s*)?(?:dollars?|euros?|pounds?|rupees?|yuan|yen|美元|美金|欧元|英镑|卢比|人民币|日元|元))?/giu;
+  const pattern = /(?:(?:US\$|\$|€|£|¥|₹|USD|EUR|GBP|RMB|CNY|JPY|INR)\s*)?(\d[\d,]*(?:\.\d+)?)(?:\s*[-‑–—]?\s*(trillion|billion|million|crores?|bn|mn|cr|m|b|k|万亿|亿|万|千))?(?![A-Za-z])(?:\s*[-‑–—]?\s*(?:US\s*)?(?:dollars?|euros?|pounds?|rupees?|yuan|yen|美元|美金|欧元|英镑|(?:印度)?卢比|人民币|日元|元))?/giu;
   const results = [];
   for (const match of text.matchAll(pattern)) {
     const raw = match[0];
@@ -386,8 +386,18 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
   model = process.env.DEEPSEEK_TITLE_TRANSLATION_MODEL || deepSeekModels().flash,
   timeoutMs = 12000,
 } = {}) {
+  // Indian monetary units are copied, not recalculated by the model. Restoring
+  // the captured span still has to pass the original-title protected-fact gate.
+  const protectedMoney = extractMoneyAmounts(sourceTitle)
+    .filter((amount) => /(?:crores?|cr)\b/iu.test(amount.raw))
+    .map((amount, index) => ({ ...amount, token: `WS_MONEY_${String.fromCharCode(65 + index)}` }));
+  let modelTitle = sourceTitle;
+  for (const amount of [...protectedMoney].reverse()) {
+    modelTitle = `${modelTitle.slice(0, amount.start)}${amount.token}${modelTitle.slice(amount.end)}`;
+  }
   const repairProtectedTerms = (value = "") => {
     let repaired = value;
+    for (const amount of protectedMoney) repaired = repaired.replaceAll(amount.token, amount.raw.trim());
     if (/\bSituational Awareness\b/iu.test(sourceTitle) && !/\bSituational Awareness\b/iu.test(repaired)) {
       repaired = repaired.replace(/态势感知|情境感知|情景意识/gu, "Situational Awareness");
     }
@@ -411,9 +421,12 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
     {
       role: "user",
       content: [
-        `SOURCE TITLE:\n${sourceTitle}`,
-        sourceTitleNumericFacts(sourceTitle).length
-          ? `NUMERIC FACTS THAT MUST REMAIN EQUIVALENT:\n${sourceTitleNumericFacts(sourceTitle).join("; ")}`
+        `SOURCE TITLE:\n${modelTitle}`,
+        sourceTitleNumericFacts(modelTitle).length
+          ? `NUMERIC FACTS THAT MUST REMAIN EQUIVALENT:\n${sourceTitleNumericFacts(modelTitle).join("; ")}`
+          : "",
+        protectedMoney.length
+          ? `Preserve these protected monetary placeholders verbatim; translate only the surrounding text: ${protectedMoney.map((amount) => amount.token).join(", ")}. Do not expand, replace, omit, or duplicate a placeholder.`
           : "",
         retryInstruction,
       ].filter(Boolean).join("\n\n"),

@@ -8,6 +8,7 @@ import {
 } from "../deepseek-translation-client.mjs";
 import { translateOpinionText } from "../opinion-translation-utils.mjs";
 import {
+  generateSourceTitleTranslation,
   generatedTitleTranslationLooksUsable,
   sourceTitleFactsPreserved,
   sourceTitleNeedsChineseTranslation,
@@ -113,6 +114,55 @@ test("preserves multiplier words and scaled non-money counts", () => {
   assert.equal(sourceTitleFactsPreserved("matches models five times its size", "媲美其规模五倍的模型"), true);
   assert.equal(sourceTitleFactsPreserved("double the performance", "性能翻倍"), true);
   assert.equal(sourceTitleFactsPreserved("double the performance", "性能翻一番"), true);
+});
+
+test("recognizes explicitly qualified Indian rupees without accepting magnitude errors", () => {
+  const source = "TCS Wins INR 122 Crore Bid to Build AI-enabled Digital Governance Platform";
+  assert.equal(sourceTitleFactsPreserved(source, "TCS 赢得 12.2 亿印度卢比项目，构建 AI 数字治理平台"), true);
+  assert.equal(sourceTitleFactsPreserved(source, "TCS 赢得 122 亿印度卢比项目，构建 AI 数字治理平台"), false);
+  assert.equal(sourceTitleFactsPreserved(source, "TCS 赢得 12.2 亿美元项目，构建 AI 数字治理平台"), false);
+});
+
+test("protects Indian money spans through both title attempts and keeps the numeric gate", async (context) => {
+  const previousKey = process.env.DEEPSEEK_API_KEY;
+  process.env.DEEPSEEK_API_KEY = "test-key";
+  context.after(() => {
+    if (previousKey === undefined) delete process.env.DEEPSEEK_API_KEY;
+    else process.env.DEEPSEEK_API_KEY = previousKey;
+  });
+  const requests = [];
+  let rejectBoth = false;
+  let responseOverride = "";
+  context.mock.method(globalThis, "fetch", async (_url, options) => {
+    const request = JSON.parse(options.body);
+    requests.push(request);
+    const content = responseOverride || (rejectBoth || requests.length === 1
+      ? "TCS 赢得 122 亿卢比项目，构建 AI 数字治理平台"
+      : "TCS 赢得 WS_MONEY_A 项目，构建 AI 数字治理平台");
+    return { ok: true, json: async () => ({ choices: [{ message: { content } }] }) };
+  });
+  const source = "TCS Wins INR 122 Crore Bid to Build AI-enabled Digital Governance Platform";
+  const result = await generateSourceTitleTranslation(source, { provider: "deepseek" });
+  assert.equal(result.status, "translated");
+  assert.equal(result.titleZh, "TCS 赢得 INR 122 Crore 项目，构建 AI 数字治理平台");
+  assert.equal(requests.length, 2);
+  for (const request of requests) {
+    const prompt = request.messages.map((message) => message.content).join("\n");
+    assert.match(prompt, /protected monetary placeholders verbatim/u);
+    assert.match(prompt, /WS_MONEY_A/u);
+    assert.doesNotMatch(prompt, /INR 122 Crore|1220000000/u);
+  }
+  rejectBoth = true;
+  const rejected = await generateSourceTitleTranslation(source, { provider: "deepseek" });
+  assert.equal(rejected.status, "needs_ingestion_translation");
+  assert.equal(rejected.titleZh, "");
+  responseOverride = "TCS 为 50,000 名用户建设 AI 平台，获得 WS_MONEY_B 与 WS_MONEY_A";
+  const multiple = await generateSourceTitleTranslation(
+    "TCS receives ₹1cr and INR 2 crores to build AI platforms for 50,000 users",
+    { provider: "deepseek" },
+  );
+  assert.equal(multiple.status, "translated");
+  assert.match(multiple.titleZh, /INR 2 crores 与 ₹1cr/u);
 });
 
 test("isolates translations when both model passes omit protected facts", async () => {
