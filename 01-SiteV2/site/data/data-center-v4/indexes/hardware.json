@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T01:20:24.959Z",
-    "latestDataDate": "2026-09-08",
-    "currentDate": "2026-09-08",
-    "eventCount": 2733,
+    "generatedAt": "2026-09-09T04:13:54.793Z",
+    "latestDataDate": "2026-09-09",
+    "currentDate": "2026-09-09",
+    "eventCount": 2761,
     "quarantinedEventCount": 24
   },
   "hardware": [
@@ -3349,13 +3349,13 @@
     {
       "id": "HWC-fde7880cbf9629d0",
       "snapshotKey": "fde7880cbf9629d0",
-      "snapshotId": "HWS-5b82eadefe30fee2",
+      "snapshotId": "HWS-12968adae27e08f4",
       "eventId": "EV-ba091f86fba39da0",
       "eventIds": [
         "EV-ba091f86fba39da0"
       ],
-      "dataDate": "2026-09-08",
-      "date": "2026-09-08",
+      "dataDate": "2026-09-09",
+      "date": "2026-09-09",
       "title": "Anthropic",
       "subject": "Anthropic",
       "productNames": [],
@@ -3367,18 +3367,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-7a001c886fa83310"
+          "fact_ref": "HWF-ec6094a2d8dde25a"
         }
       },
       "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-09",
+          "previousDate": "2026-09-08",
+          "snapshotId": "HWS-12968adae27e08f4",
+          "previousSnapshotId": "HWS-5b82eadefe30fee2",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-09-08",
-          "hardware_fact_id": "HWF-7a001c886fa83310",
+          "data_date": "2026-09-09",
+          "hardware_fact_id": "HWF-ec6094a2d8dde25a",
           "fact_type": "product",
           "observed_at": "2026-09-07T08:51:30.000Z",
           "subject_entity_id": "EN-c70eca6b0f88f44d",
@@ -3392,11 +3402,11 @@
           "event_refs": [
             "EV-ba091f86fba39da0"
           ],
-          "claim_ref": "CL-df8b364b94c32c4c",
+          "claim_ref": "CL-48b3dd08f5792f06",
           "source_refs": [
-            "SA-51732fcb7e6e95de"
+            "SA-c2ec84ab566668b5"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-08/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-09/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -3428,6 +3438,89 @@
         "EN-9fbf261b62c1d7c0",
         "EN-6f7ac1823da81d2e",
         "EN-1d79127e9d90e89b"
+      ]
+    },
+    {
+      "id": "HWC-d80983b9b732ce1d",
+      "snapshotKey": "d80983b9b732ce1d",
+      "snapshotId": "HWS-2bfd6b4ef28553ae",
+      "eventId": "EV-dc7ca88afc22099a",
+      "eventIds": [
+        "EV-dc7ca88afc22099a"
+      ],
+      "dataDate": "2026-09-09",
+      "date": "2026-09-09",
+      "title": "Nvidia prepares AI 'inference' chip",
+      "subject": "Nvidia prepares AI 'inference' chip",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-cd762b54c7b4edda"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-09",
+          "hardware_fact_id": "HWF-6515bc40622cd759",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T00:26:25.882Z",
+          "subject_entity_id": "EN-c8e9cd0b4557a0df",
+          "subject_name": "Nvidia prepares AI 'inference' chip",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Nvidia prepares AI ‘inference’ chip launch to counter rising challengers",
+          "event_refs": [
+            "EV-dc7ca88afc22099a"
+          ],
+          "claim_ref": "CL-1729765bef42c39c",
+          "source_refs": [
+            "SA-76bc23ee6a888b71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-09/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-09",
+          "hardware_fact_id": "HWF-cd762b54c7b4edda",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T00:26:25.882Z",
+          "subject_entity_id": "EN-c8e9cd0b4557a0df",
+          "subject_name": "Nvidia prepares AI 'inference' chip",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Nvidia prepares AI ‘inference’ chip launch to counter rising challengers",
+          "event_refs": [
+            "EV-dc7ca88afc22099a"
+          ],
+          "claim_ref": "CL-db3ed2ffe4781793",
+          "source_refs": [
+            "SA-76bc23ee6a888b71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-09/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://facebook.com/financialtimes/posts/nvidia-prepares-ai-inference-chip-launch-to-counter-rising-challengers/1332369508936423",
+      "entityIds": [
+        "EN-c8e9cd0b4557a0df",
+        "EN-8d4321d936320802"
       ]
     },
     {
@@ -14941,34 +15034,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-08",
-      "funnel_id": "LF-974ccbad2c8fa534",
+      "data_date": "2026-09-09",
+      "funnel_id": "LF-9e1cefaa1df12afe",
       "lens": "hardware",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
         "hardware_product_specs",
+        "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 22,
-      "original_sources": 17,
-      "valid_claims": 7,
-      "observations": 2,
-      "canonical_events": 3,
+      "raw_documents": 26,
+      "original_sources": 20,
+      "valid_claims": 11,
+      "observations": 3,
+      "canonical_events": 4,
       "blocker_counts": {
-        "source_outside_daily_window": 7,
-        "non_event_or_index_title": 2,
-        "source_outside_funding_backfill_window": 2,
-        "raw_source_quality_block": 8
+        "source_outside_daily_window": 10,
+        "no_source_bounded_event": 2,
+        "source_outside_funding_backfill_window": 1,
+        "event_not_ai_relevant": 1,
+        "raw_source_quality_block": 7
       },
       "rates": {
-        "original_source_rate": 0.7727272727272727,
-        "valid_claim_rate": 0.3181818181818182,
-        "observation_rate": 0.2857142857142857,
-        "event_conversion_rate": 0.42857142857142855
+        "original_source_rate": 0.7692307692307693,
+        "valid_claim_rate": 0.4230769230769231,
+        "observation_rate": 0.2727272727272727,
+        "event_conversion_rate": 0.36363636363636365
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-08/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-09/monitoring-funnel.json"
     }
   ]
 }

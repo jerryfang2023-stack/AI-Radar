@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T01:20:24.959Z",
-    "latestDataDate": "2026-09-08",
-    "currentDate": "2026-09-08",
-    "eventCount": 2733,
+    "generatedAt": "2026-09-09T04:13:54.793Z",
+    "latestDataDate": "2026-09-09",
+    "currentDate": "2026-09-09",
+    "eventCount": 2761,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -24,6 +24,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-66626c5426f4a9a0",
       "EV-082a9cdae7904aac",
       "EV-20cdbe59ba2a1359",
       "EV-8e6f9c324aa0b2f3"
@@ -32,13 +33,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-07",
-    "lastSeen": "2026-08-31",
+    "lastSeen": "2026-09-09",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-66626c5426f4a9a0",
         "EV-082a9cdae7904aac",
         "EV-20cdbe59ba2a1359",
         "EV-8e6f9c324aa0b2f3"
@@ -48,6 +50,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-66626c5426f4a9a0",
+        "dataDate": "2026-09-09",
+        "date": "2026-09-08",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "深入马来西亚AI现场！WAIC CONNECT MALAYSIA首日亮点全速递",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-39485c329d1abd9e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-4f5d0b82a300f296",
+          "EN-39485c329d1abd9e",
+          "EN-6be989ad7ba2e182"
+        ]
+      },
       {
         "id": "EV-082a9cdae7904aac",
         "dataDate": "2026-08-31",

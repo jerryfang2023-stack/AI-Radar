@@ -5,13 +5,84 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T01:20:24.959Z",
-    "latestDataDate": "2026-09-08",
-    "currentDate": "2026-09-08",
-    "eventCount": 2733,
+    "generatedAt": "2026-09-09T04:13:54.793Z",
+    "latestDataDate": "2026-09-09",
+    "currentDate": "2026-09-09",
+    "eventCount": 2761,
     "quarantinedEventCount": 24
   },
   "fde": [
+    {
+      "id": "FDE-506df8e185ad61de",
+      "eventId": "EV-c3e1670e2cd84200",
+      "dataDate": "2026-09-09",
+      "date": "2026-09-08",
+      "title": "TCS赢得₹122.6 Crore奥里萨邦AI治理合同，为50,000用户构建OSWAS 3.0",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Government of Odisha",
+      "vendor": "Tata Consultancy Services (TCS)",
+      "industry": "Government",
+      "useCase": "OSWAS 3.0",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://infotechlead.com/software/tcs-wins-%E2%82%B9122-6-crore-odisha-ai-governance-deal-to-build-oswas-3-0-for-50000-users-98216",
+      "entityIds": [
+        "EN-5fa790f3630f4914",
+        "EN-4a354bbc9b70a6e6"
+      ]
+    },
+    {
+      "id": "FDE-c3f6d4928b2b8488",
+      "eventId": "EV-a1a60daa9b0cd597",
+      "dataDate": "2026-09-09",
+      "date": "2026-09-08",
+      "title": "TCS获Odisha政府₹122.6 crore合同：AI、自动化、分析、安全——OSWAS 3.0将带来哪些变化？已知信息",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "未披露",
+      "vendor": "Tata Consultancy Services",
+      "industry": "未披露",
+      "useCase": "Odisha State Workflow Automation System (OSWAS 3.0)",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://livemint.com/ai/tcs-bags-rs-122-6-crore-odisha-govt-deal-ai-automation-analytics-security-what-oswas-3-0-will-change-what-we-know-11788864314363.html",
+      "entityIds": [
+        "EN-5fa790f3630f4914"
+      ]
+    },
     {
       "id": "FDE-5ebb24c6d956139a",
       "eventId": "EV-eb282b4658bbdd7e",
@@ -6666,6 +6737,99 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-08a61f365c82517d",
+      "implementationKey": "08a61f365c82517d",
+      "eventId": "EV-c3e1670e2cd84200",
+      "eventIds": [
+        "EV-c3e1670e2cd84200"
+      ],
+      "dataDate": "2026-09-09",
+      "date": "2026-09-08",
+      "title": "Government of Odisha × Tata Consultancy Services (TCS)：OSWAS 3.0",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Government of Odisha",
+      "vendor": "Tata Consultancy Services (TCS)",
+      "industry": "Government",
+      "useCase": "OSWAS 3.0",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-4ba4701eb93ec435",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-08",
+          "dataDate": "2026-09-09",
+          "eventId": "EV-c3e1670e2cd84200",
+          "eventTitle": "TCS赢得₹122.6 Crore奥里萨邦AI治理合同，为50,000用户构建OSWAS 3.0",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://infotechlead.com/software/tcs-wins-%E2%82%B9122-6-crore-odisha-ai-governance-deal-to-build-oswas-3-0-for-50000-users-98216",
+      "entityIds": [
+        "EN-5fa790f3630f4914",
+        "EN-4a354bbc9b70a6e6"
+      ]
+    },
+    {
+      "id": "FDED-86ee42315c9a4601",
+      "implementationKey": "86ee42315c9a4601",
+      "eventId": "EV-a1a60daa9b0cd597",
+      "eventIds": [
+        "EV-a1a60daa9b0cd597"
+      ],
+      "dataDate": "2026-09-09",
+      "date": "2026-09-08",
+      "title": "Tata Consultancy Services × Tata Consultancy Services：Odisha State Workflow Automation System (OSWAS 3.0)",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "Tata Consultancy Services",
+      "vendor": "Tata Consultancy Services",
+      "industry": "未披露",
+      "useCase": "Odisha State Workflow Automation System (OSWAS 3.0)",
+      "workflow": "Tata Consultancy Services (TCS), one of India's leading IT services companies, has secured a contract worth ₹122.6 crore to implement the next phase of the Odisha State Workflow Automation System (OSWAS 3.0).",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "industry",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-534b4606d7c8374a",
+          "type": "implementation_update",
+          "stage": "planned",
+          "date": "2026-09-08",
+          "dataDate": "2026-09-09",
+          "eventId": "EV-a1a60daa9b0cd597",
+          "eventTitle": "TCS获Odisha政府₹122.6 crore合同：AI、自动化、分析、安全——OSWAS 3.0将带来哪些变化？已知信息",
+          "claimCount": 2,
+          "sourceCount": 2
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://livemint.com/ai/tcs-bags-rs-122-6-crore-odisha-govt-deal-ai-automation-analytics-security-what-oswas-3-0-will-change-what-we-know-11788864314363.html",
+      "entityIds": [
+        "EN-5fa790f3630f4914"
+      ]
+    },
+    {
       "id": "FDED-272210d4c120a9f6",
       "implementationKey": "272210d4c120a9f6",
       "eventId": "EV-eb282b4658bbdd7e",
@@ -9152,39 +9316,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-08",
-      "funnel_id": "LF-08269ee8652268ed",
+      "data_date": "2026-09-09",
+      "funnel_id": "LF-0f5200c5ca5feb15",
       "lens": "fde",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 104,
-      "original_sources": 89,
-      "valid_claims": 25,
-      "observations": 0,
-      "canonical_events": 12,
+      "raw_documents": 93,
+      "original_sources": 83,
+      "valid_claims": 16,
+      "observations": 2,
+      "canonical_events": 10,
       "blocker_counts": {
-        "source_outside_daily_window": 54,
-        "non_event_or_index_title": 4,
-        "no_source_bounded_event": 10,
+        "source_outside_daily_window": 51,
         "event_not_ai_relevant": 3,
-        "event_entity_unresolved": 1,
-        "no_source_bounded_claim": 1,
-        "opinion_without_source_bounded_event": 2,
-        "community_source_requires_original_event_source": 1,
-        "raw_source_quality_block": 15
+        "no_source_bounded_event": 9,
+        "non_event_or_index_title": 6,
+        "repository_page_requires_release_source": 1,
+        "raw_source_quality_block": 11
       },
       "rates": {
-        "original_source_rate": 0.8557692307692307,
-        "valid_claim_rate": 0.2403846153846154,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.48
+        "original_source_rate": 0.8924731182795699,
+        "valid_claim_rate": 0.17204301075268819,
+        "observation_rate": 0.125,
+        "event_conversion_rate": 0.625
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-08/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-09/monitoring-funnel.json"
     }
   ]
 }

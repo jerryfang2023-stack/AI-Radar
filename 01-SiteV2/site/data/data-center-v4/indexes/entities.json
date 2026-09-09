@@ -5,31 +5,31 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T01:20:24.959Z",
-    "latestDataDate": "2026-09-08",
-    "currentDate": "2026-09-08",
-    "eventCount": 2733,
+    "generatedAt": "2026-09-09T04:13:54.793Z",
+    "latestDataDate": "2026-09-09",
+    "currentDate": "2026-09-09",
+    "eventCount": 2761,
     "quarantinedEventCount": 24,
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.1",
-      "generatedAt": "2026-09-09T01:20:23.492Z",
+      "generatedAt": "2026-09-09T04:13:53.030Z",
       "coverage": {
         "startDate": "2017-09-07",
         "endDate": "2027-09-30",
-        "distinctDataDays": 108,
+        "distinctDataDays": 109,
         "dataBatchesByMonth": {
           "2026-05": 8,
           "2026-06": 30,
           "2026-07": 31,
           "2026-08": 31,
-          "2026-09": 8
+          "2026-09": 9
         }
       },
       "counts": {
-        "entities": 2372,
-        "organizations": 1518,
-        "products": 793,
+        "entities": 2395,
+        "organizations": 1529,
+        "products": 805,
         "people": 61,
         "taxonomyNodes": 113,
         "relationships": 388
@@ -166,7 +166,7 @@
         "EV-710b145230faa692"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
@@ -296,9 +296,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
-        "企业用户",
         "基础设施与算力",
+        "金融服务",
+        "企业用户",
         "开发者",
         "软件开发"
       ],
@@ -427,8 +427,8 @@
       ],
       "tags": [
         "模型",
-        "智能体",
         "软件开发",
+        "智能体",
         "代码生成",
         "视频生成"
       ],
@@ -447,6 +447,7 @@
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
         "EV-bf23c87d0aa1f205",
+        "EV-cbe5cc267353560e",
         "EV-bc24f0b939f2dfa2",
         "EV-358643eefe0a5df5",
         "EV-63948deaec161736",
@@ -465,7 +466,7 @@
         "EV-0597e07d7e73051a"
       ],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-0c2f714483c404ad",
         "EN-eec6044eb8e4941a",
@@ -497,15 +498,17 @@
       ],
       "tags": [],
       "eventIds": [
+        "EV-66626c5426f4a9a0",
         "EV-082a9cdae7904aac",
         "EV-20cdbe59ba2a1359",
         "EV-8e6f9c324aa0b2f3"
       ],
       "firstSeen": "2026-06-07",
-      "lastSeen": "2026-08-31",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [],
       "relationIds": [],
       "marketScopes": [
+        "event_market",
         "actor_origin"
       ],
       "chinaMarketMatch": true,
@@ -653,8 +656,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
         "企业用户",
+        "制造业",
         "物理自动化",
         "Physical AI",
         "物流与供应链"
@@ -961,11 +964,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
-        "企业软件平台",
         "企业用户",
+        "知识与搜索",
         "生产力与企业工作流",
-        "知识与搜索"
+        "企业级应用",
+        "企业软件平台"
       ],
       "eventIds": [
         "EV-dc35d54f273196f0"
@@ -983,8 +986,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
         "企业用户",
+        "制造业",
         "物理自动化",
         "Physical AI",
         "零售与电商"
@@ -1009,11 +1012,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
+        "模型",
         "基础设施与算力",
-        "物理自动化",
+        "开发与部署",
         "开发者",
-        "开发与部署"
+        "制造业"
       ],
       "eventIds": [
         "EV-56da7cceeebc8bcf"
@@ -1067,11 +1070,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
-        "企业用户",
         "基础设施与算力",
-        "教育",
-        "媒体与娱乐"
+        "能源与公用事业",
+        "金融服务",
+        "政府与公共部门",
+        "企业用户"
       ],
       "eventIds": [
         "EV-44ec7c229995ca3c"
@@ -1126,11 +1129,11 @@
         "以太之心"
       ],
       "tags": [
-        "企业用户",
-        "生产力与企业工作流",
         "基础设施与算力",
+        "开发与部署",
+        "企业用户",
         "开发者",
-        "AI 基础设施软件"
+        "生产力与企业工作流"
       ],
       "eventIds": [
         "EV-89ec502a1340079a"
@@ -1171,8 +1174,8 @@
       "aliases": [],
       "tags": [
         "模型",
-        "制造业",
         "企业用户",
+        "制造业",
         "物理自动化",
         "Physical AI"
       ],
@@ -1240,6 +1243,7 @@
         "EV-c11ee0da38376254",
         "EV-6a6ff349579765ad",
         "EV-7ff24ae733821395",
+        "EV-d219dec3f1fcefc1",
         "EV-86537be17d50ff20",
         "EV-6b7917bd7edd4bde",
         "EV-e70b2c66b996d138",
@@ -1247,7 +1251,7 @@
         "EV-fc8b280e83232d6f"
       ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-a1adb91065c5a347",
         "EN-f0da91960830b394",
@@ -1365,8 +1369,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
         "企业用户",
+        "制造业",
         "物理自动化",
         "Physical AI",
         "机器人系统"
@@ -1468,8 +1472,8 @@
         "Astribot"
       ],
       "tags": [
-        "制造业",
         "企业用户",
+        "制造业",
         "教育",
         "物理自动化",
         "Physical AI"
@@ -1514,8 +1518,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
         "企业用户",
+        "制造业",
         "物理自动化",
         "Physical AI",
         "零售与电商"
@@ -1629,8 +1633,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "终端 AI 应用",
-        "金融服务"
+        "金融服务",
+        "终端 AI 应用"
       ],
       "eventIds": [
         "EV-5caf7f83664b1a2c"
@@ -1658,15 +1662,15 @@
       ],
       "tags": [
         "模型",
-        "安全运营",
         "软件开发",
+        "安全运营",
         "长上下文"
       ],
       "eventIds": [
         "EV-783866f9782691b6",
         "EV-40f14150d6f622f5",
-        "EV-a251b011afec190d",
         "EV-ba091f86fba39da0",
+        "EV-a251b011afec190d",
         "EV-e4552a80d406645e",
         "EV-ec8b36dcb97645da",
         "EV-34fd528787e47757",
@@ -1680,7 +1684,7 @@
         "EV-1e0871947289ab6e"
       ],
       "firstSeen": "2026-06-13",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-bc77259c5d2eb341",
         "EN-993599624a199fe0"
@@ -1706,10 +1710,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
         "企业用户",
-        "物理自动化",
         "开发者",
+        "制造业",
+        "物理自动化",
         "Physical AI"
       ],
       "eventIds": [
@@ -1741,12 +1745,13 @@
         "EV-e7e2dfbc41a639d2",
         "EV-eb2b4ee2c8cb0daa",
         "EV-01df8e489a34893b",
+        "EV-6379ee71e6029bd0",
         "EV-2c87c8ea47cbd1b6",
         "EV-8ab833e13ecaa916",
         "EV-b95539d17772a4ce"
       ],
       "firstSeen": "2026-05-06",
-      "lastSeen": "2026-09-06",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-7d3194f79e645c42"
       ],
@@ -1797,10 +1802,10 @@
         "Startup Adapter"
       ],
       "tags": [
-        "企业用户",
         "基础设施与算力",
-        "知识与搜索",
+        "企业用户",
         "开发者",
+        "知识与搜索",
         "开发者工具"
       ],
       "eventIds": [
@@ -1819,9 +1824,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业软件平台",
         "企业用户",
         "生产力与企业工作流",
+        "企业软件平台",
         "智能体",
         "行业应用"
       ],
@@ -1906,9 +1911,9 @@
       "aliases": [],
       "tags": [
         "模型",
-        "制造业",
+        "模型",
         "基础设施与算力",
-        "个人用户",
+        "开发与部署",
         "开发者"
       ],
       "eventIds": [
@@ -1979,11 +1984,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "软件开发",
         "制造业",
         "企业软件平台",
         "物理自动化",
-        "智能体",
-        "软件开发"
+        "智能体"
       ],
       "eventIds": [
         "EV-a0ca934522418c0b",
@@ -2057,12 +2062,13 @@
       "aliases": [],
       "tags": [
         "模型",
-        "企业软件平台",
-        "企业用户",
-        "生产力与企业工作流",
-        "基础设施与算力"
+        "模型",
+        "基础设施与算力",
+        "开发与部署",
+        "金融服务"
       ],
       "eventIds": [
+        "EV-448e0a020dd2c9a9",
         "EV-bce46f2e5cc68d5d",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
@@ -2146,6 +2152,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-83dfc99666955c16",
         "EV-8232ad0075a77b7a",
         "EV-ba091f86fba39da0",
         "EV-54451ee210a0d0d4",
@@ -2354,6 +2361,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-9c7ca787c7b4f7cf",
         "EV-6c2f395e1961f6ef",
         "EV-0af472b1f95d7945",
         "EV-9970d6460e106e29",
@@ -2443,7 +2451,7 @@
         "EV-8654cc0faeb02d14"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
@@ -2752,11 +2760,11 @@
         "Arcade.dev"
       ],
       "tags": [
-        "企业用户",
         "基础设施与算力",
+        "企业用户",
+        "开发者",
         "可观测与评估",
-        "模型与智能体安全",
-        "安全软件"
+        "模型与智能体安全"
       ],
       "eventIds": [
         "EV-39717cdbada984d7"
@@ -2776,11 +2784,11 @@
         "Archestra.AI"
       ],
       "tags": [
-        "企业用户",
-        "AI 可观测与治理",
         "基础设施与算力",
-        "可观测与评估",
-        "模型与智能体安全"
+        "企业用户",
+        "开发者",
+        "AI 可观测与治理",
+        "可观测与评估"
       ],
       "eventIds": [
         "EV-6ae3594aadfcd3d8",
@@ -3001,8 +3009,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
         "企业用户",
+        "制造业",
         "智能体",
         "算力云服务",
         "安全护栏"
@@ -3113,9 +3121,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "软件开发",
         "媒体与娱乐",
         "智能体",
-        "软件开发",
         "代码生成"
       ],
       "eventIds": [
@@ -3232,8 +3240,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "制造业",
-        "企业用户"
+        "企业用户",
+        "制造业"
       ],
       "eventIds": [
         "EV-30be225da68f2f70",
@@ -3335,11 +3343,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业用户",
         "基础设施与算力",
-        "知识与搜索",
+        "开发与部署",
+        "企业用户",
         "开发者",
-        "AI 基础设施软件"
+        "知识与搜索"
       ],
       "eventIds": [
         "EV-0d4e656aa51f9a46",
@@ -3377,8 +3385,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "物理自动化",
         "开发者",
+        "物理自动化",
         "零售与电商",
         "具身智能"
       ],
@@ -3404,8 +3412,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业软件平台",
         "企业用户",
+        "企业软件平台",
         "智能体"
       ],
       "eventIds": [
@@ -3427,12 +3435,13 @@
       ],
       "tags": [
         "模型",
+        "模型",
         "基础设施与算力",
-        "开发者",
-        "智能体",
-        "开发与部署"
+        "开发与部署",
+        "开发者"
       ],
       "eventIds": [
+        "EV-bf8698a2e28fea12",
         "EV-87432dbb99cd6033",
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
@@ -3484,7 +3493,7 @@
         "EV-b6970cb396a7b1ed"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [],
       "relationIds": [],
       "marketScopes": [
@@ -3562,10 +3571,10 @@
       "aliases": [],
       "tags": [
         "模型",
+        "模型",
         "基础设施与算力",
-        "开发者",
         "开发与部署",
-        "模型"
+        "开发者"
       ],
       "eventIds": [
         "EV-44cd5e03d30c85b3",
@@ -3584,11 +3593,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
-        "企业软件平台",
         "企业用户",
         "生产力与企业工作流",
-        "软件开发"
+        "软件开发",
+        "企业级应用",
+        "企业软件平台"
       ],
       "eventIds": [
         "EV-1a6688afdfd108ef"
@@ -3607,10 +3616,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
-        "开发者",
-        "AI 开发与编排",
         "开发与部署",
-        "软件开发"
+        "开发者",
+        "软件开发",
+        "AI 开发与编排"
       ],
       "eventIds": [
         "EV-618e5729145025e4"
@@ -3684,10 +3693,10 @@
       "aliases": [],
       "tags": [
         "模型",
-        "企业用户",
         "基础设施与算力",
-        "开发者",
-        "AI 基础设施软件"
+        "开发与部署",
+        "企业用户",
+        "开发者"
       ],
       "eventIds": [
         "EV-1abf0d076d30ec6d",
@@ -3808,10 +3817,10 @@
       ],
       "tags": [
         "模型",
-        "制造业",
-        "企业软件平台",
+        "基础设施与算力",
+        "金融服务",
         "企业用户",
-        "生产力与企业工作流"
+        "开发者"
       ],
       "eventIds": [
         "EV-fe49d2ee580cfea2",
@@ -3847,6 +3856,7 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-6379ee71e6029bd0",
         "EV-24ae0372410706ee",
         "EV-a4f0e4fe1350a810",
         "EV-3d9aa640411471ea",
@@ -3864,10 +3874,12 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-db926055d40a4dff",
+        "EV-5ff6037816b64323",
+        "EV-afb33cbf65290212",
         "EV-ba091f86fba39da0",
         "EV-54451ee210a0d0d4",
         "EV-6b0106ef4a79df05",
-        "EV-db926055d40a4dff",
         "EV-50e7de294816f918",
         "EV-a74ea4ad6a095ac3",
         "EV-b22136a993b21f0c",
@@ -4052,7 +4064,7 @@
         "EV-ecfc552af7344d65"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-307557d99a7eb726",
         "EN-8d323d8bba783aa3",
@@ -4146,6 +4158,7 @@
       "tags": [],
       "eventIds": [
         "EV-ff1f6119de13fa19",
+        "EV-6379ee71e6029bd0",
         "EV-e8bc5b0eebef5813",
         "EV-b4b5d141dac164c2",
         "EV-6e4dd5111dfaae9c",
@@ -4163,7 +4176,7 @@
         "EV-51dfd0d541380500"
       ],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-08-28",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-bbdefa2950f49882",
         "EN-96eebba49dbbf422",
@@ -4189,10 +4202,10 @@
       ],
       "tags": [
         "模型",
+        "软件开发",
         "企业软件平台",
         "媒体与娱乐",
-        "物理自动化",
-        "安全运营"
+        "物理自动化"
       ],
       "eventIds": [
         "EV-55e7c286e95be405",
@@ -4204,7 +4217,9 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
-        "EV-db926055d40a4dff",
+        "EV-6661b03751e8e855",
+        "EV-7276adae84f96c44",
+        "EV-afb33cbf65290212",
         "EV-2db5afe6d0aa14b5",
         "EV-6ffd497940673b62",
         "EV-859489cd3fa4e596",
@@ -4247,7 +4262,7 @@
         "EV-68edd592c36dccd3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-07",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
         "EN-92af3ce2fb97edf3",
@@ -4277,11 +4292,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业软件平台",
+        "金融服务",
         "企业用户",
+        "企业软件平台",
         "智能体",
-        "行业应用",
-        "法律与合规"
+        "行业应用"
       ],
       "eventIds": [
         "EV-bffc68e7bb4d598b"
@@ -4368,10 +4383,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
+        "开发与部署",
         "开发者",
-        "AI 基础设施软件",
-        "AI 开发与编排",
-        "开发与部署"
+        "软件开发",
+        "AI 基础设施软件"
       ],
       "eventIds": [
         "EV-386c205c8bbf537d",
@@ -4418,10 +4433,10 @@
       "aliases": [],
       "tags": [
         "模型",
+        "金融服务",
+        "软件开发",
         "企业软件平台",
-        "安全运营",
-        "智能体",
-        "软件开发"
+        "安全运营"
       ],
       "eventIds": [
         "EV-32d7c52f89d74e88",
@@ -4473,10 +4488,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
-        "开发者",
-        "AI 开发与编排",
         "开发与部署",
-        "软件开发"
+        "开发者",
+        "软件开发",
+        "AI 开发与编排"
       ],
       "eventIds": [
         "EV-d7a7244d620a2142"
@@ -4512,11 +4527,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "企业用户",
+        "生产力与企业工作流",
         "企业级应用",
         "制造业",
-        "企业软件平台",
-        "企业用户",
-        "生产力与企业工作流"
+        "企业软件平台"
       ],
       "eventIds": [
         "EV-b29878fdf79f2ac5"
@@ -4567,7 +4582,6 @@
         "EV-9de19f01ac4771fa",
         "EV-39717cdbada984d7",
         "EV-044b917005a8f611",
-        "EV-dc442b91a69fcc5a",
         "EV-02548003157849bb",
         "EV-c0d19b8641a7a36c",
         "EV-ee0662b75588987e",
@@ -4794,8 +4808,8 @@
       "aliases": [],
       "tags": [
         "模型",
-        "企业软件平台",
         "生产力与企业工作流",
+        "企业软件平台",
         "智能体",
         "RAG"
       ],
@@ -4930,10 +4944,10 @@
       "aliases": [],
       "tags": [
         "模型",
+        "企业用户",
+        "软件开发",
         "企业级应用",
-        "销售",
-        "制造业",
-        "企业软件平台"
+        "销售"
       ],
       "eventIds": [
         "EV-f2c93c155070cd35",
@@ -5022,6 +5036,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-d7a432ffeb3347a4",
         "EV-8a1086b789782cff",
         "EV-860fbba841badfec",
         "EV-13c5fc1373115b65",
@@ -5041,7 +5056,7 @@
         "EV-8fcecabca2e92b40"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-af54bb0c9a39eb30",
         "EN-62503b0d3dcfd096",
@@ -5085,8 +5100,8 @@
         "微软"
       ],
       "tags": [
-        "制造业",
         "企业用户",
+        "制造业",
         "个人用户",
         "安全运营",
         "智能体"
@@ -5139,6 +5154,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-5ff6037816b64323",
+        "EV-cb9b67636ecdbfd3",
         "EV-ba091f86fba39da0",
         "EV-fbdc0b51572a88a4",
         "EV-617f1daf708475d0",
@@ -5239,7 +5256,7 @@
         "EV-7580a050ca19a8ae"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-8d4321d936320802",
         "EN-688f8db7018da7d4",
@@ -5364,18 +5381,19 @@
       "aliases": [],
       "tags": [
         "模型",
-        "企业软件平台",
-        "企业用户",
-        "生产力与企业工作流",
-        "基础设施与算力"
+        "模型",
+        "基础设施与算力",
+        "开发与部署",
+        "能源与公用事业"
       ],
       "eventIds": [
+        "EV-5ea74d357e73366b",
+        "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
         "EV-55e7c286e95be405",
         "EV-a89bf7c0c4203ce2",
         "EV-24265c0f0fa45343",
         "EV-d4e44892226be468",
-        "EV-85506f9f86779a6d",
-        "EV-dc442b91a69fcc5a",
         "EV-d292329c0ec64c8f",
         "EV-c8f3db31cb266b64",
         "EV-ff73f3659b75611d",
@@ -5386,7 +5404,7 @@
         "EV-865af5f2f09605c4"
       ],
       "firstSeen": "2025-10-01",
-      "lastSeen": "2026-08-12",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-8652f6cd9088f1fa",
         "EN-0d4ab5f8db6e89bc",
@@ -5439,10 +5457,10 @@
       ],
       "tags": [
         "模型",
-        "企业用户",
-        "生产力与企业工作流",
+        "模型",
         "基础设施与算力",
-        "开发者"
+        "开发与部署",
+        "企业用户"
       ],
       "eventIds": [
         "EV-0e4bddfd5c129618",
@@ -5503,9 +5521,9 @@
       "aliases": [],
       "tags": [
         "模型",
-        "制造业",
+        "模型",
         "基础设施与算力",
-        "物理自动化",
+        "开发与部署",
         "开发者"
       ],
       "eventIds": [
@@ -5533,11 +5551,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
-        "企业软件平台",
         "企业用户",
+        "开发者",
+        "知识与搜索",
         "生产力与企业工作流",
-        "个人用户"
+        "软件开发"
       ],
       "eventIds": [
         "EV-7a85e21802efd8b2",
@@ -5560,10 +5578,10 @@
       ],
       "tags": [
         "模型",
-        "制造业",
-        "企业软件平台",
-        "企业用户",
-        "基础设施与算力"
+        "模型",
+        "基础设施与算力",
+        "开发与部署",
+        "能源与公用事业"
       ],
       "eventIds": [
         "EV-6b668e4655192209",
@@ -5664,9 +5682,10 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-dc7ca88afc22099a",
         "EV-f01a13953fa7aaaa",
-        "EV-21fcd6420d6ff726",
         "EV-ba091f86fba39da0",
+        "EV-21fcd6420d6ff726",
         "EV-2d17a87d3863dcee",
         "EV-4ecc308baf04ff02",
         "EV-d626fbf563d8afc7",
@@ -5799,7 +5818,7 @@
         "EV-0b49d637d7c07ce0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-9fbf261b62c1d7c0",
         "EN-7d1507284a5757ca",
@@ -5906,10 +5925,10 @@
       "aliases": [],
       "tags": [
         "模型",
-        "企业级应用",
-        "企业软件平台",
+        "政府与公共部门",
         "企业用户",
-        "生产力与企业工作流"
+        "生产力与企业工作流",
+        "软件开发"
       ],
       "eventIds": [
         "EV-bce46f2e5cc68d5d",
@@ -5985,6 +6004,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-52f4f9d31fae9c44",
         "EV-58268b12aa406620",
         "EV-5ac5368309eace1a",
         "EV-b8686b4f41d1aa67",
@@ -6012,6 +6032,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-1372037e191a9587",
+        "EV-1c240446b94d16b1",
+        "EV-c5e9220424a3e463",
         "EV-0f6e4d81f3dbbb64",
         "EV-2d17a87d3863dcee",
         "EV-54451ee210a0d0d4",
@@ -6249,6 +6272,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-9c7ca787c7b4f7cf",
         "EV-34b7b2083170b680",
         "EV-16f359eab1f09a1d",
         "EV-81f3efe8cc085ef4",
@@ -6348,7 +6372,7 @@
         "EV-e8e47f4bb528e107"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-08",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-6a50fbf0b970c03a",
         "EN-3a7bd3e2360a3d29",
@@ -6560,9 +6584,9 @@
       "tags": [
         "模型",
         "基础设施与算力",
-        "模型 API 服务",
+        "开发与部署",
         "开发者",
-        "开发与部署"
+        "软件开发"
       ],
       "eventIds": [
         "EV-532031a0c390a2e3",
@@ -6647,10 +6671,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
-        "物理自动化",
+        "开发与部署",
         "开发者",
-        "智能体",
-        "AI 开发与编排"
+        "软件开发",
+        "物理自动化"
       ],
       "eventIds": [
         "EV-7f3298069258b3ea",
@@ -6672,10 +6696,10 @@
         "P-1 AI"
       ],
       "tags": [
-        "企业级应用",
-        "制造业",
         "企业用户",
         "生产力与企业工作流",
+        "企业级应用",
+        "制造业",
         "生产力与企业工作流"
       ],
       "eventIds": [
@@ -6694,10 +6718,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
-        "企业软件平台",
         "企业用户",
         "生产力与企业工作流",
+        "企业级应用",
+        "企业软件平台",
         "生产力与企业工作流"
       ],
       "eventIds": [
@@ -6716,11 +6740,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
+        "金融服务",
         "企业用户",
         "生产力与企业工作流",
         "终端 AI 应用",
-        "行业应用",
-        "数据分析"
+        "行业应用"
       ],
       "eventIds": [
         "EV-986ac3a819d23388"
@@ -6738,10 +6762,10 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业软件平台",
+        "政府与公共部门",
         "生产力与企业工作流",
-        "智能体",
-        "政府与公共部门"
+        "企业软件平台",
+        "智能体"
       ],
       "eventIds": [
         "EV-3a7128e2d7ff149e"
@@ -6766,10 +6790,10 @@
       "aliases": [],
       "tags": [
         "基础设施与算力",
+        "开发与部署",
         "开发者",
         "AI 基础设施软件",
-        "智能体",
-        "AI 开发与编排"
+        "智能体"
       ],
       "eventIds": [
         "EV-463cb26b5e03c7f7",
@@ -6896,9 +6920,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
         "开发者",
         "软件开发",
+        "企业级应用",
         "终端 AI 应用",
         "软件开发与编程工具"
       ],
@@ -6954,8 +6978,8 @@
       "tags": [
         "模型",
         "基础设施与算力",
-        "内容创作",
         "开发者",
+        "内容创作",
         "智能体"
       ],
       "eventIds": [
@@ -7055,11 +7079,11 @@
         "MCP AI"
       ],
       "tags": [
-        "制造业",
-        "企业软件平台",
-        "企业用户",
-        "生产力与企业工作流",
-        "AI 可观测与治理"
+        "基础设施与算力",
+        "能源与公用事业",
+        "金融服务",
+        "政府与公共部门",
+        "企业用户"
       ],
       "eventIds": [
         "EV-7817dc69d5228cbb",
@@ -7187,6 +7211,7 @@
         "边缘与端侧"
       ],
       "eventIds": [
+        "EV-5ea74d357e73366b",
         "EV-a89bf7c0c4203ce2",
         "EV-48075ca70a5458ec",
         "EV-b3c7c4bff17063d8",
@@ -7217,7 +7242,7 @@
         "EV-5271985bba70f3d1"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-01",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
         "EN-8f5edf98060f12af",
@@ -7286,10 +7311,10 @@
       "aliases": [],
       "tags": [
         "模型",
-        "企业用户",
+        "模型",
         "基础设施与算力",
-        "内容创作",
-        "知识与搜索"
+        "开发与部署",
+        "金融服务"
       ],
       "eventIds": [
         "EV-e3382d1c1d7db751",
@@ -7526,11 +7551,12 @@
       "tags": [
         "模型",
         "企业用户",
+        "软件开发",
         "个人用户",
-        "物理自动化",
-        "智能体"
+        "物理自动化"
       ],
       "eventIds": [
+        "EV-842f6d47e9cae7e7",
         "EV-086902ad904c1c90",
         "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
@@ -7564,7 +7590,7 @@
         "EV-ecfc552af7344d65"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-08-31",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-6fcba5d96a4fadfd"
       ],
@@ -7927,9 +7953,9 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业级应用",
-        "制造业",
-        "企业软件平台",
+        "能源与公用事业",
+        "金融服务",
+        "政府与公共部门",
         "企业用户",
         "生产力与企业工作流"
       ],
@@ -8030,11 +8056,11 @@
         "AI Silicon"
       ],
       "tags": [
-        "制造业",
         "基础设施与算力",
+        "能源与公用事业",
         "开发者",
-        "汽车与交通",
-        "硬件与算力"
+        "制造业",
+        "汽车与交通"
       ],
       "eventIds": [
         "EV-b2d94511e4b4dfc8",
@@ -8063,8 +8089,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "智能体",
         "软件开发",
+        "智能体",
         "代码生成"
       ],
       "eventIds": [
@@ -8144,11 +8170,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "企业用户",
-        "生产力与企业工作流",
         "基础设施与算力",
-        "安全运营",
-        "AI 基础设施软件"
+        "开发与部署",
+        "金融服务",
+        "政府与公共部门",
+        "企业用户"
       ],
       "eventIds": [
         "EV-82e77abb1a77f81c"
@@ -10787,6 +10813,7 @@
       "aliases": [],
       "tags": [],
       "eventIds": [
+        "EV-83dfc99666955c16",
         "EV-4b60d535f321263d",
         "EV-03ce826429a97aa9",
         "EV-fabb3080e5263d33",
@@ -10799,7 +10826,7 @@
         "EV-e09bff5515b1896b"
       ],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-09-03",
+      "lastSeen": "2026-09-09",
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d"
       ],
@@ -126288,6 +126315,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-d219dec3f1fcefc1",
         "EV-a5a2807ca49753ee",
         "EV-7371ffb603de3e1c",
         "EV-0c00a6c681f22b98",
@@ -126354,6 +126382,7 @@
         "EN-8de7e44229714152",
         "EN-ced86039c0ad6a7c",
         "EN-842a7da99bd249d4",
+        "EN-b8b5450454175d6d",
         "EN-a81b5ef9c23cdf0c",
         "EN-a0d4ca5b6474c67c",
         "EN-52d25a9e30ba94f1",
@@ -126371,7 +126400,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-deployment_model-on_premise",
@@ -126480,7 +126509,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-use_case-finance_accounting",
@@ -126645,8 +126674,8 @@
         "EV-4c0af31f1399ea8c",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
-        "EV-0f6e4d81f3dbbb64",
         "EV-ba091f86fba39da0",
+        "EV-0f6e4d81f3dbbb64",
         "EV-2868ff08777b5de9",
         "EV-ff924015298048ba",
         "EV-29c0d969abde2020",
@@ -126724,7 +126753,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-industry-telecommunications",
@@ -126875,7 +126904,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-technology-multimodal",
@@ -127232,7 +127261,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-technology-tool_use",
@@ -127598,7 +127627,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -127607,6 +127636,7 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-2dff88f85e3bce86",
         "EV-f0a666f5416e049f",
         "EV-a40e5e8c638e323d",
@@ -127728,7 +127758,6 @@
         "EV-30466ebe86779a64",
         "EV-b695dedc9acda5dc",
         "EV-d7f561bc4f6cb02d",
-        "EV-85506f9f86779a6d",
         "EV-8861a42a8679562a",
         "EV-9055cb4fa2b4ee62",
         "EV-c3b8772c06a25dbc",
@@ -127763,6 +127792,7 @@
         "EV-535c2f4fb851332d"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-770ef1d2b6e24172",
         "EN-befd0093486b775d",
         "EN-76eda8ba20686b8e",
@@ -127873,7 +127903,6 @@
         "EN-a9aff9e0737a5d4a",
         "EN-4479ee1b529c5e82",
         "EN-3032646694ad17bb",
-        "EN-c04bd5ebd10ab696",
         "EN-befc92b3a019d04c",
         "EN-ef292e56955a1c10",
         "EN-a7dd4a797cf9990b",
@@ -127904,7 +127933,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-technology-computer_use",
@@ -128171,6 +128200,7 @@
       "typeLabel": "行业",
       "valueId": "financial_services",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-e70a48e36e99d57a",
         "EV-1bc31f98fa3e34cc",
         "EV-f5dd6dec49ad83aa",
@@ -128201,7 +128231,6 @@
         "EV-8bbc23e53e799d9d",
         "EV-189e43cb9fea8e1a",
         "EV-e3382d1c1d7db751",
-        "EV-85506f9f86779a6d",
         "EV-a42e51959c627554",
         "EV-c0d19b8641a7a36c",
         "EV-5d581d112fdbd464",
@@ -128246,6 +128275,7 @@
         "EV-889f518dcce85a8f"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-8d4321d936320802",
         "EN-e4a72fa4f054e9be",
         "EN-c70eca6b0f88f44d",
@@ -128275,7 +128305,6 @@
         "EN-da454b02b4700b1f",
         "EN-11507a0e2f5e69d5",
         "EN-ee1e31ffef7dbe64",
-        "EN-c04bd5ebd10ab696",
         "EN-b314f58f5f506fd2",
         "EN-a972bc1b3220493e",
         "EN-7011e12e346d3d22",
@@ -128328,7 +128357,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-ai_market_subcategory-financial_services",
@@ -128477,7 +128506,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-ai_market_subcategory-development_deployment",
@@ -128486,6 +128515,7 @@
       "typeLabel": "AI 市场子类",
       "valueId": "development_deployment",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-89ec502a1340079a",
         "EV-657176fd0dff6209",
         "EV-cca4bd983a16b8d9",
@@ -128532,7 +128562,6 @@
         "EV-e3382d1c1d7db751",
         "EV-44c9a50b99c76a70",
         "EV-d7f561bc4f6cb02d",
-        "EV-85506f9f86779a6d",
         "EV-8861a42a8679562a",
         "EV-9055cb4fa2b4ee62",
         "EV-c0ec0c026233bea5",
@@ -128554,6 +128583,7 @@
         "EV-535c2f4fb851332d"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-447a48e5d0951831",
         "EN-336ab1deb42d6284",
         "EN-8eae6c54657e94be",
@@ -128597,7 +128627,6 @@
         "EN-ee1e31ffef7dbe64",
         "EN-245f1e177c5169cb",
         "EN-3032646694ad17bb",
-        "EN-c04bd5ebd10ab696",
         "EN-befc92b3a019d04c",
         "EN-a7dd4a797cf9990b",
         "EN-b5251b35f15bedc4",
@@ -128616,7 +128645,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-target_user-developer",
@@ -128625,6 +128654,7 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-f0a666f5416e049f",
         "EV-a40e5e8c638e323d",
         "EV-b9d8b3582f12bdc7",
@@ -128750,7 +128780,6 @@
         "EV-30466ebe86779a64",
         "EV-b695dedc9acda5dc",
         "EV-d7f561bc4f6cb02d",
-        "EV-85506f9f86779a6d",
         "EV-8861a42a8679562a",
         "EV-9055cb4fa2b4ee62",
         "EV-c3b8772c06a25dbc",
@@ -128811,6 +128840,7 @@
         "EV-a9fe726c4ea2a17b"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-befd0093486b775d",
         "EN-76eda8ba20686b8e",
         "EN-9fe430e5274621be",
@@ -128924,7 +128954,6 @@
         "EN-a9aff9e0737a5d4a",
         "EN-4479ee1b529c5e82",
         "EN-3032646694ad17bb",
-        "EN-c04bd5ebd10ab696",
         "EN-befc92b3a019d04c",
         "EN-ef292e56955a1c10",
         "EN-a7dd4a797cf9990b",
@@ -128978,7 +129007,7 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-03"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-product_form-developer_tool",
@@ -129684,6 +129713,7 @@
       "valueId": "model",
       "eventIds": [
         "EV-df2b04d9d720c544",
+        "EV-85506f9f86779a6d",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
         "EV-b231e1a452a7c74a",
@@ -129722,7 +129752,6 @@
         "EV-ad40755ca624afe7",
         "EV-44c9a50b99c76a70",
         "EV-d7f561bc4f6cb02d",
-        "EV-85506f9f86779a6d",
         "EV-8861a42a8679562a",
         "EV-0e4bddfd5c129618",
         "EV-0e84a2f49d765ce3",
@@ -129768,6 +129797,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-cbe5cc267353560e",
         "EV-6a5b724c821567f3",
         "EV-a251b011afec190d",
         "EV-d32e50951ff7f9a1",
@@ -129933,6 +129963,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-9c7ca787c7b4f7cf",
         "EV-b1ac270277a5c1bc",
         "EV-bed92f9b4b3664e2",
         "EV-9530bb61702d4a33",
@@ -129960,6 +129991,7 @@
       ],
       "entityIds": [
         "EN-e7e7b91d8a1d8b01",
+        "EN-c04bd5ebd10ab696",
         "EN-336ab1deb42d6284",
         "EN-be9d587defa1f0c0",
         "EN-8d4321d936320802",
@@ -129990,7 +130022,6 @@
         "EN-e5b0bf1bf239d3ec",
         "EN-245f1e177c5169cb",
         "EN-3032646694ad17bb",
-        "EN-c04bd5ebd10ab696",
         "EN-b5251b35f15bedc4",
         "EN-634561e92b7593c3",
         "EN-2f265a693b2897f1",
@@ -130135,7 +130166,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-ai_market_application-models",
@@ -130144,6 +130175,7 @@
       "typeLabel": "AI 市场细分",
       "valueId": "models",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-657176fd0dff6209",
         "EV-f5dd6dec49ad83aa",
         "EV-55e7c286e95be405",
@@ -130167,7 +130199,6 @@
         "EV-f8c3a83d883c9b22",
         "EV-e3382d1c1d7db751",
         "EV-44c9a50b99c76a70",
-        "EV-85506f9f86779a6d",
         "EV-8861a42a8679562a",
         "EV-0e4bddfd5c129618",
         "EV-5d581d112fdbd464",
@@ -130178,6 +130209,7 @@
         "EV-535c2f4fb851332d"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-336ab1deb42d6284",
         "EN-c70eca6b0f88f44d",
         "EN-8ab71d56a963f706",
@@ -130198,7 +130230,6 @@
         "EN-cbc62794911ff31b",
         "EN-ee1e31ffef7dbe64",
         "EN-245f1e177c5169cb",
-        "EN-c04bd5ebd10ab696",
         "EN-b5251b35f15bedc4",
         "EN-7011e12e346d3d22",
         "EN-a83a3af1a4866fd5",
@@ -130207,7 +130238,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-08-26"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-product_form-model_api_service",
@@ -130509,6 +130540,7 @@
       "typeLabel": "行业",
       "valueId": "energy_utilities",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-e70a48e36e99d57a",
         "EV-60f219702a66bf38",
         "EV-2dea56b0e97c1685",
@@ -130519,7 +130551,6 @@
         "EV-7817dc69d5228cbb",
         "EV-561e2028a6212b99",
         "EV-9fc8916c19c19f99",
-        "EV-85506f9f86779a6d",
         "EV-e579af588ad8cf64",
         "EV-d292329c0ec64c8f",
         "EV-b0ed8d5a37784214",
@@ -130529,6 +130560,7 @@
         "EV-4eb0556b8c72d410"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-8d4321d936320802",
         "EN-6861f63c27eb0ada",
         "EN-6fae0bc5a895aab8",
@@ -130539,7 +130571,6 @@
         "EN-e69f64149edae6b1",
         "EN-19a5848a577315c5",
         "EN-f96246b78ef26d59",
-        "EN-c04bd5ebd10ab696",
         "EN-2b81d85809794782",
         "EN-7ea76c82c786a5e1",
         "EN-e4540a7c8404b1be",
@@ -130550,7 +130581,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-16"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-industry-agriculture",
@@ -130777,7 +130808,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -130883,6 +130914,7 @@
         "EV-fa46e5177d548bad",
         "EV-4b545e310ded2baa",
         "EV-778ae7684a4d782e",
+        "EV-5e1fdcb8a5a96c6d",
         "EV-129ffa6be41bb485",
         "EV-22f0d8caaa65a6a2",
         "EV-815fdc6e8911b026",
@@ -131025,6 +131057,7 @@
         "EN-5d11926dd637b275",
         "EN-d3565d297d476f10",
         "EN-25690754dd14bd1b",
+        "EN-a65f59e21ecf47ab",
         "EN-916a98f0fa2a39af",
         "EN-8dfe7dd8f82c0f5b",
         "EN-4e358c403850a88a",
@@ -131068,7 +131101,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-target_user-business_user",
@@ -131077,6 +131110,7 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-bce46f2e5cc68d5d",
         "EV-2dff88f85e3bce86",
         "EV-81bbaaec2965864a",
@@ -131213,7 +131247,6 @@
         "EV-40d196865997025c",
         "EV-b348083270be6c65",
         "EV-b695dedc9acda5dc",
-        "EV-85506f9f86779a6d",
         "EV-a42e51959c627554",
         "EV-c0d19b8641a7a36c",
         "EV-c3b8772c06a25dbc",
@@ -131323,6 +131356,7 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "FICO-6f92e043fe518e14",
         "EN-770ef1d2b6e24172",
         "EN-ee04228c5c6d8b08",
@@ -131453,7 +131487,6 @@
         "EN-8bb4f88fd3cf9b29",
         "EN-1c5483264189feef",
         "EN-4479ee1b529c5e82",
-        "EN-c04bd5ebd10ab696",
         "EN-b314f58f5f506fd2",
         "EN-a972bc1b3220493e",
         "EN-ef292e56955a1c10",
@@ -131550,7 +131583,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-industry-automotive_transportation",
@@ -131727,6 +131760,7 @@
       "typeLabel": "应用场景",
       "valueId": "software_development",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-89ec502a1340079a",
         "EV-0ea2bbb7280091f2",
         "EV-8ad153b984ba8729",
@@ -131771,7 +131805,6 @@
         "EV-f3bb064250dba2b2",
         "EV-e0a31302688c81ec",
         "EV-d7f561bc4f6cb02d",
-        "EV-85506f9f86779a6d",
         "EV-c0ec0c026233bea5",
         "EV-03f661e8dcdf1b58",
         "EV-0e4bddfd5c129618",
@@ -131802,6 +131835,7 @@
         "EV-129ffa6be41bb485",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-5ff6037816b64323",
         "EV-0f6e4d81f3dbbb64",
         "EV-b8a7ddde8a7e42c8",
         "EV-3a4acc92731cb5ac",
@@ -131836,6 +131870,7 @@
         "EV-79d4cce8950d7639"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-447a48e5d0951831",
         "EN-27d914a99e32f0f2",
         "EN-647aebd730e6d6b2",
@@ -131878,7 +131913,6 @@
         "EN-15c785fe4bcb86f5",
         "EN-a5e5f031b6f878cf",
         "EN-3032646694ad17bb",
-        "EN-c04bd5ebd10ab696",
         "EN-a7dd4a797cf9990b",
         "EN-e78bdebae031095b",
         "EN-b5251b35f15bedc4",
@@ -131902,6 +131936,7 @@
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
         "EN-916a98f0fa2a39af",
+        "EN-0effe3ae84a909f7",
         "EN-7d3194f79e645c42",
         "EN-bbdefa2950f49882",
         "EN-0b9ca57f53ba758b",
@@ -131930,7 +131965,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-ai_market_subcategory-software_development_coding",
@@ -132047,6 +132082,7 @@
       "typeLabel": "应用场景",
       "valueId": "productivity_enterprise_workflows",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-bce46f2e5cc68d5d",
         "EV-81bbaaec2965864a",
         "EV-a40e5e8c638e323d",
@@ -132114,7 +132150,6 @@
         "EV-2083b9eda52a3f76",
         "EV-8c2fdaad276818b0",
         "EV-b695dedc9acda5dc",
-        "EV-85506f9f86779a6d",
         "EV-a42e51959c627554",
         "EV-9055cb4fa2b4ee62",
         "EV-c3b8772c06a25dbc",
@@ -132152,6 +132187,7 @@
         "EV-23ae55daa341be06",
         "EV-12ca2aae7bfcd080",
         "EV-acf1bcb321414706",
+        "EV-a1a60daa9b0cd597",
         "EV-57944eebac69d510",
         "EV-57d3b7aa1a2f0fda",
         "EV-2f54f55d7b02fa69",
@@ -132165,6 +132201,7 @@
         "EV-f5aec01f1466f6bb"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "FICO-6f92e043fe518e14",
         "EN-ee04228c5c6d8b08",
         "EN-76eda8ba20686b8e",
@@ -132231,7 +132268,6 @@
         "EN-ef2bee7868007cd4",
         "EN-8311b78e7ece59dd",
         "EN-4479ee1b529c5e82",
-        "EN-c04bd5ebd10ab696",
         "EN-b314f58f5f506fd2",
         "EN-befc92b3a019d04c",
         "EN-ef292e56955a1c10",
@@ -132266,6 +132302,7 @@
         "EN-50e2a4156631df49",
         "EN-4bd78d9884b2d958",
         "EN-b1d07f1a647ba7fb",
+        "EN-5fa790f3630f4914",
         "EN-3cce50ffb12f1a69",
         "EN-6673505cd5e4d4fa",
         "EN-82a31e57d3a2fa17",
@@ -132277,13 +132314,14 @@
         "EN-bbdefa2950f49882"
       ],
       "fdeIds": [
+        "FDE-c3f6d4928b2b8488",
         "FDE-e32500a9c4f90e91",
         "FDE-a9fc583eb4065d4d",
         "FDE-34bcdf91ba37fced"
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-ai_market_subcategory-productivity_enterprise_workflows",
@@ -132395,7 +132433,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-technology-vision_language",
@@ -132751,6 +132789,7 @@
       "eventIds": [
         "EV-657176fd0dff6209",
         "EV-fd329b4350f404ef",
+        "EV-1c240446b94d16b1",
         "EV-617f1daf708475d0",
         "EV-ea2598236eae915f",
         "EV-5111b297a0234e46",
@@ -132766,6 +132805,7 @@
       "entityIds": [
         "EN-336ab1deb42d6284",
         "EN-b97e07c31e87f7d0",
+        "EN-7d3194f79e645c42",
         "EN-9fbf261b62c1d7c0",
         "EN-4721e06a8b6d85ff",
         "EN-bbdefa2950f49882",
@@ -132778,7 +132818,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-09-06"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-technology-reasoning",
@@ -132872,6 +132912,7 @@
       "valueId": "physical_automation",
       "eventIds": [
         "EV-a2f902b9707ffd02",
+        "EV-1f0c1fa47eb63e4b",
         "EV-140ecf4fabe544ba",
         "EV-987cb2e5e20f79ce",
         "EV-c6c297156ff274ac",
@@ -132928,8 +132969,8 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
-        "EV-66561ec28d8b1fec",
         "EV-ba091f86fba39da0",
+        "EV-66561ec28d8b1fec",
         "EV-8e0c25aebb1d4f5f",
         "EV-358643eefe0a5df5",
         "EV-4465e8bfd74508a6",
@@ -132987,6 +133028,7 @@
       ],
       "entityIds": [
         "EN-94cca1a82802fa64",
+        "EN-0bc55b0ee44bae55",
         "EN-a31f26263a2fe821",
         "EN-9a970ad7900121db",
         "EN-1913c6ab46df3a68",
@@ -133091,7 +133133,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-industry-logistics_supply_chain",
@@ -134266,6 +134308,7 @@
       "typeLabel": "行业",
       "valueId": "government_public_sector",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-259566f35ea4f66d",
         "EV-8ad153b984ba8729",
         "EV-e70a48e36e99d57a",
@@ -134280,7 +134323,6 @@
         "EV-561e2028a6212b99",
         "EV-9fc8916c19c19f99",
         "EV-e3382d1c1d7db751",
-        "EV-85506f9f86779a6d",
         "EV-e9d06e8a06aa7318",
         "EV-e579af588ad8cf64",
         "EV-fdfd4bf00571bb35",
@@ -134302,6 +134344,7 @@
         "EV-3a7128e2d7ff149e"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-607a596a603dd679",
         "EN-647aebd730e6d6b2",
         "EN-8d4321d936320802",
@@ -134316,7 +134359,6 @@
         "EN-19a5848a577315c5",
         "EN-f96246b78ef26d59",
         "EN-ee1e31ffef7dbe64",
-        "EN-c04bd5ebd10ab696",
         "EN-4e4b333252f207fd",
         "EN-2b81d85809794782",
         "EN-8e8cc11d1475231b",
@@ -134344,7 +134386,7 @@
         "HW-25eea5677838fb54"
       ],
       "firstSeen": "2026-03-19",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-use_case-knowledge_search",
@@ -134353,6 +134395,7 @@
       "typeLabel": "应用场景",
       "valueId": "knowledge_search",
       "eventIds": [
+        "EV-85506f9f86779a6d",
         "EV-2dff88f85e3bce86",
         "EV-81bbaaec2965864a",
         "EV-ab839326ca9597d8",
@@ -134374,7 +134417,6 @@
         "EV-e3382d1c1d7db751",
         "EV-30466ebe86779a64",
         "EV-b348083270be6c65",
-        "EV-85506f9f86779a6d",
         "EV-83085b0046c7275c",
         "EV-4c247b02485de09b",
         "EV-e9d06e8a06aa7318",
@@ -134388,6 +134430,7 @@
         "EV-10fe2269806246e8"
       ],
       "entityIds": [
+        "EN-c04bd5ebd10ab696",
         "EN-770ef1d2b6e24172",
         "EN-ee04228c5c6d8b08",
         "EN-05bb7905b99d8025",
@@ -134408,7 +134451,6 @@
         "EN-ee1e31ffef7dbe64",
         "EN-a9aff9e0737a5d4a",
         "EN-1c5483264189feef",
-        "EN-c04bd5ebd10ab696",
         "EN-8d319684b6042af4",
         "EN-b10da733dff99be1",
         "EN-4e4b333252f207fd",
@@ -134423,7 +134465,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -134860,6 +134902,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-52f4f9d31fae9c44",
         "EV-3ad9a2bb87c407dd",
         "EV-6ff94e2e732463de",
         "EV-6d8bd9041d36c769",
@@ -134898,6 +134941,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-66626c5426f4a9a0",
+        "EV-cb9b67636ecdbfd3",
         "EV-0f6e4d81f3dbbb64",
         "EV-4ecc308baf04ff02",
         "EV-50e7de294816f918",
@@ -135369,6 +135414,7 @@
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
         "EN-f8048254c29fa79e",
+        "EN-19079a919c59bfc5",
         "EN-44d980dac0286a43",
         "EN-669e058dc0be1a95",
         "EN-2db317222c996b63",
@@ -135386,6 +135432,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-39485c329d1abd9e",
         "EN-72fcf35a691c9bc5",
         "EN-bbdefa2950f49882",
         "EN-32e83e92d45d71f6",
@@ -135809,7 +135856,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-industry-professional_services",
@@ -136238,6 +136285,7 @@
       "valueId": "model_context_protocol",
       "eventIds": [
         "EV-ed8260ee9a7a80af",
+        "EV-5e1fdcb8a5a96c6d",
         "EV-a2c13c14efec9218",
         "EV-21d4133cd8711813",
         "EV-99b2eee925860832",
@@ -136260,6 +136308,7 @@
       ],
       "entityIds": [
         "EN-c70eca6b0f88f44d",
+        "EN-a65f59e21ecf47ab",
         "EN-9d3508a8484ee252",
         "EN-10182ab855ff7727",
         "EN-59bba357145ca539",
@@ -136278,7 +136327,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-11-17",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-ai_market_category-physical_ai",
@@ -136338,7 +136387,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-technology-retrieval_augmented_generation",

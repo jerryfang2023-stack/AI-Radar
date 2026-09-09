@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T01:20:24.959Z",
-    "latestDataDate": "2026-09-08",
-    "currentDate": "2026-09-08",
-    "eventCount": 2733,
+    "generatedAt": "2026-09-09T04:13:54.793Z",
+    "latestDataDate": "2026-09-09",
+    "currentDate": "2026-09-09",
+    "eventCount": 2761,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b255934b06281883",
       "EV-d60335a12d394f65",
       "EV-35df58b993efa71a",
       "EV-c728a9809f57bba8",
@@ -38,13 +39,14 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-19",
-    "lastSeen": "2026-09-08",
+    "lastSeen": "2026-09-09",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-b255934b06281883",
         "EV-35df58b993efa71a",
         "EV-d60335a12d394f65",
         "EV-c728a9809f57bba8",
@@ -60,6 +62,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b255934b06281883",
+        "dataDate": "2026-09-09",
+        "date": "2026-09-09",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.266 发布：修复 2.1.265 网关回归问题",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a625159d18da5718"
+        ]
+      },
       {
         "id": "EV-35df58b993efa71a",
         "dataDate": "2026-09-08",

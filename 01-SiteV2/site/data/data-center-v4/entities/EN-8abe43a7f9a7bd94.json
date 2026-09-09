@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T01:20:24.959Z",
-    "latestDataDate": "2026-09-08",
-    "currentDate": "2026-09-08",
-    "eventCount": 2733,
+    "generatedAt": "2026-09-09T04:13:54.793Z",
+    "latestDataDate": "2026-09-09",
+    "currentDate": "2026-09-09",
+    "eventCount": 2761,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -17,23 +17,27 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [
-      "快手"
+      "快手",
+      "可灵AI"
     ],
     "verificationStatus": "candidate",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
+      "EV-1f0c1fa47eb63e4b",
       "EV-1fd2dfea0a3f7322"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-01",
+    "lastSeen": "2026-09-09",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-1f0c1fa47eb63e4b"
+      ],
       "deployments": [
         "EV-1fd2dfea0a3f7322"
       ],
@@ -44,6 +48,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-1f0c1fa47eb63e4b",
+        "dataDate": "2026-09-09",
+        "date": "2026-09-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "可灵AI完成超15亿新融资，国家人工智能基金入局",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-0bc55b0ee44bae55"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8abe43a7f9a7bd94",
+          "EN-0bc55b0ee44bae55"
+        ]
+      },
       {
         "id": "EV-1fd2dfea0a3f7322",
         "dataDate": "2026-09-01",

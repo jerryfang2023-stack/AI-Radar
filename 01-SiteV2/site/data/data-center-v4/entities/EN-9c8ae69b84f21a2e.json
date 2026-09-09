@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T01:20:24.959Z",
-    "latestDataDate": "2026-09-08",
-    "currentDate": "2026-09-08",
-    "eventCount": 2733,
+    "generatedAt": "2026-09-09T04:13:54.793Z",
+    "latestDataDate": "2026-09-09",
+    "currentDate": "2026-09-09",
+    "eventCount": 2761,
     "quarantinedEventCount": 24
   },
   "entity": {
@@ -63,6 +63,7 @@
       "EV-c11ee0da38376254",
       "EV-6a6ff349579765ad",
       "EV-7ff24ae733821395",
+      "EV-d219dec3f1fcefc1",
       "EV-86537be17d50ff20",
       "EV-6b7917bd7edd4bde",
       "EV-e70b2c66b996d138",
@@ -84,7 +85,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-05-18",
-    "lastSeen": "2026-09-08",
+    "lastSeen": "2026-09-09",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -116,6 +117,7 @@
         "EV-c7b81290859057b0"
       ],
       "productsServices": [
+        "EV-d219dec3f1fcefc1",
         "EV-411dc97b66bd8251",
         "EV-a251b011afec190d",
         "EV-eb3b431d4ce98ec5",
@@ -154,7 +156,7 @@
     "timeline": [
       {
         "id": "EV-987cb2e5e20f79ce",
-        "dataDate": "2026-09-08",
+        "dataDate": "2026-09-09",
         "date": "2026-08-25",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -240,6 +242,34 @@
           "EN-9a970ad7900121db",
           "EN-9c8ae69b84f21a2e",
           "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-d219dec3f1fcefc1",
+        "dataDate": "2026-09-09",
+        "date": "2026-09-08",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "安全企业 Calif 披露用 AI 开发的首个微信零点击蠕虫 WeWorm，漏洞已修复",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-b8b5450454175d6d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b8b5450454175d6d",
+          "EN-9c8ae69b84f21a2e"
         ]
       },
       {
@@ -1678,6 +1708,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-d7a432ffeb3347a4",
         "EV-8a1086b789782cff",
         "EV-860fbba841badfec",
         "EV-13c5fc1373115b65",
@@ -1699,17 +1730,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-target_user-business_user",
+        "TX-use_case-software_development",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-sales",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-sales",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-use_case-content_creation",
         "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-product_form-end_user_application",
@@ -1737,7 +1768,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -1893,6 +1924,7 @@
       "valueId": "model",
       "eventIds": [
         "EV-df2b04d9d720c544",
+        "EV-85506f9f86779a6d",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
         "EV-b231e1a452a7c74a",
@@ -1931,7 +1963,6 @@
         "EV-ad40755ca624afe7",
         "EV-44c9a50b99c76a70",
         "EV-d7f561bc4f6cb02d",
-        "EV-85506f9f86779a6d",
         "EV-8861a42a8679562a",
         "EV-0e4bddfd5c129618",
         "EV-0e84a2f49d765ce3",
@@ -1977,6 +2008,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-cbe5cc267353560e",
         "EV-6a5b724c821567f3",
         "EV-a251b011afec190d",
         "EV-d32e50951ff7f9a1",
@@ -2142,6 +2174,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-9c7ca787c7b4f7cf",
         "EV-b1ac270277a5c1bc",
         "EV-bed92f9b4b3664e2",
         "EV-9530bb61702d4a33",
@@ -2169,6 +2202,7 @@
       ],
       "entityIds": [
         "EN-e7e7b91d8a1d8b01",
+        "EN-c04bd5ebd10ab696",
         "EN-336ab1deb42d6284",
         "EN-be9d587defa1f0c0",
         "EN-8d4321d936320802",
@@ -2199,7 +2233,6 @@
         "EN-e5b0bf1bf239d3ec",
         "EN-245f1e177c5169cb",
         "EN-3032646694ad17bb",
-        "EN-c04bd5ebd10ab696",
         "EN-b5251b35f15bedc4",
         "EN-634561e92b7593c3",
         "EN-2f265a693b2897f1",
@@ -2344,7 +2377,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-08"
+      "lastSeen": "2026-09-09"
     },
     {
       "id": "TX-use_case-content_creation",
@@ -2589,6 +2622,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-52f4f9d31fae9c44",
         "EV-3ad9a2bb87c407dd",
         "EV-6ff94e2e732463de",
         "EV-6d8bd9041d36c769",
@@ -2627,6 +2661,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-66626c5426f4a9a0",
+        "EV-cb9b67636ecdbfd3",
         "EV-0f6e4d81f3dbbb64",
         "EV-4ecc308baf04ff02",
         "EV-50e7de294816f918",
@@ -3098,6 +3134,7 @@
         "EN-916a98f0fa2a39af",
         "EN-8d291c7017252b07",
         "EN-f8048254c29fa79e",
+        "EN-19079a919c59bfc5",
         "EN-44d980dac0286a43",
         "EN-669e058dc0be1a95",
         "EN-2db317222c996b63",
@@ -3115,6 +3152,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-39485c329d1abd9e",
         "EN-72fcf35a691c9bc5",
         "EN-bbdefa2950f49882",
         "EN-32e83e92d45d71f6",
