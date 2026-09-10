@@ -470,11 +470,26 @@
   const $ = (selector) => root.querySelector(selector);
   const escape = (value) => String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
   const endpoint = "/ops/member-api/token-benefits";
-  let csrf = "", active = false, payload = null, preview = null, generation = 0, busy = false;
+  let csrf = "", active = false, payload = null, preview = null, generation = 0, busy = false, dirty = false;
   const operations = new Map();
   const selected = () => $("[data-token-season]").value;
   const status = (value) => { $("[data-token-status]").textContent = value; };
   const actionLabel = { configure: "修改配置", confirm: "确认分配", receipt: "登记发放" };
+  const distributionMode = (config) => config.distributionMode || (config.eligibleTypes.length ? "custom" : "season_total");
+  function totalRules(config) {
+    const period = (config.start || "历史起始日期") + "至" + (config.end || "待确定结束日期") + "（含开始日，不含结束日）";
+    return config.label + "按赛季总积分分配。计分期间：" + period + "。奖励由" + (config.provider || "待确认赞助商") + "提供，激励池共 " + config.amount + " " + config.unit + "。\n" +
+      "赛季结束后，结算时有效且本赛季总积分大于 0 的社群成员参与分配。个人额度 = 激励池额度 × 个人赛季总积分 ÷ 所有参与成员的赛季总积分之和。\n" +
+      "个人额度按整数最小单位向下取整，余量保留在激励池。积分不扣减，不计入小程序钱包积分。分配确认后锁定，实际发放另行登记。";
+  }
+  function formConfig(form) {
+    const data = new FormData(form), mode = data.get("distributionMode");
+    return { start: data.get("start"), end: data.get("end"), provider: data.get("provider"), unit: data.get("unit"), amount: Number(data.get("amount")), distributionMode: mode, eligibleTypes: mode === "custom" ? data.getAll("type") : [], rules: data.get("rules"), enabled: data.has("enabled") };
+  }
+  function fitRules() {
+    const rules = $('[name="rules"]');
+    if (rules?.readOnly && rules.style) { rules.style.height = "auto"; rules.style.height = (rules.scrollHeight + rules.offsetHeight - rules.clientHeight) + "px"; }
+  }
   function reset() {
     generation += 1; csrf = ""; payload = null; preview = null; operations.clear();
     for (const name of ["content", "preview", "records", "audits"]) $("[data-token-" + name + "]").innerHTML = "";
@@ -496,21 +511,24 @@
   }
   function render() {
     if (!payload) return;
-    preview = null; $("[data-token-preview]").innerHTML = "";
+    preview = null; dirty = false; $("[data-token-preview]").innerHTML = "";
     const config = payload.seasons.find((item) => item.id === selected());
     if (!config) throw new Error("赛季不存在");
     const batch = payload.batches.find((item) => item.config.id === selected());
-    $("[data-token-content]").innerHTML = '<form class="mo-schedule-editor" data-token-config><h2>赛季与激励池设置</h2><fieldset ' + (batch ? 'disabled' : '') + '><div class="mo-schedule-fields">' +
+    const total = distributionMode(config) === "season_total";
+    $("[data-token-content]").innerHTML = '<form class="mo-token-editor" data-token-config><h2>赛季与激励池设置</h2><fieldset ' + (batch ? 'disabled' : '') + '><div class="mo-token-fields">' +
+      '<label>Token 额度<input name="amount" type="number" min="0" max="1000000000000" step="1" required value="' + config.amount + '"></label>' +
+      '<label>计量单位<input name="unit" maxlength="40" required value="' + escape(config.unit) + '"></label><label>赞助商<input name="provider" maxlength="100" value="' + escape(config.provider) + '"></label>' +
       '<label>开始日期<input type="date" name="start" value="' + escape(config.start) + '"></label><label>结束日期（不含当天）<input type="date" name="end" value="' + escape(config.end) + '"></label>' +
-      '<label>供应方<input name="provider" maxlength="100" value="' + escape(config.provider) + '"></label><label>计量单位<input name="unit" maxlength="40" required value="' + escape(config.unit) + '"></label>' +
-      '<label>已落实额度（整数最小单位）<input name="amount" type="number" min="0" max="1000000000000" step="1" required value="' + config.amount + '"></label></div>' +
-      '<h3>参与奖励分配的计分类别</h3><div class="mo-token-types">' + payload.activityTypes.map((type) => '<label><input type="checkbox" name="type" value="' + escape(type.id) + '" ' + (config.eligibleTypes.includes(type.id) ? 'checked' : '') + '>' + escape(type.label) + '</label>').join("") + '</div>' +
-      '<label>对成员公布的规则<textarea name="rules" maxlength="2000">' + escape(config.rules) + '</textarea></label>' +
-      '<label class="mo-token-check"><input type="checkbox" name="enabled" ' + (config.enabled ? 'checked' : '') + '>公布激励池和规则</label><p>积分不扣减。按有效积分占比分配，向下取整，余量留在池中。供应方及计量单位不可混用。</p>' +
-      '<button type="submit">保存设置</button></fieldset></form>' +
-      (batch ? '<p>本季已确认分配，配置与积分快照已锁定。</p>' : '<button type="button" data-token-calculate>预览分配</button>');
-    $("[data-token-records]").innerHTML = batch ? '<h2>发放记录</h2><p>只登记已实际完成的发放，不会调用供应商。请勿填写 API 密钥。</p>' + table(batch.allocations, batch.config.unit, true) + '<p>未分配余量：' + batch.remaining + ' ' + escape(batch.config.unit) + '</p>' : "";
+      '</div><div class="mo-token-allocation"><label>分配方式<select name="distributionMode"><option value="season_total" ' + (total ? 'selected' : '') + '>赛季总积分（默认）</option><option value="custom" ' + (!total ? 'selected' : '') + '>自定义计分类别</option></select></label><p>按本赛季积分占比分配，积分不扣减。</p></div>' +
+      '<div data-token-custom ' + (total ? 'hidden' : '') + '><h3>参与分配的计分类别</h3><div class="mo-token-types">' + payload.activityTypes.map((type) => '<label><input type="checkbox" name="type" value="' + escape(type.id) + '" ' + (config.eligibleTypes.includes(type.id) ? 'checked' : '') + '>' + escape(type.label) + '</label>').join("") + '</div></div>' +
+      '<label><span data-token-rules-label>' + (total ? '分配规则（自动生成）' : '分配规则') + '</span><textarea name="rules" maxlength="2000" ' + (total ? 'readonly' : '') + '>' + escape(total && !batch ? totalRules(config) : config.rules) + '</textarea></label>' +
+      '<div class="mo-token-actions"><label class="mo-token-check"><input type="checkbox" name="enabled" ' + (config.enabled ? 'checked' : '') + '>公布激励池和规则</label><div><button type="submit">保存设置</button>' +
+      (batch ? '' : '<button class="mo-secondary" type="button" data-token-calculate>预览分配</button>') + '</div></div></fieldset>' +
+      (batch ? '<p class="mo-token-note">本季已确认分配，配置与积分快照已锁定。</p>' : '') + '</form>';
+    $("[data-token-records]").innerHTML = batch ? '<h2>发放记录</h2><p>只登记已实际完成的发放，不会自动发放。请勿填写 API 密钥。</p>' + table(batch.allocations, batch.config.unit, true) + '<p>未分配余量：' + batch.remaining + ' ' + escape(batch.config.unit) + '</p>' : "";
     $("[data-token-audits]").innerHTML = '<details><summary>最近操作记录</summary>' + payload.audits.map((audit) => '<p>' + escape(audit.created_at) + ' · ' + escape(audit.action.split("/")[0]) + ' · ' + escape(actionLabel[audit.action.split("/")[1]] || audit.action) + ' · ' + escape(audit.actor) + '</p>').join("") + '</details>';
+    fitRules();
   }
   async function load() {
     if (!csrf) return;
@@ -524,6 +542,7 @@
   }
   async function act(action, body) {
     if (!csrf || busy) return;
+    if (dirty && action !== "configure") { status("设置已修改，请先保存再预览分配"); return; }
     const key = selected(), current = generation;
     const signature = JSON.stringify({ key, action, body });
     const operationId = operations.get(signature) || globalThis.crypto.randomUUID();
@@ -555,11 +574,31 @@
     const data = new FormData(form);
     if (form.matches("[data-token-config]")) {
       const config = payload.seasons.find((item) => item.id === selected());
-      void act("configure", { revision: config.revision, config: { start: data.get("start"), end: data.get("end"), provider: data.get("provider"), unit: data.get("unit"), amount: Number(data.get("amount")), eligibleTypes: data.getAll("type"), rules: data.get("rules"), enabled: data.has("enabled") } });
+      const candidate = formConfig(form);
+      if (candidate.distributionMode === "custom" && !candidate.eligibleTypes.length) { status("请至少选择一个计分类别"); return; }
+      if (candidate.distributionMode === "season_total") candidate.rules = totalRules({ ...candidate, label: config.label });
+      void act("configure", { revision: config.revision, config: candidate });
     } else if (form.matches("[data-token-receipt]") && window.confirm("确认已在供应商处完成真实发放？这里只登记凭据，不自动发放。")) {
       void act("receipt", { memberId: Number(form.dataset.tokenReceipt), receipt: data.get("receipt") });
     }
   });
+  function editConfig(event) {
+    const form = event.target.closest("[data-token-config]");
+    if (!form || busy) return;
+    dirty = true; preview = null; $("[data-token-preview]").innerHTML = "";
+    const config = formConfig(form), total = config.distributionMode === "season_total";
+    $("[data-token-custom]").hidden = total;
+    $("[data-token-rules-label]").textContent = total ? "分配规则（自动生成）" : "分配规则";
+    const rules = form.querySelector('[name="rules"]');
+    rules.readOnly = total;
+    if (total) rules.value = totalRules({ ...config, label: payload.seasons.find((item) => item.id === selected()).label });
+    else if (event.target.name === "distributionMode") rules.value = "按所选计分类别的有效积分占比分配，个人额度按整数最小单位向下取整，余量留在激励池，积分不扣减。";
+    fitRules();
+    status("设置已修改，请保存");
+  }
+  root.addEventListener("input", editConfig);
+  root.addEventListener("change", editConfig);
+  window.addEventListener?.("resize", fitRules);
   $("[data-token-season]").addEventListener("change", () => { generation += 1; if (payload) render(); });
   document.querySelector("[data-member-operations]").addEventListener("membership:open", (event) => {
     active = event?.detail?.view === "membership-token";
