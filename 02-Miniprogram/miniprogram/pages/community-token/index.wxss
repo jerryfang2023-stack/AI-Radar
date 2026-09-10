@@ -1,10 +1,14 @@
 .token-page { padding: 24rpx 28rpx 80rpx; }
 .token-hero { padding: 34rpx; border-radius: 28rpx; background: linear-gradient(140deg,#071827,#0d426c); color: #fff; }
-.pool-head { display: flex; justify-content: space-between; align-items: center; gap: 16rpx; font-size: 22rpx; color: #d8b45e; font-weight: 700; }
-.pool-head text:last-child { background: #e6efea; border-radius: 8rpx; color: #4b7467; padding: 8rpx 12rpx; font-size: 18rpx; }
+.pool-head { margin-top: 30rpx; display: flex; justify-content: space-between; align-items: center; gap: 16rpx; font-size: 22rpx; color: #d8b45e; font-weight: 700; }
+.pool-status { background: #e6efea; border-radius: 8rpx; color: #4b7467; padding: 8rpx 12rpx; font-size: 18rpx; }
 .pool-unit { overflow-wrap: anywhere; display: block; font-size: 24rpx; color: #b0c1cd; }
-.pool-sponsor { margin-top: 30rpx; padding: 24rpx; border: 1rpx solid rgba(223,186,93,.55); border-radius: 16rpx; background: rgba(223,186,93,.12); color: #f4d68e; font-size: 34rpx; font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
-.pool-amount { display: block; margin: 20rpx 0 8rpx; font-size: 64rpx; color: #dfba5d; font-weight: 750; overflow-wrap: break-word; }
+.pool-sponsor { padding: 22rpx 26rpx 26rpx; border: 1rpx solid #b99a57; border-radius: 18rpx; background: linear-gradient(115deg,rgba(224,190,117,.2),rgba(224,190,117,.07) 50%,rgba(224,190,117,.18)); box-shadow: inset 0 0 0 6rpx rgba(224,190,117,.04), 0 8rpx 24rpx rgba(0,0,0,.12); text-align: center; }
+.sponsor-ornament { display: flex; align-items: center; justify-content: center; gap: 14rpx; margin-bottom: 12rpx; color: #dfba5d; font-size: 16rpx; }
+.sponsor-ornament view { width: 64rpx; height: 1rpx; background: #b99a57; opacity: .7; }
+.sponsor-name { display: block; color: #f4dca3; font-size: 34rpx; font-weight: 700; line-height: 1.5; letter-spacing: 1rpx; overflow-wrap: anywhere; }
+.sponsor-underline { width: 48rpx; height: 3rpx; margin: 16rpx auto 0; background: #dfba5d; }
+.pool-amount { display: block; margin: 12rpx 0 8rpx; font-size: 64rpx; color: #dfba5d; font-weight: 750; overflow-wrap: break-word; }
 .pool-footer { margin-top: 38rpx; padding-top: 24rpx; border-top: 1rpx solid rgba(255,255,255,.2); color: #b0c1cd; font-size: 22rpx; }
 .reward-heading { display: flex; margin: 42rpx 0 18rpx; justify-content: space-between; align-items: center; }
 .reward-heading text:first-child { font-size: 34rpx; font-weight: 750; color: #071827; }

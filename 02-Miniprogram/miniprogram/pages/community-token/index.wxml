@@ -6,8 +6,12 @@
     <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
     <block wx:if="{{pool}}">
       <view class="token-hero">
-        <view class="pool-head"><text>{{pool.label}}激励池</text><text>{{pool.status === 'draft' ? '筹备中' : pool.status === 'settled' ? '已结算' : '已公布'}}</text></view>
-        <view wx:if="{{pool.provider}}" class="pool-sponsor"><text>{{pool.provider}} 特约赞助</text></view>
+        <view wx:if="{{pool.provider}}" class="pool-sponsor">
+          <view class="sponsor-ornament" aria-hidden="true"><view></view><text>◆</text><view></view></view>
+          <text class="sponsor-name">特约赞助：{{pool.provider}}</text>
+          <view class="sponsor-underline" aria-hidden="true"></view>
+        </view>
+        <view class="pool-head"><text>{{pool.label}}激励</text><text wx:if="{{pool.status === 'draft' || pool.status === 'settled'}}" class="pool-status">{{pool.status === 'draft' ? '筹备中' : '已结算'}}</text></view>
         <text class="pool-amount">{{pool.amount === null ? '待公布' : pool.amount}}</text>
         <text class="pool-unit">{{pool.model ? pool.model + ' ' : ''}}{{pool.unit}}</text>
         <view class="pool-footer"><text>时间：{{startDate}}至{{endDate}}</text></view>
