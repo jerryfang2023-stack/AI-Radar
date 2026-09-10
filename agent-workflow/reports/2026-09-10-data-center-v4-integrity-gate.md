@@ -5,7 +5,7 @@
 - claims: 137
 - tag_assertions: 14
 - facet_assertions: 14
-- reviewed_event_classifications: 0
+- reviewed_event_classifications: 21
 - fde_records: 2
 - fde_observations: 2
 - hardware_records: 1

@@ -191,6 +191,30 @@ test("canonical funding amount repairs a truncated K metric from the complete ev
   assert.equal(canonicalFundingEventAmount({ metrics: ["$800K", "$800,000"] }), "$800K");
 });
 
+test("withdrawn financing fails eligibility and persisted-card consistency", () => {
+  const card = { company: { entity_id: "EN-listen", name: "Listen Labs" }, financing: { amount: "$1.5B" } };
+  const base = { event_id: "EV-withdrawn", event_type: "funding", event_status: "announced",
+    publication_status: "verified", metrics: ["$1.5B"], object: "$1.5B funding round" };
+  for (const title of [
+    "Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
+    "Listen Labs shelved its $1.5B funding round",
+    "Listen Labs 取消15亿美元融资轮，转向收购谈判",
+    "Listen Labs funding round never closed",
+  ]) {
+    const event = { ...base, display_title_zh: title };
+    assert.equal(isEligibleFundingInsightEvent(event), false, title);
+    assert.ok(fundingEventCardConsistencyProblems(card, event).includes("funding_event_not_completed"), title);
+    assert.deepEqual(verifiedFundingEventCardCoverageProblems([event], [], [], []), []);
+  }
+  for (const event_status of ["withdrawn", "planned", "in_progress", "rumored", "disputed"]) {
+    const event = { ...base, event_status, display_title_zh: "Listen Labs raises $1.5B" };
+    assert.ok(fundingEventCardConsistencyProblems(card, event).includes("funding_event_not_completed"));
+  }
+  const valid = { ...base, event_status: "completed", display_title_zh: "Acme AI raises $1.5B for data scrubbing" };
+  assert.equal(isEligibleFundingInsightEvent(valid), true);
+  assert.deepEqual(fundingEventCardConsistencyProblems(card, valid), []);
+});
+
 test("valuation-only fundraising talks cannot become a financing amount", () => {
   const event = {
     event_type: "funding",
@@ -1327,6 +1351,32 @@ test("单事件增量生成不会删除同日已经发布的其他融资卡", ()
     const result = JSON.parse(fs.readFileSync(output, "utf8"));
     assert.equal(result.meta.counts.funding_events, 2);
     assert.deepEqual(result.cards.map((card) => card.triggered_by_event_id).sort(), ["EV-1", "EV-2"]);
+  } finally {
+    fs.rmSync(projectRoot, { recursive: true, force: true });
+  }
+});
+
+test("withdrawal recovery removes the old card and retains its blocked reason on repeated runs", () => {
+  const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-withdrawn-"));
+  try {
+    writeDailyFundingFixture(projectRoot, [{ event_id: "EV-1", event_type: "funding",
+      event_status: "withdrawn", publication_status: "withdrawn",
+      display_title_zh: "Acme 取消2000万美元融资", metrics: ["$20 million"] }]);
+    const output = path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/2026-07-26.json");
+    fs.mkdirSync(path.dirname(output), { recursive: true });
+    fs.writeFileSync(output, JSON.stringify({ cards: [validCard()],
+      queue: [{ event_id: "EV-1", status: "auto_published", problems: [] }] }));
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      childProcess.execFileSync(process.execPath, [
+        path.join(root, "agent-workflow/tools/generate-funding-insights-deepseek.mjs"),
+        "--date=2026-07-26", "--write=true",
+      ], { cwd: projectRoot, env: { ...process.env, DEEPSEEK_API_KEY: "", TAVILY_API_KEY: "", EXA_API_KEY: "" }, stdio: "pipe" });
+      const result = JSON.parse(fs.readFileSync(output, "utf8"));
+      assert.deepEqual(result.cards, []);
+      assert.equal(result.meta.counts.funding_events, 1);
+      assert.equal(result.meta.counts.blocked, 1);
+      assert.deepEqual(result.queue, [{ event_id: "EV-1", status: "blocked", problems: ["funding_event_not_completed"] }]);
+    }
   } finally {
     fs.rmSync(projectRoot, { recursive: true, force: true });
   }

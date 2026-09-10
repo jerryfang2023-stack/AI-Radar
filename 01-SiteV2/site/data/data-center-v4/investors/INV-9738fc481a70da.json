@@ -21,7 +21,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -29,9 +29,8 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-09-09",
+    "latest_disclosed_at": "2026-06-30",
     "role_counts": {
-      "historical_or_ambiguous": 1,
       "other_current_round": 1,
       "participant": 2
     },
@@ -53,46 +52,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-97f9035826431011",
-        "funding_insight_id": "FI-1edf45f7a4d3e17c",
-        "event_ids": [
-          "EV-905925eb2e6059c1"
-        ],
-        "company_entity_id": "EN-53f5d317b4126bfb",
-        "company_canonical_entity_id": "",
-        "company_name": "Listen Labs",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "$1.5B",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 1500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "15 亿美元"
-        },
-        "announced_at": "2026-09-09",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "领投B轮融资",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-0286b52989ae7567",
-            "source_url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-            "source_title": "AI研究初创公司Listen Labs取消15亿美元融资轮，转向与Salesforce洽谈",
-            "source_content_hash": "2581a26611a0d0ca",
-            "quote": "Listen Labs was previously valued at $500 million when it announced a $69 million Series B round in late January led by Ribbit Capital",
-            "quote_hash": "5495a8a84d5ee506c2daa0779f35f17d109b976950a2533f748c2768edb810fc"
-          }
-        ]
-      },
       {
         "activity_id": "IA-252e7a8d4f9f336c",
         "funding_insight_id": "FI-d24e79349c1e9713",
@@ -216,14 +175,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-0286b52989ae7567",
-        "source_url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-        "source_title": "AI研究初创公司Listen Labs取消15亿美元融资轮，转向与Salesforce洽谈",
-        "source_content_hash": "2581a26611a0d0ca",
-        "quote": "Listen Labs was previously valued at $500 million when it announced a $69 million Series B round in late January led by Ribbit Capital",
-        "quote_hash": "5495a8a84d5ee506c2daa0779f35f17d109b976950a2533f748c2768edb810fc"
-      },
       {
         "source_id": "FISRC-ec090e2bf0f8f6e9",
         "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",

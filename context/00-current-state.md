@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-09-09
+last_updated: 2026-09-10
 use_when:
   - large task startup
   - dispatch planning
@@ -31,9 +31,9 @@ The Data Center now has an independent Git baseline: `GUANLAN-DATA-CENTER-V4.8.1
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
 - Current data-lake contract: `DATA-LAKE-V4.1-24-table`; JSONL and DuckDB must expose exactly the same 24-table V4 allowlist, including reviewed event classifications.
 - Current private evidence store: `PRIVATE-EVIDENCE-STORE-V2.0`; it is the sole complete-original store, deduplicates bodies by `content_hash`, and is physically outside the public repository and Vault. Public V4 data, the Vault, and the website never retain complete bodies.
-- Current accepted Funding Insights projection: 290 cards through 2026-09-09, including 35 China-market cards. Three accepted Mistral research cards merge into one new public EUR 3 billion Series D card; three other eligible events are already covered. A DeepSeek valuation-only disclosure is excluded from financing proceeds, not deleted from canonical evidence. Website and Mini Program full-commit/release-ID receipts independently establish publication.
-- Current Data Center accepted frontstage: 2,761 events, 219 companies, 343 products, 61 people, 1,375 investors, 388 relationships, 140 FDE records, 103 hardware records, 68 community items, and 1,260 viewpoints for 2026-09-09.
-- The 2026-09-09 daily bundle contains 41 canonical events and 96 Claims from 239 RawDocuments, with two FDE records and no hardware record. Source/Claim traceability is 100%. Run 34310028499 restored accepted intake from run 34309251252 without recollection. Crore title amounts are protected before translation; funding amount semantics distinguish spaced round labels and qualified valuations. The failed 09:50 scheduled closure remains historical evidence; afternoon windows must not be marked passed early.
+- Current accepted Funding Insights projection: 292 cards through 2026-09-10, including 35 China-market cards. Cato (EUR 6 million seed) and Cognition AI (USD 2 billion Series E) are the two new public cards. One eligible event is deduplicated; the cancelled Listen Labs financing is withdrawn, with its original evidence and blocked queue reason retained. Website and Mini Program full-commit/release-ID receipts independently establish publication.
+- Current Data Center accepted frontstage: 2,795 events, 219 companies, 343 products, 61 people, 1,381 investors, 392 relationships, 142 FDE records, 104 hardware records, 70 community items, and 1,273 viewpoints for 2026-09-10.
+- The 2026-09-10 daily bundle contains 44 canonical events and 137 Claims from 236 RawDocuments, with two FDE records and one hardware record. Source/Claim traceability is 100%. Manual repair reuses the accepted batch from run 34420234024; it changes only the cancelled transaction's state and dependent projections, without recollection or new model research. The morning controllers ran successfully; afternoon tasks remain waiting until their scheduled windows.
 - Current private-evidence inventory is owned by the latest private-evidence gate rather than a copied count in this state document.
 - Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task. Missed scheduled morning, recovery, and closure phases that start after their useful window write an observable `superseded` report, while manual recovery and final closure remain executable. The watchdog allows a short report grace period during Task Scheduler catch-up.
 

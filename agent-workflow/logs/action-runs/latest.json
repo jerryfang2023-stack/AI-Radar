@@ -1,26 +1,36 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-09T04:34:39.102Z",
-  "date": "2026-09-09",
-  "action": "Funding Insights deterministic recovery",
-  "action_status": "unregistered",
-  "record_level": "full",
+  "generated_at": "2026-09-10T02:15:11.906Z",
+  "date": "2026-09-10",
+  "action": "Funding transaction withdrawal repair",
+  "action_status": "current",
+  "record_level": "required",
   "trigger": "manual",
-  "status": "validated",
-  "summary": "Reused three research cards from run 34310028499; repaired spaced-round amount parsing, qualified valuation rejection and company-bound latest financing history; merged Mistral naming variants in the application only. Zero new research calls in recovery.",
+  "status": "success",
+  "summary": "Reused accepted September 10 evidence; identified cancelled Listen Labs round incorrectly admitted as proceeds; repaired shared transaction status and persisted-card gate; retained source evidence and regenerated atomic projections without model research.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/funding-insight-v1-utils.mjs;agent-workflow/tools/generate-funding-insights-deepseek.mjs;agent-workflow/tools/tests/funding-insight-v1.test.mjs;company-identity-decisions.json"
+    "agent-workflow/tools/lib/funding-transaction-status.mjs",
+    "agent-workflow/tools/build-data-center-v4.mjs",
+    "agent-workflow/tools/funding-insight-v1-utils.mjs",
+    "agent-workflow/tools/generate-funding-insights-deepseek.mjs"
   ],
   "outputs": [],
   "checks": [
-    "funding tests 101/101;daily and all-card funding gates;valuation-only DeepSeek excluded"
+    "two red-to-green regressions",
+    "254 data-center and funding tests passed",
+    "funding full gate",
+    "taxonomy consistency",
+    "frontstage regression"
   ],
   "issues": [],
   "risks": [
-    "Browser control unavailable;primary concurrent edits preserved"
+    "PC/mobile visual QA unavailable: both browser controls timed out",
+    "exact-head CI and public deployment still required"
   ],
-  "lessons": [],
+  "lessons": [
+    "Validate transaction state at factual admission and again for persisted cards; a quoted amount in cancelled financing is not proceeds."
+  ],
   "reusable_rules": [],
   "retired_flags": [],
   "notes": []

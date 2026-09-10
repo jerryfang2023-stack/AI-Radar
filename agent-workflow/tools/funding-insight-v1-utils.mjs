@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
+import { isWithdrawnFundingTitle } from "./lib/funding-transaction-status.mjs";
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.3";
 export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.5";
@@ -1026,6 +1027,10 @@ function fundingAmountsEquivalent(left = "", right = "") {
 
 export function fundingEventCardConsistencyProblems(card = {}, event = {}, claims = [], entities = []) {
   if (!card?.company?.entity_id || !event?.event_id) return [];
+  // Recheck persisted/recovered cards, not only fresh generation eligibility.
+  if ((event.event_status && !["announced", "completed"].includes(event.event_status))
+    || ["withdrawn", "disputed", "quarantined", "partial"].includes(event.publication_status)
+    || isWithdrawnFundingTitle(event.display_title_zh)) return ["funding_event_not_completed"];
   const acceptedClaims = claims.filter((claim) => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted");
   if (fundingAmountUsesValuation(card.financing?.amount, [
@@ -1311,6 +1316,7 @@ export function isEligibleFundingInsightEvent(event = {}, claims = []) {
     && (!event.event_status || ["announced", "completed"].includes(event.event_status))
     && event.publication_status === "verified"
     && Boolean(event.display_title_zh)
+    && !isWithdrawnFundingTitle(event.display_title_zh)
     && Boolean(normalizeFundingAmount(canonicalFundingEventAmount(event, claims)).currency);
 }
 

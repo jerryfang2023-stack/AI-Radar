@@ -92,6 +92,16 @@ the Data Center but exclude it from Funding Insights. Withdraw an incorrectly
 published application card and prune its derived taxonomy decision; retain the
 source evidence and a withdrawal reason in its queue.
 
+Cancelled financing (`scrubbed`, `shelved`, or an explicit non-closing title)
+must become a withdrawn factual event, not an announced financing. The factual
+builder and financing admission share source-title detection; persisted and
+recovered cards independently reject non-completed transaction states. Do not
+scan unrelated historical body paragraphs to withdraw a completed current round.
+Rebuild from the accepted intake, retain exact Claims, remove the application
+card and its derived classifications, and preserve the blocked queue reason on
+subsequent generator runs. The September 10 Listen Labs regression covers this
+path without source recollection or new model research.
+
 Fundraising tutorials and sector/year financing directories are discovery
 containers, not single-company funding events. Reject them at source eligibility
 before either deterministic or model-assisted event admission; retain their Raw
