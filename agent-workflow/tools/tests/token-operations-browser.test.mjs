@@ -79,6 +79,8 @@ test("production Token panel supports configure, preview, confirm, receipt and m
     await page.getByLabel("赞助商", { exact: true }).fill("测试赞助商");
     await page.locator('[name="amount"]').fill("100");
     await page.locator('[name="model"]').fill("DeepSeek-V4.1-Flash");
+    await page.locator('[name="rewardRankLimit"]').fill("20");
+    assert.match(await page.locator('[name="rules"]').inputValue(), /第 20 名同分者全部纳入/);
     assert.match(await page.locator('[name="rules"]').inputValue(), /100 DeepSeek-V4\.1-Flash Token/);
     await page.getByRole("button", { name: "预览分配" }).click();
     await page.getByText("设置已修改，请先保存再预览分配", { exact: true }).waitFor();

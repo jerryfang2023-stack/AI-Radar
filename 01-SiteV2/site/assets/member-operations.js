@@ -477,14 +477,16 @@
   const actionLabel = { configure: "修改配置", confirm: "确认分配", receipt: "登记发放" };
   const distributionMode = (config) => config.distributionMode || (config.eligibleTypes.length ? "custom" : "season_total");
   function totalRules(config) {
+    const limit = Number(config.rewardRankLimit) || 0;
+    const scope = limit ? "仅激励赛季总积分排名前 " + limit + " 名的成员；第 " + limit + " 名同分者全部纳入，实际人数可能超过 " + limit + " 人。" : "";
     const period = (config.start || "历史起始日期") + "至" + (config.end || "待确定结束日期") + "（含开始日，不含结束日）";
     return config.label + "按赛季总积分分配。计分期间：" + period + "。奖励由" + (config.provider || "待确认赞助商") + "提供，激励池共 " + config.amount + " " + (config.model ? config.model + " " : "") + config.unit + "。\n" +
-      "赛季结束后，结算时有效且本赛季总积分大于 0 的社群成员参与分配。个人额度 = 激励池额度 × 个人赛季总积分 ÷ 所有参与成员的赛季总积分之和。\n" +
+      "赛季结束后，结算时有效且本赛季总积分大于 0 的社群成员参与排名。" + scope + "个人额度 = 激励池额度 × 个人赛季总积分 ÷ 所有参与成员的赛季总积分之和。\n" +
       "个人额度按整数最小单位向下取整，余量保留在激励池。积分不扣减，不计入小程序钱包积分。分配确认后锁定，实际发放另行登记。";
   }
   function formConfig(form) {
     const data = new FormData(form), mode = data.get("distributionMode");
-    return { start: data.get("start"), end: data.get("end"), provider: data.get("provider"), model: (data.get("model") || "").trim(), unit: data.get("unit"), amount: Number(data.get("amount")), distributionMode: mode, eligibleTypes: mode === "custom" ? data.getAll("type") : [], rules: data.get("rules"), enabled: data.has("enabled") };
+    return { start: data.get("start"), end: data.get("end"), provider: data.get("provider"), model: (data.get("model") || "").trim(), unit: data.get("unit"), amount: Number(data.get("amount")), rewardRankLimit: Number(data.get("rewardRankLimit") || 0), distributionMode: mode, eligibleTypes: mode === "custom" ? data.getAll("type") : [], rules: data.get("rules"), enabled: data.has("enabled") };
   }
   function fitRules() {
     const rules = $('[name="rules"]');
@@ -520,7 +522,7 @@
       '<label>Token 额度<input name="amount" type="number" min="0" max="1000000000000" step="1" required value="' + config.amount + '"></label>' +
       '<label>计量单位<input name="unit" maxlength="40" required value="' + escape(config.unit) + '"></label><label>赞助商<input name="provider" maxlength="100" value="' + escape(config.provider) + '"></label>' +
       '<label>开始日期<input type="date" name="start" value="' + escape(config.start) + '"></label><label>结束日期（不含当天）<input type="date" name="end" value="' + escape(config.end) + '"></label>' +
-      '</div><div class="mo-token-allocation"><label>分配方式<select name="distributionMode"><option value="season_total" ' + (total ? 'selected' : '') + '>赛季总积分（默认）</option><option value="custom" ' + (!total ? 'selected' : '') + '>自定义计分类别</option></select></label><p>按本赛季积分占比分配，积分不扣减。</p></div>' +
+      '</div><div class="mo-token-allocation"><label>分配方式<select name="distributionMode"><option value="season_total" ' + (total ? 'selected' : '') + '>赛季总积分（默认）</option><option value="custom" ' + (!total ? 'selected' : '') + '>自定义计分类别</option></select></label><label>激励名次上限<input name="rewardRankLimit" type="number" min="0" max="1000" step="1" required value="' + (config.rewardRankLimit || 0) + '"></label><p>0 表示不限名次；按所选计分方式排名，边界同分者全部纳入。仅以入选成员积分总和分配，积分不扣减。</p></div>' +
       '<div data-token-custom ' + (total ? 'hidden' : '') + '><h3>参与分配的计分类别</h3><div class="mo-token-types">' + payload.activityTypes.map((type) => '<label><input type="checkbox" name="type" value="' + escape(type.id) + '" ' + (config.eligibleTypes.includes(type.id) ? 'checked' : '') + '>' + escape(type.label) + '</label>').join("") + '</div></div>' +
       '<label><span data-token-rules-label>' + (total ? '分配规则（自动生成）' : '分配规则') + '</span><textarea name="rules" maxlength="2000" ' + (total ? 'readonly' : '') + '>' + escape(total && !batch ? totalRules(config) : config.rules) + '</textarea></label>' +
       '<div class="mo-token-actions"><label class="mo-token-check"><input type="checkbox" name="enabled" ' + (config.enabled ? 'checked' : '') + '>公布激励池和规则</label><div><button type="submit">保存设置</button>' +
