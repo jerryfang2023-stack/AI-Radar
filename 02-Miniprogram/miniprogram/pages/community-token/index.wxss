@@ -2,8 +2,8 @@
 .token-hero { padding: 34rpx; border-radius: 28rpx; background: linear-gradient(140deg,#071827,#0d426c); color: #fff; }
 .pool-head { display: flex; justify-content: space-between; align-items: center; gap: 16rpx; font-size: 22rpx; color: #d8b45e; font-weight: 700; }
 .pool-head text:last-child { background: #e6efea; border-radius: 8rpx; color: #4b7467; padding: 8rpx 12rpx; font-size: 18rpx; }
-.pool-label,.pool-unit { display: block; font-size: 24rpx; color: #b0c1cd; }
-.pool-label { margin-top: 44rpx; }
+.pool-unit { overflow-wrap: anywhere; display: block; font-size: 24rpx; color: #b0c1cd; }
+.pool-sponsor { margin-top: 30rpx; padding: 24rpx; border: 1rpx solid rgba(223,186,93,.55); border-radius: 16rpx; background: rgba(223,186,93,.12); color: #f4d68e; font-size: 34rpx; font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
 .pool-amount { display: block; margin: 20rpx 0 8rpx; font-size: 64rpx; color: #dfba5d; font-weight: 750; overflow-wrap: break-word; }
 .pool-footer { margin-top: 38rpx; padding-top: 24rpx; border-top: 1rpx solid rgba(255,255,255,.2); color: #b0c1cd; font-size: 22rpx; }
 .reward-heading { display: flex; margin: 42rpx 0 18rpx; justify-content: space-between; align-items: center; }
@@ -14,3 +14,5 @@
 .rules-toggle { margin: 0; padding: 26rpx 0; text-align: left; background: transparent; font-size: 24rpx; }
 .rules-toggle::after { border: 0; }
 .reward-rules { display: block; white-space: pre-wrap; font-size: 24rpx; line-height: 1.8; color: #627789; }
+
+.reward-row > text:first-child { min-width: 0; overflow-wrap: anywhere; }

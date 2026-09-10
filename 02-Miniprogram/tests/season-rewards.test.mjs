@@ -58,7 +58,8 @@ test("season and Token pages require membership and never invent granted rewards
     return { pool: { amount: null, status: "draft" }, reward: { amount: null, status: "pending", issuedAt: "" }, myPoints: 0 };
   });
   await page.onLoad(); assert.equal(page.data.reward.amount, null);
-  page.toggleRules(); assert.equal(page.data.rulesOpen, true);
+  assert.equal(page.data.rulesOpen, true);
+  page.toggleRules(); assert.equal(page.data.rulesOpen, false);
   fail = true; await page.refresh(); assert.equal(page.data.pool, null);
   const template = fs.readFileSync("miniprogram/pages/community-token/index.wxml", "utf8");
   assert.doesNotMatch(template, /兑换|折扣|bindtap="claim/);
