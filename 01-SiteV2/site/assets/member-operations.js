@@ -270,7 +270,10 @@
       if (response.status === 401 || response.status === 403 || response.status === 503) return communityFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "成员状态未保存").slice(0, 120));
       const member = safeCommunityMember(payload.member); if (payload?.schemaVersion !== "COMMUNITY-MEMBER-ADMIN-V1.0" || !member) throw new Error("保存结果校验失败");
-      await loadCommunityMembers(); renderCommunityDetail(member); $("[data-mo-community-manage-state]").textContent = "成员状态已保存。";
+      selectedCommunityId = null;
+      $("[data-mo-community-detail]").innerHTML = "";
+      await loadCommunityMembers();
+      $("[data-mo-community-status]").textContent += " · 成员状态已保存，详情已收起。";
     } catch (error) { stateNode.textContent = error.message || "成员状态未保存"; } finally { button.disabled = false; }
   }
   const approvalStatusLabels = { pending: "待审核", approved: "已通过", waitlist: "候补", rejected: "暂不邀请" };

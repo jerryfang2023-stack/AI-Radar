@@ -22,7 +22,7 @@
     const saved = JSON.parse(storage.get("guanlan-ops-preferences") || "{}");
     preferences = { landing: validPanels.has(saved.landing) ? saved.landing : defaults.landing, compact: saved.compact === true, staleHours: [24, 48, 72].includes(saved.staleHours) ? saved.staleHours : 72 };
   } catch { /* Corrupt or unavailable storage must not prevent opening the console. */ }
-  const state = { panel: location.hash.slice(1) || preferences.landing, railCollapsed: storage.get("wavesight-rail-collapsed") === "1" };
+  const state = { panel: location.hash.slice(1) || preferences.landing, railCollapsed: storage.get("wavesight-rail-collapsed") === "1", membershipExpanded: storage.get("wavesight-membership-expanded") !== "0" };
   const timestamp = (value) => {
     const date = new Date(value);
     return value && Number.isFinite(date.getTime()) ? date.toLocaleString("zh-CN", { hour12: false }) : "未记录";
@@ -37,8 +37,17 @@
     if (item.kind === "deployed" && stale(item.checkedAt)) return "核验已过期 · 需刷新";
     return item.status || "未接入";
   }
+  function setMembershipExpanded(expanded) {
+    state.membershipExpanded = expanded;
+    const parent = $("[data-membership-nav] > [data-tab=membership]");
+    const children = $("[data-membership-nav] .nav-sub");
+    if (parent) parent.setAttribute("aria-expanded", String(expanded));
+    if (children) children.hidden = !expanded;
+    storage.set("wavesight-membership-expanded", expanded ? "1" : "0");
+  }
   function setPanel(id) {
     state.panel = validPanels.has(id) ? id : "overview";
+    setMembershipExpanded(state.panel.startsWith("membership-") ? true : state.membershipExpanded);
     $$(".nav [data-tab]").forEach((button) => button.setAttribute("aria-current", String(button.dataset.tab === state.panel)));
     const membershipParent = $("[data-membership-nav] > [data-tab=membership]");
     membershipParent?.classList.toggle("is-context", membershipPanels.has(state.panel) && state.panel !== "membership");
@@ -173,7 +182,10 @@
   }
   root.addEventListener("click", (event) => {
     const tab = event.target.closest("[data-tab]");
-    if (tab) setPanel(tab.dataset.tab);
+    if (tab) {
+      if (tab.matches("[data-membership-nav] > [data-tab=membership]")) setMembershipExpanded(!state.membershipExpanded);
+      setPanel(tab.dataset.tab);
+    }
     if (event.target.closest("[data-rail-toggle]")) setRailCollapsed(!state.railCollapsed);
     const version = event.target.closest("[data-version-key]");
     if (version) {

@@ -120,7 +120,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.6.1-member-editor-collapse",
+        "value": "OPS-V3.6.2-nav-member-collapse",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -518,7 +518,7 @@ window.WaveSightOpsConsole = {
     "sourceBaseline": "SITE-V4.6.1-research-retirement"
   },
   "meta": {
-    "version": "OPS-V3.6.1-member-editor-collapse",
+    "version": "OPS-V3.6.2-nav-member-collapse",
     "generatedAt": "2026-09-10T00:32:13.659Z",
     "date": "2026-09-10",
     "sources": [
@@ -1520,7 +1520,7 @@ window.WaveSightOpsConsole = {
     "telemetry": {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
-        "ops_version": "OPS-V3.6.1-member-editor-collapse",
+        "ops_version": "OPS-V3.6.2-nav-member-collapse",
         "data_date": "2026-09-10",
         "generated_at": "2026-09-10T00:32:13.585Z",
         "source_snapshot": "5ee4a6257d0bc508f90f01b8314b803d3bc017497a2177585158a397db69de27",
@@ -1579,7 +1579,7 @@ window.WaveSightOpsConsole = {
       }
     },
     "pipelineMeta": {
-      "version": "OPS-V3.6.1-member-editor-collapse",
+      "version": "OPS-V3.6.2-nav-member-collapse",
       "generatedAt": "2026-09-10T00:32:13.617Z",
       "dateRange": {
         "start": "2026-09-04",
@@ -1815,7 +1815,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.6.1-member-editor-collapse",
+        "value": "OPS-V3.6.2-nav-member-collapse",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",

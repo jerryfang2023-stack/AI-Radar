@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.6.1-member-editor-collapse">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.6.2-nav-member-collapse">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -63,14 +63,15 @@
     .nav { display: grid; gap: 4px; }
     .nav-group { display: grid; gap: 2px; }
     .nav-group > button { width: 100%; }
-    .nav-sub { display: grid; gap: 2px; padding-left: 24px; }
+    .nav-sub { display: grid; gap: 2px; padding-left: 0; }
     .nav-sub button {
       min-height: 34px;
       padding: 0 8px;
       font-size: 12px;
       font-weight: 500;
     }
-    .nav-sub-mark { width: 8px; height: 8px; flex: 0 0 8px; border: 1px solid currentColor; border-radius: 50%; }
+    .nav-sub-mark { width: 18px; height: 18px; flex: 0 0 18px; display: grid; place-items: center; }
+    .nav-sub-mark::before { content: ""; width: 7px; height: 7px; border: 1px solid currentColor; border-radius: 50%; }
     .nav button {
       min-height: 36px;
       border: 0;
@@ -93,6 +94,12 @@
       background: linear-gradient(135deg, var(--orange), var(--gold));
       box-shadow: inset 3px 0 0 rgba(255, 253, 248, .38);
     }
+    .nav .nav-sub button { background: rgba(13,53,92,.055); font-size: 12px; font-weight: 500; }
+    .nav .nav-sub button:hover { background: rgba(13,53,92,.11); }
+    .nav .nav-sub button[aria-current="true"] { background: var(--blue); color: var(--paper); box-shadow: inset 3px 0 var(--gold); }
+    .nav-sub[hidden] { display: none !important; }
+    [data-membership-nav] > button::after { content: "▾"; margin-left: auto; font-size: 10px; }
+    [data-membership-nav] > button[aria-expanded="false"]::after { content: "▸"; }
     .nav-icon { width: 18px; height: 18px; flex: 0 0 18px; color: currentColor; }
     .nav-icon svg { display: block; width: 100%; height: 100%; }
     .nav-text { white-space: nowrap; }
@@ -354,19 +361,19 @@
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
   <link rel="stylesheet" href="assets/operations-auth.css?v=ops-v341">
-  <link rel="stylesheet" href="assets/member-operations.css?v=token-inclusive-20260910">
+  <link rel="stylesheet" href="assets/member-operations.css?v=ops-nav-20260910">
 </head>
 <body class="page-operations-console">
   <main class="shell" data-ops-console tabindex="-1" hidden>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.6.1</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.6.2</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
         <button type="button" data-tab="analytics"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M7 16v-5M12 16V4M17 16V8"/></svg></span><span class="nav-text">运营统计</span></button>
         <div class="nav-group" data-membership-nav>
-          <button type="button" data-tab="membership" aria-expanded="true"><span class="nav-icon" aria-hidden="true">◇</span><span class="nav-text">会员与权益</span></button>
-          <div class="nav-sub" aria-label="会员与权益子栏目">
+          <button type="button" data-tab="membership" aria-expanded="true" aria-controls="membership-subnav"><span class="nav-icon" aria-hidden="true">◇</span><span class="nav-text">会员与权益</span></button>
+          <div class="nav-sub" id="membership-subnav" aria-label="会员与权益子栏目">
             <button type="button" data-tab="membership-community"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">社群成员管理</span></button>
             <button type="button" data-tab="membership-approval"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">社群加入审核</span></button>
             <button type="button" data-tab="membership-users"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">小程序会员管理</span></button>
@@ -635,9 +642,9 @@
 
   <script src="data/pipeline-dashboard.js"></script>
   <script src="data/ops-console.js"></script>
-  <script src="assets/operations-console.js?v=ops-v360"></script>
+  <script src="assets/operations-console.js?v=ops-nav-20260910"></script>
   <script src="assets/application-analytics.js?v=20260830-ops-readonly"></script>
-  <script src="assets/member-operations.js?v=token-inclusive-20260910"></script>
+  <script src="assets/member-operations.js?v=ops-nav-20260910"></script>
   <script src="assets/operations-auth.js?v=ops-v341"></script>
 </body>
 </html>
