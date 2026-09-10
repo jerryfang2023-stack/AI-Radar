@@ -125,7 +125,7 @@ test("homepage renders one recommendation and four distinct full-width archive r
   assert.match(style, /\.community-archive-list button\s*\{[^}]*width: 100%/);
 });
 
-test("homepage hides the bounty module unless a published bounty exists", async () => {
+test("homepage hides bounty entry and cards while retaining historical service data", async () => {
   let bounty = null;
   const { page } = pageFor("community", async () => ({ archives: [], bounty, featuredMembers: [], memberCount: 0 }));
   await page.refresh();
@@ -137,11 +137,9 @@ test("homepage hides the bounty module unless a published bounty exists", async 
   await page.refresh();
   assert.equal(page.data.bounty, null);
   const template = fs.readFileSync("miniprogram/pages/community/index.wxml", "utf8");
-  const cards = template.match(/<button[^>]*class="bounty-feature"[^>]*>/g);
-  assert.equal(cards.length, 1);
-  assert.match(cards[0], /wx:if="{{bounty}}"/);
+  assert.doesNotMatch(template, /bounty-feature|community-bounty/);
   assert.doesNotMatch(template, /发起问题，与成员一起寻找答案/);
-  assert.match(template, /data-url="\/pages\/community-bounty\/index" bindtap="openProtected">悬赏令/);
+  assert.match(template, /data-url="\/pages\/community-token\/index" bindtap="openProtected">Token 权益/);
 });
 
 test("protected reader renders server sections and clears them when access is revoked", async () => {

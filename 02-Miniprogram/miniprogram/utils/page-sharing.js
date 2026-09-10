@@ -6,7 +6,8 @@ const PAGE_SHARES = {
   "pages/community/index": { title: "观澜 AI 社群" },
   "pages/community-program/index": { title: "观澜 AI 分享实录", keys: ["type", "id", "speaker", "tab"] },
   "pages/community-bounty/index": { title: "观澜 AI 悬赏令", keys: ["id"] },
-  "pages/community-points/index": { title: "观澜 AI 积分榜", keys: ["mode"] },
+  "pages/community-points/index": { title: "观澜 AI 积分榜", keys: ["mode", "season"] },
+  "pages/community-token/index": { title: "观澜 AI Token 权益" },
   "pages/community-graph/index": { title: "观澜 AI 角色图谱", keys: ["mode", "tab", "id"] },
   "pages/invite/index": { title: "邀请你加入观澜 AI", keys: ["inviter"] },
 };

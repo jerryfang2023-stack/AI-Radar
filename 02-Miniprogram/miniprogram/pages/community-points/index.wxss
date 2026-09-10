@@ -6,6 +6,10 @@
 .rules-hero { min-height: 170rpx; display: flex; justify-content: center; flex-direction: column; }.rule-heading { display: flex; margin: 34rpx 0 16rpx; flex-direction: column; gap: 7rpx; }.rule-heading text:last-child { color: #071827; font-size: 34rpx; font-weight: 760; }.rule-list { overflow: hidden; border: 1rpx solid #e2d9cb; border-radius: 22rpx; }.rule-list > view { display: grid; grid-template-columns: 100rpx 1fr; gap: 20rpx; padding: 22rpx; align-items: center; border-bottom: 1rpx solid #e5ddd2; background: #fff; }.rule-list > view:last-child { border: 0; }.rule-list > view > text { display: flex; height: 76rpx; align-items: center; justify-content: center; border-radius: 18rpx; background: #f5ead5; color: #9b6d20; font-size: 29rpx; font-weight: 730; flex-direction: column; }.rule-list > view > text .small { font-size: 15rpx; }.rule-list view view { display: flex; flex-direction: column; gap: 7rpx; }.rule-list .strong { color: #071827; font-size: 23rpx; }.rule-list view view .small { color: #718191; font-size: 19rpx; line-height: 1.55; }
 .experience-note,.empty-state { padding: 20rpx; margin-bottom: 20rpx; background: #fff7e5; border-radius: 14rpx; color: #9b6d20; font-size: 22rpx; line-height: 1.7; }
 .rules-note { margin-top: 26rpx; padding: 28rpx; border: 1rpx solid #d6b262; border-radius: 20rpx; background: #fffaf0; }
+.season-tabs { display: flex; margin: 24rpx 0 18rpx; padding: 6rpx; border-radius: 18rpx; background: #edeae2; gap: 6rpx; }
+.season-tabs button { flex: 1; margin: 0; padding: 16rpx 6rpx; color: #7a8896; font-size: 24rpx; background: transparent; line-height: 1.5; border-radius: 14rpx; }
+.season-tabs button::after { border: 0; }
+.season-tabs button.active { background: #fffdf8; color: #0d355c; font-weight: 700; }
 .rules-note text { display: block; margin-bottom: 14rpx; font-size: 23rpx; line-height: 1.8; color: #627789; }
 .rules-note text:first-child { color: #9b6d20; font-weight: 700; font-size: 27rpx; }
 .strong { font-weight: 700; }

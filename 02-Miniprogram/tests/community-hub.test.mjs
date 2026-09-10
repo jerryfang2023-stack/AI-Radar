@@ -23,7 +23,7 @@ test("registers the confirmed native community hub as the third tab", () => {
 });
 
 test("keeps the community home visible and gates detail actions", () => {
-  for (const label of ["造浪者计划", "悬赏令", "积分榜", "角色图谱", "分享实录"]) assert.match(home, new RegExp(label, "u"));
+  for (const label of ["造浪者计划", "Token 权益", "积分榜", "角色图谱", "分享实录"]) assert.match(home, new RegExp(label, "u"));
   assert.match(home, /community-focus-card/u);
   assert.match(homeLogic, /requireCommunityMember/u);
   assert.match(access, /申请加入/u);
@@ -99,7 +99,8 @@ test("shows the role member list immediately after role selection", () => {
 });
 
 test("uses the confirmed points terminology and rule grouping", () => {
-  assert.match(points, />积分榜</u);
+  assert.match(points, /title="积分榜"/u);
+  assert.match(points, />总积分榜</u);
   assert.doesNotMatch(points, /贡献积分榜|社群贡献积分榜/u);
   assert.match(points, /互动积分/u);
   assert.match(points, /专项积分/u);

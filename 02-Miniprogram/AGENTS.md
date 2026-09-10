@@ -1,8 +1,10 @@
 # Guanlan Funding Mini Program
 
+Current source: 0.9.6 adds seasonal community scores and a protected Token benefits page, and hides the community home bounty entry. Pool configuration and reward issuance status come from the authenticated backend; reward display does not grant wallet points or perform automatic issuance. The last verified upload remains the immutable release recorded under `docs/releases/`; see `docs/REVIEW-0.9.6.md` for the current review paths.
+
 This is the native WeChat Mini Program frontstage for Funding Insights.
 
-Current source and last immutable uploaded release: 0.9.5 adds a global native-share baseline, fixes related-company entity deep links and first-time phone binding, and grants verified approved community members one idempotent 90-day Mini Program access window while synchronizing their community identity. Members without a recorded phone may create a nickname candidate, but only an administrator-confirmed server-side claim can grant identity or access; later confirmations require no Mini Program release. Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.5/README.md` for the immutable source and receipt.
+Previous immutable uploaded release: 0.9.5 adds a global native-share baseline, fixes related-company entity deep links and first-time phone binding, and grants verified approved community members one idempotent 90-day Mini Program access window while synchronizing their community identity. Members without a recorded phone may create a nickname candidate, but only an administrator-confirmed server-side claim can grant identity or access; later confirmations require no Mini Program release. Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.5/README.md` for the immutable source and receipt.
 
 ## Boundaries
 

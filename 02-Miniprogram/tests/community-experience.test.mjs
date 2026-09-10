@@ -76,6 +76,7 @@ test("nonmembers cannot mutate isolated cases", () => {
 test("points never substitute demo balance or identity for a real zero balance", async () => {
   let page;
   vm.runInNewContext(fs.readFileSync("miniprogram/pages/community-points/index.js", "utf8"), {
+    setTimeout, clearTimeout,
     Page: (value) => { page = value; },
     require: (id) => id.includes("community-loading") ? require("../miniprogram/utils/community-loading.js") : id.includes("payment") ? { communityRequest: async () => { throw new Error("Unavailable"); } } : id.includes("community-data") ? data : id.includes("member.js") ? { getCommunity: () => ({ points: 0, name: "测试账户" }) } : id.includes("access") ? { requireCommunityMember: () => true } : { readExperience: () => null },
   });

@@ -189,7 +189,7 @@ async function communityRequest(path, options = {}) {
   const reading = !options.method || options.method === "GET";
   // Only short-lived, identity-scoped list snapshots live in memory. Never store
   // full archives, personal profile forms or drafts; writes invalidate all lists.
-  const cacheable = reading && ["home", "points", "cases", "program", "directory"].includes(path);
+  const cacheable = reading && (["home", "points", "cases", "program", "directory", "token-benefits"].includes(path) || /^season-points\?season=(total|season-[12])$/.test(path));
   if (!reading) {
     clearCommunityCache();
     wx.removeStorageSync(COMMUNITY_HOME_KEY);
@@ -231,7 +231,7 @@ async function communityRequest(path, options = {}) {
 
 function prefetchCommunity() {
   if (!hasAuthToken()) return Promise.resolve();
-  return Promise.all(["program", "cases", "points", "directory"].map((path) => communityRequest(path).catch(() => null)));
+  return Promise.all(["program", "season-points?season=total", "token-benefits", "directory"].map((path) => communityRequest(path).catch(() => null)));
 }
 
 async function recordMemberBehavior(type, subjectId, behaviorDate) {

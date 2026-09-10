@@ -10,7 +10,7 @@ test("the global sharing wrapper covers every registered Mini Program page", () 
   const appConfig = JSON.parse(fs.readFileSync("miniprogram/app.json", "utf8"));
   const appSource = fs.readFileSync("miniprogram/app.js", "utf8");
   assert.match(appSource, /pageSharing\.installPageSharing\(\)/u);
-  assert.equal(appConfig.pages.length, 24);
+  assert.equal(appConfig.pages.length, 25);
   for (const page of appConfig.pages) {
     assert.match(fs.readFileSync(`miniprogram/${page}.js`, "utf8"), /\bPage\s*\(/u, page);
   }
@@ -21,6 +21,8 @@ test("builds deep links for every community child page without leaking unknown o
     ["pages/community-program/index", { type: "archive", id: "issue-14", token: "secret" }, "/pages/community-program/index?type=archive&id=issue-14"],
     ["pages/community-bounty/index", { id: "case/a" }, "/pages/community-bounty/index?id=case%2Fa"],
     ["pages/community-points/index", { mode: "rules" }, "/pages/community-points/index?mode=rules"],
+    ["pages/community-points/index", { season: "season-2", memberId: 99 }, "/pages/community-points/index?season=season-2"],
+    ["pages/community-token/index", { token: "secret" }, "/pages/community-token/index"],
     ["pages/community-graph/index", { mode: "member", id: 42 }, "/pages/community-graph/index?mode=member&id=42"],
   ];
   for (const [route, options, path] of cases) {

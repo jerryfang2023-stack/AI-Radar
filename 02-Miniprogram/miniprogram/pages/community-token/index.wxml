@@ -1,0 +1,23 @@
+<view class="page-shell">
+  <app-header title="Token 权益" show-back fallback-url="/pages/community/index" />
+  <view class="token-page">
+    <view wx:if="{{experience}}" class="service-state">隔离体验 · 示例数据</view>
+    <view wx:if="{{showLoading}}" class="community-skeleton" aria-label="加载中"><view></view><view></view><view></view></view>
+    <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
+    <block wx:if="{{pool}}">
+      <view class="token-hero">
+        <view class="pool-head"><text>{{pool.label}}激励池</text><text>{{pool.status === 'draft' ? '筹备中' : pool.status === 'settled' ? '已结算' : '已公布'}}</text></view>
+        <text class="pool-label">本季激励池额度</text>
+        <text class="pool-amount">{{pool.amount === null ? '待公布' : pool.amount}}</text>
+        <text class="pool-unit">{{pool.unit}}</text>
+        <view class="pool-footer"><text>{{pool.provider || (pool.start ? '预计 ' + pool.start + ' 开始' : '日期待定')}}</text></view>
+      </view>
+      <view class="reward-heading"><text>我的奖励</text><text>{{reward.status === 'issued' ? '已发放' : reward.status === 'allocated' ? '待发放' : reward.status === 'none' ? '本季无奖励' : '待结算'}}</text></view>
+      <view class="reward-row"><text>本季积分</text><text>{{myPoints}}</text></view>
+      <view class="reward-row"><text>{{reward.status === 'issued' ? '已发放' : '已分配'}} {{pool.unit}}</text><text>{{reward.amount === null ? '—' : reward.amount}}</text></view>
+      <view wx:if="{{issuedDate}}" class="reward-row"><text>发放日期</text><text>{{issuedDate}}</text></view>
+      <button class="rules-toggle" bindtap="toggleRules">{{rulesOpen ? '▾' : '▸'}} 激励规则</button>
+      <text wx:if="{{rulesOpen}}" class="reward-rules">{{pool.rules || '激励规则待公布'}}</text>
+    </block>
+  </view>
+</view>
