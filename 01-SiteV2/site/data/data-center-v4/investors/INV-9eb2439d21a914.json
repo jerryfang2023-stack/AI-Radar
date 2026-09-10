@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "institution": {
     "id": "INV-9eb2439d21a914",
@@ -20,33 +20,39 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-31",
-    "latest_disclosed_at": "2026-08-19",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 3,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
       "seed",
       "series_a",
       "series_b",
-      "series_d"
+      "series_d",
+      "series_e"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-2f88f41306209dd7",
         "canonical_entity_id": "",
         "name": "Avoca AI"
+      },
+      {
+        "entity_id": "EN-4b6cef91ffb05303",
+        "canonical_entity_id": "",
+        "name": "Cognition AI"
       },
       {
         "entity_id": "EN-450dcf23e621ff10",
@@ -80,6 +86,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-73b0732c128db371",
+        "funding_insight_id": "FI-d9fc0a409d33d577",
+        "event_ids": [
+          "EV-6d6715223e80e7a6"
+        ],
+        "company_entity_id": "EN-4b6cef91ffb05303",
+        "company_canonical_entity_id": "",
+        "company_name": "Cognition AI",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$2 Billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-61aa8db010b34dfa",
+            "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+            "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+            "source_content_hash": "274ba4a54870c633",
+            "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+            "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b1525a9fe759a1f5",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
@@ -444,6 +490,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-61aa8db010b34dfa",
+        "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+        "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+        "source_content_hash": "274ba4a54870c633",
+        "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+        "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+      },
       {
         "source_id": "FISRC-134a8e8124653c90",
         "source_url": "https://www.verdict.co.uk/etched-bags-700m/",

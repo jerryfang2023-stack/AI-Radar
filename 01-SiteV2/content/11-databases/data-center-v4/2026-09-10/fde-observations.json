@@ -1,0 +1,76 @@
+[
+  {
+    "observation_id": "FDEO-0e9c90e657d76307",
+    "implementation_key": "4662431b8893aa65",
+    "observation_type": "customer_case",
+    "observed_at": "2026-09-09T01:59:34.000Z",
+    "customer": "Samsung SDS",
+    "vendor": "",
+    "industry": "",
+    "use_case": "358 AI Agents Across Woori Bank Operations | Gate News",
+    "workflow": "Samsung SDS implemented 358 AI agents across five operational domains at Woori Bank. The deployment includes approximately 60 agents in RM and corporate credit divisions, and approximately 50 agents in the WM division. The company identified its core challenge as securing completion quality for actual business application rather than determining what to build. Samsung SDS conducted the AI agent construction project for Woori Bank's AI transformation, applying agents to RM, corporate credit, WM, internal control, customer service, and workflow automation.",
+    "systems_integrated": [
+      "ChatGPT"
+    ],
+    "lifecycle_stage": "production",
+    "reported_outcomes": [],
+    "event_refs": [
+      "EV-b67bbfcebd513ac6"
+    ],
+    "claim_refs": [
+      "CL-ffd6e45df8662b75",
+      "CL-c7ec8838c45ad305",
+      "CL-fcc31fab764dd45c",
+      "CL-75c9fb3c0a1f2993"
+    ],
+    "source_refs": [
+      "SA-d27bb569e5bbef8c"
+    ],
+    "completeness": {
+      "resolved_fields": 5,
+      "total_fields": 8,
+      "ratio": 0.625,
+      "missing_fields": [
+        "vendor",
+        "industry",
+        "reported_outcomes"
+      ]
+    }
+  },
+  {
+    "observation_id": "FDEO-19cc494c3e01729c",
+    "implementation_key": "d4810aad53ad9974",
+    "observation_type": "implementation_update",
+    "observed_at": "2026-09-09T00:00:00.000Z",
+    "customer": "Accenture",
+    "vendor": "Google",
+    "industry": "",
+    "use_case": "Google Cloud",
+    "workflow": "",
+    "systems_integrated": [
+      "Gemini Enterprise",
+      "Google Cloud"
+    ],
+    "lifecycle_stage": "production",
+    "reported_outcomes": [],
+    "event_refs": [
+      "EV-b67a95250d1aae8b"
+    ],
+    "claim_refs": [
+      "CL-089ef68be727c67d"
+    ],
+    "source_refs": [
+      "SA-607449e11800c7a9"
+    ],
+    "completeness": {
+      "resolved_fields": 5,
+      "total_fields": 8,
+      "ratio": 0.625,
+      "missing_fields": [
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ]
+    }
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
+  },
+  "institution": {
+    "id": "INV-5e67a0ab8f3544",
+    "name": "Nova Venture",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-07",
+    "latest_disclosed_at": "2026-09-07",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2cfe6f50f129c9c3",
+        "canonical_entity_id": "",
+        "name": "Cato"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-233dd90578fb1dc9",
+        "funding_insight_id": "FI-c786a6640f0870e8",
+        "event_ids": [
+          "EV-cbeb33594e06678b"
+        ],
+        "company_entity_id": "EN-2cfe6f50f129c9c3",
+        "company_canonical_entity_id": "",
+        "company_name": "Cato",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€6 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万欧元"
+        },
+        "announced_at": "2026-09-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-495f39954954d0bc",
+            "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
+            "source_title": "米兰初创公司Cato融资600万欧元，用AI帮助企业寻找并赢得公开招标",
+            "source_content_hash": "ec2ac823db86c73b",
+            "quote": "including Vento, Heartfelt, Moonstone, BHeroes, Alecla7 and Nova Venture",
+            "quote_hash": "a4d6e3e32a549d83752403efb846686fa1c750e768b55c079a23d85cd2c91004"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-495f39954954d0bc",
+        "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
+        "source_title": "米兰初创公司Cato融资600万欧元，用AI帮助企业寻找并赢得公开招标",
+        "source_content_hash": "ec2ac823db86c73b",
+        "quote": "including Vento, Heartfelt, Moonstone, BHeroes, Alecla7 and Nova Venture",
+        "quote_hash": "a4d6e3e32a549d83752403efb846686fa1c750e768b55c079a23d85cd2c91004"
+      }
+    ]
+  }
+}

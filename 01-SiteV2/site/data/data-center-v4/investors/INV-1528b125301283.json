@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "institution": {
     "id": "INV-1528b125301283",
@@ -22,9 +22,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
@@ -35,7 +35,7 @@
     "role_counts": {
       "historical_or_ambiguous": 4,
       "lead": 6,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "seed",
@@ -56,6 +56,11 @@
         "entity_id": "EN-f3d05a0f6248941d",
         "canonical_entity_id": "",
         "name": "Assort Health"
+      },
+      {
+        "entity_id": "EN-4b6cef91ffb05303",
+        "canonical_entity_id": "",
+        "name": "Cognition AI"
       },
       {
         "entity_id": "EN-0caee180da9d0f3f",
@@ -89,6 +94,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-96cf2ecac9402df7",
+        "funding_insight_id": "FI-d9fc0a409d33d577",
+        "event_ids": [
+          "EV-6d6715223e80e7a6"
+        ],
+        "company_entity_id": "EN-4b6cef91ffb05303",
+        "company_canonical_entity_id": "",
+        "company_name": "Cognition AI",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$2 Billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-61aa8db010b34dfa",
+            "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+            "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+            "source_content_hash": "274ba4a54870c633",
+            "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+            "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7af1fbee622f2107",
         "funding_insight_id": "FI-e0e22d70a91e704e",
@@ -705,6 +750,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-61aa8db010b34dfa",
+        "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+        "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+        "source_content_hash": "274ba4a54870c633",
+        "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+        "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+      },
       {
         "source_id": "FISRC-4d11ed62a144a3f4",
         "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",

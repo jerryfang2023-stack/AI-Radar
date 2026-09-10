@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "institution": {
     "id": "INV-a046516667c3bb",
@@ -20,20 +20,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 12,
+    "current_round_count": 13,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 13,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-09-03",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "lead": 8,
+      "lead": 9,
       "participant": 3
     },
     "round_codes": [
@@ -41,6 +41,7 @@
       "series_a",
       "series_b",
       "series_c",
+      "series_e",
       "series_g"
     ],
     "portfolio_companies": [
@@ -68,6 +69,11 @@
         "entity_id": "FICO-6f92e043fe518e14",
         "canonical_entity_id": "",
         "name": "Atira"
+      },
+      {
+        "entity_id": "EN-4b6cef91ffb05303",
+        "canonical_entity_id": "",
+        "name": "Cognition AI"
       },
       {
         "entity_id": "EN-8da5eafb322ee86e",
@@ -106,6 +112,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d50085396d5aafb2",
+        "funding_insight_id": "FI-d9fc0a409d33d577",
+        "event_ids": [
+          "EV-6d6715223e80e7a6"
+        ],
+        "company_entity_id": "EN-4b6cef91ffb05303",
+        "company_canonical_entity_id": "",
+        "company_name": "Cognition AI",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$2 Billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-61aa8db010b34dfa",
+            "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+            "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+            "source_content_hash": "274ba4a54870c633",
+            "quote": "The financing was led by new investors Andreessen Horowitz and Accel",
+            "quote_hash": "8aeaa43c0a1d28458ebe6cee07b19c91f3e4052962f30ba1e0151ceb0a77246a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c74c7087dffbd76a",
         "funding_insight_id": "FI-78f364239a4fd7d3",
@@ -637,6 +683,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-61aa8db010b34dfa",
+        "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+        "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+        "source_content_hash": "274ba4a54870c633",
+        "quote": "The financing was led by new investors Andreessen Horowitz and Accel",
+        "quote_hash": "8aeaa43c0a1d28458ebe6cee07b19c91f3e4052962f30ba1e0151ceb0a77246a"
+      },
       {
         "source_id": "FISRC-dfab45611a59a6cf",
         "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",

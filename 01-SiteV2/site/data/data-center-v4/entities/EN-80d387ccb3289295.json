@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "entity": {
     "id": "EN-80d387ccb3289295",
@@ -24,6 +24,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-8665fc3a9e8b6b16",
       "EV-df8954acf9a13848",
       "EV-1a6688afdfd108ef",
       "EV-cafe435ddd007821",
@@ -35,10 +36,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-15",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-09-10",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-8665fc3a9e8b6b16",
         "EV-df8954acf9a13848",
         "EV-1a6688afdfd108ef"
       ],
@@ -57,6 +59,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8665fc3a9e8b6b16",
+        "dataDate": "2026-09-10",
+        "date": "2026-09-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "软银将于 9 月 15 日提前偿还 259 亿美元过桥贷款，拟发债为 OpenAI 投资再融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-80d387ccb3289295",
+          "EN-7d3194f79e645c42"
+        ]
+      },
       {
         "id": "EV-f819309f846d95bc",
         "dataDate": "2026-08-20",

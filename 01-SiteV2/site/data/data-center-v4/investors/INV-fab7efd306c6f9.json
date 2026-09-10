@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "institution": {
     "id": "INV-fab7efd306c6f9",
@@ -20,25 +20,26 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-12",
-    "latest_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_a",
       "series_b",
       "series_d",
+      "series_e",
       "series_g"
     ],
     "portfolio_companies": [
@@ -53,6 +54,11 @@
         "name": "Cognition"
       },
       {
+        "entity_id": "EN-4b6cef91ffb05303",
+        "canonical_entity_id": "",
+        "name": "Cognition AI"
+      },
+      {
         "entity_id": "EN-8da5eafb322ee86e",
         "canonical_entity_id": "",
         "name": "Fractile"
@@ -64,6 +70,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-60c277bd78fbfb7e",
+        "funding_insight_id": "FI-d9fc0a409d33d577",
+        "event_ids": [
+          "EV-6d6715223e80e7a6"
+        ],
+        "company_entity_id": "EN-4b6cef91ffb05303",
+        "company_canonical_entity_id": "",
+        "company_name": "Cognition AI",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$2 Billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-61aa8db010b34dfa",
+            "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+            "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+            "source_content_hash": "274ba4a54870c633",
+            "quote": "existing backers Founders Fund, General Catalyst and Avenir also participating",
+            "quote_hash": "7fc61011bd59e8b0029c06294ec01fd0df50815dcca3cb937f5a79169d58ea18"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9ba196e6f3793fc0",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
@@ -355,6 +401,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-61aa8db010b34dfa",
+        "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+        "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+        "source_content_hash": "274ba4a54870c633",
+        "quote": "existing backers Founders Fund, General Catalyst and Avenir also participating",
+        "quote_hash": "7fc61011bd59e8b0029c06294ec01fd0df50815dcca3cb937f5a79169d58ea18"
+      },
       {
         "source_id": "FISRC-077b1124fc8e9581",
         "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",

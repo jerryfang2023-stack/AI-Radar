@@ -1,0 +1,2876 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-09-10",
+    "generated_at": "2026-09-10T00:31:14.863Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 4,
+      "auto_published": 3,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 1
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-137f2a53b0e1823d",
+      "triggered_by_event_id": "EV-905925eb2e6059c1",
+      "as_of_date": "2026-09-10",
+      "company": {
+        "entity_id": "EN-53f5d317b4126bfb",
+        "name": "Listen Labs",
+        "full_name": "Listen Labs",
+        "website": "https://listenlabs.ai",
+        "summary": "Listen Labs是一家AI驱动的市场研究初创公司，使用语音AI进行客户访谈，自动化从研究设计、全球参与者招募到分析报告的全流程。",
+        "headquarters": "San Francisco, CA",
+        "founders": [
+          {
+            "name": "Florian Jüngermann",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0286b52989ae7567",
+                "quote": "Listen Labs was co-founded in 2023 by Florian Jüngermann, a former German national champion in competitive computer programming, and Alfred Wahlforss",
+                "source_content_hash": "2581a26611a0d0ca",
+                "quote_hash": "8e23b2fd83f95f7871faa546efda8c9bfa443305fd6ba3ee43abdac8c746c96a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alfred Wahlforss",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0286b52989ae7567",
+                "quote": "Listen Labs was co-founded in 2023 by Florian Jüngermann, a former German national champion in competitive computer programming, and Alfred Wahlforss, who previously founded a staffing startup called Bemlo.",
+                "source_content_hash": "2581a26611a0d0ca",
+                "quote_hash": "61591f31f3523aa3ec2b86d8aee58e92bf161057304d5ec2116c1f46406dc8ab"
+              },
+              {
+                "source_id": "FISRC-4d92c2c29d7476ca",
+                "quote": "Listen Labs was founded in September 2023 by Alfred Wahlforss (CEO) and Florian Juengermann (CTO).",
+                "source_content_hash": "933b85879a3ba428",
+                "quote_hash": "95e088732bf9a2cb5ae0a084e6c0466352759d4eeabfc6281b5821993a70c356"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "99",
+          "observed_at": "2026-07-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4d92c2c29d7476ca",
+              "quote": "Employees 99",
+              "source_content_hash": "933b85879a3ba428",
+              "quote_hash": "d104149d4e3d6400802203b81158500900f07f6283ac9244753a9aca21073199"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0286b52989ae7567",
+            "quote": "Listen Labs, a market research startup that uses voice AI to conduct customer interviews",
+            "source_content_hash": "2581a26611a0d0ca",
+            "quote_hash": "7cb30a2cfac0d550e0dbc91698cf9f434ab390341624423669deb2d42d96eb3a"
+          }
+        ],
+        "application_entity_id": "EN-53f5d317b4126bfb",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "$1.5B",
+        "total_raised": "$96M",
+        "announced_at": "2026-09-09",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Menlo Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0286b52989ae7567",
+                "quote": "recently signed a term sheet for a $125 million Series C at a $1.5 billion valuation, with Menlo Ventures set to lead the round",
+                "source_content_hash": "2581a26611a0d0ca",
+                "quote_hash": "5cc035124b4da0aa8b08d54a0721e767ea7d27e6e165d97754a27e1583385bea"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Ribbit Capital",
+            "role": "Series B领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0286b52989ae7567",
+                "quote": "Listen Labs was previously valued at $500 million when it announced a $69 million Series B round in late January led by Ribbit Capital",
+                "source_content_hash": "2581a26611a0d0ca",
+                "quote_hash": "5495a8a84d5ee506c2daa0779f35f17d109b976950a2533f748c2768edb810fc"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sequoia",
+            "role": "Series B参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0286b52989ae7567",
+                "quote": "with participation from returning backers Sequoia, Conviction, and Pear VC",
+                "source_content_hash": "2581a26611a0d0ca",
+                "quote_hash": "2b8a12e37757f2918a5bd154d9cfff5a6fdeb937d36279a40c705e67aad58e01"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Conviction",
+            "role": "Series B参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0286b52989ae7567",
+                "quote": "with participation from returning backers Sequoia, Conviction, and Pear VC",
+                "source_content_hash": "2581a26611a0d0ca",
+                "quote_hash": "2b8a12e37757f2918a5bd154d9cfff5a6fdeb937d36279a40c705e67aad58e01"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pear VC",
+            "role": "Series B参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0286b52989ae7567",
+                "quote": "with participation from returning backers Sequoia, Conviction, and Pear VC",
+                "source_content_hash": "2581a26611a0d0ca",
+                "quote_hash": "2b8a12e37757f2918a5bd154d9cfff5a6fdeb937d36279a40c705e67aad58e01"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0286b52989ae7567",
+            "quote": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
+            "source_content_hash": "2581a26611a0d0ca",
+            "quote_hash": "3704eb5a0b0c9b69215b915378e2835c9e4761b6c3356cf8b22ac54689588f9f"
+          },
+          {
+            "source_id": "FISRC-0286b52989ae7567",
+            "quote": "recently signed a term sheet for a $125 million Series C at a $1.5 billion valuation, with Menlo Ventures set to lead the round, according to several people with knowledge of the matter. But that round never closed",
+            "source_content_hash": "2581a26611a0d0ca",
+            "quote_hash": "773915e07c54f6af4e37fc8a3f4dc99b6336558095f01fdeb3583086f3d61a8b"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$1.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "total_raised_original": "$96M",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 96000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9600 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-905925eb2e6059c1",
+            "round_original": "多轮融资",
+            "amount": "$1.5B",
+            "announced_at": "2026-09-09",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0286b52989ae7567",
+                "quote": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
+                "source_content_hash": "2581a26611a0d0ca",
+                "quote_hash": "3704eb5a0b0c9b69215b915378e2835c9e4761b6c3356cf8b22ac54689588f9f"
+              },
+              {
+                "source_id": "FISRC-0286b52989ae7567",
+                "quote": "recently signed a term sheet for a $125 million Series C at a $1.5 billion valuation, with Menlo Ventures set to lead the round, according to several people with knowledge of the matter. But that round never closed",
+                "source_content_hash": "2581a26611a0d0ca",
+                "quote_hash": "773915e07c54f6af4e37fc8a3f4dc99b6336558095f01fdeb3583086f3d61a8b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Listen Labs AI市场研究平台",
+          "description": "AI原生的端到端平台，自动化客户访谈全流程，包括研究设计、全球参与者招募、AI主持访谈、分析与报告生成。",
+          "target_customers": "企业内部产品、营销和客户洞察团队，以及研究机构",
+          "features": [
+            "AI主持一对一视频和语音访谈",
+            "30M+验证受访者全球网络",
+            "24小时内交付报告、视频片段和幻灯片",
+            "Emotional Intelligence情感分析层",
+            "Quality Guard实时欺诈检测"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4d92c2c29d7476ca",
+              "quote": "Listen Labs provides an AI-powered, autonomous market research platform designed to automate the full customer interview process, from study design and global participant recruitment to analysis and reporting.",
+              "source_content_hash": "933b85879a3ba428",
+              "quote_hash": "5f53528cdeac20c4e9bcf9692bf1be7edd5f11678cc86425c2254422f5d16abc"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Microsoft",
+          "industry": "technology",
+          "use_case": "50周年客户故事规模化收集",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2dc035221a91d504",
+              "quote": "Microsoft needed authentic user stories about how Copilot empowers employees, at a scale and speed traditional research could not support.",
+              "source_content_hash": "09099ee2d443dc23",
+              "quote_hash": "3e463a0254280dac2f19634eb5accae53883894c8862960f5f54b20b59cdfb3b"
+            }
+          ],
+          "entity_id": "EN-9fbf261b62c1d7c0"
+        },
+        {
+          "name": "Robinhood",
+          "industry": "financial_services",
+          "use_case": "预测市场品牌与细分适配性研究",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2dc035221a91d504",
+              "quote": "Robinhood needed to assess whether prediction markets felt on-brand and which user segments drove the highest re-engagement.",
+              "source_content_hash": "09099ee2d443dc23",
+              "quote_hash": "76b77d351d293ed7ac1423fbf577ebd60b77a3e7c1dfc39dc4e9b1d4f32f1706"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Simile",
+          "product": "合成人类行为预测平台",
+          "scenario": "使用AI模拟人类行为并预测响应，无需实际访谈",
+          "target_customer": "需要客户洞察的企业",
+          "funding_summary": "2026年7月完成$200M Series B，估值$2B，由Greenoaks领投",
+          "core_difference": "Listen Labs通过AI主持真实客户访谈获取数据，年化收入约$30M，是Simile的三倍；Simile采用合成方法模拟人类行为，不进行实际访谈。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "The three-year-old startup has about $30 million in annualized revenue, about three times more than Simile, a competing startup that predicts human behavior",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "a573714b6e75115148f442655d6c2c603bf187f4109fce8e15304acdf44991e5"
+            },
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "In late July, Simile announced that it had closed a $200 million Series B at a $ 2 billion valuation led by Greenoaks",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "36172c1ffc3a5e1eb496bed088d68ba97f2237d010bc300972cd9d8d7fe6ece1"
+            },
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "others startups — like Aaru and Simile — take a synthetic approach, using AI to simulate human behavior and predict responses without interviewing anyone at all",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "d85a9214341a7eafc83cc3c2b200d9f0ed63a30839cec433f4e7eb7bd79370ee"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Aaru",
+          "product": "合成人类行为模拟平台",
+          "scenario": "使用AI模拟人类行为并预测响应，无需实际访谈",
+          "target_customer": "需要客户洞察的企业",
+          "funding_summary": "",
+          "core_difference": "Listen Labs通过AI主持真实客户访谈获取数据；Aaru采用合成方法模拟人类行为，不进行实际访谈。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "others startups — like Aaru and Simile — take a synthetic approach, using AI to simulate human behavior and predict responses without interviewing anyone at all",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "d85a9214341a7eafc83cc3c2b200d9f0ed63a30839cec433f4e7eb7bd79370ee"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Outset",
+          "product": "AI客户研究平台",
+          "scenario": "自动化真实客户访谈",
+          "target_customer": "需要客户洞察的企业",
+          "funding_summary": "",
+          "core_difference": "Listen Labs与Outset均自动化真实客户访谈，但来源未提供Outset的具体产品差异或融资信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "Besides Simile, competitors in the space include Outset, Keplar , and Aaru . While some platforms automate interviews with real humans, others startups — like Aaru and Simile — take a synthetic approach",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "e05d44800edb4dcc778a0c362d4399bd1e4f35115e4177edfa6e60347526c464"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Keplar",
+          "product": "AI客户研究平台",
+          "scenario": "自动化真实客户访谈",
+          "target_customer": "需要客户洞察的企业",
+          "funding_summary": "",
+          "core_difference": "Listen Labs与Keplar均自动化真实客户访谈，但来源未提供Keplar的具体产品差异或融资信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "Besides Simile, competitors in the space include Outset, Keplar , and Aaru . While some platforms automate interviews with real humans, others startups — like Aaru and Simile — take a synthetic approach",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "e05d44800edb4dcc778a0c362d4399bd1e4f35115e4177edfa6e60347526c464"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "年化收入",
+          "value": "$30 million",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "The three-year-old startup has about $30 million in annualized revenue",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "d2da9799b154365197a1a7e7adf65ff152b694229c61154cde7ef42ea59d4052"
+            }
+          ]
+        },
+        {
+          "label": "Series C估值",
+          "value": "$1.5 billion",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "recently signed a term sheet for a $125 million Series C at a $1.5 billion valuation",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "d2dd14ced6ddda7f006a9f74d61e2a75e03bad397850ea9b65e457a126984aa2"
+            }
+          ]
+        },
+        {
+          "label": "Series B估值",
+          "value": "$500 million",
+          "observed_at": "2026-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "Listen Labs was previously valued at $500 million when it announced a $69 million Series B round in late January",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "055880a22f88c28053b8f03ca386e9d4002ea23e579d7df388d5cde0da0ce60b"
+            }
+          ]
+        },
+        {
+          "label": "验证受访者网络规模",
+          "value": "30M+受访者，45+国家",
+          "observed_at": "2026-06-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2dc035221a91d504",
+              "quote": "Listen Labs has run over one million AI-powered customer interviews through a single platform that covers study design, recruitment from a 30M-respondent global network",
+              "source_content_hash": "09099ee2d443dc23",
+              "quote_hash": "1708c8547655b006681d39f401a6f576f4552195d28e2a679134bc40b83a1912"
+            }
+          ]
+        },
+        {
+          "label": "累计AI访谈次数",
+          "value": "超过100万次",
+          "observed_at": "2026-06-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2dc035221a91d504",
+              "quote": "Listen Labs has run over one million AI-powered customer interviews through a single platform",
+              "source_content_hash": "09099ee2d443dc23",
+              "quote_hash": "72de731421fa00a6bb421f5df0774751673d4b00b29adcd9ac7daf6f6fc76d36"
+            }
+          ]
+        },
+        {
+          "label": "研究周期压缩",
+          "value": "从4-6周压缩至24小时",
+          "observed_at": "2026-06-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2dc035221a91d504",
+              "quote": "AI-driven customer research compresses traditional 4–6 week cycles into 24-hour turnarounds",
+              "source_content_hash": "09099ee2d443dc23",
+              "quote_hash": "a7dc574f53815f00c792940abcf7ecb12597c34bd389429b996368a208a13cbc"
+            }
+          ]
+        },
+        {
+          "label": "成本对比",
+          "value": "约为传统方法的三分之一",
+          "observed_at": "2026-06-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2dc035221a91d504",
+              "quote": "AI-moderated interviews delivering 5× faster insights at roughly one-third the cost of legacy methods",
+              "source_content_hash": "09099ee2d443dc23",
+              "quote_hash": "d2caae2758f85a8e585c864c15c697265c9fe388f97cf260a065d9768459447a"
+            }
+          ]
+        },
+        {
+          "label": "Salesforce收购谈判估值",
+          "value": "约$2 billion",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0286b52989ae7567",
+              "quote": "The CRM giant has recently held talks to buy Listen Labs for around $2 billion",
+              "source_content_hash": "2581a26611a0d0ca",
+              "quote_hash": "42757421224673714a3580b59e6cdbc10ca8e26d381a2c699d4d6a4bf3ff906f"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Microsoft Director of Data Science",
+          "quote": "We wanted users to share how Copilot is empowering them to bring their best self forward, and we were able to collect those user video stories within a day. Our leadership team was very thrilled at both the speed and the scale that Listen Labs enabled. I can reach out to hundreds of users at one third of the cost.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2dc035221a91d504",
+              "quote": "We wanted users to share how Copilot is empowering them to bring their best self forward, and we were able to collect those user video stories within a day. Our leadership team was very thrilled at both the speed and the scale that Listen Labs enabled. I can reach out to hundreds of users at one third of the cost.",
+              "source_content_hash": "09099ee2d443dc23",
+              "quote_hash": "290d1ef7aa867fabdb870bee1662430845a4f75abbdb3ae3875ded986ec025dd"
+            }
+          ]
+        },
+        {
+          "speaker": "Skims SVP of Data, Insights, and Loyalty",
+          "quote": "I always struggled with understanding the why and Listen Labs nails this for me.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2dc035221a91d504",
+              "quote": "I always struggled with understanding the why and Listen Labs nails this for me.",
+              "source_content_hash": "09099ee2d443dc23",
+              "quote_hash": "1f2b9e8e2fb88cfac00054ed5bf3434d994fb22a95256b7c74eeb2c6bf35e1ac"
+            }
+          ]
+        },
+        {
+          "speaker": "Romani Patel",
+          "quote": "By the time we get to [the insights], either the decision has been made or we lose out on the opportunity to actually influence it.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4d92c2c29d7476ca",
+              "quote": "By the time we get to [the insights], either the decision has been made or we lose out on the opportunity to actually influence it.",
+              "source_content_hash": "933b85879a3ba428",
+              "quote_hash": "aafb78a621fe8c193ab090667b06c5b7c4f2c3cb035ad8d2cd4babd05d918c96"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI能否以真实访谈方式替代传统人工市场研究，从而在保持定性深度的同时实现规模化。已验证信号包括：年化收入约$30M、客户涵盖Microsoft和Anthropic等大型企业、累计完成超过100万次AI访谈。但本轮$125M Series C已签署条款清单却未完成，融资依赖的估值信号存在不确定性；Salesforce约$2B的收购谈判是当前估值的主要外部锚点，若谈判破裂，VC预期Listen Labs将以$2B或更高估值重返市场。证据边界：所有数据来自TechCrunch报道及公司官方材料，Menlo Ventures未公开确认投资意图。",
+        "validated_signals": [
+          "年化收入约$30M，约为竞争对手Simile的三倍",
+          "客户包括Microsoft、Canva、Anthropic、Sweetgreen等大型企业",
+          "累计完成超过100万次AI访谈",
+          "研究周期从4-6周压缩至24小时，成本约为传统方法的三分之一"
+        ],
+        "risks": [
+          "已签署的$125M Series C条款清单被放弃，显示融资进程存在重大不确定性",
+          "Salesforce收购谈判可能因67倍收入倍数过高而破裂，若破裂公司需重新寻求融资",
+          "合成AI竞争对手（如Simile、Aaru）采用不同技术路径，可能以更低成本提供替代方案"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "marketing",
+        "market_application_id": "",
+        "use_case_ids": [
+          "marketing",
+          "data_analysis",
+          "knowledge_search"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI驱动的市场研究与客户洞察",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI能否以真实访谈方式替代传统人工市场研究，从而在保持定性深度的同时实现规模化。已验证信号包括：年化收入约$30M、客户涵盖Microsoft和Anthropic等大型企业、累计完成超过100万次AI访谈。但本轮$125M Series C已签署条款清单却未完成，融资依赖的估值信号存在不确定性；Salesforce约$2B的收购谈判是当前估值的主要外部锚点，若谈判破裂，VC预期Listen Labs将以$2B或更高估值重返市场。证据边界：所有数据来自TechCrunch报道及公司官方材料，Menlo Ventures未公开确认投资意图。",
+          "evidence_signals": [
+            "年化收入约$30M，约为竞争对手Simile的三倍",
+            "客户包括Microsoft、Canva、Anthropic、Sweetgreen等大型企业",
+            "累计完成超过100万次AI访谈",
+            "研究周期从4-6周压缩至24小时，成本约为传统方法的三分之一"
+          ],
+          "risks": [
+            "已签署的$125M Series C条款清单被放弃，显示融资进程存在重大不确定性",
+            "Salesforce收购谈判可能因67倍收入倍数过高而破裂，若破裂公司需重新寻求融资",
+            "合成AI竞争对手（如Simile、Aaru）采用不同技术路径，可能以更低成本提供替代方案"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Listen Labs AI市场研究平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Florian Jüngermann",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Alfred Wahlforss",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Menlo Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Ribbit Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Conviction",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Pear VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Microsoft",
+          "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Robinhood",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Simile",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Aaru",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Outset",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Keplar",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-905925eb2e6059c1",
+          "date": "2026-09-09",
+          "title": "AI研究初创公司Listen Labs取消15亿美元融资轮，转向与Salesforce洽谈",
+          "amount": "$1.5B",
+          "source_refs": [
+            "SA-5e1ff529271d211a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-0286b52989ae7567",
+          "source_url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
+          "title": "AI研究初创公司Listen Labs取消15亿美元融资轮，转向与Salesforce洽谈",
+          "publisher": "TechCrunch AI",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-10T00:26:10.698Z",
+          "content_hash": "2581a26611a0d0ca",
+          "source_artifact_id": "SA-5e1ff529271d211a",
+          "raw_id": "RAW-de35c37850016b18"
+        },
+        {
+          "source_id": "FISRC-2dc035221a91d504",
+          "source_url": "https://listenlabs.ai/articles/ai-driven-customer-research-examples/",
+          "title": "AI-Driven Customer Research Examples & Case Studies",
+          "publisher": "listenlabs.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-10T00:30:28.052Z",
+          "content_hash": "09099ee2d443dc23",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4d92c2c29d7476ca",
+          "source_url": "https://research.contrary.com/company/listen-labs",
+          "title": "Report: Listen Labs Business Breakdown & Founding Story | Contrary Research",
+          "publisher": "research.contrary.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-10T00:30:26.862Z",
+          "content_hash": "933b85879a3ba428",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-10T00:31:14.802Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-905925eb2e6059c1",
+          "confidence": 0.8,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-10T00:31:14.802Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Listen Labs AI市场研究平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Alfred Wahlforss",
+            "Florian Jüngermann"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-905925eb2e6059c1"
+      ],
+      "aggregation": {
+        "key": "EN-53f5d317b4126bfb|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-dd42680851449b4e",
+      "triggered_by_event_id": "EV-cbeb33594e06678b",
+      "as_of_date": "2026-09-10",
+      "company": {
+        "entity_id": "EN-2cfe6f50f129c9c3",
+        "name": "Cato",
+        "full_name": "Cato",
+        "website": "",
+        "summary": "Cato是一家总部位于米兰的AI平台，帮助企业寻找、分析并赢得公开招标。公司成立于2025年，是意大利首个面向公共部门、特别是公共采购的AI原生平台。",
+        "headquarters": "Milan, Italy",
+        "founders": [
+          {
+            "name": "Andrea Zorzetto",
+            "role": "CEO and co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "said Andrea Zorzetto , CEO and co-founder of Cato",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "1a418b1907ca4d8507d9172cacbd933b262de92e4bdd851c4c540250f3250088"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Matteo Bossolini",
+            "role": "co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "Founded in 2025 by Zorzetto and Matteo Bossolini",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "935c563b7765894ada0764c49faca728dda561ed36ec14297cbbe9f00aa941c6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-495f39954954d0bc",
+            "quote": "Cato , a Milan-based AI platform that helps companies find, analyse and win public tenders",
+            "source_content_hash": "ec2ac823db86c73b",
+            "quote_hash": "e20421f78c3d1304c9077c183b1590c95ce0e05c66dc10a265d4181187e68ab8"
+          },
+          {
+            "source_id": "FISRC-73946a7cad268e60",
+            "quote": "Milan-based Cato has raised a €6M seed round led by Keen Venture Partners",
+            "source_content_hash": "4eee91e3b03c71fb",
+            "quote_hash": "c7b91a4fec1f1c4fa715a16a542860f3ab8b1f0d82c549292d3c9e01011222f4"
+          }
+        ],
+        "application_entity_id": "EN-2cfe6f50f129c9c3",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "€6 million",
+        "total_raised": "€7.6 million",
+        "announced_at": "2026-09-07",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Keen Venture Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "has raised a €6 million Seed round led by Keen Venture Partners",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "88c6b41473369bdaa03ce5c07ceef3f15378635f3d5b101a02dd54e7eb3af2eb"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vento",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "including Vento, Heartfelt, Moonstone, BHeroes, Alecla7 and Nova Venture",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "a4d6e3e32a549d83752403efb846686fa1c750e768b55c079a23d85cd2c91004"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Heartfelt",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "including Vento, Heartfelt, Moonstone, BHeroes, Alecla7 and Nova Venture",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "a4d6e3e32a549d83752403efb846686fa1c750e768b55c079a23d85cd2c91004"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Moonstone",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "including Vento, Heartfelt, Moonstone, BHeroes, Alecla7 and Nova Venture",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "a4d6e3e32a549d83752403efb846686fa1c750e768b55c079a23d85cd2c91004"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BHeroes",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "including Vento, Heartfelt, Moonstone, BHeroes, Alecla7 and Nova Venture",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "a4d6e3e32a549d83752403efb846686fa1c750e768b55c079a23d85cd2c91004"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alecla7",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "including Vento, Heartfelt, Moonstone, BHeroes, Alecla7 and Nova Venture",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "a4d6e3e32a549d83752403efb846686fa1c750e768b55c079a23d85cd2c91004"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nova Venture",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "including Vento, Heartfelt, Moonstone, BHeroes, Alecla7 and Nova Venture",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "a4d6e3e32a549d83752403efb846686fa1c750e768b55c079a23d85cd2c91004"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Italian Founders Fund",
+            "role": "pre-Seed领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "the company had raised a €1.6 million pre-Seed led by Italian Founders Fund",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "d64582a018284bffdcce39e760306a4e6a0632f4b0b46dd36e957db339e207bf"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-495f39954954d0bc",
+            "quote": "Home Italy-Startups Milan-based Cato raises €6 million to help companies find and win public...",
+            "source_content_hash": "ec2ac823db86c73b",
+            "quote_hash": "da6e9288815b3635676e6e2ca6552da19390936e31ce9da510e4697ca992d8f5"
+          },
+          {
+            "source_id": "FISRC-495f39954954d0bc",
+            "quote": "has raised a €6 million Seed round led by Keen Venture Partners",
+            "source_content_hash": "ec2ac823db86c73b",
+            "quote_hash": "88c6b41473369bdaa03ce5c07ceef3f15378635f3d5b101a02dd54e7eb3af2eb"
+          },
+          {
+            "source_id": "FISRC-6c626caf4691ee34",
+            "quote": "Milan-based Cato raised €6 million in seed financing led by Keen Venture Partners, bringing total funding to €7.6 million.",
+            "source_content_hash": "d3331ce893f9cf11",
+            "quote_hash": "74508fcc698dd0595af1c17f99815dd123daff859092a402744751b686ab5496"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€6 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万欧元"
+        },
+        "total_raised_original": "€7.6 million",
+        "total_raised_normalized": {
+          "currency": "EUR",
+          "value": 7600000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "760 万欧元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cbeb33594e06678b",
+            "round_original": "种子轮",
+            "amount": "€6 million",
+            "announced_at": "2026-09-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "Home Italy-Startups Milan-based Cato raises €6 million to help companies find and win public...",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "da6e9288815b3635676e6e2ca6552da19390936e31ce9da510e4697ca992d8f5"
+              },
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "has raised a €6 million Seed round led by Keen Venture Partners",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "88c6b41473369bdaa03ce5c07ceef3f15378635f3d5b101a02dd54e7eb3af2eb"
+              },
+              {
+                "source_id": "FISRC-6c626caf4691ee34",
+                "quote": "Milan-based Cato raised €6 million in seed financing led by Keen Venture Partners, bringing total funding to €7.6 million.",
+                "source_content_hash": "d3331ce893f9cf11",
+                "quote_hash": "74508fcc698dd0595af1c17f99815dd123daff859092a402744751b686ab5496"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Cato AI平台",
+          "description": "Cato是一个AI平台，帮助企业寻找、分析并赢得公开招标。平台跟踪超过27,000个来源，筛选并排序企业有胜算的招标，提取招标文件中的要求和评审标准，标记文件间的不一致以防被取消资格，并利用企业自身材料预填行政和技术投标部分。",
+          "target_customers": "从中小企业到大型企业，覆盖医疗设备、建筑、IT和服务等行业",
+          "features": [
+            "跟踪超过27,000个来源以筛选和排序招标",
+            "提取招标文件中的要求和评审标准",
+            "标记文件间的不一致以防被取消资格",
+            "利用企业自身材料预填行政和技术投标部分",
+            "使每个生成的声明可追溯到来源",
+            "最终提交仍由客户控制"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "Cato uses technology to track more than 27,000 sources to surface and rank tenders companies are positioned to win, extracts requirements and evaluation criteria from those tender documents, flags inconsistencies between documents before they can cause disqualification, and pre-fills administrative and technical bid sections using a company’s own materials.",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "042907bb22bf5e1c48694c0881673f8ca2c91c87b33bac21703e941011ba12f8"
+            },
+            {
+              "source_id": "FISRC-73946a7cad268e60",
+              "quote": "The platform tracks more than 27,000 procurement sources, surfaces the tenders that fit a company’s profile, extracts requirements and evaluation criteria from the documents, flags inconsistencies, and pre-fills bid sections from the company’s own materials.",
+              "source_content_hash": "4eee91e3b03c71fb",
+              "quote_hash": "608d4f50749711d791f80cf185751a95ecf0b077b94df0e9912865049c33a50d"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "跟踪招标来源数量",
+          "value": "超过27,000个",
+          "observed_at": "2026-09-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "Cato uses technology to track more than 27,000 sources",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "c2d7f4815dd547011258713f00bb064a2953a8abdcdf91f2b2f929173e1022c9"
+            }
+          ]
+        },
+        {
+          "label": "已处理招标数量",
+          "value": "数千个",
+          "observed_at": "2026-09-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "In this first phase we have already managed thousands of tenders",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "240238de0bbb6cdfa5c0a209e00007b5b188b5f29e343e81fde6fd3b95ebde55"
+            }
+          ]
+        },
+        {
+          "label": "意大利2025年公开招标金额",
+          "value": "€309 billion",
+          "observed_at": "2026-09-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "the company cites ANAC data putting public tenders at €309 billion in 2025, up 13.9% year on year",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "08850390d185d427ead360e70fd6a6bfa53a11a31f8274ed5ea2d026a94d4378"
+            }
+          ]
+        },
+        {
+          "label": "欧盟政府采购占GDP比例",
+          "value": "约14%",
+          "observed_at": "2026-09-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "government contracts account for roughly 14% of EU GDP or about €2.5 trillion a year",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "5224744d3354f3082b1321dd6cf473e5f41b7c50f0da4033d902a54b8374798d"
+            }
+          ]
+        },
+        {
+          "label": "欧盟缔约机构数量",
+          "value": "超过250,000个",
+          "observed_at": "2026-09-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "about €2.5 trillion a year across more than 250,000 contracting authorities",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "f200951582ad6dc2933154844b079cfbecb9ad0b2d114535bc7fba0a3b69c1df"
+            }
+          ]
+        },
+        {
+          "label": "B2B SaaS增长排名",
+          "value": "快于全球95%的B2B SaaS公司",
+          "observed_at": "2026-09-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "the company says it is growing faster than 95% of B2B SaaS companies worldwide",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "bae79bc8c507a9e08737e9c91ad227205851d40c324c354ba8546a63d6a6c6c2"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Andrea Zorzetto",
+          "quote": "In this first phase we have already managed thousands of tenders. Our greatest satisfaction is hearing from our clients that they see our technology as a true ally: it helps them find the most suitable public tenders, understand the requirements and prepare their bid, increasing their chances of winning and growing",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "In this first phase we have already managed thousands of tenders. Our greatest satisfaction is hearing from our clients that they see our technology as a true ally: it helps them find the most suitable public tenders, understand the requirements and prepare their bid, increasing their chances of winning and growing",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "ed592394ba23195f74e3da898bdfae0d99dd31eb73709d0d0ad073239322d164"
+            }
+          ]
+        },
+        {
+          "speaker": "Briehan Burke",
+          "quote": "Public procurement is one of the last giant unautomated workflows in the European economy: trillions of euros a year, and the supplier side has essentially had no software, let alone AI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "Public procurement is one of the last giant unautomated workflows in the European economy: trillions of euros a year, and the supplier side has essentially had no software, let alone AI",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "abdb3b1400108a3a4732f46c57a2fc4f0ac64379987f5d2fd685bb555ba354e5"
+            }
+          ]
+        },
+        {
+          "speaker": "Briehan Burke",
+          "quote": "Italy is the right market to start precisely because it is the most complex country to bid in: more than €300 billion a year across 22,000 contracting authorities, tens of thousands of SMBs whose largest customer is the state, and no AI-native software to help them win, which is exactly the kind of pain that makes a market worth owning and building from.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-495f39954954d0bc",
+              "quote": "Italy is the right market to start precisely because it is the most complex country to bid in: more than €300 billion a year across 22,000 contracting authorities, tens of thousands of SMBs whose largest customer is the state, and no AI-native software to help them win, which is exactly the kind of pain that makes a market worth owning and building from.",
+              "source_content_hash": "ec2ac823db86c73b",
+              "quote_hash": "459bceeaa0736529fe974740076b0bcb1660fab456515ac33365c3faa98d554e"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Keen Venture Partners",
+            "speaker": "Briehan Burke",
+            "speaker_role": "General Partner",
+            "rationale": "Keen Venture Partners认为公共采购是欧洲经济中最后几个尚未自动化的大型工作流之一，供应商侧几乎没有软件，更不用说AI。意大利是最复杂的投标市场，超过3000亿欧元、22,000个缔约机构、数万家以国家为最大客户的中小企业，且没有AI原生软件帮助它们赢得招标，这种痛点使该市场值得拥有并从中建立业务。",
+            "quote": "Public procurement is one of the last giant unautomated workflows in the European economy: trillions of euros a year, and the supplier side has essentially had no software, let alone AI",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-495f39954954d0bc",
+                "quote": "Public procurement is one of the last giant unautomated workflows in the European economy: trillions of euros a year, and the supplier side has essentially had no software, let alone AI",
+                "source_content_hash": "ec2ac823db86c73b",
+                "quote_hash": "abdb3b1400108a3a4732f46c57a2fc4f0ac64379987f5d2fd685bb555ba354e5"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是公共采购供应商侧的AI原生软件空白。Cato在成立不到一年内完成从pre-Seed到Seed的融资，累计融资760万欧元，验证信号包括：已处理数千个招标、跟踪超过27,000个来源、客户覆盖医疗设备、建筑、IT和服务等行业且大多数客户每日打开平台、公司自称增长快于全球95%的B2B SaaS公司。估值未披露。证据边界：增长数据为公司引用ChartMogul基准的自述，未经独立审计；客户名称和具体收入未披露。",
+        "validated_signals": [
+          "已处理数千个招标",
+          "跟踪超过27,000个招标来源",
+          "客户覆盖医疗设备、建筑、IT和服务等行业",
+          "大多数客户每日打开平台",
+          "公司自称增长快于全球95%的B2B SaaS公司"
+        ],
+        "risks": [
+          "增长数据为公司自述，引用ChartMogul基准，未经独立审计验证",
+          "客户名称和具体收入未披露，无法独立验证商业牵引力",
+          "平台目前主要基于意大利市场，跨境扩展面临不同国家招标文件、截止日期和评审标准的差异"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "procurement_supply_chain",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "government_public_sector",
+          "professional_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "企业AI/公共采购技术",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是公共采购供应商侧的AI原生软件空白。Cato在成立不到一年内完成从pre-Seed到Seed的融资，累计融资760万欧元，验证信号包括：已处理数千个招标、跟踪超过27,000个来源、客户覆盖医疗设备、建筑、IT和服务等行业且大多数客户每日打开平台、公司自称增长快于全球95%的B2B SaaS公司。估值未披露。证据边界：增长数据为公司引用ChartMogul基准的自述，未经独立审计；客户名称和具体收入未披露。",
+          "evidence_signals": [
+            "已处理数千个招标",
+            "跟踪超过27,000个招标来源",
+            "客户覆盖医疗设备、建筑、IT和服务等行业",
+            "大多数客户每日打开平台",
+            "公司自称增长快于全球95%的B2B SaaS公司"
+          ],
+          "risks": [
+            "增长数据为公司自述，引用ChartMogul基准，未经独立审计验证",
+            "客户名称和具体收入未披露，无法独立验证商业牵引力",
+            "平台目前主要基于意大利市场，跨境扩展面临不同国家招标文件、截止日期和评审标准的差异"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Cato AI平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Andrea Zorzetto",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Matteo Bossolini",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Keen Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Vento",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Heartfelt",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Moonstone",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BHeroes",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alecla7",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nova Venture",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Italian Founders Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-cbeb33594e06678b",
+          "date": "2026-09-07",
+          "title": "米兰初创公司Cato融资600万欧元，用AI帮助企业寻找并赢得公开招标",
+          "amount": "€6 million",
+          "source_refs": [
+            "SA-beb6b0506f92cde7"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-495f39954954d0bc",
+          "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
+          "title": "米兰初创公司Cato融资600万欧元，用AI帮助企业寻找并赢得公开招标",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-10T00:25:46.426Z",
+          "content_hash": "ec2ac823db86c73b",
+          "source_artifact_id": "SA-beb6b0506f92cde7",
+          "raw_id": "RAW-f4508488bc9b6453"
+        },
+        {
+          "source_id": "FISRC-6c626caf4691ee34",
+          "source_url": "https://techstartups.com/2026/09/07/startup-funding-news-today-september-7-2026-pixxel-jet-zero-navana-ai-more/",
+          "title": "Startup Funding News Today, September 7, 2026: Cato, Pixxel, Jet Zero, Navana.ai & More - Tech Startups",
+          "publisher": "techstartups.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-10T00:29:26.318Z",
+          "content_hash": "d3331ce893f9cf11",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-73946a7cad268e60",
+          "source_url": "https://www.sesamers.com/funding/cato-raises-6m-seed-public-tenders-ai/",
+          "title": "Cato raises €6M seed to bring AI to public tenders",
+          "publisher": "sesamers.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-10T00:29:26.802Z",
+          "content_hash": "4eee91e3b03c71fb",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-10T00:30:31.135Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-cbeb33594e06678b",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-10T00:30:31.135Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Cato AI平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Andrea Zorzetto",
+            "Matteo Bossolini"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cbeb33594e06678b"
+      ],
+      "aggregation": {
+        "key": "EN-2cfe6f50f129c9c3|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-fe30a56b7c5bc87c",
+      "triggered_by_event_id": "EV-6d6715223e80e7a6",
+      "as_of_date": "2026-09-10",
+      "company": {
+        "entity_id": "EN-4b6cef91ffb05303",
+        "name": "Cognition AI",
+        "full_name": "Cognition AI",
+        "website": "",
+        "summary": "Cognition AI 是一家人工智能编码初创公司，成立于2024年，以自主软件工程智能体为核心，其旗舰产品 Devin 被描述为 AI 软件工程师，能够规划、编写、测试、调试和部署代码。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Scott Wu",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "CEO: Scott Wu and his team built Cognition around this thesis.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "2291926913b92c543f228c236744a66f875aaa683831eb21a4e6b5c73514e35f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-61aa8db010b34dfa",
+            "quote": "Artificial intelligence coding startup Cognition has raised more than $2 billion in a Series E funding round at a $48 billion valuation",
+            "source_content_hash": "274ba4a54870c633",
+            "quote_hash": "5c296c92b3a4cbc0b99fb50888afbe85625a43ac65efc33f606ec15bdea4c1d9"
+          },
+          {
+            "source_id": "FISRC-47cb3c291edbaf19",
+            "quote": "AI coding startup Cognition AI said on Tuesday it had raised $2 billion in a Series E funding round at a valuation of $48 billion.",
+            "source_content_hash": "2c0baf0627b7dec9",
+            "quote_hash": "b377e3cd7647d02fea2e89ced0dcd49ca6942f8476e06fbaf69ab8bab2caa8cd"
+          }
+        ],
+        "application_entity_id": "EN-4b6cef91ffb05303",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "E轮",
+        "amount": "$2 Billion",
+        "total_raised": "",
+        "announced_at": "2026-09-08",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "The financing was led by new investors Andreessen Horowitz and Accel",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "8aeaa43c0a1d28458ebe6cee07b19c91f3e4052962f30ba1e0151ceb0a77246a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Accel",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "The financing was led by new investors Andreessen Horowitz and Accel",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "8aeaa43c0a1d28458ebe6cee07b19c91f3e4052962f30ba1e0151ceb0a77246a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Founders Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "existing backers Founders Fund, General Catalyst and Avenir also participating",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "7fc61011bd59e8b0029c06294ec01fd0df50815dcca3cb937f5a79169d58ea18"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "General Catalyst",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "existing backers Founders Fund, General Catalyst and Avenir also participating",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "7fc61011bd59e8b0029c06294ec01fd0df50815dcca3cb937f5a79169d58ea18"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Avenir",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "existing backers Founders Fund, General Catalyst and Avenir also participating",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "7fc61011bd59e8b0029c06294ec01fd0df50815dcca3cb937f5a79169d58ea18"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Benchmark",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kleiner Perkins",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Greylock",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lightspeed",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Altimeter",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bond Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Meritech",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "T. Rowe Price",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lux Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "8VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "D1",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "DST",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bain Capital Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alpha Wave",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alkeon",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NVIDIA",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-61aa8db010b34dfa",
+            "quote": "Cognition AI Raises $2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round",
+            "source_content_hash": "274ba4a54870c633",
+            "quote_hash": "80d8e23304449abb10065255840d1e4765f9adaae582fe5d87537ea93aa7b80c"
+          },
+          {
+            "source_id": "FISRC-61aa8db010b34dfa",
+            "quote": "Cognition announced the new financing on: September 8, 2026. The company said it had raised: more than $2 billion in its: Series E. The transaction values Cognition at: $48 billion.",
+            "source_content_hash": "274ba4a54870c633",
+            "quote_hash": "224a50b7cf99ec06db1504ae77afdf2b8d2cfc0f6a1043897458795ab021353f"
+          },
+          {
+            "source_id": "FISRC-47cb3c291edbaf19",
+            "quote": "The round was led by new investors Andreessen Horowitz and Accel, alongside existing backers Founders Fund, General Catalyst, and Avenir.",
+            "source_content_hash": "2c0baf0627b7dec9",
+            "quote_hash": "1763d5785c82f82d61b46f5f0a921243bf23d356554514ae6f3b56ea4efb724f"
+          }
+        ],
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$2 Billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-6d6715223e80e7a6",
+            "round_original": "E轮",
+            "amount": "$2 Billion",
+            "announced_at": "2026-09-08",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Cognition AI Raises $2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "80d8e23304449abb10065255840d1e4765f9adaae582fe5d87537ea93aa7b80c"
+              },
+              {
+                "source_id": "FISRC-61aa8db010b34dfa",
+                "quote": "Cognition announced the new financing on: September 8, 2026. The company said it had raised: more than $2 billion in its: Series E. The transaction values Cognition at: $48 billion.",
+                "source_content_hash": "274ba4a54870c633",
+                "quote_hash": "224a50b7cf99ec06db1504ae77afdf2b8d2cfc0f6a1043897458795ab021353f"
+              },
+              {
+                "source_id": "FISRC-47cb3c291edbaf19",
+                "quote": "The round was led by new investors Andreessen Horowitz and Accel, alongside existing backers Founders Fund, General Catalyst, and Avenir.",
+                "source_content_hash": "2c0baf0627b7dec9",
+                "quote_hash": "1763d5785c82f82d61b46f5f0a921243bf23d356554514ae6f3b56ea4efb724f"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Devin",
+          "description": "Devin 是 Cognition 的旗舰产品，被描述为 AI 软件工程师，能够分析需求、制定计划、编写代码、运行测试、调试故障、调查问题并实施变更，目标是将 AI 编码从代码补全推向任务完成。",
+          "target_customers": "大型企业，包括芯片设计、航空、金融服务、汽车和 AI 基础设施等行业的组织",
+          "features": [
+            "Devin Auto-Triage：对事故进行初步调查",
+            "Devin Security Swarm：识别和分类软件漏洞",
+            "Devin Automations：在 Slack、GitHub、Linear 等系统中事件触发时自动启动工作"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Devin is designed to work on complete engineering tasks. It can: analyse requirements, create a plan, write code, run tests, debug failures, investigate issues, and implement changes.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "bec0c45b554ddf4c7ec3138a2686f403a23ef926c3dd25f216e6e36d9ea6f54b"
+            },
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "The platform now includes capabilities such as: Devin Auto-Triage, which can perform an initial investigation of incidents. It also includes: Devin Security Swarm, designed to identify and triage software vulnerabilities.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "2260302132d50ce6e339c815a5d64e76fc23e2af68a4ab0f8a695ef5ad726b4f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Windsurf",
+          "description": "Windsurf 是 Cognition 于 2025 年 7 月收购的智能集成开发环境（IDE），面向程序员在编写、审查和修改代码时保持直接参与的工作流。",
+          "target_customers": "需要 AI 辅助 IDE 开发工作流的程序员和企业",
+          "features": [
+            "智能集成开发环境（IDE）",
+            "面向工程师直接参与的代码编写、审查和修改工作流"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Cognition significantly expanded its product portfolio in: July 2025 when it acquired: Windsurf. Windsurf had developed an agentic integrated development environment, or IDE, for programmers.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "c08498cc3caf663eed0d9ada3ef4ed35a5761ef02ae2733161cbe5166a4a5cc8"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "NVIDIA",
+          "industry": "芯片设计",
+          "use_case": "工程工作相关的芯片设计",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Its customers include: NVIDIA for engineering work related to chip design.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "0732dbe34c0bc87000e29068bdce4ff6d08a4039be79ba36a2c24c7d5456a6b9"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        },
+        {
+          "name": "GE Aerospace",
+          "industry": "航空",
+          "use_case": "航空领域的软件工程工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "The company also cites: GE Aerospace in aviation",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "6d9739a8243898b32200688a4394fbb67cef8b0466f30cef421a07adbd6ec85d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Citi",
+          "industry": "金融服务",
+          "use_case": "金融服务领域的软件工程工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Citi in financial services",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "5918a2c8e0264641534577261822f1672ff7842829a64dba69a31d0c7408a0b1"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mercedes-Benz",
+          "industry": "汽车",
+          "use_case": "汽车领域的软件工程工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Mercedes-Benz in automotive",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "64c624ee5f9c67339f2918e6ee707a404541f5af633972c260385b2a31894c54"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Modal",
+          "industry": "AI 基础设施",
+          "use_case": "AI 基础设施领域的软件工程工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Modal in AI infrastructure",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "ef4976658d8a32170026d2a0deed9c2911cd85af44c205b8a678e6125c62e3c7"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "Codex",
+          "scenario": "AI 编码工具",
+          "target_customer": "开发者",
+          "funding_summary": "",
+          "core_difference": "Cognition 定位为独立智能体实验室，可以按任务选择和组合最合适的底层模型，而 OpenAI 的 Codex 与单一模型提供商绑定。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50bb671fd378be75",
+              "quote": "Despite competition from big players like Anthropic’s Claude Code , OpenAI’s Codex, and Google’s Jules",
+              "source_content_hash": "c50ff38048cca067",
+              "quote_hash": "a433458c9ae081f5a578b49c750eee93a122fb837708e98915fe37fcb0b28c90"
+            },
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Cognition Wants to Remain Model Independent One important element of Cognition's strategy is its position as an: independent agent lab.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "949f6155ad526aa843bae036bbef9f114411f17c704c2a46ceb193fdd3cc61f8"
+            }
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
+        },
+        {
+          "name": "Anthropic",
+          "product": "Claude Code",
+          "scenario": "AI 编码工具",
+          "target_customer": "开发者",
+          "funding_summary": "",
+          "core_difference": "Cognition 定位为独立智能体实验室，可以按任务选择和组合最合适的底层模型，而 Anthropic 的 Claude Code 与单一模型提供商绑定。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50bb671fd378be75",
+              "quote": "Despite competition from big players like Anthropic’s Claude Code , OpenAI’s Codex, and Google’s Jules",
+              "source_content_hash": "c50ff38048cca067",
+              "quote_hash": "a433458c9ae081f5a578b49c750eee93a122fb837708e98915fe37fcb0b28c90"
+            },
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Cognition Wants to Remain Model Independent One important element of Cognition's strategy is its position as an: independent agent lab.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "949f6155ad526aa843bae036bbef9f114411f17c704c2a46ceb193fdd3cc61f8"
+            }
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
+        },
+        {
+          "name": "Google",
+          "product": "Jules",
+          "scenario": "AI 编码工具",
+          "target_customer": "开发者",
+          "funding_summary": "",
+          "core_difference": "Cognition 定位为独立智能体实验室，可以按任务选择和组合最合适的底层模型，而 Google 的 Jules 与单一模型提供商绑定。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50bb671fd378be75",
+              "quote": "Despite competition from big players like Anthropic’s Claude Code , OpenAI’s Codex, and Google’s Jules",
+              "source_content_hash": "c50ff38048cca067",
+              "quote_hash": "a433458c9ae081f5a578b49c750eee93a122fb837708e98915fe37fcb0b28c90"
+            },
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Cognition Wants to Remain Model Independent One important element of Cognition's strategy is its position as an: independent agent lab.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "949f6155ad526aa843bae036bbef9f114411f17c704c2a46ceb193fdd3cc61f8"
+            }
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
+        },
+        {
+          "name": "Microsoft",
+          "product": "GitHub Copilot",
+          "scenario": "AI 辅助编码，程序员编写代码时 AI 建议函数、代码行或修复",
+          "target_customer": "开发者",
+          "funding_summary": "",
+          "core_difference": "GitHub Copilot 作为配对程序员在开发者输入时提供建议，而 Devin 被设计为可以独立完成整个工程任务的自主智能体。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Traditional coding assistants have generally operated alongside developers. A programmer writes code while AI suggests: functions, lines, or fixes.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "273298bf6441949127b829bd12404fedae6b6bb67aded1d042aab70d15ef0459"
+            },
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Unlike conventional coding assistants that mainly suggest lines of code, Devin is designed to work on complete engineering tasks.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "66009a1f66a996431e6174b2c3f0117dd7a950fcacbdcbe48d0a1b162ccf3656"
+            }
+          ],
+          "entity_id": "EN-9fbf261b62c1d7c0"
+        },
+        {
+          "name": "Cursor",
+          "product": "AI 编码助手",
+          "scenario": "AI 编码助手市场",
+          "target_customer": "开发者",
+          "funding_summary": "Cursor 以 600 亿美元出售给 SpaceX，年化收入超过 20 亿美元",
+          "core_difference": "Cursor 在出售给 SpaceX 前年化收入超过 20 亿美元，Cognition 当前估值对应的收入倍数高于 Cursor 春季时的水平。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-01eaeef3b80b91ca",
+              "quote": "The company's valuation comes as Cursor, another popular AI coding assistant, sold to SpaceX for $60 billion after reaching over $2 billion in annualized revenue—meaning Cognition currently commands a higher revenue multiple than Cursor did in the spring",
+              "source_content_hash": "f093edf157db1e9e",
+              "quote_hash": "edbab5919d1cad806064655c533aff896b60e030dd7b5925fcf91294d36a3272"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资后估值",
+          "value": "$48 billion",
+          "observed_at": "2026-09-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "The transaction values Cognition at: $48 billion.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "b02cef2ba437e250107650bbf675f45e9cdd88809588c8d3309d3bac1cdce866"
+            }
+          ]
+        },
+        {
+          "label": "运行率收入",
+          "value": "nearly $900 million",
+          "observed_at": "2026-09-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Cognition says its run-rate revenue has climbed from: $492 million to: nearly $900 million.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "55023c9334424a72f238b7074d8b3b92dc456e95f14f0c5401f1dacbfc0edd33"
+            }
+          ]
+        },
+        {
+          "label": "上一轮融资后估值",
+          "value": "$26 billion",
+          "observed_at": "2026-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "In: May 2026, the company raised more than: $1 billion at a: $26 billion post-money valuation.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "4576f967195f40129326557c393549b2f81e752fa4042dd98d6c028fd7872304"
+            }
+          ]
+        },
+        {
+          "label": "上一轮运行率收入",
+          "value": "$492 million",
+          "observed_at": "2026-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "Cognition said its revenue run rate was approximately: $492 million at the time of its May funding round.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "c5e36c6d331315fe2d867186f768812999ff6b1b6d94051f84cf7051b10c3093"
+            }
+          ]
+        },
+        {
+          "label": "估值收入倍数",
+          "value": "more than 50 times annualised revenue",
+          "observed_at": "2026-09-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "A $48 billion valuation against nearly $900 million of run-rate revenue implies a valuation of more than: 50 times annualised revenue.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "6ede6e94ee3b0cfd02d2b71a2bc296e276dd21466836a9e8fea6962ce2853653"
+            }
+          ]
+        },
+        {
+          "label": "2026 年预计现金消耗",
+          "value": "about $800 million",
+          "observed_at": "2026-09-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50bb671fd378be75",
+              "quote": "Cognition plans to burn about $800 million in cash during 2026, mainly to lease Nvidia servers",
+              "source_content_hash": "c50ff38048cca067",
+              "quote_hash": "39aee3ae1d37e80053469f425fcf07592bf1ebca71151c6a7df91341e15cbf2c"
+            }
+          ]
+        },
+        {
+          "label": "Devin 内部代码生成比例",
+          "value": "about 90%",
+          "observed_at": "2026-09-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50bb671fd378be75",
+              "quote": "Cognition says Devin generates about 90% of the company’s own internal code.",
+              "source_content_hash": "c50ff38048cca067",
+              "quote_hash": "284c220b18360a93e80d59200da78f93e488fc72f95612d884969036e5417f64"
+            }
+          ]
+        },
+        {
+          "label": "Devin 企业使用月环比增长",
+          "value": "50% month-over-month for six straight months",
+          "observed_at": "2026-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50bb671fd378be75",
+              "quote": "back in May, it was reported that the enterprise usage of Devin had been growing by 50% month-over-month for six straight months",
+              "source_content_hash": "c50ff38048cca067",
+              "quote_hash": "1adec711cd916ce067460b1ee26ea7acc7b6f5ccd4a937059b8dd59af11fdfca"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Cognition",
+          "quote": "the dawn of the self-driving software era",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50bb671fd378be75",
+              "quote": "Cognition describes this as “the dawn of the self-driving software era.”",
+              "source_content_hash": "c50ff38048cca067",
+              "quote_hash": "f8331318a80aeb57688d54ad2f04b5849058de0bae34e9d6fa72f1f2c786e006"
+            }
+          ]
+        },
+        {
+          "speaker": "Cognition",
+          "quote": "independent agent lab",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61aa8db010b34dfa",
+              "quote": "One important element of Cognition's strategy is its position as an: independent agent lab.",
+              "source_content_hash": "274ba4a54870c633",
+              "quote_hash": "58e95d033842b236fdf0bd9024760ef26d7f30bf05fcd7be3bc899a4b932e937"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Avenir",
+            "speaker": "",
+            "speaker_role": "",
+            "rationale": "Avenir 表示本轮是其历史上最大的一笔投资，并强调 Cognition 在几乎所有人之前就看到了从自动补全到自主智能体的转变。",
+            "quote": "Avenir noted that the check it wrote to co-lead this Series E is the largest in the firm's history, emphasizing that Cognition saw the shift from autocomplete to autonomous agents before nearly everyone",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-01eaeef3b80b91ca",
+                "quote": "Avenir noted that the check it wrote to co-lead this Series E is the largest in the firm's history, emphasizing that Cognition saw the shift from autocomplete to autonomous agents before nearly everyone",
+                "source_content_hash": "f093edf157db1e9e",
+                "quote_hash": "fcafe5ddb77e9474cf3a2565de4e0f18d23501f13baecdb320b12b9a1a3a620a"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是自主软件工程智能体在企业中的快速采用能否持续转化为运行率收入的指数级增长。本轮 480 亿美元估值对应近 9000 万美元运行率收入的 50 倍以上倍数，依赖的信号是运行率收入在四个月内从 4.92 亿美元增至近 9 亿美元，以及 NVIDIA、GE Aerospace、Citi、Mercedes-Benz 等大型企业客户的采用。证据边界在于：来源仅提供了公司自述的运行率收入和客户名单，未提供经审计的财务数据或客户合同细节；同时公司预计 2026 年现金消耗约 8 亿美元，高估值与高消耗并存。",
+        "validated_signals": [
+          "运行率收入从 2026 年 5 月的 4.92 亿美元增至 2026 年 9 月的近 9 亿美元",
+          "Devin 被 NVIDIA、GE Aerospace、Citi、Mercedes-Benz、Modal 等大型企业采用",
+          "Devin 企业使用量连续六个月月环比增长 50%"
+        ],
+        "risks": [
+          "480 亿美元估值对应运行率收入 50 倍以上，估值倍数极高，需要持续高速增长才能支撑",
+          "公司预计 2026 年现金消耗约 8 亿美元，主要来自租赁 Nvidia 服务器，商业化盈利能力尚未验证",
+          "软件工程是生成式 AI 竞争最激烈的领域之一，面临 OpenAI、Anthropic、Google、Microsoft 等大型模型提供商和众多独立初创公司的竞争"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "software_development_coding",
+        "market_application_id": "",
+        "use_case_ids": [
+          "software_development",
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "人工智能编码与自主软件工程",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是自主软件工程智能体在企业中的快速采用能否持续转化为运行率收入的指数级增长。本轮 480 亿美元估值对应近 9000 万美元运行率收入的 50 倍以上倍数，依赖的信号是运行率收入在四个月内从 4.92 亿美元增至近 9 亿美元，以及 NVIDIA、GE Aerospace、Citi、Mercedes-Benz 等大型企业客户的采用。证据边界在于：来源仅提供了公司自述的运行率收入和客户名单，未提供经审计的财务数据或客户合同细节；同时公司预计 2026 年现金消耗约 8 亿美元，高估值与高消耗并存。",
+          "evidence_signals": [
+            "运行率收入从 2026 年 5 月的 4.92 亿美元增至 2026 年 9 月的近 9 亿美元",
+            "Devin 被 NVIDIA、GE Aerospace、Citi、Mercedes-Benz、Modal 等大型企业采用",
+            "Devin 企业使用量连续六个月月环比增长 50%"
+          ],
+          "risks": [
+            "480 亿美元估值对应运行率收入 50 倍以上，估值倍数极高，需要持续高速增长才能支撑",
+            "公司预计 2026 年现金消耗约 8 亿美元，主要来自租赁 Nvidia 服务器，商业化盈利能力尚未验证",
+            "软件工程是生成式 AI 竞争最激烈的领域之一，面临 OpenAI、Anthropic、Google、Microsoft 等大型模型提供商和众多独立初创公司的竞争"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Devin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Windsurf",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Scott Wu",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Founders Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Avenir",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Benchmark",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bessemer Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kleiner Perkins",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Greylock",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Altimeter",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bond Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Meritech",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "T. Rowe Price",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lux Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "8VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "D1",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DST",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bain Capital Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alpha Wave",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alkeon",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NVIDIA",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "NVIDIA",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "GE Aerospace",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Citi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Mercedes-Benz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Modal",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Google",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Microsoft",
+          "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Cursor",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-6d6715223e80e7a6",
+          "date": "2026-09-08",
+          "title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+          "amount": "$2 Billion",
+          "source_refs": [
+            "SA-b0e7a1796311f5ad"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-61aa8db010b34dfa",
+          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+          "title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-10T00:25:41.201Z",
+          "content_hash": "274ba4a54870c633",
+          "source_artifact_id": "SA-b0e7a1796311f5ad",
+          "raw_id": "RAW-d5192fcb5291553f"
+        },
+        {
+          "source_id": "FISRC-47cb3c291edbaf19",
+          "source_url": "https://www.channelnewsasia.com/business/cognition-ai-raises-2-billion-48-billion-valuation-6371096",
+          "title": "Cognition AI raises $2 billion at $48 billion valuation - CNA",
+          "publisher": "channelnewsasia.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-10T00:29:27.158Z",
+          "content_hash": "2c0baf0627b7dec9",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-01eaeef3b80b91ca",
+          "source_url": "https://theoutpost.ai/news-story/cognition-ai-secures-2-b-at-48-b-valuation-as-run-rate-revenue-nears-900-m-30604/",
+          "title": "Cognition Raises $2B at $48B Valuation as AI Coding Demand Surges",
+          "publisher": "theoutpost.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-10T00:29:25.441Z",
+          "content_hash": "f093edf157db1e9e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-50bb671fd378be75",
+          "source_url": "https://www.cryptopolitan.com/cognition-valuation-soars-series-e-funding/",
+          "title": "Cognition AI valuation soars to $48B after $2B Series E funding round - Cryptopolitan",
+          "publisher": "cryptopolitan.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-10T00:29:27.387Z",
+          "content_hash": "c50ff38048cca067",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-10T00:30:23.990Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-6d6715223e80e7a6",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-10T00:30:23.990Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Devin",
+            "Windsurf"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Scott Wu"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-6d6715223e80e7a6"
+      ],
+      "aggregation": {
+        "key": "EN-4b6cef91ffb05303|series_e",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-10T00:31:14.862Z"
+    },
+    {
+      "event_id": "EV-6d6715223e80e7a6",
+      "company_name": "Cognition AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Cognition AI Raises $2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round\" funding company investors product",
+        "\"Cognition AI\" \"$2 Billion\" funding investors round",
+        "\"Cognition AI\" product customers case study",
+        "\"Cognition AI\" \"Cognition AI Raises $2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round\" competitors product use case",
+        "\"Cognition AI\" \"$2 Billion\" investor quote why invested",
+        "\"Cognition AI\" \"$2 Billion\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Cognition AI Raises $2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cognition AI Raises $2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cognition AI\" \"$2 Billion\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cognition AI\" \"$2 Billion\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cognition AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cognition AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cognition AI\" \"Cognition AI Raises $2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cognition AI\" \"Cognition AI Raises $2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cognition AI\" \"$2 Billion\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cognition AI\" \"$2 Billion\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cognition AI\" \"$2 Billion\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cognition AI\" \"$2 Billion\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-10T00:31:14.862Z"
+    },
+    {
+      "event_id": "EV-cbeb33594e06678b",
+      "company_name": "Milan-based Cato",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Milan-based Cato raises €6 million to help companies find and win public tenders with AI | EU-Startups\" funding company investors product",
+        "\"Milan-based Cato\" \"€6 million\" funding investors round",
+        "\"Milan-based Cato\" product customers case study",
+        "\"Milan-based Cato\" \"Milan-based Cato raises €6 million to help companies find and win public tenders with AI | EU-Startups\" competitors product use case",
+        "\"Milan-based Cato\" \"€6 million\" investor quote why invested",
+        "\"Milan-based Cato\" \"€6 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Milan-based Cato raises €6 million to help companies find and win public tenders with AI | EU-Startups\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Milan-based Cato raises €6 million to help companies find and win public tenders with AI | EU-Startups\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Milan-based Cato\" \"€6 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Milan-based Cato\" \"€6 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Milan-based Cato\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Milan-based Cato\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Milan-based Cato\" \"Milan-based Cato raises €6 million to help companies find and win public tenders with AI | EU-Startups\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Milan-based Cato\" \"Milan-based Cato raises €6 million to help companies find and win public tenders with AI | EU-Startups\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Milan-based Cato\" \"€6 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Milan-based Cato\" \"€6 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Milan-based Cato\" \"€6 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Milan-based Cato\" \"€6 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-10T00:31:14.862Z"
+    },
+    {
+      "event_id": "EV-905925eb2e6059c1",
+      "company_name": "AI research startup Listen Labs scrubbed a $1.5B",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks\" funding company investors product",
+        "\"AI research startup Listen Labs scrubbed a $1.5B\" \"$1.5B\" funding investors round",
+        "\"AI research startup Listen Labs scrubbed a $1.5B\" product customers case study",
+        "\"AI research startup Listen Labs scrubbed a $1.5B\" \"AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks\" competitors product use case",
+        "\"AI research startup Listen Labs scrubbed a $1.5B\" \"$1.5B\" investor quote why invested",
+        "\"AI research startup Listen Labs scrubbed a $1.5B\" \"$1.5B\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" \"$1.5B\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" \"$1.5B\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" \"AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" \"AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" \"$1.5B\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" \"$1.5B\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" \"$1.5B\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI research startup Listen Labs scrubbed a $1.5B\" \"$1.5B\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-10T00:31:14.862Z"
+    }
+  ]
+}

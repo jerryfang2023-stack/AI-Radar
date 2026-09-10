@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "node": {
     "id": "TX-ai_market_subcategory-software_development_coding",
@@ -18,6 +18,7 @@
     "typeLabel": "AI 市场子类",
     "valueId": "software_development_coding",
     "eventIds": [
+      "EV-6d6715223e80e7a6",
       "EV-136b2edc9b9f3be8",
       "EV-3fb827f44ea109de",
       "EV-b678e91bc60fb0f0",
@@ -33,6 +34,7 @@
       "EV-b31602193dbf4e08"
     ],
     "entityIds": [
+      "EN-4b6cef91ffb05303",
       "EN-382635c9325bf327",
       "EN-9a1b3d418cbbdf96",
       "EN-026c3bd4be5b91f3",
@@ -48,9 +50,283 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2023-04-27",
-    "lastSeen": "2026-08-03"
+    "lastSeen": "2026-09-10"
   },
   "events": [
+    {
+      "id": "EV-6d6715223e80e7a6",
+      "dataDate": "2026-09-10",
+      "date": "2026-09-08",
+      "updatedDate": "2026-09-10",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+      "originalTitle": "Cognition AI Raises $2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round",
+      "subject": "Cognition AI",
+      "action": "Raises",
+      "object": "$2 Billion at $48 Billion Valuation in Andreessen Horowitz- and Accel-Backed Round",
+      "metrics": [
+        "$2 Billion",
+        "$48 Billion",
+        "$2 billion",
+        "$48 billion",
+        "$1 billion",
+        "$26 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-4b6cef91ffb05303"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8fbe588abd4b45a4",
+            "fundingInsightId": "FI-fe30a56b7c5bc87c"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "software_development_coding",
+            "name": "软件开发与编程工具",
+            "entityIds": [
+              "EN-4b6cef91ffb05303"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b65ef3456e58ebb9",
+            "fundingInsightId": "FI-fe30a56b7c5bc87c"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-4b6cef91ffb05303"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-72038769aff6895e",
+            "fundingInsightId": "FI-fe30a56b7c5bc87c"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-4b6cef91ffb05303"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d5a343a2287a9a64",
+            "fundingInsightId": "FI-fe30a56b7c5bc87c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-4b6cef91ffb05303"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8c04c6a5d231123d",
+            "fundingInsightId": "FI-fe30a56b7c5bc87c"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-4b6cef91ffb05303"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3312e93e7e34aba4",
+            "fundingInsightId": "FI-fe30a56b7c5bc87c"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8fbe588abd4b45a4",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "software_development_coding",
+          "name": "软件开发与编程工具",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b65ef3456e58ebb9",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-72038769aff6895e",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3312e93e7e34aba4",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d5a343a2287a9a64",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8c04c6a5d231123d",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8fbe588abd4b45a4",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "software_development_coding",
+          "name": "软件开发与编程工具",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b65ef3456e58ebb9",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-72038769aff6895e",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d5a343a2287a9a64",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8c04c6a5d231123d",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-4b6cef91ffb05303"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3312e93e7e34aba4",
+          "fundingInsightId": "FI-fe30a56b7c5bc87c"
+        }
+      ],
+      "entityIds": [
+        "EN-4b6cef91ffb05303"
+      ],
+      "entityNames": [
+        "Cognition AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+      "publisher": "nexnews.org"
+    },
     {
       "id": "EV-136b2edc9b9f3be8",
       "dataDate": "2026-07-25",
@@ -4175,6 +4451,32 @@
   ],
   "entities": [
     {
+      "id": "EN-4b6cef91ffb05303",
+      "name": "Cognition AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6d6715223e80e7a6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-software_development_coding",
+        "TX-product_form-end_user_application",
+        "TX-target_user-developer",
+        "TX-use_case-security_operations",
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-08",
+      "lastSeen": "2026-09-10"
+    },
+    {
       "id": "EN-382635c9325bf327",
       "name": "Paper",
       "entityType": "organization_candidate",
@@ -4190,14 +4492,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-ai_market_subcategory-software_development_coding",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-technology-agentic_execution",
-        "TX-use_case-design_engineering",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-use_case-design_engineering"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-22",
@@ -4218,14 +4520,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-software_development_coding",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
-        "TX-ai_market_category-enterprise_applications",
         "TX-product_form-developer_tool",
         "TX-industry-automotive_transportation",
-        "TX-industry-telecommunications",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -4246,13 +4548,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-software_development",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-code_generation",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-target_user-business_user",
+        "TX-ai_market_subcategory-software_development_coding",
+        "TX-use_case-software_development",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
@@ -4273,14 +4575,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-ai_market_subcategory-software_development_coding",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-industry-manufacturing",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-enterprise_software_platform",
-        "TX-technology-code_generation",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-03",
@@ -4301,11 +4603,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-software_development_coding",
         "TX-product_form-end_user_application",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-target_user-developer",
+        "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-26",
@@ -4326,11 +4628,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-software_development_coding",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-developer_tool",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-16",
@@ -4352,12 +4654,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
         "TX-target_user-business_user",
+        "TX-ai_market_subcategory-software_development_coding",
+        "TX-product_form-end_user_application",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-end_user_application",
-        "TX-ai_market_subcategory-software_development_coding",
         "TX-target_user-educator",
         "TX-target_user-student"
       ],
@@ -4383,12 +4685,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-software_development_coding",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-ai_market_category-enterprise_applications",
         "TX-technology-code_generation",
-        "TX-product_form-developer_tool",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-27",
@@ -4409,13 +4711,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
+        "TX-ai_market_subcategory-software_development_coding",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-30",
@@ -4436,13 +4738,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-software_development_coding",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-industry-professional_services",
-        "TX-ai_market_category-enterprise_applications",
         "TX-technology-agentic_execution",
-        "TX-product_form-developer_tool",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2025-08-20",
@@ -4463,12 +4765,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-software_development_coding",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-ai_market_category-enterprise_applications",
         "TX-technology-agentic_execution",
-        "TX-product_form-developer_tool",
-        "TX-ai_market_subcategory-software_development_coding"
+        "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2024-09-05",

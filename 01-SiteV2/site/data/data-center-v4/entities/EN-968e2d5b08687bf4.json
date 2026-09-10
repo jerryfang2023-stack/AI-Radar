@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "entity": {
     "id": "EN-968e2d5b08687bf4",
@@ -36,6 +36,8 @@
       "EV-d5c00f302e1f808c",
       "EV-538adc98d1da8fda",
       "EV-d209a6acecba4285",
+      "EV-20e076804a3000b4",
+      "EV-8c1a2dbbb8635298",
       "EV-286574206caa37ab",
       "EV-ef6464cf7f764835",
       "EV-935640fc8fb69e26",
@@ -61,14 +63,17 @@
       "TX-deployment_model-edge_device"
     ],
     "relatedEntityIds": [
+      "EN-c04bd5ebd10ab696",
       "EN-7d3194f79e645c42",
       "EN-8f5edf98060f12af",
       "EN-c70eca6b0f88f44d",
       "EN-d84c1d1c315bc2f8"
     ],
     "firstSeen": "2026-05-22",
-    "lastSeen": "2026-09-09",
+    "lastSeen": "2026-09-10",
     "relationIds": [
+      "REL2-15efabbf98ccde8f",
+      "REL2-c0686762ac59e86c",
       "REL2-1965c9aefccb981e",
       "REL2-4fcfb0c00d879190",
       "REL2-07a456f751e0fa1e",
@@ -95,6 +100,8 @@
         "EV-d209a6acecba4285"
       ],
       "partnerships": [
+        "EV-20e076804a3000b4",
+        "EV-8c1a2dbbb8635298",
         "EV-286574206caa37ab",
         "EV-ef6464cf7f764835"
       ],
@@ -120,6 +127,52 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-20e076804a3000b4",
+        "dataDate": "2026-09-10",
+        "date": "2026-09-09",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 韩国负责人：与三星电子的下一代芯片合作取得良好进展",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f411e9e541e1fcb8",
+          "EN-7d3194f79e645c42",
+          "EN-f07e5ee173c15c8f",
+          "EN-968e2d5b08687bf4"
+        ]
+      },
+      {
+        "id": "EV-8c1a2dbbb8635298",
+        "dataDate": "2026-09-10",
+        "date": "2026-09-09",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "三星电子与 Mistral AI 达成战略合作，联手打造半导体专用 AI 模型",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-255a4dc2b1944069",
+          "EN-968e2d5b08687bf4",
+          "EN-1f1850049e70cb24",
+          "EN-c04bd5ebd10ab696"
+        ]
+      },
       {
         "id": "EV-5ea74d357e73366b",
         "dataDate": "2026-09-09",
@@ -1320,6 +1373,71 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-c04bd5ebd10ab696",
+      "name": "Mistral AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5ea74d357e73366b",
+        "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-dccfca59b3e58638",
+        "EV-55e7c286e95be405",
+        "EV-a89bf7c0c4203ce2",
+        "EV-24265c0f0fa45343",
+        "EV-d4e44892226be468",
+        "EV-d292329c0ec64c8f",
+        "EV-8c1a2dbbb8635298",
+        "EV-c8f3db31cb266b64",
+        "EV-ff73f3659b75611d",
+        "EV-db304937ceac95d2",
+        "EV-3a67edc87806b5f1",
+        "EV-dbc47d61f3e94306",
+        "EV-eb2584a4801eb1e6",
+        "EV-865af5f2f09605c4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-use_case-knowledge_search",
+        "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-use_case-content_creation",
+        "TX-industry-energy_utilities",
+        "TX-industry-financial_services",
+        "TX-industry-government_public_sector",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-manufacturing",
+        "TX-industry-professional_services",
+        "TX-industry-automotive_transportation",
+        "TX-technology-multimodal",
+        "TX-ai_market_category-industry_applications",
+        "TX-industry-aerospace_defense",
+        "TX-product_form-compute_cloud_service",
+        "TX-ai_market_subcategory-industrials",
+        "TX-use_case-design_engineering"
+      ],
+      "relatedEntityIds": [
+        "EN-968e2d5b08687bf4",
+        "EN-8652f6cd9088f1fa",
+        "EN-0d4ab5f8db6e89bc",
+        "EN-2c2a76216a876127"
+      ],
+      "firstSeen": "2025-10-01",
+      "lastSeen": "2026-09-10"
+    },
+    {
       "id": "EN-7d3194f79e645c42",
       "name": "OpenAI",
       "entityType": "organization_candidate",
@@ -1330,6 +1448,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-8665fc3a9e8b6b16",
         "EV-bce46f2e5cc68d5d",
         "EV-8ed7d4e02cc5c2ab",
         "EV-f2c93c155070cd35",
@@ -1375,6 +1494,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-4965305d57edf6dd",
         "EV-636b45c518ae1313",
         "EV-61b1ddeb1e7b7043",
         "EV-fb33ae9b7f9454bf",
@@ -1403,6 +1523,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-20e076804a3000b4",
         "EV-52f4f9d31fae9c44",
         "EV-58268b12aa406620",
         "EV-5ac5368309eace1a",
@@ -1431,7 +1552,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-0257ad33a3edf7c0",
         "EV-1372037e191a9587",
+        "EV-4f3ba2aed6b31d76",
+        "EV-5a54bc68b3b6ab9a",
         "EV-1c240446b94d16b1",
         "EV-c5e9220424a3e463",
         "EV-0f6e4d81f3dbbb64",
@@ -1671,6 +1795,10 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-8025c0adfe709adf",
+        "EV-5d530dd36f82d830",
+        "EV-99538bb71ba99fc9",
+        "EV-c3feadbc01392117",
         "EV-9c7ca787c7b4f7cf",
         "EV-34b7b2083170b680",
         "EV-16f359eab1f09a1d",
@@ -1772,28 +1900,29 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-data_analysis",
+        "TX-product_form-model",
+        "TX-product_form-end_user_application",
+        "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-industry-government_public_sector",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-professional_services",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-enterprise_software_platform",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-consumer",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-product_form-developer_tool",
         "TX-technology-open_weights",
-        "TX-product_form-end_user_application",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
         "TX-technology-image_generation",
+        "TX-technology-speech_audio",
         "TX-technology-multimodal",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
@@ -1808,13 +1937,13 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-968e2d5b08687bf4",
         "EN-6a50fbf0b970c03a",
         "EN-3a7bd3e2360a3d29",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
-        "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-74692028630429c7",
@@ -1835,7 +1964,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "EN-8f5edf98060f12af",
@@ -1900,6 +2029,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-4965305d57edf6dd",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
         "EV-eb282b4658bbdd7e",
@@ -1953,6 +2083,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-aa5114540046f2c0",
         "EV-83dfc99666955c16",
         "EV-8232ad0075a77b7a",
         "EV-ba091f86fba39da0",
@@ -2162,6 +2293,13 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-621b257277382475",
+        "EV-66ea621d508a975c",
+        "EV-fdc3211527e41bf6",
+        "EV-4d14398871ede6ab",
+        "EV-5d530dd36f82d830",
+        "EV-99538bb71ba99fc9",
+        "EV-c3feadbc01392117",
         "EV-9c7ca787c7b4f7cf",
         "EV-6c2f395e1961f6ef",
         "EV-0af472b1f95d7945",
@@ -2253,24 +2391,24 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-use_case-security_operations",
+        "TX-use_case-software_development",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-professional_services",
-        "TX-product_form-enterprise_software_platform",
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-consumer",
-        "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-technology-open_weights",
         "TX-industry-retail_ecommerce",
@@ -2318,7 +2456,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "EN-d84c1d1c315bc2f8",
@@ -2343,6 +2481,48 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-15efabbf98ccde8f",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-968e2d5b08687bf4",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-c04bd5ebd10ab696",
+      "object_type": "entity",
+      "event_id": "EV-8c1a2dbbb8635298",
+      "claim_refs": [
+        "CL-170f8d70c7418fad",
+        "CL-94273bcfea4fbd15",
+        "CL-efa7ced8f9acffa5",
+        "CL-d6ae932c36176a9c"
+      ],
+      "source_refs": [
+        "SA-1d927902f548466d"
+      ],
+      "data_date": "2026-09-10",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-c0686762ac59e86c",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-968e2d5b08687bf4",
+      "object_type": "entity",
+      "event_id": "EV-20e076804a3000b4",
+      "claim_refs": [
+        "CL-a1f82e7466debf98",
+        "CL-5be1e72aedcea023",
+        "CL-a2d94ae20f1afc39",
+        "CL-4e66319e8ce5305b"
+      ],
+      "source_refs": [
+        "SA-b83bdd1982867e53"
+      ],
+      "data_date": "2026-09-10",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-1965c9aefccb981e",
       "relationship_version": "RELATION-V2.1",
@@ -2686,6 +2866,8 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-06e6d004096040e0",
+        "EV-c3feadbc01392117",
         "EV-9c7ca787c7b4f7cf",
         "EV-b1ac270277a5c1bc",
         "EV-bed92f9b4b3664e2",
@@ -2851,6 +3033,7 @@
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
+        "EN-9fbf261b62c1d7c0",
         "EN-c3961295b7b3da96",
         "EN-5694577a18c5d260",
         "EN-5f4db04ac40d991b",
@@ -2889,7 +3072,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "TX-technology-on_device",
@@ -3174,6 +3357,91 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-e501ff4e5ef92abb",
+      "snapshotKey": "e501ff4e5ef92abb",
+      "snapshotId": "HWS-a310ac1b0c46207d",
+      "eventId": "EV-20e076804a3000b4",
+      "eventIds": [
+        "EV-20e076804a3000b4"
+      ],
+      "dataDate": "2026-09-10",
+      "date": "2026-09-10",
+      "title": "OpenAI 韩国负责人",
+      "subject": "OpenAI 韩国负责人",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-72c09f006ecbf539"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-10",
+          "hardware_fact_id": "HWF-c4bad4adc95c6aef",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T06:22:41.000Z",
+          "subject_entity_id": "EN-f411e9e541e1fcb8",
+          "subject_name": "OpenAI 韩国负责人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 9 月 9 日消息，OpenAI 韩国负责人 Kim Kyoung-hoon (Harrison Kim) 在该企业韩国首尔区域办事处成立一周年新闻发布会上表示， OpenAI 与三星电子的下一代芯片合作取得良好进展 。",
+          "event_refs": [
+            "EV-20e076804a3000b4"
+          ],
+          "claim_ref": "CL-a2d94ae20f1afc39",
+          "source_refs": [
+            "SA-b83bdd1982867e53"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-10/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-10",
+          "hardware_fact_id": "HWF-72c09f006ecbf539",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T06:22:41.000Z",
+          "subject_entity_id": "EN-f411e9e541e1fcb8",
+          "subject_name": "OpenAI 韩国负责人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Kim Kyoung-hoon 在发布会上提到，OpenAI 将继续与韩国半导体供应链企业建立合作，先进芯片对加速人工智能处理非常重要。",
+          "event_refs": [
+            "EV-20e076804a3000b4"
+          ],
+          "claim_ref": "CL-4e66319e8ce5305b",
+          "source_refs": [
+            "SA-b83bdd1982867e53"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-10/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/000/181.htm",
+      "entityIds": [
+        "EN-f411e9e541e1fcb8",
+        "EN-7d3194f79e645c42",
+        "EN-f07e5ee173c15c8f",
+        "EN-968e2d5b08687bf4"
+      ]
+    },
     {
       "id": "HWC-1166e0de5cfe2bab",
       "snapshotKey": "1166e0de5cfe2bab",

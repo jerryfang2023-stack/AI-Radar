@@ -5,13 +5,40 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "hardware": [
+    {
+      "id": "HW-493944143628e75b",
+      "eventId": "EV-ec21501b02a611f6",
+      "dataDate": "2026-09-10",
+      "date": "2026-09-09",
+      "title": "谷歌计划在芬兰投入至少 130 亿欧元建设 AI 数据中心，为在欧洲最大单笔投资",
+      "hardwareType": "data_center",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "Google",
+      "customer": "谷歌",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "芬兰",
+      "region": "欧洲",
+      "contractValue": "至少 130 亿欧元",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/000/261.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-09-09",
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ]
+    },
     {
       "id": "HW-e0ad31e5b30c33bd",
       "eventId": "EV-8d48a9b8a69c331d",
@@ -3346,6 +3373,91 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-e501ff4e5ef92abb",
+      "snapshotKey": "e501ff4e5ef92abb",
+      "snapshotId": "HWS-a310ac1b0c46207d",
+      "eventId": "EV-20e076804a3000b4",
+      "eventIds": [
+        "EV-20e076804a3000b4"
+      ],
+      "dataDate": "2026-09-10",
+      "date": "2026-09-10",
+      "title": "OpenAI 韩国负责人",
+      "subject": "OpenAI 韩国负责人",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-72c09f006ecbf539"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-10",
+          "hardware_fact_id": "HWF-c4bad4adc95c6aef",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T06:22:41.000Z",
+          "subject_entity_id": "EN-f411e9e541e1fcb8",
+          "subject_name": "OpenAI 韩国负责人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 9 月 9 日消息，OpenAI 韩国负责人 Kim Kyoung-hoon (Harrison Kim) 在该企业韩国首尔区域办事处成立一周年新闻发布会上表示， OpenAI 与三星电子的下一代芯片合作取得良好进展 。",
+          "event_refs": [
+            "EV-20e076804a3000b4"
+          ],
+          "claim_ref": "CL-a2d94ae20f1afc39",
+          "source_refs": [
+            "SA-b83bdd1982867e53"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-10/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-10",
+          "hardware_fact_id": "HWF-72c09f006ecbf539",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T06:22:41.000Z",
+          "subject_entity_id": "EN-f411e9e541e1fcb8",
+          "subject_name": "OpenAI 韩国负责人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Kim Kyoung-hoon 在发布会上提到，OpenAI 将继续与韩国半导体供应链企业建立合作，先进芯片对加速人工智能处理非常重要。",
+          "event_refs": [
+            "EV-20e076804a3000b4"
+          ],
+          "claim_ref": "CL-4e66319e8ce5305b",
+          "source_refs": [
+            "SA-b83bdd1982867e53"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-10/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/000/181.htm",
+      "entityIds": [
+        "EN-f411e9e541e1fcb8",
+        "EN-7d3194f79e645c42",
+        "EN-f07e5ee173c15c8f",
+        "EN-968e2d5b08687bf4"
+      ]
+    },
     {
       "id": "HWC-fde7880cbf9629d0",
       "snapshotKey": "fde7880cbf9629d0",
@@ -15034,36 +15146,33 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-09",
-      "funnel_id": "LF-9e1cefaa1df12afe",
+      "data_date": "2026-09-10",
+      "funnel_id": "LF-7c41e15a5ee09e83",
       "lens": "hardware",
-      "date": "2026-09-09",
+      "date": "2026-09-10",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_capex",
         "hardware_product_specs",
-        "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 26,
-      "original_sources": 20,
-      "valid_claims": 11,
-      "observations": 3,
+      "raw_documents": 17,
+      "original_sources": 11,
+      "valid_claims": 16,
+      "observations": 2,
       "canonical_events": 4,
       "blocker_counts": {
-        "source_outside_daily_window": 10,
-        "no_source_bounded_event": 2,
-        "source_outside_funding_backfill_window": 1,
         "event_not_ai_relevant": 1,
-        "raw_source_quality_block": 7
+        "source_outside_daily_window": 5,
+        "non_event_or_index_title": 1,
+        "raw_source_quality_block": 6
       },
       "rates": {
-        "original_source_rate": 0.7692307692307693,
-        "valid_claim_rate": 0.4230769230769231,
-        "observation_rate": 0.2727272727272727,
-        "event_conversion_rate": 0.36363636363636365
+        "original_source_rate": 0.6470588235294118,
+        "valid_claim_rate": 0.9411764705882353,
+        "observation_rate": 0.125,
+        "event_conversion_rate": 0.25
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-09/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-10/monitoring-funnel.json"
     }
   ]
 }
