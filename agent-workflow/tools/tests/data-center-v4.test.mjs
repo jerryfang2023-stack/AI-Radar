@@ -526,6 +526,18 @@ test("opinion article does not become a regulation or hardware event", () => {
   assert.equal(bundle.qa_queue[0].reason, "opinion_without_source_bounded_event");
 });
 
+test("scrubbed financing stays withdrawn in the factual bundle", () => {
+  const bundle = buildBundle([
+    entry("scrubbed-funding", "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
+      "Listen Labs signed a term sheet for a $125 million Series C at a $1.5 billion valuation. But that round never closed.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.equal(bundle.canonical_events[0].event_status, "withdrawn");
+  assert.equal(bundle.canonical_events[0].publication_status, "withdrawn");
+  assert.ok(bundle.claims.length > 0, "retain source-bounded evidence");
+  assert.equal(eventStatus("Acme AI raises $10 million for its data-scrubbing product", "", "funding"), "completed");
+});
+
 test("pending funding is represented as disputed and never projected", () => {
   const bundle = buildBundle([
     entry("pending-funding", "Acme AI in talks to raise $200 million Series B", "Acme AI is in talks to raise about $200 million at a $2 billion valuation. Talks are ongoing and the deal may not be final.")

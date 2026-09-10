@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "generatedAt": "2026-09-10T01:19:06.918Z",
     "latestDataDate": "2026-09-10",
     "currentDate": "2026-09-10",
     "eventCount": 2795,
@@ -18,7 +18,6 @@
     "typeLabel": "AI 市场子类",
     "valueId": "marketing",
     "eventIds": [
-      "EV-905925eb2e6059c1",
       "EV-1dba157815d84342",
       "EV-933b02f5736a0366",
       "EV-f6a72cddbda748b3",
@@ -26,7 +25,6 @@
       "EV-affa49966121461c"
     ],
     "entityIds": [
-      "EN-53f5d317b4126bfb",
       "EN-50b2676afbe30c83",
       "EN-13a7f8fe8140462d",
       "EN-a5d2ae286d0d9e45",
@@ -36,323 +34,9 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-09-10"
+    "lastSeen": "2026-08-18"
   },
   "events": [
-    {
-      "id": "EV-905925eb2e6059c1",
-      "dataDate": "2026-09-10",
-      "date": "2026-09-09",
-      "updatedDate": "2026-09-10",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI研究初创公司Listen Labs取消15亿美元融资轮，转向与Salesforce洽谈",
-      "originalTitle": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
-      "subject": "AI research startup Listen Labs scrubbed a $1.5B",
-      "action": "funding round",
-      "object": "for Salesforce talks",
-      "metrics": [
-        "$1.5B",
-        "$125 million",
-        "$1.5 billion",
-        "$30 million",
-        "$200 million",
-        "$ 2 billion",
-        "$500 million",
-        "$69 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "enterprise_applications",
-            "name": "企业级应用",
-            "entityIds": [
-              "EN-53f5d317b4126bfb"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-b97fb631a7581a21",
-            "fundingInsightId": "FI-137f2a53b0e1823d"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "marketing",
-            "name": "营销",
-            "entityIds": [
-              "EN-53f5d317b4126bfb"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-95eff63d15077acb",
-            "fundingInsightId": "FI-137f2a53b0e1823d"
-          }
-        ],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "enterprise_software_platform",
-            "name": "企业软件平台",
-            "entityIds": [
-              "EN-53f5d317b4126bfb"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-b39aa14947b38a11",
-            "fundingInsightId": "FI-137f2a53b0e1823d"
-          }
-        ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "data_analysis",
-            "name": "数据分析",
-            "entityIds": [
-              "EN-53f5d317b4126bfb"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-7cb52ba2876f1a4f",
-            "fundingInsightId": "FI-137f2a53b0e1823d"
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "knowledge_search",
-            "name": "知识与搜索",
-            "entityIds": [
-              "EN-53f5d317b4126bfb"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-73426e477d102778",
-            "fundingInsightId": "FI-137f2a53b0e1823d"
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "marketing",
-            "name": "营销",
-            "entityIds": [
-              "EN-53f5d317b4126bfb"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-3014b718ef3f30d6",
-            "fundingInsightId": "FI-137f2a53b0e1823d"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-53f5d317b4126bfb"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-996dc3f8e374f041",
-            "fundingInsightId": "FI-137f2a53b0e1823d"
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "enterprise_applications",
-          "name": "企业级应用",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b97fb631a7581a21",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "marketing",
-          "name": "营销",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-95eff63d15077acb",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b39aa14947b38a11",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-996dc3f8e374f041",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "data_analysis",
-          "name": "数据分析",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-7cb52ba2876f1a4f",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "knowledge_search",
-          "name": "知识与搜索",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-73426e477d102778",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "marketing",
-          "name": "营销",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-3014b718ef3f30d6",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "enterprise_applications",
-          "name": "企业级应用",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b97fb631a7581a21",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "marketing",
-          "name": "营销",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-95eff63d15077acb",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b39aa14947b38a11",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "data_analysis",
-          "name": "数据分析",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-7cb52ba2876f1a4f",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "knowledge_search",
-          "name": "知识与搜索",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-73426e477d102778",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "marketing",
-          "name": "营销",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-3014b718ef3f30d6",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-53f5d317b4126bfb"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-996dc3f8e374f041",
-          "fundingInsightId": "FI-137f2a53b0e1823d"
-        }
-      ],
-      "entityIds": [
-        "EN-53f5d317b4126bfb",
-        "EN-3ccbd9105a45d8fc"
-      ],
-      "entityNames": [
-        "AI research startup Listen Labs scrubbed a $1.5B",
-        "Salesforce"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks",
-      "publisher": "TechCrunch AI"
-    },
     {
       "id": "EV-1dba157815d84342",
       "dataDate": "2026-08-18",
@@ -2271,33 +1955,6 @@
   ],
   "entities": [
     {
-      "id": "EN-53f5d317b4126bfb",
-      "name": "AI research startup Listen Labs scrubbed a $1.5B",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-905925eb2e6059c1"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-marketing",
-        "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-use_case-knowledge_search",
-        "TX-use_case-marketing"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-09",
-      "lastSeen": "2026-09-10"
-    },
-    {
       "id": "EN-50b2676afbe30c83",
       "name": "Higgsfield",
       "entityType": "organization_candidate",
@@ -2315,14 +1972,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-marketing",
-        "TX-target_user-business_user",
-        "TX-use_case-marketing",
         "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-industry-media_entertainment",
         "TX-target_user-consumer",
-        "TX-technology-video_generation"
+        "TX-technology-video_generation",
+        "TX-ai_market_subcategory-marketing",
+        "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-17",
@@ -2344,12 +2001,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-marketing",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
         "TX-use_case-content_creation",
-        "TX-industry-retail_ecommerce"
+        "TX-use_case-data_analysis",
+        "TX-product_form-enterprise_software_platform",
+        "TX-industry-retail_ecommerce",
+        "TX-ai_market_subcategory-marketing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-06",
@@ -2370,19 +2027,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-marketing",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-data_analysis",
-        "TX-use_case-marketing",
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-sales",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
+        "TX-ai_market_subcategory-marketing",
+        "TX-use_case-marketing",
         "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [],
@@ -2405,14 +2062,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-marketing",
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-use_case-marketing",
         "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
         "TX-use_case-content_creation",
+        "TX-use_case-data_analysis",
         "TX-technology-agentic_execution",
-        "TX-industry-retail_ecommerce"
+        "TX-industry-retail_ecommerce",
+        "TX-ai_market_subcategory-marketing",
+        "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-24",
@@ -2434,12 +2091,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-marketing",
-        "TX-target_user-business_user",
-        "TX-use_case-marketing",
         "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-industry-media_entertainment"
+        "TX-industry-media_entertainment",
+        "TX-ai_market_subcategory-marketing",
+        "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-02",

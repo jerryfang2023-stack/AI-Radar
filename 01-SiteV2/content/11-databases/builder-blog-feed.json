@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-09T01:17:33.117Z",
+  "generatedAt": "2026-09-10T01:17:17.553Z",
   "stats": {
     "blogsBuilt": 4,
-    "totalItems": 32,
+    "totalItems": 29,
     "sourceCount": 6,
     "errors": []
   },
@@ -12,6 +12,26 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Sep/10/calif-research/",
+          "text": "Quoting Calif Research",
+          "summary": "<blockquote cite=\"https://calif.io/research/weworm\"><p>Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...]</p>\n<p>The victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they",
+          "createdAt": "2026-09-10T00:56:41+00:00",
+          "url": "https://simonwillison.net/2026/Sep/10/calif-research/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+          "text": ".blend URL Viewer",
+          "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/blender-viewer\">.blend URL Viewer</a></p>\n        <p>I'm continuing to have a lot of fun with GPT-6 Astra and Blender (see <a href=\"https://til.simonwillison.net/llms/blender-coding-agents-macos\">my TIL</a>).</p>\n<p>As a big fan of t",
+          "createdAt": "2026-09-09T23:58:32+00:00",
+          "url": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Sep/9/terence-tao/",
           "text": "Quoting Terence Tao",
@@ -191,66 +211,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/2/llm-openrouter/",
-          "text": "llm-openrouter 0.7.1",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-openrouter/releases/tag/0.7.1\">llm-openrouter 0.7.1</a></p>\n        <blockquote>\n<ul>\n<li>Performance fix for loading OpenRouter models. Thanks, <a href=\"https://github.com/waveplate\">waveplate</a>. <a href=\"https://github.com/simon",
-          "createdAt": "2026-09-02T20:23:26+00:00",
-          "url": "https://simonwillison.net/2026/Sep/2/llm-openrouter/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/2/llm/",
-          "text": "llm 0.34",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.34\">llm 0.34</a></p>\n        <p>One new feature:</p>\n<blockquote>\n<ul>\n<li><code>llm logs --usage</code> Markdown output now includes the response duration in milliseconds and as a human-readable duration. <code>llm l",
-          "createdAt": "2026-09-02T19:23:52+00:00",
-          "url": "https://simonwillison.net/2026/Sep/2/llm/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/2/llm-anthropic/",
-          "text": "llm-anthropic 0.28",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-anthropic/releases/tag/0.28\">llm-anthropic 0.28</a></p>\n        <p><a href=\"https://www.anthropic.com/claude/fable\">Claude Fable 5.1</a>, reasoning traces are now displayed by default for models that support them, plus a new <code>l",
-          "createdAt": "2026-09-02T17:59:32+00:00",
-          "url": "https://simonwillison.net/2026/Sep/2/llm-anthropic/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
-          "text": "llm-gemini 0.34",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.34\">llm-gemini 0.34</a></p>\n        <blockquote>\n<ul>\n<li>New model <code>gemini-3.8-flash</code> for <a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyb",
-          "createdAt": "2026-09-02T16:39:38+00:00",
-          "url": "https://simonwillison.net/2026/Sep/2/llm-gemini/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
-          "text": "Claude's new system prompt really doesn't want to reproduce song lyrics",
-          "summary": "<p>Anthropic <a href=\"https://platform.claude.com/docs/en/release-notes/system-prompts/overview\">publish the system prompts</a> for their Claude consumer applications (<a href=\"https://claude.ai/\">Claude.ai</a> and the Claude mobile apps - sadly not for Claude Cowork or Claude Code). I <em>love</em>",
-          "createdAt": "2026-09-02T14:16:42+00:00",
-          "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
-          "text": "Quoting Rick Brewster",
-          "summary": "<blockquote cite=\"https://forums.paint.net/topic/134563-🍷-extremely-experimental-winelinux-support-how-to-get-started/\"><p>Direct2D has always been the biggest hurdle for Paint.NET on WINE, and it's clear that it will never be completed enough for Paint.NET's use. And I can't just \"disable\" the use",
-          "createdAt": "2026-09-02T05:50:57+00:00",
-          "url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -259,6 +219,16 @@
       "handle": "interconnects.ai",
       "bio": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "tweets": [
+        {
+          "id": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
+          "text": "When will average people feel AI’s impact?",
+          "summary": "We&#8217;re <5 years into a compounding revolution which could take a century, and how the AI industry should manage this.",
+          "createdAt": "Wed, 09 Sep 2026 11:01:23 GMT",
+          "url": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
           "text": "Latest open artifacts (#24): Motif-3, GLM-5.3, Hy4-preview and open model licenses",
@@ -314,6 +284,16 @@
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
         {
+          "id": "https://tldr.tech/ai/2026-09-09",
+          "text": "Images 2.5 🎨, OpenAI solves Navier-Stokes 🧮, AlphaGenome Atlas 🧬",
+          "summary": "",
+          "createdAt": "Wed, 09 Sep 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-09-09",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://tldr.tech/ai/2026-09-08",
           "text": "OpenAI managed agents 🤖, TPU inference ⚡, Anthropic $517B compute 💰",
           "summary": "",
@@ -339,16 +319,6 @@
           "summary": "",
           "createdAt": "Fri, 04 Sep 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-09-04",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-09-03",
-          "text": "Muse Spark 1.3 ✨, Gemini 3.8 Flash ⚡, intelligence vs cost 📊",
-          "summary": "",
-          "createdAt": "Thu, 03 Sep 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-09-03",
           "likes": 0,
           "retweets": 0,
           "replies": 0
