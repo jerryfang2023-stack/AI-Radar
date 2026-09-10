@@ -1,6 +1,6 @@
 # Guanlan Funding Mini Program
 
-Current source: 0.9.6 adds seasonal community scores and a protected Token benefits page, and hides the community home bounty entry. Pool configuration and reward issuance status come from the authenticated backend; reward display does not grant wallet points or perform automatic issuance. The last verified upload remains the immutable release recorded under `docs/releases/`; see `docs/REVIEW-0.9.6.md` for the current review paths.
+Current source and verified uploaded development release: 0.9.6 adds seasonal community scores and a protected Token benefits page, and hides the community home bounty entry. Pool configuration and reward issuance status come from the authenticated backend; reward display does not grant wallet points or perform automatic issuance. See `docs/releases/0.9.6/README.md` for the immutable source and receipt, and `docs/REVIEW-0.9.6.md` for the review paths. Upload does not mean review approval or production publication.
 
 This is the native WeChat Mini Program frontstage for Funding Insights.
 
