@@ -24,6 +24,20 @@ const config = { id: "season-2", label: "第二季", start: "2026-09-14", end: "
 const payload = { seasons: [config], batches: [], activityTypes: [], audits: [] };
 const respond = async (request, result, status = 200) => { request.resolve({ ok: status === 200, status, json: async () => result }); await new Promise(setImmediate); };
 
+test("Token card is the default on fresh sessions and after logout", async () => {
+  const h = harness();
+  h.parentEvents["membership:open"]({ detail: { view: "membership-token" } });
+  h.docEvents["operations:authenticated"]({ detail: { csrfToken: "test-session" } });
+  await respond(h.calls[0], payload);
+  assert.match(h.el("[data-token-content]").innerHTML, /data-token-config hidden/);
+  h.click("[data-token-edit]");
+  assert.doesNotMatch(h.el("[data-token-content]").innerHTML, /data-token-config hidden/);
+  h.docEvents["operations:logout"]();
+  h.docEvents["operations:authenticated"]({ detail: { csrfToken: "new-session" } });
+  await respond(h.calls[1], payload);
+  assert.match(h.el("[data-token-content]").innerHTML, /data-token-config hidden/);
+});
+
 test("Token operations is lazy, authenticated, escaped, CSRF protected and clears on logout", async () => {
   const h = harness();
   h.parentEvents["membership:open"]({ detail: { view: "membership-token" } });

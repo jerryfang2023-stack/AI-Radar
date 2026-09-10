@@ -59,6 +59,21 @@ test("production Token panel supports configure, preview, confirm, receipt and m
       document.querySelector("[data-ops-console]").hidden = false;
       document.dispatchEvent(new CustomEvent("operations:authenticated", { detail: { csrfToken: "test-session-csrf-1234567890" } }));
     });
+    await page.getByRole("button", { name: "编辑设置", exact: true }).waitFor();
+    assert.equal(await page.locator('[data-token-config]').isVisible(), false, "opening defaults to the saved card");
+    await page.getByRole("button", { name: "编辑设置", exact: true }).click();
+    assert.equal(await page.locator('[data-token-config]').isVisible(), true);
+    await page.evaluate(() => {
+      const root = document.querySelector('[data-member-operations]');
+      root.dispatchEvent(new CustomEvent('membership:open', { detail: { view: 'membership' } }));
+      root.dispatchEvent(new CustomEvent('membership:open', { detail: { view: 'membership-token' } }));
+    });
+    await page.getByRole("button", { name: "编辑设置", exact: true }).waitFor();
+    assert.equal(await page.locator('[data-token-config]').isVisible(), false, "returning from another panel closes the editor");
+    await page.getByRole("button", { name: "编辑设置", exact: true }).click();
+    await page.locator('[data-token-season]').dispatchEvent('change');
+    assert.equal(await page.locator('[data-token-config]').isVisible(), false, "changing season returns to its card");
+    await page.getByRole("button", { name: "编辑设置", exact: true }).click();
     assert.equal(await page.locator('[name="distributionMode"]').inputValue(), "season_total");
     assert.equal(await page.locator('[data-token-custom]').isVisible(), false);
     assert.equal(await page.locator('[name="rules"]').getAttribute("readonly"), null);

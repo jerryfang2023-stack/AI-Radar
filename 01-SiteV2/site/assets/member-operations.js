@@ -478,7 +478,7 @@
   const $ = (selector) => root.querySelector(selector);
   const escape = (value) => String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
   const endpoint = "/ops/member-api/token-benefits";
-  let csrf = "", active = false, payload = null, preview = null, generation = 0, busy = false, dirty = false, editing = true;
+  let csrf = "", active = false, payload = null, preview = null, generation = 0, busy = false, dirty = false, editing = false;
   const operations = new Map();
   const selected = () => $("[data-token-season]").value;
   const status = (value) => { $("[data-token-status]").textContent = value; };
@@ -501,7 +501,7 @@
     if (rules?.style) { rules.style.height = "auto"; rules.style.height = (rules.scrollHeight + rules.offsetHeight - rules.clientHeight) + "px"; }
   }
   function reset() {
-    generation += 1; csrf = ""; payload = null; preview = null; operations.clear();
+    generation += 1; csrf = ""; payload = null; preview = null; editing = false; dirty = false; operations.clear();
     for (const name of ["content", "preview", "records", "audits"]) $("[data-token-" + name + "]").innerHTML = "";
     status("登录后可管理");
   }
@@ -621,9 +621,10 @@
   root.addEventListener("input", editConfig);
   root.addEventListener("change", editConfig);
   window.addEventListener?.("resize", fitRules);
-  $("[data-token-season]").addEventListener("change", () => { generation += 1; if (payload) render(); });
+  $("[data-token-season]").addEventListener("change", () => { generation += 1; editing = false; if (payload) render(); });
   document.querySelector("[data-member-operations]").addEventListener("membership:open", (event) => {
     active = event?.detail?.view === "membership-token";
+    editing = false;
     if (active && csrf) void load();
   });
   document.addEventListener("operations:authenticated", (event) => {
