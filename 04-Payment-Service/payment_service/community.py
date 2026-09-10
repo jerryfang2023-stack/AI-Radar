@@ -114,6 +114,15 @@ class CommunityClient:
             payload=payload,
         )
 
-    def hub(self, path, *, viewer=None, method="GET", payload=None):
-        query = "?" + urllib.parse.urlencode({"viewer": int(viewer)}) if viewer is not None else ""
+    def operations_token_benefits(self, key=None, action=None, payload=None):
+        path = "/api/internal/v1/operations/token-benefits"
+        if key is not None:
+            path += "/" + urllib.parse.quote(str(key), safe="") + "/" + urllib.parse.quote(str(action), safe="")
+        return self._request(path, method="POST" if key is not None else "GET", payload=payload)
+
+    def hub(self, path, *, viewer=None, method="GET", payload=None, season=None):
+        params = {"viewer": int(viewer)} if viewer is not None else {}
+        if season is not None:
+            params["season"] = season
+        query = "?" + urllib.parse.urlencode(params) if params else ""
         return self._request("/api/internal/v1/community/" + path + query, method=method, payload=payload)

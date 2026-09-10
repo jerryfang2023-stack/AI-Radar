@@ -18,7 +18,7 @@ function harness(active = true) {
   root.classList = { contains: () => active };
   const requests = [];
   class TestEvent { constructor(type, options = {}) { this.type = type; this.detail = options.detail; } }
-  const document = { querySelector: () => root, addEventListener(name, fn) { documentListeners[name] = fn; }, dispatchEvent(event) { documentListeners[event.type]?.(event); } };
+  const document = { querySelector: (selector) => selector === "[data-mo-token]" ? null : root, addEventListener(name, fn) { documentListeners[name] = fn; }, dispatchEvent(event) { documentListeners[event.type]?.(event); } };
   vm.runInNewContext(script, { document, CustomEvent: TestEvent, Event: TestEvent, Intl, Date, AbortController, setTimeout, clearTimeout,
     fetch(url, options) { return new Promise((resolve, reject) => requests.push({ url, options, resolve, reject })); },
   });

@@ -474,6 +474,22 @@ def register(app, db, clock):
             lambda: app.community_client.update_operations_schedule_session(session_id, payload)
         )
 
+    @app.get("/api/v1/admin/analytics/membership/token-benefits")
+    @admin_required()
+    def token_benefits_management():
+        return community_result(app.community_client.operations_token_benefits)
+
+    @app.post("/api/v1/admin/analytics/membership/token-benefits/<key>/<action>")
+    @admin_required(write=True)
+    def token_benefits_action(key, action):
+        if key not in {"season-1", "season-2"} or action not in {"configure", "preview", "confirm", "receipt"}:
+            return jsonify(error={"message": "操作不存在"}), 404
+        body = request.get_json(silent=True)
+        if not isinstance(body, dict):
+            return jsonify(error={"message": "请求格式无效"}), 400
+        body["actorHash"] = str(g.operations_admin_session["email_hash"])[:16]
+        return community_result(lambda: app.community_client.operations_token_benefits(key, action, body))
+
     @app.post("/api/v1/admin/analytics/membership/users/<int:user_id>/adjustments")
     @admin_required(write=True)
     def membership_admin_adjust(user_id):

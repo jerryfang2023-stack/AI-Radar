@@ -443,7 +443,7 @@
   $("[data-mo-schedule-editor]").addEventListener("click", (event) => { if (event.target.closest("[data-mo-schedule-cancel]")) { selectedScheduleId = null; $("[data-mo-schedule-editor]").innerHTML = ""; } });
   $("[data-mo-schedule-editor]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-schedule-form]"); if (!form) return; event.preventDefault(); void submitSchedule(form); });
   root.addEventListener("membership:open", (event) => {
-    activeView = ["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule"].includes(event?.detail?.view) ? event.detail.view : "membership";
+    activeView = ["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token"].includes(event?.detail?.view) ? event.detail.view : "membership";
     if (activeView === "membership" && !loaded) refresh();
     if (activeView === "membership-users" && adminCsrfToken && !adminLoaded) void loadAdminUsers();
     if (activeView === "membership-community" && adminCsrfToken && !communityLoaded) void loadCommunityMembers();
@@ -460,4 +460,113 @@
     if (activeView === "membership-schedule") void loadSchedule();
   });
   document.addEventListener("operations:logout", resetAdminSession);
+})();
+
+
+// Token management uses the same OPS session; no standalone public admin surface.
+(function () {
+  const root = document.querySelector("[data-mo-token]");
+  if (!root) return;
+  const $ = (selector) => root.querySelector(selector);
+  const escape = (value) => String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
+  const endpoint = "/ops/member-api/token-benefits";
+  let csrf = "", active = false, payload = null, preview = null, generation = 0, busy = false;
+  const operations = new Map();
+  const selected = () => $("[data-token-season]").value;
+  const status = (value) => { $("[data-token-status]").textContent = value; };
+  const actionLabel = { configure: "修改配置", confirm: "确认分配", receipt: "登记发放" };
+  function reset() {
+    generation += 1; csrf = ""; payload = null; preview = null; operations.clear();
+    for (const name of ["content", "preview", "records", "audits"]) $("[data-token-" + name + "]").innerHTML = "";
+    status("登录后可管理");
+  }
+  async function request(path = "", body) {
+    const response = await fetch(endpoint + path, {
+      method: body ? "POST" : "GET", credentials: "same-origin", cache: "no-store",
+      headers: body ? { "Content-Type": "application/json", "X-CSRF-Token": csrf } : {},
+      ...(body ? { body: JSON.stringify(body) } : {}),
+    });
+    const result = await response.json();
+    if (response.status === 401 || response.status === 403) { reset(); throw new Error("会话或权限已变化，请重新登录"); }
+    if (!response.ok) throw new Error(result.error?.message || "请求失败，请重试");
+    return result;
+  }
+  function table(rows, unit, receipts = false) {
+    return '<div class="mo-token-table"><table><thead><tr><th>成员</th><th>有效积分</th><th>' + escape(unit) + '</th>' + (receipts ? '<th>发放记录</th>' : '') + '</tr></thead><tbody>' + rows.map((row) => '<tr><td>' + escape(row.name) + '</td><td>' + row.points + '</td><td>' + row.amount + '</td>' + (receipts ? '<td>' + (row.receipt ? '已登记 · ' + escape(row.receipt.receipt) : row.amount > 0 ? '<form data-token-receipt="' + row.memberId + '"><input name="receipt" minlength="4" maxlength="200" required aria-label="发放凭据编号" placeholder="实际发放凭据编号"><button type="submit">登记发放</button></form>' : '未分配额度') + '</td>' : '') + '</tr>').join("") + '</tbody></table></div>';
+  }
+  function render() {
+    if (!payload) return;
+    preview = null; $("[data-token-preview]").innerHTML = "";
+    const config = payload.seasons.find((item) => item.id === selected());
+    if (!config) throw new Error("赛季不存在");
+    const batch = payload.batches.find((item) => item.config.id === selected());
+    $("[data-token-content]").innerHTML = '<form class="mo-schedule-editor" data-token-config><h2>赛季与激励池设置</h2><fieldset ' + (batch ? 'disabled' : '') + '><div class="mo-schedule-fields">' +
+      '<label>开始日期<input type="date" name="start" value="' + escape(config.start) + '"></label><label>结束日期（不含当天）<input type="date" name="end" value="' + escape(config.end) + '"></label>' +
+      '<label>供应方<input name="provider" maxlength="100" value="' + escape(config.provider) + '"></label><label>计量单位<input name="unit" maxlength="40" required value="' + escape(config.unit) + '"></label>' +
+      '<label>已落实额度（整数最小单位）<input name="amount" type="number" min="0" max="1000000000000" step="1" required value="' + config.amount + '"></label></div>' +
+      '<h3>参与奖励分配的计分类别</h3><div class="mo-token-types">' + payload.activityTypes.map((type) => '<label><input type="checkbox" name="type" value="' + escape(type.id) + '" ' + (config.eligibleTypes.includes(type.id) ? 'checked' : '') + '>' + escape(type.label) + '</label>').join("") + '</div>' +
+      '<label>对成员公布的规则<textarea name="rules" maxlength="2000">' + escape(config.rules) + '</textarea></label>' +
+      '<label class="mo-token-check"><input type="checkbox" name="enabled" ' + (config.enabled ? 'checked' : '') + '>公布激励池和规则</label><p>积分不扣减。按有效积分占比分配，向下取整，余量留在池中。供应方及计量单位不可混用。</p>' +
+      '<button type="submit">保存设置</button></fieldset></form>' +
+      (batch ? '<p>本季已确认分配，配置与积分快照已锁定。</p>' : '<button type="button" data-token-calculate>预览分配</button>');
+    $("[data-token-records]").innerHTML = batch ? '<h2>发放记录</h2><p>只登记已实际完成的发放，不会调用供应商。请勿填写 API 密钥。</p>' + table(batch.allocations, batch.config.unit, true) + '<p>未分配余量：' + batch.remaining + ' ' + escape(batch.config.unit) + '</p>' : "";
+    $("[data-token-audits]").innerHTML = '<details><summary>最近操作记录</summary>' + payload.audits.map((audit) => '<p>' + escape(audit.created_at) + ' · ' + escape(audit.action.split("/")[0]) + ' · ' + escape(actionLabel[audit.action.split("/")[1]] || audit.action) + ' · ' + escape(audit.actor) + '</p>').join("") + '</details>';
+  }
+  async function load() {
+    if (!csrf) return;
+    const current = ++generation;
+    status("正在读取…");
+    try {
+      const result = await request();
+      if (current !== generation || !csrf) return;
+      payload = result; render(); status("已读取");
+    } catch (error) { if (current === generation) status(error.message); }
+  }
+  async function act(action, body) {
+    if (!csrf || busy) return;
+    const key = selected(), current = generation;
+    const signature = JSON.stringify({ key, action, body });
+    const operationId = operations.get(signature) || globalThis.crypto.randomUUID();
+    operations.set(signature, operationId);
+    busy = true; root.setAttribute("aria-busy", "true"); status("正在提交…");
+    try {
+      const result = await request("/" + key + "/" + action, { ...body, operationId });
+      if (current !== generation || !csrf || selected() !== key) return;
+      operations.delete(signature);
+      if (action === "preview") {
+        preview = result;
+        $("[data-token-preview]").innerHTML = '<h2>分配预览</h2>' + table(result.allocations, result.config.unit) + '<p>余量：' + result.remaining + '。确认后锁定本季配置与分配名单；此操作不会实际发放。</p><button type="button" data-token-confirm>确认本季分配</button>';
+        status("请核对分配名单和额度");
+      } else { await load(); status(action === "receipt" ? "已登记发放凭据" : action === "confirm" ? "分配已锁定，尚未发放" : "设置已保存"); }
+    } catch (error) { if (current === generation) status(error.message); }
+    finally { busy = false; root.removeAttribute("aria-busy"); }
+  }
+  root.addEventListener("click", (event) => {
+    if (busy) return;
+    if (event.target.closest("[data-token-refresh]")) void load();
+    if (event.target.closest("[data-token-calculate]")) void act("preview", {});
+    if (event.target.closest("[data-token-confirm]") && preview && window.confirm("确认锁定本季分配名单和额度？确认后不可修改本季配置，尚不会实际发放。")) void act("confirm", { previewHash: preview.previewHash });
+  });
+  root.addEventListener("submit", (event) => {
+    const form = event.target.closest("form");
+    if (!form) return;
+    event.preventDefault();
+    if (busy || !payload) return;
+    const data = new FormData(form);
+    if (form.matches("[data-token-config]")) {
+      const config = payload.seasons.find((item) => item.id === selected());
+      void act("configure", { revision: config.revision, config: { start: data.get("start"), end: data.get("end"), provider: data.get("provider"), unit: data.get("unit"), amount: Number(data.get("amount")), eligibleTypes: data.getAll("type"), rules: data.get("rules"), enabled: data.has("enabled") } });
+    } else if (form.matches("[data-token-receipt]") && window.confirm("确认已在供应商处完成真实发放？这里只登记凭据，不自动发放。")) {
+      void act("receipt", { memberId: Number(form.dataset.tokenReceipt), receipt: data.get("receipt") });
+    }
+  });
+  $("[data-token-season]").addEventListener("change", () => { generation += 1; if (payload) render(); });
+  document.querySelector("[data-member-operations]").addEventListener("membership:open", (event) => {
+    active = event?.detail?.view === "membership-token";
+    if (active && csrf) void load();
+  });
+  document.addEventListener("operations:authenticated", (event) => {
+    generation += 1; csrf = String(event.detail?.csrfToken || ""); if (active) void load();
+  });
+  document.addEventListener("operations:logout", reset);
 })();

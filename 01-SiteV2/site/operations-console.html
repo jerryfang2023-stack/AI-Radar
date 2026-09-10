@@ -371,6 +371,7 @@
             <button type="button" data-tab="membership-approval"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">社群加入审核</span></button>
             <button type="button" data-tab="membership-users"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">小程序会员管理</span></button>
             <button type="button" data-tab="membership-schedule"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">活动排期管理</span></button>
+            <button type="button" data-tab="membership-token"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">Token 权益管理</span></button>
           </div>
         </div>
         <button type="button" data-tab="governance"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">版本治理</span></button>
@@ -551,6 +552,20 @@
                 <div data-mo-admin-detail></div>
               </div>
               <footer><p>仅显示脱敏资料；权益和积分调整均记录操作原因与审计。</p></footer>
+            </section>
+          </div>
+        </section>
+
+        <section class="panel" data-panel="membership-token">
+          <div class="page-surface">
+            <header class="page-head"><div><span class="kicker">TOKEN BENEFITS</span><h1>Token 权益管理</h1></div></header>
+            <section class="mo-admin mo-subpage" data-mo-token>
+              <div class="mo-schedule-head"><label>赛季<select data-token-season><option value="season-2">第二季</option><option value="season-1">第一季</option></select></label><button type="button" data-token-refresh>刷新</button></div>
+              <p class="mo-admin-state" data-token-status role="status" aria-live="polite">登录后可管理</p>
+              <div data-token-content></div>
+              <div data-token-preview></div>
+              <div data-token-records></div>
+              <div data-token-audits></div>
             </section>
           </div>
         </section>

@@ -14,8 +14,8 @@
     get(key) { try { return localStorage.getItem(key); } catch { return null; } },
     set(key, value) { try { localStorage.setItem(key, value); return true; } catch { return false; } },
   };
-  const validPanels = new Set(["overview", "analytics", "membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "quality", "governance", "skills", "settings"]);
-  const membershipPanels = new Set(["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule"]);
+  const validPanels = new Set(["overview", "analytics", "membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token", "quality", "governance", "skills", "settings"]);
+  const membershipPanels = new Set(["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token"]);
   const defaults = { landing: "overview", compact: false, staleHours: 72 };
   let preferences = { ...defaults };
   try {

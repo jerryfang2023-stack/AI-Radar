@@ -84,6 +84,22 @@ def register_routes(app, *, db, auth_required, user_by_id):
         response.headers["Cache-Control"] = "private, no-store"
         return response
 
+    @app.get("/api/v1/community/season-points")
+    @app.get("/api/v1/community/token-benefits")
+    @auth_required
+    def community_season_rewards():
+        member_id = actor()
+        if not member_id:
+            return jsonify(error={"code": "COMMUNITY_REQUIRED", "message": "请先关联或加入社群"}), 403
+        path = request.path.rsplit("/", 1)[-1]
+        season = request.args.get("season", "total" if path == "season-points" else "season-2")
+        if season not in ({"total", "season-1", "season-2"} if path == "season-points" else {"season-1", "season-2"}):
+            return jsonify(error={"message": "赛季不存在"}), 400
+        # This API is deliberately isolated from the Mini Program point wallet.
+        response = jsonify(app.community_client.hub(path, viewer=member_id, season=season))
+        response.headers["Cache-Control"] = "private, no-store"
+        return response
+
     @app.route("/api/v1/community/drafts/<key>", methods=["GET", "PUT"])
     @auth_required
     def community_draft(key):
