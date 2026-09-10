@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
+  },
+  "entity": {
+    "id": "EN-f411e9e541e1fcb8",
+    "name": "OpenAI 韩国负责人",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-20e076804a3000b4"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-09",
+    "lastSeen": "2026-09-10",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-20e076804a3000b4"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-20e076804a3000b4",
+        "dataDate": "2026-09-10",
+        "date": "2026-09-09",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 韩国负责人：与三星电子的下一代芯片合作取得良好进展",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f411e9e541e1fcb8",
+          "EN-7d3194f79e645c42",
+          "EN-f07e5ee173c15c8f",
+          "EN-968e2d5b08687bf4"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-e501ff4e5ef92abb",
+      "snapshotKey": "e501ff4e5ef92abb",
+      "snapshotId": "HWS-a310ac1b0c46207d",
+      "eventId": "EV-20e076804a3000b4",
+      "eventIds": [
+        "EV-20e076804a3000b4"
+      ],
+      "dataDate": "2026-09-10",
+      "date": "2026-09-10",
+      "title": "OpenAI 韩国负责人",
+      "subject": "OpenAI 韩国负责人",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-72c09f006ecbf539"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-10",
+          "hardware_fact_id": "HWF-c4bad4adc95c6aef",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T06:22:41.000Z",
+          "subject_entity_id": "EN-f411e9e541e1fcb8",
+          "subject_name": "OpenAI 韩国负责人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 9 月 9 日消息，OpenAI 韩国负责人 Kim Kyoung-hoon (Harrison Kim) 在该企业韩国首尔区域办事处成立一周年新闻发布会上表示， OpenAI 与三星电子的下一代芯片合作取得良好进展 。",
+          "event_refs": [
+            "EV-20e076804a3000b4"
+          ],
+          "claim_ref": "CL-a2d94ae20f1afc39",
+          "source_refs": [
+            "SA-b83bdd1982867e53"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-10/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-10",
+          "hardware_fact_id": "HWF-72c09f006ecbf539",
+          "fact_type": "product",
+          "observed_at": "2026-09-09T06:22:41.000Z",
+          "subject_entity_id": "EN-f411e9e541e1fcb8",
+          "subject_name": "OpenAI 韩国负责人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Kim Kyoung-hoon 在发布会上提到，OpenAI 将继续与韩国半导体供应链企业建立合作，先进芯片对加速人工智能处理非常重要。",
+          "event_refs": [
+            "EV-20e076804a3000b4"
+          ],
+          "claim_ref": "CL-4e66319e8ce5305b",
+          "source_refs": [
+            "SA-b83bdd1982867e53"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-10/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/000/181.htm",
+      "entityIds": [
+        "EN-f411e9e541e1fcb8",
+        "EN-7d3194f79e645c42",
+        "EN-f07e5ee173c15c8f",
+        "EN-968e2d5b08687bf4"
+      ]
+    }
+  ]
+}

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "institution": {
     "id": "INV-862e0e7d2ba5cf",
@@ -23,7 +23,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 14,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 12,
     "market_regions": [
       "GLOBAL"
@@ -31,9 +31,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-25",
-    "latest_disclosed_at": "2026-09-01",
+    "latest_disclosed_at": "2026-09-09",
     "role_counts": {
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 8,
       "other_current_round": 1,
       "participant": 5
@@ -112,6 +112,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5d8c4464ebddbf8c",
+        "funding_insight_id": "FI-1edf45f7a4d3e17c",
+        "event_ids": [
+          "EV-905925eb2e6059c1"
+        ],
+        "company_entity_id": "EN-53f5d317b4126bfb",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$1.5B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "参投B轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0286b52989ae7567",
+            "source_url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
+            "source_title": "AI研究初创公司Listen Labs取消15亿美元融资轮，转向与Salesforce洽谈",
+            "source_content_hash": "2581a26611a0d0ca",
+            "quote": "with participation from returning backers Sequoia, Conviction, and Pear VC",
+            "quote_hash": "2b8a12e37757f2918a5bd154d9cfff5a6fdeb937d36279a40c705e67aad58e01"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b8c2836011deda65",
         "funding_insight_id": "FI-29e37a6d373071d9",
@@ -803,6 +843,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0286b52989ae7567",
+        "source_url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
+        "source_title": "AI研究初创公司Listen Labs取消15亿美元融资轮，转向与Salesforce洽谈",
+        "source_content_hash": "2581a26611a0d0ca",
+        "quote": "with participation from returning backers Sequoia, Conviction, and Pear VC",
+        "quote_hash": "2b8a12e37757f2918a5bd154d9cfff5a6fdeb937d36279a40c705e67aad58e01"
+      },
       {
         "source_id": "FISRC-0426e4b3b9347f4f",
         "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",

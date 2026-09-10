@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "institution": {
     "id": "INV-a88844b0644172",
@@ -21,7 +21,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -29,8 +29,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-24",
-    "latest_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-09-07",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -44,6 +45,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7bddf908fe2deaaa",
+        "funding_insight_id": "FI-c786a6640f0870e8",
+        "event_ids": [
+          "EV-cbeb33594e06678b"
+        ],
+        "company_entity_id": "EN-2cfe6f50f129c9c3",
+        "company_canonical_entity_id": "",
+        "company_name": "Cato",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€6 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万欧元"
+        },
+        "announced_at": "2026-09-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "领投pre-Seed轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-495f39954954d0bc",
+            "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
+            "source_title": "米兰初创公司Cato融资600万欧元，用AI帮助企业寻找并赢得公开招标",
+            "source_content_hash": "ec2ac823db86c73b",
+            "quote": "the company had raised a €1.6 million pre-Seed led by Italian Founders Fund",
+            "quote_hash": "d64582a018284bffdcce39e760306a4e6a0632f4b0b46dd36e957db339e207bf"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b8f671a62623787c",
         "funding_insight_id": "FI-180a459d0573eb2a",
@@ -87,6 +128,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-495f39954954d0bc",
+        "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
+        "source_title": "米兰初创公司Cato融资600万欧元，用AI帮助企业寻找并赢得公开招标",
+        "source_content_hash": "ec2ac823db86c73b",
+        "quote": "the company had raised a €1.6 million pre-Seed led by Italian Founders Fund",
+        "quote_hash": "d64582a018284bffdcce39e760306a4e6a0632f4b0b46dd36e957db339e207bf"
+      },
       {
         "source_id": "FISRC-05007e2b6b43ffda",
         "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",

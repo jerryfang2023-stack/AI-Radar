@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "node": {
     "id": "TX-use_case-customer_support",
@@ -43,6 +43,7 @@
       "EV-b85139b8fba1a5c5",
       "EV-dd3217aad32e6891",
       "EV-1196b80b537957f2",
+      "EV-b67bbfcebd513ac6",
       "EV-7690a249e07ddac8",
       "EV-eb61ddca7f36f55c",
       "EV-9ff0c57323ed8318",
@@ -86,6 +87,7 @@
       "EN-28d0bd981118a907",
       "EN-2f88f41306209dd7",
       "EN-91776f01fce0c960",
+      "EN-c13e2f4a44bb01ed",
       "EN-5e9e4638fa2ec9a4",
       "EN-d3565d297d476f10",
       "EN-3474e24464fc25a7",
@@ -101,6 +103,7 @@
       "EN-7d1507284a5757ca"
     ],
     "fdeIds": [
+      "FDE-8dd7a8bc8f9d8666",
       "FDE-34d87868ff636016",
       "FDE-d57aceb85d7bcd3e",
       "FDE-e79a238725a98c06",
@@ -111,7 +114,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2019-03-11",
-    "lastSeen": "2026-08-29"
+    "lastSeen": "2026-09-10"
   },
   "events": [
     {
@@ -9169,6 +9172,175 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-b67bbfcebd513ac6",
+      "dataDate": "2026-09-10",
+      "date": "2026-09-09",
+      "updatedDate": "2026-09-10",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "三星SDS在友利银行业务中部署358个AI智能体",
+      "originalTitle": "Samsung SDS Deploys 358 AI Agents Across Woori Bank Operations | Gate News",
+      "subject": "Samsung SDS",
+      "action": "Deploys",
+      "object": "358 AI Agents Across Woori Bank Operations | Gate News",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-c13e2f4a44bb01ed"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-c13e2f4a44bb01ed"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "customer_support",
+          "name": "客户支持",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "customer_support",
+          "name": "客户支持",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c13e2f4a44bb01ed"
+      ],
+      "entityNames": [
+        "Samsung SDS"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://gate.com/news/detail/018260/samsung-sds-deploys-358-ai-agents-across-woori-bank-operations-24126754",
+      "publisher": "gate.com"
+    },
+    {
       "id": "EV-7690a249e07ddac8",
       "dataDate": "2026-08-18",
       "date": "2026-08-18",
@@ -11511,9 +11683,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
         "TX-use_case-sales",
         "TX-ai_market_subcategory-customer_support",
         "TX-use_case-customer_support"
@@ -11537,12 +11709,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
-        "TX-target_user-consumer",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-product_form-end_user_application",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-target_user-consumer",
         "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
@@ -11564,14 +11736,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-use_case-knowledge_search",
         "TX-product_form-model",
+        "TX-target_user-developer",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
         "TX-use_case-content_creation",
-        "TX-use_case-knowledge_search",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
@@ -11596,13 +11768,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-ai_market_category-enterprise_applications",
+        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
+        "TX-industry-financial_services",
         "TX-ai_market_subcategory-sales",
         "TX-use_case-sales",
         "TX-technology-agentic_execution",
-        "TX-product_form-end_user_application",
         "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
@@ -11645,16 +11817,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-industry-professional_services",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-marketing",
+        "TX-industry-professional_services",
         "TX-use_case-sales",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_subcategory-customer_support",
         "TX-use_case-customer_support",
-        "TX-industry-telecommunications",
-        "TX-use_case-marketing"
+        "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-23",
@@ -11675,12 +11847,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
+        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-ai_market_subcategory-sales",
         "TX-use_case-sales",
         "TX-technology-agentic_execution",
-        "TX-product_form-end_user_application",
         "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
@@ -11798,8 +11970,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-dc7ca88afc22099a",
         "EV-f01a13953fa7aaaa",
+        "EV-dc7ca88afc22099a",
         "EV-ba091f86fba39da0",
         "EV-21fcd6420d6ff726",
         "EV-2d17a87d3863dcee",
@@ -11935,25 +12107,25 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-use_case-security_operations",
+        "TX-use_case-software_development",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-use_case-software_development",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-industry-manufacturing",
         "TX-industry-professional_services",
-        "TX-product_form-enterprise_software_platform",
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-use_case-physical_automation",
-        "TX-use_case-security_operations",
         "TX-product_form-ai_infrastructure_software",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
@@ -12017,7 +12189,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "EN-c71a83adf3de3f40",
@@ -12035,8 +12207,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-customer_support",
         "TX-ai_market_category-industry_applications",
         "TX-industry-food_hospitality",
@@ -12061,11 +12233,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-product_form-end_user_application",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
@@ -12087,13 +12259,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-customer_support"
       ],
@@ -12116,19 +12288,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
+        "TX-ai_market_category-enterprise_applications",
         "TX-target_user-business_user",
+        "TX-product_form-model",
+        "TX-product_form-end_user_application",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-industry-manufacturing",
         "TX-industry-professional_services",
-        "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-sales",
         "TX-use_case-sales",
         "TX-industry-education",
         "TX-industry-media_entertainment",
-        "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
@@ -12161,10 +12333,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-consumer",
         "TX-technology-agentic_execution",
-        "TX-product_form-end_user_application",
         "TX-use_case-customer_support",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-healthcare_life_sciences",
@@ -12185,6 +12357,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-905925eb2e6059c1",
         "EV-bce46f2e5cc68d5d",
         "EV-cbce4f1f5187efcf",
         "EV-15cc72d7c78cad3d",
@@ -12219,7 +12392,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "EN-a972bc1b3220493e",
@@ -12236,9 +12409,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-industry-financial_services",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-customer_support",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-financial_services"
@@ -12293,11 +12466,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
         "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-model_api_service",
@@ -12323,13 +12496,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-professional_services",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_subcategory-customer_support",
         "TX-use_case-customer_support"
       ],
@@ -12352,18 +12525,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
         "TX-target_user-business_user",
+        "TX-use_case-marketing",
+        "TX-product_form-end_user_application",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-industry-manufacturing",
         "TX-industry-professional_services",
-        "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-sales",
         "TX-use_case-sales",
         "TX-industry-education",
         "TX-industry-media_entertainment",
-        "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
@@ -12371,7 +12545,6 @@
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-industry-telecommunications",
-        "TX-use_case-marketing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
@@ -12397,10 +12570,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-sales",
-        "TX-product_form-end_user_application",
         "TX-use_case-customer_support",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-financial_services"
@@ -12425,27 +12598,27 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-target_user-developer",
         "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
+        "TX-use_case-marketing",
+        "TX-target_user-developer",
         "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
         "TX-industry-professional_services",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-sales",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-sales",
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
-        "TX-use_case-marketing",
         "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -12486,12 +12659,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-sales",
+        "TX-target_user-business_user",
         "TX-product_form-end_user_application",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-sales",
         "TX-ai_market_subcategory-customer_support",
         "TX-use_case-customer_support"
       ],
@@ -12521,6 +12694,36 @@
       "relatedEntityIds": [],
       "firstSeen": "2019-03-11",
       "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-c13e2f4a44bb01ed",
+      "name": "Samsung SDS",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b67bbfcebd513ac6",
+        "EV-eb282b4658bbdd7e",
+        "EV-5e2b5770eac85ca5",
+        "EV-8fcb52bb6ec980af",
+        "EV-6ebcbb2660ec7ad9",
+        "EV-770cea9de2337d0e",
+        "EV-da0ff54a5a474820"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_support",
+        "TX-product_form-chip_accelerator"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "EN-5e9e4638fa2ec9a4",
@@ -12560,8 +12763,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
+        "TX-industry-financial_services",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support"
       ],
@@ -12627,6 +12830,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-8665fc3a9e8b6b16",
         "EV-bce46f2e5cc68d5d",
         "EV-8ed7d4e02cc5c2ab",
         "EV-f2c93c155070cd35",
@@ -12672,6 +12876,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-4965305d57edf6dd",
         "EV-636b45c518ae1313",
         "EV-61b1ddeb1e7b7043",
         "EV-fb33ae9b7f9454bf",
@@ -12700,6 +12905,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-20e076804a3000b4",
         "EV-52f4f9d31fae9c44",
         "EV-58268b12aa406620",
         "EV-5ac5368309eace1a",
@@ -12728,7 +12934,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-0257ad33a3edf7c0",
         "EV-1372037e191a9587",
+        "EV-4f3ba2aed6b31d76",
+        "EV-5a54bc68b3b6ab9a",
         "EV-1c240446b94d16b1",
         "EV-c5e9220424a3e463",
         "EV-0f6e4d81f3dbbb64",
@@ -12968,6 +13177,10 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-8025c0adfe709adf",
+        "EV-5d530dd36f82d830",
+        "EV-99538bb71ba99fc9",
+        "EV-c3feadbc01392117",
         "EV-9c7ca787c7b4f7cf",
         "EV-34b7b2083170b680",
         "EV-16f359eab1f09a1d",
@@ -13069,28 +13282,29 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-data_analysis",
+        "TX-product_form-model",
+        "TX-product_form-end_user_application",
+        "TX-use_case-security_operations",
         "TX-use_case-software_development",
         "TX-industry-government_public_sector",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-professional_services",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-enterprise_software_platform",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-consumer",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-product_form-developer_tool",
         "TX-technology-open_weights",
-        "TX-product_form-end_user_application",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
         "TX-technology-image_generation",
+        "TX-technology-speech_audio",
         "TX-technology-multimodal",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
@@ -13105,13 +13319,13 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-968e2d5b08687bf4",
         "EN-6a50fbf0b970c03a",
         "EN-3a7bd3e2360a3d29",
         "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
-        "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-74692028630429c7",
@@ -13132,7 +13346,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -13176,6 +13390,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-4965305d57edf6dd",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
         "EV-eb282b4658bbdd7e",
@@ -13229,6 +13444,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-aa5114540046f2c0",
         "EV-83dfc99666955c16",
         "EV-8232ad0075a77b7a",
         "EV-ba091f86fba39da0",
@@ -13438,6 +13654,13 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-621b257277382475",
+        "EV-66ea621d508a975c",
+        "EV-fdc3211527e41bf6",
+        "EV-4d14398871ede6ab",
+        "EV-5d530dd36f82d830",
+        "EV-99538bb71ba99fc9",
+        "EV-c3feadbc01392117",
         "EV-9c7ca787c7b4f7cf",
         "EV-6c2f395e1961f6ef",
         "EV-0af472b1f95d7945",
@@ -13529,24 +13752,24 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-product_form-model",
+        "TX-target_user-developer",
+        "TX-use_case-security_operations",
+        "TX-use_case-software_development",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-professional_services",
-        "TX-product_form-enterprise_software_platform",
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
         "TX-target_user-consumer",
-        "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-technology-open_weights",
         "TX-industry-retail_ecommerce",
@@ -13594,7 +13817,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "EN-19e41212c0556603",
@@ -13612,8 +13835,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
+        "TX-technology-agentic_execution",
         "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
@@ -13772,6 +13995,78 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-8dd7a8bc8f9d8666",
+      "eventId": "EV-b67bbfcebd513ac6",
+      "dataDate": "2026-09-10",
+      "date": "2026-09-09",
+      "title": "三星SDS在友利银行业务中部署358个AI智能体",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Samsung SDS",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "358 AI Agents Across Woori Bank Operations | Gate News",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Samsung SDS deployed 358 AI agents across Woori Bank's operations, the company announced at the Real Summit 2026 conference on the 8th. The implementation spans five core domains: relationship management (RM), corporate credit, wealth management (WM), internal control, and customer service automation. Samsung SDS director Lee Jun-hyung presented the case study titled 'The Beginning of Agentic Bank: Financial Work Innovation Created by AI Agents,' highlighting the deployment as a response to enterprises' difficulty achieving measurable AI outcomes three years after ChatGPT's emergence. The financial sector is accelerating AI transformation to address operational efficiency gaps and standardize service quality across large employee bases.",
+        "Samsung SDS implemented 358 AI agents across five operational domains at Woori Bank. The deployment includes approximately 60 agents in RM and corporate credit divisions, and approximately 50 agents in the WM division. The company identified its core challenge as securing completion quality for actual business application rather than determining what to build. Samsung SDS conducted the AI agent construction project for Woori Bank's AI transformation, applying agents to RM, corporate credit, WM, internal control, customer service, and workflow automation.",
+        "Samsung SDS applied technology that interprets charts and tables in the RM and corporate credit domains, significantly increasing answer accuracy. When an RM makes requests in natural language, AI proposes corporate analysis reports and customized products. During consultations, the system provides real-time product recommendations based on STT (speech-to-text) technology. In the WM domain, Samsung SDS deployed approximately 50 agents to address sales opportunity losses caused by capability gaps among over 600 private bankers. The company's text-to-SQL technology retrieves accurate data and provides consultation scripts, standardizing private banker capabilities upward. Lee Jun-hyung stated that for corporate AI transformation, work processes must be designed to suit AI from the outset. Samsung SDS plans to actively support financial sector AI transformation based on core project experience and technological capabilities in the financial field, aiming to advance financial company AI from 'AI that asks and answers' to 'AI that works and solves.'"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gate.com/news/detail/018260/samsung-sds-deploys-358-ai-agents-across-woori-bank-operations-24126754",
+      "entityIds": [
+        "EN-c13e2f4a44bb01ed"
+      ]
+    },
     {
       "id": "FDE-34d87868ff636016",
       "eventId": "EV-eb61ddca7f36f55c",
@@ -14205,5 +14500,89 @@
       ]
     }
   ],
-  "hardware": []
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-4662431b8893aa65",
+      "implementationKey": "4662431b8893aa65",
+      "eventId": "EV-b67bbfcebd513ac6",
+      "eventIds": [
+        "EV-b67bbfcebd513ac6"
+      ],
+      "dataDate": "2026-09-10",
+      "date": "2026-09-09",
+      "title": "Samsung SDS × 未披露：358 AI Agents Across Woori Bank Operations | Gate News",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Samsung SDS",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "358 AI Agents Across Woori Bank Operations | Gate News",
+      "workflow": "Samsung SDS implemented 358 AI agents across five operational domains at Woori Bank. The deployment includes approximately 60 agents in RM and corporate credit divisions, and approximately 50 agents in the WM division. The company identified its core challenge as securing completion quality for actual business application rather than determining what to build. Samsung SDS conducted the AI agent construction project for Woori Bank's AI transformation, applying agents to RM, corporate credit, WM, internal control, customer service, and workflow automation.",
+      "systems": [
+        "ChatGPT"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0e9c90e657d76307",
+          "type": "customer_case",
+          "stage": "production",
+          "date": "2026-09-09",
+          "dataDate": "2026-09-10",
+          "eventId": "EV-b67bbfcebd513ac6",
+          "eventTitle": "三星SDS在友利银行业务中部署358个AI智能体",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c13e2f4a44bb01ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://gate.com/news/detail/018260/samsung-sds-deploys-358-ai-agents-across-woori-bank-operations-24126754",
+      "entityIds": [
+        "EN-c13e2f4a44bb01ed"
+      ]
+    }
+  ]
 }

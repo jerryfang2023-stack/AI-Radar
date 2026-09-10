@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "entity": {
     "id": "EN-d30e5ffc0ba9150b",
@@ -25,6 +25,7 @@
     ],
     "eventIds": [
       "EV-88a984b765bb54f1",
+      "EV-a2807764271b130d",
       "EV-f29c0c51a5cbfd84",
       "EV-72dc9ab86e08fbab",
       "EV-4c8fa40c36b6ddb7",
@@ -40,7 +41,7 @@
       "EN-8989aada6eb4a4c3"
     ],
     "firstSeen": "2026-07-24",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-10",
     "relationIds": [
       "REL2-dcc3f6e959d6073a",
       "REL2-e1d65aab90a4ab28"
@@ -52,6 +53,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-a2807764271b130d",
         "EV-f29c0c51a5cbfd84",
         "EV-72dc9ab86e08fbab",
         "EV-4c8fa40c36b6ddb7",
@@ -64,6 +66,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-a2807764271b130d",
+        "dataDate": "2026-09-10",
+        "date": "2026-09-09",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "蚂蚁百灵发布首个金融增强模型，AI开始进入真实投研工作流",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f284eb48ac7b6fe8",
+          "EN-d30e5ffc0ba9150b"
+        ]
+      },
       {
         "id": "EV-f29c0c51a5cbfd84",
         "dataDate": "2026-09-04",
@@ -688,6 +706,8 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-06e6d004096040e0",
+        "EV-c3feadbc01392117",
         "EV-9c7ca787c7b4f7cf",
         "EV-b1ac270277a5c1bc",
         "EV-bed92f9b4b3664e2",
@@ -853,6 +873,7 @@
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
+        "EN-9fbf261b62c1d7c0",
         "EN-c3961295b7b3da96",
         "EN-5694577a18c5d260",
         "EN-5f4db04ac40d991b",
@@ -891,7 +912,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-10"
     },
     {
       "id": "TX-technology-reasoning",

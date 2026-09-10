@@ -5,13 +5,251 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-09T04:13:54.793Z",
-    "latestDataDate": "2026-09-09",
-    "currentDate": "2026-09-09",
-    "eventCount": 2761,
-    "quarantinedEventCount": 24
+    "generatedAt": "2026-09-10T00:32:02.886Z",
+    "latestDataDate": "2026-09-10",
+    "currentDate": "2026-09-10",
+    "eventCount": 2795,
+    "quarantinedEventCount": 25
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-047306f993a722b4",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-4d748ebd71af03a7",
+      "object_type": "entity",
+      "event_id": "EV-b67a95250d1aae8b",
+      "claim_refs": [
+        "CL-089ef68be727c67d"
+      ],
+      "source_refs": [
+        "SA-607449e11800c7a9"
+      ],
+      "data_date": "2026-09-10",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Accenture",
+      "predicateLabel": "服务",
+      "title": "Google 服务 Accenture",
+      "eventTitle": "AI 智能体新闻 — 2026年9月9日当周（每日更新）AI 智能体新闻 — 2026年9月9日",
+      "eventDate": "2026-09-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-089ef68be727c67d",
+          "subject": "Accenture",
+          "object": "Google Cloud",
+          "quote": "Accenture and Google Cloud announced the Accenture Gemini Enterprise Business Group to accelerate large‑scale Gemini Enterprise deployments, including a 1,000‑person forward‑deployed engineer workforce and industry accelerators for agentic use cases."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-607449e11800c7a9",
+          "publisher": "aiagentstore.ai",
+          "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+        }
+      ],
+      "sourceExcerpt": "Accenture and Google Cloud announced the Accenture Gemini Enterprise Business Group to accelerate large‑scale Gemini Enterprise deployments, including a 1,000‑person forward‑deployed engineer workforce and industry accelerators for agentic use cases.",
+      "event": {
+        "id": "EV-b67a95250d1aae8b",
+        "title": "AI 智能体新闻 — 2026年9月9日当周（每日更新）AI 智能体新闻 — 2026年9月9日",
+        "originalTitle": "AI Agents News — Week of September 9, 2026 (Daily Updates) AI Agents News — Week of September 9, 2026",
+        "date": "2026-09-09",
+        "dataDate": "2026-09-10",
+        "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-15efabbf98ccde8f",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-968e2d5b08687bf4",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-c04bd5ebd10ab696",
+      "object_type": "entity",
+      "event_id": "EV-8c1a2dbbb8635298",
+      "claim_refs": [
+        "CL-170f8d70c7418fad",
+        "CL-94273bcfea4fbd15",
+        "CL-efa7ced8f9acffa5",
+        "CL-d6ae932c36176a9c"
+      ],
+      "source_refs": [
+        "SA-1d927902f548466d"
+      ],
+      "data_date": "2026-09-10",
+      "status": "verified",
+      "subjectName": "Samsung",
+      "objectName": "Mistral AI",
+      "predicateLabel": "合作",
+      "title": "Samsung 合作 Mistral AI",
+      "eventTitle": "三星电子与 Mistral AI 达成战略合作，联手打造半导体专用 AI 模型",
+      "eventDate": "2026-09-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-170f8d70c7418fad",
+          "subject": "三星电子与 Mistral AI 达成战略",
+          "object": "，联手打造半导体专用 AI 模型",
+          "quote": "三星电子与 Mistral AI 达成战略合作，联手打造半导体专用人工智能模型 - IT之家"
+        },
+        {
+          "id": "CL-94273bcfea4fbd15",
+          "subject": "三星电子与 Mistral AI 达成战略",
+          "object": "，联手打造半导体专用 AI 模型",
+          "quote": "三星电子与 Mistral AI 达成战略合作，联手打造半导体专用人工智能模型"
+        },
+        {
+          "id": "CL-efa7ced8f9acffa5",
+          "subject": "三星电子与 Mistral AI 达成战略",
+          "object": "，联手打造半导体专用 AI 模型",
+          "quote": "IT之家 9 月 9 日消息，三星电子 (Samsung Electronics) 与法国人工智能初创企业 Mistral AI 当地时间 8 日签署一份战略合作协议。"
+        },
+        {
+          "id": "CL-d6ae932c36176a9c",
+          "subject": "三星电子与 Mistral AI 达成战略",
+          "object": "，联手打造半导体专用 AI 模型",
+          "quote": "此外，三星电子计划构建一个基于人工智能的半导体生态系统，不断寻找针对半导体行业优化的 AI 应用案例，以便在未来连接客户和合作伙伴。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1d927902f548466d",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/999/987.htm"
+        }
+      ],
+      "sourceExcerpt": "三星电子与 Mistral AI 达成战略合作，联手打造半导体专用人工智能模型 - IT之家",
+      "event": {
+        "id": "EV-8c1a2dbbb8635298",
+        "title": "三星电子与 Mistral AI 达成战略合作，联手打造半导体专用 AI 模型",
+        "originalTitle": "",
+        "date": "2026-09-09",
+        "dataDate": "2026-09-10",
+        "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-c0686762ac59e86c",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-968e2d5b08687bf4",
+      "object_type": "entity",
+      "event_id": "EV-20e076804a3000b4",
+      "claim_refs": [
+        "CL-a1f82e7466debf98",
+        "CL-5be1e72aedcea023",
+        "CL-a2d94ae20f1afc39",
+        "CL-4e66319e8ce5305b"
+      ],
+      "source_refs": [
+        "SA-b83bdd1982867e53"
+      ],
+      "data_date": "2026-09-10",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "Samsung",
+      "predicateLabel": "合作",
+      "title": "OpenAI 合作 Samsung",
+      "eventTitle": "OpenAI 韩国负责人：与三星电子的下一代芯片合作取得良好进展",
+      "eventDate": "2026-09-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-a1f82e7466debf98",
+          "subject": "OpenAI 韩国负责人：与三星电子的下一代芯片",
+          "object": "取得良好进展",
+          "quote": "OpenAI 韩国负责人：与三星电子的下一代芯片合作取得良好进展 - IT之家"
+        },
+        {
+          "id": "CL-5be1e72aedcea023",
+          "subject": "OpenAI 韩国负责人：与三星电子的下一代芯片",
+          "object": "取得良好进展",
+          "quote": "OpenAI 韩国负责人：与三星电子的下一代芯片合作取得良好进展"
+        },
+        {
+          "id": "CL-a2d94ae20f1afc39",
+          "subject": "OpenAI 韩国负责人：与三星电子的下一代芯片",
+          "object": "取得良好进展",
+          "quote": "IT之家 9 月 9 日消息，OpenAI 韩国负责人 Kim Kyoung-hoon (Harrison Kim) 在该企业韩国首尔区域办事处成立一周年新闻发布会上表示， OpenAI 与三星电子的下一代芯片合作取得良好进展 。"
+        },
+        {
+          "id": "CL-4e66319e8ce5305b",
+          "subject": "OpenAI 韩国负责人：与三星电子的下一代芯片",
+          "object": "取得良好进展",
+          "quote": "Kim Kyoung-hoon 在发布会上提到，OpenAI 将继续与韩国半导体供应链企业建立合作，先进芯片对加速人工智能处理非常重要。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b83bdd1982867e53",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/1/000/181.htm"
+        }
+      ],
+      "sourceExcerpt": "OpenAI 韩国负责人：与三星电子的下一代芯片合作取得良好进展 - IT之家",
+      "event": {
+        "id": "EV-20e076804a3000b4",
+        "title": "OpenAI 韩国负责人：与三星电子的下一代芯片合作取得良好进展",
+        "originalTitle": "",
+        "date": "2026-09-09",
+        "dataDate": "2026-09-10",
+        "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-c0c6b4cd2b1abacd",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-4d748ebd71af03a7",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-bbdefa2950f49882",
+      "object_type": "entity",
+      "event_id": "EV-b67a95250d1aae8b",
+      "claim_refs": [
+        "CL-089ef68be727c67d"
+      ],
+      "source_refs": [
+        "SA-607449e11800c7a9"
+      ],
+      "data_date": "2026-09-10",
+      "status": "verified",
+      "subjectName": "Accenture",
+      "objectName": "Google",
+      "predicateLabel": "合作",
+      "title": "Accenture 合作 Google",
+      "eventTitle": "AI 智能体新闻 — 2026年9月9日当周（每日更新）AI 智能体新闻 — 2026年9月9日",
+      "eventDate": "2026-09-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-089ef68be727c67d",
+          "subject": "Accenture",
+          "object": "Google Cloud",
+          "quote": "Accenture and Google Cloud announced the Accenture Gemini Enterprise Business Group to accelerate large‑scale Gemini Enterprise deployments, including a 1,000‑person forward‑deployed engineer workforce and industry accelerators for agentic use cases."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-607449e11800c7a9",
+          "publisher": "aiagentstore.ai",
+          "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+        }
+      ],
+      "sourceExcerpt": "Accenture and Google Cloud announced the Accenture Gemini Enterprise Business Group to accelerate large‑scale Gemini Enterprise deployments, including a 1,000‑person forward‑deployed engineer workforce and industry accelerators for agentic use cases.",
+      "event": {
+        "id": "EV-b67a95250d1aae8b",
+        "title": "AI 智能体新闻 — 2026年9月9日当周（每日更新）AI 智能体新闻 — 2026年9月9日",
+        "originalTitle": "AI Agents News — Week of September 9, 2026 (Daily Updates) AI Agents News — Week of September 9, 2026",
+        "date": "2026-09-09",
+        "dataDate": "2026-09-10",
+        "eventTypeLabel": "合作"
+      }
+    },
     {
       "relationship_id": "REL2-ccdd7ba180a57a40",
       "relationship_version": "RELATION-V2.1",
