@@ -478,13 +478,13 @@
   const distributionMode = (config) => config.distributionMode || (config.eligibleTypes.length ? "custom" : "season_total");
   function totalRules(config) {
     const period = (config.start || "历史起始日期") + "至" + (config.end || "待确定结束日期") + "（含开始日，不含结束日）";
-    return config.label + "按赛季总积分分配。计分期间：" + period + "。奖励由" + (config.provider || "待确认赞助商") + "提供，激励池共 " + config.amount + " " + config.unit + "。\n" +
+    return config.label + "按赛季总积分分配。计分期间：" + period + "。奖励由" + (config.provider || "待确认赞助商") + "提供，激励池共 " + config.amount + " " + (config.model ? config.model + " " : "") + config.unit + "。\n" +
       "赛季结束后，结算时有效且本赛季总积分大于 0 的社群成员参与分配。个人额度 = 激励池额度 × 个人赛季总积分 ÷ 所有参与成员的赛季总积分之和。\n" +
       "个人额度按整数最小单位向下取整，余量保留在激励池。积分不扣减，不计入小程序钱包积分。分配确认后锁定，实际发放另行登记。";
   }
   function formConfig(form) {
     const data = new FormData(form), mode = data.get("distributionMode");
-    return { start: data.get("start"), end: data.get("end"), provider: data.get("provider"), unit: data.get("unit"), amount: Number(data.get("amount")), distributionMode: mode, eligibleTypes: mode === "custom" ? data.getAll("type") : [], rules: data.get("rules"), enabled: data.has("enabled") };
+    return { start: data.get("start"), end: data.get("end"), provider: data.get("provider"), model: (data.get("model") || "").trim(), unit: data.get("unit"), amount: Number(data.get("amount")), distributionMode: mode, eligibleTypes: mode === "custom" ? data.getAll("type") : [], rules: data.get("rules"), enabled: data.has("enabled") };
   }
   function fitRules() {
     const rules = $('[name="rules"]');
@@ -516,7 +516,7 @@
     if (!config) throw new Error("赛季不存在");
     const batch = payload.batches.find((item) => item.config.id === selected());
     const total = distributionMode(config) === "season_total";
-    $("[data-token-content]").innerHTML = '<form class="mo-token-editor" data-token-config><h2>赛季与激励池设置</h2><fieldset ' + (batch ? 'disabled' : '') + '><div class="mo-token-fields">' +
+    $("[data-token-content]").innerHTML = '<form class="mo-token-editor" data-token-config><h2>赛季与激励池设置</h2><fieldset ' + (batch ? 'disabled' : '') + '><label>Token 模型<input name="model" maxlength="100" placeholder="填写模型名称" value="' + escape(config.model || '') + '"></label><div class="mo-token-fields">' +
       '<label>Token 额度<input name="amount" type="number" min="0" max="1000000000000" step="1" required value="' + config.amount + '"></label>' +
       '<label>计量单位<input name="unit" maxlength="40" required value="' + escape(config.unit) + '"></label><label>赞助商<input name="provider" maxlength="100" value="' + escape(config.provider) + '"></label>' +
       '<label>开始日期<input type="date" name="start" value="' + escape(config.start) + '"></label><label>结束日期（不含当天）<input type="date" name="end" value="' + escape(config.end) + '"></label>' +

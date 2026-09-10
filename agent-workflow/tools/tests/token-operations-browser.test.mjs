@@ -31,7 +31,7 @@ test("production Token panel supports configure, preview, confirm, receipt and m
           if (body.config.distributionMode === "season_total") {
             assert.deepEqual(body.config.eligibleTypes, []);
             assert.match(body.config.rules, /测试赞助商/);
-            assert.match(body.config.rules, /100 Token/);
+            assert.match(body.config.rules, /100 DeepSeek-V4\.1-Flash Token/);
           } else {
             assert.equal(body.config.distributionMode, "custom");
             assert.deepEqual(body.config.eligibleTypes, ["sharing"]);
@@ -78,7 +78,8 @@ test("production Token panel supports configure, preview, confirm, receipt and m
     assert.equal(await page.locator('[data-token-custom]').isVisible(), false);
     await page.getByLabel("赞助商", { exact: true }).fill("测试赞助商");
     await page.locator('[name="amount"]').fill("100");
-    assert.match(await page.locator('[name="rules"]').inputValue(), /100 Token/);
+    await page.locator('[name="model"]').fill("DeepSeek-V4.1-Flash");
+    assert.match(await page.locator('[name="rules"]').inputValue(), /100 DeepSeek-V4\.1-Flash Token/);
     await page.getByRole("button", { name: "预览分配" }).click();
     await page.getByText("设置已修改，请先保存再预览分配", { exact: true }).waitFor();
     assert.deepEqual(actions, ["configure"]);
