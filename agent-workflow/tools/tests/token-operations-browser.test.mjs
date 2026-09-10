@@ -61,7 +61,7 @@ test("production Token panel supports configure, preview, confirm, receipt and m
     });
     assert.equal(await page.locator('[name="distributionMode"]').inputValue(), "season_total");
     assert.equal(await page.locator('[data-token-custom]').isVisible(), false);
-    assert.equal(await page.locator('[name="rules"]').getAttribute("readonly"), "");
+    assert.equal(await page.locator('[name="rules"]').getAttribute("readonly"), null);
     assert.match(await page.locator('[name="rules"]').inputValue(), /赛季总积分/);
     await page.locator('[name="distributionMode"]').selectOption("custom");
     assert.equal(await page.locator('[data-token-custom]').isVisible(), true);
@@ -72,14 +72,21 @@ test("production Token panel supports configure, preview, confirm, receipt and m
     await page.locator('[name="rules"]').fill("只按分享互动积分分配。");
     await page.getByRole("button", { name: "保存设置" }).click();
     await page.locator('[data-token-status]').filter({ hasText: "设置已保存" }).waitFor();
+    assert.equal(await page.locator("[data-token-config]").isVisible(), false);
+    await page.getByRole("button", {name:"编辑设置",exact:true}).click();
     assert.equal(await page.locator('[name="distributionMode"]').inputValue(), "custom");
     assert.equal(await page.locator('[name="rules"]').inputValue(), "只按分享互动积分分配。");
     await page.locator('[name="distributionMode"]').selectOption("season_total");
+    assert.equal(await page.locator('[name="rules"]').inputValue(), "只按分享互动积分分配。");
+    page.on("dialog", (dialog) => dialog.accept());
+    await page.getByRole("button", {name:"重新生成规则",exact:true}).click();
     assert.equal(await page.locator('[data-token-custom]').isVisible(), false);
     await page.getByLabel("赞助商", { exact: true }).fill("测试赞助商");
     await page.locator('[name="amount"]').fill("100");
     await page.locator('[name="model"]').fill("DeepSeek-V4.1-Flash");
     await page.locator('[name="rewardRankLimit"]').fill("20");
+    await page.locator('[name="endInclusive"]').check();
+    assert.match(await page.locator('[name="rules"]').inputValue(), /含开始日和结束日/);
     assert.match(await page.locator('[name="rules"]').inputValue(), /第 20 名同分者全部纳入/);
     assert.match(await page.locator('[name="rules"]').inputValue(), /100 DeepSeek-V4\.1-Flash Token/);
     await page.getByRole("button", { name: "预览分配" }).click();
@@ -88,6 +95,8 @@ test("production Token panel supports configure, preview, confirm, receipt and m
     await page.locator('[name="enabled"]').check();
     await page.getByRole("button", { name: "保存设置" }).click();
     await page.locator('[data-token-status]').filter({ hasText: "设置已保存" }).waitFor();
+    assert.equal(await page.locator("[data-token-config]").isVisible(), false);
+    await page.getByRole("button", {name:"编辑设置",exact:true}).click();
     for (const width of [1600, 1280, 1024, 768, 390]) {
       await page.setViewportSize({ width, height: 960 });
       await page.waitForFunction(() => { const rules = document.querySelector('[name="rules"]'); return rules.scrollHeight <= rules.clientHeight + 1; });
@@ -107,7 +116,6 @@ test("production Token panel supports configure, preview, confirm, receipt and m
     }
     await page.getByRole("button", { name: "预览分配" }).click();
     await page.getByRole("button", { name: "确认本季分配" }).waitFor();
-    page.on("dialog", (dialog) => dialog.accept());
     await page.getByRole("button", { name: "确认本季分配" }).click();
     await page.getByPlaceholder("实际发放凭据编号").fill("test-receipt-001");
     await page.getByRole("button", { name: "登记发放", exact: true }).click();

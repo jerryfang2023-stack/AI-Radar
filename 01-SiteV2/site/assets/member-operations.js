@@ -470,7 +470,7 @@
   const $ = (selector) => root.querySelector(selector);
   const escape = (value) => String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
   const endpoint = "/ops/member-api/token-benefits";
-  let csrf = "", active = false, payload = null, preview = null, generation = 0, busy = false, dirty = false;
+  let csrf = "", active = false, payload = null, preview = null, generation = 0, busy = false, dirty = false, editing = true;
   const operations = new Map();
   const selected = () => $("[data-token-season]").value;
   const status = (value) => { $("[data-token-status]").textContent = value; };
@@ -479,18 +479,18 @@
   function totalRules(config) {
     const limit = Number(config.rewardRankLimit) || 0;
     const scope = limit ? "仅激励赛季总积分排名前 " + limit + " 名的成员；第 " + limit + " 名同分者全部纳入，实际人数可能超过 " + limit + " 人。" : "";
-    const period = (config.start || "历史起始日期") + "至" + (config.end || "待确定结束日期") + "（含开始日，不含结束日）";
+    const period = (config.start || "历史起始日期") + "至" + (config.end || "待确定结束日期") + (config.endInclusive ? "（含开始日和结束日）" : "（含开始日，不含结束日）");
     return config.label + "按赛季总积分分配。计分期间：" + period + "。奖励由" + (config.provider || "待确认赞助商") + "提供，激励池共 " + config.amount + " " + (config.model ? config.model + " " : "") + config.unit + "。\n" +
       "赛季结束后，结算时有效且本赛季总积分大于 0 的社群成员参与排名。" + scope + "个人额度 = 激励池额度 × 个人赛季总积分 ÷ 所有参与成员的赛季总积分之和。\n" +
       "个人额度按整数最小单位向下取整，余量保留在激励池。积分不扣减，不计入小程序钱包积分。分配确认后锁定，实际发放另行登记。";
   }
   function formConfig(form) {
     const data = new FormData(form), mode = data.get("distributionMode");
-    return { start: data.get("start"), end: data.get("end"), provider: data.get("provider"), model: (data.get("model") || "").trim(), unit: data.get("unit"), amount: Number(data.get("amount")), rewardRankLimit: Number(data.get("rewardRankLimit") || 0), distributionMode: mode, eligibleTypes: mode === "custom" ? data.getAll("type") : [], rules: data.get("rules"), enabled: data.has("enabled") };
+    return { start: data.get("start"), end: data.get("end"), endInclusive: data.has("endInclusive"), provider: data.get("provider"), model: (data.get("model") || "").trim(), unit: data.get("unit"), amount: Number(data.get("amount")), rewardRankLimit: Number(data.get("rewardRankLimit") || 0), distributionMode: mode, eligibleTypes: mode === "custom" ? data.getAll("type") : [], rules: data.get("rules"), rulesCustomized: data.get("rulesCustomized") === "true", enabled: data.has("enabled") };
   }
   function fitRules() {
     const rules = $('[name="rules"]');
-    if (rules?.readOnly && rules.style) { rules.style.height = "auto"; rules.style.height = (rules.scrollHeight + rules.offsetHeight - rules.clientHeight) + "px"; }
+    if (rules?.style) { rules.style.height = "auto"; rules.style.height = (rules.scrollHeight + rules.offsetHeight - rules.clientHeight) + "px"; }
   }
   function reset() {
     generation += 1; csrf = ""; payload = null; preview = null; operations.clear();
@@ -518,16 +518,17 @@
     if (!config) throw new Error("赛季不存在");
     const batch = payload.batches.find((item) => item.config.id === selected());
     const total = distributionMode(config) === "season_total";
-    $("[data-token-content]").innerHTML = '<form class="mo-token-editor" data-token-config><h2>赛季与激励池设置</h2><fieldset ' + (batch ? 'disabled' : '') + '><label>Token 模型<input name="model" maxlength="100" placeholder="填写模型名称" value="' + escape(config.model || '') + '"></label><div class="mo-token-fields">' +
+    $("[data-token-content]").innerHTML = '<form class="mo-token-editor" data-token-config ' + (editing ? '' : 'hidden') + '><h2>赛季与激励池设置</h2><fieldset ' + (batch ? 'disabled' : '') + '><label>Token 模型<input name="model" maxlength="100" placeholder="填写模型名称" value="' + escape(config.model || '') + '"></label><div class="mo-token-fields">' +
       '<label>Token 额度<input name="amount" type="number" min="0" max="1000000000000" step="1" required value="' + config.amount + '"></label>' +
       '<label>计量单位<input name="unit" maxlength="40" required value="' + escape(config.unit) + '"></label><label>赞助商<input name="provider" maxlength="100" value="' + escape(config.provider) + '"></label>' +
-      '<label>开始日期<input type="date" name="start" value="' + escape(config.start) + '"></label><label>结束日期（不含当天）<input type="date" name="end" value="' + escape(config.end) + '"></label>' +
-      '</div><div class="mo-token-allocation"><label>分配方式<select name="distributionMode"><option value="season_total" ' + (total ? 'selected' : '') + '>赛季总积分（默认）</option><option value="custom" ' + (!total ? 'selected' : '') + '>自定义计分类别</option></select></label><label>激励名次上限<input name="rewardRankLimit" type="number" min="0" max="1000" step="1" required value="' + (config.rewardRankLimit || 0) + '"></label><p>0 表示不限名次；按所选计分方式排名，边界同分者全部纳入。仅以入选成员积分总和分配，积分不扣减。</p></div>' +
+      '<label>开始日期<input type="date" name="start" value="' + escape(config.start) + '"></label><label>结束日期<input type="date" name="end" value="' + escape(config.end) + '"></label>' +
+      '</div><label class="mo-token-check"><input type="checkbox" name="endInclusive" ' + (config.endInclusive ? 'checked' : '') + '>计入结束日当天积分</label><div class="mo-token-allocation"><label>分配方式<select name="distributionMode"><option value="season_total" ' + (total ? 'selected' : '') + '>赛季总积分（默认）</option><option value="custom" ' + (!total ? 'selected' : '') + '>自定义计分类别</option></select></label><label>激励名次上限<input name="rewardRankLimit" type="number" min="0" max="1000" step="1" required value="' + (config.rewardRankLimit || 0) + '"></label><p>0 表示不限名次；按所选计分方式排名，边界同分者全部纳入。仅以入选成员积分总和分配，积分不扣减。</p></div>' +
       '<div data-token-custom ' + (total ? 'hidden' : '') + '><h3>参与分配的计分类别</h3><div class="mo-token-types">' + payload.activityTypes.map((type) => '<label><input type="checkbox" name="type" value="' + escape(type.id) + '" ' + (config.eligibleTypes.includes(type.id) ? 'checked' : '') + '>' + escape(type.label) + '</label>').join("") + '</div></div>' +
-      '<label><span data-token-rules-label>' + (total ? '分配规则（自动生成）' : '分配规则') + '</span><textarea name="rules" maxlength="2000" ' + (total ? 'readonly' : '') + '>' + escape(total && !batch ? totalRules(config) : config.rules) + '</textarea></label>' +
+      '<label><span data-token-rules-label>' + '分配规则（可编辑）' + '</span><textarea name="rules" maxlength="2000" >' + escape(total && !batch && !config.rulesCustomized ? totalRules(config) : config.rules) + '</textarea></label><input type="hidden" name="rulesCustomized" value="' + Boolean(config.rulesCustomized) + '"><div><button type="button" class="mo-secondary" data-token-regenerate>重新生成规则</button><p>说明文字可编辑，不改变实际分配参数。重新生成会替换当前说明。</p></div>' +
       '<div class="mo-token-actions"><label class="mo-token-check"><input type="checkbox" name="enabled" ' + (config.enabled ? 'checked' : '') + '>公布激励池和规则</label><div><button type="submit">保存设置</button>' +
       (batch ? '' : '<button class="mo-secondary" type="button" data-token-calculate>预览分配</button>') + '</div></div></fieldset>' +
       (batch ? '<p class="mo-token-note">本季已确认分配，配置与积分快照已锁定。</p>' : '') + '</form>';
+    if (!editing) $("[data-token-content]").innerHTML = '<section class="mo-token-editor"><h2>' + escape(config.label) + ' · ' + escape(config.provider || '赞助商待定') + '</h2><p><strong>' + config.amount + ' ' + escape((config.model ? config.model + ' ' : '') + config.unit) + '</strong></p><p>时间：' + escape(config.start || '待定') + '至' + escape(config.end || '待定') + (config.endInclusive ? '（含首尾两天）' : '（不含结束日）') + '</p><p>' + (config.enabled ? '已公布' : '未公布') + ' · ' + (total ? '赛季总积分' : '自定义计分') + ' · ' + (config.rewardRankLimit ? '前 ' + config.rewardRankLimit + ' 名，边界同分全部纳入' : '不限名次') + '</p><p style="white-space:pre-wrap;overflow-wrap:anywhere">' + escape(config.rules) + '</p><div class="mo-token-actions"><button type="button" data-token-edit>' + (batch ? '查看设置' : '编辑设置') + '</button>' + (batch ? '' : '<button type="button" data-token-calculate>预览分配</button>') + '</div></section>' + $("[data-token-content]").innerHTML;
     $("[data-token-records]").innerHTML = batch ? '<h2>发放记录</h2><p>只登记已实际完成的发放，不会自动发放。请勿填写 API 密钥。</p>' + table(batch.allocations, batch.config.unit, true) + '<p>未分配余量：' + batch.remaining + ' ' + escape(batch.config.unit) + '</p>' : "";
     $("[data-token-audits]").innerHTML = '<details><summary>最近操作记录</summary>' + payload.audits.map((audit) => '<p>' + escape(audit.created_at) + ' · ' + escape(audit.action.split("/")[0]) + ' · ' + escape(actionLabel[audit.action.split("/")[1]] || audit.action) + ' · ' + escape(audit.actor) + '</p>').join("") + '</details>';
     fitRules();
@@ -558,12 +559,14 @@
         preview = result;
         $("[data-token-preview]").innerHTML = '<h2>分配预览</h2>' + table(result.allocations, result.config.unit) + '<p>余量：' + result.remaining + '。确认后锁定本季配置与分配名单；此操作不会实际发放。</p><button type="button" data-token-confirm>确认本季分配</button>';
         status("请核对分配名单和额度");
-      } else { await load(); status(action === "receipt" ? "已登记发放凭据" : action === "confirm" ? "分配已锁定，尚未发放" : "设置已保存"); }
+      } else { if (action === "configure") editing = false; await load(); status(action === "receipt" ? "已登记发放凭据" : action === "confirm" ? "分配已锁定，尚未发放" : "设置已保存"); }
     } catch (error) { if (current === generation) status(error.message); }
     finally { busy = false; root.removeAttribute("aria-busy"); }
   }
   root.addEventListener("click", (event) => {
     if (busy) return;
+    if (event.target.closest("[data-token-edit]")) { editing = true; render(); return; }
+    regenerateRules(event);
     if (event.target.closest("[data-token-refresh]")) void load();
     if (event.target.closest("[data-token-calculate]")) void act("preview", {});
     if (event.target.closest("[data-token-confirm]") && preview && window.confirm("确认锁定本季分配名单和额度？确认后不可修改本季配置，尚不会实际发放。")) void act("confirm", { previewHash: preview.previewHash });
@@ -578,7 +581,7 @@
       const config = payload.seasons.find((item) => item.id === selected());
       const candidate = formConfig(form);
       if (candidate.distributionMode === "custom" && !candidate.eligibleTypes.length) { status("请至少选择一个计分类别"); return; }
-      if (candidate.distributionMode === "season_total") candidate.rules = totalRules({ ...candidate, label: config.label });
+      if (candidate.distributionMode === "season_total" && !candidate.rulesCustomized) candidate.rules = totalRules({ ...candidate, label: config.label });
       void act("configure", { revision: config.revision, config: candidate });
     } else if (form.matches("[data-token-receipt]") && window.confirm("确认已在供应商处完成真实发放？这里只登记凭据，不自动发放。")) {
       void act("receipt", { memberId: Number(form.dataset.tokenReceipt), receipt: data.get("receipt") });
@@ -588,15 +591,24 @@
     const form = event.target.closest("[data-token-config]");
     if (!form || busy) return;
     dirty = true; preview = null; $("[data-token-preview]").innerHTML = "";
+    if (event.target.name === "rules") form.querySelector('[name="rulesCustomized"]').value = "true";
     const config = formConfig(form), total = config.distributionMode === "season_total";
     $("[data-token-custom]").hidden = total;
-    $("[data-token-rules-label]").textContent = total ? "分配规则（自动生成）" : "分配规则";
+    $("[data-token-rules-label]").textContent = "分配规则（可编辑）";
     const rules = form.querySelector('[name="rules"]');
-    rules.readOnly = total;
-    if (total) rules.value = totalRules({ ...config, label: payload.seasons.find((item) => item.id === selected()).label });
-    else if (event.target.name === "distributionMode") rules.value = "按所选计分类别的有效积分占比分配，个人额度按整数最小单位向下取整，余量留在激励池，积分不扣减。";
+    rules.readOnly = false;
+    if (total && !config.rulesCustomized) rules.value = totalRules({ ...config, label: payload.seasons.find((item) => item.id === selected()).label });
+    else if (!config.rulesCustomized && event.target.name === "distributionMode") rules.value = "按所选计分类别的有效积分占比分配，个人额度按整数最小单位向下取整，余量留在激励池，积分不扣减。";
     fitRules();
     status("设置已修改，请保存");
+  }
+  function regenerateRules(event) {
+    if (!event.target.closest("[data-token-regenerate]") || busy) return;
+    const form = root.querySelector("[data-token-config]");
+    if (!form || form.querySelector("fieldset").disabled) return;
+    if (!window.confirm("重新生成会替换当前规则说明，是否继续？")) return;
+    form.querySelector('[name="rulesCustomized"]').value = "false";
+    editConfig({ target: form.querySelector('[name="distributionMode"]') });
   }
   root.addEventListener("input", editConfig);
   root.addEventListener("change", editConfig);
