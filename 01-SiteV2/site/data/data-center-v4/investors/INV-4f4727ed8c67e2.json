@@ -20,24 +20,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 9,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09-05",
-    "latest_disclosed_at": "2026-09-09",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
-      "lead": 4,
+      "lead": 3,
       "participant": 5
     },
     "round_codes": [
-      "multi_round",
       "seed",
       "series_b",
       "series_c",
@@ -81,57 +80,12 @@
         "name": "Higgsfield"
       },
       {
-        "entity_id": "EN-53f5d317b4126bfb",
-        "canonical_entity_id": "",
-        "name": "Listen Labs"
-      },
-      {
         "entity_id": "EN-8c5929d253b07fed",
         "canonical_entity_id": "",
         "name": "Wispr"
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-9077765eaa63de77",
-        "funding_insight_id": "FI-1edf45f7a4d3e17c",
-        "event_ids": [
-          "EV-905925eb2e6059c1"
-        ],
-        "company_entity_id": "EN-53f5d317b4126bfb",
-        "company_canonical_entity_id": "",
-        "company_name": "Listen Labs",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "$1.5B",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 1500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "15 亿美元"
-        },
-        "announced_at": "2026-09-09",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-0286b52989ae7567",
-            "source_url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-            "source_title": "AI研究初创公司Listen Labs取消15亿美元融资轮，转向与Salesforce洽谈",
-            "source_content_hash": "2581a26611a0d0ca",
-            "quote": "recently signed a term sheet for a $125 million Series C at a $1.5 billion valuation, with Menlo Ventures set to lead the round",
-            "quote_hash": "5cc035124b4da0aa8b08d54a0721e767ea7d27e6e165d97754a27e1583385bea"
-          }
-        ]
-      },
       {
         "activity_id": "IA-9cfc9e6babe3bbfc",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
@@ -630,14 +584,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-0286b52989ae7567",
-        "source_url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-        "source_title": "AI研究初创公司Listen Labs取消15亿美元融资轮，转向与Salesforce洽谈",
-        "source_content_hash": "2581a26611a0d0ca",
-        "quote": "recently signed a term sheet for a $125 million Series C at a $1.5 billion valuation, with Menlo Ventures set to lead the round",
-        "quote_hash": "5cc035124b4da0aa8b08d54a0721e767ea7d27e6e165d97754a27e1583385bea"
-      },
       {
         "source_id": "FISRC-7c15ac15bf3d0b1a",
         "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",

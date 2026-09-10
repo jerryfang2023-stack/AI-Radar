@@ -13,6 +13,7 @@ import {
   loadPrivateEvidenceEntries,
 } from "./lib/private-evidence-store.mjs";
 import { normalizeEvidenceBody } from "./lib/evidence-body-normalizer.mjs";
+import { isWithdrawnFundingTitle } from "./lib/funding-transaction-status.mjs";
 import {
   chinaMarketBasisType,
   chinaMarketMatch,
@@ -643,7 +644,7 @@ function findEventRule(title, lead = "") {
 
 function eventStatus(title, lead, eventType = "") {
   const text = `${title}\n${lead}`;
-  if (WITHDRAWN.test(title)) return "withdrawn";
+  if (WITHDRAWN.test(title) || (eventType === "funding" && isWithdrawnFundingTitle(title))) return "withdrawn";
   const attributedCompletedFinancing = /据.{0,20}(?:官微|官方|公司|财务顾问).{0,12}消息.{0,100}(?:已完成|完成).{0,40}融资/iu.test(text);
   if (RUMOR.test(text) && !(eventType === "funding" && attributedCompletedFinancing)) return "rumored";
   if (DISPUTE.test(title) || (eventType === "funding" && DISPUTE.test(lead))) return "disputed";

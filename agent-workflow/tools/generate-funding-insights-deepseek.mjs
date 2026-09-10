@@ -1036,6 +1036,12 @@ async function main() {
       attempts: [],
       updated_at: "",
     });
+  // Keep the audit reason after a factual rebuild withdraws a former candidate.
+  // It stays outside generation and public cards on every subsequent retry.
+  for (const item of existing.queue || []) {
+    if (eventById.get(item.event_id)?.event_status !== "withdrawn") continue;
+    queue.push({ ...item, status: "blocked", problems: ["funding_event_not_completed"] });
+  }
   const value = {
     meta: {
       schema_version: FUNDING_INSIGHT_VERSION,
@@ -1047,7 +1053,7 @@ async function main() {
       human_review_required: false,
       auto_publish_gate: FUNDING_INSIGHT_GATE_VERSION,
       counts: {
-        funding_events: events.length,
+        funding_events: queue.length,
         auto_published: cards.length,
         blocked: queue.filter((item) => item.status === "blocked").length,
         pending: queue.filter((item) => item.status === "pending").length,
