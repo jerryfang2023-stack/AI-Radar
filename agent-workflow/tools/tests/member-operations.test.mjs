@@ -40,7 +40,8 @@ test("membership loads lazily with source-appropriate credentials and survives p
   await respond(h.requests[0], payload("community"));
   await respond(h.requests[1], {}, false);
   assert.match(h.element('[data-mo-content="community"]').innerHTML, /12/);
-  assert.match(h.element('[data-mo-content="community"]').innerHTML, /待接入/);
+  assert.doesNotMatch(h.element('[data-mo-content="community"]').innerHTML, /待接入|即将到期|社群续费|mo-metric/);
+  assert.match(h.element('[data-mo-content="community"]').innerHTML, /<details class="mo-breakdown"><summary>查看积分分布/);
   assert.doesNotMatch(h.element('[data-mo-content="community"]').innerHTML, /当前审核通过且已登记入群日期|活动昵称未能唯一匹配/);
   assert.match(h.element('[data-mo-content="application"]').innerHTML, /不代表人数为零/);
 });
@@ -119,7 +120,7 @@ test("community approval loads only from its protected membership subpanel", asy
   assert.match(page, /data-tab="membership-approval"[^]*社群加入审核/u);
   assert.match(page, /data-panel="membership-approval"[^]*社群加入申请审核/u);
   assert.match(page, /data-panel="membership-users"[^]*小程序会员管理/u);
-  assert.match(page, /assets\/member-operations\.js\?v=ops-nav-20260910/u);
+  assert.match(page, /assets\/member-operations\.js\?v=ops-membership-20260910/u);
   assert.match(script, /延长会员权益[^]*调整可用积分/u);
   assert.match(script, /renderAdminUsers\(\);[^]*selectedUserId = null;[^]*data-mo-admin-detail[^]*innerHTML = "";[^]*调整已保存，用户编辑已收起。/u);
   assert.doesNotMatch(page, /href="https:\/\/members\.zkdlj\.vip\/admin"/u);

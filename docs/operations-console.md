@@ -1,6 +1,8 @@
 # Unified Operations Console
 
-Release: OPS-V3.6.1-member-editor-collapse / Skill Store v2.2.0
+Release baseline: OPS-V3.6.2-nav-member-collapse / Skill Store v2.2.0
+
+2026-09-10 membership overview redesign: two border-free source columns, three primary counts per source, compact period rows, and collapsed points/package breakdowns. Optional unavailable metrics are omitted; unavailable primary counts remain explicit. Desktop uses two columns and narrow screens stack the sections. The 7/30/90-day selector, source isolation and existing management subpanels are preserved. Typography: title 30/42, section 20/30, primary count 32/42, body 14/24, status 12/18. Verified with OPS regression tests and fixture-based browser checks at 1440, 768 and 390 pixels.
 
 Production URL: `https://www.zkdlj.vip/ops/`
 

@@ -361,7 +361,7 @@
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
   <link rel="stylesheet" href="assets/operations-auth.css?v=ops-v341">
-  <link rel="stylesheet" href="assets/member-operations.css?v=ops-nav-20260910">
+  <link rel="stylesheet" href="assets/member-operations.css?v=ops-membership-20260910">
 </head>
 <body class="page-operations-console">
   <main class="shell" data-ops-console tabindex="-1" hidden>
@@ -501,10 +501,12 @@
       <div data-member-operations>
         <section class="panel" data-panel="membership">
           <div class="page-surface">
-            <header class="page-head"><div><span class="kicker">MEMBERSHIP · SECURE OPERATIONS</span><h1>会员与权益总览</h1></div></header>
+            <header class="page-head"><div><span class="kicker">MEMBERSHIP</span><h1>会员与权益</h1></div></header>
             <div class="mo-toolbar"><label>统计期间<select data-mo-days><option value="7">近 7 天</option><option value="30" selected>近 30 天</option><option value="90">近 90 天</option></select></label><button type="button" data-mo-refresh>刷新会员数据</button></div>
-            <section class="mo-section" aria-label="社群成员"><header><h2>社群成员与分享</h2><p class="mo-status" data-mo-status="community" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="community"></div></section>
-            <section class="mo-section" aria-label="应用会员"><header><h2>融资站与小程序会员</h2><p class="mo-status" data-mo-status="application" role="status" aria-live="polite">打开栏目后按需连接</p></header><div data-mo-content="application"></div></section>
+            <div class="mo-overview-columns">
+              <section class="mo-section" aria-label="社群成员"><header><div><h2>社群成员</h2><p class="mo-status" data-mo-status="community" role="status" aria-live="polite">正在连接…</p></div><a href="#membership-community">管理成员 →</a></header><div data-mo-content="community"></div></section>
+              <section class="mo-section" aria-label="应用会员"><header><div><h2>融资站与小程序</h2><p class="mo-status" data-mo-status="application" role="status" aria-live="polite">正在连接…</p></div><a href="#membership-users">管理用户 →</a></header><div data-mo-content="application"></div></section>
+            </div>
           </div>
         </section>
 
@@ -644,7 +646,7 @@
   <script src="data/ops-console.js"></script>
   <script src="assets/operations-console.js?v=ops-nav-20260910"></script>
   <script src="assets/application-analytics.js?v=20260830-ops-readonly"></script>
-  <script src="assets/member-operations.js?v=ops-nav-20260910"></script>
+  <script src="assets/member-operations.js?v=ops-membership-20260910"></script>
   <script src="assets/operations-auth.js?v=ops-v341"></script>
 </body>
 </html>

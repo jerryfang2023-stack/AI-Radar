@@ -58,16 +58,21 @@
   }
   function render(source, payload) {
     const metrics = payload.metrics;
-    let content = '<div class="mo-grid">' + definitions[source].map(([key, label]) => '<article class="mo-metric"><h3>' + label + '</h3><strong' + (metrics[key] == null ? ' class="mo-missing"' : '') + '>' + number(metrics[key]) + '</strong></article>').join("") + '</div>';
+    const community = source === "community";
+    const primary = community ? [["joinedMembers", "已入群"], ["awaitingJoin", "待入群"], ["participants", "期间参与分享"]] : [["accounts", "注册用户"], ["activeEntitlements", "有效会员"], ["expiring7d", "7 天内到期"]];
+    const secondary = community ? [["newJoinedMembers", "新增入群", "人"], ["speakers", "分享嘉宾", "人"], ["issues", "分享场次", "期"]] : [["newAccounts", "新增用户", "人"], ["engagedAccounts", "活跃用户", "人"], ["firstPaidAccounts", "首次付费", "人"], ["repeatPaidAccounts", "再次购买", "人"]];
+    let content = '<dl class="mo-key-numbers">' + primary.map(([key, label]) => '<div><dt>' + label + '</dt><dd>' + (metrics[key] == null ? '—' : number(metrics[key])) + '<small>人</small></dd></div>').join("") + '</dl>';
+    if (!community && metrics.trialAccounts != null) content += '<p class="mo-inline-note">另有 ' + number(metrics.trialAccounts) + ' 人试用中</p>';
+    content += '<h3 class="mo-period-title">近 ' + days + ' 天</h3><dl class="mo-summary-rows">' + secondary.filter(([key]) => metrics[key] != null).map(([key, label, unit]) => '<div><dt>' + label + '</dt><dd>' + number(metrics[key]) + '<small>' + unit + '</small></dd></div>').join("") + '</dl>';
     const buckets = payload.pointBuckets;
-    content += '<div class="mo-distributions">' + distribution(source === "community" ? "社群累计积分分布" : "应用可用积分分布", [
+    content += '<details class="mo-breakdown"><summary>' + (community ? '查看积分分布' : '查看套餐与积分') + '</summary><div class="mo-distributions">' + distribution(source === "community" ? "社群累计积分分布" : "应用可用积分分布", [
       [source === "community" ? "≤ 0 分" : "0 分", buckets.zero], [source === "community" ? "1–29 分" : "1–299 分", buckets.low],
       [source === "community" ? "30–99 分" : "300–999 分", buckets.mid], [source === "community" ? "≥ 100 分" : "≥ 1,000 分", buckets.high],
     ]);
     if (source === "application") content += distribution("有效权益账户 · 最近付费套餐", [["月度", payload.tiers.monthly], ["半年", payload.tiers.half_year], ["年度", payload.tiers.annual], ["兑换 / 其他", payload.tiers.other]]);
-    content += '</div>';
+    content += '</div></details>';
     $('[data-mo-content="' + source + '"]').innerHTML = content;
-    $('[data-mo-status="' + source + '"]').textContent = "已连接 · " + days + " 天窗口 · 更新于 " + new Date(payload.generatedAt).toLocaleString("zh-CN", { hour12: false });
+    $('[data-mo-status="' + source + '"]').textContent = "更新于 " + new Date(payload.generatedAt).toLocaleString("zh-CN", { hour12: false });
   }
   async function read(source, current, selectedDays) {
     const status = $('[data-mo-status="' + source + '"]');
