@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-09-12 00:38:36",
+    "generatedAt": "2026-09-12 00:48:29",
     "generatedDate": "2026-09-12",
     "storeDir": ".skill-store",
     "projectSkillDir": "agent-workflow/skills",
@@ -189,8 +189,8 @@ window.WaveSightLocalSkillStore = {
       "guanlan": 30,
       "current": 19,
       "laneOwners": 3,
-      "needsAction": 1,
-      "syncIssues": 1,
+      "needsAction": 0,
+      "syncIssues": 0,
       "dormant": 123,
       "retired": 0,
       "cleanupQueue": 127,
@@ -3300,7 +3300,7 @@ window.WaveSightLocalSkillStore = {
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
-      "syncState": "drift",
+      "syncState": "synced",
       "version": "2.1.0",
       "description": "Create, update, repair, and clean Guanlan Skills after mutation is requested.",
       "originalDescription": "Use when the user requests creating, updating, repairing, or cleaning WaveSight/Guanlan Skills, trigger metadata, workflows, evals, examples, references, memory, UI metadata, or conflicts. Do not use for an audit-only request with no mutation authorization; route read-only defect discovery to guanlan-code-rule-auditor.",
@@ -3324,15 +3324,9 @@ window.WaveSightLocalSkillStore = {
       "fileCount": 8,
       "modifiedAt": "2026-09-12 00:35:27",
       "modifiedTime": 1789144527030.09,
-      "issueCount": 1,
-      "issueSeverity": "high",
-      "issues": [
-        {
-          "key": "sync-drift",
-          "label": "同步分叉",
-          "severity": "high"
-        }
-      ],
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
       "cleanup_reasons": [],

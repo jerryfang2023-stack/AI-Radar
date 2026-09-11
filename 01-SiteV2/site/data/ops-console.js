@@ -49,7 +49,7 @@ window.WaveSightOpsConsole = {
           "key": "MINIPROGRAM",
           "label": "微信小程序",
           "category": "融资产品",
-          "value": "0.9.10",
+          "value": "1.0.0",
           "source": "02-Miniprogram/package.json",
           "status": "源码版本 · 微信线上待核验",
           "kind": "source",
@@ -315,7 +315,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "0.9.10",
+        "value": "1.0.0",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -358,7 +358,7 @@ window.WaveSightOpsConsole = {
     ],
     "skills": {
       "total": 284,
-      "generatedAt": "2026-09-12 00:38:36",
+      "generatedAt": "2026-09-12 00:48:29",
       "sources": [
         {
           "id": "AIP/.agents/skills",
@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.6.2-nav-member-collapse",
-    "generatedAt": "2026-09-11T16:40:11.618Z",
+    "generatedAt": "2026-09-11T16:48:53.419Z",
     "date": "2026-09-11",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1714,7 +1714,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-11T16:40:11.594Z",
+      "updatedAt": "2026-09-11T16:48:53.407Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1997,7 +1997,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "0.9.10",
+        "value": "1.0.0",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",

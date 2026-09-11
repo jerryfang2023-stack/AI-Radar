@@ -1,6 +1,6 @@
 # Guanlan Funding Mini Program
 
-Current source: 0.9.10 fixes delayed cross-identity responses, old-token expiry handling, and community cache isolation. Release evidence is tracked in `docs/releases/0.9.10/README.md`.
+Current source: 1.0.0 fixes delayed cross-identity responses, old-token expiry handling, and community cache isolation. Release evidence is tracked in `docs/releases/1.0.0/README.md`. The interim 0.9.10 development upload is superseded by 1.0.0 at the user's request.
 
 Previous verified development upload: 0.9.9. Its immutable upload and service deployment evidence remains in `docs/releases/0.9.9/README.md`.
 
