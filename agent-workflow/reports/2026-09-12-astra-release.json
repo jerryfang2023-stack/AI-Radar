@@ -1,0 +1,73 @@
+{
+  "recordedAt": "2026-09-11T16:52:46.860405+00:00",
+  "sourceCommit": "e0d97059f7614599582bd3953d3b489caf58f2dd",
+  "aipCommit": "4296bea3a164a330e15940c04bd4201b2915a504",
+  "miniProgram": {
+    "version": "1.0.0",
+    "appid": "wx34133741173154d4",
+    "uploadExitCode": 0,
+    "packageBytes": 776387,
+    "status": "development-uploaded",
+    "review": "user-will-submit",
+    "supersededDevelopmentVersion": "0.9.10"
+  },
+  "pages": {
+    "conclusion": "success",
+    "runUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/34624311455"
+  },
+  "ops": {
+    "release": "/var/www/wavesight-ops/releases/ops-astra-e0d97059f7",
+    "previous": "/var/www/wavesight-ops/releases/ops-astra-aedaace4d7",
+    "preMigration": "/var/www/wavesight-ops/releases/ops-token-card-4c5f058cc8",
+    "files": {
+      "ops/data/local-skill-store-data.js": "3958bd294508433817acb2e623f1e371ec45b0169967d47e01a19be8b4b50b30",
+      "ops/data/ops-console.js": "47d399682c707ffa8013440b9c87a844b49a1443413cb10064d2055ceee7eadf"
+    },
+    "checks": {
+      "remoteHashesMatch": true,
+      "nginxConfig": true,
+      "unauthenticatedConsole": 302,
+      "unauthenticatedCatalogAsset": 302,
+      "unauthenticatedOpsAsset": 302,
+      "login": 200,
+      "accountHealth": 200
+    },
+    "authenticatedUiVerified": false
+  },
+  "compatibilityEditor": {
+    "version": "2.1.0",
+    "backup": "C:\\Users\\86186\\.codex\\backups\\guanlan-astra-release-20260912\\guanlan-skill-editor",
+    "files": [
+      {
+        "path": "SKILL.md",
+        "beforeSha256": "9ff2bf5d060a08e9eaf3a3de0804236e74908b56edce8e54db34a2bbb48b89a5",
+        "afterSha256": "9e65db6cc9ca0f97ffddc4fa0b82e6547024ee8ad4e56a842ff9ce3df7ee6787"
+      },
+      {
+        "path": "evals/skill-editor-evals.md",
+        "beforeSha256": "5016060eedaa0a6094b7160ec9c2b289f639590f38aed544f86e4f04cd4ed160",
+        "afterSha256": "8c05db8a5e043a6ea87c5c5f89631d4e09fc18f10b3d312bd2e99fe4eeed5c63"
+      },
+      {
+        "path": "examples/good-skill-update.md",
+        "beforeSha256": "5bf234a1c495e6f5ad38f5ce02d6a0439b1e855cad975da575607a740437345d",
+        "afterSha256": "76ca774a3e19642fdb6285187040daa260283809883f752cb0f0f1dd62350302"
+      },
+      {
+        "path": "references/audit-checklist.md",
+        "beforeSha256": "bef31c3acb435afd2e83321054a99eca0b5d7a13dd4d027432e1394754ae5f87",
+        "afterSha256": "38e1d8f2ee8b302e0ba61cc2ffe59d171b66b98bfd31553fa0bc50d818cdb9c1"
+      },
+      {
+        "path": "references/gpt-5p6-prompt-contract.md",
+        "beforeSha256": "cc33648a961a288fb18e9ae040d5301986f1987b237dde5bfb1626cea50930de",
+        "afterSha256": null
+      },
+      {
+        "path": "references/gpt-6-astra-prompt-contract.md",
+        "beforeSha256": null,
+        "afterSha256": "c8f9a7ac7a458a13033b78505fec116b952f67054d034d964af1586943297389"
+      }
+    ]
+  }
+}
