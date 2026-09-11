@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
+    "quarantinedEventCount": 25
+  },
+  "entity": {
+    "id": "EN-fd8c30722e80ff78",
+    "name": "吹爆",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-1a75b3a3a8bff860"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-1a75b3a3a8bff860"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-1a75b3a3a8bff860",
+        "dataDate": "2026-09-11",
+        "date": "2026-09-11",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "吹爆开源！RunningHub让MiniMax H3满血提速12倍，本地部署照样起飞",
+        "displayTags": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-fd8c30722e80ff78",
+          "EN-e1517be14d06cdb7"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

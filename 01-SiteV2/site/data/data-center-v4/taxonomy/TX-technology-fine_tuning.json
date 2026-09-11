@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-10T01:19:06.918Z",
-    "latestDataDate": "2026-09-10",
-    "currentDate": "2026-09-10",
-    "eventCount": 2795,
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
     "quarantinedEventCount": 25
   },
   "node": {
@@ -1158,17 +1158,23 @@
         {
           "name": "AI GPU Cluster Powered",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "H200 GPUs",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "Master Group",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://propakistani.pk/2026/08/12/master-groups-indus-cloud-launches-pakistans-first-cisco-ai-gpu-cluster-powered-by-nvidia-h200-gpus",
@@ -1786,7 +1792,7 @@
           "name": "Alpamayo 2 Super",
           "type": "模型",
           "ownerNames": [
-            "Meta"
+            "NVIDIA"
           ]
         }
       ],
@@ -2791,21 +2797,21 @@
           "name": "RTX PRO 6000",
           "type": "AI 硬件",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         },
         {
           "name": "H200 NVL",
           "type": "AI 硬件",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         },
         {
           "name": "Optimized Systems Supporting",
           "type": "AI 硬件",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         }
       ],
@@ -2854,9 +2860,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-target_user-developer",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
         "TX-technology-agentic_execution",
@@ -2931,8 +2937,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",

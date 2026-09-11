@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
+    "quarantinedEventCount": 25
+  },
+  "entity": {
+    "id": "EN-5f827ad1936b524a",
+    "name": "A.I.",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-41df51972f9b3a4a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-41df51972f9b3a4a"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-41df51972f9b3a4a",
+        "dataDate": "2026-09-11",
+        "date": "2026-09-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "A.I. 日报· 每天10 分钟，跟上最新AI 趋势",
+        "displayTags": [],
+        "entityIds": [
+          "EN-5f827ad1936b524a",
+          "EN-8d4321d936320802",
+          "EN-e176a0fd959ec3d3"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-9e18eaba260b9161",
+      "snapshotKey": "9e18eaba260b9161",
+      "snapshotId": "HWS-4ab8a21e47d6deb2",
+      "eventId": "EV-41df51972f9b3a4a",
+      "eventIds": [
+        "EV-41df51972f9b3a4a"
+      ],
+      "dataDate": "2026-09-11",
+      "date": "2026-09-11",
+      "title": "A.I",
+      "subject": "A.I.",
+      "productNames": [
+        "A.I"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "70",
+          "unit": "%",
+          "fact_ref": "HWF-63c751c9ecb3f121"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-11",
+          "hardware_fact_id": "HWF-63c751c9ecb3f121",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-11T07:36:44.878Z",
+          "subject_entity_id": "EN-5f827ad1936b524a",
+          "subject_name": "A.I.",
+          "product_entity_ids": [
+            "EN-e176a0fd959ec3d3"
+          ],
+          "product_names": [
+            "A.I"
+          ],
+          "component_type": "gpu",
+          "metric_value": "70",
+          "unit": "%",
+          "source_quote": "英伟达创办人兼CEO黄仁勋在高盛大会重申公司对明年营收增长70%的预期，称公司不仅制造芯片，还交付大型互联GPU系统，单款36 Grace+72 Blackwell组合产品月销增长27%。",
+          "event_refs": [
+            "EV-41df51972f9b3a4a"
+          ],
+          "claim_ref": "CL-06bb41d531d981cc",
+          "source_refs": [
+            "SA-95137788b043668f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-11/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://aidaily.fyi/zh",
+      "entityIds": [
+        "EN-5f827ad1936b524a",
+        "EN-8d4321d936320802",
+        "EN-e176a0fd959ec3d3"
+      ]
+    }
+  ]
+}

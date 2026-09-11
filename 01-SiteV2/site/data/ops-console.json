@@ -49,7 +49,7 @@
           "key": "MINIPROGRAM",
           "label": "微信小程序",
           "category": "融资产品",
-          "value": "0.9.5",
+          "value": "0.9.8",
           "source": "02-Miniprogram/package.json",
           "status": "源码版本 · 微信线上待核验",
           "kind": "source",
@@ -315,7 +315,7 @@
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "0.9.5",
+        "value": "0.9.8",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -519,8 +519,8 @@
   },
   "meta": {
     "version": "OPS-V3.6.2-nav-member-collapse",
-    "generatedAt": "2026-09-10T00:32:13.659Z",
-    "date": "2026-09-10",
+    "generatedAt": "2026-09-11T07:40:50.895Z",
+    "date": "2026-09-11",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -556,7 +556,7 @@
     }
   ],
   "daily": {
-    "date": "2026-09-10",
+    "date": "2026-09-11",
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
@@ -571,40 +571,13 @@
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 1,
+      "total": 0,
       "open": 0,
-      "resolved": 1,
-      "byLane": {
-        "business_signals": 1
-      },
-      "byCategory": {
-        "recurring_automation_issue": 1
-      },
+      "resolved": 0,
+      "byLane": {},
+      "byCategory": {},
       "recurring": [],
-      "latest": [
-        {
-          "id": "2026-09-04-business-signals-recurring-9b3705b9af766a92",
-          "date": "2026-09-04",
-          "title": "Recurring warning: business_signals",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "runtime://daily-supervision/2026-09-04",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-09-04T08:47:18.626Z",
-          "updatedAt": "2026-09-05T13:22:09+08:00",
-          "resolvedAt": "2026-09-05T13:22:09+08:00",
-          "resolver": "codex",
-          "fixCommit": "24ad1b8c4bf9f758e2e8739d3bcc3d179658569a",
-          "validation": "2026-09-05 final closure: clean main 0532b6d13838708b75d5b8c845a8b35dc420093c, isolated Vault passed, Pages33946829221 success, Portal74cc8b4f45fe5ceb9512c79061ec7c24b0af84fb liveVerified, runtime regression tests passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-09-04-business-signals-recurring-9b3705b9af766a92.md"
-        }
-      ]
+      "latest": []
     },
     "monthly": {
       "windowDays": 30,
@@ -1367,15 +1340,15 @@
           },
           {
             "label": "Claims",
-            "value": 128
+            "value": 89
           },
           {
             "label": "Events",
-            "value": 44
+            "value": 39
           },
           {
             "label": "QA",
-            "value": 193
+            "value": 195
           }
         ]
       },
@@ -1416,18 +1389,18 @@
       {
         "id": "collection",
         "label": "采集",
-        "status": "partial",
+        "status": "passed",
         "counts": {
           "discovered": 290,
-          "capture_succeeded": 236,
-          "capture_failed": 7,
-          "recovered_source_failures": 7,
-          "raw_documents": 236
+          "capture_succeeded": 234,
+          "capture_failed": 0,
+          "recovered_source_failures": 8,
+          "raw_documents": 234
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-09-10/manifest.json",
-          "agent-workflow/reports/2026-09-10-guanlan-daily-monitor-log.md",
-          "agent-workflow/reports/2026-09-10-guanlan-monitor-quality-gate.md"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-09-11/manifest.json",
+          "agent-workflow/reports/2026-09-11-guanlan-daily-monitor-log.md",
+          "agent-workflow/reports/2026-09-11-guanlan-monitor-quality-gate.md"
         ]
       },
       {
@@ -1435,20 +1408,20 @@
         "label": "事实构建",
         "status": "passed",
         "counts": {
-          "accepted_claims": 128,
+          "accepted_claims": 89,
           "rejected_claims": 0,
-          "accepted": 128,
+          "accepted": 89,
           "rejected": 0,
-          "pending_claims": 9,
-          "canonical_events": 44,
+          "pending_claims": 3,
+          "canonical_events": 39,
           "entities": 65,
-          "relationships": 137,
+          "relationships": 92,
           "conflicts": 0,
-          "qa_queue": 193
+          "qa_queue": 195
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-09-10/manifest.json",
-          "agent-workflow/reports/2026-09-10-data-center-v4-integrity-gate.json"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-09-11/manifest.json",
+          "agent-workflow/reports/2026-09-11-data-center-v4-integrity-gate.json"
         ]
       },
       {
@@ -1462,7 +1435,7 @@
           "fde_hardware_sync": "passed"
         },
         "evidence": [
-          "agent-workflow/reports/2026-09-10-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-09-11-persistent-asset-manifest.json"
         ]
       },
       {
@@ -1475,18 +1448,18 @@
           "authoritative": false
         },
         "evidence": [
-          "agent-workflow/reports/2026-09-10-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-09-11-persistent-asset-manifest.json"
         ]
       }
     ],
     "latestProduction": {
-      "date": "2026-09-10",
-      "discovered": 236,
-      "captured": 236,
-      "claims": 137,
-      "events": 44,
+      "date": "2026-09-11",
+      "discovered": 234,
+      "captured": 234,
+      "claims": 92,
+      "events": 39,
       "entities": 65,
-      "relationships": 137
+      "relationships": 92
     },
     "sync": [
       {
@@ -1507,7 +1480,7 @@
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-09-10T00:32:13.617Z"
+        "detail": "2026-09-11T07:40:50.853Z"
       },
       {
         "label": "Daily Supervision",
@@ -1521,40 +1494,40 @@
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V3.6.2-nav-member-collapse",
-        "data_date": "2026-09-10",
-        "generated_at": "2026-09-10T00:32:13.585Z",
-        "source_snapshot": "5ee4a6257d0bc508f90f01b8314b803d3bc017497a2177585158a397db69de27",
+        "data_date": "2026-09-11",
+        "generated_at": "2026-09-11T07:40:50.822Z",
+        "source_snapshot": "5ff87b161d669be418f53024bb5978c23d880d1747d41a68e6abc5d9a79d4234",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 236,
-        "capture_failed": 7,
-        "recovered_source_failures": 7,
-        "raw_documents": 236
+        "capture_succeeded": 234,
+        "capture_failed": 0,
+        "recovered_source_failures": 8,
+        "raw_documents": 234
       },
       "factBuild": {
-        "accepted_claims": 128,
+        "accepted_claims": 89,
         "rejected_claims": 0,
-        "accepted": 128,
+        "accepted": 89,
         "rejected": 0,
-        "pending_claims": 9,
-        "canonical_events": 44,
+        "pending_claims": 3,
+        "canonical_events": 39,
         "entities": 65,
-        "relationships": 137,
+        "relationships": 92,
         "conflicts": 0,
-        "qa_queue": 193,
+        "qa_queue": 195,
         "qa_by_status": {
-          "review_optional": 175,
-          "open": 18
+          "review_optional": 184,
+          "open": 11
         }
       },
       "v4Gate": {
         "status": "passed",
-        "manifest_date": "2026-09-10",
-        "gate_date": "2026-09-10",
+        "manifest_date": "2026-09-11",
+        "gate_date": "2026-09-11",
         "failures": [],
         "warnings": []
       },
@@ -1580,48 +1553,48 @@
     },
     "pipelineMeta": {
       "version": "OPS-V3.6.2-nav-member-collapse",
-      "generatedAt": "2026-09-10T00:32:13.617Z",
+      "generatedAt": "2026-09-11T07:40:50.853Z",
       "dateRange": {
-        "start": "2026-09-04",
-        "end": "2026-09-10"
+        "start": "2026-09-05",
+        "end": "2026-09-11"
       },
       "source": "Data Center V4 manifest + collection-telemetry-v1",
       "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
     },
     "latest": {
-      "date": "2026-09-10",
-      "label": "2026.09.10",
-      "shortLabel": "09.10",
-      "discovered": 236,
-      "captured": 236,
-      "claims": 137,
-      "events": 44,
+      "date": "2026-09-11",
+      "label": "2026.09.11",
+      "shortLabel": "09.11",
+      "discovered": 234,
+      "captured": 234,
+      "claims": 92,
+      "events": 39,
       "entities": 65,
-      "relationships": 137,
+      "relationships": 92,
       "conflicts": 0,
-      "qaQueue": 193,
-      "telemetryDate": "2026-09-10",
+      "qaQueue": 195,
+      "telemetryDate": "2026-09-11",
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 236,
-        "capture_failed": 7,
-        "recovered_source_failures": 7,
-        "raw_documents": 236
+        "capture_succeeded": 234,
+        "capture_failed": 0,
+        "recovered_source_failures": 8,
+        "raw_documents": 234
       },
       "factBuild": {
-        "accepted_claims": 128,
+        "accepted_claims": 89,
         "rejected_claims": 0,
-        "accepted": 128,
+        "accepted": 89,
         "rejected": 0,
-        "pending_claims": 9,
-        "canonical_events": 44,
+        "pending_claims": 3,
+        "canonical_events": 39,
         "entities": 65,
-        "relationships": 137,
+        "relationships": 92,
         "conflicts": 0,
-        "qa_queue": 193,
+        "qa_queue": 195,
         "qa_by_status": {
-          "review_optional": 175,
-          "open": 18
+          "review_optional": 184,
+          "open": 11
         }
       },
       "applicationProjection": {
@@ -1638,16 +1611,29 @@
       }
     },
     "totals": {
-      "discovered": 1706,
-      "captured": 1706,
-      "claims": 769,
-      "events": 278,
-      "entities": 468,
-      "relationships": 769,
-      "conflicts": 1,
-      "qaQueue": 1423
+      "discovered": 1663,
+      "captured": 1663,
+      "claims": 763,
+      "events": 281,
+      "entities": 474,
+      "relationships": 763,
+      "conflicts": 0,
+      "qaQueue": 1379
     },
     "days": [
+      {
+        "date": "2026-09-11",
+        "label": "2026.09.11",
+        "shortLabel": "09.11",
+        "discovered": 234,
+        "captured": 234,
+        "claims": 92,
+        "events": 39,
+        "entities": 65,
+        "relationships": 92,
+        "conflicts": 0,
+        "qaQueue": 195
+      },
       {
         "date": "2026-09-10",
         "label": "2026.09.10",
@@ -1725,67 +1711,68 @@
         "relationships": 121,
         "conflicts": 0,
         "qaQueue": 181
-      },
-      {
-        "date": "2026-09-04",
-        "label": "2026.09.04",
-        "shortLabel": "09.04",
-        "discovered": 277,
-        "captured": 277,
-        "claims": 98,
-        "events": 36,
-        "entities": 59,
-        "relationships": 98,
-        "conflicts": 1,
-        "qaQueue": 239
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-10T00:32:13.654Z",
+      "updatedAt": "2026-09-11T07:40:50.890Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
         {
           "id": "aihot",
           "label": "AI HOT",
-          "total": 47,
-          "eligibleRate": 96,
-          "fullTextRate": 62,
-          "highQualityRate": 43,
-          "readabilityScore": 49,
-          "factHitRate": 30,
-          "acceptedClaims": 51,
-          "canonicalEvents": 15,
-          "score": 62,
+          "total": 38,
+          "eligibleRate": 92,
+          "fullTextRate": 74,
+          "highQualityRate": 45,
+          "readabilityScore": 54,
+          "factHitRate": 42,
+          "acceptedClaims": 43,
+          "canonicalEvents": 16,
+          "score": 66,
           "grade": "中"
         },
         {
           "id": "rss-feed",
           "label": "RSS",
-          "total": 91,
-          "eligibleRate": 95,
-          "fullTextRate": 96,
-          "highQualityRate": 86,
-          "readabilityScore": 83,
-          "factHitRate": 14,
-          "acceptedClaims": 38,
-          "canonicalEvents": 15,
+          "total": 83,
+          "eligibleRate": 92,
+          "fullTextRate": 94,
+          "highQualityRate": 87,
+          "readabilityScore": 84,
+          "factHitRate": 18,
+          "acceptedClaims": 27,
+          "canonicalEvents": 16,
           "score": 79,
           "grade": "中"
         },
         {
           "id": "keyword-search",
           "label": "关键词检索",
-          "total": 98,
-          "eligibleRate": 87,
-          "fullTextRate": 83,
-          "highQualityRate": 81,
-          "readabilityScore": 76,
-          "factHitRate": 14,
-          "acceptedClaims": 39,
-          "canonicalEvents": 14,
-          "score": 72,
+          "total": 80,
+          "eligibleRate": 73,
+          "fullTextRate": 70,
+          "highQualityRate": 68,
+          "readabilityScore": 64,
+          "factHitRate": 4,
+          "acceptedClaims": 5,
+          "canonicalEvents": 3,
+          "score": 60,
           "grade": "中"
+        },
+        {
+          "id": "gdelt",
+          "label": "GDELT",
+          "total": 33,
+          "eligibleRate": 73,
+          "fullTextRate": 73,
+          "highQualityRate": 52,
+          "readabilityScore": 58,
+          "factHitRate": 12,
+          "acceptedClaims": 14,
+          "canonicalEvents": 4,
+          "score": 57,
+          "grade": "待改善"
         }
       ]
     }
@@ -2010,7 +1997,7 @@
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "0.9.5",
+        "value": "0.9.8",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",

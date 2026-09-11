@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-10T01:19:06.918Z",
-    "latestDataDate": "2026-09-10",
-    "currentDate": "2026-09-10",
-    "eventCount": 2795,
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
     "quarantinedEventCount": 25
   },
   "node": {
@@ -72,6 +72,7 @@
       "EV-93fad8e0e30e442c",
       "EV-3d8608d3e78e031b",
       "EV-8fcb52bb6ec980af",
+      "EV-acc612910c52d6e6",
       "EV-617f1daf708475d0",
       "EV-601240034cf86d7f",
       "EV-f41fe4d6189853cd",
@@ -176,6 +177,7 @@
       "EN-51a3a4589db68480",
       "EN-222f930b87524636",
       "EN-f4bec299df3f4f27",
+      "EN-0d52825aa423b229",
       "EN-54239100b953b6ee",
       "EN-77b30b8a88051252",
       "EN-99d3fd0fa8fe115e",
@@ -230,6 +232,7 @@
       "HW-ceb55d9bc637c1d3",
       "HW-1dbfe359ae73ed38",
       "HW-b32e61f6ea5c1646",
+      "HW-7bbd1b502f091b20",
       "HW-53c93a5ce3166528",
       "HW-7183f28980038937",
       "HW-da04d48165a60f76",
@@ -249,7 +252,7 @@
       "HW-4c176e4c40871adc"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-11"
   },
   "events": [
     {
@@ -14646,6 +14649,101 @@
       "publisher": "furiosa.ai"
     },
     {
+      "id": "EV-acc612910c52d6e6",
+      "dataDate": "2026-09-11",
+      "date": "2026-09-11",
+      "updatedDate": "2026-09-11",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "System76 推出 Thelio Mira AI Linux 工作站：192 GB GPU 显存",
+      "originalTitle": "",
+      "subject": "System76",
+      "action": "推出 Thelio Mira AI Linux 工作站：192 GB GPU",
+      "object": "显存",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-0d52825aa423b229"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-0d52825aa423b229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-0d52825aa423b229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0d52825aa423b229",
+        "EN-a206dcacbd3dee8f",
+        "EN-77935c29f9374478"
+      ],
+      "entityNames": [
+        "System76",
+        "AI Linux",
+        "Thelio Mira AI Linux"
+      ],
+      "productName": "AI Linux",
+      "products": [
+        {
+          "name": "AI Linux",
+          "type": "AI 硬件",
+          "ownerNames": []
+        },
+        {
+          "name": "Thelio Mira AI Linux",
+          "type": "AI 硬件",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://system76.com/workstations/thelio-mira-ai",
+      "publisher": "Hacker News：AI 热帖"
+    },
+    {
       "id": "EV-617f1daf708475d0",
       "dataDate": "2026-09-06",
       "date": "2026-09-05",
@@ -15008,7 +15106,9 @@
         {
           "name": "NVHBM",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/994/806.htm",
@@ -16046,17 +16146,23 @@
         {
           "name": "AI GPU Cluster Powered",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "H200 GPUs",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "Master Group",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://propakistani.pk/2026/08/12/master-groups-indus-cloud-launches-pakistans-first-cisco-ai-gpu-cluster-powered-by-nvidia-h200-gpus",
@@ -18081,7 +18187,9 @@
         {
           "name": "GPU MI355X",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/264.htm",
@@ -18618,7 +18726,7 @@
           "name": "SVD",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "NVIDIA"
           ]
         }
       ],
@@ -19583,21 +19691,21 @@
           "name": "Jetson Thor",
           "type": "AI 硬件",
           "ownerNames": [
-            "Amazon"
+            "NVIDIA"
           ]
         },
         {
           "name": "Advance Mainstream Robotics",
           "type": "AI 硬件",
           "ownerNames": [
-            "Amazon"
+            "NVIDIA"
           ]
         },
         {
           "name": "Edge AI",
           "type": "AI 硬件",
           "ownerNames": [
-            "Amazon"
+            "NVIDIA"
           ]
         }
       ],
@@ -20502,7 +20610,9 @@
         {
           "name": "PowerEdge XE8812",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/967/661.htm",
@@ -21448,7 +21558,9 @@
         {
           "name": "MusaCoder",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/962/509.htm",
@@ -22391,21 +22503,21 @@
           "name": "RTX PRO 6000",
           "type": "AI 硬件",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         },
         {
           "name": "H200 NVL",
           "type": "AI 硬件",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         },
         {
           "name": "Optimized Systems Supporting",
           "type": "AI 硬件",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         }
       ],
@@ -22634,9 +22746,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
@@ -22730,6 +22842,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-de84ab7fa36a7839",
         "EV-80775a8178f39aa5",
         "EV-3ad9a2bb87c407dd",
         "EV-8321e5cd7d423d62",
@@ -22759,6 +22872,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-41df51972f9b3a4a",
         "EV-f01a13953fa7aaaa",
         "EV-dc7ca88afc22099a",
         "EV-ba091f86fba39da0",
@@ -22869,6 +22983,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-5353e265750f02a1",
+        "EV-76c8a600380d988c",
         "EV-20571b175944604c",
         "EV-bef842eacf8b7aad",
         "EV-c06d008e73a0d337",
@@ -22896,14 +23012,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-ai_market_application-models",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
@@ -22978,7 +23094,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -23065,8 +23181,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
@@ -23090,9 +23206,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
@@ -23121,8 +23237,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator"
@@ -23146,8 +23262,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
@@ -23172,10 +23288,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-manufacturing",
         "TX-ai_market_subcategory-hardware_computing",
@@ -23209,8 +23325,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-industry-energy_utilities",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
@@ -23265,8 +23381,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
@@ -23290,9 +23406,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-ai_market_subcategory-hardware_computing",
@@ -23342,8 +23458,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
@@ -23367,9 +23483,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-automotive_transportation",
@@ -23397,8 +23513,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
@@ -23422,8 +23538,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
@@ -23448,8 +23564,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-technology-agentic_execution",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
@@ -23474,10 +23590,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-product_form-model",
+        "TX-use_case-software_development",
         "TX-industry-manufacturing",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
@@ -23502,8 +23618,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
@@ -23527,8 +23643,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-ai_market_subcategory-hardware_computing",
@@ -23556,9 +23672,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-computing_infrastructure",
@@ -23585,10 +23701,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-ai_market_subcategory-hardware_computing",
@@ -23615,10 +23731,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-model_deployment",
@@ -23644,10 +23760,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_subcategory-hardware_computing",
@@ -23675,9 +23791,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips"
@@ -23701,9 +23817,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_subcategory-hardware_computing",
@@ -23835,6 +23951,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-c74cc1e3155a00c9",
         "EV-aa5114540046f2c0",
         "EV-83dfc99666955c16",
         "EV-8232ad0075a77b7a",
@@ -24045,6 +24162,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-c44f8fbab9e200ca",
         "EV-621b257277382475",
         "EV-66ea621d508a975c",
         "EV-fdc3211527e41bf6",
@@ -24143,14 +24261,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-ai_market_application-models",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -24208,7 +24326,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "EN-b81c8201acfc7639",
@@ -24334,9 +24452,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-target_user-developer",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
         "TX-technology-agentic_execution",
@@ -24387,8 +24505,10 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-1a75b3a3a8bff860",
         "EV-0121f0a9e9a975ec",
         "EV-522c339dded54be5",
+        "EV-c74cc1e3155a00c9",
         "EV-358643eefe0a5df5",
         "EV-a6dc310224542dcf",
         "EV-2fa6949af5b36fb0",
@@ -24413,7 +24533,7 @@
         "EN-cf81a61e4eaef17c"
       ],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "EN-7640da40298286a6",
@@ -24648,6 +24768,27 @@
       "lastSeen": "2026-08-08"
     },
     {
+      "id": "EN-0d52825aa423b229",
+      "name": "System76",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-acc612910c52d6e6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-11",
+      "lastSeen": "2026-09-11"
+    },
+    {
       "id": "EN-54239100b953b6ee",
       "name": "MAI-Image-2.6-Flash",
       "entityType": "product_candidate",
@@ -24782,6 +24923,8 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-73c29838fbb3b394",
+        "EV-fd0acf0718a27961",
         "EV-66561ec28d8b1fec",
         "EV-54451ee210a0d0d4",
         "EV-f26c01475e591f11",
@@ -24864,11 +25007,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
         "TX-use_case-software_development",
-        "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-use_case-data_analysis",
         "TX-industry-manufacturing",
@@ -24903,7 +25046,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -25335,6 +25478,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-87f31c71f040785a",
         "EV-4965305d57edf6dd",
         "EV-636b45c518ae1313",
         "EV-61b1ddeb1e7b7043",
@@ -25393,8 +25537,16 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-0257ad33a3edf7c0",
+        "EV-157047393912dde3",
+        "EV-1938f1caa0e15759",
+        "EV-291060fb79c45357",
+        "EV-327ecd23437d5fda",
+        "EV-3e971b2db5569c2e",
+        "EV-b2573b146a89c48a",
+        "EV-c74cc1e3155a00c9",
+        "EV-c7da4a53cf54f922",
         "EV-1372037e191a9587",
+        "EV-0257ad33a3edf7c0",
         "EV-4f3ba2aed6b31d76",
         "EV-5a54bc68b3b6ab9a",
         "EV-1c240446b94d16b1",
@@ -25636,6 +25788,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-cd94cdad9b5c8089",
+        "EV-2838858a4f49478f",
         "EV-8025c0adfe709adf",
         "EV-5d530dd36f82d830",
         "EV-99538bb71ba99fc9",
@@ -25741,13 +25895,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
+        "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-professional_services",
@@ -25775,13 +25930,14 @@
         "TX-technology-long_context",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207",
         "EN-968e2d5b08687bf4",
         "EN-6a50fbf0b970c03a",
         "EN-3a7bd3e2360a3d29",
-        "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
@@ -25805,7 +25961,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -25991,8 +26147,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-media_entertainment",
@@ -26063,8 +26219,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-target_user-business_user",
+        "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator"
       ],
@@ -26135,10 +26291,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-target_user-developer",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-product_form-model",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-manufacturing",
         "TX-target_user-consumer",
@@ -26498,6 +26654,35 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-7bbd1b502f091b20",
+      "eventId": "EV-acc612910c52d6e6",
+      "dataDate": "2026-09-11",
+      "date": "2026-09-11",
+      "title": "System76 推出 Thelio Mira AI Linux 工作站：192 GB GPU 显存",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "System76",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://system76.com/workstations/thelio-mira-ai",
+      "sourceName": "Hacker News：AI 热帖",
+      "sourceDate": "2026-09-11",
+      "entityIds": [
+        "EN-0d52825aa423b229",
+        "EN-a206dcacbd3dee8f",
+        "EN-77935c29f9374478"
+      ]
+    },
     {
       "id": "HW-f741b332806256b3",
       "eventId": "EV-fec0251eafea1a20",
