@@ -1,0 +1,77 @@
+{
+  "sourceCommit": "bcdc066bc607868014e4e38cee91e4f5c50a4440",
+  "version": "OPS-V3.6.3-astra-session-isolation",
+  "files": {
+    "ops/operations-console.html": "c3b0cff470fdcd84c899bb73e08b72878e9ead3f1026f0e8fd42f4d85a8ba1d3",
+    "ops/assets/member-operations.js": "de490cd0e6db34b038b11d1365bf0b8f753a1a33c9bb1cf95d466c4e31da80c9",
+    "ops/assets/application-analytics.js": "f6eead685502d5f48333b8c3d7f14b36430491bc5ddabc450db614885cf3f65e",
+    "ops/assets/operations-auth.js": "a62d568995f996c5ae170bb6003e9cc10c93e35271ab850e9389b8e4acdbfe6d",
+    "ops/data/ops-console.js": "e7fe429da452764a84595e0b8902fefb90997f5cb69feb330d480e9010e24169",
+    "ops/data/local-skill-store-data.js": "d065914b6eb4d92f82c953e35cdf32ac0209d2fdad3a57644d86df4ec544aa82"
+  },
+  "checkedAt": "2026-09-11T17:09:03.927702+00:00",
+  "release": "/var/www/wavesight-ops/releases/ops-v363-bcdc066bc6",
+  "previous": "/var/www/wavesight-ops/releases/ops-astra-e0d97059f7",
+  "remoteHashesVerified": true,
+  "nginxConfigurationValid": true,
+  "httpChecks": [
+    {
+      "path": "/ops/",
+      "status": 302,
+      "location": "https://www.zkdlj.vip/ops/login/"
+    },
+    {
+      "path": "/ops/assets/member-operations.js?v=ops-astra-20260912",
+      "status": 302,
+      "location": "https://www.zkdlj.vip/ops/login/"
+    },
+    {
+      "path": "/ops/assets/operations-auth.js?v=ops-astra-20260912",
+      "status": 302,
+      "location": "https://www.zkdlj.vip/ops/login/"
+    },
+    {
+      "path": "/ops/assets/application-analytics.js?v=ops-astra-20260912",
+      "status": 302,
+      "location": "https://www.zkdlj.vip/ops/login/"
+    },
+    {
+      "path": "/ops/data/ops-console.js",
+      "status": 302,
+      "location": "https://www.zkdlj.vip/ops/login/"
+    },
+    {
+      "path": "/ops/login/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/api/v1/health",
+      "status": 200,
+      "location": null
+    }
+  ],
+  "browserIntegrationTests": {
+    "source": "synthetic fixtures",
+    "passed": 2
+  },
+  "authenticatedProductionBrowserVerified": false,
+  "authenticatedProductionBrowserLimitation": "CUA browser bridge unavailable: nodeRepl.fetch request failed",
+  "gitTag": "ops-v3.6.3-astra-session-isolation",
+  "pages": {
+    "status": "success",
+    "runUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/34625986309",
+    "sourceCommit": "bcdc066bc607868014e4e38cee91e4f5c50a4440"
+  },
+  "tests": {
+    "opsUnified": 26,
+    "analytics": 8,
+    "opsRuntime": 35,
+    "skillOps": 29,
+    "browserIntegration": 2,
+    "total": 100,
+    "businessHealthFixture": "passed",
+    "versionGate": "passed",
+    "catalogGate": "passed"
+  }
+}

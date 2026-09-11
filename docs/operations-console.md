@@ -2,6 +2,8 @@
 
 Release baseline: OPS-V3.6.3-astra-session-isolation / Skill Store v2.3.0
 
+2026-09-12 release: commit `bcdc066bc607868014e4e38cee91e4f5c50a4440`, tag `ops-v3.6.3-astra-session-isolation`, atomically deployed at `/var/www/wavesight-ops/releases/ops-v363-bcdc066bc6`. Six asset hashes match Git; Nginx, anonymous login redirects and service health pass. All 100 relevant tests pass, including two synthetic browser integrations. [CI passed](https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/34625986309). The production authenticated-browser check remains unavailable because the browser bridge failed; no real member or Token writes were used for validation. [Release receipt](../agent-workflow/reports/2026-09-12-ops-astra-release.json).
+
 ## Astra maintenance and request lifecycle
 
 The backend is included in the GPT-6 Astra migration. Astra/high owns scoped code maintenance and automated repair through the repository execution contract; experience review keeps medium effort. The current console and its member/authentication APIs do not invoke an OpenAI model. Do not add a model picker or replace the sponsor's Token model label to suggest runtime inference has migrated. The official [Astra migration guidance](https://developers.openai.com/api/docs/guides/latest-model) calls for auditing instruction files and validating actual behavior; the OPS route in `AGENTS.md` makes this reference part of that workflow.
