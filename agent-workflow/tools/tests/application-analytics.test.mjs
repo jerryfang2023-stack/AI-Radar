@@ -21,7 +21,7 @@ test("OPS owns analytics and the old entry redirects without a duplicate dashboa
   assert.match(page, /meta name="robots" content="noindex,nofollow"/);
   assert.match(page, /data-tab="analytics"/);
   assert.match(page, /data-panel="analytics" data-application-analytics/);
-  assert.match(page, /assets\/application-analytics\.js\?v=20260830-ops-readonly/);
+  assert.match(page, /assets\/application-analytics\.js\?v=ops-astra-20260912/);
   const analyticsStart = page.indexOf('data-panel="analytics"');
   const membershipStart = page.indexOf('data-panel="membership"');
   assert.ok(analyticsStart >= 0 && membershipStart > analyticsStart);
@@ -83,13 +83,13 @@ function dashboardHarness({ active = true } = {}) {
   const days = [1, 7, 30, 90].map((day) => { const button = element(`day-${day}`); button.dataset.days = String(day); return button; });
   dashboard.querySelector = element;
   dashboard.querySelectorAll = () => days;
-  const requests = [];
+  const requests = [], documentListeners = {};
   vm.runInNewContext(script, {
-    document: { querySelector: () => dashboard },
+    document: { querySelector: () => dashboard, addEventListener(name, handler) { documentListeners[name] = handler; } },
     fetch(url, options) { return new Promise((resolve, reject) => requests.push({ url, options, resolve, reject })); },
     Intl, AbortController, setTimeout, clearTimeout,
   });
-  return { element, dashboard, days, requests };
+  return { element, dashboard, days, requests, documentListeners };
 }
 
 const production = (visitors = 12) => ({
@@ -101,6 +101,21 @@ const respond = async (request, data = production(), ok = true) => {
   request.resolve({ ok, json: async () => data });
   await new Promise((resolve) => setImmediate(resolve));
 };
+
+test("analytics logout clears rendered data and discards late responses before a new session", async () => {
+  const app = dashboardHarness();
+  await respond(app.requests[0]);
+  app.element("[data-refresh]").listeners.click();
+  app.documentListeners["operations:logout"]();
+  await respond(app.requests[1], production(99));
+  assert.equal(app.element("[data-kpis]").innerHTML, "");
+  assert.equal(app.element("[data-content]").hidden, true);
+  app.element("[data-refresh]").listeners.click();
+  assert.equal(app.requests.length, 2);
+  app.documentListeners["operations:authenticated"]();
+  await respond(app.requests[2], production(27));
+  assert.match(app.element("[data-kpis]").innerHTML, /访客数.*27/);
+});
 
 test("embedded analytics loads through the console session and refresh/filter controls work", async () => {
   const app = dashboardHarness();

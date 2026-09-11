@@ -24,6 +24,37 @@ const config = { id: "season-2", label: "第二季", start: "2026-09-14", end: "
 const payload = { seasons: [config], batches: [], activityTypes: [], audits: [] };
 const respond = async (request, result, status = 200) => { request.resolve({ ok: status === 200, status, json: async () => result }); await new Promise(setImmediate); };
 
+test("old Token permission errors and finally blocks cannot reset a new session or unlock its write", async () => {
+  const h = harness();
+  h.parentEvents["membership:open"]({ detail: { view: "membership-token" } });
+  h.docEvents["operations:authenticated"]({ detail: { csrfToken: "old-session" } });
+  await respond(h.calls[0], payload);
+  h.click("[data-token-calculate]");
+  h.docEvents["operations:logout"]();
+  h.docEvents["operations:authenticated"]({ detail: { csrfToken: "new-session" } });
+  await respond(h.calls[2], payload);
+  h.click("[data-token-calculate]");
+  await respond(h.calls[1], {}, 403);
+  assert.notEqual(h.el("[data-token-content]").innerHTML, "");
+  h.click("[data-token-calculate]");
+  assert.equal(h.calls.length, 4, "old finally must not release the current write lock");
+  await respond(h.calls[3], { config, allocations: [], remaining: 0, previewHash: "current" });
+  assert.match(h.el("[data-token-preview]").innerHTML, /分配预览/);
+});
+
+test("Token write followed by failed refresh keeps the failure visible", async () => {
+  const h = harness();
+  h.parentEvents["membership:open"]({ detail: { view: "membership-token" } });
+  h.docEvents["operations:authenticated"]({ detail: { csrfToken: "session" } });
+  await respond(h.calls[0], payload);
+  h.click("[data-token-calculate]");
+  await respond(h.calls[1], { config, allocations: [], remaining: 0, previewHash: "preview" });
+  h.click("[data-token-confirm]");
+  await respond(h.calls[2], {});
+  await respond(h.calls[3], { error: { message: "刷新失败" } }, 500);
+  assert.equal(h.el("[data-token-status]").textContent, "刷新失败");
+});
+
 test("Token card is the default on fresh sessions and after logout", async () => {
   const h = harness();
   h.parentEvents["membership:open"]({ detail: { view: "membership-token" } });

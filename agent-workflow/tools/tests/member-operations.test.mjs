@@ -10,7 +10,7 @@ function harness(active = true) {
   const elements = new Map();
   const documentListeners = {};
   const element = (selector) => {
-    if (!elements.has(selector)) elements.set(selector, { innerHTML: "", textContent: "", value: "", hidden: false, disabled: false, listeners: {}, addEventListener(name, fn) { this.listeners[name] = fn; } });
+    if (!elements.has(selector)) elements.set(selector, { innerHTML: "", textContent: "", value: "", hidden: false, disabled: false, listeners: {}, scrollIntoView() {}, focus() {}, addEventListener(name, fn) { this.listeners[name] = fn; } });
     return elements.get(selector);
   };
   const root = element("root");
@@ -20,6 +20,7 @@ function harness(active = true) {
   class TestEvent { constructor(type, options = {}) { this.type = type; this.detail = options.detail; } }
   const document = { querySelector: (selector) => selector === "[data-mo-token]" ? null : root, addEventListener(name, fn) { documentListeners[name] = fn; }, dispatchEvent(event) { documentListeners[event.type]?.(event); } };
   vm.runInNewContext(script, { document, CustomEvent: TestEvent, Event: TestEvent, Intl, Date, AbortController, setTimeout, clearTimeout,
+    FormData: class { constructor(form) { this.values = form.values; } get(key) { return this.values[key] ?? null; } },
     fetch(url, options) { return new Promise((resolve, reject) => requests.push({ url, options, resolve, reject })); },
   });
   return { document, element, root, requests, TestEvent };
@@ -27,6 +28,91 @@ function harness(active = true) {
 const metrics = { joinedMembers: 12, newJoinedMembers: 2, awaitingJoin: 0, participants: 3, speakers: 1, participations: 4, issues: 2, unresolvedParticipants: 1, expiring7d: null, renewals: null, accounts: 9, newAccounts: 1, activeEntitlements: 3, trialAccounts: 2, firstPaidAccounts: 1, repeatPaidAccounts: 0, engagedAccounts: 2, redemptions: 1, redeemingAccounts: 1, redeemedPoints: 300, offlineClaims: null };
 const payload = (source, days = 30) => ({ schemaVersion: "MEMBER-OPS-V1.0", source, dataSource: "production", generatedAt: "2026-08-30T00:00:00Z", window: { days }, metrics, tiers: { monthly: 1, half_year: 0, annual: 2, other: 0 }, pointBuckets: { zero: 1, low: 2, mid: 3, high: 4 } });
 const respond = async (req, data, ok = true) => { req.resolve({ ok, json: async () => data }); await new Promise(setImmediate); };
+
+const signIn = (h, token = "csrf-token-with-enough-entropy") => h.document.dispatchEvent(new h.TestEvent("operations:authenticated", { detail: { csrfToken: token } }));
+
+test("an adjustment for the previous user cannot close the newly selected user editor", async () => {
+  const h = harness();
+  h.root.listeners["membership:open"]({ detail: { view: "membership-users" } });
+  signIn(h);
+  const users = [1, 2].map((id) => ({ id, displayName: "用户" + id, phoneMasked: "138****0000", membership: { status: "member" }, points: { balance: 1, lifetime: 1, community: 1 }, payment: { paidOrders: 0, paidCents: 0 } }));
+  await respond(h.requests[0], { schemaVersion: "MEMBER-ADMIN-V1.0", dataSource: "production", page: { number: 1, totalPages: 1, total: 2 }, users });
+  const select = (id) => h.element("[data-mo-admin-users]").listeners.click({ target: { closest: () => ({ dataset: { moUserId: String(id) } }) } });
+  select(1);
+  const button = { disabled: false }, form = { dataset: { moAdjust: "points" }, values: { reason: "测试调整", pointsDelta: 10 }, querySelector: () => button };
+  h.element("[data-mo-admin-detail]").listeners.submit({ preventDefault() {}, target: { closest: () => form } });
+  assert.match(h.requests[1].url, /users\/1\/adjustments$/);
+  select(2);
+  const editor = h.element("[data-mo-admin-detail]").innerHTML;
+  await respond(h.requests[1], { schemaVersion: "MEMBER-ADMIN-V1.0", user: { ...users[0], points: { balance: 11, lifetime: 1, community: 1 } } });
+  assert.match(editor, /用户2/);
+  assert.equal(h.element("[data-mo-admin-detail]").innerHTML, editor);
+});
+const emptyPage = { number: 1, totalPages: 1, total: 0 };
+const listCases = [
+  ["users", "[data-mo-admin-search-form]", "[data-mo-admin-state]", { schemaVersion: "MEMBER-ADMIN-V1.0", dataSource: "production", page: emptyPage, users: [] }],
+  ["community", "[data-mo-community-search-form]", "[data-mo-community-status]", { schemaVersion: "COMMUNITY-MEMBER-ADMIN-V1.0", page: emptyPage, members: [], cohorts: [] }],
+  ["approval", "[data-mo-approval-search-form]", "[data-mo-approval-state]", { schemaVersion: "COMMUNITY-APPROVAL-V1.0", page: emptyPage, members: [] }],
+];
+for (const [view, search, state, data] of listCases) {
+  test(`${view} keeps the latest search and ignores a former session's auth error`, async () => {
+    const h = harness();
+    h.root.listeners["membership:open"]({ detail: { view: "membership-" + view } });
+    signIn(h);
+    h.element(search).listeners.submit({ preventDefault() {} });
+    await respond(h.requests[1], { ...data, page: { ...emptyPage, total: 23 } });
+    const latest = h.element(state).textContent;
+    await respond(h.requests[0], data);
+    assert.equal(h.element(state).textContent, latest);
+    h.element(search).listeners.submit({ preventDefault() {} });
+    signIn(h, "new-csrf-token-with-enough-entropy");
+    await respond(h.requests[3], { ...data, page: { ...emptyPage, total: 41 } });
+    const newSession = h.element(state).textContent;
+    h.requests[2].resolve({ ok: false, status: 401, json: async () => ({}) });
+    await new Promise(setImmediate);
+    assert.equal(h.element(state).textContent, newSession);
+    h.element(search).listeners.submit({ preventDefault() {} });
+    assert.equal(h.requests.length, 5, "new session must still be usable");
+    await respond(h.requests[4], data);
+  });
+}
+
+test("logout invalidates both protected schedule and aggregate requests", async () => {
+  const h = harness();
+  h.root.listeners["membership:open"]({ detail: { view: "membership-schedule" } });
+  signIn(h);
+  h.root.listeners["membership:open"]();
+  h.document.dispatchEvent(new h.TestEvent("operations:logout"));
+  await respond(h.requests[0], { schemaVersion: "COMMUNITY-SCHEDULE-V1.0", seasons: [{ season: 1, completedCount: 15 }, { season: 2, sessions: [] }] });
+  await respond(h.requests[1], payload("community"));
+  await respond(h.requests[2], payload("application"));
+  assert.equal(h.element("[data-mo-schedule-summary]").innerHTML, "");
+  assert.equal(h.element("[data-mo-schedule-list]").innerHTML, "");
+  assert.equal(h.element('[data-mo-content="application"]').innerHTML, "");
+});
+
+for (const view of ["community", "approval"]) {
+  test(`${view} detail selection ignores an older response parsed after the new selection`, async () => {
+    const h = harness();
+    h.root.listeners["membership:open"]({ detail: { view: "membership-" + view } });
+    signIn(h);
+    await respond(h.requests[0], listCases.find((item) => item[0] === view)[3]);
+    const click = (id) => h.element(`[data-mo-${view}-members]`).listeners.click({ target: { closest: () => ({ dataset: { [view === "community" ? "moCommunityId" : "moApprovalId"]: String(id) } }) } });
+    click(1);
+    let parseOld;
+    h.requests[1].resolve({ ok: true, json: () => new Promise((resolve) => { parseOld = resolve; }) });
+    await new Promise(setImmediate);
+    click(2);
+    const member = (id) => ({ id, name: "成员" + id, city: "上海", cohort: 2, communityState: "joined", points: 10, miniProgram: { accountOpened: true }, status: "pending", totalScore: 10, scores: {}, contact: "测试" });
+    const detail = (id) => ({ schemaVersion: view === "community" ? "COMMUNITY-MEMBER-ADMIN-V1.0" : "COMMUNITY-APPROVAL-V1.0", member: member(id) });
+    await respond(h.requests[2], detail(2));
+    const latest = h.element(`[data-mo-${view}-detail]`).innerHTML;
+    assert.match(latest, /成员2/);
+    parseOld(detail(1));
+    await new Promise(setImmediate);
+    assert.equal(h.element(`[data-mo-${view}-detail]`).innerHTML, latest);
+  });
+}
 
 test("membership loads lazily with source-appropriate credentials and survives partial failure", async () => {
   const h = harness(false);
@@ -120,7 +206,7 @@ test("community approval loads only from its protected membership subpanel", asy
   assert.match(page, /data-tab="membership-approval"[^]*社群加入审核/u);
   assert.match(page, /data-panel="membership-approval"[^]*社群加入申请审核/u);
   assert.match(page, /data-panel="membership-users"[^]*小程序会员管理/u);
-  assert.match(page, /assets\/member-operations\.js\?v=ops-token-card-20260910/u);
+  assert.match(page, /assets\/member-operations\.js\?v=ops-astra-20260912/u);
   assert.match(script, /延长会员权益[^]*调整可用积分/u);
   assert.match(script, /renderAdminUsers\(\);[^]*selectedUserId = null;[^]*data-mo-admin-detail[^]*innerHTML = "";[^]*调整已保存，用户编辑已收起。/u);
   assert.doesNotMatch(page, /href="https:\/\/members\.zkdlj\.vip\/admin"/u);

@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { chromium } from "playwright";
+import { OPS_VERSION } from "../lib/collection-telemetry-v1.mjs";
 
 test("sidebar aligns and folds; member save closes only on success", async () => {
   const browser = await chromium.launch();
@@ -36,7 +37,7 @@ test("sidebar aligns and folds; member save closes only on success", async () =>
       document.querySelector("[data-ops-console]").hidden = false;
       document.dispatchEvent(new CustomEvent("operations:authenticated", { detail: { csrfToken: "synthetic-csrf-for-browser-test" } }));
     });
-    assert.equal(await page.locator(".brand small").innerText(), "OPS V3.6.2");
+    assert.equal(await page.locator(".brand small").innerText(), OPS_VERSION.replace("OPS-V", "OPS V").split("-")[0]);
     const parent = page.locator('[data-membership-nav] > button');
     const children = page.locator('#membership-subnav');
     const child = children.locator('button').first();

@@ -1,6 +1,23 @@
 # Unified Operations Console
 
-Release baseline: OPS-V3.6.2-nav-member-collapse / Skill Store v2.3.0
+Release baseline: OPS-V3.6.3-astra-session-isolation / Skill Store v2.3.0
+
+## Astra maintenance and request lifecycle
+
+The backend is included in the GPT-6 Astra migration. Astra/high owns scoped code maintenance and automated repair through the repository execution contract; experience review keeps medium effort. The current console and its member/authentication APIs do not invoke an OpenAI model. Do not add a model picker or replace the sponsor's Token model label to suggest runtime inference has migrated. The official [Astra migration guidance](https://developers.openai.com/api/docs/guides/latest-model) calls for auditing instruction files and validating actual behavior; the OPS route in `AGENTS.md` makes this reference part of that workflow.
+
+| Module | Migration acceptance |
+| --- | --- |
+| Overview / data quality | Preserve deterministic telemetry and independent unavailable states. |
+| Application analytics | Invalidate pending reads and clear rendered data on logout; fetch fresh data after authentication. |
+| Member searches / approvals / community management / schedule | A response must match both the current session epoch and the latest request for its list or editor, including after JSON parsing. A previous member's save cannot close the current member's editor. |
+| Token management | Old permission errors cannot reset a new session; old completions cannot release its write lock. A failed post-save refresh must remain visible. Existing idempotency, human confirmation, allocation arithmetic and ledgers remain authoritative. |
+| Authentication | Delayed bootstrap cannot reopen a logged-out shell. Concurrent expiry signals produce one logout request. |
+| Version governance / Skill Store / settings | Display source versions and verified deployment evidence separately; use the migrated 2.3.0 catalog. Device-local preferences remain local. |
+
+For future repairs, reproduce the affected operation with synthetic responses, implement the smallest fix, run the affected behavior regressions, and resume the failed release stage. Never use live member adjustments or Token distribution as a smoke test. Ignoring a stale write response does not undo a server-side write; verify the audit ledger before retrying an uncertain operation.
+
+The 3.6.3 change covers client request lifecycles and maintenance instructions. It does not change service API schemas, membership eligibility, user balances, sponsor commitments or Mini Program 1.0.0's uploaded source.
 
 2026-09-10 membership overview redesign: two border-free source columns, three primary counts per source, compact period rows, and collapsed points/package breakdowns. Optional unavailable metrics are omitted; unavailable primary counts remain explicit. Desktop uses two columns and narrow screens stack the sections. The 7/30/90-day selector, source isolation and existing management subpanels are preserved. Typography: title 30/42, section 20/30, primary count 32/42, body 14/24, status 12/18. Verified with OPS regression tests and fixture-based browser checks at 1440, 768 and 390 pixels.
 

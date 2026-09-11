@@ -33,6 +33,20 @@ function harness() {
 
 const respond = async (request, payload, ok = true) => { request.resolve({ ok, json: async () => payload }); await new Promise(setImmediate); };
 
+test("logout cannot be undone by a delayed bootstrap and concurrent expiry logs out once", async () => {
+  const h = harness();
+  let authenticated = 0;
+  h.document.addEventListener("operations:authenticated", () => { authenticated += 1; });
+  h.listeners.click();
+  h.document.dispatchEvent(new h.TestEvent("operations:session-expired"));
+  assert.equal(h.requests.length, 2);
+  await respond(h.requests[0], { schemaVersion: "OPS-AUTH-V1.0", authenticated: true });
+  assert.equal(h.shell.hidden, true);
+  assert.equal(authenticated, 0);
+  await respond(h.requests[1], {});
+  assert.deepEqual(h.redirects, ["/ops/login/"]);
+});
+
 test("console bootstraps from an HttpOnly-backed same-origin session", async () => {
   const h = harness();
   assert.equal(h.requests.length, 1);

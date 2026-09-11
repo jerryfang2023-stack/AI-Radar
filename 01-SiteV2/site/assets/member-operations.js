@@ -43,6 +43,14 @@
   let communityPage = 1, communityPages = 1, communityMembers = [], selectedCommunityId = null, communityLoaded = false;
   let scheduleSessions = [], scheduleLoaded = false, selectedScheduleId = null;
   const controllers = new Map();
+  let sessionEpoch = 0;
+  const requests = new Map();
+  function beginRequest(key) {
+    const id = Symbol(key), epoch = sessionEpoch;
+    requests.set(key, id);
+    return () => epoch === sessionEpoch && requests.get(key) === id && Boolean(adminCsrfToken);
+  }
+  function invalidateRequest(key) { requests.delete(key); }
   const number = (value) => value == null ? "待接入" : new Intl.NumberFormat("zh-CN").format(value);
   const count = (value) => Number.isSafeInteger(value) && value >= 0;
   function valid(payload, source, selectedDays) {
@@ -121,6 +129,14 @@
   }
   function adminHeaders(json = false, write = false) { return { ...(write ? { "X-CSRF-Token": adminCsrfToken } : {}), ...(json ? { "Content-Type": "application/json" } : {}) }; }
   function resetAdminSession() {
+    sessionEpoch += 1; requests.clear(); generation += 1; loaded = false;
+    for (const controller of controllers.values()) controller.abort();
+    controllers.clear();
+    for (const source of ["community", "application"]) {
+      $('[data-mo-content="' + source + '"]').innerHTML = "";
+      $('[data-mo-status="' + source + '"]').textContent = "";
+    }
+    $("[data-mo-schedule-summary]").innerHTML = "";
     adminCsrfToken = ""; adminUsers = []; selectedUserId = null; adminLoaded = false;
     approvalMembers = []; selectedApprovalId = null; approvalsLoaded = false;
     communityMembers = []; selectedCommunityId = null; communityLoaded = false;
@@ -153,27 +169,32 @@
     $("[data-mo-admin-prev]").disabled = adminPage <= 1; $("[data-mo-admin-next]").disabled = adminPage >= adminPages;
   }
   function renderAdminDetail(user) {
+    invalidateRequest("admin-detail");
     selectedUserId = user.id;
     const audits = user.recentAdjustments.length ? '<ul class="mo-audit-list">' + user.recentAdjustments.map((item) => '<li><span>' + escape(item.action) + ' · ' + escape(item.reason) + '</span><time>' + date(item.createdAt) + '</time></li>').join("") + '</ul>' : '<p class="mo-user-meta">暂无人工调整记录。</p>';
     $("[data-mo-admin-detail]").innerHTML = '<section class="mo-user-detail"><header><div><span class="kicker">USER #' + user.id + '</span><h2>' + escape(user.displayName) + '</h2></div><span class="mo-badge">' + statusLabels[user.membership.status] + '</span></header><dl class="mo-user-facts"><div><dt>脱敏手机号</dt><dd>' + escape(user.phoneMasked) + '</dd></div><div><dt>权益有效至</dt><dd>' + date(user.membership.activeUntil) + '</dd></div><div><dt>可用 / 累计积分</dt><dd>' + number(user.points.balance) + ' / ' + number(user.points.lifetime) + '</dd></div><div><dt>社群关联</dt><dd>' + escape(user.community.name || "未关联") + '</dd></div><div><dt>付费订单</dt><dd>' + user.payment.paidOrders + ' 单 · ' + money(user.payment.paidCents) + '</dd></div><div><dt>最近付费</dt><dd>' + date(user.payment.lastPaidAt) + '</dd></div><div><dt>最近活跃</dt><dd>' + date(user.activity.lastBehaviorAt) + '</dd></div><div><dt>注册时间</dt><dd>' + date(user.createdAt) + '</dd></div></dl><div class="mo-adjustments"><form class="mo-adjustment" data-mo-adjust="membership"><h3>延长会员权益</h3><label>增加时长<select name="membershipDays"><option value="7">7 天</option><option value="30" selected>30 天</option><option value="90">90 天</option><option value="180">180 天</option><option value="365">365 天</option></select></label><label>调整原因<input name="reason" maxlength="120" required placeholder="如：客户补偿、活动奖励"></label><button type="submit">确认延长权益</button></form><form class="mo-adjustment" data-mo-adjust="points"><h3>调整可用积分</h3><label>增减积分<input name="pointsDelta" type="number" min="-100000" max="100000" required placeholder="正数增加，负数扣减"></label><label>调整原因<input name="reason" maxlength="120" required placeholder="如：线下活动奖励、误发修正"></label><button type="submit">确认调整积分</button></form></div><p class="mo-admin-state" data-mo-adjust-state role="status" aria-live="polite"></p><h3>最近人工调整</h3>' + audits + '</section>';
   }
   async function loadAdminUsers() {
     if (!adminCsrfToken) return;
+    const current = beginRequest("admin-list");
     const query = encodeURIComponent($("[data-mo-admin-query]").value || ""), status = encodeURIComponent($("[data-mo-admin-status]").value || "all");
     $("[data-mo-admin-state]").textContent = "正在读取小程序用户…"; $("[data-mo-admin-users]").innerHTML = '<tr><td colspan="6"><div class="mo-empty">正在加载受保护的用户明细…</div></td></tr>';
     try {
       const response = await fetch(endpoints.adminUsers + "?query=" + query + "&status=" + status + "&page=" + adminPage + "&pageSize=20", { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      if (!current()) return;
       if (response.status === 401 || response.status === 503) return adminFailure("管理员会话已失效或服务未配置，请重新验证。", true);
       if (!response.ok) throw new Error("用户明细暂不可用");
-      const payload = await response.json();
+      const payload = await response.json(); if (!current()) return;
       if (payload?.schemaVersion !== "MEMBER-ADMIN-V1.0" || payload.dataSource !== "production" || !Array.isArray(payload.users) || !Number.isSafeInteger(payload.page?.totalPages)) throw new Error("用户数据校验失败");
       const users = payload.users.map(safeAdminUser); if (users.some((item) => !item)) throw new Error("用户数据校验失败");
       adminUsers = users; adminPage = payload.page.number; adminPages = Math.max(1, payload.page.totalPages); adminLoaded = true;
       $("[data-mo-admin-state]").textContent = "已授权 · 共 " + payload.page.total + " 位小程序用户 · 更新于 " + date(payload.generatedAt); renderAdminUsers();
       if (selectedUserId) { const selected = adminUsers.find((user) => user.id === selectedUserId); $("[data-mo-admin-detail]").innerHTML = ""; if (selected) renderAdminDetail(selected); }
-    } catch (error) { adminFailure(error.message || "用户明细暂不可用"); }
+    } catch (error) { if (!current()) return; adminFailure(error.message || "用户明细暂不可用"); }
   }
   async function submitAdjustment(form) {
+    if (!adminCsrfToken) return;
+    const current = beginRequest("admin-detail");
     const state = $("[data-mo-adjust-state]"), data = new FormData(form), reason = String(data.get("reason") || "").trim();
     const operationId = globalThis.crypto?.randomUUID?.() || (Date.now().toString(36) + "-" + Math.random().toString(36).slice(2));
     const body = form.dataset.moAdjust === "membership" ? { operationId, membershipDays: Number(data.get("membershipDays")), reason } : { operationId, pointsDelta: Number(data.get("pointsDelta")), reason };
@@ -181,7 +202,8 @@
     const button = form.querySelector("button"); button.disabled = true; state.textContent = "正在提交调整…";
     try {
       const response = await fetch(endpoints.adminUsers + "/" + selectedUserId + "/adjustments", { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
-      const payload = await response.json(); if (response.status === 401 || response.status === 403 || response.status === 503) return adminFailure("管理员会话已失效，请重新验证。", true);
+      if (!current()) return;
+      const payload = await response.json(); if (!current()) return; if (response.status === 401 || response.status === 403 || response.status === 503) return adminFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "调整未成功").slice(0, 120));
       const user = safeAdminUser(payload?.user); if (payload?.schemaVersion !== "MEMBER-ADMIN-V1.0" || !user) throw new Error("调整结果校验失败");
       adminUsers = adminUsers.map((item) => item.id === user.id ? user : item);
@@ -189,7 +211,7 @@
       selectedUserId = null;
       $("[data-mo-admin-detail]").innerHTML = "";
       $("[data-mo-admin-state]").textContent = "调整已保存，用户编辑已收起。";
-    } catch (error) { state.textContent = error.message || "调整未成功"; } finally { button.disabled = false; }
+    } catch (error) { if (!current()) return; state.textContent = error.message || "调整未成功"; } finally { button.disabled = false; }
   }
   const communityStateLabels = { not_joined: "未入群", joined: "已入群", eliminated: "已淘汰" };
   const cohortLabel = (value) => (["", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"][value] ? ["", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"][value] + "期" : "第 " + value + " 期");
@@ -223,21 +245,23 @@
   }
   async function loadCommunityMembers() {
     if (!adminCsrfToken) return;
+    const current = beginRequest("community-list");
     const query = encodeURIComponent($("[data-mo-community-query]").value || ""), cohort = encodeURIComponent($("[data-mo-community-cohort]").value || "all"), state = encodeURIComponent($("[data-mo-community-state]").value || "all");
     $("[data-mo-community-status]").textContent = "正在读取社群成员…";
     $("[data-mo-community-members]").innerHTML = '<tr><td colspan="7"><div class="mo-empty">正在加载成员数据…</div></td></tr>';
     try {
       const response = await fetch(endpoints.communityDirectory + "?query=" + query + "&cohort=" + cohort + "&state=" + state + "&page=" + communityPage + "&pageSize=20", { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      if (!current()) return;
       if (response.status === 401 || response.status === 503) return communityFailure("管理员会话已失效或社群服务未配置，请重新验证。", true);
-      const payload = await response.json();
+      const payload = await response.json(); if (!current()) return;
       if (!response.ok) throw new Error(String(payload?.error?.message || "社群成员暂不可用").slice(0, 120));
       if (payload?.schemaVersion !== "COMMUNITY-MEMBER-ADMIN-V1.0" || !Array.isArray(payload.members) || !Array.isArray(payload.cohorts) || !Number.isSafeInteger(payload.page?.totalPages)) throw new Error("成员数据校验失败");
       const members = payload.members.map(safeCommunityMember); if (members.some((item) => !item)) throw new Error("成员数据校验失败");
       communityMembers = members; communityPage = payload.page.number; communityPages = Math.max(1, payload.page.totalPages); communityLoaded = true;
       renderCohortOptions(payload.cohorts.filter((value) => Number.isSafeInteger(value) && value > 0));
       $("[data-mo-community-status]").textContent = "共 " + payload.page.total + " 人 · 已入群 " + Number(payload.stateCounts?.joined || 0) + " · 未入群 " + Number(payload.stateCounts?.not_joined || 0) + " · 已淘汰 " + Number(payload.stateCounts?.eliminated || 0);
-      renderCommunityMembers();
-    } catch (error) { communityFailure(error.message || "社群成员暂不可用"); }
+      renderCommunityMembers(); return true;
+    } catch (error) { if (!current()) return; communityFailure(error.message || "社群成员暂不可用"); }
   }
   function renderCommunityDetail(member) {
     selectedCommunityId = member.id;
@@ -249,18 +273,23 @@
     $("[data-mo-community-manage] [name=state]").value = member.communityState;
   }
   async function loadCommunityDetail(memberId) {
+    if (!adminCsrfToken) return;
+    const current = beginRequest("community-detail");
     $("[data-mo-community-detail]").innerHTML = '<div class="mo-empty">正在读取成员资料…</div>';
     try {
       const response = await fetch(endpoints.communityDirectory + "/" + memberId, { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
-      const payload = await response.json();
+      if (!current()) return;
+      const payload = await response.json(); if (!current()) return;
       if (response.status === 401 || response.status === 503) return communityFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "成员资料暂不可用").slice(0, 120));
       const member = safeCommunityMember(payload.member);
       if (payload?.schemaVersion !== "COMMUNITY-MEMBER-ADMIN-V1.0" || !member || typeof member.contact !== "string") throw new Error("成员资料校验失败");
       renderCommunityDetail(member);
-    } catch (error) { $("[data-mo-community-detail]").innerHTML = '<div class="mo-empty">' + escape(error.message || "成员资料暂不可用") + '</div>'; }
+    } catch (error) { if (!current()) return; $("[data-mo-community-detail]").innerHTML = '<div class="mo-empty">' + escape(error.message || "成员资料暂不可用") + '</div>'; }
   }
   async function submitCommunityManagement(form) {
+    if (!adminCsrfToken) return;
+    const current = beginRequest("community-detail");
     const stateNode = $("[data-mo-community-manage-state]"), data = new FormData(form), button = form.querySelector("button");
     const body = {
       operationId: globalThis.crypto?.randomUUID?.() || ("community-manage-" + Date.now().toString(36)),
@@ -271,15 +300,16 @@
     button.disabled = true; stateNode.textContent = "正在保存…";
     try {
       const response = await fetch(endpoints.communityDirectory + "/" + selectedCommunityId + "/management", { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
-      const payload = await response.json();
+      if (!current()) return;
+      const payload = await response.json(); if (!current()) return;
       if (response.status === 401 || response.status === 403 || response.status === 503) return communityFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "成员状态未保存").slice(0, 120));
       const member = safeCommunityMember(payload.member); if (payload?.schemaVersion !== "COMMUNITY-MEMBER-ADMIN-V1.0" || !member) throw new Error("保存结果校验失败");
       selectedCommunityId = null;
       $("[data-mo-community-detail]").innerHTML = "";
-      await loadCommunityMembers();
+      const refreshed = await loadCommunityMembers(); if (!current() || !refreshed) return;
       $("[data-mo-community-status]").textContent += " · 成员状态已保存，详情已收起。";
-    } catch (error) { stateNode.textContent = error.message || "成员状态未保存"; } finally { button.disabled = false; }
+    } catch (error) { if (!current()) return; stateNode.textContent = error.message || "成员状态未保存"; } finally { button.disabled = false; }
   }
   const approvalStatusLabels = { pending: "待审核", approved: "已通过", waitlist: "候补", rejected: "暂不邀请" };
   function safeApprovalMember(item) {
@@ -302,20 +332,22 @@
   }
   async function loadApprovals() {
     if (!adminCsrfToken) return;
+    const current = beginRequest("approval-list");
     const query = encodeURIComponent($("[data-mo-approval-query]").value || ""), status = encodeURIComponent($("[data-mo-approval-status]").value || "pending");
     $("[data-mo-approval-state]").textContent = "正在读取会员申请…";
     $("[data-mo-approval-members]").innerHTML = '<tr><td colspan="6"><div class="mo-empty">正在加载受保护的审批数据…</div></td></tr>';
     try {
       const response = await fetch(endpoints.communityApprovals + "?query=" + query + "&status=" + status + "&page=" + approvalPage + "&pageSize=20", { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      if (!current()) return;
       if (response.status === 401 || response.status === 503) return approvalFailure("管理员会话已失效或社群服务未配置，请重新验证。", true);
       if (!response.ok) throw new Error("会员审批暂不可用");
-      const payload = await response.json();
+      const payload = await response.json(); if (!current()) return;
       if (payload?.schemaVersion !== "COMMUNITY-APPROVAL-V1.0" || !Array.isArray(payload.members) || !Number.isSafeInteger(payload.page?.totalPages)) throw new Error("审批数据校验失败");
       const members = payload.members.map(safeApprovalMember); if (members.some((item) => !item)) throw new Error("审批数据校验失败");
       approvalMembers = members; approvalPage = payload.page.number; approvalPages = Math.max(1, payload.page.totalPages); approvalsLoaded = true;
       $("[data-mo-approval-state]").textContent = "共 " + payload.page.total + " 项 · 待审核 " + Number(payload.statusCounts?.pending || 0) + " 项";
-      renderApprovalMembers();
-    } catch (error) { approvalFailure(error.message || "会员审批暂不可用"); }
+      renderApprovalMembers(); return true;
+    } catch (error) { if (!current()) return; approvalFailure(error.message || "会员审批暂不可用"); }
   }
   function detailValue(label, value) { return '<div><dt>' + label + '</dt><dd>' + escape(value || "—") + '</dd></div>'; }
   function renderApprovalDetail(member) {
@@ -332,18 +364,23 @@
     $("[data-mo-approval-detail]").scrollIntoView({ behavior: "smooth", block: "start" });
   }
   async function loadApprovalDetail(memberId) {
+    if (!adminCsrfToken) return;
+    const current = beginRequest("approval-detail");
     $("[data-mo-approval-detail]").innerHTML = '<div class="mo-empty">正在读取申请详情…</div>';
     try {
       const response = await fetch(endpoints.communityApprovals + "/" + memberId, { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
+      if (!current()) return;
       if (response.status === 401 || response.status === 503) return approvalFailure("管理员会话已失效，请重新验证。", true);
-      const payload = await response.json();
+      const payload = await response.json(); if (!current()) return;
       const member = payload?.member;
       if (!response.ok) throw new Error(String(payload?.error?.message || "申请详情暂不可用").slice(0, 120));
       if (payload?.schemaVersion !== "COMMUNITY-APPROVAL-V1.0" || !safeApprovalMember(member) || !member.scores || typeof member.contact !== "string") throw new Error("申请详情校验失败");
       renderApprovalDetail(member);
-    } catch (error) { $("[data-mo-approval-detail]").innerHTML = '<div class="mo-empty">' + escape(error.message || "申请详情暂不可用") + '</div>'; }
+    } catch (error) { if (!current()) return; $("[data-mo-approval-detail]").innerHTML = '<div class="mo-empty">' + escape(error.message || "申请详情暂不可用") + '</div>'; }
   }
   async function submitApprovalReview(form, decision) {
+    if (!adminCsrfToken) return;
+    const current = beginRequest("approval-detail");
     const state = $("[data-mo-review-state]"), data = new FormData(form), buttons = [...form.querySelectorAll("button[type=submit]")];
     const body = {
       operationId: globalThis.crypto?.randomUUID?.() || ("community-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2)),
@@ -354,17 +391,18 @@
     buttons.forEach((button) => { button.disabled = true; }); state.textContent = "正在提交审批…";
     try {
       const response = await fetch(endpoints.communityApprovals + "/" + selectedApprovalId + "/reviews", { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
-      const payload = await response.json();
+      if (!current()) return;
+      const payload = await response.json(); if (!current()) return;
       if (response.status === 401 || response.status === 403 || response.status === 503) return approvalFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "审批未保存").slice(0, 120));
       if (payload?.schemaVersion !== "COMMUNITY-APPROVAL-V1.0" || !safeApprovalMember(payload.member)) throw new Error("审批结果校验失败");
       selectedApprovalId = null; $("[data-mo-approval-detail]").innerHTML = "";
       $("[data-mo-approval-query]").value = ""; $("[data-mo-approval-status]").value = "all"; approvalPage = 1;
-      await loadApprovals();
+      const refreshed = await loadApprovals(); if (!current() || !refreshed) return;
       $("[data-mo-approval-state]").textContent = "审批已完成，已返回全部用户。";
       $("[data-mo-approval-search-form]").scrollIntoView({ behavior: "smooth", block: "start" });
       $("[data-mo-approval-query]").focus();
-    } catch (error) { state.textContent = error.message || "审批未保存"; } finally { buttons.forEach((button) => { button.disabled = false; }); }
+    } catch (error) { if (!current()) return; state.textContent = error.message || "审批未保存"; } finally { buttons.forEach((button) => { button.disabled = false; }); }
   }
   const scheduleStatusLabels = { pending: "待确认", confirmed: "已确认", completed: "已完成", cancelled: "已取消" };
   function safeScheduleSession(item) {
@@ -376,6 +414,7 @@
     $("[data-mo-schedule-list]").innerHTML = scheduleSessions.length ? '<div class="mo-schedule-list">' + scheduleSessions.map((session) => '<article class="mo-schedule-item"><div><span class="mo-badge">' + scheduleStatusLabels[session.status] + '</span><time>' + escape(session.date || "日期待定") + '</time><h3>' + escape(session.title) + '</h3><p>' + escape(session.speakers.map((speaker) => speaker.name).join("、") || "嘉宾待定") + '</p></div><button type="button" class="mo-secondary" data-mo-schedule-id="' + escape(session.id) + '">编辑</button></article>').join("") + '</div>' : '<div class="mo-empty">二期尚未创建排期。</div>';
   }
   function renderScheduleEditor(session = null) {
+    invalidateRequest("schedule-detail");
     selectedScheduleId = session?.id || null;
     const speakers = session?.speakers?.map((speaker) => speaker.name + (speaker.focus ? "｜" + speaker.focus : "")).join("\n") || "";
     $("[data-mo-schedule-editor]").innerHTML = '<form class="mo-schedule-editor" data-mo-schedule-form><header><h2>' + (session ? "编辑 " + escape(session.id) : "新增二期排期") + '</h2><button type="button" class="mo-secondary" data-mo-schedule-cancel>取消</button></header><div class="mo-schedule-fields"><label>日期<input type="date" name="date" value="' + escape(session?.date || "") + '"></label><label>状态<select name="status"><option value="pending">待确认</option><option value="confirmed">已确认</option><option value="completed">已完成</option><option value="cancelled">已取消</option></select></label><label>标题<input name="title" maxlength="120" required value="' + escape(session?.title || "") + '" placeholder="如：二期首场主题分享"></label><label>分类<input name="category" maxlength="60" value="' + escape(session?.category || "") + '" placeholder="可选"></label></div><label>嘉宾<textarea name="speakers" placeholder="每行一位：姓名｜分享方向">' + escape(speakers) + '</textarea></label><label>备注<textarea name="notes" maxlength="1000" placeholder="可选">' + escape(session?.notes || "") + '</textarea></label><div class="mo-review-actions"><button type="submit">保存排期</button></div><p class="mo-admin-state" data-mo-schedule-save-state role="status" aria-live="polite"></p></form>';
@@ -384,11 +423,13 @@
   }
   async function loadSchedule() {
     if (!adminCsrfToken) return;
+    const current = beginRequest("schedule-list");
     $("[data-mo-schedule-state]").textContent = "正在读取排期…";
     $("[data-mo-schedule-list]").innerHTML = '<div class="mo-empty">正在加载二期排期…</div>';
     try {
       const response = await fetch(endpoints.communitySchedule, { method: "GET", headers: adminHeaders(), credentials: "same-origin", cache: "no-store" });
-      const payload = await response.json();
+      if (!current()) return;
+      const payload = await response.json(); if (!current()) return;
       if (response.status === 401 || response.status === 503) return communityFailure("管理员会话已失效或社群服务未配置，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "排期暂不可用").slice(0, 120));
       if (payload?.schemaVersion !== "COMMUNITY-SCHEDULE-V1.0" || !Array.isArray(payload.seasons)) throw new Error("排期数据校验失败");
@@ -400,12 +441,15 @@
       $("[data-mo-schedule-state]").textContent = "共 " + scheduleSessions.length + " 场";
       renderScheduleList();
       if (selectedScheduleId) { const selected = scheduleSessions.find((item) => item.id === selectedScheduleId); if (selected) renderScheduleEditor(selected); }
-    } catch (error) {
+      return true;
+    } catch (error) { if (!current()) return;
       $("[data-mo-schedule-state]").textContent = error.message || "排期暂不可用";
       $("[data-mo-schedule-list]").innerHTML = '<div class="mo-empty">' + escape(error.message || "排期暂不可用") + '</div>';
     }
   }
   async function submitSchedule(form) {
+    if (!adminCsrfToken) return;
+    const current = beginRequest("schedule-detail");
     const data = new FormData(form), stateNode = $("[data-mo-schedule-save-state]"), button = form.querySelector("button[type=submit]");
     const speakers = String(data.get("speakers") || "").split(/\r?\n/).map((line) => line.trim()).filter(Boolean).map((line) => { const parts = line.split(/[｜|]/, 2); return { name: parts[0].trim(), focus: (parts[1] || "").trim() }; });
     const body = { operationId: globalThis.crypto?.randomUUID?.() || ("schedule-" + Date.now().toString(36)), date: String(data.get("date") || ""), status: String(data.get("status") || "pending"), title: String(data.get("title") || "").trim(), category: String(data.get("category") || "").trim(), notes: String(data.get("notes") || "").trim(), speakers };
@@ -414,12 +458,13 @@
     const target = endpoints.communitySchedule + "/season-2/sessions" + (selectedScheduleId ? "/" + encodeURIComponent(selectedScheduleId) : "");
     try {
       const response = await fetch(target, { method: "POST", headers: adminHeaders(true, true), credentials: "same-origin", cache: "no-store", body: JSON.stringify(body) });
-      const payload = await response.json();
+      if (!current()) return;
+      const payload = await response.json(); if (!current()) return;
       if (response.status === 401 || response.status === 403 || response.status === 503) return communityFailure("管理员会话已失效，请重新验证。", true);
       if (!response.ok) throw new Error(String(payload?.error?.message || "排期未保存").slice(0, 120));
       if (payload?.schemaVersion !== "COMMUNITY-SCHEDULE-V1.0" || !safeScheduleSession(payload.session)) throw new Error("排期结果校验失败");
-      selectedScheduleId = null; $("[data-mo-schedule-editor]").innerHTML = ""; await loadSchedule(); $("[data-mo-schedule-state]").textContent = "排期已保存。";
-    } catch (error) { stateNode.textContent = error.message || "排期未保存"; } finally { button.disabled = false; }
+      selectedScheduleId = null; $("[data-mo-schedule-editor]").innerHTML = ""; const refreshed = await loadSchedule(); if (!current() || !refreshed) return; $("[data-mo-schedule-state]").textContent = "排期已保存。";
+    } catch (error) { if (!current()) return; stateNode.textContent = error.message || "排期未保存"; } finally { button.disabled = false; }
   }
   $("[data-mo-days]").addEventListener("change", (event) => {
     const value = Number(event.target.value);
@@ -448,7 +493,7 @@
   $("[data-mo-approval-detail]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-review]"); if (!form) return; event.preventDefault(); void submitApprovalReview(form, event.submitter?.value); });
   $("[data-mo-schedule-new]").addEventListener("click", () => renderScheduleEditor());
   $("[data-mo-schedule-list]").addEventListener("click", (event) => { const button = event.target.closest("[data-mo-schedule-id]"); if (!button) return; const session = scheduleSessions.find((item) => item.id === button.dataset.moScheduleId); if (session) renderScheduleEditor(session); });
-  $("[data-mo-schedule-editor]").addEventListener("click", (event) => { if (event.target.closest("[data-mo-schedule-cancel]")) { selectedScheduleId = null; $("[data-mo-schedule-editor]").innerHTML = ""; } });
+  $("[data-mo-schedule-editor]").addEventListener("click", (event) => { if (event.target.closest("[data-mo-schedule-cancel]")) { invalidateRequest("schedule-detail"); selectedScheduleId = null; $("[data-mo-schedule-editor]").innerHTML = ""; } });
   $("[data-mo-schedule-editor]").addEventListener("submit", (event) => { const form = event.target.closest("[data-mo-schedule-form]"); if (!form) return; event.preventDefault(); void submitSchedule(form); });
   root.addEventListener("membership:open", (event) => {
     activeView = ["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token"].includes(event?.detail?.view) ? event.detail.view : "membership";
@@ -461,7 +506,9 @@
   document.addEventListener("operations:authenticated", (event) => {
     const token = String(event.detail?.csrfToken || "");
     if (token.length < 20) return;
+    resetAdminSession();
     adminCsrfToken = token; adminPage = 1; adminLoaded = false; approvalPage = 1; approvalsLoaded = false; communityPage = 1; communityLoaded = false; scheduleLoaded = false;
+    if (activeView === "membership") refresh();
     if (activeView === "membership-users") void loadAdminUsers();
     if (activeView === "membership-community") void loadCommunityMembers();
     if (activeView === "membership-approval") void loadApprovals();
@@ -478,7 +525,7 @@
   const $ = (selector) => root.querySelector(selector);
   const escape = (value) => String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
   const endpoint = "/ops/member-api/token-benefits";
-  let csrf = "", active = false, payload = null, preview = null, generation = 0, busy = false, dirty = false, editing = false;
+  let csrf = "", active = false, payload = null, preview = null, generation = 0, busy = false, dirty = false, editing = false, sessionEpoch = 0;
   const operations = new Map();
   const selected = () => $("[data-token-season]").value;
   const status = (value) => { $("[data-token-status]").textContent = value; };
@@ -501,17 +548,20 @@
     if (rules?.style) { rules.style.height = "auto"; rules.style.height = (rules.scrollHeight + rules.offsetHeight - rules.clientHeight) + "px"; }
   }
   function reset() {
+    sessionEpoch += 1; busy = false; root.removeAttribute("aria-busy");
     generation += 1; csrf = ""; payload = null; preview = null; editing = false; dirty = false; operations.clear();
     for (const name of ["content", "preview", "records", "audits"]) $("[data-token-" + name + "]").innerHTML = "";
     status("登录后可管理");
   }
   async function request(path = "", body) {
+    const epoch = sessionEpoch;
     const response = await fetch(endpoint + path, {
       method: body ? "POST" : "GET", credentials: "same-origin", cache: "no-store",
       headers: body ? { "Content-Type": "application/json", "X-CSRF-Token": csrf } : {},
       ...(body ? { body: JSON.stringify(body) } : {}),
     });
     const result = await response.json();
+    if (epoch !== sessionEpoch) throw new Error("请求所属会话已结束");
     if (response.status === 401 || response.status === 403) { reset(); throw new Error("会话或权限已变化，请重新登录"); }
     if (!response.ok) throw new Error(result.error?.message || "请求失败，请重试");
     return result;
@@ -548,13 +598,13 @@
     try {
       const result = await request();
       if (current !== generation || !csrf) return;
-      payload = result; render(); status("已读取");
+      payload = result; render(); status("已读取"); return true;
     } catch (error) { if (current === generation) status(error.message); }
   }
   async function act(action, body) {
     if (!csrf || busy) return;
     if (dirty && action !== "configure") { status("设置已修改，请先保存再预览分配"); return; }
-    const key = selected(), current = generation;
+    const key = selected(), current = generation, epoch = sessionEpoch;
     const signature = JSON.stringify({ key, action, body });
     const operationId = operations.get(signature) || globalThis.crypto.randomUUID();
     operations.set(signature, operationId);
@@ -567,9 +617,13 @@
         preview = result;
         $("[data-token-preview]").innerHTML = '<h2>分配预览</h2>' + table(result.allocations, result.config.unit) + '<p>余量：' + result.remaining + '。确认后锁定本季配置与分配名单；此操作不会实际发放。</p><button type="button" data-token-confirm>确认本季分配</button>';
         status("请核对分配名单和额度");
-      } else { if (action === "configure") editing = false; await load(); status(action === "receipt" ? "已登记发放凭据" : action === "confirm" ? "分配已锁定，尚未发放" : "设置已保存"); }
+      } else {
+        if (action === "configure") editing = false;
+        const refreshed = await load();
+        if (refreshed && epoch === sessionEpoch && selected() === key) status(action === "receipt" ? "已登记发放凭据" : action === "confirm" ? "分配已锁定，尚未发放" : "设置已保存");
+      }
     } catch (error) { if (current === generation) status(error.message); }
-    finally { busy = false; root.removeAttribute("aria-busy"); }
+    finally { if (epoch === sessionEpoch) { busy = false; root.removeAttribute("aria-busy"); } }
   }
   root.addEventListener("click", (event) => {
     if (busy) return;
@@ -628,7 +682,7 @@
     if (active && csrf) void load();
   });
   document.addEventListener("operations:authenticated", (event) => {
-    generation += 1; csrf = String(event.detail?.csrfToken || ""); if (active) void load();
+    reset(); csrf = String(event.detail?.csrfToken || ""); if (active) void load();
   });
   document.addEventListener("operations:logout", reset);
 })();

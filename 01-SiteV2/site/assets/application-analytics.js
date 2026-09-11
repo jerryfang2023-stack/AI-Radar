@@ -5,6 +5,7 @@
   const $ = (selector) => root.querySelector(selector);
   const $$ = (selector) => [...root.querySelectorAll(selector)];
   const state = { days: 7, platform: "all", started: false, requestId: 0 };
+  let loggedOut = false, activeController = null;
   const number = (value) => new Intl.NumberFormat("zh-CN").format(Number(value || 0));
   const currency = (value) => new Intl.NumberFormat("zh-CN", { style: "currency", currency: "CNY", maximumFractionDigits: 0 }).format(Number(value || 0) / 100);
   const percent = (value) => `${(Number(value || 0) * 100).toFixed(1)}%`;
@@ -98,9 +99,12 @@
     $("[data-content]").hidden = false;
   }
   async function load() {
+    if (loggedOut) return;
     state.started = true;
     const requestId = ++state.requestId;
+    activeController?.abort();
     const controller = new AbortController();
+    activeController = controller;
     const timeout = setTimeout(() => controller.abort(), 15000);
     setLoading(true);
     try {
@@ -126,5 +130,19 @@
   $("[data-platform]").addEventListener("change", (event) => { state.platform = event.target.value; load(); });
   $("[data-refresh]").addEventListener("click", load);
   root.addEventListener("analytics:open", () => { if (!state.started) load(); });
+  function clearSession() {
+    state.requestId += 1; state.started = false;
+    activeController?.abort(); activeController = null;
+    for (const name of ["kpis", "trend-chart", "funnel", "registration-failures", "top-pages", "top-content", "platforms"]) $("[data-" + name + "]").innerHTML = "";
+    $("[data-content]").hidden = true;
+    $("[data-skeleton]").hidden = true;
+    $("[data-refresh]").disabled = false;
+    $("[data-active-now]").textContent = "—";
+    $("[data-generated-at]").textContent = "";
+    $("[data-tracking-since]").textContent = "";
+    $("[data-status]").textContent = "登录后可查看";
+  }
+  document.addEventListener("operations:logout", () => { loggedOut = true; clearSession(); });
+  document.addEventListener("operations:authenticated", () => { loggedOut = false; clearSession(); if (root.classList.contains("is-active")) load(); });
   if (root.classList.contains("is-active")) load();
 })();
