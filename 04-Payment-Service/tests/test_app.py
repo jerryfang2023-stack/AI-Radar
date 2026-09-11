@@ -1084,3 +1084,32 @@ def test_native_application_is_forwarded_to_existing_member_management(client):
     assert response.status_code == 201
     assert response.get_json()["community"]["status"] == "pending"
     assert client.application.community_client.applications[0]["source"] == "miniprogram"
+
+def test_profile_save_is_authenticated_persistent_and_does_not_change_membership(client):
+    token = login(client)
+    before = client.get('/api/v1/member/me', headers=auth(token)).get_json()
+    assert client.put('/api/v1/member/profile', json={'nickname': '新昵称'}).status_code == 401
+    saved = client.put('/api/v1/member/profile', json={'nickname': '  新昵称  ', 'community_status': 'approved'}, headers=auth(token))
+    assert saved.status_code == 200
+    assert saved.get_json()['profile']['nickname'] == '新昵称'
+    after = client.get('/api/v1/member/me', headers=auth(token)).get_json()
+    assert after['profile']['nickname'] == '新昵称'
+    assert after['community'] == before['community']
+    for value in ['', ' ' * 3, '长' * 21, None, 123]:
+        assert client.put('/api/v1/member/profile', json={'nickname': value}, headers=auth(token)).status_code == 400
+    assert client.get('/api/v1/member/me', headers=auth(token)).get_json()['profile']['nickname'] == '新昵称'
+
+
+def test_approved_without_join_date_is_not_reported_as_joined(client):
+    token = login(client)
+    with sqlite3.connect(client.application.config['DATABASE_PATH']) as conn:
+        conn.execute("UPDATE users SET community_member_id=77, community_status='approved'")
+    client.application.community_client.status = lambda member_id: {'member': {'id': 77, 'name': '测试成员', 'status': 'approved', 'communityState': 'not_joined', 'joinedOn': '', 'points': 0}}
+    data = client.get('/api/v1/member/me', headers=auth(token)).get_json()
+    assert data['community']['status'] == 'not_joined'
+
+def test_phone_relogin_preserves_saved_nickname(client):
+    result = client.post('/api/v1/auth/wechat', json={'code': 'returning-member', 'phoneCode': 'phone-code'}).get_json()
+    assert client.put('/api/v1/member/profile', json={'nickname': '自定义昵称'}, headers=auth(result['token'])).status_code == 200
+    again = client.post('/api/v1/auth/wechat', json={'code': 'returning-member', 'phoneCode': 'phone-code'})
+    assert again.get_json()['profile']['nickname'] == '自定义昵称'

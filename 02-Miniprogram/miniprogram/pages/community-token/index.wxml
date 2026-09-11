@@ -12,16 +12,16 @@
           <view class="sponsor-underline" aria-hidden="true"></view>
         </view>
         <view class="pool-head"><text>{{pool.label}}激励</text><text wx:if="{{pool.status === 'draft' || pool.status === 'settled'}}" class="pool-status">{{pool.status === 'draft' ? '筹备中' : '已结算'}}</text></view>
-        <text class="pool-amount">{{pool.amount === null ? '待公布' : pool.amount}}</text>
+        <text class="pool-amount">{{poolAmount}}</text>
         <text class="pool-unit">{{pool.model ? pool.model + ' ' : ''}}{{pool.unit}}</text>
         <view class="pool-footer"><text>时间：{{startDate}}至{{endDate}}</text></view>
       </view>
       <view class="reward-heading"><text>我的奖励</text><text>{{reward.status === 'issued' ? '已发放' : reward.status === 'allocated' ? '待发放' : reward.status === 'none' ? '本季无奖励' : '待结算'}}</text></view>
       <view class="reward-row"><text>本季积分</text><text>{{myPoints}}</text></view>
-      <view class="reward-row"><text>{{reward.status === 'issued' ? '已发放' : '已分配'}} {{pool.model ? pool.model + ' ' : ''}}{{pool.unit}}</text><text>{{reward.amount === null ? '—' : reward.amount}}</text></view>
+      <view class="reward-row"><text>{{reward.status === 'issued' ? '已发放' : '已分配'}} {{pool.model ? pool.model + ' ' : ''}}{{pool.unit}}</text><text>{{rewardAmount}}</text></view>
       <view wx:if="{{issuedDate}}" class="reward-row"><text>发放日期</text><text>{{issuedDate}}</text></view>
       <button class="rules-toggle" bindtap="toggleRules">{{rulesOpen ? '▾' : '▸'}} 激励规则</button>
-      <text wx:if="{{rulesOpen}}" class="reward-rules">{{pool.rules || '激励规则待公布'}}</text>
+      <text wx:if="{{rulesOpen}}" class="reward-rules">{{poolRules || '激励规则待公布'}}</text>
     </block>
   </view>
 </view>

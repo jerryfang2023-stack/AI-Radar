@@ -68,7 +68,7 @@ function saveProfile(input) {
 }
 
 function getProfileCompletion(profile = getProfile()) {
-  return (profile.avatarUrl ? 30 : 0) + (profile.nickname ? 30 : 0) + (profile.phoneMasked ? 40 : 0);
+  return (profile.avatarUrl && profile.avatarUrl !== "/assets/brand/app-icon-light.svg" ? 30 : 0) + (profile.nickname && profile.nickname !== "观澜用户" ? 30 : 0) + (profile.phoneMasked ? 40 : 0);
 }
 
 function getHistory() {

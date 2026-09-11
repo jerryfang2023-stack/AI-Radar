@@ -3,10 +3,11 @@ const { requireCommunityMember } = require("../../utils/community-access.js");
 const { communityRequest } = require("../../utils/payment.js");
 const { readCommunityPage } = require("../../utils/community-loading.js");
 
+const formatAmount = (value, fallback) => value == null ? fallback : String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 const displayDate = (value) => value ? value.replace(/-0(\d)/g, "-$1") : "待定";
 
 Page({
-  data: { pool: null, reward: null, startDate: "待定", endDate: "待定", myPoints: 0, rulesOpen: true, loaded: false, error: "", experience: false },
+  data: { pool: null, reward: null, poolRules: "", poolAmount: "待公布", rewardAmount: "—", startDate: "待定", endDate: "待定", myPoints: 0, rulesOpen: true, loaded: false, error: "", experience: false },
   onLoad() {
     if (!requireCommunityMember()) return;
     this.setData({ experience: Boolean(readExperience()) });
@@ -19,7 +20,7 @@ Page({
       return Promise.resolve();
     }
     return readCommunityPage(this, async () => {
-      const apply = (result) => this.setData({ ...result, loaded: true, startDate: displayDate(result.pool.start), endDate: displayDate(result.pool.end), issuedDate: result.reward.issuedAt.slice(0, 10) });
+      const apply = (result) => this.setData({ ...result, poolRules: result.pool.amount >= 1000 ? String(result.pool.rules || "").replace(new RegExp("\\b" + result.pool.amount + "\\b", "g"), formatAmount(result.pool.amount, "待公布")) : result.pool.rules, poolAmount: formatAmount(result.pool.amount, "待公布"), rewardAmount: formatAmount(result.reward.amount, "—"), loaded: true, startDate: displayDate(result.pool.start), endDate: displayDate(result.pool.end), issuedDate: result.reward.issuedAt.slice(0, 10) });
       apply(await communityRequest("token-benefits", { force: Boolean(options.force), onCached: apply }));
     }, () => this.setData({ pool: null, reward: null, myPoints: 0 }));
   },

@@ -1,8 +1,8 @@
-const { getProfile, saveProfile, getProfileCompletion } = require("../../utils/member.js");
-const { bindPhoneNumber, fetchMembership } = require("../../utils/payment.js");
+const { getProfile, saveProfile, getProfileCompletion, syncCommunity } = require("../../utils/member.js");
+const { bindPhoneNumber, fetchMembership, updateProfile } = require("../../utils/payment.js");
 
 Page({
-  data: { profile: {}, nickname: "", profileCompletion: 0, bindingPhone: false },
+  data: { profile: {}, nickname: "", profileCompletion: 0, bindingPhone: false, saving: false },
 
   onShow() {
     this.refreshProfile();
@@ -11,16 +11,18 @@ Page({
 
   refreshProfile() {
     const profile = getProfile();
-    this.setData({ profile, nickname: profile.nickname, profileCompletion: getProfileCompletion(profile) });
+    this.setData({ profile, nickname: this._nicknameDirty ? this.data.nickname : profile.nickname, profileCompletion: getProfileCompletion(profile) });
   },
 
   async loadRemoteProfile() {
     try {
       const result = await fetchMembership();
-      if (result.profile?.phoneMasked) {
-        saveProfile({ phoneMasked: result.profile.phoneMasked, phonePending: false });
-        this.refreshProfile();
+      if (result.community) syncCommunity(result.community);
+      if (!this._nicknameDirty && !this.data.saving && result.profile?.nickname) {
+        saveProfile({ nickname: result.profile.nickname });
       }
+      if (result.profile?.phoneMasked) saveProfile({ phoneMasked: result.profile.phoneMasked, phonePending: false });
+      this.refreshProfile();
     } catch (error) {
       // Keep locally saved public profile available when the network is unavailable.
     }
@@ -39,17 +41,26 @@ Page({
     });
   },
 
-  inputNickname(event) { this.setData({ nickname: event.detail.value }); },
+  inputNickname(event) { this._nicknameDirty = true; this.setData({ nickname: event.detail.value }); },
 
-  saveNickname() {
-    const nickname = this.data.nickname.trim();
+  async saveNickname(event = {}) {
+    if (this.data.saving) return;
+    const nickname = String(event.detail?.value?.nickname ?? this.data.nickname).trim();
     if (!nickname) {
       wx.showToast({ title: "请输入昵称", icon: "none" });
       return;
     }
-    saveProfile({ nickname });
-    this.refreshProfile();
-    wx.showToast({ title: "资料已保存", icon: "success" });
+    this._nicknameDirty = true;
+    this.setData({ saving: true, nickname });
+    try {
+      const result = await updateProfile(nickname);
+      if (result.profile?.nickname !== nickname) throw new Error("保存结果未确认，请重试");
+      saveProfile({ nickname });
+      this.refreshProfile();
+      wx.showToast({ title: "资料已保存", icon: "success" });
+    } catch (error) {
+      wx.showToast({ title: error.message || "资料未保存，请重试", icon: "none" });
+    } finally { this.setData({ saving: false }); }
   },
 
   async getPhoneNumber(event) {

@@ -340,11 +340,17 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
     def wallet(row):
         return {"balance": int(row["point_balance"] or 0), "lifetime": int(row["point_lifetime"] or 0)}
 
+    def remote_community_status(member, fallback="pending"):
+        state = member.get("communityState")
+        if state in {"not_joined", "eliminated"}:
+            return state
+        return member.get("status") or fallback
+
     def community_snapshot(row):
         raw_status = row["community_status"] or "none"
         status = "joined" if raw_status == "approved" else raw_status
         labels = {
-            "joined": "已入群", "pending": "审核中", "candidate": "候补",
+            "not_joined": "待登记入群", "joined": "已入群", "pending": "审核中", "candidate": "候补",
             "rejected": "暂未通过", "claim_pending": "资料认领审核中",
             "claim_rejected": "资料认领未通过", "eliminated": "已淘汰", "none": "未入群",
         }
@@ -522,7 +528,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 "UPDATE users SET community_member_id=?, community_name=?, community_status=?, updated_at=? WHERE id=?",
                 (
                     member["id"], member.get("name") or user["nickname"] or "",
-                    member.get("status") or "approved", iso(utcnow()), user["id"],
+                    remote_community_status(member, "approved"), iso(utcnow()), user["id"],
                 ),
             )
             user = user_by_id(conn, user["id"])
@@ -1233,10 +1239,10 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                         conn.execute(
                             """UPDATE users SET phone_hash=?, phone_masked=?, phone_bound_at=?,
                                community_member_id=?, community_name=?, community_status=?,
-                               nickname=COALESCE(NULLIF(?, ''), nickname), updated_at=? WHERE id=?""",
+                               nickname=CASE WHEN COALESCE(nickname, '') IN ('', '观澜用户') THEN COALESCE(NULLIF(?, ''), nickname) ELSE nickname END, updated_at=? WHERE id=?""",
                             (
                                 digest, masked, iso(now), community_member.get("id"), community_member.get("name") or "",
-                                community_member.get("status") or "none", (community_member.get("name") or "")[:20],
+                                remote_community_status(community_member, "none"), (community_member.get("name") or "")[:20],
                                 iso(now), user["id"],
                             ),
                         )
@@ -1286,7 +1292,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 member = remote.get("member") or {}
                 conn.execute(
                     "UPDATE users SET community_name=?, community_status=?, updated_at=? WHERE id=?",
-                    (member.get("name") or user["community_name"], member.get("status") or user["community_status"], iso(utcnow()), user["id"]),
+                    (member.get("name") or user["community_name"], remote_community_status(member, user["community_status"]), iso(utcnow()), user["id"]),
                 )
                 user = grant_community_access(conn, user_by_id(conn, user["id"]), member)
                 import_community_points(conn, user, member)
@@ -1302,6 +1308,19 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 community=community_snapshot(user),
                 wallet=wallet(user),
             )
+
+    @app.put("/api/v1/member/profile")
+    @auth_required
+    def update_member_profile():
+        payload = request.get_json(silent=True)
+        nickname = payload.get("nickname") if isinstance(payload, dict) else None
+        if not isinstance(nickname, str) or not 1 <= len(nickname.strip()) <= 20:
+            return jsonify(error={"code": "INVALID_NICKNAME", "message": "请填写 1–20 字的昵称"}), 400
+        with closing(db()) as conn:
+            conn.execute("UPDATE users SET nickname=?, updated_at=? WHERE id=?",
+                         (nickname.strip(), iso(utcnow()), g.user_id))
+            conn.commit()
+            return jsonify(profile=public_profile(user_by_id(conn, g.user_id)))
 
     @app.post("/api/v1/member/behaviors")
     @auth_required
@@ -1409,7 +1428,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
             if member:
                 conn.execute(
                     "UPDATE users SET community_member_id=?, community_name=?, community_status=?, updated_at=? WHERE id=?",
-                    (member["id"], member.get("name") or "", member.get("status") or "pending", iso(utcnow()), user["id"]),
+                    (member["id"], member.get("name") or "", remote_community_status(member), iso(utcnow()), user["id"]),
                 )
                 user = user_by_id(conn, g.user_id)
                 user = grant_community_access(conn, user, member)
@@ -1448,13 +1467,13 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         with closing(db()) as conn:
             conn.execute(
                 "UPDATE users SET community_member_id=?, community_name=?, community_status=?, updated_at=? WHERE id=?",
-                (member.get("id"), member.get("name") or cleaned["name"], member.get("status") or "pending", iso(utcnow()), g.user_id),
+                (member.get("id"), member.get("name") or cleaned["name"], remote_community_status(member), iso(utcnow()), g.user_id),
             )
             record_system_analytics(
                 conn,
                 "community_application_submitted",
                 g.user_id,
-                {"status": member.get("status") or "pending"},
+                {"status": remote_community_status(member)},
                 event_key=f"application:{member.get('id') or g.user_id}:{datetime.now(timezone.utc).date().isoformat()}",
             )
             conn.commit()

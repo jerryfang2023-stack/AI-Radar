@@ -180,6 +180,10 @@ async function purchaseMembership(planId) {
   return result;
 }
 
+async function updateProfile(nickname) {
+  return withExistingToken((token) => apiRequest("/member/profile", { method: "PUT", token, data: { nickname } }));
+}
+
 async function fetchMembership() {
   return withExistingToken((token) => apiRequest("/member/me", { token }));
 }
@@ -306,6 +310,7 @@ module.exports = {
   login,
   hasAuthToken,
   fetchMembership,
+  updateProfile,
   communityRequest,
   prefetchCommunity,
   clearCommunityCache,

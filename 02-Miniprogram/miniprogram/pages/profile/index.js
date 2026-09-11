@@ -1,6 +1,7 @@
 const { getWatchIds } = require("../../utils/storage.js");
 const {
   getProfile,
+  saveProfile,
   getProfileCompletion,
   getHistory,
   getFollowIds,
@@ -57,6 +58,8 @@ Page({
     try {
       await syncBehaviorQueue();
       const result = await fetchMembership();
+      if (result.profile?.nickname) saveProfile({ nickname: result.profile.nickname });
+      this.setData({ profile: getProfile(), profileCompletion: getProfileCompletion() });
       if (result.membership) syncMembership(result.membership);
       if (result.wallet) syncWallet(result.wallet);
       if (result.community) syncCommunity(result.community);

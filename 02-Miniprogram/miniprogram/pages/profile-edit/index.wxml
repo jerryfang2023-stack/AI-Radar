@@ -10,6 +10,7 @@
     </view>
 
     <view class="section-title serif">资料设置</view>
+    <form bindsubmit="saveNickname">
     <view class="form-card paper-card">
       <view class="profile-row avatar-field">
         <view class="field-copy"><text class="field-label">头像</text><text class="field-note">点击头像更换</text></view>
@@ -18,7 +19,7 @@
 
       <view class="profile-row nickname-field">
         <text class="field-label">昵称</text>
-        <input type="nickname" value="{{nickname}}" maxlength="20" placeholder="请输入昵称" bindinput="inputNickname" />
+        <input name="nickname" type="nickname" disabled="{{saving}}" value="{{nickname}}" maxlength="20" placeholder="请输入昵称" bindinput="inputNickname" bindblur="inputNickname" />
       </view>
 
       <view class="profile-row phone-field">
@@ -27,6 +28,7 @@
       </view>
     </view>
 
-    <button class="primary-button save-button" bindtap="saveNickname">保存资料</button>
+    <button class="primary-button save-button" form-type="submit" loading="{{saving}}" disabled="{{saving}}">保存资料</button>
+    </form>
   </view>
 </view>
