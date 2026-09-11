@@ -1,6 +1,8 @@
 # Guanlan Funding Mini Program
 
-Current source and verified uploaded development release: 0.9.9 adds server-persisted nickname editing, consistent community lifecycle checks and Token amount grouping. Upload and service deployment evidence is tracked in `docs/releases/0.9.9/README.md`. Upload is not review submission or production publication.
+Current source: 0.9.10 fixes delayed cross-identity responses, old-token expiry handling, and community cache isolation. Release evidence is tracked in `docs/releases/0.9.10/README.md`.
+
+Previous verified development upload: 0.9.9. Its immutable upload and service deployment evidence remains in `docs/releases/0.9.9/README.md`.
 
 Previous verified uploaded development release: 0.9.8 improves the Token sponsor placement and gold plaque styling. Upload evidence is recorded in `docs/releases/0.9.8/README.md`. Upload is not review submission or production publication.
 

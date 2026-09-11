@@ -391,9 +391,8 @@ test("periodic reports tolerate slower cloud generation and expose failed child 
 test("Codex repair runs from a clean isolated worktree", () => {
   const repair = read("run-codex-self-repair.mjs");
   assert.match(repair, /\["worktree", "add", "-b", branch, repairRoot, "origin\/main"\]/u);
-  assert.match(repair, /--cd "\$\{repairWorktree\.path\}"/u);
-  assert.match(repair, /enforceRepairWorktree\(parseArgList/u);
-  assert.match(repair, /`--ask-for-approval never exec --sandbox danger-full-access/u);
+  assert.match(repair, /defaultRepairArgs\(repairWorktree\.path, codexLastMessagePath\)/u);
+  assert.match(repair, /enforceRepairWorktree\(args\.has\("codex-args"\) \? parseArgList\(args\.get\("codex-args"\)\) : defaultCodexArgs, repairWorktree\.path\)/u);
   assert.doesNotMatch(repair, /`exec [^`]*--ask-for-approval/u);
   assert.doesNotMatch(repair, /--allow-dirty/u);
 });

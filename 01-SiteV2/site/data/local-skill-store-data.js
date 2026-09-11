@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-09-12 00:24:44",
+    "generatedAt": "2026-09-12 00:38:36",
     "generatedDate": "2026-09-12",
     "storeDir": ".skill-store",
     "projectSkillDir": "agent-workflow/skills",
@@ -3322,8 +3322,8 @@ window.WaveSightLocalSkillStore = {
       "usage_count": 0,
       "sizeKB": 16,
       "fileCount": 8,
-      "modifiedAt": "2026-09-11 23:40:42",
-      "modifiedTime": 1789141242281.416,
+      "modifiedAt": "2026-09-12 00:35:27",
+      "modifiedTime": 1789144527030.09,
       "issueCount": 1,
       "issueSeverity": "high",
       "issues": [
@@ -4500,8 +4500,8 @@ window.WaveSightLocalSkillStore = {
       "lifecycle": "candidate",
       "installedAt": "2026-05-08 13:28:44",
       "installedTime": 1778218124935.943,
-      "last_used": "2026-09-10",
-      "usage_count": 143,
+      "last_used": "2026-09-11",
+      "usage_count": 145,
       "sizeKB": 21,
       "fileCount": 1,
       "modifiedAt": "2026-07-26 10:56:48",
