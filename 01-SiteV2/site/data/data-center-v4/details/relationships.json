@@ -5,13 +5,83 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-10T01:19:06.918Z",
-    "latestDataDate": "2026-09-10",
-    "currentDate": "2026-09-10",
-    "eventCount": 2795,
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
     "quarantinedEventCount": 25
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-e99568fa8c6340dd",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-291060fb79c45357",
+      "claim_refs": [
+        "CL-f98dcddd729d41b2",
+        "CL-ab2e36a99410980b",
+        "CL-68e7bf88b6d159df",
+        "CL-91329a894d29f558"
+      ],
+      "source_refs": [
+        "SA-639fc4b120590721"
+      ],
+      "data_date": "2026-09-11",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "ChatGPT",
+      "predicateLabel": "发布",
+      "title": "OpenAI 发布 ChatGPT",
+      "eventTitle": "OpenAI 推出 ChatGPT for Financial Services：集成 GPT-6 Astra，内置金融数据与细粒度引用",
+      "eventDate": "2026-09-11",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-f98dcddd729d41b2",
+          "subject": "OpenAI",
+          "object": "ChatGPT for Financial Services：集成 GPT-6 Astra，内置金融数据与细粒度引用",
+          "quote": "OpenAI 推出金融服务版 ChatGPT：集成 GPT-6 Astra 内置金融数据与细粒度引用，支持估值模型与研究报告 - IT之家"
+        },
+        {
+          "id": "CL-ab2e36a99410980b",
+          "subject": "OpenAI",
+          "object": "ChatGPT for Financial Services：集成 GPT-6 Astra，内置金融数据与细粒度引用",
+          "quote": "OpenAI 推出金融服务版 ChatGPT：集成 GPT-6 Astra 内置金融数据与细粒度引用，支持估值模型与研究报告"
+        },
+        {
+          "id": "CL-68e7bf88b6d159df",
+          "subject": "OpenAI",
+          "object": "ChatGPT for Financial Services：集成 GPT-6 Astra，内置金融数据与细粒度引用",
+          "quote": "IT之家 9 月 11 日消息，OpenAI 于当地时间 9 月 10 日宣布推出 ChatGPT for Financial Services。"
+        },
+        {
+          "id": "CL-91329a894d29f558",
+          "subject": "OpenAI",
+          "object": "ChatGPT for Financial Services：集成 GPT-6 Astra，内置金融数据与细粒度引用",
+          "quote": "这是一款面向金融服务团队的定制化 ChatGPT 服务，结合内置金融数据与 GPT-6 Astra 推理能力，旨在帮助金融团队开展研究、财务建模并制作定制客户材料。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-639fc4b120590721",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/1/001/063.htm"
+        }
+      ],
+      "sourceExcerpt": "OpenAI 推出金融服务版 ChatGPT：集成 GPT-6 Astra 内置金融数据与细粒度引用，支持估值模型与研究报告 - IT之家",
+      "event": {
+        "id": "EV-291060fb79c45357",
+        "title": "OpenAI 推出 ChatGPT for Financial Services：集成 GPT-6 Astra，内置金融数据与细粒度引用",
+        "originalTitle": "",
+        "date": "2026-09-11",
+        "dataDate": "2026-09-11",
+        "eventTypeLabel": "产品发布"
+      }
+    },
     {
       "relationship_id": "REL2-047306f993a722b4",
       "relationship_version": "RELATION-V2.1",

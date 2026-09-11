@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-10T01:19:06.918Z",
-    "latestDataDate": "2026-09-10",
-    "currentDate": "2026-09-10",
-    "eventCount": 2795,
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
     "quarantinedEventCount": 25
   },
   "entity": {
@@ -22,13 +22,14 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-4809eb76696a9e61"
+      "EV-4809eb76696a9e61",
+      "EV-84bd528b36f55b00"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-11",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -39,9 +40,39 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-84bd528b36f55b00"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-84bd528b36f55b00",
+        "dataDate": "2026-09-11",
+        "date": "2026-09-11",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 智能体新闻——2026年9月11日当周（每日更新）AI 智能体新闻——2026年9月11日当周",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-49f756463ad9dcfb"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-49f756463ad9dcfb",
+          "EN-a7ca8eb528225191"
+        ]
+      },
       {
         "id": "EV-4809eb76696a9e61",
         "dataDate": "2026-09-04",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-10T01:19:06.918Z",
-    "latestDataDate": "2026-09-10",
-    "currentDate": "2026-09-10",
-    "eventCount": 2795,
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
     "quarantinedEventCount": 25
   },
   "node": {
@@ -18,9 +18,9 @@
     "typeLabel": "应用场景",
     "valueId": "security_operations",
     "eventIds": [
+      "EV-b9d8b3582f12bdc7",
       "EV-6d6715223e80e7a6",
       "EV-f0a666f5416e049f",
-      "EV-b9d8b3582f12bdc7",
       "EV-8ad153b984ba8729",
       "EV-75452672c9976d73",
       "EV-33053abbe1a60b38",
@@ -126,9 +126,9 @@
       "EV-dbda21182e61923b"
     ],
     "entityIds": [
+      "EN-9fe430e5274621be",
       "EN-4b6cef91ffb05303",
       "EN-befd0093486b775d",
-      "EN-9fe430e5274621be",
       "EN-647aebd730e6d6b2",
       "EN-c0b0109d9439de57",
       "EN-c5f011f1169120f2",
@@ -196,9 +196,327 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-04-16",
-    "lastSeen": "2026-09-10"
+    "lastSeen": "2026-09-11"
   },
   "events": [
+    {
+      "id": "EV-b9d8b3582f12bdc7",
+      "dataDate": "2026-09-11",
+      "date": "2026-09-09",
+      "updatedDate": "2026-09-11",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "企业 AI 智能体融资五个月内激增至 4.35 亿美元",
+      "originalTitle": "Enterprise AI Agent Funding Surges to $435M in Five Months",
+      "subject": "AIR",
+      "action": "funding",
+      "object": "$50 million seed funding",
+      "metrics": [
+        "$50 million",
+        "$10 million",
+        "$40 million",
+        "$125 million",
+        "$140 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1e3e8fd3808adfe2",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "observability_evaluation",
+            "name": "可观测与评估",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0c8f8adbb7bf20a2",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "ai_observability_governance",
+            "name": "AI 可观测与治理",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-af842000e2e84c50",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f123e6d0b84c2af0",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-145c6d8c5996e867",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-15d54f5bfc3e1478",
+            "fundingInsightId": "FI-88967eae3befde75"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bd9d111b6cde741c",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "ai_observability_governance",
+          "name": "AI 可观测与治理",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af842000e2e84c50",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1e3e8fd3808adfe2",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0c8f8adbb7bf20a2",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f123e6d0b84c2af0",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-15d54f5bfc3e1478",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bd9d111b6cde741c",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-145c6d8c5996e867",
+          "fundingInsightId": "FI-88967eae3befde75"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1e3e8fd3808adfe2",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0c8f8adbb7bf20a2",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "ai_observability_governance",
+          "name": "AI 可观测与治理",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af842000e2e84c50",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f123e6d0b84c2af0",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-145c6d8c5996e867",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-15d54f5bfc3e1478",
+          "fundingInsightId": "FI-88967eae3befde75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-9fe430e5274621be"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bd9d111b6cde741c",
+          "fundingInsightId": "FI-88967eae3befde75"
+        }
+      ],
+      "entityIds": [
+        "EN-9fe430e5274621be",
+        "EN-92e68fb6a46d9f88",
+        "EN-d5dee8daa2eb5cc5",
+        "EN-80d387ccb3289295",
+        "EN-2bd806c97f0e00af"
+      ],
+      "entityNames": [
+        "AIR",
+        "In August",
+        "Zenity",
+        "SoftBank",
+        "Alice"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/enterprise-ai-agent-funding-surges-093104627.html",
+      "publisher": "finance.yahoo.com"
+    },
     {
       "id": "EV-6d6715223e80e7a6",
       "dataDate": "2026-09-10",
@@ -779,349 +1097,6 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments",
-      "publisher": "TechCrunch：AI（RSS）"
-    },
-    {
-      "id": "EV-b9d8b3582f12bdc7",
-      "dataDate": "2026-09-02",
-      "date": "2026-09-01",
-      "updatedDate": "2026-09-02",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
-      "originalTitle": "",
-      "subject": "AI 安全初创公司 AIR 出手隐身并",
-      "action": "融资",
-      "object": "5000 万美元，为企业审查 AI 智能体所用技能和插件",
-      "metrics": [
-        "$50M",
-        "$50 million",
-        "$10 million",
-        "$40 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "infrastructure_compute",
-            "name": "基础设施与算力",
-            "entityIds": [
-              "EN-9fe430e5274621be"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-1e3e8fd3808adfe2",
-            "fundingInsightId": "FI-88967eae3befde75"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "observability_evaluation",
-            "name": "可观测与评估",
-            "entityIds": [
-              "EN-9fe430e5274621be"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-0c8f8adbb7bf20a2",
-            "fundingInsightId": "FI-88967eae3befde75"
-          }
-        ],
-        "ai_market_application": [
-          {
-            "dimensionId": "ai_market_application",
-            "dimensionName": "AI 市场细分",
-            "id": "ai_observability_governance",
-            "name": "AI 可观测与治理",
-            "entityIds": [
-              "EN-9fe430e5274621be"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-af842000e2e84c50",
-            "fundingInsightId": "FI-88967eae3befde75"
-          }
-        ],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "security_software",
-            "name": "安全软件",
-            "entityIds": [
-              "EN-9fe430e5274621be"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-f123e6d0b84c2af0",
-            "fundingInsightId": "FI-88967eae3befde75"
-          }
-        ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "security_operations",
-            "name": "安全运营",
-            "entityIds": [
-              "EN-9fe430e5274621be"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-145c6d8c5996e867",
-            "fundingInsightId": "FI-88967eae3befde75"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-9fe430e5274621be"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-15d54f5bfc3e1478",
-            "fundingInsightId": "FI-88967eae3befde75"
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "developer",
-            "name": "开发者",
-            "entityIds": [
-              "EN-9fe430e5274621be"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-bd9d111b6cde741c",
-            "fundingInsightId": "FI-88967eae3befde75"
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "ai_observability_governance",
-          "name": "AI 可观测与治理",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-af842000e2e84c50",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-1e3e8fd3808adfe2",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "observability_evaluation",
-          "name": "可观测与评估",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-0c8f8adbb7bf20a2",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "security_software",
-          "name": "安全软件",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-f123e6d0b84c2af0",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-15d54f5bfc3e1478",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-bd9d111b6cde741c",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-145c6d8c5996e867",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-1e3e8fd3808adfe2",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "observability_evaluation",
-          "name": "可观测与评估",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-0c8f8adbb7bf20a2",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "ai_observability_governance",
-          "name": "AI 可观测与治理",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-af842000e2e84c50",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "security_software",
-          "name": "安全软件",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-f123e6d0b84c2af0",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "security_operations",
-          "name": "安全运营",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-145c6d8c5996e867",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-15d54f5bfc3e1478",
-          "fundingInsightId": "FI-88967eae3befde75"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-9fe430e5274621be"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-bd9d111b6cde741c",
-          "fundingInsightId": "FI-88967eae3befde75"
-        }
-      ],
-      "entityIds": [
-        "EN-9fe430e5274621be"
-      ],
-      "entityNames": [
-        "AIR"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
       "publisher": "TechCrunch：AI（RSS）"
     },
     {
@@ -15468,17 +15443,23 @@
         {
           "name": "NeMo Switchyard",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "Nemotron 3.5 Lightning",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "MoE",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/08/11/nvidia-ai-releases-nemotron-3-5-lightning-and-nemo-switchyard",
@@ -21044,6 +21025,33 @@
   ],
   "entities": [
     {
+      "id": "EN-9fe430e5274621be",
+      "name": "AIR",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b9d8b3582f12bdc7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-ai_market_application-ai_observability_governance",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-security_operations"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-09",
+      "lastSeen": "2026-09-11"
+    },
+    {
       "id": "EN-4b6cef91ffb05303",
       "name": "Cognition AI",
       "entityType": "organization_candidate",
@@ -21058,11 +21066,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-developer",
+        "TX-use_case-security_operations",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-software_development_coding",
         "TX-product_form-end_user_application",
-        "TX-target_user-developer",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -21084,45 +21092,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-ai_market_subcategory-observability_evaluation",
-        "TX-ai_market_application-model_agent_security",
-        "TX-product_form-security_software"
+        "TX-ai_market_application-model_agent_security"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-02",
       "lastSeen": "2026-09-03"
-    },
-    {
-      "id": "EN-9fe430e5274621be",
-      "name": "AIR",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b9d8b3582f12bdc7"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-target_user-developer",
-        "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-ai_market_application-ai_observability_governance",
-        "TX-ai_market_subcategory-observability_evaluation",
-        "TX-product_form-security_software",
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-01",
-      "lastSeen": "2026-09-02"
     },
     {
       "id": "EN-647aebd730e6d6b2",
@@ -21139,15 +21119,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
+        "TX-product_form-end_user_application",
         "TX-use_case-software_development",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
-        "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-model_agent_security"
       ],
       "relatedEntityIds": [],
@@ -21171,13 +21151,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-observability_evaluation",
-        "TX-ai_market_application-model_agent_security",
-        "TX-product_form-security_software"
+        "TX-ai_market_application-model_agent_security"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-03",
@@ -21198,14 +21178,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-industry-professional_services",
-        "TX-ai_market_subcategory-observability_evaluation",
-        "TX-ai_market_application-model_agent_security",
-        "TX-product_form-security_software"
+        "TX-ai_market_application-model_agent_security"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-13",
@@ -21226,10 +21206,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-ai_observability_governance",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -21237,8 +21219,6 @@
         "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_application-ai_observability_governance",
-        "TX-ai_market_subcategory-observability_evaluation",
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-industry-automotive_transportation",
@@ -21271,10 +21251,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
-        "TX-use_case-security_operations",
-        "TX-target_user-business_user",
         "TX-product_form-security_software",
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations",
+        "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-cyber_physical_security"
       ],
       "relatedEntityIds": [],
@@ -21296,12 +21276,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-ai_market_subcategory-observability_evaluation",
-        "TX-ai_market_application-model_agent_security",
         "TX-product_form-security_software",
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations",
+        "TX-ai_market_application-model_agent_security",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
@@ -21323,12 +21303,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-ai_market_subcategory-observability_evaluation",
-        "TX-ai_market_application-model_agent_security",
         "TX-product_form-security_software",
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations",
+        "TX-ai_market_application-model_agent_security",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
@@ -21350,13 +21330,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-ai_market_subcategory-observability_evaluation",
-        "TX-ai_market_application-model_agent_security",
-        "TX-product_form-security_software"
+        "TX-ai_market_application-model_agent_security"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
@@ -21377,12 +21357,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-ai_market_application-ai_observability_governance",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-observability_evaluation",
-        "TX-product_form-security_software"
+        "TX-product_form-security_software",
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
@@ -21403,10 +21383,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-business_user",
+        "TX-use_case-security_operations",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-use_case-productivity_enterprise_workflows",
@@ -21435,8 +21415,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
         "TX-target_user-business_user",
+        "TX-use_case-security_operations",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
@@ -21463,13 +21443,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-ai_market_subcategory-observability_evaluation",
-        "TX-ai_market_application-model_agent_security",
-        "TX-product_form-security_software"
+        "TX-ai_market_application-model_agent_security"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-03",
@@ -21490,13 +21470,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
-        "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-ai_market_application-ai_observability_governance",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-product_form-security_software",
+        "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-security_operations",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
@@ -21543,10 +21523,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-ai_observability_governance",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -21554,8 +21536,6 @@
         "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_application-ai_observability_governance",
-        "TX-ai_market_subcategory-observability_evaluation",
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-technology-agentic_execution",
@@ -21589,9 +21569,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
-        "TX-use_case-security_operations",
         "TX-target_user-business_user",
+        "TX-use_case-security_operations",
+        "TX-ai_market_category-enterprise_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_subcategory-sales",
         "TX-use_case-sales"
@@ -21615,12 +21595,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -21629,8 +21609,8 @@
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-product_form-ai_infrastructure_software",
-        "TX-technology-agentic_execution",
         "TX-ai_market_application-ai_development_orchestration",
+        "TX-technology-agentic_execution",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
@@ -21661,12 +21641,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-ai_observability_governance",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-ai_market_application-ai_observability_governance",
-        "TX-ai_market_subcategory-observability_evaluation",
         "TX-product_form-ai_infrastructure_software",
         "TX-technology-agentic_execution"
       ],
@@ -21689,13 +21669,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-industry-financial_services",
-        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_application-ai_observability_governance",
-        "TX-ai_market_subcategory-observability_evaluation"
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-22",
@@ -21718,14 +21698,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-industry-professional_services",
-        "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-model_agent_security",
-        "TX-product_form-security_software",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
@@ -21750,14 +21730,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-ai_observability_governance",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-ai_market_application-ai_observability_governance",
-        "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-model_agent_security",
-        "TX-product_form-security_software",
         "TX-product_form-ai_infrastructure_software"
       ],
       "relatedEntityIds": [],
@@ -21779,13 +21759,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
-        "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-ai_market_application-ai_observability_governance",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-product_form-security_software",
+        "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-security_operations",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
@@ -21807,15 +21787,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-industry-financial_services",
         "TX-industry-professional_services",
-        "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-model_agent_security",
-        "TX-product_form-security_software",
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce"
       ],
@@ -21838,10 +21818,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-security_software",
+        "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-product_form-end_user_application",
-        "TX-use_case-security_operations",
-        "TX-product_form-security_software",
         "TX-deployment_model-on_premise"
       ],
       "relatedEntityIds": [],
@@ -21863,15 +21843,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
-        "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-model_agent_security",
-        "TX-product_form-security_software",
         "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
@@ -21980,6 +21960,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-87f31c71f040785a",
         "EV-4965305d57edf6dd",
         "EV-636b45c518ae1313",
         "EV-61b1ddeb1e7b7043",
@@ -22038,8 +22019,16 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-0257ad33a3edf7c0",
+        "EV-157047393912dde3",
+        "EV-1938f1caa0e15759",
+        "EV-291060fb79c45357",
+        "EV-327ecd23437d5fda",
+        "EV-3e971b2db5569c2e",
+        "EV-b2573b146a89c48a",
+        "EV-c74cc1e3155a00c9",
+        "EV-c7da4a53cf54f922",
         "EV-1372037e191a9587",
+        "EV-0257ad33a3edf7c0",
         "EV-4f3ba2aed6b31d76",
         "EV-5a54bc68b3b6ab9a",
         "EV-1c240446b94d16b1",
@@ -22281,6 +22270,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-cd94cdad9b5c8089",
+        "EV-2838858a4f49478f",
         "EV-8025c0adfe709adf",
         "EV-5d530dd36f82d830",
         "EV-99538bb71ba99fc9",
@@ -22386,13 +22377,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
-        "TX-use_case-security_operations",
         "TX-use_case-software_development",
-        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
+        "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-professional_services",
@@ -22420,13 +22412,14 @@
         "TX-technology-long_context",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207",
         "EN-968e2d5b08687bf4",
         "EN-6a50fbf0b970c03a",
         "EN-3a7bd3e2360a3d29",
-        "EN-d1ad14d4ad57d207",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
@@ -22450,7 +22443,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "EN-449777124b1466a8",
@@ -22570,6 +22563,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-c74cc1e3155a00c9",
         "EV-aa5114540046f2c0",
         "EV-83dfc99666955c16",
         "EV-8232ad0075a77b7a",
@@ -22780,6 +22774,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-c44f8fbab9e200ca",
         "EV-621b257277382475",
         "EV-66ea621d508a975c",
         "EV-fdc3211527e41bf6",
@@ -22878,14 +22873,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-ai_market_application-models",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -22943,7 +22938,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -23027,6 +23022,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-de84ab7fa36a7839",
         "EV-80775a8178f39aa5",
         "EV-3ad9a2bb87c407dd",
         "EV-8321e5cd7d423d62",
@@ -23056,6 +23052,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-41df51972f9b3a4a",
         "EV-f01a13953fa7aaaa",
         "EV-dc7ca88afc22099a",
         "EV-ba091f86fba39da0",
@@ -23166,6 +23163,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-5353e265750f02a1",
+        "EV-76c8a600380d988c",
         "EV-20571b175944604c",
         "EV-bef842eacf8b7aad",
         "EV-c06d008e73a0d337",
@@ -23193,14 +23192,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-ai_market_application-models",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
@@ -23275,7 +23274,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "EN-22152786a70738a1",
@@ -23292,8 +23291,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-use_case-security_operations"
+        "TX-use_case-security_operations",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-15",
@@ -23334,8 +23333,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
@@ -23393,8 +23392,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [],
@@ -23470,8 +23469,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-media_entertainment",
@@ -23554,8 +23553,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-technology-long_context"
       ],
@@ -23773,9 +23772,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-use_case-security_operations",
         "TX-target_user-business_user",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-data_analysis",
         "TX-industry-manufacturing",
         "TX-target_user-consumer",
@@ -24088,13 +24087,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-product_form-end_user_application",
-        "TX-target_user-developer",
-        "TX-use_case-security_operations",
-        "TX-use_case-software_development",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-product_form-end_user_application",
+        "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
@@ -24156,6 +24155,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-1492451202cc5928",
         "EV-071c72225b8aaf80",
         "EV-c2800c1c5a3f568f",
         "EV-a4b72879f3d73ea4",
@@ -24174,7 +24174,7 @@
         "EN-fdc6b157616f12a8"
       ],
       "firstSeen": "2026-06-22",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "EN-c4941bfc97ac7c2d",
@@ -24213,8 +24213,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-use_case-security_operations"
+        "TX-use_case-security_operations",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-29",

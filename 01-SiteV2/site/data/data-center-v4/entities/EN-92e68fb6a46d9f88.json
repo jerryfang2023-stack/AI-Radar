@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
+    "quarantinedEventCount": 25
+  },
+  "entity": {
+    "id": "EN-92e68fb6a46d9f88",
+    "name": "In August",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b9d8b3582f12bdc7"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-09",
+    "lastSeen": "2026-09-11",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-b9d8b3582f12bdc7"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b9d8b3582f12bdc7",
+        "dataDate": "2026-09-11",
+        "date": "2026-09-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "企业 AI 智能体融资五个月内激增至 4.35 亿美元",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1e3e8fd3808adfe2",
+            "fundingInsightId": "FI-88967eae3befde75"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "observability_evaluation",
+            "name": "可观测与评估",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0c8f8adbb7bf20a2",
+            "fundingInsightId": "FI-88967eae3befde75"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "ai_observability_governance",
+            "name": "AI 可观测与治理",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-af842000e2e84c50",
+            "fundingInsightId": "FI-88967eae3befde75"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f123e6d0b84c2af0",
+            "fundingInsightId": "FI-88967eae3befde75"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-145c6d8c5996e867",
+            "fundingInsightId": "FI-88967eae3befde75"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-15d54f5bfc3e1478",
+            "fundingInsightId": "FI-88967eae3befde75"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-9fe430e5274621be"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bd9d111b6cde741c",
+            "fundingInsightId": "FI-88967eae3befde75"
+          }
+        ],
+        "entityIds": [
+          "EN-9fe430e5274621be",
+          "EN-92e68fb6a46d9f88",
+          "EN-d5dee8daa2eb5cc5",
+          "EN-80d387ccb3289295",
+          "EN-2bd806c97f0e00af"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}
