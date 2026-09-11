@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-10T01:19:06.918Z",
-    "latestDataDate": "2026-09-10",
-    "currentDate": "2026-09-10",
-    "eventCount": 2795,
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
     "quarantinedEventCount": 25
   },
   "entity": {
@@ -40,7 +40,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-03-19",
-    "lastSeen": "2026-09-10",
+    "lastSeen": "2026-09-11",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -49,14 +49,30 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-c230c05281ef3aa2",
-        "EV-03992c9b7f8fef10"
+        "EV-03992c9b7f8fef10",
+        "EV-c230c05281ef3aa2"
       ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-03992c9b7f8fef10",
+        "dataDate": "2026-09-11",
+        "date": "2026-09-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "推出 Awarded AI - Procurement Sciences",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7035f6607ad2d162",
+          "EN-e0894803750a3e78"
+        ]
+      },
       {
         "id": "EV-c230c05281ef3aa2",
         "dataDate": "2026-09-10",
@@ -70,22 +86,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-7035f6607ad2d162"
-        ]
-      },
-      {
-        "id": "EV-03992c9b7f8fef10",
-        "dataDate": "2026-09-09",
-        "date": "2026-09-09",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "推出 Awarded AI - Procurement Sciences",
-        "displayTags": [],
-        "entityIds": [
-          "EN-7035f6607ad2d162",
-          "EN-e0894803750a3e78"
         ]
       },
       {
@@ -225,6 +225,7 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-b9d8b3582f12bdc7",
         "EV-5ea74d357e73366b",
         "EV-85506f9f86779a6d",
         "EV-dc442b91a69fcc5a",
@@ -234,7 +235,6 @@
         "EV-2dff88f85e3bce86",
         "EV-81bbaaec2965864a",
         "EV-f0a666f5416e049f",
-        "EV-b9d8b3582f12bdc7",
         "EV-89ec502a1340079a",
         "EV-0ea2bbb7280091f2",
         "EV-140ecf4fabe544ba",
@@ -475,13 +475,13 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "EN-9fe430e5274621be",
         "EN-c04bd5ebd10ab696",
         "EN-2cfe6f50f129c9c3",
         "FICO-6f92e043fe518e14",
         "EN-770ef1d2b6e24172",
         "EN-ee04228c5c6d8b08",
         "EN-befd0093486b775d",
-        "EN-9fe430e5274621be",
         "EN-447a48e5d0951831",
         "EN-27d914a99e32f0f2",
         "EN-a31f26263a2fe821",
@@ -703,7 +703,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "TX-industry-government_public_sector",
@@ -737,6 +737,7 @@
         "EV-c46e427fedbf518d",
         "EV-44ec7c229995ca3c",
         "EV-a3ba586cbc57b5fd",
+        "EV-87f31c71f040785a",
         "EV-cea525b2226b0078",
         "EV-b9a1cba0b59a5354",
         "EV-a80624daa2a65d4c",
@@ -774,16 +775,17 @@
         "EN-eafe895eb8119e6e",
         "EN-cecdd8369134f75e",
         "EN-7035f6607ad2d162",
+        "EN-7d3194f79e645c42",
         "EN-9599cd200c6527a7",
         "EN-c70eca6b0f88f44d",
         "EN-06b5472c16feae4c",
-        "EN-7d3194f79e645c42",
         "EN-132a1a391cce181c",
         "EN-83eb1cb31148698f",
         "EN-74be4cbf48e647b2",
         "EN-e395d03e988d30a9"
       ],
       "fdeIds": [
+        "FDE-c3be578a35038926",
         "FDE-5d7f931cdd66f577",
         "FDE-9331f5d8c795e023"
       ],
@@ -792,7 +794,7 @@
         "HW-25eea5677838fb54"
       ],
       "firstSeen": "2026-03-19",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-09-11"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",

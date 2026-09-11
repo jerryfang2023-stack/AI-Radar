@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-11T07:40:40.360Z",
+    "latestDataDate": "2026-09-11",
+    "currentDate": "2026-09-11",
+    "eventCount": 2828,
+    "quarantinedEventCount": 25
+  },
+  "entity": {
+    "id": "EN-ffab44c52c6848b9",
+    "name": "S1",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-53198ae84b1653e5"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-53198ae84b1653e5"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-53198ae84b1653e5",
+        "dataDate": "2026-09-11",
+        "date": "2026-09-11",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Skild AI 发布 S1 机器人基础模型，可从单段视频学习新任务",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-67734881da046ff9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-67734881da046ff9",
+          "EN-ffab44c52c6848b9"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-a0c3cd1b2db3ff0e",
+      "snapshotKey": "a0c3cd1b2db3ff0e",
+      "snapshotId": "HWS-d11b45a96d19abf6",
+      "eventId": "EV-53198ae84b1653e5",
+      "eventIds": [
+        "EV-53198ae84b1653e5"
+      ],
+      "dataDate": "2026-09-11",
+      "date": "2026-09-11",
+      "title": "S1",
+      "subject": "Skild AI",
+      "productNames": [
+        "S1"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-22013880880d4da1"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-11",
+          "hardware_fact_id": "HWF-22013880880d4da1",
+          "fact_type": "product",
+          "observed_at": "2026-09-10T16:30:35.000Z",
+          "subject_entity_id": "EN-67734881da046ff9",
+          "subject_name": "Skild AI",
+          "product_entity_ids": [
+            "EN-ffab44c52c6848b9"
+          ],
+          "product_names": [
+            "S1"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Skild AI’s new S1 robot foundation model helps address this, designed to learn previously unseen, long-horizon tasks from a single video demonstration. The model, launched last week, uses video as input to understand and execute the task without updating its weights or undergoing task-specific post-training",
+          "event_refs": [
+            "EV-53198ae84b1653e5"
+          ],
+          "claim_ref": "CL-dadf46375cf002be",
+          "source_refs": [
+            "SA-85ad02d9c707475e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-11/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai",
+      "entityIds": [
+        "EN-67734881da046ff9",
+        "EN-ffab44c52c6848b9"
+      ]
+    }
+  ]
+}
