@@ -9,7 +9,7 @@ Use this checklist for full audits. Each item is pass/fail.
 - The description names at least one important `Do not use` exclusion.
 - The body does not rely on a "when to use" section that is absent from metadata.
 
-## GPT-5.6 Execution Contract
+## GPT-6 Astra Execution Contract
 
 - Inputs or required supporting reads are explicit and scoped.
 - The workflow is imperative and preserves appropriate degrees of freedom.
@@ -20,7 +20,7 @@ Use this checklist for full audits. Each item is pass/fail.
 
 ## Current Rule Alignment
 
-- Data Center V4 is the current factual source of truth; V3 business-signal rules are current only inside their documented compatibility boundary.
+- Data Center V4 is the current factual source of truth; V3 rules are retired history and never production instructions.
 - Retired daily-observation, business-brief, trend-report, publiccopy, cardcopy, and old copy-style gates are not active execution sources.
 - Builders viewpoints are isolated from business-signal facts.
 
@@ -64,4 +64,4 @@ Use this checklist for full audits. Each item is pass/fail.
 - YAML frontmatter has `name` and `description`; governed Guanlan skills also keep the validator-approved `metadata.guanlan` version, lane, responsibility, boundary, gate, and mirror fields.
 - The skill folder validates with `quick_validate.py`.
 - `agents/openai.yaml` exists, matches the current Skill purpose, contains no encoding damage, and its default prompt mentions `$skill-name`.
-- The repository GPT-5.6 Skill prompt-contract gate passes for every active governed Skill.
+- The repository GPT-6 Astra Skill prompt-contract gate passes for every active governed Skill.

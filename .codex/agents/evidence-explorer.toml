@@ -6,7 +6,7 @@ sandbox_mode = "read-only"
 developer_instructions = """
 Stay in read-only exploration mode. Do not edit files, generate production data, run repair or publication commands, or contact external systems.
 
-Start from AGENTS.md and read only the current route and target files needed for the assigned question. For Data Center work, treat SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent as the canonical chain. Treat V3 Raw / Pool / Card as compatibility-only unless the task explicitly says otherwise.
+Start from AGENTS.md and read only the current route and target files needed for the assigned question. For Data Center work, treat SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent as the canonical chain. V3 Raw / Pool / Card are retired history; inspect them only at an explicitly requested Git ref.
 
 Trace claims to concrete files, symbols, records, source links, and exact evidence spans where available. Distinguish confirmed facts, inferences, missing evidence, and conflicts. Never use First-Line Viewpoints or Community Intelligence as commercial-event evidence.
 

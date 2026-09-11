@@ -405,7 +405,8 @@ function buildSkill(name, registryMap, usageMap, generatedDate, observation, ext
   const projectPath = path.join(projectSkillDir, name);
   const storeExists = !external && exists(storePath);
   const projectExists = !external && exists(projectPath);
-  const primary = external?.dir || (storeExists ? storePath : projectPath);
+  const projectPrimary = Boolean(registry && projectExists) || !storeExists;
+  const primary = external?.dir || (projectPrimary ? projectPath : storePath);
   const stats = scanDirStats(primary);
   const skillMd = path.join(primary, "SKILL.md");
   const frontmatter = parseFrontmatter(readText(skillMd));
@@ -442,9 +443,9 @@ function buildSkill(name, registryMap, usageMap, generatedDate, observation, ext
   const baseSkill = {
     name,
     category: external?.category || registration?.category || categoryFor(name, registry),
-    sourceKind: external?.sourceKind || (storeExists ? "skill-store" : "project"),
-    sourceLabel: external?.sourceLabel || (storeExists ? ".skill-store" : "WaveSight"),
-    sourcePath: external?.sourcePath || (storeExists ? `.skill-store/${name}` : relProjectPath(projectPath)),
+    sourceKind: external?.sourceKind || (projectPrimary ? "project" : "skill-store"),
+    sourceLabel: external?.sourceLabel || (projectPrimary ? "WaveSight" : ".skill-store"),
+    sourcePath: external?.sourcePath || (projectPrimary ? relProjectPath(projectPath) : `.skill-store/${name}`),
     sourceVersion: external?.sourceVersion || "",
     sourceDigest: ruleDigest(primary).digest,
     platformIds: skillPlatformIds(catalog, name, external),

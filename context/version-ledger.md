@@ -378,3 +378,15 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 | V3.1.1-source-first-frontstage | 2026-06-05 | Frontstage content must return to Raw / Pool / original source | upgraded |
 | V3.0.0-data-observation-desk | 2026-06-04 | Frontstage became Data Observation Desk; V2 public pages were retired while operations dashboard stayed | upgraded |
 | V2.2.x | 2026-06-01 | Four-column content site and regression governance | retired |
+
+## 2026-09-11 — GPT-6 Astra execution migration
+
+- Project Codex primary and quality review use `gpt-6-astra/high`; experience review uses `gpt-6-astra/medium`. Terra exploration and DeepSeek provider contracts are retained.
+- Skill Store `v2.3.0` introduces `GPT-6-ASTRA-SKILL-V1.0`, nonempty contract-section validation, scope-aware mirror evals and dynamic active-Skill routing coverage with exact-quote scoring.
+- This is an execution/governance upgrade, not a renaming of SITE-V4 or its factual schemas. Live-model and production acceptance must be recorded separately from static checks.
+
+## 2026-09-12 — Astra Mini Program and community Skill extension
+
+- Mini Program retains product version 0.9.9; fixed stale authentication responses and identity-scoped cache invalidation. `npm run verify` passes with 130 tests. No upload or publication.
+- Updated six explicitly authorized community Skills in the personal Skill Store; backed up exact sources and recorded a review patch and hashes. Astra drafting is the default, with evidence gates and authorized stage completion. Seven quote-gate tests and all six structural validations pass.
+- Live Astra high community behavior evaluation passes 28/28; the original joined-citation failure is preserved. See `docs/gpt-6-astra-migration.md` for scope, evidence and rollback.

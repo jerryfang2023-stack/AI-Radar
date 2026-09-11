@@ -1,41 +1,40 @@
-# Codex Model Routing Eval V1
+# Codex Model Routing Eval V2
 
-This suite compares three role configurations against one scenario derived from each of the 26 governed WaveSight Skill eval files:
+This protocol covers one scenario per active governed Skill (currently 23). The manifest is checked against the live registry. The output schema cardinality and case IDs are derived from that manifest at execution time.
 
-- `sol-high`: `gpt-5.6-sol`, high reasoning
-- `sol-medium`: `gpt-5.6-sol`, medium reasoning
-- `terra-medium`: `gpt-5.6-terra`, medium reasoning
+## Profiles and ownership
 
-The same 26 scenarios, prompt, output schema, repository state and read-only sandbox are used for every configuration.
+- `astra-high`: GPT-6 Astra / high, primary execution and quality review.
+- `astra-medium`: GPT-6 Astra / medium, bounded experience review.
+- `sol-high` and `sol-medium`: preserved GPT-5.6 Sol comparison baselines.
+- `terra-medium`: preserved GPT-5.6 Terra exploration role.
 
-## Scoring
+The primary model is project-scoped in `.codex/config.toml`; role overrides are in `.codex/agents/`. DeepSeek production translation and report providers remain governed independently.
 
-Each case receives:
+## Scoring and acceptance
 
-- 1 point for the expected `pass` / `fail` decision;
-- 1 point for citing an existing repository file as evidence.
+Each case receives one point for the expected decision and one for a nonempty exact quotation from its named eval file or its owning SKILL.md. Absolute, escaping, unrelated and out-of-root symlink paths are rejected. Duplicate and malformed case rows earn no credit; missing or unknown cases, schema violations, wrong decisions and invalid quotations fail the profile and command.
 
-Missing, duplicate or malformed results receive zero. The report records exact-match accuracy, evidence validity, latency and execution errors.
-
-## Decision rule
-
-- Keep `gpt-5.6-sol` high for the primary agent and complex quality review unless a broader implementation suite proves a lower tier equivalent.
-- Use `gpt-5.6-sol` medium for bounded frontstage review when it preserves full boundary accuracy.
-- Use `gpt-5.6-terra` medium for read-heavy exploration when it preserves full boundary accuracy.
-- Never lower the global primary-agent model solely because Terra wins latency on this routing-focused suite.
+Quotation validation proves mechanical provenance only. It does not establish that the quoted rule supports the conclusion. Review rationale and semantic relevance separately before production acceptance. Static preflight checks are not model-run results. Configured role defaults are not automatically inferred from scores.
 
 ## Commands
 
-Validate the 26-case manifest without model calls:
+Validate active-Skill coverage without model calls:
 
 ```text
 npm run check:model-routing-evals
+npm run test:model-routing
 ```
 
-Run all three configurations:
+Run the target model only, or compare all profiles:
 
 ```text
+npm run eval:model-routing -- --profile=astra-high
 npm run eval:model-routing
 ```
 
-`CODEX_CLI_PATH` may point to the installed Codex executable. Results are written to `agent-workflow/reports/model-routing-eval-latest.json`.
+`CODEX_CLI_PATH` may point to the installed Codex executable. Temporary schema files are removed after the run. Model execution is read-only and must not delegate, generate production data or publish. Reports use schema version 2; historical score reports are not comparable because their evidence check was path existence only.
+
+## Migration acceptance
+
+Inspect boundary decisions, quoted rules, latency, execution errors and model availability. This suite cannot establish production extraction accuracy, writing quality, token cost or live deployment readiness. Keep accepted upstream data immutable and expand a rollout only after the owning lane's validation passes.

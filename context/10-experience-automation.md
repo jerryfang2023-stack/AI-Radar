@@ -48,11 +48,13 @@ Audit Guanlan Skill Ops after skill edits or repeated lane failures. This comman
 npm run audit:skills
 ```
 
-After confirming that the project copy is the source of truth, repair the repo runtime, optional `.skill-store` compatibility mirror, and generated dashboard explicitly. The repair command synchronizes, rebuilds, then finishes with the read-only audit:
+Repair the repo runtime and generated dashboard from the project source. The repair command synchronizes repository assets, rebuilds, then finishes with the read-only audit:
 
 ```powershell
 npm run repair:skills
 ```
+
+The repair command does not write the personal `.skill-store`. When that external destination is explicitly included in the task, run `npm run sync:skill-store` before the repository repair and validate it with `npm run check:skill-ops -- --require-skill-store`.
 
 Read-only Skill Ops check used by daily supervision. It includes the dashboard semantic contract:
 
@@ -60,7 +62,7 @@ Read-only Skill Ops check used by daily supervision. It includes the dashboard s
 npm run check:skill-ops
 ```
 
-The current gate certifies all 23 active governed Skills against `GPT-5.6-SKILL-V1.0`. It verifies positive and negative trigger metadata, scoped inputs, imperative workflow, non-inference and authorization boundaries, output/completion contracts, valid `agents/openai.yaml`, and complete five-case trigger-eval inventory. Inventory coverage proves the test set is complete; it does not claim that a model executed every prompt successfully.
+The current gate certifies all 23 active governed Skills against `GPT-6-ASTRA-SKILL-V1.0`. It verifies positive and negative trigger metadata, scoped inputs, imperative workflow, non-inference and authorization boundaries, output/completion contracts, valid `agents/openai.yaml`, and complete five-case trigger-eval inventory. Inventory coverage proves the test set is complete; it does not claim that a model executed every prompt successfully.
 
 On a configured development machine, this check also audits effective local Skill discovery and requires the dashboard to match the discovered, enabled, and reversibly disabled counts. In CI or deploy environments without the developer-local Codex config and private store, it still validates project manifests and the committed dashboard contract without treating missing personal state as a dependency.
 

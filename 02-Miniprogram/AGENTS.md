@@ -8,6 +8,12 @@ Previous verified uploaded development release: 0.9.7 adds seasonal community sc
 
 This is the native WeChat Mini Program frontstage for Funding Insights.
 
+## Astra maintenance contract
+
+- Inherit the repository's GPT-6 Astra execution configuration. The client has no direct LLM endpoint; do not embed an OpenAI key or invent a client model migration. Mini Program release numbers and server data contracts are independent of the coding model.
+- Capture the identity at request start. A delayed success must not apply to a different identity; an old authentication failure must not clear a newer token or replay a mutation for it. Retry current-identity authentication at most once.
+- Use backend-confirmed membership, points and payment state. Validate concurrency with deferred response tests, then run `npm run verify`; only UI changes require new device visual evidence. Do not claim an upload or release from local test results.
+
 Previous immutable uploaded release: 0.9.5 adds a global native-share baseline, fixes related-company entity deep links and first-time phone binding, and grants verified approved community members one idempotent 90-day Mini Program access window while synchronizing their community identity. Members without a recorded phone may create a nickname candidate, but only an administrator-confirmed server-side claim can grant identity or access; later confirmations require no Mini Program release. Upload is not review submission, approval, or production publication; those remain the owner's responsibility. See `docs/releases/0.9.5/README.md` for the immutable source and receipt.
 
 ## Boundaries

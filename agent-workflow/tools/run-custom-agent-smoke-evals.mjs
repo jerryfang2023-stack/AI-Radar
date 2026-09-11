@@ -88,7 +88,7 @@ for (const smokeCase of cases) {
     "--sandbox",
     "read-only",
     "--model",
-    "gpt-5.6-sol",
+    "gpt-6-astra",
     "--config",
     'model_reasoning_effort="medium"',
     "--cd",
@@ -112,7 +112,7 @@ for (const smokeCase of cases) {
   } catch {
     payload = null;
   }
-  const passed = (run.status === 0 || timedOut)
+  const passed = run.status === 0 && !timedOut
     && payload?.agent === smokeCase.agent
     && payload?.delegated === true
     && String(payload?.answer || "").toLowerCase().includes(smokeCase.expected.toLowerCase())

@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-09-11T16:25:10.8383215Z",
+  "tasks": [
+    {
+      "name": "WaveSight Community Intelligence Daily",
+      "state": "Ready",
+      "actions": [
+        {
+          "workingDirectory": "C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight",
+          "expectedWorkspace": true,
+          "customCodexArgs": false,
+          "script": "run-community-intelligence.ps1"
+        }
+      ]
+    },
+    {
+      "name": "WaveSight Daily Automation Closure",
+      "state": "Ready",
+      "actions": [
+        {
+          "workingDirectory": "C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight",
+          "expectedWorkspace": true,
+          "customCodexArgs": false,
+          "script": "run-daily-automation-controller.mjs"
+        }
+      ]
+    },
+    {
+      "name": "WaveSight Daily Final Closure",
+      "state": "Ready",
+      "actions": [
+        {
+          "workingDirectory": "C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight",
+          "expectedWorkspace": true,
+          "customCodexArgs": false,
+          "script": "run-daily-automation-controller.mjs"
+        }
+      ]
+    },
+    {
+      "name": "WaveSight Daily Recovery Controller",
+      "state": "Ready",
+      "actions": [
+        {
+          "workingDirectory": "C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight",
+          "expectedWorkspace": true,
+          "customCodexArgs": false,
+          "script": "run-daily-automation-controller.mjs"
+        }
+      ]
+    },
+    {
+      "name": "WaveSight Follow-Builders Skill Daily",
+      "state": "Ready",
+      "actions": [
+        {
+          "workingDirectory": "C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight",
+          "expectedWorkspace": true,
+          "customCodexArgs": false,
+          "script": "run-follow-builders-skill.ps1"
+        }
+      ]
+    },
+    {
+      "name": "WaveSight Hermes Control Plane Watchdog",
+      "state": "Ready",
+      "actions": [
+        {
+          "workingDirectory": "C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight",
+          "expectedWorkspace": true,
+          "customCodexArgs": false,
+          "script": "run-hermes-control-plane-cycle.mjs"
+        }
+      ]
+    },
+    {
+      "name": "WaveSight Morning Production Dispatch",
+      "state": "Ready",
+      "actions": [
+        {
+          "workingDirectory": "C:\\Users\\86186\\Documents\\Fang\\repos\\WaveSight",
+          "expectedWorkspace": true,
+          "customCodexArgs": false,
+          "script": "run-daily-automation-controller.mjs"
+        }
+      ]
+    }
+  ],
+  "count": 7,
+  "note": "Read-only task inspection. No scheduled task was started or modified."
+}

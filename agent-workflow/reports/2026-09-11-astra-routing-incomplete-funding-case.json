@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-11T15:52:07.894Z",
+  "generatedAt": "2026-09-11T15:48:22.086Z",
   "protocol": "agent-workflow/model-evals/model-routing-v1.md",
   "cases": 23,
   "profiles": [
@@ -15,21 +15,21 @@
       "id": "astra-high",
       "model": "gpt-6-astra",
       "effort": "high",
-      "durationMs": 155440,
+      "durationMs": 319946,
       "exitCode": 0,
       "signal": "",
-      "status": "completed",
+      "status": "evaluation_failed",
       "score": {
-        "passed": true,
+        "passed": false,
         "errors": [],
         "returned": 23,
         "unique": 23,
         "duplicateIds": [],
-        "correct": 23,
-        "accuracy": 1,
+        "correct": 22,
+        "accuracy": 0.9565217391304348,
         "evidenceValid": 23,
         "evidenceRate": 1,
-        "score": 46,
+        "score": 45,
         "maxScore": 46,
         "details": [
           {
@@ -40,7 +40,7 @@
             "evidencePath": "agent-workflow/skills/follow-builders/evals/wavesight-boundary-evals.md",
             "evidenceQuote": "Pass when any factual business claim discovered through a builder viewpoint is traced to a separately captured original source and accepted through the V4 Claim/Event chain before downstream use.",
             "evidenceValid": true,
-            "rationale": "Direct factual use bypasses the required separate original-source capture and accepted V4 evidence chain."
+            "rationale": "Direct use of a builder post bypasses the required separate original-source capture and V4 acceptance."
           },
           {
             "id": "hardware-projection",
@@ -50,7 +50,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-ai-hardware-data-projection/evals/hardware-projection-evals.md",
             "evidenceQuote": "Fail when a lawsuit becomes hardware because its body mentions chips or servers.",
             "evidenceValid": true,
-            "rationale": "Incidental hardware mentions do not qualify a lawsuit as a hardware event."
+            "rationale": "Incidental chip or server mentions do not establish a supported hardware event."
           },
           {
             "id": "code-rule-audit",
@@ -70,7 +70,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-community-intelligence-monitor/evals/community-intelligence-monitor-evals.md",
             "evidenceQuote": "Pass when logged-in collection is treated as a local task and not expected to run in GitHub Actions.",
             "evidenceValid": true,
-            "rationale": "Logged-in collection belongs to the local task rather than GitHub Actions."
+            "rationale": "Logged-in Community Intelligence collection belongs to the local task."
           },
           {
             "id": "daily-monitor",
@@ -80,7 +80,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-daily-monitor/evals/daily-monitor-evals.md",
             "evidenceQuote": "Pass when production collects peer sources once and runs one unified monitor attempt.",
             "evidenceValid": true,
-            "rationale": "A diagnostic volume shortfall does not authorize a second full collection attempt."
+            "rationale": "A diagnostic volume shortfall does not authorize a second provider collection cycle."
           },
           {
             "id": "daily-monitor-qc",
@@ -100,7 +100,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-data-center-supervisor/evals/data-center-supervisor-evals.md",
             "evidenceQuote": "Fail when importance, value, opportunity, trend judgment, advice, or interview priority enters a V4 canonical object.",
             "evidenceValid": true,
-            "rationale": "The scenario preserves source-linked factual outputs, explicit missing values, and the exclusion of canonical judgment fields."
+            "rationale": "Source-linked factual outputs with explicit unknowns and no judgment fields respect the V4 boundary."
           },
           {
             "id": "data-integrity",
@@ -120,7 +120,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-event-normalizer/evals/event-normalizer-evals.md",
             "evidenceQuote": "Fail when source conflicts are overwritten or converted to a value judgment.",
             "evidenceValid": true,
-            "rationale": "Keeping conflicting claims and the disputed state preserves source disagreement."
+            "rationale": "Preserving conflicting claims and disputed status avoids overwriting source disagreements."
           },
           {
             "id": "fde-projection",
@@ -130,7 +130,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-fde-data-projection/evals/fde-projection-evals.md",
             "evidenceQuote": "Pass when absent needs, systems, teams, controls or outcomes appear under `undisclosed_fields`.",
             "evidenceValid": true,
-            "rationale": "An empty outcome field with explicit non-disclosure avoids inventing implementation results."
+            "rationale": "Empty outcomes and an explicit undisclosed field preserve the source's information boundary."
           },
           {
             "id": "first-line-viewpoints",
@@ -140,7 +140,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor/evals/first-line-viewpoints-monitor-evals.md",
             "evidenceQuote": "Pass when First-Line Viewpoints work routes through this skill before the generic `follow-builders` skill.",
             "evidenceValid": true,
-            "rationale": "The scenario follows the required lane-owner routing order."
+            "rationale": "The lane owner correctly precedes the generic follow-builders capability."
           },
           {
             "id": "monitor-quality",
@@ -160,7 +160,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-monthly-business-structure-report/evals/monthly-business-structure-report-evals.md",
             "evidenceQuote": "- Selects one strongest structural judgment instead of summarizing the full report.\n- Uses cognitive tension and names a concrete budget, procurement, cost, delivery, responsibility, or opportunity consequence.\n- Keeps the date and report type in metadata rather than the headline.",
             "evidenceValid": true,
-            "rationale": "The scenario follows the structural-judgment and metadata-date requirements."
+            "rationale": "One bounded structural judgment with the date in metadata follows the structural-headline contract."
           },
           {
             "id": "monthly-page",
@@ -170,7 +170,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-monthly-report-page-generator/evals/monthly-report-page-generator-evals.md",
             "evidenceQuote": "Pass when the portal body preserves the complete accepted Markdown argument after frontmatter and internal evidence-marker cleanup.",
             "evidenceValid": true,
-            "rationale": "Rendering the complete accepted argument preserves the upstream content judgment."
+            "rationale": "Complete rendering of accepted content preserves the monthly argument and its upstream judgment ownership."
           },
           {
             "id": "opportunity-radar",
@@ -180,17 +180,17 @@
             "evidencePath": "agent-workflow/skills/guanlan-opportunity-radar-updater/evals/opportunity-radar-updater-evals.md",
             "evidenceQuote": "Pass when the update uses a 7-day current window, a 30-day baseline, and 90-day context only when needed.",
             "evidenceValid": true,
-            "rationale": "The scenario follows the required comparison windows and evidence-backed human-review boundary."
+            "rationale": "The specified windows, source-backed fields, and human review follow the map's cadence and evidence boundaries."
           },
           {
             "id": "funding-insight",
             "expected": "pass",
-            "actual": "pass",
-            "decisionCorrect": true,
+            "actual": "fail",
+            "decisionCorrect": false,
             "evidencePath": "agent-workflow/skills/guanlan-funding-insight-generator/evals/funding-insight-generator-evals.md",
             "evidenceQuote": "Pass when current-round investors are explicitly named, or when an explicitly undisclosed round publishes only with an empty investor list, `investor_disclosure_status=not_disclosed`, and the retained `investors_missing` risk marker.",
             "evidenceValid": true,
-            "rationale": "The scenario satisfies the complete investor non-disclosure exception."
+            "rationale": "As stated, the status alone does not establish the required empty investor list and retained investors_missing risk marker."
           },
           {
             "id": "skill-editor",
@@ -200,7 +200,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-skill-editor/evals/skill-editor-evals.md",
             "evidenceQuote": "Pass when the external `.skill-store` stays unchanged outside authorized scope; fail when an explicitly authorized compatibility sync is omitted.",
             "evidenceValid": true,
-            "rationale": "The repository mirror is synchronized while the external mirror correctly remains outside the authorized scope."
+            "rationale": "Synchronizing the repository mirror while leaving the unauthorized external mirror unchanged respects the synchronization boundary."
           },
           {
             "id": "source-ingestion",
@@ -210,7 +210,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-source-ingestion/evals/source-ingestion-evals.md",
             "evidenceQuote": "Fail when a search-result snippet, query text, or discovery summary closes a funding or deployment fact gap.",
             "evidenceValid": true,
-            "rationale": "A discovery snippet cannot close a funding fact gap."
+            "rationale": "Search snippets are discovery material and cannot close a funding fact gap."
           },
           {
             "id": "taxonomy",
@@ -220,7 +220,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-taxonomy-governor/evals/taxonomy-governor-evals.md",
             "evidenceQuote": "Pass when every active TagAssertion has `tag_id`, `evidence_ref`, exact span, method, confidence and taxonomy version.",
             "evidenceValid": true,
-            "rationale": "The assertion preserves exact Claim evidence and required provenance without changing eligibility."
+            "rationale": "The assertion retains exact Claim evidence and provenance without influencing eligibility."
           },
           {
             "id": "trend-radar",
@@ -230,7 +230,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-trend-radar-updater/evals/trend-radar-updater-evals.md",
             "evidenceQuote": "Reject any output field or page copy containing opportunity score, heat, maturity, recommendation, advice, judgment, First-Line Viewpoints, Community Intelligence, V3 Cards or trend-candidate input.",
             "evidenceValid": true,
-            "rationale": "Opportunity scores and recommendations violate the factual Trend Radar output boundary."
+            "rationale": "Opportunity scores and recommendations violate Trend Radar's factual-output boundary."
           },
           {
             "id": "typography",
@@ -250,7 +250,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-weekly-business-change-radar/evals/weekly-business-change-radar-evals.md",
             "evidenceQuote": "Pass when `[O:]` and `[C:]` support interpretation or demand context only and never establish event facts.",
             "evidenceValid": true,
-            "rationale": "Exact counts and accepted V4 factual citations preserve the separation of viewpoint and community context."
+            "rationale": "Exact counts and accepted V4 factual citations preserve the separation of facts from viewpoint and community context."
           },
           {
             "id": "weekly-page",
@@ -260,7 +260,7 @@
             "evidencePath": "agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md",
             "evidenceQuote": "WaveSight report Markdown is the content source; `agent-workflow/reports/` is not a public source.",
             "evidenceValid": true,
-            "rationale": "An operational report archive cannot replace the required canonical accepted report source."
+            "rationale": "An operational archive cannot substitute for the required canonical accepted report source."
           }
         ]
       }

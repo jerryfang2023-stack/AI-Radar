@@ -1,35 +1,43 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-10T02:15:11.906Z",
-  "date": "2026-09-10",
-  "action": "Funding transaction withdrawal repair",
-  "action_status": "current",
+  "generated_at": "2026-09-11T16:26:07.850Z",
+  "date": "2026-09-12",
+  "action": "Astra automation AIP essay and catalog closure",
+  "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Reused accepted September 10 evidence; identified cancelled Listen Labs round incorrectly admitted as proceeds; repaired shared transaction status and persisted-card gate; retained source evidence and regenerated atomic projections without model research.",
+  "summary": "Explicit repair model launch verified; AIP community essay and catalog aligned",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/lib/funding-transaction-status.mjs",
-    "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/funding-insight-v1-utils.mjs",
-    "agent-workflow/tools/generate-funding-insights-deepseek.mjs"
+    "agent-workflow/tools/run-codex-self-repair.mjs",
+    "agent-workflow/tools/lib/codex-repair-model.mjs",
+    "agent-workflow/skills/skill-catalog-sources.json",
+    "AIP guanlan-community-essay-writer"
   ],
-  "outputs": [],
+  "outputs": [
+    "docs/gpt-6-astra-migration.md",
+    "agent-workflow/reports/codex-repair-model-probe-latest.json",
+    "agent-workflow/reports/aip-community-skill-eval-latest.json",
+    "agent-workflow/reports/2026-09-12-aip-community-migration.patch"
+  ],
   "checks": [
-    "two red-to-green regressions",
-    "254 data-center and funding tests passed",
-    "funding full gate",
-    "taxonomy consistency",
-    "frontstage regression"
+    "7 installed tasks inspected",
+    "Live CLI Astra high probe passed",
+    "31 regression tests",
+    "AIP behavior eval 12/12",
+    "Skill structure and references",
+    "Dashboard and Skill Ops",
+    "diff check"
   ],
   "issues": [],
   "risks": [
-    "PC/mobile visual QA unavailable: both browser controls timed out",
-    "exact-head CI and public deployment still required"
+    "No production repair or publication triggered",
+    "Remote CI requires repository release"
   ],
   "lessons": [
-    "Validate transaction state at factual admission and again for persisted cards; a quoted amount in cancelled financing is not proceeds."
+    "Carry model flags into isolated worktrees",
+    "Keep scoped editorial model contracts independent of generic AIP provider flows"
   ],
   "reusable_rules": [],
   "retired_flags": [],

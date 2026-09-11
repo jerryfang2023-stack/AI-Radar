@@ -89,6 +89,19 @@ function hasAuthToken() {
   return Boolean(wx.getStorageSync(TOKEN_KEY));
 }
 
+function assertIdentity(token) {
+  if ((wx.getStorageSync(TOKEN_KEY) || "") !== (token || "")) {
+    throw Object.assign(new Error("登录状态已更新，请重试"), { code: "AUTH_CHANGED" });
+  }
+}
+
+function expireToken(token) {
+  // A delayed failure belongs to the request's identity, not a newer login.
+  assertIdentity(token);
+  wx.removeStorageSync(TOKEN_KEY);
+  clearCommunityCache();
+}
+
 async function withExistingToken(fn) {
   const token = wx.getStorageSync(TOKEN_KEY);
   if (!token) {
@@ -97,10 +110,12 @@ async function withExistingToken(fn) {
     throw error;
   }
   try {
-    return await fn(token);
+    const result = await fn(token);
+    assertIdentity(token);
+    return result;
   } catch (error) {
     if (error.statusCode === 401 || error.code === "AUTH_EXPIRED" || error.code === "AUTH_INVALID") {
-      wx.removeStorageSync(TOKEN_KEY);
+      expireToken(token);
     }
     throw error;
   }
@@ -110,11 +125,13 @@ async function withToken(fn, retry = true) {
   let token = wx.getStorageSync(TOKEN_KEY);
   if (!token) token = (await login()).token;
   try {
-    return await fn(token);
+    const result = await fn(token);
+    assertIdentity(token);
+    return result;
   } catch (error) {
-    if (retry && (error.statusCode === 401 || error.code === "AUTH_EXPIRED" || error.code === "AUTH_INVALID")) {
-      wx.removeStorageSync(TOKEN_KEY);
-      return withToken(fn, false);
+    if (error.statusCode === 401 || error.code === "AUTH_EXPIRED" || error.code === "AUTH_INVALID") {
+      expireToken(token);
+      if (retry) return withToken(fn, false);
     }
     throw error;
   }
@@ -224,7 +241,11 @@ async function communityRequest(path, options = {}) {
       }
       return result;
     }).catch((error) => {
-      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "AUTH_REQUIRED") clearCommunityCache();
+      if (error.code === "AUTH_CHANGED") {
+        throw Object.assign(new Error("数据已更新，请重试"), { code: "COMMUNITY_CHANGED" });
+      }
+      if (communityScope() === identity && generation === communityGeneration &&
+          (error.statusCode === 401 || error.statusCode === 403 || error.code === "AUTH_REQUIRED")) clearCommunityCache();
       throw error;
     }).finally(() => {
       if (communityPending.get(path) === request) communityPending.delete(path);
@@ -301,6 +322,7 @@ async function fetchProtectedContent(kind, id) {
     token,
     visitorId: contentVisitorId(),
   });
+  assertIdentity(token);
   return result.content?.mini || result.content;
 }
 

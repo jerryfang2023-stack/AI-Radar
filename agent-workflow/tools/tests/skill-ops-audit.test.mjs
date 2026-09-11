@@ -97,7 +97,7 @@ test("afternoon First-Line gate passes independently of missing morning data", (
   );
 });
 
-test("GPT-5.6 prompt contract requires trigger, boundary, workflow, output, and completion", () => {
+test("GPT-6 Astra prompt contract requires trigger, boundary, workflow, output, and completion", () => {
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-skill-prompt-contract-"));
   const skillPath = path.join(fixture, "SKILL.md");
   fs.writeFileSync(skillPath, `---
@@ -120,12 +120,12 @@ Run it.
   assert.match(errors.join("\n"), /missing completion/u);
 });
 
-test("GPT-5.6 trigger eval inventory covers direct, indirect, incomplete, negative, and edge cases", () => {
+test("GPT-6 Astra trigger eval inventory covers direct, indirect, incomplete, negative, and edge cases", () => {
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-skill-trigger-evals-"));
   const file = path.join(fixture, "skill-trigger-evals.json");
   fs.writeFileSync(file, JSON.stringify({
     schema_version: 1,
-    prompt_contract: "GPT-5.6-SKILL-V1.0",
+    prompt_contract: "GPT-6-ASTRA-SKILL-V1.0",
     case_expectations: {
       direct: "trigger",
       indirect: "trigger",
@@ -255,7 +255,7 @@ policy:
   fs.writeFileSync(versionPath, JSON.stringify({ version: "1.0.0" }), "utf8");
   fs.writeFileSync(promptEvalPath, JSON.stringify({
     schema_version: 1,
-    prompt_contract: "GPT-5.6-SKILL-V1.0",
+    prompt_contract: "GPT-6-ASTRA-SKILL-V1.0",
     case_expectations: {
       direct: "trigger",
       indirect: "trigger",
@@ -332,7 +332,8 @@ test("Skill Ops separates read-only audit from explicit repair", () => {
   assert.match(check, /check-skill-ops\.mjs/u);
   assert.match(build, /build-skill-store-dashboard\.mjs/u);
 
-  assert.match(repair, /sync:skill-store/u);
+  assert.match(repair, /sync:repo-skills/u);
+  assert.doesNotMatch(repair, /sync:skill-store/u);
   assert.match(repair, /build:skill-store-dashboard/u);
   assert.match(repair, /audit:skills/u);
 });

@@ -7,7 +7,7 @@ import { skillSummary } from "./skill-catalog.mjs";
 export const RULE_FILES = ["SKILL.md", "MEMORY.md"];
 export const RULE_DIRS = ["agents", "evals", "examples", "references"];
 export const SKIP_DIRS = new Set([".git", "node_modules", ".venv", "venv", "__pycache__", ".cache", "dist", "build"]);
-export const GUANLAN_PROMPT_CONTRACT = "GPT-5.6-SKILL-V1.0";
+export const GUANLAN_PROMPT_CONTRACT = "GPT-6-ASTRA-SKILL-V1.0";
 
 const MOJIBAKE_PATTERN = /(?:\uFFFD|\u9225|\u942d\u30e8\u7611|\u74a7\u52ea\u9a87|\u6d93\u20ac|\u6de7roduct|\u6e1epresentative|\u6ec4\u6e70|\u935b\?|\u935f\u55d5\u7b1f|\u9359\u6a3a\u5bf2|\u9352\u3086\u67c7|\u6ae4\u93b1|\u6fb6\u0444\u0101|\u9368\u5b27)/u;
 const SECTION_PATTERNS = {
@@ -289,7 +289,16 @@ export function evaluateSkillPromptContract(skill) {
   if (MOJIBAKE_PATTERN.test(skillText)) errors.push("SKILL.md contains likely mojibake or replacement text");
 
   for (const [section, pattern] of Object.entries(SECTION_PATTERNS)) {
-    if (!pattern.test(body)) errors.push(`prompt contract missing ${section} section`);
+    const heading = pattern.exec(body);
+    if (!heading) {
+      errors.push(`prompt contract missing ${section} section`);
+      continue;
+    }
+    const afterHeading = body.slice(heading.index + heading[0].length);
+    const nextHeading = afterHeading.search(/^##\s+/mu);
+    const content = (nextHeading < 0 ? afterHeading : afterHeading.slice(0, nextHeading))
+      .replace(/<!--[\s\S]*?-->/gu, "").trim();
+    if (!content) errors.push(`prompt contract empty ${section} section`);
   }
   if (!NON_INFERENCE_PATTERN.test(body)) errors.push("prompt contract needs an explicit non-inference boundary");
   if (!ASK_OR_STOP_PATTERN.test(body)) errors.push("prompt contract needs explicit ask-or-stop behavior");

@@ -2,6 +2,10 @@
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { randomUUID } from "node:crypto";
+import { buildRoutingSchema, scoreRoutingOutput } from "./lib/model-routing-score.mjs";
+import { defaultPaths, readGovernedSkills, isActiveGovernedSkill } from "./lib/guanlan-skill-ops.mjs";
 
 const root = process.cwd();
 const execute = process.argv.includes("--execute");
@@ -26,7 +30,8 @@ const cases = [
   ["monthly-report", "guanlan-monthly-business-structure-report", "monthly-business-structure-report-evals.md", "A downstream monthly report states one evidence-bounded structural judgment and keeps the date in metadata.", "pass"],
   ["monthly-page", "guanlan-monthly-report-page-generator", "monthly-report-page-generator-evals.md", "The page renders the complete accepted monthly Markdown with readable hierarchy and preserves the content-writing Skill as judgment owner.", "pass"],
   ["opportunity-radar", "guanlan-opportunity-radar-updater", "opportunity-radar-updater-evals.md", "The map uses a 7-day window, 30-day baseline, source-backed fields and human-reviewed Direction Cards.", "pass"],
-  ["skill-editor", "guanlan-skill-editor", "skill-editor-evals.md", "A project Skill is edited and validated, but its configured compatibility mirror is deliberately left out of sync.", "fail"],
+  ["funding-insight", "guanlan-funding-insight-generator", "funding-insight-generator-evals.md", "The source does not disclose current-round investors; the card keeps investors empty, sets investor_disclosure_status=not_disclosed, and retains the investors_missing risk marker instead of inventing an investor.", "pass"],
+  ["skill-editor", "guanlan-skill-editor", "skill-editor-evals.md", "A project Skill is edited and validated, its repo runtime mirror is synchronized, and the external compatibility mirror is left unchanged because it is outside the authorized scope.", "pass"],
   ["source-ingestion", "guanlan-source-ingestion", "source-ingestion-evals.md", "A search-result snippet is accepted as sufficient evidence to close a funding fact gap.", "fail"],
   ["taxonomy", "guanlan-taxonomy-governor", "taxonomy-governor-evals.md", "A TagAssertion records tag_id, exact Claim span, method, confidence and taxonomy version and does not affect eligibility.", "pass"],
   ["trend-radar", "guanlan-trend-radar-updater", "trend-radar-updater-evals.md", "A factual Trend Radar payload includes an opportunity score and recommendation field.", "fail"],
@@ -42,6 +47,8 @@ const cases = [
 }));
 
 const profiles = [
+  { id: "astra-high", model: "gpt-6-astra", effort: "high" },
+  { id: "astra-medium", model: "gpt-6-astra", effort: "medium" },
   { id: "sol-high", model: "gpt-5.6-sol", effort: "high" },
   { id: "sol-medium", model: "gpt-5.6-sol", effort: "medium" },
   { id: "terra-medium", model: "gpt-5.6-terra", effort: "medium" },
@@ -49,7 +56,10 @@ const profiles = [
 
 function validateManifest() {
   const errors = [];
-  if (cases.length !== 22) errors.push(`expected 22 cases, found ${cases.length}`);
+  const active = readGovernedSkills(defaultPaths(root).projectSkillDir)
+    .filter((skill) => isActiveGovernedSkill(skill.guanlan.status)).map((skill) => skill.name);
+  for (const name of active) if (!cases.some((item) => item.skill === name)) errors.push(`missing active Skill: ${name}`);
+  for (const item of cases) if (!active.includes(item.skill)) errors.push(`unmanaged Skill: ${item.skill}`);
   if (new Set(cases.map((item) => item.id)).size !== cases.length) errors.push("case ids must be unique");
   if (new Set(cases.map((item) => item.skill)).size !== cases.length) errors.push("each governed Skill must appear once");
   for (const item of cases) {
@@ -64,10 +74,10 @@ function buildPrompt() {
   const publicCases = cases.map(({ expected, ...item }) => item);
   return [
     "You are running a read-only WaveSight Skill routing evaluation.",
-    "Read AGENTS.md and the eval_file named by each case. Do not edit files, run production commands, inspect this runner, or search for answer keys.",
+    "Read AGENTS.md and the evalFile named by each case. Do not edit files, delegate work, run production commands, inspect this runner, or search for answer keys.",
     "For each scenario, decide pass or fail under that Skill's eval contract.",
-    "Use the named eval_file as evidence_path unless a more precise current rule file is necessary.",
-    "Return exactly 26 unique results that match the supplied JSON schema. Keep each rationale to one sentence.",
+    "Use the named evalFile or that Skill's SKILL.md as evidence_path, and include a short exact evidence_quote supporting your decision.",
+    `Return exactly ${cases.length} unique results that match the supplied JSON schema. Keep each rationale to one sentence.`,
     "",
     JSON.stringify(publicCases, null, 2),
   ].join("\n");
@@ -87,50 +97,6 @@ function parseOutput(stdout) {
   }
 }
 
-function scoreOutput(payload) {
-  const rows = Array.isArray(payload?.results) ? payload.results : [];
-  const byId = new Map();
-  const duplicateIds = [];
-  for (const row of rows) {
-    if (byId.has(row?.id)) duplicateIds.push(row.id);
-    else byId.set(row?.id, row);
-  }
-
-  let correct = 0;
-  let evidenceValid = 0;
-  const details = cases.map((item) => {
-    const row = byId.get(item.id);
-    const decisionCorrect = row?.decision === item.expected;
-    const evidencePath = String(row?.evidence_path || "").replaceAll("\\", "/");
-    const evidenceExists = evidencePath
-      ? fs.existsSync(path.resolve(root, evidencePath))
-      : false;
-    if (decisionCorrect) correct += 1;
-    if (evidenceExists) evidenceValid += 1;
-    return {
-      id: item.id,
-      expected: item.expected,
-      actual: row?.decision || "missing",
-      decisionCorrect,
-      evidencePath,
-      evidenceExists,
-      rationale: String(row?.rationale || ""),
-    };
-  });
-
-  return {
-    returned: rows.length,
-    unique: byId.size,
-    duplicateIds,
-    correct,
-    accuracy: correct / cases.length,
-    evidenceValid,
-    evidenceRate: evidenceValid / cases.length,
-    score: correct + evidenceValid,
-    maxScore: cases.length * 2,
-    details,
-  };
-}
 
 function renderMarkdown(report) {
   const rows = report.results.map((result) => {
@@ -142,8 +108,8 @@ function renderMarkdown(report) {
   });
   const wrong = report.results.flatMap((result) =>
     (result.score?.details || [])
-      .filter((item) => !item.decisionCorrect || !item.evidenceExists)
-      .map((item) => `- \`${result.id}\` / \`${item.id}\`: expected \`${item.expected}\`, got \`${item.actual}\`; evidence exists: ${item.evidenceExists}.`)
+      .filter((item) => !item.decisionCorrect || !item.evidenceValid)
+      .map((item) => `- \`${result.id}\` / \`${item.id}\`: expected \`${item.expected}\`, got \`${item.actual}\`; exact citation valid: ${item.evidenceValid}.`)
   );
 
   return `# Codex Model Routing Eval - Latest
@@ -171,6 +137,10 @@ ${report.recommendation.rationale}
 `;
 }
 
+const selectedId = process.argv.find((arg) => arg.startsWith("--profile="))?.slice("--profile=".length);
+const selectedProfiles = selectedId ? profiles.filter((profile) => profile.id === selectedId) : profiles;
+if (!selectedProfiles.length) throw new Error(`Unknown profile: ${selectedId}`);
+
 const manifestErrors = validateManifest();
 if (manifestErrors.length) {
   for (const error of manifestErrors) console.error(`ERROR ${error}`);
@@ -185,73 +155,81 @@ if (renderReportOnly) {
 }
 
 if (!execute) {
-  console.log(`Validated ${cases.length} cases across ${profiles.length} model configurations.`);
+  console.log(`Validated ${cases.length} cases across ${selectedProfiles.length} model configurations.`);
   process.exit(0);
 }
 
 const cli = process.env.CODEX_CLI_PATH || "codex";
+const generatedSchemaPath = path.join(os.tmpdir(), `wavesight-routing-${randomUUID()}.schema.json`);
+fs.writeFileSync(generatedSchemaPath, JSON.stringify(buildRoutingSchema(JSON.parse(fs.readFileSync(schemaPath, "utf8")), cases)));
 const prompt = buildPrompt();
 const results = [];
 
-for (const profile of profiles) {
-  console.log(`Running ${profile.id} (${profile.model}, ${profile.effort})...`);
-  const started = Date.now();
-  const run = spawnSync(cli, [
-    "exec",
-    "--ephemeral",
-    "--skip-git-repo-check",
-    "--sandbox", "read-only",
-    "--model", profile.model,
-    "--config", `model_reasoning_effort="${profile.effort}"`,
-    "--output-schema", schemaPath,
-    "--cd", root,
-    "-",
-  ], {
-    cwd: root,
-    encoding: "utf8",
-    input: prompt,
-    maxBuffer: 16 * 1024 * 1024,
-    timeout: 20 * 60 * 1000,
-  });
+try {
+  for (const profile of selectedProfiles) {
+    console.log(`Running ${profile.id} (${profile.model}, ${profile.effort})...`);
+    const started = Date.now();
+    const run = spawnSync(cli, [
+      "exec",
+      "--ephemeral",
+      "--skip-git-repo-check",
+      "--sandbox", "read-only",
+      "--model", profile.model,
+      "--config", `model_reasoning_effort="${profile.effort}"`,
+      "--output-schema", generatedSchemaPath,
+      "--cd", root,
+      "-",
+    ], {
+      cwd: root,
+      encoding: "utf8",
+      input: prompt,
+      windowsHide: true,
+      maxBuffer: 16 * 1024 * 1024,
+      timeout: 20 * 60 * 1000,
+    });
 
-  const base = {
-    ...profile,
-    durationMs: Date.now() - started,
-    exitCode: run.status,
-    signal: run.signal || "",
-  };
-  const stderrTail = String(run.stderr || "").trim().split(/\r?\n/).slice(-20);
+    const base = {
+      ...profile,
+      durationMs: Date.now() - started,
+      exitCode: run.status,
+      signal: run.signal || "",
+    };
+    const stderrTail = String(run.stderr || "").trim().split(/\r?\n/).slice(-20);
 
-  if (run.status !== 0) {
-    results.push({ ...base, status: "execution_failed", error: run.error?.message || "Codex execution failed", stderrTail });
-    console.log(`${profile.id}: execution_failed after ${base.durationMs} ms`);
-    continue;
+    if (run.status !== 0) {
+      results.push({ ...base, status: "execution_failed", error: run.error?.message || "Codex execution failed", stderrTail });
+      console.log(`${profile.id}: execution_failed after ${base.durationMs} ms`);
+      continue;
+    }
+
+    try {
+      const payload = parseOutput(run.stdout);
+      const score = scoreRoutingOutput(payload, cases, root);
+      results.push({ ...base, status: score.passed ? "completed" : "evaluation_failed", score });
+      console.log(`${profile.id}: ${score.score}/${score.maxScore} after ${base.durationMs} ms`);
+    } catch (error) {
+      results.push({ ...base, status: "parse_failed", error: error.message, stdout: String(run.stdout || "").slice(0, 4000) });
+      console.log(`${profile.id}: parse_failed after ${base.durationMs} ms`);
+    }
   }
 
-  try {
-    const payload = parseOutput(run.stdout);
-    const score = scoreOutput(payload);
-    results.push({ ...base, status: "completed", score });
-    console.log(`${profile.id}: ${score.score}/${score.maxScore} after ${base.durationMs} ms`);
-  } catch (error) {
-    results.push({ ...base, status: "parse_failed", error: error.message, stdout: String(run.stdout || "").slice(0, 4000) });
-    console.log(`${profile.id}: parse_failed after ${base.durationMs} ms`);
-  }
+} finally {
+  fs.unlinkSync(generatedSchemaPath);
 }
 
 const report = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   generatedAt: new Date().toISOString(),
   protocol: "agent-workflow/model-evals/model-routing-v1.md",
   cases: cases.length,
-  profiles,
+  profiles: selectedProfiles,
   results,
   recommendation: {
-    primary: "gpt-5.6-sol/high",
-    qualityReviewer: "gpt-5.6-sol/high",
-    experienceReviewer: "gpt-5.6-sol/medium",
+    primary: "gpt-6-astra/high",
+    qualityReviewer: "gpt-6-astra/high",
+    experienceReviewer: "gpt-6-astra/medium",
     evidenceExplorer: "gpt-5.6-terra/medium",
-    rationale: "Role-aware defaults remain conservative; this routing suite alone cannot justify lowering the global primary agent.",
+    rationale: "Configured migration targets, not an automatic winner selection. This suite validates boundary decisions and exact quotations, not production quality or cost equivalence.",
   },
 };
 

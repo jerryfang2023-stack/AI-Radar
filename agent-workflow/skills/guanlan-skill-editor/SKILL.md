@@ -3,7 +3,7 @@ name: guanlan-skill-editor
 description: Use when the user requests creating, updating, repairing, or cleaning WaveSight/Guanlan Skills, trigger metadata, workflows, evals, examples, references, memory, UI metadata, or conflicts. Do not use for an audit-only request with no mutation authorization; route read-only defect discovery to guanlan-code-rule-auditor.
 metadata:
   guanlan:
-    version: "2.0.1"
+    version: "2.1.0"
     lane: "Skill system"
     status: "governance"
     order: 110
@@ -29,7 +29,7 @@ Read only what is needed:
 1. Target skill `SKILL.md`.
 2. Target skill `evals/`, `examples/`, `references/`, and `MEMORY.md` if present.
 3. `references/audit-checklist.md` when doing a full audit.
-4. `references/gpt-5p6-prompt-contract.md` when creating, substantially revising, or certifying a Skill.
+4. `references/gpt-6-astra-prompt-contract.md` when creating, substantially revising, or certifying a Skill.
 5. `references/memory-policy.md` when editing memory.
 6. `examples/good-skill-update.md` and `examples/bad-long-prose-rule.md` when deciding whether to add evals, examples, memory, or long prose.
 
@@ -69,7 +69,7 @@ For Guanlan system truth, prefer the project context files over old reports:
 ## Boundaries
 
 - Preserve project-required `metadata.guanlan` even though the portable Skill minimum is `name` plus `description`; it is the source for WaveSight registry and governance tooling.
-- Do not add GPT-5.6 model names, reasoning effort, Pro mode, caching, or API request fields to ordinary domain Skills unless the Skill actually owns that API surface and a measured failure requires it.
+- Do not add model names, reasoning effort, Pro mode, caching, or API request fields to ordinary domain Skills unless the Skill actually owns that API surface and a measured failure requires it.
 - Do not rewrite a working domain contract wholesale merely to standardize headings. Make each edit traceable to trigger accuracy, current truth, autonomy, output, completion, or a tested failure.
 - Editing and local validation are allowed when the user requests Skill changes. Publication, deployment, destructive cleanup, credentials, or unrelated production repair remain separately owned.
 - Writing outside the repository, including the compatibility `.skill-store`, requires explicit scope even when the contents are a mirror.

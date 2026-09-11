@@ -61,9 +61,9 @@
       "name": "guanlan-zaolang-profile-writer",
       "category": "Content / Guanlan",
       "owner": "观澜内容运营",
-      "upstream": "嘉宾原文、核验背景、AIP 选题与标题",
+      "upstream": "嘉宾原文与必要的核验背景；按需借用 AIP 方法",
       "downstream": "社交平台与网站/小程序双版本人物稿",
-      "gates": "选题与标题确认；引语逐字回溯；四轮审校"
+      "gates": "当前 Astra 写作与审校；引语逐字回溯；用户指定确认节点；渠道适配"
     },
     {
       "name": "guanlan-zaolang-card-maker",
@@ -71,7 +71,7 @@
       "owner": "观澜内容运营",
       "upstream": "单个嘉宾完整分享原文",
       "downstream": "1—5 张独立 3:4 人物观点卡",
-      "gates": "原话和上下文核对；尺寸与 Logo 校验；手机总览；逐人确认"
+      "gates": "原话和上下文核对；尺寸与 Logo 校验；逐人手机验收；按已授权清单续做"
     },
     {
       "name": "guanlan-wechat-cover-maker",
@@ -100,6 +100,30 @@
       "name": "fbs-bookwriter",
       "category": "Content / Writing",
       "owner": "内容工作流"
+    },
+    {
+      "name": "guanlan-community-monitor",
+      "category": "Content / Guanlan",
+      "owner": "观澜社群运营",
+      "upstream": "wechat-cli 原始 JSONL 与已确认身份",
+      "downstream": "覆盖记录、原始档案、积分草案",
+      "gates": "完整性核验；稳定身份去重；只读群聊；不自动发布"
+    },
+    {
+      "name": "guanlan-season-recap-profile-card-maker",
+      "category": "Content / Guanlan",
+      "owner": "观澜内容运营",
+      "upstream": "第一季定稿原文与已核验公开档案",
+      "downstream": "每位分享者一张收官人物卡",
+      "gates": "非空独立引语逐字回溯；高亮子串；官方 Logo；手机验收"
+    },
+    {
+      "name": "guanlan-community-essay-writer",
+      "category": "Content / Guanlan",
+      "owner": "观澜编辑部",
+      "upstream": "当期全部嘉宾原文与事实归属账本",
+      "downstream": "多嘉宾社群精华稿及核验记录",
+      "gates": "Astra 会话写作；全部嘉宾覆盖；原话与归属核验；用户指定确认节点；不自动发布"
     }
   ],
   "platforms": [
@@ -120,7 +144,8 @@
         "guanlan-first-line-viewpoints-monitor",
         "follow-builders",
         "guanlan-trend-radar-updater",
-        "guanlan-opportunity-radar-updater"
+        "guanlan-opportunity-radar-updater",
+        "guanlan-community-intelligence-monitor"
       ]
     },
     {
@@ -154,11 +179,13 @@
       "id": "community",
       "label": "社群会员",
       "skillNames": [
-        "guanlan-community-intelligence-monitor",
         "guanlan-sharing-archive",
         "guanlan-zaolang-profile-writer",
         "guanlan-zaolang-card-maker",
-        "guanlan-wechat-cover-maker"
+        "guanlan-wechat-cover-maker",
+        "guanlan-community-monitor",
+        "guanlan-season-recap-profile-card-maker",
+        "guanlan-community-essay-writer"
       ]
     },
     {

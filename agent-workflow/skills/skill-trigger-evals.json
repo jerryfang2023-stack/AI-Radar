@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "prompt_contract": "GPT-5.6-SKILL-V1.0",
+  "prompt_contract": "GPT-6-ASTRA-SKILL-V1.0",
   "case_expectations": {
     "direct": "trigger",
     "indirect": "trigger",
@@ -139,7 +139,7 @@
     },
     {
       "skill": "guanlan-skill-editor",
-      "direct": "按 GPT-5.6 最新提示词规范审计并更新观澜 Skill。",
+      "direct": "按 GPT-6 Astra 提示词规范审计并更新观澜 Skill。",
       "indirect": "同类任务持续失败，请把根因固化为可测试的 Skill 约束。",
       "incomplete": "优化 Skill，但没有目标 Skill 或失败证据。",
       "negative": "运行生产任务、推送代码并部署站点。",

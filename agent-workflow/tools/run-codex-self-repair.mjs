@@ -4,6 +4,7 @@ import path from "node:path";
 import { runLoggedCommand, defaultRuntimeDirectory, CODEX_REPAIR_TIMEOUT_MS } from "./lib/logged-command.mjs";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
 import { refreshRepairWorktree } from "./lib/repair-worktree.mjs";
+import { defaultRepairArgs } from "./lib/codex-repair-model.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -321,8 +322,8 @@ function main() {
       status = "blocked_repair_worktree";
       blockReason = `${repairWorktree.reason} ${repairWorktree.command?.stderr || repairWorktree.command?.error || ""}`.trim();
     } else {
-      const defaultCodexArgs = `--ask-for-approval never exec --sandbox danger-full-access --output-last-message "${codexLastMessagePath}" --cd "${repairWorktree.path}" -`;
-      const codexArgs = enforceRepairWorktree(parseArgList(args.get("codex-args") || defaultCodexArgs), repairWorktree.path);
+      const defaultCodexArgs = defaultRepairArgs(repairWorktree.path, codexLastMessagePath);
+      const codexArgs = enforceRepairWorktree(args.has("codex-args") ? parseArgList(args.get("codex-args")) : defaultCodexArgs, repairWorktree.path);
       codexInvocation = runCommand("codex self repair", codexCommand, codexArgs, {
         input: prompt,
         timeoutMs: Number.parseInt(args.get("codex-timeout-ms") || String(CODEX_REPAIR_TIMEOUT_MS), 10),

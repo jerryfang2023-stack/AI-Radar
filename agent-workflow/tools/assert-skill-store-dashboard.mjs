@@ -168,9 +168,11 @@ export function evaluateSkillStoreDashboard(paths = dashboardContractPaths(), op
     }
   };
   const localNames = new Set([...skillDirectories(paths.storeDir), ...skillDirectories(paths.projectSkillDir)]);
+  const governedNames = new Set(readGovernedSkills(paths.projectSkillDir).map((skill) => skill.name));
   for (const name of localNames) {
     const stored = path.join(paths.storeDir, name);
-    checkDescription(name, fs.existsSync(path.join(stored, "SKILL.md")) ? stored : path.join(paths.projectSkillDir, name));
+    const useStore = !governedNames.has(name) && fs.existsSync(path.join(stored, "SKILL.md"));
+    checkDescription(name, useStore ? stored : path.join(paths.projectSkillDir, name));
   }
   for (const entry of catalogSources(catalog).entries) {
     const name = localNames.has(entry.name) ? `${entry.sourceKind}:${entry.name}` : entry.name;

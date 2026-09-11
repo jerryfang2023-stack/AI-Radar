@@ -32,10 +32,18 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current factual relationship contract: RELATION-V2.1.
 - Current targeted historical collection contract: BACKFILL-V1.0.
 - Current tag taxonomy version: TAG-V4.1.
-- Current Skill Store version: `v2.2.0`; all 23 active governed Skills follow `GPT-5.6-SKILL-V1.0`, include `agents/openai.yaml`, and have five-case trigger-eval inventory coverage. Separately registered content, AIP project, and plugin-cache entries are inventory, not additional certified or globally enabled Skills.
+- Current Skill Store version: `v2.3.0`; all 23 active governed Skills follow `GPT-6-ASTRA-SKILL-V1.0`, include `agents/openai.yaml`, and have five-case trigger-eval inventory coverage. Separately registered content, AIP project, and plugin-cache entries are inventory, not additional certified or globally enabled Skills.
 - Current data-center rule source: `context/12-data-center-v4.md`.
 - `context/07-v3-intelligence-generation-rules.md` documents frozen V3 history only; it is not a production route.
 - V2 website pages and old four-column output rules are retired.
+
+## Codex execution contract
+
+- Project default: GPT-6 Astra with high reasoning; quality review uses the same model, experience review uses medium, and bounded evidence exploration retains GPT-5.6 Terra medium.
+- Complete authorized local changes with proportional validation; resolve routine gaps from current context and ask only for material missing information. A planning or audit-only request remains read-only.
+- Resolve current versions from context rather than copying version pins into role prompts. Preserve accepted upstream artifacts and resume only the failed stage and its dependents.
+- Use scripts for deterministic computation and gates; keep evidence interpretation and final acceptance with the responsible agent. Static inventory coverage is not a successful model evaluation.
+- Skill migration ownership: `agent-workflow/skills/guanlan-skill-editor/references/gpt-6-astra-prompt-contract.md`. Production translation/report provider and V4 data contracts retain independent versions.
 
 ## Current Product Goal
 

@@ -6,12 +6,48 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
 import { skillSummary, catalogSources } from "../lib/skill-catalog.mjs";
-import { parseFrontmatter } from "../lib/guanlan-skill-ops.mjs";
+import { parseFrontmatter, readGovernedSkills, renderRegistryMarkdown } from "../lib/guanlan-skill-ops.mjs";
 import { evaluateSkillStoreDashboard } from "../assert-skill-store-dashboard.mjs";
 
 const builder = fileURLToPath(new URL("../build-skill-store-dashboard.mjs", import.meta.url));
 const write = (file, text) => { fs.mkdirSync(path.dirname(file), { recursive: true }); fs.writeFileSync(file, text, "utf8"); };
 const skill = (name, description) => `---\nname: ${name}\ndescription: ${description}\n---\n# ${name}\n`;
+
+test("governed dashboard uses project truth while reporting external mirror drift", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "skill-project-authority-"));
+  const project = path.join(fixture, "agent-workflow", "skills");
+  const store = path.join(fixture, "store");
+  const source = `---
+name: alpha
+description: Use when testing alpha. Do not use for beta.
+metadata:
+  guanlan:
+    version: "2.0.0"
+    lane: "Governance"
+    status: "governance"
+    responsibility: "Test alpha"
+    upstream: "context"
+    downstream: "checks"
+    gates: "tests"
+---
+# Alpha
+`;
+  write(path.join(project, "alpha", "SKILL.md"), source);
+  write(path.join(store, "alpha", "SKILL.md"), source.replace("2.0.0", "1.0.0"));
+  write(path.join(project, "skill-store-version.json"), JSON.stringify({ version: "2.3.0" }));
+  write(path.join(project, "skill-catalog-sources.json"), JSON.stringify({ includePluginCache: false, projectSources: [] }));
+  write(path.join(project, "skill-registry.md"), renderRegistryMarkdown(readGovernedSkills(project), new Date(), { version: "2.3.0" }));
+  const env = { ...process.env, GUANLAN_SKILL_STORE: store, GUANLAN_CODEX_CONFIG: path.join(fixture, "no-config"), GUANLAN_USER_SKILLS: path.join(fixture, "no-user-skills") };
+  const result = spawnSync(process.execPath, [builder], { cwd: fixture, env, encoding: "utf8" });
+  assert.equal(result.status, 0, result.stderr);
+  const file = path.join(fixture, "01-SiteV2", "site", "data", "local-skill-store-data.js");
+  const payload = JSON.parse(fs.readFileSync(file, "utf8").replace(/^window.WaveSightLocalSkillStore = /u, "").replace(/;\s*$/u, ""));
+  const row = payload.skills.find((item) => item.name === "alpha");
+  assert.equal(row.version, "2.0.0");
+  assert.equal(row.sourceKind, "project");
+  assert.equal(row.syncState, "drift");
+  assert.ok(fs.readFileSync(path.join(store, "alpha", "SKILL.md"), "utf8").includes('version: "1.0.0"'));
+});
 
 test("literal/folded descriptions preserve Chinese text, not YAML scalar markers", () => {
   for (const marker of ["|", "|-", "|+", ">", ">-"]) {
