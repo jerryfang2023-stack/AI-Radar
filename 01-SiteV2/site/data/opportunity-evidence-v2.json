@@ -9,7 +9,7 @@
     "activeDate": "2026-09-12",
     "generatedAt": "2026-09-12T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 646,
+    "evidenceCount": 664,
     "directionCardCount": 0,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -584,16 +584,96 @@
       }
     },
     {
-      "id": "EV-0e7c33ff3b622ab1",
-      "event_id": "EV-0e7c33ff3b622ab1",
+      "id": "EV-0c4a6f5c945bd4dc",
+      "event_id": "EV-0c4a6f5c945bd4dc",
       "event_type": "funding",
-      "publication_status": "partial",
-      "title": "超维动力完成超5亿元天使+轮系列融资，聚焦于高拟人机器人 投资界（ID：pedaily2012）9月11日消息，超维动力（Kinetix AI）宣布完成超5亿元天使 轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。该笔融资将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。 11:17 投融资",
+      "publication_status": "verified",
+      "title": "让机器人拥有触觉，新智具身天使轮融资近亿",
       "category": "funding",
       "categoryLabel": "融资",
       "date": "2026-09-12",
-      "event_time": "2026-09-11T11:17:00+08:00",
-      "sourceUrl": "https://m.pedaily.cn/first/178491.shtml",
+      "event_time": "2026-05-27T01:07:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202605/564455.shtml",
+      "sourceName": "投资界",
+      "subject": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）",
+      "sourceExcerpt": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）宣布完成近亿元天使轮融资",
+      "entity_refs": [
+        {
+          "entity_id": "EN-3ee57b807d91aa43",
+          "canonical_name": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-847ab427c5809561",
+          "canonical_name": "首发| 让机器人拥有触觉",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-bc6ceb13cdd90fb1"
+      ],
+      "source_refs": [
+        "SA-420cabd14e27c325"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-3ee57b807d91aa43"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-bc6ceb13cdd90fb1",
+            "source_refs": [
+              "SA-420cabd14e27c325"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-0e7c33ff3b622ab1",
+      "event_id": "EV-0e7c33ff3b622ab1",
+      "event_type": "funding",
+      "publication_status": "disputed",
+      "title": "超维动力完成超5亿元天使+轮系列融资，聚焦于高拟人机器人 - 投资界",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-09-11T03:23:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202609/568865.shtml",
       "sourceName": "投资界",
       "subject": "超维动力",
       "sourceExcerpt": "超维动力完成超5亿元天使+轮系列融资，聚焦于高拟人机器人",
@@ -611,6 +691,7 @@
         "CL-2281f81999d3e673"
       ],
       "source_refs": [
+        "SA-55f32a4b12e733e1",
         "SA-0cf2b23e1e13130a"
       ],
       "taxonomy_version": "TAG-V4.1",
@@ -662,6 +743,80 @@
             "claim_ref": "CL-176662fa8a597e6f",
             "source_refs": [
               "SA-0cf2b23e1e13130a"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-24d8bc9824f525a5",
+      "event_id": "EV-24d8bc9824f525a5",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "阿里大牛带队，未来式智能又融资了 - 投资界",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-05-20T05:22:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202605/564109.shtml",
+      "sourceName": "投资界",
+      "subject": "首发| 阿里大牛带队",
+      "sourceExcerpt": "国内AI Agent创业公司未来式智能宣布完成Pre-A轮融资，新进投资方包括凡创资本、中关村资本、探元资本，老股东东证创新、麟阁创投跟投。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-09e89b2461409989",
+          "canonical_name": "首发| 阿里大牛带队",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-047364b9be67f665",
+          "canonical_name": "Alibaba",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-2a7beff5b8287eeb",
+          "canonical_name": "未来式智能",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-c3cab7a2cb459135"
+      ],
+      "source_refs": [
+        "SA-6156c54316c9db9f"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-c3cab7a2cb459135",
+            "source_refs": [
+              "SA-6156c54316c9db9f"
             ],
             "provenance": "event_type_rule"
           }
@@ -774,6 +929,264 @@
       }
     },
     {
+      "id": "EV-2de77a62435cc041",
+      "event_id": "EV-2de77a62435cc041",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-08-13T00:00:00+08:00",
+      "sourceUrl": "https://www.qbitai.com/2026/08/472060.html",
+      "sourceName": "量子位",
+      "subject": "元点科技",
+      "sourceExcerpt": "40天2轮融资数千万，瞄准物理AI基础设施",
+      "entity_refs": [
+        {
+          "entity_id": "EN-2505fe8a9e908e04",
+          "canonical_name": "元点科技",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-974495582fcea239",
+        "CL-beb537e3ca9d232a",
+        "CL-a375931fddcf4cdb"
+      ],
+      "source_refs": [
+        "SA-fe80259b9cdd32a8"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-2505fe8a9e908e04"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-974495582fcea239",
+            "source_refs": [
+              "SA-fe80259b9cdd32a8"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-49779b04267ac3b9",
+      "event_id": "EV-49779b04267ac3b9",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-01-12T00:00:00+08:00",
+      "sourceUrl": "https://www.qbitai.com/2026/01/369147.html",
+      "sourceName": "量子位",
+      "subject": "具身智能开年最大",
+      "sourceExcerpt": "具身智能开年最大融资，字节红杉领投10亿",
+      "entity_refs": [
+        {
+          "entity_id": "EN-13d488eb3ac425b4",
+          "canonical_name": "具身智能开年最大",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-8dc72a4672894e0f",
+          "canonical_name": "自变量机器人",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-5388bc10736a0eff",
+          "canonical_name": "ByteDance",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-ee8af4b3f1907624",
+        "CL-3c73534b527730b4",
+        "CL-5d53622212ecaeef",
+        "CL-aeab75ba5febb3cf",
+        "CL-9410d4a8cee3794f",
+        "CL-326bff116315b103"
+      ],
+      "source_refs": [
+        "SA-d71164522790d96e",
+        "SA-81f1d06f127a765c"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-13d488eb3ac425b4"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-13d488eb3ac425b4"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-8dc72a4672894e0f"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-ee8af4b3f1907624",
+            "source_refs": [
+              "SA-d71164522790d96e"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-4a1003186048c68c",
+      "event_id": "EV-4a1003186048c68c",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "奉劝各位AI视频玩家，要融资要上市赶紧的",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-09-12T06:50:10.000Z",
+      "sourceUrl": "https://www.36kr.com/p/3976049215402504",
+      "sourceName": "36氪",
+      "subject": "奉劝各位AI视频玩家",
+      "sourceExcerpt": "所以，奉劝各位AI视频玩家，要融资要上市确实得赶紧，机不可失，时不再来。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-15a0017d2d9191a0",
+          "canonical_name": "奉劝各位AI视频玩家",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-6e18df7c7be7afd2",
+          "canonical_name": "奉劝各位AI视频玩家，要",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-c05b65497859d521"
+      ],
+      "source_refs": [
+        "SA-4a2dc3d7a1c5a7c1"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-c05b65497859d521",
+            "source_refs": [
+              "SA-4a2dc3d7a1c5a7c1"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-5189e9d8698a3272",
       "event_id": "EV-5189e9d8698a3272",
       "event_type": "funding",
@@ -828,6 +1241,561 @@
             "claim_ref": "CL-02ca337e08e4f11c",
             "source_refs": [
               "SA-68f1ac51ffd21cf5"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-59d5ab345e77ee7f",
+      "event_id": "EV-59d5ab345e77ee7f",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "AI搜索诞生一个天使轮，智推时代融资数千万元 - 投资界",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-07-07T00:44:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202607/565918.shtml",
+      "sourceName": "投资界",
+      "subject": "首发| AI搜索诞生一个天使轮",
+      "sourceExcerpt": "今日（7月7日），AI营销科技公司智推时代GenOptima（简称“智推时代”）宣布完成数千万元天使轮融资，由上海知识产权基金、天图投资、知名个人投资人魏巍等参与投资，老股东三七互娱继续跟投。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-c3a3b9159fcbd4e7",
+          "canonical_name": "首发| AI搜索诞生一个天使轮",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-85a6b05509f9fb74",
+          "canonical_name": "Baichuan AI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-db2a23eedea5ab15",
+        "CL-2403954955cf5ff5",
+        "CL-fd78d2bce02a029f",
+        "CL-057d50dd438fba8a"
+      ],
+      "source_refs": [
+        "SA-75d5fa7e7297be0f"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-85a6b05509f9fb74"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-849324a93e4845b5"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "marketing",
+          "value_name": "营销",
+          "entity_ids": [
+            "EN-85a6b05509f9fb74"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-282eb7b607bfee5d"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "enterprise_software_platform",
+          "value_name": "企业软件平台",
+          "entity_ids": [
+            "EN-85a6b05509f9fb74"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-9c8e31b668499c28"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-85a6b05509f9fb74"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-68233b570fdaaf7b"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "content_creation",
+          "value_name": "内容创作",
+          "entity_ids": [
+            "EN-85a6b05509f9fb74"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-616f58c96381a96a"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "data_analysis",
+          "value_name": "数据分析",
+          "entity_ids": [
+            "EN-85a6b05509f9fb74"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-cd2bfbacd2b7f601"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "marketing",
+          "value_name": "营销",
+          "entity_ids": [
+            "EN-85a6b05509f9fb74"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-7cd1a012c1c69cea"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "financial_services",
+          "value_name": "金融服务",
+          "entity_ids": [
+            "EN-c3a3b9159fcbd4e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "knowledge_base_qa",
+            "claim_ref": "CL-db2a23eedea5ab15",
+            "source_refs": [
+              "SA-75d5fa7e7297be0f"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-db2a23eedea5ab15",
+            "source_refs": [
+              "SA-75d5fa7e7297be0f"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "knowledge_base_qa"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-68d5a02e5213b43c",
+      "event_id": "EV-68d5a02e5213b43c",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "OpenAI最新融资1100亿美元 - 投资界",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-02-28T04:55:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202602/561239.shtml",
+      "sourceName": "投资界",
+      "subject": "OpenAI最新",
+      "sourceExcerpt": "2月27日晚，OpenAI宣布获得新融资 1100亿美元 ，其中300亿美元来自 软银 ，300亿美元来自 英伟达 ，500亿美元来自 亚马逊 ，投前估值7300亿美元。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-fee0e0d4826ebfd9",
+          "canonical_name": "OpenAI最新",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-80d387ccb3289295",
+          "canonical_name": "SoftBank",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-ea057971bd8aec13",
+        "CL-c186dca59dbb73d5"
+      ],
+      "source_refs": [
+        "SA-2c3a182c5a6b5011"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-599a7fd61e877d23"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-9a3a8eda944b688b"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "end_user_application",
+          "value_name": "终端 AI 应用",
+          "entity_ids": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-2b1d72115694f2c2"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ad36df976f1e4118"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-50b0572d90f92f21"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c5502b399287e04f"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "content_creation",
+          "value_name": "内容创作",
+          "entity_ids": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-82e9af63770817bd"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-79feb36f65cc9906"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "software_development",
+          "value_name": "软件开发",
+          "entity_ids": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-4e6f9ca00b145368"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-ea057971bd8aec13",
+            "source_refs": [
+              "SA-2c3a182c5a6b5011"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-6acc1b9a20bbf5d4",
+      "event_id": "EV-6acc1b9a20bbf5d4",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "AI短剧工具赛道，年度最大单笔融资来了 - 量子位",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-06-11T00:00:00+08:00",
+      "sourceUrl": "https://www.qbitai.com/2026/06/434298.html",
+      "sourceName": "量子位",
+      "subject": "旗下AI短剧协作平台AniShort",
+      "sourceExcerpt": "旗下AI短剧协作平台AniShort完成近 亿元 融资，由北京泰中合领投，多家机构跟投，老股东全线加码。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-5a934b85fc2a0365",
+          "canonical_name": "旗下AI短剧协作平台AniShort",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-15eaa0b4cbb7ead3",
+          "canonical_name": "AI短剧工具赛道",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-5d08057730879d87"
+      ],
+      "source_refs": [
+        "SA-7e36cee9c7aeac95"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-5d08057730879d87",
+            "source_refs": [
+              "SA-7e36cee9c7aeac95"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-714896cac6cbf4c3",
+      "event_id": "EV-714896cac6cbf4c3",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "智平方在7轮融资后，又完成5轮B轮系列融资，融资规模超10亿 - 量子位",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-02-24T00:00:00+08:00",
+      "sourceUrl": "https://www.qbitai.com/2026/02/382004.html",
+      "sourceName": "量子位",
+      "subject": "智平方在7轮融资后，又",
+      "sourceExcerpt": "智平方在7轮融资后，又完成5轮B轮系列融资，融资规模超10亿，估值超百亿",
+      "entity_refs": [
+        {
+          "entity_id": "EN-e037ba3a89f946da",
+          "canonical_name": "智平方在7轮融资后，又",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-ce22f929f4a17467",
+          "canonical_name": "智平方",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-a0080687df495006",
+          "canonical_name": "继2025年半年内连续",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-bea167933b1ad61d",
+          "canonical_name": "首发｜深圳开年首个百亿独角兽",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-90596b71813a2ee2",
+          "canonical_name": "智平方（AI² Robotics）",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-7561ab247b555458",
+        "CL-3833c4e55bd0c4e8",
+        "CL-4f3b3627472980c3",
+        "CL-b9a1a6de30a1687d"
+      ],
+      "source_refs": [
+        "SA-ef636f668c13cece",
+        "SA-3db38c343b749373"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "model",
+          "value_name": "模型",
+          "entity_ids": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-90596b71813a2ee2"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-7561ab247b555458",
+            "source_refs": [
+              "SA-ef636f668c13cece"
             ],
             "provenance": "event_type_rule"
           }
@@ -924,6 +1892,17 @@
         {
           "dimension_id": "target_user",
           "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-acdba32063123d44"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
           "value_id": "researcher",
           "value_name": "研究人员",
           "entity_ids": [
@@ -931,6 +1910,17 @@
           ],
           "provenance": "reviewed_funding_insight",
           "assertion_ref": "REC-aaf7cf419e90a7f0"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "data_analysis",
+          "value_name": "数据分析",
+          "entity_ids": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-95f35638c999655e"
         },
         {
           "dimension_id": "use_case",
@@ -999,6 +1989,74 @@
       }
     },
     {
+      "id": "EV-779f4b283990f90e",
+      "event_id": "EV-779f4b283990f90e",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "星动纪元两个月融资25亿，国资组团入场 - 投资界",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-07-06T01:11:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202607/565883.shtml",
+      "sourceName": "投资界",
+      "subject": "首发| 星动纪元两个月",
+      "sourceExcerpt": "至此，星动纪元在两个月内密集融资25亿，构建起「国家级资本引领+顶 级财务赋能+产业生态协同」的三重资本矩阵，其中齐聚了行业最多产业资本注资，合计超20家。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-51d3feaaa8072bc5",
+          "canonical_name": "首发| 星动纪元两个月",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-bbc41366a5a7cf78",
+          "canonical_name": "星动纪元",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-b99a35eff0cca089"
+      ],
+      "source_refs": [
+        "SA-34bec601301ded8a"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-b99a35eff0cca089",
+            "source_refs": [
+              "SA-34bec601301ded8a"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-77d410f38eb44c18",
       "event_id": "EV-77d410f38eb44c18",
       "event_type": "funding",
@@ -1041,6 +2099,253 @@
             "claim_ref": "CL-00a48ea923d05338",
             "source_refs": [
               "SA-7e166d6500102a40"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-800b02f5bfef357d",
+      "event_id": "EV-800b02f5bfef357d",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "未来智能融资亿元级，传音投了 - 投资界",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-05-08T01:29:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202605/563554.shtml",
+      "sourceName": "投资界",
+      "subject": "首发|未来智能",
+      "sourceExcerpt": "投资界获悉，今日（5月8日），AI硬件公司「未来智能」完成亿元级A+轮融资，传音参投。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-e24f99182b7a0afd",
+          "canonical_name": "首发|未来智能",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-5a28a1a99a417ba5",
+          "canonical_name": "Ant Group",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-f282c8bf9687175b",
+        "CL-445cb27fc34eb38b",
+        "CL-de12edbab3f79d76"
+      ],
+      "source_refs": [
+        "SA-054aff2c7f9ea303"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "agentic_execution",
+          "value_name": "智能体执行",
+          "entity_ids": [
+            "EN-e24f99182b7a0afd"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-f282c8bf9687175b",
+            "source_refs": [
+              "SA-054aff2c7f9ea303"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-81810a440198ac3c",
+      "event_id": "EV-81810a440198ac3c",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-04-17T03:53:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202604/562863.shtml",
+      "sourceName": "投资界",
+      "subject": "高瓴红杉",
+      "sourceExcerpt": "4月16日，它石智航宣布完成4.55亿美金Pre-A轮融资，一举创下中国具身智能有史以来最高单轮融资纪录。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-3ad8cf57fae189e5",
+          "canonical_name": "高瓴红杉",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-39ba5f9dcab4e98a",
+          "canonical_name": "它石智航",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-4f3fc6d096f4bf35",
+        "CL-6fc5a6591814e81f",
+        "CL-007a0c8fc70460d7",
+        "CL-ff53181f46589d4d",
+        "CL-058541ce577cc1d1",
+        "CL-8b8f46332d14e247",
+        "CL-16865318e6b3fa41",
+        "CL-be319e8948e9c506",
+        "CL-0cc5acbf7d815a7c"
+      ],
+      "source_refs": [
+        "SA-7159b930da750847",
+        "SA-f8446ff64460fec9",
+        "SA-0d168e82800f833a"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "physical_ai",
+          "value_name": "Physical AI",
+          "entity_ids": [
+            "EN-39ba5f9dcab4e98a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-8d685abcf92cfa1d"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "logistics_supply_chain",
+          "value_name": "物流与供应链",
+          "entity_ids": [
+            "EN-39ba5f9dcab4e98a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-aaceaceb033d2953"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "manufacturing",
+          "value_name": "制造业",
+          "entity_ids": [
+            "EN-39ba5f9dcab4e98a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-dc72f34d39cb3318"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "robotic_system",
+          "value_name": "机器人系统",
+          "entity_ids": [
+            "EN-39ba5f9dcab4e98a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5746a643e5e5cd62"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-39ba5f9dcab4e98a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-90ed1457eebb0c19"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-39ba5f9dcab4e98a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-e75759cc6e1808c8"
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-3ad8cf57fae189e5"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-4f3fc6d096f4bf35",
+            "source_refs": [
+              "SA-7159b930da750847"
             ],
             "provenance": "event_type_rule"
           }
@@ -1298,6 +2603,74 @@
       }
     },
     {
+      "id": "EV-990a7d94e2328461",
+      "event_id": "EV-990a7d94e2328461",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-02-24T00:00:00+08:00",
+      "sourceUrl": "https://www.qbitai.com/2026/02/381766.html",
+      "sourceName": "量子位",
+      "subject": "千寻智能",
+      "sourceExcerpt": "近日， 千寻智能 完成两轮融资 近20亿元 ，估值突破 百亿 大关。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-1032f7a4df33f629",
+          "canonical_name": "千寻智能",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-5f62adfc4d1a76fd",
+          "canonical_name": "20亿",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-d150384c72a8fee9"
+      ],
+      "source_refs": [
+        "SA-19e24e35e678ea76"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-d150384c72a8fee9",
+            "source_refs": [
+              "SA-19e24e35e678ea76"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-9fd8d784459150e5",
       "event_id": "EV-9fd8d784459150e5",
       "event_type": "funding",
@@ -1418,6 +2791,80 @@
       }
     },
     {
+      "id": "EV-ad311b98b372dc20",
+      "event_id": "EV-ad311b98b372dc20",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "139笔过亿融资，超600亿真金白银，砸向这些AI公司-36氪",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-09-12T06:50:09.000Z",
+      "sourceUrl": "https://www.36kr.com/p/3546815118159749",
+      "sourceName": "36氪",
+      "subject": "乐聚机器人于10月",
+      "sourceExcerpt": "乐聚机器人于10月完成近15亿元Pre-IPO轮融资，估值90亿元，并已启动IPO辅导。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-51cb2d61b4ad1251",
+          "canonical_name": "乐聚机器人于10月",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-c6d8dd584828845c"
+      ],
+      "source_refs": [
+        "SA-e099ce09e84ad991"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-51cb2d61b4ad1251"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-c6d8dd584828845c",
+            "source_refs": [
+              "SA-e099ce09e84ad991"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-b91024c06d8762a4",
       "event_id": "EV-b91024c06d8762a4",
       "event_type": "funding",
@@ -1523,6 +2970,157 @@
       }
     },
     {
+      "id": "EV-bb583c256483bcf1",
+      "event_id": "EV-bb583c256483bcf1",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "超维探索N++完成种子轮融资，打造通用人工智能操作系统（AI OS）",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-04-13T08:53:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202604/562694.shtml",
+      "sourceName": "投资界",
+      "subject": "超维探索N++",
+      "sourceExcerpt": "完成由 倚锋资本和深圳世钦投资 的数千万元种子轮融资。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-99489e67d8066af7",
+          "canonical_name": "超维探索N++",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-ee4f03070e418a17"
+      ],
+      "source_refs": [
+        "SA-772b6dd055b69d1e"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "ai_development_orchestration",
+          "value_name": "AI 开发与编排",
+          "entity_ids": [
+            "EN-99489e67d8066af7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-17dd64aca0faced3"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-99489e67d8066af7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-aa18ea686a4eea3c"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "development_deployment",
+          "value_name": "开发与部署",
+          "entity_ids": [
+            "EN-99489e67d8066af7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-f44743be1a80cfa9"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_infrastructure_software",
+          "value_name": "AI 基础设施软件",
+          "entity_ids": [
+            "EN-99489e67d8066af7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-350ab8f377d90eb9"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-99489e67d8066af7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-32ca3cba1bc97769"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-99489e67d8066af7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a75ace094008e7db"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-99489e67d8066af7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-354febe058e211d8"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "software_development",
+          "value_name": "软件开发",
+          "entity_ids": [
+            "EN-99489e67d8066af7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0cac7299c9a6abd5"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-ee4f03070e418a17",
+            "source_refs": [
+              "SA-772b6dd055b69d1e"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-bf8698a2e28fea12",
       "event_id": "EV-bf8698a2e28fea12",
       "event_type": "funding",
@@ -1541,7 +3139,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -1692,6 +3290,139 @@
             "claim_ref": "CL-de10b8c803f82bc0",
             "source_refs": [
               "SA-bc187ec45e807205"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-d3fcd1ea4d9baf47",
+      "event_id": "EV-d3fcd1ea4d9baf47",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "乐享科技完成近5亿元Pre-A轮融资，发布家庭具身智能品牌“元点Zeroth”",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-07-02T02:20:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202607/565774.shtml",
+      "sourceName": "投资界",
+      "subject": "乐享科技",
+      "sourceExcerpt": "投资界（ID：pedaily2012）7月2日消息，家庭具身智能领导者苏州乐享智能科技有限公司（下称“乐享科技”），今日正式官宣完成 近5亿元Pre-A轮融资 ，并正式发布家庭具身智能品牌“元点Zeroth”。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-634537cdabd4e325",
+          "canonical_name": "乐享科技",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-41fa1120f3cfbcd4",
+          "canonical_name": "家庭具身智能领导者苏州乐享智能科技有限公司",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-62f2ee2aca2a6bc6",
+          "canonical_name": "半年内",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-52a15e1038c14607",
+        "CL-52dea362c2ce3024",
+        "CL-1dea6b1205de5e08",
+        "CL-331e8f77a37f8b86"
+      ],
+      "source_refs": [
+        "SA-d2930101d527e40f"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "physical_ai",
+          "value_name": "Physical AI",
+          "entity_ids": [
+            "EN-634537cdabd4e325"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-f9f1be7fb1a43fc4"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "robotic_system",
+          "value_name": "机器人系统",
+          "entity_ids": [
+            "EN-634537cdabd4e325"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-23e517a710127a9b"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-634537cdabd4e325"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-de3252e0d142aee6"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-634537cdabd4e325"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-3b774dc675f7d1da"
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-634537cdabd4e325"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-52a15e1038c14607",
+            "source_refs": [
+              "SA-d2930101d527e40f"
             ],
             "provenance": "event_type_rule"
           }
@@ -1947,6 +3678,277 @@
             "claim_ref": "CL-7f55a6faca222ac1",
             "source_refs": [
               "SA-1c05788612d77970"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-e59938ae531af428",
+      "event_id": "EV-e59938ae531af428",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "光轮智能融资10亿，上百家产业方找上门 - 投资界",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-03-13T07:09:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202603/561678.shtml",
+      "sourceName": "投资界",
+      "subject": "光轮智能",
+      "sourceExcerpt": "投资界获悉，具身数据与仿真基础设施公司光轮智能近日完成A++与A+++轮融资，总额达10亿元人民币。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-8b332ded81dc8d3a",
+          "canonical_name": "光轮智能",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-8a9e93ee0f90b062",
+        "CL-b014cd026c1fc168",
+        "CL-8b83219e86779898"
+      ],
+      "source_refs": [
+        "SA-bebb5efbecfc4c23"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "synthetic_data",
+          "value_name": "合成数据",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-e4480505854271f6"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-2cf57831923e9f2f"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "data",
+          "value_name": "数据",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-1a491d138751fde1"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "automotive_transportation",
+          "value_name": "汽车与交通",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-6483a6b7449a4da5"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "logistics_supply_chain",
+          "value_name": "物流与供应链",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0759829f4445a0ff"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "manufacturing",
+          "value_name": "制造业",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-b5038011e67269de"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_infrastructure_software",
+          "value_name": "AI 基础设施软件",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-2539db4f3358e69b"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-44256bd44f9619f8"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "researcher",
+          "value_name": "研究人员",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-bdb838a6e859c2df"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "design_engineering",
+          "value_name": "设计与工程",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-f0d6bb9cdb480386"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-9696b83ffb971b6d"
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-8a9e93ee0f90b062",
+            "source_refs": [
+              "SA-bebb5efbecfc4c23"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-edc3b86e3a19248a",
+      "event_id": "EV-edc3b86e3a19248a",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "3个月近50亿，千寻打破具身融资纪录 - 投资界",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-06-03T00:12:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202606/564786.shtml",
+      "sourceName": "投资界",
+      "subject": "千寻智能",
+      "sourceExcerpt": "今日（6月3日），千寻智能宣布完成15亿元A+轮融资，这意味着三个月内密集完成四轮融资吸金近50亿元，刷新具身智能行业的融资速度纪录。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-1032f7a4df33f629",
+          "canonical_name": "千寻智能",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-b9a72ff9054a78e8"
+      ],
+      "source_refs": [
+        "SA-78143b283f10e9d6"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-1032f7a4df33f629"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-b9a72ff9054a78e8",
+            "source_refs": [
+              "SA-78143b283f10e9d6"
             ],
             "provenance": "event_type_rule"
           }
@@ -4566,7 +6568,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-4c46c485bcafbbcf",
@@ -5493,7 +7495,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -5591,7 +7593,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -10965,7 +12967,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-1d79127e9d90e89b",
@@ -18266,7 +20268,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-b81c8201acfc7639",
@@ -39668,7 +41670,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-59bd831b990070c7",
@@ -40120,7 +42122,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -45588,7 +47590,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -57154,7 +59156,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-e3ea8280d7689bb7",
@@ -57709,7 +59711,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-199975c3b4f30c6a",
@@ -58700,7 +60702,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-46162bbc9eb57274",
@@ -62951,7 +64953,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -64000,7 +66002,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-8dfa869c34844253",
@@ -64433,7 +66435,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-199975c3b4f30c6a",
@@ -64972,7 +66974,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-199975c3b4f30c6a",

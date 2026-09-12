@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "entity": {
@@ -28,6 +28,7 @@
       "EV-8665fc3a9e8b6b16",
       "EV-df8954acf9a13848",
       "EV-1a6688afdfd108ef",
+      "EV-68d5a02e5213b43c",
       "EV-cafe435ddd007821",
       "EV-a37b9d9fb85e460f",
       "EV-f819309f846d95bc",
@@ -36,11 +37,12 @@
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-15",
-    "lastSeen": "2026-09-11",
+    "firstSeen": "2026-02-28",
+    "lastSeen": "2026-09-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-68d5a02e5213b43c",
         "EV-b9d8b3582f12bdc7",
         "EV-8665fc3a9e8b6b16",
         "EV-df8954acf9a13848",
@@ -61,6 +63,133 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-68d5a02e5213b43c",
+        "dataDate": "2026-09-12",
+        "date": "2026-02-28",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI最新融资1100亿美元 - 投资界",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-599a7fd61e877d23",
+            "fundingInsightId": "FI-9e9876e63b8ca5f3"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9a3a8eda944b688b",
+            "fundingInsightId": "FI-9e9876e63b8ca5f3"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2b1d72115694f2c2",
+            "fundingInsightId": "FI-9e9876e63b8ca5f3"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-82e9af63770817bd",
+            "fundingInsightId": "FI-9e9876e63b8ca5f3"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-79feb36f65cc9906",
+            "fundingInsightId": "FI-9e9876e63b8ca5f3"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4e6f9ca00b145368",
+            "fundingInsightId": "FI-9e9876e63b8ca5f3"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ad36df976f1e4118",
+            "fundingInsightId": "FI-9e9876e63b8ca5f3"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-50b0572d90f92f21",
+            "fundingInsightId": "FI-9e9876e63b8ca5f3"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c5502b399287e04f",
+            "fundingInsightId": "FI-9e9876e63b8ca5f3"
+          }
+        ],
+        "entityIds": [
+          "EN-fee0e0d4826ebfd9",
+          "EN-7d3194f79e645c42",
+          "EN-80d387ccb3289295",
+          "EN-8d4321d936320802"
+        ]
+      },
       {
         "id": "EV-b9d8b3582f12bdc7",
         "dataDate": "2026-09-11",

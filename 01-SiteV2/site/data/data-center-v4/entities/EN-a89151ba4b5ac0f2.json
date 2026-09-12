@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "entity": {
@@ -24,6 +24,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-f28f5b680afb7495",
       "EV-876baa523eb93c4f",
       "EV-68897f26c8d956df",
       "EV-91aa3136c20babd1",
@@ -46,12 +47,13 @@
       "EN-33ea25778e18d372"
     ],
     "firstSeen": "2026-02-14",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-09-12",
     "relationIds": [
       "REL2-0bf66d98de87a2bb"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-f28f5b680afb7495",
         "EV-876baa523eb93c4f"
       ],
       "deployments": [],
@@ -72,6 +74,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-f28f5b680afb7495",
+        "dataDate": "2026-09-12",
+        "date": "2026-04-10",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "深朴智能完成数亿元新一轮融资，加速具身智能商业化落地 - 投资界",
+        "displayTags": [],
+        "entityIds": [
+          "EN-52e509cf0c2a746c",
+          "EN-a89151ba4b5ac0f2"
+        ]
+      },
       {
         "id": "EV-68897f26c8d956df",
         "dataDate": "2026-08-20",
@@ -802,6 +820,7 @@
         "EV-59882383f82f215d",
         "EV-c5d7d88d1aef8edb",
         "EV-cded77b1de2db61a",
+        "EV-714896cac6cbf4c3",
         "EV-535c2f4fb851332d",
         "EV-81318fb4bcdb926a",
         "EV-fec0251eafea1a20",
@@ -1075,6 +1094,7 @@
         "EN-cd35ca6b5c3cf23c",
         "EN-883be863cc6562bb",
         "EN-a83a3af1a4866fd5",
+        "EN-e037ba3a89f946da",
         "EN-b81c8201acfc7639",
         "EN-25465dbbb180e21b",
         "EN-047364b9be67f665",

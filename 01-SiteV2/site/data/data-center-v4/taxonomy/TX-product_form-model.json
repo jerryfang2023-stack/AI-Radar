@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "node": {
@@ -71,6 +71,7 @@
       "EV-59882383f82f215d",
       "EV-c5d7d88d1aef8edb",
       "EV-cded77b1de2db61a",
+      "EV-714896cac6cbf4c3",
       "EV-535c2f4fb851332d",
       "EV-81318fb4bcdb926a",
       "EV-fec0251eafea1a20",
@@ -344,6 +345,7 @@
       "EN-cd35ca6b5c3cf23c",
       "EN-883be863cc6562bb",
       "EN-a83a3af1a4866fd5",
+      "EN-e037ba3a89f946da",
       "EN-b81c8201acfc7639",
       "EN-25465dbbb180e21b",
       "EN-047364b9be67f665",
@@ -18451,6 +18453,217 @@
       "publisher": "futurumgroup.com"
     },
     {
+      "id": "EV-714896cac6cbf4c3",
+      "dataDate": "2026-09-12",
+      "date": "2026-02-24",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "智平方在7轮融资后，又完成5轮B轮系列融资，融资规模超10亿 - 量子位",
+      "originalTitle": "",
+      "subject": "智平方在7轮融资后，又",
+      "action": "完成5轮B轮系列融资，融资",
+      "object": "规模超10亿 - 量子位",
+      "metrics": [
+        "10亿"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market",
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-qbitai-rss",
+          "cn-pedaily"
+        ],
+        "claim_refs": [
+          "CL-7561ab247b555458",
+          "CL-3833c4e55bd0c4e8",
+          "CL-4f3b3627472980c3",
+          "CL-b9a1a6de30a1687d"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-e037ba3a89f946da"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-e037ba3a89f946da"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-90596b71813a2ee2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-90596b71813a2ee2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-90596b71813a2ee2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-e037ba3a89f946da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e037ba3a89f946da",
+        "EN-ce22f929f4a17467",
+        "EN-a0080687df495006",
+        "EN-bea167933b1ad61d",
+        "EN-90596b71813a2ee2"
+      ],
+      "entityNames": [
+        "智平方在7轮融资后，又",
+        "智平方",
+        "继2025年半年内连续",
+        "首发｜深圳开年首个百亿独角兽",
+        "智平方（AI² Robotics）"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/02/382004.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-535c2f4fb851332d",
       "dataDate": "2026-08-03",
       "date": "2026-02-08",
@@ -19589,7 +19802,9 @@
         {
           "name": "GLM-5.3",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/990/264.htm",
@@ -19754,7 +19969,9 @@
         {
           "name": "V4 Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/990/002.htm",
@@ -24356,7 +24573,9 @@
         {
           "name": "V4.1-Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
@@ -29890,7 +30109,9 @@
         {
           "name": "V4 Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/deepseek-launches-an-improved-v4-pro-model-raises-api-prices-and-makes-its-agent-software-open-source",
@@ -43693,7 +43914,9 @@
         {
           "name": "MusaCoder",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/962/509.htm",
@@ -44283,7 +44506,7 @@
           "name": "Agentic AI",
           "type": "模型",
           "ownerNames": [
-            "Huawei"
+            "DeepSeek"
           ]
         }
       ],
@@ -49485,6 +49708,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-68d5a02e5213b43c",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
         "EV-b93b6abf31662339",
@@ -49694,8 +49918,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-ai_market_application-chips",
@@ -50790,6 +51014,7 @@
         "EV-4dfd7233c8c69b0b",
         "EV-657837763764c869",
         "EV-388a53fe918389b0",
+        "EV-5056b2f94d188dd6",
         "EV-c44f8fbab9e200ca",
         "EV-59b7ba3d079ad09a",
         "EV-3aefbdfa5df2fd6a",
@@ -51390,6 +51615,29 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "EN-e037ba3a89f946da",
+      "name": "智平方在7轮融资后，又",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-714896cac6cbf4c3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
+        "TX-product_form-model"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-02-24",
+      "lastSeen": "2026-09-12"
+    },
+    {
       "id": "EN-b81c8201acfc7639",
       "name": "华为",
       "entityType": "organization_candidate",
@@ -51498,6 +51746,7 @@
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
         "EV-56da7cceeebc8bcf",
+        "EV-24d8bc9824f525a5",
         "EV-cec68369662236fd",
         "EV-caffb8981cecae2f",
         "EV-2d9fde7bc0cd7a22",
@@ -52205,7 +52454,9 @@
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
+        "EV-77f98075e25f6fdf",
         "EV-acdeebead5324344",
+        "EV-68d5a02e5213b43c",
         "EV-2bb9ea947e9541c3",
         "EV-87f31c71f040785a",
         "EV-4965305d57edf6dd",
@@ -52627,11 +52878,13 @@
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
+        "TX-use_case-content_creation",
         "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -52726,6 +52979,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81810a440198ac3c",
         "EV-1188b1585b835fe1",
         "EV-85ba013c379a9d3d"
       ],
@@ -52738,11 +52992,12 @@
         "TX-target_user-business_user",
         "TX-product_form-model",
         "TX-ai_market_category-physical_ai",
+        "TX-industry-logistics_supply_chain",
         "TX-product_form-robotic_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-17",
-      "lastSeen": "2026-09-04"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -53858,6 +54113,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f28f5b680afb7495",
         "EV-876baa523eb93c4f",
         "EV-68897f26c8d956df",
         "EV-91aa3136c20babd1",
@@ -53880,7 +54136,7 @@
         "EN-33ea25778e18d372"
       ],
       "firstSeen": "2026-02-14",
-      "lastSeen": "2026-08-20"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-febedfcafee9d610",
@@ -53923,6 +54179,7 @@
       ],
       "eventIds": [
         "EV-88a984b765bb54f1",
+        "EV-800b02f5bfef357d",
         "EV-a2807764271b130d",
         "EV-f29c0c51a5cbfd84",
         "EV-72dc9ab86e08fbab",
@@ -53938,8 +54195,8 @@
       "relatedEntityIds": [
         "EN-8989aada6eb4a4c3"
       ],
-      "firstSeen": "2026-07-24",
-      "lastSeen": "2026-09-10"
+      "firstSeen": "2026-05-08",
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-0f553f48551aef83",
@@ -54967,8 +55224,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",

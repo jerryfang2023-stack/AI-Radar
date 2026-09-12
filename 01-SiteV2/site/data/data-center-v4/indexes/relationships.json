@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "relationships": [
@@ -2831,6 +2831,33 @@
       "predicateLabel": "发布",
       "title": "壁仞科技 发布 NPO",
       "eventTitle": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案",
+      "eventDate": "2026-07-19",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-2fb7b448b8d07ab4",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-f2cf4184889d43bb",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0b706b4b95ba647c",
+      "object_type": "entity",
+      "event_id": "EV-218c2f6ecf3c369f",
+      "claim_refs": [
+        "CL-bef992849f6c8110",
+        "CL-4acaacad906c6cc7",
+        "CL-23db5f68b34959d3"
+      ],
+      "source_refs": [
+        "SA-0729ccc28efa48d9"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified",
+      "subjectName": "Enflame",
+      "objectName": "云燧 ESL64-O 超节点",
+      "predicateLabel": "发布",
+      "title": "Enflame 发布 云燧 ESL64-O 超节点",
+      "eventTitle": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与 OEX 架构降低互联成本",
       "eventDate": "2026-07-19",
       "sourceCount": 1
     },

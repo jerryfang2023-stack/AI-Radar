@@ -1,0 +1,270 @@
+{
+  "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T07:24:04.107Z",
+  "status": "partial",
+  "last_collection_at": "2026-09-12T06:26:02.701Z",
+  "failed_stage": null,
+  "stages": [
+    {
+      "id": "capture",
+      "status": "passed",
+      "started_at": "2026-09-12T07:21:06.620Z",
+      "reused": true,
+      "reused_accepted_capture": true,
+      "finished_at": "2026-09-12T07:21:06.670Z"
+    },
+    {
+      "id": "facts",
+      "status": "passed",
+      "started_at": "2026-09-12T07:21:06.671Z",
+      "finished_at": "2026-09-12T07:21:21.187Z"
+    },
+    {
+      "id": "projections",
+      "status": "passed",
+      "started_at": "2026-09-12T07:21:21.188Z",
+      "finished_at": "2026-09-12T07:24:04.008Z"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "pedaily",
+      "registry_id": "cn-pedaily",
+      "name": "投资界",
+      "query_count": 36,
+      "successful_queries": 36,
+      "candidates": 61,
+      "failures": [],
+      "status": "collected",
+      "raw_count": 45,
+      "readable_count": 45,
+      "accepted_claims": 32,
+      "verified_event_ids": [
+        "EV-68d5a02e5213b43c",
+        "EV-714896cac6cbf4c3",
+        "EV-800b02f5bfef357d",
+        "EV-779f4b283990f90e",
+        "EV-5056b2f94d188dd6",
+        "EV-49779b04267ac3b9",
+        "EV-e59938ae531af428",
+        "EV-81810a440198ac3c",
+        "EV-0c4a6f5c945bd4dc",
+        "EV-24d8bc9824f525a5",
+        "EV-edc3b86e3a19248a",
+        "EV-d3fcd1ea4d9baf47",
+        "EV-59d5ab345e77ee7f",
+        "EV-bb583c256483bcf1"
+      ],
+      "funding_event_ids": [
+        "EV-68d5a02e5213b43c",
+        "EV-714896cac6cbf4c3",
+        "EV-800b02f5bfef357d",
+        "EV-779f4b283990f90e",
+        "EV-49779b04267ac3b9",
+        "EV-e59938ae531af428",
+        "EV-81810a440198ac3c",
+        "EV-0c4a6f5c945bd4dc",
+        "EV-24d8bc9824f525a5",
+        "EV-edc3b86e3a19248a",
+        "EV-d3fcd1ea4d9baf47",
+        "EV-59d5ab345e77ee7f",
+        "EV-bb583c256483bcf1"
+      ],
+      "china_funding_event_ids": [
+        "EV-714896cac6cbf4c3",
+        "EV-779f4b283990f90e",
+        "EV-49779b04267ac3b9",
+        "EV-e59938ae531af428",
+        "EV-81810a440198ac3c",
+        "EV-d3fcd1ea4d9baf47",
+        "EV-59d5ab345e77ee7f"
+      ],
+      "card_ids": [
+        "FI-cff71a1a4d88b9fa",
+        "FI-4fc582e4cb435dd8",
+        "FI-9e55bbc06fe04c51",
+        "FI-72755fd9439ecca6",
+        "FI-f7342735e68375d9",
+        "FI-0d0e4d0d5b40a2c0",
+        "FI-536d2c4da2134ba0",
+        "FI-ec1ed99dffac2fd0",
+        "FI-4aaa0f3788c81d32"
+      ],
+      "latest_disclosure": "2026-09-11T08:35:00.000Z"
+    },
+    {
+      "source_id": "chinaventure",
+      "registry_id": "cn-chinaventure",
+      "name": "投中网",
+      "query_count": 36,
+      "successful_queries": 36,
+      "candidates": 31,
+      "failures": [],
+      "status": "collected",
+      "raw_count": 25,
+      "readable_count": 25,
+      "accepted_claims": 0,
+      "verified_event_ids": [],
+      "funding_event_ids": [],
+      "china_funding_event_ids": [],
+      "card_ids": [],
+      "latest_disclosure": null
+    },
+    {
+      "source_id": "36kr",
+      "registry_id": "cn-36kr-rss",
+      "name": "36氪",
+      "query_count": 36,
+      "successful_queries": 36,
+      "candidates": 47,
+      "failures": [],
+      "status": "collected",
+      "raw_count": 39,
+      "readable_count": 39,
+      "accepted_claims": 4,
+      "verified_event_ids": [
+        "EV-ad311b98b372dc20",
+        "EV-4a1003186048c68c",
+        "EV-771eb8e00b84e89b"
+      ],
+      "funding_event_ids": [
+        "EV-ad311b98b372dc20",
+        "EV-4a1003186048c68c"
+      ],
+      "china_funding_event_ids": [
+        "EV-4a1003186048c68c"
+      ],
+      "card_ids": [],
+      "latest_disclosure": "2026-09-12T06:50:20.000Z"
+    },
+    {
+      "source_id": "cyzone",
+      "registry_id": "cn-cyzone",
+      "name": "创业邦",
+      "query_count": 36,
+      "successful_queries": 36,
+      "candidates": 31,
+      "failures": [],
+      "status": "collected",
+      "raw_count": 25,
+      "readable_count": 25,
+      "accepted_claims": 0,
+      "verified_event_ids": [],
+      "funding_event_ids": [],
+      "china_funding_event_ids": [],
+      "card_ids": [],
+      "latest_disclosure": null
+    },
+    {
+      "source_id": "cls",
+      "registry_id": "cn-cls",
+      "name": "财联社／科创板日报",
+      "query_count": 36,
+      "successful_queries": 36,
+      "candidates": 33,
+      "failures": [],
+      "status": "collected",
+      "raw_count": 18,
+      "readable_count": 18,
+      "accepted_claims": 0,
+      "verified_event_ids": [],
+      "funding_event_ids": [],
+      "china_funding_event_ids": [],
+      "card_ids": [],
+      "latest_disclosure": null
+    },
+    {
+      "source_id": "qbitai",
+      "registry_id": "cn-qbitai-rss",
+      "name": "量子位",
+      "query_count": 36,
+      "successful_queries": 35,
+      "candidates": 18,
+      "failures": [
+        "2026-07: Anysearch HTTP 502"
+      ],
+      "status": "partial",
+      "raw_count": 18,
+      "readable_count": 18,
+      "accepted_claims": 16,
+      "verified_event_ids": [
+        "EV-990a7d94e2328461",
+        "EV-714896cac6cbf4c3",
+        "EV-49779b04267ac3b9",
+        "EV-2de77a62435cc041",
+        "EV-6acc1b9a20bbf5d4",
+        "EV-81810a440198ac3c"
+      ],
+      "funding_event_ids": [
+        "EV-990a7d94e2328461",
+        "EV-714896cac6cbf4c3",
+        "EV-49779b04267ac3b9",
+        "EV-2de77a62435cc041",
+        "EV-6acc1b9a20bbf5d4",
+        "EV-81810a440198ac3c"
+      ],
+      "china_funding_event_ids": [
+        "EV-714896cac6cbf4c3",
+        "EV-49779b04267ac3b9",
+        "EV-81810a440198ac3c"
+      ],
+      "card_ids": [
+        "FI-4fc582e4cb435dd8",
+        "FI-29dc2b4975d2ba0a"
+      ],
+      "latest_disclosure": "2026-09-10T00:00:00+08:00"
+    },
+    {
+      "source_id": "jiqizhixin",
+      "registry_id": "cn-jiqizhixin",
+      "name": "机器之心",
+      "query_count": 36,
+      "successful_queries": 36,
+      "candidates": 0,
+      "failures": [],
+      "status": "collected",
+      "raw_count": 0,
+      "readable_count": 0,
+      "accepted_claims": 0,
+      "verified_event_ids": [],
+      "funding_event_ids": [],
+      "china_funding_event_ids": [],
+      "card_ids": [],
+      "latest_disclosure": null
+    }
+  ],
+  "totals": {
+    "sources_attempted": 7,
+    "sources_failed": 0,
+    "candidates": 221,
+    "readable_documents": 170,
+    "accepted_claims": 52,
+    "verified_events": 20,
+    "funding_events": 18,
+    "china_funding_events": 8,
+    "linked_organizations": 42,
+    "linked_products": 0,
+    "published_card_matches": 10
+  },
+  "publication": {
+    "status": "awaiting_publication_receipt"
+  },
+  "metric_note": "候选按原文URL去重，事件及卡片跨来源按ID去重；组织含公司和投资主体。仅成功接纳的事实同步实体库，未核验产品保留候选；匹配已有卡不等于当日新增卡。来源失败不计为零事件日。",
+  "history": {
+    "from": "2026-01-01",
+    "to": "2026-09-12",
+    "mode": "historical_backfill",
+    "models": {
+      "orchestration": "gpt-6-astra",
+      "orchestration_scope": "configuration_and_exceptions_only",
+      "orchestration_reasoning": "high",
+      "claim_extraction": "gpt-5.6-terra",
+      "claim_extraction_retry": "gpt-5.6-terra",
+      "translation": "deepseek-v4-flash",
+      "translation_fallback": "deepseek-v4-pro",
+      "claim_extraction_reasoning": "medium",
+      "claim_extraction_provider": "codex_local"
+    }
+  }
+}

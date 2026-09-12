@@ -1,0 +1,60 @@
+{
+  "schema_version": "CHINA-FUNDING-TERRA-RUN-V1.0",
+  "generated_at": "2026-09-12T07:26:18.477Z",
+  "model": "gpt-5.6-terra",
+  "reasoning": "medium",
+  "provider": "codex_local",
+  "model_tasks": 44,
+  "model_statuses": {
+    "requires_review": 31,
+    "accepted": 9,
+    "rejected": 4
+  },
+  "counts": {
+    "sources_attempted": 7,
+    "sources_failed": 0,
+    "candidates": 221,
+    "readable_documents": 170,
+    "accepted_claims": 52,
+    "verified_events": 20,
+    "funding_events": 18,
+    "china_funding_events": 8,
+    "linked_organizations": 42,
+    "linked_products": 0,
+    "published_card_matches": 10
+  },
+  "baseline_cards": 294,
+  "published_cards": 298,
+  "preserved_card_ids": true,
+  "added_cards": [
+    {
+      "id": "FI-cff71a1a4d88b9fa",
+      "company": "智推时代GenOptima",
+      "market": "CN"
+    },
+    {
+      "id": "FI-4fc582e4cb435dd8",
+      "company": "它石智航",
+      "market": "CN"
+    },
+    {
+      "id": "FI-9e55bbc06fe04c51",
+      "company": "深圳超维探索科技有限公司",
+      "market": "GLOBAL"
+    },
+    {
+      "id": "FI-72755fd9439ecca6",
+      "company": "OpenAI",
+      "market": "GLOBAL"
+    }
+  ],
+  "limitations": [
+    "One discovery query failed; market coverage is not exhaustive.",
+    "Entity and QA proposals remain unmerged until reviewed.",
+    "Zero newly linked product relationships in this domestic lane."
+  ],
+  "publication": {
+    "stage": "generation_verified",
+    "note": "Live publication is verified separately by Funding Portal and protected OPS release receipts."
+  }
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "node": {
@@ -27,8 +27,8 @@
     ],
     "fdeIds": [],
     "hardwareIds": [],
-    "firstSeen": "2026-07-01",
-    "lastSeen": "2026-08-03"
+    "firstSeen": "2026-03-13",
+    "lastSeen": "2026-09-12"
   },
   "events": [
     {
@@ -360,20 +360,20 @@
     },
     {
       "id": "EV-e59938ae531af428",
-      "dataDate": "2026-08-03",
-      "date": "2026-07-01",
-      "updatedDate": "2026-08-12",
+      "dataDate": "2026-09-12",
+      "date": "2026-03-13",
+      "updatedDate": "2026-09-12",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
+      "title": "光轮智能融资10亿，上百家产业方找上门 - 投资界",
       "originalTitle": "",
       "subject": "光轮智能",
-      "action": "完成新一轮10亿元融资",
-      "object": "，加速物理AI数据与评测基础设施",
+      "action": "融资",
+      "object": "10亿，上百家产业方找上门 - 投资界",
       "metrics": [
         "10亿"
       ],
@@ -385,17 +385,29 @@
           "actor_origin"
         ],
         "source_registry_ids": [
-          "cn-ncsti"
+          "cn-pedaily"
         ],
         "claim_refs": [
-          "CL-4ae3c8e1470d8b65",
-          "CL-07116eea6a92e991",
-          "CL-3f0098122f8da057"
+          "CL-8a9e93ee0f90b062",
+          "CL-b014cd026c1fc168",
+          "CL-8b83219e86779898"
         ]
       },
       "missingFields": [],
       "conflicts": [],
-      "tags": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
       "facets": {
         "ai_market_category": [
           {
@@ -677,6 +689,17 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-9696b83ffb971b6d",
           "fundingInsightId": "FI-1531f01b7ac1dd9a"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -753,6 +776,17 @@
           "fundingInsightId": "FI-1531f01b7ac1dd9a"
         },
         {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8b332ded81dc8d3a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
           "dimensionId": "industry",
           "dimensionName": "行业",
           "id": "automotive_transportation",
@@ -821,8 +855,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
-      "publisher": "国家科技创新信息服务平台"
+      "sourceUrl": "https://news.pedaily.cn/202603/561678.shtml",
+      "publisher": "投资界"
     }
   ],
   "entities": [
@@ -904,6 +938,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
@@ -916,8 +951,8 @@
         "TX-ai_market_application-synthetic_data"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-01",
-      "lastSeen": "2026-08-03"
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-09-12"
     }
   ],
   "fde": [],

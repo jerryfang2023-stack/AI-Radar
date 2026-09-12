@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "node": {
@@ -91,14 +91,14 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "planned",
-      "statusLabel": "计划中",
-      "publicationStatus": "partial",
-      "title": "超维动力完成超5亿元天使+轮系列融资，聚焦于高拟人机器人 投资界（ID：pedaily2012）9月11日消息，超维动力（Kinetix AI）宣布完成超5亿元天使 轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。该笔融资将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。 11:17 投融资",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "超维动力完成超5亿元天使+轮系列融资，聚焦于高拟人机器人 - 投资界",
       "originalTitle": "",
       "subject": "超维动力",
       "action": "完成超5亿元天使+轮系列融资",
-      "object": "，聚焦于高拟人机器人 投资界（ID：pedaily2012）9月11日消息，超维动力（Kinetix AI）宣布完成超5亿元天使 轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。该笔融资将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。 11:17 投融资",
+      "object": "，聚焦于高拟人机器人 - 投资界",
       "metrics": [
         "5亿"
       ],
@@ -106,7 +106,9 @@
         "新加坡"
       ],
       "missingFields": [],
-      "conflicts": [],
+      "conflicts": [
+        "CF-0e7c33ff3b622ab1"
+      ],
       "tags": [
         {
           "dimensionId": "technology",
@@ -232,7 +234,7 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://pedaily.cn/first/178491.shtml",
+      "sourceUrl": "https://news.pedaily.cn/202609/568865.shtml",
       "publisher": "投资界"
     },
     {
@@ -5912,8 +5914,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
@@ -6146,8 +6148,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-product_form-end_user_application",
@@ -6202,6 +6204,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-68d5a02e5213b43c",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
         "EV-b93b6abf31662339",
@@ -6411,8 +6414,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-ai_market_application-chips",
@@ -6595,8 +6598,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
@@ -7284,6 +7287,7 @@
         "EV-4dfd7233c8c69b0b",
         "EV-657837763764c869",
         "EV-388a53fe918389b0",
+        "EV-5056b2f94d188dd6",
         "EV-c44f8fbab9e200ca",
         "EV-59b7ba3d079ad09a",
         "EV-3aefbdfa5df2fd6a",

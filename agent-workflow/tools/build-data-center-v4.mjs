@@ -124,6 +124,19 @@ const REVIEWED_RETAINED_SOURCE = /^https?:\/\/(?:www\.)?aifundingtracker\.com\/t
 const QUESTION_HEADLINE = /^(?:(?:can|could|will|would|is|are|do|does|did|should|has|have)\b|.*\bwhat(?:'s| is)\s+left\s+of\b|.{0,40}(?:能否|是否|会不会|可否)|.*还剩什么).*[?？]$/iu;
 const GENERIC_INDEX_TITLE = /^(?:newsroom|enterprise ai news)(?:\s*(?:[\\|｜:—-])\s*.*)?$|^funding breaking news and press releases(?:\s+from\s+.*)?$|^(?:新闻室(?:\s*[\\|｜:—-]\s*.*)?|企业\s*AI\s*新闻|商业新闻融资快讯与新闻稿)$/iu;
 const GENERIC_ROUNDUP_TITLE = /投?融资(?:周报|月报|日报|盘点)|^硬科技投向标[|｜]|^(?:AI\s+giants?|AI\s+companies?|AI\s+startups?)\b.{0,100}\b(?:billions?|millions?|funding|investment|deployment)\b|^AI\s*(?:巨头|公司|初创企业).{0,80}(?:数十亿|数百万|融资|投资|部署)|^latest\s+open\s+(?:models?|artifacts?)\s*(?:\(#?\d+\)|#\d+)?\s*[:：]|^最新(?:开源)?(?:模型|产品|模型与产品)?(?:盘点|汇总)\s*(?:[（(]#?\d+[）)])?\s*[:：]|\b(?:daily|weekly)\s+(?:AI\s+)?(?:roundup|digest)\b|(?:每日|每周|本周).{0,20}(?:汇总|速览|快讯)/iu;
+
+export function fundingClaimGroupingProblem(claims) {
+  const subjects = new Set(claims.map((claim) => cleanString(claim.subject).toLocaleLowerCase()).filter(Boolean));
+  if (subjects.size > 1) return "multiple_funding_recipients_require_separate_sources";
+  if (claims.length && claims.every((claim) => {
+    const quote = claim.source_quote || "";
+    const namedRounds = new Set(quote.match(/(?:pre[- ]?)?[A-F][+＋]?轮|天使轮|种子轮/giu) || []);
+    // A disclosed total for one named round (including phased closes) is valid.
+    return /累计|总融资|整个.{0,12}轮融资额/u.test(quote) && !/本轮|此次|新一轮/u.test(quote) && namedRounds.size !== 1;
+  })) return "cumulative_funding_total_not_single_round";
+  if ([...subjects].some((subject) => /^(?:\d+|[一二三四五六七八九十]+)轮$/u.test(subject))) return "funding_recipient_is_round_count";
+  return "";
+}
 const REACTION_ONLY_TITLE = /(?:回应|谈及|评论|驳斥).{0,80}(?:诉讼|传闻|争议|质疑)|(?:诉讼|传闻|争议|质疑).{0,80}(?:回应|表态|驳斥)|\b(?:responds? to|comments? on|rebuts?)\b.{0,80}\b(?:lawsuit|rumou?r|controversy|dispute|criticism)\b/iu;
 const RESEARCH_CONTAINER_TITLE = /\b(?:technology|industry|market|technical)?\s*report\b|\b(?:benchmark|research paper|whitepaper)\b|(?:技术|行业|市场|研究)?报告|基准测试|研究论文|白皮书/iu;
 const EXPLICIT_AI_EVIDENCE = /\b(?:ai|agi|artificial intelligence|generative ai|genai|ai[- ](?:native|powered|generated|coding|assistant|assistants|agent|agents|model|models|system|systems|service|services|platform|platforms|tool|tools|chip|chips|hardware|infrastructure|workload|workloads|research|video)|agentic(?:\s+ai)?|large language models?|foundation models?|coding models?|vision[- ]language(?:[- ]action)? models?|multimodal(?:\s+moe)?|machine learning|deep learning|neural (?:network|networks|processing)|llms?|chatbots?|model inference|model training|open[- ]weight|npus?|edge ai|physical ai|embodied ai|computer vision|natural language processing)\b|人工智能|生成式\s*(?:人工智能|AI)|AI\s*(?:智能体|模型|系统|平台|服务|产品|工具|编程|助手|芯片|硬件|基础设施|应用|研究|视频|办公|手机|短剧|生产力|推理|训练|算力)|智能体|大模型|基础模型|编码模型|多模态|机器学习|深度学习|神经网络|生成模型|推理模型|世界模型|具身(?:智能|模型)|端侧生成式人工智能|模型服务|模型券|算力(?:集群|基础设施)/iu;
@@ -1944,6 +1957,13 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
           status: "review_optional",
           source_ref: artifact.source_artifact_id
         });
+        rawDocuments.push(doc);
+        continue;
+      }
+      const fundingGroupingProblem = rule.eventType === "funding" ? fundingClaimGroupingProblem(eventClaimRows) : "";
+      if (fundingGroupingProblem) {
+        qaQueue.push({ qa_id: `QA-${hash(`${rawId}|funding-grouping`)}`, asset_id: rawId,
+          reason: fundingGroupingProblem, status: "review_optional", source_ref: artifact.source_artifact_id });
         rawDocuments.push(doc);
         continue;
       }

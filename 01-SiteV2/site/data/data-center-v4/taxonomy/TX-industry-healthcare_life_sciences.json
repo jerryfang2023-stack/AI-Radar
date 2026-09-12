@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "node": {
@@ -6624,6 +6624,18 @@
           {
             "dimensionId": "use_case",
             "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-ed8ff30f2dcaf9d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-95f35638c999655e",
+            "fundingInsightId": "FI-446942ef720229aa"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
             "id": "research_discovery",
             "name": "科研与发现",
             "entityIds": [
@@ -6650,6 +6662,18 @@
         ],
         "deployment_model": [],
         "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-ed8ff30f2dcaf9d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-acdba32063123d44",
+            "fundingInsightId": "FI-446942ef720229aa"
+          },
           {
             "dimensionId": "target_user",
             "dimensionName": "目标用户",
@@ -6716,6 +6740,18 @@
         {
           "dimensionId": "target_user",
           "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-acdba32063123d44",
+          "fundingInsightId": "FI-446942ef720229aa"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
           "id": "researcher",
           "name": "研究人员",
           "entityIds": [
@@ -6723,6 +6759,18 @@
           ],
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-aaf7cf419e90a7f0",
+          "fundingInsightId": "FI-446942ef720229aa"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-95f35638c999655e",
           "fundingInsightId": "FI-446942ef720229aa"
         },
         {
@@ -6778,6 +6826,18 @@
         {
           "dimensionId": "use_case",
           "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-95f35638c999655e",
+          "fundingInsightId": "FI-446942ef720229aa"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
           "id": "research_discovery",
           "name": "科研与发现",
           "entityIds": [
@@ -6797,6 +6857,18 @@
           ],
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-af7a9e325132a711",
+          "fundingInsightId": "FI-446942ef720229aa"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-acdba32063123d44",
           "fundingInsightId": "FI-446942ef720229aa"
         },
         {
@@ -26250,6 +26322,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-68d5a02e5213b43c",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
         "EV-b93b6abf31662339",
@@ -26459,8 +26532,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-ai_market_application-chips",
@@ -27281,6 +27354,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-industry_applications",
         "TX-target_user-researcher",
@@ -29221,7 +29296,9 @@
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
+        "EV-77f98075e25f6fdf",
         "EV-acdeebead5324344",
+        "EV-68d5a02e5213b43c",
         "EV-2bb9ea947e9541c3",
         "EV-87f31c71f040785a",
         "EV-4965305d57edf6dd",
@@ -29643,11 +29720,13 @@
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
+        "TX-use_case-content_creation",
         "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",

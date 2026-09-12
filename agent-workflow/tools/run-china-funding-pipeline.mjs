@@ -59,6 +59,7 @@ function main() {
   const plan = chinaFundingPlan(date, sourceDir, { rawLimit: historyFrom ? 1260 : 168 });
   if (historyFrom) for (const stage of plan) for (const command of stage.commands) {
     if (command[0].endsWith("/migrate-private-evidence-source.mjs")) command.push(`--date=${date}`);
+    if (command[0].endsWith("/run-guanlan-daily-monitor.mjs")) command.push(`--monitor-log-file=${laneDir}/capture-log.md`);
   }
   if (args.get("dry-run") === "true") { console.log(JSON.stringify(plan, null, 2)); return; }
   const discovery = read(`${sourceDir}/china-funding-source-intake-candidates.json`);
@@ -104,6 +105,12 @@ function main() {
           // The freshly checked-out main wins for shared IDs; the independent intake adds new IDs.
           write(intakeFile, mergeSourceIntakes(accepted, read(intakeFile) || accepted));
           state.reused = true;
+          const capturePassed = previous.stages.some((item) => item.id === "capture" && item.status === "passed") && fs.existsSync(path.resolve(root, acceptedFile));
+          if (capturePassed) {
+            state.reused_accepted_capture = true;
+            state.status = "passed";
+            continue;
+          }
           // Last-good rollback also restores the public locator index. Rebuild it offline.
           command(["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true", ...(historyFrom ? [`--date=${date}`] : [])]);
           command(["agent-workflow/tools/assert-public-evidence-boundary.mjs"]);
