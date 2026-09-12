@@ -2570,7 +2570,7 @@ window.WaveSightLocalSkillStore = {
       "sourceLabel": "WaveSight",
       "sourcePath": "agent-workflow/skills/guanlan-community-intelligence-monitor",
       "sourceVersion": "",
-      "sourceDigest": "c135624e9703f479c2d02218843b45563f1d406613fc9171f20437d833f1008f",
+      "sourceDigest": "a2365b386d742a118342b99527c8bdea7d78c82c4b473501cda98426ecc62a1e",
       "platformIds": [
         "data-center"
       ],
