@@ -9,6 +9,7 @@ import {
   tagAssertionsForClaim,
   taxonomyEvidenceSegmentRelevant,
   taxonomyMatchers,
+  publicEventSourceTitleIssue,
 } from "./build-data-center-v4.mjs";
 import {
   acceptedFundingCompanyIdentityDecisions,
@@ -139,6 +140,13 @@ export function classificationEntityAggregationProblems(row, profile) {
     ? [] : [`${row.reviewed_classification_id}: entity aggregation missing`];
 }
 
+export function sourceTitleQuarantinesProjection(canonicalEvent, frontstage) {
+  return Boolean(canonicalEvent?.event_id
+    && publicEventSourceTitleIssue(canonicalEvent.display_title_zh)
+    && frontstage.meta?.quarantinedEventIds?.includes(canonicalEvent.event_id)
+    && !(frontstage.events || []).some((event) => event.id === canonicalEvent.event_id));
+}
+
 export function taxonomyConsistencyProblems(rootDir = root) {
   const failures = [];
   const taxonomy = readJson(path.join(rootDir, "agent-workflow/product/tag-taxonomy-v4.json"), {});
@@ -245,7 +253,13 @@ export function taxonomyConsistencyProblems(rootDir = root) {
   if (frontstage.meta?.taxonomyVersion !== "TAG-V4.1") failures.push("data-center application taxonomy version drift");
   const eventById = new Map((frontstage.events || []).map((item) => [item.id, item]));
   const profileById = new Map((frontstage.entityProfiles || []).map((item) => [item.id, item]));
+  const canonicalById = new Map(datedFiles("canonical-events.json", rootDir)
+    .flatMap((file) => readJson(file, [])).map((event) => [event.event_id, event]));
   for (const row of reviewed) {
+    // Source-title quarantine intentionally excludes a factual catalog entry.
+    // It must not invent a replacement source title or a canonical profile.
+    // The accepted funding card still passes the full application checks above.
+    if (sourceTitleQuarantinesProjection(canonicalById.get(row.event_id), frontstage)) continue;
     const event = eventById.get(row.event_id);
     const classification = event?.classifications?.find((item) => (
       item.dimensionId === row.dimension_id

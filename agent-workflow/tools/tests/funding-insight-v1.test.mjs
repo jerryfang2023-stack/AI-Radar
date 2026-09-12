@@ -39,7 +39,17 @@ import {
   verifiedFundingSourceUrls,
 } from "../build-funding-source-health-v1.mjs";
 import { resolveReviewedCompany } from "../project-funding-taxonomy-to-events-v4-1.mjs";
-import { classificationEntityAggregationProblems } from "../assert-taxonomy-consistency-v4-1.mjs";
+import { classificationEntityAggregationProblems, sourceTitleQuarantinesProjection } from "../assert-taxonomy-consistency-v4-1.mjs";
+
+test("only an explicitly quarantined source title excludes the catalog projection", () => {
+  const event = { event_id: "E", display_title_zh: "智能体AI能否让美国制造业回归？" };
+  const frontstage = { meta: { quarantinedEventIds: ["E"] }, events: [] };
+  assert.equal(sourceTitleQuarantinesProjection(event, frontstage), true);
+  assert.equal(sourceTitleQuarantinesProjection(event, { events: [] }), false);
+  assert.equal(sourceTitleQuarantinesProjection(event, { ...frontstage, events: [{ id: "E" }] }), false);
+  assert.equal(sourceTitleQuarantinesProjection({ ...event, display_title_zh: "公司完成融资" }, frontstage), false);
+  assert.equal(sourceTitleQuarantinesProjection(null, frontstage), false);
+});
 
 test("taxonomy gates require canonical aggregation but forbid application identity promotion", () => {
   const row = { reviewed_classification_id: "REC-1", entity_id: "FICO-50b2676afbe30c83", dimension_id: "industry", value_id: "manufacturing" };

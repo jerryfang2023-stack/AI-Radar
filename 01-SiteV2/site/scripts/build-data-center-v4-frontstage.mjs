@@ -816,7 +816,8 @@ export function buildFrontstageData(root = defaultRoot) {
       latestDataDate,
       currentDate,
       eventCount: eventRecords.length,
-      quarantinedEventCount: invalidTitles.length
+      quarantinedEventCount: invalidTitles.length,
+      quarantinedEventIds: invalidTitles.map((item) => item.id)
     },
     eventTypes: eventTypeLabels,
     events: eventRecords,
