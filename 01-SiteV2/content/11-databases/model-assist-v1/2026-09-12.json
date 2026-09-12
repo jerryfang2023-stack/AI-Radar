@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-09-12T04:27:41.158Z",
+  "generated_at": "2026-09-12T04:35:12.300Z",
   "data_date": "2026-09-12",
   "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 269,
@@ -126,6 +126,54 @@
         }
       ],
       "generated_at": "2026-09-12T04:26:20.655Z"
+    },
+    {
+      "candidate_id": "MAC-09aff0ef3e486da9",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-fdc1eadb42e394d8",
+      "raw_id": "RAW-0a4f9be1f2714544",
+      "source_ref": "SA-72d70503f7fd6f84",
+      "source_hash": "0e58876a9d4415ba",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Trusted Enterprise AI Harness",
+        "rationale": "The candidate name 'Trusted Enterprise AI Harness' appears in the source text, but no VERIFIED_ALTERNATIVES are provided to compare against, so entity identity cannot be confirmed.",
+        "candidate_name": "Trusted Enterprise AI Harness"
+      },
+      "evidence": [
+        {
+          "start": 679,
+          "end": 759,
+          "quote": "On September 10, 2026, the company announced its Trusted Enterprise AI Harness ."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T04:34:44.984Z"
     },
     {
       "candidate_id": "MAC-0a45df6af67f952d",
@@ -3115,6 +3163,54 @@
       "generated_at": "2026-09-12T04:26:41.737Z"
     },
     {
+      "candidate_id": "MAC-98f1673d09580030",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-99604b67218f70a7",
+      "raw_id": "RAW-0a4f9be1f2714544",
+      "source_ref": "SA-72d70503f7fd6f84",
+      "source_hash": "0e58876a9d4415ba",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "AI Harness",
+        "rationale": "The candidate canonical name 'AI Harness' does not exactly match any VERIFIED_ALTERNATIVE because the list is empty. The source text mentions 'Trusted Enterprise AI Harness' and 'Enterprise AI Harness', but without a verified alternative to compare against, identity cannot be confirmed.",
+        "candidate_name": "AI Harness"
+      },
+      "evidence": [
+        {
+          "start": 679,
+          "end": 759,
+          "quote": "On September 10, 2026, the company announced its Trusted Enterprise AI Harness ."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T04:34:44.434Z"
+    },
+    {
       "candidate_id": "MAC-9a2fc4b9b91dc6bb",
       "task_type": "entity_resolution",
       "asset_id": "EN-b5251b35f15bedc4",
@@ -3161,6 +3257,54 @@
         }
       ],
       "generated_at": "2026-09-12T04:26:48.086Z"
+    },
+    {
+      "candidate_id": "MAC-9aecdaf774f58149",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-37920fefb08452f2",
+      "raw_id": "RAW-0a4f9be1f2714544",
+      "source_ref": "SA-72d70503f7fd6f84",
+      "source_hash": "0e58876a9d4415ba",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Formalizes",
+        "rationale": "The candidate entity name 'Formalizes' appears to be derived from the title verb 'Formalizes' rather than a named product or entity. The source text describes Salesforce formalizing the agent governance stack and announcing a product called 'Trusted Enterprise AI Harness', but does not identify any entity named 'Formalizes'. No verified alternatives exist to match against.",
+        "candidate_name": "Formalizes"
+      },
+      "evidence": [
+        {
+          "start": 597,
+          "end": 678,
+          "quote": "Salesforce is attempting to solve this by formalizing the agent governance stack."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T04:34:41.081Z"
     },
     {
       "candidate_id": "MAC-9b11e3ef77176d9a",
@@ -3834,6 +3978,54 @@
       "generated_at": "2026-09-12T01:35:54.847Z"
     },
     {
+      "candidate_id": "MAC-ac438c3ef2d3ab91",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-91da6aeb894b9b26",
+      "raw_id": "RAW-9b91a421867a364c",
+      "source_ref": "SA-9ed4cd2451acd00e",
+      "source_hash": "1dd1694ffba520c8",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "本轮",
+        "rationale": "The candidate canonical name '本轮' is a generic Chinese phrase meaning 'this round' (of financing), not an organization name. The source text uses '本轮融资' to refer to the current financing round of IPTAG, not to an entity named '本轮'. It does not match any verified alternative.",
+        "candidate_name": "本轮"
+      },
+      "evidence": [
+        {
+          "start": 285,
+          "end": 330,
+          "quote": "本轮融资由高投集团策源资本旗下成都策源高都共创股权投资基金（简称“策源高都基金”）独家投资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T04:34:43.396Z"
+    },
+    {
       "candidate_id": "MAC-ad7b521588b7c129",
       "task_type": "entity_resolution",
       "asset_id": "EN-28992d55822c87f9",
@@ -4097,6 +4289,54 @@
       "generated_at": "2026-09-12T04:26:55.288Z"
     },
     {
+      "candidate_id": "MAC-b9345b18ffecedbf",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-2e8d266e132877a1",
+      "raw_id": "RAW-9b91a421867a364c",
+      "source_ref": "SA-9ed4cd2451acd00e",
+      "source_hash": "1dd1694ffba520c8",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "IPTAG",
+        "rationale": "IPTAG is not listed among the verified alternatives (微纳核芯, Tencent/腾讯), so it cannot be matched as the same entity. The source describes IPTAG as an AI潮玩品牌, which is distinct from the verified alternatives.",
+        "candidate_name": "IPTAG"
+      },
+      "evidence": [
+        {
+          "start": 445,
+          "end": 477,
+          "quote": "AI潮玩与高端收藏卡品牌 IPTAG 宣布已完成千万级战略 融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T04:34:40.647Z"
+    },
+    {
       "candidate_id": "MAC-b9f7ca6c15768773",
       "task_type": "qa_repair",
       "asset_id": "QA-dc0340b8b5e7f0cd",
@@ -4268,6 +4508,54 @@
         }
       ],
       "generated_at": "2026-09-12T01:36:06.738Z"
+    },
+    {
+      "candidate_id": "MAC-c99b6781737f6526",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-3ccbd9105a45d8fc",
+      "raw_id": "RAW-0a4f9be1f2714544",
+      "source_ref": "SA-72d70503f7fd6f84",
+      "source_hash": "0e58876a9d4415ba",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Salesforce",
+        "rationale": "The candidate entity is Salesforce, but the verified alternative is Anthropic. The source text mentions both Salesforce and Anthropic as separate organizations in a partnership context, not as the same entity.",
+        "candidate_name": "Salesforce"
+      },
+      "evidence": [
+        {
+          "start": 1945,
+          "end": 2127,
+          "quote": "This announcement follows the recent Claudeforce initiative, where Salesforce deepened its partnership with Anthropic to make Claude the default reasoning engine across its platform."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T04:34:42.442Z"
     },
     {
       "candidate_id": "MAC-ca799556db257cb8",

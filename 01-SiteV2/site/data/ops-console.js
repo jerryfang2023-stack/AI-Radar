@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.7.0-china-funding-quality",
-    "generatedAt": "2026-09-12T04:28:33.165Z",
+    "generatedAt": "2026-09-12T04:36:05.100Z",
     "date": "2026-09-12",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1716,7 +1716,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-12T04:28:33.157Z",
+      "updatedAt": "2026-09-12T04:36:05.093Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1784,18 +1784,18 @@ window.WaveSightOpsConsole = {
           "fullTextRate": 69,
           "highQualityRate": 25,
           "readabilityScore": 50,
-          "factHitRate": 31,
-          "acceptedClaims": 23,
-          "canonicalEvents": 12,
-          "score": 61,
-          "grade": "中"
+          "factHitRate": 16,
+          "acceptedClaims": 14,
+          "canonicalEvents": 7,
+          "score": 59,
+          "grade": "待改善"
         }
       ]
     },
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
       "date": "2026-09-12",
-      "generated_at": "2026-09-12T04:28:33.110Z",
+      "generated_at": "2026-09-12T04:36:05.044Z",
       "status": "partial",
       "last_collection_at": "2026-09-12T03:41:42.764Z",
       "failed_stage": null,
@@ -1803,21 +1803,21 @@ window.WaveSightOpsConsole = {
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-12T04:26:07.488Z",
+          "started_at": "2026-09-12T04:34:29.960Z",
           "reused": true,
-          "finished_at": "2026-09-12T04:26:13.872Z"
+          "finished_at": "2026-09-12T04:34:36.542Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-12T04:26:13.872Z",
-          "finished_at": "2026-09-12T04:27:44.338Z"
+          "started_at": "2026-09-12T04:34:36.542Z",
+          "finished_at": "2026-09-12T04:35:15.565Z"
         },
         {
           "id": "projections",
           "status": "passed",
-          "started_at": "2026-09-12T04:27:44.339Z",
-          "finished_at": "2026-09-12T04:28:33.033Z"
+          "started_at": "2026-09-12T04:35:15.566Z",
+          "finished_at": "2026-09-12T04:36:04.967Z"
         }
       ],
       "sources": [
@@ -1851,7 +1851,7 @@ window.WaveSightOpsConsole = {
           ],
           "china_funding_event_ids": [],
           "card_ids": [],
-          "latest_disclosure": "2026-09-11T03:14:00.000Z"
+          "latest_disclosure": "2026-09-11T11:17:00+08:00"
         },
         {
           "source_id": "chinaventure",
@@ -1873,13 +1873,9 @@ window.WaveSightOpsConsole = {
           "completed_at": "2026-09-12T03:40:47.510Z",
           "raw_count": 3,
           "readable_count": 3,
-          "accepted_claims": 1,
-          "verified_event_ids": [
-            "EV-4a9b0bafef9fd86b"
-          ],
-          "funding_event_ids": [
-            "EV-4a9b0bafef9fd86b"
-          ],
+          "accepted_claims": 0,
+          "verified_event_ids": [],
+          "funding_event_ids": [],
           "china_funding_event_ids": [],
           "card_ids": [],
           "latest_disclosure": null
@@ -1933,7 +1929,7 @@ window.WaveSightOpsConsole = {
           "completed_at": "2026-09-12T03:41:08.515Z",
           "raw_count": 9,
           "readable_count": 9,
-          "accepted_claims": 9,
+          "accepted_claims": 7,
           "verified_event_ids": [
             "EV-b91024c06d8762a4"
           ],
@@ -1942,7 +1938,7 @@ window.WaveSightOpsConsole = {
           ],
           "china_funding_event_ids": [],
           "card_ids": [],
-          "latest_disclosure": null
+          "latest_disclosure": "2026-09-11T00:00:00+08:00"
         },
         {
           "source_id": "cls",
@@ -1966,7 +1962,7 @@ window.WaveSightOpsConsole = {
           "completed_at": "2026-09-12T03:41:26.385Z",
           "raw_count": 4,
           "readable_count": 4,
-          "accepted_claims": 4,
+          "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
           "china_funding_event_ids": [],
@@ -1995,18 +1991,12 @@ window.WaveSightOpsConsole = {
           "completed_at": "2026-09-12T03:41:35.295Z",
           "raw_count": 6,
           "readable_count": 6,
-          "accepted_claims": 2,
-          "verified_event_ids": [
-            "EV-59f7008a42158a4e"
-          ],
-          "funding_event_ids": [
-            "EV-59f7008a42158a4e"
-          ],
-          "china_funding_event_ids": [
-            "EV-59f7008a42158a4e"
-          ],
+          "accepted_claims": 0,
+          "verified_event_ids": [],
+          "funding_event_ids": [],
+          "china_funding_event_ids": [],
           "card_ids": [],
-          "latest_disclosure": null
+          "latest_disclosure": "2026-09-07T00:00:00+08:00"
         },
         {
           "source_id": "jiqizhixin",
@@ -2043,11 +2033,11 @@ window.WaveSightOpsConsole = {
         "sources_failed": 0,
         "candidates": 72,
         "readable_documents": 32,
-        "accepted_claims": 23,
-        "verified_events": 4,
-        "funding_events": 4,
-        "china_funding_events": 1,
-        "linked_organizations": 6,
+        "accepted_claims": 14,
+        "verified_events": 2,
+        "funding_events": 2,
+        "china_funding_events": 0,
+        "linked_organizations": 3,
         "linked_products": 0,
         "published_card_matches": 0
       },
