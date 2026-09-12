@@ -1501,6 +1501,7 @@ test("index pages, question headlines, roundups, and reaction articles cannot be
   );
   const cases = [
     ["新闻室 \\ Anthropic", "index_or_listing_page_not_event_source"],
+    ["康诺思腾完成近2亿美元C+轮融资；AI芯片公司d-Matrix跻身独角兽丨全球投融资周报11.08-11.14", "multi_event_roundup_not_single_event_source"],
     ["企业AI新闻", "index_or_listing_page_not_event_source"],
     ["商业新闻融资快讯与新闻稿", "index_or_listing_page_not_event_source"],
     ["Funding Breaking News and Press Releases from Business Wire", "index_or_listing_page_not_event_source"],
