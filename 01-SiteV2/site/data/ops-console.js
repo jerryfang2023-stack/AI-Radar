@@ -358,7 +358,7 @@ window.WaveSightOpsConsole = {
     ],
     "skills": {
       "total": 289,
-      "generatedAt": "2026-09-12 18:23:07",
+      "generatedAt": "2026-09-12 21:33:49",
       "sources": [
         {
           "id": "AIP/.agents/skills",
@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.7.1-china-funding-history",
-    "generatedAt": "2026-09-12T13:17:49.940Z",
+    "generatedAt": "2026-09-12T13:34:32.701Z",
     "date": "2026-09-12",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1716,7 +1716,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-12T13:17:49.931Z",
+      "updatedAt": "2026-09-12T13:34:32.677Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
