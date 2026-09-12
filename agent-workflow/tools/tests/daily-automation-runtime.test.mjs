@@ -375,8 +375,8 @@ test("final closure refreshes Skill discovery immediately before supervision", (
     controller,
     /Refresh Skill discovery summary before final supervision[^]*build-skill-store-dashboard\.mjs[^]*--output=/u,
   );
-  assert.match(controller, /fundingPortal\.ok && discoveryRefresh\.ok && supervisionReported/u);
-  assert.match(controller, /fundingPortal, discoveryRefresh, supervisionAction/u);
+  assert.match(controller, /fundingPortal\.ok && opsPublication\.ok && discoveryRefresh\.ok && supervisionReported/u);
+  assert.match(controller, /fundingPortal, opsPublication, discoveryRefresh, supervisionAction/u);
 });
 
 test("periodic reports tolerate slower cloud generation and expose failed child diagnostics", () => {

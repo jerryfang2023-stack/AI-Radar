@@ -38,6 +38,7 @@ jobs:
       - run: npm run assert:pipeline-policy
       - run: npm run assert:versions
       - run: npm run test:data-center
+      - run: npm run test:china-funding
       - run: node --test agent-workflow/tools/tests/data-lake-v4-convergence.test.mjs
       - run: npm run test:ops-v2
       - run: npm run test:funding-insights

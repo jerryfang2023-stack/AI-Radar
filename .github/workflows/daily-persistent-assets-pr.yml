@@ -18,17 +18,23 @@ on:
         type: string
 
 permissions:
-  actions: read
+  actions: write
   contents: write
   pull-requests: write
 
-concurrency:
-  group: wavesight-data-center-publication
-  cancel-in-progress: false
-
 jobs:
+  china-funding:
+    name: Independent China funding lane
+    uses: ./.github/workflows/china-funding-pr.yml
+    with:
+      date: ${{ inputs.date || '' }}
+    secrets: inherit
+
   business-signals-pr:
     name: Business Signals Scheduled PR
+    concurrency:
+      group: wavesight-data-center-publication
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:

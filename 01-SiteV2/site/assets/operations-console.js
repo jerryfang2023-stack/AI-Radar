@@ -137,6 +137,29 @@
         : "";
       sourceQuality.innerHTML = `${summary}${detail}${note}`;
     }
+    const chinaFunding = $("[data-china-funding-quality]");
+    if (chinaFunding) {
+      const funding = quality.chinaFunding || {};
+      const labels = { not_run: "尚未运行", discovered: "待原文核验", passed: "已完成数据同步", partial: "部分来源受限", failed: "链路失败", source_failed: "来源不可用", collected: "已采集", empty: "检索无候选" };
+      const totals = funding.totals;
+      const number = (value) => value == null ? "—" : html(value);
+      const currentDate = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date());
+      const stale = funding.date && funding.date < currentDate;
+      const summary = `<p>${html(funding.date || "暂无批次")} · ${html(labels[funding.status] || "状态未知")}${stale ? " · 历史批次，今日未更新" : ""}${funding.failed_stage ? ` · 失败阶段：${html(funding.failed_stage)}` : ""}</p><div class="source-summary">
+        <span>检查来源<b>${number(totals?.sources_attempted)}</b></span><span>原文候选<b>${number(totals?.candidates)}</b></span>
+        <span>可读原文<b>${number(totals?.readable_documents)}</b></span><span>已核验融资<b>${number(totals?.funding_events)}</b></span>
+          <span>中国区融资<b>${number(totals?.china_funding_events)}</b></span><span>匹配融资卡<b>${number(totals?.published_card_matches)}</b></span>
+          <span>关联组织<b>${number(totals?.linked_organizations)}</b></span><span>关联产品<b>${number(totals?.linked_products)}</b></span></div>`;
+      const rows = list(funding.sources).map((source) => `<div class="source-row">
+        <div class="source-name"><strong>${html(source.name)}</strong><em>${html(labels[source.status] || source.status)} · ${html(source.latest_disclosure?.slice(0, 10) || "披露日未核验")}</em></div>
+        <div class="mini-kpi"><span>已执行查询</span><b>${number(source.query_count)}</b></div>
+        <div class="mini-kpi"><span>候选</span><b>${number(source.candidates)}</b></div>
+        <div class="mini-kpi"><span>可读原文</span><b>${number(source.readable_count)}</b></div>
+        <div class="mini-kpi"><span>融资事件</span><b>${list(source.funding_event_ids).length}</b></div>
+        <div class="mini-kpi"><span>失败请求</span><b>${list(source.failures).length}</b></div>
+        <details><summary>诊断</summary><p>${html(list(source.failures).join("；") || "本次请求无错误")}</p></details></div>`).join("");
+      chinaFunding.innerHTML = `${summary}${rows || '<div class="empty">国内融资独立链路尚无运行数据。</div>'}<p class="source-quality-note">${html(funding.metric_note || "与海外同批次启动，按来源独立记录。未运行数据不显示为零。")}</p>`;
+    }
     const matrix = $("[data-asset-matrix]");
     if (matrix) {
       const facts = quality.telemetry?.factBuild || {};

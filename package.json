@@ -159,7 +159,10 @@
     "install:windows-automation": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-windows-automation-tasks.ps1",
     "assert:windows-automation": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/assert-windows-automation-tasks.ps1",
     "install:hermes-watchdog": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-hermes-control-plane-watchdog-task.ps1",
-    "install:periodic-automation-tasks": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-periodic-automation-tasks.ps1"
+    "install:periodic-automation-tasks": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-periodic-automation-tasks.ps1",
+    "source:intake:china-funding": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --source-only=china-funding",
+    "pipeline:china-funding": "node agent-workflow/tools/run-china-funding-pipeline.mjs",
+    "test:china-funding": "node --test agent-workflow/tools/tests/china-funding-lane.test.mjs"
   },
   "repository": {
     "type": "git",

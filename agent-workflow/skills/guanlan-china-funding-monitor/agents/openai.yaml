@@ -1,0 +1,6 @@
+interface:
+  display_name: "国内 AI 融资独立监测"
+  short_description: "逐站监测国内融资，保留原文证据并同步公司、产品、机构库与运营质量数据"
+  default_prompt: "使用 $guanlan-china-funding-monitor 检查今天国内融资独立链路，复用已接纳证据并完成授权的数据同步。"
+policy:
+  allow_implicit_invocation: true

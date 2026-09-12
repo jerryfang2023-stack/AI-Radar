@@ -330,6 +330,10 @@ function finalClosure() {
     `--wavesight-repo=${root}`,
     ...(dryRun ? ["--dry-run=true"] : []),
   ], 900_000);
+  const opsPublication = run("Publish protected OPS from accepted main", process.execPath, [
+    "agent-workflow/tools/publish-ops-console.mjs",
+    ...(dryRun ? ["--dry-run=true"] : []),
+  ], 300_000);
   const discoveryRefresh = run("Refresh Skill discovery summary before final supervision", process.execPath, [
     "agent-workflow/tools/build-skill-store-dashboard.mjs",
     `--output=${path.join(reportsDir, "local-skill-store-data.js")}`,
@@ -371,7 +375,7 @@ function finalClosure() {
     ok: supervisionReported,
     health_status: supervisionPayload?.status || "report_missing",
   };
-  const executionOk = dataLake.ok && dataLakeGate.ok && vaultSync.ok && fundingPortal.ok && discoveryRefresh.ok && supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
+  const executionOk = dataLake.ok && dataLakeGate.ok && vaultSync.ok && fundingPortal.ok && opsPublication.ok && discoveryRefresh.ok && supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
   return {
     ok: executionOk,
     healthOk: Boolean(supervisionPayload?.ok),
@@ -379,7 +383,7 @@ function finalClosure() {
       ? supervisionPayload?.status === "passed" ? "closed" : "closed_with_lane_findings"
       : "closure_execution_failed",
     lanes: supervisionPayload?.lanes || [],
-    actions: [dataLake, dataLakeGate, vaultSync, fundingPortal, discoveryRefresh, supervisionAction, evidenceSupply, recurringIncidents],
+    actions: [dataLake, dataLakeGate, vaultSync, fundingPortal, opsPublication, discoveryRefresh, supervisionAction, evidenceSupply, recurringIncidents],
     notes: [
       "Scheduled final closure follows the 16:10 First-Line Viewpoints window; manual runs respect the current time unless explicitly forced.",
       "The local V4 JSONL and DuckDB serving layer is rebuilt here; no independent data-lake task is supported.",

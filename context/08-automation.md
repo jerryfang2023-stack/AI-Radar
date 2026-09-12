@@ -301,3 +301,7 @@ npm run assert:no-active-v3
 npm run assert:pipeline-policy
 npm run assert:compatibility-retirement
 ```
+
+## 国内融资独立链路（2026-09-12）
+
+08:10 同次生产调度并行启动国内专项与海外监测；共享库发布串行。国内单独重试，复用私有原文检查点。16:45 Final Closure 同步融资门户、小程序和受保护 OPS 质量面板。详见 docs/china-funding-monitor.md。
