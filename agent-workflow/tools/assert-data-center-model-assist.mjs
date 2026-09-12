@@ -3,7 +3,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { evaluateModelAssistCandidate, readJson } from "./model-assist-v1.mjs";
-import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
+import { hydrateRawDocument, loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
+import { authorizedTerraExtraction } from "./codex-extraction-client.mjs";
 
 const require = createRequire(import.meta.url);
 const Ajv = require("ajv/dist/2020");
@@ -32,6 +33,7 @@ function main() {
     const store = readJson(path.join(assistRoot, name));
     if (!validate(store)) problems.push(`${name}:schema:${ajv.errorsText(validate.errors)}`);
     const raws = readJson(path.join(bundleRoot, store?.data_date || "", "raw-documents.json"), []);
+    const authorization = readJson(path.join(bundleRoot, store?.data_date || "", "historical-funding-authorization.json"), {});
     const rawById = new Map(raws.map((raw) => [
       raw.raw_id,
       hydrateRawDocument(root, raw, { required: false }),
@@ -43,6 +45,10 @@ function main() {
       if (!raw) {
         problems.push(`${candidate.candidate_id}:raw_not_found`);
         continue;
+      }
+      const original = candidate.provider === "codex" ? loadPrivateEvidenceRecord(root, raw.body_ref, raw.content_hash, { sourceUrl: raw.source_url, dataDate: store.data_date }) : null;
+      if (candidate.provider === "codex" && !authorizedTerraExtraction(candidate, original?.metadata, authorization)) {
+        problems.push(`${candidate.candidate_id}:codex_outside_authorized_china_history`);
       }
       const evaluation = evaluateModelAssistCandidate(candidate, raw.body_clean || "");
       if (["accepted", "requires_review"].includes(candidate.status) && evaluation.length) {

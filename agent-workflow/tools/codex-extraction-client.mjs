@@ -5,6 +5,12 @@ import { spawn, spawnSync } from "node:child_process";
 
 export const TERRA_EXTRACTION_MODEL = "gpt-5.6-terra";
 
+export function authorizedTerraExtraction(candidate, metadata, authorization) {
+  return candidate.model === TERRA_EXTRACTION_MODEL && metadata?.acquisition_channel === "china-funding"
+    && authorization?.schema_version === "CHINA-FUNDING-HISTORY-AUTHORIZATION-V1.0"
+    && Boolean(authorization.source_refs?.includes(candidate.source_ref));
+}
+
 export function codexExtractionInvocation(directory, output, env = process.env) {
   return { args: ["exec", "--ignore-user-config", "--ephemeral", "--skip-git-repo-check", "-C", directory,
     "-m", TERRA_EXTRACTION_MODEL, "-c", "model_reasoning_effort=medium", "--disable", "shell_tool",

@@ -7,7 +7,18 @@ import { historyWindows, collectHistory, historicalSearch } from "../collect-chi
 import { historicalFundingAuthorized } from "../build-data-center-v4.mjs";
 import { deepSeekJsonCompletion } from "../deepseek-translation-client.mjs";
 import { chinaFundingSourceDate } from "../lib/china-funding-source-date.mjs";
-import { codexExtractionInvocation } from "../codex-extraction-client.mjs";
+import { codexExtractionInvocation, authorizedTerraExtraction } from "../codex-extraction-client.mjs";
+
+test("Terra provenance requires both the private capture channel and exact source authorization", () => {
+  const candidate = { model: "gpt-5.6-terra", source_ref: "SA-domestic" };
+  const metadata = { acquisition_channel: "china-funding" };
+  const authorization = { schema_version: "CHINA-FUNDING-HISTORY-AUTHORIZATION-V1.0", source_refs: ["SA-domestic"] };
+  assert.equal(authorizedTerraExtraction(candidate, metadata, authorization), true);
+  assert.equal(authorizedTerraExtraction(candidate, { acquisition_channel: "funding" }, authorization), false);
+  assert.equal(authorizedTerraExtraction({ ...candidate, source_ref: "SA-other" }, metadata, authorization), false);
+  assert.equal(authorizedTerraExtraction({ ...candidate, model: "gpt-5.3-codex-spark" }, metadata, authorization), false);
+  assert.equal(authorizedTerraExtraction(candidate, metadata, {}), false);
+});
 
 test("Terra extraction pins medium and excludes API secrets from the Codex child", () => {
   const invocation = codexExtractionInvocation("private", "result.json", { PATH: "bin", DEEPSEEK_API_KEY: "secret", OPENAI_API_KEY: "secret", GH_TOKEN: "secret" });
