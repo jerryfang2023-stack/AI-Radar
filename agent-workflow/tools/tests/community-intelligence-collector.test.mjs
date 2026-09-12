@@ -50,6 +50,7 @@ test("SCYS normalization never replaces a missing original link with its homepag
   const card={title:'用 AI 自动化进行客户资料交付实战案例',author:'测试作者',excerpt:'客户资料交付流程',links:[]};
   const missing=normalizeCard('scys',card,{keyword:'AI',mode:'search'});
   assert.equal(missing.url,'');
+  assert.equal(normalizeCard('scys',{...card,url:'https://scys.com/'},{keyword:'AI',mode:'search'}).url,'');
   const url='https://scys.com/articleDetail/xq_topic/123';
   const known={...missing,url};
   assert.equal(mergeItems([known,missing])[0].url,url);

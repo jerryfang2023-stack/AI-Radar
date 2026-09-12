@@ -6,6 +6,7 @@ import crypto from "node:crypto";
 import { extractDocumentLinks, mergeDocumentLinks, retainDocumentLinks, documentRetentionProblems, buildDocumentIndex } from "./community-document-links.mjs";
 import { collectScysMcp } from "./collect-scys-mcp.mjs";
 import { connectScysMcp } from "../../../agent-workflow/tools/lib/scys-mcp-client.mjs";
+import { canonicalScysUrl } from "../../../agent-workflow/tools/lib/scys-original-links.mjs";
 import { ingestPrivateEvidenceRecords } from "../../../agent-workflow/tools/lib/private-evidence-backup.mjs";
 import { resolvePrivateEvidenceBackupRoot } from "../../../agent-workflow/tools/private-evidence-backup-paths.mjs";
 
@@ -536,7 +537,7 @@ export function normalizeCard(sourceKey, card, job) {
     relativeTime: clean(card.relativeTime),
     publishedAt: clean(card.publishedAt),
     title,
-    url: card.url || (sourceKey === "scys" ? "" : pageFallbackUrl(sourceKey, job)),
+    url: sourceKey === "scys" ? canonicalScysUrl(card.url) : card.url || pageFallbackUrl(sourceKey, job),
     scene: inferScene(fullText),
     industry: inferIndustry(fullText),
     tools,
