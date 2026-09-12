@@ -1268,9 +1268,13 @@
     const href = safeExternalUrl(resource.href);
     const label = { document: "实操文档", manual: "航海手册", tool: "工具", case: "关联案例" }[resource.kind] || "资料";
     const title = resource.text && !/^https?:/i.test(resource.text) ? resource.text : resource.owners[0]?.itemTitle || "实操资料";
+    const ownerItems = (resource.owners || []).map((owner) => communityItems().find((item) => item.id === owner.itemId)).filter(Boolean);
+    const summarySource = resource.description ? "资料摘要" : "原帖摘要";
+    const summary = communityCompact(String(resource.description || ownerItems.map((item) => communityDisplaySummary(item, communityDisplayTitle(item))).find(Boolean) || "").replace(/https?:\/\/[^\s<>]+/gu, "").trim(), 220);
     return `<article class="dc-community-card dc-resource-card">
       <div class="dc-community-card-meta"><span>${label}</span></div>
       <h3>${href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>` : escapeHtml(title)}</h3>
+      ${summary ? `<p class="dc-resource-summary"><strong>${summarySource}</strong>${escapeHtml(summary)}</p>` : ""}
       ${href ? `<a class="dc-resource-url" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(href)}</a>` : ""}
       ${resource.entries?.length ? `<details><summary>手册目录 · ${resource.entries.length} 节</summary><ul>${resource.entries.map((entry) => `<li>${escapeHtml(entry.title)}</li>`).join("")}</ul></details>` : ""}
       <div class="dc-community-card-actions">${resource.owners.map((owner) => `<button type="button" data-community-open="${escapeHtml(owner.itemId)}">所属帖子：${escapeHtml(communityCompact(owner.itemTitle, 45))}</button>`).join("")}</div>

@@ -63,6 +63,15 @@ try {
   const href='https://my.feishu.cn/wiki/U8exwxmrdiCgQBkP5HtcOJzEnFb';
   assert.ok((await page.locator('.dc-resource-card a').evaluateAll(a=>a.map(x=>x.href))).includes(href));
   await page.locator('[data-community-clear]').click();
+  await page.locator('input[name="q"]').fill('BZaVdY13koEJt9xn91JcrRksnth');
+  await page.locator('[data-community-filter-form] button[type="submit"]').click();
+  assert.ok((await page.locator('.dc-resource-summary').innerText()).includes('公众号做号经验'));
+  assert.ok((await page.locator('.dc-resource-summary').innerText()).includes('原帖摘要'));
+  await page.setViewportSize({width:837,height:791});
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await page.screenshot({path:path.join(process.env.LOCALAPPDATA,'WaveSight/runtime/community-resource-summary.png'),fullPage:true});
+  await page.setViewportSize({width:1280,height:900});
+  await page.locator('[data-community-clear]').click();
   await page.getByLabel('资料类型',{exact:true}).selectOption('manual');
   assert.ok(await page.locator('.dc-resource-card details').count()>0);
   await page.locator('.dc-resource-card details summary').first().click();
