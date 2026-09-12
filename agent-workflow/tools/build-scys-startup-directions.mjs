@@ -9,9 +9,9 @@ const original = item => canonicalScysUrl(item.originalUrl || item.url);
 
 // Conservative title rules: conflicting or missing matches remain visible in pending.
 const rules = [
-  ["apps", /小程序|APP|简历.*插件|应用定制/iu],
+  ["apps", /小程序|\bAPP\b|简历.*插件|应用定制/iu],
   ["enterprise", /FDE|企业.{0,8}(?:AI|智能体)|AI.{0,8}(?:企业|咨询|实施)|美业|门店/iu],
-  ["education", /培训|少儿|启蒙|教育服务/iu],
+  ["education", /(?:AI|企业|少儿).{0,4}培训|少儿|启蒙|教育服务/iu],
   ["knowledge-products", /虚拟资料|虚拟项目|知识产品|课件|资料.{0,6}(?:售卖|变现)|图解卡片/iu],
   ["commerce", /选品|测款|电商运营/iu],
   ["content-agents", /内容.{0,8}(?:工作|系统|自动化|Agent)|(?:工作|系统|自动化|Agent).{0,8}内容|公众号运营|自动剪辑|自动写稿/iu],
@@ -55,7 +55,8 @@ export function buildDirections(library, config, editorial = {}) {
     group.sort((a,b) => Number(model.profile(b, editorial).reviewed) - Number(model.profile(a, editorial).reviewed) || Number(!!b.bodyRef) - Number(!!a.bodyRef) || String(b.lastSeen).localeCompare(String(a.lastSeen)) || a.id.localeCompare(b.id));
     const item = group[0];
     const matches = rules.filter(([,pattern]) => pattern.test(item.title)).map(([id]) => id);
-    const direction = reviewed || (matches.length === 1 ? matches[0] : "");
+    const announcement = /招聘|报名|名额|会员日|要来了|大课|沙龙/iu.test(item.title);
+    const direction = reviewed || (!announcement && matches.length === 1 ? matches[0] : "");
     const post = { itemId:item.id, title:item.title, author:item.author || "", originalUrl:original(item) || (key.startsWith("https://") ? key : ""), links:[...new Map(group.flatMap(item => item.links || []).map(link => [link.href, link])).values()] };
     const bucket = directions.find(entry => entry.id === direction);
     if (direction && !bucket) throw new Error("Unknown reviewed direction: " + direction);

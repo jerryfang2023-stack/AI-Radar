@@ -160,6 +160,9 @@ test("daily directions count new posts once, advance date, retain links and expo
   assert.equal(day2.pending.length,1);
   assert.equal(day2.directions[0].posts.find(p=>p.originalUrl===post.url).links[0].href,link.href);
   assert.equal(day2.prices.length,0);
+  const notice = {...fresh,id:"notice",title:"AI 小说工具培训报名，限额 20 人"};
+  assert.equal(buildDirections({items:[notice]},config).meta.classifiedPosts,0);
+  assert.equal(buildDirections({items:[notice]},config).pending.length,1);
   assert.deepEqual(buildDirections({items:[first,again,fresh,ambiguous]},config),day2);
   const reviewed = {...config,assignments:[{title:ambiguous.title,author:'甲',originalUrl:ambiguous.url,direction:'education'}]};
   assert.equal(buildDirections({items:[first,again,fresh,ambiguous]},reviewed).pending.length,0);
