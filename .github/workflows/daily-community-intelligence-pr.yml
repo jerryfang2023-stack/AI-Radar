@@ -120,6 +120,9 @@ jobs:
         run: |
           npm run translate:community-intelligence -- --date="${RUN_DATE}"
 
+      - name: Rebuild SCYS library from accepted snapshots
+        run: npm run build:scys-library
+
       - name: Run community intelligence gate
         id: community-gate
         continue-on-error: true
@@ -198,6 +201,7 @@ jobs:
 
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-community-intelligence-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-community-intelligence-gate.md"
+          stage_if_exists "01-SiteV2/site/data/scys-community-library.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence-daily/index.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence-daily/${RUN_DATE}.json"

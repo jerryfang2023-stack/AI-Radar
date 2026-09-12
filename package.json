@@ -15,7 +15,7 @@
     "summarize:actions": "node agent-workflow/tools/write-action-retrospective.mjs",
     "collect:community-intelligence": "node 01-SiteV2/site/scripts/collect-community-intelligence.mjs",
     "enrich:community-intelligence:resources": "node agent-workflow/tools/enrich-scys-community-resources.mjs",
-    "test:community-intelligence": "node --test agent-workflow/tools/tests/community-intelligence-collector.test.mjs agent-workflow/tools/tests/scys-community.test.mjs agent-workflow/tools/tests/community-evidence-gate.test.mjs",
+    "test:community-intelligence": "node --test agent-workflow/tools/tests/community-intelligence-collector.test.mjs agent-workflow/tools/tests/scys-community.test.mjs agent-workflow/tools/tests/community-evidence-gate.test.mjs agent-workflow/tools/tests/scys-community-library.test.mjs",
     "translate:community-intelligence": "node agent-workflow/tools/translate-community-intelligence.mjs",
     "assert:community-intelligence": "node agent-workflow/tools/assert-community-intelligence-data.mjs",
     "assert:first-line-v4": "node agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs",
@@ -164,7 +164,9 @@
     "install:periodic-automation-tasks": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-periodic-automation-tasks.ps1",
     "source:intake:china-funding": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --source-only=china-funding",
     "pipeline:china-funding": "node agent-workflow/tools/run-china-funding-pipeline.mjs",
-    "test:china-funding": "node --test agent-workflow/tools/tests/china-funding-lane.test.mjs agent-workflow/tools/tests/china-funding-history.test.mjs"
+    "test:china-funding": "node --test agent-workflow/tools/tests/china-funding-lane.test.mjs agent-workflow/tools/tests/china-funding-history.test.mjs",
+    "build:scys-library": "node agent-workflow/tools/build-scys-community-library.mjs",
+    "assert:scys-library": "node agent-workflow/tools/build-scys-community-library.mjs --check"
   },
   "repository": {
     "type": "git",

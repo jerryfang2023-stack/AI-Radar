@@ -42,6 +42,12 @@
     viewpoints: { title: "一线观点", description: "建设者与从业者公开观点", detail: "viewpoint", dataKey: "viewpoints", placeholder: "搜索观点、人物或机构" }
   };
   const communityPageSize = 12;
+  const scysModel = window.ScysCommunityModel;
+  const scysViews = {
+    cases: { label: "AI 创业案例库", rail: "案例场景", empty: "没有符合条件的创业案例" },
+    weekly: { label: "每周需求与踩坑精选", rail: "精选场景", empty: "本周尚无已整理的精选，切换日期可查看其他周" },
+    resources: { label: "实操资料库", rail: "资料场景", empty: "没有符合条件的实操资料" }
+  };
   const communityViewConfig = {
     all: { label: "全部", rail: "场景索引", empty: "没有匹配的社群情报" },
     industry_case: { label: "行业案例", rail: "商业场景", empty: "没有匹配的行业案例" },
@@ -52,14 +58,17 @@
   const communityState = {
     manifest: [],
     payload: null,
+    library: null,
+    editorial: null,
     selectedDate: "",
-    activeView: "all",
+    activeView: params.get("source") === "aipoju" ? (Object.hasOwn(communityViewConfig, params.get("section")) ? params.get("section") : "all") : (Object.hasOwn(scysViews, params.get("section")) ? params.get("section") : "cases"),
     activeScene: "all",
     page: 1,
     filters: {
-      query: "",
-      source: "all",
-      scene: "all"
+      query: params.get("q") || "",
+      source: params.get("source") === "aipoju" ? "aipoju" : "scys",
+      scene: "all",
+      industry: "all", offering: "all", stage: "all", channel: "all", reviewStatus: "reviewed"
     }
   };
   const viewpointPageSize = 16;
@@ -1067,8 +1076,10 @@
   }
 
   function communityItems() {
+    if (communityState.filters.source === "scys") return communityState.library?.items || [];
     const groups = new Map();
     for (const item of communityState.payload?.items || []) {
+      if (item.source !== communityState.filters.source) continue;
       const key = communityDedupeKey(item);
       if (!groups.has(key)) groups.set(key, []);
       groups.get(key).push(item);
@@ -1088,10 +1099,17 @@
   }
 
   function communitySourceLabel(item) {
+    if (item.source === "aipoju") return "AI 破局";
+    if (item.source === "scys") return "生财";
     return item.sourceName || communityState.payload?.sources?.[item.source]?.name || item.source || "未知来源";
   }
 
   function communityMatchesView(item, targetView = communityState.activeView) {
+    if (communityState.filters.source === "scys") {
+      if (targetView === "resources") return communityLinks(item).length > 0 || item.relatedResources?.length > 0;
+      if (targetView === "weekly") return scysModel.weekly(communityItems(), communityState.editorial, communityState.selectedDate).some((entry) => entry.item.id === item.id);
+      return scysModel.profile(item, communityState.editorial).caseMaterial;
+    }
     return targetView === "all"
       || (targetView === "links" ? communityLinks(item).length > 0 : item.insightType === targetView);
   }
@@ -1109,12 +1127,14 @@
       item.excerpt,
       item.monetization,
       item.resultSignal,
+      ...(item.source === "scys" ? Object.values(scysModel.profile(item, communityState.editorial).fields) : []),
       item.collection?.keyword,
       ...(item.tools || []),
       ...(item.painPoints || []),
       ...(item.reusableMethod || []),
       ...(item.matchedKeywords || []),
-      ...communityLinks(item).flatMap((link) => [link.href, link.text])
+      ...communityLinks(item).flatMap((link) => [link.href, link.text]),
+      ...(item.relatedResources || []).flatMap((resource) => [resource.title, resource.description])
     ].filter(Boolean).join(" ").toLocaleLowerCase();
     return query.split(/\s+/u).filter(Boolean).every((term) => haystack.includes(term));
   }
@@ -1125,14 +1145,24 @@
       .filter((item) => {
         const scene = communityState.filters.scene !== "all" ? communityState.filters.scene : communityState.activeScene;
         return communityMatchesView(item)
+          && (item.source !== "scys" || communityState.activeView !== "cases" || communityState.filters.reviewStatus === "all" || scysModel.profile(item, communityState.editorial).reviewed)
           && (communityState.filters.source === "all" || item.source === communityState.filters.source)
-          && (ignoreScene || scene === "all" || item.scene === scene)
+          && (item.source !== "scys" || ["industry", "offering", "stage", "channel"].every((field) => communityState.filters[field] === "all" || scysModel.profile(item, communityState.editorial)[field].split(" / ").includes(communityState.filters[field])))
+          && (ignoreScene || scene === "all" || communityScene(item) === scene)
           && communityMatchesQuery(item, query);
       })
       .sort((a, b) => communityPublishedAt(b) - communityPublishedAt(a));
   }
 
+  function communityScene(item) {
+    return item.source === "scys" ? scysModel.profile(item, communityState.editorial).industry : item.scene || "未分类";
+  }
+
   function communityItemTags(item) {
+    if (item.source === "scys") {
+      const p = scysModel.profile(item, communityState.editorial);
+      return communityUnique([p.industry, p.offering, p.stage, ...p.channel.split(" / ")]).filter((tag) => !["待整理", "未披露"].includes(tag));
+    }
     const hidden = new Set(["待确认", "未识别", "未识别行业", "未分类", "未知"]);
     return communityUnique([item.scene, item.industry, ...(item.tools || []), item.monetization])
       .filter((tag) => !hidden.has(tag));
@@ -1142,8 +1172,9 @@
     const items = communityItems();
     return `
       <nav class="dc-community-tabs" aria-label="社群情报分类">
-        ${Object.entries(communityViewConfig).map(([key, config]) => {
-          const count = items.filter((item) => communityMatchesView(item, key)).length;
+        ${Object.entries(communityState.filters.source === "scys" ? scysViews : communityViewConfig).map(([key, config]) => {
+          const matched = items.filter((item) => communityMatchesView(item, key));
+          const count = key === "resources" ? scysResourceRows(items).length : key === "cases" ? matched.filter((item) => scysModel.profile(item, communityState.editorial).reviewed).length : matched.length;
           return `<button type="button" data-community-view="${escapeHtml(key)}"${communityState.activeView === key ? ' aria-current="page"' : ""}><span>${escapeHtml(config.label)}</span><strong>${count}</strong></button>`;
         }).join("")}
       </nav>
@@ -1153,13 +1184,13 @@
   function communityRenderScenes() {
     const items = communityFilteredItems({ ignoreScene: true });
     const groups = [...items.reduce((map, item) => {
-      const scene = item.scene || "未分类";
+      const scene = communityScene(item);
       map.set(scene, (map.get(scene) || 0) + 1);
       return map;
     }, new Map()).entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-CN"));
     return `
       <aside class="dc-community-rail">
-        <div class="dc-community-section-head"><h2>${escapeHtml(communityViewConfig[communityState.activeView].rail)}</h2><span>${groups.length} 类</span></div>
+        <div class="dc-community-section-head"><h2>${escapeHtml((communityState.filters.source === "scys" ? scysViews : communityViewConfig)[communityState.activeView].rail)}</h2><span>${groups.length} 类</span></div>
         <div class="dc-community-scene-list">
           <button type="button" data-community-scene="all"${communityState.activeScene === "all" ? ' aria-current="page"' : ""}><strong>全部</strong><span>${items.length} 条</span></button>
           ${groups.map(([scene, count]) => `<button type="button" data-community-scene="${escapeHtml(scene)}"${communityState.activeScene === scene ? ' aria-current="page"' : ""}><strong>${escapeHtml(scene)}</strong><span>${count} 条</span></button>`).join("")}
@@ -1172,7 +1203,7 @@
     const originalUrl = communityCanonicalItemUrl(item);
     const links = communityLinks(item);
     const title = communityDisplayTitle(item);
-    const date = item.publishedAt || item.relativeTime || communityState.selectedDate;
+    const date = item.publishedAt || (item.source === "scys" ? `最近采集 ${item.lastSeen}` : item.relativeTime || communityState.selectedDate);
     return `
       <article class="dc-community-card">
         <div class="dc-community-card-meta">
@@ -1181,6 +1212,7 @@
           <time>${escapeHtml(date || "日期未披露")}</time>
         </div>
         <h3>${escapeHtml(title)}</h3>
+        ${item.source === "scys" ? `<div class="dc-community-card-tags"><span>来源陈述 · 未独立核验</span>${[scysModel.profile(item, communityState.editorial).offering, scysModel.profile(item, communityState.editorial).stage].filter((value) => value !== "待整理").map((value) => `<span>${escapeHtml(value)}</span>`).join("")}</div>` : ""}
         <p>${escapeHtml(communityDisplaySummary(item, title))}</p>
         ${communityItemTags(item).length ? `<div class="dc-community-card-tags">${communityItemTags(item).slice(0, 4).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
         <div class="dc-community-card-actions">
@@ -1213,45 +1245,95 @@
     `;
   }
 
+  function scysResourceRows(items) {
+    const docs = scysModel.resources(items, communityState.library?.resources || []).map((link) => ({ ...link, kind: "document" }));
+    const related = new Map();
+    for (const item of items) for (const resource of item.relatedResources || []) {
+      const key = `${resource.kind}:${resource.id || resource.title}`;
+      if (!related.has(key)) related.set(key, { ...resource, href: safeExternalUrl(resource.url), text: resource.title, owners: [] });
+      related.get(key).owners.push({ itemId: item.id, itemTitle: item.title, itemUrl: item.url });
+    }
+    return [...docs, ...related.values()].filter((resource) => !communityState.filters.resourceKind || communityState.filters.resourceKind === "all" || resource.kind === communityState.filters.resourceKind);
+  }
+
+  function scysResourceCard(resource) {
+    const href = safeExternalUrl(resource.href);
+    const label = { document: "实操文档", manual: "航海手册", tool: "工具", case: "关联案例" }[resource.kind] || "资料";
+    const title = resource.text && !/^https?:/i.test(resource.text) ? resource.text : resource.owners[0]?.itemTitle || "实操资料";
+    return `<article class="dc-community-card dc-resource-card">
+      <div class="dc-community-card-meta"><span>${label}</span><span>${resource.kind === "document" ? "访问权限未逐项验证" : "同主题检索关联"}</span></div>
+      <h3>${href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>` : escapeHtml(title)}</h3>
+      ${href ? `<a class="dc-resource-url" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(href)}</a>` : "<p>未提供网页直达地址，可从所属帖子查看关联信息。</p>"}
+      ${resource.entries?.length ? `<details><summary>手册目录 · ${resource.entries.length} 节</summary><ul>${resource.entries.map((entry) => `<li>${escapeHtml(entry.title)}</li>`).join("")}</ul></details>` : ""}
+      <div class="dc-community-card-actions">${resource.owners.map((owner) => `<button type="button" data-community-open="${escapeHtml(owner.itemId)}">所属帖子：${escapeHtml(communityCompact(owner.itemTitle, 45))}</button>`).join("")}</div>
+    </article>`;
+  }
+
+  function scysWeeklyCard(entry) {
+    return `<article class="dc-community-card dc-weekly-card">
+      <div class="dc-community-card-meta"><span>${escapeHtml(entry.kind)}</span><time>整理于 ${escapeHtml(entry.selectedAt)}</time></div>
+      <h3>${escapeHtml(entry.title)}</h3><blockquote>${escapeHtml(entry.quote)}</blockquote>
+      <p><strong>待确认问题</strong><br>${escapeHtml(entry.question)}</p>
+      <p class="dc-community-note">摘自作者陈述，尚未独立核验。</p>
+      <div class="dc-community-card-actions"><button type="button" data-community-open="${escapeHtml(entry.item.id)}">查看案例与资料</button><a href="${escapeHtml(communityCanonicalItemUrl(entry.item))}" target="_blank" rel="noopener noreferrer">原帖</a></div>
+    </article>`;
+  }
+
   function communityRender() {
+    communitySetUrlDate(communityState.selectedDate);
     const items = communityFilteredItems();
+    const isScys = communityState.filters.source === "scys";
+    const config = (isScys ? scysViews : communityViewConfig)[communityState.activeView];
+    const resourceMode = isScys && communityState.activeView === "resources";
+    const weeklyMode = isScys && communityState.activeView === "weekly";
+    const rows = resourceMode ? scysResourceRows(items) : weeklyMode ? scysModel.weekly(items, communityState.editorial, communityState.selectedDate) : items;
+    communityState.page = Math.min(Math.max(communityState.page, 1), Math.max(1, Math.ceil(rows.length / communityPageSize)));
     const start = (communityState.page - 1) * communityPageSize;
-    const pageItems = items.slice(start, start + communityPageSize);
-    const sources = Object.entries(communityState.payload?.sources || {});
-    const scenes = [...new Set(communityFilteredItems({ ignoreScene: true }).map((item) => item.scene).filter(Boolean))]
+    const pageItems = rows.slice(start, start + communityPageSize);
+    const facets = { industry: "客户行业", offering: "产品 / 服务", stage: "创业阶段", channel: "获客渠道" };
+    const range = scysModel.weekRange(communityState.selectedDate);
+    const contextLabel = weeklyMode ? `本周 ${range.start} 至 ${range.end}` : isScys ? `历史积累至 ${communityState.library?.meta.latestDate || communityState.selectedDate}` : `数据日期 ${communityState.selectedDate}`;
+    const scenes = [...new Set(communityFilteredItems({ ignoreScene: true }).map(communityScene).filter(Boolean))]
       .sort((a, b) => a.localeCompare(b, "zh-CN"));
     root.innerHTML = `
       <div class="dc-page-head">
         <h1>社群情报</h1>
-        <span class="dc-page-description">社群来源的一线材料</span>
-        <span class="dc-data-date">数据日期 ${escapeHtml(communityState.selectedDate || "未披露")}</span>
-        <span class="dc-result-count">${items.length} 条</span>
+        <span class="dc-page-description">${isScys ? "生财 · AI 创业实践与实操资料" : "AI 破局 · 社群一线材料"}</span>
+        <span class="dc-data-date">${escapeHtml(contextLabel)}</span>
+        <span class="dc-result-count">${rows.length} 条</span>
       </div>
+      <nav class="dc-community-sources" aria-label="社群子栏目">
+        <a href="data-center.html?view=community&source=scys&section=cases"${isScys ? ' aria-current="page"' : ""}>生财<span>创业案例 · 需求与踩坑 · 实操资料</span></a>
+        <a href="data-center.html?view=community&source=aipoju"${!isScys ? ' aria-current="page"' : ""}>AI 破局<span>行业案例 · 工具技巧 · 资料链接</span></a>
+      </nav>
+      ${communityRenderTabs()}
+      ${isScys ? `<p class="dc-community-note">${weeklyMode ? "按整理日期归入自然周，仅展示已核对来源的精选。待确认问题供后续研究。" : resourceMode ? "历史资料独立保留完整地址与所属帖子；链接可打开不等于有访问权限或内容仍然适用。" : "按创业场景检索历史材料，已整理案例可查看首单、报价、交付与踩坑；未披露的信息保持空缺。"}</p>` : ""}
       <form class="dc-toolbar dc-community-toolbar" data-community-filter-form>
         <label class="dc-search"><span class="sr-only">关键词</span><input class="dc-input" name="q" value="${escapeHtml(communityState.filters.query)}" placeholder="搜索场景、案例、工具或链接" autocomplete="off"></label>
         <button class="dc-button" type="submit">搜索</button>
-        <select class="dc-select" name="date" aria-label="数据日期">
+        ${isScys && communityState.activeView === "cases" ? `<select class="dc-select" name="reviewStatus" aria-label="整理状态"><option value="reviewed"${communityState.filters.reviewStatus !== "all" ? " selected" : ""}>已整理案例</option><option value="all"${communityState.filters.reviewStatus === "all" ? " selected" : ""}>全部案例线索（含待整理）</option></select>` : ""}
+        ${isScys && !weeklyMode ? "" : `<select class="dc-select" name="date" aria-label="数据日期">
           ${communityState.manifest.map((entry) => `<option value="${escapeHtml(entry.date)}"${entry.date === communityState.selectedDate ? " selected" : ""}>${escapeHtml(communityDateLabel(entry.date))}</option>`).join("")}
-        </select>
-        <select class="dc-select" name="source" aria-label="来源">
-          <option value="all">全部来源</option>
-          ${sources.map(([key, source]) => `<option value="${escapeHtml(key)}"${key === communityState.filters.source ? " selected" : ""}>${escapeHtml(source.name || key)}</option>`).join("")}
-        </select>
+        </select>`}
+        ${isScys && !resourceMode ? Object.entries(facets).map(([field, label]) => {
+          const options = communityUnique(communityItems().filter((item) => scysModel.profile(item, communityState.editorial).caseMaterial).flatMap((item) => scysModel.profile(item, communityState.editorial)[field].split(" / ")));
+          return `<select class="dc-select" name="${field}" aria-label="${label}"><option value="all">全部${label}</option>${options.map((value) => `<option value="${escapeHtml(value)}"${communityState.filters[field] === value ? " selected" : ""}>${escapeHtml(value)}</option>`).join("")}</select>`;
+        }).join("") : ""}
+        ${resourceMode ? `<select class="dc-select" name="resourceKind" aria-label="资料类型">${Object.entries({ all: "全部资料", document: "实操文档", manual: "航海手册", tool: "工具", case: "关联案例" }).map(([key, label]) => `<option value="${key}"${(communityState.filters.resourceKind || "all") === key ? " selected" : ""}>${label}</option>`).join("")}</select>` : ""}
         <select class="dc-select" name="scene" aria-label="场景">
           <option value="all">全部场景</option>
           ${scenes.map((scene) => `<option value="${escapeHtml(scene)}"${scene === communityState.filters.scene ? " selected" : ""}>${escapeHtml(scene)}</option>`).join("")}
         </select>
         <button class="dc-clear" type="button" data-community-clear>清除条件</button>
       </form>
-      ${communityRenderTabs()}
       <div class="dc-community-layout">
         ${communityRenderScenes()}
         <section class="dc-community-stage">
-          <div class="dc-community-section-head"><h2>${escapeHtml(communityViewConfig[communityState.activeView].label)}</h2><span>${items.length} 条</span></div>
+          <div class="dc-community-section-head"><h2>${escapeHtml(config.label)}</h2><span>${rows.length} 条</span></div>
           <div class="dc-community-grid">
-            ${pageItems.length ? pageItems.map(communityCard).join("") : `<div class="dc-empty">${escapeHtml(communityViewConfig[communityState.activeView].empty)}</div>`}
+            ${pageItems.length ? pageItems.map(resourceMode ? scysResourceCard : weeklyMode ? scysWeeklyCard : communityCard).join("") : `<div class="dc-empty">${escapeHtml(config.empty)}</div>`}
           </div>
-          ${communityRenderPagination(items.length)}
+          ${communityRenderPagination(rows.length)}
         </section>
       </div>
     `;
@@ -1267,15 +1349,17 @@
     const originalUrl = communityCanonicalItemUrl(item);
     const links = communityLinks(item);
     const related = Array.isArray(item.relatedResources) ? item.relatedResources : [];
+    const profile = item.source === "scys" ? scysModel.profile(item, communityState.editorial) : null;
     content.innerHTML = `
       <div class="dc-community-dialog-meta">
         <span>${escapeHtml(communitySourceLabel(item))}</span>
         <span>${escapeHtml(item.author || "作者未披露")}</span>
-        <span>${escapeHtml(item.publishedAt || item.relativeTime || communityState.selectedDate)}</span>
+        <span>${escapeHtml(item.publishedAt || (item.source === "scys" ? `最近采集 ${item.lastSeen}` : item.relativeTime || communityState.selectedDate))}</span>
       </div>
       <h2>${escapeHtml(title)}</h2>
       ${communityItemTags(item).length ? `<div class="dc-community-card-tags">${communityItemTags(item).slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
       <section><h3>内容摘录</h3><p>${escapeHtml(item.evidence || item.excerpt || item.summary || "未披露")}</p></section>
+      ${profile ? `<section><h3>创业案例档案</h3><p>${profile.reviewed ? "依据作者原文整理，未作独立经营数据核验。" : "该材料尚待逐项整理，以下信息不作推断。"}</p><dl class="dc-case-fields">${Object.entries({ need: "客户需求", offering: "产品 / 服务", firstSale: "首单与获客", pricing: "报价与成本", delivery: "交付方法", pitfall: "踩坑与边界" }).map(([key, label]) => `<div><dt>${label}</dt><dd>${escapeHtml(profile.fields[key] || "未披露 / 待核对原文")}</dd></div>`).join("")}</dl></section>` : ""}
       <section>
         <h3>原始入口与资料链接</h3>
         <div class="dc-community-link-list">
@@ -1304,6 +1388,10 @@
     const next = new URL(window.location.href);
     next.searchParams.set("view", "community");
     next.searchParams.set("date", date);
+    next.searchParams.set("source", communityState.filters.source);
+    next.searchParams.set("section", communityState.activeView);
+    if (communityState.filters.query) next.searchParams.set("q", communityState.filters.query);
+    else next.searchParams.delete("q");
     window.history.replaceState({}, "", next);
   }
 
@@ -1353,7 +1441,7 @@
       communityRender();
     });
     root.querySelector("[data-community-clear]")?.addEventListener("click", () => {
-      communityState.filters = { query: "", source: "all", scene: "all" };
+      communityState.filters = { query: "", source: communityState.filters.source, scene: "all", industry: "all", offering: "all", stage: "all", channel: "all", resourceKind: "all", reviewStatus: "reviewed" };
       communityState.activeScene = "all";
       communityState.page = 1;
       communityRender();
@@ -1362,6 +1450,7 @@
       communityState.activeView = button.dataset.communityView;
       communityState.activeScene = "all";
       communityState.filters.scene = "all";
+      for (const key of ["industry", "offering", "stage", "channel", "resourceKind"]) communityState.filters[key] = "all";
       communityState.page = 1;
       communityRender();
     }));
@@ -1377,9 +1466,20 @@
       document.querySelector(".dc-page-head")?.scrollIntoView({ behavior: "smooth", block: "start" });
     }));
     root.querySelectorAll("[data-community-open]").forEach((button) => button.addEventListener("click", () => communityOpenDialog(button.dataset.communityOpen)));
+    for (const key of ["industry", "offering", "stage", "channel", "resourceKind", "reviewStatus"]) form?.elements.namedItem(key)?.addEventListener("change", (event) => {
+      communityState.filters[key] = event.target.value;
+      communityState.page = 1;
+      communityRender();
+    });
   }
 
   async function renderCommunityPage() {
+    if (communityState.filters.source === "scys") {
+      [communityState.library, communityState.editorial] = await Promise.all([
+        communityFetchJson("data/scys-community-library.json"),
+        communityFetchJson("data/scys-community-editorial.json")
+      ]);
+    }
     const manifest = await communityFetchJson("data/community-intelligence-daily/index.json").catch(() => ({ dates: [] }));
     communityState.manifest = (manifest.dates || []).filter((item) => item?.date)
       .sort((a, b) => String(b.date).localeCompare(String(a.date)));
