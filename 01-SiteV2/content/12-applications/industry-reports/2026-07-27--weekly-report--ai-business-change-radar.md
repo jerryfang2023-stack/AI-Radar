@@ -1,5 +1,9 @@
 ---
-title: "200 亿采购意向之后，AI 企业服务真正缺的是交付结果"
+title: "200 亿采购意向签了，74% 的企业却撤回了实时 AI 智能体"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:48:07.838Z
 date: 2026-07-27
 week: 2026-W30
 window: 2026-07-20 to 2026-07-26

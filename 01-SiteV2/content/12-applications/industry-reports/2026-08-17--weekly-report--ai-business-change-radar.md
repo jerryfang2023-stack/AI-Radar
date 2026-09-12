@@ -1,5 +1,9 @@
 ---
-title: "AI 智能体不是缺模型，而是缺能兜底的责任链"
+title: "OpenAI 席位涨到 125 美元，智能体开始算责任这笔账"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:48:07.838Z
 date: 2026-08-17
 week: 2026-W33
 window: 2026-08-10 to 2026-08-16

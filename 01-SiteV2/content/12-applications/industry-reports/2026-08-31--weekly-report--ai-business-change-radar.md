@@ -1,5 +1,9 @@
 ---
-title: "AI产品同质化越严重，越缺的不是模型而是可验收交付"
+title: "Fable 5 遇冷，企业转向更便宜的 AI 产品"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:48:07.838Z
 date: 2026-08-31
 week: 2026-W35
 window: 2026-08-24 to 2026-08-30

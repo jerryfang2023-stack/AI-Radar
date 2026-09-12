@@ -4,7 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { REPOSITORY_CONTENT_PATHS } from "../guanlan-vault-paths.mjs";
-import { periodicReportTitleProblems } from "../periodic-report-title.mjs";
+import { periodicReportTitleCorpusProblems, periodicReportTitleProblems } from "../periodic-report-title.mjs";
 import {
   buildEvidenceSourceIndex,
   discoverPublishedReports,
@@ -22,21 +22,35 @@ test("periodic renderer owns the report-center release version", () => {
   assert.equal(REPORTS_CENTER_VERSION, "REPORTS-V1.3.0-funding-portal");
 });
 
-test("periodic report titles carry tension and a business consequence", () => {
-  assert.deepEqual(periodicReportTitleProblems("AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任"), []);
-  assert.deepEqual(periodicReportTitleProblems("企业真正采购的不是模型能力，而是流程结果与交付责任"), []);
-  assert.ok(periodicReportTitleProblems("企业 AI 进入组织级工作流，Agent 从能力演示转向流程接管").length > 0);
+test("periodic report titles support varied evidence-bearing structures", () => {
+  assert.deepEqual(periodicReportTitleProblems("企业开始把 AI 预算从买工具转向重做业务流程"), []);
+  assert.deepEqual(periodicReportTitleProblems("Agent 已经能跑通 demo，为什么企业还是落不了地？"), []);
+  assert.deepEqual(periodicReportTitleProblems("Bun 用 Claude 重写百万行代码，账单先成了新边界"), []);
+  assert.ok(periodicReportTitleProblems("AI 赋能行业，未来已来").length > 0);
   assert.ok(periodicReportTitleProblems("2026年6月 AI 商业结构与机会月报").length > 0);
 });
 
-test("June monthly title records DeepSeek title provenance", () => {
+test("periodic report title corpus rejects mechanical template repetition", () => {
+  assert.deepEqual(periodicReportTitleCorpusProblems([
+    "企业开始把 AI 预算从买工具转向重做业务流程",
+    "Agent 已经能跑通 demo，为什么企业还是落不了地？",
+    "Bun 用 Claude 重写百万行代码，账单先成了新边界",
+  ]), []);
+  assert.ok(periodicReportTitleCorpusProblems([
+    "企业真正采购的不是模型，而是交付责任",
+    "客户真正采购的不是能力，而是业务结果",
+    "团队真正需要的不是工具，而是工作流程",
+  ]).length > 0);
+});
+
+test("June monthly title records the standalone DeepSeek title skill provenance", () => {
   const source = fs.readFileSync(path.join(process.cwd(), REPOSITORY_CONTENT_PATHS.industryReportsRoot, "monthly", "2026-06-30--monthly-report--ai-business-structure-and-opportunity.md"), "utf8");
   const metadata = parseFrontmatter(source).values;
-  assert.equal(metadata.title, "企业真正采购的不是模型能力，而是流程结果与交付责任");
-  assert.equal(metadata.title_generation_skill, "guanlan-monthly-business-structure-report@0.2.1");
+  assert.equal(metadata.title, "案例信号超过产品发布，AI 公司开始讲客户做了什么");
+  assert.equal(metadata.title_generation_skill, "laofang-title-writer");
   assert.equal(metadata.title_model_provider, "deepseek");
   assert.equal(metadata.title_model, "deepseek-v4-pro");
-  assert.match(metadata.title_generated_at, /^2026-07-18T/u);
+  assert.match(metadata.title_generated_at, /^2026-09-12T/u);
 });
 
 test("periodic renderer removes all inline source annotations without harming readability", () => {

@@ -1,5 +1,9 @@
 ---
-title: Agent 已进入科研、采购和支付，企业却先追问成本与责任
+title: "Agent 进了科研、采购和支付，企业先问的是成本与责任"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:48:07.838Z
 date: 2026-07-06
 week: "2026-W27"
 window: 2026-06-29 to 2026-07-05
@@ -18,7 +22,7 @@ use_case_ids: []
 industry_ids: []
 ---
 
-# Agent 已进入科研、采购和支付，企业却先追问成本与责任
+# Agent 进了科研、采购和支付，企业先问的是成本与责任
 
 ## 0. 数据口径
 

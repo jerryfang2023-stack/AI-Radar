@@ -1,5 +1,9 @@
 ---
-title: "AI 采购热不是需求爆发，而是治理与成本焦虑的提前买单"
+title: "工信部要求加大 Token 采购，交付能力却没跟上"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:48:07.838Z
 date: 2026-09-07
 week: 2026-W36
 window: 2026-08-31 to 2026-09-06

@@ -1,5 +1,9 @@
 ---
-title: "AI 部署的真正瓶颈不是模型，而是没人买单的流程改造"
+title: "模型能力已过剩，企业却不愿为流程改造买单"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:48:07.838Z
 date: 2026-08-10
 week: 2026-W32
 window: 2026-08-03 to 2026-08-09

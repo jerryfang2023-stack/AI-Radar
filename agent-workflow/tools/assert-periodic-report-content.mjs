@@ -93,18 +93,25 @@ function checkMonthly(content, options) {
     return { ok: failures.length === 0, failures, metadata: fm, sections: [...sections].sort((a, b) => a - b) };
   }
   failures.push(...periodicReportTitleProblems(fm.title));
-  if (sections.size < 8) failures.push("monthly report must contain at least eight numbered sections");
+  for (let index = 0; index <= 8; index += 1) if (!sections.has(index)) failures.push(`monthly section ${index} is missing`);
   const requiredConcepts = [
     ["data boundary", /\u6570\u636e\u8fb9\u754c|\u6570\u636e\u8303\u56f4|data boundary/iu],
     ["structure judgment", /\u7ed3\u6784\u5224\u65ad|\u7ed3\u6784\u53d8\u5316|structure/iu],
     ["trend adjudication", /\u8d8b\u52bf\u88c1\u51b3|\u8d8b\u52bf\u5224\u65ad|trend adjudication/iu],
+    ["evidence completeness", /\u8bc1\u636e\u5b8c\u6574\u6027|evidence completeness/iu],
     ["opportunity map", /\u673a\u4f1a\u5730\u56fe|opportunity map/iu],
     ["contradictions", /\u77db\u76fe|\u53cd\u8bc1|contradiction/iu],
     ["next-month verification", /\u4e0b\u6708\u9a8c\u8bc1|next[- ]month verification/iu],
   ];
   for (const [label, pattern] of requiredConcepts) if (!pattern.test(content)) failures.push(`monthly ${label} section is missing`);
   if (hasPlaceholder(content)) failures.push("monthly report contains placeholders");
-  if (!/\[(?:E|O|C):[^\]]+\]/u.test(content)) failures.push("monthly source ID citations are missing");
+  for (const label of ["Signals", "Opinions", "Community"]) {
+    if (!new RegExp(`${label}[^\\d]{0,80}\\d+`, "iu").test(content)) failures.push(`${label} exact count is missing`);
+  }
+  for (const citationKind of ["E", "O", "C"]) if (!new RegExp(`\\[${citationKind}:[^\\]]+\\]`, "u").test(content)) failures.push(`monthly ${citationKind} source ID citations are missing`);
+  const opportunityCards = [...content.matchAll(/\*\*\u673a\u4f1a\u5361[\u4e00\u4e8c\u4e091-3]/gu)].length;
+  if (opportunityCards < 2) failures.push("monthly report must contain at least two opportunity cards");
+  if (content.replace(/\s/gu, "").length < 6000) failures.push("monthly report must contain at least 6000 non-whitespace characters");
   return { ok: failures.length === 0, failures, metadata: fm, sections: [...sections].sort((a, b) => a - b) };
 }
 
@@ -161,7 +168,7 @@ function writeReport(result, inputPaths) {
 
 function runFixtures() {
   const weeklyFrontmatter = [
-    "---", "title: AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任", "date: 2026-07-13", "week: 2026-W28",
+    "---", "title: Bun 用 Claude 重写百万行代码，账单先成了新边界", "date: 2026-07-13", "week: 2026-W28",
     "window: 2026-07-06 to 2026-07-12", "content_type: weekly-report", "slug: weekly-2026-w28", "status: draft", "model_provider: deepseek", "model: deepseek-v4-pro", "---",
   ].join("\n");
   const weeklyBody = `${weeklyFrontmatter}\n${Array.from({ length: 9 }, (_, index) => `## ${index}. Section ${index}`).join("\n")}\nSignals: 10\nOpinions: 3\nCommunity: 4\nScore: 82 / 100 [E:EVT-test]`;
@@ -169,8 +176,12 @@ function runFixtures() {
   const monthlyBody = [
     "---", "title: 模型继续制造注意力，真正接近预算的是部署交付层", "date: 2026-06-30", "month: 2026-06",
     "window: 2026-06-01 to 2026-06-30", "content_type: monthly-report", "slug: monthly-2026-06", "status: draft", "model_provider: deepseek", "model: deepseek-v4-pro", "---",
-    ...Array.from({ length: 9 }, (_, index) => `## ${index + 1}. Section ${index + 1}`),
-    "\u6570\u636e\u8fb9\u754c \u7ed3\u6784\u5224\u65ad \u8d8b\u52bf\u88c1\u51b3 \u673a\u4f1a\u5730\u56fe \u5173\u952e\u77db\u76fe \u4e0b\u6708\u9a8c\u8bc1 [E:EVT-test]",
+    "Signals: 10 | Opinions: 3 | Community: 4",
+    ...Array.from({ length: 9 }, (_, index) => `## ${index}. Section ${index}`),
+    "\u6570\u636e\u8fb9\u754c \u7ed3\u6784\u5224\u65ad \u8d8b\u52bf\u88c1\u51b3 \u8bc1\u636e\u5b8c\u6574\u6027 \u673a\u4f1a\u5730\u56fe \u5173\u952e\u77db\u76fe \u4e0b\u6708\u9a8c\u8bc1 [E:EVT-test] [O:OP-test] [C:CM-test]",
+    "**\u673a\u4f1a\u5361\u4e00\uff1a\u90e8\u7f72\u670d\u52a1** 80 / 100",
+    "**\u673a\u4f1a\u5361\u4e8c\uff1a\u5b89\u5168\u5ba1\u8ba1** 75 / 100",
+    "\u6709\u6548\u5206\u6790\u5185\u5bb9".repeat(1200),
   ].join("\n");
   const monthly = evaluatePeriodicContent({ kind: "monthly", content: monthlyBody, date: "2026-06-30", windowStart: "2026-06-01", windowEnd: "2026-06-30" });
   const fundingNewsletterBody = [
@@ -179,9 +190,10 @@ function runFixtures() {
     "## 01. 8月融资速读", "融资额集中度：81.1%", "早期融资：17家", "## 02. 8月重点融资", "Anthropic完成融资。", "## 03. 融资结构解析", "资金高度集中。", "## 附录｜观澜AI 8月融资公司名单", "| 公司 | 赛道 | 轮次 | 融资金额 |", "|---|---|---|---|", "| Anthropic | 基础模型 | G轮 | 300亿美元 |",
   ].join("\n");
   const fundingNewsletter = evaluatePeriodicContent({ kind: "monthly", content: fundingNewsletterBody, date: "2026-08-29", windowStart: "2026-08-01", windowEnd: "2026-08-29" });
-  const weakWeekly = evaluatePeriodicContent({ kind: "weekly", content: weeklyBody.replace("AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任", "企业 Agent 进入行业流程验证，成本和治理成为采购前置条件"), archive: weeklyBody, date: "2026-07-13", windowStart: "2026-07-06", windowEnd: "2026-07-12" });
+  const weakWeekly = evaluatePeriodicContent({ kind: "weekly", content: weeklyBody.replace("Bun 用 Claude 重写百万行代码，账单先成了新边界", "AI 商业变化判断周报"), archive: weeklyBody, date: "2026-07-13", windowStart: "2026-07-06", windowEnd: "2026-07-12" });
   const weakMonthly = evaluatePeriodicContent({ kind: "monthly", content: monthlyBody.replace("模型继续制造注意力，真正接近预算的是部署交付层", "2026年6月 AI 商业结构与机会月报"), date: "2026-06-30", windowStart: "2026-06-01", windowEnd: "2026-06-30" });
-  if (!weekly.ok || !monthly.ok || !fundingNewsletter.ok || weakWeekly.ok || weakMonthly.ok) throw new Error(`periodic content fixtures failed: ${JSON.stringify({ weekly, monthly, fundingNewsletter, weakWeekly, weakMonthly })}`);
+  const shallowMonthly = evaluatePeriodicContent({ kind: "monthly", content: monthlyBody.replace("\u6709\u6548\u5206\u6790\u5185\u5bb9".repeat(1200), "\u8fc7\u5ea6\u538b\u7f29\u7684\u6708\u62a5"), date: "2026-06-30", windowStart: "2026-06-01", windowEnd: "2026-06-30" });
+  if (!weekly.ok || !monthly.ok || !fundingNewsletter.ok || weakWeekly.ok || weakMonthly.ok || shallowMonthly.ok) throw new Error(`periodic content fixtures failed: ${JSON.stringify({ weekly, monthly, fundingNewsletter, weakWeekly, weakMonthly, shallowMonthly })}`);
   console.log(JSON.stringify({ ok: true, fixture: "periodic-report-content" }, null, 2));
 }
 

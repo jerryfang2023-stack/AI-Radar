@@ -1,5 +1,9 @@
 ---
-title: "企业AI部署缺的不是模型，是能担责的交付：微软25亿押注嵌入式工程师"
+title: "微软把工程师嵌进客户内部，AI 生意开始按结果卖"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:49:44.405Z
 date: 2026-07-31
 month: 2026-07
 window: 2026-07-01 to 2026-07-31

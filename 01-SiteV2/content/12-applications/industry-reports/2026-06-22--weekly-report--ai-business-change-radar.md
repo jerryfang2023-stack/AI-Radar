@@ -1,5 +1,9 @@
 ---
-title: 企业不缺 Agent，缺的是能把它接进流程并对结果负责的人
+title: "Agent 已经能跑通 demo，为什么企业还是落不了地？"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:49:44.405Z
 date: 2026-06-22
 week: "2026-W25"
 window: 2026-06-15 to 2026-06-21
@@ -18,7 +22,7 @@ use_case_ids: []
 industry_ids: []
 ---
 
-# 企业不缺 Agent，缺的是能把它接进流程并对结果负责的人
+# Agent 已经能跑通 demo，为什么企业还是落不了地？
 
 ## 0. 数据口径
 

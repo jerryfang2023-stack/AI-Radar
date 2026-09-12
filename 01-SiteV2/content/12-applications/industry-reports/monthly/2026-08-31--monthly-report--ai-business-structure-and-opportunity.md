@@ -1,5 +1,9 @@
 ---
-title: "AI编程不缺模型，缺的是能交付结果的Agent"
+title: "GPT-5.6 降价 80%，编程和额度不再稀缺，问题成了稀缺品"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:48:07.838Z
 date: 2026-08-31
 month: 2026-08
 window: 2026-08-01 to 2026-08-31
