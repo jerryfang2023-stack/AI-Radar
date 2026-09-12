@@ -14,7 +14,7 @@ This is the current source of truth for the factual data layer. `context/07-v3-i
 
 WaveSight is an AI industry data center. It provides a structured, systematic, source-traceable data foundation for AIP products, industry research, and startup decision-support applications. It does not make decisions, judge commercial value, recommend actions, or teach readers what conclusion to reach.
 
-DeepSeek is the sole production model provider. Model assistance is restricted to exact-span Claim extraction, evidence-linked FDE/hardware candidate fields, reviewed entity-resolution candidates, source-hashed translation, and QA repair suggestions. Claim/FDE/hardware candidates may auto-promote only after deterministic source-hash, exact-span, protected-number, and contract gates; entity resolution and QA repair always require explicit review.
+DeepSeek is the default production model provider. The explicitly authorized 2026 China funding historical extraction uses GPT-5.6 Terra medium through local Codex, with unchanged evidence gates; see `docs/china-funding-history.md`. Model assistance is restricted to exact-span Claim extraction, evidence-linked FDE/hardware candidate fields, reviewed entity-resolution candidates, source-hashed translation, and QA repair suggestions. Claim/FDE/hardware candidates may auto-promote only after deterministic source-hash, exact-span, protected-number, and contract gates; entity resolution and QA repair always require explicit review.
 
 ## Canonical chain
 

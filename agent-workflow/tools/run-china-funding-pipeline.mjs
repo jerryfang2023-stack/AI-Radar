@@ -48,11 +48,18 @@ function main() {
   const historyFrom = args.get("history-from") || "";
   const historyTo = args.get("history-to") || "";
   if (historyFrom || historyTo) historyWindows(historyFrom, historyTo, date);
+  if (historyFrom) {
+    process.env.MODEL_ASSIST_MODEL = "gpt-5.6-terra";
+    process.env.MODEL_ASSIST_SOURCE_REFS_FILE = path.join(root, `01-SiteV2/content/11-databases/data-center-v4/${date}/historical-funding-authorization.json`);
+  }
   const laneDir = historyFrom ? `agent-workflow/reports/china-funding-history/${historyFrom}_${historyTo}` : `agent-workflow/reports/china-funding/${date}`;
   const sourceDir = args.get("source-dir") || laneDir;
   const read = (file, fallback = null) => fs.existsSync(path.resolve(root, file)) ? JSON.parse(fs.readFileSync(path.resolve(root, file), "utf8")) : fallback;
   const write = (file, payload) => { const target = path.resolve(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.writeFileSync(target, `${JSON.stringify(payload, null, 2)}\n`); };
   const plan = chinaFundingPlan(date, sourceDir, { rawLimit: historyFrom ? 1260 : 168 });
+  if (historyFrom) for (const stage of plan) for (const command of stage.commands) {
+    if (command[0].endsWith("/migrate-private-evidence-source.mjs")) command.push(`--date=${date}`);
+  }
   if (args.get("dry-run") === "true") { console.log(JSON.stringify(plan, null, 2)); return; }
   const discovery = read(`${sourceDir}/china-funding-source-intake-candidates.json`);
   if (discovery?.date !== date) throw new Error("Missing same-date China funding discovery");
@@ -68,7 +75,7 @@ function main() {
     if (result.status !== 0 || result.error) {
       // Match the overseas contract: isolated model candidate failures are quarantined.
       // The immediately following strict model-assist assertion still gates accepted facts.
-      if (!result.error && args[0].endsWith("/generate-data-center-model-assist.mjs")) {
+      if (!historyFrom && !result.error && args[0].endsWith("/generate-data-center-model-assist.mjs")) {
         console.warn("Model assist reported candidate failures; validating the accepted subset next.");
         return;
       }
@@ -98,7 +105,7 @@ function main() {
           write(intakeFile, mergeSourceIntakes(accepted, read(intakeFile) || accepted));
           state.reused = true;
           // Last-good rollback also restores the public locator index. Rebuild it offline.
-          command(["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true"]);
+          command(["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true", ...(historyFrom ? [`--date=${date}`] : [])]);
           command(["agent-workflow/tools/assert-public-evidence-boundary.mjs"]);
           command(["agent-workflow/tools/assert-private-evidence-backup.mjs", `--date=${date}`]);
           write(acceptedFile, selectChinaFundingIntake(accepted, discovery));

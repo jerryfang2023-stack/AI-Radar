@@ -49,7 +49,7 @@ export async function collectHistory({ root, from, to, date, search = historical
     return { window, source, query, index, key: crypto.createHash("sha256").update(query).digest("hex").slice(0, 16) };
   })));
   const plan = { schema_version: "CHINA-FUNDING-HISTORY-V1.0", from, to, collection_date: date, windows, query_count: jobs.length,
-    models: { orchestration: "gpt-6-astra", orchestration_scope: "configuration_and_exceptions_only", orchestration_reasoning: "high", claim_extraction: "deepseek-v4-flash", claim_extraction_retry: "deepseek-v4-flash", translation: "deepseek-v4-flash", translation_fallback: "deepseek-v4-pro" },
+    models: { orchestration: "gpt-6-astra", orchestration_scope: "configuration_and_exceptions_only", orchestration_reasoning: "high", claim_extraction: "gpt-5.6-terra", claim_extraction_retry: "gpt-5.6-terra", claim_extraction_reasoning: "medium", claim_extraction_provider: "codex_local", translation: "deepseek-v4-flash", translation_fallback: "deepseek-v4-pro" },
     scope_note: "China-market AI financing; publisher origin and search dates are discovery hints only. Original evidence decides factual date and market.",
   };
   write(path.join(lane, "plan.json"), plan);

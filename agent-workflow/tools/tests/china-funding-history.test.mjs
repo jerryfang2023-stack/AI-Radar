@@ -7,6 +7,15 @@ import { historyWindows, collectHistory, historicalSearch } from "../collect-chi
 import { historicalFundingAuthorized } from "../build-data-center-v4.mjs";
 import { deepSeekJsonCompletion } from "../deepseek-translation-client.mjs";
 import { chinaFundingSourceDate } from "../lib/china-funding-source-date.mjs";
+import { codexExtractionInvocation } from "../codex-extraction-client.mjs";
+
+test("Terra extraction pins medium and excludes API secrets from the Codex child", () => {
+  const invocation = codexExtractionInvocation("private", "result.json", { PATH: "bin", DEEPSEEK_API_KEY: "secret", OPENAI_API_KEY: "secret", GH_TOKEN: "secret" });
+  assert.deepEqual(invocation.env, { PATH: "bin" });
+  assert.equal(invocation.args[invocation.args.indexOf("-m") + 1], "gpt-5.6-terra");
+  assert.ok(invocation.args.includes("model_reasoning_effort=medium"));
+  assert.ok(invocation.args.includes("skip_host_skill_discovery"));
+});
 
 test("Chinese article bylines retain the explicit historical disclosure date", () => {
   assert.equal(chinaFundingSourceDate({ acquisition_channel: "china-funding", clean_text: "融资文章\n作者·2026年02月02日 08:00\n正文" }), "2026-02-02T08:00:00+08:00");
@@ -35,7 +44,7 @@ test("historical discovery checkpoints all source/month queries without inventin
   assert.equal(calls, 8);
   assert.equal(result.items.length, 1);
   assert.equal(result.items[0].published_at, "");
-  assert.equal(result.history.models.claim_extraction, "deepseek-v4-flash");
+  assert.equal(result.history.models.claim_extraction, "gpt-5.6-terra");
   await collectHistory(options);
   assert.equal(calls, 8, "a restart reuses every completed query");
 });

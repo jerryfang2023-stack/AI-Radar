@@ -105,8 +105,9 @@ jobs:
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
       DEEPSEEK_PRO_MODEL: deepseek-v4-pro
-      # User selected Flash for this historical extraction, including retries.
-      MODEL_ASSIST_MODEL: deepseek-v4-flash
+      # Terra uses the user's local Codex login. Cloud accepts its saved candidates only.
+      MODEL_ASSIST_MODEL: gpt-5.6-terra
+      MODEL_ASSIST_PROVIDER: checkpoint
       GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ github.workspace }}/../WaveSight-private-evidence
     steps:
       - name: Read latest shared baseline after acquiring publication slot
