@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-07359bd64e8150",
+    "name": "隐山资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-05-25",
+    "latest_disclosed_at": "2026-05-25",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-c32bca5849751ee8",
+        "funding_insight_id": "FI-033dd55115963cb3",
+        "event_ids": [
+          "EV-0896f0e7b703bed2"
+        ],
+        "company_entity_id": "EN-bd0658982d1f728d",
+        "company_canonical_entity_id": "",
+        "company_name": "广东天机智能系统有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-05-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "战略融资投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7ef228d0192ff7f5",
+            "source_url": "https://pitchhub.36kr.com/project/1818784826380416",
+            "source_title": "天机智能 | 项目信息-36氪",
+            "source_content_hash": "692147b904abe49f",
+            "quote": "战略融资 2024-03 未透露 隐山资本",
+            "quote_hash": "04aa79c04de7b751c293b3af9898ab1fdae13b9b3e09495337926f31fea81901"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7ef228d0192ff7f5",
+        "source_url": "https://pitchhub.36kr.com/project/1818784826380416",
+        "source_title": "天机智能 | 项目信息-36氪",
+        "source_content_hash": "692147b904abe49f",
+        "quote": "战略融资 2024-03 未透露 隐山资本",
+        "quote_hash": "04aa79c04de7b751c293b3af9898ab1fdae13b9b3e09495337926f31fea81901"
+      }
+    ]
+  }
+}

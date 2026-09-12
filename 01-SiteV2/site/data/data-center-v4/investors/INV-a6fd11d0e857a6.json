@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-a6fd11d0e857a6",
@@ -20,24 +20,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-07-02",
     "latest_disclosed_at": "2026-07-06",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "pre_series_a"
+      "pre_series_a",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-60d2cc785c19e818",
+        "canonical_entity_id": "",
+        "name": "北京三启万物科技有限公司"
+      },
       {
         "entity_id": "EN-634537cdabd4e325",
         "canonical_entity_id": "",
@@ -46,14 +53,15 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-892fd67c6a443e88",
+        "activity_id": "IA-36ea42d210db666a",
         "funding_insight_id": "FI-f7342735e68375d9",
         "event_ids": [
+          "EV-a16d0d2a76e8d4a6",
           "EV-6ca567f6e80c36c5"
         ],
         "company_entity_id": "EN-bbc41366a5a7cf78",
         "company_canonical_entity_id": "",
-        "company_name": "北京星动纪元科技有限公司",
+        "company_name": "北京星动纪元科技股份有限公司",
         "round": "轮次未披露",
         "round_code": "undisclosed",
         "round_original": "新一轮",
@@ -76,12 +84,52 @@
         "role_code": "historical_or_ambiguous",
         "evidence": [
           {
-            "source_id": "FISRC-2baeb83405cbb7a5",
-            "source_url": "https://www.36kr.com/p/3560734133091207",
-            "source_title": "「星动纪元」完成吉利资本领投的10亿元A+轮融资，商业化订单已超5亿｜36氪独家-36氪",
-            "source_content_hash": "7ba539f066c36a76",
-            "quote": "「星动纪元」完成吉利资本领投的10亿元A+轮融资，商业化订单已超5亿｜36氪独家-36氪 账号设置 我的关注 我的收藏 申请的项目 退出登录 登录 搜索 36氪Auto 数字时氪 未来消费 智能涌现 未来城市 启动Power on 36氪出海 36氪研究院 潮生TIDE 36氪企服点评 36氪财经 职场bonus 36碳 后浪研究所 暗涌Waves 硬氪 氪睿研究院 媒体品牌 企业号 企服点评 36Kr研究院 36Kr创新咨询 企业服务 核心服务 城市之窗 政府服务 创投发布 LP源计划 VClub VClub投资机构库 投资机构职位推介 投资人认证 投资人服务 项目推荐 36氪Pro 创投氪堂 企业入驻 创业者服务 创投平台 AI测评网 首页 快讯 资讯 推荐 财经 AI 项目推荐 浙江 最新 创投 汽车 科技 专精特新 直播 视频 专题 活动 搜索 项目推荐 我要入驻 城市合作 「星动纪元」完成吉利资本领投的10亿元A+轮融资，商业化订单已超5亿｜36氪独家 苏建勋 · 2025年11月20日 09:27 星动纪元已与吉利、雷诺、顺丰、TCL、海尔、联想等建立深度合作。",
-            "quote_hash": "f68700aec04bf7c32e15758d57ce295a8da40f5b7d64dc1339d255ba8ded82b4"
+            "source_id": "FISRC-5484b51c45e4fa41",
+            "source_url": "https://news.pedaily.cn/202511/557546.shtml",
+            "source_title": "星动纪元获近10亿元A+轮融资，吉利资本领投_投资界",
+            "source_content_hash": "2177951e40d4faee",
+            "quote": "星动纪元获近10亿元A+轮融资，吉利资本领投_投资界 首 页 资 讯 投资圈 活 动 研 究 创投号 旗下矩阵 投资界 天天IPO 解码LP 并购 前哨 野性消费吧 深度 热门 天天IPO AI先锋 机器人 医疗健康 大消费 视频 99个发现 APP 微信扫码订阅 创投号 登录 清科集团 清科控股 清科研究中心 清科母基金 新芽 首页 产业 机器人 正文 星动纪元获近10亿元A+轮融资，吉利资本领投 此次融资将进一步支持端到端VLA具身大模型ERA-42的技术迭代及落地应用，吉利资本及北汽产投的加入，也为公司的产业应用进一步打开战略协同发展空间。",
+            "quote_hash": "9f99ead2c63378412550996a434f19d5c5c9233118977925e77b5ac473ad1438"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-808e1f31fdd43875",
+        "funding_insight_id": "FI-b1494fe383b9e92d",
+        "event_ids": [
+          "EV-e8f381baf505ac32"
+        ],
+        "company_entity_id": "EN-60d2cc785c19e818",
+        "company_canonical_entity_id": "",
+        "company_name": "北京三启万物科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "10亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a4dbd49c64cb5834",
+            "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+            "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+            "source_content_hash": "3e7e05417d6a96b1",
+            "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+            "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
           }
         ]
       },
@@ -128,12 +176,20 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-2baeb83405cbb7a5",
-        "source_url": "https://www.36kr.com/p/3560734133091207",
-        "source_title": "「星动纪元」完成吉利资本领投的10亿元A+轮融资，商业化订单已超5亿｜36氪独家-36氪",
-        "source_content_hash": "7ba539f066c36a76",
-        "quote": "「星动纪元」完成吉利资本领投的10亿元A+轮融资，商业化订单已超5亿｜36氪独家-36氪 账号设置 我的关注 我的收藏 申请的项目 退出登录 登录 搜索 36氪Auto 数字时氪 未来消费 智能涌现 未来城市 启动Power on 36氪出海 36氪研究院 潮生TIDE 36氪企服点评 36氪财经 职场bonus 36碳 后浪研究所 暗涌Waves 硬氪 氪睿研究院 媒体品牌 企业号 企服点评 36Kr研究院 36Kr创新咨询 企业服务 核心服务 城市之窗 政府服务 创投发布 LP源计划 VClub VClub投资机构库 投资机构职位推介 投资人认证 投资人服务 项目推荐 36氪Pro 创投氪堂 企业入驻 创业者服务 创投平台 AI测评网 首页 快讯 资讯 推荐 财经 AI 项目推荐 浙江 最新 创投 汽车 科技 专精特新 直播 视频 专题 活动 搜索 项目推荐 我要入驻 城市合作 「星动纪元」完成吉利资本领投的10亿元A+轮融资，商业化订单已超5亿｜36氪独家 苏建勋 · 2025年11月20日 09:27 星动纪元已与吉利、雷诺、顺丰、TCL、海尔、联想等建立深度合作。",
-        "quote_hash": "f68700aec04bf7c32e15758d57ce295a8da40f5b7d64dc1339d255ba8ded82b4"
+        "source_id": "FISRC-5484b51c45e4fa41",
+        "source_url": "https://news.pedaily.cn/202511/557546.shtml",
+        "source_title": "星动纪元获近10亿元A+轮融资，吉利资本领投_投资界",
+        "source_content_hash": "2177951e40d4faee",
+        "quote": "星动纪元获近10亿元A+轮融资，吉利资本领投_投资界 首 页 资 讯 投资圈 活 动 研 究 创投号 旗下矩阵 投资界 天天IPO 解码LP 并购 前哨 野性消费吧 深度 热门 天天IPO AI先锋 机器人 医疗健康 大消费 视频 99个发现 APP 微信扫码订阅 创投号 登录 清科集团 清科控股 清科研究中心 清科母基金 新芽 首页 产业 机器人 正文 星动纪元获近10亿元A+轮融资，吉利资本领投 此次融资将进一步支持端到端VLA具身大模型ERA-42的技术迭代及落地应用，吉利资本及北汽产投的加入，也为公司的产业应用进一步打开战略协同发展空间。",
+        "quote_hash": "9f99ead2c63378412550996a434f19d5c5c9233118977925e77b5ac473ad1438"
+      },
+      {
+        "source_id": "FISRC-a4dbd49c64cb5834",
+        "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+        "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+        "source_content_hash": "3e7e05417d6a96b1",
+        "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+        "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
       },
       {
         "source_id": "FISRC-670f261d0c740ea4",

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-40ff3cc9cefa0c",
@@ -20,23 +20,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
-    "first_disclosed_at": "2026-05-09",
-    "latest_disclosed_at": "2026-06-15",
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-02-02",
+    "latest_disclosed_at": "2026-07-14",
     "role_counts": {
       "co_lead": 1,
-      "participant": 1
+      "historical_or_ambiguous": 2,
+      "participant": 2
     },
     "round_codes": [
       "multi_round",
-      "other"
+      "series_b2",
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
@@ -45,12 +47,97 @@
         "name": "北京小雨智造科技有限公司"
       },
       {
+        "entity_id": "EN-e7492db096492304",
+        "canonical_entity_id": "",
+        "name": "极佳视界"
+      },
+      {
         "entity_id": "EN-6862b0d243051cd3",
         "canonical_entity_id": "",
         "name": "极佳视界"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d6d0d390b739eda7",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B+轮共同投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-09c3ca37737a71ce",
+            "source_url": "https://stcn.com/article/detail/3386786.html",
+            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+            "source_content_hash": "edea92990a31710b",
+            "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
+            "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bb0eb66a9aeaf6b7",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "由新加坡顶级跨境投资机构狮城资本（多轮持续追投）、中国-比利时基金（中比基金）、建投投资、万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等全球顶级国家队基金、产业资本、财务机构、国资平台共同投资",
+            "quote_hash": "d65491949cddef8dbbeb83255e6b1186dbf2888d42525d5dc2353472077af0ed"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ec656f4c0db3fe0e",
         "funding_insight_id": "FI-ab64a33b7d572f85",
@@ -92,16 +179,16 @@
         ]
       },
       {
-        "activity_id": "IA-5e0df1f18b2aae5b",
-        "funding_insight_id": "FI-bd8fb7f7d61ed08d",
+        "activity_id": "IA-f46a60a634a9dbd3",
+        "funding_insight_id": "FI-b2b578ba2d5dc007",
         "event_ids": [
           "EV-be59d9048dd1b6a0"
         ],
         "company_entity_id": "EN-7d0445227e7dde72",
         "company_canonical_entity_id": "",
         "company_name": "北京小雨智造科技有限公司",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "数亿元",
         "amount_normalized": {
@@ -130,9 +217,65 @@
             "quote_hash": "ac0161d399343ccd00f4ef57f57f7ccab85837dc32aa86b16f2d2118d8c700db"
           }
         ]
+      },
+      {
+        "activity_id": "IA-c2540664dd580ecf",
+        "funding_insight_id": "FI-89ae76965810fd3c",
+        "event_ids": [
+          "EV-e70b6a1287dcaa59"
+        ],
+        "company_entity_id": "EN-5c443a92518833f1",
+        "company_canonical_entity_id": "",
+        "company_name": "北京跨赴科技有限公司",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-02-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b76b3a466a16598",
+            "source_url": "https://www.163.com/dy/article/K91BPJN20552NVEU.html",
+            "source_title": "腾讯T12级研发效能技术专家离职创业，跨赴科技完成数千万元Pre-A轮融资|pre|a轮融资|企业信息|知名企业_网易订阅",
+            "source_content_hash": "f8b4957d1ad7226c",
+            "quote": "本轮融资由复星锐正领投、老股东奇绩创坛加码跟投。",
+            "quote_hash": "b6c5ec7e55786a17c6c0cfbe170205a9a72adc2f7cae3db5836283c19477d8d9"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-09c3ca37737a71ce",
+        "source_url": "https://stcn.com/article/detail/3386786.html",
+        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+        "source_content_hash": "edea92990a31710b",
+        "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
+        "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
+      },
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+        "source_content_hash": "a652909321da946b",
+        "quote": "由新加坡顶级跨境投资机构狮城资本（多轮持续追投）、中国-比利时基金（中比基金）、建投投资、万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等全球顶级国家队基金、产业资本、财务机构、国资平台共同投资",
+        "quote_hash": "d65491949cddef8dbbeb83255e6b1186dbf2888d42525d5dc2353472077af0ed"
+      },
       {
         "source_id": "FISRC-ce47b663ca256878",
         "source_url": "https://news.pedaily.cn/202606/565201.shtml",
@@ -148,7 +291,27 @@
         "source_content_hash": "320a14d704f62a2d42fda843b83e1e1542fcc79e50110842dd13af84440e9b2b",
         "quote": "本轮融资由北汽产投、复星锐正和建发新兴三家新进投资方联合投资",
         "quote_hash": "ac0161d399343ccd00f4ef57f57f7ccab85837dc32aa86b16f2d2118d8c700db"
+      },
+      {
+        "source_id": "FISRC-5b76b3a466a16598",
+        "source_url": "https://www.163.com/dy/article/K91BPJN20552NVEU.html",
+        "source_title": "腾讯T12级研发效能技术专家离职创业，跨赴科技完成数千万元Pre-A轮融资|pre|a轮融资|企业信息|知名企业_网易订阅",
+        "source_content_hash": "f8b4957d1ad7226c",
+        "quote": "本轮融资由复星锐正领投、老股东奇绩创坛加码跟投。",
+        "quote_hash": "b6c5ec7e55786a17c6c0cfbe170205a9a72adc2f7cae3db5836283c19477d8d9"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[4].role": {
+          "text": "Pre-A轮领投",
+          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }

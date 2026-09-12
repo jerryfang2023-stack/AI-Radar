@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-2dfd249a7c324f",
+    "name": "达泰资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-04-10",
+    "latest_disclosed_at": "2026-08-12",
+    "role_counts": {
+      "co_lead": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "seed",
+      "seed_plus_plus",
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d361e2fd6b342245",
+        "canonical_entity_id": "",
+        "name": "深圳忆纪元科技有限公司"
+      },
+      {
+        "entity_id": "EN-82c84d2f6490e62b",
+        "canonical_entity_id": "",
+        "name": "深圳忆纪元科技有限公司"
+      },
+      {
+        "entity_id": "EN-9b21c9bf3305c0d6",
+        "canonical_entity_id": "",
+        "name": "生数科技"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-16a31bf7c7fab9c1",
+        "funding_insight_id": "FI-42815b3fc014db68",
+        "event_ids": [
+          "EV-64c5290cc685eb93"
+        ],
+        "company_entity_id": "EN-d361e2fd6b342245",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子++轮",
+        "round_code": "seed_plus_plus",
+        "round_original": "种子++轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4a456deffcbf4bfd",
+            "source_url": "https://news.pedaily.cn/202608/567590.shtml",
+            "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
+            "source_content_hash": "c26b4f6c5b757ce3",
+            "quote": "本轮融资由 北洋海棠基金、尚势资本、仁爱资本联合领投，银杏谷资本跟投，华业天成、达泰资本 等老股东持续加码投资。",
+            "quote_hash": "c940fe3b12e9e760642901ea669b9984b6b36816b863de7d64621d7344c07512"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-02ca2ee3103dceae",
+        "funding_insight_id": "FI-a6350cc6f597f274",
+        "event_ids": [
+          "EV-34a58f84a7ba4e92"
+        ],
+        "company_entity_id": "EN-82c84d2f6490e62b",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-924702999fc88d2f",
+            "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
+            "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
+            "source_content_hash": "76bcd79d46511d45",
+            "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
+            "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bbc93db9671b4d49",
+        "funding_insight_id": "FI-7108544d47292865",
+        "event_ids": [
+          "EV-5575555340c04c5a"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "",
+        "company_name": "生数科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fd865802af815ab3",
+            "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+            "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+            "source_content_hash": "a281cc701a9028fb",
+            "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
+            "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4a456deffcbf4bfd",
+        "source_url": "https://news.pedaily.cn/202608/567590.shtml",
+        "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
+        "source_content_hash": "c26b4f6c5b757ce3",
+        "quote": "本轮融资由 北洋海棠基金、尚势资本、仁爱资本联合领投，银杏谷资本跟投，华业天成、达泰资本 等老股东持续加码投资。",
+        "quote_hash": "c940fe3b12e9e760642901ea669b9984b6b36816b863de7d64621d7344c07512"
+      },
+      {
+        "source_id": "FISRC-924702999fc88d2f",
+        "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
+        "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
+        "source_content_hash": "76bcd79d46511d45",
+        "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
+        "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
+      },
+      {
+        "source_id": "FISRC-fd865802af815ab3",
+        "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+        "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+        "source_content_hash": "a281cc701a9028fb",
+        "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
+        "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+      }
+    ]
+  }
+}

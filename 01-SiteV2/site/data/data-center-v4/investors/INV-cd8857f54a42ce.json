@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-cd8857f54a42ce",
+    "name": "复星创富",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 3,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-01-06",
+    "latest_disclosed_at": "2026-09-08",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "angel",
+      "series_b_plus",
+      "strategic"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-60d2cc785c19e818",
+        "canonical_entity_id": "",
+        "name": "北京三启万物科技有限公司"
+      },
+      {
+        "entity_id": "EN-a7f65fe198e0bd2c",
+        "canonical_entity_id": "",
+        "name": "上海密瓜智能科技有限公司（“密瓜智能”）"
+      },
+      {
+        "entity_id": "EN-4e781f6e9e5a49bc",
+        "canonical_entity_id": "",
+        "name": "深度智控"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5d0d311b2c987552",
+        "funding_insight_id": "FI-fae9478ac0e65316",
+        "event_ids": [
+          "EV-ac5e79d96a009ee1"
+        ],
+        "company_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_canonical_entity_id": "",
+        "company_name": "深度智控",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ac5a938b8fdef1a9",
+            "source_url": "https://news.pedaily.cn/202609/568645.shtml",
+            "source_title": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI",
+            "source_content_hash": "38c6d5b49c2072e5",
+            "quote": "本轮融资由宁德时代领投，阿美投资 Aramco Ventures战略投资，太平创新投资、广发信德、复星创富等跟投，源码资本、光远资本等老股东持续追加。",
+            "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-15188c026cebd670",
+        "funding_insight_id": "FI-c524ab52173a64d8",
+        "event_ids": [
+          "EV-c6437ac13cb07531"
+        ],
+        "company_entity_id": "EN-f6aaf378a6d9e724",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳市深度智控科技有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67ccadc4294defd6",
+            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+            "source_title": "深度智控 | 项目信息-36氪",
+            "source_content_hash": "ed75aafa3d8feb1d",
+            "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
+            "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6b5014ef7c42c792",
+        "funding_insight_id": "FI-b1494fe383b9e92d",
+        "event_ids": [
+          "EV-e8f381baf505ac32"
+        ],
+        "company_entity_id": "EN-60d2cc785c19e818",
+        "company_canonical_entity_id": "",
+        "company_name": "北京三启万物科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "10亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a4dbd49c64cb5834",
+            "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+            "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+            "source_content_hash": "3e7e05417d6a96b1",
+            "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+            "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a3798b95539cfb37",
+        "funding_insight_id": "FI-2dc6218ad9693a34",
+        "event_ids": [
+          "EV-60d94c0d990d04ca"
+        ],
+        "company_entity_id": "EN-a7f65fe198e0bd2c",
+        "company_canonical_entity_id": "",
+        "company_name": "上海密瓜智能科技有限公司（“密瓜智能”）",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-01-06",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-04376bee59ee7c19",
+            "source_url": "https://news.pedaily.cn/202601/559551.shtml",
+            "source_title": "密瓜智能获数千万元天使轮融资，复星创富领投",
+            "source_content_hash": "0da15a2de9a64982",
+            "quote": "本轮融资由 复星创富 领投",
+            "quote_hash": "df6e50f36e0096875ac6f6e3d9ad1f5fe65805c52f6f5624c6e5e1ac31798896"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ac5a938b8fdef1a9",
+        "source_url": "https://news.pedaily.cn/202609/568645.shtml",
+        "source_title": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI",
+        "source_content_hash": "38c6d5b49c2072e5",
+        "quote": "本轮融资由宁德时代领投，阿美投资 Aramco Ventures战略投资，太平创新投资、广发信德、复星创富等跟投，源码资本、光远资本等老股东持续追加。",
+        "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
+      },
+      {
+        "source_id": "FISRC-67ccadc4294defd6",
+        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+        "source_title": "深度智控 | 项目信息-36氪",
+        "source_content_hash": "ed75aafa3d8feb1d",
+        "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
+        "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
+      },
+      {
+        "source_id": "FISRC-a4dbd49c64cb5834",
+        "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+        "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+        "source_content_hash": "3e7e05417d6a96b1",
+        "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+        "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+      },
+      {
+        "source_id": "FISRC-04376bee59ee7c19",
+        "source_url": "https://news.pedaily.cn/202601/559551.shtml",
+        "source_title": "密瓜智能获数千万元天使轮融资，复星创富领投",
+        "source_content_hash": "0da15a2de9a64982",
+        "quote": "本轮融资由 复星创富 领投",
+        "quote_hash": "df6e50f36e0096875ac6f6e3d9ad1f5fe65805c52f6f5624c6e5e1ac31798896"
+      }
+    ]
+  }
+}

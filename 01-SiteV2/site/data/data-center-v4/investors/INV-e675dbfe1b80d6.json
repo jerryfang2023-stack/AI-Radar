@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-e675dbfe1b80d6",
+    "name": "株洲产投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-08-26",
+    "latest_disclosed_at": "2026-08-26",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-5f03b37d8cca57e1",
+        "canonical_entity_id": "",
+        "name": "北京灵御智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-d22248f53450aac5",
+        "funding_insight_id": "FI-a3c129ab8eb46aa4",
+        "event_ids": [
+          "EV-d67dd793fe1f2c04"
+        ],
+        "company_entity_id": "EN-5f03b37d8cca57e1",
+        "company_canonical_entity_id": "",
+        "company_name": "北京灵御智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ff3ce30945e8f13",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+            "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+            "source_content_hash": "7d6a41ce0da829ca",
+            "quote": "本轮由株洲产投、飞图创投、未来边际创投、芯能创投等联合投资",
+            "quote_hash": "2ba1430a74819576c2b633483979c740fb1312c2b45a973cec9e767a7b12f345"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1ff3ce30945e8f13",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+        "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+        "source_content_hash": "7d6a41ce0da829ca",
+        "quote": "本轮由株洲产投、飞图创投、未来边际创投、芯能创投等联合投资",
+        "quote_hash": "2ba1430a74819576c2b633483979c740fb1312c2b45a973cec9e767a7b12f345"
+      }
+    ]
+  }
+}

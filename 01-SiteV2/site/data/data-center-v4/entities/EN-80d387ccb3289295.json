@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "entity": {
     "id": "EN-80d387ccb3289295",
@@ -28,6 +28,7 @@
       "EV-8665fc3a9e8b6b16",
       "EV-df8954acf9a13848",
       "EV-1a6688afdfd108ef",
+      "EV-ef1de880e4ef9f75",
       "EV-68d5a02e5213b43c",
       "EV-cafe435ddd007821",
       "EV-a37b9d9fb85e460f",
@@ -42,6 +43,7 @@
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-ef1de880e4ef9f75",
         "EV-68d5a02e5213b43c",
         "EV-b9d8b3582f12bdc7",
         "EV-8665fc3a9e8b6b16",
@@ -63,6 +65,38 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-ef1de880e4ef9f75",
+        "dataDate": "2026-09-12",
+        "date": "2026-04-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "8400亿，史上最大融资来了",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-8d4321d936320802",
+          "EN-80d387ccb3289295",
+          "EN-9fbf261b62c1d7c0",
+          "EN-bbdefa2950f49882",
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
       {
         "id": "EV-68d5a02e5213b43c",
         "dataDate": "2026-09-12",

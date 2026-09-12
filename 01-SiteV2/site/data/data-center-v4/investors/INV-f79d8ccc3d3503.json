@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-f79d8ccc3d3503",
@@ -20,25 +20,42 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 1,
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-04-16",
-    "latest_disclosed_at": "2026-06-15",
+    "china_market_activity_count": 5,
+    "china_market_company_count": 4,
+    "first_disclosed_at": "2026-03-16",
+    "latest_disclosed_at": "2026-07-09",
     "role_counts": {
-      "historical_or_ambiguous": 3,
-      "participant": 2
+      "co_lead": 1,
+      "historical_or_ambiguous": 4,
+      "participant": 4
     },
     "round_codes": [
-      "multi_round",
+      "angel",
+      "angel_plus",
       "pre_series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-a43f157d208b2a63",
+        "canonical_entity_id": "",
+        "name": "开物纪"
+      },
+      {
+        "entity_id": "EN-a3802b1f5a583189",
+        "canonical_entity_id": "",
+        "name": "深圳墨奇智能技术有限公司"
+      },
+      {
+        "entity_id": "EN-fcfad5f0679009d4",
+        "canonical_entity_id": "",
+        "name": "深圳市薇光点亮科技有限公司"
+      },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -46,6 +63,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d43ded21fd54c486",
+        "funding_insight_id": "FI-0cab7e240eb542ce",
+        "event_ids": [
+          "EV-e85e6fc6d630d56c"
+        ],
+        "company_entity_id": "EN-a3802b1f5a583189",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳墨奇智能技术有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bea9d0be613bc1cd",
+            "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+            "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+            "source_content_hash": "311224a4dfb089df",
+            "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+            "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8978ab4f5500db75",
         "funding_insight_id": "FI-6ada8d4502daa530",
@@ -127,17 +184,17 @@
         ]
       },
       {
-        "activity_id": "IA-79b1449f7e6cecb9",
-        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "activity_id": "IA-8157652b3fd53862",
+        "funding_insight_id": "FI-b9eb4320e43ddfdf",
         "event_ids": [
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "company_name": "它石智航",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
         "amount_original": "4.55亿美金",
         "amount_normalized": {
           "currency": "USD",
@@ -245,9 +302,137 @@
             "quote_hash": "f8d88a4f7e7b9c372b8808d3d02bbd3bd172f9ab7e3eeb6bdd99019d9b40fb68"
           }
         ]
+      },
+      {
+        "activity_id": "IA-4a082f6d658ee6d3",
+        "funding_insight_id": "FI-815e0d2563a8b10f",
+        "event_ids": [
+          "EV-9832526435c1695e"
+        ],
+        "company_entity_id": "EN-a43f157d208b2a63",
+        "company_canonical_entity_id": "",
+        "company_name": "开物纪",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-03-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d10ec9bd5ef3ad4",
+            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+            "source_content_hash": "d5d8d61ad1133bc1",
+            "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+            "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e1fb9fdaafa649b6",
+        "funding_insight_id": "FI-815e0d2563a8b10f",
+        "event_ids": [
+          "EV-9832526435c1695e"
+        ],
+        "company_entity_id": "EN-a43f157d208b2a63",
+        "company_canonical_entity_id": "",
+        "company_name": "开物纪",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-03-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d10ec9bd5ef3ad4",
+            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+            "source_content_hash": "d5d8d61ad1133bc1",
+            "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+            "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-960f730588a457ce",
+        "funding_insight_id": "FI-dacbf556f71762a6",
+        "event_ids": [
+          "EV-cba16bd541a07032"
+        ],
+        "company_entity_id": "EN-fcfad5f0679009d4",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳市薇光点亮科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "1亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿元"
+        },
+        "announced_at": "2026-03-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-80b46378aae68c24",
+            "source_url": "https://finance.sina.com.cn/roll/2026-03-16/doc-inhrevaq9814436.shtml",
+            "source_title": "薇光点亮完成超1亿元Pre-A轮融资",
+            "source_content_hash": "3f3e3c82d29ac541",
+            "quote": "本轮融资由红杉中国、蓝驰创投联合领投，蚂蚁战投、鼎晖投资、鞍羽资本跟投，老股东九合创投持续追投。",
+            "quote_hash": "904259116e332ef4c86f2cc478e1db6d17dbdceb4821cfd2cc9566bdd5a5c3e5"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-bea9d0be613bc1cd",
+        "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+        "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+        "source_content_hash": "311224a4dfb089df",
+        "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+        "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+      },
       {
         "source_id": "FISRC-b96684face6f5223",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
@@ -287,6 +472,30 @@
         "source_content_hash": "9bc3ee36ffea717f",
         "quote": "本轮融资由蓝驰创投、启明创投共同领投",
         "quote_hash": "f8d88a4f7e7b9c372b8808d3d02bbd3bd172f9ab7e3eeb6bdd99019d9b40fb68"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+        "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+        "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+      },
+      {
+        "source_id": "FISRC-80b46378aae68c24",
+        "source_url": "https://finance.sina.com.cn/roll/2026-03-16/doc-inhrevaq9814436.shtml",
+        "source_title": "薇光点亮完成超1亿元Pre-A轮融资",
+        "source_content_hash": "3f3e3c82d29ac541",
+        "quote": "本轮融资由红杉中国、蓝驰创投联合领投，蚂蚁战投、鼎晖投资、鞍羽资本跟投，老股东九合创投持续追投。",
+        "quote_hash": "904259116e332ef4c86f2cc478e1db6d17dbdceb4821cfd2cc9566bdd5a5c3e5"
       }
     ]
   }

@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-edd451adce89e93c",
+    "name": "长亭科技",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-53ffdce6405b8ba9",
+      "EV-9e56c6c0943a056d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-01-29",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-53ffdce6405b8ba9",
+        "EV-9e56c6c0943a056d"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-53ffdce6405b8ba9",
+        "dataDate": "2026-09-12",
+        "date": "2026-01-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "长亭科技宣布完成最新一轮5亿元融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6194bb7b44d08b44",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "cyber_physical_security",
+            "name": "网络与物理安全",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3952dfa3c3f77ee9",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-daa1cdd034ed8cb3",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-920c5087392224dc",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a26e8d0160a7827b",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          }
+        ],
+        "entityIds": [
+          "EN-edd451adce89e93c",
+          "EN-c5896393cf4ac788"
+        ]
+      },
+      {
+        "id": "EV-9e56c6c0943a056d",
+        "dataDate": "2026-09-12",
+        "date": "2026-01-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "长亭科技完成5亿元融资，国家级人工智能基金落子",
+        "displayTags": [],
+        "entityIds": [
+          "EN-edd451adce89e93c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

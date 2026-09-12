@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-270d7df43b258a",
+    "name": "东莞生技",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-08-31",
+    "latest_disclosed_at": "2026-08-31",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-11f245a21211face",
+        "canonical_entity_id": "",
+        "name": "深圳神奕科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8269e64d35076fbf",
+        "funding_insight_id": "FI-de3bb0183f3952af",
+        "event_ids": [
+          "EV-29e6561ca7c005d0"
+        ],
+        "company_entity_id": "EN-11f245a21211face",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳神奕科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超千万元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000,
+          "min_value": 10000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1000 万元"
+        },
+        "announced_at": "2026-08-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d6690cf8399d45f",
+            "source_url": "https://www.sohu.com/a/1069898850_439726",
+            "source_title": "神奕科技完成超千万元人民币天使轮融资，让脑机智能普惠大众",
+            "source_content_hash": "4e1b0f5f32304fe6",
+            "quote": "神奕科技宣布完成超千万元人民币天使轮融资，本轮融资由力合创投领投，东莞生技跟投。",
+            "quote_hash": "058d440fb7ea8f72b9c7f0c67a8e7c77deb4e11b853b3ee08012f0e6db55254b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3d6690cf8399d45f",
+        "source_url": "https://www.sohu.com/a/1069898850_439726",
+        "source_title": "神奕科技完成超千万元人民币天使轮融资，让脑机智能普惠大众",
+        "source_content_hash": "4e1b0f5f32304fe6",
+        "quote": "神奕科技宣布完成超千万元人民币天使轮融资，本轮融资由力合创投领投，东莞生技跟投。",
+        "quote_hash": "058d440fb7ea8f72b9c7f0c67a8e7c77deb4e11b853b3ee08012f0e6db55254b"
+      }
+    ]
+  }
+}

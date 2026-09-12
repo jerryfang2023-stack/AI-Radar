@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-dc40fcae7aa9a11b",
+    "name": "北京博伦智汇科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-12616a174fbe2558"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-12616a174fbe2558"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-12616a174fbe2558",
+        "dataDate": "2026-09-12",
+        "date": "2026-08-26",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "博伦智汇完成千万级天使轮融资，加速AI算力市场拓展与业务落地",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-b4004fefe731b2e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5bebe65ec904ecdf",
+            "fundingInsightId": "FI-c85899005868fa52"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-b4004fefe731b2e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-28bcda74bfe53b4d",
+            "fundingInsightId": "FI-c85899005868fa52"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-b4004fefe731b2e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a28e1bb5fbbf8d32",
+            "fundingInsightId": "FI-c85899005868fa52"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-b4004fefe731b2e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-de8586164446717d",
+            "fundingInsightId": "FI-c85899005868fa52"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-b4004fefe731b2e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-006c4292f0d86ff6",
+            "fundingInsightId": "FI-c85899005868fa52"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-b4004fefe731b2e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ec51ace3b7276e67",
+            "fundingInsightId": "FI-c85899005868fa52"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-b4004fefe731b2e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4ae9b1d54538f498",
+            "fundingInsightId": "FI-c85899005868fa52"
+          }
+        ],
+        "entityIds": [
+          "EN-dc40fcae7aa9a11b",
+          "EN-b4004fefe731b2e8"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

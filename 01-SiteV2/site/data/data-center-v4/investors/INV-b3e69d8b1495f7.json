@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-b3e69d8b1495f7",
+    "name": "某上市公司CVC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-09-09",
+    "latest_disclosed_at": "2026-09-09",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f56780cc13476293",
+        "canonical_entity_id": "",
+        "name": "上海比特无限人工智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b5a616568bde6b9c",
+        "funding_insight_id": "FI-1a32de86086e29ea",
+        "event_ids": [
+          "EV-d0dd835f3abb3163"
+        ],
+        "company_entity_id": "EN-f56780cc13476293",
+        "company_canonical_entity_id": "",
+        "company_name": "上海比特无限人工智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-30b12c73a020a729",
+            "source_url": "https://www.cls.cn/detail/2478686",
+            "source_title": "比特无限完成数千万元Pre-A轮融资老股东超额追投 - 财联社",
+            "source_content_hash": "41ae3418cb565487",
+            "quote": "上海比特无限人工智能科技有限公司（下称“比特无限”）完成数千万元Pre-A轮融资，投资方为跃迁资本、某上市公司CVC及老股东超额追投。",
+            "quote_hash": "daf932f5455c6979927b7afedacc4a46915adc79bd39a2a9e4f22995db5d816e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-30b12c73a020a729",
+        "source_url": "https://www.cls.cn/detail/2478686",
+        "source_title": "比特无限完成数千万元Pre-A轮融资老股东超额追投 - 财联社",
+        "source_content_hash": "41ae3418cb565487",
+        "quote": "上海比特无限人工智能科技有限公司（下称“比特无限”）完成数千万元Pre-A轮融资，投资方为跃迁资本、某上市公司CVC及老股东超额追投。",
+        "quote_hash": "daf932f5455c6979927b7afedacc4a46915adc79bd39a2a9e4f22995db5d816e"
+      }
+    ]
+  }
+}

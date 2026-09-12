@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-3feae93d5d39da",
+    "name": "亳州产投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-09-04",
+    "latest_disclosed_at": "2026-09-04",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ee2dce6ecf9a1bab",
+        "canonical_entity_id": "",
+        "name": "北京深朴智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-2821d6b77d172810",
+        "funding_insight_id": "FI-3e97f5e30e99ff0b",
+        "event_ids": [
+          "EV-cbec329253108e80"
+        ],
+        "company_entity_id": "EN-ee2dce6ecf9a1bab",
+        "company_canonical_entity_id": "",
+        "company_name": "北京深朴智能科技有限公司",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a65ce425f6a14bd6",
+            "source_url": "https://news.pedaily.cn/202609/568532.shtml",
+            "source_title": "深朴智能完成数亿元Pre-A+轮融资，面向人类生活空间打造AI原生具身智能",
+            "source_content_hash": "34bcef102c1e755b",
+            "quote": "本轮融资获得 珂玺资本、上海科创旗下知识产权基金、金浦投资、亳州产投、上城资本、乾融资本，以及老股东线性资本的共同支持",
+            "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a65ce425f6a14bd6",
+        "source_url": "https://news.pedaily.cn/202609/568532.shtml",
+        "source_title": "深朴智能完成数亿元Pre-A+轮融资，面向人类生活空间打造AI原生具身智能",
+        "source_content_hash": "34bcef102c1e755b",
+        "quote": "本轮融资获得 珂玺资本、上海科创旗下知识产权基金、金浦投资、亳州产投、上城资本、乾融资本，以及老股东线性资本的共同支持",
+        "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
+      }
+    ]
+  }
+}

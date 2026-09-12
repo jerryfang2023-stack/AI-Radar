@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-722fc3660faf7f",
@@ -20,53 +20,58 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-08-03",
-    "latest_disclosed_at": "2026-08-03",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-01-26",
+    "latest_disclosed_at": "2026-01-26",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_a1"
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-74b42431957780b9",
+        "entity_id": "EN-f0d59425e4c32abb",
         "canonical_entity_id": "",
-        "name": "昉擎科技"
+        "name": "阶跃星辰（StepFun）"
+      },
+      {
+        "entity_id": "EN-2c348893efb2316e",
+        "canonical_entity_id": "EN-2c348893efb2316e",
+        "name": "StepFun"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-9bf0a5bb86be9dbd",
-        "funding_insight_id": "FI-c7196586a871ba41",
+        "activity_id": "IA-5afff966da310efd",
+        "funding_insight_id": "FI-18465dcaeebdf656",
         "event_ids": [
-          "EV-4fbbf16279e27000"
+          "EV-df37e9341b5c7f04"
         ],
-        "company_entity_id": "EN-74b42431957780b9",
+        "company_entity_id": "EN-f0d59425e4c32abb",
         "company_canonical_entity_id": "",
-        "company_name": "昉擎科技",
-        "round": "A1轮",
-        "round_code": "series_a1",
-        "round_original": "A1轮",
-        "amount_original": "超过 100 亿人民币",
+        "company_name": "阶跃星辰（StepFun）",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "50 亿人民币",
         "amount_normalized": {
           "currency": "CNY",
-          "value": 10000000000,
-          "min_value": 10000000000,
+          "value": 5000000000,
+          "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 100 亿元"
+          "status": "exact",
+          "display_zh": "50 亿元"
         },
-        "announced_at": "2026-08-03",
+        "announced_at": "2026-01-26",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
@@ -75,24 +80,72 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-75b04daca915e1ca",
-            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-            "quote": "本轮融资由上海市徐汇区国资平台徐汇资本、珠海市国资旗下珠海科技产业集团两大地方产业国资战略投资",
-            "quote_hash": "46cef1df2770a4acd2ea81fad6c9fe0aad4345521a90032ebe1127a9eae14f9a"
+            "source_id": "FISRC-de3bb93d57d25bdf",
+            "source_url": "https://www.cyzone.cn/article/822685.html",
+            "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
+            "source_content_hash": "3cd27a7369aa4df5",
+            "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
+            "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d6763af672e02bb9",
+        "funding_insight_id": "FI-74076c9ab29354a8",
+        "event_ids": [
+          "EV-794f0a86004da0c9"
+        ],
+        "company_entity_id": "EN-2c348893efb2316e",
+        "company_canonical_entity_id": "EN-2c348893efb2316e",
+        "company_name": "StepFun",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "50亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ae8171e86e3a055",
+            "source_url": "https://news.pedaily.cn/202601/560382.shtml",
+            "source_title": "50亿，阶跃星辰完成新年最大融资",
+            "source_content_hash": "b3815bfa4d27819c",
+            "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
+            "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-75b04daca915e1ca",
-        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-        "quote": "本轮融资由上海市徐汇区国资平台徐汇资本、珠海市国资旗下珠海科技产业集团两大地方产业国资战略投资",
-        "quote_hash": "46cef1df2770a4acd2ea81fad6c9fe0aad4345521a90032ebe1127a9eae14f9a"
+        "source_id": "FISRC-de3bb93d57d25bdf",
+        "source_url": "https://www.cyzone.cn/article/822685.html",
+        "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
+        "source_content_hash": "3cd27a7369aa4df5",
+        "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
+        "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+      },
+      {
+        "source_id": "FISRC-4ae8171e86e3a055",
+        "source_url": "https://news.pedaily.cn/202601/560382.shtml",
+        "source_title": "50亿，阶跃星辰完成新年最大融资",
+        "source_content_hash": "b3815bfa4d27819c",
+        "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
+        "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
       }
     ]
   }

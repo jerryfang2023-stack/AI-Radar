@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-efec41198354c0",
+    "name": "博远资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-06-24",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6cd75e3a78395793",
+        "canonical_entity_id": "",
+        "name": "知跃空间智能（无锡）科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-14faedafecefaad1",
+        "funding_insight_id": "FI-a23f361cdc15f347",
+        "event_ids": [
+          "EV-94f334e68144c720"
+        ],
+        "company_entity_id": "EN-6cd75e3a78395793",
+        "company_canonical_entity_id": "",
+        "company_name": "知跃空间智能（无锡）科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-06-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-93d4a052ba2f7977",
+            "source_url": "https://news.pedaily.cn/20260623/132658.shtml",
+            "source_title": "破局类脑智能底层模型：在大脑深处，寻找下一代智能的源代码_行业动态_投资界",
+            "source_content_hash": "f37cbb7fa5c2d565",
+            "quote": "其中今年以来，知跃连续完成了4轮融资，最新一轮天使5+轮数亿元融资中， 由致道资本领投，金蚂投资、浙 创科技 、博远资本共同跟投，老股东顺禧基金、驰星创投持续超额加码。",
+            "quote_hash": "15d7350578fa13298d489e8f3759d30961fd458acfac1a2ca0def1c9b621dacb"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-93d4a052ba2f7977",
+        "source_url": "https://news.pedaily.cn/20260623/132658.shtml",
+        "source_title": "破局类脑智能底层模型：在大脑深处，寻找下一代智能的源代码_行业动态_投资界",
+        "source_content_hash": "f37cbb7fa5c2d565",
+        "quote": "其中今年以来，知跃连续完成了4轮融资，最新一轮天使5+轮数亿元融资中， 由致道资本领投，金蚂投资、浙 创科技 、博远资本共同跟投，老股东顺禧基金、驰星创投持续超额加码。",
+        "quote_hash": "15d7350578fa13298d489e8f3759d30961fd458acfac1a2ca0def1c9b621dacb"
+      }
+    ]
+  }
+}

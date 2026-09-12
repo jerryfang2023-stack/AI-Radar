@@ -111,6 +111,7 @@ function main() {
           if (previousAuthorization.from && (previousAuthorization.from !== historyFrom || previousAuthorization.to !== historyTo)) throw new Error("Historical authorization range conflict; preserve prior accepted policy");
           write(authorizationFile, { schema_version: "CHINA-FUNDING-HISTORY-AUTHORIZATION-V1.0", from: historyFrom, to: historyTo,
             reuse_existing_private_originals: true,
+            application_market_region: "CN",
             preserve_published_source_refs: previousAuthorization.preserve_published_source_refs || [],
             authorized_by: "explicit_user_request_2026_china_funding_backfill", created_at: previousAuthorization.created_at || new Date().toISOString(),
             source_refs: [...new Set([...(previousAuthorization.source_refs || []), ...accepted.source_artifacts.map((item) => item.source_artifact_id)])].sort() });
@@ -168,7 +169,7 @@ function main() {
   if (historyFrom) health.history = { from: historyFrom, to: historyTo, mode: "historical_backfill", models: discovery.history.models };
   write(`${laneDir}/health.json`, health);
   write(`01-SiteV2/site/data/china-funding${historyFrom ? "-history" : ""}-health-v1.json`, health);
-  if (historyFrom) command(["agent-workflow/tools/build-china-funding-history-quality.mjs"]);
+  if (historyFrom) command(["agent-workflow/tools/build-china-funding-history-quality.mjs", `--from=${historyFrom}`, `--to=${historyTo}`, `--date=${date}`]);
   command(["agent-workflow/tools/build-ops-console-data.mjs"]);
   if (failed) { console.error(failed.message); process.exitCode = 1; }
 }

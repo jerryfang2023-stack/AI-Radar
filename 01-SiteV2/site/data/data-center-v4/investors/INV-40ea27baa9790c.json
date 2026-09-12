@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-40ea27baa9790c",
@@ -20,53 +20,76 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-08-03",
-    "latest_disclosed_at": "2026-08-03",
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
+    "first_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-08-28",
     "role_counts": {
-      "participant": 1
+      "co_lead": 1,
+      "participant": 4
     },
     "round_codes": [
-      "series_a1"
+      "infrastructure",
+      "pre_series_a",
+      "seed_plus_plus"
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-74b42431957780b9",
+        "entity_id": "EN-0355fdd77dae437b",
         "canonical_entity_id": "",
-        "name": "昉擎科技"
+        "name": "北京趋境科技有限责任公司"
+      },
+      {
+        "entity_id": "EN-731b78a10ab9e444",
+        "canonical_entity_id": "",
+        "name": "基元律动（TokenRhythm）"
+      },
+      {
+        "entity_id": "EN-2cf797510f7e4324",
+        "canonical_entity_id": "",
+        "name": "上海基元律动科技有限公司"
+      },
+      {
+        "entity_id": "EN-9c7b7987e3a6bf06",
+        "canonical_entity_id": "",
+        "name": "上海基元律动科技有限公司"
+      },
+      {
+        "entity_id": "EN-d361e2fd6b342245",
+        "canonical_entity_id": "",
+        "name": "深圳忆纪元科技有限公司"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-6937acb20600d188",
-        "funding_insight_id": "FI-c7196586a871ba41",
+        "activity_id": "IA-6ef77b44f32b71bd",
+        "funding_insight_id": "FI-a2a15e704693ce24",
         "event_ids": [
-          "EV-4fbbf16279e27000"
+          "EV-b78b4d2d94c8e72c"
         ],
-        "company_entity_id": "EN-74b42431957780b9",
+        "company_entity_id": "EN-2cf797510f7e4324",
         "company_canonical_entity_id": "",
-        "company_name": "昉擎科技",
-        "round": "A1轮",
-        "round_code": "series_a1",
-        "round_original": "A1轮",
-        "amount_original": "超过 100 亿人民币",
+        "company_name": "上海基元律动科技有限公司",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "数千万美元",
         "amount_normalized": {
-          "currency": "CNY",
-          "value": 10000000000,
-          "min_value": 10000000000,
-          "max_value": null,
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
           "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 100 亿元"
+          "status": "range",
+          "display_zh": "数千万美元"
         },
-        "announced_at": "2026-08-03",
+        "announced_at": "2026-08-28",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
@@ -75,24 +98,216 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-75b04daca915e1ca",
-            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-            "quote": "尚势资本、水木创投、明嘉资本等产业资本参与投资",
-            "quote_hash": "5a6eda728c356477d57f9ecb72633835568ca6460f0b3a7512e5d1e38d64a2fd"
+            "source_id": "FISRC-89f8f73b4550e672",
+            "source_url": "https://news.pedaily.cn/202608/568248.shtml",
+            "source_title": "基元律动完成新一轮融资，累计融资数千万美元",
+            "source_content_hash": "fdd56106d8c1b75c",
+            "quote": "本轮融资由 弘晖基金领投，聚合资本、尚势资本 等机构参与。",
+            "quote_hash": "9b96c88169780643a5210b997d4d9dda3b41cf3666de831a37d11d455a82f7e2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2b432a53b6e3572f",
+        "funding_insight_id": "FI-f92057b012040f2a",
+        "event_ids": [
+          "EV-3c145705d72a5e57"
+        ],
+        "company_entity_id": "EN-731b78a10ab9e444",
+        "company_canonical_entity_id": "",
+        "company_name": "基元律动（TokenRhythm）",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-08-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f23d61f5ed1d1ac1",
+            "source_url": "https://www.qbitai.com/2026/08/480079.html",
+            "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
+            "source_content_hash": "88fa07495f1fde73",
+            "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与。",
+            "quote_hash": "53660265c82eb4f1f1c5bb0194b06bb447a577340eacd1846bdc0c8e495d7d05"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c92d9269c4171fd5",
+        "funding_insight_id": "FI-99a7219d2f444794",
+        "event_ids": [
+          "EV-5e8ad56fcef42b5a"
+        ],
+        "company_entity_id": "EN-9c7b7987e3a6bf06",
+        "company_canonical_entity_id": "",
+        "company_name": "上海基元律动科技有限公司",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-08-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7d258d317b7d8b47",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-inipucsw0774279.shtml",
+            "source_title": "基元律动累计融资数千万美元",
+            "source_content_hash": "cf1d781a8be43665",
+            "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与",
+            "quote_hash": "d559bde143b6311d20119acc126ab51362e077d2362ea26a5e7f4855df5733cd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4827a8cf08c22dfd",
+        "funding_insight_id": "FI-42815b3fc014db68",
+        "event_ids": [
+          "EV-64c5290cc685eb93"
+        ],
+        "company_entity_id": "EN-d361e2fd6b342245",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子++轮",
+        "round_code": "seed_plus_plus",
+        "round_original": "种子++轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4a456deffcbf4bfd",
+            "source_url": "https://news.pedaily.cn/202608/567590.shtml",
+            "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
+            "source_content_hash": "c26b4f6c5b757ce3",
+            "quote": "本轮融资由 北洋海棠基金、尚势资本、仁爱资本联合领投，银杏谷资本跟投，华业天成、达泰资本 等老股东持续加码投资。",
+            "quote_hash": "c940fe3b12e9e760642901ea669b9984b6b36816b863de7d64621d7344c07512"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-03665feca9c3fc39",
+        "funding_insight_id": "FI-3734798e9a7f3c5c",
+        "event_ids": [
+          "EV-d94bcfdf64509513"
+        ],
+        "company_entity_id": "EN-0355fdd77dae437b",
+        "company_canonical_entity_id": "",
+        "company_name": "北京趋境科技有限责任公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0a40102abd985684",
+            "source_url": "https://news.pedaily.cn/202605/564126.shtml",
+            "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
+            "source_content_hash": "0ed32dd4d2b1a439",
+            "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
+            "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-75b04daca915e1ca",
-        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-        "quote": "尚势资本、水木创投、明嘉资本等产业资本参与投资",
-        "quote_hash": "5a6eda728c356477d57f9ecb72633835568ca6460f0b3a7512e5d1e38d64a2fd"
+        "source_id": "FISRC-89f8f73b4550e672",
+        "source_url": "https://news.pedaily.cn/202608/568248.shtml",
+        "source_title": "基元律动完成新一轮融资，累计融资数千万美元",
+        "source_content_hash": "fdd56106d8c1b75c",
+        "quote": "本轮融资由 弘晖基金领投，聚合资本、尚势资本 等机构参与。",
+        "quote_hash": "9b96c88169780643a5210b997d4d9dda3b41cf3666de831a37d11d455a82f7e2"
+      },
+      {
+        "source_id": "FISRC-f23d61f5ed1d1ac1",
+        "source_url": "https://www.qbitai.com/2026/08/480079.html",
+        "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
+        "source_content_hash": "88fa07495f1fde73",
+        "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与。",
+        "quote_hash": "53660265c82eb4f1f1c5bb0194b06bb447a577340eacd1846bdc0c8e495d7d05"
+      },
+      {
+        "source_id": "FISRC-7d258d317b7d8b47",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-inipucsw0774279.shtml",
+        "source_title": "基元律动累计融资数千万美元",
+        "source_content_hash": "cf1d781a8be43665",
+        "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与",
+        "quote_hash": "d559bde143b6311d20119acc126ab51362e077d2362ea26a5e7f4855df5733cd"
+      },
+      {
+        "source_id": "FISRC-4a456deffcbf4bfd",
+        "source_url": "https://news.pedaily.cn/202608/567590.shtml",
+        "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
+        "source_content_hash": "c26b4f6c5b757ce3",
+        "quote": "本轮融资由 北洋海棠基金、尚势资本、仁爱资本联合领投，银杏谷资本跟投，华业天成、达泰资本 等老股东持续加码投资。",
+        "quote_hash": "c940fe3b12e9e760642901ea669b9984b6b36816b863de7d64621d7344c07512"
+      },
+      {
+        "source_id": "FISRC-0a40102abd985684",
+        "source_url": "https://news.pedaily.cn/202605/564126.shtml",
+        "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
+        "source_content_hash": "0ed32dd4d2b1a439",
+        "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
+        "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
       }
     ]
   }

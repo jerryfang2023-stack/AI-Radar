@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-09-12T08:58:16.886Z",
+  "generated_at": "2026-09-12T09:06:00.281Z",
   "data_date": "2026-09-12",
   "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 1422,
@@ -10790,45 +10790,6 @@
           "gate": "task_contract",
           "status": "passed",
           "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-09-12T08:06:33.614Z"
-    },
-    {
-      "candidate_id": "MAC-baac21c192ea20ea",
-      "task_type": "claim_extraction",
-      "asset_id": "HISTORY-RAW-ae461ed3a9485191",
-      "raw_id": "RAW-ae461ed3a9485191",
-      "source_ref": "SA-6eaeb1c2f344ec77",
-      "source_hash": "377c392d6365234a",
-      "provider": "codex",
-      "model": "gpt-5.6-terra",
-      "prompt_version": "china-funding-history-2026-09-12.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
         }
       ],
       "generated_at": "2026-09-12T08:06:33.614Z"
@@ -27885,51 +27846,6 @@
       "generated_at": "2026-09-12T08:26:25.558Z"
     },
     {
-      "candidate_id": "MAC-531f4b277160de28",
-      "task_type": "claim_extraction",
-      "asset_id": "HISTORY-RAW-bc13ee75c2842933",
-      "raw_id": "RAW-bc13ee75c2842933",
-      "source_ref": "SA-477bcc9e2a29ef3b",
-      "source_hash": "24500afe712a0af1",
-      "provider": "codex",
-      "model": "gpt-5.6-terra",
-      "prompt_version": "china-funding-history-2026-09-12.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [
-        {
-          "start": 349,
-          "end": 461,
-          "quote": "湘晨信息是一家智能控制系统集成与人工智能应用开发商，公司业务覆盖技术服务、软件开发、信息系统集成服务、智能控制系统集成、互联网数据服务、大数据服务等多个前沿领域，致力于为行业客户提供从底层技术到应用层的全链条智能化解决方案。"
-        }
-      ],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "passed",
-          "detail": "all quotes match exact spans"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-09-12T08:26:25.558Z"
-    },
-    {
       "candidate_id": "MAC-bec3da15ac18ab22",
       "task_type": "claim_extraction",
       "asset_id": "HISTORY-RAW-02a03133f8344826",
@@ -38186,45 +38102,6 @@
       "generated_at": "2026-09-12T08:38:25.467Z"
     },
     {
-      "candidate_id": "MAC-259cf4682922b733",
-      "task_type": "claim_extraction",
-      "asset_id": "HISTORY-RAW-b84b8a7f054f77ef",
-      "raw_id": "RAW-b84b8a7f054f77ef",
-      "source_ref": "SA-40d87c09273d611c",
-      "source_hash": "0930fd6d12989094",
-      "provider": "codex",
-      "model": "gpt-5.6-terra",
-      "prompt_version": "china-funding-history-2026-09-12.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-09-12T08:38:45.678Z"
-    },
-    {
       "candidate_id": "MAC-08558a15c4efabf9",
       "task_type": "claim_extraction",
       "asset_id": "HISTORY-RAW-5a7fc764bf152cc1",
@@ -38283,45 +38160,6 @@
       "raw_id": "RAW-ed4e0109371d3a65",
       "source_ref": "SA-7533502301186a95",
       "source_hash": "66bccc8ede7c21e6",
-      "provider": "codex",
-      "model": "gpt-5.6-terra",
-      "prompt_version": "china-funding-history-2026-09-12.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-09-12T08:38:45.678Z"
-    },
-    {
-      "candidate_id": "MAC-d5f2aacd550a0479",
-      "task_type": "claim_extraction",
-      "asset_id": "HISTORY-RAW-ca8e84dd2d893ddd",
-      "raw_id": "RAW-ca8e84dd2d893ddd",
-      "source_ref": "SA-b73d707e150e5459",
-      "source_hash": "6f61847151050567",
       "provider": "codex",
       "model": "gpt-5.6-terra",
       "prompt_version": "china-funding-history-2026-09-12.1",
@@ -39531,45 +39369,6 @@
           "gate": "task_contract",
           "status": "passed",
           "detail": "task contract passed"
-        }
-      ],
-      "generated_at": "2026-09-12T08:39:52.262Z"
-    },
-    {
-      "candidate_id": "MAC-51bf036ee657d4c4",
-      "task_type": "claim_extraction",
-      "asset_id": "HISTORY-RAW-e961725bd6316f1b",
-      "raw_id": "RAW-e961725bd6316f1b",
-      "source_ref": "SA-4d738e91c31dbd58",
-      "source_hash": "175e42c418945c5f",
-      "provider": "codex",
-      "model": "gpt-5.6-terra",
-      "prompt_version": "china-funding-history-2026-09-12.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
         }
       ],
       "generated_at": "2026-09-12T08:39:52.262Z"
@@ -42837,45 +42636,6 @@
       "generated_at": "2026-09-12T08:43:45.957Z"
     },
     {
-      "candidate_id": "MAC-35cd50ea616168be",
-      "task_type": "claim_extraction",
-      "asset_id": "HISTORY-RAW-508b595250c555e0",
-      "raw_id": "RAW-508b595250c555e0",
-      "source_ref": "SA-ac02e67acb7bc951",
-      "source_hash": "fe1f7672531fd764",
-      "provider": "codex",
-      "model": "gpt-5.6-terra",
-      "prompt_version": "china-funding-history-2026-09-12.1",
-      "status": "rejected",
-      "proposal": {
-        "claims": []
-      },
-      "evidence": [],
-      "gate_results": [
-        {
-          "gate": "source_hash",
-          "status": "passed",
-          "detail": "source hash matches"
-        },
-        {
-          "gate": "exact_source_span",
-          "status": "failed",
-          "detail": "missing_source_evidence"
-        },
-        {
-          "gate": "protected_facts",
-          "status": "passed",
-          "detail": "all proposal numbers occur in evidence"
-        },
-        {
-          "gate": "task_contract",
-          "status": "failed",
-          "detail": "missing_claim_proposal"
-        }
-      ],
-      "generated_at": "2026-09-12T08:43:45.957Z"
-    },
-    {
       "candidate_id": "MAC-93a335730b5191b5",
       "task_type": "claim_extraction",
       "asset_id": "HISTORY-RAW-885d560ffb38658e",
@@ -45251,6 +45011,316 @@
         }
       ],
       "generated_at": "2026-09-12T08:58:16.872Z"
+    },
+    {
+      "candidate_id": "MAC-51bf036ee657d4c4",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-e961725bd6316f1b",
+      "raw_id": "RAW-e961725bd6316f1b",
+      "source_ref": "SA-4d738e91c31dbd58",
+      "source_hash": "175e42c418945c5f",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-09-12T09:05:25.191Z"
+    },
+    {
+      "candidate_id": "MAC-baac21c192ea20ea",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-ae461ed3a9485191",
+      "raw_id": "RAW-ae461ed3a9485191",
+      "source_ref": "SA-6eaeb1c2f344ec77",
+      "source_hash": "377c392d6365234a",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "梦塔科技",
+            "object": "已完成 超千万元种子+轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 147,
+          "quote": "合肥梦塔科技有限公司（以下简称“梦塔科技”）致力于搭建智能体面向人类的交互感知层，创造AGI时代的数字生命。投资界（ID：pedaily2012）7月29日消息，Monstar梦塔科技已完成 超千万元种子+轮融资 ，由 合肥产投科创种子基金领投，小遛科技跟投，老股东奇绩创坛、启迪之星持续支持。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T09:05:27.298Z"
+    },
+    {
+      "candidate_id": "MAC-35cd50ea616168be",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-508b595250c555e0",
+      "raw_id": "RAW-508b595250c555e0",
+      "source_ref": "SA-ac02e67acb7bc951",
+      "source_hash": "fe1f7672531fd764",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "PrimalVerse",
+            "object": "完成数亿元种子轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 445,
+          "end": 479,
+          "quote": "近日，4D世界模型公司PrimalVerse宣布完成数亿元种子轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T09:05:38.839Z"
+    },
+    {
+      "candidate_id": "MAC-531f4b277160de28",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-bc13ee75c2842933",
+      "raw_id": "RAW-bc13ee75c2842933",
+      "source_ref": "SA-477bcc9e2a29ef3b",
+      "source_hash": "24500afe712a0af1",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "湘晨信息",
+            "object": "天使轮，金额 500万元，日期2026年6月22日",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "湘晨信息",
+            "object": "500万元天使轮投资",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1008,
+          "end": 1071,
+          "quote": "湘晨信息融资脉络清晰：\n最新融资（天使轮） ：金额 500万元 ，投资方为广东省东院高新技术有限公司，日期2026年6月22日"
+        },
+        {
+          "start": 349,
+          "end": 461,
+          "quote": "湘晨信息是一家智能控制系统集成与人工智能应用开发商，公司业务覆盖技术服务、软件开发、信息系统集成服务、智能控制系统集成、互联网数据服务、大数据服务等多个前沿领域，致力于为行业客户提供从底层技术到应用层的全链条智能化解决方案。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T09:05:44.069Z"
+    },
+    {
+      "candidate_id": "MAC-259cf4682922b733",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-b84b8a7f054f77ef",
+      "raw_id": "RAW-b84b8a7f054f77ef",
+      "source_ref": "SA-40d87c09273d611c",
+      "source_hash": "0930fd6d12989094",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "西湖心辰（杭州）科技有限公司",
+            "object": "B轮融资，融资额未披露",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 126,
+          "end": 229,
+          "quote": "证券之星消息，根据天眼查APP于1月26日公布的信息整理，西湖心辰（杭州）科技有限公司B轮融资，融资额未披露，参与投资的机构包括蚂蚁集团。\n西湖心辰是一家致力于打造陪伴10亿人的AI助手的人工智能科技公司。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T09:05:53.405Z"
+    },
+    {
+      "candidate_id": "MAC-d5f2aacd550a0479",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-ca8e84dd2d893ddd",
+      "raw_id": "RAW-ca8e84dd2d893ddd",
+      "source_ref": "SA-b73d707e150e5459",
+      "source_hash": "6f61847151050567",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "北京衍想智能科技有限公司",
+            "object": "天使轮融资，融资额未披露",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 132,
+          "end": 229,
+          "quote": "证券之星消息，根据天眼查APP于1月13日公布的信息整理，北京衍想智能科技有限公司天使轮融资，融资额未披露，参与投资的机构包括九合创投。\n北京衍想智能科技有限公司是一家人工智能通用应用系统研发商"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T09:06:00.272Z"
     }
   ]
 }

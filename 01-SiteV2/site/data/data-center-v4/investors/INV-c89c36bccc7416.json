@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-c89c36bccc7416",
+    "name": "远镜创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-05-19",
+    "latest_disclosed_at": "2026-05-19",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-79dde26535e9031b",
+        "funding_insight_id": "FI-e80d19f187b02392",
+        "event_ids": [
+          "EV-b0e0458e4ae40f66"
+        ],
+        "company_entity_id": "EN-b6994e02c1cd9ad5",
+        "company_canonical_entity_id": "",
+        "company_name": "北京灵御智能科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子+轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-57aa18abc9964b6e",
+            "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
+            "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
+            "source_content_hash": "7fb543b9712ad8c7",
+            "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
+            "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-57aa18abc9964b6e",
+        "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
+        "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
+        "source_content_hash": "7fb543b9712ad8c7",
+        "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
+        "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
+      }
+    ]
+  }
+}

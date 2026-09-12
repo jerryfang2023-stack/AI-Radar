@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-673aff0c283960",
@@ -21,23 +21,23 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 7,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
-    "first_disclosed_at": "2026-05-29",
+    "first_disclosed_at": "2026-02-11",
     "latest_disclosed_at": "2026-08-03",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 7,
       "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "other",
-      "pre_series_a"
+      "pre_series_a",
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
@@ -46,38 +46,39 @@
         "name": "苏州乐享智能科技有限公司"
       },
       {
-        "entity_id": "EN-847c00c904ccdb98",
-        "canonical_entity_id": "",
+        "entity_id": "EN-37ad0de3969166fa",
+        "canonical_entity_id": "EN-37ad0de3969166fa",
         "name": "西湖心辰（杭州）科技有限公司"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-3ffecc2647b6fadb",
-        "funding_insight_id": "FI-07a58b1fe051182a",
+        "activity_id": "IA-c55800988123856e",
+        "funding_insight_id": "FI-057188417b7e7728",
         "event_ids": [
-          "EV-88a984b765bb54f1"
+          "EV-88a984b765bb54f1",
+          "EV-775bae399bcf79d2"
         ],
-        "company_entity_id": "EN-847c00c904ccdb98",
-        "company_canonical_entity_id": "",
+        "company_entity_id": "EN-37ad0de3969166fa",
+        "company_canonical_entity_id": "EN-37ad0de3969166fa",
         "company_name": "西湖心辰（杭州）科技有限公司",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "数亿元人民币",
         "amount_normalized": {
-          "currency": "",
+          "currency": "CNY",
           "value": null,
-          "min_value": null,
-          "max_value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
           "unit": "base",
-          "status": "unparsed",
-          "display_zh": "数亿元人民币"
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
         },
         "announced_at": "2026-08-03",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
+        "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
         "role_code": "participant",
@@ -89,6 +90,87 @@
             "source_content_hash": "923410e5f5a09ac02320e57a06622b29e4c6fea066238ffa5e9d1b0a116df52e",
             "quote": "老股东 蚂蚁集团 和 汤姆猫 提供全面支持",
             "quote_hash": "5c376bd32041c52377cc742072249de27f7890a997e5519f7d47a5512e073424"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6e6dc43b5b617641",
+        "funding_insight_id": "FI-057188417b7e7728",
+        "event_ids": [
+          "EV-88a984b765bb54f1",
+          "EV-775bae399bcf79d2"
+        ],
+        "company_entity_id": "EN-37ad0de3969166fa",
+        "company_canonical_entity_id": "EN-37ad0de3969166fa",
+        "company_name": "西湖心辰（杭州）科技有限公司",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东，提供全面支持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-312cccaedbeb2478",
+            "source_url": "https://news.pedaily.cn/202608/567151.shtml",
+            "source_title": "大模型公司西湖心辰完成B+轮数亿元融资",
+            "source_content_hash": "04e62dc8a14bfb33",
+            "quote": "老股东蚂蚁集团、汤姆猫提供全面支持",
+            "quote_hash": "28373e8d55cc17ec8e0b21aa69c3133bc458d0581f6f3c3761fb30234591b343"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0c0e07a515713f36",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A2轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-66c8b7f2bdf6519e",
+            "source_url": "https://news.pedaily.cn/202404/532929.shtml",
+            "source_title": "爱诗科技完成A2轮超亿元融资，蚂蚁集团领投_投资界",
+            "source_content_hash": "c90ae0777fac0482",
+            "quote": "爱诗科技 近日 完成 A2轮超亿元融资 ，由 蚂蚁集团领投",
+            "quote_hash": "1cf2bd6944a7b59d72574ca613a46c9cf8edb758c7cc8145388befe98d6b2a6d"
           }
         ]
       },
@@ -211,6 +293,127 @@
             "quote_hash": "298cc83de705f79f8db2e8ae1b55f8bee5b373251b5e9af67c724607d55e8334"
           }
         ]
+      },
+      {
+        "activity_id": "IA-938c4d1f20038a69",
+        "funding_insight_id": "FI-033dd55115963cb3",
+        "event_ids": [
+          "EV-0896f0e7b703bed2"
+        ],
+        "company_entity_id": "EN-bd0658982d1f728d",
+        "company_canonical_entity_id": "",
+        "company_name": "广东天机智能系统有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-05-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B++轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-56eb1a5ed11f0a41",
+            "source_url": "https://news.pedaily.cn/202609/568677.shtml",
+            "source_title": "天机智能完成B++轮战略融资，加速人形力控双臂及整机产品的全球化布局_投资界",
+            "source_content_hash": "9496a23cde04b6f8",
+            "quote": "本轮融资由 蚂蚁集团、SOFINA（Sofina Asia Private Ltd.） 联合领投",
+            "quote_hash": "0b6b4f439f296b25808e4170d37a30e069a9fa9bdb645339964388ce617296e2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-437749fef1fc48cf",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+            "quote_hash": "4553aa631d5770190d24c49f7268768953bdfd2941260fabfe47653a722ad735"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a0941708bb7f265a",
+        "funding_insight_id": "FI-d5293ab06cfaa935",
+        "event_ids": [
+          "EV-371bc68f72326c02"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2707f48aa6e437b7",
+            "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+            "source_title": "清华90后带队，刚刚星海图又融10亿",
+            "source_content_hash": "85e4d40faa23c515",
+            "quote": "同年8月，星海图再度完成超2亿元Pre-A轮融资，由高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus及老股东跟投。",
+            "quote_hash": "e5444bec673d96fac26adbeaf60ee6448ecf4736d55fe8154e2ddcfef313da89"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -221,6 +424,22 @@
         "source_content_hash": "923410e5f5a09ac02320e57a06622b29e4c6fea066238ffa5e9d1b0a116df52e",
         "quote": "老股东 蚂蚁集团 和 汤姆猫 提供全面支持",
         "quote_hash": "5c376bd32041c52377cc742072249de27f7890a997e5519f7d47a5512e073424"
+      },
+      {
+        "source_id": "FISRC-312cccaedbeb2478",
+        "source_url": "https://news.pedaily.cn/202608/567151.shtml",
+        "source_title": "大模型公司西湖心辰完成B+轮数亿元融资",
+        "source_content_hash": "04e62dc8a14bfb33",
+        "quote": "老股东蚂蚁集团、汤姆猫提供全面支持",
+        "quote_hash": "28373e8d55cc17ec8e0b21aa69c3133bc458d0581f6f3c3761fb30234591b343"
+      },
+      {
+        "source_id": "FISRC-66c8b7f2bdf6519e",
+        "source_url": "https://news.pedaily.cn/202404/532929.shtml",
+        "source_title": "爱诗科技完成A2轮超亿元融资，蚂蚁集团领投_投资界",
+        "source_content_hash": "c90ae0777fac0482",
+        "quote": "爱诗科技 近日 完成 A2轮超亿元融资 ，由 蚂蚁集团领投",
+        "quote_hash": "1cf2bd6944a7b59d72574ca613a46c9cf8edb758c7cc8145388befe98d6b2a6d"
       },
       {
         "source_id": "FISRC-670f261d0c740ea4",
@@ -245,7 +464,43 @@
         "source_content_hash": "002bcd331fb2da78",
         "quote": "最新完成的B轮融资由蚂蚁集团领投，盛景嘉成跟投",
         "quote_hash": "298cc83de705f79f8db2e8ae1b55f8bee5b373251b5e9af67c724607d55e8334"
+      },
+      {
+        "source_id": "FISRC-56eb1a5ed11f0a41",
+        "source_url": "https://news.pedaily.cn/202609/568677.shtml",
+        "source_title": "天机智能完成B++轮战略融资，加速人形力控双臂及整机产品的全球化布局_投资界",
+        "source_content_hash": "9496a23cde04b6f8",
+        "quote": "本轮融资由 蚂蚁集团、SOFINA（Sofina Asia Private Ltd.） 联合领投",
+        "quote_hash": "0b6b4f439f296b25808e4170d37a30e069a9fa9bdb645339964388ce617296e2"
+      },
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+        "quote_hash": "4553aa631d5770190d24c49f7268768953bdfd2941260fabfe47653a722ad735"
+      },
+      {
+        "source_id": "FISRC-2707f48aa6e437b7",
+        "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+        "source_title": "清华90后带队，刚刚星海图又融10亿",
+        "source_content_hash": "85e4d40faa23c515",
+        "quote": "同年8月，星海图再度完成超2亿元Pre-A轮融资，由高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus及老股东跟投。",
+        "quote_hash": "e5444bec673d96fac26adbeaf60ee6448ecf4736d55fe8154e2ddcfef313da89"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[8].role": {
+          "text": "Pre-A轮领投",
+          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }

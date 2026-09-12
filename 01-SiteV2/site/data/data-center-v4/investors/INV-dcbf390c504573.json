@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-dcbf390c504573",
+    "name": "彼岸时代",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-05-07",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-00e5330d08a779e8",
+        "canonical_entity_id": "",
+        "name": "北京共绩科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c054d5347e97dab9",
+        "funding_insight_id": "FI-69f053ac44d015ab",
+        "event_ids": [
+          "EV-ada36aac02003efe"
+        ],
+        "company_entity_id": "EN-00e5330d08a779e8",
+        "company_canonical_entity_id": "",
+        "company_name": "北京共绩科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3e0fde80ebf2a574",
+            "source_url": "https://www.36kr.com/p/3799065589406724",
+            "source_title": "让算力像用电一样方便，「共绩科技」完成近亿元Pre-A轮融资丨36氪首发-36氪",
+            "source_content_hash": "b4381a675aefc3d2",
+            "quote": "本轮由春华创投、彼岸时代联合领投，力合中科、阿尔法公社跟投",
+            "quote_hash": "1c0be9460d1841fea944178964559ae2d2e24f6b0f1d032c43f990f55be4b08e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3e0fde80ebf2a574",
+        "source_url": "https://www.36kr.com/p/3799065589406724",
+        "source_title": "让算力像用电一样方便，「共绩科技」完成近亿元Pre-A轮融资丨36氪首发-36氪",
+        "source_content_hash": "b4381a675aefc3d2",
+        "quote": "本轮由春华创投、彼岸时代联合领投，力合中科、阿尔法公社跟投",
+        "quote_hash": "1c0be9460d1841fea944178964559ae2d2e24f6b0f1d032c43f990f55be4b08e"
+      }
+    ]
+  }
+}

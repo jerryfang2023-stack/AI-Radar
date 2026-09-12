@@ -251,6 +251,8 @@ function applicationAssertions(event, claims, facets, rawDocuments, publicSource
 
 function buildEvidenceRecords(root, options = {}) {
   const aggregate = aggregateV4(root, options);
+  const servedEvents = new Map((readJson(path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json"), {}).events || [])
+    .map((event) => [event.id, event]));
   const taxonomy = readJson(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), { tags: [], facets: [] });
   const technologyNames = new Map((taxonomy.tags || []).map((item) => [item.id, item.name || item.id]));
   const facetNames = new Map((taxonomy.facets || []).map((facet) => [
@@ -284,7 +286,7 @@ function buildEvidenceRecords(root, options = {}) {
       .filter((tag) => tag.status === "active");
     const reviewed = [...aggregate.reviewed.values()]
       .filter((item) => item.event_id === event.event_id && item.status === "active");
-    const classifications = [
+    const sourceClassifications = [
       ...reviewed.map((item) => ({
         dimension_id: item.dimension_id,
         dimension_name: facetNames.get(item.dimension_id)?.name || item.dimension_id,
@@ -323,6 +325,14 @@ function buildEvidenceRecords(root, options = {}) {
       && candidate.value_id === item.value_id
       && candidate.entity_ids.join("|") === item.entity_ids.join("|")
     )) === index);
+    // Published application consumers share Data Center's reviewed entity scope.
+    // A shorter source window can otherwise resolve a Claim to an older alias.
+    const served = servedEvents.get(event.event_id);
+    const classifications = served ? served.classifications.map((item) => ({
+      dimension_id: item.dimensionId, dimension_name: item.dimensionName,
+      value_id: item.id, value_name: item.name, entity_ids: item.entityIds || [],
+      provenance: item.provenance, assertion_ref: item.reviewRef || item.assertionId || "",
+    })) : sourceClassifications;
     const assertions = applicationAssertions(
       event,
       claims,

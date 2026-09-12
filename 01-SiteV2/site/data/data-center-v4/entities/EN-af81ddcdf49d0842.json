@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-af81ddcdf49d0842",
+    "name": "潞晨科技",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ad07bc5854e12fbc",
+      "EV-4229baa2cfc319cd"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-03-18",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-ad07bc5854e12fbc",
+        "EV-4229baa2cfc319cd"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-ad07bc5854e12fbc",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-28",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "disputed",
+        "statusLabel": "存在争议",
+        "title": "90后教授带队，北京国资重仓潞晨科技",
+        "displayTags": [],
+        "entityIds": [
+          "EN-af81ddcdf49d0842"
+        ]
+      },
+      {
+        "id": "EV-4229baa2cfc319cd",
+        "dataDate": "2026-09-12",
+        "date": "2026-03-18",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AI基建服务商潞晨科技完成数亿元B轮融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-af81ddcdf49d0842"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

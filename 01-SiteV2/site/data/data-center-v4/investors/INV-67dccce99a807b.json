@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-67dccce99a807b",
@@ -20,30 +20,167 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-07-13",
-    "latest_disclosed_at": "2026-07-13",
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
+    "first_disclosed_at": "2026-07-09",
+    "latest_disclosed_at": "2026-09-07",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 4
     },
     "round_codes": [
+      "angel",
       "pre_series_a"
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-ef4115f20679431f",
+        "canonical_entity_id": "",
+        "name": "光啾科技（上海）有限公司"
+      },
+      {
+        "entity_id": "EN-4482f5b97bed22de",
+        "canonical_entity_id": "",
+        "name": "光啾科技（上海）有限公司"
+      },
+      {
         "entity_id": "EN-7f505bc9744206fd",
         "canonical_entity_id": "",
         "name": "上海灵睿智芯计算技术有限公司"
+      },
+      {
+        "entity_id": "EN-a3802b1f5a583189",
+        "canonical_entity_id": "",
+        "name": "深圳墨奇智能技术有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3ad87686358579a7",
+        "funding_insight_id": "FI-cb780f46f7e0a74b",
+        "event_ids": [
+          "EV-ae87e20ab0c5d06a"
+        ],
+        "company_entity_id": "EN-ef4115f20679431f",
+        "company_canonical_entity_id": "",
+        "company_name": "光啾科技（上海）有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1a4d184cc7346d33",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-09-07/doc-iniqymaf0523150.shtml",
+            "source_title": "光啾科技完成数千万天使轮融资，加速边缘光计算产业化落地",
+            "source_content_hash": "af7072cbad01028b",
+            "quote": "由 鼎峰科创 领投， 浦东创投 跟投，老股东 中科创星 持续加注",
+            "quote_hash": "0900be1f2211b5be6414a2c9a7e1100831f83ce178da56257984aa462d0f6372"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0611611c30a6ee9b",
+        "funding_insight_id": "FI-8e02d6b25a91500c",
+        "event_ids": [
+          "EV-012b1ccfe1d48f51"
+        ],
+        "company_entity_id": "EN-4482f5b97bed22de",
+        "company_canonical_entity_id": "",
+        "company_name": "光啾科技（上海）有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-06",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-eb5fe8fcd40d4621",
+            "source_url": "https://m.sohu.com/a/1072459266_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "光啾科技完成数千万元天使轮融资",
+            "source_content_hash": "e03f1563df28426e",
+            "quote": "由鼎峰科创领投，浦东创投跟投，老股东中科创星持续加注",
+            "quote_hash": "de6162a9ca964bb5718758566a5656cac69973de503ea1ff52208aea9908d013"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-865260f96c520c5e",
+        "funding_insight_id": "FI-0393a877e1b99840",
+        "event_ids": [
+          "EV-782e8dcca41fd545"
+        ],
+        "company_entity_id": "EN-b321d29699ce1dcd",
+        "company_canonical_entity_id": "",
+        "company_name": "上海松应科技有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ae72db61aa80327",
+            "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+            "source_content_hash": "74d6b0dda1bd2148",
+            "quote": "2025年先后落地天使轮、Pre‑A轮，引入奇绩创坛、创业接力集团、中科创星、上海天使会、中新资本等机构",
+            "quote_hash": "f2c07c8e65c6a838bbc6b0ad5eb71c2acc3709345078921ab540bde1dcb9efc2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-304cb18f1707c1b4",
         "funding_insight_id": "FI-3923d1a4fc2b8a40",
@@ -83,9 +220,73 @@
             "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
           }
         ]
+      },
+      {
+        "activity_id": "IA-6919363b8f9fa151",
+        "funding_insight_id": "FI-0cab7e240eb542ce",
+        "event_ids": [
+          "EV-e85e6fc6d630d56c"
+        ],
+        "company_entity_id": "EN-a3802b1f5a583189",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳墨奇智能技术有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bea9d0be613bc1cd",
+            "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+            "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+            "source_content_hash": "311224a4dfb089df",
+            "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+            "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1a4d184cc7346d33",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-09-07/doc-iniqymaf0523150.shtml",
+        "source_title": "光啾科技完成数千万天使轮融资，加速边缘光计算产业化落地",
+        "source_content_hash": "af7072cbad01028b",
+        "quote": "由 鼎峰科创 领投， 浦东创投 跟投，老股东 中科创星 持续加注",
+        "quote_hash": "0900be1f2211b5be6414a2c9a7e1100831f83ce178da56257984aa462d0f6372"
+      },
+      {
+        "source_id": "FISRC-eb5fe8fcd40d4621",
+        "source_url": "https://m.sohu.com/a/1072459266_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "光啾科技完成数千万元天使轮融资",
+        "source_content_hash": "e03f1563df28426e",
+        "quote": "由鼎峰科创领投，浦东创投跟投，老股东中科创星持续加注",
+        "quote_hash": "de6162a9ca964bb5718758566a5656cac69973de503ea1ff52208aea9908d013"
+      },
+      {
+        "source_id": "FISRC-1ae72db61aa80327",
+        "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+        "source_content_hash": "74d6b0dda1bd2148",
+        "quote": "2025年先后落地天使轮、Pre‑A轮，引入奇绩创坛、创业接力集团、中科创星、上海天使会、中新资本等机构",
+        "quote_hash": "f2c07c8e65c6a838bbc6b0ad5eb71c2acc3709345078921ab540bde1dcb9efc2"
+      },
       {
         "source_id": "FISRC-760e793448781182",
         "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
@@ -93,6 +294,14 @@
         "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
         "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
         "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+      },
+      {
+        "source_id": "FISRC-bea9d0be613bc1cd",
+        "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+        "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+        "source_content_hash": "311224a4dfb089df",
+        "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+        "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
       }
     ]
   }

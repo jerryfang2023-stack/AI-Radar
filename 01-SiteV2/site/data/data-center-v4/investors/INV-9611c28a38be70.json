@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-9611c28a38be70",
+    "name": "九安海棠",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-04-10",
+    "latest_disclosed_at": "2026-04-10",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-9b21c9bf3305c0d6",
+        "canonical_entity_id": "",
+        "name": "生数科技"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-c4ac3d16d35acb36",
+        "funding_insight_id": "FI-7108544d47292865",
+        "event_ids": [
+          "EV-5575555340c04c5a"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "",
+        "company_name": "生数科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fd865802af815ab3",
+            "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+            "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+            "source_content_hash": "a281cc701a9028fb",
+            "quote": "中网投、九安海棠、好未来、光合创投等投资人战略投资",
+            "quote_hash": "71a2fddcd5c92c28433ef41fe27846beb520a6982c85bc3dd400328d55e096e4"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-fd865802af815ab3",
+        "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+        "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+        "source_content_hash": "a281cc701a9028fb",
+        "quote": "中网投、九安海棠、好未来、光合创投等投资人战略投资",
+        "quote_hash": "71a2fddcd5c92c28433ef41fe27846beb520a6982c85bc3dd400328d55e096e4"
+      }
+    ]
+  }
+}

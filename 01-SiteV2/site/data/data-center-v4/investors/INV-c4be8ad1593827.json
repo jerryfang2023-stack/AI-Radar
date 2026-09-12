@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-c4be8ad1593827",
@@ -20,32 +20,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-07",
     "latest_disclosed_at": "2026-05-07",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1
     },
-    "round_codes": [
-      "undisclosed"
-    ],
-    "portfolio_companies": [
-      {
-        "entity_id": "EN-b5251b35f15bedc4",
-        "canonical_entity_id": "EN-b5251b35f15bedc4",
-        "name": "Moonshot AI"
-      }
-    ],
+    "round_codes": [],
+    "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-08cfee43a0da5758",
+        "activity_id": "IA-e285323121a5f841",
         "funding_insight_id": "FI-f5103149f04ea6ed",
         "event_ids": [
           "EV-c5d7d88d1aef8edb"
@@ -70,9 +62,9 @@
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "partially_disclosed",
-        "scope": "current_round",
+        "scope": "historical_or_ambiguous",
         "role": "A+轮参投",
-        "role_code": "participant",
+        "role_code": "historical_or_ambiguous",
         "evidence": [
           {
             "source_id": "FISRC-5d82f5dc9fc96ce5",

@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-cd7838ba57ae3e",
+    "name": "隐峰资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "market_regions": [
+      "CN",
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-08-13",
+    "latest_disclosed_at": "2026-09-11",
+    "role_counts": {
+      "lead": 3
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-fac803bdedac7e4e",
+        "canonical_entity_id": "",
+        "name": "奇点智控（上海）科技有限公司"
+      },
+      {
+        "entity_id": "EN-ee12ab249ba9a51f",
+        "canonical_entity_id": "",
+        "name": "奇点智控（上海）科技有限公司"
+      },
+      {
+        "entity_id": "EN-3b07d7518a8133fa",
+        "canonical_entity_id": "",
+        "name": "苏州工至海洋装备科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8c29a85d078af3a9",
+        "funding_insight_id": "FI-5a53c657c45faf9b",
+        "event_ids": [
+          "EV-b91024c06d8762a4"
+        ],
+        "company_entity_id": "EN-3b07d7518a8133fa",
+        "company_canonical_entity_id": "",
+        "company_name": "苏州工至海洋装备科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-09-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-74c8dd452bd30dd9",
+            "source_url": "https://www.lejucaijing.com/news-7501446247908832762.html",
+            "source_title": "工至海洋完成近亿元天使轮融资：聚焦水下机器人，创始人郭春雨为哈工程教授-乐居财经",
+            "source_content_hash": "a88f421da12a2fde",
+            "quote": "本轮融资由隐峰资本领投，中新智地、哈工程资管、力合金融、小即是大创投等机构参与投资。",
+            "quote_hash": "9f6429e0c57a3c1fe91a0c88f08ec9d68556b223aa22b6d281bc24080a44522a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-eb88ab28eb81fb9a",
+        "funding_insight_id": "FI-2a183c86baad905a",
+        "event_ids": [
+          "EV-381d21544fcdd0c4"
+        ],
+        "company_entity_id": "EN-fac803bdedac7e4e",
+        "company_canonical_entity_id": "",
+        "company_name": "奇点智控（上海）科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-08-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-53b677e4c1bc7ae8",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-14/doc-ininfvzs4234591.shtml",
+            "source_title": "奇点智控完成近亿元天使轮融资",
+            "source_content_hash": "a9bcddcbfcf0e976",
+            "quote": "本轮融资由隐峰资本领投，张江科投、浦东创投、傅利叶及两家上市公司共同跟投。",
+            "quote_hash": "245e83a8f78ac317064e4d29576a41275071fd9e4c36822a20a49db2cc00734a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a222a39742f0bf1d",
+        "funding_insight_id": "FI-b8f299501e907fa5",
+        "event_ids": [
+          "EV-3e580ccbc11654cb"
+        ],
+        "company_entity_id": "EN-ee12ab249ba9a51f",
+        "company_canonical_entity_id": "",
+        "company_name": "奇点智控（上海）科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-08-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c1aefcc8e8586434",
+            "source_url": "https://news.pedaily.cn/202608/567655.shtml",
+            "source_title": "奇点智控完成近亿元天使轮融资，专注于具身智能核心感知部件研发与量产",
+            "source_content_hash": "565b1f8f8e2b068d",
+            "quote": "本轮融资由 隐峰资本领投，张江科投、浦东创投、傅利叶及两家上市公司共同跟投 。",
+            "quote_hash": "da35727bf23a448a21c3b8ea789f80a1ab3383f5ae0a8ceea17714b912356539"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-74c8dd452bd30dd9",
+        "source_url": "https://www.lejucaijing.com/news-7501446247908832762.html",
+        "source_title": "工至海洋完成近亿元天使轮融资：聚焦水下机器人，创始人郭春雨为哈工程教授-乐居财经",
+        "source_content_hash": "a88f421da12a2fde",
+        "quote": "本轮融资由隐峰资本领投，中新智地、哈工程资管、力合金融、小即是大创投等机构参与投资。",
+        "quote_hash": "9f6429e0c57a3c1fe91a0c88f08ec9d68556b223aa22b6d281bc24080a44522a"
+      },
+      {
+        "source_id": "FISRC-53b677e4c1bc7ae8",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-14/doc-ininfvzs4234591.shtml",
+        "source_title": "奇点智控完成近亿元天使轮融资",
+        "source_content_hash": "a9bcddcbfcf0e976",
+        "quote": "本轮融资由隐峰资本领投，张江科投、浦东创投、傅利叶及两家上市公司共同跟投。",
+        "quote_hash": "245e83a8f78ac317064e4d29576a41275071fd9e4c36822a20a49db2cc00734a"
+      },
+      {
+        "source_id": "FISRC-c1aefcc8e8586434",
+        "source_url": "https://news.pedaily.cn/202608/567655.shtml",
+        "source_title": "奇点智控完成近亿元天使轮融资，专注于具身智能核心感知部件研发与量产",
+        "source_content_hash": "565b1f8f8e2b068d",
+        "quote": "本轮融资由 隐峰资本领投，张江科投、浦东创投、傅利叶及两家上市公司共同跟投 。",
+        "quote_hash": "da35727bf23a448a21c3b8ea789f80a1ab3383f5ae0a8ceea17714b912356539"
+      }
+    ]
+  }
+}

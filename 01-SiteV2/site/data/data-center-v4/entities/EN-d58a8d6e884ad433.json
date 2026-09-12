@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-d58a8d6e884ad433",
+    "name": "北京深空矩阵科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-03bc82f6d6c169d7"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-08",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-03bc82f6d6c169d7"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-03bc82f6d6c169d7",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "深空矩阵完成亿元级天使轮融资，鼎晖VGC、麟阁创投联合领投",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f21be2f937c7899b",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c955e80a1b889ce4",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4cfc2e7f8c85828f",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-724eaff68c0f97ee",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-73650f8ab4984c46",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4c0cf513654131bd",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c89567b8e28ed457",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3bc4e0f55aa4c0d2",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cac2e4cf60a3812a",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          }
+        ],
+        "entityIds": [
+          "EN-d58a8d6e884ad433",
+          "EN-48b85dc3fd54f74d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

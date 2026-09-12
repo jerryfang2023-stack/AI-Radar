@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
+import { chinaFundingPublicationScope } from "./lib/china-funding-publication-scope.mjs";
 import {
   FUNDING_INSIGHT_FRONTSTAGE_VERSION,
   FUNDING_INSIGHT_GATE_VERSION,
@@ -283,7 +284,9 @@ function main() {
       .flatMap((file) => readJson(path.join(path.dirname(input), file), { cards: [] }).cards || []);
   const currentEvents = loadDailyBundle(root, date).events;
   const currentQueue = results.find((result) => result.data?.meta?.date === date)?.data?.queue || [];
-  problems.push(...verifiedFundingEventCardCoverageProblems(currentEvents, persistedCards, currentQueue, loadDailyBundle(root, date).claims)
+  const historyPolicy = readJson(path.join(root, "01-SiteV2/content/11-databases/data-center-v4", date, "historical-funding-authorization.json"), {});
+  const coverage = chinaFundingPublicationScope(currentEvents, historyPolicy);
+  problems.push(...verifiedFundingEventCardCoverageProblems(coverage.events, persistedCards, currentQueue, loadDailyBundle(root, date).claims)
     .map((problem) => `${date}:${problem}`));
   if (all) {
     problems.push(...validateEntityReviewQueue(normalizedCards));
@@ -305,6 +308,7 @@ function main() {
     ),
     entity_review_queue_checked: all,
     frontstage_checked: assertFrontstage,
+    historical_coverage: { outside_or_unverified_china_market: coverage.outside_market.length },
   }, null, 2));
 }
 

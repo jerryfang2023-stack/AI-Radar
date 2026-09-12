@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-1326ade451d29052",
+    "name": "成立不足8个月的智子芯元(深圳)科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3c75e8ce83d89604"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-04-29",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-3c75e8ce83d89604"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3c75e8ce83d89604",
+        "dataDate": "2026-09-12",
+        "date": "2026-04-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "从“有算力”到“用好算力”，智子芯元完成新一轮数千万元融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-09afdeb63bb109fc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4cb13e82873eab56",
+            "fundingInsightId": "FI-fb1de1eb6226677c"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-09afdeb63bb109fc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ef622ddc8f8f74f9",
+            "fundingInsightId": "FI-fb1de1eb6226677c"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-09afdeb63bb109fc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e92ed79b849304e5",
+            "fundingInsightId": "FI-fb1de1eb6226677c"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-09afdeb63bb109fc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f7bcf7afc3f0df52",
+            "fundingInsightId": "FI-fb1de1eb6226677c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-09afdeb63bb109fc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d83586c478c549ff",
+            "fundingInsightId": "FI-fb1de1eb6226677c"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-09afdeb63bb109fc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-27f0180739656d2e",
+            "fundingInsightId": "FI-fb1de1eb6226677c"
+          }
+        ],
+        "entityIds": [
+          "EN-09afdeb63bb109fc",
+          "EN-1326ade451d29052",
+          "EN-c215bee2c6320ad4"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

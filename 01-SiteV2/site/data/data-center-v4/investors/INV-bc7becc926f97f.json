@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-bc7becc926f97f",
@@ -20,23 +20,36 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-04-07",
-    "latest_disclosed_at": "2026-04-07",
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-03-05",
+    "latest_disclosed_at": "2026-08-25",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 3
     },
     "round_codes": [
-      "other"
+      "pre_series_a",
+      "pre_series_b",
+      "series_a_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e9c2b868dc8f92df",
+        "canonical_entity_id": "",
+        "name": "格通智联技术（上海）有限公司"
+      },
+      {
+        "entity_id": "EN-e7492db096492304",
+        "canonical_entity_id": "",
+        "name": "极佳视界"
+      },
       {
         "entity_id": "EN-1032f7a4df33f629",
         "canonical_entity_id": "EN-1032f7a4df33f629",
@@ -45,16 +58,96 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-2312b3da69de4693",
-        "funding_insight_id": "FI-4aaa0f3788c81d32",
+        "activity_id": "IA-3855ceb6e484e279",
+        "funding_insight_id": "FI-852e4f68397a135a",
+        "event_ids": [
+          "EV-2a2f79242a9479e7"
+        ],
+        "company_entity_id": "EN-e9c2b868dc8f92df",
+        "company_canonical_entity_id": "",
+        "company_name": "格通智联技术（上海）有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2a3446f702110142",
+            "source_url": "https://news.pedaily.cn/202608/568060.shtml",
+            "source_title": "格通智联完成数亿元Pre A轮融资",
+            "source_content_hash": "98c49c9e9931e708",
+            "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
+            "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a5b012858265d619",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年3月轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "达晨财智、某头部人民币基金、银河源汇、图灵基金、新鼎资本、庚辛资本等重磅加持",
+            "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b2e7b126850ef518",
+        "funding_insight_id": "FI-265930da26c14510",
         "event_ids": [
           "EV-60d58e2a1f5733f8"
         ],
         "company_entity_id": "EN-1032f7a4df33f629",
         "company_canonical_entity_id": "EN-1032f7a4df33f629",
         "company_name": "千寻智能",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
         "round_original": "A+轮",
         "amount_original": "10亿元",
         "amount_normalized": {
@@ -83,9 +176,65 @@
             "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
           }
         ]
+      },
+      {
+        "activity_id": "IA-1f55a9e05809f2ea",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
+            "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2a3446f702110142",
+        "source_url": "https://news.pedaily.cn/202608/568060.shtml",
+        "source_title": "格通智联完成数亿元Pre A轮融资",
+        "source_content_hash": "98c49c9e9931e708",
+        "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
+        "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
+      },
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "达晨财智、某头部人民币基金、银河源汇、图灵基金、新鼎资本、庚辛资本等重磅加持",
+        "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
+      },
       {
         "source_id": "FISRC-c7d67ad33d44d659",
         "source_url": "https://news.pedaily.cn/202604/562491.shtml",
@@ -93,6 +242,14 @@
         "source_content_hash": "0e9ca6e6e86a867f",
         "quote": "达晨财智、某头部人民币基金、银河源汇、图灵基金、新鼎资本、庚辛资本等重磅加持",
         "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
+      },
+      {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
+        "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
       }
     ]
   }

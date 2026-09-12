@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-0e32fdfe47313d2a",
+    "name": "上海算模算样科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-d1d7212194b63b0b"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-20",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-d1d7212194b63b0b"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-d1d7212194b63b0b",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-20",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "红熊AI完成数亿元A+轮融资，专注于AI记忆驱动AGI技术生态",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-29183850a17b80e3",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e7422d3fd52f0eab",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e038fc28dcf5f3a7",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4621a8ed54e47a5d",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9ec1967d3ac9261f",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-90ced7c39ec98fdb",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-92adebe2fbc600cf",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "education",
+            "name": "教育",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-55b7a3c1730bf1fd",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "professional_services",
+            "name": "专业服务",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-64b4a7a1913ac0d5",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7794cb126e8fd934",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-eace5f143f78a8cb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ffdf722849d5f493",
+            "fundingInsightId": "FI-233305fa0d0aeae2"
+          }
+        ],
+        "entityIds": [
+          "EN-0e32fdfe47313d2a",
+          "EN-eace5f143f78a8cb"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

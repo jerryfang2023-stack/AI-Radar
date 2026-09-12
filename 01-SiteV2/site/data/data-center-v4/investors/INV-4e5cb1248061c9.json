@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-4e5cb1248061c9",
+    "name": "若松基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-07-23",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f6631f3f9c250c24",
+        "canonical_entity_id": "",
+        "name": "智象未来（合肥）信息技术有限公司"
+      },
+      {
+        "entity_id": "EN-3f0cfc0d9c60b562",
+        "canonical_entity_id": "",
+        "name": "智象未来（HiDream.ai）"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-dad2454dcd03cf0e",
+        "funding_insight_id": "FI-f3fc934ba8553f95",
+        "event_ids": [
+          "EV-e65748bbcfe6b0fd"
+        ],
+        "company_entity_id": "EN-f6631f3f9c250c24",
+        "company_canonical_entity_id": "",
+        "company_name": "智象未来（合肥）信息技术有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "15亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-07-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d29873493842ac7b",
+            "source_url": "https://news.pedaily.cn/202607/566733.shtml",
+            "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
+            "source_content_hash": "527cf00fa8b80e2c",
+            "quote": "厦门国贸资本、上影新视野基金、湖北长江产业投资集团、华策影视、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等 多家机构跟投",
+            "quote_hash": "149bed466ba4477b33efdde18c537a4003635365edad2a73fb614ab16d0540eb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-67348a83f984223f",
+        "funding_insight_id": "FI-111c093076dbcf41",
+        "event_ids": [
+          "EV-e51643edc7bec259"
+        ],
+        "company_entity_id": "EN-3f0cfc0d9c60b562",
+        "company_canonical_entity_id": "",
+        "company_name": "智象未来（HiDream.ai）",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "15亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-07-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d4811d701a7c9af",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
+            "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
+            "source_content_hash": "e624d91e5d6eb536",
+            "quote": "厦门国贸 资本、上影新视野基金、湖北长江产业投资集团、 华策影视 、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等 多家机构跟投",
+            "quote_hash": "bd068025322f5afbcb8de752e20877f75655e2501a442bbe2a818d7c45ca4cc1"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d29873493842ac7b",
+        "source_url": "https://news.pedaily.cn/202607/566733.shtml",
+        "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
+        "source_content_hash": "527cf00fa8b80e2c",
+        "quote": "厦门国贸资本、上影新视野基金、湖北长江产业投资集团、华策影视、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等 多家机构跟投",
+        "quote_hash": "149bed466ba4477b33efdde18c537a4003635365edad2a73fb614ab16d0540eb"
+      },
+      {
+        "source_id": "FISRC-9d4811d701a7c9af",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
+        "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
+        "source_content_hash": "e624d91e5d6eb536",
+        "quote": "厦门国贸 资本、上影新视野基金、湖北长江产业投资集团、 华策影视 、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等 多家机构跟投",
+        "quote_hash": "bd068025322f5afbcb8de752e20877f75655e2501a442bbe2a818d7c45ca4cc1"
+      }
+    ]
+  }
+}

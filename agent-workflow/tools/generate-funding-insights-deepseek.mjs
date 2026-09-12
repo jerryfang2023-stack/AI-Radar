@@ -388,11 +388,17 @@ function modelCorrectionProblem(problem = "") {
 
 export function domesticFundingResearchQueries(companyName, amountHint, disclosedAt = "") {
   const name = clean(companyName);
+  const shortName = name.replace(/[（(][^）)]{1,20}[）)]/gu, "")
+    .replace(/(?:科技)?(?:有限责任公司|股份有限公司|有限公司)$/u, "");
   return [
     { intent: "event_discovery", query: `"${name}" ${String(disclosedAt).slice(0, 4)} 融资 轮次 金额 投资方` },
     { intent: "funding", query: `"${name}" "${clean(amountHint)}" 本轮融资 领投 跟投` },
     { intent: "product", query: `"${name}" 产品 服务 创始人 总部` },
     { intent: "investor_rationale", query: `"${name}" 投资机构 投资原因 融资用途` },
+    ...(shortName !== name && shortName.length >= 2 ? [
+      { intent: "funding", query: `"${shortName}" ${String(disclosedAt).slice(0, 4)} 融资 投资方` },
+      { intent: "product", query: `"${shortName}" 产品 创始人` },
+    ] : []),
   ];
 }
 
@@ -413,7 +419,10 @@ async function researchSources(bundle, event, company) {
   const describedSubject = clean(identityHint.match(/^(.{2,50}?)(?:\s+开发商|\s+(?:maker|creator|developer)\b)/iu)?.[1]);
   const identitySubject = describedSubject.replace(/([a-z0-9])([A-Z])/gu, "$1 $2");
   const siteHint = companyHost ? `site:${companyHost} ` : "";
-  const queries = event.market_scope?.china_market_match === true ? domesticFundingResearchQueries(company.canonical_name, amountHint, event.disclosed_at) : [
+  // Query language follows the evidenced company name as well as verified
+  // market scope. This does not promote an unverified geography to CN.
+  const chineseQueries = event.market_scope?.china_market_match === true || /\p{Script=Han}/u.test(company.canonical_name);
+  const queries = chineseQueries ? domesticFundingResearchQueries(company.canonical_name, amountHint, event.disclosed_at) : [
     {
       intent: "event_discovery",
       query: clean(`"${identityHint}" funding company investors product`),
@@ -483,11 +492,11 @@ async function researchSources(bundle, event, company) {
     const identityInLead = identityKey && resultLead.replace(/[^\p{L}\p{N}]+/gu, "").includes(identityKey);
     const isRelevantIndependent = result.source_class === "independent"
       && (companyInLead || identityInLead)
-      && /\b(?:invest|funding|series|seed|product|customer|case study|agent|platform)\b/iu
+      && /\b(?:invest|funding|series|seed|product|customer|case study|agent|platform)\b|融资|投资|产品|客户|案例|智能体|平台/iu
         .test(clean(`${result.title} ${result.url} ${result.provider_body}`));
     const isInvestorRationaleLead = result.intent === "investor_rationale"
       && companyInLead
-      && /\b(?:invest|investment|portfolio|series|seed|funding)\b/iu.test(clean(`${result.title} ${result.url} ${result.provider_body}`));
+      && /\b(?:invest|investment|portfolio|series|seed|funding)\b|融资|投资|领投|跟投/iu.test(clean(`${result.title} ${result.url} ${result.provider_body}`));
     if (
       !isKnownSecondary
       && !isOfficialCandidate
@@ -801,7 +810,7 @@ async function processEvent(bundle, event, entityIndex, entityDecisions, company
         { role: "system", content: "输出严格受来源正文约束的融资项目研究JSON；事实必须逐项引用原文，缺失时留空。" },
         { role: "user", content: promptFor(event, company, research.sources, directions) },
       ],
-      maxTokens: 9000,
+      maxTokens: Math.max(9000, Math.min(16000, Number(args.get("max-output-tokens") || 9000))),
       temperature: 0.1,
       timeoutMs: 180000,
       validate: (payload) => {
@@ -969,6 +978,7 @@ async function main() {
     ? eligibleEvents.filter((event) => eventIds.has(event.event_id))
     : events;
   if (args.get("market-region") === "CN") selectedEvents = selectedEvents.filter((event) => event.market_scope?.china_market_match === true);
+  if (args.get("reuse-only") === "true") selectedEvents = selectedEvents.filter((event) => existingByEvent.has(event.event_id));
   if (limit) {
     selectedEvents = selectedEvents.slice(0, limit);
   }
@@ -995,6 +1005,7 @@ async function main() {
       reused: generationSelection.reused.length,
       deduplicated: generationSelection.deduplicated.length,
       pending: pending.length,
+      pending_event_ids: pending.map((event) => event.event_id),
       recovered_from_git: recoveredCards.length,
       providers: {
         tavily: Boolean(process.env.TAVILY_API_KEY) && process.env.TAVILY_DISABLED !== "true",

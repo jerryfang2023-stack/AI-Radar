@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-b31511b4223e35",
@@ -21,7 +21,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -29,8 +29,9 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-07-30",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -44,6 +45,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6517b76b0c263cb6",
+        "funding_insight_id": "FI-43919de631afd988",
+        "event_ids": [
+          "EV-25d8a47fbc3c0fbb"
+        ],
+        "company_entity_id": "EN-7d418277ae14d4ea",
+        "company_canonical_entity_id": "",
+        "company_name": "北京月之暗面科技股份有限公司",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "35亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2026-07-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年5月20亿美元融资参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-773362f4e07cd598",
+            "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+            "source_title": "月之暗面完成超35亿美元F轮融资",
+            "source_content_hash": "4d700156140038e7",
+            "quote": "今年5月，公司刚完成20亿美元融资，由美团龙珠领投，中国移动、CPE 源峰等机构参投",
+            "quote_hash": "dcee290bad1bf3693aeb96575e5c165e1082ae7c245dd86ccef1ab0909600b8b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9392f050f6975bc3",
         "funding_insight_id": "FI-f5103149f04ea6ed",
@@ -86,6 +127,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-773362f4e07cd598",
+        "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+        "source_title": "月之暗面完成超35亿美元F轮融资",
+        "source_content_hash": "4d700156140038e7",
+        "quote": "今年5月，公司刚完成20亿美元融资，由美团龙珠领投，中国移动、CPE 源峰等机构参投",
+        "quote_hash": "dcee290bad1bf3693aeb96575e5c165e1082ae7c245dd86ccef1ab0909600b8b"
+      },
       {
         "source_id": "FISRC-c268e82669700804",
         "source_url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",

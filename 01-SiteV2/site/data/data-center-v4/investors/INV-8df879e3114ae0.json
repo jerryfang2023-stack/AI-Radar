@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-8df879e3114ae0",
+    "name": "Lollapalooza Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-14",
+    "latest_disclosed_at": "2026-07-14",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-964f260c9a904091",
+        "canonical_entity_id": "",
+        "name": "爱诗科技"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5669d61bb7b6b86a",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9476e3eff9c1e8fe",
+            "source_url": "https://news.pedaily.cn/202607/566238.shtml",
+            "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型",
+            "source_content_hash": "31557c2904ef4cb8",
+            "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
+            "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9476e3eff9c1e8fe",
+        "source_url": "https://news.pedaily.cn/202607/566238.shtml",
+        "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型",
+        "source_content_hash": "31557c2904ef4cb8",
+        "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
+        "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
+      }
+    ]
+  }
+}

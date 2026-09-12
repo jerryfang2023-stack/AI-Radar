@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-d2c545061a391fae",
+    "name": "深度原理Deep Principle",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-1e4e6b354826e8f8",
+      "EV-a6f2da132af76283"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-03-06",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-1e4e6b354826e8f8",
+        "EV-a6f2da132af76283"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-1e4e6b354826e8f8",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-14",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "「深度原理」完成A系列融资，致力于以AI解锁改变世界的新材料",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f16de884f00a10d1",
+          "EN-d2c545061a391fae"
+        ]
+      },
+      {
+        "id": "EV-a6f2da132af76283",
+        "dataDate": "2026-09-12",
+        "date": "2026-03-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "深度原理完成A2轮融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d2c545061a391fae",
+          "EN-a89151ba4b5ac0f2"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

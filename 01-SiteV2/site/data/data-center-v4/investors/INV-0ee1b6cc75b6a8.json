@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-0ee1b6cc75b6a8",
@@ -34,14 +34,14 @@
       "participant": 2
     },
     "round_codes": [
-      "other",
+      "series_b_plus",
       "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-bbc41366a5a7cf78",
         "canonical_entity_id": "",
-        "name": "北京星动纪元科技有限公司"
+        "name": "北京星动纪元科技股份有限公司"
       },
       {
         "entity_id": "EN-a6e5382c05dd0d16",
@@ -51,14 +51,15 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-10d2405fff40e1e8",
+        "activity_id": "IA-fa92a360866fd720",
         "funding_insight_id": "FI-f7342735e68375d9",
         "event_ids": [
+          "EV-a16d0d2a76e8d4a6",
           "EV-6ca567f6e80c36c5"
         ],
         "company_entity_id": "EN-bbc41366a5a7cf78",
         "company_canonical_entity_id": "",
-        "company_name": "北京星动纪元科技有限公司",
+        "company_name": "北京星动纪元科技股份有限公司",
         "round": "轮次未披露",
         "round_code": "undisclosed",
         "round_original": "新一轮",
@@ -83,24 +84,25 @@
           {
             "source_id": "FISRC-8c073d38e1f34758",
             "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-            "source_title": "星动纪元完成10亿元新一轮融资",
-            "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
-            "quote": "江西国控、国元股权、渝富中新基金、杭州资本等多家大型国资共同参与",
-            "quote_hash": "760610192ac4e6fbecce10ebfd31917b5404628703e0a2f64a93ba1988006a7d"
+            "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+            "source_content_hash": "38b0d26a979c4a8e",
+            "quote": "本轮投资方由国务院国资委国有资本运营公司诚通基金领投，江西国控、国元股权、渝富中新基金、杭州资本等多家大型国资共同参与。",
+            "quote_hash": "ab8d83be7522c48a5350fc6c121d51cbfe79b23c7489bc8d6a08bfff9dd78398"
           }
         ]
       },
       {
-        "activity_id": "IA-4f717dfb73c35e2f",
-        "funding_insight_id": "FI-af2461a497e30ffa",
+        "activity_id": "IA-269bd27c8ce37d8a",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
         "event_ids": [
+          "EV-0ff10475efa53e6c",
           "EV-435d7e7878b0c326"
         ],
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "20亿元",
         "amount_normalized": {
@@ -121,12 +123,12 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-dd387948ae711f72",
-            "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
-            "source_title": "星海图完成20亿元B+轮融资",
-            "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
-            "quote": "国资北京股东包括 金融街资本 、 金浦投资 、 北京科创 、 国元股权 、 上城资本",
-            "quote_hash": "1379a27c8099cb982674e7096348478d6aa2aaa0de38c1b5661a6c2369a1193e"
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "金融街资本、金浦投资、北京科创、国元股权等国资机构",
+            "quote_hash": "f0160cbd92aaab5212f5a7f0d68de10639d6dead2055a109429609d3b097827b"
           }
         ]
       }
@@ -135,18 +137,18 @@
       {
         "source_id": "FISRC-8c073d38e1f34758",
         "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-        "source_title": "星动纪元完成10亿元新一轮融资",
-        "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
-        "quote": "江西国控、国元股权、渝富中新基金、杭州资本等多家大型国资共同参与",
-        "quote_hash": "760610192ac4e6fbecce10ebfd31917b5404628703e0a2f64a93ba1988006a7d"
+        "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+        "source_content_hash": "38b0d26a979c4a8e",
+        "quote": "本轮投资方由国务院国资委国有资本运营公司诚通基金领投，江西国控、国元股权、渝富中新基金、杭州资本等多家大型国资共同参与。",
+        "quote_hash": "ab8d83be7522c48a5350fc6c121d51cbfe79b23c7489bc8d6a08bfff9dd78398"
       },
       {
-        "source_id": "FISRC-dd387948ae711f72",
-        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
-        "source_title": "星海图完成20亿元B+轮融资",
-        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
-        "quote": "国资北京股东包括 金融街资本 、 金浦投资 、 北京科创 、 国元股权 、 上城资本",
-        "quote_hash": "1379a27c8099cb982674e7096348478d6aa2aaa0de38c1b5661a6c2369a1193e"
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "金融街资本、金浦投资、北京科创、国元股权等国资机构",
+        "quote_hash": "f0160cbd92aaab5212f5a7f0d68de10639d6dead2055a109429609d3b097827b"
       }
     ]
   }

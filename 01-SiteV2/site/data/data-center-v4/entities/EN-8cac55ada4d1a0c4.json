@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-8cac55ada4d1a0c4",
+    "name": "乘方科技（北京）有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-83fe0f7ca48a8550"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-product_form-model_api_service"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-15",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-83fe0f7ca48a8550"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-83fe0f7ca48a8550",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "乘方科技获内蒙古算力产业发展有限公司Pre-A轮投资",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-8cac55ada4d1a0c4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8cac55ada4d1a0c4",
+          "EN-f4df56debb121a52"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-product_form-model_api_service",
+      "name": "模型 API 服务",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "model_api_service",
+      "eventIds": [
+        "EV-2dff88f85e3bce86",
+        "EV-b78b4d2d94c8e72c",
+        "EV-3c145705d72a5e57",
+        "EV-5e8ad56fcef42b5a",
+        "EV-ab839326ca9597d8",
+        "EV-55e7c286e95be405",
+        "EV-00514c4ffc2e3cd3",
+        "EV-e3792591090281c6",
+        "EV-e41fc65eb014893f",
+        "EV-78a11d309c3d4e97",
+        "EV-2bb63a3015195f9b",
+        "EV-4f7462a365561bb5",
+        "EV-f54ec32c67e9447c",
+        "EV-df17b95cf25e7840",
+        "EV-0e84a2f49d765ce3",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-31df816db86db282",
+        "EV-83fe0f7ca48a8550",
+        "EV-535c2f4fb851332d",
+        "EV-46cd64a76d3767f5",
+        "EV-e42e55d1e11a2ba2",
+        "EV-ab3586268ebfab38",
+        "EV-57597c92f7b183a9",
+        "EV-02186ed7885f68fe"
+      ],
+      "entityIds": [
+        "EN-770ef1d2b6e24172",
+        "EN-2cf797510f7e4324",
+        "EN-731b78a10ab9e444",
+        "EN-9c7b7987e3a6bf06",
+        "EN-05bb7905b99d8025",
+        "EN-8ab71d56a963f706",
+        "EN-2e334bb8de4eac34",
+        "EN-fdecfc27f301da9c",
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-e23228440ca5340f",
+        "EN-858b4458c482f7d2",
+        "EN-062ed8ada14ccffe",
+        "EN-7f871cbf905f6e0c",
+        "EN-7011e12e346d3d22",
+        "EN-8cac55ada4d1a0c4",
+        "EN-9b21c9bf3305c0d6",
+        "EN-7d3194f79e645c42",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-02-08",
+      "lastSeen": "2026-09-12"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

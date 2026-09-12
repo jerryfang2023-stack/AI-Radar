@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-d94dcc7f7d25f4",
@@ -21,17 +21,18 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-07-13",
-    "latest_disclosed_at": "2026-07-13",
+    "first_disclosed_at": "2026-05-19",
+    "latest_disclosed_at": "2026-09-12",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "historical_or_ambiguous": 3
     },
     "round_codes": [
       "pre_series_a"
@@ -44,6 +45,96 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-48f46017b0922ee3",
+        "funding_insight_id": "FI-0fff8c5cc6dfdca0",
+        "event_ids": [
+          "EV-26439e34295a0519",
+          "EV-cec68369662236fd",
+          "EV-41c54c428d84cc1e"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人科技（深圳）有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-09-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+++轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-16371607ed092d64",
+            "source_url": "https://www.qbitai.com/2026/01/369147.html",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+            "source_content_hash": "466042b9c1271f10",
+            "quote": "在A轮之前，自变量还完成了 数亿元Pre-A+++轮 融资，由华映资本领投，云启资本、广发信德跟投。",
+            "quote_hash": "696d54613d642ed72622bb0ecc6918c4beef4c84998cac17f6b55c54db768c33"
+          },
+          {
+            "source_id": "FISRC-449b969616ed1e95",
+            "source_url": "https://www.36kr.com/p/3636080421586182",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+            "source_content_hash": "abef77aff9b6b68f",
+            "quote": "在A轮之前，自变量还完成了 数亿元Pre-A+++轮 融资，由华映资本领投，云启资本、广发信德跟投。",
+            "quote_hash": "696d54613d642ed72622bb0ecc6918c4beef4c84998cac17f6b55c54db768c33"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-05d5497fee8e413c",
+        "funding_insight_id": "FI-a3c129ab8eb46aa4",
+        "event_ids": [
+          "EV-d67dd793fe1f2c04"
+        ],
+        "company_entity_id": "EN-5f03b37d8cca57e1",
+        "company_canonical_entity_id": "",
+        "company_name": "北京灵御智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "过往投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ff3ce30945e8f13",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+            "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+            "source_content_hash": "7d6a41ce0da829ca",
+            "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
+            "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5326d6bc5804c332",
         "funding_insight_id": "FI-fd1db2608b7fc431",
@@ -83,9 +174,73 @@
             "quote_hash": "5b4846a5d829bc8e76f19e1887636525b1114feb220e7c1c12fcadd948911d09"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d5a5607e4b5505b9",
+        "funding_insight_id": "FI-e80d19f187b02392",
+        "event_ids": [
+          "EV-b0e0458e4ae40f66"
+        ],
+        "company_entity_id": "EN-b6994e02c1cd9ad5",
+        "company_canonical_entity_id": "",
+        "company_name": "北京灵御智能科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子+轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-57aa18abc9964b6e",
+            "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
+            "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
+            "source_content_hash": "7fb543b9712ad8c7",
+            "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
+            "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-16371607ed092d64",
+        "source_url": "https://www.qbitai.com/2026/01/369147.html",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+        "source_content_hash": "466042b9c1271f10",
+        "quote": "在A轮之前，自变量还完成了 数亿元Pre-A+++轮 融资，由华映资本领投，云启资本、广发信德跟投。",
+        "quote_hash": "696d54613d642ed72622bb0ecc6918c4beef4c84998cac17f6b55c54db768c33"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "在A轮之前，自变量还完成了 数亿元Pre-A+++轮 融资，由华映资本领投，云启资本、广发信德跟投。",
+        "quote_hash": "696d54613d642ed72622bb0ecc6918c4beef4c84998cac17f6b55c54db768c33"
+      },
+      {
+        "source_id": "FISRC-1ff3ce30945e8f13",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+        "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+        "source_content_hash": "7d6a41ce0da829ca",
+        "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
+        "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+      },
       {
         "source_id": "FISRC-8a995421b25ccbf7",
         "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
@@ -93,7 +248,27 @@
         "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
         "quote": "本轮融资由华映资本与广和通联合领投",
         "quote_hash": "5b4846a5d829bc8e76f19e1887636525b1114feb220e7c1c12fcadd948911d09"
+      },
+      {
+        "source_id": "FISRC-57aa18abc9964b6e",
+        "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
+        "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
+        "source_content_hash": "7fb543b9712ad8c7",
+        "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
+        "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Pre-A+++轮领投",
+          "source_hash": "2bc4a0506b339486d82e3b953efe6c83dce23da9ab475f137cd102ae5118e3f6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:49.993Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }

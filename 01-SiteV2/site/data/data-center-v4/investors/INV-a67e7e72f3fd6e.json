@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-a67e7e72f3fd6e",
+    "name": "创业接力集团",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-08-31",
+    "latest_disclosed_at": "2026-08-31",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-43bce951552d5deb",
+        "funding_insight_id": "FI-0393a877e1b99840",
+        "event_ids": [
+          "EV-782e8dcca41fd545"
+        ],
+        "company_entity_id": "EN-b321d29699ce1dcd",
+        "company_canonical_entity_id": "",
+        "company_name": "上海松应科技有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ae72db61aa80327",
+            "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+            "source_content_hash": "74d6b0dda1bd2148",
+            "quote": "2025年先后落地天使轮、Pre‑A轮，引入奇绩创坛、创业接力集团、中科创星、上海天使会、中新资本等机构",
+            "quote_hash": "f2c07c8e65c6a838bbc6b0ad5eb71c2acc3709345078921ab540bde1dcb9efc2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1ae72db61aa80327",
+        "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+        "source_content_hash": "74d6b0dda1bd2148",
+        "quote": "2025年先后落地天使轮、Pre‑A轮，引入奇绩创坛、创业接力集团、中科创星、上海天使会、中新资本等机构",
+        "quote_hash": "f2c07c8e65c6a838bbc6b0ad5eb71c2acc3709345078921ab540bde1dcb9efc2"
+      }
+    ]
+  }
+}

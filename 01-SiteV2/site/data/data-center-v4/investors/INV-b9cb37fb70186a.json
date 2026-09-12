@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-b9cb37fb70186a",
+    "name": "华创资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-05-27",
+    "latest_disclosed_at": "2026-06-16",
+    "role_counts": {
+      "historical_or_ambiguous": 2
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-2b249fe58a95933a",
+        "funding_insight_id": "FI-a385248b0f830a67",
+        "event_ids": [
+          "EV-df17b95cf25e7840"
+        ],
+        "company_entity_id": "EN-062ed8ada14ccffe",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-50b5e9b4a45a40c4",
+            "source_url": "https://www.siliconflowcn.com/",
+            "source_title": "SiliconFlow硅基流动官网",
+            "source_content_hash": "20b42b9c0d124bcf",
+            "quote": "2025-02 完成亿元级Pre-A轮融资，华创资本领投，普华资本跟投，老股东耀途资本超额认购。",
+            "quote_hash": "12f634967d0aedf8da9b519ced0d069b966a2fc3a4cde4cb1f193d74afa582b5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ab71435aa9d81584",
+        "funding_insight_id": "FI-435f962c8ad61267",
+        "event_ids": [
+          "EV-a39d8aac0ee78e07",
+          "EV-d853eabcf7e759bd"
+        ],
+        "company_entity_id": "EN-f33058e80670aeb6",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳睿心智能医疗科技有限公司",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-747fad60c39e1d5f",
+            "source_url": "https://pitchhub.36kr.com/project/1679658712355584",
+            "source_title": "睿心医疗 | 项目信息-36氪",
+            "source_content_hash": "0b7672f34e03f898",
+            "quote": "A+轮 2020-06 5000万人民币 华创资本 ， 经纬创投 ， 绿河投资",
+            "quote_hash": "11a5697169c2835c73ad1fd1f03da72fdf852eae84ffc03713de98883cb9150b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-50b5e9b4a45a40c4",
+        "source_url": "https://www.siliconflowcn.com/",
+        "source_title": "SiliconFlow硅基流动官网",
+        "source_content_hash": "20b42b9c0d124bcf",
+        "quote": "2025-02 完成亿元级Pre-A轮融资，华创资本领投，普华资本跟投，老股东耀途资本超额认购。",
+        "quote_hash": "12f634967d0aedf8da9b519ced0d069b966a2fc3a4cde4cb1f193d74afa582b5"
+      },
+      {
+        "source_id": "FISRC-747fad60c39e1d5f",
+        "source_url": "https://pitchhub.36kr.com/project/1679658712355584",
+        "source_title": "睿心医疗 | 项目信息-36氪",
+        "source_content_hash": "0b7672f34e03f898",
+        "quote": "A+轮 2020-06 5000万人民币 华创资本 ， 经纬创投 ， 绿河投资",
+        "quote_hash": "11a5697169c2835c73ad1fd1f03da72fdf852eae84ffc03713de98883cb9150b"
+      }
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Pre-A轮领投",
+          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

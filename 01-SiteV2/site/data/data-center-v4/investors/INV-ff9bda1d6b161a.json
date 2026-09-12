@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-ff9bda1d6b161a",
@@ -20,24 +20,42 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 5,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-03-05",
-    "latest_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-07-02",
     "role_counts": {
-      "historical_or_ambiguous": 2,
-      "participant": 1
+      "historical_or_ambiguous": 5,
+      "other_current_round": 1,
+      "participant": 3
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_b",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-60d2cc785c19e818",
+        "canonical_entity_id": "",
+        "name": "北京三启万物科技有限公司"
+      },
+      {
+        "entity_id": "EN-062ed8ada14ccffe",
+        "canonical_entity_id": "",
+        "name": "硅基流动（SiliconFlow）"
+      },
+      {
+        "entity_id": "EN-2864ab1d9269d363",
+        "canonical_entity_id": "",
+        "name": "硅基流动（SiliconFlow）"
+      },
       {
         "entity_id": "EN-e7492db096492304",
         "canonical_entity_id": "",
@@ -45,6 +63,174 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6e32486c5df8f097",
+        "funding_insight_id": "FI-b1494fe383b9e92d",
+        "event_ids": [
+          "EV-e8f381baf505ac32"
+        ],
+        "company_entity_id": "EN-60d2cc785c19e818",
+        "company_canonical_entity_id": "",
+        "company_name": "北京三启万物科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "10亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a4dbd49c64cb5834",
+            "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+            "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+            "source_content_hash": "3e7e05417d6a96b1",
+            "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+            "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-13ae63885aa751b5",
+        "funding_insight_id": "FI-a385248b0f830a67",
+        "event_ids": [
+          "EV-df17b95cf25e7840"
+        ],
+        "company_entity_id": "EN-062ed8ada14ccffe",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-879cc82306af58a1",
+            "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
+            "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
+            "source_content_hash": "f1654d9235cc7fa8",
+            "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
+            "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9091d2a4ffc47afa",
+        "funding_insight_id": "FI-735806b08661fb55",
+        "event_ids": [
+          "EV-5a28b9c37a236c89"
+        ],
+        "company_entity_id": "EN-2864ab1d9269d363",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-13f47cda26abe042",
+            "source_url": "https://news.pedaily.cn/202606/565261.shtml",
+            "source_title": "硅基流动完成新一轮超20 亿元融资",
+            "source_content_hash": "eed9c3c500776efe",
+            "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
+            "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-692a150c480df0fd",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A1轮联合投资方、A2轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "同年11月，极佳视界完成新一轮亿元级A1轮融资，由华为哈勃、华控基金联合投资",
+            "quote_hash": "0ead8226c58fcc30b28c47bf2d64330458265611311a8af5bc1070a9de07e895"
+          },
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "一个月后，公司完成2亿元A2轮融资，由达晨财智领投，老股东华控基金联合领投",
+            "quote_hash": "2c83b10806d294e3f3487fc9255857ec76606bfd99cba8eaccdef2ef8cafa20c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8b9ad8214c4aee0b",
         "funding_insight_id": "FI-ab64a33b7d572f85",
@@ -86,6 +272,46 @@
         ]
       },
       {
+        "activity_id": "IA-7469ae562ba071a6",
+        "funding_insight_id": "FI-b17732f34966fbc2",
+        "event_ids": [
+          "EV-c2b1af9cc8fba608"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B1轮",
+        "round_code": "series_b1",
+        "round_original": "B1轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东持续超额加注",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1fb846b5355af64",
+            "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+            "source_title": "首发| 极佳视界，一个月融资25亿",
+            "source_content_hash": "60f6c8807fbce9ac",
+            "quote": "华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注。",
+            "quote_hash": "c85da4980414a31981422a897b72286447cacfc54f10dfb0335807fa4395208f"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-41ff4713ff305083",
         "funding_insight_id": "FI-f4cf69e8d2cc7653",
         "event_ids": [
@@ -122,6 +348,46 @@
             "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
             "quote": "华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注",
             "quote_hash": "d6f3ed259dfbad2eb694eefadede8fe5ca28f642094e69dbf6e0d038d2bf81a5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f217335c5c12869a",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A1轮联合投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "同年11月，极佳视界完成新一轮亿元级A1轮融资，由华为哈勃、华控基金联合投资。",
+            "quote_hash": "38f1afaa21acbc84c6130945ed6439d1d45461193c17f3bafc596b7786bfa394"
           }
         ]
       },
@@ -168,6 +434,46 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a4dbd49c64cb5834",
+        "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+        "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+        "source_content_hash": "3e7e05417d6a96b1",
+        "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+        "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+      },
+      {
+        "source_id": "FISRC-879cc82306af58a1",
+        "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
+        "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
+        "source_content_hash": "f1654d9235cc7fa8",
+        "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
+        "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
+      },
+      {
+        "source_id": "FISRC-13f47cda26abe042",
+        "source_url": "https://news.pedaily.cn/202606/565261.shtml",
+        "source_title": "硅基流动完成新一轮超20 亿元融资",
+        "source_content_hash": "eed9c3c500776efe",
+        "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
+        "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
+      },
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+        "source_content_hash": "a652909321da946b",
+        "quote": "同年11月，极佳视界完成新一轮亿元级A1轮融资，由华为哈勃、华控基金联合投资",
+        "quote_hash": "0ead8226c58fcc30b28c47bf2d64330458265611311a8af5bc1070a9de07e895"
+      },
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+        "source_content_hash": "a652909321da946b",
+        "quote": "一个月后，公司完成2亿元A2轮融资，由达晨财智领投，老股东华控基金联合领投",
+        "quote_hash": "2c83b10806d294e3f3487fc9255857ec76606bfd99cba8eaccdef2ef8cafa20c"
+      },
+      {
         "source_id": "FISRC-ce47b663ca256878",
         "source_url": "https://news.pedaily.cn/202606/565201.shtml",
         "source_title": "极佳视界三个月完成35亿元B轮系列融资",
@@ -176,12 +482,28 @@
         "quote_hash": "1cbcb7a62647ea9e68fdcd922f260c911ac7caa1cdd2205d5d96f4d7163ffa41"
       },
       {
+        "source_id": "FISRC-a1fb846b5355af64",
+        "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+        "source_title": "首发| 极佳视界，一个月融资25亿",
+        "source_content_hash": "60f6c8807fbce9ac",
+        "quote": "华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注。",
+        "quote_hash": "c85da4980414a31981422a897b72286447cacfc54f10dfb0335807fa4395208f"
+      },
+      {
         "source_id": "FISRC-4782a6093d519a4d",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
         "source_title": "极佳视界完成15亿元B1轮融资",
         "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
         "quote": "华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注",
         "quote_hash": "d6f3ed259dfbad2eb694eefadede8fe5ca28f642094e69dbf6e0d038d2bf81a5"
+      },
+      {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "同年11月，极佳视界完成新一轮亿元级A1轮融资，由华为哈勃、华控基金联合投资。",
+        "quote_hash": "38f1afaa21acbc84c6130945ed6439d1d45461193c17f3bafc596b7786bfa394"
       },
       {
         "source_id": "FISRC-010c77e94d1f858f",

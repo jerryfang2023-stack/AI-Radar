@@ -10,6 +10,62 @@
       "reused_source_count": 1416,
       "new_candidate_count": 31,
       "finished_at": "2026-09-12T08:41:42.608Z"
+    },
+    {
+      "id": "facts",
+      "status": "passed",
+      "model": "gpt-5.6-terra",
+      "reused": true,
+      "validation_commands": [
+        {
+          "index": 25,
+          "command": [
+            "agent-workflow/tools/assert-data-center-model-assist.mjs",
+            "--date=2026-09-12"
+          ],
+          "started_at": "2026-09-12T09:48:50.515Z",
+          "finished_at": "2026-09-12T09:48:52.532Z",
+          "exit_code": 0,
+          "status": "passed"
+        },
+        {
+          "index": 26,
+          "command": [
+            "agent-workflow/tools/assert-data-center-v4.mjs",
+            "--date=2026-09-12"
+          ],
+          "started_at": "2026-09-12T09:48:52.533Z",
+          "finished_at": "2026-09-12T09:48:54.444Z",
+          "exit_code": 0,
+          "status": "passed"
+        },
+        {
+          "index": 27,
+          "command": [
+            "agent-workflow/tools/assert-china-market-v1.mjs",
+            "--date=2026-09-12",
+            "--stage=bundle"
+          ],
+          "started_at": "2026-09-12T09:48:54.445Z",
+          "finished_at": "2026-09-12T09:48:54.588Z",
+          "exit_code": 0,
+          "status": "passed"
+        }
+      ],
+      "source_decision_counts": {
+        "accepted": 520,
+        "rejected": 236,
+        "source_blocked": 666,
+        "failed": 0
+      }
+    },
+    {
+      "id": "projections",
+      "status": "passed",
+      "reused": true,
+      "execution_receipt": "agent-workflow/reports/china-funding-history/2026-01-01_2026-09-12/final-projection-execution.json",
+      "finished_at": "2026-09-12T09:50:55.624Z"
     }
-  ]
+  ],
+  "execution_mode": "stepwise_recovery_of_accepted_artifacts"
 }

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-bebb703d97b31a",
@@ -20,23 +20,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-06-03",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-05-29",
     "latest_disclosed_at": "2026-06-03",
     "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1,
       "participant": 1
     },
     "round_codes": [
-      "first_external"
+      "first_external",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-d9b679dae255b189",
+        "canonical_entity_id": "",
+        "name": "杭州易启未来智能科技有限公司"
+      },
       {
         "entity_id": "EN-6f7ac1823da81d2e",
         "canonical_entity_id": "EN-6f7ac1823da81d2e",
@@ -83,6 +91,86 @@
             "quote_hash": "db307e5b145a8b86319b89eff848bfbc3b3694c526c71f540478f14c3aaa3ad1"
           }
         ]
+      },
+      {
+        "activity_id": "IA-f3f9de10a26501ce",
+        "funding_insight_id": "FI-f85557a8fbd55ef2",
+        "event_ids": [
+          "EV-71fc51b3d8e89851"
+        ],
+        "company_entity_id": "EN-d9b679dae255b189",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州易启未来智能科技有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-8dee449f158754f9",
+            "source_url": "https://www.163.com/dy/article/KU5A7F9K05118K7K.html",
+            "source_title": "易启未来获A轮投资|融资|理疗|机器人|人工智能|a轮投资_网易订阅",
+            "source_content_hash": "3a64774991d5c2f6",
+            "quote": "本轮融资由优山资本、同创伟业、杭州科创集团及网易联合投资",
+            "quote_hash": "935929a855326e91db9fbce28f1fdd3888c60666f0bb5405524e8f15668b7889"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8ab880e7549fefb4",
+        "funding_insight_id": "FI-f85557a8fbd55ef2",
+        "event_ids": [
+          "EV-71fc51b3d8e89851"
+        ],
+        "company_entity_id": "EN-d9b679dae255b189",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州易启未来智能科技有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使股东，本轮继续提供资源支持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-88e104fba08edb35",
+            "source_url": "https://www.sohu.com/a/1029488708_100032554",
+            "source_title": "易启未来完成数千万元A轮融资：聚焦按摩机器人",
+            "source_content_hash": "ea9384dd84819d0d",
+            "quote": "天使股东网易继续提供资源支持",
+            "quote_hash": "ff4712f7068e2021e0fe31cb9f478c40cd507ea11e87174456b542a1ba76c2e0"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -93,6 +181,22 @@
         "source_content_hash": "3082f211a1386051",
         "quote": "NetEase, e-commerce group JD.com, Hong Kong-based IDG Capital and Monolith Capital, and several state-backed artificial intelligence investment funds round out the prospective syndicate",
         "quote_hash": "db307e5b145a8b86319b89eff848bfbc3b3694c526c71f540478f14c3aaa3ad1"
+      },
+      {
+        "source_id": "FISRC-8dee449f158754f9",
+        "source_url": "https://www.163.com/dy/article/KU5A7F9K05118K7K.html",
+        "source_title": "易启未来获A轮投资|融资|理疗|机器人|人工智能|a轮投资_网易订阅",
+        "source_content_hash": "3a64774991d5c2f6",
+        "quote": "本轮融资由优山资本、同创伟业、杭州科创集团及网易联合投资",
+        "quote_hash": "935929a855326e91db9fbce28f1fdd3888c60666f0bb5405524e8f15668b7889"
+      },
+      {
+        "source_id": "FISRC-88e104fba08edb35",
+        "source_url": "https://www.sohu.com/a/1029488708_100032554",
+        "source_title": "易启未来完成数千万元A轮融资：聚焦按摩机器人",
+        "source_content_hash": "ea9384dd84819d0d",
+        "quote": "天使股东网易继续提供资源支持",
+        "quote_hash": "ff4712f7068e2021e0fe31cb9f478c40cd507ea11e87174456b542a1ba76c2e0"
       }
     ]
   }

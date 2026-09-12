@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-0242c48b3c17cfaf",
+    "name": "上海希夕智能科技有限责任公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-4242ed9f08123c32"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-01-29",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-4242ed9f08123c32"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-4242ed9f08123c32",
+        "dataDate": "2026-09-12",
+        "date": "2026-01-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "深耕食品加工市场，希夕智能完成数千万元天使轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-0a5667ab6d63725e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bcec2b114a40faa3",
+            "fundingInsightId": "FI-d4a4a5746a58d7a6"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-0a5667ab6d63725e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e530725099ced8ab",
+            "fundingInsightId": "FI-d4a4a5746a58d7a6"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-0a5667ab6d63725e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-556fd3cbf54c3010",
+            "fundingInsightId": "FI-d4a4a5746a58d7a6"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "food_hospitality",
+            "name": "餐饮与酒店",
+            "entityIds": [
+              "EN-0a5667ab6d63725e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3d314b12ed5ae5db",
+            "fundingInsightId": "FI-d4a4a5746a58d7a6"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-0a5667ab6d63725e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5855e3ad995c0aa5",
+            "fundingInsightId": "FI-d4a4a5746a58d7a6"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "agriculture",
+            "name": "农业",
+            "entityIds": [
+              "EN-0a5667ab6d63725e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-0a5667ab6d63725e",
+          "EN-df7d5df1ba688801",
+          "EN-0242c48b3c17cfaf",
+          "EN-79deecaef5cbaf85"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-80f1d5fa503e6847",
+      "snapshotKey": "80f1d5fa503e6847",
+      "snapshotId": "HWS-a6132abfcc260ecc",
+      "eventId": "EV-4242ed9f08123c32",
+      "eventIds": [
+        "EV-4242ed9f08123c32"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "希夕智能",
+      "subject": "希夕智能",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "数千万元",
+          "fact_ref": "HWF-195d08574051545f"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-66a37b9c68498f0a",
+          "fact_type": "product",
+          "observed_at": "2026-01-29T01:22:00.000Z",
+          "subject_entity_id": "EN-0a5667ab6d63725e",
+          "subject_name": "希夕智能",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "数千万元",
+          "source_quote": "食品加工AI 机器人 公司希夕智能宣布完成数千万元天使轮融资，本轮融资领投方为宁波北仑商贸物流投资集团，跟投方为荣成荣鑫基金和盛景嘉成，该轮融资将主要被用于项目复制推广和产品研发迭代。\n成立于2022年，希夕智能是一家全栈式智能食品加工机器人解决方案企业，致力于将AI智能与柔性机器人结合",
+          "event_refs": [
+            "EV-4242ed9f08123c32"
+          ],
+          "claim_ref": "CL-52f6875ec658cba1",
+          "source_refs": [
+            "SA-77b8cc87cdd22a42",
+            "SA-a03285c4903f2aac",
+            "SA-3c8d62d32825e5bc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-195d08574051545f",
+          "fact_type": "product",
+          "observed_at": "2026-01-29T01:22:00.000Z",
+          "subject_entity_id": "EN-0a5667ab6d63725e",
+          "subject_name": "希夕智能",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "数千万元",
+          "source_quote": "上海希夕智能科技有限责任公司（以下简称“希夕智能”）完成数千万元天使轮融资。\n本轮融资领投方为宁波北仑商贸物流投资集团，跟投方为荣成荣鑫基金和盛景嘉成。本轮融资将主要被用于项目复制推广和产品研发迭代。\n公开资料显示，希夕智能由新希望智能设备制造有限公司，通用智能机器人头部独角兽企业非夕科技，和希夕的初始创业合伙团队联合创立。其中，新希望智能是以农业与食品为核心多元化产业集团新希望集团旗下专注人工智能与机器人赛道的孵化投资平台。\n成立于2022年的希夕智能，作为一家全栈式智能食品加工机器人解决方案企业，将AI智能与柔性机器人结合",
+          "event_refs": [
+            "EV-4242ed9f08123c32"
+          ],
+          "claim_ref": "CL-8c7471bc073d1323",
+          "source_refs": [
+            "SA-77b8cc87cdd22a42",
+            "SA-a03285c4903f2aac",
+            "SA-3c8d62d32825e5bc"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://news.pedaily.cn/202601/560516.shtml",
+      "entityIds": [
+        "EN-0a5667ab6d63725e",
+        "EN-df7d5df1ba688801",
+        "EN-0242c48b3c17cfaf",
+        "EN-79deecaef5cbaf85"
+      ]
+    }
+  ]
+}

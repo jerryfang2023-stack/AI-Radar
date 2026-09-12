@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "FUNDING-COMPANY-IDENTITY-DECISION-V1.0",
-    "updated_at": "2026-09-09T12:35:00+08:00",
+    "updated_at": "2026-09-12T09:46:15.414Z",
     "rule": "Funding Insights may merge public cards only after an explicit identity review. The decision changes the application projection, preserves every source event, and does not mutate Data Center V4 canonical facts."
   },
   "decisions": [
@@ -9,11 +9,19 @@
       "decision_id": "FICID-MISTRAL-NAME",
       "entity_id": "EN-920510199770f4d6",
       "application_entity_id": "EN-c04bd5ebd10ab696",
-      "current": { "name": "Mistral", "catalog_type": "company" },
-      "match_names": ["Mistral"],
+      "current": {
+        "name": "Mistral",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Mistral"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "Mistral AI", "catalog_type": "company" },
+      "canonical": {
+        "name": "Mistral AI",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-09-09",
       "evidence": {
@@ -88,11 +96,19 @@
       "decision_id": "FICID-GRADIUM",
       "entity_id": "EN-8d4321d936320802",
       "application_entity_id": "FICO-gradium",
-      "current": { "name": "Gradium", "catalog_type": "company" },
-      "match_names": ["Gradium"],
+      "current": {
+        "name": "Gradium",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Gradium"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "Gradium", "catalog_type": "company" },
+      "canonical": {
+        "name": "Gradium",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-08-08",
       "evidence": {
@@ -105,11 +121,19 @@
       "decision_id": "FICID-UPSCALE-AI",
       "entity_id": "EN-8d4321d936320802",
       "application_entity_id": "FICO-upscale-ai",
-      "current": { "name": "Upscale AI", "catalog_type": "company" },
-      "match_names": ["Upscale AI"],
+      "current": {
+        "name": "Upscale AI",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Upscale AI"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "Upscale AI", "catalog_type": "company" },
+      "canonical": {
+        "name": "Upscale AI",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-08-08",
       "evidence": {
@@ -122,11 +146,21 @@
       "decision_id": "FICID-ETCHED",
       "entity_id": "EN-9cb45a27a2808c01",
       "application_entity_id": "FICO-etched",
-      "current": { "name": "Etched", "catalog_type": "company" },
-      "match_names": ["Etched", "Etched, Inc.", "Nvidia rival Etched"],
+      "current": {
+        "name": "Etched",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Etched",
+        "Etched, Inc.",
+        "Nvidia rival Etched"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "Etched", "catalog_type": "company" },
+      "canonical": {
+        "name": "Etched",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-08-08",
       "evidence": {
@@ -139,11 +173,20 @@
       "decision_id": "FICID-NP-COMPANY",
       "entity_id": "EN-c04bd5ebd10ab696",
       "application_entity_id": "FICO-np-company",
-      "current": { "name": "NP Company", "catalog_type": "company" },
-      "match_names": ["NP Company", "NP Co."],
+      "current": {
+        "name": "NP Company",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "NP Company",
+        "NP Co."
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "NP Company", "catalog_type": "company" },
+      "canonical": {
+        "name": "NP Company",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-08-08",
       "evidence": {
@@ -156,11 +199,24 @@
       "decision_id": "FICID-OXMIQ",
       "entity_id": "EN-d3d151f3f8e7f9ed",
       "application_entity_id": "FICO-oxmiq",
-      "current": { "name": "OXMIQ", "catalog_type": "company" },
-      "match_names": ["OXMIQ", "OXMIQ Labs", "OXMIQ Labs Inc.", "Oxmiq Labs Inc.", "Raja Koduri’s Oxmiq", "Raja Koduri's Oxmiq Labs"],
+      "current": {
+        "name": "OXMIQ",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "OXMIQ",
+        "OXMIQ Labs",
+        "OXMIQ Labs Inc.",
+        "Oxmiq Labs Inc.",
+        "Raja Koduri’s Oxmiq",
+        "Raja Koduri's Oxmiq Labs"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "OXMIQ", "catalog_type": "company" },
+      "canonical": {
+        "name": "OXMIQ",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-08-08",
       "evidence": {
@@ -173,11 +229,20 @@
       "decision_id": "FICID-NETRIS",
       "entity_id": "EN-34bdfa9bfd563edb",
       "application_entity_id": "FICO-netris",
-      "current": { "name": "Netris", "catalog_type": "company" },
-      "match_names": ["Netris", "Andreessen Horowitz Leads Netris"],
+      "current": {
+        "name": "Netris",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Netris",
+        "Andreessen Horowitz Leads Netris"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "Netris", "catalog_type": "company" },
+      "canonical": {
+        "name": "Netris",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-08-08",
       "evidence": {
@@ -190,11 +255,21 @@
       "decision_id": "FICID-WONDERFUL",
       "entity_id": "EN-ee04228c5c6d8b08",
       "application_entity_id": "FICO-wonderful",
-      "current": { "name": "Wonderful", "catalog_type": "company" },
-      "match_names": ["Wonderful", "Enterprise AI", "Enterprise AI Agent"],
+      "current": {
+        "name": "Wonderful",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Wonderful",
+        "Enterprise AI",
+        "Enterprise AI Agent"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "Wonderful", "catalog_type": "company" },
+      "canonical": {
+        "name": "Wonderful",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-08-08",
       "evidence": {
@@ -207,11 +282,22 @@
       "decision_id": "FICID-SYCAMORE",
       "entity_id": "EN-4479ee1b529c5e82",
       "application_entity_id": "FICO-sycamore",
-      "current": { "name": "Sycamore", "catalog_type": "company" },
-      "match_names": ["Sycamore", "Sycamore Labs", "Sycamore Labs, Inc.", "Former Coatue partner"],
+      "current": {
+        "name": "Sycamore",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Sycamore",
+        "Sycamore Labs",
+        "Sycamore Labs, Inc.",
+        "Former Coatue partner"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "Sycamore", "catalog_type": "company" },
+      "canonical": {
+        "name": "Sycamore",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-08-08",
       "evidence": {
@@ -224,11 +310,20 @@
       "decision_id": "FICID-HIGGSFIELD",
       "entity_id": "FICO-50b2676afbe30c83",
       "application_entity_id": "EN-50b2676afbe30c83",
-      "current": { "name": "Higgsfield Inc.", "catalog_type": "company" },
-      "match_names": ["Higgsfield", "Higgsfield Inc."],
+      "current": {
+        "name": "Higgsfield Inc.",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Higgsfield",
+        "Higgsfield Inc."
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "Higgsfield", "catalog_type": "company" },
+      "canonical": {
+        "name": "Higgsfield",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-08-22",
       "evidence": {
@@ -236,6 +331,62 @@
         "quote": "Higgsfield Inc., a generative artificial intelligence video and image creation platform for professionals"
       },
       "rationale": "2026-08-22 Data Center 已按同名融资证据建立 Higgsfield 规范候选实体；将历史融资应用身份 FICO-50b2676afbe30c83 对齐到该实体，避免分类投影目标漂移。"
+    },
+    {
+      "decision_id": "FICID-XINCHEN-20260912",
+      "entity_id": "EN-847c00c904ccdb98",
+      "application_entity_id": "EN-37ad0de3969166fa",
+      "current": {
+        "name": "西湖心辰（杭州）科技有限公司",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "西湖心辰（杭州）科技有限公司",
+        "西湖心辰"
+      ],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "西湖心辰（杭州）科技有限公司",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_at": "2026-09-12",
+      "evidence": {
+        "source_url": "https://news.pedaily.cn/202608/567151.shtml",
+        "quote": "西湖心辰（杭州）科技有限公司是一家致力于AI大模型技术的探索与研究，专注于人工智能服务的创新与应用的公司",
+        "corroborating_source_url": "https://www.readaitime.com/news/2026-08-03/kqp84yfa",
+        "corroborating_quote": "杭州大模型公司 西湖心辰 宣布完成 数亿元人民币B+轮融资"
+      },
+      "rationale": "既有卡和补采卡均为同一杭州公司，成立时间、创始人及2026-08-03数亿元B+轮投资方一致。仅合并应用身份及同轮披露，保留全部事件引用。"
+    },
+    {
+      "decision_id": "FICID-GALAXEA-20260912",
+      "entity_id": "EN-a6e5382c05dd0d16",
+      "application_entity_id": "EN-a6e5382c05dd0d16",
+      "current": {
+        "name": "星海图",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "星海图",
+        "星海图（北京）人工智能科技股份有限公司"
+      ],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "星海图",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_at": "2026-09-12",
+      "evidence": {
+        "source_url": "https://galaxea-ai.com/cn/about",
+        "quote": "星海图（北京）人工智能科技股份有限公司成立于2023年9月",
+        "corroborating_source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+        "corroborating_quote": "人形机器人公司星海图"
+      },
+      "rationale": "官网确认品牌与股份公司名称，两个4月2日20亿元B+轮卡片为同一披露；合并应用身份并保留原事件和各轮证据，2月B轮与4月B+轮继续分开。"
     }
   ]
 }

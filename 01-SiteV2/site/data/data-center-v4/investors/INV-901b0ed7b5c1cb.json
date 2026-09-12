@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-901b0ed7b5c1cb",
@@ -20,31 +20,38 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 6,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
-    "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-06-15",
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
+    "first_disclosed_at": "2026-02-14",
+    "latest_disclosed_at": "2026-09-12",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "co_lead": 1,
+      "historical_or_ambiguous": 6,
       "participant": 4
     },
     "round_codes": [
       "angel",
       "multi_round",
-      "other",
-      "series_c"
+      "series_a_plus_plus",
+      "series_c",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-a5e5f031b6f878cf",
         "canonical_entity_id": "",
         "name": "杭州微纳核芯电子科技有限公司"
+      },
+      {
+        "entity_id": "EN-3309b3b14807f39a",
+        "canonical_entity_id": "EN-3309b3b14807f39a",
+        "name": "面壁智能"
       },
       {
         "entity_id": "EN-085578b03da7d660",
@@ -59,10 +66,140 @@
       {
         "entity_id": "EN-8dc72a4672894e0f",
         "canonical_entity_id": "EN-8dc72a4672894e0f",
-        "name": "自变量机器人"
+        "name": "自变量机器人科技（深圳）有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4fe6e990cb0ae068",
+        "funding_insight_id": "FI-0fff8c5cc6dfdca0",
+        "event_ids": [
+          "EV-26439e34295a0519",
+          "EV-cec68369662236fd",
+          "EV-41c54c428d84cc1e"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人科技（深圳）有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-09-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-16371607ed092d64",
+            "source_url": "https://www.qbitai.com/2026/01/369147.html",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+            "source_content_hash": "466042b9c1271f10",
+            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+          },
+          {
+            "source_id": "FISRC-449b969616ed1e95",
+            "source_url": "https://www.36kr.com/p/3636080421586182",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+            "source_content_hash": "abef77aff9b6b68f",
+            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a4e87b4fe931075e",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-09c3ca37737a71ce",
+            "source_url": "https://stcn.com/article/detail/3386786.html",
+            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+            "source_content_hash": "edea92990a31710b",
+            "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+            "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-384a1250d584775c",
+        "funding_insight_id": "FI-c524ab52173a64d8",
+        "event_ids": [
+          "EV-c6437ac13cb07531"
+        ],
+        "company_entity_id": "EN-f6aaf378a6d9e724",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳市深度智控科技有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67ccadc4294defd6",
+            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+            "source_title": "深度智控 | 项目信息-36氪",
+            "source_content_hash": "ed75aafa3d8feb1d",
+            "quote": "A+轮 2023-05 数亿人民币 深创投 ， 招商局创投 ， Forebright Capital ， HongShan红杉中国 ， 源码资本",
+            "quote_hash": "01231602863d5c406a1b7918938ddc5c99d1a6768495ed555c9506928ed11ad4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d7fdb714d56bc585",
         "funding_insight_id": "FI-6ada8d4502daa530",
@@ -144,6 +281,86 @@
         ]
       },
       {
+        "activity_id": "IA-41c6b999892dc64f",
+        "funding_insight_id": "FI-0421ad5a685ba3b0",
+        "event_ids": [
+          "EV-7620153f4892a0af"
+        ],
+        "company_entity_id": "EN-ce22f929f4a17467",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（深圳）科技股份有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-04-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ad8ba39594cec38c",
+            "source_url": "https://www.cls.cn/detail/2341170",
+            "source_title": "智平方完成股改百亿具身智能独角兽加速冲刺IPO - 财联社",
+            "source_content_hash": "0df608927ef662b2",
+            "quote": "当前股东矩阵涵盖深创投、百度、国泰海通、中车资本等",
+            "quote_hash": "7f5e550c58a550b26cc49c6e8c95023f5f67b4dbd608c6c1588c1f866670f36e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-286e1b798d1341dd",
+        "funding_insight_id": "FI-a7e1a675674f1a0b",
+        "event_ids": [
+          "EV-314db5cbf5010d41"
+        ],
+        "company_entity_id": "EN-3309b3b14807f39a",
+        "company_canonical_entity_id": "EN-3309b3b14807f39a",
+        "company_name": "面壁智能",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮数亿元人民币融资",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-04-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-5e868b9dacd5325c",
+            "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
+            "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+            "source_content_hash": "21fcbff02b369abf",
+            "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
+            "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-ba886a4cdbdcbfba",
         "funding_insight_id": "FI-d64fecfe9cecf228",
         "event_ids": [
@@ -180,6 +397,46 @@
             "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
             "quote": "老股东深创投、上海人工智能基金等持续加码",
             "quote_hash": "8b03b2eb258a2c20e883545d8291754ece6ec15611e4865efacc00d3b25b23f5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-21b7f84b1c71272b",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A系列融资领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "公司完成由深创投领投的新一轮A系列融资，其中深创投押注超过亿元",
+            "quote_hash": "27e3c42e22edbcb94335fafe80b015db3ddafaff7770300de1b1af150e3694c2"
           }
         ]
       },
@@ -262,49 +519,41 @@
             "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
           }
         ]
-      },
-      {
-        "activity_id": "IA-5aa1051aecb08a9b",
-        "funding_insight_id": "FI-15b5d99bcd808dba",
-        "event_ids": [
-          "EV-cec68369662236fd"
-        ],
-        "company_entity_id": "EN-8dc72a4672894e0f",
-        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-        "company_name": "自变量机器人",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "A++轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-01-12",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-a180899e2f0b58ad",
-            "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
-            "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
-            "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
-            "quote": "红杉中国、北京信息产业发展基金、深创投、南山战新投、锡创投等多家机构联合投资",
-            "quote_hash": "6ad36c8523bad82917df28cd311d2835b0a438bc227f21f74f3ba33f483b68b5"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-16371607ed092d64",
+        "source_url": "https://www.qbitai.com/2026/01/369147.html",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+        "source_content_hash": "466042b9c1271f10",
+        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+      },
+      {
+        "source_id": "FISRC-09c3ca37737a71ce",
+        "source_url": "https://stcn.com/article/detail/3386786.html",
+        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+        "source_content_hash": "edea92990a31710b",
+        "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+        "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+      },
+      {
+        "source_id": "FISRC-67ccadc4294defd6",
+        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+        "source_title": "深度智控 | 项目信息-36氪",
+        "source_content_hash": "ed75aafa3d8feb1d",
+        "quote": "A+轮 2023-05 数亿人民币 深创投 ， 招商局创投 ， Forebright Capital ， HongShan红杉中国 ， 源码资本",
+        "quote_hash": "01231602863d5c406a1b7918938ddc5c99d1a6768495ed555c9506928ed11ad4"
+      },
       {
         "source_id": "FISRC-b96684face6f5223",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
@@ -322,12 +571,36 @@
         "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
       },
       {
+        "source_id": "FISRC-ad8ba39594cec38c",
+        "source_url": "https://www.cls.cn/detail/2341170",
+        "source_title": "智平方完成股改百亿具身智能独角兽加速冲刺IPO - 财联社",
+        "source_content_hash": "0df608927ef662b2",
+        "quote": "当前股东矩阵涵盖深创投、百度、国泰海通、中车资本等",
+        "quote_hash": "7f5e550c58a550b26cc49c6e8c95023f5f67b4dbd608c6c1588c1f866670f36e"
+      },
+      {
+        "source_id": "FISRC-5e868b9dacd5325c",
+        "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
+        "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+        "source_content_hash": "21fcbff02b369abf",
+        "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
+        "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
+      },
+      {
         "source_id": "FISRC-adaac360139469bd",
         "source_url": "https://www.cls.cn/detail/2300238",
         "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
         "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
         "quote": "老股东深创投、上海人工智能基金等持续加码",
         "quote_hash": "8b03b2eb258a2c20e883545d8291754ece6ec15611e4865efacc00d3b25b23f5"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "公司完成由深创投领投的新一轮A系列融资，其中深创投押注超过亿元",
+        "quote_hash": "27e3c42e22edbcb94335fafe80b015db3ddafaff7770300de1b1af150e3694c2"
       },
       {
         "source_id": "FISRC-f6dd24cc4ca544d8",
@@ -344,14 +617,6 @@
         "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
         "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
         "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
-      },
-      {
-        "source_id": "FISRC-a180899e2f0b58ad",
-        "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
-        "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
-        "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
-        "quote": "红杉中国、北京信息产业发展基金、深创投、南山战新投、锡创投等多家机构联合投资",
-        "quote_hash": "6ad36c8523bad82917df28cd311d2835b0a438bc227f21f74f3ba33f483b68b5"
       }
     ]
   }

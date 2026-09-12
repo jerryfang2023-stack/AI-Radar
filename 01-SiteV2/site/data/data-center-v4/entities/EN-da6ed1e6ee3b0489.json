@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "entity": {
     "id": "EN-da6ed1e6ee3b0489",
@@ -24,16 +24,19 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-5a1cfb0d6e47e552",
       "EV-ec55003461ff34b0"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-09-11",
-    "lastSeen": "2026-09-11",
+    "firstSeen": "2026-05-08",
+    "lastSeen": "2026-09-12",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-5a1cfb0d6e47e552"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -44,6 +47,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-5a1cfb0d6e47e552",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "容芯致远获数亿元天使轮融资，加速国产AI智算基础设施布局",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cecdd8369134f75e",
+          "EN-da6ed1e6ee3b0489",
+          "EN-6f7ac1823da81d2e"
+        ]
+      },
       {
         "id": "EV-ec55003461ff34b0",
         "dataDate": "2026-09-11",

@@ -5,45 +5,152 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-92654338f57932",
-    "name": "L2F 光源创业者基金",
-    "aliases": [],
+    "name": "L2F光源创业者基金",
+    "aliases": [
+      "L2F 光源创业者基金"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-07-07",
-    "latest_disclosed_at": "2026-07-07",
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
+    "first_disclosed_at": "2026-03-24",
+    "latest_disclosed_at": "2026-08-12",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "historical_or_ambiguous": 3,
+      "lead": 1,
+      "participant": 3
     },
     "round_codes": [
+      "angel",
+      "angel_plus",
       "seed"
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-a43f157d208b2a63",
+        "canonical_entity_id": "",
+        "name": "开物纪"
+      },
+      {
+        "entity_id": "EN-670f7279903a5551",
+        "canonical_entity_id": "",
+        "name": "上海幻码跃迁量子科技有限公司"
+      },
+      {
+        "entity_id": "EN-4eec97c17bca1de2",
+        "canonical_entity_id": "",
+        "name": "上海星熠无限智能科技有限公司"
+      },
+      {
         "entity_id": "EN-d361e2fd6b342245",
         "canonical_entity_id": "",
         "name": "深圳忆纪元科技有限公司"
+      },
+      {
+        "entity_id": "EN-b227e7517a2dc971",
+        "canonical_entity_id": "",
+        "name": "星熠智能（上海星熠无限智能科技有限公司）"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0ea38b5fbb272ea0",
+        "funding_insight_id": "FI-42815b3fc014db68",
+        "event_ids": [
+          "EV-64c5290cc685eb93"
+        ],
+        "company_entity_id": "EN-d361e2fd6b342245",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子++轮",
+        "round_code": "seed_plus_plus",
+        "round_original": "种子++轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-853986351b6d68d9",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-28/doc-inhvzfsh8584344.shtml",
+            "source_title": "首发| 华为大牛深圳创业，MemoraX AI首轮融资千万美元_新浪科技_新浪网",
+            "source_content_hash": "7b3001b2629929ad",
+            "quote": "本轮由L2F光源创业者基金、钟鼎资本联合领投，知名投资人及产业方共同参与。",
+            "quote_hash": "e9fb39839566d2517b1b64485aa3b92724685259cd0e25f7d160f6447cfabf34"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a6b298e67b773efa",
+        "funding_insight_id": "FI-150dae442fa0f1de",
+        "event_ids": [
+          "EV-71d7d8bbaa623228"
+        ],
+        "company_entity_id": "EN-670f7279903a5551",
+        "company_canonical_entity_id": "",
+        "company_name": "上海幻码跃迁量子科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c0e1d89cdf9af82",
+            "source_url": "https://news.pedaily.cn/202607/566249.shtml",
+            "source_title": "「幻码跃迁」完成数千万种子轮融资，打造量子×AI融合创新的量子计算基础设施",
+            "source_content_hash": "340f8c8784943503",
+            "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
+            "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
+          }
+        ]
+      },
       {
         "activity_id": "IA-dacb6d7540e69fbb",
         "funding_insight_id": "FI-60fcc87061157740",
@@ -83,9 +190,225 @@
             "quote_hash": "6b93b45c73568518a641dc5124b85c00d979bd7e5a22bd29a882bd2611876c4e"
           }
         ]
+      },
+      {
+        "activity_id": "IA-cbfc58fda9e48a48",
+        "funding_insight_id": "FI-b067ccb75fcade16",
+        "event_ids": [
+          "EV-765185b9e33dde47"
+        ],
+        "company_entity_id": "EN-4eec97c17bca1de2",
+        "company_canonical_entity_id": "",
+        "company_name": "上海星熠无限智能科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b28cfdc86e1c7c16",
+            "source_url": "https://news.pedaily.cn/202606/565533.shtml",
+            "source_title": "星熠智能完成千万级天使轮融资，专注AI人力供应链",
+            "source_content_hash": "73a5594e54d6952f",
+            "quote": "本轮融资由 浦东创投领投，L2F光源创业者基金跟投",
+            "quote_hash": "e98651ce6ff92b006e1a9e798c2f92eb719a7b59cae8361384d1eeda966f5373"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3b26e01d2c95724e",
+        "funding_insight_id": "FI-ac6e585c2417cdb4",
+        "event_ids": [
+          "EV-696ff69f11f66191"
+        ],
+        "company_entity_id": "EN-b227e7517a2dc971",
+        "company_canonical_entity_id": "",
+        "company_name": "星熠智能（上海星熠无限智能科技有限公司）",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ac0e5821a13eba9",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-25/doc-inieqskx7805883.shtml",
+            "source_title": "星熠智能完成千万级天使轮融资",
+            "source_content_hash": "3b23636af921335c",
+            "quote": "本轮融资由浦东创投领投，L2F光源创业者基金跟投",
+            "quote_hash": "c0fc0f5697a1a0922cd6d7375d209a5a8b83a5d34f382346cfdc31bc1c89e7a0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bad0e85dadd8f37f",
+        "funding_insight_id": "FI-a6350cc6f597f274",
+        "event_ids": [
+          "EV-34a58f84a7ba4e92"
+        ],
+        "company_entity_id": "EN-82c84d2f6490e62b",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-05e2c9bb98f48c3d",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhvzfsm1805307.shtml",
+            "source_title": "首发| 华为大牛深圳创业，MemoraX AI首轮融资千万美元_新浪财经_新浪网",
+            "source_content_hash": "46a91a57ee8cc43d",
+            "quote": "本轮由L2F光源创业者基金、钟鼎资本联合领投",
+            "quote_hash": "63226e98e46ca30c99b7604c434204dc7f3f03982fead7ffabff77ab60e87af4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f9ebbb888041d886",
+        "funding_insight_id": "FI-815e0d2563a8b10f",
+        "event_ids": [
+          "EV-9832526435c1695e"
+        ],
+        "company_entity_id": "EN-a43f157d208b2a63",
+        "company_canonical_entity_id": "",
+        "company_name": "开物纪",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-03-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d10ec9bd5ef3ad4",
+            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+            "source_content_hash": "d5d8d61ad1133bc1",
+            "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+            "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1f7074ff31f712b9",
+        "funding_insight_id": "FI-815e0d2563a8b10f",
+        "event_ids": [
+          "EV-9832526435c1695e"
+        ],
+        "company_entity_id": "EN-a43f157d208b2a63",
+        "company_canonical_entity_id": "",
+        "company_name": "开物纪",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-03-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d10ec9bd5ef3ad4",
+            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+            "source_content_hash": "d5d8d61ad1133bc1",
+            "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+            "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-853986351b6d68d9",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-28/doc-inhvzfsh8584344.shtml",
+        "source_title": "首发| 华为大牛深圳创业，MemoraX AI首轮融资千万美元_新浪科技_新浪网",
+        "source_content_hash": "7b3001b2629929ad",
+        "quote": "本轮由L2F光源创业者基金、钟鼎资本联合领投，知名投资人及产业方共同参与。",
+        "quote_hash": "e9fb39839566d2517b1b64485aa3b92724685259cd0e25f7d160f6447cfabf34"
+      },
+      {
+        "source_id": "FISRC-7c0e1d89cdf9af82",
+        "source_url": "https://news.pedaily.cn/202607/566249.shtml",
+        "source_title": "「幻码跃迁」完成数千万种子轮融资，打造量子×AI融合创新的量子计算基础设施",
+        "source_content_hash": "340f8c8784943503",
+        "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
+        "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
+      },
       {
         "source_id": "FISRC-801e27a77fec6aaf",
         "source_url": "https://www.36kr.com/p/3785834045583875",
@@ -93,6 +416,46 @@
         "source_content_hash": "60c922b0df26320d9ae634c1fcada836344995e66e0771687854d979f6335228",
         "quote": "本轮由 L2F 光源创业者基金、钟鼎资本联合领投",
         "quote_hash": "6b93b45c73568518a641dc5124b85c00d979bd7e5a22bd29a882bd2611876c4e"
+      },
+      {
+        "source_id": "FISRC-b28cfdc86e1c7c16",
+        "source_url": "https://news.pedaily.cn/202606/565533.shtml",
+        "source_title": "星熠智能完成千万级天使轮融资，专注AI人力供应链",
+        "source_content_hash": "73a5594e54d6952f",
+        "quote": "本轮融资由 浦东创投领投，L2F光源创业者基金跟投",
+        "quote_hash": "e98651ce6ff92b006e1a9e798c2f92eb719a7b59cae8361384d1eeda966f5373"
+      },
+      {
+        "source_id": "FISRC-1ac0e5821a13eba9",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-25/doc-inieqskx7805883.shtml",
+        "source_title": "星熠智能完成千万级天使轮融资",
+        "source_content_hash": "3b23636af921335c",
+        "quote": "本轮融资由浦东创投领投，L2F光源创业者基金跟投",
+        "quote_hash": "c0fc0f5697a1a0922cd6d7375d209a5a8b83a5d34f382346cfdc31bc1c89e7a0"
+      },
+      {
+        "source_id": "FISRC-05e2c9bb98f48c3d",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhvzfsm1805307.shtml",
+        "source_title": "首发| 华为大牛深圳创业，MemoraX AI首轮融资千万美元_新浪财经_新浪网",
+        "source_content_hash": "46a91a57ee8cc43d",
+        "quote": "本轮由L2F光源创业者基金、钟鼎资本联合领投",
+        "quote_hash": "63226e98e46ca30c99b7604c434204dc7f3f03982fead7ffabff77ab60e87af4"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+        "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+        "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
       }
     ]
   }

@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-0f75ab892ef76349",
+    "name": "杭州昆腾动力智能有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7c3e301d345f8c2d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-31",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-7c3e301d345f8c2d"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7c3e301d345f8c2d",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-31",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "昆腾动力完成超亿元种子轮融资，定义部署驱动的Physical AI平台",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-f1de3226b9e510ac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bf34a7871633a348",
+            "fundingInsightId": "FI-e902ce68e4943a3a"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-f1de3226b9e510ac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-660bdad541192ce0",
+            "fundingInsightId": "FI-e902ce68e4943a3a"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-f1de3226b9e510ac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b5dbbd4e5326facc",
+            "fundingInsightId": "FI-e902ce68e4943a3a"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [
+              "EN-f1de3226b9e510ac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-44bec06eca170316",
+            "fundingInsightId": "FI-e902ce68e4943a3a"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-f1de3226b9e510ac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0ec66ab561832578",
+            "fundingInsightId": "FI-e902ce68e4943a3a"
+          }
+        ],
+        "entityIds": [
+          "EN-0f75ab892ef76349",
+          "EN-f1de3226b9e510ac"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

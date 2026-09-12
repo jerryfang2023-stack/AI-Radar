@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-64fcd3125067e7",
+    "name": "特步家办",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-10",
+    "latest_disclosed_at": "2026-07-10",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-73424822d4b99926",
+        "canonical_entity_id": "",
+        "name": "深圳无界智航科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-08b5813c133d7c76",
+        "funding_insight_id": "FI-6bf1b39ebf4c63f8",
+        "event_ids": [
+          "EV-34a9773ebd5bbc97"
+        ],
+        "company_entity_id": "EN-73424822d4b99926",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳无界智航科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-07-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-086ff36dfb7673e8",
+            "source_url": "https://news.pedaily.cn/202607/566101.shtml",
+            "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
+            "source_content_hash": "d9771ea116d57f70",
+            "quote": "深圳天使母基金、水木校友种子基金等多家财务投资机构，以及北洋海棠基金、特步家办等产业方跟投",
+            "quote_hash": "54651cf92cd842b29f7774734acb91f2858e3248475b318f43f0f588873b701c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-086ff36dfb7673e8",
+        "source_url": "https://news.pedaily.cn/202607/566101.shtml",
+        "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
+        "source_content_hash": "d9771ea116d57f70",
+        "quote": "深圳天使母基金、水木校友种子基金等多家财务投资机构，以及北洋海棠基金、特步家办等产业方跟投",
+        "quote_hash": "54651cf92cd842b29f7774734acb91f2858e3248475b318f43f0f588873b701c"
+      }
+    ]
+  }
+}

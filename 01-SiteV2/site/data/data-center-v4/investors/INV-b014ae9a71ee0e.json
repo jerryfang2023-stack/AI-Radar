@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-b014ae9a71ee0e",
+    "name": "同歌创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-02-11",
+    "latest_disclosed_at": "2026-04-02",
+    "role_counts": {
+      "historical_or_ambiguous": 2
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-23e4399fe997d7eb",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+            "quote_hash": "4553aa631d5770190d24c49f7268768953bdfd2941260fabfe47653a722ad735"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bca35baea3574776",
+        "funding_insight_id": "FI-d5293ab06cfaa935",
+        "event_ids": [
+          "EV-371bc68f72326c02"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2707f48aa6e437b7",
+            "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+            "source_title": "清华90后带队，刚刚星海图又融10亿",
+            "source_content_hash": "85e4d40faa23c515",
+            "quote": "同年8月，星海图再度完成超2亿元Pre-A轮融资，由高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus及老股东跟投。",
+            "quote_hash": "e5444bec673d96fac26adbeaf60ee6448ecf4736d55fe8154e2ddcfef313da89"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+        "quote_hash": "4553aa631d5770190d24c49f7268768953bdfd2941260fabfe47653a722ad735"
+      },
+      {
+        "source_id": "FISRC-2707f48aa6e437b7",
+        "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+        "source_title": "清华90后带队，刚刚星海图又融10亿",
+        "source_content_hash": "85e4d40faa23c515",
+        "quote": "同年8月，星海图再度完成超2亿元Pre-A轮融资，由高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus及老股东跟投。",
+        "quote_hash": "e5444bec673d96fac26adbeaf60ee6448ecf4736d55fe8154e2ddcfef313da89"
+      }
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[1].role": {
+          "text": "Pre-A轮跟投",
+          "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:49.993Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

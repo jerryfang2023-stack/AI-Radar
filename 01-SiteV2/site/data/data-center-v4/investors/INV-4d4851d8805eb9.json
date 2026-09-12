@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-4d4851d8805eb9",
@@ -20,23 +20,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-06-03",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-01-29",
     "latest_disclosed_at": "2026-06-03",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "first_external"
+      "first_external",
+      "other"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-c5896393cf4ac788",
+        "canonical_entity_id": "",
+        "name": "北京长亭科技有限公司"
+      },
       {
         "entity_id": "EN-6f7ac1823da81d2e",
         "canonical_entity_id": "EN-6f7ac1823da81d2e",
@@ -83,6 +89,46 @@
             "quote_hash": "692358f6ae9886c21bf43b41537e9d36049bc1fda92e12a356b72037a421d9a8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-ac947703c398d305",
+        "funding_insight_id": "FI-1a9c2af7ff669e40",
+        "event_ids": [
+          "EV-53ffdce6405b8ba9"
+        ],
+        "company_entity_id": "EN-c5896393cf4ac788",
+        "company_canonical_entity_id": "",
+        "company_name": "北京长亭科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "政府及产业融资",
+        "amount_original": "5亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿元"
+        },
+        "announced_at": "2026-01-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4fe23845696fb5f2",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-01-29/doc-inhiyffv6659017.shtml",
+            "source_title": "长亭科技宣布完成最新一轮5亿元融资",
+            "source_content_hash": "b764c6638c521cc9",
+            "quote": "投资人包括国家人工智能产业投资基金，上海国际集团旗下国方创新，北京市人工智能产业投资基金。",
+            "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -93,6 +139,14 @@
         "source_content_hash": "1a156474d760e02b",
         "quote": "the National AI Industry Investment Fund ​¥1B as a direct equity investment",
         "quote_hash": "692358f6ae9886c21bf43b41537e9d36049bc1fda92e12a356b72037a421d9a8"
+      },
+      {
+        "source_id": "FISRC-4fe23845696fb5f2",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-01-29/doc-inhiyffv6659017.shtml",
+        "source_title": "长亭科技宣布完成最新一轮5亿元融资",
+        "source_content_hash": "b764c6638c521cc9",
+        "quote": "投资人包括国家人工智能产业投资基金，上海国际集团旗下国方创新，北京市人工智能产业投资基金。",
+        "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
       }
     ]
   }

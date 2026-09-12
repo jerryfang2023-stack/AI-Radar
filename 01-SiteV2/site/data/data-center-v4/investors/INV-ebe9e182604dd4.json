@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-ebe9e182604dd4",
@@ -20,25 +20,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-04-17",
+    "china_market_activity_count": 3,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-02-11",
+    "latest_disclosed_at": "2026-09-12",
     "role_counts": {
-      "co_lead": 2,
-      "historical_or_ambiguous": 1
+      "co_lead": 3,
+      "historical_or_ambiguous": 2
     },
     "round_codes": [
       "multi_round",
       "pre_series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-bd0658982d1f728d",
+        "canonical_entity_id": "",
+        "name": "广东天机智能系统有限公司"
+      },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -47,17 +52,107 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-48bbb63c7d8202df",
-        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "activity_id": "IA-902e64ece24d8ba2",
+        "funding_insight_id": "FI-0fff8c5cc6dfdca0",
+        "event_ids": [
+          "EV-26439e34295a0519",
+          "EV-cec68369662236fd",
+          "EV-41c54c428d84cc1e"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人科技（深圳）有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-09-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-16371607ed092d64",
+            "source_url": "https://www.qbitai.com/2026/01/369147.html",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+            "source_content_hash": "466042b9c1271f10",
+            "quote": "2025年5月12日，自变量完成数亿元A轮融资 ，由美团战投领投，美团龙珠跟投。",
+            "quote_hash": "291725af44dfe369fc3edf479c3206539ebe3163a0c510c339c655589048c043"
+          },
+          {
+            "source_id": "FISRC-449b969616ed1e95",
+            "source_url": "https://www.36kr.com/p/3636080421586182",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+            "source_content_hash": "abef77aff9b6b68f",
+            "quote": "2025年5月12日，自变量完成数亿元A轮融资 ，由美团战投领投，美团龙珠跟投。",
+            "quote_hash": "291725af44dfe369fc3edf479c3206539ebe3163a0c510c339c655589048c043"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c9f1a0952a4043b8",
+        "funding_insight_id": "FI-033dd55115963cb3",
+        "event_ids": [
+          "EV-0896f0e7b703bed2"
+        ],
+        "company_entity_id": "EN-bd0658982d1f728d",
+        "company_canonical_entity_id": "",
+        "company_name": "广东天机智能系统有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-05-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3e04e9bd8fc1ab06",
+            "source_url": "https://news.pedaily.cn/202605/564328.shtml",
+            "source_title": "天机智能完成10亿元融资，投后估值近百亿",
+            "source_content_hash": "18ebeb9db5460eb7",
+            "quote": "本轮融资由 高瓴创投、美团战投联合领投",
+            "quote_hash": "ebd970ce2a6099f680dfb58136965c172713002cf04ecbda7a0ca39a1c65d42f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ae7fca3b6545563e",
+        "funding_insight_id": "FI-b9eb4320e43ddfdf",
         "event_ids": [
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "company_name": "它石智航",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
         "amount_original": "4.55亿美金",
         "amount_normalized": {
           "currency": "USD",
@@ -127,17 +222,17 @@
         ]
       },
       {
-        "activity_id": "IA-32d49e1bae075097",
-        "funding_insight_id": "FI-15b5d99bcd808dba",
+        "activity_id": "IA-a6c88e2ff2ea84fb",
+        "funding_insight_id": "FI-d5293ab06cfaa935",
         "event_ids": [
-          "EV-cec68369662236fd"
+          "EV-371bc68f72326c02"
         ],
-        "company_entity_id": "EN-8dc72a4672894e0f",
-        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-        "company_name": "自变量机器人",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "A++轮",
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
         "amount_original": "10亿元",
         "amount_normalized": {
           "currency": "CNY",
@@ -148,26 +243,50 @@
           "status": "exact",
           "display_zh": "10 亿元"
         },
-        "announced_at": "2026-01-12",
+        "announced_at": "2026-02-11",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
-        "role": "A轮领投",
+        "role": "A5轮联合领投",
         "role_code": "historical_or_ambiguous",
         "evidence": [
           {
-            "source_id": "FISRC-a180899e2f0b58ad",
-            "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
-            "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
-            "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
-            "quote": "2025年5月获得由美团战投领投的A轮融资",
-            "quote_hash": "55a6a60f32968fbeff6c5382e3a809c8a441ff54973c3f473c01bae92c7d6d48"
+            "source_id": "FISRC-2707f48aa6e437b7",
+            "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+            "source_title": "清华90后带队，刚刚星海图又融10亿",
+            "source_content_hash": "85e4d40faa23c515",
+            "quote": "A5轮由美团龙珠、美团战投联合领投，北京机器人产业基金超额加注，亦庄国投跟投，老股东持续追投。",
+            "quote_hash": "8f2a47a84a3c10d8d2a780f399c270ef702b0247b8017d3d915350a363602f83"
           }
         ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-16371607ed092d64",
+        "source_url": "https://www.qbitai.com/2026/01/369147.html",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+        "source_content_hash": "466042b9c1271f10",
+        "quote": "2025年5月12日，自变量完成数亿元A轮融资 ，由美团战投领投，美团龙珠跟投。",
+        "quote_hash": "291725af44dfe369fc3edf479c3206539ebe3163a0c510c339c655589048c043"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "2025年5月12日，自变量完成数亿元A轮融资 ，由美团战投领投，美团龙珠跟投。",
+        "quote_hash": "291725af44dfe369fc3edf479c3206539ebe3163a0c510c339c655589048c043"
+      },
+      {
+        "source_id": "FISRC-3e04e9bd8fc1ab06",
+        "source_url": "https://news.pedaily.cn/202605/564328.shtml",
+        "source_title": "天机智能完成10亿元融资，投后估值近百亿",
+        "source_content_hash": "18ebeb9db5460eb7",
+        "quote": "本轮融资由 高瓴创投、美团战投联合领投",
+        "quote_hash": "ebd970ce2a6099f680dfb58136965c172713002cf04ecbda7a0ca39a1c65d42f"
+      },
       {
         "source_id": "FISRC-b4d6b7523ee32ad7",
         "source_url": "https://news.pedaily.cn/202604/562863.shtml",
@@ -185,12 +304,12 @@
         "quote_hash": "bb64e995f8708cef53c3d8488c01abae6c7735f25099917c12549f696dfe23c0"
       },
       {
-        "source_id": "FISRC-a180899e2f0b58ad",
-        "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
-        "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
-        "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
-        "quote": "2025年5月获得由美团战投领投的A轮融资",
-        "quote_hash": "55a6a60f32968fbeff6c5382e3a809c8a441ff54973c3f473c01bae92c7d6d48"
+        "source_id": "FISRC-2707f48aa6e437b7",
+        "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+        "source_title": "清华90后带队，刚刚星海图又融10亿",
+        "source_content_hash": "85e4d40faa23c515",
+        "quote": "A5轮由美团龙珠、美团战投联合领投，北京机器人产业基金超额加注，亦庄国投跟投，老股东持续追投。",
+        "quote_hash": "8f2a47a84a3c10d8d2a780f399c270ef702b0247b8017d3d915350a363602f83"
       }
     ]
   }

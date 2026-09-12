@@ -1703,6 +1703,28 @@ test("accepted Chinese funding Claim corrects a descriptive subject to the legal
   assert.ok(company?.aliases?.includes("AI智能体基础设施公司“以太之心”"));
 });
 
+test("normalization restores previously unsupported plus rounds from stored original evidence", () => {
+  const card = validCard();
+  card.financing.round = "其他融资";
+  card.financing.round_code = "other";
+  card.financing.round_original = "A++轮";
+  assert.equal(normalizeFundingInsightCard(card).financing.round, "A++轮");
+  card.financing.round = "B轮";
+  card.financing.round_code = "series_b";
+  assert.equal(normalizeFundingInsightCard(card).financing.round, "B轮");
+});
+
+test("a descriptive founder headline resolves only a uniquely named accepted recipient", () => {
+  const entity = { entity_id: "EN-founder", entity_type: "organization_candidate", canonical_name: "哈工程教授创业，天使轮" };
+  const claim = { claim_id: "CL-founder", claim_type: "funding", verification_status: "accepted", subject: entity.canonical_name,
+    source_quote: "哈工程教授创业，天使轮融资亿元，做水下机器人｜2024年郭春雨创办工至海洋，造仿生水下机器人。" };
+  const event = { entities: [entity.entity_id], claim_refs: [claim.claim_id], display_title_zh: claim.source_quote };
+  assert.equal(subjectCompanyForEvent(event, [entity], {}, [claim]).canonical_name, "工至海洋");
+  for (const update of [{ verification_status: "pending" }, { source_quote: `${claim.source_quote}他也创办另一公司，曾获投资。` }, { source_quote: `${claim.source_quote}投资方领投本轮。` }]) {
+    assert.notEqual(subjectCompanyForEvent(event, [entity], {}, [{ ...claim, ...update }])?.canonical_name, "工至海洋");
+  }
+});
+
 test("Chinese funding titles resolve the company entity instead of a headline fragment", () => {
   const cases = [
     {

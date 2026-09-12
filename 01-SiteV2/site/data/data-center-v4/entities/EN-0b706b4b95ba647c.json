@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "entity": {
     "id": "EN-0b706b4b95ba647c",
@@ -28,14 +28,10 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [
-      "EN-f2cf4184889d43bb"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-19",
     "lastSeen": "2026-07-20",
-    "relationIds": [
-      "REL2-2fb7b448b8d07ab4"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -80,53 +76,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-f2cf4184889d43bb",
-      "name": "Enflame",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "燧原科技"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5056b2f94d188dd6"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-0b706b4b95ba647c"
-      ],
-      "firstSeen": "2026-09-11",
-      "lastSeen": "2026-09-12"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-2fb7b448b8d07ab4",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-f2cf4184889d43bb",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-0b706b4b95ba647c",
-      "object_type": "entity",
-      "event_id": "EV-218c2f6ecf3c369f",
-      "claim_refs": [
-        "CL-bef992849f6c8110",
-        "CL-4acaacad906c6cc7",
-        "CL-23db5f68b34959d3"
-      ],
-      "source_refs": [
-        "SA-0729ccc28efa48d9"
-      ],
-      "data_date": "2026-07-20",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [

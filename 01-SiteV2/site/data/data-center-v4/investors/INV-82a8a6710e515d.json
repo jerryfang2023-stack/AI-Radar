@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-82a8a6710e515d",
+    "name": "英诺天使",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-04-29",
+    "latest_disclosed_at": "2026-06-23",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-09afdeb63bb109fc",
+        "canonical_entity_id": "",
+        "name": "智子芯元(深圳)科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-3b37aceea67ece5b",
+        "funding_insight_id": "FI-a3033e661b23b30e",
+        "event_ids": [
+          "EV-92d6132ee2a3505a"
+        ],
+        "company_entity_id": "EN-fcc9af8dc8c25167",
+        "company_canonical_entity_id": "",
+        "company_name": "智子芯元（深圳）科技有限责任公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-31d9f2f1a48dfdc8",
+            "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
+            "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
+            "source_content_hash": "d6e545bc49396418",
+            "quote": "老股东英诺天使与松禾资本超额跟投",
+            "quote_hash": "716e29ccdb171ae092066acfb5d46243c59cdcd03da5f444264416cde69e2c6c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-29d54bcfc5c56015",
+        "funding_insight_id": "FI-cc917301b3cfdfc0",
+        "event_ids": [
+          "EV-3c75e8ce83d89604"
+        ],
+        "company_entity_id": "EN-09afdeb63bb109fc",
+        "company_canonical_entity_id": "",
+        "company_name": "智子芯元(深圳)科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮数千万元融资",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-04-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-99af5f038476e2fe",
+            "source_url": "http://city.sina.com.cn/news/2026-04-29/detail-inhwczph6704322.shtml",
+            "source_title": "从“有算力”到“用好算力”，智子芯元完成新一轮数千万元融资",
+            "source_content_hash": "515f0a87fd485b25",
+            "quote": "本轮融资由同创伟业、钧山资本、英诺天使、松禾资本共同参与。",
+            "quote_hash": "64e4bc61fd7f4a5db29a0372e26114b1c6efe9476ea1bfd24435644655fce9f4"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-31d9f2f1a48dfdc8",
+        "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
+        "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
+        "source_content_hash": "d6e545bc49396418",
+        "quote": "老股东英诺天使与松禾资本超额跟投",
+        "quote_hash": "716e29ccdb171ae092066acfb5d46243c59cdcd03da5f444264416cde69e2c6c"
+      },
+      {
+        "source_id": "FISRC-99af5f038476e2fe",
+        "source_url": "http://city.sina.com.cn/news/2026-04-29/detail-inhwczph6704322.shtml",
+        "source_title": "从“有算力”到“用好算力”，智子芯元完成新一轮数千万元融资",
+        "source_content_hash": "515f0a87fd485b25",
+        "quote": "本轮融资由同创伟业、钧山资本、英诺天使、松禾资本共同参与。",
+        "quote_hash": "64e4bc61fd7f4a5db29a0372e26114b1c6efe9476ea1bfd24435644655fce9f4"
+      }
+    ]
+  }
+}

@@ -20961,14 +20961,7 @@
       "amount_hint": "3000万人民币",
       "index_url": "https://vc.pedaily.cn/invest/f2760-p30",
       "status": "discovered",
-      "original_candidates": [
-        {
-          "url": "https://36kr.com/p/1720934432769",
-          "title": "【独家】“启信宝”获3000万融资，或成企业信用查询行业独角兽-36氪",
-          "date_hint": "",
-          "discovery": "targeted_secondary_search"
-        }
-      ],
+      "original_candidates": [],
       "evidence_status": "discovery_only_not_canonical",
       "discovery_status": "collected",
       "discovery_error": "",
@@ -20985,7 +20978,20 @@
           "status": "collected",
           "checkpoint": "agent-workflow/reports/china-funding-history/2026-01-01_2026-09-12/case-searches/c9137465e97fada3f728.json"
         }
-      ]
+      ],
+      "secondary_review": {
+        "reviewed_at": "2026-09-12T09:50:22.018Z",
+        "status": "original_unresolved",
+        "reason": "二次检索返回启信宝旧融资报道，无法证明索引所列2026-01-19启世信息A轮；不采作该事件原文。",
+        "rejected_candidates": [
+          {
+            "url": "https://36kr.com/p/1720934432769",
+            "title": "【独家】“启信宝”获3000万融资，或成企业信用查询行业独角兽-36氪",
+            "date_hint": "",
+            "discovery": "targeted_secondary_search"
+          }
+        ]
+      }
     },
     {
       "case_id": "CNH-6fcaa8fc255a143368e5",
@@ -23457,14 +23463,7 @@
       "amount_hint": "近千万人民币",
       "index_url": "https://vc.pedaily.cn/invest/f2760-p33",
       "status": "discovered",
-      "original_candidates": [
-        {
-          "url": "https://m.36kr.com/p/3736614731694082",
-          "title": "高瓴领投，产投、家办出手，「宇石空间」完成2亿元Pre-A+轮融资｜36氪首发-36氪",
-          "date_hint": "",
-          "discovery": "targeted_secondary_search"
-        }
-      ],
+      "original_candidates": [],
       "evidence_status": "discovery_only_not_canonical",
       "discovery_status": "collected",
       "discovery_error": "",
@@ -23481,7 +23480,20 @@
           "status": "collected",
           "checkpoint": "agent-workflow/reports/china-funding-history/2026-01-01_2026-09-12/case-searches/dedcacc0782fa5263ceb.json"
         }
-      ]
+      ],
+      "secondary_review": {
+        "reviewed_at": "2026-09-12T09:50:22.019Z",
+        "status": "original_unresolved",
+        "reason": "二次检索返回宇石空间融资，主体与火星登陆不符；不采作该事件原文。",
+        "rejected_candidates": [
+          {
+            "url": "https://m.36kr.com/p/3736614731694082",
+            "title": "高瓴领投，产投、家办出手，「宇石空间」完成2亿元Pre-A+轮融资｜36氪首发-36氪",
+            "date_hint": "",
+            "discovery": "targeted_secondary_search"
+          }
+        ]
+      }
     },
     {
       "case_id": "CNH-ce002a967c8c48d8847c",

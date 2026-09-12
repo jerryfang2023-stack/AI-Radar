@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-bce0dd857d6c24b4",
+    "name": "初创企业上海密瓜智能科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-60d94c0d990d04ca"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-01-06",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-60d94c0d990d04ca"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-60d94c0d990d04ca",
+        "dataDate": "2026-09-12",
+        "date": "2026-01-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "密瓜智能获数千万元天使轮融资，复星创富领投",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-a7f65fe198e0bd2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-01d09a31a5329e92",
+            "fundingInsightId": "FI-48bce6395acaf08a"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-a7f65fe198e0bd2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-131a58d580e9d639",
+            "fundingInsightId": "FI-48bce6395acaf08a"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-a7f65fe198e0bd2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-992a0ee87cc34c03",
+            "fundingInsightId": "FI-48bce6395acaf08a"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-a7f65fe198e0bd2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-54badc099844d627",
+            "fundingInsightId": "FI-48bce6395acaf08a"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-a7f65fe198e0bd2c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2155969023bccc68",
+            "fundingInsightId": "FI-48bce6395acaf08a"
+          }
+        ],
+        "entityIds": [
+          "EN-bce0dd857d6c24b4",
+          "EN-a7f65fe198e0bd2c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

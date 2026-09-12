@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-6e93891258f67b17",
+    "name": "在近三个月内",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e51643edc7bec259"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-23",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-e51643edc7bec259"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-e51643edc7bec259",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-23",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "智象未来完成15亿元C轮融资，三个月融三轮",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-3f0cfc0d9c60b562"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-af98da4349c78479",
+            "fundingInsightId": "FI-3bdb0c78d40cd457"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-3f0cfc0d9c60b562"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1bcb4e714a443c68",
+            "fundingInsightId": "FI-3bdb0c78d40cd457"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-3f0cfc0d9c60b562"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7b3cc9b5ab767e9c",
+            "fundingInsightId": "FI-3bdb0c78d40cd457"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-3f0cfc0d9c60b562"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0ce46ddad7545913",
+            "fundingInsightId": "FI-3bdb0c78d40cd457"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-3f0cfc0d9c60b562"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2608aab8aa84e0fa",
+            "fundingInsightId": "FI-3bdb0c78d40cd457"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-3f0cfc0d9c60b562"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-3f0cfc0d9c60b562"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fb936f554168d164",
+            "fundingInsightId": "FI-3bdb0c78d40cd457"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-3f0cfc0d9c60b562"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1629729cad92cce2",
+            "fundingInsightId": "FI-3bdb0c78d40cd457"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-3f0cfc0d9c60b562"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-27365c6e5ab14aa9",
+            "fundingInsightId": "FI-3bdb0c78d40cd457"
+          }
+        ],
+        "entityIds": [
+          "EN-3f0cfc0d9c60b562",
+          "EN-6e93891258f67b17"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

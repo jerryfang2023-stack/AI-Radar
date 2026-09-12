@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-73fcb06c14569e",
+    "name": "小即是大创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-11",
+    "latest_disclosed_at": "2026-09-11",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-3b07d7518a8133fa",
+        "canonical_entity_id": "",
+        "name": "苏州工至海洋装备科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6e0c41033f9b9a30",
+        "funding_insight_id": "FI-5a53c657c45faf9b",
+        "event_ids": [
+          "EV-b91024c06d8762a4"
+        ],
+        "company_entity_id": "EN-3b07d7518a8133fa",
+        "company_canonical_entity_id": "",
+        "company_name": "苏州工至海洋装备科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-09-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-74c8dd452bd30dd9",
+            "source_url": "https://www.lejucaijing.com/news-7501446247908832762.html",
+            "source_title": "工至海洋完成近亿元天使轮融资：聚焦水下机器人，创始人郭春雨为哈工程教授-乐居财经",
+            "source_content_hash": "a88f421da12a2fde",
+            "quote": "本轮融资由隐峰资本领投，中新智地、哈工程资管、力合金融、小即是大创投等机构参与投资。",
+            "quote_hash": "9f6429e0c57a3c1fe91a0c88f08ec9d68556b223aa22b6d281bc24080a44522a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-74c8dd452bd30dd9",
+        "source_url": "https://www.lejucaijing.com/news-7501446247908832762.html",
+        "source_title": "工至海洋完成近亿元天使轮融资：聚焦水下机器人，创始人郭春雨为哈工程教授-乐居财经",
+        "source_content_hash": "a88f421da12a2fde",
+        "quote": "本轮融资由隐峰资本领投，中新智地、哈工程资管、力合金融、小即是大创投等机构参与投资。",
+        "quote_hash": "9f6429e0c57a3c1fe91a0c88f08ec9d68556b223aa22b6d281bc24080a44522a"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-f08f84bb32f4d6",
+    "name": "建研院控股子公司",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-14",
+    "latest_disclosed_at": "2026-05-14",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ccc2bd5e43d9ab2b",
+        "canonical_entity_id": "",
+        "name": "上海复鞍智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-74e0e71113a16f85",
+        "funding_insight_id": "FI-39ec2442585e45b6",
+        "event_ids": [
+          "EV-0e1edf873779be1d"
+        ],
+        "company_entity_id": "EN-ccc2bd5e43d9ab2b",
+        "company_canonical_entity_id": "",
+        "company_name": "上海复鞍智能科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-55041228ee583f8a",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwenh8729004.shtml",
+            "source_title": "「复鞍智能」完成种子轮融资，AI4S重塑物质科学研发范式",
+            "source_content_hash": "0ccbefed99e236b4",
+            "quote": "建研院 （SH.603183）控股子公司跟投",
+            "quote_hash": "e8a49a0a9a091c3c79dc79a9351d2dca389f555e73bb00aaa967140f2eeeb56e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-55041228ee583f8a",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwenh8729004.shtml",
+        "source_title": "「复鞍智能」完成种子轮融资，AI4S重塑物质科学研发范式",
+        "source_content_hash": "0ccbefed99e236b4",
+        "quote": "建研院 （SH.603183）控股子公司跟投",
+        "quote_hash": "e8a49a0a9a091c3c79dc79a9351d2dca389f555e73bb00aaa967140f2eeeb56e"
+      }
+    ]
+  }
+}

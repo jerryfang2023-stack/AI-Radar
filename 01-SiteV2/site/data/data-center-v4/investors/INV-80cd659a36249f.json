@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-80cd659a36249f",
@@ -34,65 +34,66 @@
       "participant": 1
     },
     "round_codes": [
-      "other"
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-847c00c904ccdb98",
-        "canonical_entity_id": "",
+        "entity_id": "EN-37ad0de3969166fa",
+        "canonical_entity_id": "EN-37ad0de3969166fa",
         "name": "西湖心辰（杭州）科技有限公司"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-10e1c8344d530c40",
-        "funding_insight_id": "FI-07a58b1fe051182a",
+        "activity_id": "IA-dff77098b9238c81",
+        "funding_insight_id": "FI-057188417b7e7728",
         "event_ids": [
-          "EV-88a984b765bb54f1"
+          "EV-88a984b765bb54f1",
+          "EV-775bae399bcf79d2"
         ],
-        "company_entity_id": "EN-847c00c904ccdb98",
-        "company_canonical_entity_id": "",
+        "company_entity_id": "EN-37ad0de3969166fa",
+        "company_canonical_entity_id": "EN-37ad0de3969166fa",
         "company_name": "西湖心辰（杭州）科技有限公司",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "数亿元人民币",
         "amount_normalized": {
-          "currency": "",
+          "currency": "CNY",
           "value": null,
-          "min_value": null,
-          "max_value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
           "unit": "base",
-          "status": "unparsed",
-          "display_zh": "数亿元人民币"
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
         },
         "announced_at": "2026-08-03",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
+        "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-e5bf01aa7128608b",
-            "source_url": "https://www.readaitime.com/news/2026-08-03/kqp84yfa",
-            "source_title": "西湖心辰完成数亿元B+轮融资，蚂蚁系创始人领衔扩散模型创业",
-            "source_content_hash": "923410e5f5a09ac02320e57a06622b29e4c6fea066238ffa5e9d1b0a116df52e",
-            "quote": "西湖创新投、武汉江豚基金、容亿投资、南通投管 等机构跟投",
-            "quote_hash": "a423c051458137110d577d2851695029866eb125ac6f3ebefa8fe6820e5ef9d7"
+            "source_id": "FISRC-312cccaedbeb2478",
+            "source_url": "https://news.pedaily.cn/202608/567151.shtml",
+            "source_title": "大模型公司西湖心辰完成B+轮数亿元融资",
+            "source_content_hash": "04e62dc8a14bfb33",
+            "quote": "由广发信德领投，西湖创新投、武汉江豚基金、容亿投资、南通投管等多家机构跟投，58产业基金等产业资本参与，老股东蚂蚁集团、汤姆猫提供全面支持",
+            "quote_hash": "17ba19f965e577d2806b3596f71f9cdb2027edf1a97eca6e3322fd2145858f65"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-e5bf01aa7128608b",
-        "source_url": "https://www.readaitime.com/news/2026-08-03/kqp84yfa",
-        "source_title": "西湖心辰完成数亿元B+轮融资，蚂蚁系创始人领衔扩散模型创业",
-        "source_content_hash": "923410e5f5a09ac02320e57a06622b29e4c6fea066238ffa5e9d1b0a116df52e",
-        "quote": "西湖创新投、武汉江豚基金、容亿投资、南通投管 等机构跟投",
-        "quote_hash": "a423c051458137110d577d2851695029866eb125ac6f3ebefa8fe6820e5ef9d7"
+        "source_id": "FISRC-312cccaedbeb2478",
+        "source_url": "https://news.pedaily.cn/202608/567151.shtml",
+        "source_title": "大模型公司西湖心辰完成B+轮数亿元融资",
+        "source_content_hash": "04e62dc8a14bfb33",
+        "quote": "由广发信德领投，西湖创新投、武汉江豚基金、容亿投资、南通投管等多家机构跟投，58产业基金等产业资本参与，老股东蚂蚁集团、汤姆猫提供全面支持",
+        "quote_hash": "17ba19f965e577d2806b3596f71f9cdb2027edf1a97eca6e3322fd2145858f65"
       }
     ]
   }

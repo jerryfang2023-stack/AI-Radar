@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-a828fd66816a3d",
+    "name": "中科融合创新加速器",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-06-30",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-460da0a03f1fdbb8",
+        "funding_insight_id": "FI-6eb4d41cef37e680",
+        "event_ids": [
+          "EV-11c8183c180e4b97"
+        ],
+        "company_entity_id": "EN-6749a84e188b9301",
+        "company_canonical_entity_id": "",
+        "company_name": "北京中科煜坤科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "千万元级人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-06-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "孵化方，表示将继续发挥孵化作用，通过追加投资、产业资源链接和场景协同支持公司",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-88fa6d3c9d641f6e",
+            "source_url": "https://news.pedaily.cn/202606/565681.shtml",
+            "source_title": "中科煜坤完成千万元级种子轮融资，北京顺禧基金独家投资",
+            "source_content_hash": "7c7cac656140a0bd",
+            "quote": "中科融合创新加速器将继续发挥孵化作用，通过追加投资、产业资源链接和场景协同，支持中科煜坤加快产品化进程",
+            "quote_hash": "c47f42409866711881db3240bf9d63917f871585a465e941496ca3c3b3611647"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-88fa6d3c9d641f6e",
+        "source_url": "https://news.pedaily.cn/202606/565681.shtml",
+        "source_title": "中科煜坤完成千万元级种子轮融资，北京顺禧基金独家投资",
+        "source_content_hash": "7c7cac656140a0bd",
+        "quote": "中科融合创新加速器将继续发挥孵化作用，通过追加投资、产业资源链接和场景协同，支持中科煜坤加快产品化进程",
+        "quote_hash": "c47f42409866711881db3240bf9d63917f871585a465e941496ca3c3b3611647"
+      }
+    ]
+  }
+}

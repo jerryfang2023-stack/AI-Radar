@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-2a2771718160de",
+    "name": "赛富投资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-06-26",
+    "latest_disclosed_at": "2026-06-26",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-e3109041db10e15e",
+        "funding_insight_id": "FI-2a47fffabd6bfe6b",
+        "event_ids": [
+          "EV-88158ddf272e4731"
+        ],
+        "company_entity_id": "EN-f0a77f08b0db14ab",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳欧拉万象科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超过亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-06-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-62bfb7c7dd37177e",
+            "source_url": "https://www.163.com/dy/article/KUTU3HNL05118HJE.html",
+            "source_title": "家庭具身智能产品研发商欧拉万象完成超亿元天使轮融资|创投|风投_网易订阅",
+            "source_content_hash": "1504db64e6fbe2f3",
+            "quote": "5月该公司完成数亿元融资，由招商局创投领投，赛富投资、九合创投、拙朴投资、百度风投（BV）、聚合投资等联合投资。",
+            "quote_hash": "4ccd9855d3f084756e70a0931c0b6ef98ff6fa69d7984f565a57d23f9b436ed5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-62bfb7c7dd37177e",
+        "source_url": "https://www.163.com/dy/article/KUTU3HNL05118HJE.html",
+        "source_title": "家庭具身智能产品研发商欧拉万象完成超亿元天使轮融资|创投|风投_网易订阅",
+        "source_content_hash": "1504db64e6fbe2f3",
+        "quote": "5月该公司完成数亿元融资，由招商局创投领投，赛富投资、九合创投、拙朴投资、百度风投（BV）、聚合投资等联合投资。",
+        "quote_hash": "4ccd9855d3f084756e70a0931c0b6ef98ff6fa69d7984f565a57d23f9b436ed5"
+      }
+    ]
+  }
+}

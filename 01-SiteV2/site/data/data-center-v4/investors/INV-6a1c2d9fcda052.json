@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-6a1c2d9fcda052",
+    "name": "元禾重元",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-04-27",
+    "latest_disclosed_at": "2026-08-24",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a675d46aba3c7e48",
+        "canonical_entity_id": "",
+        "name": "北京中数睿智科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-60256deca37de744",
+        "funding_insight_id": "FI-c30743074ff47419",
+        "event_ids": [
+          "EV-07d112b2a4c980d2"
+        ],
+        "company_entity_id": "EN-8eacc6bab17d7e7f",
+        "company_canonical_entity_id": "",
+        "company_name": "北京中数睿智科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d2d4022c60030f2",
+            "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+            "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+            "source_content_hash": "fd43c36630768ac3",
+            "quote": "中数睿智又完成亿元级别的B轮融资，由清控金信资本、元禾重元和尚贤湖基金联合领投、粤高速跟投，老股东鼎晖VGC持续加注。",
+            "quote_hash": "cf4e632f52907690a10840ae2cdf52eee7b966325bf9e4564a2881a9fda0887f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7ee13c3a047e74fe",
+        "funding_insight_id": "FI-4b888f8e02ba6a7c",
+        "event_ids": [
+          "EV-ac5e33e067906a6d"
+        ],
+        "company_entity_id": "EN-a675d46aba3c7e48",
+        "company_canonical_entity_id": "",
+        "company_name": "北京中数睿智科技有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "亿元级别",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-04-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e3f8848c3da57441",
+            "source_url": "http://www.news.cn/tech/20260427/34e2c8e0b5c44c13a29d21a1465bb0dd/c.html",
+            "source_title": "亿元B轮加持，鼎晖持续加码｜中数睿智锚定智能体操作系统黄金赛道-新华网",
+            "source_content_hash": "07888d00dec640cb",
+            "quote": "本轮由清控金信资本、元禾重元和尚贤湖基金联合领投，老股东鼎晖VGC持续加注。",
+            "quote_hash": "e24fbdb346e2449b55ed9344c4244ad88f705cdb5b7a5187cd78fe2945b21cbb"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9d2d4022c60030f2",
+        "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+        "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+        "source_content_hash": "fd43c36630768ac3",
+        "quote": "中数睿智又完成亿元级别的B轮融资，由清控金信资本、元禾重元和尚贤湖基金联合领投、粤高速跟投，老股东鼎晖VGC持续加注。",
+        "quote_hash": "cf4e632f52907690a10840ae2cdf52eee7b966325bf9e4564a2881a9fda0887f"
+      },
+      {
+        "source_id": "FISRC-e3f8848c3da57441",
+        "source_url": "http://www.news.cn/tech/20260427/34e2c8e0b5c44c13a29d21a1465bb0dd/c.html",
+        "source_title": "亿元B轮加持，鼎晖持续加码｜中数睿智锚定智能体操作系统黄金赛道-新华网",
+        "source_content_hash": "07888d00dec640cb",
+        "quote": "本轮由清控金信资本、元禾重元和尚贤湖基金联合领投，老股东鼎晖VGC持续加注。",
+        "quote_hash": "e24fbdb346e2449b55ed9344c4244ad88f705cdb5b7a5187cd78fe2945b21cbb"
+      }
+    ]
+  }
+}

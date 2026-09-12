@@ -1,0 +1,718 @@
+{
+  "reviewed_at": "2026-09-12T09:39:06.181Z",
+  "changes": [
+    {
+      "file": "2026-06-09.json",
+      "id": "FI-1186b430ba0e878a",
+      "event": "EV-c5d7d88d1aef8edb",
+      "company": "Moonshot AI",
+      "action": "normalize_existing_evidence",
+      "problems": [
+        "historical_investor_in_current_round"
+      ],
+      "before": {
+        "round": "轮次未披露",
+        "amount": "约20亿美元",
+        "investors": [
+          {
+            "name": "美团龙珠",
+            "role": "本轮领投；A轮参投"
+          },
+          {
+            "name": "水木资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "中国移动",
+            "role": "本轮参投"
+          },
+          {
+            "name": "CPE（中信产业基金）",
+            "role": "本轮参投"
+          },
+          {
+            "name": "小红书",
+            "role": "A+轮参投"
+          },
+          {
+            "name": "美团",
+            "role": "A+轮参投"
+          }
+        ]
+      },
+      "after": {
+        "round": "轮次未披露",
+        "amount": "约20亿美元",
+        "investors": [
+          {
+            "name": "美团龙珠",
+            "role": "本轮领投；A轮参投"
+          },
+          {
+            "name": "水木资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "中国移动",
+            "role": "本轮参投"
+          },
+          {
+            "name": "CPE（中信产业基金）",
+            "role": "本轮参投"
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-08-03.json",
+      "id": "FI-601cf2f3207424d6",
+      "event": "EV-435d7e7878b0c326",
+      "company": "星海图",
+      "action": "normalize_existing_evidence",
+      "problems": [
+        "funding_round_not_normalized"
+      ],
+      "before": {
+        "round": "其他融资",
+        "amount": "20亿元",
+        "investors": [
+          {
+            "name": "华登科技",
+            "role": "本轮参投"
+          },
+          {
+            "name": "蓝思科技",
+            "role": "本轮参投"
+          },
+          {
+            "name": "矽芯投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "时代伯乐",
+            "role": "本轮参投"
+          },
+          {
+            "name": "航发基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "修远资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "弘章投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "御海资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "金融街资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "金浦投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "北京科创",
+            "role": "本轮参投"
+          },
+          {
+            "name": "国元股权",
+            "role": "本轮参投"
+          },
+          {
+            "name": "上城资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "中金资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "普华资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "洪泰基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "广发乾",
+            "role": "本轮参投"
+          }
+        ]
+      },
+      "after": {
+        "round": "B+轮",
+        "amount": "20亿元",
+        "investors": [
+          {
+            "name": "华登科技",
+            "role": "本轮参投"
+          },
+          {
+            "name": "蓝思科技",
+            "role": "本轮参投"
+          },
+          {
+            "name": "矽芯投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "时代伯乐",
+            "role": "本轮参投"
+          },
+          {
+            "name": "航发基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "修远资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "弘章投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "御海资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "金融街资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "金浦投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "北京科创",
+            "role": "本轮参投"
+          },
+          {
+            "name": "国元股权",
+            "role": "本轮参投"
+          },
+          {
+            "name": "上城资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "中金资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "普华资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "洪泰基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "广发乾",
+            "role": "本轮参投"
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-08-03.json",
+      "id": "FI-015dfc42087380a4",
+      "event": "EV-535c2f4fb851332d",
+      "company": "北京生数科技有限公司",
+      "action": "normalize_existing_evidence",
+      "problems": [
+        "funding_round_not_normalized"
+      ],
+      "before": {
+        "round": "其他融资",
+        "amount": "超过6亿元人民币",
+        "investors": [
+          {
+            "name": "中关村科学城公司",
+            "role": "本轮领投"
+          },
+          {
+            "name": "星连资本",
+            "role": "本轮领投"
+          },
+          {
+            "name": "万兴科技",
+            "role": "本轮参投"
+          },
+          {
+            "name": "视觉中国",
+            "role": "本轮参投"
+          },
+          {
+            "name": "拓尔思",
+            "role": "本轮参投"
+          },
+          {
+            "name": "启明创投",
+            "role": "本轮参投"
+          },
+          {
+            "name": "北京市人工智能产业投资基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "卓源亚洲",
+            "role": "本轮参投"
+          },
+          {
+            "name": "建发新兴投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "淮海投资",
+            "role": "本轮参投"
+          }
+        ]
+      },
+      "after": {
+        "round": "A+轮",
+        "amount": "超过6亿元人民币",
+        "investors": [
+          {
+            "name": "中关村科学城公司",
+            "role": "本轮领投"
+          },
+          {
+            "name": "星连资本",
+            "role": "本轮领投"
+          },
+          {
+            "name": "万兴科技",
+            "role": "本轮参投"
+          },
+          {
+            "name": "视觉中国",
+            "role": "本轮参投"
+          },
+          {
+            "name": "拓尔思",
+            "role": "本轮参投"
+          },
+          {
+            "name": "启明创投",
+            "role": "本轮参投"
+          },
+          {
+            "name": "北京市人工智能产业投资基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "卓源亚洲",
+            "role": "本轮参投"
+          },
+          {
+            "name": "建发新兴投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "淮海投资",
+            "role": "本轮参投"
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-08-03.json",
+      "id": "FI-08e798f440d06eda",
+      "event": "EV-88a984b765bb54f1",
+      "company": "西湖心辰（杭州）科技有限公司",
+      "action": "normalize_existing_evidence",
+      "problems": [
+        "funding_round_not_normalized",
+        "funding_amount_not_normalized"
+      ],
+      "before": {
+        "round": "其他融资",
+        "amount": "数亿元人民币",
+        "investors": [
+          {
+            "name": "广发信德",
+            "role": "本轮领投"
+          },
+          {
+            "name": "西湖创新投",
+            "role": "本轮参投"
+          },
+          {
+            "name": "武汉江豚基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "容亿投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "南通投管",
+            "role": "本轮参投"
+          },
+          {
+            "name": "58产业基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "蚂蚁集团",
+            "role": "本轮参投"
+          },
+          {
+            "name": "汤姆猫",
+            "role": "本轮参投"
+          }
+        ]
+      },
+      "after": {
+        "round": "B+轮",
+        "amount": "数亿元人民币",
+        "investors": [
+          {
+            "name": "广发信德",
+            "role": "本轮领投"
+          },
+          {
+            "name": "西湖创新投",
+            "role": "本轮参投"
+          },
+          {
+            "name": "武汉江豚基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "容亿投资",
+            "role": "本轮参投"
+          },
+          {
+            "name": "南通投管",
+            "role": "本轮参投"
+          },
+          {
+            "name": "58产业基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "蚂蚁集团",
+            "role": "本轮参投"
+          },
+          {
+            "name": "汤姆猫",
+            "role": "本轮参投"
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-08-03.json",
+      "id": "FI-ca07008ee604703d",
+      "event": "EV-be59d9048dd1b6a0",
+      "company": "北京小雨智造科技有限公司",
+      "action": "normalize_existing_evidence",
+      "problems": [
+        "funding_round_not_normalized"
+      ],
+      "before": {
+        "round": "其他融资",
+        "amount": "数亿元",
+        "investors": [
+          {
+            "name": "北汽产投",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "复星锐正",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "建发新兴",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "华业天成",
+            "role": "本轮参投"
+          },
+          {
+            "name": "贵州科创天使基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "滴滴",
+            "role": "本轮参投"
+          },
+          {
+            "name": "黎万强",
+            "role": "本轮参投"
+          }
+        ]
+      },
+      "after": {
+        "round": "B+轮",
+        "amount": "数亿元",
+        "investors": [
+          {
+            "name": "北汽产投",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "复星锐正",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "建发新兴",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "华业天成",
+            "role": "本轮参投"
+          },
+          {
+            "name": "贵州科创天使基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "滴滴",
+            "role": "本轮参投"
+          },
+          {
+            "name": "黎万强",
+            "role": "本轮参投"
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-08-03.json",
+      "id": "FI-09d0d946c9b056dd",
+      "event": "EV-60d58e2a1f5733f8",
+      "company": "千寻智能",
+      "action": "normalize_existing_evidence",
+      "problems": [
+        "funding_round_not_normalized"
+      ],
+      "before": {
+        "round": "其他融资",
+        "amount": "10亿元",
+        "investors": [
+          {
+            "name": "顺为资本",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "云锋基金",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "达晨财智",
+            "role": "本轮参投"
+          },
+          {
+            "name": "银河源汇",
+            "role": "本轮参投"
+          },
+          {
+            "name": "图灵基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "新鼎资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "庚辛资本",
+            "role": "本轮参投"
+          }
+        ]
+      },
+      "after": {
+        "round": "A+轮",
+        "amount": "10亿元",
+        "investors": [
+          {
+            "name": "顺为资本",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "云锋基金",
+            "role": "本轮联合领投"
+          },
+          {
+            "name": "达晨财智",
+            "role": "本轮参投"
+          },
+          {
+            "name": "银河源汇",
+            "role": "本轮参投"
+          },
+          {
+            "name": "图灵基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "新鼎资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "庚辛资本",
+            "role": "本轮参投"
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-08-03.json",
+      "id": "FI-567a6b518e3e5624",
+      "event": "EV-cec68369662236fd",
+      "company": "自变量机器人",
+      "action": "normalize_existing_evidence",
+      "problems": [
+        "funding_round_not_normalized"
+      ],
+      "before": {
+        "round": "其他融资",
+        "amount": "10亿元",
+        "investors": [
+          {
+            "name": "字节跳动",
+            "role": "本轮领投"
+          },
+          {
+            "name": "红杉中国",
+            "role": "本轮参投"
+          },
+          {
+            "name": "北京信息产业发展基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "深创投",
+            "role": "本轮参投"
+          },
+          {
+            "name": "南山战新投",
+            "role": "本轮参投"
+          },
+          {
+            "name": "锡创投",
+            "role": "本轮参投"
+          }
+        ]
+      },
+      "after": {
+        "round": "A++轮",
+        "amount": "10亿元",
+        "investors": [
+          {
+            "name": "字节跳动",
+            "role": "本轮领投"
+          },
+          {
+            "name": "红杉中国",
+            "role": "本轮参投"
+          },
+          {
+            "name": "北京信息产业发展基金",
+            "role": "本轮参投"
+          },
+          {
+            "name": "深创投",
+            "role": "本轮参投"
+          },
+          {
+            "name": "南山战新投",
+            "role": "本轮参投"
+          },
+          {
+            "name": "锡创投",
+            "role": "本轮参投"
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-08-14.json",
+      "id": "FI-954a5b556c0c4bfb",
+      "event": "EV-1765fd690cff1cac",
+      "company": "元点科技（SCALEFORCE）",
+      "action": "normalize_existing_evidence",
+      "problems": [
+        "funding_total_raised_not_normalized"
+      ],
+      "before": {
+        "round": "基础设施融资",
+        "amount": "数千万",
+        "investors": [
+          {
+            "name": "国内顶级具身智能产业方",
+            "role": "本轮参投"
+          },
+          {
+            "name": "恒旭资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "凯联资本",
+            "role": "本轮参投"
+          }
+        ]
+      },
+      "after": {
+        "round": "基础设施融资",
+        "amount": "数千万",
+        "investors": [
+          {
+            "name": "国内顶级具身智能产业方",
+            "role": "本轮参投"
+          },
+          {
+            "name": "恒旭资本",
+            "role": "本轮参投"
+          },
+          {
+            "name": "凯联资本",
+            "role": "本轮参投"
+          }
+        ]
+      }
+    },
+    {
+      "file": "01-SiteV2/content/12-applications/funding-insights/2026-08-03.json",
+      "id": "FI-debe51463ab9b007",
+      "event": "EV-4fbbf16279e27000",
+      "company": "昉擎科技",
+      "action": "withdraw_invalid_card",
+      "reason": "原文明确100亿元为投后估值，本轮融资金额未披露；不以估值代替融资金额。",
+      "evidence": [
+        {
+          "source_id": "FISRC-75b04daca915e1ca",
+          "quote": "昉擎科技完成A1轮融资 投后估值超100亿元",
+          "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+          "quote_hash": "99d311da9dc586bd677a5ea51ebfe81a9cde0d3de244cdae18cab420770495e6"
+        },
+        {
+          "source_id": "FISRC-75b04daca915e1ca",
+          "quote": "昉擎科技宣布完成A1轮融资，此轮融资后公司估值超过100亿元。",
+          "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+          "quote_hash": "9dddb9a1f13396c8683400ed239f630d75467f0c2478653fba082bf359fbf030"
+        },
+        {
+          "source_id": "FISRC-75b04daca915e1ca",
+          "quote": "公司在最近半年内连续完成Pre A、Pre-A+轮及A1轮共3轮融资。",
+          "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
+          "quote_hash": "4a55287f205b04234e17758ad4abeae043339bb5f8aab7561bf772cede006dfe"
+        }
+      ],
+      "before": {
+        "round": "A1轮",
+        "amount": "超过 100 亿人民币"
+      }
+    }
+  ]
+}

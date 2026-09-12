@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-290fec39fe7061",
+    "name": "宁波北仑商贸物流投资集团",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-01-29",
+    "latest_disclosed_at": "2026-01-29",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-0a5667ab6d63725e",
+        "canonical_entity_id": "",
+        "name": "上海希夕智能科技有限责任公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e55f6302f514bd6b",
+        "funding_insight_id": "FI-167a13e03322bbba",
+        "event_ids": [
+          "EV-4242ed9f08123c32"
+        ],
+        "company_entity_id": "EN-0a5667ab6d63725e",
+        "company_canonical_entity_id": "",
+        "company_name": "上海希夕智能科技有限责任公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-01-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dd886e588b6aedc7",
+            "source_url": "https://news.pedaily.cn/202601/560516.shtml",
+            "source_title": "深耕食品加工市场，希夕智能完成数千万元天使轮融资",
+            "source_content_hash": "5c05d6b44ea68666",
+            "quote": "投资界（ID：pedaily2012）1月29日消息，食品加工方向AI机器人公司希夕智能于1月29日宣布 完成数千万元天使轮融 资，本轮融资 领投方为宁波北仑商贸物流投资集团，跟投方为荣成荣鑫基金和盛景嘉成 。",
+            "quote_hash": "3c4062f50e66d71d0c877f5243ed8663b2c84b2bea5458229913158616a9e146"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-dd886e588b6aedc7",
+        "source_url": "https://news.pedaily.cn/202601/560516.shtml",
+        "source_title": "深耕食品加工市场，希夕智能完成数千万元天使轮融资",
+        "source_content_hash": "5c05d6b44ea68666",
+        "quote": "投资界（ID：pedaily2012）1月29日消息，食品加工方向AI机器人公司希夕智能于1月29日宣布 完成数千万元天使轮融 资，本轮融资 领投方为宁波北仑商贸物流投资集团，跟投方为荣成荣鑫基金和盛景嘉成 。",
+        "quote_hash": "3c4062f50e66d71d0c877f5243ed8663b2c84b2bea5458229913158616a9e146"
+      }
+    ]
+  }
+}

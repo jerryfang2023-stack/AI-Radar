@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-c45fbf7f0ede54",
+    "name": "阿里",
+    "aliases": [],
+    "canonical_entity_id": "EN-047364b9be67f665",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-07-30",
+    "latest_disclosed_at": "2026-07-30",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-bcc666cc25d51258",
+        "funding_insight_id": "FI-43919de631afd988",
+        "event_ids": [
+          "EV-25d8a47fbc3c0fbb"
+        ],
+        "company_entity_id": "EN-7d418277ae14d4ea",
+        "company_canonical_entity_id": "",
+        "company_name": "北京月之暗面科技股份有限公司",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "35亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2026-07-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年前两个月连续三轮融资老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-773362f4e07cd598",
+            "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+            "source_title": "月之暗面完成超35亿美元F轮融资",
+            "source_content_hash": "4d700156140038e7",
+            "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
+            "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-773362f4e07cd598",
+        "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+        "source_title": "月之暗面完成超35亿美元F轮融资",
+        "source_content_hash": "4d700156140038e7",
+        "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
+        "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+      }
+    ]
+  }
+}

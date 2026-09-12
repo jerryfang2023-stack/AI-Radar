@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-2224f4486f3711",
+    "name": "同创伟业",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 5,
+    "portfolio_company_count": 4,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
+    "first_disclosed_at": "2026-02-02",
+    "latest_disclosed_at": "2026-08-27",
+    "role_counts": {
+      "historical_or_ambiguous": 5,
+      "lead": 1,
+      "other_current_round": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "angel_plus",
+      "seed",
+      "series_a",
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d9b679dae255b189",
+        "canonical_entity_id": "",
+        "name": "杭州易启未来智能科技有限公司"
+      },
+      {
+        "entity_id": "EN-d47eb2cee65d0687",
+        "canonical_entity_id": "",
+        "name": "深圳星际觅元科技有限公司"
+      },
+      {
+        "entity_id": "EN-09afdeb63bb109fc",
+        "canonical_entity_id": "",
+        "name": "智子芯元(深圳)科技有限公司"
+      },
+      {
+        "entity_id": "EN-fcc9af8dc8c25167",
+        "canonical_entity_id": "",
+        "name": "智子芯元（深圳）科技有限责任公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6d93d45fc17ca8c6",
+        "funding_insight_id": "FI-173183ad82946f59",
+        "event_ids": [
+          "EV-c17a6102aab72f4f"
+        ],
+        "company_entity_id": "EN-d47eb2cee65d0687",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳星际觅元科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-08-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-21d53f49c93ea68c",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
+            "source_title": "「星际觅元」完成千万元种子轮融资",
+            "source_content_hash": "9d467a65d3cd4704",
+            "quote": "由同创伟业领投 ，家庭具身智能 机器人 企业 卧安机器人和旭源资本 跟投",
+            "quote_hash": "c818f14cd31e8b8e275f032629a9e2e10622e930a6de0bdd8347e2d754eaeeb0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c2c1bee01b95553b",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B+轮共同投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-09c3ca37737a71ce",
+            "source_url": "https://stcn.com/article/detail/3386786.html",
+            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+            "source_content_hash": "edea92990a31710b",
+            "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
+            "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ee8dc08c9814b090",
+        "funding_insight_id": "FI-4386be4f97f81ab4",
+        "event_ids": [
+          "EV-0fa96416b6df804b"
+        ],
+        "company_entity_id": "EN-68999f0318390d59",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳鹏脑科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "千万元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮独家注资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3f76476700958317",
+            "source_url": "https://www.163.com/dy/article/KCSPC4MF0550WHYR.html",
+            "source_title": "鹏脑科技获同创伟业数千万元天使轮投资，加速非侵入式脑机接口研发|融资_网易订阅",
+            "source_content_hash": "9d14f458b17c4c1f",
+            "quote": "此次融资由同创伟业独家注资",
+            "quote_hash": "509f475c08e265c0eed5726e463a4855161e000440864c57818b27cda88025b7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4affc1b60da67103",
+        "funding_insight_id": "FI-a3033e661b23b30e",
+        "event_ids": [
+          "EV-92d6132ee2a3505a"
+        ],
+        "company_entity_id": "EN-fcc9af8dc8c25167",
+        "company_canonical_entity_id": "",
+        "company_name": "智子芯元（深圳）科技有限责任公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3f6ac401bc9ed3ed",
+            "source_url": "https://news.pedaily.cn/202606/565451.shtml",
+            "source_title": "「智子芯元」完成数千万元天使+轮融资，持续深耕 AI for Computing",
+            "source_content_hash": "779e2de6f300c4a2",
+            "quote": "老股东 同创伟业 等机构超额追投。",
+            "quote_hash": "f2766c47ddf655fc810e18319b2dcaddb564e64d64505d670774405191c0dde2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-83215955680e0ef6",
+        "funding_insight_id": "FI-a3033e661b23b30e",
+        "event_ids": [
+          "EV-92d6132ee2a3505a"
+        ],
+        "company_entity_id": "EN-fcc9af8dc8c25167",
+        "company_canonical_entity_id": "",
+        "company_name": "智子芯元（深圳）科技有限责任公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-31d9f2f1a48dfdc8",
+            "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
+            "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
+            "source_content_hash": "d6e545bc49396418",
+            "quote": "本轮由同创伟业、钧山资本领投，老股东英诺天使与松禾资本超额跟投",
+            "quote_hash": "a0a61870627d8c9ce19a4207a3b464a5e283770ad9f07bbd4b4a297cdbff1d6d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f56a70886a8697ad",
+        "funding_insight_id": "FI-f85557a8fbd55ef2",
+        "event_ids": [
+          "EV-71fc51b3d8e89851"
+        ],
+        "company_entity_id": "EN-d9b679dae255b189",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州易启未来智能科技有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-88e104fba08edb35",
+            "source_url": "https://www.sohu.com/a/1029488708_100032554",
+            "source_title": "易启未来完成数千万元A轮融资：聚焦按摩机器人",
+            "source_content_hash": "ea9384dd84819d0d",
+            "quote": "本轮融资由同创伟业、优山资本、杭州资本旗下“润苗基金”等联合投资",
+            "quote_hash": "b612d7d540b2dee8276071e95117f2c62f9bf3e5eb5250baf27f125f9ae3d115"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-08a2d8c329d8c9f8",
+        "funding_insight_id": "FI-f85557a8fbd55ef2",
+        "event_ids": [
+          "EV-71fc51b3d8e89851"
+        ],
+        "company_entity_id": "EN-d9b679dae255b189",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州易启未来智能科技有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年9月战略投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ef18130fd3637ce7",
+            "source_url": "https://www.163.com/dy/article/K8LPSC6H05118K7K.html",
+            "source_title": "同创伟业战略投资易启未来|机器人|人工智能_网易订阅",
+            "source_content_hash": "e7a0d127617a7872",
+            "quote": "2025年9月4日，同创伟业宣布完成对杭州易启未来智能科技有限公司（简称“易启未来”）的战略投资。",
+            "quote_hash": "1316699735052f081f68d6eb7380ce5913e69fb81081ac069e4dc1177d89ce24"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-29e49f4e17be04de",
+        "funding_insight_id": "FI-cc917301b3cfdfc0",
+        "event_ids": [
+          "EV-3c75e8ce83d89604"
+        ],
+        "company_entity_id": "EN-09afdeb63bb109fc",
+        "company_canonical_entity_id": "",
+        "company_name": "智子芯元(深圳)科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮数千万元融资",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-04-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-99af5f038476e2fe",
+            "source_url": "http://city.sina.com.cn/news/2026-04-29/detail-inhwczph6704322.shtml",
+            "source_title": "从“有算力”到“用好算力”，智子芯元完成新一轮数千万元融资",
+            "source_content_hash": "515f0a87fd485b25",
+            "quote": "本轮融资由同创伟业、钧山资本、英诺天使、松禾资本共同参与。",
+            "quote_hash": "64e4bc61fd7f4a5db29a0372e26114b1c6efe9476ea1bfd24435644655fce9f4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ee1a539861121495",
+        "funding_insight_id": "FI-afd3b8c3d49ef1af",
+        "event_ids": [
+          "EV-3c408fe984c73089"
+        ],
+        "company_entity_id": "EN-a3b8fbb2200a105a",
+        "company_canonical_entity_id": "",
+        "company_name": "卓世科技（海南）股份有限公司",
+        "round": "Pre-IPO",
+        "round_code": "pre_ipo",
+        "round_original": "Pre-IPO",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-02-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0ef31ab978027876",
+            "source_url": "https://www.maas.com.cn/news/830.html",
+            "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
+            "source_content_hash": "2de2062a07393a96",
+            "quote": "卓世科技投资人中既有知名投资机构同创伟业、中关村资本，也有用友集团等上市公司，还有清华系力合资本、启迪之星等机构，同时获得了海南省国资、青岛市国资等产业基金加持。",
+            "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-21d53f49c93ea68c",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
+        "source_title": "「星际觅元」完成千万元种子轮融资",
+        "source_content_hash": "9d467a65d3cd4704",
+        "quote": "由同创伟业领投 ，家庭具身智能 机器人 企业 卧安机器人和旭源资本 跟投",
+        "quote_hash": "c818f14cd31e8b8e275f032629a9e2e10622e930a6de0bdd8347e2d754eaeeb0"
+      },
+      {
+        "source_id": "FISRC-09c3ca37737a71ce",
+        "source_url": "https://stcn.com/article/detail/3386786.html",
+        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+        "source_content_hash": "edea92990a31710b",
+        "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
+        "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
+      },
+      {
+        "source_id": "FISRC-3f76476700958317",
+        "source_url": "https://www.163.com/dy/article/KCSPC4MF0550WHYR.html",
+        "source_title": "鹏脑科技获同创伟业数千万元天使轮投资，加速非侵入式脑机接口研发|融资_网易订阅",
+        "source_content_hash": "9d14f458b17c4c1f",
+        "quote": "此次融资由同创伟业独家注资",
+        "quote_hash": "509f475c08e265c0eed5726e463a4855161e000440864c57818b27cda88025b7"
+      },
+      {
+        "source_id": "FISRC-3f6ac401bc9ed3ed",
+        "source_url": "https://news.pedaily.cn/202606/565451.shtml",
+        "source_title": "「智子芯元」完成数千万元天使+轮融资，持续深耕 AI for Computing",
+        "source_content_hash": "779e2de6f300c4a2",
+        "quote": "老股东 同创伟业 等机构超额追投。",
+        "quote_hash": "f2766c47ddf655fc810e18319b2dcaddb564e64d64505d670774405191c0dde2"
+      },
+      {
+        "source_id": "FISRC-31d9f2f1a48dfdc8",
+        "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
+        "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
+        "source_content_hash": "d6e545bc49396418",
+        "quote": "本轮由同创伟业、钧山资本领投，老股东英诺天使与松禾资本超额跟投",
+        "quote_hash": "a0a61870627d8c9ce19a4207a3b464a5e283770ad9f07bbd4b4a297cdbff1d6d"
+      },
+      {
+        "source_id": "FISRC-88e104fba08edb35",
+        "source_url": "https://www.sohu.com/a/1029488708_100032554",
+        "source_title": "易启未来完成数千万元A轮融资：聚焦按摩机器人",
+        "source_content_hash": "ea9384dd84819d0d",
+        "quote": "本轮融资由同创伟业、优山资本、杭州资本旗下“润苗基金”等联合投资",
+        "quote_hash": "b612d7d540b2dee8276071e95117f2c62f9bf3e5eb5250baf27f125f9ae3d115"
+      },
+      {
+        "source_id": "FISRC-ef18130fd3637ce7",
+        "source_url": "https://www.163.com/dy/article/K8LPSC6H05118K7K.html",
+        "source_title": "同创伟业战略投资易启未来|机器人|人工智能_网易订阅",
+        "source_content_hash": "e7a0d127617a7872",
+        "quote": "2025年9月4日，同创伟业宣布完成对杭州易启未来智能科技有限公司（简称“易启未来”）的战略投资。",
+        "quote_hash": "1316699735052f081f68d6eb7380ce5913e69fb81081ac069e4dc1177d89ce24"
+      },
+      {
+        "source_id": "FISRC-99af5f038476e2fe",
+        "source_url": "http://city.sina.com.cn/news/2026-04-29/detail-inhwczph6704322.shtml",
+        "source_title": "从“有算力”到“用好算力”，智子芯元完成新一轮数千万元融资",
+        "source_content_hash": "515f0a87fd485b25",
+        "quote": "本轮融资由同创伟业、钧山资本、英诺天使、松禾资本共同参与。",
+        "quote_hash": "64e4bc61fd7f4a5db29a0372e26114b1c6efe9476ea1bfd24435644655fce9f4"
+      },
+      {
+        "source_id": "FISRC-0ef31ab978027876",
+        "source_url": "https://www.maas.com.cn/news/830.html",
+        "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
+        "source_content_hash": "2de2062a07393a96",
+        "quote": "卓世科技投资人中既有知名投资机构同创伟业、中关村资本，也有用友集团等上市公司，还有清华系力合资本、启迪之星等机构，同时获得了海南省国资、青岛市国资等产业基金加持。",
+        "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
+      }
+    ]
+  }
+}

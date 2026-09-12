@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-f3292f3caed86f",
@@ -20,21 +20,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
+    "china_market_activity_count": 2,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-04-16",
     "latest_disclosed_at": "2026-04-16",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_b1"
     ],
     "portfolio_companies": [
       {
@@ -44,6 +45,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-01379c8e27b1b23e",
+        "funding_insight_id": "FI-b17732f34966fbc2",
+        "event_ids": [
+          "EV-c2b1af9cc8fba608"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B1轮",
+        "round_code": "series_b1",
+        "round_original": "B1轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1fb846b5355af64",
+            "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+            "source_title": "首发| 极佳视界，一个月融资25亿",
+            "source_content_hash": "60f6c8807fbce9ac",
+            "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-94ac0b734e48db1a",
         "funding_insight_id": "FI-f4cf69e8d2cc7653",
@@ -86,6 +127,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a1fb846b5355af64",
+        "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+        "source_title": "首发| 极佳视界，一个月融资25亿",
+        "source_content_hash": "60f6c8807fbce9ac",
+        "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+      },
       {
         "source_id": "FISRC-4782a6093d519a4d",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",

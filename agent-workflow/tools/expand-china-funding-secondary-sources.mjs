@@ -10,10 +10,10 @@ const ledger = read("systematic-ledger.json");
 const discovery = read("china-funding-source-intake-candidates.json");
 // Supplemental original-report publishers; directories and database records stay leads.
 const publishers = [
-  ["sina.com.cn", "新浪财经", "cn-sina-finance"], ["leiphone.com", "雷峰网", ""], ["donews.com", "DoNews", ""],
-  ["nbd.com.cn", "每日经济新闻", ""], ["chinastarmarket.cn", "科创板日报", "cn-cls"], ["china.com", "中华网", ""],
-  ["sohu.com", "搜狐", ""], ["stockstar.com", "证券之星", ""], ["tmtpost.com", "钛媒体", ""],
-  ["stcn.com", "证券时报", ""], ["jiemian.com", "界面新闻", ""], ["dify.ai", "Dify 官方", ""],
+  ["sina.com.cn", "新浪财经", "cn-sina-finance"], ["leiphone.com", "雷峰网", "cn-leiphone"], ["donews.com", "DoNews", "cn-donews"],
+  ["nbd.com.cn", "每日经济新闻", "cn-nbd"], ["chinastarmarket.cn", "科创板日报", "cn-cls"], ["china.com", "中华网", "cn-china-com"],
+  ["sohu.com", "搜狐", "cn-sohu"], ["stockstar.com", "证券之星", "cn-stockstar"], ["tmtpost.com", "钛媒体", "cn-tmtpost"],
+  ["stcn.com", "证券时报", "cn-stcn"], ["jiemian.com", "界面新闻", "cn-jiemian"], ["dify.ai", "Dify 官方", "cn-dify-official"],
 ];
 const norm = (value) => String(value).toLowerCase().replace(/\.ai$/u, "").replace(/[\s.（）()]/gu, "");
 const leads = new Map(discovery.items.map((item) => [item.url, item]));

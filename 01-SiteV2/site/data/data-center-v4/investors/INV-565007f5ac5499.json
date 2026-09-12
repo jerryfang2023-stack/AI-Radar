@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-565007f5ac5499",
@@ -20,22 +20,238 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 6,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
-    "first_disclosed_at": "2026-04-16",
-    "latest_disclosed_at": "2026-04-16",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-02-11",
+    "latest_disclosed_at": "2026-08-25",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 6,
+      "participant": 2
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "angel",
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e9c2b868dc8f92df",
+        "canonical_entity_id": "",
+        "name": "格通智联技术（上海）有限公司"
+      },
+      {
+        "entity_id": "EN-ada6f7916f22af98",
+        "canonical_entity_id": "",
+        "name": "求之科技(无锡)有限公司"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-5720152064d471b6",
+        "funding_insight_id": "FI-852e4f68397a135a",
+        "event_ids": [
+          "EV-2a2f79242a9479e7"
+        ],
+        "company_entity_id": "EN-e9c2b868dc8f92df",
+        "company_canonical_entity_id": "",
+        "company_name": "格通智联技术（上海）有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2a3446f702110142",
+            "source_url": "https://news.pedaily.cn/202608/568060.shtml",
+            "source_title": "格通智联完成数亿元Pre A轮融资",
+            "source_content_hash": "98c49c9e9931e708",
+            "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
+            "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e676a5efb9c9c75b",
+        "funding_insight_id": "FI-ee613463b934eef6",
+        "event_ids": [
+          "EV-50dc1a246ea090e5"
+        ],
+        "company_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_canonical_entity_id": "",
+        "company_name": "天津设序科技有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-07-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮老股东持续加注",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7dfa7efaace4f3c8",
+            "source_url": "https://news.pedaily.cn/202202/487236.shtml",
+            "source_title": "工业智能CAD厂商「设序科技」完成A轮投资，字节跳动领投_投资界",
+            "source_content_hash": "5c1b7fbf79c12864",
+            "quote": "老股东SIG、 险峰长青 、 高榕资本 、 联想创投 持续加注",
+            "quote_hash": "6e0944605f10f53334f72bbd7c6dcd9d6bf0cbd4d7686337eb3b786f2b37ed8b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a30e359c3d2d201e",
+        "funding_insight_id": "FI-f7342735e68375d9",
+        "event_ids": [
+          "EV-a16d0d2a76e8d4a6",
+          "EV-6ca567f6e80c36c5"
+        ],
+        "company_entity_id": "EN-bbc41366a5a7cf78",
+        "company_canonical_entity_id": "",
+        "company_name": "北京星动纪元科技股份有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-06",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2024年1月天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-077f534a8b9f515e",
+            "source_url": "https://capital.lenovo.com/news/detail/id/932/s/1.html",
+            "source_title": "Lenovo Capital",
+            "source_content_hash": "94c0241a07c069e5",
+            "quote": "Lenovo Capital --> --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 创投简介 成员企业 新闻动态 生态合作 创投学院 科技瞭望塔 联系我们 孵化于清华的「星动纪元」获联想创投领投超亿元天使轮融资，&ldquo;具身智能&rdquo;大幕已拉开丨 LCIG Portfolio 2024 01/10 人形机器人研发公司「星动纪元」获超亿元天使轮融资， 由联想创投领投 ，金鼎资本、清控天诚跟投，老股东世纪金源超额追投，华兴资本担任本次融资独家财务顾问。",
+            "quote_hash": "4d0283d7b7b6dde474c1af6357f5250daaa677996cd88412cbec71857b1350d0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b1354c0bff336ff6",
+        "funding_insight_id": "FI-6adc0d7bfd441daa",
+        "event_ids": [
+          "EV-b4d6c556eadaa272"
+        ],
+        "company_entity_id": "EN-ada6f7916f22af98",
+        "company_canonical_entity_id": "",
+        "company_name": "求之科技(无锡)有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d45f7a4d8fd76b88",
+            "source_url": "https://www.sohu.com/a/1044130792_120109837",
+            "source_title": "求之科技完成超1亿美元天使轮融资",
+            "source_content_hash": "ef8ed950cecf5cd3",
+            "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
+            "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-78364be3def102d5",
+        "funding_insight_id": "FI-6adc0d7bfd441daa",
+        "event_ids": [
+          "EV-b4d6c556eadaa272"
+        ],
+        "company_entity_id": "EN-ada6f7916f22af98",
+        "company_canonical_entity_id": "",
+        "company_name": "求之科技(无锡)有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮投资方，持续跟投至本轮天使轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4aa24ed616a59504",
+            "source_url": "https://www.sohu.com/a/1048144579_121455647",
+            "source_title": "超1亿美元天使轮，这家无锡企业刷新消费级具身智能赛道融资纪录_机器人_仿真_科技",
+            "source_content_hash": "9deed1db93ae6be5",
+            "quote": "超1亿美元天使轮，这家无锡企业刷新消费级具身智能赛道融资纪录_机器人_仿真_科技 新闻 体育 汽车 房产 旅游 教育 时尚 科技 财经 娱乐 2026年9月12日 商业频道最新文章 商业频道最新文章 超1亿美元天使轮，这家无锡企业刷新消费级具身智能赛道融资纪录 新华日报 文章 总阅读 查看TA的文章> 超1亿美元天使轮，这家无锡企业刷新消费级具身智能赛道融资纪录 2026-07-09 20:05 7月1日，求之科技（无锡）有限公司（DISCOVER Robotics）宣布完成 超1亿美元天使轮融资 ，由君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等多家机构联合参投。",
+            "quote_hash": "d5a3e7a18cb110eb3e05ede93c68d07885cbc3c5ac98baa8bd04a463e0952c1d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e44efa965f88e085",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
@@ -75,9 +291,130 @@
             "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
           }
         ]
+      },
+      {
+        "activity_id": "IA-2ea945bde9011bb0",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "新进凯辉基金、联想创投、海尔资本、今日资本、美团龙珠、中金保时捷基金、襄禾资本、北京机器人产业发展投资基金、亦庄国投等知名机构。",
+            "quote_hash": "ce0234246a9291f7b30971897c1b63d65888b8b395d41b136fd13f1d3a9ec9bf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-21bf5450e79d3a2d",
+        "funding_insight_id": "FI-d5293ab06cfaa935",
+        "event_ids": [
+          "EV-371bc68f72326c02"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A2、A3轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2707f48aa6e437b7",
+            "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+            "source_title": "清华90后带队，刚刚星海图又融10亿",
+            "source_content_hash": "85e4d40faa23c515",
+            "quote": "A2、A3轮总融资额超3亿元，由凯辉基金领投，联想创投、海尔资本等产业资本参投，老股东追投。",
+            "quote_hash": "8e622a72802f5d73a1b103cd204741e0f65ec8b8dee45dfa8fd1147684be3580"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2a3446f702110142",
+        "source_url": "https://news.pedaily.cn/202608/568060.shtml",
+        "source_title": "格通智联完成数亿元Pre A轮融资",
+        "source_content_hash": "98c49c9e9931e708",
+        "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
+        "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
+      },
+      {
+        "source_id": "FISRC-7dfa7efaace4f3c8",
+        "source_url": "https://news.pedaily.cn/202202/487236.shtml",
+        "source_title": "工业智能CAD厂商「设序科技」完成A轮投资，字节跳动领投_投资界",
+        "source_content_hash": "5c1b7fbf79c12864",
+        "quote": "老股东SIG、 险峰长青 、 高榕资本 、 联想创投 持续加注",
+        "quote_hash": "6e0944605f10f53334f72bbd7c6dcd9d6bf0cbd4d7686337eb3b786f2b37ed8b"
+      },
+      {
+        "source_id": "FISRC-077f534a8b9f515e",
+        "source_url": "https://capital.lenovo.com/news/detail/id/932/s/1.html",
+        "source_title": "Lenovo Capital",
+        "source_content_hash": "94c0241a07c069e5",
+        "quote": "Lenovo Capital --> --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 创投简介 成员企业 新闻动态 生态合作 创投学院 科技瞭望塔 联系我们 孵化于清华的「星动纪元」获联想创投领投超亿元天使轮融资，&ldquo;具身智能&rdquo;大幕已拉开丨 LCIG Portfolio 2024 01/10 人形机器人研发公司「星动纪元」获超亿元天使轮融资， 由联想创投领投 ，金鼎资本、清控天诚跟投，老股东世纪金源超额追投，华兴资本担任本次融资独家财务顾问。",
+        "quote_hash": "4d0283d7b7b6dde474c1af6357f5250daaa677996cd88412cbec71857b1350d0"
+      },
+      {
+        "source_id": "FISRC-d45f7a4d8fd76b88",
+        "source_url": "https://www.sohu.com/a/1044130792_120109837",
+        "source_title": "求之科技完成超1亿美元天使轮融资",
+        "source_content_hash": "ef8ed950cecf5cd3",
+        "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
+        "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+      },
+      {
+        "source_id": "FISRC-4aa24ed616a59504",
+        "source_url": "https://www.sohu.com/a/1048144579_121455647",
+        "source_title": "超1亿美元天使轮，这家无锡企业刷新消费级具身智能赛道融资纪录_机器人_仿真_科技",
+        "source_content_hash": "9deed1db93ae6be5",
+        "quote": "超1亿美元天使轮，这家无锡企业刷新消费级具身智能赛道融资纪录_机器人_仿真_科技 新闻 体育 汽车 房产 旅游 教育 时尚 科技 财经 娱乐 2026年9月12日 商业频道最新文章 商业频道最新文章 超1亿美元天使轮，这家无锡企业刷新消费级具身智能赛道融资纪录 新华日报 文章 总阅读 查看TA的文章> 超1亿美元天使轮，这家无锡企业刷新消费级具身智能赛道融资纪录 2026-07-09 20:05 7月1日，求之科技（无锡）有限公司（DISCOVER Robotics）宣布完成 超1亿美元天使轮融资 ，由君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等多家机构联合参投。",
+        "quote_hash": "d5a3e7a18cb110eb3e05ede93c68d07885cbc3c5ac98baa8bd04a463e0952c1d"
+      },
       {
         "source_id": "FISRC-877032defba1f3e1",
         "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
@@ -85,6 +422,22 @@
         "source_content_hash": "9bc3ee36ffea717f",
         "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
         "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+      },
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "新进凯辉基金、联想创投、海尔资本、今日资本、美团龙珠、中金保时捷基金、襄禾资本、北京机器人产业发展投资基金、亦庄国投等知名机构。",
+        "quote_hash": "ce0234246a9291f7b30971897c1b63d65888b8b395d41b136fd13f1d3a9ec9bf"
+      },
+      {
+        "source_id": "FISRC-2707f48aa6e437b7",
+        "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+        "source_title": "清华90后带队，刚刚星海图又融10亿",
+        "source_content_hash": "85e4d40faa23c515",
+        "quote": "A2、A3轮总融资额超3亿元，由凯辉基金领投，联想创投、海尔资本等产业资本参投，老股东追投。",
+        "quote_hash": "8e622a72802f5d73a1b103cd204741e0f65ec8b8dee45dfa8fd1147684be3580"
       }
     ]
   }

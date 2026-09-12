@@ -11,7 +11,26 @@ import { historyCaseClosure } from "../build-china-funding-history-quality.mjs";
 import { chinaFundingActorEvidence } from "../lib/china-market-v1.mjs";
 import { domesticFundingResearchQueries, selectFundingEventsForGeneration } from "../generate-funding-insights-deepseek.mjs";
 import { publisherDateObservation } from "../repair-china-funding-source-dates.mjs";
-import { canonicalFundingEventAmount, normalizeFundingAmount, fundingEventCardConsistencyProblems, subjectCompanyForEvent } from "../funding-insight-v1-utils.mjs";
+import { chinaFundingPublicationScope } from "../lib/china-funding-publication-scope.mjs";
+
+test("historical CN scope retains all domestic and ordinary daily coverage", () => {
+  const events = [{ event_id: "H", source_refs: ["S"], disclosed_at: "2026-02-01", market_scope: { china_market_match: true } }, { event_id: "D", source_refs: ["daily"], disclosed_at: "2026-09-12" }, { event_id: "X", source_refs: ["S"], disclosed_at: "2026-02-01" }];
+  const policy = { application_market_region: "CN", authorized_by: "explicit_user_request_2026_china_funding_backfill", source_refs: ["S"], from: "2026-01-01", to: "2026-09-12" };
+  assert.deepEqual(chinaFundingPublicationScope(events, policy).events.map(event => event.event_id), ["H", "D"]);
+  assert.deepEqual(chinaFundingPublicationScope(events, {}).events, events);
+  assert.deepEqual(chinaFundingPublicationScope(events, { ...policy, from: "2026-03-01" }).events, events);
+});
+
+import { canonicalFundingEventAmount, canonicalFundingEventRound, normalizeFundingRound, normalizeFundingAmount, fundingEventCardConsistencyProblems, subjectCompanyForEvent } from "../funding-insight-v1-utils.mjs";
+
+test("current round stays separate from earlier rounds and preserves Chinese plus suffixes", () => {
+  assert.equal(normalizeFundingRound("Pre-A++轮").label, "Pre-A++轮");
+  assert.equal(normalizeFundingRound("天使++轮").label, "天使++轮");
+  assert.equal(normalizeFundingRound("种子+轮").label, "种子+轮");
+  assert.notEqual(normalizeFundingRound("B+轮").code, normalizeFundingRound("B轮").code);
+  const claims = [{ claim_id: "C", claim_type: "funding", verification_status: "accepted", source_quote: "智推时代宣布完成数千万元天使轮融资。2025年曾完成种子轮融资。" }];
+  assert.equal(canonicalFundingEventRound({ claim_refs: ["C"], object: "数千万元" }, claims).code, "angel");
+});
 
 test("Chinese round proceeds retain fuzzy amounts and do not substitute cumulative financing", () => {
   for (const amount of ["数亿元", "10亿元", "数千万美元"]) {
@@ -56,6 +75,7 @@ test("historical funding cannot reuse another disclosure by company and round la
 test("domestic card research covers missing financing and company/product fields in Chinese", () => {
   const queries = domesticFundingResearchQueries("案例公司", "数亿元", "2026-03-01");
   assert.equal(queries.length, 4);
+  assert.ok(domesticFundingResearchQueries("智子芯元(深圳)科技有限公司", "数千万元", "2026-03-01").some(item => item.query.includes('"智子芯元"')));
   assert.ok(queries.every((item) => item.query.includes("案例公司")));
   for (const field of ["2026", "金额", "投资方", "产品", "总部", "融资用途"]) assert.ok(queries.map((item) => item.query).join(" ").includes(field));
 });

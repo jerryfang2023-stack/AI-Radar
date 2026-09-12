@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-9d12657e22288403",
+    "name": "北京深朴智能科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-cbec329253108e80"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-04",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-cbec329253108e80"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-cbec329253108e80",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-04",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "深朴智能完成数亿元Pre-A+轮融资，面向人类生活空间打造AI原生具身智能",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-ee2dce6ecf9a1bab"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3362aa424b82766d",
+            "fundingInsightId": "FI-18035f62f53eae02"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-ee2dce6ecf9a1bab"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3940c980ecd84718",
+            "fundingInsightId": "FI-18035f62f53eae02"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-ee2dce6ecf9a1bab"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4a9a04a1efc2d62e",
+            "fundingInsightId": "FI-18035f62f53eae02"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-ee2dce6ecf9a1bab"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "food_hospitality",
+            "name": "餐饮与酒店",
+            "entityIds": [
+              "EN-ee2dce6ecf9a1bab"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f91615572dbaa9a1",
+            "fundingInsightId": "FI-18035f62f53eae02"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-ee2dce6ecf9a1bab"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-37b5a980ef8d33d4",
+            "fundingInsightId": "FI-18035f62f53eae02"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-ee2dce6ecf9a1bab"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-139fbd3cf37348f3",
+            "fundingInsightId": "FI-18035f62f53eae02"
+          }
+        ],
+        "entityIds": [
+          "EN-9d12657e22288403",
+          "EN-ee2dce6ecf9a1bab"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

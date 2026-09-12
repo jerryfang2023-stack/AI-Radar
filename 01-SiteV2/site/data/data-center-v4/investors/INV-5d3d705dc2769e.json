@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-5d3d705dc2769e",
@@ -20,18 +20,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
+    "china_market_activity_count": 2,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-02-23",
+    "latest_disclosed_at": "2026-04-11",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_b"
@@ -44,6 +44,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8aea6a6aa8d598c3",
+        "funding_insight_id": "FI-0421ad5a685ba3b0",
+        "event_ids": [
+          "EV-7620153f4892a0af"
+        ],
+        "company_entity_id": "EN-ce22f929f4a17467",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（深圳）科技股份有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-04-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-16a5b9f7da3616f3",
+            "source_url": "https://www.robothub.app/zh/companies/zhipingfang",
+            "source_title": "智平方 - 人形机器人公司资料、融资、产品与估值 | RobotHub",
+            "source_content_hash": "52cc6aa7a44aacaf",
+            "quote": "B轮 ¥10.0亿 ¥96.6亿 2026年2月 百度战投、中车资本、宇信科技、森麒麟、沄柏资本、国泰海通基金",
+            "quote_hash": "d8f95d0e975a73eea9bd213facbdb3cf36b652d63a09a1eecfba2973b029d3ba"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1cabc5cd2f424520",
         "funding_insight_id": "FI-39ef2aaaed606bfe",
@@ -86,6 +126,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-16a5b9f7da3616f3",
+        "source_url": "https://www.robothub.app/zh/companies/zhipingfang",
+        "source_title": "智平方 - 人形机器人公司资料、融资、产品与估值 | RobotHub",
+        "source_content_hash": "52cc6aa7a44aacaf",
+        "quote": "B轮 ¥10.0亿 ¥96.6亿 2026年2月 百度战投、中车资本、宇信科技、森麒麟、沄柏资本、国泰海通基金",
+        "quote_hash": "d8f95d0e975a73eea9bd213facbdb3cf36b652d63a09a1eecfba2973b029d3ba"
+      },
       {
         "source_id": "FISRC-2b8807c0477dce70",
         "source_url": "https://finance.sina.com.cn/roll/2026-02-23/doc-inhnvivh9606202.shtml",

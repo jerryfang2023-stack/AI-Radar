@@ -1,0 +1,64 @@
+{
+  "event_id": "EV-427ec385ca7dba48",
+  "company_name": "北京星源智机器人科技有限公司",
+  "status": "blocked",
+  "problems": [
+    "funding_event_company_amount_mismatch"
+  ],
+  "queries": [
+    "\"北京星源智机器人科技有限公司\" 2026 融资 轮次 金额 投资方",
+    "\"北京星源智机器人科技有限公司\" \"亿\" 本轮融资 领投 跟投",
+    "\"北京星源智机器人科技有限公司\" 产品 服务 创始人 总部",
+    "\"北京星源智机器人科技有限公司\" 投资机构 投资原因 融资用途"
+  ],
+  "attempts": [
+    {
+      "provider": "tavily",
+      "query": "\"北京星源智机器人科技有限公司\" 2026 融资 轮次 金额 投资方",
+      "status": "failed",
+      "error": "tavily_432"
+    },
+    {
+      "provider": "exa",
+      "query": "\"北京星源智机器人科技有限公司\" 2026 融资 轮次 金额 投资方",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "tavily",
+      "query": "\"北京星源智机器人科技有限公司\" \"亿\" 本轮融资 领投 跟投",
+      "status": "failed",
+      "error": "tavily_432"
+    },
+    {
+      "provider": "exa",
+      "query": "\"北京星源智机器人科技有限公司\" \"亿\" 本轮融资 领投 跟投",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "tavily",
+      "query": "\"北京星源智机器人科技有限公司\" 产品 服务 创始人 总部",
+      "status": "failed",
+      "error": "tavily_432"
+    },
+    {
+      "provider": "exa",
+      "query": "\"北京星源智机器人科技有限公司\" 产品 服务 创始人 总部",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "tavily",
+      "query": "\"北京星源智机器人科技有限公司\" 投资机构 投资原因 融资用途",
+      "status": "failed",
+      "error": "tavily_432"
+    },
+    {
+      "provider": "exa",
+      "query": "\"北京星源智机器人科技有限公司\" 投资机构 投资原因 融资用途",
+      "status": "completed",
+      "error": ""
+    }
+  ]
+}

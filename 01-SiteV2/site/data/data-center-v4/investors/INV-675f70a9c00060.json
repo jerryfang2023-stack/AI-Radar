@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-675f70a9c00060",
@@ -20,27 +20,46 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "current_round_count": 7,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
-    "first_disclosed_at": "2026-06-03",
+    "china_market_activity_count": 6,
+    "china_market_company_count": 6,
+    "first_disclosed_at": "2026-01-26",
     "latest_disclosed_at": "2026-08-24",
     "role_counts": {
-      "co_lead": 1,
-      "participant": 2
+      "co_lead": 2,
+      "historical_or_ambiguous": 1,
+      "participant": 5
     },
     "round_codes": [
+      "angel",
       "first_external",
+      "multi_round",
       "pre_series_b",
+      "series_b_plus",
       "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-bd0658982d1f728d",
+        "canonical_entity_id": "",
+        "name": "广东天机智能系统有限公司"
+      },
+      {
+        "entity_id": "EN-f0d59425e4c32abb",
+        "canonical_entity_id": "",
+        "name": "阶跃星辰（StepFun）"
+      },
+      {
+        "entity_id": "EN-a3802b1f5a583189",
+        "canonical_entity_id": "",
+        "name": "深圳墨奇智能技术有限公司"
+      },
       {
         "entity_id": "EN-9a970ad7900121db",
         "canonical_entity_id": "",
@@ -55,6 +74,11 @@
         "entity_id": "EN-aa949c066d46acbf",
         "canonical_entity_id": "",
         "name": "Even Realities Technology"
+      },
+      {
+        "entity_id": "EN-2c348893efb2316e",
+        "canonical_entity_id": "EN-2c348893efb2316e",
+        "name": "StepFun"
       }
     ],
     "activities": [
@@ -95,6 +119,86 @@
             "source_content_hash": "b8e4f0b869df00ee",
             "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
             "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-94bbdbc3e3343d54",
+        "funding_insight_id": "FI-43919de631afd988",
+        "event_ids": [
+          "EV-25d8a47fbc3c0fbb"
+        ],
+        "company_entity_id": "EN-7d418277ae14d4ea",
+        "company_canonical_entity_id": "",
+        "company_name": "北京月之暗面科技股份有限公司",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "35亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2026-07-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年前两个月连续三轮融资老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-773362f4e07cd598",
+            "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+            "source_title": "月之暗面完成超35亿美元F轮融资",
+            "source_content_hash": "4d700156140038e7",
+            "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
+            "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4f30aa334b61724f",
+        "funding_insight_id": "FI-0cab7e240eb542ce",
+        "event_ids": [
+          "EV-e85e6fc6d630d56c"
+        ],
+        "company_entity_id": "EN-a3802b1f5a583189",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳墨奇智能技术有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bea9d0be613bc1cd",
+            "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+            "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+            "source_content_hash": "311224a4dfb089df",
+            "quote": "本次融资由阿里巴巴、腾讯联合领投",
+            "quote_hash": "98b7d1967cc53e05ee6fae09461995df935db30454c5bf6627dc724464483c92"
           }
         ]
       },
@@ -185,6 +289,126 @@
             "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
           }
         ]
+      },
+      {
+        "activity_id": "IA-076a3c3a8a2617f6",
+        "funding_insight_id": "FI-033dd55115963cb3",
+        "event_ids": [
+          "EV-0896f0e7b703bed2"
+        ],
+        "company_entity_id": "EN-bd0658982d1f728d",
+        "company_canonical_entity_id": "",
+        "company_name": "广东天机智能系统有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-05-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3e04e9bd8fc1ab06",
+            "source_url": "https://news.pedaily.cn/202605/564328.shtml",
+            "source_title": "天机智能完成10亿元融资，投后估值近百亿",
+            "source_content_hash": "18ebeb9db5460eb7",
+            "quote": "腾讯、高榕创投、光合创投、纪源资本 等联合跟投",
+            "quote_hash": "b66c51f927e3b697d5520929115dd73e1dc0a691e559c2552e7f6a867c0c05fc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-04c747171510d200",
+        "funding_insight_id": "FI-18465dcaeebdf656",
+        "event_ids": [
+          "EV-df37e9341b5c7f04"
+        ],
+        "company_entity_id": "EN-f0d59425e4c32abb",
+        "company_canonical_entity_id": "",
+        "company_name": "阶跃星辰（StepFun）",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "50 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-de3bb93d57d25bdf",
+            "source_url": "https://www.cyzone.cn/article/822685.html",
+            "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
+            "source_content_hash": "3cd27a7369aa4df5",
+            "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
+            "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c05bfffff3ae056f",
+        "funding_insight_id": "FI-74076c9ab29354a8",
+        "event_ids": [
+          "EV-794f0a86004da0c9"
+        ],
+        "company_entity_id": "EN-2c348893efb2316e",
+        "company_canonical_entity_id": "EN-2c348893efb2316e",
+        "company_name": "StepFun",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "50亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ae8171e86e3a055",
+            "source_url": "https://news.pedaily.cn/202601/560382.shtml",
+            "source_title": "50亿，阶跃星辰完成新年最大融资",
+            "source_content_hash": "b3815bfa4d27819c",
+            "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
+            "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -195,6 +419,22 @@
         "source_content_hash": "b8e4f0b869df00ee",
         "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
         "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+      },
+      {
+        "source_id": "FISRC-773362f4e07cd598",
+        "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+        "source_title": "月之暗面完成超35亿美元F轮融资",
+        "source_content_hash": "4d700156140038e7",
+        "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
+        "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+      },
+      {
+        "source_id": "FISRC-bea9d0be613bc1cd",
+        "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+        "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+        "source_content_hash": "311224a4dfb089df",
+        "quote": "本次融资由阿里巴巴、腾讯联合领投",
+        "quote_hash": "98b7d1967cc53e05ee6fae09461995df935db30454c5bf6627dc724464483c92"
       },
       {
         "source_id": "FISRC-340182e8dcb597a3",
@@ -219,6 +459,30 @@
         "source_content_hash": "94a6c6ef0b270e0d",
         "quote": "Strategic capital was anchored by Tencent",
         "quote_hash": "6d057b922445ace4248d1b107ed8856f78ee76c45ee67b1c6c1526b71fe2e181"
+      },
+      {
+        "source_id": "FISRC-3e04e9bd8fc1ab06",
+        "source_url": "https://news.pedaily.cn/202605/564328.shtml",
+        "source_title": "天机智能完成10亿元融资，投后估值近百亿",
+        "source_content_hash": "18ebeb9db5460eb7",
+        "quote": "腾讯、高榕创投、光合创投、纪源资本 等联合跟投",
+        "quote_hash": "b66c51f927e3b697d5520929115dd73e1dc0a691e559c2552e7f6a867c0c05fc"
+      },
+      {
+        "source_id": "FISRC-de3bb93d57d25bdf",
+        "source_url": "https://www.cyzone.cn/article/822685.html",
+        "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
+        "source_content_hash": "3cd27a7369aa4df5",
+        "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
+        "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+      },
+      {
+        "source_id": "FISRC-4ae8171e86e3a055",
+        "source_url": "https://news.pedaily.cn/202601/560382.shtml",
+        "source_title": "50亿，阶跃星辰完成新年最大融资",
+        "source_content_hash": "b3815bfa4d27819c",
+        "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
+        "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
       }
     ]
   }

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-dd009483843627",
@@ -20,31 +20,124 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-04-16",
-    "latest_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "participant": 1
+      "historical_or_ambiguous": 2,
+      "participant": 4
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "other",
+      "series_b1",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-60d2cc785c19e818",
+        "canonical_entity_id": "",
+        "name": "北京三启万物科技有限公司"
+      },
       {
         "entity_id": "EN-e7492db096492304",
         "canonical_entity_id": "",
         "name": "极佳视界"
+      },
+      {
+        "entity_id": "EN-eb9a5a696c7fe158",
+        "canonical_entity_id": "",
+        "name": "紫创智械（上海）科技有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cf708bc88d1c050f",
+        "funding_insight_id": "FI-322a9e8ea81884e5",
+        "event_ids": [
+          "EV-3bbd2ab8ebda9871"
+        ],
+        "company_entity_id": "EN-eb9a5a696c7fe158",
+        "company_canonical_entity_id": "",
+        "company_name": "紫创智械（上海）科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "数千万融资",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c61be84890c6eecc",
+            "source_url": "https://news.pedaily.cn/202609/568683.shtml",
+            "source_title": "紫创智械完成数千万融资，专注于工程机械行业模型应用落地",
+            "source_content_hash": "9f86880decb8bf81",
+            "quote": "投资方包括 毅达资本及头部产业方 等。",
+            "quote_hash": "cbae709c15d782a29fb577cb245ed10ce4a581d63e1dafd826b6deca093823f5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8a713d32ec9896a8",
+        "funding_insight_id": "FI-b1494fe383b9e92d",
+        "event_ids": [
+          "EV-e8f381baf505ac32"
+        ],
+        "company_entity_id": "EN-60d2cc785c19e818",
+        "company_canonical_entity_id": "",
+        "company_name": "北京三启万物科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "10亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a4dbd49c64cb5834",
+            "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+            "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+            "source_content_hash": "3e7e05417d6a96b1",
+            "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+            "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+          }
+        ]
+      },
       {
         "activity_id": "IA-600cc626bda217b6",
         "funding_insight_id": "FI-6ada8d4502daa530",
@@ -82,6 +175,86 @@
             "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
             "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
             "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-406888cab1c08755",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B1轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7aa7afc07abf35b9",
+        "funding_insight_id": "FI-b17732f34966fbc2",
+        "event_ids": [
+          "EV-c2b1af9cc8fba608"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B1轮",
+        "round_code": "series_b1",
+        "round_original": "B1轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1fb846b5355af64",
+            "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+            "source_title": "首发| 极佳视界，一个月融资25亿",
+            "source_content_hash": "60f6c8807fbce9ac",
+            "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
           }
         ]
       },
@@ -128,12 +301,44 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c61be84890c6eecc",
+        "source_url": "https://news.pedaily.cn/202609/568683.shtml",
+        "source_title": "紫创智械完成数千万融资，专注于工程机械行业模型应用落地",
+        "source_content_hash": "9f86880decb8bf81",
+        "quote": "投资方包括 毅达资本及头部产业方 等。",
+        "quote_hash": "cbae709c15d782a29fb577cb245ed10ce4a581d63e1dafd826b6deca093823f5"
+      },
+      {
+        "source_id": "FISRC-a4dbd49c64cb5834",
+        "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+        "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+        "source_content_hash": "3e7e05417d6a96b1",
+        "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+        "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+      },
+      {
         "source_id": "FISRC-b96684face6f5223",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
         "source_title": "微纳核芯完成超10亿元B轮系列融资",
         "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
         "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
         "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
+      },
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+        "source_content_hash": "a652909321da946b",
+        "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+      },
+      {
+        "source_id": "FISRC-a1fb846b5355af64",
+        "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+        "source_title": "首发| 极佳视界，一个月融资25亿",
+        "source_content_hash": "60f6c8807fbce9ac",
+        "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
       },
       {
         "source_id": "FISRC-4782a6093d519a4d",

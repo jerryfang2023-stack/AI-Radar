@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "node": {
     "id": "TX-technology-vision_language",
@@ -18,7 +18,9 @@
     "typeLabel": "技术",
     "valueId": "vision_language",
     "eventIds": [
+      "EV-d051cfbe3fd7e80f",
       "EV-6f092cfc7a064d64",
+      "EV-8077605769c4d4eb",
       "EV-6a3286e2186e4774",
       "EV-7c53df0cdea33936",
       "EV-39d56d5cef4cea80",
@@ -31,6 +33,7 @@
       "EV-74b965de27bc0515"
     ],
     "entityIds": [
+      "EN-f2b9106253663314",
       "EN-2b6e51bec93e86c1",
       "EN-bae152c4560df38c",
       "EN-a658fbc24f5e3832",
@@ -43,10 +46,192 @@
     ],
     "fdeIds": [],
     "hardwareIds": [],
-    "firstSeen": "2026-06-06",
-    "lastSeen": "2026-09-07"
+    "firstSeen": "2026-01-06",
+    "lastSeen": "2026-09-12"
   },
   "events": [
+    {
+      "id": "EV-d051cfbe3fd7e80f",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "「liko.ai」完成首轮融资，打造以 AI Home Center 为核心的智能家居解决方案-36氪",
+      "originalTitle": "",
+      "subject": "liko.ai",
+      "action": "funding",
+      "object": "完成首轮融资",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f2b9106253663314",
+        "EN-e12c9f7f64dec58c"
+      ],
+      "entityNames": [
+        "liko.ai",
+        "ModelBest"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://36kr.com/p/3627281699582468",
+      "publisher": "36氪"
+    },
     {
       "id": "EV-6f092cfc7a064d64",
       "dataDate": "2026-07-17",
@@ -392,6 +577,255 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product",
       "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-8077605769c4d4eb",
+      "dataDate": "2026-09-12",
+      "date": "2026-01-06",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "创始人来自清华大学，「liko.ai」完成首轮融资",
+      "originalTitle": "",
+      "subject": "liko.ai",
+      "action": "funding",
+      "object": "完成首轮融资",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-f2b9106253663314"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f2b9106253663314",
+        "EN-e12c9f7f64dec58c"
+      ],
+      "entityNames": [
+        "liko.ai",
+        "ModelBest"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202601/559543.shtml",
+      "publisher": "投资界"
     },
     {
       "id": "EV-6a3286e2186e4774",
@@ -1781,7 +2215,9 @@
         {
           "name": "PerceptionBench",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Moonshot AI"
+          ]
         }
       ],
       "sourceUrl": "https://kimi.com/blog/perception-bench",
@@ -1789,6 +2225,33 @@
     }
   ],
   "entities": [
+    {
+      "id": "EN-f2b9106253663314",
+      "name": "liko.ai",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d051cfbe3fd7e80f",
+        "EV-8077605769c4d4eb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-product_form-model",
+        "TX-technology-vision_language",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-product_form-chip_accelerator"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-06",
+      "lastSeen": "2026-09-12"
+    },
     {
       "id": "EN-2b6e51bec93e86c1",
       "name": "Google DeepMind",
@@ -1858,25 +2321,25 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
+        "TX-technology-multimodal",
         "TX-use_case-physical_automation",
-        "TX-deployment_model-edge_device",
-        "TX-technology-embodied_ai",
-        "TX-product_form-chip_accelerator",
-        "TX-use_case-software_development",
-        "TX-use_case-security_operations",
         "TX-product_form-model",
-        "TX-product_form-enterprise_software_platform",
-        "TX-industry-media_entertainment",
+        "TX-technology-vision_language",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-use_case-research_discovery",
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
+        "TX-use_case-software_development",
+        "TX-industry-media_entertainment",
+        "TX-product_form-chip_accelerator",
+        "TX-use_case-security_operations",
+        "TX-industry-aerospace_defense",
+        "TX-product_form-enterprise_software_platform",
         "TX-technology-code_generation",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
-        "TX-technology-multimodal",
-        "TX-industry-aerospace_defense",
-        "TX-use_case-research_discovery",
-        "TX-technology-vision_language",
         "TX-technology-mixture_of_experts"
       ],
       "relatedEntityIds": [
@@ -1908,9 +2371,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-technology-vision_language",
         "TX-technology-image_generation",
-        "TX-technology-speech_audio",
-        "TX-technology-vision_language"
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-10",
@@ -1932,8 +2395,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-multimodal",
+        "TX-product_form-model",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [],
@@ -1955,9 +2418,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-product_form-model",
-        "TX-product_form-robotic_system",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [
@@ -1981,8 +2444,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-multimodal",
+        "TX-product_form-model",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [],
@@ -2031,12 +2494,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-multimodal",
         "TX-product_form-model",
+        "TX-technology-vision_language",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-technology-multimodal",
-        "TX-industry-healthcare_life_sciences",
-        "TX-technology-vision_language"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
@@ -2055,6 +2518,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-25d8a47fbc3c0fbb",
         "EV-0e4bddfd5c129618",
         "EV-c5d7d88d1aef8edb",
         "EV-38ae953ddd53fe8d",
@@ -2085,18 +2549,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-product_form-model",
-        "TX-ai_market_application-models",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-technology-vision_language"
+        "TX-target_user-developer",
+        "TX-product_form-model",
+        "TX-technology-vision_language",
+        "TX-target_user-business_user",
+        "TX-technology-agentic_execution",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-software_development",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
         "EN-eb732565c71e6b85",

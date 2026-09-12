@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-d4b0a3158fba9e",
+    "name": "肆贰伍投资(深圳)合伙企业",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-14",
+    "latest_disclosed_at": "2026-07-14",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "strategic"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-68999f0318390d59",
+        "canonical_entity_id": "",
+        "name": "深圳鹏脑科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0cad64e2faf6bb75",
+        "funding_insight_id": "FI-4386be4f97f81ab4",
+        "event_ids": [
+          "EV-0fa96416b6df804b"
+        ],
+        "company_entity_id": "EN-68999f0318390d59",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳鹏脑科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "千万元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮独家出资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-e263856014e36ffb",
+            "source_url": "https://news.pedaily.cn/202607/566286.shtml",
+            "source_title": "「鹏脑科技」完成千万元战略融资，加速消费级脑机接口商业化落地",
+            "source_content_hash": "09fa647cb896c9db",
+            "quote": "由 肆贰伍投资（深圳）合伙企业独 家出资",
+            "quote_hash": "4b9a047a166ed71319a05f4d5eb06c6d6a96ca72a448e18fd4ff157a869f1db7"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e263856014e36ffb",
+        "source_url": "https://news.pedaily.cn/202607/566286.shtml",
+        "source_title": "「鹏脑科技」完成千万元战略融资，加速消费级脑机接口商业化落地",
+        "source_content_hash": "09fa647cb896c9db",
+        "quote": "由 肆贰伍投资（深圳）合伙企业独 家出资",
+        "quote_hash": "4b9a047a166ed71319a05f4d5eb06c6d6a96ca72a448e18fd4ff157a869f1db7"
+      }
+    ]
+  }
+}

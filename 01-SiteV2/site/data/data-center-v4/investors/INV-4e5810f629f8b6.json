@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-4e5810f629f8b6",
@@ -21,7 +21,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -29,8 +29,9 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-05-08",
-    "latest_disclosed_at": "2026-05-08",
+    "latest_disclosed_at": "2026-09-04",
     "role_counts": {
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -44,6 +45,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-93d2ad816c809ec8",
+        "funding_insight_id": "FI-3e97f5e30e99ff0b",
+        "event_ids": [
+          "EV-cbec329253108e80"
+        ],
+        "company_entity_id": "EN-ee2dce6ecf9a1bab",
+        "company_canonical_entity_id": "",
+        "company_name": "北京深朴智能科技有限公司",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3bc1b2f58c3d4a86",
+            "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+            "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+            "source_content_hash": "892b3be292e8e3e6",
+            "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+            "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fd4e973eb0f7fa25",
+        "funding_insight_id": "FI-de5c9a8f3d3cc54a",
+        "event_ids": [
+          "EV-6928501584326746"
+        ],
+        "company_entity_id": "EN-bcfc3b314fa4ede5",
+        "company_canonical_entity_id": "",
+        "company_name": "华清未央（北京）科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-06-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cab683d0c710d8ea",
+            "source_url": "https://www.163.com/dy/article/JBOG2NHD051984TV.html",
+            "source_title": "华清未央公布天使轮融资，投资方为梅花创投_网易订阅",
+            "source_content_hash": "4b1173ba5b387864",
+            "quote": "华清未央（北京）科技有限公司公布天使轮融资，融资额未披露，参与投资的机构包括梅花创投。",
+            "quote_hash": "5d024da99262ac25c17992bda2aaf82ac1f7c053bba1bf2ec958116d9e9dc696"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cc444fcc607306ba",
         "funding_insight_id": "FI-f15f358f13811b9e",
@@ -87,6 +168,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3bc1b2f58c3d4a86",
+        "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+        "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+        "source_content_hash": "892b3be292e8e3e6",
+        "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+        "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+      },
+      {
+        "source_id": "FISRC-cab683d0c710d8ea",
+        "source_url": "https://www.163.com/dy/article/JBOG2NHD051984TV.html",
+        "source_title": "华清未央公布天使轮融资，投资方为梅花创投_网易订阅",
+        "source_content_hash": "4b1173ba5b387864",
+        "quote": "华清未央（北京）科技有限公司公布天使轮融资，融资额未披露，参与投资的机构包括梅花创投。",
+        "quote_hash": "5d024da99262ac25c17992bda2aaf82ac1f7c053bba1bf2ec958116d9e9dc696"
+      },
+      {
         "source_id": "FISRC-ceee1629da3e3cce",
         "source_url": "https://news.pedaily.cn/202605/563553.shtml",
         "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
@@ -94,6 +191,18 @@
         "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
         "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Pre-A轮跟投",
+          "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:49.993Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-34aa2a7e1bd252",
+    "name": "复旦科创",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-05-14",
+    "latest_disclosed_at": "2026-05-27",
+    "role_counts": {
+      "co_lead": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "angel",
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ccc2bd5e43d9ab2b",
+        "canonical_entity_id": "",
+        "name": "上海复鞍智能科技有限公司"
+      },
+      {
+        "entity_id": "EN-d92a7f237b09feea",
+        "canonical_entity_id": "",
+        "name": "上海复鞍智能科技有限公司"
+      },
+      {
+        "entity_id": "EN-3ee57b807d91aa43",
+        "canonical_entity_id": "",
+        "name": "上海新智具身智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9d2f8be2588ed386",
+        "funding_insight_id": "FI-2ee7231c34a9ad69",
+        "event_ids": [
+          "EV-1a6fbd73eb4eb133"
+        ],
+        "company_entity_id": "EN-3ee57b807d91aa43",
+        "company_canonical_entity_id": "",
+        "company_name": "上海新智具身智能科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e666934339b27e85",
+            "source_url": "https://news.pedaily.cn/202605/564455.shtml",
+            "source_title": "首发| 让机器人拥有触觉，新智具身天使轮融资近亿",
+            "source_content_hash": "a3d55e3960392661",
+            "quote": "本轮由上海国投旗下上海科创集团、复旦科创联合领投",
+            "quote_hash": "a48247a13b3e5d8796103000c085404f8869646a8d4a74f21ef4427981deadea"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ff5d57deab3f73a9",
+        "funding_insight_id": "FI-39ec2442585e45b6",
+        "event_ids": [
+          "EV-0e1edf873779be1d"
+        ],
+        "company_entity_id": "EN-ccc2bd5e43d9ab2b",
+        "company_canonical_entity_id": "",
+        "company_name": "上海复鞍智能科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-55041228ee583f8a",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwenh8729004.shtml",
+            "source_title": "「复鞍智能」完成种子轮融资，AI4S重塑物质科学研发范式",
+            "source_content_hash": "0ccbefed99e236b4",
+            "quote": "复旦科创持续加持",
+            "quote_hash": "6391f55307ce40a2a9defdb030519ca228b22b042481b06648b566dbcc9f9d2e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f334dbab31218109",
+        "funding_insight_id": "FI-e33a64d66e4e499b",
+        "event_ids": [
+          "EV-7021bd7041019330"
+        ],
+        "company_entity_id": "EN-d92a7f237b09feea",
+        "company_canonical_entity_id": "",
+        "company_name": "上海复鞍智能科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c496091042c7e975",
+            "source_url": "https://news.pedaily.cn/202605/563872.shtml",
+            "source_title": "复鞍智能完成种子轮融资，小苗朗程、天际资本联合领投",
+            "source_content_hash": "8a542d4e6a0b88a7",
+            "quote": "复旦科创 持续加持",
+            "quote_hash": "cb932193af4fa111eb66408065e8516e368523d6a96e9f78e58bcd2cd4dd2a93"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e666934339b27e85",
+        "source_url": "https://news.pedaily.cn/202605/564455.shtml",
+        "source_title": "首发| 让机器人拥有触觉，新智具身天使轮融资近亿",
+        "source_content_hash": "a3d55e3960392661",
+        "quote": "本轮由上海国投旗下上海科创集团、复旦科创联合领投",
+        "quote_hash": "a48247a13b3e5d8796103000c085404f8869646a8d4a74f21ef4427981deadea"
+      },
+      {
+        "source_id": "FISRC-55041228ee583f8a",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwenh8729004.shtml",
+        "source_title": "「复鞍智能」完成种子轮融资，AI4S重塑物质科学研发范式",
+        "source_content_hash": "0ccbefed99e236b4",
+        "quote": "复旦科创持续加持",
+        "quote_hash": "6391f55307ce40a2a9defdb030519ca228b22b042481b06648b566dbcc9f9d2e"
+      },
+      {
+        "source_id": "FISRC-c496091042c7e975",
+        "source_url": "https://news.pedaily.cn/202605/563872.shtml",
+        "source_title": "复鞍智能完成种子轮融资，小苗朗程、天际资本联合领投",
+        "source_content_hash": "8a542d4e6a0b88a7",
+        "quote": "复旦科创 持续加持",
+        "quote_hash": "cb932193af4fa111eb66408065e8516e368523d6a96e9f78e58bcd2cd4dd2a93"
+      }
+    ]
+  }
+}

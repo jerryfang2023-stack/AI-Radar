@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-0caa0ba66e7eb3",
+    "name": "策源基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-27",
+    "latest_disclosed_at": "2026-05-27",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-3ee57b807d91aa43",
+        "canonical_entity_id": "",
+        "name": "上海新智具身智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-fcc0272e22f78f4a",
+        "funding_insight_id": "FI-2ee7231c34a9ad69",
+        "event_ids": [
+          "EV-1a6fbd73eb4eb133"
+        ],
+        "company_entity_id": "EN-3ee57b807d91aa43",
+        "company_canonical_entity_id": "",
+        "company_name": "上海新智具身智能科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e666934339b27e85",
+            "source_url": "https://news.pedaily.cn/202605/564455.shtml",
+            "source_title": "首发| 让机器人拥有触觉，新智具身天使轮融资近亿",
+            "source_content_hash": "a3d55e3960392661",
+            "quote": "上海科创集团旗下策源基金等共同投资",
+            "quote_hash": "fd32646d691c32c4b456ffe2d688c77f78f12fabd156fb996c5137eabc1d0ce3"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e666934339b27e85",
+        "source_url": "https://news.pedaily.cn/202605/564455.shtml",
+        "source_title": "首发| 让机器人拥有触觉，新智具身天使轮融资近亿",
+        "source_content_hash": "a3d55e3960392661",
+        "quote": "上海科创集团旗下策源基金等共同投资",
+        "quote_hash": "fd32646d691c32c4b456ffe2d688c77f78f12fabd156fb996c5137eabc1d0ce3"
+      }
+    ]
+  }
+}

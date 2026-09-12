@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-27712c8e0f12c9",
+    "name": "德同资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-25",
+    "latest_disclosed_at": "2026-05-25",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-60910505210bd6f1",
+        "canonical_entity_id": "",
+        "name": "寅成智能"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-82eac925413d50a4",
+        "funding_insight_id": "FI-6a54d87fecbb5969",
+        "event_ids": [
+          "EV-6ff97d32bdcc8586"
+        ],
+        "company_entity_id": "EN-60910505210bd6f1",
+        "company_canonical_entity_id": "",
+        "company_name": "寅成智能",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": 10000000,
+          "max_value": 10000000,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "千万美元"
+        },
+        "announced_at": "2026-05-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2eb0f3061c0992c0",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-25/doc-inhzamvs3624738.shtml",
+            "source_title": "首发| 复旦学姐带队，寅成智能融资千万美元",
+            "source_content_hash": "b305b6f8f03a0db3",
+            "quote": "寅成智能正式完成千万美元天使轮融资，本轮领投方为德同资本，某产业资本方跟投。",
+            "quote_hash": "eb1046f7a5aa336c0c4c7c7455a6fb39267e99a8aab29c2bb95de229b67e9785"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-2eb0f3061c0992c0",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-25/doc-inhzamvs3624738.shtml",
+        "source_title": "首发| 复旦学姐带队，寅成智能融资千万美元",
+        "source_content_hash": "b305b6f8f03a0db3",
+        "quote": "寅成智能正式完成千万美元天使轮融资，本轮领投方为德同资本，某产业资本方跟投。",
+        "quote_hash": "eb1046f7a5aa336c0c4c7c7455a6fb39267e99a8aab29c2bb95de229b67e9785"
+      }
+    ]
+  }
+}

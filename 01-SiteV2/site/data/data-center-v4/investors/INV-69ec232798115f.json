@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-69ec232798115f",
+    "name": "兴泰资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-08-14",
+    "latest_disclosed_at": "2026-08-14",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-26bd2eb7ed18fd11",
+        "funding_insight_id": "FI-348de8d897f7b7a5",
+        "event_ids": [
+          "EV-ea916006167c6c43"
+        ],
+        "company_entity_id": "EN-b59ef7313eebea39",
+        "company_canonical_entity_id": "",
+        "company_name": "原力无限科技控股（浙江）有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-08-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b860ba28c7fca8f1",
+            "source_url": "https://www.tmtpost.com/7507888.html",
+            "source_title": "ELU.AI（原力无限）完成数亿元Pre-A轮融资，全栈布局具身智能产业｜融资首发-钛媒体官方网站",
+            "source_content_hash": "43a13e6e312eadc7",
+            "quote": "ELU.AI（原力无限机器人）宣布完成数亿元人民币Pre-A轮融资，投资方为力鼎资本、杭实产投、兴泰资本等，以及天使轮投资方创世伙伴创投持续追投。",
+            "quote_hash": "92e1caac32f3c550ac42d89a191db76c4e6fd2671e71f64183a8c98d5bb80f8a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b860ba28c7fca8f1",
+        "source_url": "https://www.tmtpost.com/7507888.html",
+        "source_title": "ELU.AI（原力无限）完成数亿元Pre-A轮融资，全栈布局具身智能产业｜融资首发-钛媒体官方网站",
+        "source_content_hash": "43a13e6e312eadc7",
+        "quote": "ELU.AI（原力无限机器人）宣布完成数亿元人民币Pre-A轮融资，投资方为力鼎资本、杭实产投、兴泰资本等，以及天使轮投资方创世伙伴创投持续追投。",
+        "quote_hash": "92e1caac32f3c550ac42d89a191db76c4e6fd2671e71f64183a8c98d5bb80f8a"
+      }
+    ]
+  }
+}

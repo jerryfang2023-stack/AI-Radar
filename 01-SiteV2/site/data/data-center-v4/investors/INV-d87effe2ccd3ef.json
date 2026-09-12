@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-d87effe2ccd3ef",
+    "name": "C资本(C Capital)",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-08-04",
+    "latest_disclosed_at": "2026-09-11",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 1
+    },
+    "round_codes": [
+      "series_a2"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-42ba84199bafa1f1",
+        "canonical_entity_id": "",
+        "name": "昂听 ELEHEAR"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5ab80411cccd151f",
+        "funding_insight_id": "FI-8bb77ef557b4754b",
+        "event_ids": [
+          "EV-0cc745a319a25f6e"
+        ],
+        "company_entity_id": "EN-42ba84199bafa1f1",
+        "company_canonical_entity_id": "",
+        "company_name": "昂听 ELEHEAR",
+        "round": "A2轮",
+        "round_code": "series_a2",
+        "round_original": "A2轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-5ba892cc4cd3496f",
+            "source_url": "https://www.cyzone.cn/article/846160.html",
+            "source_title": "昂听ELEHEAR 完成数千万元新一轮融资，C资本领投",
+            "source_content_hash": "8964aa6d1b5771e5",
+            "quote": "昂听 ELEHEAR 再度完成数千万元的A2轮融资，A2轮由C资本（C Capital）领投。",
+            "quote_hash": "0a44cf998628b51612f4b762a10c3e1ce42946ebfd47ca021b20176cd39b6bae"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-33ed5dea3c8e2dd9",
+        "funding_insight_id": "FI-489d15d001722d8d",
+        "event_ids": [
+          "EV-a99c491c33412dc2"
+        ],
+        "company_entity_id": "EN-ecf226574e481ea7",
+        "company_canonical_entity_id": "",
+        "company_name": "听象科技/昂听（ELEHEAR）",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A2轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-bc47ac346570c548",
+            "source_url": "https://news.pedaily.cn/202609/568797.shtml",
+            "source_title": "昂听ELEHEAR完成数千万元新一轮融资，加快构建一体化的听力健康服务体系_投资界",
+            "source_content_hash": "b7e65ecd355afe39",
+            "quote": "A2轮由 C资本（C Capital） 领投。",
+            "quote_hash": "92af83f6aa18e53578d8da7cd27e2588e33c9b290dc7e5ff7043d87378c9859d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-5ba892cc4cd3496f",
+        "source_url": "https://www.cyzone.cn/article/846160.html",
+        "source_title": "昂听ELEHEAR 完成数千万元新一轮融资，C资本领投",
+        "source_content_hash": "8964aa6d1b5771e5",
+        "quote": "昂听 ELEHEAR 再度完成数千万元的A2轮融资，A2轮由C资本（C Capital）领投。",
+        "quote_hash": "0a44cf998628b51612f4b762a10c3e1ce42946ebfd47ca021b20176cd39b6bae"
+      },
+      {
+        "source_id": "FISRC-bc47ac346570c548",
+        "source_url": "https://news.pedaily.cn/202609/568797.shtml",
+        "source_title": "昂听ELEHEAR完成数千万元新一轮融资，加快构建一体化的听力健康服务体系_投资界",
+        "source_content_hash": "b7e65ecd355afe39",
+        "quote": "A2轮由 C资本（C Capital） 领投。",
+        "quote_hash": "92af83f6aa18e53578d8da7cd27e2588e33c9b290dc7e5ff7043d87378c9859d"
+      }
+    ]
+  }
+}

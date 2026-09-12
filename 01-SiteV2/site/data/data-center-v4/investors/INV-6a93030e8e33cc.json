@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-6a93030e8e33cc",
+    "name": "水木基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-09-07",
+    "latest_disclosed_at": "2026-09-07",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_b_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d1d137efd55a338c",
+        "canonical_entity_id": "",
+        "name": "合肥中科类脑智能技术有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-2dfcfc7ed8940f86",
+        "funding_insight_id": "FI-2f0db3ea179be704",
+        "event_ids": [
+          "EV-3a467bfb6d9b1b52"
+        ],
+        "company_entity_id": "EN-d1d137efd55a338c",
+        "company_canonical_entity_id": "",
+        "company_name": "合肥中科类脑智能技术有限公司",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ccc6923f9f7ac18",
+            "source_url": "https://news.pedaily.cn/202609/568582.shtml",
+            "source_title": "中科类脑完成数亿元B+轮战略融资，助力产业数智升级",
+            "source_content_hash": "1553ea551029de53",
+            "quote": "本轮融资由 央企产业龙头旗下中车资本 领投， 银杏谷资本、水木基金、启迪基金 等机构跟投。",
+            "quote_hash": "6170f8c034beb908a5ee3c538a1a8c56cce2b0b5488e2ee791c6b010078b0354"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1ccc6923f9f7ac18",
+        "source_url": "https://news.pedaily.cn/202609/568582.shtml",
+        "source_title": "中科类脑完成数亿元B+轮战略融资，助力产业数智升级",
+        "source_content_hash": "1553ea551029de53",
+        "quote": "本轮融资由 央企产业龙头旗下中车资本 领投， 银杏谷资本、水木基金、启迪基金 等机构跟投。",
+        "quote_hash": "6170f8c034beb908a5ee3c538a1a8c56cce2b0b5488e2ee791c6b010078b0354"
+      }
+    ]
+  }
+}

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-d389090ac64f2a",
@@ -20,24 +20,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-04-16",
-    "latest_disclosed_at": "2026-04-17",
+    "latest_disclosed_at": "2026-05-22",
     "role_counts": {
+      "lead": 1,
       "participant": 2
     },
     "round_codes": [
-      "multi_round",
-      "pre_series_a"
+      "pre_series_a",
+      "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-94f3cca8dd7fa0ff",
+        "canonical_entity_id": "",
+        "name": "北京中科沌序科技有限公司"
+      },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -46,17 +52,57 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-03a294a5a8be6257",
-        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "activity_id": "IA-2fb25b69768de2c1",
+        "funding_insight_id": "FI-5e5fbfc1e1a1ca79",
+        "event_ids": [
+          "EV-3b817460afe0d3a6"
+        ],
+        "company_entity_id": "EN-94f3cca8dd7fa0ff",
+        "company_canonical_entity_id": "",
+        "company_name": "北京中科沌序科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a9a5b8f84e844d6",
+            "source_url": "https://news.pedaily.cn/202605/564241.shtml",
+            "source_title": "中科沌序完成数千万元种子轮融资，首程控股领投",
+            "source_content_hash": "dea6b78e354b8fac",
+            "quote": "本轮融资由 首程控股 （0697.HK）领投，钧犀资本、顺禧基金跟投",
+            "quote_hash": "b17df837c04eaacf63cee14f4a5e25d6826d714a0f4556b17cf758bc40c36ceb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f60b4def3f0b3980",
+        "funding_insight_id": "FI-b9eb4320e43ddfdf",
         "event_ids": [
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "company_name": "它石智航",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
         "amount_original": "4.55亿美金",
         "amount_normalized": {
           "currency": "USD",
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-7a9a5b8f84e844d6",
+        "source_url": "https://news.pedaily.cn/202605/564241.shtml",
+        "source_title": "中科沌序完成数千万元种子轮融资，首程控股领投",
+        "source_content_hash": "dea6b78e354b8fac",
+        "quote": "本轮融资由 首程控股 （0697.HK）领投，钧犀资本、顺禧基金跟投",
+        "quote_hash": "b17df837c04eaacf63cee14f4a5e25d6826d714a0f4556b17cf758bc40c36ceb"
+      },
       {
         "source_id": "FISRC-b4d6b7523ee32ad7",
         "source_url": "https://news.pedaily.cn/202604/562863.shtml",

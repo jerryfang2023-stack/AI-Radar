@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-ec4dbac3ccfa7267",
+    "name": "企业深圳市深度智控科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c6437ac13cb07531"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-09",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-c6437ac13cb07531"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c6437ac13cb07531",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "物理 AI 企业深度智控（DeepCtrls）完成数亿元 B 轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-f6aaf378a6d9e724"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-489476b9a1d07146",
+            "fundingInsightId": "FI-8fc13251055733d7"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "industrials",
+            "name": "工业",
+            "entityIds": [
+              "EN-f6aaf378a6d9e724"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d1735786458dd8ad",
+            "fundingInsightId": "FI-8fc13251055733d7"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-f6aaf378a6d9e724"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d775c4bd5809d41b",
+            "fundingInsightId": "FI-8fc13251055733d7"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-f6aaf378a6d9e724"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0c37c11e681ae6ce",
+            "fundingInsightId": "FI-8fc13251055733d7"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-f6aaf378a6d9e724"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4cd2aafc4a190ec6",
+            "fundingInsightId": "FI-8fc13251055733d7"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-f6aaf378a6d9e724"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f60e47ce48fa8f54",
+            "fundingInsightId": "FI-8fc13251055733d7"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-f6aaf378a6d9e724"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9a78751ee721da55",
+            "fundingInsightId": "FI-8fc13251055733d7"
+          }
+        ],
+        "entityIds": [
+          "EN-f6aaf378a6d9e724",
+          "EN-ec4dbac3ccfa7267"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

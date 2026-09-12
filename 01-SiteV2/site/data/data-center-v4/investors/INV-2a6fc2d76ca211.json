@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-2a6fc2d76ca211",
@@ -20,23 +20,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-08-12",
     "role_counts": {
-      "participant": 3
+      "co_lead": 1,
+      "participant": 4
     },
     "round_codes": [
       "angel",
-      "other",
-      "series_a1"
+      "seed",
+      "seed_plus_plus",
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
@@ -45,9 +47,19 @@
         "name": "北京小雨智造科技有限公司"
       },
       {
-        "entity_id": "EN-74b42431957780b9",
+        "entity_id": "EN-a3802b1f5a583189",
         "canonical_entity_id": "",
-        "name": "昉擎科技"
+        "name": "深圳墨奇智能技术有限公司"
+      },
+      {
+        "entity_id": "EN-d361e2fd6b342245",
+        "canonical_entity_id": "",
+        "name": "深圳忆纪元科技有限公司"
+      },
+      {
+        "entity_id": "EN-82c84d2f6490e62b",
+        "canonical_entity_id": "",
+        "name": "深圳忆纪元科技有限公司"
       },
       {
         "entity_id": "EN-4731aa5b66658c7f",
@@ -57,28 +69,28 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-2dc51f9c5ddb35e3",
-        "funding_insight_id": "FI-c7196586a871ba41",
+        "activity_id": "IA-1c4621875e0e6482",
+        "funding_insight_id": "FI-42815b3fc014db68",
         "event_ids": [
-          "EV-4fbbf16279e27000"
+          "EV-64c5290cc685eb93"
         ],
-        "company_entity_id": "EN-74b42431957780b9",
+        "company_entity_id": "EN-d361e2fd6b342245",
         "company_canonical_entity_id": "",
-        "company_name": "昉擎科技",
-        "round": "A1轮",
-        "round_code": "series_a1",
-        "round_original": "A1轮",
-        "amount_original": "超过 100 亿人民币",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子++轮",
+        "round_code": "seed_plus_plus",
+        "round_original": "种子++轮",
+        "amount_original": "数亿元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": 10000000000,
-          "min_value": 10000000000,
-          "max_value": null,
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
           "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 100 亿元"
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
         },
-        "announced_at": "2026-08-03",
+        "announced_at": "2026-08-12",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
@@ -87,26 +99,106 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-75b04daca915e1ca",
-            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-            "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-            "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
+            "source_id": "FISRC-4a456deffcbf4bfd",
+            "source_url": "https://news.pedaily.cn/202608/567590.shtml",
+            "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
+            "source_content_hash": "c26b4f6c5b757ce3",
+            "quote": "本轮融资由 北洋海棠基金、尚势资本、仁爱资本联合领投，银杏谷资本跟投，华业天成、达泰资本 等老股东持续加码投资。",
+            "quote_hash": "c940fe3b12e9e760642901ea669b9984b6b36816b863de7d64621d7344c07512"
           }
         ]
       },
       {
-        "activity_id": "IA-f239488033425852",
-        "funding_insight_id": "FI-bd8fb7f7d61ed08d",
+        "activity_id": "IA-7d1b07d02627f9df",
+        "funding_insight_id": "FI-0cab7e240eb542ce",
+        "event_ids": [
+          "EV-e85e6fc6d630d56c"
+        ],
+        "company_entity_id": "EN-a3802b1f5a583189",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳墨奇智能技术有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bea9d0be613bc1cd",
+            "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+            "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+            "source_content_hash": "311224a4dfb089df",
+            "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+            "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ce198fa3543ed2d4",
+        "funding_insight_id": "FI-a6350cc6f597f274",
+        "event_ids": [
+          "EV-34a58f84a7ba4e92"
+        ],
+        "company_entity_id": "EN-82c84d2f6490e62b",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-924702999fc88d2f",
+            "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
+            "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
+            "source_content_hash": "76bcd79d46511d45",
+            "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
+            "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0aa6bbd4a9681ba1",
+        "funding_insight_id": "FI-b2b578ba2d5dc007",
         "event_ids": [
           "EV-be59d9048dd1b6a0"
         ],
         "company_entity_id": "EN-7d0445227e7dde72",
         "company_canonical_entity_id": "",
         "company_name": "北京小雨智造科技有限公司",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "数亿元",
         "amount_normalized": {
@@ -179,12 +271,28 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-75b04daca915e1ca",
-        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-        "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-        "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
+        "source_id": "FISRC-4a456deffcbf4bfd",
+        "source_url": "https://news.pedaily.cn/202608/567590.shtml",
+        "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
+        "source_content_hash": "c26b4f6c5b757ce3",
+        "quote": "本轮融资由 北洋海棠基金、尚势资本、仁爱资本联合领投，银杏谷资本跟投，华业天成、达泰资本 等老股东持续加码投资。",
+        "quote_hash": "c940fe3b12e9e760642901ea669b9984b6b36816b863de7d64621d7344c07512"
+      },
+      {
+        "source_id": "FISRC-bea9d0be613bc1cd",
+        "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+        "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+        "source_content_hash": "311224a4dfb089df",
+        "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+        "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+      },
+      {
+        "source_id": "FISRC-924702999fc88d2f",
+        "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
+        "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
+        "source_content_hash": "76bcd79d46511d45",
+        "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
+        "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
       },
       {
         "source_id": "FISRC-7cae6e0a712567de",

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-058ea40e9bb574",
+    "name": "卧安机器人",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-08-27",
+    "latest_disclosed_at": "2026-08-27",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d47eb2cee65d0687",
+        "canonical_entity_id": "",
+        "name": "深圳星际觅元科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-562f89d1cf0c45da",
+        "funding_insight_id": "FI-173183ad82946f59",
+        "event_ids": [
+          "EV-c17a6102aab72f4f"
+        ],
+        "company_entity_id": "EN-d47eb2cee65d0687",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳星际觅元科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-08-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-21d53f49c93ea68c",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
+            "source_title": "「星际觅元」完成千万元种子轮融资",
+            "source_content_hash": "9d467a65d3cd4704",
+            "quote": "由同创伟业领投 ，家庭具身智能 机器人 企业 卧安机器人和旭源资本 跟投",
+            "quote_hash": "c818f14cd31e8b8e275f032629a9e2e10622e930a6de0bdd8347e2d754eaeeb0"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-21d53f49c93ea68c",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
+        "source_title": "「星际觅元」完成千万元种子轮融资",
+        "source_content_hash": "9d467a65d3cd4704",
+        "quote": "由同创伟业领投 ，家庭具身智能 机器人 企业 卧安机器人和旭源资本 跟投",
+        "quote_hash": "c818f14cd31e8b8e275f032629a9e2e10622e930a6de0bdd8347e2d754eaeeb0"
+      }
+    ]
+  }
+}

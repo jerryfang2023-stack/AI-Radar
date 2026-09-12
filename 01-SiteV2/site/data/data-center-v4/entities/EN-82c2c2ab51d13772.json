@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-82c2c2ab51d13772",
+    "name": "深圳星际觅元科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c17a6102aab72f4f"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-27",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-c17a6102aab72f4f"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c17a6102aab72f4f",
+        "dataDate": "2026-09-12",
+        "date": "2026-08-27",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "「星际觅元」完成千万元种子轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6e63f7874c09249f",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "data",
+            "name": "数据",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-18f643907a626710",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "synthetic_data",
+            "name": "合成数据",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-238444f47788894c",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b25d9925747bf151",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-feb40a6ed05b38e8",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ee4b772095ef6e8b",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-09ba34a4ad1ed4af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-09ba34a4ad1ed4af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-09ba34a4ad1ed4af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1f1e166c061c2d51",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-695d3d87d8ed5383",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1efcece392ad0c26",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-d47eb2cee65d0687"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b6e180167269f31d",
+            "fundingInsightId": "FI-0be909af13d103b6"
+          }
+        ],
+        "entityIds": [
+          "EN-82c2c2ab51d13772",
+          "EN-d47eb2cee65d0687",
+          "EN-09ba34a4ad1ed4af"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-f01062ad2956c510",
+      "snapshotKey": "f01062ad2956c510",
+      "snapshotId": "HWS-e4ad2c0b6fa7450a",
+      "eventId": "EV-c17a6102aab72f4f",
+      "eventIds": [
+        "EV-c17a6102aab72f4f"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "深圳星际觅元科技有限公司",
+      "subject": "深圳星际觅元科技有限公司",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "supply"
+      ],
+      "latestValues": {
+        "supply": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1a1ca9018e1561b6"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-5e97526f97f84d10",
+          "fact_type": "supply",
+          "observed_at": "2026-08-27T03:52:00.000Z",
+          "subject_entity_id": "EN-82c2c2ab51d13772",
+          "subject_name": "深圳星际觅元科技有限公司",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "深圳星际觅元科技有限公司（简称：星际觅元）是一家具身智能系统供应商。投资界（ID：pedaily2012）8月27日消息，星际觅元 完成千万元种子轮融资，由同创伟业领投 ，家庭具身智能 机器人 企业 卧安机器人和旭源资本 跟投。",
+          "event_refs": [
+            "EV-c17a6102aab72f4f"
+          ],
+          "claim_ref": "CL-147418a7de89c64e",
+          "source_refs": [
+            "SA-596e395ead74854b",
+            "SA-cd5a351d2a372766",
+            "SA-8b541f003c8e38b9",
+            "SA-78dd65a97e613f7c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-1e735a36c583ef30",
+          "fact_type": "supply",
+          "observed_at": "2026-08-27T03:52:00.000Z",
+          "subject_entity_id": "EN-82c2c2ab51d13772",
+          "subject_name": "深圳星际觅元科技有限公司",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "36氪获悉，近日，全域场景下具身智能系统供应商“星际觅元”完成千万元种子轮融资，由同创伟业领投，家庭具身智能机器人企业卧安机器人和旭源资本跟投。“星际觅元”的具身智能系统，计划通过自研“多模态物理资产重构引擎+高拟真场景模拟生成器+全域具身智能大脑”，打通物理数据生产、全域数据仿真生成与模型训练、认知决策和机器人部署环节，使机器人能够理解环境和任务，并自主完成复杂操作。",
+          "event_refs": [
+            "EV-c17a6102aab72f4f"
+          ],
+          "claim_ref": "CL-57de966e3e1a45dd",
+          "source_refs": [
+            "SA-596e395ead74854b",
+            "SA-cd5a351d2a372766",
+            "SA-8b541f003c8e38b9",
+            "SA-78dd65a97e613f7c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-1a1ca9018e1561b6",
+          "fact_type": "supply",
+          "observed_at": "2026-08-27T03:52:00.000Z",
+          "subject_entity_id": "EN-82c2c2ab51d13772",
+          "subject_name": "深圳星际觅元科技有限公司",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "深圳星际觅元科技有限公司（简称：星际觅元）是一家具身智能系统供应商。投资界（ID：pedaily2012）8月27日消息，星际觅元完成千万元种子轮融资，由同创伟业领投，家庭具身智能机器人企业卧安机器人和旭源资本跟投。",
+          "event_refs": [
+            "EV-c17a6102aab72f4f"
+          ],
+          "claim_ref": "CL-bcc520b8557be0ad",
+          "source_refs": [
+            "SA-596e395ead74854b",
+            "SA-cd5a351d2a372766",
+            "SA-8b541f003c8e38b9",
+            "SA-78dd65a97e613f7c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-d47eb2cee65d0687"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-d47eb2cee65d0687"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-09ba34a4ad1ed4af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-09ba34a4ad1ed4af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-d47eb2cee65d0687"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
+      "entityIds": [
+        "EN-82c2c2ab51d13772",
+        "EN-d47eb2cee65d0687",
+        "EN-09ba34a4ad1ed4af"
+      ]
+    }
+  ]
+}

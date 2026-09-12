@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-160f3a254d459b",
+    "name": "浙江华宇",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-02-02",
+    "latest_disclosed_at": "2026-02-02",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_ipo"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a3b8fbb2200a105a",
+        "canonical_entity_id": "",
+        "name": "卓世科技（海南）股份有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-d2bbf192231b1e4a",
+        "funding_insight_id": "FI-afd3b8c3d49ef1af",
+        "event_ids": [
+          "EV-3c408fe984c73089"
+        ],
+        "company_entity_id": "EN-a3b8fbb2200a105a",
+        "company_canonical_entity_id": "",
+        "company_name": "卓世科技（海南）股份有限公司",
+        "round": "Pre-IPO",
+        "round_code": "pre_ipo",
+        "round_original": "Pre-IPO",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-02-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-60aa4fb60c7d6090",
+            "source_url": "https://www.sohu.com/a/982704085_120773109",
+            "source_title": "卓世科技完成Pre-IPO轮融资，加速“AI大脑”赋能实体产业",
+            "source_content_hash": "01300b7a97bff4c9",
+            "quote": "本轮融资由国泰君安创新投、优必选科技、国新国证投资、浙江华宇等机构共同参与。",
+            "quote_hash": "e8588604f33eb5b25111f976984492a8182aae5ebb86e9432dec3e8a1c6ad24f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-60aa4fb60c7d6090",
+        "source_url": "https://www.sohu.com/a/982704085_120773109",
+        "source_title": "卓世科技完成Pre-IPO轮融资，加速“AI大脑”赋能实体产业",
+        "source_content_hash": "01300b7a97bff4c9",
+        "quote": "本轮融资由国泰君安创新投、优必选科技、国新国证投资、浙江华宇等机构共同参与。",
+        "quote_hash": "e8588604f33eb5b25111f976984492a8182aae5ebb86e9432dec3e8a1c6ad24f"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-3002f4189b64c2",
+    "name": "嘉兴沃永",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-07-31",
+    "latest_disclosed_at": "2026-07-31",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-dbe732a0776a06d2",
+        "funding_insight_id": "FI-a365659cfe78a9fa",
+        "event_ids": [
+          "EV-2cf2ab399eb05035"
+        ],
+        "company_entity_id": "EN-66c09c4c12ce671c",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳中科欣扬生物科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "亿元级融资",
+        "amount_original": "亿元级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-07-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮战略投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-65e2ca710ece93bc",
+            "source_url": "https://www.36kr.com/p/1627551190660871",
+            "source_title": "36氪首发｜中科欣扬完成近2亿元B轮融资，中金系、珀莱雅系参与投资-36氪",
+            "source_content_hash": "37f464b0e484f4f5",
+            "quote": "本轮融资由中金资本旗下中金佳泰叁期基金领投，爱尔医疗、嘉兴沃永为战略投资方。",
+            "quote_hash": "33525476f5cd026e8afe1a6f75f5db64caacf3af56c00218a1e0346dcf71b236"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-65e2ca710ece93bc",
+        "source_url": "https://www.36kr.com/p/1627551190660871",
+        "source_title": "36氪首发｜中科欣扬完成近2亿元B轮融资，中金系、珀莱雅系参与投资-36氪",
+        "source_content_hash": "37f464b0e484f4f5",
+        "quote": "本轮融资由中金资本旗下中金佳泰叁期基金领投，爱尔医疗、嘉兴沃永为战略投资方。",
+        "quote_hash": "33525476f5cd026e8afe1a6f75f5db64caacf3af56c00218a1e0346dcf71b236"
+      }
+    ]
+  }
+}

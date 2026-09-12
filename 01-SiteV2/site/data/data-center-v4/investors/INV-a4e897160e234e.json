@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-a4e897160e234e",
+    "name": "上海半导体产投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-08-28",
+    "latest_disclosed_at": "2026-08-28",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "angel_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-086c739ca6223458",
+        "canonical_entity_id": "",
+        "name": "北京清蓝智汇科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9fcb796587637d29",
+        "funding_insight_id": "FI-1b4327c7d35c5dad",
+        "event_ids": [
+          "EV-f6c882e143c0d634"
+        ],
+        "company_entity_id": "EN-086c739ca6223458",
+        "company_canonical_entity_id": "",
+        "company_name": "北京清蓝智汇科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8972e9b03b93424b",
+            "source_url": "https://news.pedaily.cn/202608/568235.shtml",
+            "source_title": "PureblueAI清蓝完成数千万元天使+轮融资，GEO数字员工正式上线",
+            "source_content_hash": "e7174a459de024f7",
+            "quote": "本轮融资由 上海半导体产投、九方智投 等机构共同投资。",
+            "quote_hash": "701337cfdc3c7df411585f8017f645e9f924273e626da90bdc3186b5cbdcba71"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8972e9b03b93424b",
+        "source_url": "https://news.pedaily.cn/202608/568235.shtml",
+        "source_title": "PureblueAI清蓝完成数千万元天使+轮融资，GEO数字员工正式上线",
+        "source_content_hash": "e7174a459de024f7",
+        "quote": "本轮融资由 上海半导体产投、九方智投 等机构共同投资。",
+        "quote_hash": "701337cfdc3c7df411585f8017f645e9f924273e626da90bdc3186b5cbdcba71"
+      }
+    ]
+  }
+}

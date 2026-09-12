@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-4d645fa4912c6c",
+    "name": "苏创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-03-05",
+    "latest_disclosed_at": "2026-08-21",
+    "role_counts": {
+      "participant": 3
+    },
+    "round_codes": [
+      "pre_series_b",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e7492db096492304",
+        "canonical_entity_id": "",
+        "name": "极佳视界"
+      },
+      {
+        "entity_id": "EN-eddb3e851558ed80",
+        "canonical_entity_id": "",
+        "name": "清雁科技（北京）有限公司"
+      },
+      {
+        "entity_id": "EN-4a9900b7b05676d2",
+        "canonical_entity_id": "",
+        "name": "清雁科技（北京）有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9a2e416147ee5bb6",
+        "funding_insight_id": "FI-c185fb71d34b0f0c",
+        "event_ids": [
+          "EV-a72baefac91ba841"
+        ],
+        "company_entity_id": "EN-eddb3e851558ed80",
+        "company_canonical_entity_id": "",
+        "company_name": "清雁科技（北京）有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-21",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-21e3c93bae47f754",
+            "source_url": "https://news.pedaily.cn/202608/567947.shtml",
+            "source_title": "清雁科技完成数亿元A轮融资，聚焦几何物理驱动的物理AI基础设施",
+            "source_content_hash": "df80d47fccb69fc2",
+            "quote": "本轮融资由 君联资本领投，苏创投、宁波亿时跟投",
+            "quote_hash": "f3a70583671d0dc0965f7734f9accb217106694094664cf28523f969683fd994"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-373aab4b09ad7ce1",
+        "funding_insight_id": "FI-dcd79ea72d2e09b1",
+        "event_ids": [
+          "EV-c9a11db49e1afbe5"
+        ],
+        "company_entity_id": "EN-4a9900b7b05676d2",
+        "company_canonical_entity_id": "",
+        "company_name": "清雁科技（北京）有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b7725acf292395aa",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-19/doc-ininvmyx9448955.shtml",
+            "source_title": "清雁科技完成数亿元A轮融资",
+            "source_content_hash": "2707e235463cb763",
+            "quote": "本轮融资由君联资本领投，苏创投、宁波亿时跟投。",
+            "quote_hash": "9e9ebbcedcfb0c95664330687e92995d8ab583cce32cf4a91958a80665cf5925"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-664d1b2be8458ed2",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
+            "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-21e3c93bae47f754",
+        "source_url": "https://news.pedaily.cn/202608/567947.shtml",
+        "source_title": "清雁科技完成数亿元A轮融资，聚焦几何物理驱动的物理AI基础设施",
+        "source_content_hash": "df80d47fccb69fc2",
+        "quote": "本轮融资由 君联资本领投，苏创投、宁波亿时跟投",
+        "quote_hash": "f3a70583671d0dc0965f7734f9accb217106694094664cf28523f969683fd994"
+      },
+      {
+        "source_id": "FISRC-b7725acf292395aa",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-19/doc-ininvmyx9448955.shtml",
+        "source_title": "清雁科技完成数亿元A轮融资",
+        "source_content_hash": "2707e235463cb763",
+        "quote": "本轮融资由君联资本领投，苏创投、宁波亿时跟投。",
+        "quote_hash": "9e9ebbcedcfb0c95664330687e92995d8ab583cce32cf4a91958a80665cf5925"
+      },
+      {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
+        "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
+      }
+    ]
+  }
+}

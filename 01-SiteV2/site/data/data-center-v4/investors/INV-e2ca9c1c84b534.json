@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-e2ca9c1c84b534",
+    "name": "合肥产投科创种子基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-29",
+    "latest_disclosed_at": "2026-07-29",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-09737a1a465af642",
+        "canonical_entity_id": "",
+        "name": "合肥梦塔科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f4c98c0ffbabf38f",
+        "funding_insight_id": "FI-60fa0e2733611a27",
+        "event_ids": [
+          "EV-58a0983e0b45135b"
+        ],
+        "company_entity_id": "EN-09737a1a465af642",
+        "company_canonical_entity_id": "",
+        "company_name": "合肥梦塔科技有限公司",
+        "round": "种子+轮",
+        "round_code": "seed_plus",
+        "round_original": "种子+轮",
+        "amount_original": "超千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000,
+          "min_value": 10000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1000 万元"
+        },
+        "announced_at": "2026-07-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1c8eaea364bcdb2f",
+            "source_url": "https://news.pedaily.cn/202607/566967.shtml",
+            "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式",
+            "source_content_hash": "377c392d6365234a",
+            "quote": "Monstar梦塔科技已完成 超千万元种子+轮融资 ，由 合肥产投科创种子基金领投，小遛科技跟投，老股东奇绩创坛、启迪之星持续支持。",
+            "quote_hash": "37d1ec65c0044bab10ab122ddbca857a93366579cd3fdd3009924ca18ac010bb"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1c8eaea364bcdb2f",
+        "source_url": "https://news.pedaily.cn/202607/566967.shtml",
+        "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式",
+        "source_content_hash": "377c392d6365234a",
+        "quote": "Monstar梦塔科技已完成 超千万元种子+轮融资 ，由 合肥产投科创种子基金领投，小遛科技跟投，老股东奇绩创坛、启迪之星持续支持。",
+        "quote_hash": "37d1ec65c0044bab10ab122ddbca857a93366579cd3fdd3009924ca18ac010bb"
+      }
+    ]
+  }
+}

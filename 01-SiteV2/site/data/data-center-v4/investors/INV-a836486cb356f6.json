@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-a836486cb356f6",
+    "name": "华柏基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-07",
+    "latest_disclosed_at": "2026-09-07",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-8f142b0ed98ed6e4",
+        "funding_insight_id": "FI-2f0db3ea179be704",
+        "event_ids": [
+          "EV-3a467bfb6d9b1b52"
+        ],
+        "company_entity_id": "EN-d1d137efd55a338c",
+        "company_canonical_entity_id": "",
+        "company_name": "合肥中科类脑智能技术有限公司",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4cd330eaa5f3d5fc",
+            "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
+            "source_title": "中科类脑 | 项目信息-36氪",
+            "source_content_hash": "172b52b0715adcdc",
+            "quote": "A+轮 2021-08 未透露 东方富海 ， 华柏基金 ， 中融盈通",
+            "quote_hash": "6e6989cb22afb0fa6cc996e466e9e903be7d909193bd7c48fd02ccf9ee5ec9b2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4cd330eaa5f3d5fc",
+        "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
+        "source_title": "中科类脑 | 项目信息-36氪",
+        "source_content_hash": "172b52b0715adcdc",
+        "quote": "A+轮 2021-08 未透露 东方富海 ， 华柏基金 ， 中融盈通",
+        "quote_hash": "6e6989cb22afb0fa6cc996e466e9e903be7d909193bd7c48fd02ccf9ee5ec9b2"
+      }
+    ]
+  }
+}

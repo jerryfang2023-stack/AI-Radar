@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-f310a64a471b49",
@@ -20,29 +20,34 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 1,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 5,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-03-25",
+    "china_market_activity_count": 3,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-02-11",
     "latest_disclosed_at": "2026-05-07",
     "role_counts": {
-      "historical_or_ambiguous": 4,
-      "participant": 2
+      "historical_or_ambiguous": 5,
+      "participant": 3
     },
     "round_codes": [
-      "multi_round",
-      "pre_series_a"
+      "pre_series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "name": "它石智航"
+      },
+      {
+        "entity_id": "EN-a6e5382c05dd0d16",
+        "canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "name": "星海图"
       }
     ],
     "activities": [
@@ -87,17 +92,17 @@
         ]
       },
       {
-        "activity_id": "IA-26259ee5b13315a8",
-        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "activity_id": "IA-9f9aea3dfb7f9409",
+        "funding_insight_id": "FI-b9eb4320e43ddfdf",
         "event_ids": [
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "company_name": "它石智航",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
         "amount_original": "4.55亿美金",
         "amount_normalized": {
           "currency": "USD",
@@ -207,16 +212,17 @@
         ]
       },
       {
-        "activity_id": "IA-53f88840aba686e8",
-        "funding_insight_id": "FI-af2461a497e30ffa",
+        "activity_id": "IA-13452684cbd27cc6",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
         "event_ids": [
+          "EV-0ff10475efa53e6c",
           "EV-435d7e7878b0c326"
         ],
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "20亿元",
         "amount_normalized": {
@@ -233,16 +239,16 @@
         "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
-        "role": "B轮主要老股东追加",
+        "role": "历史轮次投资方",
         "role_code": "historical_or_ambiguous",
         "evidence": [
           {
-            "source_id": "FISRC-1d57bbe4edb9e812",
-            "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
-            "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
-            "source_content_hash": "5cf2794be5d5263d",
-            "quote": "主要老股东 凯辉基金 、 美团龙珠 、 今日资本 、 襄禾资本 和 高瓴创投 超额或满额追加",
-            "quote_hash": "42422a062e7fccb11702f9a712dee008ad10ef60f7e373ef2947d5ba1314e136"
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "新进凯辉基金、联想创投、海尔资本、今日资本、美团龙珠、中金保时捷基金、襄禾资本、北京机器人产业发展投资基金、亦庄国投等知名机构。",
+            "quote_hash": "ce0234246a9291f7b30971897c1b63d65888b8b395d41b136fd13f1d3a9ec9bf"
           }
         ]
       },
@@ -285,6 +291,86 @@
             "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
           }
         ]
+      },
+      {
+        "activity_id": "IA-390d4a8636b6e994",
+        "funding_insight_id": "FI-d5293ab06cfaa935",
+        "event_ids": [
+          "EV-371bc68f72326c02"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2707f48aa6e437b7",
+            "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+            "source_title": "清华90后带队，刚刚星海图又融10亿",
+            "source_content_hash": "85e4d40faa23c515",
+            "quote": "另外五位主要老股东凯辉基金、美团龙珠、今日资本、襄禾资本和高瓴创投联手超额或满额追加。",
+            "quote_hash": "f1ac7ba61a81f0b508053b00072c9796e40b7d27a78bb01f6c2a48f4cbfeffc1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e89e4c4dd5f3e9c8",
+        "funding_insight_id": "FI-d5293ab06cfaa935",
+        "event_ids": [
+          "EV-371bc68f72326c02"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A4轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2707f48aa6e437b7",
+            "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+            "source_title": "清华90后带队，刚刚星海图又融10亿",
+            "source_content_hash": "85e4d40faa23c515",
+            "quote": "A4轮融资由今日资本、美团龙珠联合领投，中金保时捷基金、襄禾资本以及老股东跟投",
+            "quote_hash": "2e8cd6494a2e5c5dab68672e688ff8331787979877abf6c390da7e48e31160a7"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -321,12 +407,12 @@
         "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
       },
       {
-        "source_id": "FISRC-1d57bbe4edb9e812",
-        "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
-        "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
-        "source_content_hash": "5cf2794be5d5263d",
-        "quote": "主要老股东 凯辉基金 、 美团龙珠 、 今日资本 、 襄禾资本 和 高瓴创投 超额或满额追加",
-        "quote_hash": "42422a062e7fccb11702f9a712dee008ad10ef60f7e373ef2947d5ba1314e136"
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "新进凯辉基金、联想创投、海尔资本、今日资本、美团龙珠、中金保时捷基金、襄禾资本、北京机器人产业发展投资基金、亦庄国投等知名机构。",
+        "quote_hash": "ce0234246a9291f7b30971897c1b63d65888b8b395d41b136fd13f1d3a9ec9bf"
       },
       {
         "source_id": "FISRC-972ef11d09af7ec8",
@@ -335,6 +421,22 @@
         "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
         "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
         "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
+      },
+      {
+        "source_id": "FISRC-2707f48aa6e437b7",
+        "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+        "source_title": "清华90后带队，刚刚星海图又融10亿",
+        "source_content_hash": "85e4d40faa23c515",
+        "quote": "另外五位主要老股东凯辉基金、美团龙珠、今日资本、襄禾资本和高瓴创投联手超额或满额追加。",
+        "quote_hash": "f1ac7ba61a81f0b508053b00072c9796e40b7d27a78bb01f6c2a48f4cbfeffc1"
+      },
+      {
+        "source_id": "FISRC-2707f48aa6e437b7",
+        "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+        "source_title": "清华90后带队，刚刚星海图又融10亿",
+        "source_content_hash": "85e4d40faa23c515",
+        "quote": "A4轮融资由今日资本、美团龙珠联合领投，中金保时捷基金、襄禾资本以及老股东跟投",
+        "quote_hash": "2e8cd6494a2e5c5dab68672e688ff8331787979877abf6c390da7e48e31160a7"
       }
     ]
   }

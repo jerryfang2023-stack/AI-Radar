@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-c83108dd371e04",
+    "name": "中电数融",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-09",
+    "latest_disclosed_at": "2026-09-09",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-187bf23c29af5e43",
+        "canonical_entity_id": "",
+        "name": "无问智科"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-52ea97142e81f6c3",
+        "funding_insight_id": "FI-09fda86a59f81440",
+        "event_ids": [
+          "EV-d9e018b58da30912"
+        ],
+        "company_entity_id": "EN-187bf23c29af5e43",
+        "company_canonical_entity_id": "",
+        "company_name": "无问智科",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed89be77100eb6da",
+            "source_url": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html",
+            "source_title": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元",
+            "source_content_hash": "92a793010534b741",
+            "quote": "本轮融资由洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融、力合中科、澄凯灵澄未来基金等老股东超额追投。",
+            "quote_hash": "feca660b3302476ae3bf9a82d624591ccd0844553d53224c7bceee2b3986c8c2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ed89be77100eb6da",
+        "source_url": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html",
+        "source_title": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元",
+        "source_content_hash": "92a793010534b741",
+        "quote": "本轮融资由洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融、力合中科、澄凯灵澄未来基金等老股东超额追投。",
+        "quote_hash": "feca660b3302476ae3bf9a82d624591ccd0844553d53224c7bceee2b3986c8c2"
+      }
+    ]
+  }
+}

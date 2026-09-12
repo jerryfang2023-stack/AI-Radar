@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-e76453ca494ef6dc",
+    "name": "原子埃尔",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-69e0f22cd54856d5"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-03-11",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-69e0f22cd54856d5"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-69e0f22cd54856d5",
+        "dataDate": "2026-09-12",
+        "date": "2026-03-11",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "原子埃尔获得数千万元融资！创始人兼CEO潘志东：未来人人都要拥有一枚AI智能戒指_新浪科技_新浪网",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e76453ca494ef6dc",
+          "EN-c459e23cc0333d23"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-a26a407e3f649982",
+      "snapshotKey": "a26a407e3f649982",
+      "snapshotId": "HWS-feb2e9f5a7185e82",
+      "eventId": "EV-69e0f22cd54856d5",
+      "eventIds": [
+        "EV-69e0f22cd54856d5"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "原子埃尔",
+      "subject": "原子埃尔",
+      "productNames": [],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "数千万元",
+          "fact_ref": "HWF-9eff197da78b333f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-9eff197da78b333f",
+          "fact_type": "product",
+          "observed_at": "2026-03-11T05:21:00.000Z",
+          "subject_entity_id": "EN-e76453ca494ef6dc",
+          "subject_name": "原子埃尔",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "数千万元",
+          "source_quote": "AI智能硬件创新企业原子埃尔宣布完成数千万元天使轮融资，本轮由天空工场创投基金领投。据悉，原子埃尔专注于可穿戴设备研发，核心产品为AI智能戒",
+          "event_refs": [
+            "EV-69e0f22cd54856d5"
+          ],
+          "claim_ref": "CL-e75f40879ffba6f4",
+          "source_refs": [
+            "SA-ef4cb890341746d4",
+            "SA-03b632c4fb55c550"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-03-11/doc-inhqqupq5685493.shtml",
+      "entityIds": [
+        "EN-e76453ca494ef6dc",
+        "EN-c459e23cc0333d23"
+      ]
+    }
+  ]
+}

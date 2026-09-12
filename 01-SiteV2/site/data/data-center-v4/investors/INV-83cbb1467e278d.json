@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-83cbb1467e278d",
@@ -20,23 +20,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-02-14",
+    "latest_disclosed_at": "2026-09-03",
     "role_counts": {
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1,
       "participant": 1
     },
     "round_codes": [
-      "angel"
+      "angel",
+      "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-75cc2d1e57d451bf",
+        "canonical_entity_id": "",
+        "name": "合木人工智能科技（成都）有限公司"
+      },
       {
         "entity_id": "EN-4731aa5b66658c7f",
         "canonical_entity_id": "EN-4731aa5b66658c7f",
@@ -44,6 +52,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-22a15e5b0974eef5",
+        "funding_insight_id": "FI-d4af5bfc033b850a",
+        "event_ids": [
+          "EV-862a2c0eabc234f0"
+        ],
+        "company_entity_id": "EN-75cc2d1e57d451bf",
+        "company_canonical_entity_id": "",
+        "company_name": "合木人工智能科技（成都）有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "千万级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-09-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮投资方",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-3c65ee6da5a2af99",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpvfw6908238.shtml",
+            "source_title": "合木智能完成种子轮千万级融资，瞄准模具制造领域物理AI研发",
+            "source_content_hash": "355d3a13857ad0c5",
+            "quote": "合木智能日前 完成种子轮千万级融资 ，投资方为 创新工场 。",
+            "quote_hash": "052516b7312b3400a1b52e9cc1b50cc7bff20ccb7bd6ada5c6d249573e2c705e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5fa0d0385f11bd29",
+        "funding_insight_id": "FI-a385248b0f830a67",
+        "event_ids": [
+          "EV-df17b95cf25e7840"
+        ],
+        "company_entity_id": "EN-062ed8ada14ccffe",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c1c9258fc2a6aa50",
+            "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
+            "source_title": "超20亿！智谱投的AI云厂商融资了，跟阿里火山百度“抢肉”吃",
+            "source_content_hash": "39056b52b07178cc",
+            "quote": "去年6月完成 数亿元 A轮融资， 阿里云领投，创新工场跟投 。",
+            "quote_hash": "64a3067a87a0e55c3fd47cc4420d7451e4f30c738c3f277bd3264a4f5abc4c04"
+          }
+        ]
+      },
       {
         "activity_id": "IA-615096befc5d11dc",
         "funding_insight_id": "FI-6763b86fb1d41259",
@@ -86,6 +174,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-3c65ee6da5a2af99",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpvfw6908238.shtml",
+        "source_title": "合木智能完成种子轮千万级融资，瞄准模具制造领域物理AI研发",
+        "source_content_hash": "355d3a13857ad0c5",
+        "quote": "合木智能日前 完成种子轮千万级融资 ，投资方为 创新工场 。",
+        "quote_hash": "052516b7312b3400a1b52e9cc1b50cc7bff20ccb7bd6ada5c6d249573e2c705e"
+      },
+      {
+        "source_id": "FISRC-c1c9258fc2a6aa50",
+        "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
+        "source_title": "超20亿！智谱投的AI云厂商融资了，跟阿里火山百度“抢肉”吃",
+        "source_content_hash": "39056b52b07178cc",
+        "quote": "去年6月完成 数亿元 A轮融资， 阿里云领投，创新工场跟投 。",
+        "quote_hash": "64a3067a87a0e55c3fd47cc4420d7451e4f30c738c3f277bd3264a4f5abc4c04"
+      },
       {
         "source_id": "FISRC-daccbed46498e19c",
         "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",

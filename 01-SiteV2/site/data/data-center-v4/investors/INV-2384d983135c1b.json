@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-2384d983135c1b",
+    "name": "京津冀创业投资引导基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "government_fund",
+    "investor_kind_label": "政府或主权基金",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-04-13",
+    "latest_disclosed_at": "2026-04-13",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-272d534804dc22a4",
+        "canonical_entity_id": "",
+        "name": "华毅瀛飞（北京）光电科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9449580607bda58c",
+        "funding_insight_id": "FI-8ca5a4680f477ab8",
+        "event_ids": [
+          "EV-fd2ff833db684e40"
+        ],
+        "company_entity_id": "EN-272d534804dc22a4",
+        "company_canonical_entity_id": "",
+        "company_name": "华毅瀛飞（北京）光电科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-04-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-13a43855ea188967",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
+            "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
+            "source_content_hash": "16a36ffc37b94da5",
+            "quote": "跟投方包括京津冀创业投资引导基金、中关村资本、亦庄科创二期基金、招银国际资本以及鑫融邦资本等知名投资机构",
+            "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-13a43855ea188967",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
+        "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
+        "source_content_hash": "16a36ffc37b94da5",
+        "quote": "跟投方包括京津冀创业投资引导基金、中关村资本、亦庄科创二期基金、招银国际资本以及鑫融邦资本等知名投资机构",
+        "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
+      }
+    ]
+  }
+}

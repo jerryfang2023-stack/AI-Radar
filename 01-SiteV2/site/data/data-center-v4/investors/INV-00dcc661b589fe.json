@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-00dcc661b589fe",
+    "name": "启迪之星",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-02-02",
+    "latest_disclosed_at": "2026-07-29",
+    "role_counts": {
+      "historical_or_ambiguous": 2
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-6b33db5fbcad69c4",
+        "funding_insight_id": "FI-60fa0e2733611a27",
+        "event_ids": [
+          "EV-58a0983e0b45135b"
+        ],
+        "company_entity_id": "EN-09737a1a465af642",
+        "company_canonical_entity_id": "",
+        "company_name": "合肥梦塔科技有限公司",
+        "round": "种子+轮",
+        "round_code": "seed_plus",
+        "round_original": "种子+轮",
+        "amount_original": "超千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000,
+          "min_value": 10000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1000 万元"
+        },
+        "announced_at": "2026-07-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东持续支持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1c8eaea364bcdb2f",
+            "source_url": "https://news.pedaily.cn/202607/566967.shtml",
+            "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式",
+            "source_content_hash": "377c392d6365234a",
+            "quote": "老股东奇绩创坛、启迪之星持续支持。",
+            "quote_hash": "59f487eefc46ba5e098dcb3c2bcdc978ecb136b7942e1ce4ecb4c3a549df80b4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-da193655af157546",
+        "funding_insight_id": "FI-afd3b8c3d49ef1af",
+        "event_ids": [
+          "EV-3c408fe984c73089"
+        ],
+        "company_entity_id": "EN-a3b8fbb2200a105a",
+        "company_canonical_entity_id": "",
+        "company_name": "卓世科技（海南）股份有限公司",
+        "round": "Pre-IPO",
+        "round_code": "pre_ipo",
+        "round_original": "Pre-IPO",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-02-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0ef31ab978027876",
+            "source_url": "https://www.maas.com.cn/news/830.html",
+            "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
+            "source_content_hash": "2de2062a07393a96",
+            "quote": "卓世科技投资人中既有知名投资机构同创伟业、中关村资本，也有用友集团等上市公司，还有清华系力合资本、启迪之星等机构，同时获得了海南省国资、青岛市国资等产业基金加持。",
+            "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1c8eaea364bcdb2f",
+        "source_url": "https://news.pedaily.cn/202607/566967.shtml",
+        "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式",
+        "source_content_hash": "377c392d6365234a",
+        "quote": "老股东奇绩创坛、启迪之星持续支持。",
+        "quote_hash": "59f487eefc46ba5e098dcb3c2bcdc978ecb136b7942e1ce4ecb4c3a549df80b4"
+      },
+      {
+        "source_id": "FISRC-0ef31ab978027876",
+        "source_url": "https://www.maas.com.cn/news/830.html",
+        "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
+        "source_content_hash": "2de2062a07393a96",
+        "quote": "卓世科技投资人中既有知名投资机构同创伟业、中关村资本，也有用友集团等上市公司，还有清华系力合资本、启迪之星等机构，同时获得了海南省国资、青岛市国资等产业基金加持。",
+        "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
+      }
+    ]
+  }
+}

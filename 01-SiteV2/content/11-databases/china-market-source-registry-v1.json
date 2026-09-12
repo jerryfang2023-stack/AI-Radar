@@ -1,6 +1,6 @@
 {
   "schema_version": "CHINA-MARKET-SOURCE-REGISTRY-V1.0",
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-09-12",
   "owner": "Data Center Source Ingestion",
   "market_region": "CN",
   "purpose": "中国 AI 市场来源注册表。仅记录来源身份、来源类别与采集接口，不表达来源等级、可信权重、价值排序或算法加成。",
@@ -21,9 +21,15 @@
       "source_category": "industry_media",
       "interface_type": "public-web",
       "endpoint_or_url": "https://www.chinaventure.com.cn/",
-      "publisher_domains": ["chinaventure.com.cn"],
+      "publisher_domains": [
+        "chinaventure.com.cn"
+      ],
       "language": "zh-CN",
-      "collection_scope": ["startup_funding", "investor_activity", "company_strategy"],
+      "collection_scope": [
+        "startup_funding",
+        "investor_activity",
+        "company_strategy"
+      ],
       "enabled_default": true
     },
     {
@@ -518,7 +524,8 @@
       "interface_type": "public-web",
       "endpoint_or_url": "https://www.cls.cn/",
       "publisher_domains": [
-        "cls.cn"
+        "cls.cn",
+        "chinastarmarket.cn"
       ],
       "language": "zh-CN",
       "collection_scope": [
@@ -587,9 +594,14 @@
       "source_category": "industry_media",
       "interface_type": "public-web",
       "endpoint_or_url": "https://finance.eastmoney.com/",
-      "publisher_domains": ["eastmoney.com"],
+      "publisher_domains": [
+        "eastmoney.com"
+      ],
       "language": "zh-CN",
-      "collection_scope": ["startup_funding", "listed_company_announcement"],
+      "collection_scope": [
+        "startup_funding",
+        "listed_company_announcement"
+      ],
       "enabled_default": true
     },
     {
@@ -598,9 +610,15 @@
       "source_category": "industry_media",
       "interface_type": "public-web",
       "endpoint_or_url": "https://finance.sina.com.cn/",
-      "publisher_domains": ["sina.com.cn"],
+      "publisher_domains": [
+        "sina.com.cn"
+      ],
       "language": "zh-CN",
-      "collection_scope": ["startup_funding", "listed_company_announcement", "investor_activity"],
+      "collection_scope": [
+        "startup_funding",
+        "listed_company_announcement",
+        "investor_activity"
+      ],
       "enabled_default": true
     },
     {
@@ -609,9 +627,15 @@
       "source_category": "industry_media",
       "interface_type": "public-web",
       "endpoint_or_url": "https://www.nbd.com.cn/",
-      "publisher_domains": ["nbd.com.cn"],
+      "publisher_domains": [
+        "nbd.com.cn"
+      ],
       "language": "zh-CN",
-      "collection_scope": ["startup_funding", "listed_company_announcement", "company_strategy"],
+      "collection_scope": [
+        "startup_funding",
+        "listed_company_announcement",
+        "company_strategy"
+      ],
       "enabled_default": true
     },
     {
@@ -620,9 +644,15 @@
       "source_category": "industry_media",
       "interface_type": "public-web",
       "endpoint_or_url": "https://www.dramx.com/",
-      "publisher_domains": ["dramx.com"],
+      "publisher_domains": [
+        "dramx.com"
+      ],
       "language": "zh-CN",
-      "collection_scope": ["startup_funding", "chips", "hardware"],
+      "collection_scope": [
+        "startup_funding",
+        "chips",
+        "hardware"
+      ],
       "enabled_default": true
     },
     {
@@ -631,9 +661,15 @@
       "source_category": "industry_media",
       "interface_type": "public-web",
       "endpoint_or_url": "https://www.cs.com.cn/",
-      "publisher_domains": ["cs.com.cn"],
+      "publisher_domains": [
+        "cs.com.cn"
+      ],
       "language": "zh-CN",
-      "collection_scope": ["startup_funding", "listed_company_announcement", "investor_activity"],
+      "collection_scope": [
+        "startup_funding",
+        "listed_company_announcement",
+        "investor_activity"
+      ],
       "enabled_default": true
     },
     {
@@ -642,10 +678,192 @@
       "source_category": "industry_media",
       "interface_type": "public-web",
       "endpoint_or_url": "https://www.readaitime.com/",
-      "publisher_domains": ["readaitime.com"],
+      "publisher_domains": [
+        "readaitime.com"
+      ],
       "language": "zh-CN",
-      "collection_scope": ["startup_funding", "industry_news", "company_strategy"],
+      "collection_scope": [
+        "startup_funding",
+        "industry_news",
+        "company_strategy"
+      ],
       "enabled_default": true
+    },
+    {
+      "source_id": "cn-leiphone",
+      "name": "雷峰网",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://leiphone.com/",
+      "publisher_domains": [
+        "leiphone.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-donews",
+      "name": "DoNews",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://donews.com/",
+      "publisher_domains": [
+        "donews.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-china-com",
+      "name": "中华网",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://china.com/",
+      "publisher_domains": [
+        "china.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-sohu",
+      "name": "搜狐",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://sohu.com/",
+      "publisher_domains": [
+        "sohu.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-stockstar",
+      "name": "证券之星",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://stockstar.com/",
+      "publisher_domains": [
+        "stockstar.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-tmtpost",
+      "name": "钛媒体",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://tmtpost.com/",
+      "publisher_domains": [
+        "tmtpost.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-stcn",
+      "name": "证券时报",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://stcn.com/",
+      "publisher_domains": [
+        "stcn.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-jiemian",
+      "name": "界面新闻",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://jiemian.com/",
+      "publisher_domains": [
+        "jiemian.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-dify-official",
+      "name": "Dify 官方中文融资公告",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://dify.ai/",
+      "publisher_domains": [
+        "dify.ai"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-pcd",
+      "name": "智能日报",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://pcd.com.cn/",
+      "publisher_domains": [
+        "pcd.com.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-stellerus",
+      "name": "星睿云智官方",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://stellerustech.com/",
+      "publisher_domains": [
+        "stellerustech.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_profile"
+      ],
+      "enabled_default": false
     }
   ]
 }

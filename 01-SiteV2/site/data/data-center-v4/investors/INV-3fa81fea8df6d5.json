@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-3fa81fea8df6d5",
+    "name": "广州健康产投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-27",
+    "latest_disclosed_at": "2026-05-27",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "series_d"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f33058e80670aeb6",
+        "canonical_entity_id": "",
+        "name": "深圳睿心智能医疗科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a9f27263d4824287",
+        "funding_insight_id": "FI-435f962c8ad61267",
+        "event_ids": [
+          "EV-a39d8aac0ee78e07"
+        ],
+        "company_entity_id": "EN-f33058e80670aeb6",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳睿心智能医疗科技有限公司",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2afdddccd17bda89",
+            "source_url": "https://www.sohu.com/a/1028422830_120094924",
+            "source_title": "商道创投网・会员动态｜睿心医疗・完成近亿元D 轮融资",
+            "source_content_hash": "540f96f9862b88b1",
+            "quote": "深圳睿心智能医疗科技有限公司近日完成了由广州健康产投领投、越富基金跟投的近亿元D 轮融资。",
+            "quote_hash": "8890a42edf470d7e4d4634b31cfe1d67d58fb787de35b6e0a8df65debc6fc9ae"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-2afdddccd17bda89",
+        "source_url": "https://www.sohu.com/a/1028422830_120094924",
+        "source_title": "商道创投网・会员动态｜睿心医疗・完成近亿元D 轮融资",
+        "source_content_hash": "540f96f9862b88b1",
+        "quote": "深圳睿心智能医疗科技有限公司近日完成了由广州健康产投领投、越富基金跟投的近亿元D 轮融资。",
+        "quote_hash": "8890a42edf470d7e4d4634b31cfe1d67d58fb787de35b6e0a8df65debc6fc9ae"
+      }
+    ]
+  }
+}

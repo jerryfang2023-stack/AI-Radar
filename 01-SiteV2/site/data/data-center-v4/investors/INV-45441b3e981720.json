@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-45441b3e981720",
@@ -20,30 +20,129 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-07-01",
-    "latest_disclosed_at": "2026-07-01",
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
+    "first_disclosed_at": "2026-06-16",
+    "latest_disclosed_at": "2026-07-14",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1,
+      "participant": 3
     },
     "round_codes": [
-      "infrastructure"
+      "infrastructure",
+      "series_b",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-60d2cc785c19e818",
+        "canonical_entity_id": "",
+        "name": "北京三启万物科技有限公司"
+      },
       {
         "entity_id": "EN-8b332ded81dc8d3a",
         "canonical_entity_id": "",
         "name": "光轮智能"
+      },
+      {
+        "entity_id": "EN-062ed8ada14ccffe",
+        "canonical_entity_id": "",
+        "name": "硅基流动（SiliconFlow）"
+      },
+      {
+        "entity_id": "EN-2864ab1d9269d363",
+        "canonical_entity_id": "",
+        "name": "硅基流动（SiliconFlow）"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-65f8885a20543f9c",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-09c3ca37737a71ce",
+            "source_url": "https://stcn.com/article/detail/3386786.html",
+            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+            "source_content_hash": "edea92990a31710b",
+            "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+            "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7b2ff6172e655d7d",
+        "funding_insight_id": "FI-b1494fe383b9e92d",
+        "event_ids": [
+          "EV-e8f381baf505ac32"
+        ],
+        "company_entity_id": "EN-60d2cc785c19e818",
+        "company_canonical_entity_id": "",
+        "company_name": "北京三启万物科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "10亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a4dbd49c64cb5834",
+            "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+            "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+            "source_content_hash": "3e7e05417d6a96b1",
+            "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+            "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2be30bd029adca32",
         "funding_insight_id": "FI-d94dd0bea44a17d1",
@@ -83,9 +182,105 @@
             "quote_hash": "71792afe8c027b27e57bfc0819ab1d5d99a6ee5f1e108cb5f6f6b312377c3cee"
           }
         ]
+      },
+      {
+        "activity_id": "IA-4bedc1d08cae7b07",
+        "funding_insight_id": "FI-a385248b0f830a67",
+        "event_ids": [
+          "EV-df17b95cf25e7840"
+        ],
+        "company_entity_id": "EN-062ed8ada14ccffe",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-879cc82306af58a1",
+            "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
+            "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
+            "source_content_hash": "f1654d9235cc7fa8",
+            "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
+            "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f1bf42f7f2f3b074",
+        "funding_insight_id": "FI-735806b08661fb55",
+        "event_ids": [
+          "EV-5a28b9c37a236c89"
+        ],
+        "company_entity_id": "EN-2864ab1d9269d363",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-13f47cda26abe042",
+            "source_url": "https://news.pedaily.cn/202606/565261.shtml",
+            "source_title": "硅基流动完成新一轮超20 亿元融资",
+            "source_content_hash": "eed9c3c500776efe",
+            "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
+            "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-09c3ca37737a71ce",
+        "source_url": "https://stcn.com/article/detail/3386786.html",
+        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+        "source_content_hash": "edea92990a31710b",
+        "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+        "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+      },
+      {
+        "source_id": "FISRC-a4dbd49c64cb5834",
+        "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+        "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+        "source_content_hash": "3e7e05417d6a96b1",
+        "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+        "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+      },
       {
         "source_id": "FISRC-8787a3d3602feb17",
         "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
@@ -93,6 +288,22 @@
         "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
         "quote": "以及巨人网络、宇信科技、宝通科技、中科产投、量图智策等产业资本及财务投资机构",
         "quote_hash": "71792afe8c027b27e57bfc0819ab1d5d99a6ee5f1e108cb5f6f6b312377c3cee"
+      },
+      {
+        "source_id": "FISRC-879cc82306af58a1",
+        "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
+        "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
+        "source_content_hash": "f1654d9235cc7fa8",
+        "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
+        "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
+      },
+      {
+        "source_id": "FISRC-13f47cda26abe042",
+        "source_url": "https://news.pedaily.cn/202606/565261.shtml",
+        "source_title": "硅基流动完成新一轮超20 亿元融资",
+        "source_content_hash": "eed9c3c500776efe",
+        "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
+        "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
       }
     ]
   }

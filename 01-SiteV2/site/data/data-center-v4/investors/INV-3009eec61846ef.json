@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-3009eec61846ef",
+    "name": "吴越天使",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-08-28",
+    "latest_disclosed_at": "2026-08-28",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-5c822c71e6e4db70",
+        "canonical_entity_id": "",
+        "name": "瞬适科技（上海）有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-4f372fc670b915b2",
+        "funding_insight_id": "FI-1da3c184549b158c",
+        "event_ids": [
+          "EV-4d46806b1522d5f4"
+        ],
+        "company_entity_id": "EN-5c822c71e6e4db70",
+        "company_canonical_entity_id": "",
+        "company_name": "瞬适科技（上海）有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": 10000000,
+          "max_value": 10000000,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "千万美元"
+        },
+        "announced_at": "2026-08-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-918cf8d34c141df4",
+            "source_url": "https://news.pedaily.cn/202608/568250.shtml",
+            "source_title": "「瞬适科技」完成千万美元种子轮融资，加速物理AI数据基础设施建设",
+            "source_content_hash": "3be7f6f35b15ad6a",
+            "quote": "由协创智慧、云晖资本、浦东创投和吴越天使等机构联合投资",
+            "quote_hash": "63a1a6b5aa3ed48f6093048dc21d80e3dd6278ed51396e940144b3a1ceca8222"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-918cf8d34c141df4",
+        "source_url": "https://news.pedaily.cn/202608/568250.shtml",
+        "source_title": "「瞬适科技」完成千万美元种子轮融资，加速物理AI数据基础设施建设",
+        "source_content_hash": "3be7f6f35b15ad6a",
+        "quote": "由协创智慧、云晖资本、浦东创投和吴越天使等机构联合投资",
+        "quote_hash": "63a1a6b5aa3ed48f6093048dc21d80e3dd6278ed51396e940144b3a1ceca8222"
+      }
+    ]
+  }
+}

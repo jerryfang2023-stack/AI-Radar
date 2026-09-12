@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-1fe12890aa2b4d",
@@ -20,24 +20,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 10,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-03-05",
-    "latest_disclosed_at": "2026-08-03",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-02-02",
+    "latest_disclosed_at": "2026-08-31",
     "role_counts": {
-      "historical_or_ambiguous": 3,
-      "participant": 1
+      "historical_or_ambiguous": 10,
+      "participant": 2
     },
     "round_codes": [
+      "pre_series_a_plus",
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-5c443a92518833f1",
+        "canonical_entity_id": "",
+        "name": "北京跨赴科技有限公司"
+      },
       {
         "entity_id": "EN-aef5bb4e898f303c",
         "canonical_entity_id": "EN-aef5bb4e898f303c",
@@ -45,6 +51,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-beb1fdb5d6082ae8",
+        "funding_insight_id": "FI-0393a877e1b99840",
+        "event_ids": [
+          "EV-782e8dcca41fd545"
+        ],
+        "company_entity_id": "EN-b321d29699ce1dcd",
+        "company_canonical_entity_id": "",
+        "company_name": "上海松应科技有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ae72db61aa80327",
+            "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+            "source_content_hash": "74d6b0dda1bd2148",
+            "quote": "2025年先后落地天使轮、Pre‑A轮，引入奇绩创坛、创业接力集团、中科创星、上海天使会、中新资本等机构",
+            "quote_hash": "f2c07c8e65c6a838bbc6b0ad5eb71c2acc3709345078921ab540bde1dcb9efc2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-620346611139f89d",
         "funding_insight_id": "FI-72a762e01ac47812",
@@ -82,6 +128,167 @@
             "source_content_hash": "ef1aa49772b166b7",
             "quote": "奇绩创坛跟投",
             "quote_hash": "f33e889d9e39d4ba5ac2a30371ca1515d4b0717ab44fd3268364ad2bf0d2c88f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-af7de2dde387d6a6",
+        "funding_insight_id": "FI-60fa0e2733611a27",
+        "event_ids": [
+          "EV-58a0983e0b45135b"
+        ],
+        "company_entity_id": "EN-09737a1a465af642",
+        "company_canonical_entity_id": "",
+        "company_name": "合肥梦塔科技有限公司",
+        "round": "种子+轮",
+        "round_code": "seed_plus",
+        "round_original": "种子+轮",
+        "amount_original": "超千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 10000000,
+          "min_value": 10000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1000 万元"
+        },
+        "announced_at": "2026-07-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东持续支持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1c8eaea364bcdb2f",
+            "source_url": "https://news.pedaily.cn/202607/566967.shtml",
+            "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式",
+            "source_content_hash": "377c392d6365234a",
+            "quote": "老股东奇绩创坛、启迪之星持续支持。",
+            "quote_hash": "59f487eefc46ba5e098dcb3c2bcdc978ecb136b7942e1ce4ecb4c3a549df80b4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3dbb1b8eea7ee7db",
+        "funding_insight_id": "FI-0d0e4d0d5b40a2c0",
+        "event_ids": [
+          "EV-a121ed73da005180",
+          "EV-ee38c30c00b2a754"
+        ],
+        "company_entity_id": "EN-2b60b46911fc1640",
+        "company_canonical_entity_id": "",
+        "company_name": "上海如身机器人科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-07-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6c76bf98227d92c",
+            "source_url": "https://pitchhub.36kr.com/project/2288218038024320",
+            "source_title": "如身机器人 | 项目信息-36氪",
+            "source_content_hash": "e0633690ea582b36",
+            "quote": "种子轮 2023-07 数百万人民币 奇绩创坛",
+            "quote_hash": "ca9a29e0d484e7d5d7e856262046716104c26b7ac18e4223c17f2f6821aa07a3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-19f637c49ea1549e",
+        "funding_insight_id": "FI-a385248b0f830a67",
+        "event_ids": [
+          "EV-df17b95cf25e7840"
+        ],
+        "company_entity_id": "EN-062ed8ada14ccffe",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮联合投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-50b5e9b4a45a40c4",
+            "source_url": "https://www.siliconflowcn.com/",
+            "source_title": "SiliconFlow硅基流动官网",
+            "source_content_hash": "20b42b9c0d124bcf",
+            "quote": "2024-01 完成5000万元天使轮融资，由创新工场、耀途资本、奇绩创坛等机构联合投资。",
+            "quote_hash": "dcd270e151c101c7ca4d950e423a51164bdcf0ee37a0644ff7133fb553d78f44"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8fadd85fd13b0d67",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使及天使+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、普超资本、PKSHA Algorithm Fund等机构投资",
+            "quote_hash": "9b9ce628f2153be8091acaf7f0dc51a7b8b7ba876c6095049a8b94630f2cfb97"
           }
         ]
       },
@@ -126,6 +333,46 @@
         ]
       },
       {
+        "activity_id": "IA-2c2ababf3b5879b9",
+        "funding_insight_id": "FI-69f053ac44d015ab",
+        "event_ids": [
+          "EV-ada36aac02003efe"
+        ],
+        "company_entity_id": "EN-00e5330d08a779e8",
+        "company_canonical_entity_id": "",
+        "company_name": "北京共绩科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-73d8bab6afc27534",
+            "source_url": "https://pitchhub.36kr.com/project/3003253486042881",
+            "source_title": "共绩科技| 项目信息 - 创投平台- 36氪",
+            "source_content_hash": "8558ef142ce6976a",
+            "quote": "天使轮 2024-10 数千万人民币 水木创投 ， 奇绩创坛 ， 新进创投",
+            "quote_hash": "92e8d80071db8d56ff76bc6a458e5e99fb325db230bc8f8b911130023977ad60"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-bce1aa56d535f052",
         "funding_insight_id": "FI-f4cf69e8d2cc7653",
         "event_ids": [
@@ -162,6 +409,46 @@
             "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
             "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资",
             "quote_hash": "f248e4020c87a3fcbc494e48fca7345bb5a100001eda55988f8393321e524d14"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bd773791479bd43d",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使及天使+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资。",
+            "quote_hash": "2db23ccce73f645f5bdf318d44d7566a1e0f479b61c7e9a92db361a49088c279"
           }
         ]
       },
@@ -204,9 +491,57 @@
             "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
           }
         ]
+      },
+      {
+        "activity_id": "IA-2de53f0e72a04a1b",
+        "funding_insight_id": "FI-89ae76965810fd3c",
+        "event_ids": [
+          "EV-e70b6a1287dcaa59"
+        ],
+        "company_entity_id": "EN-5c443a92518833f1",
+        "company_canonical_entity_id": "",
+        "company_name": "北京跨赴科技有限公司",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-02-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-61ee9829707c35ed",
+            "source_url": "https://www.sohu.com/a/982756258_439726",
+            "source_title": "半年融两轮，跨赴科技再获数千万融资",
+            "source_content_hash": "a503f3c825f30e2f",
+            "quote": "本轮融资投资方为 哈勃投资和正轩投资 ，老股东 奇绩创坛 持续加注。",
+            "quote_hash": "0de657f1bb636a004d8a14c20540cf6162536da48f108799e4bad51544901187"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1ae72db61aa80327",
+        "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+        "source_content_hash": "74d6b0dda1bd2148",
+        "quote": "2025年先后落地天使轮、Pre‑A轮，引入奇绩创坛、创业接力集团、中科创星、上海天使会、中新资本等机构",
+        "quote_hash": "f2c07c8e65c6a838bbc6b0ad5eb71c2acc3709345078921ab540bde1dcb9efc2"
+      },
       {
         "source_id": "FISRC-8f70de35939e4c3c",
         "source_url": "https://36kr.com/p/3919025939246727?f=rss",
@@ -214,6 +549,38 @@
         "source_content_hash": "ef1aa49772b166b7",
         "quote": "奇绩创坛跟投",
         "quote_hash": "f33e889d9e39d4ba5ac2a30371ca1515d4b0717ab44fd3268364ad2bf0d2c88f"
+      },
+      {
+        "source_id": "FISRC-1c8eaea364bcdb2f",
+        "source_url": "https://news.pedaily.cn/202607/566967.shtml",
+        "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式",
+        "source_content_hash": "377c392d6365234a",
+        "quote": "老股东奇绩创坛、启迪之星持续支持。",
+        "quote_hash": "59f487eefc46ba5e098dcb3c2bcdc978ecb136b7942e1ce4ecb4c3a549df80b4"
+      },
+      {
+        "source_id": "FISRC-a6c76bf98227d92c",
+        "source_url": "https://pitchhub.36kr.com/project/2288218038024320",
+        "source_title": "如身机器人 | 项目信息-36氪",
+        "source_content_hash": "e0633690ea582b36",
+        "quote": "种子轮 2023-07 数百万人民币 奇绩创坛",
+        "quote_hash": "ca9a29e0d484e7d5d7e856262046716104c26b7ac18e4223c17f2f6821aa07a3"
+      },
+      {
+        "source_id": "FISRC-50b5e9b4a45a40c4",
+        "source_url": "https://www.siliconflowcn.com/",
+        "source_title": "SiliconFlow硅基流动官网",
+        "source_content_hash": "20b42b9c0d124bcf",
+        "quote": "2024-01 完成5000万元天使轮融资，由创新工场、耀途资本、奇绩创坛等机构联合投资。",
+        "quote_hash": "dcd270e151c101c7ca4d950e423a51164bdcf0ee37a0644ff7133fb553d78f44"
+      },
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+        "source_content_hash": "a652909321da946b",
+        "quote": "2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、普超资本、PKSHA Algorithm Fund等机构投资",
+        "quote_hash": "9b9ce628f2153be8091acaf7f0dc51a7b8b7ba876c6095049a8b94630f2cfb97"
       },
       {
         "source_id": "FISRC-ce47b663ca256878",
@@ -224,6 +591,14 @@
         "quote_hash": "20c9eb83ce23bba0ee1e38c8f81c4130c8cdbe133c1535f42a790e8ef9fb979b"
       },
       {
+        "source_id": "FISRC-73d8bab6afc27534",
+        "source_url": "https://pitchhub.36kr.com/project/3003253486042881",
+        "source_title": "共绩科技| 项目信息 - 创投平台- 36氪",
+        "source_content_hash": "8558ef142ce6976a",
+        "quote": "天使轮 2024-10 数千万人民币 水木创投 ， 奇绩创坛 ， 新进创投",
+        "quote_hash": "92e8d80071db8d56ff76bc6a458e5e99fb325db230bc8f8b911130023977ad60"
+      },
+      {
         "source_id": "FISRC-4782a6093d519a4d",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
         "source_title": "极佳视界完成15亿元B1轮融资",
@@ -232,12 +607,28 @@
         "quote_hash": "f248e4020c87a3fcbc494e48fca7345bb5a100001eda55988f8393321e524d14"
       },
       {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资。",
+        "quote_hash": "2db23ccce73f645f5bdf318d44d7566a1e0f479b61c7e9a92db361a49088c279"
+      },
+      {
         "source_id": "FISRC-010c77e94d1f858f",
         "source_url": "https://m.36kr.com/p/3710076436557954",
         "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
         "source_content_hash": "7e8c3e23c6fe0f92",
         "quote": "中金资本、达晨财智、华控基金、奇绩创坛等众多财务机构的认可，体现了极佳视界的领先性和行业地位",
         "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
+      },
+      {
+        "source_id": "FISRC-61ee9829707c35ed",
+        "source_url": "https://www.sohu.com/a/982756258_439726",
+        "source_title": "半年融两轮，跨赴科技再获数千万融资",
+        "source_content_hash": "a503f3c825f30e2f",
+        "quote": "本轮融资投资方为 哈勃投资和正轩投资 ，老股东 奇绩创坛 持续加注。",
+        "quote_hash": "0de657f1bb636a004d8a14c20540cf6162536da48f108799e4bad51544901187"
       }
     ]
   }

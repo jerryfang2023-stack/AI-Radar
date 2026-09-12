@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "entity": {
     "id": "EN-ed501d3e2d977553",
@@ -95,6 +95,8 @@
       ],
       "eventIds": [
         "EV-bb8acbaab5f7aa4e",
+        "EV-794f0a86004da0c9",
+        "EV-df37e9341b5c7f04",
         "EV-584212d254d882bc",
         "EV-ca223f2a929b67a2",
         "EV-2c1fc2143d7d4a6a",
@@ -106,15 +108,27 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution"
+        "TX-target_user-developer",
+        "TX-product_form-model",
+        "TX-target_user-business_user",
+        "TX-use_case-knowledge_search",
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-use_case-content_creation",
+        "TX-industry-automotive_transportation",
+        "TX-industry-telecommunications",
+        "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [
         "EN-88e2cce43eeadb36",
         "EN-44a9bf3b11abea5c",
         "EN-ed501d3e2d977553"
       ],
-      "firstSeen": "2026-05-08",
-      "lastSeen": "2026-08-03"
+      "firstSeen": "2026-01-26",
+      "lastSeen": "2026-09-12"
     }
   ],
   "relationships": [

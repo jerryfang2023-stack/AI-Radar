@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-e8da3fdfa079c3",
+    "name": "昆仑资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-08-24",
+    "latest_disclosed_at": "2026-08-24",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "strategic"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-8eacc6bab17d7e7f",
+        "canonical_entity_id": "",
+        "name": "北京中数睿智科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b429b92c34b3a447",
+        "funding_insight_id": "FI-c30743074ff47419",
+        "event_ids": [
+          "EV-07d112b2a4c980d2"
+        ],
+        "company_entity_id": "EN-8eacc6bab17d7e7f",
+        "company_canonical_entity_id": "",
+        "company_name": "北京中数睿智科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d2d4022c60030f2",
+            "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+            "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+            "source_content_hash": "fd43c36630768ac3",
+            "quote": "本轮融资由中国互联网投资基金（下称中网投）、苏创投全国社保基金、金融街资本、工银资本、昆仑资本等联合投资，原有股东持续加码跟投。",
+            "quote_hash": "e71c1020a5ecddcd13e65a710e3aaa31148459e6980b06245cd286c37d7ff5fb"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9d2d4022c60030f2",
+        "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+        "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+        "source_content_hash": "fd43c36630768ac3",
+        "quote": "本轮融资由中国互联网投资基金（下称中网投）、苏创投全国社保基金、金融街资本、工银资本、昆仑资本等联合投资，原有股东持续加码跟投。",
+        "quote_hash": "e71c1020a5ecddcd13e65a710e3aaa31148459e6980b06245cd286c37d7ff5fb"
+      }
+    ]
+  }
+}

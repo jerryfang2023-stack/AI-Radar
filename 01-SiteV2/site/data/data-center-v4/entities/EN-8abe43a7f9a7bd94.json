@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "entity": {
     "id": "EN-8abe43a7f9a7bd94",
@@ -20,22 +20,24 @@
       "快手",
       "可灵AI"
     ],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
       "EV-1f0c1fa47eb63e4b",
+      "EV-862b2014e51fe3e0",
       "EV-1fd2dfea0a3f7322"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-09",
+    "firstSeen": "2026-07-03",
+    "lastSeen": "2026-09-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-862b2014e51fe3e0",
         "EV-1f0c1fa47eb63e4b"
       ],
       "deployments": [
@@ -48,6 +50,45 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-862b2014e51fe3e0",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-03",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "近30亿美元融资落地！快手拆分可灵独立资本化BAT罕见同场入局",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-03567ce359a30148"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成",
+            "entityIds": [
+              "EN-03567ce359a30148"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8abe43a7f9a7bd94",
+          "EN-03567ce359a30148"
+        ]
+      },
       {
         "id": "EV-1f0c1fa47eb63e4b",
         "dataDate": "2026-09-09",

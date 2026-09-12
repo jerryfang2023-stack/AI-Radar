@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "node": {
     "id": "TX-ai_market_subcategory-cyber_physical_security",
@@ -18,15 +18,17 @@
     "typeLabel": "AI 市场子类",
     "valueId": "cyber_physical_security",
     "eventIds": [
-      "EV-9b81b0dd09a046ab"
+      "EV-9b81b0dd09a046ab",
+      "EV-53ffdce6405b8ba9"
     ],
     "entityIds": [
-      "EN-57b8b5990c299db8"
+      "EN-57b8b5990c299db8",
+      "EN-c5896393cf4ac788"
     ],
     "fdeIds": [],
     "hardwareIds": [],
-    "firstSeen": "2026-07-23",
-    "lastSeen": "2026-07-24"
+    "firstSeen": "2026-01-29",
+    "lastSeen": "2026-09-12"
   },
   "events": [
     {
@@ -263,6 +265,254 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing",
       "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-53ffdce6405b8ba9",
+      "dataDate": "2026-09-12",
+      "date": "2026-01-29",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "长亭科技宣布完成最新一轮5亿元融资",
+      "originalTitle": "",
+      "subject": "北京长亭科技有限公司",
+      "action": "funding",
+      "object": "最新一轮融资，融资总额达5亿元人民币",
+      "metrics": [
+        "5亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-sina-finance"
+        ],
+        "claim_refs": [
+          "CL-6ee903460f9e9fd9"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6194bb7b44d08b44",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "cyber_physical_security",
+            "name": "网络与物理安全",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3952dfa3c3f77ee9",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-daa1cdd034ed8cb3",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-920c5087392224dc",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-c5896393cf4ac788"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a26e8d0160a7827b",
+            "fundingInsightId": "FI-be1e5a2cd947fbba"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6194bb7b44d08b44",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "cyber_physical_security",
+          "name": "网络与物理安全",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3952dfa3c3f77ee9",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-daa1cdd034ed8cb3",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a26e8d0160a7827b",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-920c5087392224dc",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6194bb7b44d08b44",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "cyber_physical_security",
+          "name": "网络与物理安全",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3952dfa3c3f77ee9",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-daa1cdd034ed8cb3",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-920c5087392224dc",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-c5896393cf4ac788"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a26e8d0160a7827b",
+          "fundingInsightId": "FI-be1e5a2cd947fbba"
+        }
+      ],
+      "entityIds": [
+        "EN-edd451adce89e93c",
+        "EN-c5896393cf4ac788"
+      ],
+      "entityNames": [
+        "长亭科技",
+        "北京长亭科技有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-01-29/doc-inhiyffv6659017.shtml",
+      "publisher": "新浪财经"
     }
   ],
   "entities": [
@@ -290,6 +540,31 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-23",
       "lastSeen": "2026-07-24"
+    },
+    {
+      "id": "EN-c5896393cf4ac788",
+      "name": "北京长亭科技有限公司",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-53ffdce6405b8ba9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-product_form-security_software",
+        "TX-use_case-security_operations",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-cyber_physical_security"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-29",
+      "lastSeen": "2026-09-12"
     }
   ],
   "fde": [],

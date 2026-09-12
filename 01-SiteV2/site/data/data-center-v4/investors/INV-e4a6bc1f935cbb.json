@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-e4a6bc1f935cbb",
+    "name": "阳光融汇资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-08-18",
+    "latest_disclosed_at": "2026-08-18",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-08eb957bacc0715e",
+        "funding_insight_id": "FI-1be3fdfbcf712dbf",
+        "event_ids": [
+          "EV-2e214ba5a4504809"
+        ],
+        "company_entity_id": "EN-85e373a2452916cf",
+        "company_canonical_entity_id": "",
+        "company_name": "硕橙（厦门）科技有限公司",
+        "round": "D+轮",
+        "round_code": "series_d_plus",
+        "round_original": "D+轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-08-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c00e3514a8fe23f2",
+            "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
+            "source_title": "硕橙科技 | 项目信息-36氪",
+            "source_content_hash": "03b52d98e682698a",
+            "quote": "B+轮 2021-10 近亿人民币 阳光融汇资本 ， 厦门创投 ， 顺为资本",
+            "quote_hash": "216760a676cc437891f25fbe69c57b2986fecac667d68a1fc5af7c2ab8da9a4f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c00e3514a8fe23f2",
+        "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
+        "source_title": "硕橙科技 | 项目信息-36氪",
+        "source_content_hash": "03b52d98e682698a",
+        "quote": "B+轮 2021-10 近亿人民币 阳光融汇资本 ， 厦门创投 ， 顺为资本",
+        "quote_hash": "216760a676cc437891f25fbe69c57b2986fecac667d68a1fc5af7c2ab8da9a4f"
+      }
+    ]
+  }
+}
