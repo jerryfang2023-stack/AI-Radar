@@ -4,6 +4,15 @@
   const root = document.querySelector("[data-page-root]");
   const loading = document.querySelector("[data-loading]");
   const params = new URLSearchParams(window.location.search);
+  const communitySource = document.body.dataset.communitySource || "";
+  if (!communitySource && params.get("view") === "community") {
+    const target = new URL(params.get("source") === "aipoju" ? "community-aipoju.html" : "community-scys.html", location.href);
+    target.search = params.toString();
+    target.searchParams.delete("view");
+    target.searchParams.delete("source");
+    location.replace(target.href);
+    return;
+  }
   const legacyView = params.get("view");
   if (legacyView === "companies" || legacyView === "products") {
     params.set("view", "index");
@@ -13,7 +22,7 @@
     window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}${window.location.hash}`);
   }
   const knownViews = new Set(["events", "index", "relations", "fde", "hardware", "community", "viewpoints", "tag"]);
-  const view = knownViews.has(params.get("view")) ? params.get("view") : "events";
+  const view = communitySource ? "community" : knownViews.has(params.get("view")) ? params.get("view") : "events";
   document.body.dataset.dcView = view;
   const pageSize = 20;
   const eventGroupOrder = [
@@ -45,7 +54,7 @@
   const scysModel = window.ScysCommunityModel;
   const scysViews = {
     cases: { label: "AI 创业案例库", rail: "案例场景", empty: "没有符合条件的创业案例" },
-    weekly: { label: "每周需求与踩坑精选", rail: "精选场景", empty: "本周尚无已整理的精选，切换日期可查看其他周" },
+    weekly: { label: "每周需求与踩坑精选", rail: "精选场景", empty: "本周尚无已整理的精选，切换周次可查看其他周" },
     resources: { label: "实操资料库", rail: "资料场景", empty: "没有符合条件的实操资料" }
   };
   const communityViewConfig = {
@@ -61,12 +70,12 @@
     library: null,
     editorial: null,
     selectedDate: "",
-    activeView: params.get("source") === "aipoju" ? (Object.hasOwn(communityViewConfig, params.get("section")) ? params.get("section") : "all") : (Object.hasOwn(scysViews, params.get("section")) ? params.get("section") : "cases"),
+    activeView: communitySource === "aipoju" ? (Object.hasOwn(communityViewConfig, params.get("section")) ? params.get("section") : "all") : (Object.hasOwn(scysViews, params.get("section")) ? params.get("section") : "cases"),
     activeScene: "all",
     page: 1,
     filters: {
       query: params.get("q") || "",
-      source: params.get("source") === "aipoju" ? "aipoju" : "scys",
+      source: communitySource === "aipoju" ? "aipoju" : "scys",
       scene: "all",
       industry: "all", offering: "all", stage: "all", channel: "all", reviewStatus: "reviewed"
     }
@@ -171,7 +180,7 @@
 
   function setActiveNavigation() {
     document.querySelectorAll("[data-view-link]").forEach((link) => {
-      if (link.dataset.viewLink === view || (view === "tag" && link.dataset.viewLink === params.get("sourceView"))) {
+      if (link.dataset.communityLink ? link.dataset.communityLink === communitySource : link.dataset.viewLink === view || (view === "tag" && link.dataset.viewLink === params.get("sourceView"))) {
         link.setAttribute("aria-current", "page");
       } else {
         link.removeAttribute("aria-current");
@@ -1279,6 +1288,30 @@
     </article>`;
   }
 
+  function scysWeekOptions() {
+    const dates = new Set([communityState.selectedDate, ...(communityState.editorial.weekly || []).map((entry) => entry.selectedAt)]);
+    const latest = new Date(communityState.library.meta.latestDate + "T00:00:00Z");
+    for (let index = 0; index < 12; index += 1) {
+      dates.add(latest.toISOString().slice(0, 10));
+      latest.setUTCDate(latest.getUTCDate() - 7);
+    }
+    return [...new Set([...dates].map((date) => scysModel.weekRange(date).start))].filter(Boolean).sort().reverse()
+      .map((date) => ({ ...scysModel.weekRange(date), count: scysModel.weekly(communityItems(), communityState.editorial, date).length }));
+  }
+
+  function scysCaseCard(item) {
+    const profile = scysModel.profile(item, communityState.editorial);
+    const originalUrl = communityCanonicalItemUrl(item);
+    const links = communityLinks(item);
+    return `<article class="dc-community-card dc-scys-case">
+      <div class="dc-community-card-meta"><span>${escapeHtml(item.author || "作者未披露")}</span><time>${escapeHtml(item.publishedAt ? item.publishedAt.slice(0, 10) : "最近采集 " + item.lastSeen)}</time><span>${profile.reviewed ? "已整理" : "待整理线索"}</span></div>
+      <h3>${escapeHtml(communityDisplayTitle(item))}</h3>
+      <dl class="dc-scys-profile">${Object.entries({ industry: "客户行业", offering: "产品 / 服务", stage: "创业阶段", channel: "获客渠道" }).map(([key, label]) => `<div><dt>${label}</dt><dd>${escapeHtml(profile[key])}</dd></div>`).join("")}</dl>
+      <p class="dc-scys-need"><strong>客户需求</strong>${escapeHtml(profile.fields.need || "待核对原文")}</p>
+      <div class="dc-community-card-actions"><button type="button" data-community-open="${escapeHtml(item.id)}">查看首单、报价与交付</button>${links.length ? `<span>实操资料 ${links.length} 份</span>` : ""}${originalUrl ? `<a href="${escapeHtml(originalUrl)}" target="_blank" rel="noopener noreferrer">原帖 ↗</a>` : ""}</div>
+    </article>`;
+  }
+
   function communityRender() {
     communitySetUrlDate(communityState.selectedDate);
     const items = communityFilteredItems();
@@ -1292,46 +1325,43 @@
     const pageItems = rows.slice(start, start + communityPageSize);
     const facets = { industry: "客户行业", offering: "产品 / 服务", stage: "创业阶段", channel: "获客渠道" };
     const range = scysModel.weekRange(communityState.selectedDate);
-    const contextLabel = weeklyMode ? `本周 ${range.start} 至 ${range.end}` : isScys ? `历史积累至 ${communityState.library?.meta.latestDate || communityState.selectedDate}` : `数据日期 ${communityState.selectedDate}`;
+    const contextLabel = weeklyMode ? `周精选 ${range.start} 至 ${range.end}` : isScys ? `历史积累至 ${communityState.library?.meta.latestDate || communityState.selectedDate}` : `数据日期 ${communityState.selectedDate}`;
     const scenes = [...new Set(communityFilteredItems({ ignoreScene: true }).map(communityScene).filter(Boolean))]
       .sort((a, b) => a.localeCompare(b, "zh-CN"));
     root.innerHTML = `
       <div class="dc-page-head">
-        <h1>社群情报</h1>
+        <h1>${isScys ? "生财" : "AI 破局"}</h1>
         <span class="dc-page-description">${isScys ? "生财 · AI 创业实践与实操资料" : "AI 破局 · 社群一线材料"}</span>
         <span class="dc-data-date">${escapeHtml(contextLabel)}</span>
         <span class="dc-result-count">${rows.length} 条</span>
       </div>
-      <nav class="dc-community-sources" aria-label="社群子栏目">
-        <a href="data-center.html?view=community&source=scys&section=cases"${isScys ? ' aria-current="page"' : ""}>生财<span>创业案例 · 需求与踩坑 · 实操资料</span></a>
-        <a href="data-center.html?view=community&source=aipoju"${!isScys ? ' aria-current="page"' : ""}>AI 破局<span>行业案例 · 工具技巧 · 资料链接</span></a>
-      </nav>
       ${communityRenderTabs()}
-      ${isScys ? `<p class="dc-community-note">${weeklyMode ? "按整理日期归入自然周，仅展示已核对来源的精选。待确认问题供后续研究。" : resourceMode ? "历史资料独立保留完整地址与所属帖子；链接可打开不等于有访问权限或内容仍然适用。" : "按创业场景检索历史材料，已整理案例可查看首单、报价、交付与踩坑；未披露的信息保持空缺。"}</p>` : ""}
-      <form class="dc-toolbar dc-community-toolbar" data-community-filter-form>
-        <label class="dc-search"><span class="sr-only">关键词</span><input class="dc-input" name="q" value="${escapeHtml(communityState.filters.query)}" placeholder="搜索场景、案例、工具或链接" autocomplete="off"></label>
+      ${isScys ? `<p class="dc-community-note">${weeklyMode ? "按整理日期归入自然周，仅展示已核对来源的精选。待确认问题供后续研究。" : resourceMode ? "历史资料独立保留完整地址与所属帖子；链接可打开不等于有访问权限或内容仍然适用。" : "按创业场景检索历史材料，查看首单、报价、交付与踩坑。依据作者陈述整理，未作独立经营数据核验。"}</p>` : ""}
+      <form class="dc-toolbar dc-community-toolbar${isScys ? " dc-scys-filters" : ""}" data-community-filter-form>
+        <label class="dc-search"><span class="sr-only">关键词</span><input class="dc-input" name="q" value="${escapeHtml(communityState.filters.query)}" placeholder="${isScys ? weeklyMode ? "搜索需求、踩坑或作者" : resourceMode ? "搜索资料名称、链接或所属帖子" : "搜索案例、客户需求或作者" : "搜索场景、案例、工具或链接"}" autocomplete="off"></label>
         <button class="dc-button" type="submit">搜索</button>
         ${isScys && communityState.activeView === "cases" ? `<select class="dc-select" name="reviewStatus" aria-label="整理状态"><option value="reviewed"${communityState.filters.reviewStatus !== "all" ? " selected" : ""}>已整理案例</option><option value="all"${communityState.filters.reviewStatus === "all" ? " selected" : ""}>全部案例线索（含待整理）</option></select>` : ""}
-        ${isScys && !weeklyMode ? "" : `<select class="dc-select" name="date" aria-label="数据日期">
+        ${isScys ? "" : `<select class="dc-select" name="date" aria-label="数据日期">
           ${communityState.manifest.map((entry) => `<option value="${escapeHtml(entry.date)}"${entry.date === communityState.selectedDate ? " selected" : ""}>${escapeHtml(communityDateLabel(entry.date))}</option>`).join("")}
         </select>`}
-        ${isScys && !resourceMode ? Object.entries(facets).map(([field, label]) => {
-          const options = communityUnique(communityItems().filter((item) => scysModel.profile(item, communityState.editorial).caseMaterial).flatMap((item) => scysModel.profile(item, communityState.editorial)[field].split(" / ")));
+        ${isScys && !resourceMode && !weeklyMode ? Object.entries(facets).map(([field, label]) => {
+          const options = communityUnique(communityItems().filter((item) => scysModel.profile(item, communityState.editorial).caseMaterial && (communityState.filters.reviewStatus === "all" || scysModel.profile(item, communityState.editorial).reviewed)).flatMap((item) => scysModel.profile(item, communityState.editorial)[field].split(" / ")));
           return `<select class="dc-select" name="${field}" aria-label="${label}"><option value="all">全部${label}</option>${options.map((value) => `<option value="${escapeHtml(value)}"${communityState.filters[field] === value ? " selected" : ""}>${escapeHtml(value)}</option>`).join("")}</select>`;
         }).join("") : ""}
+        ${weeklyMode ? `<label class="dc-week-picker">周次<select class="dc-select" name="week" aria-label="周次">${scysWeekOptions().map((week) => `<option value="${week.start}"${week.start === range.start ? " selected" : ""}>${week.start} — ${week.end} · ${week.count} 条精选</option>`).join("")}</select></label>` : ""}
         ${resourceMode ? `<select class="dc-select" name="resourceKind" aria-label="资料类型">${Object.entries({ all: "全部资料", document: "实操文档", manual: "航海手册", tool: "工具", case: "关联案例" }).map(([key, label]) => `<option value="${key}"${(communityState.filters.resourceKind || "all") === key ? " selected" : ""}>${label}</option>`).join("")}</select>` : ""}
-        <select class="dc-select" name="scene" aria-label="场景">
+        ${!isScys ? `<select class="dc-select" name="scene" aria-label="场景">
           <option value="all">全部场景</option>
           ${scenes.map((scene) => `<option value="${escapeHtml(scene)}"${scene === communityState.filters.scene ? " selected" : ""}>${escapeHtml(scene)}</option>`).join("")}
-        </select>
+        </select>` : ""}
         <button class="dc-clear" type="button" data-community-clear>清除条件</button>
       </form>
-      <div class="dc-community-layout">
-        ${communityRenderScenes()}
+      <div class="dc-community-layout${isScys ? " dc-scys-layout" : ""}">
+        ${isScys ? "" : communityRenderScenes()}
         <section class="dc-community-stage">
           <div class="dc-community-section-head"><h2>${escapeHtml(config.label)}</h2><span>${rows.length} 条</span></div>
           <div class="dc-community-grid">
-            ${pageItems.length ? pageItems.map(resourceMode ? scysResourceCard : weeklyMode ? scysWeeklyCard : communityCard).join("") : `<div class="dc-empty">${escapeHtml(config.empty)}</div>`}
+            ${pageItems.length ? pageItems.map(resourceMode ? scysResourceCard : weeklyMode ? scysWeeklyCard : isScys ? scysCaseCard : communityCard).join("") : `<div class="dc-empty">${escapeHtml(config.empty)}</div>`}
           </div>
           ${communityRenderPagination(rows.length)}
         </section>
@@ -1386,9 +1416,12 @@
 
   function communitySetUrlDate(date) {
     const next = new URL(window.location.href);
-    next.searchParams.set("view", "community");
-    next.searchParams.set("date", date);
-    next.searchParams.set("source", communityState.filters.source);
+    next.searchParams.delete("view");
+    next.searchParams.delete("source");
+    next.searchParams.delete("date");
+    next.searchParams.delete("week");
+    if (communitySource === "aipoju") next.searchParams.set("date", date);
+    else if (communityState.activeView === "weekly") next.searchParams.set("week", scysModel.weekRange(date).start);
     next.searchParams.set("section", communityState.activeView);
     if (communityState.filters.query) next.searchParams.set("q", communityState.filters.query);
     else next.searchParams.delete("q");
@@ -1427,8 +1460,8 @@
         loading.hidden = true;
       }
     });
-    form?.elements.namedItem("source")?.addEventListener("change", (event) => {
-      communityState.filters.source = event.target.value;
+    form?.elements.namedItem("week")?.addEventListener("change", (event) => {
+      communityState.selectedDate = event.target.value;
       communityState.activeScene = "all";
       communityState.filters.scene = "all";
       communityState.page = 1;
@@ -1480,11 +1513,16 @@
         communityFetchJson("data/scys-community-editorial.json")
       ]);
     }
-    const manifest = await communityFetchJson("data/community-intelligence-daily/index.json").catch(() => ({ dates: [] }));
-    communityState.manifest = (manifest.dates || []).filter((item) => item?.date)
-      .sort((a, b) => String(b.date).localeCompare(String(a.date)));
-    const requestedDate = params.get("date") || communityState.manifest[0]?.date || "";
-    await communityLoadDate(requestedDate);
+    if (communitySource === "scys") {
+      const requested = params.get("week") || params.get("date");
+      communityState.selectedDate = /^\d{4}-\d{2}-\d{2}$/.test(requested || "") && scysModel.weekRange(requested).start ? requested : communityState.library.meta.latestDate;
+    } else {
+      const manifest = await communityFetchJson("data/community-intelligence-daily/index.json").catch(() => ({ dates: [] }));
+      communityState.manifest = (manifest.dates || []).filter((item) => item?.date)
+        .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      const requestedDate = params.get("date") || communityState.manifest[0]?.date || "";
+      await communityLoadDate(requestedDate);
+    }
     communityRender();
     const dialog = document.querySelector("[data-community-dialog]");
     document.querySelector("[data-community-dialog-close]")?.addEventListener("click", () => dialog?.close());

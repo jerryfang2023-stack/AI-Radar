@@ -42,8 +42,8 @@ test("weekly selection uses natural weeks and rejects stale source reviews", () 
     { itemKey: model.key(post), selectedAt: "2026-09-12" },
     { itemKey: model.key(post), selectedAt: "2026-09-13" },
   ] };
-  assert.deepEqual(model.weekRange("2026-09-12"), { start: "2026-09-07", end: "2026-09-12" });
-  assert.equal(model.weekly([post], editorial, "2026-09-12").length, 1);
+  assert.deepEqual(model.weekRange("2026-09-12"), { start: "2026-09-07", end: "2026-09-13" });
+  assert.equal(model.weekly([post], editorial, "2026-09-12").length, 2);
   assert.equal(model.weekly([{ ...post, bodyRef: "new source" }], editorial, "2026-09-12").length, 0);
 });
 
@@ -57,4 +57,10 @@ test("published selections resolve to existing source records with current evide
     assert.equal(item.bodyRef, entry.bodyRef);
   }
   assert.ok(library.resources.every((r) => r.owners.every((owner) => library.items.some((item) => item.id === owner.itemId))));
+});
+
+test("calendar weeks include Sunday and cross year boundaries", () => {
+  assert.deepEqual(model.weekRange("2027-01-01"), { start: "2026-12-28", end: "2027-01-03" });
+  assert.deepEqual(model.weekRange("2026-09-13"), model.weekRange("2026-09-07"));
+  assert.equal(model.weekRange("2026-09-14").start, "2026-09-14");
 });

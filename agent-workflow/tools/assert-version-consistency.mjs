@@ -42,7 +42,7 @@ const expected = {
   dataCenterRelease: "GUANLAN-DATA-CENTER-V4.8.1-internal-foundation",
   dataCenterGitTag: "data-center-v4.8.1-internal-foundation",
   site: "SITE-V4.6.1-research-retirement",
-  community: "CINT-V1.2.0-source-subcolumns",
+  community: "CINT-V1.3.0-independent-pages",
   ops: "OPS-V3.7.0-china-funding-quality",
   reports: "REPORTS-V1.3.0-funding-portal",
   opportunity: "OMAP-V2.0.0-v4-evidence",
@@ -64,7 +64,7 @@ const ledgerChecks = [
   ["Data Center Git tag", expected.dataCenterGitTag],
   ["Main website version", expected.site],
   ["Community Intelligence column version", expected.community],
-  ["Community Intelligence Git tag", "community-intelligence-v1.2.0-source-subcolumns"],
+  ["Community Intelligence Git tag", "community-intelligence-v1.3.0-independent-pages"],
   ["Operations backend version", expected.ops],
   ["Guanlan Research column version", expected.reports],
   ["Opportunity Map column version", expected.opportunity],
@@ -118,6 +118,8 @@ if (packageLockVersion !== expected.packageVersion) fail(`package-lock.json expe
 
 const rootEntry = "01-SiteV2/site/index.html";
 const sitePages = [
+  "01-SiteV2/site/community-scys.html",
+  "01-SiteV2/site/community-aipoju.html",
   "01-SiteV2/site/data-center.html",
   "01-SiteV2/site/intelligence-map.html",
   "01-SiteV2/site/opportunity-map.html",

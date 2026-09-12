@@ -720,7 +720,7 @@ async function main() {
   const payload = {
     meta: {
       generatedAt: new Date().toISOString(),
-      columnVersion: "CINT-V1.2.0-source-subcolumns",
+      columnVersion: "CINT-V1.3.0-independent-pages",
       scysCoverage,
       scysAcquisition: scysCompleted ? "mcp" : "browser",
       resourceAssociation: "keyword_match_only_not_verified_relationship",
