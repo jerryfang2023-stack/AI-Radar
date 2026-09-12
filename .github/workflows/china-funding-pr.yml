@@ -158,8 +158,10 @@ jobs:
         run: |
           set -euo pipefail
           cp "agent-workflow/reports/china-funding/$RUN_DATE/health.json" "$RUNNER_TEMP/china-funding-health.json"
+          cp -a "agent-workflow/reports/china-funding/$RUN_DATE" "$RUNNER_TEMP/china-funding-lane"
           # This clean Actions checkout belongs exclusively to this transaction.
           git restore --worktree --staged .
+          cp -a "$RUNNER_TEMP/china-funding-lane/." "agent-workflow/reports/china-funding/$RUN_DATE/"
           cp "$RUNNER_TEMP/china-funding-health.json" 01-SiteV2/site/data/china-funding-health-v1.json
           node agent-workflow/tools/build-ops-console-data.mjs
       - name: Validate publication boundary
