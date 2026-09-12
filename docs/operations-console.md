@@ -1,6 +1,10 @@
 # Unified Operations Console
 
-Release baseline: OPS-V3.6.3-astra-session-isolation / Skill Store v2.3.0
+Release baseline: OPS-V3.7.0-china-funding-quality / Skill Store v2.4.0
+
+2026-09-12 domestic monitoring release adds source-level collection diagnostics, evidence-to-event conversion, China-market verification, linked organizations/products and matched financing cards to Data Quality. Unknown values remain unknown; a domestic publisher does not establish the company's market. The independent lane shares the 08:10 dispatch with overseas monitoring. Final Closure atomically publishes the protected OPS artifact and records live hash/authentication/health checks separately from the source snapshot. See [domestic monitoring](china-funding-monitor.md) for the execution contract and first production results.
+
+Previous release evidence:
 
 2026-09-12 release: commit `bcdc066bc607868014e4e38cee91e4f5c50a4440`, tag `ops-v3.6.3-astra-session-isolation`, atomically deployed at `/var/www/wavesight-ops/releases/ops-v363-bcdc066bc6`. Six asset hashes match Git; Nginx, anonymous login redirects and service health pass. All 100 relevant tests pass, including two synthetic browser integrations. [CI passed](https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/34625986309). The production authenticated-browser check remains unavailable because the browser bridge failed; no real member or Token writes were used for validation. [Release receipt](../agent-workflow/reports/2026-09-12-ops-astra-release.json).
 
