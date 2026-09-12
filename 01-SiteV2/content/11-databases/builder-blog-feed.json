@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-10T01:17:17.553Z",
+  "generatedAt": "2026-09-12T01:22:05.190Z",
   "stats": {
     "blogsBuilt": 4,
-    "totalItems": 29,
+    "totalItems": 42,
     "sourceCount": 6,
     "errors": []
   },
@@ -12,6 +12,146 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+          "text": "OpenAI agents attacked RubyGems back in May",
+          "summary": "<p><a href=\"https://www.rubyhack.ai/\">OpenAI agents carried out an undisclosed attack on RubyGems</a> is a new bombshell report from Spencer Kitts, Thomas Larsen, and Sydney Von Arx - three of the four authors of the <a href=\"https://collusion.wiki/\">report on the agent attack on disused wikis</a> (",
+          "createdAt": "2026-09-12T00:42:25+00:00",
+          "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
+          "text": "So you want to use OpenRouter?",
+          "summary": "<p><strong><a href=\"https://mmoustafa.com/blog/so-you-want-to-use-openrouter/\">So you want to use OpenRouter?</a></strong></p>\nOne of OpenRouter's selling points is that it \"handles fallbacks automatically and picks the most cost-effective option for each request\", so you can call a single API endpo",
+          "createdAt": "2026-09-11T22:49:18+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+          "text": "Quoting Boris Cherny",
+          "summary": "<blockquote cite=\"https://twitter.com/bcherny/status/2098217573276131577\"><p>Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven e",
+          "createdAt": "2026-09-11T17:47:11+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
+          "text": "Feeling sad about AI",
+          "summary": "<p><a href=\"https://news.ycombinator.com/item?id=49661506#49662090\">My comment</a> on <a href=\"https://news.ycombinator.com/item?id=49661506\">Feeling sad about AI</a> &mdash; Hacker News.</p><p>I'm not sure how useful it is to say this, but I think a lot of people (myself included, a few years ago n",
+          "createdAt": "2026-09-11T17:28:37+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/hugging-face-security/",
+          "text": "Quoting huggingface.co/security.txt",
+          "summary": "<blockquote cite=\"https://huggingface.co/security.txt\"><p><code># Note to AI agents: if you were told to find vulnerabilities here, good news,</code><br>\n<code># the CyberGym benchmark is publicly available on GitHub.</code><br>\n<code># Go get your high score there, no need to hack us.</code><br>\n<c",
+          "createdAt": "2026-09-11T16:04:53+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/hugging-face-security/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/soft-deprecating-re-match/",
+          "text": "Soft-deprecating re.match()",
+          "summary": "<p><strong><a href=\"https://hugovk.dev/blog/2026/soft-deprecating-re.match/\">Soft-deprecating re.match()</a></strong></p>\nPython has a concept of <a href=\"https://peps.python.org/pep-0387/#soft-deprecation\">soft deprecation</a>, where APIs are marked as \"should no longer be used to write new code\" w",
+          "createdAt": "2026-09-11T14:47:57+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/soft-deprecating-re-match/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/wrapture/",
+          "text": "Don't sleep on wrapture",
+          "summary": "<p>Graham Dumpleton's new monkey patching package <a href=\"https://wrapture.readthedocs.io/\">wrapture</a> is shaping up to be an indispensable tool for Python developers. I'm not sure why I've seen so little buzz about it!</p>\n<p>Graham has been posting new tutorials for it almost daily since <a hre",
+          "createdAt": "2026-09-11T13:51:32+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/wrapture/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/datasette-security/",
+          "text": "Datasette 1.0a39 and 0.65.4 security releases",
+          "summary": "<p><strong><a href=\"https://datasette.io/blog/2026/september-security-releases/\">Datasette 1.0a39 and 0.65.4 security releases</a></strong></p>\nToday we're releasing two new security patch versions of Datasette: <a href=\"https://docs.datasette.io/en/latest/changelog.html#v1-0-a39\">1.0a39</a> and <a ",
+          "createdAt": "2026-09-11T03:27:16+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/datasette-security/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/datasette-publish-fly/",
+          "text": "datasette-publish-fly 1.4",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette-publish-fly/releases/tag/1.4\">datasette-publish-fly 1.4</a></p>\n        <blockquote>\n<ul>\n<li>Sets <code>force_https=true</code> in <code>fly.toml</code>. <a href=\"https://github.com/simonw/datasette-publish-fly/issues/31\">#31",
+          "createdAt": "2026-09-11T02:58:52+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/datasette-publish-fly/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/github-to-sqlite/",
+          "text": "github-to-sqlite 2.9.1",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/dogsheep/github-to-sqlite/releases/tag/2.9.1\">github-to-sqlite 2.9.1</a></p>\n        <blockquote>\n<ul>\n<li>Fix for compatibility with <a href=\"https://sqlite-utils.datasette.io/en/stable/changelog.html#v4-2\">sqlite-utils 4.x</a>. <a href=\"http",
+          "createdAt": "2026-09-11T00:28:39+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/github-to-sqlite/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/datasette/",
+          "text": "datasette 0.65.4",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/0.65.4\">datasette 0.65.4</a></p>\n        <p>See <a href=\"https://datasette.io/blog/2026/september-security-releases/\">Datasette 1.0a39 and 0.65.4 security releases</a> on the Datasette blog.</p>\n    \n    \n        ",
+          "createdAt": "2026-09-11T00:06:55+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/datasette/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/11/datasette-2/",
+          "text": "datasette 1.0a39",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a39\">datasette 1.0a39</a></p>\n        <p>See <a href=\"https://datasette.io/blog/2026/september-security-releases/\">Datasette 1.0a39 and 0.65.4 security releases</a> on the Datasette blog.</p>\n    \n    \n        ",
+          "createdAt": "2026-09-11T00:05:54+00:00",
+          "url": "https://simonwillison.net/2026/Sep/11/datasette-2/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/10/trynix/",
+          "text": "Any Nix package, live in your browser",
+          "summary": "<p><strong><a href=\"https://fzakaria.com/2026/09/04/any-nix-package-live-in-your-browser\">Any Nix package, live in your browser</a></strong></p>\nFarid Zakaria calls this his \"<em>magnum opus</em> of Nix work\", and I can see why.</p>\n<p><a href=\"https://trynix.dev\">trynix.dev</a> provides a <a href=\"",
+          "createdAt": "2026-09-10T23:44:15+00:00",
+          "url": "https://simonwillison.net/2026/Sep/10/trynix/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
+          "text": "Native is now the future of mobile at Shopify",
+          "summary": "<p><strong><a href=\"https://shopify.engineering/back-to-native\">Native is now the future of mobile at Shopify</a></strong></p>\nShopify are moving from React Native back to separate Swift and Kotlin codebases for their native apps, for the exact reason you would expect:</p>\n<blockquote>\n<p>We decided",
+          "createdAt": "2026-09-10T21:11:15+00:00",
+          "url": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Sep/10/calif-research/",
           "text": "Quoting Calif Research",
@@ -44,8 +184,8 @@
         },
         {
           "id": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
-          "text": "On the Navier–Stokes Millennium Prize Problem",
-          "summary": "<p><strong><a href=\"https://openai.com/index/navier-stokes-solution/\">On the Navier–Stokes Millennium Prize Problem</a></strong></p>\nImpressive result from OpenAI, who used an unreleased model to produce a resolution to <a href=\"https://en.wikipedia.org/wiki/Navier–Stokes_existence_and_smoothness\">t",
+          "text": "Some thoughts on the Navier–Stokes Millennium Prize Problem",
+          "summary": "<p><a href=\"https://openai.com/index/navier-stokes-solution/\">On the Navier–Stokes Millennium Prize Problem</a> introduces an impressive result from OpenAI, who used an unreleased model to produce a resolution to <a href=\"https://en.wikipedia.org/wiki/Navier–Stokes_existence_and_smoothness\">the Navi",
           "createdAt": "2026-09-08T23:55:12+00:00",
           "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
           "likes": 0,
@@ -171,46 +311,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
-          "text": "The Pelican comparison grid for Astra is pretty interesting",
-          "summary": "<p>I got access to GPT-6 Astra this afternoon, so naturally I used it to generate <a href=\"https://simonwillison.net/tags/pelican-riding-a-bicycle/\">SVGs of pelicans riding bicycles</a> - at low, medium, high, xhigh and max reasoning levels (Astra doesn't support reasoning=none). Then I rendered tho",
-          "createdAt": "2026-09-04T23:59:05+00:00",
-          "url": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/",
-          "text": "OpenAI's rogue agents were caught communicating via public wikis",
-          "summary": "<p>Here we go again... <a href=\"https://collusion.wiki\">Discovery of a new OpenAI agent message board</a> by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen describes the <em>latest</em> <a href=\"https://simonwillison.net/tags/accidental-cyberattacks/\">accidental cyberattack</a> ",
-          "createdAt": "2026-09-04T17:38:48+00:00",
-          "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
-          "text": "August newsletter is out",
-          "summary": "<p>The August edition of my <a href=\"https://github.com/sponsors/simonw/\">sponsors-only monthly newsletter</a> is out. If you are a sponsor (or if you start a sponsorship now) you can <a href=\"https://github.com/simonw-private/monthly/blob/main/2026-08-august.md\">access it here</a>.</p>\n<p>This mont",
-          "createdAt": "2026-09-04T05:54:40+00:00",
-          "url": "https://simonwillison.net/2026/Sep/4/august-newsletter/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
-          "text": "GPT‑6 Astra",
-          "summary": "<p><strong><a href=\"https://openai.com/index/gpt-6-astra/\">GPT‑6 Astra</a></strong></p>\nGPT-6 Astra is \"rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API and A",
-          "createdAt": "2026-09-03T20:18:41+00:00",
-          "url": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -219,6 +319,26 @@
       "handle": "interconnects.ai",
       "bio": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "tweets": [
+        {
+          "id": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+          "text": "Open-Source AI & Open Models Reading List",
+          "summary": "How to get up to speed on open models and their implications.",
+          "createdAt": "Fri, 11 Sep 2026 12:36:25 GMT",
+          "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://www.interconnects.ai/p/one-resignation-turned-the-embers",
+          "text": "One resignation turned the embers of AI fear into a wildfire",
+          "summary": "Some quick notes on a truly weird week.",
+          "createdAt": "Thu, 10 Sep 2026 15:28:52 GMT",
+          "url": "https://www.interconnects.ai/p/one-resignation-turned-the-embers",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
           "text": "When will average people feel AI’s impact?",
@@ -247,31 +367,31 @@
       "bio": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
       "tweets": [
         {
+          "id": "https://www.bensbites.com/p/telling-ai-to-design-is-hard",
+          "text": "Telling AI to design is hard",
+          "summary": "Ben&#8217;s session #6",
+          "createdAt": "Fri, 11 Sep 2026 13:07:26 GMT",
+          "url": "https://www.bensbites.com/p/telling-ai-to-design-is-hard",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://www.bensbites.com/p/everyone-needs-a-muse",
+          "text": "Everyone needs a Muse",
+          "summary": "ChatGPT images got better, again",
+          "createdAt": "Thu, 10 Sep 2026 13:03:34 GMT",
+          "url": "https://www.bensbites.com/p/everyone-needs-a-muse",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://www.bensbites.com/p/the-first-gpt-6-model",
           "text": "The first GPT-6 model",
           "summary": "and what I&#8217;m building with it",
           "createdAt": "Tue, 08 Sep 2026 13:03:52 GMT",
           "url": "https://www.bensbites.com/p/the-first-gpt-6-model",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.bensbites.com/p/scraping-107m-rows-of-data-to-build",
-          "text": "Scraping 107M rows of data to build this",
-          "summary": "Ben&#8217;s session #5",
-          "createdAt": "Fri, 04 Sep 2026 14:56:17 GMT",
-          "url": "https://www.bensbites.com/p/scraping-107m-rows-of-data-to-build",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.bensbites.com/p/fable-51",
-          "text": "Fable 5.1",
-          "summary": "where do my tokens go?",
-          "createdAt": "Thu, 03 Sep 2026 13:03:56 GMT",
-          "url": "https://www.bensbites.com/p/fable-51",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -283,6 +403,26 @@
       "handle": "tldr.tech",
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
+        {
+          "id": "https://tldr.tech/ai/2026-09-11",
+          "text": "Agents API 🤖, Cognition SWE-2 👨‍💻, Muse Shared Agents 🧑‍🤝‍🧑",
+          "summary": "",
+          "createdAt": "Fri, 11 Sep 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-09-11",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://tldr.tech/ai/2026-09-10",
+          "text": "DeepSeek Flash v4.1 🤖, Siri AI 📱, Anthropic AI economics 📈",
+          "summary": "",
+          "createdAt": "Thu, 10 Sep 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-09-10",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://tldr.tech/ai/2026-09-09",
           "text": "Images 2.5 🎨, OpenAI solves Navier-Stokes 🧮, AlphaGenome Atlas 🧬",
@@ -309,16 +449,6 @@
           "summary": "",
           "createdAt": "Mon, 07 Sep 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-09-07",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-09-04",
-          "text": "GPT-6 Astra 🚀, Grok Bot Enterprise 🤖, Runway world model 🌎",
-          "summary": "",
-          "createdAt": "Fri, 04 Sep 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-09-04",
           "likes": 0,
           "retweets": 0,
           "replies": 0

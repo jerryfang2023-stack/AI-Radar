@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T01:38:57.500Z",
+    "generatedAt": "2026-09-12T02:04:43.021Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 2847,
@@ -24,6 +24,8 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "2098281805770309686",
+      "2098217573276131577",
       "2097557079762624563",
       "2095590515765060076",
       "2094864063478276288",
@@ -55,23 +57,23 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-05",
-    "lastSeen": "2026-09-09",
+    "lastSeen": "2026-09-11",
     "handle": "bcherny",
     "role": "Claude Code anthropicai",
     "organization": "Anthropic",
     "viewpointTags": [
-      "产品与创业",
-      "产品策略观点",
-      "AI 应用与平台",
+      "AI 基础设施",
+      "模型基础设施观点",
       "AI 编程",
       "AI Coding 观点",
       "AI Coding",
+      "产品与创业",
+      "产品策略观点",
+      "AI 应用与平台",
       "Agent",
       "Agent 工作流观点",
       "Agentic AI",
-      "企业工作流",
-      "AI 基础设施",
-      "模型基础设施观点"
+      "企业工作流"
     ],
     "organizationNames": [
       "Anthropic"
@@ -96,6 +98,18 @@
     },
     "timeline": [],
     "viewpoints": [
+      {
+        "id": "2098281805770309686",
+        "date": "2026-09-11",
+        "title": "最新的Threat Intelligence报告是一篇绝对令人恐惧且重要的读物。随着模型变得更加智能，如果没有正确的保障措施和监控，它们也会变得更加危险。许多能力具有双重用途：一个擅长编程的模型可以被用来攻击关键基础设施；一个协助生物学研究的模型也可以被用来设计下一场大流行病。这些问题复杂、棘手，并且对每个人来说都越来越重要，需要大家理解，以便世界能够参与进来并应对迅速升级的风险。https://t.co/0rnV2HjPP6",
+        "sourceUrl": "https://x.com/bcherny/status/2098281805770309686"
+      },
+      {
+        "id": "2098217573276131577",
+        "date": "2026-09-11",
+        "title": "嘿，████，我认为两者都有空间。1. 原型和其他一次性代码可以完全当作黑盒来处理。反正你最终会丢弃它，而且如果它出问题的波及范围很小，那它就不需要做到完美。2. Claude 编写的生产代码应该比人类编写的代码有更高的标准。在 Anthropic，我们设置了许多防护措施来确保这一点：大量的 lint 规则、大量的测试、Claude 驱动的端到端测试、每天运行的 Claude 驱动的模糊测试、自动化代码审查和安全审查、自动化代码重构等等。没有这些，你最终可能会得到一团难以长期维护的乱麻。幸运的是，模型让这些事情越来越容易做好——运行几个日常例程、使用 Claude Code Review 等等。你的职责是守住代码质量的标准。如果 Claude 的代码达不到标准，可以尝试：- 使用最新的前沿模型（Opus 5 或 Fable 5.1）- 将努力程度提高到 high 或 xhigh- 投入精力完善你的 CLAUDE.md 和技能，简洁地教会 Claude 如何在你的代码库中工作如果以上都不行，在与 Claude 协作时更主动地引导它，或者让 Claude 修复累积的技术债务并重写你的代码库，使其更易于协作。或者，等待下一个模型。此致，Boris",
+        "sourceUrl": "https://x.com/bcherny/status/2098217573276131577"
+      },
       {
         "id": "2097557079762624563",
         "date": "2026-09-09",
