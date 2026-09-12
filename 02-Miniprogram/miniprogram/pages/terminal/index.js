@@ -34,6 +34,8 @@ Page({
     selectedMarketRegion: "global",
     sort: "latest",
     filters: { ...DEFAULT_FILTERS },
+    categoryOptions: [{ id: "all", label: "全部类别" }],
+    categoryIndex: 0,
   },
 
   onLoad() {
@@ -105,6 +107,11 @@ Page({
   },
 
   refreshCards(reset) {
+    const categories = new Map(this.allCards.filter((card) => card.marketRegion === this.data.selectedMarketRegion)
+      .map((card) => [card.categoryId, card.category]).filter(([id, label]) => id && label));
+    const categoryOptions = [{ id: "all", label: "全部类别" }, ...Array.from(categories, ([id, label]) => ({ id, label }))];
+    const categoryIndex = Math.max(0, categoryOptions.findIndex((item) => item.id === this.data.filters.categoryId));
+    this.setData({ categoryOptions, categoryIndex, "filters.categoryId": categoryOptions[categoryIndex].id });
     const filtered = filterCards(this.allCards, this.data.filters, this.data.meta.latestDate);
     this.filteredCards = sortCards(filtered, this.data.sort);
     this.setData({ filteredCount: this.filteredCards.length });
@@ -136,6 +143,15 @@ Page({
 
   clearSearch() {
     this.setData({ "filters.keyword": "" }, () => this.refreshCards(true));
+  },
+
+  changeCategory(event) {
+    const option = this.data.categoryOptions[Number(event.detail.value)];
+    if (!option) return;
+    this.setData({ "filters.categoryId": option.id }, () => {
+      track("filter_changed", { scope: "funding", filter: "categoryId", value: option.id });
+      this.refreshCards(true);
+    });
   },
 
   changeMarketRegion(event) {

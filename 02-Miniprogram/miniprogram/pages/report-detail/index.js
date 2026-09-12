@@ -5,6 +5,8 @@ const { getAccessState } = require("../../utils/access.js");
 const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
 const { fetchProtectedContent } = require("../../utils/payment.js");
 
+const { presentReport } = require("../../utils/report-reader.js");
+
 Page({
   data: { report: null, sharedEntry: false, registrationOpen: false, contentLocked: false, lockReason: "", loading: false, loadError: "" },
   onLoad(options) {
@@ -50,7 +52,7 @@ Page({
       recordBehavior("browse", `report:${report.id}`);
       this.browseRecorded = true;
     }
-    this.setData({ report });
+    this.setData({ report: presentReport(report) });
   },
   unlockContent() { requestLockedContent(this); },
   closeRegistration() { this.pendingAction = ""; this.setData({ registrationOpen: false }); },

@@ -1,6 +1,8 @@
 # Guanlan Funding Mini Program
 
-Current source: 1.0.0 fixes delayed cross-identity responses, old-token expiry handling, and community cache isolation. Release evidence is tracked in `docs/releases/1.0.0/README.md`. The interim 0.9.10 development upload is superseded by 1.0.0 at the user's request.
+Current source: 1.0.1 improves weekly/monthly reading hierarchy, summary contrast and table readability; see `docs/REVIEW-1.0.1.md`. Upload is not review submission or production publication.
+
+Previous source: 1.0.0 fixes delayed cross-identity responses, old-token expiry handling, and community cache isolation. Release evidence is tracked in `docs/releases/1.0.0/README.md`. The interim 0.9.10 development upload is superseded by 1.0.0 at the user's request.
 
 Previous verified development upload: 0.9.9. Its immutable upload and service deployment evidence remains in `docs/releases/0.9.9/README.md`.
 
@@ -47,7 +49,7 @@ Previous immutable uploaded release: 0.9.5 adds a global native-share baseline, 
 - Treat `../03-H5/` as the historical visual baseline, not the current navigation contract. The first three bottom tabs are 融资、生态、社群. Keep the native Mini Program interaction model and capsule safe area.
 - Those three tab pages use one shared branded header in the top safe area: the H5 horizontal logo at left, one concise four-character title centered on screen, and a fine divider below. Do not repeat English headings, dates, explanatory subtitles, or internal validation language above the primary content.
 - Do not show collection controls or selection checkboxes in the financing list. Collection and selection belong to detail or dedicated management pages.
-- Financing discovery is search-led: search company, institution, product, or sector; do not add industry/category chip rails, category filter buttons, or industry badges to financing-list rows.
+- Financing discovery is search-led: search company, institution, product, or sector. V1.0.1 adds a native category picker on the same row as search at the user’s request; never add a second category rail or industry badges to financing-list rows.
 - 生态 uses a signal-led overview: current capital signals, sector ranking, a six-month heat trend, and public sector detail with the complete company list and active investors. Its bottom-tab label is 生态. Keep 收藏 and 关注 management under 我的 rather than on the ecology overview.
 - Home, financing, ecology, observation, and all list pages remain readable before registration. An unregistered visitor receives one complete distinct detail sample across financing, entity, sector, and report details. A second distinct detail keeps its title, summary, and basic facts visible, then shows an inline registration choice for the remaining paid content. Never open a registration overlay merely because a user enters a page or follows an internal detail link; only the visitor's explicit “注册并继续” or account action may open it, and cancelling must leave the current preview available.
 - Keep the 我的 tab independent from the first-three-tab visual sync unless a task explicitly includes it.

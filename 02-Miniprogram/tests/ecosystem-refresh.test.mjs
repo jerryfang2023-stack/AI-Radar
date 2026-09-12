@@ -11,7 +11,7 @@ const reports = require("../miniprogram/data/report-index.js");
 function loadPage(file, dependencies, wx = {}) {
   let page;
   vm.runInNewContext(fs.readFileSync(new URL(`../miniprogram/pages/${file}/index.js`, import.meta.url), "utf8"), {
-    require: (name) => dependencies[name], wx, Page: (value) => { page = value; },
+    require: (name) => name === "../../utils/report-reader.js" ? require("../miniprogram/utils/report-reader.js") : dependencies[name], wx, Page: (value) => { page = value; },
   });
   page.data = { ...page.data };
   page.setData = (patch, callback) => { Object.assign(page.data, patch); callback?.(); };
