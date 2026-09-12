@@ -32,8 +32,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
 | Tag taxonomy version | TAG-V4.1 |
 | First-Line Viewpoints column version | FLV-V1.1.0-history-backfill |
-| Community Intelligence column version | CINT-V1.4.1-card-hierarchy |
-| Community Intelligence Git tag | `community-intelligence-v1.4.1-card-hierarchy` |
+| Community Intelligence column version | CINT-V1.4.2-vi-alignment |
+| Community Intelligence Git tag | `community-intelligence-v1.4.2-vi-alignment` |
 | Enterprise AI / FDE data contract | FDE-V2.0 |
 | Enterprise AI / FDE projection version | FDE-V2.0 |
 | Enterprise AI / FDE observation contract | FDE-OBSERVATION-V1.0 |
@@ -94,7 +94,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, `intelligence-map.html`, `funding-insights.html`, `reports.html`, and weekly/monthly HTML routes are compatibility redirects.
 - The retired Raw / Pool / Signal Card chain, V3 desk, graph, legacy mappings, and `compatibility_cards` interface are absent from the working tree. Git history is the only explicit recovery route; current production cannot discover them.
 - First-Line Viewpoints is versioned as `FLV-V1.1.0-history-backfill` in this release. It materializes accepted committed morning snapshots into a historical dataset, merges current morning, historical morning, and afternoon intake by original URL, and admits only AI-relevant records with approved Chinese translation provenance and opinion tags. The morning RSS and afternoon local `follow-builders` lanes remain independent, and Obsidian person/date timeline sync remains idempotent.
-- Community Intelligence is versioned as `CINT-V1.4.1-card-hierarchy` in this release. SCYS uses the local Codex MCP search/detail route, preserves Feishu resources independently, archives full originals privately, and adds explicitly labeled keyword-matched cases/tools/manuals. It keeps logged-in local collection as the only collection route, uses GitHub only to publish already-generated validated files, and treats open PR / queued workflow states after healthy same-date data as Waiting rather than repair Problems.
+- Community Intelligence is versioned as `CINT-V1.4.2-vi-alignment` in this release. SCYS uses the local Codex MCP search/detail route, preserves Feishu resources independently, archives full originals privately, and adds explicitly labeled keyword-matched cases/tools/manuals. It keeps logged-in local collection as the only collection route, uses GitHub only to publish already-generated validated files, and treats open PR / queued workflow states after healthy same-date data as Waiting rather than repair Problems.
 - Enterprise AI / FDE uses `FDE-V2.0`, projected only from accepted V4 Events, Claims, Entities, and Sources. It has no Card or Lens Pool dependency.
 - Commercial-event production collects independent source artifacts from `aihot`, `keyword`, `gdelt`, and `rss`, then builds structured V4 intake and canonical facts. China-market monitoring reuses this lane, applies source categories without weights or ranking bonuses, and excludes procurement/tender sources and queries.
 - First-Line Viewpoints uses the independent morning RSS and afternoon follow-builders lanes, projected into `data-center.html?view=viewpoints`.
