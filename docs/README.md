@@ -8,6 +8,8 @@ This directory keeps only current operator and handoff documentation.
 - `docs/obsidian-vault.md`: independent Vault structure, refresh, validation, and recovery.
 - `docs/operations-console.md`: unified operations, membership analytics, Skill ownership, and release checks.
 - `docs/daily-production-recovery.md`: checkpoint recovery, runtime isolation, and website/Mini Program publication acceptance.
+- `docs/china-funding-monitor.md`, `docs/china-funding-history.md`: domestic monitoring and historical collection workflow.
+- `docs/china-funding-entity-sync-2026-09-12.md`: reviewed China company/person admission, pending identities, and downstream publication scope.
 - `docs/brand/wavesight-ai-vi/`: current brand, typography, logo, SVG, and visual tokens.
 
 New tasks should start from `AGENTS.md`, then `context/context-index.md`, the current task dispatch, and only the directly relevant files or Skill.
