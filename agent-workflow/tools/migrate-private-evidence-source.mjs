@@ -41,12 +41,20 @@ function safeInside(parent, candidate) {
   return relative && !relative.startsWith("..") && !path.isAbsolute(relative);
 }
 
-function publicIndex(store) {
+function publicIndex(store, date = "") {
+  const previous = date && fs.existsSync(publicIndexFile)
+    ? new Map(fs.readFileSync(publicIndexFile, "utf8").trim().split(/\r?\n/u).filter(Boolean).map((line) => { const row = JSON.parse(line); return [row.source_id, row]; }))
+    : new Map();
   return store.catalog.map((entry) => {
+    const sourceId = `SRC-${crypto.createHash("sha256").update(entry.snapshot_ref).digest("hex").slice(0, 16)}`;
+    const accepted = previous.get(sourceId);
+    // A date-scoped migration preserves other immutable, already indexed snapshots.
+    if (date && entry.data_date !== date && accepted?.schema_version === "PUBLIC-EVIDENCE-LOCATOR-V1.0"
+      && accepted.content_hash === entry.content_hash && accepted.data_date === entry.data_date) return accepted;
     const metadata = readJson(path.join(store.backupRoot, entry.record_ref));
     return {
       schema_version: "PUBLIC-EVIDENCE-LOCATOR-V1.0",
-      source_id: `SRC-${crypto.createHash("sha256").update(entry.snapshot_ref).digest("hex").slice(0, 16)}`,
+      source_id: sourceId,
       data_date: entry.data_date,
       title_original: String(metadata.title || metadata.title_zh || "").trim(),
       title_zh: String(metadata.title_zh || "").trim(),
@@ -166,7 +174,7 @@ function main() {
   const backupRoot = resolvePrivateEvidenceBackupRoot(root);
   buildPrivateEvidenceBackup({ root, backupRoot });
   const store = loadPrivateEvidenceStore(root);
-  writeLines(publicIndexFile, publicIndex(store));
+  writeLines(publicIndexFile, publicIndex(store, date));
 
   const intakeRoot = path.join(dataCenterRoot, "intake-v1");
   const intakeFiles = fs.existsSync(intakeRoot)
