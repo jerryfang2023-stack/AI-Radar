@@ -5,11 +5,46 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 3196,
-    "quarantinedEventCount": 30
+    "eventCount": 3193,
+    "quarantinedEventCount": 33,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
   },
   "institution": {
     "id": "INV-1fe12890aa2b4d",
@@ -21,7 +56,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 10,
+    "historical_or_ambiguous_count": 9,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
@@ -31,7 +66,7 @@
     "first_disclosed_at": "2026-02-02",
     "latest_disclosed_at": "2026-08-31",
     "role_counts": {
-      "historical_or_ambiguous": 10,
+      "historical_or_ambiguous": 9,
       "participant": 2
     },
     "round_codes": [
@@ -216,7 +251,8 @@
         "activity_id": "IA-19f637c49ea1549e",
         "funding_insight_id": "FI-a385248b0f830a67",
         "event_ids": [
-          "EV-df17b95cf25e7840"
+          "EV-df17b95cf25e7840",
+          "EV-5a28b9c37a236c89"
         ],
         "company_entity_id": "EN-062ed8ada14ccffe",
         "company_canonical_entity_id": "",
@@ -416,7 +452,8 @@
         "activity_id": "IA-bd773791479bd43d",
         "funding_insight_id": "FI-edc4e4cec2cd84bd",
         "event_ids": [
-          "EV-77a608db67e742a4"
+          "EV-77a608db67e742a4",
+          "EV-a34447341a3872ed"
         ],
         "company_entity_id": "EN-e7492db096492304",
         "company_canonical_entity_id": "",
@@ -449,46 +486,6 @@
             "source_content_hash": "7d9409a9ba1e94fc",
             "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资。",
             "quote_hash": "2db23ccce73f645f5bdf318d44d7566a1e0f479b61c7e9a92db361a49088c279"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-c1a9cc168ee540fe",
-        "funding_insight_id": "FI-129fe046eadd748c",
-        "event_ids": [
-          "EV-a34447341a3872ed"
-        ],
-        "company_entity_id": "EN-e7492db096492304",
-        "company_canonical_entity_id": "",
-        "company_name": "极佳视界",
-        "round": "Pre-B轮",
-        "round_code": "pre_series_b",
-        "round_original": "Pre-B轮",
-        "amount_original": "近10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 10 亿元"
-        },
-        "announced_at": "2026-03-05",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次财务机构",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-010c77e94d1f858f",
-            "source_url": "https://m.36kr.com/p/3710076436557954",
-            "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
-            "source_content_hash": "7e8c3e23c6fe0f92",
-            "quote": "中金资本、达晨财智、华控基金、奇绩创坛等众多财务机构的认可，体现了极佳视界的领先性和行业地位",
-            "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
           }
         ]
       },
@@ -613,14 +610,6 @@
         "source_content_hash": "7d9409a9ba1e94fc",
         "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资。",
         "quote_hash": "2db23ccce73f645f5bdf318d44d7566a1e0f479b61c7e9a92db361a49088c279"
-      },
-      {
-        "source_id": "FISRC-010c77e94d1f858f",
-        "source_url": "https://m.36kr.com/p/3710076436557954",
-        "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
-        "source_content_hash": "7e8c3e23c6fe0f92",
-        "quote": "中金资本、达晨财智、华控基金、奇绩创坛等众多财务机构的认可，体现了极佳视界的领先性和行业地位",
-        "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
       },
       {
         "source_id": "FISRC-61ee9829707c35ed",

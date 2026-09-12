@@ -5,11 +5,46 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 3196,
-    "quarantinedEventCount": 30
+    "eventCount": 3193,
+    "quarantinedEventCount": 33,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
   },
   "institution": {
     "id": "INV-7e6d64394128e7",
@@ -20,18 +55,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 7,
     "portfolio_company_count": 8,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 9,
+    "china_market_activity_count": 8,
     "china_market_company_count": 8,
-    "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-09-12",
+    "first_disclosed_at": "2026-01-12",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "co_lead": 3,
+      "co_lead": 2,
       "historical_or_ambiguous": 7,
       "lead": 1,
       "participant": 5
@@ -87,56 +122,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-da81851b42cbfa46",
-        "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-        "event_ids": [
-          "EV-26439e34295a0519",
-          "EV-cec68369662236fd",
-          "EV-41c54c428d84cc1e"
-        ],
-        "company_entity_id": "EN-8dc72a4672894e0f",
-        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-        "company_name": "自变量机器人科技（深圳）有限公司",
-        "round": "A++轮",
-        "round_code": "series_a_plus_plus",
-        "round_original": "A++轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-09-12",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-16371607ed092d64",
-            "source_url": "https://www.qbitai.com/2026/01/369147.html",
-            "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
-            "source_content_hash": "466042b9c1271f10",
-            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-          },
-          {
-            "source_id": "FISRC-449b969616ed1e95",
-            "source_url": "https://www.36kr.com/p/3636080421586182",
-            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-            "source_content_hash": "abef77aff9b6b68f",
-            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-          }
-        ]
-      },
       {
         "activity_id": "IA-4ab1d62f4188b4b3",
         "funding_insight_id": "FI-fae9478ac0e65316",
@@ -507,50 +492,11 @@
         ]
       },
       {
-        "activity_id": "IA-1f5d865bf533331b",
-        "funding_insight_id": "FI-b9eb4320e43ddfdf",
-        "event_ids": [
-          "EV-81810a440198ac3c"
-        ],
-        "company_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_name": "它石智航",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "4.55亿美金",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 455000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4.55 亿美元"
-        },
-        "announced_at": "2026-04-17",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-b4d6b7523ee32ad7",
-            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-            "source_content_hash": "0f321e5ffc10ea03",
-            "quote": "高瓴创投，与红杉中国本次联合领投它石智航。",
-            "quote_hash": "489b6b76e01f5a277f1df6426e9f59d846ee1c1f026a4d2125a15cb8e71b7541"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-97b28cc6d61548cc",
+        "activity_id": "IA-6e5e4473c21c44d9",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
-          "EV-1188b1585b835fe1"
+          "EV-1188b1585b835fe1",
+          "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -577,12 +523,12 @@
         "role_code": "co_lead",
         "evidence": [
           {
-            "source_id": "FISRC-f4259d29fd364076",
-            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-            "quote": "财务投资者层面，高瓴 创投 与红杉中国联合领投",
-            "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
+            "source_id": "FISRC-b4d6b7523ee32ad7",
+            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
+            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+            "source_content_hash": "0f321e5ffc10ea03",
+            "quote": "高瓴创投，与红杉中国本次联合领投它石智航。",
+            "quote_hash": "489b6b76e01f5a277f1df6426e9f59d846ee1c1f026a4d2125a15cb8e71b7541"
           }
         ]
       },
@@ -745,25 +691,51 @@
             "quote_hash": "9892c50eb2be44a65626c41984a0484ddcb5001adc621dc013072979ab7d31a8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-da81851b42cbfa46",
+        "funding_insight_id": "FI-e9bdd4e9374b04ca",
+        "event_ids": [
+          "EV-41c54c428d84cc1e",
+          "EV-26439e34295a0519",
+          "EV-cec68369662236fd"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人科技（深圳）有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-01-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-449b969616ed1e95",
+            "source_url": "https://www.36kr.com/p/3636080421586182",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+            "source_content_hash": "abef77aff9b6b68f",
+            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-16371607ed092d64",
-        "source_url": "https://www.qbitai.com/2026/01/369147.html",
-        "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
-        "source_content_hash": "466042b9c1271f10",
-        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-      },
-      {
-        "source_id": "FISRC-449b969616ed1e95",
-        "source_url": "https://www.36kr.com/p/3636080421586182",
-        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-        "source_content_hash": "abef77aff9b6b68f",
-        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-      },
       {
         "source_id": "FISRC-67ccadc4294defd6",
         "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
@@ -853,14 +825,6 @@
         "quote_hash": "489b6b76e01f5a277f1df6426e9f59d846ee1c1f026a4d2125a15cb8e71b7541"
       },
       {
-        "source_id": "FISRC-f4259d29fd364076",
-        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-        "quote": "财务投资者层面，高瓴 创投 与红杉中国联合领投",
-        "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
-      },
-      {
         "source_id": "FISRC-80b46378aae68c24",
         "source_url": "https://finance.sina.com.cn/roll/2026-03-16/doc-inhrevaq9814436.shtml",
         "source_title": "薇光点亮完成超1亿元Pre-A轮融资",
@@ -891,6 +855,14 @@
         "source_content_hash": "0c25173fc4c74b1f",
         "quote": "无界动力2025年11月完成3亿元天使轮融资，由红杉中国、线性资本领投",
         "quote_hash": "9892c50eb2be44a65626c41984a0484ddcb5001adc621dc013072979ab7d31a8"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
       }
     ]
   }

@@ -5,11 +5,46 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 3196,
-    "quarantinedEventCount": 30
+    "eventCount": 3193,
+    "quarantinedEventCount": 33,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
   },
   "institution": {
     "id": "INV-61547b1b919aa4",
@@ -20,18 +55,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
+    "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-23",
     "latest_disclosed_at": "2026-04-11",
     "role_counts": {
-      "participant": 3
+      "participant": 2
     },
     "round_codes": [
       "series_b"
@@ -40,7 +75,7 @@
       {
         "entity_id": "EN-ce22f929f4a17467",
         "canonical_entity_id": "",
-        "name": "智平方（AI² Robotics）"
+        "name": "智平方（深圳）科技股份有限公司"
       },
       {
         "entity_id": "EN-90596b71813a2ee2",
@@ -93,7 +128,8 @@
         "activity_id": "IA-1e6974be7e7857bc",
         "funding_insight_id": "FI-260667c69ddbf880",
         "event_ids": [
-          "EV-565b6c1b10b3cf83"
+          "EV-565b6c1b10b3cf83",
+          "EV-af8e95dbe06ac083"
         ],
         "company_entity_id": "EN-90596b71813a2ee2",
         "company_canonical_entity_id": "",
@@ -128,46 +164,6 @@
             "quote_hash": "b848920f19bc55c223f89d1d5d9ea16be1066dd0b6997163fa638a4301fe1850"
           }
         ]
-      },
-      {
-        "activity_id": "IA-eb40ed1cb0b5a87d",
-        "funding_insight_id": "FI-39ef2aaaed606bfe",
-        "event_ids": [
-          "EV-af8e95dbe06ac083"
-        ],
-        "company_entity_id": "EN-ce22f929f4a17467",
-        "company_canonical_entity_id": "",
-        "company_name": "智平方（AI² Robotics）",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "超10亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": 1000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 10 亿元"
-        },
-        "announced_at": "2026-02-23",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-2b8807c0477dce70",
-            "source_url": "https://finance.sina.com.cn/roll/2026-02-23/doc-inhnvivh9606202.shtml",
-            "source_title": "智平方完成10亿元B轮融资 估值超过百亿元",
-            "source_content_hash": "bcf31d071eff97490661a4e4005556a546c54ea1def4b5f9be8250f3287409ea",
-            "quote": "投资方包括百度战投、中车资本、 宇信科技 、 森麒麟 、沄柏资本、 国泰海通 基金等",
-            "quote_hash": "bda5f9cfb59b9cae2d95b5d29f6b83c2024aed8b21c13bfc78e9f6a135c00717"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -186,14 +182,6 @@
         "source_content_hash": "beaba4f9908bc315",
         "quote": "包括百度、中车资本、宇信科技、森麒麟、沄柏资本、国泰海通等，同时老股东持续加注。",
         "quote_hash": "b848920f19bc55c223f89d1d5d9ea16be1066dd0b6997163fa638a4301fe1850"
-      },
-      {
-        "source_id": "FISRC-2b8807c0477dce70",
-        "source_url": "https://finance.sina.com.cn/roll/2026-02-23/doc-inhnvivh9606202.shtml",
-        "source_title": "智平方完成10亿元B轮融资 估值超过百亿元",
-        "source_content_hash": "bcf31d071eff97490661a4e4005556a546c54ea1def4b5f9be8250f3287409ea",
-        "quote": "投资方包括百度战投、中车资本、 宇信科技 、 森麒麟 、沄柏资本、 国泰海通 基金等",
-        "quote_hash": "bda5f9cfb59b9cae2d95b5d29f6b83c2024aed8b21c13bfc78e9f6a135c00717"
       }
     ]
   }

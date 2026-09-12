@@ -5,11 +5,46 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 3196,
-    "quarantinedEventCount": 30
+    "eventCount": 3193,
+    "quarantinedEventCount": 33,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
   },
   "institution": {
     "id": "INV-4243b56be18a83",
@@ -20,18 +55,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-14",
     "latest_disclosed_at": "2026-07-14",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 1,
       "participant": 1
     },
     "round_codes": [
@@ -40,11 +75,6 @@
     "portfolio_companies": [
       {
         "entity_id": "EN-ccc2bd5e43d9ab2b",
-        "canonical_entity_id": "",
-        "name": "上海复鞍智能科技有限公司"
-      },
-      {
-        "entity_id": "EN-d92a7f237b09feea",
         "canonical_entity_id": "",
         "name": "上海复鞍智能科技有限公司"
       },
@@ -99,7 +129,8 @@
         "activity_id": "IA-b63f5c677cf366d0",
         "funding_insight_id": "FI-39ec2442585e45b6",
         "event_ids": [
-          "EV-0e1edf873779be1d"
+          "EV-0e1edf873779be1d",
+          "EV-7021bd7041019330"
         ],
         "company_entity_id": "EN-ccc2bd5e43d9ab2b",
         "company_canonical_entity_id": "",
@@ -134,46 +165,6 @@
             "quote_hash": "d0dbb96aee7f328e9265044785e68897778ec2a2261dab27203e5a3087e10eb9"
           }
         ]
-      },
-      {
-        "activity_id": "IA-b83da51f1db7733f",
-        "funding_insight_id": "FI-e33a64d66e4e499b",
-        "event_ids": [
-          "EV-7021bd7041019330"
-        ],
-        "company_entity_id": "EN-d92a7f237b09feea",
-        "company_canonical_entity_id": "",
-        "company_name": "上海复鞍智能科技有限公司",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "种子轮",
-        "amount_original": "数千万元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-05-14",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-c496091042c7e975",
-            "source_url": "https://news.pedaily.cn/202605/563872.shtml",
-            "source_title": "复鞍智能完成种子轮融资，小苗朗程、天际资本联合领投",
-            "source_content_hash": "8a542d4e6a0b88a7",
-            "quote": "本轮由 小苗朗程、天际资本联合领投",
-            "quote_hash": "07ac3a2f71f6e791f8a253d62f87d8fa26245fc7e0b1c820308c64b2ceecaf0a"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -192,14 +183,6 @@
         "source_content_hash": "0ccbefed99e236b4",
         "quote": "本轮由小苗朗程、天际资本联合领投",
         "quote_hash": "d0dbb96aee7f328e9265044785e68897778ec2a2261dab27203e5a3087e10eb9"
-      },
-      {
-        "source_id": "FISRC-c496091042c7e975",
-        "source_url": "https://news.pedaily.cn/202605/563872.shtml",
-        "source_title": "复鞍智能完成种子轮融资，小苗朗程、天际资本联合领投",
-        "source_content_hash": "8a542d4e6a0b88a7",
-        "quote": "本轮由 小苗朗程、天际资本联合领投",
-        "quote_hash": "07ac3a2f71f6e791f8a253d62f87d8fa26245fc7e0b1c820308c64b2ceecaf0a"
       }
     ]
   }

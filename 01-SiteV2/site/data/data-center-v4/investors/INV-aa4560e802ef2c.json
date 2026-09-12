@@ -5,11 +5,46 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 3196,
-    "quarantinedEventCount": 30
+    "eventCount": 3193,
+    "quarantinedEventCount": 33,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
   },
   "institution": {
     "id": "INV-aa4560e802ef2c",
@@ -28,8 +63,8 @@
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-06-08",
-    "latest_disclosed_at": "2026-06-16",
+    "first_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-06-08",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "participant": 1
@@ -45,46 +80,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-867a3f886e1d6db2",
-        "funding_insight_id": "FI-574d2ffa9f4502ac",
-        "event_ids": [
-          "EV-f8c3a83d883c9b22"
-        ],
-        "company_entity_id": "EN-6f7ac1823da81d2e",
-        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
-        "company_name": "DeepSeek",
-        "round": "首次外部融资",
-        "round_code": "first_external",
-        "round_original": "首轮外部融资",
-        "amount_original": "约500亿元人民币（约74亿美元）",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 50000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 500 亿元"
-        },
-        "announced_at": "2026-06-16",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-6f84e84fa4821cb0",
-            "source_url": "https://www.gadgetscout.co.uk/articles/deepseek-valued-at-52bn-after-first-external-funding-round.html",
-            "source_title": "DeepSeek Valued at $52bn After First External Funding Round - Gadget Scout",
-            "source_content_hash": "4f78964f26b92981",
-            "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan",
-            "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
-          }
-        ]
-      },
       {
         "activity_id": "IA-0dad75ec8e28fecd",
         "funding_insight_id": "FI-1b3b5e07545457bb",
@@ -132,17 +127,50 @@
             "quote_hash": "b504e61eec60781b12f2f7d0ebcc88f84bb77f38ef89dcd62878b996cfb02853"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a0c801b7908d5ae2",
+        "funding_insight_id": "FI-71c58a10a93101c8",
+        "event_ids": [
+          "EV-d4d7b019ff0015df",
+          "EV-f8c3a83d883c9b22"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "首次外部融资",
+        "round_code": "first_external",
+        "round_original": "首次外部融资轮",
+        "amount_original": "约74亿美元（约500亿元人民币）",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 74 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6f84e84fa4821cb0",
+            "source_url": "https://www.gadgetscout.co.uk/articles/deepseek-valued-at-52bn-after-first-external-funding-round.html",
+            "source_title": "DeepSeek Valued at $52bn After First External Funding Round - Gadget Scout",
+            "source_content_hash": "4f78964f26b92981",
+            "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan",
+            "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-6f84e84fa4821cb0",
-        "source_url": "https://www.gadgetscout.co.uk/articles/deepseek-valued-at-52bn-after-first-external-funding-round.html",
-        "source_title": "DeepSeek Valued at $52bn After First External Funding Round - Gadget Scout",
-        "source_content_hash": "4f78964f26b92981",
-        "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan",
-        "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
-      },
       {
         "source_id": "FISRC-0199034a5417695f",
         "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
@@ -158,6 +186,14 @@
         "source_content_hash": "fca357e99fd49983",
         "quote": "HongShan (formerly Sequoia China) and IDG Capital have remained part of the institutional base.",
         "quote_hash": "b504e61eec60781b12f2f7d0ebcc88f84bb77f38ef89dcd62878b996cfb02853"
+      },
+      {
+        "source_id": "FISRC-6f84e84fa4821cb0",
+        "source_url": "https://www.gadgetscout.co.uk/articles/deepseek-valued-at-52bn-after-first-external-funding-round.html",
+        "source_title": "DeepSeek Valued at $52bn After First External Funding Round - Gadget Scout",
+        "source_content_hash": "4f78964f26b92981",
+        "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan",
+        "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
       }
     ]
   }

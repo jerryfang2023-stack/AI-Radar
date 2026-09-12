@@ -5,11 +5,46 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 3196,
-    "quarantinedEventCount": 30
+    "eventCount": 3193,
+    "quarantinedEventCount": 33,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
   },
   "institution": {
     "id": "INV-ad38af2847e1e0",
@@ -21,7 +56,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -31,60 +66,21 @@
     "first_disclosed_at": "2026-09-09",
     "latest_disclosed_at": "2026-09-09",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 1
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-c31cf1a6b8a8f83e",
+        "activity_id": "IA-7d3fd091f659836a",
         "funding_insight_id": "FI-0e108e32ef8a5b27",
         "event_ids": [
-          "EV-43c9b851bd2a46c7"
+          "EV-43c9b851bd2a46c7",
+          "EV-d0dd835f3abb3163"
         ],
         "company_entity_id": "EN-4d916dc8b25421d2",
         "company_canonical_entity_id": "",
         "company_name": "比特无限",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "数千万元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-09-09",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-222600ccfb470c3e",
-            "source_url": "https://m.aitntnews.com/newDetail.html?newId=29104",
-            "source_title": "正面Pk美国普罗米修斯！比特无限击败全球团队拿下ECCV 2026 CAD Challenge",
-            "source_content_hash": "a317e9252f5c006f",
-            "quote": "其股东阵容涵盖卓源亚洲（基流、生数等项目投资方）、容亿资本（宇树科技、银河通用等项目早期投资方）、普华资本以及助力 12 家企业成功 IPO 的壹德资本",
-            "quote_hash": "8cb645459c1e1ebfb9bd5bb79b57428f8916c4ff01af75fb54f74d3860751a6b"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-6a922dbdae6dd721",
-        "funding_insight_id": "FI-1a32de86086e29ea",
-        "event_ids": [
-          "EV-d0dd835f3abb3163"
-        ],
-        "company_entity_id": "EN-f56780cc13476293",
-        "company_canonical_entity_id": "",
-        "company_name": "上海比特无限人工智能科技有限公司",
         "round": "Pre-A轮",
         "round_code": "pre_series_a",
         "round_original": "Pre-A轮",
@@ -118,14 +114,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-222600ccfb470c3e",
-        "source_url": "https://m.aitntnews.com/newDetail.html?newId=29104",
-        "source_title": "正面Pk美国普罗米修斯！比特无限击败全球团队拿下ECCV 2026 CAD Challenge",
-        "source_content_hash": "a317e9252f5c006f",
-        "quote": "其股东阵容涵盖卓源亚洲（基流、生数等项目投资方）、容亿资本（宇树科技、银河通用等项目早期投资方）、普华资本以及助力 12 家企业成功 IPO 的壹德资本",
-        "quote_hash": "8cb645459c1e1ebfb9bd5bb79b57428f8916c4ff01af75fb54f74d3860751a6b"
-      },
       {
         "source_id": "FISRC-6aea6a18fe712b45",
         "source_url": "https://m.pedaily.cn/news/566841",

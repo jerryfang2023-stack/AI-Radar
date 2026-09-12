@@ -5,11 +5,46 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 3196,
-    "quarantinedEventCount": 30
+    "eventCount": 3193,
+    "quarantinedEventCount": 33,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
   },
   "institution": {
     "id": "INV-fc1fa323b06b1d",
@@ -28,8 +63,8 @@
     ],
     "china_market_activity_count": 5,
     "china_market_company_count": 5,
-    "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-09-12",
+    "first_disclosed_at": "2026-01-12",
+    "latest_disclosed_at": "2026-08-21",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 2,
@@ -68,56 +103,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-b2917afb30e33d83",
-        "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-        "event_ids": [
-          "EV-26439e34295a0519",
-          "EV-cec68369662236fd",
-          "EV-41c54c428d84cc1e"
-        ],
-        "company_entity_id": "EN-8dc72a4672894e0f",
-        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-        "company_name": "自变量机器人科技（深圳）有限公司",
-        "round": "A++轮",
-        "round_code": "series_a_plus_plus",
-        "round_original": "A++轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-09-12",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "Pre-A++轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-16371607ed092d64",
-            "source_url": "https://www.qbitai.com/2026/01/369147.html",
-            "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
-            "source_content_hash": "466042b9c1271f10",
-            "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
-            "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
-          },
-          {
-            "source_id": "FISRC-449b969616ed1e95",
-            "source_url": "https://www.36kr.com/p/3636080421586182",
-            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-            "source_content_hash": "abef77aff9b6b68f",
-            "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
-            "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
-          }
-        ]
-      },
       {
         "activity_id": "IA-5610c056708c0193",
         "funding_insight_id": "FI-c185fb71d34b0f0c",
@@ -317,25 +302,51 @@
             "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b2917afb30e33d83",
+        "funding_insight_id": "FI-e9bdd4e9374b04ca",
+        "event_ids": [
+          "EV-41c54c428d84cc1e",
+          "EV-26439e34295a0519",
+          "EV-cec68369662236fd"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人科技（深圳）有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-01-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A++轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-449b969616ed1e95",
+            "source_url": "https://www.36kr.com/p/3636080421586182",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+            "source_content_hash": "abef77aff9b6b68f",
+            "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
+            "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-16371607ed092d64",
-        "source_url": "https://www.qbitai.com/2026/01/369147.html",
-        "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
-        "source_content_hash": "466042b9c1271f10",
-        "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
-        "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
-      },
-      {
-        "source_id": "FISRC-449b969616ed1e95",
-        "source_url": "https://www.36kr.com/p/3636080421586182",
-        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-        "source_content_hash": "abef77aff9b6b68f",
-        "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
-        "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
-      },
       {
         "source_id": "FISRC-21e3c93bae47f754",
         "source_url": "https://news.pedaily.cn/202608/567947.shtml",
@@ -375,11 +386,19 @@
         "source_content_hash": "69550847bd779ae8",
         "quote": "老股东 君联资本、上海国投孚腾和元智未来 追加投资。",
         "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
+        "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
       }
     ],
     "translations": {
       "zh-CN": {
-        "activities[0].role": {
+        "activities[5].role": {
           "text": "Pre-A++轮领投",
           "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
           "provider": "deepseek",

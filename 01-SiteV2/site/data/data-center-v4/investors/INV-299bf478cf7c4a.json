@@ -5,11 +5,46 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 3196,
-    "quarantinedEventCount": 30
+    "eventCount": 3193,
+    "quarantinedEventCount": 33,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
   },
   "institution": {
     "id": "INV-299bf478cf7c4a",
@@ -21,7 +56,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -31,7 +66,7 @@
     "first_disclosed_at": "2026-02-23",
     "latest_disclosed_at": "2026-02-23",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 1
     },
     "round_codes": [],
     "portfolio_companies": [],
@@ -40,7 +75,8 @@
         "activity_id": "IA-97325a1b6e8ec656",
         "funding_insight_id": "FI-260667c69ddbf880",
         "event_ids": [
-          "EV-565b6c1b10b3cf83"
+          "EV-565b6c1b10b3cf83",
+          "EV-af8e95dbe06ac083"
         ],
         "company_entity_id": "EN-90596b71813a2ee2",
         "company_canonical_entity_id": "",
@@ -75,46 +111,6 @@
             "quote_hash": "595292baf7996f7be60baba3cbbfed51bdf7bcdd035d60f7b2c1b6c29cd6a681"
           }
         ]
-      },
-      {
-        "activity_id": "IA-a4b02f201e679f36",
-        "funding_insight_id": "FI-39ef2aaaed606bfe",
-        "event_ids": [
-          "EV-af8e95dbe06ac083"
-        ],
-        "company_entity_id": "EN-ce22f929f4a17467",
-        "company_canonical_entity_id": "",
-        "company_name": "智平方（AI² Robotics）",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "超10亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": 1000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 10 亿元"
-        },
-        "announced_at": "2026-02-23",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-f6dd24cc4ca544d8",
-            "source_url": "https://robotscope.net/companies/zhisquare-intelligence",
-            "source_title": "智平方 · Series B — RobotScope",
-            "source_content_hash": "5904bd05269fe1c8",
-            "quote": "多轮系列 数亿级×7 轮 2025（半年内） 深创投、国投、达晨财智、华熙生物等",
-            "quote_hash": "474bf29952dbbf5c8be1a88398dc1c2e361fd4f49dd5f4c98bd4c3a9328f8c52"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -125,14 +121,6 @@
         "source_content_hash": "36eeadfe3f6c3f89",
         "quote": "同时吸引了华熙生物和一家大型零售企业以产业资本身份加入。",
         "quote_hash": "595292baf7996f7be60baba3cbbfed51bdf7bcdd035d60f7b2c1b6c29cd6a681"
-      },
-      {
-        "source_id": "FISRC-f6dd24cc4ca544d8",
-        "source_url": "https://robotscope.net/companies/zhisquare-intelligence",
-        "source_title": "智平方 · Series B — RobotScope",
-        "source_content_hash": "5904bd05269fe1c8",
-        "quote": "多轮系列 数亿级×7 轮 2025（半年内） 深创投、国投、达晨财智、华熙生物等",
-        "quote_hash": "474bf29952dbbf5c8be1a88398dc1c2e361fd4f49dd5f4c98bd4c3a9328f8c52"
       }
     ]
   }

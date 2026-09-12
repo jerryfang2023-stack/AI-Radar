@@ -5,11 +5,46 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 3196,
-    "quarantinedEventCount": 30
+    "eventCount": 3193,
+    "quarantinedEventCount": 33,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
   },
   "node": {
     "id": "TX-product_form-compute_cloud_service",
@@ -24,7 +59,6 @@
       "EV-4eaf3aabecae6016",
       "EV-6e516b6e68def9cf",
       "EV-13ec78dfdbca678b",
-      "EV-53acea531ac371d6",
       "EV-7b1c734882fa1ea6",
       "EV-327ba605bd9e8307",
       "EV-24265c0f0fa45343",
@@ -52,7 +86,6 @@
       "EN-0caee180da9d0f3f",
       "EN-3c1ae4e6276005e7",
       "EN-816bab802b34b308",
-      "EN-18b4bbfd60f4137e",
       "EN-830cefea8ed73a00",
       "EN-d1a61df8d3146e48",
       "EN-c04bd5ebd10ab696",
@@ -67,6 +100,7 @@
       "EN-ebf9032e4009b3d9",
       "EN-042e9398f2cc8902",
       "EN-9d07f526fab9cfe9",
+      "EN-18b4bbfd60f4137e",
       "EN-a89a94ff38d4dc95"
     ],
     "fdeIds": [
@@ -2379,242 +2413,6 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation",
-      "publisher": "techcrunch.com"
-    },
-    {
-      "id": "EV-53acea531ac371d6",
-      "dataDate": "2026-07-08",
-      "date": "2026-07-08",
-      "updatedDate": "2026-07-08",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "General Compute 完成 1500 万美元种子轮融资",
-      "originalTitle": "Has the hunt for AI compute uncovered the next Cerebras? | TechCrunch",
-      "subject": "General Compute",
-      "action": "funding",
-      "object": "$15 million seed round at a $60 million post-money valuation",
-      "metrics": [
-        "$15 million",
-        "$60 million"
-      ],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "infrastructure_compute",
-            "name": "基础设施与算力",
-            "entityIds": [
-              "EN-18b4bbfd60f4137e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-99900abbd30353fb",
-            "fundingInsightId": "FI-78bae511ba291add"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "hardware_computing",
-            "name": "硬件与算力",
-            "entityIds": [
-              "EN-18b4bbfd60f4137e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-0eb1ec460bde8dff",
-            "fundingInsightId": "FI-78bae511ba291add"
-          }
-        ],
-        "ai_market_application": [
-          {
-            "dimensionId": "ai_market_application",
-            "dimensionName": "AI 市场细分",
-            "id": "computing_infrastructure",
-            "name": "计算基础设施",
-            "entityIds": [
-              "EN-18b4bbfd60f4137e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-7f615c2813f0a775",
-            "fundingInsightId": "FI-78bae511ba291add"
-          }
-        ],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "compute_cloud_service",
-            "name": "算力云服务",
-            "entityIds": [
-              "EN-18b4bbfd60f4137e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-0f8ecbd5744ae0df",
-            "fundingInsightId": "FI-78bae511ba291add"
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "developer",
-            "name": "开发者",
-            "entityIds": [
-              "EN-18b4bbfd60f4137e"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-a1a4936805b839d7",
-            "fundingInsightId": "FI-78bae511ba291add"
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "computing_infrastructure",
-          "name": "计算基础设施",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-7f615c2813f0a775",
-          "fundingInsightId": "FI-78bae511ba291add"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-99900abbd30353fb",
-          "fundingInsightId": "FI-78bae511ba291add"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-0eb1ec460bde8dff",
-          "fundingInsightId": "FI-78bae511ba291add"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-0f8ecbd5744ae0df",
-          "fundingInsightId": "FI-78bae511ba291add"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-a1a4936805b839d7",
-          "fundingInsightId": "FI-78bae511ba291add"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-99900abbd30353fb",
-          "fundingInsightId": "FI-78bae511ba291add"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-0eb1ec460bde8dff",
-          "fundingInsightId": "FI-78bae511ba291add"
-        },
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "computing_infrastructure",
-          "name": "计算基础设施",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-7f615c2813f0a775",
-          "fundingInsightId": "FI-78bae511ba291add"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-0f8ecbd5744ae0df",
-          "fundingInsightId": "FI-78bae511ba291add"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-18b4bbfd60f4137e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-a1a4936805b839d7",
-          "fundingInsightId": "FI-78bae511ba291add"
-        }
-      ],
-      "entityIds": [
-        "EN-18b4bbfd60f4137e"
-      ],
-      "entityNames": [
-        "General Compute"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras",
       "publisher": "techcrunch.com"
     },
     {
@@ -6445,14 +6243,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-developer",
-        "TX-industry-financial_services",
-        "TX-target_user-business_user",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-agriculture",
         "TX-industry-energy_utilities",
         "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-construction_real_estate",
         "TX-industry-media_entertainment",
@@ -6461,6 +6258,7 @@
         "TX-industry-telecommunications",
         "TX-ai_market_application-computing_infrastructure",
         "TX-industry-aerospace_defense",
+        "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
         "TX-industry-food_hospitality",
@@ -6577,33 +6375,6 @@
       "lastSeen": "2026-07-08"
     },
     {
-      "id": "EN-18b4bbfd60f4137e",
-      "name": "General Compute",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-53acea531ac371d6",
-        "EV-4b44f5eafecf4922"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-target_user-developer",
-        "TX-industry-financial_services",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-ai_market_application-computing_infrastructure",
-        "TX-product_form-compute_cloud_service"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-08",
-      "lastSeen": "2026-07-18"
-    },
-    {
       "id": "EN-830cefea8ed73a00",
       "name": "Ornn",
       "entityType": "organization_candidate",
@@ -6645,8 +6416,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-developer",
-        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_subcategory-hardware_computing",
@@ -6693,14 +6464,11 @@
         "TX-target_user-developer",
         "TX-product_form-model",
         "TX-ai_market_category-industry_applications",
-        "TX-industry-financial_services",
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-use_case-knowledge_search",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
         "TX-industry-energy_utilities",
         "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-ai_market_subcategory-industrials",
         "TX-use_case-design_engineering",
         "TX-ai_market_application-models",
@@ -6709,7 +6477,10 @@
         "TX-use_case-content_creation",
         "TX-industry-automotive_transportation",
         "TX-industry-aerospace_defense",
+        "TX-use_case-data_analysis",
         "TX-product_form-enterprise_software_platform",
+        "TX-use_case-knowledge_search",
+        "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
         "TX-product_form-compute_cloud_service"
@@ -6767,8 +6538,8 @@
       "classificationRefs": [
         "TX-target_user-developer",
         "TX-product_form-model",
-        "TX-target_user-business_user",
         "TX-use_case-software_development",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-ai_infrastructure_software",
@@ -7194,16 +6965,12 @@
         "TX-target_user-educator",
         "TX-target_user-researcher",
         "TX-product_form-model",
-        "TX-industry-financial_services",
-        "TX-target_user-business_user",
-        "TX-target_user-consumer",
-        "TX-use_case-data_analysis",
-        "TX-use_case-research_discovery",
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-embodied_ai",
         "TX-use_case-software_development",
+        "TX-target_user-business_user",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -7211,15 +6978,19 @@
         "TX-product_form-chip_accelerator",
         "TX-use_case-security_operations",
         "TX-industry-aerospace_defense",
+        "TX-use_case-data_analysis",
         "TX-product_form-enterprise_software_platform",
+        "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
         "TX-industry-education",
         "TX-product_form-model_api_service",
+        "TX-technology-agentic_execution",
         "TX-technology-open_weights",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
         "TX-industry-legal_services",
+        "TX-use_case-research_discovery",
         "TX-product_form-compute_cloud_service",
         "TX-technology-long_context",
         "TX-technology-model_context_protocol",
@@ -7320,12 +7091,12 @@
         "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-product_form-model",
-        "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-chip_accelerator",
         "TX-product_form-ai_compute_system",
+        "TX-technology-agentic_execution",
         "TX-technology-open_weights",
         "TX-product_form-compute_cloud_service",
         "TX-technology-fine_tuning"
@@ -7383,9 +7154,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-product_form-compute_cloud_service",
         "TX-technology-guardrails_safety"
       ],
@@ -7435,9 +7206,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-product_form-end_user_application",
         "TX-technology-agentic_execution",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service"
       ],
       "relatedEntityIds": [
@@ -7467,6 +7238,28 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-06-05"
+    },
+    {
+      "id": "EN-18b4bbfd60f4137e",
+      "name": "General Compute",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4b44f5eafecf4922"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-product_form-compute_cloud_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-a89a94ff38d4dc95",

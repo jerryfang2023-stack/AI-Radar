@@ -1,26 +1,26 @@
 {
-  "reviewed_at": "2026-09-12T09:49:28.002Z",
+  "reviewed_at": "2026-09-12T10:25:55.884Z",
   "baseline_commit": "2bcddcc79821ffc240305460da61654ba88b129d",
   "counts": {
     "before": 298,
-    "after": 417,
+    "after": 400,
     "china_before": 38,
-    "china_after": 155,
-    "new_cards": 120,
-    "new_china_cards": 118,
-    "corrected_or_merged_old_ids": 8,
+    "china_after": 138,
+    "new_cards": 105,
+    "new_china_cards": 103,
+    "corrected_or_merged_old_ids": 11,
     "withdrawn_invalid_cards": 1,
     "unexplained_removals": 0
   },
   "monthly_china_cards": {
-    "2026-09": 14,
-    "2026-08": 24,
-    "2026-07": 30,
-    "2026-06": 20,
-    "2026-05": 24,
-    "2026-04": 14,
-    "2026-03": 12,
-    "2026-02": 9,
+    "2026-09": 10,
+    "2026-08": 21,
+    "2026-07": 29,
+    "2026-06": 18,
+    "2026-05": 22,
+    "2026-04": 13,
+    "2026-03": 10,
+    "2026-02": 7,
     "2026-01": 7
   },
   "removed_ids": [
@@ -50,7 +50,7 @@
         }
       ],
       "review_status": "accepted",
-      "reason": "同一原始事件的轮次/金额证据修正或同轮多来源合并，保留事件引用。"
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
     },
     {
       "old": {
@@ -66,19 +66,20 @@
       },
       "replacements": [
         {
-          "id": "FI-b9eb4320e43ddfdf",
+          "id": "FI-5c529fe1ecb9dd07",
           "company": "它石智航",
-          "date": "2026-04-17",
+          "date": "2026-04-16",
           "round": "Pre-A轮",
-          "amount": "4.55亿美金",
+          "amount": "超4.5亿美元（约30亿元）",
           "market": "CN",
           "events": [
+            "EV-1188b1585b835fe1",
             "EV-81810a440198ac3c"
           ]
         }
       ],
       "review_status": "accepted",
-      "reason": "同一原始事件的轮次/金额证据修正或同轮多来源合并，保留事件引用。"
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
     },
     {
       "old": {
@@ -94,7 +95,7 @@
       },
       "replacements": [],
       "review_status": "accepted",
-      "reason": "原文100亿元为估值，本轮融资额未披露，撤下错误融资金额卡。"
+      "reason": "原文100亿元为估值，本轮融资金额未披露，撤下错误金额卡。"
     },
     {
       "old": {
@@ -123,7 +124,7 @@
         }
       ],
       "review_status": "accepted",
-      "reason": "同一原始事件的轮次/金额证据修正或同轮多来源合并，保留事件引用。"
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
     },
     {
       "old": {
@@ -151,7 +152,7 @@
         }
       ],
       "review_status": "accepted",
-      "reason": "同一原始事件的轮次/金额证据修正或同轮多来源合并，保留事件引用。"
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
     },
     {
       "old": {
@@ -179,7 +180,7 @@
         }
       ],
       "review_status": "accepted",
-      "reason": "同一原始事件的轮次/金额证据修正或同轮多来源合并，保留事件引用。"
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
     },
     {
       "old": {
@@ -208,7 +209,65 @@
         }
       ],
       "review_status": "accepted",
-      "reason": "同一原始事件的轮次/金额证据修正或同轮多来源合并，保留事件引用。"
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
+    },
+    {
+      "old": {
+        "id": "FI-129fe046eadd748c",
+        "company": "极佳视界",
+        "date": "2026-03-05",
+        "round": "Pre-B轮",
+        "amount": "近10亿元",
+        "market": "CN",
+        "events": [
+          "EV-a34447341a3872ed"
+        ]
+      },
+      "replacements": [
+        {
+          "id": "FI-edc4e4cec2cd84bd",
+          "company": "极佳视界",
+          "date": "2026-03-05",
+          "round": "Pre-B轮",
+          "amount": "10亿元",
+          "market": "CN",
+          "events": [
+            "EV-77a608db67e742a4",
+            "EV-a34447341a3872ed"
+          ]
+        }
+      ],
+      "review_status": "accepted",
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
+    },
+    {
+      "old": {
+        "id": "FI-39ef2aaaed606bfe",
+        "company": "智平方（AI² Robotics）",
+        "date": "2026-02-23",
+        "round": "B轮",
+        "amount": "超10亿元人民币",
+        "market": "CN",
+        "events": [
+          "EV-af8e95dbe06ac083"
+        ]
+      },
+      "replacements": [
+        {
+          "id": "FI-260667c69ddbf880",
+          "company": "智平方（AI² Robotics）",
+          "date": "2026-02-23",
+          "round": "B轮",
+          "amount": "10亿元",
+          "market": "CN",
+          "events": [
+            "EV-565b6c1b10b3cf83",
+            "EV-af8e95dbe06ac083"
+          ]
+        }
+      ],
+      "review_status": "accepted",
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
     },
     {
       "old": {
@@ -224,19 +283,20 @@
       },
       "replacements": [
         {
-          "id": "FI-e3c31b65254f3522",
-          "company": "北京生数科技有限公司",
-          "date": "2026-02-08",
+          "id": "FI-474a441598e62f93",
+          "company": "生数科技",
+          "date": "2026-02-05",
           "round": "A+轮",
-          "amount": "超过6亿元人民币",
+          "amount": "6亿元人民币",
           "market": "CN",
           "events": [
+            "EV-622ebdad1e1fad2d",
             "EV-535c2f4fb851332d"
           ]
         }
       ],
       "review_status": "accepted",
-      "reason": "同一原始事件的轮次/金额证据修正或同轮多来源合并，保留事件引用。"
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
     },
     {
       "old": {
@@ -259,38 +319,46 @@
           "amount": "10亿元",
           "market": "CN",
           "events": [
+            "EV-41c54c428d84cc1e",
             "EV-26439e34295a0519",
             "EV-cec68369662236fd"
           ]
         }
       ],
       "review_status": "accepted",
-      "reason": "同一原始事件的轮次/金额证据修正或同轮多来源合并，保留事件引用。"
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
+    },
+    {
+      "old": {
+        "id": "FI-574d2ffa9f4502ac",
+        "company": "DeepSeek",
+        "date": "2026-06-16",
+        "round": "首次外部融资",
+        "amount": "约500亿元人民币（约74亿美元）",
+        "market": "CN",
+        "events": [
+          "EV-f8c3a83d883c9b22"
+        ]
+      },
+      "replacements": [
+        {
+          "id": "FI-71c58a10a93101c8",
+          "company": "DeepSeek",
+          "date": "2026-06-03",
+          "round": "首次外部融资",
+          "amount": "约74亿美元（约500亿元人民币）",
+          "market": "CN",
+          "events": [
+            "EV-d4d7b019ff0015df",
+            "EV-f8c3a83d883c9b22"
+          ]
+        }
+      ],
+      "review_status": "accepted",
+      "reason": "同一原始事件修正/经原文复核的同笔融资合并，保留全部事件引用。"
     }
   ],
   "new_cards": [
-    {
-      "id": "FI-5f4af0e96e8129b7",
-      "company": "杭州序熵纪元科技有限公司",
-      "date": "2026-09-12",
-      "round": "种子轮",
-      "amount": "千万级人民币",
-      "market": "CN",
-      "events": [
-        "EV-f4b72708c66aa752"
-      ]
-    },
-    {
-      "id": "FI-0fff8c5cc6dfdca0",
-      "company": "自变量机器人科技（深圳）有限公司",
-      "date": "2026-09-12",
-      "round": "A++轮",
-      "amount": "10亿元",
-      "market": "CN",
-      "events": [
-        "EV-41c54c428d84cc1e"
-      ]
-    },
     {
       "id": "FI-8bb77ef557b4754b",
       "company": "昂听 ELEHEAR",
@@ -325,17 +393,6 @@
       ]
     },
     {
-      "id": "FI-1a32de86086e29ea",
-      "company": "上海比特无限人工智能科技有限公司",
-      "date": "2026-09-09",
-      "round": "Pre-A轮",
-      "amount": "数千万元",
-      "market": "CN",
-      "events": [
-        "EV-d0dd835f3abb3163"
-      ]
-    },
-    {
       "id": "FI-0e108e32ef8a5b27",
       "company": "比特无限",
       "date": "2026-09-09",
@@ -343,7 +400,8 @@
       "amount": "数千万元",
       "market": "CN",
       "events": [
-        "EV-43c9b851bd2a46c7"
+        "EV-43c9b851bd2a46c7",
+        "EV-d0dd835f3abb3163"
       ]
     },
     {
@@ -391,17 +449,6 @@
       ]
     },
     {
-      "id": "FI-cb780f46f7e0a74b",
-      "company": "光啾科技（上海）有限公司",
-      "date": "2026-09-07",
-      "round": "天使轮",
-      "amount": "数千万元",
-      "market": "CN",
-      "events": [
-        "EV-ae87e20ab0c5d06a"
-      ]
-    },
-    {
       "id": "FI-8e02d6b25a91500c",
       "company": "光啾科技（上海）有限公司",
       "date": "2026-09-06",
@@ -409,7 +456,8 @@
       "amount": "数千万元",
       "market": "CN",
       "events": [
-        "EV-012b1ccfe1d48f51"
+        "EV-012b1ccfe1d48f51",
+        "EV-ae87e20ab0c5d06a"
       ]
     },
     {
@@ -479,17 +527,6 @@
       ]
     },
     {
-      "id": "FI-a2a15e704693ce24",
-      "company": "上海基元律动科技有限公司",
-      "date": "2026-08-28",
-      "round": "基础设施融资",
-      "amount": "数千万美元",
-      "market": "CN",
-      "events": [
-        "EV-b78b4d2d94c8e72c"
-      ]
-    },
-    {
       "id": "FI-1da3c184549b158c",
       "company": "瞬适科技（上海）有限公司",
       "date": "2026-08-28",
@@ -508,7 +545,9 @@
       "amount": "数千万美元",
       "market": "CN",
       "events": [
-        "EV-3c145705d72a5e57"
+        "EV-3c145705d72a5e57",
+        "EV-b78b4d2d94c8e72c",
+        "EV-5e8ad56fcef42b5a"
       ]
     },
     {
@@ -520,17 +559,6 @@
       "market": "CN",
       "events": [
         "EV-c17a6102aab72f4f"
-      ]
-    },
-    {
-      "id": "FI-99a7219d2f444794",
-      "company": "上海基元律动科技有限公司",
-      "date": "2026-08-27",
-      "round": "基础设施融资",
-      "amount": "数千万美元",
-      "market": "CN",
-      "events": [
-        "EV-5e8ad56fcef42b5a"
       ]
     },
     {
@@ -622,17 +650,6 @@
       ]
     },
     {
-      "id": "FI-2a183c86baad905a",
-      "company": "奇点智控（上海）科技有限公司",
-      "date": "2026-08-14",
-      "round": "天使轮",
-      "amount": "亿元人民币",
-      "market": "CN",
-      "events": [
-        "EV-381d21544fcdd0c4"
-      ]
-    },
-    {
       "id": "FI-348de8d897f7b7a5",
       "company": "原力无限科技控股（浙江）有限公司",
       "date": "2026-08-14",
@@ -644,13 +661,14 @@
       ]
     },
     {
-      "id": "FI-b8f299501e907fa5",
+      "id": "FI-3acf310855423b42",
       "company": "奇点智控（上海）科技有限公司",
       "date": "2026-08-13",
       "round": "天使轮",
       "amount": "亿元人民币",
       "market": "CN",
       "events": [
+        "EV-381d21544fcdd0c4",
         "EV-3e580ccbc11654cb"
       ]
     },
@@ -809,17 +827,6 @@
       ]
     },
     {
-      "id": "FI-444e099697814a4c",
-      "company": "上海天鹜科技有限公司",
-      "date": "2026-07-13",
-      "round": "A++轮",
-      "amount": "数亿元",
-      "market": "CN",
-      "events": [
-        "EV-5812765de6753bf7"
-      ]
-    },
-    {
       "id": "FI-b9ca2a7fb525fcf8",
       "company": "上海天鹜科技有限公司",
       "date": "2026-07-13",
@@ -827,7 +834,8 @@
       "amount": "数亿元",
       "market": "CN",
       "events": [
-        "EV-b732caa990fa0a79"
+        "EV-b732caa990fa0a79",
+        "EV-5812765de6753bf7"
       ]
     },
     {
@@ -992,17 +1000,7 @@
       "amount": "20亿元",
       "market": "CN",
       "events": [
-        "EV-df17b95cf25e7840"
-      ]
-    },
-    {
-      "id": "FI-735806b08661fb55",
-      "company": "硅基流动（SiliconFlow）",
-      "date": "2026-06-16",
-      "round": "B轮",
-      "amount": "20 亿元",
-      "market": "CN",
-      "events": [
+        "EV-df17b95cf25e7840",
         "EV-5a28b9c37a236c89"
       ]
     },
@@ -1062,6 +1060,17 @@
       ]
     },
     {
+      "id": "FI-03d438652333002b",
+      "company": "杭州序熵纪元科技有限公司",
+      "date": "2026-05-28",
+      "round": "种子轮",
+      "amount": "千万级人民币",
+      "market": "CN",
+      "events": [
+        "EV-f4b72708c66aa752"
+      ]
+    },
+    {
       "id": "FI-e177d41569321461",
       "company": "钛镁时代（上海）人工智能科技有限公司",
       "date": "2026-05-28",
@@ -1080,17 +1089,7 @@
       "amount": "亿元",
       "market": "CN",
       "events": [
-        "EV-d853eabcf7e759bd"
-      ]
-    },
-    {
-      "id": "FI-435f962c8ad61267",
-      "company": "深圳睿心智能医疗科技有限公司",
-      "date": "2026-05-27",
-      "round": "D轮",
-      "amount": "亿元",
-      "market": "CN",
-      "events": [
+        "EV-d853eabcf7e759bd",
         "EV-a39d8aac0ee78e07"
       ]
     },
@@ -1179,17 +1178,7 @@
       "amount": "数亿元",
       "market": "CN",
       "events": [
-        "EV-69ac49d771d3b778"
-      ]
-    },
-    {
-      "id": "FI-496aa1ba707be2de",
-      "company": "杭州拓深科技有限公司",
-      "date": "2026-05-19",
-      "round": "轮次未披露",
-      "amount": "数亿元",
-      "market": "CN",
-      "events": [
+        "EV-69ac49d771d3b778",
         "EV-f9b346bec4251166"
       ]
     },
@@ -1223,17 +1212,7 @@
       "amount": "数千万元",
       "market": "CN",
       "events": [
-        "EV-0e1edf873779be1d"
-      ]
-    },
-    {
-      "id": "FI-e33a64d66e4e499b",
-      "company": "上海复鞍智能科技有限公司",
-      "date": "2026-05-14",
-      "round": "种子轮",
-      "amount": "数千万元",
-      "market": "CN",
-      "events": [
+        "EV-0e1edf873779be1d",
         "EV-7021bd7041019330"
       ]
     },
@@ -1388,17 +1367,7 @@
       "amount": "数千万",
       "market": "CN",
       "events": [
-        "EV-6329f290aecc84da"
-      ]
-    },
-    {
-      "id": "FI-9a8ebe3ee29ea379",
-      "company": "杭州安泉数智科技有限公司",
-      "date": "2026-03-24",
-      "round": "轮次未披露",
-      "amount": "数千万",
-      "market": "CN",
-      "events": [
+        "EV-6329f290aecc84da",
         "EV-d535e126615182f0"
       ]
     },
@@ -1447,17 +1416,6 @@
       ]
     },
     {
-      "id": "FI-edc4e4cec2cd84bd",
-      "company": "极佳视界",
-      "date": "2026-03-05",
-      "round": "Pre-B轮",
-      "amount": "10亿元",
-      "market": "CN",
-      "events": [
-        "EV-77a608db67e742a4"
-      ]
-    },
-    {
       "id": "FI-846562dfba15b6a0",
       "company": "千寻智能",
       "date": "2026-02-24",
@@ -1469,17 +1427,6 @@
       ]
     },
     {
-      "id": "FI-260667c69ddbf880",
-      "company": "智平方（AI² Robotics）",
-      "date": "2026-02-23",
-      "round": "B轮",
-      "amount": "10亿元",
-      "market": "CN",
-      "events": [
-        "EV-565b6c1b10b3cf83"
-      ]
-    },
-    {
       "id": "FI-d5293ab06cfaa935",
       "company": "星海图",
       "date": "2026-02-11",
@@ -1488,17 +1435,6 @@
       "market": "CN",
       "events": [
         "EV-371bc68f72326c02"
-      ]
-    },
-    {
-      "id": "FI-474a441598e62f93",
-      "company": "生数科技",
-      "date": "2026-02-05",
-      "round": "A+轮",
-      "amount": "6亿元人民币",
-      "market": "CN",
-      "events": [
-        "EV-622ebdad1e1fad2d"
       ]
     },
     {
