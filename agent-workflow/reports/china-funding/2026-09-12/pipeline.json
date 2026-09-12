@@ -3,10 +3,23 @@
   "stages": [
     {
       "id": "capture",
+      "status": "passed",
+      "started_at": "2026-09-12T04:04:15.757Z",
+      "reused": true,
+      "finished_at": "2026-09-12T04:04:22.109Z"
+    },
+    {
+      "id": "facts",
+      "status": "passed",
+      "started_at": "2026-09-12T04:04:22.110Z",
+      "finished_at": "2026-09-12T04:05:48.974Z"
+    },
+    {
+      "id": "projections",
       "status": "failed",
-      "started_at": "2026-09-12T03:42:53.408Z",
-      "error": "No captured original evidence for China funding candidates",
-      "finished_at": "2026-09-12T03:43:22.656Z"
+      "started_at": "2026-09-12T04:05:48.974Z",
+      "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
+      "finished_at": "2026-09-12T04:06:03.200Z"
     }
   ]
 }
