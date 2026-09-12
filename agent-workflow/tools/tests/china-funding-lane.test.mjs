@@ -88,3 +88,12 @@ test("domestic collection is an independent simultaneous job and only publicatio
   assert.match(child, /git restore --worktree --staged \./u);
   assert.doesNotMatch(child, /gh pr merge[^\n]*--auto/u);
 });
+
+test("funding classification changes refresh serving tables before downstream projections read them", () => {
+  const commands = chinaFundingPlan("2026-09-12", "test-sources").find((stage) => stage.id === "projections").commands.map((args) => args[0]);
+  const writeIndex = commands.findIndex((file) => file.endsWith("project-funding-taxonomy-to-events-v4-1.mjs"));
+  const later = commands.slice(writeIndex + 1);
+  const refreshIndex = later.findIndex((file) => file.endsWith("sync-light-data-lake.mjs"));
+  const consumerIndex = later.findIndex((file) => file.endsWith("build-data-center-v4-frontstage.mjs"));
+  assert.ok(refreshIndex >= 0 && refreshIndex < consumerIndex);
+});
