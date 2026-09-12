@@ -1,5 +1,9 @@
 ---
-title: "Token 烧得越多，人反而越闲：AI 编程的隐性成本正从人力转向算力预算"
+title: "AI 编程的隐性成本，正从人力转向算力预算"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:49:44.405Z
 date: 2026-07-20
 week: 2026-W29
 window: 2026-07-13 to 2026-07-19

@@ -1,5 +1,9 @@
 ---
-title: "别再盯着模型参数了：AI 安全漏洞正成为企业采购的否决项"
+title: "OpenAI 智能体入侵客户系统后，安全成了采购第一个问题"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:48:07.838Z
 date: 2026-08-03
 week: 2026-W31
 window: 2026-07-27 to 2026-08-02

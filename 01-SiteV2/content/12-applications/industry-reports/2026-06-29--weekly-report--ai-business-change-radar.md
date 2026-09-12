@@ -1,5 +1,9 @@
 ---
-title: 97 个商业信号指向同一件事：企业 AI 的主战场不再是聊天框
+title: "企业 AI 的主战场正在从聊天框搬进组织工作流"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:49:44.405Z
 date: 2026-06-29
 week: "2026-W26"
 window: 2026-06-22 to 2026-06-28
@@ -18,7 +22,7 @@ use_case_ids: []
 industry_ids: []
 ---
 
-# 97 个商业信号指向同一件事：企业 AI 的主战场不再是聊天框
+# 企业 AI 的主战场正在从聊天框搬进组织工作流
 
 ## 0. 数据口径
 

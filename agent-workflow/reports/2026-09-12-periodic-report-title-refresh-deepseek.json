@@ -1,0 +1,43 @@
+{
+  "schema_version": "PERIODIC-REPORT-TITLE-REFRESH-V1.0",
+  "provider": "deepseek",
+  "skill": "laofang-title-writer",
+  "runs": [
+    {
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-09-12T13:48:07.838Z",
+      "purpose": "15-report cross-corpus candidate and evidence audit"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-09-12T13:49:44.405Z",
+      "purpose": "targeted rewrite for numeric-title overuse"
+    }
+  ],
+  "future_default_model": "deepseek-v4-flash",
+  "reports": [
+    { "date": "2026-06-15", "kind": "weekly", "title": "企业开始把 AI 预算从买工具转向重做业务流程" },
+    { "date": "2026-06-22", "kind": "weekly", "title": "Agent 已经能跑通 demo，为什么企业还是落不了地？" },
+    { "date": "2026-06-29", "kind": "weekly", "title": "企业 AI 的主战场正在从聊天框搬进组织工作流" },
+    { "date": "2026-06-30", "kind": "monthly", "title": "案例信号超过产品发布，AI 公司开始讲客户做了什么" },
+    { "date": "2026-07-06", "kind": "weekly", "title": "Agent 进了科研、采购和支付，企业先问的是成本与责任" },
+    { "date": "2026-07-13", "kind": "weekly", "title": "Bun 用 Claude 重写百万行代码，账单先成了新边界" },
+    { "date": "2026-07-20", "kind": "weekly", "title": "AI 编程的隐性成本，正从人力转向算力预算" },
+    { "date": "2026-07-27", "kind": "weekly", "title": "200 亿采购意向签了，74% 的企业却撤回了实时 AI 智能体" },
+    { "date": "2026-07-31", "kind": "monthly", "title": "微软把工程师嵌进客户内部，AI 生意开始按结果卖" },
+    { "date": "2026-08-03", "kind": "weekly", "title": "OpenAI 智能体入侵客户系统后，安全成了采购第一个问题" },
+    { "date": "2026-08-10", "kind": "weekly", "title": "模型能力已过剩，企业却不愿为流程改造买单" },
+    { "date": "2026-08-17", "kind": "weekly", "title": "OpenAI 席位涨到 125 美元，智能体开始算责任这笔账" },
+    { "date": "2026-08-31", "kind": "weekly", "title": "Fable 5 遇冷，企业转向更便宜的 AI 产品" },
+    { "date": "2026-08-31", "kind": "monthly", "title": "GPT-5.6 降价 80%，编程和额度不再稀缺，问题成了稀缺品" },
+    { "date": "2026-09-07", "kind": "weekly", "title": "工信部要求加大 Token 采购，交付能力却没跟上" }
+  ],
+  "audit": {
+    "report_count": 15,
+    "generic_report_labels": 0,
+    "mechanical_not_but_titles": 0,
+    "colon_titles": 0,
+    "question_titles": 1,
+    "unsupported_title_claims": 0
+  }
+}

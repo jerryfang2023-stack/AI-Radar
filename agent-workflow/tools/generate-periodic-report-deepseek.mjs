@@ -63,7 +63,7 @@ function isoWeek(dateText) {
 function prompt(manifest) {
   const sectionNames = kind === "weekly"
     ? ["数据边界", "一句话结论", "趋势热力图 Top 5", "三条趋势链", "行业、角色与工作流影响热力图", "机会卡", "反共识判断", "下周观察清单", "分角色行动结论"]
-    : ["数据边界", "本月核心结论", "结构判断", "趋势裁决", "机会地图", "关键矛盾与反证", "下月验证清单", "结论"];
+    : ["数据边界", "本月核心结论", "结构判断", "趋势裁决", "证据完整性", "下游机会假设与机会地图", "关键矛盾与反证", "下月验证清单", "结论"];
   return [
     "你是 WaveSight AI 行业研究报告编辑。只可使用 EVIDENCE_MANIFEST，不得补充外部事实。",
     "商业事件是事实证据；一线观点和社群材料只能分别作为观点与社群观察，不得写成事实。",
@@ -76,7 +76,12 @@ function prompt(manifest) {
       "第 6 节必须点名被挑战的主流观点，并引用至少两类证据；第 8 节必须分别给企业老板、创业者、内容团队、技术团队、观澜 AI 五类角色不同的行动。每个具体判断都要就近带证据 ID。",
       "返回前逐项自检：标题必须为 14-42 个可见字符；第 1 节必须同时出现至少 1 个 [E:...]、1 个 [O:...]、1 个 [C:...]；三条趋势链中的每一条都必须各自包含至少 2 个 E、1 个 O、1 个 C；每张机会卡都必须各自包含至少 1 个 C。任何一项不满足都不要返回。",
       "趋势链固定使用 `**趋势链一：标题**`、`**趋势链二：标题**`、`**趋势链三：标题**` 开头，并在每条链内部依次写技术能力、产品形态、用户行为、商业模式、创业机会。机会卡固定使用 `**机会卡一：标题**`、`**机会卡二：标题**`（可选第三张）开头，社区引用必须写在对应机会卡内部。",
-    ] : []),
+    ] : [
+      "月报硬规则：必须完整返回 0—8 共九节。第 1 节用 E/O/C 三类证据互证本月最强判断；第 2 节至少覆盖价值链、买方、供给形态与治理责任，并写清商业后果和不确定性；第 3 节至少裁决三条趋势，逐条给出升级、继续观察或降级结论与下月验证条件。",
+      "第 4 节必须单列证据完整性，分别说明 E/O/C 的覆盖与缺口，不得把社群热度写成市场规模；第 5 节写 2—3 张机会卡，固定使用 `**机会卡一：标题**`、`**机会卡二：标题**`（可选第三张）开头，每张包含目标买方、需求信号、供给缺口、最小产品、商业化路径、主要风险和 100 分制判断。",
+      "第 6 节至少写两组关键矛盾或反证；第 7 节用可证伪的升级/降级条件列出下月验证清单；第 8 节回收结构判断，不得用模型能力或融资热度替代采购、续约、收入与交付结果。全文至少使用一种 O 证据和一种 C 证据；任何证据类型在清单中为零时，必须在第 4 节明确说明缺口。",
+      "返回前逐项自检：标题必须为 14-42 个可见字符；九节齐全；至少两张机会卡；证据完整性、关键矛盾与下月验证条件均为独立内容；全文不能短于 6000 个非空白字符。任何一项不满足都不要返回。",
+    ]),
     `标题规则：\n${periodicReportTitlePromptRules}`,
     `报告类型：${kind}；窗口：${windowStart} to ${windowEnd}；精确计数：${JSON.stringify(manifest.counts)}。`,
     `返回 JSON：{"title":string,"sections":[${sectionNames.map((name, index) => `{"number":${index},"title":"${name}","content":string}`).join(",")}]}`,
@@ -102,6 +107,7 @@ function citationCount(text, kind) {
 function validateWeeklySections(payload) {
   const problems = [];
   const sections = Object.fromEntries((payload?.sections || []).map((section) => [section.number, String(section.content || "") ]));
+  for (let index = 0; index <= 8; index += 1) sections[index] ||= "";
   for (const kind of ["E", "O", "C"]) if (citationCount(sections[1], kind) < 1) problems.push(`section_1_missing_${kind}_evidence`);
   if ([...sections[2].matchAll(/[↑→↓]/gu)].length < 5) problems.push("section_2_top5_or_direction_missing");
   for (const label of ["技术能力", "产品形态", "用户行为", "商业模式", "创业机会"]) if (!sections[3].includes(label)) problems.push(`section_3_missing_${label}`);
@@ -123,6 +129,26 @@ function validateWeeklySections(payload) {
   return problems;
 }
 
+function validateMonthlySections(payload, evidenceKinds) {
+  const problems = [];
+  const sections = Object.fromEntries((payload?.sections || []).map((section) => [section.number, String(section.content || "") ]));
+  for (let index = 0; index <= 8; index += 1) sections[index] ||= "";
+  const availableKinds = new Set(evidenceKinds.values());
+  for (const evidenceKind of ["E", "O", "C"]) {
+    if (availableKinds.has(evidenceKind) && citationCount(JSON.stringify(payload), evidenceKind) < 1) problems.push(`monthly_missing_${evidenceKind}_evidence`);
+  }
+  for (const label of ["价值链", "买方", "供给", "治理", "商业后果", "不确定"]) if (!sections[2].includes(label)) problems.push(`section_2_missing_${label}`);
+  if ([...sections[3].matchAll(/(?:升级|继续观察|新增观察|降级)/gu)].length < 3) problems.push("section_3_requires_at_least_three_trend_adjudications");
+  for (const label of ["Signals", "Opinions", "Community", "缺口"]) if (!sections[4].includes(label)) problems.push(`section_4_missing_${label}`);
+  const opportunities = sections[5].split(/(?=\*\*机会卡[一二三1-3])/u).filter((item) => /^\*\*机会卡/u.test(item.trim()));
+  if (opportunities.length < 2 || opportunities.length > 3) problems.push("section_5_requires_2_to_3_opportunity_cards");
+  for (const label of ["目标买方", "需求信号", "供给缺口", "最小产品", "商业化路径", "主要风险", "100"]) if (!sections[5].includes(label)) problems.push(`section_5_missing_${label}`);
+  if ([...sections[6].matchAll(/(?:矛盾|反证)/gu)].length < 2) problems.push("section_6_requires_at_least_two_contradictions");
+  if (!/(?:升级条件|降级条件|验证条件)/u.test(sections[7])) problems.push("section_7_requires_falsifiable_conditions");
+  if (JSON.stringify(payload).replace(/\s/gu, "").length < 6000) problems.push("monthly_report_is_too_short");
+  return problems;
+}
+
 function validateReport(payload, evidenceKinds, sectionCount) {
   const problems = [];
   normalizeEvidenceReferences(payload, evidenceKinds);
@@ -138,6 +164,7 @@ function validateReport(payload, evidenceKinds, sectionCount) {
   }
   if (!references.length) problems.push("missing_evidence_references");
   if (kind === "weekly") problems.push(...validateWeeklySections(payload));
+  if (kind === "monthly") problems.push(...validateMonthlySections(payload, evidenceKinds));
   return [...new Set(problems)];
 }
 
@@ -150,7 +177,7 @@ async function main() {
     ...manifest.community.map((item) => [item.id, "C"]),
   ]);
   const allowedIds = new Set(evidenceKinds.keys());
-  const sectionCount = kind === "weekly" ? 9 : 8;
+  const sectionCount = 9;
   const result = await deepSeekJsonCompletion({
     model: deepSeekModels().pro,
     messages: [{ role: "user", content: prompt(manifest) }],

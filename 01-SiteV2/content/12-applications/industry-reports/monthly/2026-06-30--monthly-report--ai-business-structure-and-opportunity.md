@@ -1,9 +1,9 @@
 ---
-title: "企业真正采购的不是模型能力，而是流程结果与交付责任"
-title_generation_skill: "guanlan-monthly-business-structure-report@0.2.1"
+title: "案例信号超过产品发布，AI 公司开始讲客户做了什么"
+title_generation_skill: "laofang-title-writer"
 title_model_provider: deepseek
 title_model: deepseek-v4-pro
-title_generated_at: 2026-07-18T09:59:06.159Z
+title_generated_at: 2026-09-12T13:49:44.405Z
 date: 2026-06-30
 month: "2026-06"
 window: 2026-06-01 to 2026-06-30
@@ -20,7 +20,7 @@ use_case_ids: []
 industry_ids: []
 ---
 
-# 企业真正采购的不是模型能力，而是流程结果与交付责任
+# 案例信号超过产品发布，AI 公司开始讲客户做了什么
 
 > **月报定位**：这不是"6月 AI 发生了什么"，而是"6月之后，AI 商业系统的结构哪里变了，哪些趋势被证据增强或削弱，哪些机会因此变得可以行动"。
 >

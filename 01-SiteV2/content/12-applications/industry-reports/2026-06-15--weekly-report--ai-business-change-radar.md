@@ -1,5 +1,9 @@
 ---
-title: 别再问买哪个 AI 工具：下一轮机会是重做业务流程
+title: "企业开始把 AI 预算从买工具转向重做业务流程"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:49:44.405Z
 date: 2026-06-15
 week: "2026-W24"
 window: 2026-06-09 to 2026-06-15
@@ -18,7 +22,7 @@ use_case_ids: []
 industry_ids: []
 ---
 
-# 别再问买哪个 AI 工具：下一轮机会是重做业务流程
+# 企业开始把 AI 预算从买工具转向重做业务流程
 
 ## 0. 数据口径
 

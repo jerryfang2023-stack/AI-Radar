@@ -1,5 +1,9 @@
 ---
-title: AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任
+title: "Bun 用 Claude 重写百万行代码，账单先成了新边界"
+title_generation_skill: "laofang-title-writer"
+title_model_provider: deepseek
+title_model: deepseek-v4-pro
+title_generated_at: 2026-09-12T13:49:44.405Z
 date: 2026-07-13
 week: "2026-W28"
 window: 2026-07-06 to 2026-07-12
@@ -15,7 +19,7 @@ use_case_ids: []
 industry_ids: []
 ---
 
-# AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任
+# Bun 用 Claude 重写百万行代码，账单先成了新边界
 
 ## 0. 数据口径与边界
 
