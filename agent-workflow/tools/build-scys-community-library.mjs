@@ -4,7 +4,9 @@ import { fileURLToPath } from "node:url";
 import { mergeDocumentLinks, buildDocumentIndex, documentKey } from "../../01-SiteV2/site/scripts/community-document-links.mjs";
 import "../../01-SiteV2/site/assets/scys-community-model.js";
 
-export function buildLibrary(snapshots) {
+import { resolveScysOriginalLinks } from "./lib/scys-original-links.mjs";
+
+export function buildLibrary(snapshots, resolutions = []) {
   const { key, version } = globalThis.ScysCommunityModel;
   const byKey = new Map();
   const expectedLinks = new Set();
@@ -25,11 +27,12 @@ export function buildLibrary(snapshots) {
       for (const link of mergeDocumentLinks(item.links || [])) expectedLinks.add(documentKey(link.href));
     }
   }
-  const items = [...byKey.values()].sort((a, b) => b.lastSeen.localeCompare(a.lastSeen) || a.id.localeCompare(b.id));
+  const archived = [...byKey.values()].sort((a, b) => b.lastSeen.localeCompare(a.lastSeen) || a.id.localeCompare(b.id));
+  const { items, unresolved } = resolveScysOriginalLinks(archived, resolutions);
   const resources = buildDocumentIndex(items);
   const actual = new Set(resources.map((link) => documentKey(link.href)));
   if ([...expectedLinks].some((href) => !actual.has(href))) throw new Error("Historical SCYS resource retention failed");
-  return { meta: { columnVersion: version, latestDate: snapshots.map((x) => x.date).sort().at(-1) || "", snapshots: snapshots.length, dateBasis: "collection_snapshot" }, items, resources };
+  return { meta: { columnVersion: version, latestDate: snapshots.map((x) => x.date).sort().at(-1) || "", snapshots: snapshots.length, dateBasis: "collection_snapshot", missingOriginalLinks: unresolved.length }, items, resources, missingOriginalLinkIds: unresolved };
 }
 
 export function buildScysLibrary(root = process.cwd(), { check = false } = {}) {
@@ -41,13 +44,15 @@ export function buildScysLibrary(root = process.cwd(), { check = false } = {}) {
   const existing = snapshots.find((entry) => entry.date === date);
   if (existing) existing.payload = latest;
   else snapshots.push({ date, payload: latest });
-  const result = buildLibrary(snapshots);
+  const resolutionPath = path.join(root, "01-SiteV2/site/data/scys-original-link-resolutions.json");
+  const resolutions = fs.existsSync(resolutionPath) ? JSON.parse(fs.readFileSync(resolutionPath, "utf8")).resolutions : [];
+  const result = buildLibrary(snapshots, resolutions);
   const body = `${JSON.stringify(result, null, 2)}\n`;
   const target = path.join(root, "01-SiteV2/site/data/scys-community-library.json");
   if (check) {
     if (!fs.existsSync(target) || fs.readFileSync(target, "utf8") !== body) throw new Error("SCYS library is stale; rebuild from accepted snapshots");
   } else fs.writeFileSync(target, body);
-  return { items: result.items.length, resources: result.resources.length, snapshots: snapshots.length };
+  return { missingOriginalLinks: result.meta.missingOriginalLinks, items: result.items.length, resources: result.resources.length, snapshots: snapshots.length };
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   console.log(JSON.stringify({ ok: true, ...buildScysLibrary(process.cwd(), { check: process.argv.includes("--check") }) }));

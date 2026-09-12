@@ -19,6 +19,14 @@ const server = http.createServer(async (req, res) => {
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const browser = await chromium.launch({ channel: "chrome", headless: true });
 try {
+  const {collectCards}=await import('../../../01-SiteV2/site/scripts/collect-community-intelligence.mjs');
+  const fixture=await browser.newPage();
+  await fixture.setContent('<article class="compact-card"><a href="https://scys.com/articleDetail/xq_topic/123"><span class="title-text">正确原帖</span></a><div class="content-preview"><a href="https://scys.com/articleDetail/xq_topic/999">正文引用的其他帖子</a></div></article><article class="compact-card"><span class="title-text">没有原帖地址</span><div class="content-preview"><a href="https://scys.com/articleDetail/xq_topic/999">相关帖子</a><a href="https://my.feishu.cn/wiki/Resource">资料</a></div></article>');
+  const cards=await collectCards(fixture,'scys');
+  assert.equal(cards[0].url,'https://scys.com/articleDetail/xq_topic/123');
+  assert.equal(cards[1].url,'');
+  assert.ok(cards[1].links.some(link=>link.href==='https://my.feishu.cn/wiki/Resource'));
+  await fixture.close();
   const baseUrl = process.env.COMMUNITY_TEST_BASE || 'http://127.0.0.1:' + server.address().port + '/';
   const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
   const errors = [];
@@ -49,6 +57,11 @@ try {
   assert.equal(await page.locator('[data-community-view="weekly"], .dc-community-note').count(),0);
   assert.equal(await page.locator('[data-community-filter-form] select').count(),1);
   assert.ok(!requests.slice(0, requests.findIndex(url=>url.includes('community-aipoju.html'))).some(url => url.includes('community-intelligence-daily/') || url.endsWith('/community-intelligence.json')));
+  const missingLinkCard = page.locator('.dc-scys-case').filter({hasText:'我用生财 MCP 扫完了全站 90 篇 MCP 精华帖'});
+  assert.equal(await missingLinkCard.getByRole('link', {name:'原帖 ↗'}).getAttribute('href'), 'https://scys.com/articleDetail/xq_topic/82258815884852842');
+  await missingLinkCard.locator('[data-community-open]').click();
+  assert.equal(await page.getByRole('link',{name:'原始帖子'}).getAttribute('href'),'https://scys.com/articleDetail/xq_topic/82258815884852842');
+  await page.getByLabel('关闭',{exact:true}).first().click();
   await page.screenshot({path:path.join(process.env.LOCALAPPDATA,'WaveSight/runtime/community-cases-desktop.png'),fullPage:true});
   await page.getByLabel('归档月份',{exact:true}).selectOption('all');
   await page.reload({waitUntil:'networkidle'});

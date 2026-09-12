@@ -6,6 +6,7 @@ import crypto from "node:crypto";
 import { extractDocumentLinks, mergeDocumentLinks, retainDocumentLinks, documentRetentionProblems, buildDocumentIndex } from "./community-document-links.mjs";
 import { collectScysMcp } from "./collect-scys-mcp.mjs";
 import { connectScysMcp } from "../../../agent-workflow/tools/lib/scys-mcp-client.mjs";
+import { canonicalScysUrl } from "../../../agent-workflow/tools/lib/scys-original-links.mjs";
 import { ingestPrivateEvidenceRecords } from "../../../agent-workflow/tools/lib/private-evidence-backup.mjs";
 import { resolvePrivateEvidenceBackupRoot } from "../../../agent-workflow/tools/private-evidence-backup-paths.mjs";
 
@@ -401,14 +402,17 @@ async function openSearchPage(context, sourceKey, keyword) {
   return page;
 }
 
-async function collectCards(page, sourceKey) {
+export async function collectCards(page, sourceKey) {
   if (sourceKey === "scys") {
     return page.$$eval(sources.scys.cardSelector, (cards) => cards.map((card, index) => {
       const text = (selector) => card.querySelector(selector)?.innerText?.trim() || "";
       const excerpt = text(".content-preview");
+      const titleNode = card.querySelector(".title-text");
+      const titleHref = (titleNode?.closest("a[href]") || titleNode?.querySelector("a[href]"))?.href || "";
       const title = text(".title-text") || (card.innerText || "").split("\n").find((line) => line.length > 8) || "";
       return {
         index,
+        url: /^https:\/\/scys\.com\/articleDetail\/(xq_topic|forum_topic)\/\d+\/?(?:[?#].*)?$/.test(titleHref) ? titleHref : "",
         author: text(".user-name"),
         role: text(".vc-identity-badge"),
         relativeTime: text(".time-text").replace(/^·\s*/, ""),
@@ -533,7 +537,7 @@ export function normalizeCard(sourceKey, card, job) {
     relativeTime: clean(card.relativeTime),
     publishedAt: clean(card.publishedAt),
     title,
-    url: card.url || pageFallbackUrl(sourceKey, job),
+    url: sourceKey === "scys" ? canonicalScysUrl(card.url) : card.url || pageFallbackUrl(sourceKey, job),
     scene: inferScene(fullText),
     industry: inferIndustry(fullText),
     tools,

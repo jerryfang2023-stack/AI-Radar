@@ -1071,7 +1071,7 @@
   }
 
   function communityCanonicalItemUrl(item) {
-    const url = safeExternalUrl(item.url || "");
+    const url = safeExternalUrl(item.originalUrl || item.url || "");
     if (!url) return "";
     const sourceUrl = safeExternalUrl(communityState.payload?.sources?.[item.source]?.url || "");
     if (url === sourceUrl) return "";
@@ -1316,8 +1316,8 @@
     const monthOf = resources ? (row) => row.owners.map((owner) => scysArchiveMonth(byId.get(owner.itemId) || {})).sort()[0] || "unknown" : scysArchiveMonth;
     const cases = all.filter(item => scysModel.profile(item, communityState.editorial).caseMaterial);
     const candidates = resources ? scysResourceRows(all) : cases.filter(item => {
-      if (communityCanonicalItemUrl(item) || !item.author) return true;
-      const matches = cases.filter(other => other.author === item.author && other.title === item.title && scysArchiveMonth(other) === scysArchiveMonth(item) && communityCanonicalItemUrl(other));
+      if (communityCanonicalItemUrl({ ...item, originalUrl: "" }) || !item.author) return true;
+      const matches = cases.filter(other => other.author === item.author && other.title === item.title && scysArchiveMonth(other) === scysArchiveMonth(item) && communityCanonicalItemUrl({ ...other, originalUrl: "" }));
       return matches.length !== 1;
     });
     const months = [...new Set(candidates.map(monthOf))].sort().reverse();
