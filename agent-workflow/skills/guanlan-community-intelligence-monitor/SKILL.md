@@ -22,6 +22,8 @@ This skill owns the Community Intelligence lane. It supervises local logged-in c
 
 生财采集升级以 `docs/scys-mcp-community-intelligence.md` 为实现补充：优先复用本机 Codex OAuth 的只读 MCP，破局保留浏览器路径。必须解析百分号编码的真实飞书 href、保留旧资料链接，并单独验收资源索引；不能用搜索摘要替代详情或把飞书合并正文缺失判为原帖无资料。案例、工具、手册关联仅为关键词检索结果。采集过程不得自动登录；仅关联阶段失败时从私有证据恢复，不重采成功帖子。
 
+生财与 AI 破局在社群情报下独立展示。生财案例与实操资料从已接受的历史快照生成 `scys-community-library.json`；周精选来自带原文定位的编辑记录，按整理日期归周，不自动宣称已核验。翻译后、发布前运行 `build:scys-library`，同时提交派生资料库。重构不可删除旧飞书资源、重采已成功的数据或改变 AI 破局采集。
+
 ## Current Timing
 
 - Local logged-in collection: 08:30 Asia/Shanghai via Windows task `WaveSight Community Intelligence Daily`.

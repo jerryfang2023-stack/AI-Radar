@@ -263,6 +263,7 @@ function main() {
     `- publish_branch: ${branch}`,
   ];
 
+  run("node", ["agent-workflow/tools/build-scys-community-library.mjs"]);
   run("node", [
     "agent-workflow/tools/assert-community-intelligence-data.mjs",
     `--date=${date}`,
@@ -281,6 +282,7 @@ function main() {
 
   writeReport(summary);
 
+  stageIfExists("01-SiteV2/site/data/scys-community-library.json");
   stageIfExists("01-SiteV2/site/data/community-intelligence.json");
   stageIfExists("01-SiteV2/site/data/community-intelligence-daily/index.json");
   stageIfExists(`01-SiteV2/site/data/community-intelligence-daily/${date}.json`);

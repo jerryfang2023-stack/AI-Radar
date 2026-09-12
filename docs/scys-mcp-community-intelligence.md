@@ -49,3 +49,7 @@
 本机数据门禁默认 `--private-evidence=read`，必须实际读取私有原文。GitHub 发布显式使用 `--private-evidence=references`，仅验证已归档证据定位及公开数据契约；此模式不代表远端读取过原文。不得向 GitHub 上传私有原文以满足门禁。
 
 栏目版本：`CINT-V1.1.0-scys-mcp-feishu`；Git 标签：`community-intelligence-v1.1.0-scys-mcp-feishu`。
+
+## 生财与 AI 破局子栏目
+
+当前前台为 `CINT-V1.2.0-source-subcolumns`，具体入口、编辑记录、历史资料库及验收见 `docs/releases/2026-09-12-community-subcolumns.md`。从已接受快照执行 `npm run build:scys-library`，用 `npm run assert:scys-library` 检查漂移。编辑数据在 `scys-community-editorial.json`；周精选是按整理日期策划的条目，不能仅因关键词命中而自动发布为精选。案例中的来源陈述、外部核验及成员实践必须区分，当前仅有来源陈述。

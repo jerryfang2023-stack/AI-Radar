@@ -3034,3 +3034,24 @@ body[data-dc-view="community"] .dc-source-link:active {
     gap: 4px;
   }
 }
+
+/* Community source subcolumns and independently indexed resources. */
+.dc-community-sources { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 18px 0; }
+.dc-community-sources a { display: grid; gap: 6px; padding: 18px 20px; border: 1px solid var(--gl-border); border-radius: 8px; color: var(--gl-ink); text-decoration: none; font-size: 20px; font-family: var(--gl-font-serif-cn); }
+.dc-community-sources a[aria-current="page"] { border-color: var(--gl-gold); background: rgba(200,167,102,.08); }
+.dc-community-sources span { font: 12px/1.6 var(--gl-font-sans-cn); color: var(--gl-gray); }
+.dc-community-note { font-size: 13px; line-height: 1.8; color: var(--gl-gray); }
+.dc-resource-url { display: block; overflow-wrap: anywhere; font-size: 12px; line-height: 1.7; color: var(--gl-blue); }
+.dc-resource-card h3 a { color: inherit; text-decoration: none; }
+.dc-resource-card .dc-community-card-actions { display: grid; gap: 8px; }
+.dc-resource-card button { text-align: left; white-space: normal; overflow-wrap: anywhere; }
+.dc-resource-card details { font-size: 13px; line-height: 1.8; }
+.dc-weekly-card blockquote { margin: 8px 0; padding: 8px 14px; border-left: 2px solid var(--gl-gold); font-size: 14px; line-height: 1.8; }
+.dc-case-fields { margin: 12px 0; display: grid; gap: 14px; }
+.dc-case-fields > div { display: grid; grid-template-columns: 100px minmax(0,1fr); gap: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--gl-border); }
+.dc-case-fields dt { color: var(--gl-gray); font-size: 13px; }
+.dc-case-fields dd { margin: 0; line-height: 1.8; font-size: 14px; }
+body[data-dc-view=community] .dc-community-toolbar { display:flex; flex-wrap:wrap; gap:10px; }
+body[data-dc-view=community] .dc-community-toolbar .dc-search { flex: 1 1 260px; }
+body[data-dc-view=community] .dc-community-tabs { grid-template-columns: repeat(auto-fit,minmax(145px,1fr)); }
+@media(max-width:600px) { .dc-community-sources { gap:8px; } .dc-community-sources a { padding:14px 12px; font-size:18px; } .dc-community-sources span { font-size:11px; } .dc-case-fields > div { grid-template-columns:1fr; gap:5px; } body[data-dc-view=community] .dc-community-tabs { grid-template-columns:1fr; } }
