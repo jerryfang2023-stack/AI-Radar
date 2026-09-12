@@ -84,7 +84,11 @@ function semanticSummary(skills) {
 }
 
 export function evaluateSkillStoreDashboard(paths = dashboardContractPaths(), options = {}) {
-  const requireCompatibilityMirror = options.requireCompatibilityMirror ?? true;
+  // CI uses the repository itself as GUANLAN_SKILL_STORE. Comparing that
+  // directory with itself cannot validate a snapshot of a separate local mirror.
+  // Keep source digests/metadata checks and enforce mirror checks when distinct.
+  const requireCompatibilityMirror = options.requireCompatibilityMirror
+    ?? path.resolve(paths.storeDir) !== path.resolve(paths.projectSkillDir);
   const errors = [];
   let payload;
   try {

@@ -47,6 +47,14 @@ metadata:
   assert.equal(row.sourceKind, "project");
   assert.equal(row.syncState, "drift");
   assert.ok(fs.readFileSync(path.join(store, "alpha", "SKILL.md"), "utf8").includes('version: "1.0.0"'));
+  const paths = { dashboardPath: file, projectSkillDir: project, storeDir: store, versionPath: path.join(project, "skill-store-version.json") };
+  assert.equal(evaluateSkillStoreDashboard(paths).ok, true);
+  const cloudPaths = { ...paths, storeDir: project };
+  assert.equal(evaluateSkillStoreDashboard(cloudPaths).ok, true, "a CI self-reference must not relabel an external mirror as synced");
+  write(path.join(store, "alpha", "SKILL.md"), source);
+  assert.ok(evaluateSkillStoreDashboard(paths).errors.some((error) => error.includes("syncState expected synced")), "a real local mirror is still checked");
+  write(path.join(project, "alpha", "SKILL.md"), source + "\nChanged production rule.\n");
+  assert.ok(evaluateSkillStoreDashboard(cloudPaths).errors.some((error) => error.includes("source rules are stale")), "cloud publication still rejects stale repository rules");
 });
 
 test("literal/folded descriptions preserve Chinese text, not YAML scalar markers", () => {
