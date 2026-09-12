@@ -65,9 +65,9 @@
     directions: null,
     direction: params.get("direction") || "",
     selectedDate: "",
-    activeView: communitySource === "aipoju" ? (Object.hasOwn(communityViewConfig, params.get("section")) ? params.get("section") : "all") : (Object.hasOwn(scysViews, params.get("section")) ? params.get("section") : "cases"),
+    activeView: document.body.dataset.scysDirection === "true" ? "directions" : communitySource === "aipoju" ? (Object.hasOwn(communityViewConfig, params.get("section")) ? params.get("section") : "all") : (Object.hasOwn(scysViews, params.get("section")) ? params.get("section") : "cases"),
     activeScene: "all",
-    page: 1,
+    page: document.body.dataset.scysDirection === "true" && /^\d+$/.test(params.get("page") || "") ? Math.max(1,Number(params.get("page"))) : 1,
     filters: {
       query: params.get("q") || "",
       source: communitySource === "aipoju" ? "aipoju" : "scys",
@@ -1314,51 +1314,44 @@
 
   function scysRenderDirections() {
     const data = communityState.directions;
+    const detailPage = document.body.dataset.scysDirection === "true";
+    const back = '<a class="dc-direction-back" href="community-scys.html?section=directions">← 返回方向统计</a>';
     const header = `<div class="dc-page-head"><h1>生财有术</h1></div><nav class="dc-community-tabs" aria-label="生财有术分类">${Object.entries(scysViews).map(([key, config]) => `<button type="button" data-community-view="${key}"${key === "directions" ? ' aria-current="page"' : ""}>${config.label}</button>`).join("")}</nav>`;
     if (!data?.directions?.length) {
-      root.innerHTML = `${header}<div class="dc-empty">方向分析暂时无法加载，请刷新重试。</div>`;
+      root.innerHTML = `${detailPage ? back : header}<div class="dc-empty">方向分析暂时无法加载，请刷新重试。</div>`;
       communityBindInteractions();
       return;
     }
-    const byId = new Map(communityItems().map(item => [item.id, item]));
-    const directions = data.directions;
+    const href = id => `community-scys-direction.html?direction=${encodeURIComponent(id)}`;
+    const directions = data.pending?.length ? [...data.directions, { id:"pending", name:"待分类", posts:data.pending }] : data.directions;
     const selected = directions.find(direction => direction.id === communityState.direction);
-    communityState.direction = selected?.id || "";
+    if (!detailPage && communityState.direction) { location.replace(href(communityState.direction)); return; }
+    if (detailPage) {
+      if (!selected) {
+        root.innerHTML = `${back}<div class="dc-page-head"><h1>方向不存在</h1></div><p class="dc-empty">请返回方向统计选择分类。</p>`;
+        return;
+      }
+      const posts = selected.posts;
+      communityState.page = Math.min(Math.max(communityState.page,1),Math.max(1,Math.ceil(posts.length/communityPageSize)));
+      communitySetUrlDate(communityState.selectedDate);
+      document.title = `${selected.name} · 生财有术 | 观澜 AI`;
+      const shown = posts.slice((communityState.page-1)*communityPageSize,communityState.page*communityPageSize);
+      root.innerHTML = `${back}<div class="dc-page-head" id="scys-direction-posts"><h1>${escapeHtml(selected.name)}</h1></div><section class="dc-direction-list-page" aria-label="帖子标题列表"><ul class="dc-direction-posts">${shown.map(post => {
+        const url = safeExternalUrl(post.originalUrl);
+        return `<li>${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(post.title)}</a>` : `<button type="button" data-community-open="${escapeHtml(post.itemId)}">${escapeHtml(post.title)}</button>`}</li>`;
+      }).join("")}</ul>${posts.length ? communityRenderPagination(posts.length) : '<p class="dc-empty">暂无帖子</p>'}</section>`;
+      communityBindInteractions();
+      return;
+    }
     communitySetUrlDate(communityState.selectedDate);
-    const total = new Set(directions.flatMap(direction => direction.posts.map(post => post.itemId))).size;
-    const max = Math.max(...directions.map(direction => direction.posts.length));
-    const fees = selected ? data.prices.filter(price => selected.posts.some(post => post.itemId === price.itemId)) : [];
-    const posts = selected?.posts || [];
-    communityState.page = Math.min(Math.max(communityState.page, 1), Math.max(1, Math.ceil(posts.length / communityPageSize)));
-    const shown = posts.slice((communityState.page - 1) * communityPageSize, communityState.page * communityPageSize);
-    const source = id => {
-      const item = byId.get(id);
-      const href = item && communityCanonicalItemUrl(item);
-      return item ? `<button type="button" class="dc-clear" data-community-open="${escapeHtml(id)}">查看帖子</button>${href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">原帖 ↗</a>` : '<span>原帖待补链</span>'}` : '<span>帖子暂不可用</span>';
-    };
+    const max = Math.max(1,...data.directions.map(direction=>direction.posts.length));
     root.innerHTML = `${header}<section class="dc-directions" aria-label="创业方向统计分析">
-      <dl class="dc-direction-stats"><div><dt>创业方向</dt><dd>${directions.length}</dd></div><div><dt>案例与实践帖子</dt><dd>${total}</dd></div><div><dt>收费及金额记录</dt><dd>${data.prices.length}</dd></div></dl>
-      <div class="dc-direction-ranking" aria-label="按帖子数量查看方向">${[...directions].sort((a,b) => b.posts.length - a.posts.length).map(direction => `<button type="button" class="dc-direction-choice" data-direction="${escapeHtml(direction.id)}" aria-pressed="${selected?.id === direction.id}" aria-controls="scys-direction-detail"><span>${escapeHtml(direction.name)}</span><strong>${direction.posts.length} 篇</strong><span class="dc-direction-bar" aria-hidden="true"><i style="width:${direction.posts.length / max * 100}%"></i></span></button>`).join("")}</div>
-      <details class="dc-direction-basis"><summary>统计口径 · ${escapeHtml(data.asOf)}</summary><p>${escapeHtml(data.basis)}</p></details>
-      <section id="scys-direction-detail" class="dc-direction-detail" tabindex="-1" aria-live="polite">${selected ? `
-        <div class="dc-community-section-head"><h2>${escapeHtml(selected.name)}</h2><span>${posts.length} 篇帖子</span></div>
-        <dl class="dc-direction-context"><div><dt>主要痛点 · 编辑归纳</dt><dd>${escapeHtml(selected.pain)}</dd></div><div><dt>产品与服务</dt><dd>${escapeHtml(selected.product)}</dd></div></dl>
-        <h3 class="dc-direction-heading">收费与金额</h3>
-        <div class="dc-direction-fees">${fees.map(price => `<article class="dc-direction-fee"><div><span class="dc-direction-nature">${escapeHtml(price.nature)}</span><h4>${escapeHtml(price.object)}</h4><strong>${price.min.toLocaleString("zh-CN")}${price.max !== price.min ? `–${price.max.toLocaleString("zh-CN")}` : ""} ${price.currency === "人民币" ? "元" : "（币种未注明）"} / ${escapeHtml(price.unit)}</strong></div><p>${escapeHtml(price.limitation)}</p><details><summary>来源依据</summary><blockquote>${escapeHtml(price.evidence)}</blockquote></details><div class="dc-direction-source">${source(price.itemId)}</div></article>`).join("") || '<p>现有资料未披露明确收费。</p>'}</div>
-        <h3 id="scys-direction-posts" class="dc-direction-heading">对应帖子</h3><div class="dc-community-grid">${shown.map(post => {
-          const item = byId.get(post.itemId);
-          if (!item) return `<article class="dc-community-card"><h3>${escapeHtml(post.title)}</h3><p>帖子暂不可用</p></article>`;
-          return scysCaseCard({ ...item, links: [...new Map([...(item.links || []), ...(post.links || [])].map(link => [link.href, link])).values()] });
-        }).join("")}</div>${communityRenderPagination(posts.length)}` : '<p class="dc-empty">选择一个方向，查看痛点、收费与对应帖子。</p>'}</section>
+      <dl class="dc-direction-stats"><div><dt>创业方向</dt><dd>${data.directions.length}</dd></div><div><dt>已归类帖子</dt><dd>${data.meta.classifiedPosts}</dd></div><div><dt>收费及金额记录</dt><dd>${data.prices.length}</dd></div></dl>
+      <div class="dc-direction-ranking" aria-label="按帖子数量查看方向">${[...data.directions].sort((a,b)=>b.posts.length-a.posts.length).map(direction=>`<a class="dc-direction-choice" data-direction="${escapeHtml(direction.id)}" href="${href(direction.id)}"><span>${escapeHtml(direction.name)}</span><strong>${direction.posts.length} 篇</strong><span class="dc-direction-bar" aria-hidden="true"><i style="width:${direction.posts.length/max*100}%"></i></span></a>`).join("")}</div>
+      ${data.pending?.length ? `<a class="dc-direction-pending" data-direction="pending" href="${href("pending")}">待分类 · ${data.pending.length} 篇</a>` : ""}
+      <details class="dc-direction-basis"><summary>更新至 · ${escapeHtml(data.asOf)}</summary><p>${escapeHtml(data.basis)}</p></details>
     </section>`;
     communityBindInteractions();
-    root.querySelectorAll("[data-direction]").forEach(button => button.addEventListener("click", () => {
-      communityState.direction = button.dataset.direction;
-      communityState.page = 1;
-      scysRenderDirections();
-      root.querySelector("#scys-direction-detail")?.focus({ preventScroll: true });
-      root.querySelector("#scys-direction-detail")?.scrollIntoView({ block: "start" });
-    }));
   }
 
   function scysRenderArchive() {
@@ -1459,7 +1452,7 @@
 
   function communityOpenDialog(id) {
     const stored = communityItems().find((entry) => String(entry.id) === String(id));
-    const curated = communityState.activeView === "directions" ? communityState.directions?.directions.flatMap(direction => direction.posts).find(post => post.itemId === id) : null;
+    const curated = communityState.activeView === "directions" ? [...(communityState.directions?.directions.flatMap(direction => direction.posts) || []), ...(communityState.directions?.pending || [])].find(post => post.itemId === id) : null;
     const item = stored && curated ? { ...stored, links: [...new Map([...(stored.links || []), ...curated.links].map(link => [link.href, link])).values()] } : stored;
     const dialog = document.querySelector("[data-community-dialog]");
     const content = document.querySelector("[data-community-dialog-content]");
@@ -1519,6 +1512,7 @@
     if (communityState.filters.query) next.searchParams.set("q", communityState.filters.query);
     else next.searchParams.delete("q");
     if (communityState.activeView === "directions") { next.searchParams.delete("month"); next.searchParams.delete("q"); }
+    if (document.body.dataset.scysDirection === "true") { next.searchParams.delete("section"); next.searchParams.set("page", String(communityState.page)); }
     window.history.replaceState({}, "", next);
   }
 

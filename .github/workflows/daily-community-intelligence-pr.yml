@@ -202,6 +202,7 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-community-intelligence-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-community-intelligence-gate.md"
           stage_if_exists "01-SiteV2/site/data/scys-community-library.json"
+          stage_if_exists "01-SiteV2/site/data/scys-startup-directions.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence-daily/index.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence-daily/${RUN_DATE}.json"

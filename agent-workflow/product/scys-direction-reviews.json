@@ -1,0 +1,1380 @@
+{
+  "version": 1,
+  "directions": [
+    {
+      "id": "apps",
+      "name": "小程序与应用定制",
+      "pain": "客户有具体业务需求，但缺少开发能力；需求边界、上线与售后影响交付成本。",
+      "product": "小程序、App、垂直业务工具"
+    },
+    {
+      "id": "enterprise",
+      "name": "企业 AI 服务与 FDE",
+      "pain": "现成 AI 工具难接入真实业务；企业需要需求梳理、流程改造和持续落地。",
+      "product": "业务系统、门店工具、咨询与实施"
+    },
+    {
+      "id": "education",
+      "name": "AI 培训与教育服务",
+      "pain": "企业和家长需要能实际使用的 AI 能力或教育内容；备课、交付和付费验证是关键。",
+      "product": "企业培训、少儿课程、启蒙会员"
+    },
+    {
+      "id": "knowledge-products",
+      "name": "虚拟资料与知识产品",
+      "pain": "资料供给同质化、选题与需求错位；行业经验难以整理为可重复交付的产品。",
+      "product": "教育资料、模板、行业知识库、原创课件"
+    },
+    {
+      "id": "commerce",
+      "name": "电商选品与运营工具",
+      "pain": "手动找品、记录、测款和监控耗时；需要把成熟选品方法变成持续运行的工具。",
+      "product": "选品网站、监控工具、运营工作台"
+    },
+    {
+      "id": "content-agents",
+      "name": "内容工作台与 Agent",
+      "pain": "选题、写稿、配图、剪辑和分发存在重复劳动；自动化还需保证内容质量与交付状态。",
+      "product": "内容工作流、营销工作台、自动剪辑、Agent"
+    },
+    {
+      "id": "video-commerce",
+      "name": "视频带货与内容分成",
+      "pain": "制作成本和持续产出压力大；高播放不等于成交，同质化可能影响平台变现资格。",
+      "product": "AI 短视频、图书带货、海外短剧、视频创作软件"
+    },
+    {
+      "id": "video-services",
+      "name": "AI 视频定制服务",
+      "pain": "企业需要短视频交付，但低报价、制作耗时和返工容易侵蚀利润。",
+      "product": "品牌短视频、数字人或定制视频"
+    },
+    {
+      "id": "writing",
+      "name": "AI 写作与小说",
+      "pain": "文本创作需要持续产出；生成内容与用户需求、平台要求之间仍有适配工作。",
+      "product": "小说、写作工具、文本内容服务"
+    },
+    {
+      "id": "saas",
+      "name": "工具网站与独立 SaaS",
+      "pain": "产品容易缺少真实需求；独立开发还要解决获客、收款、使用体验与付费验证。",
+      "product": "工具站、游戏攻略站、展示面工具、海外 SaaS"
+    },
+    {
+      "id": "marketing",
+      "name": "获客营销与拉新",
+      "pain": "流量难转化为客户；需要精准触达、潜客识别，并控制内容与获客成本。",
+      "product": "广告服务、内容获客、拉新、线索工具"
+    },
+    {
+      "id": "mcp-knowledge",
+      "name": "MCP 与知识管理产品",
+      "pain": "信息分散、收藏后难复用；需要可检索、可调用的数据和知识资产。",
+      "product": "垂直 MCP、知识地图、知识库、转录与听书工具"
+    }
+  ],
+  "assignments": [
+    {
+      "title": "不懂代码也能做小程序：我上线4个产品、跑出 4000+用户后的真实复盘",
+      "author": "杨树亮",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548814811452528",
+      "direction": "apps"
+    },
+    {
+      "title": "【实战】上班族用AI做小程序：0代码上线3款产品，1.5万用户，跑通内容×产品×服务闭环",
+      "author": "周小白补习班",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82258828451144222",
+      "direction": "apps"
+    },
+    {
+      "title": "从没做过小程序，到 9000 元接单 10 天交付客户项目：我是怎么用 AI Coding 跑通闭环的",
+      "author": "allen",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425515851255252",
+      "direction": "apps"
+    },
+    {
+      "title": "60 岁的我，百转千回，做出了第一款实用小程序",
+      "author": "素心",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521118558148254",
+      "direction": "apps"
+    },
+    {
+      "title": "从一天做出 Demo，到公司正式上线：一个零代码小白的 AI 开发实录",
+      "author": "阿杰",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522825225481124",
+      "direction": "apps"
+    },
+    {
+      "title": "今年418加入生财的新人，我用 AI 做了个小程序，六天跑通并成功变现了",
+      "author": "艺文",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544145452142258",
+      "direction": "apps"
+    },
+    {
+      "title": "参加一次小程序航海后，我从不会英文、不会编程，到用Codex接定制单，6月到账11288元的项目分享",
+      "author": "路飞",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422822844181442",
+      "direction": "apps"
+    },
+    {
+      "title": "手把手教你从 0 到 1 开发上线一款小程序，变现 1W + 的完整实战复盘（包括后端内容的进阶学习）",
+      "author": "安小生",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255155254225522",
+      "direction": "apps"
+    },
+    {
+      "title": "不懂技术也能开发自己的小程序：从 0 到 1 做自己的产品，变现 1W + 的完整实战复盘",
+      "author": "安小生",
+      "originalUrl": "",
+      "direction": "apps"
+    },
+    {
+      "title": "非科班出身的代码小白，使用Codex制作并上线了两个小程序的完整复盘，帮小白少踩坑",
+      "author": "伍拾陆",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255444182285581",
+      "direction": "apps"
+    },
+    {
+      "title": "潜水5年的健身教练，如何靠AI做了个小程序给门店带来了1w+收入",
+      "author": "峰教练",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255442228581241",
+      "direction": "apps"
+    },
+    {
+      "title": "分享四个月以来，开发了20多个项目，使用Cursor的经验和方法",
+      "author": "黑帽Zz。",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/1524444842818512",
+      "direction": "apps"
+    },
+    {
+      "title": "一个全职宝妈的Cursor编程之路（迟来的航海好事）",
+      "author": "初心",
+      "originalUrl": "",
+      "direction": "apps"
+    },
+    {
+      "title": "用Claude 3.7 Sonnet和Cursor两步生成app实操记录",
+      "author": "AI进化论-花生",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/4848122448444158",
+      "direction": "apps"
+    },
+    {
+      "title": "用Cursor开发了我的第一个微信小程序",
+      "author": "Dong.",
+      "originalUrl": "",
+      "direction": "apps"
+    },
+    {
+      "title": "Cursor 两小时做出悬浮待办 Android App",
+      "author": "Link",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255445815141152",
+      "direction": "apps"
+    },
+    {
+      "title": "Cursor/Tripwiser：零编程经验做出旅行网站，又开始做 App",
+      "author": "Link",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255445885212411",
+      "direction": "apps"
+    },
+    {
+      "title": "【实战复盘】0 行手写代码，AI 3小时做出一个已经收款的产品：喂饭级写给你（附全套代码和可抄 prompt）",
+      "author": "Fish - 嗡嗡鱼",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522418128111424",
+      "direction": "apps"
+    },
+    {
+      "title": "零代码基础，我用AI编程25天变现5100元：从0到接单交付的实操复盘",
+      "author": "年轻人",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255482825284252",
+      "direction": "apps"
+    },
+    {
+      "title": "用Codex3小时做出小程序，我踩过的5个坑",
+      "author": "HP",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255214854558152",
+      "direction": "apps"
+    },
+    {
+      "title": "春招两月盈利 2.8w：我做了一个 AI 简历填表插件，从发现商机到卖出去的完整复盘",
+      "author": "又道天凉好个秋",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582828221512",
+      "direction": "apps"
+    },
+    {
+      "title": "新手怎么入行FDE，怎么用AI做副业",
+      "author": "苍述",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521144558145414",
+      "direction": "enterprise"
+    },
+    {
+      "title": "花12万找FDE踩坑失败经验，用AI自研系统，分享真实甲方的需求变现路径——完整复盘（万字长文）",
+      "author": "Egg2rich",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522444182255514",
+      "direction": "enterprise"
+    },
+    {
+      "title": "参加航海家AI大课，我们用AI 9 小时做了个教务系统，拿了黑客松亚军(附全套 Prompt)",
+      "author": "葉贤弟",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422114418441522",
+      "direction": "enterprise"
+    },
+    {
+      "title": "从真实现场到 10+ 家付费内测｜一个行业人跑通 FDE 产品化的完整过程",
+      "author": "李可",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255445882452841",
+      "direction": "enterprise"
+    },
+    {
+      "title": "亦仁直播说的 FDE，我就在企业里干这个：半开发半教练的活法、坑和真实进度",
+      "author": "砖用冰西瓜",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255421415215552",
+      "direction": "enterprise"
+    },
+    {
+      "title": "一个人深入中小企业，做AI服务落地的感受",
+      "author": "小宋",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255481142485852",
+      "direction": "enterprise"
+    },
+    {
+      "title": "超级术：一人公司做AI企业服务？这篇万字干货讲清落地与变现",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522418115812114",
+      "direction": "enterprise"
+    },
+    {
+      "title": "Ai咨询服务赚到4.5K，从流量、到识别需求、到完成交付的完整复盘",
+      "author": "大东",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255484825551181",
+      "direction": "enterprise"
+    },
+    {
+      "title": "烧了230亿 Token，我终于跑通了一套实体老板也能复制的 AI 变现 SOP",
+      "author": "李可",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522584415221514",
+      "direction": "enterprise"
+    },
+    {
+      "title": "在企业一线的实战经验---新手入门企业定制的过程拆解",
+      "author": "一泽",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422484454512512",
+      "direction": "enterprise"
+    },
+    {
+      "title": "万字干货深度解析：一人公司怎么做AI企业服务赛道？",
+      "author": "乐阳",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544522854515258",
+      "direction": "enterprise"
+    },
+    {
+      "title": "AI赋能企业实战：我用AI帮一家移民机构搭了3套自动化系统，日均精准进线从0到20+",
+      "author": "鱼晓枫",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544525145588428",
+      "direction": "enterprise"
+    },
+    {
+      "title": "转型企业AI服务，分享近千条ToB AI商单视频心得",
+      "author": "沐锋",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422448221811582",
+      "direction": "enterprise"
+    },
+    {
+      "title": "13岁少年35美元启动，靠AI帮线下诊所月入13万",
+      "author": "雪雪@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255284452112451",
+      "direction": "enterprise"
+    },
+    {
+      "title": "帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255284452115441",
+      "direction": "enterprise"
+    },
+    {
+      "title": "2026.6.11 75岁老爷子的AI第一课：当ISO认证专家遇上数字助手",
+      "author": "茅矛",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255225548118421",
+      "direction": "enterprise"
+    },
+    {
+      "title": "从做海外AI产品、中转站到转型企业AI服务，分享我们一个团队是怎么做高客单企业服务的",
+      "author": "若木-超梦Ai",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544588151454158",
+      "direction": "enterprise"
+    },
+    {
+      "title": "从连终端都不知道，到48小时成交2单：一个AI小白的MVP验证复盘",
+      "author": "！姜北风",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544228888458558",
+      "direction": "education"
+    },
+    {
+      "title": "9 年设计师，裸辞后在生财做了 5 个项目都失败，最后all in AI企业服务做到一场培训 5000元",
+      "author": "石榴爸爸",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255425824558812",
+      "direction": "education"
+    },
+    {
+      "title": "用“AI 亦仁”当外脑，我如何交付一门自己不擅长的企业培训课，进账2w+",
+      "author": "小圆【Ai企培】",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255214512252412",
+      "direction": "education"
+    },
+    {
+      "title": "6000字讲清楚如何用 AI做少儿 AI培训变现6000 元！",
+      "author": "麦麦",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544522142824888",
+      "direction": "education"
+    },
+    {
+      "title": "我靠 AI 幼教项目 \"瓜牛智教\"，14 个月从 0 做到月流水 15 万，英国商科生的轻资产教育创业复盘",
+      "author": "Sure",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522518242585824",
+      "direction": "education"
+    },
+    {
+      "title": "从淘宝找品到小红书找人群，AI赋能虚拟资料月入5万",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425511448122142",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "如何打造一人公司的商业闭环｜从需求到变现全流程拆解，附采需求的开源工具",
+      "author": "叁斤",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258842522188241",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "从一条生财风向标到 100 万+流量：我用 50元启动的虚拟产品ima知识库一周跑通MVP",
+      "author": "月明星稀",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425558812182222",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "如何用个人工作台提效，用Skill做产品，构建并放大自己的虚拟产品生意？【内含2026年虚拟产品风向标】",
+      "author": "Luke",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258881212414511",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "开学第一课单个PPT变现上万，开学季如何利用AI赋能教师（教务）资料",
+      "author": "星荧",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255411815528241",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "如何用skill原创虚拟产品！11000字说清楚",
+      "author": "Luke",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522414482111124",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "带小升初的孩子一起做虚拟资料创业，她拿到自己的第一笔2.6元！",
+      "author": "船长教辅陪跑",
+      "originalUrl": "",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "小红书虚拟矩阵：AI原创虚拟品+批量搬款+4带1隔离IP+AI做图去暗水印+自动化AI发笔记+测款怼款双模式（可工作室放大）",
+      "author": "狂蜂（小红书虚拟）",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522422115548554",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "小红书一张图卖9800单，我拿Codex 15分钟复刻出来，4天后开始收钱",
+      "author": "拾悦",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544244858288418",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "如何用iamge2解决小红书博主数学笔记卡片的商单需求？",
+      "author": "飞掌柜",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422122211242212",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+      "author": "苏苏",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544525851845518",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "我用 Codex + Obsidian，把 10 年教培增长经验做成了一个可调用的 AI 第二大脑",
+      "author": "请叫我娃哥",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544524584821518",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "用 NotebookLM 做原创课件：从0到月入6w，我踩过的坑和跑通的路径",
+      "author": "额额额",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422412422441552",
+      "direction": "knowledge-products"
+    },
+    {
+      "title": "我是怎么把小红书虚拟资料的选品方法做成了一套监控工具（附完整提示词）",
+      "author": "冬青",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548825112211458",
+      "direction": "commerce"
+    },
+    {
+      "title": "深海圈5个月：做废20多个AI工具站后，靠给自己做的选品工具7天日入千刀",
+      "author": "秀才",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521155254288844",
+      "direction": "commerce"
+    },
+    {
+      "title": "小红书虚拟选品：由1个品找到1群好品！",
+      "author": "狂蜂（小红书虚拟）",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544285884128158",
+      "direction": "commerce"
+    },
+    {
+      "title": "用 Claude Code 徒手开发小红书 AI 选品网站：从手动记录到自动化监控的实战之路",
+      "author": "书豪",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255281454448822",
+      "direction": "commerce"
+    },
+    {
+      "title": "三笙：从电商业务真能用的工具，到 AI 工具落地的真实机会",
+      "author": "三笙",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544585285188228",
+      "direction": "commerce"
+    },
+    {
+      "title": "从个人经验到Ai 自动化内容系统：我的 Codex × Obsidian 实践分享",
+      "author": "七天假",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548814854181858",
+      "direction": "content-agents"
+    },
+    {
+      "title": "看完亦仁的付费MCP，我做了个能配合Agent的公众号运营工具小抄",
+      "author": "好好",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82258815521444882",
+      "direction": "content-agents"
+    },
+    {
+      "title": "利用碎片信息➕workbuddy，两个月跑通职场类公众号垂直小号自动化，全流程及提示词分享",
+      "author": "豚小祖",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548821424484488",
+      "direction": "content-agents"
+    },
+    {
+      "title": "小红书电商矩阵：单店4带1+AI矩阵发笔记+测怼双模式",
+      "author": "狂蜂（小红书虚拟）",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258822155441551",
+      "direction": "content-agents"
+    },
+    {
+      "title": "从卖货到做 IP，小红书高手都在怎么用 AI？ 【AI 实战派对谈银河 X 七天假】",
+      "author": "纪钟",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521144254288154",
+      "direction": "content-agents"
+    },
+    {
+      "title": "用 WorkBuddy + 多维表格 + ima 知识库，批量生成「贴合自己商品」的笔记",
+      "author": "黄大路",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548855518241888",
+      "direction": "content-agents"
+    },
+    {
+      "title": "300人点赞投锚，月入7w后，我的Agent员工军团搭建流程全公开。（38000字实操版）",
+      "author": "枕棠",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82258825454528882",
+      "direction": "content-agents"
+    },
+    {
+      "title": "从卖出6000+份低客单AI仿写产品，到成交100单小B高客单AI工作台：我做AI产品赚到6位数后的复盘",
+      "author": "求索的木子",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422821552415122",
+      "direction": "content-agents"
+    },
+    {
+      "title": "如何将【安卓手机+飞书】搭建24小时在线AI agent员工",
+      "author": "馆主",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255158144215451",
+      "direction": "content-agents"
+    },
+    {
+      "title": "超级术：挖到一篇超实用AI Agent干货：把业务流程做成能上岗的AI员工",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522821222212484",
+      "direction": "content-agents"
+    },
+    {
+      "title": "AI 赋能内容创作，实现 10 倍提效【AI 实战派对谈 X 鹿书野 X 尹星河 X 林幻雨】",
+      "author": "纪钟",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522822882844444",
+      "direction": "content-agents"
+    },
+    {
+      "title": "大二开公司、从没上过班，我是怎么用406亿Token搭了一套小红书AI工作台帮我做虚拟产品赚钱",
+      "author": "南墙",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522822524518814",
+      "direction": "content-agents"
+    },
+    {
+      "title": "军工程序媛宝妈：通过垂直小号+AI航海家大课的方法实现工作流重塑，拿到正反馈和效率翻倍的实操复盘",
+      "author": "杜稀饭",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522484284554584",
+      "direction": "content-agents"
+    },
+    {
+      "title": "AI 实战复盘：跑通微信小店＋知识库自动交付，单周消耗 18 亿 Token",
+      "author": "bug超会玩",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522444841284824",
+      "direction": "content-agents"
+    },
+    {
+      "title": "使用Hermes，7个Agent帮你24小时视频生产全流程",
+      "author": "书情小跟班",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255444812254542",
+      "direction": "content-agents"
+    },
+    {
+      "title": "一天花10个亿Token？我所有工作都靠AI完成",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544144855148588",
+      "direction": "content-agents"
+    },
+    {
+      "title": "如何把你的业务流程做成 AI Agent 员工",
+      "author": "鹿书野",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422114455242422",
+      "direction": "content-agents"
+    },
+    {
+      "title": "日更1092天、迭代400多次，我把我的AI内容工厂整套开源，Codex、Claude Code全通用",
+      "author": "朝暮拾花",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422115288858152",
+      "direction": "content-agents"
+    },
+    {
+      "title": "做了 7 年设计师，我把居家办公4年踩过的坑，整理成了⼀套⼀⼈公司⽣产系统",
+      "author": "潮生",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422112828224452",
+      "direction": "content-agents"
+    },
+    {
+      "title": "从口播到成片：我参考 ChatCut，用 Codex 跑通了一套 AI 剪辑工作流",
+      "author": "阿甘",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255445522415241",
+      "direction": "content-agents"
+    },
+    {
+      "title": "从AI小白到12个Agent员工，我的60天150亿Token系统升级之旅",
+      "author": "枕棠",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544251228444488",
+      "direction": "content-agents"
+    },
+    {
+      "title": "建筑设计师深耕 B站好物一年：我用 Codex 把视频产出从两周 1 条提速到 1 小时 1 条",
+      "author": "林幻雨",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522458445228254",
+      "direction": "content-agents"
+    },
+    {
+      "title": "15000字！分享如何用Codex搭建个人IP内容创作系统！内涵实操SOP",
+      "author": "亦恒",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522452885812484",
+      "direction": "content-agents"
+    },
+    {
+      "title": "2天用Cursor+AI打造公众号矩阵管理系统，效率远超影刀RPA",
+      "author": "钱塘江鲤",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/1525121124512252",
+      "direction": "content-agents"
+    },
+    {
+      "title": "生财团队AI原生改造第一阶段收尾，全员用AI写文档、开发Agent",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255425841144412",
+      "direction": "content-agents"
+    },
+    {
+      "title": "我用Codex做了爆款视频复刻skill，附完整迭代实操和开源地址",
+      "author": "镇涛（AI+电商）",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544282854258528",
+      "direction": "content-agents"
+    },
+    {
+      "title": "做B站好物跑通0-1后，从选品-制作-发布，我把 AI 接入到了每个环节，让所有的数据资产化",
+      "author": "拿铁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544282221888188",
+      "direction": "content-agents"
+    },
+    {
+      "title": "如何从 0 到 1 搭建 AI 员工团队：让 AI 真正进入你的工作流",
+      "author": "超级峰",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544288254285248",
+      "direction": "content-agents"
+    },
+    {
+      "title": "生财赣州线下聚会分享：用Codex+系统知识库做高IP公众号的流程",
+      "author": "刘智行",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255482585245881",
+      "direction": "content-agents"
+    },
+    {
+      "title": "Codex自动化剪辑从0到1，如何让AI批量产出带货视频【万字长文】",
+      "author": "周行今天学习了吗？",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255458852525111",
+      "direction": "content-agents"
+    },
+    {
+      "title": "我是如何用 Codex 搭建工作流，实现图文内容日更 100 条的（附完整流程）",
+      "author": "Jason、mar",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522422428554884",
+      "direction": "content-agents"
+    },
+    {
+      "title": "我用 Codex 搭了一套小红书 AI 工作站，消耗百亿token，10 天变现 1w+",
+      "author": "尹星河",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544522158542448",
+      "direction": "content-agents"
+    },
+    {
+      "title": "做了三个月公众号贴图，用ai+多维表格矩阵运营10个号，单号最高变现3000，我看到的内容红利",
+      "author": "⃰辰风",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255242885188521",
+      "direction": "content-agents"
+    },
+    {
+      "title": "【保姆级教程】把 AI 融入日常工作，随手做出一个小红书笔记发布工具",
+      "author": "郭晓文",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544522211518158",
+      "direction": "content-agents"
+    },
+    {
+      "title": "一个月跑了 30 万次抓取，我把内容工作室老板的监控 SOP 做成了 SaaS",
+      "author": "实力不允徐先生",
+      "originalUrl": "",
+      "direction": "content-agents"
+    },
+    {
+      "title": "2个月、1000万播放、5万粉丝,分享我用remotion做视频的经验",
+      "author": "奋斗蟹老板",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255248485144522",
+      "direction": "content-agents"
+    },
+    {
+      "title": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上",
+      "author": "Jason、mar",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255284422514122",
+      "direction": "content-agents"
+    },
+    {
+      "title": "视频代码化后，普通人不用费劲学剪辑了",
+      "author": "亦仁的收藏夹",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544582554544548",
+      "direction": "content-agents"
+    },
+    {
+      "title": "小红书篇篇 5 位数阅读！我自研了一套全栈爆款笔记 Skills",
+      "author": "后端小肥肠",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522515185155114",
+      "direction": "content-agents"
+    },
+    {
+      "title": "YouTube长视频月入万刀，油管老兵的复盘分享",
+      "author": "私藏人间",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582822541882",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "AI虚拟IP从0到1：4个月做到千万播放和百条商业合作线索",
+      "author": "柠柠🍋",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582212212112",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "0粉视频号图书带货实测｜第4天：3条视频2.2w播放、90粉、成交2单，完整实操复盘",
+      "author": "小反",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548825518185128",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "视频号AI图书带货项目 两周时间快速跑通0-1 拿到正反馈 （新手小白可复制上手）",
+      "author": "腾飞的鹰",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548881815182188",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "单月40万佣金，视频号AI短剧带货复盘分享",
+      "author": "大臣",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425558511441112",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "航海【AI 视频号图书带货】481W播放，9778GMV，佣金5909+的复盘总结",
+      "author": "！",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521151422881584",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "3个月40万GMV：视频号AI剧情带货实战，与我的Codex提效工作流",
+      "author": "淳于",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82258825548882852",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "视频号12天0粉起号｜单条200w播放、涨粉4000+，却0出单！AI视频号航海新人真实复盘",
+      "author": "Jenny",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255154554581241",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "AI视频号图书带货（二）答疑总结+心法篇：这次聊聊比“怎么做爆款”更重要的事",
+      "author": "泽少",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422825448411242",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "「AI视频号图书带货」航海第一周正反馈：拿到了近100万播放，涨粉3300+，成交49单1500佣金（新人可复制玩法）",
+      "author": "泽少",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422822254251222",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "7天2500万播放，我是如何制作一条高质感AI爆款视频并完成变现",
+      "author": "城",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544211585418858",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "用AI做短视频快速起号涨粉的秘诀：从找对标到成片发布一步步带你拆解",
+      "author": "「见山」",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544211545114888",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "播放量20w成功起号！用Codex＋飞书提效图书带货，批量提取100+图书视频号文案并仿写",
+      "author": "千代🍂",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422181428222242",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "如何用工作流做出4000w播放的海外短剧--tiktok短剧复盘",
+      "author": "老朱",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255441542544551",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "用Codex一个月，日消耗从几百token到10亿Token，我怎么实现了b站带货视的出单",
+      "author": "乔久伴",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522445551128884",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "【万字保姆级干货教程】YouTube “财经人生故事” 赛道制作& 自动化工作流教程 所有提示词全公开！",
+      "author": "栗子Lizi聊AI",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522441881545884",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "生财新人，从0-1跑通抖音自然流CPS，618期间GMV200W",
+      "author": "求其啦",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255445412518841",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "做油管一年，累计 1 万刀、100W 粉：我如何把项目结果变成接单、涨薪和破圈机会",
+      "author": "九月的椰子树",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422142814424552",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "【项目实操】借助Cursor与AI实现YouTube Shorts高效自动化运营流程",
+      "author": "钱塘江鲤",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/4848511125128248",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "【油管直播-完整数据分享】两个0播账号，坚持直播3个月，双双达标YPP",
+      "author": "大盛",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255425818521442",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "用codex做AI图书视频，小白也能跑通的自动化",
+      "author": "舒然",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522414488248154",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "海外AI漫剧首轮回款1万美刀，从 TikTok Drama 入驻、创作、发行投流到回款管理的实战复盘",
+      "author": "饼",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522411558542144",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "从 YouTube 小白到单条视频 1 亿播放，也两次失去 YPP：我做 AI 视频这一年的复盘",
+      "author": "浅夏",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255211151558542",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "我用半个月搭建一套 AI 二创文案系统后，7 天赚到2 万+佣金",
+      "author": "森林",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255211555555141",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "一个月十万佣，抖音最新情感口播自然流实战分享",
+      "author": "金成",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255212115514181",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "YouTube月入万刀、视频号百万GMV，通过AI视频拿到结果的圈友都做对了什么",
+      "author": "Gary曹淦丨AI内容出海🚢",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422412141558582",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "用 Claude Code 67 天做出付费 SaaS：自己跑视频号 + 卖软件，一个人首次月入 10 万",
+      "author": "嘟嘟🇲 🇩",
+      "originalUrl": "",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "加入生财不到一年，我的视频号图书带货23天5万佣金的复盘",
+      "author": "自在",
+      "originalUrl": "",
+      "direction": "video-commerce"
+    },
+    {
+      "title": "中传科班出身，第一条企业AI带货短视频订单喜提亏本，AI真人短视频带货踩坑参考",
+      "author": "nana",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255484152414822",
+      "direction": "video-services"
+    },
+    {
+      "title": "通过3月航海，每天约3小时，我靠AI视频定制做到月收入 5000+ 的项目复盘",
+      "author": "003",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544522454884258",
+      "direction": "video-services"
+    },
+    {
+      "title": "从航海变现700到单月最高变现6000+， AI 小说现在还能做吗，分享我这一年来的实战复盘",
+      "author": "空鸣",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425544828842412",
+      "direction": "writing"
+    },
+    {
+      "title": "航海好事：女生看Cursor航海手册自学编程，25年1月开发AI写作软件，目前GMV2万+",
+      "author": "快乐鸭",
+      "originalUrl": "",
+      "direction": "writing"
+    },
+    {
+      "title": "做流量3年，转型AI写作第一个月利润2W：一个00后流量玩家的踩坑复盘贴",
+      "author": "K",
+      "originalUrl": "",
+      "direction": "writing"
+    },
+    {
+      "title": "从 0 到 1 做出游戏攻略站：两周跑通选词、建站、收录和迭代闭环",
+      "author": "林广恩",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582851424112",
+      "direction": "saas"
+    },
+    {
+      "title": "没有公司，个人开发者怎么全球收款？从 Creem 迁移到 Waffo Pancake 的完整实战",
+      "author": "独孤风",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258824821541451",
+      "direction": "saas"
+    },
+    {
+      "title": "被裁后两个月赚了20万，从一个彻底失败的产品开始",
+      "author": "苍述",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258842114448551",
+      "direction": "saas"
+    },
+    {
+      "title": "20天上线10个热词游戏站，用AI编程赚到第一笔美元",
+      "author": "珂米",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548854528444458",
+      "direction": "saas"
+    },
+    {
+      "title": "不会写代码，怎么做靠 Google 广告赚钱的游戏攻略站？我把整条流水线开源了，从 0 到 1 做出海游戏攻略站。",
+      "author": "袁锐钦",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425544145221552",
+      "direction": "saas"
+    },
+    {
+      "title": "超级术：不会写代码，用AI3小时做出已收款的产品，还带圈友实操",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548881484254858",
+      "direction": "saas"
+    },
+    {
+      "title": "2周变现2万，起因只是为了在交友软件匹配上更多女生，做了个 AI 展示面工具",
+      "author": "洛更",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548858522815158",
+      "direction": "saas"
+    },
+    {
+      "title": "大家都去做海外站和小程序时，我用 AI 做国内 SEO 小站，单站月入 3000-5000",
+      "author": "冬青",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255445842822111",
+      "direction": "saas"
+    },
+    {
+      "title": "【AI网站出海】新手找词指南：从0到1，找到能赚钱的关键词",
+      "author": "Jade",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522458814215454",
+      "direction": "saas"
+    },
+    {
+      "title": "《0编程经验，我如何借助Cursor搭建AI出海工具站赚美金》",
+      "author": "阿西_出海",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/1525824811545212",
+      "direction": "saas"
+    },
+    {
+      "title": "借助GitHub和Cursor，20小时完成海外版情侣聊天记录可视化MVP的实操记录",
+      "author": "Cheer林悦己",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/8858418584254882",
+      "direction": "saas"
+    },
+    {
+      "title": "【生财专属】38岁非技术的前电商运营人，靠vibe coding，从月入3千到变现10W+只用了四个月",
+      "author": "晓海云创",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544248882815888",
+      "direction": "saas"
+    },
+    {
+      "title": "抖音40万粉，B站10万粉，小红书5万粉，网盘拉新四个月变现30万，1.4万字复盘为什么换个平台，我还能做起来，其中有什么底层方法论！",
+      "author": "凌晨",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258815151158451",
+      "direction": "marketing"
+    },
+    {
+      "title": "用Claude Code+生财MCP做“精选副业”种草页，第一个月转化4单",
+      "author": "Jedee",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258815448551881",
+      "direction": "marketing"
+    },
+    {
+      "title": "我让 AI 扫了 22 万条微信消息：找出 30 位高潜客户，还把 3 个多月群聊变成 FAQ（附保姆级教程）",
+      "author": "旋子",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521141854481224",
+      "direction": "marketing"
+    },
+    {
+      "title": "AI 自媒体万粉，2026 年接了 60 个广告，纯广告收益月入过万，我的一人公司内容系统",
+      "author": "竹子。",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521155258121884",
+      "direction": "marketing"
+    },
+    {
+      "title": "AI自媒体从0到1速通：抖音1个月跑通2.5w粉，商单+私域+产品+企业服务如何变现五位数",
+      "author": "nana",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521151452128814",
+      "direction": "marketing"
+    },
+    {
+      "title": "抖音自然流CPS项目及开学季航海作战指南",
+      "author": "海宇",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521152554524254",
+      "direction": "marketing"
+    },
+    {
+      "title": "万字拆解：我是如何帮做AI图片工具的圈友用谷歌广告做到月增500+付费订阅用户",
+      "author": "图帕先生",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255154858488441",
+      "direction": "marketing"
+    },
+    {
+      "title": "用codex做豆包拉新项目太香了！从0到1完整拆解豆包电脑版拉新方法",
+      "author": "盟主君",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544145285812488",
+      "direction": "marketing"
+    },
+    {
+      "title": "数字人获客 & 数字人 IP，本地部署 0 成本的方案",
+      "author": "黄小木",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422825884228252",
+      "direction": "marketing"
+    },
+    {
+      "title": "3000元成本，3个月营收50万：一个同城高客单项目的复盘",
+      "author": "楚中天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255448444224442",
+      "direction": "marketing"
+    },
+    {
+      "title": "澳洲打工度假3个月：我如何从0到6000粉，把经历做成内容资产并变现5W+",
+      "author": "丹",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422115528852812",
+      "direction": "marketing"
+    },
+    {
+      "title": "我用资源库、AI自动化工具、目录映射网站和公域流量，把这个老项目重新做了一遍，打造了不少单日小富翁。",
+      "author": "钟大老弟啊",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255425242528411",
+      "direction": "marketing"
+    },
+    {
+      "title": "深耕小红书电商3年，分享26年小红书电商红利的3个关键词：AI +情绪+矩阵。",
+      "author": "V小刀",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522418842848124",
+      "direction": "marketing"
+    },
+    {
+      "title": "80万业绩就靠AI+公众号垂直小号40天25篇内容",
+      "author": "养恐龙的Alex",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255481224818151",
+      "direction": "marketing"
+    },
+    {
+      "title": "做跨境 5 年年销破亿！分享我眼中TikTok掘金机会 + AI 赋能业务 5 个核心思路",
+      "author": "Trevo",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422481112424552",
+      "direction": "marketing"
+    },
+    {
+      "title": "从 AI 定制变现十几万，到重新回到闲鱼：我如何用 3 个标准筛选一人公司项目",
+      "author": "鸭先知",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544512845228588",
+      "direction": "marketing"
+    },
+    {
+      "title": "无人实体店获客难题,纯免费流年GMV15万,全流程AI自动化复盘",
+      "author": "夏天_Summer",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422441822585822",
+      "direction": "marketing"
+    },
+    {
+      "title": "大众点评0基础AI副业变现教程（全民零基础通用版）",
+      "author": "🍉西瓜不苦",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422451124518422",
+      "direction": "marketing"
+    },
+    {
+      "title": "生财MCP+2句提示词+Codex=一份完整的可交互的知识地图.html",
+      "author": "Cheer林悦己",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582858422442",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "我用生财 MCP 扫完了全站 90 篇 MCP 精华帖：列出来了所有的可能性方向和案例",
+      "author": "啥都懂的小灰",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82258815884852842",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "开源「听生财」：生财长帖变听书连播，Codex 可一键装，你只扫码授权",
+      "author": "dua甲",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582244142112",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "生财MCP是座金矿，我把它塞进了小爱同学",
+      "author": "lighting",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521182242812514",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "【超级标17】付费MCP",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548814458242458",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "把海量项目精华帖做成网站：我用生财 MCP + Codex 跑通了一套项目拆解 SOP",
+      "author": "Jason、mar",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82258881252828412",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "用3份资料跑通 Obsidian + Codex 个人AI知识库（保姆级教程 附全套Prompt）",
+      "author": "Blake Huang",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522448425885184",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "【保姆级教程】把 AI 接入微信：让微信变成你的个人知识库",
+      "author": "苏格",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544211552415428",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "从「读取微信聊天记录」到「用 Codex 把 IMA、Obsidian、飞书串成一条流转的内容系统」保姆级教程",
+      "author": "石更新",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255442154251221",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "心力即 Token：我把创业者的迷茫做成了一个开源 AI 心力教练 Skill，从个人痛点到开源github的完整复盘",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522441821548114",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "我把亦仁发的五篇文章做成了505张AI干货卡片-附codex和chatGPT三小时完成的保姆级教程（所有提示词可复制）",
+      "author": "飞掌柜",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422112582441152",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "我用两条抖音视频，搭出了一个会自我生长的个人知识库入口",
+      "author": "小平子",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544528884452488",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "AI时代学习不用瞎收藏：用AI提炼做事方法和认知思维",
+      "author": "哆元",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422458128244152",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "Hermes Agent保姆级部署教程：从安装到飞书接入+Hermes LLM WIKI+飞书机器人搭建知识库问答全流程",
+      "author": "allen",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255282482881852",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "1 天时间，搭一个 Skill，现在刷短视频=给我的知识银行“存钱”，把短视频/图文自动变成你的知识资产",
+      "author": "Jason、mar",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422454455251152",
+      "direction": "mcp-knowledge"
+    },
+    {
+      "title": "分享我搭建的飞书音视频转录Agent，多平台内容可转干净完整的飞书文档",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522511854582284",
+      "direction": "mcp-knowledge"
+    }
+  ],
+  "prices": [
+    {
+      "object": "标准化知识库",
+      "min": 699,
+      "max": 699,
+      "currency": "未注明",
+      "unit": "份",
+      "nature": "客户收费",
+      "evidence": "699客单价卖了五百多份",
+      "limitation": "原摘录未标明币种；不是本次建议报价",
+      "source": {
+        "title": "如何打造一人公司的商业闭环｜从需求到变现全流程拆解，附采需求的开源工具",
+        "author": "叁斤",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/22258842522188241"
+      }
+    },
+    {
+      "object": "小程序定制",
+      "min": 9000,
+      "max": 9000,
+      "currency": "人民币",
+      "unit": "项目",
+      "nature": "客户收费",
+      "evidence": "报价 9000 元，客户要求 14 天上线，最终 10 天完成交付",
+      "limitation": "单个项目报价；不代表所有小程序报价",
+      "source": {
+        "title": "从没做过小程序，到 9000 元接单 10 天交付客户项目：我是怎么用 AI Coding 跑通闭环的",
+        "author": "allen",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/14425515851255252"
+      }
+    },
+    {
+      "object": "AI 展示面教程",
+      "min": 69,
+      "max": 69,
+      "currency": "人民币",
+      "unit": "教程",
+      "nature": "客户收费",
+      "evidence": "69 元的教程",
+      "limitation": "工具充值价格未披露",
+      "source": {
+        "title": "2周变现2万，起因只是为了在交友软件匹配上更多女生，做了个 AI 展示面工具",
+        "author": "洛更",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/45548858522815158"
+      }
+    },
+    {
+      "object": "代运营服务",
+      "min": 8000,
+      "max": 8000,
+      "currency": "人民币",
+      "unit": "单",
+      "nature": "客户收费",
+      "evidence": "8,000 元代运营单",
+      "limitation": "只披露一单；服务范围未完整披露",
+      "source": {
+        "title": "2周变现2万，起因只是为了在交友软件匹配上更多女生，做了个 AI 展示面工具",
+        "author": "洛更",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/45548858522815158"
+      }
+    },
+    {
+      "object": "小程序定制首单",
+      "min": 1100,
+      "max": 1100,
+      "currency": "人民币",
+      "unit": "首单",
+      "nature": "客户收费",
+      "evidence": "第一单 1100 元是怎么成交和交付的",
+      "limitation": "月到账 11288 元为六个项目合计，不是单价",
+      "source": {
+        "title": "参加一次小程序航海后，我从不会英文、不会编程，到用Codex接定制单，6月到账11288元的项目分享",
+        "author": "路飞",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/14422822844181442"
+      }
+    },
+    {
+      "object": "同城高客单项目意向金",
+      "min": 2000,
+      "max": 2000,
+      "currency": "人民币",
+      "unit": "意向金",
+      "nature": "部分款项",
+      "evidence": "只收2000元意向金",
+      "limitation": "不是完整服务总价；具体赛道未披露",
+      "source": {
+        "title": "3000元成本，3个月营收50万：一个同城高客单项目的复盘",
+        "author": "楚中天",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/82255448444224442"
+      }
+    },
+    {
+      "object": "美业小程序内测",
+      "min": 500,
+      "max": 500,
+      "currency": "人民币",
+      "unit": "店",
+      "nature": "客户收费",
+      "evidence": "10+ 家门店已经按 500 元/店付费参加小程序内测",
+      "limitation": "同一美业项目另有复盘帖子，按帖子分别计数",
+      "source": {
+        "title": "从真实现场到 10+ 家付费内测｜一个行业人跑通 FDE 产品化的完整过程",
+        "author": "李可",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/22255445882452841"
+      }
+    },
+    {
+      "object": "美业小程序正式版",
+      "min": 9800,
+      "max": 9800,
+      "currency": "人民币",
+      "unit": "年",
+      "nature": "预约报价",
+      "evidence": "20+ 家门店预约了年费 9800 元的正式版",
+      "limitation": "仅预约意向，不等于正式版成交或续费",
+      "source": {
+        "title": "从真实现场到 10+ 家付费内测｜一个行业人跑通 FDE 产品化的完整过程",
+        "author": "李可",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/22255445882452841"
+      }
+    },
+    {
+      "object": "企业 AI 培训",
+      "min": 5000,
+      "max": 5000,
+      "currency": "人民币",
+      "unit": "场",
+      "nature": "客户收费",
+      "evidence": "拿到了 5000 元的企业培训订单",
+      "limitation": "单场订单；完整课程范围未披露",
+      "source": {
+        "title": "9 年设计师，裸辞后在生财做了 5 个项目都失败，最后all in AI企业服务做到一场培训 5000元",
+        "author": "石榴爸爸",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/82255425824558812"
+      }
+    },
+    {
+      "object": "品牌 AI 短视频批量需求",
+      "min": 150,
+      "max": 250,
+      "currency": "人民币",
+      "unit": "条",
+      "nature": "需求报价",
+      "evidence": "品牌AI真人带货短视频的需求，报价是150~250元",
+      "limitation": "作者拒绝后续批量订单，不能算作批量成交",
+      "source": {
+        "title": "中传科班出身，第一条企业AI带货短视频订单喜提亏本，AI真人短视频带货踩坑参考",
+        "author": "nana",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/82255484152414822"
+      }
+    },
+    {
+      "object": "1.5 分钟 AI 带货短视频",
+      "min": 250,
+      "max": 250,
+      "currency": "人民币",
+      "unit": "条",
+      "nature": "客户收费",
+      "evidence": "一分半的AI带货短视频，报价250元，我做了两三天",
+      "limitation": "作者称该单亏损；不是推荐价",
+      "source": {
+        "title": "中传科班出身，第一条企业AI带货短视频订单喜提亏本，AI真人短视频带货踩坑参考",
+        "author": "nana",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/82255484152414822"
+      }
+    },
+    {
+      "object": "豆包电脑版有效拉新",
+      "min": 15,
+      "max": 15,
+      "currency": "人民币",
+      "unit": "有效新用户",
+      "nature": "任务佣金",
+      "evidence": "任务口径约为15元/有效新用户",
+      "limitation": "历史任务口径，非客户报价；有效条件和当前政策需另核",
+      "source": {
+        "title": "用codex做豆包拉新项目太香了！从0到1完整拆解豆包电脑版拉新方法",
+        "author": "盟主君",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/45544145285812488"
+      }
+    },
+    {
+      "object": "内容获客所推广的高客单产品",
+      "min": 200000,
+      "max": 800000,
+      "currency": "未注明",
+      "unit": "客单",
+      "nature": "被推广产品价格",
+      "evidence": "客单价20-80万",
+      "limitation": "不是 AI 营销服务收费；原摘录未明示币种",
+      "source": {
+        "title": "80万业绩就靠AI+公众号垂直小号40天25篇内容",
+        "author": "养恐龙的Alex",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/22255481224818151"
+      }
+    },
+    {
+      "object": "数学图解卡片",
+      "min": 39.9,
+      "max": 39.9,
+      "currency": "未注明",
+      "unit": "客单",
+      "nature": "他人产品价格",
+      "evidence": "客单价39.9的数学图解卡片",
+      "limitation": "案例提及的另一博主商品；不是作者商单报价",
+      "source": {
+        "title": "如何用iamge2解决小红书博主数学笔记卡片的商单需求？",
+        "author": "飞掌柜",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/14422122211242212"
+      }
+    },
+    {
+      "object": "作者调研的另一款简历工具",
+      "min": 9.9,
+      "max": 9.9,
+      "currency": "人民币",
+      "unit": "份",
+      "nature": "竞品价格",
+      "evidence": "简历辅助工具，卖 9.9 元一份",
+      "limitation": "作者自己的简历插件收费未确认",
+      "source": {
+        "title": "春招两月盈利 2.8w：我做了一个 AI 简历填表插件，从发现商机到卖出去的完整复盘",
+        "author": "又道天凉好个秋",
+        "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582828221512"
+      }
+    }
+  ]
+}
