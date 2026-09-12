@@ -1311,10 +1311,6 @@
 
   function scysRenderArchive() {
     const resources = communityState.activeView === "resources";
-    document.querySelectorAll('[data-community-section]').forEach(link => {
-      if (link.dataset.communitySection === communityState.activeView) link.setAttribute('aria-current', 'page');
-      else link.removeAttribute('aria-current');
-    });
     const all = communityItems();
     const byId = new Map(all.map((item) => [item.id, item]));
     const monthOf = resources ? (row) => row.owners.map((owner) => scysArchiveMonth(byId.get(owner.itemId) || {})).sort()[0] || "unknown" : scysArchiveMonth;
