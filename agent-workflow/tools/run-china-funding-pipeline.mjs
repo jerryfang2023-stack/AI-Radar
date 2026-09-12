@@ -83,6 +83,9 @@ function main() {
           // The freshly checked-out main wins for shared IDs; the independent intake adds new IDs.
           write(intakeFile, mergeSourceIntakes(accepted, read(intakeFile) || accepted));
           state.reused = true;
+          // Last-good rollback also restores the public locator index. Rebuild it offline.
+          command(["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true"]);
+          command(["agent-workflow/tools/assert-public-evidence-boundary.mjs"]);
           command(["agent-workflow/tools/assert-private-evidence-backup.mjs", `--date=${date}`]);
           write(acceptedFile, selectChinaFundingIntake(accepted, discovery));
         } else {
