@@ -15,6 +15,8 @@ const scrolls = Number(process.env.COMMUNITY_SCROLLS || 1);
 const homeDetailLimit = Number(process.env.COMMUNITY_DETAIL_LIMIT || 6);
 const searchDetailLimit = Number(process.env.COMMUNITY_SEARCH_DETAIL_LIMIT || 1);
 const searchLimit = Number(process.env.COMMUNITY_SEARCH_LIMIT || 8);
+const minimumItems = Number(process.env.COMMUNITY_MIN_ITEMS || 12);
+const minimumLinks = Number(process.env.COMMUNITY_MIN_LINKS || 3);
 
 const sources = {
   scys: {
@@ -45,6 +47,18 @@ function clean(value = "") {
 function compact(value = "", limit = 420) {
   const text = clean(value);
   return text.length > limit ? `${text.slice(0, limit - 1)}…` : text;
+}
+
+export function communityCollectionProblems(payload, { minItems = 12, minLinks = 3 } = {}) {
+  const problems = [];
+  const items = Array.isArray(payload?.items) ? payload.items.length : 0;
+  const links = Array.isArray(payload?.links) ? payload.links.length : 0;
+  const errors = Array.isArray(payload?.meta?.errors) ? payload.meta.errors : [];
+
+  if (errors.length > 0) problems.push(`${errors.length} blocking collector error(s)`);
+  if (items < minItems) problems.push(`${items}/${minItems} required items`);
+  if (links < minLinks) problems.push(`${links}/${minLinks} required links`);
+  return problems;
 }
 
 function idFor(parts) {
@@ -707,6 +721,15 @@ async function main() {
     items: unique,
   };
 
+  const problems = communityCollectionProblems(payload, {
+    minItems: minimumItems,
+    minLinks: minimumLinks,
+  });
+  if (problems.length > 0) {
+    await browser.close();
+    throw new Error(`COMMUNITY_COLLECTION_REJECTED: ${problems.join("; ")}`);
+  }
+
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeSnapshotFiles(payload);
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
@@ -724,7 +747,12 @@ async function main() {
   }, null, 2));
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+const isDirectRun = process.argv[1]
+  && path.resolve(process.argv[1]).toLowerCase() === path.resolve(fileURLToPath(import.meta.url)).toLowerCase();
+
+if (isDirectRun) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
