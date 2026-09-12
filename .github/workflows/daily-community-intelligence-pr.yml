@@ -126,7 +126,7 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          npm run assert:community-intelligence -- --date="${RUN_DATE}" \
+          npm run assert:community-intelligence -- --private-evidence=references --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-community-intelligence-gate.log"
 
       - name: Write community manifest

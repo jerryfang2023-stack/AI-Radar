@@ -3,9 +3,15 @@ import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import crypto from "node:crypto";
+import { extractDocumentLinks, mergeDocumentLinks, retainDocumentLinks, documentRetentionProblems, buildDocumentIndex } from "./community-document-links.mjs";
+import { collectScysMcp } from "./collect-scys-mcp.mjs";
+import { connectScysMcp } from "../../../agent-workflow/tools/lib/scys-mcp-client.mjs";
+import { ingestPrivateEvidenceRecords } from "../../../agent-workflow/tools/lib/private-evidence-backup.mjs";
+import { resolvePrivateEvidenceBackupRoot } from "../../../agent-workflow/tools/private-evidence-backup-paths.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const siteRoot = path.resolve(__dirname, "..");
+const repoRoot = path.resolve(siteRoot, "../..");
 const outputPath = path.join(siteRoot, "data", "community-intelligence.json");
 const snapshotRoot = path.join(siteRoot, "data", "community-intelligence-daily");
 
@@ -87,21 +93,7 @@ function selectSearchKeywords() {
   return Array.from({ length: Math.min(searchLimit, all.length) }, (_, index) => all[(offset + index) % all.length]);
 }
 
-function extractLinks(text = "", anchors = []) {
-  const found = new Map();
-  for (const anchor of anchors || []) {
-    if (!anchor?.href) continue;
-    if (!/feishu|larksuite|docs\.qq|kdocs|yuque/i.test(`${anchor.href} ${anchor.text || ""}`)) continue;
-    found.set(anchor.href, { href: anchor.href, text: clean(anchor.text || "正文链接") });
-  }
-  const urlRegex = /https?:\/\/[^\s"'<>，。）、)]+/gi;
-  for (const match of String(text || "").matchAll(urlRegex)) {
-    const href = match[0].replace(/[.,;:!?]+$/g, "");
-    if (!/feishu|larksuite|docs\.qq|kdocs|yuque/i.test(href)) continue;
-    found.set(href, { href, text: href });
-  }
-  return [...found.values()];
-}
+const extractLinks = extractDocumentLinks;
 
 function inferScene(text = "") {
   const haystack = clean(text);
@@ -311,7 +303,7 @@ function comparePublishedDesc(a, b, baseValue = new Date()) {
   return publishedTimeMs(b, baseValue) - publishedTimeMs(a, baseValue);
 }
 
-function mergeItems(items = []) {
+export function mergeItems(items = []) {
   const groups = [];
   const keyToGroup = new Map();
   for (const item of items) {
@@ -345,7 +337,13 @@ function mergeItems(items = []) {
     }
     base.id = idFor([base.source, preferredUrl, normalizeForDedupe(base.title)]);
     base.url = preferredUrl || canonicalUrl(base) || base.url;
-    base.links = [...linkMap.values()];
+    base.links = mergeDocumentLinks([...linkMap.values()]);
+    base.relatedResources = [...new Map(group.flatMap((item) => item.relatedResources || [])
+      .map((resource) => [`${resource.kind}:${resource.id}`, resource])).values()];
+    const mcp = group.find((item) => item.acquisition === "scys-mcp");
+    if (mcp) {
+      for (const field of ["bodyRef", "acquisition", "entityId", "entityType", "feishuBodyAvailable"]) base[field] = mcp[field];
+    }
     base.tools = uniqByText(group.flatMap((item) => item.tools || []));
     base.painPoints = uniqByText(group.flatMap((item) => item.painPoints || []));
     base.reusableMethod = uniqByText(group.flatMap((item) => item.reusableMethod || []));
@@ -511,7 +509,7 @@ async function enrichWithDetails(page, sourceKey, cards, limit) {
   return enriched;
 }
 
-function normalizeCard(sourceKey, card, job) {
+export function normalizeCard(sourceKey, card, job) {
   const fullText = clean([card.title, card.excerpt, card.rawText, card.detailText].filter(Boolean).join(" "));
   const links = extractLinks(fullText, [...(card.links || []), ...(card.detailLinks || [])]);
   const title = compact(clean(card.title || card.detailTitle || "未命名案例"), 96);
@@ -648,8 +646,13 @@ async function collectJob(context, sourceKey, job) {
 }
 
 async function main() {
-  const browser = await chromium.connectOverCDP(cdpUrl, { timeout: cdpTimeoutMs });
-  const context = browser.contexts()[0] || await browser.newContext();
+  let browser;
+  const getContext = async () => {
+    if (!browser) browser = await chromium.connectOverCDP(cdpUrl, { timeout: cdpTimeoutMs });
+    return browser.contexts()[0] || await browser.newContext();
+  };
+  const previous = JSON.parse(await readFile(outputPath, "utf8").catch(() => '{"items":[]}'));
+  const upgradeOnly = process.argv.includes("--scys-upgrade");
   const selectedKeywords = selectSearchKeywords();
   const jobs = [
     { mode: "home", keyword: "", group: "daily-feed" },
@@ -658,8 +661,44 @@ async function main() {
   const collected = [];
   const errors = [];
   const warnings = [];
+  let scysCoverage;
+  let scysOriginals = [];
+
+  try {
+  let scysCompleted = false;
+  let client;
+  try {
+    client = await connectScysMcp({ root: repoRoot });
+    const result = await collectScysMcp({
+      call: client.call, normalizeCard, jobs, previous: previous.items || [], upgradeOnly,
+      browserDetail: async (url) => {
+        const context = await getContext();
+        const page = await context.newPage();
+        try {
+          await page.goto(url, { waitUntil: "domcontentloaded", timeout: 20000 });
+          return await readDetailFromPage(page, "scys");
+        } finally { await page.close(); }
+      },
+    });
+    if (!result.items.length) throw new Error("SCYS_MCP_EMPTY_COLLECTION");
+    collected.push(...result.items);
+    warnings.push(...result.warnings);
+    scysCoverage = result.coverage;
+    scysOriginals = result.originals;
+    scysCompleted = true;
+  } catch (error) {
+    if (upgradeOnly) throw error;
+    warnings.push({ source: "scys", mode: "mcp-fallback", message: "MCP unavailable; using existing browser collection without reauthentication" });
+  } finally { client?.close(); }
+
+  if (upgradeOnly) {
+    const updatedUrls = new Set(collected.map((item) => item.url));
+    collected.push(...(previous.items || []).filter((item) => !updatedUrls.has(item.url)));
+  }
 
   for (const sourceKey of Object.keys(sources)) {
+    if (upgradeOnly || (sourceKey === "scys" && scysCompleted)) continue;
+    const context = await getContext();
     for (const job of jobs) {
       try {
         const items = await collectJob(context, sourceKey, job);
@@ -675,26 +714,17 @@ async function main() {
     }
   }
 
-  const unique = mergeItems(collected)
+  const unique = retainDocumentLinks(mergeItems(collected), previous.items || [])
     .sort((a, b) => comparePublishedDesc(a, b) || (b.valueScore || 0) - (a.valueScore || 0) || (b.opportunityScore || 0) - (a.opportunityScore || 0));
-  const linkMap = new Map();
-  for (const item of unique) {
-    for (const link of item.links || []) {
-      if (!link?.href || linkMap.has(link.href)) continue;
-      linkMap.set(link.href, {
-        href: link.href,
-        text: clean(link.text || link.href),
-        itemId: item.id,
-        itemTitle: item.title,
-        source: item.source,
-        sourceName: item.sourceName,
-      });
-    }
-  }
-  const links = [...linkMap.values()];
+  const links = buildDocumentIndex(unique);
   const payload = {
     meta: {
       generatedAt: new Date().toISOString(),
+      columnVersion: "CINT-V1.1.0-scys-mcp-feishu",
+      scysCoverage,
+      scysAcquisition: scysCompleted ? "mcp" : "browser",
+      resourceAssociation: "keyword_match_only_not_verified_relationship",
+      ...(upgradeOnly ? { reusedCollectionAt: previous.meta?.generatedAt, upgradeMode: "existing-post-details" } : {}),
       cdpUrl,
       scrolls,
       homeDetailLimit,
@@ -702,11 +732,11 @@ async function main() {
       searchLimit,
       selectedKeywords,
       updateMechanism: {
-        dailyFeed: "每次运行先抓两个社群首页信息流，捕捉当天高频讨论。",
+        dailyFeed: "生财优先通过 MCP 查询最近 24 小时帖子并读取详情；破局沿用浏览器信息流。分页覆盖单独记录。",
         targetedSearch: "再按关键词池轮询搜索行业、场景、工具、机会词，补充垂直案例和历史高价值内容。",
         dedupe: "按原帖 URL 优先去重；没有详情 URL 时按来源 + 规范化标题/正文指纹去重，并合并多个命中关键词。",
         valueScoring: "按资料链接、结果信号、可复用方法、工具/流程密度、痛点/需求信号、商业结果等计算价值分，高价值内容靠前。",
-        login: "复用专用浏览器登录态；登录失效时脚本记录错误，需要重新扫码。",
+        login: "生财复用 Codex OAuth，采集不自动登录；MCP 不可用时回退浏览器。破局复用专用浏览器登录态。",
       },
       errors,
       warnings,
@@ -725,15 +755,17 @@ async function main() {
     minItems: minimumItems,
     minLinks: minimumLinks,
   });
+  problems.push(...documentRetentionProblems(unique, previous.items || []));
   if (problems.length > 0) {
-    await browser.close();
     throw new Error(`COMMUNITY_COLLECTION_REJECTED: ${problems.join("; ")}`);
   }
 
+  if (scysOriginals.length) {
+    ingestPrivateEvidenceRecords({ root: repoRoot, backupRoot: resolvePrivateEvidenceBackupRoot(repoRoot), records: scysOriginals });
+  }
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeSnapshotFiles(payload);
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-  await browser.close();
   console.log(JSON.stringify({
     ok: true,
     outputPath,
@@ -745,6 +777,7 @@ async function main() {
     errors,
     warnings,
   }, null, 2));
+  } finally { await browser?.close(); }
 }
 
 const isDirectRun = process.argv[1]

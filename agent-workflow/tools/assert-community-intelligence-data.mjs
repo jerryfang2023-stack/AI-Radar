@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { sourceTextHash } from "./deepseek-translation-client.mjs";
+import { documentKey, mergeDocumentLinks } from "../../01-SiteV2/site/scripts/community-document-links.mjs";
+import { loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
 
 const root = process.cwd();
 const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
@@ -89,6 +91,8 @@ function main() {
   const date = argValue("date", beijingDate());
   const minItems = Number.parseInt(argValue("min-items", "12"), 10);
   const minLinks = Number.parseInt(argValue("min-links", "3"), 10);
+  const privateEvidenceMode = argValue("private-evidence", "read");
+  if (!["read", "references"].includes(privateEvidenceMode)) throw new Error("Invalid private evidence validation mode");
   const checks = [];
 
   const add = (ok, label, detail = "") => checks.push({ ok, label, detail });
@@ -128,6 +132,21 @@ function main() {
   add(links.length >= minLinks, "deduped links meet minimum", `${links.length}/${minLinks}`);
   add(selectedKeywords.length > 0, "selected keyword rotation is recorded", String(selectedKeywords.length));
   add(errors.length === 0, "collector recorded no blocking errors", errorDetails);
+  if (payload.meta?.scysAcquisition === "mcp") {
+    const indexKeys = new Set(links.map((link) => documentKey(link.href)));
+    const missingResources = items.flatMap((item) => mergeDocumentLinks(item.links || [])
+      .filter((link) => !indexKeys.has(documentKey(link.href))).map(() => item.id));
+    add(missingResources.length === 0, "every document resource remains in the independent link index", missingResources.join(","));
+    const unarchived = items.filter((item) => {
+      if (item.acquisition !== "scys-mcp") return false;
+      if (!/^evidence:\/\/[a-f0-9]{64}$/.test(item.bodyRef || "")) return true;
+      if (privateEvidenceMode === "references") return false;
+      try { return !loadPrivateEvidenceRecord(root, item.bodyRef)?.body; } catch { return true; }
+    });
+    add(unarchived.length === 0, privateEvidenceMode === "read" ? "MCP originals are readable in the local private evidence store" : "MCP private evidence locators are valid (bodies verified locally)", unarchived.map((item) => item.id).join(","));
+    add(items.every((item) => (item.relatedResources || []).every((resource) => resource.association === "keyword_match")),
+      "related resources remain search associations, not factual relationships");
+  }
   const translationErrors = translationProblems(items);
   add(translationErrors.length === 0, "English community content is translated with current-source DeepSeek provenance", translationErrors.slice(0, 10).join("; "));
 
