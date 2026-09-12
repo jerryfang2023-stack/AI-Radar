@@ -386,6 +386,9 @@ const data = {
     totals: pipeline.totals || {},
     days: (pipeline.days || []).slice(0, 7),
     sourceQuality,
+    chinaFunding: readJson("01-SiteV2/site/data/china-funding-health-v1.json", {
+      status: "not_run", date: null, totals: null, sources: [], stages: [],
+    }),
   },
   governance: {
     versions: portfolio.versions,

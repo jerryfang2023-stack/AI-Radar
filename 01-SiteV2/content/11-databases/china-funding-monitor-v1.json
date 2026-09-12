@@ -1,0 +1,17 @@
+{
+  "schema_version": "CHINA-FUNDING-MONITOR-V1.0",
+  "owner": "guanlan-china-funding-monitor",
+  "timeout_ms": 15000,
+  "per_source_limit": 24,
+  "results_per_query": 10,
+  "query_terms": ["(AI OR 人工智能 OR 大模型 OR 智能体) (融资 OR 获投 OR 领投)", "(具身智能 OR 机器人 OR AI芯片 OR 算力 OR AI硬件) (融资 OR 天使轮 OR Pre-A)"],
+  "sources": [
+    {"id":"pedaily","registry_id":"cn-pedaily","name":"投资界","domains":["pedaily.cn"],"entry_urls":["https://m.pedaily.cn/","https://www.pedaily.cn/vcpeevent/"],"enabled":true},
+    {"id":"chinaventure","registry_id":"cn-chinaventure","name":"投中网","domains":["chinaventure.com.cn"],"entry_urls":["https://www.chinaventure.com.cn/"],"enabled":true},
+    {"id":"36kr","registry_id":"cn-36kr-rss","name":"36氪","domains":["36kr.com"],"entry_urls":["https://pitchhub.36kr.com/"],"enabled":true},
+    {"id":"cyzone","registry_id":"cn-cyzone","name":"创业邦","domains":["cyzone.cn"],"entry_urls":["https://www.cyzone.cn/"],"enabled":true},
+    {"id":"cls","registry_id":"cn-cls","name":"财联社／科创板日报","domains":["cls.cn"],"entry_urls":["https://www.cls.cn/"],"enabled":true},
+    {"id":"qbitai","registry_id":"cn-qbitai-rss","name":"量子位","domains":["qbitai.com"],"entry_urls":["https://www.qbitai.com/"],"enabled":true},
+    {"id":"jiqizhixin","registry_id":"cn-jiqizhixin","name":"机器之心","domains":["jiqizhixin.com"],"entry_urls":["https://www.jiqizhixin.com/"],"enabled":true}
+  ]
+}

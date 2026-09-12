@@ -75,9 +75,9 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Source-intake QC Skill | guanlan-daily-monitor-qc v1.3.0 |
 | Skill governance editor | guanlan-skill-editor v2.1.0 |
 | Code and rule auditor | guanlan-code-rule-auditor v1.2.1 |
-| Operations backend version | OPS-V3.6.3-astra-session-isolation |
+| Operations backend version | OPS-V3.7.0-china-funding-quality |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
-| Skill Store version | v2.3.0 Astra execution and cross-platform Skill catalog |
+| Skill Store version | v2.4.0 Astra execution and cross-platform Skill catalog |
 | Git tag | `v4.8.1-research-retirement` |
 | Current entries | Public: independent AI financing site with financing cards and reports. Internal: Data Center, Trend Radar, Opportunity Map, and Dashboard. Retired research/funding/report routes redirect only. |
 
@@ -144,7 +144,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 
 | Scope | Version | Automation status | Source | Outputs |
 |---|---|---|---|---|
-| Operations Backend / 运营大后台 | `OPS-V3.6.3-astra-session-isolation` | Atomic VPS release at `https://www.zkdlj.vip/ops/`; excluded from GitHub Pages | Nginx session gate, V4 quality telemetry, aggregate analytics, persistent community approval, community lifecycle, Mini Program member management and activity scheduling, audited operations, classified source/deployed versions, cross-platform Skill catalog. Successful Mini Program member adjustments close the editor and return to the user list. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, VPS release symlink, version ledger |
+| Operations Backend / 运营大后台 | `OPS-V3.7.0-china-funding-quality` | Atomic VPS release at `https://www.zkdlj.vip/ops/`; excluded from GitHub Pages | Nginx session gate, V4 quality telemetry, aggregate analytics, persistent community approval, community lifecycle, Mini Program member management and activity scheduling, audited operations, classified source/deployed versions, cross-platform Skill catalog. Successful Mini Program member adjustments close the editor and return to the user list. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, VPS release symlink, version ledger |
 | Event Library production | `SITE-V4.6.1-research-retirement` | V4-native structured intake and canonical facts presented through the focused event entrance; FDE / hardware remain thematic projections | `SOURCE-INTAKE-V1`, China-market gate, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, external Guanlan Vault person timelines |
 | Person review | `PERSON-REVIEW-V1.1` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates, First-Line authors, accepted person/account decisions, and accepted funding-founder decisions | 61 public natural-person profiles (31 existing plus 30 reviewed founders), 6 quarantined non-natural accounts, preserved viewpoint and funding-card lineage |

@@ -12,6 +12,7 @@ import {
   sourceIntakePath,
 } from "./lib/source-intake-v1.mjs";
 import { selectImmutableSourceSnapshot } from "./lib/immutable-source-snapshot-v1.mjs";
+import { collectChinaFunding } from "./lib/china-funding-collector.mjs";
 import {
   chinaMarketLaneQueries,
   loadChinaMarketConfig,
@@ -75,7 +76,7 @@ if (args.has("help") || args.has("h")) {
       "  --rss-item-limit-per-source=8",
       "  --rss-max-age-days=30",
       "  --disable-tavily=true",
-      "  --source-only=aihot|keyword|gdelt|rss|funding|china-rss",
+      "  --source-only=aihot|keyword|gdelt|rss|funding|china-rss|china-funding",
       "  --use-source-artifacts=true",
       "  --targeted-source-artifacts=true",
       "  --market-region=CN",
@@ -4720,8 +4721,6 @@ async function collectFundingSources() {
     'AI company "Series B" funding',
     'AI startup funding site:techcrunch.com',
     'AI startup funding site:venturebeat.com',
-    'AI 融资 获投 完成 新一轮',
-    '人工智能 初创公司 融资 投资机构',
   ];
   const rss = await collectRSSFeeds();
   const items = (rss.items || []).filter((item) => fundingPattern.test(`${item.title || ""} ${item.summary || ""}`));
@@ -4796,6 +4795,10 @@ const sourceOnlyCollectors = {
   "china-rss": {
     label: "China market RSS feeds",
     collect: collectChinaRSSFeeds,
+  },
+  "china-funding": {
+    label: "国内融资独立监测",
+    collect: () => collectChinaFunding({ root, date, search: searchLayeredWeb }),
   },
 };
 
