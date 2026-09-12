@@ -69,6 +69,7 @@ try {
   assert.ok((await page.locator('.dc-resource-summary').innerText()).includes('原帖摘要'));
   await page.setViewportSize({width:837,height:791});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  assert.ok(await page.locator('.dc-resource-url').evaluateAll(nodes=>nodes.every(n=>n.getBoundingClientRect().right<=n.closest('article').getBoundingClientRect().right)));
   await page.screenshot({path:path.join(process.env.LOCALAPPDATA,'WaveSight/runtime/community-resource-summary.png'),fullPage:true});
   await page.setViewportSize({width:1280,height:900});
   await page.locator('[data-community-clear]').click();
