@@ -1,6 +1,6 @@
 (function (scope) {
   "use strict";
-  const version = "CINT-V1.2.0-source-subcolumns";
+  const version = "CINT-V1.3.0-independent-pages";
   function key(item) {
     const match = String(item.url || "").match(/articleDetail\/(xq_topic|forum_topic)\/(\d+)/);
     return match ? `${match[1]}:${match[2]}` : `title:${String(item.title || item.id).trim()}`;
@@ -9,7 +9,9 @@
     const day = new Date(`${date}T00:00:00Z`);
     if (!Number.isFinite(day.getTime())) return { start: "", end: "" };
     day.setUTCDate(day.getUTCDate() - (day.getUTCDay() + 6) % 7);
-    return { start: day.toISOString().slice(0, 10), end: date };
+    const start = day.toISOString().slice(0, 10);
+    day.setUTCDate(day.getUTCDate() + 6);
+    return { start, end: day.toISOString().slice(0, 10) };
   }
   function review(item, editorial) {
     const entry = editorial?.reviews?.[key(item)];

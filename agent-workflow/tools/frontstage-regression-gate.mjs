@@ -24,6 +24,8 @@ const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 const frontstageFiles = [
   "01-SiteV2/site/index.html",
   "01-SiteV2/site/data-center.html",
+  "01-SiteV2/site/community-scys.html",
+  "01-SiteV2/site/community-aipoju.html",
   "01-SiteV2/site/trend-radar.html",
   "01-SiteV2/site/v3-data-observation.html",
   "01-SiteV2/site/intelligence-map.html",
@@ -181,12 +183,13 @@ function collectUnifiedNavigationIssues() {
   const issues = [];
   const expectedSidebarLinks = [
     ["data-center.html?view=events", "事件库"],
-    ["data-center.html?view=community", "社群情报"],
+    ["community-scys.html", "生财"],
+    ["community-aipoju.html", "AI 破局"],
     ["data-center.html?view=viewpoints", "一线观点"],
     ["data-center.html?view=index", "实体库"],
     ["trend-radar.html", "变化雷达"],
   ];
-  for (const name of ["data-center.html", "trend-radar.html", "opportunity-map.html"]) {
+  for (const name of ["data-center.html", "community-scys.html", "community-aipoju.html", "trend-radar.html", "opportunity-map.html"]) {
     const file = path.join(siteDir, name);
     const sidebar = read(file).match(/<aside class="dc-sidebar"[\s\S]*?<\/aside>/u)?.[0] || "";
     const links = [...sidebar.matchAll(/<a href="([^"]+)"[^>]*>([^<]+)<\/a>/gu)].map((match) => [match[1], match[2].trim()]);
