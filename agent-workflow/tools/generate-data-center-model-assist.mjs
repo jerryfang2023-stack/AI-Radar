@@ -209,7 +209,8 @@ async function generate(job) {
   const body = String(job.raw.body_clean || "");
   const excerpt = body.slice(0, Number(process.env.MODEL_ASSIST_MAX_SOURCE_CHARS || 16000));
   const result = await deepSeekJsonCompletion({
-    model: deepSeekModels().pro,
+    model: process.env.MODEL_ASSIST_MODEL || deepSeekModels().pro,
+    fallbackModel: process.env.MODEL_ASSIST_MODEL || deepSeekModels().pro,
     messages: [{ role: "user", content: taskPrompt(job, excerpt) }],
     maxTokens: 3000,
     timeoutMs: Number(process.env.MODEL_ASSIST_TIMEOUT_MS || 90000),

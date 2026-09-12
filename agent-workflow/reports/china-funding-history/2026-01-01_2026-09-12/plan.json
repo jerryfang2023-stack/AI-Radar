@@ -1,0 +1,64 @@
+{
+  "schema_version": "CHINA-FUNDING-HISTORY-V1.0",
+  "from": "2026-01-01",
+  "to": "2026-09-12",
+  "collection_date": "2026-09-12",
+  "windows": [
+    {
+      "month": "2026-01",
+      "from": "2026-01-01",
+      "to": "2026-01-31"
+    },
+    {
+      "month": "2026-02",
+      "from": "2026-02-01",
+      "to": "2026-02-28"
+    },
+    {
+      "month": "2026-03",
+      "from": "2026-03-01",
+      "to": "2026-03-31"
+    },
+    {
+      "month": "2026-04",
+      "from": "2026-04-01",
+      "to": "2026-04-30"
+    },
+    {
+      "month": "2026-05",
+      "from": "2026-05-01",
+      "to": "2026-05-31"
+    },
+    {
+      "month": "2026-06",
+      "from": "2026-06-01",
+      "to": "2026-06-30"
+    },
+    {
+      "month": "2026-07",
+      "from": "2026-07-01",
+      "to": "2026-07-31"
+    },
+    {
+      "month": "2026-08",
+      "from": "2026-08-01",
+      "to": "2026-08-31"
+    },
+    {
+      "month": "2026-09",
+      "from": "2026-09-01",
+      "to": "2026-09-12"
+    }
+  ],
+  "query_count": 252,
+  "models": {
+    "orchestration": "gpt-6-astra",
+    "orchestration_scope": "configuration_and_exceptions_only",
+    "orchestration_reasoning": "high",
+    "claim_extraction": "deepseek-v4-flash",
+    "claim_extraction_retry": "deepseek-v4-flash",
+    "translation": "deepseek-v4-flash",
+    "translation_fallback": "deepseek-v4-pro"
+  },
+  "scope_note": "China-market AI financing; publisher origin and search dates are discovery hints only. Original evidence decides factual date and market."
+}

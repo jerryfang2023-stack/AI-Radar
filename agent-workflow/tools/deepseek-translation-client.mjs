@@ -73,6 +73,7 @@ export function parseDeepSeekJson(value = "") {
 export async function deepSeekJsonCompletion({
   messages = [],
   model = deepSeekModels().pro,
+  fallbackModel = deepSeekModels().pro,
   maxTokens = 4096,
   temperature = 0,
   timeoutMs = 60000,
@@ -87,7 +88,7 @@ export async function deepSeekJsonCompletion({
       : [];
     const raw = await deepSeekChatCompletion({
       messages: [...messages, ...retry],
-      model: attempt ? deepSeekModels().pro : model,
+      model: attempt ? fallbackModel : model,
       maxTokens,
       temperature,
       timeoutMs: attempt ? Math.max(timeoutMs, 90000) : timeoutMs,
@@ -105,7 +106,7 @@ export async function deepSeekJsonCompletion({
       return {
         payload,
         provider: "deepseek",
-        model: attempt ? deepSeekModels().pro : model,
+        model: attempt ? fallbackModel : model,
         attempts: attempt + 1,
         generatedAt: new Date().toISOString(),
       };

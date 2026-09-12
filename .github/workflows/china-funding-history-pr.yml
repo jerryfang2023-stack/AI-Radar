@@ -1,0 +1,222 @@
+name: WaveSight China Funding History PR
+run-name: China funding history ${{ inputs.from }}..${{ inputs.to }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: First factual disclosure date to backfill
+        type: string
+        required: true
+        default: "2026-01-01"
+      to:
+        description: Last factual disclosure date to backfill
+        type: string
+        required: true
+        default: "2026-09-12"
+      date:
+        type: string
+        required: false
+      resume_run_id:
+        description: Reuse an accepted private-evidence checkpoint from a failed run
+        type: string
+        required: false
+
+env:
+  HISTORY_FROM: ${{ inputs.from }}
+  HISTORY_TO: ${{ inputs.to }}
+  LANE_DIR: agent-workflow/reports/china-funding-history/${{ inputs.from }}_${{ inputs.to }}
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: china-funding-history-${{ inputs.from }}-${{ inputs.to }}
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      date: ${{ steps.date.outputs.date }}
+    env:
+      TZ: Asia/Shanghai
+      ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
+      EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+      TAVILY_DISABLED: 'true'
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Resolve date
+        id: date
+        env:
+          REQUEST_DATE: ${{ inputs.date }}
+        run: |
+          date="${REQUEST_DATE:-$(TZ=Asia/Shanghai date +%F)}"
+          [[ "$date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
+          CAPTURE_DATE="$date" node --input-type=module -e 'import { historyWindows } from "./agent-workflow/tools/collect-china-funding-history.mjs"; historyWindows(process.env.HISTORY_FROM, process.env.HISTORY_TO, process.env.CAPTURE_DATE);'
+          echo "date=$date" >> "$GITHUB_OUTPUT"
+          echo "RUN_DATE=$date" >> "$GITHUB_ENV"
+      - name: Restore failed run checkpoint without recollection
+        if: inputs.resume_run_id != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RESUME_RUN: ${{ inputs.resume_run_id }}
+        run: |
+          [[ "$RESUME_RUN" =~ ^[0-9]+$ ]]
+          gh run download "$RESUME_RUN" --name "china-funding-checkpoint-$RUN_DATE" --dir "$RUNNER_TEMP/china-funding-checkpoint"
+          mkdir -p "$LANE_DIR"
+          cp -a "$RUNNER_TEMP/china-funding-checkpoint/." "$LANE_DIR/"
+      - name: Collect each domestic publisher independently
+        run: |
+          lane="$LANE_DIR"
+          mkdir -p "$lane"
+          # Discovery is reusable input. Downstream retries must not collect again.
+          if [ ! -f "$lane/china-funding-source-intake-candidates.json" ]; then
+            node agent-workflow/tools/collect-china-funding-history.mjs --date="$RUN_DATE" --from="$HISTORY_FROM" --to="$HISTORY_TO"
+          fi
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: china-funding-discovery-${{ steps.date.outputs.date }}
+          path: ${{ env.LANE_DIR }}/
+          retention-days: 30
+
+  publish:
+    needs: collect
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    # Collection runs concurrently with overseas. Only shared factual publication is serialized.
+    concurrency:
+      group: wavesight-data-center-publication
+      cancel-in-progress: false
+    env:
+      TZ: Asia/Shanghai
+      RUN_DATE: ${{ needs.collect.outputs.date }}
+      GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+      ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
+      EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+      TAVILY_DISABLED: 'true'
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
+      DEEPSEEK_PRO_MODEL: deepseek-v4-pro
+      # User selected Flash for this historical extraction, including retries.
+      MODEL_ASSIST_MODEL: deepseek-v4-flash
+      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ github.workspace }}/../WaveSight-private-evidence
+    steps:
+      - name: Read latest shared baseline after acquiring publication slot
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v7
+        with:
+          name: china-funding-discovery-${{ env.RUN_DATE }}
+          path: ${{ env.LANE_DIR }}/
+      - name: Open authoritative private evidence store
+        env:
+          PRIVATE_EVIDENCE_SSH_KEY: ${{ secrets.PRIVATE_EVIDENCE_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$PRIVATE_EVIDENCE_SSH_KEY"
+          mkdir -p "$HOME/.ssh"
+          printf '%s\n' "$PRIVATE_EVIDENCE_SSH_KEY" > "$HOME/.ssh/china_funding_evidence"
+          chmod 600 "$HOME/.ssh/china_funding_evidence"
+          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/china_funding_evidence -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
+          git clone --depth=1 git@github.com:jerryfang2023-stack/WaveSight-private-evidence.git "$GUANLAN_EVIDENCE_BACKUP_ROOT"
+          echo "GIT_SSH_COMMAND=$GIT_SSH_COMMAND" >> "$GITHUB_ENV"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.name 'github-actions[bot]'
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          npm run assert:private-evidence-remote
+      - name: Capture, accept facts and sync companies products institutions
+        id: pipeline
+        continue-on-error: true
+        run: node agent-workflow/tools/run-china-funding-pipeline.mjs --date="$RUN_DATE" --history-from="$HISTORY_FROM" --history-to="$HISTORY_TO"
+      - name: Persist immutable originals before exposing references
+        id: evidence
+        if: always() && steps.pipeline.outcome != 'skipped'
+        run: |
+          set -euo pipefail
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" add -A
+          if ! git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" diff --cached --quiet; then
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" commit -m "China funding original evidence $RUN_DATE"
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --rebase origin main
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main
+          fi
+          npm run assert:private-evidence-remote
+      - name: Preserve accepted checkpoint
+        if: always() && steps.evidence.outcome == 'success'
+        uses: actions/upload-artifact@v6
+        with:
+          name: china-funding-checkpoint-${{ env.RUN_DATE }}
+          path: ${{ env.LANE_DIR }}/
+          retention-days: 30
+      - name: Retain last-good shared data on a failed domestic stage
+        if: steps.pipeline.outcome == 'failure' && steps.evidence.outcome == 'success'
+        run: |
+          set -euo pipefail
+          cp "$LANE_DIR/health.json" "$RUNNER_TEMP/china-funding-health.json"
+          cp -a "$LANE_DIR" "$RUNNER_TEMP/china-funding-lane"
+          # This clean Actions checkout belongs exclusively to this transaction.
+          git restore --worktree --staged .
+          cp -a "$RUNNER_TEMP/china-funding-lane/." "$LANE_DIR/"
+          cp "$RUNNER_TEMP/china-funding-health.json" 01-SiteV2/site/data/china-funding-history-health-v1.json
+          node agent-workflow/tools/build-ops-console-data.mjs
+      - name: Validate publication boundary
+        if: steps.evidence.outcome == 'success'
+        run: |
+          npm run assert:public-evidence-boundary
+          npm run assert:no-active-v3
+          npm run assert:versions
+      - name: Commit and merge domestic lane only
+        id: merge
+        if: steps.evidence.outcome == 'success'
+        env:
+          PIPELINE_OUTCOME: ${{ steps.pipeline.outcome }}
+        run: |
+          set -euo pipefail
+          branch="automation/china-funding-history-$RUN_DATE-${{ github.run_id }}"
+          git checkout -b "$branch"
+          git add "$LANE_DIR" 01-SiteV2/site/data/china-funding-history-health-v1.json 01-SiteV2/site/data/ops-console.json 01-SiteV2/site/data/ops-console.js
+          if [ "$PIPELINE_OUTCOME" = success ]; then
+            git add 01-SiteV2/content/11-databases 01-SiteV2/content/12-applications/funding-insights 01-SiteV2/site/data
+            git add -u 01-SiteV2/content/01-raw
+          fi
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Persist China funding history $HISTORY_FROM..$HISTORY_TO"
+          git push origin "$branch"
+          printf 'Independent domestic financing discovery, source evidence and governed company/product/institution projections.\n\nPipeline outcome: %s. Failed stages retain last-good shared facts and publish diagnostics only.\n' "$PIPELINE_OUTCOME" > "$RUNNER_TEMP/china-funding-pr.md"
+          pr="$(gh pr create --base main --head "$branch" --title "China funding history $HISTORY_FROM..$HISTORY_TO" --body-file "$RUNNER_TEMP/china-funding-pr.md")"
+          # Synchronous merge: do not release the shared writer slot while a PR is pending.
+          gh pr merge "$pr" --squash --delete-branch
+          test "$(gh pr view "$pr" --json state --jq .state)" = MERGED
+          sha="$(gh pr view "$pr" --json mergeCommit --jq .mergeCommit.oid)"
+          echo "source_sha=$sha" >> "$GITHUB_OUTPUT"
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      - name: Deploy accepted shared projections
+        if: steps.merge.outputs.changed == 'true'
+        run: |
+          gh workflow run github-pages.yml --ref main -f source_sha="${{ steps.merge.outputs.source_sha }}"
+          node agent-workflow/tools/wait-for-pages-deployment.mjs --source-sha="${{ steps.merge.outputs.source_sha }}"
+      - name: Report lane outcome
+        if: always()
+        env:
+          PIPELINE_OUTCOME: ${{ steps.pipeline.outcome }}
+        run: |
+          echo "Domestic pipeline: $PIPELINE_OUTCOME. Funding Portal/VPS, Mini Program and protected OPS publication are completed by Final Closure." >> "$GITHUB_STEP_SUMMARY"
+          test "$PIPELINE_OUTCOME" = success
