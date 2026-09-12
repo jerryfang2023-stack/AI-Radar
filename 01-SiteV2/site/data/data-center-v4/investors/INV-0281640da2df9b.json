@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T02:04:43.021Z",
+    "generatedAt": "2026-09-12T02:21:44.449Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 2847,
@@ -21,7 +21,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -31,7 +31,6 @@
     "first_disclosed_at": "2026-07-30",
     "latest_disclosed_at": "2026-07-30",
     "role_counts": {
-      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -46,10 +45,10 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-a74c85652d14785a",
-        "funding_insight_id": "FI-44a0ed771254c7a5",
+        "activity_id": "IA-e79d5e68499f3d61",
+        "funding_insight_id": "FI-57f8607e9a2111db",
         "event_ids": [
-          "EV-2b7cd7f83532bf9f"
+          "EV-cf9e968f38db7796"
         ],
         "company_entity_id": "EN-b3c628b196bfbbe9",
         "company_canonical_entity_id": "",
@@ -57,15 +56,15 @@
         "round": "A轮",
         "round_code": "series_a",
         "round_original": "A轮",
-        "amount_original": "200亿美元",
+        "amount_original": "超亿元",
         "amount_normalized": {
-          "currency": "USD",
-          "value": 20000000000,
-          "min_value": null,
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "200 亿美元"
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
         },
         "announced_at": "2026-07-30",
         "market_region": "CN",
@@ -76,72 +75,24 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-670fa60bc416faee",
-            "source_url": "https://www.jur.com.cn/chanjing/202607/286276.html",
-            "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
-            "source_content_hash": "a6a314d300d87f38",
-            "quote": "由阿里云领投，老股东红杉中国、元璟资本超额跟投",
-            "quote_hash": "7827e539bbd9971aa9d8ea5e2cf27a09b81b10097608559b8702ccaa09d7ab6b"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-ffe659171dd2fd69",
-        "funding_insight_id": "FI-44a0ed771254c7a5",
-        "event_ids": [
-          "EV-2b7cd7f83532bf9f"
-        ],
-        "company_entity_id": "EN-b3c628b196bfbbe9",
-        "company_canonical_entity_id": "",
-        "company_name": "贝联珠贯科技（浙江）有限公司",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount_original": "200亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 20000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "200 亿美元"
-        },
-        "announced_at": "2026-07-30",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-670fa60bc416faee",
-            "source_url": "https://www.jur.com.cn/chanjing/202607/286276.html",
-            "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
-            "source_content_hash": "a6a314d300d87f38",
-            "quote": "本轮融资阵容强大，由阿里云领投，老股东红杉中国、元璟资本超额跟投。",
-            "quote_hash": "92b82ab97f4423f59d22f7144595a6bdd86d6437753828b43c37f7549917be41"
+            "source_id": "FISRC-66fcc0a528f97b62",
+            "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
+            "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
+            "source_content_hash": "c58547114571e365",
+            "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+            "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-670fa60bc416faee",
-        "source_url": "https://www.jur.com.cn/chanjing/202607/286276.html",
-        "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
-        "source_content_hash": "a6a314d300d87f38",
-        "quote": "由阿里云领投，老股东红杉中国、元璟资本超额跟投",
-        "quote_hash": "7827e539bbd9971aa9d8ea5e2cf27a09b81b10097608559b8702ccaa09d7ab6b"
-      },
-      {
-        "source_id": "FISRC-670fa60bc416faee",
-        "source_url": "https://www.jur.com.cn/chanjing/202607/286276.html",
-        "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
-        "source_content_hash": "a6a314d300d87f38",
-        "quote": "本轮融资阵容强大，由阿里云领投，老股东红杉中国、元璟资本超额跟投。",
-        "quote_hash": "92b82ab97f4423f59d22f7144595a6bdd86d6437753828b43c37f7549917be41"
+        "source_id": "FISRC-66fcc0a528f97b62",
+        "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
+        "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
+        "source_content_hash": "c58547114571e365",
+        "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+        "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
       }
     ]
   }

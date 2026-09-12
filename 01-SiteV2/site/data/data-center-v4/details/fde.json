@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T02:04:43.021Z",
+    "generatedAt": "2026-09-12T02:21:44.449Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 2847,
@@ -18300,10 +18300,135 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-987cb2e5e20f79ce",
+      "id": "EV-88f346991085a2f3",
       "dataDate": "2026-09-12",
       "date": "2026-08-25",
       "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+      "originalTitle": "",
+      "subject": "小鹏机器人业务首轮",
+      "action": "融资",
+      "object": "超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+      "metrics": [
+        "9亿",
+        "63亿"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9a970ad7900121db",
+        "EN-6162efd3ae5eaf85",
+        "EN-9c8ae69b84f21a2e",
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "小鹏机器人业务首轮",
+        "XPeng",
+        "Tencent",
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://xiaopeng.com/news/company_news/5585.html",
+      "publisher": "xiaopeng.com"
+    },
+    {
+      "id": "EV-987cb2e5e20f79ce",
+      "dataDate": "2026-09-09",
+      "date": "2026-08-25",
+      "updatedDate": "2026-09-09",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -38722,7 +38847,7 @@
       "publisher": "TechCrunch：AI（RSS）"
     },
     {
-      "id": "EV-2b7cd7f83532bf9f",
+      "id": "EV-cf9e968f38db7796",
       "dataDate": "2026-09-12",
       "date": "2026-07-30",
       "updatedDate": "2026-09-12",
@@ -38738,7 +38863,7 @@
       "action": "融资",
       "object": "，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
       "metrics": [
-        "200亿"
+        "超亿元"
       ],
       "locations": [],
       "marketScope": {
@@ -38750,9 +38875,9 @@
         "source_registry_ids": [],
         "claim_refs": [
           "CL-de10b8c803f82bc0",
-          "CL-40849e5ff41bb0f0",
           "CL-b360c04c96f7c0b9",
-          "CL-78c5a13dd6b249bd"
+          "CL-78c5a13dd6b249bd",
+          "CL-1da9c6e25dd1260c"
         ]
       },
       "missingFields": [],
@@ -38769,8 +38894,8 @@
               "EN-b3c628b196bfbbe9"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-df4d45ca7d007482",
-            "fundingInsightId": "FI-1bd252ee0534599c"
+            "reviewRef": "REC-d072670bd19d6a92",
+            "fundingInsightId": "FI-3a114e137dbb0de3"
           }
         ],
         "ai_market_subcategory": [
@@ -38783,8 +38908,8 @@
               "EN-b3c628b196bfbbe9"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-409f92abe3d21f8a",
-            "fundingInsightId": "FI-1bd252ee0534599c"
+            "reviewRef": "REC-d7d9e615cde958a9",
+            "fundingInsightId": "FI-3a114e137dbb0de3"
           }
         ],
         "ai_market_application": [],
@@ -38798,8 +38923,8 @@
               "EN-b3c628b196bfbbe9"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-85b31c7c613c968d",
-            "fundingInsightId": "FI-1bd252ee0534599c"
+            "reviewRef": "REC-783f6d6311e12af2",
+            "fundingInsightId": "FI-3a114e137dbb0de3"
           }
         ],
         "use_case": [
@@ -38812,36 +38937,11 @@
               "EN-b3c628b196bfbbe9"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-ccc1bafa79ebf45e",
-            "fundingInsightId": "FI-1bd252ee0534599c"
+            "reviewRef": "REC-52a022d26cb7a7bc",
+            "fundingInsightId": "FI-3a114e137dbb0de3"
           }
         ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "automotive_transportation",
-            "name": "汽车与交通",
-            "entityIds": [
-              "EN-b3c628b196bfbbe9"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-7fa45ce06fe58ae7",
-            "fundingInsightId": "FI-1bd252ee0534599c"
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "financial_services",
-            "name": "金融服务",
-            "entityIds": [
-              "EN-b3c628b196bfbbe9"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-af02136b4606f018",
-            "fundingInsightId": "FI-1bd252ee0534599c"
-          }
-        ],
+        "industry": [],
         "deployment_model": [],
         "target_user": [
           {
@@ -38853,8 +38953,8 @@
               "EN-b3c628b196bfbbe9"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-ba96b2efc6dccc4d",
-            "fundingInsightId": "FI-1bd252ee0534599c"
+            "reviewRef": "REC-b8068fbdbbd3bc4d",
+            "fundingInsightId": "FI-3a114e137dbb0de3"
           }
         ]
       },
@@ -38868,8 +38968,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-df4d45ca7d007482",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-d072670bd19d6a92",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         },
         {
           "dimensionId": "ai_market_subcategory",
@@ -38880,32 +38980,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-409f92abe3d21f8a",
-          "fundingInsightId": "FI-1bd252ee0534599c"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "automotive_transportation",
-          "name": "汽车与交通",
-          "entityIds": [
-            "EN-b3c628b196bfbbe9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-7fa45ce06fe58ae7",
-          "fundingInsightId": "FI-1bd252ee0534599c"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-b3c628b196bfbbe9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-af02136b4606f018",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-d7d9e615cde958a9",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         },
         {
           "dimensionId": "product_form",
@@ -38916,8 +38992,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-85b31c7c613c968d",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-783f6d6311e12af2",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         },
         {
           "dimensionId": "target_user",
@@ -38928,8 +39004,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-ba96b2efc6dccc4d",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-b8068fbdbbd3bc4d",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         },
         {
           "dimensionId": "use_case",
@@ -38940,8 +39016,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-ccc1bafa79ebf45e",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-52a022d26cb7a7bc",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         }
       ],
       "displayTags": [
@@ -38954,8 +39030,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-df4d45ca7d007482",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-d072670bd19d6a92",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         },
         {
           "dimensionId": "ai_market_subcategory",
@@ -38966,8 +39042,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-409f92abe3d21f8a",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-d7d9e615cde958a9",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         },
         {
           "dimensionId": "product_form",
@@ -38978,8 +39054,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-85b31c7c613c968d",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-783f6d6311e12af2",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         },
         {
           "dimensionId": "use_case",
@@ -38990,32 +39066,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-ccc1bafa79ebf45e",
-          "fundingInsightId": "FI-1bd252ee0534599c"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "automotive_transportation",
-          "name": "汽车与交通",
-          "entityIds": [
-            "EN-b3c628b196bfbbe9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-7fa45ce06fe58ae7",
-          "fundingInsightId": "FI-1bd252ee0534599c"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-b3c628b196bfbbe9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-af02136b4606f018",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-52a022d26cb7a7bc",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         },
         {
           "dimensionId": "target_user",
@@ -39026,8 +39078,8 @@
             "EN-b3c628b196bfbbe9"
           ],
           "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-ba96b2efc6dccc4d",
-          "fundingInsightId": "FI-1bd252ee0534599c"
+          "reviewRef": "REC-b8068fbdbbd3bc4d",
+          "fundingInsightId": "FI-3a114e137dbb0de3"
         }
       ],
       "entityIds": [
@@ -43109,120 +43161,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/981/121.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-2d153e010b4cb117",
-      "dataDate": "2026-09-12",
-      "date": "2026-07-23",
-      "updatedDate": "2026-09-12",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "京铭资本投资首形科技新一轮数亿元融资，布局超仿生情感交互机器人赛道",
-      "originalTitle": "",
-      "subject": "京铭资本投资首形科技新一轮数亿元",
-      "action": "融资",
-      "object": "，布局超仿生情感交互机器人赛道",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [
-              "EN-fd09d6715296909b"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-fd09d6715296909b"
-      ],
-      "entityNames": [
-        "京铭资本投资首形科技新一轮数亿元"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://stcn.com/article/detail/4036800.html",
-      "publisher": "stcn.com"
     },
     {
       "id": "EV-bffc68e7bb4d598b",

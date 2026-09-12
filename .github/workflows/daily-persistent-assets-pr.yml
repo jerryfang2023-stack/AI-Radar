@@ -23,7 +23,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: wavesight-business-signals-${{ github.event.inputs.date || github.ref_name }}
+  group: wavesight-data-center-publication
   cancel-in-progress: false
 
 jobs:

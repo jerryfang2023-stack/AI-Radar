@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T02:04:43.021Z",
+    "generatedAt": "2026-09-12T02:21:44.449Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 2847,
@@ -26,6 +26,7 @@
     "eventIds": [
       "EV-a2f902b9707ffd02",
       "EV-93c2515d50157281",
+      "EV-88f346991085a2f3",
       "EV-987cb2e5e20f79ce",
       "EV-00514c4ffc2e3cd3",
       "EV-d3054a8a2b62a503",
@@ -96,6 +97,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-88f346991085a2f3",
         "EV-987cb2e5e20f79ce",
         "EV-2f0f3200b9800877",
         "EV-a2f902b9707ffd02",
@@ -157,8 +159,79 @@
     },
     "timeline": [
       {
-        "id": "EV-987cb2e5e20f79ce",
+        "id": "EV-88f346991085a2f3",
         "dataDate": "2026-09-12",
+        "date": "2026-08-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9a970ad7900121db",
+          "EN-6162efd3ae5eaf85",
+          "EN-9c8ae69b84f21a2e",
+          "EN-047364b9be67f665"
+        ]
+      },
+      {
+        "id": "EV-ec55003461ff34b0",
+        "dataDate": "2026-09-11",
+        "date": "2026-09-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "研判2026！中国AI AGENT（人工智能体）行业核心特征、产业链",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3f726694f178ed7a",
+          "EN-28be1fc3808080ef",
+          "EN-4dbe391b8fcf977a",
+          "EN-047364b9be67f665",
+          "EN-9c8ae69b84f21a2e",
+          "EN-da6ed1e6ee3b0489"
+        ]
+      },
+      {
+        "id": "EV-987cb2e5e20f79ce",
+        "dataDate": "2026-09-09",
         "date": "2026-08-25",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -244,36 +317,6 @@
           "EN-9a970ad7900121db",
           "EN-9c8ae69b84f21a2e",
           "EN-047364b9be67f665"
-        ]
-      },
-      {
-        "id": "EV-ec55003461ff34b0",
-        "dataDate": "2026-09-11",
-        "date": "2026-09-11",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "研判2026！中国AI AGENT（人工智能体）行业核心特征、产业链",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-3f726694f178ed7a",
-          "EN-28be1fc3808080ef",
-          "EN-4dbe391b8fcf977a",
-          "EN-047364b9be67f665",
-          "EN-9c8ae69b84f21a2e",
-          "EN-da6ed1e6ee3b0489"
         ]
       },
       {

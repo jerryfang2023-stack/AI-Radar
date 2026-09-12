@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-10T02:11:39.421Z",
+    "generated_at": "2026-09-12T02:20:56.737Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 312,
-    "input_hash": "733bbbc78684953f",
+    "decision_count": 314,
+    "input_hash": "4391e42f0169b56a",
     "override_count": 17,
-    "needs_review_count": 9,
-    "low_confidence_count": 16
+    "needs_review_count": 10,
+    "low_confidence_count": 17
   },
   "decisions": [
     {
@@ -6179,6 +6179,42 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Devin和Windsurf直接面向开发者完成编码、调试、漏洞排查等软件工程任务，属于跨行业的软件开发编码企业应用，而非基础设施或物理AI。"
+    },
+    {
+      "event_id": "EV-7532c5a950295e97",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司专注AI驱动新药研发，产品围绕制药行业的专业数据与研发流程构建，属于行业应用而非通用基础设施或跨行业企业应用。"
+    },
+    {
+      "event_id": "EV-cf9e968f38db7796",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示核心产品SREAgent是面向运维领域的垂直AI Agent，属于跨行业的IT运维工作流，而非单一行业专属数据或物理AI，因此归入企业应用的生产力/企业工作流。但证据未明确客户行业，且运维也可视为开发者工具，边界存在不确定性。"
     }
   ],
   "inputs": [
@@ -6321,6 +6357,64 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-cf9e968f38db7796",
+      "funding_insight_id": "FI-3a114e137dbb0de3",
+      "company_name": "贝联珠贯科技（浙江）有限公司",
+      "company_full_name": "贝联珠贯科技（浙江）有限公司",
+      "website": "",
+      "current_sector": "AI运维",
+      "company_evidence_quotes": [
+        "贝联珠贯是一家典型的AI Native的运维服务公司，核心产品SREAgent是以大模型+Agent+数据为基础的运维领域垂直AI Agent",
+        "一家名为贝联珠贯科技（浙江）有限公司的企业正崭露头角"
+      ],
+      "products": [
+        {
+          "name": "SREAgent",
+          "evidence_quotes": [
+            "核心产品SREAgent是以大模型+Agent+数据为基础的运维领域垂直AI Agent，致力于为客户提供“L4”级的智能运维服务",
+            "SREAgent可以被看作一支7*24小时坚守岗位的资深运维专家团队，可以分析过去、关注当前、预测未来"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-7532c5a950295e97",
+      "funding_insight_id": "FI-446942ef720229aa",
+      "company_name": "德睿智药（MindRank）",
+      "company_full_name": "德睿智药（MindRank）",
+      "website": "https://www.mindrank.ai/",
+      "current_sector": "AI制药",
+      "company_evidence_quotes": [
+        "专注于AI驱动新药研发的科技公司——德睿智药（MindRank）",
+        "中国杭州， 2026 年 7 月 8 日 ，专注于 AI 驱动新药研发的科技公司——德睿智药（ MindRank ）"
+      ],
+      "products": [
+        {
+          "name": "MAP（Molecule Arts Platform）",
+          "evidence_quotes": [
+            "公司自研全链路AI制药引擎MAP（Molecule Arts Platform）的深度技术迭代，持续完善其业内领先的多智能体（Multi-Agent）协同体系与临床数据闭环（Clinical Data-in-the-Loop）",
+            "Molecule Arts Platform（下称“MAP”）平台共分为3层架构：第一层是AI设计层，整合了公司自研的PharmkGPT生物学平台、Molecule Pro小分子制药平台和Molecule Dance结构生物学平台"
+          ]
+        },
+        {
+          "name": "MDR-001",
+          "evidence_quotes": [
+            "公司首发管线——口服GLP-1RA小分子创新药MDR-001，已于2025年正式进入Ⅲ期临床研究，为中国首个推进至Ⅲ期临床阶段的AI赋能一类创新药"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {

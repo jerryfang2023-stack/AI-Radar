@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T02:04:43.021Z",
+    "generatedAt": "2026-09-12T02:21:44.449Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 2847,
@@ -19,9 +19,9 @@
     "valueId": "embodied_ai",
     "eventIds": [
       "EV-d9e018b58da30912",
+      "EV-88f346991085a2f3",
       "EV-987cb2e5e20f79ce",
       "EV-1765fd690cff1cac",
-      "EV-2d153e010b4cb117",
       "EV-fcf3c464260b6730",
       "EV-6ca567f6e80c36c5",
       "EV-ee38c30c00b2a754",
@@ -76,7 +76,6 @@
       "EN-187bf23c29af5e43",
       "EN-9a970ad7900121db",
       "EN-2505fe8a9e908e04",
-      "EN-fd09d6715296909b",
       "EN-7ef08ef63597d47c",
       "EN-bbc41366a5a7cf78",
       "EN-2b60b46911fc1640",
@@ -215,10 +214,135 @@
       "publisher": "c.m.163.com"
     },
     {
-      "id": "EV-987cb2e5e20f79ce",
+      "id": "EV-88f346991085a2f3",
       "dataDate": "2026-09-12",
       "date": "2026-08-25",
       "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+      "originalTitle": "",
+      "subject": "小鹏机器人业务首轮",
+      "action": "融资",
+      "object": "超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+      "metrics": [
+        "9亿",
+        "63亿"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-9a970ad7900121db"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9a970ad7900121db",
+        "EN-6162efd3ae5eaf85",
+        "EN-9c8ae69b84f21a2e",
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "小鹏机器人业务首轮",
+        "XPeng",
+        "Tencent",
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://xiaopeng.com/news/company_news/5585.html",
+      "publisher": "xiaopeng.com"
+    },
+    {
+      "id": "EV-987cb2e5e20f79ce",
+      "dataDate": "2026-09-09",
+      "date": "2026-08-25",
+      "updatedDate": "2026-09-09",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -925,120 +1049,6 @@
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/08/472060.html",
       "publisher": "量子位"
-    },
-    {
-      "id": "EV-2d153e010b4cb117",
-      "dataDate": "2026-09-12",
-      "date": "2026-07-23",
-      "updatedDate": "2026-09-12",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "京铭资本投资首形科技新一轮数亿元融资，布局超仿生情感交互机器人赛道",
-      "originalTitle": "",
-      "subject": "京铭资本投资首形科技新一轮数亿元",
-      "action": "融资",
-      "object": "，布局超仿生情感交互机器人赛道",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [
-              "EN-fd09d6715296909b"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-fd09d6715296909b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-fd09d6715296909b"
-      ],
-      "entityNames": [
-        "京铭资本投资首形科技新一轮数亿元"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://stcn.com/article/detail/4036800.html",
-      "publisher": "stcn.com"
     },
     {
       "id": "EV-fcf3c464260b6730",
@@ -10834,6 +10844,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-88f346991085a2f3",
         "EV-987cb2e5e20f79ce"
       ],
       "viewpointIds": [],
@@ -10878,28 +10889,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-08-13",
       "lastSeen": "2026-08-14"
-    },
-    {
-      "id": "EN-fd09d6715296909b",
-      "name": "京铭资本投资首形科技新一轮数亿元",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-2d153e010b4cb117"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-use_case-physical_automation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-23",
-      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-7ef08ef63597d47c",

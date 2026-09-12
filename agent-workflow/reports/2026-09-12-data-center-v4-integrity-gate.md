@@ -1,11 +1,11 @@
 # Data Center V4 Integrity Gate — 2026-09-12
 
 - status: passed
-- canonical_events: 35
-- claims: 77
-- tag_assertions: 12
-- facet_assertions: 13
-- reviewed_event_classifications: 34
+- canonical_events: 34
+- claims: 71
+- tag_assertions: 11
+- facet_assertions: 9
+- reviewed_event_classifications: 0
 - fde_records: 1
 - fde_observations: 1
 - hardware_records: 0

@@ -191,6 +191,42 @@ test("canonical funding amount repairs a truncated K metric from the complete ev
   assert.equal(canonicalFundingEventAmount({ metrics: ["$800K", "$800,000"] }), "$800K");
 });
 
+test("an implicit Chinese lower bound wins over an unrelated nearby financing teaser", () => {
+  const claims = [
+    {
+      claim_id: "CL-BEILIAN",
+      claim_type: "funding",
+      verification_status: "accepted",
+      source_quote: "近日，贝联珠贯完成超亿元A轮融资。",
+    },
+    {
+      claim_id: "CL-UNRELATED",
+      claim_type: "funding",
+      verification_status: "accepted",
+      source_quote: "Millennium Management拟创纪录募资200亿美元。",
+    },
+  ];
+  const event = {
+    claim_refs: claims.map((claim) => claim.claim_id),
+    display_title_zh: "贝联珠贯完成超亿元A轮融资",
+    metrics: ["超亿元", "200亿美元"],
+  };
+
+  assert.equal(canonicalFundingEventAmount(event, claims), "超亿元");
+  assert.deepEqual(normalizeFundingAmount("超亿元"), {
+    currency: "CNY",
+    value: 100000000,
+    min_value: 100000000,
+    max_value: null,
+    unit: "base",
+    status: "lower_bound",
+    display_zh: "超过 1 亿元",
+  });
+  const payload = { financing: { amount: "200亿美元", evidence_refs: [] } };
+  ensureCanonicalFundingEvidence(payload, { claims }, event, []);
+  assert.equal(payload.financing.amount, "超亿元");
+});
+
 test("withdrawn financing fails eligibility and persisted-card consistency", () => {
   const card = { company: { entity_id: "EN-listen", name: "Listen Labs" }, financing: { amount: "$1.5B" } };
   const base = { event_id: "EV-withdrawn", event_type: "funding", event_status: "announced",

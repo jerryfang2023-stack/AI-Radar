@@ -890,7 +890,16 @@ async function main() {
     .replace(/\bbillions?\b/gu, "b")
     .replace(/[\s,]/gu, "");
   const existingByEvent = new Map((existing.cards || [])
-    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview))
+    .map((card) => {
+      const repaired = structuredClone(card);
+      ensureCanonicalFundingEvidence(
+        repaired,
+        bundle,
+        eventById.get(repaired.triggered_by_event_id),
+        [],
+      );
+      return normalizeFundingInsightCard(repaired, entityIndex, entityDecisions, companyIdentityReview);
+    })
     .filter((card) => fundingInsightProblems(card).length === 0)
     .filter((card) => (card.research_sources || []).some((source) => source.source_class === "canonical_event_source"))
     .filter((card) => {
@@ -909,7 +918,16 @@ async function main() {
     ).length === 0)
     .map((card) => [card.triggered_by_event_id, card]));
   const recoveredCards = recoveryCardsFromGit(recoverFromGitRef, output)
-    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview))
+    .map((card) => {
+      const repaired = structuredClone(card);
+      ensureCanonicalFundingEvidence(
+        repaired,
+        bundle,
+        eventById.get(repaired.triggered_by_event_id),
+        [],
+      );
+      return normalizeFundingInsightCard(repaired, entityIndex, entityDecisions, companyIdentityReview);
+    })
     .filter((card) => fundingInsightProblems(card).length === 0)
     .filter((card) => fundingEventCardConsistencyProblems(
       card,

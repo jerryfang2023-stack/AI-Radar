@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 966,
+    "candidate_count": 967,
     "product_candidates": 451,
-    "person_candidates": 515,
-    "china_market_candidates": 125,
+    "person_candidates": 516,
+    "china_market_candidates": 126,
     "china_market_product_candidates": 77,
-    "china_market_person_candidates": 48,
+    "china_market_person_candidates": 49,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -14643,6 +14643,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-52d5377e8adf1ee6",
+      "candidate_kind": "person",
+      "research_name": "毕玄（林昊）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-b3c628b196bfbbe9"
+      ],
+      "funding_insight_ids": [
+        "FI-3a114e137dbb0de3"
+      ],
+      "source_event_ids": [
+        "EV-cf9e968f38db7796"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-66fcc0a528f97b62",
+          "quote": "贝联珠贯创始人毕玄（林昊）表示",
+          "source_content_hash": "c58547114571e365",
+          "quote_hash": "cb9fae8a1e368ef0b07da2863a428668f74e79eaac8af713f5b03c4b1fa615b4"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-ec276f34125b9ebb",
       "candidate_kind": "person",
       "research_name": "牛张明",
@@ -26323,17 +26351,23 @@
         "EN-b3c628b196bfbbe9"
       ],
       "funding_insight_ids": [
-        "FI-1bd252ee0534599c"
+        "FI-3a114e137dbb0de3"
       ],
       "source_event_ids": [
-        "EV-2b7cd7f83532bf9f"
+        "EV-cf9e968f38db7796"
       ],
       "evidence_refs": [
         {
-          "source_id": "FISRC-670fa60bc416faee",
-          "quote": "贝联珠贯的核心产品SREAgent是其技术实力的集中体现。它以大模型、Agent和数据为基础，构建了运维领域的垂直AI Agent。",
-          "source_content_hash": "a6a314d300d87f38",
-          "quote_hash": "3fa9730a6efdb3b19969e54531ac4e3c3b0183ab62fda1d546c13d19ab5b5b82"
+          "source_id": "FISRC-66fcc0a528f97b62",
+          "quote": "核心产品SREAgent是以大模型+Agent+数据为基础的运维领域垂直AI Agent，致力于为客户提供“L4”级的智能运维服务",
+          "source_content_hash": "c58547114571e365",
+          "quote_hash": "5bbf57d872b1e88b2cc73ed49557f3d08be62c31b6eaf9c8a2cf0f93a40daa08"
+        },
+        {
+          "source_id": "FISRC-66fcc0a528f97b62",
+          "quote": "SREAgent可以被看作一支7*24小时坚守岗位的资深运维专家团队，可以分析过去、关注当前、预测未来",
+          "source_content_hash": "c58547114571e365",
+          "quote_hash": "4b10414e8163c411b8f81b027c7b97be7aa422e48a01a914b07413dee819a370"
         }
       ],
       "market_regions": [
