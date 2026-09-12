@@ -4,11 +4,19 @@ import fs from "node:fs";
 import path from "node:path";
 import { collectChinaFunding, normalizeChinaFundingLead, articleUrl } from "../lib/china-funding-collector.mjs";
 import { buildChinaFundingHealth } from "../lib/china-funding-health.mjs";
-import { chinaFundingPlan } from "../run-china-funding-pipeline.mjs";
+import { chinaFundingPlan, selectChinaFundingIntake } from "../run-china-funding-pipeline.mjs";
 import { mergeSourceIntakes } from "../lib/source-intake-v1.mjs";
 
 const root = process.cwd();
 const config = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/china-funding-monitor-v1.json"), "utf8"));
+test("intake checkpoint uses the actual intake contract without bundle-only body_length", () => {
+  const source = { source_artifact_id: "SA1", source_url: "https://m.pedaily.cn/first/123456.shtml" };
+  const raw = { raw_id: "RAW1", source_artifact_id: "SA1", extraction_status: "accepted", body_ref: "evidence://abc" };
+  const intake = { schema_version: "SOURCE-INTAKE-V1.1", data_date: "2026-09-12", source_artifacts: [source], raw_documents: [raw] };
+  const discovery = { items: [{ url: source.source_url }] };
+  assert.equal(selectChinaFundingIntake(intake, discovery).raw_documents.length, 1);
+  assert.throws(() => selectChinaFundingIntake({ ...intake, raw_documents: [{ ...raw, extraction_status: "quarantined" }] }, discovery));
+});
 test("all publishers execute both dedicated searches without the global first-five cap", async () => {
   const calls = [];
   const result = await collectChinaFunding({ root, date: "2026-09-12", fetcher: async () => ({ ok: true, text: async () => "<html>dynamic page</html>" }), search: async (query) => {
