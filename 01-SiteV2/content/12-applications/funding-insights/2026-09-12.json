@@ -1,0 +1,1218 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-09-12",
+    "generated_at": "2026-09-12T02:19:21.672Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 4,
+      "auto_published": 2,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 2
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-3a114e137dbb0de3",
+      "triggered_by_event_id": "EV-cf9e968f38db7796",
+      "as_of_date": "2026-09-12",
+      "company": {
+        "entity_id": "EN-b3c628b196bfbbe9",
+        "name": "贝联珠贯科技（浙江）有限公司",
+        "full_name": "贝联珠贯科技（浙江）有限公司",
+        "website": "",
+        "summary": "贝联珠贯是一家典型的AI Native运维服务公司，核心产品SREAgent是以大模型+Agent+数据为基础的运维领域垂直AI Agent，致力于为客户提供“L4”级的智能运维服务。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "毕玄（林昊）",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-66fcc0a528f97b62",
+                "quote": "贝联珠贯创始人毕玄（林昊）表示",
+                "source_content_hash": "c58547114571e365",
+                "quote_hash": "cb9fae8a1e368ef0b07da2863a428668f74e79eaac8af713f5b03c4b1fa615b4"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-66fcc0a528f97b62",
+            "quote": "贝联珠贯是一家典型的AI Native的运维服务公司，核心产品SREAgent是以大模型+Agent+数据为基础的运维领域垂直AI Agent",
+            "source_content_hash": "c58547114571e365",
+            "quote_hash": "8f02b785fe8a3875e7a72b39d3bbec6c4a78eabc5c05dfa098110866025b86f1"
+          },
+          {
+            "source_id": "FISRC-9715d105f2216aeb",
+            "quote": "一家名为贝联珠贯科技（浙江）有限公司的企业正崭露头角",
+            "source_content_hash": "9c8dbdff6becacb0",
+            "quote_hash": "6c813ad3da71e2fbe9dc9b929a5d1fa86e09bbb8d0e7b0cd98ce87ce09c97e35"
+          }
+        ],
+        "application_entity_id": "EN-b3c628b196bfbbe9",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "超亿元",
+        "total_raised": "",
+        "announced_at": "2026-07-30",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "阿里云",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-66fcc0a528f97b62",
+                "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+                "source_content_hash": "c58547114571e365",
+                "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
+              }
+            ],
+            "entity_id": "EN-e16fc821f34228d1"
+          },
+          {
+            "name": "红杉中国",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-66fcc0a528f97b62",
+                "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+                "source_content_hash": "c58547114571e365",
+                "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "元璟资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-66fcc0a528f97b62",
+                "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+                "source_content_hash": "c58547114571e365",
+                "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-670fa60bc416faee",
+            "quote": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
+            "source_content_hash": "a6a314d300d87f38",
+            "quote_hash": "e6c5f898a5de061da6e236c505e29df63eeb5ec23764bb03ca5f2d5da7f63c9b"
+          },
+          {
+            "source_id": "FISRC-66fcc0a528f97b62",
+            "quote": "贝联珠贯日前完成超亿元A轮融资，本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+            "source_content_hash": "c58547114571e365",
+            "quote_hash": "d95ccb63265efdc66ec34b254df721a588b2cdc8985042e5d90973a965746122"
+          },
+          {
+            "source_id": "FISRC-670fa60bc416faee",
+            "quote": "近日，贝联珠贯迎来了重要的发展节点——完成超亿元A轮融资",
+            "source_content_hash": "a6a314d300d87f38",
+            "quote_hash": "397470033eeeac55a2f5f684af68d337251a96aecfa997bd143ca26d7f71fb80"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cf9e968f38db7796",
+            "round_original": "A轮",
+            "amount": "超亿元",
+            "announced_at": "2026-07-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-670fa60bc416faee",
+                "quote": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
+                "source_content_hash": "a6a314d300d87f38",
+                "quote_hash": "e6c5f898a5de061da6e236c505e29df63eeb5ec23764bb03ca5f2d5da7f63c9b"
+              },
+              {
+                "source_id": "FISRC-66fcc0a528f97b62",
+                "quote": "贝联珠贯日前完成超亿元A轮融资，本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+                "source_content_hash": "c58547114571e365",
+                "quote_hash": "d95ccb63265efdc66ec34b254df721a588b2cdc8985042e5d90973a965746122"
+              },
+              {
+                "source_id": "FISRC-670fa60bc416faee",
+                "quote": "近日，贝联珠贯迎来了重要的发展节点——完成超亿元A轮融资",
+                "source_content_hash": "a6a314d300d87f38",
+                "quote_hash": "397470033eeeac55a2f5f684af68d337251a96aecfa997bd143ca26d7f71fb80"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "SREAgent",
+          "description": "以大模型+Agent+数据为基础的运维领域垂直AI Agent，可以被看作一支7*24小时坚守岗位的资深运维专家团队，可以分析过去、关注当前、预测未来，为系统的稳定运行提供坚实的保障。",
+          "target_customers": "金融、能源、汽车、出行、零售、互联网平台等多个行业的企业客户",
+          "features": [
+            "针对系统的每一条告警、故障进行分析，找到根因、提出准确的解决方案",
+            "针对咨询、工单进行分析并给出答案",
+            "对系统进行详细巡查，发现潜在隐患并提供解决方案",
+            "可接入钉钉、飞书等IM群、现有的运维平台以及服务平台",
+            "可通过Skill扩展，具备自进化、自学习能力",
+            "可运行在线下IDC、多云环境和云原生环境"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-66fcc0a528f97b62",
+              "quote": "核心产品SREAgent是以大模型+Agent+数据为基础的运维领域垂直AI Agent，致力于为客户提供“L4”级的智能运维服务",
+              "source_content_hash": "c58547114571e365",
+              "quote_hash": "5bbf57d872b1e88b2cc73ed49557f3d08be62c31b6eaf9c8a2cf0f93a40daa08"
+            },
+            {
+              "source_id": "FISRC-66fcc0a528f97b62",
+              "quote": "SREAgent可以被看作一支7*24小时坚守岗位的资深运维专家团队，可以分析过去、关注当前、预测未来",
+              "source_content_hash": "c58547114571e365",
+              "quote_hash": "4b10414e8163c411b8f81b027c7b97be7aa422e48a01a914b07413dee819a370"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "超亿元",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-66fcc0a528f97b62",
+              "quote": "贝联珠贯日前完成超亿元A轮融资",
+              "source_content_hash": "c58547114571e365",
+              "quote_hash": "42f5573ec49c9a36a4862a45465abf3e3a67d58e35b12e9e61e6b628d4409b62"
+            }
+          ]
+        },
+        {
+          "label": "服务行业数量",
+          "value": "金融、能源、汽车、出行、零售、互联网平台等多个行业",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-66fcc0a528f97b62",
+              "quote": "目前已服务于金融、能源、汽车、出行、零售、互联网平台等多个行业",
+              "source_content_hash": "c58547114571e365",
+              "quote_hash": "d4c21531d5d87a27b527f19701e61636336b9a84258803e408debc315f067a62"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "毕玄（林昊）",
+          "quote": "随着此次融资的完成，公司将更加坚定深耕 AI Agent 与 SREAgent的技术发展方向，加大产品研发投入，推进市场规模化落地，基于SREAgent为更多客户提供L4级别的智能运维托管服务，提升运维效率，更加高质量地保障客户的业务系统，甚至硬件设备的连续稳定运行。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-66fcc0a528f97b62",
+              "quote": "贝联珠贯创始人毕玄（林昊）表示，随着此次融资的完成，公司将更加坚定深耕 AI Agent 与 SREAgent的技术发展方向",
+              "source_content_hash": "c58547114571e365",
+              "quote_hash": "2a44e593b9ca6a6726bd89a1dbf087c3cb41bdc599dd2589b0855c988526cd7e"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是垂直领域AI Agent在运维服务市场的规模化落地能力。本轮融资由阿里云领投，红杉中国、元璟资本超额跟投，表明产业资本与财务资本共同认可贝联珠贯以SREAgent为核心的AI Native运维服务路径。已验证信号包括：公司已服务金融、能源、汽车、出行、零售、互联网平台等多个行业，并被称为国内新一代AI Native运维服务商的领军者。但来源未披露具体客户名单、收入规模、估值或累计融资额，无法对商业化深度和估值水平做进一步验证。",
+        "validated_signals": [
+          "核心产品SREAgent已落地，具备告警分析、根因定位、系统巡查、IM接入、Skill扩展等具体能力",
+          "已服务金融、能源、汽车、出行、零售、互联网平台等多个行业",
+          "被来源称为国内新一代AI Native运维服务商的领军者"
+        ],
+        "risks": [
+          "来源未披露具体客户名称、收入规模、续约率或累计融资额，商业化验证深度不足",
+          "来源未披露阿里云、红杉中国、元璟资本的投资金额占比或估值，无法判断资本押注的估值锚点"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI运维",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是垂直领域AI Agent在运维服务市场的规模化落地能力。本轮融资由阿里云领投，红杉中国、元璟资本超额跟投，表明产业资本与财务资本共同认可贝联珠贯以SREAgent为核心的AI Native运维服务路径。已验证信号包括：公司已服务金融、能源、汽车、出行、零售、互联网平台等多个行业，并被称为国内新一代AI Native运维服务商的领军者。但来源未披露具体客户名单、收入规模、估值或累计融资额，无法对商业化深度和估值水平做进一步验证。",
+          "evidence_signals": [
+            "核心产品SREAgent已落地，具备告警分析、根因定位、系统巡查、IM接入、Skill扩展等具体能力",
+            "已服务金融、能源、汽车、出行、零售、互联网平台等多个行业",
+            "被来源称为国内新一代AI Native运维服务商的领军者"
+          ],
+          "risks": [
+            "来源未披露具体客户名称、收入规模、续约率或累计融资额，商业化验证深度不足",
+            "来源未披露阿里云、红杉中国、元璟资本的投资金额占比或估值，无法判断资本押注的估值锚点"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "SREAgent",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "毕玄（林昊）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "阿里云",
+          "canonical_entity_id": "EN-e16fc821f34228d1",
+          "canonical_name": "阿里云"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "红杉中国",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "元璟资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-cf9e968f38db7796",
+          "date": "2026-07-30",
+          "title": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
+          "amount": "超亿元",
+          "source_refs": [
+            "SA-bc187ec45e807205"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-670fa60bc416faee",
+          "source_url": "https://www.jur.com.cn/chanjing/202607/286276.html",
+          "title": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-12T01:34:45.398Z",
+          "content_hash": "a6a314d300d87f38",
+          "source_artifact_id": "SA-bc187ec45e807205",
+          "raw_id": "RAW-df1bb7a17bf93295"
+        },
+        {
+          "source_id": "FISRC-66fcc0a528f97b62",
+          "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
+          "title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-12T02:19:02.902Z",
+          "content_hash": "c58547114571e365",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9715d105f2216aeb",
+          "source_url": "https://www.itbear.com.cn/html/2026-07/1472353.html",
+          "title": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-业界动态-ITBear科技资讯",
+          "publisher": "itbear.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-12T02:19:03.206Z",
+          "content_hash": "9c8dbdff6becacb0",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-12T02:19:18.806Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-cf9e968f38db7796",
+          "confidence": 0.7,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-12T02:19:18.806Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "SREAgent"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "毕玄（林昊）"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cf9e968f38db7796"
+      ],
+      "aggregation": {
+        "key": "EN-b3c628b196bfbbe9|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-446942ef720229aa",
+      "triggered_by_event_id": "EV-7532c5a950295e97",
+      "as_of_date": "2026-09-12",
+      "company": {
+        "entity_id": "EN-ed8ff30f2dcaf9d6",
+        "name": "德睿智药（MindRank）",
+        "full_name": "德睿智药（MindRank）",
+        "website": "https://www.mindrank.ai/",
+        "summary": "德睿智药是一家专注于AI驱动新药研发的科技公司，致力于构建AI Native Pharma系统，其自研全链路AI制药引擎MAP覆盖靶点研究、分子设计、多参数优化、实验验证及临床数据分析等关键环节。",
+        "headquarters": "中国杭州",
+        "founders": [
+          {
+            "name": "牛张明",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e59652e6b200515c",
+                "quote": "德睿智药创始人兼CEO牛张明表示",
+                "source_content_hash": "6461ec5fc6fa20ad",
+                "quote_hash": "7bc40b9a0c87e3d3625b619e6dabc9dbe1385b307fa39aacd9ac916f0f1f4329"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "40余人",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b717dd3ff920916",
+              "quote": "创业至今，德睿智药团队仅40余人",
+              "source_content_hash": "15f96ea79ee10a7e",
+              "quote_hash": "9c1b2bca537fe6bd30a5e4b0c66b46a7e6ab65db4711dd4f3bcef14149a7e8d3"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e59652e6b200515c",
+            "quote": "专注于AI驱动新药研发的科技公司——德睿智药（MindRank）",
+            "source_content_hash": "6461ec5fc6fa20ad",
+            "quote_hash": "811c11df8247ce3f187a5bd9c318bf0bd9f36ccef2668c2d4ac38b659569ac05"
+          },
+          {
+            "source_id": "FISRC-7c02d4119e0874aa",
+            "quote": "中国杭州， 2026 年 7 月 8 日 ，专注于 AI 驱动新药研发的科技公司——德睿智药（ MindRank ）",
+            "source_content_hash": "48f4305084f41edd",
+            "quote_hash": "96163f686d26ed281da85efcc39da55fdf5a737fb1ed524bb2f109224ffd6875"
+          }
+        ],
+        "application_entity_id": "EN-ed8ff30f2dcaf9d6",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "5200万美元",
+        "total_raised": "超上亿美元",
+        "announced_at": "2026-07-08",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e59652e6b200515c",
+            "quote": "动脉网获悉，近日， 专注于AI驱动新药研发的科技公司——德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资，多家知名投资机构与产业基金共同投资。",
+            "source_content_hash": "6461ec5fc6fa20ad",
+            "quote_hash": "e798db6316c78d57af1f66f23ec57e7cece97bf307dc07faa7a0cacbfbd31069"
+          },
+          {
+            "source_id": "FISRC-e59652e6b200515c",
+            "quote": "德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资，多家知名投资机构与产业基金共同投资。",
+            "source_content_hash": "6461ec5fc6fa20ad",
+            "quote_hash": "39c9558a8fbbcd67e00b648656cea224cbaa16e8f6d9b82f43ef5c7a316a7ccd"
+          },
+          {
+            "source_id": "FISRC-5b717dd3ff920916",
+            "quote": "德睿智药近期已完成 5200 万美元B轮融资，投资方包括头部人民币和美元基金",
+            "source_content_hash": "15f96ea79ee10a7e",
+            "quote_hash": "0bc9e7a9f53dd765b1ef2ea701587eecfff801473218b26e4471041d37f75230"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "5200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 52000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5200 万美元"
+        },
+        "total_raised_original": "超上亿美元",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "超上亿美元"
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-7532c5a950295e97",
+            "round_original": "B轮",
+            "amount": "5200万美元",
+            "announced_at": "2026-07-08",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e59652e6b200515c",
+                "quote": "动脉网获悉，近日， 专注于AI驱动新药研发的科技公司——德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资，多家知名投资机构与产业基金共同投资。",
+                "source_content_hash": "6461ec5fc6fa20ad",
+                "quote_hash": "e798db6316c78d57af1f66f23ec57e7cece97bf307dc07faa7a0cacbfbd31069"
+              },
+              {
+                "source_id": "FISRC-e59652e6b200515c",
+                "quote": "德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资，多家知名投资机构与产业基金共同投资。",
+                "source_content_hash": "6461ec5fc6fa20ad",
+                "quote_hash": "39c9558a8fbbcd67e00b648656cea224cbaa16e8f6d9b82f43ef5c7a316a7ccd"
+              },
+              {
+                "source_id": "FISRC-5b717dd3ff920916",
+                "quote": "德睿智药近期已完成 5200 万美元B轮融资，投资方包括头部人民币和美元基金",
+                "source_content_hash": "15f96ea79ee10a7e",
+                "quote_hash": "0bc9e7a9f53dd765b1ef2ea701587eecfff801473218b26e4471041d37f75230"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "MAP（Molecule Arts Platform）",
+          "description": "自研全链路AI制药引擎，由多智能体驱动，覆盖靶点研究、分子设计、多参数优化、实验验证及临床数据分析等制药产业关键环节，通过连接计算模型、湿实验和临床反馈实现持续学习与迭代。",
+          "target_customers": "德睿智药自身药物研发管线",
+          "features": [
+            "多智能体协同体系",
+            "临床数据闭环（Clinical Data-in-the-Loop）",
+            "覆盖靶点研究、分子设计、多参数优化、实验验证及临床数据分析"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "公司自研全链路AI制药引擎MAP（Molecule Arts Platform）的深度技术迭代，持续完善其业内领先的多智能体（Multi-Agent）协同体系与临床数据闭环（Clinical Data-in-the-Loop）",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "4e85e2abdb45fc70a6837fa6adf7ea1078ac7db0ad736c5b946fbae7faa0f5b5"
+            },
+            {
+              "source_id": "FISRC-5b717dd3ff920916",
+              "quote": "Molecule Arts Platform（下称“MAP”）平台共分为3层架构：第一层是AI设计层，整合了公司自研的PharmkGPT生物学平台、Molecule Pro小分子制药平台和Molecule Dance结构生物学平台",
+              "source_content_hash": "15f96ea79ee10a7e",
+              "quote_hash": "86397ff0bebe3d24f7ba475501b4da4ab56f926c6d3803c42b61608845882692"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "MDR-001",
+          "description": "口服GLP-1RA小分子创新药，为中国首个推进至Ⅲ期临床阶段的AI赋能一类创新药，预计未来2—3年内完成商业化上市。",
+          "target_customers": "肥胖及相关代谢疾病患者",
+          "features": [
+            "口服小分子GLP-1受体激动剂",
+            "已进入Ⅲ期临床研究"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "公司首发管线——口服GLP-1RA小分子创新药MDR-001，已于2025年正式进入Ⅲ期临床研究，为中国首个推进至Ⅲ期临床阶段的AI赋能一类创新药",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "8c6b39e752c77957f94687a05b00e8ceb9866cee6e07563a6a75acd7222107f3"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "福泰制药（Vertex Pharmaceuticals）",
+          "product": "计算机精准设计分子的小分子药物",
+          "scenario": "通过计算工具持续推出重磅药物并成长为千亿市值制药巨头",
+          "target_customer": "全球患者",
+          "funding_summary": "",
+          "core_difference": "福泰制药是上一代CADD路径的代表，通过计算机辅助设计分子并已实现多款重磅药物商业化；德睿智药以多智能体驱动的MAP平台为核心，当前核心管线MDR-001尚处于Ⅲ期临床阶段，商业化尚未完成。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b717dd3ff920916",
+              "quote": "以全球CADD先驱，市值1200亿美金的福泰制药（Vertex Pharma）为例，公司通过计算机精准设计分子的战略，持续推出数款年销售额超百亿美元的重磅药物，成长为千亿市值制药巨头。",
+              "source_content_hash": "15f96ea79ee10a7e",
+              "quote_hash": "633142fce6e30a28a8fe2c9474a5f4e18bdf0585a995a13c0a4192f7f4c8d794"
+            },
+            {
+              "source_id": "FISRC-d2e876cf64668a74",
+              "quote": "比如Vertex Pharmaceuticals（福泰制药），它从一家初创公司起步，历经23年，将第一款年销售额达10亿美元的重磅药物成功推向市场，如今已成长为市值1200亿美元的Big Pharma。",
+              "source_content_hash": "521ac302f19711dc",
+              "quote_hash": "2676fa481fed1d0e1c93a1ea4d7151c72a41de99b26d9c25e52af2eb05d9f6de"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Schrödinger（薛定谔）",
+          "product": "计算化学软件服务",
+          "scenario": "以计算软件服务路线服务药企客户",
+          "target_customer": "药企客户",
+          "funding_summary": "",
+          "core_difference": "Schrödinger走计算软件服务路线，本质是to B模式，市值约十几亿美元；德睿智药选择以自研管线为核心，目标是成为AI时代的Vertex或礼来，而非软件服务商。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2e876cf64668a74",
+              "quote": "另一家是Schrödinger（薛定谔），他们走的是计算软件服务的路线，是全球公认最领先的计算化学公司之一，也非常值得尊敬，但到今天它的市值大概只有十几亿美元",
+              "source_content_hash": "521ac302f19711dc",
+              "quote_hash": "901bd919639fb7f451119dbfa1ed6c2911beed20e16ce462beaa41d0cf427f58"
+            },
+            {
+              "source_id": "FISRC-d2e876cf64668a74",
+              "quote": "只做技术服务本质上是to B模式，价值有限，且高度依赖客户的付费能力和意愿。",
+              "source_content_hash": "521ac302f19711dc",
+              "quote_hash": "04a59f827ee1d620ca03a1db17f2acfe0282fd741e6b49535b66647972fde7fa"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "MDR-001从立项到Ⅲ期临床耗时",
+          "value": "4.5年",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "从项目最初立项推进至Ⅲ期临床研究，整体仅耗时4.5年",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "e472963ad053af1aabc906a4933048410dc8a5bd2f7951e336e0c26305bb8ffc"
+            }
+          ]
+        },
+        {
+          "label": "MDR-001累计研发投入",
+          "value": "约2300万美元",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "该单产品的累计研发投入控制在约2300万美元",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "78a8ec80107a3cab79682ce8b9629fa0dc4050b78ac2f7ebc3ce4e9386f2858d"
+            }
+          ]
+        },
+        {
+          "label": "PCC确认耗时",
+          "value": "8个月，合成80个小分子",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "团队仅耗时8个月、实际仅合成80个小分子，即成功获得了高质量的临床前候选药物（PCC）",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "a0e50a55fc759241453fab8e6b33ea4cfa758d21a81bd257f2ee83c466c121fd"
+            }
+          ]
+        },
+        {
+          "label": "IND获批周期",
+          "value": "19个月",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "IND（临床试验申请）获批周期被大幅压缩至19个月",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "3ef6be96d865eba3d57dbf969b62bf635b43c146c3bcde73a1a25f2c3b6ea851"
+            }
+          ]
+        },
+        {
+          "label": "创新管线数量",
+          "value": "15条FIC/BIC",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "共有15条FIC（First-in-class，同类首创）/BIC（Best-in-class，同类最佳）创新管线正在同步推进",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "bbc2613a41d55c06b7ac5d2694063d06aafa040b45ce749b0f6ba453c38ad7d9"
+            }
+          ]
+        },
+        {
+          "label": "PCC分子数量",
+          "value": "5款",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "拥有5款临床前PCC分子",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "e127c9104ec8175b63543e6125225749100e9ec7b3fcc7e8a8cac614d95da2c1"
+            }
+          ]
+        },
+        {
+          "label": "IND批件数量",
+          "value": "3项中美IND批件",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "现阶段德睿智药已取得3项中美IND批件",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "5475b868323f4676c7b96af2db1e445ea43502dcd6aeea7fe3ecbf6daf30fb37"
+            }
+          ]
+        },
+        {
+          "label": "临床试验数据积累",
+          "value": "1300例",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "积淀了1300例宝贵的临床试验数据",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "5f015506e3043f3ed0e3f31de68e324f04862bd7b72807db4b02941648759445"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "牛张明",
+          "quote": "德睿智药希望构建的不仅是一家创新药公司，更是一套能够持续探索、持续学习、持续创造创新药的AI Native Pharma系统。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "德睿智药希望构建的不仅是一家创新药公司，更是一套能够持续探索、持续学习、持续创造创新药的AI Native Pharma系统。",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "8de0597f00d8ae6a4f86576f2eeced212e71850e6f1215cee42cf15da24bf785"
+            }
+          ]
+        },
+        {
+          "speaker": "牛张明",
+          "quote": "我们没有把MAP单纯定义为一个AI工具，而是一套可以持续学习、进化的药物研发系统。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b717dd3ff920916",
+              "quote": "我们没有把MAP单纯定义为一个AI工具，而是一套可以持续学习、进化的药物研发系统。",
+              "source_content_hash": "15f96ea79ee10a7e",
+              "quote_hash": "80764a624de904428dde1a32d4738d791c458fb4539f696237fffbe96d53bbdb"
+            }
+          ]
+        },
+        {
+          "speaker": "邹国文",
+          "quote": "凯乘资本近年来一直关注 AI 制药赛道的发展，并选择在 AI 制药赛道相对沉寂时选择合作，是看中了德睿智药是该赛道为数不多的能有临床推进结果的公司之一。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c02d4119e0874aa",
+              "quote": "凯乘资本近年来一直关注 AI 制药赛道的发展，并选择在 AI 制药赛道相对沉寂时选择合作，是看中了德睿智药是该赛道为数不多的能有临床推进结果的公司之一",
+              "source_content_hash": "48f4305084f41edd",
+              "quote_hash": "046984c20cd0e5899b0957768a5b74d452b455c3b2909eb886e75aa948d2e6d1"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI制药平台能否以显著低于传统模式的成本和时间将药物推进至后期临床并最终商业化。已验证信号包括：MDR-001以约2300万美元、4.5年推进至Ⅲ期临床，为中国首个AI赋能一类新药进入Ⅲ期；公司拥有15条FIC/BIC管线、5款PCC、3项中美IND批件。但本轮融资未披露具体投资方名称，无法确认机构层面的估值判断；来源仅提供凯乘资本作为财务顾问的公开表态，不构成投资机构对估值的直接背书。",
+        "validated_signals": [
+          "MDR-001已进入Ⅲ期临床，为中国首个AI赋能一类新药达到该阶段",
+          "MDR-001从立项到Ⅲ期临床仅耗时4.5年、投入约2300万美元",
+          "公司已取得3项中美IND批件，拥有5款临床前PCC分子，15条FIC/BIC创新管线在研",
+          "已积累1300例临床试验数据，累计申请专利超200项"
+        ],
+        "risks": [
+          "本轮融资未披露具体投资方名称，无法确认机构层面的资本背书强度",
+          "MDR-001尚未完成Ⅲ期临床及商业化，临床结果和上市时间存在不确定性",
+          "GLP-1赛道竞争激烈，口服小分子药物面临来自已上市及在研竞品的差异化压力",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "researcher"
+        ],
+        "sector": "AI制药",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI制药平台能否以显著低于传统模式的成本和时间将药物推进至后期临床并最终商业化。已验证信号包括：MDR-001以约2300万美元、4.5年推进至Ⅲ期临床，为中国首个AI赋能一类新药进入Ⅲ期；公司拥有15条FIC/BIC管线、5款PCC、3项中美IND批件。但本轮融资未披露具体投资方名称，无法确认机构层面的估值判断；来源仅提供凯乘资本作为财务顾问的公开表态，不构成投资机构对估值的直接背书。",
+          "evidence_signals": [
+            "MDR-001已进入Ⅲ期临床，为中国首个AI赋能一类新药达到该阶段",
+            "MDR-001从立项到Ⅲ期临床仅耗时4.5年、投入约2300万美元",
+            "公司已取得3项中美IND批件，拥有5款临床前PCC分子，15条FIC/BIC创新管线在研",
+            "已积累1300例临床试验数据，累计申请专利超200项"
+          ],
+          "risks": [
+            "本轮融资未披露具体投资方名称，无法确认机构层面的资本背书强度",
+            "MDR-001尚未完成Ⅲ期临床及商业化，临床结果和上市时间存在不确定性",
+            "GLP-1赛道竞争激烈，口服小分子药物面临来自已上市及在研竞品的差异化压力",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MAP（Molecule Arts Platform）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MDR-001",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "牛张明",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "福泰制药（Vertex Pharmaceuticals）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Schrödinger（薛定谔）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7532c5a950295e97",
+          "date": "2026-07-08",
+          "title": "【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网",
+          "amount": "5200万美元",
+          "source_refs": [
+            "SA-8d7322e0be57b36a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e59652e6b200515c",
+          "source_url": "https://www.vbdata.cn/1519084434",
+          "title": "【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-12T01:34:45.393Z",
+          "content_hash": "6461ec5fc6fa20ad",
+          "source_artifact_id": "SA-8d7322e0be57b36a",
+          "raw_id": "RAW-40040f5107ab65e2"
+        },
+        {
+          "source_id": "FISRC-5b717dd3ff920916",
+          "source_url": "http://c.m.163.com/news/a/L1A59FRQ05118DFD.html",
+          "title": "「德睿智药」获5200万美元B轮融资，AI设计的减肥药已进入3期临床｜36氪首发",
+          "publisher": "c.m.163.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-12T01:37:55.351Z",
+          "content_hash": "15f96ea79ee10a7e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7c02d4119e0874aa",
+          "source_url": "https://bydrug.pharmcube.com/news/detail/265ee7ee9ade275421ae171fadcd05bb",
+          "title": "德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎，凯乘资本担任独家财务顾问医药新闻-ByDrug-一站式医药资源共享中心-医药魔方",
+          "publisher": "bydrug.pharmcube.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-12T01:37:55.732Z",
+          "content_hash": "48f4305084f41edd",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d2e876cf64668a74",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-03/doc-inikzeap6255575.shtml",
+          "title": "对话德睿智药牛张明：AI制药进入价值兑现期，中国药企有望复刻电车式弯道超车_新浪财经_新浪网",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-12T01:37:57.058Z",
+          "content_hash": "521ac302f19711dc",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-12T01:38:27.350Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-7532c5a950295e97",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-12T01:38:27.350Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "MAP（Molecule Arts Platform）",
+            "MDR-001"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "牛张明"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7532c5a950295e97"
+      ],
+      "aggregation": {
+        "key": "EN-ed8ff30f2dcaf9d6|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-12T02:19:21.671Z"
+    },
+    {
+      "event_id": "EV-7532c5a950295e97",
+      "company_name": "德睿智药（MindRank）",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网\" funding company investors product",
+        "\"德睿智药\" \"5200万美元\" funding investors round",
+        "\"德睿智药\" product customers case study",
+        "\"德睿智药\" \"【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网\" competitors product use case",
+        "\"德睿智药\" \"5200万美元\" investor quote why invested",
+        "\"德睿智药\" \"5200万美元\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"德睿智药\" \"5200万美元\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"德睿智药\" \"5200万美元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"德睿智药\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"德睿智药\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"德睿智药\" \"【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"德睿智药\" \"【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"德睿智药\" \"5200万美元\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"德睿智药\" \"5200万美元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"德睿智药\" \"5200万美元\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"德睿智药\" \"5200万美元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-12T02:19:21.671Z"
+    },
+    {
+      "event_id": "EV-cf9e968f38db7796",
+      "company_name": "贝联珠贯获阿里云领投超亿元A轮",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经\" funding company investors product",
+        "\"贝联珠贯获阿里云领投超亿元A轮\" \"超亿元\" funding investors round",
+        "\"贝联珠贯获阿里云领投超亿元A轮\" product customers case study",
+        "\"贝联珠贯获阿里云领投超亿元A轮\" \"贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经\" competitors product use case",
+        "\"贝联珠贯获阿里云领投超亿元A轮\" \"超亿元\" investor quote why invested",
+        "\"贝联珠贯获阿里云领投超亿元A轮\" \"超亿元\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" \"超亿元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" \"超亿元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" \"贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" \"贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" \"超亿元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" \"超亿元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" \"超亿元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"贝联珠贯获阿里云领投超亿元A轮\" \"超亿元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-12T02:19:21.671Z"
+    },
+    {
+      "event_id": "EV-88f346991085a2f3",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-12T02:19:21.671Z"
+    }
+  ]
+}

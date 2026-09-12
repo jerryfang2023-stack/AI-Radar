@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T01:25:15.106Z",
-    "latestDataDate": "2026-09-11",
-    "currentDate": "2026-09-11",
-    "eventCount": 2828,
+    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
     "quarantinedEventCount": 25
   },
   "entity": {
@@ -26,6 +26,7 @@
     "eventIds": [
       "EV-a2f902b9707ffd02",
       "EV-93c2515d50157281",
+      "EV-88f346991085a2f3",
       "EV-987cb2e5e20f79ce",
       "EV-00514c4ffc2e3cd3",
       "EV-d3054a8a2b62a503",
@@ -86,7 +87,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-05-18",
-    "lastSeen": "2026-09-11",
+    "lastSeen": "2026-09-12",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -96,6 +97,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-88f346991085a2f3",
         "EV-987cb2e5e20f79ce",
         "EV-2f0f3200b9800877",
         "EV-a2f902b9707ffd02",
@@ -156,6 +158,47 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-88f346991085a2f3",
+        "dataDate": "2026-09-12",
+        "date": "2026-08-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9a970ad7900121db",
+          "EN-6162efd3ae5eaf85",
+          "EN-9c8ae69b84f21a2e",
+          "EN-047364b9be67f665"
+        ]
+      },
       {
         "id": "EV-ec55003461ff34b0",
         "dataDate": "2026-09-11",
@@ -1679,8 +1722,8 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
-        "EV-73c29838fbb3b394",
         "EV-fd0acf0718a27961",
+        "EV-73c29838fbb3b394",
         "EV-66561ec28d8b1fec",
         "EV-54451ee210a0d0d4",
         "EV-f26c01475e591f11",
@@ -1763,14 +1806,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
+        "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
-        "TX-use_case-software_development",
         "TX-use_case-content_creation",
         "TX-use_case-data_analysis",
-        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_subcategory-sales",
         "TX-use_case-sales",
@@ -1781,7 +1825,6 @@
         "TX-technology-open_weights",
         "TX-technology-image_generation",
         "TX-technology-multimodal",
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-deployment_model-cloud",
         "TX-technology-computer_use",
@@ -1802,7 +1845,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -2045,8 +2088,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
-        "EV-53198ae84b1653e5",
         "EV-5d0f3f6556749dc5",
+        "EV-53198ae84b1653e5",
         "EV-3d7fb729ebce66cb",
         "EV-cbe5cc267353560e",
         "EV-6a5b724c821567f3",
@@ -2214,6 +2257,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-d4c42c125b98b97e",
         "EV-06e6d004096040e0",
         "EV-c3feadbc01392117",
         "EV-9c7ca787c7b4f7cf",
@@ -2298,8 +2342,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
-        "EN-67734881da046ff9",
         "EN-c608c4787821de1b",
+        "EN-67734881da046ff9",
         "EN-572e31f55b6ac1b1",
         "EN-1a6d6ea981e8688c",
         "EN-bae152c4560df38c",
@@ -2421,7 +2465,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "TX-use_case-content_creation",
@@ -2452,6 +2496,7 @@
         "EV-affa49966121461c",
         "EV-e12b17260d19c5ff",
         "EV-535c2f4fb851332d",
+        "EV-7f4e56e09d2328bb",
         "EV-7b0ff6657c0e0483",
         "EV-1de38866b4b92754",
         "EV-99e5df844a1bd670",
@@ -2481,6 +2526,7 @@
         "EN-835fb9db44937917",
         "EN-f30ad7677baf7ea2",
         "EN-9b21c9bf3305c0d6",
+        "EN-ec68d09e3a81e0ae",
         "EN-ea3bd73e2b506e00",
         "EN-e93e29634540a290",
         "EN-afe83c198e329ef2",
@@ -2492,7 +2538,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "TX-technology-agentic_execution",

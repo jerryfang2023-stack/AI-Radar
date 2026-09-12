@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
+    "quarantinedEventCount": 25
+  },
+  "entity": {
+    "id": "EN-6535648b340d6536",
+    "name": "杭州微纳核芯电子科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e0a31302688c81ec"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-09",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-e0a31302688c81ec"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-e0a31302688c81ec",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "微纳核芯完成C1轮10亿元融资 存算一体AI芯片年内或将实现规模商业化",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f8905a4d0753fd42",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-251bbe9df425166e",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "chips",
+            "name": "芯片",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9f017e99d2681ba1",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0238a8d97807905f",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-20ecd3ec9f0be573",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-31e1984ef8cbdade",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2c20d04f9c25c0a2",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8eca44ae537c3173",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f2f0d227afcee1bb",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-a5e5f031b6f878cf"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d7bbf8a4c0b5ea98",
+            "fundingInsightId": "FI-45cab93e2b3807d7"
+          }
+        ],
+        "entityIds": [
+          "EN-a5e5f031b6f878cf",
+          "EN-6535648b340d6536"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-6f09c159bc1d4cea",
+      "snapshotKey": "6f09c159bc1d4cea",
+      "snapshotId": "HWS-b6ccc90162ba53dc",
+      "eventId": "EV-e0a31302688c81ec",
+      "eventIds": [
+        "EV-e0a31302688c81ec"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "微纳核芯",
+      "subject": "微纳核芯",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "10",
+          "unit": "亿",
+          "fact_ref": "HWF-0f52a7fab4bd440a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-0f52a7fab4bd440a",
+          "fact_type": "specification",
+          "observed_at": "2026-09-09T15:29:07.000Z",
+          "subject_entity_id": "EN-a5e5f031b6f878cf",
+          "subject_name": "微纳核芯",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "10",
+          "unit": "亿",
+          "source_quote": "微纳核芯完成C1轮10亿元融资 存算一体AI芯片年内或将实现规模商业化|低功耗|处理器|高带宽内存_网易订阅",
+          "event_refs": [
+            "EV-e0a31302688c81ec"
+          ],
+          "claim_ref": "CL-7f55a6faca222ac1",
+          "source_refs": [
+            "SA-1c05788612d77970"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://163.com/dy/article/L6E0VC7A05198CJN.html?f=post2020_dy_recommends",
+      "entityIds": [
+        "EN-a5e5f031b6f878cf",
+        "EN-6535648b340d6536"
+      ]
+    }
+  ]
+}

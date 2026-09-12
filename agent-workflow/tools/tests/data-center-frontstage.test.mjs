@@ -430,6 +430,18 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
   assert.ok(data.intake.every((item) => item.laneCoverage.includes("afternoon-skill")));
 });
 
+test("business signals and first-line viewpoints serialize shared data-center publications", () => {
+  const businessWorkflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+  const firstLineWorkflow = fs.readFileSync(path.join(root, ".github/workflows/daily-first-line-viewpoints-pr.yml"), "utf8");
+  const concurrencySection = (workflow) => workflow.slice(workflow.indexOf("concurrency:"), workflow.indexOf("jobs:"));
+
+  for (const section of [concurrencySection(businessWorkflow), concurrencySection(firstLineWorkflow)]) {
+    assert.match(section, /group: wavesight-data-center-publication/u);
+    assert.match(section, /cancel-in-progress: false/u);
+    assert.doesNotMatch(section, /github\.(?:run_id|ref_name|event\.inputs\.date)/u);
+  }
+});
+
 test("retired Guanlan Research route redirects to the funding portal report archive", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
   assert.match(html, /REPORTS-V1\.3\.0-funding-portal/u);

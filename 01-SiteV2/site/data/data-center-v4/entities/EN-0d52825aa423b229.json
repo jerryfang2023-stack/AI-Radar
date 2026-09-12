@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T01:25:15.106Z",
-    "latestDataDate": "2026-09-11",
-    "currentDate": "2026-09-11",
-    "eventCount": 2828,
+    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
     "quarantinedEventCount": 25
   },
   "entity": {
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-354ff4bc2d0327b4",
       "EV-acc612910c52d6e6"
     ],
     "viewpointIds": [],
@@ -30,7 +31,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-11",
-    "lastSeen": "2026-09-11",
+    "lastSeen": "2026-09-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -38,12 +39,31 @@
       "partnerships": [],
       "productsServices": [],
       "hardware": [
+        "EV-354ff4bc2d0327b4",
         "EV-acc612910c52d6e6"
       ],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-354ff4bc2d0327b4",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-11",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "System76 推出 Thelio Mira AI Linux 工作站：双 NVIDIA RTX Pro 6000、192 GB GPU 内存",
+        "displayTags": [],
+        "entityIds": [
+          "EN-0d52825aa423b229",
+          "EN-8d4321d936320802",
+          "EN-a206dcacbd3dee8f",
+          "EN-77935c29f9374478"
+        ]
+      },
       {
         "id": "EV-acc612910c52d6e6",
         "dataDate": "2026-09-11",
@@ -86,6 +106,7 @@
       "typeLabel": "产品形态",
       "valueId": "chip_accelerator",
       "eventIds": [
+        "EV-e0a31302688c81ec",
         "EV-4af14568b1bdeb35",
         "EV-e70a48e36e99d57a",
         "EV-83728e3b6c7736ce",
@@ -111,7 +132,6 @@
         "EV-80e54c9a390da293",
         "EV-ad75efcb12a07793",
         "EV-236cbc2d64f0c455",
-        "EV-e0a31302688c81ec",
         "EV-736404028b8ad33e",
         "EV-794f921515af8e8b",
         "EV-70a994b9339f92e7",
@@ -200,6 +220,7 @@
         "EV-bca0d9aca07bcb4a"
       ],
       "entityIds": [
+        "EN-a5e5f031b6f878cf",
         "EN-9cb45a27a2808c01",
         "EN-8d4321d936320802",
         "EN-240389f4b730bad4",
@@ -222,7 +243,6 @@
         "EN-86c49cd0980883a3",
         "EN-a736e4d4ef0af078",
         "EN-d1a61df8d3146e48",
-        "EN-a5e5f031b6f878cf",
         "EN-48bebf25e5bd5aca",
         "EN-085578b03da7d660",
         "EN-8da5eafb322ee86e",
@@ -320,7 +340,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     }
   ],
   "fde": [],
@@ -346,7 +366,7 @@
       "shipmentDate": "未披露",
       "tags": [],
       "sourceUrl": "https://system76.com/workstations/thelio-mira-ai",
-      "sourceName": "Hacker News：AI 热帖",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceDate": "2026-09-11",
       "entityIds": [
         "EN-0d52825aa423b229",

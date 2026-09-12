@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
+    "quarantinedEventCount": 25
+  },
+  "entity": {
+    "id": "EN-06add78d9647221d",
+    "name": "CBTS",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f1cfc5004f3115bc"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-12",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-f1cfc5004f3115bc"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f1cfc5004f3115bc",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-12",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "CBTS 安全企业 AI 部署案例研究",
+        "displayTags": [],
+        "entityIds": [
+          "EN-06add78d9647221d",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-107188407f453d8b",
+      "eventId": "EV-f1cfc5004f3115bc",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "CBTS 安全企业 AI 部署案例研究",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Anthropic Claude for Enterprise",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://cbts.com/client-stories/cbts-secure-enterprise-ai-deployment",
+      "entityIds": [
+        "EN-06add78d9647221d",
+        "EN-c70eca6b0f88f44d"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-2b06f9364a672628",
+      "implementationKey": "2b06f9364a672628",
+      "eventId": "EV-f1cfc5004f3115bc",
+      "eventIds": [
+        "EV-f1cfc5004f3115bc"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "Anthropic × 未披露：Anthropic Claude for Enterprise",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Anthropic",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Anthropic Claude for Enterprise",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-4d551dd6d462acf7",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-12",
+          "dataDate": "2026-09-12",
+          "eventId": "EV-f1cfc5004f3115bc",
+          "eventTitle": "CBTS 安全企业 AI 部署案例研究",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://cbts.com/client-stories/cbts-secure-enterprise-ai-deployment",
+      "entityIds": [
+        "EN-06add78d9647221d",
+        "EN-c70eca6b0f88f44d"
+      ]
+    }
+  ]
+}

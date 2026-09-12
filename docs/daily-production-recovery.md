@@ -79,6 +79,12 @@ Funding amounts require proceeds-specific evidence, not merely a number in a
 valid quoted source. Chinese post-amount financing and valuation-rise wording
 must remain covered by regressions. A valuation may remain a labelled metric,
 but cannot populate financing amount, disclosure amount or funding history.
+Funding-claim extraction must also bind a candidate sentence to the funded
+subject, source title, or the title's normalized financing metric. A financing
+teaser for another company near the article lead is not evidence for the active
+event. Qualitative Chinese lower bounds such as `超亿元` are normalized as CNY
+lower bounds and remain authoritative when a persisted card is reused; reuse
+repairs canonical amount/date/round before the card is admitted again.
 Spaced Chinese round labels (for example, `D 轮`) remain proceeds wording.
 An earlier-clause financing verb cannot classify a later valuation as proceeds;
 English valuation qualifiers such as `above` and `of more than` stay valuations.
@@ -128,6 +134,15 @@ publication. Offline rebuilds merge the existing approved history before adding
 new snapshots: shallow Git history or an absent translation cache must never
 erase already accepted translations. Rebuild the full Data Center adapter after
 history recovery so person profiles and last-seen dates recover with the list.
+Business Signals and First-Line Viewpoints retain separate PR boundaries, but
+their workflows share the `wavesight-data-center-publication` concurrency group
+because both rebuild tracked Data Center projections. They must serialize rather
+than create same-day generated-file merge conflicts.
+
+Community Intelligence validates the complete in-memory candidate before writing
+the current snapshot, dated snapshot, or frontstage file. A collector error,
+fewer than 12 accepted items, or fewer than three document links fails closed and
+preserves the last-good tracked data for a later logged-in retry.
 
 Vault refresh uses an isolated `origin/main` worktree. Resolve broken manual-note
 links at the referenced file and archive retired duplicate repository copies

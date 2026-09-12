@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T01:25:15.106Z",
-    "latestDataDate": "2026-09-11",
-    "currentDate": "2026-09-11",
-    "eventCount": 2828,
+    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
     "quarantinedEventCount": 25
   },
   "entity": {
@@ -24,16 +24,18 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-88f346991085a2f3",
       "EV-987cb2e5e20f79ce"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-25",
-    "lastSeen": "2026-09-09",
+    "lastSeen": "2026-09-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-88f346991085a2f3",
         "EV-987cb2e5e20f79ce"
       ],
       "deployments": [],
@@ -44,6 +46,47 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-88f346991085a2f3",
+        "dataDate": "2026-09-12",
+        "date": "2026-08-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-9a970ad7900121db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9a970ad7900121db",
+          "EN-6162efd3ae5eaf85",
+          "EN-9c8ae69b84f21a2e",
+          "EN-047364b9be67f665"
+        ]
+      },
       {
         "id": "EV-987cb2e5e20f79ce",
         "dataDate": "2026-09-09",

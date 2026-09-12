@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { isReusableBusinessSignalsRun } from "../lib/business-signals-checkpoint.mjs";
 import { evaluateProjectionCoverage } from "../assert-data-center-projection-coverage.mjs";
 import { publicCatalogEntityIds } from "../../product/entity-history-v1.mjs";
-import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, metricValues, modelAssistedEventEligibility, normalizeEventTitle, normalizedFundingMetric, organizationMentions, publicEventSourceTitleIssue, publicEventSourceUrlIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, fundingClaimCandidateRelevant, metricValues, modelAssistedEventEligibility, normalizeEventTitle, normalizedFundingMetric, organizationMentions, publicEventSourceTitleIssue, publicEventSourceUrlIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
 import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem, normalizedOriginFetchStatus, reconcileSourceFailureRecovery } from "../guanlan-monitor-quality-gate.mjs";
@@ -17,6 +17,20 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
+
+test("funding claim candidates reject an unrelated financing teaser near the article lead", () => {
+  const title = "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域";
+  const subject = "贝联珠贯获阿里云领投超亿元A轮";
+  assert.equal(fundingClaimCandidateRelevant({
+    start: 129,
+    quote: "Millennium Management拟创纪录募资200亿美元，巩固多策略对冲基金行业地位。",
+  }, title, subject), false);
+  assert.equal(fundingClaimCandidateRelevant({
+    start: 643,
+    quote: "近日，贝联珠贯完成超亿元A轮融资。",
+  }, title, subject), true);
+  assert.equal(fundingClaimCandidateRelevant({ start: 0, quote: title }, title, subject), true);
+});
 
 test("daily recovery revalidates and reuses existing model decisions", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");

@@ -1032,7 +1032,7 @@ function sentenceSpans(body) {
 }
 
 function metricValues(text) {
-  return [...text.matchAll(/(?:[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|thousand|m|b|t|k|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|thousand|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
+  return [...text.matchAll(/(?:(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|thousand|m|b|t|k|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|thousand|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
     .map((match) => match[0]).slice(0, 12);
 }
 
@@ -1082,11 +1082,34 @@ function buildModelClaim(rawId, proposed, evidence, index, status) {
   };
 }
 
+export function fundingClaimCandidateRelevant({ start = 0, quote = "" } = {}, title = "", subject = "") {
+  const normalizedQuote = normalizeSpace(quote).toLocaleLowerCase();
+  if (!normalizedQuote) return false;
+  if (start === 0 && normalizedQuote.includes(normalizeSpace(title).toLocaleLowerCase())) return true;
+
+  const subjectLead = normalizeSpace(subject).match(
+    /^(.{2,40}?)(?=\s*(?:获|获得|完成|宣布|融资|募资|筹集|raises?|raised|secures?|secured))/iu,
+  )?.[1];
+  if (subjectLead && normalizedQuote.includes(normalizeSpace(subjectLead).toLocaleLowerCase())) return true;
+
+  const subjectTokens = normalizeSpace(subject).toLocaleLowerCase()
+    .split(/[^\p{L}\p{N}]+/u)
+    .filter((value) => value.length >= 3);
+  if (subjectTokens.some((token) => normalizedQuote.includes(token))) return true;
+
+  if (start < 900) {
+    const titleMetrics = new Set(metricValues(title).map(normalizedFundingMetric));
+    return metricValues(quote).some((metric) => titleMetrics.has(normalizedFundingMetric(metric)));
+  }
+  return false;
+}
+
 function claimCandidates(body, title, rule, subject = "") {
   const all = sentenceSpans(body);
   const titleTokens = normalizeSpace(title).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((value) => value.length >= 3).slice(0, 8);
   const subjectTokens = normalizeSpace(subject).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((value) => value.length >= 3);
   const direct = all.filter((span) => rule.pattern.test(span.quote)).filter((span) => {
+    if (rule.eventType === "funding") return fundingClaimCandidateRelevant(span, title, subject);
     if (span.start < 900) return true;
     return subjectTokens.some((token) => span.quote.toLowerCase().includes(token));
   });
@@ -1650,6 +1673,12 @@ function canonicalNamedReleaseType(identity, fallback) {
 
 function normalizedFundingMetric(value) {
   const text = normalizeSpace(value).toLowerCase().replace(/,/gu, "");
+  const implicitCny = text.match(/^(超过|超|逾|至少)?(数)?(千万元|亿元|千万|亿)(?:级)?$/u);
+  if (implicitCny) {
+    const scale = /亿/u.test(implicitCny[3]) ? 100 : 10;
+    const qualifier = implicitCny[1] ? "lower" : implicitCny[2] ? "range" : "range";
+    return `元:${scale}:${qualifier}:million`;
+  }
   const western = text.match(/([$€£¥])\s*(\d+(?:\.\d+)?)\s*(billion|million|thousand|bn|mn|b|m|k)?\b/u);
   if (western) {
     const unit = western[3] || "";

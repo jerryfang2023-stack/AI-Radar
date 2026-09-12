@@ -13,7 +13,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: wavesight-first-line-viewpoints-${{ github.event.inputs.date || github.ref_name }}
+  group: wavesight-data-center-publication
   cancel-in-progress: false
 
 jobs:

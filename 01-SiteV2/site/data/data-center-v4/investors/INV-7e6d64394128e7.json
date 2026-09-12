@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T01:25:15.106Z",
-    "latestDataDate": "2026-09-11",
-    "currentDate": "2026-09-11",
-    "eventCount": 2828,
+    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
     "quarantinedEventCount": 25
   },
   "institution": {
@@ -20,27 +20,33 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-07-13",
+    "latest_disclosed_at": "2026-07-30",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "angel",
       "other",
-      "pre_series_a"
+      "pre_series_a",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-b3c628b196bfbbe9",
+        "canonical_entity_id": "",
+        "name": "贝联珠贯科技（浙江）有限公司"
+      },
       {
         "entity_id": "EN-e22521e7de65d819",
         "canonical_entity_id": "",
@@ -63,6 +69,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3a993f8d71dab42e",
+        "funding_insight_id": "FI-57f8607e9a2111db",
+        "event_ids": [
+          "EV-cf9e968f38db7796"
+        ],
+        "company_entity_id": "EN-b3c628b196bfbbe9",
+        "company_canonical_entity_id": "",
+        "company_name": "贝联珠贯科技（浙江）有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-07-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-66fcc0a528f97b62",
+            "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
+            "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
+            "source_content_hash": "c58547114571e365",
+            "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+            "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0e9f16fd6479f968",
         "funding_insight_id": "FI-fd1db2608b7fc431",
@@ -353,6 +399,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-66fcc0a528f97b62",
+        "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
+        "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
+        "source_content_hash": "c58547114571e365",
+        "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+        "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
+      },
       {
         "source_id": "FISRC-8a995421b25ccbf7",
         "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",

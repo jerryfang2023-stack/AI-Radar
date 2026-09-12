@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
+    "quarantinedEventCount": 25
+  },
+  "institution": {
+    "id": "INV-0281640da2df9b",
+    "name": "元璟资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-30",
+    "latest_disclosed_at": "2026-07-30",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b3c628b196bfbbe9",
+        "canonical_entity_id": "",
+        "name": "贝联珠贯科技（浙江）有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e79d5e68499f3d61",
+        "funding_insight_id": "FI-57f8607e9a2111db",
+        "event_ids": [
+          "EV-cf9e968f38db7796"
+        ],
+        "company_entity_id": "EN-b3c628b196bfbbe9",
+        "company_canonical_entity_id": "",
+        "company_name": "贝联珠贯科技（浙江）有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-07-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-66fcc0a528f97b62",
+            "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
+            "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
+            "source_content_hash": "c58547114571e365",
+            "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+            "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-66fcc0a528f97b62",
+        "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
+        "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
+        "source_content_hash": "c58547114571e365",
+        "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
+        "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
+      }
+    ]
+  }
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T01:25:15.106Z",
-    "latestDataDate": "2026-09-11",
-    "currentDate": "2026-09-11",
-    "eventCount": 2828,
+    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
     "quarantinedEventCount": 25
   },
   "entity": {
@@ -40,6 +40,7 @@
       "EV-8c1a2dbbb8635298",
       "EV-286574206caa37ab",
       "EV-ef6464cf7f764835",
+      "EV-f5c6b8a1ff91be78",
       "EV-935640fc8fb69e26",
       "EV-02015794e4c719d0",
       "EV-a37b9d9fb85e460f",
@@ -70,7 +71,7 @@
       "EN-d84c1d1c315bc2f8"
     ],
     "firstSeen": "2026-05-22",
-    "lastSeen": "2026-09-10",
+    "lastSeen": "2026-09-12",
     "relationIds": [
       "REL2-15efabbf98ccde8f",
       "REL2-c0686762ac59e86c",
@@ -106,6 +107,7 @@
         "EV-ef6464cf7f764835"
       ],
       "productsServices": [
+        "EV-f5c6b8a1ff91be78",
         "EV-935640fc8fb69e26",
         "EV-02015794e4c719d0",
         "EV-a37b9d9fb85e460f",
@@ -127,6 +129,24 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-f5c6b8a1ff91be78",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "第三方公司基于三星 Galaxy Watch 8 打造 Bark Watch 儿童手表，内置 AI 风险监测功能",
+        "displayTags": [],
+        "entityIds": [
+          "EN-20633c11d23ef80c",
+          "EN-968e2d5b08687bf4",
+          "EN-68a67a1fec7cd769",
+          "EN-e3cbb3bb70ea5568"
+        ]
+      },
       {
         "id": "EV-20e076804a3000b4",
         "dataDate": "2026-09-10",
@@ -1404,10 +1424,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-product_form-model",
         "TX-use_case-software_development",
+        "TX-product_form-model",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-content_creation",
@@ -1417,10 +1439,8 @@
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-automotive_transportation",
         "TX-technology-multimodal",
         "TX-ai_market_category-industry_applications",
         "TX-industry-aerospace_defense",
@@ -1494,6 +1514,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-2bb9ea947e9541c3",
         "EV-87f31c71f040785a",
         "EV-4965305d57edf6dd",
         "EV-636b45c518ae1313",
@@ -1554,9 +1575,9 @@
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
         "EV-157047393912dde3",
+        "EV-327ecd23437d5fda",
         "EV-1938f1caa0e15759",
         "EV-291060fb79c45357",
-        "EV-327ecd23437d5fda",
         "EV-3e971b2db5569c2e",
         "EV-b2573b146a89c48a",
         "EV-c74cc1e3155a00c9",
@@ -1804,6 +1825,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-4a01ebf3eb0b612d",
         "EV-cd94cdad9b5c8089",
         "EV-2838858a4f49478f",
         "EV-8025c0adfe709adf",
@@ -1911,12 +1933,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
+        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
-        "TX-use_case-software_development",
         "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -1940,7 +1963,6 @@
         "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-computer_use",
         "TX-technology-long_context",
@@ -1977,7 +1999,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-8f5edf98060f12af",
@@ -2042,6 +2064,7 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-f1cfc5004f3115bc",
         "EV-4965305d57edf6dd",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
@@ -2096,6 +2119,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-77da2ce9b815b9f8",
         "EV-c74cc1e3155a00c9",
         "EV-aa5114540046f2c0",
         "EV-83dfc99666955c16",
@@ -2307,6 +2331,10 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-6a79628f726695a3",
+        "EV-d4c42c125b98b97e",
+        "EV-1cd5b8d3842994c5",
+        "EV-bfd8258335fa295b",
         "EV-c44f8fbab9e200ca",
         "EV-621b257277382475",
         "EV-66ea621d508a975c",
@@ -2406,12 +2434,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-model",
-        "TX-use_case-software_development",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-data_analysis",
@@ -2427,13 +2457,11 @@
         "TX-technology-agentic_execution",
         "TX-technology-open_weights",
         "TX-industry-retail_ecommerce",
-        "TX-technology-embodied_ai",
         "TX-use_case-customer_support",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-long_context",
@@ -2471,7 +2499,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-d84c1d1c315bc2f8",
@@ -2715,8 +2743,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
-        "EV-53198ae84b1653e5",
         "EV-5d0f3f6556749dc5",
+        "EV-53198ae84b1653e5",
         "EV-3d7fb729ebce66cb",
         "EV-cbe5cc267353560e",
         "EV-6a5b724c821567f3",
@@ -2884,6 +2912,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-d4c42c125b98b97e",
         "EV-06e6d004096040e0",
         "EV-c3feadbc01392117",
         "EV-9c7ca787c7b4f7cf",
@@ -2968,8 +2997,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
-        "EN-67734881da046ff9",
         "EN-c608c4787821de1b",
+        "EN-67734881da046ff9",
         "EN-572e31f55b6ac1b1",
         "EN-1a6d6ea981e8688c",
         "EN-bae152c4560df38c",
@@ -3091,7 +3120,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "TX-technology-on_device",
