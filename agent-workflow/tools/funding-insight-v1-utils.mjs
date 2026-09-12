@@ -172,8 +172,8 @@ export function normalizeFundingAmount(value = "") {
   };
   if (!original || /未披露|未公布|undisclosed|not disclosed/iu.test(original)) return empty;
 
-  const compact = original.replace(/,/gu, "");
-  const implicitCnyBound = compact.match(/^(?:超过|超|逾|至少)(千万元|亿元|千万|亿)(?:级)?$/u);
+  const compact = original.replace(/,/gu, "").replace(/级别/gu, "级");
+  const implicitCnyBound = compact.match(/^(?:超过|超|逾|至少)(千万元|亿元|千万|亿)(?:级)?(?:人民币)?$/u);
   if (implicitCnyBound) {
     const minValue = amountMultiplier(implicitCnyBound[1]);
     return {
@@ -186,7 +186,7 @@ export function normalizeFundingAmount(value = "") {
       display_zh: fundingAmountDisplay("CNY", minValue, "lower_bound"),
     };
   }
-  const fuzzyCny = compact.match(/^(数)?(千万元|亿元|千万|亿)(?:级)?$/u);
+  const fuzzyCny = compact.match(/^(数)?(千万元|亿元|千万|亿)(?:级)?(?:人民币)?$/u);
   if (fuzzyCny) {
     const several = Boolean(fuzzyCny[1]);
     const scale = /亿/u.test(fuzzyCny[2]) ? 1e8 : 1e7;
@@ -201,6 +201,12 @@ export function normalizeFundingAmount(value = "") {
       status: "range",
       display_zh: `${fundingAmountDisplay("CNY", minValue, "exact")}–${fundingAmountDisplay("CNY", maxValue, "exact")}`,
     };
+  }
+  const fuzzyUsd = compact.match(/^(数)?(千万|亿)美元$/u);
+  if (fuzzyUsd) {
+    const scale = fuzzyUsd[2] === "亿" ? 1e8 : 1e7;
+    return { currency: "USD", value: fuzzyUsd[1] ? null : scale, min_value: fuzzyUsd[1] ? 2 * scale : scale,
+      max_value: fuzzyUsd[1] ? 9 * scale : scale, unit: "base", status: fuzzyUsd[1] ? "range" : "exact", display_zh: original };
   }
   const symbolMatch = compact.match(/([$€£¥￥])\s*(\d+(?:\.\d+)?)\s*(万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?/iu);
   const suffixMatch = compact.match(/(\d+(?:\.\d+)?)\s*(万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?\s*(美元|美金|人民币|元人民币|欧元|英镑|日元|元|USD|CNY|RMB|EUR|GBP|JPY)/iu);
@@ -232,17 +238,20 @@ export function normalizeFundingAmount(value = "") {
 
 function fundingAmountMentions(value = "") {
   const text = clean(value).normalize("NFKC");
-  const pattern = /(?:(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥￥]\s*\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?|\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?\s*(?:美元|美金|人民币|元人民币|欧元|英镑|日元|USD|CNY|RMB|EUR|GBP|JPY))/giu;
+  const pattern = /(?:(?:数)?(?:千万|亿)美元|(?:数)?(?:千万元|亿元|千万|亿)(?:级别|级)?(?:人民币)?|(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥￥]\s*\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?|\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?\s*(?:美元|美金|人民币|元人民币|欧元|英镑|日元|元|USD|CNY|RMB|EUR|GBP|JPY))/giu;
   return [...text.matchAll(pattern)].map((match) => {
     const before = text.slice(Math.max(0, match.index - 56), match.index);
     const after = text.slice(match.index + match[0].length, match.index + match[0].length + 56);
     const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?(?:\s+(?:above|over|more\s+than|at\s+least|approximately|about))?|valued\s+at|估值(?:达到|达|为|约|超过|高达|逾|超|推高至|提升至|升至|增至)?)\s*$/iu.test(before)
       || /^\s*(?:pre[-\s]?money|post[-\s]?money)?\s*valuation\b/iu.test(after)
       || /^\s*估值/iu.test(after);
-    const round = !valuation && (
+    const cumulative = /(?:累计|总计|合计)[^，,；;。！？]{0,24}$/u.test(before);
+    const round = !valuation && !cumulative && (
       // A financing verb in an earlier clause must not own a later valuation.
+      /(?:完成|获得|获)[^，,：:；;。！？.!?]{0,32}$/u.test(before) && /^[^，,：:；;。！？.!?]{0,24}融资/u.test(after)
+      ||
       /(?:融资|筹集|募资|raises?|raised|raising|secured|funding\s+round|round\s+of)[^，,：:；;。！？.!?]{0,48}$/iu.test(before)
-      || /^\s*(?:(?:的\s*)?(?:(?:Pre[-\s]?)?[A-Z](?:\+)?\s*轮\s*)?融资|(?:funding\s+round|round)\b)/iu.test(after)
+      || /^\s*(?:(?:的\s*)?(?:(?:(?:Pre[-\s]?)?[A-Z](?:\d+|\+)?|天使|种子|战略)\s*轮\s*)?融资|(?:funding\s+round|round)\b)/iu.test(after)
     );
     return { raw: clean(match[0]), valuation, round };
   });
@@ -1074,6 +1083,11 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
       )
   )));
   if (!companyClaims.length) return ["funding_event_company_claim_missing"];
+  const canonicalAmount = canonicalFundingEventAmount(event, claims);
+  const primaryNamesRecipient = companyNames.some((name) => normalizedName(name).length >= 4
+    && normalizedName(acceptedClaims[0]?.source_quote).includes(normalizedName(name)));
+  if (canonicalAmount && normalizeFundingAmount(canonicalAmount).currency && primaryNamesRecipient
+    && !fundingAmountsEquivalent(card.financing?.amount, canonicalAmount)) return ["funding_event_company_amount_mismatch"];
   const eventHasComparableAmount = companyClaims.some((claim) => (
     normalizeFundingAmount(claim.object).currency
       || normalizeFundingAmount(claim.source_quote).currency
@@ -1089,6 +1103,8 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
   if (!companyClaims.some((claim) => (
     fundingAmountsEquivalent(card.financing?.amount, claim.object)
       || fundingAmountsEquivalent(card.financing?.amount, claim.source_quote)
+      || fundingAmountMentions(claim.object).some((mention) => mention.round && fundingAmountsEquivalent(card.financing?.amount, mention.raw))
+      || (primaryNamesRecipient && fundingAmountsEquivalent(card.financing?.amount, canonicalAmount))
   )) && !currentRound) {
     return ["funding_event_company_amount_mismatch"];
   }
@@ -1166,7 +1182,7 @@ function fundedStartupNameFromClaims(claims = []) {
     && /(?:融资|获得|获|完成|筹集)/u.test(clean(claim.subject)));
   const acceptedQuotes = claims
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
-    .map((claim) => clean(claim.source_quote))
+    .map((claim) => clean(claim.source_quote).replace(/(?<=[\p{Script=Han}])\s+(?=[\p{Script=Han}])/gu, ""))
     .filter((quote) => /(?:融资|投资|募资|raises?|raised|funding|series|seed|round|financing)/iu.test(quote));
   for (const quote of acceptedQuotes) {
     // Chinese coverage can name an English company directly before the

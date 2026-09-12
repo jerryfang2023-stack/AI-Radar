@@ -59,6 +59,7 @@ export function selectFundingEventsForGeneration(events = [], {
   publishedCards = [],
   force: forceGeneration = false,
   eventAggregationKey = () => "",
+  allowAggregationReuse = () => true,
 } = {}) {
   if (forceGeneration) return { pending: [...events], reused: [], deduplicated: [] };
   const currentEventIds = new Set(currentCards.map((card) => card.triggered_by_event_id).filter(Boolean));
@@ -73,7 +74,7 @@ export function selectFundingEventsForGeneration(events = [], {
     const aggregationKey = eventAggregationKey(event);
     if (currentEventIds.has(event.event_id)) selection.reused.push(event);
     else if (publishedEventIds.has(event.event_id)
-      || (aggregationKey && publishedAggregationKeys.has(aggregationKey))) selection.deduplicated.push(event);
+      || (allowAggregationReuse(event) && aggregationKey && publishedAggregationKeys.has(aggregationKey))) selection.deduplicated.push(event);
     else selection.pending.push(event);
     return selection;
   }, { pending: [], reused: [], deduplicated: [] });
@@ -385,6 +386,16 @@ function modelCorrectionProblem(problem = "") {
   return problem;
 }
 
+export function domesticFundingResearchQueries(companyName, amountHint, disclosedAt = "") {
+  const name = clean(companyName);
+  return [
+    { intent: "event_discovery", query: `"${name}" ${String(disclosedAt).slice(0, 4)} 融资 轮次 金额 投资方` },
+    { intent: "funding", query: `"${name}" "${clean(amountHint)}" 本轮融资 领投 跟投` },
+    { intent: "product", query: `"${name}" 产品 服务 创始人 总部` },
+    { intent: "investor_rationale", query: `"${name}" 投资机构 投资原因 融资用途` },
+  ];
+}
+
 async function researchSources(bundle, event, company) {
   const captured = canonicalSources(bundle, event);
   const officialHosts = [...new Set(captured.map((source) => hostFor(source.source_url)).filter(Boolean))];
@@ -402,7 +413,7 @@ async function researchSources(bundle, event, company) {
   const describedSubject = clean(identityHint.match(/^(.{2,50}?)(?:\s+开发商|\s+(?:maker|creator|developer)\b)/iu)?.[1]);
   const identitySubject = describedSubject.replace(/([a-z0-9])([A-Z])/gu, "$1 $2");
   const siteHint = companyHost ? `site:${companyHost} ` : "";
-  const queries = [
+  const queries = event.market_scope?.china_market_match === true ? domesticFundingResearchQueries(company.canonical_name, amountHint, event.disclosed_at) : [
     {
       intent: "event_discovery",
       query: clean(`"${identityHint}" funding company investors product`),
@@ -938,6 +949,15 @@ async function main() {
   for (const card of recoveredCards) {
     if (!existingByEvent.has(card.triggered_by_event_id)) existingByEvent.set(card.triggered_by_event_id, card);
   }
+  const checkpointDir = args.get("checkpoint-dir") ? path.resolve(root, args.get("checkpoint-dir")) : "";
+  if (checkpointDir && fs.existsSync(checkpointDir)) for (const file of fs.readdirSync(checkpointDir).filter((name) => /^EV-[a-f0-9]+\.json$/u.test(name))) {
+    const result = readJson(path.join(checkpointDir, file), {});
+    const card = result.card;
+    const event = eventById.get(result.event_id);
+    if (!card || !event || card.triggered_by_event_id !== event.event_id || existingByEvent.has(event.event_id)) continue;
+    const normalized = normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview);
+    if (!fundingInsightProblems(normalized).length && !fundingEventCardConsistencyProblems(normalized, event, bundle.claims, bundle.entities).length) existingByEvent.set(event.event_id, normalized);
+  }
   // Keep eligibility in lockstep with the inspector: a verified announced
   // disclosure is publishable even before the event is marked completed.
   let eligibleEvents = bundle.events.filter((event) => isEligibleFundingInsightEvent(event, bundle.claims));
@@ -948,14 +968,19 @@ async function main() {
   let selectedEvents = eventIds.size
     ? eligibleEvents.filter((event) => eventIds.has(event.event_id))
     : events;
+  if (args.get("market-region") === "CN") selectedEvents = selectedEvents.filter((event) => event.market_scope?.china_market_match === true);
   if (limit) {
     selectedEvents = selectedEvents.slice(0, limit);
   }
+  const historySourceIds = new Set(readJson(path.join(root, "01-SiteV2/content/11-databases/data-center-v4", date, "historical-funding-authorization.json"), {}).source_refs || []);
   const generationSelection = selectFundingEventsForGeneration(selectedEvents, {
     currentCards: [...existingByEvent.values()],
     publishedCards: publishedFundingCards(root, output),
     force,
     eventAggregationKey: (event) => fundingEventAggregationKey(event, bundle, entityIndex),
+    // Historical rounds need their own evidence and disclosure references.
+    // A company/round label alone does not establish that this is the old event.
+    allowAggregationReuse: (event) => !(event.source_refs || []).some((id) => historySourceIds.has(id)),
   });
   const pending = generationSelection.pending;
   if (!write) {
@@ -989,7 +1014,11 @@ async function main() {
   const results = pending.length
     ? await mapConcurrent(
       pending,
-      (event) => processEvent(bundle, event, entityIndex, entityDecisions, companyIdentityReview),
+      async (event) => {
+        const result = await processEvent(bundle, event, entityIndex, entityDecisions, companyIdentityReview);
+        if (checkpointDir) writeJson(path.join(checkpointDir, `${event.event_id}.json`), result);
+        return result;
+      },
       concurrency,
     )
     : [];

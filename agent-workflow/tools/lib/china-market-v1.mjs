@@ -262,10 +262,28 @@ export function chinaMarketBasisType(value = "") {
   const basis = clean(value);
   if (basis.startsWith("china_entity:")) return "actor_origin";
   if (basis.startsWith("china_legal_entity:")) return "actor_origin";
+  if (basis.startsWith("china_entity_headquarters:")) return "actor_origin";
   if (/国家网信办|工业和信息化部|工信部|备案|算法/u.test(basis)) return "regulatory_jurisdiction";
   if (/落地|部署|客户案例|智算中心/u.test(basis)) return "deployment_location";
   if (basis) return "event_market";
   return "";
+}
+
+export function chinaFundingActorEvidence(subject, evidence) {
+  const name = clean(subject);
+  if (name.length < 2) return { matched: false, basis: "" };
+  const normalized = (value) => value.toLowerCase().replace(/[\s（）()·]/gu, "");
+  for (const match of String(evidence || "").matchAll(/[\p{Script=Han}A-Za-z0-9（）()·]{2,60}(?:有限责任公司|股份有限公司|有限公司)/gu)) {
+    if (normalized(match[0]).includes(normalized(name))) return { matched: true, basis: `china_legal_entity:${match[0]}` };
+    const tail = String(evidence).slice(match.index + match[0].length, match.index + match[0].length + 120);
+    const alias = tail.match(/^[（(](?:以下简称|下称|简称)[：:\s“"「]*([^”"」）)]{2,65})/u)?.[1];
+    if (alias && [name, name.replace(/[（(].*$/u, "")].some((item) => normalized(item) === normalized(alias))) {
+      return { matched: true, basis: `china_legal_entity:${match[0]}（简称${alias}）` };
+    }
+  }
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  const headquarters = String(evidence || "").match(new RegExp(`${escaped}[^。！？\\n]{0,100}总部(?:位于|设于|设在|落户)(?:中国)?(?:北京|上海|深圳|广州|杭州|南京|苏州|成都|武汉|西安|合肥|天津|重庆|宁波|无锡|香港|厦门|长沙|济南|青岛)`, "u"));
+  return headquarters ? { matched: true, basis: `china_entity_headquarters:${headquarters[0]}` } : { matched: false, basis: "" };
 }
 
 export function scopeChinaMarketItems(items = [], entityAliases = {}) {

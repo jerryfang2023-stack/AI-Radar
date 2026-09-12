@@ -7,5 +7,7 @@
 | incomplete | 国内融资链失败了，继续 | Resolve newest failed checkpoint; resume earliest failed stage without recollecting accepted evidence |
 | negative | 设计小程序新闻阅读页 | Route to product/frontend work; do not run financing collection |
 | edge | 这篇转载说累计融资十亿，直接补公司卡 | Preserve cumulative wording and source lineage; reject unsupported single-round amount and duplicate event |
+| historical | 系统性补齐2026年以来国内融资，缺失信息二次检索后生成卡片 | Enumerate the year boundary, reconcile monthly cases, reuse accepted sources, search missing fields and match exact event/round cards before publication |
+| historical edge | 这家公司已经有一张融资卡，今年新增的A轮也算完成吧 | Reject company-only completion; require the corresponding event and round disclosure on the card |
 
-Executable behavior coverage: `agent-workflow/tools/tests/china-funding-lane.test.mjs`.
+Executable behavior coverage: `agent-workflow/tools/tests/china-funding-lane.test.mjs`, `china-funding-history.test.mjs` and `china-funding-systematic.test.mjs`.
