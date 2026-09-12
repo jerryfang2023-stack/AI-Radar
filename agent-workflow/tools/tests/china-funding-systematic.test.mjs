@@ -19,6 +19,7 @@ test("Chinese round proceeds retain fuzzy amounts and do not substitute cumulati
     assert.equal(canonicalFundingEventAmount(event, []), amount);
     assert.ok(normalizeFundingAmount(amount).currency);
   }
+  assert.equal(canonicalFundingEventAmount({ object: "完成10亿元B轮融资", display_title_zh: "两个月融资25亿元，公司完成新一轮融资" }), "10亿元");
   const claim = { claim_id: "C", claim_type: "funding", verification_status: "accepted", subject: "设序科技", object: "完成B轮超亿元融资", source_quote: "设序科技完成B轮超亿元融资，累计获超3亿元融资。" };
   const event = { event_id: "E", entities: ["CO", "INV"], claim_refs: ["C"], event_status: "completed", publication_status: "verified" };
   const card = { company: { entity_id: "CO", name: "设序科技" }, financing: { amount: "超亿元" } };

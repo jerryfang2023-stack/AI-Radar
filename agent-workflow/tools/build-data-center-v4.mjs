@@ -320,6 +320,8 @@ function publicEventSourceTitleIssue(title) {
   if (/^AI\s+(?:(?:infrastructure\s+)?startups?|agents?)\s+funding\s+20\d{2}\b|^AI\s*(?:基础设施)?(?:初创公司|初创企业|智能体)\s*融资\s*20\d{2}/iu.test(value)) {
     return "multi_event_roundup_not_single_event_source";
   }
+  if (/^(?:奉劝|劝告|建议)(?:各位|所有|大家|AI)|^谁拥有.{1,60}[？?]/u.test(value)) return "reaction_or_commentary_not_new_event";
+  if (/^\d+笔.{0,15}融资[，,].{0,50}(?:这些|公司)|^本轮融资由/u.test(value)) return "roundup_or_body_fragment_not_event_title";
   if (QUESTION_HEADLINE.test(value)) return "question_headline_not_event_specific";
   if (GENERIC_INDEX_TITLE.test(value)) return "index_or_listing_page_not_event_source";
   if (GENERIC_ROUNDUP_TITLE.test(value)) return "multi_event_roundup_not_single_event_source";
@@ -2507,9 +2509,36 @@ function loadRawEntries(date) {
   return privateEntries;
 }
 
+export function withdrawInvalidTitleEvents(bundle) {
+  const rejected = bundle.canonical_events.filter(event => publicEventSourceTitleIssue(event.display_title_zh));
+  const ids = new Set(rejected.map(event => event.event_id));
+  for (const event of rejected) {
+    bundle.qa_queue.push({ qa_id: `QA-${hash(event.event_id + "|title-withdrawal")}`, asset_id: event.event_id, reason: publicEventSourceTitleIssue(event.display_title_zh), status: "open", source_ref: event.source_refs[0] });
+  }
+  // Preserve Raw, Claims and evidence locators; withdraw event publication and its projections.
+  for (const [name, rows] of Object.entries(bundle)) {
+    if (!Array.isArray(rows) || name === "qa_queue") continue;
+    bundle[name] = rows.filter(row => !ids.has(row.event_id));
+    for (const row of bundle[name]) {
+      for (const key of ["event_refs", "event_candidate_ids"]) {
+        if (Array.isArray(row[key])) row[key] = row[key].filter(id => !ids.has(id));
+      }
+    }
+  }
+  for (const name of Object.keys(bundle.manifest.counts)) bundle.manifest.counts[name] = bundle[name].length;
+  return { withdrawn_event_ids: [...ids] };
+}
+
 function main() {
   const date = arg("date", availableDates().at(-1));
   if (!date) throw new Error("No Raw date is available. Pass --date=YYYY-MM-DD.");
+  if (arg("withdraw-invalid-title-events") === "true") {
+    const bundle = loadExistingBundle(date);
+    const repair = withdrawInvalidTitleEvents(bundle);
+    writeBundle(bundle, date);
+    console.log(JSON.stringify({ ok: true, date, ...repair }));
+    return;
+  }
   if (arg("repair-existing-entity-links") === "true") {
     const bundle = loadExistingBundle(date);
     const repair = repairExistingEntityLinks(bundle);

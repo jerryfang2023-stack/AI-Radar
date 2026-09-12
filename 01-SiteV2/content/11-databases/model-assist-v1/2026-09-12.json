@@ -1,9 +1,9 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-09-12T08:47:27.929Z",
+  "generated_at": "2026-09-12T08:58:16.886Z",
   "data_date": "2026-09-12",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 1416,
+  "source_count": 1422,
   "candidates": [
     {
       "candidate_id": "MAC-05283a81444e7d9a",
@@ -45147,6 +45147,110 @@
         }
       ],
       "generated_at": "2026-09-12T08:47:27.907Z"
+    },
+    {
+      "candidate_id": "MAC-932bc8f7a2c3f958",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-1a17214d3cc56998",
+      "raw_id": "RAW-1a17214d3cc56998",
+      "source_ref": "SA-2aa93a1b3fc6484b",
+      "source_hash": "0020ed71c35b8abf",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "星睿云智科技有限公司",
+            "object": "获得戈壁创投的战略投资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 396,
+          "end": 457,
+          "quote": "星睿云智科技有限公司（下称「星睿云智」）近日获得戈壁创投的战略投资，用以加速其人工智能驱动的卫星气象解决方案的商业化发展。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T08:58:15.348Z"
+    },
+    {
+      "candidate_id": "MAC-86875473859917c2",
+      "task_type": "claim_extraction",
+      "asset_id": "HISTORY-RAW-988bb9820259c959",
+      "raw_id": "RAW-988bb9820259c959",
+      "source_ref": "SA-b4cfe61a98400e8a",
+      "source_hash": "114a36005afba4d9",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "china-funding-history-2026-09-12.1",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "云松鼠智能",
+            "object": "完成Pre-A轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 184,
+          "end": 331,
+          "quote": "2026年1月9日，云松鼠智能宣布完成Pre-A轮融资。本轮融资由中关村发展集团与自变量机器人共同投资。云松鼠智能是一家专注于智能机器人研发的科技企业，致力于推动机器人在多场景下的智能化应用。此次融资将主要用于技术研发、产品迭代及市场拓展。本轮投资方看好其在人工智能与机器人融合领域的创新潜力。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T08:58:16.872Z"
     }
   ]
 }

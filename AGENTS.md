@@ -16,7 +16,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current dashboard source: `01-SiteV2/site/operations-console.html`, `OPS-V3.7.1-china-funding-history`; deploy only to the authenticated VPS route `https://www.zkdlj.vip/ops/`, never in the GitHub Pages artifact. The allowlisted administrator email challenge establishes an HttpOnly, SameSite=Strict VPS session for the whole console. Membership & Entitlements keeps aggregate overview separate from persistent Community Application Review, Community Member Management, Mini Program Member Management and Activity Scheduling subpanels; all reuse the console session and load protected data only when opened. Successful Mini Program member adjustments return to the user list instead of leaving the editor open. Issue/task UI panels are retired; records remain. System Settings owns integration/freshness information and device-local preferences.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
 - Current First-Line Viewpoints column version: FLV-V1.1.0-history-backfill.
-- Current Community Intelligence column version: CINT-V1.4.0-monthly-archive.
+- Current Community Intelligence column version: CINT-V1.4.2-vi-alignment.
 - Current Enterprise AI / FDE data version: FDE-V2.0.
 - Current Enterprise AI / FDE observation version: FDE-OBSERVATION-V1.0.
 - Current AI Hardware data version: HARDWARE-V1.0.

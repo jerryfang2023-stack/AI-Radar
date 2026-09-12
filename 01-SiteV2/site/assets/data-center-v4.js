@@ -34,13 +34,6 @@
     "研究结果",
     "AI 硬件"
   ];
-  const eventDisplayPriority = new Map([
-    ["融资与并购", 0],
-    ["部署与案例", 1],
-    ["商业合作", 2],
-    ["模型、产品与服务", 3]
-  ]);
-
   const viewConfig = {
     events: { title: "事件库", description: "可追溯的 AI 行业事实事件，FDE 与 AI 硬件作为主题视图统一检索", detail: "event", dataKey: "events", placeholder: "搜索事件标题、公司、产品或关键词" },
     index: { title: "实体库", description: "公司机构、投资机构、产品模型与人物的证据化历史档案，事实关系与投资活动内嵌于实体详情", placeholder: "搜索公司、投资机构、产品、模型、人物或别名" },
@@ -76,7 +69,7 @@
       query: params.get("q") || "",
       source: communitySource === "aipoju" ? "aipoju" : "scys",
       scene: "all",
-      industry: "all", offering: "all", stage: "all", channel: "all", reviewStatus: "all", month: /^\d{4}-(0[1-9]|1[0-2])$/.test(params.get("month") || "") ? params.get("month") : "all"
+      industry: "all", offering: "all", stage: "all", channel: "all", reviewStatus: "all", month: /^\d{4}-(0[1-9]|1[0-2])$/.test(params.get("month") || "") ? params.get("month") : params.get("month") === "all" ? "all" : "latest"
     }
   };
   const viewpointPageSize = 16;
@@ -213,7 +206,7 @@
   }
 
   function entityIndexItems(data) {
-    return [
+    const rows = [
       ...(data.companies || []).map((item) => ({
         ...item,
         indexType: "company",
@@ -252,7 +245,17 @@
         indexSub: `${item.eventIds.length} 条关联事件`,
         detailKind: "taxonomy"
       }))
-    ].sort((a, b) => a.name.localeCompare(b.name, "zh-CN") || a.indexType.localeCompare(b.indexType));
+    ];
+    const companies = new Map(rows.filter(item => item.indexType === "company").map(item => [item.id, item]));
+    for (const item of rows.filter(item => item.indexType === "investor")) {
+      const company = companies.get(item.canonical_entity_id);
+      if (!company) continue;
+      company.investorId = item.id;
+      company.indexKind += ` · ${item.investor_kind_label || "投资方"}`;
+      company.indexSub = [company.indexSub, item.indexSub].filter(Boolean).join(" · ");
+    }
+    return rows.filter(item => item.indexType !== "investor" || !companies.has(item.canonical_entity_id) || params.get("type") === "investor")
+      .sort((a, b) => ["company", "product", "person", "investor", "technology", "context"].indexOf(a.indexType) - ["company", "product", "person", "investor", "technology", "context"].indexOf(b.indexType) || a.name.localeCompare(b.name, "zh-CN"));
   }
 
   function relationshipEntityItems(data) {
@@ -294,8 +297,8 @@
     return items
       .map((item, index) => ({ item, index }))
       .sort((a, b) => (
-        (eventDisplayPriority.get(a.item.eventGroup) ?? 4)
-        - (eventDisplayPriority.get(b.item.eventGroup) ?? 4)
+        String(b.item.dataDate || "").localeCompare(String(a.item.dataDate || ""))
+        || String(b.item.date || "").localeCompare(String(a.item.date || ""))
         || a.index - b.index
       ))
       .map(({ item }) => item);
@@ -434,11 +437,15 @@
         { value: "hardware", label: "AI 硬件" }
       ], selectedTheme, "全部事件专题")}</select>`);
       pieces.push(`<select class="dc-select" name="type" aria-label="商业事件类型" data-auto-submit>${optionList(eventGroupOrder, selectedType, "全部商业事件类型")}</select>`);
-      const classifications = new Map(items.flatMap((item) => normalizeTags(item.classifications)).map((entry) => [
+      const entries = items.flatMap(item => normalizeTags(item.classifications));
+      const dimensions = [...new Map(entries.map(entry => [entry.dimensionId, entry.dimensionName || "技术"])).entries()];
+      const dimension = params.get("dimension") || entries.find(entry => taxonomyToken(entry) === selectedTag)?.dimensionId || "";
+      pieces.push(`<select class="dc-select" name="dimension" aria-label="分类维度" data-auto-submit>${optionList(dimensions.map(([value, label]) => ({ value, label })), dimension, "选择分类维度")}</select>`);
+      const classifications = new Map(entries.filter(entry => entry.dimensionId === dimension).map((entry) => [
         taxonomyToken(entry),
         `${entry.dimensionName || "分类"} · ${entry.name}`
       ]));
-      pieces.push(`<select class="dc-select" name="tag" aria-label="技术、场景与产品分类" data-auto-submit>${optionList([...classifications].map(([value, label]) => ({ value, label })).sort((a, b) => a.label.localeCompare(b.label, "zh-CN")), selectedTag, "技术 / 场景 / 产品")}</select>`);
+      pieces.push(`<select class="dc-select" name="tag" aria-label="分类内容" data-auto-submit>${optionList([...classifications].map(([value, label]) => ({ value, label })).sort((a, b) => a.label.localeCompare(b.label, "zh-CN")), selectedTag, "全部分类内容")}</select>`);
     } else if (targetView === "index") {
       pieces.push(`<select class="dc-select" name="region" aria-label="地域范围" data-auto-submit>${optionList(marketScopeOptions, selectedRegion, "全部地域")}</select>`);
     } else if (targetView === "relations") {
@@ -451,7 +458,7 @@
       pieces.push(`<select class="dc-select" name="person" aria-label="人物" data-auto-submit>${optionList(uniqueSorted(items.map((item) => item.person)), selectedPerson, "全部人物")}</select>`);
     }
 
-    if (targetView !== "events") pieces.push(`<select class="dc-select" name="tag" aria-label="Tag" data-auto-submit>${optionList(allTags, selectedTag, "Tag")}</select>`);
+    if (targetView !== "events") pieces.push(`<select class="dc-select" name="tag" aria-label="分类标签" data-auto-submit>${optionList(allTags, selectedTag, "全部标签")}</select>`);
     return pieces.join("");
   }
 
@@ -479,7 +486,7 @@
         <button class="dc-button" type="submit">搜索</button>
         ${toolbarFilters(data, targetView)}
         ${isIndex ? "" : `<details class="dc-more"${moreActive ? " open" : ""}>
-          <summary class="dc-filter-summary"${moreActive ? " data-active=true" : ""}>更多筛选</summary>
+          <summary class="dc-filter-summary"${moreActive ? " data-active=true" : ""}>日期筛选</summary>
           <div class="dc-more-panel">
             <label class="dc-field">开始日期<input type="date" name="from" value="${escapeHtml(from)}" min="${escapeHtml(minimumDate)}" max="${escapeHtml(to || maximumDate)}"></label>
             <label class="dc-field">结束日期<input type="date" name="to" value="${escapeHtml(to)}" min="${escapeHtml(from || minimumDate)}" max="${escapeHtml(maximumDate)}"></label>
@@ -487,7 +494,7 @@
             <button class="dc-filter-apply" type="submit">应用筛选</button>
           </div>
         </details>`}
-        <a class="dc-clear" href="${escapeHtml(viewLink(targetView))}">清除条件</a>
+        <a class="dc-clear" href="${escapeHtml(viewLink(targetView))}">重置</a>
       </form>
     `;
   }
@@ -505,7 +512,7 @@
       { value: "company", label: "公司机构库", count: matching.filter((item) => item.indexType === "company").length },
       { value: "product", label: "产品模型库", count: matching.filter((item) => item.indexType === "product").length },
       { value: "person", label: "人物库", count: matching.filter((item) => item.indexType === "person").length },
-      { value: "investor", label: "投资机构库", count: matching.filter((item) => item.indexType === "investor").length },
+      { value: "investor", label: "投资机构库", count: (data.investors || []).filter(item => matchesQuery(item, ["name", "aliases", "portfolio_companies"], query) && !tag).length },
       { value: "technology", label: "技术词表", count: matching.filter((item) => item.indexType === "technology").length },
       { value: "context", label: "场景行业词表", count: matching.filter((item) => item.indexType === "context").length }
     ];
@@ -571,10 +578,10 @@
   function rowData(item, targetView, showDate) {
     if (targetView === "events") {
       return {
-        kind: item.eventGroup,
+        kind: item.eventTypeLabel || item.eventGroup,
         date: showDate ? item.dataDate : "",
         title: item.title,
-        sub: "",
+        sub: [item.publisher, ({ rumored: "传闻", disputed: "有争议", withdrawn: "已撤回" }[item.status] || item.statusLabel)].filter(Boolean).join(" · "),
         tags: item.displayTags || item.tags,
         href: detailLink("events", "event", item.id)
       };
@@ -638,8 +645,8 @@
         <div class="dc-list-row">
           <a class="dc-row-hit" href="${escapeHtml(row.href)}" aria-label="${escapeHtml(row.title)}"></a>
           <span class="dc-row-kind">${escapeHtml(row.kind || "未披露")}${row.date ? `<small class="dc-row-date">${escapeHtml(row.date)}</small>` : ""}${row.secondaryDate ? `<small class="dc-row-date">${escapeHtml(row.secondaryDate)}</small>` : ""}</span>
-          <span class="dc-row-title">${escapeHtml(row.title)}${row.sub ? `<small>${escapeHtml(row.sub)}</small>` : ""}</span>
-          ${renderTags(row.tags, 2)}
+          <span class="dc-row-title"><span class="dc-row-headline">${escapeHtml(row.title)}</span>${row.sub ? `<small>${escapeHtml(row.sub)}</small>` : ""}</span>
+          ${item.investorId ? `<a class="dc-role-link" href="${escapeHtml(detailLink("index", "investor", item.investorId))}">投资记录</a>` : renderTags(row.tags, 2)}
         </div>
       `;
     }).join("")}</div>`;
@@ -1041,11 +1048,16 @@
 
   function communityDisplaySummary(item, title = communityDisplayTitle(item), limit = 210) {
     const rawTitle = communityTidy(item.title || item.detailTitle || "");
-    let body = communityTidy(item.summary || item.evidence || item.excerpt || "");
-    if (rawTitle && body.startsWith(rawTitle)) body = body.slice(rawTitle.length);
-    else if (title && body.startsWith(title)) body = body.slice(title.length);
-    body = body.replace(/^[\s,.;:!?，。；：！？、+\-—]+/u, "").trim();
-    return communityCompact(body || item.evidence || item.excerpt || "", limit);
+    for (const value of [item.summary, item.excerpt, item.evidence]) {
+      let body = communityTidy(value || "");
+      if (rawTitle && body.startsWith(rawTitle)) body = body.slice(rawTitle.length);
+      else if (title && body.startsWith(title)) body = body.slice(title.length);
+      body = body.replace(/https?:\/\/[^\s<>]+/gu, "").replace(/^[\s,.;:!?，。；：！？、+\-—]+/u, "").trim();
+      const sentences = body.split(/(?<=[。！？!?])\s*/u).filter(sentence =>
+        sentence.length >= 20 && !/^(?:hello|hi|大家好|各位好|我是|我叫|本人|先自我介绍|去年.{0,8}毕业)/iu.test(sentence));
+      if (sentences.length) return communityCompact(sentences.join(" "), limit);
+    }
+    return "";
   }
 
   function communityLinks(item) {
@@ -1268,9 +1280,13 @@
     const href = safeExternalUrl(resource.href);
     const label = { document: "实操文档", manual: "航海手册", tool: "工具", case: "关联案例" }[resource.kind] || "资料";
     const title = resource.text && !/^https?:/i.test(resource.text) ? resource.text : resource.owners[0]?.itemTitle || "实操资料";
+    const ownerItems = (resource.owners || []).map((owner) => communityItems().find((item) => item.id === owner.itemId)).filter(Boolean);
+    const summarySource = resource.description ? "资料摘要" : "原帖摘要";
+    const summary = communityCompact(String(resource.description || ownerItems.map((item) => communityDisplaySummary(item, communityDisplayTitle(item))).find(Boolean) || "").replace(/https?:\/\/[^\s<>]+/gu, "").trim(), 220);
     return `<article class="dc-community-card dc-resource-card">
       <div class="dc-community-card-meta"><span>${label}</span></div>
       <h3>${href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>` : escapeHtml(title)}</h3>
+      ${summary ? `<p class="dc-resource-summary"><strong>${summarySource}</strong><span class="dc-summary-text">${escapeHtml(summary)}</span></p>` : ""}
       ${href ? `<a class="dc-resource-url" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(href)}</a>` : ""}
       ${resource.entries?.length ? `<details><summary>手册目录 · ${resource.entries.length} 节</summary><ul>${resource.entries.map((entry) => `<li>${escapeHtml(entry.title)}</li>`).join("")}</ul></details>` : ""}
       <div class="dc-community-card-actions">${resource.owners.map((owner) => `<button type="button" data-community-open="${escapeHtml(owner.itemId)}">所属帖子：${escapeHtml(communityCompact(owner.itemTitle, 45))}</button>`).join("")}</div>
@@ -1285,7 +1301,7 @@
       <div class="dc-community-card-meta"><span>${escapeHtml(item.author || "作者未披露")}</span><time>${escapeHtml(item.publishedAt ? item.publishedAt.slice(0, 10) : "最近采集 " + item.lastSeen)}</time></div>
       <h3>${escapeHtml(communityDisplayTitle(item))}</h3>
       ${profile.reviewed ? `<dl class="dc-scys-profile">${Object.entries({ industry: "客户行业", offering: "产品 / 服务", stage: "创业阶段", channel: "获客渠道" }).map(([key, label]) => `<div><dt>${label}</dt><dd>${escapeHtml(profile[key])}</dd></div>`).join("")}</dl>` : ""}
-      <p class="dc-scys-need"><strong>${profile.reviewed ? "客户需求" : "内容摘录"}</strong>${escapeHtml(profile.fields.need || communityDisplaySummary(item, communityDisplayTitle(item)))}</p>
+      <p class="dc-scys-need"><strong>${profile.reviewed ? "客户需求" : "内容摘录"}</strong><span class="dc-summary-text">${escapeHtml(profile.fields.need || communityDisplaySummary(item, communityDisplayTitle(item)))}</span></p>
       <div class="dc-community-card-actions"><button type="button" data-community-open="${escapeHtml(item.id)}">${profile.reviewed ? "查看首单、报价与交付" : "查看案例"}</button>${links.length ? `<span>实操资料 ${links.length} 份</span>` : ""}${originalUrl ? `<a href="${escapeHtml(originalUrl)}" target="_blank" rel="noopener noreferrer">原帖 ↗</a>` : ""}</div>
     </article>`;
   }
@@ -1295,13 +1311,19 @@
   }
 
   function scysRenderArchive() {
-    communitySetUrlDate(communityState.selectedDate);
     const resources = communityState.activeView === "resources";
     const all = communityItems();
     const byId = new Map(all.map((item) => [item.id, item]));
     const monthOf = resources ? (row) => row.owners.map((owner) => scysArchiveMonth(byId.get(owner.itemId) || {})).sort()[0] || "unknown" : scysArchiveMonth;
-    const candidates = resources ? scysResourceRows(all) : all.filter((item) => scysModel.profile(item, communityState.editorial).caseMaterial);
+    const cases = all.filter(item => scysModel.profile(item, communityState.editorial).caseMaterial);
+    const candidates = resources ? scysResourceRows(all) : cases.filter(item => {
+      if (communityCanonicalItemUrl(item) || !item.author) return true;
+      const matches = cases.filter(other => other.author === item.author && other.title === item.title && scysArchiveMonth(other) === scysArchiveMonth(item) && communityCanonicalItemUrl(other));
+      return matches.length !== 1;
+    });
     const months = [...new Set(candidates.map(monthOf))].sort().reverse();
+    if (communityState.filters.month === "latest") communityState.filters.month = months.find((month) => month !== "unknown") || "all";
+    communitySetUrlDate(communityState.selectedDate);
     if (communityState.filters.month !== "all" && !months.includes(communityState.filters.month)) months.push(communityState.filters.month);
     const query = communityState.filters.query.trim().toLocaleLowerCase();
     const rows = candidates.filter((row) => (communityState.filters.month === "all" || monthOf(row) === communityState.filters.month)
@@ -1320,8 +1342,8 @@
         ${resources ? `<select class="dc-select" name="resourceKind" aria-label="资料类型">${Object.entries({all:"全部资料",document:"实操文档",manual:"航海手册",tool:"工具",case:"关联案例"}).map(([key,label])=>`<option value="${key}"${(communityState.filters.resourceKind || "all") === key ? " selected" : ""}>${label}</option>`).join("")}</select>` : ""}
         <button class="dc-button" type="submit">搜索</button><button class="dc-clear" type="button" data-community-clear>重置</button>
       </form>
-      <section class="dc-scys-archive"><div class="dc-community-section-head"><h2>${scysViews[communityState.activeView].label}</h2><span>${rows.length} 条</span></div>
-      ${[...groups].map(([month, items]) => `<section class="dc-scys-month"><h3>${monthLabel(month)}</h3><div class="dc-community-grid">${items.map(resources ? scysResourceCard : scysCaseCard).join("")}</div></section>`).join("") || '<div class="dc-empty">暂无内容</div>'}
+      <section class="dc-scys-archive" aria-label="${scysViews[communityState.activeView].label}">
+      ${[...groups].map(([month, items]) => `<section class="dc-scys-month" data-archive-month="${escapeHtml(month)}"><div class="dc-community-grid">${items.map(resources ? scysResourceCard : scysCaseCard).join("")}</div></section>`).join("") || '<div class="dc-empty">暂无内容</div>'}
       ${communityRenderPagination(rows.length)}</section>`;
     communityBindInteractions();
   }
@@ -1437,7 +1459,7 @@
     if (communitySource === "aipoju") next.searchParams.set("date", date);
     else if (communityState.activeView === "weekly") next.searchParams.set("week", scysModel.weekRange(date).start);
     next.searchParams.set("section", communityState.activeView);
-    if (communitySource === "scys" && communityState.filters.month !== "all") next.searchParams.set("month", communityState.filters.month);
+    if (communitySource === "scys") next.searchParams.set("month", communityState.filters.month);
     else next.searchParams.delete("month");
     if (communityState.filters.query) next.searchParams.set("q", communityState.filters.query);
     else next.searchParams.delete("q");
@@ -1490,7 +1512,7 @@
       communityRender();
     });
     root.querySelector("[data-community-clear]")?.addEventListener("click", () => {
-      communityState.filters = { query: "", source: communityState.filters.source, scene: "all", industry: "all", offering: "all", stage: "all", channel: "all", resourceKind: "all", reviewStatus: "all", month: "all" };
+      communityState.filters = { query: "", source: communityState.filters.source, scene: "all", industry: "all", offering: "all", stage: "all", channel: "all", resourceKind: "all", reviewStatus: "all", month: "latest" };
       communityState.activeScene = "all";
       communityState.page = 1;
       communityRender();
@@ -2436,7 +2458,10 @@
         if (form.reportValidity()) applyFilters();
       });
       form.querySelectorAll("[data-auto-submit]").forEach((control) => {
-        control.addEventListener("change", applyFilters);
+        control.addEventListener("change", () => {
+          if (control.name === "dimension") form.elements.namedItem("tag").value = "";
+          applyFilters();
+        });
       });
       const fromInput = form.elements.namedItem("from");
       const toInput = form.elements.namedItem("to");
@@ -2548,15 +2573,41 @@
 
   const navToggle = document.querySelector("[data-nav-toggle]");
   const sidebar = document.querySelector("[data-sidebar]");
-  navToggle?.addEventListener("click", () => {
-    const open = sidebar.dataset.open !== "true";
+  const backdrop = document.createElement("button");
+  backdrop.className = "dc-nav-backdrop";
+  backdrop.setAttribute("aria-label", "关闭导航");
+  backdrop.hidden = true;
+  document.body.append(backdrop);
+  const setNavOpen = (open) => {
     sidebar.dataset.open = String(open);
-    navToggle.setAttribute("aria-expanded", String(open));
+    sidebar.inert = !open && window.matchMedia("(max-width: 780px)").matches;
+    navToggle?.setAttribute("aria-expanded", String(open));
+    if (navToggle) navToggle.textContent = open ? "关闭" : "栏目";
+    backdrop.hidden = !open;
+    document.querySelector("main").inert = open;
+    document.body.classList.toggle("dc-nav-open", open);
+    if (!open) navToggle?.focus();
+  };
+  navToggle?.addEventListener("click", () => setNavOpen(sidebar.dataset.open !== "true"));
+  backdrop.addEventListener("click", () => setNavOpen(false));
+  document.addEventListener("keydown", event => {
+    if (sidebar?.dataset.open !== "true") return;
+    if (event.key === "Escape") setNavOpen(false);
+    if (event.key === "Tab") {
+      const controls = [navToggle, ...sidebar.querySelectorAll("a, button")].filter(Boolean);
+      const first = controls[0], last = controls.at(-1);
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
+  });
+  sidebar.inert = window.matchMedia("(max-width: 780px)").matches;
+  window.matchMedia("(max-width: 780px)").addEventListener("change", () => {
+    if (sidebar?.dataset.open === "true") setNavOpen(false);
+    sidebar.inert = window.matchMedia("(max-width: 780px)").matches;
   });
   sidebar?.addEventListener("click", (event) => {
     if (event.target.closest("a") && window.matchMedia("(max-width: 780px)").matches) {
-      sidebar.dataset.open = "false";
-      navToggle?.setAttribute("aria-expanded", "false");
+      setNavOpen(false);
     }
   });
 

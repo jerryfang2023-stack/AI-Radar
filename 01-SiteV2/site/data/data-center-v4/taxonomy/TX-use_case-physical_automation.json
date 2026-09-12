@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T07:23:16.602Z",
+    "generatedAt": "2026-09-12T08:30:34.647Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2875,
-    "quarantinedEventCount": 26
+    "eventCount": 2865,
+    "quarantinedEventCount": 33
   },
   "node": {
     "id": "TX-use_case-physical_automation",
@@ -18,7 +18,6 @@
     "typeLabel": "应用场景",
     "valueId": "physical_automation",
     "eventIds": [
-      "EV-ad311b98b372dc20",
       "EV-0e7c33ff3b622ab1",
       "EV-b91024c06d8762a4",
       "EV-a2f902b9707ffd02",
@@ -142,7 +141,6 @@
       "EV-ad64347138da72bb"
     ],
     "entityIds": [
-      "EN-51cb2d61b4ad1251",
       "EN-f07813b0d063bdb6",
       "EN-3b07d7518a8133fa",
       "EN-94cca1a82802fa64",
@@ -257,89 +255,6 @@
     "lastSeen": "2026-09-12"
   },
   "events": [
-    {
-      "id": "EV-ad311b98b372dc20",
-      "dataDate": "2026-09-12",
-      "date": "2026-09-12",
-      "updatedDate": "2026-09-12",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "139笔过亿融资，超600亿真金白银，砸向这些AI公司-36氪",
-      "originalTitle": "",
-      "subject": "乐聚机器人",
-      "action": "融资",
-      "object": "，超600亿真金白银，砸向这些AI公司-36氪",
-      "metrics": [
-        "15亿",
-        "90亿"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [
-              "EN-51cb2d61b4ad1251"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-51cb2d61b4ad1251"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-51cb2d61b4ad1251"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-51cb2d61b4ad1251"
-      ],
-      "entityNames": [
-        "乐聚机器人于10月"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://36kr.com/p/3546815118159749",
-      "publisher": "36氪"
-    },
     {
       "id": "EV-0e7c33ff3b622ab1",
       "dataDate": "2026-09-12",
@@ -24540,27 +24455,6 @@
   ],
   "entities": [
     {
-      "id": "EN-51cb2d61b4ad1251",
-      "name": "乐聚机器人于10月",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ad311b98b372dc20"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-12",
-      "lastSeen": "2026-09-12"
-    },
-    {
       "id": "EN-f07813b0d063bdb6",
       "name": "超维动力",
       "entityType": "organization_candidate",
@@ -24575,8 +24469,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-on_device",
+        "TX-use_case-physical_automation",
         "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
@@ -25308,8 +25202,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-on_device",
+        "TX-use_case-physical_automation",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-ai_market_application-chips",
@@ -25594,7 +25488,6 @@
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
-        "EV-9356dd1be92ef5c6",
         "EV-9e2c443eae76fb50",
         "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
@@ -26428,8 +26321,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-on_device",
+        "TX-use_case-physical_automation",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-product_form-end_user_application",
@@ -26631,8 +26524,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-on_device",
+        "TX-use_case-physical_automation",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",

@@ -2858,14 +2858,14 @@
   {
     "qa_id": "QA-0b0b3f3890b4da5d",
     "asset_id": "RAW-d527f91e9556ab03",
-    "reason": "historical_terra_extraction_not_accepted",
+    "reason": "roundup_or_body_fragment_not_event_title",
     "status": "review_optional",
     "source_ref": "SA-e099ce09e84ad991"
   },
   {
     "qa_id": "QA-934a5bdc88fae5e1",
     "asset_id": "RAW-2ac20447e2d26ce0",
-    "reason": "historical_terra_extraction_not_accepted",
+    "reason": "reaction_or_commentary_not_new_event",
     "status": "review_optional",
     "source_ref": "SA-4a2dc3d7a1c5a7c1"
   },
@@ -3593,7 +3593,7 @@
   {
     "qa_id": "QA-7cd08d49e08dd543",
     "asset_id": "RAW-28885f20bf3bde53",
-    "reason": "historical_terra_extraction_not_accepted",
+    "reason": "reaction_or_commentary_not_new_event",
     "status": "review_optional",
     "source_ref": "SA-00ee4248bba36d0f"
   },
@@ -6979,6 +6979,13 @@
     "source_ref": "SA-241a21ea478b9839"
   },
   {
+    "qa_id": "QA-032bdf5c30a17e53",
+    "asset_id": "RAW-9b91a421867a364c",
+    "reason": "roundup_or_body_fragment_not_event_title",
+    "status": "review_optional",
+    "source_ref": "SA-9ed4cd2451acd00e"
+  },
+  {
     "qa_id": "QA-bf2a4a244090ec3b",
     "asset_id": "RAW-4d40ecd3cef95ba9",
     "reason": "raw_source_quality_block",
@@ -8440,20 +8447,6 @@
     "reason": "domestic_publication_date_unverified",
     "status": "review_optional",
     "source_ref": "SA-7adee3012de14722"
-  },
-  {
-    "qa_id": "QA-6195cffe81180128",
-    "asset_id": "RAW-1a17214d3cc56998",
-    "reason": "source_outside_daily_window",
-    "status": "review_optional",
-    "source_ref": "SA-2aa93a1b3fc6484b"
-  },
-  {
-    "qa_id": "QA-4c51617b3442bae2",
-    "asset_id": "RAW-988bb9820259c959",
-    "reason": "source_outside_funding_backfill_window",
-    "status": "review_optional",
-    "source_ref": "SA-b4cfe61a98400e8a"
   },
   {
     "qa_id": "QA-f0c8f68d192316bc",

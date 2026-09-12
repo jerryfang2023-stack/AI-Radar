@@ -291,7 +291,7 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
     .flatMap((claim) => [claim.object, claim.source_quote])
     .map(clean)
     .filter(Boolean);
-  const texts = [event.display_title_zh, event.object, ...claimTexts].map(clean).filter(Boolean);
+  const texts = [event.object, ...claimTexts, event.display_title_zh].map(clean).filter(Boolean);
   const preliminary = texts.some((text) => (
     /\bin talks\b|\btalking to\b|\b(?:seeking to|plans? to|aims? to|looking to|would)\s+(?:raise|secure)\b|拟融资|计划融资|寻求融资|融资洽谈|正在洽谈|正在谈判/iu.test(text)
   ));
