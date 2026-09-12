@@ -76,7 +76,7 @@
       query: params.get("q") || "",
       source: communitySource === "aipoju" ? "aipoju" : "scys",
       scene: "all",
-      industry: "all", offering: "all", stage: "all", channel: "all", reviewStatus: "all", month: /^\d{4}-(0[1-9]|1[0-2])$/.test(params.get("month") || "") ? params.get("month") : "all"
+      industry: "all", offering: "all", stage: "all", channel: "all", reviewStatus: "all", month: /^\d{4}-(0[1-9]|1[0-2])$/.test(params.get("month") || "") ? params.get("month") : params.get("month") === "all" ? "all" : "latest"
     }
   };
   const viewpointPageSize = 16;
@@ -1268,9 +1268,13 @@
     const href = safeExternalUrl(resource.href);
     const label = { document: "实操文档", manual: "航海手册", tool: "工具", case: "关联案例" }[resource.kind] || "资料";
     const title = resource.text && !/^https?:/i.test(resource.text) ? resource.text : resource.owners[0]?.itemTitle || "实操资料";
+    const ownerItems = (resource.owners || []).map((owner) => communityItems().find((item) => item.id === owner.itemId)).filter(Boolean);
+    const summarySource = resource.description ? "资料摘要" : "原帖摘要";
+    const summary = communityCompact(String(resource.description || ownerItems.map((item) => communityDisplaySummary(item, communityDisplayTitle(item))).find(Boolean) || "").replace(/https?:\/\/[^\s<>]+/gu, "").trim(), 220);
     return `<article class="dc-community-card dc-resource-card">
       <div class="dc-community-card-meta"><span>${label}</span></div>
       <h3>${href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>` : escapeHtml(title)}</h3>
+      ${summary ? `<p class="dc-resource-summary"><strong>${summarySource}</strong>${escapeHtml(summary)}</p>` : ""}
       ${href ? `<a class="dc-resource-url" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(href)}</a>` : ""}
       ${resource.entries?.length ? `<details><summary>手册目录 · ${resource.entries.length} 节</summary><ul>${resource.entries.map((entry) => `<li>${escapeHtml(entry.title)}</li>`).join("")}</ul></details>` : ""}
       <div class="dc-community-card-actions">${resource.owners.map((owner) => `<button type="button" data-community-open="${escapeHtml(owner.itemId)}">所属帖子：${escapeHtml(communityCompact(owner.itemTitle, 45))}</button>`).join("")}</div>
@@ -1295,13 +1299,14 @@
   }
 
   function scysRenderArchive() {
-    communitySetUrlDate(communityState.selectedDate);
     const resources = communityState.activeView === "resources";
     const all = communityItems();
     const byId = new Map(all.map((item) => [item.id, item]));
     const monthOf = resources ? (row) => row.owners.map((owner) => scysArchiveMonth(byId.get(owner.itemId) || {})).sort()[0] || "unknown" : scysArchiveMonth;
     const candidates = resources ? scysResourceRows(all) : all.filter((item) => scysModel.profile(item, communityState.editorial).caseMaterial);
     const months = [...new Set(candidates.map(monthOf))].sort().reverse();
+    if (communityState.filters.month === "latest") communityState.filters.month = months.find((month) => month !== "unknown") || "all";
+    communitySetUrlDate(communityState.selectedDate);
     if (communityState.filters.month !== "all" && !months.includes(communityState.filters.month)) months.push(communityState.filters.month);
     const query = communityState.filters.query.trim().toLocaleLowerCase();
     const rows = candidates.filter((row) => (communityState.filters.month === "all" || monthOf(row) === communityState.filters.month)
@@ -1320,8 +1325,8 @@
         ${resources ? `<select class="dc-select" name="resourceKind" aria-label="资料类型">${Object.entries({all:"全部资料",document:"实操文档",manual:"航海手册",tool:"工具",case:"关联案例"}).map(([key,label])=>`<option value="${key}"${(communityState.filters.resourceKind || "all") === key ? " selected" : ""}>${label}</option>`).join("")}</select>` : ""}
         <button class="dc-button" type="submit">搜索</button><button class="dc-clear" type="button" data-community-clear>重置</button>
       </form>
-      <section class="dc-scys-archive"><div class="dc-community-section-head"><h2>${scysViews[communityState.activeView].label}</h2><span>${rows.length} 条</span></div>
-      ${[...groups].map(([month, items]) => `<section class="dc-scys-month"><h3>${monthLabel(month)}</h3><div class="dc-community-grid">${items.map(resources ? scysResourceCard : scysCaseCard).join("")}</div></section>`).join("") || '<div class="dc-empty">暂无内容</div>'}
+      <section class="dc-scys-archive" aria-label="${scysViews[communityState.activeView].label}">
+      ${[...groups].map(([month, items]) => `<section class="dc-scys-month" data-archive-month="${escapeHtml(month)}"><div class="dc-community-grid">${items.map(resources ? scysResourceCard : scysCaseCard).join("")}</div></section>`).join("") || '<div class="dc-empty">暂无内容</div>'}
       ${communityRenderPagination(rows.length)}</section>`;
     communityBindInteractions();
   }
@@ -1437,7 +1442,7 @@
     if (communitySource === "aipoju") next.searchParams.set("date", date);
     else if (communityState.activeView === "weekly") next.searchParams.set("week", scysModel.weekRange(date).start);
     next.searchParams.set("section", communityState.activeView);
-    if (communitySource === "scys" && communityState.filters.month !== "all") next.searchParams.set("month", communityState.filters.month);
+    if (communitySource === "scys") next.searchParams.set("month", communityState.filters.month);
     else next.searchParams.delete("month");
     if (communityState.filters.query) next.searchParams.set("q", communityState.filters.query);
     else next.searchParams.delete("q");
@@ -1490,7 +1495,7 @@
       communityRender();
     });
     root.querySelector("[data-community-clear]")?.addEventListener("click", () => {
-      communityState.filters = { query: "", source: communityState.filters.source, scene: "all", industry: "all", offering: "all", stage: "all", channel: "all", resourceKind: "all", reviewStatus: "all", month: "all" };
+      communityState.filters = { query: "", source: communityState.filters.source, scene: "all", industry: "all", offering: "all", stage: "all", channel: "all", resourceKind: "all", reviewStatus: "all", month: "latest" };
       communityState.activeScene = "all";
       communityState.page = 1;
       communityRender();
