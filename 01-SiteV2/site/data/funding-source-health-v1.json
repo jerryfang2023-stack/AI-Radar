@@ -1,100 +1,15 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-12T07:36:05.306Z",
-  "date": "2026-09-12",
-  "status": "passed",
-  "state": "healthy",
-  "last_checked_date": "2026-09-12",
-  "latest_financing_date": "2026-09-08",
+  "generated_at": "2026-09-12T10:02:09.781Z",
+  "date": "2026-07-02",
+  "status": "degraded",
+  "state": "source_no_data",
+  "last_checked_date": "2026-07-02",
+  "latest_financing_date": "2026-09-12",
   "totals": {
-    "fetched": 617,
-    "funding_candidates": 141,
-    "verified_events": 10
+    "fetched": 0,
+    "funding_candidates": 0,
+    "verified_events": 4
   },
-  "channels": [
-    {
-      "id": "aihot",
-      "status": "collected",
-      "last_success_at": "2026-09-12T01:22:25.559Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 238,
-      "latest_content_date": "2026-09-11",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 3,
-      "verified_event_count": 0,
-      "failures": [],
-      "fallback_used": false
-    },
-    {
-      "id": "funding",
-      "status": "collected",
-      "last_success_at": "2026-09-12T01:22:51.341Z",
-      "response_ms": null,
-      "http_status": "429",
-      "fetched_count": 62,
-      "latest_content_date": "2026-09-11",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 62,
-      "verified_event_count": 0,
-      "failures": [
-        "RSS venturebeat-ai: HTTP 429"
-      ],
-      "fallback_used": false
-    },
-    {
-      "id": "gdelt",
-      "status": "collected",
-      "last_success_at": "2026-09-12T01:33:26.530Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 56,
-      "latest_content_date": "2026-09-11",
-      "duplicate_rate": 0.1364,
-      "stale_rate": 1,
-      "funding_candidate_count": 22,
-      "verified_event_count": 3,
-      "failures": [],
-      "fallback_used": false
-    },
-    {
-      "id": "keyword",
-      "status": "collected",
-      "last_success_at": "2026-09-12T01:31:19.088Z",
-      "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 143,
-      "latest_content_date": "2024-10-23",
-      "duplicate_rate": 0.093,
-      "stale_rate": 1,
-      "funding_candidate_count": 43,
-      "verified_event_count": 1,
-      "failures": [
-        "keyword-search pre-gate filtered 71 result(s): missing_ai_anchor_in_result=31; social_or_profile_source=28; broad_list_or_market_report=9; noise_term:hiring=2; noise_term:career=1",
-        "Anysearch fallback for query \"FDE AI implementation production rollout announced September 2026 (\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)\": Anysearch returned 0 usable results",
-        "Anysearch business fallback for query \"AI implementation startup funding enterprise workflow (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)\": Anysearch Search service temporarily unavailable."
-      ],
-      "fallback_used": true
-    },
-    {
-      "id": "rss",
-      "status": "collected",
-      "last_success_at": "2026-09-12T01:22:35.593Z",
-      "response_ms": null,
-      "http_status": "429",
-      "fetched_count": 118,
-      "latest_content_date": "2026-09-11",
-      "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 11,
-      "verified_event_count": 0,
-      "failures": [
-        "RSS venturebeat-ai: HTTP 429",
-        "RSS tldr-ai-newsletter: HTTP 429"
-      ],
-      "fallback_used": false
-    }
-  ]
+  "channels": []
 }
