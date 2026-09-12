@@ -5,13 +5,50 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-11T07:40:40.360Z",
-    "latestDataDate": "2026-09-11",
-    "currentDate": "2026-09-11",
-    "eventCount": 2828,
+    "generatedAt": "2026-09-12T01:38:57.500Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
     "quarantinedEventCount": 25
   },
   "fde": [
+    {
+      "id": "FDE-107188407f453d8b",
+      "eventId": "EV-f1cfc5004f3115bc",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "CBTS 安全企业 AI 部署案例研究",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Anthropic Claude for Enterprise",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://cbts.com/client-stories/cbts-secure-enterprise-ai-deployment",
+      "entityIds": [
+        "EN-06add78d9647221d",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDE-c3be578a35038926",
       "eventId": "EV-87f31c71f040785a",
@@ -6894,6 +6931,56 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-2b06f9364a672628",
+      "implementationKey": "2b06f9364a672628",
+      "eventId": "EV-f1cfc5004f3115bc",
+      "eventIds": [
+        "EV-f1cfc5004f3115bc"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "Anthropic × 未披露：Anthropic Claude for Enterprise",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Anthropic",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Anthropic Claude for Enterprise",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-4d551dd6d462acf7",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-12",
+          "dataDate": "2026-09-12",
+          "eventId": "EV-f1cfc5004f3115bc",
+          "eventTitle": "CBTS 安全企业 AI 部署案例研究",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://cbts.com/client-stories/cbts-secure-enterprise-ai-deployment",
+      "entityIds": [
+        "EN-06add78d9647221d",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDED-1ba2f41db14025da",
       "implementationKey": "1ba2f41db14025da",
       "eventId": "EV-87f31c71f040785a",
@@ -9665,42 +9752,40 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-11",
-      "funnel_id": "LF-c4a326165764b483",
+      "data_date": "2026-09-12",
+      "funnel_id": "LF-e72a879a682f3103",
       "lens": "fde",
-      "date": "2026-09-11",
+      "date": "2026-09-12",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 92,
-      "original_sources": 77,
-      "valid_claims": 8,
+      "raw_documents": 98,
+      "original_sources": 88,
+      "valid_claims": 11,
       "observations": 1,
-      "canonical_events": 6,
+      "canonical_events": 7,
       "blocker_counts": {
-        "event_not_ai_relevant": 3,
         "event_entity_unresolved": 1,
-        "opinion_without_source_bounded_event": 2,
-        "no_source_bounded_event": 10,
-        "source_outside_daily_window": 44,
-        "non_event_or_index_title": 7,
-        "multi_event_roundup_not_single_event_source": 1,
-        "research_or_report_container_not_event_source": 1,
-        "community_source_requires_original_event_source": 1,
-        "index_or_listing_page_not_event_source": 1,
-        "raw_source_quality_block": 14,
+        "no_source_bounded_event": 13,
+        "no_source_bounded_claim": 1,
+        "source_outside_daily_window": 57,
+        "non_event_or_index_title": 5,
+        "opinion_without_source_bounded_event": 1,
+        "community_source_requires_original_event_source": 2,
+        "rumor_requires_primary_confirmation": 1,
+        "raw_source_quality_block": 9,
         "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.8369565217391305,
-        "valid_claim_rate": 0.08695652173913043,
-        "observation_rate": 0.125,
-        "event_conversion_rate": 0.75
+        "original_source_rate": 0.8979591836734694,
+        "valid_claim_rate": 0.11224489795918367,
+        "observation_rate": 0.09090909090909091,
+        "event_conversion_rate": 0.6363636363636364
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-11/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/monitoring-funnel.json"
     }
   ]
 }

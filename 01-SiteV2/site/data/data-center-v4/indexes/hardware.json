@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-11T07:40:40.360Z",
-    "latestDataDate": "2026-09-11",
-    "currentDate": "2026-09-11",
-    "eventCount": 2828,
+    "generatedAt": "2026-09-12T01:38:57.500Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
     "quarantinedEventCount": 25
   },
   "hardware": [
@@ -33,7 +33,7 @@
       "shipmentDate": "未披露",
       "tags": [],
       "sourceUrl": "https://system76.com/workstations/thelio-mira-ai",
-      "sourceName": "Hacker News：AI 热帖",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceDate": "2026-09-11",
       "entityIds": [
         "EN-0d52825aa423b229",
@@ -3402,6 +3402,139 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-6dadf6e66614011f",
+      "snapshotKey": "6dadf6e66614011f",
+      "snapshotId": "HWS-7704e8f076c0a3ff",
+      "eventId": "EV-ea7ee3bf2e2ececc",
+      "eventIds": [
+        "EV-ea7ee3bf2e2ececc",
+        "EV-794f921515af8e8b"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "墨芯人工智能",
+      "subject": "墨芯人工智能",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment",
+        "specification"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-36ce8fafcf65418f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-12",
+          "previousDate": "2026-08-03",
+          "snapshotId": "HWS-7704e8f076c0a3ff",
+          "previousSnapshotId": "HWS-835706db16892855",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-36ce8fafcf65418f",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-11T06:19:03.000Z",
+          "subject_entity_id": "EN-085578b03da7d660",
+          "subject_name": "墨芯人工智能",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "目前，墨芯基于自研芯片构建的推理集群已在西北、西南、华东、华北四大片区的数据中心实现部署",
+          "event_refs": [
+            "EV-ea7ee3bf2e2ececc"
+          ],
+          "claim_ref": "CL-8299f74bb6724622",
+          "source_refs": [
+            "SA-48ad4dddf46cd9dd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/09/487273.html",
+      "entityIds": [
+        "EN-085578b03da7d660"
+      ]
+    },
+    {
+      "id": "HWC-6f09c159bc1d4cea",
+      "snapshotKey": "6f09c159bc1d4cea",
+      "snapshotId": "HWS-b6ccc90162ba53dc",
+      "eventId": "EV-e0a31302688c81ec",
+      "eventIds": [
+        "EV-e0a31302688c81ec"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "微纳核芯",
+      "subject": "微纳核芯",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "10",
+          "unit": "亿",
+          "fact_ref": "HWF-0f52a7fab4bd440a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-0f52a7fab4bd440a",
+          "fact_type": "specification",
+          "observed_at": "2026-09-09T15:29:07.000Z",
+          "subject_entity_id": "EN-a5e5f031b6f878cf",
+          "subject_name": "微纳核芯",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "10",
+          "unit": "亿",
+          "source_quote": "微纳核芯完成C1轮10亿元融资 存算一体AI芯片年内或将实现规模商业化|低功耗|处理器|高带宽内存_网易订阅",
+          "event_refs": [
+            "EV-e0a31302688c81ec"
+          ],
+          "claim_ref": "CL-7f55a6faca222ac1",
+          "source_refs": [
+            "SA-1c05788612d77970"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://163.com/dy/article/L6E0VC7A05198CJN.html?f=post2020_dy_recommends",
+      "entityIds": [
+        "EN-a5e5f031b6f878cf",
+        "EN-6535648b340d6536"
+      ]
+    },
     {
       "id": "HWC-9e18eaba260b9161",
       "snapshotKey": "9e18eaba260b9161",
@@ -12131,66 +12264,6 @@
       ]
     },
     {
-      "id": "HWC-6dadf6e66614011f",
-      "snapshotKey": "6dadf6e66614011f",
-      "snapshotId": "HWS-835706db16892855",
-      "eventId": "EV-794f921515af8e8b",
-      "eventIds": [
-        "EV-794f921515af8e8b"
-      ],
-      "dataDate": "2026-08-03",
-      "date": "2026-08-03",
-      "title": "墨芯人工智能",
-      "subject": "墨芯人工智能",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "specification"
-      ],
-      "latestValues": {
-        "specification": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-8e1aa91837e3b9bc"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-03",
-          "hardware_fact_id": "HWF-8e1aa91837e3b9bc",
-          "fact_type": "specification",
-          "observed_at": "2026-05-29T12:00:00.000+08:00",
-          "subject_entity_id": "EN-085578b03da7d660",
-          "subject_name": "墨芯人工智能",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "公司专注于稀疏计算AI芯片，通过剔除矩阵运算中的无效计算，实现算力倍增与功耗大幅下降。",
-          "event_refs": [
-            "EV-794f921515af8e8b"
-          ],
-          "claim_ref": "CL-c4b395e416e09b6c",
-          "source_refs": [
-            "SA-1196ebf97c011b89"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
-      "entityIds": [
-        "EN-085578b03da7d660"
-      ]
-    },
-    {
       "id": "HWC-8eb9e3e3cf6ea367",
       "snapshotKey": "8eb9e3e3cf6ea367",
       "snapshotId": "HWS-12dc4775928bb24b",
@@ -15310,34 +15383,35 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-11",
-      "funnel_id": "LF-f75b53b42aa28358",
+      "data_date": "2026-09-12",
+      "funnel_id": "LF-36e27da04c2e31cb",
       "lens": "hardware",
-      "date": "2026-09-11",
+      "date": "2026-09-12",
       "monitoring_paths": [
         "hardware_capacity_fab",
+        "hardware_capex",
         "hardware_oem_odm",
         "hardware_product_specs",
-        "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 20,
-      "original_sources": 11,
-      "valid_claims": 8,
+      "raw_documents": 22,
+      "original_sources": 17,
+      "valid_claims": 14,
       "observations": 2,
-      "canonical_events": 2,
+      "canonical_events": 5,
       "blocker_counts": {
-        "event_entity_unresolved": 1,
-        "source_outside_daily_window": 5,
-        "raw_source_quality_block": 12
+        "source_outside_daily_window": 8,
+        "non_event_or_index_title": 2,
+        "no_source_bounded_event": 1,
+        "raw_source_quality_block": 6
       },
       "rates": {
-        "original_source_rate": 0.55,
-        "valid_claim_rate": 0.4,
-        "observation_rate": 0.25,
-        "event_conversion_rate": 0.25
+        "original_source_rate": 0.7727272727272727,
+        "valid_claim_rate": 0.6363636363636364,
+        "observation_rate": 0.14285714285714285,
+        "event_conversion_rate": 0.35714285714285715
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-11/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/monitoring-funnel.json"
     }
   ]
 }

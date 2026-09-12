@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-11T07:40:40.360Z",
-    "latestDataDate": "2026-09-11",
-    "currentDate": "2026-09-11",
-    "eventCount": 2828,
+    "generatedAt": "2026-09-12T01:38:57.500Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
     "quarantinedEventCount": 25
   },
   "entity": {
@@ -24,6 +24,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-2b7cd7f83532bf9f",
       "EV-d80c43b35418e74d",
       "EV-b25b396e368ee4d9",
       "EV-dc0ef21764be2db1",
@@ -36,11 +37,13 @@
       "TX-product_form-model"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-12",
-    "lastSeen": "2026-09-11",
+    "firstSeen": "2026-07-30",
+    "lastSeen": "2026-09-12",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-2b7cd7f83532bf9f"
+      ],
       "deployments": [
         "EV-d80c43b35418e74d",
         "EV-b25b396e368ee4d9"
@@ -58,8 +61,109 @@
     },
     "timeline": [
       {
+        "id": "EV-2b7cd7f83532bf9f",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域引领行业新发展-产经-巨人天成财经",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-b3c628b196bfbbe9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-df4d45ca7d007482",
+            "fundingInsightId": "FI-1bd252ee0534599c"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-b3c628b196bfbbe9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-409f92abe3d21f8a",
+            "fundingInsightId": "FI-1bd252ee0534599c"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-b3c628b196bfbbe9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-85b31c7c613c968d",
+            "fundingInsightId": "FI-1bd252ee0534599c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-b3c628b196bfbbe9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ccc1bafa79ebf45e",
+            "fundingInsightId": "FI-1bd252ee0534599c"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-b3c628b196bfbbe9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7fa45ce06fe58ae7",
+            "fundingInsightId": "FI-1bd252ee0534599c"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-b3c628b196bfbbe9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-af02136b4606f018",
+            "fundingInsightId": "FI-1bd252ee0534599c"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-b3c628b196bfbbe9"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ba96b2efc6dccc4d",
+            "fundingInsightId": "FI-1bd252ee0534599c"
+          }
+        ],
+        "entityIds": [
+          "EN-b3c628b196bfbbe9",
+          "EN-e9fc4f156e36f6aa"
+        ]
+      },
+      {
         "id": "EV-dc0ef21764be2db1",
-        "dataDate": "2026-09-11",
+        "dataDate": "2026-09-12",
         "date": "2026-09-11",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -394,8 +498,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
-        "EV-53198ae84b1653e5",
         "EV-5d0f3f6556749dc5",
+        "EV-53198ae84b1653e5",
         "EV-3d7fb729ebce66cb",
         "EV-cbe5cc267353560e",
         "EV-6a5b724c821567f3",
@@ -563,6 +667,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-d4c42c125b98b97e",
         "EV-06e6d004096040e0",
         "EV-c3feadbc01392117",
         "EV-9c7ca787c7b4f7cf",
@@ -647,8 +752,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
-        "EN-67734881da046ff9",
         "EN-c608c4787821de1b",
+        "EN-67734881da046ff9",
         "EN-572e31f55b6ac1b1",
         "EN-1a6d6ea981e8688c",
         "EN-bae152c4560df38c",
@@ -770,7 +875,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     }
   ],
   "fde": [],

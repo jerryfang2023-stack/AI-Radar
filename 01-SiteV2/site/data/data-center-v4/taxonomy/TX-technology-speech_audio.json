@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-11T07:40:40.360Z",
-    "latestDataDate": "2026-09-11",
-    "currentDate": "2026-09-11",
-    "eventCount": 2828,
+    "generatedAt": "2026-09-12T01:38:57.500Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
     "quarantinedEventCount": 25
   },
   "node": {
@@ -19,6 +19,7 @@
     "valueId": "speech_audio",
     "eventIds": [
       "EV-657176fd0dff6209",
+      "EV-7f4e56e09d2328bb",
       "EV-5d0f3f6556749dc5",
       "EV-dc0ef21764be2db1",
       "EV-47ff6ec7310fcb25",
@@ -38,6 +39,7 @@
     ],
     "entityIds": [
       "EN-336ab1deb42d6284",
+      "EN-ec68d09e3a81e0ae",
       "EN-c608c4787821de1b",
       "EN-586937124e151c46",
       "EN-047364b9be67f665",
@@ -56,7 +58,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-09-11"
+    "lastSeen": "2026-09-12"
   },
   "events": [
     {
@@ -518,10 +520,124 @@
       "publisher": "TechCrunch：AI（RSS）"
     },
     {
+      "id": "EV-7f4e56e09d2328bb",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-10",
+      "updatedDate": "2026-09-12",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "环球音乐将与ElevenLabs推出AI音乐平台",
+      "originalTitle": "Universal Music is launching an AI music platform with ElevenLabs",
+      "subject": "Universal Music Group",
+      "action": "partnership",
+      "object": "ElevenLabs",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-ec68d09e3a81e0ae"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-ec68d09e3a81e0ae"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-ec68d09e3a81e0ae"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-ec68d09e3a81e0ae"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-ec68d09e3a81e0ae"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-ec68d09e3a81e0ae"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ec68d09e3a81e0ae"
+      ],
+      "entityNames": [
+        "Universal Music Group"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-5d0f3f6556749dc5",
-      "dataDate": "2026-09-11",
+      "dataDate": "2026-09-12",
       "date": "2026-09-11",
-      "updatedDate": "2026-09-11",
+      "updatedDate": "2026-09-12",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
@@ -545,10 +661,10 @@
           "cn-ithome-rss"
         ],
         "claim_refs": [
-          "CL-1202ad08bb1b03ad",
-          "CL-55719f35445bb04d",
-          "CL-72d12e26eecd3345",
-          "CL-758bddec1993507a"
+          "CL-43a4ae64d446ce5d",
+          "CL-01ab20db94777917",
+          "CL-ab5e42eff77eebe2",
+          "CL-563e3a8fe569ae5b"
         ]
       },
       "missingFields": [],
@@ -692,9 +808,9 @@
     },
     {
       "id": "EV-dc0ef21764be2db1",
-      "dataDate": "2026-09-11",
+      "dataDate": "2026-09-12",
       "date": "2026-09-11",
-      "updatedDate": "2026-09-11",
+      "updatedDate": "2026-09-12",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -718,10 +834,10 @@
           "cn-ithome-rss"
         ],
         "claim_refs": [
-          "CL-7a28e813d706f10f",
-          "CL-213a88cc09109fbf",
-          "CL-ae4d04acebceef41",
-          "CL-93369bcfc7363b85"
+          "CL-4cdfa02897a1d462",
+          "CL-ade287badc455963",
+          "CL-a148fab24914ecb6",
+          "CL-3924af0eaaab10cd"
         ]
       },
       "missingFields": [],
@@ -1661,14 +1777,14 @@
           "name": "Android 17",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Apple"
           ]
         },
         {
           "name": "Pixel",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Apple"
           ]
         }
       ],
@@ -2629,6 +2745,29 @@
       "lastSeen": "2026-08-26"
     },
     {
+      "id": "EN-ec68d09e3a81e0ae",
+      "name": "Universal Music Group",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7f4e56e09d2328bb",
+        "EV-18d6eb742931df7b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-content_creation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-12"
+    },
+    {
       "id": "EN-c608c4787821de1b",
       "name": "Xiaomi",
       "entityType": "organization_candidate",
@@ -2674,7 +2813,7 @@
         "EN-ddf9916b459b6d77"
       ],
       "firstSeen": "2026-05-09",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-586937124e151c46",
@@ -2825,7 +2964,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-11",
+      "lastSeen": "2026-09-12",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -2868,15 +3007,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-telecommunications",
+        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-model",
-        "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-technology-speech_audio",
-        "TX-industry-telecommunications",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
         "TX-technology-model_context_protocol",
@@ -3075,8 +3214,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
-        "EV-41df51972f9b3a4a",
         "EV-f01a13953fa7aaaa",
+        "EV-354ff4bc2d0327b4",
+        "EV-41df51972f9b3a4a",
         "EV-dc7ca88afc22099a",
         "EV-ba091f86fba39da0",
         "EV-21fcd6420d6ff726",
@@ -3186,6 +3326,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-6a79628f726695a3",
         "EV-5353e265750f02a1",
         "EV-76c8a600380d988c",
         "EV-20571b175944604c",
@@ -3215,19 +3356,25 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-industry-telecommunications",
+        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-model",
-        "TX-use_case-software_development",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-data_analysis",
         "TX-industry-energy_utilities",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
-        "TX-industry-manufacturing",
         "TX-industry-professional_services",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-education",
@@ -3238,29 +3385,23 @@
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-open_weights",
-        "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
         "TX-product_form-robotic_system",
-        "TX-technology-embodied_ai",
         "TX-use_case-customer_support",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
         "TX-industry-legal_services",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-aerospace_defense",
-        "TX-industry-telecommunications",
         "TX-product_form-ai_compute_system",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
         "TX-industry-food_hospitality",
         "TX-deployment_model-cloud",
-        "TX-ai_market_application-chips",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -3297,7 +3438,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -3368,22 +3509,22 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-product_form-chip_accelerator",
+        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-model",
-        "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-media_entertainment",
         "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-video_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -3479,6 +3620,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-2bb9ea947e9541c3",
         "EV-87f31c71f040785a",
         "EV-4965305d57edf6dd",
         "EV-636b45c518ae1313",
@@ -3539,9 +3681,9 @@
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
         "EV-157047393912dde3",
+        "EV-327ecd23437d5fda",
         "EV-1938f1caa0e15759",
         "EV-291060fb79c45357",
-        "EV-327ecd23437d5fda",
         "EV-3e971b2db5569c2e",
         "EV-b2573b146a89c48a",
         "EV-c74cc1e3155a00c9",
@@ -3789,6 +3931,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-4a01ebf3eb0b612d",
         "EV-cd94cdad9b5c8089",
         "EV-2838858a4f49478f",
         "EV-8025c0adfe709adf",
@@ -3896,12 +4039,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
+        "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
-        "TX-use_case-software_development",
         "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -3925,7 +4069,6 @@
         "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-computer_use",
         "TX-technology-long_context",
@@ -3962,7 +4105,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-11"
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-c8d65b5463695c98",

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T01:38:57.500Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2847,
+    "quarantinedEventCount": 25
+  },
+  "institution": {
+    "id": "INV-4a620bbe3d20ae",
+    "name": "舟轩投资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-07-30",
+    "latest_disclosed_at": "2026-07-30",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-72745a3378b39b0c",
+        "funding_insight_id": "FI-44a0ed771254c7a5",
+        "event_ids": [
+          "EV-2b7cd7f83532bf9f"
+        ],
+        "company_entity_id": "EN-b3c628b196bfbbe9",
+        "company_canonical_entity_id": "",
+        "company_name": "贝联珠贯科技（浙江）有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "200亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "200 亿美元"
+        },
+        "announced_at": "2026-07-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1e5309cf7412f59f",
+            "source_url": "https://www.36kr.com/p/3915230998910088",
+            "source_title": "超亿元，阿里云投了“淘宝第一位程序员”-36氪",
+            "source_content_hash": "c7731ff701194957",
+            "quote": "2023年7月，公司完成 5000万元 天使轮融资，投资方包括元璟资本、红杉种子基金和舟轩投资；2024年10月，公司完成 数千万元 Pre-A轮融资，由将门创投、西湖科创投联合领投，老股东元璟资本跟投。",
+            "quote_hash": "97bae84a5d4ddc4305c9da59a24d0c4f95df5a02e450b27efb3309d26868362a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1e5309cf7412f59f",
+        "source_url": "https://www.36kr.com/p/3915230998910088",
+        "source_title": "超亿元，阿里云投了“淘宝第一位程序员”-36氪",
+        "source_content_hash": "c7731ff701194957",
+        "quote": "2023年7月，公司完成 5000万元 天使轮融资，投资方包括元璟资本、红杉种子基金和舟轩投资；2024年10月，公司完成 数千万元 Pre-A轮融资，由将门创投、西湖科创投联合领投，老股东元璟资本跟投。",
+        "quote_hash": "97bae84a5d4ddc4305c9da59a24d0c4f95df5a02e450b27efb3309d26868362a"
+      }
+    ]
+  }
+}
