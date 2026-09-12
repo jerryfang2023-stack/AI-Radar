@@ -1,3 +1,4 @@
+const { isFundingVisible } = require("../../utils/funding-visibility.js");
 const { isWatched, toggleWatch, isCompared, toggleCompare } = require("../../utils/storage.js");
 const { recordBrowse } = require("../../utils/member.js");
 const { getFundingData } = require("../../utils/live-data.js");
@@ -54,6 +55,11 @@ Page({
   },
 
   renderCard(card) {
+    if (!isFundingVisible(card)) {
+      this.setData({ card: null });
+      wx.showToast({ title: "该类融资暂不展示", icon: "none" });
+      return;
+    }
     this.recordView(card);
     this.setData({ card, watched: isWatched(card.id), compared: isCompared(card.id) });
   },
