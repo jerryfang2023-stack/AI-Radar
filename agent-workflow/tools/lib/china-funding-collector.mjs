@@ -3,12 +3,13 @@ import path from "node:path";
 
 export const CHINA_FUNDING_CONFIG = "01-SiteV2/content/11-databases/china-funding-monitor-v1.json";
 export const fundingPattern = /融资|获投|获.{0,8}投资|完成.{0,10}轮|\b(?:funding|raised|raises|series [a-z])\b/iu;
-const noisePattern = /融资融券|融资买入|融资余额|融券|基金.{0,12}(?:募资|募集|首关)|(?:母基金|子基金).{0,12}(?:设立|遴选|招募)/u;
+const noisePattern = /投?融资(?:周报|月报|日报|盘点)|融资融券|融资买入|融资余额|融券|基金.{0,12}(?:募资|募集|首关)|(?:母基金|子基金).{0,12}(?:设立|遴选|招募)/u;
 
 export function articleUrl(value, domains) {
   try {
     const url = new URL(value);
     if (!/^https?:$/u.test(url.protocol) || !domains.some((domain) => url.hostname === domain || url.hostname.endsWith(`.${domain}`))) return "";
+    if (/\/(?:user|users|author|tag|topic|search|category)\//iu.test(url.pathname)) return "";
     if (!/\/(?:p|news|article|first|detail|post|posts|a)\/|\/\d{4}\/|\/\d{5,}/u.test(url.pathname)) return "";
     if (/\/(?:news|article)\/(?:f\d+|index|list)\/?$/u.test(url.pathname)) return "";
     url.hash = "";

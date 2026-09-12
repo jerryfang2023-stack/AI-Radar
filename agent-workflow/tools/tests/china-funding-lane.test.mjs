@@ -39,6 +39,8 @@ test("reject foreign hosts, list pages, stock margin noise and scheme injection"
   for (const url of ["https://pedaily.cn.evil.com/article/123", "https://m.pedaily.cn/", "javascript:alert(1)"]) assert.equal(articleUrl(url, source.domains), "");
   assert.equal(normalizeChinaFundingLead({ url: "https://m.pedaily.cn/first/178491.shtml", title: "AI公司融资余额增加" }, source), null);
   assert.equal(articleUrl("https://m.pedaily.cn/news/f7", source.domains), "");
+  assert.equal(articleUrl("https://m.36kr.com/user/736197265", ["36kr.com"]), "");
+  assert.equal(normalizeChinaFundingLead({ url: "https://m.pedaily.cn/first/178491.shtml", title: "康诺思腾完成近2亿美元融资丨全球投融资周报" }, source), null);
   assert.ok(normalizeChinaFundingLead({ url: "https://m.pedaily.cn/first/178491.shtml", title: "超维动力完成天使轮融资" }, source));
 });
 test("cross-publisher repeated events and cards are counted once, with evidence-derived CN scope", () => {
