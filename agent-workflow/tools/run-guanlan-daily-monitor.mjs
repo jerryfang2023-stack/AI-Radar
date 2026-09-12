@@ -6220,7 +6220,7 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     "Default strategy: AI HOT, RSS, keyword search and GDELT are discovery entrances; keyword rules fill overseas big-company events, vertical product news, startup/funding news, customer adoption and industry landing. Builder and operator viewpoints are isolated from factual events. HN / community is feedback only. CanonicalEvents require captured original text, exact-span accepted Claims, SourceArtifact references, and the V4 integrity gate.",
     "",
   ].join("\n");
-  writeFile(path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`), log);
+  writeFile(args.get("monitor-log-file") ? path.resolve(root, args.get("monitor-log-file")) : path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`), log);
 }
 
 async function main() {

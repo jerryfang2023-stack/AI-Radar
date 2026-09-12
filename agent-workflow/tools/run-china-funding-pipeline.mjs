@@ -59,6 +59,7 @@ function main() {
   const plan = chinaFundingPlan(date, sourceDir, { rawLimit: historyFrom ? 1260 : 168 });
   if (historyFrom) for (const stage of plan) for (const command of stage.commands) {
     if (command[0].endsWith("/migrate-private-evidence-source.mjs")) command.push(`--date=${date}`);
+    if (command[0].endsWith("/run-guanlan-daily-monitor.mjs")) command.push(`--monitor-log-file=${laneDir}/capture-log.md`);
   }
   if (args.get("dry-run") === "true") { console.log(JSON.stringify(plan, null, 2)); return; }
   const discovery = read(`${sourceDir}/china-funding-source-intake-candidates.json`);

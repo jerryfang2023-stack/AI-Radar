@@ -198,6 +198,9 @@ function main() {
     }
     fs.rmSync(publicOriginalsTarget, { recursive: true, force: false });
   }
+  if (deletePublicOriginals && date && fs.existsSync(originalsRoot) && fs.readdirSync(originalsRoot).length === 0) {
+    fs.rmdirSync(originalsRoot);
+  }
 
   console.log(JSON.stringify({
     ok: true,
