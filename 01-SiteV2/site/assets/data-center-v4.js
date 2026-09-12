@@ -538,7 +538,6 @@
     return `
       <div class="dc-page-head">
         <h1>${escapeHtml(config.title)}</h1>
-        <span class="dc-page-description">${escapeHtml(config.description)}</span>
         ${auxiliaryDate}
         <span class="dc-result-count">${count} 条</span>
       </div>
@@ -1368,7 +1367,6 @@
     root.innerHTML = `
       <div class="dc-page-head">
         <h1>${isScys ? "生财" : "AI 破局"}</h1>
-        <span class="dc-page-description">${isScys ? "生财 · AI 创业实践与实操资料" : "AI 破局 · 社群一线材料"}</span>
         <span class="dc-data-date">${escapeHtml(contextLabel)}</span>
         <span class="dc-result-count">${rows.length} 条</span>
       </div>
@@ -1971,7 +1969,6 @@
       root.innerHTML = `
         <div class="dc-page-head">
           <h1>一线观点</h1>
-          <span class="dc-page-description">建设者与从业者公开观点</span>
           <span class="dc-data-date">数据日期 ${escapeHtml(latestDate || "未披露")}</span>
           <span class="dc-result-count">${items.length} 条</span>
         </div>
@@ -2421,7 +2418,6 @@
     root.innerHTML = `
       <div class="dc-page-head">
         <h1>分类：${escapeHtml(label || "未指定")}</h1>
-        <span class="dc-page-description">技术标签与结构化分类关联结果</span>
       </div>
       <form class="dc-toolbar" method="get" action="data-center.html">
         <input type="hidden" name="view" value="tag">
