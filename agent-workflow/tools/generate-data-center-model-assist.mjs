@@ -235,7 +235,18 @@ async function generate(job) {
     gate_results: [],
     generated_at: result.generatedAt,
   };
-  return withGateResult(candidate, body);
+  const gated = withGateResult(candidate, body);
+  if (write && process.env.MODEL_ASSIST_MODEL === TERRA_EXTRACTION_MODEL) {
+    // Preserve each completed local call so interruption never discards a whole batch.
+    const file = path.join(outputRoot, `${job.date}.json`);
+    const previous = readJson(file, candidateStore(job.date));
+    const key = candidateJobKey(job.date, gated);
+    const existing = (previous.candidates || []).find((item) => candidateJobKey(job.date, item) === key);
+    const saved = existing?.review && !regenerateStatuses.has(existing.status) ? existing : gated;
+    writeJson(file, candidateStore(job.date, [...(previous.candidates || []).filter((item) => candidateJobKey(job.date, item) !== key), saved], { sourceCount: bundle(job.date, "raw-documents").length }));
+    console.log(`Terra extraction checkpoint: ${job.taskType} ${gated.status}`);
+  }
+  return gated;
 }
 
 async function mapConcurrent(items, worker, size) {
@@ -292,6 +303,7 @@ async function main() {
   }
   if (jobs.length && process.env.MODEL_ASSIST_PROVIDER === "checkpoint") throw new Error("terra_local_extraction_required: reuse accepted local Terra candidates before cloud publication");
   if (jobs.length && process.env.MODEL_ASSIST_MODEL !== TERRA_EXTRACTION_MODEL && !process.env.DEEPSEEK_API_KEY) throw new Error("deepseek_key_missing_for_required_model_task");
+  console.log(`Model assist: model=${process.env.MODEL_ASSIST_MODEL || deepSeekModels().pro} selected=${jobs.length} reused=${reusedJobs}`);
   const results = await mapConcurrent(jobs, generate, concurrency);
   for (let retry = 0; retry < 2; retry += 1) {
     const failedIndexes = results.map((result, index) => result?.error ? index : -1).filter((index) => index >= 0);
