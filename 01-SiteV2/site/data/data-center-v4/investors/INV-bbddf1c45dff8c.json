@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,19 +55,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
+    "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-02-05",
     "latest_disclosed_at": "2026-04-10",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 1
     },
     "round_codes": [
       "series_a_plus"
@@ -121,50 +121,11 @@
         ]
       },
       {
-        "activity_id": "IA-715104a69a913ba2",
-        "funding_insight_id": "FI-e3c31b65254f3522",
-        "event_ids": [
-          "EV-535c2f4fb851332d"
-        ],
-        "company_entity_id": "EN-9b21c9bf3305c0d6",
-        "company_canonical_entity_id": "",
-        "company_name": "北京生数科技有限公司",
-        "round": "A+轮",
-        "round_code": "series_a_plus",
-        "round_original": "A+轮",
-        "amount_original": "超过6亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 600000000,
-          "min_value": 600000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 6 亿元"
-        },
-        "announced_at": "2026-02-08",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-6819817bc08e3d63",
-            "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
-            "source_title": "生数科技完成超6亿元A+轮融资",
-            "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
-            "quote": "上市公司万兴科技、视觉中国、拓尔思进行战略投资",
-            "quote_hash": "a25a649086fdd8c1a35495665bff6922aee570135b3424ba1e661da843411488"
-          }
-        ]
-      },
-      {
         "activity_id": "IA-855689aedcf562cf",
         "funding_insight_id": "FI-474a441598e62f93",
         "event_ids": [
-          "EV-622ebdad1e1fad2d"
+          "EV-622ebdad1e1fad2d",
+          "EV-535c2f4fb851332d"
         ],
         "company_entity_id": "EN-9b21c9bf3305c0d6",
         "company_canonical_entity_id": "",
@@ -209,14 +170,6 @@
         "source_content_hash": "845f3acbd6182c40",
         "quote": "with strategic investments from Wondershare, Visual China Group Co., Ltd., and TRS",
         "quote_hash": "854d7290b10eeaaa3f719c3b99e4a2917d537f93cbad075b87e8eb2bc8817022"
-      },
-      {
-        "source_id": "FISRC-6819817bc08e3d63",
-        "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
-        "source_title": "生数科技完成超6亿元A+轮融资",
-        "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
-        "quote": "上市公司万兴科技、视觉中国、拓尔思进行战略投资",
-        "quote_hash": "a25a649086fdd8c1a35495665bff6922aee570135b3424ba1e661da843411488"
       },
       {
         "source_id": "FISRC-4177e5ca07c921a5",

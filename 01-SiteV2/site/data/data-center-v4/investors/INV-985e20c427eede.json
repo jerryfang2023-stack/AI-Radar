@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,19 +55,19 @@
     "investor_kind_label": "政府或主权基金",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
+    "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-01-29",
     "latest_disclosed_at": "2026-04-09",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 2
     },
     "round_codes": [
       "other",
@@ -127,50 +127,11 @@
         ]
       },
       {
-        "activity_id": "IA-fd734f2961440219",
-        "funding_insight_id": "FI-e3c31b65254f3522",
-        "event_ids": [
-          "EV-535c2f4fb851332d"
-        ],
-        "company_entity_id": "EN-9b21c9bf3305c0d6",
-        "company_canonical_entity_id": "",
-        "company_name": "北京生数科技有限公司",
-        "round": "A+轮",
-        "round_code": "series_a_plus",
-        "round_original": "A+轮",
-        "amount_original": "超过6亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 600000000,
-          "min_value": 600000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 6 亿元"
-        },
-        "announced_at": "2026-02-08",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-6819817bc08e3d63",
-            "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
-            "source_title": "生数科技完成超6亿元A+轮融资",
-            "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
-            "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投",
-            "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
-          }
-        ]
-      },
-      {
         "activity_id": "IA-24b87cf17860e54a",
         "funding_insight_id": "FI-474a441598e62f93",
         "event_ids": [
-          "EV-622ebdad1e1fad2d"
+          "EV-622ebdad1e1fad2d",
+          "EV-535c2f4fb851332d"
         ],
         "company_entity_id": "EN-9b21c9bf3305c0d6",
         "company_canonical_entity_id": "",
@@ -255,14 +216,6 @@
         "source_content_hash": "21fcbff02b369abf",
         "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
         "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
-      },
-      {
-        "source_id": "FISRC-6819817bc08e3d63",
-        "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
-        "source_title": "生数科技完成超6亿元A+轮融资",
-        "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
-        "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投",
-        "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
       },
       {
         "source_id": "FISRC-4177e5ca07c921a5",

@@ -9,5 +9,7 @@
 
    Before publication, compare same-company/round/amount cards across distant dates. Identical original announcements republished months later require an explicit same-disclosure review. Link their application `source_event_ids`, retain both original canonical dates, and let the card aggregate select the earliest disclosure. Similar amounts or round labels alone never justify merging.
 
+   Include legal-name/brand variants, adjacent publication dates and rounded/cross-currency amount descriptions in that review. Explicitly reviewed event links may join those variants while retaining each original disclosure; unlinked variants must remain separate. An original announcement date stated in the body takes precedence over capture time. Record the source quote and date correction, preserving the publisher's disclosure timestamp separately.
+
    Historical publication completeness is limited to the authorized CN application scope. Report unknown or outside-CN cases separately; all eligible domestic cases still require the full card evidence and coverage gates.
 7. Finish publication through canonical/entity/institution/card gates, committed private evidence, public Git, Pages, Funding Portal/Mini Program and authenticated OPS delivery. Report new versus existing/updated cards, monthly coverage, exclusions and remaining evidence gaps separately. Never call an unprocessed extraction or card queue complete.

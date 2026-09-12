@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -56,7 +56,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 6,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 5,
     "market_regions": [
       "CN"
@@ -67,7 +67,7 @@
     "latest_disclosed_at": "2026-07-14",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 6,
+      "historical_or_ambiguous": 5,
       "participant": 4
     },
     "round_codes": [
@@ -389,7 +389,8 @@
         "activity_id": "IA-21b7f84b1c71272b",
         "funding_insight_id": "FI-260667c69ddbf880",
         "event_ids": [
-          "EV-565b6c1b10b3cf83"
+          "EV-565b6c1b10b3cf83",
+          "EV-af8e95dbe06ac083"
         ],
         "company_entity_id": "EN-90596b71813a2ee2",
         "company_canonical_entity_id": "",
@@ -422,46 +423,6 @@
             "source_content_hash": "36eeadfe3f6c3f89",
             "quote": "公司完成由深创投领投的新一轮A系列融资，其中深创投押注超过亿元",
             "quote_hash": "27e3c42e22edbcb94335fafe80b015db3ddafaff7770300de1b1af150e3694c2"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-78a4a7bd6de45134",
-        "funding_insight_id": "FI-39ef2aaaed606bfe",
-        "event_ids": [
-          "EV-af8e95dbe06ac083"
-        ],
-        "company_entity_id": "EN-ce22f929f4a17467",
-        "company_canonical_entity_id": "",
-        "company_name": "智平方（AI² Robotics）",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "超10亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": 1000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 10 亿元"
-        },
-        "announced_at": "2026-02-23",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-f6dd24cc4ca544d8",
-            "source_url": "https://robotscope.net/companies/zhisquare-intelligence",
-            "source_title": "智平方 · Series B — RobotScope",
-            "source_content_hash": "5904bd05269fe1c8",
-            "quote": "多轮系列 数亿级×7 轮 2025（半年内） 深创投、国投、达晨财智、华熙生物等",
-            "quote_hash": "474bf29952dbbf5c8be1a88398dc1c2e361fd4f49dd5f4c98bd4c3a9328f8c52"
           }
         ]
       },
@@ -612,14 +573,6 @@
         "source_content_hash": "36eeadfe3f6c3f89",
         "quote": "公司完成由深创投领投的新一轮A系列融资，其中深创投押注超过亿元",
         "quote_hash": "27e3c42e22edbcb94335fafe80b015db3ddafaff7770300de1b1af150e3694c2"
-      },
-      {
-        "source_id": "FISRC-f6dd24cc4ca544d8",
-        "source_url": "https://robotscope.net/companies/zhisquare-intelligence",
-        "source_title": "智平方 · Series B — RobotScope",
-        "source_content_hash": "5904bd05269fe1c8",
-        "quote": "多轮系列 数亿级×7 轮 2025（半年内） 深创投、国投、达晨财智、华熙生物等",
-        "quote_hash": "474bf29952dbbf5c8be1a88398dc1c2e361fd4f49dd5f4c98bd4c3a9328f8c52"
       },
       {
         "source_id": "FISRC-daccbed46498e19c",

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -56,7 +56,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -66,7 +66,7 @@
     "first_disclosed_at": "2026-05-27",
     "latest_disclosed_at": "2026-05-27",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 1
     },
     "round_codes": [],
     "portfolio_companies": [],
@@ -75,7 +75,8 @@
         "activity_id": "IA-0d515b81eee50204",
         "funding_insight_id": "FI-91b47144cb2be3de",
         "event_ids": [
-          "EV-d853eabcf7e759bd"
+          "EV-d853eabcf7e759bd",
+          "EV-a39d8aac0ee78e07"
         ],
         "company_entity_id": "EN-ca2325e126df04fc",
         "company_canonical_entity_id": "",
@@ -110,46 +111,6 @@
             "quote_hash": "24ab9d478027698fceb0a3e40b4d7559aac3d9180493c9417dfdb792ea23b80b"
           }
         ]
-      },
-      {
-        "activity_id": "IA-0b65996327fd9719",
-        "funding_insight_id": "FI-435f962c8ad61267",
-        "event_ids": [
-          "EV-a39d8aac0ee78e07"
-        ],
-        "company_entity_id": "EN-f33058e80670aeb6",
-        "company_canonical_entity_id": "",
-        "company_name": "深圳睿心智能医疗科技有限公司",
-        "round": "D轮",
-        "round_code": "series_d",
-        "round_original": "D轮",
-        "amount_original": "亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 100000000,
-          "max_value": 1000000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "1 亿元–10 亿元"
-        },
-        "announced_at": "2026-05-27",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "C轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-c364124f44b3ece9",
-            "source_url": "https://www.36kr.com/p/1367188925416841",
-            "source_title": "深圳“睿心医疗”获数亿元C轮融资，打造精准智能心脑一体化诊疗平台-36氪",
-            "source_content_hash": "ccc96fbb2b809ade",
-            "quote": "此次融资 由国投招商领投，老股东继续跟投，华兴资本担任独家财务顾问。",
-            "quote_hash": "068d7cf1b32bb646bf339120d647ceee1b8ee73844ddd371b3670e4bcb90d220"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -160,14 +121,6 @@
         "source_content_hash": "ccc96fbb2b809ade",
         "quote": "此次融资 由国投招商领投，老股东继续跟投",
         "quote_hash": "24ab9d478027698fceb0a3e40b4d7559aac3d9180493c9417dfdb792ea23b80b"
-      },
-      {
-        "source_id": "FISRC-c364124f44b3ece9",
-        "source_url": "https://www.36kr.com/p/1367188925416841",
-        "source_title": "深圳“睿心医疗”获数亿元C轮融资，打造精准智能心脑一体化诊疗平台-36氪",
-        "source_content_hash": "ccc96fbb2b809ade",
-        "quote": "此次融资 由国投招商领投，老股东继续跟投，华兴资本担任独家财务顾问。",
-        "quote_hash": "068d7cf1b32bb646bf339120d647ceee1b8ee73844ddd371b3670e4bcb90d220"
       }
     ]
   }

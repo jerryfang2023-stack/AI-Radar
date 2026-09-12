@@ -255,19 +255,37 @@ export function aggregateFundingRoundCards(
   const cards = [...inputCards]
     .sort((left, right) => String(right.published_at || "").localeCompare(String(left.published_at || "")))
     .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview));
+  const disclosureParents = new Map();
+  const disclosureRoot = (id) => {
+    if (!disclosureParents.has(id)) disclosureParents.set(id, id);
+    const parent = disclosureParents.get(id);
+    if (parent !== id) disclosureParents.set(id, disclosureRoot(parent));
+    return disclosureParents.get(id);
+  };
+  for (const card of cards) {
+    const ids = card.source_event_ids || [card.triggered_by_event_id];
+    for (const id of ids.filter(Boolean)) {
+      disclosureParents.set(disclosureRoot(id), disclosureRoot(card.triggered_by_event_id));
+    }
+  }
+  const fingerprintCards = new Map();
   for (const card of cards) {
     const fingerprint = aggregationFingerprint(card);
-    if (!groups.has(fingerprint)) groups.set(fingerprint, []);
-    const clusters = groups.get(fingerprint);
-    const eventIds = new Set(card.source_event_ids || [card.triggered_by_event_id].filter(Boolean));
-    const cluster = clusters.find((items) => items.some((item) => (
-      datesRepresentSameDisclosure(item.financing?.announced_at, card.financing?.announced_at)
-      || (item.source_event_ids || [item.triggered_by_event_id].filter(Boolean)).some((id) => eventIds.has(id))
-    )));
-    if (cluster) cluster.push(card);
-    else clusters.push([card]);
+    const matches = fingerprintCards.get(fingerprint) || [];
+    for (const match of matches) {
+      if (datesRepresentSameDisclosure(match.financing?.announced_at, card.financing?.announced_at)) {
+        disclosureParents.set(disclosureRoot(match.triggered_by_event_id), disclosureRoot(card.triggered_by_event_id));
+      }
+    }
+    matches.push(card);
+    fingerprintCards.set(fingerprint, matches);
   }
-  return [...groups.values()].flat().map((group) => (
+  for (const card of cards) {
+    const key = disclosureRoot(card.triggered_by_event_id);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(card);
+  }
+  return [...groups.values()].map((group) => (
     mergeFundingCardGroup(group, entityIndex, entityDecisions, companyIdentityReview)
   ));
 }

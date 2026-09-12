@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-09-12 18:09:55",
+    "generatedAt": "2026-09-12 18:23:07",
     "generatedDate": "2026-09-12",
     "storeDir": ".skill-store",
     "projectSkillDir": "agent-workflow/skills",
@@ -2438,7 +2438,7 @@ window.WaveSightLocalSkillStore = {
       "sourceLabel": "WaveSight",
       "sourcePath": "agent-workflow/skills/guanlan-china-funding-monitor",
       "sourceVersion": "",
-      "sourceDigest": "ba6e3d1e687785608fa9482407131c3eb64cc9e3a230fa43b1c3226c642ef9c3",
+      "sourceDigest": "9685eba8379a940797b0208110748913c9064a631156b6b1f034a1ccb26ab71f",
       "platformIds": [
         "shared"
       ],
@@ -2479,10 +2479,10 @@ window.WaveSightLocalSkillStore = {
       "installedTime": 1789183488877.5564,
       "last_used": "",
       "usage_count": 0,
-      "sizeKB": 11,
+      "sizeKB": 12,
       "fileCount": 5,
-      "modifiedAt": "2026-09-12 18:09:02",
-      "modifiedTime": 1789207742129.1416,
+      "modifiedAt": "2026-09-12 18:22:56",
+      "modifiedTime": 1789208576962.0974,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],

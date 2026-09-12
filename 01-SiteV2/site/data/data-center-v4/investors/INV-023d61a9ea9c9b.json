@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,30 +55,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-04-16",
     "latest_disclosed_at": "2026-07-13",
     "role_counts": {
-      "co_lead": 2,
-      "participant": 2
+      "co_lead": 1,
+      "participant": 1
     },
     "round_codes": [
       "pre_series_a",
       "series_a_plus_plus"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-43a99acf124e2c11",
-        "canonical_entity_id": "",
-        "name": "上海天鹜科技有限公司"
-      },
       {
         "entity_id": "EN-ff37e56ba8f7d89c",
         "canonical_entity_id": "",
@@ -93,11 +88,12 @@
     "activities": [
       {
         "activity_id": "IA-874dd6afbab4a8ad",
-        "funding_insight_id": "FI-444e099697814a4c",
+        "funding_insight_id": "FI-b9ca2a7fb525fcf8",
         "event_ids": [
+          "EV-b732caa990fa0a79",
           "EV-5812765de6753bf7"
         ],
-        "company_entity_id": "EN-43a99acf124e2c11",
+        "company_entity_id": "EN-ff37e56ba8f7d89c",
         "company_canonical_entity_id": "",
         "company_name": "上海天鹜科技有限公司",
         "round": "A++轮",
@@ -132,90 +128,11 @@
         ]
       },
       {
-        "activity_id": "IA-23ef0090d56e4034",
-        "funding_insight_id": "FI-b9ca2a7fb525fcf8",
-        "event_ids": [
-          "EV-b732caa990fa0a79"
-        ],
-        "company_entity_id": "EN-ff37e56ba8f7d89c",
-        "company_canonical_entity_id": "",
-        "company_name": "上海天鹜科技有限公司",
-        "round": "A++轮",
-        "round_code": "series_a_plus_plus",
-        "round_original": "A++轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-07-13",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-a638483ec7304070",
-            "source_url": "https://news.pedaily.cn/202607/566169.shtml",
-            "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
-            "source_content_hash": "06a0df416cf83674",
-            "quote": "本轮融资由 上海国投先导、国投创新联合领投",
-            "quote_hash": "b805dc54d147ca4100167ba91ef20487af5684e66564bda0c0dd756cd6dbe313"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-d7d2276e7749e259",
-        "funding_insight_id": "FI-b9eb4320e43ddfdf",
-        "event_ids": [
-          "EV-81810a440198ac3c"
-        ],
-        "company_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_name": "它石智航",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "4.55亿美金",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 455000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4.55 亿美元"
-        },
-        "announced_at": "2026-04-17",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-b4d6b7523ee32ad7",
-            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-            "source_content_hash": "0f321e5ffc10ea03",
-            "quote": "北京机器人产业发展投资基金、上海国投先导首次联合投资具身智能公司。",
-            "quote_hash": "a48cd109e91e585e43e14a021c8d7a4ff9074e88cdb4d2c8d831f1ca129679ac"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-78bad00b11736c92",
+        "activity_id": "IA-4750855a72c9dad9",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
-          "EV-1188b1585b835fe1"
+          "EV-1188b1585b835fe1",
+          "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -242,12 +159,12 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-f4259d29fd364076",
-            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-            "quote": "国有资本层面，北京 机器人 产业发展投资基金、上海国投先导投资，这也是两家国资首次联合投资具身智能公司。",
-            "quote_hash": "d532cb5244b6fcc2ee956aec9ec04bc9dfda05dbe4eb0981030543c94c717b15"
+            "source_id": "FISRC-b4d6b7523ee32ad7",
+            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
+            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+            "source_content_hash": "0f321e5ffc10ea03",
+            "quote": "北京机器人产业发展投资基金、上海国投先导首次联合投资具身智能公司。",
+            "quote_hash": "a48cd109e91e585e43e14a021c8d7a4ff9074e88cdb4d2c8d831f1ca129679ac"
           }
         ]
       }
@@ -262,28 +179,12 @@
         "quote_hash": "0661bf50e5b8d1581ada179824cbec4880666ed9fbbeeffd0326a4a0d969766c"
       },
       {
-        "source_id": "FISRC-a638483ec7304070",
-        "source_url": "https://news.pedaily.cn/202607/566169.shtml",
-        "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
-        "source_content_hash": "06a0df416cf83674",
-        "quote": "本轮融资由 上海国投先导、国投创新联合领投",
-        "quote_hash": "b805dc54d147ca4100167ba91ef20487af5684e66564bda0c0dd756cd6dbe313"
-      },
-      {
         "source_id": "FISRC-b4d6b7523ee32ad7",
         "source_url": "https://news.pedaily.cn/202604/562863.shtml",
         "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
         "source_content_hash": "0f321e5ffc10ea03",
         "quote": "北京机器人产业发展投资基金、上海国投先导首次联合投资具身智能公司。",
         "quote_hash": "a48cd109e91e585e43e14a021c8d7a4ff9074e88cdb4d2c8d831f1ca129679ac"
-      },
-      {
-        "source_id": "FISRC-f4259d29fd364076",
-        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-        "quote": "国有资本层面，北京 机器人 产业发展投资基金、上海国投先导投资，这也是两家国资首次联合投资具身智能公司。",
-        "quote_hash": "d532cb5244b6fcc2ee956aec9ec04bc9dfda05dbe4eb0981030543c94c717b15"
       }
     ]
   }

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,18 +55,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-07-09",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "co_lead": 3,
+      "co_lead": 2,
       "historical_or_ambiguous": 1
     },
     "round_codes": [
@@ -74,11 +74,6 @@
       "series_b"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-43a99acf124e2c11",
-        "canonical_entity_id": "",
-        "name": "上海天鹜科技有限公司"
-      },
       {
         "entity_id": "EN-ff37e56ba8f7d89c",
         "canonical_entity_id": "",
@@ -133,11 +128,12 @@
       },
       {
         "activity_id": "IA-7f358833fb503595",
-        "funding_insight_id": "FI-444e099697814a4c",
+        "funding_insight_id": "FI-b9ca2a7fb525fcf8",
         "event_ids": [
+          "EV-b732caa990fa0a79",
           "EV-5812765de6753bf7"
         ],
-        "company_entity_id": "EN-43a99acf124e2c11",
+        "company_entity_id": "EN-ff37e56ba8f7d89c",
         "company_canonical_entity_id": "",
         "company_name": "上海天鹜科技有限公司",
         "round": "A++轮",
@@ -168,46 +164,6 @@
             "source_content_hash": "8fe0a74c5845b0e9",
             "quote": "本轮融资由上海国投先导、国投创新联合领投",
             "quote_hash": "0661bf50e5b8d1581ada179824cbec4880666ed9fbbeeffd0326a4a0d969766c"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-30232bb938707211",
-        "funding_insight_id": "FI-b9ca2a7fb525fcf8",
-        "event_ids": [
-          "EV-b732caa990fa0a79"
-        ],
-        "company_entity_id": "EN-ff37e56ba8f7d89c",
-        "company_canonical_entity_id": "",
-        "company_name": "上海天鹜科技有限公司",
-        "round": "A++轮",
-        "round_code": "series_a_plus_plus",
-        "round_original": "A++轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-07-13",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-a638483ec7304070",
-            "source_url": "https://news.pedaily.cn/202607/566169.shtml",
-            "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
-            "source_content_hash": "06a0df416cf83674",
-            "quote": "本轮融资由 上海国投先导、国投创新联合领投",
-            "quote_hash": "b805dc54d147ca4100167ba91ef20487af5684e66564bda0c0dd756cd6dbe313"
           }
         ]
       },
@@ -268,14 +224,6 @@
         "source_content_hash": "8fe0a74c5845b0e9",
         "quote": "本轮融资由上海国投先导、国投创新联合领投",
         "quote_hash": "0661bf50e5b8d1581ada179824cbec4880666ed9fbbeeffd0326a4a0d969766c"
-      },
-      {
-        "source_id": "FISRC-a638483ec7304070",
-        "source_url": "https://news.pedaily.cn/202607/566169.shtml",
-        "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
-        "source_content_hash": "06a0df416cf83674",
-        "quote": "本轮融资由 上海国投先导、国投创新联合领投",
-        "quote_hash": "b805dc54d147ca4100167ba91ef20487af5684e66564bda0c0dd756cd6dbe313"
       },
       {
         "source_id": "FISRC-03cb69a63e7d787b",

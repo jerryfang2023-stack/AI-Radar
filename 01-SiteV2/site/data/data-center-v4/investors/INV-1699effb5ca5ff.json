@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,18 +55,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-03-24",
     "latest_disclosed_at": "2026-03-24",
     "role_counts": {
-      "other_current_round": 2
+      "other_current_round": 1
     },
     "round_codes": [
       "undisclosed"
@@ -76,11 +76,6 @@
         "entity_id": "EN-376967c5f350003c",
         "canonical_entity_id": "",
         "name": "杭州安泉数智科技有限公司"
-      },
-      {
-        "entity_id": "EN-6ce9ed4849e48b7e",
-        "canonical_entity_id": "",
-        "name": "杭州安泉数智科技有限公司"
       }
     ],
     "activities": [
@@ -88,7 +83,8 @@
         "activity_id": "IA-217806dc85c23319",
         "funding_insight_id": "FI-c93f3f68d7c51a46",
         "event_ids": [
-          "EV-6329f290aecc84da"
+          "EV-6329f290aecc84da",
+          "EV-d535e126615182f0"
         ],
         "company_entity_id": "EN-376967c5f350003c",
         "company_canonical_entity_id": "",
@@ -131,46 +127,6 @@
             "quote_hash": "d88226e3186a58249f1fe712f8e5d199730e1d59af5feaf29da64adae761922e"
           }
         ]
-      },
-      {
-        "activity_id": "IA-bc75d679e861cd7f",
-        "funding_insight_id": "FI-9a8ebe3ee29ea379",
-        "event_ids": [
-          "EV-d535e126615182f0"
-        ],
-        "company_entity_id": "EN-6ce9ed4849e48b7e",
-        "company_canonical_entity_id": "",
-        "company_name": "杭州安泉数智科技有限公司",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "新一轮",
-        "amount_original": "数千万",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-03-24",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
-        "scope": "current_round",
-        "role": "本轮独家投资",
-        "role_code": "other_current_round",
-        "evidence": [
-          {
-            "source_id": "FISRC-fb071cda23e488fa",
-            "source_url": "https://finance.sina.com.cn/jjxw/2026-03-24/doc-inhsaeyy1849774.shtml",
-            "source_title": "安泉数智完成新一轮数千万融资，元起资本独家投资",
-            "source_content_hash": "1dc78acbfde988a2",
-            "quote": "本轮由元起资本独家投资",
-            "quote_hash": "d88226e3186a58249f1fe712f8e5d199730e1d59af5feaf29da64adae761922e"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -185,8 +141,8 @@
       {
         "source_id": "FISRC-fb071cda23e488fa",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-03-24/doc-inhsaeyy1849774.shtml",
-        "source_title": "安泉数智完成新一轮数千万融资，元起资本独家投资",
-        "source_content_hash": "1dc78acbfde988a2",
+        "source_title": "安泉数智完成新一轮数千万融资，元起资本独家投资|融资_新浪财经_新浪网",
+        "source_content_hash": "35b9553c47f2c4c8",
         "quote": "本轮由元起资本独家投资",
         "quote_hash": "d88226e3186a58249f1fe712f8e5d199730e1d59af5feaf29da64adae761922e"
       }

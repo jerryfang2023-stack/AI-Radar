@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,18 +55,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-09-09",
     "latest_disclosed_at": "2026-09-09",
     "role_counts": {
-      "participant": 2
+      "participant": 1
     },
     "round_codes": [
       "pre_series_a"
@@ -76,63 +76,19 @@
         "entity_id": "EN-4d916dc8b25421d2",
         "canonical_entity_id": "",
         "name": "比特无限"
-      },
-      {
-        "entity_id": "EN-f56780cc13476293",
-        "canonical_entity_id": "",
-        "name": "上海比特无限人工智能科技有限公司"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-7f8c5a17c785e452",
+        "activity_id": "IA-9abf332a9b688346",
         "funding_insight_id": "FI-0e108e32ef8a5b27",
         "event_ids": [
-          "EV-43c9b851bd2a46c7"
+          "EV-43c9b851bd2a46c7",
+          "EV-d0dd835f3abb3163"
         ],
         "company_entity_id": "EN-4d916dc8b25421d2",
         "company_canonical_entity_id": "",
         "company_name": "比特无限",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "数千万元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-09-09",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-87030f2fac569be2",
-            "source_url": "https://news.pedaily.cn/202609/568727.shtml",
-            "source_title": "比特无限完成数千万元Pre-A轮融资，刚刚在全球物理3D竞赛ECCV中夺冠",
-            "source_content_hash": "f489a3e7d2f1c77b",
-            "quote": "比特无限已完成数千万元Pre-A轮融资，由产业投资方跃迁资本、上市公司CVC及老股东超额追投",
-            "quote_hash": "59e367bf5d3c30bae79b21defb1976f8cc8bc917a917543ded58f62da9501de2"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-f14e8bfcd4d30aaa",
-        "funding_insight_id": "FI-1a32de86086e29ea",
-        "event_ids": [
-          "EV-d0dd835f3abb3163"
-        ],
-        "company_entity_id": "EN-f56780cc13476293",
-        "company_canonical_entity_id": "",
-        "company_name": "上海比特无限人工智能科技有限公司",
         "round": "Pre-A轮",
         "round_code": "pre_series_a",
         "round_original": "Pre-A轮",
@@ -166,14 +122,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-87030f2fac569be2",
-        "source_url": "https://news.pedaily.cn/202609/568727.shtml",
-        "source_title": "比特无限完成数千万元Pre-A轮融资，刚刚在全球物理3D竞赛ECCV中夺冠",
-        "source_content_hash": "f489a3e7d2f1c77b",
-        "quote": "比特无限已完成数千万元Pre-A轮融资，由产业投资方跃迁资本、上市公司CVC及老股东超额追投",
-        "quote_hash": "59e367bf5d3c30bae79b21defb1976f8cc8bc917a917543ded58f62da9501de2"
-      },
       {
         "source_id": "FISRC-30b12c73a020a729",
         "source_url": "https://www.cls.cn/detail/2478686",

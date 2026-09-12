@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,19 +55,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 2,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
+    "china_market_activity_count": 2,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-02-05",
     "latest_disclosed_at": "2026-09-09",
     "role_counts": {
-      "historical_or_ambiguous": 2,
-      "participant": 3
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
       "series_a_plus",
@@ -82,54 +82,15 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-9e2ff313bf68b94b",
+        "activity_id": "IA-018e295ce4f3dc60",
         "funding_insight_id": "FI-0e108e32ef8a5b27",
         "event_ids": [
-          "EV-43c9b851bd2a46c7"
+          "EV-43c9b851bd2a46c7",
+          "EV-d0dd835f3abb3163"
         ],
         "company_entity_id": "EN-4d916dc8b25421d2",
         "company_canonical_entity_id": "",
         "company_name": "比特无限",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "数千万元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-09-09",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-81df639c393b6ee2",
-            "source_url": "https://news.pedaily.cn/202604/562877.shtml",
-            "source_title": "首发 | 全球AI生成矢量3D模型公司「比特无限」完成种子轮融资_投资界",
-            "source_content_hash": "7a0a19bd8f42791f",
-            "quote": "比特无限完成种子轮融资，由卓源亚洲领投。",
-            "quote_hash": "10bc270e3555b2b41e54b693c058c635c40e7d1e3126aaca1b6ded5d39637d90"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-82ce2854af1e73e8",
-        "funding_insight_id": "FI-1a32de86086e29ea",
-        "event_ids": [
-          "EV-d0dd835f3abb3163"
-        ],
-        "company_entity_id": "EN-f56780cc13476293",
-        "company_canonical_entity_id": "",
-        "company_name": "上海比特无限人工智能科技有限公司",
         "round": "Pre-A轮",
         "round_code": "pre_series_a",
         "round_original": "Pre-A轮",
@@ -202,50 +163,11 @@
         ]
       },
       {
-        "activity_id": "IA-bf60ba6e012e48b4",
-        "funding_insight_id": "FI-e3c31b65254f3522",
-        "event_ids": [
-          "EV-535c2f4fb851332d"
-        ],
-        "company_entity_id": "EN-9b21c9bf3305c0d6",
-        "company_canonical_entity_id": "",
-        "company_name": "北京生数科技有限公司",
-        "round": "A+轮",
-        "round_code": "series_a_plus",
-        "round_original": "A+轮",
-        "amount_original": "超过6亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 600000000,
-          "min_value": 600000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 6 亿元"
-        },
-        "announced_at": "2026-02-08",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-6819817bc08e3d63",
-            "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
-            "source_title": "生数科技完成超6亿元A+轮融资",
-            "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
-            "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投",
-            "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
-          }
-        ]
-      },
-      {
         "activity_id": "IA-39242b8c6f976a15",
         "funding_insight_id": "FI-474a441598e62f93",
         "event_ids": [
-          "EV-622ebdad1e1fad2d"
+          "EV-622ebdad1e1fad2d",
+          "EV-535c2f4fb851332d"
         ],
         "company_entity_id": "EN-9b21c9bf3305c0d6",
         "company_canonical_entity_id": "",
@@ -284,14 +206,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-81df639c393b6ee2",
-        "source_url": "https://news.pedaily.cn/202604/562877.shtml",
-        "source_title": "首发 | 全球AI生成矢量3D模型公司「比特无限」完成种子轮融资_投资界",
-        "source_content_hash": "7a0a19bd8f42791f",
-        "quote": "比特无限完成种子轮融资，由卓源亚洲领投。",
-        "quote_hash": "10bc270e3555b2b41e54b693c058c635c40e7d1e3126aaca1b6ded5d39637d90"
-      },
-      {
         "source_id": "FISRC-6aea6a18fe712b45",
         "source_url": "https://m.pedaily.cn/news/566841",
         "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
@@ -306,14 +220,6 @@
         "source_content_hash": "a281cc701a9028fb",
         "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
         "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
-      },
-      {
-        "source_id": "FISRC-6819817bc08e3d63",
-        "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
-        "source_title": "生数科技完成超6亿元A+轮融资",
-        "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
-        "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投",
-        "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
       },
       {
         "source_id": "FISRC-4177e5ca07c921a5",

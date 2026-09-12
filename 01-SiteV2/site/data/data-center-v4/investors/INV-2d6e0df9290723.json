@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,19 +55,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-06-16",
     "latest_disclosed_at": "2026-06-16",
     "role_counts": {
-      "other_current_round": 1,
-      "participant": 1
+      "other_current_round": 1
     },
     "round_codes": [
       "series_b"
@@ -77,11 +76,6 @@
         "entity_id": "EN-062ed8ada14ccffe",
         "canonical_entity_id": "",
         "name": "硅基流动（SiliconFlow）"
-      },
-      {
-        "entity_id": "EN-2864ab1d9269d363",
-        "canonical_entity_id": "",
-        "name": "硅基流动（SiliconFlow）"
       }
     ],
     "activities": [
@@ -89,7 +83,8 @@
         "activity_id": "IA-0030fc021f24bd2a",
         "funding_insight_id": "FI-a385248b0f830a67",
         "event_ids": [
-          "EV-df17b95cf25e7840"
+          "EV-df17b95cf25e7840",
+          "EV-5a28b9c37a236c89"
         ],
         "company_entity_id": "EN-062ed8ada14ccffe",
         "company_canonical_entity_id": "",
@@ -124,46 +119,6 @@
             "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
           }
         ]
-      },
-      {
-        "activity_id": "IA-3660fa952916f0c2",
-        "funding_insight_id": "FI-735806b08661fb55",
-        "event_ids": [
-          "EV-5a28b9c37a236c89"
-        ],
-        "company_entity_id": "EN-2864ab1d9269d363",
-        "company_canonical_entity_id": "",
-        "company_name": "硅基流动（SiliconFlow）",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "20 亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 2000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "20 亿元"
-        },
-        "announced_at": "2026-06-16",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-13f47cda26abe042",
-            "source_url": "https://news.pedaily.cn/202606/565261.shtml",
-            "source_title": "硅基流动完成新一轮超20 亿元融资",
-            "source_content_hash": "eed9c3c500776efe",
-            "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
-            "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -174,14 +129,6 @@
         "source_content_hash": "f1654d9235cc7fa8",
         "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
         "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
-      },
-      {
-        "source_id": "FISRC-13f47cda26abe042",
-        "source_url": "https://news.pedaily.cn/202606/565261.shtml",
-        "source_title": "硅基流动完成新一轮超20 亿元融资",
-        "source_content_hash": "eed9c3c500776efe",
-        "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
-        "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
       }
     ]
   }

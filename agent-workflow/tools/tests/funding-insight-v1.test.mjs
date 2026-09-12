@@ -2637,3 +2637,29 @@ test("reviewed repost links merge a later publication into the original financin
   assert.deepEqual(new Set(grouped[0].source_event_ids), new Set(["EV-january", "EV-september"]));
   assert.equal(repost.financing.announced_at, "2026-09-12");
 });
+
+test("explicit same-disclosure links join legal-name and rounded-amount variants only after review", async () => {
+  const { aggregateFundingRoundCards } = await import("../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs");
+  const first = validCard();
+  first.triggered_by_event_id = "EV-brand";
+  first.source_event_ids = ["EV-brand"];
+  first.financing.announced_at = "2026-04-16";
+  first.financing.amount = "4.55亿美元";
+  const variant = structuredClone(first);
+  variant.triggered_by_event_id = "EV-legal";
+  variant.source_event_ids = ["EV-legal"];
+  variant.company.name = "测试融资有限公司";
+  variant.company.entity_id = "EN-other";
+  variant.financing.amount = "超4.5亿美元";
+  variant.financing.announced_at = "2026-04-17";
+  assert.equal(aggregateFundingRoundCards([first, variant]).length, 2);
+  variant.source_event_ids.push("EV-brand");
+  const sameDate = structuredClone(first);
+  sameDate.triggered_by_event_id = "EV-same-date";
+  sameDate.source_event_ids = ["EV-same-date"];
+  const result = aggregateFundingRoundCards([first, variant, sameDate]);
+  assert.equal(result.length, 1);
+  assert.equal(result[0].financing.disclosures.length, 3);
+  assert.equal(result[0].financing.announced_at, "2026-04-16");
+  assert.equal(first.financing.amount, "4.55亿美元");
+});

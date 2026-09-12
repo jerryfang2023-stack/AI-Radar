@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,19 +55,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
+    "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-23",
     "latest_disclosed_at": "2026-09-03",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 2
     },
     "round_codes": [
       "series_b"
@@ -76,7 +76,7 @@
       {
         "entity_id": "EN-ce22f929f4a17467",
         "canonical_entity_id": "",
-        "name": "智平方（AI² Robotics）"
+        "name": "智平方（深圳）科技股份有限公司"
       },
       {
         "entity_id": "EN-90596b71813a2ee2",
@@ -169,7 +169,8 @@
         "activity_id": "IA-5246a47873df35ca",
         "funding_insight_id": "FI-260667c69ddbf880",
         "event_ids": [
-          "EV-565b6c1b10b3cf83"
+          "EV-565b6c1b10b3cf83",
+          "EV-af8e95dbe06ac083"
         ],
         "company_entity_id": "EN-90596b71813a2ee2",
         "company_canonical_entity_id": "",
@@ -204,46 +205,6 @@
             "quote_hash": "b7bfc4b1670290ef7843f08b9b77bb137831c80b06e105818fc5e8434c25b2da"
           }
         ]
-      },
-      {
-        "activity_id": "IA-cc7d88ff88fa3757",
-        "funding_insight_id": "FI-39ef2aaaed606bfe",
-        "event_ids": [
-          "EV-af8e95dbe06ac083"
-        ],
-        "company_entity_id": "EN-ce22f929f4a17467",
-        "company_canonical_entity_id": "",
-        "company_name": "智平方（AI² Robotics）",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "超10亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": 1000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 10 亿元"
-        },
-        "announced_at": "2026-02-23",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-2b8807c0477dce70",
-            "source_url": "https://finance.sina.com.cn/roll/2026-02-23/doc-inhnvivh9606202.shtml",
-            "source_title": "智平方完成10亿元B轮融资 估值超过百亿元",
-            "source_content_hash": "bcf31d071eff97490661a4e4005556a546c54ea1def4b5f9be8250f3287409ea",
-            "quote": "投资方包括百度战投、中车资本、 宇信科技 、 森麒麟 、沄柏资本、 国泰海通 基金等",
-            "quote_hash": "bda5f9cfb59b9cae2d95b5d29f6b83c2024aed8b21c13bfc78e9f6a135c00717"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -270,14 +231,6 @@
         "source_content_hash": "36eeadfe3f6c3f89",
         "quote": "投资方颇为豪华：中车资本、百度战投、沄柏资本、国泰海通、多家特斯拉生态链龙头企业及地方基金等。",
         "quote_hash": "b7bfc4b1670290ef7843f08b9b77bb137831c80b06e105818fc5e8434c25b2da"
-      },
-      {
-        "source_id": "FISRC-2b8807c0477dce70",
-        "source_url": "https://finance.sina.com.cn/roll/2026-02-23/doc-inhnvivh9606202.shtml",
-        "source_title": "智平方完成10亿元B轮融资 估值超过百亿元",
-        "source_content_hash": "bcf31d071eff97490661a4e4005556a546c54ea1def4b5f9be8250f3287409ea",
-        "quote": "投资方包括百度战投、中车资本、 宇信科技 、 森麒麟 、沄柏资本、 国泰海通 基金等",
-        "quote_hash": "bda5f9cfb59b9cae2d95b5d29f6b83c2024aed8b21c13bfc78e9f6a135c00717"
       }
     ]
   }

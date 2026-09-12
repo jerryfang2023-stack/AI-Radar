@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -127,9 +127,10 @@
         ]
       },
       {
-        "activity_id": "IA-fb8675bd87efd29f",
-        "funding_insight_id": "FI-b9eb4320e43ddfdf",
+        "activity_id": "IA-a81f4940af4cf10b",
+        "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
+          "EV-1188b1585b835fe1",
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
@@ -138,17 +139,17 @@
         "round": "Pre-A轮",
         "round_code": "pre_series_a",
         "round_original": "Pre-A轮",
-        "amount_original": "4.55亿美金",
+        "amount_original": "超4.5亿美元（约30亿元）",
         "amount_normalized": {
           "currency": "USD",
-          "value": 455000000,
-          "min_value": null,
+          "value": 450000000,
+          "min_value": 450000000,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "4.55 亿美元"
+          "status": "lower_bound",
+          "display_zh": "超过 4.5 亿美元"
         },
-        "announced_at": "2026-04-17",
+        "announced_at": "2026-04-16",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",

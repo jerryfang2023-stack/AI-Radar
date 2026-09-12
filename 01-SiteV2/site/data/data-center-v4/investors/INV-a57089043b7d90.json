@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,18 +55,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 8,
     "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 6,
+    "china_market_activity_count": 5,
     "china_market_company_count": 5,
     "first_disclosed_at": "2024-09-12",
     "latest_disclosed_at": "2026-06-26",
     "role_counts": {
-      "co_lead": 3,
+      "co_lead": 2,
       "historical_or_ambiguous": 8,
       "participant": 3
     },
@@ -226,50 +226,11 @@
         ]
       },
       {
-        "activity_id": "IA-4f015eb2c1793a60",
-        "funding_insight_id": "FI-b9eb4320e43ddfdf",
-        "event_ids": [
-          "EV-81810a440198ac3c"
-        ],
-        "company_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_name": "它石智航",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "4.55亿美金",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 455000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4.55 亿美元"
-        },
-        "announced_at": "2026-04-17",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-b4d6b7523ee32ad7",
-            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-            "source_content_hash": "0f321e5ffc10ea03",
-            "quote": "高瓴创投，与红杉中国本次联合领投它石智航。",
-            "quote_hash": "489b6b76e01f5a277f1df6426e9f59d846ee1c1f026a4d2125a15cb8e71b7541"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-08a1ac8062132c2b",
+        "activity_id": "IA-5e10d397e429d085",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
-          "EV-1188b1585b835fe1"
+          "EV-1188b1585b835fe1",
+          "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -296,12 +257,12 @@
         "role_code": "co_lead",
         "evidence": [
           {
-            "source_id": "FISRC-f4259d29fd364076",
-            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-            "quote": "财务投资者层面，高瓴 创投 与红杉中国联合领投",
-            "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
+            "source_id": "FISRC-b4d6b7523ee32ad7",
+            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
+            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+            "source_content_hash": "0f321e5ffc10ea03",
+            "quote": "高瓴创投，与红杉中国本次联合领投它石智航。",
+            "quote_hash": "489b6b76e01f5a277f1df6426e9f59d846ee1c1f026a4d2125a15cb8e71b7541"
           }
         ]
       },
@@ -309,7 +270,8 @@
         "activity_id": "IA-0382bf0e767fb0d2",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
-          "EV-1188b1585b835fe1"
+          "EV-1188b1585b835fe1",
+          "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -701,14 +663,6 @@
         "quote_hash": "489b6b76e01f5a277f1df6426e9f59d846ee1c1f026a4d2125a15cb8e71b7541"
       },
       {
-        "source_id": "FISRC-f4259d29fd364076",
-        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-        "quote": "财务投资者层面，高瓴 创投 与红杉中国联合领投",
-        "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
-      },
-      {
         "source_id": "FISRC-877032defba1f3e1",
         "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
         "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
@@ -783,7 +737,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[12].role": {
+        "activities[11].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",
@@ -791,7 +745,7 @@
           "translated_at": "2026-08-14T07:17:18.959Z",
           "status": "translated"
         },
-        "activities[13].role": {
+        "activities[12].role": {
           "text": "Pre-B轮领投",
           "source_hash": "aebf442c5143e180f2950bcaa72a692c16eb3617aebf8ba3bb3eb5171f29e2d6",
           "provider": "deepseek",

@@ -9,8 +9,8 @@
         "--v4-only=true",
         "--duckdb=skip"
       ],
-      "started_at": "2026-09-12T09:35:51.958Z",
-      "finished_at": "2026-09-12T09:36:08.225Z",
+      "started_at": "2026-09-12T10:21:38.771Z",
+      "finished_at": "2026-09-12T10:21:42.281Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -20,8 +20,8 @@
         "agent-workflow/tools/assert-data-lake-v4.mjs",
         "--duckdb=skip"
       ],
-      "started_at": "2026-09-12T09:36:08.226Z",
-      "finished_at": "2026-09-12T09:36:09.028Z",
+      "started_at": "2026-09-12T10:21:42.281Z",
+      "finished_at": "2026-09-12T10:21:43.004Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -30,8 +30,8 @@
       "command": [
         "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"
       ],
-      "started_at": "2026-09-12T09:36:09.029Z",
-      "finished_at": "2026-09-12T09:36:29.923Z",
+      "started_at": "2026-09-12T10:21:43.005Z",
+      "finished_at": "2026-09-12T10:22:06.218Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -40,8 +40,8 @@
       "command": [
         "agent-workflow/tools/materialize-entity-history-v1.mjs"
       ],
-      "started_at": "2026-09-12T09:36:29.924Z",
-      "finished_at": "2026-09-12T09:36:30.363Z",
+      "started_at": "2026-09-12T10:22:06.219Z",
+      "finished_at": "2026-09-12T10:22:06.736Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -50,8 +50,8 @@
       "command": [
         "agent-workflow/tools/assert-entity-history-v1.mjs"
       ],
-      "started_at": "2026-09-12T09:36:30.365Z",
-      "finished_at": "2026-09-12T09:36:31.189Z",
+      "started_at": "2026-09-12T10:22:06.737Z",
+      "finished_at": "2026-09-12T10:22:07.392Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -61,8 +61,8 @@
         "agent-workflow/tools/assert-funding-insights-v1.mjs",
         "--date=2026-09-12"
       ],
-      "started_at": "2026-09-12T09:39:06.268Z",
-      "finished_at": "2026-09-12T09:39:09.193Z",
+      "started_at": "2026-09-12T10:22:07.393Z",
+      "finished_at": "2026-09-12T10:22:10.920Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -71,8 +71,8 @@
       "command": [
         "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs"
       ],
-      "started_at": "2026-09-12T10:08:06.216Z",
-      "finished_at": "2026-09-12T10:08:10.604Z",
+      "started_at": "2026-09-12T10:24:00.184Z",
+      "finished_at": "2026-09-12T10:24:04.217Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -83,8 +83,8 @@
         "--write=true",
         "--apply=true"
       ],
-      "started_at": "2026-09-12T10:08:10.605Z",
-      "finished_at": "2026-09-12T10:08:11.161Z",
+      "started_at": "2026-09-12T10:24:04.218Z",
+      "finished_at": "2026-09-12T10:24:04.875Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -93,8 +93,8 @@
       "command": [
         "agent-workflow/tools/project-funding-taxonomy-to-events-v4-1.mjs"
       ],
-      "started_at": "2026-09-12T10:08:11.162Z",
-      "finished_at": "2026-09-12T10:08:12.969Z",
+      "started_at": "2026-09-12T10:24:04.876Z",
+      "finished_at": "2026-09-12T10:24:05.657Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -105,8 +105,8 @@
         "--v4-only=true",
         "--duckdb=skip"
       ],
-      "started_at": "2026-09-12T10:08:12.970Z",
-      "finished_at": "2026-09-12T10:08:24.951Z",
+      "started_at": "2026-09-12T10:24:05.658Z",
+      "finished_at": "2026-09-12T10:24:08.680Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -116,8 +116,8 @@
         "agent-workflow/tools/assert-data-lake-v4.mjs",
         "--duckdb=skip"
       ],
-      "started_at": "2026-09-12T10:08:24.952Z",
-      "finished_at": "2026-09-12T10:08:26.020Z",
+      "started_at": "2026-09-12T10:24:08.680Z",
+      "finished_at": "2026-09-12T10:24:09.311Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -126,8 +126,8 @@
       "command": [
         "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs"
       ],
-      "started_at": "2026-09-12T10:08:26.021Z",
-      "finished_at": "2026-09-12T10:08:29.825Z",
+      "started_at": "2026-09-12T10:24:09.312Z",
+      "finished_at": "2026-09-12T10:24:13.020Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -136,8 +136,8 @@
       "command": [
         "agent-workflow/tools/build-investment-institutions-v1.mjs"
       ],
-      "started_at": "2026-09-12T10:08:29.826Z",
-      "finished_at": "2026-09-12T10:08:30.286Z",
+      "started_at": "2026-09-12T10:24:13.021Z",
+      "finished_at": "2026-09-12T10:24:13.502Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -146,8 +146,8 @@
       "command": [
         "agent-workflow/tools/assert-investment-institutions-v1.mjs"
       ],
-      "started_at": "2026-09-12T10:08:30.286Z",
-      "finished_at": "2026-09-12T10:08:30.837Z",
+      "started_at": "2026-09-12T10:24:13.502Z",
+      "finished_at": "2026-09-12T10:24:13.969Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -156,8 +156,8 @@
       "command": [
         "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"
       ],
-      "started_at": "2026-09-12T10:08:30.838Z",
-      "finished_at": "2026-09-12T10:08:50.882Z",
+      "started_at": "2026-09-12T10:24:13.970Z",
+      "finished_at": "2026-09-12T10:24:41.475Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -166,8 +166,8 @@
       "command": [
         "agent-workflow/tools/materialize-entity-history-v1.mjs"
       ],
-      "started_at": "2026-09-12T10:08:50.883Z",
-      "finished_at": "2026-09-12T10:08:51.272Z",
+      "started_at": "2026-09-12T10:24:41.476Z",
+      "finished_at": "2026-09-12T10:24:42.083Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -176,8 +176,8 @@
       "command": [
         "agent-workflow/tools/assert-entity-history-v1.mjs"
       ],
-      "started_at": "2026-09-12T10:08:51.272Z",
-      "finished_at": "2026-09-12T10:08:51.926Z",
+      "started_at": "2026-09-12T10:24:42.084Z",
+      "finished_at": "2026-09-12T10:24:42.830Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -186,8 +186,8 @@
       "command": [
         "01-SiteV2/site/scripts/build-trend-radar-frontstage.mjs"
       ],
-      "started_at": "2026-09-12T10:08:51.926Z",
-      "finished_at": "2026-09-12T10:08:52.411Z",
+      "started_at": "2026-09-12T10:24:42.831Z",
+      "finished_at": "2026-09-12T10:24:43.326Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -196,8 +196,8 @@
       "command": [
         "agent-workflow/tools/assert-trend-radar-v1.mjs"
       ],
-      "started_at": "2026-09-12T10:08:52.412Z",
-      "finished_at": "2026-09-12T10:08:52.818Z",
+      "started_at": "2026-09-12T10:24:43.327Z",
+      "finished_at": "2026-09-12T10:24:43.791Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -206,8 +206,8 @@
       "command": [
         "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"
       ],
-      "started_at": "2026-09-12T10:08:52.819Z",
-      "finished_at": "2026-09-12T10:08:53.856Z",
+      "started_at": "2026-09-12T10:24:43.791Z",
+      "finished_at": "2026-09-12T10:24:44.917Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -218,8 +218,8 @@
         "--v4-only=true",
         "--duckdb=skip"
       ],
-      "started_at": "2026-09-12T10:08:53.856Z",
-      "finished_at": "2026-09-12T10:08:56.698Z",
+      "started_at": "2026-09-12T10:24:44.918Z",
+      "finished_at": "2026-09-12T10:24:48.024Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -229,8 +229,8 @@
         "agent-workflow/tools/assert-data-lake-v4.mjs",
         "--duckdb=skip"
       ],
-      "started_at": "2026-09-12T10:08:56.699Z",
-      "finished_at": "2026-09-12T10:08:57.367Z",
+      "started_at": "2026-09-12T10:24:48.025Z",
+      "finished_at": "2026-09-12T10:24:48.714Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -241,8 +241,8 @@
         "--all=true",
         "--frontstage=true"
       ],
-      "started_at": "2026-09-12T10:08:57.368Z",
-      "finished_at": "2026-09-12T10:09:06.325Z",
+      "started_at": "2026-09-12T10:24:48.714Z",
+      "finished_at": "2026-09-12T10:24:52.946Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -251,8 +251,8 @@
       "command": [
         "agent-workflow/tools/assert-taxonomy-consistency-v4-1.mjs"
       ],
-      "started_at": "2026-09-12T10:11:09.288Z",
-      "finished_at": "2026-09-12T10:11:16.626Z",
+      "started_at": "2026-09-12T10:24:52.947Z",
+      "finished_at": "2026-09-12T10:24:59.785Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -261,8 +261,8 @@
       "command": [
         "agent-workflow/tools/assert-public-evidence-boundary.mjs"
       ],
-      "started_at": "2026-09-12T10:11:16.627Z",
-      "finished_at": "2026-09-12T10:11:24.264Z",
+      "started_at": "2026-09-12T10:24:59.785Z",
+      "finished_at": "2026-09-12T10:25:03.536Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -272,8 +272,8 @@
         "agent-workflow/tools/assert-data-center-model-assist.mjs",
         "--date=2026-09-12"
       ],
-      "started_at": "2026-09-12T10:11:24.265Z",
-      "finished_at": "2026-09-12T10:11:26.350Z",
+      "started_at": "2026-09-12T10:25:03.537Z",
+      "finished_at": "2026-09-12T10:25:05.436Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -283,8 +283,8 @@
         "agent-workflow/tools/assert-data-center-v4.mjs",
         "--date=2026-09-12"
       ],
-      "started_at": "2026-09-12T10:11:26.351Z",
-      "finished_at": "2026-09-12T10:11:28.413Z",
+      "started_at": "2026-09-12T10:25:05.436Z",
+      "finished_at": "2026-09-12T10:25:07.147Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -295,8 +295,8 @@
         "--date=2026-09-12",
         "--stage=bundle"
       ],
-      "started_at": "2026-09-12T10:11:28.414Z",
-      "finished_at": "2026-09-12T10:11:28.645Z",
+      "started_at": "2026-09-12T10:25:07.148Z",
+      "finished_at": "2026-09-12T10:25:07.300Z",
       "exit_code": 0,
       "status": "passed"
     },
@@ -305,8 +305,8 @@
       "command": [
         "agent-workflow/tools/build-china-funding-history-quality.mjs"
       ],
-      "started_at": "2026-09-12T10:11:28.646Z",
-      "finished_at": "2026-09-12T10:11:29.212Z",
+      "started_at": "2026-09-12T10:25:07.301Z",
+      "finished_at": "2026-09-12T10:25:07.850Z",
       "exit_code": 0,
       "status": "passed"
     }

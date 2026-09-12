@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,30 +55,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-07-09",
-    "latest_disclosed_at": "2026-09-07",
+    "latest_disclosed_at": "2026-09-06",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 4
+      "participant": 3
     },
     "round_codes": [
       "angel",
       "pre_series_a"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-ef4115f20679431f",
-        "canonical_entity_id": "",
-        "name": "光啾科技（上海）有限公司"
-      },
       {
         "entity_id": "EN-4482f5b97bed22de",
         "canonical_entity_id": "",
@@ -97,50 +92,11 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-3ad87686358579a7",
-        "funding_insight_id": "FI-cb780f46f7e0a74b",
-        "event_ids": [
-          "EV-ae87e20ab0c5d06a"
-        ],
-        "company_entity_id": "EN-ef4115f20679431f",
-        "company_canonical_entity_id": "",
-        "company_name": "光啾科技（上海）有限公司",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
-        "amount_original": "数千万元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-09-07",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-1a4d184cc7346d33",
-            "source_url": "https://finance.sina.com.cn/jjxw/2026-09-07/doc-iniqymaf0523150.shtml",
-            "source_title": "光啾科技完成数千万天使轮融资，加速边缘光计算产业化落地",
-            "source_content_hash": "af7072cbad01028b",
-            "quote": "由 鼎峰科创 领投， 浦东创投 跟投，老股东 中科创星 持续加注",
-            "quote_hash": "0900be1f2211b5be6414a2c9a7e1100831f83ce178da56257984aa462d0f6372"
-          }
-        ]
-      },
-      {
         "activity_id": "IA-0611611c30a6ee9b",
         "funding_insight_id": "FI-8e02d6b25a91500c",
         "event_ids": [
-          "EV-012b1ccfe1d48f51"
+          "EV-012b1ccfe1d48f51",
+          "EV-ae87e20ab0c5d06a"
         ],
         "company_entity_id": "EN-4482f5b97bed22de",
         "company_canonical_entity_id": "",
@@ -298,14 +254,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-1a4d184cc7346d33",
-        "source_url": "https://finance.sina.com.cn/jjxw/2026-09-07/doc-iniqymaf0523150.shtml",
-        "source_title": "光啾科技完成数千万天使轮融资，加速边缘光计算产业化落地",
-        "source_content_hash": "af7072cbad01028b",
-        "quote": "由 鼎峰科创 领投， 浦东创投 跟投，老股东 中科创星 持续加注",
-        "quote_hash": "0900be1f2211b5be6414a2c9a7e1100831f83ce178da56257984aa462d0f6372"
-      },
       {
         "source_id": "FISRC-eb5fe8fcd40d4621",
         "source_url": "https://m.sohu.com/a/1072459266_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",

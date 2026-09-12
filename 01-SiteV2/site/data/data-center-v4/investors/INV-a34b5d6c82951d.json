@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,20 +55,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 6,
-    "china_market_company_count": 5,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-04-16",
     "latest_disclosed_at": "2026-07-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 5
+      "participant": 3
     },
     "round_codes": [
       "angel",
@@ -85,11 +85,6 @@
         "entity_id": "EN-7f505bc9744206fd",
         "canonical_entity_id": "",
         "name": "上海灵睿智芯计算技术有限公司"
-      },
-      {
-        "entity_id": "EN-43a99acf124e2c11",
-        "canonical_entity_id": "",
-        "name": "上海天鹜科技有限公司"
       },
       {
         "entity_id": "EN-ff37e56ba8f7d89c",
@@ -185,11 +180,12 @@
       },
       {
         "activity_id": "IA-fa8e1597f9962bed",
-        "funding_insight_id": "FI-444e099697814a4c",
+        "funding_insight_id": "FI-b9ca2a7fb525fcf8",
         "event_ids": [
+          "EV-b732caa990fa0a79",
           "EV-5812765de6753bf7"
         ],
-        "company_entity_id": "EN-43a99acf124e2c11",
+        "company_entity_id": "EN-ff37e56ba8f7d89c",
         "company_canonical_entity_id": "",
         "company_name": "上海天鹜科技有限公司",
         "round": "A++轮",
@@ -220,46 +216,6 @@
             "source_content_hash": "8fe0a74c5845b0e9",
             "quote": "聚杰微纤、宁波甬元兴仑君金创投、金景资本、孚腾资本、财鑫资...",
             "quote_hash": "e901a790fb32e469e8ebc69fb789058dddb4b37870a75a7bd4d4ee892c2fa99a"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-88c2756874224e98",
-        "funding_insight_id": "FI-b9ca2a7fb525fcf8",
-        "event_ids": [
-          "EV-b732caa990fa0a79"
-        ],
-        "company_entity_id": "EN-ff37e56ba8f7d89c",
-        "company_canonical_entity_id": "",
-        "company_name": "上海天鹜科技有限公司",
-        "round": "A++轮",
-        "round_code": "series_a_plus_plus",
-        "round_original": "A++轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-07-13",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-a638483ec7304070",
-            "source_url": "https://news.pedaily.cn/202607/566169.shtml",
-            "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
-            "source_content_hash": "06a0df416cf83674",
-            "quote": "聚杰微纤、宁波甬元兴仑君金创投、金景资本、孚腾资本、财鑫资本跟投",
-            "quote_hash": "7285592dc1bf059597876b8ea8e97180285e387e20201bd7d5207ba723f4d138"
           }
         ]
       },
@@ -304,50 +260,11 @@
         ]
       },
       {
-        "activity_id": "IA-a7ae7db17c3bc567",
-        "funding_insight_id": "FI-b9eb4320e43ddfdf",
-        "event_ids": [
-          "EV-81810a440198ac3c"
-        ],
-        "company_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_name": "它石智航",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "4.55亿美金",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 455000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4.55 亿美元"
-        },
-        "announced_at": "2026-04-17",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-b4d6b7523ee32ad7",
-            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-            "source_content_hash": "0f321e5ffc10ea03",
-            "quote": "TCL创投、孚腾资本、首程控股（0697.HK）、建发新兴投资、恒旭资本、国汽投资进一步投资入局",
-            "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-fe6f474551ad5c74",
+        "activity_id": "IA-47727cdc15d06f22",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
-          "EV-1188b1585b835fe1"
+          "EV-1188b1585b835fe1",
+          "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -374,12 +291,12 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-f4259d29fd364076",
-            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-            "quote": "产业投资者层面，TCL产投、孚腾资本、 首程控股 、建发新兴投资、恒旭资本、国汽投资参投",
-            "quote_hash": "4c7063a16d1e1f892db7f9393206d69f3d1f7b24daaac59aa53e4b8d05ca673d"
+            "source_id": "FISRC-b4d6b7523ee32ad7",
+            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
+            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+            "source_content_hash": "0f321e5ffc10ea03",
+            "quote": "TCL创投、孚腾资本、首程控股（0697.HK）、建发新兴投资、恒旭资本、国汽投资进一步投资入局",
+            "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
           }
         ]
       }
@@ -410,14 +327,6 @@
         "quote_hash": "e901a790fb32e469e8ebc69fb789058dddb4b37870a75a7bd4d4ee892c2fa99a"
       },
       {
-        "source_id": "FISRC-a638483ec7304070",
-        "source_url": "https://news.pedaily.cn/202607/566169.shtml",
-        "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
-        "source_content_hash": "06a0df416cf83674",
-        "quote": "聚杰微纤、宁波甬元兴仑君金创投、金景资本、孚腾资本、财鑫资本跟投",
-        "quote_hash": "7285592dc1bf059597876b8ea8e97180285e387e20201bd7d5207ba723f4d138"
-      },
-      {
         "source_id": "FISRC-7e1722986b555854",
         "source_url": "https://news.pedaily.cn/202607/565963.shtml",
         "source_title": "创始团队来自上海交大，量感智能完成数千万元天使轮融资",
@@ -432,14 +341,6 @@
         "source_content_hash": "0f321e5ffc10ea03",
         "quote": "TCL创投、孚腾资本、首程控股（0697.HK）、建发新兴投资、恒旭资本、国汽投资进一步投资入局",
         "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
-      },
-      {
-        "source_id": "FISRC-f4259d29fd364076",
-        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-        "quote": "产业投资者层面，TCL产投、孚腾资本、 首程控股 、建发新兴投资、恒旭资本、国汽投资参投",
-        "quote_hash": "4c7063a16d1e1f892db7f9393206d69f3d1f7b24daaac59aa53e4b8d05ca673d"
       }
     ]
   }

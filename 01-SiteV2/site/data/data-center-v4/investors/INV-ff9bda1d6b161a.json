@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,20 +55,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
-    "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 4,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-03-05",
     "latest_disclosed_at": "2026-07-02",
     "role_counts": {
-      "historical_or_ambiguous": 5,
+      "historical_or_ambiguous": 4,
       "other_current_round": 1,
-      "participant": 3
+      "participant": 2
     },
     "round_codes": [
       "multi_round",
@@ -83,11 +83,6 @@
       },
       {
         "entity_id": "EN-062ed8ada14ccffe",
-        "canonical_entity_id": "",
-        "name": "硅基流动（SiliconFlow）"
-      },
-      {
-        "entity_id": "EN-2864ab1d9269d363",
         "canonical_entity_id": "",
         "name": "硅基流动（SiliconFlow）"
       },
@@ -142,7 +137,8 @@
         "activity_id": "IA-13ae63885aa751b5",
         "funding_insight_id": "FI-a385248b0f830a67",
         "event_ids": [
-          "EV-df17b95cf25e7840"
+          "EV-df17b95cf25e7840",
+          "EV-5a28b9c37a236c89"
         ],
         "company_entity_id": "EN-062ed8ada14ccffe",
         "company_canonical_entity_id": "",
@@ -175,46 +171,6 @@
             "source_content_hash": "f1654d9235cc7fa8",
             "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
             "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-9091d2a4ffc47afa",
-        "funding_insight_id": "FI-735806b08661fb55",
-        "event_ids": [
-          "EV-5a28b9c37a236c89"
-        ],
-        "company_entity_id": "EN-2864ab1d9269d363",
-        "company_canonical_entity_id": "",
-        "company_name": "硅基流动（SiliconFlow）",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "20 亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 2000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "20 亿元"
-        },
-        "announced_at": "2026-06-16",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-13f47cda26abe042",
-            "source_url": "https://news.pedaily.cn/202606/565261.shtml",
-            "source_title": "硅基流动完成新一轮超20 亿元融资",
-            "source_content_hash": "eed9c3c500776efe",
-            "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
-            "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
           }
         ]
       },
@@ -390,7 +346,8 @@
         "activity_id": "IA-f217335c5c12869a",
         "funding_insight_id": "FI-edc4e4cec2cd84bd",
         "event_ids": [
-          "EV-77a608db67e742a4"
+          "EV-77a608db67e742a4",
+          "EV-a34447341a3872ed"
         ],
         "company_entity_id": "EN-e7492db096492304",
         "company_canonical_entity_id": "",
@@ -425,46 +382,6 @@
             "quote_hash": "38f1afaa21acbc84c6130945ed6439d1d45461193c17f3bafc596b7786bfa394"
           }
         ]
-      },
-      {
-        "activity_id": "IA-06fe95bac405eaf6",
-        "funding_insight_id": "FI-129fe046eadd748c",
-        "event_ids": [
-          "EV-a34447341a3872ed"
-        ],
-        "company_entity_id": "EN-e7492db096492304",
-        "company_canonical_entity_id": "",
-        "company_name": "极佳视界",
-        "round": "Pre-B轮",
-        "round_code": "pre_series_b",
-        "round_original": "Pre-B轮",
-        "amount_original": "近10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 10 亿元"
-        },
-        "announced_at": "2026-03-05",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次财务机构",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-010c77e94d1f858f",
-            "source_url": "https://m.36kr.com/p/3710076436557954",
-            "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
-            "source_content_hash": "7e8c3e23c6fe0f92",
-            "quote": "中金资本、达晨财智、华控基金、奇绩创坛等众多财务机构的认可，体现了极佳视界的领先性和行业地位",
-            "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -483,14 +400,6 @@
         "source_content_hash": "f1654d9235cc7fa8",
         "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
         "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
-      },
-      {
-        "source_id": "FISRC-13f47cda26abe042",
-        "source_url": "https://news.pedaily.cn/202606/565261.shtml",
-        "source_title": "硅基流动完成新一轮超20 亿元融资",
-        "source_content_hash": "eed9c3c500776efe",
-        "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
-        "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
       },
       {
         "source_id": "FISRC-ce47b663ca256878",
@@ -539,14 +448,6 @@
         "source_content_hash": "7d9409a9ba1e94fc",
         "quote": "同年11月，极佳视界完成新一轮亿元级A1轮融资，由华为哈勃、华控基金联合投资。",
         "quote_hash": "38f1afaa21acbc84c6130945ed6439d1d45461193c17f3bafc596b7786bfa394"
-      },
-      {
-        "source_id": "FISRC-010c77e94d1f858f",
-        "source_url": "https://m.36kr.com/p/3710076436557954",
-        "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
-        "source_content_hash": "7e8c3e23c6fe0f92",
-        "quote": "中金资本、达晨财智、华控基金、奇绩创坛等众多财务机构的认可，体现了极佳视界的领先性和行业地位",
-        "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
       }
     ]
   }

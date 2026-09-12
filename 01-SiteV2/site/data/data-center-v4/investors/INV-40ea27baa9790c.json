@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,19 +55,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 5,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-08-28",
+    "latest_disclosed_at": "2026-08-27",
     "role_counts": {
       "co_lead": 1,
-      "participant": 4
+      "participant": 2
     },
     "round_codes": [
       "infrastructure",
@@ -86,16 +86,6 @@
         "name": "基元律动（TokenRhythm）"
       },
       {
-        "entity_id": "EN-2cf797510f7e4324",
-        "canonical_entity_id": "",
-        "name": "上海基元律动科技有限公司"
-      },
-      {
-        "entity_id": "EN-9c7b7987e3a6bf06",
-        "canonical_entity_id": "",
-        "name": "上海基元律动科技有限公司"
-      },
-      {
         "entity_id": "EN-d361e2fd6b342245",
         "canonical_entity_id": "",
         "name": "深圳忆纪元科技有限公司"
@@ -103,50 +93,12 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-6ef77b44f32b71bd",
-        "funding_insight_id": "FI-a2a15e704693ce24",
-        "event_ids": [
-          "EV-b78b4d2d94c8e72c"
-        ],
-        "company_entity_id": "EN-2cf797510f7e4324",
-        "company_canonical_entity_id": "",
-        "company_name": "上海基元律动科技有限公司",
-        "round": "基础设施融资",
-        "round_code": "infrastructure",
-        "round_original": "基础设施融资",
-        "amount_original": "数千万美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "数千万美元"
-        },
-        "announced_at": "2026-08-28",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-89f8f73b4550e672",
-            "source_url": "https://news.pedaily.cn/202608/568248.shtml",
-            "source_title": "基元律动完成新一轮融资，累计融资数千万美元",
-            "source_content_hash": "fdd56106d8c1b75c",
-            "quote": "本轮融资由 弘晖基金领投，聚合资本、尚势资本 等机构参与。",
-            "quote_hash": "9b96c88169780643a5210b997d4d9dda3b41cf3666de831a37d11d455a82f7e2"
-          }
-        ]
-      },
-      {
         "activity_id": "IA-2b432a53b6e3572f",
         "funding_insight_id": "FI-f92057b012040f2a",
         "event_ids": [
-          "EV-3c145705d72a5e57"
+          "EV-3c145705d72a5e57",
+          "EV-b78b4d2d94c8e72c",
+          "EV-5e8ad56fcef42b5a"
         ],
         "company_entity_id": "EN-731b78a10ab9e444",
         "company_canonical_entity_id": "",
@@ -179,46 +131,6 @@
             "source_content_hash": "88fa07495f1fde73",
             "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与。",
             "quote_hash": "53660265c82eb4f1f1c5bb0194b06bb447a577340eacd1846bdc0c8e495d7d05"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-c92d9269c4171fd5",
-        "funding_insight_id": "FI-99a7219d2f444794",
-        "event_ids": [
-          "EV-5e8ad56fcef42b5a"
-        ],
-        "company_entity_id": "EN-9c7b7987e3a6bf06",
-        "company_canonical_entity_id": "",
-        "company_name": "上海基元律动科技有限公司",
-        "round": "基础设施融资",
-        "round_code": "infrastructure",
-        "round_original": "基础设施融资",
-        "amount_original": "数千万美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "数千万美元"
-        },
-        "announced_at": "2026-08-27",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-7d258d317b7d8b47",
-            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-inipucsw0774279.shtml",
-            "source_title": "基元律动累计融资数千万美元",
-            "source_content_hash": "cf1d781a8be43665",
-            "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与",
-            "quote_hash": "d559bde143b6311d20119acc126ab51362e077d2362ea26a5e7f4855df5733cd"
           }
         ]
       },
@@ -305,28 +217,12 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-89f8f73b4550e672",
-        "source_url": "https://news.pedaily.cn/202608/568248.shtml",
-        "source_title": "基元律动完成新一轮融资，累计融资数千万美元",
-        "source_content_hash": "fdd56106d8c1b75c",
-        "quote": "本轮融资由 弘晖基金领投，聚合资本、尚势资本 等机构参与。",
-        "quote_hash": "9b96c88169780643a5210b997d4d9dda3b41cf3666de831a37d11d455a82f7e2"
-      },
-      {
         "source_id": "FISRC-f23d61f5ed1d1ac1",
         "source_url": "https://www.qbitai.com/2026/08/480079.html",
         "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
         "source_content_hash": "88fa07495f1fde73",
         "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与。",
         "quote_hash": "53660265c82eb4f1f1c5bb0194b06bb447a577340eacd1846bdc0c8e495d7d05"
-      },
-      {
-        "source_id": "FISRC-7d258d317b7d8b47",
-        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-inipucsw0774279.shtml",
-        "source_title": "基元律动累计融资数千万美元",
-        "source_content_hash": "cf1d781a8be43665",
-        "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与",
-        "quote_hash": "d559bde143b6311d20119acc126ab51362e077d2362ea26a5e7f4855df5733cd"
       },
       {
         "source_id": "FISRC-4a456deffcbf4bfd",

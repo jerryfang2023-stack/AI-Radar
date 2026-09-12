@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:08:42.252Z",
+    "generatedAt": "2026-09-12T10:24:27.269Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -55,18 +55,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
+    "china_market_activity_count": 3,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-05",
-    "latest_disclosed_at": "2026-04-17",
+    "latest_disclosed_at": "2026-04-16",
     "role_counts": {
-      "participant": 5
+      "participant": 3
     },
     "round_codes": [
       "pre_series_a",
@@ -87,50 +87,11 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-f7c135d418a5466b",
-        "funding_insight_id": "FI-b9eb4320e43ddfdf",
-        "event_ids": [
-          "EV-81810a440198ac3c"
-        ],
-        "company_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_name": "它石智航",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "4.55亿美金",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 455000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4.55 亿美元"
-        },
-        "announced_at": "2026-04-17",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-b4d6b7523ee32ad7",
-            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-            "source_content_hash": "0f321e5ffc10ea03",
-            "quote": "TCL创投、孚腾资本、首程控股（0697.HK）、建发新兴投资、恒旭资本、国汽投资进一步投资入局",
-            "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-8a5c0089800d5ce2",
+        "activity_id": "IA-1b09951a53031450",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
-          "EV-1188b1585b835fe1"
+          "EV-1188b1585b835fe1",
+          "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -157,12 +118,12 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-f4259d29fd364076",
-            "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-            "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-            "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-            "quote": "产业投资者层面，TCL产投、孚腾资本、 首程控股 、建发新兴投资、恒旭资本、国汽投资参投",
-            "quote_hash": "4c7063a16d1e1f892db7f9393206d69f3d1f7b24daaac59aa53e4b8d05ca673d"
+            "source_id": "FISRC-b4d6b7523ee32ad7",
+            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
+            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+            "source_content_hash": "0f321e5ffc10ea03",
+            "quote": "TCL创投、孚腾资本、首程控股（0697.HK）、建发新兴投资、恒旭资本、国汽投资进一步投资入局",
+            "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
           }
         ]
       },
@@ -207,50 +168,11 @@
         ]
       },
       {
-        "activity_id": "IA-c988dec15befa497",
-        "funding_insight_id": "FI-e3c31b65254f3522",
-        "event_ids": [
-          "EV-535c2f4fb851332d"
-        ],
-        "company_entity_id": "EN-9b21c9bf3305c0d6",
-        "company_canonical_entity_id": "",
-        "company_name": "北京生数科技有限公司",
-        "round": "A+轮",
-        "round_code": "series_a_plus",
-        "round_original": "A+轮",
-        "amount_original": "超过6亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 600000000,
-          "min_value": 600000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 6 亿元"
-        },
-        "announced_at": "2026-02-08",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-6819817bc08e3d63",
-            "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
-            "source_title": "生数科技完成超6亿元A+轮融资",
-            "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
-            "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投",
-            "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
-          }
-        ]
-      },
-      {
         "activity_id": "IA-f971a9ebe0c3300f",
         "funding_insight_id": "FI-474a441598e62f93",
         "event_ids": [
-          "EV-622ebdad1e1fad2d"
+          "EV-622ebdad1e1fad2d",
+          "EV-535c2f4fb851332d"
         ],
         "company_entity_id": "EN-9b21c9bf3305c0d6",
         "company_canonical_entity_id": "",
@@ -297,28 +219,12 @@
         "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
       },
       {
-        "source_id": "FISRC-f4259d29fd364076",
-        "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
-        "source_title": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
-        "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
-        "quote": "产业投资者层面，TCL产投、孚腾资本、 首程控股 、建发新兴投资、恒旭资本、国汽投资参投",
-        "quote_hash": "4c7063a16d1e1f892db7f9393206d69f3d1f7b24daaac59aa53e4b8d05ca673d"
-      },
-      {
         "source_id": "FISRC-fd865802af815ab3",
         "source_url": "https://news.pedaily.cn/202604/562614.shtml",
         "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
         "source_content_hash": "a281cc701a9028fb",
         "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
         "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
-      },
-      {
-        "source_id": "FISRC-6819817bc08e3d63",
-        "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
-        "source_title": "生数科技完成超6亿元A+轮融资",
-        "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
-        "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投",
-        "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
       },
       {
         "source_id": "FISRC-4177e5ca07c921a5",
