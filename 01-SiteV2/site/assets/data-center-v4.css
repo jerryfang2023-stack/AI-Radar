@@ -3100,3 +3100,52 @@ body[data-community-source="scys"] .dc-resource-url{color:var(--gl-blue);width:1
 @media(min-width:701px) and (max-width:1100px){.dc-scys-search{flex-wrap:wrap}.dc-scys-search .dc-search{flex:1 1 100%}}
 
 body[data-community-source="scys"] .dc-summary-text{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
+
+/* Reading hierarchy: Guanlan VI sizes and existing brand colours. */
+body .dc-toolbar, body[data-dc-view="events"] .dc-toolbar {
+  display:flex; flex-wrap:wrap; align-items:center; gap:10px; padding:16px;
+  background:var(--gl-bg); border:1px solid var(--gl-border); border-radius:var(--gl-radius-sm);
+}
+.dc-toolbar .dc-search { flex:1 1 320px; }
+.dc-toolbar > .dc-select { flex:0 1 170px; max-width:100%; min-width:0; }
+.dc-toolbar .dc-input,.dc-toolbar .dc-select,.dc-toolbar .dc-button,.dc-toolbar .dc-filter-summary {
+  height:38px; font:500 13px/20px var(--gl-font-sans-cn);
+}
+body[data-dc-view="events"] .dc-toolbar > .dc-button { flex:0 0 auto; width:auto; padding:8px 22px; }
+.dc-toolbar .dc-clear { flex:0 0 auto; font:500 13px/20px var(--gl-font-sans-cn); }
+.dc-toolbar .dc-more-panel { z-index:5; }
+.dc-row-date,.dc-row-title small,.dc-data-date,.dc-result-count,
+.dc-card-meta,.dc-summary-label,.dc-scys-profile dt,
+.dc-resource-summary strong,.dc-scys-need strong { color:var(--gl-blue); }
+body[data-community-source="scys"] .dc-community-meta,
+body[data-community-source="scys"] .dc-community-meta time,
+body[data-community-source="scys"] .dc-scys-need strong,
+body[data-community-source="scys"] .dc-resource-summary strong { color:var(--gl-blue); }
+body[data-dc-view="events"] .dc-list-row { grid-template-columns:128px minmax(0,1fr) minmax(0,auto); gap:18px; }
+.dc-row-title { line-height:26px; }
+.dc-row-title small { font-weight:400; line-height:20px; margin-top:6px; }
+.dc-nav-parent { display:flex; align-items:center; gap:8px; }
+.dc-nav-parent::after { content:""; flex:1; height:1px; background:var(--gl-border); }
+.dc-nav-backdrop { display:none; }
+@media(max-width:780px) {
+  .dc-nav-backdrop:not([hidden]) { display:block; position:fixed; inset:64px 0 0; border:0; border-radius:0; background:rgba(7,24,39,.3); z-index:19; }
+  .dc-sidebar { z-index:20; }
+  body.dc-nav-open { overflow:hidden; }
+  body .dc-toolbar,body[data-dc-view="events"] .dc-toolbar { padding:12px; gap:8px; }
+  .dc-toolbar .dc-search { flex-basis:100%; }
+  .dc-toolbar > .dc-select { flex:1 1 130px; }
+  body[data-dc-view="events"] .dc-list-row { grid-template-columns:minmax(0,1fr); gap:6px; }
+  body[data-dc-view="events"] .dc-row-title { grid-column:1; }
+  body[data-community-source="scys"] .dc-community-tabs { grid-template-columns:1fr 1fr; }
+  body[data-community-source="scys"] .dc-community-tabs button { padding:12px 6px; }
+  body[data-community-source="scys"] .dc-scys-search { margin-top:16px; padding:12px; gap:8px; }
+}
+
+body[data-community-source="scys"] .dc-community-card-meta,
+body[data-community-source="scys"] .dc-community-card-meta span:first-child,
+body[data-community-source="scys"] .dc-community-card-meta time,
+body[data-community-source="scys"] .dc-scys-profile dt { color:var(--gl-blue); }
+.dc-role-link { position:relative; z-index:2; color:var(--gl-blue); font:500 13px/20px var(--gl-font-sans-cn); }
+
+.dc-row-headline { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+@media(prefers-reduced-motion:reduce) { .dc-sidebar { transition:none; } }
