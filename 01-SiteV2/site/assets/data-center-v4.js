@@ -1274,7 +1274,7 @@
     return `<article class="dc-community-card dc-resource-card">
       <div class="dc-community-card-meta"><span>${label}</span></div>
       <h3>${href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>` : escapeHtml(title)}</h3>
-      ${summary ? `<p class="dc-resource-summary"><strong>${summarySource}</strong>${escapeHtml(summary)}</p>` : ""}
+      ${summary ? `<p class="dc-resource-summary"><strong>${summarySource}</strong><span class="dc-summary-text">${escapeHtml(summary)}</span></p>` : ""}
       ${href ? `<a class="dc-resource-url" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(href)}</a>` : ""}
       ${resource.entries?.length ? `<details><summary>手册目录 · ${resource.entries.length} 节</summary><ul>${resource.entries.map((entry) => `<li>${escapeHtml(entry.title)}</li>`).join("")}</ul></details>` : ""}
       <div class="dc-community-card-actions">${resource.owners.map((owner) => `<button type="button" data-community-open="${escapeHtml(owner.itemId)}">所属帖子：${escapeHtml(communityCompact(owner.itemTitle, 45))}</button>`).join("")}</div>
@@ -1289,7 +1289,7 @@
       <div class="dc-community-card-meta"><span>${escapeHtml(item.author || "作者未披露")}</span><time>${escapeHtml(item.publishedAt ? item.publishedAt.slice(0, 10) : "最近采集 " + item.lastSeen)}</time></div>
       <h3>${escapeHtml(communityDisplayTitle(item))}</h3>
       ${profile.reviewed ? `<dl class="dc-scys-profile">${Object.entries({ industry: "客户行业", offering: "产品 / 服务", stage: "创业阶段", channel: "获客渠道" }).map(([key, label]) => `<div><dt>${label}</dt><dd>${escapeHtml(profile[key])}</dd></div>`).join("")}</dl>` : ""}
-      <p class="dc-scys-need"><strong>${profile.reviewed ? "客户需求" : "内容摘录"}</strong>${escapeHtml(profile.fields.need || communityDisplaySummary(item, communityDisplayTitle(item)))}</p>
+      <p class="dc-scys-need"><strong>${profile.reviewed ? "客户需求" : "内容摘录"}</strong><span class="dc-summary-text">${escapeHtml(profile.fields.need || communityDisplaySummary(item, communityDisplayTitle(item)))}</span></p>
       <div class="dc-community-card-actions"><button type="button" data-community-open="${escapeHtml(item.id)}">${profile.reviewed ? "查看首单、报价与交付" : "查看案例"}</button>${links.length ? `<span>实操资料 ${links.length} 份</span>` : ""}${originalUrl ? `<a href="${escapeHtml(originalUrl)}" target="_blank" rel="noopener noreferrer">原帖 ↗</a>` : ""}</div>
     </article>`;
   }

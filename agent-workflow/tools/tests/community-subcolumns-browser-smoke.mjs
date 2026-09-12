@@ -30,6 +30,11 @@ try {
   assert.equal(await page.locator('[data-community-link="scys"][aria-current="page"]').innerText(), '生财');
   assert.equal(await page.locator('.dc-community-sources, [name="scene"], .dc-community-rail').count(),0);
   assert.equal(await page.locator('.dc-scys-case').count(),12);
+  const navStyles = await page.locator('.dc-nav-group a, .dc-nav-parent').evaluateAll(nodes=>nodes.map(n=>{const s=getComputedStyle(n);return {size:s.fontSize,line:s.lineHeight,weight:s.fontWeight}}));
+  assert.ok(navStyles.every(s=>s.size==='14px' && s.line==='20px' && ['500','600'].includes(s.weight)));
+  assert.equal(await page.locator('.dc-scys-case h3').first().evaluate(n=>getComputedStyle(n).fontSize),'18px');
+  assert.equal(await page.locator('.dc-scys-case h3').first().evaluate(n=>getComputedStyle(n).fontWeight),'600');
+  assert.equal(await page.locator('.dc-scys-search').evaluate(n=>getComputedStyle(n).backgroundColor),'rgb(247, 244, 239)');
   assert.equal(await page.getByLabel('归档月份',{exact:true}).inputValue(),'2026-09');
   assert.equal(await page.locator('.dc-scys-archive>div.dc-community-section-head, .dc-scys-month>h3').count(),0);
   assert.equal(await page.locator('[data-community-view="weekly"], .dc-community-note').count(),0);
