@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-831d6c12aa63f5",
+    "name": "英诺基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-19",
+    "latest_disclosed_at": "2026-08-28",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "participant": 1
+    },
+    "round_codes": [
+      "angel_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b6994e02c1cd9ad5",
+        "canonical_entity_id": "",
+        "name": "北京灵御智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0bad2af7fa2fc8fc",
+        "funding_insight_id": "FI-1b4327c7d35c5dad",
+        "event_ids": [
+          "EV-f6c882e143c0d634"
+        ],
+        "company_entity_id": "EN-086c739ca6223458",
+        "company_canonical_entity_id": "",
+        "company_name": "北京清蓝智汇科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fa0e608145757727",
+            "source_url": "https://www.pureblueai.com/about-us",
+            "source_title": "关于我们—PureblueAI清蓝-算法驱动的下一代 AI 营销引擎",
+            "source_content_hash": "7bc2a6cca71b83c7",
+            "quote": "2026年2月，获得由祥峰中国（Vertex China）领投，老股东英诺基金及一村淞灵、36氪跟投的数千万元人民币天使轮融资。",
+            "quote_hash": "44c30a2a6f7890790b2be4be4fdcfb833f29a0da36056ff196fb2740acfb90d6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c6d19c82dc4c0cba",
+        "funding_insight_id": "FI-a3c129ab8eb46aa4",
+        "event_ids": [
+          "EV-d67dd793fe1f2c04"
+        ],
+        "company_entity_id": "EN-5f03b37d8cca57e1",
+        "company_canonical_entity_id": "",
+        "company_name": "北京灵御智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "过往投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ff3ce30945e8f13",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+            "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+            "source_content_hash": "7d6a41ce0da829ca",
+            "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
+            "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-db8332e2b4dcd377",
+        "funding_insight_id": "FI-e80d19f187b02392",
+        "event_ids": [
+          "EV-b0e0458e4ae40f66"
+        ],
+        "company_entity_id": "EN-b6994e02c1cd9ad5",
+        "company_canonical_entity_id": "",
+        "company_name": "北京灵御智能科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0b807b7fa8b0845a",
+            "source_url": "https://finance.sina.com.cn/roll/2026-05-19/doc-inhymumf2211979.shtml",
+            "source_title": "灵御智能完成近亿元天使+轮融资，加速具身智能基础设施布局",
+            "source_content_hash": "4d7c1e7d0cd742c0",
+            "quote": "本轮融资由福田资本领投，力合创投、金沙江联合资本、复利多、楹辉创投、华仓资本跟投，老股东英诺基金、天鹰资本持续加注",
+            "quote_hash": "7e2eccb466a27ee65bf5e6dc9ba46669e8e2d59ae9cf4f59452db9847e45e152"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-fa0e608145757727",
+        "source_url": "https://www.pureblueai.com/about-us",
+        "source_title": "关于我们—PureblueAI清蓝-算法驱动的下一代 AI 营销引擎",
+        "source_content_hash": "7bc2a6cca71b83c7",
+        "quote": "2026年2月，获得由祥峰中国（Vertex China）领投，老股东英诺基金及一村淞灵、36氪跟投的数千万元人民币天使轮融资。",
+        "quote_hash": "44c30a2a6f7890790b2be4be4fdcfb833f29a0da36056ff196fb2740acfb90d6"
+      },
+      {
+        "source_id": "FISRC-1ff3ce30945e8f13",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+        "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+        "source_content_hash": "7d6a41ce0da829ca",
+        "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
+        "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+      },
+      {
+        "source_id": "FISRC-0b807b7fa8b0845a",
+        "source_url": "https://finance.sina.com.cn/roll/2026-05-19/doc-inhymumf2211979.shtml",
+        "source_title": "灵御智能完成近亿元天使+轮融资，加速具身智能基础设施布局",
+        "source_content_hash": "4d7c1e7d0cd742c0",
+        "quote": "本轮融资由福田资本领投，力合创投、金沙江联合资本、复利多、楹辉创投、华仓资本跟投，老股东英诺基金、天鹰资本持续加注",
+        "quote_hash": "7e2eccb466a27ee65bf5e6dc9ba46669e8e2d59ae9cf4f59452db9847e45e152"
+      }
+    ]
+  }
+}

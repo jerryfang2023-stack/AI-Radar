@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "node": {
     "id": "TX-target_user-public_sector_user",
@@ -18,6 +18,7 @@
     "typeLabel": "目标用户",
     "valueId": "public_sector_user",
     "eventIds": [
+      "EV-03bc82f6d6c169d7",
       "EV-259566f35ea4f66d",
       "EV-60f219702a66bf38",
       "EV-82e77abb1a77f81c",
@@ -25,10 +26,15 @@
       "EV-9486e14e99499e3b",
       "EV-ef7346378fcf9746",
       "EV-e0ecb5f81a273447",
+      "EV-3b817460afe0d3a6",
+      "EV-6329f290aecc84da",
+      "EV-d535e126615182f0",
       "EV-a3ba586cbc57b5fd",
+      "EV-843f0807558b3d10",
       "EV-a86b04e679044c45"
     ],
     "entityIds": [
+      "EN-48b85dc3fd54f74d",
       "EN-607a596a603dd679",
       "EN-6861f63c27eb0ada",
       "EN-92dd63c8e5c77e8a",
@@ -36,17 +42,415 @@
       "EN-05f6ecf01ac4ebec",
       "EN-e78bdebae031095b",
       "EN-afff1ef2d34b618e",
+      "EN-94f3cca8dd7fa0ff",
+      "EN-376967c5f350003c",
+      "EN-6ce9ed4849e48b7e",
       "EN-7035f6607ad2d162",
+      "EN-ad691fd49d3307e8",
       "EN-7640da40298286a6"
     ],
     "fdeIds": [
       "FDE-5ea7f3d69a03d417"
     ],
     "hardwareIds": [],
-    "firstSeen": "2026-03-19",
-    "lastSeen": "2026-08-23"
+    "firstSeen": "2026-01-12",
+    "lastSeen": "2026-09-12"
   },
   "events": [
+    {
+      "id": "EV-03bc82f6d6c169d7",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-08",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "深空矩阵完成亿元级天使轮融资，鼎晖VGC、麟阁创投联合领投",
+      "originalTitle": "",
+      "subject": "深空矩阵",
+      "action": "funding",
+      "object": "完成 亿元级天使轮融资",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-pedaily"
+        ],
+        "claim_refs": [
+          "CL-d2493839be35849a"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f21be2f937c7899b",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c955e80a1b889ce4",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4cfc2e7f8c85828f",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-724eaff68c0f97ee",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-73650f8ab4984c46",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4c0cf513654131bd",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c89567b8e28ed457",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3bc4e0f55aa4c0d2",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-48b85dc3fd54f74d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cac2e4cf60a3812a",
+            "fundingInsightId": "FI-66ce354e395eab75"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4cfc2e7f8c85828f",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f21be2f937c7899b",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c955e80a1b889ce4",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4c0cf513654131bd",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c89567b8e28ed457",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-724eaff68c0f97ee",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3bc4e0f55aa4c0d2",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cac2e4cf60a3812a",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-73650f8ab4984c46",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f21be2f937c7899b",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c955e80a1b889ce4",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4cfc2e7f8c85828f",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-724eaff68c0f97ee",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-73650f8ab4984c46",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4c0cf513654131bd",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c89567b8e28ed457",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3bc4e0f55aa4c0d2",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-48b85dc3fd54f74d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cac2e4cf60a3812a",
+          "fundingInsightId": "FI-66ce354e395eab75"
+        }
+      ],
+      "entityIds": [
+        "EN-d58a8d6e884ad433",
+        "EN-48b85dc3fd54f74d"
+      ],
+      "entityNames": [
+        "北京深空矩阵科技有限公司",
+        "深空矩阵"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202609/568647.shtml",
+      "publisher": "投资界"
+    },
     {
       "id": "EV-259566f35ea4f66d",
       "dataDate": "2026-08-23",
@@ -3002,6 +3406,1330 @@
       "publisher": "startupreporter.eu"
     },
     {
+      "id": "EV-3b817460afe0d3a6",
+      "dataDate": "2026-09-12",
+      "date": "2026-05-22",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "中科沌序完成数千万元种子轮融资，首程控股领投",
+      "originalTitle": "",
+      "subject": "北京中科沌序科技有限公司",
+      "action": "funding",
+      "object": "完成数千万元种子轮融资",
+      "metrics": [
+        "数千万元"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-pedaily",
+          "cn-sina-finance"
+        ],
+        "claim_refs": [
+          "CL-9dfadbed746f7e20",
+          "CL-9203384bc15d9acf"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-94f3cca8dd7fa0ff"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-45d185bdcb5cd570",
+            "fundingInsightId": "FI-ddc0d6800df0cfa6"
+          }
+        ],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-94f3cca8dd7fa0ff"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ca8f516823424b79",
+            "fundingInsightId": "FI-ddc0d6800df0cfa6"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-94f3cca8dd7fa0ff"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-37cf3b3c543eceeb",
+            "fundingInsightId": "FI-ddc0d6800df0cfa6"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-94f3cca8dd7fa0ff"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1d6a2060ba3fb517",
+            "fundingInsightId": "FI-ddc0d6800df0cfa6"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-94f3cca8dd7fa0ff"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a263673ee9af62a4",
+            "fundingInsightId": "FI-ddc0d6800df0cfa6"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [
+              "EN-94f3cca8dd7fa0ff"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a0209d6688fdf496",
+            "fundingInsightId": "FI-ddc0d6800df0cfa6"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-94f3cca8dd7fa0ff"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-83a06ade233751c4",
+            "fundingInsightId": "FI-ddc0d6800df0cfa6"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-94f3cca8dd7fa0ff"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d5ae5688efce36ed",
+            "fundingInsightId": "FI-ddc0d6800df0cfa6"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-94f3cca8dd7fa0ff"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-686b62c8f6bdbf46",
+            "fundingInsightId": "FI-ddc0d6800df0cfa6"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-45d185bdcb5cd570",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1d6a2060ba3fb517",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a263673ee9af62a4",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "logistics_supply_chain",
+          "name": "物流与供应链",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a0209d6688fdf496",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-83a06ade233751c4",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ca8f516823424b79",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d5ae5688efce36ed",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-686b62c8f6bdbf46",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-37cf3b3c543eceeb",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-45d185bdcb5cd570",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ca8f516823424b79",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-37cf3b3c543eceeb",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1d6a2060ba3fb517",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a263673ee9af62a4",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "logistics_supply_chain",
+          "name": "物流与供应链",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a0209d6688fdf496",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-83a06ade233751c4",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d5ae5688efce36ed",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-94f3cca8dd7fa0ff"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-686b62c8f6bdbf46",
+          "fundingInsightId": "FI-ddc0d6800df0cfa6"
+        }
+      ],
+      "entityIds": [
+        "EN-94f3cca8dd7fa0ff",
+        "EN-c215bee2c6320ad4"
+      ],
+      "entityNames": [
+        "北京中科沌序科技有限公司",
+        "宣布"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202605/564241.shtml",
+      "publisher": "投资界"
+    },
+    {
+      "id": "EV-6329f290aecc84da",
+      "dataDate": "2026-09-12",
+      "date": "2026-03-24",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "安泉数智完成新一轮数千万融资，元起资本独家投资",
+      "originalTitle": "",
+      "subject": "安泉数智",
+      "action": "funding",
+      "object": "完成新一轮数千万融资",
+      "metrics": [
+        "数千万"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-pedaily"
+        ],
+        "claim_refs": [
+          "CL-86d3050ac513a9bd"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7bcbfa28c5e3a38b",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "observability_evaluation",
+            "name": "可观测与评估",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5bac919fbe99d965",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "model_agent_security",
+            "name": "模型与智能体安全",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d3c391289194a448",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1791d5596d33a682",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "legal_compliance",
+            "name": "法律与合规",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0d612b06c15100b8",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0983a31cc1bafaa6",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6d6eff0d7dd58271",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-61c4bd2f00e16da8",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0ab664d5e9afbcb5",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-64eff1922d1f8564",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-376967c5f350003c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c9e0e2e7de129cc6",
+            "fundingInsightId": "FI-c81c6074dc558b8a"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "model_agent_security",
+          "name": "模型与智能体安全",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d3c391289194a448",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7bcbfa28c5e3a38b",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5bac919fbe99d965",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "energy_utilities",
+          "name": "能源与公用事业",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6d6eff0d7dd58271",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-61c4bd2f00e16da8",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0ab664d5e9afbcb5",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1791d5596d33a682",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-64eff1922d1f8564",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c9e0e2e7de129cc6",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "legal_compliance",
+          "name": "法律与合规",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0d612b06c15100b8",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0983a31cc1bafaa6",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7bcbfa28c5e3a38b",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5bac919fbe99d965",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "model_agent_security",
+          "name": "模型与智能体安全",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d3c391289194a448",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1791d5596d33a682",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "legal_compliance",
+          "name": "法律与合规",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0d612b06c15100b8",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0983a31cc1bafaa6",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "energy_utilities",
+          "name": "能源与公用事业",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6d6eff0d7dd58271",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-61c4bd2f00e16da8",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0ab664d5e9afbcb5",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-64eff1922d1f8564",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-376967c5f350003c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c9e0e2e7de129cc6",
+          "fundingInsightId": "FI-c81c6074dc558b8a"
+        }
+      ],
+      "entityIds": [
+        "EN-376967c5f350003c",
+        "EN-6ce9ed4849e48b7e"
+      ],
+      "entityNames": [
+        "安泉数智",
+        "杭州安泉数智科技有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202603/562007.shtml",
+      "publisher": "投资界"
+    },
+    {
+      "id": "EV-d535e126615182f0",
+      "dataDate": "2026-09-12",
+      "date": "2026-03-24",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "安泉数智完成新一轮数千万融资，元起资本独家投资",
+      "originalTitle": "",
+      "subject": "杭州安泉数智科技有限公司",
+      "action": "funding",
+      "object": "完成新一轮数千万融资",
+      "metrics": [
+        "数千万"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-sina-finance"
+        ],
+        "claim_refs": [
+          "CL-18285ebd87d3487f"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9fcda3725afe7f47",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "observability_evaluation",
+            "name": "可观测与评估",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a85a5c4c4ddd48b5",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "model_agent_security",
+            "name": "模型与智能体安全",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4f30101ea55205d7",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d16e9204218cac02",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "legal_compliance",
+            "name": "法律与合规",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ed319c1e4f30c42c",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3e4a97b2041ef8fb",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c0266c50e129dd1f",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f98f31ab9ad10dae",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-898279f72880b682",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d1c5e319aee578a7",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-6ce9ed4849e48b7e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e40fb21266eb2a8c",
+            "fundingInsightId": "FI-c003761bfadfd5e1"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "model_agent_security",
+          "name": "模型与智能体安全",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4f30101ea55205d7",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9fcda3725afe7f47",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a85a5c4c4ddd48b5",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "energy_utilities",
+          "name": "能源与公用事业",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c0266c50e129dd1f",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f98f31ab9ad10dae",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-898279f72880b682",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d16e9204218cac02",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d1c5e319aee578a7",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e40fb21266eb2a8c",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "legal_compliance",
+          "name": "法律与合规",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ed319c1e4f30c42c",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3e4a97b2041ef8fb",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9fcda3725afe7f47",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "observability_evaluation",
+          "name": "可观测与评估",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a85a5c4c4ddd48b5",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "model_agent_security",
+          "name": "模型与智能体安全",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4f30101ea55205d7",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d16e9204218cac02",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "legal_compliance",
+          "name": "法律与合规",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ed319c1e4f30c42c",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3e4a97b2041ef8fb",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "energy_utilities",
+          "name": "能源与公用事业",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c0266c50e129dd1f",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f98f31ab9ad10dae",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-898279f72880b682",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d1c5e319aee578a7",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-6ce9ed4849e48b7e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e40fb21266eb2a8c",
+          "fundingInsightId": "FI-c003761bfadfd5e1"
+        }
+      ],
+      "entityIds": [
+        "EN-6ce9ed4849e48b7e"
+      ],
+      "entityNames": [
+        "杭州安泉数智科技有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-03-24/doc-inhsaeyy1849774.shtml",
+      "publisher": "新浪财经"
+    },
+    {
       "id": "EV-a3ba586cbc57b5fd",
       "dataDate": "2026-07-30",
       "date": "2026-03-19",
@@ -3380,6 +5108,360 @@
       "publisher": "executivebiz.com"
     },
     {
+      "id": "EV-843f0807558b3d10",
+      "dataDate": "2026-09-12",
+      "date": "2026-01-12",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "九爪智能完成数千万Pre-A轮融资，白云金控、白云建科联合投资",
+      "originalTitle": "",
+      "subject": "广州九爪智能科技有限公司",
+      "action": "funding",
+      "object": "数千万人民币Pre-A轮融资",
+      "metrics": [
+        "数千万人民币"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-pedaily"
+        ],
+        "claim_refs": [
+          "CL-3143b54a01699963"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f10d5954f4decc6b",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          }
+        ],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-06c066ae19478867",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e2a2b2f439298813",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2428167699c955d6",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9e813abe7cae6844",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-456c78f681117b34",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a2e247ac5ff050d3",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f10d5954f4decc6b",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2428167699c955d6",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9e813abe7cae6844",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-06c066ae19478867",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-456c78f681117b34",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a2e247ac5ff050d3",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e2a2b2f439298813",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f10d5954f4decc6b",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-06c066ae19478867",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e2a2b2f439298813",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2428167699c955d6",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9e813abe7cae6844",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-456c78f681117b34",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-ad691fd49d3307e8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a2e247ac5ff050d3",
+          "fundingInsightId": "FI-51728a2a0d1ace5e"
+        }
+      ],
+      "entityIds": [
+        "EN-afd87115352b852a",
+        "EN-ad691fd49d3307e8"
+      ],
+      "entityNames": [
+        "广州九爪智能科技有限公司近日",
+        "广州九爪智能科技有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202601/559747.shtml",
+      "publisher": "投资界"
+    },
+    {
       "id": "EV-a86b04e679044c45",
       "dataDate": "2026-08-02",
       "date": "2026-08-02",
@@ -3538,6 +5620,37 @@
   ],
   "entities": [
     {
+      "id": "EN-48b85dc3fd54f74d",
+      "name": "深空矩阵",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-03bc82f6d6c169d7",
+        "EV-f0966bc867e1483e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-developer",
+        "TX-use_case-data_analysis",
+        "TX-technology-agentic_execution",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-industry-telecommunications",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-industry-aerospace_defense",
+        "TX-product_form-ai_compute_system",
+        "TX-target_user-public_sector_user"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-09-12"
+    },
+    {
       "id": "EN-607a596a603dd679",
       "name": "Starcloud",
       "entityType": "organization_candidate",
@@ -3552,18 +5665,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-developer",
+        "TX-target_user-researcher",
+        "TX-use_case-data_analysis",
+        "TX-use_case-research_discovery",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-telecommunications",
-        "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-industry-government_public_sector",
         "TX-ai_market_application-computing_infrastructure",
         "TX-industry-aerospace_defense",
         "TX-product_form-ai_compute_system",
         "TX-target_user-public_sector_user",
-        "TX-target_user-researcher",
-        "TX-use_case-research_discovery"
+        "TX-industry-government_public_sector"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-21",
@@ -3584,20 +5697,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-product_form-model",
-        "TX-use_case-data_analysis",
-        "TX-industry-energy_utilities",
-        "TX-industry-government_public_sector",
-        "TX-industry-logistics_supply_chain",
-        "TX-industry-aerospace_defense",
-        "TX-target_user-public_sector_user",
         "TX-target_user-researcher",
+        "TX-product_form-model",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-agriculture",
-        "TX-ai_market_application-data_preparation_curation",
-        "TX-ai_market_subcategory-data"
+        "TX-industry-energy_utilities",
+        "TX-industry-logistics_supply_chain",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-data",
+        "TX-industry-aerospace_defense",
+        "TX-target_user-public_sector_user",
+        "TX-industry-government_public_sector",
+        "TX-ai_market_application-data_preparation_curation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-05",
@@ -3618,17 +5731,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-business_user",
-        "TX-use_case-security_operations",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-industry-financial_services",
-        "TX-industry-government_public_sector",
+        "TX-target_user-business_user",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-ai_infrastructure_software",
+        "TX-use_case-security_operations",
         "TX-industry-aerospace_defense",
         "TX-target_user-public_sector_user",
-        "TX-industry-healthcare_life_sciences",
+        "TX-industry-government_public_sector",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -3650,13 +5763,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-public_sector_user",
         "TX-ai_market_application-ai_development_orchestration",
-        "TX-product_form-developer_tool",
-        "TX-target_user-public_sector_user"
+        "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-26",
@@ -3677,12 +5790,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-target_user-business_user",
-        "TX-target_user-developer",
-        "TX-product_form-end_user_application",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
+        "TX-target_user-developer",
+        "TX-use_case-physical_automation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
         "TX-industry-aerospace_defense",
         "TX-target_user-public_sector_user"
       ],
@@ -3735,20 +5848,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-physical_ai",
+        "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-industry-telecommunications",
-        "TX-target_user-business_user",
-        "TX-use_case-software_development",
         "TX-product_form-model",
+        "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-product_form-developer_tool",
-        "TX-ai_market_category-physical_ai",
+        "TX-use_case-software_development",
         "TX-industry-logistics_supply_chain",
-        "TX-product_form-robotic_system",
+        "TX-industry-telecommunications",
         "TX-industry-aerospace_defense",
-        "TX-target_user-public_sector_user"
+        "TX-target_user-public_sector_user",
+        "TX-technology-code_generation",
+        "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [
         "EN-6fcba5d96a4fadfd"
@@ -3771,19 +5884,111 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
+        "TX-ai_market_category-industry_applications",
         "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-target_user-public_sector_user",
         "TX-industry-government_public_sector",
         "TX-use_case-procurement_supply_chain",
-        "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-legal",
         "TX-industry-legal_services",
-        "TX-use_case-legal_compliance",
-        "TX-target_user-public_sector_user"
+        "TX-use_case-legal_compliance"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-05-23"
+    },
+    {
+      "id": "EN-94f3cca8dd7fa0ff",
+      "name": "北京中科沌序科技有限公司",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3b817460afe0d3a6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-ai_market_category-physical_ai",
+        "TX-product_form-robotic_system",
+        "TX-use_case-physical_automation",
+        "TX-target_user-business_user",
+        "TX-industry-logistics_supply_chain",
+        "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
+        "TX-industry-aerospace_defense",
+        "TX-target_user-public_sector_user"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-376967c5f350003c",
+      "name": "安泉数智",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6329f290aecc84da"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-target_user-business_user",
+        "TX-industry-energy_utilities",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-use_case-security_operations",
+        "TX-target_user-public_sector_user",
+        "TX-industry-government_public_sector",
+        "TX-ai_market_application-model_agent_security",
+        "TX-use_case-legal_compliance"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-24",
+      "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-6ce9ed4849e48b7e",
+      "name": "杭州安泉数智科技有限公司",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6329f290aecc84da",
+        "EV-d535e126615182f0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-target_user-business_user",
+        "TX-industry-energy_utilities",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-observability_evaluation",
+        "TX-product_form-security_software",
+        "TX-use_case-security_operations",
+        "TX-target_user-public_sector_user",
+        "TX-industry-government_public_sector",
+        "TX-ai_market_application-model_agent_security",
+        "TX-use_case-legal_compliance"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-24",
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-7035f6607ad2d162",
@@ -3802,18 +6007,46 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-industry-government_public_sector",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-procurement_supply_chain",
         "TX-ai_market_category-industry_applications",
-        "TX-ai_market_subcategory-legal",
-        "TX-use_case-legal_compliance",
+        "TX-target_user-business_user",
         "TX-industry-aerospace_defense",
-        "TX-target_user-public_sector_user"
+        "TX-target_user-public_sector_user",
+        "TX-product_form-enterprise_software_platform",
+        "TX-industry-government_public_sector",
+        "TX-use_case-procurement_supply_chain",
+        "TX-ai_market_subcategory-legal",
+        "TX-use_case-legal_compliance"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-19",
+      "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-ad691fd49d3307e8",
+      "name": "广州九爪智能科技有限公司",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-843f0807558b3d10"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-ai_market_category-physical_ai",
+        "TX-product_form-robotic_system",
+        "TX-use_case-physical_automation",
+        "TX-target_user-business_user",
+        "TX-industry-manufacturing",
+        "TX-target_user-public_sector_user",
+        "TX-industry-government_public_sector"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-12",
       "lastSeen": "2026-09-12"
     },
     {

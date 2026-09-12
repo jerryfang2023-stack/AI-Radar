@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-2acf38529d3fe1",
@@ -21,21 +21,61 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-03-25",
-    "latest_disclosed_at": "2026-03-25",
+    "first_disclosed_at": "2026-02-23",
+    "latest_disclosed_at": "2026-04-11",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 4
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-9b7f2ed3ff93aebb",
+        "funding_insight_id": "FI-0421ad5a685ba3b0",
+        "event_ids": [
+          "EV-7620153f4892a0af"
+        ],
+        "company_entity_id": "EN-ce22f929f4a17467",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（深圳）科技股份有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-04-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮联合出资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ad8ba39594cec38c",
+            "source_url": "https://www.cls.cn/detail/2341170",
+            "source_title": "智平方完成股改百亿具身智能独角兽加速冲刺IPO - 财联社",
+            "source_content_hash": "0df608927ef662b2",
+            "quote": "智平方天使轮于2023年8月完成，由清智资本、国投创盈等联合出资",
+            "quote_hash": "818cc95c339c53ea9f621c20b456745e83947a74d7f5da47ffd3def554dc12f1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-317b488c426cb7d5",
         "funding_insight_id": "FI-c3bce60cc6406ae5",
@@ -75,9 +115,97 @@
             "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a13fd266a6abb8a2",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使及天使+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资。",
+            "quote_hash": "2db23ccce73f645f5bdf318d44d7566a1e0f479b61c7e9a92db361a49088c279"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ba639f8444ce7e50",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "2023年8月的天使轮融资中，SEE Fund、清智资本、国投创盈联手出资。",
+            "quote_hash": "f40ae71bce62d1a7c4ff38e7f0b4e94ba0ae3f595a92bb9b9d5e265cd295c54b"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ad8ba39594cec38c",
+        "source_url": "https://www.cls.cn/detail/2341170",
+        "source_title": "智平方完成股改百亿具身智能独角兽加速冲刺IPO - 财联社",
+        "source_content_hash": "0df608927ef662b2",
+        "quote": "智平方天使轮于2023年8月完成，由清智资本、国投创盈等联合出资",
+        "quote_hash": "818cc95c339c53ea9f621c20b456745e83947a74d7f5da47ffd3def554dc12f1"
+      },
       {
         "source_id": "FISRC-972ef11d09af7ec8",
         "source_url": "https://vc.pedaily.cn/company/205217.html",
@@ -85,6 +213,22 @@
         "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
         "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
         "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
+      },
+      {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资。",
+        "quote_hash": "2db23ccce73f645f5bdf318d44d7566a1e0f479b61c7e9a92db361a49088c279"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "2023年8月的天使轮融资中，SEE Fund、清智资本、国投创盈联手出资。",
+        "quote_hash": "f40ae71bce62d1a7c4ff38e7f0b4e94ba0ae3f595a92bb9b9d5e265cd295c54b"
       }
     ]
   }

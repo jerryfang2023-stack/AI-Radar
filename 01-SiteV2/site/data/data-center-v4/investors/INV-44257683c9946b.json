@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-44257683c9946b",
@@ -20,50 +20,135 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 6,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2024-09-12",
-    "latest_disclosed_at": "2026-04-17",
+    "latest_disclosed_at": "2026-07-13",
     "role_counts": {
-      "historical_or_ambiguous": 2,
-      "participant": 3
+      "historical_or_ambiguous": 6,
+      "participant": 5
     },
     "round_codes": [
-      "multi_round",
-      "other",
-      "pre_series_a"
+      "pre_series_a",
+      "series_a_plus",
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-9b21c9bf3305c0d6",
         "canonical_entity_id": "",
-        "name": "北京生数科技有限公司"
+        "name": "生数科技"
       },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "name": "它石智航"
+      },
+      {
+        "entity_id": "EN-2c348893efb2316e",
+        "canonical_entity_id": "EN-2c348893efb2316e",
+        "name": "StepFun"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-b4f37774956a7478",
-        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "activity_id": "IA-0887c947933893f1",
+        "funding_insight_id": "FI-b9ca2a7fb525fcf8",
+        "event_ids": [
+          "EV-b732caa990fa0a79"
+        ],
+        "company_entity_id": "EN-ff37e56ba8f7d89c",
+        "company_canonical_entity_id": "",
+        "company_name": "上海天鹜科技有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东持续加注",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a638483ec7304070",
+            "source_url": "https://news.pedaily.cn/202607/566169.shtml",
+            "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
+            "source_content_hash": "06a0df416cf83674",
+            "quote": "老股东 启明创投、涌铧投资、金沙江联合资本润璞医疗基金、本草资本、上海科创基金持续加注",
+            "quote_hash": "cd2a756f5925f986d0e5a08c4a75bf5644810d1d8e4468c86a2f92d2cb53c7ce"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-88a61a9eb17a0a1d",
+        "funding_insight_id": "FI-45331063d95f5f57",
+        "event_ids": [
+          "EV-81b7cd5d6a37912c"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "",
+        "company_name": "无问芯穹（Infinigence AI）",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "7 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67d072b1aca37b5d",
+            "source_url": "https://www.tmtpost.com/7235681.html",
+            "source_title": "Infinigence AI Raises US$ 70.2 Million in Series A Funding Round-钛媒体官方网站",
+            "source_content_hash": "56a87e89ab6a1ab2",
+            "quote": "The funding round was led by Social Security Fund Zhongguancun Independent Innovation Investment Fund, Qiming Venture Partners, and Hongtai Aplus",
+            "quote_hash": "1c3b3a91fa81d51a25c78aa620aca81e93e67c3c2d74dadadc01c13fea0d1024"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1d91edeceb788cdb",
+        "funding_insight_id": "FI-b9eb4320e43ddfdf",
         "event_ids": [
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "company_name": "它石智航",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
         "amount_original": "4.55亿美金",
         "amount_normalized": {
           "currency": "USD",
@@ -173,16 +258,56 @@
         ]
       },
       {
-        "activity_id": "IA-e38ea37d4bf565b2",
-        "funding_insight_id": "FI-17d058d8a3a861ac",
+        "activity_id": "IA-ded7d66d5d6f27e9",
+        "funding_insight_id": "FI-7108544d47292865",
+        "event_ids": [
+          "EV-5575555340c04c5a"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "",
+        "company_name": "生数科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮原有股东追加投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed80aa770ae50f7c",
+            "source_url": "https://www.prnewswire.com/news-releases/shengshu-technology-completes-series-a-funding-of-over-rmb-600-million-302679760.html",
+            "source_title": "ShengShu Technology Completes Series A+ Funding of Over RMB 600 Million",
+            "source_content_hash": "845f3acbd6182c40",
+            "quote": "Existing investors, including Qiming Venture Partners, Beijing Artificial Intelligence Industry Investment Fund, G&O, C&D Emerging Industry Equity Investment, and Guowen Hechuang further increased their investment in the round.",
+            "quote_hash": "b5865ae83ac1f25b7336da19c26c0d11c7f93195923efbad4a5eb836e3c4c176"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-306c6a445aae872d",
+        "funding_insight_id": "FI-e3c31b65254f3522",
         "event_ids": [
           "EV-535c2f4fb851332d"
         ],
         "company_entity_id": "EN-9b21c9bf3305c0d6",
         "company_canonical_entity_id": "",
         "company_name": "北京生数科技有限公司",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
         "round_original": "A+轮",
         "amount_original": "超过6亿元人民币",
         "amount_normalized": {
@@ -209,6 +334,126 @@
             "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
             "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投",
             "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-285a7582f0535a0c",
+        "funding_insight_id": "FI-474a441598e62f93",
+        "event_ids": [
+          "EV-622ebdad1e1fad2d"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "",
+        "company_name": "生数科技",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "6亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 600000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6 亿元"
+        },
+        "announced_at": "2026-02-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4177e5ca07c921a5",
+            "source_url": "https://news.pedaily.cn/202602/560802.shtml",
+            "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
+            "source_content_hash": "22fd0b6b2709ea7b",
+            "quote": "原有股东 启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等 投资人加码跟投",
+            "quote_hash": "4d881e2d381f26fec2c7ab029dbb700555c10c98ea6d02f4540dc9ddde177ebe"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2b39f69f66185756",
+        "funding_insight_id": "FI-18465dcaeebdf656",
+        "event_ids": [
+          "EV-df37e9341b5c7f04"
+        ],
+        "company_entity_id": "EN-f0d59425e4c32abb",
+        "company_canonical_entity_id": "",
+        "company_name": "阶跃星辰（StepFun）",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "50 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮战略和财务投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c9e96fcafd6e74f",
+            "source_url": "https://m.cls.cn/detail/2269386",
+            "source_title": "印奇出任董事长！阶跃星辰超50亿融资刷新大模型赛道纪录 将加码“AI+终端”",
+            "source_content_hash": "473fdcfe679ea03a",
+            "quote": "战略和财务投资人包括腾讯投资、五源资本、启明创投等",
+            "quote_hash": "0716f8fdcb21c48dedae939c758cad70235bb48f83d5fcf06593d24a159e7484"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-59b27010918287c6",
+        "funding_insight_id": "FI-74076c9ab29354a8",
+        "event_ids": [
+          "EV-794f0a86004da0c9"
+        ],
+        "company_entity_id": "EN-2c348893efb2316e",
+        "company_canonical_entity_id": "EN-2c348893efb2316e",
+        "company_name": "StepFun",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "50亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ae8171e86e3a055",
+            "source_url": "https://news.pedaily.cn/202601/560382.shtml",
+            "source_title": "50亿，阶跃星辰完成新年最大融资",
+            "source_content_hash": "b3815bfa4d27819c",
+            "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
+            "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
           }
         ]
       },
@@ -255,6 +500,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a638483ec7304070",
+        "source_url": "https://news.pedaily.cn/202607/566169.shtml",
+        "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
+        "source_content_hash": "06a0df416cf83674",
+        "quote": "老股东 启明创投、涌铧投资、金沙江联合资本润璞医疗基金、本草资本、上海科创基金持续加注",
+        "quote_hash": "cd2a756f5925f986d0e5a08c4a75bf5644810d1d8e4468c86a2f92d2cb53c7ce"
+      },
+      {
+        "source_id": "FISRC-67d072b1aca37b5d",
+        "source_url": "https://www.tmtpost.com/7235681.html",
+        "source_title": "Infinigence AI Raises US$ 70.2 Million in Series A Funding Round-钛媒体官方网站",
+        "source_content_hash": "56a87e89ab6a1ab2",
+        "quote": "The funding round was led by Social Security Fund Zhongguancun Independent Innovation Investment Fund, Qiming Venture Partners, and Hongtai Aplus",
+        "quote_hash": "1c3b3a91fa81d51a25c78aa620aca81e93e67c3c2d74dadadc01c13fea0d1024"
+      },
+      {
         "source_id": "FISRC-b4d6b7523ee32ad7",
         "source_url": "https://news.pedaily.cn/202604/562863.shtml",
         "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
@@ -279,12 +540,44 @@
         "quote_hash": "f8d88a4f7e7b9c372b8808d3d02bbd3bd172f9ab7e3eeb6bdd99019d9b40fb68"
       },
       {
+        "source_id": "FISRC-ed80aa770ae50f7c",
+        "source_url": "https://www.prnewswire.com/news-releases/shengshu-technology-completes-series-a-funding-of-over-rmb-600-million-302679760.html",
+        "source_title": "ShengShu Technology Completes Series A+ Funding of Over RMB 600 Million",
+        "source_content_hash": "845f3acbd6182c40",
+        "quote": "Existing investors, including Qiming Venture Partners, Beijing Artificial Intelligence Industry Investment Fund, G&O, C&D Emerging Industry Equity Investment, and Guowen Hechuang further increased their investment in the round.",
+        "quote_hash": "b5865ae83ac1f25b7336da19c26c0d11c7f93195923efbad4a5eb836e3c4c176"
+      },
+      {
         "source_id": "FISRC-6819817bc08e3d63",
         "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html",
         "source_title": "生数科技完成超6亿元A+轮融资",
         "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
         "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投",
         "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
+      },
+      {
+        "source_id": "FISRC-4177e5ca07c921a5",
+        "source_url": "https://news.pedaily.cn/202602/560802.shtml",
+        "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
+        "source_content_hash": "22fd0b6b2709ea7b",
+        "quote": "原有股东 启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等 投资人加码跟投",
+        "quote_hash": "4d881e2d381f26fec2c7ab029dbb700555c10c98ea6d02f4540dc9ddde177ebe"
+      },
+      {
+        "source_id": "FISRC-6c9e96fcafd6e74f",
+        "source_url": "https://m.cls.cn/detail/2269386",
+        "source_title": "印奇出任董事长！阶跃星辰超50亿融资刷新大模型赛道纪录 将加码“AI+终端”",
+        "source_content_hash": "473fdcfe679ea03a",
+        "quote": "战略和财务投资人包括腾讯投资、五源资本、启明创投等",
+        "quote_hash": "0716f8fdcb21c48dedae939c758cad70235bb48f83d5fcf06593d24a159e7484"
+      },
+      {
+        "source_id": "FISRC-4ae8171e86e3a055",
+        "source_url": "https://news.pedaily.cn/202601/560382.shtml",
+        "source_title": "50亿，阶跃星辰完成新年最大融资",
+        "source_content_hash": "b3815bfa4d27819c",
+        "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
+        "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
       },
       {
         "source_id": "FISRC-081c8476182d3ff7",

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-5cd2c63579250b",
+    "name": "嘉祐基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-03-16",
+    "latest_disclosed_at": "2026-03-16",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ff64b66f3b348966",
+        "canonical_entity_id": "",
+        "name": "苏州立妙达智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6f66db951ea155e7",
+        "funding_insight_id": "FI-f2fadc1ad36846ca",
+        "event_ids": [
+          "EV-d79663ef2ee65ca1"
+        ],
+        "company_entity_id": "EN-ff64b66f3b348966",
+        "company_canonical_entity_id": "",
+        "company_name": "苏州立妙达智能科技有限公司",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "超亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-03-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f9d4572f4dc397ba",
+            "source_url": "https://news.pedaily.cn/202603/561739.shtml",
+            "source_title": "打造AI+机器人全场景解决方案，立妙达完成亿元级A+轮融资",
+            "source_content_hash": "20c687863021cb1a",
+            "quote": "本轮融资由 金沙江联合资本、宏沣资本、爱杭基金、嘉祐基金、鑫诚资本 共同出资。",
+            "quote_hash": "613435c511857287accb6916fdef6263d37bd1b277b20c11911d73730d4e54c0"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-f9d4572f4dc397ba",
+        "source_url": "https://news.pedaily.cn/202603/561739.shtml",
+        "source_title": "打造AI+机器人全场景解决方案，立妙达完成亿元级A+轮融资",
+        "source_content_hash": "20c687863021cb1a",
+        "quote": "本轮融资由 金沙江联合资本、宏沣资本、爱杭基金、嘉祐基金、鑫诚资本 共同出资。",
+        "quote_hash": "613435c511857287accb6916fdef6263d37bd1b277b20c11911d73730d4e54c0"
+      }
+    ]
+  }
+}

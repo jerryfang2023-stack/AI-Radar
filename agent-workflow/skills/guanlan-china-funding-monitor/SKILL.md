@@ -1,9 +1,9 @@
 ---
 name: guanlan-china-funding-monitor
-description: Use when running, repairing or checking the independent domestic AI financing lane, publisher coverage, accepted evidence and company/product/institution synchronization. Do not use for overseas monitoring, unrelated company enrichment or a news-reading UI proposal.
+description: Use when running, systematically backfilling, repairing or checking domestic AI financing, monthly case coverage, missing-field secondary research, company/product/institution synchronization and corresponding funding cards. Do not use for overseas monitoring, unrelated company enrichment or a news-reading UI proposal.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.1.0"
     lane: "China Funding"
     status: "current"
     order: 41
@@ -11,7 +11,7 @@ metadata:
     upstream: "domestic publishers and original announcements"
     downstream: "private evidence, V4 facts, entities, funding cards and OPS quality"
     gates: "publisher execution coverage, original evidence, V4 integrity, entity and funding publication"
-    recent_learning: "A registered domestic query can be truncated by the global first-five limit; execute and measure each publisher independently."
+    recent_learning: "Historical discovery needs a paginated case census; title-only AI filtering and company-only card matching conceal missing financings."
     mirrored_in_skill_store: false
     memory_required: false
 ---
@@ -30,6 +30,8 @@ Read `AGENTS.md`, `context/12-data-center-v4.md`, `context/08-automation.md`, an
 4. A failed downstream stage reuses the accepted private-evidence checkpoint. Use the workflow's `resume_run_id` to restore a failed run. Never recollect accepted inputs because generation, projection, merge or deployment failed. Source failures may be retried only as a named source-stage repair.
 5. Inspect `china-funding-health-v1.json` and the protected OPS quality panel. Confirm unavailable, partial, failed and stale batches are distinct. Deduplicate events and cards across publishers by accepted IDs; candidate URLs are a different metric.
 6. On authorized publication, merge the domestic PR synchronously before releasing the shared writer slot, deploy Pages, then use Final Closure's Funding Portal/Mini Program and OPS publication. Verify receipts and refresh the external Vault after accepted main synchronization.
+
+For a historical range, read [systematic backfill](references/systematic-backfill.md). A successful daily-size batch is not historical completion.
 
 ## Boundaries
 

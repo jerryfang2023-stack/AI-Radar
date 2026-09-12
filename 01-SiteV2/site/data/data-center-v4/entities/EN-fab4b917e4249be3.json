@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-fab4b917e4249be3",
+    "name": "北京词元无限科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b9a88be352e878dd",
+      "EV-cfe820a452effc2f"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-27",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-b9a88be352e878dd",
+        "EV-cfe820a452effc2f"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b9a88be352e878dd",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-27",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "词元无限完成天使++轮融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-fab4b917e4249be3",
+          "EN-c215bee2c6320ad4"
+        ]
+      },
+      {
+        "id": "EV-cfe820a452effc2f",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-27",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-e2e913258212abc8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-fab4b917e4249be3",
+          "EN-e2e913258212abc8"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

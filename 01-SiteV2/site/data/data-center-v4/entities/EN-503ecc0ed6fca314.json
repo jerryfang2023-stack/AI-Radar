@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-503ecc0ed6fca314",
+    "name": "日前",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3bbd2ab8ebda9871"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-08",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-3bbd2ab8ebda9871"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3bbd2ab8ebda9871",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "紫创智械完成数千万融资，专注于工程机械行业模型应用落地",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-eb9a5a696c7fe158"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5f0147e7d51822a9",
+            "fundingInsightId": "FI-f9bb6ad49b80b350"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-eb9a5a696c7fe158"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-14f6d7d247be09af",
+            "fundingInsightId": "FI-f9bb6ad49b80b350"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-eb9a5a696c7fe158"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a293fd4af237a5bb",
+            "fundingInsightId": "FI-f9bb6ad49b80b350"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-eb9a5a696c7fe158"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "construction_real_estate",
+            "name": "建筑与房地产",
+            "entityIds": [
+              "EN-eb9a5a696c7fe158"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-72db7ca6f6061f05",
+            "fundingInsightId": "FI-f9bb6ad49b80b350"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-eb9a5a696c7fe158"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-347762629c5fd8d1",
+            "fundingInsightId": "FI-f9bb6ad49b80b350"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-eb9a5a696c7fe158"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0848103b064a5efa",
+            "fundingInsightId": "FI-f9bb6ad49b80b350"
+          }
+        ],
+        "entityIds": [
+          "EN-eb9a5a696c7fe158",
+          "EN-503ecc0ed6fca314"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

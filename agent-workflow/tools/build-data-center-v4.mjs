@@ -17,6 +17,7 @@ import { isWithdrawnFundingTitle } from "./lib/funding-transaction-status.mjs";
 import {
   chinaMarketBasisType,
   chinaMarketMatch,
+  chinaFundingActorEvidence,
   chinaMarketOrganizationAliases,
   loadChinaMarketConfig,
 } from "./lib/china-market-v1.mjs";
@@ -200,7 +201,7 @@ export function publicEventSourceUrlIssue(value) {
 export function historicalFundingAuthorized(raw, artifact, policy = {}) {
   const day = cleanString(raw.published_at).slice(0, 10);
   return policy.schema_version === "CHINA-FUNDING-HISTORY-AUTHORIZATION-V1.0"
-    && raw.acquisition_channel === "china-funding"
+    && (raw.acquisition_channel === "china-funding" || policy.reuse_existing_private_originals === true)
     && /^\d{4}-\d{2}-\d{2}$/u.test(day)
     && day >= policy.from && day <= policy.to
     && Array.isArray(policy.source_refs) && policy.source_refs.includes(artifact.source_artifact_id);
@@ -1723,7 +1724,13 @@ function normalizedFundingMetric(value) {
   return text;
 }
 
-function clusterEvents(candidates) {
+export function historicalFundingClusterKey(candidate) {
+  const roundText = `${candidate.action || ""} ${candidate.object || ""}`;
+  const round = roundText.match(/(?:Pre[- ]?)?[A-F](?:[1-9]|\+{1,3})?\s*轮|天使(?:\+{1,3})?轮|种子(?:\+{1,3})?轮|战略(?:投资|融资)?/iu)?.[0] || "undisclosed";
+  return `funding-history|${cleanForCluster(candidate.cluster_subject)}|${round.toLowerCase().replace(/\s/gu, "")}|${String(candidate.disclosed_at || candidate.event_time).slice(0, 7)}|${normalizedFundingMetric(candidate.metrics?.[0] || "")}`;
+}
+
+function clusterEvents(candidates, historicalSourceRefs = new Set()) {
   const clusters = new Map();
   for (const candidate of candidates) {
     const identityText = `${candidate.cluster_subject || ""} ${candidate.action} ${candidate.object}`;
@@ -1739,8 +1746,10 @@ function clusterEvents(candidates) {
     let key = releaseIdentity
       ? `${eventFamily}|${identity}`
       : `${eventFamily}|${candidate.entities[0] || "unknown"}|${identity}`;
-    if (candidate.event_type === "funding" && candidate.metrics[0]) {
-      const overlappingKey = [...clusters.entries()].find(([, existing]) => existing.some((item) =>
+    const historicalFunding = candidate.event_type === "funding" && candidate.source_refs?.some((id) => historicalSourceRefs.has(id));
+    if (historicalFunding) key = historicalFundingClusterKey(candidate);
+    if (!historicalFunding && candidate.event_type === "funding" && candidate.metrics[0]) {
+      const overlappingKey = [...clusters.entries()].find(([existingKey, existing]) => !existingKey.startsWith("funding-history|") && existing.some((item) =>
         item.event_type === "funding"
         && normalizedFundingMetric(item.metrics[0] || "") === identity
         && item.entities.some((entityId) => candidate.entities.includes(entityId))))?.[0];
@@ -1802,6 +1811,9 @@ function forbiddenKeys(value, trail = "", out = []) {
 export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString(), options = {}) {
   const historicalFundingPolicy = options.historicalFundingPolicy
     || readJson(path.join(outputRoot, date, "historical-funding-authorization.json"), {});
+  // Keep already published identities stable while admitting new historical cases.
+  const stablePublishedSources = new Set(historicalFundingPolicy.preserve_published_source_refs || []);
+  const newHistoricalSources = new Set((historicalFundingPolicy.source_refs || []).filter((id) => !stablePublishedSources.has(id)));
   const sourceArtifacts = [];
   const rawDocuments = [];
   const claims = [];
@@ -1863,20 +1875,24 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const modelClaimCandidate = [
       ...(acceptedAssistByRaw.get(rawId) || []),
       ...(acceptedAssistBySource.get(artifact.source_artifact_id) || []),
-    ].find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
+    ].sort((left, right) => Number(String(right.asset_id).startsWith("HISTORY-")) - Number(String(left.asset_id).startsWith("HISTORY-")))
+      .find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
     const normalizedModelProposal = preferredModelClaim(modelClaimCandidate?.proposal?.claims, modelClaimCandidate?.evidence);
     const proposedModelClaim = normalizedModelProposal.primary;
     const sourceEligibility = eventSourceEligibility(raw, artifact, title, date, {
-      eventType: candidateDeterministicRule?.eventType || proposedModelClaim?.event_type || "",
+      eventType: newHistoricalSources.has(artifact.source_artifact_id) ? "funding" : candidateDeterministicRule?.eventType || proposedModelClaim?.event_type || "",
       allowHistoricalFunding: options.allowHistoricalFunding === true || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
     });
-    const deterministicRule = sourceEligibility.accepted ? candidateDeterministicRule : null;
+    const authoritativeHistoryClaim = String(modelClaimCandidate?.asset_id || "").startsWith("HISTORY-")
+      && historicalFundingAuthorized(raw, artifact, historicalFundingPolicy) && !stablePublishedSources.has(artifact.source_artifact_id);
+    const requiresHistoryExtraction = newHistoricalSources.has(artifact.source_artifact_id);
+    const deterministicRule = sourceEligibility.accepted && !authoritativeHistoryClaim && !requiresHistoryExtraction ? candidateDeterministicRule : null;
     const proposedModelEligibility = proposedModelClaim
       ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date, {
           allowHistoricalFunding: options.allowHistoricalFunding === true || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
         })
       : { accepted: true, reason: "" };
-    const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted
+    const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted && (!requiresHistoryExtraction || authoritativeHistoryClaim)
       ? { eventType: proposedModelClaim.event_type, pattern: /$^/u }
       : null);
     const opinionOnly = (OPINION_ONLY.test(title) && !rule) || PROPOSAL_ONLY.test(title);
@@ -1925,6 +1941,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     } else if (!rule || opinionOnly) {
       const reason = !sourceEligibility.accepted
         ? sourceEligibility.reason
+        : requiresHistoryExtraction && !authoritativeHistoryClaim ? "historical_terra_extraction_not_accepted"
         : opinionOnly
           ? "opinion_without_source_bounded_event"
           : proposedModelEligibility.reason || "no_source_bounded_event";
@@ -2101,8 +2118,10 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         const eventTime = cleanString(raw.published_at);
         const disclosedAt = cleanString(raw.published_at || raw.collected_at);
         doc.event_candidate_ids.push(candidateId);
+        const fundingActor = rule.eventType === "funding" ? chinaFundingActorEvidence(parsed.subject, eventClaimRows.map((claim) => claim.source_quote).join("\n")) : { matched: false };
+        if (fundingActor.matched) doc.market_scope = { source_registry_id: cleanString(raw.source_registry_id), source_region: cleanString(raw.source_region), market_region: "CN", china_market_match: true, china_market_match_basis: fundingActor.basis };
         const rawMarketBasisType = chinaMarketBasisType(doc.market_scope?.china_market_match_basis);
-        const actorOriginMatch = rawMarketBasisType !== "actor_origin" || chinaMarketMatch({
+        const actorOriginMatch = fundingActor.matched || rawMarketBasisType !== "actor_origin" || chinaMarketMatch({
           title: parsed.subject,
           summary: "",
           source: "",
@@ -2146,7 +2165,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     rawDocuments.push(doc);
   }
 
-  const clustered = clusterEvents(eventCandidates);
+  const clustered = clusterEvents(eventCandidates, newHistoricalSources);
   const entityRows = [...entities.values()];
   const claimsById = new Map(claims.map((claim) => [claim.claim_id, claim]));
   const rawById = new Map(rawDocuments.map((document) => [document.raw_id, document]));

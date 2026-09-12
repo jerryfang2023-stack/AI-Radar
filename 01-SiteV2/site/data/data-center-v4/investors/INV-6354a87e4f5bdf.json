@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-6354a87e4f5bdf",
+    "name": "荷塘创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-04-13",
+    "latest_disclosed_at": "2026-04-13",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-e0957911147bacef",
+        "funding_insight_id": "FI-8ca5a4680f477ab8",
+        "event_ids": [
+          "EV-fd2ff833db684e40"
+        ],
+        "company_entity_id": "EN-272d534804dc22a4",
+        "company_canonical_entity_id": "",
+        "company_name": "华毅瀛飞（北京）光电科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-04-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a5da955737170458",
+            "source_url": "https://pitchhub.36kr.com/project/2032495895234948",
+            "source_title": "华毅瀛飞 | 项目信息-36氪",
+            "source_content_hash": "3f94fca1e5506257",
+            "quote": "天使轮 2019-12 未透露 荷塘创投",
+            "quote_hash": "69dd7eeae8009a08c91695f1fb11e3c4a2ada2b386569e9206f569eeba8bedf5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a5da955737170458",
+        "source_url": "https://pitchhub.36kr.com/project/2032495895234948",
+        "source_title": "华毅瀛飞 | 项目信息-36氪",
+        "source_content_hash": "3f94fca1e5506257",
+        "quote": "天使轮 2019-12 未透露 荷塘创投",
+        "quote_hash": "69dd7eeae8009a08c91695f1fb11e3c4a2ada2b386569e9206f569eeba8bedf5"
+      }
+    ]
+  }
+}

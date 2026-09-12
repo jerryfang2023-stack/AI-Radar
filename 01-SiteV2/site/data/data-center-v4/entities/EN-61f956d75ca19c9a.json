@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "entity": {
     "id": "EN-61f956d75ca19c9a",
@@ -23,16 +23,28 @@
     ],
     "eventIds": [
       "EV-6ca567f6e80c36c5",
-      "EV-3a591b0f027f66cf"
+      "EV-ba46244851f1db2b",
+      "EV-3a591b0f027f66cf",
+      "EV-6ff97d32bdcc8586",
+      "EV-4887a0d670adece3",
+      "EV-9832526435c1695e",
+      "EV-77a608db67e742a4",
+      "EV-794f0a86004da0c9"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-06-15",
-    "lastSeen": "2026-08-03",
+    "firstSeen": "2026-01-26",
+    "lastSeen": "2026-09-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-ba46244851f1db2b",
+        "EV-6ff97d32bdcc8586",
+        "EV-4887a0d670adece3",
+        "EV-9832526435c1695e",
+        "EV-77a608db67e742a4",
+        "EV-794f0a86004da0c9",
         "EV-6ca567f6e80c36c5",
         "EV-3a591b0f027f66cf"
       ],
@@ -44,6 +56,608 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-ba46244851f1db2b",
+        "dataDate": "2026-09-12",
+        "date": "2026-06-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f9cb4fddb8c3a3b5",
+            "fundingInsightId": "FI-db7ede318e530f96"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a49e0d4b763b5709",
+            "fundingInsightId": "FI-db7ede318e530f96"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b29de873c9323858",
+            "fundingInsightId": "FI-db7ede318e530f96"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7287d68939b34c43",
+            "fundingInsightId": "FI-db7ede318e530f96"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-38a5806594691d87",
+            "fundingInsightId": "FI-db7ede318e530f96"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-070d5a3dc078fb47",
+            "fundingInsightId": "FI-db7ede318e530f96"
+          }
+        ],
+        "entityIds": [
+          "EN-61f956d75ca19c9a",
+          "EN-e7492db096492304",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-6ff97d32bdcc8586",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "复旦学姐带队，寅成智能融资千万美元",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cf9af0a4664ebad0",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-20e96557e1d2e5da",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-98fa4e13b46a4061",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-857b204604c96834",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1a46d88b6d1d2b72",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          }
+        ],
+        "entityIds": [
+          "EN-61f956d75ca19c9a",
+          "EN-60910505210bd6f1",
+          "EN-3a81dc68ffa4c4fa"
+        ]
+      },
+      {
+        "id": "EV-4887a0d670adece3",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-19",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "地平线元老带队，叮当动力首轮融资数千万元",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-d3531cc88f7ce911"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-61f956d75ca19c9a",
+          "EN-d3531cc88f7ce911"
+        ]
+      },
+      {
+        "id": "EV-9832526435c1695e",
+        "dataDate": "2026-09-12",
+        "date": "2026-03-24",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "90后博士掌舵，开物纪天使+轮融资数亿元",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-a43f157d208b2a63"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-079b9441e9b802af",
+            "fundingInsightId": "FI-16cccd5b4bde23eb"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "industrials",
+            "name": "工业",
+            "entityIds": [
+              "EN-a43f157d208b2a63"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-54d7cea9e581719c",
+            "fundingInsightId": "FI-16cccd5b4bde23eb"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-a43f157d208b2a63"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-624e24e98185ab9d",
+            "fundingInsightId": "FI-16cccd5b4bde23eb"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-a43f157d208b2a63"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0ba46f7bcea83a66",
+            "fundingInsightId": "FI-16cccd5b4bde23eb"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-a43f157d208b2a63"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ccfce1d80ef8a3bd",
+            "fundingInsightId": "FI-16cccd5b4bde23eb"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-a43f157d208b2a63"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b5ee0cb4a5b45f26",
+            "fundingInsightId": "FI-16cccd5b4bde23eb"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-a43f157d208b2a63"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6eb3ff251f505162",
+            "fundingInsightId": "FI-16cccd5b4bde23eb"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-a43f157d208b2a63"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-73ffdd3f70eecf43",
+            "fundingInsightId": "FI-16cccd5b4bde23eb"
+          }
+        ],
+        "entityIds": [
+          "EN-61f956d75ca19c9a",
+          "EN-a43f157d208b2a63",
+          "EN-a89151ba4b5ac0f2"
+        ]
+      },
+      {
+        "id": "EV-77a608db67e742a4",
+        "dataDate": "2026-09-12",
+        "date": "2026-03-05",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "华为押注的机器人，极佳视界刚刚又融10亿",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9bb87c702a68ccea",
+            "fundingInsightId": "FI-0f4a227b4a72639f"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d3c232aa995d8bcd",
+            "fundingInsightId": "FI-0f4a227b4a72639f"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-297ab3208458f696",
+            "fundingInsightId": "FI-0f4a227b4a72639f"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9e3ac55b023529f5",
+            "fundingInsightId": "FI-0f4a227b4a72639f"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-345c944adf4309f7",
+            "fundingInsightId": "FI-0f4a227b4a72639f"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-e7492db096492304"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6628247b4da4e239",
+            "fundingInsightId": "FI-0f4a227b4a72639f"
+          }
+        ],
+        "entityIds": [
+          "EN-61f956d75ca19c9a",
+          "EN-b81c8201acfc7639",
+          "EN-e7492db096492304"
+        ]
+      },
+      {
+        "id": "EV-794f0a86004da0c9",
+        "dataDate": "2026-09-12",
+        "date": "2026-01-26",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "50亿，阶跃星辰完成新年最大融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f13b952d797d8394",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e75c5f97dbef6553",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a88adb13ef74b046",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4162717344f93a2d",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6eb28d3670530695",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a1d6bf0ad31f4106",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6a65687d6e563374",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a01c9907c570449b",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bcf7d65db0e0c29c",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-798daa63d13a03e6",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e0cdf12491d0713b",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-2c348893efb2316e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a560312e68bb4700",
+            "fundingInsightId": "FI-fc2a96e2e6400af5"
+          }
+        ],
+        "entityIds": [
+          "EN-61f956d75ca19c9a",
+          "EN-2c348893efb2316e",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
       {
         "id": "EV-6ca567f6e80c36c5",
         "dataDate": "2026-08-03",

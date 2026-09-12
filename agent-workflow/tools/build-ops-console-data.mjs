@@ -389,6 +389,9 @@ const data = {
     chinaFunding: readJson("01-SiteV2/site/data/china-funding-health-v1.json", {
       status: "not_run", date: null, totals: null, sources: [], stages: [],
     }),
+    chinaFundingHistory: readJson("01-SiteV2/site/data/china-funding-history-quality-v1.json", {
+      status: "not_run", from: null, to: null, totals: null, months: [], cases: [],
+    }),
   },
   governance: {
     versions: portfolio.versions,

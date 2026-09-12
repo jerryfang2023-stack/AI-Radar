@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-a522abf32945b7",
+    "name": "信产投资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-07-01",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ada6f7916f22af98",
+        "canonical_entity_id": "",
+        "name": "求之科技(无锡)有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-7db5139b46edddb1",
+        "funding_insight_id": "FI-6adc0d7bfd441daa",
+        "event_ids": [
+          "EV-b4d6c556eadaa272"
+        ],
+        "company_entity_id": "EN-ada6f7916f22af98",
+        "company_canonical_entity_id": "",
+        "company_name": "求之科技(无锡)有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d45f7a4d8fd76b88",
+            "source_url": "https://www.sohu.com/a/1044130792_120109837",
+            "source_title": "求之科技完成超1亿美元天使轮融资",
+            "source_content_hash": "ef8ed950cecf5cd3",
+            "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
+            "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d45f7a4d8fd76b88",
+        "source_url": "https://www.sohu.com/a/1044130792_120109837",
+        "source_title": "求之科技完成超1亿美元天使轮融资",
+        "source_content_hash": "ef8ed950cecf5cd3",
+        "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
+        "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+      }
+    ]
+  }
+}

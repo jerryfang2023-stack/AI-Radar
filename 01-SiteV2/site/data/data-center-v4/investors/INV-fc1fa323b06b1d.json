@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-fc1fa323b06b1d",
+    "name": "君联资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 5,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
+    "first_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-09-12",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 2,
+      "participant": 3
+    },
+    "round_codes": [
+      "angel",
+      "infrastructure",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-eddb3e851558ed80",
+        "canonical_entity_id": "",
+        "name": "清雁科技（北京）有限公司"
+      },
+      {
+        "entity_id": "EN-4a9900b7b05676d2",
+        "canonical_entity_id": "",
+        "name": "清雁科技（北京）有限公司"
+      },
+      {
+        "entity_id": "EN-ada6f7916f22af98",
+        "canonical_entity_id": "",
+        "name": "求之科技(无锡)有限公司"
+      },
+      {
+        "entity_id": "EN-a3802b1f5a583189",
+        "canonical_entity_id": "",
+        "name": "深圳墨奇智能技术有限公司"
+      },
+      {
+        "entity_id": "EN-0369c8fcda657a43",
+        "canonical_entity_id": "",
+        "name": "无问芯穹（Infinigence AI）"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b2917afb30e33d83",
+        "funding_insight_id": "FI-0fff8c5cc6dfdca0",
+        "event_ids": [
+          "EV-26439e34295a0519",
+          "EV-cec68369662236fd",
+          "EV-41c54c428d84cc1e"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人科技（深圳）有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-09-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A++轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-16371607ed092d64",
+            "source_url": "https://www.qbitai.com/2026/01/369147.html",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+            "source_content_hash": "466042b9c1271f10",
+            "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
+            "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
+          },
+          {
+            "source_id": "FISRC-449b969616ed1e95",
+            "source_url": "https://www.36kr.com/p/3636080421586182",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+            "source_content_hash": "abef77aff9b6b68f",
+            "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
+            "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5610c056708c0193",
+        "funding_insight_id": "FI-c185fb71d34b0f0c",
+        "event_ids": [
+          "EV-a72baefac91ba841"
+        ],
+        "company_entity_id": "EN-eddb3e851558ed80",
+        "company_canonical_entity_id": "",
+        "company_name": "清雁科技（北京）有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-21",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-21e3c93bae47f754",
+            "source_url": "https://news.pedaily.cn/202608/567947.shtml",
+            "source_title": "清雁科技完成数亿元A轮融资，聚焦几何物理驱动的物理AI基础设施",
+            "source_content_hash": "df80d47fccb69fc2",
+            "quote": "本轮融资由 君联资本领投，苏创投、宁波亿时跟投",
+            "quote_hash": "f3a70583671d0dc0965f7734f9accb217106694094664cf28523f969683fd994"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f11bc255c6262f83",
+        "funding_insight_id": "FI-dcd79ea72d2e09b1",
+        "event_ids": [
+          "EV-c9a11db49e1afbe5"
+        ],
+        "company_entity_id": "EN-4a9900b7b05676d2",
+        "company_canonical_entity_id": "",
+        "company_name": "清雁科技（北京）有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b7725acf292395aa",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-19/doc-ininvmyx9448955.shtml",
+            "source_title": "清雁科技完成数亿元A轮融资",
+            "source_content_hash": "2707e235463cb763",
+            "quote": "本轮融资由君联资本领投，苏创投、宁波亿时跟投。",
+            "quote_hash": "9e9ebbcedcfb0c95664330687e92995d8ab583cce32cf4a91958a80665cf5925"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9dc47a56ebdece6d",
+        "funding_insight_id": "FI-0cab7e240eb542ce",
+        "event_ids": [
+          "EV-e85e6fc6d630d56c"
+        ],
+        "company_entity_id": "EN-a3802b1f5a583189",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳墨奇智能技术有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bea9d0be613bc1cd",
+            "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+            "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+            "source_content_hash": "311224a4dfb089df",
+            "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+            "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6ad43e3cecf0eb8b",
+        "funding_insight_id": "FI-6adc0d7bfd441daa",
+        "event_ids": [
+          "EV-b4d6c556eadaa272"
+        ],
+        "company_entity_id": "EN-ada6f7916f22af98",
+        "company_canonical_entity_id": "",
+        "company_name": "求之科技(无锡)有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d45f7a4d8fd76b88",
+            "source_url": "https://www.sohu.com/a/1044130792_120109837",
+            "source_title": "求之科技完成超1亿美元天使轮融资",
+            "source_content_hash": "ef8ed950cecf5cd3",
+            "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
+            "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bf0aab368c268db8",
+        "funding_insight_id": "FI-45331063d95f5f57",
+        "event_ids": [
+          "EV-81b7cd5d6a37912c"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "",
+        "company_name": "无问芯穹（Infinigence AI）",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "7 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（老股东追加）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5d0583f94886034",
+            "source_url": "https://news.pedaily.cn/202605/563518.shtml",
+            "source_title": "无问芯穹再获超7亿融资，加码Token经济时代",
+            "source_content_hash": "69550847bd779ae8",
+            "quote": "老股东 君联资本、上海国投孚腾和元智未来 追加投资。",
+            "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-16371607ed092d64",
+        "source_url": "https://www.qbitai.com/2026/01/369147.html",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+        "source_content_hash": "466042b9c1271f10",
+        "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
+        "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
+        "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
+      },
+      {
+        "source_id": "FISRC-21e3c93bae47f754",
+        "source_url": "https://news.pedaily.cn/202608/567947.shtml",
+        "source_title": "清雁科技完成数亿元A轮融资，聚焦几何物理驱动的物理AI基础设施",
+        "source_content_hash": "df80d47fccb69fc2",
+        "quote": "本轮融资由 君联资本领投，苏创投、宁波亿时跟投",
+        "quote_hash": "f3a70583671d0dc0965f7734f9accb217106694094664cf28523f969683fd994"
+      },
+      {
+        "source_id": "FISRC-b7725acf292395aa",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-19/doc-ininvmyx9448955.shtml",
+        "source_title": "清雁科技完成数亿元A轮融资",
+        "source_content_hash": "2707e235463cb763",
+        "quote": "本轮融资由君联资本领投，苏创投、宁波亿时跟投。",
+        "quote_hash": "9e9ebbcedcfb0c95664330687e92995d8ab583cce32cf4a91958a80665cf5925"
+      },
+      {
+        "source_id": "FISRC-bea9d0be613bc1cd",
+        "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+        "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+        "source_content_hash": "311224a4dfb089df",
+        "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+        "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+      },
+      {
+        "source_id": "FISRC-d45f7a4d8fd76b88",
+        "source_url": "https://www.sohu.com/a/1044130792_120109837",
+        "source_title": "求之科技完成超1亿美元天使轮融资",
+        "source_content_hash": "ef8ed950cecf5cd3",
+        "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
+        "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+      },
+      {
+        "source_id": "FISRC-e5d0583f94886034",
+        "source_url": "https://news.pedaily.cn/202605/563518.shtml",
+        "source_title": "无问芯穹再获超7亿融资，加码Token经济时代",
+        "source_content_hash": "69550847bd779ae8",
+        "quote": "老股东 君联资本、上海国投孚腾和元智未来 追加投资。",
+        "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
+      }
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Pre-A++轮领投",
+          "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:49.993Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

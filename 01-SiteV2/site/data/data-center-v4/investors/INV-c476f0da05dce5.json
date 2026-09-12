@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-c476f0da05dce5",
+    "name": "上海国际资管及旗下基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-01-29",
+    "latest_disclosed_at": "2026-01-29",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-09c50c2165e7ef4b",
+        "funding_insight_id": "FI-1a9c2af7ff669e40",
+        "event_ids": [
+          "EV-53ffdce6405b8ba9"
+        ],
+        "company_entity_id": "EN-c5896393cf4ac788",
+        "company_canonical_entity_id": "",
+        "company_name": "北京长亭科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "政府及产业融资",
+        "amount_original": "5亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿元"
+        },
+        "announced_at": "2026-01-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "分拆轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-49d094161c73bf94",
+            "source_url": "https://m.36kr.com/p/2916710391306889",
+            "source_title": "长亭科技朱文雷：收购又分拆，再次独立后，我拒绝躺平",
+            "source_content_hash": "a50599e9c03e5b2d",
+            "quote": "今年5月，长亭科技获超10亿元分拆轮融资，由上海国际资管及旗下基金主导领投",
+            "quote_hash": "5804b32f1d1f1370f29287d2a5cd6ef4d0fb7ca3f86d37620bc426f42beaee13"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-49d094161c73bf94",
+        "source_url": "https://m.36kr.com/p/2916710391306889",
+        "source_title": "长亭科技朱文雷：收购又分拆，再次独立后，我拒绝躺平",
+        "source_content_hash": "a50599e9c03e5b2d",
+        "quote": "今年5月，长亭科技获超10亿元分拆轮融资，由上海国际资管及旗下基金主导领投",
+        "quote_hash": "5804b32f1d1f1370f29287d2a5cd6ef4d0fb7ca3f86d37620bc426f42beaee13"
+      }
+    ]
+  }
+}

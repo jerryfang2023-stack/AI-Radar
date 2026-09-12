@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-370548d8b0e360",
@@ -20,39 +20,47 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-07-06",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-02-24",
     "latest_disclosed_at": "2026-07-06",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
+      "other",
       "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-bbc41366a5a7cf78",
         "canonical_entity_id": "",
-        "name": "北京星动纪元科技有限公司"
+        "name": "北京星动纪元科技股份有限公司"
+      },
+      {
+        "entity_id": "EN-1032f7a4df33f629",
+        "canonical_entity_id": "EN-1032f7a4df33f629",
+        "name": "千寻智能"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-6ea699d68845daed",
+        "activity_id": "IA-cee9a9b6b4f25a4f",
         "funding_insight_id": "FI-f7342735e68375d9",
         "event_ids": [
+          "EV-a16d0d2a76e8d4a6",
           "EV-6ca567f6e80c36c5"
         ],
         "company_entity_id": "EN-bbc41366a5a7cf78",
         "company_canonical_entity_id": "",
-        "company_name": "北京星动纪元科技有限公司",
+        "company_name": "北京星动纪元科技股份有限公司",
         "round": "轮次未披露",
         "round_code": "undisclosed",
         "round_original": "新一轮",
@@ -77,10 +85,90 @@
           {
             "source_id": "FISRC-8c073d38e1f34758",
             "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-            "source_title": "星动纪元完成10亿元新一轮融资",
-            "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
-            "quote": "老股东厚雪资本、清控天诚、千山资本持续追加投资",
-            "quote_hash": "e8cc58e6c0a771b3ff48487548984585b351e4b6c29913031f6f72d068a11c25"
+            "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+            "source_content_hash": "38b0d26a979c4a8e",
+            "quote": "老股东厚雪资本、清控天诚、千山资本持续追加投资。",
+            "quote_hash": "54ab0ad6e23513233ced0c8e50f16adbcb09ff8d47733787f9946eb54f682c51"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e2a28f4989afea87",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年2月轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "360基金、厚雪资本等战投机构",
+            "quote_hash": "f72c72daa66942bcf90fe60e94fb66cd8203e297a87194aab070ee1da5c5cfb4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2f85e2b798ddaca6",
+        "funding_insight_id": "FI-846562dfba15b6a0",
+        "event_ids": [
+          "EV-61f07716fd7cb7ee"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "两轮融资",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ee3064edf7c871f4",
+            "source_url": "https://www.qbitai.com/2026/02/381766.html",
+            "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+            "source_content_hash": "0ad2701645471c8d",
+            "quote": "360基金、厚雪资本 等战投机构共同参与",
+            "quote_hash": "901c6f049e9794230dd170d94fc92bdca35f78f6e44770df8258ad29fdd5e196"
           }
         ]
       }
@@ -89,10 +177,26 @@
       {
         "source_id": "FISRC-8c073d38e1f34758",
         "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-        "source_title": "星动纪元完成10亿元新一轮融资",
-        "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
-        "quote": "老股东厚雪资本、清控天诚、千山资本持续追加投资",
-        "quote_hash": "e8cc58e6c0a771b3ff48487548984585b351e4b6c29913031f6f72d068a11c25"
+        "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+        "source_content_hash": "38b0d26a979c4a8e",
+        "quote": "老股东厚雪资本、清控天诚、千山资本持续追加投资。",
+        "quote_hash": "54ab0ad6e23513233ced0c8e50f16adbcb09ff8d47733787f9946eb54f682c51"
+      },
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "360基金、厚雪资本等战投机构",
+        "quote_hash": "f72c72daa66942bcf90fe60e94fb66cd8203e297a87194aab070ee1da5c5cfb4"
+      },
+      {
+        "source_id": "FISRC-ee3064edf7c871f4",
+        "source_url": "https://www.qbitai.com/2026/02/381766.html",
+        "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+        "source_content_hash": "0ad2701645471c8d",
+        "quote": "360基金、厚雪资本 等战投机构共同参与",
+        "quote_hash": "901c6f049e9794230dd170d94fc92bdca35f78f6e44770df8258ad29fdd5e196"
       }
     ]
   }

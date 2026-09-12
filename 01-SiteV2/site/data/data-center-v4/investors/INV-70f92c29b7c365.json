@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-70f92c29b7c365",
@@ -20,23 +20,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-07-07",
-    "latest_disclosed_at": "2026-07-07",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-09-11",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "historical_or_ambiguous": 3,
+      "participant": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-964f260c9a904091",
+        "canonical_entity_id": "",
+        "name": "爱诗科技"
+      },
       {
         "entity_id": "EN-d361e2fd6b342245",
         "canonical_entity_id": "",
@@ -44,6 +52,126 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d1e3522d42e487cb",
+        "funding_insight_id": "FI-8bb77ef557b4754b",
+        "event_ids": [
+          "EV-0cc745a319a25f6e"
+        ],
+        "company_entity_id": "EN-42ba84199bafa1f1",
+        "company_canonical_entity_id": "",
+        "company_name": "昂听 ELEHEAR",
+        "round": "A2轮",
+        "round_code": "series_a2",
+        "round_original": "A2轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使+轮投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-af6450eccd94a9e8",
+            "source_url": "https://www.baijing.cn/article/55915",
+            "source_title": "福布斯健康榜第一，深圳AI助听器出海火了",
+            "source_content_hash": "234184742f42feb3",
+            "quote": "并于 2025 年获得钟鼎资本的天使+轮投资",
+            "quote_hash": "a18f22f3bfa66d70dd12db220efa1734ebe2f12706d76c7eb090243b874efc97"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-324aca553cd1c5e4",
+        "funding_insight_id": "FI-42815b3fc014db68",
+        "event_ids": [
+          "EV-64c5290cc685eb93"
+        ],
+        "company_entity_id": "EN-d361e2fd6b342245",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子++轮",
+        "round_code": "seed_plus_plus",
+        "round_original": "种子++轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-853986351b6d68d9",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-28/doc-inhvzfsh8584344.shtml",
+            "source_title": "首发| 华为大牛深圳创业，MemoraX AI首轮融资千万美元_新浪科技_新浪网",
+            "source_content_hash": "7b3001b2629929ad",
+            "quote": "本轮由L2F光源创业者基金、钟鼎资本联合领投，知名投资人及产业方共同参与。",
+            "quote_hash": "e9fb39839566d2517b1b64485aa3b92724685259cd0e25f7d160f6447cfabf34"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ebfac50dff9bd033",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9476e3eff9c1e8fe",
+            "source_url": "https://news.pedaily.cn/202607/566238.shtml",
+            "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型",
+            "source_content_hash": "31557c2904ef4cb8",
+            "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
+            "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-934f079c87867902",
         "funding_insight_id": "FI-60fcc87061157740",
@@ -83,9 +211,73 @@
             "quote_hash": "6b93b45c73568518a641dc5124b85c00d979bd7e5a22bd29a882bd2611876c4e"
           }
         ]
+      },
+      {
+        "activity_id": "IA-aa8165e1ff470ea6",
+        "funding_insight_id": "FI-a6350cc6f597f274",
+        "event_ids": [
+          "EV-34a58f84a7ba4e92"
+        ],
+        "company_entity_id": "EN-82c84d2f6490e62b",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳忆纪元科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-05e2c9bb98f48c3d",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhvzfsm1805307.shtml",
+            "source_title": "首发| 华为大牛深圳创业，MemoraX AI首轮融资千万美元_新浪财经_新浪网",
+            "source_content_hash": "46a91a57ee8cc43d",
+            "quote": "本轮由L2F光源创业者基金、钟鼎资本联合领投",
+            "quote_hash": "63226e98e46ca30c99b7604c434204dc7f3f03982fead7ffabff77ab60e87af4"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-af6450eccd94a9e8",
+        "source_url": "https://www.baijing.cn/article/55915",
+        "source_title": "福布斯健康榜第一，深圳AI助听器出海火了",
+        "source_content_hash": "234184742f42feb3",
+        "quote": "并于 2025 年获得钟鼎资本的天使+轮投资",
+        "quote_hash": "a18f22f3bfa66d70dd12db220efa1734ebe2f12706d76c7eb090243b874efc97"
+      },
+      {
+        "source_id": "FISRC-853986351b6d68d9",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-28/doc-inhvzfsh8584344.shtml",
+        "source_title": "首发| 华为大牛深圳创业，MemoraX AI首轮融资千万美元_新浪科技_新浪网",
+        "source_content_hash": "7b3001b2629929ad",
+        "quote": "本轮由L2F光源创业者基金、钟鼎资本联合领投，知名投资人及产业方共同参与。",
+        "quote_hash": "e9fb39839566d2517b1b64485aa3b92724685259cd0e25f7d160f6447cfabf34"
+      },
+      {
+        "source_id": "FISRC-9476e3eff9c1e8fe",
+        "source_url": "https://news.pedaily.cn/202607/566238.shtml",
+        "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型",
+        "source_content_hash": "31557c2904ef4cb8",
+        "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
+        "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
+      },
       {
         "source_id": "FISRC-801e27a77fec6aaf",
         "source_url": "https://www.36kr.com/p/3785834045583875",
@@ -93,6 +285,14 @@
         "source_content_hash": "60c922b0df26320d9ae634c1fcada836344995e66e0771687854d979f6335228",
         "quote": "本轮由 L2F 光源创业者基金、钟鼎资本联合领投",
         "quote_hash": "6b93b45c73568518a641dc5124b85c00d979bd7e5a22bd29a882bd2611876c4e"
+      },
+      {
+        "source_id": "FISRC-05e2c9bb98f48c3d",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhvzfsm1805307.shtml",
+        "source_title": "首发| 华为大牛深圳创业，MemoraX AI首轮融资千万美元_新浪财经_新浪网",
+        "source_content_hash": "46a91a57ee8cc43d",
+        "quote": "本轮由L2F光源创业者基金、钟鼎资本联合领投",
+        "quote_hash": "63226e98e46ca30c99b7604c434204dc7f3f03982fead7ffabff77ab60e87af4"
       }
     ]
   }

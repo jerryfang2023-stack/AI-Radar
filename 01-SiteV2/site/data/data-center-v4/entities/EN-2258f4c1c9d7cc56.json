@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-2258f4c1c9d7cc56",
+    "name": "深圳中科欣扬生物科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-2cf2ab399eb05035"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-31",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-2cf2ab399eb05035"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-2cf2ab399eb05035",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-31",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "中科欣扬完成亿元级融资，夯实AI+BT 合成生物平台",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-66c09c4c12ce671c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0a05d257f4c775c7",
+            "fundingInsightId": "FI-316d91126ca1972e"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "consumer_retail",
+            "name": "消费与零售",
+            "entityIds": [
+              "EN-66c09c4c12ce671c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a4b51b6972cc4c5b",
+            "fundingInsightId": "FI-316d91126ca1972e"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-66c09c4c12ce671c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-968c395850cd5cd9",
+            "fundingInsightId": "FI-316d91126ca1972e"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-66c09c4c12ce671c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fbb035cb8b77704d",
+            "fundingInsightId": "FI-316d91126ca1972e"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-66c09c4c12ce671c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d037addd5c43f258",
+            "fundingInsightId": "FI-316d91126ca1972e"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-66c09c4c12ce671c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-76aeb1794c871e49",
+            "fundingInsightId": "FI-316d91126ca1972e"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-66c09c4c12ce671c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5d3421190b2da186",
+            "fundingInsightId": "FI-316d91126ca1972e"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-66c09c4c12ce671c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-aaebfc111701a856",
+            "fundingInsightId": "FI-316d91126ca1972e"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-66c09c4c12ce671c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2258f4c1c9d7cc56",
+          "EN-66c09c4c12ce671c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

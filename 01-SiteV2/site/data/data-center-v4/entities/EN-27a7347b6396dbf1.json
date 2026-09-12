@@ -1,0 +1,442 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-27a7347b6396dbf1",
+    "name": "科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0e1edf873779be1d",
+      "EV-7021bd7041019330"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-14",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-0e1edf873779be1d",
+        "EV-7021bd7041019330"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-0e1edf873779be1d",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-14",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "「复鞍智能」完成种子轮融资，AI4S重塑物质科学研发范式",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5cf234226503e551",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bdbf6f523d361306",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8d1b5a16bcff8170",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d1391b2f71926e90",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cdb6ac0987dfc691",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4aa85c636e34259a",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b400b6efbbca4d85",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-44358216807e0860",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "professional_services",
+            "name": "专业服务",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-305ff1a04c4ab4df",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d0eab74c90b7e431",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-ccc2bd5e43d9ab2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c0d78d14f31baf5d",
+            "fundingInsightId": "FI-c41b726f5df3aed0"
+          }
+        ],
+        "entityIds": [
+          "EN-ccc2bd5e43d9ab2b",
+          "EN-27a7347b6396dbf1"
+        ]
+      },
+      {
+        "id": "EV-7021bd7041019330",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-14",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "复鞍智能完成种子轮融资，小苗朗程、天际资本联合领投",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a51efeafd0fa2eb5",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ee965fb9b32ead4b",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-62d549455e19f4a4",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2f3437e0d24a3613",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6d7159c179585ab5",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6fe1d515c9955084",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-74ec08b09dee82cc",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-145d0a74836611d9",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "professional_services",
+            "name": "专业服务",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fa97105f80cf57ec",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e210436acf68b1ea",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-d92a7f237b09feea"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-37e6135b5c99a2d7",
+            "fundingInsightId": "FI-8a441d3317c8c8dc"
+          }
+        ],
+        "entityIds": [
+          "EN-ccc2bd5e43d9ab2b",
+          "EN-d92a7f237b09feea",
+          "EN-27a7347b6396dbf1"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-cb8bf9d664872755",
+      "snapshotKey": "cb8bf9d664872755",
+      "snapshotId": "HWS-84cf1b533382fb66",
+      "eventId": "EV-7021bd7041019330",
+      "eventIds": [
+        "EV-7021bd7041019330"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "上海复鞍智能科技有限公司",
+      "subject": "上海复鞍智能科技有限公司",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-9ca051984f3a2c92"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-7cbee5beb1ca01a3",
+          "fact_type": "product",
+          "observed_at": "2026-05-14T06:36:00.000Z",
+          "subject_entity_id": "EN-ccc2bd5e43d9ab2b",
+          "subject_name": "上海复鞍智能科技有限公司",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "本轮融资将重点投入AI核心数据和算法的持续迭代，同时深化产品在石油化工、新能源、催化材料、半导体等领域的商业化布局",
+          "event_refs": [
+            "EV-7021bd7041019330"
+          ],
+          "claim_ref": "CL-8cf516c02300c0b5",
+          "source_refs": [
+            "SA-fe71e1ef6c5f4aee",
+            "SA-f36a690846ea2f2e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-9ca051984f3a2c92",
+          "fact_type": "product",
+          "observed_at": "2026-05-14T06:36:00.000Z",
+          "subject_entity_id": "EN-ccc2bd5e43d9ab2b",
+          "subject_name": "上海复鞍智能科技有限公司",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "本轮融资将重点投入AI核心数据和算法的持续迭代，同时深化产品在石油化工、新能源、催化材料、半导体等领域的商业化布局，打造技术赋能产业的标杆案例。",
+          "event_refs": [
+            "EV-7021bd7041019330"
+          ],
+          "claim_ref": "CL-2d11ababad56410e",
+          "source_refs": [
+            "SA-fe71e1ef6c5f4aee",
+            "SA-f36a690846ea2f2e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://news.pedaily.cn/202605/563872.shtml",
+      "entityIds": [
+        "EN-ccc2bd5e43d9ab2b",
+        "EN-d92a7f237b09feea",
+        "EN-27a7347b6396dbf1"
+      ]
+    }
+  ]
+}

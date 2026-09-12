@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-4243b56be18a83",
+    "name": "小苗朗程",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-05-14",
+    "latest_disclosed_at": "2026-07-14",
+    "role_counts": {
+      "co_lead": 2,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ccc2bd5e43d9ab2b",
+        "canonical_entity_id": "",
+        "name": "上海复鞍智能科技有限公司"
+      },
+      {
+        "entity_id": "EN-d92a7f237b09feea",
+        "canonical_entity_id": "",
+        "name": "上海复鞍智能科技有限公司"
+      },
+      {
+        "entity_id": "EN-670f7279903a5551",
+        "canonical_entity_id": "",
+        "name": "上海幻码跃迁量子科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-1bbb348b232d535a",
+        "funding_insight_id": "FI-150dae442fa0f1de",
+        "event_ids": [
+          "EV-71d7d8bbaa623228"
+        ],
+        "company_entity_id": "EN-670f7279903a5551",
+        "company_canonical_entity_id": "",
+        "company_name": "上海幻码跃迁量子科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c0e1d89cdf9af82",
+            "source_url": "https://news.pedaily.cn/202607/566249.shtml",
+            "source_title": "「幻码跃迁」完成数千万种子轮融资，打造量子×AI融合创新的量子计算基础设施",
+            "source_content_hash": "340f8c8784943503",
+            "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
+            "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b63f5c677cf366d0",
+        "funding_insight_id": "FI-39ec2442585e45b6",
+        "event_ids": [
+          "EV-0e1edf873779be1d"
+        ],
+        "company_entity_id": "EN-ccc2bd5e43d9ab2b",
+        "company_canonical_entity_id": "",
+        "company_name": "上海复鞍智能科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-55041228ee583f8a",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwenh8729004.shtml",
+            "source_title": "「复鞍智能」完成种子轮融资，AI4S重塑物质科学研发范式",
+            "source_content_hash": "0ccbefed99e236b4",
+            "quote": "本轮由小苗朗程、天际资本联合领投",
+            "quote_hash": "d0dbb96aee7f328e9265044785e68897778ec2a2261dab27203e5a3087e10eb9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b83da51f1db7733f",
+        "funding_insight_id": "FI-e33a64d66e4e499b",
+        "event_ids": [
+          "EV-7021bd7041019330"
+        ],
+        "company_entity_id": "EN-d92a7f237b09feea",
+        "company_canonical_entity_id": "",
+        "company_name": "上海复鞍智能科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c496091042c7e975",
+            "source_url": "https://news.pedaily.cn/202605/563872.shtml",
+            "source_title": "复鞍智能完成种子轮融资，小苗朗程、天际资本联合领投",
+            "source_content_hash": "8a542d4e6a0b88a7",
+            "quote": "本轮由 小苗朗程、天际资本联合领投",
+            "quote_hash": "07ac3a2f71f6e791f8a253d62f87d8fa26245fc7e0b1c820308c64b2ceecaf0a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7c0e1d89cdf9af82",
+        "source_url": "https://news.pedaily.cn/202607/566249.shtml",
+        "source_title": "「幻码跃迁」完成数千万种子轮融资，打造量子×AI融合创新的量子计算基础设施",
+        "source_content_hash": "340f8c8784943503",
+        "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
+        "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
+      },
+      {
+        "source_id": "FISRC-55041228ee583f8a",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwenh8729004.shtml",
+        "source_title": "「复鞍智能」完成种子轮融资，AI4S重塑物质科学研发范式",
+        "source_content_hash": "0ccbefed99e236b4",
+        "quote": "本轮由小苗朗程、天际资本联合领投",
+        "quote_hash": "d0dbb96aee7f328e9265044785e68897778ec2a2261dab27203e5a3087e10eb9"
+      },
+      {
+        "source_id": "FISRC-c496091042c7e975",
+        "source_url": "https://news.pedaily.cn/202605/563872.shtml",
+        "source_title": "复鞍智能完成种子轮融资，小苗朗程、天际资本联合领投",
+        "source_content_hash": "8a542d4e6a0b88a7",
+        "quote": "本轮由 小苗朗程、天际资本联合领投",
+        "quote_hash": "07ac3a2f71f6e791f8a253d62f87d8fa26245fc7e0b1c820308c64b2ceecaf0a"
+      }
+    ]
+  }
+}

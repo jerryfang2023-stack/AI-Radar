@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-4cab994c57f770ed",
+    "name": "近日",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-a39d8aac0ee78e07"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-27",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-a39d8aac0ee78e07"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-a39d8aac0ee78e07",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-27",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "商道创投网・会员动态｜睿心医疗・完成近亿元D 轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-f33058e80670aeb6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-645f4499405bfacb",
+            "fundingInsightId": "FI-027a8e57f9d39603"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-f33058e80670aeb6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2ede08e1dca2b1e8",
+            "fundingInsightId": "FI-027a8e57f9d39603"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-f33058e80670aeb6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4f13b56908ccc3af",
+            "fundingInsightId": "FI-027a8e57f9d39603"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-f33058e80670aeb6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7d37f67f5b7147c7",
+            "fundingInsightId": "FI-027a8e57f9d39603"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-f33058e80670aeb6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-320d57142224eb01",
+            "fundingInsightId": "FI-027a8e57f9d39603"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-f33058e80670aeb6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-f33058e80670aeb6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1dfc9629b3221d75",
+            "fundingInsightId": "FI-027a8e57f9d39603"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-f33058e80670aeb6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bd6d76293708e59c",
+            "fundingInsightId": "FI-027a8e57f9d39603"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-f33058e80670aeb6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e5ca8fd697f73e2f",
+            "fundingInsightId": "FI-027a8e57f9d39603"
+          }
+        ],
+        "entityIds": [
+          "EN-f33058e80670aeb6",
+          "EN-4cab994c57f770ed"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

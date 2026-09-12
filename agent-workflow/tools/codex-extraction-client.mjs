@@ -6,7 +6,7 @@ import { spawn, spawnSync } from "node:child_process";
 export const TERRA_EXTRACTION_MODEL = "gpt-5.6-terra";
 
 export function authorizedTerraExtraction(candidate, metadata, authorization) {
-  return candidate.model === TERRA_EXTRACTION_MODEL && metadata?.acquisition_channel === "china-funding"
+  return candidate.model === TERRA_EXTRACTION_MODEL && (metadata?.acquisition_channel === "china-funding" || authorization?.reuse_existing_private_originals === true)
     && authorization?.schema_version === "CHINA-FUNDING-HISTORY-AUTHORIZATION-V1.0"
     && Boolean(authorization.source_refs?.includes(candidate.source_ref));
 }

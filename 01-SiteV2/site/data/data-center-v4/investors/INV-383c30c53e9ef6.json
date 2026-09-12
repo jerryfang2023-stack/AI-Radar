@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-383c30c53e9ef6",
+    "name": "海愿资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-31",
+    "latest_disclosed_at": "2026-07-31",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-66c09c4c12ce671c",
+        "canonical_entity_id": "",
+        "name": "深圳中科欣扬生物科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-471879103183986d",
+        "funding_insight_id": "FI-a365659cfe78a9fa",
+        "event_ids": [
+          "EV-2cf2ab399eb05035"
+        ],
+        "company_entity_id": "EN-66c09c4c12ce671c",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳中科欣扬生物科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "亿元级融资",
+        "amount_original": "亿元级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-07-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8c121a58e2376a1d",
+            "source_url": "https://news.pedaily.cn/202607/567057.shtml",
+            "source_title": "中科欣扬完成亿元级融资，夯实AI+BT 合成生物平台",
+            "source_content_hash": "b053cba718882f51",
+            "quote": "本轮融资由知名产业投资方领投，海愿资本、龙岗引导基金跟投。",
+            "quote_hash": "ff461b4de9a151f7c7778808a0a9c2a3f868d86cf430955b92e3e044c11ad1ee"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-8c121a58e2376a1d",
+        "source_url": "https://news.pedaily.cn/202607/567057.shtml",
+        "source_title": "中科欣扬完成亿元级融资，夯实AI+BT 合成生物平台",
+        "source_content_hash": "b053cba718882f51",
+        "quote": "本轮融资由知名产业投资方领投，海愿资本、龙岗引导基金跟投。",
+        "quote_hash": "ff461b4de9a151f7c7778808a0a9c2a3f868d86cf430955b92e3e044c11ad1ee"
+      }
+    ]
+  }
+}

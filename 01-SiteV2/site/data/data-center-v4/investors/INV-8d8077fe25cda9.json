@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-8d8077fe25cda9",
@@ -20,30 +20,42 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 4,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-04-02",
-    "latest_disclosed_at": "2026-04-17",
+    "latest_disclosed_at": "2026-09-09",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "lead": 1,
+      "participant": 4
     },
     "round_codes": [
-      "multi_round",
-      "other",
-      "pre_series_a"
+      "pre_series_a",
+      "series_a",
+      "series_b_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-bcfc3b314fa4ede5",
+        "canonical_entity_id": "",
+        "name": "华清未央（北京）科技有限公司"
+      },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "name": "它石智航"
+      },
+      {
+        "entity_id": "EN-187bf23c29af5e43",
+        "canonical_entity_id": "",
+        "name": "无问智科"
       },
       {
         "entity_id": "EN-a6e5382c05dd0d16",
@@ -53,17 +65,97 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-1789d2cc685ef4da",
-        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "activity_id": "IA-ff158c263b3f3e7c",
+        "funding_insight_id": "FI-09fda86a59f81440",
+        "event_ids": [
+          "EV-d9e018b58da30912"
+        ],
+        "company_entity_id": "EN-187bf23c29af5e43",
+        "company_canonical_entity_id": "",
+        "company_name": "无问智科",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed89be77100eb6da",
+            "source_url": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html",
+            "source_title": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元",
+            "source_content_hash": "92a793010534b741",
+            "quote": "本轮融资由洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融、力合中科、澄凯灵澄未来基金等老股东超额追投。",
+            "quote_hash": "feca660b3302476ae3bf9a82d624591ccd0844553d53224c7bceee2b3986c8c2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-07a7c5cb2b08440b",
+        "funding_insight_id": "FI-de5c9a8f3d3cc54a",
+        "event_ids": [
+          "EV-6928501584326746"
+        ],
+        "company_entity_id": "EN-bcfc3b314fa4ede5",
+        "company_canonical_entity_id": "",
+        "company_name": "华清未央（北京）科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-06-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c8f7d3c7af4bc00a",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-01/doc-inhzwisx2581224.shtml",
+            "source_title": "华清未央完成超亿元Pre-A轮融资",
+            "source_content_hash": "719dea70c671a252",
+            "quote": "投资方包括安赐资本、华屹资本、盛世投资、芯能创投、洪泰基金、辛夷投资、海德资本、瀚晖资本等",
+            "quote_hash": "e6f1ce4ea3834a3e001f0edae979a05a690aed6dd030ed064eee879a97c1273a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7766d44a66976b74",
+        "funding_insight_id": "FI-b9eb4320e43ddfdf",
         "event_ids": [
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "company_name": "它石智航",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
         "amount_original": "4.55亿美金",
         "amount_normalized": {
           "currency": "USD",
@@ -173,16 +265,17 @@
         ]
       },
       {
-        "activity_id": "IA-570d93b05b18f36e",
-        "funding_insight_id": "FI-af2461a497e30ffa",
+        "activity_id": "IA-3fb2a0a1cbcbbe86",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
         "event_ids": [
+          "EV-0ff10475efa53e6c",
           "EV-435d7e7878b0c326"
         ],
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "20亿元",
         "amount_normalized": {
@@ -203,17 +296,33 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-dd387948ae711f72",
-            "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
-            "source_title": "星海图完成20亿元B+轮融资",
-            "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
-            "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
-            "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
+            "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
           }
         ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ed89be77100eb6da",
+        "source_url": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html",
+        "source_title": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元",
+        "source_content_hash": "92a793010534b741",
+        "quote": "本轮融资由洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融、力合中科、澄凯灵澄未来基金等老股东超额追投。",
+        "quote_hash": "feca660b3302476ae3bf9a82d624591ccd0844553d53224c7bceee2b3986c8c2"
+      },
+      {
+        "source_id": "FISRC-c8f7d3c7af4bc00a",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-01/doc-inhzwisx2581224.shtml",
+        "source_title": "华清未央完成超亿元Pre-A轮融资",
+        "source_content_hash": "719dea70c671a252",
+        "quote": "投资方包括安赐资本、华屹资本、盛世投资、芯能创投、洪泰基金、辛夷投资、海德资本、瀚晖资本等",
+        "quote_hash": "e6f1ce4ea3834a3e001f0edae979a05a690aed6dd030ed064eee879a97c1273a"
+      },
       {
         "source_id": "FISRC-b4d6b7523ee32ad7",
         "source_url": "https://news.pedaily.cn/202604/562863.shtml",
@@ -239,12 +348,12 @@
         "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
       },
       {
-        "source_id": "FISRC-dd387948ae711f72",
-        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
-        "source_title": "星海图完成20亿元B+轮融资",
-        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
-        "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
-        "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
+        "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
       }
     ]
   }

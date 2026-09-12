@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-8aaec24f4836e4",
+    "name": "弘晖基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
+    "first_disclosed_at": "2026-02-24",
+    "latest_disclosed_at": "2026-08-28",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 3,
+      "participant": 1
+    },
+    "round_codes": [
+      "infrastructure",
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-731b78a10ab9e444",
+        "canonical_entity_id": "",
+        "name": "基元律动（TokenRhythm）"
+      },
+      {
+        "entity_id": "EN-1032f7a4df33f629",
+        "canonical_entity_id": "EN-1032f7a4df33f629",
+        "name": "千寻智能"
+      },
+      {
+        "entity_id": "EN-2cf797510f7e4324",
+        "canonical_entity_id": "",
+        "name": "上海基元律动科技有限公司"
+      },
+      {
+        "entity_id": "EN-9c7b7987e3a6bf06",
+        "canonical_entity_id": "",
+        "name": "上海基元律动科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e852530359a76604",
+        "funding_insight_id": "FI-a2a15e704693ce24",
+        "event_ids": [
+          "EV-b78b4d2d94c8e72c"
+        ],
+        "company_entity_id": "EN-2cf797510f7e4324",
+        "company_canonical_entity_id": "",
+        "company_name": "上海基元律动科技有限公司",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-08-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-89f8f73b4550e672",
+            "source_url": "https://news.pedaily.cn/202608/568248.shtml",
+            "source_title": "基元律动完成新一轮融资，累计融资数千万美元",
+            "source_content_hash": "fdd56106d8c1b75c",
+            "quote": "本轮融资由 弘晖基金领投，聚合资本、尚势资本 等机构参与。",
+            "quote_hash": "9b96c88169780643a5210b997d4d9dda3b41cf3666de831a37d11d455a82f7e2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fabff5f83944140a",
+        "funding_insight_id": "FI-f92057b012040f2a",
+        "event_ids": [
+          "EV-3c145705d72a5e57"
+        ],
+        "company_entity_id": "EN-731b78a10ab9e444",
+        "company_canonical_entity_id": "",
+        "company_name": "基元律动（TokenRhythm）",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-08-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f23d61f5ed1d1ac1",
+            "source_url": "https://www.qbitai.com/2026/08/480079.html",
+            "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
+            "source_content_hash": "88fa07495f1fde73",
+            "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与。",
+            "quote_hash": "53660265c82eb4f1f1c5bb0194b06bb447a577340eacd1846bdc0c8e495d7d05"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-29fb8755bcf63deb",
+        "funding_insight_id": "FI-99a7219d2f444794",
+        "event_ids": [
+          "EV-5e8ad56fcef42b5a"
+        ],
+        "company_entity_id": "EN-9c7b7987e3a6bf06",
+        "company_canonical_entity_id": "",
+        "company_name": "上海基元律动科技有限公司",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-08-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7d258d317b7d8b47",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-inipucsw0774279.shtml",
+            "source_title": "基元律动累计融资数千万美元",
+            "source_content_hash": "cf1d781a8be43665",
+            "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与",
+            "quote_hash": "d559bde143b6311d20119acc126ab51362e077d2362ea26a5e7f4855df5733cd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5bcd34a264667138",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "投资方包括顺为资本、绿洲资本、弘晖基金、达晨财智、千乘资本以及宁德时代联合创始人、副董事长李平出资创办的柏睿资本等",
+            "quote_hash": "7de5492297b7e2b353edc59b49029cd0b025a8fc0487ca829755ba110c67ec68"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d3cba39d781c5ab6",
+        "funding_insight_id": "FI-846562dfba15b6a0",
+        "event_ids": [
+          "EV-61f07716fd7cb7ee"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "两轮融资",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ee3064edf7c871f4",
+            "source_url": "https://www.qbitai.com/2026/02/381766.html",
+            "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+            "source_content_hash": "0ad2701645471c8d",
+            "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
+            "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-89f8f73b4550e672",
+        "source_url": "https://news.pedaily.cn/202608/568248.shtml",
+        "source_title": "基元律动完成新一轮融资，累计融资数千万美元",
+        "source_content_hash": "fdd56106d8c1b75c",
+        "quote": "本轮融资由 弘晖基金领投，聚合资本、尚势资本 等机构参与。",
+        "quote_hash": "9b96c88169780643a5210b997d4d9dda3b41cf3666de831a37d11d455a82f7e2"
+      },
+      {
+        "source_id": "FISRC-f23d61f5ed1d1ac1",
+        "source_url": "https://www.qbitai.com/2026/08/480079.html",
+        "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
+        "source_content_hash": "88fa07495f1fde73",
+        "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与。",
+        "quote_hash": "53660265c82eb4f1f1c5bb0194b06bb447a577340eacd1846bdc0c8e495d7d05"
+      },
+      {
+        "source_id": "FISRC-7d258d317b7d8b47",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-inipucsw0774279.shtml",
+        "source_title": "基元律动累计融资数千万美元",
+        "source_content_hash": "cf1d781a8be43665",
+        "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与",
+        "quote_hash": "d559bde143b6311d20119acc126ab51362e077d2362ea26a5e7f4855df5733cd"
+      },
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "投资方包括顺为资本、绿洲资本、弘晖基金、达晨财智、千乘资本以及宁德时代联合创始人、副董事长李平出资创办的柏睿资本等",
+        "quote_hash": "7de5492297b7e2b353edc59b49029cd0b025a8fc0487ca829755ba110c67ec68"
+      },
+      {
+        "source_id": "FISRC-ee3064edf7c871f4",
+        "source_url": "https://www.qbitai.com/2026/02/381766.html",
+        "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+        "source_content_hash": "0ad2701645471c8d",
+        "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
+        "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
+      }
+    ]
+  }
+}

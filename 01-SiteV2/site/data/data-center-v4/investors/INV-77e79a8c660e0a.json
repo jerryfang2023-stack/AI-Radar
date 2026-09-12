@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-77e79a8c660e0a",
+    "name": "招商局创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-02-24",
+    "latest_disclosed_at": "2026-09-08",
+    "role_counts": {
+      "historical_or_ambiguous": 3,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f6aaf378a6d9e724",
+        "canonical_entity_id": "",
+        "name": "深圳市深度智控科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-cae5a805bd763688",
+        "funding_insight_id": "FI-fae9478ac0e65316",
+        "event_ids": [
+          "EV-ac5e79d96a009ee1"
+        ],
+        "company_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_canonical_entity_id": "",
+        "company_name": "深度智控",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67ccadc4294defd6",
+            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+            "source_title": "深度智控 | 项目信息-36氪",
+            "source_content_hash": "ed75aafa3d8feb1d",
+            "quote": "本轮融资由晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续跟投。",
+            "quote_hash": "a094429d21cbd2cc077d31ef0d381e2edc6cdfb9b0ced23e60c83e6f483247a5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4f2e0d2ccb6b6a83",
+        "funding_insight_id": "FI-c524ab52173a64d8",
+        "event_ids": [
+          "EV-c6437ac13cb07531"
+        ],
+        "company_entity_id": "EN-f6aaf378a6d9e724",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳市深度智控科技有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-03cb69a63e7d787b",
+            "source_url": "https://news.pedaily.cn/202607/566034.shtml",
+            "source_title": "物理 AI 企业深度智控（DeepCtrls）完成数亿元 B 轮融资",
+            "source_content_hash": "549472ef08c4ac5a",
+            "quote": "本轮融资由 晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续加码",
+            "quote_hash": "76ef591c6d4ca616ce480398a2ba71d5279671714499b7bb2d71a8a86d3f652d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-96b05c945038ee4a",
+        "funding_insight_id": "FI-2a47fffabd6bfe6b",
+        "event_ids": [
+          "EV-88158ddf272e4731"
+        ],
+        "company_entity_id": "EN-f0a77f08b0db14ab",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳欧拉万象科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超过亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-06-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-aad97c1f07ceb5c6",
+            "source_url": "https://www.sohu.com/a/1041806074_120109837",
+            "source_title": "成立3个月家庭具身智能企业欧拉万象获第三轮融资",
+            "source_content_hash": "2af3607d3a79e574",
+            "quote": "这是欧拉万象继获得招商局创投、高瓴创投、五源资本等机构密集加持后，再次迎来市场化与产业资本的重磅加注。",
+            "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4722df03648f8ad1",
+        "funding_insight_id": "FI-846562dfba15b6a0",
+        "event_ids": [
+          "EV-61f07716fd7cb7ee"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "两轮融资",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-33f81d5bf5575efc",
+            "source_url": "https://robotscope.net/companies/qianxun-intelligence/",
+            "source_title": "千寻智能 · 估值¥20B · Series unknown — RobotScope",
+            "source_content_hash": "64289d675992a978",
+            "quote": "Pre-A轮 | ¥5.28亿 | 2025-03 | Prosperity7 Ventures（阿美风投）领投，招商局创投、广发信德、靖亚资本、东方富海、华控基金等参与",
+            "quote_hash": "2bec90c3b61566e19081e03cfad83e11e97563896c8eeb61422a264384d66a4e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-67ccadc4294defd6",
+        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+        "source_title": "深度智控 | 项目信息-36氪",
+        "source_content_hash": "ed75aafa3d8feb1d",
+        "quote": "本轮融资由晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续跟投。",
+        "quote_hash": "a094429d21cbd2cc077d31ef0d381e2edc6cdfb9b0ced23e60c83e6f483247a5"
+      },
+      {
+        "source_id": "FISRC-03cb69a63e7d787b",
+        "source_url": "https://news.pedaily.cn/202607/566034.shtml",
+        "source_title": "物理 AI 企业深度智控（DeepCtrls）完成数亿元 B 轮融资",
+        "source_content_hash": "549472ef08c4ac5a",
+        "quote": "本轮融资由 晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续加码",
+        "quote_hash": "76ef591c6d4ca616ce480398a2ba71d5279671714499b7bb2d71a8a86d3f652d"
+      },
+      {
+        "source_id": "FISRC-aad97c1f07ceb5c6",
+        "source_url": "https://www.sohu.com/a/1041806074_120109837",
+        "source_title": "成立3个月家庭具身智能企业欧拉万象获第三轮融资",
+        "source_content_hash": "2af3607d3a79e574",
+        "quote": "这是欧拉万象继获得招商局创投、高瓴创投、五源资本等机构密集加持后，再次迎来市场化与产业资本的重磅加注。",
+        "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
+      },
+      {
+        "source_id": "FISRC-33f81d5bf5575efc",
+        "source_url": "https://robotscope.net/companies/qianxun-intelligence/",
+        "source_title": "千寻智能 · 估值¥20B · Series unknown — RobotScope",
+        "source_content_hash": "64289d675992a978",
+        "quote": "Pre-A轮 | ¥5.28亿 | 2025-03 | Prosperity7 Ventures（阿美风投）领投，招商局创投、广发信德、靖亚资本、东方富海、华控基金等参与",
+        "quote_hash": "2bec90c3b61566e19081e03cfad83e11e97563896c8eeb61422a264384d66a4e"
+      }
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[3].role": {
+          "text": "Pre-A轮参投",
+          "source_hash": "75aaa1dd0132d4ba8047a96c9e775128706624586a0b4672520c781b5d61de55",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

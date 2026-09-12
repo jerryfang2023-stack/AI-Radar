@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "entity": {
     "id": "EN-e12c9f7f64dec58c",
@@ -24,6 +24,10 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d051cfbe3fd7e80f",
+      "EV-e084947e3f9e0667",
+      "EV-314db5cbf5010d41",
+      "EV-8077605769c4d4eb",
       "EV-48d22452ef4464fc"
     ],
     "viewpointIds": [],
@@ -32,11 +36,16 @@
       "TX-deployment_model-edge_device"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-26",
-    "lastSeen": "2026-08-27",
+    "firstSeen": "2026-01-06",
+    "lastSeen": "2026-09-12",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-d051cfbe3fd7e80f",
+        "EV-e084947e3f9e0667",
+        "EV-314db5cbf5010d41",
+        "EV-8077605769c4d4eb"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -47,6 +56,343 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d051cfbe3fd7e80f",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "「liko.ai」完成首轮融资，打造以 AI Home Center 为核心的智能家居解决方案-36氪",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "vision_language",
+            "name": "视觉语言",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-f2b9106253663314",
+          "EN-e12c9f7f64dec58c"
+        ]
+      },
+      {
+        "id": "EV-e084947e3f9e0667",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "面壁智能融资超50亿，估值超200亿",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d1e422fe3a06a4d6",
+          "EN-e12c9f7f64dec58c"
+        ]
+      },
+      {
+        "id": "EV-314db5cbf5010d41",
+        "dataDate": "2026-09-12",
+        "date": "2026-04-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9a323e6011ddc0ca",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ed52ac51cbc7d85b",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a66a8c0a78a50c96",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ff9562cc75ad65df",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-be461e469446fc75",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6d68f85aae248a11",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0b02a4038e6b998f",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-50ee378ca2d082fd",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-246d514bfc853694",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3178c9e9b611e5c3",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-3309b3b14807f39a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-45b2388bac50f6d7",
+            "fundingInsightId": "FI-704b201eedc539c9"
+          }
+        ],
+        "entityIds": [
+          "EN-e12c9f7f64dec58c",
+          "EN-3309b3b14807f39a"
+        ]
+      },
+      {
+        "id": "EV-8077605769c4d4eb",
+        "dataDate": "2026-09-12",
+        "date": "2026-01-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "创始人来自清华大学，「liko.ai」完成首轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "vision_language",
+            "name": "视觉语言",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-f2b9106253663314"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-f2b9106253663314",
+          "EN-e12c9f7f64dec58c"
+        ]
+      },
       {
         "id": "EV-48d22452ef4464fc",
         "dataDate": "2026-08-27",
@@ -98,9 +444,15 @@
       "typeLabel": "技术",
       "valueId": "on_device",
       "eventIds": [
+        "EV-d051cfbe3fd7e80f",
         "EV-0e7c33ff3b622ab1",
+        "EV-e084947e3f9e0667",
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
+        "EV-71c4419c71d00625",
+        "EV-181a7a6fd14cec08",
+        "EV-4ef09c71be4c84cb",
+        "EV-8077605769c4d4eb",
         "EV-5bbc509a032b8309",
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
@@ -133,9 +485,13 @@
         "EV-f4876d2e1a20d87b"
       ],
       "entityIds": [
+        "EN-f2b9106253663314",
         "EN-f07813b0d063bdb6",
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
+        "EN-d37561692b664762",
+        "EN-ff970851d49aee50",
+        "EN-470be66761dfc2e9",
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
@@ -159,7 +515,7 @@
         "FDE-c846ebc19f50a93f"
       ],
       "hardwareIds": [],
-      "firstSeen": "2026-05-25",
+      "firstSeen": "2026-01-06",
       "lastSeen": "2026-09-12"
     },
     {
@@ -169,9 +525,15 @@
       "typeLabel": "部署形态",
       "valueId": "edge_device",
       "eventIds": [
+        "EV-d051cfbe3fd7e80f",
         "EV-0e7c33ff3b622ab1",
+        "EV-e084947e3f9e0667",
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
+        "EV-71c4419c71d00625",
+        "EV-181a7a6fd14cec08",
+        "EV-4ef09c71be4c84cb",
+        "EV-8077605769c4d4eb",
         "EV-5bbc509a032b8309",
         "EV-d5c00f302e1f808c",
         "EV-7263caa45bbf168e",
@@ -202,9 +564,13 @@
         "EV-f4876d2e1a20d87b"
       ],
       "entityIds": [
+        "EN-f2b9106253663314",
         "EN-f07813b0d063bdb6",
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
+        "EN-d37561692b664762",
+        "EN-ff970851d49aee50",
+        "EN-470be66761dfc2e9",
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
         "EN-87c730bc4f32459e",
@@ -228,7 +594,7 @@
         "FDE-c846ebc19f50a93f"
       ],
       "hardwareIds": [],
-      "firstSeen": "2026-05-25",
+      "firstSeen": "2026-01-06",
       "lastSeen": "2026-09-12"
     }
   ],

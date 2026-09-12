@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-51293f7a23474b",
+    "name": "柯力传感",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-04",
+    "latest_disclosed_at": "2026-09-04",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-2325dea28feb4080",
+        "funding_insight_id": "FI-3e97f5e30e99ff0b",
+        "event_ids": [
+          "EV-cbec329253108e80"
+        ],
+        "company_entity_id": "EN-ee2dce6ecf9a1bab",
+        "company_canonical_entity_id": "",
+        "company_name": "北京深朴智能科技有限公司",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3bc1b2f58c3d4a86",
+            "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+            "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+            "source_content_hash": "892b3be292e8e3e6",
+            "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+            "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3bc1b2f58c3d4a86",
+        "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+        "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+        "source_content_hash": "892b3be292e8e3e6",
+        "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+        "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+      }
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Pre-A轮跟投",
+          "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:49.993Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

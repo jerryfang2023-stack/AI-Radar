@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-f3838ae3ffe67d",
+    "name": "英诺天使基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-05-19",
+    "latest_disclosed_at": "2026-08-10",
+    "role_counts": {
+      "historical_or_ambiguous": 3
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-f3f1a566aeb56951",
+        "funding_insight_id": "FI-5bed699d9869e066",
+        "event_ids": [
+          "EV-b334843aec926ce3"
+        ],
+        "company_entity_id": "EN-f85891c5b8ea86e6",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳声音动力科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "此前投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4dbba5d9789ac616",
+            "source_url": "https://news.pedaily.cn/202608/567481.shtml",
+            "source_title": "Noiz AI获金沙江数千万元种子融资，挖掘声音背后物理信息",
+            "source_content_hash": "4afeaa2317f6d87f",
+            "quote": "此前由北极光创投、英诺天使基金投资。",
+            "quote_hash": "e7e793a691529ef9b820b87302a1db772414fe2c34d4df496626b0d1f4733c1e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-89b28dab0a3eae51",
+        "funding_insight_id": "FI-0d0e4d0d5b40a2c0",
+        "event_ids": [
+          "EV-a121ed73da005180",
+          "EV-ee38c30c00b2a754"
+        ],
+        "company_entity_id": "EN-2b60b46911fc1640",
+        "company_canonical_entity_id": "",
+        "company_name": "上海如身机器人科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-07-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6c76bf98227d92c",
+            "source_url": "https://pitchhub.36kr.com/project/2288218038024320",
+            "source_title": "如身机器人 | 项目信息-36氪",
+            "source_content_hash": "e0633690ea582b36",
+            "quote": "由英诺天使基金领投，水木清华校友种子基金、零以创投、海南零点一科技及个人投资者跟投",
+            "quote_hash": "d1f5f3d74973c136dd6e33cea193780ffcb786fb26caf93b05e900bcc6ba0d7c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9642740e70c5ea1a",
+        "funding_insight_id": "FI-e80d19f187b02392",
+        "event_ids": [
+          "EV-b0e0458e4ae40f66"
+        ],
+        "company_entity_id": "EN-b6994e02c1cd9ad5",
+        "company_canonical_entity_id": "",
+        "company_name": "北京灵御智能科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子+轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-57aa18abc9964b6e",
+            "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
+            "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
+            "source_content_hash": "7fb543b9712ad8c7",
+            "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
+            "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4dbba5d9789ac616",
+        "source_url": "https://news.pedaily.cn/202608/567481.shtml",
+        "source_title": "Noiz AI获金沙江数千万元种子融资，挖掘声音背后物理信息",
+        "source_content_hash": "4afeaa2317f6d87f",
+        "quote": "此前由北极光创投、英诺天使基金投资。",
+        "quote_hash": "e7e793a691529ef9b820b87302a1db772414fe2c34d4df496626b0d1f4733c1e"
+      },
+      {
+        "source_id": "FISRC-a6c76bf98227d92c",
+        "source_url": "https://pitchhub.36kr.com/project/2288218038024320",
+        "source_title": "如身机器人 | 项目信息-36氪",
+        "source_content_hash": "e0633690ea582b36",
+        "quote": "由英诺天使基金领投，水木清华校友种子基金、零以创投、海南零点一科技及个人投资者跟投",
+        "quote_hash": "d1f5f3d74973c136dd6e33cea193780ffcb786fb26caf93b05e900bcc6ba0d7c"
+      },
+      {
+        "source_id": "FISRC-57aa18abc9964b6e",
+        "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
+        "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
+        "source_content_hash": "7fb543b9712ad8c7",
+        "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
+        "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
+      }
+    ]
+  }
+}

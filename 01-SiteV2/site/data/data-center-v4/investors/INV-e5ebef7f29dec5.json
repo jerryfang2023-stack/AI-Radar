@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-e5ebef7f29dec5",
@@ -20,87 +20,133 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-03",
-    "latest_disclosed_at": "2026-08-03",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-06-16",
+    "latest_disclosed_at": "2026-06-16",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "other_current_round": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-062ed8ada14ccffe",
+        "canonical_entity_id": "",
+        "name": "硅基流动（SiliconFlow）"
+      },
+      {
+        "entity_id": "EN-2864ab1d9269d363",
+        "canonical_entity_id": "",
+        "name": "硅基流动（SiliconFlow）"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-544e30d63d6c2edf",
-        "funding_insight_id": "FI-c7196586a871ba41",
+        "activity_id": "IA-9b23f37a610a8bb1",
+        "funding_insight_id": "FI-a385248b0f830a67",
         "event_ids": [
-          "EV-4fbbf16279e27000"
+          "EV-df17b95cf25e7840"
         ],
-        "company_entity_id": "EN-74b42431957780b9",
+        "company_entity_id": "EN-062ed8ada14ccffe",
         "company_canonical_entity_id": "",
-        "company_name": "昉擎科技",
-        "round": "A1轮",
-        "round_code": "series_a1",
-        "round_original": "A1轮",
-        "amount_original": "超过 100 亿人民币",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": 10000000000,
-          "min_value": 10000000000,
+          "value": 2000000000,
+          "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 100 亿元"
+          "status": "exact",
+          "display_zh": "20 亿元"
         },
-        "announced_at": "2026-08-03",
+        "announced_at": "2026-06-16",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮跟投、天使+轮领投、Pre-A轮参投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
         "evidence": [
           {
-            "source_id": "FISRC-a1d34e1670d0ad2d",
-            "source_url": "https://www.163.com/dy/article/K5LF43P10531M1CO.html",
-            "source_title": "晚点独家丨小米、蔚来资本领投昉擎天使轮，寒武纪前CTO任昉擎CEO|英伟达|cto|小米集团|知名企业_网易订阅",
-            "source_content_hash": "da5d6f1e2a3326d1",
-            "quote": "天使轮由小米战略投资部领投，蔚来资本和明势资本跟投；天使 + 轮由蔚来资本领投，明势资本跟投",
-            "quote_hash": "73b1e7a93518f417179ad4dee8a6b3f78ddeeeb1d97fe382dc43dbec66a4934a"
-          },
+            "source_id": "FISRC-879cc82306af58a1",
+            "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
+            "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
+            "source_content_hash": "f1654d9235cc7fa8",
+            "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
+            "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a5f71d89b3880bc0",
+        "funding_insight_id": "FI-735806b08661fb55",
+        "event_ids": [
+          "EV-5a28b9c37a236c89"
+        ],
+        "company_entity_id": "EN-2864ab1d9269d363",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
           {
-            "source_id": "FISRC-af5d29b15452fd45",
-            "source_url": "https://niocapital.com/news/476.html",
-            "source_title": "蔚来资本三月行业大事记",
-            "source_content_hash": "c80a5c2cde0bcb78",
-            "quote": "「昉擎科技」完成10亿元Pre-A轮融资，蔚来资本持续加磅",
-            "quote_hash": "d643320b029b7f75a2ad52dc2760f9650a5a7851a028c549ec3ebf8b5816353a"
+            "source_id": "FISRC-13f47cda26abe042",
+            "source_url": "https://news.pedaily.cn/202606/565261.shtml",
+            "source_title": "硅基流动完成新一轮超20 亿元融资",
+            "source_content_hash": "eed9c3c500776efe",
+            "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
+            "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-a1d34e1670d0ad2d",
-        "source_url": "https://www.163.com/dy/article/K5LF43P10531M1CO.html",
-        "source_title": "晚点独家丨小米、蔚来资本领投昉擎天使轮，寒武纪前CTO任昉擎CEO|英伟达|cto|小米集团|知名企业_网易订阅",
-        "source_content_hash": "da5d6f1e2a3326d1",
-        "quote": "天使轮由小米战略投资部领投，蔚来资本和明势资本跟投；天使 + 轮由蔚来资本领投，明势资本跟投",
-        "quote_hash": "73b1e7a93518f417179ad4dee8a6b3f78ddeeeb1d97fe382dc43dbec66a4934a"
+        "source_id": "FISRC-879cc82306af58a1",
+        "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
+        "source_title": "超20亿B轮融资落地，硅基流动的“Token工厂”",
+        "source_content_hash": "f1654d9235cc7fa8",
+        "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
+        "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
       },
       {
-        "source_id": "FISRC-af5d29b15452fd45",
-        "source_url": "https://niocapital.com/news/476.html",
-        "source_title": "蔚来资本三月行业大事记",
-        "source_content_hash": "c80a5c2cde0bcb78",
-        "quote": "「昉擎科技」完成10亿元Pre-A轮融资，蔚来资本持续加磅",
-        "quote_hash": "d643320b029b7f75a2ad52dc2760f9650a5a7851a028c549ec3ebf8b5816353a"
+        "source_id": "FISRC-13f47cda26abe042",
+        "source_url": "https://news.pedaily.cn/202606/565261.shtml",
+        "source_title": "硅基流动完成新一轮超20 亿元融资",
+        "source_content_hash": "eed9c3c500776efe",
+        "quote": "本轮融资由携程战投、晶科能源控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、蔚来资本、商汤战投、巨人网络、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、中关村科学城等产业资本、顶 级财务机构和国资联合投资",
+        "quote_hash": "0a43f921724f41901e442cb1d064affb54f8038996ff500e1581796265feab67"
       }
     ]
   }

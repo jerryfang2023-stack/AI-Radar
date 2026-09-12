@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "fde": [
     {
@@ -9762,28 +9762,32 @@
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 100,
-      "original_sources": 90,
-      "valid_claims": 16,
+      "raw_documents": 114,
+      "original_sources": 104,
+      "valid_claims": 24,
       "observations": 1,
-      "canonical_events": 9,
+      "canonical_events": 16,
       "blocker_counts": {
-        "no_source_bounded_claim": 2,
+        "rumor_requires_primary_confirmation": 2,
+        "source_published_after_data_date": 1,
+        "historical_terra_extraction_not_accepted": 2,
+        "event_not_ai_relevant": 3,
+        "domestic_publication_date_unverified": 1,
         "event_entity_unresolved": 1,
         "no_source_bounded_event": 12,
+        "no_source_bounded_claim": 1,
         "source_outside_daily_window": 57,
         "non_event_or_index_title": 5,
         "opinion_without_source_bounded_event": 1,
         "community_source_requires_original_event_source": 2,
-        "rumor_requires_primary_confirmation": 1,
         "raw_source_quality_block": 9,
         "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.9,
-        "valid_claim_rate": 0.16,
-        "observation_rate": 0.0625,
-        "event_conversion_rate": 0.5625
+        "original_source_rate": 0.9122807017543859,
+        "valid_claim_rate": 0.21052631578947367,
+        "observation_rate": 0.041666666666666664,
+        "event_conversion_rate": 0.6666666666666666
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/monitoring-funnel.json"
     }

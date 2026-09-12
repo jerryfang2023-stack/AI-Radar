@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-697fcc0a6e31ac",
@@ -20,21 +20,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
-    "first_disclosed_at": "2026-04-16",
-    "latest_disclosed_at": "2026-05-29",
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-01-29",
+    "latest_disclosed_at": "2026-06-15",
     "role_counts": {
-      "participant": 2
+      "historical_or_ambiguous": 1,
+      "participant": 4
     },
     "round_codes": [
+      "angel",
       "multi_round",
+      "series_b1",
       "series_c"
     ],
     "portfolio_companies": [
@@ -47,9 +50,54 @@
         "entity_id": "EN-085578b03da7d660",
         "canonical_entity_id": "",
         "name": "墨芯人工智能科技（深圳）有限公司"
+      },
+      {
+        "entity_id": "EN-0a5667ab6d63725e",
+        "canonical_entity_id": "",
+        "name": "上海希夕智能科技有限责任公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8870698bac47582f",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B1轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-095579dd20cb4bc0",
         "funding_insight_id": "FI-f617b97f0b35118f",
@@ -87,6 +135,46 @@
             "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
             "quote": "老股东凯旋创投、创享投资、盛景嘉成共同参与",
             "quote_hash": "3cdb9ac4d7a2162b6a494f02b2e826fb5e1f4cc707e928f2fdd599cebe5ec000"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-66bbb4ce1fd795eb",
+        "funding_insight_id": "FI-b17732f34966fbc2",
+        "event_ids": [
+          "EV-c2b1af9cc8fba608"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B1轮",
+        "round_code": "series_b1",
+        "round_original": "B1轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1fb846b5355af64",
+            "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+            "source_title": "首发| 极佳视界，一个月融资25亿",
+            "source_content_hash": "60f6c8807fbce9ac",
+            "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
           }
         ]
       },
@@ -129,9 +217,57 @@
             "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b7116bc0c9b7f3c4",
+        "funding_insight_id": "FI-167a13e03322bbba",
+        "event_ids": [
+          "EV-4242ed9f08123c32"
+        ],
+        "company_entity_id": "EN-0a5667ab6d63725e",
+        "company_canonical_entity_id": "",
+        "company_name": "上海希夕智能科技有限责任公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-01-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f5cd75a049f99e1a",
+            "source_url": "https://eu.36kr.com/zh/p/3659839708259207",
+            "source_title": "重磅！新希望携手非夕科技孵化具身智能公司，天使轮斩获数千万元融资",
+            "source_content_hash": "cf0e370e96ae4b17",
+            "quote": "我们总结了本轮融资信息和该公司几大亮点： 融资金额及投资机构 融资轮次： 天使轮 融资金额： 数千万元 投资机构： 宁波北仑商贸物流投资集团领投，荣成荣鑫基金和盛景嘉成跟投 资金用途： 研发投入、产品迭代与业务推广 公司基本信息 成立时间： 2022年 公司总部： 上海市闵行区 技术亮点： 希夕智能由新希望智能设备制造有限公司、通用智能机器人头部独角兽企业非夕科技，以及初创合伙人团队联合创立。",
+            "quote_hash": "5778d26928d342a6e1526d5396db496163ff56315f2e53f65ddf05f010ce6e71"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+        "source_content_hash": "a652909321da946b",
+        "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+      },
       {
         "source_id": "FISRC-6202f2642c216aa5",
         "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
@@ -141,12 +277,28 @@
         "quote_hash": "3cdb9ac4d7a2162b6a494f02b2e826fb5e1f4cc707e928f2fdd599cebe5ec000"
       },
       {
+        "source_id": "FISRC-a1fb846b5355af64",
+        "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+        "source_title": "首发| 极佳视界，一个月融资25亿",
+        "source_content_hash": "60f6c8807fbce9ac",
+        "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+      },
+      {
         "source_id": "FISRC-4782a6093d519a4d",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
         "source_title": "极佳视界完成15亿元B1轮融资",
         "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
         "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、乾融资本、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
         "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
+      },
+      {
+        "source_id": "FISRC-f5cd75a049f99e1a",
+        "source_url": "https://eu.36kr.com/zh/p/3659839708259207",
+        "source_title": "重磅！新希望携手非夕科技孵化具身智能公司，天使轮斩获数千万元融资",
+        "source_content_hash": "cf0e370e96ae4b17",
+        "quote": "我们总结了本轮融资信息和该公司几大亮点： 融资金额及投资机构 融资轮次： 天使轮 融资金额： 数千万元 投资机构： 宁波北仑商贸物流投资集团领投，荣成荣鑫基金和盛景嘉成跟投 资金用途： 研发投入、产品迭代与业务推广 公司基本信息 成立时间： 2022年 公司总部： 上海市闵行区 技术亮点： 希夕智能由新希望智能设备制造有限公司、通用智能机器人头部独角兽企业非夕科技，以及初创合伙人团队联合创立。",
+        "quote_hash": "5778d26928d342a6e1526d5396db496163ff56315f2e53f65ddf05f010ce6e71"
       }
     ]
   }

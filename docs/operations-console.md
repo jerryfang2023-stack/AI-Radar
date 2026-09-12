@@ -1,6 +1,8 @@
 # Unified Operations Console
 
-Release baseline: OPS-V3.7.0-china-funding-quality / Skill Store v2.4.0
+Release baseline: OPS-V3.7.1-china-funding-history / Skill Store v2.4.0
+
+Historical funding quality adds a separate monthly census view: discovery rows, captured originals, verified China events, corresponding-round cards, unresolved sources and secondary-search failures. Index rows and same-company cards cannot be reported as completed financing cases. Its completion status remains independent of the daily monitor.
 
 2026-09-12 domestic monitoring release adds source-level collection diagnostics, evidence-to-event conversion, China-market verification, linked organizations/products and matched financing cards to Data Quality. Unknown values remain unknown; a domestic publisher does not establish the company's market. The independent lane shares the 08:10 dispatch with overseas monitoring. Final Closure atomically publishes the protected OPS artifact and records live hash/authentication/health checks separately from the source snapshot. See [domestic monitoring](china-funding-monitor.md) for the execution contract and first production results.
 

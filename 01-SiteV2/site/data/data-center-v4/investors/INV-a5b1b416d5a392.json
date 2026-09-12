@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-a5b1b416d5a392",
+    "name": "阿尔法公社",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-04-16",
+    "latest_disclosed_at": "2026-05-07",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-00e5330d08a779e8",
+        "canonical_entity_id": "",
+        "name": "北京共绩科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8ebbbeda4ad2263a",
+        "funding_insight_id": "FI-69f053ac44d015ab",
+        "event_ids": [
+          "EV-ada36aac02003efe"
+        ],
+        "company_entity_id": "EN-00e5330d08a779e8",
+        "company_canonical_entity_id": "",
+        "company_name": "北京共绩科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3e0fde80ebf2a574",
+            "source_url": "https://www.36kr.com/p/3799065589406724",
+            "source_title": "让算力像用电一样方便，「共绩科技」完成近亿元Pre-A轮融资丨36氪首发-36氪",
+            "source_content_hash": "b4381a675aefc3d2",
+            "quote": "本轮由春华创投、彼岸时代联合领投，力合中科、阿尔法公社跟投",
+            "quote_hash": "1c0be9460d1841fea944178964559ae2d2e24f6b0f1d032c43f990f55be4b08e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8c8e593a4fe41937",
+        "funding_insight_id": "FI-85004d0ca806b8ac",
+        "event_ids": [
+          "EV-26624896fdc6c867"
+        ],
+        "company_entity_id": "EN-3f0cfc0d9c60b562",
+        "company_canonical_entity_id": "",
+        "company_name": "智象未来（HiDream.ai）",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "5亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d78d6f795c322a1",
+            "source_url": "https://m.pedaily.cn/vc/company/679431.html",
+            "source_title": "智象未来_专注构建视觉多模态模型及应用|投资界",
+            "source_content_hash": "88f59009be0a1dca",
+            "quote": "种子轮，金额未披露，投资方阿尔法公社、多位中科大知名企业家和AI大专家，日期2023年4月7日",
+            "quote_hash": "f32535e2b965b16c73a9f331335741dd32b9e97093f98907adec014670219a45"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3e0fde80ebf2a574",
+        "source_url": "https://www.36kr.com/p/3799065589406724",
+        "source_title": "让算力像用电一样方便，「共绩科技」完成近亿元Pre-A轮融资丨36氪首发-36氪",
+        "source_content_hash": "b4381a675aefc3d2",
+        "quote": "本轮由春华创投、彼岸时代联合领投，力合中科、阿尔法公社跟投",
+        "quote_hash": "1c0be9460d1841fea944178964559ae2d2e24f6b0f1d032c43f990f55be4b08e"
+      },
+      {
+        "source_id": "FISRC-6d78d6f795c322a1",
+        "source_url": "https://m.pedaily.cn/vc/company/679431.html",
+        "source_title": "智象未来_专注构建视觉多模态模型及应用|投资界",
+        "source_content_hash": "88f59009be0a1dca",
+        "quote": "种子轮，金额未披露，投资方阿尔法公社、多位中科大知名企业家和AI大专家，日期2023年4月7日",
+        "quote_hash": "f32535e2b965b16c73a9f331335741dd32b9e97093f98907adec014670219a45"
+      }
+    ]
+  }
+}

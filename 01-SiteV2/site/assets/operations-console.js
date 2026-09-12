@@ -159,6 +159,12 @@
         <div class="mini-kpi"><span>失败请求</span><b>${list(source.failures).length}</b></div>
         <details><summary>诊断</summary><p>${html(list(source.failures).join("；") || "本次请求无错误")}</p></details></div>`).join("");
       chinaFunding.innerHTML = `${summary}${rows || '<div class="empty">国内融资独立链路尚无运行数据。</div>'}<p class="source-quality-note">${html(funding.metric_note || "与海外同批次启动，按来源独立记录。未运行数据不显示为零。")}</p>`;
+      const history = quality.chinaFundingHistory;
+      if (history?.totals) {
+        const totals = history.totals;
+        const months = list(history.months).map((month) => `<div class="source-row"><div class="source-name"><strong>${html(month.month)}</strong><em>${html(month.from)} 至 ${html(month.to)}</em></div><div class="mini-kpi"><span>索引线索</span><b>${number(month.discovered_cases)}</b></div><div class="mini-kpi"><span>已获原文</span><b>${number(month.captured_cases)}</b></div><div class="mini-kpi"><span>核验中国区</span><b>${number(month.verified_china_cases)}</b></div><div class="mini-kpi"><span>关联本轮卡片</span><b>${number(month.card_cases)}</b></div><div class="mini-kpi"><span>待核验或补齐</span><b>${number(month.pending_cases)}</b></div></div>`).join("");
+        chinaFunding.innerHTML += `<h3>2026 国内融资历史补采</h3><p>${html(history.from)} 至 ${html(history.to)} · ${history.status === "completed" ? "已完成核验" : history.status === "processed_with_gaps" ? "本轮已处理，仍有证据缺口" : "正在补采与核验"} · 索引 ${number(history.index_pages)} 页${history.historical_boundary_reached ? "，已覆盖年初边界" : "，年初边界未完成"}</p><div class="source-summary"><span>案例线索<b>${number(totals.index_cases)}</b></span><span>已有原文<b>${number(totals.cases_with_captured_originals)}</b></span><span>核验中国区融资<b>${number(totals.cases_with_verified_china_event)}</b></span><span>已有本轮卡片<b>${number(totals.cases_with_exact_cards)}</b></span><span>原文未找到<b>${number(totals.unresolved_originals)}</b></span><span>二次检索失败<b>${number(totals.secondary_search_failures)}</b></span></div>${months}<p class="source-quality-note">${html(history.metric_note)}</p>`;
+      }
     }
     const matrix = $("[data-asset-matrix]");
     if (matrix) {

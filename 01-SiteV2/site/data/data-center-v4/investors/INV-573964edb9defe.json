@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-573964edb9defe",
+    "name": "蓝色光标",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-14",
+    "latest_disclosed_at": "2026-08-28",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-964f260c9a904091",
+        "canonical_entity_id": "",
+        "name": "爱诗科技"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ccb77f6242c8b81b",
+        "funding_insight_id": "FI-1b4327c7d35c5dad",
+        "event_ids": [
+          "EV-f6c882e143c0d634"
+        ],
+        "company_entity_id": "EN-086c739ca6223458",
+        "company_canonical_entity_id": "",
+        "company_name": "北京清蓝智汇科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fa0e608145757727",
+            "source_url": "https://www.pureblueai.com/about-us",
+            "source_title": "关于我们—PureblueAI清蓝-算法驱动的下一代 AI 营销引擎",
+            "source_content_hash": "7bc2a6cca71b83c7",
+            "quote": "2025年8月，获得由英诺基金与蓝色光标共同领投、水木清华校友种子基金跟投的超千万元人民币种子轮融资。",
+            "quote_hash": "ba70f63514e78ae06332f0fd6df2d0eb9ea7119ae333ecdd8a8872b864609965"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8dd71f60b71a9480",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9476e3eff9c1e8fe",
+            "source_url": "https://news.pedaily.cn/202607/566238.shtml",
+            "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型",
+            "source_content_hash": "31557c2904ef4cb8",
+            "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
+            "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-fa0e608145757727",
+        "source_url": "https://www.pureblueai.com/about-us",
+        "source_title": "关于我们—PureblueAI清蓝-算法驱动的下一代 AI 营销引擎",
+        "source_content_hash": "7bc2a6cca71b83c7",
+        "quote": "2025年8月，获得由英诺基金与蓝色光标共同领投、水木清华校友种子基金跟投的超千万元人民币种子轮融资。",
+        "quote_hash": "ba70f63514e78ae06332f0fd6df2d0eb9ea7119ae333ecdd8a8872b864609965"
+      },
+      {
+        "source_id": "FISRC-9476e3eff9c1e8fe",
+        "source_url": "https://news.pedaily.cn/202607/566238.shtml",
+        "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型",
+        "source_content_hash": "31557c2904ef4cb8",
+        "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
+        "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
+      }
+    ]
+  }
+}

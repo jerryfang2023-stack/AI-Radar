@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-c3d94870c20cef",
@@ -21,7 +21,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN",
@@ -29,10 +29,10 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-18",
+    "first_disclosed_at": "2026-06-03",
     "latest_disclosed_at": "2026-06-22",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -125,6 +125,46 @@
             "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
           }
         ]
+      },
+      {
+        "activity_id": "IA-246869fa2032d019",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "2025年3月，5.28亿元Pre-A轮融资出炉，由阿美风险投资旗下Prosperity7 Ventures（P7）领投",
+            "quote_hash": "00d032ce01998fc3009e7662c7071edca6119fd19c4482cc7e193431f8df2ea5"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -143,7 +183,27 @@
         "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
         "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
         "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
+      },
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "2025年3月，5.28亿元Pre-A轮融资出炉，由阿美风险投资旗下Prosperity7 Ventures（P7）领投",
+        "quote_hash": "00d032ce01998fc3009e7662c7071edca6119fd19c4482cc7e193431f8df2ea5"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[2].role": {
+          "text": "Pre-A轮领投",
+          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }

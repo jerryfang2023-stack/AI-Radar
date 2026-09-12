@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-00e2a65939d3e211",
+    "name": "投资界AI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ac5e79d96a009ee1",
+      "EV-7f9ba35c163b3a90",
+      "EV-32beac4380d1b253"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-04-30",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-ac5e79d96a009ee1",
+        "EV-7f9ba35c163b3a90",
+        "EV-32beac4380d1b253"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-ac5e79d96a009ee1",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-4e781f6e9e5a49bc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d83632e023cb998e",
+            "fundingInsightId": "FI-7cb1e10091f045eb"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "industrials",
+            "name": "工业",
+            "entityIds": [
+              "EN-4e781f6e9e5a49bc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c395be240cfac112",
+            "fundingInsightId": "FI-7cb1e10091f045eb"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-4e781f6e9e5a49bc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-86ff5eee9b70baf2",
+            "fundingInsightId": "FI-7cb1e10091f045eb"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-4e781f6e9e5a49bc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8443c2f3d6a0c780",
+            "fundingInsightId": "FI-7cb1e10091f045eb"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-4e781f6e9e5a49bc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f0e847503f10a37f",
+            "fundingInsightId": "FI-7cb1e10091f045eb"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-4e781f6e9e5a49bc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-18f7a59afdd78149",
+            "fundingInsightId": "FI-7cb1e10091f045eb"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-4e781f6e9e5a49bc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d7029a3760cf65b9",
+            "fundingInsightId": "FI-7cb1e10091f045eb"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-4e781f6e9e5a49bc"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f7ac31474af515a7",
+            "fundingInsightId": "FI-7cb1e10091f045eb"
+          }
+        ],
+        "entityIds": [
+          "EN-00e2a65939d3e211",
+          "EN-4e781f6e9e5a49bc"
+        ]
+      },
+      {
+        "id": "EV-7f9ba35c163b3a90",
+        "dataDate": "2026-09-12",
+        "date": "2026-08-18",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "思昇科技获种子+轮融资，清华95后投身脑机接口",
+        "displayTags": [],
+        "entityIds": [
+          "EN-00e2a65939d3e211",
+          "EN-ca84c47424db2506"
+        ]
+      },
+      {
+        "id": "EV-32beac4380d1b253",
+        "dataDate": "2026-09-12",
+        "date": "2026-04-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "一位台湾女生上海创业：MONTEE AI完成首轮融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b705fb4de1e92bca",
+          "EN-00e2a65939d3e211"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

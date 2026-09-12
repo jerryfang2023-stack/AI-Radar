@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-12e79cbcd506d5",
+    "name": "博原资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-15",
+    "latest_disclosed_at": "2026-05-15",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-0a2f10a137375779",
+        "canonical_entity_id": "",
+        "name": "博银合创科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6934d9943294a226",
+        "funding_insight_id": "FI-455a4e981dbf0aee",
+        "event_ids": [
+          "EV-b66e26c3852d5ba3"
+        ],
+        "company_entity_id": "EN-0a2f10a137375779",
+        "company_canonical_entity_id": "",
+        "company_name": "博银合创科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "3亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿元"
+        },
+        "announced_at": "2026-05-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-957ccf12eb78ad84",
+            "source_url": "https://news.pedaily.cn/202605/563918.shtml",
+            "source_title": "博银合创完成近3亿元人民币Pre-A轮融资，加速工业具身智能规模化落地",
+            "source_content_hash": "fbab2d3a3502d2d8",
+            "quote": "本轮融资由 元禾辰坤领投，博原资本、博世创投 等老股东追加投资， 元禾控股、金谷资本 等多家机构跟投。",
+            "quote_hash": "5834c5ba243ef0633917ac76154b2c5b967c085df3dbe6e5017708196318f003"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-957ccf12eb78ad84",
+        "source_url": "https://news.pedaily.cn/202605/563918.shtml",
+        "source_title": "博银合创完成近3亿元人民币Pre-A轮融资，加速工业具身智能规模化落地",
+        "source_content_hash": "fbab2d3a3502d2d8",
+        "quote": "本轮融资由 元禾辰坤领投，博原资本、博世创投 等老股东追加投资， 元禾控股、金谷资本 等多家机构跟投。",
+        "quote_hash": "5834c5ba243ef0633917ac76154b2c5b967c085df3dbe6e5017708196318f003"
+      }
+    ]
+  }
+}

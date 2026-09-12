@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-55b4d1118f8588",
+    "name": "稼沃资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-07-20",
+    "latest_disclosed_at": "2026-07-20",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-08bc533404ccdba4",
+        "funding_insight_id": "FI-0d067fba091b1b60",
+        "event_ids": [
+          "EV-d1d7212194b63b0b"
+        ],
+        "company_entity_id": "EN-eace5f143f78a8cb",
+        "company_canonical_entity_id": "",
+        "company_name": "上海算模算样科技有限公司",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c85560272b80b0a0",
+            "source_url": "https://finance.sina.com.cn/stock/t/2026-01-05/doc-inhfhavn6757476.shtml",
+            "source_title": "红熊AI完成8000万元Pre-A+轮融资，2025年全年确收1.35亿元|AI_新浪财经_新浪网",
+            "source_content_hash": "6283ceb69b58d1ad",
+            "quote": "本轮融资由天使轮投资人陈泳潮与华禹创投领投，格睿丰投资、库维尔基金、稼沃资本跟投。",
+            "quote_hash": "5c1ddc1c7182a4a2f5184146029c3c33367b858dbbeacf2e70466b9c3af58c9b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c85560272b80b0a0",
+        "source_url": "https://finance.sina.com.cn/stock/t/2026-01-05/doc-inhfhavn6757476.shtml",
+        "source_title": "红熊AI完成8000万元Pre-A+轮融资，2025年全年确收1.35亿元|AI_新浪财经_新浪网",
+        "source_content_hash": "6283ceb69b58d1ad",
+        "quote": "本轮融资由天使轮投资人陈泳潮与华禹创投领投，格睿丰投资、库维尔基金、稼沃资本跟投。",
+        "quote_hash": "5c1ddc1c7182a4a2f5184146029c3c33367b858dbbeacf2e70466b9c3af58c9b"
+      }
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Pre-A+轮跟投",
+          "source_hash": "2ba800e67502e50c8bc3abc5c77e58e95140b22a7085ec75b84358c8e714c811",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:51.670Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

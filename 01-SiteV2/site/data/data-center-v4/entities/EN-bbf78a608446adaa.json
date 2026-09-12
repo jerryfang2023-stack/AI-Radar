@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "entity": {
     "id": "EN-bbf78a608446adaa",
@@ -22,16 +22,18 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d8a695a93ca4382e",
       "EV-f5731a2a3acc652f"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-08",
-    "lastSeen": "2026-09-09",
+    "lastSeen": "2026-09-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-d8a695a93ca4382e",
         "EV-f5731a2a3acc652f"
       ],
       "deployments": [],
@@ -42,6 +44,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d8a695a93ca4382e",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "深度智控获亿元融资，宁德时代助力物理AI发展",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9eac0aba91998d1f",
+          "EN-bbf78a608446adaa"
+        ]
+      },
       {
         "id": "EV-f5731a2a3acc652f",
         "dataDate": "2026-09-09",

@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-07bc6c3db6e6b1",
+    "name": "源码资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-07-09",
+    "latest_disclosed_at": "2026-09-08",
+    "role_counts": {
+      "participant": 3
+    },
+    "round_codes": [
+      "angel",
+      "series_b",
+      "series_b_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-4e781f6e9e5a49bc",
+        "canonical_entity_id": "",
+        "name": "深度智控"
+      },
+      {
+        "entity_id": "EN-a3802b1f5a583189",
+        "canonical_entity_id": "",
+        "name": "深圳墨奇智能技术有限公司"
+      },
+      {
+        "entity_id": "EN-f6aaf378a6d9e724",
+        "canonical_entity_id": "",
+        "name": "深圳市深度智控科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ab2aa42d13a094c1",
+        "funding_insight_id": "FI-fae9478ac0e65316",
+        "event_ids": [
+          "EV-ac5e79d96a009ee1"
+        ],
+        "company_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_canonical_entity_id": "",
+        "company_name": "深度智控",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ac5a938b8fdef1a9",
+            "source_url": "https://news.pedaily.cn/202609/568645.shtml",
+            "source_title": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI",
+            "source_content_hash": "38c6d5b49c2072e5",
+            "quote": "本轮融资由宁德时代领投，阿美投资 Aramco Ventures战略投资，太平创新投资、广发信德、复星创富等跟投，源码资本、光远资本等老股东持续追加。",
+            "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-19bc1d52e2cb16df",
+        "funding_insight_id": "FI-0cab7e240eb542ce",
+        "event_ids": [
+          "EV-e85e6fc6d630d56c"
+        ],
+        "company_entity_id": "EN-a3802b1f5a583189",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳墨奇智能技术有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bea9d0be613bc1cd",
+            "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+            "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+            "source_content_hash": "311224a4dfb089df",
+            "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+            "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0344349c69e5cfcd",
+        "funding_insight_id": "FI-c524ab52173a64d8",
+        "event_ids": [
+          "EV-c6437ac13cb07531"
+        ],
+        "company_entity_id": "EN-f6aaf378a6d9e724",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳市深度智控科技有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-03cb69a63e7d787b",
+            "source_url": "https://news.pedaily.cn/202607/566034.shtml",
+            "source_title": "物理 AI 企业深度智控（DeepCtrls）完成数亿元 B 轮融资",
+            "source_content_hash": "549472ef08c4ac5a",
+            "quote": "本轮融资由 晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续加码",
+            "quote_hash": "76ef591c6d4ca616ce480398a2ba71d5279671714499b7bb2d71a8a86d3f652d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ac5a938b8fdef1a9",
+        "source_url": "https://news.pedaily.cn/202609/568645.shtml",
+        "source_title": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI",
+        "source_content_hash": "38c6d5b49c2072e5",
+        "quote": "本轮融资由宁德时代领投，阿美投资 Aramco Ventures战略投资，太平创新投资、广发信德、复星创富等跟投，源码资本、光远资本等老股东持续追加。",
+        "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
+      },
+      {
+        "source_id": "FISRC-bea9d0be613bc1cd",
+        "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+        "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+        "source_content_hash": "311224a4dfb089df",
+        "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+        "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+      },
+      {
+        "source_id": "FISRC-03cb69a63e7d787b",
+        "source_url": "https://news.pedaily.cn/202607/566034.shtml",
+        "source_title": "物理 AI 企业深度智控（DeepCtrls）完成数亿元 B 轮融资",
+        "source_content_hash": "549472ef08c4ac5a",
+        "quote": "本轮融资由 晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续加码",
+        "quote_hash": "76ef591c6d4ca616ce480398a2ba71d5279671714499b7bb2d71a8a86d3f652d"
+      }
+    ]
+  }
+}

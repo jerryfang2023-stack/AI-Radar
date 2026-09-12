@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-e703ec5004999d",
+    "name": "四川文投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-04-27",
+    "latest_disclosed_at": "2026-08-24",
+    "role_counts": {
+      "historical_or_ambiguous": 2
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-120b8d841f480397",
+        "funding_insight_id": "FI-c30743074ff47419",
+        "event_ids": [
+          "EV-07d112b2a4c980d2"
+        ],
+        "company_entity_id": "EN-8eacc6bab17d7e7f",
+        "company_canonical_entity_id": "",
+        "company_name": "北京中数睿智科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d2d4022c60030f2",
+            "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+            "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+            "source_content_hash": "fd43c36630768ac3",
+            "quote": "2025年，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
+            "quote_hash": "ce00fdb7ec135ede2663793c8b77c571b190f97a67145c1d8017b995a29dc1f8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a74887c9ffa563f8",
+        "funding_insight_id": "FI-4b888f8e02ba6a7c",
+        "event_ids": [
+          "EV-ac5e33e067906a6d"
+        ],
+        "company_entity_id": "EN-a675d46aba3c7e48",
+        "company_canonical_entity_id": "",
+        "company_name": "北京中数睿智科技有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "亿元级别",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-04-27",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年7月A+轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a57106724774253f",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvwwmk9150394.shtml",
+            "source_title": "首发| 清华女博士带队，中数睿智又融资数亿",
+            "source_content_hash": "9491841eabf55f1c",
+            "quote": "2025年7月，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
+            "quote_hash": "840d17d170fdecea23cdc2ba674c6744b4378982010197f4b78232634fa16b3e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9d2d4022c60030f2",
+        "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+        "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+        "source_content_hash": "fd43c36630768ac3",
+        "quote": "2025年，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
+        "quote_hash": "ce00fdb7ec135ede2663793c8b77c571b190f97a67145c1d8017b995a29dc1f8"
+      },
+      {
+        "source_id": "FISRC-a57106724774253f",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvwwmk9150394.shtml",
+        "source_title": "首发| 清华女博士带队，中数睿智又融资数亿",
+        "source_content_hash": "9491841eabf55f1c",
+        "quote": "2025年7月，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
+        "quote_hash": "840d17d170fdecea23cdc2ba674c6744b4378982010197f4b78232634fa16b3e"
+      }
+    ]
+  }
+}

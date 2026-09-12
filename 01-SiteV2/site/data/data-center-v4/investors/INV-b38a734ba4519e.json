@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-b38a734ba4519e",
+    "name": "白云建科",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-01-12",
+    "latest_disclosed_at": "2026-01-12",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ad691fd49d3307e8",
+        "canonical_entity_id": "",
+        "name": "广州九爪智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0e66406799b926f1",
+        "funding_insight_id": "FI-db39264fd50af8fa",
+        "event_ids": [
+          "EV-843f0807558b3d10"
+        ],
+        "company_entity_id": "EN-ad691fd49d3307e8",
+        "company_canonical_entity_id": "",
+        "company_name": "广州九爪智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-01-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-11805a259de5b45c",
+            "source_url": "https://news.pedaily.cn/202601/559747.shtml",
+            "source_title": "九爪智能完成数千万Pre-A轮融资，白云金控、白云建科联合投资",
+            "source_content_hash": "0a3303471dd1ee69",
+            "quote": "由 白云金控、白云建科联合投资",
+            "quote_hash": "895fead99a3358d0ba37aaf9ef754e1e5e066f798a74ccbacc2835e9ea7971d0"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-11805a259de5b45c",
+        "source_url": "https://news.pedaily.cn/202601/559747.shtml",
+        "source_title": "九爪智能完成数千万Pre-A轮融资，白云金控、白云建科联合投资",
+        "source_content_hash": "0a3303471dd1ee69",
+        "quote": "由 白云金控、白云建科联合投资",
+        "quote_hash": "895fead99a3358d0ba37aaf9ef754e1e5e066f798a74ccbacc2835e9ea7971d0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-dfed0334bb6542",
+    "name": "中信建投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-05-19",
+    "latest_disclosed_at": "2026-05-19",
+    "role_counts": {
+      "other_current_round": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-4ad230340ce031eb",
+        "canonical_entity_id": "",
+        "name": "杭州拓深科技有限公司"
+      },
+      {
+        "entity_id": "EN-01561a50fe5ad8f9",
+        "canonical_entity_id": "",
+        "name": "杭州拓深科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a560cc783ff2af42",
+        "funding_insight_id": "FI-845e8798fb653c28",
+        "event_ids": [
+          "EV-69ac49d771d3b778"
+        ],
+        "company_entity_id": "EN-4ad230340ce031eb",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州拓深科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-05-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1b3adf614ab55007",
+            "source_url": "https://news.pedaily.cn/202605/564066.shtml",
+            "source_title": "拓深科技完成数亿元新一轮融资，深入布局算电协同赛道",
+            "source_content_hash": "f9d17aa55f30fbc9",
+            "quote": "本轮融资由 元璟资本、浙商创投、诺铁资本、东方嘉富、中信建投、上城资本、远至资本及老股东博将资本 继续追加投资等联合投资。",
+            "quote_hash": "fd8e6d4e04112c7e2791d613e0ea674a3ac7538a03d1983f71e57216ca8225da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3b688f01a2f729d0",
+        "funding_insight_id": "FI-496aa1ba707be2de",
+        "event_ids": [
+          "EV-f9b346bec4251166"
+        ],
+        "company_entity_id": "EN-01561a50fe5ad8f9",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州拓深科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-05-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-cd431aa7995784b8",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-05-19/doc-inhymivm2234929.shtml",
+            "source_title": "拓深科技完成数亿元新一轮融资，深入布局算电协同赛道",
+            "source_content_hash": "943ec05ff0ae3084",
+            "quote": "本轮融资由 元璟资本、浙商创投、诺铁资本、东方嘉富、 中信建投 、上城资本、远至资本及老股东博将资本 继续追加投资等联合投资",
+            "quote_hash": "cf88ea1634b7c99b6543178af144cdd6addbe524bc4c697f33e09466ee5ff5bf"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1b3adf614ab55007",
+        "source_url": "https://news.pedaily.cn/202605/564066.shtml",
+        "source_title": "拓深科技完成数亿元新一轮融资，深入布局算电协同赛道",
+        "source_content_hash": "f9d17aa55f30fbc9",
+        "quote": "本轮融资由 元璟资本、浙商创投、诺铁资本、东方嘉富、中信建投、上城资本、远至资本及老股东博将资本 继续追加投资等联合投资。",
+        "quote_hash": "fd8e6d4e04112c7e2791d613e0ea674a3ac7538a03d1983f71e57216ca8225da"
+      },
+      {
+        "source_id": "FISRC-cd431aa7995784b8",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-05-19/doc-inhymivm2234929.shtml",
+        "source_title": "拓深科技完成数亿元新一轮融资，深入布局算电协同赛道",
+        "source_content_hash": "943ec05ff0ae3084",
+        "quote": "本轮融资由 元璟资本、浙商创投、诺铁资本、东方嘉富、 中信建投 、上城资本、远至资本及老股东博将资本 继续追加投资等联合投资",
+        "quote_hash": "cf88ea1634b7c99b6543178af144cdd6addbe524bc4c697f33e09466ee5ff5bf"
+      }
+    ]
+  }
+}

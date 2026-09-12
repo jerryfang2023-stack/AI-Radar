@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-f308c51c730aec",
+    "name": "国方创新",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-03-11",
+    "latest_disclosed_at": "2026-03-11",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a_plus_plus_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-8b332ded81dc8d3a",
+        "canonical_entity_id": "",
+        "name": "光轮智能"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-bf791ece9fded0d5",
+        "funding_insight_id": "FI-760eeaf9e5c0fb90",
+        "event_ids": [
+          "EV-3632f9193a3f3f28"
+        ],
+        "company_entity_id": "EN-8b332ded81dc8d3a",
+        "company_canonical_entity_id": "",
+        "company_name": "光轮智能",
+        "round": "A+++轮",
+        "round_code": "series_a_plus_plus_plus",
+        "round_original": "A+++轮",
+        "amount_original": "10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a7ac3aedf1b697d8",
+            "source_url": "https://news.pedaily.cn/202603/561585.shtml",
+            "source_title": "合成数据企业「光轮智能」完成10亿元融资",
+            "source_content_hash": "668f58f50193e7a9",
+            "quote": "本轮融资引入多家产业场景方及财务机构，包括 新希望集团、鼎邦投资（三安光电董事长家族办公室）、奥克斯、鼎石资管 等产业投资方，以及 建投华科、国方创新、道禾长期投资、清新资本 等财务投资机构。",
+            "quote_hash": "41d6c3188c9986e479c68e45629be28b3168e3539bcec1e8c8610bf502d45a21"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a7ac3aedf1b697d8",
+        "source_url": "https://news.pedaily.cn/202603/561585.shtml",
+        "source_title": "合成数据企业「光轮智能」完成10亿元融资",
+        "source_content_hash": "668f58f50193e7a9",
+        "quote": "本轮融资引入多家产业场景方及财务机构，包括 新希望集团、鼎邦投资（三安光电董事长家族办公室）、奥克斯、鼎石资管 等产业投资方，以及 建投华科、国方创新、道禾长期投资、清新资本 等财务投资机构。",
+        "quote_hash": "41d6c3188c9986e479c68e45629be28b3168e3539bcec1e8c8610bf502d45a21"
+      }
+    ]
+  }
+}

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-04ec8d15c2250d",
@@ -20,17 +20,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-07-13",
-    "latest_disclosed_at": "2026-07-13",
+    "latest_disclosed_at": "2026-08-25",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
@@ -38,12 +39,57 @@
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-e9c2b868dc8f92df",
+        "canonical_entity_id": "",
+        "name": "格通智联技术（上海）有限公司"
+      },
+      {
         "entity_id": "EN-7f505bc9744206fd",
         "canonical_entity_id": "",
         "name": "上海灵睿智芯计算技术有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-be10f3912b6996cc",
+        "funding_insight_id": "FI-852e4f68397a135a",
+        "event_ids": [
+          "EV-2a2f79242a9479e7"
+        ],
+        "company_entity_id": "EN-e9c2b868dc8f92df",
+        "company_canonical_entity_id": "",
+        "company_name": "格通智联技术（上海）有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2a3446f702110142",
+            "source_url": "https://news.pedaily.cn/202608/568060.shtml",
+            "source_title": "格通智联完成数亿元Pre A轮融资",
+            "source_content_hash": "98c49c9e9931e708",
+            "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
+            "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d70fa0a920ffce1c",
         "funding_insight_id": "FI-3923d1a4fc2b8a40",
@@ -86,6 +132,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2a3446f702110142",
+        "source_url": "https://news.pedaily.cn/202608/568060.shtml",
+        "source_title": "格通智联完成数亿元Pre A轮融资",
+        "source_content_hash": "98c49c9e9931e708",
+        "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
+        "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
+      },
       {
         "source_id": "FISRC-760e793448781182",
         "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",

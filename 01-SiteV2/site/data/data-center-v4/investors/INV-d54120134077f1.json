@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-d54120134077f1",
+    "name": "渝富高质产业母基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "government_fund",
+    "investor_kind_label": "政府或主权基金",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-08-18",
+    "latest_disclosed_at": "2026-08-18",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-a00b4c59ee4aeb2f",
+        "funding_insight_id": "FI-1be3fdfbcf712dbf",
+        "event_ids": [
+          "EV-2e214ba5a4504809"
+        ],
+        "company_entity_id": "EN-85e373a2452916cf",
+        "company_canonical_entity_id": "",
+        "company_name": "硕橙（厦门）科技有限公司",
+        "round": "D+轮",
+        "round_code": "series_d_plus",
+        "round_original": "D+轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-08-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "D轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c00e3514a8fe23f2",
+            "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
+            "source_title": "硕橙科技 | 项目信息-36氪",
+            "source_content_hash": "03b52d98e682698a",
+            "quote": "D轮 2025-12 过亿人民币 厦门国兴投资 ， 渝富高质产业母基金 ， 飞图创投 ， 兴证资本",
+            "quote_hash": "09cb9e2523380f0b2eb0586ac2a30d1d2528d377f5867ffeb37702d0e2be27a2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c00e3514a8fe23f2",
+        "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
+        "source_title": "硕橙科技 | 项目信息-36氪",
+        "source_content_hash": "03b52d98e682698a",
+        "quote": "D轮 2025-12 过亿人民币 厦门国兴投资 ， 渝富高质产业母基金 ， 飞图创投 ， 兴证资本",
+        "quote_hash": "09cb9e2523380f0b2eb0586ac2a30d1d2528d377f5867ffeb37702d0e2be27a2"
+      }
+    ]
+  }
+}

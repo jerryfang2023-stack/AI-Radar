@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-1ba06d944ea01c",
+    "name": "集富亚洲",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-03-24",
+    "latest_disclosed_at": "2026-03-24",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "angel_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a43f157d208b2a63",
+        "canonical_entity_id": "",
+        "name": "开物纪"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6e0712c143677d7e",
+        "funding_insight_id": "FI-815e0d2563a8b10f",
+        "event_ids": [
+          "EV-9832526435c1695e"
+        ],
+        "company_entity_id": "EN-a43f157d208b2a63",
+        "company_canonical_entity_id": "",
+        "company_name": "开物纪",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-03-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d10ec9bd5ef3ad4",
+            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+            "source_content_hash": "d5d8d61ad1133bc1",
+            "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+            "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+        "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+      }
+    ]
+  }
+}

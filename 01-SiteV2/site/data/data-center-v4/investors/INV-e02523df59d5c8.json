@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-e02523df59d5c8",
+    "name": "杭州资本旗下“润苗基金”",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-29",
+    "latest_disclosed_at": "2026-05-29",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d9b679dae255b189",
+        "canonical_entity_id": "",
+        "name": "杭州易启未来智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-d2716ca0410a0501",
+        "funding_insight_id": "FI-f85557a8fbd55ef2",
+        "event_ids": [
+          "EV-71fc51b3d8e89851"
+        ],
+        "company_entity_id": "EN-d9b679dae255b189",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州易启未来智能科技有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-88e104fba08edb35",
+            "source_url": "https://www.sohu.com/a/1029488708_100032554",
+            "source_title": "易启未来完成数千万元A轮融资：聚焦按摩机器人",
+            "source_content_hash": "ea9384dd84819d0d",
+            "quote": "本轮融资由同创伟业、优山资本、杭州资本旗下“润苗基金”等联合投资",
+            "quote_hash": "b612d7d540b2dee8276071e95117f2c62f9bf3e5eb5250baf27f125f9ae3d115"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-88e104fba08edb35",
+        "source_url": "https://www.sohu.com/a/1029488708_100032554",
+        "source_title": "易启未来完成数千万元A轮融资：聚焦按摩机器人",
+        "source_content_hash": "ea9384dd84819d0d",
+        "quote": "本轮融资由同创伟业、优山资本、杭州资本旗下“润苗基金”等联合投资",
+        "quote_hash": "b612d7d540b2dee8276071e95117f2c62f9bf3e5eb5250baf27f125f9ae3d115"
+      }
+    ]
+  }
+}

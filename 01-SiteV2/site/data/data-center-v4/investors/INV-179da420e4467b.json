@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-179da420e4467b",
+    "name": "上海国有资本投资有限公司",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-01-26",
+    "latest_disclosed_at": "2026-01-26",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-84bc68cda8cf59c9",
+        "funding_insight_id": "FI-18465dcaeebdf656",
+        "event_ids": [
+          "EV-df37e9341b5c7f04"
+        ],
+        "company_entity_id": "EN-f0d59425e4c32abb",
+        "company_canonical_entity_id": "",
+        "company_name": "阶跃星辰（StepFun）",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "50 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮核心投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c9e96fcafd6e74f",
+            "source_url": "https://m.cls.cn/detail/2269386",
+            "source_title": "印奇出任董事长！阶跃星辰超50亿融资刷新大模型赛道纪录 将加码“AI+终端”",
+            "source_content_hash": "473fdcfe679ea03a",
+            "quote": "2024年12月，阶跃星辰宣布完成B轮融资，总融资金额达数亿美元，核心投资方包括上海国有资本投资有限公司及其旗下基金",
+            "quote_hash": "93d2e2316ba8436d3b9c2060917fe404b1442c07ba94f061daf0888fdf6e76e2"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-6c9e96fcafd6e74f",
+        "source_url": "https://m.cls.cn/detail/2269386",
+        "source_title": "印奇出任董事长！阶跃星辰超50亿融资刷新大模型赛道纪录 将加码“AI+终端”",
+        "source_content_hash": "473fdcfe679ea03a",
+        "quote": "2024年12月，阶跃星辰宣布完成B轮融资，总融资金额达数亿美元，核心投资方包括上海国有资本投资有限公司及其旗下基金",
+        "quote_hash": "93d2e2316ba8436d3b9c2060917fe404b1442c07ba94f061daf0888fdf6e76e2"
+      }
+    ]
+  }
+}

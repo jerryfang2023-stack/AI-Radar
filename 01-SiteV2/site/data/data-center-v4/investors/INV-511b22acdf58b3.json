@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-511b22acdf58b3",
@@ -20,30 +20,162 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-02-23",
+    "latest_disclosed_at": "2026-09-07",
     "role_counts": {
-      "participant": 1
+      "lead": 1,
+      "participant": 3
     },
     "round_codes": [
-      "series_b"
+      "series_b",
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-d1d137efd55a338c",
+        "canonical_entity_id": "",
+        "name": "合肥中科类脑智能技术有限公司"
+      },
+      {
         "entity_id": "EN-ce22f929f4a17467",
+        "canonical_entity_id": "",
+        "name": "智平方（AI² Robotics）"
+      },
+      {
+        "entity_id": "EN-90596b71813a2ee2",
         "canonical_entity_id": "",
         "name": "智平方（AI² Robotics）"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4396ffce478b04ec",
+        "funding_insight_id": "FI-2f0db3ea179be704",
+        "event_ids": [
+          "EV-3a467bfb6d9b1b52"
+        ],
+        "company_entity_id": "EN-d1d137efd55a338c",
+        "company_canonical_entity_id": "",
+        "company_name": "合肥中科类脑智能技术有限公司",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ccc6923f9f7ac18",
+            "source_url": "https://news.pedaily.cn/202609/568582.shtml",
+            "source_title": "中科类脑完成数亿元B+轮战略融资，助力产业数智升级",
+            "source_content_hash": "1553ea551029de53",
+            "quote": "本轮融资由 央企产业龙头旗下中车资本 领投， 银杏谷资本、水木基金、启迪基金 等机构跟投。",
+            "quote_hash": "6170f8c034beb908a5ee3c538a1a8c56cce2b0b5488e2ee791c6b010078b0354"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9121fd512c09fa22",
+        "funding_insight_id": "FI-0421ad5a685ba3b0",
+        "event_ids": [
+          "EV-7620153f4892a0af"
+        ],
+        "company_entity_id": "EN-ce22f929f4a17467",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（深圳）科技股份有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-04-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-16a5b9f7da3616f3",
+            "source_url": "https://www.robothub.app/zh/companies/zhipingfang",
+            "source_title": "智平方 - 人形机器人公司资料、融资、产品与估值 | RobotHub",
+            "source_content_hash": "52cc6aa7a44aacaf",
+            "quote": "B轮 ¥10.0亿 ¥96.6亿 2026年2月 百度战投、中车资本、宇信科技、森麒麟、沄柏资本、国泰海通基金",
+            "quote_hash": "d8f95d0e975a73eea9bd213facbdb3cf36b652d63a09a1eecfba2973b029d3ba"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dbedead6e1ad0678",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "投资方颇为豪华：中车资本、百度战投、沄柏资本、国泰海通、多家特斯拉生态链龙头企业及地方基金等。",
+            "quote_hash": "b7bfc4b1670290ef7843f08b9b77bb137831c80b06e105818fc5e8434c25b2da"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9f7eff442df99fde",
         "funding_insight_id": "FI-39ef2aaaed606bfe",
@@ -86,6 +218,30 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1ccc6923f9f7ac18",
+        "source_url": "https://news.pedaily.cn/202609/568582.shtml",
+        "source_title": "中科类脑完成数亿元B+轮战略融资，助力产业数智升级",
+        "source_content_hash": "1553ea551029de53",
+        "quote": "本轮融资由 央企产业龙头旗下中车资本 领投， 银杏谷资本、水木基金、启迪基金 等机构跟投。",
+        "quote_hash": "6170f8c034beb908a5ee3c538a1a8c56cce2b0b5488e2ee791c6b010078b0354"
+      },
+      {
+        "source_id": "FISRC-16a5b9f7da3616f3",
+        "source_url": "https://www.robothub.app/zh/companies/zhipingfang",
+        "source_title": "智平方 - 人形机器人公司资料、融资、产品与估值 | RobotHub",
+        "source_content_hash": "52cc6aa7a44aacaf",
+        "quote": "B轮 ¥10.0亿 ¥96.6亿 2026年2月 百度战投、中车资本、宇信科技、森麒麟、沄柏资本、国泰海通基金",
+        "quote_hash": "d8f95d0e975a73eea9bd213facbdb3cf36b652d63a09a1eecfba2973b029d3ba"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "投资方颇为豪华：中车资本、百度战投、沄柏资本、国泰海通、多家特斯拉生态链龙头企业及地方基金等。",
+        "quote_hash": "b7bfc4b1670290ef7843f08b9b77bb137831c80b06e105818fc5e8434c25b2da"
+      },
       {
         "source_id": "FISRC-2b8807c0477dce70",
         "source_url": "https://finance.sina.com.cn/roll/2026-02-23/doc-inhnvivh9606202.shtml",

@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-a1e018abd40842",
+    "name": "云启资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 2,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-02-23",
+    "latest_disclosed_at": "2026-08-31",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "other_current_round": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f1de3226b9e510ac",
+        "canonical_entity_id": "",
+        "name": "杭州昆腾动力智能有限公司"
+      },
+      {
+        "entity_id": "EN-670f7279903a5551",
+        "canonical_entity_id": "",
+        "name": "上海幻码跃迁量子科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-ef71104767a3f88c",
+        "funding_insight_id": "FI-0393a877e1b99840",
+        "event_ids": [
+          "EV-782e8dcca41fd545"
+        ],
+        "company_entity_id": "EN-b321d29699ce1dcd",
+        "company_canonical_entity_id": "",
+        "company_name": "上海松应科技有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ae72db61aa80327",
+            "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+            "source_content_hash": "74d6b0dda1bd2148",
+            "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
+            "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3ed40beeec50424f",
+        "funding_insight_id": "FI-0f172a51aed019fe",
+        "event_ids": [
+          "EV-7c3e301d345f8c2d"
+        ],
+        "company_entity_id": "EN-f1de3226b9e510ac",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州昆腾动力智能有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-07-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-acc5f267b943773d",
+            "source_url": "https://news.pedaily.cn/202607/567074.shtml",
+            "source_title": "昆腾动力完成超亿元种子轮融资，定义部署驱动的Physical AI平台",
+            "source_content_hash": "291f515f8155da84",
+            "quote": "本轮由 云启资本、商汤 国香资本 联合投资 。",
+            "quote_hash": "7db7f30359c3d54a534e9a21f65ad10862b6a9c8fb8eb5254aa06577ffaa2f02"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5ecc7d11a593c9f2",
+        "funding_insight_id": "FI-150dae442fa0f1de",
+        "event_ids": [
+          "EV-71d7d8bbaa623228"
+        ],
+        "company_entity_id": "EN-670f7279903a5551",
+        "company_canonical_entity_id": "",
+        "company_name": "上海幻码跃迁量子科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7c0e1d89cdf9af82",
+            "source_url": "https://news.pedaily.cn/202607/566249.shtml",
+            "source_title": "「幻码跃迁」完成数千万种子轮融资，打造量子×AI融合创新的量子计算基础设施",
+            "source_content_hash": "340f8c8784943503",
+            "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
+            "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1d71d303f313c796",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "随后3月完成新一轮过亿元Pre A+轮融资，投资方包括敦鸿资产、云启资本和国投创盈等财务与产业基金等。",
+            "quote_hash": "e04063d17d504f77e8909f1805481c76952fc201ad4826654b0afbb496f4be80"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1ae72db61aa80327",
+        "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+        "source_content_hash": "74d6b0dda1bd2148",
+        "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
+        "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
+      },
+      {
+        "source_id": "FISRC-acc5f267b943773d",
+        "source_url": "https://news.pedaily.cn/202607/567074.shtml",
+        "source_title": "昆腾动力完成超亿元种子轮融资，定义部署驱动的Physical AI平台",
+        "source_content_hash": "291f515f8155da84",
+        "quote": "本轮由 云启资本、商汤 国香资本 联合投资 。",
+        "quote_hash": "7db7f30359c3d54a534e9a21f65ad10862b6a9c8fb8eb5254aa06577ffaa2f02"
+      },
+      {
+        "source_id": "FISRC-7c0e1d89cdf9af82",
+        "source_url": "https://news.pedaily.cn/202607/566249.shtml",
+        "source_title": "「幻码跃迁」完成数千万种子轮融资，打造量子×AI融合创新的量子计算基础设施",
+        "source_content_hash": "340f8c8784943503",
+        "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
+        "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "随后3月完成新一轮过亿元Pre A+轮融资，投资方包括敦鸿资产、云启资本和国投创盈等财务与产业基金等。",
+        "quote_hash": "e04063d17d504f77e8909f1805481c76952fc201ad4826654b0afbb496f4be80"
+      }
+    ]
+  }
+}

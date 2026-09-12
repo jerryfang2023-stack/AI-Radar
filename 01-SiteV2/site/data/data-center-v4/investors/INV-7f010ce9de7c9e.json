@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-7f010ce9de7c9e",
+    "name": "一村淞灵",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-03-05",
+    "latest_disclosed_at": "2026-08-28",
+    "role_counts": {
+      "historical_or_ambiguous": 2
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-3e5ea8d803b016ea",
+        "funding_insight_id": "FI-1b4327c7d35c5dad",
+        "event_ids": [
+          "EV-f6c882e143c0d634"
+        ],
+        "company_entity_id": "EN-086c739ca6223458",
+        "company_canonical_entity_id": "",
+        "company_name": "北京清蓝智汇科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fa0e608145757727",
+            "source_url": "https://www.pureblueai.com/about-us",
+            "source_title": "关于我们—PureblueAI清蓝-算法驱动的下一代 AI 营销引擎",
+            "source_content_hash": "7bc2a6cca71b83c7",
+            "quote": "2026年2月，获得由祥峰中国（Vertex China）领投，老股东英诺基金及一村淞灵、36氪跟投的数千万元人民币天使轮融资。",
+            "quote_hash": "44c30a2a6f7890790b2be4be4fdcfb833f29a0da36056ff196fb2740acfb90d6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-70a192bba91c9aed",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资。",
+            "quote_hash": "ca00b69742155291ef614ec13a2f8362b01fe9476123a2ec6941daf5cddce229"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-fa0e608145757727",
+        "source_url": "https://www.pureblueai.com/about-us",
+        "source_title": "关于我们—PureblueAI清蓝-算法驱动的下一代 AI 营销引擎",
+        "source_content_hash": "7bc2a6cca71b83c7",
+        "quote": "2026年2月，获得由祥峰中国（Vertex China）领投，老股东英诺基金及一村淞灵、36氪跟投的数千万元人民币天使轮融资。",
+        "quote_hash": "44c30a2a6f7890790b2be4be4fdcfb833f29a0da36056ff196fb2740acfb90d6"
+      },
+      {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资。",
+        "quote_hash": "ca00b69742155291ef614ec13a2f8362b01fe9476123a2ec6941daf5cddce229"
+      }
+    ]
+  }
+}

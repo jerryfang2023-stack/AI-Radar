@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-caaaea1c7031a9",
+    "name": "华泰紫金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-02-24",
+    "latest_disclosed_at": "2026-02-24",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-1032f7a4df33f629",
+        "canonical_entity_id": "EN-1032f7a4df33f629",
+        "name": "千寻智能"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-53093790a8cf8a6a",
+        "funding_insight_id": "FI-846562dfba15b6a0",
+        "event_ids": [
+          "EV-61f07716fd7cb7ee"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "两轮融资",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ee3064edf7c871f4",
+            "source_url": "https://www.qbitai.com/2026/02/381766.html",
+            "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+            "source_content_hash": "0ad2701645471c8d",
+            "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
+            "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ee3064edf7c871f4",
+        "source_url": "https://www.qbitai.com/2026/02/381766.html",
+        "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+        "source_content_hash": "0ad2701645471c8d",
+        "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
+        "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
+      }
+    ]
+  }
+}

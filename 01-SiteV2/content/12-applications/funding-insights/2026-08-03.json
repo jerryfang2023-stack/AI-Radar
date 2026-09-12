@@ -10,8 +10,8 @@
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 33,
-      "auto_published": 32,
-      "blocked": 0,
+      "auto_published": 31,
+      "blocked": 1,
       "pending": 0,
       "deduplicated": 1
     },
@@ -1485,7 +1485,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "其他融资",
+        "round": "B+轮",
         "amount": "20亿元",
         "total_raised": "近30亿元",
         "announced_at": "2026-04-02",
@@ -1878,7 +1878,7 @@
             "quote_hash": "befeef80f102b142e60de821014a755a0c41270c852eaf9d96c040aab131ce25"
           }
         ],
-        "round_code": "other",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "20亿元",
         "amount_normalized": {
@@ -3206,821 +3206,6 @@
       ],
       "aggregation": {
         "key": "EN-e7492db096492304|pre_series_b",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-debe51463ab9b007",
-      "triggered_by_event_id": "EV-4fbbf16279e27000",
-      "as_of_date": "2026-08-03",
-      "company": {
-        "entity_id": "EN-74b42431957780b9",
-        "name": "昉擎科技",
-        "full_name": "昉擎科技",
-        "website": "",
-        "summary": "昉擎科技是一家国产新一代人工智能计算系统企业，成立于2023年初，由前华为海思总架构师、寒武纪CTO梁军等资深团队创立。公司专注基于分离式架构的智能计算系统研发，提出“上下文相关”与“上下文无关”解耦的分布式AI计算架构，坚持自研芯片、自研系统、自研软件栈的“三维一体”路线。",
-        "headquarters": "上海",
-        "founders": [
-          {
-            "name": "梁军",
-            "role": "CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "昉擎科技CEO梁军表示",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "16c523088e9886fe6aaf95a6fc15745b21e47fcda87cf14690200f244a0e2b1f"
-              },
-              {
-                "source_id": "FISRC-35c6a58b0d764fbc",
-                "quote": "CEO梁军深耕芯片行业20余载，曾以华为海思总架构师身份主导海思麒麟SOC芯片研发，此后在寒武纪担任CTO",
-                "source_content_hash": "d1af958532b57c20",
-                "quote_hash": "40cc9504ea7211207b89f1a9ef29ba273af5acc9244df09c8f1ce17aa04fadc8"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-75b04daca915e1ca",
-            "quote": "昉擎科技成立于2023年初，由行业内资深团队创立，专注基于分离式架构的智能计算系统研发。",
-            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-            "quote_hash": "2e60be7abc3ef14270fe6f3cdffceccb17aa45fb184635d22d8f9cb669554d8d"
-          },
-          {
-            "source_id": "FISRC-35c6a58b0d764fbc",
-            "quote": "上海昉擎科技有限公司成立于2022年9月，聚焦于解耦的分布式AI计算架构",
-            "source_content_hash": "d1af958532b57c20",
-            "quote_hash": "144a8d5a6d5a02c8cf5703cc06f9dd2e652200ed55f1eee69523b769ba366f2a"
-          }
-        ],
-        "application_entity_id": "EN-74b42431957780b9",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "A1轮",
-        "amount": "超过 100 亿人民币",
-        "total_raised": "",
-        "announced_at": "2026-08-03",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "徐汇资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "本轮融资由上海市徐汇区国资平台徐汇资本、珠海市国资旗下珠海科技产业集团两大地方产业国资战略投资",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "46cef1df2770a4acd2ea81fad6c9fe0aad4345521a90032ebe1127a9eae14f9a"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "珠海科技产业集团",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "本轮融资由上海市徐汇区国资平台徐汇资本、珠海市国资旗下珠海科技产业集团两大地方产业国资战略投资",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "46cef1df2770a4acd2ea81fad6c9fe0aad4345521a90032ebe1127a9eae14f9a"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "中金资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "中金资本、国泰海通创意投资两大头部券商系基金，尚势资本、水木创投、明嘉资本等产业资本参与投资",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "497c6dd3c964a5a3bbc8e175d8bc19a61684d8b1c5f799485842074819307331"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "国泰海通创意投资",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "中金资本、国泰海通创意投资两大头部券商系基金，尚势资本、水木创投、明嘉资本等产业资本参与投资",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "497c6dd3c964a5a3bbc8e175d8bc19a61684d8b1c5f799485842074819307331"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "尚势资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "尚势资本、水木创投、明嘉资本等产业资本参与投资",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "5a6eda728c356477d57f9ecb72633835568ca6460f0b3a7512e5d1e38d64a2fd"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "水木创投",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "尚势资本、水木创投、明嘉资本等产业资本参与投资",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "5a6eda728c356477d57f9ecb72633835568ca6460f0b3a7512e5d1e38d64a2fd"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "明嘉资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "尚势资本、水木创投、明嘉资本等产业资本参与投资",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "5a6eda728c356477d57f9ecb72633835568ca6460f0b3a7512e5d1e38d64a2fd"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "钧山资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "多维资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "华业天成",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "临港科创投",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "建发新兴",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "三七互娱",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "other_round_investors": [
-          {
-            "name": "小米战略投资部",
-            "role": "天使轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-a1d34e1670d0ad2d",
-                "quote": "天使轮由小米战略投资部领投，蔚来资本和明势资本跟投",
-                "source_content_hash": "da5d6f1e2a3326d1",
-                "quote_hash": "049cab464e2244fb82ddf542f3b56f533077a83e0fdc18d67641174369ea79f6"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "蔚来资本",
-            "role": "天使轮跟投、天使+轮领投、Pre-A轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-a1d34e1670d0ad2d",
-                "quote": "天使轮由小米战略投资部领投，蔚来资本和明势资本跟投；天使 + 轮由蔚来资本领投，明势资本跟投",
-                "source_content_hash": "da5d6f1e2a3326d1",
-                "quote_hash": "73b1e7a93518f417179ad4dee8a6b3f78ddeeeb1d97fe382dc43dbec66a4934a"
-              },
-              {
-                "source_id": "FISRC-af5d29b15452fd45",
-                "quote": "「昉擎科技」完成10亿元Pre-A轮融资，蔚来资本持续加磅",
-                "source_content_hash": "c80a5c2cde0bcb78",
-                "quote_hash": "d643320b029b7f75a2ad52dc2760f9650a5a7851a028c549ec3ebf8b5816353a"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "明势资本",
-            "role": "天使轮跟投、天使+轮跟投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-a1d34e1670d0ad2d",
-                "quote": "天使轮由小米战略投资部领投，蔚来资本和明势资本跟投；天使 + 轮由蔚来资本领投，明势资本跟投",
-                "source_content_hash": "da5d6f1e2a3326d1",
-                "quote_hash": "73b1e7a93518f417179ad4dee8a6b3f78ddeeeb1d97fe382dc43dbec66a4934a"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "临港科创投",
-            "role": "天使++轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-a1d34e1670d0ad2d",
-                "quote": "天使 ++ 轮由临港科创投领投，华业天成、高捷资本、三七互娱、新智认知等机构联合投资",
-                "source_content_hash": "da5d6f1e2a3326d1",
-                "quote_hash": "80c77f4e3b77d9cab4f4b7f60c2799dd0d8613096cb368503bd3d907292016b0"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "国开科创",
-            "role": "Pre-A轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-35c6a58b0d764fbc",
-                "quote": "昉擎科技完成10亿元Pre-A轮融资，新引入投资人国开科创、钧山资本、建发新兴投资、多维资本",
-                "source_content_hash": "d1af958532b57c20",
-                "quote_hash": "6894266a50c0a67a045b8d373b454f2ec84870315d7288ef8100f1386de8e4db"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "广发信德",
-            "role": "Pre-A轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-35c6a58b0d764fbc",
-                "quote": "某头部VC机构、华业天成、蔚来资本、广发信德、三七互娱等多位老股东进行超额加注",
-                "source_content_hash": "d1af958532b57c20",
-                "quote_hash": "c8e3b9a8fc7abd631109f35521f32c2e1f669df8433bcd10867310ee1b64ba85"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-75b04daca915e1ca",
-            "quote": "昉擎科技完成A1轮融资 投后估值超100亿元",
-            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-            "quote_hash": "99d311da9dc586bd677a5ea51ebfe81a9cde0d3de244cdae18cab420770495e6"
-          },
-          {
-            "source_id": "FISRC-75b04daca915e1ca",
-            "quote": "昉擎科技宣布完成A1轮融资，此轮融资后公司估值超过100亿元。",
-            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-            "quote_hash": "9dddb9a1f13396c8683400ed239f630d75467f0c2478653fba082bf359fbf030"
-          },
-          {
-            "source_id": "FISRC-75b04daca915e1ca",
-            "quote": "公司在最近半年内连续完成Pre A、Pre-A+轮及A1轮共3轮融资。",
-            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-            "quote_hash": "4a55287f205b04234e17758ad4abeae043339bb5f8aab7561bf772cede006dfe"
-          }
-        ],
-        "round_code": "series_a1",
-        "round_original": "A1轮",
-        "amount_original": "超过 100 亿人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 10000000000,
-          "min_value": 10000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 100 亿元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-4fbbf16279e27000",
-            "round_original": "A1轮",
-            "amount": "超过 100 亿人民币",
-            "announced_at": "2026-08-03",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "昉擎科技完成A1轮融资 投后估值超100亿元",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "99d311da9dc586bd677a5ea51ebfe81a9cde0d3de244cdae18cab420770495e6"
-              },
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "昉擎科技宣布完成A1轮融资，此轮融资后公司估值超过100亿元。",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "9dddb9a1f13396c8683400ed239f630d75467f0c2478653fba082bf359fbf030"
-              },
-              {
-                "source_id": "FISRC-75b04daca915e1ca",
-                "quote": "公司在最近半年内连续完成Pre A、Pre-A+轮及A1轮共3轮融资。",
-                "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-                "quote_hash": "4a55287f205b04234e17758ad4abeae043339bb5f8aab7561bf772cede006dfe"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed"
-      },
-      "products": [
-        {
-          "name": "分离式架构智能计算系统",
-          "description": "基于“上下文相关”与“上下文无关”解耦的分布式AI计算架构，将前馈神经网络与注意力机制解耦为两个独立模块，分配给最适合的硬件架构做分布式处理，以提高整体计算效率并降低延迟。公司坚持自研芯片、自研系统、自研软件栈的“三维一体”路线。",
-          "target_customers": "AI推理市场、Agent应用场景",
-          "features": [
-            "上下文相关与上下文无关解耦的分布式计算架构",
-            "自研芯片、自研系统、自研软件栈三维一体",
-            "面向低延迟优化的推理系统",
-            "以因果密度指导计算系统设计"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-75b04daca915e1ca",
-              "quote": "专注基于分离式架构的智能计算系统研发",
-              "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-              "quote_hash": "bc2e87b9ab8fe1c9375da9fd9742e185d098b179ce89d3516c0e02f0c6d79f32"
-            },
-            {
-              "source_id": "FISRC-35c6a58b0d764fbc",
-              "quote": "提出了一种新技术方向：“上下文相关”（context aware）与 “上下文无关”（context free）解耦的分布式计算架构，即将前馈神经网络（Feed-Forward Network, FNN）与注意力机制（Attention）解耦为两个独立模块，将它们分配给最适合的硬件架构来做分布式处理",
-              "source_content_hash": "d1af958532b57c20",
-              "quote_hash": "7d5a534f9aae8c0c4a1e31c37b7867942b4a7dbef6359f8c08f6d323df57fd1f"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "投后估值",
-          "value": "超过100亿元",
-          "observed_at": "2026-08-03",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-75b04daca915e1ca",
-              "quote": "此轮融资后公司估值超过100亿元",
-              "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-              "quote_hash": "62f0cee6ee2ccecf63f1e3719fb7a3b99e03047d6c9bf6ef0d5cf2837599291a"
-            }
-          ]
-        },
-        {
-          "label": "Pre-A轮融资金额",
-          "value": "10亿元",
-          "observed_at": "2026-03-09",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-35c6a58b0d764fbc",
-              "quote": "昉擎科技完成10亿元Pre-A轮融资",
-              "source_content_hash": "d1af958532b57c20",
-              "quote_hash": "d3974e01dd21cfa94db59a0b77952556dda7c6d7f19bd5bbdd6455e0cc770555"
-            }
-          ]
-        },
-        {
-          "label": "Pre-A+轮融资金额",
-          "value": "10亿元",
-          "observed_at": "2026-03-09",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7419a9e7fa97f1a9",
-              "quote": "上海昉擎科技有限公司获“Pre-A+轮”融资，金额10亿人民币",
-              "source_content_hash": "7aa28d128dd23113",
-              "quote_hash": "4a5c4543c7623ade5a62814615cfdfc5b5faa86e1925dfadf798d0f2f4bb1656"
-            }
-          ]
-        },
-        {
-          "label": "半年内完成融资轮次",
-          "value": "Pre A、Pre-A+轮及A1轮共3轮",
-          "observed_at": "2026-08-03",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-75b04daca915e1ca",
-              "quote": "公司在最近半年内连续完成Pre A、Pre-A+轮及A1轮共3轮融资",
-              "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-              "quote_hash": "a72459549e5974a510ccc8ec275c505fe05c41121a6344aaeeaa31fb69c34cbd"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "梁军",
-          "quote": "我们始终认为，智能计算系统的下一代竞争将是架构层面的系统性创新，昉擎科技从创立之初就选择了一条基于第一性原理的技术路径。公司对分离式架构的前瞻性布局，获得了市场的普遍认可。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-75b04daca915e1ca",
-              "quote": "昉擎科技CEO梁军表示：“我们始终认为，智能计算系统的下一代竞争将是架构层面的系统性创新，昉擎科技从创立之初就选择了一条基于第一性原理的技术路径。公司对分离式架构的前瞻性布局，获得了市场的普遍认可。”",
-              "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-              "quote_hash": "58489bdf285218f3853c28225784215b8f2a5e1081122529623f57e796941645"
-            }
-          ]
-        },
-        {
-          "speaker": "梁军",
-          "quote": "芯片设计的第一优先级，应从追求单一芯片性能、集成度的提升，改为优先追求一个可扩展的系统设计。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-35c6a58b0d764fbc",
-              "quote": "“芯片设计的第一优先级，应从追求单一芯片性能、集成度的提升，改为优先追求一个可扩展的系统设计。”梁军表示。",
-              "source_content_hash": "d1af958532b57c20",
-              "quote_hash": "207b06e8658015f4f87510786c3c5f8c928f0b4f7521b4399370490fc6d786ce"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "本轮融资的核心变量是昉擎科技在AI计算架构层面的原创性系统创新——将Transformer中的注意力机制与前馈神经网络解耦为独立模块并分配给最适合的硬件做分布式处理，这一分离式架构被资本视为面向Agent应用低时延、低成本token需求的代际级方案。投后估值超100亿元的信号验证了：①多地国资与头部券商系基金的战略重仓，表明国产智能计算系统已进入产业资本与政策资本共同定价的阶段；②半年内连续完成三轮融资且老股东超额追投，说明一级市场对其底层技术原创性和产品落地确定性已形成共识。但当前判断的证据边界仍限于架构理念、团队背景和融资进展，尚未看到量产芯片、客户验证或规模化收入等商业化信号。",
-        "validated_signals": [
-          "半年内连续完成Pre A、Pre-A+轮及A1轮共3轮融资，投后估值超100亿元",
-          "多地国资（徐汇资本、珠海科技产业集团）与头部券商系基金（中金资本、国泰海通创意投资）战略投资",
-          "老股东钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等超额追投",
-          "CEO梁军具备华为海思总架构师与寒武纪CTO的连续成功履历"
-        ],
-        "risks": [
-          "分离式架构的工程化落地尚未经量产验证，从架构理念到可商用芯片存在较长周期和不确定性",
-          "英伟达在全球AI加速器市场份额达92%，国产替代面临生态兼容性和客户迁移成本的巨大挑战"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "ai_compute_system",
-        "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "hardware_computing",
-        "market_application_id": "computing_infrastructure",
-        "use_case_ids": [],
-        "industry_ids": [],
-        "target_user_ids": [
-          "developer"
-        ],
-        "sector": "人工智能计算系统与芯片",
-        "investment_thesis": {
-          "statement": "本轮融资的核心变量是昉擎科技在AI计算架构层面的原创性系统创新——将Transformer中的注意力机制与前馈神经网络解耦为独立模块并分配给最适合的硬件做分布式处理，这一分离式架构被资本视为面向Agent应用低时延、低成本token需求的代际级方案。投后估值超100亿元的信号验证了：①多地国资与头部券商系基金的战略重仓，表明国产智能计算系统已进入产业资本与政策资本共同定价的阶段；②半年内连续完成三轮融资且老股东超额追投，说明一级市场对其底层技术原创性和产品落地确定性已形成共识。但当前判断的证据边界仍限于架构理念、团队背景和融资进展，尚未看到量产芯片、客户验证或规模化收入等商业化信号。",
-          "evidence_signals": [
-            "半年内连续完成Pre A、Pre-A+轮及A1轮共3轮融资，投后估值超100亿元",
-            "多地国资（徐汇资本、珠海科技产业集团）与头部券商系基金（中金资本、国泰海通创意投资）战略投资",
-            "老股东钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等超额追投",
-            "CEO梁军具备华为海思总架构师与寒武纪CTO的连续成功履历"
-          ],
-          "risks": [
-            "分离式架构的工程化落地尚未经量产验证，从架构理念到可商用芯片存在较长周期和不确定性",
-            "英伟达在全球AI加速器市场份额达92%，国产替代面临生态兼容性和客户迁移成本的巨大挑战"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "分离式架构智能计算系统",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "梁军",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "徐汇资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "珠海科技产业集团",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "中金资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "国泰海通创意投资",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "尚势资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "水木创投",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "明嘉资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "钧山资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "多维资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "华业天成",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "临港科创投",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "建发新兴",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "三七互娱",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "小米战略投资部",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "蔚来资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "明势资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "临港科创投",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "国开科创",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "广发信德",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-4fbbf16279e27000",
-          "date": "2026-08-03",
-          "title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-          "amount": "100亿",
-          "source_refs": [
-            "SA-6c9855e9f1ebe9ce"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-75b04daca915e1ca",
-          "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-          "title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-          "publisher": "中国证券报",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-08-12T12:00:00.000+08:00",
-          "content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-          "source_artifact_id": "SA-6c9855e9f1ebe9ce",
-          "raw_id": "RAW-8bd51b113ae29a0a"
-        },
-        {
-          "source_id": "FISRC-7419a9e7fa97f1a9",
-          "source_url": "https://www.163.com/dy/article/KNJ37C980519QIKK.html",
-          "title": "上海昉擎科技有限公司获“Pre-A+轮”融资，金额10亿人民币|珠海|pre|股权转让协议_网易订阅",
-          "publisher": "163.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-08-12T11:13:38.424Z",
-          "content_hash": "7aa28d128dd23113",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-35c6a58b0d764fbc",
-          "source_url": "https://www.163.com/dy/article/KNJ0S76B05118HJE.html",
-          "title": "AI芯片及系统架构研发商昉擎科技完成10亿元Pre-A轮融资|解耦|pre|a轮融资|分布式计算_网易订阅",
-          "publisher": "163.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-08-12T11:13:38.356Z",
-          "content_hash": "d1af958532b57c20",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-af5d29b15452fd45",
-          "source_url": "https://niocapital.com/news/476.html",
-          "title": "蔚来资本三月行业大事记",
-          "publisher": "niocapital.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-08-12T11:13:39.796Z",
-          "content_hash": "c80a5c2cde0bcb78",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-a1d34e1670d0ad2d",
-          "source_url": "https://www.163.com/dy/article/K5LF43P10531M1CO.html",
-          "title": "晚点独家丨小米、蔚来资本领投昉擎天使轮，寒武纪前CTO任昉擎CEO|英伟达|cto|小米集团|知名企业_网易订阅",
-          "publisher": "163.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-08-12T11:13:39.850Z",
-          "content_hash": "da5d6f1e2a3326d1",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-08-12T11:14:16.500Z",
-        "taxonomy_classification": {
-          "taxonomy_version": "TAG-V4.1",
-          "method": "deepseek_evidence_review",
-          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
-          "decision_event_id": "EV-4fbbf16279e27000",
-          "confidence": 0.9,
-          "needs_review": false
-        }
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-08-12T11:14:16.500Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 5
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "分离式架构智能计算系统"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "梁军"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-4fbbf16279e27000"
-      ],
-      "aggregation": {
-        "key": "EN-74b42431957780b9|series_a1",
         "event_count": 1,
         "strategy": "company_and_normalized_round"
       }
@@ -9345,7 +8530,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "其他融资",
+        "round": "A+轮",
         "amount": "超过6亿元人民币",
         "total_raised": "",
         "announced_at": "2026-02-08",
@@ -9497,7 +8682,7 @@
             "quote_hash": "429432c4039dea8709b26148aaf6bfc0b977f45cff48b92d144ed2cb670e6e10"
           }
         ],
-        "round_code": "other",
+        "round_code": "series_a_plus",
         "round_original": "A+轮",
         "amount_original": "超过6亿元人民币",
         "amount_normalized": {
@@ -10931,7 +10116,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "其他融资",
+        "round": "B+轮",
         "amount": "数亿元人民币",
         "total_raised": "数亿元量级",
         "announced_at": "2026-08-03",
@@ -11026,7 +10211,7 @@
                 "quote_hash": "5c376bd32041c52377cc742072249de27f7890a997e5519f7d47a5512e073424"
               }
             ],
-            "entity_id": "EN-d30e5ffc0ba9150b"
+            "entity_id": null
           },
           {
             "name": "汤姆猫",
@@ -11116,17 +10301,17 @@
             "quote_hash": "f69f0959195d59409a5c4c6b927edbe6573c68dd2dc88f072cb83b1b4a265025"
           }
         ],
-        "round_code": "other",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "数亿元人民币",
         "amount_normalized": {
-          "currency": "",
+          "currency": "CNY",
           "value": null,
-          "min_value": null,
-          "max_value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
           "unit": "base",
-          "status": "unparsed",
-          "display_zh": "数亿元人民币"
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
         },
         "total_raised_original": "数亿元量级",
         "total_raised_normalized": {
@@ -11167,7 +10352,7 @@
             ]
           }
         ],
-        "disclosure_status": "partially_disclosed"
+        "disclosure_status": "disclosed"
       },
       "products": [
         {
@@ -17768,7 +16953,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "其他融资",
+        "round": "B+轮",
         "amount": "数亿元",
         "total_raised": "",
         "announced_at": "2026-05-09",
@@ -17954,7 +17139,7 @@
             "quote_hash": "2f53fbaf74d3bdb6a2b99bbc533e7e16d71a51337a091e8338820138d79684fc"
           }
         ],
-        "round_code": "other",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "risk_markers": [],
         "disclosures": [
@@ -19852,7 +19037,7 @@
         "canonical_entity_consistent": true
       },
       "financing": {
-        "round": "其他融资",
+        "round": "A+轮",
         "amount": "10亿元",
         "total_raised": "30亿元",
         "announced_at": "2026-04-07",
@@ -19975,7 +19160,7 @@
                 "quote_hash": "3bdea4c62b0a51235195c01cc415d8544dc4a1522e00e6a2322589dd3cb7f58b"
               }
             ],
-            "entity_id": "EN-81baf57e05f11276"
+            "entity_id": null
           },
           {
             "name": "中国互联网投资基金",
@@ -20005,7 +19190,7 @@
             "quote_hash": "fe7cdcc02a945ab53fee1d6baf54e94dad4bf50f309f006480f2004c687b85a1"
           }
         ],
-        "round_code": "other",
+        "round_code": "series_a_plus",
         "round_original": "A+轮",
         "risk_markers": [],
         "disclosures": [
@@ -21462,7 +20647,7 @@
         "canonical_entity_consistent": true
       },
       "financing": {
-        "round": "其他融资",
+        "round": "A++轮",
         "amount": "10亿元",
         "total_raised": "约30亿元",
         "announced_at": "2026-01-12",
@@ -21572,7 +20757,7 @@
                 "quote_hash": "adba552be7014a56bec05cd82a3a1062a16e94c455f929a44d112da898d22459"
               }
             ],
-            "entity_id": "EN-e16fc821f34228d1"
+            "entity_id": null
           }
         ],
         "evidence_refs": [
@@ -21589,7 +20774,7 @@
             "quote_hash": "5168333346a62e5c1717efac276ceb315b9b2d79cbbc81531c5697ae9f81abeb"
           }
         ],
-        "round_code": "other",
+        "round_code": "series_a_plus_plus",
         "round_original": "A++轮",
         "risk_markers": [],
         "disclosures": [
@@ -27939,8 +27124,10 @@
     {
       "event_id": "EV-4fbbf16279e27000",
       "company_name": "昉擎科技",
-      "status": "auto_published",
-      "problems": [],
+      "status": "blocked",
+      "problems": [
+        "funding_amount_is_valuation"
+      ],
       "queries": [
         "\"昉擎科技完成A1轮融资 投后估值超100亿元\" funding company investors product",
         "\"昉擎科技\" \"100亿\" funding investors round",

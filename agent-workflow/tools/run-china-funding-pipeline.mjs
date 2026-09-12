@@ -4,11 +4,15 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { buildSourceIntake, mergeSourceIntakes } from "./lib/source-intake-v1.mjs";
-import { loadPrivateEvidenceEntries } from "./lib/private-evidence-store.mjs";
+import { loadPrivateEvidenceEntries, loadPrivateEvidenceStore, loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
 import { buildChinaFundingHealth } from "./lib/china-funding-health.mjs";
 import { historyWindows } from "./collect-china-funding-history.mjs";
 
 const urlKey = (url) => String(url || "").replace(/[?#].*$/u, "").replace(/\/$/u, "");
+export function uncapturedChinaFundingItems(discovery, accepted) {
+  const captured = new Set((accepted?.source_artifacts || []).flatMap((item) => [item.source_url, item.canonical_url]).filter(Boolean).map(urlKey));
+  return (discovery.items || []).filter((item) => !captured.has(urlKey(item.url)));
+}
 export function selectChinaFundingIntake(intake, discovery) {
   const urls = new Set(discovery.items.map((item) => urlKey(item.url)));
   const sourceArtifacts = intake.source_artifacts.filter((item) => [item.source_url, item.canonical_url].some((url) => urls.has(urlKey(url))));
@@ -19,9 +23,13 @@ export function selectChinaFundingIntake(intake, discovery) {
   return mergeSourceIntakes({ ...intake, source_artifacts: sourceArtifacts, raw_documents: rawDocuments });
 }
 
-function recoverPrivateIntake(root, date, discovery) {
+function recoverPrivateIntake(root, date, discovery, allDates = false) {
   const urls = new Set(discovery.items.map((item) => urlKey(item.url)));
-  const entries = loadPrivateEvidenceEntries(root, date)
+  const originals = allDates ? loadPrivateEvidenceStore(root).catalog.filter((entry) => urls.has(urlKey(entry.source_url))).map((entry) => {
+    const loaded = loadPrivateEvidenceRecord(root, entry.snapshot_ref, entry.content_hash);
+    return { raw: loaded.raw, file: loaded.logicalFile };
+  }) : loadPrivateEvidenceEntries(root, date);
+  const entries = originals
     .filter(({ raw }) => [raw.original_url, raw.canonical_url, raw.source_url].some((url) => urls.has(urlKey(url))))
     .map(({ raw, file }) => ({ record: raw, jsonPath: file, pooled: (raw.pool_routes || []).length > 0 }));
   const intake = buildSourceIntake({ root, date, entries });
@@ -58,8 +66,14 @@ function main() {
   const write = (file, payload) => { const target = path.resolve(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.writeFileSync(target, `${JSON.stringify(payload, null, 2)}\n`); };
   const plan = chinaFundingPlan(date, sourceDir, { rawLimit: historyFrom ? 1260 : 168 });
   if (historyFrom) for (const stage of plan) for (const command of stage.commands) {
+    if (command[0].endsWith("/generate-data-center-model-assist.mjs")) command.splice(0, command.length, "agent-workflow/tools/extract-china-funding-history.mjs", `--date=${date}`);
+    if (command[0].endsWith("/generate-funding-insights-deepseek.mjs")) command.push("--market-region=CN", `--checkpoint-dir=${laneDir}/card-checkpoints`);
     if (command[0].endsWith("/migrate-private-evidence-source.mjs")) command.push(`--date=${date}`);
     if (command[0].endsWith("/run-guanlan-daily-monitor.mjs")) command.push(`--monitor-log-file=${laneDir}/capture-log.md`);
+  }
+  if (historyFrom) {
+    const facts = plan.find((stage) => stage.id === "facts");
+    facts.commands.splice(1, 0, ["agent-workflow/tools/repair-china-funding-source-dates.mjs", `--date=${date}`], ["agent-workflow/tools/build-data-center-v4.mjs", `--date=${date}`]);
   }
   if (args.get("dry-run") === "true") { console.log(JSON.stringify(plan, null, 2)); return; }
   const discovery = read(`${sourceDir}/china-funding-source-intake-candidates.json`);
@@ -96,19 +110,39 @@ function main() {
           const accepted = read(acceptedFile);
           if (previousAuthorization.from && (previousAuthorization.from !== historyFrom || previousAuthorization.to !== historyTo)) throw new Error("Historical authorization range conflict; preserve prior accepted policy");
           write(authorizationFile, { schema_version: "CHINA-FUNDING-HISTORY-AUTHORIZATION-V1.0", from: historyFrom, to: historyTo,
+            reuse_existing_private_originals: true,
+            application_market_region: "CN",
+            preserve_published_source_refs: previousAuthorization.preserve_published_source_refs || [],
             authorized_by: "explicit_user_request_2026_china_funding_backfill", created_at: previousAuthorization.created_at || new Date().toISOString(),
             source_refs: [...new Set([...(previousAuthorization.source_refs || []), ...accepted.source_artifacts.map((item) => item.source_artifact_id)])].sort() });
         }
         if (stage.id === "capture" && previous.stages?.some((item) => item.id === "capture")) {
           // A failed handoff can still have durable private originals. Hydrate those offline.
-          const accepted = read(acceptedFile) || recoverPrivateIntake(root, date, discovery);
+          const priorAccepted = read(acceptedFile) || recoverPrivateIntake(root, date, discovery);
+          const accepted = historyFrom && args.get("append-new-sources") === "true"
+            ? mergeSourceIntakes(recoverPrivateIntake(root, date, discovery, true), priorAccepted) : priorAccepted;
+          write(acceptedFile, accepted);
           // The freshly checked-out main wins for shared IDs; the independent intake adds new IDs.
           write(intakeFile, mergeSourceIntakes(accepted, read(intakeFile) || accepted));
           state.reused = true;
+          const delta = uncapturedChinaFundingItems(discovery, accepted);
+          if (delta.length && args.get("append-new-sources") === "true") {
+            const deltaDir = `${laneDir}/capture-delta`;
+            write(`${deltaDir}/china-funding-source-intake-candidates.json`, { ...discovery, items: delta, source_item_count: delta.length, discovered_count: delta.length });
+            state.source_stage_reason = "explicit_user_systematic_backfill_new_sources_only";
+            state.reused_source_count = accepted.source_artifacts.length;
+            state.new_candidate_count = delta.length;
+            for (const original of stage.commands) command(original.map((arg) => arg.startsWith("--source-artifact-dir=") ? `--source-artifact-dir=${deltaDir}` : arg));
+            write(acceptedFile, selectChinaFundingIntake(read(intakeFile), discovery));
+            state.status = "passed";
+            if (args.get("stop-after") === stage.id) break;
+            continue;
+          }
           const capturePassed = previous.stages.some((item) => item.id === "capture" && item.status === "passed") && fs.existsSync(path.resolve(root, acceptedFile));
           if (capturePassed) {
             state.reused_accepted_capture = true;
             state.status = "passed";
+            if (args.get("stop-after") === stage.id) break;
             continue;
           }
           // Last-good rollback also restores the public locator index. Rebuild it offline.
@@ -124,6 +158,7 @@ function main() {
           }
         }
         state.status = "passed";
+        if (args.get("stop-after") === stage.id) break;
       } catch (error) { state.status = "failed"; state.error = error.message; throw error; }
       finally { state.finished_at = new Date().toISOString(); write(statusFile, { date, stages }); }
     }
@@ -134,6 +169,7 @@ function main() {
   if (historyFrom) health.history = { from: historyFrom, to: historyTo, mode: "historical_backfill", models: discovery.history.models };
   write(`${laneDir}/health.json`, health);
   write(`01-SiteV2/site/data/china-funding${historyFrom ? "-history" : ""}-health-v1.json`, health);
+  if (historyFrom) command(["agent-workflow/tools/build-china-funding-history-quality.mjs", `--from=${historyFrom}`, `--to=${historyTo}`, `--date=${date}`]);
   command(["agent-workflow/tools/build-ops-console-data.mjs"]);
   if (failed) { console.error(failed.message); process.exitCode = 1; }
 }

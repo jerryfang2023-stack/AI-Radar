@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-d2e961efaf7217",
+    "name": "华控科技",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-05-20",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-0355fdd77dae437b",
+        "canonical_entity_id": "",
+        "name": "北京趋境科技有限责任公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-8c926516bd563c7b",
+        "funding_insight_id": "FI-3734798e9a7f3c5c",
+        "event_ids": [
+          "EV-d94bcfdf64509513"
+        ],
+        "company_entity_id": "EN-0355fdd77dae437b",
+        "company_canonical_entity_id": "",
+        "company_name": "北京趋境科技有限责任公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0a40102abd985684",
+            "source_url": "https://news.pedaily.cn/202605/564126.shtml",
+            "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
+            "source_content_hash": "0ed32dd4d2b1a439",
+            "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
+            "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-0a40102abd985684",
+        "source_url": "https://news.pedaily.cn/202605/564126.shtml",
+        "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
+        "source_content_hash": "0ed32dd4d2b1a439",
+        "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
+        "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
+      }
+    ]
+  }
+}

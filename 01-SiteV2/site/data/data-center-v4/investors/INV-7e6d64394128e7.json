@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-7e6d64394128e7",
@@ -20,27 +20,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 5,
+    "current_round_count": 9,
+    "historical_or_ambiguous_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 6,
-    "china_market_company_count": 5,
-    "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-07-30",
+    "china_market_activity_count": 9,
+    "china_market_company_count": 8,
+    "first_disclosed_at": "2026-02-14",
+    "latest_disclosed_at": "2026-09-12",
     "role_counts": {
-      "co_lead": 2,
-      "historical_or_ambiguous": 3,
-      "participant": 4
+      "co_lead": 3,
+      "historical_or_ambiguous": 7,
+      "lead": 1,
+      "participant": 5
     },
     "round_codes": [
       "angel",
-      "multi_round",
       "other",
       "pre_series_a",
-      "series_a"
+      "series_a",
+      "series_a_plus_plus",
+      "series_b"
     ],
     "portfolio_companies": [
       {
@@ -49,9 +51,24 @@
         "name": "贝联珠贯科技（浙江）有限公司"
       },
       {
+        "entity_id": "EN-1032f7a4df33f629",
+        "canonical_entity_id": "EN-1032f7a4df33f629",
+        "name": "千寻智能"
+      },
+      {
         "entity_id": "EN-e22521e7de65d819",
         "canonical_entity_id": "",
         "name": "上海珞博智能科技有限公司"
+      },
+      {
+        "entity_id": "EN-f6aaf378a6d9e724",
+        "canonical_entity_id": "",
+        "name": "深圳市深度智控科技有限公司"
+      },
+      {
+        "entity_id": "EN-fcfad5f0679009d4",
+        "canonical_entity_id": "",
+        "name": "深圳市薇光点亮科技有限公司"
       },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
@@ -66,10 +83,140 @@
       {
         "entity_id": "EN-8dc72a4672894e0f",
         "canonical_entity_id": "EN-8dc72a4672894e0f",
-        "name": "自变量机器人"
+        "name": "自变量机器人科技（深圳）有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-da81851b42cbfa46",
+        "funding_insight_id": "FI-0fff8c5cc6dfdca0",
+        "event_ids": [
+          "EV-26439e34295a0519",
+          "EV-cec68369662236fd",
+          "EV-41c54c428d84cc1e"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人科技（深圳）有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-09-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-16371607ed092d64",
+            "source_url": "https://www.qbitai.com/2026/01/369147.html",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+            "source_content_hash": "466042b9c1271f10",
+            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+          },
+          {
+            "source_id": "FISRC-449b969616ed1e95",
+            "source_url": "https://www.36kr.com/p/3636080421586182",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+            "source_content_hash": "abef77aff9b6b68f",
+            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4ab1d62f4188b4b3",
+        "funding_insight_id": "FI-fae9478ac0e65316",
+        "event_ids": [
+          "EV-ac5e79d96a009ee1"
+        ],
+        "company_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_canonical_entity_id": "",
+        "company_name": "深度智控",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67ccadc4294defd6",
+            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+            "source_title": "深度智控 | 项目信息-36氪",
+            "source_content_hash": "ed75aafa3d8feb1d",
+            "quote": "本轮融资由晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续跟投。",
+            "quote_hash": "a094429d21cbd2cc077d31ef0d381e2edc6cdfb9b0ced23e60c83e6f483247a5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e9a761f71c777691",
+        "funding_insight_id": "FI-0393a877e1b99840",
+        "event_ids": [
+          "EV-782e8dcca41fd545"
+        ],
+        "company_entity_id": "EN-b321d29699ce1dcd",
+        "company_canonical_entity_id": "",
+        "company_name": "上海松应科技有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ae72db61aa80327",
+            "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+            "source_content_hash": "74d6b0dda1bd2148",
+            "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
+            "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3a993f8d71dab42e",
         "funding_insight_id": "FI-57f8607e9a2111db",
@@ -151,14 +298,55 @@
         ]
       },
       {
-        "activity_id": "IA-376176cf5d1e3fa6",
+        "activity_id": "IA-a35926990bd60db9",
+        "funding_insight_id": "FI-c524ab52173a64d8",
+        "event_ids": [
+          "EV-c6437ac13cb07531"
+        ],
+        "company_entity_id": "EN-f6aaf378a6d9e724",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳市深度智控科技有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-03cb69a63e7d787b",
+            "source_url": "https://news.pedaily.cn/202607/566034.shtml",
+            "source_title": "物理 AI 企业深度智控（DeepCtrls）完成数亿元 B 轮融资",
+            "source_content_hash": "549472ef08c4ac5a",
+            "quote": "本轮融资由 晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续加码",
+            "quote_hash": "76ef591c6d4ca616ce480398a2ba71d5279671714499b7bb2d71a8a86d3f652d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7b2a9e71ee6b2db6",
         "funding_insight_id": "FI-f7342735e68375d9",
         "event_ids": [
+          "EV-a16d0d2a76e8d4a6",
           "EV-6ca567f6e80c36c5"
         ],
         "company_entity_id": "EN-bbc41366a5a7cf78",
         "company_canonical_entity_id": "",
-        "company_name": "北京星动纪元科技有限公司",
+        "company_name": "北京星动纪元科技股份有限公司",
         "round": "轮次未披露",
         "round_code": "undisclosed",
         "round_original": "新一轮",
@@ -183,10 +371,90 @@
           {
             "source_id": "FISRC-8c073d38e1f34758",
             "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-            "source_title": "星动纪元完成10亿元新一轮融资",
-            "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+            "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+            "source_content_hash": "38b0d26a979c4a8e",
             "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
             "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cdf3cdd5ba0d1386",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年2月轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "其中今年2月，千寻连续完成两轮融资近20亿元，集结了云锋基金、某头部国资机构、混沌投资（葛卫东）、红杉中国等超一线机构",
+            "quote_hash": "1f60e74a68f5cc68189d72045bf8489d10d72db3c58d8c54cc51795e25042be0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1b0e061b0c8a6bad",
+        "funding_insight_id": "FI-45331063d95f5f57",
+        "event_ids": [
+          "EV-81b7cd5d6a37912c"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "",
+        "company_name": "无问芯穹（Infinigence AI）",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "7 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "早期投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67d072b1aca37b5d",
+            "source_url": "https://www.tmtpost.com/7235681.html",
+            "source_title": "Infinigence AI Raises US$ 70.2 Million in Series A Funding Round-钛媒体官方网站",
+            "source_content_hash": "56a87e89ab6a1ab2",
+            "quote": "with support from major investors, including Chinese tech giant Baidu, Zhipu AI, and Sequoia China",
+            "quote_hash": "5838c5af42c09dfd74a2b6534fd65b82678314880b4881423006371a77cb44bf"
           }
         ]
       },
@@ -239,17 +507,17 @@
         ]
       },
       {
-        "activity_id": "IA-f738787624f012bc",
-        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "activity_id": "IA-1f5d865bf533331b",
+        "funding_insight_id": "FI-b9eb4320e43ddfdf",
         "event_ids": [
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "company_name": "它石智航",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
         "amount_original": "4.55亿美金",
         "amount_normalized": {
           "currency": "USD",
@@ -315,6 +583,86 @@
             "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
             "quote": "财务投资者层面，高瓴 创投 与红杉中国联合领投",
             "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-96c5f7f7d087ac91",
+        "funding_insight_id": "FI-dacbf556f71762a6",
+        "event_ids": [
+          "EV-cba16bd541a07032"
+        ],
+        "company_entity_id": "EN-fcfad5f0679009d4",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳市薇光点亮科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "1亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿元"
+        },
+        "announced_at": "2026-03-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-80b46378aae68c24",
+            "source_url": "https://finance.sina.com.cn/roll/2026-03-16/doc-inhrevaq9814436.shtml",
+            "source_title": "薇光点亮完成超1亿元Pre-A轮融资",
+            "source_content_hash": "3f3e3c82d29ac541",
+            "quote": "本轮融资由红杉中国、蓝驰创投联合领投，蚂蚁战投、鼎晖投资、鞍羽资本跟投，老股东九合创投持续追投。",
+            "quote_hash": "904259116e332ef4c86f2cc478e1db6d17dbdceb4821cfd2cc9566bdd5a5c3e5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-577b4594779613a7",
+        "funding_insight_id": "FI-846562dfba15b6a0",
+        "event_ids": [
+          "EV-61f07716fd7cb7ee"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "两轮融资",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ee3064edf7c871f4",
+            "source_url": "https://www.qbitai.com/2026/02/381766.html",
+            "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+            "source_content_hash": "0ad2701645471c8d",
+            "quote": "云锋基金、某头部国资机构、混沌投资（葛卫东）、红杉中国 等超一线机构重磅入局",
+            "quote_hash": "0faf051cd648fac87fb0f2e91ccd3baf2cf5214a9242eb2fca58d1406e25b553"
           }
         ]
       },
@@ -397,49 +745,41 @@
             "quote_hash": "9892c50eb2be44a65626c41984a0484ddcb5001adc621dc013072979ab7d31a8"
           }
         ]
-      },
-      {
-        "activity_id": "IA-d6b713dbb3f62f8f",
-        "funding_insight_id": "FI-15b5d99bcd808dba",
-        "event_ids": [
-          "EV-cec68369662236fd"
-        ],
-        "company_entity_id": "EN-8dc72a4672894e0f",
-        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-        "company_name": "自变量机器人",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "A++轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-01-12",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-a180899e2f0b58ad",
-            "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
-            "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
-            "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
-            "quote": "红杉中国、北京信息产业发展基金、深创投、南山战新投、锡创投等多家机构联合投资",
-            "quote_hash": "6ad36c8523bad82917df28cd311d2835b0a438bc227f21f74f3ba33f483b68b5"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-16371607ed092d64",
+        "source_url": "https://www.qbitai.com/2026/01/369147.html",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+        "source_content_hash": "466042b9c1271f10",
+        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+      },
+      {
+        "source_id": "FISRC-67ccadc4294defd6",
+        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+        "source_title": "深度智控 | 项目信息-36氪",
+        "source_content_hash": "ed75aafa3d8feb1d",
+        "quote": "本轮融资由晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续跟投。",
+        "quote_hash": "a094429d21cbd2cc077d31ef0d381e2edc6cdfb9b0ced23e60c83e6f483247a5"
+      },
+      {
+        "source_id": "FISRC-1ae72db61aa80327",
+        "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+        "source_content_hash": "74d6b0dda1bd2148",
+        "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
+        "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
+      },
       {
         "source_id": "FISRC-66fcc0a528f97b62",
         "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
@@ -457,12 +797,36 @@
         "quote_hash": "ee599baf3c38f7c33e45417fd35d1e9fabc3bfc8c3a527f3d021539987b30179"
       },
       {
+        "source_id": "FISRC-03cb69a63e7d787b",
+        "source_url": "https://news.pedaily.cn/202607/566034.shtml",
+        "source_title": "物理 AI 企业深度智控（DeepCtrls）完成数亿元 B 轮融资",
+        "source_content_hash": "549472ef08c4ac5a",
+        "quote": "本轮融资由 晶科能源战略投资，国投创新、招银国际联合领投，红杉中国、源码资本、光远资本、招商局创投等老股东持续加码",
+        "quote_hash": "76ef591c6d4ca616ce480398a2ba71d5279671714499b7bb2d71a8a86d3f652d"
+      },
+      {
         "source_id": "FISRC-8c073d38e1f34758",
         "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-        "source_title": "星动纪元完成10亿元新一轮融资",
-        "source_content_hash": "e02c1ade45f42e1ffa8e8febb36bda148ac558a328eb4ce356fcab3775bb04d2",
+        "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+        "source_content_hash": "38b0d26a979c4a8e",
         "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
         "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
+      },
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "其中今年2月，千寻连续完成两轮融资近20亿元，集结了云锋基金、某头部国资机构、混沌投资（葛卫东）、红杉中国等超一线机构",
+        "quote_hash": "1f60e74a68f5cc68189d72045bf8489d10d72db3c58d8c54cc51795e25042be0"
+      },
+      {
+        "source_id": "FISRC-67d072b1aca37b5d",
+        "source_url": "https://www.tmtpost.com/7235681.html",
+        "source_title": "Infinigence AI Raises US$ 70.2 Million in Series A Funding Round-钛媒体官方网站",
+        "source_content_hash": "56a87e89ab6a1ab2",
+        "quote": "with support from major investors, including Chinese tech giant Baidu, Zhipu AI, and Sequoia China",
+        "quote_hash": "5838c5af42c09dfd74a2b6534fd65b82678314880b4881423006371a77cb44bf"
       },
       {
         "source_id": "FISRC-5d82f5dc9fc96ce5",
@@ -497,6 +861,22 @@
         "quote_hash": "c94c1593060094ddb0482e11e63a9558f9373f7b6c9fe3405c8283002efb6627"
       },
       {
+        "source_id": "FISRC-80b46378aae68c24",
+        "source_url": "https://finance.sina.com.cn/roll/2026-03-16/doc-inhrevaq9814436.shtml",
+        "source_title": "薇光点亮完成超1亿元Pre-A轮融资",
+        "source_content_hash": "3f3e3c82d29ac541",
+        "quote": "本轮融资由红杉中国、蓝驰创投联合领投，蚂蚁战投、鼎晖投资、鞍羽资本跟投，老股东九合创投持续追投。",
+        "quote_hash": "904259116e332ef4c86f2cc478e1db6d17dbdceb4821cfd2cc9566bdd5a5c3e5"
+      },
+      {
+        "source_id": "FISRC-ee3064edf7c871f4",
+        "source_url": "https://www.qbitai.com/2026/02/381766.html",
+        "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+        "source_content_hash": "0ad2701645471c8d",
+        "quote": "云锋基金、某头部国资机构、混沌投资（葛卫东）、红杉中国 等超一线机构重磅入局",
+        "quote_hash": "0faf051cd648fac87fb0f2e91ccd3baf2cf5214a9242eb2fca58d1406e25b553"
+      },
+      {
         "source_id": "FISRC-daccbed46498e19c",
         "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
         "source_title": "无界动力宣布完成超2亿元天使+轮融资",
@@ -511,14 +891,6 @@
         "source_content_hash": "0c25173fc4c74b1f",
         "quote": "无界动力2025年11月完成3亿元天使轮融资，由红杉中国、线性资本领投",
         "quote_hash": "9892c50eb2be44a65626c41984a0484ddcb5001adc621dc013072979ab7d31a8"
-      },
-      {
-        "source_id": "FISRC-a180899e2f0b58ad",
-        "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
-        "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
-        "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
-        "quote": "红杉中国、北京信息产业发展基金、深创投、南山战新投、锡创投等多家机构联合投资",
-        "quote_hash": "6ad36c8523bad82917df28cd311d2835b0a438bc227f21f74f3ba33f483b68b5"
       }
     ]
   }

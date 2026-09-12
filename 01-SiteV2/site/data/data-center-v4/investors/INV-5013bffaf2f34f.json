@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-5013bffaf2f34f",
+    "name": "工业母机产业投资基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-08-18",
+    "latest_disclosed_at": "2026-08-18",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "series_d_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-85e373a2452916cf",
+        "canonical_entity_id": "",
+        "name": "硕橙（厦门）科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-aebb69eff5f4ec92",
+        "funding_insight_id": "FI-1be3fdfbcf712dbf",
+        "event_ids": [
+          "EV-2e214ba5a4504809"
+        ],
+        "company_entity_id": "EN-85e373a2452916cf",
+        "company_canonical_entity_id": "",
+        "company_name": "硕橙（厦门）科技有限公司",
+        "round": "D+轮",
+        "round_code": "series_d_plus",
+        "round_original": "D+轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-08-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮独家投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-a72d8732b819b541",
+            "source_url": "https://news.pedaily.cn/202608/567800.shtml",
+            "source_title": "硕橙科技完成超亿元D+轮融资，工业母机产业投资基金独家投资",
+            "source_content_hash": "8e0d7f0dfdd827ca",
+            "quote": "本轮由 工业母机产业投资基金独 家投资 。",
+            "quote_hash": "6e736eb031ea03aac7e3e6a4237d17a0784bbc94d063b371a1c46a26c5a9a8e6"
+          },
+          {
+            "source_id": "FISRC-b6356e84b08d6197",
+            "source_url": "https://www.tmtpost.com/index.php/8090423.html",
+            "source_title": "工业AI企业硕橙科技完成超亿元D+轮融资，工业母机产业投资基金领投｜首发-钛媒体官方网站",
+            "source_content_hash": "53b2340f4cfe30b0",
+            "quote": "工业AI企业硕橙科技已于近日完成超亿元D+轮融资，由工业母机产业投资基金独家领投。",
+            "quote_hash": "19168a2f01fd10968c4957ed41d57961458e53294c60f07026150db139cb975b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a72d8732b819b541",
+        "source_url": "https://news.pedaily.cn/202608/567800.shtml",
+        "source_title": "硕橙科技完成超亿元D+轮融资，工业母机产业投资基金独家投资",
+        "source_content_hash": "8e0d7f0dfdd827ca",
+        "quote": "本轮由 工业母机产业投资基金独 家投资 。",
+        "quote_hash": "6e736eb031ea03aac7e3e6a4237d17a0784bbc94d063b371a1c46a26c5a9a8e6"
+      },
+      {
+        "source_id": "FISRC-b6356e84b08d6197",
+        "source_url": "https://www.tmtpost.com/index.php/8090423.html",
+        "source_title": "工业AI企业硕橙科技完成超亿元D+轮融资，工业母机产业投资基金领投｜首发-钛媒体官方网站",
+        "source_content_hash": "53b2340f4cfe30b0",
+        "quote": "工业AI企业硕橙科技已于近日完成超亿元D+轮融资，由工业母机产业投资基金独家领投。",
+        "quote_hash": "19168a2f01fd10968c4957ed41d57961458e53294c60f07026150db139cb975b"
+      }
+    ]
+  }
+}

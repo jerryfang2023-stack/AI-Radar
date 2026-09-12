@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-ff2dcd02d6c271",
+    "name": "敦鸿资产",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-02-23",
+    "latest_disclosed_at": "2026-08-14",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "lead": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b59ef7313eebea39",
+        "canonical_entity_id": "",
+        "name": "原力无限科技控股（浙江）有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-80ffea2494b0cabc",
+        "funding_insight_id": "FI-348de8d897f7b7a5",
+        "event_ids": [
+          "EV-ea916006167c6c43"
+        ],
+        "company_entity_id": "EN-b59ef7313eebea39",
+        "company_canonical_entity_id": "",
+        "company_name": "原力无限科技控股（浙江）有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-08-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9a9fc48b4bf6ac86",
+            "source_url": "https://news.pedaily.cn/202608/567693.shtml",
+            "source_title": "原力无限完成近10亿元融资，「Ego原生世界模型」加速机器人智能进化",
+            "source_content_hash": "5b1f7c29a13359ea",
+            "quote": "本阶段融资由 敦鸿资产及头部国资平台领投，浙大科创集团、盐都国控、丽水市国资公司等产业资本、头部社会资本跟投，创世伙伴创投CCV等老股东持续加注。",
+            "quote_hash": "7c3c2bee4b507f246ceeb1906f5245112017064d4c7f338dbae1941558ca6025"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-212c97c69d726d33",
+        "funding_insight_id": "FI-0421ad5a685ba3b0",
+        "event_ids": [
+          "EV-7620153f4892a0af"
+        ],
+        "company_entity_id": "EN-ce22f929f4a17467",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（深圳）科技股份有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-04-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮老股东加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-967469388bea08ac",
+            "source_url": "http://zs.scbzol.com/zs/2025/0904/323696.html",
+            "source_title": "「智平方」半年完成7轮数亿元融资，普华资本领投A+轮｜普华Portfolio_中商网",
+            "source_content_hash": "2b08aa5077abbff2",
+            "quote": "A+轮融资由普华资本领投，老股东敦鸿资产、国投持续加码",
+            "quote_hash": "e2d55dfef338c69c9c6c7ad0dde23621e2f64148eef8a156925fe12e51e09852"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-040a135a713a5f0a",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "先是1月宣布完成数亿元Pre-A轮战略融资，由达晨财智与敦鸿资产联合领投，基石资本跟投",
+            "quote_hash": "12f82e9a1f119cece3a23b5436524e3e6167f8f266fbd56817a968d005dde16f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-9a9fc48b4bf6ac86",
+        "source_url": "https://news.pedaily.cn/202608/567693.shtml",
+        "source_title": "原力无限完成近10亿元融资，「Ego原生世界模型」加速机器人智能进化",
+        "source_content_hash": "5b1f7c29a13359ea",
+        "quote": "本阶段融资由 敦鸿资产及头部国资平台领投，浙大科创集团、盐都国控、丽水市国资公司等产业资本、头部社会资本跟投，创世伙伴创投CCV等老股东持续加注。",
+        "quote_hash": "7c3c2bee4b507f246ceeb1906f5245112017064d4c7f338dbae1941558ca6025"
+      },
+      {
+        "source_id": "FISRC-967469388bea08ac",
+        "source_url": "http://zs.scbzol.com/zs/2025/0904/323696.html",
+        "source_title": "「智平方」半年完成7轮数亿元融资，普华资本领投A+轮｜普华Portfolio_中商网",
+        "source_content_hash": "2b08aa5077abbff2",
+        "quote": "A+轮融资由普华资本领投，老股东敦鸿资产、国投持续加码",
+        "quote_hash": "e2d55dfef338c69c9c6c7ad0dde23621e2f64148eef8a156925fe12e51e09852"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "先是1月宣布完成数亿元Pre-A轮战略融资，由达晨财智与敦鸿资产联合领投，基石资本跟投",
+        "quote_hash": "12f82e9a1f119cece3a23b5436524e3e6167f8f266fbd56817a968d005dde16f"
+      }
+    ]
+  }
+}

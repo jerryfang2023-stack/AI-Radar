@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-839f6a9744e59c",
+    "name": "力合中科",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "market_regions": [
+      "CN",
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-09-09",
+    "role_counts": {
+      "participant": 2
+    },
+    "round_codes": [
+      "pre_series_a",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-00e5330d08a779e8",
+        "canonical_entity_id": "",
+        "name": "北京共绩科技有限公司"
+      },
+      {
+        "entity_id": "EN-187bf23c29af5e43",
+        "canonical_entity_id": "",
+        "name": "无问智科"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-69e92da9b165282f",
+        "funding_insight_id": "FI-09fda86a59f81440",
+        "event_ids": [
+          "EV-d9e018b58da30912"
+        ],
+        "company_entity_id": "EN-187bf23c29af5e43",
+        "company_canonical_entity_id": "",
+        "company_name": "无问智科",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed89be77100eb6da",
+            "source_url": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html",
+            "source_title": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元",
+            "source_content_hash": "92a793010534b741",
+            "quote": "架桥资本、力合金融、力合中科、澄凯灵澄未来基金等老股东超额追投。",
+            "quote_hash": "2d050aae5c3c0cf2e30edac955aa75d2bb57222bc14efbdc645bdc610e664787"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4e4b19656e9ed513",
+        "funding_insight_id": "FI-69f053ac44d015ab",
+        "event_ids": [
+          "EV-ada36aac02003efe"
+        ],
+        "company_entity_id": "EN-00e5330d08a779e8",
+        "company_canonical_entity_id": "",
+        "company_name": "北京共绩科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3e0fde80ebf2a574",
+            "source_url": "https://www.36kr.com/p/3799065589406724",
+            "source_title": "让算力像用电一样方便，「共绩科技」完成近亿元Pre-A轮融资丨36氪首发-36氪",
+            "source_content_hash": "b4381a675aefc3d2",
+            "quote": "本轮由春华创投、彼岸时代联合领投，力合中科、阿尔法公社跟投",
+            "quote_hash": "1c0be9460d1841fea944178964559ae2d2e24f6b0f1d032c43f990f55be4b08e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ed89be77100eb6da",
+        "source_url": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html",
+        "source_title": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元",
+        "source_content_hash": "92a793010534b741",
+        "quote": "架桥资本、力合金融、力合中科、澄凯灵澄未来基金等老股东超额追投。",
+        "quote_hash": "2d050aae5c3c0cf2e30edac955aa75d2bb57222bc14efbdc645bdc610e664787"
+      },
+      {
+        "source_id": "FISRC-3e0fde80ebf2a574",
+        "source_url": "https://www.36kr.com/p/3799065589406724",
+        "source_title": "让算力像用电一样方便，「共绩科技」完成近亿元Pre-A轮融资丨36氪首发-36氪",
+        "source_content_hash": "b4381a675aefc3d2",
+        "quote": "本轮由春华创投、彼岸时代联合领投，力合中科、阿尔法公社跟投",
+        "quote_hash": "1c0be9460d1841fea944178964559ae2d2e24f6b0f1d032c43f990f55be4b08e"
+      }
+    ]
+  }
+}

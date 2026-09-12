@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-afd87115352b852a",
+    "name": "广州九爪智能科技有限公司近日",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-843f0807558b3d10"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-01-12",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-843f0807558b3d10"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-843f0807558b3d10",
+        "dataDate": "2026-09-12",
+        "date": "2026-01-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "九爪智能完成数千万Pre-A轮融资，白云金控、白云建科联合投资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f10d5954f4decc6b",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-06c066ae19478867",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e2a2b2f439298813",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2428167699c955d6",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9e813abe7cae6844",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-456c78f681117b34",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-ad691fd49d3307e8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a2e247ac5ff050d3",
+            "fundingInsightId": "FI-51728a2a0d1ace5e"
+          }
+        ],
+        "entityIds": [
+          "EN-afd87115352b852a",
+          "EN-ad691fd49d3307e8"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

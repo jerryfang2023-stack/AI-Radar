@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-beba067ca6c724",
+    "name": "耀途资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-06-16",
+    "latest_disclosed_at": "2026-06-16",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-bbdddd2aa8af2ce6",
+        "funding_insight_id": "FI-a385248b0f830a67",
+        "event_ids": [
+          "EV-df17b95cf25e7840"
+        ],
+        "company_entity_id": "EN-062ed8ada14ccffe",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮联合投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-50b5e9b4a45a40c4",
+            "source_url": "https://www.siliconflowcn.com/",
+            "source_title": "SiliconFlow硅基流动官网",
+            "source_content_hash": "20b42b9c0d124bcf",
+            "quote": "2024-01 完成5000万元天使轮融资，由创新工场、耀途资本、奇绩创坛等机构联合投资。",
+            "quote_hash": "dcd270e151c101c7ca4d950e423a51164bdcf0ee37a0644ff7133fb553d78f44"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-50b5e9b4a45a40c4",
+        "source_url": "https://www.siliconflowcn.com/",
+        "source_title": "SiliconFlow硅基流动官网",
+        "source_content_hash": "20b42b9c0d124bcf",
+        "quote": "2024-01 完成5000万元天使轮融资，由创新工场、耀途资本、奇绩创坛等机构联合投资。",
+        "quote_hash": "dcd270e151c101c7ca4d950e423a51164bdcf0ee37a0644ff7133fb553d78f44"
+      }
+    ]
+  }
+}

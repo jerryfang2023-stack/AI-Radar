@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-56e36cbe2dabff",
+    "name": "硅港资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-06-24",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-b3cabfa7a8af2a0b",
+        "funding_insight_id": "FI-a23f361cdc15f347",
+        "event_ids": [
+          "EV-94f334e68144c720"
+        ],
+        "company_entity_id": "EN-6cd75e3a78395793",
+        "company_canonical_entity_id": "",
+        "company_name": "知跃空间智能（无锡）科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-06-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使++++轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7f2f81aa1ff4be86",
+            "source_url": "https://www.163.com/dy/article/KQ181F7O0550B1DU.html",
+            "source_title": "知跃空间智能完成天使++++轮融资|小脑|模拟器|智能机器人_网易订阅",
+            "source_content_hash": "58b7d0b7f29626f0",
+            "quote": "本轮投资方为驰星创投、领屹基金、红鸟启航资本、硅港资本。",
+            "quote_hash": "9e53e7e53743f0f66f8927e46a9b03663c97ec32166d26fa2eee32e0f6827cd5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-7f2f81aa1ff4be86",
+        "source_url": "https://www.163.com/dy/article/KQ181F7O0550B1DU.html",
+        "source_title": "知跃空间智能完成天使++++轮融资|小脑|模拟器|智能机器人_网易订阅",
+        "source_content_hash": "58b7d0b7f29626f0",
+        "quote": "本轮投资方为驰星创投、领屹基金、红鸟启航资本、硅港资本。",
+        "quote_hash": "9e53e7e53743f0f66f8927e46a9b03663c97ec32166d26fa2eee32e0f6827cd5"
+      }
+    ]
+  }
+}

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-e06f474b28feaf",
@@ -20,18 +20,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-02-23",
+    "latest_disclosed_at": "2026-09-03",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 3
     },
     "round_codes": [
       "series_b"
@@ -41,9 +42,134 @@
         "entity_id": "EN-ce22f929f4a17467",
         "canonical_entity_id": "",
         "name": "智平方（AI² Robotics）"
+      },
+      {
+        "entity_id": "EN-90596b71813a2ee2",
+        "canonical_entity_id": "",
+        "name": "智平方（AI² Robotics）"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-95116fc78e276f7c",
+        "funding_insight_id": "FI-d35963e9e0598dc5",
+        "event_ids": [
+          "EV-3c89b467fbcfc498"
+        ],
+        "company_entity_id": "EN-062efa2ab5561309",
+        "company_canonical_entity_id": "",
+        "company_name": "物自体（上海）科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4c6320de89936c7b",
+            "source_url": "https://news.pedaily.cn/202609/568487.shtml",
+            "source_title": "「首发」物自体科技完成新一轮战略融资，以 BOOT 推动企业级 AI 营销从工具走向增长系统",
+            "source_content_hash": "4aab0c4984cc55f6",
+            "quote": "此前，Noumena 已完成数千万元 Pre-A 轮融资，投资方包括狮城资本、百度战投以及靖亚资本。",
+            "quote_hash": "894fcb124652ad17fbe125b89dc4b890efa090c699949b525f6dde33f3e38185"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2899d1d751f88b0d",
+        "funding_insight_id": "FI-0421ad5a685ba3b0",
+        "event_ids": [
+          "EV-7620153f4892a0af"
+        ],
+        "company_entity_id": "EN-ce22f929f4a17467",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（深圳）科技股份有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-04-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-16a5b9f7da3616f3",
+            "source_url": "https://www.robothub.app/zh/companies/zhipingfang",
+            "source_title": "智平方 - 人形机器人公司资料、融资、产品与估值 | RobotHub",
+            "source_content_hash": "52cc6aa7a44aacaf",
+            "quote": "B轮 ¥10.0亿 ¥96.6亿 2026年2月 百度战投、中车资本、宇信科技、森麒麟、沄柏资本、国泰海通基金",
+            "quote_hash": "d8f95d0e975a73eea9bd213facbdb3cf36b652d63a09a1eecfba2973b029d3ba"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5246a47873df35ca",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "投资方颇为豪华：中车资本、百度战投、沄柏资本、国泰海通、多家特斯拉生态链龙头企业及地方基金等。",
+            "quote_hash": "b7bfc4b1670290ef7843f08b9b77bb137831c80b06e105818fc5e8434c25b2da"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cc7d88ff88fa3757",
         "funding_insight_id": "FI-39ef2aaaed606bfe",
@@ -86,6 +212,30 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4c6320de89936c7b",
+        "source_url": "https://news.pedaily.cn/202609/568487.shtml",
+        "source_title": "「首发」物自体科技完成新一轮战略融资，以 BOOT 推动企业级 AI 营销从工具走向增长系统",
+        "source_content_hash": "4aab0c4984cc55f6",
+        "quote": "此前，Noumena 已完成数千万元 Pre-A 轮融资，投资方包括狮城资本、百度战投以及靖亚资本。",
+        "quote_hash": "894fcb124652ad17fbe125b89dc4b890efa090c699949b525f6dde33f3e38185"
+      },
+      {
+        "source_id": "FISRC-16a5b9f7da3616f3",
+        "source_url": "https://www.robothub.app/zh/companies/zhipingfang",
+        "source_title": "智平方 - 人形机器人公司资料、融资、产品与估值 | RobotHub",
+        "source_content_hash": "52cc6aa7a44aacaf",
+        "quote": "B轮 ¥10.0亿 ¥96.6亿 2026年2月 百度战投、中车资本、宇信科技、森麒麟、沄柏资本、国泰海通基金",
+        "quote_hash": "d8f95d0e975a73eea9bd213facbdb3cf36b652d63a09a1eecfba2973b029d3ba"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "投资方颇为豪华：中车资本、百度战投、沄柏资本、国泰海通、多家特斯拉生态链龙头企业及地方基金等。",
+        "quote_hash": "b7bfc4b1670290ef7843f08b9b77bb137831c80b06e105818fc5e8434c25b2da"
+      },
       {
         "source_id": "FISRC-2b8807c0477dce70",
         "source_url": "https://finance.sina.com.cn/roll/2026-02-23/doc-inhnvivh9606202.shtml",

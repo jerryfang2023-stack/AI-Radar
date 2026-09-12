@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-1d368de01c1dcd",
@@ -20,18 +20,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
+    "china_market_activity_count": 2,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-03-05",
     "latest_disclosed_at": "2026-03-05",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "pre_series_b"
@@ -44,6 +44,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2ef028152496ac55",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
+            "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-131e4a19c32c568a",
         "funding_insight_id": "FI-129fe046eadd748c",
@@ -86,6 +126,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
+        "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
+      },
       {
         "source_id": "FISRC-db6013f462f8cf53",
         "source_url": "https://finance.eastmoney.com/a/202603053663114060.html",

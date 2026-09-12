@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-a41e10ec1d7bc5",
+    "name": "基石资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-02-23",
+    "latest_disclosed_at": "2026-07-02",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "strategic"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-60d2cc785c19e818",
+        "canonical_entity_id": "",
+        "name": "北京三启万物科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-b92c493b05add928",
+        "funding_insight_id": "FI-b1494fe383b9e92d",
+        "event_ids": [
+          "EV-e8f381baf505ac32"
+        ],
+        "company_entity_id": "EN-60d2cc785c19e818",
+        "company_canonical_entity_id": "",
+        "company_name": "北京三启万物科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "10亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a4dbd49c64cb5834",
+            "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+            "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+            "source_content_hash": "3e7e05417d6a96b1",
+            "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+            "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-88399eb96255f703",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "先是1月宣布完成数亿元Pre-A轮战略融资，由达晨财智与敦鸿资产联合领投，基石资本跟投",
+            "quote_hash": "12f82e9a1f119cece3a23b5436524e3e6167f8f266fbd56817a968d005dde16f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a4dbd49c64cb5834",
+        "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+        "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+        "source_content_hash": "3e7e05417d6a96b1",
+        "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
+        "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "先是1月宣布完成数亿元Pre-A轮战略融资，由达晨财智与敦鸿资产联合领投，基石资本跟投",
+        "quote_hash": "12f82e9a1f119cece3a23b5436524e3e6167f8f266fbd56817a968d005dde16f"
+      }
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[1].role": {
+          "text": "Pre-A轮跟投",
+          "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:49.993Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

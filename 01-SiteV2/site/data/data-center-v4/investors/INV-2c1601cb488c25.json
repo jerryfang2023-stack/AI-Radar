@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-2c1601cb488c25",
+    "name": "海南省国资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "government_fund",
+    "investor_kind_label": "政府或主权基金",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-02-02",
+    "latest_disclosed_at": "2026-02-02",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-b1ba8028b2c4887c",
+        "funding_insight_id": "FI-afd3b8c3d49ef1af",
+        "event_ids": [
+          "EV-3c408fe984c73089"
+        ],
+        "company_entity_id": "EN-a3b8fbb2200a105a",
+        "company_canonical_entity_id": "",
+        "company_name": "卓世科技（海南）股份有限公司",
+        "round": "Pre-IPO",
+        "round_code": "pre_ipo",
+        "round_original": "Pre-IPO",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-02-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0ef31ab978027876",
+            "source_url": "https://www.maas.com.cn/news/830.html",
+            "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
+            "source_content_hash": "2de2062a07393a96",
+            "quote": "卓世科技投资人中既有知名投资机构同创伟业、中关村资本，也有用友集团等上市公司，还有清华系力合资本、启迪之星等机构，同时获得了海南省国资、青岛市国资等产业基金加持。",
+            "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-0ef31ab978027876",
+        "source_url": "https://www.maas.com.cn/news/830.html",
+        "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
+        "source_content_hash": "2de2062a07393a96",
+        "quote": "卓世科技投资人中既有知名投资机构同创伟业、中关村资本，也有用友集团等上市公司，还有清华系力合资本、启迪之星等机构，同时获得了海南省国资、青岛市国资等产业基金加持。",
+        "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
+      }
+    ]
+  }
+}

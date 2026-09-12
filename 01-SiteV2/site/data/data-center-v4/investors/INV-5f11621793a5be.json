@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-5f11621793a5be",
+    "name": "拙朴投资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-01-06",
+    "latest_disclosed_at": "2026-06-26",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a7f65fe198e0bd2c",
+        "canonical_entity_id": "",
+        "name": "上海密瓜智能科技有限公司（“密瓜智能”）"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-982dfff97c54841b",
+        "funding_insight_id": "FI-2a47fffabd6bfe6b",
+        "event_ids": [
+          "EV-88158ddf272e4731"
+        ],
+        "company_entity_id": "EN-f0a77f08b0db14ab",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳欧拉万象科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超过亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-06-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-62bfb7c7dd37177e",
+            "source_url": "https://www.163.com/dy/article/KUTU3HNL05118HJE.html",
+            "source_title": "家庭具身智能产品研发商欧拉万象完成超亿元天使轮融资|创投|风投_网易订阅",
+            "source_content_hash": "1504db64e6fbe2f3",
+            "quote": "5月该公司完成数亿元融资，由招商局创投领投，赛富投资、九合创投、拙朴投资、百度风投（BV）、聚合投资等联合投资。",
+            "quote_hash": "4ccd9855d3f084756e70a0931c0b6ef98ff6fa69d7984f565a57d23f9b436ed5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3fdede936d4ba54f",
+        "funding_insight_id": "FI-2dc6218ad9693a34",
+        "event_ids": [
+          "EV-60d94c0d990d04ca"
+        ],
+        "company_entity_id": "EN-a7f65fe198e0bd2c",
+        "company_canonical_entity_id": "",
+        "company_name": "上海密瓜智能科技有限公司（“密瓜智能”）",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-01-06",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-04376bee59ee7c19",
+            "source_url": "https://news.pedaily.cn/202601/559551.shtml",
+            "source_title": "密瓜智能获数千万元天使轮融资，复星创富领投",
+            "source_content_hash": "0da15a2de9a64982",
+            "quote": "拙朴投资、种子投资人及产业方 强力跟投",
+            "quote_hash": "56f791484685345935ea55228217746499f451b9c72f856efd35886286be539b"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-62bfb7c7dd37177e",
+        "source_url": "https://www.163.com/dy/article/KUTU3HNL05118HJE.html",
+        "source_title": "家庭具身智能产品研发商欧拉万象完成超亿元天使轮融资|创投|风投_网易订阅",
+        "source_content_hash": "1504db64e6fbe2f3",
+        "quote": "5月该公司完成数亿元融资，由招商局创投领投，赛富投资、九合创投、拙朴投资、百度风投（BV）、聚合投资等联合投资。",
+        "quote_hash": "4ccd9855d3f084756e70a0931c0b6ef98ff6fa69d7984f565a57d23f9b436ed5"
+      },
+      {
+        "source_id": "FISRC-04376bee59ee7c19",
+        "source_url": "https://news.pedaily.cn/202601/559551.shtml",
+        "source_title": "密瓜智能获数千万元天使轮融资，复星创富领投",
+        "source_content_hash": "0da15a2de9a64982",
+        "quote": "拙朴投资、种子投资人及产业方 强力跟投",
+        "quote_hash": "56f791484685345935ea55228217746499f451b9c72f856efd35886286be539b"
+      }
+    ]
+  }
+}

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-d728862922bb4d",
@@ -20,25 +20,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 2,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 10,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-09-11",
     "role_counts": {
-      "historical_or_ambiguous": 4,
-      "participant": 2
+      "historical_or_ambiguous": 10,
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
-      "other"
+      "other",
+      "series_a_plus",
+      "series_b2"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e7492db096492304",
+        "canonical_entity_id": "",
+        "name": "极佳视界"
+      },
       {
         "entity_id": "EN-6862b0d243051cd3",
         "canonical_entity_id": "",
@@ -51,6 +58,166 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7cc93cff9ac68ff2",
+        "funding_insight_id": "FI-8bb77ef557b4754b",
+        "event_ids": [
+          "EV-0cc745a319a25f6e"
+        ],
+        "company_entity_id": "EN-42ba84199bafa1f1",
+        "company_canonical_entity_id": "",
+        "company_name": "昂听 ELEHEAR",
+        "round": "A2轮",
+        "round_code": "series_a2",
+        "round_original": "A2轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-af6450eccd94a9e8",
+            "source_url": "https://www.baijing.cn/article/55915",
+            "source_title": "福布斯健康榜第一，深圳AI助听器出海火了",
+            "source_content_hash": "234184742f42feb3",
+            "quote": "ELEHEAR 在 2024 年完成来自达晨财智的天使轮融资",
+            "quote_hash": "7a45eb02f52de92fbb4039fb789eb92b4cd80f62402f0442c8c26fb1a969e01d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-61465e864281353c",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-09c3ca37737a71ce",
+            "source_url": "https://stcn.com/article/detail/3386786.html",
+            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+            "source_content_hash": "edea92990a31710b",
+            "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+            "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c8024582c374c302",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "国中资本、达晨财智、图灵资管等多个老股东持续超额加注",
+            "quote_hash": "dce935c06fce5425156b93b1b31d4ac97ff305070d2c8f29d10845c372e5c8f8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6a5ba6a2a3cc43c4",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A2轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "一个月后，公司完成2亿元A2轮融资，由达晨财智领投",
+            "quote_hash": "6fe7e7dd813f70e04f1a37b80e1711ca46f84b46e093d37861b9356086f1a483"
+          }
+        ]
+      },
       {
         "activity_id": "IA-dadb5c1cb160430d",
         "funding_insight_id": "FI-ab64a33b7d572f85",
@@ -132,6 +299,46 @@
         ]
       },
       {
+        "activity_id": "IA-a6e3f1938150eabc",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "投资方包括顺为资本、绿洲资本、弘晖基金、达晨财智、千乘资本以及宁德时代联合创始人、副董事长李平出资创办的柏睿资本等",
+            "quote_hash": "7de5492297b7e2b353edc59b49029cd0b025a8fc0487ca829755ba110c67ec68"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-066245e3a8930aff",
         "funding_insight_id": "FI-f4cf69e8d2cc7653",
         "event_ids": [
@@ -172,16 +379,16 @@
         ]
       },
       {
-        "activity_id": "IA-9d4d9512b0ca1ac4",
-        "funding_insight_id": "FI-4aaa0f3788c81d32",
+        "activity_id": "IA-be04d620100aeba7",
+        "funding_insight_id": "FI-265930da26c14510",
         "event_ids": [
           "EV-60d58e2a1f5733f8"
         ],
         "company_entity_id": "EN-1032f7a4df33f629",
         "company_canonical_entity_id": "EN-1032f7a4df33f629",
         "company_name": "千寻智能",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
         "round_original": "A+轮",
         "amount_original": "10亿元",
         "amount_normalized": {
@@ -208,6 +415,46 @@
             "source_content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
             "quote": "达晨财智、某头部人民币基金、银河源汇等机构重磅加持",
             "quote_hash": "16bda2a54bc3551f4aecbb2b3e998631edd16de61b42d79b10cf70d5427da7e6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0bea310969f0ca7c",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A2轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "时隔一个月后，极佳视界完成2亿元A2轮融资，由达晨财智领投，老股东华控基金联合领投",
+            "quote_hash": "f0a8bef4a81a56f7c3597464c7b29d207a1ee00c97d4cd1b0a7453dbeb2ec684"
           }
         ]
       },
@@ -248,6 +495,86 @@
             "source_content_hash": "7e8c3e23c6fe0f92",
             "quote": "中金资本、达晨财智、华控基金、奇绩创坛等众多财务机构的认可，体现了极佳视界的领先性和行业地位",
             "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-edd6cb678f1a693d",
+        "funding_insight_id": "FI-846562dfba15b6a0",
+        "event_ids": [
+          "EV-61f07716fd7cb7ee"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "两轮融资",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ee3064edf7c871f4",
+            "source_url": "https://www.qbitai.com/2026/02/381766.html",
+            "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+            "source_content_hash": "0ad2701645471c8d",
+            "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
+            "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a9a9cc41c087f396",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "先是1月宣布完成数亿元Pre-A轮战略融资，由达晨财智与敦鸿资产联合领投，基石资本跟投",
+            "quote_hash": "12f82e9a1f119cece3a23b5436524e3e6167f8f266fbd56817a968d005dde16f"
           }
         ]
       },
@@ -294,6 +621,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-af6450eccd94a9e8",
+        "source_url": "https://www.baijing.cn/article/55915",
+        "source_title": "福布斯健康榜第一，深圳AI助听器出海火了",
+        "source_content_hash": "234184742f42feb3",
+        "quote": "ELEHEAR 在 2024 年完成来自达晨财智的天使轮融资",
+        "quote_hash": "7a45eb02f52de92fbb4039fb789eb92b4cd80f62402f0442c8c26fb1a969e01d"
+      },
+      {
+        "source_id": "FISRC-09c3ca37737a71ce",
+        "source_url": "https://stcn.com/article/detail/3386786.html",
+        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+        "source_content_hash": "edea92990a31710b",
+        "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+        "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+      },
+      {
         "source_id": "FISRC-ce47b663ca256878",
         "source_url": "https://news.pedaily.cn/202606/565201.shtml",
         "source_title": "极佳视界三个月完成35亿元B轮系列融资",
@@ -308,6 +651,14 @@
         "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
         "quote": "一个月后，公司完成2亿元A2轮融资，由达晨财智领投",
         "quote_hash": "6fe7e7dd813f70e04f1a37b80e1711ca46f84b46e093d37861b9356086f1a483"
+      },
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "投资方包括顺为资本、绿洲资本、弘晖基金、达晨财智、千乘资本以及宁德时代联合创始人、副董事长李平出资创办的柏睿资本等",
+        "quote_hash": "7de5492297b7e2b353edc59b49029cd0b025a8fc0487ca829755ba110c67ec68"
       },
       {
         "source_id": "FISRC-4782a6093d519a4d",
@@ -326,12 +677,36 @@
         "quote_hash": "16bda2a54bc3551f4aecbb2b3e998631edd16de61b42d79b10cf70d5427da7e6"
       },
       {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "时隔一个月后，极佳视界完成2亿元A2轮融资，由达晨财智领投，老股东华控基金联合领投",
+        "quote_hash": "f0a8bef4a81a56f7c3597464c7b29d207a1ee00c97d4cd1b0a7453dbeb2ec684"
+      },
+      {
         "source_id": "FISRC-010c77e94d1f858f",
         "source_url": "https://m.36kr.com/p/3710076436557954",
         "source_title": "极佳视界完成10亿元Pre-B轮融资，「世界模型」驱动通用机器人加速进入 ...",
         "source_content_hash": "7e8c3e23c6fe0f92",
         "quote": "中金资本、达晨财智、华控基金、奇绩创坛等众多财务机构的认可，体现了极佳视界的领先性和行业地位",
         "quote_hash": "75a5b839e2f0bec8e961daac6585a0bdb1935daf8087f235a0f91215c2c50d1c"
+      },
+      {
+        "source_id": "FISRC-ee3064edf7c871f4",
+        "source_url": "https://www.qbitai.com/2026/02/381766.html",
+        "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+        "source_content_hash": "0ad2701645471c8d",
+        "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
+        "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "先是1月宣布完成数亿元Pre-A轮战略融资，由达晨财智与敦鸿资产联合领投，基石资本跟投",
+        "quote_hash": "12f82e9a1f119cece3a23b5436524e3e6167f8f266fbd56817a968d005dde16f"
       },
       {
         "source_id": "FISRC-f6dd24cc4ca544d8",

@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-1c4b7da2eac80088",
+    "name": "AI驱动的蛋白质研发平台企业上海天鹜科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-5812765de6753bf7",
+      "EV-b732caa990fa0a79"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-13",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-5812765de6753bf7",
+        "EV-b732caa990fa0a79"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-5812765de6753bf7",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "天鹜科技完成数亿元A++轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-43a99acf124e2c11"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-de1bf1cb2e19aed5",
+            "fundingInsightId": "FI-94a76e0987ff7f47"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-43a99acf124e2c11"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e53e6dc801634196",
+            "fundingInsightId": "FI-94a76e0987ff7f47"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-43a99acf124e2c11"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-96e33aeee3d3dfc0",
+            "fundingInsightId": "FI-94a76e0987ff7f47"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-43a99acf124e2c11"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-414cc6e160f6adbe",
+            "fundingInsightId": "FI-94a76e0987ff7f47"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-43a99acf124e2c11"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c1bc5547d36ab7ed",
+            "fundingInsightId": "FI-94a76e0987ff7f47"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-43a99acf124e2c11"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-46ce52cb54f1b57f",
+            "fundingInsightId": "FI-94a76e0987ff7f47"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-43a99acf124e2c11"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5c83740565ea3d67",
+            "fundingInsightId": "FI-94a76e0987ff7f47"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-43a99acf124e2c11"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7866ebcbeb1aecca",
+            "fundingInsightId": "FI-94a76e0987ff7f47"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-43a99acf124e2c11"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-20e7ff2a0b7fdcbe",
+            "fundingInsightId": "FI-94a76e0987ff7f47"
+          }
+        ],
+        "entityIds": [
+          "EN-43a99acf124e2c11",
+          "EN-1c4b7da2eac80088"
+        ]
+      },
+      {
+        "id": "EV-b732caa990fa0a79",
+        "dataDate": "2026-09-12",
+        "date": "2026-07-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-ff37e56ba8f7d89c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e2f8952d8f8f4318",
+            "fundingInsightId": "FI-0ae034e1dd5995da"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-ff37e56ba8f7d89c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-991a0ffb4cbcba22",
+            "fundingInsightId": "FI-0ae034e1dd5995da"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-ff37e56ba8f7d89c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-15ea62a8a9458d27",
+            "fundingInsightId": "FI-0ae034e1dd5995da"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-ff37e56ba8f7d89c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3addfac681dd9e3e",
+            "fundingInsightId": "FI-0ae034e1dd5995da"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-ff37e56ba8f7d89c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-dfe10aed3ec68647",
+            "fundingInsightId": "FI-0ae034e1dd5995da"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-ff37e56ba8f7d89c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c67775805c3ec7a6",
+            "fundingInsightId": "FI-0ae034e1dd5995da"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-ff37e56ba8f7d89c"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-edb59b6901a57220",
+            "fundingInsightId": "FI-0ae034e1dd5995da"
+          }
+        ],
+        "entityIds": [
+          "EN-1c4b7da2eac80088",
+          "EN-ff37e56ba8f7d89c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

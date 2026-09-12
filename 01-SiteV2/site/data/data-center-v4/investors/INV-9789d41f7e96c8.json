@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-9789d41f7e96c8",
+    "name": "上海国际集团旗下国方创新",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-01-29",
+    "latest_disclosed_at": "2026-01-29",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c5896393cf4ac788",
+        "canonical_entity_id": "",
+        "name": "北京长亭科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-64a40f573d4e3838",
+        "funding_insight_id": "FI-1a9c2af7ff669e40",
+        "event_ids": [
+          "EV-53ffdce6405b8ba9"
+        ],
+        "company_entity_id": "EN-c5896393cf4ac788",
+        "company_canonical_entity_id": "",
+        "company_name": "北京长亭科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "政府及产业融资",
+        "amount_original": "5亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿元"
+        },
+        "announced_at": "2026-01-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4fe23845696fb5f2",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-01-29/doc-inhiyffv6659017.shtml",
+            "source_title": "长亭科技宣布完成最新一轮5亿元融资",
+            "source_content_hash": "b764c6638c521cc9",
+            "quote": "投资人包括国家人工智能产业投资基金，上海国际集团旗下国方创新，北京市人工智能产业投资基金。",
+            "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4fe23845696fb5f2",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-01-29/doc-inhiyffv6659017.shtml",
+        "source_title": "长亭科技宣布完成最新一轮5亿元融资",
+        "source_content_hash": "b764c6638c521cc9",
+        "quote": "投资人包括国家人工智能产业投资基金，上海国际集团旗下国方创新，北京市人工智能产业投资基金。",
+        "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
+      }
+    ]
+  }
+}

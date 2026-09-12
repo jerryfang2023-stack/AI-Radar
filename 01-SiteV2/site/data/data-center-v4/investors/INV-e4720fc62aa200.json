@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-e4720fc62aa200",
+    "name": "商汤国香资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-31",
+    "latest_disclosed_at": "2026-07-31",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f1de3226b9e510ac",
+        "canonical_entity_id": "",
+        "name": "杭州昆腾动力智能有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-2f412af56cb70c63",
+        "funding_insight_id": "FI-0f172a51aed019fe",
+        "event_ids": [
+          "EV-7c3e301d345f8c2d"
+        ],
+        "company_entity_id": "EN-f1de3226b9e510ac",
+        "company_canonical_entity_id": "",
+        "company_name": "杭州昆腾动力智能有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-07-31",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-acc5f267b943773d",
+            "source_url": "https://news.pedaily.cn/202607/567074.shtml",
+            "source_title": "昆腾动力完成超亿元种子轮融资，定义部署驱动的Physical AI平台",
+            "source_content_hash": "291f515f8155da84",
+            "quote": "本轮由 云启资本、商汤 国香资本 联合投资 。",
+            "quote_hash": "7db7f30359c3d54a534e9a21f65ad10862b6a9c8fb8eb5254aa06577ffaa2f02"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-acc5f267b943773d",
+        "source_url": "https://news.pedaily.cn/202607/567074.shtml",
+        "source_title": "昆腾动力完成超亿元种子轮融资，定义部署驱动的Physical AI平台",
+        "source_content_hash": "291f515f8155da84",
+        "quote": "本轮由 云启资本、商汤 国香资本 联合投资 。",
+        "quote_hash": "7db7f30359c3d54a534e9a21f65ad10862b6a9c8fb8eb5254aa06577ffaa2f02"
+      }
+    ]
+  }
+}

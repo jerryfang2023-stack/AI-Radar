@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-8e2043c5fb5fde",
@@ -20,31 +20,78 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 6,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-03-05",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-02-11",
     "latest_disclosed_at": "2026-06-15",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 4
+      "historical_or_ambiguous": 6,
+      "participant": 1
     },
     "round_codes": [
-      "other"
+      "series_b",
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-7d0445227e7dde72",
         "canonical_entity_id": "",
         "name": "北京小雨智造科技有限公司"
+      },
+      {
+        "entity_id": "EN-a6e5382c05dd0d16",
+        "canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "name": "星海图"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3507fc3cf4a792f9",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使及天使+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、普超资本、PKSHA Algorithm Fund等机构投资",
+            "quote_hash": "9b9ce628f2153be8091acaf7f0dc51a7b8b7ba876c6095049a8b94630f2cfb97"
+          }
+        ]
+      },
       {
         "activity_id": "IA-bb8199bb2c8bfa5f",
         "funding_insight_id": "FI-ab64a33b7d572f85",
@@ -86,16 +133,16 @@
         ]
       },
       {
-        "activity_id": "IA-b931e23e34de05d1",
-        "funding_insight_id": "FI-bd8fb7f7d61ed08d",
+        "activity_id": "IA-9d5d31d002a57963",
+        "funding_insight_id": "FI-b2b578ba2d5dc007",
         "event_ids": [
           "EV-be59d9048dd1b6a0"
         ],
         "company_entity_id": "EN-7d0445227e7dde72",
         "company_canonical_entity_id": "",
         "company_name": "北京小雨智造科技有限公司",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "数亿元",
         "amount_normalized": {
@@ -166,16 +213,17 @@
         ]
       },
       {
-        "activity_id": "IA-6cf26f34caf0be40",
-        "funding_insight_id": "FI-af2461a497e30ffa",
+        "activity_id": "IA-94f2df4fb11da5bb",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
         "event_ids": [
+          "EV-0ff10475efa53e6c",
           "EV-435d7e7878b0c326"
         ],
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "20亿元",
         "amount_normalized": {
@@ -196,12 +244,52 @@
         "role_code": "historical_or_ambiguous",
         "evidence": [
           {
-            "source_id": "FISRC-1d57bbe4edb9e812",
-            "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
-            "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
-            "source_content_hash": "5cf2794be5d5263d",
-            "quote": "星海图 完成10亿元B轮融资，本轮投资方包括 金鼎资本 、 北汽产投 、 碧鸿投资",
-            "quote_hash": "2af2ed003408a02b1807a790da4a1e9d07ca519daa62dd7b6a0894f258581bc5"
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "在2月官宣了10亿元B轮融资，新进金鼎资本、北汽产投、碧鸿投资、正心谷资本、前海方舟、毅峰资本等投资方",
+            "quote_hash": "360fdf1c182d8d3f25c378ae2cfc9fe9f5f673d8563b4a595dc1d0f4783c76e1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-62611b87be55e28d",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使及天使+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资。",
+            "quote_hash": "2db23ccce73f645f5bdf318d44d7566a1e0f479b61c7e9a92db361a49088c279"
           }
         ]
       },
@@ -244,9 +332,57 @@
             "quote_hash": "0ea380a9c10763e7080ab1ff1846017ebdd71f416d39ca7c8be95e9f6eba08c3"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d8ae18a7b7c5c1d1",
+        "funding_insight_id": "FI-d5293ab06cfaa935",
+        "event_ids": [
+          "EV-371bc68f72326c02"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2707f48aa6e437b7",
+            "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+            "source_title": "清华90后带队，刚刚星海图又融10亿",
+            "source_content_hash": "85e4d40faa23c515",
+            "quote": "星海图宣布完成10亿元B轮融资，投资方阵容豪华——包括金鼎资本、北汽产投、碧鸿投资等一线产业资本",
+            "quote_hash": "535ecab1b0eaadc537213a68849defa3cbc6d153ce94c714a49d02fa4808ed1d"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+        "source_content_hash": "a652909321da946b",
+        "quote": "2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、普超资本、PKSHA Algorithm Fund等机构投资",
+        "quote_hash": "9b9ce628f2153be8091acaf7f0dc51a7b8b7ba876c6095049a8b94630f2cfb97"
+      },
       {
         "source_id": "FISRC-ce47b663ca256878",
         "source_url": "https://news.pedaily.cn/202606/565201.shtml",
@@ -272,12 +408,20 @@
         "quote_hash": "f248e4020c87a3fcbc494e48fca7345bb5a100001eda55988f8393321e524d14"
       },
       {
-        "source_id": "FISRC-1d57bbe4edb9e812",
-        "source_url": "https://companies.caixin.com/2026-02-11/102413493.html",
-        "source_title": "具身智能公司星海图完成10亿元B轮融资_公司频道_财新网",
-        "source_content_hash": "5cf2794be5d5263d",
-        "quote": "星海图 完成10亿元B轮融资，本轮投资方包括 金鼎资本 、 北汽产投 、 碧鸿投资",
-        "quote_hash": "2af2ed003408a02b1807a790da4a1e9d07ca519daa62dd7b6a0894f258581bc5"
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "在2月官宣了10亿元B轮融资，新进金鼎资本、北汽产投、碧鸿投资、正心谷资本、前海方舟、毅峰资本等投资方",
+        "quote_hash": "360fdf1c182d8d3f25c378ae2cfc9fe9f5f673d8563b4a595dc1d0f4783c76e1"
+      },
+      {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资。",
+        "quote_hash": "2db23ccce73f645f5bdf318d44d7566a1e0f479b61c7e9a92db361a49088c279"
       },
       {
         "source_id": "FISRC-010c77e94d1f858f",
@@ -286,6 +430,14 @@
         "source_content_hash": "7e8c3e23c6fe0f92",
         "quote": "华为哈勃、中芯聚源、北汽产投、PKSHA等全球顶尖产业资本，为公司战略布局和产业拓展提供了重要的价值",
         "quote_hash": "0ea380a9c10763e7080ab1ff1846017ebdd71f416d39ca7c8be95e9f6eba08c3"
+      },
+      {
+        "source_id": "FISRC-2707f48aa6e437b7",
+        "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+        "source_title": "清华90后带队，刚刚星海图又融10亿",
+        "source_content_hash": "85e4d40faa23c515",
+        "quote": "星海图宣布完成10亿元B轮融资，投资方阵容豪华——包括金鼎资本、北汽产投、碧鸿投资等一线产业资本",
+        "quote_hash": "535ecab1b0eaadc537213a68849defa3cbc6d153ce94c714a49d02fa4808ed1d"
       }
     ]
   }

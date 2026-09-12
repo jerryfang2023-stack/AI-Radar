@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-6fa5593366f74e",
@@ -20,24 +20,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
-    "first_disclosed_at": "2026-07-02",
-    "latest_disclosed_at": "2026-07-13",
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
+    "first_disclosed_at": "2026-04-13",
+    "latest_disclosed_at": "2026-09-11",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
+      "lead": 2,
       "participant": 2
     },
     "round_codes": [
-      "pre_series_a"
+      "pre_series_a",
+      "series_a1"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-272d534804dc22a4",
+        "canonical_entity_id": "",
+        "name": "华毅瀛飞（北京）光电科技有限公司"
+      },
       {
         "entity_id": "EN-7f505bc9744206fd",
         "canonical_entity_id": "",
@@ -47,9 +54,94 @@
         "entity_id": "EN-634537cdabd4e325",
         "canonical_entity_id": "",
         "name": "苏州乐享智能科技有限公司"
+      },
+      {
+        "entity_id": "EN-ecf226574e481ea7",
+        "canonical_entity_id": "",
+        "name": "听象科技/昂听（ELEHEAR）"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1eb80d5a7cd576a1",
+        "funding_insight_id": "FI-8bb77ef557b4754b",
+        "event_ids": [
+          "EV-0cc745a319a25f6e"
+        ],
+        "company_entity_id": "EN-42ba84199bafa1f1",
+        "company_canonical_entity_id": "",
+        "company_name": "昂听 ELEHEAR",
+        "round": "A2轮",
+        "round_code": "series_a2",
+        "round_original": "A2轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A1轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5ba892cc4cd3496f",
+            "source_url": "https://www.cyzone.cn/article/846160.html",
+            "source_title": "昂听ELEHEAR 完成数千万元新一轮融资，C资本领投",
+            "source_content_hash": "8964aa6d1b5771e5",
+            "quote": "继完成元禾璞华领投的数千万元A1轮融资后，昂听 ELEHEAR 再度完成数千万元的A2轮融资",
+            "quote_hash": "d554b8fc24824d3a482b3eaea4822a0492af65ac743f495a461f942935171e2d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3f0efbadb8bb4210",
+        "funding_insight_id": "FI-489d15d001722d8d",
+        "event_ids": [
+          "EV-a99c491c33412dc2"
+        ],
+        "company_entity_id": "EN-ecf226574e481ea7",
+        "company_canonical_entity_id": "",
+        "company_name": "听象科技/昂听（ELEHEAR）",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ca175ac9946013a",
+            "source_url": "https://news.pedaily.cn/202608/567233.shtml",
+            "source_title": "听象科技（昂听Elehear） 完成数千万元新一轮融资，加速声学与AI算法研发",
+            "source_content_hash": "adf84267d0f50be0",
+            "quote": "本轮融资由元禾璞华领投。",
+            "quote_hash": "1b239c4f8a829228f7dfea1f8380de925600a97494672813a102616689cdfcdd"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6c1dcf606bedd196",
         "funding_insight_id": "FI-3923d1a4fc2b8a40",
@@ -169,9 +261,65 @@
             "quote_hash": "949e52ed7fc91c5c391dca3ae63929572d980eedeba18df216921656cc4e27f5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-7d8f6bf725b3c662",
+        "funding_insight_id": "FI-8ca5a4680f477ab8",
+        "event_ids": [
+          "EV-fd2ff833db684e40"
+        ],
+        "company_entity_id": "EN-272d534804dc22a4",
+        "company_canonical_entity_id": "",
+        "company_name": "华毅瀛飞（北京）光电科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-04-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-13a43855ea188967",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
+            "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
+            "source_content_hash": "16a36ffc37b94da5",
+            "quote": "本轮融资由国内知名半导体投资基金元禾璞华领投",
+            "quote_hash": "c5e5619781c66e51fd41af5106ee1f151080733150d0d04861ef0b5f7c5f015f"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5ba892cc4cd3496f",
+        "source_url": "https://www.cyzone.cn/article/846160.html",
+        "source_title": "昂听ELEHEAR 完成数千万元新一轮融资，C资本领投",
+        "source_content_hash": "8964aa6d1b5771e5",
+        "quote": "继完成元禾璞华领投的数千万元A1轮融资后，昂听 ELEHEAR 再度完成数千万元的A2轮融资",
+        "quote_hash": "d554b8fc24824d3a482b3eaea4822a0492af65ac743f495a461f942935171e2d"
+      },
+      {
+        "source_id": "FISRC-1ca175ac9946013a",
+        "source_url": "https://news.pedaily.cn/202608/567233.shtml",
+        "source_title": "听象科技（昂听Elehear） 完成数千万元新一轮融资，加速声学与AI算法研发",
+        "source_content_hash": "adf84267d0f50be0",
+        "quote": "本轮融资由元禾璞华领投。",
+        "quote_hash": "1b239c4f8a829228f7dfea1f8380de925600a97494672813a102616689cdfcdd"
+      },
       {
         "source_id": "FISRC-760e793448781182",
         "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
@@ -195,6 +343,14 @@
         "source_content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
         "quote": "产业资方吉利资本、 三七互娱 ，元禾璞华跟投",
         "quote_hash": "949e52ed7fc91c5c391dca3ae63929572d980eedeba18df216921656cc4e27f5"
+      },
+      {
+        "source_id": "FISRC-13a43855ea188967",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
+        "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
+        "source_content_hash": "16a36ffc37b94da5",
+        "quote": "本轮融资由国内知名半导体投资基金元禾璞华领投",
+        "quote_hash": "c5e5619781c66e51fd41af5106ee1f151080733150d0d04861ef0b5f7c5f015f"
       }
     ]
   }

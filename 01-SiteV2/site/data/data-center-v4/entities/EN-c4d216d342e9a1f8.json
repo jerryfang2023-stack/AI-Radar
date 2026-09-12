@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "entity": {
     "id": "EN-c4d216d342e9a1f8",
@@ -54,6 +54,30 @@
         "title": "哈工程教授创业，天使轮融资亿元，做水下机器人｜参与蛟龙号、航母推进器研发，2024 年郭春雨创办工至海洋，造仿生水下机器人 \"河图\"。也许仿生，才是水下具身智能的终极形态。",
         "displayTags": [
           {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-3b07d7518a8133fa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2af779a6227de357",
+            "fundingInsightId": "FI-8c8ee74e8009aabe"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-3b07d7518a8133fa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ecb18c4d0370dc3d",
+            "fundingInsightId": "FI-8c8ee74e8009aabe"
+          },
+          {
             "dimensionId": "use_case",
             "dimensionName": "应用场景",
             "id": "physical_automation",
@@ -61,8 +85,57 @@
             "entityIds": [
               "EN-3b07d7518a8133fa"
             ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b86e035384eaca02",
+            "fundingInsightId": "FI-8c8ee74e8009aabe"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-3b07d7518a8133fa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bf63c6ba032fe492",
+            "fundingInsightId": "FI-8c8ee74e8009aabe"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [
+              "EN-3b07d7518a8133fa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-96d6a288dd27909d",
+            "fundingInsightId": "FI-8c8ee74e8009aabe"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-3b07d7518a8133fa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f8cf603c0a991e25",
+            "fundingInsightId": "FI-8c8ee74e8009aabe"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-3b07d7518a8133fa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3c2da41fe32680e2",
+            "fundingInsightId": "FI-8c8ee74e8009aabe"
           }
         ],
         "entityIds": [

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-caa9177e14398e",
@@ -21,7 +21,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -29,8 +29,9 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-03-10",
-    "latest_disclosed_at": "2026-03-10",
+    "latest_disclosed_at": "2026-08-18",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -44,6 +45,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-dee82a3d933e3a26",
+        "funding_insight_id": "FI-1be3fdfbcf712dbf",
+        "event_ids": [
+          "EV-2e214ba5a4504809"
+        ],
+        "company_entity_id": "EN-85e373a2452916cf",
+        "company_canonical_entity_id": "",
+        "company_name": "硕橙（厦门）科技有限公司",
+        "round": "D+轮",
+        "round_code": "series_d_plus",
+        "round_original": "D+轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-08-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "C轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c00e3514a8fe23f2",
+            "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
+            "source_title": "硕橙科技 | 项目信息-36氪",
+            "source_content_hash": "03b52d98e682698a",
+            "quote": "C轮 2024-06 数千万人民币 彬复资本",
+            "quote_hash": "f729d254e1eb3b113277afa2188e86b9acf3f9c30247b26068568ba821dc5107"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d1492140a9b1c122",
         "funding_insight_id": "FI-3b4a0a6b7397d174",
@@ -86,6 +127,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c00e3514a8fe23f2",
+        "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
+        "source_title": "硕橙科技 | 项目信息-36氪",
+        "source_content_hash": "03b52d98e682698a",
+        "quote": "C轮 2024-06 数千万人民币 彬复资本",
+        "quote_hash": "f729d254e1eb3b113277afa2188e86b9acf3f9c30247b26068568ba821dc5107"
+      },
       {
         "source_id": "FISRC-10c7fcf01fad4e2f",
         "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",

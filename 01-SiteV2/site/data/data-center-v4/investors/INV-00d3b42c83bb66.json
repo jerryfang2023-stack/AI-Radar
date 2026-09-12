@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-00d3b42c83bb66",
+    "name": "分众传媒",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-28",
+    "latest_disclosed_at": "2026-05-28",
+    "role_counts": {
+      "other_current_round": 1
+    },
+    "round_codes": [
+      "strategic"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-a72b4fe61f245a43",
+        "canonical_entity_id": "",
+        "name": "钛镁时代（上海）人工智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-cfe74fd40acf4996",
+        "funding_insight_id": "FI-e177d41569321461",
+        "event_ids": [
+          "EV-6f899a8378e7a0b5"
+        ],
+        "company_entity_id": "EN-a72b4fe61f245a43",
+        "company_canonical_entity_id": "",
+        "company_name": "钛镁时代（上海）人工智能科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮独家战略投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-50ba1a44528f419f",
+            "source_url": "https://news.pedaily.cn/202605/564551.shtml",
+            "source_title": "「钛镁时代」获数千万人民币投资，推进数字营销全域新业态布局",
+            "source_content_hash": "da78ee885bad41c8",
+            "quote": "户外媒体集团 分众传媒独 家战略投资",
+            "quote_hash": "b78cc6027f0c94af9c3c43281c56da43f4889c0ddabdd68ba35bc8f89d24ae85"
+          },
+          {
+            "source_id": "FISRC-76b0d074b6236c9f",
+            "source_url": "https://www.stcn.com/article/detail/3932084.html",
+            "source_title": "钛镁时代获分众传媒数千万人民币战略投资，携手推进数字营销全域新业态布局",
+            "source_content_hash": "c41945950deee898",
+            "quote": "获得全球领先的户外媒体集团分众传媒的独家战略投资，投资金额在数千万元级别",
+            "quote_hash": "0276150a678adac6cfc9f5762684c4fa00a52aa8b9741fc37b0db0ba8620676a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-50ba1a44528f419f",
+        "source_url": "https://news.pedaily.cn/202605/564551.shtml",
+        "source_title": "「钛镁时代」获数千万人民币投资，推进数字营销全域新业态布局",
+        "source_content_hash": "da78ee885bad41c8",
+        "quote": "户外媒体集团 分众传媒独 家战略投资",
+        "quote_hash": "b78cc6027f0c94af9c3c43281c56da43f4889c0ddabdd68ba35bc8f89d24ae85"
+      },
+      {
+        "source_id": "FISRC-76b0d074b6236c9f",
+        "source_url": "https://www.stcn.com/article/detail/3932084.html",
+        "source_title": "钛镁时代获分众传媒数千万人民币战略投资，携手推进数字营销全域新业态布局",
+        "source_content_hash": "c41945950deee898",
+        "quote": "获得全球领先的户外媒体集团分众传媒的独家战略投资，投资金额在数千万元级别",
+        "quote_hash": "0276150a678adac6cfc9f5762684c4fa00a52aa8b9741fc37b0db0ba8620676a"
+      }
+    ]
+  }
+}

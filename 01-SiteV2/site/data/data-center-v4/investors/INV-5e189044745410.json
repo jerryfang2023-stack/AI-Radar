@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-5e189044745410",
@@ -20,25 +20,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-03-25",
     "latest_disclosed_at": "2026-08-24",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "multi_round",
       "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-bd0658982d1f728d",
+        "canonical_entity_id": "",
+        "name": "广东天机智能系统有限公司"
+      },
       {
         "entity_id": "EN-9a970ad7900121db",
         "canonical_entity_id": "",
@@ -83,6 +89,46 @@
             "source_content_hash": "b8e4f0b869df00ee",
             "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
             "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-888bdb02986f9cea",
+        "funding_insight_id": "FI-033dd55115963cb3",
+        "event_ids": [
+          "EV-0896f0e7b703bed2"
+        ],
+        "company_entity_id": "EN-bd0658982d1f728d",
+        "company_canonical_entity_id": "",
+        "company_name": "广东天机智能系统有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-05-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3e04e9bd8fc1ab06",
+            "source_url": "https://news.pedaily.cn/202605/564328.shtml",
+            "source_title": "天机智能完成10亿元融资，投后估值近百亿",
+            "source_content_hash": "18ebeb9db5460eb7",
+            "quote": "腾讯、高榕创投、光合创投、纪源资本 等联合跟投",
+            "quote_hash": "b66c51f927e3b697d5520929115dd73e1dc0a691e559c2552e7f6a867c0c05fc"
           }
         ]
       },
@@ -175,6 +221,14 @@
         "source_content_hash": "b8e4f0b869df00ee",
         "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
         "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+      },
+      {
+        "source_id": "FISRC-3e04e9bd8fc1ab06",
+        "source_url": "https://news.pedaily.cn/202605/564328.shtml",
+        "source_title": "天机智能完成10亿元融资，投后估值近百亿",
+        "source_content_hash": "18ebeb9db5460eb7",
+        "quote": "腾讯、高榕创投、光合创投、纪源资本 等联合跟投",
+        "quote_hash": "b66c51f927e3b697d5520929115dd73e1dc0a691e559c2552e7f6a867c0c05fc"
       },
       {
         "source_id": "FISRC-5d82f5dc9fc96ce5",

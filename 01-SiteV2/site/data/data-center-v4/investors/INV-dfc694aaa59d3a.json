@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-dfc694aaa59d3a",
+    "name": "光合创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 4,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
+    "first_disclosed_at": "2026-03-24",
+    "latest_disclosed_at": "2026-07-09",
+    "role_counts": {
+      "participant": 4
+    },
+    "round_codes": [
+      "angel",
+      "angel_plus",
+      "multi_round",
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-bd0658982d1f728d",
+        "canonical_entity_id": "",
+        "name": "广东天机智能系统有限公司"
+      },
+      {
+        "entity_id": "EN-a43f157d208b2a63",
+        "canonical_entity_id": "",
+        "name": "开物纪"
+      },
+      {
+        "entity_id": "EN-a3802b1f5a583189",
+        "canonical_entity_id": "",
+        "name": "深圳墨奇智能技术有限公司"
+      },
+      {
+        "entity_id": "EN-9b21c9bf3305c0d6",
+        "canonical_entity_id": "",
+        "name": "生数科技"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a50ccec4a907f281",
+        "funding_insight_id": "FI-0cab7e240eb542ce",
+        "event_ids": [
+          "EV-e85e6fc6d630d56c"
+        ],
+        "company_entity_id": "EN-a3802b1f5a583189",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳墨奇智能技术有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bea9d0be613bc1cd",
+            "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+            "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+            "source_content_hash": "311224a4dfb089df",
+            "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+            "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-30f7d11181da0398",
+        "funding_insight_id": "FI-033dd55115963cb3",
+        "event_ids": [
+          "EV-0896f0e7b703bed2"
+        ],
+        "company_entity_id": "EN-bd0658982d1f728d",
+        "company_canonical_entity_id": "",
+        "company_name": "广东天机智能系统有限公司",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-05-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3e04e9bd8fc1ab06",
+            "source_url": "https://news.pedaily.cn/202605/564328.shtml",
+            "source_title": "天机智能完成10亿元融资，投后估值近百亿",
+            "source_content_hash": "18ebeb9db5460eb7",
+            "quote": "腾讯、高榕创投、光合创投、纪源资本 等联合跟投",
+            "quote_hash": "b66c51f927e3b697d5520929115dd73e1dc0a691e559c2552e7f6a867c0c05fc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-81b2a02c06dd77f2",
+        "funding_insight_id": "FI-7108544d47292865",
+        "event_ids": [
+          "EV-5575555340c04c5a"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "",
+        "company_name": "生数科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-fd865802af815ab3",
+            "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+            "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+            "source_content_hash": "a281cc701a9028fb",
+            "quote": "中网投、九安海棠、好未来、光合创投等投资人战略投资",
+            "quote_hash": "71a2fddcd5c92c28433ef41fe27846beb520a6982c85bc3dd400328d55e096e4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e24cc0ae80235c29",
+        "funding_insight_id": "FI-815e0d2563a8b10f",
+        "event_ids": [
+          "EV-9832526435c1695e"
+        ],
+        "company_entity_id": "EN-a43f157d208b2a63",
+        "company_canonical_entity_id": "",
+        "company_name": "开物纪",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-03-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d10ec9bd5ef3ad4",
+            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+            "source_content_hash": "d5d8d61ad1133bc1",
+            "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+            "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-bea9d0be613bc1cd",
+        "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
+        "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
+        "source_content_hash": "311224a4dfb089df",
+        "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
+        "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+      },
+      {
+        "source_id": "FISRC-3e04e9bd8fc1ab06",
+        "source_url": "https://news.pedaily.cn/202605/564328.shtml",
+        "source_title": "天机智能完成10亿元融资，投后估值近百亿",
+        "source_content_hash": "18ebeb9db5460eb7",
+        "quote": "腾讯、高榕创投、光合创投、纪源资本 等联合跟投",
+        "quote_hash": "b66c51f927e3b697d5520929115dd73e1dc0a691e559c2552e7f6a867c0c05fc"
+      },
+      {
+        "source_id": "FISRC-fd865802af815ab3",
+        "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+        "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+        "source_content_hash": "a281cc701a9028fb",
+        "quote": "中网投、九安海棠、好未来、光合创投等投资人战略投资",
+        "quote_hash": "71a2fddcd5c92c28433ef41fe27846beb520a6982c85bc3dd400328d55e096e4"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+        "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+      }
+    ]
+  }
+}

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-824ff6f71c152b",
@@ -21,21 +21,101 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-03-25",
-    "latest_disclosed_at": "2026-05-07",
+    "first_disclosed_at": "2026-01-26",
+    "latest_disclosed_at": "2026-07-30",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 5
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-ace0da508580355c",
+        "funding_insight_id": "FI-43919de631afd988",
+        "event_ids": [
+          "EV-25d8a47fbc3c0fbb"
+        ],
+        "company_entity_id": "EN-7d418277ae14d4ea",
+        "company_canonical_entity_id": "",
+        "company_name": "北京月之暗面科技股份有限公司",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "35亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "35 亿美元"
+        },
+        "announced_at": "2026-07-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年前两个月连续三轮融资老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-773362f4e07cd598",
+            "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+            "source_title": "月之暗面完成超35亿美元F轮融资",
+            "source_content_hash": "4d700156140038e7",
+            "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
+            "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-324c304c681663c7",
+        "funding_insight_id": "FI-2a47fffabd6bfe6b",
+        "event_ids": [
+          "EV-88158ddf272e4731"
+        ],
+        "company_entity_id": "EN-f0a77f08b0db14ab",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳欧拉万象科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超过亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-06-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-aad97c1f07ceb5c6",
+            "source_url": "https://www.sohu.com/a/1041806074_120109837",
+            "source_title": "成立3个月家庭具身智能企业欧拉万象获第三轮融资",
+            "source_content_hash": "2af3607d3a79e574",
+            "quote": "这是欧拉万象继获得招商局创投、高瓴创投、五源资本等机构密集加持后，再次迎来市场化与产业资本的重磅加注。",
+            "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8945e18adbc9e232",
         "funding_insight_id": "FI-f5103149f04ea6ed",
@@ -115,9 +195,65 @@
             "quote_hash": "49e975ab0c8bd1e87a8fc18d6354e5d517499da3608a91fdf0fbb5dd193fcd3b"
           }
         ]
+      },
+      {
+        "activity_id": "IA-48ed0f257c4884e4",
+        "funding_insight_id": "FI-18465dcaeebdf656",
+        "event_ids": [
+          "EV-df37e9341b5c7f04"
+        ],
+        "company_entity_id": "EN-f0d59425e4c32abb",
+        "company_canonical_entity_id": "",
+        "company_name": "阶跃星辰（StepFun）",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "50 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮战略和财务投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6c9e96fcafd6e74f",
+            "source_url": "https://m.cls.cn/detail/2269386",
+            "source_title": "印奇出任董事长！阶跃星辰超50亿融资刷新大模型赛道纪录 将加码“AI+终端”",
+            "source_content_hash": "473fdcfe679ea03a",
+            "quote": "战略和财务投资人包括腾讯投资、五源资本、启明创投等",
+            "quote_hash": "0716f8fdcb21c48dedae939c758cad70235bb48f83d5fcf06593d24a159e7484"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-773362f4e07cd598",
+        "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+        "source_title": "月之暗面完成超35亿美元F轮融资",
+        "source_content_hash": "4d700156140038e7",
+        "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
+        "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+      },
+      {
+        "source_id": "FISRC-aad97c1f07ceb5c6",
+        "source_url": "https://www.sohu.com/a/1041806074_120109837",
+        "source_title": "成立3个月家庭具身智能企业欧拉万象获第三轮融资",
+        "source_content_hash": "2af3607d3a79e574",
+        "quote": "这是欧拉万象继获得招商局创投、高瓴创投、五源资本等机构密集加持后，再次迎来市场化与产业资本的重磅加注。",
+        "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
+      },
       {
         "source_id": "FISRC-5d82f5dc9fc96ce5",
         "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
@@ -133,6 +269,14 @@
         "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
         "quote": "A轮融资：金额 近5亿人民币 ，投资方为五源资本、高榕创投、Neumann Advisors、襄禾资本、高瓴创投、清智资本",
         "quote_hash": "49e975ab0c8bd1e87a8fc18d6354e5d517499da3608a91fdf0fbb5dd193fcd3b"
+      },
+      {
+        "source_id": "FISRC-6c9e96fcafd6e74f",
+        "source_url": "https://m.cls.cn/detail/2269386",
+        "source_title": "印奇出任董事长！阶跃星辰超50亿融资刷新大模型赛道纪录 将加码“AI+终端”",
+        "source_content_hash": "473fdcfe679ea03a",
+        "quote": "战略和财务投资人包括腾讯投资、五源资本、启明创投等",
+        "quote_hash": "0716f8fdcb21c48dedae939c758cad70235bb48f83d5fcf06593d24a159e7484"
       }
     ]
   }

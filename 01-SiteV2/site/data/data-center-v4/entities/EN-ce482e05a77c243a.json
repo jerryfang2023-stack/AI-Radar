@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-ce482e05a77c243a",
+    "name": "AI基础设施公司上海基元律动科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-5e8ad56fcef42b5a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-27",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-5e8ad56fcef42b5a"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-5e8ad56fcef42b5a",
+        "dataDate": "2026-09-12",
+        "date": "2026-08-27",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "基元律动累计融资数千万美元",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-9c7b7987e3a6bf06"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-45b1543fd3a3808f",
+            "fundingInsightId": "FI-48944ef1f23a9e57"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-9c7b7987e3a6bf06"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-99863d4f51ed8860",
+            "fundingInsightId": "FI-48944ef1f23a9e57"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "model_deployment",
+            "name": "模型部署",
+            "entityIds": [
+              "EN-9c7b7987e3a6bf06"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-df35cf0909bc0e51",
+            "fundingInsightId": "FI-48944ef1f23a9e57"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-9c7b7987e3a6bf06"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4c34e55facbff8c7",
+            "fundingInsightId": "FI-48944ef1f23a9e57"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-9c7b7987e3a6bf06"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6ccc3860c7c011f8",
+            "fundingInsightId": "FI-48944ef1f23a9e57"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-9c7b7987e3a6bf06"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c728a43cf2bbf83b",
+            "fundingInsightId": "FI-48944ef1f23a9e57"
+          }
+        ],
+        "entityIds": [
+          "EN-9c7b7987e3a6bf06",
+          "EN-ce482e05a77c243a"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

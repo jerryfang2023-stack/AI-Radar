@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-34bb1bbe22e4c4",
@@ -20,23 +20,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-04-02",
-    "latest_disclosed_at": "2026-04-02",
+    "latest_disclosed_at": "2026-08-24",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "other"
+      "series_b_plus",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8eacc6bab17d7e7f",
+        "canonical_entity_id": "",
+        "name": "北京中数睿智科技有限公司"
+      },
       {
         "entity_id": "EN-a6e5382c05dd0d16",
         "canonical_entity_id": "EN-a6e5382c05dd0d16",
@@ -45,16 +51,57 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-f8f9554c5dde5f9e",
-        "funding_insight_id": "FI-af2461a497e30ffa",
+        "activity_id": "IA-a4757c66209c31d8",
+        "funding_insight_id": "FI-c30743074ff47419",
         "event_ids": [
+          "EV-07d112b2a4c980d2"
+        ],
+        "company_entity_id": "EN-8eacc6bab17d7e7f",
+        "company_canonical_entity_id": "",
+        "company_name": "北京中数睿智科技有限公司",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d2d4022c60030f2",
+            "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+            "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+            "source_content_hash": "fd43c36630768ac3",
+            "quote": "本轮融资由中国互联网投资基金（下称中网投）、苏创投全国社保基金、金融街资本、工银资本、昆仑资本等联合投资，原有股东持续加码跟投。",
+            "quote_hash": "e71c1020a5ecddcd13e65a710e3aaa31148459e6980b06245cd286c37d7ff5fb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7db3b13a18ee9b38",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
           "EV-435d7e7878b0c326"
         ],
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "20亿元",
         "amount_normalized": {
@@ -75,24 +122,32 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-dd387948ae711f72",
-            "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
-            "source_title": "星海图完成20亿元B+轮融资",
-            "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
-            "quote": "国资北京股东包括 金融街资本 、 金浦投资 、 北京科创 、 国元股权 、 上城资本",
-            "quote_hash": "1379a27c8099cb982674e7096348478d6aa2aaa0de38c1b5661a6c2369a1193e"
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "金融街资本、金浦投资、北京科创、国元股权等国资机构",
+            "quote_hash": "f0160cbd92aaab5212f5a7f0d68de10639d6dead2055a109429609d3b097827b"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-dd387948ae711f72",
-        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
-        "source_title": "星海图完成20亿元B+轮融资",
-        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
-        "quote": "国资北京股东包括 金融街资本 、 金浦投资 、 北京科创 、 国元股权 、 上城资本",
-        "quote_hash": "1379a27c8099cb982674e7096348478d6aa2aaa0de38c1b5661a6c2369a1193e"
+        "source_id": "FISRC-9d2d4022c60030f2",
+        "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+        "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+        "source_content_hash": "fd43c36630768ac3",
+        "quote": "本轮融资由中国互联网投资基金（下称中网投）、苏创投全国社保基金、金融街资本、工银资本、昆仑资本等联合投资，原有股东持续加码跟投。",
+        "quote_hash": "e71c1020a5ecddcd13e65a710e3aaa31148459e6980b06245cd286c37d7ff5fb"
+      },
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "金融街资本、金浦投资、北京科创、国元股权等国资机构",
+        "quote_hash": "f0160cbd92aaab5212f5a7f0d68de10639d6dead2055a109429609d3b097827b"
       }
     ]
   }

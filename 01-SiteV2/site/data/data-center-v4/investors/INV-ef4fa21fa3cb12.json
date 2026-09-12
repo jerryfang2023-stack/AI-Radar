@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-ef4fa21fa3cb12",
@@ -20,24 +20,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
-    "first_disclosed_at": "2026-03-10",
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
+    "first_disclosed_at": "2026-02-23",
     "latest_disclosed_at": "2026-06-15",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "participant": 2
+      "historical_or_ambiguous": 4,
+      "participant": 3
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_b2"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e7492db096492304",
+        "canonical_entity_id": "",
+        "name": "极佳视界"
+      },
       {
         "entity_id": "EN-6862b0d243051cd3",
         "canonical_entity_id": "",
@@ -50,6 +56,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b7f11d265b853ade",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "国中资本、达晨财智、图灵资管等多个老股东持续超额加注",
+            "quote_hash": "dce935c06fce5425156b93b1b31d4ac97ff305070d2c8f29d10845c372e5c8f8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f3dab7e961a72c4e",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "Pre-A轮融资由国中资本领投，紫峰资本、老股东 PKSHA Algorithm Fund跟投",
+            "quote_hash": "e8087cae29bef68a1918dc98e0a10412c3da4ad1c87238f9f218befb7cf25266"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ac026ea9b6dec0c8",
         "funding_insight_id": "FI-ab64a33b7d572f85",
@@ -169,6 +255,86 @@
             "quote_hash": "542263c73eb4885b71c5f6107c44e16fa3e2b45e879bc6daee6925ba1553438f"
           }
         ]
+      },
+      {
+        "activity_id": "IA-ce43bd8c5c1f11c8",
+        "funding_insight_id": "FI-edc4e4cec2cd84bd",
+        "event_ids": [
+          "EV-77a608db67e742a4"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-03-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fdfe58e2e68c7e9e",
+            "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+            "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+            "source_content_hash": "7d9409a9ba1e94fc",
+            "quote": "其中Pre-A轮融资由国中资本领投，紫峰资本、老股东 PKSHA Algorithm Fund跟投",
+            "quote_hash": "74469dfd79f9128cb2f80f362ec23f4b7e9167b3e623558ed16dd27a64de114f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d5cc13e8fc031722",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "智平方先后完成由国中资本领投和普华资本领投两轮融资",
+            "quote_hash": "3903ee955a58ef79c3226005dd71570798ea7bc476e40eeaf78feb2cd11e4e2e"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -195,7 +361,35 @@
         "source_content_hash": "91d16c2fbe60a677",
         "quote": "天使轮由国开金融、国中资本、央视融媒体产业投资基金等国家级 “国家队” 资本，某数千亿上市公司旗下战投、长飞光纤旗下基金，两大核心产业龙头资本，沃德尔等知名产业资本，及元生创投、珠海科技产业集团、钧山投资、燕缘创投、大米资本、沃赋资本、彬复资本等多家知名基金共同投资。",
         "quote_hash": "542263c73eb4885b71c5f6107c44e16fa3e2b45e879bc6daee6925ba1553438f"
+      },
+      {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "其中Pre-A轮融资由国中资本领投，紫峰资本、老股东 PKSHA Algorithm Fund跟投",
+        "quote_hash": "74469dfd79f9128cb2f80f362ec23f4b7e9167b3e623558ed16dd27a64de114f"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "智平方先后完成由国中资本领投和普华资本领投两轮融资",
+        "quote_hash": "3903ee955a58ef79c3226005dd71570798ea7bc476e40eeaf78feb2cd11e4e2e"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[1].role": {
+          "text": "Pre-A轮领投",
+          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }

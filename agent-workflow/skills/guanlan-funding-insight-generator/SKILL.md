@@ -3,7 +3,7 @@ name: guanlan-funding-insight-generator
 description: "Use when generating, backfilling, repairing, auditing, or explaining the Funding Insights column from verified Data Center V4 funding events. Covers secondary web research with Tavily and Exa, captured-source evidence, DeepSeek V4 Pro card writing, explicit-investor and exact-quote gates, historical event deduplication, application-layer entity links, frontstage projection, and automatic fail-closed publication. Do not use to create canonical funding facts, mutate the entity registry, publish search snippets, or treat model output as evidence."
 metadata:
   guanlan:
-    version: "1.6.0"
+    version: "1.6.1"
     lane: "Funding Insights"
     status: "current downstream application"
     order: 91
@@ -47,7 +47,7 @@ Funding Insights is a downstream application. Keep its research, comparisons, ca
    npm run backfill:funding-insights -- --from=YYYY-MM-DD --to=YYYY-MM-DD --write=true --date-concurrency=3 --concurrency=3
    ```
 
-   Resume without `--force`; existing accepted cards are reused and blocked events are retried. `--date-concurrency` controls parallel source bundles and `--concurrency` controls events inside each bundle; keep their product within search/model rate limits. Use `--force=true` only when source capture, prompt rules, or a card is known to be stale.
+   Resume without `--force`; existing accepted cards are reused and blocked events are retried. For the explicit domestic historical source whitelist, use `--market-region=CN --checkpoint-dir=<historical-lane>/card-checkpoints`: accepted per-event results survive interruption, Chinese queries cover missing financing/product/company fields, and only exact existing event references bypass research. A company/round label alone cannot close a historical disclosure. `--date-concurrency` controls parallel source bundles and `--concurrency` controls events inside each bundle; keep their product within search/model rate limits. Use `--force=true` only when source capture, prompt rules, or a card is known to be stale.
 4. Search each subject company through both configured providers. Capture original page text; search titles, snippets, provider answers, and URLs are discovery metadata only.
 5. Send the verified CanonicalEvent plus captured source bodies to `deepseek-v4-pro`. Require every factual object to cite an exact continuous quote contained in one captured body. `financing.investors` contains only investors explicitly tied to the current round; historical or ambiguous investors belong in `other_round_investors`.
 6. Normalize the financing round into `round_code` plus a canonical Chinese `round`, preserve `round_original`, and preserve amount/total source text beside deterministic normalized currency and base values. Record the announced date, financing disclosure status, and a role for every current-round investor. Build the structured investment thesis and customer research status, and resolve product/founder links by canonical exact match or an accepted same-type mapping in `entity-link-decisions.json`. Persist `analysis.taxonomy_version=TAG-V4.1`, one governed market category, its required children, one independent primary product form, plus supported Facets. Do not publish a card whose source classification is absent; the public builder must not guess from keywords.

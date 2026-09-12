@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-a34b5d6c82951d",
@@ -20,29 +20,46 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-04-16",
     "latest_disclosed_at": "2026-07-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "lead": 1,
+      "participant": 5
     },
     "round_codes": [
-      "multi_round",
-      "pre_series_a"
+      "angel",
+      "pre_series_a",
+      "series_a_plus_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-d028026b61987e09",
+        "canonical_entity_id": "",
+        "name": "上海量感智能科技有限公司"
+      },
       {
         "entity_id": "EN-7f505bc9744206fd",
         "canonical_entity_id": "",
         "name": "上海灵睿智芯计算技术有限公司"
+      },
+      {
+        "entity_id": "EN-43a99acf124e2c11",
+        "canonical_entity_id": "",
+        "name": "上海天鹜科技有限公司"
+      },
+      {
+        "entity_id": "EN-ff37e56ba8f7d89c",
+        "canonical_entity_id": "",
+        "name": "上海天鹜科技有限公司"
       },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
@@ -132,17 +149,137 @@
         ]
       },
       {
-        "activity_id": "IA-c30006067f2e8a41",
-        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "activity_id": "IA-fa8e1597f9962bed",
+        "funding_insight_id": "FI-444e099697814a4c",
+        "event_ids": [
+          "EV-5812765de6753bf7"
+        ],
+        "company_entity_id": "EN-43a99acf124e2c11",
+        "company_canonical_entity_id": "",
+        "company_name": "上海天鹜科技有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-899fa4d253299e85",
+            "source_url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihtewm4131588.shtml",
+            "source_title": "天鹜科技完成数亿元A++轮融资",
+            "source_content_hash": "8fe0a74c5845b0e9",
+            "quote": "聚杰微纤、宁波甬元兴仑君金创投、金景资本、孚腾资本、财鑫资...",
+            "quote_hash": "e901a790fb32e469e8ebc69fb789058dddb4b37870a75a7bd4d4ee892c2fa99a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-88c2756874224e98",
+        "funding_insight_id": "FI-b9ca2a7fb525fcf8",
+        "event_ids": [
+          "EV-b732caa990fa0a79"
+        ],
+        "company_entity_id": "EN-ff37e56ba8f7d89c",
+        "company_canonical_entity_id": "",
+        "company_name": "上海天鹜科技有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a638483ec7304070",
+            "source_url": "https://news.pedaily.cn/202607/566169.shtml",
+            "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
+            "source_content_hash": "06a0df416cf83674",
+            "quote": "聚杰微纤、宁波甬元兴仑君金创投、金景资本、孚腾资本、财鑫资本跟投",
+            "quote_hash": "7285592dc1bf059597876b8ea8e97180285e387e20201bd7d5207ba723f4d138"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-36bfe089db45de99",
+        "funding_insight_id": "FI-6339b5d0822b84aa",
+        "event_ids": [
+          "EV-7d0803a8b72f84ba"
+        ],
+        "company_entity_id": "EN-d028026b61987e09",
+        "company_canonical_entity_id": "",
+        "company_name": "上海量感智能科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-07-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7e1722986b555854",
+            "source_url": "https://news.pedaily.cn/202607/565963.shtml",
+            "source_title": "创始团队来自上海交大，量感智能完成数千万元天使轮融资",
+            "source_content_hash": "a20ef7889748de4f",
+            "quote": "由孚腾资本（上海国投旗下）领投，六禾创投跟投。",
+            "quote_hash": "96cc815d6716bc8936291316815e79de8814c1a05c0da9869bd610d1cdfa659e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a7ae7db17c3bc567",
+        "funding_insight_id": "FI-b9eb4320e43ddfdf",
         "event_ids": [
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "company_name": "它石智航",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
         "amount_original": "4.55亿美金",
         "amount_normalized": {
           "currency": "USD",
@@ -228,6 +365,30 @@
         "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
         "quote": "孚腾资本、元禾璞华、华山资本为企业早期天使轮老股东，持续加码投入。",
         "quote_hash": "cde400986f341ebc2c1adc74e3267aec61cbef81bdbd90abfd3fb69f07711ae8"
+      },
+      {
+        "source_id": "FISRC-899fa4d253299e85",
+        "source_url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihtewm4131588.shtml",
+        "source_title": "天鹜科技完成数亿元A++轮融资",
+        "source_content_hash": "8fe0a74c5845b0e9",
+        "quote": "聚杰微纤、宁波甬元兴仑君金创投、金景资本、孚腾资本、财鑫资...",
+        "quote_hash": "e901a790fb32e469e8ebc69fb789058dddb4b37870a75a7bd4d4ee892c2fa99a"
+      },
+      {
+        "source_id": "FISRC-a638483ec7304070",
+        "source_url": "https://news.pedaily.cn/202607/566169.shtml",
+        "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
+        "source_content_hash": "06a0df416cf83674",
+        "quote": "聚杰微纤、宁波甬元兴仑君金创投、金景资本、孚腾资本、财鑫资本跟投",
+        "quote_hash": "7285592dc1bf059597876b8ea8e97180285e387e20201bd7d5207ba723f4d138"
+      },
+      {
+        "source_id": "FISRC-7e1722986b555854",
+        "source_url": "https://news.pedaily.cn/202607/565963.shtml",
+        "source_title": "创始团队来自上海交大，量感智能完成数千万元天使轮融资",
+        "source_content_hash": "a20ef7889748de4f",
+        "quote": "由孚腾资本（上海国投旗下）领投，六禾创投跟投。",
+        "quote_hash": "96cc815d6716bc8936291316815e79de8814c1a05c0da9869bd610d1cdfa659e"
       },
       {
         "source_id": "FISRC-b4d6b7523ee32ad7",

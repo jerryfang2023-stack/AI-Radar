@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-a2dc0ff0e597dd",
@@ -21,7 +21,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -29,12 +29,13 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-04-07",
-    "latest_disclosed_at": "2026-04-07",
+    "latest_disclosed_at": "2026-06-03",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
-      "other"
+      "series_a_plus"
     ],
     "portfolio_companies": [
       {
@@ -45,16 +46,56 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-f4c9c517f3f5c699",
-        "funding_insight_id": "FI-4aaa0f3788c81d32",
+        "activity_id": "IA-72ec6f43bb8593f7",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年3月轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "达晨财智、某头部人民币基金、银河源汇、图灵基金、新鼎资本、庚辛资本等重磅加持",
+            "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e538b0282a686cca",
+        "funding_insight_id": "FI-265930da26c14510",
         "event_ids": [
           "EV-60d58e2a1f5733f8"
         ],
         "company_entity_id": "EN-1032f7a4df33f629",
         "company_canonical_entity_id": "EN-1032f7a4df33f629",
         "company_name": "千寻智能",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
         "round_original": "A+轮",
         "amount_original": "10亿元",
         "amount_normalized": {
@@ -86,6 +127,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "达晨财智、某头部人民币基金、银河源汇、图灵基金、新鼎资本、庚辛资本等重磅加持",
+        "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
+      },
       {
         "source_id": "FISRC-fc5617428a7935ed",
         "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",

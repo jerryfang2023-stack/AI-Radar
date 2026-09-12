@@ -13,6 +13,7 @@ import {
 } from "./lib/source-intake-v1.mjs";
 import { selectImmutableSourceSnapshot } from "./lib/immutable-source-snapshot-v1.mjs";
 import { collectChinaFunding } from "./lib/china-funding-collector.mjs";
+import { chinaFundingArticleHtml } from "./lib/china-funding-html.mjs";
 import {
   chinaMarketLaneQueries,
   loadChinaMarketConfig,
@@ -463,6 +464,9 @@ function isDisallowedDiscoveryIndexPage(item = {}) {
 function shouldIncludeInRawCandidates(item = {}) {
   if (!item || (!item.title && !item.url)) return false;
   if (isDisallowedDiscoveryIndexPage(item)) return false;
+  // Targeted financing discovery must read the body before deciding AI relevance.
+  // Many valid announcements name only the company/round in their headline.
+  if (targetedSourceArtifacts && item.acquisition_channel === "china-funding" && item.category === "funding") return true;
   const matchedAll = matchRawEntryRules(item);
   const matchedNonBroad = matchedAll.filter((rule) => rule.type !== "broad");
   if (isObviousRawNoise(item) && !matchedAll.length && !hasCommercialActionSignal(item)) return false;
@@ -2936,8 +2940,10 @@ export async function fetchSourceSnapshot(item) {
       };
     }
     const bodyText = await response.text();
-    const metadataPublishedAt = extractPublishedAtFromHtml(bodyText);
-    const extracted = extractReadableSnapshotText(bodyText, contentType, 60000);
+    const domestic = item.acquisition_channel === "china-funding" ? chinaFundingArticleHtml(bodyText, url) : null;
+    const metadataPublishedAt = domestic?.published_at || extractPublishedAtFromHtml(bodyText);
+    const extracted = extractReadableSnapshotText(domestic?.fragment || bodyText, contentType, 60000);
+    if (domestic && extracted.full_text) extracted.method = domestic.method;
     if (extracted.rejected) {
       const text = summary || "来源正文包含 PDF、图片、压缩流或乱码特征；未写入正文证据，进入 Core Pool / Card 前必须回源重抓。";
       return {

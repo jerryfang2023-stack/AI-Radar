@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-a52e7341b1ecf41e",
+    "name": "近日正式",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-fd2ff833db684e40"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-04-13",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-fd2ff833db684e40"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-fd2ff833db684e40",
+        "dataDate": "2026-09-12",
+        "date": "2026-04-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-272d534804dc22a4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b69b27d693d371bc",
+            "fundingInsightId": "FI-20dd856520b24de7"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-272d534804dc22a4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8095f76a630cc5b1",
+            "fundingInsightId": "FI-20dd856520b24de7"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "chips",
+            "name": "芯片",
+            "entityIds": [
+              "EN-272d534804dc22a4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-196d987a53dc73b1",
+            "fundingInsightId": "FI-20dd856520b24de7"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-272d534804dc22a4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0de44c2cbb9b760a",
+            "fundingInsightId": "FI-20dd856520b24de7"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-272d534804dc22a4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-07cf44ad314e8f24",
+            "fundingInsightId": "FI-20dd856520b24de7"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-272d534804dc22a4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e2b1d707a7d43ad2",
+            "fundingInsightId": "FI-20dd856520b24de7"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-272d534804dc22a4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2abe2295b163077e",
+            "fundingInsightId": "FI-20dd856520b24de7"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-272d534804dc22a4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-11c69c144a3ab560",
+            "fundingInsightId": "FI-20dd856520b24de7"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-272d534804dc22a4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-915771c04adaf98a",
+            "fundingInsightId": "FI-20dd856520b24de7"
+          }
+        ],
+        "entityIds": [
+          "EN-272d534804dc22a4",
+          "EN-a52e7341b1ecf41e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

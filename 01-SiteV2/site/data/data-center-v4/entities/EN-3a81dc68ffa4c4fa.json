@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-3a81dc68ffa4c4fa",
+    "name": "寅成智能正式官宣",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-6ff97d32bdcc8586"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-25",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-6ff97d32bdcc8586"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-6ff97d32bdcc8586",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "复旦学姐带队，寅成智能融资千万美元",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cf9af0a4664ebad0",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-20e96557e1d2e5da",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-98fa4e13b46a4061",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-857b204604c96834",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-60910505210bd6f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1a46d88b6d1d2b72",
+            "fundingInsightId": "FI-75f46cfc16c70475"
+          }
+        ],
+        "entityIds": [
+          "EN-61f956d75ca19c9a",
+          "EN-60910505210bd6f1",
+          "EN-3a81dc68ffa4c4fa"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

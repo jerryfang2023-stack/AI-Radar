@@ -65,7 +65,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Data Center supervisor Skill | guanlan-data-center-supervisor v1.3.1 |
 | Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.5.0 |
 | Trend Radar updater Skill | guanlan-trend-radar-updater v1.1.0 |
-| Funding Insight generator Skill | guanlan-funding-insight-generator v1.6.0 |
+| Funding Insight generator Skill | guanlan-funding-insight-generator v1.6.1 |
 | First-Line Viewpoints monitor Skill | guanlan-first-line-viewpoints-monitor v1.2.1 |
 | Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.1.0 |
 | Follow-builders support Skill | follow-builders v2.1.1 |
@@ -76,7 +76,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Source-intake QC Skill | guanlan-daily-monitor-qc v1.3.0 |
 | Skill governance editor | guanlan-skill-editor v2.1.0 |
 | Code and rule auditor | guanlan-code-rule-auditor v1.2.1 |
-| Operations backend version | OPS-V3.7.0-china-funding-quality |
+| Operations backend version | OPS-V3.7.1-china-funding-history |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v2.4.0 Astra execution and cross-platform Skill catalog |
 | Git tag | `v4.8.1-research-retirement` |
@@ -145,7 +145,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 
 | Scope | Version | Automation status | Source | Outputs |
 |---|---|---|---|---|
-| Operations Backend / 运营大后台 | `OPS-V3.7.0-china-funding-quality` | Atomic VPS release at `https://www.zkdlj.vip/ops/`; excluded from GitHub Pages | Nginx session gate, V4 quality telemetry, aggregate analytics, persistent community approval, community lifecycle, Mini Program member management and activity scheduling, audited operations, classified source/deployed versions, cross-platform Skill catalog. Successful Mini Program member adjustments close the editor and return to the user list. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, VPS release symlink, version ledger |
+| Operations Backend / 运营大后台 | `OPS-V3.7.1-china-funding-history` | Atomic VPS release at `https://www.zkdlj.vip/ops/`; excluded from GitHub Pages | Nginx session gate, V4 quality telemetry, aggregate analytics, persistent community approval, community lifecycle, Mini Program member management and activity scheduling, audited operations, classified source/deployed versions, cross-platform Skill catalog. Successful Mini Program member adjustments close the editor and return to the user list. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, VPS release symlink, version ledger |
 | Event Library production | `SITE-V4.6.1-research-retirement` | V4-native structured intake and canonical facts presented through the focused event entrance; FDE / hardware remain thematic projections | `SOURCE-INTAKE-V1`, China-market gate, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, external Guanlan Vault person timelines |
 | Person review | `PERSON-REVIEW-V1.1` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates, First-Line authors, accepted person/account decisions, and accepted funding-founder decisions | 61 public natural-person profiles (31 existing plus 30 reviewed founders), 6 quarantined non-natural accounts, preserved viewpoint and funding-card lineage |
@@ -332,7 +332,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 | SITE-V3.4.2 / BSIG-V1.2.1-quality-boundary | 2026-07-02T12:45:00+08:00 | Hardens Business Signals quality boundaries from Raw/Pool routing through Card generation and public frontstage export: `notPromotedIssues` block public promotion, low-value AI-adjacent consumer entertainment / platform policy / roundup / explainer / analyst commentary / unclosed VC-fund items stay backend-only unless same-source concrete business evidence exists, Enterprise AI public candidates reuse the same low-value filter, retired Top10 fill memory is removed from skills, and same-date artifacts are repaired without rerunning the monitor chain. | upgraded |
 | SITE-V3.4.0 / IMAP-V2.0.0-report-center-opportunity-system | 2026-07-01T13:10:03+08:00 | Upgrades the former Intelligence Map into the Reports Center opportunity system: report-first hero, Monthly / Weekly entry cards, separate full-width Entry Point Map and Product Pain Map, click-to-open evidence modal, lower-saturation report-style palette, and relation paths as a supporting section. | upgraded |
 | OPS-V3.6.2-nav-member-collapse / Skill Store v2.2.0 | 2026-09-10 | Aligns membership subnavigation with primary items using tinted backgrounds, supports persistent parent collapse, and closes community member details after successful status saves. | previous operations backend |
-| OPS-V3.7.0-china-funding-quality / Skill Store v2.4.0 | 2026-09-12 | Adds independent domestic financing collection, evidence and entity synchronization, per-source quality telemetry, a reusable monitoring Skill, and protected OPS publication through Final Closure. | current operations backend |
+| OPS-V3.7.1-china-funding-history / Skill Store v2.4.0 | 2026-09-12 | Adds monthly 2026 domestic historical coverage, original-source and exact-event card reconciliation, secondary-search outcomes and resumable Terra extraction. | current operations backend |
+| OPS-V3.7.0-china-funding-quality / Skill Store v2.4.0 | 2026-09-12 | Adds independent domestic financing collection, evidence and entity synchronization, per-source quality telemetry, a reusable monitoring Skill, and protected OPS publication through Final Closure. | previous operations backend |
 | OPS-V3.6.3-astra-session-isolation / Skill Store v2.3.0 | 2026-09-12 | Isolates OPS session and per-surface requests, clears protected data on logout, and prevents obsolete errors and completions from changing new sessions or editors. | upgraded |
 | OPS-V3.6.1-member-editor-collapse / Skill Store v2.2.0 | 2026-09-04 | Closes the Mini Program user editor after a successful entitlement or points adjustment, returns to the current user list, and keeps the editor open when validation or saving fails. | previous operations backend |
 | OPS-V3.6.0-community-lifecycle / Skill Store v2.2.0 | 2026-09-04T12:32:26+08:00 | Adds persistent Community Member Management and Activity Scheduling beside application approval and Mini Program users. Approval is separated from actual group entry; cohort, entry, elimination and verified Mini Program-account state are manageable, while the first-season schedule is complete and the second-season schedule is editable. | previous operations backend |

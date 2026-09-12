@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-5fb78faa1a3c98",
+    "name": "和达金服",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-07-06",
+    "latest_disclosed_at": "2026-07-06",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-074a5857e532df62",
+        "canonical_entity_id": "",
+        "name": "贻如科技（杭州）有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-3e6b8b5def643a64",
+        "funding_insight_id": "FI-6f69694408c1ad9b",
+        "event_ids": [
+          "EV-35fcdb4a96a2f814"
+        ],
+        "company_entity_id": "EN-074a5857e532df62",
+        "company_canonical_entity_id": "",
+        "company_name": "贻如科技（杭州）有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-07-06",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-320ae1ce12e8452e",
+            "source_url": "https://news.pedaily.cn/202607/565881.shtml",
+            "source_title": "「贻如科技」完成超亿元A轮融资，AI驱动生物基皮革加速产业化",
+            "source_content_hash": "7c21e03d610b0cdf",
+            "quote": "本轮融资由 鄂尔多斯集团与和达金服共同领投，巢生资本跟投 ，易凯资本担任本轮融资的独 家财务顾问。",
+            "quote_hash": "79fe080b4bf82fc77f014172cd78830f3ffa9b152a8e0f85ad048d4a3b1ae9f7"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-320ae1ce12e8452e",
+        "source_url": "https://news.pedaily.cn/202607/565881.shtml",
+        "source_title": "「贻如科技」完成超亿元A轮融资，AI驱动生物基皮革加速产业化",
+        "source_content_hash": "7c21e03d610b0cdf",
+        "quote": "本轮融资由 鄂尔多斯集团与和达金服共同领投，巢生资本跟投 ，易凯资本担任本轮融资的独 家财务顾问。",
+        "quote_hash": "79fe080b4bf82fc77f014172cd78830f3ffa9b152a8e0f85ad048d4a3b1ae9f7"
+      }
+    ]
+  }
+}

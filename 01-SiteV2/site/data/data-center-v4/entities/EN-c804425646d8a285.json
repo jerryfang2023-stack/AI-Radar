@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-c804425646d8a285",
+    "name": "杭州智诊科技有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-dd567ead9785ef80"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-06",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-dd567ead9785ef80"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-dd567ead9785ef80",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-06",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "聚焦医疗AI agent，智诊科技完成6500万元融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2540e79fbd121408",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3ed910319dd5f475",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cc7c90692e43b560",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-acf1b6e038d88980",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-67a8433ec38bc907",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a8d020bc24ebe3d7",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2bd09edafe38acde",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e4a0c6119327af64",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f1f285477fa8fc51",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fb02343fbdb78f6f",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-69c5804b91710f4d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ba415f2af3322e72",
+            "fundingInsightId": "FI-aa482b112d6d236c"
+          }
+        ],
+        "entityIds": [
+          "EN-c804425646d8a285",
+          "EN-69c5804b91710f4d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

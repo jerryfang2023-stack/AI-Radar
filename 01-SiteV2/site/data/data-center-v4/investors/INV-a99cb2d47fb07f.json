@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-a99cb2d47fb07f",
+    "name": "神骐资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-07-09",
+    "latest_disclosed_at": "2026-07-09",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-7ee40f58896f7fe7",
+        "funding_insight_id": "FI-0cab7e240eb542ce",
+        "event_ids": [
+          "EV-e85e6fc6d630d56c"
+        ],
+        "company_entity_id": "EN-a3802b1f5a583189",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳墨奇智能技术有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使+轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3415c96e4540c22c",
+            "source_url": "https://www.163.com/dy/article/L167UGQE051984TV.html",
+            "source_title": "【投融资动态】墨奇智能天使+融资，融资额超10亿人民币，投资方为阿里巴巴、腾讯投资等|创投|知名企业|阿里巴巴集团_网易订阅",
+            "source_content_hash": "442f1a65679caf35",
+            "quote": "参与投资的机构包括阿里巴巴，腾讯投资，蓝驰创投，君联资本，华业天成资本，高榕创投，中科创星，源码资本，光合创投，柏睿资本，神骐资本",
+            "quote_hash": "4b7ad7bc1304324c97503a30554d205294aa3156e5b6d775e682847c028e9fb7"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-3415c96e4540c22c",
+        "source_url": "https://www.163.com/dy/article/L167UGQE051984TV.html",
+        "source_title": "【投融资动态】墨奇智能天使+融资，融资额超10亿人民币，投资方为阿里巴巴、腾讯投资等|创投|知名企业|阿里巴巴集团_网易订阅",
+        "source_content_hash": "442f1a65679caf35",
+        "quote": "参与投资的机构包括阿里巴巴，腾讯投资，蓝驰创投，君联资本，华业天成资本，高榕创投，中科创星，源码资本，光合创投，柏睿资本，神骐资本",
+        "quote_hash": "4b7ad7bc1304324c97503a30554d205294aa3156e5b6d775e682847c028e9fb7"
+      }
+    ]
+  }
+}

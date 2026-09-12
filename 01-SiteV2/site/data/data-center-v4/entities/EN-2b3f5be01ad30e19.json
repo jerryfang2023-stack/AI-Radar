@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-2b3f5be01ad30e19",
+    "name": "量子位独家",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0ff10475efa53e6c"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-04-02",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-0ff10475efa53e6c"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-0ff10475efa53e6c",
+        "dataDate": "2026-09-12",
+        "date": "2026-04-02",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "星海图又融资20亿，估值200亿",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-a6e5382c05dd0d16"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0514c21a7b2a6c65",
+            "fundingInsightId": "FI-0e764e328a372f8f"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-a6e5382c05dd0d16"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-07ac85ede90f4f1e",
+            "fundingInsightId": "FI-0e764e328a372f8f"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-a6e5382c05dd0d16"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9318fc86e704a3a7",
+            "fundingInsightId": "FI-0e764e328a372f8f"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [
+              "EN-a6e5382c05dd0d16"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-96087f338781138c",
+            "fundingInsightId": "FI-0e764e328a372f8f"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-a6e5382c05dd0d16"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8bcb11b06167fc44",
+            "fundingInsightId": "FI-0e764e328a372f8f"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-a6e5382c05dd0d16"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-35ffca9de713ed25",
+            "fundingInsightId": "FI-0e764e328a372f8f"
+          }
+        ],
+        "entityIds": [
+          "EN-a6e5382c05dd0d16",
+          "EN-2b3f5be01ad30e19"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

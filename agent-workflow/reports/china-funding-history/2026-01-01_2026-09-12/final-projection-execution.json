@@ -1,0 +1,314 @@
+{
+  "date": "2026-09-12",
+  "mode": "resume_accepted_facts_and_cards",
+  "commands": [
+    {
+      "index": 0,
+      "command": [
+        "agent-workflow/tools/sync-light-data-lake.mjs",
+        "--v4-only=true",
+        "--duckdb=skip"
+      ],
+      "started_at": "2026-09-12T09:35:51.958Z",
+      "finished_at": "2026-09-12T09:36:08.225Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 1,
+      "command": [
+        "agent-workflow/tools/assert-data-lake-v4.mjs",
+        "--duckdb=skip"
+      ],
+      "started_at": "2026-09-12T09:36:08.226Z",
+      "finished_at": "2026-09-12T09:36:09.028Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 2,
+      "command": [
+        "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"
+      ],
+      "started_at": "2026-09-12T09:36:09.029Z",
+      "finished_at": "2026-09-12T09:36:29.923Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 3,
+      "command": [
+        "agent-workflow/tools/materialize-entity-history-v1.mjs"
+      ],
+      "started_at": "2026-09-12T09:36:29.924Z",
+      "finished_at": "2026-09-12T09:36:30.363Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 4,
+      "command": [
+        "agent-workflow/tools/assert-entity-history-v1.mjs"
+      ],
+      "started_at": "2026-09-12T09:36:30.365Z",
+      "finished_at": "2026-09-12T09:36:31.189Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 5,
+      "command": [
+        "agent-workflow/tools/assert-funding-insights-v1.mjs",
+        "--date=2026-09-12"
+      ],
+      "started_at": "2026-09-12T09:39:06.268Z",
+      "finished_at": "2026-09-12T09:39:09.193Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 6,
+      "command": [
+        "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs"
+      ],
+      "started_at": "2026-09-12T09:47:37.700Z",
+      "finished_at": "2026-09-12T09:47:40.747Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 7,
+      "command": [
+        "agent-workflow/tools/classify-funding-taxonomy-v4-1.mjs",
+        "--write=true",
+        "--apply=true"
+      ],
+      "started_at": "2026-09-12T09:47:40.748Z",
+      "finished_at": "2026-09-12T09:47:41.438Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 8,
+      "command": [
+        "agent-workflow/tools/project-funding-taxonomy-to-events-v4-1.mjs"
+      ],
+      "started_at": "2026-09-12T09:47:41.439Z",
+      "finished_at": "2026-09-12T09:47:42.207Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 9,
+      "command": [
+        "agent-workflow/tools/sync-light-data-lake.mjs",
+        "--v4-only=true",
+        "--duckdb=skip"
+      ],
+      "started_at": "2026-09-12T09:47:42.207Z",
+      "finished_at": "2026-09-12T09:47:45.307Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 10,
+      "command": [
+        "agent-workflow/tools/assert-data-lake-v4.mjs",
+        "--duckdb=skip"
+      ],
+      "started_at": "2026-09-12T09:47:45.308Z",
+      "finished_at": "2026-09-12T09:47:45.941Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 11,
+      "command": [
+        "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs"
+      ],
+      "started_at": "2026-09-12T09:47:45.942Z",
+      "finished_at": "2026-09-12T09:47:48.895Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 12,
+      "command": [
+        "agent-workflow/tools/build-investment-institutions-v1.mjs"
+      ],
+      "started_at": "2026-09-12T09:47:48.895Z",
+      "finished_at": "2026-09-12T09:47:49.356Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 13,
+      "command": [
+        "agent-workflow/tools/assert-investment-institutions-v1.mjs"
+      ],
+      "started_at": "2026-09-12T09:47:49.357Z",
+      "finished_at": "2026-09-12T09:47:49.651Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 14,
+      "command": [
+        "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"
+      ],
+      "started_at": "2026-09-12T09:47:49.651Z",
+      "finished_at": "2026-09-12T09:48:08.401Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 15,
+      "command": [
+        "agent-workflow/tools/materialize-entity-history-v1.mjs"
+      ],
+      "started_at": "2026-09-12T09:48:08.402Z",
+      "finished_at": "2026-09-12T09:48:08.782Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 16,
+      "command": [
+        "agent-workflow/tools/assert-entity-history-v1.mjs"
+      ],
+      "started_at": "2026-09-12T09:48:08.783Z",
+      "finished_at": "2026-09-12T09:48:09.402Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 17,
+      "command": [
+        "01-SiteV2/site/scripts/build-trend-radar-frontstage.mjs"
+      ],
+      "started_at": "2026-09-12T09:48:09.403Z",
+      "finished_at": "2026-09-12T09:48:09.878Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 18,
+      "command": [
+        "agent-workflow/tools/assert-trend-radar-v1.mjs"
+      ],
+      "started_at": "2026-09-12T09:48:09.878Z",
+      "finished_at": "2026-09-12T09:48:10.335Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 19,
+      "command": [
+        "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"
+      ],
+      "started_at": "2026-09-12T09:48:10.337Z",
+      "finished_at": "2026-09-12T09:48:11.640Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 20,
+      "command": [
+        "agent-workflow/tools/sync-light-data-lake.mjs",
+        "--v4-only=true",
+        "--duckdb=skip"
+      ],
+      "started_at": "2026-09-12T09:48:11.640Z",
+      "finished_at": "2026-09-12T09:48:15.142Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 21,
+      "command": [
+        "agent-workflow/tools/assert-data-lake-v4.mjs",
+        "--duckdb=skip"
+      ],
+      "started_at": "2026-09-12T09:48:15.143Z",
+      "finished_at": "2026-09-12T09:48:15.913Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 22,
+      "command": [
+        "agent-workflow/tools/assert-funding-insights-v1.mjs",
+        "--all=true",
+        "--frontstage=true"
+      ],
+      "started_at": "2026-09-12T09:48:15.914Z",
+      "finished_at": "2026-09-12T09:48:20.789Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 23,
+      "command": [
+        "agent-workflow/tools/assert-taxonomy-consistency-v4-1.mjs"
+      ],
+      "started_at": "2026-09-12T09:48:20.790Z",
+      "finished_at": "2026-09-12T09:48:29.156Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 24,
+      "command": [
+        "agent-workflow/tools/assert-public-evidence-boundary.mjs"
+      ],
+      "started_at": "2026-09-12T09:48:29.157Z",
+      "finished_at": "2026-09-12T09:48:50.514Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 25,
+      "command": [
+        "agent-workflow/tools/assert-data-center-model-assist.mjs",
+        "--date=2026-09-12"
+      ],
+      "started_at": "2026-09-12T09:48:50.515Z",
+      "finished_at": "2026-09-12T09:48:52.532Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 26,
+      "command": [
+        "agent-workflow/tools/assert-data-center-v4.mjs",
+        "--date=2026-09-12"
+      ],
+      "started_at": "2026-09-12T09:48:52.533Z",
+      "finished_at": "2026-09-12T09:48:54.444Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 27,
+      "command": [
+        "agent-workflow/tools/assert-china-market-v1.mjs",
+        "--date=2026-09-12",
+        "--stage=bundle"
+      ],
+      "started_at": "2026-09-12T09:48:54.445Z",
+      "finished_at": "2026-09-12T09:48:54.588Z",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "index": 28,
+      "command": [
+        "agent-workflow/tools/build-china-funding-history-quality.mjs"
+      ],
+      "started_at": "2026-09-12T09:48:54.589Z",
+      "finished_at": "2026-09-12T09:48:55.159Z",
+      "exit_code": 0,
+      "status": "passed"
+    }
+  ]
+}

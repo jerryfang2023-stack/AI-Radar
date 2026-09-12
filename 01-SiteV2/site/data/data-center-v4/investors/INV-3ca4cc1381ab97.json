@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-3ca4cc1381ab97",
@@ -21,7 +21,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
@@ -29,64 +29,145 @@
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-09-04",
     "role_counts": {
+      "historical_or_ambiguous": 2,
       "participant": 2
     },
     "round_codes": [
       "angel",
-      "series_a1"
+      "undisclosed"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-74b42431957780b9",
-        "canonical_entity_id": "",
-        "name": "昉擎科技"
-      },
       {
         "entity_id": "EN-4731aa5b66658c7f",
         "canonical_entity_id": "EN-4731aa5b66658c7f",
         "name": "无界动力"
+      },
+      {
+        "entity_id": "EN-09afdeb63bb109fc",
+        "canonical_entity_id": "",
+        "name": "智子芯元(深圳)科技有限公司"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-d3ab8f1a81956dae",
-        "funding_insight_id": "FI-c7196586a871ba41",
+        "activity_id": "IA-1fc98c77e70ca417",
+        "funding_insight_id": "FI-3e97f5e30e99ff0b",
         "event_ids": [
-          "EV-4fbbf16279e27000"
+          "EV-cbec329253108e80"
         ],
-        "company_entity_id": "EN-74b42431957780b9",
+        "company_entity_id": "EN-ee2dce6ecf9a1bab",
         "company_canonical_entity_id": "",
-        "company_name": "昉擎科技",
-        "round": "A1轮",
-        "round_code": "series_a1",
-        "round_original": "A1轮",
-        "amount_original": "超过 100 亿人民币",
+        "company_name": "北京深朴智能科技有限公司",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "数亿元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": 10000000000,
-          "min_value": 10000000000,
-          "max_value": null,
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
           "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 100 亿元"
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
         },
-        "announced_at": "2026-08-03",
+        "announced_at": "2026-09-04",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次老股东",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a52d8da56bf15229",
+            "source_url": "https://news.qq.com/rain/a/20260410A03B5200",
+            "source_title": "融资丨深朴智能完成数亿元新一轮融资，加速具身智能商业化落地_腾讯新闻",
+            "source_content_hash": "29eb95824de03bbe",
+            "quote": "本轮融资由线性资本、普华资本领投，老股东钧山资本、顺为资本、BV 百度 风投持续加码",
+            "quote_hash": "abfa24de1a5b3938e20e7f09a80c4f5858082e42ce1ab02959a750e96080f14d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9c9c85269ebfe4c0",
+        "funding_insight_id": "FI-a3033e661b23b30e",
+        "event_ids": [
+          "EV-92d6132ee2a3505a"
+        ],
+        "company_entity_id": "EN-fcc9af8dc8c25167",
+        "company_canonical_entity_id": "",
+        "company_name": "智子芯元（深圳）科技有限责任公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-31d9f2f1a48dfdc8",
+            "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
+            "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
+            "source_content_hash": "d6e545bc49396418",
+            "quote": "本轮由同创伟业、钧山资本领投，老股东英诺天使与松禾资本超额跟投",
+            "quote_hash": "a0a61870627d8c9ce19a4207a3b464a5e283770ad9f07bbd4b4a297cdbff1d6d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-48870bc3ef9b67dc",
+        "funding_insight_id": "FI-cc917301b3cfdfc0",
+        "event_ids": [
+          "EV-3c75e8ce83d89604"
+        ],
+        "company_entity_id": "EN-09afdeb63bb109fc",
+        "company_canonical_entity_id": "",
+        "company_name": "智子芯元(深圳)科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮数千万元融资",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-04-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
         "scope": "current_round",
         "role": "本轮参投",
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-75b04daca915e1ca",
-            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-            "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-            "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
+            "source_id": "FISRC-99af5f038476e2fe",
+            "source_url": "http://city.sina.com.cn/news/2026-04-29/detail-inhwczph6704322.shtml",
+            "source_title": "从“有算力”到“用好算力”，智子芯元完成新一轮数千万元融资",
+            "source_content_hash": "515f0a87fd485b25",
+            "quote": "本轮融资由同创伟业、钧山资本、英诺天使、松禾资本共同参与。",
+            "quote_hash": "64e4bc61fd7f4a5db29a0372e26114b1c6efe9476ea1bfd24435644655fce9f4"
           }
         ]
       },
@@ -133,12 +214,28 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-75b04daca915e1ca",
-        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-        "quote": "在老股东方面，钧山资本大额加注，多维资本、华业天成、临港科创投、建发新兴、三七互娱等同步超额追投。",
-        "quote_hash": "b9f8a9336db78f9102fe9d09934572c7d4276c4633a14f7b894236041c450c8f"
+        "source_id": "FISRC-a52d8da56bf15229",
+        "source_url": "https://news.qq.com/rain/a/20260410A03B5200",
+        "source_title": "融资丨深朴智能完成数亿元新一轮融资，加速具身智能商业化落地_腾讯新闻",
+        "source_content_hash": "29eb95824de03bbe",
+        "quote": "本轮融资由线性资本、普华资本领投，老股东钧山资本、顺为资本、BV 百度 风投持续加码",
+        "quote_hash": "abfa24de1a5b3938e20e7f09a80c4f5858082e42ce1ab02959a750e96080f14d"
+      },
+      {
+        "source_id": "FISRC-31d9f2f1a48dfdc8",
+        "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
+        "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
+        "source_content_hash": "d6e545bc49396418",
+        "quote": "本轮由同创伟业、钧山资本领投，老股东英诺天使与松禾资本超额跟投",
+        "quote_hash": "a0a61870627d8c9ce19a4207a3b464a5e283770ad9f07bbd4b4a297cdbff1d6d"
+      },
+      {
+        "source_id": "FISRC-99af5f038476e2fe",
+        "source_url": "http://city.sina.com.cn/news/2026-04-29/detail-inhwczph6704322.shtml",
+        "source_title": "从“有算力”到“用好算力”，智子芯元完成新一轮数千万元融资",
+        "source_content_hash": "515f0a87fd485b25",
+        "quote": "本轮融资由同创伟业、钧山资本、英诺天使、松禾资本共同参与。",
+        "quote_hash": "64e4bc61fd7f4a5db29a0372e26114b1c6efe9476ea1bfd24435644655fce9f4"
       },
       {
         "source_id": "FISRC-daccbed46498e19c",

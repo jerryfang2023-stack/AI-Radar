@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-12f484cbed6963",
+    "name": "水木校友种子基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-07-10",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-73424822d4b99926",
+        "canonical_entity_id": "",
+        "name": "深圳无界智航科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-5a292e3a715528d4",
+        "funding_insight_id": "FI-6bf1b39ebf4c63f8",
+        "event_ids": [
+          "EV-34a9773ebd5bbc97"
+        ],
+        "company_entity_id": "EN-73424822d4b99926",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳无界智航科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-07-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-086ff36dfb7673e8",
+            "source_url": "https://news.pedaily.cn/202607/566101.shtml",
+            "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
+            "source_content_hash": "d9771ea116d57f70",
+            "quote": "深圳天使母基金、水木校友种子基金等多家财务投资机构，以及北洋海棠基金、特步家办等产业方跟投",
+            "quote_hash": "54651cf92cd842b29f7774734acb91f2858e3248475b318f43f0f588873b701c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5e2430901e5c2974",
+        "funding_insight_id": "FI-3734798e9a7f3c5c",
+        "event_ids": [
+          "EV-d94bcfdf64509513"
+        ],
+        "company_entity_id": "EN-0355fdd77dae437b",
+        "company_canonical_entity_id": "",
+        "company_name": "北京趋境科技有限责任公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-53ef187e17deac50",
+            "source_url": "https://unifuncs.com/s/lVd0EmYJ",
+            "source_title": "从清华实验室到Token工厂领跑者：趋境科技崛起之路 - U深搜",
+            "source_content_hash": "180a822b9de0eefd",
+            "quote": "天使轮 (2025年2月): 数千万元，高瓴创投、Z基金（智谱）领投，水木校友种子基金跟投，真知创投追投",
+            "quote_hash": "1f6ec18f0ef23f2f8a0c02f654ea9a97edaf9ebf8045621021f1a3e02e5d3ebb"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-086ff36dfb7673e8",
+        "source_url": "https://news.pedaily.cn/202607/566101.shtml",
+        "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
+        "source_content_hash": "d9771ea116d57f70",
+        "quote": "深圳天使母基金、水木校友种子基金等多家财务投资机构，以及北洋海棠基金、特步家办等产业方跟投",
+        "quote_hash": "54651cf92cd842b29f7774734acb91f2858e3248475b318f43f0f588873b701c"
+      },
+      {
+        "source_id": "FISRC-53ef187e17deac50",
+        "source_url": "https://unifuncs.com/s/lVd0EmYJ",
+        "source_title": "从清华实验室到Token工厂领跑者：趋境科技崛起之路 - U深搜",
+        "source_content_hash": "180a822b9de0eefd",
+        "quote": "天使轮 (2025年2月): 数千万元，高瓴创投、Z基金（智谱）领投，水木校友种子基金跟投，真知创投追投",
+        "quote_hash": "1f6ec18f0ef23f2f8a0c02f654ea9a97edaf9ebf8045621021f1a3e02e5d3ebb"
+      }
+    ]
+  }
+}

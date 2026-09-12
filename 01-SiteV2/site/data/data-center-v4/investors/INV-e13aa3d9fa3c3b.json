@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-e13aa3d9fa3c3b",
+    "name": "建研院(SH.603183)控股子公司",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-14",
+    "latest_disclosed_at": "2026-05-14",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d92a7f237b09feea",
+        "canonical_entity_id": "",
+        "name": "上海复鞍智能科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-3b47e2d17c206b6c",
+        "funding_insight_id": "FI-e33a64d66e4e499b",
+        "event_ids": [
+          "EV-7021bd7041019330"
+        ],
+        "company_entity_id": "EN-d92a7f237b09feea",
+        "company_canonical_entity_id": "",
+        "company_name": "上海复鞍智能科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-05-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c496091042c7e975",
+            "source_url": "https://news.pedaily.cn/202605/563872.shtml",
+            "source_title": "复鞍智能完成种子轮融资，小苗朗程、天际资本联合领投",
+            "source_content_hash": "8a542d4e6a0b88a7",
+            "quote": "建研院（SH.603183）控股子公司跟投",
+            "quote_hash": "194296dab0061ffab4709e284eb246a8237504a0e60730140cb5a62c4062fc2f"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-c496091042c7e975",
+        "source_url": "https://news.pedaily.cn/202605/563872.shtml",
+        "source_title": "复鞍智能完成种子轮融资，小苗朗程、天际资本联合领投",
+        "source_content_hash": "8a542d4e6a0b88a7",
+        "quote": "建研院（SH.603183）控股子公司跟投",
+        "quote_hash": "194296dab0061ffab4709e284eb246a8237504a0e60730140cb5a62c4062fc2f"
+      }
+    ]
+  }
+}

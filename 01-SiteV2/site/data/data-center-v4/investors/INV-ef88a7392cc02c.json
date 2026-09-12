@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-ef88a7392cc02c",
@@ -20,30 +20,77 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-02-14",
+    "latest_disclosed_at": "2026-04-02",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "angel"
+      "angel",
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-4731aa5b66658c7f",
         "canonical_entity_id": "EN-4731aa5b66658c7f",
         "name": "无界动力"
+      },
+      {
+        "entity_id": "EN-a6e5382c05dd0d16",
+        "canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "name": "星海图"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0f32afda190c5347",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
+            "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
+          }
+        ]
+      },
       {
         "activity_id": "IA-547dc91b1aed71e3",
         "funding_insight_id": "FI-6763b86fb1d41259",
@@ -86,6 +133,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
+        "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
+      },
       {
         "source_id": "FISRC-daccbed46498e19c",
         "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",

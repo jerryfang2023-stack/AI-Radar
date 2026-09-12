@@ -9,28 +9,32 @@
       "fde_procurement_contract",
       "fde_production_rollout"
     ],
-    "raw_documents": 100,
-    "original_sources": 90,
-    "valid_claims": 16,
+    "raw_documents": 114,
+    "original_sources": 104,
+    "valid_claims": 24,
     "observations": 1,
-    "canonical_events": 9,
+    "canonical_events": 16,
     "blocker_counts": {
-      "no_source_bounded_claim": 2,
+      "rumor_requires_primary_confirmation": 2,
+      "source_published_after_data_date": 1,
+      "historical_terra_extraction_not_accepted": 2,
+      "event_not_ai_relevant": 3,
+      "domestic_publication_date_unverified": 1,
       "event_entity_unresolved": 1,
       "no_source_bounded_event": 12,
+      "no_source_bounded_claim": 1,
       "source_outside_daily_window": 57,
       "non_event_or_index_title": 5,
       "opinion_without_source_bounded_event": 1,
       "community_source_requires_original_event_source": 2,
-      "rumor_requires_primary_confirmation": 1,
       "raw_source_quality_block": 9,
       "raw_document_not_auditable": 1
     },
     "rates": {
-      "original_source_rate": 0.9,
-      "valid_claim_rate": 0.16,
-      "observation_rate": 0.0625,
-      "event_conversion_rate": 0.5625
+      "original_source_rate": 0.9122807017543859,
+      "valid_claim_rate": 0.21052631578947367,
+      "observation_rate": 0.041666666666666664,
+      "event_conversion_rate": 0.6666666666666666
     }
   },
   {
@@ -44,25 +48,32 @@
       "hardware_product_specs",
       "hardware_supply_agreement"
     ],
-    "raw_documents": 50,
-    "original_sources": 45,
-    "valid_claims": 26,
-    "observations": 2,
-    "canonical_events": 12,
+    "raw_documents": 253,
+    "original_sources": 248,
+    "valid_claims": 75,
+    "observations": 23,
+    "canonical_events": 53,
     "blocker_counts": {
+      "domestic_publication_date_unverified": 32,
+      "historical_terra_extraction_not_accepted": 61,
+      "source_outside_funding_backfill_window": 15,
       "rumor_requires_primary_confirmation": 3,
-      "domestic_publication_date_unverified": 13,
-      "non_event_or_index_title": 3,
-      "source_outside_daily_window": 10,
-      "event_not_ai_relevant": 1,
-      "no_source_bounded_event": 1,
-      "raw_source_quality_block": 6
+      "event_not_ai_relevant": 9,
+      "non_event_or_index_title": 12,
+      "multiple_funding_recipients_require_separate_sources": 1,
+      "multi_event_roundup_not_single_event_source": 2,
+      "roundup_or_body_fragment_not_event_title": 1,
+      "reaction_or_commentary_not_new_event": 2,
+      "raw_source_quality_block": 10,
+      "event_outside_ai_industry_scope": 1,
+      "source_outside_daily_window": 8,
+      "no_source_bounded_event": 1
     },
     "rates": {
-      "original_source_rate": 0.9,
-      "valid_claim_rate": 0.52,
-      "observation_rate": 0.07692307692307693,
-      "event_conversion_rate": 0.46153846153846156
+      "original_source_rate": 0.9802371541501976,
+      "valid_claim_rate": 0.2964426877470356,
+      "observation_rate": 0.30666666666666664,
+      "event_conversion_rate": 0.7066666666666667
     }
   }
 ]

@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-83ea0254094592c0",
+    "name": "生产服务商北京趋境科技有限责任公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-d94bcfdf64509513"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-20",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-d94bcfdf64509513"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-d94bcfdf64509513",
+        "dataDate": "2026-09-12",
+        "date": "2026-05-20",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-0355fdd77dae437b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-de578bdf01d49112",
+            "fundingInsightId": "FI-d6e372cc57fd6245"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-0355fdd77dae437b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5979f45d9f642455",
+            "fundingInsightId": "FI-d6e372cc57fd6245"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "model_deployment",
+            "name": "模型部署",
+            "entityIds": [
+              "EN-0355fdd77dae437b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6bd6b364ef0d9b07",
+            "fundingInsightId": "FI-d6e372cc57fd6245"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-0355fdd77dae437b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e9f3674b3748693a",
+            "fundingInsightId": "FI-d6e372cc57fd6245"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-0355fdd77dae437b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-96e7783f46cae25e",
+            "fundingInsightId": "FI-d6e372cc57fd6245"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-0355fdd77dae437b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-65e95522de2ec313",
+            "fundingInsightId": "FI-d6e372cc57fd6245"
+          }
+        ],
+        "entityIds": [
+          "EN-0355fdd77dae437b",
+          "EN-83ea0254094592c0"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

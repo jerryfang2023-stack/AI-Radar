@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-6a0cd562cbec4c",
@@ -21,17 +21,17 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-04-07",
+    "first_disclosed_at": "2026-02-24",
     "latest_disclosed_at": "2026-06-03",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 3,
       "participant": 1
     },
     "round_codes": [
@@ -45,6 +45,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-80879c68ed2c39e0",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "同年7月完成近6亿元Pre A+轮融资，由京东领投",
+            "quote_hash": "e3361f730f097e11f4ec249dd27b6b3c59a03e5c82838f0bb9b874e82dd7b3f5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e4a97939194a9ac9",
         "funding_insight_id": "FI-71c58a10a93101c8",
@@ -86,16 +126,16 @@
         ]
       },
       {
-        "activity_id": "IA-0587a5d057e83dc8",
-        "funding_insight_id": "FI-4aaa0f3788c81d32",
+        "activity_id": "IA-8e126ebef9fa1bc0",
+        "funding_insight_id": "FI-265930da26c14510",
         "event_ids": [
           "EV-60d58e2a1f5733f8"
         ],
         "company_entity_id": "EN-1032f7a4df33f629",
         "company_canonical_entity_id": "EN-1032f7a4df33f629",
         "company_name": "千寻智能",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
         "round_original": "A+轮",
         "amount_original": "10亿元",
         "amount_normalized": {
@@ -124,9 +164,57 @@
             "quote_hash": "3bdea4c62b0a51235195c01cc415d8544dc4a1522e00e6a2322589dd3cb7f58b"
           }
         ]
+      },
+      {
+        "activity_id": "IA-bb040fda73b6d10c",
+        "funding_insight_id": "FI-846562dfba15b6a0",
+        "event_ids": [
+          "EV-61f07716fd7cb7ee"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "两轮融资",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-33f81d5bf5575efc",
+            "source_url": "https://robotscope.net/companies/qianxun-intelligence/",
+            "source_title": "千寻智能 · 估值¥20B · Series unknown — RobotScope",
+            "source_content_hash": "64289d675992a978",
+            "quote": "Pre-A+轮 | ~¥6亿 | 2025-07 | 京东领投，中网投、浙江省科创母基金、华泰紫金、复星锐正等跟投",
+            "quote_hash": "c9728abcb69a7cc79e0d02e5d4e7a7a2ec0a62119d4affaaad4814e9de1b2e73"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "同年7月完成近6亿元Pre A+轮融资，由京东领投",
+        "quote_hash": "e3361f730f097e11f4ec249dd27b6b3c59a03e5c82838f0bb9b874e82dd7b3f5"
+      },
       {
         "source_id": "FISRC-d2c8c841370ed82a",
         "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
@@ -142,7 +230,35 @@
         "source_content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
         "quote": "加上此前入局的华为系、京东、中国互联网投资基金，千寻智能汇聚科技、产业、金融三类资本阵容。",
         "quote_hash": "3bdea4c62b0a51235195c01cc415d8544dc4a1522e00e6a2322589dd3cb7f58b"
+      },
+      {
+        "source_id": "FISRC-33f81d5bf5575efc",
+        "source_url": "https://robotscope.net/companies/qianxun-intelligence/",
+        "source_title": "千寻智能 · 估值¥20B · Series unknown — RobotScope",
+        "source_content_hash": "64289d675992a978",
+        "quote": "Pre-A+轮 | ~¥6亿 | 2025-07 | 京东领投，中网投、浙江省科创母基金、华泰紫金、复星锐正等跟投",
+        "quote_hash": "c9728abcb69a7cc79e0d02e5d4e7a7a2ec0a62119d4affaaad4814e9de1b2e73"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Pre-A+轮领投",
+          "source_hash": "1adb788e082cf499077e735ffbcd24d724364263f89095c7c720c521141ddf4c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:51.670Z",
+          "status": "translated"
+        },
+        "activities[3].role": {
+          "text": "Pre-A+轮领投",
+          "source_hash": "1adb788e082cf499077e735ffbcd24d724364263f89095c7c720c521141ddf4c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:51.670Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }

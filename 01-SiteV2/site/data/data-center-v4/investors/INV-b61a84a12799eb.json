@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-b61a84a12799eb",
@@ -20,30 +20,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
-    "first_disclosed_at": "2026-08-03",
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-07",
     "latest_disclosed_at": "2026-08-03",
     "role_counts": {
       "co_lead": 1,
-      "participant": 1
+      "historical_or_ambiguous": 1
     },
     "round_codes": [
-      "seed",
-      "series_a1"
+      "seed"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-74b42431957780b9",
-        "canonical_entity_id": "",
-        "name": "昉擎科技"
-      },
       {
         "entity_id": "EN-aef5bb4e898f303c",
         "canonical_entity_id": "EN-aef5bb4e898f303c",
@@ -51,46 +45,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-900b6beadda21336",
-        "funding_insight_id": "FI-c7196586a871ba41",
-        "event_ids": [
-          "EV-4fbbf16279e27000"
-        ],
-        "company_entity_id": "EN-74b42431957780b9",
-        "company_canonical_entity_id": "",
-        "company_name": "昉擎科技",
-        "round": "A1轮",
-        "round_code": "series_a1",
-        "round_original": "A1轮",
-        "amount_original": "超过 100 亿人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 10000000000,
-          "min_value": 10000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 100 亿元"
-        },
-        "announced_at": "2026-08-03",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-75b04daca915e1ca",
-            "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-            "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-            "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-            "quote": "尚势资本、水木创投、明嘉资本等产业资本参与投资",
-            "quote_hash": "5a6eda728c356477d57f9ecb72633835568ca6460f0b3a7512e5d1e38d64a2fd"
-          }
-        ]
-      },
       {
         "activity_id": "IA-0d00ab03d3d6f271",
         "funding_insight_id": "FI-72a762e01ac47812",
@@ -130,17 +84,49 @@
             "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-70b454b575406203",
+        "funding_insight_id": "FI-69f053ac44d015ab",
+        "event_ids": [
+          "EV-ada36aac02003efe"
+        ],
+        "company_entity_id": "EN-00e5330d08a779e8",
+        "company_canonical_entity_id": "",
+        "company_name": "北京共绩科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-73d8bab6afc27534",
+            "source_url": "https://pitchhub.36kr.com/project/3003253486042881",
+            "source_title": "共绩科技| 项目信息 - 创投平台- 36氪",
+            "source_content_hash": "8558ef142ce6976a",
+            "quote": "天使轮 2024-10 数千万人民币 水木创投 ， 奇绩创坛 ， 新进创投",
+            "quote_hash": "92e8d80071db8d56ff76bc6a458e5e99fb325db230bc8f8b911130023977ad60"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-75b04daca915e1ca",
-        "source_url": "https://www.cs.com.cn/ssgs/01/2026/08/03/detail_2026080310029022.html",
-        "source_title": "昉擎科技完成A1轮融资 投后估值超100亿元",
-        "source_content_hash": "65f231c072ce7f9b34b40578a04cee3af2129d56fb71dfecce9c2f53faa927f0",
-        "quote": "尚势资本、水木创投、明嘉资本等产业资本参与投资",
-        "quote_hash": "5a6eda728c356477d57f9ecb72633835568ca6460f0b3a7512e5d1e38d64a2fd"
-      },
       {
         "source_id": "FISRC-8f70de35939e4c3c",
         "source_url": "https://36kr.com/p/3919025939246727?f=rss",
@@ -148,6 +134,14 @@
         "source_content_hash": "ef1aa49772b166b7",
         "quote": "由星连资本与水木创投联合领投",
         "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
+      },
+      {
+        "source_id": "FISRC-73d8bab6afc27534",
+        "source_url": "https://pitchhub.36kr.com/project/3003253486042881",
+        "source_title": "共绩科技| 项目信息 - 创投平台- 36氪",
+        "source_content_hash": "8558ef142ce6976a",
+        "quote": "天使轮 2024-10 数千万人民币 水木创投 ， 奇绩创坛 ， 新进创投",
+        "quote_hash": "92e8d80071db8d56ff76bc6a458e5e99fb325db230bc8f8b911130023977ad60"
       }
     ]
   }

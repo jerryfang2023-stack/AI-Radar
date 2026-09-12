@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-e7db85b3e4b92e",
+    "name": "麟阁创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-08",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-48b85dc3fd54f74d",
+        "canonical_entity_id": "",
+        "name": "北京深空矩阵科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-46287f351272e152",
+        "funding_insight_id": "FI-a7740a823b1d7a75",
+        "event_ids": [
+          "EV-03bc82f6d6c169d7"
+        ],
+        "company_entity_id": "EN-48b85dc3fd54f74d",
+        "company_canonical_entity_id": "",
+        "company_name": "北京深空矩阵科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "亿元级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-424b889a69139c4a",
+            "source_url": "https://news.pedaily.cn/202609/568647.shtml",
+            "source_title": "深空矩阵完成亿元级天使轮融资，鼎晖VGC、麟阁创投联合领投",
+            "source_content_hash": "2b5706f908b21e59",
+            "quote": "本轮融资由 鼎晖VGC、麟阁创投联合领投",
+            "quote_hash": "0d9e020b7d024ad881fc45887ae90c46da8a77818ae384c4852909208db6ff30"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-424b889a69139c4a",
+        "source_url": "https://news.pedaily.cn/202609/568647.shtml",
+        "source_title": "深空矩阵完成亿元级天使轮融资，鼎晖VGC、麟阁创投联合领投",
+        "source_content_hash": "2b5706f908b21e59",
+        "quote": "本轮融资由 鼎晖VGC、麟阁创投联合领投",
+        "quote_hash": "0d9e020b7d024ad881fc45887ae90c46da8a77818ae384c4852909208db6ff30"
+      }
+    ]
+  }
+}

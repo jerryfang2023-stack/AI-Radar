@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-28dcf5aa500cc9",
@@ -20,21 +20,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
+    "china_market_activity_count": 2,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-04-07",
-    "latest_disclosed_at": "2026-04-07",
+    "first_disclosed_at": "2026-02-24",
+    "latest_disclosed_at": "2026-06-03",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
     "round_codes": [
-      "other"
+      "other",
+      "series_a_plus"
     ],
     "portfolio_companies": [
       {
@@ -45,16 +48,56 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-a7ee3c7e104c4b59",
-        "funding_insight_id": "FI-4aaa0f3788c81d32",
+        "activity_id": "IA-09dbd8e6892bc27c",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年2月及3月轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "其中今年2月，千寻连续完成两轮融资近20亿元，集结了云锋基金、某头部国资机构、混沌投资（葛卫东）、红杉中国等超一线机构",
+            "quote_hash": "1f60e74a68f5cc68189d72045bf8489d10d72db3c58d8c54cc51795e25042be0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7d90bb7b6bb89c45",
+        "funding_insight_id": "FI-265930da26c14510",
         "event_ids": [
           "EV-60d58e2a1f5733f8"
         ],
         "company_entity_id": "EN-1032f7a4df33f629",
         "company_canonical_entity_id": "EN-1032f7a4df33f629",
         "company_name": "千寻智能",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
         "round_original": "A+轮",
         "amount_original": "10亿元",
         "amount_normalized": {
@@ -83,9 +126,57 @@
             "quote_hash": "8445397bb38fdfaed62a63a987ce32a622be2525e7415323ab0bcb42d4fe69c8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-6fe43a003214c3cd",
+        "funding_insight_id": "FI-846562dfba15b6a0",
+        "event_ids": [
+          "EV-61f07716fd7cb7ee"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "两轮融资",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ee3064edf7c871f4",
+            "source_url": "https://www.qbitai.com/2026/02/381766.html",
+            "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+            "source_content_hash": "0ad2701645471c8d",
+            "quote": "云锋基金、某头部国资机构、混沌投资（葛卫东）、红杉中国 等超一线机构重磅入局",
+            "quote_hash": "0faf051cd648fac87fb0f2e91ccd3baf2cf5214a9242eb2fca58d1406e25b553"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "其中今年2月，千寻连续完成两轮融资近20亿元，集结了云锋基金、某头部国资机构、混沌投资（葛卫东）、红杉中国等超一线机构",
+        "quote_hash": "1f60e74a68f5cc68189d72045bf8489d10d72db3c58d8c54cc51795e25042be0"
+      },
       {
         "source_id": "FISRC-fc5617428a7935ed",
         "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",
@@ -93,6 +184,14 @@
         "source_content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
         "quote": "本轮融资由雷军旗下顺为资本、马云旗下云锋基金联合领投",
         "quote_hash": "8445397bb38fdfaed62a63a987ce32a622be2525e7415323ab0bcb42d4fe69c8"
+      },
+      {
+        "source_id": "FISRC-ee3064edf7c871f4",
+        "source_url": "https://www.qbitai.com/2026/02/381766.html",
+        "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
+        "source_content_hash": "0ad2701645471c8d",
+        "quote": "云锋基金、某头部国资机构、混沌投资（葛卫东）、红杉中国 等超一线机构重磅入局",
+        "quote_hash": "0faf051cd648fac87fb0f2e91ccd3baf2cf5214a9242eb2fca58d1406e25b553"
       }
     ]
   }

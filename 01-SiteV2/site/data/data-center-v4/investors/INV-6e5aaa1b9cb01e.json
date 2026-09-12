@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-6e5aaa1b9cb01e",
@@ -21,20 +21,20 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-04-16",
+    "first_disclosed_at": "2026-04-02",
     "latest_disclosed_at": "2026-04-17",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 2
     },
     "round_codes": [
-      "multi_round",
       "pre_series_a"
     ],
     "portfolio_companies": [
@@ -46,17 +46,17 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-fc3ae23ee68f16e5",
-        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "activity_id": "IA-8a080d9fb6c011dc",
+        "funding_insight_id": "FI-b9eb4320e43ddfdf",
         "event_ids": [
           "EV-81810a440198ac3c"
         ],
         "company_entity_id": "EN-39ba5f9dcab4e98a",
         "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "company_name": "它石智航",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
         "amount_original": "4.55亿美金",
         "amount_normalized": {
           "currency": "USD",
@@ -124,6 +124,47 @@
             "quote_hash": "d532cb5244b6fcc2ee956aec9ec04bc9dfda05dbe4eb0981030543c94c717b15"
           }
         ]
+      },
+      {
+        "activity_id": "IA-60677fb36edd18bb",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "新进凯辉基金、联想创投、海尔资本、今日资本、美团龙珠、中金保时捷基金、襄禾资本、北京机器人产业发展投资基金、亦庄国投等知名机构。",
+            "quote_hash": "ce0234246a9291f7b30971897c1b63d65888b8b395d41b136fd13f1d3a9ec9bf"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -142,6 +183,14 @@
         "source_content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
         "quote": "国有资本层面，北京 机器人 产业发展投资基金、上海国投先导投资，这也是两家国资首次联合投资具身智能公司。",
         "quote_hash": "d532cb5244b6fcc2ee956aec9ec04bc9dfda05dbe4eb0981030543c94c717b15"
+      },
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "新进凯辉基金、联想创投、海尔资本、今日资本、美团龙珠、中金保时捷基金、襄禾资本、北京机器人产业发展投资基金、亦庄国投等知名机构。",
+        "quote_hash": "ce0234246a9291f7b30971897c1b63d65888b8b395d41b136fd13f1d3a9ec9bf"
       }
     ]
   }

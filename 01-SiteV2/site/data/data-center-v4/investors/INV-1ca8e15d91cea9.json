@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-1ca8e15d91cea9",
@@ -20,29 +20,36 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 7,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-04-16",
+    "latest_disclosed_at": "2026-09-09",
     "role_counts": {
-      "participant": 3
+      "historical_or_ambiguous": 7,
+      "participant": 5
     },
     "round_codes": [
       "angel",
       "multi_round",
-      "other"
+      "series_b1",
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-e7492db096492304",
         "canonical_entity_id": "",
         "name": "极佳视界"
+      },
+      {
+        "entity_id": "EN-ada6f7916f22af98",
+        "canonical_entity_id": "",
+        "name": "求之科技(无锡)有限公司"
       },
       {
         "entity_id": "EN-4731aa5b66658c7f",
@@ -56,6 +63,286 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-165158ce44e79a96",
+        "funding_insight_id": "FI-0e108e32ef8a5b27",
+        "event_ids": [
+          "EV-43c9b851bd2a46c7"
+        ],
+        "company_entity_id": "EN-4d916dc8b25421d2",
+        "company_canonical_entity_id": "",
+        "company_name": "比特无限",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-222600ccfb470c3e",
+            "source_url": "https://m.aitntnews.com/newDetail.html?newId=29104",
+            "source_title": "正面Pk美国普罗米修斯！比特无限击败全球团队拿下ECCV 2026 CAD Challenge",
+            "source_content_hash": "a317e9252f5c006f",
+            "quote": "其股东阵容涵盖卓源亚洲（基流、生数等项目投资方）、容亿资本（宇树科技、银河通用等项目早期投资方）、普华资本以及助力 12 家企业成功 IPO 的壹德资本",
+            "quote_hash": "8cb645459c1e1ebfb9bd5bb79b57428f8916c4ff01af75fb54f74d3860751a6b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a611dcd29069011c",
+        "funding_insight_id": "FI-1a32de86086e29ea",
+        "event_ids": [
+          "EV-d0dd835f3abb3163"
+        ],
+        "company_entity_id": "EN-f56780cc13476293",
+        "company_canonical_entity_id": "",
+        "company_name": "上海比特无限人工智能科技有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮及天使+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6aea6a18fe712b45",
+            "source_url": "https://m.pedaily.cn/news/566841",
+            "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
+            "source_content_hash": "d48aefe2d69963c9",
+            "quote": "比特无限 上海比特无限人工智能科技有限公司 融资时间 2026-07-24 当前轮次 天使轮 融资金额 未披露 AI 涉及机构： 卓源亚洲 容亿投资 普华资本 壹德资本",
+            "quote_hash": "b8f53700bde821a96ad3d0463b9893d04c2982bb8e49cf22b6d5e9808ad5fc43"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ae90759cd2a702d6",
+        "funding_insight_id": "FI-3e97f5e30e99ff0b",
+        "event_ids": [
+          "EV-cbec329253108e80"
+        ],
+        "company_entity_id": "EN-ee2dce6ecf9a1bab",
+        "company_canonical_entity_id": "",
+        "company_name": "北京深朴智能科技有限公司",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3bc1b2f58c3d4a86",
+            "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+            "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+            "source_content_hash": "892b3be292e8e3e6",
+            "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+            "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dd0a9837ceb50cb0",
+        "funding_insight_id": "FI-6adc0d7bfd441daa",
+        "event_ids": [
+          "EV-b4d6c556eadaa272"
+        ],
+        "company_entity_id": "EN-ada6f7916f22af98",
+        "company_canonical_entity_id": "",
+        "company_name": "求之科技(无锡)有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d45f7a4d8fd76b88",
+            "source_url": "https://www.sohu.com/a/1044130792_120109837",
+            "source_title": "求之科技完成超1亿美元天使轮融资",
+            "source_content_hash": "ef8ed950cecf5cd3",
+            "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
+            "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3ea2355d8ffa79fd",
+        "funding_insight_id": "FI-a385248b0f830a67",
+        "event_ids": [
+          "EV-df17b95cf25e7840"
+        ],
+        "company_entity_id": "EN-062ed8ada14ccffe",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-50b5e9b4a45a40c4",
+            "source_url": "https://www.siliconflowcn.com/",
+            "source_title": "SiliconFlow硅基流动官网",
+            "source_content_hash": "20b42b9c0d124bcf",
+            "quote": "2025-02 完成亿元级Pre-A轮融资，华创资本领投，普华资本跟投，老股东耀途资本超额认购。",
+            "quote_hash": "12f634967d0aedf8da9b519ced0d069b966a2fc3a4cde4cb1f193d74afa582b5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-da198b11f2295f4a",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B1轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5b32e08ea492c57a",
+        "funding_insight_id": "FI-b17732f34966fbc2",
+        "event_ids": [
+          "EV-c2b1af9cc8fba608"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "",
+        "company_name": "极佳视界",
+        "round": "B1轮",
+        "round_code": "series_b1",
+        "round_original": "B1轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1fb846b5355af64",
+            "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+            "source_title": "首发| 极佳视界，一个月融资25亿",
+            "source_content_hash": "60f6c8807fbce9ac",
+            "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+            "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5717cdb1ea6e8658",
         "funding_insight_id": "FI-f4cf69e8d2cc7653",
@@ -97,16 +384,57 @@
         ]
       },
       {
-        "activity_id": "IA-bad03687ecfa571b",
-        "funding_insight_id": "FI-af2461a497e30ffa",
+        "activity_id": "IA-e6ca80ba9e339dd8",
+        "funding_insight_id": "FI-0421ad5a685ba3b0",
         "event_ids": [
+          "EV-7620153f4892a0af"
+        ],
+        "company_entity_id": "EN-ce22f929f4a17467",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（深圳）科技股份有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-04-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-967469388bea08ac",
+            "source_url": "http://zs.scbzol.com/zs/2025/0904/323696.html",
+            "source_title": "「智平方」半年完成7轮数亿元融资，普华资本领投A+轮｜普华Portfolio_中商网",
+            "source_content_hash": "2b08aa5077abbff2",
+            "quote": "A+轮融资由普华资本领投，老股东敦鸿资产、国投持续加码",
+            "quote_hash": "e2d55dfef338c69c9c6c7ad0dde23621e2f64148eef8a156925fe12e51e09852"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ca937c85ca4d50d8",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
           "EV-435d7e7878b0c326"
         ],
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "20亿元",
         "amount_normalized": {
@@ -127,12 +455,52 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-dd387948ae711f72",
-            "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
-            "source_title": "星海图完成20亿元B+轮融资",
-            "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
-            "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
-            "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
+            "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-39228a214fbebbcd",
+        "funding_insight_id": "FI-260667c69ddbf880",
+        "event_ids": [
+          "EV-565b6c1b10b3cf83"
+        ],
+        "company_entity_id": "EN-90596b71813a2ee2",
+        "company_canonical_entity_id": "",
+        "company_name": "智平方（AI² Robotics）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b78c44b13620e61a",
+            "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+            "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+            "source_content_hash": "36eeadfe3f6c3f89",
+            "quote": "智平方先后完成由国中资本领投和普华资本领投两轮融资",
+            "quote_hash": "3903ee955a58ef79c3226005dd71570798ea7bc476e40eeaf78feb2cd11e4e2e"
           }
         ]
       },
@@ -179,6 +547,62 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-222600ccfb470c3e",
+        "source_url": "https://m.aitntnews.com/newDetail.html?newId=29104",
+        "source_title": "正面Pk美国普罗米修斯！比特无限击败全球团队拿下ECCV 2026 CAD Challenge",
+        "source_content_hash": "a317e9252f5c006f",
+        "quote": "其股东阵容涵盖卓源亚洲（基流、生数等项目投资方）、容亿资本（宇树科技、银河通用等项目早期投资方）、普华资本以及助力 12 家企业成功 IPO 的壹德资本",
+        "quote_hash": "8cb645459c1e1ebfb9bd5bb79b57428f8916c4ff01af75fb54f74d3860751a6b"
+      },
+      {
+        "source_id": "FISRC-6aea6a18fe712b45",
+        "source_url": "https://m.pedaily.cn/news/566841",
+        "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
+        "source_content_hash": "d48aefe2d69963c9",
+        "quote": "比特无限 上海比特无限人工智能科技有限公司 融资时间 2026-07-24 当前轮次 天使轮 融资金额 未披露 AI 涉及机构： 卓源亚洲 容亿投资 普华资本 壹德资本",
+        "quote_hash": "b8f53700bde821a96ad3d0463b9893d04c2982bb8e49cf22b6d5e9808ad5fc43"
+      },
+      {
+        "source_id": "FISRC-3bc1b2f58c3d4a86",
+        "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+        "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+        "source_content_hash": "892b3be292e8e3e6",
+        "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+        "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+      },
+      {
+        "source_id": "FISRC-d45f7a4d8fd76b88",
+        "source_url": "https://www.sohu.com/a/1044130792_120109837",
+        "source_title": "求之科技完成超1亿美元天使轮融资",
+        "source_content_hash": "ef8ed950cecf5cd3",
+        "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
+        "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+      },
+      {
+        "source_id": "FISRC-50b5e9b4a45a40c4",
+        "source_url": "https://www.siliconflowcn.com/",
+        "source_title": "SiliconFlow硅基流动官网",
+        "source_content_hash": "20b42b9c0d124bcf",
+        "quote": "2025-02 完成亿元级Pre-A轮融资，华创资本领投，普华资本跟投，老股东耀途资本超额认购。",
+        "quote_hash": "12f634967d0aedf8da9b519ced0d069b966a2fc3a4cde4cb1f193d74afa582b5"
+      },
+      {
+        "source_id": "FISRC-ce47b663ca256878",
+        "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+        "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+        "source_content_hash": "a652909321da946b",
+        "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+      },
+      {
+        "source_id": "FISRC-a1fb846b5355af64",
+        "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+        "source_title": "首发| 极佳视界，一个月融资25亿",
+        "source_content_hash": "60f6c8807fbce9ac",
+        "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
+        "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+      },
+      {
         "source_id": "FISRC-4782a6093d519a4d",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
         "source_title": "极佳视界完成15亿元B1轮融资",
@@ -187,12 +611,28 @@
         "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
       },
       {
-        "source_id": "FISRC-dd387948ae711f72",
-        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
-        "source_title": "星海图完成20亿元B+轮融资",
-        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
-        "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
-        "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+        "source_id": "FISRC-967469388bea08ac",
+        "source_url": "http://zs.scbzol.com/zs/2025/0904/323696.html",
+        "source_title": "「智平方」半年完成7轮数亿元融资，普华资本领投A+轮｜普华Portfolio_中商网",
+        "source_content_hash": "2b08aa5077abbff2",
+        "quote": "A+轮融资由普华资本领投，老股东敦鸿资产、国投持续加码",
+        "quote_hash": "e2d55dfef338c69c9c6c7ad0dde23621e2f64148eef8a156925fe12e51e09852"
+      },
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
+        "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
+      },
+      {
+        "source_id": "FISRC-b78c44b13620e61a",
+        "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+        "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+        "source_content_hash": "36eeadfe3f6c3f89",
+        "quote": "智平方先后完成由国中资本领投和普华资本领投两轮融资",
+        "quote_hash": "3903ee955a58ef79c3226005dd71570798ea7bc476e40eeaf78feb2cd11e4e2e"
       },
       {
         "source_id": "FISRC-daccbed46498e19c",
@@ -202,6 +642,18 @@
         "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
         "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[4].role": {
+          "text": "Pre-A轮跟投",
+          "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:49.993Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }

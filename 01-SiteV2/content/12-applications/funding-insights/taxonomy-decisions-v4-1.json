@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-12T07:22:55.594Z",
+    "generated_at": "2026-09-12T09:40:27.058Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 318,
-    "input_hash": "3c4d7eb7c3d69382",
-    "override_count": 17,
-    "needs_review_count": 11,
-    "low_confidence_count": 18
+    "decision_count": 442,
+    "input_hash": "d08dcab25d42a63a",
+    "override_count": 18,
+    "needs_review_count": 48,
+    "low_confidence_count": 62
   },
   "decisions": [
     {
@@ -2000,7 +2000,6 @@
     },
     {
       "event_id": "EV-5f3ccb941a2fe5d7",
-      "canonical_event_id": "EV-2a78dd5feb40a78a",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
       "market_application_id": "",
@@ -2015,7 +2014,8 @@
       ],
       "confidence": 0.9,
       "needs_review": false,
-      "rationale": "Harmony在Slack和Teams中处理入职、软件访问等员工体验任务，属于跨行业的 productivity_enterprise_workflows 和 hr_workforce 功能，因此归类为企业应用。"
+      "rationale": "Harmony在Slack和Teams中处理入职、软件访问等员工体验任务，属于跨行业的 productivity_enterprise_workflows 和 hr_workforce 功能，因此归类为企业应用。",
+      "canonical_event_id": "EV-2a78dd5feb40a78a"
     },
     {
       "event_id": "EV-e0ecb5f81a273447",
@@ -2058,7 +2058,6 @@
     },
     {
       "event_id": "EV-df789745fb926bfd",
-      "canonical_event_id": "EV-ecc12e5ec883b7e7",
       "market_category_id": "industry_applications",
       "market_subcategory_id": "consumer_retail",
       "market_application_id": "",
@@ -2074,7 +2073,8 @@
       ],
       "confidence": 0.8,
       "needs_review": false,
-      "rationale": "Overtone利用AI提供语音优先的婚介服务，属于面向消费者的零售/娱乐应用，而非特定行业应用。"
+      "rationale": "Overtone利用AI提供语音优先的婚介服务，属于面向消费者的零售/娱乐应用，而非特定行业应用。",
+      "canonical_event_id": "EV-ecc12e5ec883b7e7"
     },
     {
       "event_id": "EV-f1553722b4ce43af",
@@ -4310,7 +4310,6 @@
     },
     {
       "event_id": "EV-2dff32c1b6f813e4",
-      "canonical_event_id": "EV-b2d94511e4b4dfc8",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "hardware_computing",
       "market_application_id": "chips",
@@ -4330,7 +4329,8 @@
       ],
       "confidence": 0.95,
       "needs_review": false,
-      "rationale": "TYLsemi is a semiconductor startup developing an AI chiplet (TYL.Power) for power delivery, which falls under infrastructure compute hardware chips. The product is a chip/accelerator, used by developers designing AI systems, applicable across multiple industries requiring efficient compute."
+      "rationale": "TYLsemi is a semiconductor startup developing an AI chiplet (TYL.Power) for power delivery, which falls under infrastructure compute hardware chips. The product is a chip/accelerator, used by developers designing AI systems, applicable across multiple industries requiring efficient compute.",
+      "canonical_event_id": "EV-b2d94511e4b4dfc8"
     },
     {
       "event_id": "EV-11b5192fc54c0aa0",
@@ -4357,7 +4357,6 @@
     },
     {
       "event_id": "EV-305ec93673f4f12e",
-      "canonical_event_id": "EV-82e77abb1a77f81c",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "development_deployment",
       "market_application_id": "model_deployment",
@@ -4378,7 +4377,8 @@
       ],
       "confidence": 0.9,
       "needs_review": false,
-      "rationale": "Valarian 提供国防和企业级 AI 系统基础设施，帮助客户构建受控计算环境，属于为其他 AI 产品构建者提供部署基础设施，因此归入 infrastructure_compute > development_deployment > model_deployment。"
+      "rationale": "Valarian 提供国防和企业级 AI 系统基础设施，帮助客户构建受控计算环境，属于为其他 AI 产品构建者提供部署基础设施，因此归入 infrastructure_compute > development_deployment > model_deployment。",
+      "canonical_event_id": "EV-82e77abb1a77f81c"
     },
     {
       "event_id": "EV-88f4ee8cd57bdf42",
@@ -5009,21 +5009,6 @@
       "confidence": 0.95,
       "needs_review": false,
       "rationale": "星动纪元的产品（星动L7、星动XHAND1、星动Q5）均为物理世界中的机器人系统，能够感知、决策并执行物理动作（如分拣、递送、操作），符合Physical AI的定义。证据显示其在物流、工业分拣、门店服务等场景落地，非仅世界模型或未来规划。"
-    },
-    {
-      "event_id": "EV-4fbbf16279e27000",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "hardware_computing",
-      "market_application_id": "computing_infrastructure",
-      "product_form_id": "ai_compute_system",
-      "use_case_ids": [],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "证据显示公司研发分离式分布式AI计算架构，将FNN与注意力机制解耦并分配给不同硬件处理，属于为AI构建者提供计算基础设施，而非直接面向终端应用或单一行业。产品形态为AI计算系统而非芯片，因此归入infrastructure_compute > hardware_computing > computing_infrastructure。"
     },
     {
       "event_id": "EV-e59938ae531af428",
@@ -6296,6 +6281,2548 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "证据显示公司专注AI驱动新药研发，产品覆盖靶点研究、分子设计、实验验证及临床数据分析等制药关键环节，属于围绕医疗健康行业专业数据与工作流的行业应用，而非通用基础设施或跨行业企业应用。"
+    },
+    {
+      "event_id": "EV-12f331aaf7d4cca6",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "content_creation"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "爱诗科技专注于多模态视频大模型和世界模型，提供PixVerse、拍我AI等原生AI视频产品，面向全球用户和团队生产、开发者集成。产品形态为终端用户应用，主要用例为内容创作，行业偏向媒体娱乐，目标用户包括商业用户和消费者。"
+    },
+    {
+      "event_id": "EV-12616a174fbe2558",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "公司专注于大规模异构算力调度，自研TOLD技术栈实现万卡级异构GPU统一纳管与推理调度，属于基础设施计算中的硬件计算/计算基础设施。产品形态为AI基础设施软件，主要面向企业用户提供算力部署与Token服务。"
+    },
+    {
+      "event_id": "EV-ada36aac02003efe",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "telecommunications"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "The company builds a flexible scheduling network that integrates computing and power, aggregating idle compute from individuals, internet cafes, and intelligent computing centers to meet temporary AI and scientific computing demand. This is infrastructure-level compute scheduling, so the closest allowed hierarchy tuple is infrastructure_compute > hardware_computing > computing_infrastructure. The product is described as a scheduling network rather than a physical robot or autonomous machine, so physical_ai is not appropriate. Product form is ai_infrastructure_software as given. Use case is closest to data_analysis/scientific computing, but the allowed list lacks a perfect match; data_analysis is selected. Industry is not explicitly stated; telecommunications is chosen as a weak proxy for distributed network infrastructure, but this is uncertain and needs review."
+    },
+    {
+      "event_id": "EV-e70b6a1287dcaa59",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "software_development_coding",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕软件工程多智能体系统，用户以自然语言生成应用，属于跨行业的软件开发编码企业应用，而非基础设施或单一行业应用。"
+    },
+    {
+      "event_id": "EV-b0e0458e4ae40f66",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "灵御TA机器人在真实超市场景完成商品递送、货架取放等物理任务，直接感知、决策并作用于物理世界，符合Physical AI。"
+    },
+    {
+      "event_id": "EV-d67dd793fe1f2c04",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "该卡片将公司定位为具身智能高精度物理世界数据基础设施提供商，核心是数据采集与训练部署平台，但产品仍包含机器人本体，证据不足以完全区分基础设施与物理AI，需人工复核。"
+    },
+    {
+      "event_id": "EV-f6c882e143c0d634",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "marketing",
+        "content_creation",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司明确为AI营销技术服务商，产品为AI口碑营销数字员工及平台，属于跨行业营销职能，非单一行业专属，故归入企业应用-营销。"
+    },
+    {
+      "event_id": "EV-d94bcfdf64509513",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "model_deployment",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司提供AI Token生产服务及推理框架，面向模型部署和推理基础设施，属于开发部署类基础设施，应用为模型部署。"
+    },
+    {
+      "event_id": "EV-e8f381baf505ac32",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "media_entertainment",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "公司提供AI 3D大模型及世界模型，属于模型层基础设施，产品形式为模型，支持内容创作和设计工程等场景。"
+    },
+    {
+      "event_id": "EV-03bc82f6d6c169d7",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "aerospace_defense",
+        "telecommunications"
+      ],
+      "target_user_ids": [
+        "public_sector_user",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "公司打造太空AI算力卫星网络，属于硬件计算基础设施，提供AI算力系统，面向航天国防和通信行业。"
+    },
+    {
+      "event_id": "EV-cbec329253108e80",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "food_hospitality"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司专注通用具身智能机器人，产品在酒店和家庭场景自主执行物理任务，属于物理AI。"
+    },
+    {
+      "event_id": "EV-a16d0d2a76e8d4a6",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司为人形机器人整机及灵巧手供应商，产品在物流、门店等场景执行物理操作，属于物理AI。"
+    },
+    {
+      "event_id": "EV-25d8a47fbc3c0fbb",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "knowledge_search",
+        "content_creation",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "月之暗面是一家大模型公司，核心产品包括Kimi智能助手、Kimi K3大模型及B端API服务。其基础模型和API服务属于基础设施层的模型开发与部署，因此选择infrastructure_compute/development_deployment/models。产品形态以模型和API为主，同时面向开发者和企业提供模型能力，也通过Kimi智能助手覆盖C端用户。"
+    },
+    {
+      "event_id": "EV-53ffdce6405b8ba9",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "cyber_physical_security",
+      "market_application_id": "",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品为安全大模型、WAF及AI平台，核心是安全检测与响应，属于跨行业的网络安全功能，因此归入企业应用的网络与物理安全子类。"
+    },
+    {
+      "event_id": "EV-3b817460afe0d3a6",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "logistics_supply_chain",
+        "manufacturing",
+        "aerospace_defense"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "public_sector_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "产品为通用“无人群智大脑”，与无人机、无人车及机器人深度融合，直接感知、决策并作用于物理世界，符合Physical AI定义；但证据未明确具体行业与用户，需复核。"
+    },
+    {
+      "event_id": "EV-11c8183c180e4b97",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "公司产品为机器人时空智能基础模型、复合传感模组和域控制器，直接赋予智能体在三维时空中感知、推理和行动的能力，面向特种智能车、智能机器人等物理世界设备，符合Physical AI的感知-决策-行动闭环。但证据未明确客户直接购买的产品形态，且模型框架可能兼具基础设施属性，故标记需复核。"
+    },
+    {
+      "event_id": "EV-07d112b2a4c980d2",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "energy_utilities",
+        "telecommunications"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "公司提供企业级智能体协同服务平台和语思大模型智能体5件套，支持智能体的开发、部署和管理，属于面向AI构建者的开发部署基础设施；但证据同时强调工业场景的因果智能决策，行业应用边界不够清晰，故标记需复核。"
+    },
+    {
+      "event_id": "EV-ac5e33e067906a6d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示公司提供从数据加工到智能体开发、部署、自进化的全流程平台，属于为其他AI产品构建者提供开发部署基础设施，而非单一行业应用或跨行业业务功能，故归入infrastructure_compute下的开发部署。但证据未明确其客户是否仅为开发者，需复核。"
+    },
+    {
+      "event_id": "EV-43c9b851bd2a46c7",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "比特无限（Bit Infinite）的Arko系列模型和Sparkoh.ai平台专注于从文本、图像、点云/网格生成可编辑、可制造的工业级CAD文件（STEP/STL），并支持自然语言交互的CAD编辑器。这属于面向工业设计和制造领域的应用，而非通用基础设施或物理AI（无当前机器人/车辆/自主机器）。因此归类为行业应用-工业，产品形式为模型，主要用例为设计工程，目标行业为制造业，目标用户包括开发者和业务用户。"
+    },
+    {
+      "event_id": "EV-b66e26c3852d5ba3",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品为双臂操作机器人，具备感知、决策与物理执行能力，直接作用于工业装配、搬运、分拣等物理场景，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-2a2f79242a9479e7",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司研发高速互联核心芯片与网络解决方案，属于为AI算力基础设施提供硬件芯片，符合infrastructure_compute > hardware_computing > chips。"
+    },
+    {
+      "event_id": "EV-012b1ccfe1d48f51",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "光啾科技 develops an edge optical computing AI processor (chip accelerator) for real-time inference in autonomous driving, industrial robots, and drones. This is a hardware computing chip under infrastructure_compute. The product form is chip_accelerator. Use case is physical_automation due to robotics/autonomous systems. Industries include automotive_transportation and manufacturing. Target user is developer."
+    },
+    {
+      "event_id": "EV-ae87e20ab0c5d06a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "光啾科技研发边缘光计算AI处理器，属于基础设施计算中的硬件计算芯片类别。产品应用于自动驾驶、工业机器人、无人机等物理自动化场景，涉及汽车交通、制造业和物流供应链等行业，目标用户包括开发者和企业用户。"
+    },
+    {
+      "event_id": "EV-3632f9193a3f3f28",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司核心产品是合成数据与仿真引擎，为自动驾驶和具身智能提供数据基础设施，属于为其他AI产品构建者提供数据的基础设施计算层，而非直接提供物理AI机器人或行业应用。"
+    },
+    {
+      "event_id": "EV-0896f0e7b703bed2",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司以机器人及控制系统为核心，产品为力控人形双臂和机器人控制系统，直接感知、决策并作用于物理世界，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-843f0807558b3d10",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "government_public_sector"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "public_sector_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司提供AI多模态智能分选装备，通过视觉与传感融合实现物理分选动作，属于感知-决策-执行一体的物理AI系统。"
+    },
+    {
+      "event_id": "EV-5a28b9c37a236c89",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "model_deployment",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "energy_utilities",
+        "telecommunications",
+        "government_public_sector"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "硅基流动提供大模型API服务、私有化MaaS和预留实例，属于AI基础设施中的模型部署与推理服务。产品形态为AI基础设施软件，主要面向开发者和企业用户，服务于金融、能源、电信、政府等行业。"
+    },
+    {
+      "event_id": "EV-df17b95cf25e7840",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "model_deployment",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "software_development",
+        "content_creation",
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司定位为AI基础设施服务商，提供大模型API、预留实例和私有化部署，属于为其他AI产品构建者提供模型部署与推理基础设施，因此归入infrastructure_compute下的development_deployment/model_deployment。"
+    },
+    {
+      "event_id": "EV-6329f290aecc84da",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations",
+        "legal_compliance"
+      ],
+      "industry_ids": [
+        "government_public_sector",
+        "energy_utilities",
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "public_sector_user",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品聚焦大模型安全综合治理，覆盖模型评测、输入输出管控和安全运营，属于为AI系统提供安全与治理的基础设施，而非单一行业应用，因此归入infrastructure_compute下的observability_evaluation/model_agent_security。"
+    },
+    {
+      "event_id": "EV-d535e126615182f0",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "security_software",
+      "use_case_ids": [
+        "security_operations",
+        "legal_compliance"
+      ],
+      "industry_ids": [
+        "government_public_sector",
+        "energy_utilities",
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "public_sector_user",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "同一公司的大模型安全综合治理平台服务于监管部门和央国企，属于AI安全基础设施，而非单一行业工作流，因此归入infrastructure_compute下的observability_evaluation/model_agent_security。"
+    },
+    {
+      "event_id": "EV-7c3e301d345f8c2d",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司自研具身智能系统，包含World-Action Model、数据闭环、实时纠偏与机器人经验更新，直接控制机器人在物理世界感知、决策和行动，符合Physical AI定义；产品形态为机器人系统，应用场景为物流自动化。"
+    },
+    {
+      "event_id": "EV-69ac49d771d3b778",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "拓深科技提供设备级AI电力数字化解决方案，围绕电力行业的设备安全管理、能耗管理、智能运维及新能源调度等专业工作流，属于行业应用而非通用企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-f9b346bec4251166",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "拓深科技提供设备级AI电力数字化解决方案，用于设备安全管理、能耗管理、智能运维及新能源预测调度，属于工业/能源领域的行业应用。产品形态为企业软件平台，主要面向企业用户。"
+    },
+    {
+      "event_id": "EV-f4b72708c66aa752",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "data_analysis",
+        "research_discovery",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕金融投研工作流、专家语料与投研社区构建，属于金融行业专用应用，而非通用基础设施或跨行业企业应用。"
+    },
+    {
+      "event_id": "EV-71fc51b3d8e89851",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司专注AI理疗/按摩机器人，产品直接通过机器人感知、决策并作用于物理世界，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-dd567ead9785ef80",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "knowledge_search",
+        "data_analysis",
+        "research_discovery",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer",
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "产品围绕医疗多模态大模型、医疗Agent平台及个人健康管理，深度绑定医疗行业数据与流程，属于行业应用而非通用基础设施。"
+    },
+    {
+      "event_id": "EV-58a0983e0b45135b",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "content_creation",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "梦塔科技专注于AI数字生命与交互，产品包括面向智能终端的通用技术架构和AI电子宠物，属于面向消费者的端到端应用。当前分类为enterprise_applications，但更偏向消费级交互与内容生成，且产品形态为end_user_application。由于公司产品涉及数字角色与硬件智能，但未明确为物理AI（无当前机器人或自主机器），故不归入physical_ai。市场层级中，enterprise_applications下无完全匹配的消费级数字生命子类，选择productivity_enterprise_workflows作为最接近的通用工作流类别，但需人工复核。"
+    },
+    {
+      "event_id": "EV-3a467bfb6d9b1b52",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "data_analysis",
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示公司提供异构算力调度与AI任务优化服务，属于为其他AI产品提供计算基础设施，故归入infrastructure_compute；但产品同时包含面向电网的行业应用，边界存在交叉，需复核。"
+    },
+    {
+      "event_id": "EV-862a2c0eabc234f0",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "design_engineering",
+        "productivity_enterprise_workflows",
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司专注模具制造行业，产品围绕模具设计、工艺排程、生产加工等制造流程，属于行业专用应用而非通用企业功能或基础设施。"
+    },
+    {
+      "event_id": "EV-6928501584326746",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "security_operations",
+        "software_development"
+      ],
+      "industry_ids": [
+        "professional_services",
+        "government_public_sector"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.72,
+      "needs_review": true,
+      "rationale": "公司提供机器语言大模型，用于理解、分析和治理二进制程序，属于为其他AI/软件安全构建者提供模型基础设施，且证据指向安全治理场景，故归入基础设施计算下的模型/智能体安全；但产品形态与安全软件边界需复核。"
+    },
+    {
+      "event_id": "EV-fd2ff833db684e40",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "公司提供大功率DFB、高速EML等高端光电子芯片，属于硬件/计算基础设施中的芯片供应，直接服务通信与制造领域。"
+    },
+    {
+      "event_id": "EV-3c145705d72a5e57",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "model_deployment",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司提供一站式多模型API服务，兼容主流协议并统一计费，属于模型部署/开发基础设施，直接面向开发者。"
+    },
+    {
+      "event_id": "EV-77a608db67e742a4",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司推出通用机器人Maker H01，具备感知、决策与物理执行能力，属于在物理世界通过机器人行动的Physical AI，而非仅为其他AI产品提供基础设施。"
+    },
+    {
+      "event_id": "EV-ba46244851f1db2b",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司以世界模型为核心打造物理AGI基础模型和通用终端，并推出Maker H01机器人，具备感知、决策与物理执行能力，应归为Physical AI。"
+    },
+    {
+      "event_id": "EV-c2b1af9cc8fba608",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司发布GigaWorld世界模型、GigaBrain具身基模及Maker H01通用机器人，机器人具备感知、决策与物理执行能力，应归为Physical AI。"
+    },
+    {
+      "event_id": "EV-df37e9341b5c7f04",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "content_creation",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "automotive_transportation",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "阶跃星辰专注于基础大模型研发，提供Step系列大模型、阶跃AI助手及开放平台API。核心产品为模型及模型API服务，属于基础设施层的模型开发与部署。客户包括手机厂商（OPPO、荣耀、中兴）、汽车（吉利）等，主要面向开发者和企业用户。"
+    },
+    {
+      "event_id": "EV-77c286cb5cd15f8e",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司核心产品为人形机器人JumpMate α，具备自主决策能力，且提供面向场景的机器人劳动力，直接感知、决策并作用于物理世界，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-9832526435c1695e",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "developer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示产品围绕材料科学这一专业领域的数据与工作流构建，属于行业应用而非通用基础设施；但材料科学可归入工业/制造，证据未明确客户行业，故标记需复核。"
+    },
+    {
+      "event_id": "EV-314db5cbf5010d41",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "content_creation",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "面壁智能专注端侧大模型，MiniCPM系列是开源模型，属于基础设施计算中的模型开发部署。产品形态为模型，主要面向开发者和企业用户，应用于汽车制造等行业。"
+    },
+    {
+      "event_id": "EV-381d21544fcdd0c4",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "奇点智控专注于具身智能核心感知部件（高精度光学六维力传感器），属于AI硬件基础设施中的感知组件，因此归入infrastructure_compute/hardware_computing/computing_infrastructure。产品形态为传感器部件，不是完整的机器人或自主系统，故不归为physical_ai；按规则选择ai_device并复制非物理层级元组。主要应用场景为物理自动化（机器人/机械臂力控），行业为制造业，目标用户为业务用户。由于产品是部件而非完整设备，且公司信息有限，建议人工复核。"
+    },
+    {
+      "event_id": "EV-3e580ccbc11654cb",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "奇点智控专注于具身智能核心感知部件，其新一代非接触式光学六维力传感器用于机器人力控感知，属于物理AI范畴。产品是机器人系统的关键部件，应用场景为物理自动化，主要面向制造业等商业用户。"
+    },
+    {
+      "event_id": "EV-61f07716fd7cb7ee",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司产品为具身智能机器人（小墨、墨子）在宁德时代产线和京东零售场景中实际执行检测、操作演示等物理动作，符合物理AI的感知-决策-行动闭环，而非仅为模型或基础设施。"
+    },
+    {
+      "event_id": "EV-784c98f1fde32c73",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司发布人形机器人Moz1并搭载VLA模型，在宁德时代、京东、博世等场景中执行物理任务，属于物理AI的机器人系统，而非单纯模型或基础设施。"
+    },
+    {
+      "event_id": "EV-a72baefac91ba841",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据显示清雁科技提供几何物理引擎、世界模型基础设施和数据飞轮，面向机器人融入人类社会的底层支撑，属于为其他AI产品构建者提供模型与开发部署基础设施，而非直接部署物理机器人。"
+    },
+    {
+      "event_id": "EV-c9a11db49e1afbe5",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "design_engineering",
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation",
+        "construction_real_estate"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示公司提供几何物理驱动的物理AI基础设施与模型、场景级物理引擎，属于为其他AI产品构建者提供建模与开发基础设施，而非直接部署在物理世界中的机器人或车辆，因此归入基础设施计算。但证据未明确其模型是否直接作为开发部署模型对外提供，需复核。"
+    },
+    {
+      "event_id": "EV-b4d6c556eadaa272",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation",
+        "education_learning"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "education",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher",
+        "educator"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司产品为轻量化机械臂、遥操作数据采集平台和移动升降双臂机器人，直接通过机器人感知、决策并作用于物理世界，符合物理AI定义。"
+    },
+    {
+      "event_id": "EV-d0dd835f3abb3163",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "design_engineering",
+        "content_creation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "construction_real_estate",
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司自研Arko系列基础模型，支持从文本、图像、点云生成可编辑、可制造的工业级3D文件，属于为其他AI产品构建者提供基础模型的基础设施计算。"
+    },
+    {
+      "event_id": "EV-0e1edf873779be1d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "energy_utilities",
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示LASPAI是面向科研与产业工程师的云端原子模拟平台，核心是自研LASP算法引擎，属于为材料研发提供模型与计算能力的开发部署基础设施；但产品形态以网页端应用交付，且客户覆盖石化、新能源、半导体等产业，边界存在一定模糊，需复核。"
+    },
+    {
+      "event_id": "EV-7021bd7041019330",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "energy_utilities",
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "与前一事件为同一公司，证据同样指向自研LASP算法引擎和LASPAI云端材料计算平台，属于为材料研发提供模型与计算能力的开发部署基础设施；但产品以网页端应用交付，且未明确客户行业，边界需复核。"
+    },
+    {
+      "event_id": "EV-71d7d8bbaa623228",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据显示幻码跃迁提供量子计算底层软件栈、编译优化、调度与AI驱动研发工具，属于为开发者提供开发部署基础设施的软件平台，不涉及物理世界直接行动，也不绑定单一行业。"
+    },
+    {
+      "event_id": "EV-5e8ad56fcef42b5a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "model_deployment",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司定位为AI基础设施，TokenRhythmAPI提供多模型统一API服务，属于为AI产品开发者提供模型部署/调用基础设施，故归入infrastructure_compute下的development_deployment。"
+    },
+    {
+      "event_id": "EV-b78b4d2d94c8e72c",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "model_deployment",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "TokenRhythm API提供一站式多模型API服务，面向开发者，属于模型部署/调用基础设施，归入infrastructure_compute。"
+    },
+    {
+      "event_id": "EV-7d0803a8b72f84ba",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "aerospace_defense"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.5,
+      "needs_review": true,
+      "rationale": "证据仅显示量子陀螺仪、气检仪等硬件产品，未明确其AI能力或行业工作流，无法可靠判断是否属于AI基础设施或行业应用，暂按行业应用处理并标记复核。"
+    },
+    {
+      "event_id": "EV-60d94c0d990d04ca",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司提供GPU虚拟化与异构算力调度软件，属于为AI构建者提供硬件/算力基础设施，故归入infrastructure_compute下的hardware_computing/computing_infrastructure。"
+    },
+    {
+      "event_id": "EV-a121ed73da005180",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "产品为养老与康复机器人，直接感知、决策并作用于物理世界，符合physical_ai优先判定。"
+    },
+    {
+      "event_id": "EV-782e8dcca41fd545",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "ORCA OS/SIM/Lab为机器人训练提供仿真、数据生成、训练与部署工具，属于面向AI开发者的开发部署基础设施，而非直接部署在物理世界的机器人产品。"
+    },
+    {
+      "event_id": "EV-d1d7212194b63b0b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "professional_services",
+        "education"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "红熊AI专注于多模态大模型与记忆科学，推出OpenBear通用大模型和CodeBear编程大模型，属于模型开发与部署。产品形态为模型，主要面向开发者和企业用户，应用于软件开发和知识搜索等场景。由于公司信息有限且部分描述为未来或宣传性内容，建议人工复核。"
+    },
+    {
+      "event_id": "EV-5812765de6753bf7",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示公司核心产品是AI驱动的蛋白质研发平台，服务于创新药、大健康、医药耗材等生命科学领域，属于围绕特定行业专业数据与工作流的行业应用，而非通用基础设施。但产品形态描述较模糊，需复核。"
+    },
+    {
+      "event_id": "EV-b732caa990fa0a79",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "证据显示产品为AI驱动的蛋白质研发平台，围绕生命科学领域的专业数据与实验流程构建，属于行业应用而非通用企业应用或物理AI。"
+    },
+    {
+      "event_id": "EV-4242ed9f08123c32",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "food_hospitality"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "产品为AI加柔性机械臂的食品加工单站，直接通过机器人感知、决策并执行抓取、切割、配餐等物理动作，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-1a6fbd73eb4eb133",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "公司提供视触觉传感器、触觉具身大模型和精细化数据采集平台，主要面向机器人开发者提供数据与模型基础设施，但传感器硬件属性与数据采集平台边界模糊，需复核。"
+    },
+    {
+      "event_id": "EV-765185b9e33dde47",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "hr",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "hr_workforce"
+      ],
+      "industry_ids": [
+        "food_hospitality",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品为连锁门店人才交付系统，覆盖岗位需求、筛选、邀约、到岗等HR全链路，属于跨行业的企业人力资源应用。"
+    },
+    {
+      "event_id": "EV-ac5e79d96a009ee1",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "physical_automation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.72,
+      "needs_review": false,
+      "rationale": "证据显示其产品围绕能源系统的建模、仿真与全局寻优控制，属于能源/工业专业工作流，而非通用企业功能或直接物理机器人，因此归入行业应用。"
+    },
+    {
+      "event_id": "EV-e85e6fc6d630d56c",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "food_hospitality"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据明确为通用人形机器人并在商用服务场景落地，属于感知-决策-行动于物理世界的物理AI。"
+    },
+    {
+      "event_id": "EV-88158ddf272e4731",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation",
+        "education_learning"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "consumer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "首款产品为带移动底盘与双机械臂的机器人，面向创客和开发者，属于物理AI。"
+    },
+    {
+      "event_id": "EV-0fa96416b6df804b",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.65,
+      "needs_review": true,
+      "rationale": "产品为脑机接口助眠、专注力训练和认知康复设备，围绕脑健康医疗场景，但证据未明确其核心是硬件设备还是配套软件平台，需复核。"
+    },
+    {
+      "event_id": "EV-a39d8aac0ee78e07",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "researcher"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕心血管诊疗的影像分析、血流动力学仿真和手术规划，属于医疗行业专业工作流。"
+    },
+    {
+      "event_id": "EV-d853eabcf7e759bd",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "researcher"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "与前一事件为同一公司，证据同样指向心血管精准诊疗平台，属于医疗行业应用。"
+    },
+    {
+      "event_id": "EV-29e6561ca7c005d0",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕脑部疾病、睡眠障碍等医疗健康领域的专业数据与干预流程构建，属于行业应用而非通用企业应用；设备通过刺激与监测作用于人体，但非机器人/车辆类物理AI，故归入医疗健康行业应用。"
+    },
+    {
+      "event_id": "EV-b334843aec926ce3",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "深圳声音动力科技有限公司开发音频AI模型（AudioX、AudioX-Turbo）并提供创作者音频产品，核心是自研音频模型底座，属于基础设施计算中的模型开发部署。产品形态为模型，主要面向内容创作场景，服务媒体娱乐行业及创作者/企业用户。"
+    },
+    {
+      "event_id": "EV-c6437ac13cb07531",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.92,
+      "needs_review": false,
+      "rationale": "原文产品为能源系统调度和设备控制软件（DeepSYS、DeepBot、DeepOS），没有已交付机器人整机的证据；PhyAI为技术描述，依当前供给归工业能源应用软件。复核来源 https://news.pedaily.cn/202607/566034.shtml ，2026-09-12。"
+    },
+    {
+      "event_id": "EV-cba16bd541a07032",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "consumer_retail",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "content_creation",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "rationale": "证据仅显示公司研发时尚AI原生终端（落地镜形态），面向消费者穿搭场景，但未明确其是否直接销售给企业客户或作为消费级产品。按层级规则，非物理AI、非基础设施、非单一行业专用，归入企业应用；但产品形态为AI设备，且证据不足以确认主要产品边界，故标记需复核。"
+    },
+    {
+      "event_id": "EV-34a9773ebd5bbc97",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.72,
+      "needs_review": true,
+      "rationale": "证据显示公司提供可信物理智能中枢系统，可独立部署或与机器人模型集成，为机器人赋予安全认知决策与执行能力，属于为其他AI/机器人产品提供模型与部署能力的基础设施，而非直接销售机器人本体，因此归入infrastructure_compute下的development_deployment/models。但证据未明确其客户是否仅为机器人厂商，且产品形态介于模型与软件之间，故需复核。"
+    },
+    {
+      "event_id": "EV-c17a6102aab72f4f",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "公司当前产品为具身智能系统，计划打通物理数据生产、仿真生成、模型训练与机器人部署，客户为具身智能厂商及能源、高端制造场景客户，证据显示其核心是向其他AI/机器人厂商提供数据与仿真基础设施，而非直接交付机器人本体，故归入基础设施计算下的数据-合成数据。但产品尚处计划阶段，证据不足以完全确认交付形态，需复核。"
+    },
+    {
+      "event_id": "EV-34a58f84a7ba4e92",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "MemoraX AI develops an endogenous memory module for large models, improving model memory via Agentic RL. This is a model-level infrastructure technology, not a physical AI system. The current classification as infrastructure_compute/model is retained. Use cases are inferred from B-end enterprise applications and C-end personalized services, but specific industries are not stated, so industry_ids is left empty. Needs review due to limited evidence on exact application domains."
+    },
+    {
+      "event_id": "EV-64c5290cc685eb93",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development",
+        "content_creation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "公司定位为AI记忆基础设施，为Coding Agent等AI产品提供记忆模块，属于为其他AI产品构建者提供开发部署基础设施，故归入infrastructure_compute。但产品形态介于开发工具与基础设施软件之间，且面向交互式娱乐的记忆引擎可能涉及内容创作，证据不足以完全确定子类别，需复核。"
+    },
+    {
+      "event_id": "EV-2cf2ab399eb05035",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "consumer_retail",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "researcher"
+      ],
+      "confidence": 0.72,
+      "needs_review": true,
+      "rationale": "公司核心产品为生物活性原料，面向化妆品、功能食品等消费零售行业，属于行业应用；但其合成生物学智能计算平台属于研发工具，证据不足以判断该平台是否对外销售，故需复核。"
+    },
+    {
+      "event_id": "EV-5575555340c04c5a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation",
+        "software_development"
+      ],
+      "industry_ids": [
+        "media_entertainment",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "生数科技 is a multimodal foundation model company with Vidu video generation models and Motus world action model. The core offering is a model (Vidu) served via MaaS/SaaS, fitting infrastructure_compute > development_deployment > models. Use cases include content creation and software development; industries include media/entertainment and retail/ecommerce; target users include developers, business users, and consumers."
+    },
+    {
+      "event_id": "EV-622ebdad1e1fad2d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "生数科技 provides multimodal generative AI models (Vidu) for video generation, which is a model product form under infrastructure_compute > development_deployment > models. The primary use case is content creation, targeting developers and business users in media/entertainment. The current classification already has product_form_id=model and market_category_id=infrastructure_compute, so the tuple is copied exactly from ALLOWED_HIERARCHY_TUPLES."
+    },
+    {
+      "event_id": "EV-4d46806b1522d5f4",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示公司建设具身世界模型基础设施，覆盖数据生产、模型训练到机器人部署，属于为其他AI产品构建者提供模型与开发部署基础设施，而非直接销售机器人或物理AI产品，因此归入infrastructure_compute。但证据未明确其当前产品是模型、数据还是开发平台，需复核。"
+    },
+    {
+      "event_id": "EV-2e214ba5a4504809",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "physical_automation",
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品围绕工业设备运维、质检、安全监测等工业场景的专用数据与工作流构建，属于行业应用而非通用企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-d79663ef2ee65ca1",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "researcher"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司产品为AI+机器人，提供智慧实验室和黑灯工厂解决方案，机器人直接感知、决策并执行物理操作，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-0af7882f1d383ea5",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "索格智算提供AI for Materials的算法与软硬件一体化模拟器，属于为其他AI/材料研发构建者提供模型与开发工具的基础设施层，而非直接面向单一行业终端工作流，故归入infrastructure_compute。但证据未明确其产品是模型、开发工具还是专用硬件，需复核。"
+    },
+    {
+      "event_id": "EV-6f899a8378e7a0b5",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "marketing",
+        "content_creation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "healthcare_life_sciences",
+        "financial_services",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "证据显示公司专注企业级营销全链路GenAI解决方案，产品为洞察、舆情与运营智能体矩阵及生成式引擎优化服务，属于跨行业营销职能，而非单一行业专属数据或物理AI，故归入企业应用-营销。"
+    },
+    {
+      "event_id": "EV-50dc1a246ea090e5",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕工业硬件设计研发工作流，生成3D方案与2D工程图纸，属于工业行业专用应用，而非通用企业功能或物理AI（不直接控制机器人/车辆）。"
+    },
+    {
+      "event_id": "EV-a99c491c33412dc2",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "产品为AI助听器，直接面向听力健康这一医疗健康领域的专业数据与用户需求，属于行业应用而非通用企业应用；产品形态为消费者购买的AI硬件设备。"
+    },
+    {
+      "event_id": "EV-77f9a1a9bcf8cc65",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "construction_real_estate",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕工程行业（交通、施工）的专业工作流与专家级智能体构建，客户均为工程相关企业，属于行业应用而非通用企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-81b7cd5d6a37912c",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "model_deployment",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司核心产品为Agentic MaaS平台和Agentic Infra Platform，提供模型接入、推理优化、资源调度等全栈能力，面向大模型公司和AIGC应用公司，属于为其他AI产品构建者提供开发部署基础设施，故归入infrastructure_compute下的development_deployment/model_deployment。"
+    },
+    {
+      "event_id": "EV-d9e018b58da30912",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "公司产品为物理AI数据基座平台与世界模拟器，属于为其他AI产品构建者提供数据与仿真基础设施，故归入infrastructure_compute；其核心是合成数据/世界模拟，归入data下的synthetic_data。但证据未明确具体行业与用户，需人工复核。"
+    },
+    {
+      "event_id": "EV-3c89b467fbcfc498",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "marketing",
+        "content_creation",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司聚焦营销增长领域，提供营销AI Agent和增长系统，属于跨行业的企业营销功能，而非单一行业应用或物理AI/基础设施。"
+    },
+    {
+      "event_id": "EV-775bae399bcf79d2",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "content_creation",
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "media_entertainment",
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "rationale": "证据显示公司提供多模态实时互动产品矩阵和端到端语音模型，覆盖情感陪伴、互动内容、AI角色社区等形态，属于跨行业业务功能而非单一行业工作流，因此归入企业应用；但产品形态偏向消费者互动内容，且客户包含医院和IP公司，证据不足以明确主要产品边界，故需复核。"
+    },
+    {
+      "event_id": "EV-0ff10475efa53e6c",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司核心产品为具身智能机器人（R1 Pro/R1 Lite）及VLA基础模型，机器人直接感知、决策并执行物理操作，符合Physical AI定义；客户为车企和物流企业，对应制造与物流行业。"
+    },
+    {
+      "event_id": "EV-371bc68f72326c02",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "researcher"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司专注具身智能机器人，产品为轮式双臂机器人和机械臂，直接感知、决策并作用于物理世界，符合 Physical AI 定义。客户包括汽车制造商和物流企业，支持制造、物流和汽车行业。"
+    },
+    {
+      "event_id": "EV-3ccc38328e395afa",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "consumer_retail",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "content_creation"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示公司核心业务为AI原生IP全链路开发与运营，覆盖剧本、分镜到成片生成，属于媒体娱乐行业的内容创作工作流，而非跨行业企业应用或基础设施。但产品形态介于工具平台与内容产出之间，且行业子类中无媒体娱乐专属项，故归入consumer_retail并标记需复核。"
+    },
+    {
+      "event_id": "EV-696ff69f11f66191",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "hr",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "hr_workforce"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "food_hospitality"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕连锁门店的一线招聘交付与胜任力评估，属于跨行业的HR职能，而非单一行业专属数据或物理AI，故归入企业应用的HR子类。"
+    },
+    {
+      "event_id": "EV-35fcdb4a96a2f814",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示公司以AI贯穿生物基材料研发与生产，产品为生物基皮革，面向安踏、亚朵等工业/消费客户，属于围绕材料工业数据与生产流程的行业应用，而非通用企业软件或物理AI。但证据未明确产品是软件平台还是材料本身，故需复核。"
+    },
+    {
+      "event_id": "EV-6ff97d32bdcc8586",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "产品为具身智能拣选机器人，能感知、判断并执行抓取放置动作，直接作用于物理世界，符合Physical AI定义；客户为物流企业，故行业为物流供应链。"
+    },
+    {
+      "event_id": "EV-ea916006167c6c43",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "公司核心产品为具身大脑并赋能多形态机器人本体，当前产品已通过机器人矩阵在物理世界感知、决策和行动，符合Physical AI优先判定；但证据同时强调DataGrid数据基础设施，存在基础设施与物理AI边界交叉，需复核。"
+    },
+    {
+      "event_id": "EV-94f334e68144c720",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示公司核心业务是研发机器人的“大小脑系统”，并配套世界模拟器打通数据采集、仿真训练、真机部署全闭环，当前产品直接面向机器人在物理世界中的感知、决策与行动，因此归入physical_ai。但产品形态介于模型与机器人系统之间，证据未明确客户直接购买的是软件系统还是机器人本体，故标记需复核。"
+    },
+    {
+      "event_id": "EV-7620153f4892a0af",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司产品为轮式人形机器人，在模拟工厂搬箱码垛、在软饮吧制作饮品，直接感知、决策并作用于物理世界，符合 Physical AI 的判定条件。"
+    },
+    {
+      "event_id": "EV-565b6c1b10b3cf83",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司当前产品为通用智能机器人AlphaBot系列，具备感知、决策与物理执行能力，直接作用于物理世界，符合Physical AI定义；新零售场景的智魔方也属于实体机器人服务，故归入physical_ai。"
+    },
+    {
+      "event_id": "EV-e65748bbcfe6b0fd",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "智象未来 is a multimodal generative AI company with a self-developed HiDream foundation model. The card's current classification is infrastructure_compute / model, and the evidence focuses on model development and content creation (video generation/editing). The closest allowed hierarchy tuple is infrastructure_compute > development_deployment > models. Product form is model. Use case is content_creation; industry is media_entertainment based on film/TV customers; target users include developers and business users."
+    },
+    {
+      "event_id": "EV-26624896fdc6c867",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "content_creation",
+        "marketing"
+      ],
+      "industry_ids": [
+        "media_entertainment",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "证据显示公司以HiDream大模型为底座，但直接交付的是HiBurst商业短视频内容生成与管理平台和vivago.ai创作工具，面向商家营销内容生产与专业创作，属于跨行业营销/内容创作应用，而非向其他AI构建者提供基础设施。"
+    },
+    {
+      "event_id": "EV-e51643edc7bec259",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation"
+      ],
+      "industry_ids": [
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "智象未来（HiDream.ai）自研千亿参数原生全模态 HiDream 系列大模型，属于基础设施层的模型开发与部署，产品形态为模型。客户包括上影股份、华策影视，主要面向媒体娱乐行业的内容创作场景，目标用户为开发者和业务用户。"
+    },
+    {
+      "event_id": "EV-92d6132ee2a3505a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据显示公司提供自动化计算加速平台，覆盖算子开发、模型迁移、框架调优与推理加速，属于面向AI构建者的开发部署基础设施，而非直接面向物理世界或单一行业。"
+    },
+    {
+      "event_id": "EV-3c408fe984c73089",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示公司自主研发千亿参数MoE模型并提供MaaS低代码开发平台和Agent平台，核心产品是模型及开发部署基础设施，面向行业应用构建者，因此归入infrastructure_compute下的development_deployment/models。但证据同时强调行业大模型与具身智能通用大脑，且客户为具体行业企业，存在行业应用边界模糊，需人工复核。"
+    },
+    {
+      "event_id": "EV-3bbd2ab8ebda9871",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "construction_real_estate"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示公司专注工程机械行业模型应用落地，产品iDM集成VLA与世界模型及底层运动控制，形成端到端具身智能架构，表明其当前产品直接感知、决策并作用于物理世界，应归为physical_ai而非基础设施。但证据未明确具体机器人或车辆形态，故需复核。"
+    },
+    {
+      "event_id": "EV-26439e34295a0519",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation",
+        "data_analysis",
+        "education_learning"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "education"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher",
+        "educator",
+        "student"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司产品为轮式双臂/仿人形机器人，搭载端到端具身基座模型，直接感知、决策并执行物理操作，符合Physical AI定义；虽自研大模型，但当前产品形态是机器人系统而非向其他AI构建者提供模型基础设施。"
+    },
+    {
+      "event_id": "EV-41c54c428d84cc1e",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "researcher",
+        "educator",
+        "student"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司自研通用具身智能大模型，但产品为轮式仿人形机器人（量子一号/二号），具备物理世界感知、决策与执行能力，符合 Physical AI 定义；产品形态为机器人系统而非纯模型。"
+    },
+    {
+      "event_id": "EV-794f0a86004da0c9",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development",
+        "content_creation",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "automotive_transportation",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "StepFun is a foundation model company that has released over 30 large models, including multimodal reasoning models and GUI models. The current classification as infrastructure_compute/model is appropriate. The company's products are models, and its customers include device manufacturers and automotive companies, indicating use in software development, content creation, and knowledge search. Target users are primarily developers and business users integrating these models."
+    },
+    {
+      "event_id": "EV-0cc745a319a25f6e",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "产品围绕听力健康这一专业医疗领域，涉及持证听力师远程服务与听力管理，属于行业应用而非通用企业应用；但证据未明确其核心AI能力是否直接作用于物理世界，且产品形态为助听设备，边界需复核。"
+    },
+    {
+      "event_id": "EV-d124d9d43e994067",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示产品为AI超声脑机接口平台，属于医疗健康领域的专用设备，围绕脑机接口的医疗数据与调控工作流构建，因此归入行业应用而非通用企业应用。但证据未明确其是否已实现物理世界的感知-决策-行动闭环，且客户与具体使用场景信息不足，故标记需复核。"
+    },
+    {
+      "event_id": "EV-b91024c06d8762a4",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司产品为水下具身智能机器人及特种推进装备，直接在水下物理环境中感知、决策并执行作业，符合物理AI定义；产品形态为机器人系统。"
+    },
+    {
+      "event_id": "EV-bc5bf99bcf3a4484",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司当前产品为轮臂机器人与人形机器人本体及解决方案，直接通过机器人感知、决策并作用于物理世界，符合Physical AI定义，而非仅世界模型或未来规划。"
+    },
+    {
+      "event_id": "EV-3c75e8ce83d89604",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司提供AI驱动的计算加速基础设施，核心产品KernelCAT用于国产芯片自动化适配和算力性能释放，属于为AI构建者提供硬件/计算基础设施，因此归入infrastructure_compute > hardware_computing > computing_infrastructure。"
     }
   ]
 }

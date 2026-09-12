@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-f03ffc4803ce21",
@@ -20,30 +20,77 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-07-13",
-    "latest_disclosed_at": "2026-07-13",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-02-11",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 2,
+      "participant": 2
     },
     "round_codes": [
-      "pre_series_a"
+      "pre_series_a",
+      "seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-e22521e7de65d819",
         "canonical_entity_id": "",
         "name": "上海珞博智能科技有限公司"
+      },
+      {
+        "entity_id": "EN-f85891c5b8ea86e6",
+        "canonical_entity_id": "",
+        "name": "深圳声音动力科技有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e2954779ae3debe2",
+        "funding_insight_id": "FI-5bed699d9869e066",
+        "event_ids": [
+          "EV-b334843aec926ce3"
+        ],
+        "company_entity_id": "EN-f85891c5b8ea86e6",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳声音动力科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4dbba5d9789ac616",
+            "source_url": "https://news.pedaily.cn/202608/567481.shtml",
+            "source_title": "Noiz AI获金沙江数千万元种子融资，挖掘声音背后物理信息",
+            "source_content_hash": "4afeaa2317f6d87f",
+            "quote": "最近一次融资来自 金沙江创投 ，此前由北极光创投、英诺天使基金投资。",
+            "quote_hash": "eacf12a619b3e5a25695ee3d38f627245c48ed9c1a3cb0ebc8473e6bbcc762e0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4fddd35cf4384abe",
         "funding_insight_id": "FI-fd1db2608b7fc431",
@@ -83,9 +130,98 @@
             "quote_hash": "ee599baf3c38f7c33e45417fd35d1e9fabc3bfc8c3a527f3d021539987b30179"
           }
         ]
+      },
+      {
+        "activity_id": "IA-89c95bfbaf5e541f",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+            "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cb4584ecd4f6dd3c",
+        "funding_insight_id": "FI-d5293ab06cfaa935",
+        "event_ids": [
+          "EV-371bc68f72326c02"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2707f48aa6e437b7",
+            "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+            "source_title": "清华90后带队，刚刚星海图又融10亿",
+            "source_content_hash": "85e4d40faa23c515",
+            "quote": "2024年1月，天使轮第二轮融资千万美金，由IDG资本领投，BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资跟投",
+            "quote_hash": "b6fdaa3f5a6c2e7d233c56ea352f73c00c806e8f3dc89f2497f13ad46b24688e"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4dbba5d9789ac616",
+        "source_url": "https://news.pedaily.cn/202608/567481.shtml",
+        "source_title": "Noiz AI获金沙江数千万元种子融资，挖掘声音背后物理信息",
+        "source_content_hash": "4afeaa2317f6d87f",
+        "quote": "最近一次融资来自 金沙江创投 ，此前由北极光创投、英诺天使基金投资。",
+        "quote_hash": "eacf12a619b3e5a25695ee3d38f627245c48ed9c1a3cb0ebc8473e6bbcc762e0"
+      },
       {
         "source_id": "FISRC-8a995421b25ccbf7",
         "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
@@ -93,6 +229,22 @@
         "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
         "quote": "老股东红杉中国、金沙江创投持续加码跟投",
         "quote_hash": "ee599baf3c38f7c33e45417fd35d1e9fabc3bfc8c3a527f3d021539987b30179"
+      },
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+        "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
+      },
+      {
+        "source_id": "FISRC-2707f48aa6e437b7",
+        "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+        "source_title": "清华90后带队，刚刚星海图又融10亿",
+        "source_content_hash": "85e4d40faa23c515",
+        "quote": "2024年1月，天使轮第二轮融资千万美金，由IDG资本领投，BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资跟投",
+        "quote_hash": "b6fdaa3f5a6c2e7d233c56ea352f73c00c806e8f3dc89f2497f13ad46b24688e"
       }
     ]
   }

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-cd1c62a70fc238",
@@ -20,31 +20,87 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-07-30",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-01-29",
+    "latest_disclosed_at": "2026-09-12",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "lead": 1
+      "historical_or_ambiguous": 3,
+      "lead": 2
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-b3c628b196bfbbe9",
         "canonical_entity_id": "",
         "name": "贝联珠贯科技（浙江）有限公司"
+      },
+      {
+        "entity_id": "EN-9b21c9bf3305c0d6",
+        "canonical_entity_id": "",
+        "name": "生数科技"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c5cbe5f6bbcc15c9",
+        "funding_insight_id": "FI-0fff8c5cc6dfdca0",
+        "event_ids": [
+          "EV-26439e34295a0519",
+          "EV-cec68369662236fd",
+          "EV-41c54c428d84cc1e"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人科技（深圳）有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-09-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-16371607ed092d64",
+            "source_url": "https://www.qbitai.com/2026/01/369147.html",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+            "source_content_hash": "466042b9c1271f10",
+            "quote": "该轮由阿里云与国科投资领投，国开金融、红杉中国、渶策资本跟投，美团战投作为老股东选择超额加码，联想之星、君联资本持续追投。",
+            "quote_hash": "df32307ed9490d1dbe3a98d65d5980ac6865e880b642af43e4c0d5dc110dc30e"
+          },
+          {
+            "source_id": "FISRC-449b969616ed1e95",
+            "source_url": "https://www.36kr.com/p/3636080421586182",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+            "source_content_hash": "abef77aff9b6b68f",
+            "quote": "该轮由阿里云与国科投资领投，国开金融、红杉中国、渶策资本跟投，美团战投作为老股东选择超额加码，联想之星、君联资本持续追投。",
+            "quote_hash": "df32307ed9490d1dbe3a98d65d5980ac6865e880b642af43e4c0d5dc110dc30e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-84f94982a81fd6cf",
         "funding_insight_id": "FI-57f8607e9a2111db",
@@ -86,47 +142,143 @@
         ]
       },
       {
-        "activity_id": "IA-ca32cd391910f16f",
-        "funding_insight_id": "FI-15b5d99bcd808dba",
+        "activity_id": "IA-ff12385d07427a1e",
+        "funding_insight_id": "FI-a385248b0f830a67",
         "event_ids": [
-          "EV-cec68369662236fd"
+          "EV-df17b95cf25e7840"
         ],
-        "company_entity_id": "EN-8dc72a4672894e0f",
-        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-        "company_name": "自变量机器人",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "A++轮",
-        "amount_original": "10亿元",
+        "company_entity_id": "EN-062ed8ada14ccffe",
+        "company_canonical_entity_id": "",
+        "company_name": "硅基流动（SiliconFlow）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": 1000000000,
+          "value": 2000000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "10 亿元"
+          "display_zh": "20 亿元"
         },
-        "announced_at": "2026-01-12",
+        "announced_at": "2026-06-16",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
-        "role": "A+轮领投",
+        "role": "A轮领投",
         "role_code": "historical_or_ambiguous",
         "evidence": [
           {
-            "source_id": "FISRC-a180899e2f0b58ad",
-            "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
-            "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
-            "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
-            "quote": "同年9月获得阿里云领投的A+轮融资",
-            "quote_hash": "adba552be7014a56bec05cd82a3a1062a16e94c455f929a44d112da898d22459"
+            "source_id": "FISRC-c1c9258fc2a6aa50",
+            "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
+            "source_title": "超20亿！智谱投的AI云厂商融资了，跟阿里火山百度“抢肉”吃",
+            "source_content_hash": "39056b52b07178cc",
+            "quote": "去年6月完成 数亿元 A轮融资， 阿里云领投，创新工场跟投 。",
+            "quote_hash": "64a3067a87a0e55c3fd47cc4420d7451e4f30c738c3f277bd3264a4f5abc4c04"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1cac5aad68bb5c66",
+        "funding_insight_id": "FI-7108544d47292865",
+        "event_ids": [
+          "EV-5575555340c04c5a"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "",
+        "company_name": "生数科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "20亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-04-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-fd865802af815ab3",
+            "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+            "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+            "source_content_hash": "a281cc701a9028fb",
+            "quote": "本轮融资由 阿里云领投",
+            "quote_hash": "eefacfe9bad10e9bcac9bbc37a417cab9dcec3f9ae7c7fcbf67a496d74deb623"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-80c4eefea6348d6a",
+        "funding_insight_id": "FI-1a9c2af7ff669e40",
+        "event_ids": [
+          "EV-53ffdce6405b8ba9"
+        ],
+        "company_entity_id": "EN-c5896393cf4ac788",
+        "company_canonical_entity_id": "",
+        "company_name": "北京长亭科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "政府及产业融资",
+        "amount_original": "5亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿元"
+        },
+        "announced_at": "2026-01-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "并购方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-dc5e270b62c5a79a",
+            "source_url": "https://linkedin.com/company/%E9%95%BF%E4%BA%AD%E7%A7%91%E6%8A%80",
+            "source_title": "北京长亭科技有限公司",
+            "source_content_hash": "b0374ba8f2b29874",
+            "quote": "Acquired by: Alibaba Cloud (2019-10-11)",
+            "quote_hash": "ed647d84c1958dc57815e560aeff5fc6907cdb1b1f8782e5b7df80acc03d29bc"
           }
         ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-16371607ed092d64",
+        "source_url": "https://www.qbitai.com/2026/01/369147.html",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+        "source_content_hash": "466042b9c1271f10",
+        "quote": "该轮由阿里云与国科投资领投，国开金融、红杉中国、渶策资本跟投，美团战投作为老股东选择超额加码，联想之星、君联资本持续追投。",
+        "quote_hash": "df32307ed9490d1dbe3a98d65d5980ac6865e880b642af43e4c0d5dc110dc30e"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "该轮由阿里云与国科投资领投，国开金融、红杉中国、渶策资本跟投，美团战投作为老股东选择超额加码，联想之星、君联资本持续追投。",
+        "quote_hash": "df32307ed9490d1dbe3a98d65d5980ac6865e880b642af43e4c0d5dc110dc30e"
+      },
       {
         "source_id": "FISRC-66fcc0a528f97b62",
         "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
@@ -136,12 +288,28 @@
         "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
       },
       {
-        "source_id": "FISRC-a180899e2f0b58ad",
-        "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
-        "source_title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
-        "source_content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
-        "quote": "同年9月获得阿里云领投的A+轮融资",
-        "quote_hash": "adba552be7014a56bec05cd82a3a1062a16e94c455f929a44d112da898d22459"
+        "source_id": "FISRC-c1c9258fc2a6aa50",
+        "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
+        "source_title": "超20亿！智谱投的AI云厂商融资了，跟阿里火山百度“抢肉”吃",
+        "source_content_hash": "39056b52b07178cc",
+        "quote": "去年6月完成 数亿元 A轮融资， 阿里云领投，创新工场跟投 。",
+        "quote_hash": "64a3067a87a0e55c3fd47cc4420d7451e4f30c738c3f277bd3264a4f5abc4c04"
+      },
+      {
+        "source_id": "FISRC-fd865802af815ab3",
+        "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+        "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+        "source_content_hash": "a281cc701a9028fb",
+        "quote": "本轮融资由 阿里云领投",
+        "quote_hash": "eefacfe9bad10e9bcac9bbc37a417cab9dcec3f9ae7c7fcbf67a496d74deb623"
+      },
+      {
+        "source_id": "FISRC-dc5e270b62c5a79a",
+        "source_url": "https://linkedin.com/company/%E9%95%BF%E4%BA%AD%E7%A7%91%E6%8A%80",
+        "source_title": "北京长亭科技有限公司",
+        "source_content_hash": "b0374ba8f2b29874",
+        "quote": "Acquired by: Alibaba Cloud (2019-10-11)",
+        "quote_hash": "ed647d84c1958dc57815e560aeff5fc6907cdb1b1f8782e5b7df80acc03d29bc"
       }
     ]
   }

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-26ed3700348f30",
+    "name": "安徽省人工智能母基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "government_fund",
+    "investor_kind_label": "政府或主权基金",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-04-16",
+    "latest_disclosed_at": "2026-04-16",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-3f0cfc0d9c60b562",
+        "canonical_entity_id": "",
+        "name": "智象未来（HiDream.ai）"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-2f57f2a2ccbf9ded",
+        "funding_insight_id": "FI-85004d0ca806b8ac",
+        "event_ids": [
+          "EV-26624896fdc6c867"
+        ],
+        "company_entity_id": "EN-3f0cfc0d9c60b562",
+        "company_canonical_entity_id": "",
+        "company_name": "智象未来（HiDream.ai）",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "5亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e34ca2608b11a237",
+            "source_url": "https://www.chinaventure.com.cn/news/113-20260723-392410.html",
+            "source_title": "首发｜超20家机构，投了一家“世界模型”独角兽 | 投中网",
+            "source_content_hash": "e4d815a9ef427515",
+            "quote": "早在2024年，公司便获得由合肥产投、安徽省人工智能母基金领投的A轮融资，两家机构又在今年继续跟投；此外，在此前融资中，智象未来还引入了安徽省产业投资集团、兴泰集团、合肥高投。",
+            "quote_hash": "fa31d9d1d4e32fba44ce5d30a1408ad17d843a6c77cc340d54a9aeb3ad5fe892"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e34ca2608b11a237",
+        "source_url": "https://www.chinaventure.com.cn/news/113-20260723-392410.html",
+        "source_title": "首发｜超20家机构，投了一家“世界模型”独角兽 | 投中网",
+        "source_content_hash": "e4d815a9ef427515",
+        "quote": "早在2024年，公司便获得由合肥产投、安徽省人工智能母基金领投的A轮融资，两家机构又在今年继续跟投；此外，在此前融资中，智象未来还引入了安徽省产业投资集团、兴泰集团、合肥高投。",
+        "quote_hash": "fa31d9d1d4e32fba44ce5d30a1408ad17d843a6c77cc340d54a9aeb3ad5fe892"
+      }
+    ]
+  }
+}

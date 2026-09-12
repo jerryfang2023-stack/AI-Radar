@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-14bb2965c6dc41",
+    "name": "百度",
+    "aliases": [],
+    "canonical_entity_id": "EN-a89151ba4b5ac0f2",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-05-07",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-31f02d9852d0f023",
+        "funding_insight_id": "FI-45331063d95f5f57",
+        "event_ids": [
+          "EV-81b7cd5d6a37912c"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "",
+        "company_name": "无问芯穹（Infinigence AI）",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "7 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "早期投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67d072b1aca37b5d",
+            "source_url": "https://www.tmtpost.com/7235681.html",
+            "source_title": "Infinigence AI Raises US$ 70.2 Million in Series A Funding Round-钛媒体官方网站",
+            "source_content_hash": "56a87e89ab6a1ab2",
+            "quote": "with support from major investors, including Chinese tech giant Baidu, Zhipu AI, and Sequoia China",
+            "quote_hash": "5838c5af42c09dfd74a2b6534fd65b82678314880b4881423006371a77cb44bf"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-67d072b1aca37b5d",
+        "source_url": "https://www.tmtpost.com/7235681.html",
+        "source_title": "Infinigence AI Raises US$ 70.2 Million in Series A Funding Round-钛媒体官方网站",
+        "source_content_hash": "56a87e89ab6a1ab2",
+        "quote": "with support from major investors, including Chinese tech giant Baidu, Zhipu AI, and Sequoia China",
+        "quote_hash": "5838c5af42c09dfd74a2b6534fd65b82678314880b4881423006371a77cb44bf"
+      }
+    ]
+  }
+}

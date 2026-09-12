@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "entity": {
+    "id": "EN-544a5f04a8bcce07",
+    "name": "铭芯启睿",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-5bec025c9fd9ff0d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-01-05",
+    "lastSeen": "2026-09-12",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-5bec025c9fd9ff0d"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-5bec025c9fd9ff0d",
+        "dataDate": "2026-09-12",
+        "date": "2026-01-05",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "铭芯启睿完成超亿元Pre-A轮融资，国开科创、联想创投领投 - 新浪财经",
+        "displayTags": [],
+        "entityIds": [
+          "EN-544a5f04a8bcce07",
+          "EN-c608c4787821de1b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-35ea7033900d9a07",
+      "snapshotKey": "35ea7033900d9a07",
+      "snapshotId": "HWS-71204b7024195cb6",
+      "eventId": "EV-5bec025c9fd9ff0d",
+      "eventIds": [
+        "EV-5bec025c9fd9ff0d"
+      ],
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "title": "铭芯启睿",
+      "subject": "铭芯启睿",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "超亿元人民币",
+          "fact_ref": "HWF-3284fcff315eb8da"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-51a876d2fb5da7de",
+          "fact_type": "product",
+          "observed_at": "2026-01-05T02:16:00.000Z",
+          "subject_entity_id": "EN-544a5f04a8bcce07",
+          "subject_name": "铭芯启睿",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "铭芯启睿成立于2024年5月，致力于以先进工艺节点阻变存储器（RRAM）为基础，结合存算融合及先进封装技术，解决“内存墙”瓶颈，面向服务消费、工业与数据中心领域，提供AI高性能“感-存-算”一体化解决方案及定制化存储IP/芯片产品。",
+          "event_refs": [
+            "EV-5bec025c9fd9ff0d"
+          ],
+          "claim_ref": "CL-12c8b6cd96e0e6f9",
+          "source_refs": [
+            "SA-5eafbc102d21d310",
+            "SA-129f0352ba1afc6e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-12",
+          "hardware_fact_id": "HWF-3284fcff315eb8da",
+          "fact_type": "product",
+          "observed_at": "2026-01-05T02:16:00.000Z",
+          "subject_entity_id": "EN-544a5f04a8bcce07",
+          "subject_name": "铭芯启睿",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "超亿元人民币",
+          "source_quote": "近日，铭芯启睿宣布 完成超亿元人民币Pre-A轮 融资。本轮融资由 国开科创、联想创投 领投， 中芯聚源、顺禧基金、恒裕投资跟投，老股东中科创星、小米战投 持续加码，募集资金将用于RRAM核心技术研究和人才团队扩充，助力推动RRAM技术产品规模化量产，加速存算技术的落地应用。\n铭芯启睿成立于2024年5月，致力于以先进工艺节点阻变存储器（RRAM）为基础，结合存算融合及先进封装技术，解决“内存墙”瓶颈，面向服务消费、工业与数据中心领域，提供AI高性能“感-存-算”一体化解决方案及定制化存储IP/芯片产品。",
+          "event_refs": [
+            "EV-5bec025c9fd9ff0d"
+          ],
+          "claim_ref": "CL-627fa5d8a726beb8",
+          "source_refs": [
+            "SA-5eafbc102d21d310",
+            "SA-129f0352ba1afc6e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-01-05/doc-inhffsfv6638088.shtml",
+      "entityIds": [
+        "EN-544a5f04a8bcce07",
+        "EN-c608c4787821de1b"
+      ]
+    }
+  ]
+}

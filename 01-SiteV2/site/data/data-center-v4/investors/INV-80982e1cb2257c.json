@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-80982e1cb2257c",
@@ -21,7 +21,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -31,45 +31,47 @@
     "first_disclosed_at": "2026-08-03",
     "latest_disclosed_at": "2026-08-03",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
-      "other"
+      "series_b_plus"
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-847c00c904ccdb98",
-        "canonical_entity_id": "",
+        "entity_id": "EN-37ad0de3969166fa",
+        "canonical_entity_id": "EN-37ad0de3969166fa",
         "name": "西湖心辰（杭州）科技有限公司"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-1b6de1d0f552de31",
-        "funding_insight_id": "FI-07a58b1fe051182a",
+        "activity_id": "IA-428354ec5e5faf59",
+        "funding_insight_id": "FI-057188417b7e7728",
         "event_ids": [
-          "EV-88a984b765bb54f1"
+          "EV-88a984b765bb54f1",
+          "EV-775bae399bcf79d2"
         ],
-        "company_entity_id": "EN-847c00c904ccdb98",
-        "company_canonical_entity_id": "",
+        "company_entity_id": "EN-37ad0de3969166fa",
+        "company_canonical_entity_id": "EN-37ad0de3969166fa",
         "company_name": "西湖心辰（杭州）科技有限公司",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
         "round_original": "B+轮",
         "amount_original": "数亿元人民币",
         "amount_normalized": {
-          "currency": "",
+          "currency": "CNY",
           "value": null,
-          "min_value": null,
-          "max_value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
           "unit": "base",
-          "status": "unparsed",
-          "display_zh": "数亿元人民币"
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
         },
         "announced_at": "2026-08-03",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
+        "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
         "role_code": "participant",
@@ -83,6 +85,47 @@
             "quote_hash": "5c376bd32041c52377cc742072249de27f7890a997e5519f7d47a5512e073424"
           }
         ]
+      },
+      {
+        "activity_id": "IA-320a091258a16bbd",
+        "funding_insight_id": "FI-057188417b7e7728",
+        "event_ids": [
+          "EV-88a984b765bb54f1",
+          "EV-775bae399bcf79d2"
+        ],
+        "company_entity_id": "EN-37ad0de3969166fa",
+        "company_canonical_entity_id": "EN-37ad0de3969166fa",
+        "company_name": "西湖心辰（杭州）科技有限公司",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-08-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东，提供全面支持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-312cccaedbeb2478",
+            "source_url": "https://news.pedaily.cn/202608/567151.shtml",
+            "source_title": "大模型公司西湖心辰完成B+轮数亿元融资",
+            "source_content_hash": "04e62dc8a14bfb33",
+            "quote": "老股东蚂蚁集团、汤姆猫提供全面支持",
+            "quote_hash": "28373e8d55cc17ec8e0b21aa69c3133bc458d0581f6f3c3761fb30234591b343"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -93,6 +136,14 @@
         "source_content_hash": "923410e5f5a09ac02320e57a06622b29e4c6fea066238ffa5e9d1b0a116df52e",
         "quote": "老股东 蚂蚁集团 和 汤姆猫 提供全面支持",
         "quote_hash": "5c376bd32041c52377cc742072249de27f7890a997e5519f7d47a5512e073424"
+      },
+      {
+        "source_id": "FISRC-312cccaedbeb2478",
+        "source_url": "https://news.pedaily.cn/202608/567151.shtml",
+        "source_title": "大模型公司西湖心辰完成B+轮数亿元融资",
+        "source_content_hash": "04e62dc8a14bfb33",
+        "quote": "老股东蚂蚁集团、汤姆猫提供全面支持",
+        "quote_hash": "28373e8d55cc17ec8e0b21aa69c3133bc458d0581f6f3c3761fb30234591b343"
       }
     ]
   }

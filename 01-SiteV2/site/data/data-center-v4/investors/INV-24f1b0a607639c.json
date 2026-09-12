@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-24f1b0a607639c",
+    "name": "杭州高新金投集团",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-05-07",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "infrastructure"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-0369c8fcda657a43",
+        "canonical_entity_id": "",
+        "name": "无问芯穹（Infinigence AI）"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-7a9e28f390b3acec",
+        "funding_insight_id": "FI-45331063d95f5f57",
+        "event_ids": [
+          "EV-81b7cd5d6a37912c"
+        ],
+        "company_entity_id": "EN-0369c8fcda657a43",
+        "company_canonical_entity_id": "",
+        "company_name": "无问芯穹（Infinigence AI）",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "7 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿元"
+        },
+        "announced_at": "2026-05-07",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5d0583f94886034",
+            "source_url": "https://news.pedaily.cn/202605/563518.shtml",
+            "source_title": "无问芯穹再获超7亿融资，加码Token经济时代",
+            "source_content_hash": "69550847bd779ae8",
+            "quote": "联合领投方为 杭州高新金投集团和惠远资本",
+            "quote_hash": "72a17306f79e02f78372eb98204c8475345e49dd01280bbce24d1adfa3d51dbe"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-e5d0583f94886034",
+        "source_url": "https://news.pedaily.cn/202605/563518.shtml",
+        "source_title": "无问芯穹再获超7亿融资，加码Token经济时代",
+        "source_content_hash": "69550847bd779ae8",
+        "quote": "联合领投方为 杭州高新金投集团和惠远资本",
+        "quote_hash": "72a17306f79e02f78372eb98204c8475345e49dd01280bbce24d1adfa3d51dbe"
+      }
+    ]
+  }
+}

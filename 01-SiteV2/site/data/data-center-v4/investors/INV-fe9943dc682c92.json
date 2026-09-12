@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
+  },
+  "institution": {
+    "id": "INV-fe9943dc682c92",
+    "name": "北极光创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-08-10",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-bc057b6bfd98961e",
+        "funding_insight_id": "FI-5bed699d9869e066",
+        "event_ids": [
+          "EV-b334843aec926ce3"
+        ],
+        "company_entity_id": "EN-f85891c5b8ea86e6",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳声音动力科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-08-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "此前投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4dbba5d9789ac616",
+            "source_url": "https://news.pedaily.cn/202608/567481.shtml",
+            "source_title": "Noiz AI获金沙江数千万元种子融资，挖掘声音背后物理信息",
+            "source_content_hash": "4afeaa2317f6d87f",
+            "quote": "此前由北极光创投、英诺天使基金投资。",
+            "quote_hash": "e7e793a691529ef9b820b87302a1db772414fe2c34d4df496626b0d1f4733c1e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4dbba5d9789ac616",
+        "source_url": "https://news.pedaily.cn/202608/567481.shtml",
+        "source_title": "Noiz AI获金沙江数千万元种子融资，挖掘声音背后物理信息",
+        "source_content_hash": "4afeaa2317f6d87f",
+        "quote": "此前由北极光创投、英诺天使基金投资。",
+        "quote_hash": "e7e793a691529ef9b820b87302a1db772414fe2c34d4df496626b0d1f4733c1e"
+      }
+    ]
+  }
+}

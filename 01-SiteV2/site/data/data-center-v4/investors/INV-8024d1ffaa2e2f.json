@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T08:30:34.647Z",
+    "generatedAt": "2026-09-12T09:47:59.390Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2865,
-    "quarantinedEventCount": 33
+    "eventCount": 3196,
+    "quarantinedEventCount": 30
   },
   "institution": {
     "id": "INV-8024d1ffaa2e2f",
@@ -20,41 +20,41 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
+    "china_market_activity_count": 2,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-02-08",
+    "first_disclosed_at": "2026-02-05",
     "latest_disclosed_at": "2026-02-08",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "other"
+      "series_a_plus"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-9b21c9bf3305c0d6",
         "canonical_entity_id": "",
-        "name": "北京生数科技有限公司"
+        "name": "生数科技"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-b916d74857acf959",
-        "funding_insight_id": "FI-17d058d8a3a861ac",
+        "activity_id": "IA-116dd9ee4301be90",
+        "funding_insight_id": "FI-e3c31b65254f3522",
         "event_ids": [
           "EV-535c2f4fb851332d"
         ],
         "company_entity_id": "EN-9b21c9bf3305c0d6",
         "company_canonical_entity_id": "",
         "company_name": "北京生数科技有限公司",
-        "round": "其他融资",
-        "round_code": "other",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
         "round_original": "A+轮",
         "amount_original": "超过6亿元人民币",
         "amount_normalized": {
@@ -83,6 +83,46 @@
             "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
           }
         ]
+      },
+      {
+        "activity_id": "IA-2d05062820654d4f",
+        "funding_insight_id": "FI-474a441598e62f93",
+        "event_ids": [
+          "EV-622ebdad1e1fad2d"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "",
+        "company_name": "生数科技",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "6亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 600000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6 亿元"
+        },
+        "announced_at": "2026-02-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4177e5ca07c921a5",
+            "source_url": "https://news.pedaily.cn/202602/560802.shtml",
+            "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
+            "source_content_hash": "22fd0b6b2709ea7b",
+            "quote": "原有股东 启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等 投资人加码跟投",
+            "quote_hash": "4d881e2d381f26fec2c7ab029dbb700555c10c98ea6d02f4540dc9ddde177ebe"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -93,6 +133,14 @@
         "source_content_hash": "1ec9048975ec38b7fb338d1444cadea193510c9c4cfa32887d772b459d07ae92",
         "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投",
         "quote_hash": "8c534b8e0342cd2a165374b260f2ca89b856158d8a17b3ea777f71fa5fe8098b"
+      },
+      {
+        "source_id": "FISRC-4177e5ca07c921a5",
+        "source_url": "https://news.pedaily.cn/202602/560802.shtml",
+        "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
+        "source_content_hash": "22fd0b6b2709ea7b",
+        "quote": "原有股东 启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等 投资人加码跟投",
+        "quote_hash": "4d881e2d381f26fec2c7ab029dbb700555c10c98ea6d02f4540dc9ddde177ebe"
       }
     ]
   }
