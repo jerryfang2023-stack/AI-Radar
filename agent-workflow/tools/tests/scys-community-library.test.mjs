@@ -111,3 +111,34 @@ test("verified links survive a changed collection ID without overriding an exist
   assert.deepEqual(repaired.unresolved,['other-author']);
   assert.equal(resolveScysOriginalLinks([existing],[entry]).items[0].url,existing.url);
 });
+
+test("startup direction snapshot resolves unique posts, preserves links and distinguishes prices", () => {
+  const library = JSON.parse(fs.readFileSync("01-SiteV2/site/data/scys-community-library.json", "utf8"));
+  const data = JSON.parse(fs.readFileSync("01-SiteV2/site/data/scys-startup-directions.json", "utf8"));
+  const ids = new Map(library.items.map(item => [item.id, item]));
+  const posts = data.directions.flatMap(direction => direction.posts);
+  assert.equal(data.directions.length, 12);
+  assert.equal(posts.length, 179);
+  assert.equal(new Set(posts.map(post => post.itemId)).size, 179);
+  const originals = posts.filter(post => post.originalUrl).map(post => post.originalUrl);
+  assert.equal(new Set(originals).size, originals.length);
+  for (const post of posts) {
+    const item = ids.get(post.itemId);
+    assert.ok(item, "missing direction source: " + post.itemId);
+    assert.equal(post.title, item.title);
+    assert.equal(post.author, item.author);
+    if (post.originalUrl) assert.equal(post.originalUrl, item.originalUrl || item.url);
+    const siblings = library.items.filter(other => post.originalUrl ? (other.originalUrl || other.url) === post.originalUrl : other.title === post.title && other.author === post.author);
+    const links = new Set(siblings.flatMap(other => other.links || []).map(link => link.href));
+    for (const link of post.links) assert.ok(links.has(link.href), "resource must resolve without rewriting its full URL");
+    assert.deepEqual(Object.keys(post).sort(), ["author", "itemId", "links", "originalUrl", "title"]);
+  }
+  assert.equal(data.prices.length, 15);
+  for (const price of data.prices) {
+    assert.ok(posts.some(post => post.itemId === price.itemId));
+    assert.ok(price.min <= price.max && price.evidence && price.limitation);
+  }
+  assert.equal(data.prices.find(price => price.min === 9800).nature, "预约报价");
+  assert.equal(data.prices.find(price => price.min === 15).nature, "任务佣金");
+  assert.equal(data.prices.find(price => price.min === 9.9).nature, "竞品价格");
+});

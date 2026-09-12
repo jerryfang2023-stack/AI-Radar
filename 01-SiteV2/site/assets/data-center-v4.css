@@ -3179,3 +3179,41 @@ body[data-community-source="scys"] .dc-scys-profile dt { color:var(--gl-blue); }
 .dc-community-nav summary[aria-current="page"] { color:var(--gl-blue); font-weight:600; }
 .dc-community-nav summary:focus-visible { outline:2px solid var(--gl-gold); outline-offset:2px; }
 .dc-community-nav .dc-nav-child { display:block; min-height:40px; margin-top:4px; padding:10px 12px 10px 28px; }
+
+/* Startup direction analysis shares the Guanlan community typography and palette. */
+.dc-directions { margin-top:24px; }
+.dc-direction-stats { display:flex; flex-wrap:wrap; gap:24px 48px; padding:24px; margin:0 0 24px; background:var(--gl-blue); color:var(--gl-paper); border-radius:var(--gl-radius-card); }
+.dc-direction-stats div { display:flex; flex-direction:column-reverse; gap:4px; }
+.dc-direction-stats dt { font:400 var(--gl-type-caption-size)/var(--gl-type-caption-line) var(--gl-font-sans-cn); }
+.dc-direction-stats dd { margin:0; color:var(--gl-gold); font:500 var(--gl-type-module-title-size)/var(--gl-type-module-title-line) var(--gl-font-mono); }
+.dc-direction-ranking { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 24px; }
+.dc-direction-choice { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:10px; padding:16px; text-align:left; color:var(--gl-blue); background:var(--gl-paper-warm); border:1px solid var(--gl-border); border-radius:var(--gl-radius-button); cursor:pointer; font:500 14px/24px var(--gl-font-sans-cn); }
+.dc-direction-choice strong { font:500 14px/24px var(--gl-font-mono); }
+.dc-direction-choice:hover { background:var(--gl-bg); }
+.dc-direction-choice[aria-pressed="true"] { border-color:var(--gl-gold); background:var(--gl-bg); }
+.dc-direction-choice:focus-visible, .dc-direction-detail:focus-visible { outline:2px solid var(--gl-gold); outline-offset:3px; }
+.dc-direction-bar { grid-column:1/-1; height:4px; background:var(--gl-border); border-radius:2px; overflow:hidden; }
+.dc-direction-bar i { display:block; height:100%; background:var(--gl-blue); }
+.dc-direction-choice[aria-pressed="true"] .dc-direction-bar i { background:var(--gl-gold); }
+.dc-direction-basis { margin:20px 0; font:400 14px/24px var(--gl-font-sans-cn); color:var(--gl-gray); }
+.dc-direction-basis summary, .dc-direction-fee summary { cursor:pointer; }
+.dc-direction-detail { scroll-margin-top:96px; padding-top:16px; border-top:1px solid var(--gl-border); }
+.dc-direction-detail h2, .dc-direction-heading { margin:0 0 20px; color:var(--gl-blue); font:600 var(--gl-type-card-title-size)/var(--gl-type-card-title-line) var(--gl-font-sans-cn); }
+.dc-direction-context { display:grid; grid-template-columns:1fr 1fr; gap:24px; padding:20px; margin:0 0 28px; background:var(--gl-bg); border-left:2px solid var(--gl-gold); }
+.dc-direction-context dt { font-weight:600; margin-bottom:8px; color:var(--gl-blue); }
+.dc-direction-context dd { margin:0; }
+.dc-direction-context, .dc-direction-fee { font:400 14px/24px var(--gl-font-sans-cn); }
+.dc-direction-fees { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-bottom:28px; }
+.dc-direction-fee { padding:20px; border:1px solid var(--gl-border); border-radius:var(--gl-radius-card); min-width:0; }
+.dc-direction-fee h4 { margin:10px 0 8px; font:600 16px/28px var(--gl-font-sans-cn); }
+.dc-direction-fee strong { color:var(--gl-blue); font:500 18px/28px var(--gl-font-mono); }
+.dc-direction-nature { color:var(--gl-blue); background:var(--gl-bg); padding:4px 8px; border-radius:var(--gl-radius-sm); }
+.dc-direction-fee blockquote { margin:12px 0; padding-left:12px; border-left:2px solid var(--gl-gold); }
+.dc-direction-source { display:flex; align-items:center; flex-wrap:wrap; gap:16px; margin-top:12px; }
+.dc-direction-source .dc-clear { padding:0; }
+@media(max-width:700px) {
+  body[data-community-source="scys"] .dc-community-tabs { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .dc-direction-ranking, .dc-direction-context, .dc-direction-fees { grid-template-columns:1fr; }
+  .dc-direction-stats { gap:16px 24px; padding:20px; }
+  .dc-direction-choice { padding:12px; }
+}
