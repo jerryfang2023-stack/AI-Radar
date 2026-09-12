@@ -64,3 +64,50 @@ test("calendar weeks include Sunday and cross year boundaries", () => {
   assert.deepEqual(model.weekRange("2026-09-13"), model.weekRange("2026-09-07"));
   assert.equal(model.weekRange("2026-09-14").start, "2026-09-14");
 });
+
+test("MCP exact-match repair preserves archive identity, dates and complete resource links", () => {
+  const missing = { ...post, author: '作者甲', url: 'https://scys.com/' };
+  const data = buildLibrary([{date:'2026-09-11',payload:{items:[missing]}}], [{id:post.id,title:post.title,author:'作者甲',url:post.url,basis:'mcp-exact-title-author'}]);
+  assert.equal(data.items[0].id, post.id);
+  assert.equal(data.items[0].url, missing.url);
+  assert.equal(data.items[0].originalUrl, post.url);
+  assert.equal(data.items[0].firstSeen, '2026-09-11');
+  assert.equal(data.items[0].lastSeen, '2026-09-11');
+  assert.equal(data.items[0].bodyRef, post.bodyRef);
+  assert.equal(data.resources[0].href, link.href);
+  assert.equal(data.resources[0].owners[0].itemUrl, post.url);
+  assert.deepEqual(data.missingOriginalLinkIds, []);
+});
+
+test("later homepage records recover a known address only for an unambiguous title and author", () => {
+  const known = {...post, author:'甲'};
+  const missing = {...post,id:'b',author:'甲',url:'https://scys.com/',links:[]};
+  const other = {...missing,id:'c',author:'乙',title:'不同作者的帖子'};
+  const data=buildLibrary([{date:'2026-09-11',payload:{items:[known]}},{date:'2026-09-12',payload:{items:[missing,other]}}]);
+  assert.equal(data.items.find(x=>x.id==='b').originalUrl, post.url);
+  assert.deepEqual(data.missingOriginalLinkIds, ['c']);
+  assert.equal(data.resources[0].href, link.href);
+});
+
+test("link repair rejects mismatched authors, unsafe addresses and ambiguous archived titles", async () => {
+  const {resolveScysOriginalLinks}=await import('../lib/scys-original-links.mjs');
+  const missing={...post,author:'甲',url:'https://scys.com/'};
+  const resolution={id:post.id,title:post.title,author:'乙',url:post.url,basis:'mcp-exact-title-author'};
+  assert.throws(()=>resolveScysOriginalLinks([missing],[resolution]), /identity mismatch/);
+  assert.throws(()=>resolveScysOriginalLinks([missing],[{...resolution,author:'甲',url:'https://scys.com.evil.test/articleDetail/xq_topic/123'}]), /Invalid/);
+  const result=resolveScysOriginalLinks([missing,{...post,id:'b',author:'甲'},{...post,id:'c',author:'甲',url:post.url+'4'}]);
+  assert.equal(result.items[0].originalUrl,undefined);
+  assert.deepEqual(result.unresolved,['a']);
+});
+
+test("verified links survive a changed collection ID without overriding an existing original", async () => {
+  const {resolveScysOriginalLinks}=await import('../lib/scys-original-links.mjs');
+  const entry={id:'old-id',title:post.title,author:'甲',url:post.url,basis:'mcp-exact-title-author'};
+  const missing={...post,id:'new-id',author:'甲',url:'https://scys.com/'};
+  const other={...missing,id:'other-author',author:'乙'};
+  const existing={...missing,id:'existing',url:post.url+'4'};
+  const repaired=resolveScysOriginalLinks([missing,other],[entry]);
+  assert.equal(repaired.items[0].originalUrl,post.url);
+  assert.deepEqual(repaired.unresolved,['other-author']);
+  assert.equal(resolveScysOriginalLinks([existing],[entry]).items[0].url,existing.url);
+});
