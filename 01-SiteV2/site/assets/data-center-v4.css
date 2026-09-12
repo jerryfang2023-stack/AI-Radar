@@ -3071,3 +3071,5 @@ body[data-dc-view=community] .dc-community-tabs { grid-template-columns: repeat(
 @media(max-width:700px){.dc-week-picker{width:100%;flex-wrap:wrap}.dc-week-picker select{width:100%}.dc-scys-filters .dc-select{width:100%}.dc-scys-profile{gap:12px}.dc-scys-case h3{font-size:18px}}
 
 .dc-scys-search{display:flex;gap:12px;align-items:center;margin:24px 0 32px;padding:16px;background:#fffdf8;border:1px solid #e7e1d7;border-radius:10px}.dc-scys-search .dc-search{flex:1}.dc-scys-search .dc-select{max-width:230px}.dc-scys-month{margin-bottom:30px}.dc-scys-month>h3{font-size:18px;padding:12px 0;border-bottom:2px solid #c8a766;margin:0 0 16px;color:#0d355c}@media(max-width:700px){.dc-scys-search{flex-wrap:wrap;gap:8px}.dc-scys-search .dc-search{flex-basis:100%}.dc-scys-search .dc-select{flex:1;min-width:0;max-width:100%}}
+
+@media(max-width:700px){.dc-scys-search .dc-select{flex:1 1 calc(50% - 8px);min-width:140px}.dc-scys-search .dc-button{flex:1}.dc-scys-search .dc-clear{padding:10px 16px}}

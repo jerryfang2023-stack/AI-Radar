@@ -67,6 +67,7 @@ try {
   await page.setViewportSize({width:390,height:844});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   const out=path.join(process.env.LOCALAPPDATA,'WaveSight/runtime');
+  await page.evaluate(()=>window.scrollTo(0,0));
   await page.screenshot({path:path.join(out,'community-subcolumns-mobile.png'),fullPage:true});
   await page.locator('[data-nav-toggle]').click();
   await page.locator('[data-community-link="aipoju"]').click();
