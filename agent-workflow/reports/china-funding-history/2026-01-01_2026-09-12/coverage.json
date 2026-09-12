@@ -55,10 +55,12 @@
     "orchestration": "gpt-6-astra",
     "orchestration_scope": "configuration_and_exceptions_only",
     "orchestration_reasoning": "high",
-    "claim_extraction": "deepseek-v4-flash",
-    "claim_extraction_retry": "deepseek-v4-flash",
+    "claim_extraction": "gpt-5.6-terra",
+    "claim_extraction_retry": "gpt-5.6-terra",
     "translation": "deepseek-v4-flash",
-    "translation_fallback": "deepseek-v4-pro"
+    "translation_fallback": "deepseek-v4-pro",
+    "claim_extraction_reasoning": "medium",
+    "claim_extraction_provider": "codex_local"
   },
   "scope_note": "China-market AI financing; publisher origin and search dates are discovery hints only. Original evidence decides factual date and market.",
   "status": "partial",

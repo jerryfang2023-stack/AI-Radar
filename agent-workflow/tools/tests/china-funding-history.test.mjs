@@ -4,7 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { historyWindows, collectHistory, historicalSearch } from "../collect-china-funding-history.mjs";
-import { historicalFundingAuthorized } from "../build-data-center-v4.mjs";
+import { historicalFundingAuthorized, fundingClaimGroupingProblem } from "../build-data-center-v4.mjs";
 import { deepSeekJsonCompletion } from "../deepseek-translation-client.mjs";
 import { chinaFundingSourceDate } from "../lib/china-funding-source-date.mjs";
 import { codexExtractionInvocation, authorizedTerraExtraction } from "../codex-extraction-client.mjs";
@@ -26,6 +26,13 @@ test("Terra extraction pins medium and excludes API secrets from the Codex child
   assert.equal(invocation.args[invocation.args.indexOf("-m") + 1], "gpt-5.6-terra");
   assert.ok(invocation.args.includes("model_reasoning_effort=medium"));
   assert.ok(invocation.args.includes("skip_host_skill_discovery"));
+});
+
+test("financing articles cannot combine recipients or promote cumulative totals as one round", () => {
+  assert.equal(fundingClaimGroupingProblem([{ subject: "爱诗科技", source_quote: "爱诗科技完成融资" }, { subject: "生数科技", source_quote: "生数科技完成5亿美元融资" }]), "multiple_funding_recipients_require_separate_sources");
+  assert.equal(fundingClaimGroupingProblem([{ subject: "6轮", source_quote: "这家公司累计完成约70亿元人民币融资" }]), "cumulative_funding_total_not_single_round");
+  assert.equal(fundingClaimGroupingProblem([{ subject: "公司甲", source_quote: "公司甲此次完成A轮融资，累计融资超过1亿元" }]), "");
+  assert.equal(fundingClaimGroupingProblem([{ subject: "公司甲", source_quote: "公司甲完成A轮融资" }]), "");
 });
 
 test("Chinese article bylines retain the explicit historical disclosure date", () => {
