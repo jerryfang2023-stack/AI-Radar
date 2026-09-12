@@ -55,19 +55,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 5,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-08-21",
+    "latest_disclosed_at": "2026-08-19",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 2,
+      "lead": 1,
       "participant": 3
     },
     "round_codes": [
@@ -77,81 +77,37 @@
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-eddb3e851558ed80",
-        "canonical_entity_id": "",
-        "name": "清雁科技（北京）有限公司"
+        "entity_id": "EN-a3802b1f5a583189",
+        "canonical_entity_id": "EN-a3802b1f5a583189",
+        "name": "墨奇智能"
       },
       {
-        "entity_id": "EN-4a9900b7b05676d2",
-        "canonical_entity_id": "",
-        "name": "清雁科技（北京）有限公司"
+        "entity_id": "EN-eddb3e851558ed80",
+        "canonical_entity_id": "EN-eddb3e851558ed80",
+        "name": "清雁科技"
       },
       {
         "entity_id": "EN-ada6f7916f22af98",
-        "canonical_entity_id": "",
-        "name": "求之科技(无锡)有限公司"
-      },
-      {
-        "entity_id": "EN-a3802b1f5a583189",
-        "canonical_entity_id": "",
-        "name": "深圳墨奇智能技术有限公司"
+        "canonical_entity_id": "EN-ada6f7916f22af98",
+        "name": "求之科技"
       },
       {
         "entity_id": "EN-0369c8fcda657a43",
-        "canonical_entity_id": "",
-        "name": "无问芯穹（Infinigence AI）"
+        "canonical_entity_id": "EN-0369c8fcda657a43",
+        "name": "无问芯穹"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-5610c056708c0193",
-        "funding_insight_id": "FI-c185fb71d34b0f0c",
+        "activity_id": "IA-a4a764911bd537e4",
+        "funding_insight_id": "FI-dc9e5d11c96e1760",
         "event_ids": [
+          "EV-c9a11db49e1afbe5",
           "EV-a72baefac91ba841"
         ],
         "company_entity_id": "EN-eddb3e851558ed80",
-        "company_canonical_entity_id": "",
-        "company_name": "清雁科技（北京）有限公司",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-08-21",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-21e3c93bae47f754",
-            "source_url": "https://news.pedaily.cn/202608/567947.shtml",
-            "source_title": "清雁科技完成数亿元A轮融资，聚焦几何物理驱动的物理AI基础设施",
-            "source_content_hash": "df80d47fccb69fc2",
-            "quote": "本轮融资由 君联资本领投，苏创投、宁波亿时跟投",
-            "quote_hash": "f3a70583671d0dc0965f7734f9accb217106694094664cf28523f969683fd994"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-f11bc255c6262f83",
-        "funding_insight_id": "FI-dcd79ea72d2e09b1",
-        "event_ids": [
-          "EV-c9a11db49e1afbe5"
-        ],
-        "company_entity_id": "EN-4a9900b7b05676d2",
-        "company_canonical_entity_id": "",
-        "company_name": "清雁科技（北京）有限公司",
+        "company_canonical_entity_id": "EN-eddb3e851558ed80",
+        "company_name": "清雁科技",
         "round": "A轮",
         "round_code": "series_a",
         "round_original": "A轮",
@@ -184,14 +140,14 @@
         ]
       },
       {
-        "activity_id": "IA-9dc47a56ebdece6d",
+        "activity_id": "IA-9d893d7c9272029d",
         "funding_insight_id": "FI-0cab7e240eb542ce",
         "event_ids": [
           "EV-e85e6fc6d630d56c"
         ],
         "company_entity_id": "EN-a3802b1f5a583189",
-        "company_canonical_entity_id": "",
-        "company_name": "深圳墨奇智能技术有限公司",
+        "company_canonical_entity_id": "EN-a3802b1f5a583189",
+        "company_name": "墨奇智能",
         "round": "天使轮",
         "round_code": "angel",
         "round_original": "天使轮",
@@ -224,14 +180,14 @@
         ]
       },
       {
-        "activity_id": "IA-6ad43e3cecf0eb8b",
+        "activity_id": "IA-876b8c70a98cb67b",
         "funding_insight_id": "FI-6adc0d7bfd441daa",
         "event_ids": [
           "EV-b4d6c556eadaa272"
         ],
         "company_entity_id": "EN-ada6f7916f22af98",
-        "company_canonical_entity_id": "",
-        "company_name": "求之科技(无锡)有限公司",
+        "company_canonical_entity_id": "EN-ada6f7916f22af98",
+        "company_name": "求之科技",
         "round": "天使轮",
         "round_code": "angel",
         "round_original": "天使轮",
@@ -264,14 +220,14 @@
         ]
       },
       {
-        "activity_id": "IA-bf0aab368c268db8",
+        "activity_id": "IA-5b5e0342e9acc0e9",
         "funding_insight_id": "FI-45331063d95f5f57",
         "event_ids": [
           "EV-81b7cd5d6a37912c"
         ],
         "company_entity_id": "EN-0369c8fcda657a43",
-        "company_canonical_entity_id": "",
-        "company_name": "无问芯穹（Infinigence AI）",
+        "company_canonical_entity_id": "EN-0369c8fcda657a43",
+        "company_name": "无问芯穹",
         "round": "基础设施融资",
         "round_code": "infrastructure",
         "round_original": "基础设施融资",
@@ -304,7 +260,7 @@
         ]
       },
       {
-        "activity_id": "IA-b2917afb30e33d83",
+        "activity_id": "IA-b28fc9b02636781a",
         "funding_insight_id": "FI-e9bdd4e9374b04ca",
         "event_ids": [
           "EV-41c54c428d84cc1e",
@@ -313,7 +269,7 @@
         ],
         "company_entity_id": "EN-8dc72a4672894e0f",
         "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-        "company_name": "自变量机器人科技（深圳）有限公司",
+        "company_name": "自变量机器人",
         "round": "A++轮",
         "round_code": "series_a_plus_plus",
         "round_original": "A++轮",
@@ -347,14 +303,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-21e3c93bae47f754",
-        "source_url": "https://news.pedaily.cn/202608/567947.shtml",
-        "source_title": "清雁科技完成数亿元A轮融资，聚焦几何物理驱动的物理AI基础设施",
-        "source_content_hash": "df80d47fccb69fc2",
-        "quote": "本轮融资由 君联资本领投，苏创投、宁波亿时跟投",
-        "quote_hash": "f3a70583671d0dc0965f7734f9accb217106694094664cf28523f969683fd994"
-      },
       {
         "source_id": "FISRC-b7725acf292395aa",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-19/doc-ininvmyx9448955.shtml",
@@ -398,7 +346,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[5].role": {
+        "activities[4].role": {
           "text": "Pre-A++轮领投",
           "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
           "provider": "deepseek",

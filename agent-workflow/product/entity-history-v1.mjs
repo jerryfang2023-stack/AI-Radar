@@ -154,7 +154,7 @@ export function applyEntityReviewDecisions(entityRows, events, reviewDecisions) 
       ...row,
       canonical_name: reviewedName || row.canonical_name,
       entity_type: reviewedType || row.entity_type,
-      aliases: unique([...aliases, reviewedName && key(reviewedName) !== key(row.canonical_name) ? row.canonical_name : ""]),
+      aliases: unique([...aliases, canonical.retain_original_name_as_alias !== false && reviewedName && key(reviewedName) !== key(row.canonical_name) ? row.canonical_name : ""]),
       verification_status: "verified"
     };
   }).filter(Boolean);
@@ -549,11 +549,14 @@ function mergeViewpointPeople(registry, viewpointData = {}, reviewDecisions = {}
   }
 }
 
-function enrichReviewedPeople(registry, reviewDecisions = {}) {
+function enrichReviewedPeople(registry, reviewDecisions = {}, fundingCards = []) {
   const decisionById = new Map(acceptedReviewDecisions(reviewDecisions).map((decision) => [decision.entity_id, decision]));
   for (const entity of registry.values()) {
     if (entity.entityType !== "person_candidate") continue;
     const decision = decisionById.get(entity.id);
+    if (decision?.canonical?.reviewed_candidate_keys?.length) {
+      entity.fundingResearchNames = unique(decision.canonical.reviewed_candidate_keys.map((candidate) => candidate.slice(candidate.indexOf("|") + 1)));
+    }
     const organizationNames = unique(decision?.canonical?.organization_names || []);
     const roleTitle = clean(decision?.canonical?.role_title);
     if (organizationNames.length) {
@@ -569,9 +572,15 @@ function enrichReviewedPeople(registry, reviewDecisions = {}) {
         quote: source.quote
       }));
     }
-    const fundingProfiles = Array.isArray(decision?.canonical?.funding_profiles)
+    const reviewedFundingProfiles = Array.isArray(decision?.canonical?.funding_profiles)
       ? decision.canonical.funding_profiles
       : [];
+    const fundingProfiles = reviewedFundingProfiles.map((profile) => {
+      const published = fundingCards.find((card) => card.funding_insight_id === profile.funding_insight_id)
+        || fundingCards.find((card) => card.company?.entity_id === profile.company_entity_id
+          && [card.triggered_by_event_id, ...(card.source_event_ids || [])].includes(profile.source_event_id));
+      return published ? { ...profile, funding_insight_id: published.funding_insight_id } : profile;
+    });
     if (fundingProfiles.length) {
       entity.datasetScopes = unique([
         ...entity.datasetScopes.filter((scope) => scope !== "canonical" || entity.eventIds.length),
@@ -927,12 +936,13 @@ export function buildEntityHistoryService({
   hardwareRecords = [],
   viewpointData = {},
   reviewDecisions = {},
+  fundingCards = [],
   generatedAt = ""
 } = {}) {
   const reviewed = applyEntityReviewDecisions(entityRows, events, reviewDecisions);
   const registry = buildCanonicalRegistry(reviewed.entityRows, reviewed.events);
   mergeViewpointPeople(registry, viewpointData, reviewDecisions);
-  enrichReviewedPeople(registry, reviewDecisions);
+  enrichReviewedPeople(registry, reviewDecisions, fundingCards);
   enrichReviewedOrganizations(registry, reviewDecisions);
   const taxonomyNodes = buildTaxonomyNodes(reviewed.events, fdeRecords, hardwareRecords);
   const relationships = buildTypedRelationships({ registry, events: reviewed.events, fdeRecords, hardwareRecords, taxonomyNodes, reviewDecisions: reviewed.decisions, entityIdRemap: reviewed.remap });

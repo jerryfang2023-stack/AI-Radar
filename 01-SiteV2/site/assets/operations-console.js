@@ -160,6 +160,11 @@
         <details><summary>诊断</summary><p>${html(list(source.failures).join("；") || "本次请求无错误")}</p></details></div>`).join("");
       chinaFunding.innerHTML = `${summary}${rows || '<div class="empty">国内融资独立链路尚无运行数据。</div>'}<p class="source-quality-note">${html(funding.metric_note || "与海外同批次启动，按来源独立记录。未运行数据不显示为零。")}</p>`;
       const history = quality.chinaFundingHistory;
+      const entities = quality.chinaFundingEntities;
+      if (entities?.reviewed_at) {
+        const pending = [...list(entities.deferred_companies), ...list(entities.deferred_people)];
+        chinaFunding.innerHTML += `<h3>国内公司与人物库同步</h3><p>${html(entities.reviewed_at.slice(0, 10))} · ${entities.status === "passed" ? "审核已闭合" : "已同步核验资料，仍有证据缺口"}</p><div class="source-summary"><span>关联正式公司<b>${number(entities.unique_linked_companies)}</b></span><span>已核验人物<b>${number(entities.accepted_people)}</b></span><span>公司身份待核验<b>${list(entities.deferred_companies).length}</b></span><span>人物关联待核验<b>${list(entities.deferred_people).length}</b></span></div><details><summary>查看待核验明细</summary>${pending.map((item) => `<p><strong>${html(item.name)}${item.company_name ? ` · ${html(item.company_name)}` : ""}</strong>：${html(item.reason)}</p>`).join("") || "暂无待核验条目"}</details>`;
+      }
       if (history?.totals) {
         const totals = history.totals;
         const months = list(history.months).map((month) => `<div class="source-row"><div class="source-name"><strong>${html(month.month)}</strong><em>${html(month.from)} 至 ${html(month.to)}</em></div><div class="mini-kpi"><span>索引线索</span><b>${number(month.discovered_cases)}</b></div><div class="mini-kpi"><span>已获原文</span><b>${number(month.captured_cases)}</b></div><div class="mini-kpi"><span>核验中国区</span><b>${number(month.verified_china_cases)}</b></div><div class="mini-kpi"><span>关联本轮卡片</span><b>${number(month.card_cases)}</b></div><div class="mini-kpi"><span>待核验或补齐</span><b>${number(month.pending_cases)}</b></div></div>`).join("");
