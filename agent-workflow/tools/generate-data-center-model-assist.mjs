@@ -12,6 +12,7 @@ import {
   writeJson,
 } from "./model-assist-v1.mjs";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
+import { codexExtractionCompletion, TERRA_EXTRACTION_MODEL } from "./codex-extraction-client.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
@@ -208,8 +209,10 @@ function normalizePayload(job, payload, body) {
 async function generate(job) {
   const body = String(job.raw.body_clean || "");
   const excerpt = body.slice(0, Number(process.env.MODEL_ASSIST_MAX_SOURCE_CHARS || 16000));
-  const result = await deepSeekJsonCompletion({
-    model: deepSeekModels().pro,
+  const complete = process.env.MODEL_ASSIST_MODEL === TERRA_EXTRACTION_MODEL ? codexExtractionCompletion : deepSeekJsonCompletion;
+  const result = await complete({
+    model: process.env.MODEL_ASSIST_MODEL || deepSeekModels().pro,
+    fallbackModel: process.env.MODEL_ASSIST_MODEL || deepSeekModels().pro,
     messages: [{ role: "user", content: taskPrompt(job, excerpt) }],
     maxTokens: 3000,
     timeoutMs: Number(process.env.MODEL_ASSIST_TIMEOUT_MS || 90000),
@@ -232,7 +235,18 @@ async function generate(job) {
     gate_results: [],
     generated_at: result.generatedAt,
   };
-  return withGateResult(candidate, body);
+  const gated = withGateResult(candidate, body);
+  if (write && process.env.MODEL_ASSIST_MODEL === TERRA_EXTRACTION_MODEL) {
+    // Preserve each completed local call so interruption never discards a whole batch.
+    const file = path.join(outputRoot, `${job.date}.json`);
+    const previous = readJson(file, candidateStore(job.date));
+    const key = candidateJobKey(job.date, gated);
+    const existing = (previous.candidates || []).find((item) => candidateJobKey(job.date, item) === key);
+    const saved = existing?.review && !regenerateStatuses.has(existing.status) ? existing : gated;
+    writeJson(file, candidateStore(job.date, [...(previous.candidates || []).filter((item) => candidateJobKey(job.date, item) !== key), saved], { sourceCount: bundle(job.date, "raw-documents").length }));
+    console.log(`Terra extraction checkpoint: ${job.taskType} ${gated.status}`);
+  }
+  return gated;
 }
 
 async function mapConcurrent(items, worker, size) {
@@ -253,6 +267,12 @@ async function main() {
   const dates = selectedDates();
   const rawDocumentsScanned = dates.reduce((sum, item) => sum + bundle(item, "raw-documents").length, 0);
   let jobs = dates.flatMap(buildJobs).sort((a, b) => jobKey(a).localeCompare(jobKey(b)));
+  if (process.env.MODEL_ASSIST_SOURCE_REFS_FILE) {
+    const authorization = readJson(process.env.MODEL_ASSIST_SOURCE_REFS_FILE, {});
+    if (!Array.isArray(authorization.source_refs) || !authorization.source_refs.length) throw new Error("missing_historical_model_source_scope");
+    const sourceRefs = new Set(authorization.source_refs);
+    jobs = jobs.filter((job) => sourceRefs.has(job.sourceRef));
+  }
   if (requestedAssets.size) jobs = jobs.filter((job) => requestedAssets.has(job.assetId));
   const scannedJobs = jobs.length;
   const regatedByDate = new Map();
@@ -281,7 +301,9 @@ async function main() {
     console.log(JSON.stringify({ ok: true, mode: "dry-run", dates: dates.length, raw_documents_scanned: rawDocumentsScanned, scanned_jobs: scannedJobs, reused_jobs: reusedJobs, regated_existing: regatedExisting, selected_jobs: jobs.length, by_task: Object.fromEntries([...requestedTasks].map((task) => [task, jobs.filter((job) => job.taskType === task).length])) }, null, 2));
     return;
   }
-  if (jobs.length && !process.env.DEEPSEEK_API_KEY) throw new Error("deepseek_key_missing_for_required_model_task");
+  if (jobs.length && process.env.MODEL_ASSIST_PROVIDER === "checkpoint") throw new Error("terra_local_extraction_required: reuse accepted local Terra candidates before cloud publication");
+  if (jobs.length && process.env.MODEL_ASSIST_MODEL !== TERRA_EXTRACTION_MODEL && !process.env.DEEPSEEK_API_KEY) throw new Error("deepseek_key_missing_for_required_model_task");
+  console.log(`Model assist: model=${process.env.MODEL_ASSIST_MODEL || deepSeekModels().pro} selected=${jobs.length} reused=${reusedJobs}`);
   const results = await mapConcurrent(jobs, generate, concurrency);
   for (let retry = 0; retry < 2; retry += 1) {
     const failedIndexes = results.map((result, index) => result?.error ? index : -1).filter((index) => index >= 0);

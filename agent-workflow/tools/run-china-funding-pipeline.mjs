@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 import { buildSourceIntake, mergeSourceIntakes } from "./lib/source-intake-v1.mjs";
 import { loadPrivateEvidenceEntries } from "./lib/private-evidence-store.mjs";
 import { buildChinaFundingHealth } from "./lib/china-funding-health.mjs";
+import { historyWindows } from "./collect-china-funding-history.mjs";
 
 const urlKey = (url) => String(url || "").replace(/[?#].*$/u, "").replace(/\/$/u, "");
 export function selectChinaFundingIntake(intake, discovery) {
@@ -29,11 +30,11 @@ function recoverPrivateIntake(root, date, discovery) {
   return selectChinaFundingIntake(intake, discovery);
 }
 
-export function chinaFundingPlan(date, sourceDir) {
+export function chinaFundingPlan(date, sourceDir, { rawLimit = 168 } = {}) {
   const tool = (name, ...args) => [`agent-workflow/tools/${name}.mjs`, ...args];
   const site = (name) => [`01-SiteV2/site/scripts/${name}.mjs`];
   return [
-    { id: "capture", commands: [tool("run-guanlan-daily-monitor", `--date=${date}`, `--source-artifact-dir=${sourceDir}`, "--use-source-artifacts=true", "--targeted-source-artifacts=true", "--merge-existing-intake=true", "--raw-min=1", "--raw-max=168", "--raw-target=168"), tool("backup-private-evidence"), tool("migrate-private-evidence-source", "--delete-public-originals=true"), tool("assert-public-evidence-boundary"), tool("assert-private-evidence-backup", `--date=${date}`)] },
+    { id: "capture", commands: [tool("run-guanlan-daily-monitor", `--date=${date}`, `--source-artifact-dir=${sourceDir}`, "--use-source-artifacts=true", "--targeted-source-artifacts=true", "--merge-existing-intake=true", "--raw-min=1", `--raw-max=${rawLimit}`, `--raw-target=${rawLimit}`), tool("backup-private-evidence"), tool("migrate-private-evidence-source", "--delete-public-originals=true"), tool("assert-public-evidence-boundary"), tool("assert-private-evidence-backup", `--date=${date}`)] },
     { id: "facts", commands: [tool("build-data-center-v4", `--date=${date}`), tool("generate-data-center-model-assist", `--date=${date}`, "--write=true", "--concurrency=2", "--reuse-existing=true"), tool("assert-data-center-model-assist", `--date=${date}`), tool("backfill-source-title-translations", `--date=${date}`, "--write=true", "--concurrency=3"), tool("build-data-center-v4", `--date=${date}`), tool("assert-data-center-v4", `--date=${date}`), tool("assert-china-market-v1", `--date=${date}`, "--stage=bundle")] },
     { id: "projections", commands: [tool("sync-light-data-lake", "--v4-only=true", "--duckdb=skip"), tool("assert-data-lake-v4", "--duckdb=skip"), site("build-data-center-v4-frontstage"), tool("materialize-entity-history-v1"), tool("assert-entity-history-v1"), tool("generate-funding-insights-deepseek", `--date=${date}`, "--write=true"), tool("assert-funding-insights-v1", `--date=${date}`), site("build-funding-insights-frontstage"), tool("translate-public-structured-fields-deepseek", "--write=true"), tool("classify-funding-taxonomy-v4-1", "--write=true", "--apply=true"), tool("project-funding-taxonomy-to-events-v4-1"), tool("sync-light-data-lake", "--v4-only=true", "--duckdb=skip"), tool("assert-data-lake-v4", "--duckdb=skip"), site("build-funding-insights-frontstage"), tool("build-investment-institutions-v1"), tool("assert-investment-institutions-v1"), site("build-data-center-v4-frontstage"), tool("materialize-entity-history-v1"), tool("assert-entity-history-v1"), site("build-trend-radar-frontstage"), tool("assert-trend-radar-v1"), site("build-industry-reports-frontstage"), tool("sync-light-data-lake", "--v4-only=true", "--duckdb=skip"), tool("assert-data-lake-v4", "--duckdb=skip"), tool("assert-funding-insights-v1", "--all=true", "--frontstage=true"), tool("assert-taxonomy-consistency-v4-1"), tool("assert-public-evidence-boundary")] },
   ];
@@ -44,14 +45,25 @@ function main() {
   const root = process.cwd();
   const date = args.get("date") || new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date());
   if (!/^\d{4}-\d{2}-\d{2}$/u.test(date)) throw new Error("Invalid date");
-  const laneDir = `agent-workflow/reports/china-funding/${date}`;
+  const historyFrom = args.get("history-from") || "";
+  const historyTo = args.get("history-to") || "";
+  if (historyFrom || historyTo) historyWindows(historyFrom, historyTo, date);
+  if (historyFrom) {
+    process.env.MODEL_ASSIST_MODEL = "gpt-5.6-terra";
+    process.env.MODEL_ASSIST_SOURCE_REFS_FILE = path.join(root, `01-SiteV2/content/11-databases/data-center-v4/${date}/historical-funding-authorization.json`);
+  }
+  const laneDir = historyFrom ? `agent-workflow/reports/china-funding-history/${historyFrom}_${historyTo}` : `agent-workflow/reports/china-funding/${date}`;
   const sourceDir = args.get("source-dir") || laneDir;
   const read = (file, fallback = null) => fs.existsSync(path.resolve(root, file)) ? JSON.parse(fs.readFileSync(path.resolve(root, file), "utf8")) : fallback;
   const write = (file, payload) => { const target = path.resolve(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.writeFileSync(target, `${JSON.stringify(payload, null, 2)}\n`); };
-  const plan = chinaFundingPlan(date, sourceDir);
+  const plan = chinaFundingPlan(date, sourceDir, { rawLimit: historyFrom ? 1260 : 168 });
+  if (historyFrom) for (const stage of plan) for (const command of stage.commands) {
+    if (command[0].endsWith("/migrate-private-evidence-source.mjs")) command.push(`--date=${date}`);
+  }
   if (args.get("dry-run") === "true") { console.log(JSON.stringify(plan, null, 2)); return; }
   const discovery = read(`${sourceDir}/china-funding-source-intake-candidates.json`);
   if (discovery?.date !== date) throw new Error("Missing same-date China funding discovery");
+  if (historyFrom && (discovery.history?.from !== historyFrom || discovery.history?.to !== historyTo)) throw new Error("Historical discovery does not match the authorized range");
   const intakeFile = `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`;
   const acceptedFile = `${laneDir}/accepted-intake.json`;
   const statusFile = `${laneDir}/pipeline.json`;
@@ -63,7 +75,7 @@ function main() {
     if (result.status !== 0 || result.error) {
       // Match the overseas contract: isolated model candidate failures are quarantined.
       // The immediately following strict model-assist assertion still gates accepted facts.
-      if (!result.error && args[0].endsWith("/generate-data-center-model-assist.mjs")) {
+      if (!historyFrom && !result.error && args[0].endsWith("/generate-data-center-model-assist.mjs")) {
         console.warn("Model assist reported candidate failures; validating the accepted subset next.");
         return;
       }
@@ -77,6 +89,15 @@ function main() {
       const state = { id: stage.id, status: "running", started_at: new Date().toISOString() };
       stages.push(state);
       try {
+        if (stage.id === "facts" && historyFrom) {
+          const authorizationFile = `01-SiteV2/content/11-databases/data-center-v4/${date}/historical-funding-authorization.json`;
+          const previousAuthorization = read(authorizationFile, {});
+          const accepted = read(acceptedFile);
+          if (previousAuthorization.from && (previousAuthorization.from !== historyFrom || previousAuthorization.to !== historyTo)) throw new Error("Historical authorization range conflict; preserve prior accepted policy");
+          write(authorizationFile, { schema_version: "CHINA-FUNDING-HISTORY-AUTHORIZATION-V1.0", from: historyFrom, to: historyTo,
+            authorized_by: "explicit_user_request_2026_china_funding_backfill", created_at: previousAuthorization.created_at || new Date().toISOString(),
+            source_refs: [...new Set([...(previousAuthorization.source_refs || []), ...accepted.source_artifacts.map((item) => item.source_artifact_id)])].sort() });
+        }
         if (stage.id === "capture" && previous.stages?.some((item) => item.id === "capture")) {
           // A failed handoff can still have durable private originals. Hydrate those offline.
           const accepted = read(acceptedFile) || recoverPrivateIntake(root, date, discovery);
@@ -84,7 +105,7 @@ function main() {
           write(intakeFile, mergeSourceIntakes(accepted, read(intakeFile) || accepted));
           state.reused = true;
           // Last-good rollback also restores the public locator index. Rebuild it offline.
-          command(["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true"]);
+          command(["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true", ...(historyFrom ? [`--date=${date}`] : [])]);
           command(["agent-workflow/tools/assert-public-evidence-boundary.mjs"]);
           command(["agent-workflow/tools/assert-private-evidence-backup.mjs", `--date=${date}`]);
           write(acceptedFile, selectChinaFundingIntake(accepted, discovery));
@@ -103,8 +124,9 @@ function main() {
   const bundle = `01-SiteV2/content/11-databases/data-center-v4/${date}`;
   const health = buildChinaFundingHealth({ date, discovery, stages: failed && !stages.length ? [{ id: "discovery", status: "failed", error: failed.message }] : stages,
     raw: read(`${bundle}/raw-documents.json`, []), artifacts: read(`${bundle}/source-artifacts.json`, []), claims: read(`${bundle}/claims.json`, []), events: read(`${bundle}/canonical-events.json`, []), entities: read(`${bundle}/entities.json`, []), cards: read("01-SiteV2/site/data/funding-insights-v1.json", {}).cards || [] });
+  if (historyFrom) health.history = { from: historyFrom, to: historyTo, mode: "historical_backfill", models: discovery.history.models };
   write(`${laneDir}/health.json`, health);
-  write("01-SiteV2/site/data/china-funding-health-v1.json", health);
+  write(`01-SiteV2/site/data/china-funding${historyFrom ? "-history" : ""}-health-v1.json`, health);
   command(["agent-workflow/tools/build-ops-console-data.mjs"]);
   if (failed) { console.error(failed.message); process.exitCode = 1; }
 }

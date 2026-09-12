@@ -1,0 +1,284 @@
+{
+  "schema_version": "CHINA-FUNDING-EXTRACTION-BENCHMARK-V1.0",
+  "generated_at": "2026-09-12T06:39:04.418Z",
+  "sample_count": 20,
+  "models": {
+    "deepseek-v4-flash": {
+      "valid_sources": 15,
+      "validation_failures": 11,
+      "unsupported_fields": 7,
+      "missing_outputs": 4,
+      "errors": [
+        {
+          "source": "sample-05",
+          "error": "source_count_mismatch"
+        },
+        {
+          "source": "sample-06",
+          "error": "source_count_mismatch"
+        },
+        {
+          "source": "sample-07",
+          "error": "source_count_mismatch"
+        },
+        {
+          "source": "sample-08",
+          "error": "source_count_mismatch"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        }
+      ],
+      "supported_fields": 197,
+      "failed_batches": 1,
+      "duration_ms": 22926,
+      "duration_complete": false
+    },
+    "gpt-5.3-codex-spark": {
+      "valid_sources": 9,
+      "validation_failures": 24,
+      "unsupported_fields": 23,
+      "missing_outputs": 1,
+      "errors": [
+        {
+          "source": "sample-01",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-01",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-01",
+          "field": "products",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-02",
+          "field": "company",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-06",
+          "field": "company",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-06",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-07",
+          "field": "company",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-07",
+          "field": "products",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-09",
+          "field": "amount",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-09",
+          "field": "round",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-09",
+          "field": "products",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-10",
+          "field": "company",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-11",
+          "field": "company",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-12",
+          "error": "source_count_mismatch"
+        },
+        {
+          "source": "sample-14",
+          "field": "products",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-15",
+          "field": "investors",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-20",
+          "field": "products",
+          "error": "unsupported_value_or_quote"
+        },
+        {
+          "source": "sample-20",
+          "field": "products",
+          "error": "unsupported_value_or_quote"
+        }
+      ],
+      "supported_fields": 240,
+      "failed_batches": 0,
+      "duration_ms": 101656,
+      "duration_complete": true
+    }
+  },
+  "acceptance": {
+    "minimum_valid_sources": 19,
+    "minimum_core_field_agreement": 0.9,
+    "unsupported_fields_allowed": 0,
+    "note": "Agreement is not ground truth. Any disagreement or unsupported field stays in review; production gates remain mandatory."
+  },
+  "core_field_agreement": 0.775,
+  "disagreements": [
+    {
+      "source": "sample-01",
+      "field": "amount"
+    },
+    {
+      "source": "sample-02",
+      "field": "round"
+    },
+    {
+      "source": "sample-03",
+      "field": "round"
+    },
+    {
+      "source": "sample-04",
+      "field": "amount"
+    },
+    {
+      "source": "sample-04",
+      "field": "round"
+    },
+    {
+      "source": "sample-09",
+      "field": "amount"
+    },
+    {
+      "source": "sample-09",
+      "field": "currency"
+    },
+    {
+      "source": "sample-09",
+      "field": "round"
+    },
+    {
+      "source": "sample-10",
+      "field": "round"
+    },
+    {
+      "source": "sample-11",
+      "field": "company"
+    },
+    {
+      "source": "sample-11",
+      "field": "currency"
+    },
+    {
+      "source": "sample-12",
+      "field": "company"
+    },
+    {
+      "source": "sample-13",
+      "field": "round"
+    },
+    {
+      "source": "sample-14",
+      "field": "amount"
+    },
+    {
+      "source": "sample-14",
+      "field": "round"
+    },
+    {
+      "source": "sample-16",
+      "field": "amount"
+    },
+    {
+      "source": "sample-18",
+      "field": "currency"
+    },
+    {
+      "source": "sample-19",
+      "field": "company"
+    }
+  ],
+  "spark_passed": false,
+  "selected_model": "deepseek-v4-flash"
+}

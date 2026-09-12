@@ -184,6 +184,15 @@ export function publicEventSourceUrlIssue(value) {
   }
 }
 
+export function historicalFundingAuthorized(raw, artifact, policy = {}) {
+  const day = cleanString(raw.published_at).slice(0, 10);
+  return policy.schema_version === "CHINA-FUNDING-HISTORY-AUTHORIZATION-V1.0"
+    && raw.acquisition_channel === "china-funding"
+    && /^\d{4}-\d{2}-\d{2}$/u.test(day)
+    && day >= policy.from && day <= policy.to
+    && Array.isArray(policy.source_refs) && policy.source_refs.includes(artifact.source_artifact_id);
+}
+
 function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {}) {
   const rawQcDecision = cleanString(raw.raw_qc_decision).toLocaleLowerCase();
   const extractionQuality = cleanString(raw.extraction_quality).toLocaleLowerCase();
@@ -1776,6 +1785,8 @@ function forbiddenKeys(value, trail = "", out = []) {
 }
 
 export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString(), options = {}) {
+  const historicalFundingPolicy = options.historicalFundingPolicy
+    || readJson(path.join(outputRoot, date, "historical-funding-authorization.json"), {});
   const sourceArtifacts = [];
   const rawDocuments = [];
   const claims = [];
@@ -1842,12 +1853,12 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const proposedModelClaim = normalizedModelProposal.primary;
     const sourceEligibility = eventSourceEligibility(raw, artifact, title, date, {
       eventType: candidateDeterministicRule?.eventType || proposedModelClaim?.event_type || "",
-      allowHistoricalFunding: options.allowHistoricalFunding === true,
+      allowHistoricalFunding: options.allowHistoricalFunding === true || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
     });
     const deterministicRule = sourceEligibility.accepted ? candidateDeterministicRule : null;
     const proposedModelEligibility = proposedModelClaim
       ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date, {
-          allowHistoricalFunding: options.allowHistoricalFunding === true,
+          allowHistoricalFunding: options.allowHistoricalFunding === true || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
         })
       : { accepted: true, reason: "" };
     const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted
