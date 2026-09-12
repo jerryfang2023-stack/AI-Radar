@@ -1,5 +1,6 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
+import { chinaFundingSourceDate } from "./china-funding-source-date.mjs";
 import path from "node:path";
 import { loadPrivateEvidenceRecord } from "./private-evidence-store.mjs";
 import { loadSourceTitleTranslations, titleTranslationKey, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
@@ -101,7 +102,7 @@ export function applyIntakeTitleMetadata(raw = {}, document = {}, approvedTransl
       title_translation_status: "translated",
       title_translation_method: "source_title_translation_db",
     } : {}),
-    published_at: clean(document.published_at) || clean(raw.published_at),
+    published_at: clean(document.published_at) || clean(raw.published_at) || chinaFundingSourceDate(raw),
     source_registry_id: clean(marketScope.source_registry_id) || clean(raw.source_registry_id),
     source_region: clean(marketScope.source_region) || clean(raw.source_region),
     market_region: clean(marketScope.market_region) || clean(raw.market_region),

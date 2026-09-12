@@ -191,6 +191,9 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
     return { accepted: false, reason: "raw_source_quality_block" };
   }
   const publishedDate = cleanString(raw.published_at).slice(0, 10);
+  if (raw.acquisition_channel === "china-funding" && !/^\d{4}-\d{2}-\d{2}$/u.test(publishedDate)) {
+    return { accepted: false, reason: "domestic_publication_date_unverified" };
+  }
   const captureDate = cleanString(dataDate).slice(0, 10);
   if (/^\d{4}-\d{2}-\d{2}$/u.test(publishedDate) && /^\d{4}-\d{2}-\d{2}$/u.test(captureDate)) {
     const ageDays = Math.floor(
