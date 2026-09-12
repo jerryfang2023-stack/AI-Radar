@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "node": {
@@ -126,6 +126,7 @@
       "EV-c5643983538c6513",
       "EV-c8928410f6c145eb",
       "EV-c4303801ea8c54dc",
+      "EV-800b02f5bfef357d",
       "EV-acdeebead5324344",
       "EV-d5aa723446feebbb",
       "EV-23ae55daa341be06",
@@ -665,6 +666,7 @@
       "EN-da41c71b4dbc3956",
       "EN-f5cfcb570b7edac2",
       "EN-950de6ef17ca48ae",
+      "EN-e24f99182b7a0afd",
       "EN-5b3767eb23d5e4ed",
       "EN-c08f86842ff2c908",
       "EN-50e2a4156631df49",
@@ -33271,6 +33273,88 @@
       "publisher": "vireo.vc"
     },
     {
+      "id": "EV-800b02f5bfef357d",
+      "dataDate": "2026-09-12",
+      "date": "2026-05-08",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "未来智能融资亿元级，传音投了 - 投资界",
+      "originalTitle": "首发|未来智能融资亿元级，传音投了 - 投资界",
+      "subject": "首发|未来智能",
+      "action": "融资",
+      "object": "亿元级，传音投了 - 投资界",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e24f99182b7a0afd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e24f99182b7a0afd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e24f99182b7a0afd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e24f99182b7a0afd",
+        "EN-5a28a1a99a417ba5"
+      ],
+      "entityNames": [
+        "首发|未来智能",
+        "Ant Group"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202605/563554.shtml",
+      "publisher": "投资界"
+    },
+    {
       "id": "EV-acdeebead5324344",
       "dataDate": "2026-07-25",
       "date": "2026-03-30",
@@ -35651,7 +35735,9 @@
         {
           "name": "V4 Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/990/002.htm",
@@ -53471,7 +53557,9 @@
         {
           "name": "Harness",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/989/446.htm",
@@ -79713,7 +79801,7 @@
           "name": "DeepSeek-V3.2",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "DeepSeek"
           ]
         }
       ],
@@ -89077,7 +89165,7 @@
           "name": "Mozilla 2026",
           "type": "产品/服务",
           "ownerNames": [
-            "Xiaomi"
+            "DeepSeek"
           ]
         }
       ],
@@ -92835,6 +92923,27 @@
       "lastSeen": "2026-06-15"
     },
     {
+      "id": "EN-e24f99182b7a0afd",
+      "name": "首发|未来智能",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-800b02f5bfef357d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-08",
+      "lastSeen": "2026-09-12"
+    },
+    {
       "id": "EN-5b3767eb23d5e4ed",
       "name": "Qodo",
       "entityType": "organization_candidate",
@@ -93395,6 +93504,7 @@
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
         "EV-56da7cceeebc8bcf",
+        "EV-24d8bc9824f525a5",
         "EV-cec68369662236fd",
         "EV-caffb8981cecae2f",
         "EV-2d9fde7bc0cd7a22",
@@ -93562,7 +93672,9 @@
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
+        "EV-77f98075e25f6fdf",
         "EV-acdeebead5324344",
+        "EV-68d5a02e5213b43c",
         "EV-2bb9ea947e9541c3",
         "EV-87f31c71f040785a",
         "EV-4965305d57edf6dd",
@@ -93984,11 +94096,13 @@
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
+        "TX-use_case-content_creation",
         "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -94885,6 +94999,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-68d5a02e5213b43c",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
         "EV-b93b6abf31662339",
@@ -95094,8 +95209,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-ai_market_application-chips",
@@ -96267,8 +96382,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
@@ -97186,8 +97301,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-product_form-end_user_application",
@@ -97362,6 +97477,7 @@
         "EV-4dfd7233c8c69b0b",
         "EV-657837763764c869",
         "EV-388a53fe918389b0",
+        "EV-5056b2f94d188dd6",
         "EV-c44f8fbab9e200ca",
         "EV-59b7ba3d079ad09a",
         "EV-3aefbdfa5df2fd6a",
@@ -99125,6 +99241,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-49779b04267ac3b9",
         "EV-97fdf068afbbe555",
         "EV-47a84a0f1a85c29c",
         "EV-6c361125c3f50bb6",
@@ -99155,8 +99272,8 @@
       "relatedEntityIds": [
         "EN-4f96127fdacbb405"
       ],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-08-18"
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-42f0b44cc91cc5e0",

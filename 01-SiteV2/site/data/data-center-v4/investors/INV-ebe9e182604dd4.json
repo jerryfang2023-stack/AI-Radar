@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "institution": {
@@ -20,21 +20,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
+    "china_market_activity_count": 2,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-04-16",
+    "latest_disclosed_at": "2026-04-17",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 1
     },
     "round_codes": [
+      "multi_round",
       "pre_series_a"
     ],
     "portfolio_companies": [
@@ -45,6 +46,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-48bbb63c7d8202df",
+        "funding_insight_id": "FI-4fc582e4cb435dd8",
+        "event_ids": [
+          "EV-81810a440198ac3c"
+        ],
+        "company_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_name": "它石智航",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "4.55亿美金",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 455000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.55 亿美元"
+        },
+        "announced_at": "2026-04-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b4d6b7523ee32ad7",
+            "source_url": "https://news.pedaily.cn/202604/562863.shtml",
+            "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+            "source_content_hash": "0f321e5ffc10ea03",
+            "quote": "美团战投作为公司重要的基石战略股东重额加注并继续联合领投",
+            "quote_hash": "bb64e995f8708cef53c3d8488c01abae6c7735f25099917c12549f696dfe23c0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6196b8b356a2f9a0",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
@@ -127,6 +168,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b4d6b7523ee32ad7",
+        "source_url": "https://news.pedaily.cn/202604/562863.shtml",
+        "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+        "source_content_hash": "0f321e5ffc10ea03",
+        "quote": "美团战投作为公司重要的基石战略股东重额加注并继续联合领投",
+        "quote_hash": "bb64e995f8708cef53c3d8488c01abae6c7735f25099917c12549f696dfe23c0"
+      },
       {
         "source_id": "FISRC-f4259d29fd364076",
         "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",

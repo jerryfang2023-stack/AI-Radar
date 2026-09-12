@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "entity": {
@@ -28,10 +28,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-f2cf4184889d43bb"
+    ],
     "firstSeen": "2026-07-19",
     "lastSeen": "2026-07-20",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-2fb7b448b8d07ab4"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -76,8 +80,53 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-f2cf4184889d43bb",
+      "name": "Enflame",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "燧原科技"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5056b2f94d188dd6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-0b706b4b95ba647c"
+      ],
+      "firstSeen": "2026-09-11",
+      "lastSeen": "2026-09-12"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-2fb7b448b8d07ab4",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-f2cf4184889d43bb",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0b706b4b95ba647c",
+      "object_type": "entity",
+      "event_id": "EV-218c2f6ecf3c369f",
+      "claim_refs": [
+        "CL-bef992849f6c8110",
+        "CL-4acaacad906c6cc7",
+        "CL-23db5f68b34959d3"
+      ],
+      "source_refs": [
+        "SA-0729ccc28efa48d9"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [

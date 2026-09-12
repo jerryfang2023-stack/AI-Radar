@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-12T02:20:56.737Z",
+    "generated_at": "2026-09-12T07:22:55.594Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 314,
-    "input_hash": "4391e42f0169b56a",
+    "decision_count": 318,
+    "input_hash": "3c4d7eb7c3d69382",
     "override_count": 17,
-    "needs_review_count": 10,
-    "low_confidence_count": 17
+    "needs_review_count": 11,
+    "low_confidence_count": 18
   },
   "decisions": [
     {
@@ -6181,25 +6181,6 @@
       "rationale": "Devin和Windsurf直接面向开发者完成编码、调试、漏洞排查等软件工程任务，属于跨行业的软件开发编码企业应用，而非基础设施或物理AI。"
     },
     {
-      "event_id": "EV-7532c5a950295e97",
-      "market_category_id": "industry_applications",
-      "market_subcategory_id": "healthcare_life_sciences",
-      "market_application_id": "",
-      "product_form_id": "enterprise_software_platform",
-      "use_case_ids": [
-        "research_discovery"
-      ],
-      "industry_ids": [
-        "healthcare_life_sciences"
-      ],
-      "target_user_ids": [
-        "researcher"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "公司专注AI驱动新药研发，产品围绕制药行业的专业数据与研发流程构建，属于行业应用而非通用基础设施或跨行业企业应用。"
-    },
-    {
       "event_id": "EV-cf9e968f38db7796",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
@@ -6215,6 +6196,106 @@
       "confidence": 0.7,
       "needs_review": true,
       "rationale": "证据显示核心产品SREAgent是面向运维领域的垂直AI Agent，属于跨行业的IT运维工作流，而非单一行业专属数据或物理AI，因此归入企业应用的生产力/企业工作流。但证据未明确客户行业，且运维也可视为开发者工具，边界存在不确定性。"
+    },
+    {
+      "event_id": "EV-bb583c256483bcf1",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "证据显示N++平台提供AI原生能力节点仓库，用户通过自然语言驱动智能体完成复杂任务的编排与执行，属于面向AI开发者的开发部署基础设施，而非单一行业应用或物理AI。"
+    },
+    {
+      "event_id": "EV-81810a440198ac3c",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "它石智航以物理世界AI和通用机器人技术为核心，发布具身大模型并自研机器人本体，产品直接通过机器人感知、决策并作用于物理世界，符合物理AI定义。"
+    },
+    {
+      "event_id": "EV-59d5ab345e77ee7f",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "marketing",
+        "content_creation",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "智推时代定位AI营销科技公司，GENO系统覆盖AI搜索监测、品牌语义分析、内容策略生成等营销环节，属于跨行业的企业营销应用。"
+    },
+    {
+      "event_id": "EV-68d5a02e5213b43c",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows",
+        "content_creation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer",
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示ChatGPT为面向消费者的端到端应用，Codex面向开发者，但未明确单一行业或基础设施定位，跨行业生产力工具属性更明显，需复核其企业应用子类。"
+    },
+    {
+      "event_id": "EV-7532c5a950295e97",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司专注AI驱动新药研发，产品覆盖靶点研究、分子设计、实验验证及临床数据分析等制药关键环节，属于围绕医疗健康行业专业数据与工作流的行业应用，而非通用基础设施或跨行业企业应用。"
     }
   ],
   "inputs": [
@@ -6394,20 +6475,20 @@
       "current_sector": "AI制药",
       "company_evidence_quotes": [
         "专注于AI驱动新药研发的科技公司——德睿智药（MindRank）",
-        "中国杭州， 2026 年 7 月 8 日 ，专注于 AI 驱动新药研发的科技公司——德睿智药（ MindRank ）"
+        "杭州， 2026 年 7 月 8 日 ，专注于 AI 驱动新药研发的科技公司"
       ],
       "products": [
         {
           "name": "MAP（Molecule Arts Platform）",
           "evidence_quotes": [
-            "公司自研全链路AI制药引擎MAP（Molecule Arts Platform）的深度技术迭代，持续完善其业内领先的多智能体（Multi-Agent）协同体系与临床数据闭环（Clinical Data-in-the-Loop）",
-            "Molecule Arts Platform（下称“MAP”）平台共分为3层架构：第一层是AI设计层，整合了公司自研的PharmkGPT生物学平台、Molecule Pro小分子制药平台和Molecule Dance结构生物学平台"
+            "该平台覆盖靶点研究、分子设计、多参数优化、实验验证及临床数据分析等制药产业关键环节",
+            "Molecule Arts Platform（下称“MAP”）平台共分为3层架构"
           ]
         },
         {
           "name": "MDR-001",
           "evidence_quotes": [
-            "公司首发管线——口服GLP-1RA小分子创新药MDR-001，已于2025年正式进入Ⅲ期临床研究，为中国首个推进至Ⅲ期临床阶段的AI赋能一类创新药"
+            "口服GLP-1RA小分子创新药MDR-001，已于2025年正式进入Ⅲ期临床研究，为中国首个推进至Ⅲ期临床阶段的AI赋能一类创新药"
           ]
         }
       ],
@@ -7108,6 +7189,31 @@
       }
     },
     {
+      "event_id": "EV-bb583c256483bcf1",
+      "funding_insight_id": "FI-c32bf74ed2f82989",
+      "company_name": "深圳超维探索科技有限公司",
+      "company_full_name": "深圳超维探索科技有限公司",
+      "website": "www.npphub.com",
+      "current_sector": "AI基础设施与开发部署",
+      "company_evidence_quotes": [
+        "深圳超维探索科技有限公司N++(NppStudio,超维探索）宣布，完成由 倚锋资本和深圳世钦投资 的数千万元种子轮融资。"
+      ],
+      "products": [
+        {
+          "name": "N++平台系统",
+          "evidence_quotes": [
+            "N++平台系统于2026年4月15日上线（官网：www.npphub.com），其节点仓库已积累500余个经过验证、高度抽象且去冗余的AI原生能力节点，已覆盖数据科学、算法模型开发、Office、图表制作等软件的AI原生等效功能。",
+            "用户只需通过自然语言与AI交互，即可驱动智能体（Agent）自主完成无限复杂任务的“语义蓝图”计划和“工程化编排”执行，全程可视、可控、可回滚、可审计。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-e54bfac94961f4d2",
       "funding_insight_id": "FI-7ab08fda67c9a702",
       "company_name": "深圳忆纪元科技有限公司",
@@ -7207,6 +7313,43 @@
         "苏州某汽车制造工厂",
         "天海汽车电子集团股份有限公司"
       ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-81810a440198ac3c",
+      "funding_insight_id": "FI-88e036d6ada58f4b",
+      "company_name": "它石智航",
+      "company_full_name": "它石智航",
+      "website": "",
+      "current_sector": "具身智能",
+      "company_evidence_quotes": [
+        "它石智航成立于 2025 年 2 月，以物理世界 AI 和通用机器人技术为核心，目标是构建可信赖的超级具身智能系统，让高性能 AI 规模化地融入人类社会的生产与生活中。"
+      ],
+      "products": [
+        {
+          "name": "AWE3.0",
+          "evidence_quotes": [
+            "AWE 3.0 ，全称AI World Engine，即「AI世界引擎」。",
+            "它石发布全球首个能干活的通用具身大模型 AWE3.0，其包括视触觉世界模型 OmniVTA，进一步赋予了机器人对物理世界的深度感知和理解能力"
+          ]
+        },
+        {
+          "name": "SenseHub",
+          "evidence_quotes": [
+            "为保障数据优质精细，它石智航还自主研发SenseHub数据采集系统。劳动者只需戴上一双手套，一个能够固定在胸部或头部的第一视角摄像头，就能完成高质量的自然真实人类行为数据采集。"
+          ]
+        },
+        {
+          "name": "A系列和T系列机器人本体",
+          "evidence_quotes": [
+            "它石也是业内罕见坚持全栈硬件自研的具身智能企业：从关节、灵巧手到机器人本体全面自研，目前，根据双足和轮式不同形态，它石智航已打造A和T两个系列机器人本体。"
+          ]
+        }
+      ],
+      "customer_names": [],
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
@@ -7454,6 +7597,30 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-59d5ab345e77ee7f",
+      "funding_insight_id": "FI-97a057b4552245c1",
+      "company_name": "智推时代GenOptima",
+      "company_full_name": "智推时代GenOptima",
+      "website": "",
+      "current_sector": "AI营销科技",
+      "company_evidence_quotes": [
+        "AI营销科技公司智推时代GenOptima（简称“智推时代”）宣布完成数千万元天使轮融资"
+      ],
+      "products": [
+        {
+          "name": "GENO系统",
+          "evidence_quotes": [
+            "支撑业务的是其自研的GENO系统，以“垂类智能体矩阵+专家模型”双引擎Agent架构为基础，覆盖AI搜索监测、品牌语义分析、问答场景建模、内容策略生成、效果追踪与模型适配等多个环节。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -12884,6 +13051,41 @@
         "Bitwarden",
         "Ramp",
         "University of California, San Diego"
+      ],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-68d5a02e5213b43c",
+      "funding_insight_id": "FI-9e9876e63b8ca5f3",
+      "company_name": "OpenAI",
+      "company_full_name": "OpenAI",
+      "website": "https://openai.com/",
+      "current_sector": "人工智能",
+      "company_evidence_quotes": [
+        "2月27日晚，OpenAI宣布获得新融资 1100亿美元",
+        "Today we’re announcing $110B in new investment at a $730B pre-money valuation."
+      ],
+      "products": [
+        {
+          "name": "ChatGPT",
+          "evidence_quotes": [
+            "ChatGPT周活用户已经 突破9亿 ，月访问量约为 57.2亿次 ，个人订阅用户超5000万",
+            "ChatGPT is where people start with AI, with more than 900M weekly active users, and we now have more than 50 million consumer subscribers."
+          ]
+        },
+        {
+          "name": "Codex",
+          "evidence_quotes": [
+            "Codex 让每一位开发者都能拥有顶尖工程师般的编程能力。自今年年初以来，Codex 的周活跃用户数已增至三倍多，达到 160 万。",
+            "Weekly Codex users have more than tripled since the start of the year to 1.6M."
+          ]
+        }
+      ],
+      "customer_names": [
+        "BBVA"
       ],
       "current_classification": {
         "product_form_id": "end_user_application",

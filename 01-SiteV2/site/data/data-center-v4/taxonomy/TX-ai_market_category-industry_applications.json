@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "node": {
@@ -6735,6 +6735,18 @@
           {
             "dimensionId": "use_case",
             "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-ed8ff30f2dcaf9d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-95f35638c999655e",
+            "fundingInsightId": "FI-446942ef720229aa"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
             "id": "research_discovery",
             "name": "科研与发现",
             "entityIds": [
@@ -6761,6 +6773,18 @@
         ],
         "deployment_model": [],
         "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-ed8ff30f2dcaf9d6"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-acdba32063123d44",
+            "fundingInsightId": "FI-446942ef720229aa"
+          },
           {
             "dimensionId": "target_user",
             "dimensionName": "目标用户",
@@ -6827,6 +6851,18 @@
         {
           "dimensionId": "target_user",
           "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-acdba32063123d44",
+          "fundingInsightId": "FI-446942ef720229aa"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
           "id": "researcher",
           "name": "研究人员",
           "entityIds": [
@@ -6834,6 +6870,18 @@
           ],
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-aaf7cf419e90a7f0",
+          "fundingInsightId": "FI-446942ef720229aa"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-95f35638c999655e",
           "fundingInsightId": "FI-446942ef720229aa"
         },
         {
@@ -6889,6 +6937,18 @@
         {
           "dimensionId": "use_case",
           "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-95f35638c999655e",
+          "fundingInsightId": "FI-446942ef720229aa"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
           "id": "research_discovery",
           "name": "科研与发现",
           "entityIds": [
@@ -6908,6 +6968,18 @@
           ],
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-af7a9e325132a711",
+          "fundingInsightId": "FI-446942ef720229aa"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-ed8ff30f2dcaf9d6"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-acdba32063123d44",
           "fundingInsightId": "FI-446942ef720229aa"
         },
         {
@@ -15139,6 +15211,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-industry_applications",
         "TX-target_user-researcher",

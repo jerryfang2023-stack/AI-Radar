@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-12T02:20:56.737Z",
+    "generated_at": "2026-09-12T07:22:55.594Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 314,
-    "input_hash": "4391e42f0169b56a",
+    "decision_count": 318,
+    "input_hash": "3c4d7eb7c3d69382",
     "override_count": 17,
-    "needs_review_count": 10,
-    "low_confidence_count": 17
+    "needs_review_count": 11,
+    "low_confidence_count": 18
   },
   "decisions": [
     {
@@ -6181,25 +6181,6 @@
       "rationale": "Devin和Windsurf直接面向开发者完成编码、调试、漏洞排查等软件工程任务，属于跨行业的软件开发编码企业应用，而非基础设施或物理AI。"
     },
     {
-      "event_id": "EV-7532c5a950295e97",
-      "market_category_id": "industry_applications",
-      "market_subcategory_id": "healthcare_life_sciences",
-      "market_application_id": "",
-      "product_form_id": "enterprise_software_platform",
-      "use_case_ids": [
-        "research_discovery"
-      ],
-      "industry_ids": [
-        "healthcare_life_sciences"
-      ],
-      "target_user_ids": [
-        "researcher"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "公司专注AI驱动新药研发，产品围绕制药行业的专业数据与研发流程构建，属于行业应用而非通用基础设施或跨行业企业应用。"
-    },
-    {
       "event_id": "EV-cf9e968f38db7796",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
@@ -6215,6 +6196,106 @@
       "confidence": 0.7,
       "needs_review": true,
       "rationale": "证据显示核心产品SREAgent是面向运维领域的垂直AI Agent，属于跨行业的IT运维工作流，而非单一行业专属数据或物理AI，因此归入企业应用的生产力/企业工作流。但证据未明确客户行业，且运维也可视为开发者工具，边界存在不确定性。"
+    },
+    {
+      "event_id": "EV-bb583c256483bcf1",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "证据显示N++平台提供AI原生能力节点仓库，用户通过自然语言驱动智能体完成复杂任务的编排与执行，属于面向AI开发者的开发部署基础设施，而非单一行业应用或物理AI。"
+    },
+    {
+      "event_id": "EV-81810a440198ac3c",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "它石智航以物理世界AI和通用机器人技术为核心，发布具身大模型并自研机器人本体，产品直接通过机器人感知、决策并作用于物理世界，符合物理AI定义。"
+    },
+    {
+      "event_id": "EV-59d5ab345e77ee7f",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "marketing",
+        "content_creation",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "智推时代定位AI营销科技公司，GENO系统覆盖AI搜索监测、品牌语义分析、内容策略生成等营销环节，属于跨行业的企业营销应用。"
+    },
+    {
+      "event_id": "EV-68d5a02e5213b43c",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows",
+        "content_creation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer",
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "证据显示ChatGPT为面向消费者的端到端应用，Codex面向开发者，但未明确单一行业或基础设施定位，跨行业生产力工具属性更明显，需复核其企业应用子类。"
+    },
+    {
+      "event_id": "EV-7532c5a950295e97",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司专注AI驱动新药研发，产品覆盖靶点研究、分子设计、实验验证及临床数据分析等制药关键环节，属于围绕医疗健康行业专业数据与工作流的行业应用，而非通用基础设施或跨行业企业应用。"
     }
   ]
 }

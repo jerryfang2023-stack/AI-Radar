@@ -160,7 +160,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "CINT",
         "label": "社群情报",
-        "value": "CINT-V1.1.0-scys-mcp-feishu",
+        "value": "CINT-V1.2.0-source-subcolumns",
         "category": "数据中心",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -357,8 +357,8 @@ window.WaveSightOpsConsole = {
       }
     ],
     "skills": {
-      "total": 285,
-      "generatedAt": "2026-09-12 11:33:02",
+      "total": 288,
+      "generatedAt": "2026-09-12 12:41:40",
       "sources": [
         {
           "id": "AIP/.agents/skills",
@@ -404,7 +404,7 @@ window.WaveSightOpsConsole = {
           "id": "plugin-cache",
           "label": "插件缓存（不代表当前启用）",
           "available": true,
-          "count": 101
+          "count": 104
         }
       ],
       "platforms": [
@@ -504,8 +504,8 @@ window.WaveSightOpsConsole = {
         {
           "id": "shared",
           "label": "通用 / 未分配",
-          "count": 242,
-          "sharedCount": 242,
+          "count": 245,
+          "sharedCount": 245,
           "projectCount": 0,
           "sources": []
         }
@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.7.0-china-funding-quality",
-    "generatedAt": "2026-09-12T04:36:05.100Z",
+    "generatedAt": "2026-09-12T07:24:04.225Z",
     "date": "2026-09-12",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1716,7 +1716,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-12T04:36:05.093Z",
+      "updatedAt": "2026-09-12T07:24:04.211Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1779,16 +1779,16 @@ window.WaveSightOpsConsole = {
         {
           "id": "china-funding",
           "label": "china-funding",
-          "total": 32,
+          "total": 193,
           "eligibleRate": 100,
-          "fullTextRate": 69,
-          "highQualityRate": 25,
-          "readabilityScore": 50,
-          "factHitRate": 16,
-          "acceptedClaims": 14,
-          "canonicalEvents": 7,
-          "score": 59,
-          "grade": "待改善"
+          "fullTextRate": 68,
+          "highQualityRate": 38,
+          "readabilityScore": 53,
+          "factHitRate": 15,
+          "acceptedClaims": 66,
+          "canonicalEvents": 35,
+          "score": 61,
+          "grade": "中"
         }
       ]
     },
@@ -2112,7 +2112,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "CINT",
         "label": "社群情报",
-        "value": "CINT-V1.1.0-scys-mcp-feishu",
+        "value": "CINT-V1.2.0-source-subcolumns",
         "category": "数据中心",
         "source": "context/version-ledger.md",
         "status": "仓库基线",

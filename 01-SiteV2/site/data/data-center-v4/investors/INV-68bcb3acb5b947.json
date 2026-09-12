@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2875,
+    "quarantinedEventCount": 26
+  },
+  "institution": {
+    "id": "INV-68bcb3acb5b947",
+    "name": "倚锋资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-04-13",
+    "latest_disclosed_at": "2026-04-13",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-99489e67d8066af7",
+        "canonical_entity_id": "",
+        "name": "深圳超维探索科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-f0da6b2157f8312e",
+        "funding_insight_id": "FI-9e55bbc06fe04c51",
+        "event_ids": [
+          "EV-bb583c256483bcf1"
+        ],
+        "company_entity_id": "EN-99489e67d8066af7",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳超维探索科技有限公司",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-04-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-276ec5e8421f5ecd",
+            "source_url": "https://www.donews.com/news/detail/4/6514734.html",
+            "source_title": "超维探索N++完成数千万元种子轮融资，推进通用AI操作系统开发- DoNews",
+            "source_content_hash": "520e88ca3841b4b9",
+            "quote": "深圳超维探索科技有限公司（NppStudio，简称N++）宣布完成由倚锋资本和深圳世钦投资联合领投的数千万元种子轮融资。",
+            "quote_hash": "5f098a62368aed7148081716b624e20866af612bf2c278fbc3ad575f03bda726"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-276ec5e8421f5ecd",
+        "source_url": "https://www.donews.com/news/detail/4/6514734.html",
+        "source_title": "超维探索N++完成数千万元种子轮融资，推进通用AI操作系统开发- DoNews",
+        "source_content_hash": "520e88ca3841b4b9",
+        "quote": "深圳超维探索科技有限公司（NppStudio，简称N++）宣布完成由倚锋资本和深圳世钦投资联合领投的数千万元种子轮融资。",
+        "quote_hash": "5f098a62368aed7148081716b624e20866af612bf2c278fbc3ad575f03bda726"
+      }
+    ]
+  }
+}

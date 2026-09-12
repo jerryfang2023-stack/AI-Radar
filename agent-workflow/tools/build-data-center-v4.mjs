@@ -128,8 +128,12 @@ const GENERIC_ROUNDUP_TITLE = /投?融资(?:周报|月报|日报|盘点)|^硬科
 export function fundingClaimGroupingProblem(claims) {
   const subjects = new Set(claims.map((claim) => cleanString(claim.subject).toLocaleLowerCase()).filter(Boolean));
   if (subjects.size > 1) return "multiple_funding_recipients_require_separate_sources";
-  if (claims.length && claims.every((claim) => /累计|总融资|整个.{0,12}轮融资额/u.test(claim.source_quote || "")
-    && !/本轮|此次|新一轮/u.test(claim.source_quote || ""))) return "cumulative_funding_total_not_single_round";
+  if (claims.length && claims.every((claim) => {
+    const quote = claim.source_quote || "";
+    const namedRounds = new Set(quote.match(/(?:pre[- ]?)?[A-F][+＋]?轮|天使轮|种子轮/giu) || []);
+    // A disclosed total for one named round (including phased closes) is valid.
+    return /累计|总融资|整个.{0,12}轮融资额/u.test(quote) && !/本轮|此次|新一轮/u.test(quote) && namedRounds.size !== 1;
+  })) return "cumulative_funding_total_not_single_round";
   if ([...subjects].some((subject) => /^(?:\d+|[一二三四五六七八九十]+)轮$/u.test(subject))) return "funding_recipient_is_round_count";
   return "";
 }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T04:35:46.733Z",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2854,
+    "eventCount": 2875,
     "quarantinedEventCount": 26
   },
   "entity": {
@@ -24,6 +24,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-49779b04267ac3b9",
       "EV-97fdf068afbbe555",
       "EV-47a84a0f1a85c29c",
       "EV-6c361125c3f50bb6",
@@ -54,13 +55,15 @@
     "relatedEntityIds": [
       "EN-4f96127fdacbb405"
     ],
-    "firstSeen": "2026-06-01",
-    "lastSeen": "2026-08-18",
+    "firstSeen": "2026-01-12",
+    "lastSeen": "2026-09-12",
     "relationIds": [
       "REL2-fc89e0f24571bef8"
     ],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-49779b04267ac3b9"
+      ],
       "deployments": [
         "EV-97fdf068afbbe555",
         "EV-47a84a0f1a85c29c",
@@ -92,6 +95,57 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-49779b04267ac3b9",
+        "dataDate": "2026-09-12",
+        "date": "2026-01-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-13d488eb3ac425b4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-8dc72a4672894e0f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-13d488eb3ac425b4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-13d488eb3ac425b4",
+          "EN-8dc72a4672894e0f",
+          "EN-5388bc10736a0eff"
+        ]
+      },
       {
         "id": "EV-9766c0f1ac902595",
         "dataDate": "2026-08-18",
@@ -806,6 +860,7 @@
         "EV-c5643983538c6513",
         "EV-c8928410f6c145eb",
         "EV-c4303801ea8c54dc",
+        "EV-800b02f5bfef357d",
         "EV-acdeebead5324344",
         "EV-d5aa723446feebbb",
         "EV-23ae55daa341be06",
@@ -1345,6 +1400,7 @@
         "EN-da41c71b4dbc3956",
         "EN-f5cfcb570b7edac2",
         "EN-950de6ef17ca48ae",
+        "EN-e24f99182b7a0afd",
         "EN-5b3767eb23d5e4ed",
         "EN-c08f86842ff2c908",
         "EN-50e2a4156631df49",

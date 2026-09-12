@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2875,
+    "quarantinedEventCount": 26
+  },
+  "entity": {
+    "id": "EN-f2cf4184889d43bb",
+    "name": "Enflame",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [
+      "燧原科技"
+    ],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-5056b2f94d188dd6"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-0b706b4b95ba647c"
+    ],
+    "firstSeen": "2026-09-11",
+    "lastSeen": "2026-09-12",
+    "relationIds": [
+      "REL2-2fb7b448b8d07ab4"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-5056b2f94d188dd6"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-218c2f6ecf3c369f"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-5056b2f94d188dd6",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-11",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "DeepSeek开启科创板IPO",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f2cf4184889d43bb",
+          "EN-6f7ac1823da81d2e"
+        ]
+      },
+      {
+        "id": "EV-218c2f6ecf3c369f",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与 OEX 架构降低互联成本",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-e95cf508b2bef361"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e95cf508b2bef361",
+          "EN-4dbe391b8fcf977a",
+          "EN-0b706b4b95ba647c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-0b706b4b95ba647c",
+      "name": "云燧 ESL64-O 超节点",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "ESL64-O"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-218c2f6ecf3c369f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-f2cf4184889d43bb"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-2fb7b448b8d07ab4",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-f2cf4184889d43bb",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0b706b4b95ba647c",
+      "object_type": "entity",
+      "event_id": "EV-218c2f6ecf3c369f",
+      "claim_refs": [
+        "CL-bef992849f6c8110",
+        "CL-4acaacad906c6cc7",
+        "CL-23db5f68b34959d3"
+      ],
+      "source_refs": [
+        "SA-0729ccc28efa48d9"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

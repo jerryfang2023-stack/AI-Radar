@@ -1,10 +1,58 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-09-12T04:35:12.300Z",
+  "generated_at": "2026-09-12T07:17:01.911Z",
   "data_date": "2026-09-12",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 269,
+  "source_count": 430,
   "candidates": [
+    {
+      "candidate_id": "MAC-05283a81444e7d9a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-5a934b85fc2a0365",
+      "raw_id": "RAW-e2a20c182fee8c85",
+      "source_ref": "SA-7e36cee9c7aeac95",
+      "source_hash": "b3bfbc9daf63679e",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "旗下AI短剧协作平台AniShort",
+        "rationale": "AniShort is described as a platform that integrates DeepSeek among several AI models, not as DeepSeek or Tencent.",
+        "candidate_name": "旗下AI短剧协作平台AniShort"
+      },
+      "evidence": [
+        {
+          "start": 1098,
+          "end": 1163,
+          "quote": "在模型能力上，平台还满血集成Seedance2.0、Gemini、DeepSeek、Banana、Image2等全球顶级AI模型。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:17.232Z"
+    },
     {
       "candidate_id": "MAC-057b4eb9a104c211",
       "task_type": "entity_resolution",
@@ -224,6 +272,54 @@
       "generated_at": "2026-09-12T01:36:40.512Z"
     },
     {
+      "candidate_id": "MAC-0a532b07fbfe83dd",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-51cb2d61b4ad1251",
+      "raw_id": "RAW-d527f91e9556ab03",
+      "source_ref": "SA-e099ce09e84ad991",
+      "source_hash": "9a9848ce8e1f9685",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "乐聚机器人于10月",
+        "rationale": "The candidate refers to 乐聚机器人, which is not among the verified alternatives.",
+        "candidate_name": "乐聚机器人于10月"
+      },
+      "evidence": [
+        {
+          "start": 1459,
+          "end": 1503,
+          "quote": "乐聚机器人于10月完成近15亿元Pre-IPO轮融资，估值90亿元，并已启动IPO辅导。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:05.578Z"
+    },
+    {
       "candidate_id": "MAC-0bfbe3e94e1dfe1a",
       "task_type": "claim_extraction",
       "asset_id": "QA-3424d91a4e8103c3",
@@ -298,6 +394,108 @@
       "generated_at": "2026-09-12T04:26:18.370Z"
     },
     {
+      "candidate_id": "MAC-0c37c16d5eb684a3",
+      "task_type": "qa_repair",
+      "asset_id": "QA-8aae4fbf8a66fdac",
+      "raw_id": "RAW-4f4351d75b10e434",
+      "source_ref": "SA-d585dd933c17f756",
+      "source_hash": "f72e283369742c62",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "SOURCE_TEXT reports concrete financing activity by independent embodied-data service providers.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "15家“独立具身数据服务商”",
+            "object": "过去一年共完成34起融资，合计约44.7亿元人民币",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 3180,
+          "end": 3253,
+          "quote": "量子位不完全统计，过去一年间（2025年7月1日至2026年7月1日），这15家“独立具身数据服务商”共完成34起融资，合计约44.7亿元人民币。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:04:46.292Z"
+    },
+    {
+      "candidate_id": "MAC-0c5a739687dbbcb2",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-15eaa0b4cbb7ead3",
+      "raw_id": "RAW-e2a20c182fee8c85",
+      "source_ref": "SA-7e36cee9c7aeac95",
+      "source_hash": "b3bfbc9daf63679e",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "AI短剧工具赛道",
+        "rationale": "候选实体是一个赛道，不是DeepSeek或Tencent。",
+        "candidate_name": "AI短剧工具赛道"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 19,
+          "quote": "AI短剧工具赛道，年度最大单笔融资来了"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:06:40.494Z"
+    },
+    {
       "candidate_id": "MAC-0fccc87b2a64d5de",
       "task_type": "entity_resolution",
       "asset_id": "EN-6f7ac1823da81d2e",
@@ -338,6 +536,102 @@
         }
       ],
       "generated_at": "2026-09-12T04:26:38.264Z"
+    },
+    {
+      "candidate_id": "MAC-1398eaa5a64dcce3",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-3ee57b807d91aa43",
+      "raw_id": "RAW-e56b910ecc176a4b",
+      "source_ref": "SA-420cabd14e27c325",
+      "source_hash": "a3d55e3960392661",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）",
+        "rationale": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）宣布完成近亿元天使轮融资",
+        "candidate_name": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）"
+      },
+      "evidence": [
+        {
+          "start": 18,
+          "end": 62,
+          "quote": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）宣布完成近亿元天使轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:06.567Z"
+    },
+    {
+      "candidate_id": "MAC-1505b66cf73d21c4",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-51d3feaaa8072bc5",
+      "raw_id": "RAW-9cca5e1af85711e5",
+      "source_ref": "SA-34bec601301ded8a",
+      "source_hash": "38b0d26a979c4a8e",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "首发| 星动纪元两个月",
+        "rationale": "候选名称是文章标题片段；来源明确将“星动纪元”作为完成融资的公司，二者不是同一实体名称。",
+        "candidate_name": "首发| 星动纪元两个月"
+      },
+      "evidence": [
+        {
+          "start": 167,
+          "end": 183,
+          "quote": "星动纪元在两个月内密集融资25亿"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:03:07.808Z"
     },
     {
       "candidate_id": "MAC-1585e6a09b08fe10",
@@ -523,6 +817,176 @@
         }
       ],
       "generated_at": "2026-09-12T01:36:24.424Z"
+    },
+    {
+      "candidate_id": "MAC-1f66a26f793bfdae",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-62f2ee2aca2a6bc6",
+      "raw_id": "RAW-908ca5a2c9dfb4ba",
+      "source_ref": "SA-d2930101d527e40f",
+      "source_hash": "8483c6a00252dbed",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "半年内",
+        "rationale": "The mention is a time period, not any verified alternative.",
+        "candidate_name": "半年内"
+      },
+      "evidence": [
+        {
+          "start": 2501,
+          "end": 2511,
+          "quote": "半年内完成第二轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:03:31.057Z"
+    },
+    {
+      "candidate_id": "MAC-1f9a001622636ced",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-8fcc819b1afbcd71",
+      "raw_id": "RAW-e2a20c182fee8c85",
+      "source_ref": "SA-7e36cee9c7aeac95",
+      "source_hash": "b3bfbc9daf63679e",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "八点八数字旗下AI短剧协作平台AniShort",
+            "object": "完成近亿元融资，由北京泰中合领投，多家机构跟投，老股东全线加码",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "AniShort",
+            "object": "于2026年3月13日正式上线",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "本轮资金",
+            "object": "将主要用于技术研发、全球市场拓展与创作者生态建设，并重点攻坚AI短剧平台智能体研发",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 168,
+          "end": 220,
+          "quote": "旗下AI短剧协作平台AniShort完成近 亿元 融资，由北京泰中合领投，多家机构跟投，老股东全线加码。"
+        },
+        {
+          "start": 1858,
+          "end": 1894,
+          "quote": "2026年3月13日正式上线后，AniShort跑出了行业最陡增长曲线："
+        },
+        {
+          "start": 337,
+          "end": 383,
+          "quote": "本轮资金将主要用于技术研发、全球市场拓展与创作者生态建设，并重点攻坚AI短剧平台智能体研发。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:02:21.723Z"
+    },
+    {
+      "candidate_id": "MAC-27c7462bebcef868",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-a48c258bf2e67c66",
+      "raw_id": "RAW-ad2a234151d928b6",
+      "source_ref": "SA-dcdddc9d52eee151",
+      "source_hash": "593b526037e7dfe5",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "梅卡曼德",
+        "rationale": "VERIFIED_ALTERNATIVES为空，无法确认与已验证实体相同。",
+        "candidate_name": "梅卡曼德"
+      },
+      "evidence": [
+        {
+          "start": 31,
+          "end": 63,
+          "quote": "9月10日，梅卡曼德创始人、董事长兼CEO邵天兰在朋友圈接连发文"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:42.530Z"
     },
     {
       "candidate_id": "MAC-2862a07e590586a5",
@@ -1006,6 +1470,60 @@
       "generated_at": "2026-09-12T01:36:42.750Z"
     },
     {
+      "candidate_id": "MAC-304014992a687cb6",
+      "task_type": "qa_repair",
+      "asset_id": "QA-525c28c95260bd2c",
+      "raw_id": "RAW-5013274d58f0f853",
+      "source_ref": "SA-e9ab79e6b7488820",
+      "source_hash": "a23e028bf6021391",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "Source states a concrete AI-industry funding event.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "15家“独立具身数据服务商”",
+            "object": "过去一年间共完成34起融资，合计约44.7亿元人民币",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 3311,
+          "end": 3384,
+          "quote": "量子位不完全统计，过去一年间（2025年7月1日至2026年7月1日），这15家“独立具身数据服务商”共完成34起融资，合计约44.7亿元人民币。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:04:34.905Z"
+    },
+    {
       "candidate_id": "MAC-32c2613e80620e00",
       "task_type": "entity_resolution",
       "asset_id": "EN-ed1f4821373b0808",
@@ -1052,6 +1570,102 @@
         }
       ],
       "generated_at": "2026-09-12T04:26:57.934Z"
+    },
+    {
+      "candidate_id": "MAC-348df7e4b88fd14e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-2a7beff5b8287eeb",
+      "raw_id": "RAW-8ccbf5c937b51a48",
+      "source_ref": "SA-6156c54316c9db9f",
+      "source_hash": "dd88198550b67525",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "未来式智能",
+        "rationale": "The source identifies 未来式智能 as a company whose founders came from Alibaba, which is a relationship rather than identity.",
+        "candidate_name": "未来式智能"
+      },
+      "evidence": [
+        {
+          "start": 108,
+          "end": 160,
+          "quote": "这背后是一个大厂系团队——未来式智能创始人兼CEO杨劲松、CSO王骏、COO邹阳，均来自阿里巴巴达摩院。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:06:54.665Z"
+    },
+    {
+      "candidate_id": "MAC-3648fff3f115f183",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-847ab427c5809561",
+      "raw_id": "RAW-e56b910ecc176a4b",
+      "source_ref": "SA-420cabd14e27c325",
+      "source_hash": "a3d55e3960392661",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "新智具身",
+        "rationale": "候选实体指向新智具身，不是Alibaba或Meta；文中仅说明团队成员曾任职相关机构。",
+        "candidate_name": "首发| 让机器人拥有触觉"
+      },
+      "evidence": [
+        {
+          "start": 18,
+          "end": 62,
+          "quote": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）宣布完成近亿元天使轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:18.567Z"
     },
     {
       "candidate_id": "MAC-37462544a72df40a",
@@ -1416,6 +2030,71 @@
       "generated_at": "2026-09-12T04:26:52.588Z"
     },
     {
+      "candidate_id": "MAC-41ee07b0d758d79a",
+      "task_type": "qa_repair",
+      "asset_id": "QA-9689a6323853cef9",
+      "raw_id": "RAW-39113be18227fed6",
+      "source_ref": "SA-0fc41fa7a4b8b5e8",
+      "source_hash": "bf064fd49bb76fc2",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "SOURCE_TEXT reports a concrete AI-industry funding aggregate for independent embodied-data service providers.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "15家“独立具身数据服务商”",
+            "object": "过去一年间共完成34起融资，合计约44.7亿元人民币",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "光轮智能",
+            "object": "过去一年完成6起融资，共融资31亿元",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 3335,
+          "end": 3408,
+          "quote": "量子位不完全统计，过去一年间（2025年7月1日至2026年7月1日），这15家“独立具身数据服务商”共完成34起融资，合计约44.7亿元人民币。"
+        },
+        {
+          "start": 3649,
+          "end": 3682,
+          "quote": "这家公司过去一年完成6起融资，共融资31亿元，约占总融资额的七成。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:04:54.744Z"
+    },
+    {
       "candidate_id": "MAC-42d2e482e8751757",
       "task_type": "entity_resolution",
       "asset_id": "EN-d2afe28bf2ce379c",
@@ -1637,6 +2316,48 @@
       "generated_at": "2026-09-12T04:27:10.134Z"
     },
     {
+      "candidate_id": "MAC-473abc41e8df4329",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6e18df7c7be7afd2",
+      "raw_id": "RAW-2ac20447e2d26ce0",
+      "source_ref": "SA-4a2dc3d7a1c5a7c1",
+      "source_hash": "acb13b2860ac6a2a",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "奉劝各位AI视频玩家，要",
+        "rationale": "The candidate text is a title fragment and does not refer to ByteDance, Baidu, or Tencent.",
+        "candidate_name": "奉劝各位AI视频玩家，要"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:03:37.113Z"
+    },
+    {
       "candidate_id": "MAC-4842042dcf3f75fe",
       "task_type": "qa_repair",
       "asset_id": "QA-beae094933604790",
@@ -1815,6 +2536,45 @@
       "generated_at": "2026-09-12T01:36:10.746Z"
     },
     {
+      "candidate_id": "MAC-4b0c651d45a216d4",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-8f8d690526c8141d",
+      "raw_id": "RAW-8ae8b42978581e5e",
+      "source_ref": "SA-783c713e85670d31",
+      "source_hash": "1cf2d2166c708a82",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-09-12T07:02:17.541Z"
+    },
+    {
       "candidate_id": "MAC-4fed4c024d016748",
       "task_type": "entity_resolution",
       "asset_id": "EN-f0fa944bc088687b",
@@ -1863,6 +2623,176 @@
       "generated_at": "2026-09-12T04:27:02.281Z"
     },
     {
+      "candidate_id": "MAC-505775e9cb03bfe5",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-964f260c9a904091",
+      "raw_id": "RAW-6ac3fba0d8bce447",
+      "source_ref": "SA-6c14f978aecb3ea3",
+      "source_hash": "ad883726c9400e9d",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "爱诗科技",
+        "rationale": "Source lists 爱诗科技 and 生数科技 as separate companies.",
+        "candidate_name": "爱诗科技"
+      },
+      "evidence": [
+        {
+          "start": 304,
+          "end": 337,
+          "quote": "生数科技已经完成股份制改造，爱诗科技、演语科技先后传出赴港上市消息"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:29.224Z"
+    },
+    {
+      "candidate_id": "MAC-5111d5355e3e60e4",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c5456c9421743002",
+      "raw_id": "RAW-ad2a234151d928b6",
+      "source_ref": "SA-dcdddc9d52eee151",
+      "source_hash": "593b526037e7dfe5",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "银河通用",
+        "rationale": "VERIFIED_ALTERNATIVES为空，无法确认同一实体或不同实体。",
+        "candidate_name": "银河通用"
+      },
+      "evidence": [
+        {
+          "start": 279,
+          "end": 289,
+          "quote": "他直接点名了银河通用"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:58.890Z"
+    },
+    {
+      "candidate_id": "MAC-548c146fa8b4c98b",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-59e8737ce38a408b",
+      "raw_id": "RAW-d527f91e9556ab03",
+      "source_ref": "SA-e099ce09e84ad991",
+      "source_hash": "9a9848ce8e1f9685",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "乐聚机器人",
+            "object": "近15亿元Pre-IPO轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "hardware_deployment",
+            "subject": "智元机器人",
+            "object": "向中国移动交付200台人形机器人，用于各省展厅和营业厅部署",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "hardware_deployment",
+            "subject": "乐聚机器人",
+            "object": "对北汽越野车完成第100台全尺寸人形机器人交付",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1459,
+          "end": 1503,
+          "quote": "乐聚机器人于10月完成近15亿元Pre-IPO轮融资，估值90亿元，并已启动IPO辅导。"
+        },
+        {
+          "start": 1184,
+          "end": 1259,
+          "quote": "其中，最大金额的订单来自中国移动，金额高达 7800 万元，共 200 台人形机器人，据悉将在中国移动各省的展厅和营业厅部署，用于迎宾接待和讲解导购。"
+        },
+        {
+          "start": 1503,
+          "end": 1546,
+          "quote": "2025年1月17日，乐聚机器人已经完成了对北汽越野车第100台全尺寸人形机器人交付。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:02:02.073Z"
+    },
+    {
       "candidate_id": "MAC-57dc1a4c17c78997",
       "task_type": "entity_resolution",
       "asset_id": "EN-cb4754c48f8023d0",
@@ -1909,6 +2839,48 @@
         }
       ],
       "generated_at": "2026-09-12T04:26:50.198Z"
+    },
+    {
+      "candidate_id": "MAC-5da42ba0b0746bdb",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-bea167933b1ad61d",
+      "raw_id": "RAW-4628867c3e273b75",
+      "source_ref": "SA-3db38c343b749373",
+      "source_hash": "36eeadfe3f6c3f89",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "首发｜深圳开年首个百亿独角兽",
+        "rationale": "候选实体是文章标题，不是文中所述企业实体。",
+        "candidate_name": "首发｜深圳开年首个百亿独角兽"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:54.833Z"
     },
     {
       "candidate_id": "MAC-5fa5d9f0b51f6177",
@@ -2163,6 +3135,69 @@
       "generated_at": "2026-09-12T01:36:52.776Z"
     },
     {
+      "candidate_id": "MAC-635208f0f1effa9c",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-d8943bed645588fa",
+      "raw_id": "RAW-e56b910ecc176a4b",
+      "source_ref": "SA-420cabd14e27c325",
+      "source_hash": "a3d55e3960392661",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）",
+            "object": "近亿元天使轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "deployment",
+            "subject": "新智具身研发的触觉模型",
+            "object": "工业精细化操作场景试点",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 18,
+          "end": 62,
+          "quote": "上海新智具身智能科技有限公司（NeoteAI，简称“新智具身”）宣布完成近亿元天使轮融资"
+        },
+        {
+          "start": 1757,
+          "end": 1792,
+          "quote": "其研发的触觉模型已在工业精细化操作场景中落地试点，并斩获多个POC订单"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:02:36.280Z"
+    },
+    {
       "candidate_id": "MAC-69bac25cea7c1a88",
       "task_type": "entity_resolution",
       "asset_id": "EN-a01847b090a53c6e",
@@ -2285,6 +3320,54 @@
       "generated_at": "2026-09-12T01:36:18.799Z"
     },
     {
+      "candidate_id": "MAC-6d2de4caba7d44fc",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-23585a20337f6184",
+      "raw_id": "RAW-f63fe2fca6f8bc09",
+      "source_ref": "SA-a31c0df61337a512",
+      "source_hash": "31be603f5c41db60",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "累计",
+        "rationale": "该词在原文中作为副词使用，并非组织实体。",
+        "candidate_name": "累计"
+      },
+      "evidence": [
+        {
+          "start": 64,
+          "end": 82,
+          "quote": "这家公司累计完成约70亿元人民币融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:02:54.532Z"
+    },
+    {
       "candidate_id": "MAC-6f68b47cc72f2b75",
       "task_type": "claim_extraction",
       "asset_id": "QA-f8391e2489ead1ce",
@@ -2370,6 +3453,54 @@
         }
       ],
       "generated_at": "2026-09-12T04:26:45.638Z"
+    },
+    {
+      "candidate_id": "MAC-71f432156e3dadb1",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e037ba3a89f946da",
+      "raw_id": "RAW-0f21e7ec834d4aef",
+      "source_ref": "SA-ef636f668c13cece",
+      "source_hash": "e05c8959d36aa881",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "智平方",
+        "rationale": "候选名称以“智平方”开头，正文明确将其作为公司名称使用。",
+        "candidate_name": "智平方在7轮融资后，又"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 21,
+          "quote": "智平方在7轮融资后，又完成5轮B轮系列融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:04:01.357Z"
     },
     {
       "candidate_id": "MAC-7444dec093fd4363",
@@ -3067,6 +4198,102 @@
       "generated_at": "2026-09-12T01:36:41.658Z"
     },
     {
+      "candidate_id": "MAC-8e3672bbd5893500",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-52e509cf0c2a746c",
+      "raw_id": "RAW-321cc712da8d3c18",
+      "source_ref": "SA-2afc40bf5226f978",
+      "source_hash": "9d5879f0371a763a",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "深朴智能",
+        "rationale": "候选实体在原文中明确称为“深朴智能（Simple AI）”，不匹配任何已验证备选实体。",
+        "candidate_name": "深朴智能"
+      },
+      "evidence": [
+        {
+          "start": 30,
+          "end": 60,
+          "quote": "通用具身智能机器人企业「深朴智能（Simple AI）」宣布"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:03:18.124Z"
+    },
+    {
+      "candidate_id": "MAC-8ed04c29e5b55021",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-90596b71813a2ee2",
+      "raw_id": "RAW-4628867c3e273b75",
+      "source_ref": "SA-3db38c343b749373",
+      "source_hash": "36eeadfe3f6c3f89",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "智平方",
+        "rationale": "The candidate’s full name appears in the source as 智平方（AI² Robotics）.",
+        "candidate_name": "智平方（AI² Robotics）"
+      },
+      "evidence": [
+        {
+          "start": 32,
+          "end": 77,
+          "quote": "生产力型通用智能机器人公司智平方（AI² Robotics）宣布完成超10亿元B轮系列融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:28.757Z"
+    },
+    {
       "candidate_id": "MAC-8f24d441c85a1824",
       "task_type": "entity_resolution",
       "asset_id": "EN-10b106d9b0a27a4c",
@@ -3113,6 +4340,250 @@
         }
       ],
       "generated_at": "2026-09-12T04:26:27.342Z"
+    },
+    {
+      "candidate_id": "MAC-934f10c62f5bcb00",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-9e6887c94fe015e8",
+      "raw_id": "RAW-4628867c3e273b75",
+      "source_ref": "SA-3db38c343b749373",
+      "source_hash": "36eeadfe3f6c3f89",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "智平方（AI² Robotics）",
+            "object": "超10亿元B轮系列融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "procurement_contract",
+            "subject": "智平方",
+            "object": "与惠科签订3年1000台订单",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "hardware_capacity",
+            "subject": "智平方",
+            "object": "年产千台级能力",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 32,
+          "end": 77,
+          "quote": "生产力型通用智能机器人公司智平方（AI² Robotics）宣布完成超10亿元B轮系列融资"
+        },
+        {
+          "start": 2577,
+          "end": 2604,
+          "quote": "智平方与全球第三大面板厂商惠科签订的3年1000台订单"
+        },
+        {
+          "start": 2307,
+          "end": 2318,
+          "quote": "已具备年产千台级的能力"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:02:30.939Z"
+    },
+    {
+      "candidate_id": "MAC-9483aaa9f6e49217",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-3ad8cf57fae189e5",
+      "raw_id": "RAW-16ba96b8ed7f2b7d",
+      "source_ref": "SA-7159b930da750847",
+      "source_hash": "0f321e5ffc10ea03",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "高瓴红杉",
+        "rationale": "候选实体不等于任一已验证替代实体。",
+        "candidate_name": "高瓴红杉"
+      },
+      "evidence": [
+        {
+          "start": 219,
+          "end": 228,
+          "quote": "高瓴与红杉共同出现"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:03:05.013Z"
+    },
+    {
+      "candidate_id": "MAC-96609fbd0daf7832",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-a0080687df495006",
+      "raw_id": "RAW-0f21e7ec834d4aef",
+      "source_ref": "SA-ef636f668c13cece",
+      "source_hash": "e05c8959d36aa881",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "继2025年半年内连续",
+        "rationale": "The candidate is a phrase, not a verified entity mention.",
+        "candidate_name": "继2025年半年内连续"
+      },
+      "evidence": [
+        {
+          "start": 229,
+          "end": 250,
+          "quote": "继2025年半年内连续完成7轮数亿级融资后"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:03:45.573Z"
+    },
+    {
+      "candidate_id": "MAC-967305f3f1398e1a",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-48f808b3d30164a8",
+      "raw_id": "RAW-8ccbf5c937b51a48",
+      "source_ref": "SA-6156c54316c9db9f",
+      "source_hash": "dd88198550b67525",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "未来式智能",
+            "object": "完成Pre-A轮融资，新进投资方包括凡创资本、中关村资本、探元资本，老股东东证创新、麟阁创投跟投",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "未来式智能",
+            "object": "AI数字专家市场“袋袋”",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "product_release",
+            "subject": "未来式智能",
+            "object": "灵搭1.0",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 37,
+          "end": 107,
+          "quote": "国内AI Agent创业公司未来式智能宣布完成Pre-A轮融资，新进投资方包括凡创资本、中关村资本、探元资本，老股东东证创新、麟阁创投跟投。"
+        },
+        {
+          "start": 221,
+          "end": 256,
+          "quote": "未来式智能也带来了他们筹备已久的全新产品——AI数字专家市场“袋袋”。"
+        },
+        {
+          "start": 1015,
+          "end": 1051,
+          "quote": "三个月后，公司旗下产品灵搭1.0正式发布，支持复杂工作流与多智能体编排。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:01:46.947Z"
     },
     {
       "candidate_id": "MAC-984544a7976a011d",
@@ -3353,6 +4824,69 @@
         }
       ],
       "generated_at": "2026-09-12T01:36:54.762Z"
+    },
+    {
+      "candidate_id": "MAC-9c469565a4f46d6b",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-56afdb3c03c7ceb0",
+      "raw_id": "RAW-ad2a234151d928b6",
+      "source_ref": "SA-dcdddc9d52eee151",
+      "source_hash": "593b526037e7dfe5",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "ipo_listing",
+            "subject": "梅卡曼德",
+            "object": "在港股上市",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "ipo_listing",
+            "subject": "宇树科技",
+            "object": "登陆科创板",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 2498,
+          "end": 2525,
+          "quote": "9月1日，它以“具身智能眼脑手第一股”的标签在港股上市"
+        },
+        {
+          "start": 2361,
+          "end": 2386,
+          "quote": "8月19日，“人形机器人第一股”宇树科技登陆科创板"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:01:46.295Z"
     },
     {
       "candidate_id": "MAC-9cb41d11d113437a",
@@ -4074,6 +5608,80 @@
       "generated_at": "2026-09-12T04:26:29.633Z"
     },
     {
+      "candidate_id": "MAC-af77a5535411db17",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-1ef63dfbaaaa62c3",
+      "raw_id": "RAW-6ac3fba0d8bce447",
+      "source_ref": "SA-6c14f978aecb3ea3",
+      "source_hash": "ad883726c9400e9d",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "爱诗科技",
+            "object": "C轮延展融资，整个C轮融资额达到4.39亿美元",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "生数科技",
+            "object": "新一轮5亿美元融资",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "国家人工智能产业投资基金",
+            "object": "向北京可灵投资14亿元",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 488,
+          "end": 525,
+          "quote": "今年7月，爱诗科技宣布完成C轮延展融资，整个C轮融资额达到4.39亿美元；"
+        },
+        {
+          "start": 525,
+          "end": 544,
+          "quote": "同月，生数科技完成新一轮5亿美元融资。"
+        },
+        {
+          "start": 544,
+          "end": 576,
+          "quote": "到了8月底，国家人工智能产业投资基金又同意向北京可灵投资14亿元"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:01:33.613Z"
+    },
+    {
       "candidate_id": "MAC-b060f78f090248fd",
       "task_type": "entity_resolution",
       "asset_id": "EN-68a67a1fec7cd769",
@@ -4174,6 +5782,54 @@
         }
       ],
       "generated_at": "2026-09-12T01:37:03.269Z"
+    },
+    {
+      "candidate_id": "MAC-b40ec6b44997a3a7",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f07813b0d063bdb6",
+      "raw_id": "RAW-f855434cd6443bae",
+      "source_ref": "SA-55f32a4b12e733e1",
+      "source_hash": "eb85d268b4d8c485",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "超维动力",
+        "rationale": "没有提供已验证的替代实体，无法判定是否同一实体。",
+        "candidate_name": "超维动力"
+      },
+      "evidence": [
+        {
+          "start": 136,
+          "end": 170,
+          "quote": "超维动力（Kinetix AI）宣布完成 超5亿元天使+轮系列 融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:04:15.290Z"
     },
     {
       "candidate_id": "MAC-b688215d2ef7c01f",
@@ -4510,6 +6166,192 @@
       "generated_at": "2026-09-12T01:36:06.738Z"
     },
     {
+      "candidate_id": "MAC-be2ba49c600046bb",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1901781272f3d98d",
+      "raw_id": "RAW-37218a465cddbcaf",
+      "source_ref": "SA-5e35257e2a456eb9",
+      "source_hash": "b6d7c104d08994a4",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "投资界AI周报| 史上最大融资诞生",
+        "rationale": "The candidate is the article title and does not exactly match any verified alternative.",
+        "candidate_name": "投资界AI周报| 史上最大"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:06:53.041Z"
+    },
+    {
+      "candidate_id": "MAC-c20bc185c7c71802",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c3a3b9159fcbd4e7",
+      "raw_id": "RAW-c5d03768cf857e41",
+      "source_ref": "SA-75d5fa7e7297be0f",
+      "source_hash": "939f8ade087f52a4",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "智推时代",
+        "rationale": "The source identifies 智推时代 as the company discussed; it is not any verified alternative.",
+        "candidate_name": "首发| AI搜索诞生一个天使轮"
+      },
+      "evidence": [
+        {
+          "start": 21,
+          "end": 65,
+          "quote": "AI营销科技公司智推时代GenOptima（简称“智推时代”）宣布完成数千万元天使轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:03:54.354Z"
+    },
+    {
+      "candidate_id": "MAC-c400ac3c25701c14",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-13d488eb3ac425b4",
+      "raw_id": "RAW-adb90954378ab344",
+      "source_ref": "SA-d71164522790d96e",
+      "source_hash": "3402bfe0ae93e232",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "具身智能开年最大",
+        "rationale": "The candidate is the article headline phrase, while the source identifies 自变量机器人 as the company that completed the financing.",
+        "candidate_name": "具身智能开年最大"
+      },
+      "evidence": [
+        {
+          "start": 103,
+          "end": 131,
+          "quote": "刚刚， 自变量机器人 官宣完成 10亿元 A++轮融资。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:02:42.240Z"
+    },
+    {
+      "candidate_id": "MAC-c7afcfef8e631269",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-2505fe8a9e908e04",
+      "raw_id": "RAW-134ac6d1a862be1c",
+      "source_ref": "SA-fe80259b9cdd32a8",
+      "source_hash": "27197b767ebb2b4f",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "元点科技",
+        "rationale": "Quote identifies 元点科技 as the embodied-intelligence data-infrastructure company, while none of the verified alternatives is identified as the same entity.",
+        "candidate_name": "元点科技"
+      },
+      "evidence": [
+        {
+          "start": 105,
+          "end": 147,
+          "quote": "近日，具身智能数据基础设施公司元点科技（SCALEFORCE）完成数千万元人民币融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:17:01.879Z"
+    },
+    {
       "candidate_id": "MAC-c99b6781737f6526",
       "task_type": "entity_resolution",
       "asset_id": "EN-3ccbd9105a45d8fc",
@@ -4604,6 +6446,54 @@
         }
       ],
       "generated_at": "2026-09-12T01:36:46.586Z"
+    },
+    {
+      "candidate_id": "MAC-ce5e66a2f400a398",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-09e89b2461409989",
+      "raw_id": "RAW-8ccbf5c937b51a48",
+      "source_ref": "SA-6156c54316c9db9f",
+      "source_hash": "dd88198550b67525",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "首发| 阿里大牛带队",
+        "rationale": "The source describes Future Intelligence's founders as former Alibaba employees; it does not identify the candidate as Alibaba.",
+        "candidate_name": "首发| 阿里大牛带队"
+      },
+      "evidence": [
+        {
+          "start": 121,
+          "end": 160,
+          "quote": "未来式智能创始人兼CEO杨劲松、CSO王骏、COO邹阳，均来自阿里巴巴达摩院。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:06:40.284Z"
     },
     {
       "candidate_id": "MAC-cee93e14aba713a6",
@@ -4767,6 +6657,54 @@
       "generated_at": "2026-09-12T04:26:33.829Z"
     },
     {
+      "candidate_id": "MAC-d28487e25b57c8ca",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-99489e67d8066af7",
+      "raw_id": "RAW-33ea15cbd19b4375",
+      "source_ref": "SA-772b6dd055b69d1e",
+      "source_hash": "ca56dc5ec886112d",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "超维探索N++",
+        "rationale": "候选实体是深圳超维探索科技有限公司N++，并非任何已验证备选实体。",
+        "candidate_name": "超维探索N++"
+      },
+      "evidence": [
+        {
+          "start": 30,
+          "end": 63,
+          "quote": "深圳超维探索科技有限公司N++(NppStudio,超维探索）宣布"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:07:46.551Z"
+    },
+    {
       "candidate_id": "MAC-d29731235c6ad1c2",
       "task_type": "claim_extraction",
       "asset_id": "QA-195db8bb906b857c",
@@ -4902,6 +6840,71 @@
         }
       ],
       "generated_at": "2026-09-12T01:36:23.901Z"
+    },
+    {
+      "candidate_id": "MAC-d60a0743912f82f9",
+      "task_type": "qa_repair",
+      "asset_id": "QA-a79988c5110786e0",
+      "raw_id": "RAW-9bda2921a8bd5ee1",
+      "source_ref": "SA-55330a06ec435da8",
+      "source_hash": "a993b3cbbef69721",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "Source describes embodied-intelligence robots from 本末科技, including D1 and its overseas distribution.",
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "本末科技",
+            "object": "D1",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "market_expansion",
+            "subject": "本末科技",
+            "object": "轮足整机",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1844,
+          "end": 1868,
+          "quote": "3、D1 ，就是开头那个会「合体」变身的机器人。"
+        },
+        {
+          "start": 2354,
+          "end": 2393,
+          "quote": "轮足整机，出口到全球50多个国家和地区，是 全球轮足机器人出货量最高的厂商 。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:05:00.840Z"
     },
     {
       "candidate_id": "MAC-d9336dd36ac5d3bc",
@@ -5111,6 +7114,69 @@
         }
       ],
       "generated_at": "2026-09-12T01:36:21.643Z"
+    },
+    {
+      "candidate_id": "MAC-dd7c11f877c143f3",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-164c64446a409a16",
+      "raw_id": "RAW-33ea15cbd19b4375",
+      "source_ref": "SA-772b6dd055b69d1e",
+      "source_hash": "ca56dc5ec886112d",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "深圳超维探索科技有限公司N++",
+            "object": "倚锋资本和深圳世钦投资的数千万元种子轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "deployment",
+            "subject": "N++平台系统",
+            "object": "于2026年4月15日上线",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 64,
+          "end": 91,
+          "quote": "完成由 倚锋资本和深圳世钦投资 的数千万元种子轮融资。"
+        },
+        {
+          "start": 130,
+          "end": 150,
+          "quote": "N++平台系统于2026年4月15日上线"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:01:30.963Z"
     },
     {
       "candidate_id": "MAC-e20eb6a2218ae4ee",
@@ -5374,6 +7440,54 @@
       "generated_at": "2026-09-12T01:36:32.172Z"
     },
     {
+      "candidate_id": "MAC-e65da3aa1b774ad3",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-15a0017d2d9191a0",
+      "raw_id": "RAW-2ac20447e2d26ce0",
+      "source_ref": "SA-4a2dc3d7a1c5a7c1",
+      "source_hash": "acb13b2860ac6a2a",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "奉劝各位AI视频玩家",
+        "rationale": "该短语出现在标题和结尾，作为对“AI视频玩家”的泛称，未证明其指向任何已验证实体。",
+        "candidate_name": "奉劝各位AI视频玩家"
+      },
+      "evidence": [
+        {
+          "start": 2804,
+          "end": 2840,
+          "quote": "所以，奉劝各位AI视频玩家，要融资要上市确实得赶紧，机不可失，时不再来。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:02:47.154Z"
+    },
+    {
       "candidate_id": "MAC-e6669c1c835a6d33",
       "task_type": "claim_extraction",
       "asset_id": "QA-cee32feb0d65a62a",
@@ -5581,6 +7695,54 @@
         }
       ],
       "generated_at": "2026-09-12T04:26:31.392Z"
+    },
+    {
+      "candidate_id": "MAC-ec8cd57c86cd67a3",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-fee0e0d4826ebfd9",
+      "raw_id": "RAW-4f8034ca024e2c16",
+      "source_ref": "SA-2c3a182c5a6b5011",
+      "source_hash": "04d6f242a94ce5eb",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "OpenAI",
+        "rationale": "候选名称中的“最新”是标题修饰语；正文明确提及OpenAI。",
+        "candidate_name": "OpenAI最新"
+      },
+      "evidence": [
+        {
+          "start": 32,
+          "end": 53,
+          "quote": "OpenAI宣布获得新融资 1100亿美元"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:04:27.871Z"
     },
     {
       "candidate_id": "MAC-f12b3bd497c413a0",
@@ -5836,6 +7998,176 @@
         }
       ],
       "generated_at": "2026-09-12T04:26:38.230Z"
+    },
+    {
+      "candidate_id": "MAC-f76bee7b253bad07",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e24f99182b7a0afd",
+      "raw_id": "RAW-0b4cd1e3511beaee",
+      "source_ref": "SA-054aff2c7f9ea303",
+      "source_hash": "6d3e402dc310977b",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "未来智能",
+        "rationale": "未来智能是独立创办的公司，马啸曾在科大讯飞任职。",
+        "candidate_name": "首发|未来智能"
+      },
+      "evidence": [
+        {
+          "start": 429,
+          "end": 450,
+          "quote": "彼时，马啸及核心团队独立创办新公司未来智能"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:04:11.431Z"
+    },
+    {
+      "candidate_id": "MAC-f7c63ea23954ce1d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-5f62adfc4d1a76fd",
+      "raw_id": "RAW-f91320ba4dc7d571",
+      "source_ref": "SA-19e24e35e678ea76",
+      "source_hash": "9b330c2ef09dae7f",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "20亿",
+        "rationale": "“20亿” refers to a financing amount, while the verified alternative is an organization.",
+        "candidate_name": "20亿"
+      },
+      "evidence": [
+        {
+          "start": 145,
+          "end": 162,
+          "quote": "千寻智能 完成两轮融资 近20亿元"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:03:22.978Z"
+    },
+    {
+      "candidate_id": "MAC-fb8cfe9dc8605ab9",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-76c16d0cb1ccac07",
+      "raw_id": "RAW-37218a465cddbcaf",
+      "source_ref": "SA-5e35257e2a456eb9",
+      "source_hash": "b6d7c104d08994a4",
+      "provider": "codex",
+      "model": "gpt-5.6-terra",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "OpenAI",
+            "object": "1220亿美元融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "ipo_listing",
+            "subject": "群核科技",
+            "object": "通过港交所聆讯",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "acquisition",
+            "subject": "Anthropic",
+            "object": "一家9人初创公司",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1431,
+          "end": 1460,
+          "quote": "OpenAI完成1220亿美元融资，投后估值8520亿美元"
+        },
+        {
+          "start": 1461,
+          "end": 1479,
+          "quote": "杭州六小龙之一群核科技通过港交所聆讯"
+        },
+        {
+          "start": 1554,
+          "end": 1578,
+          "quote": "Anthropic花4亿美元买了一家9人初创公司"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-12T07:02:04.420Z"
     },
     {
       "candidate_id": "MAC-fc1d7f64e0daf732",

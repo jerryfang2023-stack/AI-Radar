@@ -9,15 +9,15 @@
       "fde_procurement_contract",
       "fde_production_rollout"
     ],
-    "raw_documents": 98,
-    "original_sources": 88,
-    "valid_claims": 13,
+    "raw_documents": 100,
+    "original_sources": 90,
+    "valid_claims": 16,
     "observations": 1,
-    "canonical_events": 8,
+    "canonical_events": 9,
     "blocker_counts": {
+      "no_source_bounded_claim": 2,
       "event_entity_unresolved": 1,
       "no_source_bounded_event": 12,
-      "no_source_bounded_claim": 1,
       "source_outside_daily_window": 57,
       "non_event_or_index_title": 5,
       "opinion_without_source_bounded_event": 1,
@@ -27,10 +27,10 @@
       "raw_document_not_auditable": 1
     },
     "rates": {
-      "original_source_rate": 0.8979591836734694,
-      "valid_claim_rate": 0.1326530612244898,
-      "observation_rate": 0.07692307692307693,
-      "event_conversion_rate": 0.6153846153846154
+      "original_source_rate": 0.9,
+      "valid_claim_rate": 0.16,
+      "observation_rate": 0.0625,
+      "event_conversion_rate": 0.5625
     }
   },
   {
@@ -44,25 +44,25 @@
       "hardware_product_specs",
       "hardware_supply_agreement"
     ],
-    "raw_documents": 29,
-    "original_sources": 24,
-    "valid_claims": 16,
+    "raw_documents": 50,
+    "original_sources": 45,
+    "valid_claims": 26,
     "observations": 2,
-    "canonical_events": 7,
+    "canonical_events": 12,
     "blocker_counts": {
-      "rumor_requires_primary_confirmation": 2,
-      "domestic_publication_date_unverified": 2,
-      "source_outside_daily_window": 8,
-      "non_event_or_index_title": 2,
+      "rumor_requires_primary_confirmation": 3,
+      "domestic_publication_date_unverified": 13,
+      "non_event_or_index_title": 3,
+      "source_outside_daily_window": 10,
       "event_not_ai_relevant": 1,
       "no_source_bounded_event": 1,
       "raw_source_quality_block": 6
     },
     "rates": {
-      "original_source_rate": 0.8275862068965517,
-      "valid_claim_rate": 0.5517241379310345,
-      "observation_rate": 0.125,
-      "event_conversion_rate": 0.4375
+      "original_source_rate": 0.9,
+      "valid_claim_rate": 0.52,
+      "observation_rate": 0.07692307692307693,
+      "event_conversion_rate": 0.46153846153846156
     }
   }
 ]

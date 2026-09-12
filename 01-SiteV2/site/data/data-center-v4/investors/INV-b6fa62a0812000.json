@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-12T07:23:16.602Z",
+    "latestDataDate": "2026-09-12",
+    "currentDate": "2026-09-12",
+    "eventCount": 2875,
+    "quarantinedEventCount": 26
+  },
+  "institution": {
+    "id": "INV-b6fa62a0812000",
+    "name": "亚马逊",
+    "aliases": [],
+    "canonical_entity_id": "EN-6d37feda49a46792",
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-02-28",
+    "latest_disclosed_at": "2026-02-28",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "infrastructure"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-12aa1471189c5cfa",
+        "funding_insight_id": "FI-72755fd9439ecca6",
+        "event_ids": [
+          "EV-68d5a02e5213b43c"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "1100亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1100 亿美元"
+        },
+        "announced_at": "2026-02-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b4ba4f68908fa080",
+            "source_url": "https://news.pedaily.cn/202602/561239.shtml",
+            "source_title": "OpenAI最新融资1100亿美元 - 投资界",
+            "source_content_hash": "04d6f242a94ce5eb",
+            "quote": "500亿美元来自 亚马逊",
+            "quote_hash": "723dffc45fdb1cd22e7e91753835d9d38b4cfd4d6d174596ff1f21d996434ee4"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b4ba4f68908fa080",
+        "source_url": "https://news.pedaily.cn/202602/561239.shtml",
+        "source_title": "OpenAI最新融资1100亿美元 - 投资界",
+        "source_content_hash": "04d6f242a94ce5eb",
+        "quote": "500亿美元来自 亚马逊",
+        "quote_hash": "723dffc45fdb1cd22e7e91753835d9d38b4cfd4d6d174596ff1f21d996434ee4"
+      }
+    ]
+  }
+}

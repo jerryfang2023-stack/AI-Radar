@@ -33,6 +33,7 @@ test("financing articles cannot combine recipients or promote cumulative totals 
   assert.equal(fundingClaimGroupingProblem([{ subject: "6轮", source_quote: "这家公司累计完成约70亿元人民币融资" }]), "cumulative_funding_total_not_single_round");
   assert.equal(fundingClaimGroupingProblem([{ subject: "公司甲", source_quote: "公司甲此次完成A轮融资，累计融资超过1亿元" }]), "");
   assert.equal(fundingClaimGroupingProblem([{ subject: "公司甲", source_quote: "公司甲完成A轮融资" }]), "");
+  assert.equal(fundingClaimGroupingProblem([{ subject: "德睿智药", source_quote: "德睿智药宣布分阶段完成累计5200万美元B轮融资" }]), "");
 });
 
 test("Chinese article bylines retain the explicit historical disclosure date", () => {
