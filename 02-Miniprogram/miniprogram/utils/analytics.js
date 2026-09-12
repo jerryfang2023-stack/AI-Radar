@@ -1,5 +1,5 @@
 const API_ROOT = "https://www.zkdlj.vip/api/v1";
-const APP_VERSION = "1.0.0";
+const APP_VERSION = "1.0.1";
 const TOKEN_KEY = "guanlan_api_token_v1";
 const VISITOR_KEY = "guanlan_analytics_visitor_v1";
 const SESSION_KEY = "guanlan_analytics_session_v1";

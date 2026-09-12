@@ -1,10 +1,10 @@
-<view class="page-shell">
+<view class="page-shell {{report.readerStyled ? 'report-edition' : ''}}">
   <app-header title="{{report.typeLabel || '行业观察'}}" show-back fallback-url="/pages/market/index" />
   <view class="page-content reader-content {{sharedEntry ? 'with-shared-nav' : ''}}">
     <view wx:if="{{report}}" class="reader-hero">
       <view class="reader-kicker"><text>{{report.typeLabel}}</text><text class="mono">{{report.issue}}</text></view>
       <text class="reader-title serif">{{report.title}}</text>
-      <text class="reader-summary">{{report.summary}}</text>
+      <view class="reader-deck"><text wx:if="{{report.readerStyled}}" class="deck-label">本期摘要</text><text class="reader-summary">{{report.summary}}</text></view>
       <view class="reader-meta"><text>{{report.date}}</text><text wx:if="{{report.author}}">{{report.author}}</text><text wx:if="{{report.readingTime}}">{{report.readingTime}}</text><text wx:elif="{{report.window}}">{{report.window}}</text></view>
       <view wx:if="{{report.counts}}" class="reader-evidence"><view><text class="mono">{{report.counts.signals}}</text><text>商业事件</text></view><view><text class="mono">{{report.counts.opinions}}</text><text>一线观点</text></view><view><text class="mono">{{report.counts.community}}</text><text>社群观察</text></view></view>
     </view>
@@ -24,12 +24,13 @@
     </view>
     <view wx:else class="reader-body">
       <block wx:for="{{report.blocks}}" wx:key="id">
-        <view wx:if="{{item.type === 'heading'}}" class="block-heading serif">{{item.text}}</view>
+        <view wx:if="{{item.type === 'heading'}}" class="block-heading serif"><text wx:if="{{item.number}}" class="chapter-number mono">{{item.number}}</text><text>{{item.title || item.text}}</text></view>
         <view wx:elif="{{item.type === 'subheading'}}" class="block-subheading">{{item.text}}</view>
-        <view wx:elif="{{item.type === 'list'}}" class="block-list">{{item.text}}</view>
+        <view wx:elif="{{item.type === 'list'}}" class="block-list"><text wx:if="{{item.lead}}" class="inline-lead">{{item.lead}}</text><text>{{item.body || item.text}}</text></view>
         <view wx:elif="{{item.type === 'quote'}}" class="block-quote">{{item.text}}</view>
+        <view wx:elif="{{item.type === 'tableCards'}}" class="report-table-cards"><view wx:for="{{item.rows}}" wx:for-item="row" wx:key="id" class="report-table-card"><view wx:for="{{row.fields}}" wx:for-item="field" wx:for-index="column" wx:key="id" class="report-table-field {{column === 0 ? 'table-card-title' : ''}}"><text class="table-field-label">{{field.label}}</text><text class="table-field-value">{{field.value}}</text></view></view></view>
         <view wx:elif="{{item.type === 'table'}}" class="block-table">{{item.text}}</view>
-        <view wx:else class="block-paragraph">{{item.text}}</view>
+        <view wx:else class="block-paragraph"><text wx:if="{{item.lead}}" class="inline-lead">{{item.lead}}</text><text>{{item.body || item.text}}</text></view>
       </block>
     </view>
   </view>

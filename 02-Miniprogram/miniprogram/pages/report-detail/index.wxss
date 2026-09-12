@@ -1,4 +1,32 @@
 .reader-content { padding-top: 18rpx; }
+.report-edition .reader-content { padding-right: 32rpx; padding-left: 32rpx; }
+.report-edition .reader-hero { padding: 24rpx 0 30rpx; border-color: #ded7c9; }
+.report-edition .reader-kicker { font-size: 22rpx; color: #846128; }
+.report-edition .reader-title { margin-top: 24rpx; font-size: 44rpx; line-height: 64rpx; }
+.report-edition .reader-deck { margin-top: 28rpx; padding: 28rpx; border-radius: 20rpx; background: #0b1d2a; }
+.report-edition .deck-label { display: block; color: #d9bd83; font-size: 22rpx; font-weight: 600; letter-spacing: 3rpx; }
+.report-edition .reader-summary { margin-top: 14rpx; color: #fffdf8; font-size: 28rpx; line-height: 48rpx; }
+.report-edition .reader-meta { color: #687581; font-size: 22rpx; line-height: 34rpx; }
+.report-edition .reader-evidence { border: 0; border-radius: 0; background: transparent; padding: 6rpx 0 0; }
+.report-edition .reader-evidence view { color: #687581; font-size: 22rpx; border-color: #ded7c9; }
+.report-edition .reader-evidence .mono { font-size: 32rpx; }
+.report-edition .reader-body { padding: 0 0 24rpx; overflow-wrap: anywhere; }
+.report-edition .block-heading { display: flex; gap: 18rpx; align-items: baseline; margin: 52rpx 0 26rpx; padding-top: 28rpx; border-color: #ded7c9; font-size: 34rpx; line-height: 50rpx; }
+.report-edition .chapter-number { flex-shrink: 0; color: #846128; font-size: 26rpx; font-weight: 500; }
+.report-edition .block-subheading { margin: 36rpx 0 18rpx; padding-left: 18rpx; border-left: 5rpx solid #c8a766; font-size: 30rpx; line-height: 46rpx; }
+.report-edition .block-paragraph, .report-edition .block-list, .report-edition .block-quote { color: #334452; font-size: 28rpx; line-height: 50rpx; margin-bottom: 26rpx; }
+.report-edition .block-list { position: relative; padding: 0 0 22rpx 28rpx; background: transparent; border: 0; border-bottom: 1rpx solid #ece7dd; }
+.report-edition .block-list::before { content: ""; position: absolute; top: 20rpx; left: 2rpx; width: 8rpx; height: 8rpx; border-radius: 50%; background: #a78241; }
+.report-edition .inline-lead { color: #0d355c; font-weight: 600; }
+.report-edition .block-quote { padding: 26rpx; border-left: 5rpx solid #c8a766; border-radius: 0 16rpx 16rpx 0; background: #f4efe4; color: #0d355c; }
+.report-edition .block-table { font-size: 26rpx; line-height: 44rpx; }
+.report-table-cards { margin-bottom: 30rpx; }
+.report-table-card { margin-bottom: 20rpx; border: 1rpx solid #ded7c9; border-radius: 16rpx; overflow: hidden; background: #fff; }
+.report-table-field { padding: 18rpx 22rpx; border-top: 1rpx solid #eee9df; font-size: 26rpx; line-height: 44rpx; }
+.report-table-field.table-card-title { border-top: 0; background: #f4efe4; }
+.table-field-label { display: block; margin-bottom: 4rpx; color: #687581; font-size: 22rpx; line-height: 34rpx; }
+.table-field-value { color: #334452; }
+.table-card-title .table-field-value { color: #0d355c; font-weight: 600; }
 .reader-hero { padding: 24rpx 4rpx 28rpx; border-bottom: 1rpx solid #e5e8ec; }
 .reader-kicker { display: flex; align-items: center; justify-content: space-between; color: #9b6d20; font-size: 21rpx; font-weight: 600; letter-spacing: 2rpx; }
 .reader-kicker .mono { color: #6f7f8f; font-weight: 400; letter-spacing: 0; }

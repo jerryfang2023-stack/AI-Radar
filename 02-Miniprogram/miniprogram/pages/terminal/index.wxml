@@ -14,12 +14,15 @@
       </view>
     </view>
 
-    <view class="search-row single-search">
+    <view class="search-row category-search">
       <view class="search-box">
         <icon type="search" size="18" color="#071827" />
         <input value="{{filters.keyword}}" placeholder="公司 / 机构 / 产品" bindinput="onSearchInput" bindconfirm="onSearchConfirm" confirm-type="search" />
         <button wx:if="{{filters.keyword}}" class="clear-button" bindtap="clearSearch"><icon type="clear" size="16" /></button>
       </view>
+      <picker class="category-picker" mode="selector" range="{{categoryOptions}}" range-key="label" value="{{categoryIndex}}" bindchange="changeCategory">
+        <view class="category-select {{categoryIndex > 0 ? 'selected' : ''}}"><text class="category-label">{{categoryOptions[categoryIndex].label}}</text><text class="category-arrow">⌄</text></view>
+      </picker>
     </view>
 
     <view class="scope-status-row">
