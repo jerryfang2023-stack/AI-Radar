@@ -357,8 +357,8 @@ window.WaveSightOpsConsole = {
       }
     ],
     "skills": {
-      "total": 288,
-      "generatedAt": "2026-09-12 17:36:40",
+      "total": 289,
+      "generatedAt": "2026-09-12 18:09:55",
       "sources": [
         {
           "id": "AIP/.agents/skills",
@@ -504,8 +504,8 @@ window.WaveSightOpsConsole = {
         {
           "id": "shared",
           "label": "通用 / 未分配",
-          "count": 245,
-          "sharedCount": 245,
+          "count": 246,
+          "sharedCount": 246,
           "projectCount": 0,
           "sources": []
         }
@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.7.1-china-funding-history",
-    "generatedAt": "2026-09-12T09:50:56.281Z",
+    "generatedAt": "2026-09-12T10:12:08.569Z",
     "date": "2026-09-12",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1716,7 +1716,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-12T09:50:56.261Z",
+      "updatedAt": "2026-09-12T10:12:08.549Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -2065,7 +2065,7 @@ window.WaveSightOpsConsole = {
       "from": "2026-01-01",
       "to": "2026-09-12",
       "date": "2026-09-12",
-      "generated_at": "2026-09-12T09:50:55.517Z",
+      "generated_at": "2026-09-12T10:11:29.179Z",
       "status": "processed_with_gaps",
       "index_pages": 34,
       "historical_boundary_reached": true,

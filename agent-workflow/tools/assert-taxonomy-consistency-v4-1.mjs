@@ -147,6 +147,15 @@ export function sourceTitleQuarantinesProjection(canonicalEvent, frontstage) {
     && !(frontstage.events || []).some((event) => event.id === canonicalEvent.event_id));
 }
 
+export function fundingCardsByTrigger(cards) {
+  const byEvent = new Map(cards.filter((card) => card.triggered_by_event_id)
+    .map((card) => [card.triggered_by_event_id, card]));
+  for (const card of cards) for (const eventId of cardEventIds(card)) {
+    if (!byEvent.has(eventId)) byEvent.set(eventId, card);
+  }
+  return byEvent;
+}
+
 export function taxonomyConsistencyProblems(rootDir = root) {
   const failures = [];
   const taxonomy = readJson(path.join(rootDir, "agent-workflow/product/tag-taxonomy-v4.json"), {});
@@ -182,10 +191,7 @@ export function taxonomyConsistencyProblems(rootDir = root) {
   }
 
   const cards = fundingCards(rootDir);
-  const cardByEvent = new Map();
-  for (const card of cards) for (const eventId of cardEventIds(card)) {
-    if (!cardByEvent.has(eventId)) cardByEvent.set(eventId, card);
-  }
+  const cardByEvent = fundingCardsByTrigger(cards);
   for (const decision of ledger.decisions || []) {
     const rows = reviewedByDecisionEvent.get(decision.event_id) || [];
     const actual = new Set(rows.map((row) => `${row.dimension_id}.${row.value_id}`));

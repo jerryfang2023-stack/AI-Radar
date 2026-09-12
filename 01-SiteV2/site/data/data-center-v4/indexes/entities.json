@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:59:46.292Z",
+    "generatedAt": "2026-09-12T10:08:42.252Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -48,7 +48,7 @@
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.1",
-      "generatedAt": "2026-09-12T09:59:43.071Z",
+      "generatedAt": "2026-09-12T10:08:39.031Z",
       "coverage": {
         "startDate": "2017-09-07",
         "endDate": "2027-09-30",
@@ -24655,8 +24655,8 @@
       ],
       "china_market_activity_count": 9,
       "china_market_company_count": 8,
-      "first_disclosed_at": "2026-02-14",
-      "latest_disclosed_at": "2026-09-12",
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-09-08",
       "role_counts": {
         "co_lead": 3,
         "historical_or_ambiguous": 7,
@@ -24716,38 +24716,6 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-da81851b42cbfa46",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        },
-        {
           "activity_id": "IA-4ab1d62f4188b4b3",
           "funding_insight_id": "FI-fae9478ac0e65316",
           "event_ids": [
@@ -24806,6 +24774,36 @@
           "scope": "historical_or_ambiguous",
           "role": "种子轮投资方",
           "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-3a993f8d71dab42e",
+          "funding_insight_id": "FI-57f8607e9a2111db",
+          "event_ids": [
+            "EV-cf9e968f38db7796"
+          ],
+          "company_entity_id": "EN-b3c628b196bfbbe9",
+          "company_canonical_entity_id": "",
+          "company_name": "贝联珠贯科技（浙江）有限公司",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-07-30",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
         }
       ]
     },
@@ -27196,324 +27194,6 @@
       ]
     },
     {
-      "id": "INV-fc1fa323b06b1d",
-      "name": "君联资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 5,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 5,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 5,
-      "china_market_company_count": 5,
-      "first_disclosed_at": "2026-05-07",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "lead": 2,
-        "participant": 3
-      },
-      "round_codes": [
-        "angel",
-        "infrastructure",
-        "series_a"
-      ],
-      "activity_count": 6,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-eddb3e851558ed80",
-          "canonical_entity_id": "",
-          "name": "清雁科技（北京）有限公司"
-        },
-        {
-          "entity_id": "EN-4a9900b7b05676d2",
-          "canonical_entity_id": "",
-          "name": "清雁科技（北京）有限公司"
-        },
-        {
-          "entity_id": "EN-ada6f7916f22af98",
-          "canonical_entity_id": "",
-          "name": "求之科技(无锡)有限公司"
-        },
-        {
-          "entity_id": "EN-a3802b1f5a583189",
-          "canonical_entity_id": "",
-          "name": "深圳墨奇智能技术有限公司"
-        },
-        {
-          "entity_id": "EN-0369c8fcda657a43",
-          "canonical_entity_id": "",
-          "name": "无问芯穹（Infinigence AI）"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-b2917afb30e33d83",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "Pre-A++轮领投",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-5610c056708c0193",
-          "funding_insight_id": "FI-c185fb71d34b0f0c",
-          "event_ids": [
-            "EV-a72baefac91ba841"
-          ],
-          "company_entity_id": "EN-eddb3e851558ed80",
-          "company_canonical_entity_id": "",
-          "company_name": "清雁科技（北京）有限公司",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-08-21",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        },
-        {
-          "activity_id": "IA-f11bc255c6262f83",
-          "funding_insight_id": "FI-dcd79ea72d2e09b1",
-          "event_ids": [
-            "EV-c9a11db49e1afbe5"
-          ],
-          "company_entity_id": "EN-4a9900b7b05676d2",
-          "company_canonical_entity_id": "",
-          "company_name": "清雁科技（北京）有限公司",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-08-19",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        }
-      ],
-      "translations": {
-        "zh-CN": {
-          "latest_activities[0].role": {
-            "text": "Pre-A++轮领投",
-            "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-09-12T09:32:49.993Z",
-            "status": "translated"
-          }
-        }
-      }
-    },
-    {
-      "id": "INV-901b0ed7b5c1cb",
-      "name": "深创投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 5,
-      "historical_or_ambiguous_count": 6,
-      "portfolio_company_count": 5,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 5,
-      "china_market_company_count": 5,
-      "first_disclosed_at": "2026-02-14",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "co_lead": 1,
-        "historical_or_ambiguous": 6,
-        "participant": 4
-      },
-      "round_codes": [
-        "angel",
-        "multi_round",
-        "series_a_plus_plus",
-        "series_c",
-        "undisclosed"
-      ],
-      "activity_count": 11,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-a5e5f031b6f878cf",
-          "canonical_entity_id": "",
-          "name": "杭州微纳核芯电子科技有限公司"
-        },
-        {
-          "entity_id": "EN-3309b3b14807f39a",
-          "canonical_entity_id": "EN-3309b3b14807f39a",
-          "name": "面壁智能"
-        },
-        {
-          "entity_id": "EN-085578b03da7d660",
-          "canonical_entity_id": "",
-          "name": "墨芯人工智能科技（深圳）有限公司"
-        },
-        {
-          "entity_id": "EN-4731aa5b66658c7f",
-          "canonical_entity_id": "EN-4731aa5b66658c7f",
-          "name": "无界动力"
-        },
-        {
-          "entity_id": "EN-8dc72a4672894e0f",
-          "canonical_entity_id": "EN-8dc72a4672894e0f",
-          "name": "自变量机器人科技（深圳）有限公司"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-4fe6e990cb0ae068",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-a4e87b4fe931075e",
-          "funding_insight_id": "FI-124b4efd0f2fa1d9",
-          "event_ids": [
-            "EV-12f331aaf7d4cca6"
-          ],
-          "company_entity_id": "EN-964f260c9a904091",
-          "company_canonical_entity_id": "",
-          "company_name": "爱诗科技",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "29.8亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 2980000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "29.8 亿元"
-          },
-          "announced_at": "2026-07-14",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "B轮跟投",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-384a1250d584775c",
-          "funding_insight_id": "FI-c524ab52173a64d8",
-          "event_ids": [
-            "EV-c6437ac13cb07531"
-          ],
-          "company_entity_id": "EN-f6aaf378a6d9e724",
-          "company_canonical_entity_id": "",
-          "company_name": "深圳市深度智控科技有限公司",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-07-09",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A+轮投资方",
-          "role_code": "historical_or_ambiguous"
-        }
-      ]
-    },
-    {
       "id": "INV-8d8077fe25cda9",
       "name": "洪泰基金",
       "aliases": [],
@@ -28251,6 +27931,156 @@
           "scope": "current_round",
           "role": "本轮参投，种子轮领投",
           "role_code": "lead"
+        }
+      ]
+    },
+    {
+      "id": "INV-fc1fa323b06b1d",
+      "name": "君联资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 5,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 5,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 5,
+      "china_market_company_count": 5,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-08-21",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "lead": 2,
+        "participant": 3
+      },
+      "round_codes": [
+        "angel",
+        "infrastructure",
+        "series_a"
+      ],
+      "activity_count": 6,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-eddb3e851558ed80",
+          "canonical_entity_id": "",
+          "name": "清雁科技（北京）有限公司"
+        },
+        {
+          "entity_id": "EN-4a9900b7b05676d2",
+          "canonical_entity_id": "",
+          "name": "清雁科技（北京）有限公司"
+        },
+        {
+          "entity_id": "EN-ada6f7916f22af98",
+          "canonical_entity_id": "",
+          "name": "求之科技(无锡)有限公司"
+        },
+        {
+          "entity_id": "EN-a3802b1f5a583189",
+          "canonical_entity_id": "",
+          "name": "深圳墨奇智能技术有限公司"
+        },
+        {
+          "entity_id": "EN-0369c8fcda657a43",
+          "canonical_entity_id": "",
+          "name": "无问芯穹（Infinigence AI）"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-5610c056708c0193",
+          "funding_insight_id": "FI-c185fb71d34b0f0c",
+          "event_ids": [
+            "EV-a72baefac91ba841"
+          ],
+          "company_entity_id": "EN-eddb3e851558ed80",
+          "company_canonical_entity_id": "",
+          "company_name": "清雁科技（北京）有限公司",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-08-21",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        },
+        {
+          "activity_id": "IA-f11bc255c6262f83",
+          "funding_insight_id": "FI-dcd79ea72d2e09b1",
+          "event_ids": [
+            "EV-c9a11db49e1afbe5"
+          ],
+          "company_entity_id": "EN-4a9900b7b05676d2",
+          "company_canonical_entity_id": "",
+          "company_name": "清雁科技（北京）有限公司",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-08-19",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        },
+        {
+          "activity_id": "IA-9dc47a56ebdece6d",
+          "funding_insight_id": "FI-0cab7e240eb542ce",
+          "event_ids": [
+            "EV-e85e6fc6d630d56c"
+          ],
+          "company_entity_id": "EN-a3802b1f5a583189",
+          "company_canonical_entity_id": "",
+          "company_name": "深圳墨奇智能技术有限公司",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "10 亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-07-09",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
         }
       ]
     },
@@ -29442,6 +29272,158 @@
       ]
     },
     {
+      "id": "INV-901b0ed7b5c1cb",
+      "name": "深创投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 5,
+      "historical_or_ambiguous_count": 6,
+      "portfolio_company_count": 5,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 5,
+      "china_market_company_count": 5,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-07-14",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 6,
+        "participant": 4
+      },
+      "round_codes": [
+        "angel",
+        "multi_round",
+        "series_a_plus_plus",
+        "series_c",
+        "undisclosed"
+      ],
+      "activity_count": 11,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a5e5f031b6f878cf",
+          "canonical_entity_id": "",
+          "name": "杭州微纳核芯电子科技有限公司"
+        },
+        {
+          "entity_id": "EN-3309b3b14807f39a",
+          "canonical_entity_id": "EN-3309b3b14807f39a",
+          "name": "面壁智能"
+        },
+        {
+          "entity_id": "EN-085578b03da7d660",
+          "canonical_entity_id": "",
+          "name": "墨芯人工智能科技（深圳）有限公司"
+        },
+        {
+          "entity_id": "EN-4731aa5b66658c7f",
+          "canonical_entity_id": "EN-4731aa5b66658c7f",
+          "name": "无界动力"
+        },
+        {
+          "entity_id": "EN-8dc72a4672894e0f",
+          "canonical_entity_id": "EN-8dc72a4672894e0f",
+          "name": "自变量机器人科技（深圳）有限公司"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-a4e87b4fe931075e",
+          "funding_insight_id": "FI-124b4efd0f2fa1d9",
+          "event_ids": [
+            "EV-12f331aaf7d4cca6"
+          ],
+          "company_entity_id": "EN-964f260c9a904091",
+          "company_canonical_entity_id": "",
+          "company_name": "爱诗科技",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "29.8亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2980000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "29.8 亿元"
+          },
+          "announced_at": "2026-07-14",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "B轮跟投",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-384a1250d584775c",
+          "funding_insight_id": "FI-c524ab52173a64d8",
+          "event_ids": [
+            "EV-c6437ac13cb07531"
+          ],
+          "company_entity_id": "EN-f6aaf378a6d9e724",
+          "company_canonical_entity_id": "",
+          "company_name": "深圳市深度智控科技有限公司",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-07-09",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A+轮投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-d7fdb714d56bc585",
+          "funding_insight_id": "FI-6ada8d4502daa530",
+          "event_ids": [
+            "EV-e0a31302688c81ec"
+          ],
+          "company_entity_id": "EN-a5e5f031b6f878cf",
+          "company_canonical_entity_id": "",
+          "company_name": "杭州微纳核芯电子科技有限公司",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "超10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": 1000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 10 亿元"
+          },
+          "announced_at": "2026-06-15",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-44257683c9946b",
       "name": "启明创投",
       "aliases": [],
@@ -30005,148 +29987,6 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-64448a0cc49c8c",
-      "name": "美团龙珠",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 4,
-      "historical_or_ambiguous_count": 4,
-      "portfolio_company_count": 3,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 4,
-      "china_market_company_count": 3,
-      "first_disclosed_at": "2026-02-11",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "historical_or_ambiguous": 4,
-        "lead": 1,
-        "participant": 3
-      },
-      "round_codes": [
-        "pre_series_a",
-        "series_b",
-        "undisclosed"
-      ],
-      "activity_count": 8,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-39ba5f9dcab4e98a",
-          "canonical_entity_id": "EN-39ba5f9dcab4e98a",
-          "name": "它石智航"
-        },
-        {
-          "entity_id": "EN-a6e5382c05dd0d16",
-          "canonical_entity_id": "EN-a6e5382c05dd0d16",
-          "name": "星海图"
-        },
-        {
-          "entity_id": "EN-b5251b35f15bedc4",
-          "canonical_entity_id": "EN-b5251b35f15bedc4",
-          "name": "Moonshot AI"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-ad0bc770ad30498d",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A轮跟投",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-8873d4e58dbf5436",
-          "funding_insight_id": "FI-43919de631afd988",
-          "event_ids": [
-            "EV-25d8a47fbc3c0fbb"
-          ],
-          "company_entity_id": "EN-7d418277ae14d4ea",
-          "company_canonical_entity_id": "",
-          "company_name": "北京月之暗面科技股份有限公司",
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "F轮",
-          "amount_original": "35亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 3500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "35 亿美元"
-          },
-          "announced_at": "2026-07-30",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "2026年5月20亿美元融资领投",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-cf66f8f9481c81d5",
-          "funding_insight_id": "FI-f5103149f04ea6ed",
-          "event_ids": [
-            "EV-c5d7d88d1aef8edb"
-          ],
-          "company_entity_id": "EN-b5251b35f15bedc4",
-          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-          "company_name": "Moonshot AI",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮",
-          "amount_original": "约20亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 20 亿美元"
-          },
-          "announced_at": "2026-05-07",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "current_round",
-          "role": "本轮领投；A轮参投",
-          "role_code": "lead"
         }
       ]
     },
@@ -32860,6 +32700,146 @@
       ]
     },
     {
+      "id": "INV-64448a0cc49c8c",
+      "name": "美团龙珠",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 4,
+      "historical_or_ambiguous_count": 4,
+      "portfolio_company_count": 3,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 4,
+      "china_market_company_count": 3,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-07-30",
+      "role_counts": {
+        "historical_or_ambiguous": 4,
+        "lead": 1,
+        "participant": 3
+      },
+      "round_codes": [
+        "pre_series_a",
+        "series_b",
+        "undisclosed"
+      ],
+      "activity_count": 8,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-39ba5f9dcab4e98a",
+          "canonical_entity_id": "EN-39ba5f9dcab4e98a",
+          "name": "它石智航"
+        },
+        {
+          "entity_id": "EN-a6e5382c05dd0d16",
+          "canonical_entity_id": "EN-a6e5382c05dd0d16",
+          "name": "星海图"
+        },
+        {
+          "entity_id": "EN-b5251b35f15bedc4",
+          "canonical_entity_id": "EN-b5251b35f15bedc4",
+          "name": "Moonshot AI"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-8873d4e58dbf5436",
+          "funding_insight_id": "FI-43919de631afd988",
+          "event_ids": [
+            "EV-25d8a47fbc3c0fbb"
+          ],
+          "company_entity_id": "EN-7d418277ae14d4ea",
+          "company_canonical_entity_id": "",
+          "company_name": "北京月之暗面科技股份有限公司",
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "F轮",
+          "amount_original": "35亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 3500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "35 亿美元"
+          },
+          "announced_at": "2026-07-30",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2026年5月20亿美元融资领投",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-cf66f8f9481c81d5",
+          "funding_insight_id": "FI-f5103149f04ea6ed",
+          "event_ids": [
+            "EV-c5d7d88d1aef8edb"
+          ],
+          "company_entity_id": "EN-b5251b35f15bedc4",
+          "company_canonical_entity_id": "EN-b5251b35f15bedc4",
+          "company_name": "Moonshot AI",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "约20亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 20 亿美元"
+          },
+          "announced_at": "2026-05-07",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮领投；A轮参投",
+          "role_code": "lead"
+        },
+        {
+          "activity_id": "IA-52daa1d1f7347817",
+          "funding_insight_id": "FI-b9eb4320e43ddfdf",
+          "event_ids": [
+            "EV-81810a440198ac3c"
+          ],
+          "company_entity_id": "EN-39ba5f9dcab4e98a",
+          "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+          "company_name": "它石智航",
+          "round": "Pre-A轮",
+          "round_code": "pre_series_a",
+          "round_original": "Pre-A轮",
+          "amount_original": "4.55亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 455000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4.55 亿美元"
+          },
+          "announced_at": "2026-04-17",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-3b7508dcdb8d24",
       "name": "华福投资",
       "aliases": [],
@@ -34684,281 +34664,6 @@
           "disclosure_status": "disclosed",
           "scope": "current_round",
           "role": "既有投资方，本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-ebe9e182604dd4",
-      "name": "美团战投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 3,
-      "historical_or_ambiguous_count": 2,
-      "portfolio_company_count": 2,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 3,
-      "china_market_company_count": 2,
-      "first_disclosed_at": "2026-02-11",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "co_lead": 3,
-        "historical_or_ambiguous": 2
-      },
-      "round_codes": [
-        "multi_round",
-        "pre_series_a"
-      ],
-      "activity_count": 5,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-bd0658982d1f728d",
-          "canonical_entity_id": "",
-          "name": "广东天机智能系统有限公司"
-        },
-        {
-          "entity_id": "EN-39ba5f9dcab4e98a",
-          "canonical_entity_id": "EN-39ba5f9dcab4e98a",
-          "name": "它石智航"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-902e64ece24d8ba2",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A轮领投",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-c9f1a0952a4043b8",
-          "funding_insight_id": "FI-033dd55115963cb3",
-          "event_ids": [
-            "EV-0896f0e7b703bed2"
-          ],
-          "company_entity_id": "EN-bd0658982d1f728d",
-          "company_canonical_entity_id": "",
-          "company_name": "广东天机智能系统有限公司",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-05-25",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
-        },
-        {
-          "activity_id": "IA-ae7fca3b6545563e",
-          "funding_insight_id": "FI-b9eb4320e43ddfdf",
-          "event_ids": [
-            "EV-81810a440198ac3c"
-          ],
-          "company_entity_id": "EN-39ba5f9dcab4e98a",
-          "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
-          "company_name": "它石智航",
-          "round": "Pre-A轮",
-          "round_code": "pre_series_a",
-          "round_original": "Pre-A轮",
-          "amount_original": "4.55亿美金",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 455000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "4.55 亿美元"
-          },
-          "announced_at": "2026-04-17",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
-        }
-      ]
-    },
-    {
-      "id": "INV-7b71e30e6b7ddc",
-      "name": "锡创投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 3,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 3,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 3,
-      "china_market_company_count": 3,
-      "first_disclosed_at": "2026-03-10",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "participant": 3
-      },
-      "round_codes": [
-        "multi_round",
-        "series_a_plus_plus",
-        "strategic"
-      ],
-      "activity_count": 3,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-60d2cc785c19e818",
-          "canonical_entity_id": "",
-          "name": "北京三启万物科技有限公司"
-        },
-        {
-          "entity_id": "EN-cb1041ddf6123c37",
-          "canonical_entity_id": "EN-cb1041ddf6123c37",
-          "name": "灵初智能"
-        },
-        {
-          "entity_id": "EN-8dc72a4672894e0f",
-          "canonical_entity_id": "EN-8dc72a4672894e0f",
-          "name": "自变量机器人科技（深圳）有限公司"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-0af1a4f993863701",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-f7873ffc4268ac79",
-          "funding_insight_id": "FI-b1494fe383b9e92d",
-          "event_ids": [
-            "EV-e8f381baf505ac32"
-          ],
-          "company_entity_id": "EN-60d2cc785c19e818",
-          "company_canonical_entity_id": "",
-          "company_name": "北京三启万物科技有限公司",
-          "round": "战略融资",
-          "round_code": "strategic",
-          "round_original": "战略融资",
-          "amount_original": "10亿人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-07-02",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-838ac1815a31feae",
-          "funding_insight_id": "FI-3b4a0a6b7397d174",
-          "event_ids": [
-            "EV-a909450a2d1a1fe1"
-          ],
-          "company_entity_id": "EN-cb1041ddf6123c37",
-          "company_canonical_entity_id": "EN-cb1041ddf6123c37",
-          "company_name": "灵初智能",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "天使轮及Pre-A轮",
-          "amount_original": "20亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "20 亿元"
-          },
-          "announced_at": "2026-03-10",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
           "role_code": "participant"
         }
       ]
@@ -41087,7 +40792,7 @@
             "EV-39b075c62ba4e927"
           ],
           "company_entity_id": "EN-f9075cc99990820a",
-          "company_canonical_entity_id": "EN-f9075cc99990820a",
+          "company_canonical_entity_id": "",
           "company_name": "P-1 AI, Inc.",
           "round": "A轮",
           "round_code": "series_a",
@@ -42266,6 +41971,146 @@
             "display_zh": "约 5 亿元"
           },
           "announced_at": "2026-07-02",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-7b71e30e6b7ddc",
+      "name": "锡创投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 3,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 3,
+      "china_market_company_count": 3,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-07-02",
+      "role_counts": {
+        "participant": 3
+      },
+      "round_codes": [
+        "multi_round",
+        "series_a_plus_plus",
+        "strategic"
+      ],
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-60d2cc785c19e818",
+          "canonical_entity_id": "",
+          "name": "北京三启万物科技有限公司"
+        },
+        {
+          "entity_id": "EN-cb1041ddf6123c37",
+          "canonical_entity_id": "EN-cb1041ddf6123c37",
+          "name": "灵初智能"
+        },
+        {
+          "entity_id": "EN-8dc72a4672894e0f",
+          "canonical_entity_id": "EN-8dc72a4672894e0f",
+          "name": "自变量机器人科技（深圳）有限公司"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-f7873ffc4268ac79",
+          "funding_insight_id": "FI-b1494fe383b9e92d",
+          "event_ids": [
+            "EV-e8f381baf505ac32"
+          ],
+          "company_entity_id": "EN-60d2cc785c19e818",
+          "company_canonical_entity_id": "",
+          "company_name": "北京三启万物科技有限公司",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "10亿人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-07-02",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-838ac1815a31feae",
+          "funding_insight_id": "FI-3b4a0a6b7397d174",
+          "event_ids": [
+            "EV-a909450a2d1a1fe1"
+          ],
+          "company_entity_id": "EN-cb1041ddf6123c37",
+          "company_canonical_entity_id": "EN-cb1041ddf6123c37",
+          "company_name": "灵初智能",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "天使轮及Pre-A轮",
+          "amount_original": "20亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿元"
+          },
+          "announced_at": "2026-03-10",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-0af1a4f993863701",
+          "funding_insight_id": "FI-e9bdd4e9374b04ca",
+          "event_ids": [
+            "EV-41c54c428d84cc1e",
+            "EV-26439e34295a0519",
+            "EV-cec68369662236fd"
+          ],
+          "company_entity_id": "EN-8dc72a4672894e0f",
+          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+          "company_name": "自变量机器人科技（深圳）有限公司",
+          "round": "A++轮",
+          "round_code": "series_a_plus_plus",
+          "round_original": "A++轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-01-12",
           "market_region": "CN",
           "china_market_match": true,
           "disclosure_status": "disclosed",
@@ -44220,6 +44065,139 @@
       ]
     },
     {
+      "id": "INV-ebe9e182604dd4",
+      "name": "美团战投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 3,
+      "china_market_company_count": 2,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-05-25",
+      "role_counts": {
+        "co_lead": 3,
+        "historical_or_ambiguous": 2
+      },
+      "round_codes": [
+        "multi_round",
+        "pre_series_a"
+      ],
+      "activity_count": 5,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-bd0658982d1f728d",
+          "canonical_entity_id": "",
+          "name": "广东天机智能系统有限公司"
+        },
+        {
+          "entity_id": "EN-39ba5f9dcab4e98a",
+          "canonical_entity_id": "EN-39ba5f9dcab4e98a",
+          "name": "它石智航"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-c9f1a0952a4043b8",
+          "funding_insight_id": "FI-033dd55115963cb3",
+          "event_ids": [
+            "EV-0896f0e7b703bed2"
+          ],
+          "company_entity_id": "EN-bd0658982d1f728d",
+          "company_canonical_entity_id": "",
+          "company_name": "广东天机智能系统有限公司",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-05-25",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-ae7fca3b6545563e",
+          "funding_insight_id": "FI-b9eb4320e43ddfdf",
+          "event_ids": [
+            "EV-81810a440198ac3c"
+          ],
+          "company_entity_id": "EN-39ba5f9dcab4e98a",
+          "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+          "company_name": "它石智航",
+          "round": "Pre-A轮",
+          "round_code": "pre_series_a",
+          "round_original": "Pre-A轮",
+          "amount_original": "4.55亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 455000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4.55 亿美元"
+          },
+          "announced_at": "2026-04-17",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-6196b8b356a2f9a0",
+          "funding_insight_id": "FI-5c529fe1ecb9dd07",
+          "event_ids": [
+            "EV-1188b1585b835fe1"
+          ],
+          "company_entity_id": "EN-39ba5f9dcab4e98a",
+          "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+          "company_name": "它石智航",
+          "round": "Pre-A轮",
+          "round_code": "pre_series_a",
+          "round_original": "Pre-A轮",
+          "amount_original": "超4.5亿美元（约30亿元）",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 450000000,
+            "min_value": 450000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 4.5 亿美元"
+          },
+          "announced_at": "2026-04-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        }
+      ]
+    },
+    {
       "id": "INV-d389090ac64f2a",
       "name": "首程控股",
       "aliases": [],
@@ -45016,141 +44994,6 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-cd1c62a70fc238",
-      "name": "阿里云",
-      "aliases": [],
-      "canonical_entity_id": "EN-e16fc821f34228d1",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 3,
-      "portfolio_company_count": 2,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 2,
-      "china_market_company_count": 2,
-      "first_disclosed_at": "2026-01-29",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "historical_or_ambiguous": 3,
-        "lead": 2
-      },
-      "round_codes": [
-        "series_a",
-        "series_b"
-      ],
-      "activity_count": 5,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-b3c628b196bfbbe9",
-          "canonical_entity_id": "",
-          "name": "贝联珠贯科技（浙江）有限公司"
-        },
-        {
-          "entity_id": "EN-9b21c9bf3305c0d6",
-          "canonical_entity_id": "",
-          "name": "生数科技"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-c5cbe5f6bbcc15c9",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A+轮领投",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-84f94982a81fd6cf",
-          "funding_insight_id": "FI-57f8607e9a2111db",
-          "event_ids": [
-            "EV-cf9e968f38db7796"
-          ],
-          "company_entity_id": "EN-b3c628b196bfbbe9",
-          "company_canonical_entity_id": "",
-          "company_name": "贝联珠贯科技（浙江）有限公司",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "超亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 100000000,
-            "min_value": 100000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 1 亿元"
-          },
-          "announced_at": "2026-07-30",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        },
-        {
-          "activity_id": "IA-ff12385d07427a1e",
-          "funding_insight_id": "FI-a385248b0f830a67",
-          "event_ids": [
-            "EV-df17b95cf25e7840"
-          ],
-          "company_entity_id": "EN-062ed8ada14ccffe",
-          "company_canonical_entity_id": "",
-          "company_name": "硅基流动（SiliconFlow）",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "20亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "20 亿元"
-          },
-          "announced_at": "2026-06-16",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A轮领投",
-          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -53508,6 +53351,139 @@
       ]
     },
     {
+      "id": "INV-cd1c62a70fc238",
+      "name": "阿里云",
+      "aliases": [],
+      "canonical_entity_id": "EN-e16fc821f34228d1",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 3,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 2,
+      "china_market_company_count": 2,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-07-30",
+      "role_counts": {
+        "historical_or_ambiguous": 3,
+        "lead": 2
+      },
+      "round_codes": [
+        "series_a",
+        "series_b"
+      ],
+      "activity_count": 5,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-b3c628b196bfbbe9",
+          "canonical_entity_id": "",
+          "name": "贝联珠贯科技（浙江）有限公司"
+        },
+        {
+          "entity_id": "EN-9b21c9bf3305c0d6",
+          "canonical_entity_id": "",
+          "name": "生数科技"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-84f94982a81fd6cf",
+          "funding_insight_id": "FI-57f8607e9a2111db",
+          "event_ids": [
+            "EV-cf9e968f38db7796"
+          ],
+          "company_entity_id": "EN-b3c628b196bfbbe9",
+          "company_canonical_entity_id": "",
+          "company_name": "贝联珠贯科技（浙江）有限公司",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-07-30",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        },
+        {
+          "activity_id": "IA-ff12385d07427a1e",
+          "funding_insight_id": "FI-a385248b0f830a67",
+          "event_ids": [
+            "EV-df17b95cf25e7840"
+          ],
+          "company_entity_id": "EN-062ed8ada14ccffe",
+          "company_canonical_entity_id": "",
+          "company_name": "硅基流动（SiliconFlow）",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "20亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿元"
+          },
+          "announced_at": "2026-06-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮领投",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-1cac5aad68bb5c66",
+          "funding_insight_id": "FI-7108544d47292865",
+          "event_ids": [
+            "EV-5575555340c04c5a"
+          ],
+          "company_entity_id": "EN-9b21c9bf3305c0d6",
+          "company_canonical_entity_id": "",
+          "company_name": "生数科技",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "20亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿元"
+          },
+          "announced_at": "2026-04-10",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        }
+      ]
+    },
+    {
       "id": "INV-f28cb83db18f9b",
       "name": "New Enterprise Associates (NEA)",
       "aliases": [],
@@ -53541,7 +53517,7 @@
         },
         {
           "entity_id": "EN-f9075cc99990820a",
-          "canonical_entity_id": "EN-f9075cc99990820a",
+          "canonical_entity_id": "",
           "name": "P-1 AI, Inc."
         }
       ],
@@ -53583,7 +53559,7 @@
             "EV-39b075c62ba4e927"
           ],
           "company_entity_id": "EN-f9075cc99990820a",
-          "company_canonical_entity_id": "EN-f9075cc99990820a",
+          "company_canonical_entity_id": "",
           "company_name": "P-1 AI, Inc.",
           "round": "A轮",
           "round_code": "series_a",
@@ -68914,413 +68890,6 @@
       ]
     },
     {
-      "id": "INV-7cdbb9f500dbcc",
-      "name": "北京信息产业发展基金",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-07-01",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a_plus_plus"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-8dc72a4672894e0f",
-          "canonical_entity_id": "EN-8dc72a4672894e0f",
-          "name": "自变量机器人科技（深圳）有限公司"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-c7420f4c1909b3ea",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-429aba698230ff55",
-          "funding_insight_id": "FI-6adc0d7bfd441daa",
-          "event_ids": [
-            "EV-b4d6c556eadaa272"
-          ],
-          "company_entity_id": "EN-ada6f7916f22af98",
-          "company_canonical_entity_id": "",
-          "company_name": "求之科技(无锡)有限公司",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "1亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 100000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1 亿美元"
-          },
-          "announced_at": "2026-07-01",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "种子轮投资方",
-          "role_code": "historical_or_ambiguous"
-        }
-      ]
-    },
-    {
-      "id": "INV-d94dcc7f7d25f4",
-      "name": "华映资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 3,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-05-19",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "co_lead": 1,
-        "historical_or_ambiguous": 3
-      },
-      "round_codes": [
-        "pre_series_a"
-      ],
-      "activity_count": 4,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-e22521e7de65d819",
-          "canonical_entity_id": "",
-          "name": "上海珞博智能科技有限公司"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-48f46017b0922ee3",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "Pre-A+++轮领投",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-05d5497fee8e413c",
-          "funding_insight_id": "FI-a3c129ab8eb46aa4",
-          "event_ids": [
-            "EV-d67dd793fe1f2c04"
-          ],
-          "company_entity_id": "EN-5f03b37d8cca57e1",
-          "company_canonical_entity_id": "",
-          "company_name": "北京灵御智能科技有限公司",
-          "round": "Pre-A轮",
-          "round_code": "pre_series_a",
-          "round_original": "Pre-A轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-08-26",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "过往投资方",
-          "role_code": "historical_or_ambiguous"
-        },
-        {
-          "activity_id": "IA-5326d6bc5804c332",
-          "funding_insight_id": "FI-fd1db2608b7fc431",
-          "event_ids": [
-            "EV-b5dd10300e34f2d3"
-          ],
-          "company_entity_id": "EN-e22521e7de65d819",
-          "company_canonical_entity_id": "",
-          "company_name": "上海珞博智能科技有限公司",
-          "round": "Pre-A轮",
-          "round_code": "pre_series_a",
-          "round_original": "Pre-A轮",
-          "amount_original": "亿元级",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 100000000,
-            "max_value": 1000000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "1 亿元–10 亿元"
-          },
-          "announced_at": "2026-07-13",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead"
-        }
-      ],
-      "translations": {
-        "zh-CN": {
-          "latest_activities[0].role": {
-            "text": "Pre-A+++轮领投",
-            "source_hash": "2bc4a0506b339486d82e3b953efe6c83dce23da9ab475f137cd102ae5118e3f6",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-09-12T09:32:49.993Z",
-            "status": "translated"
-          }
-        }
-      }
-    },
-    {
-      "id": "INV-c2bf77c75c0a07",
-      "name": "南山战新投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-09-12",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a_plus_plus"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-8dc72a4672894e0f",
-          "canonical_entity_id": "EN-8dc72a4672894e0f",
-          "name": "自变量机器人科技（深圳）有限公司"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-5a3a08c3d280c5e4",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-8bad52cb17b239",
-      "name": "字节跳动",
-      "aliases": [],
-      "canonical_entity_id": "EN-5388bc10736a0eff",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-07-23",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "lead": 1
-      },
-      "round_codes": [
-        "series_a_plus_plus"
-      ],
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-8dc72a4672894e0f",
-          "canonical_entity_id": "EN-8dc72a4672894e0f",
-          "name": "自变量机器人科技（深圳）有限公司"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-cf2350c970ee2338",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        },
-        {
-          "activity_id": "IA-ec4912c8cb2b212b",
-          "funding_insight_id": "FI-ee613463b934eef6",
-          "event_ids": [
-            "EV-50dc1a246ea090e5"
-          ],
-          "company_entity_id": "EN-cfec5bef40cbf3ae",
-          "company_canonical_entity_id": "",
-          "company_name": "天津设序科技有限公司",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "超亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 100000000,
-            "min_value": 100000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 1 亿元"
-          },
-          "announced_at": "2026-07-23",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A轮领投方",
-          "role_code": "historical_or_ambiguous"
-        }
-      ]
-    },
-    {
       "id": "INV-5327a63d6f463a",
       "name": "哈工程资管",
       "aliases": [],
@@ -75636,6 +75205,133 @@
           "scope": "current_round",
           "role": "本轮领投",
           "role_code": "lead"
+        }
+      ]
+    },
+    {
+      "id": "INV-d94dcc7f7d25f4",
+      "name": "华映资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 3,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-08-26",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 3
+      },
+      "round_codes": [
+        "pre_series_a"
+      ],
+      "activity_count": 4,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-e22521e7de65d819",
+          "canonical_entity_id": "",
+          "name": "上海珞博智能科技有限公司"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-05d5497fee8e413c",
+          "funding_insight_id": "FI-a3c129ab8eb46aa4",
+          "event_ids": [
+            "EV-d67dd793fe1f2c04"
+          ],
+          "company_entity_id": "EN-5f03b37d8cca57e1",
+          "company_canonical_entity_id": "",
+          "company_name": "北京灵御智能科技有限公司",
+          "round": "Pre-A轮",
+          "round_code": "pre_series_a",
+          "round_original": "Pre-A轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-08-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "过往投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-5326d6bc5804c332",
+          "funding_insight_id": "FI-fd1db2608b7fc431",
+          "event_ids": [
+            "EV-b5dd10300e34f2d3"
+          ],
+          "company_entity_id": "EN-e22521e7de65d819",
+          "company_canonical_entity_id": "",
+          "company_name": "上海珞博智能科技有限公司",
+          "round": "Pre-A轮",
+          "round_code": "pre_series_a",
+          "round_original": "Pre-A轮",
+          "amount_original": "亿元级",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 100000000,
+            "max_value": 1000000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "1 亿元–10 亿元"
+          },
+          "announced_at": "2026-07-13",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        },
+        {
+          "activity_id": "IA-d5a5607e4b5505b9",
+          "funding_insight_id": "FI-e80d19f187b02392",
+          "event_ids": [
+            "EV-b0e0458e4ae40f66"
+          ],
+          "company_entity_id": "EN-b6994e02c1cd9ad5",
+          "company_canonical_entity_id": "",
+          "company_name": "北京灵御智能科技有限公司",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 100000000,
+            "max_value": 1000000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "1 亿元–10 亿元"
+          },
+          "announced_at": "2026-05-19",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子+轮领投",
+          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -87384,7 +87080,7 @@
             "EV-39b075c62ba4e927"
           ],
           "company_entity_id": "EN-f9075cc99990820a",
-          "company_canonical_entity_id": "EN-f9075cc99990820a",
+          "company_canonical_entity_id": "",
           "company_name": "P-1 AI, Inc.",
           "round": "A轮",
           "round_code": "series_a",
@@ -88249,6 +87945,105 @@
           "scope": "historical_or_ambiguous",
           "role": "老股东持续加注",
           "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-8bad52cb17b239",
+      "name": "字节跳动",
+      "aliases": [],
+      "canonical_entity_id": "EN-5388bc10736a0eff",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-07-23",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "lead": 1
+      },
+      "round_codes": [
+        "series_a_plus_plus"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8dc72a4672894e0f",
+          "canonical_entity_id": "EN-8dc72a4672894e0f",
+          "name": "自变量机器人科技（深圳）有限公司"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-ec4912c8cb2b212b",
+          "funding_insight_id": "FI-ee613463b934eef6",
+          "event_ids": [
+            "EV-50dc1a246ea090e5"
+          ],
+          "company_entity_id": "EN-cfec5bef40cbf3ae",
+          "company_canonical_entity_id": "",
+          "company_name": "天津设序科技有限公司",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-07-23",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮领投方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-cf2350c970ee2338",
+          "funding_insight_id": "FI-e9bdd4e9374b04ca",
+          "event_ids": [
+            "EV-41c54c428d84cc1e",
+            "EV-26439e34295a0519",
+            "EV-cec68369662236fd"
+          ],
+          "company_entity_id": "EN-8dc72a4672894e0f",
+          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+          "company_name": "自变量机器人科技（深圳）有限公司",
+          "round": "A++轮",
+          "round_code": "series_a_plus_plus",
+          "round_original": "A++轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-01-12",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
         }
       ]
     },
@@ -102630,6 +102425,105 @@
             "display_zh": "10 亿元"
           },
           "announced_at": "2026-07-01",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-7cdbb9f500dbcc",
+      "name": "北京信息产业发展基金",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-07-01",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_plus_plus"
+      ],
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8dc72a4672894e0f",
+          "canonical_entity_id": "EN-8dc72a4672894e0f",
+          "name": "自变量机器人科技（深圳）有限公司"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-429aba698230ff55",
+          "funding_insight_id": "FI-6adc0d7bfd441daa",
+          "event_ids": [
+            "EV-b4d6c556eadaa272"
+          ],
+          "company_entity_id": "EN-ada6f7916f22af98",
+          "company_canonical_entity_id": "",
+          "company_name": "求之科技(无锡)有限公司",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "1亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1 亿美元"
+          },
+          "announced_at": "2026-07-01",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮投资方",
+          "role_code": "historical_or_ambiguous"
+        },
+        {
+          "activity_id": "IA-c7420f4c1909b3ea",
+          "funding_insight_id": "FI-e9bdd4e9374b04ca",
+          "event_ids": [
+            "EV-41c54c428d84cc1e",
+            "EV-26439e34295a0519",
+            "EV-cec68369662236fd"
+          ],
+          "company_entity_id": "EN-8dc72a4672894e0f",
+          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+          "company_name": "自变量机器人科技（深圳）有限公司",
+          "round": "A++轮",
+          "round_code": "series_a_plus_plus",
+          "round_original": "A++轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-01-12",
           "market_region": "CN",
           "china_market_match": true,
           "disclosure_status": "disclosed",
@@ -140588,6 +140482,74 @@
       ]
     },
     {
+      "id": "INV-c2bf77c75c0a07",
+      "name": "南山战新投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-01-12",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_plus_plus"
+      ],
+      "activity_count": 1,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8dc72a4672894e0f",
+          "canonical_entity_id": "EN-8dc72a4672894e0f",
+          "name": "自变量机器人科技（深圳）有限公司"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-5a3a08c3d280c5e4",
+          "funding_insight_id": "FI-e9bdd4e9374b04ca",
+          "event_ids": [
+            "EV-41c54c428d84cc1e",
+            "EV-26439e34295a0519",
+            "EV-cec68369662236fd"
+          ],
+          "company_entity_id": "EN-8dc72a4672894e0f",
+          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+          "company_name": "自变量机器人科技（深圳）有限公司",
+          "round": "A++轮",
+          "round_code": "series_a_plus_plus",
+          "round_original": "A++轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-01-12",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ]
+    },
+    {
       "id": "INV-a1aa7a11bceed2",
       "name": "Embark",
       "aliases": [],
@@ -146722,138 +146684,6 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
-        }
-      ]
-    },
-    {
-      "id": "INV-d7ace160bc153c",
-      "name": "光速光合",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-09-12",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "activity_count": 1,
-      "portfolio_companies": [],
-      "latest_activities": [
-        {
-          "activity_id": "IA-02baec2751af8214",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "Pre-A++轮领投",
-          "role_code": "historical_or_ambiguous"
-        }
-      ],
-      "translations": {
-        "zh-CN": {
-          "latest_activities[0].role": {
-            "text": "Pre-A++轮领投",
-            "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-09-12T09:32:49.993Z",
-            "status": "translated"
-          }
-        }
-      }
-    },
-    {
-      "id": "INV-b92fd40ba80d4b",
-      "name": "国科投资",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-09-12",
-      "latest_disclosed_at": "2026-09-12",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "activity_count": 1,
-      "portfolio_companies": [],
-      "latest_activities": [
-        {
-          "activity_id": "IA-4b9e57a8981c9c9e",
-          "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-          "event_ids": [
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd",
-            "EV-41c54c428d84cc1e"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人科技（深圳）有限公司",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A+轮领投",
-          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -154009,7 +153839,7 @@
             "EV-39b075c62ba4e927"
           ],
           "company_entity_id": "EN-f9075cc99990820a",
-          "company_canonical_entity_id": "EN-f9075cc99990820a",
+          "company_canonical_entity_id": "",
           "company_name": "P-1 AI, Inc.",
           "round": "A轮",
           "round_code": "series_a",
@@ -154067,7 +153897,7 @@
             "EV-39b075c62ba4e927"
           ],
           "company_entity_id": "EN-f9075cc99990820a",
-          "company_canonical_entity_id": "EN-f9075cc99990820a",
+          "company_canonical_entity_id": "",
           "company_name": "P-1 AI, Inc.",
           "round": "A轮",
           "round_code": "series_a",
@@ -154125,7 +153955,7 @@
             "EV-39b075c62ba4e927"
           ],
           "company_entity_id": "EN-f9075cc99990820a",
-          "company_canonical_entity_id": "EN-f9075cc99990820a",
+          "company_canonical_entity_id": "",
           "company_name": "P-1 AI, Inc.",
           "round": "A轮",
           "round_code": "series_a",
@@ -154183,7 +154013,7 @@
             "EV-39b075c62ba4e927"
           ],
           "company_entity_id": "EN-f9075cc99990820a",
-          "company_canonical_entity_id": "EN-f9075cc99990820a",
+          "company_canonical_entity_id": "",
           "company_name": "P-1 AI, Inc.",
           "round": "A轮",
           "round_code": "series_a",
@@ -168751,6 +168581,138 @@
           "disclosure_status": "disclosed",
           "scope": "historical_or_ambiguous",
           "role": "既有投资方（A轮联合领投）",
+          "role_code": "historical_or_ambiguous"
+        }
+      ]
+    },
+    {
+      "id": "INV-d7ace160bc153c",
+      "name": "光速光合",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-01-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-02baec2751af8214",
+          "funding_insight_id": "FI-e9bdd4e9374b04ca",
+          "event_ids": [
+            "EV-41c54c428d84cc1e",
+            "EV-26439e34295a0519",
+            "EV-cec68369662236fd"
+          ],
+          "company_entity_id": "EN-8dc72a4672894e0f",
+          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+          "company_name": "自变量机器人科技（深圳）有限公司",
+          "round": "A++轮",
+          "round_code": "series_a_plus_plus",
+          "round_original": "A++轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-01-12",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Pre-A++轮领投",
+          "role_code": "historical_or_ambiguous"
+        }
+      ],
+      "translations": {
+        "zh-CN": {
+          "latest_activities[0].role": {
+            "text": "Pre-A++轮领投",
+            "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-12T09:32:49.993Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "id": "INV-b92fd40ba80d4b",
+      "name": "国科投资",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-01-12",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-4b9e57a8981c9c9e",
+          "funding_insight_id": "FI-e9bdd4e9374b04ca",
+          "event_ids": [
+            "EV-41c54c428d84cc1e",
+            "EV-26439e34295a0519",
+            "EV-cec68369662236fd"
+          ],
+          "company_entity_id": "EN-8dc72a4672894e0f",
+          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+          "company_name": "自变量机器人科技（深圳）有限公司",
+          "round": "A++轮",
+          "round_code": "series_a_plus_plus",
+          "round_original": "A++轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-01-12",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A+轮领投",
           "role_code": "historical_or_ambiguous"
         }
       ]

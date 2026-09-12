@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T09:59:46.292Z",
+    "generatedAt": "2026-09-12T10:08:42.252Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
     "eventCount": 3193,
@@ -63,8 +63,8 @@
     ],
     "china_market_activity_count": 9,
     "china_market_company_count": 8,
-    "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-09-12",
+    "first_disclosed_at": "2026-01-12",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 7,
@@ -122,56 +122,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-da81851b42cbfa46",
-        "funding_insight_id": "FI-0fff8c5cc6dfdca0",
-        "event_ids": [
-          "EV-26439e34295a0519",
-          "EV-cec68369662236fd",
-          "EV-41c54c428d84cc1e"
-        ],
-        "company_entity_id": "EN-8dc72a4672894e0f",
-        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-        "company_name": "自变量机器人科技（深圳）有限公司",
-        "round": "A++轮",
-        "round_code": "series_a_plus_plus",
-        "round_original": "A++轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-09-12",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-16371607ed092d64",
-            "source_url": "https://www.qbitai.com/2026/01/369147.html",
-            "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
-            "source_content_hash": "466042b9c1271f10",
-            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-          },
-          {
-            "source_id": "FISRC-449b969616ed1e95",
-            "source_url": "https://www.36kr.com/p/3636080421586182",
-            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-            "source_content_hash": "abef77aff9b6b68f",
-            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-          }
-        ]
-      },
       {
         "activity_id": "IA-4ab1d62f4188b4b3",
         "funding_insight_id": "FI-fae9478ac0e65316",
@@ -780,25 +730,51 @@
             "quote_hash": "9892c50eb2be44a65626c41984a0484ddcb5001adc621dc013072979ab7d31a8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-da81851b42cbfa46",
+        "funding_insight_id": "FI-e9bdd4e9374b04ca",
+        "event_ids": [
+          "EV-41c54c428d84cc1e",
+          "EV-26439e34295a0519",
+          "EV-cec68369662236fd"
+        ],
+        "company_entity_id": "EN-8dc72a4672894e0f",
+        "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+        "company_name": "自变量机器人科技（深圳）有限公司",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-01-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-449b969616ed1e95",
+            "source_url": "https://www.36kr.com/p/3636080421586182",
+            "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+            "source_content_hash": "abef77aff9b6b68f",
+            "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+            "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-16371607ed092d64",
-        "source_url": "https://www.qbitai.com/2026/01/369147.html",
-        "source_title": "具身智能开年最大融资，字节红杉领投10亿 - 量子位",
-        "source_content_hash": "466042b9c1271f10",
-        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-      },
-      {
-        "source_id": "FISRC-449b969616ed1e95",
-        "source_url": "https://www.36kr.com/p/3636080421586182",
-        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-        "source_content_hash": "abef77aff9b6b68f",
-        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-      },
       {
         "source_id": "FISRC-67ccadc4294defd6",
         "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
@@ -926,6 +902,14 @@
         "source_content_hash": "0c25173fc4c74b1f",
         "quote": "无界动力2025年11月完成3亿元天使轮融资，由红杉中国、线性资本领投",
         "quote_hash": "9892c50eb2be44a65626c41984a0484ddcb5001adc621dc013072979ab7d31a8"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
       }
     ]
   }

@@ -39,7 +39,15 @@ import {
   verifiedFundingSourceUrls,
 } from "../build-funding-source-health-v1.mjs";
 import { resolveReviewedCompany } from "../project-funding-taxonomy-to-events-v4-1.mjs";
-import { classificationEntityAggregationProblems, sourceTitleQuarantinesProjection } from "../assert-taxonomy-consistency-v4-1.mjs";
+import { classificationEntityAggregationProblems, sourceTitleQuarantinesProjection, fundingCardsByTrigger } from "../assert-taxonomy-consistency-v4-1.mjs";
+
+test("taxonomy validates the event's own card before a repost's cross-reference", () => {
+  const repost = { triggered_by_event_id: "SEPT", source_event_ids: ["JAN", "SEPT"] };
+  const original = { triggered_by_event_id: "JAN" };
+  const cards = fundingCardsByTrigger([repost, original]);
+  assert.equal(cards.get("JAN"), original);
+  assert.equal(cards.get("SEPT"), repost);
+});
 
 test("only an explicitly quarantined source title excludes the catalog projection", () => {
   const event = { event_id: "E", display_title_zh: "智能体AI能否让美国制造业回归？" };
@@ -2611,4 +2619,21 @@ test("全部历史融资事件都有 CB 2026 层级与产品形态复核决定",
   assert.equal(decisions.get("EV-cded77b1de2db61a").product_form_id, "model");
   assert.equal(decisions.get("EV-6e516b6e68def9cf").product_form_id, "compute_cloud_service");
   assert.equal(decisions.get("EV-bffc68e7bb4d598b").market_category_id, "industry_applications");
+});
+
+test("reviewed repost links merge a later publication into the original financing date", async () => {
+  const { aggregateFundingRoundCards } = await import("../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs");
+  const first = validCard();
+  first.triggered_by_event_id = "EV-january";
+  first.source_event_ids = ["EV-january"];
+  first.financing.announced_at = "2026-01-12";
+  const repost = structuredClone(first);
+  repost.triggered_by_event_id = "EV-september";
+  repost.source_event_ids = ["EV-september", "EV-january"];
+  repost.financing.announced_at = "2026-09-12";
+  const grouped = aggregateFundingRoundCards([first, repost]);
+  assert.equal(grouped.length, 1);
+  assert.equal(grouped[0].financing.announced_at, "2026-01-12");
+  assert.deepEqual(new Set(grouped[0].source_event_ids), new Set(["EV-january", "EV-september"]));
+  assert.equal(repost.financing.announced_at, "2026-09-12");
 });
