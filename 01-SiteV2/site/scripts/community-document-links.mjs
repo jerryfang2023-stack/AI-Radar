@@ -92,7 +92,7 @@ export function buildDocumentIndex(items) {
   for (const item of items) {
     for (const link of mergeDocumentLinks(item.links || [])) {
       const key = documentKey(link.href);
-      const owner = { itemId: item.id, itemTitle: item.title, itemUrl: item.url, source: item.source, sourceName: item.sourceName };
+      const owner = { itemId: item.id, itemTitle: item.title, itemUrl: item.originalUrl || item.url, source: item.source, sourceName: item.sourceName };
       if (!index.has(key)) index.set(key, { href: link.href, text: link.text || link.href, ...owner, owners: [] });
       const resource = index.get(key);
       if (!resource.owners.some((entry) => entry.itemId === item.id)) resource.owners.push(owner);
