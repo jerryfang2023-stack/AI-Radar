@@ -1,7 +1,35 @@
 {
-  "version": 1,
+  "version": 2,
   "asOf": "2026-09-12",
-  "basis": "Excel 方向整理；按原帖去重，同一项目的不同帖子分别计数。痛点为编辑归纳，金额为历史来源陈述，未经独立核验。",
+  "basis": "随每日已验收的生财入库数据累计更新，按原帖去重，同项目不同帖子分别计数。沿用已整理方向；新增帖子按明确标题规则归类，歧义进入待分类。方向痛点为编辑归纳，收费为已核对的历史来源陈述，未经独立核验。",
+  "meta": {
+    "classifiedPosts": 191,
+    "pendingPosts": 89,
+    "automaticPosts": 12,
+    "pricingReviewIds": [
+      "68382ff9a01f29",
+      "269661cabd2bc2",
+      "5f78c8c12add2b",
+      "84e6e29e823cf8",
+      "976a8d7d8d1e92",
+      "43bd546a71516f",
+      "ae8a3e8a5c1968",
+      "e95c022bf5e8d6",
+      "dcf052507f254a",
+      "6828894eefaf33",
+      "561933114d57cd",
+      "e37bafda4e9309",
+      "f323c51be59e24",
+      "874f366ac5f49b",
+      "f2fb7b86fffd8f",
+      "02c3bd3a07f772",
+      "e89bbcbe99eb59",
+      "f37e56d460dfcc",
+      "89f943d5a0efa2",
+      "a80435dceb4276",
+      "24900861ae6052"
+    ]
+  },
   "directions": [
     {
       "id": "apps",
@@ -17,17 +45,30 @@
           "links": []
         },
         {
+          "itemId": "a90cc63c1fde63",
+          "title": "春招两月盈利 2.8w：我做了一个 AI 简历填表插件，从发现商机到卖出去的完整复盘",
+          "author": "又道天凉好个秋",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582828221512",
+          "links": [
+            {
+              "href": "https://my.feishu.cn/wiki/U8exwxmrdiCgQBkP5HtcOJzEnFb",
+              "text": "https://my.feishu.cn/wiki/U8exwxmrdiCgQBkP5HtcOJzEnFb",
+              "discoveredVia": "post_href"
+            }
+          ]
+        },
+        {
+          "itemId": "87d5106f9774b2",
+          "title": "从没做过小程序，到 9000 元接单 10 天交付客户项目：我是怎么用 AI Coding 跑通闭环的",
+          "author": "allen",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/14425515851255252",
+          "links": []
+        },
+        {
           "itemId": "35bbaf5a1fdd4b",
           "title": "【实战】上班族用AI做小程序：0代码上线3款产品，1.5万用户，跑通内容×产品×服务闭环",
           "author": "周小白补习班",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/82258828451144222",
-          "links": []
-        },
-        {
-          "itemId": "9d9aa01df0141d",
-          "title": "从没做过小程序，到 9000 元接单 10 天交付客户项目：我是怎么用 AI Coding 跑通闭环的",
-          "author": "allen",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/14425515851255252",
           "links": []
         },
         {
@@ -38,18 +79,6 @@
           "links": []
         },
         {
-          "itemId": "eb19fa85bf6366",
-          "title": "从一天做出 Demo，到公司正式上线：一个零代码小白的 AI 开发实录",
-          "author": "阿杰",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/55522825225481124",
-          "links": [
-            {
-              "href": "https://zins10locw.feishu.cn/wiki/AHwcw7M2NiagjnkmNiVcWXJvnhg?from=from_copylink",
-              "text": "https://zins10locw.feishu.cn/wiki/AHwcw7M2NiagjnkmNiVcWXJvnhg?from=from_copylink"
-            }
-          ]
-        },
-        {
           "itemId": "a9ad71150b1279",
           "title": "今年418加入生财的新人，我用 AI 做了个小程序，六天跑通并成功变现了",
           "author": "艺文",
@@ -58,6 +87,18 @@
             {
               "href": "https://my.feishu.cn/wiki/OXvMwQlC6iwa59kZghocFjuTnYe?from=from_copylink",
               "text": "https://my.feishu.cn/wiki/OXvMwQlC6iwa59kZghocFjuTnYe?from=from_copylink"
+            }
+          ]
+        },
+        {
+          "itemId": "eb19fa85bf6366",
+          "title": "从一天做出 Demo，到公司正式上线：一个零代码小白的 AI 开发实录",
+          "author": "阿杰",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/55522825225481124",
+          "links": [
+            {
+              "href": "https://zins10locw.feishu.cn/wiki/AHwcw7M2NiagjnkmNiVcWXJvnhg?from=from_copylink",
+              "text": "https://zins10locw.feishu.cn/wiki/AHwcw7M2NiagjnkmNiVcWXJvnhg?from=from_copylink"
             }
           ]
         },
@@ -130,17 +171,17 @@
           ]
         },
         {
-          "itemId": "9848de2211619b",
-          "title": "分享四个月以来，开发了20多个项目，使用Cursor的经验和方法",
-          "author": "黑帽Zz。",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/1524444842818512",
-          "links": []
-        },
-        {
           "itemId": "13d124551e1a16",
           "title": "一个全职宝妈的Cursor编程之路（迟来的航海好事）",
           "author": "初心",
           "originalUrl": "",
+          "links": []
+        },
+        {
+          "itemId": "21d485a0740acf",
+          "title": "Cursor 两小时做出悬浮待办 Android App",
+          "author": "Link",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/82255445815141152",
           "links": []
         },
         {
@@ -151,17 +192,17 @@
           "links": []
         },
         {
+          "itemId": "9848de2211619b",
+          "title": "分享四个月以来，开发了20多个项目，使用Cursor的经验和方法",
+          "author": "黑帽Zz。",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/1524444842818512",
+          "links": []
+        },
+        {
           "itemId": "b18257eaa91d97",
           "title": "用Cursor开发了我的第一个微信小程序",
           "author": "Dong.",
           "originalUrl": "",
-          "links": []
-        },
-        {
-          "itemId": "21d485a0740acf",
-          "title": "Cursor 两小时做出悬浮待办 Android App",
-          "author": "Link",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/82255445815141152",
           "links": []
         },
         {
@@ -210,19 +251,6 @@
               "text": "https://my.feishu.cn/docx/J3fQdYEg8oqHt2xns8BcnR13nYe?from=from_copylink"
             }
           ]
-        },
-        {
-          "itemId": "a90cc63c1fde63",
-          "title": "春招两月盈利 2.8w：我做了一个 AI 简历填表插件，从发现商机到卖出去的完整复盘",
-          "author": "又道天凉好个秋",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582828221512",
-          "links": [
-            {
-              "href": "https://my.feishu.cn/wiki/U8exwxmrdiCgQBkP5HtcOJzEnFb",
-              "text": "https://my.feishu.cn/wiki/U8exwxmrdiCgQBkP5HtcOJzEnFb",
-              "discoveredVia": "post_href"
-            }
-          ]
         }
       ]
     },
@@ -238,6 +266,25 @@
           "author": "苍述",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/55521144558145414",
           "links": []
+        },
+        {
+          "itemId": "aa4747d1384ee4",
+          "title": "从小红书电商、WorkBuddy到FDE，9月近20场AI项目沙龙正式开启报名！",
+          "author": "七天",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/45548825241285128",
+          "links": []
+        },
+        {
+          "itemId": "c232a16bbe64f1",
+          "title": "生财有术 FDE 招聘",
+          "author": "亦仁",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/22255152441224441",
+          "links": [
+            {
+              "href": "https://shengcaiyoushu01.feishu.cn/docx/W83CdWanWozaOfxE5Mtcj2dunuh",
+              "text": "https://shengcaiyoushu01.feishu.cn/docx/W83CdWanWozaOfxE5Mtcj2dunuh"
+            }
+          ]
         },
         {
           "itemId": "f89953b7322e89",
@@ -300,6 +347,18 @@
           "author": "七天",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/55522418115812114",
           "links": []
+        },
+        {
+          "itemId": "a25e4de3803ec1",
+          "title": "我最近几个月关于 Agent 和 FDE 的实践与观察，以及对未来的判断",
+          "author": "亦仁",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/55522414484184224",
+          "links": [
+            {
+              "href": "https://shengcaiyoushu01.feishu.cn/wiki/MToVwWdOXiMgYGk68S3cUsd8nPM",
+              "text": "https://shengcaiyoushu01.feishu.cn/wiki/MToVwWdOXiMgYGk68S3cUsd8nPM"
+            }
+          ]
         },
         {
           "itemId": "a0d71b991507d0",
@@ -460,7 +519,7 @@
           ]
         },
         {
-          "itemId": "d6d232d7a14587",
+          "itemId": "e8ba97c92bf995",
           "title": "6000字讲清楚如何用 AI做少儿 AI培训变现6000 元！",
           "author": "麦麦",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/45544522142824888",
@@ -468,6 +527,18 @@
             {
               "href": "https://cwm1b8fgq31.feishu.cn/docx/JIYNdX71copyeuxy1QpcubrOnUc?from=from_copylink",
               "text": "https://cwm1b8fgq31.feishu.cn/docx/JIYNdX71copyeuxy1QpcubrOnUc?from=from_copylink"
+            }
+          ]
+        },
+        {
+          "itemId": "e88282e8f07759",
+          "title": "小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+          "author": "晓豪",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/22255248414425421",
+          "links": [
+            {
+              "href": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4ksFvPcheRYnhK?from=from_copylink",
+              "text": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4ksFvPcheRYnhK?from=from_copylink"
             }
           ]
         },
@@ -487,14 +558,27 @@
       "product": "教育资料、模板、行业知识库、原创课件",
       "posts": [
         {
-          "itemId": "08ed413821bc87",
+          "itemId": "2a15d9cde7a900",
+          "title": "100 亿 Token 实战复盘，AI 小白如何用 Codex 做小红书虚拟项目（一）",
+          "author": "Ethan",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/22258815152118141",
+          "links": [
+            {
+              "href": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYBnH1?from=from_copylink",
+              "text": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYBnH1?from=from_copylink",
+              "discoveredVia": "post_href"
+            }
+          ]
+        },
+        {
+          "itemId": "37b7e4f68635d5",
           "title": "从淘宝找品到小红书找人群，AI赋能虚拟资料月入5万",
           "author": "七天",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/14425511448122142",
           "links": []
         },
         {
-          "itemId": "24e55c49bc4061",
+          "itemId": "de082c8d87f949",
           "title": "如何打造一人公司的商业闭环｜从需求到变现全流程拆解，附采需求的开源工具",
           "author": "叁斤",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/22258842522188241",
@@ -636,14 +720,14 @@
       "product": "选品网站、监控工具、运营工作台",
       "posts": [
         {
-          "itemId": "37ff67b5a14258",
+          "itemId": "4717b12d005fd4",
           "title": "我是怎么把小红书虚拟资料的选品方法做成了一套监控工具（附完整提示词）",
           "author": "冬青",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/45548825112211458",
           "links": []
         },
         {
-          "itemId": "1ac7b49ec6b232",
+          "itemId": "e053ab9a0a67de",
           "title": "深海圈5个月：做废20多个AI工具站后，靠给自己做的选品工具7天日入千刀",
           "author": "秀才",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/55521155254288844",
@@ -729,7 +813,14 @@
           "links": []
         },
         {
-          "itemId": "1049a26a47da88",
+          "itemId": "0e48448cd8aeec",
+          "title": "从卖货到做 IP，小红书高手都在怎么用 AI？ 【AI 实战派对谈银河 X 七天假】",
+          "author": "纪钟",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/55521144254288154",
+          "links": []
+        },
+        {
+          "itemId": "e8f0e72d09380c",
           "title": "利用碎片信息➕workbuddy，两个月跑通职场类公众号垂直小号自动化，全流程及提示词分享",
           "author": "豚小祖",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/45548821424484488",
@@ -748,14 +839,7 @@
           "links": []
         },
         {
-          "itemId": "5e9b7f53156b16",
-          "title": "从卖货到做 IP，小红书高手都在怎么用 AI？ 【AI 实战派对谈银河 X 七天假】",
-          "author": "纪钟",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/55521144254288154",
-          "links": []
-        },
-        {
-          "itemId": "c33dafd12f871c",
+          "itemId": "eb21ffee32fd7e",
           "title": "用 WorkBuddy + 多维表格 + ima 知识库，批量生成「贴合自己商品」的笔记",
           "author": "黄大路",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/45548855518241888",
@@ -767,7 +851,14 @@
           ]
         },
         {
-          "itemId": "a084d41ce1f12a",
+          "itemId": "ad8befefa8123e",
+          "title": "公众号垂直小号 + 内容自动化 Mini航海要来了，9月1日开启报名，限额900人",
+          "author": "刘智行",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/82258822542588282",
+          "links": []
+        },
+        {
+          "itemId": "b5b7df343a201b",
           "title": "300人点赞投锚，月入7w后，我的Agent员工军团搭建流程全公开。（38000字实操版）",
           "author": "枕棠",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/82258825454528882",
@@ -798,13 +889,6 @@
           "links": []
         },
         {
-          "itemId": "1ee7b6f8cdc82e",
-          "title": "超级术：挖到一篇超实用AI Agent干货：把业务流程做成能上岗的AI员工",
-          "author": "七天",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/55522821222212484",
-          "links": []
-        },
-        {
           "itemId": "0621291fd69e47",
           "title": "AI 赋能内容创作，实现 10 倍提效【AI 实战派对谈 X 鹿书野 X 尹星河 X 林幻雨】",
           "author": "纪钟",
@@ -815,6 +899,13 @@
               "text": "0812 AI 实战派对谈鹿书野 x 尹星河 x 林幻雨"
             }
           ]
+        },
+        {
+          "itemId": "1ee7b6f8cdc82e",
+          "title": "超级术：挖到一篇超实用AI Agent干货：把业务流程做成能上岗的AI员工",
+          "author": "七天",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/55522821222212484",
+          "links": []
         },
         {
           "itemId": "028bd1f93264c8",
@@ -831,6 +922,13 @@
               "text": "https://my.feishu.cn/wiki/TIbuwn1e1ivVvRkuA4xcKHe4nFh?from=from_copylink"
             }
           ]
+        },
+        {
+          "itemId": "d2c18612424d18",
+          "title": "一天花10个亿Token？我所有工作都靠AI完成",
+          "author": "亦仁",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/45544144855148588",
+          "links": []
         },
         {
           "itemId": "65153cd7819bf0",
@@ -867,13 +965,6 @@
               "text": "https://my.feishu.cn/docx/KDBGdwsXCo0zkNxsP4EcMl2jnZf"
             }
           ]
-        },
-        {
-          "itemId": "1d668ce420b422",
-          "title": "一天花10个亿Token？我所有工作都靠AI完成",
-          "author": "亦仁",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/45544144855148588",
-          "links": []
         },
         {
           "itemId": "d0f06c5c03b20f",
@@ -979,18 +1070,6 @@
           "links": []
         },
         {
-          "itemId": "bc7b70be90fa36",
-          "title": "我用Codex做了爆款视频复刻skill，附完整迭代实操和开源地址",
-          "author": "镇涛（AI+电商）",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/45544282854258528",
-          "links": [
-            {
-              "href": "https://bvvp9yto7k.feishu.cn/wiki/SVktw3Qu6iQN3nkX5XNcfSsCnXf?from=from_copylink",
-              "text": "https://bvvp9yto7k.feishu.cn/wiki/SVktw3Qu6iQN3nkX5XNcfSsCnXf?from=from_copylink"
-            }
-          ]
-        },
-        {
           "itemId": "9bd17daf6781e5",
           "title": "做B站好物跑通0-1后，从选品-制作-发布，我把 AI 接入到了每个环节，让所有的数据资产化",
           "author": "拿铁",
@@ -999,6 +1078,18 @@
             {
               "href": "https://my.feishu.cn/docx/PuAtdQYkPoCzZNxrSsNci0ehnVc?from=from_copylink",
               "text": "https://my.feishu.cn/docx/PuAtdQYkPoCzZNxrSsNci0ehnVc?from=from_copylink"
+            }
+          ]
+        },
+        {
+          "itemId": "bc7b70be90fa36",
+          "title": "我用Codex做了爆款视频复刻skill，附完整迭代实操和开源地址",
+          "author": "镇涛（AI+电商）",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/45544282854258528",
+          "links": [
+            {
+              "href": "https://bvvp9yto7k.feishu.cn/wiki/SVktw3Qu6iQN3nkX5XNcfSsCnXf?from=from_copylink",
+              "text": "https://bvvp9yto7k.feishu.cn/wiki/SVktw3Qu6iQN3nkX5XNcfSsCnXf?from=from_copylink"
             }
           ]
         },
@@ -1020,6 +1111,22 @@
           "author": "刘智行",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/22255482585245881",
           "links": []
+        },
+        {
+          "itemId": "0a632b6f886eef",
+          "title": "Token 烧得越多，人反而越闲 ？| 内容 Agent 航海家大课·上海站，来了",
+          "author": "坤汀",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/55522411218524244",
+          "links": [
+            {
+              "href": "https://shengcaiyoushu01.feishu.cn/docx/LkpedK1v9oHrh2xlBH0ccCrGnLe",
+              "text": "https://shengcaiyoushu01.feishu.cn/docx/LkpedK1v9oHrh2xlBH0ccCrGnLe"
+            },
+            {
+              "href": "https://shengcaiyoushu01.feishu.cn/docx/IiAtdvtzRonkD4xtIMhceVZtn8b",
+              "text": "https://shengcaiyoushu01.feishu.cn/docx/IiAtdvtzRonkD4xtIMhceVZtn8b"
+            }
+          ]
         },
         {
           "itemId": "69a15204ba8b15",
@@ -1070,6 +1177,18 @@
           ]
         },
         {
+          "itemId": "f06f9199d9ea84",
+          "title": "2个月、1000万播放、5万粉丝,分享我用remotion做视频的经验",
+          "author": "奋斗蟹老板",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/82255248485144522",
+          "links": [
+            {
+              "href": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7kkKwHcoTBun9e?from=from_copylink",
+              "text": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7kkKwHcoTBun9e?from=from_copylink"
+            }
+          ]
+        },
+        {
           "itemId": "bf5822bd152ab3",
           "title": "【保姆级教程】把 AI 融入日常工作，随手做出一个小红书笔记发布工具",
           "author": "郭晓文",
@@ -1089,18 +1208,6 @@
           "links": []
         },
         {
-          "itemId": "f4869fdbe1fb29",
-          "title": "2个月、1000万播放、5万粉丝,分享我用remotion做视频的经验",
-          "author": "奋斗蟹老板",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/82255248485144522",
-          "links": [
-            {
-              "href": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7kkKwHcoTBun9e?from=from_copylink",
-              "text": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7kkKwHcoTBun9e?from=from_copylink"
-            }
-          ]
-        },
-        {
           "itemId": "acfc6ffcbdd864",
           "title": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上",
           "author": "Jason、mar",
@@ -1117,6 +1224,20 @@
           "title": "视频代码化后，普通人不用费劲学剪辑了",
           "author": "亦仁的收藏夹",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/45544582554544548",
+          "links": []
+        },
+        {
+          "itemId": "1c4e75d8226601",
+          "title": "《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操",
+          "author": "坤汀",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/45544582454181488",
+          "links": []
+        },
+        {
+          "itemId": "675a36e2971e6c",
+          "title": "第一场航海家线下大课《AI native 内容agent工厂》精华实时更新",
+          "author": "坤汀",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/45544585122854228",
           "links": []
         },
         {
@@ -1167,6 +1288,30 @@
           "links": []
         },
         {
+          "itemId": "68382ff9a01f29",
+          "title": "航海【AI 视频号图书带货】481W播放，9778GMV，佣金5909+的复盘总结",
+          "author": "！",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/55521151422881584",
+          "links": [
+            {
+              "href": "https://wcnhymn3alfj.feishu.cn/wiki/XJE9wqxiNi6AFRkeHu1cjKICnbh?from=from_copylink",
+              "text": "https://wcnhymn3alfj.feishu.cn/wiki/XJE9wqxiNi6AFRkeHu1cjKICnbh?from=from_copylink"
+            }
+          ]
+        },
+        {
+          "itemId": "61b9ddde1601a8",
+          "title": "3个月40万GMV：视频号AI剧情带货实战，与我的Codex提效工作流",
+          "author": "淳于",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/82258825548882852",
+          "links": [
+            {
+              "href": "https://wnaj7j5k76.feishu.cn/wiki/JHq8wI4OziualpkigWmcUhxwnac",
+              "text": "https://wnaj7j5k76.feishu.cn/wiki/JHq8wI4OziualpkigWmcUhxwnac"
+            }
+          ]
+        },
+        {
           "itemId": "726d6af4dfe4f0",
           "title": "视频号AI图书带货项目 两周时间快速跑通0-1 拿到正反馈 （新手小白可复制上手）",
           "author": "腾飞的鹰",
@@ -1187,30 +1332,6 @@
             {
               "href": "https://wm1881zs6s.feishu.cn/docx/ObxFdEmjlo7og7xvx0lcUxb7nDd",
               "text": "https://wm1881zs6s.feishu.cn/docx/ObxFdEmjlo7og7xvx0lcUxb7nDd"
-            }
-          ]
-        },
-        {
-          "itemId": "a25ec95c591e2e",
-          "title": "航海【AI 视频号图书带货】481W播放，9778GMV，佣金5909+的复盘总结",
-          "author": "！",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/55521151422881584",
-          "links": [
-            {
-              "href": "https://wcnhymn3alfj.feishu.cn/wiki/XJE9wqxiNi6AFRkeHu1cjKICnbh?from=from_copylink",
-              "text": "https://wcnhymn3alfj.feishu.cn/wiki/XJE9wqxiNi6AFRkeHu1cjKICnbh?from=from_copylink"
-            }
-          ]
-        },
-        {
-          "itemId": "9d2d004ce29914",
-          "title": "3个月40万GMV：视频号AI剧情带货实战，与我的Codex提效工作流",
-          "author": "淳于",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/82258825548882852",
-          "links": [
-            {
-              "href": "https://wnaj7j5k76.feishu.cn/wiki/JHq8wI4OziualpkigWmcUhxwnac",
-              "text": "https://wnaj7j5k76.feishu.cn/wiki/JHq8wI4OziualpkigWmcUhxwnac"
             }
           ]
         },
@@ -1318,7 +1439,7 @@
           ]
         },
         {
-          "itemId": "111577a50d5d61",
+          "itemId": "8cc676d2e1bc1e",
           "title": "生财新人，从0-1跑通抖音自然流CPS，618期间GMV200W",
           "author": "求其啦",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/22255445412518841",
@@ -1465,7 +1586,7 @@
       "product": "品牌短视频、数字人或定制视频",
       "posts": [
         {
-          "itemId": "829fba0f614197",
+          "itemId": "ef3530de800d2a",
           "title": "中传科班出身，第一条企业AI带货短视频订单喜提亏本，AI真人短视频带货踩坑参考",
           "author": "nana",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/82255484152414822",
@@ -1497,7 +1618,7 @@
       "product": "小说、写作工具、文本内容服务",
       "posts": [
         {
-          "itemId": "8bcf36bff9e7b6",
+          "itemId": "2e790054638bc5",
           "title": "从航海变现700到单月最高变现6000+， AI 小说现在还能做吗，分享我这一年来的实战复盘",
           "author": "空鸣",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/14425544828842412",
@@ -1548,6 +1669,13 @@
           "links": []
         },
         {
+          "itemId": "6b3e4848e89501",
+          "title": "被裁后两个月赚了20万，从一个彻底失败的产品开始",
+          "author": "苍述",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/22258842114448551",
+          "links": []
+        },
+        {
           "itemId": "76e66b10cfba0a",
           "title": "没有公司，个人开发者怎么全球收款？从 Creem 迁移到 Waffo Pancake 的完整实战",
           "author": "独孤风",
@@ -1555,35 +1683,14 @@
           "links": []
         },
         {
-          "itemId": "186b7274c23300",
-          "title": "被裁后两个月赚了20万，从一个彻底失败的产品开始",
-          "author": "苍述",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/22258842114448551",
-          "links": []
-        },
-        {
-          "itemId": "3cbd6d5c4484ba",
-          "title": "20天上线10个热词游戏站，用AI编程赚到第一笔美元",
-          "author": "珂米",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/45548854528444458",
-          "links": []
-        },
-        {
-          "itemId": "b55a0343ed258c",
+          "itemId": "d5117824eb403f",
           "title": "不会写代码，怎么做靠 Google 广告赚钱的游戏攻略站？我把整条流水线开源了，从 0 到 1 做出海游戏攻略站。",
           "author": "袁锐钦",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/14425544145221552",
           "links": []
         },
         {
-          "itemId": "f6b69c74f1a8b8",
-          "title": "超级术：不会写代码，用AI3小时做出已收款的产品，还带圈友实操",
-          "author": "七天",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/45548881484254858",
-          "links": []
-        },
-        {
-          "itemId": "058c9afd7490fa",
+          "itemId": "bd6fa86c23abea",
           "title": "2周变现2万，起因只是为了在交友软件匹配上更多女生，做了个 AI 展示面工具",
           "author": "洛更",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/45548858522815158",
@@ -1593,6 +1700,20 @@
               "text": "https://yxn0b6ntbk9.feishu.cn/wiki/NdfIwn0Q9i8ByckPce7cP7CUnJd?from=from_copylink"
             }
           ]
+        },
+        {
+          "itemId": "3cbd6d5c4484ba",
+          "title": "20天上线10个热词游戏站，用AI编程赚到第一笔美元",
+          "author": "珂米",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/45548854528444458",
+          "links": []
+        },
+        {
+          "itemId": "f6b69c74f1a8b8",
+          "title": "超级术：不会写代码，用AI3小时做出已收款的产品，还带圈友实操",
+          "author": "七天",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/45548881484254858",
+          "links": []
         },
         {
           "itemId": "18931cb47786ca",
@@ -1614,18 +1735,6 @@
           "links": []
         },
         {
-          "itemId": "d7687758720c5b",
-          "title": "《0编程经验，我如何借助Cursor搭建AI出海工具站赚美金》",
-          "author": "阿西_出海",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/1525824811545212",
-          "links": [
-            {
-              "href": "https://tjvomspfav.feishu.cn/docx/WTAxda5tRoC2ZVxCmgtcJiNsnlc?from=from_copylink&PdWaR8=1",
-              "text": "https://tjvomspfav.feishu.cn/docx/WTAxda5tRoC2ZVxCmgtcJiNsnlc?from=from_copylink&PdWaR8=1"
-            }
-          ]
-        },
-        {
           "itemId": "d67ddb5925a329",
           "title": "借助GitHub和Cursor，20小时完成海外版情侣聊天记录可视化MVP的实操记录",
           "author": "Cheer林悦己",
@@ -1638,7 +1747,19 @@
           ]
         },
         {
-          "itemId": "b090141bb9865f",
+          "itemId": "d7687758720c5b",
+          "title": "《0编程经验，我如何借助Cursor搭建AI出海工具站赚美金》",
+          "author": "阿西_出海",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/1525824811545212",
+          "links": [
+            {
+              "href": "https://tjvomspfav.feishu.cn/docx/WTAxda5tRoC2ZVxCmgtcJiNsnlc?from=from_copylink&PdWaR8=1",
+              "text": "https://tjvomspfav.feishu.cn/docx/WTAxda5tRoC2ZVxCmgtcJiNsnlc?from=from_copylink&PdWaR8=1"
+            }
+          ]
+        },
+        {
+          "itemId": "e46f0148f77b5e",
           "title": "【生财专属】38岁非技术的前电商运营人，靠vibe coding，从月入3千到变现10W+只用了四个月",
           "author": "晓海云创",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/45544248882815888",
@@ -1648,6 +1769,13 @@
               "text": "https://my.feishu.cn/docx/UoOAdZAz6oxC53xVHqLcyN77nzg?from=from_copylink"
             }
           ]
+        },
+        {
+          "itemId": "612e15d1d9f810",
+          "title": "超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+          "author": "七天",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/22255224182115441",
+          "links": []
         }
       ]
     },
@@ -1657,6 +1785,13 @@
       "pain": "流量难转化为客户；需要精准触达、潜客识别，并控制内容与获客成本。",
       "product": "广告服务、内容获客、拉新、线索工具",
       "posts": [
+        {
+          "itemId": "0dfd04a5934b7b",
+          "title": "用Claude Code+生财MCP做“精选副业”种草页，第一个月转化4单",
+          "author": "Jedee",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/22258815448551881",
+          "links": []
+        },
         {
           "itemId": "992df739a24e2c",
           "title": "抖音40万粉，B站10万粉，小红书5万粉，网盘拉新四个月变现30万，1.4万字复盘为什么换个平台，我还能做起来，其中有什么底层方法论！",
@@ -1671,21 +1806,14 @@
           ]
         },
         {
-          "itemId": "0dfd04a5934b7b",
-          "title": "用Claude Code+生财MCP做“精选副业”种草页，第一个月转化4单",
-          "author": "Jedee",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/22258815448551881",
-          "links": []
-        },
-        {
-          "itemId": "7625a9dc6c1ca7",
+          "itemId": "79a4b0015802bc",
           "title": "我让 AI 扫了 22 万条微信消息：找出 30 位高潜客户，还把 3 个多月群聊变成 FAQ（附保姆级教程）",
           "author": "旋子",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/55521141854481224",
           "links": []
         },
         {
-          "itemId": "67f592cc258663",
+          "itemId": "b6232a87e2b674",
           "title": "AI 自媒体万粉，2026 年接了 60 个广告，纯广告收益月入过万，我的一人公司内容系统",
           "author": "竹子。",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/55521155258121884",
@@ -1697,7 +1825,7 @@
           ]
         },
         {
-          "itemId": "b3635c1fda171f",
+          "itemId": "0c957b306ba860",
           "title": "AI自媒体从0到1速通：抖音1个月跑通2.5w粉，商单+私域+产品+企业服务如何变现五位数",
           "author": "nana",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/55521151452128814",
@@ -1709,7 +1837,7 @@
           ]
         },
         {
-          "itemId": "8c9dc6c4cef2c8",
+          "itemId": "808ced16be51d5",
           "title": "抖音自然流CPS项目及开学季航海作战指南",
           "author": "海宇",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/55521152554524254",
@@ -1858,13 +1986,6 @@
       "product": "垂直 MCP、知识地图、知识库、转录与听书工具",
       "posts": [
         {
-          "itemId": "f2208cf21352ac",
-          "title": "生财MCP+2句提示词+Codex=一份完整的可交互的知识地图.html",
-          "author": "Cheer林悦己",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582858422442",
-          "links": []
-        },
-        {
           "itemId": "0e7245bff660f9",
           "title": "我用生财 MCP 扫完了全站 90 篇 MCP 精华帖：列出来了所有的可能性方向和案例",
           "author": "啥都懂的小灰",
@@ -1872,10 +1993,17 @@
           "links": []
         },
         {
-          "itemId": "75301f95ef1b17",
-          "title": "开源「听生财」：生财长帖变听书连播，Codex 可一键装，你只扫码授权",
-          "author": "dua甲",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582244142112",
+          "itemId": "6e5c70790bad5b",
+          "title": "生财 MCP，可能是你使用生财的分水岭",
+          "author": "纪钟",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582852288552",
+          "links": []
+        },
+        {
+          "itemId": "f2208cf21352ac",
+          "title": "生财MCP+2句提示词+Codex=一份完整的可交互的知识地图.html",
+          "author": "Cheer林悦己",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582858422442",
           "links": []
         },
         {
@@ -1883,6 +2011,13 @@
           "title": "生财MCP是座金矿，我把它塞进了小爱同学",
           "author": "lighting",
           "originalUrl": "https://scys.com/articleDetail/xq_topic/55521182242812514",
+          "links": []
+        },
+        {
+          "itemId": "75301f95ef1b17",
+          "title": "开源「听生财」：生财长帖变听书连播，Codex 可一键装，你只扫码授权",
+          "author": "dua甲",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/14425582244142112",
           "links": []
         },
         {
@@ -1918,6 +2053,25 @@
           ]
         },
         {
+          "itemId": "1d4844beb7a5db",
+          "title": "8 月会员日：3000 个生财 MCP 内测名额开放",
+          "author": "鱼丸|亦仁助理",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/55522825885541844",
+          "links": []
+        },
+        {
+          "itemId": "3d93ea9268fea7",
+          "title": "【保姆级教程】把 AI 接入微信：让微信变成你的个人知识库",
+          "author": "苏格",
+          "originalUrl": "https://scys.com/articleDetail/xq_topic/45544211552415428",
+          "links": [
+            {
+              "href": "https://my.feishu.cn/docx/If0tduka2omYAWx93PgcfhLMnkb",
+              "text": "https://my.feishu.cn/docx/If0tduka2omYAWx93PgcfhLMnkb"
+            }
+          ]
+        },
+        {
           "itemId": "6747e71ab098c7",
           "title": "用3份资料跑通 Obsidian + Codex 个人AI知识库（保姆级教程 附全套Prompt）",
           "author": "Blake Huang",
@@ -1926,18 +2080,6 @@
             {
               "href": "https://my.feishu.cn/docx/GKopdk89CoPRojxcBK4coRtsnig?from=from_copylink",
               "text": "https://my.feishu.cn/docx/GKopdk89CoPRojxcBK4coRtsnig?from=from_copylink"
-            }
-          ]
-        },
-        {
-          "itemId": "30d609ba1b5a6a",
-          "title": "【保姆级教程】把 AI 接入微信：让微信变成你的个人知识库",
-          "author": "苏格",
-          "originalUrl": "https://scys.com/articleDetail/xq_topic/45544211552415428",
-          "links": [
-            {
-              "href": "https://my.feishu.cn/docx/If0tduka2omYAWx93PgcfhLMnkb",
-              "text": "https://my.feishu.cn/docx/If0tduka2omYAWx93PgcfhLMnkb"
             }
           ]
         },
@@ -2063,9 +2205,920 @@
       ]
     }
   ],
+  "pending": [
+    {
+      "itemId": "0555411f43b2ea",
+      "title": "远程连接与开发环境 100 个必备概念 —— 写给不懂技术原理的人",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548822514441118",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/R5cqdHSXTocrtcx2N0zcOK7lnSc",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/R5cqdHSXTocrtcx2N0zcOK7lnSc"
+        }
+      ]
+    },
+    {
+      "itemId": "6ba1a493661962",
+      "title": "生财圈主的创业实战感悟：AI团队、超级个体与赚钱选择",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258844241888121",
+      "links": []
+    },
+    {
+      "itemId": "939e061eace85f",
+      "title": "聊聊我的启动困难症，还有几个亲测有效的笨办法",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258841554444151",
+      "links": []
+    },
+    {
+      "itemId": "b0cebe8be51401",
+      "title": "我对AI时代的3个核心判断：10人小团队、老板当开发者、抓信息处理",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548822412515588",
+      "links": []
+    },
+    {
+      "itemId": "cdb476ed586e2a",
+      "title": "缺资源的人，怎么找到第一个 AI 客户？",
+      "author": "子裕",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45548822424488118",
+      "links": []
+    },
+    {
+      "itemId": "034cc5b4430ea2",
+      "title": "我用 Codex 做大航海领队，也把运营方法沉淀成了一套 Skill",
+      "author": "阿喂",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521144221414554",
+      "links": []
+    },
+    {
+      "itemId": "4b0575be8b216b",
+      "title": "我是怎么从完全不会用AI，到用AI赚到第一块钱的",
+      "author": "叁斤",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425514485851852",
+      "links": []
+    },
+    {
+      "itemId": "b538304df37963",
+      "title": "为满足抱团联合办公需求，我们升级推出生财Mini空间",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425514122418282",
+      "links": []
+    },
+    {
+      "itemId": "c00f01886ad5f6",
+      "title": "没项目没客户？先拿自己当第一个AI客户就够了",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258842488455281",
+      "links": []
+    },
+    {
+      "itemId": "9d4fc3e0fd2270",
+      "title": "针对mini航海报名的吐槽，我和团队道歉，后续努力给大家更好的体验",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55521141818422484",
+      "links": []
+    },
+    {
+      "itemId": "4106f7bad7e6c7",
+      "title": "9月第二批Mini航海今晚报名！公众号贴图号、垂直小号实操",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22258824845158121",
+      "links": []
+    },
+    {
+      "itemId": "a8d18b9655422e",
+      "title": "一个月烧掉 240 亿 Token：我带 AI 开发团队踩过的坑与省下的钱",
+      "author": "Cyrus-赛探长",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425544542188212",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/L8OPwE5RrifN8GkGjVAcCKQ1nde?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/L8OPwE5RrifN8GkGjVAcCKQ1nde?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "57fa92d4f0eb7c",
+      "title": "8月航海即将靠岸，9月这3个mini航海要上线啦",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425542222455212",
+      "links": []
+    },
+    {
+      "itemId": "bcd130b64d5f8f",
+      "title": "ChatGPT plus、pro账号高性价比订阅指南 | 不找人代充，直接采购成品号",
+      "author": "levi",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82258884211558842",
+      "links": [
+        {
+          "href": "https://pcnzt82x62m6.feishu.cn/wiki/RTcOw6E6wi330RkqlQTcb1d9n5b",
+          "text": "https://pcnzt82x62m6.feishu.cn/wiki/RTcOw6E6wi330RkqlQTcb1d9n5b"
+        }
+      ]
+    },
+    {
+      "itemId": "f5e925dbdfdb03",
+      "title": "WorkBuddy 有积分焦虑？接入 Agnes 2.5 Flash（喂饭级教程）",
+      "author": "月见草",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14425551481482452",
+      "links": [
+        {
+          "href": "https://c1g3edwkapl.feishu.cn/wiki/VzxZwMzflimCsskxznrc0q20nve?from=from_copylink",
+          "text": "https://c1g3edwkapl.feishu.cn/wiki/VzxZwMzflimCsskxznrc0q20nve?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "cde3c584fa9780",
+      "title": "Workbuddy从入门到精通完整教程",
+      "author": "阿西_出海",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255154885485141",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/Y9bXwLGzciBPh0ksPWlcUcGjnzh?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/Y9bXwLGzciBPh0ksPWlcUcGjnzh?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "84e6e29e823cf8",
+      "title": "航海进程过半，你的成果物做出来了吗？",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422824158854452",
+      "links": []
+    },
+    {
+      "itemId": "84c0b08ffd93dc",
+      "title": "AI港湾计划周末实操：98%参与者完成首个AI智能体，反馈超棒",
+      "author": "纪钟",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522825512418144",
+      "links": []
+    },
+    {
+      "itemId": "520f96fdad5be7",
+      "title": "花一天把主力机从Mac mini迁到MacBook Pro，分享跑Agent的踩坑经验和建议",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255158288252251",
+      "links": []
+    },
+    {
+      "itemId": "5f7428be369aa2",
+      "title": "AI Native 电商长什么样子？ | AI航海家大课 · 深圳站来了",
+      "author": "坤汀",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255158281454251",
+      "links": []
+    },
+    {
+      "itemId": "fe281a76c90efd",
+      "title": "8 月 Mini 航海报名即将开启｜抓住开学季，用 AI 做出第一批能上架的教育资料 PPT",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255414544245281",
+      "links": []
+    },
+    {
+      "itemId": "e4edf68bc03f34",
+      "title": "小红书教育资料PPT Mini航海要来了！带你抓住开学季风口",
+      "author": "shu.p.",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544221585414118",
+      "links": []
+    },
+    {
+      "itemId": "128df042a34f3e",
+      "title": "做合规、强制执行十几年，分享 OPC、创业者必看的放大思路，帮大家少踩坑",
+      "author": "🌊濤Zwei",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255441521144512",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/R0DiwvMDKii4qpkp7UjcODRWnZd?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/R0DiwvMDKii4qpkp7UjcODRWnZd?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "d4421704d01e3c",
+      "title": "生财有术26年5月&6月&7月龙珠月报发布！",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255444141415211",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/sheets/K9JAsoyxyh9kBKt9AdJcQz2hnUd?from=from_lark_index_search&ccm_open_type=from_lark_index_search&disposable_login_token=eyJ1c2VyX2lkIjoiNzQwMTAyNDc1NjgyMTQ0MjU2NCIsImRldmljZV9sb2dpbl9pZCI6Ijc0Mzc3MDY3NDQ5NjY1MjkwMjciLCJ0aW1lc3RhbXAiOjE3ODU4NDU5MTUsInVuaXQiOiJldV9uYyIsInB3ZF9sZXNzX2xvZ2luX2F1dGgiOiIxIiwidmVyc2lvbiI6InYzIiwidGVuYW50X2JyYW5kIjoiZmVpc2h1IiwicGtnX2JyYW5kIjoi6aOe5LmmIn0=.6d2f77f5f231a792890e264026f187e0645d6a4c745b9b8838c8eaadd019f614",
+          "text": "https://shengcaiyoushu01.feishu.cn/sheets/K9JAsoyxyh9kBKt9AdJcQz2hnUd?from=from_lark_index_search&ccm_open_type=from_lark_index_search&disposable_login_token=eyJ1c2VyX2lkIjoiNzQwMTAyNDc1NjgyMTQ0MjU2NCIsImRldmljZV9sb2dpbl9pZCI6Ijc0Mzc3MDY3NDQ5NjY1MjkwMjciLCJ0aW1lc3RhbXAiOjE3ODU4NDU5MTUsInVuaXQiOiJldV9uYyIsInB3ZF9sZXNzX2xvZ2luX2F1dGgiOiIxIiwidmVyc2lvbiI6InYzIiwidGVuYW50X2JyYW5kIjoiZmVpc2h1IiwicGtnX2JyYW5kIjoi6aOe5LmmIn0=.6d2f77f5f231a792890e264026f187e0645d6a4c745b9b8838c8eaadd019f614"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/SanydAhnRoeRMOx4kaRcmQRwnGz?_=1758186406",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/SanydAhnRoeRMOx4kaRcmQRwnGz?_=1758186406"
+        }
+      ]
+    },
+    {
+      "itemId": "3219cf8fc5cef1",
+      "title": "万字复盘：一个I人小白如何靠组局，把「找项目」换成「找人」",
+      "author": "Jacky",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544222814811118",
+      "links": [
+        {
+          "href": "https://dcndwwdgrrp3.feishu.cn/docx/IWKvdONQ7o74Ilxo3U2cdAaxnfb",
+          "text": "https://dcndwwdgrrp3.feishu.cn/docx/IWKvdONQ7o74Ilxo3U2cdAaxnfb"
+        }
+      ]
+    },
+    {
+      "itemId": "59e4fba2e96e9e",
+      "title": "Obsidian知识库多设备同步教程丨完全免费，一人公司必备",
+      "author": "叁斤",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544225121258458",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/CUDKd84mWoORwqxgIq3cm2nMnHg?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/CUDKd84mWoORwqxgIq3cm2nMnHg?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "e746071e595d99",
+      "title": "AI时代到底怎么赚钱？先去做离钱最近的事",
+      "author": "根源",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255442228815222",
+      "links": [
+        {
+          "href": "https://oee5lr7gsk.feishu.cn/docx/FdROdApYFoumtRxLqZjcKwUmnDc?from=from_copylink",
+          "text": "https://oee5lr7gsk.feishu.cn/docx/FdROdApYFoumtRxLqZjcKwUmnDc?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "aee299e3d6c1c2",
+      "title": "8月航海启航丨船员名单公布，请做好登船准备",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544225881551118",
+      "links": []
+    },
+    {
+      "itemId": "25781a7585e0fb",
+      "title": "超级术：新手友好！保姆级AI项目教程：1天跑通可变现小产品闭环",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422114224848552",
+      "links": []
+    },
+    {
+      "itemId": "e95c022bf5e8d6",
+      "title": "会用AI却拿不出成果？100个卡壳瞬间与破法",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544228145544258",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/LgCjdet8xoNslBxj96DcATdtn96",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/LgCjdet8xoNslBxj96DcATdtn96"
+        }
+      ]
+    },
+    {
+      "itemId": "abea7cf8aae9e0",
+      "title": "做项目如何从1~100，来自7月线下局的复盘",
+      "author": "明明👍ᴬᴵ",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544228881185288",
+      "links": []
+    },
+    {
+      "itemId": "f0679983830aba",
+      "title": "生财 AI 大课复盘：连接、判断与行动",
+      "author": "浅笑",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522441118542544",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/V2a2dGbspo4VahxrM5fcWJrInSd",
+          "text": "https://my.feishu.cn/docx/V2a2dGbspo4VahxrM5fcWJrInSd"
+        }
+      ]
+    },
+    {
+      "itemId": "f930636b669d15",
+      "title": "傻瓜丨天下苦Codex注册充值久矣！跳过注册也能用（Claude code同样适用）",
+      "author": "凌山",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544228881854228",
+      "links": [
+        {
+          "href": "https://qcnmnwlj7t4i.feishu.cn/wiki/WFBFwkaxOi5wj9kAc5KcACCRnwd?from=from_copylink",
+          "text": "https://qcnmnwlj7t4i.feishu.cn/wiki/WFBFwkaxOi5wj9kAc5KcACCRnwd?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "3074b0f65ecf3d",
+      "title": "月底达成单日10亿token消耗目标，这个里程碑值得纪念",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255445454151841",
+      "links": []
+    },
+    {
+      "itemId": "b05d28683eaef7",
+      "title": "【倒计时 12 小时】8 月航海报名今晚截止：有些答案，要下场以后才知道",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522442481412454",
+      "links": []
+    },
+    {
+      "itemId": "573e532183d093",
+      "title": "技术人如何把做出来的东西变成钱？100个商业必修概念",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255445524424442",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/WrotdfOrYoN7gxxwJcKceHMInLg",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/WrotdfOrYoN7gxxwJcKceHMInLg"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/XZScdki96onDYOxj6FPcJFoXnSb",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/XZScdki96onDYOxj6FPcJFoXnSb"
+        }
+      ]
+    },
+    {
+      "itemId": "c3ff46d784f1cb",
+      "title": "非技术开发者用 AI 编程做产品做项目必备的 100 个基本知识。",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255445522222822",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/CooMdESUkor6pbxPZDlcvAGXnE4",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/CooMdESUkor6pbxPZDlcvAGXnE4"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/F88jdW4yfo2qDRxYUO7c3lw1n7b",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/F88jdW4yfo2qDRxYUO7c3lw1n7b"
+        }
+      ]
+    },
+    {
+      "itemId": "21d64ab14cf1ab",
+      "title": "Claude Code 和 Codex 双工具使用和协作，互相备份，未来会越来越成为常态。",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255421451551242",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/JqZnd1Oz4okzhwxjjxCcFvRRnNc",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/JqZnd1Oz4okzhwxjjxCcFvRRnNc"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/SBShdRisSooYRXxNjOmcLbyGnxb",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/SBShdRisSooYRXxNjOmcLbyGnxb"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/C5rxd0y2xo7iOCxg2B1cOnfOn3g",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/C5rxd0y2xo7iOCxg2B1cOnfOn3g"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/Om9fdut0wol6ZExiDzHc2Uj6nyd",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/Om9fdut0wol6ZExiDzHc2Uj6nyd"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/F88jdW4yfo2qDRxYUO7c3lw1n7b",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/F88jdW4yfo2qDRxYUO7c3lw1n7b"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/CooMdESUkor6pbxPZDlcvAGXnE4",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/CooMdESUkor6pbxPZDlcvAGXnE4"
+        }
+      ]
+    },
+    {
+      "itemId": "252964fac8aba1",
+      "title": "Codex Mac 客户端全功能解释与场景指南（2026 年 7 月版）",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255421454258121",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/QkvndDnNOo5HHixGNBqcJuOmnMh",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/QkvndDnNOo5HHixGNBqcJuOmnMh"
+        }
+      ]
+    },
+    {
+      "itemId": "6bc50b622e4ab5",
+      "title": "8月航海上线不到24小时报名破万，7个AI主题航海项目可选",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544251258444548",
+      "links": []
+    },
+    {
+      "itemId": "f7164e8d211fe6",
+      "title": "AI 越汹涌，线下越有价值——传术师见面日&亦仁的饭局活动回顾",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255425124855181",
+      "links": []
+    },
+    {
+      "itemId": "1da1c5665461ec",
+      "title": "Cursor 600亿美元这件事，我觉得很多人理解反了",
+      "author": "雅格布",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522541285414524",
+      "links": []
+    },
+    {
+      "itemId": "2f6600c2eb8faa",
+      "title": "实操分享：用本地 Issues 管理让 Cursor 自动化写程序",
+      "author": "大铭🍀",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/1525182221581452",
+      "links": [
+        {
+          "href": "https://rxas35pmvn.feishu.cn/docx/EaSxdZ6vNoFBLVxFkG0chs4Unjf?from=from_copylink&PdWaR8=1",
+          "text": "https://rxas35pmvn.feishu.cn/docx/EaSxdZ6vNoFBLVxFkG0chs4Unjf?from=from_copylink&PdWaR8=1"
+        }
+      ]
+    },
+    {
+      "itemId": "47fc14a6a12fc8",
+      "title": "【生财技能】如何利用Cursor从0-1开发AI应用",
+      "author": "彩笺",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/1525151415485552",
+      "links": []
+    },
+    {
+      "itemId": "681e0b5c5ffc65",
+      "title": "使用Cursor 无痛 AI编程 的 30 个技巧和示例",
+      "author": "饼干哥哥🍪AGI",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/2852551158458211",
+      "links": [
+        {
+          "href": "https://ry6uq5vtyu.feishu.cn/docx/QJHgd9na1oKDQVxHyVVc9fDYnyf?from=from_copylink&qx818=1",
+          "text": "https://ry6uq5vtyu.feishu.cn/docx/QJHgd9na1oKDQVxHyVVc9fDYnyf?from=from_copylink&qx818=1"
+        }
+      ]
+    },
+    {
+      "itemId": "a7c79181c9b394",
+      "title": "SpaceX 联手 Cursor 的首个 AI 产品曝光！",
+      "author": "李良",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544285221582558",
+      "links": []
+    },
+    {
+      "itemId": "c327c5d0dd43a0",
+      "title": "【航海好事】0代码AI编程重塑你的编程体验：Cursor使用教程",
+      "author": "Time",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/2855142251888251",
+      "links": [
+        {
+          "href": "https://qsbog43f8e.feishu.cn/docx/DKxxdrrzloJ7yexrMgicjhKlnXe?from=from_copylink",
+          "text": "https://qsbog43f8e.feishu.cn/docx/DKxxdrrzloJ7yexrMgicjhKlnXe?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "f6d9d1c3c3930d",
+      "title": "用Cursor 免费试用重置工具，无限续杯",
+      "author": "锦辉",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/4848182148542888",
+      "links": [
+        {
+          "href": "https://kg7drdv9nu.feishu.cn/docx/ULoXd8uChocqaCxKnDlcK2CmnCd?RVK9z4=1",
+          "text": "https://kg7drdv9nu.feishu.cn/docx/ULoXd8uChocqaCxKnDlcK2CmnCd?RVK9z4=1"
+        }
+      ]
+    },
+    {
+      "itemId": "fb4b38cd6ac157",
+      "title": "最新版本Cursor使用教程 (0.49.x)",
+      "author": "彩笺",
+      "originalUrl": "",
+      "links": [
+        {
+          "href": "https://w63nbfedzw.feishu.cn/docx/SNA1dP22HoGu8yxlyYocJg5on0c",
+          "text": "https://w63nbfedzw.feishu.cn/docx/SNA1dP22HoGu8yxlyYocJg5on0c"
+        },
+        {
+          "href": "https://w63nbfedzw.feishu.cn/docx/SNA1dP22HoGu8yxlyYocJg5on0c%E9%82%A3%E4%B9%88%E9%97%AE%E9%A2%98%E6%9D%A5%E4%BA%86",
+          "text": "https://w63nbfedzw.feishu.cn/docx/SNA1dP22HoGu8yxlyYocJg5on0c%E9%82%A3%E4%B9%88%E9%97%AE%E9%A2%98%E6%9D%A5%E4%BA%86"
+        }
+      ]
+    },
+    {
+      "itemId": "1564282c550c4e",
+      "title": "我如何用好生财有术，完成一次新的职业转型｜6年老圈友的AI创业实战路径",
+      "author": "莫掌柜",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522452541122524",
+      "links": []
+    },
+    {
+      "itemId": "63ab7422c3976e",
+      "title": "8 月航海报名开启倒计时，一起来看这期项目拆解！",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255425284525542",
+      "links": []
+    },
+    {
+      "itemId": "6828894eefaf33",
+      "title": "投流老兵做AI虚拟服务：1个月收入9000+，我踩过的投流、报价和外包交付的项目复盘",
+      "author": "Henry邓兴超",
+      "originalUrl": "",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/AzewdeGEaolB1axt4u5cvds7n4d?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/AzewdeGEaolB1axt4u5cvds7n4d?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "10c24f9de9454b",
+      "title": "#会员日 6 月会员日开奖",
+      "author": "鱼丸|亦仁助理",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422158515481582",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/share/base/view/shrcnaDknjv2iDlpp7YAPnZvbqc",
+          "text": "https://shengcaiyoushu01.feishu.cn/share/base/view/shrcnaDknjv2iDlpp7YAPnZvbqc"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/share/base/view/shrcnpIFylhVZE7wP9HgRRRtTdg",
+          "text": "https://shengcaiyoushu01.feishu.cn/share/base/view/shrcnpIFylhVZE7wP9HgRRRtTdg"
+        }
+      ]
+    },
+    {
+      "itemId": "cb1d9b4ba23538",
+      "title": "南昌生财有术线下聚会分享：我的创业路和AI圈子玩法",
+      "author": "刘智行",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422158588451552",
+      "links": []
+    },
+    {
+      "itemId": "5d6a77b7224bbe",
+      "title": "8月航海即将启航，7条AI航线和团队有新安排",
+      "author": "欢欢@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544282221222858",
+      "links": []
+    },
+    {
+      "itemId": "8ead52b4ac903c",
+      "title": "8 月航海 | 线上团队招募，正式开启",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255484414141212",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/VLAEdbMlcoWoF6xx6NLcudR4nbd?from=from_copylink",
+          "text": "【生财航海实战】志愿者成长体系"
+        }
+      ]
+    },
+    {
+      "itemId": "1aafdad19186a1",
+      "title": "明晚生财有术视频号直播：我和坤汀聊Agent两个月实操踩坑经验",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255482425242851",
+      "links": []
+    },
+    {
+      "itemId": "670eed9d95d186",
+      "title": "我做了个新手部署网站上线SOP，不懂AI也能3分钟上线网站！",
+      "author": "逐风",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255482188114881",
+      "links": []
+    },
+    {
+      "itemId": "cec3815c6880f1",
+      "title": "从银行总行离职到自由职业复盘：做了 5 个项目后我发现，选项目就是选自己的生活方式",
+      "author": "纳豆卡玛",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255488554125121",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/ZOP4wBcVQiVgJ8k0KUWc50C0nnd?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/ZOP4wBcVQiVgJ8k0KUWc50C0nnd?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "60ddf46a4d1445",
+      "title": "省直公务员辞职创业，从副业兼职做到电商月GMV60W+，我终于想明白什么值得长期做",
+      "author": "范师傅",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255458881811812",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/Bz9pdBFizoCTZ3xdjUOc6Cmwnrb?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/Bz9pdBFizoCTZ3xdjUOc6Cmwnrb?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "7e3b3bb8282964",
+      "title": "自媒体最隐蔽的商业陷阱：流量越来越高，收入越来越差",
+      "author": "枕棠",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255455481224841",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/L3RhwTZBeiuA9RkWHmuct3s0nuN?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/L3RhwTZBeiuA9RkWHmuct3s0nuN?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "d8b7ce1db246ad",
+      "title": "执行力严重不足的人，加入生财70天后：拖着台式电脑跑40公里参加线下，靠贴图赚到第一个1000块",
+      "author": "来财小锦鲤",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422124555541822",
+      "links": [
+        {
+          "href": "https://fcn96nb1wud9.feishu.cn/wiki/WFFpw4gf1iAuCBkHECCc9cwcnVf?from=from_copylink",
+          "text": "https://fcn96nb1wud9.feishu.cn/wiki/WFFpw4gf1iAuCBkHECCc9cwcnVf?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "02a3f6013d7246",
+      "title": "SCBI 第二十七期：别光顾着看虚拟产品？这些 AI 小产品也有机会了",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255455828145241",
+      "links": []
+    },
+    {
+      "itemId": "67ebe836731198",
+      "title": "做闲鱼1个月，我是怎么从免费流到投流放大，做到2w利润的，附新手0-1上手实操SOP",
+      "author": "皓",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422488141512852",
+      "links": [
+        {
+          "href": "https://u5r02s5xet.feishu.cn/wiki/Bc78wJ5bGiMDkOkmHhWcGnjmnZd?from=from_copylink",
+          "text": "https://u5r02s5xet.feishu.cn/wiki/Bc78wJ5bGiMDkOkmHhWcGnjmnZd?from=from_copylink"
+        },
+        {
+          "href": "https://u5r02s5xet.feishu.cn/wiki/NcNJwzMqFiBoH5kBJkscTKsrnLL?from=from_copylink",
+          "text": "https://u5r02s5xet.feishu.cn/wiki/NcNJwzMqFiBoH5kBJkscTKsrnLL?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "95c4e3d3d0889f",
+      "title": "在生财，每月正在有近3000人一起学AI，聊项目| 6月195场线下聚会，7月86场线下聚会的进展汇报",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522422128828584",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/GhYtdfw8po5Akwx3HvYcL87DnTc",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/GhYtdfw8po5Akwx3HvYcL87DnTc"
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/docx/GhYtdfw8po5Akwx3HvYcL87DnTc2",
+          "text": "https://shengcaiyoushu01.feishu.cn/docx/GhYtdfw8po5Akwx3HvYcL87DnTc2"
+        }
+      ]
+    },
+    {
+      "itemId": "f2d450e6ad9fc2",
+      "title": "100 天闲鱼复盘：近 30 天销售额 22.6 万、利润 2 万，我如何把闲鱼做成一人公司的现金流基本盘",
+      "author": "鸭先知",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255211511124541",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/McVxwSo2miNmwAkVJUQcIKbOnKe?fromScene=spaceOverview",
+          "text": "https://my.feishu.cn/wiki/McVxwSo2miNmwAkVJUQcIKbOnKe?fromScene=spaceOverview"
+        }
+      ]
+    },
+    {
+      "itemId": "77d6668897ceab",
+      "title": "运营100多个抖音图文号，我如何在半年做到36万+纯利润",
+      "author": "小林",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255244415852222",
+      "links": [
+        {
+          "href": "https://ocnd0sd0u8ug.feishu.cn/docx/LuENdAZrroPmspxW73dcvWeznkb?from=from_copylink",
+          "text": "https://ocnd0sd0u8ug.feishu.cn/docx/LuENdAZrroPmspxW73dcvWeznkb?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "b47e19d1d3a793",
+      "title": "踩中5次风口，赚了100w+，万字拆解，普通人如何找到适合自己的风口",
+      "author": "叁斤",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255242445144121",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "f9e1facf8db48d",
+      "title": "连续两场 Codex 线下局复盘：从真需求到 AI 产品 demo，我们现场验证了什么？",
+      "author": "莫掌柜",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255242888254822",
+      "links": []
+    },
+    {
+      "itemId": "40a4ef9e9750ca",
+      "title": "奶茶店3个月亏30万，教会我怎么做互联网生意",
+      "author": "袁锐钦",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544528281515158",
+      "links": []
+    },
+    {
+      "itemId": "f1a7c6cb71f405",
+      "title": "6 月会员日：多看生财，少走弯路。一起复盘，照亮他人。",
+      "author": "鱼丸|亦仁助理",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/45544528888815128",
+      "links": []
+    },
+    {
+      "itemId": "bbe5596205d0e1",
+      "title": "做宠物用品无人超市，每周工作3小时，年营收做到近40万的复盘与心得",
+      "author": "钱鑫鑫",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255245454112242",
+      "links": [
+        {
+          "href": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xik3VrFcDiyvndg?from=from_copylink",
+          "text": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xik3VrFcDiyvndg?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "da828d143f4389",
+      "title": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目",
+      "author": "郭晓文",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522542455512284",
+      "links": [
+        {
+          "href": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO0k80YYccQvknhe?from=from_copylink",
+          "text": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO0k80YYccQvknhe?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "f653441dbd6266",
+      "title": "访谈生财传术师kosan：AI时代一定要做IP，做IP你是品牌，不做你就是白牌！",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522542844118154",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri8qBSkqOGQcaAvTnCe?from=from_copylink",
+          "text": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri8qBSkqOGQcaAvTnCe?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "4813debba78072",
+      "title": "3年跑通10+项目，6年大厂烧掉2个亿写成13万字书：我是如何选项目、换项目不内耗的？",
+      "author": "安然",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/22255245515558451",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQnuh?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQnuh?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "fa3d7a5b166f19",
+      "title": "靠这套AI编程打法SOP，1个月从「只会提需求」到能交付能变现，附录7个完整的提示词",
+      "author": "小厨",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422412228585842",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/M0wgwTJzMiPtZMkEeIocgw2Gn6W?from=from_copylink",
+          "text": "《飞书完整文档，点击》"
+        }
+      ]
+    },
+    {
+      "itemId": "405378d750b986",
+      "title": "生财6月AI实战月：3小时，用Codex做出能变现的AI产品",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522558855111524",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/wiki/XGSUwcF6ZiNdXGkgjjXcX81gnTg?from=from_copylink",
+          "text": "https://shengcaiyoushu01.feishu.cn/wiki/XGSUwcF6ZiNdXGkgjjXcX81gnTg?from=from_copylink"
+        },
+        {
+          "href": "https://feishu.cn/wiki/XGSUwcF6ZiNdXGkgjjXcX81gnTg?from=from_copylink%EF%BC%8C%E7%A1%AE%E8%AE%A4%E6%83%B3%E5%8F%91%E8%B5%B7%E7%9A%84%E8%AF%9D%E6%8A%A5%E5%90%8D%E7%BB%84%E5%B1%80%E5%93%88%E3%80%82%E6%8A%A5%E5%90%8D%E6%96%B9%E5%BC%8F%E5%9C%A8%E6%89%8B%E5%86%8C%E9%87%8C%E6%9C%89",
+          "text": "feishu.cn/wiki/XGSUwcF6ZiNdXGkgjjXcX81gnTg?from=from_copylink，确认想发起的话报名组局哈。报名方式在手册里有"
+        }
+      ]
+    },
+    {
+      "itemId": "98e450f2ed740b",
+      "title": "AI 时代：销售能力是无法被 AI 替代的能力",
+      "author": "昊",
+      "originalUrl": "",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/JgyFdM2AuobBItxDAH2cKMWanPf?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/JgyFdM2AuobBItxDAH2cKMWanPf?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "5fcda523d4bbe1",
+      "title": "访谈生财传术师一只仙：每天只工作2小时，月收入最高是上班时的10倍，她用2年成为一人公司",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255281855848442",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/wiki/Wl03wVv1kidwNVkd4rHcHsj7nhf?from=from_copylink",
+          "text": "https://shengcaiyoushu01.feishu.cn/wiki/Wl03wVv1kidwNVkd4rHcHsj7nhf?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "ea4edf11d098d4",
+      "title": "公众号-新手教程之多账号运营-隔离IP教学（免费几十个号）",
+      "author": "Fe",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422441888245212",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/XFyCwpE8LieuOKkNQmpcBGJ3n7g?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/XFyCwpE8LieuOKkNQmpcBGJ3n7g?from=from_copylink"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/NoIPwjbzCiVp2KkFhOScARXAngd?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/NoIPwjbzCiVp2KkFhOScARXAngd?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "2e92a61af8a42a",
+      "title": "关于ai的几条暴论第二季，",
+      "author": "杨涛",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422458522528112",
+      "links": []
+    },
+    {
+      "itemId": "5f5f67e4c02863",
+      "title": "参加完 AI 航海家大课，我不想再给 AI 加工位了",
+      "author": "麻雀",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422458245851222",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/ZmyRdwQObo3zVfxLTTEcD0XKnUh",
+          "text": "https://my.feishu.cn/docx/ZmyRdwQObo3zVfxLTTEcD0XKnUh"
+        }
+      ]
+    },
+    {
+      "itemId": "ed56c7a17d5acd",
+      "title": "不追风口：如何用 AI 把自己的能力打造成可变现产品",
+      "author": "Wee",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422458254848882",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/XSbedy5I7oyDYtxtt7eccsG4nCm?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/XSbedy5I7oyDYtxtt7eccsG4nCm?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "1154388a917add",
+      "title": "波波：AI时代创业转型经验分享^_^",
+      "author": "波波",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/14422451245848882",
+      "links": []
+    },
+    {
+      "itemId": "ec6f3d92354325",
+      "title": "SCBI 第二十五期：除了怀念，毕业季你能做的还有很多",
+      "author": "杨爽@生财有术",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255282125541582",
+      "links": []
+    },
+    {
+      "itemId": "4de8a9db27a4bc",
+      "title": "AI写文档给AI看，生财有术Agent时代精华帖该给Agent看",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/82255288121824122",
+      "links": []
+    },
+    {
+      "itemId": "52c8a8df8d93e2",
+      "title": "5月发起208场同城聚会，6月生财AI实战月：线下把真需求做成AI产品",
+      "author": "七天",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522511811841114",
+      "links": []
+    },
+    {
+      "itemId": "6e55740259a8d3",
+      "title": "1个月用 Codex 做了3个网站后，总结了4个普通人最容易踩坑的使用技巧",
+      "author": "潇墨",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522511584425154",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/OUuOwp66vi1mGWkKzn3cDRePnzf?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/OUuOwp66vi1mGWkKzn3cDRePnzf?from=from_copylink"
+        }
+      ]
+    },
+    {
+      "itemId": "bf8834d8c9f67a",
+      "title": "Codex、Claude Code等项目文件夹放在你的 Mac哪个位置更合理",
+      "author": "亦仁",
+      "originalUrl": "https://scys.com/articleDetail/xq_topic/55522511185424544",
+      "links": []
+    }
+  ],
   "prices": [
     {
-      "itemId": "24e55c49bc4061",
+      "itemId": "de082c8d87f949",
       "object": "标准化知识库",
       "min": 699,
       "max": 699,
@@ -2076,7 +3129,7 @@
       "limitation": "原摘录未标明币种；不是本次建议报价"
     },
     {
-      "itemId": "9d9aa01df0141d",
+      "itemId": "87d5106f9774b2",
       "object": "小程序定制",
       "min": 9000,
       "max": 9000,
@@ -2087,7 +3140,7 @@
       "limitation": "单个项目报价；不代表所有小程序报价"
     },
     {
-      "itemId": "058c9afd7490fa",
+      "itemId": "bd6fa86c23abea",
       "object": "AI 展示面教程",
       "min": 69,
       "max": 69,
@@ -2098,7 +3151,7 @@
       "limitation": "工具充值价格未披露"
     },
     {
-      "itemId": "058c9afd7490fa",
+      "itemId": "bd6fa86c23abea",
       "object": "代运营服务",
       "min": 8000,
       "max": 8000,
@@ -2164,7 +3217,7 @@
       "limitation": "单场订单；完整课程范围未披露"
     },
     {
-      "itemId": "829fba0f614197",
+      "itemId": "ef3530de800d2a",
       "object": "品牌 AI 短视频批量需求",
       "min": 150,
       "max": 250,
@@ -2175,7 +3228,7 @@
       "limitation": "作者拒绝后续批量订单，不能算作批量成交"
     },
     {
-      "itemId": "829fba0f614197",
+      "itemId": "ef3530de800d2a",
       "object": "1.5 分钟 AI 带货短视频",
       "min": 250,
       "max": 250,

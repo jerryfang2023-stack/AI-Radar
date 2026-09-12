@@ -116,10 +116,11 @@ test("startup direction snapshot resolves unique posts, preserves links and dist
   const library = JSON.parse(fs.readFileSync("01-SiteV2/site/data/scys-community-library.json", "utf8"));
   const data = JSON.parse(fs.readFileSync("01-SiteV2/site/data/scys-startup-directions.json", "utf8"));
   const ids = new Map(library.items.map(item => [item.id, item]));
-  const posts = data.directions.flatMap(direction => direction.posts);
+  const posts = [...data.directions.flatMap(direction => direction.posts), ...data.pending];
+  assert.equal(data.meta.classifiedPosts + data.meta.pendingPosts, posts.length);
   assert.equal(data.directions.length, 12);
-  assert.equal(posts.length, 179);
-  assert.equal(new Set(posts.map(post => post.itemId)).size, 179);
+  assert.ok(posts.length >= 179);
+  assert.equal(new Set(posts.map(post => post.itemId)).size, posts.length);
   const originals = posts.filter(post => post.originalUrl).map(post => post.originalUrl);
   assert.equal(new Set(originals).size, originals.length);
   for (const post of posts) {
@@ -133,7 +134,8 @@ test("startup direction snapshot resolves unique posts, preserves links and dist
     for (const link of post.links) assert.ok(links.has(link.href), "resource must resolve without rewriting its full URL");
     assert.deepEqual(Object.keys(post).sort(), ["author", "itemId", "links", "originalUrl", "title"]);
   }
-  assert.equal(data.prices.length, 15);
+  const reviews = JSON.parse(fs.readFileSync("agent-workflow/product/scys-direction-reviews.json", "utf8"));
+  assert.equal(data.prices.length, reviews.prices.length);
   for (const price of data.prices) {
     assert.ok(posts.some(post => post.itemId === price.itemId));
     assert.ok(price.min <= price.max && price.evidence && price.limitation);
@@ -141,4 +143,35 @@ test("startup direction snapshot resolves unique posts, preserves links and dist
   assert.equal(data.prices.find(price => price.min === 9800).nature, "预约报价");
   assert.equal(data.prices.find(price => price.min === 15).nature, "任务佣金");
   assert.equal(data.prices.find(price => price.min === 9.9).nature, "竞品价格");
+});
+
+test("daily directions count new posts once, advance date, retain links and expose ambiguity", async () => {
+  const {buildDirections} = await import('../build-scys-startup-directions.mjs');
+  const config = {directions:[{id:'writing',name:'AI 写作与小说'},{id:'education',name:'AI 培训'}],assignments:[],prices:[]};
+  const first = {...post, title:'AI 小说写作工具项目', author:'甲', firstSeen:'2026-09-12', lastSeen:'2026-09-12'};
+  const day1 = buildDirections({items:[first]},config);
+  assert.equal(day1.meta.classifiedPosts,1);
+  const again = {...first,id:'changed-id',lastSeen:'2026-09-13',links:[]};
+  const fresh = {...first,id:'new',url:post.url+'4',title:'AI 小说生成工具项目',lastSeen:'2026-09-13'};
+  const ambiguous = {...fresh,id:'ambiguous',url:post.url+'5',title:'AI 小说培训产品'};
+  const day2 = buildDirections({items:[first,again,fresh,ambiguous]},config);
+  assert.equal(day2.asOf,'2026-09-13');
+  assert.equal(day2.meta.classifiedPosts,2);
+  assert.equal(day2.pending.length,1);
+  assert.equal(day2.directions[0].posts.find(p=>p.originalUrl===post.url).links[0].href,link.href);
+  assert.equal(day2.prices.length,0);
+  assert.deepEqual(buildDirections({items:[first,again,fresh,ambiguous]},config),day2);
+  const reviewed = {...config,assignments:[{title:ambiguous.title,author:'甲',originalUrl:ambiguous.url,direction:'education'}]};
+  assert.equal(buildDirections({items:[first,again,fresh,ambiguous]},reviewed).pending.length,0);
+});
+
+test("daily direction artifact is checked and staged by both existing publication paths", async () => {
+  const {updateDirections} = await import('../build-scys-startup-directions.mjs');
+  const library = JSON.parse(fs.readFileSync('01-SiteV2/site/data/scys-community-library.json','utf8'));
+  assert.doesNotThrow(()=>updateDirections(process.cwd(),library,{check:true}));
+  const changed = {...library,items:[...library.items,{...post,id:'tomorrow-post',title:'AI 小说写作工具项目',firstSeen:'2099-01-01',lastSeen:'2099-01-01'}]};
+  assert.throws(()=>updateDirections(process.cwd(),changed,{check:true}),/statistics are stale/);
+  for (const file of ['.github/workflows/daily-community-intelligence-pr.yml','agent-workflow/tools/publish-community-intelligence-local.mjs']) {
+    assert.ok(fs.readFileSync(file,'utf8').includes('01-SiteV2/site/data/scys-startup-directions.json'));
+  }
 });

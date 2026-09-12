@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { updateDirections } from "./build-scys-startup-directions.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { mergeDocumentLinks, buildDocumentIndex, documentKey } from "../../01-SiteV2/site/scripts/community-document-links.mjs";
@@ -52,7 +53,8 @@ export function buildScysLibrary(root = process.cwd(), { check = false } = {}) {
   if (check) {
     if (!fs.existsSync(target) || fs.readFileSync(target, "utf8") !== body) throw new Error("SCYS library is stale; rebuild from accepted snapshots");
   } else fs.writeFileSync(target, body);
-  return { missingOriginalLinks: result.meta.missingOriginalLinks, items: result.items.length, resources: result.resources.length, snapshots: snapshots.length };
+  const directions = updateDirections(root, result, { check });
+  return { directions, missingOriginalLinks: result.meta.missingOriginalLinks, items: result.items.length, resources: result.resources.length, snapshots: snapshots.length };
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   console.log(JSON.stringify({ ok: true, ...buildScysLibrary(process.cwd(), { check: process.argv.includes("--check") }) }));

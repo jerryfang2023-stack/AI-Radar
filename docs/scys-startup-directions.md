@@ -1,28 +1,21 @@
 # 生财有术创业方向统计分析
 
-第三个页签：community-scys.html?section=directions；方向深链示例：&direction=apps。
+入口：community-scys.html?section=directions。独立详情：community-scys-direction.html?direction=content-agents。旧概览页 direction 参数自动兼容跳转。
 
-## 数据与维护
+## 每日数据链路
 
-- 数据文件：01-SiteV2/site/data/scys-startup-directions.json。
-- 2026-09-12 Excel 整理快照：12 个方向、179 篇案例与实践帖子、15 条金额记录。
-- 每篇只归入一个主方向。按原帖去重，同一项目的不同帖子分别计数；数量不是创业项目数、成交数或市场规模。
-- itemId 固定关联 scys-community-library.json，同时保留标题、作者校验；不使用 Excel 行号作为关联键。
-- links 保留去重前各归档记录的完整资料地址，详情弹窗合并展示，不改写飞书参数。
-- 方向痛点为编辑归纳，价格为历史来源陈述，不能进入 V4 事实表。缺失价格明确显示未披露；预约、佣金和竞品价格单独标识。
-- 这是人工整理快照。新增帖子需审核后加入对应方向；改变采集排序不会改变成员。库内帖子缺失、身份变化或链接变更由现有社群测试阻止发布，不静默改配。
-- JSON 仅含分类、来源定位、链接和短金额依据，不保存完整原文或私有证据正文。
+已验收每日快照 → build:scys-library → build-scys-startup-directions.mjs → scys-startup-directions.json → 现有社群发布 PR → Pages。
+本机采集脚本、GitHub 每日社群流程和本机发布器共用库构建；两个发布器均提交统计 JSON。assert:scys-library 同时校验统计与数据库一致，陈旧统计阻止 CI。
 
-## 页面规格与验收
+统计不读取 Excel。12 个方向定义、已整理归属和已核对金额放在 agent-workflow/product/scys-direction-reviews.json，以原帖地址或标题+作者关联。输出标题、链接、日期和数量均从当日累计库重建，采集 ID 改变不丢归属。新增明确标题匹配单一方向时自动归类；多方向或无明确匹配进入可展开的待分类列表，补充人工归属后下次构建自动移出。
 
-| 位置 | 字体 / 字号 / 行高 | 文案 |
-|---|---|---|
-| 页签 | 品牌无衬线 / 14 / 20 | 创业方向统计分析 |
-| 方向标题 | 品牌无衬线 / 20 / 30 | 数据内方向名称 |
-| 统计数字 | 品牌数字字体 / 28 / 40 | 创业方向、案例与实践帖子、收费及金额记录 |
-| 正文 | 品牌无衬线 / 14 / 24 | 主要痛点、产品与服务、收费与金额、对应帖子 |
+按原帖去重；唯一标题+作者可匹配已知原帖，防止缺链副本重复计数。累计数量不是独立企业或成交数。最新日期来自生财记录的最近入库日期，不因仅 AI 破局更新而推进。重复执行同一批数据输出不变，完整飞书地址跨重复记录合并保存。
 
-Guanlan Typography QC：使用品牌 token、400/500/600 字重，不改左侧导航。桌面 1280 和手机 390 视口检查层级、换行、控制项和横向溢出。截图输出到本机 WaveSight/runtime/scys-directions-*.png，不进入源码。
+金额只采用已核对记录，不用标题营收推断单价。新增含报价/收费线索而未核对的帖子进入 meta.pricingReviewIds，核对后在 reviews 的 prices 中录入来源定位、原文短依据、币种、计价单位、性质及适用边界。方向痛点仍是编辑归纳；统计不进入 V4 事实表。
 
-验证命令：npm run test:community-intelligence；node agent-workflow/tools/tests/community-subcolumns-browser-smoke.mjs；node agent-workflow/tools/frontstage-regression-gate.mjs；node agent-workflow/tools/assert-version-consistency.mjs。
-浏览器覆盖第三页签、12/179/15 统计、方向切换、URL 重载、分页、金额性质、原帖与详情，以及旧案例/资料页和 AI 破局隔离。
+## 页面与验收
+
+分类入口使用真实链接进入独立详情页，概览不在下方渲染详情。新页提供返回统计、方向标题及分页列表，页码可重载，浏览器返回保留导航历史。对应帖子采用单列纯标题链接，16px/28px、字重500、品牌无衬线；有原帖时直接打开，无原帖时标题打开站内详情。正文、作者、日期和卡片摘要不在列表展示。保留详情内的资料链接。
+其他 VI 沿用原模块：页签14/20，方向标题20/30，统计数字28/40，正文14/24。左侧导航不变。
+
+验证：社群单元测试覆盖次日新增、重复采集、归属歧义、资料保留、幂等及陈旧统计门禁；浏览器测试覆盖标题列表、原帖地址、深链、分页及桌面/手机；发布使用现有 PR/Pages 门禁。

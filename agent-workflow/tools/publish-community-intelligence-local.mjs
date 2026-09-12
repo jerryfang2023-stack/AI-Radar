@@ -283,6 +283,7 @@ function main() {
   writeReport(summary);
 
   stageIfExists("01-SiteV2/site/data/scys-community-library.json");
+  stageIfExists("01-SiteV2/site/data/scys-startup-directions.json");
   stageIfExists("01-SiteV2/site/data/community-intelligence.json");
   stageIfExists("01-SiteV2/site/data/community-intelligence-daily/index.json");
   stageIfExists(`01-SiteV2/site/data/community-intelligence-daily/${date}.json`);
