@@ -25,10 +25,24 @@ permissions:
 jobs:
   china-funding:
     name: Independent China funding lane
-    uses: ./.github/workflows/china-funding-pr.yml
-    with:
-      date: ${{ inputs.date || '' }}
-    secrets: inherit
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Dispatch a separate run so domestic failures cannot invalidate overseas completion
+        env:
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+          GH_REPO: ${{ github.repository }}
+          REQUEST_DATE: ${{ inputs.date }}
+        run: |
+          set -euo pipefail
+          date="${REQUEST_DATE:-$(TZ=Asia/Shanghai date +%F)}"
+          [[ "$date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
+          active="$(gh run list --workflow china-funding-pr.yml --branch main --limit 30 --json displayTitle,status,conclusion --jq ".[] | select(.displayTitle == \"China funding $date\" and (.status != \"completed\" or .conclusion == \"success\")) | .status")"
+          if [ -n "$active" ]; then
+            echo 'Domestic lane already active or completed for this date.'
+          else
+            gh workflow run china-funding-pr.yml --ref main -f date="$date"
+          fi
 
   business-signals-pr:
     name: Business Signals Scheduled PR
