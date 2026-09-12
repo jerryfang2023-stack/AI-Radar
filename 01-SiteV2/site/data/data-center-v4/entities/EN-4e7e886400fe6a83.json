@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "generatedAt": "2026-09-12T04:28:15.100Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2847,
-    "quarantinedEventCount": 25
+    "eventCount": 2857,
+    "quarantinedEventCount": 26
   },
   "entity": {
     "id": "EN-4e7e886400fe6a83",
@@ -369,6 +369,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
+        "TX-technology-on_device",
+        "TX-use_case-physical_automation",
+        "TX-deployment_model-edge_device",
+        "TX-product_form-model",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -380,7 +384,6 @@
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-data_analysis",
@@ -392,7 +395,6 @@
         "TX-industry-education",
         "TX-industry-media_entertainment",
         "TX-product_form-model_api_service",
-        "TX-use_case-physical_automation",
         "TX-product_form-ai_infrastructure_software",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
@@ -416,8 +418,6 @@
         "TX-deployment_model-cloud",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-technology-tool_use",
         "TX-technology-reasoning"
       ],
@@ -483,6 +483,8 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
+        "EV-0e7c33ff3b622ab1",
+        "EV-b91024c06d8762a4",
         "EV-a2f902b9707ffd02",
         "EV-1f0c1fa47eb63e4b",
         "EV-140ecf4fabe544ba",
@@ -600,6 +602,8 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-f07813b0d063bdb6",
+        "EN-3b07d7518a8133fa",
         "EN-94cca1a82802fa64",
         "EN-0bc55b0ee44bae55",
         "EN-a31f26263a2fe821",
