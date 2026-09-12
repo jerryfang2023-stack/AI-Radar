@@ -1,7 +1,7 @@
 {
   "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
   "date": "2026-09-12",
-  "generated_at": "2026-09-12T04:06:03.271Z",
+  "generated_at": "2026-09-12T04:22:48.395Z",
   "status": "failed",
   "last_collection_at": "2026-09-12T03:41:42.764Z",
   "failed_stage": "projections",
@@ -9,22 +9,22 @@
     {
       "id": "capture",
       "status": "passed",
-      "started_at": "2026-09-12T04:04:15.757Z",
+      "started_at": "2026-09-12T04:20:33.149Z",
       "reused": true,
-      "finished_at": "2026-09-12T04:04:22.109Z"
+      "finished_at": "2026-09-12T04:20:39.508Z"
     },
     {
       "id": "facts",
       "status": "passed",
-      "started_at": "2026-09-12T04:04:22.110Z",
-      "finished_at": "2026-09-12T04:05:48.974Z"
+      "started_at": "2026-09-12T04:20:39.508Z",
+      "finished_at": "2026-09-12T04:22:04.860Z"
     },
     {
       "id": "projections",
       "status": "failed",
-      "started_at": "2026-09-12T04:05:48.974Z",
-      "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-      "finished_at": "2026-09-12T04:06:03.200Z"
+      "started_at": "2026-09-12T04:22:04.860Z",
+      "error": "Command failed: agent-workflow/tools/assert-taxonomy-consistency-v4-1.mjs (1)",
+      "finished_at": "2026-09-12T04:22:48.325Z"
     }
   ],
   "sources": [
@@ -140,14 +140,11 @@
       "completed_at": "2026-09-12T03:41:08.515Z",
       "raw_count": 9,
       "readable_count": 9,
-      "accepted_claims": 11,
+      "accepted_claims": 8,
       "verified_event_ids": [
-        "EV-831dd02f2a56276f",
-        "EV-b91024c06d8762a4",
-        "EV-c30d02d0520ba0ba"
+        "EV-b91024c06d8762a4"
       ],
       "funding_event_ids": [
-        "EV-831dd02f2a56276f",
         "EV-b91024c06d8762a4"
       ],
       "china_funding_event_ids": [],
@@ -253,11 +250,11 @@
     "sources_failed": 0,
     "candidates": 72,
     "readable_documents": 32,
-    "accepted_claims": 25,
-    "verified_events": 6,
-    "funding_events": 5,
+    "accepted_claims": 22,
+    "verified_events": 4,
+    "funding_events": 4,
     "china_funding_events": 1,
-    "linked_organizations": 9,
+    "linked_organizations": 6,
     "linked_products": 0,
     "published_card_matches": 0
   },
