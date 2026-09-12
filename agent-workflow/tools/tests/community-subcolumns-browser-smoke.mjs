@@ -104,6 +104,23 @@ try {
   assert.equal(new URL(page.url()).searchParams.get('section'),'cases');
   await page.setViewportSize({width:1280,height:900});
   await page.screenshot({path:path.join(out,'community-subcolumns-desktop.png'),fullPage:true});
+  await page.goto(baseUrl+'data-center.html?view=index&q=1Password',{waitUntil:'networkidle'});
+  assert.equal(await page.locator('.dc-row-hit[aria-label="1Password"]').count(),1);
+  assert.equal(await page.getByRole('link',{name:'投资记录',exact:true}).count(),1);
+  await page.goto(baseUrl+'data-center.html?view=events',{waitUntil:'networkidle'});
+  assert.ok(!(await page.locator('main').innerText()).includes('奉劝各位AI视频玩家'));
+  assert.equal(await page.getByLabel('分类维度',{exact:true}).count(),1);
+  assert.equal(await page.getByLabel('分类内容',{exact:true}).locator('option').count(),1);
+  await page.screenshot({path:path.join(out,'data-center-events-improved.png'),fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  await page.locator('[data-nav-toggle]').click();
+  assert.equal(await page.locator('[data-nav-toggle]').innerText(),'关闭');
+  assert.equal(await page.locator('main').evaluate(n=>n.inert),true);
+  await page.screenshot({path:path.join(out,'data-center-nav-improved.png'),animations:'disabled'});
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('[data-nav-toggle]').getAttribute('aria-expanded'),'false');
+  assert.equal(await page.locator('main').evaluate(n=>n.inert),false);
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   assert.deepEqual(errors,[]);
   console.log(JSON.stringify({ok:true,sourceIsolation:true,caseFilters:true,monthlyArchive:true,resourceHref:href,manualDirectory:true,pagination:true,mobile:true,baseUrl}));
 } finally {await browser.close();await new Promise(resolve=>server.close(resolve));}

@@ -518,7 +518,8 @@ test("commercial events expose TAG-V4 technical tags and structured facets separ
   assert.match(adapter, /tag-taxonomy-v4\.json/u);
   assert.match(adapter, /facet_assertions\.jsonl/u);
   assert.doesNotMatch(adapter, /frontstageTitleFallbacks|fallbackChineseEventTitle|fallbackEventTitle/u);
-  assert.match(script, /技术 \/ 场景 \/ 产品/u);
+  assert.match(script, /选择分类维度/u);
+  assert.match(script, /全部分类内容/u);
   assert.match(script, /function renderClassificationGroups/u);
   assert.ok(data.events.some((item) => item.tags.length > 0));
   assert.ok(data.events.some((item) => item.classifications.length > item.tags.length));
@@ -593,17 +594,18 @@ test("public event sources expose original publishers instead of discovery chann
   assert.ok(data.events.every((item) => item.sources.every((source) => !/\b(?:keyword search|anysearch|gdelt)\b/iu.test(source.publisher))));
 });
 
-test("commercial events prioritize financing and cases before products and other records", () => {
+test("commercial events sort by batch and disclosed date without category preference", () => {
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
-
-  assert.match(script, /const eventDisplayPriority = new Map/u);
-  assert.match(script, /\["融资与并购", 0\]/u);
-  assert.match(script, /\["部署与案例", 1\]/u);
-  assert.match(script, /\["商业合作", 2\]/u);
-  assert.match(script, /\["模型、产品与服务", 3\]/u);
-  assert.match(script, /function sortEventsForDisplay\(items\)/u);
-  assert.match(script, /items = sortEventsForDisplay\(items\)/u);
-  assert.match(script, /a\.index - b\.index/u);
+  const start = script.indexOf("  function sortEventsForDisplay(items)");
+  const end = script.indexOf("  function collectionForView", start);
+  const sort = new Function(script.slice(start, end) + "; return sortEventsForDisplay;")();
+  const items = [
+    {id:"old-funding",eventGroup:"融资与并购",dataDate:"2026-09-12",date:"2026-09-10"},
+    {id:"new-product",eventGroup:"模型、产品与服务",dataDate:"2026-09-12",date:"2026-09-12"},
+    {id:"prior-batch",dataDate:"2026-09-11",date:"2026-09-12"}
+  ];
+  assert.deepEqual(sort(items).map(item=>item.id), ["new-product","old-funding","prior-batch"]);
+  assert.equal(items[0].id,"old-funding");
 });
 
 test("entity library and embedded relationship views use the unified entity service", () => {

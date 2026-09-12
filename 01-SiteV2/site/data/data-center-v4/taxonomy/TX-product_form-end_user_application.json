@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T07:23:16.602Z",
+    "generatedAt": "2026-09-12T08:30:34.647Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2875,
-    "quarantinedEventCount": 26
+    "eventCount": 2865,
+    "quarantinedEventCount": 33
   },
   "node": {
     "id": "TX-product_form-end_user_application",
@@ -28,7 +28,6 @@
       "EV-2301cd1470155075",
       "EV-ea109db692b88079",
       "EV-57cf8e14d6994c1b",
-      "EV-39b075c62ba4e927",
       "EV-f1553722b4ce43af",
       "EV-2a78dd5feb40a78a",
       "EV-1da2e46e39a57d33",
@@ -128,7 +127,6 @@
       "EN-9f80a5e14017ccc0",
       "EN-26997989b8425dac",
       "EN-556c337c4f0b031e",
-      "EN-f9075cc99990820a",
       "EN-b80e0af617d0f8ff",
       "EN-2be663431f007250",
       "EN-cfd90af8403941bf",
@@ -3412,382 +3410,6 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
       "publisher": "techcrunch.com"
-    },
-    {
-      "id": "EV-39b075c62ba4e927",
-      "dataDate": "2026-07-30",
-      "date": "2026-07-29",
-      "updatedDate": "2026-07-30",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "智能体AI能否让美国制造业回归？",
-      "originalTitle": "Could Agentic AI Bring American Manufacturing Back?",
-      "subject": "P-1 AI, Inc.",
-      "action": "announced",
-      "object": "$50 million Series A financing round",
-      "metrics": [
-        "$50 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "enterprise_applications",
-            "name": "企业级应用",
-            "entityIds": [
-              "EN-f9075cc99990820a"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-9c437433067589ab",
-            "fundingInsightId": "FI-4940d296a418f48f"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "productivity_enterprise_workflows",
-            "name": "生产力与企业工作流",
-            "entityIds": [
-              "EN-f9075cc99990820a"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-83e85ad3cadc8acf",
-            "fundingInsightId": "FI-4940d296a418f48f"
-          }
-        ],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "end_user_application",
-            "name": "终端 AI 应用",
-            "entityIds": [
-              "EN-f9075cc99990820a"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-27439b1e1a3b0a6c",
-            "fundingInsightId": "FI-4940d296a418f48f"
-          }
-        ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "design_engineering",
-            "name": "设计与工程",
-            "entityIds": [
-              "EN-f9075cc99990820a"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-f332ab7867278ebd",
-            "fundingInsightId": "FI-4940d296a418f48f"
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "productivity_enterprise_workflows",
-            "name": "生产力与企业工作流",
-            "entityIds": [
-              "EN-f9075cc99990820a"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-7a36d5e01784cc01",
-            "fundingInsightId": "FI-4940d296a418f48f"
-          }
-        ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "automotive_transportation",
-            "name": "汽车与交通",
-            "entityIds": [
-              "EN-f9075cc99990820a"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-82a882505839db6d",
-            "fundingInsightId": "FI-4940d296a418f48f"
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [
-              "EN-f9075cc99990820a"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-83811816590ff923",
-            "fundingInsightId": "FI-4940d296a418f48f"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-f9075cc99990820a"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-255d52c73929cc3d",
-            "fundingInsightId": "FI-4940d296a418f48f"
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "enterprise_applications",
-          "name": "企业级应用",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-9c437433067589ab",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-83e85ad3cadc8acf",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "automotive_transportation",
-          "name": "汽车与交通",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-82a882505839db6d",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-83811816590ff923",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "end_user_application",
-          "name": "终端 AI 应用",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-27439b1e1a3b0a6c",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-255d52c73929cc3d",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "design_engineering",
-          "name": "设计与工程",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-f332ab7867278ebd",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-7a36d5e01784cc01",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "enterprise_applications",
-          "name": "企业级应用",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-9c437433067589ab",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-83e85ad3cadc8acf",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "end_user_application",
-          "name": "终端 AI 应用",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-27439b1e1a3b0a6c",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "design_engineering",
-          "name": "设计与工程",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-f332ab7867278ebd",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-7a36d5e01784cc01",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "automotive_transportation",
-          "name": "汽车与交通",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-82a882505839db6d",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "manufacturing",
-          "name": "制造业",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-83811816590ff923",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-f9075cc99990820a"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-255d52c73929cc3d",
-          "fundingInsightId": "FI-4940d296a418f48f"
-        }
-      ],
-      "entityIds": [
-        "EN-f9075cc99990820a"
-      ],
-      "entityNames": [
-        "P-1 AI, Inc."
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
-      "publisher": "tech.yahoo.com"
     },
     {
       "id": "EV-f1553722b4ce43af",
@@ -24754,37 +24376,6 @@
       "lastSeen": "2026-08-10"
     },
     {
-      "id": "EN-f9075cc99990820a",
-      "name": "P-1 AI, Inc.",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "P-1 AI"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-39b075c62ba4e927"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-end_user_application",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
-        "TX-use_case-design_engineering"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-29",
-      "lastSeen": "2026-07-30"
-    },
-    {
       "id": "EN-b80e0af617d0f8ff",
       "name": "Hint",
       "entityType": "organization_candidate",
@@ -25566,7 +25157,6 @@
         "EV-f819309f846d95bc",
         "EV-2902a32e86a4b2d1",
         "EV-90707e0cbca091c9",
-        "EV-9356dd1be92ef5c6",
         "EV-649481503cdb7736",
         "EV-6645d194b59939ca",
         "EV-94adebee59a6dede",
@@ -26136,8 +25726,8 @@
         "TX-target_user-consumer",
         "TX-ai_market_category-industry_applications",
         "TX-industry-construction_real_estate",
-        "TX-use_case-design_engineering",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-ai_market_subcategory-consumer_retail",
+        "TX-use_case-design_engineering"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-29",
@@ -26248,8 +25838,8 @@
         "TX-product_form-end_user_application",
         "TX-ai_market_category-industry_applications",
         "TX-industry-construction_real_estate",
-        "TX-use_case-design_engineering",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-ai_market_subcategory-consumer_retail",
+        "TX-use_case-design_engineering"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-23",
@@ -26659,8 +26249,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-on_device",
+        "TX-use_case-physical_automation",
         "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-product_form-end_user_application",

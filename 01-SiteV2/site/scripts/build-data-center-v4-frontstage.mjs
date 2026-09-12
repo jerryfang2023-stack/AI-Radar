@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { publicEventSourceTitleIssue } from "../../../agent-workflow/tools/build-data-center-v4.mjs";
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
@@ -736,8 +737,8 @@ export function buildFrontstageData(root = defaultRoot) {
     tagNames,
     facetNames
   });
-  const invalidTitles = allEventRecords.filter((item) => !isCompletePublicEventTitle(item.title));
-  const eventRecords = allEventRecords.filter((item) => isCompletePublicEventTitle(item.title));
+  const invalidTitles = allEventRecords.filter((item) => (!isCompletePublicEventTitle(item.title) || publicEventSourceTitleIssue(item.title)));
+  const eventRecords = allEventRecords.filter((item) => isCompletePublicEventTitle(item.title) && !publicEventSourceTitleIssue(item.title));
   const latestDataDate = eventRecords.map((item) => item.dataDate).filter(Boolean).sort().at(-1) || "";
   const currentDate = latestDataDate;
   const entityRows = [...sourceEntityRows];
