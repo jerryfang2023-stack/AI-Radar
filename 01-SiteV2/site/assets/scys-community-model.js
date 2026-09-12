@@ -1,6 +1,6 @@
 (function (scope) {
   "use strict";
-  const version = "CINT-V1.4.0-monthly-archive";
+  const version = "CINT-V1.4.1-card-hierarchy";
   function key(item) {
     const match = String(item.url || "").match(/articleDetail\/(xq_topic|forum_topic)\/(\d+)/);
     return match ? `${match[1]}:${match[2]}` : `title:${String(item.title || item.id).trim()}`;
