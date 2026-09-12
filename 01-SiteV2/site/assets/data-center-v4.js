@@ -1266,6 +1266,7 @@
     const title = communityDisplayTitle(item);
     const originalUrl = communityCanonicalItemUrl(item);
     const links = communityLinks(item);
+    const related = Array.isArray(item.relatedResources) ? item.relatedResources : [];
     content.innerHTML = `
       <div class="dc-community-dialog-meta">
         <span>${escapeHtml(communitySourceLabel(item))}</span>
@@ -1283,6 +1284,18 @@
           ${!originalUrl && !links.length ? "<p>当前记录没有识别到原帖或外部资料链接。</p>" : ""}
         </div>
       </section>
+      ${related.length ? `<section><h3>同主题案例、工具与手册</h3>
+        <p>按原帖关键词检索，供延伸阅读，不代表作者推荐或使用。</p>
+        ${related.map((resource) => {
+          const href = safeExternalUrl(resource.url || "");
+          const title = escapeHtml(resource.title || "未命名资料");
+          const kind = { case: "项目案例", tool: "工具", manual: "航海手册" }[resource.kind] || "资料";
+          const entries = Array.isArray(resource.entries) ? resource.entries : [];
+          return `<div><p><strong>${escapeHtml(kind)} · ${href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${title}</a>` : title}</strong></p>
+            ${resource.description ? `<p>${escapeHtml(resource.description)}</p>` : ""}
+            ${entries.length ? `<details><summary>查看手册目录（${entries.length} 节）</summary><ul>${entries.map((entry) => `<li>${escapeHtml(entry.title)}</li>`).join("")}</ul></details>` : ""}
+          </div>`;
+        }).join("")}</section>` : ""}
     `;
     if (typeof dialog.showModal === "function") dialog.showModal();
   }

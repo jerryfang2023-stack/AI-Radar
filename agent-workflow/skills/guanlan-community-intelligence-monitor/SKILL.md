@@ -20,6 +20,8 @@ metadata:
 
 This skill owns the Community Intelligence lane. It supervises local logged-in collection, community frontstage data, the community data gate, and publication through the community PR workflow. The external Guanlan AI Vault receives a local readable projection only after accepted data reaches `main`.
 
+生财采集升级以 `docs/scys-mcp-community-intelligence.md` 为实现补充：优先复用本机 Codex OAuth 的只读 MCP，破局保留浏览器路径。必须解析百分号编码的真实飞书 href、保留旧资料链接，并单独验收资源索引；不能用搜索摘要替代详情或把飞书合并正文缺失判为原帖无资料。案例、工具、手册关联仅为关键词检索结果。采集过程不得自动登录；仅关联阶段失败时从私有证据恢复，不重采成功帖子。
+
 ## Current Timing
 
 - Local logged-in collection: 08:30 Asia/Shanghai via Windows task `WaveSight Community Intelligence Daily`.

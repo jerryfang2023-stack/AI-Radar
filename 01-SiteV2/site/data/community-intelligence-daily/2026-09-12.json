@@ -1,6 +1,16 @@
 {
   "meta": {
-    "generatedAt": "2026-09-12T01:27:28.129Z",
+    "generatedAt": "2026-09-12T03:35:34.175Z",
+    "scysCoverage": {
+      "queries": [],
+      "discovered": 6,
+      "detailed": 6,
+      "truncated": false
+    },
+    "scysAcquisition": "mcp",
+    "resourceAssociation": "keyword_match_only_not_verified_relationship",
+    "reusedCollectionAt": "2026-09-12T01:27:28.129Z",
+    "upgradeMode": "existing-post-details",
     "cdpUrl": "http://127.0.0.1:9333",
     "scrolls": 1,
     "homeDetailLimit": 6,
@@ -41,11 +51,11 @@
       }
     ],
     "updateMechanism": {
-      "dailyFeed": "每次运行先抓两个社群首页信息流，捕捉当天高频讨论。",
+      "dailyFeed": "生财优先通过 MCP 查询最近 24 小时帖子并读取详情；破局沿用浏览器信息流。分页覆盖单独记录。",
       "targetedSearch": "再按关键词池轮询搜索行业、场景、工具、机会词，补充垂直案例和历史高价值内容。",
       "dedupe": "按原帖 URL 优先去重；没有详情 URL 时按来源 + 规范化标题/正文指纹去重，并合并多个命中关键词。",
       "valueScoring": "按资料链接、结果信号、可复用方法、工具/流程密度、痛点/需求信号、商业结果等计算价值分，高价值内容靠前。",
-      "login": "复用专用浏览器登录态；登录失效时脚本记录错误，需要重新扫码。"
+      "login": "生财复用 Codex OAuth，采集不自动登录；MCP 不可用时回退浏览器。破局复用专用浏览器登录态。"
     },
     "errors": [],
     "warnings": [],
@@ -55,8 +65,23 @@
       "provider": "deepseek",
       "required": 0,
       "translated": 0,
-      "completedAt": "2026-09-12T01:27:30.889Z"
-    }
+      "completedAt": "2026-09-12T03:36:22.500Z"
+    },
+    "resourceEnrichment": {
+      "updatedAt": "2026-09-12T03:44:06.598Z",
+      "reusedPrivateEvidence": true,
+      "updated": 6,
+      "warnings": [
+        {
+          "source": "scys",
+          "mode": "manual-access",
+          "activityId": "10048",
+          "keyword": "抖音",
+          "message": "Manual restricted to designated users; skipped without requesting new permissions"
+        }
+      ]
+    },
+    "columnVersion": "CINT-V1.1.0-scys-mcp-feishu"
   },
   "sources": {
     "scys": {
@@ -120,489 +145,1067 @@
   },
   "links": [
     {
-      "href": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYBnH1?from=from_copylink",
-      "text": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYB...",
-      "itemId": "2a15d9cde7a900",
-      "itemTitle": "100 亿 Token 实战复盘，AI 小白如何用 Codex 做小红书虚拟项目（一）",
+      "href": "https://my.feishu.cn/wiki/VGMcwJxjtiry8PkfrBscI357nuc?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/VGMcwJxjtiry8PkfrBscI357nuc?from=from_copylink",
+      "itemId": "992df739a24e2c",
+      "itemTitle": "抖音40万粉，B站10万粉，小红书5万粉，网盘拉新四个月变现30万，1.4万字复盘为什么换个平台，我还能做起来，其中有什么底层方法论！",
+      "itemUrl": "https://scys.com/articleDetail/xq_topic/22258815151158451",
       "source": "scys",
-      "sourceName": "生财有术"
+      "sourceName": "生财有术",
+      "owners": [
+        {
+          "itemId": "992df739a24e2c",
+          "itemTitle": "抖音40万粉，B站10万粉，小红书5万粉，网盘拉新四个月变现30万，1.4万字复盘为什么换个平台，我还能做起来，其中有什么底层方法论！",
+          "itemUrl": "https://scys.com/articleDetail/xq_topic/22258815151158451",
+          "source": "scys",
+          "sourceName": "生财有术"
+        }
+      ]
     },
     {
-      "href": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYB",
-      "text": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYB",
+      "href": "https://my.feishu.cn/wiki/U8exwxmrdiCgQBkP5HtcOJzEnFb",
+      "text": "https://my.feishu.cn/wiki/U8exwxmrdiCgQBkP5HtcOJzEnFb",
+      "itemId": "a90cc63c1fde63",
+      "itemTitle": "春招两月盈利 2.8w：我做了一个 AI 简历填表插件，从发现商机到卖出去的完整复盘",
+      "itemUrl": "https://scys.com/articleDetail/xq_topic/14425582828221512",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "owners": [
+        {
+          "itemId": "a90cc63c1fde63",
+          "itemTitle": "春招两月盈利 2.8w：我做了一个 AI 简历填表插件，从发现商机到卖出去的完整复盘",
+          "itemUrl": "https://scys.com/articleDetail/xq_topic/14425582828221512",
+          "source": "scys",
+          "sourceName": "生财有术"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYBnH1?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYBnH1?from=from_copylink",
       "itemId": "2a15d9cde7a900",
       "itemTitle": "100 亿 Token 实战复盘，AI 小白如何用 Codex 做小红书虚拟项目（一）",
+      "itemUrl": "https://scys.com/articleDetail/xq_topic/22258815152118141",
       "source": "scys",
-      "sourceName": "生财有术"
+      "sourceName": "生财有术",
+      "owners": [
+        {
+          "itemId": "2a15d9cde7a900",
+          "itemTitle": "100 亿 Token 实战复盘，AI 小白如何用 Codex 做小红书虚拟项目（一）",
+          "itemUrl": "https://scys.com/articleDetail/xq_topic/22258815152118141",
+          "source": "scys",
+          "sourceName": "生财有术"
+        }
+      ]
     },
     {
       "href": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkhR0oc4AKBnog",
-      "text": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkh...",
+      "text": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkhR0oc4AKBnog",
       "itemId": "c0b5d090f47356",
       "itemTitle": "YouTube长视频月入万刀，油管老兵的复盘分享",
+      "itemUrl": "https://scys.com/articleDetail/xq_topic/14425582822541882",
       "source": "scys",
-      "sourceName": "生财有术"
-    },
-    {
-      "href": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkh",
-      "text": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkh",
-      "itemId": "c0b5d090f47356",
-      "itemTitle": "YouTube长视频月入万刀，油管老兵的复盘分享",
-      "source": "scys",
-      "sourceName": "生财有术"
+      "sourceName": "生财有术",
+      "owners": [
+        {
+          "itemId": "c0b5d090f47356",
+          "itemTitle": "YouTube长视频月入万刀，油管老兵的复盘分享",
+          "itemUrl": "https://scys.com/articleDetail/xq_topic/14425582822541882",
+          "source": "scys",
+          "sourceName": "生财有术"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/ARXRwLtgOierJTkELqjcWlQLneh?from=from_copylink",
       "text": "https://my.feishu.cn/wiki/ARXRwLtgOierJTkELqjcWlQLneh?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://la5rnop5jpq.feishu.cn/wiki/JPH9wQi8ki8CKXkypTfcx0LOnjc",
       "text": "https://la5rnop5jpq.feishu.cn/wiki/JPH9wQi8ki8CKXkypTfcx0LOnjc",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/Pej5wuRHtiAqadkglrAcV7qmnbb",
       "text": "https://my.feishu.cn/wiki/Pej5wuRHtiAqadkglrAcV7qmnbb",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://mynhkbykqf.feishu.cn/docx/Wz36dovR7oE0jPx9jbkcyaDRnDh?from=from_copylink",
       "text": "https://mynhkbykqf.feishu.cn/docx/Wz36dovR7oE0jPx9jbkcyaDRnDh?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://uv31v1xfgt.feishu.cn/docx/GjqAdObUGoqBeHxWCefc20ugngc?from=from_copylink",
       "text": "https://uv31v1xfgt.feishu.cn/docx/GjqAdObUGoqBeHxWCefc20ugngc?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/Y8ZuwXLS6ivMNhkWESacQpuOnic",
       "text": "https://my.feishu.cn/wiki/Y8ZuwXLS6ivMNhkWESacQpuOnic",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://ucnls98n10dy.feishu.cn/wiki/Wr4Twf5ahif5WFkqv6Nch4iKnpg",
       "text": "https://ucnls98n10dy.feishu.cn/wiki/Wr4Twf5ahif5WFkqv6Nch4iKnpg",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://acnbuj9h2mp9.feishu.cn/docx/P0m5dcMJ7ofJeNxfzgEcdUDQnMb",
       "text": "https://acnbuj9h2mp9.feishu.cn/docx/P0m5dcMJ7ofJeNxfzgEcdUDQnMb",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        },
+        {
+          "itemId": "72a9ae4c523812",
+          "itemTitle": "【万字实录】不是复盘，是实时围观：两个正在进行中的 FDE 项目,小的 4 位数，大的 6 位数 本文不是复盘，是 FDE 进行时的内部披露。",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://ai.feishu.cn/docx/FPwCdVwWXoTeQkxRXSPcynkQnvh?from=from_copylink",
       "text": "https://ai.feishu.cn/docx/FPwCdVwWXoTeQkxRXSPcynkQnvh?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://ai.feishu.cn/wiki/IEf8wV25oiihyUkTw04c12WfnWd?from=from_copylink",
       "text": "https://ai.feishu.cn/wiki/IEf8wV25oiihyUkTw04c12WfnWd?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://dcn7y5714c1m.feishu.cn/wiki/P9urwVNGti2fzukM70ccyrxgnEg",
       "text": "https://dcn7y5714c1m.feishu.cn/wiki/P9urwVNGti2fzukM70ccyrxgnEg",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://ai.feishu.cn/wiki/I8mSwa6WuiE4teku380cDzQFnLH?from=from_copylink",
       "text": "https://ai.feishu.cn/wiki/I8mSwa6WuiE4teku380cDzQFnLH?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://ft6vgl737z.feishu.cn/wiki/BQXqwX6UdizTJCkFk62cPvARnHc?from=from_copylink",
       "text": "https://ft6vgl737z.feishu.cn/wiki/BQXqwX6UdizTJCkFk62cPvARnHc?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://aaf55djl41.feishu.cn/wiki/NXOpw2AcgiX7yjkFbtecg1SQnJd?from=from_copylink",
       "text": "https://aaf55djl41.feishu.cn/wiki/NXOpw2AcgiX7yjkFbtecg1SQnJd?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://xiyangshiai.feishu.cn/wiki/RO9JwV0t2iToSUkUVxjcf08Knqe?fromScene=spaceOverview",
       "text": "https://xiyangshiai.feishu.cn/wiki/RO9JwV0t2iToSUkUVxjcf08Knqe?fromScene=spaceOverview",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://jrnoijjrwm.feishu.cn/docx/ToSfdb8lLodyXzxntelcB1h5nDc?from=from_copylink",
       "text": "https://jrnoijjrwm.feishu.cn/docx/ToSfdb8lLodyXzxntelcB1h5nDc?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://fcnjbfxi9a4k.feishu.cn/docx/HjIgdPIW0oTZBCxInYTclalInxd",
       "text": "https://fcnjbfxi9a4k.feishu.cn/docx/HjIgdPIW0oTZBCxInYTclalInxd",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://arhw4sutfj.feishu.cn/docx/ZsfndgAkZo2Z3fx4RI9cudLvnDO?from=from_copylink",
       "text": "https://arhw4sutfj.feishu.cn/docx/ZsfndgAkZo2Z3fx4RI9cudLvnDO?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://icn2kodop27a.feishu.cn/wiki/Q3GtwBW3riT3exkZagycUlwRneN",
       "text": "https://icn2kodop27a.feishu.cn/wiki/Q3GtwBW3riT3exkZagycUlwRneN",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/Ivyqw187AiqW3nkc3YIcblz0nlb",
       "text": "https://my.feishu.cn/wiki/Ivyqw187AiqW3nkc3YIcblz0nlb",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/N1EVw42caiZXd1keu4LcQSYJnHc",
       "text": "https://my.feishu.cn/wiki/N1EVw42caiZXd1keu4LcQSYJnHc",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/F39ewgjQdiqphLkikeAcW5LVneb?from=from_copylink",
       "text": "https://my.feishu.cn/wiki/F39ewgjQdiqphLkikeAcW5LVneb?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/IxgVwM2vxiZGhnkPL8mcCv88nad?from=from_copylink",
       "text": "https://my.feishu.cn/wiki/IxgVwM2vxiZGhnkPL8mcCv88nad?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/docx/Di8UdbKWUoIxQBxz7XCcfQMxnwg?from=from_copylink",
       "text": "https://my.feishu.cn/docx/Di8UdbKWUoIxQBxz7XCcfQMxnwg?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://vcn6xxxe60r1.feishu.cn/wiki/GDxgwWSGHieFoVkjHNtcbGM2nrl?from=from_copylink",
       "text": "https://vcn6xxxe60r1.feishu.cn/wiki/GDxgwWSGHieFoVkjHNtcbGM2nrl?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://magpzdco9hb.feishu.cn/wiki/MdYZwe6IKi8al3k7vRVcZNGznOg?from=from_copylink",
       "text": "https://magpzdco9hb.feishu.cn/wiki/MdYZwe6IKi8al3k7vRVcZNGznOg?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://zaoqin888.feishu.cn/wiki/Wfzfw8jh8icF4mkFn17cSpA2npd?from=from_copylink",
       "text": "https://zaoqin888.feishu.cn/wiki/Wfzfw8jh8icF4mkFn17cSpA2npd?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://fcnubuhvffh5.feishu.cn/wiki/X7scwWN1BiWF2lkQEnscC1Oln9d?from=from_copylink",
       "text": "https://fcnubuhvffh5.feishu.cn/wiki/X7scwWN1BiWF2lkQEnscC1Oln9d?from=from_copylink",
       "itemId": "60871835447c6a",
       "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/search",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "60871835447c6a",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/docx/BZaVdY13koEJt9xn91JcrRksnth",
       "text": "https://my.feishu.cn/docx/BZaVdY13koEJt9xn91JcrRksnth",
       "itemId": "816af1e30ff38c",
       "itemTitle": "聊聊公众号老年赛道实操",
+      "itemUrl": "https://scys.com/",
       "source": "scys",
-      "sourceName": "生财有术"
+      "sourceName": "生财有术",
+      "owners": [
+        {
+          "itemId": "816af1e30ff38c",
+          "itemTitle": "聊聊公众号老年赛道实操",
+          "itemUrl": "https://scys.com/",
+          "source": "scys",
+          "sourceName": "生财有术"
+        }
+      ]
     },
     {
       "href": "https://d16rg8unadx.feishu.cn/wiki/OLtzwyNhyii0nQkaB77c0nVnnWf",
       "text": "https://d16rg8unadx.feishu.cn/wiki/OLtzwyNhyii0nQkaB77c0nVnnWf",
       "itemId": "6cb074df870289",
       "itemTitle": "第12期破局行动，9月9日上午10点正式开启报名！",
+      "itemUrl": "https://aipoju.com/topic-details/82258841421115542",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "6cb074df870289",
+          "itemTitle": "第12期破局行动，9月9日上午10点正式开启报名！",
+          "itemUrl": "https://aipoju.com/topic-details/82258841421115542",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        },
+        {
+          "itemId": "5fa588ac9fc93a",
+          "itemTitle": "12期破局行动&选题拆解直播预告 12期破局行动，9月9日正式开启报名。",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://ofhsvjn6f6.feishu.cn/wiki/FcjywCwcCia0xakX1J4cDEdAnWc?from=from_copylink",
       "text": "https://ofhsvjn6f6.feishu.cn/wiki/FcjywCwcCia0xakX1J4cDEdAnWc?from=from_copylink",
       "itemId": "507425b7d25ef2",
       "itemTitle": "不会文案、不敢露脸？一文彻底讲透 AI 带货项目逆袭逻辑！",
+      "itemUrl": "https://aipoju.com/topic-details/55521148455411254",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "507425b7d25ef2",
+          "itemTitle": "不会文案、不敢露脸？一文彻底讲透 AI 带货项目逆袭逻辑！",
+          "itemUrl": "https://aipoju.com/topic-details/55521148455411254",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/docx/V1LPd0oPOoTp4cx4vZRcAlJmnKD?from=from_copylink",
       "text": "https://my.feishu.cn/docx/V1LPd0oPOoTp4cx4vZRcAlJmnKD?from=from_copylink",
       "itemId": "b32a0fd1fa33aa",
       "itemTitle": "AI 编程 （小程序、网站）行动营拆解",
+      "itemUrl": "https://aipoju.com/topic-details/55521148455148814",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "b32a0fd1fa33aa",
+          "itemTitle": "AI 编程 （小程序、网站）行动营拆解",
+          "itemUrl": "https://aipoju.com/topic-details/55521148455148814",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/QpBSwqKrXikYA7ksefNc9h7JnsT",
       "text": "https://my.feishu.cn/wiki/QpBSwqKrXikYA7ksefNc9h7JnsT",
       "itemId": "b8822bd007d72a",
       "itemTitle": "普通人如何跑通一门轻资产副业：AI小红书虚拟产品项目全拆解",
+      "itemUrl": "https://aipoju.com/topic-details/82258841212124842",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "b8822bd007d72a",
+          "itemTitle": "普通人如何跑通一门轻资产副业：AI小红书虚拟产品项目全拆解",
+          "itemUrl": "https://aipoju.com/topic-details/82258841212124842",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://liuqichuangfu.feishu.cn/docx/FNqUdVu38ou9MDxOLC1cMUwMnRg",
       "text": "https://liuqichuangfu.feishu.cn/docx/FNqUdVu38ou9MDxOLC1cMUwMnRg",
       "itemId": "387ec1195ecdf7",
       "itemTitle": "一文读懂，21天从0到1锻造你的第一个AI Agent！",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "387ec1195ecdf7",
+          "itemTitle": "一文读懂，21天从0到1锻造你的第一个AI Agent！",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/Ttfhw7U3eiHUXokKNiYc9UTancT?from=from_copylink",
       "text": "https://my.feishu.cn/wiki/Ttfhw7U3eiHUXokKNiYc9UTancT?from=from_copylink",
       "itemId": "53752c8c3b697c",
       "itemTitle": "1659人参加 ， 1700+条问题， 我把新人最常卡的6个点捋清楚了",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "53752c8c3b697c",
+          "itemTitle": "1659人参加 ， 1700+条问题， 我把新人最常卡的6个点捋清楚了",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://yb449hin5g.feishu.cn/wiki/WP2Twv2fViIFg4keunIcOcwznmc",
       "text": "https://yb449hin5g.feishu.cn/wiki/WP2Twv2fViIFg4keunIcOcwznmc",
       "itemId": "1dfae3ddc73b8e",
       "itemTitle": "FDE实践给客户装 Obsidian + Claude Code 知识库，单日变现 1 万 破局的圈友们好，我是攀登者，破局私塾、杭州优秀组局官，在破局写过 10 多篇精华帖。",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "1dfae3ddc73b8e",
+          "itemTitle": "FDE实践给客户装 Obsidian + Claude Code 知识库，单日变现 1 万 破局的圈友们好，我是攀登者，破局私塾、杭州优秀组局官，在破局写过 10 多篇精华帖。",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/Ix4UwGPbzikeP8khlITcVechnvc",
       "text": "https://my.feishu.cn/wiki/Ix4UwGPbzikeP8khlITcVechnvc",
       "itemId": "a780d056d791a7",
       "itemTitle": "50000+元 FDE 商单实践：从需求到交付",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "a780d056d791a7",
+          "itemTitle": "50000+元 FDE 商单实践：从需求到交付",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/Tt1Qw8mAai5YXBkG1jsclZBenUW?from=from_copylink",
       "text": "https://my.feishu.cn/wiki/Tt1Qw8mAai5YXBkG1jsclZBenUW?from=from_copylink",
       "itemId": "0be4bc9da55d5c",
       "itemTitle": "新晋奶爸深耕小红书虚拟资料，近30天变现8000完整实录",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
-    },
-    {
-      "href": "https://d16rg8unadx.feishu.cn/wiki/OLtzwyNhyii0nQkaB77c0nVnnWf?from=from_copylink",
-      "text": "https://d16rg8unadx.feishu.cn/wiki/OLtzwyNhyii0nQkaB77c0nVnnWf?from=from_copylink",
-      "itemId": "5fa588ac9fc93a",
-      "itemTitle": "12期破局行动&选题拆解直播预告 12期破局行动，9月9日正式开启报名。",
-      "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "0be4bc9da55d5c",
+          "itemTitle": "新晋奶爸深耕小红书虚拟资料，近30天变现8000完整实录",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://d16rg8unadx.feishu.cn/docx/Yr0gdMOwmoV0EDxEwXGcksPDnSd?from=from_copylink",
       "text": "https://d16rg8unadx.feishu.cn/docx/Yr0gdMOwmoV0EDxEwXGcksPDnSd?from=from_copylink",
       "itemId": "beb2455db91242",
       "itemTitle": "《信号站》01：FDE不是一个新名词，而是一种把AI能力翻译成业务结果的工作方式。",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "beb2455db91242",
+          "itemTitle": "《信号站》01：FDE不是一个新名词，而是一种把AI能力翻译成业务结果的工作方式。",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/docx/X6V6dTaVMoNsyfxWX2wctSIUnSc",
       "text": "https://my.feishu.cn/docx/X6V6dTaVMoNsyfxWX2wctSIUnSc",
       "itemId": "c48581d2d0a41a",
       "itemTitle": "用最简单的方法做了公司内部最火的 Agent，1 年解决了 1 万个问题 去年年初到现在，我搭的那个内部问题分诊 Agent，一年接了 10547 个问题。",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "c48581d2d0a41a",
+          "itemTitle": "用最简单的方法做了公司内部最火的 Agent，1 年解决了 1 万个问题 去年年初到现在，我搭的那个内部问题分诊 Agent，一年接了 10547 个问题。",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://aaf55djl41.feishu.cn/wiki/UBABw3cCYigciMkZ2m2cjLNenod?from=from_copylink",
       "text": "https://aaf55djl41.feishu.cn/wiki/UBABw3cCYigciMkZ2m2cjLNenod?from=from_copylink",
       "itemId": "eb48f1b8756f30",
       "itemTitle": "30天，五金厂，一份完整的FDE交付日记",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "eb48f1b8756f30",
+          "itemTitle": "30天，五金厂，一份完整的FDE交付日记",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/docx/XgoZdzn3Oo5YiRxrz22c9BoOn1f?from=from_copylink",
       "text": "https://my.feishu.cn/docx/XgoZdzn3Oo5YiRxrz22c9BoOn1f?from=from_copylink",
       "itemId": "ff0e3b10ac7636",
       "itemTitle": "做了20多个Skill，AI为什么还是每天都像“换了一个人”？",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "ff0e3b10ac7636",
+          "itemTitle": "做了20多个Skill，AI为什么还是每天都像“换了一个人”？",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/AcLZwC18MiJEE1kZf6XclnwWnWb",
       "text": "https://my.feishu.cn/wiki/AcLZwC18MiJEE1kZf6XclnwWnWb",
       "itemId": "801848cb01c265",
       "itemTitle": "【万字案例】企业级 6 位数 FDE 商单详解",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "801848cb01c265",
+          "itemTitle": "【万字案例】企业级 6 位数 FDE 商单详解",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://d16rg8unadx.feishu.cn/docx/DMdZdhXasoTYfwx3418c8gFFnVe?from=from_copylink",
       "text": "https://d16rg8unadx.feishu.cn/docx/DMdZdhXasoTYfwx3418c8gFFnVe?from=from_copylink",
       "itemId": "cfb0db49827a21",
       "itemTitle": "破局商城 Skill 内测使用体验报告",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "cfb0db49827a21",
+          "itemTitle": "破局商城 Skill 内测使用体验报告",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/docx/Fahkd9RGcorL2qxxO0RcNEMbnWe?from=from_copylink",
       "text": "https://my.feishu.cn/docx/Fahkd9RGcorL2qxxO0RcNEMbnWe?from=from_copylink",
       "itemId": "9dddc3902a3482",
       "itemTitle": "感谢破局，感谢洋哥，上一篇又给了个精华，继续努力更新，这篇直接冲击精华帖~[憨笑] Codex生成AI带货视频第四弹：不用写代码，只和 Codex 对话，从一篇原稿开始，自动完成二创、克隆音色",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "9dddc3902a3482",
+          "itemTitle": "感谢破局，感谢洋哥，上一篇又给了个精华，继续努力更新，这篇直接冲击精华帖~[憨笑] Codex生成AI带货视频第四弹：不用写代码，只和 Codex 对话，从一篇原稿开始，自动完成二创、克隆音色",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://xiyangshiai.feishu.cn/wiki/WhpLwmytciohGTkD26FcPEGZn3b?from=from_copylink",
       "text": "https://xiyangshiai.feishu.cn/wiki/WhpLwmytciohGTkD26FcPEGZn3b?from=from_copylink",
       "itemId": "956b037777f4dc",
       "itemTitle": "《一个半月，公众号从每月两三万做到十几万：50位圈友来到公司，我更确定AI创业要走到线下》",
+      "itemUrl": "https://aipoju.com/index",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "956b037777f4dc",
+          "itemTitle": "《一个半月，公众号从每月两三万做到十几万：50位圈友来到公司，我更确定AI创业要走到线下》",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/docx/Xy4fdde1KoKMkWxgAkWcABkknxb?from=from_copylink",
       "text": "https://my.feishu.cn/docx/Xy4fdde1KoKMkWxgAkWcABkknxb?from=from_copylink",
       "itemId": "1ccece12b7627c",
       "itemTitle": "AI新手，1个月PPT接单从0到交付3单",
+      "itemUrl": "https://aipoju.com/topic-details/55521151582112224",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "1ccece12b7627c",
+          "itemTitle": "AI新手，1个月PPT接单从0到交付3单",
+          "itemUrl": "https://aipoju.com/topic-details/55521151582112224",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/MGQtwRc6Bifc4vkoJakcSa7hncc?from=from_copylink",
       "text": "https://my.feishu.cn/wiki/MGQtwRc6Bifc4vkoJakcSa7hncc?from=from_copylink",
       "itemId": "daf95d55562668",
       "itemTitle": "【深度复盘】合作两家跨境服装上市公司后，我发现：大卖缺的不是AI工具，而是一个能拿结果的AI短视频部门",
+      "itemUrl": "https://aipoju.com/topic-details/45548858484244518",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "daf95d55562668",
+          "itemTitle": "【深度复盘】合作两家跨境服装上市公司后，我发现：大卖缺的不是AI工具，而是一个能拿结果的AI短视频部门",
+          "itemUrl": "https://aipoju.com/topic-details/45548858484244518",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://egtmutdg24.feishu.cn/docx/UHCwdzlccoMI1kxviIDc2VLQnVc?from=from_copylink",
       "text": "Obsidian+WorkBuddy+Codex 帮你推进任务、抓取热点、二创，打造一人公司全场景提效的AI工作台",
       "itemId": "d2acb5536de86e",
       "itemTitle": "Obsidian+WorkBuddy+Codex 帮你推进任务、抓取热点、二创，打造一人公司全场景提效的AI工作台",
+      "itemUrl": "https://aipoju.com/topic-details/45548881112818418",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "d2acb5536de86e",
+          "itemTitle": "Obsidian+WorkBuddy+Codex 帮你推进任务、抓取热点、二创，打造一人公司全场景提效的AI工作台",
+          "itemUrl": "https://aipoju.com/topic-details/45548881112818418",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/docx/SisVdAxacoO0kBxvHyjcHFUOnFf?from=from_copylink",
       "text": "https://my.feishu.cn/docx/SisVdAxacoO0kBxvHyjcHFUOnFf?from=from_copylink",
       "itemId": "9723f306909d15",
       "itemTitle": "核心链路：AI 开发「游戏名称提取器」批量获取游戏名 → 影刀 RPA 自动保存网盘资源 → 创建百度智能体引导用户下载 → 赚取拉新佣金。",
+      "itemUrl": "https://aipoju.com/topic-details/82255484545154582",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "9723f306909d15",
+          "itemTitle": "核心链路：AI 开发「游戏名称提取器」批量获取游戏名 → 影刀 RPA 自动保存网盘资源 → 创建百度智能体引导用户下载 → 赚取拉新佣金。",
+          "itemUrl": "https://aipoju.com/topic-details/82255484545154582",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/wiki/ErmrwUc3RiWJzOkzzMZcEfjSn9f?from=from_copylink",
       "text": "https://my.feishu.cn/wiki/ErmrwUc3RiWJzOkzzMZcEfjSn9f?from=from_copylink",
       "itemId": "9503656764dbdc",
       "itemTitle": "破局行动家AI行业大会分享：路人甲AI新媒体变现可复制方法论分享 本次分享为路人甲AI行业大会的实战分享，分享介绍了自身做AI新媒体从二月启动到上月实现20万稳定营收的经验，拆解了普通人做AI",
+      "itemUrl": "https://aipoju.com/topic-details/45544288241155818",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "9503656764dbdc",
+          "itemTitle": "破局行动家AI行业大会分享：路人甲AI新媒体变现可复制方法论分享 本次分享为路人甲AI行业大会的实战分享，分享介绍了自身做AI新媒体从二月启动到上月实现20万稳定营收的经验，拆解了普通人做AI",
+          "itemUrl": "https://aipoju.com/topic-details/45544288241155818",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://my.feishu.cn/docx/V5aCdPIl4oUrBJxH3LwcB9T2nqb?from=from_copylink",
       "text": "https://my.feishu.cn/docx/V5aCdPIl4oUrBJxH3LwcB9T2nqb?from=from_copylink",
       "itemId": "14560d759af082",
       "itemTitle": "2026年4月1日加入破局。刚好赶上第10期报名行动营，哇，那么多好项目，每一个都是我想要学的。但是因为我没参加过行动营，不知道强度怎么样，担心自己时间不够，就只报了一个。报了一个全域短视频。",
+      "itemUrl": "https://aipoju.com/topic-details/22255288224521481",
       "source": "aipoju",
-      "sourceName": "AI破局"
-    },
-    {
-      "href": "https://my.feishu.cn/docx/V5aCdPIl4oUrBJxH3LwcB9T2nqb?from=from_copylink#破局时刻#",
-      "text": "https://my.feishu.cn/docx/V5aCdPIl4oUrBJxH3LwcB9T2nqb?from=from_copylink#破局时刻#",
-      "itemId": "14560d759af082",
-      "itemTitle": "2026年4月1日加入破局。刚好赶上第10期报名行动营，哇，那么多好项目，每一个都是我想要学的。但是因为我没参加过行动营，不知道强度怎么样，担心自己时间不够，就只报了一个。报了一个全域短视频。",
-      "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "14560d759af082",
+          "itemTitle": "2026年4月1日加入破局。刚好赶上第10期报名行动营，哇，那么多好项目，每一个都是我想要学的。但是因为我没参加过行动营，不知道强度怎么样，担心自己时间不够，就只报了一个。报了一个全域短视频。",
+          "itemUrl": "https://aipoju.com/topic-details/22255288224521481",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://xa06j6z232m.feishu.cn/wiki/OIuDwI52oijcBvkTZGJcaJlsnfe?from=from_copylink",
       "text": "https://xa06j6z232m.feishu.cn/wiki/OIuDwI52oijcBvkTZGJcaJlsnfe?from=from_copylink",
       "itemId": "decdf87d9065c1",
       "itemTitle": "2026年，一人+AI玩转TikTok带货，月入10万可复制",
+      "itemUrl": "https://aipoju.com/topic-details/45811242885222828",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "decdf87d9065c1",
+          "itemTitle": "2026年，一人+AI玩转TikTok带货，月入10万可复制",
+          "itemUrl": "https://aipoju.com/topic-details/45811242885222828",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     },
     {
       "href": "https://kcnp8p7tih7k.feishu.cn/wiki/C1H5wLElLimk1mkQMfcc8faEnpb?from=from_copylink",
       "text": "https://kcnp8p7tih7k.feishu.cn/wiki/C1H5wLElLimk1mkQMfcc8faEnpb?from=from_copylink",
       "itemId": "d89151038a5c90",
       "itemTitle": "AI+音乐视频：涨粉 3 万+，变现五位数心得",
+      "itemUrl": "https://aipoju.com/topic-details/14588481222851812",
       "source": "aipoju",
-      "sourceName": "AI破局"
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "d89151038a5c90",
+          "itemTitle": "AI+音乐视频：涨粉 3 万+，变现五位数心得",
+          "itemUrl": "https://aipoju.com/topic-details/14588481222851812",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
     }
   ],
   "items": [
     {
-      "id": "9b90b3a863e719",
+      "id": "f2208cf21352ac",
       "source": "scys",
       "sourceName": "生财有术",
       "collection": {
@@ -610,27 +1213,18 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "tool_tip",
       "author": "Cheer林悦己",
-      "role": "航海家",
-      "relativeTime": "8小时前",
-      "publishedAt": "",
-      "title": "生财MCP+2句提示词+Codex=一份完整的可交互的国民老师知识地图.html",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-09-11T16:44:19.000Z",
+      "title": "生财MCP+2句提示词+Codex=一份完整的可交互的知识地图.html",
       "url": "https://scys.com/articleDetail/xq_topic/14425582858422442",
       "scene": "AI基建与企业服务",
       "industry": "企业服务",
@@ -649,23 +1243,22 @@
         "知识库 + Agent 工作流"
       ],
       "opportunityScore": 42,
-      "valueScore": 77,
-      "summary": "生财MCP+2句提示词+Codex=一份完整的可交互的国民老师知识地图.html hello大家好，我是林悦己 明天将参加航海家大会之电商AI，在此之前我对电商一无所知",
-      "evidence": "hello大家好，我是林悦己 明天将参加航海家大会之电商AI，在此之前我对电商一无所知。 之所以来，是想真实了解AI在电商这个行业里面的真实情况和实际应用，提高我对AI落地和应用的认知。 （敲黑板，这里很重要，后面会考！） 为了提高我的知识吸收效率和提升目标完成率，我决定今晚快速搞定国民老师！ 不是，快速搞定国民老师的“知识” 打开codex，使用已经装好的生财mcp，先让他找人和信息，然后整理所有内容成一个知识地图，让我能在30min内快速了解。 提示词1 使用生财mcp帮我搜索 做跨境电商的国民老师 都有哪些内容 不能遗漏 他顺利找到人 然后继续 提示词2 现在我需要你制作国民老师的知识系统便用可交互的tm制作，让人能在3分钟以内学习完所有基础知识和整个框架除络以及他们之间的关系 codex大概做了35m…",
-      "excerpt": "hello大家好，我是林悦己 明天将参加航海家大会之电商AI，在此之前我对电商一无所知。 之所以来，是想真实了解AI在电商这个行业里面的真实情况和实际应用，提高我对AI落地和应用的认知。 （敲黑板，这里很重要，后面会考！） 为了提高我的知识吸收效率和提升目标完成率，我决定今晚快速搞定国民老师！ 不是，快速搞定国民老师的“知识” 打开codex，使用已经装好的生财mcp，先让他找人和信息，然后整理所有内容成一个知识地图，让我能在30min",
+      "valueScore": 67,
+      "summary": "生财MCP+2句提示词+Codex=一份完整的可交互的知识地图.html hello大家好，我是林悦己 明天将参加航海家大会之电商AI，在此之前我对电商一无所知",
+      "evidence": "hello大家好，我是林悦己 明天将参加航海家大会之电商AI，在此之前我对电商一无所知。 之所以来，是想真实了解AI在电商这个行业里面的真实情况和实际应用，提高我对AI落地和应用的认知。 （敲黑板，这里很重要，后面会考！） 为了提高我的知识吸收效率和提升目标完成率，我决定今晚快速搞定国民老师！ 不是，快速搞定国民老师的“知识” （最新更新吗还是没搞定，因为不小心搞错了“国民哥哥”跟“国民弟弟”） 打开codex，使用已经装好的生财mcp，先让他找人和信息，然后整理所有内容成一个知识地图，让我能在30min内快速了解。 提示词1 使用生财mcp帮我搜索 做跨境电商的国民老师 都有哪些内容 不能遗漏 他顺利找到人 然后继续 提示词2 现在我需要你制作国民老师的知识系统便用可交互的tm制作，让人能在3分钟以内学习完…",
+      "excerpt": "hello大家好，我是林悦己 明天将参加航海家大会之电商AI，在此之前我对电商一无所知。 之所以来， 是想真实了解AI在电商这个行业里面的真实情况和实际应用，提高我对AI落地和应用的认知。 （敲黑板，这里很重要，后面会考！） 为了提高我的知识吸收效率和提升目标完成率，我决定今晚快速搞定国民老师！ 不是，快速搞定国民老师的“知识” （最新更新吗还是没搞定，因为不小心搞错了“国民哥哥”跟“国民弟弟”） 打开codex，使用已经装好的生财mcp，先让他找人和信息，然后整理所有内容成一个知识地图，让我能在30min内快速…",
       "links": [],
-      "metrics": "1 13 3 2",
+      "metrics": "点赞 15 · 评论 3",
+      "bodyRef": "evidence://32a232ac11bf5c78193b8e32233211a7c0d01a81aaf2e6a125a724744bca1ff3",
+      "acquisition": "scys-mcp",
+      "entityType": "xq_topic",
+      "entityId": "14425582858422442",
+      "feishuBodyAvailable": true,
+      "relatedResources": [],
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
+      "duplicateCount": 1,
       "translationStatus": "not_required"
     },
     {
@@ -677,26 +1270,17 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
       "author": "纪钟",
       "role": "",
-      "relativeTime": "11小时前",
-      "publishedAt": "",
+      "relativeTime": "",
+      "publishedAt": "2026-09-11T13:39:08.000Z",
       "title": "生财 MCP，可能是你使用生财的分水岭",
       "url": "https://scys.com/articleDetail/xq_topic/14425582852288552",
       "scene": "获客营销与转化",
@@ -724,20 +1308,19 @@
       "valueScore": 100,
       "summary": "生财 MCP，可能是你使用生财的分水岭 大家好，我是纪钟",
       "evidence": "大家好，我是纪钟。 从周一生财 MCP 全量开放到现在，已经有大几千圈友成功接入啦。 星球和群里也出现了很多玩法分享，大家的脑洞真的是一个比一个大，毕竟解决的都是自己赚钱路上的真实卡点，有 MCP 之后大家都说方便多了。 我在周三也做了一场直播，把大家对 MCP 核心关注的问题做了个汇总和答疑，今天也分享到星球里。 大家真正想知道的其实就几件事： MCP 这东西到底是什么？ 我不懂技术能不能装？ 装完该问它什么？ 它和 AI 亦仁有什么区别？ 为什么别人接上以后能做项目调研、自动整理资料，我问出来的还是一堆正确的废话？ 生财内部是在 5 月底开放的内部 MCP，第一次听到 MCP 这个词，也觉得听着就很技术，肯定很难。 真正跑过一遍以后才发现，装只占很小一部分，真正的差别在你会不会问。 所以这篇不是技术讲解，…",
-      "excerpt": "大家好，我是纪钟。 从周一生财 MCP 全量开放到现在，已经有大几千圈友成功接入啦。 星球和群里也出现了很多玩法分享，大家的脑洞真的是一个比一个大，毕竟解决的都是自己赚钱路上的真实卡点，有 MCP 之后大家都说方便多了。 我在周三也做了一场直播，把大家对 MCP 核心关注的问题做了个汇总和答疑，今天也分享到星球里。 大家真正想知道的其实就几件事： MCP 这东西到底是什么？ 我不懂技术能不能装？ 装完该问它什么？ 它和 AI 亦仁有什么",
+      "excerpt": "大家好，我是纪钟。 从周一生财 MCP 全量开放到现在，已经有大几千圈友成功接入啦。 星球和群里也出现了很多玩法分享，大家的脑洞真的是一个比一个大，毕竟解决的都是自己赚钱路上的真实卡点，有 MCP 之后大家都说方便多了。 我在周三也做了一场直播，把大家对 MCP 核心关注的问题做了个汇总和答疑，今天也分享到星球里。 大家真正想知道的其实就几件事： MCP 这东西到底是什么？ 我不懂技术能不能装？ 装完该问它什么？ 它和 AI 亦仁有什么区别？ 为什么别人接上以后能做项目调研、自动整理资料，我问出来的还是一堆正确的…",
       "links": [],
-      "metrics": "2 86 14 25",
+      "metrics": "点赞 98 · 评论 20",
+      "bodyRef": "evidence://8dfcccce7cad378759e00becd45ad91b999ebcff9459935fc6f2a9edc44fc54c",
+      "acquisition": "scys-mcp",
+      "entityType": "xq_topic",
+      "entityId": "14425582852288552",
+      "feishuBodyAvailable": true,
+      "relatedResources": [],
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
+      "duplicateCount": 1,
       "translationStatus": "not_required"
     },
     {
@@ -749,62 +1332,136 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
       "author": "凌晨",
       "role": "",
-      "relativeTime": "12小时前",
-      "publishedAt": "",
+      "relativeTime": "",
+      "publishedAt": "2026-09-11T13:15:37.000Z",
       "title": "抖音40万粉，B站10万粉，小红书5万粉，网盘拉新四个月变现30万，1.4万字复盘为什么换个平台，我还能做起来，其中有什么底层方法论！",
       "url": "https://scys.com/articleDetail/xq_topic/22258815151158451",
       "scene": "获客营销与转化",
       "industry": "企业服务",
-      "tools": [],
+      "tools": [
+        "飞书"
+      ],
       "monetization": "订单成交 / 收费变现",
       "painPoints": [
         "获客成本与精准线索",
         "交付标准化与复购",
-        "知识沉淀与效率",
-        "内容生产与账号增长"
+        "知识沉淀与效率"
       ],
       "resultSignal": "播放量只有几百就接着拍",
       "reusableMethod": [
         "沉淀成SOP/模板",
         "内容获客路径",
-        "前端获客 + 后端交付拆分"
+        "知识库 + Agent 工作流"
       ],
-      "opportunityScore": 66,
+      "opportunityScore": 80,
       "valueScore": 100,
       "summary": "抖音40万粉，B站10万粉，小红书5万粉，网盘拉新四个月变现30万，1.4万字复盘为什么换个平台，我还能做起来，其中有什么底层方法论",
-      "evidence": "大家好我是凌晨，00 年普通本科毕业，学的是土木工程，做自媒体之前在工地上班， 后来陆续做过抖音、B 站、公众号、知乎和小红书，抖音账号做到过 40 万粉，B 站历史人物账号做到 10 万粉，也通过公众号文章吸引过一百多人付费加入知识星球，目前主要在做网盘拉新，上个月做到了 15 万元业绩， 上一篇文章我分享了自己怎么用四个月时间，通过 300 多个矩阵账号，把网盘拉新做到约 30 万元变现，那篇拿到了生财精华，说实话还是有点小兴奋的，写出来的经历能得到认可确实挺开心。 对这个项目感兴趣的朋友，可以先看看上一篇，里面把从测试到代发再到矩阵放大的过程写得比较详细。 https://t.zsxq.com/ZU9kU 先感谢生财小武老师和七天老师的约稿以及指导，让我有机会把这些经历认真整理一遍，做过几个平台之后，我…",
-      "excerpt": "大家好我是凌晨，00 年普通本科毕业，学的是土木工程，做自媒体之前在工地上班， 后来陆续做过抖音、B 站、公众号、知乎和小红书， 上一篇文章我分享了自己那篇拿到了生财精华，说实话还是有点小兴奋的，写出来的经历能得到认可确实挺开心。 对这个项目感兴趣的朋友，可以先看看上一篇，里面把从测试到代发再到矩阵放大的过程写得比较详细。 先感谢生财 老师和 老师的约稿以及指导，让我有机会把这些经历认真整理一遍，做过几个平台之后，我也想回答一个问题 回",
-      "links": [],
-      "metrics": "0 19 评论 7",
-      "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+      "evidence": "抖音40万粉，B站10万粉，小红书5万粉，网盘拉新四个月变现30万，1.4万字复盘为什么换个平台，我还能做起来，其中有什么底层方法论！ 大家好我是凌晨，00 年普通本科毕业，学的是土木工程，做自媒体之前在工地上班， 后来陆续做过抖音、B 站、公众号、知乎和小红书，抖音账号做到过 40 万粉，B 站历史人物账号做到 10 万粉，也通过公众号文章吸引过一百多人付费加入知识星球，目前主要在做网盘拉新，上个月做到了 15 万元业绩， 上一篇文章我分享了自己怎么用四个月时间，通过 300 多个矩阵账号，把网盘拉新做到约 30 万变现，那篇拿到了生财精华，说实话还是有点小兴奋的，写出来的经历能得到认可确实挺开心。 对这个项目感兴趣的朋友，可以先看看上一篇，里面把从测试到代发再到矩阵放大的过程写得比较详细。https://…",
+      "excerpt": "大家好我是凌晨，00 年普通本科毕业，学的是土木工程，做自媒体之前在工地上班， 后来陆续做过抖音、B 站、公众号、知乎和小红书， 上一篇文章我分享了自己 那篇拿到了生财精华，说实话还是有点小兴奋的，写出来的经历能得到认可确实挺开心。 对这个项目感兴趣的朋友，可以先看看上一篇，里面把从测试到代发再到矩阵放大的过程写得比较详细。 先感谢生财 老师和 老师的约稿以及指导，让我有机会把这些经历认真整理一遍，做过几个平台之后，我也想回答一个问题 回头看有些事情当时做得挺笨，播放量只有几百就接着拍，不会写就找自己喜欢的文章研…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/VGMcwJxjtiry8PkfrBscI357nuc?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/VGMcwJxjtiry8PkfrBscI357nuc?from=from_copylink",
+          "discoveredVia": "post_href"
+        }
       ],
-      "duplicateCount": 9,
+      "metrics": "点赞 25 · 评论 1",
+      "bodyRef": "evidence://55c39841874eae5346ab1256abc51b34a33c527fa26f919fd460ffef1133b4d4",
+      "acquisition": "scys-mcp",
+      "entityType": "xq_topic",
+      "entityId": "22258815151158451",
+      "feishuBodyAvailable": true,
+      "relatedResources": [
+        {
+          "kind": "case",
+          "id": "383",
+          "title": "抖音 AI 本地生活",
+          "matchedKeyword": "抖音",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "projectLibSearch",
+          "description": "用 AI 生成抖音团购视频，用户到店核销后拿佣金"
+        },
+        {
+          "kind": "case",
+          "id": "367",
+          "title": "抖音高质感 AI 短片",
+          "matchedKeyword": "抖音",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "projectLibSearch",
+          "description": "用 AI 工具做电影质感故事短片在抖音做导演 IP，接品牌承制单加平台大赛激励"
+        },
+        {
+          "kind": "tool",
+          "id": "446",
+          "title": "Deepseek",
+          "matchedKeyword": "抖音",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "searchProjectTools",
+          "description": "适合开发者免费体验国产开源大模型，兼容 OpenAI 接口并提供联网搜索与思考链显示，便于原型与二次开发。 【是否收费】免费 【网络要求】国内",
+          "url": "https://chat.deepseek.com"
+        },
+        {
+          "kind": "tool",
+          "id": "447",
+          "title": "豆包",
+          "matchedKeyword": "抖音",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "searchProjectTools",
+          "description": "适合中文聊天、写稿翻译与自动生成 PPT/短视频脚本，工作学习一站完成。 【是否收费】免费 【网络要求】国内",
+          "url": "https://www.doubao.com/chat"
+        },
+        {
+          "kind": "manual",
+          "id": "10372",
+          "title": "抖音自然流 CPS丨Mini 航海实战手册丨2026 年 9 月航海",
+          "matchedKeyword": "抖音",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "activitySearch",
+          "description": "9月开学季，零基础上手 抖音 自然流CPS",
+          "activityId": "10372",
+          "entries": [
+            {
+              "itemId": "14196",
+              "title": "01. 抖音自然流 CPS 玩法简介"
+            },
+            {
+              "itemId": "14199",
+              "title": "01. 下载软件 & 获取口令"
+            },
+            {
+              "itemId": "14201",
+              "title": "01. 账号基础检查与设置"
+            },
+            {
+              "itemId": "14202",
+              "title": "02. 内容制作&引流：内容+标题+评论区"
+            },
+            {
+              "itemId": "14204",
+              "title": "01. 复盘优化"
+            }
+          ],
+          "readTool": "activityManualDetail"
+        }
+      ],
+      "matchedKeywords": [
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
+      ],
+      "duplicateCount": 1,
       "translationStatus": "not_required"
     },
     {
@@ -816,58 +1473,78 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
       "author": "又道天凉好个秋",
       "role": "",
-      "relativeTime": "13小时前",
-      "publishedAt": "",
+      "relativeTime": "",
+      "publishedAt": "2026-09-11T12:19:53.000Z",
       "title": "春招两月盈利 2.8w：我做了一个 AI 简历填表插件，从发现商机到卖出去的完整复盘",
       "url": "https://scys.com/articleDetail/xq_topic/14425582828221512",
       "scene": "获客营销与转化",
-      "industry": "内容与自媒体",
+      "industry": "留学教育",
       "tools": [],
       "monetization": "订单成交 / 收费变现",
       "painPoints": [
-        "知识沉淀与效率"
+        "获客成本与精准线索",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
       ],
-      "resultSignal": "",
+      "resultSignal": "成交差异巨大",
       "reusableMethod": [
         "内容获客路径",
         "工具产品化"
       ],
-      "opportunityScore": 70,
-      "valueScore": 89,
+      "opportunityScore": 84,
+      "valueScore": 100,
       "summary": "春招两月盈利 2.8w：我做了一个 AI 简历填表插件，从发现商机到卖出去的完整复盘 大家好，我是一名程序员",
-      "evidence": "大家好，我是一名程序员。已经潜水生财两年了，之前搞过不少东西，打算总感觉没什么可写的，前端时间报名AI教练的时候（虽然没有选上哈哈😃），我提到了说做简历填写工具盈利的事情，鱼丸就说你要不就写一篇经验呗。 我心想，那就写呗。 事情是这样的，25 年刷小红书时，我偶然看到一款很简单的简历辅助工具，卖 9.9 元一份，已经卖出 1.3 万份。继续翻评论后，我发现学生和应届生在春招、秋招时有一个特别高频的痛点：同样的简历信息，要在 Boss、拉勾、智联和各类校招官网反复填写。 基于这个需求，我花了两周业余时间做了一个 AI 简历自动填表插件，支持一键识别表单并自动填充，也保留侧边栏辅助填表来处理复杂页面。项目上线后，25年秋招末尾收入一万多，26 年春招两个月盈利 2.8 万。本文主要复盘这个小产品从发现商机、产品…",
-      "excerpt": "大家好，我是一名程序员。已经潜水生财两年了，之前搞过不少东西，打算总感觉没什么可写的，前端时间报名AI教练的时候（虽然没有选上哈哈😃），我提到了说做简历填写工具盈利的事情，鱼丸就说你要不就写一篇经验呗。 我心想，那就写呗。 事情是这样的，25 年刷小红书时，我偶然看到一款很简单的简历辅助工具，卖 9.9 元一份，已经卖出 1.3 万份。继续翻评论后，我发现学生和应届生在春招、秋招时有一个特别高频的痛点：同样的简历信息，要在 Boss、",
-      "links": [],
-      "metrics": "5 17 1 3",
-      "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+      "evidence": "🚀复盘：春招两月盈利 2.8w：我做了一个 AI 简历填表插件，从发现商机到卖出去 大家好，我是一名程序员。已经潜水生财两年了，之前搞过不少东西，打算总感觉没什么可写的，前端时间报名AI教练的时候（虽然没有选上哈哈😃），我提到了说做简历填写工具盈利的事情，鱼丸就说你要不就写一篇经验呗。 我心想，那就写呗。 事情是这样的，25 年刷小红书时，我偶然看到一款很简单的简历辅助工具，卖 9.9 元一份，已经卖出 1.3 万份。继续翻评论后，我发现学生和应届生在春招、秋招时有一个特别高频的痛点：同样的简历信息，要在 Boss、拉勾、智联和各类校招官网反复填写。 基于这个需求，我花了两周业余时间做了一个 AI 简历自动填表插件，支持一键识别表单并自动填充，也保留侧边栏辅助填表来处理复杂页面。项目上线后，25年秋招末尾…",
+      "excerpt": "大家好，我是一名程序员。已经潜水生财两年了，之前搞过不少东西，打算总感觉没什么可写的，前端时间报名AI教练的时候（虽然没有选上哈哈😃），我提到了说做简历填写工具盈利的事情，鱼丸就说你要不就写一篇经验呗。 我心想，那就写呗。 事情是这样的，25 年刷小红书时，我偶然看到一款很简单的简历辅助工具，卖 9.9 元一份，已经卖出 1.3 万份。继续翻评论后，我发现学生和应届生在春招、秋招时有一个特别高频的痛点：同样的简历信息，要在 Boss、拉勾、智联和各类校招官网反复填写。 基于这个需求，我花了两周业余时间做了一个 …",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/U8exwxmrdiCgQBkP5HtcOJzEnFb",
+          "text": "https://my.feishu.cn/wiki/U8exwxmrdiCgQBkP5HtcOJzEnFb",
+          "discoveredVia": "post_href"
+        }
       ],
-      "duplicateCount": 9,
+      "metrics": "点赞 22 · 评论 1",
+      "bodyRef": "evidence://7714c29c0582f4d50ec9e7dd2a4a114fb1e295f2865c9298c75c1102ac4fc844",
+      "acquisition": "scys-mcp",
+      "entityType": "xq_topic",
+      "entityId": "14425582828221512",
+      "feishuBodyAvailable": true,
+      "relatedResources": [
+        {
+          "kind": "case",
+          "id": "114",
+          "title": "求职简历陪跑",
+          "matchedKeyword": "简历",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "projectLibSearch",
+          "description": "做求职简历优化和面试模拟的全流程陪跑服务，应届生和转行人焦虑催生高客单付费意愿"
+        },
+        {
+          "kind": "tool",
+          "id": "481",
+          "title": "可画",
+          "matchedKeyword": "简历",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "searchProjectTools",
+          "description": "适合零设计基础 10 秒套模板做海报、简历或社媒长图，云端协作一键发布。 【是否收费】基础免费 高阶付费 【网络要求】国内",
+          "url": "https://canva.com"
+        }
+      ],
+      "matchedKeywords": [
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
+      ],
+      "duplicateCount": 1,
       "translationStatus": "not_required"
     },
     {
@@ -879,73 +1556,62 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
       "author": "Ethan",
       "role": "",
-      "relativeTime": "14小时前",
-      "publishedAt": "",
+      "relativeTime": "",
+      "publishedAt": "2026-09-11T10:38:53.000Z",
       "title": "100 亿 Token 实战复盘，AI 小白如何用 Codex 做小红书虚拟项目（一）",
       "url": "https://scys.com/articleDetail/xq_topic/22258815152118141",
       "scene": "获客营销与转化",
       "industry": "企业服务",
       "tools": [
         "Codex",
+        "Claude Code",
+        "Claude",
         "飞书"
       ],
       "monetization": "订单成交 / 收费变现",
       "painPoints": [
         "交付标准化与复购",
-        "知识沉淀与效率"
+        "知识沉淀与效率",
+        "工具配置与AI基建门槛"
       ],
       "resultSignal": "订单",
       "reusableMethod": [
         "沉淀成SOP/模板",
         "内容获客路径",
-        "知识库 + Agent 工作流",
-        "工具产品化"
+        "知识库 + Agent 工作流"
       ],
       "opportunityScore": 84,
       "valueScore": 100,
       "summary": "100 亿 Token 实战复盘，AI 小白如何用 Codex 做小红书虚拟项目（一） 大家好，我是 Ethan，去年硕士毕业，工科出身，没上过班，现在做一个小红书线上服务项目",
-      "evidence": "大家好，我是 Ethan，去年硕士毕业，工科出身，没上过班，现在做一个小红书线上服务项目。 这个项目是我从 0 到 1 做起来的，每个环节都自己干过。我不会写代码，但对每天重复做这些活没什么耐心，就开始拿 Codex 研究，怎么能让工作流帮我做。 最近，我在生财 Token 排行榜上的累计用量超过了 100 亿，想借这个机会，把自己实际用起来的做法整理一下，跟大家分享。 这篇先讲客户下单后的交付自动化。 从整理客户资料、分配订单，到发送文件和客服跟进，我把以前怎么做、后来怎么改，都写进去了，也放了实际界面和过程中踩过的坑。 这些工作流现在每天都在用，后面主要就是维护，有新问题再处理。 这篇主要讲清楚下面五个问题。 1、我是怎么从 AI 小白，到用 Codex 改造自己的小红书项目的？ 2、怎么拆开业务流程，找…",
-      "excerpt": "大家好，我是 Ethan，去年硕士毕业，工科出身，没上过班，现在做一个小红书线上服务项目。 这个项目是我从 0 到 1 做起来的，每个环节都自己干过。我不会写代码，但对每天重复做这些活没什么耐心，就开始拿 Codex 研究，怎么能让工作流帮我做。 最近，我在生财 Token 排行榜上的累计用量超过了 ，想借这个机会，把自己实际用起来的做法整理一下，跟大家分享。 从整理客户资料、分配订单，到发送文件和客服跟进，我把以前怎么做、后来怎么改，",
+      "evidence": "100 亿 Token 实战复盘，AI 小白如何用 Codex 做小红书项目（一） 大家好，我是 Ethan，去年硕士毕业，工科出身，没上过班，现在做一个小红书线上服务项目。 这个项目是我从 0 到 1 做起来的，每个环节都自己干过。我不会写代码，但对每天重复做这些活没什么耐心，就开始拿 Codex 研究，怎么能让工作流帮我做。 最近，我在生财 Token 排行榜上的累计用量超过了 100 亿，想借这个机会，把自己实际用起来的做法整理一下，跟大家分享。 这篇先讲客户下单后的交付自动化。 从整理客户资料、分配订单，到发送文件和客服跟进，我把以前怎么做、后来怎么改，都写进去了，也放了实际界面和过程中踩过的坑。 这些工作流现在每天都在用，后面主要就是维护，有新问题再处理。 这篇主要讲清楚下面五个问题。 1、我是怎么…",
+      "excerpt": "大家好，我是 Ethan，去年硕士毕业，工科出身，没上过班，现在做一个小红书线上服务项目。 这个项目是我从 0 到 1 做起来的，每个环节都自己干过。我不会写代码，但对每天重复做这些活没什么耐心，就开始拿 Codex 研究，怎么能让工作流帮我做。 最近，我在生财 Token 排行榜上的累计用量超过了 ，想借这个机会，把自己实际用起来的做法整理一下，跟大家分享。 从整理客户资料、分配订单，到发送文件和客服跟进，我把以前怎么做、后来怎么改，都写进去了，也放了实际界面和过程中踩过的坑。 这些工作流现在每天都在用，后面主…",
       "links": [
         {
           "href": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYBnH1?from=from_copylink",
-          "text": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYB..."
-        },
-        {
-          "href": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYB",
-          "text": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYB"
+          "text": "https://my.feishu.cn/wiki/PsA5wtMt0irTwPkwJvSchLYBnH1?from=from_copylink",
+          "discoveredVia": "post_href"
         }
       ],
-      "metrics": "0 13 评论 4",
+      "metrics": "点赞 15 · 评论 0",
+      "bodyRef": "evidence://c907b190cc01215a1675a7a07f90c8be5f2e3eb3a3e83b0e6b365cda4c262886",
+      "acquisition": "scys-mcp",
+      "entityType": "xq_topic",
+      "entityId": "22258815152118141",
+      "feishuBodyAvailable": true,
+      "relatedResources": [],
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
+      "duplicateCount": 1,
       "translationStatus": "not_required"
     },
     {
@@ -957,65 +1623,389 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
       "author": "私藏人间",
       "role": "",
-      "relativeTime": "16小时前",
-      "publishedAt": "",
+      "relativeTime": "",
+      "publishedAt": "2026-09-11T08:47:50.000Z",
       "title": "YouTube长视频月入万刀，油管老兵的复盘分享",
       "url": "https://scys.com/articleDetail/xq_topic/14425582822541882",
-      "scene": "线下组局与培训复盘",
+      "scene": "获客营销与转化",
       "industry": "企业服务",
-      "tools": [],
+      "tools": [
+        "ChatGPT",
+        "Gemini"
+      ],
       "monetization": "订单成交 / 收费变现",
       "painPoints": [
-        "工具配置与AI基建门槛",
-        "内容生产与账号增长"
+        "获客成本与精准线索",
+        "知识沉淀与效率",
+        "工具配置与AI基建门槛"
       ],
       "resultSignal": "月入万刀",
-      "reusableMethod": [],
-      "opportunityScore": 56,
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径"
+      ],
+      "opportunityScore": 72,
       "valueScore": 100,
       "summary": "YouTube长视频月入万刀，油管老兵的复盘分享 大家好，我是私藏人间，生财AI视频深海圈咨询教练",
-      "evidence": "大家好，我是私藏人间，生财AI视频深海圈咨询教练。 在看到亦仁的超级标之前，我几乎没有接触过 YouTube，甚至不知道原来 YouTube 可以赚钱。 到现在我做出过千万级 Shorts 和百万级长视频，Shorts 累计播放超过 1 亿；目前有 5 个长视频账号开通了高级 YPP，最高单月收入超过 1 万刀。 在这里非常感谢 @方波妮@Gary曹淦总教练的给力指导，也非常感谢生财提供的深海圈社群平台。 如果只看这些结果，很容易让人觉得我一开始就选对了方向，或者做 YouTube 的过程非常顺利。但真实情况并不是这样。 中间我做过多个赛道，经历过长期没有大播放、断更、重新开始，也经历过 5 个 YPP 账号同时被取消、收入一夜归零。 这篇分享，我想完整复盘自己一路走来的经历，以及这段经历带给我的几个重要变化…",
-      "excerpt": "大家好，我是私藏人间，生财AI视频深海圈咨询教练。 在看到亦仁的超级标之前，我几乎没有接触过 YouTube，甚至不知道原来 YouTube 可以赚钱。 到现在我做出过千万级 Shorts 和百万级长视频，Shorts 累计播放超过 1 亿；目前有 5 个长视频账号开通了高级 YPP，最高单月收入超过 1 万刀。 在这里非常感谢 @方波妮@Gary曹淦总教练的给力指导，也非常感谢生财提供的深海圈社群平台。 如果只看这些结果，很容易让人觉",
+      "evidence": "YouTube长视频月入万刀，油管老兵的复盘分享 大家好，我是私藏人间，生财AI视频深海圈咨询教练。 在看到亦仁的超级标之前，我几乎没有接触过 YouTube，甚至不知道原来 YouTube 可以赚钱。 到现在我做出过千万级 Shorts 和百万级长视频，Shorts 累计播放超过 1 亿；目前有 5 个长视频账号开通了高级 YPP，最高单月收入超过 1 万刀。 在这里非常感谢 @方波妮@Gary曹淦总教练的给力指导，也非常感谢生财提供的深海圈社群平台。 如果只看这些结果，很容易让人觉得我一开始就选对了方向，或者做 YouTube 的过程非常顺利。但真实情况并不是这样。 中间我做过多个赛道，经历过长期没有大播放、断更、重新开始，也经历过 5 个 YPP 账号同时被取消、收入一夜归零。 这篇分享，我想完整复盘自…",
+      "excerpt": "大家好，我是私藏人间，生财AI视频深海圈咨询教练。 在看到亦仁的超级标之前，我几乎没有接触过 YouTube，甚至不知道原来 YouTube 可以赚钱。 到现在我做出过千万级 Shorts 和百万级长视频，Shorts 累计播放超过 1 亿；目前有 5 个长视频账号开通了高级 YPP，最高单月收入超过 1 万刀。 在这里非常感谢 @方波妮@Gary曹淦总教练的给力指导，也非常感谢生财提供的深海圈社群平台。 如果只看这些结果，很容易让人觉得我一开始就选对了方向，或者做 YouTube 的过程非常顺利。但真实情况并不…",
       "links": [
         {
           "href": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkhR0oc4AKBnog",
-          "text": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkh..."
-        },
-        {
-          "href": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkh",
-          "text": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkh"
+          "text": "https://alsvgw465y.feishu.cn/wiki/JJRCwmNdCifcVlkhR0oc4AKBnog",
+          "discoveredVia": "post_href"
         }
       ],
-      "metrics": "1 41 9 9",
-      "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+      "metrics": "点赞 43 · 评论 9",
+      "bodyRef": "evidence://09b2eb87e1fe576b8a1652e77c9de803f8339e49d7d8cdb3ccdb2c5345817b51",
+      "acquisition": "scys-mcp",
+      "entityType": "xq_topic",
+      "entityId": "14425582822541882",
+      "feishuBodyAvailable": true,
+      "relatedResources": [
+        {
+          "kind": "case",
+          "id": "126",
+          "title": "AI YouTube 不露脸视频",
+          "matchedKeyword": "YouTube",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "projectLibSearch",
+          "description": "用 AI 生成画面和配音制作 YouTube 长视频，不用露脸，高 CPM 赛道长尾收益可观"
+        },
+        {
+          "kind": "case",
+          "id": "73",
+          "title": "YouTube 联盟营销",
+          "matchedKeyword": "YouTube",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "projectLibSearch",
+          "description": "在 YouTube 拍产品开箱测评视频挂联盟营销链接，不用囤货不用露脸，观众下单你拿提成"
+        },
+        {
+          "kind": "tool",
+          "id": "711",
+          "title": "AHA Music -Song Finder for Browser",
+          "matchedKeyword": "YouTube",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "searchProjectTools",
+          "description": "浏览器插件：识别视频里的音乐，做YouTube视频，一直有圈友问：对标视频音乐加了音效，但是只想要音乐，不知道是什么音乐，音源：Youtube、Spotify、Apple Music、Deezer，国内的视频也可以识别，Chrome、Edge浏览器插件，Twitter机器人"
+        },
+        {
+          "kind": "tool",
+          "id": "708",
+          "title": "TikTok跨境导航",
+          "matchedKeyword": "YouTube",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "searchProjectTools",
+          "description": "TKTOC跨境导航​专注为海外社媒卖家提供全链路运营工具箱，覆盖主流平台（TikTok/YouTube/Facebook等）​的运营、直播、广告投放、数据分析及变现服务。以中立工具生态整合行业资源，降低跨境门槛——“做社媒卖家的万能工具箱，让全球生意更高效。”",
+          "url": "https://www.tktoc.com/"
+        },
+        {
+          "kind": "manual",
+          "id": "9627",
+          "title": "YouTube Al 视频丨实战手册丨 2026 年 3 月航海  ",
+          "matchedKeyword": "YouTube",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "activitySearch",
+          "description": "Seedance2.0 赋能 AI 视频创作，提效翻倍，赚取 YouTube 海外流量收益",
+          "activityId": "9627",
+          "entries": [
+            {
+              "itemId": "9791",
+              "title": "新手如何入局【YouTube AI 视频】项目？"
+            },
+            {
+              "itemId": "9794",
+              "title": "00.本章概要"
+            },
+            {
+              "itemId": "9795",
+              "title": "01.注册账号完成，完成频道设置"
+            },
+            {
+              "itemId": "9796",
+              "title": "02.使用即梦 Seedance2.0 制作第一条 AI 视频并发布到 YouTube"
+            },
+            {
+              "itemId": "9797",
+              "title": "03.新人入门赛道推荐与讲解"
+            },
+            {
+              "itemId": "9800",
+              "title": "00. 本章概要"
+            },
+            {
+              "itemId": "9801",
+              "title": "01.平台机制"
+            },
+            {
+              "itemId": "9802",
+              "title": "02.变现方式"
+            },
+            {
+              "itemId": "9804",
+              "title": "00.本章概要"
+            },
+            {
+              "itemId": "9806",
+              "title": "01. 谷歌账号安全性设置与 YouTube 频道设置【完整版】"
+            },
+            {
+              "itemId": "9807",
+              "title": "02.开通 YouTube 频道【完整版】"
+            },
+            {
+              "itemId": "9809",
+              "title": "00.本章概要"
+            },
+            {
+              "itemId": "9810",
+              "title": "01.找赛道和对标的核心注意事项"
+            },
+            {
+              "itemId": "9811",
+              "title": "02. 【 26 年 3 月】更多 AI shorts 赛道推荐"
+            },
+            {
+              "itemId": "9813",
+              "title": "00. 本章概要"
+            },
+            {
+              "itemId": "9814",
+              "title": "01.【3 月更新】 多种热门 AI 内容的制作方法"
+            },
+            {
+              "itemId": "9815",
+              "title": "02.视频制作进阶（批量工具）"
+            },
+            {
+              "itemId": "9816",
+              "title": "03. 音乐、音效制作与剪辑"
+            },
+            {
+              "itemId": "9819",
+              "title": "00.本章概要"
+            },
+            {
+              "itemId": "9820",
+              "title": "01. 基本数据分析解读，重要数据项的构成与影响"
+            },
+            {
+              "itemId": "9821",
+              "title": "02. 使用基础数据分析工具，了解如何分析特定频道的收益与数据"
+            },
+            {
+              "itemId": "9822",
+              "title": "03. 平台政策解读，如何规避平台限流、版权、限制政策等"
+            },
+            {
+              "itemId": "9826",
+              "title": "01. 初级 YPP 开通流程"
+            },
+            {
+              "itemId": "9827",
+              "title": "02.【8 月更新】高级 YPP 开通流程"
+            },
+            {
+              "itemId": "9828",
+              "title": "03.如何回款"
+            },
+            {
+              "itemId": "9829",
+              "title": "04.Adsense/YPP 被拒如何应对"
+            },
+            {
+              "itemId": "9831",
+              "title": "01.AI 长视频案例分享"
+            },
+            {
+              "itemId": "9833",
+              "title": "01. 【26 年 3 月更新】近期热门长视频赛道对标参考"
+            },
+            {
+              "itemId": "9834",
+              "title": "02. 【弱画面 强文案】赛道"
+            },
+            {
+              "itemId": "9835",
+              "title": "03. 影视解说"
+            },
+            {
+              "itemId": "9836",
+              "title": "04. AI 疗愈音乐"
+            },
+            {
+              "itemId": "9837",
+              "title": "05. 励志成长"
+            },
+            {
+              "itemId": "9839",
+              "title": "01. YouTube 自动化相关精华内容"
+            },
+            {
+              "itemId": "9841",
+              "title": "01. 通用工具"
+            }
+          ],
+          "readTool": "activityManualDetail"
+        },
+        {
+          "kind": "manual",
+          "id": "8957",
+          "title": "YouTube Al 视频丨实战手册丨 2025 年 12 月航海 ",
+          "matchedKeyword": "YouTube",
+          "association": "keyword_match",
+          "source": "scys",
+          "sourceTool": "activitySearch",
+          "description": "学习 AI 视频最新玩法，打造 YouTube 持续收益账号",
+          "activityId": "8957",
+          "entries": [
+            {
+              "itemId": "4591",
+              "title": "⛵新手如何入门【YouTube Al 视频】项目？"
+            },
+            {
+              "itemId": "4594",
+              "title": "00. 本章概要"
+            },
+            {
+              "itemId": "4595",
+              "title": "01.平台机制"
+            },
+            {
+              "itemId": "4596",
+              "title": "02.变现方式"
+            },
+            {
+              "itemId": "4599",
+              "title": "00.本章概要"
+            },
+            {
+              "itemId": "4600",
+              "title": "01. 账号注册、频道创建"
+            },
+            {
+              "itemId": "4601",
+              "title": "02. 【8 月更新】谷歌账号安全性设置与 YouTube 频道设置必读"
+            },
+            {
+              "itemId": "4602",
+              "title": "03.【11 月更新】开通 YouTube 频道"
+            },
+            {
+              "itemId": "4604",
+              "title": "00.本章概要"
+            },
+            {
+              "itemId": "4605",
+              "title": "01.找赛道和对标的核心注意事项"
+            },
+            {
+              "itemId": "4606",
+              "title": "02. 【11 月更新】 AI shorts 赛道推荐"
+            },
+            {
+              "itemId": "4607",
+              "title": "03. 【11 月更新】 2025 热门 AI 长视频赛道"
+            },
+            {
+              "itemId": "4609",
+              "title": "00. 本章概要"
+            },
+            {
+              "itemId": "4610",
+              "title": "01. 【新增】做 AI 视频入门教程"
+            },
+            {
+              "itemId": "4611",
+              "title": "02.【11 月更新】 多种热门 AI 内容的制作方法"
+            },
+            {
+              "itemId": "4612",
+              "title": "03. 【新增】视频制作"
+            },
+            {
+              "itemId": "4614",
+              "title": "00.本章概要"
+            },
+            {
+              "itemId": "4615",
+              "title": "01. 初级 YPP 开通流程"
+            },
+            {
+              "itemId": "4616",
+              "title": "02.【8 月更新】高级 YPP 开通流程"
+            },
+            {
+              "itemId": "4617",
+              "title": "03.如何回款"
+            },
+            {
+              "itemId": "4618",
+              "title": "04.Adsense/YPP 被拒如何应对"
+            },
+            {
+              "itemId": "4621",
+              "title": "01.AI 长视频案例分享"
+            },
+            {
+              "itemId": "4623",
+              "title": "01. 【弱画面 强文案】赛道"
+            },
+            {
+              "itemId": "4624",
+              "title": "02. 影视解说"
+            },
+            {
+              "itemId": "4625",
+              "title": "03. AI 疗愈音乐"
+            },
+            {
+              "itemId": "4626",
+              "title": "04. 励志成长"
+            },
+            {
+              "itemId": "4628",
+              "title": "01. 基本数据分析解读，重要数据项的构成与影响"
+            },
+            {
+              "itemId": "4629",
+              "title": "02. 使用基础数据分析工具，了解如何分析特定频道的收益与数据"
+            },
+            {
+              "itemId": "4630",
+              "title": "03. 平台政策解读，如何规避平台限流、版权、限制政策等"
+            },
+            {
+              "itemId": "4632",
+              "title": "01. YouTube 自动化相关精华内容"
+            },
+            {
+              "itemId": "4634",
+              "title": "01. 通用工具"
+            }
+          ],
+          "readTool": "activityManualDetail"
+        }
       ],
-      "duplicateCount": 9,
+      "matchedKeywords": [
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
+      ],
+      "duplicateCount": 1,
       "translationStatus": "not_required"
     },
     {
@@ -1027,19 +2017,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -1068,17 +2049,11 @@
       "links": [],
       "metrics": "5 30 7 9",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "53e10d34219544",
@@ -1089,19 +2064,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -1126,17 +2092,59 @@
       "links": [],
       "metrics": "1 15 评论 1",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
+    },
+    {
+      "id": "26409c98b2edc8",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
+        "group": "daily-feed",
+        "keywords": [
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
+        ],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "Jason Yu",
+      "role": "航海家",
+      "relativeTime": "21小时前",
+      "publishedAt": "",
+      "title": "从 371 粉到 63000 粉，变现 40 万＋：我的 X（推特） 从起号到变现全复盘",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "粉丝从 371 增长到 ",
+      "reusableMethod": [
+        "工具产品化"
+      ],
+      "opportunityScore": 48,
+      "valueScore": 95,
+      "summary": "从 371 粉到 63000 粉，变现 40 万＋：我的 X（推特） 从起号到变现全复盘 哈喽各位圈友，我是鱼总",
+      "evidence": "哈喽各位圈友，我是鱼总。UI 出身、做了 8 年 APP 和 SaaS 的产品经理，目前全职OPC创业，在做出海工具、独立开发和 X（推特）自媒体。 做产品出海，赚全球用户的软件订阅费；同时深耕 X（推特）自媒体，给自己的出海产品引流，顺便沉淀个人 IP。 去年 9 月的推特航海，我发了第一条起号推文，借着那一篇完成了最难的冷启动。整整 12 个月后的今天： - 粉丝从 371 增长到 ； - 跑出 长推文，单篇最高曝光 ； - 与 X",
+      "excerpt": "哈喽各位圈友，我是鱼总。UI 出身、做了 8 年 APP 和 SaaS 的产品经理，目前全职OPC创业，在做出海工具、独立开发和 X（推特）自媒体。 做产品出海，赚全球用户的软件订阅费；同时深耕 X（推特）自媒体，给自己的出海产品引流，顺便沉淀个人 IP。 去年 9 月的推特航海，我发了第一条起号推文，借着那一篇完成了最难的冷启动。整整 12 个月后的今天： - 粉丝从 371 增长到 ； - 跑出 长推文，单篇最高曝光 ； - 与 X",
+      "links": [],
+      "metrics": "25 70 14 32",
+      "matchedKeywords": [
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
+      ],
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "60871835447c6a",
@@ -1147,18 +2155,10 @@
         "group": "tools",
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "tools",
-          "opportunity"
+          "tools"
         ]
       },
       "insightType": "tool_tip",
@@ -1323,80 +2323,11 @@
       ],
       "metrics": "",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 232,
-      "translationStatus": "not_required"
-    },
-    {
-      "id": "26409c98b2edc8",
-      "source": "scys",
-      "sourceName": "生财有术",
-      "collection": {
-        "mode": "home",
-        "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
-        "group": "daily-feed",
-        "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
-        ],
-        "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
-        ]
-      },
-      "insightType": "opportunity",
-      "author": "Jason Yu",
-      "role": "航海家",
-      "relativeTime": "21小时前",
-      "publishedAt": "",
-      "title": "从 371 粉到 63000 粉，变现 40 万＋：我的 X（推特） 从起号到变现全复盘",
-      "url": "https://scys.com/",
-      "scene": "获客营销与转化",
-      "industry": "内容与自媒体",
-      "tools": [],
-      "monetization": "订单成交 / 收费变现",
-      "painPoints": [
-        "获客成本与精准线索",
-        "内容生产与账号增长"
-      ],
-      "resultSignal": "粉丝从 371 增长到 ",
-      "reusableMethod": [
-        "工具产品化"
-      ],
-      "opportunityScore": 48,
-      "valueScore": 95,
-      "summary": "从 371 粉到 63000 粉，变现 40 万＋：我的 X（推特） 从起号到变现全复盘 哈喽各位圈友，我是鱼总",
-      "evidence": "哈喽各位圈友，我是鱼总。UI 出身、做了 8 年 APP 和 SaaS 的产品经理，目前全职OPC创业，在做出海工具、独立开发和 X（推特）自媒体。 做产品出海，赚全球用户的软件订阅费；同时深耕 X（推特）自媒体，给自己的出海产品引流，顺便沉淀个人 IP。 去年 9 月的推特航海，我发了第一条起号推文，借着那一篇完成了最难的冷启动。整整 12 个月后的今天： - 粉丝从 371 增长到 ； - 跑出 长推文，单篇最高曝光 ； - 与 X",
-      "excerpt": "哈喽各位圈友，我是鱼总。UI 出身、做了 8 年 APP 和 SaaS 的产品经理，目前全职OPC创业，在做出海工具、独立开发和 X（推特）自媒体。 做产品出海，赚全球用户的软件订阅费；同时深耕 X（推特）自媒体，给自己的出海产品引流，顺便沉淀个人 IP。 去年 9 月的推特航海，我发了第一条起号推文，借着那一篇完成了最难的冷启动。整整 12 个月后的今天： - 粉丝从 371 增长到 ； - 跑出 长推文，单篇最高曝光 ； - 与 X",
-      "links": [],
-      "metrics": "25 70 14 32",
-      "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
-      ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "0dfd04a5934b7b",
@@ -1407,19 +2338,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "tool_tip",
@@ -1452,17 +2374,11 @@
       "links": [],
       "metrics": "22 49 4 23",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "ff65420a16d7c8",
@@ -1473,19 +2389,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -1512,17 +2419,11 @@
       "links": [],
       "metrics": "0 49 15 收藏",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "afa76f8ef10387",
@@ -1533,19 +2434,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
@@ -1577,17 +2469,11 @@
       "links": [],
       "metrics": "0 6 1 收藏",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "977ff24a128caa",
@@ -1598,19 +2484,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
@@ -1640,17 +2517,11 @@
       "links": [],
       "metrics": "0 16 1 3",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "0e7245bff660f9",
@@ -1661,19 +2532,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
@@ -1702,17 +2564,11 @@
       "links": [],
       "metrics": "37 171 10 97",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "950e8b6726d746",
@@ -1723,19 +2579,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
@@ -1764,17 +2611,11 @@
       "links": [],
       "metrics": "1 11 评论 收藏",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "c85b3db8c0d83b",
@@ -1785,19 +2626,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "tool_tip",
@@ -1829,17 +2661,11 @@
       "links": [],
       "metrics": "3 15 评论 3",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "5531b0a892435b",
@@ -1850,19 +2676,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "tool_tip",
@@ -1897,17 +2714,11 @@
       "links": [],
       "metrics": "3 29 3 25",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "b2c37879204ba6",
@@ -1918,19 +2729,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
@@ -1959,17 +2761,11 @@
       "links": [],
       "metrics": "0 10 1 收藏",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "816af1e30ff38c",
@@ -1980,19 +2776,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "tool_tip",
@@ -2026,17 +2813,11 @@
       ],
       "metrics": "0 38 4 9",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "44adde1beeaf8c",
@@ -2047,19 +2828,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
@@ -2090,17 +2862,11 @@
       "links": [],
       "metrics": "0 17 1 8",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "288a6b53522947",
@@ -2111,19 +2877,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
@@ -2148,17 +2905,11 @@
       "links": [],
       "metrics": "30 103 38 24",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "4cda7c9b50d0e1",
@@ -2169,19 +2920,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "opportunity",
@@ -2208,17 +2950,11 @@
       "links": [],
       "metrics": "0 15 3 9",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "321de0ab180814",
@@ -2229,19 +2965,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -2268,17 +2995,11 @@
       "links": [],
       "metrics": "0 26 1 收藏",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "931e0e1110f6b0",
@@ -2289,19 +3010,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -2326,17 +3038,11 @@
       "links": [],
       "metrics": "1 142 2 3",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "c1e9dafacf0535",
@@ -2347,19 +3053,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -2384,17 +3081,11 @@
       "links": [],
       "metrics": "0 41 评论 1",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "910e30ddcbb1e5",
@@ -2405,19 +3096,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -2444,17 +3126,11 @@
       "links": [],
       "metrics": "0 23 9 收藏",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "9d786e289289c5",
@@ -2465,19 +3141,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -2507,17 +3174,11 @@
       "links": [],
       "metrics": "0 18 2 2",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "64010f4fd1688b",
@@ -2528,19 +3189,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -2570,17 +3222,11 @@
       "links": [],
       "metrics": "1 21 2 2",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "74e607d681e36c",
@@ -2591,19 +3237,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -2628,17 +3265,11 @@
       "links": [],
       "metrics": "0 13 评论 1",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "66614aa27f5f14",
@@ -2649,19 +3280,10 @@
         "keyword": "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效",
         "group": "daily-feed",
         "keywords": [
-          "RPA",
-          "ComfyUI",
-          "订单",
-          "营收",
-          "变现",
-          "月入",
-          "降本",
-          "提效"
+          "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
         ],
         "groups": [
-          "daily-feed",
-          "tools",
-          "opportunity"
+          "daily-feed"
         ]
       },
       "insightType": "industry_case",
@@ -2686,17 +3308,11 @@
       "links": [],
       "metrics": "1 128 167 3",
       "matchedKeywords": [
-        "RPA",
-        "ComfyUI",
-        "订单",
-        "营收",
-        "变现",
-        "月入",
-        "降本",
-        "提效"
+        "RPA / ComfyUI / 订单 / 营收 / 变现 / 月入 / 降本 / 提效"
       ],
-      "duplicateCount": 9,
-      "translationStatus": "not_required"
+      "duplicateCount": 1,
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "6cb074df870289",
@@ -2749,7 +3365,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "507425b7d25ef2",
@@ -2801,7 +3418,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "b32a0fd1fa33aa",
@@ -2854,7 +3472,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "d98b8363804c3c",
@@ -2904,7 +3523,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "38662218466cf1",
@@ -2952,7 +3572,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "b8822bd007d72a",
@@ -3005,7 +3626,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "37f8c42641b21b",
@@ -3052,7 +3674,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "387ec1195ecdf7",
@@ -3106,7 +3729,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "d4f4a32bd8eada",
@@ -3154,7 +3778,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "b95b7a78991b8a",
@@ -3200,7 +3825,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "72a9ae4c523812",
@@ -3249,7 +3875,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "53752c8c3b697c",
@@ -3300,7 +3927,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "1dfae3ddc73b8e",
@@ -3354,7 +3982,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "a780d056d791a7",
@@ -3401,7 +4030,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "4bab6a0e5e4def",
@@ -3451,7 +4081,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "0be4bc9da55d5c",
@@ -3501,7 +4132,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "d27f31a633f04c",
@@ -3551,7 +4183,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "663f907dbc7674",
@@ -3602,7 +4235,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "5fa588ac9fc93a",
@@ -3653,7 +4287,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "beb2455db91242",
@@ -3705,7 +4340,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "c48581d2d0a41a",
@@ -3756,7 +4392,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "5a28dd32513196",
@@ -3802,7 +4439,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "eb48f1b8756f30",
@@ -3851,7 +4489,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "ff0e3b10ac7636",
@@ -3904,7 +4543,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "3db51d13561d8b",
@@ -3952,7 +4592,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "2b1bd40cd834a7",
@@ -4000,7 +4641,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "801848cb01c265",
@@ -4043,7 +4685,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "cfb0db49827a21",
@@ -4089,7 +4732,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "9dddc3902a3482",
@@ -4141,7 +4785,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "956b037777f4dc",
@@ -4186,7 +4831,8 @@
       "metrics": "",
       "matchedKeywords": [],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "1ccece12b7627c",
@@ -4242,7 +4888,8 @@
         "订单"
       ],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "daf95d55562668",
@@ -4297,7 +4944,8 @@
         "降本"
       ],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "d2acb5536de86e",
@@ -4353,7 +5001,8 @@
         "提效"
       ],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "9723f306909d15",
@@ -4407,7 +5056,8 @@
         "RPA"
       ],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "9503656764dbdc",
@@ -4461,7 +5111,8 @@
         "营收"
       ],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "14560d759af082",
@@ -4506,10 +5157,6 @@
         {
           "href": "https://my.feishu.cn/docx/V5aCdPIl4oUrBJxH3LwcB9T2nqb?from=from_copylink",
           "text": "https://my.feishu.cn/docx/V5aCdPIl4oUrBJxH3LwcB9T2nqb?from=from_copylink"
-        },
-        {
-          "href": "https://my.feishu.cn/docx/V5aCdPIl4oUrBJxH3LwcB9T2nqb?from=from_copylink#破局时刻#",
-          "text": "https://my.feishu.cn/docx/V5aCdPIl4oUrBJxH3LwcB9T2nqb?from=from_copylink#破局时刻#"
         }
       ],
       "metrics": "",
@@ -4517,7 +5164,8 @@
         "ComfyUI"
       ],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "decdf87d9065c1",
@@ -4574,7 +5222,8 @@
         "月入"
       ],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     },
     {
       "id": "d89151038a5c90",
@@ -4629,7 +5278,8 @@
         "变现"
       ],
       "duplicateCount": 1,
-      "translationStatus": "not_required"
+      "translationStatus": "not_required",
+      "relatedResources": []
     }
   ]
 }
