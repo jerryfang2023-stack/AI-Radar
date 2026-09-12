@@ -34,3 +34,19 @@ test("builds a complete public sector company list and active investors", () => 
   assert.equal(sector.investorCount, 2);
   assert.deepEqual(sector.companies.map((item) => item.company), ["Alpha", "Beta"]);
 });
+
+test("global ecosystem excludes China from signals, heatmap, companies and investors", () => {
+  const mixed = { ...index, cards: [...cards, { ...cards[3], id: "5", subcategory: "AI 智能体" }] };
+  const overview = buildOverview(mixed, "global");
+  assert.equal(overview.ranking.reduce((n, item) => n + item.count, 0), 3);
+  assert.equal(overview.heatmap.flatMap(item => item.cells).reduce((n, cell) => n + cell.count, 0), 3);
+  assert.equal(overview.latestFundingDate, "2026-08-10");
+  assert.equal(overview.signals[0].value, 2);
+  const details = { 1: { investors: [{ name: "Global Fund" }] }, 5: { investors: [{ name: "China Fund" }] } };
+  const globalSector = buildSector(mixed, details, "AI 智能体", "global");
+  const chinaSector = buildSector(mixed, details, "AI 智能体", "china");
+  assert.deepEqual(globalSector.companies.map(c => c.id), ["1", "2"]);
+  assert.deepEqual(globalSector.investors.map(i => i.name), ["Global Fund"]);
+  assert.equal(globalSector.eventCount + chinaSector.eventCount, 3);
+  assert.deepEqual(chinaSector.companies.map(c => c.id), ["5"]);
+});

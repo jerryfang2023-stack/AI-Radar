@@ -18,8 +18,21 @@ test("filters keyword and structured dimensions", () => {
   assert.deepEqual(filterCards(cards, { ...defaults, categoryId: "enterprise" }, "2026-08-10").map((item) => item.id), ["1"]);
 });
 
+test("global and China financing filters are disjoint and cover the complete index", () => {
+  const globalCards = filterCards(cards, { ...defaults, marketRegion: "global" }, "2026-08-10");
+  const chinaCards = filterCards(cards, { ...defaults, marketRegion: "china" }, "2026-08-10");
+  assert.deepEqual(globalCards.map(c => c.id), ["1"]);
+  assert.deepEqual(chinaCards.map(c => c.id), ["2"]);
+  assert.equal(globalCards.length + chinaCards.length, cards.length);
+});
+
 test("sorts, counts filters and exports deterministic CSV", () => {
   assert.deepEqual(sortCards(cards, "amount").map((item) => item.id), ["1", "2"]);
   assert.equal(activeFilterCount({ ...defaults, marketRegion: "china", region: "china", period: "30d" }), 3);
   assert.match(exportSummary(cards), /Centralize/);
+});
+
+test("company legal name remains searchable when the list displays its short name", () => {
+  const short = { ...cards[1], company: "测试科技", companyFullName: "上海测试智能科技有限公司" };
+  assert.equal(filterCards([short], { ...defaults, keyword: "上海测试智能科技有限公司", marketRegion: "china" }, "2026-08-10").length, 1);
 });

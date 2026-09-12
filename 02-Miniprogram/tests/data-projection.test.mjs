@@ -6,13 +6,14 @@ import { projectFundingData, regionFor, roundGroup } from "../scripts/build-fund
 
 const source = JSON.parse(fs.readFileSync(path.resolve("..", "01-SiteV2", "site", "data", "funding-insights-v1.json"), "utf8"));
 const projected = projectFundingData(source);
+const visibleSourceCards = source.cards.filter(card => card.product_form?.id !== "robotic_system");
 
-test("projects every published funding card with a matching detail", () => {
-  assert.equal(projected.index.cards.length, source.cards.length);
-  assert.equal(Object.keys(projected.details).length, source.cards.length);
-  assert.equal(new Set(projected.index.cards.map((item) => item.id)).size, source.cards.length);
+test("projects every visible published funding card with a matching detail", () => {
+  assert.equal(projected.index.cards.length, visibleSourceCards.length);
+  assert.equal(Object.keys(projected.details).length, visibleSourceCards.length);
+  assert.equal(new Set(projected.index.cards.map((item) => item.id)).size, visibleSourceCards.length);
   for (const card of projected.index.cards) assert.ok(projected.details[card.id]);
-  assert.equal(projected.index.meta.chinaMarketCardCount, source.meta.china_market_card_count || 0);
+  assert.equal(projected.index.meta.chinaMarketCardCount, visibleSourceCards.filter(card => card.market_scope?.market_region === "CN").length);
 });
 
 test("preserves bounded public fields and evidence links", () => {

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import crypto from "node:crypto";
+import { fundingCompanyDisplayName } from "../../../agent-workflow/tools/funding-company-display-v1.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -433,6 +434,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
     projectRoot,
     "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json",
   ), {});
+  const companyDisplayAliases = readJson(path.join(projectRoot, "01-SiteV2/content/11-databases/china-market-entity-aliases-v1.json"), {}).entities || [];
   const relationshipEntityIds = new Set([
     ...(entityIndex.companies || []),
     ...(entityIndex.products || []),
@@ -495,6 +497,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       }
       return {
         ...card,
+        company: { ...card.company, name: chinaMarket ? fundingCompanyDisplayName(card, companyDisplayAliases) : card.company.name },
         market_scope: marketScope,
         product_form: {
           dimension: "product_form",

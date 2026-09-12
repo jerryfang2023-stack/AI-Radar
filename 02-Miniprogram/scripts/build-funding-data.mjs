@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import visibility from "../miniprogram/utils/funding-visibility.js";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -110,6 +111,7 @@ function projectCard(card) {
   const summary = {
     id: text(card.funding_insight_id),
     company: companyName,
+    companyFullName: text(company.full_name) || companyName,
     initial: companyName.slice(0, 1).toUpperCase(),
     summary: shorten(company.summary, 90) || "公司介绍暂未披露",
     products,
@@ -161,7 +163,7 @@ function projectCard(card) {
 }
 
 export function projectFundingData(source) {
-  const projected = list(source.cards).map(projectCard).filter((item) => item.summary.id);
+  const projected = list(source.cards).filter(visibility.isFundingVisible).map(projectCard).filter((item) => item.summary.id);
   projected.sort((a, b) => b.summary.date.localeCompare(a.summary.date) || a.summary.company.localeCompare(b.summary.company));
   const cards = projected.map((item) => item.summary);
   const details = Object.fromEntries(projected.map((item) => [item.detail.id, item.detail]));

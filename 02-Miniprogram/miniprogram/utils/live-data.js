@@ -1,3 +1,4 @@
+const { isFundingVisible } = require("./funding-visibility.js");
 const bundledFundingIndex = require("../data/funding-index.js");
 const bundledFundingDetails = require("../data/funding-details.js");
 const bundledReportIndex = require("../data/report-index.js");
@@ -103,6 +104,7 @@ function projectPortalCard(card) {
   const summary = {
     id: text(card.id),
     company: companyName,
+    companyFullName: text(company.fullName) || companyName,
     initial: companyName.slice(0, 1).toUpperCase(),
     summary: shorten(company.summary) || "公司介绍暂未披露",
     products,
@@ -186,7 +188,7 @@ function assertFundingPayload(data) {
 
 function projectPortalFundingData(data) {
   assertFundingPayload(data);
-  const projected = list(data.cards).map(projectPortalCard).filter((item) => item.summary.id);
+  const projected = list(data.cards).filter(isFundingVisible).map(projectPortalCard).filter((item) => item.summary.id);
   projected.sort((a, b) => b.summary.date.localeCompare(a.summary.date) || a.summary.company.localeCompare(b.summary.company, "zh-CN"));
   const cards = projected.map((item) => item.summary);
   const categories = [...new Set(cards.map((item) => item.categoryId).filter(Boolean))].map((id) => {
@@ -343,6 +345,7 @@ function assertFundingManifest(payload) {
 }
 
 function assertFundingIndex(payload, manifest) {
+  if (payload?.cards?.some(card => !isFundingVisible(card))) throw new Error("融资索引展示范围已更新");
   if (!payload?.meta || !Array.isArray(payload.cards) || payload.cards.length !== Number(manifest.cardCount)) throw new Error("融资索引无效");
   if (payload.meta.latestDate !== manifest.latestDate || payload.meta.fundingVersion !== manifest.fundingVersion) throw new Error("融资索引版本不一致");
   if (new Set(payload.cards.map((item) => item.id)).size !== payload.cards.length) throw new Error("融资索引存在重复 ID");
