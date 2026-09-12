@@ -76,6 +76,9 @@ test("domestic collection is an independent simultaneous job and only publicatio
   const parent = fs.readFileSync(".github/workflows/daily-persistent-assets-pr.yml", "utf8");
   const child = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
   assert.match(parent, /jobs:\s+china-funding:/u);
+  assert.match(parent, /gh workflow run china-funding-pr\.yml --ref main/u);
+  assert.doesNotMatch(parent, /uses: \.\/\.github\/workflows\/china-funding-pr/u);
+  assert.match(child, /--dir "\$RUNNER_TEMP\/china-funding-checkpoint"/u);
   assert.match(parent, /business-signals-pr:[\s\S]*?concurrency:[\s\S]*?wavesight-data-center-publication/u);
   assert.doesNotMatch(parent.slice(0, parent.indexOf("jobs:")), /concurrency:/u);
   assert.match(child, /publish:\s+needs: collect[\s\S]*?concurrency:/u);
