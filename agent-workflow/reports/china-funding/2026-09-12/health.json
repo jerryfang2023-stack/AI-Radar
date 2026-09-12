@@ -1,30 +1,29 @@
 {
   "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
   "date": "2026-09-12",
-  "generated_at": "2026-09-12T04:22:48.395Z",
-  "status": "failed",
+  "generated_at": "2026-09-12T04:28:33.110Z",
+  "status": "partial",
   "last_collection_at": "2026-09-12T03:41:42.764Z",
-  "failed_stage": "projections",
+  "failed_stage": null,
   "stages": [
     {
       "id": "capture",
       "status": "passed",
-      "started_at": "2026-09-12T04:20:33.149Z",
+      "started_at": "2026-09-12T04:26:07.488Z",
       "reused": true,
-      "finished_at": "2026-09-12T04:20:39.508Z"
+      "finished_at": "2026-09-12T04:26:13.872Z"
     },
     {
       "id": "facts",
       "status": "passed",
-      "started_at": "2026-09-12T04:20:39.508Z",
-      "finished_at": "2026-09-12T04:22:04.860Z"
+      "started_at": "2026-09-12T04:26:13.872Z",
+      "finished_at": "2026-09-12T04:27:44.338Z"
     },
     {
       "id": "projections",
-      "status": "failed",
-      "started_at": "2026-09-12T04:22:04.860Z",
-      "error": "Command failed: agent-workflow/tools/assert-taxonomy-consistency-v4-1.mjs (1)",
-      "finished_at": "2026-09-12T04:22:48.325Z"
+      "status": "passed",
+      "started_at": "2026-09-12T04:27:44.339Z",
+      "finished_at": "2026-09-12T04:28:33.033Z"
     }
   ],
   "sources": [
@@ -140,7 +139,7 @@
       "completed_at": "2026-09-12T03:41:08.515Z",
       "raw_count": 9,
       "readable_count": 9,
-      "accepted_claims": 8,
+      "accepted_claims": 9,
       "verified_event_ids": [
         "EV-b91024c06d8762a4"
       ],
@@ -250,7 +249,7 @@
     "sources_failed": 0,
     "candidates": 72,
     "readable_documents": 32,
-    "accepted_claims": 22,
+    "accepted_claims": 23,
     "verified_events": 4,
     "funding_events": 4,
     "china_funding_events": 1,

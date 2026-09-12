@@ -9,7 +9,7 @@
     "activeDate": "2026-09-12",
     "generatedAt": "2026-09-12T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 640,
+    "evidenceCount": 649,
     "directionCardCount": 0,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -584,6 +584,382 @@
       }
     },
     {
+      "id": "EV-0e7c33ff3b622ab1",
+      "event_id": "EV-0e7c33ff3b622ab1",
+      "event_type": "funding",
+      "publication_status": "partial",
+      "title": "该笔融资将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "",
+      "sourceUrl": "https://www.cyzone.cn/article/846135.html",
+      "sourceName": "创业邦",
+      "subject": "超维动力",
+      "sourceExcerpt": "超维动力（Kinetix AI）完成超5亿元人民币天使+轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-f07813b0d063bdb6",
+          "canonical_name": "超维动力",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-1c6c4ba5b8075893",
+          "canonical_name": "该笔",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-269949f4906743bb",
+        "CL-85d6866afb253ca4",
+        "CL-176662fa8a597e6f",
+        "CL-9128dc1fb0b6a7bd",
+        "CL-2281f81999d3e673"
+      ],
+      "source_refs": [
+        "SA-241a21ea478b9839",
+        "SA-0cf2b23e1e13130a"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "on_device",
+          "value_name": "端侧运行",
+          "entity_ids": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "deployment_model",
+          "dimension_name": "部署形态",
+          "value_id": "edge_device",
+          "value_name": "边缘与端侧",
+          "entity_ids": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-269949f4906743bb",
+            "source_refs": [
+              "SA-241a21ea478b9839"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-25f20b7b26e49e70",
+      "event_id": "EV-25f20b7b26e49e70",
+      "event_type": "funding",
+      "publication_status": "partial",
+      "title": "本轮融资由高投集团策源资本旗下成都策源高都共创股权投资基金（简称“策源高都基金”）独家投资，将重点用于AI技术研发、优质IP合作拓展、产品体验升级以及渠道与供应链建设，进一步夯实 IPTAG 在“IP +潮玩+硬件+内容+资产”一体化生态的核心优势，面向Z世代用户打造更具科技感与情感价值的潮玩产品与服务。",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "",
+      "sourceUrl": "https://www.cyzone.cn/article/846063.html",
+      "sourceName": "创业邦",
+      "subject": "本轮",
+      "sourceExcerpt": "本轮融资由高投集团策源资本旗下成都策源高都共创股权投资基金（简称“策源高都基金”）独家投资",
+      "entity_refs": [
+        {
+          "entity_id": "EN-91da6aeb894b9b26",
+          "canonical_name": "本轮",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-2e8d266e132877a1",
+          "canonical_name": "IPTAG",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-635b0bfec7d8a7f9",
+        "CL-ec29609902c607f6",
+        "CL-e63d299419e6682b"
+      ],
+      "source_refs": [
+        "SA-9ed4cd2451acd00e"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-e63d299419e6682b",
+            "source_refs": [
+              "SA-9ed4cd2451acd00e"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-e63d299419e6682b",
+            "source_refs": [
+              "SA-9ed4cd2451acd00e"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-635b0bfec7d8a7f9",
+            "source_refs": [
+              "SA-9ed4cd2451acd00e"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-3febc2d51c9237ea",
+      "event_id": "EV-3febc2d51c9237ea",
+      "event_type": "funding",
+      "publication_status": "partial",
+      "title": "四部门：推动“AI+能源”双向赋能DeepSeek拟募资最高500亿元 - 财联社",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "",
+      "sourceUrl": "https://www.cls.cn/detail/2366830",
+      "sourceName": "财联社／科创板日报",
+      "subject": "四部门",
+      "sourceExcerpt": "DeepSeek拟募资最高500亿元人民币",
+      "entity_refs": [
+        {
+          "entity_id": "EN-5e4cdd5b012fc7fc",
+          "canonical_name": "四部门",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_name": "DeepSeek",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-a8c03d581339ddb6",
+          "canonical_name": "大模型独角兽Kimi（月之暗面）即将",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-de98f23c5bf7607a",
+          "canonical_name": "国产大模型公司阶跃星辰将",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-88685d13c723cccb",
+        "CL-78f16a6be4baade3",
+        "CL-345f09f2297c4476"
+      ],
+      "source_refs": [
+        "SA-3f82ee6c6a306a50"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "model",
+          "value_name": "模型",
+          "entity_ids": [],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-88685d13c723cccb",
+            "source_refs": [
+              "SA-3f82ee6c6a306a50"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-4a9b0bafef9fd86b",
+      "event_id": "EV-4a9b0bafef9fd86b",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "今年具身智能的融资已基本“结束”了｜Frontline 市场已没有非共识投资了？ 投中网 · 1小时前",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "",
+      "sourceUrl": "https://www.chinaventure.com.cn/news/80-20260912-393225.html",
+      "sourceName": "投中网",
+      "subject": "今年具身智能的",
+      "sourceExcerpt": "但据我了解，目前，今年具身智能的融资已基本“结束”了。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-d2afe28bf2ce379c",
+          "canonical_name": "今年具身智能的",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-e8e5f8b3488041bb"
+      ],
+      "source_refs": [
+        "SA-e265b26ffc490819"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-d2afe28bf2ce379c"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-e8e5f8b3488041bb",
+            "source_refs": [
+              "SA-e265b26ffc490819"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-5189e9d8698a3272",
       "event_id": "EV-5189e9d8698a3272",
       "event_type": "funding",
@@ -638,6 +1014,87 @@
             "claim_ref": "CL-02ca337e08e4f11c",
             "source_refs": [
               "SA-68f1ac51ffd21cf5"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-59f7008a42158a4e",
+      "event_id": "EV-59f7008a42158a4e",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮融资",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "",
+      "sourceUrl": "https://www.qbitai.com/2026/05/423159.html",
+      "sourceName": "量子位",
+      "subject": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮",
+      "sourceExcerpt": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮融资",
+      "entity_refs": [
+        {
+          "entity_id": "EN-ed1f4821373b0808",
+          "canonical_name": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-db36e7bd45191ce4",
+          "canonical_name": "Meituan",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-5858040398bc63fd",
+        "CL-c2869c0679bab9eb"
+      ],
+      "source_refs": [
+        "SA-5fe997132fc935b1"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-ed1f4821373b0808"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-5858040398bc63fd",
+            "source_refs": [
+              "SA-5fe997132fc935b1"
             ],
             "provenance": "event_type_rule"
           }
@@ -798,6 +1255,68 @@
           "team_or_function": [
             "engineering"
           ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-77d410f38eb44c18",
+      "event_id": "EV-77d410f38eb44c18",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "烨知心完成Pre-A轮融资，专注端侧AI算力基础设施",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "2026-09-11T03:14:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202609/568861.shtml",
+      "sourceName": "投资界",
+      "subject": "烨知心",
+      "sourceExcerpt": "投资界（ID：pedaily2012）9月11日消息，近日，烨知心（Yeats.AI）宣布 完成Pre-A轮融资 ，由 深创投、和利资本、TCL创投、中科创星 联合领投 ，艾为电子（688798.SH）、国开科创、朝晖资本 等机构跟投，老股东连续多轮持续超额追投。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-10b106d9b0a27a4c",
+          "canonical_name": "烨知心",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-00a48ea923d05338"
+      ],
+      "source_refs": [
+        "SA-7e166d6500102a40"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-00a48ea923d05338",
+            "source_refs": [
+              "SA-7e166d6500102a40"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
           "specific_task": [],
           "pain_or_constraint": [],
           "product_form": [],
@@ -1046,6 +1565,231 @@
       }
     },
     {
+      "id": "EV-9fd8d784459150e5",
+      "event_id": "EV-9fd8d784459150e5",
+      "event_type": "funding",
+      "publication_status": "partial",
+      "title": "烨知心完成Pre-A轮融资，专注端侧AI算力基础设施 投资界（ID：pedaily2012）9月11日消息，近日，烨知心（Yeats.AI）宣布完成Pre-A轮融资，由深创投、和利资本、TCL创投、中科创星联合领投，艾为电子（688798.SH）、国开科创、朝晖资本等机构跟投，老股东连续多轮持续超额追投。据悉，本轮所获资金将持续用于下一代面向Agentic & Physical AI的NPU软硬件研发、流片及交付、模型压缩等算法研究。 10:46 投融资",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "",
+      "sourceUrl": "https://m.pedaily.cn/first/178488.shtml",
+      "sourceName": "投资界",
+      "subject": "烨知心",
+      "sourceExcerpt": "烨知心完成Pre-A轮融资，专注端侧AI算力基础设施",
+      "entity_refs": [
+        {
+          "entity_id": "EN-10b106d9b0a27a4c",
+          "canonical_name": "烨知心",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-72fff0d16c10c227",
+        "CL-54c8db096ac2b855",
+        "CL-6793d7e4c1dd7ad7"
+      ],
+      "source_refs": [
+        "SA-72d194c0a4db1b5f"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "on_device",
+          "value_name": "端侧运行",
+          "entity_ids": [
+            "EN-10b106d9b0a27a4c"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "deployment_model",
+          "dimension_name": "部署形态",
+          "value_id": "edge_device",
+          "value_name": "边缘与端侧",
+          "entity_ids": [
+            "EN-10b106d9b0a27a4c"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-10b106d9b0a27a4c"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-72fff0d16c10c227",
+            "source_refs": [
+              "SA-72d194c0a4db1b5f"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-72fff0d16c10c227",
+            "source_refs": [
+              "SA-72d194c0a4db1b5f"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-72fff0d16c10c227",
+            "source_refs": [
+              "SA-72d194c0a4db1b5f"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-b91024c06d8762a4",
+      "event_id": "EV-b91024c06d8762a4",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "哈工程教授创业，天使轮融资亿元，做水下机器人｜参与蛟龙号、航母推进器研发，2024 年郭春雨创办工至海洋，造仿生水下机器人 \"河图\"。也许仿生，才是水下具身智能的终极形态。",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-12",
+      "event_time": "",
+      "sourceUrl": "https://www.cyzone.cn/article/846106.html",
+      "sourceName": "创业邦",
+      "subject": "哈工程教授创业，天使轮",
+      "sourceExcerpt": "哈工程教授创业，天使轮融资亿元，做水下机器人 - 创业邦",
+      "entity_refs": [
+        {
+          "entity_id": "EN-3b07d7518a8133fa",
+          "canonical_name": "哈工程教授创业，天使轮",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-c4d216d342e9a1f8",
+          "canonical_name": "哈工程教授创业",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-1c526f1f2a0e3ef4",
+        "CL-49ed3cda2e1c0c88",
+        "CL-ff0141c5450e1359",
+        "CL-91ee0937b9771cc5"
+      ],
+      "source_refs": [
+        "SA-41d1cfc008ffa936"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-3b07d7518a8133fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-1c526f1f2a0e3ef4",
+            "source_refs": [
+              "SA-41d1cfc008ffa936"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-1c526f1f2a0e3ef4",
+            "source_refs": [
+              "SA-41d1cfc008ffa936"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-1c526f1f2a0e3ef4",
+            "source_refs": [
+              "SA-41d1cfc008ffa936"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-bf8698a2e28fea12",
       "event_id": "EV-bf8698a2e28fea12",
       "event_type": "funding",
@@ -1064,7 +1808,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -1317,11 +2061,11 @@
       "category": "funding",
       "categoryLabel": "融资",
       "date": "2026-09-12",
-      "event_time": "2026-09-09T15:29:07.000Z",
-      "sourceUrl": "https://www.163.com/dy/article/L6E0VC7A05198CJN.html?f=post2020_dy_recommends",
-      "sourceName": "keyword search / Exa",
+      "event_time": "",
+      "sourceUrl": "https://www.cls.cn/detail/2478685",
+      "sourceName": "财联社／科创板日报",
       "subject": "微纳核芯",
-      "sourceExcerpt": "微纳核芯完成C1轮10亿元融资 存算一体AI芯片年内或将实现规模商业化|低功耗|处理器|高带宽内存_网易订阅",
+      "sourceExcerpt": "《科创板日报》9日讯，近日，杭州微纳核芯电子科技有限公司（下称“微纳核芯”）完成C1轮10亿元融资，投资方包括优势资本、元昊投资、金浦投资、阳光人寿、元禾璞华、德联资本、宽桥恒松、厚雪资本、美格智能、恒旭资本、华勤技术。",
       "entity_refs": [
         {
           "entity_id": "EN-a5e5f031b6f878cf",
@@ -1337,11 +2081,13 @@
         }
       ],
       "claim_refs": [
+        "CL-1aaff46b41a33176",
         "CL-7f55a6faca222ac1",
         "CL-f56c9e737221bbdf",
         "CL-f276de32f45210c8"
       ],
       "source_refs": [
+        "SA-36c8bd38e411e878",
         "SA-1c05788612d77970"
       ],
       "taxonomy_version": "TAG-V4.1",
@@ -1467,9 +2213,9 @@
         "business_action": [
           {
             "value_id": "funding_round",
-            "claim_ref": "CL-7f55a6faca222ac1",
+            "claim_ref": "CL-1aaff46b41a33176",
             "source_refs": [
-              "SA-1c05788612d77970"
+              "SA-36c8bd38e411e878"
             ],
             "provenance": "event_type_rule"
           }
@@ -1902,6 +2648,109 @@
           "delivery_model": [
             "open_source_commercial"
           ],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-5da4e98f83b40872",
+      "event_id": "EV-5da4e98f83b40872",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "Salesforce 将智能体治理技术栈整合为单一平台",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-09-12",
+      "event_time": "2026-09-10T00:00:00.000Z",
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/salesforce-formalizes-agent-governance-stack-223032022.html?fr=sycsrp_catchall",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Salesforce",
+      "sourceExcerpt": "On September 10, 2026, the company announced its Trusted Enterprise AI Harness .",
+      "entity_refs": [
+        {
+          "entity_id": "EN-3ccbd9105a45d8fc",
+          "canonical_name": "Salesforce",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-99604b67218f70a7",
+          "canonical_name": "AI Harness",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-fdc1eadb42e394d8",
+          "canonical_name": "Trusted Enterprise AI Harness",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-37920fefb08452f2",
+          "canonical_name": "Formalizes",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-957fbdde96bc882b",
+        "CL-528f7723765d819a"
+      ],
+      "source_refs": [
+        "SA-72d70503f7fd6f84"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "cost_monitoring",
+            "claim_ref": "CL-528f7723765d819a",
+            "source_refs": [
+              "SA-72d70503f7fd6f84"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "api_cost_spike",
+            "claim_ref": "CL-528f7723765d819a",
+            "source_refs": [
+              "SA-72d70503f7fd6f84"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-957fbdde96bc882b",
+            "source_refs": [
+              "SA-72d70503f7fd6f84"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "cost_monitoring"
+          ],
+          "pain_or_constraint": [
+            "api_cost_spike"
+          ],
+          "product_form": [],
+          "delivery_model": [],
           "business_action": [
             "product_launch"
           ]
@@ -3986,7 +4835,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-4c46c485bcafbbcf",
@@ -4913,7 +5762,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -5011,7 +5860,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -10385,7 +11234,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-1d79127e9d90e89b",
@@ -13168,7 +14017,7 @@
           "entity_id": "EN-3ccbd9105a45d8fc",
           "canonical_name": "Salesforce",
           "entity_type": "organization_candidate",
-          "verification_status": "verified"
+          "verification_status": "candidate"
         },
         {
           "entity_id": "EN-b5738c169b693bee",
@@ -14317,7 +15166,7 @@
           "entity_id": "EN-3ccbd9105a45d8fc",
           "canonical_name": "Salesforce",
           "entity_type": "organization_candidate",
-          "verification_status": "verified"
+          "verification_status": "candidate"
         },
         {
           "entity_id": "EN-b4ce42ffc757cc19",
@@ -17686,7 +18535,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-b81c8201acfc7639",
@@ -39088,7 +39937,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-59bd831b990070c7",
@@ -39540,7 +40389,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -45008,7 +45857,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -56574,7 +57423,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-e3ea8280d7689bb7",
@@ -57129,7 +57978,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-199975c3b4f30c6a",
@@ -58120,7 +58969,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-46162bbc9eb57274",
@@ -62371,7 +63220,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-7d3194f79e645c42",
@@ -63420,7 +64269,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-8dfa869c34844253",
@@ -63853,7 +64702,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-199975c3b4f30c6a",
@@ -64392,7 +65241,7 @@
           "entity_id": "EN-6f7ac1823da81d2e",
           "canonical_name": "DeepSeek",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-199975c3b4f30c6a",

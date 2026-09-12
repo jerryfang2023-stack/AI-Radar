@@ -5,47 +5,268 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "generatedAt": "2026-09-12T04:28:15.100Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2847,
-    "quarantinedEventCount": 25
+    "eventCount": 2857,
+    "quarantinedEventCount": 26
   },
   "events": [
     {
-      "id": "EV-bf8698a2e28fea12",
+      "id": "EV-0e7c33ff3b622ab1",
       "dataDate": "2026-09-12",
-      "date": "2026-09-09",
+      "date": "2026-09-12",
       "updatedDate": "2026-09-12",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "谁拥有DeepSeek？所有权、控制权与中国持股",
-      "originalTitle": "Who Owns DeepSeek? Ownership, Control and China Stake",
-      "subject": "DeepSeek",
-      "action": "funding",
-      "object": "June 2026 funding round",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "该笔融资将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。",
+      "originalTitle": "",
+      "subject": "超维动力",
+      "action": "融资",
+      "object": "将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。",
       "metrics": [
-        "$52 billion"
+        "5亿"
       ],
-      "locations": [],
-      "marketScope": {
-        "market_region": "CN",
-        "china_market_match": true,
-        "china_market_basis": [
-          "actor_origin"
+      "locations": [
+        "新加坡"
+      ],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-f07813b0d063bdb6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
         ],
-        "source_registry_ids": [
-          "ai-funding-tracker-insights"
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-f07813b0d063bdb6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
         ],
-        "claim_refs": [
-          "CL-dd1eb18743593ca8"
-        ]
+        "target_user": []
       },
-      "missingFields": [],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-f07813b0d063bdb6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f07813b0d063bdb6",
+        "EN-1c6c4ba5b8075893"
+      ],
+      "entityNames": [
+        "超维动力",
+        "该笔"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-269949f4906743bb",
+          "subject": "超维动力",
+          "object": "超5亿元人民币天使+轮系列融资",
+          "quote": "超维动力（Kinetix AI）完成超5亿元人民币天使+轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。"
+        },
+        {
+          "id": "CL-85d6866afb253ca4",
+          "subject": "超维动力",
+          "object": "加速“数据-模型-本体”迭代并推动具身智能产品化落地",
+          "quote": "该笔融资将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。"
+        },
+        {
+          "id": "CL-176662fa8a597e6f",
+          "subject": "超维动力",
+          "object": "，聚焦于高拟人机器人 投资界（ID：pedaily2012）9月11日消息，超维动力（Kinetix AI）宣布完成超5亿元天使 轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。该笔融资将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。 11:17 投融资",
+          "quote": "超维动力完成超5亿元天使+轮系列融资，聚焦于高拟人机器人"
+        },
+        {
+          "id": "CL-9128dc1fb0b6a7bd",
+          "subject": "超维动力",
+          "object": "，聚焦于高拟人机器人 投资界（ID：pedaily2012）9月11日消息，超维动力（Kinetix AI）宣布完成超5亿元天使 轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。该笔融资将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。 11:17 投融资",
+          "quote": "投资界（ID：pedaily2012）9月11日消息，超维动力（Kinetix AI）宣布完成超5亿元天使 轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。"
+        },
+        {
+          "id": "CL-2281f81999d3e673",
+          "subject": "超维动力",
+          "object": "，聚焦于高拟人机器人 投资界（ID：pedaily2012）9月11日消息，超维动力（Kinetix AI）宣布完成超5亿元天使 轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。该笔融资将用于加速“数据-模型-本体”迭代，并推动具身智能的产品化落地。 11:17 投融资",
+          "quote": "下一篇： 烨知心完成Pre-A轮融资，专注端侧AI算力基础设施"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-241a21ea478b9839",
+          "publisher": "创业邦",
+          "url": "https://cyzone.cn/article/846135.html"
+        },
+        {
+          "id": "SA-0cf2b23e1e13130a",
+          "publisher": "投资界",
+          "url": "https://pedaily.cn/first/178491.shtml"
+        }
+      ],
+      "sourceUrl": "https://cyzone.cn/article/846135.html",
+      "publisher": "创业邦",
+      "sourceExcerpt": "超维动力（Kinetix AI）完成超5亿元人民币天使+轮系列融资，由新加坡淡马锡控股旗下VC机构祥峰资本、方广资本、万石资本等加注。"
+    },
+    {
+      "id": "EV-25f20b7b26e49e70",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "本轮融资由高投集团策源资本旗下成都策源高都共创股权投资基金（简称“策源高都基金”）独家投资，将重点用于AI技术研发、优质IP合作拓展、产品体验升级以及渠道与供应链建设，进一步夯实 IPTAG 在“IP +潮玩+硬件+内容+资产”一体化生态的核心优势，面向Z世代用户打造更具科技感与情感价值的潮玩产品与服务。",
+      "originalTitle": "",
+      "subject": "IPTAG",
+      "action": "融资",
+      "object": "由高投集团策源资本旗下成都策源高都共创股权投资基金（简称“策源高都基金”）独家投资，将重点用于AI技术研发、优质IP合作拓展、产品体验升级以及渠道与供应链建设，进一步夯实 IPTAG 在“IP +潮玩+硬件+内容+资产”一体化生态的核心优势，面向Z世代用户打造更具科技感与情感价值的潮玩产品与服务。",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -61,36 +282,179 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-6f7ac1823da81d2e"
+        "EN-91da6aeb894b9b26",
+        "EN-2e8d266e132877a1"
       ],
       "entityNames": [
-        "DeepSeek"
+        "本轮",
+        "IPTAG"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-dd1eb18743593ca8",
-          "subject": "DeepSeek",
-          "object": "June 2026 funding round",
-          "quote": "its June 2026 funding round set a post-money valuation above $52 billion"
+          "id": "CL-635b0bfec7d8a7f9",
+          "subject": "IPTAG",
+          "object": "策源高都基金",
+          "quote": "本轮融资由高投集团策源资本旗下成都策源高都共创股权投资基金（简称“策源高都基金”）独家投资"
+        },
+        {
+          "id": "CL-ec29609902c607f6",
+          "subject": "IPTAG",
+          "object": "千万级战略融资",
+          "quote": "9月10日，AI潮玩与高端收藏卡品牌 IPTAG 宣布已完成千万级战略 融资。"
+        },
+        {
+          "id": "CL-e63d299419e6682b",
+          "subject": "IPTAG",
+          "object": "AI技术研发、优质IP合作拓展、产品体验升级以及渠道与供应链建设",
+          "quote": "将重点用于AI技术研发、优质IP合作拓展、产品体验升级以及渠道与供应链建设"
         }
       ],
       "sources": [
         {
-          "id": "SA-547c1a9fe241e5b0",
-          "publisher": "AI Funding Tracker Insights",
-          "url": "https://aifundingtracker.com/who-owns-deepseek"
+          "id": "SA-9ed4cd2451acd00e",
+          "publisher": "创业邦",
+          "url": "https://cyzone.cn/article/846063.html"
         }
       ],
-      "sourceUrl": "https://aifundingtracker.com/who-owns-deepseek",
-      "publisher": "AI Funding Tracker Insights",
-      "sourceExcerpt": "its June 2026 funding round set a post-money valuation above $52 billion"
+      "sourceUrl": "https://cyzone.cn/article/846063.html",
+      "publisher": "创业邦",
+      "sourceExcerpt": "本轮融资由高投集团策源资本旗下成都策源高都共创股权投资基金（简称“策源高都基金”）独家投资"
     },
     {
-      "id": "EV-d9e018b58da30912",
+      "id": "EV-3febc2d51c9237ea",
       "dataDate": "2026-09-12",
-      "date": "2026-09-09",
+      "date": "2026-09-12",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "四部门：推动“AI+能源”双向赋能DeepSeek拟募资最高500亿元 - 财联社",
+      "originalTitle": "",
+      "subject": "DeepSeek",
+      "action": "募资",
+      "object": "最高500亿元 - 财联社",
+      "metrics": [
+        "500亿",
+        "20亿",
+        "25亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "regulatory_jurisdiction"
+        ],
+        "source_registry_ids": [
+          "cn-cls"
+        ],
+        "claim_refs": [
+          "CL-88685d13c723cccb",
+          "CL-78f16a6be4baade3",
+          "CL-345f09f2297c4476"
+        ]
+      },
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5e4cdd5b012fc7fc",
+        "EN-6f7ac1823da81d2e",
+        "EN-a8c03d581339ddb6",
+        "EN-de98f23c5bf7607a"
+      ],
+      "entityNames": [
+        "四部门",
+        "DeepSeek",
+        "大模型独角兽Kimi（月之暗面）即将",
+        "国产大模型公司阶跃星辰将"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-88685d13c723cccb",
+          "subject": "DeepSeek",
+          "object": "最高500亿元人民币",
+          "quote": "DeepSeek拟募资最高500亿元人民币"
+        },
+        {
+          "id": "CL-78f16a6be4baade3",
+          "subject": "Kimi（月之暗面）",
+          "object": "20亿美元融资",
+          "quote": "大模型独角兽Kimi（月之暗面）即将完成新一轮20亿美元融资"
+        },
+        {
+          "id": "CL-345f09f2297c4476",
+          "subject": "阶跃星辰",
+          "object": "近25亿美元融资",
+          "quote": "国产大模型公司阶跃星辰将完成近25亿美元融资"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3f82ee6c6a306a50",
+          "publisher": "财联社／科创板日报",
+          "url": "https://cls.cn/detail/2366830"
+        }
+      ],
+      "sourceUrl": "https://cls.cn/detail/2366830",
+      "publisher": "财联社／科创板日报",
+      "sourceExcerpt": "DeepSeek拟募资最高500亿元人民币"
+    },
+    {
+      "id": "EV-4a9b0bafef9fd86b",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
       "updatedDate": "2026-09-12",
       "eventType": "funding",
       "eventTypeLabel": "融资",
@@ -98,14 +462,16 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元",
+      "title": "今年具身智能的融资已基本“结束”了｜Frontline 市场已没有非共识投资了？ 投中网 · 1小时前",
       "originalTitle": "",
-      "subject": "硬氪首发丨无问智科",
-      "action": "完成数亿元A轮融资",
-      "object": "，具身智能业务订单已达数亿元",
+      "subject": "今年具身智能的",
+      "action": "融资",
+      "object": "已基本“结束”了｜Frontline 市场已没有非共识投资了？ 投中网 · 1小时前",
       "metrics": [],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [
         {
@@ -114,7 +480,7 @@
           "id": "embodied_ai",
           "name": "具身智能",
           "entityIds": [
-            "EN-187bf23c29af5e43"
+            "EN-d2afe28bf2ce379c"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
@@ -137,7 +503,7 @@
           "id": "embodied_ai",
           "name": "具身智能",
           "entityIds": [
-            "EN-187bf23c29af5e43"
+            "EN-d2afe28bf2ce379c"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
@@ -150,43 +516,293 @@
           "id": "embodied_ai",
           "name": "具身智能",
           "entityIds": [
-            "EN-187bf23c29af5e43"
+            "EN-d2afe28bf2ce379c"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
       ],
       "entityIds": [
-        "EN-187bf23c29af5e43"
+        "EN-d2afe28bf2ce379c"
       ],
       "entityNames": [
-        "硬氪首发丨无问智科"
+        "今年具身智能的"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-74b060e48bb49483",
-          "subject": "硬氪首发丨无问智科",
-          "object": "，具身智能业务订单已达数亿元",
-          "quote": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元"
+          "id": "CL-e8e5f8b3488041bb",
+          "subject": "今年具身智能的",
+          "object": "已基本“结束”了｜Frontline 市场已没有非共识投资了？ 投中网 · 1小时前",
+          "quote": "但据我了解，目前，今年具身智能的融资已基本“结束”了。"
         }
       ],
       "sources": [
         {
-          "id": "SA-0a7d0d40345a7c43",
-          "publisher": "c.m.163.com",
-          "url": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html"
+          "id": "SA-e265b26ffc490819",
+          "publisher": "投中网",
+          "url": "https://chinaventure.com.cn/news/80-20260912-393225.html"
         }
       ],
-      "sourceUrl": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html",
-      "publisher": "c.m.163.com",
-      "sourceExcerpt": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元"
+      "sourceUrl": "https://chinaventure.com.cn/news/80-20260912-393225.html",
+      "publisher": "投中网",
+      "sourceExcerpt": "但据我了解，目前，今年具身智能的融资已基本“结束”了。"
+    },
+    {
+      "id": "EV-59f7008a42158a4e",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮融资",
+      "originalTitle": "",
+      "subject": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮",
+      "action": "融资",
+      "object": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮融资",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-qbitai-rss"
+        ],
+        "claim_refs": [
+          "CL-5858040398bc63fd",
+          "CL-c2869c0679bab9eb"
+        ]
+      },
+      "missingFields": [
+        "object",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-ed1f4821373b0808"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-ed1f4821373b0808"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-ed1f4821373b0808"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-ed1f4821373b0808"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ed1f4821373b0808",
+        "EN-db36e7bd45191ce4"
+      ],
+      "entityNames": [
+        "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮",
+        "Meituan"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5858040398bc63fd",
+          "subject": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮",
+          "object": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮融资",
+          "quote": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮融资"
+        },
+        {
+          "id": "CL-c2869c0679bab9eb",
+          "subject": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮",
+          "object": "具身智能初创公司「元节智能（AtomBite.AI）」已于近期完成千万级种子轮融资，由英诺科创基金领投，水木清华校友种子基金及知名投资人个人跟投。",
+          "quote": "具身智能初创公司「元节智能（AtomBite.AI）」已于近期完成千万级种子轮融资，由英诺科创基金领投，水木清华校友种子基金及知名投资人个人跟投。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5fe997132fc935b1",
+          "publisher": "量子位",
+          "url": "https://qbitai.com/2026/05/423159.html"
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/05/423159.html",
+      "publisher": "量子位",
+      "sourceExcerpt": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮融资"
+    },
+    {
+      "id": "EV-b91024c06d8762a4",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-12",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "哈工程教授创业，天使轮融资亿元，做水下机器人｜参与蛟龙号、航母推进器研发，2024 年郭春雨创办工至海洋，造仿生水下机器人 \"河图\"。也许仿生，才是水下具身智能的终极形态。",
+      "originalTitle": "",
+      "subject": "哈工程教授创业，天使轮",
+      "action": "融资",
+      "object": "亿元，做水下机器人｜参与蛟龙号、航母推进器研发，2024 年郭春雨创办工至海洋，造仿生水下机器人 \"河图\"。也许仿生，才是水下具身智能的终极形态。",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-3b07d7518a8133fa"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-3b07d7518a8133fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-3b07d7518a8133fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3b07d7518a8133fa",
+        "EN-c4d216d342e9a1f8"
+      ],
+      "entityNames": [
+        "哈工程教授创业，天使轮",
+        "哈工程教授创业"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-1c526f1f2a0e3ef4",
+          "subject": "哈工程教授创业，天使轮",
+          "object": "亿元，做水下机器人｜参与蛟龙号、航母推进器研发，2024 年郭春雨创办工至海洋，造仿生水下机器人 \"河图\"。也许仿生，才是水下具身智能的终极形态。",
+          "quote": "哈工程教授创业，天使轮融资亿元，做水下机器人 - 创业邦"
+        },
+        {
+          "id": "CL-49ed3cda2e1c0c88",
+          "subject": "哈工程教授创业，天使轮",
+          "object": "亿元，做水下机器人｜参与蛟龙号、航母推进器研发，2024 年郭春雨创办工至海洋，造仿生水下机器人 \"河图\"。也许仿生，才是水下具身智能的终极形态。",
+          "quote": "哈工程教授创业，天使轮融资亿元，做水下机器人"
+        },
+        {
+          "id": "CL-ff0141c5450e1359",
+          "subject": "哈工程教授创业，天使轮",
+          "object": "亿元，做水下机器人｜参与蛟龙号、航母推进器研发，2024 年郭春雨创办工至海洋，造仿生水下机器人 \"河图\"。也许仿生，才是水下具身智能的终极形态。",
+          "quote": "哈工程教授创业，天使轮融资亿元，做水下机器人｜参与蛟龙号、航母推进器研发，2024 年郭春雨创办工至海洋，造仿生水下机器人 \"河图\"。"
+        },
+        {
+          "id": "CL-91ee0937b9771cc5",
+          "subject": "哈工程教授创业，天使轮",
+          "object": "亿元，做水下机器人｜参与蛟龙号、航母推进器研发，2024 年郭春雨创办工至海洋，造仿生水下机器人 \"河图\"。也许仿生，才是水下具身智能的终极形态。",
+          "quote": "3 哈工程教授创业，天使轮融资亿元，做水下机器人"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-41d1cfc008ffa936",
+          "publisher": "创业邦",
+          "url": "https://cyzone.cn/article/846106.html"
+        }
+      ],
+      "sourceUrl": "https://cyzone.cn/article/846106.html",
+      "publisher": "创业邦",
+      "sourceExcerpt": "哈工程教授创业，天使轮融资亿元，做水下机器人 - 创业邦"
     },
     {
       "id": "EV-e0a31302688c81ec",
       "dataDate": "2026-09-12",
-      "date": "2026-09-09",
+      "date": "2026-09-12",
       "updatedDate": "2026-09-12",
       "eventType": "funding",
       "eventTypeLabel": "融资",
@@ -195,10 +811,10 @@
       "statusLabel": "计划中",
       "publicationStatus": "partial",
       "title": "微纳核芯完成C1轮10亿元融资 存算一体AI芯片年内或将实现规模商业化",
-      "originalTitle": "微纳核芯完成C1轮10亿元融资 存算一体AI芯片年内或将实现规模商业化|低功耗|处理器|高带宽内存_网易订阅",
+      "originalTitle": "",
       "subject": "微纳核芯",
       "action": "完成C1轮10亿元融资",
-      "object": "存算一体AI芯片年内或将实现规模商业化|低功耗|处理器|高带宽内存_网易订阅",
+      "object": "存算一体AI芯片年内或将实现规模商业化",
       "metrics": [
         "10亿"
       ],
@@ -209,14 +825,19 @@
         "china_market_basis": [
           "event_market"
         ],
-        "source_registry_ids": [],
+        "source_registry_ids": [
+          "cn-cls"
+        ],
         "claim_refs": [
+          "CL-1aaff46b41a33176",
           "CL-7f55a6faca222ac1",
           "CL-f56c9e737221bbdf",
           "CL-f276de32f45210c8"
         ]
       },
-      "missingFields": [],
+      "missingFields": [
+        "event_time"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -612,6 +1233,12 @@
       "products": [],
       "claims": [
         {
+          "id": "CL-1aaff46b41a33176",
+          "subject": "微纳核芯",
+          "object": "存算一体AI芯片年内或将实现规模商业化",
+          "quote": "《科创板日报》9日讯，近日，杭州微纳核芯电子科技有限公司（下称“微纳核芯”）完成C1轮10亿元融资，投资方包括优势资本、元昊投资、金浦投资、阳光人寿、元禾璞华、德联资本、宽桥恒松、厚雪资本、美格智能、恒旭资本、华勤技术。"
+        },
+        {
           "id": "CL-7f55a6faca222ac1",
           "subject": "微纳核芯",
           "object": "存算一体AI芯片年内或将实现规模商业化|低功耗|处理器|高带宽内存_网易订阅",
@@ -632,14 +1259,372 @@
       ],
       "sources": [
         {
+          "id": "SA-36c8bd38e411e878",
+          "publisher": "财联社／科创板日报",
+          "url": "https://cls.cn/detail/2478685"
+        },
+        {
           "id": "SA-1c05788612d77970",
           "publisher": "163.com",
           "url": "https://163.com/dy/article/L6E0VC7A05198CJN.html?f=post2020_dy_recommends"
         }
       ],
-      "sourceUrl": "https://163.com/dy/article/L6E0VC7A05198CJN.html?f=post2020_dy_recommends",
-      "publisher": "163.com",
-      "sourceExcerpt": "微纳核芯完成C1轮10亿元融资 存算一体AI芯片年内或将实现规模商业化|低功耗|处理器|高带宽内存_网易订阅"
+      "sourceUrl": "https://cls.cn/detail/2478685",
+      "publisher": "财联社／科创板日报",
+      "sourceExcerpt": "《科创板日报》9日讯，近日，杭州微纳核芯电子科技有限公司（下称“微纳核芯”）完成C1轮10亿元融资，投资方包括优势资本、元昊投资、金浦投资、阳光人寿、元禾璞华、德联资本、宽桥恒松、厚雪资本、美格智能、恒旭资本、华勤技术。"
+    },
+    {
+      "id": "EV-77d410f38eb44c18",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-11",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "烨知心完成Pre-A轮融资，专注端侧AI算力基础设施",
+      "originalTitle": "",
+      "subject": "烨知心",
+      "action": "完成Pre-A轮融资",
+      "object": "，专注端侧AI算力基础设施",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-10b106d9b0a27a4c"
+      ],
+      "entityNames": [
+        "烨知心"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-00a48ea923d05338",
+          "subject": "烨知心",
+          "object": "，专注端侧AI算力基础设施",
+          "quote": "投资界（ID：pedaily2012）9月11日消息，近日，烨知心（Yeats.AI）宣布 完成Pre-A轮融资 ，由 深创投、和利资本、TCL创投、中科创星 联合领投 ，艾为电子（688798.SH）、国开科创、朝晖资本 等机构跟投，老股东连续多轮持续超额追投。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7e166d6500102a40",
+          "publisher": "投资界",
+          "url": "https://news.pedaily.cn/202609/568861.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202609/568861.shtml",
+      "publisher": "投资界",
+      "sourceExcerpt": "投资界（ID：pedaily2012）9月11日消息，近日，烨知心（Yeats.AI）宣布 完成Pre-A轮融资 ，由 深创投、和利资本、TCL创投、中科创星 联合领投 ，艾为电子（688798.SH）、国开科创、朝晖资本 等机构跟投，老股东连续多轮持续超额追投。"
+    },
+    {
+      "id": "EV-65d274d4277815dc",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-10",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
+      "originalTitle": "",
+      "subject": "九章智电",
+      "action": "完成首轮数千万战略融资",
+      "object": "，深耕AI+电力交易赛道",
+      "metrics": [
+        "数千万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-a01847b090a53c6e"
+      ],
+      "entityNames": [
+        "九章智电"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c55a0bb6d173d324",
+          "subject": "九章智电",
+          "object": "，深耕AI+电力交易赛道",
+          "quote": "投资界（ID：pedaily2012）9月10日消息，近日，九章智电正式宣布 完成首轮数千万级战略融资 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ef46e90884f98fd6",
+          "publisher": "投资界",
+          "url": "https://news.pedaily.cn/202609/568814.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202609/568814.shtml",
+      "publisher": "投资界",
+      "sourceExcerpt": "投资界（ID：pedaily2012）9月10日消息，近日，九章智电正式宣布 完成首轮数千万级战略融资 。"
+    },
+    {
+      "id": "EV-6e528ee3314dce6a",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-10",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "紫讯技术完成Pre-IPO轮融资，全面提速电商AI应用平台LinkFox发展",
+      "originalTitle": "",
+      "subject": "紫讯技术",
+      "action": "完成Pre-IPO轮融资",
+      "object": "，全面提速电商AI应用平台LinkFox发展",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-cf3b52972d65dcfc"
+      ],
+      "entityNames": [
+        "紫讯技术"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-0915389529470eb8",
+          "subject": "紫讯技术",
+          "object": "，全面提速电商AI应用平台LinkFox发展",
+          "quote": "投资界（ID：pedaily2012）9月10日消息，近日，紫讯技术（福建）股份有限公司（以下简称“紫讯技术”或“公司”） 宣布完成新一轮融资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9c95d1c1e93c519b",
+          "publisher": "投资界",
+          "url": "https://news.pedaily.cn/202609/568799.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202609/568799.shtml",
+      "publisher": "投资界",
+      "sourceExcerpt": "投资界（ID：pedaily2012）9月10日消息，近日，紫讯技术（福建）股份有限公司（以下简称“紫讯技术”或“公司”） 宣布完成新一轮融资。"
+    },
+    {
+      "id": "EV-bf8698a2e28fea12",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-09",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谁拥有DeepSeek？所有权、控制权与中国持股",
+      "originalTitle": "Who Owns DeepSeek? Ownership, Control and China Stake",
+      "subject": "DeepSeek",
+      "action": "funding",
+      "object": "June 2026 funding round",
+      "metrics": [
+        "$52 billion"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "ai-funding-tracker-insights"
+        ],
+        "claim_refs": [
+          "CL-dd1eb18743593ca8"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-dd1eb18743593ca8",
+          "subject": "DeepSeek",
+          "object": "June 2026 funding round",
+          "quote": "its June 2026 funding round set a post-money valuation above $52 billion"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-547c1a9fe241e5b0",
+          "publisher": "AI Funding Tracker Insights",
+          "url": "https://aifundingtracker.com/who-owns-deepseek"
+        }
+      ],
+      "sourceUrl": "https://aifundingtracker.com/who-owns-deepseek",
+      "publisher": "AI Funding Tracker Insights",
+      "sourceExcerpt": "its June 2026 funding round set a post-money valuation above $52 billion"
+    },
+    {
+      "id": "EV-d9e018b58da30912",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-09",
+      "updatedDate": "2026-09-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元",
+      "originalTitle": "",
+      "subject": "硬氪首发丨无问智科",
+      "action": "完成数亿元A轮融资",
+      "object": "，具身智能业务订单已达数亿元",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-187bf23c29af5e43"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-187bf23c29af5e43"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-187bf23c29af5e43"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-187bf23c29af5e43"
+      ],
+      "entityNames": [
+        "硬氪首发丨无问智科"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-74b060e48bb49483",
+          "subject": "硬氪首发丨无问智科",
+          "object": "，具身智能业务订单已达数亿元",
+          "quote": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-0a7d0d40345a7c43",
+          "publisher": "c.m.163.com",
+          "url": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html"
+        }
+      ],
+      "sourceUrl": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html",
+      "publisher": "c.m.163.com",
+      "sourceExcerpt": "硬氪首发丨无问智科完成数亿元A轮融资，具身智能业务订单已达数亿元"
     },
     {
       "id": "EV-b9d8b3582f12bdc7",
@@ -150004,7 +150989,9 @@
         {
           "name": "GLM-5.3",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -150311,7 +151298,9 @@
         {
           "name": "V4 Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -198169,6 +199158,94 @@
       "sourceExcerpt": "工信部等八部门同步部署2027年前推出1000个高水平工业智能体。"
     },
     {
+      "id": "EV-5da4e98f83b40872",
+      "dataDate": "2026-09-12",
+      "date": "2026-09-10",
+      "updatedDate": "2026-09-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Salesforce 将智能体治理技术栈整合为单一平台",
+      "originalTitle": "Salesforce Formalizes the Agent Governance Stack Into a Single Platform",
+      "subject": "Salesforce",
+      "action": "product_release",
+      "object": "Trusted Enterprise AI Harness",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-99604b67218f70a7",
+        "EN-fdc1eadb42e394d8",
+        "EN-37920fefb08452f2"
+      ],
+      "entityNames": [
+        "Salesforce",
+        "AI Harness",
+        "Trusted Enterprise AI Harness",
+        "Formalizes"
+      ],
+      "productName": "AI Harness",
+      "products": [
+        {
+          "name": "AI Harness",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Trusted Enterprise AI Harness",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Formalizes",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-957fbdde96bc882b",
+          "subject": "Salesforce",
+          "object": "Trusted Enterprise AI Harness",
+          "quote": "On September 10, 2026, the company announced its Trusted Enterprise AI Harness ."
+        },
+        {
+          "id": "CL-528f7723765d819a",
+          "subject": "Salesforce",
+          "object": "AI Control Plane",
+          "quote": "Central to this is a new AI Control Plane, which allows organizations to discover and register agents, establish identity and policy, manage lifecycles, evaluate performance, and control costs."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-72d70503f7fd6f84",
+          "publisher": "finance.yahoo.com",
+          "url": "https://finance.yahoo.com/technology/ai/articles/salesforce-formalizes-agent-governance-stack-223032022.html?fr=sycsrp_catchall"
+        }
+      ],
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/salesforce-formalizes-agent-governance-stack-223032022.html?fr=sycsrp_catchall",
+      "publisher": "finance.yahoo.com",
+      "sourceExcerpt": "On September 10, 2026, the company announced its Trusted Enterprise AI Harness ."
+    },
+    {
       "id": "EV-fd0acf0718a27961",
       "dataDate": "2026-09-12",
       "date": "2026-09-10",
@@ -198569,7 +199646,9 @@
         {
           "name": "V4.1-Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -212604,9 +213683,7 @@
         {
           "name": "MarketScale",
           "type": "产品/服务",
-          "ownerNames": [
-            "Salesforce"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -227708,7 +228785,7 @@
           "name": "Opus 4.8",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "DeepSeek"
           ]
         }
       ],
@@ -235893,7 +236970,9 @@
         {
           "name": "Harness",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -237400,7 +238479,9 @@
         {
           "name": "Harness",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -238289,7 +239370,9 @@
         {
           "name": "V4 Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -238725,7 +239808,9 @@
         {
           "name": "Harness",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -254100,7 +255185,9 @@
         {
           "name": "V4 Flash",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -258532,7 +259619,9 @@
         {
           "name": "DeepSeek-V4-Flash-0731",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -314968,7 +316057,7 @@
           "name": "DeepSeek-V4",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "DeepSeek"
           ]
         }
       ],
@@ -321635,14 +322724,14 @@
           "name": "Connect AI Developer Edition",
           "type": "产品/服务",
           "ownerNames": [
-            "Salesforce"
+            "Microsoft"
           ]
         },
         {
           "name": "Launches Connect AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Salesforce"
+            "Microsoft"
           ]
         }
       ],
@@ -338765,7 +339854,7 @@
           "name": "DeepSeek-V3.2",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "DeepSeek"
           ]
         }
       ],
@@ -341816,7 +342905,7 @@
           "name": "AWS Marketplace",
           "type": "产品/服务",
           "ownerNames": [
-            "Rime"
+            "DeepSeek"
           ]
         }
       ],
@@ -347563,7 +348652,9 @@
         {
           "name": "MusaCoder",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "DeepSeek"
+          ]
         }
       ],
       "claims": [
@@ -352311,7 +353402,7 @@
           "name": "Agentic AI",
           "type": "模型",
           "ownerNames": [
-            "Huawei"
+            "DeepSeek"
           ]
         }
       ],
@@ -389433,14 +390524,14 @@
           "name": "Rubin NVL72",
           "type": "产品/服务",
           "ownerNames": [
-            "NVIDIA"
+            "DeepSeek"
           ]
         },
         {
           "name": "Vera Rubin NVL72",
           "type": "产品/服务",
           "ownerNames": [
-            "NVIDIA"
+            "DeepSeek"
           ]
         }
       ],
@@ -393247,7 +394338,7 @@
           "name": "Mozilla 2026",
           "type": "产品/服务",
           "ownerNames": [
-            "Xiaomi"
+            "DeepSeek"
           ]
         }
       ],

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T02:21:44.449Z",
+    "generatedAt": "2026-09-12T04:28:15.100Z",
     "latestDataDate": "2026-09-12",
     "currentDate": "2026-09-12",
-    "eventCount": 2847,
-    "quarantinedEventCount": 25
+    "eventCount": 2857,
+    "quarantinedEventCount": 26
   },
   "entity": {
     "id": "EN-cd6362472aea60ef",
@@ -24,6 +24,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-59f7008a42158a4e",
       "EV-2f0f3200b9800877",
       "EV-cec68369662236fd",
       "EV-bd81083dbb6eab3e",
@@ -38,12 +39,13 @@
       "EN-8992f4a61a19a74b"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-05",
+    "lastSeen": "2026-09-12",
     "relationIds": [
       "REL2-a95d865ecb2fbc95"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-59f7008a42158a4e",
         "EV-2f0f3200b9800877",
         "EV-cec68369662236fd"
       ],
@@ -58,6 +60,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-59f7008a42158a4e",
+        "dataDate": "2026-09-12",
+        "date": "2026-09-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "美团外卖前负责人入局餐饮具身模型，元节智能获千万级种子轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-ed1f4821373b0808"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ed1f4821373b0808",
+          "EN-cd6362472aea60ef"
+        ]
+      },
       {
         "id": "EV-2f0f3200b9800877",
         "dataDate": "2026-09-05",
@@ -423,6 +453,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-3febc2d51c9237ea",
         "EV-df2b04d9d720c544",
         "EV-5ea74d357e73366b",
         "EV-85506f9f86779a6d",
