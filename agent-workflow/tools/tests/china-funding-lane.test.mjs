@@ -6,8 +6,18 @@ import { collectChinaFunding, normalizeChinaFundingLead, articleUrl } from "../l
 import { buildChinaFundingHealth } from "../lib/china-funding-health.mjs";
 import { chinaFundingPlan, selectChinaFundingIntake } from "../run-china-funding-pipeline.mjs";
 import { mergeSourceIntakes } from "../lib/source-intake-v1.mjs";
+import { chinaFundingSourceDate } from "../lib/china-funding-source-date.mjs";
+import { eventSourceEligibility } from "../build-data-center-v4.mjs";
 
 const root = process.cwd();
+test("domestic dates come from explicit original publication stamps, never capture time", () => {
+  const source = { acquisition_channel: "china-funding" };
+  assert.equal(chinaFundingSourceDate({ ...source, full_text: "导航\n2026/09 11\n11:17\n超维动力完成融资" }), "2026-09-11T11:17:00+08:00");
+  assert.equal(chinaFundingSourceDate({ ...source, full_text: "融资报道\n睿兽分析 · 2026-09-10\n关注" }), "2026-09-10T00:00:00+08:00");
+  assert.equal(chinaFundingSourceDate({ ...source, full_text: "9月10日消息，完成融资。2026年投资报告" }), "");
+  assert.equal(chinaFundingSourceDate({ ...source, full_text: "2026-02-30\n" }), "");
+  assert.equal(eventSourceEligibility(source, { source_url: "https://www.qbitai.com/2026/05/423159.html" }, "元节智能完成种子轮融资", "2026-09-12", { eventType: "funding" }).reason, "domestic_publication_date_unverified");
+});
 const config = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/china-funding-monitor-v1.json"), "utf8"));
 test("intake checkpoint uses the actual intake contract without bundle-only body_length", () => {
   const source = { source_artifact_id: "SA1", source_url: "https://m.pedaily.cn/first/123456.shtml" };
