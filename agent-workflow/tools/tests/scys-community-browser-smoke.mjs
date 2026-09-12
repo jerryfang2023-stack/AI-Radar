@@ -11,7 +11,7 @@ const server = http.createServer(async (req, res) => {
   const file = path.resolve(site, `.${decodeURIComponent(new URL(req.url, "http://localhost").pathname)}`);
   if (!file.startsWith(site + path.sep)) { res.writeHead(403).end(); return; }
   try {
-    const type = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json" }[path.extname(file)] || "application/octet-stream";
+    const type = { ".svg": "image/svg+xml", ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json" }[path.extname(file)] || "application/octet-stream";
     res.setHeader("Content-Type", `${type}; charset=utf-8`);
     res.end(await fs.readFile(file));
   } catch { res.writeHead(404).end(); }
