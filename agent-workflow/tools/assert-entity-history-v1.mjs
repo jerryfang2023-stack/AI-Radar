@@ -92,7 +92,15 @@ function evaluate(data) {
     }
   }
   const fundingFounders = publicPeople.filter((person) => person.fundingInsightIds?.length);
-  if (fundingFounders.length !== 30) problems.push(`reviewed funding founder profile count must be 30 (${fundingFounders.length})`);
+  const expectedFundingPeople = new Set([
+    "funding-founder-review-decisions.json", "china-funding-entity-review-decisions.json",
+  ].flatMap((file) => readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1", file)).decisions)
+    .filter((decision) => decision.review_status === "accepted" && ["confirm", "correct"].includes(decision.action)
+      && decision.canonical?.catalog_type === "person" && decision.canonical.funding_profiles?.length)
+    .map((decision) => decision.entity_id));
+  if (fundingFounders.length !== expectedFundingPeople.size || fundingFounders.some((person) => !expectedFundingPeople.has(person.id))) {
+    problems.push(`reviewed funding people do not match accepted ledgers (${fundingFounders.length}/${expectedFundingPeople.size})`);
+  }
   for (const person of fundingFounders) {
     if (!(person.founderCompanies || []).length) problems.push(`funding founder has no company locator ${person.id}`);
     if (!(person.founderEvidence || []).every((evidence) =>

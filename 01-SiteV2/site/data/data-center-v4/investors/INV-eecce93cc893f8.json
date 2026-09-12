@@ -55,28 +55,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-01-26",
     "latest_disclosed_at": "2026-01-26",
     "role_counts": {
-      "participant": 2
+      "participant": 1
     },
     "round_codes": [
       "series_b_plus"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-f0d59425e4c32abb",
-        "canonical_entity_id": "",
-        "name": "阶跃星辰（StepFun）"
-      },
       {
         "entity_id": "EN-2c348893efb2316e",
         "canonical_entity_id": "EN-2c348893efb2316e",
@@ -85,14 +80,15 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-9b7e08314d72f99c",
-        "funding_insight_id": "FI-18465dcaeebdf656",
+        "activity_id": "IA-f3c903d924e178a5",
+        "funding_insight_id": "FI-74076c9ab29354a8",
         "event_ids": [
-          "EV-df37e9341b5c7f04"
+          "EV-df37e9341b5c7f04",
+          "EV-794f0a86004da0c9"
         ],
-        "company_entity_id": "EN-f0d59425e4c32abb",
-        "company_canonical_entity_id": "",
-        "company_name": "阶跃星辰（StepFun）",
+        "company_entity_id": "EN-2c348893efb2316e",
+        "company_canonical_entity_id": "EN-2c348893efb2316e",
+        "company_name": "StepFun",
         "round": "B+轮",
         "round_code": "series_b_plus",
         "round_original": "B+轮",
@@ -123,46 +119,6 @@
             "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
           }
         ]
-      },
-      {
-        "activity_id": "IA-5bed650a0d78e2be",
-        "funding_insight_id": "FI-74076c9ab29354a8",
-        "event_ids": [
-          "EV-794f0a86004da0c9"
-        ],
-        "company_entity_id": "EN-2c348893efb2316e",
-        "company_canonical_entity_id": "EN-2c348893efb2316e",
-        "company_name": "StepFun",
-        "round": "B+轮",
-        "round_code": "series_b_plus",
-        "round_original": "B+轮",
-        "amount_original": "50亿人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 5000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "50 亿元"
-        },
-        "announced_at": "2026-01-26",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-4ae8171e86e3a055",
-            "source_url": "https://news.pedaily.cn/202601/560382.shtml",
-            "source_title": "50亿，阶跃星辰完成新年最大融资",
-            "source_content_hash": "b3815bfa4d27819c",
-            "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
-            "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -173,14 +129,6 @@
         "source_content_hash": "3cd27a7369aa4df5",
         "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
         "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
-      },
-      {
-        "source_id": "FISRC-4ae8171e86e3a055",
-        "source_url": "https://news.pedaily.cn/202601/560382.shtml",
-        "source_title": "50亿，阶跃星辰完成新年最大融资",
-        "source_content_hash": "b3815bfa4d27819c",
-        "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
-        "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
       }
     ]
   }

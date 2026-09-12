@@ -57,21 +57,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 5,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-03-24",
     "latest_disclosed_at": "2026-08-12",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 3
+      "participant": 2
     },
     "round_codes": [
       "angel",
@@ -80,41 +80,36 @@
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-670f7279903a5551",
+        "canonical_entity_id": "EN-670f7279903a5551",
+        "name": "幻码跃迁"
+      },
+      {
         "entity_id": "EN-a43f157d208b2a63",
-        "canonical_entity_id": "",
+        "canonical_entity_id": "EN-a43f157d208b2a63",
         "name": "开物纪"
       },
       {
-        "entity_id": "EN-670f7279903a5551",
-        "canonical_entity_id": "",
-        "name": "上海幻码跃迁量子科技有限公司"
-      },
-      {
         "entity_id": "EN-4eec97c17bca1de2",
-        "canonical_entity_id": "",
-        "name": "上海星熠无限智能科技有限公司"
+        "canonical_entity_id": "EN-4eec97c17bca1de2",
+        "name": "星熠智能"
       },
       {
         "entity_id": "EN-d361e2fd6b342245",
-        "canonical_entity_id": "",
-        "name": "深圳忆纪元科技有限公司"
-      },
-      {
-        "entity_id": "EN-b227e7517a2dc971",
-        "canonical_entity_id": "",
-        "name": "星熠智能（上海星熠无限智能科技有限公司）"
+        "canonical_entity_id": "EN-d361e2fd6b342245",
+        "name": "MemoraX AI"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-0ea38b5fbb272ea0",
+        "activity_id": "IA-00b57783c0376577",
         "funding_insight_id": "FI-42815b3fc014db68",
         "event_ids": [
           "EV-64c5290cc685eb93"
         ],
         "company_entity_id": "EN-d361e2fd6b342245",
-        "company_canonical_entity_id": "",
-        "company_name": "深圳忆纪元科技有限公司",
+        "company_canonical_entity_id": "EN-d361e2fd6b342245",
+        "company_name": "MemoraX AI",
         "round": "种子++轮",
         "round_code": "seed_plus_plus",
         "round_original": "种子++轮",
@@ -147,14 +142,14 @@
         ]
       },
       {
-        "activity_id": "IA-a6b298e67b773efa",
+        "activity_id": "IA-c91e88dfc65f8a56",
         "funding_insight_id": "FI-150dae442fa0f1de",
         "event_ids": [
           "EV-71d7d8bbaa623228"
         ],
         "company_entity_id": "EN-670f7279903a5551",
-        "company_canonical_entity_id": "",
-        "company_name": "上海幻码跃迁量子科技有限公司",
+        "company_canonical_entity_id": "EN-670f7279903a5551",
+        "company_name": "幻码跃迁",
         "round": "种子轮",
         "round_code": "seed",
         "round_original": "种子轮",
@@ -187,14 +182,14 @@
         ]
       },
       {
-        "activity_id": "IA-dacb6d7540e69fbb",
+        "activity_id": "IA-ce407f2850490678",
         "funding_insight_id": "FI-60fcc87061157740",
         "event_ids": [
           "EV-e54bfac94961f4d2"
         ],
         "company_entity_id": "EN-d361e2fd6b342245",
-        "company_canonical_entity_id": "",
-        "company_name": "深圳忆纪元科技有限公司",
+        "company_canonical_entity_id": "EN-d361e2fd6b342245",
+        "company_name": "MemoraX AI",
         "round": "种子轮",
         "round_code": "seed",
         "round_original": "种子轮",
@@ -227,54 +222,15 @@
         ]
       },
       {
-        "activity_id": "IA-cbfc58fda9e48a48",
+        "activity_id": "IA-76008f55281ffad7",
         "funding_insight_id": "FI-b067ccb75fcade16",
         "event_ids": [
+          "EV-696ff69f11f66191",
           "EV-765185b9e33dde47"
         ],
         "company_entity_id": "EN-4eec97c17bca1de2",
-        "company_canonical_entity_id": "",
-        "company_name": "上海星熠无限智能科技有限公司",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
-        "amount_original": "千万元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 10000000,
-          "max_value": 100000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "1000 万元–1 亿元"
-        },
-        "announced_at": "2026-06-25",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-b28cfdc86e1c7c16",
-            "source_url": "https://news.pedaily.cn/202606/565533.shtml",
-            "source_title": "星熠智能完成千万级天使轮融资，专注AI人力供应链",
-            "source_content_hash": "73a5594e54d6952f",
-            "quote": "本轮融资由 浦东创投领投，L2F光源创业者基金跟投",
-            "quote_hash": "e98651ce6ff92b006e1a9e798c2f92eb719a7b59cae8361384d1eeda966f5373"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-3b26e01d2c95724e",
-        "funding_insight_id": "FI-ac6e585c2417cdb4",
-        "event_ids": [
-          "EV-696ff69f11f66191"
-        ],
-        "company_entity_id": "EN-b227e7517a2dc971",
-        "company_canonical_entity_id": "",
-        "company_name": "星熠智能（上海星熠无限智能科技有限公司）",
+        "company_canonical_entity_id": "EN-4eec97c17bca1de2",
+        "company_name": "星熠智能",
         "round": "天使轮",
         "round_code": "angel",
         "round_original": "天使轮",
@@ -307,14 +263,14 @@
         ]
       },
       {
-        "activity_id": "IA-bad0e85dadd8f37f",
-        "funding_insight_id": "FI-a6350cc6f597f274",
+        "activity_id": "IA-aff48d58033c8d0d",
+        "funding_insight_id": "FI-7a7b9825a0a59da6",
         "event_ids": [
           "EV-34a58f84a7ba4e92"
         ],
-        "company_entity_id": "EN-82c84d2f6490e62b",
-        "company_canonical_entity_id": "",
-        "company_name": "深圳忆纪元科技有限公司",
+        "company_entity_id": "EN-d361e2fd6b342245",
+        "company_canonical_entity_id": "EN-d361e2fd6b342245",
+        "company_name": "MemoraX AI",
         "round": "种子轮",
         "round_code": "seed",
         "round_original": "种子轮",
@@ -353,7 +309,7 @@
           "EV-9832526435c1695e"
         ],
         "company_entity_id": "EN-a43f157d208b2a63",
-        "company_canonical_entity_id": "",
+        "company_canonical_entity_id": "EN-a43f157d208b2a63",
         "company_name": "开物纪",
         "round": "天使+轮",
         "round_code": "angel_plus",
@@ -393,7 +349,7 @@
           "EV-9832526435c1695e"
         ],
         "company_entity_id": "EN-a43f157d208b2a63",
-        "company_canonical_entity_id": "",
+        "company_canonical_entity_id": "EN-a43f157d208b2a63",
         "company_name": "开物纪",
         "round": "天使+轮",
         "round_code": "angel_plus",
@@ -451,14 +407,6 @@
         "source_content_hash": "60c922b0df26320d9ae634c1fcada836344995e66e0771687854d979f6335228",
         "quote": "本轮由 L2F 光源创业者基金、钟鼎资本联合领投",
         "quote_hash": "6b93b45c73568518a641dc5124b85c00d979bd7e5a22bd29a882bd2611876c4e"
-      },
-      {
-        "source_id": "FISRC-b28cfdc86e1c7c16",
-        "source_url": "https://news.pedaily.cn/202606/565533.shtml",
-        "source_title": "星熠智能完成千万级天使轮融资，专注AI人力供应链",
-        "source_content_hash": "73a5594e54d6952f",
-        "quote": "本轮融资由 浦东创投领投，L2F光源创业者基金跟投",
-        "quote_hash": "e98651ce6ff92b006e1a9e798c2f92eb719a7b59cae8361384d1eeda966f5373"
       },
       {
         "source_id": "FISRC-1ac0e5821a13eba9",

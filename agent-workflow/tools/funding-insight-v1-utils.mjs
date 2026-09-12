@@ -624,7 +624,9 @@ function resolvedResearchItem(item, kind, resolver, acceptedDecisions) {
 }
 
 function fundingEntityLink(kind, relationType, item, resolver, acceptedDecisions) {
-  const resolved = resolvedFundingEntity(item?.name, kind, resolver, acceptedDecisions);
+  const resolved = kind === "person"
+    ? (item.entity_id ? { id: item.entity_id, name: item.name } : null)
+    : resolvedFundingEntity(item?.name, kind, resolver, acceptedDecisions);
   return {
     relation_type: relationType,
     target_kind: kind,
@@ -723,6 +725,7 @@ export function normalizeFundingInsightCard(
     ? reviewedApplicationId
     : "";
   const companyEntityId = reviewedCanonicalId || card.company?.entity_id || applicationEntityId;
+  const resolvePerson = fundingPersonResolver(entityIndex, companyEntityId);
   const canonicalEntityConsistent = Boolean(
     reviewedCanonicalId
     || (indexedCompany && indexedNameMatches && applicationEntityId === companyEntityId),
@@ -744,10 +747,15 @@ export function normalizeFundingInsightCard(
   );
   const founders = mergeEquivalentFounders((card.company?.founders || [])
     .filter((item) => clean(item.name) && (item.evidence_refs || []).length)
-    .map((item) => ({
-      ...resolvedResearchItem(item, "person", resolve, acceptedDecisions),
-      role: normalizeFounderRole(item.role),
-    })));
+    .map((item) => {
+      const person = resolvePerson(item.name);
+      return {
+        ...item,
+        name: person?.name || item.name,
+        entity_id: person?.id || null,
+        role: normalizeFounderRole(person?.founderCompanies?.find((company) => company.entityId === companyEntityId)?.role || item.role),
+      };
+    }));
   const products = (card.products || []).map(
     (item) => resolvedResearchItem(item, "product", resolve, acceptedDecisions),
   );
@@ -1158,6 +1166,18 @@ export function entityResolver(entityIndex = {}) {
       ? candidates.filter((entity) => allowedTypes.includes(entity.type))
       : candidates;
     return filtered.length === 1 ? filtered[0] : null;
+  };
+}
+
+// A name alone is insufficient to bind a funding person to an employer.
+// Use reviewed application affiliations, including when the name is globally unique.
+export function fundingPersonResolver(entityIndex = {}, companyEntityId = "") {
+  const candidates = (entityIndex.people || []).filter((person) =>
+    (person.founderCompanies || []).some((company) => company.entityId === companyEntityId));
+  return (name) => {
+    const matches = candidates.filter((person) => [person.name, ...(person.aliases || []), ...(person.fundingResearchNames || [])]
+      .some((alias) => normalizedName(alias) === normalizedName(name)));
+    return matches.length === 1 ? matches[0] : null;
   };
 }
 

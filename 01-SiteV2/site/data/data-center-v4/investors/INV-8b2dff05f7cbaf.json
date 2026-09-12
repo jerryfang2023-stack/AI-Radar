@@ -59,11 +59,10 @@
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-08-31",
     "latest_disclosed_at": "2026-08-31",
     "role_counts": {
@@ -76,25 +75,25 @@
     "portfolio_companies": [
       {
         "entity_id": "EN-b321d29699ce1dcd",
-        "canonical_entity_id": "",
-        "name": "上海松应科技有限公司"
+        "canonical_entity_id": "EN-b321d29699ce1dcd",
+        "name": "松应科技"
       },
       {
         "entity_id": "EN-447a48e5d0951831",
         "canonical_entity_id": "EN-447a48e5d0951831",
-        "name": "上海以太之心科技有限公司"
+        "name": "以太之心"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-d5d3ff57f98c47be",
+        "activity_id": "IA-2da70b4692df0012",
         "funding_insight_id": "FI-0393a877e1b99840",
         "event_ids": [
           "EV-782e8dcca41fd545"
         ],
         "company_entity_id": "EN-b321d29699ce1dcd",
-        "company_canonical_entity_id": "",
-        "company_name": "上海松应科技有限公司",
+        "company_canonical_entity_id": "EN-b321d29699ce1dcd",
+        "company_name": "松应科技",
         "round": "多轮融资",
         "round_code": "multi_round",
         "round_original": "多轮融资",
@@ -127,14 +126,14 @@
         ]
       },
       {
-        "activity_id": "IA-eee9c2a03cc162da",
+        "activity_id": "IA-cadbf0cab864507e",
         "funding_insight_id": "FI-88ed5f2ad4bd8ab7",
         "event_ids": [
           "EV-89ec502a1340079a"
         ],
         "company_entity_id": "EN-447a48e5d0951831",
         "company_canonical_entity_id": "EN-447a48e5d0951831",
-        "company_name": "上海以太之心科技有限公司",
+        "company_name": "以太之心",
         "round": "种子轮",
         "round_code": "seed",
         "round_original": "种子轮",
@@ -149,8 +148,8 @@
           "display_zh": "2000 万元–9000 万元"
         },
         "announced_at": "2026-08-31",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",

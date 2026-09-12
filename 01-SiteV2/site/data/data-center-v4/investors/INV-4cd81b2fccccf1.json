@@ -55,21 +55,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 6,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 7,
-    "china_market_company_count": 7,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 6,
     "first_disclosed_at": "2026-01-26",
     "latest_disclosed_at": "2026-09-06",
     "role_counts": {
-      "lead": 2,
+      "lead": 1,
       "other_current_round": 1,
-      "participant": 5
+      "participant": 4
     },
     "round_codes": [
       "angel",
@@ -79,38 +78,28 @@
     "portfolio_companies": [
       {
         "entity_id": "EN-4482f5b97bed22de",
-        "canonical_entity_id": "",
-        "name": "光啾科技（上海）有限公司"
-      },
-      {
-        "entity_id": "EN-f0d59425e4c32abb",
-        "canonical_entity_id": "",
-        "name": "阶跃星辰（StepFun）"
+        "canonical_entity_id": "EN-4482f5b97bed22de",
+        "name": "光啾科技"
       },
       {
         "entity_id": "EN-fac803bdedac7e4e",
-        "canonical_entity_id": "",
-        "name": "奇点智控（上海）科技有限公司"
+        "canonical_entity_id": "EN-fac803bdedac7e4e",
+        "name": "奇点智控"
+      },
+      {
+        "entity_id": "EN-5c822c71e6e4db70",
+        "canonical_entity_id": "EN-5c822c71e6e4db70",
+        "name": "瞬适科技"
       },
       {
         "entity_id": "EN-4eec97c17bca1de2",
-        "canonical_entity_id": "",
-        "name": "上海星熠无限智能科技有限公司"
+        "canonical_entity_id": "EN-4eec97c17bca1de2",
+        "name": "星熠智能"
       },
       {
         "entity_id": "EN-447a48e5d0951831",
         "canonical_entity_id": "EN-447a48e5d0951831",
-        "name": "上海以太之心科技有限公司"
-      },
-      {
-        "entity_id": "EN-5c822c71e6e4db70",
-        "canonical_entity_id": "",
-        "name": "瞬适科技（上海）有限公司"
-      },
-      {
-        "entity_id": "EN-b227e7517a2dc971",
-        "canonical_entity_id": "",
-        "name": "星熠智能（上海星熠无限智能科技有限公司）"
+        "name": "以太之心"
       },
       {
         "entity_id": "EN-2c348893efb2316e",
@@ -120,15 +109,15 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-58386ce3d220af49",
+        "activity_id": "IA-01432178b5616a7d",
         "funding_insight_id": "FI-8e02d6b25a91500c",
         "event_ids": [
           "EV-012b1ccfe1d48f51",
           "EV-ae87e20ab0c5d06a"
         ],
         "company_entity_id": "EN-4482f5b97bed22de",
-        "company_canonical_entity_id": "",
-        "company_name": "光啾科技（上海）有限公司",
+        "company_canonical_entity_id": "EN-4482f5b97bed22de",
+        "company_name": "光啾科技",
         "round": "天使轮",
         "round_code": "angel",
         "round_original": "天使轮",
@@ -161,14 +150,14 @@
         ]
       },
       {
-        "activity_id": "IA-93a2e84dda88a8df",
+        "activity_id": "IA-b932d282eba4d4bb",
         "funding_insight_id": "FI-88ed5f2ad4bd8ab7",
         "event_ids": [
           "EV-89ec502a1340079a"
         ],
         "company_entity_id": "EN-447a48e5d0951831",
         "company_canonical_entity_id": "EN-447a48e5d0951831",
-        "company_name": "上海以太之心科技有限公司",
+        "company_name": "以太之心",
         "round": "种子轮",
         "round_code": "seed",
         "round_original": "种子轮",
@@ -183,8 +172,8 @@
           "display_zh": "2000 万元–9000 万元"
         },
         "announced_at": "2026-08-31",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
@@ -201,14 +190,14 @@
         ]
       },
       {
-        "activity_id": "IA-7e9449fc921fd84d",
+        "activity_id": "IA-ec6e57fa0f8b1e54",
         "funding_insight_id": "FI-1da3c184549b158c",
         "event_ids": [
           "EV-4d46806b1522d5f4"
         ],
         "company_entity_id": "EN-5c822c71e6e4db70",
-        "company_canonical_entity_id": "",
-        "company_name": "瞬适科技（上海）有限公司",
+        "company_canonical_entity_id": "EN-5c822c71e6e4db70",
+        "company_name": "瞬适科技",
         "round": "种子轮",
         "round_code": "seed",
         "round_original": "种子轮",
@@ -241,15 +230,15 @@
         ]
       },
       {
-        "activity_id": "IA-b630b3c7cb1e55a4",
+        "activity_id": "IA-85dc3bd5d3078de0",
         "funding_insight_id": "FI-3acf310855423b42",
         "event_ids": [
           "EV-381d21544fcdd0c4",
           "EV-3e580ccbc11654cb"
         ],
         "company_entity_id": "EN-fac803bdedac7e4e",
-        "company_canonical_entity_id": "",
-        "company_name": "奇点智控（上海）科技有限公司",
+        "company_canonical_entity_id": "EN-fac803bdedac7e4e",
+        "company_name": "奇点智控",
         "round": "天使轮",
         "round_code": "angel",
         "round_original": "天使轮",
@@ -282,54 +271,15 @@
         ]
       },
       {
-        "activity_id": "IA-9f071d1661c63a20",
+        "activity_id": "IA-c97d9866914d0bc0",
         "funding_insight_id": "FI-b067ccb75fcade16",
         "event_ids": [
+          "EV-696ff69f11f66191",
           "EV-765185b9e33dde47"
         ],
         "company_entity_id": "EN-4eec97c17bca1de2",
-        "company_canonical_entity_id": "",
-        "company_name": "上海星熠无限智能科技有限公司",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
-        "amount_original": "千万元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 10000000,
-          "max_value": 100000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "1000 万元–1 亿元"
-        },
-        "announced_at": "2026-06-25",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-b28cfdc86e1c7c16",
-            "source_url": "https://news.pedaily.cn/202606/565533.shtml",
-            "source_title": "星熠智能完成千万级天使轮融资，专注AI人力供应链",
-            "source_content_hash": "73a5594e54d6952f",
-            "quote": "本轮融资由 浦东创投领投，L2F光源创业者基金跟投",
-            "quote_hash": "e98651ce6ff92b006e1a9e798c2f92eb719a7b59cae8361384d1eeda966f5373"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-7849f8e1cea622f2",
-        "funding_insight_id": "FI-ac6e585c2417cdb4",
-        "event_ids": [
-          "EV-696ff69f11f66191"
-        ],
-        "company_entity_id": "EN-b227e7517a2dc971",
-        "company_canonical_entity_id": "",
-        "company_name": "星熠智能（上海星熠无限智能科技有限公司）",
+        "company_canonical_entity_id": "EN-4eec97c17bca1de2",
+        "company_name": "星熠智能",
         "round": "天使轮",
         "round_code": "angel",
         "round_original": "天使轮",
@@ -362,14 +312,15 @@
         ]
       },
       {
-        "activity_id": "IA-498d1b003afac3dd",
-        "funding_insight_id": "FI-18465dcaeebdf656",
+        "activity_id": "IA-b4a4f8c5b913b11b",
+        "funding_insight_id": "FI-74076c9ab29354a8",
         "event_ids": [
-          "EV-df37e9341b5c7f04"
+          "EV-df37e9341b5c7f04",
+          "EV-794f0a86004da0c9"
         ],
-        "company_entity_id": "EN-f0d59425e4c32abb",
-        "company_canonical_entity_id": "",
-        "company_name": "阶跃星辰（StepFun）",
+        "company_entity_id": "EN-2c348893efb2316e",
+        "company_canonical_entity_id": "EN-2c348893efb2316e",
+        "company_name": "StepFun",
         "round": "B+轮",
         "round_code": "series_b_plus",
         "round_original": "B+轮",
@@ -398,46 +349,6 @@
             "source_content_hash": "3cd27a7369aa4df5",
             "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
             "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-556cf722a55ebf70",
-        "funding_insight_id": "FI-74076c9ab29354a8",
-        "event_ids": [
-          "EV-794f0a86004da0c9"
-        ],
-        "company_entity_id": "EN-2c348893efb2316e",
-        "company_canonical_entity_id": "EN-2c348893efb2316e",
-        "company_name": "StepFun",
-        "round": "B+轮",
-        "round_code": "series_b_plus",
-        "round_original": "B+轮",
-        "amount_original": "50亿人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 5000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "50 亿元"
-        },
-        "announced_at": "2026-01-26",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-4ae8171e86e3a055",
-            "source_url": "https://news.pedaily.cn/202601/560382.shtml",
-            "source_title": "50亿，阶跃星辰完成新年最大融资",
-            "source_content_hash": "b3815bfa4d27819c",
-            "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
-            "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
           }
         ]
       }
@@ -476,14 +387,6 @@
         "quote_hash": "da35727bf23a448a21c3b8ea789f80a1ab3383f5ae0a8ceea17714b912356539"
       },
       {
-        "source_id": "FISRC-b28cfdc86e1c7c16",
-        "source_url": "https://news.pedaily.cn/202606/565533.shtml",
-        "source_title": "星熠智能完成千万级天使轮融资，专注AI人力供应链",
-        "source_content_hash": "73a5594e54d6952f",
-        "quote": "本轮融资由 浦东创投领投，L2F光源创业者基金跟投",
-        "quote_hash": "e98651ce6ff92b006e1a9e798c2f92eb719a7b59cae8361384d1eeda966f5373"
-      },
-      {
         "source_id": "FISRC-1ac0e5821a13eba9",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-25/doc-inieqskx7805883.shtml",
         "source_title": "星熠智能完成千万级天使轮融资",
@@ -498,14 +401,6 @@
         "source_content_hash": "3cd27a7369aa4df5",
         "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
         "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
-      },
-      {
-        "source_id": "FISRC-4ae8171e86e3a055",
-        "source_url": "https://news.pedaily.cn/202601/560382.shtml",
-        "source_title": "50亿，阶跃星辰完成新年最大融资",
-        "source_content_hash": "b3815bfa4d27819c",
-        "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明创投、五源等老股东进一步跟投。",
-        "quote_hash": "aa21548ba8857bed4a106bacde68ab64b5bbc720e683395f78eea9f1a021d10e"
       }
     ]
   }

@@ -701,6 +701,7 @@ export function buildEntityCollections(service, eventsById, reviewDecisions = nu
       affiliationEvidence: profile.affiliationEvidence || [],
       viewpointIds: profile.viewpointIds || [],
       fundingInsightIds: profile.fundingInsightIds || [],
+      ...(profile.fundingResearchNames?.length ? { fundingResearchNames: profile.fundingResearchNames } : {}),
       founderCompanies: profile.founderCompanies || [],
       founderEvidence: profile.founderEvidence || []
     }));
@@ -775,7 +776,8 @@ export function buildFrontstageData(root = defaultRoot) {
   const reviewDecisions = mergeEntityReviewDecisionSets(
     readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json"), { decisions: [] }),
     readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json"), { decisions: [] }),
-    readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/funding-founder-review-decisions.json"), { decisions: [] })
+    readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/funding-founder-review-decisions.json"), { decisions: [] }),
+    readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/china-funding-entity-review-decisions.json"), { decisions: [] })
   );
   const entityHistory = buildEntityHistoryService({
     entityRows,
@@ -784,6 +786,7 @@ export function buildFrontstageData(root = defaultRoot) {
     hardwareRecords: hardware,
     viewpointData,
     reviewDecisions,
+    fundingCards: readJson(path.join(root, "01-SiteV2/site/data/funding-insights-v1.json"), { cards: [] }).cards,
     generatedAt: process.env.WAVESIGHT_ENTITY_HISTORY_GENERATED_AT || ""
   });
   const entityCollections = buildEntityCollections(entityHistory, eventsById, reviewDecisions);

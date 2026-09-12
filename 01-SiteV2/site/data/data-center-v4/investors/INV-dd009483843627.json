@@ -77,31 +77,31 @@
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-60d2cc785c19e818",
-        "canonical_entity_id": "",
-        "name": "北京三启万物科技有限公司"
-      },
-      {
         "entity_id": "EN-e7492db096492304",
-        "canonical_entity_id": "",
+        "canonical_entity_id": "EN-e7492db096492304",
         "name": "极佳视界"
       },
       {
+        "entity_id": "EN-60d2cc785c19e818",
+        "canonical_entity_id": "EN-60d2cc785c19e818",
+        "name": "三启万物"
+      },
+      {
         "entity_id": "EN-eb9a5a696c7fe158",
-        "canonical_entity_id": "",
-        "name": "紫创智械（上海）科技有限公司"
+        "canonical_entity_id": "EN-eb9a5a696c7fe158",
+        "name": "紫创智械"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-cf708bc88d1c050f",
+        "activity_id": "IA-a399d2c0570056c5",
         "funding_insight_id": "FI-322a9e8ea81884e5",
         "event_ids": [
           "EV-3bbd2ab8ebda9871"
         ],
         "company_entity_id": "EN-eb9a5a696c7fe158",
-        "company_canonical_entity_id": "",
-        "company_name": "紫创智械（上海）科技有限公司",
+        "company_canonical_entity_id": "EN-eb9a5a696c7fe158",
+        "company_name": "紫创智械",
         "round": "其他融资",
         "round_code": "other",
         "round_original": "数千万融资",
@@ -134,14 +134,14 @@
         ]
       },
       {
-        "activity_id": "IA-8a713d32ec9896a8",
+        "activity_id": "IA-b49a1aaa4bdc49a8",
         "funding_insight_id": "FI-b1494fe383b9e92d",
         "event_ids": [
           "EV-e8f381baf505ac32"
         ],
         "company_entity_id": "EN-60d2cc785c19e818",
-        "company_canonical_entity_id": "",
-        "company_name": "北京三启万物科技有限公司",
+        "company_canonical_entity_id": "EN-60d2cc785c19e818",
+        "company_name": "三启万物",
         "round": "战略融资",
         "round_code": "strategic",
         "round_original": "战略融资",
@@ -174,53 +174,13 @@
         ]
       },
       {
-        "activity_id": "IA-600cc626bda217b6",
-        "funding_insight_id": "FI-6ada8d4502daa530",
-        "event_ids": [
-          "EV-e0a31302688c81ec"
-        ],
-        "company_entity_id": "EN-a5e5f031b6f878cf",
-        "company_canonical_entity_id": "",
-        "company_name": "杭州微纳核芯电子科技有限公司",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "超10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": 1000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 10 亿元"
-        },
-        "announced_at": "2026-06-15",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "老股东继续加持",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-b96684face6f5223",
-            "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
-            "source_title": "微纳核芯完成超10亿元B轮系列融资",
-            "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
-            "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
-            "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
-          }
-        ]
-      },
-      {
         "activity_id": "IA-406888cab1c08755",
         "funding_insight_id": "FI-60ae9fb62661395b",
         "event_ids": [
           "EV-ba46244851f1db2b"
         ],
         "company_entity_id": "EN-e7492db096492304",
-        "company_canonical_entity_id": "",
+        "company_canonical_entity_id": "EN-e7492db096492304",
         "company_name": "极佳视界",
         "round": "B2轮",
         "round_code": "series_b2",
@@ -254,13 +214,53 @@
         ]
       },
       {
+        "activity_id": "IA-92d931b98c15b697",
+        "funding_insight_id": "FI-6ada8d4502daa530",
+        "event_ids": [
+          "EV-e0a31302688c81ec"
+        ],
+        "company_entity_id": "EN-a5e5f031b6f878cf",
+        "company_canonical_entity_id": "EN-a5e5f031b6f878cf",
+        "company_name": "微纳核芯",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "超10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东继续加持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b96684face6f5223",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+            "source_title": "微纳核芯完成超10亿元B轮系列融资",
+            "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+            "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
+            "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-7aa7afc07abf35b9",
         "funding_insight_id": "FI-b17732f34966fbc2",
         "event_ids": [
           "EV-c2b1af9cc8fba608"
         ],
         "company_entity_id": "EN-e7492db096492304",
-        "company_canonical_entity_id": "",
+        "company_canonical_entity_id": "EN-e7492db096492304",
         "company_name": "极佳视界",
         "round": "B1轮",
         "round_code": "series_b1",
@@ -300,7 +300,7 @@
           "EV-499a62114b0fd616"
         ],
         "company_entity_id": "EN-e7492db096492304",
-        "company_canonical_entity_id": "",
+        "company_canonical_entity_id": "EN-e7492db096492304",
         "company_name": "极佳视界",
         "round": "多轮融资",
         "round_code": "multi_round",
@@ -352,20 +352,20 @@
         "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
       },
       {
-        "source_id": "FISRC-b96684face6f5223",
-        "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
-        "source_title": "微纳核芯完成超10亿元B轮系列融资",
-        "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
-        "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
-        "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
-      },
-      {
         "source_id": "FISRC-ce47b663ca256878",
         "source_url": "https://news.pedaily.cn/202606/565201.shtml",
         "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
         "source_content_hash": "a652909321da946b",
         "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
         "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+      },
+      {
+        "source_id": "FISRC-b96684face6f5223",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+        "source_title": "微纳核芯完成超10亿元B轮系列融资",
+        "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+        "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
+        "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
       },
       {
         "source_id": "FISRC-a1fb846b5355af64",

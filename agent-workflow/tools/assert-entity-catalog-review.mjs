@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import { ENTITY_REVIEW_ERROR_PATTERNS } from "../product/entity-review-error-patterns.mjs";
+import { assertChinaFundingEntities } from "./assert-china-funding-entities.mjs";
 import {
   assertFundingFounderReview,
   FOUNDER_REVIEW_SCHEMA_VERSION
@@ -47,7 +48,9 @@ function main() {
   const currentAudit = readJson(currentAuditPath);
   const claimIds = new Set(readJsonl(claimsPath).map((claim) => claim.claim_id));
   const entityIds = new Set(readJsonl(entitiesPath).map((entity) => entity.entity_id));
-  const decisions = ledger.decisions || [];
+  const chinaLedger = readJson(path.join(path.dirname(ledgerPath), "china-funding-entity-review-decisions.json"));
+  const chinaCompanies = chinaLedger.decisions.filter((decision) => decision.canonical.catalog_type === "company");
+  const decisions = [...new Map([...(ledger.decisions || []), ...chinaCompanies].map((decision) => [decision.entity_id, decision])).values()];
   const personDecisions = personLedger.decisions || [];
   const fundingFounderDecisions = fundingFounderLedger.decisions || [];
   const problems = [];
@@ -57,6 +60,7 @@ function main() {
   const decisionIds = new Set(decisions.map((decision) => decision.entity_id));
   const validateLedger = new Ajv2020({ allErrors: true, strict: false }).compile(readJson(schemaPath));
   if (!validateLedger(ledger)) for (const error of validateLedger.errors || []) problems.push(`schema ${error.instancePath || "/"} ${error.message}`);
+  if (!validateLedger(chinaLedger)) for (const error of validateLedger.errors || []) problems.push(`china schema ${error.instancePath || "/"} ${error.message}`);
   if (ledger.schema_version !== "ENTITY-CATALOG-REVIEW-V1") problems.push("schema_version must be ENTITY-CATALOG-REVIEW-V1");
   if (currentAudit.summary?.reviewed !== currentAudit.summary?.catalog_total || currentAudit.summary?.remaining !== 0 || currentAudit.failures?.length || currentAuditIds.size !== currentAudit.summary?.catalog_total) problems.push("current audit must completely cover the current entity catalog");
   if (decisions.length < currentAuditIds.size || decisionIds.size !== decisions.length) problems.push("ledger must contain unique decisions covering the current catalog");
@@ -106,7 +110,8 @@ function main() {
   const allPersonDecisions = [...inheritedPersonDecisions, ...personDecisions];
   if (allPersonDecisions.length !== 37 || new Set(allPersonDecisions.map((decision) => decision.entity_id)).size !== 37) problems.push("combined person review coverage must be 37/37");
   if (allPersonDecisions.filter((decision) => decision.action === "quarantine").length !== 6) problems.push("person review must quarantine 6 non-natural accounts");
-  const allReviewedPersonDecisions = [...allPersonDecisions, ...fundingFounderDecisions];
+  const allReviewedPersonDecisions = [...allPersonDecisions, ...fundingFounderDecisions,
+    ...chinaLedger.decisions.filter((decision) => decision.canonical.catalog_type === "person")];
   if (new Set(allReviewedPersonDecisions.map((decision) => decision.entity_id)).size !== allReviewedPersonDecisions.length) {
     problems.push("composite person review contains duplicate entity ids");
   }
@@ -225,9 +230,11 @@ function main() {
     if ((frontstage.viewpoints || []).length !== (viewpoints.remarks || []).length) problems.push("person review changed First-Line Viewpoints record count");
   }
   fail(problems);
+  assertChinaFundingEntities(root);
   console.log(JSON.stringify({
     ok: true,
-    reviewed: decisions.length + personDecisions.length + fundingFounderDecisions.length,
+    reviewed: decisions.length + personDecisions.length + fundingFounderDecisions.length + chinaLedger.summary.accepted_people,
+    china_funding_people: chinaLedger.summary.accepted_people,
     person_candidates_reviewed: 37,
     public_natural_people: allReviewedPersonDecisions.filter((decision) =>
       ["confirm", "correct"].includes(decision.action) && decision.canonical?.catalog_type === "person"
