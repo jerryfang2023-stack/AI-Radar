@@ -3,8 +3,31 @@ import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { mergeSourceIntakes } from "./lib/source-intake-v1.mjs";
+import { buildSourceIntake, mergeSourceIntakes } from "./lib/source-intake-v1.mjs";
+import { loadPrivateEvidenceEntries } from "./lib/private-evidence-store.mjs";
 import { buildChinaFundingHealth } from "./lib/china-funding-health.mjs";
+
+const urlKey = (url) => String(url || "").replace(/[?#].*$/u, "").replace(/\/$/u, "");
+export function selectChinaFundingIntake(intake, discovery) {
+  const urls = new Set(discovery.items.map((item) => urlKey(item.url)));
+  const sourceArtifacts = intake.source_artifacts.filter((item) => [item.source_url, item.canonical_url].some((url) => urls.has(urlKey(url))));
+  const ids = new Set(sourceArtifacts.map((item) => item.source_artifact_id));
+  const rawDocuments = intake.raw_documents.filter((item) => ids.has(item.source_artifact_id));
+  // SOURCE-INTAKE-V1.1 has no body_length; that field belongs to the built RAW-V4 bundle.
+  if (!rawDocuments.some((item) => ["accepted", "partial"].includes(item.extraction_status) && item.body_ref?.startsWith("evidence://"))) throw new Error("No accepted private original evidence for China funding candidates");
+  return mergeSourceIntakes({ ...intake, source_artifacts: sourceArtifacts, raw_documents: rawDocuments });
+}
+
+function recoverPrivateIntake(root, date, discovery) {
+  const urls = new Set(discovery.items.map((item) => urlKey(item.url)));
+  const entries = loadPrivateEvidenceEntries(root, date)
+    .filter(({ raw }) => [raw.original_url, raw.canonical_url, raw.source_url].some((url) => urls.has(urlKey(url))))
+    .map(({ raw, file }) => ({ record: raw, jsonPath: file, pooled: (raw.pool_routes || []).length > 0 }));
+  const intake = buildSourceIntake({ root, date, entries });
+  for (const document of intake.raw_documents) document.body_ref = `evidence://${document.content_hash}`;
+  for (const artifact of intake.source_artifacts) artifact.snapshot_refs = [`evidence://${artifact.content_hash}`];
+  return selectChinaFundingIntake(intake, discovery);
+}
 
 export function chinaFundingPlan(date, sourceDir) {
   const tool = (name, ...args) => [`agent-workflow/tools/${name}.mjs`, ...args];
@@ -54,22 +77,19 @@ function main() {
       const state = { id: stage.id, status: "running", started_at: new Date().toISOString() };
       stages.push(state);
       try {
-        if (stage.id === "capture" && previous.stages?.some((item) => item.id === "capture" && item.status === "passed") && read(acceptedFile)) {
-          const accepted = read(acceptedFile);
+        if (stage.id === "capture" && previous.stages?.some((item) => item.id === "capture")) {
+          // A failed handoff can still have durable private originals. Hydrate those offline.
+          const accepted = read(acceptedFile) || recoverPrivateIntake(root, date, discovery);
           // The freshly checked-out main wins for shared IDs; the independent intake adds new IDs.
           write(intakeFile, mergeSourceIntakes(accepted, read(intakeFile) || accepted));
           state.reused = true;
           command(["agent-workflow/tools/assert-private-evidence-backup.mjs", `--date=${date}`]);
+          write(acceptedFile, selectChinaFundingIntake(accepted, discovery));
         } else {
           for (const args of stage.commands) command(args);
           if (stage.id === "capture") {
             const intake = read(intakeFile);
-            const urls = new Set(discovery.items.map((item) => String(item.url).replace(/[?#].*$/u, "").replace(/\/$/u, "")));
-            const sourceArtifacts = intake.source_artifacts.filter((item) => [item.source_url, item.canonical_url].some((url) => urls.has(String(url || "").replace(/[?#].*$/u, "").replace(/\/$/u, ""))));
-            const ids = new Set(sourceArtifacts.map((item) => item.source_artifact_id));
-            const rawDocuments = intake.raw_documents.filter((item) => ids.has(item.source_artifact_id));
-            if (!rawDocuments.some((item) => item.body_length > 0 && item.body_ref?.startsWith("evidence://"))) throw new Error("No captured original evidence for China funding candidates");
-            write(acceptedFile, mergeSourceIntakes({ ...intake, source_artifacts: sourceArtifacts, raw_documents: rawDocuments }));
+            write(acceptedFile, selectChinaFundingIntake(intake, discovery));
           }
         }
         state.status = "passed";
