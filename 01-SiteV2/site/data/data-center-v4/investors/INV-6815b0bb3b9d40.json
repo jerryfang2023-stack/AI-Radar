@@ -55,9 +55,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
@@ -66,9 +66,10 @@
     "first_disclosed_at": "2026-06-03",
     "latest_disclosed_at": "2026-06-03",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "seed",
       "series_d"
     ],
     "portfolio_companies": [
@@ -76,6 +77,11 @@
         "entity_id": "EN-049b3253f4a8e2eb",
         "canonical_entity_id": "",
         "name": "Factorial"
+      },
+      {
+        "entity_id": "EN-7692c3ad3540bb80",
+        "canonical_entity_id": "",
+        "name": "One"
       }
     ],
     "activities": [
@@ -118,6 +124,46 @@
             "quote_hash": "114b77c16789092678fc784bbcd2ba7b7656bfc87d84213e020d5696b43e0fc6"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a831f3d137bb291f",
+        "funding_insight_id": "FI-04482d56a1b94fa4",
+        "event_ids": [
+          "EV-8bb64551124d8870"
+        ],
+        "company_entity_id": "EN-7692c3ad3540bb80",
+        "company_canonical_entity_id": "",
+        "company_name": "One",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$4M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 万美元"
+        },
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dbb9f8ac9b23dbe6",
+            "source_url": "https://www.withone.ai/blog/one-raises-4m-trust-layer-ai-agents",
+            "source_title": "One 获 400 万美元融资，为 AI 智能体构建信任层",
+            "source_content_hash": "0c7fbe9f92a35757",
+            "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents, and that agents can't operate inside a business until they can be trusted to act on its behalf.",
+            "quote_hash": "31ea731bcb2e6f70153cdea2801c971d2fdbdad89aed21d014e2172d85cf5c08"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -128,6 +174,14 @@
         "source_content_hash": "11af7531d19b66f0",
         "quote": "joined by other investors including Atomico and Four Rivers",
         "quote_hash": "114b77c16789092678fc784bbcd2ba7b7656bfc87d84213e020d5696b43e0fc6"
+      },
+      {
+        "source_id": "FISRC-dbb9f8ac9b23dbe6",
+        "source_url": "https://www.withone.ai/blog/one-raises-4m-trust-layer-ai-agents",
+        "source_title": "One 获 400 万美元融资，为 AI 智能体构建信任层",
+        "source_content_hash": "0c7fbe9f92a35757",
+        "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents, and that agents can't operate inside a business until they can be trusted to act on its behalf.",
+        "quote_hash": "31ea731bcb2e6f70153cdea2801c971d2fdbdad89aed21d014e2172d85cf5c08"
       }
     ]
   }

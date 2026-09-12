@@ -55,9 +55,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
@@ -68,7 +68,7 @@
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
@@ -79,6 +79,11 @@
     "portfolio_companies": [
       {
         "entity_id": "EN-9007bd372bab6334",
+        "canonical_entity_id": "",
+        "name": "Bespoke Labs"
+      },
+      {
+        "entity_id": "EN-717399fcba3c79be",
         "canonical_entity_id": "",
         "name": "Bespoke Labs"
       },
@@ -221,6 +226,54 @@
             "source_content_hash": "0eae2122fce5a05c",
             "quote": "with participation from Mayfield",
             "quote_hash": "fdd7cfc9bc6208b5d8b12d7f5c32e7d0386d421fd0f115ea88d827baba3b52c0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5d18ade9aedd3eb7",
+        "funding_insight_id": "FI-9941c40b27037814",
+        "event_ids": [
+          "EV-974a6b7d0e0efef2"
+        ],
+        "company_entity_id": "EN-717399fcba3c79be",
+        "company_canonical_entity_id": "",
+        "company_name": "Bespoke Labs",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Seed and Series A",
+        "amount_original": "$40M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-07-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-338676825311d210",
+            "source_url": "https://techfundingnews.com/backed-by-anthropic-openai-and-meta-insiders-bespoke-labs-raises-40m-can-better-environments-beat-bigger-models/",
+            "source_title": "获Anthropic、OpenAI及Meta内部人士支持，Bespoke Labs融资4000万美元：更好的环境能否击败更大的模型？——TFN",
+            "source_content_hash": "ed3c957ddd9f727f",
+            "quote": "the Series A led by Wing VC and participation from Mayfield, The House Fund, 8VC, and AI leaders from Anthropic, OpenAI and Meta",
+            "quote_hash": "fa998c695f64536993dfc49ef65d210d5a091de4752dd09890af749162a15d18"
+          },
+          {
+            "source_id": "FISRC-99f2260fd42cb982",
+            "source_url": "https://valueaddvc.com/pulse/bespoke-labs-40m-series-a-agent-environments-2026",
+            "source_title": "Bespoke Labs Raises $40M to Train AI Agents | Value Add Pulse",
+            "source_content_hash": "76e614b859bcb472",
+            "quote": "raised $40 million in a Series A led by Wing VC, with participation from Mayfield, The House Fund and angel investors from Anthropic, OpenAI and Meta",
+            "quote_hash": "6d371dce80b2555577a0098e369b2adaf5c09c1da8dd84413be35c16151551f1"
           }
         ]
       },
@@ -369,6 +422,22 @@
         "source_content_hash": "0eae2122fce5a05c",
         "quote": "with participation from Mayfield",
         "quote_hash": "fdd7cfc9bc6208b5d8b12d7f5c32e7d0386d421fd0f115ea88d827baba3b52c0"
+      },
+      {
+        "source_id": "FISRC-338676825311d210",
+        "source_url": "https://techfundingnews.com/backed-by-anthropic-openai-and-meta-insiders-bespoke-labs-raises-40m-can-better-environments-beat-bigger-models/",
+        "source_title": "获Anthropic、OpenAI及Meta内部人士支持，Bespoke Labs融资4000万美元：更好的环境能否击败更大的模型？——TFN",
+        "source_content_hash": "ed3c957ddd9f727f",
+        "quote": "the Series A led by Wing VC and participation from Mayfield, The House Fund, 8VC, and AI leaders from Anthropic, OpenAI and Meta",
+        "quote_hash": "fa998c695f64536993dfc49ef65d210d5a091de4752dd09890af749162a15d18"
+      },
+      {
+        "source_id": "FISRC-99f2260fd42cb982",
+        "source_url": "https://valueaddvc.com/pulse/bespoke-labs-40m-series-a-agent-environments-2026",
+        "source_title": "Bespoke Labs Raises $40M to Train AI Agents | Value Add Pulse",
+        "source_content_hash": "76e614b859bcb472",
+        "quote": "raised $40 million in a Series A led by Wing VC, with participation from Mayfield, The House Fund and angel investors from Anthropic, OpenAI and Meta",
+        "quote_hash": "6d371dce80b2555577a0098e369b2adaf5c09c1da8dd84413be35c16151551f1"
       },
       {
         "source_id": "FISRC-f36f0a9a7099248a",

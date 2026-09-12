@@ -56,7 +56,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 4,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
@@ -66,6 +66,7 @@
     "first_disclosed_at": "2026-04",
     "latest_disclosed_at": "2026-07-16",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "other_current_round": 2,
       "participant": 2
     },
@@ -173,6 +174,46 @@
         ]
       },
       {
+        "activity_id": "IA-15da05416c7ca747",
+        "funding_insight_id": "FI-9941c40b27037814",
+        "event_ids": [
+          "EV-974a6b7d0e0efef2"
+        ],
+        "company_entity_id": "EN-717399fcba3c79be",
+        "company_canonical_entity_id": "",
+        "company_name": "Bespoke Labs",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Seed and Series A",
+        "amount_original": "$40M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-07-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-08e53cbb97128943",
+            "source_url": "https://www.linkedin.com/posts/tech-funding-news_backed-by-anthropic-openai-and-meta-insiders-activity-7480208173685972992-Y2Z_",
+            "source_title": "Bespoke Labs Raises $40M in Seed and Series A Funding | Tech Funding News posted on the topic | LinkedIn",
+            "source_content_hash": "cc7849cdc12b37f9",
+            "quote": "The earlier seed was led by 8VC , with Jeff Dean , Dheeraj Pandey , and Spiros Xanthos , among other backers.",
+            "quote_hash": "feefa45b1151755ba3ac4160a611152f20cc95ef6814cfbf948516a37a38c12d"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-6d3d24bf61dd474b",
         "funding_insight_id": "FI-479f9d5c1123dba2",
         "event_ids": [
@@ -269,6 +310,14 @@
         "source_content_hash": "0eae2122fce5a05c",
         "quote": "with participation from Jeff Dean",
         "quote_hash": "fcf780d450fd4f65c92e4ba52b315dd96dad37c7d517de7d70d2c237db65376c"
+      },
+      {
+        "source_id": "FISRC-08e53cbb97128943",
+        "source_url": "https://www.linkedin.com/posts/tech-funding-news_backed-by-anthropic-openai-and-meta-insiders-activity-7480208173685972992-Y2Z_",
+        "source_title": "Bespoke Labs Raises $40M in Seed and Series A Funding | Tech Funding News posted on the topic | LinkedIn",
+        "source_content_hash": "cc7849cdc12b37f9",
+        "quote": "The earlier seed was led by 8VC , with Jeff Dean , Dheeraj Pandey , and Spiros Xanthos , among other backers.",
+        "quote_hash": "feefa45b1151755ba3ac4160a611152f20cc95ef6814cfbf948516a37a38c12d"
       },
       {
         "source_id": "FISRC-e94365d0212a78f3",

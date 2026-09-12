@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-12T09:40:27.058Z",
+    "generated_at": "2026-09-12T10:34:58.267Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 442,
-    "input_hash": "d08dcab25d42a63a",
+    "decision_count": 444,
+    "input_hash": "91c58b3bf93c5eb9",
     "override_count": 18,
-    "needs_review_count": 48,
-    "low_confidence_count": 62
+    "needs_review_count": 49,
+    "low_confidence_count": 63
   },
   "decisions": [
     {
@@ -8823,6 +8823,42 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "公司提供AI驱动的计算加速基础设施，核心产品KernelCAT用于国产芯片自动化适配和算力性能释放，属于为AI构建者提供硬件/计算基础设施，因此归入infrastructure_compute > hardware_computing > computing_infrastructure。"
+    },
+    {
+      "event_id": "EV-974a6b7d0e0efef2",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "Bespoke Labs 构建强化学习训练环境，用于训练和评估 AI 智能体，属于为 AI 构建者提供开发/部署基础设施，而非面向单一行业或跨行业业务功能。"
+    },
+    {
+      "event_id": "EV-8bb64551124d8870",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "One 为 AI 智能体构建信任层，证据仅提及信任基础设施，未明确是安全、治理还是可观测性，暂归入模型/智能体安全，需进一步确认。"
     }
   ]
 }

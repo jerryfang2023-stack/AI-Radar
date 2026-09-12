@@ -2,8 +2,8 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 1334,
-    "product_candidates": 688,
+    "candidate_count": 1336,
+    "product_candidates": 690,
     "person_candidates": 646,
     "china_market_candidates": 484,
     "china_market_product_candidates": 308,
@@ -30280,6 +30280,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-28bd89c94037bec3",
+      "candidate_kind": "product",
+      "research_name": "One 信任层",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-7692c3ad3540bb80"
+      ],
+      "funding_insight_ids": [
+        "FI-3017b4c1317b193b"
+      ],
+      "source_event_ids": [
+        "EV-8bb64551124d8870"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dbb9f8ac9b23dbe6",
+          "quote": "One has raised $4 million in new seed funding to build a trust layer for AI agents, the system enterprises need to bring the agentic movement into production.",
+          "source_content_hash": "0c7fbe9f92a35757",
+          "quote_hash": "bab262ab3bc4a43a6a76de9434fdee84b8edb7a9f933d55df946a925953b60d3"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-ded78ad7d941ecb7",
       "candidate_kind": "product",
       "research_name": "Ontora",
@@ -38244,6 +38272,40 @@
           "quote": "designs and builds environments that look and behave like real companies: large codebases, microservices, realistic logs, tickets, email, Slack, and more",
           "source_content_hash": "c06a19f9bdff08b6",
           "quote_hash": "0c17b4dc3e75580045e07ce308259ebfe6ea9bac1489c4e8fe1c60a39f8f5b7e"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-b9335ae0d9451362",
+      "candidate_kind": "product",
+      "research_name": "强化学习训练环境",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-717399fcba3c79be"
+      ],
+      "funding_insight_ids": [
+        "FI-e410b4d3949a8d55"
+      ],
+      "source_event_ids": [
+        "EV-974a6b7d0e0efef2"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-99f2260fd42cb982",
+          "quote": "The company builds reinforcement-learning environments that mimic real companies -- large codebases, microservices, realistic logs, tickets, email and Slack -- so AI agents can be trained and evaluated on long-horizon, economically meaningful workflows rather than narrow benchmark tasks",
+          "source_content_hash": "76e614b859bcb472",
+          "quote_hash": "deca702bfe2a8c8b56e5f6a69c6c00d86aec81cf69a22b8b4a2626ae8a9f75b1"
+        },
+        {
+          "source_id": "FISRC-0dca58178238c706",
+          "quote": "Bespoke Labs has developed a platform that creates realistic enterprise environments where AI agents can learn to handle long-horizon tasks.",
+          "source_content_hash": "6e86ccfd18b35b7d",
+          "quote_hash": "ac5ceb5478c3cdc44ab52ca4342cf8907133e3de876332341d3100bbe0457425"
         }
       ],
       "market_regions": [

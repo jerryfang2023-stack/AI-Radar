@@ -2,22 +2,1083 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-07-08",
-    "generated_at": "2026-07-27T05:21:03.542Z",
-    "trigger": "verified_daily_funding_events",
+    "generated_at": "2026-09-12T10:34:29.323Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 7,
-      "auto_published": 5,
-      "blocked": 2,
-      "pending": 0
+      "funding_events": 9,
+      "auto_published": 7,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 2
     },
-    "normalization_contract": "company_and_normalized_round",
     "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-e410b4d3949a8d55",
+      "triggered_by_event_id": "EV-974a6b7d0e0efef2",
+      "as_of_date": "2026-07-08",
+      "company": {
+        "entity_id": "EN-717399fcba3c79be",
+        "name": "Bespoke Labs",
+        "full_name": "Bespoke Labs",
+        "website": "bespokelabs.ai",
+        "summary": "Bespoke Labs是一家位于Mountain View的AI训练基础设施公司，构建模拟真实公司的强化学习环境，用于训练和评估长周期AI智能体。",
+        "headquarters": "Mountain View",
+        "founders": [
+          {
+            "name": "Mahesh Sathiamoorthy",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-99f2260fd42cb982",
+                "quote": "founded in 2024 by Mahesh Sathiamoorthy and Alex Dimakis",
+                "source_content_hash": "76e614b859bcb472",
+                "quote_hash": "166d96f7178e678b993f383958b80804fbda813bf412c4be0e51c2d5a4fa3bb8"
+              },
+              {
+                "source_id": "FISRC-0dca58178238c706",
+                "quote": "Mahesh Sathiamoorthy Co-founder & CEO",
+                "source_content_hash": "6e86ccfd18b35b7d",
+                "quote_hash": "928c437611361b25e6a838514c28be9f59fe73a0d329f00ac215542b04e9077c"
+              }
+            ],
+            "entity_id": "EN-207c2f5f9bbc1956"
+          },
+          {
+            "name": "Alex Dimakis",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-99f2260fd42cb982",
+                "quote": "founded in 2024 by Mahesh Sathiamoorthy and Alex Dimakis",
+                "source_content_hash": "76e614b859bcb472",
+                "quote_hash": "166d96f7178e678b993f383958b80804fbda813bf412c4be0e51c2d5a4fa3bb8"
+              },
+              {
+                "source_id": "FISRC-0dca58178238c706",
+                "quote": "Alex Dimakis Co-founder",
+                "source_content_hash": "6e86ccfd18b35b7d",
+                "quote_hash": "a24c759528e929753d791d84a7923cb1eec2dddeb5dd6babf69ca83e3f3b46a4"
+              }
+            ],
+            "entity_id": "EN-edca7370668996a2"
+          }
+        ],
+        "team_size": {
+          "value": "40-48人",
+          "observed_at": "2026-07-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0dca58178238c706",
+              "quote": "The company employs around 40-48 people",
+              "source_content_hash": "6e86ccfd18b35b7d",
+              "quote_hash": "c4963fed762617c1e736e3cda0e37858f5cdace51f81f8377a87256b62067656"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-338676825311d210",
+            "quote": "Bespoke Labs has raised $40 million across its seed and Series A rounds",
+            "source_content_hash": "ed3c957ddd9f727f",
+            "quote_hash": "2fdb76ae4ec1b3d4586fe30fab7d913e9e81379c5186c072f2d187cdc5673002"
+          },
+          {
+            "source_id": "FISRC-99f2260fd42cb982",
+            "quote": "Bespoke Labs, based in Mountain View and founded in 2024 by Mahesh Sathiamoorthy and Alex Dimakis",
+            "source_content_hash": "76e614b859bcb472",
+            "quote_hash": "67a58062369c3e8bda1ecae817d21f68b7de6c89162303fcb8e7c42f0bf329f2"
+          }
+        ],
+        "application_entity_id": "EN-717399fcba3c79be",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "$40M",
+        "total_raised": "$40 million",
+        "announced_at": "2026-07-06",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Wing VC",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-338676825311d210",
+                "quote": "the Series A led by Wing VC and participation from Mayfield, The House Fund, 8VC, and AI leaders from Anthropic, OpenAI and Meta",
+                "source_content_hash": "ed3c957ddd9f727f",
+                "quote_hash": "fa998c695f64536993dfc49ef65d210d5a091de4752dd09890af749162a15d18"
+              },
+              {
+                "source_id": "FISRC-99f2260fd42cb982",
+                "quote": "raised $40 million in a Series A led by Wing VC, with participation from Mayfield, The House Fund and angel investors from Anthropic, OpenAI and Meta",
+                "source_content_hash": "76e614b859bcb472",
+                "quote_hash": "6d371dce80b2555577a0098e369b2adaf5c09c1da8dd84413be35c16151551f1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mayfield",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-338676825311d210",
+                "quote": "the Series A led by Wing VC and participation from Mayfield, The House Fund, 8VC, and AI leaders from Anthropic, OpenAI and Meta",
+                "source_content_hash": "ed3c957ddd9f727f",
+                "quote_hash": "fa998c695f64536993dfc49ef65d210d5a091de4752dd09890af749162a15d18"
+              },
+              {
+                "source_id": "FISRC-99f2260fd42cb982",
+                "quote": "raised $40 million in a Series A led by Wing VC, with participation from Mayfield, The House Fund and angel investors from Anthropic, OpenAI and Meta",
+                "source_content_hash": "76e614b859bcb472",
+                "quote_hash": "6d371dce80b2555577a0098e369b2adaf5c09c1da8dd84413be35c16151551f1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "The House Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-338676825311d210",
+                "quote": "the Series A led by Wing VC and participation from Mayfield, The House Fund, 8VC, and AI leaders from Anthropic, OpenAI and Meta",
+                "source_content_hash": "ed3c957ddd9f727f",
+                "quote_hash": "fa998c695f64536993dfc49ef65d210d5a091de4752dd09890af749162a15d18"
+              },
+              {
+                "source_id": "FISRC-99f2260fd42cb982",
+                "quote": "raised $40 million in a Series A led by Wing VC, with participation from Mayfield, The House Fund and angel investors from Anthropic, OpenAI and Meta",
+                "source_content_hash": "76e614b859bcb472",
+                "quote_hash": "6d371dce80b2555577a0098e369b2adaf5c09c1da8dd84413be35c16151551f1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tristan Handy",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08e53cbb97128943",
+                "quote": "The Series A was led by Wing Venture Capital , with participation from Mayfield , The House Fund , Tristan Handy , and individual angel investors who work at Anthropic , OpenAI , and Meta .",
+                "source_content_hash": "cc7849cdc12b37f9",
+                "quote_hash": "d62a0de5294b838ca9fdb62848789f5894c575a160e999e49a1b502b49c9a66d"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "8VC",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08e53cbb97128943",
+                "quote": "The earlier seed was led by 8VC , with Jeff Dean , Dheeraj Pandey , and Spiros Xanthos , among other backers.",
+                "source_content_hash": "cc7849cdc12b37f9",
+                "quote_hash": "feefa45b1151755ba3ac4160a611152f20cc95ef6814cfbf948516a37a38c12d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jeff Dean",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08e53cbb97128943",
+                "quote": "The earlier seed was led by 8VC , with Jeff Dean , Dheeraj Pandey , and Spiros Xanthos , among other backers.",
+                "source_content_hash": "cc7849cdc12b37f9",
+                "quote_hash": "feefa45b1151755ba3ac4160a611152f20cc95ef6814cfbf948516a37a38c12d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dheeraj Pandey",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08e53cbb97128943",
+                "quote": "The earlier seed was led by 8VC , with Jeff Dean , Dheeraj Pandey , and Spiros Xanthos , among other backers.",
+                "source_content_hash": "cc7849cdc12b37f9",
+                "quote_hash": "feefa45b1151755ba3ac4160a611152f20cc95ef6814cfbf948516a37a38c12d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Spiros Xanthos",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08e53cbb97128943",
+                "quote": "The earlier seed was led by 8VC , with Jeff Dean , Dheeraj Pandey , and Spiros Xanthos , among other backers.",
+                "source_content_hash": "cc7849cdc12b37f9",
+                "quote_hash": "feefa45b1151755ba3ac4160a611152f20cc95ef6814cfbf948516a37a38c12d"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-338676825311d210",
+            "quote": "Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models?",
+            "source_content_hash": "ed3c957ddd9f727f",
+            "quote_hash": "0ab8eba297f024dc59cd6d8b78298b05a24df03748fddda344b5cae061c1993f"
+          },
+          {
+            "source_id": "FISRC-338676825311d210",
+            "quote": "Bespoke Labs has raised $40 million across its seed and Series A rounds, with the Series A led by Wing VC and participation from Mayfield, The House Fund, 8VC, and AI leaders from Anthropic, OpenAI and Meta.",
+            "source_content_hash": "ed3c957ddd9f727f",
+            "quote_hash": "2ada8d391d90375c3ac2ed5fcc90383edc30a0e76964e529a2c642419ff7306d"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "Seed and Series A",
+        "amount_original": "$40M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "total_raised_original": "$40 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-974a6b7d0e0efef2",
+            "round_original": "Seed and Series A",
+            "amount": "$40M",
+            "announced_at": "2026-07-06",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-338676825311d210",
+                "quote": "Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models?",
+                "source_content_hash": "ed3c957ddd9f727f",
+                "quote_hash": "0ab8eba297f024dc59cd6d8b78298b05a24df03748fddda344b5cae061c1993f"
+              },
+              {
+                "source_id": "FISRC-338676825311d210",
+                "quote": "Bespoke Labs has raised $40 million across its seed and Series A rounds, with the Series A led by Wing VC and participation from Mayfield, The House Fund, 8VC, and AI leaders from Anthropic, OpenAI and Meta.",
+                "source_content_hash": "ed3c957ddd9f727f",
+                "quote_hash": "2ada8d391d90375c3ac2ed5fcc90383edc30a0e76964e529a2c642419ff7306d"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "强化学习训练环境",
+          "description": "构建模拟真实公司的强化学习环境，包括大型代码库、微服务架构、真实支持工单、日志、邮件线程和Slack对话，用于训练和评估长周期AI智能体。",
+          "target_customers": "前沿AI实验室和企业",
+          "features": [
+            "大型代码库模拟",
+            "微服务架构模拟",
+            "真实支持工单、日志、邮件和Slack对话模拟",
+            "长周期、经济上有意义的工作流训练与评估"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-99f2260fd42cb982",
+              "quote": "The company builds reinforcement-learning environments that mimic real companies -- large codebases, microservices, realistic logs, tickets, email and Slack -- so AI agents can be trained and evaluated on long-horizon, economically meaningful workflows rather than narrow benchmark tasks",
+              "source_content_hash": "76e614b859bcb472",
+              "quote_hash": "deca702bfe2a8c8b56e5f6a69c6c00d86aec81cf69a22b8b4a2626ae8a9f75b1"
+            },
+            {
+              "source_id": "FISRC-0dca58178238c706",
+              "quote": "Bespoke Labs has developed a platform that creates realistic enterprise environments where AI agents can learn to handle long-horizon tasks.",
+              "source_content_hash": "6e86ccfd18b35b7d",
+              "quote_hash": "ac5ceb5478c3cdc44ab52ca4342cf8907133e3de876332341d3100bbe0457425"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Scale AI",
+          "product": "标注数据供应",
+          "scenario": "为AI模型提供标注数据而非交互式训练环境",
+          "target_customer": "AI开发企业",
+          "funding_summary": "Meta对其14.3亿美元投资，估值接近290亿美元",
+          "core_difference": "Scale AI供应标注数据，Bespoke Labs提供交互式训练环境，产品形态不同。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Scale AI, whose $14.3 billion investment from Meta valued it near $29 billion, supplies labelled data rather than interactive training environments.",
+              "source_content_hash": "ed3c957ddd9f727f",
+              "quote_hash": "6856e468634eebdccfc0b3baac593d9d94a3bae3c5c782a993cf0afd216e7f7f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Poolside",
+          "product": "编码专用基础模型",
+          "scenario": "构建面向编码的基础模型",
+          "target_customer": "开发者",
+          "funding_summary": "融资5亿美元，估值30亿美元",
+          "core_difference": "Poolside构建编码专用基础模型，Bespoke Labs构建训练环境，一个聚焦模型权重，一个聚焦训练基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Poolside raised $500 million at a $3 billion valuation to build coding-focused foundation models.",
+              "source_content_hash": "ed3c957ddd9f727f",
+              "quote_hash": "ef7ff4b34073a77d87495ea6544b9baca250ac53e512f870149d0c24feef58b9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Reflection AI",
+          "product": "自主软件工程智能体",
+          "scenario": "开发自主软件工程智能体",
+          "target_customer": "软件工程团队",
+          "funding_summary": "种子轮融资1.3亿美元",
+          "core_difference": "Reflection AI开发自主软件工程智能体，Bespoke Labs提供训练和评估这些智能体的环境基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Reflection AI raised $130 million in seed funding for autonomous software engineering agents.",
+              "source_content_hash": "ed3c957ddd9f727f",
+              "quote_hash": "67db8523f795d41d6c851de06a5146040056cf96ea1b877d6305072ca517ed56"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "OpenThoughts数据集下载量",
+          "value": "超过500,000次",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-99f2260fd42cb982",
+              "quote": "built OpenThoughts, an open reasoning dataset downloaded more than 500,000 times and used by Thinking Machines Lab, Meta and Amazon",
+              "source_content_hash": "76e614b859bcb472",
+              "quote_hash": "be81b57d5700798ebe4128be5f70bd5ff8b4f7e384d8accc928b2e6b48e0bc03"
+            }
+          ]
+        },
+        {
+          "label": "公司成立时间",
+          "value": "2024年",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-99f2260fd42cb982",
+              "quote": "founded in 2024 by Mahesh Sathiamoorthy and Alex Dimakis",
+              "source_content_hash": "76e614b859bcb472",
+              "quote_hash": "166d96f7178e678b993f383958b80804fbda813bf412c4be0e51c2d5a4fa3bb8"
+            }
+          ]
+        },
+        {
+          "label": "员工规模",
+          "value": "约40-48人",
+          "observed_at": "2026-07-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0dca58178238c706",
+              "quote": "The company employs around 40-48 people",
+              "source_content_hash": "6e86ccfd18b35b7d",
+              "quote_hash": "c4963fed762617c1e736e3cda0e37858f5cdace51f81f8377a87256b62067656"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Trace Cohen",
+          "quote": "Getting angel checks from Anthropic, OpenAI and Meta insiders simultaneously is the real signal here -- three labs that compete on almost everything else all seem to agree the environments layer, not the model layer, is where the next real bottleneck sits.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-99f2260fd42cb982",
+              "quote": "Getting angel checks from Anthropic, OpenAI and Meta insiders simultaneously is the real signal here -- three labs that compete on almost everything else all seem to agree the environments layer, not the model layer, is where the next real bottleneck sits.",
+              "source_content_hash": "76e614b859bcb472",
+              "quote_hash": "1258d701ef3fd74e9135dd60661d252b713879e3f71714e8a5a99947a638f85d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI训练基础设施层——训练环境、评估框架和奖励信号设计——而非模型权重本身。来源显示，Anthropic、OpenAI和Meta内部人士同时以天使投资人身份参与，这一跨实验室信号被解读为环境层是下一处瓶颈的共识。Bespoke Labs的已验证信号包括：作为Terminal-Bench核心贡献者、OpenThoughts数据集下载超50万次并被Thinking Machines Lab、Meta和Amazon使用。证据边界：来源未披露具体估值、付费客户名单或收入数据，训练环境品类的商业化经济性尚未被验证。",
+        "validated_signals": [
+          "Terminal-Bench核心贡献者，被广泛引用的智能体编码能力基准之一",
+          "OpenThoughts开放推理数据集下载超50万次，被Thinking Machines Lab、Meta和Amazon使用",
+          "Anthropic、OpenAI和Meta内部人士同时以天使投资人身份参与本轮"
+        ],
+        "risks": [
+          "训练环境品类仍处于早期，规模化经济性未经证实；前沿实验室和企业可能自建内部工具而非外购"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "software_development",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI训练基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI训练基础设施层——训练环境、评估框架和奖励信号设计——而非模型权重本身。来源显示，Anthropic、OpenAI和Meta内部人士同时以天使投资人身份参与，这一跨实验室信号被解读为环境层是下一处瓶颈的共识。Bespoke Labs的已验证信号包括：作为Terminal-Bench核心贡献者、OpenThoughts数据集下载超50万次并被Thinking Machines Lab、Meta和Amazon使用。证据边界：来源未披露具体估值、付费客户名单或收入数据，训练环境品类的商业化经济性尚未被验证。",
+          "evidence_signals": [
+            "Terminal-Bench核心贡献者，被广泛引用的智能体编码能力基准之一",
+            "OpenThoughts开放推理数据集下载超50万次，被Thinking Machines Lab、Meta和Amazon使用",
+            "Anthropic、OpenAI和Meta内部人士同时以天使投资人身份参与本轮"
+          ],
+          "risks": [
+            "训练环境品类仍处于早期，规模化经济性未经证实；前沿实验室和企业可能自建内部工具而非外购"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "强化学习训练环境",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mahesh Sathiamoorthy",
+          "canonical_entity_id": "EN-207c2f5f9bbc1956",
+          "canonical_name": "Mahesh Sathiamoorthy"
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Alex Dimakis",
+          "canonical_entity_id": "EN-edca7370668996a2",
+          "canonical_name": "Alex Dimakis"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Wing VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mayfield",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "The House Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tristan Handy",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "8VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Jeff Dean",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Dheeraj Pandey",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Spiros Xanthos",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Scale AI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Poolside",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Reflection AI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-338676825311d210",
+          "source_url": "https://techfundingnews.com/backed-by-anthropic-openai-and-meta-insiders-bespoke-labs-raises-40m-can-better-environments-beat-bigger-models/",
+          "title": "获Anthropic、OpenAI及Meta内部人士支持，Bespoke Labs融资4000万美元：更好的环境能否击败更大的模型？——TFN",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-08T04:39:25.862Z",
+          "content_hash": "ed3c957ddd9f727f",
+          "source_artifact_id": "SA-d9d84b4d8a816a6e",
+          "raw_id": "RAW-2cbaa8332b976efc"
+        },
+        {
+          "source_id": "FISRC-99f2260fd42cb982",
+          "source_url": "https://valueaddvc.com/pulse/bespoke-labs-40m-series-a-agent-environments-2026",
+          "title": "Bespoke Labs Raises $40M to Train AI Agents | Value Add Pulse",
+          "publisher": "valueaddvc.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-12T10:33:59.664Z",
+          "content_hash": "76e614b859bcb472",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0dca58178238c706",
+          "source_url": "https://www.mapco.ai/company/bespoke-labs",
+          "title": "Bespoke Labs raised $40M — Agent Development funding & jobs | MapCo",
+          "publisher": "mapco.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-12T10:33:59.884Z",
+          "content_hash": "6e86ccfd18b35b7d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-08e53cbb97128943",
+          "source_url": "https://www.linkedin.com/posts/tech-funding-news_backed-by-anthropic-openai-and-meta-insiders-activity-7480208173685972992-Y2Z_",
+          "title": "Bespoke Labs Raises $40M in Seed and Series A Funding | Tech Funding News posted on the topic | LinkedIn",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-12T10:33:59.991Z",
+          "content_hash": "cc7849cdc12b37f9",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-12T10:34:29.226Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-974a6b7d0e0efef2",
+          "confidence": 0.8,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-12T10:34:29.226Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "强化学习训练环境"
+          ]
+        },
+        "founders": {
+          "linked": 2,
+          "total": 2,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-974a6b7d0e0efef2"
+      ],
+      "aggregation": {
+        "key": "EN-717399fcba3c79be|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-3017b4c1317b193b",
+      "triggered_by_event_id": "EV-8bb64551124d8870",
+      "as_of_date": "2026-07-08",
+      "company": {
+        "entity_id": "EN-7692c3ad3540bb80",
+        "name": "One",
+        "full_name": "One",
+        "website": "https://www.withone.ai",
+        "summary": "One 正在为 AI 智能体构建信任层，这是企业将智能体运动引入生产环境所需的系统。",
+        "headquarters": "",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-dbb9f8ac9b23dbe6",
+            "quote": "One has raised $4 million in new seed funding to build a trust layer for AI agents, the system enterprises need to bring the agentic movement into production.",
+            "source_content_hash": "0c7fbe9f92a35757",
+            "quote_hash": "bab262ab3bc4a43a6a76de9434fdee84b8edb7a9f933d55df946a925953b60d3"
+          }
+        ],
+        "application_entity_id": "EN-7692c3ad3540bb80",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$4M",
+        "total_raised": "$7 million",
+        "announced_at": "",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Four Rivers",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dbb9f8ac9b23dbe6",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents, and that agents can't operate inside a business until they can be trusted to act on its behalf.",
+                "source_content_hash": "0c7fbe9f92a35757",
+                "quote_hash": "31ea731bcb2e6f70153cdea2801c971d2fdbdad89aed21d014e2172d85cf5c08"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ripple Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dbb9f8ac9b23dbe6",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents, and that agents can't operate inside a business until they can be trusted to act on its behalf.",
+                "source_content_hash": "0c7fbe9f92a35757",
+                "quote_hash": "31ea731bcb2e6f70153cdea2801c971d2fdbdad89aed21d014e2172d85cf5c08"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Golden Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dbb9f8ac9b23dbe6",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents, and that agents can't operate inside a business until they can be trusted to act on its behalf.",
+                "source_content_hash": "0c7fbe9f92a35757",
+                "quote_hash": "31ea731bcb2e6f70153cdea2801c971d2fdbdad89aed21d014e2172d85cf5c08"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Village Global",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dbb9f8ac9b23dbe6",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents, and that agents can't operate inside a business until they can be trusted to act on its behalf.",
+                "source_content_hash": "0c7fbe9f92a35757",
+                "quote_hash": "31ea731bcb2e6f70153cdea2801c971d2fdbdad89aed21d014e2172d85cf5c08"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hyatt family",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dbb9f8ac9b23dbe6",
+                "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents, and that agents can't operate inside a business until they can be trusted to act on its behalf.",
+                "source_content_hash": "0c7fbe9f92a35757",
+                "quote_hash": "31ea731bcb2e6f70153cdea2801c971d2fdbdad89aed21d014e2172d85cf5c08"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-dbb9f8ac9b23dbe6",
+            "quote": "One raises $4M to build the trust layer for AI agents",
+            "source_content_hash": "0c7fbe9f92a35757",
+            "quote_hash": "61d1a572238a5d9bbbcc1455b91a5d373031872580f5aad241854ad27ba9b750"
+          },
+          {
+            "source_id": "FISRC-dbb9f8ac9b23dbe6",
+            "quote": "One has raised $4 million in new seed funding to build a trust layer for AI agents, the system enterprises need to bring the agentic movement into production. The round brings our total seed funding to $7 million to date.",
+            "source_content_hash": "0c7fbe9f92a35757",
+            "quote_hash": "c63e4f31107bd7fa7c27cc00ce870a1e14482fcbbe002ef8809fa82d6dfbf217"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$4M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 万美元"
+        },
+        "total_raised_original": "$7 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 7000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "700 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-8bb64551124d8870",
+            "round_original": "Seed",
+            "amount": "$4M",
+            "announced_at": "",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dbb9f8ac9b23dbe6",
+                "quote": "One raises $4M to build the trust layer for AI agents",
+                "source_content_hash": "0c7fbe9f92a35757",
+                "quote_hash": "61d1a572238a5d9bbbcc1455b91a5d373031872580f5aad241854ad27ba9b750"
+              },
+              {
+                "source_id": "FISRC-dbb9f8ac9b23dbe6",
+                "quote": "One has raised $4 million in new seed funding to build a trust layer for AI agents, the system enterprises need to bring the agentic movement into production. The round brings our total seed funding to $7 million to date.",
+                "source_content_hash": "0c7fbe9f92a35757",
+                "quote_hash": "c63e4f31107bd7fa7c27cc00ce870a1e14482fcbbe002ef8809fa82d6dfbf217"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "One 信任层",
+          "description": "为 AI 智能体构建的信任层，使智能体在被信任代表企业行动之前能够安全地在企业内部运行。",
+          "target_customers": "企业",
+          "features": [
+            "为 AI 智能体提供信任层",
+            "支持企业将智能体运动引入生产环境"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbb9f8ac9b23dbe6",
+              "quote": "One has raised $4 million in new seed funding to build a trust layer for AI agents, the system enterprises need to bring the agentic movement into production.",
+              "source_content_hash": "0c7fbe9f92a35757",
+              "quote_hash": "bab262ab3bc4a43a6a76de9434fdee84b8edb7a9f933d55df946a925953b60d3"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$4 million",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbb9f8ac9b23dbe6",
+              "quote": "One has raised $4 million in new seed funding to build a trust layer for AI agents",
+              "source_content_hash": "0c7fbe9f92a35757",
+              "quote_hash": "9920941334acc146a0e7cf1a5607fdba327a9335d14f810b8079c5b6c22b89b4"
+            }
+          ]
+        },
+        {
+          "label": "累计种子轮融资",
+          "value": "$7 million",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbb9f8ac9b23dbe6",
+              "quote": "The round brings our total seed funding to $7 million to date.",
+              "source_content_hash": "0c7fbe9f92a35757",
+              "quote_hash": "16d8864507b9eb25e7a4ee27dbd1b0fe4a4339fbd4b12a8ac57445b41d54108d"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "One 团队",
+          "quote": "agents can't operate inside a business until they can be trusted to act on its behalf",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbb9f8ac9b23dbe6",
+              "quote": "agents can't operate inside a business until they can be trusted to act on its behalf.",
+              "source_content_hash": "0c7fbe9f92a35757",
+              "quote_hash": "8c202d8e8cf068f095135de7e9775468efb70e608982caa6aaacdb60951360e9"
+            }
+          ]
+        },
+        {
+          "speaker": "technode.global",
+          "quote": "Philippine-based lending fintech company OneLot raises $4M Pre-Seed funding - TNGlobal ## Philippine-based lending fintech company OneLot raises $4M Pre-Seed funding October 14, 2024• FinTech, News, Philippines• By TechNode Global Staff OneLot, a Philippine-based lending fintech company, said Monday that it has raised $4 million in pre-seed funding in an oversubscribed round led by 468 Capital.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da698c939feb5150",
+              "quote": "Philippine-based lending fintech company OneLot raises $4M Pre-Seed funding - TNGlobal ## Philippine-based lending fintech company OneLot raises $4M Pre-Seed funding October 14, 2024• FinTech, News, Philippines• By TechNode Global Staff OneLot, a Philippine-based lending fintech company, said Monday that it has raised $4 million in pre-seed funding in an oversubscribed round led by 468 Capital.",
+              "source_content_hash": "a8f1f823851c3cdc",
+              "quote_hash": "f816b8c8903608b295dbe347f602c49a0ccacea4ffe8eadafda61354f57fe322"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是企业将 AI 智能体引入生产环境时对信任基础设施的刚性需求。来源仅验证了融资事件本身和投资方名单，未披露估值、收入、客户数量或产品落地信号，因此无法判断该信任层是否已被企业实际采用。证据边界限于公司官方公告，缺乏独立第三方验证。",
+        "validated_signals": [
+          "公司已获得 400 万美元新一轮种子融资，累计种子轮融资达 700 万美元",
+          "投资方包括 Four Rivers、Ripple Ventures、Golden Ventures、Village Global 和 Hyatt family"
+        ],
+        "risks": [
+          "来源未披露任何客户、收入或产品采用数据，无法验证企业是否真正需要该信任层",
+          "AI 智能体信任层赛道竞争激烈，来源未提供与竞品的差异化证据"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "model_agent_security",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI 智能体信任基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是企业将 AI 智能体引入生产环境时对信任基础设施的刚性需求。来源仅验证了融资事件本身和投资方名单，未披露估值、收入、客户数量或产品落地信号，因此无法判断该信任层是否已被企业实际采用。证据边界限于公司官方公告，缺乏独立第三方验证。",
+          "evidence_signals": [
+            "公司已获得 400 万美元新一轮种子融资，累计种子轮融资达 700 万美元",
+            "投资方包括 Four Rivers、Ripple Ventures、Golden Ventures、Village Global 和 Hyatt family"
+          ],
+          "risks": [
+            "来源未披露任何客户、收入或产品采用数据，无法验证企业是否真正需要该信任层",
+            "AI 智能体信任层赛道竞争激烈，来源未提供与竞品的差异化证据"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "One 信任层",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Four Rivers",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ripple Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Golden Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Village Global",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hyatt family",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-8bb64551124d8870",
+          "date": "2026-07-08",
+          "title": "One 获 400 万美元融资，为 AI 智能体构建信任层",
+          "amount": "$4M",
+          "source_refs": [
+            "SA-a02c71dfb7f772b7"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-dbb9f8ac9b23dbe6",
+          "source_url": "https://www.withone.ai/blog/one-raises-4m-trust-layer-ai-agents",
+          "title": "One 获 400 万美元融资，为 AI 智能体构建信任层",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-08T04:39:25.608Z",
+          "content_hash": "0c7fbe9f92a35757",
+          "source_artifact_id": "SA-a02c71dfb7f772b7",
+          "raw_id": "RAW-c3db82d785b49429"
+        },
+        {
+          "source_id": "FISRC-da698c939feb5150",
+          "source_url": "https://technode.global/2024/10/14/philippine-based-lending-fintech-company-onelot-raises-4m-pre-seed-funding/",
+          "title": "Philippine-based lending fintech company OneLot raises $4M Pre-Seed funding - TNGlobal",
+          "publisher": "technode.global",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-09-12T10:33:59.908Z",
+          "content_hash": "a8f1f823851c3cdc",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-12T10:34:18.943Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-8bb64551124d8870",
+          "confidence": 0.7,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-12T10:34:18.943Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "One 信任层"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-8bb64551124d8870"
+      ],
+      "aggregation": {
+        "key": "EN-7692c3ad3540bb80|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-3e83e4d417d38136",
@@ -815,7 +1876,7 @@
       },
       "financing": {
         "round": "C轮",
-        "amount": "$800 million",
+        "amount": "$800M",
         "total_raised": "$1.2075 billion",
         "announced_at": "2026-07-01",
         "investors": [
@@ -934,7 +1995,7 @@
         ],
         "investor_disclosure_status": "disclosed",
         "risk_markers": [],
-        "amount_original": "$800 million",
+        "amount_original": "$800M",
         "amount_normalized": {
           "currency": "USD",
           "value": 800000000,
@@ -2000,7 +3061,7 @@
       "as_of_date": "2026-07-08",
       "company": {
         "entity_id": "EN-7a814849bc288dc0",
-        "name": "OXMIQ Labs Inc.",
+        "name": "OXMIQ",
         "full_name": "OXMIQ Labs Inc.",
         "website": "oxmiq.ai",
         "summary": "OXMIQ是一家统一GPU与AI架构公司，开发可授权的计算IP和自适应AI基础设施软件，使半导体公司、新云服务商和AI系统构建者能够开发和部署覆盖全AI应用范围的自定义AI计算。",
@@ -2008,7 +3069,7 @@
         "founders": [
           {
             "name": "Raja Koduri",
-            "role": "Founder & CEO",
+            "role": "创始人兼 CEO",
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
@@ -2039,12 +3100,12 @@
             "quote_hash": "eed4e20fa4e2dff0be5af3035e5cf8d21e2cb1e16d30eb0a5b65e9697cd67da4"
           }
         ],
-        "application_entity_id": "EN-7a814849bc288dc0",
+        "application_entity_id": "FICO-oxmiq",
         "canonical_entity_consistent": false
       },
       "financing": {
         "round": "A轮",
-        "amount": "$35 million",
+        "amount": "$60 million",
         "total_raised": "$60 million",
         "announced_at": "2026-07-01",
         "investors": [
@@ -2168,7 +3229,7 @@
           }
         ],
         "round_code": "series_a",
-        "round_original": "Series A",
+        "round_original": "A轮",
         "other_round_investors": [
           {
             "name": "Tenstorrent",
@@ -2193,8 +3254,8 @@
         "disclosures": [
           {
             "event_id": "EV-48075ca70a5458ec",
-            "round_original": "Series A",
-            "amount": "$35 million",
+            "round_original": "A轮",
+            "amount": "$60 million",
             "announced_at": "2026-07-01",
             "evidence_refs": [
               {
@@ -2214,15 +3275,15 @@
         ],
         "investor_disclosure_status": "disclosed",
         "risk_markers": [],
-        "amount_original": "$35 million",
+        "amount_original": "$60 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 35000000,
+          "value": 60000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "3500 万美元"
+          "display_zh": "6000 万美元"
         },
         "total_raised_original": "$60 million",
         "total_raised_normalized": {
@@ -3483,6 +4544,15 @@
   ],
   "queue": [
     {
+      "event_id": "EV-232ab5bcbaf6552d",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-12T10:34:29.320Z"
+    },
+    {
       "event_id": "EV-48075ca70a5458ec",
       "company_name": "OXMIQ",
       "status": "auto_published",
@@ -3556,11 +4626,11 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T14:49:24.374Z"
+      "updated_at": "2026-09-12T10:34:29.320Z"
     },
     {
       "event_id": "EV-7b1c734882fa1ea6",
-      "company_name": "Ornn",
+      "company_name": "Ornn AI Inc.",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -3632,15 +4702,13 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T14:49:24.374Z"
+      "updated_at": "2026-09-12T10:34:29.320Z"
     },
     {
       "event_id": "EV-8bb64551124d8870",
       "company_name": "One",
-      "status": "blocked",
-      "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
-      ],
+      "status": "auto_published",
+      "problems": [],
       "queries": [
         "\"One raises $4M to build the trust layer for AI agents | One\" funding company investors product",
         "\"One\" \"$4M\" funding investors round",
@@ -3654,7 +4722,7 @@
           "provider": "tavily",
           "query": "\"One raises $4M to build the trust layer for AI agents | One\" funding company investors product",
           "status": "failed",
-          "error": "tavily_432"
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
@@ -3666,7 +4734,7 @@
           "provider": "tavily",
           "query": "\"One\" \"$4M\" funding investors round",
           "status": "failed",
-          "error": "tavily_432"
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
@@ -3678,7 +4746,7 @@
           "provider": "tavily",
           "query": "\"One\" product customers case study",
           "status": "failed",
-          "error": "tavily_432"
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
@@ -3690,7 +4758,7 @@
           "provider": "tavily",
           "query": "\"One\" \"One raises $4M to build the trust layer for AI agents | One\" competitors product use case",
           "status": "failed",
-          "error": "tavily_432"
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
@@ -3702,7 +4770,7 @@
           "provider": "tavily",
           "query": "\"One\" \"$4M\" investor quote why invested",
           "status": "failed",
-          "error": "tavily_432"
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
@@ -3714,7 +4782,7 @@
           "provider": "tavily",
           "query": "\"One\" \"$4M\" \"why we invested\" OR \"our investment\"",
           "status": "failed",
-          "error": "tavily_432"
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
@@ -3723,7 +4791,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-27T05:21:03.529Z"
+      "updated_at": "2026-09-12T10:34:29.320Z"
     },
     {
       "event_id": "EV-53acea531ac371d6",
@@ -3799,11 +4867,11 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T14:49:24.374Z"
+      "updated_at": "2026-09-12T10:34:29.320Z"
     },
     {
       "event_id": "EV-13ec78dfdbca678b",
-      "company_name": "Neocloud Together AI",
+      "company_name": "Together AI",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -3875,22 +4943,109 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T14:49:24.374Z"
+      "updated_at": "2026-09-12T10:34:29.320Z"
+    },
+    {
+      "event_id": "EV-d9cc588fb41a7e67",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-12T10:34:29.320Z"
     },
     {
       "event_id": "EV-974a6b7d0e0efef2",
-      "company_name": "",
-      "status": "blocked",
-      "problems": [
-        "subject_company_unresolved"
+      "company_name": "Meta insiders",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN\" funding company investors product",
+        "\"Meta insiders\" \"$40M\" funding investors round",
+        "\"Meta insiders\" product customers case study",
+        "\"Meta insiders\" \"Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN\" competitors product use case",
+        "\"Meta insiders\" \"$40M\" investor quote why invested",
+        "\"Meta insiders\" \"$40M\" \"why we invested\" OR \"our investment\""
       ],
-      "queries": [],
-      "attempts": [],
-      "updated_at": "2026-07-27T05:21:03.529Z"
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Meta insiders\" \"$40M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Meta insiders\" \"$40M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Meta insiders\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Meta insiders\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Meta insiders\" \"Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Meta insiders\" \"Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Meta insiders\" \"$40M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Meta insiders\" \"$40M\" investor quote why invested",
+          "status": "failed",
+          "error": "exa_429"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Meta insiders\" \"$40M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Meta insiders\" \"$40M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-12T10:34:29.320Z"
     },
     {
       "event_id": "EV-0f520c9e5b1ea1d2",
-      "company_name": "Norm",
+      "company_name": "Norm Ai",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -3962,7 +5117,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T14:49:24.374Z"
+      "updated_at": "2026-09-12T10:34:29.320Z"
     }
   ]
 }

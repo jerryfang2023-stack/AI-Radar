@@ -55,9 +55,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
@@ -66,7 +66,7 @@
     "first_disclosed_at": "2026-07-06",
     "latest_disclosed_at": "2026-07-06",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "multi_round"
@@ -74,6 +74,11 @@
     "portfolio_companies": [
       {
         "entity_id": "EN-9007bd372bab6334",
+        "canonical_entity_id": "",
+        "name": "Bespoke Labs"
+      },
+      {
+        "entity_id": "EN-717399fcba3c79be",
         "canonical_entity_id": "",
         "name": "Bespoke Labs"
       }
@@ -118,6 +123,46 @@
             "quote_hash": "a3e41a0b7030c15e8627cf5e5c30e51db2ae587adf99ac3b9f6c70eff8e12ce5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8af0792c52381dad",
+        "funding_insight_id": "FI-9941c40b27037814",
+        "event_ids": [
+          "EV-974a6b7d0e0efef2"
+        ],
+        "company_entity_id": "EN-717399fcba3c79be",
+        "company_canonical_entity_id": "",
+        "company_name": "Bespoke Labs",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Seed and Series A",
+        "amount_original": "$40M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-07-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-08e53cbb97128943",
+            "source_url": "https://www.linkedin.com/posts/tech-funding-news_backed-by-anthropic-openai-and-meta-insiders-activity-7480208173685972992-Y2Z_",
+            "source_title": "Bespoke Labs Raises $40M in Seed and Series A Funding | Tech Funding News posted on the topic | LinkedIn",
+            "source_content_hash": "cc7849cdc12b37f9",
+            "quote": "The Series A was led by Wing Venture Capital , with participation from Mayfield , The House Fund , Tristan Handy , and individual angel investors who work at Anthropic , OpenAI , and Meta .",
+            "quote_hash": "d62a0de5294b838ca9fdb62848789f5894c575a160e999e49a1b502b49c9a66d"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -128,6 +173,14 @@
         "source_content_hash": "0eae2122fce5a05c",
         "quote": "dbt Labs CEO Tristan Handy",
         "quote_hash": "a3e41a0b7030c15e8627cf5e5c30e51db2ae587adf99ac3b9f6c70eff8e12ce5"
+      },
+      {
+        "source_id": "FISRC-08e53cbb97128943",
+        "source_url": "https://www.linkedin.com/posts/tech-funding-news_backed-by-anthropic-openai-and-meta-insiders-activity-7480208173685972992-Y2Z_",
+        "source_title": "Bespoke Labs Raises $40M in Seed and Series A Funding | Tech Funding News posted on the topic | LinkedIn",
+        "source_content_hash": "cc7849cdc12b37f9",
+        "quote": "The Series A was led by Wing Venture Capital , with participation from Mayfield , The House Fund , Tristan Handy , and individual angel investors who work at Anthropic , OpenAI , and Meta .",
+        "quote_hash": "d62a0de5294b838ca9fdb62848789f5894c575a160e999e49a1b502b49c9a66d"
       }
     ],
     "translations": {
