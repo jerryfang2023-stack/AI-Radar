@@ -1336,10 +1336,19 @@
       communitySetUrlDate(communityState.selectedDate);
       document.title = `${selected.name} · 生财有术 | 观澜 AI`;
       const shown = posts.slice((communityState.page-1)*communityPageSize,communityState.page*communityPageSize);
-      root.innerHTML = `${back}<div class="dc-page-head" id="scys-direction-posts"><h1>${escapeHtml(selected.name)}</h1></div><section class="dc-direction-list-page" aria-label="帖子标题列表"><ul class="dc-direction-posts">${shown.map(post => {
-        const url = safeExternalUrl(post.originalUrl);
-        return `<li>${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(post.title)}</a>` : `<button type="button" data-community-open="${escapeHtml(post.itemId)}">${escapeHtml(post.title)}</button>`}</li>`;
-      }).join("")}</ul>${posts.length ? communityRenderPagination(posts.length) : '<p class="dc-empty">暂无帖子</p>'}</section>`;
+      const fees = data.prices.filter(price => posts.some(post => post.itemId === price.itemId));
+      root.innerHTML = `${back}<header class="dc-direction-hero"><div><h1>${escapeHtml(selected.name)}</h1>${selected.product ? `<p>${escapeHtml(selected.product)}</p>` : ""}</div><div class="dc-direction-volume"><strong>${posts.length}</strong><span>相关帖子</span></div></header>
+        ${selected.pain ? `<section class="dc-direction-intro" aria-label="品类介绍"><h2>核心痛点</h2><p>${escapeHtml(selected.pain)}</p></section>` : ""}
+        <div class="dc-direction-content"><section class="dc-direction-list-page" aria-label="帖子标题列表"><div class="dc-direction-section-title" id="scys-direction-posts"><h2>帖子索引</h2><span>${communityState.page} / ${Math.max(1,Math.ceil(posts.length/communityPageSize))}</span></div><ul class="dc-direction-posts">${shown.map(post => {
+          const url = safeExternalUrl(post.originalUrl);
+          return `<li>${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(post.title)}</a>` : `<button type="button" data-community-open="${escapeHtml(post.itemId)}">${escapeHtml(post.title)}</button>`}</li>`;
+        }).join("")}</ul>${posts.length ? communityRenderPagination(posts.length) : '<p class="dc-empty">暂无帖子</p>'}</section>
+        ${selected.id !== "pending" ? `<aside class="dc-direction-pricing" aria-label="收费与金额"><h2>收费与金额</h2>${fees.length ? fees.map(price => {
+          const owner = posts.find(post => post.itemId === price.itemId);
+          const url = safeExternalUrl(owner?.originalUrl);
+          const amount = price.min.toLocaleString("zh-CN") + (price.max !== price.min ? "–" + price.max.toLocaleString("zh-CN") : "");
+          return `<article class="dc-direction-price"><span class="dc-direction-nature">${escapeHtml(price.nature)}</span><h3>${escapeHtml(price.object)}</h3><p class="dc-direction-amount"><strong>${amount}</strong><span>${price.currency === "人民币" ? "元" : "币种未注明"} / ${escapeHtml(price.unit)}</span></p><p class="dc-direction-boundary">${escapeHtml(price.limitation)}</p><details><summary>查看来源依据</summary><blockquote>${escapeHtml(price.evidence)}</blockquote></details><div class="dc-direction-source"><button type="button" class="dc-clear" data-community-open="${escapeHtml(price.itemId)}">查看帖子</button>${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">原帖 ↗</a>` : ""}</div></article>`;
+        }).join("") : '<div class="dc-direction-price-empty"><strong>暂未披露</strong><p>现有资料未提供明确收费金额。</p></div>'}</aside>` : ""}</div>`;
       communityBindInteractions();
       return;
     }

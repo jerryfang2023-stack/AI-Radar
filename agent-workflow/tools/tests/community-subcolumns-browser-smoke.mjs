@@ -139,7 +139,16 @@ try {
   await page.waitForSelector('.dc-direction-posts');
   assert.ok(new URL(page.url()).pathname.endsWith('/community-scys-direction.html'));
   assert.equal(await page.locator('h1').innerText(),'小程序与应用定制');
-  assert.equal(await page.locator('.dc-direction-ranking, .dc-direction-fees, .dc-scys-case').count(),0);
+  assert.equal(await page.locator('.dc-direction-ranking, .dc-scys-case').count(),0);
+  assert.ok((await page.locator('.dc-direction-intro').innerText()).includes('需求边界'));
+  assert.ok((await page.locator('.dc-direction-pricing').innerText()).includes('9,000'));
+  assert.ok((await page.locator('.dc-direction-pricing').innerText()).includes('竞品价格'));
+  const priceUrl=await page.locator('.dc-direction-source a').first().getAttribute('href');
+  await page.locator('.dc-direction-source button').first().click();
+  assert.equal(await page.getByRole('link',{name:'原始帖子'}).getAttribute('href'),priceUrl);
+  await page.getByLabel('关闭',{exact:true}).first().click();
+  assert.equal(await page.locator('.dc-direction-hero').evaluate(n=>getComputedStyle(n).backgroundColor),'rgb(13, 53, 92)');
+  await page.screenshot({path:path.join(out,'scys-direction-apps-design.png'),animations:'disabled'});
   assert.ok(await page.locator('.dc-direction-posts li').evaluateAll(nodes=>nodes.every(n=>n.children.length===1 && ['A','BUTTON'].includes(n.firstElementChild.tagName))));
   await page.locator('[data-community-page="2"]').first().click();
   assert.equal(await page.locator('.dc-direction-posts li').count(),Math.min(12,appsCount-12));
@@ -152,6 +161,7 @@ try {
   await page.locator('[data-direction="content-agents"]').click();
   await page.waitForSelector('.dc-direction-posts');
   assert.equal(await page.locator('h1').innerText(),'内容工作台与 Agent');
+  assert.ok((await page.locator('.dc-direction-pricing').innerText()).includes('暂未披露'));
   await page.screenshot({path:path.join(out,'scys-directions-detail.png'),animations:'disabled'});
   await page.setViewportSize({width:390,height:844});
   await page.reload({waitUntil:'networkidle'});
