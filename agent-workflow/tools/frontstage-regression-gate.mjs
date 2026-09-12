@@ -183,7 +183,7 @@ function collectUnifiedNavigationIssues() {
   const issues = [];
   const expectedSidebarLinks = [
     ["data-center.html?view=events", "事件库"],
-    ["community-scys.html", "生财"],
+    ["community-scys.html", "生财有术"],
     ["community-aipoju.html", "AI 破局"],
     ["data-center.html?view=viewpoints", "一线观点"],
     ["data-center.html?view=index", "实体库"],

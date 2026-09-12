@@ -27,9 +27,18 @@ try {
   page.on('pageerror', error => errors.push(error.message));
   await page.goto(baseUrl + 'data-center.html?view=community&source=scys', {waitUntil:'networkidle'});
   assert.ok(new URL(page.url()).pathname.endsWith('/community-scys.html'));
-  assert.equal(await page.locator('[data-community-link="scys"][aria-current="page"]').innerText(), '生财');
+  assert.equal(await page.locator('[data-community-link="scys"][aria-current="page"]').innerText(), '生财有术');
   assert.equal(await page.locator('.dc-community-sources, [name="scene"], .dc-community-rail').count(),0);
   assert.equal(await page.locator('.dc-scys-case').count(),12);
+  assert.equal(await page.locator('h1').innerText(), '生财有术');
+  await page.locator('.dc-community-nav summary').click();
+  assert.equal(await page.locator('.dc-community-nav').evaluate(n=>n.open),false);
+  await page.locator('.dc-community-nav summary').press('Enter');
+  assert.equal(await page.locator('.dc-community-nav').evaluate(n=>n.open),true);
+  await page.locator('[data-community-link="aipoju"]').click();
+  await page.waitForSelector('[data-community-view="tool_tip"]');
+  await page.locator('[data-community-link="scys"]').click();
+  await page.waitForSelector('.dc-scys-case');
   const navStyles = await page.locator('.dc-nav-group a, .dc-nav-parent').evaluateAll(nodes=>nodes.map(n=>{const s=getComputedStyle(n);return {size:s.fontSize,line:s.lineHeight,weight:s.fontWeight}}));
   assert.ok(navStyles.every(s=>s.size==='14px' && s.line==='20px' && ['500','600'].includes(s.weight)));
   assert.equal(await page.locator('.dc-scys-case h3').first().evaluate(n=>getComputedStyle(n).fontSize),'18px');
@@ -39,7 +48,7 @@ try {
   assert.equal(await page.locator('.dc-scys-archive>div.dc-community-section-head, .dc-scys-month>h3').count(),0);
   assert.equal(await page.locator('[data-community-view="weekly"], .dc-community-note').count(),0);
   assert.equal(await page.locator('[data-community-filter-form] select').count(),1);
-  assert.ok(!requests.some(url => url.includes('community-intelligence-daily/') || url.endsWith('/community-intelligence.json')));
+  assert.ok(!requests.slice(0, requests.findIndex(url=>url.includes('community-aipoju.html'))).some(url => url.includes('community-intelligence-daily/') || url.endsWith('/community-intelligence.json')));
   await page.screenshot({path:path.join(process.env.LOCALAPPDATA,'WaveSight/runtime/community-cases-desktop.png'),fullPage:true});
   await page.getByLabel('归档月份',{exact:true}).selectOption('all');
   await page.reload({waitUntil:'networkidle'});
@@ -91,6 +100,7 @@ try {
   await page.evaluate(()=>window.scrollTo(0,0));
   await page.screenshot({path:path.join(out,'community-subcolumns-mobile.png'),fullPage:true});
   await page.locator('[data-nav-toggle]').click();
+  if (!await page.locator('.dc-community-nav').evaluate(n=>n.open)) await page.locator('.dc-community-nav summary').click();
   await page.locator('[data-community-link="aipoju"]').click();
   await page.waitForSelector('[data-community-view="tool_tip"]');
   assert.ok(new URL(page.url()).pathname.endsWith('/community-aipoju.html'));

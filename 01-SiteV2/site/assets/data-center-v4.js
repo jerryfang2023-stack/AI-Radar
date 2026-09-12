@@ -538,7 +538,6 @@
     return `
       <div class="dc-page-head">
         <h1>${escapeHtml(config.title)}</h1>
-        <span class="dc-page-description">${escapeHtml(config.description)}</span>
         ${auxiliaryDate}
         <span class="dc-result-count">${count} 条</span>
       </div>
@@ -1120,7 +1119,7 @@
 
   function communitySourceLabel(item) {
     if (item.source === "aipoju") return "AI 破局";
-    if (item.source === "scys") return "生财";
+    if (item.source === "scys") return "生财有术";
     return item.sourceName || communityState.payload?.sources?.[item.source]?.name || item.source || "未知来源";
   }
 
@@ -1334,8 +1333,8 @@
     const groups = new Map();
     for (const row of shown) { const month = monthOf(row); if (!groups.has(month)) groups.set(month, []); groups.get(month).push(row); }
     const monthLabel = (month) => month === "unknown" ? "日期未记录" : `${month.slice(0, 4)} 年 ${Number(month.slice(5))} 月`;
-    root.innerHTML = `<div class="dc-page-head"><h1>生财</h1></div>
-      <nav class="dc-community-tabs" aria-label="生财分类">${Object.entries(scysViews).map(([key, config]) => `<button type="button" data-community-view="${key}"${communityState.activeView === key ? ' aria-current="page"' : ""}>${config.label}</button>`).join("")}</nav>
+    root.innerHTML = `<div class="dc-page-head"><h1>生财有术</h1></div>
+      <nav class="dc-community-tabs" aria-label="生财有术分类">${Object.entries(scysViews).map(([key, config]) => `<button type="button" data-community-view="${key}"${communityState.activeView === key ? ' aria-current="page"' : ""}>${config.label}</button>`).join("")}</nav>
       <form class="dc-scys-search" data-community-filter-form>
         <label class="dc-search"><span class="sr-only">关键词</span><input class="dc-input" name="q" value="${escapeHtml(communityState.filters.query)}" placeholder="${resources ? "搜索资料或链接" : "搜索案例"}" autocomplete="off"></label>
         <select class="dc-select" name="month" aria-label="归档月份"><option value="all">全部归档月份</option>${months.map((month) => `<option value="${escapeHtml(month)}"${month === communityState.filters.month ? " selected" : ""}>${monthLabel(month)}</option>`).join("")}</select>
@@ -1367,8 +1366,7 @@
       .sort((a, b) => a.localeCompare(b, "zh-CN"));
     root.innerHTML = `
       <div class="dc-page-head">
-        <h1>${isScys ? "生财" : "AI 破局"}</h1>
-        <span class="dc-page-description">${isScys ? "生财 · AI 创业实践与实操资料" : "AI 破局 · 社群一线材料"}</span>
+        <h1>${isScys ? "生财有术" : "AI 破局"}</h1>
         <span class="dc-data-date">${escapeHtml(contextLabel)}</span>
         <span class="dc-result-count">${rows.length} 条</span>
       </div>
@@ -1971,7 +1969,6 @@
       root.innerHTML = `
         <div class="dc-page-head">
           <h1>一线观点</h1>
-          <span class="dc-page-description">建设者与从业者公开观点</span>
           <span class="dc-data-date">数据日期 ${escapeHtml(latestDate || "未披露")}</span>
           <span class="dc-result-count">${items.length} 条</span>
         </div>
@@ -2421,7 +2418,6 @@
     root.innerHTML = `
       <div class="dc-page-head">
         <h1>分类：${escapeHtml(label || "未指定")}</h1>
-        <span class="dc-page-description">技术标签与结构化分类关联结果</span>
       </div>
       <form class="dc-toolbar" method="get" action="data-center.html">
         <input type="hidden" name="view" value="tag">
@@ -2541,7 +2537,7 @@
       if (view === "community" && !params.get("detail")) {
         await renderCommunityPage();
         loading.hidden = true;
-        document.title = "社群情报｜观澜 AI";
+        document.title = `${communitySource === "scys" ? "生财有术" : "AI 破局"} · 社群情报｜观澜 AI`;
         return;
       }
       if (view === "viewpoints" && !params.get("detail")) {
@@ -2594,7 +2590,7 @@
     if (sidebar?.dataset.open !== "true") return;
     if (event.key === "Escape") setNavOpen(false);
     if (event.key === "Tab") {
-      const controls = [navToggle, ...sidebar.querySelectorAll("a, button")].filter(Boolean);
+      const controls = [navToggle, ...sidebar.querySelectorAll("a, button, summary")].filter(control => control && control.getClientRects().length);
       const first = controls[0], last = controls.at(-1);
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
       else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
