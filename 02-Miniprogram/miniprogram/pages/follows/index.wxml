@@ -1,8 +1,13 @@
+<import src="../../templates/directory.wxml"/>
 <view class="page-shell">
   <app-header title="我的关注" show-back />
   <view class="page-content follows-content">
-    <view class="follow-summary"><text class="serif">选择你的观察主题</text><text>关注后可在个人中心集中管理，持续追踪相关赛道的融资变化。</text></view>
-    <view class="topic-card paper-card" wx:for="{{categories}}" wx:key="id">
+    <view class="directory-market"><button class="{{!onlyUpdates?'active':''}}" data-value="all" bindtap="changeUpdateFilter">全部关注</button><button class="{{onlyUpdates?'active':''}}" data-value="new" bindtap="changeUpdateFilter">有更新</button></view>
+    <scroll-view scroll-x><view class="follow-type-tabs"><button wx:for="{{followTypes}}" wx:key="id" class="{{followType===item.id?'active':''}}" data-type="{{item.id}}" bindtap="changeFollowType">{{item.name}}</button></view></scroll-view>
+    <button wx:if="{{followError}}" class="directory-more" bindtap="refreshEntities">{{followError}}</button>
+    <template is="directory-rows" data="{{directoryItems:entityItems}}"/>
+    <view wx:if="{{!entityItems.length && followType!=='sectors'}}" class="directory-empty">{{onlyUpdates?'暂无新动态':'暂无关注对象'}}</view>
+    <view class="topic-card paper-card" wx:if="{{followType==='sectors' && !onlyUpdates}}" wx:for="{{categories}}" wx:key="id">
       <view class="topic-count"><text class="mono">{{item.count}}</text><text>条情报</text></view>
       <view class="topic-copy" data-id="{{item.id}}" bindtap="open"><text>{{item.name}}</text><text>查看该主题融资</text></view>
       <button class="follow-button {{item.followed ? 'active' : ''}}" data-id="{{item.id}}" catchtap="toggle">{{item.followed ? '已关注' : '关注'}}</button>

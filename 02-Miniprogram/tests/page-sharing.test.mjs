@@ -10,7 +10,7 @@ test("the global sharing wrapper covers every registered Mini Program page", () 
   const appConfig = JSON.parse(fs.readFileSync("miniprogram/app.json", "utf8"));
   const appSource = fs.readFileSync("miniprogram/app.js", "utf8");
   assert.match(appSource, /pageSharing\.installPageSharing\(\)/u);
-  assert.equal(appConfig.pages.length, 25);
+  assert.equal(appConfig.pages.length, 26);
   for (const page of appConfig.pages) {
     assert.match(fs.readFileSync(`miniprogram/${page}.js`, "utf8"), /\bPage\s*\(/u, page);
   }

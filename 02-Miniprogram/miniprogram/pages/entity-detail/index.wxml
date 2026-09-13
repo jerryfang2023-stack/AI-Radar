@@ -2,13 +2,15 @@
   <app-header title="{{title}}" show-back="{{!sharedEntry}}" fallback-url="/pages/market/index" />
   <view wx:if="{{entity}}" class="page-content entity-detail">
     <view class="entity-hero">
-      <text class="eyebrow">{{type === 'companies' ? (entity.categoriesText || 'AI 企业') : (type === 'investors' ? '机构库' : '人物库')}}</text>
+      <text class="eyebrow">{{type === 'companies' ? (entity.categoriesText || 'AI 企业') : (type === 'investors' ? '机构库' : (type==='products'?'产品库':'人物库'))}}</text>
       <view class="hero-title"><view class="avatar serif">{{entity.initial}}</view><view><text class="name serif">{{entity.name}}</text><text class="role" wx:if="{{type === 'people'}}">{{entity.roleText}}</text></view></view>
-      <text wx:if="{{type === 'companies'}}" class="deck">{{entity.summary}}</text>
+      <text wx:if="{{type === 'companies' || type === 'products'}}" class="deck">{{entity.summary}}</text>
       <text wx:elif="{{type === 'investors'}}" class="deck">已投企业：{{entity.companiesText}}</text>
       <text wx:else class="deck">关联企业：{{entity.companiesText}}</text>
     </view>
 
+    <view class="entity-actions"><button bindtap="toggleEntityFollow" loading="{{followBusy}}" disabled="{{followBusy}}">{{following?'已关注':'关注'}}</button><button wx:if="{{type==='companies' && entity.rounds.length}}" bindtap="compareCompany">加入对比</button><button wx:if="{{entity.website}}" bindtap="copyWebsite">复制官网</button></view>
+    <button wx:if="{{contentError && !contentLocked}}" class="plain-copy" bindtap="verifyServerAccess">{{contentError}}</button>
     <view wx:if="{{contentLocked}}" class="content-access-gate">
       <text class="gate-kicker">游客试读已完成</text>
       <text class="gate-title serif">{{lockReason === 'expired' ? '开通会员查看完整档案' : '注册后查看完整档案'}}</text>
@@ -25,7 +27,7 @@
     <view class="metric-grid" wx:elif="{{type === 'investors'}}">
       <view><text>参与轮次</text><strong>{{entity.roundCount}} 笔</strong></view><view><text>领投轮次</text><strong>{{entity.leadCount}} 笔</strong></view><view><text>已投企业</text><strong>{{entity.companyCount}} 家</strong></view>
     </view>
-    <view class="metric-grid" wx:else>
+    <view class="metric-grid" wx:elif="{{type==='people'}}">
       <view><text>关联企业</text><strong>{{entity.companyCount}} 家</strong></view><view><text>融资动态</text><strong>{{entity.roundCount}} 笔</strong></view><view><text>最近动态</text><strong>{{entity.latestDate}}</strong></view>
     </view>
 
@@ -35,6 +37,8 @@
       <button wx:if="{{entity.website}}" class="link-button" bindtap="copyWebsite">复制企业官网</button>
     </view>
 
+    <view wx:if="{{type === 'products'}}" class="detail-section"><text class="section-title serif">产品用途</text><text class="plain-copy">{{entity.summary}}</text></view>
+    <view wx:if="{{type==='companies' && entity.productLinks.length}}" class="detail-section"><text class="section-title serif">旗下产品</text><view class="profile-list relation-list"><button wx:for="{{entity.productLinks}}" wx:key="key" data-key="{{item.key}}" data-type="products" bindtap="openEntity"><text>{{item.name}}</text><text>查看产品 ›</text></button></view></view>
     <view wx:if="{{type === 'companies' && entity.founders.length}}" class="detail-section">
       <text class="section-title serif">人物库</text>
       <view class="profile-list relation-list"><button wx:for="{{entity.founders}}" wx:key="name" data-key="{{item.key}}" data-type="people" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{item.role}}</text></view><text>查看人物 ›</text></button></view>
@@ -45,19 +49,22 @@
     </view>
 
     <view wx:if="{{type !== 'companies'}}" class="detail-section">
-      <text class="section-title serif">{{type === 'investors' ? '关注赛道' : '关联领域'}}</text><text class="plain-copy">{{entity.categoriesFullText}}</text>
+      <text class="section-title serif">{{type === 'investors' ? '已投赛道' : (type==='products'?'应用场景':'关联领域')}}</text><text class="plain-copy">{{entity.categoriesFullText}}</text>
     </view>
 
     <view wx:if="{{type !== 'companies'}}" class="detail-section">
-      <text class="section-title serif">关联企业</text><view class="profile-list relation-list"><button wx:for="{{entity.companyLinks}}" wx:key="name" data-key="{{item.key}}" data-name="{{item.name}}" data-type="companies" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{type === 'investors' ? '已投企业' : '任职企业'}}</text></view><text>查看企业 ›</text></button></view>
+      <text class="section-title serif">关联企业</text><view class="profile-list relation-list"><button wx:for="{{entity.companyLinks}}" wx:key="name" data-key="{{item.key}}" data-name="{{item.name}}" data-type="companies" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{type === 'investors' ? '已收录被投公司' : (type==='products'?'所属公司':'任职企业')}}</text></view><text>查看企业 ›</text></button></view>
     </view>
 
     <view class="detail-section">
       <text class="section-title serif">{{type === 'companies' ? '融资历史' : (type === 'investors' ? '最近投资活动' : '关联企业动态')}}</text>
+      <text wx:if="{{!entity.rounds.length}}" class="plain-copy">暂无已收录记录</text>
       <button wx:for="{{entity.rounds}}" wx:key="id" class="activity-row" data-id="{{item.id}}" bindtap="openFunding">
         <view><text class="activity-title">{{type === 'companies' ? item.round : item.company}}</text><text class="activity-meta">{{item.date}} · {{item.round}}</text></view><view><strong>{{item.amount}}</strong><text>查看融资 ›</text></view>
       </button>
     </view>
+    <view wx:if="{{type==='products' && relatedProducts.length}}" class="detail-section"><text class="section-title serif">相关产品</text><view class="profile-list relation-list"><button wx:for="{{relatedProducts}}" wx:key="key" data-key="{{item.key}}" data-type="products" bindtap="openEntity"><text>{{item.name}}</text><text>查看产品 ›</text></button></view></view>
+    <view wx:if="{{entity.sources.length}}" class="detail-section"><text class="section-title serif">公开来源</text><view class="profile-list relation-list"><button wx:for="{{entity.sources}}" wx:key="url" data-url="{{item.url}}" bindtap="copySource"><text>{{item.title}}</text><text>复制链接 ›</text></button></view></view>
     </block>
   </view>
   <registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration" />

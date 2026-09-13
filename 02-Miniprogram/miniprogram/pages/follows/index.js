@@ -1,12 +1,20 @@
+const {entityFollows,hasAuthToken}=require('../../utils/payment.js');
+const {TYPES}=require('../../utils/directory.js');
 const { getFollowIds, toggleFollow } = require("../../utils/member.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { sectorName } = require("../../utils/ecosystem-insights.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
 
 Page({
-  data: { categories: [], registrationOpen: false },
+  data: { categories: [], registrationOpen: false, entityItems:[], allEntityItems:[], followTypes:[{id:"all",name:"全部"},...TYPES,{id:"sectors",name:"赛道"}], followType:"all", onlyUpdates:false, followError:"" },
   onLoad() { refreshFundingData().then(() => this.refresh()); },
-  onShow() { this.refresh(); },
+  onShow() {const identity=wx.getStorageSync('guanlan_api_token_v1')||'';if(this.identity!==identity)this.setData({allEntityItems:[],entityItems:[]});this.identity=identity;this.refresh();this.refreshEntities(); },
+  onUnload(){this.disposed=true;},
+  async refreshEntities(){if(!hasAuthToken()){this.setData({allEntityItems:[],entityItems:[]});return;}try{const result=await entityFollows();if(this.disposed)return;this.setData({allEntityItems:result.items.map(item=>({...item,typeLabel:TYPES.find(t=>t.id===item.type)?.name||'',categoriesText:item.unreadCount?`${item.unreadCount} 条新动态`:''})),followError:''});this.filterEntities();}catch(error){if(!this.disposed&&error.code!=='AUTH_CHANGED')this.setData({followError:'关注列表加载失败，点击重试'});}},
+  filterEntities(){this.setData({entityItems:this.data.allEntityItems.filter(item=>(this.data.followType==='all'||item.type===this.data.followType)&&(!this.data.onlyUpdates||item.unreadCount>0))});},
+  changeFollowType(e){this.setData({followType:e.currentTarget.dataset.type});this.filterEntities();},
+  changeUpdateFilter(e){this.setData({onlyUpdates:e.currentTarget.dataset.value==='new'});this.filterEntities();},
+  openDirectoryEntity(e){const {type,key}=e.currentTarget.dataset;wx.navigateTo({url:`/pages/entity-detail/index?type=${type}&key=${encodeURIComponent(key)}`});},
   refresh() {
     const followed = new Set(getFollowIds());
     const cards = getFundingData().index.cards;

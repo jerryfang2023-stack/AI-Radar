@@ -160,6 +160,11 @@ class VerificationSender:
 
 def init_schema(conn):
     conn.executescript("""
+        CREATE TABLE IF NOT EXISTS entity_follows (
+            user_id INTEGER NOT NULL, resource_id TEXT NOT NULL, entity_type TEXT NOT NULL,
+            entity_key TEXT NOT NULL, seen_ids TEXT NOT NULL DEFAULT '[]', created_at TEXT NOT NULL,
+            PRIMARY KEY(user_id, resource_id)
+        );
         CREATE TABLE IF NOT EXISTS user_identities (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             user_id INTEGER NOT NULL,
@@ -909,6 +914,55 @@ def register_routes(app, *, db, membership, user_by_id, fulfill_order, complete_
         path = (root / kind / f"{resource_id}.json").resolve()
         return path if root in path.parents else None
 
+    def follow_content(resource_id):
+        path = resource_path("entity", resource_id)
+        if not path or not path.is_file():
+            return None
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        return payload.get("mini") if isinstance(payload, dict) else None
+
+    def private_json(payload, status=200):
+        response = make_response(jsonify(payload), status)
+        response.headers["Cache-Control"] = "private, no-store"
+        response.headers["Vary"] = "Authorization"
+        return response
+
+    @app.route("/api/v1/member/entity-follows", methods=["GET", "POST", "DELETE"])
+    def entity_follows():
+        user = current_user()
+        if not user:
+            return private_json({"error":{"code":"AUTH_REQUIRED","message":"请先完成注册"}},401)
+        if request.method == "GET":
+            with closing(db()) as conn:
+                records = conn.execute("SELECT * FROM entity_follows WHERE user_id=? ORDER BY created_at DESC",(user["id"],)).fetchall()
+            items = []
+            for record in records:
+                content = follow_content(record["resource_id"]) or {}
+                seen = set(json.loads(record["seen_ids"]))
+                unread = [row["id"] for row in content.get("rounds",[]) if row.get("id") and row["id"] not in seen]
+                items.append({"resourceId":record["resource_id"],"type":record["entity_type"],"key":record["entity_key"],"name":content.get("name", "资料暂不可用"),"initial":content.get("initial", ""),"subtitle":content.get("summary") or content.get("roleText") or content.get("companiesText") or "", "latestDate":content.get("latestDate", ""),"unreadIds":unread,"unreadCount":len(unread)})
+            return private_json({"items":items})
+        payload = request.get_json(silent=True) or {}
+        resource_id = str(payload.get("resourceId", ""))
+        if not resource_path("entity", resource_id):
+            return private_json({"error":{"code":"INVALID_ENTITY","message":"对象无效"}},400)
+        with closing(db()) as conn:
+            if request.method == "DELETE":
+                conn.execute("DELETE FROM entity_follows WHERE user_id=? AND resource_id=?",(user["id"],resource_id))
+                conn.commit()
+                return private_json({"following":False})
+            if not membership(user)["active"]:
+                return private_json({"error":{"code":"MEMBERSHIP_REQUIRED","message":"请先开通浏览权益"}},403)
+            content = follow_content(resource_id)
+            if not content or content.get("type") not in {"companies","products","investors","people"}:
+                return private_json({"error":{"code":"CONTENT_NOT_FOUND","message":"对象不存在"}},404)
+            if conn.execute("SELECT COUNT(*) FROM entity_follows WHERE user_id=?",(user["id"],)).fetchone()[0]>=500:
+                return private_json({"error":{"code":"FOLLOW_LIMIT","message":"最多关注500个对象"}},400)
+            seen = [row["id"] for row in content.get("rounds",[]) if row.get("id")]
+            conn.execute("INSERT OR IGNORE INTO entity_follows(user_id,resource_id,entity_type,entity_key,seen_ids,created_at) VALUES(?,?,?,?,?,?)",(user["id"],resource_id,content["type"],content["key"],json.dumps(seen),iso(utcnow())))
+            conn.commit()
+        return private_json({"following":True})
+
     @app.get("/api/v1/content/<kind>/<resource_id>")
     def protected_content(kind, resource_id):
         path = resource_path(kind, resource_id)
@@ -948,6 +1002,15 @@ def register_routes(app, *, db, membership, user_by_id, fulfill_order, complete_
                 (user["id"] if user else None, visitor_hash, kind, access_resource_id, decision, reason, ip_hash, request.headers.get("User-Agent", "")[:256], iso(now)),
             )
             conn.commit()
+        if decision == "ALLOW" and user and kind == "funding":
+            with closing(db()) as conn:
+                for record in conn.execute("SELECT resource_id,seen_ids FROM entity_follows WHERE user_id=?",(user["id"],)).fetchall():
+                    entity = follow_content(record["resource_id"]) or {}
+                    if any(row.get("id") == resource_id for row in entity.get("rounds", [])):
+                        seen = set(json.loads(record["seen_ids"]))
+                        seen.add(resource_id)
+                        conn.execute("UPDATE entity_follows SET seen_ids=? WHERE user_id=? AND resource_id=?",(json.dumps(sorted(seen)),user["id"],record["resource_id"]))
+                conn.commit()
         if reason == "RATE_LIMITED":
             response = make_response(jsonify(error={"code": reason, "message": "访问较频繁，请稍后再试"}), 429)
         elif decision != "ALLOW":

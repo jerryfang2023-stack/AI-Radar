@@ -1,3 +1,4 @@
+@import "../../utils/directory.wxss";
 .follows-content { display: grid; gap: 18rpx; padding-top: 24rpx; }
 .follow-summary { padding: 14rpx 4rpx 22rpx; }
 .follow-summary text { display: block; }
@@ -11,3 +12,5 @@
 .topic-copy text:last-child { color: #6f7f8f; font-size: 21rpx; }
 .follow-button { min-height: 58rpx; margin: 0; padding: 0 18rpx; border: 1rpx solid rgba(200,167,102,.72); border-radius: 999rpx; background: #fff; color: #9b6d20; font-size: 21rpx; line-height: 58rpx; }
 .follow-button.active { background: #071827; border-color: #071827; color: #fff; }
+
+.follow-type-tabs{display:flex;gap:30rpx;white-space:nowrap;margin-top:20rpx}.follow-type-tabs button{margin:0;padding:22rpx 0;background:transparent;font-size:23rpx;color:#718192;border-radius:0}.follow-type-tabs button.active{color:#0d355c;border-bottom:4rpx solid #c8a766}

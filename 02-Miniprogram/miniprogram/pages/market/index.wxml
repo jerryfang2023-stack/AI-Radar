@@ -1,9 +1,10 @@
+<import src="../../templates/directory.wxml"/>
 <view class="page-shell">
   <app-header title="生态" />
   <view class="page-content ecosystem-content">
     <view class="ecosystem-mode-tabs">
       <button class="{{mode === 'map' ? 'active' : ''}}" data-mode="map" bindtap="setMode">生态图谱</button>
-      <button class="{{mode === 'observation' ? 'active' : ''}}" data-mode="observation" bindtap="setMode">行业观察</button>
+      <button class="{{mode === 'directory' ? 'active' : ''}}" data-mode="directory" bindtap="setMode">生态名录</button>
     </view>
 
     <block wx:if="{{mode === 'map'}}">
@@ -21,26 +22,12 @@
     </block>
 
     <block wx:else>
-      <button wx:if="{{featured}}" class="featured-report" data-id="{{featured.id}}" bindtap="openReport">
-        <view class="featured-meta"><text>{{featured.typeLabel || activeLabel}}</text><text class="mono">{{featured.readingTime || featured.issue}}</text></view>
-        <text class="featured-title">{{featured.title}}</text>
-        <text class="featured-summary">{{featured.summary}}</text>
-        <view class="featured-action"><text class="mono">{{featured.date}}</text><text>阅读全文 ›</text></view>
-      </button>
-      <view class="report-tabs" role="tablist">
-        <button class="report-tab {{activeType === 'all' ? 'active' : ''}}" data-type="all" bindtap="switchType">全部</button>
-        <button class="report-tab {{activeType === 'community' ? 'active' : ''}}" data-type="community" bindtap="switchType">社群精华</button>
-        <button class="report-tab {{activeType === 'weekly' ? 'active' : ''}}" data-type="weekly" bindtap="switchType">周报</button>
-        <button class="report-tab {{activeType === 'monthly' ? 'active' : ''}}" data-type="monthly" bindtap="switchType">月报</button>
-      </view>
-      <view class="archive-heading"><text>往期{{activeLabel}}</text></view>
-      <view wx:if="{{reports.length}}" class="report-list">
-        <button wx:for="{{reports}}" wx:key="id" class="report-card" data-id="{{item.id}}" bindtap="openReport">
-          <view class="report-date"><text class="mono">{{item.dateShort}}</text><text>{{item.issue}}</text></view>
-          <view class="report-main"><text class="report-title">{{item.title}}</text><text class="report-summary">{{item.summary}}</text><view class="report-footer"><text>{{item.typeLabel || activeLabel}}</text><text>查看全文 ›</text></view></view>
-        </button>
-      </view>
-      <view wx:else class="empty-state"><view class="title">暂无往期{{activeLabel}}</view></view>
+      <view class="directory-hero"><button wx:for="{{directoryTypes}}" wx:key="id" data-type="{{item.id}}" bindtap="openDirectory"><image src="/assets/directory/{{item.icon}}.svg"/><text>{{item.name}}</text></button></view>
+      <view class="directory-search-row"><view class="directory-market"><button class="{{directoryMarket === 'china' ? 'active' : ''}}" data-market="china" bindtap="changeDirectoryMarket">中国</button><button class="{{directoryMarket === 'global' ? 'active' : ''}}" data-market="global" bindtap="changeDirectoryMarket">全球</button></view><button class="directory-search" bindtap="openDirectory"><text>⌕</text><text>搜索公司、产品、机构、人物</text></button></view>
+      <template is="directory-tabs" data="{{directoryTabs,directoryType}}"/>
+      <template is="directory-rows" data="{{directoryItems,updates:true}}"/>
+      <view wx:if="{{!directoryItems.length}}" class="directory-empty">暂无相关动态</view>
+      <button wx:if="{{directoryMore}}" class="directory-more" bindtap="moreDirectory">加载更多</button>
     </block>
   </view>
 </view>

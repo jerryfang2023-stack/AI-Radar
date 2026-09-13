@@ -21,6 +21,7 @@ function loadPage(file, dependencies, wx = {}) {
 test("every ecosystem entry revalidates, keeps filters, coalesces requests and stops pull refresh", async () => {
   let calls = 0, stopped = 0, release;
   const page = loadPage("market", {
+    "../../utils/directory-page.js": {data:{},applyDirectory(){},async refreshDirectory(){}},
     "../../utils/live-data.js": {
       getFundingData: () => ({ index: funding }), getReportData: () => ({ index: reports }),
       refreshFundingData: () => { calls++; return new Promise((resolve) => { release = resolve; }); },

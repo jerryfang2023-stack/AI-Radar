@@ -1113,3 +1113,33 @@ def test_phone_relogin_preserves_saved_nickname(client):
     assert client.put('/api/v1/member/profile', json={'nickname': '自定义昵称'}, headers=auth(result['token'])).status_code == 200
     again = client.post('/api/v1/auth/wechat', json={'code': 'returning-member', 'phoneCode': 'phone-code'})
     assert again.get_json()['profile']['nickname'] == '自定义昵称'
+
+
+def test_entity_follows_are_scoped_and_only_full_funding_reads_clear_updates(client):
+    from pathlib import Path
+    root = Path(client.application.config["CONTENT_ROOT"])
+    (root / "entity").mkdir(exist_ok=True)
+    entity = {"mini":{"key":"acme|tool","type":"products","name":"Tool","rounds":[{"id":"round-a"}]}}
+    file = root / "entity" / "r-follow-test.json"
+    file.write_text(json.dumps(entity),encoding="utf-8")
+    assert client.get("/api/v1/member/entity-follows").status_code == 401
+    token = login(client)
+    assert client.post("/api/v1/member/entity-follows",headers=auth(token),json={"resourceId":"r-follow-test"}).status_code == 200
+    def rows():return client.get("/api/v1/member/entity-follows",headers=auth(token)).get_json()["items"]
+    assert rows()[0]["unreadCount"] == 0
+    entity["mini"]["rounds"].append({"id":"round-b"})
+    file.write_text(json.dumps(entity),encoding="utf-8")
+    assert rows()[0]["unreadCount"] == 1
+    # Duplicate follow must not wipe unread updates.
+    client.post("/api/v1/member/entity-follows",headers=auth(token),json={"resourceId":"r-follow-test"})
+    assert rows()[0]["unreadCount"] == 1
+    other = login(client,"user-b")
+    assert client.get("/api/v1/member/entity-follows",headers=auth(other)).get_json()["items"] == []
+    client.get("/api/v1/content/entity/r-follow-test",headers=auth(token))
+    assert rows()[0]["unreadCount"] == 1
+    client.get("/api/v1/content/funding/round-b",headers=auth(other))
+    assert rows()[0]["unreadCount"] == 1
+    assert client.get("/api/v1/content/funding/round-b",headers=auth(token)).status_code == 200
+    assert rows()[0]["unreadCount"] == 0
+    assert client.delete("/api/v1/member/entity-follows",headers=auth(token),json={"resourceId":"r-follow-test"}).status_code == 200
+    assert rows() == []

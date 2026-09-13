@@ -65,10 +65,10 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.match(terminalSource, /<strong class="funding-metrics-value serif">\{\{scopeCardCount\}\}<\/strong><text>融资<\/text>/u);
   assert.match(terminalSource, /class="funding-date"><strong class="funding-metrics-value serif">\{\{meta\.latestDate\}\}<\/strong><text>更新<\/text>/u);
   assert.match(marketSource, /<app-header title="生态"/u);
-  assert.match(marketSource, />生态图谱<[\s\S]*>行业观察</u);
+  assert.match(marketSource, />生态图谱<[\s\S]*>生态名录</u);
   assert.doesNotMatch(marketSource, /数据更新至|本期信号/u);
   assert.match(marketSource, /class="section-head signal-head"[\s\S]*资本正在流向哪里[\s\S]*class="market-segment"/u);
-  assert.match(watchlistSource, /正在进入生态 · 行业观察/u);
+  assert.match(watchlistSource, /正在进入生态 · 生态名录/u);
   assert.match(watchlistLogic, /ECOSYSTEM_MODE_KEY[\s\S]*wx\.switchTab/u);
   assert.doesNotMatch(fundingRowSource, /中国区/u);
 
@@ -273,8 +273,8 @@ test("enables native sharing on every public column page", () => {
     assert.match(logic, new RegExp(title, "u"));
     assert.match(logic, new RegExp(path.replaceAll("/", "\\/"), "u"));
   }
-  assert.match(marketLogic, /观澜 AI 行业观察/u);
-  assert.match(marketLogic, /mode=observation/u);
+  assert.match(marketLogic, /观澜 AI 生态名录/u);
+  assert.match(marketLogic, /mode=directory/u);
 });
 
 test("adds an idempotent five-point daily check-in task", () => {
@@ -294,7 +294,7 @@ test("opens a dedicated invitation value page before sharing", () => {
   assert.match(profileLogic, /openInvite/u);
   assert.match(profileSource, /bindtap="openInvite"/u);
   assert.doesNotMatch(profileSource, /open-type="share"/u);
-  for (const copy of ["300 分", "融资情报", "生态图谱", "行业观察", "每位新用户仅计入一次有效邀请", "系统确认结果为准", "微信快捷注册", "我的邀请", "注册成功", "获得积分"]) {
+  for (const copy of ["300 分", "融资情报", "生态图谱", "生态名录", "每位新用户仅计入一次有效邀请", "系统确认结果为准", "微信快捷注册", "我的邀请", "注册成功", "获得积分"]) {
     assert.match(inviteSource, new RegExp(copy, "u"));
   }
   assert.doesNotMatch(inviteSource, /class="invite-lead"/u);

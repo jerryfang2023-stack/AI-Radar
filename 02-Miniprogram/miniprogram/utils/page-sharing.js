@@ -1,6 +1,7 @@
 const DEFAULT_TITLE = "观澜 AI｜AI 融资与产业生态";
 
 const PAGE_SHARES = {
+  "pages/directory/index": {title:"观澜 AI 生态名录",keys:["type","market"]},
   "pages/terminal/index": { title: "观澜 AI 融资情报" },
   "pages/market/index": { title: "观澜 AI 生态图谱", keys: ["mode"] },
   "pages/community/index": { title: "观澜 AI 社群" },

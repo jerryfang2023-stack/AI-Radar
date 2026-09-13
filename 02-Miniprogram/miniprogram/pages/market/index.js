@@ -1,3 +1,4 @@
+const directoryPage = require('../../utils/directory-page.js');
 const { getFundingData, refreshFundingData, getReportData, refreshReportData } = require("../../utils/live-data.js");
 const { buildOverview } = require("../../utils/ecosystem-insights.js");
 const { mergeCommunityEssays } = require("../../utils/community-essays.js");
@@ -8,7 +9,9 @@ const MARKET_SCOPE_KEY = "guanlan_ecosystem_market_scope_v1";
 const ECOSYSTEM_MODE_KEY = "guanlan_ecosystem_mode_v1";
 
 Page({
+  ...directoryPage,
   data: {
+    ...directoryPage.data,
     mode: "map", marketRegion: "global", latestDate: "", signals: [], ranking: [], months: [], heatmap: [],
     activeType: "all", activeLabel: "最新观察", featured: null, reports: [],
     systemCheckDate: "", latestFundingDate: "", refreshFailed: false,
@@ -17,26 +20,27 @@ Page({
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     const savedRegion = wx.getStorageSync(MARKET_SCOPE_KEY);
     const savedMode = wx.getStorageSync(ECOSYSTEM_MODE_KEY);
-    const mode = options.mode === "observation" || savedMode === "observation" ? "observation" : "map";
+    const mode = options.mode === "directory" || savedMode === "directory" ? "directory" : "map";
     if (["global", "china"].includes(savedRegion)) this.setData({ marketRegion: savedRegion });
     this.setData({ mode });
     this.applyFunding(getFundingData());
-    this.refreshReports("all");
+    this.applyDirectory();
+
   },
   onShow() {
     syncTabBar(this, 1);
     const savedMode = wx.getStorageSync(ECOSYSTEM_MODE_KEY);
-    if (["map", "observation"].includes(savedMode) && savedMode !== this.data.mode) this.setData({ mode: savedMode });
+    if (["map", "directory"].includes(savedMode) && savedMode !== this.data.mode) this.setData({ mode: savedMode });
     this.applyFunding(getFundingData());
-    this.refreshReports(this.data.activeType);
+    this.applyDirectory();
     return this.refreshData();
   },
   refreshData() {
     if (this.refreshRequest) return this.refreshRequest;
     // Keep the current content visible while checking both remote versions on every entry.
-    this.refreshRequest = Promise.all([refreshFundingData(), refreshReportData()]).then(([funding, reports]) => {
+    this.refreshRequest = Promise.all([refreshFundingData(), refreshReportData(), this.refreshDirectory()]).then(([funding, reports]) => {
       this.applyFunding(funding);
-      this.refreshReports(this.data.activeType);
+      this.applyDirectory();
       this.setData({ refreshFailed: Boolean(funding.refreshFailed || reports.refreshFailed) });
     }).catch(() => this.setData({ refreshFailed: true })).finally(() => { this.refreshRequest = null; });
     return this.refreshRequest;
@@ -48,7 +52,7 @@ Page({
   },
   setMode(event) {
     const mode = event.currentTarget.dataset.mode;
-    if (!["map", "observation"].includes(mode) || mode === this.data.mode) return;
+    if (!["map", "directory"].includes(mode) || mode === this.data.mode) return;
     wx.setStorageSync(ECOSYSTEM_MODE_KEY, mode);
     this.setData({ mode });
     track("filter_changed", { scope: "ecosystem", filter: "mode", value: mode });
@@ -83,10 +87,12 @@ Page({
     const id = event.currentTarget.dataset.id;
     if (id) wx.navigateTo({ url: `/pages/report-detail/index?id=${id}` });
   },
+  onUnload() { this.directoryDisposed = true; },
+  onReachBottom() { if(this.data.mode === "directory") this.moreDirectory(); },
   onShareAppMessage() {
-    return this.data.mode === "observation"
-      ? { title: "观澜 AI 行业观察", path: "/pages/market/index?mode=observation" }
+    return this.data.mode === "directory"
+      ? { title: "观澜 AI 生态名录", path: "/pages/market/index?mode=directory" }
       : { title: "观澜 AI 生态图谱", path: "/pages/market/index" };
   },
-  onShareTimeline() { return { title: this.data.mode === "observation" ? "观澜 AI 行业观察" : "观澜 AI 生态图谱" }; },
+  onShareTimeline() { return { title: this.data.mode === "directory" ? "观澜 AI 生态名录" : "观澜 AI 生态图谱" }; },
 });

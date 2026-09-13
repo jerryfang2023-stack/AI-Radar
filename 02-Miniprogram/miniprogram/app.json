@@ -24,7 +24,8 @@
     "pages/growth/index",
     "pages/detail/index",
     "pages/compare/index",
-    "pages/account-qr/index"
+    "pages/account-qr/index",
+    "pages/directory/index"
   ],
   "window": {
     "navigationStyle": "custom",
@@ -39,10 +40,22 @@
     "backgroundColor": "#FFFDF8",
     "borderStyle": "white",
     "list": [
-      { "pagePath": "pages/terminal/index", "text": "融资" },
-      { "pagePath": "pages/market/index", "text": "生态" },
-      { "pagePath": "pages/community/index", "text": "社群" },
-      { "pagePath": "pages/profile/index", "text": "我的" }
+      {
+        "pagePath": "pages/terminal/index",
+        "text": "融资"
+      },
+      {
+        "pagePath": "pages/market/index",
+        "text": "生态"
+      },
+      {
+        "pagePath": "pages/community/index",
+        "text": "社群"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的"
+      }
     ]
   },
   "sitemapLocation": "sitemap.json",

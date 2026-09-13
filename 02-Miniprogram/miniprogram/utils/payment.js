@@ -326,7 +326,11 @@ async function fetchProtectedContent(kind, id) {
   return result.content?.mini || result.content;
 }
 
+function entityFollows(method='GET',resourceId='') {
+ return withExistingToken(token=>apiRequest('/member/entity-follows',{token,method,data:method==='GET'?undefined:{resourceId}}));
+}
 module.exports = {
+  entityFollows,
   API_ROOT,
   apiRequest,
   login,

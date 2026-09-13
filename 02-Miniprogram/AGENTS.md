@@ -1,6 +1,6 @@
 # Guanlan Funding Mini Program
 
-Current source: 1.0.1 improves weekly/monthly reading hierarchy, summary contrast and table readability; see `docs/REVIEW-1.0.1.md`. Upload is not review submission or production publication.
+Current source: 1.1.0 replaces 行业观察 with 生态名录 beside the retained 生态图谱. Directory contains companies, products, investors and people, market/category search and server-owned entity follows. See `docs/REVIEW-1.1.0.md`. Upload is not review submission or production publication.
 
 Previous source: 1.0.0 fixes delayed cross-identity responses, old-token expiry handling, and community cache isolation. Release evidence is tracked in `docs/releases/1.0.0/README.md`. The interim 0.9.10 development upload is superseded by 1.0.0 at the user's request.
 
@@ -78,3 +78,5 @@ npm run verify
 ```
 
 The project must remain directly importable by WeChat DevTools from this directory.
+
+- The confirmed 1.1.0 design supersedes earlier observation-only layout: keep the signal map and add the four-type directory. No helper subtitles on category tiles or list titles; homepage market tabs share a row with search; native pull-down refresh replaces a refresh heading/button. Product identity is scoped to its confirmed company. Server-owned entity follows are account-scoped, begin with historical events read, and clear unread only on successful full financing content access. Legacy sector follows remain available under 我的.
