@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "generatedAt": "2026-09-13T01:29:03.163Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3208,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -47,74 +47,50 @@
     ]
   },
   "entity": {
-    "id": "EN-5427fca83c89c1c8",
-    "name": "本轮也是公司成立一年以来",
-    "entityType": "organization_candidate",
-    "typeLabel": "公司与机构",
+    "id": "EN-f426aa404fdfcce0",
+    "name": "SimpleDesign",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
     "aliases": [],
     "verificationStatus": "candidate",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-c2718ea152dde192"
+      "EV-297e614ca04dc8cb"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-09-11",
+    "firstSeen": "2026-09-12",
     "lastSeen": "2026-09-13",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [
-        "EV-c2718ea152dde192"
-      ],
+      "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-297e614ca04dc8cb"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
       {
-        "id": "EV-c2718ea152dde192",
+        "id": "EV-297e614ca04dc8cb",
         "dataDate": "2026-09-13",
-        "date": "2026-09-11",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "烨知心完成Pre A轮融资 由深创投、和利资本、TCL创投、中科创星联合领投，艾为电子（688798.SH）、国开科创、朝晖资本等机构跟投，老股东连续多轮持续超额追投。 投中网 · 1天前",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "on_device",
-            "name": "端侧",
-            "entityIds": [
-              "EN-10b106d9b0a27a4c"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "deployment_model",
-            "dimensionName": "部署形态",
-            "id": "edge_device",
-            "name": "边缘与端侧",
-            "entityIds": [
-              "EN-10b106d9b0a27a4c"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "date": "2026-09-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "苹果公布 SimpleDesign 蛋白质设计模型，可联合生成序列与三维结构",
+        "displayTags": [],
         "entityIds": [
-          "EN-10b106d9b0a27a4c",
-          "EN-5427fca83c89c1c8",
-          "EN-d30e5ffc0ba9150b"
+          "EN-3a7bd3e2360a3d29",
+          "EN-f426aa404fdfcce0"
         ]
       }
     ],

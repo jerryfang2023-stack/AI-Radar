@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "generatedAt": "2026-09-13T01:29:03.163Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3208,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -56,24 +56,15 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [
-      "EV-77d410f38eb44c18",
-      "EV-c2718ea152dde192"
-    ],
+    "eventIds": [],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-on_device",
-      "TX-deployment_model-edge_device"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-09-11",
-    "lastSeen": "2026-09-13",
+    "firstSeen": "",
+    "lastSeen": "",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [
-        "EV-77d410f38eb44c18",
-        "EV-c2718ea152dde192"
-      ],
+      "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -81,229 +72,12 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [
-      {
-        "id": "EV-77d410f38eb44c18",
-        "dataDate": "2026-09-13",
-        "date": "2026-09-11",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "烨知心完成Pre-A轮融资，专注端侧AI算力基础设施",
-        "displayTags": [],
-        "entityIds": [
-          "EN-10b106d9b0a27a4c"
-        ]
-      },
-      {
-        "id": "EV-c2718ea152dde192",
-        "dataDate": "2026-09-13",
-        "date": "2026-09-11",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "烨知心完成Pre A轮融资 由深创投、和利资本、TCL创投、中科创星联合领投，艾为电子（688798.SH）、国开科创、朝晖资本等机构跟投，老股东连续多轮持续超额追投。 投中网 · 1天前",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "on_device",
-            "name": "端侧",
-            "entityIds": [
-              "EN-10b106d9b0a27a4c"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "deployment_model",
-            "dimensionName": "部署形态",
-            "id": "edge_device",
-            "name": "边缘与端侧",
-            "entityIds": [
-              "EN-10b106d9b0a27a4c"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-10b106d9b0a27a4c",
-          "EN-5427fca83c89c1c8",
-          "EN-d30e5ffc0ba9150b"
-        ]
-      }
-    ],
+    "timeline": [],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-on_device",
-      "name": "端侧",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "on_device",
-      "eventIds": [
-        "EV-d051cfbe3fd7e80f",
-        "EV-c2718ea152dde192",
-        "EV-e084947e3f9e0667",
-        "EV-a15da1b52d939967",
-        "EV-736404028b8ad33e",
-        "EV-71c4419c71d00625",
-        "EV-181a7a6fd14cec08",
-        "EV-4ef09c71be4c84cb",
-        "EV-8077605769c4d4eb",
-        "EV-5bbc509a032b8309",
-        "EV-d5c00f302e1f808c",
-        "EV-7263caa45bbf168e",
-        "EV-3d9aa640411471ea",
-        "EV-ba091f86fba39da0",
-        "EV-049c7d6cdc237a59",
-        "EV-48d22452ef4464fc",
-        "EV-cd7ba52564d4091e",
-        "EV-e781e169725006f0",
-        "EV-3dc8d5c373ddd1f3",
-        "EV-7a0f201debe99f2b",
-        "EV-79913a2e72f0269b",
-        "EV-a5efa57f3f744425",
-        "EV-04efb4eecbb8125f",
-        "EV-712bb6241160c4c5",
-        "EV-f7b60c0c63403f8c",
-        "EV-e28e134345ea5f99",
-        "EV-a736c6c64d106475",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-c5b8faec223a4caf",
-        "EV-4026c95d4c01b96e",
-        "EV-0e2a68efc19bfbaa",
-        "EV-0597e07d7e73051a",
-        "EV-08f736f61f2b46f3",
-        "EV-02186ed7885f68fe",
-        "EV-5613946bdd578a26",
-        "EV-848bdd13f319c516",
-        "EV-dd902b603e2e3dbc",
-        "EV-7d4b4b8d4e3599d4",
-        "EV-f4876d2e1a20d87b"
-      ],
-      "entityIds": [
-        "EN-f2b9106253663314",
-        "EN-10b106d9b0a27a4c",
-        "EN-a35b80cf9d171015",
-        "EN-48bebf25e5bd5aca",
-        "EN-d37561692b664762",
-        "EN-ff970851d49aee50",
-        "EN-470be66761dfc2e9",
-        "EN-b5318593e1260f2f",
-        "EN-968e2d5b08687bf4",
-        "EN-87c730bc4f32459e",
-        "EN-9b91d0f808382601",
-        "EN-e12c9f7f64dec58c",
-        "EN-e3ce9cc5efa9354c",
-        "EN-8d4321d936320802",
-        "EN-74be4cbf48e647b2",
-        "EN-2b6e51bec93e86c1",
-        "EN-e21783b898b55a31",
-        "EN-3309b3b14807f39a",
-        "EN-bbdefa2950f49882",
-        "EN-44a9bf3b11abea5c",
-        "EN-de6b71bf77ff4299",
-        "EN-3a7bd3e2360a3d29",
-        "EN-dd920a8cd166f486",
-        "EN-c3ce0cc92b48bbd6",
-        "EN-6f7ac1823da81d2e"
-      ],
-      "fdeIds": [
-        "FDE-c846ebc19f50a93f"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-13"
-    },
-    {
-      "id": "TX-deployment_model-edge_device",
-      "name": "边缘与端侧",
-      "nodeType": "deployment_model",
-      "typeLabel": "部署形态",
-      "valueId": "edge_device",
-      "eventIds": [
-        "EV-d051cfbe3fd7e80f",
-        "EV-c2718ea152dde192",
-        "EV-e084947e3f9e0667",
-        "EV-a15da1b52d939967",
-        "EV-736404028b8ad33e",
-        "EV-71c4419c71d00625",
-        "EV-181a7a6fd14cec08",
-        "EV-4ef09c71be4c84cb",
-        "EV-8077605769c4d4eb",
-        "EV-5bbc509a032b8309",
-        "EV-d5c00f302e1f808c",
-        "EV-7263caa45bbf168e",
-        "EV-3d9aa640411471ea",
-        "EV-ba091f86fba39da0",
-        "EV-049c7d6cdc237a59",
-        "EV-48d22452ef4464fc",
-        "EV-cd7ba52564d4091e",
-        "EV-3dc8d5c373ddd1f3",
-        "EV-7a0f201debe99f2b",
-        "EV-79913a2e72f0269b",
-        "EV-a5efa57f3f744425",
-        "EV-04efb4eecbb8125f",
-        "EV-712bb6241160c4c5",
-        "EV-f7b60c0c63403f8c",
-        "EV-e28e134345ea5f99",
-        "EV-a736c6c64d106475",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-c5b8faec223a4caf",
-        "EV-0e2a68efc19bfbaa",
-        "EV-0597e07d7e73051a",
-        "EV-08f736f61f2b46f3",
-        "EV-02186ed7885f68fe",
-        "EV-5613946bdd578a26",
-        "EV-848bdd13f319c516",
-        "EV-dd902b603e2e3dbc",
-        "EV-7d4b4b8d4e3599d4",
-        "EV-f4876d2e1a20d87b"
-      ],
-      "entityIds": [
-        "EN-f2b9106253663314",
-        "EN-10b106d9b0a27a4c",
-        "EN-a35b80cf9d171015",
-        "EN-48bebf25e5bd5aca",
-        "EN-d37561692b664762",
-        "EN-ff970851d49aee50",
-        "EN-470be66761dfc2e9",
-        "EN-b5318593e1260f2f",
-        "EN-968e2d5b08687bf4",
-        "EN-87c730bc4f32459e",
-        "EN-9b91d0f808382601",
-        "EN-e12c9f7f64dec58c",
-        "EN-e3ce9cc5efa9354c",
-        "EN-74be4cbf48e647b2",
-        "EN-2b6e51bec93e86c1",
-        "EN-e21783b898b55a31",
-        "EN-3309b3b14807f39a",
-        "EN-bbdefa2950f49882",
-        "EN-44a9bf3b11abea5c",
-        "EN-de6b71bf77ff4299",
-        "EN-3a7bd3e2360a3d29",
-        "EN-dd920a8cd166f486",
-        "EN-8d4321d936320802",
-        "EN-c3ce0cc92b48bbd6",
-        "EN-6f7ac1823da81d2e"
-      ],
-      "fdeIds": [
-        "FDE-c846ebc19f50a93f"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-13"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "generatedAt": "2026-09-13T01:29:03.163Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3208,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -55,35 +55,28 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 3,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
     "china_market_activity_count": 4,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-05",
-    "latest_disclosed_at": "2026-09-10",
+    "latest_disclosed_at": "2026-08-03",
     "role_counts": {
       "co_lead": 2,
       "lead": 1,
-      "participant": 2
+      "participant": 1
     },
     "round_codes": [
       "pre_series_a",
       "seed",
       "series_a_plus",
-      "series_b",
-      "strategic"
+      "series_b"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-a01847b090a53c6e",
-        "canonical_entity_id": "",
-        "name": "北京九章智电科技有限公司"
-      },
       {
         "entity_id": "EN-aef5bb4e898f303c",
         "canonical_entity_id": "EN-aef5bb4e898f303c",
@@ -101,46 +94,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-0176062df004a3eb",
-        "funding_insight_id": "FI-5797999d683fac6b",
-        "event_ids": [
-          "EV-65d274d4277815dc"
-        ],
-        "company_entity_id": "EN-a01847b090a53c6e",
-        "company_canonical_entity_id": "",
-        "company_name": "北京九章智电科技有限公司",
-        "round": "战略融资",
-        "round_code": "strategic",
-        "round_original": "战略融资",
-        "amount_original": "数千万",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-09-10",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-75f2758fb9aa9e2d",
-            "source_url": "https://news.pedaily.cn/202609/568814.shtml",
-            "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
-            "source_content_hash": "8d613e8630b21904",
-            "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
-            "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
-          }
-        ]
-      },
       {
         "activity_id": "IA-e7be87e5889b109b",
         "funding_insight_id": "FI-72a762e01ac47812",
@@ -304,14 +257,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-75f2758fb9aa9e2d",
-        "source_url": "https://news.pedaily.cn/202609/568814.shtml",
-        "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
-        "source_content_hash": "8d613e8630b21904",
-        "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
-        "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
-      },
       {
         "source_id": "FISRC-8f70de35939e4c3c",
         "source_url": "https://36kr.com/p/3919025939246727?f=rss",

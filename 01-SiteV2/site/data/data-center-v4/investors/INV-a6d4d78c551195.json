@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "generatedAt": "2026-09-13T01:29:03.163Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3208,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -55,18 +55,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-09",
-    "latest_disclosed_at": "2026-09-09",
+    "latest_disclosed_at": "2026-09-10",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_a"
@@ -76,9 +76,54 @@
         "entity_id": "EN-187bf23c29af5e43",
         "canonical_entity_id": "",
         "name": "无问智科"
+      },
+      {
+        "entity_id": "EN-08e7b67a300e585f",
+        "canonical_entity_id": "",
+        "name": "浙江无问智行科技有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-27612215afde7fa8",
+        "funding_insight_id": "FI-c2d2a86fa237b6eb",
+        "event_ids": [
+          "EV-798081a4ec056f8c"
+        ],
+        "company_entity_id": "EN-08e7b67a300e585f",
+        "company_canonical_entity_id": "",
+        "company_name": "浙江无问智行科技有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a7547d4aa28546af",
+            "source_url": "http://www.jjckb.cn/20260910/f9448cdc30884f8199eac8d45a632823/c.html",
+            "source_title": "无问智科A轮融资数亿元 加速打造物理AI数据基座-经济参考网 _ 新华社《经济参考报》官方网站",
+            "source_content_hash": "8d6ff04067b113b2",
+            "quote": "洪山资本、中电数融、狮城资本跟投",
+            "quote_hash": "535282a38c78aad93dc96141451f13ee102ff0ecc4384ac11e39008b31a29a48"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9224a22accfae312",
         "funding_insight_id": "FI-09fda86a59f81440",
@@ -121,6 +166,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a7547d4aa28546af",
+        "source_url": "http://www.jjckb.cn/20260910/f9448cdc30884f8199eac8d45a632823/c.html",
+        "source_title": "无问智科A轮融资数亿元 加速打造物理AI数据基座-经济参考网 _ 新华社《经济参考报》官方网站",
+        "source_content_hash": "8d6ff04067b113b2",
+        "quote": "洪山资本、中电数融、狮城资本跟投",
+        "quote_hash": "535282a38c78aad93dc96141451f13ee102ff0ecc4384ac11e39008b31a29a48"
+      },
       {
         "source_id": "FISRC-ed89be77100eb6da",
         "source_url": "http://c.m.163.com/news/a/L6CJ79G505118DFD.html",

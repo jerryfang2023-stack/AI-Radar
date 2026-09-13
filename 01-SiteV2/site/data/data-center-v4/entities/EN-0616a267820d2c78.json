@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "generatedAt": "2026-09-13T01:29:03.163Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3208,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,6 +57,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-e272541b76d00306",
       "EV-2c17183b71d8b7d1",
       "EV-9db14ad0d6fe3135"
     ],
@@ -66,7 +67,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-17",
-    "lastSeen": "2026-08-23",
+    "lastSeen": "2026-09-13",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -76,11 +77,52 @@
       "hardware": [],
       "organizationPeople": [],
       "other": [
+        "EV-e272541b76d00306",
         "EV-2c17183b71d8b7d1",
         "EV-9db14ad0d6fe3135"
       ]
     },
     "timeline": [
+      {
+        "id": "EV-e272541b76d00306",
+        "dataDate": "2026-09-13",
+        "date": "2026-09-13",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "2026年企业AI智能体部署",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-0616a267820d2c78"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-286a3c612017ad1d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-0616a267820d2c78",
+          "EN-286a3c612017ad1d",
+          "EN-a9d21499d1b41fff"
+        ]
+      },
       {
         "id": "EV-2c17183b71d8b7d1",
         "dataDate": "2026-08-23",
@@ -354,6 +396,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-2e8512bbfea3a76a",
         "EV-b67a95250d1aae8b",
         "EV-52f4f9d31fae9c44",
         "EV-3ad9a2bb87c407dd",
@@ -705,6 +748,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-e272541b76d00306",
         "EV-84bd528b36f55b00",
         "EV-fdc3211527e41bf6",
         "EV-7a24f8d94f5eede7",
@@ -1062,9 +1106,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-89d01c9ba73cb5c4",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-89d01c9ba73cb5c4",
         "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",
         "EN-f90aec90acf3dc85",

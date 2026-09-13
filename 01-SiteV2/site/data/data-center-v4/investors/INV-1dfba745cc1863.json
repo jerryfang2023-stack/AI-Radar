@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "generatedAt": "2026-09-13T01:29:03.163Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3208,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -47,8 +47,8 @@
     ]
   },
   "institution": {
-    "id": "INV-97ea54b0435b72",
-    "name": "同鑫资本",
+    "id": "INV-1dfba745cc1863",
+    "name": "澄凯灵",
     "aliases": [],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
@@ -59,75 +59,75 @@
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
-      "CN"
+      "GLOBAL"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-10",
     "latest_disclosed_at": "2026-09-10",
     "role_counts": {
-      "lead": 1
+      "participant": 1
     },
     "round_codes": [
-      "pre_series_b"
+      "series_a"
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-b466ed43b4605e2b",
+        "entity_id": "EN-08e7b67a300e585f",
         "canonical_entity_id": "",
-        "name": "大鱼智行"
+        "name": "浙江无问智行科技有限公司"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-41960803d96a5d5b",
-        "funding_insight_id": "FI-8013fa3a930fc8df",
+        "activity_id": "IA-8762e4ee168a96c1",
+        "funding_insight_id": "FI-c2d2a86fa237b6eb",
         "event_ids": [
-          "EV-6e22ce671a8a4d82"
+          "EV-798081a4ec056f8c"
         ],
-        "company_entity_id": "EN-b466ed43b4605e2b",
+        "company_entity_id": "EN-08e7b67a300e585f",
         "company_canonical_entity_id": "",
-        "company_name": "大鱼智行",
-        "round": "Pre-B轮",
-        "round_code": "pre_series_b",
-        "round_original": "Pre-B轮",
-        "amount_original": "亿元",
+        "company_name": "浙江无问智行科技有限公司",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
         "amount_normalized": {
           "currency": "CNY",
           "value": null,
-          "min_value": 100000000,
-          "max_value": 1000000000,
+          "min_value": 200000000,
+          "max_value": 900000000,
           "unit": "base",
           "status": "range",
-          "display_zh": "1 亿元–10 亿元"
+          "display_zh": "2 亿元–9 亿元"
         },
         "announced_at": "2026-09-10",
-        "market_region": "CN",
-        "china_market_match": true,
+        "market_region": "GLOBAL",
+        "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-5a1765ed854566bc",
-            "source_url": "https://news.pedaily.cn/202609/568805.shtml",
-            "source_title": "大鱼智行完成近亿元Pre-B轮融资，加速构建AI智能轻出行平台",
-            "source_content_hash": "d812ce3da84243e4",
-            "quote": "本轮融资由 同鑫资本 领投， 多家机构跟投 本轮",
-            "quote_hash": "cd88e04c41f716bb92934a38cb0cdd6a560d08e787b1b5e899678c09533e7a2b"
+            "source_id": "FISRC-a7547d4aa28546af",
+            "source_url": "http://www.jjckb.cn/20260910/f9448cdc30884f8199eac8d45a632823/c.html",
+            "source_title": "无问智科A轮融资数亿元 加速打造物理AI数据基座-经济参考网 _ 新华社《经济参考报》官方网站",
+            "source_content_hash": "8d6ff04067b113b2",
+            "quote": "架桥资本、力合金融、力合中科、澄凯灵及澄未来基金等老股东超额追投",
+            "quote_hash": "828144f562ef2cd9ee34717b60c25afccb2cc8323a050a3292173076b6f1894f"
           }
         ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-5a1765ed854566bc",
-        "source_url": "https://news.pedaily.cn/202609/568805.shtml",
-        "source_title": "大鱼智行完成近亿元Pre-B轮融资，加速构建AI智能轻出行平台",
-        "source_content_hash": "d812ce3da84243e4",
-        "quote": "本轮融资由 同鑫资本 领投， 多家机构跟投 本轮",
-        "quote_hash": "cd88e04c41f716bb92934a38cb0cdd6a560d08e787b1b5e899678c09533e7a2b"
+        "source_id": "FISRC-a7547d4aa28546af",
+        "source_url": "http://www.jjckb.cn/20260910/f9448cdc30884f8199eac8d45a632823/c.html",
+        "source_title": "无问智科A轮融资数亿元 加速打造物理AI数据基座-经济参考网 _ 新华社《经济参考报》官方网站",
+        "source_content_hash": "8d6ff04067b113b2",
+        "quote": "架桥资本、力合金融、力合中科、澄凯灵及澄未来基金等老股东超额追投",
+        "quote_hash": "828144f562ef2cd9ee34717b60c25afccb2cc8323a050a3292173076b6f1894f"
       }
     ]
   }

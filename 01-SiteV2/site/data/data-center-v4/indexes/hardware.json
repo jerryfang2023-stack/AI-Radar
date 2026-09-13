@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "generatedAt": "2026-09-13T01:29:03.163Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3208,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -4688,10 +4688,9 @@
       ],
       "capexFacts": [],
       "tags": [],
-      "sourceUrl": "https://cls.cn/detail/2478685",
+      "sourceUrl": "https://163.com/dy/article/L6CJOUN905198R3E.html",
       "entityIds": [
-        "EN-a5e5f031b6f878cf",
-        "EN-6535648b340d6536"
+        "EN-a5e5f031b6f878cf"
       ]
     },
     {
@@ -16603,26 +16602,28 @@
       "funnel_id": "LF-11e81190ca216192",
       "lens": "hardware",
       "date": "2026-09-13",
-      "monitoring_paths": [],
-      "raw_documents": 19,
-      "original_sources": 19,
-      "valid_claims": 4,
+      "monitoring_paths": [
+        "hardware_capacity_fab",
+        "hardware_product_specs",
+        "hardware_shipment_deployment",
+        "hardware_supply_agreement"
+      ],
+      "raw_documents": 16,
+      "original_sources": 11,
+      "valid_claims": 5,
       "observations": 0,
       "canonical_events": 3,
       "blocker_counts": {
-        "rumor_requires_primary_confirmation": 2,
-        "no_source_bounded_claim": 2,
-        "source_outside_daily_window": 1,
-        "domestic_publication_date_unverified": 3,
-        "event_not_ai_relevant": 5,
-        "source_outside_funding_backfill_window": 1,
-        "raw_source_quality_block": 2
+        "source_outside_daily_window": 5,
+        "non_event_or_index_title": 1,
+        "no_source_bounded_event": 1,
+        "raw_source_quality_block": 6
       },
       "rates": {
-        "original_source_rate": 1,
-        "valid_claim_rate": 0.21052631578947367,
+        "original_source_rate": 0.6875,
+        "valid_claim_rate": 0.3125,
         "observation_rate": 0,
-        "event_conversion_rate": 0.75
+        "event_conversion_rate": 0.6
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/monitoring-funnel.json"
     }

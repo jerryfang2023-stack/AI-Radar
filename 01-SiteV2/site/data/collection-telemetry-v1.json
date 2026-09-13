@@ -1,41 +1,41 @@
 {
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
-    "ops_version": "OPS-V3.6.3-astra-session-isolation",
-    "data_date": "2026-09-12",
-    "generated_at": "2026-09-12T01:39:08.779Z",
-    "source_snapshot": "d946e641520ee95ba55196e59c91688974a72d992135f9b5346caae43ef26d00",
+    "ops_version": "OPS-V3.7.1-china-funding-history",
+    "data_date": "2026-09-13",
+    "generated_at": "2026-09-13T01:29:19.560Z",
+    "source_snapshot": "11c2de814fd993b0342830c0096d786aa07da5e48968a5acfae03504c702127e",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 237,
-    "capture_failed": 5,
-    "recovered_source_failures": 7,
-    "raw_documents": 237
+    "capture_succeeded": 228,
+    "capture_failed": 8,
+    "recovered_source_failures": 8,
+    "raw_documents": 228
   },
   "fact_build": {
-    "accepted_claims": 74,
+    "accepted_claims": 58,
     "rejected_claims": 0,
-    "accepted": 74,
+    "accepted": 58,
     "rejected": 0,
-    "pending_claims": 3,
-    "canonical_events": 35,
-    "entities": 58,
-    "relationships": 77,
+    "pending_claims": 6,
+    "canonical_events": 25,
+    "entities": 47,
+    "relationships": 64,
     "conflicts": 0,
-    "qa_queue": 203,
+    "qa_queue": 202,
     "qa_by_status": {
-      "review_optional": 193,
+      "review_optional": 192,
       "open": 10
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-09-12",
-    "gate_date": "2026-09-12",
+    "manifest_date": "2026-09-13",
+    "gate_date": "2026-09-13",
     "failures": [],
     "warnings": [
       "No source-bounded hardware projection was produced."
@@ -60,15 +60,15 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 237,
-        "capture_failed": 5,
-        "recovered_source_failures": 7,
-        "raw_documents": 237
+        "capture_succeeded": 228,
+        "capture_failed": 8,
+        "recovered_source_failures": 8,
+        "raw_documents": 228
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/manifest.json",
-        "agent-workflow/reports/2026-09-12-guanlan-daily-monitor-log.md",
-        "agent-workflow/reports/2026-09-12-guanlan-monitor-quality-gate.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/manifest.json",
+        "agent-workflow/reports/2026-09-13-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-09-13-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -76,20 +76,20 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 74,
+        "accepted_claims": 58,
         "rejected_claims": 0,
-        "accepted": 74,
+        "accepted": 58,
         "rejected": 0,
-        "pending_claims": 3,
-        "canonical_events": 35,
-        "entities": 58,
-        "relationships": 77,
+        "pending_claims": 6,
+        "canonical_events": 25,
+        "entities": 47,
+        "relationships": 64,
         "conflicts": 0,
-        "qa_queue": 203
+        "qa_queue": 202
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/manifest.json",
-        "agent-workflow/reports/2026-09-12-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/manifest.json",
+        "agent-workflow/reports/2026-09-13-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -103,7 +103,7 @@
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-12-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-13-persistent-asset-manifest.json"
       ]
     },
     {
@@ -116,7 +116,7 @@
         "authoritative": false
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-12-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-13-persistent-asset-manifest.json"
       ]
     }
   ],
