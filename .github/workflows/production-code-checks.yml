@@ -33,6 +33,13 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
+      - name: Assert actual Skill release snapshot
+        env:
+          GUANLAN_SKILL_STORE: ${{ github.workspace }}/agent-workflow/skills
+        run: |
+          node agent-workflow/tools/sync-repo-skills.mjs
+          node agent-workflow/tools/validate-guanlan-skills.mjs
+          node agent-workflow/tools/assert-skill-store-dashboard.mjs
       - run: npm run assert:no-active-v3
       - run: npm run assert:compatibility-retirement
       - run: npm run assert:pipeline-policy
