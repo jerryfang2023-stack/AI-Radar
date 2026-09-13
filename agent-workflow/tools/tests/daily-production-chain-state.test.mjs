@@ -68,6 +68,9 @@ test("bulk generated-data PRs cannot suppress production checks through path fil
   assert.match(trigger, /pull_request:/u);
   assert.doesNotMatch(trigger, /paths(?:-ignore)?:/u);
   assert.match(workflow, /os: \[ubuntu-latest, windows-latest\]/u);
+  const snapshotGate = workflow.slice(workflow.indexOf("- name: Assert actual Skill release snapshot"), workflow.indexOf("- run: npm run assert:no-active-v3"));
+  assert.match(snapshotGate, /sync-repo-skills\.mjs[\s\S]*validate-guanlan-skills\.mjs[\s\S]*assert-skill-store-dashboard\.mjs/u);
+  assert.doesNotMatch(snapshotGate, /build-skill-store-dashboard\.mjs/u, "CI must reject a stale committed snapshot, not rebuild it green");
 });
 
 test("failed-run artifacts retain accepted model decisions and projection diagnostics", () => {

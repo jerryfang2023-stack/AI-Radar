@@ -50,12 +50,16 @@
 缺陷定位（本补丁）：R1 `agent-workflow/tools/run-business-signals-health-dispatch.mjs:81`、`agent-workflow/tools/lib/daily-production-chain-state.mjs:3`；R2 `agent-workflow/tools/classify-business-signals-production-state.mjs:30`；R3 `agent-workflow/tools/run-daily-automation-controller.mjs:387`；R4 同文件 `:182` 和 `agent-workflow/tools/assert-follow-builders-data.mjs:35`；R5 `agent-workflow/tools/wait-for-production-code-checks.mjs:7` 及五个工作流的 merge step；R6 `agent-workflow/skills/guanlan-daily-monitor/SKILL.md:63`。
 
 - GPT-6 Astra/high 真实执行于 2026-09-13：24/24 场景判断、24/24 精确证据引用，总分 48/48，137.6 秒。见 `model-routing-eval-latest.json` 和 `.md`。此前 23-case 报告不再被当作当前 24-case 覆盖。
-- 24 个治理 Skill 的静态验证与仓内镜像同步通过；模型评分器测试 7 项通过。Skill discovery 仪表盘重建到运行时，未用本机安装清单改写公开站点。
+- 24 个治理 Skill 的静态验证与仓内镜像同步通过；模型评分器测试 7 项通过。首次只重建了运行时索引，未同步公开 Skill 索引，导致本次 Pages 运行 `34746338213` 正确拒绝发布（版本 1.3.1 与 1.3.0 不一致）。后续使用既有生成器重建并提交公开索引，不手改投影或降低门禁。
 - 新增执行边界及已有金额回归 45 项通过；一线监督测试 9 项通过；OPS/恢复测试、Skill Ops 测试通过。当前标题完整性覆盖 114 个日期、3,938 条关联原文、3,757 条事件，零违规。
 - 版本、V3 退休、生产策略、Harness 结构门禁通过。隔离 worktree 的 Harness 外部项目路径不可用仅为环境诊断，不是所有外部项目已验收。
 - PR 必须再取得 exact-head Windows/Linux CI，通过后才合并。实际下一轮定时任务和供应商/登录态可用性不能由离线测试保证。
 
 ## 尚不能推断的事项
+
+### 本次发布发现并修复的门禁覆盖缺口（R7 / P1 / confirmed）
+
+`production-code-checks.yml` 原来运行 Skill 校验器的单元测试，却没有运行 Pages 使用的实际 `assert-skill-store-dashboard.mjs`，因此 #905 两平台 CI 通过仍在部署时被拦截。该缺口在本次 Skill 修改中被触发，不冒充过去所有失败的原因。已把“同步仓内镜像 → 验证 Skill → 校验已提交公开索引”前移至两平台 PR 检查。CI 不重新生成索引掩盖陈旧状态；静态回归要求真实门禁存在且禁止在此步骤 rebuild。Skill 源、版本、摘要和发布索引必须一起更新。
 
 - GPT-6 规则路由通过不等于 DeepSeek 生产翻译、浏览器登录、GitHub runner、TLS 或 VPS 永不失败。
 - 本次没有重采今日已接受原文、重生成融资卡、重部署无变化的小程序数据，也没有把过去全部失败都归到新发现的六项。
