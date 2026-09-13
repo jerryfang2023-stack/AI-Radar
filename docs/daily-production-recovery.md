@@ -65,6 +65,10 @@ authoritative; never repair this by rewriting immutable daily evidence.
 Production code PR checks run secret-free on Linux and Windows, including with
 a production-shaped external evidence-root environment. Fixture tests must bind
 their own evidence root rather than inherit the runner's private store.
+The PR checks also run `test:data-center-site`, the same frontstage contract
+suite used after daily materialization. Person coverage assertions compare
+accepted review-ledger IDs rather than historical catalog sizes; source-specific
+community pages and job-level publication locks retain explicit contract checks.
 
 After the gated atomic application set merges, verify a successful internal
 Pages deployment of that commit or a proven descendant. A cancelled deployment
