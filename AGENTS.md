@@ -4,6 +4,8 @@ This file is the default routing entry. It is a router, not a full wiki.
 
 Cross-module rules, design, execution and delivery mappings: [Guanlan Harness](agent-workflow/harness/README.md). Read the matching module only; the registry is an index, not an additional source of business rules.
 
+Shared rules listed in `agent-workflow/harness/shared-sources.json` are generated runtime copies. Their only editable sources are in the private workspace manager `Harness/` directory. Read the local copies when using rules; for rule changes edit the canonical source and synchronize with `Harness/03-执行/shared.py`. Do not edit generated copies independently. Project-specific contracts and executable brand assets remain owned here.
+
 Do not scan all Markdown at task start. Read only this file, the required `context/` files, and directly relevant task files.
 
 ## Current Version

@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/brand/README.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 观澜AI｜WaveSight AI VI 资料库
 
 本目录是观澜AI V2 的品牌视觉识别资料库。Logo 资产已根据 `reference-images/visual-identity-system.png` 重新拆解生成，不再使用早先压缩包中的 Logo 文件。

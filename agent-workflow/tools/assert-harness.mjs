@@ -4,6 +4,24 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+
+export function auditSharedCopies(root) {
+  const errors = [];
+  try {
+    const index = JSON.parse(fs.readFileSync(path.join(root, 'agent-workflow/harness/shared-sources.json'), 'utf8'));
+    if (index.schemaVersion !== 1 || !Array.isArray(index.files) || !index.files.length) throw Error('Invalid shared source registry');
+    const seen = new Set();
+    for (const row of index.files) {
+      if (seen.has(row.path) || !/^manager:Harness\//u.test(row.source || '') || !/^[a-f0-9]{64}$/u.test(row.sourceSha256 || '')) throw Error('Invalid shared source row');
+      seen.add(row.path);
+      const text = fs.readFileSync(safeTarget(root, row.path), 'utf8').replace(/\r\n/gu, '\n');
+      const hash = createHash('sha256').update(text).digest('hex');
+      if (hash !== row.mirrorSha256) errors.push(`Shared Harness runtime copy drift: ${row.path}`);
+    }
+  } catch (error) { errors.push(`Shared Harness registry: ${error.message}`); }
+  return { ok: !errors.length, errors };
+}
 
 export const layers = ['rules', 'design', 'execution', 'closure'];
 export function safeTarget(root, relative) {
@@ -89,6 +107,9 @@ function main() {
   const evidence = arg('evidence') ? JSON.parse(fs.readFileSync(arg('evidence'), 'utf8').replace(/^\uFEFF/u, '')) : {};
   const roots = { ...Object.fromEntries((registry?.roots || []).map(r => [r.id, r.path])), wavesight: root };
   const result = auditHarness(manifest, { roots, modules: registry?.modules, evidence });
+  const shared = auditSharedCopies(root);
+  result.errors.push(...shared.errors);
+  result.ok = result.ok && shared.ok;
   const git = spawnSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8', windowsHide: true });
   const state = spawnSync('git', ['status', '--porcelain=v1'], { cwd: root, encoding: 'utf8', windowsHide: true });
   const report = { schemaVersion: 1, checkedAt: new Date().toISOString(), sourceCommit: git.status === 0 ? git.stdout.trim() : null,

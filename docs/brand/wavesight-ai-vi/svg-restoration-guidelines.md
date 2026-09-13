@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/brand/svg-restoration-guidelines.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 观澜AI｜VI SVG 还原与生成说明
 
 本说明用于把用户提供的三张 VI 规范图转化为可执行、可引用、可验收的 SVG 资产。后续页面、商业内参、报告、动效和组件设计应优先使用 `executable-svg/` 下的单项资产，不从整张 PNG 规范图中裁切。

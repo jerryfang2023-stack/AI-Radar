@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/brand/USAGE.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 观澜AI｜WaveSight AI VI 资产使用规范
 
 本目录是 WaveSight AI 当前视觉识别系统的项目内基准资料库。后续任何 V4 网站页面、行业报告详情、组件库、截图验收、动效或品牌物料设计，必须先读取本目录，再进行实现。

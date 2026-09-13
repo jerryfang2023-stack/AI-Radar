@@ -6,6 +6,10 @@ owner: experience-editorial / build-release / product-commander
 encoding: UTF-8
 ---
 
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/04-验证与交付/typography-first-page-gate.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # Typography-first 页面字体硬闸门
 
 ## 1. 定位

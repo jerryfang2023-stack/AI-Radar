@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/professional-copy-guidelines.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 专业领域文案规范
 
 状态：现行；更新：2026-09-13。依据用户长期要求明确：专业领域的文案必须使用准确、专业且便于理解的表达。

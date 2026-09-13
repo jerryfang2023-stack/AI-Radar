@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/brand/page-typography-position-guidelines.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 观澜AI 页面位置字体规范
 
 状态：V2.2 current  

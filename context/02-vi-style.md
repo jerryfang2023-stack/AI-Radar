@@ -13,6 +13,10 @@ do_not_use_when:
 priority: current
 ---
 
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/brand/02-vi-style.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 02 VI Style｜观澜视觉与页面规范
 
 集中导航：[字体／文案／设计规范中心](../agent-workflow/harness/expression-design.md)。专业领域表达按 [专业领域文案规范](../agent-workflow/governance/professional-copy-guidelines.md) 执行。

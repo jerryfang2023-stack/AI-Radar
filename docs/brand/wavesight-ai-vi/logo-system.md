@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/brand/logo-system.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 观澜AI｜Logo SVG 资产
 
 本批 Logo SVG 依据用户提供的 `reference-images/visual-identity-system.png` 重新拆解生成，并以源图中“横版组合 / 竖版组合 / 图形标识 / 单色版本 / 深色背景 / App icon”作为正式比例基准。不再使用早先压缩包中的 Logo 文件。

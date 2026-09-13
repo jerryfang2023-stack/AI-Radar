@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/04-验证与交付/module-completeness-template.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 模块完整性记录
 
 流程 ID / 现有模块 ID：

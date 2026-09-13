@@ -3,7 +3,24 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
-import { auditHarness, safeTarget, layers } from '../assert-harness.mjs';
+import { auditHarness, safeTarget, layers, auditSharedCopies } from '../assert-harness.mjs';
+import { createHash } from 'node:crypto';
+
+test('shared runtime copies detect edits, missing files and unsafe paths without a private checkout', () => {
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),'shared-harness-'));
+  try {
+    fs.mkdirSync(path.join(root,'agent-workflow/harness'),{recursive:true});
+    fs.writeFileSync(path.join(root,'rule.md'),'shared\r\n');
+    const row={path:'rule.md',source:'manager:Harness/01/rule.md',sourceSha256:'a'.repeat(64),mirrorSha256:createHash('sha256').update('shared\n').digest('hex')};
+    const index=path.join(root,'agent-workflow/harness/shared-sources.json');
+    const write=()=>fs.writeFileSync(index,JSON.stringify({schemaVersion:1,files:[row]}));write();
+    assert.equal(auditSharedCopies(root).ok,true);
+    fs.writeFileSync(path.join(root,'rule.md'),'independent edit');
+    assert.equal(auditSharedCopies(root).ok,false);
+    fs.unlinkSync(path.join(root,'rule.md'));assert.equal(auditSharedCopies(root).ok,false);
+    row.path='../outside';write();assert.equal(auditSharedCopies(root).ok,false);
+  }finally{fs.rmSync(root,{recursive:true,force:true})}
+});
 
 const entry = () => ({ id:'H-example', moduleId:'example', title:'Example', lifecycle:'current', acceptance:'Verify behavior',
   recovery:'Restore accepted version', evidenceRequirement:'Exact commit and result', tracking:[],

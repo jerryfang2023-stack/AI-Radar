@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/brand/logo-reference-guidelines.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 观澜AI｜WaveSight AI 高还原 Logo 说明
 
 本组资产基于用户提供的横版近景参考图制作，目标是尽量还原参考图的气质与结构，而不是重新发散创意。

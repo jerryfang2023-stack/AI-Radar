@@ -7,6 +7,10 @@ encoding: UTF-8
 last_updated: 2026-09-13
 ---
 
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/02-设计/copy-first-page-gate.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # Copy-first 页面文案硬闸门
 
 ## 1. 定位

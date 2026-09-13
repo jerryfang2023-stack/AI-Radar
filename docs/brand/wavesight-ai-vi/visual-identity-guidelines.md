@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/brand/visual-identity-guidelines.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 观澜AI｜WaveSight AI 品牌视觉识别系统规范
 
 本规范依据用户提供的 `reference-images/visual-identity-system.png` 拆解，并作为 V2 官网、商业内参、报告物料、图标、动效与品牌应用的正式 VI 基准。Logo、色彩、字体、辅助图形和图标风格必须围绕同一套“极简澜线型”执行。

@@ -1,3 +1,7 @@
+<!-- Generated Harness runtime copy. Do not edit here.
+Canonical source: manager:Harness/01-约束/brand/typography-guidelines.md
+Sync via the private manager Harness/03-执行/shared.py; see shared-sources.json. -->
+
 # 观澜 AI / WAVESIGHT AI 字体规范
 
 本文件是观澜 AI V2 的正式字体规范。官网、商业内参、报告、PPT、海报、页面组件、站点 CSS、Logo 说明和后续设计任务必须以本文件为准。
