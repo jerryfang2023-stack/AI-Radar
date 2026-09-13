@@ -4,7 +4,7 @@
 
 - 上传源码：`e0d97059f7614599582bd3953d3b489caf58f2dd`；标签 `miniprogram-v1.0.0`，均已推送。
 - AppID：`wx34133741173154d4`；上传包体 776387 字节。
-- 独立工程：`C:/Users/86186/Documents/Fang/previews/guanlan-v100-e0d97059f7/02-Miniprogram`；228 个文件逐一核对 Git blob 哈希。
+- 独立工程：`C:/Users/86186/Documents/Fang/项目/观澜AI/previews/guanlan-v100-e0d97059f7/02-Miniprogram`；228 个文件逐一核对 Git blob 哈希。
 - source.zip SHA-256：`9cccf53390a76556b1526226a6ab79843807fa97dc1bdae686465fa89260d162`。
 - 验证：130 项测试全部通过；25 页面、56 JS，校验体积 832006 字节；微信工具编译及上传成功。
 - 本次修复跨账号延迟响应、旧认证错误清除新会话、旧社群错误清除新缓存的问题，认证重试最多一次。版本号和埋点版本同步为 1.0.0。

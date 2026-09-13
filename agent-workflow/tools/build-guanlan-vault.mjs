@@ -633,11 +633,13 @@ write(GUANLAN_VAULT_PATHS.knowledgeAssets, `${yaml("知识资产总览")}# 知�
 
 未迁移：V1/V2/V3 规则、迁移过程、旧 Prompt、QC/repair/diff 报告、重复卡片、缓存和临时文件。`);
 
+if (!fs.existsSync(path.join(vaultRoot, GUANLAN_VAULT_PATHS.workspace))) {
 write(GUANLAN_VAULT_PATHS.workspace, `${yaml("工作区", "human-maintained")}# 工作区
 
 此目录用于人工笔记、临时思考和附件。
 
 自动同步只管理清单中标记为 generated 的现状页面，不会把这里的内容写回 WaveSight 生产数据。`);
+}
 
 const currentGeneratedFiles = new Set([...generatedFiles, ".guanlan-generated.json"]);
 for (const relativePath of previousGeneratedFiles) {

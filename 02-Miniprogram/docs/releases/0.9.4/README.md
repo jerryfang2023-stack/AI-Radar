@@ -28,4 +28,4 @@
 - [原始微信上传回执](wechat-upload-cdc8cc091c.json)。该回执仅含包体大小，不含源码哈希；源码绑定由上传命令的快照路径和逐文件核验共同记录。
 - 源码 ZIP：`miniprogram-cdc8cc091c.zip`，SHA-256 `07616ba956e85d6eee20221e6783397164fcb6171c86f5d9c387e8b0666a3841`。这是源码归档，不是微信上传包。
 - 工作区归档：`90-工作区/2026-08-14--AI融资站小程序与社群打通/发布记录/2026-08-31-v0.9.4/`。
-- 独立上传工程：`C:/Users/86186/Documents/Fang/previews/guanlan-v094-cdc8cc091c/02-Miniprogram`。后续文档提交不改变已上传源码；再次上传应以发布标签为准。
+- 独立上传工程：`C:/Users/86186/Documents/Fang/项目/观澜AI/previews/guanlan-v094-cdc8cc091c/02-Miniprogram`。后续文档提交不改变已上传源码；再次上传应以发布标签为准。

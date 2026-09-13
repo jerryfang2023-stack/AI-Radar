@@ -4,7 +4,7 @@
 
 - 上传源码：`d535d926fa644700809a8df1c806c4782f5d3eaa`，标签 `miniprogram-v0.9.9`。远端并行的数据更新已在 `41e0c314d0` 合并，保留双方内容。
 - AppID：`wx34133741173154d4`；上传包体 776078 字节。
-- 独立工程：`C:/Users/86186/Documents/Fang/previews/guanlan-v099-d535d926fa/02-Miniprogram`；223 个文件逐一核对 Git blob 哈希。
+- 独立工程：`C:/Users/86186/Documents/Fang/项目/观澜AI/previews/guanlan-v099-d535d926fa/02-Miniprogram`；223 个文件逐一核对 Git blob 哈希。
 - source.zip SHA-256：`0cd3a494cd5281e92d1ac88f51cfc1906d7d6b02428447fe7bac24d8b53ddda5`。
 - 验证：小程序 122 项测试；25 页面、56 JS、校验体积 831594 字节；29 个原生模板编译通过。账户服务 75 项测试通过，覆盖昵称持久化、登录后保留昵称、身份不被资料更新改变、未登记入群状态。
 - 服务发布：`profile-20260911-d535d926fa-r2`。备份：`/opt/guanlan-backups/profile-20260911-d535d926fa-r2`。app.py SHA-256 `213674e172ee08be0c714069b2f2b82b0123e6311db9fbddeec8ad4a7ed3f2dd`。服务健康、源码校验及未授权 profile PUT 返回 401 均通过。

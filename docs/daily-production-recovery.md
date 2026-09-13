@@ -1,6 +1,8 @@
 # Daily production recovery
 
-The seven Windows tasks remain the local owners. Cloud dispatch success is not
+The four Windows production tasks remain the local owners; daily inspection and
+repair are operator-owned. Recovery, Closure and Hermes watchdog timers are retired.
+Cloud dispatch success is not
 collection, publication, or website completion. Inspect the earliest failing
 step and its log: a `continue-on-error` step can have a successful API conclusion
 despite a failed outcome.

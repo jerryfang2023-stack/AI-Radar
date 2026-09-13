@@ -1,6 +1,6 @@
 # Codex Model Routing Eval V2
 
-This protocol covers one scenario per active governed Skill (currently 23). The manifest is checked against the live registry. The output schema cardinality and case IDs are derived from that manifest at execution time.
+This protocol covers one scenario per active governed Skill in [the current registry](../skills/skill-registry.md). The manifest is checked against the live registry. The output schema cardinality and case IDs are derived from that manifest at execution time.
 
 ## Profiles and ownership
 

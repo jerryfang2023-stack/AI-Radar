@@ -1,6 +1,22 @@
 export const DEFAULT_CONTROLLER_RUNNING_LEASE_MS = 1_800_000;
 export const DEFAULT_CONTROLLER_CLOCK_SKEW_MS = 60_000;
 
+export function runControllerPhase(operation) {
+  try {
+    return operation();
+  } catch (error) {
+    return {
+      ok: false,
+      healthOk: false,
+      status: "failed",
+      actions: [{ label: "controller exception", ok: false, status: 1,
+        command: "internal: controller phase", stdout: "",
+        stderr: error instanceof Error ? error.message : String(error) }],
+      notes: ["Controller phase threw before completion; resume the first failed stage from its command logs."],
+    };
+  }
+}
+
 export function inspectControllerReportLiveness(report, {
   phase,
   date,

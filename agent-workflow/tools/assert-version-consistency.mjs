@@ -2,6 +2,8 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { auditNavigationContracts } from "./lib/navigation-contracts.mjs";
+import { readGovernedSkills } from "./lib/guanlan-skill-ops.mjs";
 
 const root = process.cwd();
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
@@ -56,6 +58,13 @@ const expected = {
   privateEvidence: "PRIVATE-EVIDENCE-STORE-V2.0",
   windowsAutomation: "WINDOWS-AUTOMATION-V1.1-four-task-manual-supervision",
 };
+
+problems.push(...auditNavigationContracts({
+  actionIndex: read("context/09-current-action-index.md"),
+  experienceRules: read("context/10-experience-automation.md"),
+  opsVersion: versions.get("Operations backend version"),
+  governedCount: readGovernedSkills(path.join(root, "agent-workflow/skills")).length,
+}));
 
 const ledgerChecks = [
   ["Current version", expected.release],

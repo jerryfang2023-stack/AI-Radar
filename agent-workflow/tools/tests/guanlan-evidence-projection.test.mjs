@@ -127,4 +127,14 @@ test("Guanlan evidence projection links assets to V4 evidence without copying or
   );
   assert.ok(manifest.generatedFiles.includes(`60-知识资产/来源引用/${citationFile}`));
   assert.ok(manifest.generatedFiles.includes("60-知识资产/证据关系索引.md"));
+  // Existing monthly reports cite exact event IDs rather than source URLs.
+  writeText(path.join(vaultRoot, reportRelative), "# Report\nA factual event [E:EV-example].\n");
+  syncGuanlanEvidence({ root, vaultRoot, generatedAt: "2026-07-30T03:00:00Z" });
+  assert.match(fs.readFileSync(path.join(vaultRoot, reportRelative), "utf8"), /evidence_status: linked/u);
+  // An outdated generated evidence block cannot create its own source evidence.
+  const oldReport = fs.readFileSync(path.join(vaultRoot, reportRelative), "utf8");
+  writeText(path.join(vaultRoot, reportRelative), oldReport.replace("[E:EV-example]", "[E:EV-unknown]"));
+  const missing = syncGuanlanEvidence({ root, vaultRoot, generatedAt: "2026-07-30T04:00:00Z" });
+  assert.equal(missing.assets.missing, 1);
+  assert.match(fs.readFileSync(path.join(vaultRoot, reportRelative), "utf8"), /evidence_status: missing/u);
 });

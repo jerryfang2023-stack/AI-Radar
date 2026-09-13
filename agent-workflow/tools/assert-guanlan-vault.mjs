@@ -11,6 +11,7 @@ import {
 const root = process.cwd();
 const contractOnly = process.argv.includes("--contract-only");
 const problems = [];
+const workspaceWarnings = [];
 let markdownFileCount = 0;
 const oldRepositoryVault = path.join(root, "vault");
 const reportSource = path.join(root, REPOSITORY_CONTENT_PATHS.industryReportsRoot);
@@ -98,6 +99,10 @@ if (vaultRoot) {
   for (const file of markdown) {
     const content = fs.readFileSync(file, "utf8");
     const relativePath = path.relative(vaultRoot, file).replaceAll("\\", "/");
+    // Human notes and the root agent router are not generated product pages.
+    // Keep their findings visible without making a historical mention a publish failure.
+    const fileProblems = relativePath.startsWith("90-工作区/") || relativePath === "AGENTS.md"
+      ? workspaceWarnings : problems;
     const isPublishedKnowledgeAsset = (
       relativePath.startsWith("30-应用中心/行业报告档案/")
       || (
@@ -126,7 +131,7 @@ if (vaultRoot) {
       }
     }
     if (/AI热点[\\/]|01-WaveSight[\\/]vault|vault\/(?:10-Data-Center|20-Application-Center)/u.test(content)) {
-      problems.push(`${path.relative(vaultRoot, file)} references the retired Vault tree`);
+      fileProblems.push(`${path.relative(vaultRoot, file)} references the retired Vault tree`);
     }
     const sourceDir = path.dirname(path.relative(vaultRoot, file)).replaceAll("\\", "/");
     for (const match of content.matchAll(/\[\[([^\]]+)\]\]/gu)) {
@@ -144,7 +149,7 @@ if (vaultRoot) {
         || assetPaths.has(sourceAsset)
         || (!raw.includes("/") && assetNames.has(path.posix.basename(normalizedAsset)))
       ) continue;
-      problems.push(`${path.relative(vaultRoot, file)} has unresolved Wiki link: [[${match[1]}]]`);
+      fileProblems.push(`${path.relative(vaultRoot, file)} has unresolved Wiki link: [[${match[1]}]]`);
     }
   }
 
@@ -185,7 +190,7 @@ if (vaultRoot) {
 
   for (const file of markdown) {
     const relativePath = path.relative(vaultRoot, file).replaceAll("\\", "/");
-    if (!relativePath.startsWith("90-工作区/") && !generatedManifestFiles.has(relativePath)) {
+    if (relativePath !== "AGENTS.md" && !relativePath.startsWith("90-工作区/") && !generatedManifestFiles.has(relativePath)) {
       problems.push(`unmanaged Markdown outside 90-工作区: ${relativePath}`);
     }
   }
@@ -217,6 +222,7 @@ console.log(JSON.stringify({
   vault: vaultRoot ? path.basename(vaultRoot) : "",
   markdownFiles: markdownFileCount,
   problems,
+  workspaceWarnings,
 }, null, 2));
 
 if (problems.length) process.exit(1);

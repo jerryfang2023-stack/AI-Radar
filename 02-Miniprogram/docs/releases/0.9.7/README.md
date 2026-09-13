@@ -6,7 +6,7 @@
 - AppID：`wx34133741173154d4`；上传包体：772441 字节。
 - 调整：特约赞助商突出展示，模型名称位于 Token 前，时间单行显示，删除重复额度标签，规则默认展开。
 - 验证：118 项测试；25 个页面、56 个 JS 文件、校验体积 826979 字节；29 个原生 WXML 模板编译通过；上传独立快照 215 个文件逐一核对 Git blob 哈希。
-- 独立工程：`C:/Users/86186/Documents/Fang/previews/guanlan-v097-6d21db0b6d/02-Miniprogram`。
+- 独立工程：`C:/Users/86186/Documents/Fang/项目/观澜AI/previews/guanlan-v097-6d21db0b6d/02-Miniprogram`。
 - ZIP：`miniprogram-6d21db0b6d.zip`，SHA-256 `3f9b76130c21d904c9df3315e2b016f20868497117a2def2dce1abba7bd31dc0`。
 - 工作区归档：`90-工作区/2026-08-14--AI融资站小程序与社群打通/发布记录/2026-09-10-v0.9.7/`。
 - [原始上传回执](wechat-upload-6d21db0b6d.json)只包含包体大小；源码绑定由上传命令路径和逐文件核验建立。

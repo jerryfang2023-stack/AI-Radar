@@ -25,6 +25,6 @@
 
 - [原始微信上传回执](wechat-upload-bbd289a0f1.json)，工具原始回执只含包体大小，源码绑定由命令中的快照路径和逐文件核验记录建立。
 - 源码 ZIP：`miniprogram-bbd289a0f1.zip`，SHA-256 `d2c5f40e775c9e993662b05d1ff641d6193e7e07fc21fc3033bd939be571d890`。
-- 独立上传工程：`C:/Users/86186/Documents/Fang/previews/guanlan-v096-bbd289a0f1/02-Miniprogram`。
+- 独立上传工程：`C:/Users/86186/Documents/Fang/项目/观澜AI/previews/guanlan-v096-bbd289a0f1/02-Miniprogram`。
 - 工作区归档：`90-工作区/2026-08-14--AI融资站小程序与社群打通/发布记录/2026-09-10-v0.9.6/`，包含源码 ZIP、源码核验记录、上传回执和审核说明。
 - [审核与验收说明](../../REVIEW-0.9.6.md)。后续文档提交不改变本次已上传源码。

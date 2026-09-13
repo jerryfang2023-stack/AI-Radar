@@ -62,7 +62,7 @@ Read-only Skill Ops check used by daily supervision. It includes the dashboard s
 npm run check:skill-ops
 ```
 
-The current gate certifies all 23 active governed Skills against `GPT-6-ASTRA-SKILL-V1.0`. It verifies positive and negative trigger metadata, scoped inputs, imperative workflow, non-inference and authorization boundaries, output/completion contracts, valid `agents/openai.yaml`, and complete five-case trigger-eval inventory. Inventory coverage proves the test set is complete; it does not claim that a model executed every prompt successfully.
+The current gate certifies the active governed Skills listed in [the generated Skill registry](../agent-workflow/skills/skill-registry.md) against `GPT-6-ASTRA-SKILL-V1.0`. The registry and `check:skill-ops` report own the current count. The gate verifies positive and negative trigger metadata, scoped inputs, imperative workflow, non-inference and authorization boundaries, output/completion contracts, valid `agents/openai.yaml`, and complete five-case trigger-eval inventory. Inventory coverage proves the test set is complete; it does not claim that a model executed every prompt successfully.
 
 On a configured development machine, this check also audits effective local Skill discovery and requires the dashboard to match the discovered, enabled, and reversibly disabled counts. In CI or deploy environments without the developer-local Codex config and private store, it still validates project manifests and the committed dashboard contract without treating missing personal state as a dependency.
 

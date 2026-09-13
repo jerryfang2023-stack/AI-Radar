@@ -4,7 +4,7 @@
 
 - 参考图：`exec-0c2f7a3c-3445-48ce-bddc-b7c157ef66be.png`（方案 2：成长任务中心）
 - 实现截图：`profile-implementation.png`
-- 并排对照：`profile-comparison.png`
+- 并排对照：`profile-comparison.png` 已清理，仅保留 Git 历史记录供恢复。
 - 视口：iPhone 12/13 Pro，390 × 844 CSS px，微信基础库 3.17.0
 
 ## 对照结论

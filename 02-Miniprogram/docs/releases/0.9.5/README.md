@@ -32,6 +32,6 @@
 
 - [原始微信上传回执](wechat-upload-7c21dd67b1.json)。回执仅含上传包体大小。
 - 源码 ZIP：`miniprogram-7c21dd67b1.zip`，SHA-256 `742FE504CB7201944EE672A9FF143950E4E83168E1FA36A8019B047C3A9FBD19`。
-- 独立上传工程：`C:/Users/86186/Documents/Fang/previews/guanlan-v095-7c21dd67b1/02-Miniprogram`。
+- 独立上传工程：`C:/Users/86186/Documents/Fang/项目/观澜AI/previews/guanlan-v095-7c21dd67b1/02-Miniprogram`。
 - 工作区归档：`90-工作区/2026-08-14--AI融资站小程序与社群打通/发布记录/2026-09-02-v0.9.5/`。
 

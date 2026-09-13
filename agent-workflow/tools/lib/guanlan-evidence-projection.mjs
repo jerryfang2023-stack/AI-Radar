@@ -71,6 +71,26 @@ function urlsFromMarkdown(content) {
   return unique(urls);
 }
 
+function authoredEvidenceContent(content) {
+  return content.replace(new RegExp(`${EVIDENCE_START}[\\s\\S]*?${EVIDENCE_END}`, "gu"), "")
+    .replace(/^---\r?\n([\s\S]*?)\r?\n---/u, (_, yaml) => `---\n${yaml.split(/\r?\n/u).filter((line) => !EVIDENCE_FIELDS.has(line.match(/^([A-Za-z0-9_-]+):/u)?.[1] || "")).join("\n")}\n---`);
+}
+
+function explicitEventSources(content, graph) {
+  const refs = [];
+  for (const match of content.matchAll(/\[E:(EV-[A-Za-z0-9-]+)\]/gu)) {
+    const event = graph.events.get(match[1]);
+    if (event?.publication_status !== "verified") continue;
+    // Resolve exact persisted IDs only, with accepted Claims; never infer from names.
+    const accepted = (event.claim_refs || []).filter((id) => graph.claims.has(id));
+    for (const source of event.source_refs || []) {
+      const relation = graph.bySource.get(source);
+      if (relation && accepted.some((id) => relation.claimRefs.includes(id))) refs.push(source);
+    }
+  }
+  return unique(refs);
+}
+
 function markdownFiles(root) {
   if (!fs.existsSync(root)) return [];
   const files = [];
@@ -252,22 +272,21 @@ export function syncGuanlanEvidence({
     .map((asset) => ({
       ...asset,
       title: titleOf(asset.content, path.basename(asset.file, ".md")),
-      urls: urlsFromMarkdown(asset.content),
+      urls: urlsFromMarkdown(authoredEvidenceContent(asset.content)),
+      explicitSources: explicitEventSources(authoredEvidenceContent(asset.content), graph),
     }));
 
   const reportRefsBySource = new Map();
   for (const asset of allAssets.filter((item) => item.relativePath.startsWith("30-应用中心/行业报告档案/"))) {
-    for (const url of asset.urls) {
-      for (const sourceRef of sourceIdsByUrl.get(url) || []) {
+    for (const sourceRef of unique([...asset.urls.flatMap((url) => sourceIdsByUrl.get(url) || []), ...asset.explicitSources])) {
         if (!reportRefsBySource.has(sourceRef)) reportRefsBySource.set(sourceRef, []);
         reportRefsBySource.get(sourceRef).push(asset.relativePath);
-      }
     }
   }
 
   const assetLinks = [];
   for (const asset of allAssets) {
-    const sourceRefs = unique(asset.urls.flatMap((url) => sourceIdsByUrl.get(url) || []));
+    const sourceRefs = unique([...asset.urls.flatMap((url) => sourceIdsByUrl.get(url) || []), ...asset.explicitSources]);
     const relations = sourceRefs.map((sourceRef) => graph.bySource.get(sourceRef)).filter(Boolean);
     const reportRefs = unique([
       ...(asset.relativePath.startsWith("30-应用中心/行业报告档案/") ? [asset.relativePath] : []),
@@ -343,7 +362,7 @@ ${sourceLinks}
 - 事件：${asset.eventRefs.length ? asset.eventRefs.join("、") : "未解析"}
 - 公司／实体：${asset.entityRefs.length ? asset.entityRefs.join("、") : "未解析"}
 - 报告：${asset.reportRefs.length ? asset.reportRefs.map((ref) => noteLink(ref, titleOf(fs.readFileSync(path.join(vaultRoot, ref), "utf8"), path.basename(ref, ".md")))).join("、") : "未关联"}
-- 原文边界：生产快照留在仓库并复制到私有证据备份；Vault 只保存定位信息。
+- 原文边界：完整原文仅保存在私有证据仓；生产仓与 Vault 只保存定位信息。
 ${EVIDENCE_END}`;
     writeManaged(vaultRoot, asset.relativePath, body);
   }
@@ -484,6 +503,7 @@ ${relationLines.join("\n")}
       missing: assetLinks.filter((asset) => asset.status === "missing").length,
     },
     citationCards: generatedCitationFiles.length,
+    missingAssets: assetLinks.filter((asset) => asset.status === "missing").map((asset) => ({ path: asset.relativePath, title: asset.title, reason: "No resolvable authored source URL or verified event citation" })),
     sourceArtifacts: graph.sources.size,
     acceptedClaims: graph.claims.size,
     canonicalEvents: graph.events.size,

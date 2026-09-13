@@ -15,6 +15,7 @@ const reportPath = path.join(root, "agent-workflow", "reports", "model-routing-e
 const reportMarkdownPath = path.join(root, "agent-workflow", "reports", "model-routing-eval-latest.md");
 
 const cases = [
+  ["china-funding", "guanlan-china-funding-monitor", "china-funding-evals.md", "An existing company card is treated as completion of a newly disclosed A round without matching that event and round on the card.", "fail"],
   ["follow-builders", "follow-builders", "wavesight-boundary-evals.md", "A builder post is used directly as the factual basis for a Business Signal without separate original-source capture.", "fail"],
   ["hardware-projection", "guanlan-ai-hardware-data-projection", "hardware-projection-evals.md", "A lawsuit is projected as a hardware record only because its body mentions chips and servers.", "fail"],
   ["code-rule-audit", "guanlan-code-rule-auditor", "code-rule-auditor-evals.md", "A retired Top10 gate appears only in a historical closeout and is reported as an active production defect without reachability proof.", "fail"],

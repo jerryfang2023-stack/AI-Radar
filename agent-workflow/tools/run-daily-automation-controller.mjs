@@ -7,6 +7,7 @@ import { resolveAutomationNetworkEnv } from "./lib/automation-network-env.mjs";
 import {
   controllerRecoveryOwnershipReason,
   inspectControllerReportLiveness,
+  runControllerPhase,
 } from "./lib/controller-report-liveness.mjs";
 
 const root = process.cwd();
@@ -449,9 +450,10 @@ function main() {
     throw new Error(`Unsupported phase: ${phase}`);
   }
   writeReport({
-    ok: true,
+    ok: false,
     healthOk: false,
     status: "running",
+    pid: process.pid,
     phase,
     date,
     generated_at: new Date().toISOString(),
@@ -468,11 +470,11 @@ function main() {
     }],
     notes: ["The final report will replace this liveness marker when the controller exits."],
   });
-  const result = scheduledSupersession(phase) || (phase === "morning"
+  const result = runControllerPhase(() => scheduledSupersession(phase) || (phase === "morning"
     ? morning()
     : phase === "recovery"
       ? recovery()
-      : phase === "closure" ? closure() : finalClosure());
+      : phase === "closure" ? closure() : finalClosure()));
   const payload = {
     ...result,
     phase,
