@@ -4,6 +4,8 @@ Harness 将任务、规则、设计、执行能力、验证和交付证据串成
 
 ## 入口与事实源
 
+- [字体／文案／设计规范中心](expression-design.md)：集中管理专业表达、字体排版、VI 资产与验收入口。
+
 - [关联清单](manifest.json)：稳定流程 ID、现有模块 ID、四类引用、验收标准、恢复方式及既有治理任务编号。
 - [模块完整性模板](module-completeness-template.md)：新增模块或改变契约时使用；已有资料通过引用复用。
 - [V4 执行流程](../../context/06-execution-harness.md)：事实生产的专项流程。

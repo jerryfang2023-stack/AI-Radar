@@ -17,6 +17,125 @@
   "policy": "这是关联索引；模块名称/责任归 registry，规则正文归所属事实源。引用存在不等于检查通过。命令只展示，不自动执行。",
   "entries": [
     {
+      "id": "H-expression-design",
+      "moduleId": "skills",
+      "title": "字体／文案／设计规范中心",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "context/02-vi-style.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/governance/professional-copy-guidelines.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/governance/copy-first-page-gate.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/brand/wavesight-ai-vi/typography-guidelines.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/brand/wavesight-ai-vi/page-typography-position-guidelines.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/harness/expression-design.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/brand/wavesight-ai-vi/USAGE.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/brand/wavesight-ai-vi/visual-identity-guidelines.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/brand/wavesight-ai-vi/brand-tokens.css",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/brand/wavesight-ai-vi/motion-tokens.css",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/brand/wavesight-ai-vi/executable-svg/README.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/brand/wavesight-ai-vi/reference-images/README.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "context/frontstage-page-contracts.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/agents/experience-editorial-agent.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-typography-qc/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/governance/professional-copy-guidelines.md",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/governance/typography-first-page-gate.md",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "按规范中心执行适用的术语、文案、字体与视觉人工复核；记录文案表和检查结果",
+        "cwd": "wavesight:.",
+        "mode": "manual-review"
+      },
+      "acceptance": "专业术语准确且便于理解；事实与判断边界清楚；适用文案表、字体表、实现和视觉验收一致。文件关联通过不代表所有既有内容已复审。",
+      "recovery": "从 Git 恢复所属规范；改路径后同步集中导航和 Harness 关联，再刷新管理台。",
+      "tracking": [],
+      "evidenceRequirement": "记录目标内容、读者、专业术语复核、源版本和适用视觉检查；不以关联检查替代语义与业务验收。"
+    },
+    {
       "id": "H-data-center",
       "moduleId": "data-center",
       "title": "事实生产与数据中台",

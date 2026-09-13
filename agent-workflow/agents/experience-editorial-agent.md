@@ -34,6 +34,7 @@ Experience & Editorial 负责把已放行的数据与产品结构转换为清晰
 
 - `AGENTS.md`
 - `context/00-current-state.md`
+- `agent-workflow/governance/professional-copy-guidelines.md`（涉及专业领域文案时）
 - `context/02-vi-style.md`
 - `context/frontstage-page-contracts.md`
 - 目标页面、渲染脚本和对应数据契约

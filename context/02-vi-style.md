@@ -15,6 +15,8 @@ priority: current
 
 # 02 VI Style｜观澜视觉与页面规范
 
+集中导航：[字体／文案／设计规范中心](../agent-workflow/harness/expression-design.md)。专业领域表达按 [专业领域文案规范](../agent-workflow/governance/professional-copy-guidelines.md) 执行。
+
 ## 任务启动
 
 页面 / 视觉任务默认读取：

@@ -102,6 +102,8 @@ If an old page rule conflicts with `SITE-V4.6.1-research-retirement`, delete or 
 | `context/12-data-center-v4.md` | SITE-V4.0 factual data contract, boundaries, and daily execution |
 | `context/context-index.md` | context router |
 
+For Guanlan copy involving professional domains, read `agent-workflow/governance/professional-copy-guidelines.md`. Typography, copy and design sources are centrally indexed in `agent-workflow/harness/expression-design.md`.
+
 ## Current Task Routes
 
 ### Operations Backend
