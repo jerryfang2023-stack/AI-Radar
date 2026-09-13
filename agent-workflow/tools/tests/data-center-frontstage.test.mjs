@@ -9,6 +9,10 @@ import { classificationEntityIds } from "../../product/classification-entity-sco
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
+const personReviewDecisions = () => ["entity-catalog", "person-account", "funding-founder", "china-funding-entity"]
+  .flatMap((name) => JSON.parse(fs.readFileSync(path.join(root, `01-SiteV2/content/11-databases/entity-history-v1/${name}-review-decisions.json`), "utf8")).decisions)
+  .filter((decision) => decision.review_status === "accepted"
+    && ["confirm", "correct"].includes(decision.action) && decision.canonical?.catalog_type === "person");
 let cachedFrontstageData;
 const buildFrontstageData = (targetRoot) => cachedFrontstageData ??= buildFreshFrontstageData(targetRoot);
 
@@ -195,12 +199,11 @@ test("person index contains reviewed natural people while preserving all viewpoi
 
 test("person index publishes exactly the reviewed founder batch with funding and source lineage", () => {
   const data = buildFrontstageData(root);
-  const review = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/funding-founder-review-decisions.json"), "utf8"));
   const fundingFounders = data.people.filter((person) => person.fundingInsightIds?.length);
-  const reviewedIds = new Set(review.decisions.map((decision) => decision.entity_id));
+  const reviewedIds = new Set(personReviewDecisions().filter((decision) => decision.canonical.funding_profiles?.length).map((decision) => decision.entity_id));
 
-  assert.equal(fundingFounders.length, 30);
-  assert.ok(fundingFounders.every((person) => reviewedIds.has(person.id)));
+  assert.ok(reviewedIds.size > 0);
+  assert.deepEqual(new Set(fundingFounders.map((person) => person.id)), reviewedIds);
   assert.ok(fundingFounders.every((person) => person.founderCompanies.length > 0));
   assert.ok(fundingFounders.every((person) => person.founderEvidence.every((evidence) =>
     evidence.sourceUrl && evidence.sourceContentHash && evidence.quoteHash
@@ -219,8 +222,9 @@ test("entity catalog deployment gate accepts the composite reviewed-person servi
 
   assert.equal(result.status, 0, result.stderr || result.stdout);
   const output = JSON.parse(result.stdout);
-  assert.equal(output.public_natural_people, 61);
-  assert.equal(output.funding_founder_profiles, 30);
+  assert.equal(output.public_natural_people, new Set(personReviewDecisions().map((decision) => decision.entity_id)).size);
+  const founderLedger = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/funding-founder-review-decisions.json"), "utf8"));
+  assert.equal(output.funding_founder_profiles, founderLedger.decisions.length);
 });
 
 test("reviewed product ownership wins over a fresh duplicate organization alias", () => {
@@ -367,7 +371,7 @@ test("data center page uses the official logo and sidebar navigation", () => {
   assert.doesNotMatch(html, /全局搜索/u);
 });
 
-test("community intelligence keeps the V3.4.5 content and link workflow in the V4 shell", () => {
+test("community intelligence preserves source-specific pages, content and document links", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/data-center.html"), "utf8");
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
   const css = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.css"), "utf8");
@@ -379,7 +383,13 @@ test("community intelligence keeps the V3.4.5 content and link workflow in the V
   assert.match(html, /data-community-dialog-content/u);
   assert.match(script, /data\/community-intelligence-daily\/index\.json/u);
   assert.match(script, /all: \{ label: "全部", rail: "场景索引"/u);
-  assert.match(script, /activeView: "all"/u);
+  for (const source of ["scys", "aipoju"]) {
+    const page = fs.readFileSync(path.join(root, `01-SiteV2/site/community-${source}.html`), "utf8");
+    assert.ok(page.includes(`data-community-source="${source}"`));
+    assert.match(page, /data-community-dialog-content/u);
+  }
+  assert.match(script, /communitySource === "aipoju"[^\n]+: "all"/u);
+  assert.match(script, /activeView:[^\n]+: "cases"/u);
   assert.match(script, /targetView === "all"/u);
   assert.match(script, /industry_case/u);
   assert.match(script, /tool_tip/u);
@@ -433,7 +443,7 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
 test("business signals and first-line viewpoints serialize shared data-center publications", () => {
   const businessWorkflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
   const firstLineWorkflow = fs.readFileSync(path.join(root, ".github/workflows/daily-first-line-viewpoints-pr.yml"), "utf8");
-  const concurrencySection = (workflow) => workflow.slice(workflow.indexOf("concurrency:"), workflow.indexOf("jobs:"));
+  const concurrencySection = (workflow) => workflow.match(/concurrency:\s*\n\s+group:[^\n]+\n\s+cancel-in-progress:[^\n]+/u)?.[0] || "";
 
   for (const section of [concurrencySection(businessWorkflow), concurrencySection(firstLineWorkflow)]) {
     assert.match(section, /group: wavesight-data-center-publication/u);

@@ -39,6 +39,7 @@ jobs:
       - run: npm run assert:versions
       - run: npm run assert:source-titles
       - run: npm run test:data-center
+      - run: npm run test:data-center-site
       - run: npm run test:community-intelligence
       - run: npm run assert:scys-library
       - run: npm run test:china-funding
