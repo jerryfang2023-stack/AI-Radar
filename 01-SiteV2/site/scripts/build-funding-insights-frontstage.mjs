@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import crypto from "node:crypto";
 import { fundingCompanyDisplayName } from "../../../agent-workflow/tools/funding-company-display-v1.mjs";
+import { chinaFundingActorEvidence } from "../../../agent-workflow/tools/lib/china-market-v1.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -22,6 +23,20 @@ import {
 } from "../../../agent-workflow/tools/public-zh-translation-v1.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+
+// Application research can establish the funded company's location without
+// manufacturing a canonical entity or treating a Chinese publisher as China scope.
+export function fundingCompanyChinaEvidence(card) {
+  const sources = new Set((card.research_sources || []).map((source) => source.source_id));
+  const evidence = (card.company?.evidence_refs || [])
+    .filter((ref) => sources.has(ref.source_id) && ref.source_content_hash && ref.quote_hash)
+    .map((ref) => ref.quote).join("\n");
+  for (const name of [card.company?.name, card.company?.full_name]) {
+    const match = chinaFundingActorEvidence(name, evidence);
+    if (match.matched) return match;
+  }
+  return { matched: false, basis: "" };
+}
 
 export function fundingProductFormDecision(card) {
   const explicitId = String(card.analysis?.product_form_id || "").trim();
@@ -465,7 +480,8 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       const chinaAlias = [card.company?.name, card.company?.full_name]
         .map((name) => chinaAliases.get(normalizedListKey(name)))
         .find(Boolean) || "";
-      const chinaMarket = Boolean(chinaAlias)
+      const companyEvidence = fundingCompanyChinaEvidence(card);
+      const chinaMarket = Boolean(chinaAlias) || companyEvidence.matched
         || sourceScopes.some((scope) => scope.market_region === "CN" && scope.china_market_match);
       const marketScope = {
         market_region: chinaMarket ? "CN" : "GLOBAL",
@@ -473,6 +489,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
         china_market_basis: [...new Set([
           ...sourceScopes.flatMap((scope) => scope.china_market_basis || []),
           ...(chinaAlias ? [`china_entity_alias:${chinaAlias}`] : []),
+          ...(companyEvidence.matched ? [`funding_company_evidence:${companyEvidence.basis}`] : []),
         ])],
         source_registry_ids: [...new Set(sourceScopes.flatMap((scope) => scope.source_registry_ids || []))],
       };

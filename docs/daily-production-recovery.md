@@ -90,6 +90,11 @@ event. Qualitative Chinese lower bounds such as `超亿元` are normalized as CN
 lower bounds and remain authoritative when a persisted card is reused; reuse
 repairs canonical amount/date/round before the card is admitted again.
 Spaced Chinese round labels (for example, `D 轮`) remain proceeds wording.
+Implicit approximate proceeds such as `近亿元` retain their qualifier and normalize
+as approximately 100 million yuan, never as an unqualified billion-wide range.
+Funding application market scope can use the funded company's source-bound legal
+identity or headquarters evidence; a Chinese publisher or investor alone cannot
+establish China scope, and this does not create canonical entities or Claims.
 An earlier-clause financing verb cannot classify a later valuation as proceeds;
 English valuation qualifiers such as `above` and `of more than` stay valuations.
 Financing history reads the latest event snapshot first and requires an accepted

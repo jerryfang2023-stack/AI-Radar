@@ -173,6 +173,11 @@ export function normalizeFundingAmount(value = "") {
   if (!original || /未披露|未公布|undisclosed|not disclosed/iu.test(original)) return empty;
 
   const compact = original.replace(/,/gu, "").replace(/级别/gu, "级");
+  const implicitCnyApproximate = compact.match(/^(?:接近|将近|近|约)(千万元|亿元|千万|亿)(?:人民币)?$/u);
+  if (implicitCnyApproximate) {
+    const value = amountMultiplier(implicitCnyApproximate[1]);
+    return { currency: "CNY", value, min_value: null, max_value: null, unit: "base", status: "approximate", display_zh: fundingAmountDisplay("CNY", value, "approximate") };
+  }
   const implicitCnyBound = compact.match(/^(?:超过|超|逾|至少)(千万元|亿元|千万|亿)(?:级)?(?:人民币)?$/u);
   if (implicitCnyBound) {
     const minValue = amountMultiplier(implicitCnyBound[1]);
@@ -238,7 +243,7 @@ export function normalizeFundingAmount(value = "") {
 
 function fundingAmountMentions(value = "") {
   const text = clean(value).normalize("NFKC");
-  const pattern = /(?:(?<![\d.一二三四五六七八九十百千万数])(?:数)?(?:千万|亿)美元|(?<![\d.一二三四五六七八九十百千万数])(?:数)?(?:千万元|亿元|千万|亿)(?:级别|级)?(?:人民币)?|(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥￥]\s*\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?|\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?\s*(?:美元|美金|人民币|元人民币|欧元|英镑|日元|元|USD|CNY|RMB|EUR|GBP|JPY))/giu;
+  const pattern = /(?:(?<![\d.一二三四五六七八九十百千万数])(?:数)?(?:千万|亿)美元|(?<![\d.一二三四五六七八九十百千万数])(?:数)?(?:千万元|亿元|千万|亿)(?:级别|级)?(?:人民币)?|(?:超过|超|逾|至少|接近|将近|近|约)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥￥]\s*\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?|\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?\s*(?:美元|美金|人民币|元人民币|欧元|英镑|日元|元|USD|CNY|RMB|EUR|GBP|JPY))/giu;
   return [...text.matchAll(pattern)].map((match) => {
     const before = text.slice(Math.max(0, match.index - 56), match.index);
     const after = text.slice(match.index + match[0].length, match.index + match[0].length + 56);
