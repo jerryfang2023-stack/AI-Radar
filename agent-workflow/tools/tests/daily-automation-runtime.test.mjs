@@ -12,9 +12,23 @@ import { writeRecurringIncidents } from "../write-recurring-production-incidents
 import {
   controllerRecoveryOwnershipReason,
   inspectControllerReportLiveness,
+  isFreshSupervisionReport,
 } from "../lib/controller-report-liveness.mjs";
 
 const root = process.cwd();
+
+test("final closure rejects stale evidence but preserves fresh lane-finding reports", () => {
+  const action = { status: 0, started_at: "2026-09-13T08:45:00.000Z", finished_at: "2026-09-13T08:46:00.000Z" };
+  const report = { date: "2026-09-13", generated_at: "2026-09-13T08:45:30.000Z", ok: true, status: "passed", lanes: [] };
+  assert.equal(isFreshSupervisionReport(report, action, report.date), true);
+  assert.equal(isFreshSupervisionReport({ ...report, status: "warning" }, action, report.date), true);
+  assert.equal(isFreshSupervisionReport({ ...report, ok: false, status: "failed" }, { ...action, status: 1 }, report.date), true);
+  for (const invalid of [null, {}, { ...report, generated_at: action.started_at.replace("08:45", "08:44") },
+    { ...report, generated_at: "2026-09-13T08:47:00Z" }, { ...report, date: "2026-09-12" },
+    { ...report, status: "running" }, { ...report, lanes: undefined },
+  ]) assert.equal(isFreshSupervisionReport(invalid, action, report.date), false);
+  for (const status of [null, 2, 3221225786]) assert.equal(isFreshSupervisionReport(report, { ...action, status }, report.date), false);
+});
 const read = (name) => fs.readFileSync(path.join(root, "agent-workflow", "tools", name), "utf8");
 
 test("manual controller and repair defaults keep logs outside the checkout", () => {

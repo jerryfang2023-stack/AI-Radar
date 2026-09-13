@@ -4,6 +4,7 @@ import path from "node:path";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { isReusableBusinessSignalsRun } from "./lib/business-signals-checkpoint.mjs";
+import { isBusinessSignalsProductionReady } from "./lib/daily-production-chain-state.mjs";
 
 const root = process.cwd();
 
@@ -98,9 +99,11 @@ function v4Assets() {
   const gate = readOriginJson(gatePath, {});
   const frontstage = readOriginJson(frontstagePath, {});
   const telemetry = readOriginJson(telemetryPath, {});
+  const production = readOriginJson(`agent-workflow/reports/${date}-persistent-asset-manifest.json`, {});
+  const laneReady = isBusinessSignalsProductionReady(production, date);
   const eventCount = Number(gate?.counts?.canonical_events || manifest?.counts?.canonical_events || 0);
   return {
-    ready: fetch.ok
+    ready: fetch.ok && laneReady
       && manifest?.date === date
       && gate?.date === date
       && gate?.ok === true
@@ -108,6 +111,9 @@ function v4Assets() {
       && telemetry?.v4_gate?.status === "passed"
       && [frontstage?.latestDataDate, frontstage?.currentDate].includes(date),
     fetch_ok: fetch.ok,
+    business_lane_ready: laneReady,
+    business_lane_date: production?.date || "",
+    business_lane_mode: production?.workflow_mode || "",
     manifest_date: manifest?.date || "",
     gate_date: gate?.date || "",
     gate_ok: gate?.ok === true,

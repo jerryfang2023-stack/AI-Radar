@@ -71,7 +71,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Follow-builders support Skill | follow-builders v2.1.1 |
 | Weekly business-change content Skill | guanlan-weekly-business-change-radar v1.3.0 |
 | Monthly business-structure content Skill | guanlan-monthly-business-structure-report v1.0.0 |
-| Daily source monitor Skill | guanlan-daily-monitor v1.3.0 |
+| Daily source monitor Skill | guanlan-daily-monitor v1.3.1 |
 | Source-intake quality gate Skill | guanlan-monitor-quality-gate v1.3.0 |
 | Source-intake QC Skill | guanlan-daily-monitor-qc v1.3.0 |
 | Skill governance editor | guanlan-skill-editor v2.1.0 |

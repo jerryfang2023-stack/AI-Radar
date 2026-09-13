@@ -17,6 +17,9 @@ source_capture:
   original_urls_present: true
   full_text_or_fallback_logged: true
   source_snapshots_saved: true
+  ephemeral_capture: 01-SiteV2/content/01-raw/originals
+  public_locator: body_free
+  publication_owner_requires: private_persistence_verified_then_public_bodies_removed
 monitor_log:
   source_distribution: present
   failed_sources: present

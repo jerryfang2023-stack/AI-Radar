@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 import { buildTagIndex, readTagTaxonomy } from "./tag-taxonomy-utils.mjs";
 import { completeOpinionTranslation } from "./opinion-translation-utils.mjs";
 
@@ -28,6 +29,21 @@ const maxRemarkAgeHours = numberArg("max-remark-age-hours", 96);
 const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
 const dataFile = path.resolve(root, args.get("data-file") || path.join("01-SiteV2", "site", "data", "follow-builders-daily.json"));
 const tagIndex = buildTagIndex(readTagTaxonomy(root));
+const sourceRef = args.get("source-ref") || "";
+let sourceCommit = "";
+
+function readSnapshot() {
+  if (!sourceRef) return JSON.parse(fs.readFileSync(dataFile, "utf8"));
+  if (!/^[A-Za-z0-9][A-Za-z0-9._/-]*$/u.test(sourceRef)) throw new Error("Invalid builders source ref");
+  if (args.has("data-file")) throw new Error("--source-ref cannot be combined with --data-file");
+  const git = (values) => {
+    const result = spawnSync("git", values, { cwd: root, encoding: "utf8", windowsHide: true, timeout: 30_000, maxBuffer: 32 * 1024 * 1024 });
+    if (result.error || result.status !== 0) throw new Error(`Cannot read builders source ref: ${result.stderr || result.error?.message || sourceRef}`);
+    return result.stdout.trim();
+  };
+  sourceCommit = git(["rev-parse", "--verify", `${sourceRef}^{commit}`]);
+  return JSON.parse(git(["show", `${sourceCommit}:01-SiteV2/site/data/follow-builders-daily.json`]));
+}
 
 function numberArg(name, fallback) {
   const value = Number(args.get(name));
@@ -84,11 +100,11 @@ const problems = [];
 const warnings = [];
 let payload = null;
 
-if (!fs.existsSync(dataFile)) {
+if (!sourceRef && !fs.existsSync(dataFile)) {
   problems.push(`missing builders data: ${rel(dataFile)}`);
 } else {
   try {
-    payload = JSON.parse(fs.readFileSync(dataFile, "utf8"));
+    payload = readSnapshot();
   } catch (error) {
     problems.push(`invalid builders data JSON: ${error.message}`);
   }
@@ -218,6 +234,8 @@ const report = `# Follow Builders Data Gate
 - data_date: ${payload ? dateInShanghai(payload?.meta?.generatedAt) || "missing" : "missing"}
 - status: ${status}
 - data_file: ${rel(dataFile)}
+- source_ref: ${sourceRef || "working-tree"}
+- source_commit: ${sourceCommit || "not-applicable"}
 - remarks_min: ${remarksMin}
 - builders_min: ${buildersMin}
 

@@ -8,6 +8,7 @@ import {
   controllerRecoveryOwnershipReason,
   inspectControllerReportLiveness,
   runControllerPhase,
+  isFreshSupervisionReport,
 } from "./lib/controller-report-liveness.mjs";
 
 const root = process.cwd();
@@ -179,24 +180,27 @@ function morning() {
 }
 
 function firstLineRecovery() {
+  const refresh = run("Refresh accepted builders publication ref", "git", ["fetch", "origin", "+refs/heads/main:refs/remotes/origin/main", "--quiet"]);
+  if (!refresh.ok) return { ok: false, status: "inspection_failed", actions: [refresh] };
   const gate = run("First-Line Viewpoints gate", process.execPath, [
     "agent-workflow/tools/assert-follow-builders-data.mjs",
     `--date=${date}`,
+    "--source-ref=origin/main",
     `--reports-dir=${reportsDir}`,
   ]);
-  if (gate.ok) return { ok: true, status: "healthy", actions: [gate] };
+  if (gate.ok) return { ok: true, status: "healthy", actions: [refresh, gate] };
 
   const workflow = "daily-first-line-viewpoints-pr.yml";
   const inspected = workflowRuns(workflow);
   const active = inspected.runs.find((item) => ["queued", "in_progress"].includes(item.status));
   const successful = inspected.runs.find((item) => item.conclusion === "success");
-  if (!inspected.available) return { ok: false, status: "inspection_failed", actions: [gate, inspected.result] };
-  if (active) return { ok: true, status: "waiting", actions: [gate, inspected.result], run: active };
+  if (!inspected.available) return { ok: false, status: "inspection_failed", actions: [refresh, gate, inspected.result] };
+  if (active) return { ok: true, status: "waiting", actions: [refresh, gate, inspected.result], run: active };
   if (successful) {
     return {
       ok: false,
       status: "publication_repair_required",
-      actions: [gate, inspected.result],
+      actions: [refresh, gate, inspected.result],
       run: successful,
     };
   }
@@ -204,7 +208,7 @@ function firstLineRecovery() {
   return {
     ok: dispatch.ok,
     status: dispatch.ok ? "fallback_dispatched" : "dispatch_failed",
-    actions: [gate, inspected.result, dispatch],
+    actions: [refresh, gate, inspected.result, dispatch],
   };
 }
 
@@ -380,20 +384,20 @@ function finalClosure() {
       return null;
     }
   })();
-  const supervisionReported = Boolean(supervisionPayload);
+  const supervisionReported = isFreshSupervisionReport(supervisionPayload, supervision, date);
   const supervisionAction = {
     ...supervision,
     ok: supervisionReported,
-    health_status: supervisionPayload?.status || "report_missing",
+    health_status: supervisionReported ? supervisionPayload.status : "report_missing_or_stale",
   };
   const executionOk = dataLake.ok && dataLakeGate.ok && vaultSync.ok && fundingPortal.ok && opsPublication.ok && discoveryRefresh.ok && supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
   return {
     ok: executionOk,
-    healthOk: Boolean(supervisionPayload?.ok),
+    healthOk: supervisionReported && Boolean(supervisionPayload?.ok),
     status: executionOk
       ? supervisionPayload?.status === "passed" ? "closed" : "closed_with_lane_findings"
       : "closure_execution_failed",
-    lanes: supervisionPayload?.lanes || [],
+    lanes: supervisionReported ? supervisionPayload.lanes : [],
     actions: [dataLake, dataLakeGate, vaultSync, fundingPortal, opsPublication, discoveryRefresh, supervisionAction, evidenceSupply, recurringIncidents],
     notes: [
       "Scheduled final closure follows the 16:10 First-Line Viewpoints window; manual runs respect the current time unless explicitly forced.",

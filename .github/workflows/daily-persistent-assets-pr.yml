@@ -137,7 +137,8 @@ jobs:
 
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             if [ -f "$intake_file" ] && [ -f "$data_center_manifest" ] && [ -f "$telemetry_file" ]; then
-              if node agent-workflow/tools/assert-data-center-v4.mjs --date="${RUN_DATE}" >/tmp/data-center-v4-health.log 2>&1 \
+              if node agent-workflow/tools/assert-business-signals-completion.mjs --date="${RUN_DATE}" \
+                && node agent-workflow/tools/assert-data-center-v4.mjs --date="${RUN_DATE}" >/tmp/data-center-v4-health.log 2>&1 \
                 && node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}" >/tmp/funding-insights-health.log 2>&1 \
                 && node agent-workflow/tools/assert-daily-production-chain.mjs --date="${RUN_DATE}" --stage=pre-commit --block-stale=true >/tmp/business-chain-health.log 2>&1; then
                 skip=true
@@ -664,6 +665,7 @@ jobs:
               "monitor": "${{ steps.resume-artifact.outputs.used == 'true' && 'restored' || steps.monitor.outcome }}",
               "structured_intake_gate": "${{ steps.persistent-assets-post-monitor.outcome }}",
               "data_center_v4_build": "${{ steps.data-center-v4.outcome }}",
+              "source_title_repair": "${{ steps.source-title-repair.outcome }}",
               "data_center_v4_gate": "${{ steps.data-center-v4-gate.outcome }}",
               "data_center_v4_materialize": "${{ steps.data-center-v4-materialize.outcome }}",
               "opportunity_map_v4": "${{ steps.opportunity-map-v4.outcome }}",
@@ -915,9 +917,10 @@ jobs:
         run: |
           set -euo pipefail
           pr_number="${{ steps.pr.outputs.pr_number }}"
+          merge_head="$(node agent-workflow/tools/wait-for-production-code-checks.mjs --pr="$pr_number")"
           merge_body="Automated Data Center V4 update after structured intake, factual integrity, application projection, and operations gates passed."
 
-          if gh pr merge "$pr_number" \
+          if gh pr merge "$pr_number" --match-head-commit "$merge_head" \
             --squash \
             --auto \
             --delete-branch \
@@ -933,7 +936,7 @@ jobs:
 
           if grep -Eqi "auto-merge.*disabled|not enabled for this repository|GraphQL:.*auto.?merge" auto-merge-error.log; then
             echo "Repository auto-merge is not available; attempting immediate merge after gates passed."
-            if gh pr merge "$pr_number" \
+            if gh pr merge "$pr_number" --match-head-commit "$merge_head" \
               --squash \
               --delete-branch \
               --subject "Persist business signals for ${RUN_DATE}" \
@@ -962,7 +965,10 @@ jobs:
             --skipReason="${{ steps.existing-assets.outputs.reason }}" \
             --monitor="${{ steps.resume-artifact.outputs.used == 'true' && 'success' || steps.monitor.outcome }}" \
             --evidenceGate="${{ steps.persistent-assets-post-monitor.outcome }}" \
+            --evidenceBoundary="${{ steps.evidence-boundary.outcome }}" \
             --dataCenterBuild="${{ steps.data-center-v4.outcome }}" \
+            --modelRebuild="${{ steps.data-center-v4-model-rebuild.outcome }}" \
+            --sourceTitleRepair="${{ steps.source-title-repair.outcome }}" \
             --dataCenterGate="${{ steps.data-center-v4-gate.outcome }}" \
             --dataCenterMaterialize="${{ steps.data-center-v4-materialize.outcome }}" \
             --opportunity="${{ steps.opportunity-map-v4.outcome }}" \

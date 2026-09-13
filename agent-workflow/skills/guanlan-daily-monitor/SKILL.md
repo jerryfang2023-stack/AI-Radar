@@ -3,7 +3,7 @@ name: guanlan-daily-monitor
 description: Use when running or repairing the daily source-capture implementation that writes immutable snapshots and SOURCE-INTAKE-V1 for Data Center V4. Do not use for Claims, CanonicalEvents, tags, projections, pages, judgment, recommendations, V3 Raw/Pool Markdown, or Signal Cards.
 metadata:
   guanlan:
-    version: "1.3.0"
+    version: "1.3.1"
     lane: "Data Center Source Ingestion"
     status: "current sub-skill"
     order: 40
@@ -60,7 +60,7 @@ The wrapper reads collection limits and diagnostics from the current source-inta
 - Normalize publication dates and filter stale archives.
 - Use same-attempt adaptive expansion only from already collected candidates.
 - Do not stage First-Line Viewpoints, Community Intelligence, canonical facts, application projections, or frontstage data.
-- Do not write `01-SiteV2/content/01-raw`, `01-SiteV2/content/02-pool`, Signal Cards, V3 Desk, graph, or legacy mappings.
+- Do not create legacy Raw/Pool Markdown, Signal Cards, V3 Desk, graph, or legacy mappings. This does not forbid the current capture boundary: ephemeral snapshots under `01-SiteV2/content/01-raw/originals` and the body-free `01-SiteV2/content/01-raw/source-index.jsonl` are allowed. The owning workflow must persist full bodies privately and remove public body copies before publication; a locator alone is not archival proof.
 
 ## Failure routing
 

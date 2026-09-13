@@ -103,6 +103,35 @@ test("first-line recovery gate rejects previous-day data for the requested date"
   }
 });
 
+test("morning recovery validates accepted main without overwriting a dirty local snapshot", () => {
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-builders-main-"));
+  try {
+    const relativeData = "01-SiteV2/site/data/follow-builders-daily.json";
+    const relativeTaxonomy = "agent-workflow/product/column-tag-taxonomy-v1.json";
+    for (const file of [relativeData, relativeTaxonomy]) {
+      fs.mkdirSync(path.dirname(path.join(fixtureRoot, file)), { recursive: true });
+      fs.copyFileSync(path.join(repositoryRoot, file), path.join(fixtureRoot, file));
+    }
+    const payload = JSON.parse(fs.readFileSync(path.join(fixtureRoot, relativeData), "utf8"));
+    const date = shanghaiDate(payload.meta.generatedAt);
+    runGit(fixtureRoot, ["init"]);
+    runGit(fixtureRoot, ["add", "."]);
+    runGit(fixtureRoot, ["-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-m", "accepted fixture"]);
+    runGit(fixtureRoot, ["update-ref", "refs/remotes/origin/main", "HEAD"]);
+    fs.writeFileSync(path.join(fixtureRoot, relativeData), "unfinished user draft", "utf8");
+    const args = [dataGateFile, `--date=${date}`, `--reports-dir=${fixtureRoot}`, "--max-generated-age-hours=100000", "--max-feed-age-hours=100000", "--max-fallback-feed-age-hours=100000", "--max-remark-age-hours=100000"];
+    const run = (extra) => spawnSync(process.execPath, [...args, ...extra], { cwd: fixtureRoot, encoding: "utf8", windowsHide: true });
+    assert.equal(run([]).status, 1);
+    const accepted = run(["--source-ref=origin/main"]);
+    assert.equal(accepted.status, 0, accepted.stderr || accepted.stdout);
+    assert.match(fs.readFileSync(path.join(fixtureRoot, `${date}-follow-builders-data-gate.md`), "utf8"), /source_commit: [a-f0-9]{40}/u);
+    assert.equal(run(["--source-ref=missing"]).status, 1);
+    assert.equal(fs.readFileSync(path.join(fixtureRoot, relativeData), "utf8"), "unfinished user draft");
+    const controller = fs.readFileSync(path.join(repositoryRoot, "agent-workflow/tools/run-daily-automation-controller.mjs"), "utf8");
+    assert.match(controller, /function firstLineRecovery\(\)[\s\S]*assert-follow-builders-data\.mjs[\s\S]*--source-ref=origin\/main/u);
+  } finally { fs.rmSync(fixtureRoot, { recursive: true, force: true }); }
+});
+
 test("forced afternoon supervision fails missing artifacts and passes count-consistent artifacts", async () => {
   const originalCwd = process.cwd();
   const originalArgv = process.argv;

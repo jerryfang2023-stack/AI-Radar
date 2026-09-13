@@ -36,3 +36,10 @@
 
 12. `fact_type_gap_visibility`
     - Pass when source-coverage gaps stay visible without fabricating same-day facts or lowering the V4 integrity gate.
+
+13. `ephemeral_capture_boundary`
+    - Pass when an authorized capture writes ephemeral originals and a body-free source-index locator, then the owning workflow verifies private persistence and removes public body copies before publication.
+    - Fail when a broad ban on the `01-raw` directory prevents current snapshot capture, or when the presence of a locator is treated as proof that full bodies were archived.
+
+14. `lane_completion_identity`
+    - Pass when same-date skip requires the general Business Signals completion receipt and current V4 gates; an earlier China-only bundle is not completion evidence for the general collector.

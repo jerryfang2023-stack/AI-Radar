@@ -193,7 +193,8 @@ jobs:
           printf 'Independent domestic financing discovery, source evidence and governed company/product/institution projections.\n\nPipeline outcome: %s. Failed stages retain last-good shared facts and publish diagnostics only.\n' "$PIPELINE_OUTCOME" > "$RUNNER_TEMP/china-funding-pr.md"
           pr="$(gh pr create --base main --head "$branch" --title "China funding $RUN_DATE" --body-file "$RUNNER_TEMP/china-funding-pr.md")"
           # Synchronous merge: do not release the shared writer slot while a PR is pending.
-          gh pr merge "$pr" --squash --delete-branch
+          merge_head="$(node agent-workflow/tools/wait-for-production-code-checks.mjs --pr="$pr")"
+          gh pr merge "$pr" --squash --delete-branch --match-head-commit "$merge_head"
           test "$(gh pr view "$pr" --json state --jq .state)" = MERGED
           sha="$(gh pr view "$pr" --json mergeCommit --jq .mergeCommit.oid)"
           echo "source_sha=$sha" >> "$GITHUB_OUTPUT"

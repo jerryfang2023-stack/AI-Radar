@@ -1,6 +1,20 @@
 export const DEFAULT_CONTROLLER_RUNNING_LEASE_MS = 1_800_000;
 export const DEFAULT_CONTROLLER_CLOCK_SKEW_MS = 60_000;
 
+// A lane-finding exit (1) may still produce a complete report. A crash/timeout
+// or an older same-date report is not evidence that this invocation completed.
+export function isFreshSupervisionReport(report, action, date) {
+  const generated = Date.parse(report?.generated_at || "");
+  const started = Date.parse(action?.started_at || "");
+  const finished = Date.parse(action?.finished_at || "");
+  return report?.date === date
+    && typeof report.ok === "boolean" && Array.isArray(report.lanes)
+    && ["passed", "warning", "failed", "waiting"].includes(report.status)
+    && [0, 1].includes(action?.status)
+    && Number.isFinite(started) && Number.isFinite(finished) && Number.isFinite(generated)
+    && generated >= started && generated <= finished;
+}
+
 export function runControllerPhase(operation) {
   try {
     return operation();
