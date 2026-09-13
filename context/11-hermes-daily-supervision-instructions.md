@@ -1,119 +1,49 @@
 ---
 status: current
-scope: hermes-control-plane-watchdog
-last_updated: 2026-07-25
-use_when:
-  - hermes control-plane watchdog
-  - missing daily controller report
-  - automation liveness escalation
-priority: current
+scope: manual-control-plane-inspection
+last_updated: 2026-09-13
 ---
 
-# Hermes Control Plane Watchdog Instructions
+# Manual supervision and optional Hermes inspection
 
-Hermes is no longer the WaveSight daily production supervisor. It is the final, independent control-plane watchdog.
+Daily production inspection and repair are operator-owned. The current Windows
+schedule is four tasks: 08:10 Morning (domestic/overseas financing and other Business Signals + independent Builder RSS),
+08:30 Community, 16:10 Follow Builders, 16:45 Final Closure.
 
-Current contract: `HERMES-V4.0-control-plane-watchdog`.
+The 09:15 Recovery, 09:50 Closure and 10:20 Hermes timers are retired. Do not
+recreate them during routine installation. The former seven-task contract and
+its historical receipts do not define current required task presence.
 
-Hermes answers one question only:
+## Daily operator check
 
-> Did the three daily automation controllers execute and leave readable reports?
+Check domestic financing, overseas/general financing and Builder RSS separately.
+A successful main dispatch does not prove that all three lanes completed.
+Read the actual production date and stage results, GitHub production/PR/deployment
+results and runtime receipts. A successful dispatch is not completed publication.
+Final Closure continues to own the data lake, external Vault, Funding Portal and
+protected OPS publication. Use its receipt as the combined end-of-day evidence.
 
-Data quality, lane recovery, publication repair, and Codex handoff are owned by the production gates, Daily Closure, and Codex self-repair.
+Preserve accepted upstream snapshots; resume the earliest failed stage and its
+dependents. Never recollect solely because a downstream build or publication failed.
 
-## Daily instruction
+## Optional manual tools
 
-Run once at 10:20 Asia/Shanghai, after the 09:50 Closure timeout window:
+- `node agent-workflow/tools/run-daily-automation-controller.mjs --phase=recovery`
+  checks lane status and may dispatch missing production.
+- `node agent-workflow/tools/run-daily-automation-controller.mjs --phase=closure --invoke-codex=false`
+  performs local self-check and safe repair without invoking Codex. This is a
+  write-capable manual action, not a read-only report command.
+- `node agent-workflow/tools/run-hermes-control-plane-watchdog.mjs --force=true --reports-dir=<runtime> --incident-dir=<runtime>/production-incidents`
+  checks Morning controller liveness only. It does not require receipts for retired
+  Recovery or Closure timers, and it does not evaluate business output quality.
+- The heartbeat publisher remains available for explicit manual use. Retired
+  phases are `not_scheduled` and excluded from active health aggregation. V1 payloads
+  retain their phase entries for compatibility with the existing cloud receiver.
 
-```powershell
-npm run hermes:control-plane
-```
+There is no expected daily Hermes heartbeat and no 10:30 heartbeat deadline.
+Absence of a new heartbeat must not create a missing-schedule or production incident.
+Historical heartbeat failures remain historical evidence.
 
-Expected controller reports:
-
-- `agent-workflow/reports/<date>-daily-automation-morning.json`
-- `agent-workflow/reports/<date>-daily-automation-recovery.json`
-- `agent-workflow/reports/<date>-daily-automation-closure.json`
-
-Hermes checks only:
-
-1. all three files exist and contain valid JSON;
-2. each report has the expected production date and phase;
-3. each report records at least one controller action.
-
-The watchdog writes:
-
-- `agent-workflow/reports/<date>-hermes-control-plane-watchdog.json`
-- `agent-workflow/reports/<date>-hermes-control-plane-watchdog.md`
-- one incident under `agent-workflow/inbox/production-incidents/` only when a controller report is missing or invalid.
-
-The same Windows task continues to the heartbeat publisher after the watchdog
-writes its report. A `manual_required` watchdog exits non-zero by design, but
-the wrapper still publishes that sanitized status to GitHub. The scheduled
-task fails only when the watchdog report cannot be generated or the heartbeat
-cannot be published.
-
-The publisher removes local paths, commands, stdout, report bodies, and
-production data, then dispatches the GitHub workflow
-`.github/workflows/hermes-control-plane-heartbeat.yml`. The public GitHub
-Actions run is the only supported GitHub-only liveness surface. Raw controller
-reports remain local. There is no separate heartbeat Windows task.
-
-External GitHub-only Hermes checks the latest `WaveSight Control Plane Heartbeat` workflow run for the current Asia/Shanghai date. A successful run means all three controllers were observable. A failed `manual_required` run means at least one controller or the watchdog was missing or invalid. Absence of a current run after 10:30 is `github_visibility_unavailable`; it is a heartbeat-publication failure, not proof that production data or a controller failed.
-
-## Status handling
-
-| Status | Meaning | Hermes action |
-|---|---|---|
-| `passed` | All controllers are observable. | Record and stop. |
-| `waiting` | The 10:20 check window has not arrived. | Stop without escalation. |
-| `manual_required` | A controller report is missing, unreadable, or structurally invalid. | Write one `control_plane_liveness` incident and stop. |
-
-A controller report may contain downstream statuses such as `repair_required`, `waiting`, or `targeted_repair_required`. Those statuses prove the controller executed. Hermes must not duplicate the downstream incident or start another repair.
-
-## Forbidden work
-
-Hermes must not:
-
-- inspect Raw, Claim, Entity, CanonicalEvent, FDE, hardware, Tag, or projection content;
-- evaluate Business Signals compatibility Cards, Top10 counts, active dates, titles, or V3 graph assets;
-- supervise First-Line Viewpoints, Community Intelligence, periodic reports, or the 16:10 follow-builders publication;
-- run `supervise:daily` as an agent-owned production review;
-- create routine lane-quality repair items;
-- dispatch GitHub workflows, recollect sources, rerun production, edit data, change gates, invoke Codex, push branches, merge PRs, or deploy;
-- interpret a downstream failure as a control-plane failure when the controller report exists.
-
-The heartbeat stage of the combined task may dispatch only
-`wavesight_control_plane_heartbeat`. The watchdog stage itself may not dispatch
-that event or any production workflow.
-
-## Incident boundary
-
-The current incident registry is:
-
-```text
-agent-workflow/inbox/production-incidents/
-```
-
-Retired Hermes-to-Codex handoff records are recoverable from Git history only. Current incidents are read and written exclusively through `agent-workflow/inbox/production-incidents/`.
-
-The only incident category Hermes may create is:
-
-```text
-lane: automation
-category: control_plane_liveness
-failed_gate: hermes_control_plane_watchdog
-```
-
-The requested action must be limited to restoring the missing scheduled task, controller process, or report-writing path. Once control-plane observability is restored, Closure and Codex decide whether downstream repair remains.
-
-## Human escalation
-
-Hermes may ask the user only when restoring observability requires:
-
-- Windows Scheduled Task permission;
-- GitHub authentication or repository permission;
-- a machine/login state that Codex cannot access;
-- approval for a new credential or scheduling mechanism.
-
-It must not ask the user to judge ordinary lane data quality or compatibility Card volume.
+The cloud Business Signals fallback, production-failure artifacts, weekly health,
+weekly reports and monthly reports remain enabled. The Hermes Gateway login task
+is separate from WaveSight's retired watchdog timer.

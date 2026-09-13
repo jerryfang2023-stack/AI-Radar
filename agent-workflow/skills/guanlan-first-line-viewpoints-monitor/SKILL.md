@@ -32,8 +32,8 @@ It may call the generic `follow-builders` skill for source / digest behavior, bu
 
 ## Current Timing
 
-- Morning local Codex RSS collection/build/sync: 08:30 Asia/Shanghai via `builder-observation-daily-sync`.
-- Conditional GitHub RSS fallback: the 09:15 consolidated recovery controller dispatches it only when the local gate is unhealthy and no same-date run exists.
+- Morning RSS collection/build/publication: the 08:10 Asia/Shanghai Morning controller conditionally dispatches `daily-first-line-viewpoints-pr.yml`. Builder RSS is independent of domestic/overseas financing discovery.
+- Healthy same-date data or queued/running workflows prevent duplicate dispatch. A successful run with missing accepted output requires publication repair. The old Codex RSS automation and 09:15/09:50 timers are retired; inspection and repair are operator-owned.
 - Daily Problem Watchdog records failed RSS / publication runs after the single conditional fallback. It must not start another recovery loop.
 - Afternoon local `follow-builders` skill publish: 16:10 Asia/Shanghai; the lane publisher records and validates its own durable report after completion.
 
@@ -97,13 +97,13 @@ When repairing repeated morning or afternoon monitoring failures, also read `exa
 Classify a failure before rerunning anything:
 
 - `supervision_observability`: daily report missing or GitHub lookup timed out while same-date data may be healthy.
-- `local_rss_cron_missed`: the 08:30 local Codex RSS collection/build/sync did not run or left stale page data.
+- `local_rss_cron_missed`: the 08:10 Morning RSS dispatch did not run or left stale page data; inspect the independent workflow before declaring collection missing. The category name is retained for compatibility.
 - `github_rss_publication`: GitHub RSS build/gate/sync passed but commit, PR, merge, or Pages failed.
 - `data_gate_failure`: `assert-follow-builders-data.mjs` failed on freshness, count, translation, URL/id, dedupe, or formal tags.
 - `history_backfill_failure`: committed snapshot discovery, historical provenance, translation/source-hash, AI relevance, opinion tags, or original-URL dedupe failed.
 - `v4_projection_failure`: current, history, and afternoon inputs exist but `first-line-viewpoints-v4.json` counts, date range, lane coverage, or release gate are inconsistent.
 - `guanlan_vault_projection_failure`: the post-merge person projection is missing, stale, or fails `assert:guanlan-vault`.
-- `prewindow_false_alarm`: lane supervision checked before the 09:50 consolidated closure for RSS or before the afternoon publisher finished.
+- `prewindow_false_alarm`: lane supervision checked before the 09:50 RSS observation window (a manual-check threshold, not a scheduled Closure task) or before the afternoon publisher finished.
 - `afternoon_skill_runner`: the local `follow-builders` skill publisher failed or did not write its output/report after 16:30.
 - `afternoon_count_mismatch`: the output file count and publish report count disagree, or either is zero.
 - `afternoon_publication_failure`: the afternoon feed and report are healthy, but branch push, PR creation, PR merge, or Pages publication failed. If same-day reruns fail with `stale info` or `force-with-lease` rejection after a previous PR deleted the remote automation branch, prune stale remote refs and rerun the publication path rather than reclassifying the feed as failed.
@@ -114,9 +114,9 @@ Repair the earliest category and rerun the smallest validation. Do not substitut
 
 Use this path for the public First-Line Viewpoints page:
 
-1. At 08:30, local Codex `builder-observation-daily-sync` runs blog RSS fetch, podcast RSS fetch, page-data build, and the data gate.
-2. At 09:15, the consolidated recovery controller may dispatch the same RSS page-data path when same-date data / timelines are missing and no run exists.
-3. At 09:50, closure checks after the local attempt and the single fallback. If it failed, same-date data is still unhealthy, and no run is active, record a targeted repair task instead of dispatching another workflow.
+1. At 08:10, Morning checks accepted RSS data and workflow state, then conditionally dispatches the RSS collection/build/gate/publication workflow. It does not run the retired Codex automation.
+2. Skip redispatch when same-date data passes its gate or a workflow is queued/running. Successful workflow execution without healthy accepted output requires publication-stage repair, not recollection.
+3. The operator reviews the actual run and accepted data after the observation window. Preserve Waiting for active runs. Record the first failed stage and repair it manually; 09:15 Recovery and 09:50 Closure are no longer timers.
 4. Success means:
    - same-date `follow-builders-daily.json`;
    - remarks count greater than `0` and builders count at least `6`;
@@ -127,7 +127,7 @@ Use this path for the public First-Line Viewpoints page:
    - `npm run assert:guanlan-vault` passes;
    - frontstage data does not contain the generic tag `Builder viewpoint`.
 5. Do not treat zero `### <run-date>` headings as missing sync by itself. A run can be healthy when all source items have earlier original dates and dry-run sync reports `added: 0`.
-6. If the 08:30 local run misses but GitHub fallback produces healthy same-date data, classify the local miss as an automation reliability issue, not a data-quality failure.
+6. If a missed 08:10 dispatch is recovered manually and same-date data passes its gate, record the missed trigger separately from data quality; never rerun already accepted RSS data.
 
 ## Afternoon Skill Path
 

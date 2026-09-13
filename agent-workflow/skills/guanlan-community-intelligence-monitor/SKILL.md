@@ -28,7 +28,7 @@ This skill owns the Community Intelligence lane. It supervises local logged-in c
 
 - Local logged-in collection: 08:30 Asia/Shanghai via Windows task `WaveSight Community Intelligence Daily`.
 - Successful local collection owns the archive, gate, and publish handoff.
-- Consolidated recovery: 09:15 Asia/Shanghai validates local data and records local Chrome/login repair when missing. GitHub publication is dispatch-only for targeted repair.
+- Daily validation and Chrome/login repair are operator-owned. The 09:15 Recovery and 09:50 Closure timers are retired. GitHub publication remains dispatch-only for targeted repair; 16:45 Final Closure retains final supervision.
 - Daily Problem Watchdog records failed publish runs to the production incident registry. It must not rerun local collection or dispatch recovery.
 - GitHub Actions can publish validated community files, but cannot replace local Chrome / logged-in collection.
 - Do not classify same-date data as missing before the first Community Intelligence check window. Before 08:45 Asia/Shanghai, stale data is normally yesterday's completed state unless a local collector failure log already exists.
@@ -59,7 +59,7 @@ For regression prevention, read `evals/community-intelligence-monitor-evals.md`.
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
 2. Confirm whether local collection ran and whether the local Chrome/login state was available.
 3. After collection and before archive generation, run `npm run translate:community-intelligence -- --date=<YYYY-MM-DD>`. Preserve `*Original`, model provenance, and `translationSourceHash`; failed translation blocks publication.
-4. Check Daily Closure and the production incident registry for the lane.
+4. Check the latest Final Closure receipt, local run and production incident registry for the lane; do not require a retired morning Closure receipt.
 5. Validate community data with `npm run assert:community-intelligence -- --date=<YYYY-MM-DD>`.
 6. Confirm archive outputs and daily snapshots exist.
 7. Publish only validated community-owned files through the community automation PR route when publication is authorized.
@@ -75,7 +75,7 @@ Classify Community Intelligence failures by the earliest broken stage. Do not re
 
 | Stage | Evidence | Action |
 |---|---|---|
-| Pre-window stale data | Before 08:45 Asia/Shanghai, `community-intelligence.json` still shows the previous production date and there is no same-day local failure log | Wait for the 08:45 local check and 09:15 consolidated recovery; do not create a failure inbox yet. |
+| Pre-window stale data | Before 08:45 Asia/Shanghai, `community-intelligence.json` still shows the previous production date and there is no same-day local failure log | Wait for the 08:45 observation threshold and inspect the local run; there is no separate 08:45/09:15 timer. Do not create a failure inbox prematurely. |
 | Local collection missing | After 08:45, same-date data / daily snapshot / archive is missing, or the local log shows Chrome / login / collector failure | Repair or rerun `agent-workflow/tools/run-community-intelligence.ps1` locally; GitHub cannot collect this lane. |
 | Local gate failed | Same-date data exists but `assert-community-intelligence-data.mjs` fails | Fix data shape, item/link floors, collector errors, or archive outputs, then rerun the gate. |
 | Publish workflow failed before gate | GitHub publish run fails while same-date local files are absent or stale on `main` | Stop GitHub retries; run local collection / archive first. |
@@ -88,11 +88,11 @@ Classify Community Intelligence failures by the earliest broken stage. Do not re
 The preferred before-10:00 path is:
 
 1. 08:30 local task runs collection, archive, gate, and local publish handoff in one local path.
-2. 09:15 consolidated recovery checks only local output and gate presence. If missing, classify as local collection missing and hand off to Codex / human local repair.
+2. After the observation window, the operator checks local output, gate and actual run state. If missing, repair the local collector or login; do not wait for a retired 09:15 timer.
 3. Healthy same-date data is a no-op; do not recollect it.
-4. 09:50 closure checks publication. If local output exists but publish is missing, record a targeted problem instead of rerunning collection.
+4. The operator checks publication. If local output exists but publish is missing, record a targeted problem instead of rerunning collection.
 5. Daily Problem Watchdog records failed publish workflows to the production incident registry and never retries the browser collector in GitHub.
-6. 09:50 closure confirms PR merge and Pages. If Pages is still queued / in progress, report waiting rather than local failure.
+6. Confirm PR merge and Pages from actual receipts. If Pages is queued / in progress, report waiting; 16:45 Final Closure keeps the combined final check.
 
 ## Lane Boundaries
 

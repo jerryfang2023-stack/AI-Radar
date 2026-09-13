@@ -54,7 +54,7 @@ const expected = {
   vault: "GUANLAN-VAULT-V1.2-private-evidence-linked (external)",
   dataLake: "DATA-LAKE-V4.1-24-table",
   privateEvidence: "PRIVATE-EVIDENCE-STORE-V2.0",
-  windowsAutomation: "WINDOWS-AUTOMATION-V1.0-seven-task",
+  windowsAutomation: "WINDOWS-AUTOMATION-V1.1-four-task-manual-supervision",
 };
 
 const ledgerChecks = [

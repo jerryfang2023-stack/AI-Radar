@@ -41,7 +41,6 @@ test("control-plane cycle publishes manual_required heartbeat after watchdog rep
   const reportsDir = path.join(temp, "reports");
   const incidentDir = path.join(temp, "incidents");
   fs.mkdirSync(reportsDir, { recursive: true });
-  writeController(reportsDir, "morning");
   writeController(reportsDir, "recovery");
 
   const result = runCycle(reportsDir, incidentDir);
@@ -62,7 +61,7 @@ test("control-plane cycle publishes passed heartbeat when all controllers are ob
   const reportsDir = path.join(temp, "reports");
   const incidentDir = path.join(temp, "incidents");
   fs.mkdirSync(reportsDir, { recursive: true });
-  for (const phase of ["morning", "recovery", "closure"]) writeController(reportsDir, phase);
+  for (const phase of ["morning"]) writeController(reportsDir, phase);
 
   const result = runCycle(reportsDir, incidentDir);
 

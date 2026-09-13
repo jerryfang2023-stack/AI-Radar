@@ -24,7 +24,7 @@ Use this supporting skill only within the WaveSight First-Line Viewpoints lane. 
 
 Read only the files needed for the current run:
 
-1. `context/08-automation.md` for the current seven-task schedule and lane boundaries.
+1. `context/08-automation.md` for the current four-task production schedule with operator-owned daily inspection and repair and lane boundaries.
 2. `agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md` for lane ownership.
 3. `evals/wavesight-boundary-evals.md` before publishing or repairing output.
 4. `examples/sample-digest.md` only when output shape is unclear.

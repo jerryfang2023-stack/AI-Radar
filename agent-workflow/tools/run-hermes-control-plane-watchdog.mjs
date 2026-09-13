@@ -22,7 +22,7 @@ const runningLeaseMs = Math.max(0, Number(args.get("running-lease-ms") || DEFAUL
 const clockSkewMs = Math.max(0, Number(args.get("clock-skew-ms") || DEFAULT_CONTROLLER_CLOCK_SKEW_MS) || 0);
 const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
 const incidentDir = path.resolve(root, args.get("incident-dir") || path.join("agent-workflow", "inbox", "production-incidents"));
-const phases = ["morning", "recovery", "closure"];
+const phases = ["morning"];
 
 function shanghaiDate(value = new Date()) {
   const parsed = value instanceof Date ? value : new Date(value);
@@ -96,7 +96,7 @@ function inspectPhase(phase) {
         ? "controller report has no recorded actions"
         : !runningFresh
           ? "controller running marker expired before a final report was written"
-        : "controller executed; downstream status remains owned by Closure/Codex",
+        : "controller executed; downstream status remains owned by the operator",
   };
 }
 
@@ -169,7 +169,7 @@ function writeIncident(payload, reportFile) {
     "",
     "1. Verify the scheduled controller task and its local execution result.",
     "2. Restore the missing controller or report-writing path.",
-    "3. Let Closure/Codex own any downstream data repair.",
+    "3. Let the operator own downstream data repair; use manual recovery or closure commands.",
     "4. Do not inspect V3 Card counts or lower V4 evidence gates.",
   ].join("\n");
   fs.writeFileSync(file, `${md}\n`, "utf8");

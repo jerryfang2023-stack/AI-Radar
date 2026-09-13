@@ -54,7 +54,7 @@ function scheduledSupersession(currentPhase, value = currentTime) {
   if (!scheduledRun || shanghaiDate(value) !== date) return null;
   const minute = shanghaiMinuteOfDay(value);
   const thresholds = {
-    morning: { minute: 9 * 60 + 15, next: "recovery" },
+    morning: { minute: 16 * 60 + 45, next: "final-closure" },
     recovery: { minute: 9 * 60 + 50, next: "closure" },
     closure: { minute: 16 * 60 + 45, next: "final-closure" },
   };
@@ -165,10 +165,14 @@ function morning() {
     ...(dryRun ? ["--dry-run=true"] : []),
   ]);
   const skillOpsHealthy = runtimeSync.ok && discoveryRefresh.ok && preflight.ok;
+  // RSS production remains independent of Business Signals and manual repair.
+  const firstLine = firstLineRecovery();
+  const productionOk = business.ok && firstLine.ok;
   return {
-    ok: business.ok,
-    status: business.ok ? (skillOpsHealthy ? "passed" : "passed_with_preflight_warning") : "failed",
-    actions: [runtimeSync, discoveryRefresh, preflight, business],
+    ok: productionOk,
+    status: productionOk ? (skillOpsHealthy ? "passed" : "passed_with_preflight_warning") : "failed",
+    lanes: { business, first_line_viewpoints: firstLine },
+    actions: [runtimeSync, discoveryRefresh, preflight, business, ...firstLine.actions],
     notes: skillOpsHealthy ? [] : ["Repo Skill runtime sync or Skill Ops preflight failed but did not block production dispatch."],
   };
 }

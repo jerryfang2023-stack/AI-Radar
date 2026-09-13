@@ -15,7 +15,7 @@ function writeJson(file, value) {
 
 function createReports({ missingPhase = "" } = {}) {
   const reportsDir = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-heartbeat-"));
-  for (const phase of ["morning", "recovery", "closure"]) {
+  for (const phase of ["morning"]) {
     if (phase === missingPhase) continue;
     writeJson(path.join(reportsDir, `${date}-daily-automation-${phase}.json`), {
       ok: phase !== "closure",
@@ -51,17 +51,32 @@ test("heartbeat publishes only sanitized controller metadata", () => {
   assert.equal(result.status, 0, result.stderr);
   const output = JSON.parse(result.stdout);
   assert.equal(output.heartbeat.status, "passed");
-  assert.deepEqual(output.heartbeat.controllers.map((item) => item.observable), [true, true, true]);
-  assert.equal(output.heartbeat.controllers[2].status, "repair_required");
+  assert.deepEqual(output.heartbeat.controllers.map((item) => item.observable), [true, false, false]);
+  assert.equal(output.heartbeat.controllers[1].status, "not_scheduled");
+  assert.equal(output.heartbeat.controllers[2].status, "not_scheduled");
+  assert.equal(output.heartbeat.controllers[0].status, "passed");
   assert.doesNotMatch(result.stdout, /private command|private output|reportsDir|command|stdout/u);
   assert.doesNotMatch(result.stdout, new RegExp(reportsDir.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"), "u"));
 });
 
 test("heartbeat reports manual_required when a controller report is missing", () => {
-  const reportsDir = createReports({ missingPhase: "closure" });
+  const reportsDir = createReports({ missingPhase: "morning" });
   const result = runDry(reportsDir);
   assert.equal(result.status, 0, result.stderr);
   const output = JSON.parse(result.stdout);
   assert.equal(output.heartbeat.status, "manual_required");
-  assert.equal(output.heartbeat.controllers.find((item) => item.phase === "closure").observable, false);
+  assert.equal(output.heartbeat.controllers.find((item) => item.phase === "morning").observable, false);
+});
+
+test("retired timer markers remain compatible with the existing cloud V1 receiver", () => {
+  const reportsDir = createReports();
+  const output = JSON.parse(runDry(reportsDir).stdout);
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/hermes-control-plane-heartbeat.yml"), "utf8");
+  const receiver = workflow.match(/node <<'NODE'\r?\n([\s\S]*?)\n\s+NODE/u)?.[1];
+  assert.ok(receiver, "cloud receiver validation must be exercised");
+  const result = spawnSync(process.execPath, ["--input-type=commonjs", "-e", receiver], {
+    encoding: "utf8",
+    env: { ...process.env, HEARTBEAT_JSON: JSON.stringify(output.heartbeat), GITHUB_STEP_SUMMARY: path.join(reportsDir, "summary.md") },
+  });
+  assert.equal(result.status, 0, result.stderr);
 });

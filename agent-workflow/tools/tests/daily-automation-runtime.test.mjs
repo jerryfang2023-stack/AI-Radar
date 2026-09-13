@@ -167,7 +167,7 @@ test("late scheduled controller phases are superseded instead of colliding", () 
   const controller = read("run-daily-automation-controller.mjs");
   const watchdog = read("run-hermes-control-plane-watchdog.mjs");
   assert.match(controller, /const scheduledRun = args\.get\("scheduled"\) === "true"/u);
-  assert.match(controller, /morning: \{ minute: 9 \* 60 \+ 15, next: "recovery" \}/u);
+  assert.match(controller, /morning: \{ minute: 16 \* 60 \+ 45, next: "final-closure" \}/u);
   assert.match(controller, /recovery: \{ minute: 9 \* 60 \+ 50, next: "closure" \}/u);
   assert.match(controller, /closure: \{ minute: 16 \* 60 \+ 45, next: "final-closure" \}/u);
   assert.match(controller, /status: "superseded"/u);
@@ -348,7 +348,7 @@ test("morning controller repairs derived repo Skill runtime before auditing it",
   assert.ok(discoveryIndex > syncIndex, "Skill discovery summary must refresh after runtime synchronization");
   assert.ok(checkIndex > discoveryIndex, "Skill Ops audit must run after discovery refresh");
   assert.match(controller.slice(discoveryIndex, checkIndex), /--output=/u);
-  assert.match(controller, /actions: \[runtimeSync, discoveryRefresh, preflight, business\]/u);
+  assert.match(controller, /actions: \[runtimeSync, discoveryRefresh, preflight, business, \.\.\.firstLine.actions\]/u);
 });
 
 test("closure resyncs the derived repo Skill runtime after same-day main updates", () => {

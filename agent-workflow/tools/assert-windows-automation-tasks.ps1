@@ -17,9 +17,6 @@ $RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
 $expected = @(
   [pscustomobject]@{ Name = "WaveSight Morning Production Dispatch"; Time = "08:10"; Runner = "run-daily-automation-controller.mjs"; Arguments = "--phase=morning --scheduled=true" },
   [pscustomobject]@{ Name = "WaveSight Community Intelligence Daily"; Time = "08:30"; Runner = "run-community-intelligence.ps1"; Arguments = "-PublishAfterSuccess" },
-  [pscustomobject]@{ Name = "WaveSight Daily Recovery Controller"; Time = "09:15"; Runner = "run-daily-automation-controller.mjs"; Arguments = "--phase=recovery --scheduled=true" },
-  [pscustomobject]@{ Name = "WaveSight Daily Automation Closure"; Time = "09:50"; Runner = "run-daily-automation-controller.mjs"; Arguments = "--phase=closure --scheduled=true --invoke-codex=true" },
-  [pscustomobject]@{ Name = "WaveSight Hermes Control Plane Watchdog"; Time = "10:20"; Runner = "run-hermes-control-plane-cycle.mjs"; Arguments = "--repo=jerryfang2023-stack/AI-Radar" },
   [pscustomobject]@{ Name = "WaveSight Follow-Builders Skill Daily"; Time = "16:10"; Runner = "run-follow-builders-skill.ps1"; Arguments = "-Merge" },
   [pscustomobject]@{ Name = "WaveSight Daily Final Closure"; Time = "16:45"; Runner = "run-daily-automation-controller.mjs"; Arguments = "--phase=final-closure --scheduled=true" }
 )

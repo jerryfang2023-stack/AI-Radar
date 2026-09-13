@@ -135,19 +135,21 @@ $repo = Resolve-RepoPath -InputPath $RepoPath
 $runner = Join-Path $repo "agent-workflow\tools\run-daily-automation-controller.mjs"
 if (-not (Test-Path -LiteralPath $runner)) { throw "Controller runner not found: $runner" }
 $nodeExecutable = Resolve-NodeExecutable
-$CodexExecutable = Resolve-CodexExecutable -InputPath $CodexExecutable
+# Manual repair resolves its CLI when explicitly invoked; production scheduling
+# must not install or update an unused repair agent.
 if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
 $RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
 New-Item -ItemType Directory -Path $RuntimePath -Force | Out-Null
 
 Register-ControllerTask -Name "WaveSight Morning Production Dispatch" -At $MorningAt -Phase "morning" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath -CodexExecutable $CodexExecutable
-Register-ControllerTask -Name "WaveSight Daily Recovery Controller" -At $RecoveryAt -Phase "recovery" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath -CodexExecutable $CodexExecutable
-Register-ControllerTask -Name "WaveSight Daily Automation Closure" -At $ClosureAt -Phase "closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath -CodexExecutable $CodexExecutable
 Register-ControllerTask -Name "WaveSight Daily Final Closure" -At $FinalClosureAt -Phase "final-closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath -CodexExecutable $CodexExecutable
 
 if ($RemoveLegacyTasks) {
   @(
     "WaveSight Daily Self Repair",
+    "WaveSight Daily Recovery Controller",
+    "WaveSight Daily Automation Closure",
+    "WaveSight Hermes Control Plane Watchdog",
     "WaveSight Codex Self Repair Handoff",
     "WaveSight Data Observation Agent Review Trial"
   ) | ForEach-Object {

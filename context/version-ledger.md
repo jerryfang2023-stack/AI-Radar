@@ -57,7 +57,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Local Obsidian knowledge base | GUANLAN-VAULT-V1.2-private-evidence-linked (external) |
 | Data lake contract | DATA-LAKE-V4.1-24-table |
 | Private evidence store | PRIVATE-EVIDENCE-STORE-V2.0 |
-| Local Windows automation | WINDOWS-AUTOMATION-V1.0-seven-task |
+| Local Windows automation | WINDOWS-AUTOMATION-V1.1-four-task-manual-supervision |
 | Weekly Report content source | `01-SiteV2/content/12-applications/industry-reports/` |
 | Monthly Report content source | `01-SiteV2/content/12-applications/industry-reports/monthly/` |
 | Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.3.0 |
@@ -104,7 +104,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Daily automation is split by production lane: Business Signals, First-Line Viewpoints, and Community Intelligence each have independent monitoring / gate / persistence / PR publication boundaries.
 - First-Line Viewpoints persists accepted production data in repository JSON and projects deduplicated person timelines into the external Guanlan AI Vault after local `main` sync; old month files must not be reintroduced.
 - V4 event normalization blocks social/community posts, repo/catalog pages, marketplace/package/model pages, generic funding lists, commentary, generic role/service pages, old evergreen posts, and search snippets from canonical facts unless accepted original-source evidence proves a concrete dated event.
-- Hermes no longer performs daily production supervision. `HERMES-V4.0-control-plane-watchdog` runs once at 10:20, after the Closure timeout window, and checks only whether the morning, recovery, and closure controllers left readable reports. Routine failures use the neutral production incident registry and are owned by Closure/Codex.
+- Since 2026-09-13, daily supervision and repair are operator-owned. Four Windows production tasks remain. 08:10 covers domestic/overseas financing and other Business Signals plus independent Builder RSS; 16:45 synchronizes accepted application output. Dispatch success is not publication acceptance. The 09:15 Recovery, 09:50 Closure and 10:20 Hermes timers are retired; manual checks/repair and production incident records remain available. Optional manual Hermes checks require only the morning controller receipt, not retired timer receipts.
 - Production failures must be repaired from the earliest failed gate or report. If same-date artifacts are sufficient, use targeted repair and publication instead of restarting the lane.
 - Opportunity Map reads the dedicated downstream V4 projection `opportunity-evidence-v2.json`; neither application-center page fetches the public V3 desk JSON. Dashboard remains an independent backend consumer.
 - Report publication is versioned as `REPORTS-V1.3.0-funding-portal`. Accepted Markdown is dynamically scanned and published with complete bodies to the AI financing site; WaveSight emits stable compatibility redirects only.

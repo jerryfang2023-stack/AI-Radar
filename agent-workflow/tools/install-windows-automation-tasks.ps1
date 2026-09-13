@@ -13,7 +13,7 @@ if ($RepoPath) {
 & (Join-Path $PSScriptRoot "install-daily-automation-controller-tasks.ps1") -RepoPath $repo
 & (Join-Path $PSScriptRoot "install-community-intelligence-task.ps1") -RepoPath $repo -At "08:30"
 & (Join-Path $PSScriptRoot "install-follow-builders-skill-task.ps1") -RepoPath $repo -At "16:10"
-& (Join-Path $PSScriptRoot "install-hermes-control-plane-watchdog-task.ps1") -RepoPath $repo -At "10:20"
+# Daily inspection and repair are operator-owned; do not recreate the watchdog.
 & (Join-Path $PSScriptRoot "install-periodic-automation-tasks.ps1") -RepoPath $repo
 
 $retiredDataLakeTask = Get-ScheduledTask -TaskName "WaveSight Data Lake Sync" -ErrorAction SilentlyContinue

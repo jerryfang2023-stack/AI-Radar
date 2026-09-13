@@ -4,10 +4,14 @@ param(
   [string]$At = "10:20",
   [string]$GitHubRepository = "jerryfang2023-stack/AI-Radar",
   [string]$RuntimePath = "",
+  [switch]$RestoreRetiredSchedule,
   [switch]$RunOnceNow
 )
 
 $ErrorActionPreference = "Stop"
+if (-not $RestoreRetiredSchedule) {
+  throw 'Daily watchdog scheduling is retired. Use the manual watchdog command; restoring its timer requires -RestoreRetiredSchedule.'
+}
 $Utf8Profile = Join-Path $PSScriptRoot "Set-WaveSightUtf8.ps1"
 if (Test-Path -LiteralPath $Utf8Profile) { . $Utf8Profile }
 

@@ -16,7 +16,7 @@ const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agen
 const repository = args.get("repo") || "jerryfang2023-stack/AI-Radar";
 const ghExecutable = args.get("gh-executable") || "gh";
 const dryRun = args.get("dry-run") === "true";
-const phases = ["morning", "recovery", "closure"];
+const phases = ["morning"];
 
 function shanghaiDate(value = new Date()) {
   const parsed = value instanceof Date ? value : new Date(value);
@@ -79,7 +79,11 @@ function buildHeartbeat() {
       status: watchdogValid ? watchdog.status : "missing",
       generated_at: watchdogValid ? watchdog.generated_at : null,
     },
-    controllers,
+    // Keep the V1 receiver shape during rollout. Retired timers are explicitly
+    // not observable and never participate in the active-controller health gate.
+    controllers: [...controllers, ...["recovery", "closure"].map((phase) => ({
+      phase, observable: false, status: "not_scheduled", generated_at: null, action_count: 0,
+    }))],
   };
 }
 

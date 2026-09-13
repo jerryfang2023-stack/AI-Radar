@@ -33,7 +33,7 @@ test("Hermes watchdog passes when all controller reports are observable", () => 
   const reportsDir = path.join(temp, "reports");
   const incidentDir = path.join(temp, "incidents");
   fs.mkdirSync(reportsDir, { recursive: true });
-  for (const phase of ["morning", "recovery", "closure"]) writeController(reportsDir, phase);
+  for (const phase of ["morning"]) writeController(reportsDir, phase);
 
   const result = runWatchdog(reportsDir, incidentDir);
   assert.equal(result.status, 0, result.stderr);
@@ -48,9 +48,7 @@ test("Hermes watchdog treats an in-progress controller marker as observable", ()
   const reportsDir = path.join(temp, "reports");
   const incidentDir = path.join(temp, "incidents");
   fs.mkdirSync(reportsDir, { recursive: true });
-  writeController(reportsDir, "morning");
-  writeController(reportsDir, "recovery");
-  writeController(reportsDir, "closure", "running");
+  writeController(reportsDir, "morning", "running");
 
   const result = runWatchdog(reportsDir, incidentDir);
   assert.equal(result.status, 0, result.stderr);
@@ -59,7 +57,7 @@ test("Hermes watchdog treats an in-progress controller marker as observable", ()
     path.join(reportsDir, `${date}-hermes-control-plane-watchdog.json`),
     "utf8",
   ));
-  assert.equal(payload.controllers.find((item) => item.phase === "closure")?.controller_status, "running");
+  assert.equal(payload.controllers.find((item) => item.phase === "morning")?.controller_status, "running");
 });
 
 test("Hermes watchdog rejects an expired in-progress controller marker", () => {
@@ -67,9 +65,7 @@ test("Hermes watchdog rejects an expired in-progress controller marker", () => {
   const reportsDir = path.join(temp, "reports");
   const incidentDir = path.join(temp, "incidents");
   fs.mkdirSync(reportsDir, { recursive: true });
-  writeController(reportsDir, "morning");
-  writeController(reportsDir, "recovery");
-  writeController(reportsDir, "closure", "running", "2026-07-25T00:00:00.000Z");
+  writeController(reportsDir, "morning", "running", "2026-07-25T00:00:00.000Z");
 
   const result = runWatchdog(reportsDir, incidentDir);
   assert.equal(result.status, 1);
@@ -82,9 +78,7 @@ test("Hermes watchdog rejects an in-progress marker beyond clock-skew tolerance"
   const reportsDir = path.join(temp, "reports");
   const incidentDir = path.join(temp, "incidents");
   fs.mkdirSync(reportsDir, { recursive: true });
-  writeController(reportsDir, "morning");
-  writeController(reportsDir, "recovery");
-  writeController(reportsDir, "closure", "running", new Date(Date.now() + 10 * 60_000).toISOString());
+  writeController(reportsDir, "morning", "running", new Date(Date.now() + 10 * 60_000).toISOString());
 
   const result = runWatchdog(reportsDir, incidentDir);
   assert.equal(result.status, 1);
@@ -97,13 +91,11 @@ test("Hermes watchdog creates one control-plane incident for a missing controlle
   const reportsDir = path.join(temp, "reports");
   const incidentDir = path.join(temp, "incidents");
   fs.mkdirSync(reportsDir, { recursive: true });
-  writeController(reportsDir, "morning");
-  writeController(reportsDir, "recovery");
 
   const result = runWatchdog(reportsDir, incidentDir);
   assert.equal(result.status, 1);
   const incident = fs.readFileSync(path.join(incidentDir, `${date}-automation-control-plane-liveness.md`), "utf8");
-  assert.match(incident, /closure controller report is missing or unreadable/u);
+  assert.match(incident, /morning controller report is missing or unreadable/u);
   assert.doesNotMatch(incident, /business_signals|public Card count/u);
   assert.match(incident, /\n$/u);
   assert.doesNotMatch(incident, /\n\n$/u);

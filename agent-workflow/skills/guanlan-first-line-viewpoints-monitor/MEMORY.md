@@ -2,6 +2,16 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## Current schedule override · 2026-09-13
+
+Timing in the dated incidents below describes historical configurations. Current
+scheduling is defined in `context/08-automation.md`: four production tasks;
+08:10 includes domestic/overseas financing plus independent Builder RSS, 08:30
+collects Community, 16:10 publishes afternoon viewpoints, and 16:45 performs final
+sync. The old Codex RSS automation and 09:15/09:50/10:20 timers are retired.
+Observation thresholds remain diagnostic windows, not additional scheduled tasks.
+Daily inspection and repair are operator-owned.
+
 ## 2026-07-18 Translation Provenance
 
 - Repeated English or mistranslated primary text was caused by treating translation as an optional fallback and allowing legacy public-MT cache entries. Production now requires DeepSeek credentials, matching source hashes, model provenance, and a fidelity gate; missing or incomplete translation blocks publication.

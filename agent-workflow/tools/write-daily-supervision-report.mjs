@@ -671,7 +671,7 @@ export function buildBusinessSignalsLane({ githubState = null, pagesState = null
   return {
     id: "business_signals",
     label: "Data Center V4 / Business Signals Operations",
-    schedule: "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
+    schedule: "08:10 local conditional production; operator-owned inspection and recovery; 10:30 cloud safety fallback",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
@@ -785,7 +785,7 @@ export function buildFirstLineLane({ github = null } = {}) {
   return {
     id: "first_line_viewpoints",
     label: "First-Line Viewpoints",
-    schedule: "08:30 local RSS collection + page build; 09:15 conditional fallback; 09:50 consolidated closure",
+    schedule: "08:10 conditional RSS collection + page build; operator-owned inspection and recovery",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
@@ -1134,7 +1134,7 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
   return {
     id: "community_intelligence",
     label: "Community Intelligence",
-    schedule: "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure",
+    schedule: "08:30 local logged-in collection and publish handoff; operator-owned inspection; 16:45 final closure",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,

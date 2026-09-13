@@ -31,9 +31,9 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Pass when the First-Line Viewpoints PR stages no Business Signals, relationship graph, trend candidate, or Community Intelligence data.
 
 9. `daily_problem_watchdog`
-   - Pass when Daily Problem Watchdog records First-Line Viewpoints failures to the production incident registry after the 08:30 local Codex RSS collection/build/sync attempt, the single 09:15 conditional fallback, and the 09:50 consolidated closure check.
+   - Pass when Daily Problem Watchdog records First-Line Viewpoints failures to the production incident registry when the independently triggered 08:10 RSS workflow actually fails. A missing run is judged from the observation window and real receipts; no retired Codex or 09:15/09:50 timer is required.
    - Pass when the watchdog does not dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` or any recovery workflow.
-   - Fail when the lane waits until the old 10:30 supervision check or uses Hermes recovery / early handoff instead of a problem report and Codex inbox path.
+   - Fail when the lane waits for a retired Hermes timer or automatically invokes a repair agent instead of recording evidence for operator-owned repair.
 
 10. `afternoon_follow_builders_skill_lane`
     - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md` and records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` with its own publication status.
@@ -46,9 +46,9 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Fail when RSS collection, local Vault projection, GitHub publication, and afternoon skill publish are treated as one generic rerun problem.
 
 12. `morning_rss_problem_window`
-    - Pass when supervision waits until the 09:50 consolidated closure before declaring First-Line RSS missing, after the 08:30 local Codex run and the single 09:15 conditional fallback.
-    - Pass when a healthy GitHub fallback can recover a missed local 08:30 run, while the local miss is still recorded as automation reliability drift.
-    - Fail when Daily Problem Watchdog creates a First-Line RSS repair inbox before the 09:50 consolidated closure while recovery may still be active.
+    - Pass when a missing-run assessment respects the 09:50 RSS observation threshold and the actual 08:10 dispatch/workflow receipts; queued or running work remains Waiting. The threshold is not a scheduled task.
+    - Pass when an operator-triggered GitHub run recovers a missed 08:10 dispatch, while the missed trigger is recorded separately from accepted data quality.
+    - Fail when Daily Problem Watchdog creates a First-Line RSS repair inbox from stale data before the 09:50 observation threshold or while the actual RSS workflow is still active.
 
 13. `afternoon_skill_count_consistency`
     - Pass when `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` frontmatter `builder_items_count` is greater than `0`, the local publish report count is greater than `0`, and both counts match.
@@ -107,7 +107,7 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
 25. `afternoon_scheduler_and_supervision_closure`
     - Pass when the 16:10 Windows task has wake-on-sleep and bounded failure retries, and the runner writes a same-date durable publication report after either success or failure.
     - Pass when pre-16:30 supervision reports a missing afternoon artifact as `waiting`, and when a stale working tree can verify an exact-date report/output pair from refreshed `origin/main`.
-    - Fail when a sleeping machine can silently miss the only trigger, when the 09:50 report marks an unrun afternoon lane `passed`, or when merged exact-date artifacts are reported missing only because the current checkout is stale.
+    - Fail when a sleeping machine can silently miss the only trigger, when a morning report marks an unrun afternoon lane `passed`, or when merged exact-date artifacts are reported missing only because the current checkout is stale.
 
 ## Repair Loop
 
