@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "operationsUrl": "https://www.zkdlj.vip/ops/",
+  "platforms": [
+    {
+      "id": "data-center",
+      "label": "观澜数据中心",
+      "scope": "事实资产、采集与质量",
+      "url": "data-center.html",
+      "versionKey": "DATA-CENTER"
+    },
+    {
+      "id": "funding",
+      "label": "观澜融资情报站",
+      "scope": "融资内容、访问与转化",
+      "url": "https://www.zkdlj.vip/",
+      "versionKey": "FUNDING"
+    },
+    {
+      "id": "miniprogram",
+      "label": "观澜小程序",
+      "scope": "微信原生应用、内容与权益",
+      "url": "",
+      "versionKey": "MINIPROGRAM"
+    },
+    {
+      "id": "h5",
+      "label": "融资 H5",
+      "scope": "移动端融资产品原型",
+      "url": "",
+      "versionKey": "H5"
+    },
+    {
+      "id": "community",
+      "label": "社群与会员",
+      "scope": "会员服务、申请页与分享内容",
+      "url": "https://members.zkdlj.vip/",
+      "versionKey": "MEMBERS"
+    }
+  ],
+  "projects": [
+    {
+      "id": "data-center",
+      "label": "观澜数据中心",
+      "managerModuleId": "data-center",
+      "workspace": "engineering"
+    },
+    {
+      "id": "ops",
+      "label": "统一运营后台",
+      "managerModuleId": "ops",
+      "workspace": "operations"
+    },
+    {
+      "id": "funding",
+      "label": "观澜融资情报站",
+      "managerModuleId": "portal",
+      "workspace": "operations"
+    },
+    {
+      "id": "miniprogram",
+      "label": "观澜小程序",
+      "managerModuleId": "mini",
+      "workspace": "operations"
+    },
+    {
+      "id": "account",
+      "label": "账户、支付与权益服务",
+      "managerModuleId": "account",
+      "workspace": "operations"
+    },
+    {
+      "id": "community",
+      "label": "社群与会员",
+      "managerModuleId": "members",
+      "workspace": "operations"
+    },
+    {
+      "id": "lake",
+      "label": "数据湖 / DuckDB",
+      "managerModuleId": "lake",
+      "workspace": "engineering"
+    },
+    {
+      "id": "evidence",
+      "label": "私有原文证据仓",
+      "managerModuleId": "evidence",
+      "workspace": "engineering"
+    },
+    {
+      "id": "vault",
+      "label": "观澜知识库与工作区",
+      "managerModuleId": "vault",
+      "workspace": "engineering"
+    },
+    {
+      "id": "skills",
+      "label": "Skill 与算法规则",
+      "managerModuleId": "skills",
+      "workspace": "engineering"
+    },
+    {
+      "id": "automation",
+      "label": "自动化、故障与运行任务",
+      "managerModuleId": "automation",
+      "workspace": "engineering"
+    },
+    {
+      "id": "aip",
+      "label": "AIP 内容协作",
+      "managerModuleId": "aip",
+      "workspace": "engineering"
+    },
+    {
+      "id": "h5",
+      "label": "融资 H5",
+      "managerModuleId": "h5",
+      "workspace": "engineering"
+    }
+  ],
+  "sources": {
+    "skills": "01-SiteV2/site/data/local-skill-store-data.js",
+    "versions": "01-SiteV2/site/data/ops-console.json",
+    "batches": "01-SiteV2/site/data/ops-console.json"
+  },
+  "scope": {
+    "engineering": [
+      "项目与文件",
+      "Harness 与算法",
+      "Git 与本机调度",
+      "治理任务与清理"
+    ],
+    "operations": [
+      "业务与生产结果",
+      "运营统计",
+      "会员与权益",
+      "数据质量"
+    ]
+  }
+}

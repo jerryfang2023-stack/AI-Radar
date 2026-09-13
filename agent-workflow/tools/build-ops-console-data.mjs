@@ -1,3 +1,4 @@
+import { sharedRecords } from "./lib/workspace-contract.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { isProductionIncidentFilename } from "./incident-filename-utils.mjs";
@@ -331,10 +332,10 @@ const data = {
   navigation: [
     { id: "overview", label: "总览" },
     { id: "analytics", label: "运营统计" },
+    { id: "membership", label: "会员与权益" },
     { id: "quality", label: "数据质量" },
-    { id: "governance", label: "版本治理" },
+    { id: "governance", label: "系统管理" },
     { id: "skills", label: "Skill Store" },
-    { id: "settings", label: "系统设置" },
   ],
   daily: {
     date: dailyDate,
@@ -405,5 +406,10 @@ const data = {
   },
 };
 
+const catalogRaw = readText("01-SiteV2/site/data/local-skill-store-data.js");
+const catalog = JSON.parse(catalogRaw.replace(/^window\.WaveSightLocalSkillStore\s*=\s*/u, "").replace(/;\s*$/u, ""));
+data.shared = sharedRecords(portfolio, catalog.skills, telemetry);
+data.shared.catalogGeneratedAt = catalog.meta?.generatedAt || null;
+data.shared.snapshotGeneratedAt = data.meta.generatedAt;
 writeJsonAndJs("01-SiteV2/site/data/ops-console", data);
 console.log(`ops-console data written: ${data.meta.version} / ${data.meta.generatedAt}`);

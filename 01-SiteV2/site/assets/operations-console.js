@@ -5,6 +5,7 @@
   const pipeline = window.WaveSightPipelineDashboard || {};
   const quality = ops.quality || {};
   const portfolio = ops.portfolio || {};
+  const shared = ops.shared || {};
   const $ = (selector, node = document) => node.querySelector(selector);
   const $$ = (selector, node = document) => Array.from(node.querySelectorAll(selector));
   const html = (value) => String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#39;");
@@ -16,11 +17,21 @@
   };
   const validPanels = new Set(["overview", "analytics", "membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token", "quality", "governance", "skills", "settings"]);
   const membershipPanels = new Set(["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token"]);
+  function workbenchUrl(value) {
+    try { const u = new URL(value); return !u.username && !u.password && ((u.protocol === "http:" && ["localhost", "127.0.0.1", "[::1]"].includes(u.hostname)) || u.protocol === "https:") ? u.href : ""; } catch { return ""; }
+  }
+  function renderWorkbench() {
+    const saved = storage.get("guanlan-engineering-url") || "http://127.0.0.1:18765/";
+    const url = workbenchUrl(saved);
+    $("[data-workbench-url]").value = saved;
+    const link = $("[data-workbench-open]");
+    if (url) { link.href = url; link.hidden = false; } else { link.removeAttribute("href"); link.hidden = true; }
+  }
   const defaults = { landing: "overview", compact: false, staleHours: 72 };
   let preferences = { ...defaults };
   try {
     const saved = JSON.parse(storage.get("guanlan-ops-preferences") || "{}");
-    preferences = { landing: validPanels.has(saved.landing) ? saved.landing : defaults.landing, compact: saved.compact === true, staleHours: [24, 48, 72].includes(saved.staleHours) ? saved.staleHours : 72 };
+    preferences = { landing: saved.landing === "settings" ? "governance" : validPanels.has(saved.landing) ? saved.landing : defaults.landing, compact: saved.compact === true, staleHours: [24, 48, 72].includes(saved.staleHours) ? saved.staleHours : 72 };
   } catch { /* Corrupt or unavailable storage must not prevent opening the console. */ }
   const state = { panel: location.hash.slice(1) || preferences.landing, railCollapsed: storage.get("wavesight-rail-collapsed") === "1", membershipExpanded: storage.get("wavesight-membership-expanded") !== "0" };
   const timestamp = (value) => {
@@ -46,6 +57,7 @@
     storage.set("wavesight-membership-expanded", expanded ? "1" : "0");
   }
   function setPanel(id) {
+    if(id === "settings") { id="governance"; $(".system-settings").open=true; }
     state.panel = validPanels.has(id) ? id : "overview";
     setMembershipExpanded(state.panel.startsWith("membership-") ? true : state.membershipExpanded);
     $$(".nav [data-tab]").forEach((button) => button.setAttribute("aria-current", String(button.dataset.tab === state.panel)));
@@ -73,7 +85,7 @@
   }
   function renderOverview() {
     const platforms = list(portfolio.platforms);
-    const versions = list(ops.governance?.versions);
+    const versions = list(shared.versions || ops.governance?.versions);
     const sourceRows = list(quality.sourceQuality?.rows);
     $("[data-overview-status]").innerHTML = [
       metric("运营平台", platforms.length || null, "数据中心 / 融资站 / 小程序 / H5 / 社群"),
@@ -190,7 +202,7 @@
     $("[data-production-stages]").innerHTML = list(ops.tasks?.stages).map((stage) => '<article class="card"><span class="label">' + html(stage.id) + '</span><h3>' + html(labels[stage.id] || stage.label) + '</h3>' + badge(stage.status || "unknown", ["passed", "success", "completed"].includes(stage.status)) + '</article>').join("") || '<div class="empty">尚无生产阶段遥测。</div>';
   }
   function renderGovernance() {
-    const versions = list(ops.governance?.versions);
+    const versions = list(shared.versions || ops.governance?.versions);
     const category = $("[data-version-category]").value;
     const query = $("[data-version-search]").value.trim().toLowerCase();
     const filtered = versions.filter((item) => (!category || item.category === category) && (!query || [item.key, item.label, item.value, item.source].join(" ").toLowerCase().includes(query)));
@@ -199,8 +211,9 @@
     $("[data-governance-principles]").innerHTML = list(ops.governance?.principles).map((item) => '<li>' + html(item) + '</li>').join("");
   }
   function renderSettings() {
+    renderWorkbench();
     const rows = [
-      ["后台快照", timestamp(ops.meta?.generatedAt), "随仓库构建与 Pages 发布更新"],
+      ["后台快照", timestamp(ops.meta?.generatedAt), "由仓库构建，经受保护的 VPS 发布更新"],
       ["数据质量批次", ops.meta?.date || "未接入", "V4 逐来源采集与事实构建快照"],
       ["Skill 同步", timestamp(portfolio.skills?.generatedAt), "本地构建扫描已登记平台目录，发布后可见；网页不安装 Skill"],
       ["运营聚合 API", portfolio.analytics?.url || "未接入", portfolio.analytics?.scope || ""],
@@ -242,6 +255,14 @@
     const saved = storage.set("guanlan-ops-preferences", JSON.stringify(preferences));
     renderSettings(); renderOverview(); renderGovernance();
     $("[data-setting-status]").textContent = saved ? "已保存，仅对本机浏览器生效。" : "已临时应用；浏览器不允许保存设置。";
+  });
+  $("[data-workbench-form]").addEventListener("submit", event => {
+    event.preventDefault();
+    const value = workbenchUrl($("[data-workbench-url]").value.trim());
+    const message = $("[data-workbench-status]");
+    if (!value) { message.textContent = "请输入本机 HTTP 地址或 HTTPS 地址。"; return; }
+    if (!storage.set("guanlan-engineering-url", value)) { message.textContent = "浏览器不允许保存，请直接打开本机工作台。"; return; }
+    renderWorkbench(); message.textContent = "已保存到当前浏览器。";
   });
   $("[data-version-category]").addEventListener("change", renderGovernance);
   $("[data-version-search]").addEventListener("input", renderGovernance);

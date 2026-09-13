@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.7.1-china-funding-history">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.8.0-engineering-integration">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -356,7 +356,9 @@
       .version-query { min-width: 0; }
       .data-status-item { grid-template-columns: 1fr; gap: 4px; }
     }
-  </style>
+  [data-workbench-open], [data-workbench-form] button{font:500 14px/20px var(--sans)}[data-workbench-form]{display:grid;gap:12px;margin-top:12px}[data-workbench-url]{width:100%;font:400 14px/24px var(--sans)}
+.system-settings{margin-top:24px}.system-settings>summary{font:500 14px/20px var(--sans);cursor:pointer;padding:14px 0;border-top:1px solid var(--line)}
+</style>
   <meta name="wavesight-analytics-version" content="APP-ANALYTICS-V1.3.0-ops-readonly">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
@@ -366,7 +368,7 @@
 <body class="page-operations-console">
   <main class="shell" data-ops-console tabindex="-1" hidden>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.7.1</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.8.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
@@ -381,9 +383,8 @@
             <button type="button" data-tab="membership-token"><span class="nav-sub-mark" aria-hidden="true"></span><span class="nav-text">Token 权益管理</span></button>
           </div>
         </div>
-        <button type="button" data-tab="governance"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">版本治理</span></button>
+        <button type="button" data-tab="governance"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">系统管理</span></button>
         <button type="button" data-tab="skills"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M10 8l5 4-5 4"/></svg></span><span class="nav-text">Skill Store</span></button>
-        <button type="button" data-tab="settings"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8"/></svg></span><span class="nav-text">系统设置</span></button>
       </nav>
       <div class="rail-actions"><button type="button" class="rail-toggle" data-rail-toggle>收起</button><button type="button" class="ops-logout" data-ops-logout>退出后台</button></div>
     </aside>
@@ -407,7 +408,7 @@
             <button type="button" data-tab="analytics">运营统计 <span>访问 / 注册 / 付费 →</span></button>
             <button type="button" data-tab="quality">数据质量 <span>逐来源数量 / 质量 →</span></button>
             <button type="button" data-tab="skills">Skill Store <span>平台目录 / 来源同步 →</span></button>
-            <button type="button" data-tab="settings">系统设置 <span>接入登记 / 本机偏好 →</span></button>
+            <button type="button" data-tab="settings">系统管理 <span>接入登记 / 本机偏好 →</span></button>
           </div>
         </div>
       </section>
@@ -599,7 +600,7 @@
       <section class="panel" data-panel="governance">
         <div class="page-surface">
           <header class="page-head">
-            <div><span class="kicker">VERSION GOVERNANCE</span><h1>版本治理</h1></div>
+            <div><span class="kicker">VERSION GOVERNANCE</span><h1>系统管理</h1></div>
             <p>按平台与职责管理产品、数据契约和规则版本。公开端点保留核验时间，未接入线上版本明确标注。</p>
           </header>
           <div class="version-controls">
@@ -612,25 +613,11 @@
             <div class="module-head"><div><span class="kicker">PRINCIPLES</span><h2>治理原则</h2></div><p>版本来源可追溯，发布事实不推断。</p></div>
             <ul class="governance-principles" data-governance-principles></ul>
           </section>
-        </div>
-      </section>
-
-      <section class="panel" data-panel="skills">
-        <div class="page-surface">
-          <iframe class="skill-frame" src="local-skill-store.html?embed=1&v=20260830-ops-v310" title="Skill Store"></iframe>
-        </div>
-      </section>
-
-      <section class="panel" data-panel="settings">
-        <div class="page-surface">
-          <header class="page-head">
-            <div><span class="kicker">SYSTEM SETTINGS</span><h1>系统设置</h1></div>
-            <p>职责：维护接入说明与快照时效，设置本机浏览偏好。此页不管理账号权限、不修改线上服务配置。</p>
-          </header>
+        <details class="system-settings"><summary>接入与显示设置</summary>
           <div class="grid grid-2">
             <article class="card"><span class="label">LOCAL PREFERENCES</span><h2>本机显示偏好</h2>
               <form class="preferences-form" data-preferences-form>
-                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="membership">会员与权益总览</option><option value="membership-community">社群成员管理</option><option value="membership-approval">社群加入审核</option><option value="membership-users">小程序会员管理</option><option value="membership-schedule">活动排期管理</option><option value="quality">数据质量</option><option value="governance">版本治理</option><option value="skills">Skill Store</option><option value="settings">系统设置</option></select></label>
+                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="membership">会员与权益总览</option><option value="membership-community">社群成员管理</option><option value="membership-approval">社群加入审核</option><option value="membership-users">小程序会员管理</option><option value="membership-schedule">活动排期管理</option><option value="quality">数据质量</option><option value="skills">Skill Store</option><option value="governance">系统管理</option></select></label>
                 <label>快照过期提醒<select data-setting-stale><option value="24">超过 24 小时</option><option value="48">超过 48 小时</option><option value="72">超过 72 小时</option></select></label>
                 <label class="checkbox-label"><input type="checkbox" data-setting-compact>使用紧凑卡片间距</label>
                 <div class="form-actions"><button type="submit">保存本机设置</button><button type="button" data-reset-preferences>恢复默认</button></div>
@@ -639,16 +626,25 @@
             </article>
             <article class="card"><span class="label">REFRESH &amp; ACCESS</span><h2>刷新与权限边界</h2><p>质量、版本和 Skill 目录来自已发布快照；用户明细与管理操作由当前后台会话鉴权。</p><button class="text-button" type="button" data-reload-snapshot>重新载入已发布快照 ↻</button></article>
           </div>
+          <section class="card integration-card"><h2>工程工作台</h2><a data-workbench-open target="_blank" rel="noopener noreferrer">打开工程工作台 ↗</a><details><summary>连接设置</summary><form data-workbench-form><label>工作台地址<input data-workbench-url type="url" required aria-label="工程工作台地址"></label><button type="submit">保存本机入口</button><p data-workbench-status role="status"></p></form><p>本机入口需先运行“打开工程工作台.ps1”；仅当前设备可用。</p></details></section>
           <section class="card integration-card"><span class="label">INTEGRATIONS</span><h2>接入清单与更新来源</h2><div class="data-status-list" data-data-status></div></section>
-          <div class="card integration-card"><h3>如何更新接入</h3><p>维护仓库平台清单与 Skill 来源配置；运行公开版本核验、Skill 目录构建和后台构建，再通过 Git / Pages 发布。公开网页不提供文件写入或部署开关。</p></div>
+          <div class="card integration-card"><h3>如何更新接入</h3><p>维护仓库平台清单与 Skill 来源配置；运行公开版本核验、Skill 目录构建和后台构建，再通过 Git 提交与受保护的 VPS 原子发布更新。公开网页不提供文件写入或部署开关。</p></div>
+        </details></div>
+      </section>
+
+      <section class="panel" data-panel="skills">
+        <div class="page-surface">
+          <iframe class="skill-frame" src="local-skill-store.html?embed=1&v=20260830-ops-v310" title="Skill Store"></iframe>
         </div>
       </section>
+
+
     </section>
   </main>
 
   <script src="data/pipeline-dashboard.js"></script>
   <script src="data/ops-console.js"></script>
-  <script src="assets/operations-console.js?v=ops-371-china-history-20260912"></script>
+  <script src="assets/operations-console.js?v=ops-380-engineering-20260913"></script>
   <script src="assets/application-analytics.js?v=ops-astra-20260912"></script>
   <script src="assets/member-operations.js?v=ops-astra-20260912"></script>
   <script src="assets/operations-auth.js?v=ops-astra-20260912"></script>

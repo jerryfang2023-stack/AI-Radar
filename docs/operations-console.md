@@ -1,6 +1,6 @@
 # Unified Operations Console
 
-Release baseline: OPS-V3.7.1-china-funding-history / Skill Store v2.4.0
+Release baseline: OPS-V3.8.0-engineering-integration / Skill Store v2.4.0
 
 Historical funding quality adds a separate monthly census view: discovery rows, captured originals, verified China events, corresponding-round cards, unresolved sources and secondary-search failures. Index rows and same-company cards cannot be reported as completed financing cases. Its completion status remains independent of the daily monitor.
 
@@ -35,7 +35,7 @@ The whole console is published through an atomic VPS release and protected by an
 
 ## Membership operations (OPS V3.6.1)
 
-`https://www.zkdlj.vip/ops/#membership` is the membership overview. Community and application sources load independently on opening it, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. Four persistent second-level entries sit beneath Membership & Entitlements in the left navigation: `#membership-approval` for community applications, `#membership-community` for community-member lifecycle management, `#membership-users` for Mini Program member operations, and `#membership-schedule` for activity scheduling. Each management view loads its own protected data only when opened.
+`https://www.zkdlj.vip/ops/#membership` is the membership overview. Community and application sources load independently on opening it, with 7/30/90-day windows and refresh. A failed, incomplete or non-production response is unavailable, never zero. Five persistent second-level entries sit beneath Membership & Entitlements in the left navigation: `#membership-approval` for community applications, `#membership-community` for community-member lifecycle management, `#membership-users` for Mini Program member operations, `#membership-schedule` for activity scheduling, and `#membership-token` for Token entitlements. Each management view loads its own protected data only when opened.
 
 The page is metric-first: card-level methodology notes and repeated boundary explanations stay out of the interface. Detailed definitions remain in this operational reference; the UI keeps only live values, source status, controls and the necessary authentication/privacy boundary.
 
@@ -67,7 +67,7 @@ Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 
 
 ## Scope and boundaries
 
-Seven primary modules: Overview, Analytics, Membership & Entitlements, Data Quality, Version Governance, Skill Store, System Settings. Membership & Entitlements owns four second-level routes: Community Application Review, Community Member Management, Mini Program Member Management, and Activity Scheduling.
+Six primary modules: Overview, Analytics, Membership & Entitlements, Data Quality, Skill Store, System Management. System Management combines version governance with collapsible integration/display settings; #settings routes to #governance and opens settings. Membership & Entitlements owns five second-level routes: Community Application Review, Community Member Management, Mini Program Member Management, Activity Scheduling, and Token Entitlements.
 Issue-center and task-chain panels are retired. Incident records, daily supervision, collection telemetry and batch history remain owned by their existing workflows.
 
 The production console, scripts and snapshots require the VPS session. Public aggregate APIs remain identity-free and may still be used by other products; their existence is not treated as console authorization. Member identities, payment/admin actions and protected community pages retain their own server-side boundaries.
@@ -120,3 +120,14 @@ Saving affects this browser only; reload reads the published snapshot, not local
 | Version | Mono 18/28, 500 | Wrap long identifiers |
 
 Paper #FFFDF8, navy #0D355C, champagne #C8A766. Source/live wording and missing-source states are acceptance requirements, not decorative copy.
+
+
+## 工程工作台协同（3.8.0）
+
+workspace-registry.json 是共享项目标识源；ops-console.json.shared 提供 Skill 标识、源码与部署版本记录、日期级生产批次和阶段标识。工程工作台直接消费此快照，再关联本地路径、Git、Harness 和控制器回执。日期批次不代表同一次执行尝试；无真实执行标识时保持未知。
+
+系统设置中的工程地址仅保存在当前浏览器，支持本机 HTTP 或 HTTPS。本机先运行 打开工程工作台.ps1；OPS 不托管私有工程文件或执行工程命令。异地工程摘要尚未启用。
+
+新增工程入口字体采用现有 --sans，14/20px、500；地址输入14/24px、400。连接设置默认折叠；只保留打开入口和必要连接反馈。桌面1440与手机390由 workspace-browser.test.mjs 验证，固定版本与字段关联由 workspace-contract.test.mjs 验证。
+
+完整 Skill Store、线上版本列表、生产质量明细只保留在 OPS。工程端仅展示 Harness 所需的 Skill 维护引用、本机 Git/发布回执及本机控制器记录。六个栏目与五个会员子栏目由 OPS 界面回归覆盖；不删除底层业务数据或已有故障记录。
