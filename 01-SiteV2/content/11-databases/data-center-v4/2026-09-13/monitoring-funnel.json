@@ -3,44 +3,66 @@
     "funnel_id": "LF-bb74c01878fac356",
     "lens": "fde",
     "date": "2026-09-13",
-    "monitoring_paths": [],
-    "raw_documents": 0,
-    "original_sources": 0,
-    "valid_claims": 0,
-    "observations": 0,
-    "canonical_events": 0,
-    "blocker_counts": {},
+    "monitoring_paths": [
+      "fde_customer_case",
+      "fde_earnings_disclosure",
+      "fde_procurement_contract",
+      "fde_production_rollout"
+    ],
+    "raw_documents": 96,
+    "original_sources": 85,
+    "valid_claims": 25,
+    "observations": 1,
+    "canonical_events": 9,
+    "blocker_counts": {
+      "event_not_ai_relevant": 2,
+      "source_outside_daily_window": 45,
+      "non_event_or_index_title": 11,
+      "no_source_bounded_event": 12,
+      "multiple_funding_recipients_require_separate_sources": 1,
+      "opinion_without_source_bounded_event": 2,
+      "event_entity_unresolved": 1,
+      "community_source_requires_original_event_source": 1,
+      "raw_source_quality_block": 11
+    },
     "rates": {
-      "original_source_rate": 1,
-      "valid_claim_rate": 1,
-      "observation_rate": 1,
-      "event_conversion_rate": 1
+      "original_source_rate": 0.8854166666666666,
+      "valid_claim_rate": 0.2604166666666667,
+      "observation_rate": 0.04,
+      "event_conversion_rate": 0.36
     }
   },
   {
     "funnel_id": "LF-11e81190ca216192",
     "lens": "hardware",
     "date": "2026-09-13",
-    "monitoring_paths": [],
-    "raw_documents": 19,
-    "original_sources": 19,
-    "valid_claims": 4,
+    "monitoring_paths": [
+      "hardware_capacity_fab",
+      "hardware_product_specs",
+      "hardware_shipment_deployment",
+      "hardware_supply_agreement"
+    ],
+    "raw_documents": 35,
+    "original_sources": 30,
+    "valid_claims": 9,
     "observations": 0,
-    "canonical_events": 3,
+    "canonical_events": 5,
     "blocker_counts": {
       "rumor_requires_primary_confirmation": 2,
-      "no_source_bounded_claim": 2,
-      "source_outside_daily_window": 1,
+      "no_source_bounded_claim": 3,
+      "source_outside_daily_window": 6,
       "domestic_publication_date_unverified": 3,
-      "event_not_ai_relevant": 5,
+      "event_not_ai_relevant": 4,
       "source_outside_funding_backfill_window": 1,
-      "raw_source_quality_block": 2
+      "raw_source_quality_block": 8,
+      "non_event_or_index_title": 1,
+      "no_source_bounded_event": 1
     },
     "rates": {
-      "original_source_rate": 1,
-      "valid_claim_rate": 0.21052631578947367,
+      "original_source_rate": 0.8571428571428571,
+      "valid_claim_rate": 0.2571428571428571,
       "observation_rate": 0,
-      "event_conversion_rate": 0.75
+      "event_conversion_rate": 0.5555555555555556
     }
   }
 ]

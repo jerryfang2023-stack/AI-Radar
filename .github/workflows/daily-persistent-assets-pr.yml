@@ -68,6 +68,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
         with:
+          # Resolve the branch after acquiring the publication lock, not the
+          # event SHA captured before a preceding lane finished publishing.
+          ref: ${{ github.ref }}
           fetch-depth: 0
 
       - name: Check out authoritative private evidence store
@@ -266,6 +269,13 @@ jobs:
           gh run download "$resume_run_id" --name "$artifact_name" --dir "$resume_dir/artifact"
           cp -a "$resume_dir/artifact/." .
           cp "$resume_dir/source-title-translations-main.json" "$translation_db"
+          # A separate lane may have published more accepted same-date input
+          # while this checkpoint was waiting. Preserve both immutable inputs.
+          intake_file="01-SiteV2/content/11-databases/data-center-v4/intake-v1/${RUN_DATE}.json"
+          if git cat-file -e "HEAD:$intake_file" 2>/dev/null; then
+            node agent-workflow/tools/merge-source-intake-v1.mjs --date="${RUN_DATE}" --git-ref=HEAD
+          fi
+          node agent-workflow/tools/preserve-published-checkpoint-state.mjs --git-ref=HEAD
           # Accepted input bytes are immutable; metadata repairs are read-time overlays.
           node agent-workflow/tools/guanlan-monitor-quality-gate.mjs \
             --date="${RUN_DATE}" \
@@ -512,6 +522,7 @@ jobs:
         run: |
           set -euo pipefail
           node agent-workflow/tools/generate-funding-insights-deepseek.mjs \
+            --recover-from-git-ref=HEAD \
             --date="${RUN_DATE}" \
             --write=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-funding-insights.log"

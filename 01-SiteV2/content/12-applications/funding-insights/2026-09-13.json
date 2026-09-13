@@ -2,22 +2,2159 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-09-13",
-    "generated_at": "2026-09-13T00:33:34.329Z",
+    "generated_at": "2026-09-13T01:38:41.975Z",
     "trigger": "verified_funding_events_with_three_month_backfill",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 2,
-      "auto_published": 2,
+      "funding_events": 8,
+      "auto_published": 5,
       "blocked": 0,
       "pending": 0,
-      "deduplicated": 0
+      "deduplicated": 3
     },
     "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-7110ab6a9b376d88",
+      "triggered_by_event_id": "EV-798081a4ec056f8c",
+      "as_of_date": "2026-09-13",
+      "company": {
+        "entity_id": "EN-08e7b67a300e585f",
+        "name": "浙江无问智行科技有限公司",
+        "full_name": "浙江无问智行科技有限公司",
+        "website": "",
+        "summary": "无问智科是一家物理AI数据基础设施企业，专注于为智能驾驶、具身智能及机器人领域提供“AI数据+仿真验证”一体化解决方案，构建世界模型驱动的通用物理AI数据基座。",
+        "headquarters": "浙江省湖州市德清县",
+        "founders": [
+          {
+            "name": "刘盛翔",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b3e0771d43a8b075",
+                "quote": "创始人刘盛翔系前百度自动驾驶测试负责人、中国第一批自动驾驶技术人员",
+                "source_content_hash": "d4bc2f9d89c89481",
+                "quote_hash": "6870c9a7a180f6f35f4629781459d45b9770f8e5084e0d111c9c2b209343f7ff"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "于春磊",
+            "role": "联合创始人兼CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1c8fe4a31ddc44b",
+                "quote": "联合创始人兼CTO于春磊博士，毕业于法国CNRS下属无人系统实验室Heudiasyc",
+                "source_content_hash": "a847c040e34aa828",
+                "quote_hash": "e5723d1db59ab936efb2d0b46408eb5562b3722407d426cbcc08906c15d9e042"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b3e0771d43a8b075",
+            "quote": "无问智科成立于2022年，总部位于浙江省湖州市德清县，是一家物理AI数据基础设施企业",
+            "source_content_hash": "d4bc2f9d89c89481",
+            "quote_hash": "55bd6ae43bc01789860b84f56326e96076192e01a493f6f66b01190c095c509e"
+          }
+        ],
+        "application_entity_id": "EN-08e7b67a300e585f",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "数亿元",
+        "total_raised": "",
+        "announced_at": "2026-09-10",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "洪泰基金",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "本轮融资由洪泰基金领投",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "94c7a85dc3bfbbc225fb0f9b879c00bd6a4b1f6541a8c65fd07e54459279b5ce"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "洪山资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "洪山资本、中电数融、狮城资本跟投",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "535282a38c78aad93dc96141451f13ee102ff0ecc4384ac11e39008b31a29a48"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中电数融",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "洪山资本、中电数融、狮城资本跟投",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "535282a38c78aad93dc96141451f13ee102ff0ecc4384ac11e39008b31a29a48"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "狮城资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "洪山资本、中电数融、狮城资本跟投",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "535282a38c78aad93dc96141451f13ee102ff0ecc4384ac11e39008b31a29a48"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "架桥资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "架桥资本、力合金融、力合中科、澄凯灵及澄未来基金等老股东超额追投",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "828144f562ef2cd9ee34717b60c25afccb2cc8323a050a3292173076b6f1894f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "力合金融",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "架桥资本、力合金融、力合中科、澄凯灵及澄未来基金等老股东超额追投",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "828144f562ef2cd9ee34717b60c25afccb2cc8323a050a3292173076b6f1894f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "力合中科",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "架桥资本、力合金融、力合中科、澄凯灵及澄未来基金等老股东超额追投",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "828144f562ef2cd9ee34717b60c25afccb2cc8323a050a3292173076b6f1894f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "澄凯灵",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "架桥资本、力合金融、力合中科、澄凯灵及澄未来基金等老股东超额追投",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "828144f562ef2cd9ee34717b60c25afccb2cc8323a050a3292173076b6f1894f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "澄未来基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "架桥资本、力合金融、力合中科、澄凯灵及澄未来基金等老股东超额追投",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "828144f562ef2cd9ee34717b60c25afccb2cc8323a050a3292173076b6f1894f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a7547d4aa28546af",
+            "quote": "近日，无问智科宣布完成数亿元A轮融资。",
+            "source_content_hash": "8d6ff04067b113b2",
+            "quote_hash": "587ea30504f7809aba9ab479a7fd52aaf4a96a5c02ada63af899a92513097ea5"
+          },
+          {
+            "source_id": "FISRC-a7547d4aa28546af",
+            "quote": "近日，无问智科宣布完成数亿元A轮融资。本轮融资由洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融、力合中科、澄凯灵及澄未来基金等老股东超额追投。",
+            "source_content_hash": "8d6ff04067b113b2",
+            "quote_hash": "cbdd366074c7873a2d37fce0b5f8edd9db873ce26804b8ea0c263a2d94924117"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-798081a4ec056f8c",
+            "round_original": "A轮",
+            "amount": "数亿元",
+            "announced_at": "2026-09-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "近日，无问智科宣布完成数亿元A轮融资。",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "587ea30504f7809aba9ab479a7fd52aaf4a96a5c02ada63af899a92513097ea5"
+              },
+              {
+                "source_id": "FISRC-a7547d4aa28546af",
+                "quote": "近日，无问智科宣布完成数亿元A轮融资。本轮融资由洪泰基金领投，洪山资本、中电数融、狮城资本跟投，架桥资本、力合金融、力合中科、澄凯灵及澄未来基金等老股东超额追投。",
+                "source_content_hash": "8d6ff04067b113b2",
+                "quote_hash": "cbdd366074c7873a2d37fce0b5f8edd9db873ce26804b8ea0c263a2d94924117"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "无穹",
+          "description": "世界模拟器，基于双空间世界模拟器的物理模拟能力，将复杂柔性物体仿真相关性提升至90%，接触误差降至1%以内。",
+          "target_customers": "具身智能企业、基础模型公司",
+          "features": [
+            "物理模拟",
+            "生成式仿真",
+            "SimReady资产构建"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b3e0771d43a8b075",
+              "quote": "双空间世界模拟器将复杂柔性物体仿真相关性提升至90%，接触误差降至1%以内",
+              "source_content_hash": "d4bc2f9d89c89481",
+              "quote_hash": "b1d501bb56cb547ce23e5d0efa6daaebd2f60c4445f5513c0fe7b0c270fafc13"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Wuyin Capture",
+          "description": "多模态数据采集硬件，包含视觉采集设备、惯性动捕服、数据手套等，支持微秒级硬件时间同步，实现视觉、人体姿态、手部动作等多模态数据采集。",
+          "target_customers": "具身智能企业、机器人企业",
+          "features": [
+            "视觉采集",
+            "惯性动捕",
+            "数据手套",
+            "微秒级硬件时间同步"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1c8fe4a31ddc44b",
+              "quote": "Wuyin Capture 多模态数据采集硬件：包含视觉采集设备、惯性动捕服、数据手套等，支持微秒级硬件时间同步",
+              "source_content_hash": "a847c040e34aa828",
+              "quote_hash": "76c064d4773989c673314a96294878701d7e2bba2fe2eabc3c83a17e3be30502"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "星动纪元",
+          "industry": "具身智能",
+          "use_case": "真实数据、仿真、评测及Real2Sim2Real闭环合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1c8fe4a31ddc44b",
+              "quote": "主要服务的核心客户包括星动纪元、灵心巧手、它石智航、零次方、字节跳动、无界动力、章鱼动力、地平线、长安汽车、吉利汽车、大众等企业。",
+              "source_content_hash": "a847c040e34aa828",
+              "quote_hash": "0013dd27f61695cb3a3e223fcfa0038c5d27d66a63fa4a699a6c3045f9ae7a54"
+            }
+          ],
+          "entity_id": "EN-bbc41366a5a7cf78"
+        },
+        {
+          "name": "灵心巧手",
+          "industry": "具身智能",
+          "use_case": "真实数据、仿真、评测及Real2Sim2Real闭环合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1c8fe4a31ddc44b",
+              "quote": "主要服务的核心客户包括星动纪元、灵心巧手、它石智航、零次方、字节跳动、无界动力、章鱼动力、地平线、长安汽车、吉利汽车、大众等企业。",
+              "source_content_hash": "a847c040e34aa828",
+              "quote_hash": "0013dd27f61695cb3a3e223fcfa0038c5d27d66a63fa4a699a6c3045f9ae7a54"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "它石智航",
+          "industry": "具身智能",
+          "use_case": "真实数据、仿真、评测及Real2Sim2Real闭环合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1c8fe4a31ddc44b",
+              "quote": "主要服务的核心客户包括星动纪元、灵心巧手、它石智航、零次方、字节跳动、无界动力、章鱼动力、地平线、长安汽车、吉利汽车、大众等企业。",
+              "source_content_hash": "a847c040e34aa828",
+              "quote_hash": "0013dd27f61695cb3a3e223fcfa0038c5d27d66a63fa4a699a6c3045f9ae7a54"
+            }
+          ],
+          "entity_id": "EN-39ba5f9dcab4e98a"
+        },
+        {
+          "name": "零次方",
+          "industry": "具身智能",
+          "use_case": "真实数据、仿真、评测及Real2Sim2Real闭环合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1c8fe4a31ddc44b",
+              "quote": "主要服务的核心客户包括星动纪元、灵心巧手、它石智航、零次方、字节跳动、无界动力、章鱼动力、地平线、长安汽车、吉利汽车、大众等企业。",
+              "source_content_hash": "a847c040e34aa828",
+              "quote_hash": "0013dd27f61695cb3a3e223fcfa0038c5d27d66a63fa4a699a6c3045f9ae7a54"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "字节跳动",
+          "industry": "基础模型",
+          "use_case": "真实数据、仿真、评测及Real2Sim2Real闭环合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1c8fe4a31ddc44b",
+              "quote": "主要服务的核心客户包括星动纪元、灵心巧手、它石智航、零次方、字节跳动、无界动力、章鱼动力、地平线、长安汽车、吉利汽车、大众等企业。",
+              "source_content_hash": "a847c040e34aa828",
+              "quote_hash": "0013dd27f61695cb3a3e223fcfa0038c5d27d66a63fa4a699a6c3045f9ae7a54"
+            }
+          ],
+          "entity_id": "EN-5388bc10736a0eff"
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "光轮智能",
+          "product": "物理AI数据服务",
+          "scenario": "物理AI数据基础设施",
+          "target_customer": "具身智能企业",
+          "funding_summary": "2026年6月完成数亿元B轮融资，由蚂蚁集团领投；此前于2025年11月完成数亿元A轮及A+轮融资",
+          "core_difference": "光轮智能于2026年6月完成B轮融资，由蚂蚁集团领投；无问智科于2026年9月完成A轮融资，由洪泰基金领投，融资轮次和领投方不同。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b3e0771d43a8b075",
+              "quote": "光轮智能于2026年6月完成数亿元B轮融资，由蚂蚁集团领投；此前于2025年11月完成数亿元A轮及A+轮融资。",
+              "source_content_hash": "d4bc2f9d89c89481",
+              "quote_hash": "414e5ef2fd4aef6bbbed52c66edf3d4ca45afe345d76272c0cda88d93a710e13"
+            }
+          ],
+          "entity_id": "EN-8b332ded81dc8d3a"
+        },
+        {
+          "name": "恺望数据",
+          "product": "物理AI数据服务",
+          "scenario": "物理AI数据基础设施",
+          "target_customer": "具身智能企业",
+          "funding_summary": "2026年8月完成逾亿元战略融资，由北京亦庄产业升级基金、华方资本、天际资本多方联合领投",
+          "core_difference": "恺望数据于2026年8月完成战略融资，由多方联合领投；无问智科于2026年9月完成A轮融资，由洪泰基金单一领投。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b3e0771d43a8b075",
+              "quote": "恺望数据于2026年8月完成逾亿元战略融资，由北京亦庄产业升级基金、华方资本、天际资本多方联合领投。",
+              "source_content_hash": "d4bc2f9d89c89481",
+              "quote_hash": "dec2b22a2adf370b481f09a57b5358baa1791fce428e7437f8faa9163a8fb714"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "博登智能",
+          "product": "具身机器人创新中心与真机训练数据",
+          "scenario": "真机训练数据采集",
+          "target_customer": "具身智能企业",
+          "funding_summary": "",
+          "core_difference": "博登智能在宁波、马鞍山、湖州建设三大具身机器人创新中心，部署超500台实体机器人，年产50万小时真机训练数据产能；无问智科以无感野采方式月度数据生产能力超过2万小时，累计沉淀数十万小时数据。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b3e0771d43a8b075",
+              "quote": "博登智能已在宁波、马鞍山、湖州建设三大具身机器人创新中心，部署超500台多型号实体机器人及数千套自研采集设备，可实现年产50万小时真机训练数据产能。",
+              "source_content_hash": "d4bc2f9d89c89481",
+              "quote_hash": "fafaa9be74f73d106a5f8d0c098aa3446428ddce0d88fe6522fdde1ed86bcda8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "京东",
+          "product": "全球具身智能数据采集中心",
+          "scenario": "具身智能数据采集",
+          "target_customer": "具身智能企业",
+          "funding_summary": "",
+          "core_difference": "京东在江苏宿迁建立全球具身智能数据采集中心，1：1还原零售商超、物流仓储等五大核心场景，依托社区网格体系完成入户采集；无问智科通过自研多模态设备以无感野采方式获取数据，已进入物流仓储、工业制造、家庭服务和商业零售等场景。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b3e0771d43a8b075",
+              "quote": "京东在江苏宿迁建立全球具身智能数据采集中心，1：1还原零售商超、物流仓储等五大核心场景，依托社区网格体系完成入户采集。",
+              "source_content_hash": "d4bc2f9d89c89481",
+              "quote_hash": "1af6cf6fa37f4376b4e07e2e8bfbfaa94f9288d6cff791f020c554ff1774d59f"
+            }
+          ],
+          "entity_id": "EN-81baf57e05f11276"
+        },
+        {
+          "name": "觅蜂科技",
+          "product": "一站式物理AI数据服务平台",
+          "scenario": "物理AI数据服务",
+          "target_customer": "具身智能企业",
+          "funding_summary": "",
+          "core_difference": "觅蜂科技定位为“一站式物理AI数据服务平台”，打造“真机、无本体、仿真”全范式数据供给体系，计划2026年实现千万小时级数据产能；无问智科围绕“世界模型×数据工厂×世界模拟器”技术体系，月度数据生产能力超过2万小时。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b3e0771d43a8b075",
+              "quote": "觅蜂科技定位为“一站式物理AI数据服务平台”，打造“真机、无本体、仿真”全范式数据供给体系，计划2026年实现千万小时级数据产能。",
+              "source_content_hash": "d4bc2f9d89c89481",
+              "quote_hash": "df18837be1e926017103b8c2e1152ee055d10edd46344000160666837eda59e4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "具身智能业务订单",
+          "value": "数亿元",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7547d4aa28546af",
+              "quote": "无问智科具身智能业务订单已达数亿元",
+              "source_content_hash": "8d6ff04067b113b2",
+              "quote_hash": "e1b2cca45ff3bf00d185a0a1b3b5a22f1b491c6d1c53cdc4de6f6c122b710a56"
+            }
+          ]
+        },
+        {
+          "label": "订单同比增长",
+          "value": "超过3000%",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7547d4aa28546af",
+              "quote": "订单同比增长超过3000%",
+              "source_content_hash": "8d6ff04067b113b2",
+              "quote_hash": "7ec67e54a37e081d1a480396e408988030033a6e556c75a19f0ec12f80daa9bc"
+            }
+          ]
+        },
+        {
+          "label": "预计收入同比增长",
+          "value": "超过1000%",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7547d4aa28546af",
+              "quote": "预计收入同比增长超过1000%",
+              "source_content_hash": "8d6ff04067b113b2",
+              "quote_hash": "0919cdc220b78b279d006d06fc5cfda1226d0885ba73794eced8bad425bc2aae"
+            }
+          ]
+        },
+        {
+          "label": "头部客户覆盖度",
+          "value": "超过80%",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7547d4aa28546af",
+              "quote": "头部客户覆盖度和客户复购率均超过80%",
+              "source_content_hash": "8d6ff04067b113b2",
+              "quote_hash": "2db438db625be7e8f2f4f47eac025cdc3e4a25043981aaf0d28bf40fc00a0a27"
+            }
+          ]
+        },
+        {
+          "label": "客户复购率",
+          "value": "超过80%",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7547d4aa28546af",
+              "quote": "头部客户覆盖度和客户复购率均超过80%",
+              "source_content_hash": "8d6ff04067b113b2",
+              "quote_hash": "2db438db625be7e8f2f4f47eac025cdc3e4a25043981aaf0d28bf40fc00a0a27"
+            }
+          ]
+        },
+        {
+          "label": "累计真实物理交互数据",
+          "value": "数十万小时",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7547d4aa28546af",
+              "quote": "累计沉淀数十万小时高质量真实物理交互数据",
+              "source_content_hash": "8d6ff04067b113b2",
+              "quote_hash": "a22d94344b8b9ed58661ac076eb6682318aa20bda5ef32f1a40e2e64d84d803c"
+            }
+          ]
+        },
+        {
+          "label": "月度数据生产能力",
+          "value": "超过2万小时",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7547d4aa28546af",
+              "quote": "月度数据生产能力超过2万小时",
+              "source_content_hash": "8d6ff04067b113b2",
+              "quote_hash": "1ff498adca9929f2a60b7637b8722194a3b05ec308b95f2430bc1ccb495dbf65"
+            }
+          ]
+        },
+        {
+          "label": "SimReady资产库规模",
+          "value": "百万级",
+          "observed_at": "2026-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7547d4aa28546af",
+              "quote": "建立百万级SimReady资产库",
+              "source_content_hash": "8d6ff04067b113b2",
+              "quote_hash": "c7c06e1bbe395979f485fdf592dcbd7e111930f4e53b2fcc677d2890a7de93af"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "刘盛翔",
+          "quote": "无问智科将持续聚焦物理AI数据基础设施赛道，加大研发投入，以专业领先的通用数据基础设施推动物理AI技术在真实产业场景加速落地。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7547d4aa28546af",
+              "quote": "他强调：“无问智科将持续聚焦物理AI数据基础设施赛道，加大研发投入，以专业领先的通用数据基础设施推动物理AI技术在真实产业场景加速落地。”",
+              "source_content_hash": "8d6ff04067b113b2",
+              "quote_hash": "701c86dc641e33d509d769ec636f7ae13bc81e1bbfbdcb2a0bea0864ad245879"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是物理AI数据基础设施的工业化规模产出能力与Real2Sim2Real闭环对模型能力的实际增益。无问智科以数亿元A轮融资验证了其数据生产规模（月度超2万小时）、仿真效率（SimReady资产构建从3天缩短至5分钟）和商业转化（订单数亿元、同比增长超3000%）三重信号。但来源未披露本轮估值，也未提供投资机构对估值或回报预期的公开表述，因此无法对估值水平作出判断。",
+        "validated_signals": [
+          "具身智能业务订单已达数亿元，订单同比增长超过3000%",
+          "头部客户覆盖度和客户复购率均超过80%",
+          "累计沉淀数十万小时高质量真实物理交互数据，月度数据生产能力超过2万小时",
+          "SimReady资产构建时间从3天缩短至5分钟，建立百万级SimReady资产库",
+          "虚实融合闭环验证中，在线强化学习使模型仿真成功率由9.7%提升至79.8%，迁移至真实机器人后任务成功率提高超过50%"
+        ],
+        "risks": [
+          "来源未披露本轮融资的具体估值和投后估值，资本判断缺乏估值锚点",
+          "订单和收入增速基数较低，3000%和1000%的同比增长率可能来自较小基数，持续性有待验证",
+          "物理AI数据基础设施赛道竞争加剧，光轮智能、恺望数据、博登智能、京东、觅蜂科技等均在扩大数据产能，行业可能面临产能过剩和价格竞争"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "data",
+        "market_application_id": "synthetic_data",
+        "use_case_ids": [
+          "physical_automation",
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "automotive_transportation",
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "物理AI数据基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是物理AI数据基础设施的工业化规模产出能力与Real2Sim2Real闭环对模型能力的实际增益。无问智科以数亿元A轮融资验证了其数据生产规模（月度超2万小时）、仿真效率（SimReady资产构建从3天缩短至5分钟）和商业转化（订单数亿元、同比增长超3000%）三重信号。但来源未披露本轮估值，也未提供投资机构对估值或回报预期的公开表述，因此无法对估值水平作出判断。",
+          "evidence_signals": [
+            "具身智能业务订单已达数亿元，订单同比增长超过3000%",
+            "头部客户覆盖度和客户复购率均超过80%",
+            "累计沉淀数十万小时高质量真实物理交互数据，月度数据生产能力超过2万小时",
+            "SimReady资产构建时间从3天缩短至5分钟，建立百万级SimReady资产库",
+            "虚实融合闭环验证中，在线强化学习使模型仿真成功率由9.7%提升至79.8%，迁移至真实机器人后任务成功率提高超过50%"
+          ],
+          "risks": [
+            "来源未披露本轮融资的具体估值和投后估值，资本判断缺乏估值锚点",
+            "订单和收入增速基数较低，3000%和1000%的同比增长率可能来自较小基数，持续性有待验证",
+            "物理AI数据基础设施赛道竞争加剧，光轮智能、恺望数据、博登智能、京东、觅蜂科技等均在扩大数据产能，行业可能面临产能过剩和价格竞争"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "无穹",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Wuyin Capture",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "刘盛翔",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "于春磊",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "洪泰基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "洪山资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中电数融",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "狮城资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "架桥资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "力合金融",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "力合中科",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "澄凯灵",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "澄未来基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "星动纪元",
+          "canonical_entity_id": "EN-bbc41366a5a7cf78",
+          "canonical_name": "星动纪元"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "灵心巧手",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "它石智航",
+          "canonical_entity_id": "EN-39ba5f9dcab4e98a",
+          "canonical_name": "它石智航"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "零次方",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "字节跳动",
+          "canonical_entity_id": "EN-5388bc10736a0eff",
+          "canonical_name": "ByteDance"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "光轮智能",
+          "canonical_entity_id": "EN-8b332ded81dc8d3a",
+          "canonical_name": "光轮智能"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "恺望数据",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "博登智能",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "京东",
+          "canonical_entity_id": "EN-81baf57e05f11276",
+          "canonical_name": "京东"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "觅蜂科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-798081a4ec056f8c",
+          "date": "2026-09-10",
+          "title": "无问智科A轮融资数亿元 加速打造物理AI数据基座-经济参考网 _ 新华社《经济参考报》官方网站",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-a6886f02b4b79c59"
+          ]
+        },
+        {
+          "event_id": "EV-3175368fb5a45219",
+          "date": "2026-09-09",
+          "title": "无问智科完成数亿元A轮融资，加速打造物理AI数据基座",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-79ab69d7a8da839a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-a7547d4aa28546af",
+          "source_url": "http://www.jjckb.cn/20260910/f9448cdc30884f8199eac8d45a632823/c.html",
+          "title": "无问智科A轮融资数亿元 加速打造物理AI数据基座-经济参考网 _ 新华社《经济参考报》官方网站",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-13T00:26:30.677Z",
+          "content_hash": "8d6ff04067b113b2",
+          "source_artifact_id": "SA-a6886f02b4b79c59",
+          "raw_id": "RAW-e421bd27d826d51b"
+        },
+        {
+          "source_id": "FISRC-b3e0771d43a8b075",
+          "source_url": "https://m.cls.cn/detail/2478690",
+          "title": "无问智科完成数亿元A轮融资 洪泰基金领投",
+          "publisher": "m.cls.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-13T01:27:22.171Z",
+          "content_hash": "d4bc2f9d89c89481",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d1c8fe4a31ddc44b",
+          "source_url": "https://www.penghoo.cn/a/11211.html",
+          "title": "无问智科完成数亿元融资，合作订单达数亿元 - 朋湖科创",
+          "publisher": "penghoo.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-13T01:27:23.694Z",
+          "content_hash": "a847c040e34aa828",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-13T01:27:53.652Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-798081a4ec056f8c",
+          "confidence": 0.8,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-13T01:27:53.652Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Wuyin Capture",
+            "无穹"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "于春磊",
+            "刘盛翔"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-798081a4ec056f8c"
+      ],
+      "aggregation": {
+        "key": "EN-08e7b67a300e585f|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-22eb892a570f2c35",
+      "triggered_by_event_id": "EV-10b007d20ad2794e",
+      "as_of_date": "2026-09-13",
+      "company": {
+        "entity_id": "EN-ce232f0155cad088",
+        "name": "杭州曦望芯科智能科技有限公司",
+        "full_name": "杭州曦望芯科智能科技有限公司",
+        "website": "",
+        "summary": "曦望是一家专注于全栈自研AI推理GPU的芯片公司，2024年底从商汤大芯片部门分拆独立，已形成S1、S2、启望S3三代芯片矩阵，成为国内首家估值突破百亿元的纯推理GPU独角兽。",
+        "headquarters": "杭州",
+        "founders": [],
+        "team_size": {
+          "value": "400人",
+          "observed_at": "2026-04-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "目前曦望团队规模已扩大至400人，研发人员占比超过80%，硕士及以上学历同样超过80%。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "871ef1cae60669fef2ce15c815f5db199b8f6dbc1f2d2818691ee76c1a66b844"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7cdcb067e5c3832c",
+            "quote": "专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司（简称“曦望”）宣布已完成新一轮超10亿元人民币融资。",
+            "source_content_hash": "7b7aea00e8c0d894",
+            "quote_hash": "beda5814142a8dcbfd010785e8ccc2ba15e4418f507f51b33522407c5c02d9a9"
+          },
+          {
+            "source_id": "FISRC-6d83803173bb060f",
+            "quote": "曦望自2024年底从商汤大芯片部门分拆独立以来，累计已完成七轮融资，总融资额约40亿元，成为国内首家估值突破百亿元的纯推理GPU独角兽。",
+            "source_content_hash": "de44aa0901fb52c3",
+            "quote_hash": "a955f974bdc7926b8d5a40e7fa89fb09a0c6b8499a51455c794bd383b6c1a167"
+          }
+        ],
+        "application_entity_id": "EN-ce232f0155cad088",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "amount": "10亿元人民币",
+        "total_raised": "约40亿元",
+        "announced_at": "2026-04-20",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7cdcb067e5c3832c",
+            "quote": "十个月两轮超20亿融资：商汤系“分拆军”曦望成为国内首家纯推理GPU独角兽",
+            "source_content_hash": "7b7aea00e8c0d894",
+            "quote_hash": "c7a2de37658ade1b7f3159b41d0ea60038581231c9ae54ad47db4d607d70b91d"
+          },
+          {
+            "source_id": "FISRC-7cdcb067e5c3832c",
+            "quote": "2026年4月20日，专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司（简称“曦望”）宣布已完成新一轮超10亿元人民币融资。",
+            "source_content_hash": "7b7aea00e8c0d894",
+            "quote_hash": "36e7fef1103a752b81e352c040da290f5478d87c3edc219f1342c87da6b34066"
+          },
+          {
+            "source_id": "FISRC-7cdcb067e5c3832c",
+            "quote": "本轮融资由多家机构参与，具体名单尚未全部披露。",
+            "source_content_hash": "7b7aea00e8c0d894",
+            "quote_hash": "f055d7c1de74ea3537a29a8aa77ed7136820c0ac2e9ca0b3e33628b603efd181"
+          },
+          {
+            "source_id": "FISRC-7cdcb067e5c3832c",
+            "quote": "至此，曦望自2024年底从商汤大芯片部门分拆独立以来，累计已完成七轮融资，总融资额约40亿元，成为国内首家估值突破百亿元的纯推理GPU独角兽。",
+            "source_content_hash": "7b7aea00e8c0d894",
+            "quote_hash": "b3464dd9f8570db9daedd4aaaca9ce4d8096b0ed7361944249f40af9117d9a45"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "10亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "total_raised_original": "约40亿元",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": 4000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 40 亿元"
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-10b007d20ad2794e",
+            "round_original": "新一轮",
+            "amount": "10亿元人民币",
+            "announced_at": "2026-04-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7cdcb067e5c3832c",
+                "quote": "十个月两轮超20亿融资：商汤系“分拆军”曦望成为国内首家纯推理GPU独角兽",
+                "source_content_hash": "7b7aea00e8c0d894",
+                "quote_hash": "c7a2de37658ade1b7f3159b41d0ea60038581231c9ae54ad47db4d607d70b91d"
+              },
+              {
+                "source_id": "FISRC-7cdcb067e5c3832c",
+                "quote": "2026年4月20日，专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司（简称“曦望”）宣布已完成新一轮超10亿元人民币融资。",
+                "source_content_hash": "7b7aea00e8c0d894",
+                "quote_hash": "36e7fef1103a752b81e352c040da290f5478d87c3edc219f1342c87da6b34066"
+              },
+              {
+                "source_id": "FISRC-7cdcb067e5c3832c",
+                "quote": "本轮融资由多家机构参与，具体名单尚未全部披露。",
+                "source_content_hash": "7b7aea00e8c0d894",
+                "quote_hash": "f055d7c1de74ea3537a29a8aa77ed7136820c0ac2e9ca0b3e33628b603efd181"
+              },
+              {
+                "source_id": "FISRC-7cdcb067e5c3832c",
+                "quote": "至此，曦望自2024年底从商汤大芯片部门分拆独立以来，累计已完成七轮融资，总融资额约40亿元，成为国内首家估值突破百亿元的纯推理GPU独角兽。",
+                "source_content_hash": "7b7aea00e8c0d894",
+                "quote_hash": "b3464dd9f8570db9daedd4aaaca9ce4d8096b0ed7361944249f40af9117d9a45"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "曦望S1",
+          "description": "面向云端及边缘端视觉推理专用芯片，主攻视频分析模型。",
+          "target_customers": "云端及边缘端视觉推理场景",
+          "features": [
+            "视觉推理专用芯片",
+            "主攻视频分析模型",
+            "累计出货超2万片"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "S1 ：面向云端及边缘端视觉推理专用芯片，主攻视频分析模型，累计出货超2万片。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "f76063bcfe3b253390bde5a05a7fe72265a6eb9e6873f75163e938349e87b834"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "曦望S2",
+          "description": "7nm工艺的GPGPU，兼容英伟达CUDA生态，性能对标A100，实现指令集、IP架构、算子及编译器全自研。",
+          "target_customers": "AI推理算力需求方",
+          "features": [
+            "7nm工艺GPGPU",
+            "兼容英伟达CUDA生态",
+            "性能对标A100",
+            "指令集、IP架构、算子及编译器全自研"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "S2 ：7nm工艺的GPGPU，兼容英伟达CUDA生态，性能对标A100，实现指令集、IP架构、算子及编译器全自研。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "e0f3d12b5dbbb67fe324427e9f5663fdad92509d672354a32a24a5863ab652d9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "启望S3",
+          "description": "2026年1月发布的旗舰推理GPU，国内首款搭载LPDDR6的推理GPU，针对Agent推理需求全链路重构，推理性能较S2提升5倍，目标将Token成本降低90%。",
+          "target_customers": "AI智能体推理算力需求方",
+          "features": [
+            "国内首款搭载LPDDR6的推理GPU",
+            "推理性能较S2提升5倍",
+            "目标将Token成本降低90%",
+            "GEMM利用率约99%，Flash Attention利用率约98%",
+            "原生支持FP4低精度推理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "启望S3 ：2026年1月发布，国内首款搭载LPDDR6（同时兼容LPDDR5X）的推理GPU。针对Agent推理需求，从AI Core到内存IO全链路重构，推理性能较S2提升5倍，目标将Token成本降低90%。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "a3c1e2a96235575d522a8e059ed389c382d776ddabb0a4630b4e35e554f20f2f"
+            },
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "S3的核心突破在于算子利用率：GEMM和Flash Attention（占大模型推理计算量90%以上）的利用率分别达到约99%和98%，标称算力几乎全部转化为有效吞吐。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "cd23f2f199dab9addeeefdf0964bedda8105e0dc7b304dc27ea0753ccb621768"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "英伟达",
+          "product": "A100",
+          "scenario": "AI推理算力",
+          "target_customer": "AI算力需求方",
+          "funding_summary": "",
+          "core_difference": "曦望S2为7nm工艺GPGPU，兼容英伟达CUDA生态，性能对标A100，实现指令集、IP架构、算子及编译器全自研。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "S2 ：7nm工艺的GPGPU，兼容英伟达CUDA生态，性能对标A100，实现指令集、IP架构、算子及编译器全自研。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "e0f3d12b5dbbb67fe324427e9f5663fdad92509d672354a32a24a5863ab652d9"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "团队规模",
+          "value": "400人",
+          "observed_at": "2026-04-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "目前曦望团队规模已扩大至400人，研发人员占比超过80%，硕士及以上学历同样超过80%。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "871ef1cae60669fef2ce15c815f5db199b8f6dbc1f2d2818691ee76c1a66b844"
+            }
+          ]
+        },
+        {
+          "label": "研发人员占比",
+          "value": "超过80%",
+          "observed_at": "2026-04-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "研发人员占比超过80%，硕士及以上学历同样超过80%。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "60fe671b53e4bfdc08c5cee91422af6ab508e071cd180ca2feb1609bfd22dd32"
+            }
+          ]
+        },
+        {
+          "label": "S1累计出货量",
+          "value": "超2万片",
+          "observed_at": "2026-04-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "S1 ：面向云端及边缘端视觉推理专用芯片，主攻视频分析模型，累计出货超2万片。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "f76063bcfe3b253390bde5a05a7fe72265a6eb9e6873f75163e938349e87b834"
+            }
+          ]
+        },
+        {
+          "label": "S3推理性能提升",
+          "value": "较S2提升5倍",
+          "observed_at": "2026-04-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "推理性能较S2提升5倍，目标将Token成本降低90%。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "1dbce994cbd4be64749c83d4257c31ee8318c4367223d00b8111c5ebf31dd8f4"
+            }
+          ]
+        },
+        {
+          "label": "FP4推理吞吐量提升",
+          "value": "较FP16提升3至4倍",
+          "observed_at": "2026-04-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "S3原生支持FP4低精度推理，在DeepSeek V3/R1等主流模型上实现接近无损的FP4推理，吞吐量较FP16提升3至4倍。",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "0bbc67130500da30c5902fa56420137703a8ac8367cb838f80a8b4d122c63b67"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "徐冰",
+          "quote": "AI算力基建的重心已彻底切换。2026年，AI推理计算需求将达到训练需求的4至5倍，推理算力租赁价格在半年内上涨了近40%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "曦望董事长徐冰表示：“AI算力基建的重心已彻底切换。2026年，AI推理计算需求将达到训练需求的4至5倍，推理算力租赁价格在半年内上涨了近40%。”",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "f36449677326d0446979bc8ca43911526bcef5ec723a529003deb5834a3a121a"
+            }
+          ]
+        },
+        {
+          "speaker": "徐冰",
+          "quote": "启望S3不是简单的性能升级，而是对AI推理成本曲线的一次重构。我们的目标是让推理成本降至‘百万Token一分钱’，让AI像水电一样成为普惠基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7cdcb067e5c3832c",
+              "quote": "徐冰表示：“启望S3不是简单的性能升级，而是对AI推理成本曲线的一次重构。我们的目标是让推理成本降至‘百万Token一分钱’，让AI像水电一样成为普惠基础设施。”",
+              "source_content_hash": "7b7aea00e8c0d894",
+              "quote_hash": "fc7270a8c82f21ba8e3a99d9baeff2a44720aa7a84be1c5c52fe2d21413820c4"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI推理算力需求的结构性爆发：来源显示2026年AI推理计算需求预计达到训练需求的4至5倍，推理算力租赁价格半年内上涨近40%，而曦望以全栈自研推理GPU切入该赛道，S3在算子利用率上达到GEMM约99%、Flash Attention约98%，并以FP4低精度推理实现吞吐量较FP16提升3至4倍，构成成本曲线的直接重构信号。估值突破百亿元所依赖的已验证信号包括：S1累计出货超2万片、S2实现指令集到编译器全自研并兼容CUDA生态、S3已发布且进入量产交付阶段、团队400人中研发占比超80%。证据边界在于：本轮具体投资方名单尚未披露，无法验证机构背书；S3尚未完成规模化量产交付，性能数据来自公司披露而非第三方实测；估值突破百亿元为来源陈述，未提供估值依据。",
+        "validated_signals": [
+          "S1累计出货超2万片，已有实际出货记录",
+          "S2实现指令集、IP架构、算子及编译器全自研，兼容英伟达CUDA生态",
+          "S3已发布，GEMM和Flash Attention算子利用率分别达到约99%和98%",
+          "团队规模扩大至400人，研发人员占比超过80%",
+          "累计完成七轮融资，总融资额约40亿元"
+        ],
+        "risks": [
+          "本轮融资具体投资方名单尚未披露，无法确认机构背书质量",
+          "S3尚未完成规模化量产交付，性能数据未经第三方独立验证",
+          "推理GPU市场面临英伟达等成熟生态的竞争压力，CUDA兼容策略的长期可持续性存在不确定性",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "automotive_transportation",
+          "logistics_supply_chain"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "AI推理GPU芯片",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI推理算力需求的结构性爆发：来源显示2026年AI推理计算需求预计达到训练需求的4至5倍，推理算力租赁价格半年内上涨近40%，而曦望以全栈自研推理GPU切入该赛道，S3在算子利用率上达到GEMM约99%、Flash Attention约98%，并以FP4低精度推理实现吞吐量较FP16提升3至4倍，构成成本曲线的直接重构信号。估值突破百亿元所依赖的已验证信号包括：S1累计出货超2万片、S2实现指令集到编译器全自研并兼容CUDA生态、S3已发布且进入量产交付阶段、团队400人中研发占比超80%。证据边界在于：本轮具体投资方名单尚未披露，无法验证机构背书；S3尚未完成规模化量产交付，性能数据来自公司披露而非第三方实测；估值突破百亿元为来源陈述，未提供估值依据。",
+          "evidence_signals": [
+            "S1累计出货超2万片，已有实际出货记录",
+            "S2实现指令集、IP架构、算子及编译器全自研，兼容英伟达CUDA生态",
+            "S3已发布，GEMM和Flash Attention算子利用率分别达到约99%和98%",
+            "团队规模扩大至400人，研发人员占比超过80%",
+            "累计完成七轮融资，总融资额约40亿元"
+          ],
+          "risks": [
+            "本轮融资具体投资方名单尚未披露，无法确认机构背书质量",
+            "S3尚未完成规模化量产交付，性能数据未经第三方独立验证",
+            "推理GPU市场面临英伟达等成熟生态的竞争压力，CUDA兼容策略的长期可持续性存在不确定性",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "曦望S1",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "曦望S2",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "启望S3",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "英伟达",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7cdcb067e5c3832c",
+          "source_url": "https://api.laoyaoba.com/n/1017339",
+          "title": "十个月两轮超20亿融资：商汤系“分拆军”曦望成为国内首家纯推理GPU独角兽",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-13T00:26:30.498Z",
+          "content_hash": "7b7aea00e8c0d894",
+          "source_artifact_id": "SA-2984d0e49be22874",
+          "raw_id": "RAW-60fbbf1986a8f74d"
+        },
+        {
+          "source_id": "FISRC-6d83803173bb060f",
+          "source_url": "https://www.eet-china.com/mp/a489339.html",
+          "title": "国产GPU独角兽，再获超10亿融资！-电子工程专辑",
+          "publisher": "eet-china.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-13T01:27:04.482Z",
+          "content_hash": "de44aa0901fb52c3",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-13T01:27:24.659Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-10b007d20ad2794e",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-13T01:27:24.659Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "启望S3",
+            "曦望S1",
+            "曦望S2"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-10b007d20ad2794e"
+      ],
+      "aggregation": {
+        "key": "EN-ce232f0155cad088|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-5492b96ff358805b",
+      "triggered_by_event_id": "EV-a52dd9e9cac23694",
+      "as_of_date": "2026-09-13",
+      "company": {
+        "entity_id": "EN-ed8ff30f2dcaf9d6",
+        "name": "德睿智药",
+        "full_name": "德睿智药（MindRank）",
+        "website": "https://www.mindrank.ai",
+        "summary": "德睿智药是一家临床阶段的AI驱动新药研发公司，致力于构建AI Native新药研发引擎，聚焦难以成药靶点，通过自研MAP平台覆盖靶点研究、分子设计、实验验证及临床数据分析等关键环节。",
+        "headquarters": "杭州",
+        "founders": [
+          {
+            "name": "牛张明",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e59652e6b200515c",
+                "quote": "德睿智药创始人兼CEO牛张明表示",
+                "source_content_hash": "6461ec5fc6fa20ad",
+                "quote_hash": "7bc40b9a0c87e3d3625b619e6dabc9dbe1385b307fa39aacd9ac916f0f1f4329"
+              }
+            ],
+            "entity_id": "EN-8660708b70cb8293"
+          }
+        ],
+        "team_size": {
+          "value": "40余人",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7e3236f9a0f69827",
+              "quote": "MindRank AI has only over 40 employees since its founding",
+              "source_content_hash": "663d9c9583918768",
+              "quote_hash": "5188c0d14fca529ec5c462f6d54e838802f7e112deb8d787f61e9e090d68a1bf"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e59652e6b200515c",
+            "quote": "专注于AI驱动新药研发的科技公司——德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资",
+            "source_content_hash": "6461ec5fc6fa20ad",
+            "quote_hash": "c17b2041f0026c612fd1f4bd77a4c59cd3799c65a96b7746e57edcf8792fc040"
+          }
+        ],
+        "application_entity_id": "EN-ed8ff30f2dcaf9d6",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "5200万美元",
+        "total_raised": "8200万美元",
+        "announced_at": "2026-07-08",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [
+          {
+            "name": "夏尔巴医疗基金",
+            "role": "天使轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c8803e2f7419599f",
+                "quote": "in May 2021, it closed a RMB 45 million angel round led by Sherpa Medical Fund",
+                "source_content_hash": "674418393ee4156c",
+                "quote_hash": "e1522bd324136ecd88dda403c1bafeea77664775a1da1df6335f8e8db3ca9eb5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "华盖资本",
+            "role": "A轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c8803e2f7419599f",
+                "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
+                "source_content_hash": "674418393ee4156c",
+                "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "松禾资本",
+            "role": "A轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c8803e2f7419599f",
+                "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
+                "source_content_hash": "674418393ee4156c",
+                "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "谢诺投资",
+            "role": "A+轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c8803e2f7419599f",
+                "quote": "in July 2023, it completed a US$ 20 million Series A+ round led by Xeno Capital",
+                "source_content_hash": "674418393ee4156c",
+                "quote_hash": "71416ba591bdc4eb0307a7300b723e378bd413b153b795bb6eb1a291dcff11a0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e59652e6b200515c",
+            "quote": "动脉网获悉，近日， 专注于AI驱动新药研发的科技公司——德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资，多家知名投资机构与产业基金共同投资。",
+            "source_content_hash": "6461ec5fc6fa20ad",
+            "quote_hash": "e798db6316c78d57af1f66f23ec57e7cece97bf307dc07faa7a0cacbfbd31069"
+          },
+          {
+            "source_id": "FISRC-e59652e6b200515c",
+            "quote": "德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资，多家知名投资机构与产业基金共同投资",
+            "source_content_hash": "6461ec5fc6fa20ad",
+            "quote_hash": "a7319bd93f110876e2880322f6eda827ffaeece04bfd6eb94f7d52f9c733dec0"
+          },
+          {
+            "source_id": "FISRC-7548f1d47b071320",
+            "quote": "today announced the completion of a $52 million Series B financing. The round was led by a group of institutional and healthcare funds.",
+            "source_content_hash": "279dfad5c9a223b3",
+            "quote_hash": "cdf2492add5d7bb5479967f6467d269403d6e9f39f4c3cca8031e21aa7b3f57d"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "5200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 52000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5200 万美元"
+        },
+        "total_raised_original": "8200万美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 82000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8200 万美元"
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-a52dd9e9cac23694",
+            "round_original": "B轮",
+            "amount": "5200万美元",
+            "announced_at": "2026-07-08",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e59652e6b200515c",
+                "quote": "动脉网获悉，近日， 专注于AI驱动新药研发的科技公司——德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资，多家知名投资机构与产业基金共同投资。",
+                "source_content_hash": "6461ec5fc6fa20ad",
+                "quote_hash": "e798db6316c78d57af1f66f23ec57e7cece97bf307dc07faa7a0cacbfbd31069"
+              },
+              {
+                "source_id": "FISRC-e59652e6b200515c",
+                "quote": "德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资，多家知名投资机构与产业基金共同投资",
+                "source_content_hash": "6461ec5fc6fa20ad",
+                "quote_hash": "a7319bd93f110876e2880322f6eda827ffaeece04bfd6eb94f7d52f9c733dec0"
+              },
+              {
+                "source_id": "FISRC-7548f1d47b071320",
+                "quote": "today announced the completion of a $52 million Series B financing. The round was led by a group of institutional and healthcare funds.",
+                "source_content_hash": "279dfad5c9a223b3",
+                "quote_hash": "cdf2492add5d7bb5479967f6467d269403d6e9f39f4c3cca8031e21aa7b3f57d"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "MAP（Molecule Arts Platform）",
+          "description": "由多智能体驱动的全链路AI制药引擎，覆盖靶点研究、分子设计、多参数优化、实验验证及临床数据分析等制药产业关键环节，通过连接计算模型、湿实验和临床反馈实现持续学习与迭代。",
+          "target_customers": "制药企业及自身创新药管线开发",
+          "features": [
+            "多智能体协同体系",
+            "临床数据闭环（Clinical Data-in-the-Loop）",
+            "覆盖靶点发现到临床试验的全流程研发体系",
+            "跨模态、跨靶点规模化复制能力"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "2026年，公司已成功搭建起由多智能体驱动的制药引擎MAP（Molecule Arts Platform）。该平台覆盖靶点研究、分子设计、多参数优化、实验验证及临床数据分析等制药产业关键环节",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "adf6b33ad329caeb24223c05cbf7de69767ae1535d16ee9f743c6d8743f9e141"
+            },
+            {
+              "source_id": "FISRC-7548f1d47b071320",
+              "quote": "Its proprietary Molecule Arts Platform (MAP) integrates biology, chemistry, computation, experimental evidence and clinical learning into a unified R&D system designed to support the discovery and development of new medicines.",
+              "source_content_hash": "279dfad5c9a223b3",
+              "quote_hash": "154f924c4717f192cd477e687302ad9b6289055b3ea53d1723b5d0fc0accc162"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "MDR-001",
+          "description": "口服GLP-1RA小分子创新药，用于肥胖和2型糖尿病适应症，是中国首个推进至Ⅲ期临床阶段的AI赋能一类创新药。",
+          "target_customers": "肥胖及2型糖尿病患者",
+          "features": [
+            "口服小分子GLP-1受体激动剂",
+            "中国首个AI赋能一类新药进入Ⅲ期临床",
+            "IIb期24周平均体重降幅最高达10.3%",
+            "不良事件停药率仅0.8%"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "公司首发管线——口服GLP-1RA小分子创新药MDR-001，已于2025年正式进入Ⅲ期临床研究，为中国首个推进至Ⅲ期临床阶段的AI赋能一类创新药",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "8c6b39e752c77957f94687a05b00e8ceb9866cee6e07563a6a75acd7222107f3"
+            },
+            {
+              "source_id": "FISRC-c8803e2f7419599f",
+              "quote": "MDR-001 is an orally administered small-molecule GLP-1 receptor agonist independently developed and AI-assisted in design by MindRank, with indications covering obesity and type 2 diabetes.",
+              "source_content_hash": "674418393ee4156c",
+              "quote_hash": "e222b8fe6295c2f3f541d5cb4adc4c710232387bb0fe951687417649516bac78"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "MRANK-106",
+          "description": "口服WEE1/YES1双靶点激酶抑制剂，用于晚期或转移性实体瘤，是公司披露的同类首创候选药物。",
+          "target_customers": "晚期或转移性实体瘤患者",
+          "features": [
+            "口服双WEE1/YES1激酶抑制剂",
+            "获美国FDA临床试验授权",
+            "在胰腺癌、小细胞肺癌、卵巢癌、乳腺癌、结直肠癌等多个实体瘤模型中显示活性"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c8803e2f7419599f",
+              "quote": "MRANK-106, a drug independently developed by the company, received clinical trial authorization from the U.S. FDA. This oral dual WEE1/YES1 kinase inhibitor is disclosed by the company as the first-in-class candidate to enter clinical development.",
+              "source_content_hash": "674418393ee4156c",
+              "quote_hash": "fccc58f6be3611340d45a263a601f6eea2ee2ebf5ffea5a8f97223c7583700a4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "默沙东中国",
+          "industry": "制药",
+          "use_case": "知识图谱项目交付",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6c378f7fba919c3",
+              "quote": "完成对 默沙东中国 知识图谱项目关键交付",
+              "source_content_hash": "9ed01b0f1026e739",
+              "quote_hash": "04cf6606acc37c110656eb0155aae40ba41db36c48fe46889b60679558c3edf0"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "德琪医药",
+          "industry": "制药",
+          "use_case": "AI赋能药物发现战略合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6c378f7fba919c3",
+              "quote": "与德琪医药 (6996.HK) 达成战略合作",
+              "source_content_hash": "9ed01b0f1026e739",
+              "quote_hash": "86ca2da762c294e93463a98a41899e773636a66427457bf91353b62c2545e592"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "复宏汉霖",
+          "industry": "制药",
+          "use_case": "AI赋能ADC及抗衰老治疗平台战略合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6c378f7fba919c3",
+              "quote": "与复宏汉霖（2696.HK）达成战略合作",
+              "source_content_hash": "9ed01b0f1026e739",
+              "quote_hash": "1ad91af17c7efb4f6bb3db20e7fbe6eae431b80e1d54723db72ad442c0a43e1d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "海正药业",
+          "industry": "制药",
+          "use_case": "AI赋能药物发现战略合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6c378f7fba919c3",
+              "quote": "与海正药业（600267.SH）达成战略合作",
+              "source_content_hash": "9ed01b0f1026e739",
+              "quote_hash": "30da3fa7193c5186820ecb10a67e13f5d9b0f93fedc745c613a34cb441e5627c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "美迪西生物医药",
+          "industry": "CRO",
+          "use_case": "AI赋能药物发现战略合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6c378f7fba919c3",
+              "quote": "与头部CRO企业美迪西生物医药 (688202.SH) 达成战略合作",
+              "source_content_hash": "9ed01b0f1026e739",
+              "quote_hash": "00c3eaa3035359ad7f3b7a9e30312b01723e7a47b3f868a4a4d8a4db4f88800a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Vertex Pharma",
+          "product": "计算机辅助药物设计（CADD）平台及多款重磅药物",
+          "scenario": "通过计算机精确分子设计策略持续推出年销售额超百亿美元的重磅药物",
+          "target_customer": "全球患者及医疗体系",
+          "funding_summary": "",
+          "core_difference": "Vertex Pharma是上一代CADD企业，市值约1200亿美元，通过计算机辅助分子设计推出多款年销售额超百亿美元的重磅药物；德睿智药以MAP多智能体引擎和临床数据闭环为核心，目标构建AI Native Pharma系统，当前核心验证管线MDR-001尚处于Ⅲ期临床阶段。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7e3236f9a0f69827",
+              "quote": "Taking Vertex Pharma, a global CADD pioneer with a market capitalization of $120 billion, as an example, the company has continuously launched several blockbuster drugs with annual sales exceeding $10 billion through its strategy of precise molecular design via computers",
+              "source_content_hash": "663d9c9583918768",
+              "quote_hash": "559325616cebb62c5c55f475c0d044ed214fac24b849d819fb138e857f4591f2"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "MDR-001从立项到Ⅲ期临床耗时",
+          "value": "4.5年",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "从项目最初立项推进至Ⅲ期临床研究，整体仅耗时4.5年",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "e472963ad053af1aabc906a4933048410dc8a5bd2f7951e336e0c26305bb8ffc"
+            }
+          ]
+        },
+        {
+          "label": "MDR-001累计研发投入",
+          "value": "约2300万美元",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "该单产品的累计研发投入控制在约2300万美元",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "78a8ec80107a3cab79682ce8b9629fa0dc4050b78ac2f7ebc3ce4e9386f2858d"
+            }
+          ]
+        },
+        {
+          "label": "PCC确认耗时",
+          "value": "8个月，合成80个小分子",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "团队仅耗时8个月、实际仅合成80个小分子，即成功获得了高质量的临床前候选药物（PCC）",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "a0e50a55fc759241453fab8e6b33ea4cfa758d21a81bd257f2ee83c466c121fd"
+            }
+          ]
+        },
+        {
+          "label": "IND获批周期",
+          "value": "19个月",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "IND（临床试验申请）获批周期被大幅压缩至19个月",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "3ef6be96d865eba3d57dbf969b62bf635b43c146c3bcde73a1a25f2c3b6ea851"
+            }
+          ]
+        },
+        {
+          "label": "中美IND批件数量",
+          "value": "3项",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "现阶段德睿智药已取得3项中美IND批件",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "5475b868323f4676c7b96af2db1e445ea43502dcd6aeea7fe3ecbf6daf30fb37"
+            }
+          ]
+        },
+        {
+          "label": "临床前PCC分子数量",
+          "value": "5款",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "拥有5款临床前PCC分子",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "e127c9104ec8175b63543e6125225749100e9ec7b3fcc7e8a8cac614d95da2c1"
+            }
+          ]
+        },
+        {
+          "label": "创新管线数量",
+          "value": "15条FIC/BIC",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "共有15条FIC（First-in-class，同类首创）/BIC（Best-in-class，同类最佳）创新管线正在同步推进",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "bbc2613a41d55c06b7ac5d2694063d06aafa040b45ce749b0f6ba453c38ad7d9"
+            }
+          ]
+        },
+        {
+          "label": "累计专利申请",
+          "value": "超200项",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "公司已累计申请专利超200项",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "3967eb1b8d1aa3e19ee2e159d19e0cd70a004dac7e5779efc5567d41b76d5479"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "牛张明",
+          "quote": "德睿智药希望构建的不仅是一家创新药公司，更是一套能够持续探索、持续学习、持续创造创新药的AI Native Pharma系统。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e59652e6b200515c",
+              "quote": "德睿智药希望构建的不仅是一家创新药公司，更是一套能够持续探索、持续学习、持续创造创新药的AI Native Pharma系统。",
+              "source_content_hash": "6461ec5fc6fa20ad",
+              "quote_hash": "8de0597f00d8ae6a4f86576f2eeced212e71850e6f1215cee42cf15da24bf785"
+            }
+          ]
+        },
+        {
+          "speaker": "牛张明",
+          "quote": "Our goal is to translate advances in computation and artificial intelligence into better medicines for patients.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7548f1d47b071320",
+              "quote": "Our goal is to translate advances in computation and artificial intelligence into better medicines for patients",
+              "source_content_hash": "279dfad5c9a223b3",
+              "quote_hash": "b7338ef25e8fb02523a9d8cd13dcb12a3f8bfdd9ca48df01d2f5225d4b87b467"
+            }
+          ]
+        },
+        {
+          "speaker": "牛张明",
+          "quote": "我们并不简单将MAP定义为一个AI工具，而是一个持续学习、持续进化的药物研发系统。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7e3236f9a0f69827",
+              "quote": "We do not simply define MAP as an AI tool, but as a continuously learning and evolving drug R&D system.",
+              "source_content_hash": "663d9c9583918768",
+              "quote_hash": "d990b2e559f01cc1af16d12177471e91814bd897e373c939b4ba8b81fd581acb"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是MAP引擎能否将MDR-001的已验证效率优势复制到更多管线，从而证明AI Native Pharma模式的可扩展性。已验证信号包括：MDR-001以约2300万美元投入、4.5年时间推进至Ⅲ期临床，效率较传统模式实现10倍级跨越；公司已取得3项中美IND批件、5款临床前PCC分子和15条FIC/BIC管线。但本轮融资未披露具体投资方名称，无法从机构原话确认投资逻辑；估值也未在来源中披露。证据边界限于公司官方及媒体报道的运营数据，尚无第三方独立验证的临床结果或商业化收入。",
+        "validated_signals": [
+          "MDR-001为中国首个推进至Ⅲ期临床的AI赋能一类创新药",
+          "MDR-001从立项到Ⅲ期临床仅4.5年，累计研发投入约2300万美元",
+          "已取得3项中美IND批件，拥有5款临床前PCC分子和15条FIC/BIC管线",
+          "IIb期临床显示24周平均体重降幅最高达10.3%，不良事件停药率仅0.8%"
+        ],
+        "risks": [
+          "MDR-001尚未完成Ⅲ期临床，商业化上市仍存在临床失败或审批风险",
+          "本轮融资未披露具体投资方，资本市场的实际背书力度无法确认",
+          "AI制药平台的跨管线复制能力尚未通过多个后期临床管线验证",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "use_case_ids": [
+          "research_discovery",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "researcher",
+          "business_user"
+        ],
+        "sector": "AI制药",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是MAP引擎能否将MDR-001的已验证效率优势复制到更多管线，从而证明AI Native Pharma模式的可扩展性。已验证信号包括：MDR-001以约2300万美元投入、4.5年时间推进至Ⅲ期临床，效率较传统模式实现10倍级跨越；公司已取得3项中美IND批件、5款临床前PCC分子和15条FIC/BIC管线。但本轮融资未披露具体投资方名称，无法从机构原话确认投资逻辑；估值也未在来源中披露。证据边界限于公司官方及媒体报道的运营数据，尚无第三方独立验证的临床结果或商业化收入。",
+          "evidence_signals": [
+            "MDR-001为中国首个推进至Ⅲ期临床的AI赋能一类创新药",
+            "MDR-001从立项到Ⅲ期临床仅4.5年，累计研发投入约2300万美元",
+            "已取得3项中美IND批件，拥有5款临床前PCC分子和15条FIC/BIC管线",
+            "IIb期临床显示24周平均体重降幅最高达10.3%，不良事件停药率仅0.8%"
+          ],
+          "risks": [
+            "MDR-001尚未完成Ⅲ期临床，商业化上市仍存在临床失败或审批风险",
+            "本轮融资未披露具体投资方，资本市场的实际背书力度无法确认",
+            "AI制药平台的跨管线复制能力尚未通过多个后期临床管线验证",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MAP（Molecule Arts Platform）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MDR-001",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MRANK-106",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "牛张明",
+          "canonical_entity_id": "EN-8660708b70cb8293",
+          "canonical_name": "牛张明"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "夏尔巴医疗基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "华盖资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "松禾资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "谢诺投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "默沙东中国",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "德琪医药",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "复宏汉霖",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "海正药业",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "美迪西生物医药",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Vertex Pharma",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-a52dd9e9cac23694",
+          "date": "2026-07-08",
+          "title": "【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网",
+          "amount": "5200万美元",
+          "source_refs": [
+            "SA-8d7322e0be57b36a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e59652e6b200515c",
+          "source_url": "https://www.vbdata.cn/1519084434",
+          "title": "【首发】德睿智药完成5200万美元B轮融资，构建AI Native新药研发引擎-动脉网",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-13T00:26:24.552Z",
+          "content_hash": "6461ec5fc6fa20ad",
+          "source_artifact_id": "SA-8d7322e0be57b36a",
+          "raw_id": "RAW-43c439748376658f"
+        },
+        {
+          "source_id": "FISRC-7548f1d47b071320",
+          "source_url": "https://www.mindrank.ai/en/news/detail/170",
+          "title": "News - MindRank",
+          "publisher": "mindrank.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-13T01:26:53.449Z",
+          "content_hash": "279dfad5c9a223b3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c8803e2f7419599f",
+          "source_url": "https://www.vcbeathealth.com/article/59793",
+          "title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
+          "publisher": "vcbeathealth.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-13T01:26:53.502Z",
+          "content_hash": "674418393ee4156c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d6c378f7fba919c3",
+          "source_url": "https://www.mindrank.ai/zh-CN/about",
+          "title": "关于我们 - 德睿智药 MindRank",
+          "publisher": "mindrank.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-13T01:26:53.620Z",
+          "content_hash": "9ed01b0f1026e739",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7e3236f9a0f69827",
+          "source_url": "https://eu.36kr.com/en/p/3885479689465858",
+          "title": "MindRank Secures $52M Series B Financing, AI-Developed Weight-Loss Drug Advances to Phase 3 Clinical Trials | 36Kr Exclusive",
+          "publisher": "eu.36kr.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-13T01:26:54.504Z",
+          "content_hash": "663d9c9583918768",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-13T01:27:19.542Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-a52dd9e9cac23694",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-13T01:27:19.542Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "MAP（Molecule Arts Platform）",
+            "MDR-001",
+            "MRANK-106"
+          ]
+        },
+        "founders": {
+          "linked": 1,
+          "total": 1,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-a52dd9e9cac23694"
+      ],
+      "aggregation": {
+        "key": "EN-ed8ff30f2dcaf9d6|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-0ac8e90389dd1de3",
@@ -69,7 +2206,7 @@
       },
       "financing": {
         "round": "Pre-B轮",
-        "amount": "亿元",
+        "amount": "近亿元",
         "total_raised": "",
         "announced_at": "2026-09-10",
         "investor_disclosure_status": "disclosed",
@@ -111,15 +2248,15 @@
         ],
         "round_code": "pre_series_b",
         "round_original": "Pre-B轮",
-        "amount_original": "亿元",
+        "amount_original": "近亿元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": null,
-          "min_value": 100000000,
-          "max_value": 1000000000,
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
           "unit": "base",
-          "status": "range",
-          "display_zh": "1 亿元–10 亿元"
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
         },
         "total_raised_original": "",
         "total_raised_normalized": {
@@ -136,7 +2273,7 @@
           {
             "event_id": "EV-6e22ce671a8a4d82",
             "round_original": "Pre-B轮",
-            "amount": "亿元",
+            "amount": "近亿元",
             "announced_at": "2026-09-10",
             "evidence_refs": [
               {
@@ -1193,129 +3330,263 @@
   "queue": [
     {
       "event_id": "EV-65d274d4277815dc",
-      "company_name": "九章智电",
+      "company_name": "北京九章智电科技有限公司",
       "status": "auto_published",
       "problems": [],
-      "queries": [
-        "\"九章智电\" 2026 融资 轮次 金额 投资方",
-        "\"九章智电\" \"数千万\" 本轮融资 领投 跟投",
-        "\"九章智电\" 产品 服务 创始人 总部",
-        "\"九章智电\" 投资机构 投资原因 融资用途"
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"九章智电\" 2026 融资 轮次 金额 投资方",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "exa",
-          "query": "\"九章智电\" 2026 融资 轮次 金额 投资方",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"九章智电\" \"数千万\" 本轮融资 领投 跟投",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "exa",
-          "query": "\"九章智电\" \"数千万\" 本轮融资 领投 跟投",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"九章智电\" 产品 服务 创始人 总部",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "exa",
-          "query": "\"九章智电\" 产品 服务 创始人 总部",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"九章智电\" 投资机构 投资原因 融资用途",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "exa",
-          "query": "\"九章智电\" 投资机构 投资原因 融资用途",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-09-13T00:33:34.329Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-13T01:38:41.974Z"
     },
     {
       "event_id": "EV-6e22ce671a8a4d82",
       "company_name": "大鱼智行",
       "status": "auto_published",
       "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-13T01:38:41.974Z"
+    },
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-13T01:38:41.974Z"
+    },
+    {
+      "event_id": "EV-cbeb33594e06678b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-13T01:38:41.974Z"
+    },
+    {
+      "event_id": "EV-a52dd9e9cac23694",
+      "company_name": "德睿智药",
+      "status": "auto_published",
+      "problems": [],
       "queries": [
-        "\"大鱼智行\" 2026 融资 轮次 金额 投资方",
-        "\"大鱼智行\" \"亿元\" 本轮融资 领投 跟投",
-        "\"大鱼智行\" 产品 服务 创始人 总部",
-        "\"大鱼智行\" 投资机构 投资原因 融资用途"
+        "\"MindRank\" 2026 融资 轮次 金额 投资方",
+        "\"MindRank\" \"5200万美元\" 本轮融资 领投 跟投",
+        "\"MindRank\" 产品 服务 创始人 总部",
+        "\"MindRank\" 投资机构 投资原因 融资用途"
       ],
       "attempts": [
         {
           "provider": "tavily",
-          "query": "\"大鱼智行\" 2026 融资 轮次 金额 投资方",
-          "status": "completed",
-          "error": ""
+          "query": "\"MindRank\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
-          "query": "\"大鱼智行\" 2026 融资 轮次 金额 投资方",
+          "query": "\"MindRank\" 2026 融资 轮次 金额 投资方",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"大鱼智行\" \"亿元\" 本轮融资 领投 跟投",
-          "status": "completed",
-          "error": ""
+          "query": "\"MindRank\" \"5200万美元\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
-          "query": "\"大鱼智行\" \"亿元\" 本轮融资 领投 跟投",
+          "query": "\"MindRank\" \"5200万美元\" 本轮融资 领投 跟投",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"大鱼智行\" 产品 服务 创始人 总部",
-          "status": "completed",
-          "error": ""
+          "query": "\"MindRank\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
-          "query": "\"大鱼智行\" 产品 服务 创始人 总部",
+          "query": "\"MindRank\" 产品 服务 创始人 总部",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"大鱼智行\" 投资机构 投资原因 融资用途",
-          "status": "completed",
-          "error": ""
+          "query": "\"MindRank\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_401"
         },
         {
           "provider": "exa",
-          "query": "\"大鱼智行\" 投资机构 投资原因 融资用途",
+          "query": "\"MindRank\" 投资机构 投资原因 融资用途",
           "status": "completed",
           "error": ""
         }
       ],
-      "updated_at": "2026-09-13T00:33:34.329Z"
+      "updated_at": "2026-09-13T01:38:41.974Z"
+    },
+    {
+      "event_id": "EV-47f16317cc2d62e2",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-13T01:38:41.974Z"
+    },
+    {
+      "event_id": "EV-10b007d20ad2794e",
+      "company_name": "杭州曦望芯科智能科技有限公司",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" 2026 融资 轮次 金额 投资方",
+        "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" \"10亿元人民币\" 本轮融资 领投 跟投",
+        "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" 产品 服务 创始人 总部",
+        "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" 投资机构 投资原因 融资用途",
+        "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能\" 2026 融资 投资方",
+        "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能\" 产品 创始人"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" \"10亿元人民币\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" \"10亿元人民币\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能科技有限公司\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能\" 2026 融资 投资方",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能\" 2026 融资 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能\" 产品 创始人",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"专注于全栈自研AI推理GPU的杭州曦望芯科智能\" 产品 创始人",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-13T01:38:41.974Z"
+    },
+    {
+      "event_id": "EV-798081a4ec056f8c",
+      "company_name": "浙江无问智行科技有限公司",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"无问智科\" 2026 融资 轮次 金额 投资方",
+        "\"无问智科\" \"数亿元\" 本轮融资 领投 跟投",
+        "\"无问智科\" 产品 服务 创始人 总部",
+        "\"无问智科\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"无问智科\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"无问智科\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"无问智科\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"无问智科\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"无问智科\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"无问智科\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"无问智科\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"无问智科\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-13T01:38:41.974Z"
     }
   ]
 }

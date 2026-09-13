@@ -147,6 +147,13 @@ Business Signals and First-Line Viewpoints retain separate PR boundaries, but
 their workflows share the `wavesight-data-center-publication` concurrency group
 because both rebuild tracked Data Center projections. They must serialize rather
 than create same-day generated-file merge conflicts.
+The checkout resolves the requested branch only after acquiring that lock;
+the dispatch-time event SHA can already be stale when a queued job starts.
+Checkpoint restoration unions same-date accepted main intake with the restored
+input and recovers already-published cards from HEAD. Restoring an older overseas
+checkpoint must not erase a completed domestic lane or trigger duplicate research.
+First-Line Viewpoints also translates newly projected person descriptions, rebuilds
+the adapter and gates public Chinese fields before staging the translation registry.
 
 Community Intelligence validates the complete in-memory candidate before writing
 the current snapshot, dated snapshot, or frontstage file. A collector error,

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:22:32.676Z",
+    "generatedAt": "2026-09-13T01:46:45.559Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3212,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,10 +59,10 @@
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-09-10",
     "latest_disclosed_at": "2026-09-10",
     "role_counts": {
@@ -75,19 +75,19 @@
       {
         "entity_id": "EN-a01847b090a53c6e",
         "canonical_entity_id": "",
-        "name": "北京九章智电科技有限公司"
+        "name": "九章智电"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-33b4f0471317e70f",
+        "activity_id": "IA-2f4d837a29dbe448",
         "funding_insight_id": "FI-5797999d683fac6b",
         "event_ids": [
           "EV-65d274d4277815dc"
         ],
         "company_entity_id": "EN-a01847b090a53c6e",
         "company_canonical_entity_id": "",
-        "company_name": "北京九章智电科技有限公司",
+        "company_name": "九章智电",
         "round": "战略融资",
         "round_code": "strategic",
         "round_original": "战略融资",
@@ -102,8 +102,8 @@
           "display_zh": "2000 万元–9000 万元"
         },
         "announced_at": "2026-09-10",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",

@@ -73,6 +73,9 @@ test("China application scope uses funded-company evidence, not publisher, headq
   assert.equal(fundingCompanyChinaEvidence({ ...card, company: { ...card.company, name: "Foreign AI", full_name: "Foreign AI" } }).matched, false);
   assert.equal(fundingCompanyChinaEvidence({ ...card, research_sources: [] }).matched, false);
   assert.equal(fundingCompanyChinaEvidence({ ...card, company: { ...card.company, evidence_refs: [] } }).matched, false);
+  const provincial = { ...card, company: { name: "浙江无问智行科技有限公司", evidence_refs: [{ ...card.company.evidence_refs[0], quote: "无问智科成立于2022年，总部位于浙江省湖州市德清县，是一家物理AI数据基础设施企业" }] } };
+  assert.equal(fundingCompanyChinaEvidence(provincial).matched, false);
+  assert.equal(fundingCompanyChinaEvidence(provincial, ["无问智科"]).matched, true);
 });
 
 test("only an explicitly quarantined source title excludes the catalog projection", () => {

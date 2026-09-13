@@ -282,7 +282,7 @@ export function chinaFundingActorEvidence(subject, evidence) {
     }
   }
   const escaped = name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
-  const headquarters = String(evidence || "").match(new RegExp(`${escaped}[^。！？\\n]{0,100}总部(?:位于|设于|设在|落户)(?:中国)?(?:北京|上海|深圳|广州|杭州|南京|苏州|成都|武汉|西安|合肥|天津|重庆|宁波|无锡|香港|厦门|长沙|济南|青岛)`, "u"));
+  const headquarters = String(evidence || "").match(new RegExp(`${escaped}[^。！？\\n]{0,100}总部(?:位于|设于|设在|落户)(?:中国)?(?:北京|上海|深圳|广州|杭州|南京|苏州|成都|武汉|西安|合肥|天津|重庆|宁波|无锡|香港|厦门|长沙|济南|青岛|(?:浙江|江苏|广东|安徽|福建|山东|湖北|湖南|四川|河南|河北|陕西|江西|山西|云南|贵州|甘肃|吉林|辽宁|海南|青海|黑龙江)省)`, "u"));
   return headquarters ? { matched: true, basis: `china_entity_headquarters:${headquarters[0]}` } : { matched: false, basis: "" };
 }
 

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:22:32.676Z",
+    "generatedAt": "2026-09-13T01:46:45.559Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3212,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,7 +58,8 @@
     ],
     "eventIds": [
       "EV-b998b508567246a1",
-      "EV-e88fc7702acc5d3b"
+      "EV-e88fc7702acc5d3b",
+      "EV-31a4216fe573bbc1"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -66,7 +67,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-23",
-    "lastSeen": "2026-08-09",
+    "lastSeen": "2026-09-13",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -75,12 +76,30 @@
         "EV-e88fc7702acc5d3b"
       ],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-31a4216fe573bbc1"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-31a4216fe573bbc1",
+        "dataDate": "2026-09-13",
+        "date": "2026-09-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "微信测试图片 AI 处理功能，支持美化、修改与信息提取",
+        "displayTags": [],
+        "entityIds": [
+          "EN-81b430b696435180",
+          "EN-9b725c672526905b"
+        ]
+      },
       {
         "id": "EV-b998b508567246a1",
         "dataDate": "2026-08-09",
